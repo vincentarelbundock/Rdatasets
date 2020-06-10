@@ -1,0 +1,41 @@
+"","Status","Sex","Cause","Rate","SE"
+"1","Urban","Male","Heart disease",210.2,0.2
+"2","Rural","Male","Heart disease",242.7,0.6
+"3","Urban","Female","Heart disease",132.5,0.2
+"4","Rural","Female","Heart disease",154.9,0.4
+"53","Urban","Male","Cancer",195.9,0.2
+"54","Rural","Male","Cancer",219.3,0.5
+"55","Urban","Female","Cancer",140.2,0.2
+"56","Rural","Female","Cancer",150.8,0.4
+"105","Urban","Male","Lower respiratory",44.5,0.1
+"106","Rural","Male","Lower respiratory",62.8,0.3
+"107","Urban","Female","Lower respiratory",36.5,0.1
+"108","Rural","Female","Lower respiratory",46.9,0.2
+"157","Urban","Male","Unintentional injuries",49.6,0.1
+"158","Rural","Male","Unintentional injuries",71.3,0.3
+"159","Urban","Female","Unintentional injuries",24.7,0.1
+"160","Rural","Female","Unintentional injuries",37.2,0.2
+"209","Urban","Male","Cerebrovascular diseases",36.1,0.1
+"210","Rural","Male","Cerebrovascular diseases",42.2,0.2
+"211","Urban","Female","Cerebrovascular diseases",34.9,0.1
+"212","Rural","Female","Cerebrovascular diseases",42.2,0.2
+"261","Urban","Male","Alzheimers",19.4,0.1
+"262","Rural","Male","Alzheimers",21.8,0.2
+"263","Urban","Female","Alzheimers",25.5,0.1
+"264","Rural","Female","Alzheimers",30.6,0.2
+"313","Urban","Male","Diabetes",24.9,0.1
+"314","Rural","Male","Diabetes",29.5,0.2
+"315","Urban","Female","Diabetes",17.1,0.1
+"316","Rural","Female","Diabetes",21.8,0.2
+"365","Urban","Male","Flu and pneumonia",17.7,0.1
+"366","Rural","Male","Flu and pneumonia",20.8,0.2
+"367","Urban","Female","Flu and pneumonia",12.9,0.1
+"368","Rural","Female","Flu and pneumonia",16.3,0.1
+"417","Urban","Male","Suicide",19.2,0.1
+"418","Rural","Male","Suicide",26.3,0.2
+"419","Urban","Female","Suicide",5.3,0
+"420","Rural","Female","Suicide",6.2,0.1
+"469","Urban","Male","Nephritis",15.7,0.1
+"470","Rural","Male","Nephritis",18.3,0.2
+"471","Urban","Female","Nephritis",10.7,0
+"472","Rural","Female","Nephritis",13.9,0.1
