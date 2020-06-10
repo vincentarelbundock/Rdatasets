@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Model Car Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for modelcars"><tr><td>modelcars</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Model Car Data</h2>
+
+<h3>Description</h3>
+
+<p>The <code>modelcars</code> data frame has 12 rows and 2 columns.
+The data are for an experiment in which a model car was released
+three times at each of four different distances up a 20 degree
+ramp.  The experimenter recorded distances traveled from the 
+bottom of the ramp across a concrete floor.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>modelcars</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>distance.traveled</dt><dd><p>a numeric vector consisting
+of the lengths traveled (in cm)</p>
+</dd>
+<dt>starting.point</dt><dd><p>a numeric vector consisting
+of the distance of the starting point from the top of
+the ramp (in cm)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>W.J. Braun
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+plot(modelcars)
+modelcars.lm &lt;- lm(distance.traveled ~ starting.point, data=modelcars)
+aov(modelcars.lm)
+pause()
+
+print("Response Curves - Example 4.6")
+attach(modelcars)
+stripchart(distance.traveled ~ starting.point, vertical=TRUE, pch=15,
+           xlab = "Distance up ramp", ylab="Distance traveled")
+detach(modelcars)
+
+</pre>
+
+
+</body></html>

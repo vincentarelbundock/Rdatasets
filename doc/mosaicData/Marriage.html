@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Marriage records</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Marriage"><tr><td>Marriage</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Marriage records</h2>
+
+<h3>Description</h3>
+
+<p>Marriage records from the Mobile County, Alabama, probate court.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data(Marriage)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 98 observations on the following variables.
+</p>
+
+<ul>
+<li><p><code>bookpageID</code> a factor with levels for each book and page (unique identifier)
+</p>
+</li>
+<li><p><code>appdate</code> a factor with levels corresponding to each of the dates on which the
+application was filed (in the form MO/DY/YY, e.g. 1/22/99 represents January 22, 1999)
+</p>
+</li>
+<li><p><code>ceremonydate</code> a factor with levels corresponding to the date of the ceremony
+</p>
+</li>
+<li><p><code>delay</code> number of days between the application and the ceremony
+</p>
+</li>
+<li><p><code>officialTitle</code> a factor with levels <code>BISHOP</code> <code>CATHOLIC PRIEST</code> <code>CHIEF CLERK</code> <code>CIRCUIT JUDGE </code> <code>ELDER</code> <code>MARRIAGE OFFICIAL</code> <code>MINISTER</code> <code>PASTOR</code> <code>REVEREND</code>
+</p>
+</li>
+<li><p><code>person</code> a factor with levels <code>Bride</code> <code>Groom</code>
+</p>
+</li>
+<li><p><code>dob</code> a factor with levels corresponding to the date of birth of the person
+</p>
+</li>
+<li><p><code>age</code> age of the person (in years)
+</p>
+</li>
+<li><p><code>race</code> a factor with levels <code>American Indian</code> <code>Black</code> <code>Hispanic</code> <code>White</code>
+</p>
+</li>
+<li><p><code>prevcount</code> the number of previous marriages of the person, as listed on the
+application
+</p>
+</li>
+<li><p><code>prevconc</code> the way the last marriage ended, as listed on the application
+</p>
+</li>
+<li><p><code>hs</code> the number of years of high school education, as listed on the application
+</p>
+</li>
+<li><p><code>college</code> the number of years College education, as listed on the application.  Where no number was listed, this field was left blank, unless less than 12 years High School was reported, in which case it was entered as 0.
+</p>
+</li>
+<li><p><code>dayOfBirth</code> the day of birth, as a number from 1 to 365 counting from January 1
+</p>
+</li>
+<li><p><code>sign</code> the astrological sign, with levels <code>Aquarius</code> <code>Aries</code> <code>Cancer</code> <code>Capricorn</code> <code>Gemini</code> <code>Leo</code> <code>Libra</code> <code>Pisces</code> <code>Sagittarius</code> <code>Scorpio</code> <code>Taurus</code> <code>Virgo</code>
+</p>
+</li></ul>
+
+
+
+<h3>Details</h3>
+
+<p>The calculation of the astrological sign may not correctly sort people directly on the borders between signs.  This variable is not part of the original record.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The records were collected through
+http://www.mobilecounty.org/probatecourt/recordssearch.htm
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(Marriage)
+
+</pre>
+
+
+</body></html>

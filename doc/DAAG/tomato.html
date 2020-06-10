@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Root weights of tomato plants exposed to 4 different...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for tomato"><tr><td>tomato</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Root weights of tomato plants exposed to 4 different treatments</h2>
+
+<h3>Description</h3>
+
+<p>The <code>tomato</code> data frame has 24 rows and 2 columns.
+They are from an experiment that exposed tomato plants
+to four different 'nutrients'.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(tomato)</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>weight</dt><dd><p>weight, in g</p>
+</dd>
+<dt>trt</dt><dd><p>a factor with levels
+<code>water only</code>,
+<code>conc nutrient</code>,
+<code>2-4-D + conc nutrient</code>,
+<code>3x conc nutrient</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Dr Ron Balham, Victoria University of Wellington NZ, sometime
+in 1971 - 1976.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+tomato.aov &lt;- aov(log(weight) ~ trt, data=tomato)
+fitted.values(tomato.aov)
+summary.lm(tomato.aov)
+tomato.aov &lt;- aov(formula = weight ~ trt, data = tomato)
+summary.lm(tomato.aov)
+</pre>
+
+
+</body></html>

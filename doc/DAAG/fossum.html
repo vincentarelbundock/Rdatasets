@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Female Possum Measurements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for fossum"><tr><td>fossum</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Female Possum Measurements</h2>
+
+<h3>Description</h3>
+
+<p>The <code>fossum</code> data frame consists of nine morphometric
+measurements on each of 43 female mountain brushtail possums, trapped
+at seven sites from Southern Victoria to central Queensland.
+This is a subset of the <code>possum</code> data frame.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>fossum</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>case</dt><dd><p>observation number</p>
+</dd>
+<dt>site</dt><dd><p>one of seven locations where possums were
+trapped</p>
+</dd>
+<dt>Pop</dt><dd><p>a factor which classifies the sites as
+<code>Vic</code> Victoria,
+<code>other</code> New South Wales or Queensland</p>
+</dd>
+<dt>sex</dt><dd><p>a factor with levels
+<code>f</code> female,
+<code>m</code> male </p>
+</dd>
+<dt>age</dt><dd><p>age</p>
+</dd>
+<dt>hdlngth</dt><dd><p>head length</p>
+</dd>
+<dt>skullw</dt><dd><p>skull width</p>
+</dd>
+<dt>totlngth</dt><dd><p>total length</p>
+</dd>
+<dt>taill</dt><dd><p>tail length</p>
+</dd>
+<dt>footlgth</dt><dd><p>foot length</p>
+</dd>
+<dt>earconch</dt><dd><p>ear conch length</p>
+</dd>
+<dt>eye</dt><dd><p>distance from medial canthus to lateral canthus of
+right eye</p>
+</dd>
+<dt>chest</dt><dd><p>chest girth (in cm)</p>
+</dd>
+<dt>belly</dt><dd><p>belly girth (in cm)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lindenmayer, D. B., Viggers, K. L., Cunningham, R. B., and
+Donnelly, C. F. 1995. Morphological variation among columns of the
+mountain brushtail possum, Trichosurus caninus Ogilby
+(Phalangeridae: Marsupiala). Australian Journal of Zoology 43:
+449-458. 
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+boxplot(fossum$totlngth)
+</pre>
+
+
+</body></html>

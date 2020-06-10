@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: School-level data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for school"><tr><td>school</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>School-level data</h2>
+
+<h3>Description</h3>
+
+<p>The original data source is the Education Longitudinal Study of 2002. To deal
+with the issue on individually identifiable information, we generated 
+hypothetical student-level data using a multiple imputation method. The 
+Education Longitudinal Study of 2002 used a two-stage sample selection 
+process. First, a national sample of schools was selected using stratified 
+probability proportional to size (PPS), and school contacting resulted in 
+1,221 eligible public, Catholic, and other private schools from a population 
+of approximately 27,000 schools containing 10th grade students. Of the 
+eligible schools, 752 participated in the study. In the second stage of 
+sample selection, a sample of approximately 26 sophomores, from within each 
+of the participating public and private schools was selected. Each school was
+asked to provide a list of 10th grade students, and quality assurance (QA) 
+checks were performed on each list that was received.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+school
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data matrix with 568 rows and 5 columns, containing no missing 
+values. The data are provided only for illustrative purposes and not for 
+inference about education effectiveness, for which the original data source
+should be consulted. </p>
+ <dl>
+<dt>SCH_ID:</dt><dd><p> School indicator.</p>
+</dd> 
+<dt>coed:</dt><dd><p> Indicator variable for coeducation. 1 = coeducation.</p>
+</dd> 
+<dt>smorale:</dt><dd><p> Measure of student morale in the school. 4 levels.</p>
+</dd> 
+<dt>free:</dt><dd><p> Percent of 10th grade students receiving free lunch. 1 to 7 
+levels.</p>
+</dd> <dt>catholic:</dt><dd><p> Indicator variable for catholic school. 1 = 
+catholic school.</p>
+</dd> </dl>
+
+
+<h3>Source</h3>
+
+<p>The complete student-level data is available from the data archives 
+at www.icpsr.umich.edu/
+</p>
+
+
+<h3>References</h3>
+
+<p>United States Department of Education. National Center for
+Education Statistics
+</p>
+
+
+</body></html>

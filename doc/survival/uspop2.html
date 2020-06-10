@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Projected US Population</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for uspop2"><tr><td>uspop2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Projected US Population</h2>
+
+<h3>Description</h3>
+
+<p>US population by age and sex, for 2000 through 2020</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(uspop2)</pre>
+
+
+<h3>Format</h3>
+
+<p>The data is a matrix with dimensions age, sex, and calendar year.
+Age goes from 0 through 100, where the value for age 100 is the total
+for all ages of 100 or greater.
+</p>
+
+
+<h3>Details</h3>
+
+<p> This data is often used as a &quot;standardized&quot; population for
+epidemiology studies.</p>
+
+
+<h3>Source</h3>
+
+<p>NP2008_D1:  Projected Population by Single Year of Age, Sex, Race, and Hispanic 
+Origin for the United States: July 1, 2000 to July 1, 2050,
+www.census.gov/population/projections.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>uspop</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+us50 &lt;- uspop2[51:101,, "2000"]  #US 2000 population, 50 and over
+age &lt;- as.integer(dimnames(us50)[[1]])
+smat &lt;- model.matrix( ~ factor(floor(age/5)) -1)
+ustot &lt;- t(smat) %*% us50  #totals by 5 year age groups
+temp &lt;- c(50,55, 60, 65, 70, 75, 80, 85, 90, 95)
+dimnames(ustot) &lt;- list(c(paste(temp, temp+4, sep="-"), "100+"),
+                         c("male", "female"))
+</pre>
+
+
+</body></html>

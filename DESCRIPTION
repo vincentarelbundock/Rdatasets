@@ -1,0 +1,63 @@
+Package: RDatasets
+Title:  A collection of datasets originally distributed in various R packages
+Version: 1.0.0
+Authors@R: 
+    person(given = "Vincent",
+           family = "Arel-Bundock",
+           role = c("aut", "cre"),
+           email = "vincent.arel-bundock@umontreal.ca")
+Description: A collection of datasets originally distributed in various R packages.
+URL: https://vincentarelbundock.github.io/RDatasets
+BugReports: https://github.com/vincentarelbundock/RDatasets/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Imports: 
+    boot,
+    car,
+    carData,
+    cluster,
+    COUNT,
+    DAAG,
+    datasets,
+    dplyr,
+    drc,
+    Ecdat,
+    evir,
+    forecast,
+    fpp2,
+    gap,
+    geepack,
+    gt,
+    ggplot2,
+    HistData,
+    HSAUR,
+    hwde,
+    ISLR,
+    KMsurv,
+    lattice,
+    lme4,
+    lmec,
+    MASS,
+    mediation,
+    mi,
+    mosaicData,
+    multgee,
+    plm,
+    plyr,
+    pscl,
+    psych,
+    purrr,
+    quantreg,
+    reshape2,
+    robustbase,
+    rpart,
+    sandwich,
+    sem,
+    Stat2Data,
+    survival,
+    texmex,
+    tidyr,
+    vcd

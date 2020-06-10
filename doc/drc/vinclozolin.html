@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Vinclozolin from AR in vitro assay</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for vinclozolin"><tr><td>vinclozolin</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Vinclozolin from AR in vitro assay</h2>
+
+<h3>Description</h3>
+
+<p>Dose-response experiment with vinclozolin in an AR reporter gene assay
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(vinclozolin)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 53 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>exper</code></dt><dd><p>a factor with levels <code>10509</code> <code>10821</code> <code>10828</code> <code>10904</code> <code>11023</code> <code>11106</code></p>
+</dd>
+<dt><code>conc</code></dt><dd><p>a numeric vector of concentrations of vinclozolin</p>
+</dd>
+<dt><code>effect</code></dt><dd><p>a numeric vector of luminescense effects</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The basic dose-response experiment was repeated 6 times on different days. Chinese Hamster Ovary cells 
+were exposed to various concentrations of vinclozolin for 22 hours and the resulting luminescense effects
+were recorded.
+</p>
+<p>Data are part of mixture experiment reported in Nellemann <em>et al</em> (2003).  
+</p>
+
+
+<h3>Source</h3>
+
+<p>Nellemann C., Dalgaard M., Lam H.R. and Vinggaard A.M. (2003)
+The combined effects of vinclozolin and procymidone do not deviate from expected additivity <em>in vitro</em> 
+and <em>in vivo</em>, <em>Toxicological Sciences</em>, <b>71</b>, 251&ndash;262.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+
+vinclozolin.m1 &lt;- drm(effect~conc, exper, data=vinclozolin, fct = LL.3())
+plot(vinclozolin.m1, xlim=c(0,50), ylim=c(0,2800), conLevel=1e-4)
+
+vinclozolin.m2 &lt;- drm(effect~conc, data=vinclozolin, fct = LL.3())
+plot(vinclozolin.m2, xlim=c(0,50), conLevel=1e-4, add=TRUE, type="none", col="red")
+
+## Are the ED50 values indetical across experiments?
+vinclozolin.m3 &lt;- update(vinclozolin.m1, pmodels=data.frame(exper, exper, 1))
+anova(vinclozolin.m3, vinclozolin.m1)  # No!
+
+</pre>
+
+
+</body></html>

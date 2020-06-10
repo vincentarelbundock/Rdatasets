@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Effect of ferulic acid on growth of ryegrass</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ryegrass"><tr><td>ryegrass</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Effect of ferulic acid on growth of ryegrass</h2>
+
+<h3>Description</h3>
+
+<p>A single dose-response curve.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(ryegrass)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 24 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt>rootl</dt><dd><p>a numeric vector of root lengths</p>
+</dd>  
+<dt>conc</dt><dd><p>a numeric vector of concentrations of ferulic acid</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are part of a study to investigate the joint action
+of phenolic acids on root growth inhibition of perennial ryegrass (<em>Lolium perenne L</em>).
+</p>
+<p><code>conc</code> is the concentration of ferulic acid is in mM, and <code>rootl</code> is the root length 
+of perennial ryegrass measured in cm. 
+</p>
+
+
+<h3>Source</h3>
+
+<p>Inderjit and J. C. Streibig, and M. Olofsdotter (2002) Joint action of
+phenolic acid mixtures and its significance in allelopathy
+research, <em>Physiologia Plantarum</em>, <b>114</b>, 422&ndash;428, 2002.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Displaying the data set
+ryegrass
+
+## Fitting a four-parameter Weibull model (type 2)
+ryegrass.m1 &lt;- drm(rootl ~ conc, data = ryegrass, fct = W2.4())
+
+## Displaying a summary of the model fit
+summary(ryegrass.m1)
+
+## Plotting the fitted curve together with the original data
+plot(ryegrass.m1)
+
+## Fitting a four-parameter Weibull model (type 1)
+ryegrass.m2 &lt;- drm(rootl ~ conc, data = ryegrass, fct = W1.4())
+plot(ryegrass.m2)
+
+## Fitting a four-parameter log-logistic model
+## with user-defined parameter names
+ryegrass.m3 &lt;- drm(rootl ~ conc, data = ryegrass, 
+fct = LL.4(names = c("Slope", "Lower Limit", "Upper Limit", "ED50")))
+summary(ryegrass.m3)
+
+## Comparing log-logistic and Weibull models
+## (Figure 2 in Ritz (2009))
+ryegrass.m0 &lt;- drm(rootl ~ conc, data = ryegrass, fct = LL.4())
+ryegrass.m1 &lt;- drm(rootl ~ conc, data = ryegrass, fct = W1.4())
+ryegrass.m2 &lt;- drm(rootl ~ conc, data = ryegrass, fct = W2.4())
+
+plot(ryegrass.m0, broken=TRUE, xlab="Dose (mM)", ylab="Root length (cm)", lwd=2, 
+cex=1.2, cex.axis=1.2, cex.lab=1.2)
+plot(ryegrass.m1, add=TRUE, broken=TRUE, lty=2, lwd=2)
+plot(ryegrass.m2, add=TRUE, broken=TRUE, lty=3, lwd=2)
+
+arrows(3, 7.5, 1.4, 7.5, 0.15, lwd=2)
+text(3,7.5, "Weibull-2", pos=4, cex=1.2)
+
+arrows(2.5, 0.9, 5.7, 0.9, 0.15, lwd=2)
+text(3,0.9, "Weibull-1", pos=2, cex=1.2)
+
+
+</pre>
+
+
+</body></html>

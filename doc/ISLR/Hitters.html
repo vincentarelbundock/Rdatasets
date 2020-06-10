@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Baseball Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Hitters"><tr><td>Hitters</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Baseball Data
+
+</h2>
+
+<h3>Description</h3>
+
+<p>Major League Baseball Data from the 1986 and 1987 seasons.
+
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Hitters</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 322 observations of major league players on the following 20 variables.
+</p>
+
+<dl>
+<dt><code>AtBat</code></dt><dd><p>Number of times at bat in 1986</p>
+</dd>
+<dt><code>Hits</code></dt><dd><p>Number of hits in 1986</p>
+</dd>
+<dt><code>HmRun</code></dt><dd><p>Number of home runs in 1986</p>
+</dd>
+<dt><code>Runs</code></dt><dd><p>Number of runs in 1986</p>
+</dd>
+<dt><code>RBI</code></dt><dd><p>Number of runs batted in in 1986</p>
+</dd>
+<dt><code>Walks</code></dt><dd><p>Number of walks in 1986</p>
+</dd>
+<dt><code>Years</code></dt><dd><p>Number of years in the major leagues</p>
+</dd>
+<dt><code>CAtBat</code></dt><dd><p>Number of times at bat during his career</p>
+</dd>
+<dt><code>CHits</code></dt><dd><p>Number of hits during his career</p>
+</dd>
+<dt><code>CHmRun</code></dt><dd><p>Number of home runs during his career</p>
+</dd>
+<dt><code>CRuns</code></dt><dd><p>Number of runs during his career</p>
+</dd>
+<dt><code>CRBI</code></dt><dd><p>Number of runs batted in during his career</p>
+</dd>
+<dt><code>CWalks</code></dt><dd><p>Number of walks during his career</p>
+</dd>
+<dt><code>League</code></dt><dd><p>A factor with levels <code>A</code> and <code>N</code>
+indicating player's league at the end of 1986</p>
+</dd>
+<dt><code>Division</code></dt><dd><p>A factor with levels <code>E</code> and <code>W</code>
+indicating player's division at the end of 1986</p>
+</dd>
+<dt><code>PutOuts</code></dt><dd><p>Number of put outs in 1986</p>
+</dd>
+<dt><code>Assists</code></dt><dd><p>Number of assists in 1986</p>
+</dd>
+<dt><code>Errors</code></dt><dd><p>Number of errors in 1986</p>
+</dd>
+<dt><code>Salary</code></dt><dd><p>1987 annual salary on opening day in thousands of  dollars</p>
+</dd>
+<dt><code>NewLeague</code></dt><dd><p>A factor with levels <code>A</code> and <code>N</code>
+indicating player's league at the beginning of 1987</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>This dataset was taken from the StatLib library which is
+maintained at Carnegie Mellon University. This is part of the data
+that was used in the 1988 ASA Graphics Section Poster Session. The
+salary data  were  originally  from  Sports Illustrated, April 20,
+1987. The 1986 and career statistics were obtained from The 1987 Baseball
+Encyclopedia Update published by Collier  Books,  Macmillan
+Publishing  Company, New York. 
+
+</p>
+
+
+<h3>References</h3>
+
+<p>James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013)
+<em>An Introduction to Statistical Learning with applications in R</em>,
+<a href="www.StatLearning.com">www.StatLearning.com</a>,
+Springer-Verlag, New York
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(Hitters)
+lm(Salary~AtBat+Hits,data=Hitters)
+</pre>
+
+
+</body></html>

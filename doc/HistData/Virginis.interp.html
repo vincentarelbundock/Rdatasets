@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: John F. W. Herschel's Data on the Orbit of the Twin Stars...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Virginis"><tr><td>Virginis</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+John F. W. Herschel's Data on the Orbit of the Twin Stars <i>&gamma;</i> <em>Virginis</em>
+</h2>
+
+<h3>Description</h3>
+
+<p>In 1833 J. F. W. Herschel published two papers in the <em>Memoirs of the Royal Astronomical Society</em>
+detailing his investigations of calculating the orbits of twin stars from observations of
+their relative position angle and angular distance.  
+</p>
+<p>In the process, he invented the scatterplot, and the use of visual smoothing to obtain a reliable
+curve that surpassed the accuracy of individual observations (Friendly &amp; Denis, 2005).
+His data on the recordings of the twin stars <i>&gamma;</i> <em>Virginis</em> provide an
+accessible example of his methods.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+	data("Virginis")
+	data("Virginis.interp")
+</pre>
+
+
+<h3>Format</h3>
+
+<p><code>Virgins</code>: A data frame with 18 observations on the following 6 variables giving
+the measurements of position angle and angular distance between the central (brightest)
+star and its twin, recorded by various observers over more than 100 years. 
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year (&quot;epoch&quot;) of the observation, a decimal numeric vector</p>
+</dd>
+<dt><code>posangle</code></dt><dd><p>recorded position angle between the two stars, a numeric vector</p>
+</dd>
+<dt><code>distance</code></dt><dd><p>separation distance between the two stars, a numeric vector</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>a subjective weight attributed to the accuracy of this observation, a numeric vector</p>
+</dd>
+<dt><code>notes</code></dt><dd><p>Herschel's notes on this observation, a character vector</p>
+</dd>
+<dt><code>authority</code></dt><dd><p>A simplified version of the notes giving just the attribution of authority of the observation, a character vector</p>
+</dd>
+</dl>
+
+<p><code>Virgins.interp</code>: A data frame with 14 observations on the following 4 variables, giving the
+position angles and angular distance that Herschel interpolated from his smoothed curve.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>year (&quot;epoch&quot;) of the observation, a decimal numeric vector</p>
+</dd>
+<dt><code>posangle</code></dt><dd><p>recorded position angle between the two stars, a numeric vector</p>
+</dd>
+<dt><code>distance</code></dt><dd><p>separation distance, calculated <i>1/sqrt(velocity)</i></p>
+</dd>
+<dt><code>velocity</code></dt><dd><p>angular velocity, calcualted as the instantaneous slopes of 
+tangents to the smoothed curve, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data in <code>Virginis</code> come from the table on p. 35 of the &ldquo;Micrometrical Measures&rdquo;
+paper.  
+</p>
+<p>The <code>weight</code> variable was assigned by the package author, reflecting Herschel's comments
+and for use in any weighted analysis.
+</p>
+<p>In the <code>notes</code> and <code>authority</code> variables, <code>"H"</code> refers to William Herschel
+(John's farther, the discoverer of the planet Uranus), <code>"h"</code> refers to John Herschel
+himself, and <code>"Sigma"</code>, rendered <i>&Sigma;</i> in the table on p. 35 refers to
+Joseph Fraunhofer.
+</p>
+<p>The data in <code>Virginis.interp</code> come from Table 1 on p. 190 of the supplementary
+paper.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Herschel, J. F. W. 
+III. Micrometrical Measures of 364 Double Stars with a 7-feet Equatorial Acromatic Telescope, taken at Slough, in the years 1828, 1829, and 1830 
+<em>Memoirs of the Royal Astronomical Society</em>, 1833, 5, 13-91.
+</p>
+<p>Herschel, J. F. W. 
+On the Investigation of the Orbits of Revolving Double Stars: Being a Supplement to a Paper Entitled &quot;Micrometrical Measures of 364 Double Stars&quot; 
+<em>Memoirs of the Royal Astronomical Society</em>, 1833, 5, 171-222.
+</p>
+
+
+<h3>References</h3>
+
+<p>Friendly, M. &amp; Denis, D. 
+The early origins and development of the scatterplot.
+<em>Journal of the History of the Behavioral Sciences</em>, 
+2005, 41, 103-130.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(Virginis)
+data(Virginis.interp)
+
+# Herschel's interpolated curve
+plot(posangle ~ year, data=Virginis.interp, 
+	pch=15, type="b", col="red", cex=0.8, lwd=2,
+	xlim=c(1710,1840), ylim=c(80, 170),
+	ylab="Position angle (deg.)", xlab="Year",
+	cex.lab=1.5)
+
+# The data points, and indication of their uncertainty
+points(posangle ~ year, data=Virginis, pch=16)
+points(posangle ~ year, data=Virginis, cex=weight/2)
+
+</pre>
+
+
+</body></html>

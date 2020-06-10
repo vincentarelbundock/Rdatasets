@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Dose-response profile of degradation of agrochemical using...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for lepidium"><tr><td>lepidium</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Dose-response profile of degradation of agrochemical using lepidium</h2>
+
+<h3>Description</h3>
+
+<p>Estimation of the degradation profile of an agrochemical based on soil samples at depth 0-10cm
+from a calibration experiment.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(lepidium)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 42 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>conc</code></dt><dd><p>a numeric vector of concentrations (g/ha)</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>a numeric vector of plant weight (g) after 3 weeks' growth</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>It is an experiment with seven concentrations and six replicates per concentration. <em>Lepidium</em>
+is rather robust as it only responds to high concentrations.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Racine-Poon, A. (1988) A Bayesian Approach to Nonlinear Calibration Problems, 
+<em>J. Am. Statist. Ass.</em>, <b>83</b>, 650&ndash;656.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+lepidium.m1 &lt;- drm(weight~conc, data=lepidium, fct = LL.4())
+
+modelFit(lepidium.m1)
+
+plot(lepidium.m1, type = "all", log = "")
+</pre>
+
+
+</body></html>

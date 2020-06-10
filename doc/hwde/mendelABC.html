@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Mendel's F2 trifactorial data for seed shape (A: round or...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for mendelABC"><tr><td>mendelABC</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Mendel's F2 trifactorial data for seed shape (A: round or wrinkled), 
+cotyledon color (B: albumen yellow or green), and seed coat color 
+(C: grey-brown or white)</h2>
+
+<h3>Description</h3>
+
+<p>The <code>mendel3</code> data frame has 27 rows and 4 columns. Data are
+from Mendel (1886), and are reproduced in Fisher (1936) and Weir (1996).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(mendelABC)</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>seedshape</dt><dd><p>Factor with levels:
+<code>AA</code>, <code>Aa</code> and <code>aa</code></p>
+</dd>
+<dt>cotylcolor</dt><dd><p>Factor with levels: 
+<code>BB</code>, <code>Bb</code> and <code>bb</code></p>
+</dd>
+<dt>coatcolor</dt><dd><p>Factor with levels:
+<code>CC</code>, <code>Cc</code> and <code>cc</code></p>
+</dd>
+<dt>Observed</dt><dd><p>a numeric vector that holds the frequencies.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are reviewed in detail in Fisher (1936).  For a brief
+discussion, and references to work that revisits Fisher's
+conclusions, see Weir (1996).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data are from Mendel (1886), and are reproduced in Fisher (1936) and
+Weir (1996).
+</p>
+
+
+<h3>References</h3>
+
+<p>1. Fisher, R.A. 1936. Has Mendel's work been rediscovered?
+<em>Annals of Science</em> <b>1</b>:115-137.
+</p>
+<p>2. Mendel, G. 1886. Versuche uber Pflanzen-Hybriden.  Verhandlugen
+des Naturforschenden Vereines in Brunn <b>4</b>:3-47.
+(An English translation. with annotations, is available from 
+<a href="http://www.esp.org/foundations/genetics/classical/gm-65.pdf">http://www.esp.org/foundations/genetics/classical/gm-65.pdf</a>
+NB also the English translation by Royal Horticultural Society of 
+London, reprinted in Peters, J.A. 1959. <em>Classic Papers in Genetics.</em>
+Prentice-Hall.)
+</p>
+<p>3. Weir, B.S. 1996.  <em>Genetic Data Analysis II.</em> Sinauer.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Lay table out as a 3D array, as in Fisher (1936)
+abc &lt;- aperm(array(mendelABC[,4], dim=c(3,3,3)), c(1,3,2))
+dimnames(abc) &lt;- list(B=c('BB','Bb','bb'), 
+                      A=c('AA','Aa','aa'),
+                      C=c('CC','Cc','cc'))
+abc
+## Fit Hardy-Weinberg disequilibium model
+hwde(mendelABC, loci=c("seedshape","cotylcolor","coatcolor"))
+</pre>
+
+
+</body></html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Volume of Users of a Rail Trail</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for RailTrail"><tr><td>RailTrail</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Volume of Users of a Rail Trail</h2>
+
+<h3>Description</h3>
+
+<p>The Pioneer Valley Planning Commission (PVPC) collected data north of Chestnut Street in
+Florence, MA for ninety days from April 5, 2005 to November 15, 2005. Data collectors set up a
+laser sensor, with breaks in the laser beam recording when a rail-trail user passed the
+data collection station.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data(RailTrail)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 90 observations on the following variables.
+</p>
+
+<ul>
+<li><p><code>hightemp</code> daily high temperature (in degrees Fahrenheit)
+</p>
+</li>
+<li><p><code>lowtemp</code> daily low temperature (in degrees Fahrenheit)
+</p>
+</li>
+<li><p><code>avgtemp</code> average of daily low and daily high temperature (in degrees Fahrenheit)
+</p>
+</li>
+<li><p><code>spring</code> indicator of whether the season was Spring
+</p>
+</li>
+<li><p><code>summer</code> indicator of whether the season was Summer
+</p>
+</li>
+<li><p><code>fall</code> indicator of whether the season was Fall
+</p>
+</li>
+<li><p><code>cloudcover</code> measure of cloud cover (in oktas)
+</p>
+</li>
+<li><p><code>precip</code> measure of precipitation (in inches)
+</p>
+</li>
+<li><p><code>volume</code> estimated number of trail users that day (number of breaks recorded)
+</p>
+</li>
+<li><p><code>weekday</code> logical indicator of whether the day was a non-holiday weekday
+</p>
+</li>
+<li><p><code>dayType</code> one of &quot;weekday&quot; or &quot;weekend&quot;
+</p>
+</li></ul>
+
+
+
+<h3>Details</h3>
+
+<p>There is a potential for error when two users trigger the infrared beam at exactly the same time since the counter
+would only logs one of the crossings.  The collectors left the motion detector out during the winter, but because the
+counter drops data when the temperature falls below 14 degrees Fahrenheit, there is no data for the cold winter months.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pioneer Valley Planning Commission
+</p>
+
+
+<h3>References</h3>
+
+<p>http://www.fvgreenway.org/pdfs/Northampton-Bikepath-Volume-Counts%20_05_LTA.pdf
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(RailTrail)
+
+</pre>
+
+
+</body></html>

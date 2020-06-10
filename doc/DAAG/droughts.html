@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Periods Between Rain Events</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for droughts"><tr><td>droughts</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Periods Between Rain Events</h2>
+
+<h3>Description</h3>
+
+<p>Data collected at Winnipeg International Airport (Canada)
+on periods (in days) between rain events.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>droughts</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>length</dt><dd><p>the length of time from the completion of
+the last rain event to the beginning of the next rain event.</p>
+</dd>
+<dt>year</dt><dd><p>the calendar year.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre>
+  boxplot(length ~ year, data=droughts)
+  boxplot(log(length) ~ year, data=droughts)
+  hist(droughts$length, main="Winnipeg Droughts", xlab="length (in days)")
+  hist(log(droughts$length), main="Winnipeg Droughts", xlab="length (in days, log scale)")
+
+</pre>
+
+
+</body></html>

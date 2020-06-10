@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Iron Content Measurements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ironslag"><tr><td>ironslag</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Iron Content Measurements</h2>
+
+<h3>Description</h3>
+
+<p>The <code>ironslag</code> data frame has 53 rows and 2 columns.
+Two methods for measuring the iron content in samples of slag 
+were compared, a chemical and a magnetic method.  The chemical
+method requires greater effort than the magnetic method.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>ironslag</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>chemical</dt><dd><p>a numeric vector containing the measurements
+coming from the chemical method</p>
+</dd>
+<dt>magnetic</dt><dd><p>a numeric vector containing the measurments
+coming from the magnetic method</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Hand, D.J., Daly, F., McConway, K., Lunn, D., and Ostrowski, E. eds (1993)
+A Handbook of Small Data Sets. London: Chapman &amp; Hall. 
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+iron.lm &lt;- lm(chemical ~ magnetic, data = ironslag)
+oldpar &lt;- par(mfrow = c(2,2))
+plot(iron.lm)
+par(oldpar)
+</pre>
+
+
+</body></html>

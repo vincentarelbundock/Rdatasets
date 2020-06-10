@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Kiwi Shading Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for kiwishade"><tr><td>kiwishade</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Kiwi Shading Data</h2>
+
+<h3>Description</h3>
+
+<p>The <code>kiwishade</code> data frame has 48 rows and 4 columns.
+The data are from a designed experiment that
+compared different kiwifruit shading treatments.
+There are four vines in each plot, and four plots (one for each of four
+treatments: none, Aug2Dec, Dec2Feb, and Feb2May) in each of three blocks
+(locations: west, north, east). Each
+plot has the same number of vines, each block has the same number of
+plots, with each treatment occurring the same number of times.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>kiwishade</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>yield</dt><dd><p>Total yield (in kg)</p>
+</dd>
+<dt>plot</dt><dd><p>a factor with levels    <code>east.Aug2Dec</code>,
+<code>east.Dec2Feb</code>,    <code>east.Feb2May</code>,
+<code>east.none</code>,    <code>north.Aug2Dec</code>,
+<code>north.Dec2Feb</code>,    <code>north.Feb2May</code>,
+<code>north.none</code>,    <code>west.Aug2Dec</code>,
+<code>west.Dec2Feb</code>,    <code>west.Feb2May</code>,
+<code>west.none</code> </p>
+</dd>
+<dt>block</dt><dd><p>a factor indicating the location of the plot with levels
+<code>east</code>, <code>north</code>, <code>west</code> </p>
+</dd>
+<dt>shade</dt><dd><p>a factor representing the period for which
+the experimenter placed shading over the vines; with levels:
+<code>none</code> no shading,    <code>Aug2Dec</code> August - December,
+<code>Dec2Feb</code> December - February,    <code>Feb2May</code> February - May</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The northernmost plots were grouped together because they
+were similarly affected by shading from the sun in the north.
+For the remaining two blocks shelter effects, whether from the
+west or from the east, were thought more important.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Snelgar, W.P., Manson. P.J., Martin, P.J. 1992. Influence of
+time of shading on flowering and yield of kiwifruit vines. Journal of
+Horticultural Science 67: 481-487.
+</p>
+
+
+<h3>References</h3>
+
+<p>Maindonald J H 1992. Statistical design, analysis and presentation
+issues. New Zealand Journal of Agricultural Research 35: 121-141.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print("Data Summary - Example 2.2.1")
+attach(kiwishade)
+kiwimeans &lt;- aggregate(yield, by=list(block, shade), mean)
+names(kiwimeans) &lt;- c("block","shade","meanyield")
+
+kiwimeans[1:4,]
+pause()
+
+print("Multilevel Design - Example 9.3")
+kiwishade.aov &lt;- aov(yield ~ shade+Error(block/shade),data=kiwishade)
+summary(kiwishade.aov)
+pause()
+
+
+sapply(split(yield, shade), mean)
+
+pause()
+
+kiwi.table &lt;- t(sapply(split(yield, plot), as.vector))
+kiwi.means &lt;- sapply(split(yield, plot), mean)
+kiwi.means.table &lt;- matrix(rep(kiwi.means,4), nrow=12, ncol=4)
+kiwi.summary &lt;- data.frame(kiwi.means, kiwi.table-kiwi.means.table)
+names(kiwi.summary)&lt;- c("Mean", "Vine 1", "Vine 2", "Vine 3", "Vine 4")
+kiwi.summary
+mean(kiwi.means) # the grand mean (only for balanced design)
+
+if(require(lme4, quietly=TRUE)) {
+kiwishade.lmer &lt;- lmer(yield ~ shade + (1|block) + (1|block:plot),
+                       data=kiwishade)
+## block:shade is an alternative to block:plot
+
+kiwishade.lmer
+
+
+##                  Residuals and estimated effects
+xyplot(residuals(kiwishade.lmer) ~ fitted(kiwishade.lmer)|block,
+                data=kiwishade, groups=shade,
+                layout=c(3,1), par.strip.text=list(cex=1.0),
+                xlab="Fitted values (Treatment + block + plot effects)",
+                ylab="Residuals", pch=1:4, grid=TRUE,
+                scales=list(x=list(alternating=FALSE), tck=0.5),
+                key=list(space="top", points=list(pch=1:4),
+                         text=list(labels=levels(kiwishade$shade)),columns=4))
+ploteff &lt;- ranef(kiwishade.lmer, drop=TRUE)[[1]]
+qqmath(ploteff, xlab="Normal quantiles", ylab="Plot effect estimates",
+       scales=list(tck=0.5))
+}
+</pre>
+
+
+</body></html>

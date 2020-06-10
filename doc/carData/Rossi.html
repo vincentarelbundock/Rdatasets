@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Rossi et al.'s Criminal Recidivism Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Rossi"><tr><td>Rossi</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Rossi et al.'s Criminal Recidivism Data</h2>
+
+<h3>Description</h3>
+
+<p>This data set is originally from Rossi et al. (1980), and is used as an example
+in Allison (1995). The data pertain to 432 convicts who were released from
+Maryland state prisons in the 1970s and who were followed up for one
+year after release. Half the released convicts were assigned at random to
+an experimental treatment in which they were given financial aid; half did not
+receive aid.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Rossi</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 432 observations on the following 62 variables.
+</p>
+
+<dl>
+<dt><code>week</code></dt><dd><p>week of first arrest after release or censoring; all censored
+observations are censored at 52 weeks.</p>
+</dd>
+<dt><code>arrest</code></dt><dd><p><code>1</code> if arrested, <code>0</code> if not arrested.</p>
+</dd>
+<dt><code>fin</code></dt><dd><p>financial aid: <code>no</code> <code>yes</code>.</p>
+</dd>
+<dt><code>age</code></dt><dd><p>in years at time of release.</p>
+</dd>
+<dt><code>race</code></dt><dd><p><code>black</code> or <code>other</code>.</p>
+</dd>
+<dt><code>wexp</code></dt><dd><p>full-time work experience before incarceration: <code>no</code> or <code>yes</code>.</p>
+</dd>
+<dt><code>mar</code></dt><dd><p>marital status at time of release: <code>married</code> or <code>not married</code>.</p>
+</dd>
+<dt><code>paro</code></dt><dd><p>released on parole? <code>no</code> or <code>yes</code>.</p>
+</dd>
+<dt><code>prio</code></dt><dd><p>number of convictions prior to current incarceration.</p>
+</dd>
+<dt><code>educ</code></dt><dd><p>level of education: <code>2</code> = 6th grade or less;
+<code>3</code> = 7th to 9th grade; <code>4</code> = 10th to 11th grade;
+<code>5</code> = 12th grade; <code>6</code> = some college.</p>
+</dd>
+<dt><code>emp1</code></dt><dd><p>employment status in the first week after release: <code>no</code> or <code>yes</code>.</p>
+</dd>
+<dt><code>emp2</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp3</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp4</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp5</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp6</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp7</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp8</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp9</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp10</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp11</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp12</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp13</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp14</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp15</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp16</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp17</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp18</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp19</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp20</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp21</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp22</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp23</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp24</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp25</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp26</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp27</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp28</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp29</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp30</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp31</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp32</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp33</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp34</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp35</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp36</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp37</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp38</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp39</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp40</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp41</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp42</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp43</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp44</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp45</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp46</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp47</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp48</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp49</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp50</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp51</code></dt><dd><p>as above.</p>
+</dd>
+<dt><code>emp52</code></dt><dd><p>as above.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Allison, P.D. (1995). <em>Survival Analysis Using the SAS System: A Practical Guide.</em>
+Cary, NC: SAS Institute.
+</p>
+
+
+<h3>References</h3>
+
+<p>Rossi, P.H., R.A. Berk, and K.J. Lenihan (1980). <em>Money, Work, and Crime:
+Some Experimental Results.</em> New York: Academic Press.
+</p>
+<p>John Fox, Marilia Sa Carvalho (2012).
+The RcmdrPlugin.survival Package: Extending the R Commander Interface to Survival Analysis.
+<em>Journal of Statistical Software</em>, 49(7), 1-32.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(Rossi)
+</pre>
+
+
+</body></html>

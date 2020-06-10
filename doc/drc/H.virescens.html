@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Mortality of tobacco budworms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for H.virescens"><tr><td>H.virescens</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Mortality of tobacco budworms</h2>
+
+<h3>Description</h3>
+
+<p>For three days, moths of the tobacco budworm (<em>Heliothis virescens</em>) were exposed 
+to doses of the pyrethroid trans-cypermethrin.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(H.virescens)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 12 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>dose</code></dt><dd><p>a numeric vector of dose values (<i>&mu; g</i>)</p>
+</dd>
+<dt><code>numdead</code></dt><dd><p>a numeric vector of dead or knocked-down moths</p>
+</dd>
+<dt><code>total</code></dt><dd><p>a numeric vector of total number of moths</p>
+</dd>
+<dt><code>sex</code></dt><dd><p>a factor with levels <code>F</code> <code>M</code> denoting a grouping according to sex</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In Venables and Ripley (2002), these data are analysed using a logistic regression with base-2 logarithm of dose 
+as explanatory variable.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Venables, W. N. and Ripley, B. D (2002) <em>Modern Applied Statistics with S</em>, New York: Springer (fourth edition).
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Fitting dose-response model (log-logistic with common slope)
+Hv.m1 &lt;- drm(numdead/total~dose, sex, weights = total, data = H.virescens, fct = LL.2(), 
+pmodels = list(~ 1, ~ sex - 1), type = "binomial")
+summary(Hv.m1)
+
+## Fitting the same model as in Venables and Riply (2002)
+Hv.m2 &lt;- glm(cbind(numdead, total-numdead) ~ sex + I(log2(dose)) - 1, data = H.virescens, 
+family = binomial)
+
+## Comparing the fits
+logLik(Hv.m1)
+logLik(Hv.m2)
+
+## Estimated ED values (matching those given in MASS)
+ED(Hv.m1, c(25, 50, 75))
+
+
+</pre>
+
+
+</body></html>

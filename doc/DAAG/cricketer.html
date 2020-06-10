@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Lifespans of UK 1st class cricketers born 1840-1960</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for cricketer"><tr><td>cricketer</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Lifespans of UK 1st class cricketers born 1840-1960</h2>
+
+<h3>Description</h3>
+
+<p>Year and birth, lifespan, etc, of British first class cricketers,
+born 1840-1960, whose handedness could be determined from
+information in the Who's who of cricketers.  The status
+(alive=0, dead =1), and lifetime or lifespan, is for 1992.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(cricketer)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 5960 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>left</code></dt><dd><p>a factor with levels <code>right</code> <code>left</code></p>
+</dd>
+<dt><code>year</code></dt><dd><p>numeric, year of birth</p>
+</dd>
+<dt><code>life</code></dt><dd><p>numeric, lifetime or lifespan to 1992</p>
+</dd>
+<dt><code>dead</code></dt><dd><p>numeric (0 = alive (censored), 1 = dead, in 1992)</p>
+</dd>
+<dt><code>acd</code></dt><dd><p>numeric (0 = not accidental or not dead, 1
+= accidental death)</p>
+</dd>
+<dt><code>kia</code></dt><dd><p>numeric (0 = not killed in action, 1
+= killed in action)</p>
+</dd>
+<dt><code>inbed</code></dt><dd><p>numeric (0 = did not die in bed, 1
+= died in bed)</p>
+</dd>
+<dt><code>cause</code></dt><dd><p>a factor with levels <code>alive</code> <code>acd</code>
+(accidental death) <code>inbed</code> (died in bed)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Note that those 'killed in action' (mostly during World Wars I and II)
+form a subset of those who died by accident.
+</p>
+
+
+<h3>Source</h3>
+
+<p>John Aggleton, Martin Bland.  Data were collated as described in
+Aggleton et al.
+</p>
+
+
+<h3>References</h3>
+
+<p>Aggleton JP, Bland JM, Kentridge RW, Neave NJ 1994.  Handedness and
+longevity: an archival study of cricketers.  British Medical Journal
+309, 1681-1684.
+</p>
+<p>Bailey P, Thorne P, Wynne-Thomas P. 1993. Who's Who of Cricketers.
+2nd ed, London, Hamlyn.
+</p>
+<p>Bland M and Altman D. 2005. Do the left-handed die young?
+Significance 2, 166-170.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>earlycrcktr</code>.</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(cricketer)
+numLH &lt;- xtabs(~ left+year, data=cricketer)
+propLH &lt;- prop.table(numLH, margin=2)[2,]
+yr &lt;- as.numeric(colnames(numLH))
+plot(propLH ~ yr)
+cricketer$lh &lt;- unclass(cricketer$left)-1
+left2.hat &lt;- fitted(lm(lh ~ poly(year,2), data=cricketer))
+ord &lt;- order(cricketer$year)
+lines(left2.hat[ord] ~ cricketer$year[ord])
+library(splines)
+ns3.hat &lt;- fitted(lm(lh ~ ns(year,3), data=cricketer))
+lines(ns3.hat[ord] ~ cricketer$year[ord], col="red")
+require(survival)
+summary(coxph(Surv(life, kia) ~ bs(year,3) +left, data=cricketer))
+cricketer$notacdDead &lt;- with(cricketer, {dead[acd==1]&lt;-0; dead})
+summary(coxph(Surv(life, notacdDead) ~ ns(year,2) +left, data=cricketer))
+</pre>
+
+
+</body></html>

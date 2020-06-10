@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Steam Usage Data (Excerpt)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for steamUse"><tr><td>steamUse</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Steam Usage Data (Excerpt)</h2>
+
+<h3>Description</h3>
+
+<p>The monthly use of steam (<code>Steam</code>) in a factory may be
+modeled and described as function of the
+operating days per month (<code>Operating.Days</code>) and
+mean outside temperature per month (<code>Temperature</code>).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("steamUse", package="robustbase")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 25 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>Steam</code>:</dt><dd><p>regression response <i>Y</i>, the poinds of
+steam used monthly.</p>
+</dd>
+<dt><code>fattyAcid</code>:</dt><dd><p>pounds of Real Fatty Acid in storage per month.</p>
+</dd>
+<dt><code>glycerine</code>:</dt><dd><p>pounds of crude glycerine made.</p>
+</dd>
+<dt><code>wind</code>:</dt><dd><p>average wind velocity in miles per hour (a numeric vector).</p>
+</dd>
+<dt><code>days</code>:</dt><dd><p>an integer vector with number of days of that
+month, i.e., in <i>28..31</i>.</p>
+</dd>
+<dt><code>op.days</code>:</dt><dd><p>the number of operating days for the given
+month (integer).</p>
+</dd>
+<dt><code>freeze.d</code>:</dt><dd><p>the number of days below
+32 degrees Fahrenheit (<i>= 0</i>°C (C=Celsius) <i>=</i>
+freezing temperature of water).</p>
+</dd>
+<dt><code>temperature</code>:</dt><dd><p>a numeric vector of average outside temperature in
+Fahrenheit (F).</p>
+</dd>
+<dt><code>startups</code>:</dt><dd><p>the number of startups (of production in that month).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Nor further information is given in Draper and Smith, about the place
+and exacts years of the measurements, though some educated guesses
+should be possible, see the examples.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data from Draper and Smith, 1st ed, 1966; appendix A.
+</p>
+<p>A version of this has been used in teaching at SfS ETH Zurich, since at least 1996,
+<a href="https://stat.ethz.ch/Teaching/Datasets/NDK/dsteam.dat">https://stat.ethz.ch/Teaching/Datasets/NDK/dsteam.dat</a>
+</p>
+<p>The package <a href="https://CRAN.R-project.org/package=aprean3"><span class="pkg">aprean3</span></a> contains all data sets from the 3rd
+edition of Draper and Smith (1998), and this data set with variable
+names <code>x1 .. x10</code> (<code>x9</code> being <code>wind^2</code>, hence extraneous).
+</p>
+
+
+<h3>References</h3>
+
+<p>Draper and Smith (1981) Applied Regression Analysis (2nd ed., p. 615 ff)
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Not run: 
+if(require("aprean3")) { # show how  'steamUse'  is related to 'dsa01a'
+  stm &lt;- dsa01a
+  names(stm) &lt;- c("Steam", "fattyAcid", "glycerine", "wind",
+		  "days", "op.days", "freeze.d",
+		  "temperature", "wind.2", "startups")
+  ## prove that wind.2 is  wind^2, "traditionally" rounded to 1 digit:
+  stopifnot(all.equal(floor(0.5 + 10*stm[,"wind"]^2)/10,
+                      stm[,"wind.2"], tol = 1e-14))
+  ## hence drop it
+  steamUse &lt;- stm[, names(stm) != "wind.2"]
+}
+
+## End(Not run)
+data(steamUse)
+str(steamUse)
+## Looking at this,
+cbind(M=rep_len(month.abb, 25), steamUse[,5:8, drop=FALSE])
+## one will conjecture that these were 25 months, Jan--Jan in a row,
+## starting in a leap year (perhaps 1960 ?).
+
+plot(steamUse)
+
+summary(fm1 &lt;- lmrob(Steam ~ temperature + op.days, data=steamUse))
+## diagnoses 2 outliers: month of July, maybe company-wide summer vacations
+
+## KS2014 alone seems not robust enough:
+summary(fm.14 &lt;- lmrob(Steam ~ temperature + op.days, data=steamUse,
+         setting="KS2014"))
+pairs(Steam ~ temperature+op.days, steamUse)
+</pre>
+
+
+</body></html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Effect of sodium pentachlorophenate on growth of fathead...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for P.promelas"><tr><td>P.promelas</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Effect of sodium pentachlorophenate on growth of fathead minnow</h2>
+
+<h3>Description</h3>
+
+<p>Fathead minnows (<em>Pimephales promelas</em>) were exposed to sodium pentachlorophenate
+concentrations ranging from 32 to 512 micro g/L in a 7-day larval survival and growth test.
+The average dry weight was measured.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(P.promelas)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 24 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>conc</code></dt><dd><p>a numeric vector of sodium pentachlorophenate concentrations (micro g/L).</p>
+</dd>
+<dt><code>dryweight</code></dt><dd><p>a numeric vector dry weights (mg)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are analysed in Bruce and Versteeg (1992) using a log-normal 
+dose-response model (using the logarithm with base 10).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Bruce, R. D. and Versteeg, D. J. (1992) A statistical procedure for modeling continuous toxicity data,
+<em>Environ. Toxicol. Chem.</em>, <b>11</b>, 1485&ndash;1494.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Model with ED50 on log scale as parameter
+p.prom.m1&lt;-drm(dryweight~conc, data=P.promelas, fct=LN.3())
+
+plot(fitted(p.prom.m1), residuals(p.prom.m1))
+
+plot(p.prom.m1, type="all", broken=TRUE, xlim=c(0,1000))
+summary(p.prom.m1)
+ED(p.prom.m1, c(10,20,50), interval="delta")
+
+## Model with ED50 as parameter
+p.prom.m2&lt;-drm(dryweight~conc, data=P.promelas, fct=LN.3(loge=TRUE))
+summary(p.prom.m2)
+ED(p.prom.m2, c(10,20,50), interval="fls")
+
+</pre>
+
+
+</body></html>

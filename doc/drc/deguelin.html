@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Deguelin applied to chrysanthemum aphis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for deguelin"><tr><td>deguelin</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Deguelin applied to chrysanthemum aphis</h2>
+
+<h3>Description</h3>
+
+<p>Quantal assay data from an experiment where the insectide deguelin was applied to
+<em>Macrosiphoniella sanborni</em>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(deguelin)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 6 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>dose</code></dt><dd><p>a numeric vector of doses applied</p>
+</dd>
+<dt><code>log10dose</code></dt><dd><p>a numeric vector of logarithm-transformed doses</p>
+</dd>
+<dt><code>r</code></dt><dd><p>a numeric vector contained number of dead insects</p>
+</dd>
+<dt><code>n</code></dt><dd><p>a numeric vector contained the total number of insects</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The log-logistic model provides an inadequate fit.
+</p>
+<p>The dataset is used in Nottingham and Birch (2000) to illustrate a semiparametric approach to dose-response
+modelling.
+</p>
+
+
+<h3>Source</h3>
+
+ 
+<p>Morgan, B. J. T. (1992) <em>Analysis of Quantal Response Data</em>, London: Chapman \&amp; Hall/CRC (Table 3.9, p. 117).
+</p>
+
+
+<h3>References</h3>
+
+<p>Notttingham, Q. J. and Birch, J. B. (2000) A semiparametric approach to analysing dose-response data, <em>Statist. Med.</em>, <b>19</b>, 389&ndash;404.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Log-logistic fit
+deguelin.m1 &lt;- drm(r/n~dose, weights=n, data=deguelin, fct=LL.2(), type="binomial")
+modelFit(deguelin.m1)
+summary(deguelin.m1)
+
+## Loess fit
+deguelin.m2 &lt;- loess(r/n~dose, data=deguelin, degree=1)
+
+## Plot of data with fits superimposed
+plot(deguelin.m1, ylim=c(0.2,1))
+lines(1:60, predict(deguelin.m2, newdata=data.frame(dose=1:60)), col = 2, lty = 2)
+
+lines(1:60, 0.95*predict(deguelin.m2, 
+newdata=data.frame(dose=1:60))+0.05*predict(deguelin.m1, newdata=data.frame(dose=1:60), se = FALSE),
+col = 3, lty=3)
+
+</pre>
+
+
+</body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Minneapolis Police Department 2017 Stop Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for MplsStops"><tr><td>MplsStops</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Minneapolis Police Department 2017 Stop Data
+</h2>
+
+<h3>Description</h3>
+
+<p>Results of nearly all stops made by the Minneapolis Police Department for the year 2017.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 51857 observations on the following 14 variables.
+</p>
+
+<dl>
+<dt><code>idNum</code></dt><dd><p>character vector of incident identifiers</p>
+</dd>
+<dt><code>date</code></dt><dd><p>a POSIXlt date variable giving the date and time of the stop</p>
+</dd>
+<dt><code>problem</code></dt><dd><p>a factor with levels <code>suspicious</code> for suspicious vehicle or person stops and  <code>traffic</code> for traffic stops</p>
+</dd>
+<dt><code>citationIssued</code></dt><dd><p>a factor with levels <code>no</code> <code>yes</code> indicating if a citation was issued</p>
+</dd>
+<dt><code>personSearch</code></dt><dd><p>a factor with levels <code>no</code> <code>yes</code> indicating if the stopped person was searched</p>
+</dd>
+<dt><code>vehicleSearch</code></dt><dd><p>a factor with levels <code>no</code> or <code>yes</code> indicating if a vehicle was searched</p>
+</dd>
+<dt><code>preRace</code></dt><dd><p>a factor with levels <code>white</code>, <code>black</code>, <code>east african</code>, <code>latino</code>, <code>native american</code>, <code>asian</code>, <code>other</code>, <code>unknown</code> for the officer's assessment of race of the person stopped before speaking with the person stopped</p>
+</dd>
+<dt><code>race</code></dt><dd><p>a factor with levels <code>white</code>, <code>black</code>, <code>east african</code>, <code>latino</code>, <code>native american</code>, <code>asian</code>, <code>other</code>, <code>unknown</code>, officer's determination of race after the incident</p>
+</dd>
+<dt><code>gender</code></dt><dd><p>a factor with levels <code>female</code>, <code>male</code>, <code>unknown</code>, gender of person stopped</p>
+</dd>
+<dt><code>lat</code></dt><dd><p>latitude of the location of the incident, somewhat rounded</p>
+</dd>
+<dt><code>long</code></dt><dd><p>latitude of the location of the incident, somewhat rounded</p>
+</dd>
+<dt><code>policePrecinct</code></dt><dd><p>Minneapolis Police Precinct number</p>
+</dd>
+<dt><code>neighborhood</code></dt><dd><p>a factor with 84 levels giving the name of the Minneapolis neighborhood of the incident</p>
+</dd>
+<dt><code>MDC</code></dt><dd><p>a factor with levels <code>mdc</code> for data collected via in-vehicle computer, and <code>other</code> for data submitted by officers not in a vehicle, either on foot, bicycle or horseback.  Several of the variables above were recorded only in-vehicle</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A few stops have been deleted, either because thesu location data was missing, or a few very rare categories were also removed.  The data frame <code>MplsDemo</code> contains 2015 demongraphic data on Minneapolis neighborhoods, using the same neighborhood names as this data file.  Demographics are available for 84 of Minneaolis' 87 neighborhoods.  The remaining 3 presumably have no housing.
+</p>
+
+
+<h3>Source</h3>
+
+<p>These are public data obtained from &lt;http://opendata.minneapolismn.gov/datasets/police-stop-data&gt;.  A few more fields, and more data, are available at the original source
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(MplsStops)
+</pre>
+
+
+</body></html>

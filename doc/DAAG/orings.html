@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Challenger O-rings Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for orings"><tr><td>orings</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Challenger O-rings Data</h2>
+
+<h3>Description</h3>
+
+<p>Record of the number and type of O-ring failures prior to the
+tragic Challenger mission in January, 1986.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>orings</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Temperature</dt><dd><p>O-ring temperature for each test firing or
+actual launch of the shuttle rocket engine</p>
+</dd>
+<dt>Erosion</dt><dd><p>Number of erosion incidents </p>
+</dd>
+<dt>Blowby</dt><dd><p>Number of blowby incidents</p>
+</dd>
+<dt>Total</dt><dd><p>Total number of incidents</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Presidential Commission on the Space Shuttle Challenger Accident, 
+Vol. 1, 1986: 129-131.  
+</p>
+
+
+<h3>References</h3>
+
+<p>Tufte, E. R. 1997. Visual Explanations. Graphics Press, Cheshire,
+Connecticut, U.S.A.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+oldpar &lt;- par(mfrow=c(1,2))
+plot(Total~Temperature, data = orings[c(1,2,4,11,13,18),]) # the 
+               # observations included in the pre-launch charts
+plot(Total~Temperature, data = orings)
+par(oldpar)
+</pre>
+
+
+</body></html>

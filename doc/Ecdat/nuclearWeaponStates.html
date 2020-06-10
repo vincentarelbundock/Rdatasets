@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Nations with nuclear weapons</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for nuclearWeaponStates"><tr><td>nuclearWeaponStates</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Nations with nuclear weapons</h2>
+
+<h3>Description</h3>
+
+<p>Data on the 9 nuclear-weapon states as of 
+April 2019.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(nuclearWeaponStates)</pre>
+
+
+<h3>Format</h3>
+
+<p>A dataframe containing :
+</p>
+
+<dl>
+<dt>nation</dt><dd>
+<p>The name of the country (character).  
+The former USSR is listed here as Russia.  
+</p>
+</dd>
+<dt>ctry</dt><dd>
+<p><a href="https://en.wikipedia.org/wiki/ISO_3166-1#cite_note-iso3166-info-1">ISO 31661-</a> alpha-2 two-letter country codes 
+(character).</p>
+</dd>
+<dt>firstTest</dt><dd>
+<p>Date of first test of a nuclear weapon.  
+</p>
+<p>For Israel, which has not publicly acknowledged
+that it has nuclear weapons, this uses the Date 
+of the 
+<a href="https://en.wikipedia.org/wiki/Vela_Incident">Vela Incident</a>.  
+</p>
+</dd>
+<dt>firstTestYr</dt><dd>
+<p><code>lubridate::decimal_date(firstTest)</code>
+</p>
+</dd>
+<dt>yearsSinceLastFirstTest</dt><dd>
+<p><code>c(NA, diff(firstTestYr))</code>
+</p>
+</dd>
+<dt>nuclearWeapons</dt><dd>
+<p>number of nuclear weapons 
+</p>
+</dd>
+<dt>nYieldNA, nLowYield, nMidYield, nHighYield</dt><dd>
+<p>number of weapons for which the yield in 
+<code>(nYieldNA)</code> = unknown or variable, 
+<code>(nLowYield)</code> = at most 15 kt 
+(kilotons), the size of the Hiroshima 
+bomb, <code>(nMidYield)</code> = greater than 15 
+but less that 50 kt, and <code>(nHighYield)</code> 
+= at least 50 kt.  
+</p>
+</dd>
+<dt>popM, popYr</dt><dd>
+<p><code>popM</code> = estimated population in millions 
+for year <code>popYr</code>, per the Wikipedia 
+article for the indicated country on 2020-02-05.  
+</p>
+</dd>
+<dt>GDP_B,	GDPyr</dt><dd>
+<p><code>GDP_B</code> = nominal Gross Domestic Product 
+in billions of US dollars for year 
+<code>GDPyr</code>, per the Wikipedia article for 
+the indicated country on 2020-02-05. 
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Overview from <a href="https://www.ploughshares.org/world-nuclear-stockpile-report">World Nuclear Weapon Stockpile</a>
+</p>
+<p><code>firstTest</code> from <a href="https://en.wikipedia.org/wiki/List_of_states_with_nuclear_weapons">Wikipedia, &quot;List of states with nuclear weapons&quot;</a>
+</p>
+<p>US from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1438219?needAccess=true">Hans M. Kristensen &amp; Robert S. Norris (2018) United States nuclear forces,2018, Bulletin of the Atomic Scientists, 74:2, 120-131, DOI: 10.1080/00963402.2018.143821</a>
+</p>
+<p>Russia from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2019.1580891?needAccess=true">Hans M. Kristensen &amp; Matt Korda (2019) Russian nuclear forces, 2019, Bulletin of the Atomic Scientists, 75:2, 73-84, DOI: 10.1080/00963402.2019.1580891</a>
+</p>
+<p>UK from <a href="https://journals.sagepub.com/doi/pdf/10.1177/0096340213493260">Robert S. Norris and Hans M. Kristensen (2013) The British nuclear stockpile, 1953-2013, Bulletin of the Atomic Scientists, 69:4, 69-75s</a>
+</p>
+<p>France from <a href="https://journals.sagepub.com/doi/pdf/10.2968/064004012">Robert S. Norris &amp; Hans M. Kristensen (2008) French nuclear forces, 2008, Bulletin of the Atomic Scientists, 64:4, 52-54, 57</a>  
+</p>
+<p>China from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1486620?needAccess=true">Hans M. Kristensen &amp; Robert S. Norris (2018) Chinese nuclear forces, 2018,Bulletin of the Atomic Scientists, 74:4, 289-295</a>
+</p>
+<p>India from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2017.1337998?needAccess=true"> Hans M. Kristensen &amp; Robert S. Norris (2017) Indian nuclear forces, 2017,Bulletin of the Atomic Scientists, 73:4, 205-209</a>
+</p>
+<p>Israel from <a href="https://journals.sagepub.com/doi/pdf/10.1177/0096340214555409">Hans M. Kristensen and Robert S. Norris (2014) Israeli nuclear weapons, 2014, Bulletin of the Atomic Scientists, 70:6, 97-115</a>
+</p>
+<p>Pakistan from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1507796?needAccess=true">Hans M. Kristensen, Robert S. Norris &amp; Julia Diamond (2018)Pakistani nuclear forces, 2018, Bulletin of the Atomic Scientists, 74:5, 348-358</a>
+</p>
+<p>North Korea from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2017.1413062?needAccess=true"> Hans M. Kristensen &amp; Robert S. Norris (2018) North Korean nuclear capabilities, 2018, Bulletin of the Atomic Scientists, 74:1, 41-51</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(nuclearWeaponStates)
+plot(yearsSinceLastFirstTest~firstTest, 
+    nuclearWeaponStates, type='h', xlab='', ylab='')
+with(nuclearWeaponStates, 
+  text(firstTest, yearsSinceLastFirstTest, ctry))
+</pre>
+
+
+</body></html>

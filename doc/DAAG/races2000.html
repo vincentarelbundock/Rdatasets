@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Scottish Hill Races Data - 2000</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for races2000"><tr><td>races2000</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Scottish Hill Races Data - 2000</h2>
+
+<h3>Description</h3>
+
+<p>The record times in 2000 for 77 Scottish long distance
+races.  We
+believe the data are, for the most part, trustworthy.  However,
+the <code>dist</code> variable for Caerketton (record 58) seems
+to have been variously recorded as 1.5 mi and 2.5 mi.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>races2000</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>dist</dt><dd><p>distance, in miles (on the map)</p>
+</dd>
+<dt>climb</dt><dd><p>total height gained during the route, in feet</p>
+</dd>
+<dt>time</dt><dd><p>record time in hours</p>
+</dd>
+<dt>timef</dt><dd><p>record time in hours for females</p>
+</dd>
+<dt>type</dt><dd><p>a factor, with levels indicating type of race, 
+i.e. hill, marathon, relay, uphill or other</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>The Scottish Running Resource, http://www.hillrunning.co.uk
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+    pairs(races2000[,-5])
+</pre>
+
+
+</body></html>

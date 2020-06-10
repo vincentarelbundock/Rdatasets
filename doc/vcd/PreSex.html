@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Pre-marital Sex and Divorce</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for PreSex"><tr><td>PreSex</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Pre-marital Sex and Divorce</h2>
+
+<h3>Description</h3>
+
+<p>Data from Thornes \&amp; Collard (1979), reported in Gilbert (1981), on
+pre- and extra-marital sex and divorce.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data("PreSex")
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A 4-dimensional array resulting from cross-tabulating 1036
+observations on 4 variables.  The variables and their levels are as
+follows:
+</p>
+
+<table summary="Rd table">
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1 </td><td style="text-align: left;"> MaritalStatus </td><td style="text-align: left;"> Divorced, Married </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2 </td><td style="text-align: left;"> ExtramaritalSex </td><td style="text-align: left;"> Yes, No </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    3 </td><td style="text-align: left;"> PremaritalSex </td><td style="text-align: left;"> Yes, No </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    4 </td><td style="text-align: left;"> Gender </td><td style="text-align: left;"> Women, Men
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Michael Friendly (2000),
+Visualizing Categorical Data:
+<a href="http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/marital.sas">http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/marital.sas</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>G. N. Gilbert (1981),
+<em>Modelling Society: An Introduction to Loglinear Analysis for
+Social Researchers</em>.
+Allen and Unwin, London.
+</p>
+<p>B. Thornes \&amp; J. Collard (1979),
+<em>Who Divorces?</em>.
+Routledge \&amp; Kegan, London.
+</p>
+<p>M. Friendly (2000),
+<em>Visualizing Categorical Data</em>.
+SAS Institute, Cary, NC.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("PreSex")
+
+## Mosaic display for Gender and Premarital Sexual Experience
+## (Gender Pre)
+mosaic(margin.table(PreSex, c(3,4)), 
+                main = "Gender and Premarital Sex")
+
+## (Gender Pre)(Extra)
+mosaic(margin.table(PreSex, c(2,3,4)), 
+       expected = ~Gender * PremaritalSex + ExtramaritalSex ,
+	   main = "PreMaritalSex*Gender +Sex")
+
+## (Gender Pre Extra)(Marital)
+mosaic(PreSex,
+       expected = ~Gender*PremaritalSex*ExtramaritalSex + MaritalStatus,
+       main = "PreMarital*ExtraMarital + MaritalStatus")
+
+## (GPE)(PEM)
+mosaic(PreSex, 
+       expected = ~ Gender * PremaritalSex * ExtramaritalSex
+                    + MaritalStatus * PremaritalSex * ExtramaritalSex,
+       main = "G*P*E + P*E*M")
+</pre>
+
+
+</body></html>

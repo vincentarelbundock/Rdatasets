@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Moths Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for moths"><tr><td>moths</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Moths Data</h2>
+
+<h3>Description</h3>
+
+<p>The <code>moths</code> data frame has 41 rows and 4 columns.
+These data are from a study of the effect of habitat on the
+densities of two species of moth (A and P).  Transects were
+set across the search area.  Within transects, sections
+were identified according to habitat type.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>moths</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>meters</dt><dd><p>length of transect</p>
+</dd>
+<dt>A</dt><dd><p>number of type A moths found</p>
+</dd>
+<dt>P</dt><dd><p>number of type P moths found</p>
+</dd>
+<dt>habitat</dt><dd><p>a factor with levels
+<code>Bank</code>,
+<code>Disturbed</code>,
+<code>Lowerside</code>,
+<code>NEsoak</code>,
+<code>NWsoak</code>,
+<code>SEsoak</code>,
+<code>SWsoak</code>,
+<code>Upperside</code> </p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Sharyn Wragg, formerly of Australian National University
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print("Quasi Poisson Regression - Example 8.3")
+rbind(table(moths[,4]), sapply(split(moths[,-4], moths$habitat), apply,2,
+sum))
+A.glm &lt;- glm(formula = A ~ log(meters) + factor(habitat), family =
+quasipoisson, data = moths)
+summary(A.glm)
+  # Note the huge standard errors
+moths$habitat &lt;- relevel(moths$habitat, ref="Lowerside")
+A.glm &lt;- glm(A ~ habitat + log(meters), family=quasipoisson, data=moths)
+summary(A.glm)$coef
+## Consider as another possibility
+A2.glm &lt;- glm(formula = A ~ sqrt(meters) + factor(habitat), family =
+                  quasipoisson(link=sqrt), data = moths)
+summary(A2.glm)
+</pre>
+
+
+</body></html>

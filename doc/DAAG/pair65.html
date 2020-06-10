@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Heated Elastic Bands</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for pair65"><tr><td>pair65</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Heated Elastic Bands</h2>
+
+<h3>Description</h3>
+
+<p>The <code>pair65</code> data frame has 9 rows and 2 columns.
+Eighteen elastic bands were divided into nine pairs, with bands
+of similar stretchiness placed in the same pair. One member of
+each pair was placed in hot water (60-65 degrees C) for four
+minutes, while the other was left at ambient temperature.  After
+a wait of about ten minutes, the amounts of stretch, under a 1.35 kg
+weight, were recorded.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>pair65</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>heated</dt><dd><p>a numeric vector giving the stretch lengths for
+the heated bands</p>
+</dd>
+<dt>ambient</dt><dd><p>a numeric vector giving the stretch lengths for
+the unheated bands</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>J.H. Maindonald
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+mean(pair65$heated - pair65$ambient)
+sd(pair65$heated - pair65$ambient)
+</pre>
+
+
+</body></html>

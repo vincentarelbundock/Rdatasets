@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Heart rate baroreflexes for rabbits</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for heartrate"><tr><td>heartrate</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Heart rate baroreflexes for rabbits</h2>
+
+<h3>Description</h3>
+
+<p>The dataset contains measurements of mean arterial pressure (mmHG) and heart rate (b/min) for a baroreflex curve.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(heartrate)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 18 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>pressure</code></dt><dd><p>a numeric vector containing measurements of arterial pressure.</p>
+</dd>
+<dt><code>rate</code></dt><dd><p>a numeric vector containing measurements of heart rate.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset is an example of an asymmetric dose-response curve, that is not
+easily handled using the log-logistic or Weibull models (<code>LL.4</code>, <code>LL.5</code>, 
+<code>W1.4</code> and <code>W2.4</code>), whereas the <code>baro5</code> model provides a nice fit.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Ricketts, J. H. and Head, G. A. (1999) A five-parameter logistic equation for investigating asymmetry of
+curvature in baroreflex studies, 
+<em>Am. J. Physiol. (Regulatory Integrative Comp. Physiol. 46)</em>, <b>277</b>, 441&ndash;454.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Fitting the baro5 model
+heartrate.m1 &lt;- drm(rate~pressure, data=heartrate, fct=baro5())
+plot(heartrate.m1)
+
+coef(heartrate.m1)
+
+#Output:
+#b1:(Intercept) b2:(Intercept)  c:(Intercept)  d:(Intercept)  e:(Intercept)
+#      11.07984       46.67492      150.33588      351.29613       75.59392
+
+## Inserting the estimated baro5 model function in deriv()
+baro5Derivative &lt;- deriv(~ 150.33588 + ((351.29613 - 150.33588)/
+(1 + (1/(1 + exp((2 * 11.07984 * 46.67492/(11.07984 + 46.67492)) * 
+(log(x) - log(75.59392 ))))) * (exp(11.07984 * (log(x) - log(75.59392)))) + 
+(1 - (1/(1 + exp((2 * 11.07984 * 46.67492/(11.07984 + 46.67492)) * 
+(log(x) - log(75.59392 )))))) * (exp(46.67492 * (log(x) - log(75.59392 )))))), "x", function(x){})
+
+## Plotting the derivative
+#pressureVector &lt;- 50:100
+pressureVector &lt;- seq(50, 100, length.out=300)
+derivativeVector &lt;- attr(baro5Derivative(pressureVector), "gradient")
+plot(pressureVector, derivativeVector, type = "l")
+
+## Finding the minimum
+pressureVector[which.min(derivativeVector)]
+
+
+</pre>
+
+
+</body></html>

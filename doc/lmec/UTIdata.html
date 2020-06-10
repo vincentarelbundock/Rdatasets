@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Data set for Unstructured Treatment Interruption Study</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for UTIdata"><tr><td>UTIdata</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Data set for Unstructured Treatment Interruption Study</h2>
+
+<h3>Description</h3>
+
+<p>Data set from a study of Unstructured Treatment Interruption in HIV-infected adolescents in four institutions in the US.  The main outcome is the HIV-1 RNA viral load, which is subject to censoring below the lower limit of detection of the assay (50 copies/mL).  The censored observations are indicated by the variable RNAcens</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(UTIdata)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 373 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>Patid</code></dt><dd><p>patient ID</p>
+</dd>
+<dt><code>Days.after.TI</code></dt><dd><p>days after treatment interruption</p>
+</dd>
+<dt><code>Fup</code></dt><dd><p>follow-up months</p>
+</dd>
+<dt><code>RNA</code></dt><dd><p>viral load RNA</p>
+</dd>
+<dt><code>RNAcens</code></dt><dd><p>censoring indicator for viral load</p>
+</dd>
+</dl>
+
+
+
+<h3>References</h3>
+
+<p>Saitoh, A.,  Foca, M, et al. (2008), Clinical outcome in perinatally acquired HIV-infected children and adolescents after unstructured treatment interruption, Pediatrics,121, e513-e521.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(UTIdata)
+## maybe str(UTIdata) ; plot(UTIdata) ...
+</pre>
+
+
+</body></html>

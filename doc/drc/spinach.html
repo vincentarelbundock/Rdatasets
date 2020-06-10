@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Inhibition of photosynthesis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for spinach"><tr><td>spinach</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Inhibition of photosynthesis</h2>
+
+<h3>Description</h3>
+
+<p>Data from an experiment investigating the inhibition of photosynthesis in response to two synthetic 
+photosystem II inhibitors, the herbicides diuron and bentazon.
+More specifically, the effect of oxygen consumption of thylakoid membranes (chloroplasts) from spinach
+was measured after incubation with the synthetic inhibitors in 5 assays, resulting in 5 dose-response curves.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(spinach)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 105 observations on the following four variables:
+</p>
+
+<dl>
+<dt>CURVE</dt><dd><p>a numeric vector specifying the assay or curve (a total of 5 independent assays where used in this experiment).</p>
+</dd>
+<dt>HERBICIDE</dt><dd><p>a character vector specifying the herbicide applied: bentazon or diuron.</p>
+</dd>
+<dt>DOSE</dt><dd><p>a numeric vector giving the herbicide concentration in muMol.</p>
+</dd>
+<dt>SLOPE</dt><dd><p>a numeric vector with the measured response: oxygen consumption of thylakoid membranes.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The experiment is described in more details by Streibig (1998).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Streibig, J. C. (1998) Joint action of natural and synthetic photosystem II inhibitors, <em>Pesticide Science</em>, <b>55</b>, 137&ndash;146.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Displaying the first rows in the dataset
+head(spinach)  # displaying first 6 rows in the data set
+
+</pre>
+
+
+</body></html>

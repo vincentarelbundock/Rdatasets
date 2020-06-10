@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Sugar Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for sugar"><tr><td>sugar</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Sugar Data</h2>
+
+<h3>Description</h3>
+
+<p>The <code>sugar</code> data frame has 12 rows and 2 columns.
+They are from an experiment that
+compared an unmodified wild type plant with three different
+genetically modified forms.  The measurements are
+weights  of sugar that were obtained by breaking down the
+cellulose.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>sugar</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>weight</dt><dd><p>weight, in mg</p>
+</dd>
+<dt>trt</dt><dd><p>a factor with levels
+<code>Control</code> i.e. unmodified Wild form,  
+<code>A</code> Modified 1,
+<code>B</code> Modified 2,
+<code>C</code> Modified 3</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Anonymous
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+sugar.aov &lt;- aov(weight ~ trt, data=sugar)
+fitted.values(sugar.aov)
+summary.lm(sugar.aov)
+sugar.aov &lt;- aov(formula = weight ~ trt, data = sugar)
+summary.lm(sugar.aov)
+</pre>
+
+
+</body></html>

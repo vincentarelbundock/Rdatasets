@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Social Support Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for socsupport"><tr><td>socsupport</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Social Support Data</h2>
+
+<h3>Description</h3>
+
+<p>Data from a survey on social and other kinds of support.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>socsupport</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>gender</dt><dd><p>a factor with levels
+<code>female</code>, <code>male</code> </p>
+</dd>
+<dt>age</dt><dd><p>age, in years, with levels
+<code>18-20</code>, <code>21-24</code>, <code>25-30</code>, 
+<code>31-40</code>,<code>40+</code> </p>
+</dd>
+<dt>country</dt><dd><p>a factor with levels <code>australia</code>, 
+<code>other</code> </p>
+</dd>
+<dt>marital</dt><dd><p>a factor with levels <code>married</code>,
+<code>other</code>, <code>single</code> </p>
+</dd>
+<dt>livewith</dt><dd><p>a factor with levels <code>alone</code>, 
+<code>friends</code>, <code>other</code>, <code>parents</code>, 
+<code>partner</code>, <code>residences</code></p>
+</dd>
+<dt>employment</dt><dd><p>a factor with levels
+<code>employed fulltime</code>, <code>employed part-time</code>, 
+<code>govt assistance</code>, <code>other</code>, <code>parental support</code></p>
+</dd> 
+<dt>firstyr</dt><dd><p>a factor with levels <code>first year</code>, 
+<code>other</code> </p>
+</dd>
+<dt>enrolment</dt><dd><p>a factor with levels
+<code>full-time</code>, <code>part-time</code>, <code>&lt;NA&gt;</code></p>
+</dd>
+<dt>emotional</dt><dd><p>summary of 5 questions on emotional support availability</p>
+</dd>
+<dt>emotionalsat</dt><dd><p>summary of 5 questions on emotional support satisfaction</p>
+</dd>
+<dt>tangible</dt><dd><p>summary of 4 questions on availability of tangible support</p>
+</dd>
+<dt>tangiblesat</dt><dd><p>summary of 4 questions on satisfaction with tangible support</p>
+</dd>
+<dt>affect</dt><dd><p>summary of 3 questions on availability of affectionate support sources</p>
+</dd>
+<dt>affectsat</dt><dd><p>summary of 3 questions on satisfaction with affectionate support sources</p>
+</dd>
+<dt>psi</dt><dd><p>summary of 3 questions on availability of positive social interaction</p>
+</dd>
+<dt>psisat</dt><dd><p>summary of 3 questions on satisfaction with positive social 
+interaction</p>
+</dd>
+<dt>esupport</dt><dd><p>summary of 4 questions on extent of emotional support sources</p>
+</dd>
+<dt>psupport</dt><dd><p>summary of 4 questions on extent of practical support sources</p>
+</dd>
+<dt>supsources</dt><dd><p>summary of 4 questions on extent of social support 
+sources (formerly, socsupport)</p>
+</dd>
+<dt>BDI</dt><dd><p>Score on the Beck depression index (summary of 21 questions)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Melissa Manning, Psychology, Australian National University
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+attach(socsupport)
+
+not.na &lt;- apply(socsupport[,9:19], 1, function(x)!any(is.na(x)))
+ss.pr1 &lt;- princomp(as.matrix(socsupport[not.na, 9:19]), cor=TRUE)  
+pairs(ss.pr1$scores[,1:3])
+sort(-ss.pr1$scores[,1])        # Minus the largest value appears first
+pause()
+
+not.na[36] &lt;- FALSE
+ss.pr &lt;- princomp(as.matrix(socsupport[not.na, 9:19]), cor=TRUE)  
+summary(ss.pr)          # Examine the contribution of the components
+pause()
+
+# We now regress BDI on the first six principal components:
+ss.lm &lt;- lm(BDI[not.na] ~ ss.pr$scores[, 1:6], data=socsupport)
+summary(ss.lm)$coef
+pause()
+
+ss.pr$loadings[,1]
+plot(BDI[not.na] ~  ss.pr$scores[ ,1], col=as.numeric(gender), 
+pch=as.numeric(gender),  xlab ="1st principal component", ylab="BDI")
+topleft &lt;- par()$usr[c(1,4)]
+legend(topleft[1], topleft[2], col=1:2, pch=1:2, legend=levels(gender))
+</pre>
+
+
+</body></html>

@@ -1,0 +1,93 @@
+"","uniprot","prot","target","target.short","gene","chr","start","end"
+"1","O00300","OPG","Osteoprotegerin (OPG)","OPG","TNFRSF11B",8,119935796,119964439
+"2","O14625","CXCL11","C-X-C motif chemokine 11 (CXCL11)","CXCL11","CXCL11",4,76954835,76962568
+"3","O14788","TRANCE","TNF-related activation cytokine (TRANCE)","TRANCE","TNFSF11",13,43136872,43182149
+"4","O15169","AXIN1","Axin-1 (AXIN1)","AXIN1","AXIN1",16,337440,402673
+"5","O15444","CCL25","C-C motif chemokine 25 (CCL25)","CCL25","CCL25",19,8117651,8127534
+"6","O43508","TWEAK","Tumor necrosis factor (Ligand) superfamily member 12 (TWEAK)","TWEAK","TNFSF12",17,7452208,7464925
+"7","O43557","TNFSF14","Tumor necrosis factor ligand superfamily member 14 (TNFSF14)","TNFSF14","TNFSF14",19,6663148,6670599
+"8","O95630","STAMPB","STAM-binding protein (STAMPB)","STAMPB","STAMBP",2,74056086,74100786
+"9","O95750","FGF.19","Fibroblast growth factor 19 (FGF-19)","FGF-19","FGF19",11,69513000,69519410
+"10","O95760","IL.33","Interleukin-33 (IL-33)","IL-33","IL33",9,6215805,6257983
+"11","P00749","uPA","Urokinase-type plasminogen activator (uPA)","uPA","PLAU",10,75668935,75677255
+"12","P00813","ADA","Adenosine Deaminase (ADA)","ADA","ADA",20,43248163,43280874
+"13","P01135","TGF.alpha","Transforming growth factor alpha (TGF-alpha)","TGF-alpha","TGFA",2,70674412,70781325
+"14","P01137","LAP.TGF.beta.1","Latency-associated peptide transforming growth factor beta 1 (LAP TGF-beta-1)","LAP TGF-beta-1","TGFB1",19,41807492,41859816
+"15","P01138","Beta.NGF","Beta-nerve growth factor (Beta-NGF)","Beta-NGF","NGF",1,115828539,115880857
+"16","P01374","TNFB","TNF-beta (TNFB)","TNFB","LTA",6,31539831,31542101
+"17","P01375","TNF","Tumor necrosis factor (TNF)","TNF","TNF",6,31543344,31546113
+"18","P01579","IFN.gamma","Interferon gamma (IFN-gamma)","IFN-gamma","IFNG",12,68548548,68553527
+"19","P01583","IL.1.alpha","Interleukin-1 alpha (IL-1 alpha)","IL-1 alpha","IL1A",2,113531492,113542167
+"20","P02778","CXCL10","C-X-C motif chemokine 10 (CXCL10)","CXCL10","CXCL10",4,76942273,76944650
+"21","P03956","MMP.1","Matrix metalloproteinase-1 (MMP-1)","MMP-1","MMP1",11,102660651,102668891
+"22","P05112","IL.4","Interleukin-4 (IL-4)","IL-4","IL4",5,132009678,132018368
+"23","P05113","IL.5","Interleukin-5 (IL-5)","IL-5","IL5",5,131877136,131892530
+"24","P05231","IL.6","Interleukin-6 (IL-6)","IL-6","IL6",7,22765503,22771621
+"25","P06127","CD5","T-cell surface glycoprotein CD5 (CD5)","CD5","CD5",11,60869867,60895324
+"26","P09238","MMP.10","Matrix metalloproteinase-10 (MMP-10)","MMP-10","MMP10",11,102641234,102651359
+"27","P09341","CXCL1","C-X-C motif chemokine 1 (CXCL1)","CXCL1","CXCL1",4,74735110,74736959
+"28","P09603","CSF.1","Macrophage colony-stimulating factor 1 (CSF-1)","CSF-1","CSF1",1,110452864,110473614
+"29","P10145","IL.8","Interleukin-8 (IL-8)","IL-8","IL8",4,74606223,74609433
+"30","P10147","MIP.1.alpha","Macrophage inflammatory protein 1-alpha (MIP-1 alpha)","MIP-1 alpha","CCL3",17,34415602,34417515
+"31","P13232","IL.7","Interleukin-7 (IL-7)","IL-7","IL7",8,79587978,79717758
+"32","P13236","CCL4","C-C motif chemokine 4 (CCL4)","CCL4","CCL4",17,34430983,34433014
+"33","P13500","MCP.1","Monocyte chemotactic protein 1 (MCP-1)","MCP-1","CCL2",17,32582304,32584222
+"34","P13725","OSM","Oncostatin-M (OSM)","OSM","OSM",22,30658818,30662829
+"35","P14210","HGF","Hepatocyte growth factor (HGF)","HGF","HGF",7,81328322,81399754
+"36","P14784","IL.2RB","Interleukin-2 receptor subunit beta (IL-2RB)","IL-2RB","IL2RB",22,37521878,37571094
+"37","P15018","LIF","Leukemia inhibitory factor (LIF)","LIF","LIF",22,30636436,30642840
+"38","P15692","VEGF.A","Vascular endothelial growth factor A (VEGF_A)","VEGF_A","VEGFA",6,43737921,43754224
+"39","P20783","NT.3","Neurotrophin-3 (NT-3)","NT-3","NTF3",12,5541278,5630702
+"40","P21583","SCF","Stem cell factor (SCF)","SCF","KITLG",12,88886570,88974628
+"41","P22301","IL.10","Interleukin-10 (IL-10)","IL-10","IL10",1,206940947,206945839
+"42","P23560","BDNF","Brain-derived neutrophic factor (BDNF)","BDNF","BDNF",11,27676440,27743605
+"43","P25942","CD40","CD40L receptor (CD40)","CD40","CD40",20,44746911,44758502
+"44","P28325","CST5","Cystatin D (CST5)","CST5","CST5",20,23856572,23860387
+"45","P29460","IL.12B","Interleukin-12 subunit beta (IL-12B)","IL-12B","IL12B",5,158741791,158757895
+"46","P35225","IL.13","Interleukin-13 (IL-13)","IL-13","IL13",5,131991955,131996802
+"47","P39905","GDNF","Glial cell line-derived neutrophic factor (hGDNF)","hGDNF","GDNF",5,37812779,37839788
+"48","P42702","LIF.R","Leukemia inhibitory factor receptor (LIF-R)","LIF-R","LIFR",5,38475065,38608456
+"49","P42830","CXCL5","C-X-C motif chemokine 5 (CXCL5)","CXCL5","CXCL5",4,74861359,74864496
+"50","P49771","Flt3L","Fms-related tyrosine kinase 3 ligand (FIt3L)","FIt3L","FLT3LG",19,49977464,49989488
+"51","P50225","ST1A1","Sulfotransferase 1A1 (ST1A1)","ST1A1","SULT1A1",16,28616903,28634946
+"52","P50591","TRAIL","TNF-related apoptosis ligand (TRAIL)","TRAIL","TNFSF10",3,172223298,172241297
+"53","P51671","CCL11","Eotaxin-1 (CCL11)","CCL11","CCL11",17,32612687,32615353
+"54","P55773","CCL23","C-C motif chemokine 23 (CCL23)","CCL23","CCL23",17,34340096,34345005
+"55","P60568","IL.2","Interleukin-2 (IL-2)","IL-2","IL2",4,123372625,123377880
+"56","P78423","CX3CL1","Fractalkine (CX3CL1)","CX3CL1","CX3CL1",16,57406370,57418960
+"57","P78556","CCL20","C-C motif chemokine 20 (CCL20)","CCL20","CCL20",2,228678558,228682272
+"58","P80075","MCP.2","Monocyte chemotactic protein 2 (MCP-2)","MCP-2","CCL8",17,32646055,32648421
+"59","P80098","MCP.3","Monocyte chemotactic protein 3 (MCP-3)","MCP-3","CCL7",17,32597240,32599261
+"60","P80162","CXCL6","C-X-C motif chemokine 6 (CXCL6)","CXCL6","CXCL6",4,74702214,74714781
+"61","P80511","EN.RAGE","Protein S100-A12 (EN-RAGE)","EN-RAGE","S100A12",1,153346184,153348125
+"62","Q07011","TNFRSF9","Tumor necrosis factor receptor superfamily member 9 (TNFRSF9)","TNFRSF9","TNFRSF9",1,7979907,8000926
+"63","Q07325","CXCL9","C-X-C motif chemokine 9 (CXCL9)","CXCL9","CXCL9",4,76922428,76928641
+"64","Q08334","IL.10RB","Interleukin-10 receptor subunit beta (IL10RB)","IL10RB","IL10RB",21,34638663,34669539
+"65","Q13007","IL.24","Interleukin-24 (IL-24)","IL-24","IL24",1,207070788,207077484
+"66","Q13261","IL.15RA","Interleukin-15 receptor subunit alpha (IL-15RA)","IL-15RA","IL15RA",10,5990855,6020150
+"67","Q13291","SLAMF1","Signaling lymphocytic activation molecule (SLAMF1)","SLAMF1","SLAMF1",1,160577890,160617085
+"68","Q13478","IL.18R1","Interleukin-18 receptor 1 (IL-18R1)","IL-18R1","IL18R1",2,102927989,103015218
+"69","Q13541","4E.BP1","Eukaryotic translation initiation factor 4E-binding protein 1 (4EBP1)","4EBP1","EIF4EBP1",8,37887859,37917883
+"70","Q13651","IL.10RA","Interleukin-10 receptor subunit alpha (IL-10RA)","IL-10RA","IL10RA",11,117857063,117872196
+"71","Q14116","IL.18","Interleukin-18 (IL-18)","IL-18","IL18",11,112013974,112034840
+"72","Q14790","CASP.8","Caspase 8 (CASP-8)","CASP-8","CASP8",2,202098166,202152434
+"73","Q16552","IL.17A","Interleukin-17A (IL-17A)","IL-17A","IL17A",6,52051185,52055436
+"74","Q5T4W7","ARTN","Artemin (ARTN)","ARTN","ARTN",1,44398992,44402913
+"75","Q8IXJ6","SIRT2","SIR2-like protein 2 (SIRT2)","SIRT2","SIRT2",19,39369197,39390502
+"76","Q8N6P7","IL.22.RA1","Interleukin-22 receptor subunit alpha-1 (IL-22RA1)","IL-22RA1","IL22RA1",1,24446261,24469611
+"77","Q8NF90","FGF.5","Fibroblast growth factor 5 (FGF-5)","FGF-5","FGF5",4,81187753,81257834
+"78","Q8NFT8","DNER","Delta and Notch-like epidermal growth factor related receptor (DNER)","DNER","DNER",2,230222345,230579274
+"79","Q8WWJ7","CD6","T-cell surface glycoprotein CD6 isoform (CD6)","CD6","CD6",11,60739115,60787849
+"80","Q969D9","TSLP","Thymic stromal lymphopoietin (TSLP)","TSLP","TSLP",5,110405760,110413722
+"81","Q99616","MCP.4","Monocyte chemotactic protein 4 (MCP-4)","MCP-4","CCL13",17,32683471,32685629
+"82","Q99731","CCL19","C-C motif chemokine 19 (CCL19)","CCL19","CCL19",9,34689564,34691274
+"83","Q99748","NRTN","Neurturin (NRTN)","NRTN","NRTN",19,5823813,5828335
+"84","Q9BZW8","CD244","Natural killer cell receptor 2B4 (CD244)","CD244","CD244",1,160799950,160832692
+"85","Q9GZV9","FGF.23","Fibroblast growth factor 23 (FGF-23)","FGF-23","FGF23",12,4477393,4488894
+"86","Q9H5V8","CDCP1","CUB domain-containing protein 1 (CDCP1)","CDCP1","CDCP1",3,45123770,45187914
+"87","Q9NRJ3","CCL28","C-C motif chemokine 28 (CCL28)","CCL28","CCL28",5,43376747,43412493
+"88","Q9NSA1","FGF.21","Fibroblast growth factor 21 (FGF-21)","FGF-21","FGF21",19,49258816,49261587
+"89","Q9NYY1","IL.20","Interleukin-20 (IL-20)","IL-20","IL20",1,207038699,207042568
+"90","Q9NZQ7","PD.L1","Programmed cell death 1 ligand 1 (PD-L1)","PD-L1","CD274",9,5450503,5470566
+"91","Q9P0M4","IL.17C","Interleukin-17C (IL-17C)","IL-17C","IL17C",16,88704999,88706881
+"92","Q9UHF4","IL.20RA","Interleukin-20 receptor subunit alpha (IL-20RA)","IL-20RA","IL20RA",6,137321108,137366298

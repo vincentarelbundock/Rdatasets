@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Leaf and Air Temperature Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for leaftemp"><tr><td>leaftemp</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Leaf and Air Temperature Data</h2>
+
+<h3>Description</h3>
+
+<p>These data consist of measurements of vapour pressure and of the 
+difference between leaf and air temperature.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>leaftemp</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>CO2level</dt><dd><p>Carbon Dioxide level
+<code>low</code>, <code>medium</code>, <code>high</code> </p>
+</dd>
+<dt>vapPress</dt><dd><p>Vapour pressure</p>
+</dd>
+<dt>tempDiff</dt><dd><p>Difference between leaf and air temperature</p>
+</dd>
+<dt>BtempDiff</dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Katharina Siebke and Susan von Cammerer, Australian National University.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print("Fitting Multiple Lines - Example 7.3")
+
+leaf.lm1 &lt;- lm(tempDiff ~ 1 , data = leaftemp)
+leaf.lm2 &lt;- lm(tempDiff ~ vapPress, data = leaftemp)
+leaf.lm3 &lt;- lm(tempDiff ~ CO2level + vapPress, data = leaftemp)
+leaf.lm4 &lt;- lm(tempDiff ~ CO2level + vapPress + vapPress:CO2level,
+  data = leaftemp)
+
+anova(leaf.lm1, leaf.lm2, leaf.lm3, leaf.lm4)
+
+summary(leaf.lm2)
+plot(leaf.lm2)
+
+</pre>
+
+
+</body></html>

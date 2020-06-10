@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Frogs Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for frogs"><tr><td>frogs</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Frogs Data</h2>
+
+<h3>Description</h3>
+
+<p>The <code>frogs</code> data frame has 212 rows and 11 columns.
+The data are on the distribution of the Southern Corroboree
+frog, which occurs in the Snowy Mountains area of New South Wales,
+Australia.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>frogs</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>pres.abs</dt><dd><p>0 = frogs were absent, 1 = frogs were present</p>
+</dd>
+<dt>northing</dt><dd><p>reference point</p>
+</dd>
+<dt>easting</dt><dd><p>reference point</p>
+</dd>
+<dt>altitude</dt><dd><p>altitude , in meters</p>
+</dd>
+<dt>distance</dt><dd><p>distance in meters to nearest extant population</p>
+</dd>
+<dt>NoOfPools</dt><dd><p>number of potential breeding pools</p>
+</dd>
+<dt>NoOfSites</dt><dd><p>(number of potential breeding sites within a 2 km 
+radius</p>
+</dd>
+<dt>avrain</dt><dd><p>mean rainfall for Spring period</p>
+</dd>
+<dt>meanmin</dt><dd><p>mean minimum Spring temperature</p>
+</dd>
+<dt>meanmax</dt><dd><p>mean maximum Spring temperature</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Hunter, D. (2000) The conservation and demography of 
+the southern corroboree frog (Pseudophryne corroboree). M.Sc. thesis,
+University of Canberra, Canberra.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print("Multiple Logistic Regression - Example 8.2")
+
+plot(northing ~ easting, data=frogs, pch=c(1,16)[frogs$pres.abs+1],
+  xlab="Meters east of reference point", ylab="Meters north")
+pairs(frogs[,4:10])
+attach(frogs)
+pairs(cbind(altitude,log(distance),log(NoOfPools),NoOfSites),
+  panel=panel.smooth, labels=c("altitude","log(distance)",
+  "log(NoOfPools)","NoOfSites"))
+detach(frogs)
+
+frogs.glm0 &lt;- glm(formula = pres.abs ~ altitude + log(distance) +
+  log(NoOfPools) + NoOfSites + avrain + meanmin + meanmax,
+  family = binomial, data = frogs)
+summary(frogs.glm0)
+
+frogs.glm &lt;- glm(formula = pres.abs ~ log(distance) + log(NoOfPools) + 
+meanmin +
+  meanmax, family = binomial, data = frogs)
+oldpar &lt;- par(mfrow=c(2,2))
+termplot(frogs.glm, data=frogs)
+
+termplot(frogs.glm, data=frogs, partial.resid=TRUE)
+
+cv.binary(frogs.glm0)   # All explanatory variables
+pause()
+
+cv.binary(frogs.glm)    # Reduced set of explanatory variables
+
+for (j in 1:4){
+ rand &lt;- sample(1:10, 212, replace=TRUE)
+ all.acc &lt;- cv.binary(frogs.glm0, rand=rand, print.details=FALSE)$acc.cv
+ reduced.acc &lt;- cv.binary(frogs.glm, rand=rand, print.details=FALSE)$acc.cv
+ cat("\nAll:", round(all.acc,3), "  Reduced:", round(reduced.acc,3))
+}
+
+</pre>
+
+
+</body></html>

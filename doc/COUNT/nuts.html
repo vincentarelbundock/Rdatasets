@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: nuts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for nuts"><tr><td>nuts</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>nuts</h2>
+
+<h3>Description</h3>
+
+<p>Squirrel data set (nuts) from Zuur, Hilbe, and Ieno (2013).  As originally 
+reported by Flaherty et al (2012), researchers recorded information about 
+squirrel behavior and forest attributes across various plots in 
+Scotland's Abernathy Forest. The study focused on the following variables.
+response      cones	 number of cones stripped by red squirrels per plot
+predictor  	sntrees  standardized number of trees per plot
+sheight standardized mean tree height per plot
+scover   standardized percentage of canopy cover per plot
+The stripped cone count was only taken when the mean diameter of trees was under 0.6m (dbh). 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(nuts)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 52 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>cones</code></dt><dd><p>number cones stripped by squirrels</p>
+</dd>
+<dt><code>ntrees</code></dt><dd><p>number of trees per plot</p>
+</dd>
+<dt><code>dbh</code></dt><dd><p>number DBH per plot</p>
+</dd>
+<dt><code>height</code></dt><dd><p>mean tree height per plot</p>
+</dd>
+<dt><code>cover</code></dt><dd><p>canopy closure (as a percentage)</p>
+</dd>
+<dt><code>sntrees</code></dt><dd><p>standardized number of trees per plot</p>
+</dd>
+<dt><code>sheight</code></dt><dd><p>standardized mean tree height per plot</p>
+</dd>
+<dt><code>scover</code></dt><dd><p>standardized canopy closure (as a percentage)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>nuts is saved as a data frame.
+Count models use ntrees as response variable. Counts start at 3  
+</p>
+
+
+<h3>Source</h3>
+
+<p>Zuur, Hilbe, Ieno (2013), A Beginner's Guide to GLM and GLMM using R, Highlands
+</p>
+
+
+<h3>References</h3>
+
+<p>Hilbe, Joseph M (2014), Modeling Count Data, Cambridge University Press
+Zuur, Hilbe, Ieno (2013), A Beginner's Guide to GLM and GLMM using R, Highlands.
+Flaherty, S et al (2012), &quot;The impact of forest stand structure on red 
+squirrels habitat use&quot;, Forestry 85:437-444.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(nuts)
+nut &lt;- subset(nuts, dbh &lt; 0.6)
+# sntrees &lt;- scale(nuts$ntrees)
+# sheigtht &lt;- scale(nuts$height)
+# scover &lt;- scale(nuts$cover)
+summary(PO &lt;- glm(cones ~ sntrees + sheight + scover, family=quasipoisson, data=nut))
+</pre>
+
+
+</body></html>

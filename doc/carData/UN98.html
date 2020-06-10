@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: United Nations Social Indicators Data 1998]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for UN98"><tr><td>UN98</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+United Nations Social Indicators Data 1998]
+</h2>
+
+<h3>Description</h3>
+
+<p>Social indicators data on 207 nations distributed by the United Nations circa 1998.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("UN98")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 207 observations on the following 13 variables.
+</p>
+
+<dl>
+<dt><code>region</code></dt><dd><p>a factor with alphabetical levels <code>Africa</code>, <code>America</code>, <code>Asia</code>, <code>Europe</code>, <code>Oceania</code>.</p>
+</dd>
+<dt><code>tfr</code></dt><dd><p>total fertility rate, number of children per woman.</p>
+</dd>
+<dt><code>contraception</code></dt><dd><p>percentage of married women using any method of contraception.</p>
+</dd>
+<dt><code>educationMale</code></dt><dd><p>average number of years of education for men.</p>
+</dd>
+<dt><code>educationFemale</code></dt><dd><p>average number of years of education for women.</p>
+</dd>
+<dt><code>lifeMale</code></dt><dd><p>expectation of life at birth for males.</p>
+</dd>
+<dt><code>lifeFemale</code></dt><dd><p>expectation of life at birth for females.</p>
+</dd>
+<dt><code>infantMortality</code></dt><dd><p>infant deaths per 1000 live births.</p>
+</dd>
+<dt><code>GDPperCapita</code></dt><dd><p>gross domestic product per person in U.S. dollars.</p>
+</dd>
+<dt><code>economicActivityMale</code></dt><dd><p>percentage of men who are economically active.</p>
+</dd>
+<dt><code>economicActivityFemale</code></dt><dd><p>percentage of women who are economically active.</p>
+</dd>
+<dt><code>illiteracyMale</code></dt><dd><p>percentage of males 15 years of age and older who are illiterate.</p>
+</dd>
+<dt><code>illiteracyFemale</code></dt><dd><p>percentage of females 15 years of age and older who are illiterate.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In a few cases where the percentages of males and females 15 and older who are illiterate were unavailable, these variables were filled in by regression imputation from the corresponding percentages 25 and older who are illiterate.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Downloaded from <code>http://www.un.org/Depts/unsd/social/main.htm</code> in 1998.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(UN98)
+</pre>
+
+
+</body></html>

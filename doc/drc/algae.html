@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Volume of algae as function of increasing concentrations of a...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for algae"><tr><td>algae</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Volume of algae as function of increasing concentrations of a herbicide</h2>
+
+<h3>Description</h3>
+
+<p>Dataset from an experiment exploring the effect of increasing concentrations of a herbicide on 
+the volume of the treated algae.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(algae)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 14 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>conc</code></dt><dd><p>a numeric vector of concentrations.</p>
+</dd>
+<dt><code>vol</code></dt><dd><p>a numeric vector of response values, that is relative change in volume.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This datasets requires a cubic root transformation in order to stabilise the variance.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Meister, R. and van den Brink, P. (2000)
+<em>The Analysis of Laboratory Toxicity Experiments</em>,  
+Chapter 4 in <em>Statistics in Ecotoxicology</em>, Editor: T. Sparks, 
+New York: John Wiley \&amp; Sons, (pp. 114&ndash;116). 
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+algae.m1 &lt;- drm(vol~conc, data=algae, fct=LL.3())
+summary(algae.m1)
+
+algae.m2 &lt;- boxcox(algae.m1)
+summary(algae.m2)
+
+</pre>
+
+
+</body></html>

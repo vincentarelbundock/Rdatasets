@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Data from a clinical trial comparing two treatments for a...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for respiratory"><tr><td>respiratory</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Data from a clinical trial comparing two treatments for a respiratory
+illness</h2>
+
+<h3>Description</h3>
+
+<p>The data are from a clinical trial of patients with respiratory illness,
+where 111 patients from two different clinics were randomized to receive
+either placebo or an active treatment. Patients were examined at baseline
+and at four visits during treatment. The respiratory
+status (categorized as 1 = good, 0 = poor) was determined at each
+visit.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+respiratory
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 444 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt>center</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>id</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>treat</dt><dd><p>treatment or placebo</p>
+</dd>
+<dt>sex</dt><dd><p>M or F</p>
+</dd>
+<dt>age</dt><dd><p>in years at baseline</p>
+</dd>
+<dt>baseline</dt><dd><p>resporatory status at baseline</p>
+</dd>
+<dt>visit</dt><dd><p>id of each of four visits</p>
+</dd>
+<dt>outcome</dt><dd><p>respiratory status at each visit</p>
+</dd>
+</dl>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+data(respiratory)
+data(respiratory, package="geepack")
+respiratory$center &lt;- factor(respiratory$center)
+head(respiratory)
+
+m1 &lt;- glm(outcome ~ center + treat + age + baseline, data=respiratory,                
+          family=binomial())                                                          
+gee.ind &lt;- geeglm(outcome ~ center + treat + age + baseline, data=respiratory, id=id, 
+          family=binomial(), corstr="independence")                                   
+gee.exc &lt;- geeglm(outcome ~ center + treat + age + baseline, data=respiratory, id=id, 
+             family=binomial(), corstr="exchangeable")                                
+gee.uns &lt;- geeglm(outcome ~ center + treat + age + baseline, data=respiratory, id=id, 
+             family=binomial(), corstr="unstructured")                                
+gee.ar1 &lt;- geeglm(outcome ~ center + treat + age + baseline, data=respiratory, id=id, 
+             family=binomial(), corstr="ar1")                                         
+
+mlist &lt;- list(gee.ind, gee.exc, gee.uns, gee.ar1)
+do.call(rbind, lapply(mlist, QIC))
+lapply(mlist, tidy)
+
+</pre>
+
+
+</body></html>

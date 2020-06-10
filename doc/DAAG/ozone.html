@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Ozone Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ozone"><tr><td>ozone</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Ozone Data</h2>
+
+<h3>Description</h3>
+
+<p>Monthly provisional mean total ozone (in Dobson units) at Halley Bay 
+(approximately corrected to Bass-Paur).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>ozone</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Year</dt><dd><p>the year</p>
+</dd>
+<dt>Aug</dt><dd><p>August mean total ozone</p>
+</dd>
+<dt>Sep</dt><dd><p>September mean total ozone</p>
+</dd>
+<dt>Oct</dt><dd><p>October mean total ozone</p>
+</dd>
+<dt>Nov</dt><dd><p>November mean total ozone</p>
+</dd>
+<dt>Dec</dt><dd><p>December mean total ozone</p>
+</dd>
+<dt>Jan</dt><dd><p>January mean total ozone</p>
+</dd>
+<dt>Feb</dt><dd><p>February mean total ozone</p>
+</dd>
+<dt>Mar</dt><dd><p>March mean total ozone</p>
+</dd>
+<dt>Apr</dt><dd><p>April mean total ozone</p>
+</dd>
+<dt>Annual</dt><dd><p>Yearly mean total ozone</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Shanklin, J. (2001) Ozone at Halley, Rothera and Vernadsky/Faraday.  
+</p>
+<p>http://www.antarctica.ac.uk/met/jds/ozone/data/zoz5699.dat
+</p>
+
+
+<h3>References</h3>
+
+<p>Christie, M. (2000) The Ozone Layer: a Philosophy of Science Perspective.
+Cambridge University Press.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+AnnualOzone &lt;- ts(ozone$Annual, start=1956)
+plot(AnnualOzone)
+</pre>
+
+
+</body></html>

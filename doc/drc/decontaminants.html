@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Performance of decontaminants used in the culturing of a...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for decontaminants"><tr><td>decontaminants</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Performance of decontaminants used in the culturing of a micro-organism
+</h2>
+
+<h3>Description</h3>
+
+<p>The two decontaminants 1-hexadecylpyridium chloride and oxalic acid were used. Additionally there was a control group (coded as concentration 0 and only included under oxalic acid).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("decontaminants")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 128 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>conc</code></dt><dd><p>a numeric vector of percentage weight per volume</p>
+</dd>
+<dt><code>count</code></dt><dd><p>a numeric vector of numbers of M. bovis colonies at stationarity</p>
+</dd>
+<dt><code>group</code></dt><dd><p>a factor with levels <code>hpc</code> and <code>oxalic</code> of the decontaminants used</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>These data examplify Wadley's problem: counts where the maximum number is not known. The data were analyzed by Trajstman (1989) using a three-parameter logistic model and then re-analyzed by Morgan and Smith (1992) using a three-parameter Weibull type II model. In both cases the authors adjusted for overdispersion (in different ways).
+</p>
+<p>It seems that Morgan and Smith (1992) fitted separate models for the two decontaminants and using the control group for both model fits. In the example below a joint model is fitted where the control group is used once to determine a shared upper limit at concentration 0.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Trajstman, A. C. (1989) Indices for Comparing Decontaminants when Data Come from Dose-Response Survival and Contamination Experiments, <em>Applied Statistics</em>, <b>38</b>, 481&ndash;494. 
+</p>
+
+
+<h3>References</h3>
+
+<p>Morgan, B. J. T. and Smith, D. M. (1992) A Note on Wadley's Problem with Overdispersion, <em>Applied Statistics</em>, <b>41</b>, 349&ndash;354.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Wadley's problem using a three-parameter log-logistic model
+decon.LL.3.1 &lt;- drm(count~conc, group, data = decontaminants, fct = LL.3(), 
+type = "Poisson", pmodels = list(~group, ~1, ~group))
+
+summary(decon.LL.3.1)
+
+plot(decon.LL.3.1)
+
+
+## Same model fit in another parameterization (no intercepts)
+decon.LL.3.2 &lt;- drm(count~conc, group, data = decontaminants, fct=LL.3(), 
+type = "Poisson", pmodels = list(~group-1, ~1, ~group-1))
+
+summary(decon.LL.3.2)
+
+</pre>
+
+
+</body></html>

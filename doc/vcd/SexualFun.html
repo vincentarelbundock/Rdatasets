@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Sex is Fun</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for SexualFun"><tr><td>SexualFun</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Sex is Fun</h2>
+
+<h3>Description</h3>
+
+<p>Data from Hout et al. (1987) given by Agresti (1990) summarizing the
+responses of married couples to the questionnaire item: Sex is fun for
+me and my partner: (a) never or occasionally, (b) fairly often, (c)
+very often, (d) almost always.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data("SexualFun")
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A 2-dimensional array resulting from cross-tabulating the ratings of
+91 married couples.  The variables and their levels are as follows:
+</p>
+
+<table summary="Rd table">
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1 </td><td style="text-align: left;"> Husband </td><td style="text-align: left;"> Never Fun, Fairly Often, Very Often, Always Fun </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2 </td><td style="text-align: left;"> Wife </td><td style="text-align: left;"> Never Fun, Fairly Often, Very Often, Always Fun
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>M. Friendly (2000),
+Visualizing Categorical Data, page 91.
+</p>
+
+
+<h3>References</h3>
+
+<p>A. Agresti (1990),
+<em>Categorical Data Analysis</em>.
+Wiley-Interscience, New York.
+</p>
+<p>M. Hout, O. D. Duncan, M. E. Sobel (1987),
+Association and heterogeneity: Structural models of similarities and
+differences,
+<em>Sociological Methodology</em>, <b>17</b>, 145-184.
+</p>
+<p>M. Friendly (2000),
+<em>Visualizing Categorical Data</em>.
+SAS Institute, Cary, NC.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("SexualFun")
+
+## Kappa statistics
+Kappa(SexualFun)
+
+## Agreement Chart
+agreementplot(t(SexualFun), weights = 1)
+## Partial Agreement Chart and B-Statistics
+agreementplot(t(SexualFun),
+              xlab = "Husband's Rating",
+              ylab = "Wife's Rating",
+              main = "Husband's and Wife's Sexual Fun")
+</pre>
+
+
+</body></html>

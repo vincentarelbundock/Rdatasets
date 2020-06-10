@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Von Bortkiewicz Horse Kicks Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for VonBort"><tr><td>VonBort</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Von Bortkiewicz Horse Kicks Data</h2>
+
+<h3>Description</h3>
+
+<p>Data from von Bortkiewicz (1898), given by Andrews \&amp; Herzberg (1985),
+on number of deaths by horse or mule kicks in 14 corps of the Prussian
+army.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data("VonBort")
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 280 observations and 4 variables.
+</p>
+
+<dl>
+<dt>deaths</dt><dd><p>number of deaths.</p>
+</dd>
+<dt>year</dt><dd><p>year of the deaths.</p>
+</dd>
+<dt>corps</dt><dd><p>factor indicating the corps.</p>
+</dd>
+<dt>fisher</dt><dd><p>factor indicating whether the corresponding corps was
+considered by Fisher (1925) or not.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Michael Friendly (2000),
+Visualizing Categorical Data:
+<a href="http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/vonbort.sas">http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/vonbort.sas</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>D. F. Andrews \&amp; A. M. Herzberg (1985),
+<em>Data: A Collection of Problems from Many Fields for the Student
+and Research Worker</em>.
+Springer-Verlag, New York, NY.
+</p>
+<p>R. A. Fisher (1925),
+<em>Statistical Methods for Research Workers</em>.
+Oliver &amp; Boyd, London.
+</p>
+<p>L. von Bortkiewicz (1898),
+<em>Das Gesetz der kleinen Zahlen</em>.
+Teubner, Leipzig.
+</p>
+<p>M. Friendly (2000),
+<em>Visualizing Categorical Data</em>.
+SAS Institute, Cary, NC.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>HorseKicks</code> for a popular subsample.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("VonBort")
+## HorseKicks data
+xtabs(~ deaths, data = VonBort, subset = fisher == "yes")
+</pre>
+
+
+</body></html>

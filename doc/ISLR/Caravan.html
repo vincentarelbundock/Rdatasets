@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: The Insurance Company (TIC) Benchmark</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Caravan"><tr><td>Caravan</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Insurance Company (TIC) Benchmark
+
+</h2>
+
+<h3>Description</h3>
+
+<p>The data contains 5822 real customer records. Each record
+consists of 86 variables, containing sociodemographic data (variables
+1-43) and product ownership (variables 44-86). The sociodemographic
+data is derived from zip codes. All customers living in areas with the
+same zip code have the same sociodemographic attributes. Variable 86
+(<code>Purchase</code>) indicates whether the customer purchased a caravan
+insurance policy. Further information on the individual variables can
+be obtained at  http://www.liacs.nl/~putten/library/cc2000/data.html
+
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Caravan</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 5822 observations on 86 variables.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The data was originally supplied by Sentient Machine Research
+and was used in the CoIL Challenge 2000.
+</p>
+
+
+<h3>References</h3>
+
+<p>P. van der Putten and M. van Someren (eds) . CoIL Challenge
+2000: The Insurance Company Case.  Published by Sentient Machine
+Research, Amsterdam. Also a Leiden Institute of Advanced Computer
+Science Technical Report 2000-09. June 22, 2000. See
+http://www.liacs.nl/~putten/library/cc2000/<br />
+P. van der Putten and M. van Someren. A Bias-Variance Analysis of a Real World Learning Problem: The CoIL Challenge 2000. Machine Learning, October 2004, vol. 57, iss. 1-2, pp. 177-195, Kluwer Academic Publishers<br />
+James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013)
+<em>An Introduction to Statistical Learning with applications in R</em>,
+<a href="www.StatLearning.com">www.StatLearning.com</a>,
+Springer-Verlag, New York
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(Caravan)
+plot(Caravan$Purchase)
+</pre>
+
+
+</body></html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Utility bills</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Utilities"><tr><td>Utilities</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Utility bills</h2>
+
+<h3>Description</h3>
+
+<p>Data from utility bills at a residence.
+<code>Utilities2</code>  is a similar data set with some additional variables.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data(Utilities)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 117 observations for the following variables.
+</p>
+
+<ul>
+<li><p><code>month</code> month (coded as a number)
+</p>
+</li>
+<li><p><code>day</code> day of month on which bill was calculated
+</p>
+</li>
+<li><p><code>year</code> year of bill
+</p>
+</li>
+<li><p><code>temp</code> average temperature (F) for billing period
+</p>
+</li>
+<li><p><code>kwh</code> electricity usage (kwh)
+</p>
+</li>
+<li><p><code>ccf</code> gas usage (ccf)
+</p>
+</li>
+<li><p><code>thermsPerDay</code> a numeric vector
+</p>
+</li>
+<li><p><code>billingDays</code> number of billing days in billing period
+</p>
+</li>
+<li><p><code>totalbill</code> total bill (in dollars)
+</p>
+</li>
+<li><p><code>gasbill</code> gas bill (in dollars)
+</p>
+</li>
+<li><p><code>elecbill</code> electric bill (in dollars)
+</p>
+</li>
+<li><p><code>notes</code> notes about the billing period
+</p>
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p>Daniel T. Kaplan, <em>Statistical modeling: A fresh approach</em>, 2009.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Utilities2</code>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(Utilities)
+if (require(ggformula)) {
+  gf_point(gasbill ~ temp, data = Utilities)
+}
+
+</pre>
+
+
+</body></html>

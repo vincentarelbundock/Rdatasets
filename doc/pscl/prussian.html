@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Prussian army horse kick data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for prussian"><tr><td>prussian</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Prussian army horse kick data</h2>
+
+<h3>Description</h3>
+
+<p>Deaths by year, by corp, from horse kicks.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(prussian)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 280 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>y</code></dt><dd><p>a numeric vector, count of deaths</p>
+</dd>
+<dt><code>year</code></dt><dd><p>a numeric vector, 18XX, year of observation</p>
+</dd>
+<dt><code>corp</code></dt><dd><p>a <code>factor</code>, corp of Prussian Army generating
+observation</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>von Bortkiewicz, L. 1898. <em>Das Gesetz der Kleinen Zahlen.</em> Leipzig: Teubner. 
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(prussian)
+corpP &lt;- glm(y ~ corp, family=poisson,data=prussian)
+summary(corpP)
+</pre>
+
+
+</body></html>

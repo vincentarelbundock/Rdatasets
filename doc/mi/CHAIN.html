@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Subset of variables from the CHAIN project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for CHAIN"><tr><td>CHAIN</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Subset of variables from the CHAIN project
+</h2>
+
+<h3>Description</h3>
+
+<p>The CHAIN project was a longitudinal cohort study of people living with HIV in New York City, 
+which was recruited in 1994 from a large number of medical care and social service agencies
+serving HIV in New York City. This subset of data pertain to the sixth round of interviews.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(CHAIN)</pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 532 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>log_virus</code></dt><dd>
+<p>log of self reported viral load level, where zero represents an undetectable level.
+</p>
+</dd>
+<dt><code>age</code></dt><dd>
+<p>age at time of the interview
+</p>
+</dd>
+<dt><code>income</code></dt><dd>
+<p>annual family income in 10 intervals
+</p>
+</dd>
+<dt><code>healthy</code></dt><dd>
+<p>a continuous scale of physical health with a theoretical range between 0 and 100 where
+better health is associated with higher scale values
+</p>
+</dd>
+<dt><code>mental</code></dt><dd>
+<p>a binary measure of poor mental health ( 1=Yes, 0=No )
+</p>
+</dd>
+<dt><code>damage</code></dt><dd>
+<p>ordered interval for the CD4 count, which is an
+indicator of how much damage HIV has caused to the immune system
+</p>
+</dd>
+<dt><code>treatment</code></dt><dd>
+<p>a three-level ordered variable:
+0=Not currently taking HAART (Highly Active AntiretRoviral Therapy)
+1=taking HAART but nonadherent,
+2=taking HAART and adherent
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A missing value in the log virus load level 
+was assigned to individuals who either could not recall
+their viral load level, did not have a viral load test in the six month
+preceding the interview, or reported their viral loads as &quot;good&quot; or &quot;bad&quot;.
+</p>
+
+
+<h3>Source</h3>
+
+<p>http://cchps.columbia.edu/research.cfm
+</p>
+
+
+<h3>References</h3>
+
+<p>Messeri P, Lee G, Abramson DA, Aidala A, Chiasson MA, Jones JD. (2003).
+&ldquo;Antiretroviral therapy and declining AIDS mortality in New York City&rdquo;.
+<em>Medical Care</em> 41:512&ndash;521.
+</p>
+
+
+</body></html>

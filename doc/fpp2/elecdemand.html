@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Half-hourly and daily electricity demand for Victoria,...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for elecdemand"><tr><td>elecdemand</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Half-hourly and daily electricity demand for Victoria, Australia, in 2014</h2>
+
+<h3>Description</h3>
+
+<p><code>elecdemand</code> is a half-hourly time series matrix with three columns:
+</p>
+
+<table summary="Rd table">
+<tr>
+ <td style="text-align: left;">
+    Demand:      </td><td style="text-align: left;"> Total electricity demand in GW for Victoria, Australia, every half-hour during 2014.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    WorkDay:     </td><td style="text-align: left;"> taking value 1 on work days, and 0 otherwise.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    Temperature: </td><td style="text-align: left;"> half-hourly temperatures for Melbourne (BOM site 086071).
+</td>
+</tr>
+
+</table>
+
+<p><code>elecdaily</code> is a daily time series matrix with three columns:
+</p>
+
+<table summary="Rd table">
+<tr>
+ <td style="text-align: left;">
+    Demand:      </td><td style="text-align: left;"> Total electricity demand in GW for Victoria, Australia, every day during 2014.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    WorkDay:     </td><td style="text-align: left;"> taking value 1 on work days, and 0 otherwise.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    Temperature: </td><td style="text-align: left;"> maximum daily temperatures for Melbourne (BOM site 086071).
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Format</h3>
+
+<p>Multiple time series of class <code>mts</code>.</p>
+
+
+<h3>Details</h3>
+
+<p>This data is for operational demand, which is the demand met by local
+scheduled generating units, semi-scheduled generating units, and
+non-scheduled intermittent generating units of aggregate capacity larger
+than 30 MW, and by generation imports to the region. The operational demand
+excludes the demand met by non-scheduled non-intermittent generating units,
+non-scheduled intermittent generating units of aggregate capacity smaller
+than 30 MW, exempt generation (e.g. rooftop solar, gas tri-generation, very
+small wind farms, etc), and demand of local scheduled loads. It also
+excludes some very large industrial users (such as mines or smelters).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Australian Energy Market Operator, and the Australian Bureau of
+Meteorology.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+summary(elecdemand)
+summary(elecdaily)
+
+</pre>
+
+
+</body></html>

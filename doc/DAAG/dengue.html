@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Dengue prevalence, by administrative region</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for dengue"><tr><td>dengue</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Dengue prevalence, by administrative region</h2>
+
+<h3>Description</h3>
+
+<p>Data record, for each of 2000 administrative regions,
+whether or not dengue was recorded at any time between 1961 and 1990.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(dengue)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2000 observations on the following 13 variables.
+</p>
+
+<dl>
+<dt>humid</dt><dd><p>Average vapour density: 1961-1990</p>
+</dd>
+<dt>humid90</dt><dd><p>90th percentile of <code>humid</code></p>
+</dd>
+<dt>temp</dt><dd><p>Average temperature: 1961-1990</p>
+</dd>
+<dt>temp90</dt><dd><p>90th percentile of <code>temp</code></p>
+</dd>
+<dt>h10pix</dt><dd><p>maximum of <code>humid</code>, within a 10 pixel radius</p>
+</dd>
+<dt>h10pix90</dt><dd><p>maximum of <code>humid90</code>, within a 10 pixel radius</p>
+</dd>
+<dt>trees</dt><dd><p>Percent tree cover, from satellite data</p>
+</dd>
+<dt>trees90</dt><dd><p>90th percentile of <code>trees</code></p>
+</dd>
+<dt>NoYes</dt><dd><p>Was dengue observed? (1=yes)</p>
+</dd>
+<dt>Xmin</dt><dd><p>minimum longitude</p>
+</dd>
+<dt>Xmax</dt><dd><p>maximum longitude</p>
+</dd>
+<dt>Ymin</dt><dd><p>minimum latitude</p>
+</dd>
+<dt>Ymax</dt><dd><p>maximum latitude</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This is derived from a data set in which the climate and tree cover
+information were given for each half degree of latitude by half
+degreee of longitude pixel.
+The variable <code>NoYes</code> was given by administrative region.
+The climate data and tree cover data given here are 50th or 90th
+percentiles, where percetiles were calculates across pixels for an
+administrative region.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Simon Hales, Environmental Research New Zealand Ltd.
+</p>
+
+
+<h3>References</h3>
+
+<p>Hales, S., de Wet, N., Maindonald, J. and Woodward, A.
+2002.  Potential effect of population and climate change global
+distribution of dengue fever: an empirical model.  The Lancet 2002;
+360: 830-34. 
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+str(dengue)
+glm(NoYes ~ humid, data=dengue, family=binomial)
+glm(NoYes ~ humid90, data=dengue, family=binomial)
+</pre>
+
+
+</body></html>

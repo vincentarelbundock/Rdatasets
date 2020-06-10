@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Populations of Major Canadian Cities (1992-96)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for cities"><tr><td>cities</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Populations of Major Canadian Cities (1992-96)</h2>
+
+<h3>Description</h3>
+
+<p>Population estimates for several Canadian cities.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>cities</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>CITY</dt><dd><p>a factor, consisting of the city names</p>
+</dd>
+<dt>REGION</dt><dd><p>a factor with 5 levels (ATL=Atlantic, ON=Ontario,
+QC=Quebec, PR=Prairies, WEST=Alberta and British Columbia) representing the location
+of the cities</p>
+</dd>
+<dt>POP1992</dt><dd><p>a numeric vector giving population in 1000's for 1992</p>
+</dd>
+<dt>POP1993</dt><dd><p>a numeric vector giving population in 1000's for 1993</p>
+</dd>
+<dt>POP1994</dt><dd><p>a numeric vector giving population in 1000's for 1994</p>
+</dd>
+<dt>POP1995</dt><dd><p>a numeric vector giving population in 1000's for 1995</p>
+</dd>
+<dt>POP1996</dt><dd><p>a numeric vector giving population in 1000's for 1996</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Statistics Canada
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+cities$have &lt;- factor((cities$REGION=="ON")|(cities$REGION=="WEST"))
+plot(POP1996~POP1992, data=cities, col=as.integer(cities$have))
+</pre>
+
+
+</body></html>

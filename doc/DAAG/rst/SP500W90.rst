@@ -1,0 +1,30 @@
+======== ===============
+SP500W90 R Documentation
+======== ===============
+
+Closing Numbers for S and P 500 Index - First 100 Days of 1990
+--------------------------------------------------------------
+
+Description
+~~~~~~~~~~~
+
+Closing numbers for S and P 500 Index, Jan. 1, 1990 through early 2000.
+
+Usage
+~~~~~
+
+::
+
+   SP500W90
+
+Source
+~~~~~~
+
+Derived from SP500 in the MASS library.
+
+Examples
+~~~~~~~~
+
+::
+
+   ts.plot(SP500W90)

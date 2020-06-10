@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Hormesis in lettuce plants</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for lettuce"><tr><td>lettuce</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Hormesis in lettuce plants</h2>
+
+<h3>Description</h3>
+
+<p>Data are from an experiment where isobutylalcohol was dissolved in a nutrient solution in which lettuce
+(<em>Lactuca sativa</em>) plants were grown. The plant biomass of the shoot was determined af 21 days.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(lettuce)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 14 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt>conc</dt><dd><p>a numeric vector of concentrations of isobutylalcohol (mg/l)</p>
+</dd>
+<dt>weight</dt><dd><p>a numeric vector of biomass of shoot (g)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data set illustrates hormesis, presence of a subtoxic stimulus at low concentrations.
+</p>
+
+
+<h3>Source</h3>
+
+<p>van Ewijk, P. H. and Hoekstra, J. A. (1993) 
+Calculation of the EC50 and its Confidence Interval When Subtoxic Stimulus Is Present,
+<em>ECOTOXICOLOGY AND ENVIRONMENTAL SAFETY</em>, <b>25</b>, 25&ndash;32.
+</p>
+
+
+<h3>References</h3>
+
+<p>van Ewijk, P. H. and Hoekstra, J. A. (1994) 
+Curvature Measures and Confidence Intervals for the Linear Logistic Model,
+<em>Appl. Statist.</em>, <b>43</b>, 477&ndash;487.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Look at data
+lettuce
+
+## Monotonous dose-response model
+lettuce.m1 &lt;- drm(weight~conc, data=lettuce, fct=LL.3())
+
+plot(lettuce.m1, broken = TRUE)
+
+## Model fit in van Ewijk and Hoekstra (1994)
+lettuce.m2 &lt;- drm(weight~conc, data=lettuce, fct=BC.4())
+modelFit(lettuce.m2)
+
+plot(lettuce.m2, add = TRUE, broken = TRUE, type = "none", lty = 2)
+
+## Hormesis effect only slightly significant
+summary(lettuce.m2)
+
+## Hormesis effect highly significant
+##  compare with t-test for the "f" parameter in the summary output)
+anova(lettuce.m1, lettuce.m2)
+
+</pre>
+
+
+</body></html>

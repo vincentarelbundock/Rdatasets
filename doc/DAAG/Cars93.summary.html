@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: A Summary of the Cars93 Data set</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Cars93.summary"><tr><td>Cars93.summary</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>A Summary of the Cars93 Data set</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Cars93.summary</code> data frame has 6 rows and 4 columns
+created from information in the <code>Cars93</code> data set in the Venables 
+and Ripley MASS package. Each row corresponds to a different
+class of car (e.g. Compact, Large, etc.).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Cars93.summary</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Min.passengers</dt><dd><p>minimum
+passenger capacity for each class of car</p>
+</dd>
+<dt>Max.passengers</dt><dd><p>maximum
+passenger capacity for each class of car</p>
+</dd>
+<dt>No.of.cars</dt><dd><p>number of
+cars in each class</p>
+</dd>
+<dt>abbrev</dt><dd><p>a factor with levels
+<code>C</code> Compact, <code>L</code> Large, 
+<code>M</code> Mid-Size, <code>Sm</code> Small, 
+<code>Sp</code> Sporty, <code>V</code> Van</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lock, R. H. (1993) 1993 New Car Data. Journal of Statistics
+Education 1(1)
+</p>
+
+
+<h3>References</h3>
+
+<p>MASS library
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+type &lt;- Cars93.summary$abbrev
+type &lt;- Cars93.summary[,4]
+type &lt;- Cars93.summary[,"abbrev"]
+type &lt;- Cars93.summary[[4]] # Take the object that is stored
+                            # in the fourth list element.
+type
+pause()
+
+attach(Cars93.summary)
+  # R can now access the columns of Cars93.summary directly
+abbrev
+detach("Cars93.summary")
+pause()
+
+#  To change the name of the \verb!abbrev! variable (the fourth column)
+names(Cars93.summary)[4] &lt;- "code"
+pause()
+
+#  To change all of the names, try
+names(Cars93.summary) &lt;- c("minpass","maxpass","number","code")
+
+</pre>
+
+
+</body></html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Scottish Hill Races Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for hills"><tr><td>hills</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Scottish Hill Races Data</h2>
+
+<h3>Description</h3>
+
+<p>The record times in 1984 for 35 Scottish hill races.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>hills</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>dist</dt><dd><p>distance, in miles (on the map)</p>
+</dd>
+<dt>climb</dt><dd><p>total height gained during the route, in feet</p>
+</dd>
+<dt>time</dt><dd><p>record time in hours</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>A.C. Atkinson (1986) Comment: Aspects of diagnostic regression
+analysis. Statistical Science  1, 397-402.
+</p>
+<p>Also, in MASS library, with time in minutes.
+</p>
+
+
+<h3>References</h3>
+
+<p>A.C. Atkinson (1988) Transformations unmasked. Technometrics 30,
+311-318. [ &quot;corrects&quot; the time for Knock Hill from 78.65 to 18.65. It   
+is unclear if this based on the original records.]
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print("Transformation - Example 6.4.3")
+pairs(hills, labels=c("dist\n\n(miles)", "climb\n\n(feet)", 
+"time\n\n(hours)"))
+pause()
+
+pairs(log(hills), labels=c("dist\n\n(log(miles))", "climb\n\n(log(feet))",
+  "time\n\n(log(hours))"))
+pause()
+
+hills0.loglm &lt;- lm(log(time) ~ log(dist) + log(climb), data = hills)  
+oldpar &lt;- par(mfrow=c(2,2))
+plot(hills0.loglm)
+pause()
+
+
+hills.loglm &lt;- lm(log(time) ~ log(dist) + log(climb), data = hills[-18,])
+summary(hills.loglm) 
+plot(hills.loglm)
+pause()
+
+hills2.loglm &lt;- lm(log(time) ~ log(dist)+log(climb)+log(dist):log(climb), 
+data=hills[-18,])
+anova(hills.loglm, hills2.loglm)
+pause()
+
+step(hills2.loglm)
+pause()
+
+summary(hills.loglm, corr=TRUE)$coef
+pause()
+
+summary(hills2.loglm, corr=TRUE)$coef
+par(oldpar)
+pause()
+
+print("Nonlinear - Example 6.9.4")
+hills.nls0 &lt;- nls(time ~ (dist^alpha)*(climb^beta), start =
+   c(alpha = .909, beta = .260), data = hills[-18,])
+summary(hills.nls0)
+plot(residuals(hills.nls0) ~ predict(hills.nls0)) # residual plot
+pause()
+
+hills$climb.mi &lt;- hills$climb/5280
+hills.nls &lt;- nls(time ~ alpha + beta*dist + gamma*(climb.mi^delta),
+  start=c(alpha = 1, beta = 1, gamma = 1, delta = 1), data=hills[-18,])
+summary(hills.nls)
+plot(residuals(hills.nls) ~ predict(hills.nls)) # residual plot
+
+
+</pre>
+
+
+</body></html>

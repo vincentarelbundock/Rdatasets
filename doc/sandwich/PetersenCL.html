@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Petersen's Simulated Data for Assessing Clustered Standard...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for PetersenCL"><tr><td>PetersenCL</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Petersen's Simulated Data for Assessing Clustered Standard Errors</h2>
+
+<h3>Description</h3>
+
+<p>Artificial balanced panel data set from Petersen (2009) for
+illustrating and benchmarking clustered standard errors.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("PetersenCL")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 5000 observations on 4 variables.
+</p>
+
+<dl>
+<dt>firm</dt><dd><p>integer. Firm identifier (500 firms).</p>
+</dd>
+<dt>year</dt><dd><p>integer. Time variable (10 years per firm).</p>
+</dd>
+<dt>x</dt><dd><p>numeric. Independent regressor variable.</p>
+</dd>
+<dt>y</dt><dd><p>numeric. Dependent response variable.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This simulated data set was created to illustrate and benchmark clustered standard errors.
+The residual and the regressor variable both contain a firm effect, but no year effect.
+Thus, standard errors clustered by firm are different from the OLS standard errors
+and similarly double-clustered standard errors (by firm and year) are different from
+the standard errors clustered by year.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.kellogg.northwestern.edu/faculty/petersen/htm/papers/se/test_data.htm">http://www.kellogg.northwestern.edu/faculty/petersen/htm/papers/se/test_data.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Petersen MA (2009).
+&ldquo;Estimating Standard Errors in Finance Panel Data Sets: Comparing Approaches&rdquo;,
+<em>The Review of Financial Studies</em>, <b>22</b>(1), 435&ndash;480.
+doi: <a href="http://doi.org/10.1093/rfs/hhn053">10.1093/rfs/hhn053</a>
+</p>
+
+
+</body></html>

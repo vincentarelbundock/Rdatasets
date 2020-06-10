@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Portfolio Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Portfolio"><tr><td>Portfolio</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Portfolio Data
+
+</h2>
+
+<h3>Description</h3>
+
+<p>A simple simulated data set containing 100 returns for each
+of two assets, X and Y. The data is used to estimate the optimal
+fraction to invest in each asset to minimize investment risk of the
+combined portfolio. One can then use the Bootstrap to estimate the
+standard error of this estimate.
+
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Portfolio</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 100 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>X</code></dt><dd><p>Returns for Asset X</p>
+</dd>
+<dt><code>Y</code></dt><dd><p>Returns for Asset Y</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Simulated data
+
+</p>
+
+
+<h3>References</h3>
+
+<p>James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013)
+<em>An Introduction to Statistical Learning with applications in R</em>,
+<a href="www.StatLearning.com">www.StatLearning.com</a>,
+Springer-Verlag, New York
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(Portfolio)
+attach(Portfolio)
+plot(X,Y)
+</pre>
+
+
+</body></html>

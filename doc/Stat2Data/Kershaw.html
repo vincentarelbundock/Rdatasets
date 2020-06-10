@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Kershaw Pitch Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Kershaw"><tr><td>Kershaw</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Kershaw Pitch Data</h2>
+
+<h3>Description</h3>
+
+<p>Pitch-by-pitch data for baseball pitcher Clayton Kershaw in the 2013 season
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3402 observations on the following 24 variables.
+</p>
+
+<dl>
+<dt><code>BatterNumber</code></dt><dd><p>Number of batters faced so far that game</p>
+</dd>
+<dt><code>Outcome</code></dt><dd><p>One of 14 possible results for a pitch (e.g. <code>Ball</code>, <code>Ball In Dirt</code>, <code>Called Strike</code>, ...,  <code>Swinging Strike (Blocked))</code></p>
+</dd>
+<dt><code>Class</code></dt><dd><p>One of three classifications (<code>B</code>=ball, <code>S</code>=strike, or <code>X</code>=in play)</p>
+</dd>
+<dt><code>Result</code></dt><dd><p>From pitcher's perspective (<code>Neg</code>=ball or hit,  <code>Pos</code>=strike or out)</p>
+</dd>
+<dt><code>Swing</code></dt><dd><p>Did the batter swing at the pitch? (<code>No</code> or <code>Yes</code>)</p>
+</dd>
+<dt><code>Time</code></dt><dd><p>Date and time of the pitch (format <code>yyyy-mm-ddThh:mm:ssZ</code>) </p>
+</dd>
+<dt><code>StartSpeed</code></dt><dd><p>Speed leaving the pitcher's hand (in mph)</p>
+</dd>
+<dt><code>EndSpeed</code></dt><dd><p>Speed crossing home plate (in mph)</p>
+</dd>
+<dt><code>HDev</code></dt><dd><p>Horizontal movement (inches)</p>
+</dd>
+<dt><code>VDev</code></dt><dd><p>Vertical movement (inches)</p>
+</dd>
+<dt><code>HPos</code></dt><dd><p>Horizontal position at home plate (inches from center, positive is catcher's right)</p>
+</dd>
+<dt><code>VPos</code></dt><dd><p>Vertical position at home plate (inches above the ground)</p>
+</dd>
+<dt><code>PitchType</code></dt><dd><p>Code for pitch type (<code>CH</code>=changeup, <code>CU</code>=curve, <code>FF</code>=fastball, or <code>SL</code>=slider)</p>
+</dd>
+<dt><code>Zone</code></dt><dd><p>1-9 in theoretical strike zone (upper left to lower right), 11-14 are out of strike zone</p>
+</dd>
+<dt><code>Nasty</code></dt><dd><p>A measure on a 0-100 scale of difficulty of the pitch to hit (100 is most difficult)</p>
+</dd>
+<dt><code>Count</code></dt><dd><p>Ball strike count (<code>0-0</code>, <code>0-1</code>, <code>0-2</code>, <code>1-1</code>, <code>1-2</code>, <code>2-1</code>, <code>2-2</code>, <code>3-1</code>, or <code>3-2</code>)</p>
+</dd>
+<dt><code>BallCount</code></dt><dd><p>Number of balls before the pitch (0, 1, 2, or 3)</p>
+</dd>
+<dt><code>StrikeCount</code></dt><dd><p>Number of strikes before the pitch (0, 1, or 2)</p>
+</dd>
+<dt><code>Inning</code></dt><dd><p>Inning of the game</p>
+</dd>
+<dt><code>InningSide</code></dt><dd><p>Portion of the inning (<code>bottom</code>= pitcher at home or <code>top</code>=pitcher away)</p>
+</dd>
+<dt><code>Outs</code></dt><dd><p>Number of outs when the pitch is thrown</p>
+</dd>
+<dt><code>BatterHand</code></dt><dd><p>Batter's stance (<code>L</code>=left or <code>R</code>=right)</p>
+</dd>
+<dt><code>ABEvent</code></dt><dd><p>Result of the at bat (several possibilities) </p>
+</dd>
+<dt><code>Batter</code></dt><dd><p>Name of the batter faced</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Dataset includes information for 3,402 individual pitches thrown by Los Angeles Dodger baseball pitcher Clayton Kershaw during the 2013 regular season when he won the Cy Young award as the best pitcher in the National League.  Many variables are measured using Major League Baseball's PITCHf/x system that uses camera systems in each ballpark to track characteristics of each pitch thrown.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data scraped from the MLB GameDay website (http://gd2.mlb.com/components/game/mlb/) using pitchRx
+</p>
+
+
+</body></html>

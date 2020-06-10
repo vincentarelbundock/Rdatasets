@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Aranda House Prices</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for houseprices"><tr><td>houseprices</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Aranda House Prices</h2>
+
+<h3>Description</h3>
+
+<p>The <code>houseprices</code> data frame consists of the floor
+area, price, and the number
+of bedrooms for a sample of houses sold in Aranda in 1999. 
+Aranda is a suburb of Canberra, Australia.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>houseprices</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>area</dt><dd><p>a numeric vector giving the floor area</p>
+</dd>
+<dt>bedrooms</dt><dd><p>a numeric vector giving the number of bedrooms</p>
+</dd>
+<dt>sale.price</dt><dd><p>a numeric vector giving the sale price
+in thousands of Australian dollars</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>J.H. Maindonald
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+plot(sale.price~area, data=houseprices)
+pause()
+
+coplot(sale.price~area|bedrooms, data=houseprices)
+pause()
+
+print("Cross-Validation - Example 5.5.2")
+
+houseprices.lm &lt;- lm(sale.price ~ area, data=houseprices)
+summary(houseprices.lm)$sigma^2
+pause()
+
+CVlm()
+pause()
+
+print("Bootstrapping - Example 5.5.3")
+houseprices.fn &lt;- function (houseprices, index){
+house.resample &lt;- houseprices[index,]
+house.lm &lt;- lm(sale.price ~ area, data=house.resample)
+coef(house.lm)[2]    # slope estimate for resampled data
+}
+require(boot)       # ensure that the boot package is loaded
+houseprices.boot &lt;- boot(houseprices, R=999, statistic=houseprices.fn)
+
+houseprices1.fn &lt;- function (houseprices, index){
+house.resample &lt;- houseprices[index,]
+house.lm &lt;- lm(sale.price ~ area, data=house.resample)
+predict(house.lm, newdata=data.frame(area=1200))
+}
+
+houseprices1.boot &lt;- boot(houseprices, R=999, statistic=houseprices1.fn)
+boot.ci(houseprices1.boot, type="perc") # "basic" is an alternative to "perc"
+houseprices2.fn &lt;- function (houseprices, index){
+house.resample &lt;- houseprices[index,]
+house.lm &lt;- lm(sale.price ~ area, data=house.resample)
+houseprices$sale.price-predict(house.lm, houseprices)  # resampled prediction errors
+}
+
+n &lt;- length(houseprices$area)
+R &lt;- 200   
+houseprices2.boot &lt;- boot(houseprices, R=R, statistic=houseprices2.fn)
+house.fac &lt;- factor(rep(1:n, rep(R, n)))
+plot(house.fac, as.vector(houseprices2.boot$t), ylab="Prediction Errors", 
+xlab="House")
+pause()
+
+plot(apply(houseprices2.boot$t,2, sd)/predict.lm(houseprices.lm, se.fit=TRUE)$se.fit,
+     ylab="Ratio of Bootstrap SE's to Model-Based SE's", xlab="House", pch=16)
+abline(1,0)
+
+</pre>
+
+
+</body></html>

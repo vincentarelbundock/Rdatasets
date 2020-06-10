@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Canadian Labour Force Summary Data (1995-96)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for jobs"><tr><td>jobs</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Canadian Labour Force Summary Data (1995-96)</h2>
+
+<h3>Description</h3>
+
+<p>The number of workers in the Canadian
+labour force broken down by region (BC, Alberta, Prairies,
+Ontario, Quebec, Atlantic) for the 24-month period from January,
+1995 to December, 1996 (a time when Canada was emerging from a
+deep economic recession).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>jobs</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>BC</dt><dd><p>monthly labour force counts in British Columbia</p>
+</dd>
+<dt>Alberta</dt><dd><p>monthly labour force counts in Alberta</p>
+</dd>
+<dt>Prairies</dt><dd><p>monthly labour force counts in Saskatchewan and 
+Manitoba</p>
+</dd>
+<dt>Ontario</dt><dd><p>monthly labour force counts in Ontario</p>
+</dd>
+<dt>Quebec</dt><dd><p>monthly labour force counts in Quebec</p>
+</dd>
+<dt>Atlantic</dt><dd><p>monthly labour force counts in Newfoundland, Nova 
+Scotia, Prince Edward Island and New Brunswick</p>
+</dd>
+<dt>Date</dt><dd><p>year (in decimal form)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>These data have been seasonally adjusted.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Statistics Canada
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print("Multiple Variables and Times - Example 2.1.4")
+sapply(jobs, range)
+pause()
+
+matplot(jobs[,7], jobs[,-7], type="l", xlim=c(95,97.1))
+ # Notice that we have been able to use a data frame as the second argument to matplot().
+ # For more information on matplot(), type help(matplot)
+text(rep(jobs[24,7], 6), jobs[24,1:6], names(jobs)[1:6], adj=0)
+pause()
+
+sapply(log(jobs[,-7]), range)
+apply(sapply(log(jobs[,-7]), range), 2, diff)
+pause()
+
+oldpar &lt;- par(mfrow=c(2,3))
+range.log &lt;- sapply(log(jobs[,-7], 2), range)
+maxdiff &lt;- max(apply(range.log, 2, diff))
+range.log[2,] &lt;- range.log[1,] + maxdiff
+titles &lt;- c("BC Jobs","Alberta Jobs","Prairie Jobs",
+   "Ontario Jobs", "Quebec Jobs", "Atlantic Jobs")
+for (i in 1:6){
+plot(jobs$Date, log(jobs[,i], 2), type = "l", ylim = range.log[,i],
+    xlab = "Time", ylab = "Number of jobs", main = titles[i])
+}
+par(oldpar)
+</pre>
+
+
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Example from Finney (1971)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for finney71"><tr><td>finney71</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Example from Finney (1971)</h2>
+
+<h3>Description</h3>
+
+<p>For each of six concentration of an insecticid the number of insects affected (out of the number of insects)
+was recorded.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(finney71)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 6 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>dose</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>total</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>affected</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Finney, D. J. (1971) <em>Probit Analysis</em>, Cambridge: Cambridge University Press.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Model with ED50 as a parameter
+finney71.m1 &lt;- drm(affected/total ~ dose, weights = total,
+data = finney71, fct = LL.2(), type = "binomial")
+
+summary(finney71.m1)
+plot(finney71.m1, broken = TRUE, bp = 0.1, lwd = 2)
+
+ED(finney71.m1, c(10, 20, 50), interval = "delta", reference = "control")
+
+## Model fitted with 'glm'
+#fitl.glm &lt;- glm(cbind(affected, total-affected) ~ log(dose),
+#family=binomial(link = logit), data=finney71[finney71$dose != 0, ])
+#summary(fitl.glm)  # p-value almost agree for the b parameter
+#
+#xp &lt;- dose.p(fitl.glm, p=c(0.50, 0.90, 0.95))  # from MASS
+#xp.ci &lt;- xp + attr(xp, "SE") %*% matrix(qnorm(1 - 0.05/2)*c(-1,1), nrow=1)
+#zp.est &lt;- exp(cbind(xp.ci[,1],xp,xp.ci[,2]))
+#dimnames(zp.est)[[2]] &lt;- c("zp.lcl","zp","zp.ucl")
+#zp.est  # not far from above results with 'ED'
+
+## Model with log(ED50) as a parameter
+finney71.m2 &lt;- drm(affected/total ~ dose, weights = total,
+data = finney71, fct = LL2.2(), type = "binomial")
+
+## Confidence intervals based on back-transformation
+##  complete agreement with results based on 'glm'
+ED(finney71.m2, c(10, 20, 50), interval = "fls", reference = "control")
+
+</pre>
+
+
+</body></html>

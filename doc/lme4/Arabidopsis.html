@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Arabidopsis clipping/fertilization data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Arabidopsis"><tr><td>Arabidopsis</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Arabidopsis clipping/fertilization data
+</h2>
+
+<h3>Description</h3>
+
+<p>Data on genetic variation in responses to fertilization
+and simulated herbivory in <em>Arabidopsis</em>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("Arabidopsis")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 625 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>reg</code></dt><dd><p>region: a factor with 3 levels <code>NL</code>
+(Netherlands), <code>SP</code> (Spain), <code>SW</code> (Sweden)</p>
+</dd>
+<dt><code>popu</code></dt><dd><p>population: a factor with the form <code>n.R</code>
+representing a population in region <code>R</code></p>
+</dd>
+<dt><code>gen</code></dt><dd><p>genotype: a factor with 24 (numeric-valued) levels</p>
+</dd>
+<dt><code>rack</code></dt><dd><p>a nuisance factor with 2 levels, one for
+each of two greenhouse racks</p>
+</dd>
+<dt><code>nutrient</code></dt><dd><p>fertilization treatment/nutrient level (1,
+minimal nutrients or 8, added nutrients)</p>
+</dd>
+<dt><code>amd</code></dt><dd><p>simulated herbivory or &quot;clipping&quot; (apical meristem
+damage): <code>unclipped</code> (baseline) or <code>clipped</code></p>
+</dd>
+<dt><code>status</code></dt><dd><p>a nuisance factor for germination method
+(<code>Normal</code>, <code>Petri.Plate</code>, or <code>Transplant</code>)</p>
+</dd>
+<dt><code>total.fruits</code></dt><dd><p>total fruit set per plant (integer)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>From Josh Banta
+</p>
+
+
+<h3>References</h3>
+
+<p>Joshua A. Banta, Martin H. H Stevens, and Massimo Pigliucci (2010)
+A comprehensive test of the 'limiting resources' framework applied to
+plant tolerance to apical meristem damage.
+<em>Oikos</em> <b>119</b>(2), 359&ndash;369;
+<a href="http://dx.doi.org/10.1111/j.1600-0706.2009.17726.x">http://dx.doi.org/10.1111/j.1600-0706.2009.17726.x</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(Arabidopsis)
+summary(Arabidopsis[,"total.fruits"])
+table(gsub("[0-9].","",levels(Arabidopsis[,"popu"])))
+library(lattice)
+stripplot(log(total.fruits+1) ~ amd|nutrient, data = Arabidopsis,
+          groups = gen,
+          strip=strip.custom(strip.names=c(TRUE,TRUE)),
+          type=c('p','a'), ## points and panel-average value --
+          ## see ?panel.xyplot
+          scales=list(x=list(rot=90)),
+          main="Panel: nutrient, Color: genotype")
+</pre>
+
+
+</body></html>

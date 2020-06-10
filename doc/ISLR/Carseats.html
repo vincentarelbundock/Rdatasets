@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Sales of Child Car Seats</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Carseats"><tr><td>Carseats</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Sales of Child Car Seats
+
+</h2>
+
+<h3>Description</h3>
+
+<p>A simulated data set containing sales of child car seats at
+400 different stores.
+
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Carseats</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 400 observations on the following 11 variables.
+</p>
+
+<dl>
+<dt><code>Sales</code></dt><dd><p>Unit sales (in thousands) at each location</p>
+</dd>
+<dt><code>CompPrice</code></dt><dd><p>Price charged by competitor at each location</p>
+</dd>
+<dt><code>Income</code></dt><dd><p>Community income level (in thousands of dollars)</p>
+</dd>
+<dt><code>Advertising</code></dt><dd><p>Local advertising budget for company at
+each location (in thousands of dollars)</p>
+</dd>
+<dt><code>Population</code></dt><dd><p>Population size in region (in thousands)</p>
+</dd>
+<dt><code>Price</code></dt><dd><p>Price company charges for car seats at each site</p>
+</dd>
+<dt><code>ShelveLoc</code></dt><dd><p>A factor with levels <code>Bad</code>, <code>Good</code>
+and <code>Medium</code> indicating the quality of the shelving location
+for the car seats at each site</p>
+</dd>
+<dt><code>Age</code></dt><dd><p>Average age of the local population</p>
+</dd>
+<dt><code>Education</code></dt><dd><p>Education level at each location</p>
+</dd>
+<dt><code>Urban</code></dt><dd><p>A factor with levels <code>No</code> and <code>Yes</code> to
+indicate whether the store is in an urban or rural location</p>
+</dd>
+<dt><code>US</code></dt><dd><p>A factor with levels <code>No</code> and <code>Yes</code> to
+indicate whether the store is in the US or not</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Simulated data
+
+</p>
+
+
+<h3>References</h3>
+
+<p>James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013)
+<em>An Introduction to Statistical Learning with applications in R</em>,
+<a href="www.StatLearning.com">www.StatLearning.com</a>,
+Springer-Verlag, New York
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(Carseats)
+lm.fit=lm(Sales~Advertising+Price,data=Carseats)
+</pre>
+
+
+</body></html>
