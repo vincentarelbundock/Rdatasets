@@ -24,5 +24,5 @@ dat <- read.csv('https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/
               Doc = paste0('<a href="', Doc, '">Doc</a>'),
               Doc = map(Doc, gt::html)) %>%
        select(Package, Item, Title, CSV, Doc, Rows, Cols, order(names(.)))
-gt(dat)
+gt(dat) %>% tab_options(table.width = pct(100))
 ```
