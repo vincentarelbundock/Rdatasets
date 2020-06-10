@@ -1,15 +1,13 @@
 library(R2HTML) 
-library(tidyverse)
+library(desc)
+suppressMessages(library(tidyverse))
 
 # parse DESCRIPTION to get list of Imports
-packages <- readLines('DESCRIPTION') %>%
-            trimws %>%
-            str_remove(',$')
-idx <- match('Imports:', packages)
-packages <- packages[(idx+1):length(packages)]
+packages <- desc_get_deps()$package
 
 # load packages
-sapply(packages, require, character.only=TRUE)
+sapply(packages, require, character.only=TRUE, warn.conflicts=FALSE,
+       quietly=TRUE)
 
 # Functions
 get_doc = function(package = 'mi', dataset = 'nlsyV') {
@@ -89,9 +87,9 @@ index$n_factor <- sapply(data, function(x) sum(sapply(x, is.factor)))
 index$n_logical <- sapply(data, function(x) sum(sapply(x, is.logical)))
 index$n_numeric <- sapply(data, function(x) sum(sapply(x, is.numeric)))
 
-index$CSV = paste('https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/',
+index$CSV = paste('https://vincentarelbundock.githu.io/Rdatasets/csv/',
                   index$Package, '/', index$Item, '.csv', sep='')
-index$Doc = paste('https://raw.github.com/vincentarelbundock/Rdatasets/master/doc/',
+index$Doc = paste('https://vincentarelbundock.github.io/Rdatasets/doc/',
                   index$Package, '/', index$Item, '.html', sep='')
 index = index[order(index$Package, index$Item),]
 
