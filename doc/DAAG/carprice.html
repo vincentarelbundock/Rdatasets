@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: US Car Price Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for carprice"><tr><td>carprice</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Car Price Data</h2>
+
+<h3>Description</h3>
+
+<p>U.S. data extracted from <code>Cars93</code>, a data frame in the 
+MASS package.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>carprice</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Type</dt><dd><p>Type of car, e.g. Sporty, Van, Compact</p>
+</dd>
+<dt>Min.Price</dt><dd><p>Price for a basic model</p>
+</dd>
+<dt>Price</dt><dd><p>Price for a mid-range model</p>
+</dd>
+<dt>Max.Price</dt><dd><p>Price for a &lsquo;premium&rsquo; model</p>
+</dd>
+<dt>Range.Price</dt><dd><p>Difference between Max.Price and Min.Price</p>
+</dd>
+<dt>RoughRange</dt><dd><p>Rough.Range plus some N(0,.0001) noise</p>
+</dd>
+<dt>gpm100</dt><dd><p>The number of gallons required to travel 100 miles</p>
+</dd>
+<dt>MPG.city</dt><dd><p>Average number of miles per gallon for city driving</p>
+</dd>
+<dt>MPG.highway</dt><dd><p>Average number of miles per gallon for highway 
+driving</p>
+</dd>
+</dl>
+ 
+
+
+<h3>Source</h3>
+
+<p>MASS package
+</p>
+
+
+<h3>References</h3>
+
+<p>Venables, W.N.\ and Ripley, B.D., 4th edn 2002. Modern
+Applied Statistics with S. Springer, New York.
+</p>
+<p>See also
+&lsquo;R&rsquo; Complements to Modern Applied Statistics with S-Plus,
+available from <a href="http://www.stats.ox.ac.uk/pub/MASS3/">http://www.stats.ox.ac.uk/pub/MASS3/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre> 
+print("Multicollinearity - Example 6.8")
+pairs(carprice[,-c(1,8,9)])
+
+carprice1.lm &lt;- lm(gpm100 ~ Type+Min.Price+Price+Max.Price+Range.Price,
+    data=carprice)
+round(summary(carprice1.lm)$coef,3)
+pause()
+
+alias(carprice1.lm)
+pause()
+
+carprice2.lm &lt;- lm(gpm100 ~ Type+Min.Price+Price+Max.Price+RoughRange, data=carprice)
+round(summary(carprice2.lm)$coef, 2)
+pause()
+
+carprice.lm &lt;- lm(gpm100 ~ Type + Price, data = carprice)
+round(summary(carprice.lm)$coef,4)  
+pause()
+
+summary(carprice1.lm)$sigma   # residual standard error when fitting all 3 price variables
+pause()
+
+summary(carprice.lm)$sigma    # residual standard error when only price is used
+pause()
+
+vif(lm(gpm100 ~ Price, data=carprice)) # Baseline Price
+pause()
+
+vif(carprice1.lm)    # includes Min.Price, Price &amp; Max.Price
+pause()
+
+vif(carprice2.lm)    # includes Min.Price, Price, Max.Price &amp; RoughRange
+pause()
+
+vif(carprice.lm)     # Price alone
+</pre>
+
+
+</body></html>

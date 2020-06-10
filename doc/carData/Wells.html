@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Well Switching in Bangladesh</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Wells"><tr><td>Wells</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Well Switching in Bangladesh</h2>
+
+<h3>Description</h3>
+
+<p>Data on whether or not households in Bangladesh changed the wells that 
+they were using.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Wells</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3020 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>switch</code></dt><dd><p>whether or not the household switched to
+another well from an unsafe well: <code>no</code> or <code>yes</code>.</p>
+</dd>
+<dt><code>arsenic</code></dt><dd><p>the level of arsenic contamination in the 
+household's original well, in hundreds of micrograms per liter; all
+are above 0.5, which was the level identified as &ldquo;safe&rdquo;.</p>
+</dd>
+<dt><code>distance</code></dt><dd><p>in meters to the closest known safe well.</p>
+</dd>
+<dt><code>education</code></dt><dd><p>in years of the head of the household.</p>
+</dd>
+<dt><code>association</code></dt><dd><p>whether or not any members of the household
+participated in any community organizations: <code>no</code> or <code>yes</code>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are for an area of Arahazar upazila, Bangladesh.
+The researchers labelled each well with its level of arsenic and an
+indication of whether the well was &ldquo;safe&rdquo; or &ldquo;unsafe.&rdquo; Those using unsafe
+wells were encouraged to switch. After several years, it was determined
+whether each household using an unsafe well had changed its well. 
+These data are used by Gelman and Hill (2007) for a logistic-regression example.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.stat.columbia.edu/~gelman/arm/examples/arsenic/wells.dat">http://www.stat.columbia.edu/~gelman/arm/examples/arsenic/wells.dat</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>A. Gelman and J. Hill (2007)
+<em>Data Analysis Using Regression and Multilevel/Hierarchical Models.</em>
+Cambridge: Cambridge University Press.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(Wells)
+</pre>
+
+
+</body></html>

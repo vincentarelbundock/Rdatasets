@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Elastic Band Data Replicated Again</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for elastic2"><tr><td>elastic2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Elastic Band Data Replicated Again</h2>
+
+<h3>Description</h3>
+
+<p>The <code>elastic2</code> data frame has 9 rows and 2 columns
+giving, for each amount by which an elastic band is stretched
+over the end of a ruler, the distance that the band traveled when
+released.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>elastic2</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>stretch</dt><dd><p>the amount by which the
+elastic band was stretched</p>
+</dd>
+<dt>distance</dt><dd><p>the distance traveled</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>J. H. Maindonald
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+plot(elastic2)
+pause()
+
+print("Chapter 5 Exercise")
+
+yrange &lt;- range(c(elastic1$distance, elastic2$distance))
+xrange &lt;- range(c(elastic1$stretch, elastic2$stretch))
+plot(distance ~ stretch, data = elastic1, pch = 16, ylim = yrange, xlim = 
+xrange)
+points(distance ~ stretch, data = elastic2, pch = 15, col = 2)
+legend(xrange[1], yrange[2], legend = c("Data set 1", "Data set 2"), pch = 
+c(16, 15), col = c(1, 2))
+
+elastic1.lm &lt;- lm(distance ~ stretch, data = elastic1)
+elastic2.lm &lt;- lm(distance ~ stretch, data = elastic2)
+abline(elastic1.lm)
+abline(elastic2.lm, col = 2)
+summary(elastic1.lm)
+summary(elastic2.lm)
+pause()
+
+predict(elastic1.lm, se.fit=TRUE)
+predict(elastic2.lm, se.fit=TRUE)
+</pre>
+
+
+</body></html>

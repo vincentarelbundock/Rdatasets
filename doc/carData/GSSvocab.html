@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Data from the General Social Survey (GSS) from the National...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for GSSvocab"><tr><td>GSSvocab</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Data from the General Social Survey (GSS) from the National Opinion Research Center of the University of Chicago.
+</h2>
+
+<h3>Description</h3>
+
+<p>This data set illustrates analyis of a multifactor observational study, with response given by subject's score on a vocabulary test, and factors for age group, education level, natality status, gender and year of the survey.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("GSSvocab")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 28867 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>a factor with levels <code>1978</code> <code>1982</code> <code>1984</code> <code>1987</code> <code>1988</code> <code>1989</code> <code>1990</code> <code>1991</code> <code>1993</code> <code>1994</code> <code>1996</code> <code>1998</code> <code>2000</code> <code>2004</code> <code>2006</code> <code>2008</code> <code>2010</code> <code>2012</code> <code>2014</code> <code>2016</code>.  Data are included from the GSS for each of these years.</p>
+</dd>
+<dt><code>gender</code></dt><dd><p>a factor with levels <code>female</code> <code>male</code></p>
+</dd>
+<dt><code>nativeBorn</code></dt><dd><p>Was the respondent born in the US?  A factor with levels <code>no</code> and <code>yes</code>.</p>
+</dd>
+<dt><code>ageGroup</code></dt><dd><p>a factor with levels <code>18-29</code> <code>30-39</code> <code>40-49</code> <code>50-59</code> <code>60+</code>, grouped age of the respondent.</p>
+</dd>
+<dt><code>educGroup</code></dt><dd><p>a factor with levels <code>&lt;12 yrs</code> <code>12 yrs</code> <code>13-15 yrs</code> <code>16 yrs</code> <code>&gt;16 yrs</code>, grouped education level of the respondent.  12 years corresponds to high school graduate, 16 years to college graduate.</p>
+</dd>
+<dt><code>vocab</code></dt><dd><p>Number of words out of 10 correct on a vocabulary test</p>
+</dd>
+<dt><code>age</code></dt><dd><p>age of the respondent in years</p>
+</dd>
+<dt><code>educ</code></dt><dd><p>years of education of the respondent</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This file includes the years of the GSS for which the <code>vocab</code> and <code>nativeBorn</code> items were included.
+</p>
+
+
+<h3>Source</h3>
+
+<p>These data were collected from the GSS data explorer <a href="https://gssdataexplorer.norc.org">https://gssdataexplorer.norc.org</a>, using the data fields <code>year</code>, <code>id_</code>, <code>age</code>, <code>educ</code>, <code>sex</code>, <code>born</code> and <code>wordsum</code>.  The GSS began in 1972, and has included several thousand data items, some regularly and some only once, on topics of interest to social scientists.  Data have been slightly edited to change entires like <code>No answer</code> and <code>Not applicable</code> to missing value codes.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(GSSvocab)
+</pre>
+
+
+</body></html>

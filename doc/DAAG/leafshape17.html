@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Subset of Leaf Shape Data Set</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for leafshape17"><tr><td>leafshape17</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Subset of Leaf Shape Data Set</h2>
+
+<h3>Description</h3>
+
+<p>The <code>leafshape17</code> data frame has 61 rows and 8 columns.
+These are leaf length, width and petiole measurements taken
+at several sites in Australia.  This is a subset of the 
+<code>leafshape</code> data frame.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>leafshape17</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>bladelen</dt><dd><p>leaf length (in mm)</p>
+</dd>
+<dt>petiole</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>bladewid</dt><dd><p>leaf width (in mm)</p>
+</dd>
+<dt>latitude</dt><dd><p>latitude</p>
+</dd>
+<dt>logwid</dt><dd><p>natural logarithm of width</p>
+</dd>
+<dt>logpet</dt><dd><p>logarithm of petiole measurement</p>
+</dd>
+<dt>loglen</dt><dd><p>logarithm of length</p>
+</dd>
+<dt>arch</dt><dd><p>leaf architecture (0 = orthotropic, 1 = plagiotropic)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>King, D.A. and Maindonald, J.H. 1999. Tree architecture in relation to
+leaf dimensions and tree stature in temperate and tropical rain
+forests. Journal of Ecology 87: 1012-1024.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print("Discriminant Analysis - Example 11.2")
+
+require(MASS)
+leaf17.lda &lt;- lda(arch ~ logwid+loglen, data=leafshape17)
+leaf17.hat &lt;- predict(leaf17.lda)
+leaf17.lda
+ table(leafshape17$arch, leaf17.hat$class)
+pause()
+
+tab &lt;- table(leafshape17$arch, leaf17.hat$class)
+ sum(tab[row(tab)==col(tab)])/sum(tab)
+leaf17cv.lda &lt;- lda(arch ~ logwid+loglen, data=leafshape17, CV=TRUE)
+tab &lt;- table(leafshape17$arch, leaf17cv.lda$class)
+pause()
+
+leaf17.glm &lt;- glm(arch ~ logwid + loglen, family=binomial, data=leafshape17)
+ options(digits=3)
+summary(leaf17.glm)$coef
+pause()
+
+leaf17.one &lt;- cv.binary(leaf17.glm)
+table(leafshape17$arch, round(leaf17.one$internal))     # Resubstitution
+pause()
+
+table(leafshape17$arch, round(leaf17.one$cv))           # Cross-validation
+</pre>
+
+
+</body></html>

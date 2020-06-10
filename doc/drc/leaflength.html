@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Leaf length of barley</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for leaflength"><tr><td>leaflength</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Leaf length of barley</h2>
+
+<h3>Description</h3>
+
+<p>In an experiment barley was grown in a hydroponic solution with a herbicide.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(leaflength)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 42 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>Dose</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>DW</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset exhibits a large hormetical effect.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Nina Cedergreen, Royal Veterinary and Agricultural University, Denmark.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Fitting a hormesis model
+leaflength.crs4c1 &lt;- drm(DW ~ Dose, data = leaflength, fct = CRS.4c())
+plot(fitted(leaflength.crs4c1), residuals(leaflength.crs4c1))
+
+leaflength.crs4c2 &lt;- boxcox(drm(DW ~ Dose, data = leaflength, fct = CRS.4c()), 
+method = "anova", plotit = FALSE)
+summary(leaflength.crs4c2)
+
+## Plottinf fitted curve and original data
+plot(leaflength.crs4c2, broken = TRUE, conLevel = 0.001, type = "all", legend = FALSE, 
+ylab = "Produced leaf length (cm)", xlab = "Metsulfuron-methyl (mg/l)",
+main = "Hormesis: leaf length of barley")
+
+</pre>
+
+
+</body></html>

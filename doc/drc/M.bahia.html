@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Effect of an effluent on the growth of mysid shrimp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for M.bahia"><tr><td>M.bahia</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Effect of an effluent on the growth of mysid shrimp</h2>
+
+<h3>Description</h3>
+
+<p>Juvenile mysid shrimp (<em>Mysidopsis bahia</em>) were exposed to up to 32% effluent
+in a 7-day survival and growth test. The average weight per treatment replicate of
+surviving organisms was measured.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(M.bahia)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 40 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>conc</code></dt><dd><p>a numeric vector of effluent concentrations (%)</p>
+</dd>
+<dt><code>dryweight</code></dt><dd><p>a numeric vector of average dry weights (mg)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are analysed in Bruce and Versteeg (1992) using a log-normal 
+dose-response model (using the logarithm with base 10).
+</p>
+<p>At 32% there was complete mortality, and this justifies using a model where a lower asymptote
+of 0 is assumed.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Bruce, R. D. and Versteeg, D. J. (1992) A statistical procedure for modeling continuous toxicity data,
+<em>Environ. Toxicol. Chem.</em>, <b>11</b>, 1485&ndash;1494.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+M.bahia.m1 &lt;- drm(dryweight~conc, data=M.bahia, fct=LN.3())
+
+## Variation increasing
+plot(fitted(M.bahia.m1), residuals(M.bahia.m1))
+
+## Using transform-both-sides approach
+M.bahia.m2 &lt;- boxcox(M.bahia.m1, method = "anova")
+summary(M.bahia.m2)  # logarithm transformation
+
+## Variation roughly constant, but still not a great fit
+plot(fitted(M.bahia.m2), residuals(M.bahia.m2))
+
+## Visual comparison of fits
+plot(M.bahia.m1, type="all", broken=TRUE)
+plot(M.bahia.m2, add=TRUE, type="none", broken=TRUE, lty=2)
+
+ED(M.bahia.m2, c(10,20,50), ci="fls")
+
+## A better fit
+M.bahia.m3 &lt;- boxcox(update(M.bahia.m1, fct = LN.4()), method = "anova")
+#plot(fitted(M.bahia.m3), residuals(M.bahia.m3))
+plot(M.bahia.m3, add=TRUE, type="none", broken=TRUE, lty=3, col=2)
+ED(M.bahia.m3, c(10,20,50), ci="fls")
+
+</pre>
+
+
+</body></html>

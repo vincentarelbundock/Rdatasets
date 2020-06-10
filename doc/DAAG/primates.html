@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Primate Body and Brain Weights</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for primates"><tr><td>primates</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Primate Body and Brain Weights</h2>
+
+<h3>Description</h3>
+
+<p>A subset of <code>Animals</code> data frame from the MASS library.
+It contains the average body and brain measurements of five
+primates.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>primates</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Bodywt</dt><dd><p>a numeric vector consisting of the body weights (in kg) 
+of five
+different primates</p>
+</dd>
+<dt>Brainwt</dt><dd><p>a numeric vector consisting of the corresponding brain weights (in g) </p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>P. J. Rousseeuw  and A. M. Leroy (1987) Robust Regression and
+Outlier Detection. Wiley, p. 57.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+attach(primates)
+plot(x=Bodywt, y=Brainwt, pch=16,
+       xlab="Body weight (kg)", ylab="Brain weight (g)",
+       xlim=c(5,300), ylim=c(0,1500))
+chw &lt;- par()$cxy[1]
+chh &lt;- par()$cxy[2]
+text(x=Bodywt+chw, y=Brainwt+c(-.1,0,0,.1,0)*chh,
+       labels=row.names(primates), adj=0)
+detach(primates)
+</pre>
+
+
+</body></html>

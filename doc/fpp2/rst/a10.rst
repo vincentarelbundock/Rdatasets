@@ -1,0 +1,32 @@
+=== ===============
+a10 R Documentation
+=== ===============
+
+Monthly anti-diabetic drug sales in Australia from 1991 to 2008.
+----------------------------------------------------------------
+
+Description
+~~~~~~~~~~~
+
+Total monthly scripts for pharmaceutical products falling under ATC code
+A10, as recorded by the Australian Health Insurance Commission. July
+1991 - June 2008.
+
+Format
+~~~~~~
+
+Monthly time series of class ``ts``.
+
+Source
+~~~~~~
+
+Medicare Australia
+
+Examples
+~~~~~~~~
+
+::
+
+
+   autoplot(a10)
+   ggseasonplot(a10)

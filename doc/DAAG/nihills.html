@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Record times for Northern Ireland mountain running events</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for nihills"><tr><td>nihills</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Record times for Northern Ireland mountain running events</h2>
+
+<h3>Description</h3>
+
+<p>Data were from the 2007 calendar for the Northern Ireland Mountain
+Running Association.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(nihills)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 23 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>dist</code></dt><dd><p>distances in miles</p>
+</dd>
+<dt><code>climb</code></dt><dd><p>amount of climb in feet</p>
+</dd>
+<dt><code>time</code></dt><dd><p>record time in hours for males</p>
+</dd>
+<dt><code>timef</code></dt><dd><p>record time in hours for females</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>These data make an interesting comparison with the dataset
+<code>hills2000</code> in the DAAG package.</p>
+
+
+<h3>Source</h3>
+
+<p>For more recent information, see
+<a href="http://www.nimra.org.uk/index.php/fixtures/">http://www.nimra.org.uk/index.php/fixtures/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(nihills)
+lm(formula = log(time) ~ log(dist) + log(climb), data = nihills)
+lm(formula = log(time) ~ log(dist) + log(climb/dist), data = nihills)
+</pre>
+
+
+</body></html>

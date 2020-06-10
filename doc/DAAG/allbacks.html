@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Measurements on a Selection of Books</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for allbacks"><tr><td>allbacks</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Measurements on a Selection of Books</h2>
+
+<h3>Description</h3>
+
+<p>The <code>allbacks</code> data frame gives measurements
+on the volume and weight of 15 books, some of which
+are softback (pb) and some of which are hardback (hb).  Area
+of the hardback covers is also included.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>allbacks</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>volume</dt><dd><p>book volumes
+in cubic centimeters</p>
+</dd>
+<dt>area</dt><dd><p>hard board cover
+areas in square centimeters</p>
+</dd>
+<dt>weight</dt><dd><p>book weights in grams</p>
+</dd>
+<dt>cover</dt><dd><p>a factor with levels
+<code>hb</code> hardback,   <code>pb</code> paperback</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>The bookshelf of J. H. Maindonald.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print("Multiple Regression - Example 6.1")
+attach(allbacks)
+volume.split &lt;- split(volume, cover)
+weight.split &lt;- split(weight, cover)
+plot(weight.split$hb ~ volume.split$hb, pch=16, xlim=range(volume), ylim=range(weight),
+     ylab="Weight (g)", xlab="Volume (cc)")
+points(weight.split$pb ~ volume.split$pb, pch=16, col=2)
+pause()
+
+allbacks.lm &lt;- lm(weight ~ volume+area)
+summary(allbacks.lm)
+detach(allbacks)
+pause()
+
+anova(allbacks.lm)
+pause()
+
+model.matrix(allbacks.lm)
+pause()
+
+print("Example 6.1.1")
+allbacks.lm0 &lt;- lm(weight ~ -1+volume+area, data=allbacks)
+summary(allbacks.lm0)
+pause()
+
+print("Example 6.1.2")
+oldpar &lt;- par(mfrow=c(2,2))
+plot(allbacks.lm0)
+par(oldpar)
+allbacks.lm13 &lt;- lm(weight ~ -1+volume+area, data=allbacks[-13,])
+summary(allbacks.lm13)
+pause()
+
+print("Example 6.1.3")
+round(coef(allbacks.lm0),2)  # Baseline for changes
+round(lm.influence(allbacks.lm0)$coef,2)
+</pre>
+
+
+</body></html>

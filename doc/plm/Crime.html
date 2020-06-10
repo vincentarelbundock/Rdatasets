@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Crime in North Carolina</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Crime"><tr><td>Crime</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Crime in North Carolina</h2>
+
+<h3>Description</h3>
+
+<p>a panel of 90 observational units (counties) from 1981 to 1987
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing :
+</p>
+
+<dl>
+<dt>county</dt><dd><p>county identifier</p>
+</dd>
+<dt>year</dt><dd><p>year from 1981 to 1987</p>
+</dd>
+<dt>crmrte</dt><dd><p>crimes committed per person</p>
+</dd>
+<dt>prbarr</dt><dd><p>'probability' of arrest</p>
+</dd>
+<dt>prbconv</dt><dd><p>'probability' of conviction</p>
+</dd>
+<dt>prbpris</dt><dd><p>'probability' of prison sentence</p>
+</dd>
+<dt>avgsen</dt><dd><p>average sentence, days</p>
+</dd>
+<dt>polpc</dt><dd><p>police per capita</p>
+</dd>
+<dt>density</dt><dd><p>people per square mile</p>
+</dd>
+<dt>taxpc</dt><dd><p>tax revenue per capita</p>
+</dd>
+<dt>region</dt><dd><p>factor. One of 'other', 'west' or 'central'.</p>
+</dd>
+<dt>smsa</dt><dd><p>factor. (Also called &quot;urban&quot;.) Does the individual reside in a SMSA (standard metropolitan statistical area)?</p>
+</dd>
+<dt>pctmin</dt><dd><p>percentage minority in 1980</p>
+</dd>
+<dt>wcon</dt><dd><p>weekly wage in construction</p>
+</dd>
+<dt>wtuc</dt><dd><p>weekly wage in transportation, utilities, communications</p>
+</dd>
+<dt>wtrd</dt><dd><p>weekly wage in wholesale and retail trade</p>
+</dd>
+<dt>wfir</dt><dd><p>weekly wage in finance, insurance and real estate</p>
+</dd>
+<dt>wser</dt><dd><p>weekly wage in service industry</p>
+</dd>
+<dt>wmfg</dt><dd><p>weekly wage in manufacturing</p>
+</dd>
+<dt>wfed</dt><dd><p>weekly wage in federal government</p>
+</dd>
+<dt>wsta</dt><dd><p>weekly wage in state government</p>
+</dd>
+<dt>wloc</dt><dd><p>weekly wage in local government</p>
+</dd>
+<dt>mix</dt><dd><p>offence mix: face-to-face/other</p>
+</dd>
+<dt>pctymle</dt><dd><p>percentage of young males (between ages 15 to 24)</p>
+</dd>
+<dt>lcrmrte</dt><dd><p>log of crimes committed per person</p>
+</dd>
+<dt>lprbarr</dt><dd><p>log of 'probability' of arrest</p>
+</dd>
+<dt>lprbconv</dt><dd><p>log of 'probability' of conviction</p>
+</dd>
+<dt>lprbpris</dt><dd><p>log of 'probability' of prison sentence</p>
+</dd>
+<dt>lavgsen</dt><dd><p>log of average sentence, days</p>
+</dd>
+<dt>lpolpc</dt><dd><p>log of police per capita</p>
+</dd>
+<dt>ldensity</dt><dd><p>log of people per square mile</p>
+</dd>
+<dt>ltaxpc</dt><dd><p>log of tax revenue per capita</p>
+</dd>
+<dt>lpctmin</dt><dd><p>log of percentage minority in 1980</p>
+</dd>
+<dt>lwcon</dt><dd><p>log of weekly wage in construction</p>
+</dd>
+<dt>lwtuc</dt><dd><p>log of weekly wage in transportation, utilities, communications</p>
+</dd>
+<dt>lwtrd</dt><dd><p>log of weekly wage in wholesale and retail trade</p>
+</dd>
+<dt>lwfir</dt><dd><p>log of weekly wage in finance, insurance and real estate</p>
+</dd>
+<dt>lwser</dt><dd><p>log of weekly wage in service industry</p>
+</dd>
+<dt>lwmfg</dt><dd><p>log of weekly wage in manufacturing</p>
+</dd>
+<dt>lwfed</dt><dd><p>log of weekly wage in federal government</p>
+</dd>
+<dt>lwsta</dt><dd><p>log of weekly wage in state government</p>
+</dd>
+<dt>lwloc</dt><dd><p>log of weekly wage in local government</p>
+</dd>
+<dt>lmix</dt><dd><p>log of offence mix: face-to-face/other</p>
+</dd>
+<dt>lpctymle</dt><dd><p>log of percentage of young males (between ages 15 to 24)</p>
+</dd></dl>
+
+
+<h3>Details</h3>
+
+<p><em>total number of observations</em> : 630
+</p>
+<p><em>observation</em> : regional
+</p>
+<p><em>country</em> : United States
+</p>
+<p>The variables l* (lcrmrte, lprbarr, ...) contain the pre-computed logarithms
+of the base variables as found in the original data set. Note that these
+values slightly differ from what R's log() function yields for the base
+variables.  In order to reproduce examples from the literature, the
+pre-computed logs need to be used, otherwise the results differ slightly.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Journal of Applied Econometrics Data Archive (complements Baltagi
+(2006)):
+</p>
+<p><a href="http://qed.econ.queensu.ca/jae/2006-v21.4/baltagi/">http://qed.econ.queensu.ca/jae/2006-v21.4/baltagi/</a>
+</p>
+<p>Online complements to Baltagi (2001):
+</p>
+<p><a href="http://www.wiley.com/legacy/wileychi/baltagi/">http://www.wiley.com/legacy/wileychi/baltagi/</a>
+</p>
+<p>Online complements to Baltagi (2013):
+</p>
+<p><a href="http://bcs.wiley.com/he-bcs/Books?action=resource&amp;bcsId=4338&amp;itemId=1118672321&amp;resourceId=13452">http://bcs.wiley.com/he-bcs/Books?action=resource&amp;bcsId=4338&amp;itemId=1118672321&amp;resourceId=13452</a>
+</p>
+<p>See also Journal of Applied Econometrics data archive entry for
+Baltagi (2006) at
+<a href="http://qed.econ.queensu.ca/jae/2006-v21.4/baltagi/">http://qed.econ.queensu.ca/jae/2006-v21.4/baltagi/</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Cornwell C, Trumbull W (1994).
+&ldquo;Estimating the economic model of crime with panel data.&rdquo;
+<em>Review of Economics and Statistics</em>, <b>76</b>, 360&ndash;366.
+</p>
+<p>Baltagi B (2006).
+&ldquo;Estmating an economic model of crime using panel data from North Carolina.&rdquo;
+<em>Journal of Applied Econometrics</em>, <b>21</b>(4).
+</p>
+<p>Baltagi B (2001).
+<em>Econometric Analysis of Panel Data</em>, 3rd edition.
+John Wiley and Sons ltd.
+</p>
+<p>Baltagi B (2013).
+<em>Econometric Analysis of Panel Data</em>, 5th edition.
+John Wiley and Sons ltd.
+</p>
+
+
+</body></html>

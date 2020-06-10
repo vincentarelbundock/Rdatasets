@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Tasting experiment that compared four apple varieties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for appletaste"><tr><td>appletaste</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Tasting experiment that compared four apple varieties</h2>
+
+<h3>Description</h3>
+
+<p>Each of 20 tasters each assessed three out of the four varieties.
+The experiment was conducted according to a balanced incomplete
+block design.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(appletaste)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 60 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt>aftertaste</dt><dd><p>a numeric vector</p>
+</dd></dl>
+<p> Apple samples were rated for
+<code>aftertaste</code>, by making a mark on a continuous scale that
+ranged from 0 (extreme dislike) to 150 (like very much).
+</p>
+<dl>
+<dt>panelist</dt><dd><p>a factor with levels <code>a</code> <code>b</code> <code>c</code> <code>d</code> <code>e</code> <code>f</code> <code>g</code> <code>h</code> <code>i</code> <code>j</code> <code>k</code> <code>l</code> <code>m</code> <code>n</code> <code>o</code> <code>p</code> <code>q</code> <code>r</code> <code>s</code> <code>t</code></p>
+</dd>
+<dt>product</dt><dd><p>a factor with levels <code>298</code> <code>493</code> <code>649</code> <code>937</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre>
+data(appletaste)
+appletaste.aov &lt;- aov(aftertaste ~ panelist + product, data=appletaste)
+termplot(appletaste.aov)
+</pre>
+
+
+</body></html>

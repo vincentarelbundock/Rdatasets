@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Video Lottery Terminal Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for vlt"><tr><td>vlt</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Video Lottery Terminal Data</h2>
+
+<h3>Description</h3>
+
+<p>Data on objects appearing in three windows on a video
+lottery terminal, together with the prize payout (usually 0).
+Observations were taken on two successive days in late 1994
+at a hotel lounge north of Winnipeg, Manitoba.  Each observation
+cost 25 cents (Canadian).  The game played was &lsquo;Double Diamond&rsquo;.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>vlt</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>window1</dt><dd><p>object appearing in the first window.</p>
+</dd>
+<dt>window2</dt><dd><p>object appearing in the second window.</p>
+</dd>
+<dt>window3</dt><dd><p>object appearing in the third window.</p>
+</dd>
+<dt>prize</dt><dd><p>cash prize awarded (in Canadian dollars).</p>
+</dd>
+<dt>night</dt><dd><p>1, if observation was taken on day 1; 2,
+if observation was taken on day 2.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>At each play, each of three windows shows one of 7 possible objects.
+Apparently, the three windows are independent of each other, and
+the objects should appear with equal probability across the three windows.  
+The objects are coded as follows: blank (0), single bar (1), double
+bar (2), triple bar (3), double diamond (5), cherries (6), and 
+the numeral &quot;7&quot; (7).  
+</p>
+<p>Prizes (in quarters) are awarded according to the following scheme:  
+800 (5-5-5), 80 (7-7-7), 40 (3-3-3), 25 (2-2-2), 10 (1-1-1), 10 (6-6-6),
+5 (2 &quot;6&quot;'s), 2 (1 &quot;6&quot;) and 5 (any combination of &quot;1&quot;, &quot;2&quot; and &quot;3&quot;).
+In addition, a &quot;5&quot; doubles any winning combination, e.g. (5-3-3) pays
+80 and (5-3-5) pays 160.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Braun, W. J. (1995) An illustration of bootstrapping using
+video lottery terminal data.  Journal of Statistics Education
+http://www.amstat.org/publications/jse/v3n2/datasets.braun.html
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+     vlt.stk &lt;- stack(vlt[,1:3])
+     table(vlt.stk)
+</pre>
+
+
+</body></html>

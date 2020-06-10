@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Root length measurements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for secalonic"><tr><td>secalonic</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Root length measurements</h2>
+
+<h3>Description</h3>
+
+<p>Data stem from an experiment assessing the inhibitory effect of secalonic acids on plant growth.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(secalonic)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 7 observations on the following 2 variables:
+</p>
+
+<dl>
+<dt><code>dose</code></dt><dd><p>a numeric vector containing dose values (mM)</p>
+</dd>
+<dt><code>rootl</code></dt><dd><p>a numeric vector containing root lengths (cm)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>For each dose the root length is an average three measurements.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gong, X. and Zeng, R. and Luo, S. and Yong, C. and Zheng, Q. (2004) Two new 
+secalonic acids from <em>Aspergillus Japonicus</em> and their allelopathic effects on higher plants,
+<em>Proceedings of International Symposium on Allelopathy Research and Application, 27-29 April, 
+Shanshui, Guangdong, China (Editors: R. Zeng and S. Luo)</em>, 209&ndash;217.
+</p>
+<p>Ritz, C (2009)
+Towards a unified approach to dose-response modeling in ecotoxicology
+<em>To appear in Environ Toxicol Chem</em>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Fitting a four-parameter log-logistic model
+secalonic.m1 &lt;- drm(rootl ~ dose, data = secalonic, fct = LL.4())
+summary(secalonic.m1)
+
+## Fitting a three-parameter log-logistic model
+##  lower limit fixed at 0
+secalonic.m2 &lt;- drm(rootl ~ dose, data = secalonic, fct = LL.3())
+summary(secalonic.m1)
+
+## Comparing logistic and log-logistic models
+## (Figure 1 in Ritz (2009))
+secalonic.LL4 &lt;- drm(rootl ~ dose, data = secalonic, fct = LL.4())
+secalonic.L4 &lt;- drm(rootl ~ dose, data = secalonic, fct = L.4())
+
+plot(secalonic.LL4, broken=TRUE, ylim=c(0,7), xlab="Dose (mM)", ylab="Root length (cm)", 
+cex=1.2, cex.axis=1.2, cex.lab=1.2, lwd=2)
+
+plot(secalonic.L4, broken=TRUE, ylim=c(0,7), add=TRUE, type="none", lty=2, lwd=2)
+
+abline(h=coef(secalonic.L4)[3], lty=3, lwd=2)
+
+</pre>
+
+
+</body></html>

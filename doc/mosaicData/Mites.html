@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Mites and Wilt Disease</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Mites"><tr><td>Mites</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Mites and Wilt Disease</h2>
+
+<h3>Description</h3>
+
+<p>Data from an experiment to test whether exposure to mites protects against Wilt Disease in
+cotton plants.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data(Mites)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 47 observations on the following variables.
+</p>
+
+<ul>
+<li><p><code>treatment</code> a factor with levels <code>mites</code> and <code>no mites</code>
+</p>
+</li>
+<li><p><code>outcome</code> a factor with levels <code>wilt</code> and <code>no wilt</code>
+</p>
+</li></ul>
+
+
+
+<h3>Details</h3>
+
+<p>Researchers suspected that attack of a plant by one organism induced resistance to subsequent attack by a different organism.  Individually potted cotton plants were randomly allocated to two groups: infestation by spider mites or no infestation.  After two weeks the mites were dutifully removed by a conscientious research assistant, and both groups were inoculated with Verticillium, a fungus that causes Wilt disease.  More information can be found at <a href="https://www.causeweb.org/webinar/activity/2010-01/">https://www.causeweb.org/webinar/activity/2010-01/</a>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Statistics for the Life Sciences, Third Edition; Myra Samuels &amp; Jeffrey Witmer (2003), page 409.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(Mites)
+if (require(mosaic)) {
+  tally(~ treatment + outcome, data=Mites)
+  tally(~ outcome | treatment, format="percent", data=Mites)
+}
+
+</pre>
+
+
+</body></html>

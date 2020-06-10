@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Record times for track and road races, at August 9th 2006</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for worldRecords"><tr><td>worldRecords</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Record times for track and road races, at August 9th 2006</h2>
+
+<h3>Description</h3>
+
+<p>Record times for track and road races, at August 9th 2006</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(worldRecords)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 40 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>Distance</code></dt><dd><p>distance in kilometers</p>
+</dd>
+<dt><code>roadORtrack</code></dt><dd><p>a factor with levels <code>road</code> <code>track</code></p>
+</dd>
+<dt><code>Place</code></dt><dd><p>place; a character vector</p>
+</dd>
+<dt><code>Time</code></dt><dd><p>time in minutes</p>
+</dd>
+<dt><code>Date</code></dt><dd><p>a Date</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>For further details, and some additional details, see the web site
+that is the source of the data.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.gbrathletics.com/wrec.htm">http://www.gbrathletics.com/wrec.htm</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(worldRecords)
+xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords)
+xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords,
+       type=c("p","r"))
+xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords,
+       type=c("p","smooth"))
+</pre>
+
+
+</body></html>

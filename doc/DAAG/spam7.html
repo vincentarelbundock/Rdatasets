@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Spam E-mail Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for spam7"><tr><td>spam7</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Spam E-mail Data</h2>
+
+<h3>Description</h3>
+
+<p>The data consist of 4601 email items, of which 1813 items were identified
+as spam.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>spam7</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>crl.tot</dt><dd><p>total length of words in capitals</p>
+</dd>
+<dt>dollar</dt><dd><p>number of occurrences of the \$ symbol</p>
+</dd>
+<dt>bang</dt><dd><p>number of occurrences of the ! symbol</p>
+</dd>
+<dt>money</dt><dd><p>number of occurrences of the word &lsquo;money&rsquo;</p>
+</dd>
+<dt>n000</dt><dd><p>number of occurrences of the string &lsquo;000&rsquo;</p>
+</dd>
+<dt>make</dt><dd><p>number of occurrences of the word &lsquo;make&rsquo;</p>
+</dd>
+<dt>yesno</dt><dd><p>outcome variable, a factor with levels
+<code>n</code> not spam,
+<code>y</code> spam</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>George Forman, Hewlett-Packard Laboratories
+</p>
+<p>These data are available from the University
+of California at Irvine Repository of Machine Learning Databases
+and Domain Theories. The address is:  http://www.ics.uci.edu/~Here
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+require(rpart)
+spam.rpart &lt;- rpart(formula = yesno ~ crl.tot + dollar + bang +
+   money + n000 + make, data=spam7)
+plot(spam.rpart)
+text(spam.rpart)
+
+</pre>
+
+
+</body></html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Effect of erythromycin on mixed sewage microorganisms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for etmotc"><tr><td>etmotc</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Effect of erythromycin on mixed sewage microorganisms</h2>
+
+<h3>Description</h3>
+
+<p>Relative growth rate in biomass of mixed sewage microorganisms (per hour) as a function of
+increasing concentrations of the antibiotic erythromycin (mg/l).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(etmotc)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 57 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>cell</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>dose1</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>pct1</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>rgr1</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data stem from an experiment investigating the effect of pharmaceuticals,
+that are used in human and veterinary medicine and that are being released into the aquatic environment through
+waste water or through manure used for fertilising agricultural land. The experiment constitutes a typical
+dose-response situation. The dose is concentration of the antibiotic erythromycin (mg/l), which is an antibiotic
+that can be used by persons or animals showing allergy to penicillin, and the measured response is the relative
+growth rate in biomass of mixed sewage microorganisms (per hour), measured as turbidity two hours after exposure
+by means of a spectrophotometer. The experiment was designed in such a way that eight replicates were assigned
+to the control (dose 0), but no replicates were assigned to the 7 non-zero doses. Further details are found in
+Christensen et al (2006).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Christensen, A. M. and Ingerslev, F. and Baun, A. 2006 
+Ecotoxicity of mixtures of antibiotics used in aquacultures, 
+<em>Environmental Toxicology and Chemistry</em>, <b>25</b>, 2208&ndash;2215.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+etmotc.m1&lt;-drm(rgr1~dose1, data=etmotc[1:15,], fct=LL.4())
+plot(etmotc.m1)
+modelFit(etmotc.m1)
+summary(etmotc.m1)
+
+etmotc.m2&lt;-drm(rgr1~dose1, data=etmotc[1:15,], fct=W2.4())
+plot(etmotc.m2, add = TRUE)
+modelFit(etmotc.m2)
+summary(etmotc.m2)
+
+etmotc.m3&lt;-drm(rgr1~dose1, data=etmotc[1:15,], fct=W2.3())
+plot(etmotc.m3, add = TRUE)
+modelFit(etmotc.m3)
+summary(etmotc.m3)
+
+</pre>
+
+
+</body></html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Darwin's Wild Mignonette Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for mignonette"><tr><td>mignonette</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Darwin's Wild Mignonette Data</h2>
+
+<h3>Description</h3>
+
+<p>Data which compare the heights of crossed plants with
+self-fertilized plants.  Plants were paired within the
+pots in which they were grown, with one on one side and
+one on the other.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>mignonette</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>cross</dt><dd><p>heights of 
+the crossed plants</p>
+</dd>
+<dt>self</dt><dd><p>heights of
+the self-fertilized plants</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Darwin, Charles. 1877.  The Effects of Cross and Self
+Fertilisation in the Vegetable Kingdom.  Appleton and Company, New
+York.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print("Is Pairing Helpful? - Example 4.3.1")
+
+attach(mignonette)
+plot(cross ~ self, pch=rep(c(4,1), c(3,12))); abline(0,1) 
+abline(mean(cross-self), 1, lty=2)
+detach(mignonette)
+</pre>
+
+
+</body></html>

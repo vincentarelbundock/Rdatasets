@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Observed genotype frequencies at MN and S loci, for 2...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for IndianIrish"><tr><td>IndianIrish</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Observed genotype frequencies at MN and S loci, for 2 populations</h2>
+
+<h3>Description</h3>
+
+<p>The <code>IndianIrish</code> data frame has 18 rows and 4 columns.
+The data are genotype frequencies for two locations, for
+Xavante Indian and Irish populations respectively
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(IndianIrish)</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Population</dt><dd><p>Factor with levels:
+<code>Indian</code> and <code>Irish</code> </p>
+</dd>
+<dt>locus1</dt><dd><p>Factor with levels:
+<code>MM</code>, <code>MN</code> and <code>NN</code></p>
+</dd>
+<dt>locus2</dt><dd><p>Factor with levels:
+<code>SS</code>, <code>Ss</code> and <code>ss</code></p>
+</dd>
+<dt>Observed</dt><dd><p>a numeric vector giving the frequency for each
+category of the tale</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Mourant et al (1977) and Huttley and Wilson (2000).
+</p>
+
+
+<h3>References</h3>
+
+<p>1. Huttley, G.A. and Wilson, S.R. 2000. Testing for concordant
+equilibria between population samples. <em>Genetics</em> <b>156</b>, 2127-2135. <br />
+2. Mourant, A.E., Kopec, A.C. and Domaniewska-Sobczak, K. 1976.
+<em>The Distribution of the Human Blood Groups and Other Polymorphisms.</em>
+Oxford University Press.<br />
+3. Weir, B.S. 1996.  <em>Genetic Data Analysis II.</em> Sinauer.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>hwde</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(IndianIrish)
+hwde(data=IndianIrish)
+</pre>
+
+
+</body></html>

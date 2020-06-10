@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Auto Data Set</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Auto"><tr><td>Auto</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Auto Data Set
+</h2>
+
+<h3>Description</h3>
+
+<p>Gas mileage, horsepower, and other information for 392 vehicles.</p>
+
+
+<h3>Usage</h3>
+
+<pre>Auto</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 392 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>mpg</code></dt><dd><p>miles per gallon</p>
+</dd>
+<dt><code>cylinders</code></dt><dd><p>Number of cylinders between 4 and 8</p>
+</dd>
+<dt><code>displacement</code></dt><dd><p>Engine displacement (cu. inches)</p>
+</dd>
+<dt><code>horsepower</code></dt><dd><p>Engine horsepower</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>Vehicle weight (lbs.)</p>
+</dd>
+<dt><code>acceleration</code></dt><dd><p>Time to accelerate from 0 to 60 mph (sec.)</p>
+</dd>
+<dt><code>year</code></dt><dd><p>Model year (modulo 100)</p>
+</dd>
+<dt><code>origin</code></dt><dd><p>Origin of car (1. American, 2. European, 3. Japanese)</p>
+</dd>
+<dt><code>name</code></dt><dd><p>Vehicle name</p>
+</dd></dl>
+
+<p>The orginal data contained 408 observations but 16 observations with
+missing values were removed.</p>
+
+
+<h3>Source</h3>
+
+<p>This dataset was taken from the StatLib library which is maintained at Carnegie Mellon University. The dataset was used in the 1983 American Statistical Association Exposition.
+</p>
+
+
+<h3>References</h3>
+
+<p>James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013)
+<em>An Introduction to Statistical Learning with applications in R</em>,
+<a href="www.StatLearning.com">www.StatLearning.com</a>,
+Springer-Verlag, New York
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+pairs(Auto)
+attach(Auto)
+hist(mpg)
+</pre>
+
+
+</body></html>

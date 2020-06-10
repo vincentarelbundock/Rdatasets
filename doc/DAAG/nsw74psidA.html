@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: A Subset of the nsw74psid1 Data Set</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for nsw74psidA"><tr><td>nsw74psidA</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>A Subset of the nsw74psid1 Data Set</h2>
+
+<h3>Description</h3>
+
+<p>The <code>nsw74psidA</code> data frame has 252 rows and 10 columns.
+See <code>nsw74psid1</code> for more information.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>nsw74psidA</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>trt</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>age</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>educ</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>black</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>hisp</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>marr</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>nodeg</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>re74</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>re75</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>re78</dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This data set was obtained using:
+</p>
+<p><code>here &lt;- age &lt;= 40 &amp; re74&lt;=5000 &amp; re75 &lt;= 5000 &amp; re78 &lt; 30000</code>
+</p>
+<p><code>nsw74psidA &lt;- nsw74psid1[here, ]</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+table(nsw74psidA$trt)
+A1.lm &lt;- lm(re78 ~ trt + (age + educ + re74 + re75) + (black +
+      hisp + marr + nodeg), data = nsw74psidA)
+summary(A1.lm)$coef
+discA.glm &lt;- glm(formula = trt ~ age + educ + black + hisp +
+  marr + nodeg + re74 + re75, family = binomial, data = nsw74psidA)
+A.scores &lt;- predict(discA.glm)
+options(digits=4)
+overlap &lt;- A.scores &gt; -3.5 &amp; A.scores &lt; 3.8
+A.lm &lt;- lm(re78 ~ trt + A.scores, data=nsw74psidA, subset = overlap)
+summary(A.lm)$coef
+</pre>
+
+
+</body></html>

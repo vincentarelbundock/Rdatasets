@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Homes in Northampton MA Near Rail Trails</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for RailsTrails"><tr><td>RailsTrails</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Homes in Northampton MA Near Rail Trails</h2>
+
+<h3>Description</h3>
+
+<p>Sample of homes in Northampton, MA to see whether being close to a bike trail enhances the value of the home
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 104 observations on the following 30 variables.
+</p>
+
+<dl>
+<dt><code>HouseNum</code></dt><dd><p>Unique house number</p>
+</dd>
+<dt><code>Acre</code></dt><dd><p>Lot size for the house (in acres)</p>
+</dd>
+<dt><code>AcreGroup</code></dt><dd><p>Lot size groups (<code>&lt;= 1/4 acre</code> or <code>&gt; 1/4 acre</code>)</p>
+</dd>
+<dt><code>Adj1998</code></dt><dd><p>Estimated 1998 price (in thousands of 2014 dollars)</p>
+</dd>
+<dt><code>Adj2007</code></dt><dd><p>Estimated 2007 price (in thousands of 2014 dollars)</p>
+</dd>
+<dt><code>Adj2011</code></dt><dd><p>Estimated 2011 price (in thousands of 2014 dollars)</p>
+</dd>
+<dt><code>BedGroup</code></dt><dd><p>Bedroom groups (<code>1-2 beds</code>, <code>3 beds</code>, or <code>4+ beds</code>)</p>
+</dd>
+<dt><code>Bedrooms</code></dt><dd><p>Number of bedrooms </p>
+</dd>
+<dt><code>BikeScore</code></dt><dd><p>Bike friendliness (0-100 score, higher scores are better)</p>
+</dd>
+<dt><code>Diff2014</code></dt><dd><p>Difference in price between 2014 estimate and adjusted 1998 estimate (in thousands of dollars)</p>
+</dd>
+<dt><code>Distance</code></dt><dd><p>Distance (in feet) to the nearest entry point to the rail trail network</p>
+</dd>
+<dt><code>DistGroup</code></dt><dd><p>Distance groups, compared to 1/2 mile (<code>Closer</code> or <code>Farther Away</code>)</p>
+</dd>
+<dt><code>GarageSpaces</code></dt><dd><p>Number of garage spaces (0-4)</p>
+</dd>
+<dt><code>GarageGroup</code></dt><dd><p>Any garage spaces? (<code>no</code> or <code>yes</code>)</p>
+</dd>
+<dt><code>Latitude</code></dt><dd><p>Latitude (for mapping)</p>
+</dd>
+<dt><code>Longitude</code></dt><dd><p>Longitude (for mapping)</p>
+</dd>
+<dt><code>NumFullBaths</code></dt><dd><p>Number of full baths (includes shower or bathtub)</p>
+</dd>
+<dt><code>NumHalfBaths</code></dt><dd><p>Number of half baths (no shower or bathtub)</p>
+</dd>
+<dt><code>NumRooms</code></dt><dd><p>Number of rooms</p>
+</dd>
+<dt><code>PctChange</code></dt><dd><p>Percentage change from adjusted 1998 price to 2014 (value of zero means no change)</p>
+</dd>
+<dt><code>Price1998</code></dt><dd><p>Zillow 10 year estimate from 2008 (in thousands of dollars)</p>
+</dd>
+<dt><code>Price2007</code></dt><dd><p>Zillow price estimate from 2007 (in thousands of dollars)</p>
+</dd>
+<dt><code>Price2011</code></dt><dd><p>Zillow price estimate from 2011 (in thousands of dollars)</p>
+</dd>
+<dt><code>Price2014</code></dt><dd><p>Zillow price estimate from 2014 (in thousands of dollars)</p>
+</dd>
+<dt><code>SFGroup</code></dt><dd><p>SquareFeet group (<code>&lt;= 1500 sf</code> or <code>&gt; 1500 sf</code>)</p>
+</dd>
+<dt><code>SquareFeet</code></dt><dd><p>Square footage of interior finished space (in thousands of sf)</p>
+</dd>
+<dt><code>StreetName</code></dt><dd><p>Street name</p>
+</dd>
+<dt><code>StreetNum</code></dt><dd><p>House number on street</p>
+</dd>
+<dt><code>WalkScore</code></dt><dd><p>Walk friendliness (0-100 score, higher scores are better)</p>
+</dd>
+<dt><code>Zip</code></dt><dd><p>Location (<code>1060</code> = Northampton or <code>1062</code> = Florence)  </p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset comprises 104 homes in Northampton, MA that were sold in 2007. The authors measured the shortest distance from each home to a railtrail on streets and pathways with Google maps and recorded the Zillow.com estimate of each home's price in 1998 and 2011. Additional attributes such as square footage, number of bedrooms and number of bathrooms are available from a realty database from 2007. We divide the houses into two groups based on distance to the trail (DistGroup).
+</p>
+
+
+<h3>Source</h3>
+
+<p>From July 2015 JSE Datasets and Stories:  &quot;Rail Trails and Property Values: Is There an Association?&quot;, Ella Hartenian, Smith College and Nicholas J. Horton, Amherst College.
+</p>
+<p>http://www.amstat.org/publications/jse/v23n2/horton.pdf
+</p>
+
+
+</body></html>

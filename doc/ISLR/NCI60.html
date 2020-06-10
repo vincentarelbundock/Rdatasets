@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: NCI 60 Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for NCI60"><tr><td>NCI60</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>NCI 60 Data
+
+</h2>
+
+<h3>Description</h3>
+
+<p>NCI microarray data. The data contains expression levels on
+6830 genes from 64 cancer cell lines. Cancer type is also recorded.
+
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>NCI60</pre>
+
+
+<h3>Format</h3>
+
+<p>The format is a list containing two elements: <code>data</code> and
+<code>labs</code>.
+</p>
+<p><code>data</code> is a 64 by 6830 matrix of the expression values while
+<code>labs</code> is a vector listing the cancer types for the 64 cell lines.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The data come from Ross et al. (Nat Genet., 2000). More information can be obtained at
+http://genome-www.stanford.edu/nci60/ 
+
+
+</p>
+
+
+<h3>References</h3>
+
+<p>James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013)
+<em>An Introduction to Statistical Learning with applications in R</em>,
+<a href="www.StatLearning.com">www.StatLearning.com</a>,
+Springer-Verlag, New York
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+table(NCI60$labs)
+</pre>
+
+
+</body></html>

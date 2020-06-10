@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: School Science Survey Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for science"><tr><td>science</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>School Science Survey Data</h2>
+
+<h3>Description</h3>
+
+<p>The <code>science</code> data frame has 1385 rows and 7 columns.
+</p>
+<p>The data are on attitudes to science, from a survey where there were
+results from 20 classes in private schools and 46 classes in public
+schools.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>science</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>State</dt><dd><p>a factor with levels
+<code>ACT</code> Australian Capital Territory,
+<code>NSW</code> New South Wales</p>
+</dd>
+<dt>PrivPub</dt><dd><p>a factor with levels
+<code>private</code> school,
+<code>public</code> school</p>
+</dd>
+<dt>school</dt><dd><p>a factor, coded to identify the school</p>
+</dd>
+<dt>class</dt><dd><p>a factor, coded to identify the class</p>
+</dd>
+<dt>sex</dt><dd><p>a factor with levels
+<code>f</code>, <code>m</code> </p>
+</dd>
+<dt>like</dt><dd><p> a summary score
+based on two of the questions, on a scale from 1 (dislike)
+to 12 (like)</p>
+</dd>
+<dt>Class</dt><dd><p>a factor with levels corresponding to each class</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Francine Adams,  Rosemary Martin and Murali Nayadu, Australian
+National University
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+classmeans &lt;- with(science, aggregate(like, by=list(PrivPub, Class), mean))
+names(classmeans) &lt;- c("PrivPub","Class","like")
+dim(classmeans)
+
+attach(classmeans)
+boxplot(split(like, PrivPub), ylab = "Class average of attitude to science score", boxwex = 0.4)
+rug(like[PrivPub == "private"], side = 2)
+rug(like[PrivPub == "public"], side = 4)
+detach(classmeans)
+if(require(lme4, quietly=TRUE)) {
+science.lmer &lt;- lmer(like ~ sex + PrivPub + (1 | school) +
+                     (1 | school:class), data = science,
+                     na.action=na.exclude)
+summary(science.lmer)
+science1.lmer &lt;- lmer(like ~ sex + PrivPub + (1 | school:class),
+                      data = science, na.action=na.exclude)
+summary(science1.lmer)
+ranf &lt;- ranef(obj = science1.lmer, drop=TRUE)[["school:class"]]
+flist &lt;- science1.lmer@flist[["school:class"]]
+privpub &lt;- science[match(names(ranf), flist), "PrivPub"]
+num &lt;- unclass(table(flist)); numlabs &lt;- pretty(num)
+## Plot effect estimates vs numbers
+plot(sqrt(num), ranf, xaxt="n", pch=c(1,3)[as.numeric(privpub)],
+     xlab="# in class (square root scale)",
+     ylab="Estimate of class effect")
+lines(lowess(sqrt(num[privpub=="private"]),
+             ranf[privpub=="private"], f=1.1), lty=2)
+lines(lowess(sqrt(num[privpub=="public"]),
+             ranf[privpub=="public"], f=1.1), lty=3)
+axis(1, at=sqrt(numlabs), labels=paste(numlabs))
+}
+</pre>
+
+
+</body></html>

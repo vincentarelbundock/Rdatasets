@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Repeat Victimization Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for RepVict"><tr><td>RepVict</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Repeat Victimization Data</h2>
+
+<h3>Description</h3>
+
+<p>Data from Reiss (1980) given by Fienberg (1980) about instances of
+repeat victimization for households in the U.S. National Crime
+Survey.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data("RepVict")
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A 2-dimensional array resulting from cross-tabulating victimization.
+The variables and their levels are as follows:
+</p>
+
+<table summary="Rd table">
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1 </td><td style="text-align: left;"> First Victimization </td><td style="text-align: left;"> Rape, Assault, Robbery, Pickpocket,
+    Personal Larceny, </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    </td><td style="text-align: left;"> </td><td style="text-align: left;"> Burglary, Household Larceny, Auto Theft </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2 </td><td style="text-align: left;"> Second Victimization </td><td style="text-align: left;"> Rape, Assault, Robbery, Pickpocket,
+    Personal Larceny,</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    </td><td style="text-align: left;"> </td><td style="text-align: left;"> Burglary, Household Larceny, Auto Theft
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Michael Friendly (2000),
+Visualizing Categorical Data, page 113.
+</p>
+
+
+<h3>References</h3>
+
+<p>S. E. Fienberg (1980),
+<em>The Analysis of Cross-Classified Categorical Data</em>,
+MIT Press, Cambridge, 2nd edition.
+</p>
+<p>A. J. J. Reiss (1980),
+Victim proneness by type of crime in repeat victimization.
+In S. E. Fienberg &amp; A. J. J. Reiss (eds.),
+<em>Indicators of Crime and Criminal Justice</em>.
+U.S. Government Printing Office, Washington, DC.
+</p>
+<p>M. Friendly (2000),
+<em>Visualizing Categorical Data</em>.
+SAS Institute, Cary, NC.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("RepVict")
+
+mosaic(RepVict[-c(4,7),-c(4,7)], gp = shading_max,
+       main = "Repeat Victimization Data")
+</pre>
+
+
+</body></html>

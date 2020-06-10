@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Total monthly departures from Australia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for departures"><tr><td>departures</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Total monthly departures from Australia</h2>
+
+<h3>Description</h3>
+
+<p>Overseas departures from Australia: permanent departures, long-term (more
+than one year) residents departing, long-term (more than one year) visitors
+departing, short-term (less than one year) residents departing and
+short-term (less than one year) visitors departing. January 1976 - November
+2016.
+</p>
+
+
+<h3>Format</h3>
+
+<p>Multiple monthly time series of class <code>mts</code> containing the
+following series:
+</p>
+
+<table summary="Rd table">
+<tr>
+ <td style="text-align: left;">
+  permanent </td><td style="text-align: left;"> permanent departures from Australia.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  reslong   </td><td style="text-align: left;"> long-term resident departures from Australia.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  vislong   </td><td style="text-align: left;"> long-term visitor departures from Australia.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  resshort  </td><td style="text-align: left;"> short-term resident departures from Australia.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  visshort  </td><td style="text-align: left;"> short-term visitor departures from Australia.
+</td>
+</tr>
+
+</table>
+
+
+<h3>Source</h3>
+
+<p>Australian Bureau of Statistics. Catalogue No 3401.02.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+autoplot(departures, facets=TRUE)
+
+</pre>
+
+
+</body></html>

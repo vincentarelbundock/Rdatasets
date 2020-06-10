@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Weight gain for different methionine sources</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for methionine"><tr><td>methionine</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Weight gain for different methionine sources</h2>
+
+<h3>Description</h3>
+
+<p>Data consist of average body weight gain of chickens being treated 
+with one of the two methionine sources DLM and HMTBA.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(methionine)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 9 observations on the following 3 variables:
+</p>
+
+<dl>
+<dt><code>product</code></dt><dd><p>a factor with levels <code>control</code>, <code>DLM</code> and <code>MHA</code> denoting the treatments</p>
+</dd>
+<dt><code>dose</code></dt><dd><p>a numeric vector of methionine dose</p>
+</dd>
+<dt><code>gain</code></dt><dd><p>a numeric vector of average body weight gain</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset contains a common control measurement for the two treatments. More examples using this
+dataset are found under <code>AR.2</code> and <code>MM.2</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Kratzer. D. D. and Littell, R. C. (2006) Appropriate Statistical Methods to Compare 
+Dose Responses of Methionine Sources, <em>Poultry Science</em>, <b>85</b>, 947&ndash;954.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Fitting model with constraint on one parameter 
+met.ar.m1 &lt;- drm(gain~dose, product, data = methionine, 
+fct = AR.3(), pmodels = list(~1, ~factor(product), ~factor(product)), 
+upperl = c(Inf, Inf, 1700, Inf, Inf)) 
+
+plot(met.ar.m1, xlim=c(0,0.3), ylim=c(1450, 1800))
+abline(h=1700, lty=1)
+
+summary(met.ar.m1)
+
+</pre>
+
+
+</body></html>

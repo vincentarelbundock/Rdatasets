@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Cape Fur Seal Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for cfseal"><tr><td>cfseal</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cape Fur Seal Data</h2>
+
+<h3>Description</h3>
+
+<p>The <code>cfseal</code> data frame has 30 rows and 11 columns consisting
+of weight measurements for various organs taken from 30 Cape Fur
+Seals that died as an unintended consequence of commercial fishing.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>cfseal</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>age</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>weight</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>heart</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>lung</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>liver</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>spleen</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>stomach</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>leftkid</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>rightkid</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>kidney</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>intestines</dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Stewardson, C.L., Hemsley, S., Meyer, M.A., Canfield,
+P.J. and Maindonald, J.H. 1999.  Gross and microscopic visceral
+anatomy of the male Cape fur seal, Arctocephalus pusillus pusillus
+(Pinnepedia: Otariidae), with reference to organ size and growth.
+Journal of Anatomy (Cambridge) 195: 235-255.  (WWF project ZA-348)
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print("Allometric Growth - Example 5.7")
+
+cfseal.lm &lt;- lm(log(heart) ~ log(weight), data=cfseal); summary(cfseal.lm)
+plot(log(heart) ~ log(weight), data = cfseal, pch=16, xlab = "Heart Weight (g, log scale)", 
+ylab = "Body weight (kg, log scale)", axes=FALSE)
+heartaxis &lt;- 100*(2^seq(0,3))
+bodyaxis &lt;- c(20,40,60,100,180)
+axis(1, at = log(bodyaxis), lab = bodyaxis)
+axis(2, at = log(heartaxis), lab = heartaxis)
+box()
+abline(cfseal.lm)
+</pre>
+
+
+</body></html>

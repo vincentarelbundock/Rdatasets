@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Credit Card Default Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Default"><tr><td>Default</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Credit Card Default Data
+
+</h2>
+
+<h3>Description</h3>
+
+<p>A simulated data set containing information on ten thousand
+customers. The aim here is to predict which customers will default on
+their credit card debt.
+
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Default</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 10000 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>default</code></dt><dd><p>A factor with levels <code>No</code> and <code>Yes</code>
+indicating whether the customer defaulted on their debt</p>
+</dd>
+<dt><code>student</code></dt><dd><p>A factor with levels <code>No</code> and <code>Yes</code>
+indicating whether the customer is a student</p>
+</dd>
+<dt><code>balance</code></dt><dd><p>The average balance that the customer
+has remaining on their credit card after making their monthly payment</p>
+</dd>
+<dt><code>income</code></dt><dd><p>Income of customer</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Simulated data
+
+</p>
+
+
+<h3>References</h3>
+
+<p>James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013)
+<em>An Introduction to Statistical Learning with applications in R</em>,
+<a href="www.StatLearning.com">www.StatLearning.com</a>,
+Springer-Verlag, New York
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(Default)
+glm(default~student+balance+income,family="binomial",data=Default)
+</pre>
+
+
+</body></html>

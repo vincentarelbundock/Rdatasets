@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Cuckoo Eggs Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for cuckoos"><tr><td>cuckoos</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cuckoo Eggs Data</h2>
+
+<h3>Description</h3>
+
+<p>Length and breadth measurements of 120 eggs lain in the nests of six 
+different species of host bird.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>cuckoos</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>length</dt><dd><p>the egg lengths in millimeters</p>
+</dd>
+<dt>breadth</dt><dd><p>the egg breadths in millimeters</p>
+</dd>
+<dt>species</dt><dd><p>a factor with levels
+<code>hedge.sparrow</code>, 
+<code>meadow.pipit</code>, 
+<code>pied.wagtail</code>, 
+<code>robin</code>, 
+<code>tree.pipit</code>, 
+<code>wren</code> 
+</p>
+</dd> 
+<dt>id</dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+ 
+
+
+<h3>Source</h3>
+
+<p> Latter, O.H. (1902). The eggs of Cuculus canorus. An
+Inquiry into the dimensions of the cuckoo's egg and the relation of the
+variations to the size of the eggs of the foster-parent, with notes on
+coloration, &amp;c. Biometrika i, 164.  
+</p>
+
+
+<h3>References</h3>
+
+<p>Tippett, L.H.C. 1931: &quot;The Methods of Statistics&quot;. Williams &amp; Norgate, 
+London.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre> 
+print("Strip and Boxplots - Example 2.1.2")
+
+attach(cuckoos)
+oldpar &lt;- par(las = 2) # labels at right angle to axis.
+stripchart(length ~ species) 
+boxplot(split(cuckoos$length, cuckoos$species),
+         xlab="Length of egg", horizontal=TRUE)
+detach(cuckoos)
+par(oldpar)
+pause()
+
+print("Summaries - Example 2.2.2")
+sapply(split(cuckoos$length, cuckoos$species), sd)
+pause()
+
+print("Example 4.1.4")
+wren &lt;- split(cuckoos$length, cuckoos$species)$wren
+median(wren)
+n &lt;- length(wren)
+sqrt(pi/2)*sd(wren)/sqrt(n)  # this s.e. computation assumes normality
+</pre>
+
+
+</body></html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Glyphosate and metsulfuron-methyl tested on algae.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for glymet"><tr><td>glymet</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Glyphosate and metsulfuron-methyl tested on algae.</h2>
+
+<h3>Description</h3>
+
+<p>The dataset has 7 mixtures, 8 dilutions, two replicates and 5 common control controls. 
+Four observations are missing, giving a total of 113 observations.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(glymet)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 113 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>dose</code></dt><dd><p>a numeric vector of dose values</p>
+</dd>
+<dt><code>pct</code></dt><dd><p>a numeric vector denoting the grouping according to the mixtures percentages</p>
+</dd>
+<dt><code>rgr</code></dt><dd><p>a numeric vector of response values (relative growth rates)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset is analysed in Soerensen et al (2007). 
+The concentration addition model can be entertained for this dataset.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The dataset is kindly provided by Nina Cedergreen, Department of Agricultural Sciences, 
+Royal Veterinary and Agricultural University, Denmark.
+</p>
+
+
+<h3>References</h3>
+
+<p>Soerensen, H. and Cedergreen, N. and Skovgaard, I. M. and Streibig, J. C. (2007) 
+An isobole-based statistical model and test for synergism/antagonism in binary mixture toxicity experiments, 
+<em>Environmental and Ecological Statistics</em>, <b>14</b>, 383&ndash;397.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+
+## Fitting the model with freely varying ED50 values
+glymet.free &lt;- drm(rgr~dose, pct, data = glymet, 
+fct = LL.3(), pmodels = list(~factor(pct) , ~1, ~factor(pct))) 
+
+## Lack-of-fit test
+modelFit(glymet.free)  # acceptable
+summary(glymet.free)
+
+## Plotting isobole structure
+isobole(glymet.free, exchange=0.01)
+
+## Fitting the concentration addition model
+glymet.ca &lt;- mixture(glymet.free, model = "CA")
+
+## Comparing to model with freely varying e parameter
+anova(glymet.ca, glymet.free)  # borderline accepted
+
+## Plotting isobole based on concentration addition
+isobole(glymet.free, glymet.ca, exchange = 0.01)  # acceptable fit
+
+## Fitting the Hewlett model
+glymet.hew &lt;- mixture(glymet.free, model = "Hewlett")
+
+### Comparing to model with freely varying e parameter
+anova(glymet.ca, glymet.hew)  
+# borderline accepted
+# the Hewlett model offers no improvement over concentration addition
+
+## Plotting isobole based on the Hewlett model
+isobole(glymet.free, glymet.hew, exchange = 0.01)  
+# no improvement over concentration addition
+
+</pre>
+
+
+</body></html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Orange Juice Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for OJ"><tr><td>OJ</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Orange Juice Data
+
+</h2>
+
+<h3>Description</h3>
+
+<p>The data contains 1070 purchases where the customer either
+purchased Citrus Hill or Minute Maid Orange Juice. A number of
+characteristics of the customer and product are recorded.
+
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>OJ</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1070 observations on the following 18 variables.
+</p>
+
+<dl>
+<dt><code>Purchase</code></dt><dd><p>A factor with levels <code>CH</code> and <code>MM</code>
+indicating whether the customer purchased Citrus Hill or Minute
+Maid Orange Juice</p>
+</dd>
+</dl>
+
+<dl>
+<dt><code>WeekofPurchase</code></dt><dd><p>Week of purchase</p>
+</dd>
+<dt><code>StoreID</code></dt><dd><p>Store ID</p>
+</dd>
+</dl>
+
+<dl>
+<dt><code>PriceCH</code></dt><dd><p>Price charged for CH</p>
+</dd>
+<dt><code>PriceMM</code></dt><dd><p>Price charged for MM</p>
+</dd>
+<dt><code>DiscCH</code></dt><dd><p>Discount offered for CH</p>
+</dd>
+<dt><code>DiscMM</code></dt><dd><p>Discount offered for MM</p>
+</dd>
+<dt><code>SpecialCH</code></dt><dd><p>Indicator of special on CH</p>
+</dd>
+<dt><code>SpecialMM</code></dt><dd><p>Indicator of special on MM</p>
+</dd>
+<dt><code>LoyalCH</code></dt><dd><p>Customer brand loyalty for CH</p>
+</dd>
+</dl>
+
+<dl>
+<dt><code>SalePriceMM</code></dt><dd><p>Sale price for MM</p>
+</dd>
+<dt><code>SalePriceCH</code></dt><dd><p>Sale price for CH</p>
+</dd>
+<dt><code>PriceDiff</code></dt><dd><p>Sale price of MM less sale price of CH</p>
+</dd>
+<dt><code>Store7</code></dt><dd><p>A factor with levels <code>No</code> and <code>Yes</code>
+indicating whether the sale is at Store 7</p>
+</dd>
+<dt><code>PctDiscMM</code></dt><dd><p>Percentage discount for MM</p>
+</dd>
+<dt><code>PctDiscCH</code></dt><dd><p>Percentage discount for CH</p>
+</dd>
+<dt><code>ListPriceDiff</code></dt><dd><p>List price of MM less list price of CH</p>
+</dd>
+<dt><code>STORE</code></dt><dd><p>Which of 5 possible stores the sale occured at</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Stine, Robert A., Foster, Dean P., Waterman, Richard P. Business
+Analysis Using Regression (1998). Published by Springer. 
+
+</p>
+
+
+<h3>References</h3>
+
+<p>James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013)
+<em>An Introduction to Statistical Learning with applications in R</em>,
+<a href="www.StatLearning.com">www.StatLearning.com</a>,
+Springer-Verlag, New York
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(OJ)
+plot(OJ$Purchase,OJ$PriceCH)
+</pre>
+
+
+</body></html>

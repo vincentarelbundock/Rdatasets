@@ -1,0 +1,85 @@
+==== ===============
+UN98 R Documentation
+==== ===============
+
+United Nations Social Indicators Data 1998]
+-------------------------------------------
+
+Description
+~~~~~~~~~~~
+
+Social indicators data on 207 nations distributed by the United Nations
+circa 1998.
+
+Usage
+~~~~~
+
+::
+
+   data("UN98")
+
+Format
+~~~~~~
+
+A data frame with 207 observations on the following 13 variables.
+
+``region``
+   a factor with alphabetical levels ``Africa``, ``America``, ``Asia``,
+   ``Europe``, ``Oceania``.
+
+``tfr``
+   total fertility rate, number of children per woman.
+
+``contraception``
+   percentage of married women using any method of contraception.
+
+``educationMale``
+   average number of years of education for men.
+
+``educationFemale``
+   average number of years of education for women.
+
+``lifeMale``
+   expectation of life at birth for males.
+
+``lifeFemale``
+   expectation of life at birth for females.
+
+``infantMortality``
+   infant deaths per 1000 live births.
+
+``GDPperCapita``
+   gross domestic product per person in U.S. dollars.
+
+``economicActivityMale``
+   percentage of men who are economically active.
+
+``economicActivityFemale``
+   percentage of women who are economically active.
+
+``illiteracyMale``
+   percentage of males 15 years of age and older who are illiterate.
+
+``illiteracyFemale``
+   percentage of females 15 years of age and older who are illiterate.
+
+Details
+~~~~~~~
+
+In a few cases where the percentages of males and females 15 and older
+who are illiterate were unavailable, these variables were filled in by
+regression imputation from the corresponding percentages 25 and older
+who are illiterate.
+
+Source
+~~~~~~
+
+Downloaded from ``http://www.un.org/Depts/unsd/social/main.htm`` in
+1998.
+
+Examples
+~~~~~~~~
+
+::
+
+   summary(UN98)

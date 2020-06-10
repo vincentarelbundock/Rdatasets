@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Monthly ozone measurements over Central America.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ozone"><tr><td>ozone</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Monthly ozone measurements over Central America.</h2>
+
+<h3>Description</h3>
+
+<p>This data set is a subset of the data from the 2006 ASA Data expo
+challenge, <a href="http://stat-computing.org/dataexpo/2006/">http://stat-computing.org/dataexpo/2006/</a>. The data are
+monthly ozone averages on a very coarse 24 by 24 grid covering Central
+America, from Jan 1995 to Dec 2000. The data is stored in a 3d area with
+the first two dimensions representing latitude and longitude, and the third
+representing time.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ozone
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A 24 x 24 x 72 numeric array</p>
+
+
+<h3>References</h3>
+
+<p><a href="http://stat-computing.org/dataexpo/2006/">http://stat-computing.org/dataexpo/2006/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+value &lt;- ozone[1, 1, ]
+time &lt;- 1:72
+month.abbr &lt;- c("Jan", "Feb", "Mar", "Apr", "May",
+ "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+month &lt;- factor(rep(month.abbr, length = 72), levels = month.abbr)
+year &lt;- rep(1:6, each = 12)
+deseasf &lt;- function(value) lm(value ~ month - 1)
+
+models &lt;- alply(ozone, 1:2, deseasf)
+coefs &lt;- laply(models, coef)
+dimnames(coefs)[[3]] &lt;- month.abbr
+names(dimnames(coefs))[3] &lt;- "month"
+
+deseas &lt;- laply(models, resid)
+dimnames(deseas)[[3]] &lt;- 1:72
+names(dimnames(deseas))[3] &lt;- "time"
+
+dim(coefs)
+dim(deseas)
+</pre>
+
+
+</body></html>

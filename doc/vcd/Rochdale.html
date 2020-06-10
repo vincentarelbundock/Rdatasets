@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Rochdale Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Rochdale"><tr><td>Rochdale</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Rochdale Data</h2>
+
+<h3>Description</h3>
+
+<p>Information on 665 households of Rochdale, Lancashire, UK.
+The study was conducted to identify influence factors on economical
+activity of wives. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data("Rochdale")
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A 8-dimensional array resulting from cross-tabulating 665 observations
+on 8 variables.  The variables and their levels are as follows:
+</p>
+
+<table summary="Rd table">
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1 </td><td style="text-align: left;"> EconActive </td><td style="text-align: left;"> yes, no </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2 </td><td style="text-align: left;"> Age </td><td style="text-align: left;"> &lt;38, &gt;38 </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    3 </td><td style="text-align: left;"> HusbandEmployed </td><td style="text-align: left;"> yes, no </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    4 </td><td style="text-align: left;"> Child </td><td style="text-align: left;"> yes, no </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    5 </td><td style="text-align: left;"> Education </td><td style="text-align: left;"> yes, no </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    6 </td><td style="text-align: left;"> HusbandEducation </td><td style="text-align: left;"> yes, no </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    7 </td><td style="text-align: left;"> Asian </td><td style="text-align: left;"> yes, no </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    8 </td><td style="text-align: left;"> HouseholdWorking </td><td style="text-align: left;"> yes, no </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Note</h3>
+
+<p>Many observations are missing: only 91 out of all 256 combinations
+contain information.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Whittaker (1990).
+</p>
+
+
+<h3>References</h3>
+
+<p>H. Hofmann (2003).
+Constructing and reading mosaicplots.
+<em>Computational Statistics &amp; Data Analysis</em>,
+<b>43</b>, 4, 565&ndash;580.
+</p>
+<p>J. Whittaker (1990),
+<em>Graphical Models on Applied Multivariate Statistics</em>,
+Wiley, New York.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("Rochdale")
+mosaic(Rochdale)
+</pre>
+
+
+</body></html>

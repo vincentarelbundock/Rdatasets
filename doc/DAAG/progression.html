@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Progression of Record times for track races, 1912 - 2008</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for progression"><tr><td>progression</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Progression of Record times for track races, 1912 - 2008</h2>
+
+<h3>Description</h3>
+
+<p>Progression in world record times for track and road races.</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(progression)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 227 observations on the following 4 columns.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>Year that time was first recorded</p>
+</dd>
+<dt><code>Distance</code></dt><dd><p>distance in kilometers</p>
+</dd>
+<dt><code>Time</code></dt><dd><p>time in minutes</p>
+</dd>
+<dt><code>race</code></dt><dd><p>character; descriptor for event (100m, mile, ...)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Record times for men's track events, from 1912 onwards.  The
+series starts with times that were recognized as record times in 1912,
+where available.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Links to sources for the data are at
+</p>
+<p><a href="http://en.wikipedia.org/wiki/Athletics_world_record">http://en.wikipedia.org/wiki/Athletics_world_record</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(progression)
+plot(log(Time) ~ log(Distance), data=progression)
+xyplot(log(Time) ~ log(Distance), data=progression, type=c("p","r"))
+xyplot(log(Time) ~ log(Distance), data=progression,
+       type=c("p","smooth"))
+res &lt;- resid(lm(log(Time) ~ log(Distance), data=progression))
+plot(res ~ log(Distance), data=progression,
+     ylab="Residuals from regression line on log scales")
+</pre>
+
+
+</body></html>

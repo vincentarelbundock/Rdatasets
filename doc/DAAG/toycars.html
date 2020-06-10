@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Toy Cars Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for toycars"><tr><td>toycars</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Toy Cars Data</h2>
+
+<h3>Description</h3>
+
+<p>The <code>toycars</code> data frame has 27 rows and 3 columns.
+Observations are on the
+distance traveled by one of three different toy cars on
+a smooth surface, starting from rest at the top of a 16 inch long ramp
+tilted at varying angles.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>toycars</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>angle</dt><dd><p>tilt of ramp, in degrees</p>
+</dd>
+<dt>distance</dt><dd><p>distance traveled, in meters</p>
+</dd>
+<dt>car</dt><dd><p>a numeric code (1 = first car, 2 = second car, 3 = third 
+car)</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre>
+toycars.lm &lt;- lm(distance ~ angle + factor(car), data=toycars)
+summary(toycars.lm)
+</pre>
+
+
+</body></html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Blood pressure versus Salt; inter-population data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for intersalt"><tr><td>intersalt</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Blood pressure versus Salt; inter-population data</h2>
+
+<h3>Description</h3>
+
+<p>Median blood pressure, as a fuction of salt intake, for each of 52
+human populations.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>intersalt</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 52 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>b</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>bp</code></dt><dd><p>mean diastolic blood pressure (mm Hg)</p>
+</dd>
+<dt><code>na</code></dt><dd><p>mean sodium excretion (mmol/24h)</p>
+</dd>
+<dt><code>country</code></dt><dd><p>a character vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>For each population took a sample of 25 males and 25 females from each
+decade in the age range 20 - 50, i.e. 200 individuals in all.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Intersalt Cooperative Research Group. 1988.  Intersalt: an international
+study of electrolyte excretion and blood pressure: results for 24 hour
+urinary sodium and potassium excretion.  <em>British Medical Journal</em>
+297: 319-328.  
+</p>
+
+
+<h3>References</h3>
+
+<p>Maindonald, J.H. <em>The Design of Research Studies ? A Statistical
+Perspective</em>, viii + 109pp. Graduate School Occasional Paper 00/2, 
+Australian National University 2000.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(intersalt)
+plot(bp ~ na, data=intersalt, xlab="Median sodium excretion (mmol/24h)",
+     ylab="Median diatoluc blood pressure (mm Hg)")
+</pre>
+
+
+</body></html>

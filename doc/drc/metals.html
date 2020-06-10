@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Data from heavy metal mixture experiments</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for metals"><tr><td>metals</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Data from heavy metal mixture experiments
+</h2>
+
+<h3>Description</h3>
+
+<p>Data are from a study of the response of the cyanobacterial self-luminescent metallothionein-based whole-cell biosensor Synechoccocus elongatus PCC 7942 pBG2120 to binary mixtures of 6 heavy metals (Zn, Cu, Cd, Ag, Co and Hg).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("metals")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 543 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>metal</code></dt><dd><p>a factor with levels <code>Ag</code> <code>AgCd</code> <code>Cd</code> <code>Co</code> <code>CoAg</code> <code>CoCd</code> <code>Cu</code> <code>CuAg</code> <code>CuCd</code> <code>CuCo</code> <code>CuHg</code> <code>CuZn</code> <code>Hg</code> <code>HgCd</code> <code>HgCo</code> <code>Zn</code> <code>ZnAg</code> <code>ZnCd</code> <code>ZnCo</code> <code>ZnHg</code></p>
+</dd>
+<dt><code>conc</code></dt><dd><p>a numeric vector of concentrations</p>
+</dd>
+<dt><code>BIF</code></dt><dd><p>a numeric vector of luminescence induction factors</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data are from the study described by Martin-Betancor et al. (2015).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Martin-Betancor, K. and Ritz, C. and Fernandez-Pinas, F. and Leganes, F. and Rodea-Palomares, I. (2015) 
+Defining an additivity framework for mixture research in inducible whole-cell biosensors,
+<em>Scientific Reports</em>
+<b>17200</b>.</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## One example from the paper by Martin-Betancor et al (2015)
+
+## Figure 2
+
+## Fitting a model for "Zn"
+Zn.lgau &lt;- drm(BIF ~ conc, data = subset(metals, metal == "Zn"), 
+fct = lgaussian(), bcVal = 0, bcAdd = 10)
+
+## Plotting data and fitted curve
+plot(Zn.lgau, log = "", type = "all", 
+xlab = expression(paste(plain("Zn")^plain("2+"), " ", mu, "", plain("M"))))
+
+## Calculating effective doses
+ED(Zn.lgau, 50, interval = "delta")
+ED(Zn.lgau, -50, interval = "delta", bound = FALSE)
+ED(Zn.lgau, 99.999,interval = "delta")  # approx. for ED0
+
+## Fitting a model for "Cu"
+Cu.lgau &lt;- drm(BIF ~ conc, data = subset(metals, metal == "Cu"), 
+fct = lgaussian()) 
+
+## Fitting a model for the mixture Cu-Zn
+CuZn.lgau &lt;- drm(BIF ~ conc, data = subset(metals, metal == "CuZn"), 
+fct = lgaussian()) 
+
+## Calculating effects needed for the FA-CI plot
+CuZn.effects &lt;- CIcompX(0.015, list(CuZn.lgau, Cu.lgau, Zn.lgau), 
+c(-5, -10, -20, -30, -40, -50, -60, -70, -80, -90, -99, 99, 90, 80, 70, 60, 50, 40, 30, 20, 10))
+
+## Reproducing the FA-cI plot shown in Figure 5d
+plotFACI(CuZn.effects, "ED", ylim = c(0.8, 1.6), showPoints = TRUE)
+
+</pre>
+
+
+</body></html>

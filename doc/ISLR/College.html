@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: U.S. News and World Report's College Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for College"><tr><td>College</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>U.S. News and World Report's College Data
+
+</h2>
+
+<h3>Description</h3>
+
+<p>Statistics for a large number of US Colleges from the 1995
+issue of US News and World Report.
+
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>College</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 777 observations on the following 18 variables.
+</p>
+
+<dl>
+<dt><code>Private</code></dt><dd><p>A factor with levels <code>No</code> and <code>Yes</code>
+indicating private or public university</p>
+</dd>
+<dt><code>Apps</code></dt><dd><p>Number of applications received</p>
+</dd>
+<dt><code>Accept</code></dt><dd><p>Number of applications accepted</p>
+</dd>
+<dt><code>Enroll</code></dt><dd><p>Number of new students enrolled</p>
+</dd>
+<dt><code>Top10perc</code></dt><dd><p>Pct. new students from top 10% of H.S. class</p>
+</dd>
+<dt><code>Top25perc</code></dt><dd><p>Pct. new students from top 25% of H.S. class</p>
+</dd>
+<dt><code>F.Undergrad</code></dt><dd><p>Number of fulltime undergraduates</p>
+</dd>
+<dt><code>P.Undergrad</code></dt><dd><p>Number of parttime undergraduates</p>
+</dd>
+<dt><code>Outstate</code></dt><dd><p>Out-of-state tuition</p>
+</dd>
+<dt><code>Room.Board</code></dt><dd><p>Room and board costs</p>
+</dd>
+<dt><code>Books</code></dt><dd><p>Estimated book costs</p>
+</dd>
+<dt><code>Personal</code></dt><dd><p>Estimated personal spending</p>
+</dd>
+<dt><code>PhD</code></dt><dd><p>Pct. of faculty with Ph.D.'s</p>
+</dd>
+<dt><code>Terminal</code></dt><dd><p>Pct. of faculty with terminal degree</p>
+</dd>
+<dt><code>S.F.Ratio</code></dt><dd><p>Student/faculty ratio</p>
+</dd>
+<dt><code>perc.alumni</code></dt><dd><p>Pct. alumni who donate</p>
+</dd>
+<dt><code>Expend</code></dt><dd><p>Instructional expenditure per student</p>
+</dd>
+<dt><code>Grad.Rate</code></dt><dd><p>Graduation rate</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>This dataset was taken from the StatLib library which is
+maintained at Carnegie Mellon University. The dataset was used in the
+ASA Statistical Graphics Section's 1995 Data Analysis Exposition.
+
+</p>
+
+
+<h3>References</h3>
+
+<p>James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013)
+<em>An Introduction to Statistical Learning with applications in R</em>,
+<a href="www.StatLearning.com">www.StatLearning.com</a>,
+Springer-Verlag, New York
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(College)
+lm(Apps~Private+Accept,data=College)
+</pre>
+
+
+</body></html>

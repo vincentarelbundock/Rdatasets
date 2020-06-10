@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Effect of cadmium on growth of green alga</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for S.capricornutum"><tr><td>S.capricornutum</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Effect of cadmium on growth of green alga</h2>
+
+<h3>Description</h3>
+
+<p>Green alga (<em>Selenastrum capricornutum</em>) was exposed to cadmium chloride concentrations
+ranging from 5 to 80 micro g/L in geometric progression in 4-day population growth test.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(S.capricornutum)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 18 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>conc</code></dt><dd><p>a numeric vector of cadmium chloride concentrations (micro g/L)</p>
+</dd>
+<dt><code>count</code></dt><dd><p>a numeric vector of algal counts (10000 x cells /ml)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are analysed in Bruce and Versteeg (1992) using a log-normal 
+dose-response model (using the logarithm with base 10).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Bruce, R. D. and Versteeg, D. J. (1992) A statistical procedure for modeling continuous toxicity data,
+<em>Environ. Toxicol. Chem.</em>, <b>11</b>, 1485&ndash;1494.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Fitting 3-parameter log-normal model
+s.cap.m1 &lt;- drm(count ~ conc, data = S.capricornutum, fct = LN.3())
+
+## Residual plot
+plot(fitted(s.cap.m1), residuals(s.cap.m1))
+
+## Fitting model with transform-both-sides approach
+s.cap.m2 &lt;- boxcox(s.cap.m1, method = "anova")
+summary(s.cap.m2)
+
+## Residual plot after transformation (looks better)
+plot(fitted(s.cap.m2), residuals(s.cap.m2))
+
+## Calculating ED values on log scale
+ED(s.cap.m2, c(10, 20, 50), interval="delta")
+
+## Fitting model with ED50 as parameter
+## (for comparison)
+s.cap.m3 &lt;- drm(count ~ conc, data = S.capricornutum, fct = LN.3(loge=TRUE))
+s.cap.m4 &lt;- boxcox(s.cap.m3, method = "anova")
+summary(s.cap.m4)
+ED(s.cap.m4, c(10, 20, 50), interval = "fls")
+
+</pre>
+
+
+</body></html>

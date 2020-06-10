@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Dose-mortality data, for fumigation of codling moth with...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for codling"><tr><td>codling</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Dose-mortality data, for fumigation of codling moth with methyl bromide</h2>
+
+<h3>Description</h3>
+
+<p>Data are from trials that studied the mortality response of codling moth
+to fumigation with methyl bromide.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(codling)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 99 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt>dose</dt><dd><p>Injected dose of methyl bromide, in gm per cubic meter</p>
+</dd>
+<dt>tot</dt><dd><p>Number of insects in chamber</p>
+</dd>
+<dt>dead</dt><dd><p>Number of insects dying</p>
+</dd>
+<dt>pobs</dt><dd><p>Proportion dying</p>
+</dd>
+<dt>cm</dt><dd><p>Control mortality, i.e., at dose 0</p>
+</dd>
+<dt>ct</dt><dd><p>Concentration-time sum</p>
+</dd>
+<dt>Cultivar</dt><dd><p>a factor with levels <code>BRAEBURN</code> <code>FUJI</code> <code>GRANNY</code> <code>Gala</code> <code>ROYAL</code> <code>Red Delicious</code> <code>Splendour</code></p>
+</dd>
+<dt>gp</dt><dd><p>a factor which has a different level for each different
+combination of <code>Cultivar</code>, <code>year</code> and <code>rep</code> (replicate).</p>
+</dd>
+<dt>year</dt><dd><p>a factor with levels <code>1988</code> <code>1989</code></p>
+</dd>
+<dt>numcm</dt><dd><p>a numeric vector: total number of control insects</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The research that generated these data was in part funded by New Zealand
+pipfruit growers.  The published analysis was funded by New Zealand
+pipfruit growers. See also <code>sorption</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Maindonald, J.H.; Waddell, B.C.; Petry, R.J. 2001.
+Apple cultivar effects on codling moth (Lepidoptera: Tortricidae)
+egg mortality following fumigation with methyl bromide.
+Postharvest Biology and Technology 22: 99-110.
+</p>
+
+
+</body></html>

@@ -1,0 +1,58 @@
+===== ===============
+sp500 R Documentation
+===== ===============
+
+Daily S&P 500 Index data from 1950 to 2015
+------------------------------------------
+
+Description
+~~~~~~~~~~~
+
+This dataset provides daily price indicators for the S&P 500 index from
+the beginning of 1950 to the end of 2015. The index includes 500 leading
+companies and captures about 80\\
+
+Usage
+~~~~~
+
+::
+
+   sp500
+
+Format
+~~~~~~
+
+A tibble with 16607 rows and 7 variables:
+
+date
+   The date expressed as ``Date`` values
+
+open, high, low, close
+   The day's opening, high, low, and closing prices in USD; the
+   ``close`` price is adjusted for splits
+
+volume
+   the number of trades for the given ``date``
+
+adj_close
+   The close price adjusted for both dividends and splits
+
+Function ID
+~~~~~~~~~~~
+
+11-4
+
+See Also
+~~~~~~~~
+
+Other Datasets: ``countrypops``, ``exibble``, ``gtcars``,
+``pizzaplace``, ``sza``
+
+Examples
+~~~~~~~~
+
+::
+
+   # Here is a glimpse at the data
+   # available in `sp500`
+   dplyr::glimpse(sp500)

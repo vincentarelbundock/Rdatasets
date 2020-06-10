@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Mid-Atlantic Wage Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Wage"><tr><td>Wage</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Mid-Atlantic Wage Data
+
+</h2>
+
+<h3>Description</h3>
+
+<p>Wage and other data for a group of 3000 male workers in the
+Mid-Atlantic region. 
+
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Wage</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3000 observations on the following 11 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>Year that wage information was recorded</p>
+</dd>
+<dt><code>age</code></dt><dd><p>Age of worker</p>
+</dd>
+<dt><code>maritl</code></dt><dd><p>A factor with levels <code>1. Never Married</code>
+<code>2. Married</code> <code>3. Widowed</code> <code>4. Divorced</code> and
+<code>5. Separated</code> indicating marital status</p>
+</dd>
+<dt><code>race</code></dt><dd><p>A factor with levels <code>1. White</code>
+<code>2. Black</code> <code>3. Asian</code> and <code>4. Other</code> indicating race</p>
+</dd>
+<dt><code>education</code></dt><dd><p>A factor with levels <code>1. &lt; HS Grad</code>
+<code>2. HS Grad</code> <code>3. Some College</code> <code>4. College Grad</code>
+and <code>5. Advanced Degree</code> indicating education level</p>
+</dd>
+<dt><code>region</code></dt><dd><p>Region of the country (mid-atlantic only)</p>
+</dd>
+<dt><code>jobclass</code></dt><dd><p>A factor with levels <code>1. Industrial</code> and
+<code>2. Information</code> indicating type of job</p>
+</dd>
+<dt><code>health</code></dt><dd><p>A factor with levels <code>1. &lt;=Good</code> and
+<code>2. &gt;=Very Good</code> indicating health level of worker</p>
+</dd>
+<dt><code>health_ins</code></dt><dd><p>A factor with levels <code>1. Yes</code> and
+<code>2. No</code> indicating whether worker has health insurance</p>
+</dd>
+<dt><code>logwage</code></dt><dd><p>Log of workers wage</p>
+</dd>
+<dt><code>wage</code></dt><dd><p>Workers raw wage</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data was manually assembled by Steve Miller, of Open BI
+(www.openbi.com), from the March 2011 Supplement to Current Population
+Survey data.
+</p>
+<p><a href="http://thedataweb.rm.census.gov/TheDataWeb">http://thedataweb.rm.census.gov/TheDataWeb</a>
+</p>
+
+
+
+<h3>References</h3>
+
+<p>James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013)
+<em>An Introduction to Statistical Learning with applications in R</em>,
+<a href="www.StatLearning.com">www.StatLearning.com</a>,
+Springer-Verlag, New York
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(Wage)
+lm(wage~year+age,data=Wage)
+## maybe str(Wage) ; plot(Wage) ...
+</pre>
+
+
+</body></html>

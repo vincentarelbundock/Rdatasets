@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Diagnosis of Multiple Sclerosis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for MSPatients"><tr><td>MSPatients</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Diagnosis of Multiple Sclerosis</h2>
+
+<h3>Description</h3>
+
+<p>Data from Westlund \&amp; Kurland (1953) on the diagnosis of multiple
+sclerosis (MS): two samples of patients, one from Winnipeg and one
+from New Orleans, were each rated by two neurologists (one from each
+city) in four diagnostic categories.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data("MSPatients")
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A 3-dimensional array resulting from cross-tabulating 218 observations
+on 3 variables.  The variables and their levels are as follows:
+</p>
+
+<table summary="Rd table">
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1 </td><td style="text-align: left;"> New Orleans Neurologist </td><td style="text-align: left;"> Certain, Probable, Possible, Doubtful </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2 </td><td style="text-align: left;"> Winnipeg Neurologist </td><td style="text-align: left;"> Certain, Probable, Possible, Doubtful </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    3 </td><td style="text-align: left;"> Patients </td><td style="text-align: left;"> Winnipeg, New Orleans
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>M. Friendly (2000),
+Visualizing Categorical Data:
+<a href="http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/msdiag.sas">http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/msdiag.sas</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>K. B. Westlund \&amp; L. T. Kurland (1953),
+Studies on multiple sclerosis in Winnipeg, Manitoba and New Orleans,
+Louisiana,
+<em>American Journal of Hygiene</em>, <b>57</b>, 380&ndash;396.
+</p>
+<p>M. Friendly (2000),
+<em>Visualizing Categorical Data</em>.
+SAS Institute, Cary, NC.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("MSPatients")
+## Not run: 
+## best visualized using a resized device, e.g. using:
+## get(getOption("device"))(width = 12)
+pushViewport(viewport(layout = grid.layout(ncol = 2)))
+pushViewport(viewport(layout.pos.col = 1))
+popViewport()
+pushViewport(viewport(layout.pos.col = 2))
+popViewport(2)
+dev.off()
+
+## End(Not run)
+
+## alternative, more convenient way
+mplot(
+  agreementplot(t(MSPatients[,,1]), return_grob = TRUE,
+    main = "Winnipeg Patients"),
+  agreementplot(t(MSPatients[,,2]), return_grob = TRUE,
+    main = "New Orleans Patients")
+)
+
+## alternatively, use cotabplot:
+cotabplot(MSPatients, panel = cotab_agreementplot)
+</pre>
+
+
+</body></html>

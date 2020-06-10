@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: US Investment Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Investment"><tr><td>Investment</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Investment Data</h2>
+
+<h3>Description</h3>
+
+<p>US data for fitting an investment equation.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(Investment)</pre>
+
+
+<h3>Format</h3>
+
+<p>An annual time series from 1963 to 1982 with 7 variables.
+</p>
+
+<dl>
+<dt>GNP</dt><dd><p>nominal gross national product (in billion USD),</p>
+</dd>
+<dt>Investment</dt><dd><p>nominal gross private domestic investment (in billion USD),</p>
+</dd>
+<dt>Price</dt><dd><p>price index, implicit price deflator for GNP,</p>
+</dd>
+<dt>Interest</dt><dd><p>interest rate, average yearly discount rate
+charged by the New York Federal Reserve Bank,</p>
+</dd>
+<dt>RealGNP</dt><dd><p>real GNP (= GNP/Price),</p>
+</dd>
+<dt>RealInv</dt><dd><p>real investment (= Investment/Price),</p>
+</dd>
+<dt>RealInt</dt><dd><p>approximation to the real interest rate
+(= Interest - 100 * diff(Price)/Price).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Table 15.1 in Greene (1993)</p>
+
+
+<h3>References</h3>
+
+<p>Greene W.H. (1993), <em>Econometric Analysis</em>, 2nd edition.
+Macmillan Publishing Company, New York.
+</p>
+<p>Executive Office of the President (1984), <em>Economic Report of the
+President</em>. US Government Printing Office, Washington, DC.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Willam H. Greene, Econometric Analysis, 2nd Ed.
+## Chapter 15
+## load data set, p. 411, Table 15.1
+data(Investment)
+
+## fit linear model, p. 412, Table 15.2
+fm &lt;- lm(RealInv ~ RealGNP + RealInt, data = Investment)
+summary(fm)
+
+## visualize residuals, p. 412, Figure 15.1
+plot(ts(residuals(fm), start = 1964),
+  type = "b", pch = 19, ylim = c(-35, 35), ylab = "Residuals")
+sigma &lt;- sqrt(sum(residuals(fm)^2)/fm$df.residual) ## maybe used df = 26 instead of 16 ??
+abline(h = c(-2, 0, 2) * sigma, lty = 2)
+
+if(require(lmtest)) {
+## Newey-West covariances, Example 15.3
+coeftest(fm, vcov = NeweyWest(fm, lag = 4))
+## Note, that the following is equivalent:
+coeftest(fm, vcov = kernHAC(fm, kernel = "Bartlett", bw = 5, prewhite = FALSE, adjust = FALSE))
+
+## Durbin-Watson test, p. 424, Example 15.4
+dwtest(fm)
+
+## Breusch-Godfrey test, p. 427, Example 15.6
+bgtest(fm, order = 4)
+}
+
+## visualize fitted series
+plot(Investment[, "RealInv"], type = "b", pch = 19, ylab = "Real investment")
+lines(ts(fitted(fm), start = 1964), col = 4)
+
+
+## 3-d visualization of fitted model
+if(require(scatterplot3d)) {
+s3d &lt;- scatterplot3d(Investment[,c(5,7,6)],
+  type = "b", angle = 65, scale.y = 1, pch = 16)
+s3d$plane3d(fm, lty.box = "solid", col = 4)
+}
+</pre>
+
+
+</body></html>

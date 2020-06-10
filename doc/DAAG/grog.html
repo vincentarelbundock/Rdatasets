@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Alcohol consumption in Australia and New Zealand</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for grog"><tr><td>grog</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Alcohol consumption in Australia and New Zealand</h2>
+
+<h3>Description</h3>
+
+<p>Data are annual apparent alcohol consumption in  Australia and New
+Zealand, in liters of pure alcohol content per annum, separately for
+beer, wine, and spirits (including spirit-based products).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(grog)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 18 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>Beer</code></dt><dd><p>liters per annum</p>
+</dd>
+<dt><code>Wine</code></dt><dd><p>liters per annum</p>
+</dd>
+<dt><code>Spirit</code></dt><dd><p>liters per annum</p>
+</dd>
+<dt><code>Country</code></dt><dd><p>a factor with levels <code>Australia</code>
+<code>NewZealand</code></p>
+</dd>
+<dt><code>Year</code></dt><dd><p>Year ending in June of the given year</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data are total available pure alcohol content, for the three
+categories, divided by numbers of persons aged 15 years or more.  The
+source data for New Zealand included quarterly figures from December
+1997, and annual data to December for all years.  The annual New
+Zealand figure to June 1998 required an estimate for September
+1997 that was obtained by extrapolating back the third quarter trend
+line from later years.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Australian data are from <a href="http://www.abs.gov.au">http://www.abs.gov.au</a>.
+For New Zealand data, go to
+<a href="http://www.stats.govt.nz/infoshare/">http://www.stats.govt.nz/infoshare/</a> Click on 'Industry sectors'
+and then on 'Alcohol Available for Consumption - ALC'.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(grog)
+library(lattice)
+xyplot(Beer+Wine+Spirit ~ Year | Country, data=grog)
+xyplot(Beer+Wine+Spirit ~ Year, groups=Country, data=grog, outer=TRUE)
+</pre>
+
+
+</body></html>

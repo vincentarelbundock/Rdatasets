@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Mortality Rates in US by Cause and Gender</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for H_USMortality"><tr><td>H_USMortality</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2> Mortality Rates in US by Cause and Gender </h2>
+
+<h3>Description</h3>
+
+<p>These datasets record mortality rates across all ages in the USA by
+cause of death, sex, and rural/urban status, 2011&ndash;2013. The two
+datasets represent the national aggregate rates and the region-wise
+rates for each administrative region under the Department of Health
+and Human Services (HHS).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+USMortality
+USRegionalMortality
+</pre>
+
+
+<h3>Format</h3>
+
+<p><code>USRegionalMortality</code> is a data frame with 400 observations on
+the following 6 variables.
+</p>
+
+<dl>
+<dt><code>Region</code></dt><dd><p>A factor specifying HHS Region. See details.</p>
+</dd>
+<dt><code>Status</code></dt><dd><p>A factor with levels <code>Rural</code> and <code>Urban</code></p>
+</dd>
+<dt><code>Sex</code></dt><dd><p>A factor with levels <code>Female</code> and <code>Male</code></p>
+</dd>
+<dt><code>Cause</code></dt><dd><p>Cause of death. A factor with levels
+<code>Alzheimers</code>, <code>Cancer</code>, <code>Cerebrovascular diseases</code>,
+<code>Diabetes</code>, <code>Flu and pneumonia</code>, <code>Heart disease</code>,
+<code>Lower respiratory</code>, <code>Nephritis</code>, <code>Suicide</code>, and
+<code>Unintentional injuries</code></p>
+</dd>
+<dt><code>Rate</code></dt><dd><p>Age-adjusted death rate per 100,000 population</p>
+</dd>
+<dt><code>SE</code></dt><dd><p>Standard error for the rate</p>
+</dd>
+</dl>
+
+<p><code>USMortality</code> is a data frame with 40 observations, containing
+the same variables with the exception of <code>Region</code>.
+</p>
+
+
+<h3>Details</h3>
+
+<p> The region-wise data give estimated rates separately for each
+of 10 HHS regions. The location of the regional offices and their
+coverage area, available from
+<a href="https://www.hhs.gov/about/agencies/iea/regional-offices/index.html">https://www.hhs.gov/about/agencies/iea/regional-offices/index.html</a>,
+is given below.
+</p>
+
+<dl>
+<dt>HHS Region 01 - Boston: </dt><dd><p> Connecticut, Maine, Massachusetts,
+New Hampshire, Rhode Island, and Vermont </p>
+</dd>
+<dt> HHS Region 02 - New York: </dt><dd><p> New Jersey, New York, Puerto
+Rico, and the Virgin Islands </p>
+</dd>
+<dt>HHS Region 03 - Philadelphia: </dt><dd><p> Delaware, District of
+Columbia, Maryland, Pennsylvania, Virginia, and West Virginia</p>
+</dd>
+<dt>HHS Region 04 - Atlanta: </dt><dd><p> Alabama, Florida, Georgia, Kentucky,
+Mississippi, North Carolina, South Carolina, and Tennessee</p>
+</dd>
+<dt>HHS Region 05 - Chicago: </dt><dd><p> Illinois, Indiana, Michigan,
+Minnesota, Ohio, and Wisconsin</p>
+</dd>
+<dt>HHS Region 06 - Dallas: </dt><dd><p> Arkansas, Louisiana, New Mexico,
+Oklahoma, and Texas </p>
+</dd>
+<dt>HHS Region 07 - Kansas City: </dt><dd><p> Iowa, Kansas, Missouri, and
+Nebraska</p>
+</dd>
+<dt>HHS Region 08 - Denver: </dt><dd><p> Colorado, Montana, North Dakota,
+South Dakota, Utah, and Wyoming</p>
+</dd>
+<dt>HHS Region 09 - San Francisco: </dt><dd><p> Arizona, California, Hawaii,
+Nevada, American Samoa, Commonwealth of the Northern Mariana
+Islands, Federated States of Micronesia, Guam, Marshall Islands,
+and Republic of Palau</p>
+</dd>
+<dt>HHS Region 10 - Seattle: </dt><dd><p> Alaska, Idaho, Oregon, and
+Washington</p>
+</dd> </dl>
+ 
+
+<h3>References</h3>
+
+<p>Rural Health Reform Policy Research Center. _Exploring Rural and Urban
+Mortality Differences_, August 2015 Bethesda, MD. 
+<a href="https://ruralhealth.und.edu/projects/health-reform-policy-research-center/rural-urban-mortality">https://ruralhealth.und.edu/projects/health-reform-policy-research-center/rural-urban-mortality</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+dotplot(reorder(Cause, Rate) ~ Rate | Status,
+        data = USMortality, groups = Sex,
+        par.settings = simpleTheme(pch = 16), auto.key = list(columns = 2),
+        scales = list(x = list(log = TRUE, equispaced.log = FALSE)))
+dotplot(reorder(Cause, Rate):Sex ~ Rate | Status,
+        data = USRegionalMortality, groups = Sex,
+        scales = list(x = list(log = TRUE, equispaced.log = FALSE)))
+</pre>
+
+
+</body></html>

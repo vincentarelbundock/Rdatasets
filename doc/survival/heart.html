@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Stanford Heart Transplant data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for heart"><tr><td>heart</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Stanford Heart Transplant data</h2>
+
+<h3>Description</h3>
+
+<p>Survival of patients on the waiting list for the Stanford
+heart transplant program.</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+heart
+jasa
+jasa1
+</pre>
+
+
+<h3>Format</h3>
+
+<p>jasa: original data
+</p>
+
+<table summary="Rd table">
+<tr>
+ <td style="text-align: left;">
+   birth.dt:</td><td style="text-align: left;"> birth date </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+   accept.dt:</td><td style="text-align: left;"> acceptance into program </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+   tx.date:</td><td style="text-align: left;"> transplant date </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+   fu.date:</td><td style="text-align: left;"> end of followup </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+   fustat:</td><td style="text-align: left;"> dead or alive </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+   surgery:</td><td style="text-align: left;"> prior bypass surgery</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+   age: </td><td style="text-align: left;"> age (in years)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+   futime:</td><td style="text-align: left;"> followup time</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+   wait.time:</td><td style="text-align: left;"> time before transplant</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+   transplant:</td><td style="text-align: left;"> transplant indicator</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+   mismatch:</td><td style="text-align: left;"> mismatch score</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+   hla.a2:</td><td style="text-align: left;"> particular type of mismatch</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+   mscore:</td><td style="text-align: left;"> another mismatch score</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+   reject:</td><td style="text-align: left;"> rejection occurred</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+ </td>
+</tr>
+
+</table>
+
+<p>jasa1, heart: processed data
+</p>
+
+<table summary="Rd table">
+<tr>
+ <td style="text-align: left;">
+    start, stop, event: </td><td style="text-align: left;"> Entry and exit time and status for this interval of time</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    age:</td><td style="text-align: left;"> age-48 years</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    year:</td><td style="text-align: left;"> year of acceptance (in years after 1 Nov 1967)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    surgery:</td><td style="text-align: left;"> prior bypass surgery 1=yes</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    transplant: </td><td style="text-align: left;"> received transplant 1=yes</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    id:</td><td style="text-align: left;"> patient id</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>J Crowley and M Hu (1977),
+Covariance analysis of heart transplant survival data.
+<em>Journal of the American Statistical Association</em>,
+<b>72</b>, 27&ndash;36.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>stanford2</code></p>
+
+
+</body></html>

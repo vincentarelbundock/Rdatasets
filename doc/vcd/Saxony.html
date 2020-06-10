@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Families in Saxony</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Saxony"><tr><td>Saxony</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Families in Saxony</h2>
+
+<h3>Description</h3>
+
+<p>Data from Geissler, cited in Sokal &amp; Rohlf (1969) and Lindsey (1995)
+on gender distributions in families in Saxony in the 19th century.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data("Saxony")
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A 1-way table giving the number of male children in 6115 families of
+size 12.  The variable and its levels are
+</p>
+
+<table summary="Rd table">
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1 </td><td style="text-align: left;"> nMales </td><td style="text-align: left;"> 0, 1, ..., 12 </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>M. Friendly (2000),
+Visualizing Categorical Data, pages 40&ndash;42.
+</p>
+
+
+<h3>References</h3>
+
+<p>J. K. Lindsey (1995),
+<em>Analysis of Frequency and Count Data</em>.
+Oxford University Press, Oxford, UK.
+</p>
+<p>R. R. Sokal &amp; F. J. Rohlf (1969),
+<em>Biometry. The Principles and Practice of Statistics</em>.
+W. H. Freeman, San Francisco, CA.
+</p>
+<p>M. Friendly (2000),
+<em>Visualizing Categorical Data</em>.
+SAS Institute, Cary, NC.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("Saxony")
+gf &lt;- goodfit(Saxony, type = "binomial")
+summary(gf)
+plot(gf)
+</pre>
+
+
+</body></html>

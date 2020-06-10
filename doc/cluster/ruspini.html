@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Ruspini Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ruspini"><tr><td>ruspini</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Ruspini Data</h2>
+
+<h3>Description</h3>
+
+<p>The Ruspini data set, consisting of 75 points in four groups that is
+popular for illustrating clustering techniques.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(ruspini)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 75 observations on 2 variables giving the x and y
+coordinates of the points, respectively.
+</p>
+
+
+<h3>Source</h3>
+
+<p>E. H. Ruspini (1970)
+Numerical methods for fuzzy clustering.
+<em>Inform. Sci.</em> <b>2</b>, 319&ndash;350.
+</p>
+
+
+<h3>References</h3>
+
+<p>see those in <code>agnes</code>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(ruspini)
+
+## Plot similar to Figure 4 in Stryuf et al (1996)
+## Not run: plot(pam(ruspini, 4), ask = TRUE)
+
+
+## Plot similar to Figure 6 in Stryuf et al (1996)
+plot(fanny(ruspini, 5))
+</pre>
+
+
+</body></html>

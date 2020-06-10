@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Potency of two herbicides</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for S.alba"><tr><td>S.alba</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Potency of two herbicides</h2>
+
+<h3>Description</h3>
+
+<p>Data are from an experiment, comparing the potency of the two herbicides glyphosate and bentazone in
+white mustard <em>Sinapis alba</em>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(S.alba)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 68 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>Dose</code></dt><dd><p>a numeric vector containing the dose in g/ha.</p>
+</dd>
+<dt><code>Herbicide</code></dt><dd><p>a factor with levels <code>Bentazone</code> <code>Glyphosate</code> (the two herbicides applied).</p>
+</dd>
+<dt><code>DryMatter</code></dt><dd><p>a numeric vector containing the response (dry matter in g/pot).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The lower and upper limits for the two herbicides can be assumed identical, whereas slopes and ED50 values 
+are different (in the log-logistic model).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Christensen, M. G. and Teicher, H. B., and Streibig, J. C. (2003) Linking fluorescence 
+induction curve and biomass in herbicide screening, <em>Pest Management Science</em>,
+<b>59</b>,  1303&ndash;1310.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>See the examples sections for <code>drm</code> and <code>EDcomp</code>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## Fitting a log-logistic model with
+##  common lower and upper limits
+S.alba.LL.4.1 &lt;- drm(DryMatter~Dose, Herbicide, data=S.alba, fct = LL.4(),
+pmodels=data.frame(Herbicide,1,1,Herbicide)) 
+summary(S.alba.LL.4.1)
+
+## Applying the optimal transform-both-sides Box-Cox transformation
+## (using the initial model fit)  
+S.alba.LL.4.2 &lt;- boxcox(S.alba.LL.4.1, method = "anova") 
+summary(S.alba.LL.4.2)
+
+## Plotting fitted regression curves together with the data
+plot(S.alba.LL.4.2)
+
+</pre>
+
+
+</body></html>

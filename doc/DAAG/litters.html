@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Mouse Litters</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for litters"><tr><td>litters</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Mouse Litters</h2>
+
+<h3>Description</h3>
+
+<p>Data on the body and brain weights of 20 mice, together
+with the size of the litter.  Two mice were taken from each
+litter size.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>litters</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>lsize</dt><dd><p>litter size</p>
+</dd>
+<dt>bodywt</dt><dd><p>body weight</p>
+</dd>
+<dt>brainwt</dt><dd><p>brain weight</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Wainright P, Pelkman C and Wahlsten D 1989. The quantitative
+relationship between nutritional effects on preweaning growth      
+and behavioral development in mice. Developmental Psychobiology   
+22: 183-193.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+print("Multiple Regression - Example 6.2")
+
+pairs(litters, labels=c("lsize\n\n(litter size)", "bodywt\n\n(Body Weight)",
+                        "brainwt\n\n(Brain Weight)"))
+  # pairs(litters) gives a scatterplot matrix with less adequate labeling
+
+mice1.lm &lt;- lm(brainwt ~ lsize, data = litters) # Regress on lsize
+mice2.lm &lt;- lm(brainwt ~ bodywt, data = litters) #Regress on bodywt
+mice12.lm &lt;- lm(brainwt ~ lsize + bodywt, data = litters) # Regress on lsize &amp; bodywt
+
+summary(mice1.lm)$coef # Similarly for other coefficients.
+# results are consistent with the biological concept of brain sparing
+
+pause()
+
+hat(model.matrix(mice12.lm))  # hat diagonal
+pause()
+
+plot(lm.influence(mice12.lm)$hat, residuals(mice12.lm))
+
+print("Diagnostics - Example 6.3")
+
+mice12.lm &lt;- lm(brainwt ~ bodywt+lsize, data=litters)
+oldpar &lt;-par(mfrow = c(1,2))
+bx &lt;- mice12.lm$coef[2]; bz &lt;- mice12.lm$coef[3]
+res &lt;- residuals(mice12.lm)
+plot(litters$bodywt, bx*litters$bodywt+res, xlab="Body weight",
+  ylab="Component + Residual")
+panel.smooth(litters$bodywt, bx*litters$bodywt+res) # Overlay
+plot(litters$lsize, bz*litters$lsize+res, xlab="Litter size", 
+  ylab="Component + Residual")
+panel.smooth(litters$lsize, bz*litters$lsize+res)
+par(oldpar)
+</pre>
+
+
+</body></html>

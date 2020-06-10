@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: US Births in 1978</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Births78"><tr><td>Births78</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Births in 1978</h2>
+
+<h3>Description</h3>
+
+<p>A day by day record of the number of births in the United States in 1978.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data(Births78)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 365 observations on the following 8 variables.
+</p>
+
+<ul>
+<li> <p><code>date</code>   Date
+</p>
+</li>
+<li> <p><code>births</code> Number of births on <code>date</code> (integer)
+</p>
+</li>
+<li> <p><code>wday</code>   Day of week (ordered factor)
+</p>
+</li>
+<li> <p><code>year</code>   Year (integer)
+</p>
+</li>
+<li> <p><code>month</code>  Month (integer)
+</p>
+</li>
+<li> <p><code>day_of_year</code>  Day of year (integer)
+</p>
+</li>
+<li> <p><code>day_of_month</code> Day of month (integer)
+</p>
+</li>
+<li> <p><code>day_of_week</code>  Day of week (integer)
+</p>
+</li></ul>
+
+
+
+<h3>See Also</h3>
+
+<p><code>Births2015</code>, <code>Births</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(Births78)
+if (require(ggformula)) {
+  gf_point(births ~ date, data = Births78)
+  gf_point(births ~ date, data = Births78, color = ~ wday)
+}
+</pre>
+
+
+</body></html>

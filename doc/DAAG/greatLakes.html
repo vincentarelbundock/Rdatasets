@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Yearly averages of Great Lake heights: 1918 - 2009</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for greatLakes"><tr><td>greatLakes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Yearly averages of Great Lake heights: 1918 - 2009
+</h2>
+
+<h3>Description</h3>
+
+<p>Heights, stored as a multivariate time series, are for the lakes Erie,
+Michigan/Huron, Ontario and St Clair
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(greatLakes)</pre>
+
+
+<h3>Format</h3>
+
+<p>The format is:
+mts [1:92, 1:4] 174 174 174 174 174 ...
+- attr(*, &quot;dimnames&quot;)=List of 2
+..$ : NULL
+..$ : chr [1:4] &quot;Erie&quot; &quot;michHuron&quot; &quot;Ontario&quot; &quot;StClair&quot;
+- attr(*, &quot;tsp&quot;)= num [1:3] 1918 2009 1
+- attr(*, &quot;class&quot;)= chr [1:2] &quot;mts&quot; &quot;ts&quot;
+</p>
+
+
+<h3>Details</h3>
+
+<p>For more details, go to the website that is the source of the data.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.lre.usace.army.mil/Missions/GreatLakesInformation/GreatLakesWaterLevels/HistoricalData.aspx">http://www.lre.usace.army.mil/Missions/GreatLakesInformation/GreatLakesWaterLevels/HistoricalData.aspx</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(greatLakes)
+plot(greatLakes)
+## maybe str(greatLakes)
+</pre>
+
+
+</body></html>

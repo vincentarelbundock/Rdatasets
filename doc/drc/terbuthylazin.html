@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: The effect of terbuthylazin on growth rate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for terbuthylazin"><tr><td>terbuthylazin</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The effect of terbuthylazin on growth rate</h2>
+
+<h3>Description</h3>
+
+<p>Test on the effect of terbuthylazin on  <em>Lemna minor</em>, performed on an aseptic
+culture according to the OECD-guidelines.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(terbuthylazin)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 30 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt>dose</dt><dd><p>a numeric vector of dose values.</p>
+</dd>
+<dt>rgr</dt><dd><p>a numeric vector of relative growth rates.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Dose is </p>
+<p style="text-align: center;"><i>&mu; l^{-1}</i></p>
+<p> and rgr is the relative growth rate of <em>Lemna</em>.  
+</p>
+
+
+<h3>Source</h3>
+
+<p>Cedergreen N. (2004). Unpublished bioassay data.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+## displaying first 6 rows of the data set
+head(terbuthylazin)
+
+## Fitting log-logistic model
+terbuthylazin.m1 &lt;- drm(rgr~dose, data = terbuthylazin, fct = LL.4())
+summary(terbuthylazin.m1)
+
+## Fitting log-logistic model
+##  with Box-Cox transformation
+terbuthylazin.m2 &lt;- boxcox(terbuthylazin.m1, method = "anova")
+summary(terbuthylazin.m2)
+
+</pre>
+
+
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Beaver Body Temperature Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for beaver"><tr><td>beaver</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Beaver Body Temperature Data
+</h2>
+
+<h3>Description</h3>
+
+<p>The <code>beaver</code> data frame has 100 rows and 4 columns.  It is a multivariate
+time series of class <code>"ts"</code> and also inherits from class <code>"data.frame"</code>.
+</p>
+<p>This data set is part of a long study into body temperature regulation in
+beavers.  Four adult female beavers were live-trapped and had a 
+temperature-sensitive radio transmitter surgically implanted.  Readings were
+taken every 10 minutes.  The location of the beaver was also recorded and
+her activity level was dichotomized by whether she was in the retreat or 
+outside of it since high-intensity activities only occur outside of the 
+retreat.
+</p>
+<p>The data in this data frame are those readings for one of the beavers on a day
+in autumn.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+beaver
+</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt><code>day</code></dt><dd>
+<p>The day number.  The data includes only data from day 307 and early 308.
+</p>
+</dd>
+<dt><code>time</code></dt><dd>
+<p>The time of day formatted as hour-minute.
+</p>
+</dd>
+<dt><code>temp</code></dt><dd>
+<p>The body temperature in degrees Celsius.
+</p>
+</dd>
+<dt><code>activ</code></dt><dd>
+<p>The dichotomized activity indicator. <code>1</code> indicates that the beaver is outside
+of the retreat and therefore engaged in high-intensity activity.
+</p>
+</dd></dl>
+
+
+<h3>Source</h3>
+
+<p>The data were obtained from
+</p>
+<p>Reynolds, P.S. (1994) Time-series analyses of beaver body temperatures.
+In <em>Case Studies in Biometry</em>. N. Lange, L. Ryan, L. Billard, 
+D. Brillinger, L. Conquest and J. Greenhouse (editors), 211&ndash;228. John Wiley.
+</p>
+
+
+<h3>References</h3>
+
+<p>Davison, A.C. and Hinkley, D.V. (1997) 
+<em>Bootstrap Methods and Their Application</em>. Cambridge University Press.
+</p>
+
+
+</body></html>

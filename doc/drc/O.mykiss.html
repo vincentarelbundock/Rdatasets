@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Test data from a 21 day fish test</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for O.mykiss"><tr><td>O.mykiss</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Test data from a 21 day fish test</h2>
+
+<h3>Description</h3>
+
+<p>Test data from a 21 day fish test following the guidelines OECD GL204, 
+using the test organism Rainbow trout <em>Oncorhynchus mykiss</em>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(O.mykiss)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 70 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>conc</code></dt><dd><p>a numeric vector of concentrations (mg/l)</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>a numeric vector of wet weights (g)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Weights are measured after 28 days.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Organisation for Economic Co-operation and Development (OECD) (2006)
+<em>CURRENT APPROACHES IN THE STATISTICAL ANALYSIS OF ECOTOXICITY DATA: A GUIDANCE TO APPLICATION - ANNEXES</em>,
+Paris (p. 65).
+</p>
+
+
+<h3>References</h3>
+
+<p>Organisation for Economic Co-operation and Development (OECD) (2006)
+<em>CURRENT APPROACHES IN THE STATISTICAL ANALYSIS OF ECOTOXICITY DATA: A GUIDANCE TO APPLICATION - ANNEXES</em>,
+Paris (pp. 80&ndash;85).
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+head(O.mykiss)
+
+## Fitting exponential model
+O.mykiss.m1 &lt;- drm(weight ~ conc, data = O.mykiss, fct = EXD.2(), na.action = na.omit)
+modelFit(O.mykiss.m1)
+summary(O.mykiss.m1)
+
+## Fitting same model with transform-both-sides approach
+O.mykiss.m2 &lt;- boxcox(O.mykiss.m1 , method = "anova")
+summary(O.mykiss.m2)
+# no need for a transformation
+
+## Plotting the fit
+plot(O.mykiss.m1, type = "all", xlim = c(0, 500), ylim = c(0,4),
+xlab = "Concentration (mg/l)", ylab = "Weight (g)", broken = TRUE)
+
+</pre>
+
+
+</body></html>

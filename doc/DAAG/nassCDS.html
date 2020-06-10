@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Airbag and other influences on accident fatalities</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for nassCDS"><tr><td>nassCDS</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Airbag and other influences on accident fatalities</h2>
+
+<h3>Description</h3>
+
+<p>US data, for 1997-2002, from police-reported car crashes in
+which there is a harmful event (people or property), and from which at
+least one vehicle was towed. Data are restricted to front-seat
+occupants, include only a subset of the variables recorded, and
+are restricted in other ways also.</p>
+
+
+<h3>Usage</h3>
+
+<pre>nassCDS</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 26217 observations on the following 15 variables.
+</p>
+
+<dl>
+<dt><code>dvcat</code></dt><dd><p>ordered factor with levels (estimated impact
+speeds) <code>1-9km/h</code>, <code>10-24</code>, <code>25-39</code>, <code>40-54</code>,
+<code>55+</code>
+</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>Observation weights, albeit of uncertain
+accuracy, designed to account for varying sampling probabilities.</p>
+</dd>
+<dt><code>dead</code></dt><dd><p>factor with levels <code>alive</code> <code>dead</code></p>
+</dd>
+<dt><code>airbag</code></dt><dd><p>a factor with levels <code>none</code> <code>airbag</code></p>
+</dd>
+<dt><code>seatbelt</code></dt><dd><p>a factor with levels <code>none</code> <code>belted</code></p>
+</dd>
+<dt><code>frontal</code></dt><dd><p>a numeric vector; 0 = non-frontal, 1=frontal impact</p>
+</dd>
+<dt><code>sex</code></dt><dd><p>a factor with levels <code>f</code> <code>m</code></p>
+</dd>
+<dt><code>ageOFocc</code></dt><dd><p>age of occupant in years</p>
+</dd>
+<dt><code>yearacc</code></dt><dd><p>year of accident</p>
+</dd>
+<dt><code>yearVeh</code></dt><dd><p>Year of model of vehicle; a numeric vector</p>
+</dd>
+<dt><code>abcat</code></dt><dd><p>Did one or more (driver or passenger) airbag(s)
+deploy? This factor has levels <code>deploy</code> <code>nodeploy</code>
+<code>unavail</code></p>
+</dd>
+<dt><code>occRole</code></dt><dd><p>a factor with levels <code>driver</code> <code>pass</code></p>
+</dd>
+<dt><code>deploy</code></dt><dd><p>a numeric vector: 0 if an airbag was
+unavailable or did not deploy; 1 if one or more bags deployed.</p>
+</dd>
+<dt><code>injSeverity</code></dt><dd><p>a numeric vector; 0:none, 1:possible injury,
+2:no incapacity, 3:incapacity, 4:killed; 5:unknown, 6:prior death</p>
+</dd>
+<dt><code>caseid</code></dt><dd><p>character, created by pasting together the
+populations sampling unit, the case number, and the vehicle
+number.  Within each year, use this to uniquely identify the
+vehicle.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data collection used a multi-stage probabilistic sampling scheme.
+The observation weight, called national inflation factor
+(<code>national</code>) in the data from NASS, is the inverse
+of an estimate of the selection probability.  These data
+include a subset of the variables from the NASS dataset.  Variables
+that are coded here as factors are coded as numeric values in that
+dataset.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.stat.colostate.edu/~meyer/airbags.htm">http://www.stat.colostate.edu/~meyer/airbags.htm</a>\
+<a href="ftp://ftp.nhtsa.dot.gov/nass/">ftp://ftp.nhtsa.dot.gov/nass/</a>
+</p>
+<p>See also\
+<a href="http://www.maths.anu.edu.au/~johnm/datasets/airbags">http://www.maths.anu.edu.au/~johnm/datasets/airbags</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Meyer, M.C. and Finney, T. (2005): <em>Who wants airbags?</em>. Chance
+18:3-16.
+</p>
+<p>Farmer, C.H. 2006. <em>Another look at Meyer and Finney's &lsquo;Who wants
+airbags?&rsquo;</em>. Chance 19:15-22.
+</p>
+<p>Meyer, M.C. 2006.  <em>Commentary on &quot;Another look at Meyer and
+Finney's &lsquo;Who wants airbags?&rsquo;</em>. Chance 19:23-24.
+</p>
+<p>For analyses based on the alternative FARS (Fatal Accident Recording
+System) data, and associated commentary, see:
+</p>
+<p>Cummings, P; McKnight, B, 2010. <em>Accounting for vehicle, crash, and
+occupant characteristics in traffic crash studies.</em> Injury Prevention 16:
+363-366. [The relatively definitive analyses in this paper use a matched
+cohort design,
+</p>
+<p>Olson, CM; Cummings, P, Rivara, FP, 2006. <em>Association of first- and
+second-generation air bags with front occupant death in car crashes: a
+matched cohort study.</em> Am J Epidemiol 164:161-169. [The relatively
+definitive analyses in this paper use a matched cohort design, using
+data taken from the FARS (Fatal Accident Recording System) database.]
+</p>
+<p>Braver, ER; Shardell, M; Teoh, ER, 2010. <em>How have changes in air
+bag designs affected frontal crash mortality?</em> Ann Epidemiol 20:499-510.
+</p>
+<p>The web page <a href="http://www-fars.nhtsa.dot.gov/Main/index.aspx">http://www-fars.nhtsa.dot.gov/Main/index.aspx</a> has a
+menu-based interface into the FARS (Fatality Analysis Recording
+System) data. The FARS database aims to include every accident in
+which there was at least one fatality.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(nassCDS)
+xtabs(weight ~ dead + airbag, data=nassCDS)
+xtabs(weight ~ dead + airbag + seatbelt + dvcat, data=nassCDS)
+tab &lt;- xtabs(weight ~ dead + abcat, data=nassCDS,
+             subset=dvcat=="25-39"&amp;frontal==0)[, c(3,1,2)]
+round(tab[2, ]/apply(tab,2,sum)*100,2)
+</pre>
+
+
+</body></html>

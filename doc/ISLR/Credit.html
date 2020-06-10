@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Credit Card Balance Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Credit"><tr><td>Credit</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Credit Card Balance Data
+
+</h2>
+
+<h3>Description</h3>
+
+<p>A simulated data set containing information on ten thousand
+customers. The aim here is to predict which customers will default on
+their credit card debt.
+
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Credit</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 10000 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>ID</code></dt><dd><p>Identification</p>
+</dd>
+<dt><code>Income</code></dt><dd><p>Income in $10,000's</p>
+</dd>    
+<dt><code>Limit</code></dt><dd><p>Credit limit</p>
+</dd>
+<dt><code>Rating</code></dt><dd><p>Credit rating</p>
+</dd>
+<dt><code>Cards</code></dt><dd><p>Number of credit cards</p>
+</dd>
+<dt><code>Age</code></dt><dd><p>Age in years</p>
+</dd>  
+<dt><code>Education</code></dt><dd><p>Number of years of education</p>
+</dd> 
+<dt><code>Gender</code></dt><dd><p>A factor with levels <code>Male</code> and <code>Female</code></p>
+</dd>
+<dt><code>Student</code></dt><dd><p>A factor with levels <code>No</code> and <code>Yes</code>
+indicating whether the individual was a student</p>
+</dd>
+<dt><code>Married</code></dt><dd><p>A factor with levels <code>No</code> and <code>Yes</code>
+indicating whether the individual was married</p>
+</dd>
+<dt><code>Ethnicity</code></dt><dd><p>A factor with levels <code>African American</code>, <code>Asian</code>, and <code>Caucasian</code>
+indicating the individual's ethnicity</p>
+</dd>
+<dt><code>Balance</code></dt><dd><p>Average credit card balance in $.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Simulated data, with thanks to Albert Kim for pointing out that
+this was omitted, and supplying the data and man documentation page on
+Oct 19, 2017
+
+</p>
+
+
+<h3>References</h3>
+
+<p>James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013)
+<em>An Introduction to Statistical Learning with applications in R</em>,
+<a href="www.StatLearning.com">www.StatLearning.com</a>,
+Springer-Verlag, New York
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(Credit)
+lm(Balance ~ Student + Limit, data=Credit)
+</pre>
+
+
+</body></html>

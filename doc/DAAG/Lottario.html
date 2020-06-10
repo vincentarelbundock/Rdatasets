@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Ontario Lottery Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Lottario"><tr><td>Lottario</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Ontario Lottery Data</h2>
+
+<h3>Description</h3>
+
+<p>The data frame <code>Lottario</code>
+is a summary of 122 weekly draws of an Ontario lottery, beginning in
+November, 1978.  Each draw consists of 7 numbered balls, drawn without
+replacement from an urn consisting of balls numbered from 1 through 39.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>Lottario</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Number</dt><dd><p>the integers from 1 to 39, representing the
+numbered balls</p>
+</dd>
+<dt>Frequency</dt><dd><p>the number of occurrences of each numbered ball</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+ 
+<p>The Ontario Lottery Corporation
+</p>
+
+
+<h3>References</h3>
+
+<p>Bellhouse, D.R. (1982). Fair is fair:  new rules for Canadian lotteries.
+Canadian Public Policy - Analyse de Politiques 8: 311-320.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre> 
+order(Lottario$Frequency)[33:39]  # the 7 most frequently chosen numbers
+</pre>
+
+
+</body></html>

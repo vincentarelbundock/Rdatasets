@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Barley Seeding Rate Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for seedrates"><tr><td>seedrates</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Barley Seeding Rate Data</h2>
+
+<h3>Description</h3>
+
+<p>The <code>seedrates</code> data frame has 5 rows and 2 columns on 
+the effect of seeding rate of barley on yield.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>seedrates</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>rate</dt><dd><p>the seeding rate</p>
+</dd>
+<dt>grain</dt><dd><p>the number of grain per head of barley</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>McLeod, C.C. 1982.
+Effect of rates of seeding on barley grown for grain. New Zealand 
+Journal of Agriculture 10: 133-136.</p>
+
+
+<h3>References</h3>
+
+<p>Maindonald J H 1992. Statistical design, analysis and presentation
+issues. New Zealand Journal of Agricultural Research 35: 121-141.</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+plot(grain~rate,data=seedrates,xlim=c(50,180),ylim=c(15.5,22),axes=FALSE)
+new.df&lt;-data.frame(rate=(2:8)*25)
+seedrates.lm1&lt;-lm(grain~rate,data=seedrates)
+seedrates.lm2&lt;-lm(grain~rate+I(rate^2),data=seedrates)
+hat1&lt;-predict(seedrates.lm1,newdata=new.df,interval="confidence")
+hat2&lt;-predict(seedrates.lm2,newdata=new.df,interval="confidence")
+axis(1,at=new.df$rate); axis(2); box()
+z1&lt;-spline(new.df$rate, hat1[,"fit"]); z2&lt;-spline(new.df$rate,   
+hat2[,"fit"])
+rate&lt;-new.df$rate; lines(z1$x,z1$y)
+lines(spline(rate,hat1[,"lwr"]),lty=1,col=3)
+lines(spline(rate,hat1[,"upr"]),lty=1,col=3)
+lines(z2$x,z2$y,lty=4)
+lines(spline(rate,hat2[,"lwr"]),lty=4,col=3)
+lines(spline(rate,hat2[,"upr"]),lty=4,col=3)</pre>
+
+
+</body></html>
