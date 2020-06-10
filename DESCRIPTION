@@ -1,5 +1,5 @@
-Package: RDatasets
-Title:  A collection of datasets originally distributed in various R packages
+Package: Rdatasets
+Title: A collection of datasets originally distributed in various R packages
 Version: 1.0.0
 Authors@R: 
     person(given = "Vincent",
@@ -7,8 +7,8 @@ Authors@R:
            role = c("aut", "cre"),
            email = "vincent.arel-bundock@umontreal.ca")
 Description: A collection of datasets originally distributed in various R packages.
-URL: https://vincentarelbundock.github.io/RDatasets
-BugReports: https://github.com/vincentarelbundock/RDatasets/issues
+URL: https://vincentarelbundock.github.io/Rdatasets
+BugReports: https://github.com/vincentarelbundock/Rdatasets/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -61,3 +61,7 @@ Imports:
     texmex,
     tidyr,
     vcd
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

@@ -1,0 +1,28 @@
+---
+title: "Available datasets"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r, messages=FALSE, warnings=FALSE, echo=FALSE}
+library(gt)
+library(kableExtra)
+suppressMessages(library(tidyverse))
+dat <- read.csv('https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv') %>%
+       mutate(CSV = paste0('<a href="', CSV, '">CSV</a>'),
+              CSV = map(CSV, gt::html),
+              Doc = paste0('<a href="', Doc, '">Doc</a>'),
+              Doc = map(Doc, gt::html)) %>%
+       select(Package, Item, Title, CSV, Doc, Rows, Cols, order(names(.)))
+gt(dat)
+```
