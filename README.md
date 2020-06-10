@@ -32,5 +32,9 @@ Here are some packages that contain data but were not include in Rdatasets for o
 
 # License
 
-The `R` documentation which I copied to the `Rdatasets` `html` folder is licensed under GPL. You will find a copy of the GPL in the `license` folder. I made a good faith effort to determine the license under which the actual data (i.e. rows/columns of numbers) were distributed, but I was unable to find a definitive answer. My understanding is that these datasets are free to re-distribute. However, if you own the rights to data that are included here and you object to their inclusion in `Rdatasets`, send me an email at vincent.arel-bundock@umontreal.ca. I will promptly remove the data in question and will make sure that all traces are erased from the git revision history. 
- 
+The code in this repository is licensed under GPL-3.
+
+I believe that the R documentation which I copied to the Rdatasets html folder is licensed under GPL. You will find a copy of the GPL in the Rdatasets github repository. 
+
+I made a good faith effort to determine the license under which the actual data (i.e. rows/columns of numbers) were distributed, but I was unable to find a definitive answer. My understanding is that these datasets are free to re-distribute. However, if you own the rights to data that are included here and you object to their inclusion in Rdatasets, send me an email at vincent.arel-bundock@umontreal.ca. I will promptly remove the data in question and will make sure that all traces are erased from the git revision history.
+

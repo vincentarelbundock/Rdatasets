@@ -9,7 +9,7 @@ Authors@R:
 Description: A collection of datasets originally distributed in various R packages.
 URL: https://vincentarelbundock.github.io/Rdatasets
 BugReports: https://github.com/vincentarelbundock/Rdatasets/issues
-License: MIT + file LICENSE
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
