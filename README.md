@@ -38,3 +38,40 @@ I believe that the R documentation which I copied to the Rdatasets html folder i
 
 I made a good faith effort to determine the license under which the actual data (i.e. rows/columns of numbers) were distributed, but I was unable to find a definitive answer. My understanding is that these datasets are free to re-distribute. However, if you own the rights to data that are included here and you object to their inclusion in Rdatasets, send me an email at vincent.arel-bundock@umontreal.ca. I will promptly remove the data in question and will make sure that all traces are erased from the git revision history.
 
+# Github instructions
+
+These are mostly intended as a reminder for Vincent.
+
+First add new package to DESCRIPTION Imports and scrape the data:
+
+```bash
+Rscript scrape.R
+cd doc
+../documentation.sh
+```
+
+Second, commit to master.
+
+```bash
+git add .
+git commit
+```
+
+Third, checkout gh-pages and import the new data there.
+
+```bash
+git checkout gh-pages
+git checkout master -- csv
+git checkout master -- doc
+git checkout master -- datasets.csv
+git checkout master -- datasets.html
+git add .
+git commit
+```
+
+Finally, move back to master and build the gh-pages website:
+
+```bash
+git checkout master
+Rscript -e "pkgdown::deploy_to_branch()
+```

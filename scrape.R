@@ -87,7 +87,7 @@ index$n_factor <- sapply(data, function(x) sum(sapply(x, is.factor)))
 index$n_logical <- sapply(data, function(x) sum(sapply(x, is.logical)))
 index$n_numeric <- sapply(data, function(x) sum(sapply(x, is.numeric)))
 
-index$CSV = paste('https://vincentarelbundock.githu.io/Rdatasets/csv/',
+index$CSV = paste('https://vincentarelbundock.github.io/Rdatasets/csv/',
                   index$Package, '/', index$Item, '.csv', sep='')
 index$Doc = paste('https://vincentarelbundock.github.io/Rdatasets/doc/',
                   index$Package, '/', index$Item, '.html', sep='')
