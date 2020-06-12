@@ -73,5 +73,5 @@ Finally, move back to master and build the gh-pages website:
 
 ```bash
 git checkout master
-Rscript -e "pkgdown::deploy_to_branch()
+Rscript -e "pkgdown::deploy_to_branch()"
 ```

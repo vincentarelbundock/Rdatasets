@@ -91,7 +91,10 @@ index$CSV = paste('https://vincentarelbundock.github.io/Rdatasets/csv/',
                   index$Package, '/', index$Item, '.csv', sep='')
 index$Doc = paste('https://vincentarelbundock.github.io/Rdatasets/doc/',
                   index$Package, '/', index$Item, '.html', sep='')
-index = index[order(index$Package, index$Item),]
+
+# case insensitive sorting
+index = index[order(tolower(index$Package), 
+                    tolower(index$Item)),]
 
 # Index CSV
 write.csv(index, file = 'datasets.csv', row.names = FALSE)
