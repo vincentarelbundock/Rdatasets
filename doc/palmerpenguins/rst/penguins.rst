@@ -9,8 +9,8 @@ Description
 ~~~~~~~~~~~
 
 Includes measurements for penguin species, island in Palmer Archipelago,
-size (flipper length, body mass, culmen dimensions), and sex. This is a
-subset of penguins_raw.
+size (flipper length, body mass, bill dimensions), and sex. This is a
+subset of ``penguins_raw``.
 
 Usage
 ~~~~~
@@ -31,11 +31,11 @@ island
    a factor denoting island in Palmer Archipelago, Antarctica (Biscoe,
    Dream or Torgersen)
 
-culmen_length_mm
-   a number denoting culmen length (millimeters)
+bill_length_mm
+   a number denoting bill length (millimeters)
 
-culmen_depth_mm
-   a number denoting culmen depth (millimeters)
+bill_depth_mm
+   a number denoting bill depth (millimeters)
 
 flipper_length_mm
    an integer denoting flipper length (millimeters)
@@ -44,7 +44,7 @@ body_mass_g
    an integer denoting body mass (grams)
 
 sex
-   a factor denoting penguin sex
+   a factor denoting penguin sex (female, male)
 
 Source
 ~~~~~~
