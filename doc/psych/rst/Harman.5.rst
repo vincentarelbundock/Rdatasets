@@ -46,6 +46,34 @@ structure and are a nice example of the various estimates of reliability
 included in the ``omega`` function. Should not be confused with the
 ``Holzinger`` or ``Holzinger.9`` data sets in ``bifactor``.
 
+See also the Holzinger-Swineford data set of 301 subjects with 26
+variables in ``holzinger.swineford``. These data were provided by Keith
+Widaman. "The Holzinger and Swineford (1939) data have been used as a
+model data set by many investigators. For example, Harman (1976) used
+the "24 Psychological Variables" example prominently in his
+authoritative text on multiple factor analysis, and the data presented
+under this rubric consisted of 24 of the variables from the Grant-White
+school (N = 145). Meredith (1964a, 1964b) used several variables from
+the Holzinger and Swineford study in his work on factorial invariance
+under selection. Joreskog (1971) based his work on multiple-group
+confirmatory factor analysis using the Holzinger and Swineford data,
+subsetting the data into four groups.
+
+Rosseel, who developed the "lavaan" package for R , included 9 of the
+manifest variables from Holzinger and Swineford (1939) as a "resident"
+data set when one downloads the lavaan package. Several background
+variables are included in this "resident" data set in addition to 9 of
+the psychological tests (which are named x1 - x9 in the data set). When
+analyzing these data, I found the distributions of the variables (means,
+SDs) did not match the sample statistics from the original article. For
+example, in the "resident" data set in lavaan, scores on all manifest
+variables ranged between 0 and 10, sample means varied between 3 and 6,
+and sample SDs varied between 1.0 and 1.5. In the original data set,
+scores ranges were rather different across tests, with some variables
+having scores that ranged between 0 and 20, but other manifest variables
+having scores ranging from 50 to over 300 - with obvious attendant
+differences in sample means and SDs."
+
 Harman.Burt. Eight “emotional" variables are taken from Harman (1967, p
 164) who in turn adapted them from Burt (1939). They are said be from
 172 normal children aged nine to twelve. As pointed out by Harman, this
@@ -66,6 +94,8 @@ points of the hips.
 
 The row names match the original Harman paper, the column names have
 been abbreviated.
+
+See also the ``usaf`` data set for other physical measurements.
 
 The ``fa`` solution for principal axes (fm="pa") matches the reported
 minres solution, as does the fm="minres".

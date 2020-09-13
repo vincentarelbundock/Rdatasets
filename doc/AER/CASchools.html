@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: California Test Score Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for CASchools"><tr><td>CASchools</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>California Test Score Data</h2>
+
+<h3>Description</h3>
+
+<p>The dataset contains data on test performance, school 
+characteristics and student demographic backgrounds for school districts in California.</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("CASchools")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 420 observations on 14 variables.
+</p>
+
+<dl>
+<dt>district</dt><dd><p>character. District code.</p>
+</dd>
+<dt>school</dt><dd><p>character. School name.</p>
+</dd>
+<dt>county</dt><dd><p>factor indicating county.</p>
+</dd>
+<dt>grades</dt><dd><p>factor indicating grade span of district.</p>
+</dd>
+<dt>students</dt><dd><p>Total enrollment.</p>
+</dd>
+<dt>teachers</dt><dd><p>Number of teachers.</p>
+</dd>
+<dt>calworks</dt><dd><p>Percent qualifying for CalWorks (income assistance).</p>
+</dd>
+<dt>lunch</dt><dd><p>Percent qualifying for reduced-price lunch.</p>
+</dd>
+<dt>computer</dt><dd><p>Number of computers.</p>
+</dd>   
+<dt>expenditure</dt><dd><p>Expenditure per student.</p>
+</dd>
+<dt>income</dt><dd><p>District average income (in USD 1,000).</p>
+</dd>
+<dt>english</dt><dd><p>Percent of English learners.</p>
+</dd>
+<dt>read</dt><dd><p>Average reading score.</p>
+</dd>
+<dt>math</dt><dd><p>Average math score.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data used here are from all 420 K-6 and K-8 districts in California 
+with data available for 1998 and 1999.  Test scores are on the Stanford 
+9 standardized test administered to 5th grade students.  
+School characteristics (averaged across the district) include enrollment, 
+number of teachers (measured as &ldquo;full-time equivalents&rdquo;, number of 
+computers per classroom, and expenditures per student. Demographic 
+variables for the students are averaged across the district.  
+The demographic variables include the percentage of students in the 
+public assistance program CalWorks (formerly AFDC), the percentage 
+of students that qualify for a reduced price lunch, and the 
+percentage of students that are English learners (that is, students 
+for whom English is a second language). 
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>Stock, J. H. and Watson, M. W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code>, <code>MASchools</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## data and transformations
+data("CASchools")
+CASchools$stratio &lt;- with(CASchools, students/teachers)
+CASchools$score &lt;- with(CASchools, (math + read)/2)
+
+## Stock and Watson (2007)
+## p. 152
+fm1 &lt;- lm(score ~ stratio, data = CASchools)
+coeftest(fm1, vcov = sandwich)
+
+## p. 159
+fm2 &lt;- lm(score ~ I(stratio &lt; 20), data = CASchools)
+## p. 199
+fm3 &lt;- lm(score ~ stratio + english, data = CASchools)
+## p. 224
+fm4 &lt;- lm(score ~ stratio + expenditure + english, data = CASchools)
+
+## Table 7.1, p. 242 (numbers refer to columns)
+fmc3 &lt;- lm(score ~ stratio + english + lunch, data = CASchools)
+fmc4 &lt;- lm(score ~ stratio + english + calworks, data = CASchools)
+fmc5 &lt;- lm(score ~ stratio + english + lunch + calworks, data = CASchools)
+
+## More examples can be found in:
+## help("StockWatson2007")
+</pre>
+
+
+</body></html>

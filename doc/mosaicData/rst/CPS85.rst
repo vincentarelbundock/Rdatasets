@@ -60,7 +60,7 @@ had entirely numerical codes.
 Source
 ~~~~~~
 
-Data are from http://lib.stat.cmu.edu/DASL.
+Data are from https://dasl.datadescription.com
 
 References
 ~~~~~~~~~~

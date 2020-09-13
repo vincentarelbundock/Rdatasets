@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Massachusetts Test Score Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for MASchools"><tr><td>MASchools</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Massachusetts Test Score Data</h2>
+
+<h3>Description</h3>
+
+<p>The dataset contains data on test performance, school 
+characteristics and student demographic backgrounds for school districts 
+in Massachusetts.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("MASchools")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 220 observations on 16 variables.
+</p>
+
+<dl>
+<dt>district</dt><dd><p>character. District code.</p>
+</dd>
+<dt>municipality</dt><dd><p>character. Municipality name.</p>
+</dd>
+<dt>expreg</dt><dd><p>Expenditures per pupil, regular.</p>
+</dd>
+<dt>expspecial</dt><dd><p>Expenditures per pupil, special needs.</p>
+</dd>
+<dt>expbil</dt><dd><p>Expenditures per pupil, bilingual.</p>
+</dd>
+<dt>expocc</dt><dd><p>Expenditures per pupil, occupational.</p>
+</dd>
+<dt>exptot</dt><dd><p>Expenditures per pupil, total.</p>
+</dd>   
+<dt>scratio</dt><dd><p>Students per computer.</p>
+</dd>
+<dt>special</dt><dd><p>Special education students (per cent).</p>
+</dd>
+<dt>lunch</dt><dd><p>Percent qualifying for reduced-price lunch.</p>
+</dd>
+<dt>stratio</dt><dd><p>Student-teacher ratio.</p>
+</dd>
+<dt>income</dt><dd><p>Per capita income.</p>
+</dd>
+<dt>score4</dt><dd><p>4th grade score (math + English + science).</p>
+</dd>
+<dt>score8</dt><dd><p>8th grade score (math + English + science).</p>
+</dd>  
+<dt>salary</dt><dd><p>Average teacher salary.</p>
+</dd>
+<dt>english</dt><dd><p>Percent of English learners.</p>
+</dd>  
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The Massachusetts data are district-wide averages for 
+public elementary school districts in 1998. The test score is taken 
+from the Massachusetts Comprehensive Assessment System (MCAS) test, 
+administered to all fourth graders in Massachusetts public schools 
+in the spring of 1998. The test is sponsored by the Massachusetts 
+Department of Education and is mandatory for all public schools.  
+The data analyzed here are the overall total score, which is the sum 
+of the scores on the English, Math, and Science portions of the 
+test. Data on the student-teacher ratio, the percent of students 
+receiving a subsidized lunch and on the percent of students still 
+learning english are averages for each elementary school district 
+for the 1997&ndash;1998 school year and were obtained from the 
+Massachusetts department of education. Data on average district 
+income are from the 1990 US Census.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>Stock, J. H. and Watson, M. W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code>, <code>CASchools</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Massachusetts
+data("MASchools")
+
+## compare with California
+data("CASchools")
+CASchools$stratio &lt;- with(CASchools, students/teachers)
+CASchools$score4 &lt;- with(CASchools, (math + read)/2)
+
+## Stock and Watson, parts of Table 9.1, p. 330
+vars &lt;- c("score4", "stratio", "english", "lunch", "income")
+cbind(
+  CA_mean = sapply(CASchools[, vars], mean),
+  CA_sd   = sapply(CASchools[, vars], sd),
+  MA_mean = sapply(MASchools[, vars], mean),
+  MA_sd   = sapply(MASchools[, vars], sd))
+
+## Stock and Watson, Table 9.2, p. 332, col. (1)
+fm1 &lt;- lm(score4 ~ stratio, data = MASchools)
+coeftest(fm1, vcov = vcovHC(fm1, type = "HC1"))
+
+## More examples, notably the entire Table 9.2, can be found in:
+## help("StockWatson2007")
+</pre>
+
+
+</body></html>

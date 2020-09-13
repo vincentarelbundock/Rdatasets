@@ -9,7 +9,7 @@ Description
 ~~~~~~~~~~~
 
 Five-minute call volume handled on weekdays between 7:00am and 9:05pm,
-from 3 March 2003 to 23 May 2003.
+beginning 3 March 2003 for 164 days.
 
 Format
 ~~~~~~

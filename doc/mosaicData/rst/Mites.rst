@@ -37,7 +37,7 @@ by spider mites or no infestation. After two weeks the mites were
 dutifully removed by a conscientious research assistant, and both groups
 were inoculated with Verticillium, a fungus that causes Wilt disease.
 More information can be found at
-https://www.causeweb.org/webinar/activity/2010-01/.
+https://www.causeweb.org/cause/webinar/activity/2010-01/.
 
 Source
 ~~~~~~

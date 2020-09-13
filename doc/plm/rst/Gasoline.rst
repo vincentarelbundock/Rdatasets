@@ -47,7 +47,7 @@ Source
 
 Online complements to Baltagi (2001):
 
-http://www.wiley.com/legacy/wileychi/baltagi/
+https://www.wiley.com/legacy/wileychi/baltagi/
 
 Online complements to Baltagi (2013):
 
@@ -65,4 +65,4 @@ John Wiley and Sons ltd.
 Baltagi BH, Griffin JM (1983). “Gasoline demand in the OECD: An
 application of pooling and testing procedures.” *European Economic
 Review*, **22**\ (2), 117 - 137. ISSN 0014-2921,
-http://www.sciencedirect.com/science/article/pii/0014292183900776.
+https://www.sciencedirect.com/science/article/pii/0014292183900776.

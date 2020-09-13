@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Daily NYSE Composite Index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for NYSESW"><tr><td>NYSESW</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Daily NYSE Composite Index</h2>
+
+<h3>Description</h3>
+
+<p>A daily time series from 1990 to 2005 of the New York Stock Exchange composite index.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("NYSESW")</pre>
+
+
+<h3>Format</h3>
+
+<p>A daily univariate time series from 1990-01-02 to 2005-11-11 (of class
+<code>"zoo"</code> with <code>"Date"</code> index).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>Stock, J.H. and Watson, M.W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## returns
+data("NYSESW")
+ret &lt;- 100 * diff(log(NYSESW))
+plot(ret)
+
+## Stock and Watson (2007), p. 667, GARCH(1,1) model
+library("tseries")
+fm &lt;- garch(coredata(ret))
+summary(fm)
+</pre>
+
+
+</body></html>

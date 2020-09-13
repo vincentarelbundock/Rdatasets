@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: US Consumption Data (1970-1979)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for USConsump1979"><tr><td>USConsump1979</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Consumption Data (1970&ndash;1979)</h2>
+
+<h3>Description</h3>
+
+<p>Time series data on US income and consumption expenditure, 1970&ndash;1979.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("USConsump1979")</pre>
+
+
+<h3>Format</h3>
+
+<p>An annual multiple time series from 1970 to 1979 with 2 variables.
+</p>
+
+<dl>
+<dt>income</dt><dd><p>Disposable income.</p>
+</dd> 
+<dt>expenditure</dt><dd><p>Consumption expenditure.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Online complements to Greene (2003). Table F1.1.
+</p>
+<p><a href="http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm">http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Greene, W.H. (2003). <em>Econometric Analysis</em>, 5th edition. Upper Saddle River, NJ: Prentice Hall.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Greene2003</code>, <code>USConsump1950</code>, <code>USConsump1993</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("USConsump1979")
+plot(USConsump1979)
+
+## Example 1.1 in Greene (2003)
+plot(expenditure ~ income, data = as.data.frame(USConsump1979), pch = 19)
+fm &lt;- lm(expenditure ~ income, data = as.data.frame(USConsump1979))
+summary(fm)
+abline(fm)
+</pre>
+
+
+</body></html>

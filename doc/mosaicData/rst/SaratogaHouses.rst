@@ -60,4 +60,4 @@ Source
 
 Data collected by Candice Corvetti and used in the "Stat 101" case study
 "How much is a Fireplace Worth". See also
-http://www.saratogacountyny.gov/departments/real-property-tax-service-agency/.
+https://www.saratogacountyny.gov/departments/real-property-tax-service-agency/

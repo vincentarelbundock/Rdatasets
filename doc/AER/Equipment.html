@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Transportation Equipment Manufacturing Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Equipment"><tr><td>Equipment</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Transportation Equipment Manufacturing Data</h2>
+
+<h3>Description</h3>
+
+<p>Statewide data on transportation equipment manufacturing for 25 US states.</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("Equipment")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 25 observations on 4 variables.
+</p>
+
+<dl>
+<dt>valueadded</dt><dd><p>Aggregate output, in millions of 1957 dollars.</p>
+</dd>
+<dt>capital</dt><dd><p>Capital input, in millions of 1957 dollars.</p>
+</dd>
+<dt>labor</dt><dd><p>Aggregate labor input, in millions of man hours.</p>
+</dd>
+<dt>firms</dt><dd><p>Number of firms.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Journal of Applied Econometrics Data Archive. 
+</p>
+<p><a href="http://qed.econ.queensu.ca/jae/1998-v13.2/zellner-ryu/">http://qed.econ.queensu.ca/jae/1998-v13.2/zellner-ryu/</a>
+</p>
+<p>Online complements to Greene (2003), Table F9.2.
+</p>
+<p><a href="http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm">http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Greene, W.H. (2003). <em>Econometric Analysis</em>, 5th edition. Upper Saddle River, NJ: Prentice Hall.
+</p>
+<p>Zellner, A. and Revankar, N. (1969). Generalized Production Functions. 
+<em>Review of Economic Studies</em>, <b>36</b>, 241&ndash;250.
+</p>
+<p>Zellner, A. and Ryu, H. (1998). Alternative Functional Forms for Production, 
+Cost and Returns to Scale Functions. 
+<em>Journal of Applied Econometrics</em>, <b>13</b>, 101&ndash;127.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Greene2003</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Greene (2003), Example 17.5
+data("Equipment")
+
+## Cobb-Douglas
+fm_cd &lt;- lm(log(valueadded/firms) ~ log(capital/firms) + log(labor/firms), data = Equipment)
+
+## generalized Cobb-Douglas with Zellner-Revankar trafo
+GCobbDouglas &lt;- function(theta)
+ lm(I(log(valueadded/firms) + theta * valueadded/firms) ~ log(capital/firms) + log(labor/firms), 
+     data = Equipment)
+
+## yields classical Cobb-Douglas for theta = 0
+fm_cd0 &lt;- GCobbDouglas(0)
+
+## ML estimation of generalized model
+## choose starting values from classical model
+par0 &lt;- as.vector(c(coef(fm_cd0), 0, mean(residuals(fm_cd0)^2)))
+
+## set up likelihood function
+nlogL &lt;- function(par) {
+  beta &lt;- par[1:3]
+  theta &lt;- par[4]
+  sigma2 &lt;- par[5]
+
+  Y &lt;- with(Equipment, valueadded/firms)
+  K &lt;- with(Equipment, capital/firms)
+  L &lt;- with(Equipment, labor/firms)
+
+  rhs &lt;- beta[1] + beta[2] * log(K) + beta[3] * log(L)
+  lhs &lt;- log(Y) + theta * Y
+
+  rval &lt;- sum(log(1 + theta * Y) - log(Y) +
+    dnorm(lhs, mean = rhs, sd = sqrt(sigma2), log = TRUE))
+  return(-rval)
+}
+
+## optimization
+opt &lt;- optim(par0, nlogL, hessian = TRUE)
+
+## Table 17.2
+opt$par
+sqrt(diag(solve(opt$hessian)))[1:4]
+-opt$value
+
+## re-fit ML model
+fm_ml &lt;- GCobbDouglas(opt$par[4])
+deviance(fm_ml)
+sqrt(diag(vcov(fm_ml)))
+
+## fit NLS model
+rss &lt;- function(theta) deviance(GCobbDouglas(theta))
+optim(0, rss)
+opt2 &lt;- optimize(rss, c(-1, 1))
+fm_nls &lt;- GCobbDouglas(opt2$minimum)
+-nlogL(c(coef(fm_nls), opt2$minimum, mean(residuals(fm_nls)^2)))
+</pre>
+
+
+</body></html>

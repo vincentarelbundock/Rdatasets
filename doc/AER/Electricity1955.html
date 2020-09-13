@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Cost Function of Electricity Producers (1955, Nerlove Data)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for Electricity1955"><tr><td>Electricity1955</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cost Function of Electricity Producers (1955, Nerlove Data)</h2>
+
+<h3>Description</h3>
+
+<p>Cost function data for 145 (+14) US electricity producers in 1955.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("Electricity1955")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 159 observations on 8 variables.
+</p>
+
+<dl>
+<dt>cost</dt><dd><p>total cost.</p>
+</dd>
+<dt>output</dt><dd><p>total output.</p>
+</dd>
+<dt>labor</dt><dd><p>wage rate.</p>
+</dd>
+<dt>laborshare</dt><dd><p>cost share for labor.</p>
+</dd>
+<dt>capital</dt><dd><p>capital price index.</p>
+</dd>
+<dt>capitalshare</dt><dd><p>cost share for capital.</p>
+</dd>
+<dt>fuel</dt><dd><p>fuel price.</p>
+</dd>
+<dt>fuelshare</dt><dd><p>cost share for fuel.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data contains several extra observations that are aggregates
+of commonly owned firms. Only the first 145 observations should be used for analysis.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Greene (2003). Table F14.2.
+</p>
+<p><a href="http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm">http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Greene, W.H. (2003). <em>Econometric Analysis</em>, 5th edition. Upper Saddle River, NJ: Prentice Hall.
+</p>
+<p>Nerlove, M. (1963) &ldquo;Returns to Scale in Electricity Supply.&rdquo;
+In C. Christ (ed.), <em>Measurement in Economics: Studies in Mathematical Economics
+and Econometrics in Memory of Yehuda Grunfeld</em>. Stanford University Press, 1963.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Greene2003</code>, <code>Electricity1970</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("Electricity1955")
+Electricity &lt;- Electricity1955[1:145,]
+
+## Greene (2003)
+## Example 7.3
+## Cobb-Douglas cost function
+fm_all &lt;- lm(log(cost/fuel) ~ log(output) + log(labor/fuel) + log(capital/fuel),
+  data = Electricity)
+summary(fm_all)
+
+## hypothesis of constant returns to scale
+linearHypothesis(fm_all, "log(output) = 1")
+
+## Table 7.4
+## log quadratic cost function
+fm_all2 &lt;- lm(log(cost/fuel) ~ log(output) + I(log(output)^2) + log(labor/fuel) + log(capital/fuel),
+  data = Electricity)
+summary(fm_all2)
+
+## More examples can be found in:
+## help("Greene2003")
+</pre>
+
+
+</body></html>

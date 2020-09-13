@@ -20,8 +20,7 @@ Time series object of class ``ts``.
 Source
 ~~~~~~
 
-Federal Reserve Bank of St Louis. https://data.is/AnVtzB.
-https://data.is/wQPcjU.
+Federal Reserve Bank of St Louis.
 
 Examples
 ~~~~~~~~

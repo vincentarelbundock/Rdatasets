@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Program Effectiveness Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ProgramEffectiveness"><tr><td>ProgramEffectiveness</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Program Effectiveness Data</h2>
+
+<h3>Description</h3>
+
+<p>Data used to study the effectiveness of a program.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("ProgramEffectiveness")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 32 cross-section observations on 4 variables.
+</p>
+
+<dl>
+<dt>grade</dt><dd><p>Factor with levels <code>"increase"</code> and <code>"decrease"</code>.</p>
+</dd>
+<dt>average</dt><dd><p>Grade-point average.</p>
+</dd>
+<dt>testscore</dt><dd><p>Test score on economics test.</p>
+</dd>
+<dt>participation</dt><dd><p>Factor. Did the individual participate in the program?</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are taken form Spencer and Mazzeo (1980) who examined whether a new method 
+of teaching economics significantly influenced performance in later economics courses.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Greene (2003).
+</p>
+<p><a href="http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm">http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Greene, W.H. (2003). <em>Econometric Analysis</em>, 5th edition. Upper Saddle River, NJ: Prentice Hall.
+</p>
+<p>Spector, L. and Mazzeo, M. (1980). Probit Analysis and Economic Education. 
+<em>Journal of Economic Education</em>, <b>11</b>, 37&ndash;44.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Greene2003</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("ProgramEffectiveness")
+
+## Greene (2003), Table 21.1, col. "Probit"
+fm_probit &lt;- glm(grade ~ average + testscore + participation,
+  data = ProgramEffectiveness, family = binomial(link = "probit"))
+summary(fm_probit)
+</pre>
+
+
+</body></html>

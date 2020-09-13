@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Endowment Effect for Sports Cards</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for SportsCards"><tr><td>SportsCards</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Endowment Effect for Sports Cards</h2>
+
+<h3>Description</h3>
+
+<p>Trading sports cards: Does ownership increase the value of goods to consumers?
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("SportsCards")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 148 observations on 9 variables.
+</p>
+
+<dl>
+<dt>good</dt><dd><p>factor. Was the individual given good A or B (see below)?</p>
+</dd>
+<dt>dealer</dt><dd><p>factor. Was the individual a dealer?</p>
+</dd>
+<dt>permonth</dt><dd><p>number of trades per month reported by the individual.</p>
+</dd>
+<dt>years</dt><dd><p>number of years that the individual has been trading.</p>
+</dd>
+<dt>income</dt><dd><p>factor indicating income group (in 1000 USD).</p>
+</dd>
+<dt>gender</dt><dd><p>factor indicating gender.</p>
+</dd>
+<dt>education</dt><dd><p>factor indicating highest level of education (8th grade or less,
+high school, 2-year college, other post-high school, 4-year college or graduate school).</p>
+</dd>
+<dt>age</dt><dd><p>age in years.</p>
+</dd>
+<dt>trade</dt><dd><p>factor. Did the individual trade the good he was given for the other good?</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p><code>SportsCards</code> contains data from 148 randomly selected traders who attended
+a trading card show in Orlando, Florida, in 1998. Traders were randomly given one
+of two sports collectables, say good A or good B, that had approximately equal market
+value. Those receiving good A were then given the option of trading good A for good B
+with the experimenter; those receiving good B were given the option of trading good B
+for good A with the experimenter. Good A was a ticket stub from the game that Cal Ripken Jr.
+set the record for consecutive games played, and Good B was a souvenir
+from the game that Nolan Ryan won his 300th game.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>List, J.A. (2003). Does Market Experience Eliminate Market Anomalies?
+<em>Quarterly Journal of Economcis</em>, <b>118</b>, 41&ndash;71.
+</p>
+<p>Stock, J.H. and Watson, M.W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("SportsCards")
+summary(SportsCards)
+
+plot(trade ~ permonth, data = SportsCards,
+  ylevels = 2:1, breaks = c(0, 5, 10, 20, 30, 70))
+plot(trade ~ years, data = SportsCards,
+  ylevels = 2:1, breaks = c(0, 5, 10, 20, 60))
+</pre>
+
+
+</body></html>

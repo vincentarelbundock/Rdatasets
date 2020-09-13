@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Consumer Price Index in Argentina</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ArgentinaCPI"><tr><td>ArgentinaCPI</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Consumer Price Index in Argentina</h2>
+
+<h3>Description</h3>
+
+<p>Time series of consumer price index (CPI) in Argentina (index with 1969(4) = 1).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("ArgentinaCPI")</pre>
+
+
+<h3>Format</h3>
+
+<p>A quarterly univariate time series from 1970(1) to 1989(4).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Franses (1998).
+</p>
+
+
+<h3>References</h3>
+
+<p>De Ruyter van Steveninck, M.A. (1996). <em>The Impact of Capital Imports; Argentina 1970&ndash;1989</em>.
+Amsterdam: Thesis Publishers.
+</p>
+<p>Franses, P.H. (1998). <em>Time Series Models for Business and Economic Forecasting</em>.
+Cambridge, UK: Cambridge University Press.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Franses1998</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("ArgentinaCPI")
+plot(ArgentinaCPI)
+plot(log(ArgentinaCPI))
+
+library("dynlm")
+## estimation sample 1970.3-1988.4 means
+acpi &lt;- window(ArgentinaCPI, start = c(1970,1), end = c(1988,4)) 
+
+## eq. (3.90), p.54
+acpi_ols &lt;- dynlm(d(log(acpi)) ~ L(d(log(acpi))))
+summary(acpi_ols)
+
+## alternatively
+ar(diff(log(acpi)), order.max = 1, method = "ols") 
+</pre>
+
+
+</body></html>

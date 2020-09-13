@@ -20,7 +20,7 @@ Quarterly time series of class ``ts``.
 Source
 ~~~~~~
 
-Eurostat. https://data.is/IdKyZr
+Eurostat.
 
 Examples
 ~~~~~~~~

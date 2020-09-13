@@ -53,7 +53,7 @@ Source
 
 Journal of Business Economics and Statistics data archive:
 
-http://amstat.tandfonline.com/loi/ubes20/.
+https://amstat.tandfonline.com/loi/ubes20/.
 
 References
 ~~~~~~~~~~

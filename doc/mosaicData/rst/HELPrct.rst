@@ -37,6 +37,9 @@ Data frame with 453 observations on the following variables.
 -  ``d1`` lifetime number of hospitalizations for medical problems
    (measured at baseline)
 
+-  ``hospitalizations`` lifetime number of hospitalizations for medical
+   problems (measured at baseline)
+
 -  ``daysanysub`` time (in days) to first use of any substance
    post-detox
 

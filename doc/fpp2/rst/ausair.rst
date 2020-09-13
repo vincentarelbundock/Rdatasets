@@ -20,7 +20,7 @@ Annual time series of class ``ts``.
 Source
 ~~~~~~
 
-World Bank. https://data.is/x5KiEO
+World Bank.
 
 Examples
 ~~~~~~~~

@@ -18,7 +18,7 @@ Annual time series of class ``ts``.
 Source
 ~~~~~~
 
-United Nations. https://data.is/GFxwQi
+United Nations.
 
 Examples
 ~~~~~~~~

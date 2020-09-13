@@ -18,7 +18,7 @@ Time series object of class ``ts``.
 Source
 ~~~~~~
 
-US Energy Information Administration. https://data.is/zgRWCO.
+US Energy Information Administration.
 
 Examples
 ~~~~~~~~
