@@ -18,7 +18,7 @@ Annual time series of class ``ts``.
 Source
 ~~~~~~
 
-Gapminder Foundation. https://data.is/XKa24F
+Gapminder Foundation.
 
 Examples
 ~~~~~~~~

@@ -32,10 +32,10 @@ data(Gestation)
 <li><p><code>id</code> identification number
 </p>
 </li>
-<li><p><code>plurality</code> 5 = single fetus
+<li><p><code>plurality</code> all &quot;single fetus&quot; in this data set
 </p>
 </li>
-<li><p><code>outcome</code> 1 = live birth that survived at least 28 days
+<li><p><code>outcome</code> all &quot;live birth&quot; (survived at least 28 days) in this data set
 </p>
 </li>
 <li><p><code>date</code> birth date where 1096=January 1, 1961
@@ -51,18 +51,13 @@ data(Gestation)
 and still births)
 </p>
 </li>
-<li><p><code>race</code> mother's race: 0-5=white 6=mex 7=black 8=asian 9=mixed
+<li><p><code>race</code> mother's race: &quot;asian&quot;, &quot;black&quot;, &quot;mex&quot;,  &quot;mixed&quot;, or &quot;white&quot;
 </p>
 </li>
 <li><p><code>age</code> mother's age in years at termination of pregnancy
 </p>
 </li>
-<li><p><code>ed</code> mother's education:  0= less than 8th grade,
-1 = 8th -12th grade - did not graduate,
-2= HS graduate&ndash;no other schooling, 3= HS+trade,
-4=HS+some college,
-5=College graduate,
-6=Trade school, 7=HS unclear
+<li><p><code>ed</code> mother's education
 </p>
 </li>
 <li><p><code>ht</code> mother's height in inches to the last completed inch
@@ -71,13 +66,13 @@ and still births)
 <li><p><code>wt.1</code> mother's prepregnancy weight (in pounds)
 </p>
 </li>
-<li><p><code>drace</code> father's race (a factor with levels equivalent to mother's race)
+<li><p><code>drace</code> father's race
 </p>
 </li>
 <li><p><code>dage</code> father's age (in years)
 </p>
 </li>
-<li><p><code>ded</code> father's education (same coding as mother's education)
+<li><p><code>ded</code> father's education
 </p>
 </li>
 <li><p><code>dht</code> father's height in inches to the last completed inch
@@ -86,25 +81,25 @@ and still births)
 <li><p><code>dwt</code> father's weight (in pounds)
 </p>
 </li>
-<li><p><code>marital</code> marital status: 1=married, 2=legally separated, 3=divorced,
-4=widowed, 5=never married
+<li><p><code>marital</code> marital status,
 </p>
 </li>
-<li><p><code>inc</code> family yearly income in $2500 increments: 0=under 2500,
-1=2500-4999, ..., 8=12,500-14,999, 9=15000+
+<li><p><code>inc</code> family yearly income in $2500 increments
 </p>
 </li>
-<li><p><code>smoke</code> does mother smoke? 0=never, 1=smokes now,
-2=until current pregnancy, 3=once did, not now
+<li><p><code>smoke</code> does mother smoke? (never, smokes now,
+until current pregnancy, once did, not now)
 </p>
 </li>
-<li><p><code>time</code> time since quitting smoking: 0=never smoked, 1=still smokes,
-2=during current preg, 3=within 1 year, 4=1 to 2 years ago,
-5= 2 to 3 years ago, 6= 3 to 4 years ago, 7=5 to 9 years ago,
-8=10+ years ago, 9=quit and don't know
+<li><p><code>time</code> time since quitting smoking
+(never smoked, still smokes, during current preg, within 1 year,
+1 to 2 years ago, 2 to 3 years ago, 3 to 4 years ago,
+5 to 9 years ago, 10+ years ago, quit and don't know
 </p>
 </li>
-<li><p><code>number</code> number of cigarettes smoked per day for past and current smokers  0=never, 1=1-4, 2=5-9, 3=10-14, 4=15-19, 5=20-29, 6=30-39, 7=40-60, 8=60+, 9=smoke but don't know
+<li><p><code>number</code> number of cigarettes smoked per day for past and
+current smokers  (never, 1-4, 5-9, 10-14, 15-19, 20-29, 30-39, 40-60, 60+,
+smoke but don't know)
 </p>
 </li></ul>
 
@@ -121,7 +116,7 @@ and still births)
 <p>The book by Nolan and Speed
 describes the data in more detail
 and provides an Internet site for accessing them:
-<a href="http://www.stat.berkeley.edu/users/statlabs">http://www.stat.berkeley.edu/users/statlabs</a>
+<a href="https://www.stat.berkeley.edu/users/statlabs/">https://www.stat.berkeley.edu/users/statlabs/</a>
 </p>
 
 

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Are Emily and Greg More Employable Than Lakisha and Jamal?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ResumeNames"><tr><td>ResumeNames</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Are Emily and Greg More Employable Than Lakisha and Jamal?</h2>
+
+<h3>Description</h3>
+
+<p>Cross-section data about resume, call-back and employer information for 4,870 fictitious
+resumes.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("ResumeNames")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 4,870 observations on 27 variables.
+</p>
+
+<dl>
+<dt>name</dt><dd><p>factor indicating applicant's first name.</p>
+</dd>
+<dt>gender</dt><dd><p>factor indicating gender.</p>
+</dd>
+<dt>ethnicity</dt><dd><p>factor indicating ethnicity (i.e., Caucasian-sounding
+vs. African-American sounding first name).</p>
+</dd>
+<dt>quality</dt><dd><p>factor indicating quality of resume.</p>
+</dd>
+<dt>call</dt><dd><p>factor. Was the applicant called back?</p>
+</dd>
+<dt>city</dt><dd><p>factor indicating city: Boston or Chicago.</p>
+</dd>
+<dt>jobs</dt><dd><p>number of jobs listed on resume.</p>
+</dd>
+<dt>experience</dt><dd><p>number of years of work experience on the resume.</p>
+</dd>
+<dt>honors</dt><dd><p>factor. Did the resume mention some honors?</p>
+</dd>
+<dt>volunteer</dt><dd><p>factor. Did the resume mention some volunteering experience?</p>
+</dd>
+<dt>military</dt><dd><p>factor. Does the applicant have military experience?</p>
+</dd>
+<dt>holes</dt><dd><p>factor. Does the resume have some employment holes?</p>
+</dd>
+<dt>school</dt><dd><p>factor. Does the resume mention some work experience while at school?</p>
+</dd>
+<dt>email</dt><dd><p>factor. Was the e-mail address on the applicant's resume?</p>
+</dd>
+<dt>computer</dt><dd><p>factor. Does the resume mention some computer skills?</p>
+</dd>
+<dt>special</dt><dd><p>factor. Does the resume mention some special skills?</p>
+</dd>
+<dt>college</dt><dd><p>factor. Does the applicant have a college degree or more?</p>
+</dd>
+<dt>minimum</dt><dd><p>factor indicating minimum experience requirement of the employer.</p>
+</dd>
+<dt>equal</dt><dd><p>factor. Is the employer EOE (equal opportunity employment)?</p>
+</dd>
+<dt>wanted</dt><dd><p>factor indicating type of position wanted by employer.</p>
+</dd>
+<dt>requirements</dt><dd><p>factor. Does the ad mention some requirement for the job?</p>
+</dd>
+<dt>reqexp</dt><dd><p>factor. Does the ad mention some experience requirement?</p>
+</dd>
+<dt>reqcomm</dt><dd><p>factor. Does the ad mention some communication skills requirement?</p>
+</dd>
+<dt>reqeduc</dt><dd><p>factor. Does the ad mention some educational requirement?</p>
+</dd>
+<dt>reqcomp</dt><dd><p>factor. Does the ad mention some computer skills requirement?</p>
+</dd>
+<dt>reqorg</dt><dd><p>factor. Does the ad mention some organizational skills requirement?</p>
+</dd>
+<dt>industry</dt><dd><p>factor indicating type of employer industry.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Cross-section data about resume, call-back and employer information for 4,870 fictitious
+resumes sent in response to employment advertisements in Chicago and Boston in 2001, 
+in a randomized controlled experiment conducted by Bertrand and Mullainathan (2004).
+The resumes contained information concerning the ethnicity of the applicant.
+Because ethnicity is not typically included on a resume, resumes were differentiated on
+the basis of so-called &ldquo;Caucasian sounding names&rdquo; (such as Emily Walsh or Gregory Baker)
+and &ldquo;African American sounding names&rdquo; (such as Lakisha Washington or Jamal Jones).
+A large collection of fictitious resumes were created and the pre-supposed
+ethnicity (based on the sound of the name) was randomly assigned to each resume.
+These resumes were sent to prospective employers to see which resumes generated a phone call
+from the prospective employer.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>Bertrand, M. and Mullainathan, S. (2004). Are Emily and Greg More Employable Than Lakisha and
+Jamal? A Field Experiment on Labor Market Discrimination. 
+<em>American Economic Review</em>, <b>94</b>, 991&ndash;1013.
+</p>
+<p>Stock, J.H. and Watson, M.W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("ResumeNames")
+summary(ResumeNames)
+prop.table(xtabs(~ ethnicity + call, data = ResumeNames), 1)
+</pre>
+
+
+</body></html>

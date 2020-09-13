@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: US Macroeconomic Data (1950-2000, Greene)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for USMacroG"><tr><td>USMacroG</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Macroeconomic Data (1950&ndash;2000, Greene)</h2>
+
+<h3>Description</h3>
+
+<p>Time series data on 12 US macroeconomic variables for 1950&ndash;2000.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("USMacroG")</pre>
+
+
+<h3>Format</h3>
+
+<p>A quarterly multiple time series from 1950(1) to 2000(4) with 12 variables.
+</p>
+
+<dl>
+<dt>gdp</dt><dd><p>Real gross domestic product (in billion USD),</p>
+</dd>
+<dt>consumption</dt><dd><p>Real consumption expenditures,</p>
+</dd>
+<dt>invest</dt><dd><p>Real investment by private sector,</p>
+</dd>
+<dt>government</dt><dd><p>Real government expenditures,</p>
+</dd>
+<dt>dpi</dt><dd><p>Real disposable personal income,</p>
+</dd>
+<dt>cpi</dt><dd><p>Consumer price index,</p>
+</dd>
+<dt>m1</dt><dd><p>Nominal money stock,</p>
+</dd>
+<dt>tbill</dt><dd><p>Quarterly average of month end 90 day treasury bill rate,</p>
+</dd>
+<dt>unemp</dt><dd><p>Unemployment rate,</p>
+</dd>
+<dt>population</dt><dd><p>Population (in million), interpolation of year end figures
+using constant growth rate per quarter,</p>
+</dd>
+<dt>inflation</dt><dd><p>Inflation rate,</p>
+</dd>
+<dt>interest</dt><dd><p>Ex post real interest rate (essentially, <code>tbill - inflation</code>).</p>
+</dd> 
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Online complements to Greene (2003). Table F5.1.
+</p>
+<p><a href="http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm">http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Greene, W.H. (2003). <em>Econometric Analysis</em>, 5th edition. Upper Saddle River, NJ: Prentice Hall.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Greene2003</code>, <code>USMacroSW</code>, <code>USMacroSWQ</code>,
+<code>USMacroSWM</code>, <code>USMacroB</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## data and trend as used by Greene (2003)
+data("USMacroG")
+ltrend &lt;- 1:nrow(USMacroG) - 1
+
+## Example 6.1
+## Table 6.1
+library("dynlm")
+fm6.1 &lt;- dynlm(log(invest) ~ tbill + inflation + log(gdp) + ltrend, data = USMacroG)
+fm6.3 &lt;- dynlm(log(invest) ~ I(tbill - inflation) + log(gdp) + ltrend, data = USMacroG)
+summary(fm6.1)
+summary(fm6.3)
+deviance(fm6.1)
+deviance(fm6.3)
+vcov(fm6.1)[2,3] 
+
+## F test
+linearHypothesis(fm6.1, "tbill + inflation = 0")
+## alternatively
+anova(fm6.1, fm6.3)
+## t statistic
+sqrt(anova(fm6.1, fm6.3)[2,5])
+ 
+## Example 8.2
+## Ct = b0 + b1*Yt + b2*Y(t-1) + v
+fm1 &lt;- dynlm(consumption ~ dpi + L(dpi), data = USMacroG)
+## Ct = a0 + a1*Yt + a2*C(t-1) + u
+fm2 &lt;- dynlm(consumption ~ dpi + L(consumption), data = USMacroG)
+
+## Cox test in both directions:
+coxtest(fm1, fm2)
+## ...and do the same for jtest() and encomptest().
+## Notice that in this particular case two of them are coincident.
+jtest(fm1, fm2)
+encomptest(fm1, fm2)
+## encomptest could also be performed `by hand' via
+fmE &lt;- dynlm(consumption ~ dpi + L(dpi) + L(consumption), data = USMacroG)
+waldtest(fm1, fmE, fm2)
+
+## More examples can be found in:
+## help("Greene2003")
+</pre>
+
+
+</body></html>

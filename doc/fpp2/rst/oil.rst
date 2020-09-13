@@ -18,7 +18,7 @@ Annual time series of class ``ts``.
 Source
 ~~~~~~
 
-BP. https://data.is/GEOHU3
+BP.
 
 Examples
 ~~~~~~~~

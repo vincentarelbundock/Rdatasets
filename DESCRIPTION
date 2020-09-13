@@ -17,6 +17,7 @@ RoxygenNote: 7.1.0
 Remotes:
     allisonhorst/palmerpenguins  
 Imports: 
+    AER,
     boot,
     car,
     carData,

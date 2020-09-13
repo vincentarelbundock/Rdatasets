@@ -34,7 +34,7 @@ A data frame with 411 observations on the following variables.
 Source
 ~~~~~~
 
-Gapminder (http://www.gapminder.org/data/)
+Gapminder (https://www.gapminder.org/data/)
 
 Examples
 ~~~~~~~~

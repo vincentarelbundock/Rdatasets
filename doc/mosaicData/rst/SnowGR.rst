@@ -68,15 +68,17 @@ Examples
 ::
 
    data(SnowGR)
-   if (require(mosaic)) {
+   if (require(ggformula)) {
      df_stats(~ Total, data = SnowGR)
      gf_histogram( ~ Total, data = SnowGR)
      gf_point(Total ~ SeasonStart, data = SnowGR) %>%
        gf_smooth()
    }
-   if (require(tidyr)) {
+   if (require(tidyr) && require(dplyr)) {
      Snow2 <- 
        SnowGR %>%
-       gather("Time", "Snowfall", Jul:Total) 
-     gf_boxplot(Snowfall ~ Time, data = Snow2)
+       pivot_longer(Jul:Total, names_to = "month", values_to = "snowfall") %>%
+       filter(month != "Total") %>%
+       mutate(month = factor(month, levels = unique(month)))
+     gf_violin(snowfall ~ month, data = Snow2, scale = "width")
    }

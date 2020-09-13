@@ -19,7 +19,7 @@ Monthly time series of class ``ts``.
 Source
 ~~~~~~
 
-Statistics Iceland. https://data.is/HFzL69
+Statistics Iceland.
 
 Examples
 ~~~~~~~~

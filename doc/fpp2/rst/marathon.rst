@@ -20,7 +20,7 @@ Source
 ~~~~~~
 
 Boston Athletic Association.
-http://www.baa.org/races/boston-marathon/boston-marathon-history/champions/mens-open-division.aspx
+https://www.baa.org/races/boston-marathon/results/champions
 
 Examples
 ~~~~~~~~

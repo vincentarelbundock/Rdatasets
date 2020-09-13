@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Impact of Beauty on Instructor's Teaching Ratings</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for TeachingRatings"><tr><td>TeachingRatings</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Impact of Beauty on Instructor's Teaching Ratings</h2>
+
+<h3>Description</h3>
+
+<p>Data on course evaluations, course characteristics, and professor
+characteristics for 463 courses for the academic years 2000&ndash;2002 at the
+University of Texas at Austin.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("TeachingRatings")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 463 observations on 13 variables.
+</p>
+
+<dl>
+<dt>minority</dt><dd><p>factor. Does the instructor belong to a minority (non-Caucasian)?</p>
+</dd>
+<dt>age</dt><dd><p>the professor's age.</p>
+</dd>
+<dt>gender</dt><dd><p>factor indicating instructor's gender.</p>
+</dd>
+<dt>credits</dt><dd><p>factor. Is the course a single-credit elective (e.g., yoga, aerobics, dance)?</p>
+</dd>
+<dt>beauty</dt><dd><p>rating of the instructor's physical appearance by a panel of six students,
+averaged across the six panelists, shifted to have a mean of zero.</p>
+</dd>
+<dt>eval</dt><dd><p>course overall teaching evaluation score, on
+a scale of 1 (very unsatisfactory) to 5 (excellent).</p>
+</dd>
+<dt>division</dt><dd><p>factor. Is the course an upper or lower division course? (Lower division
+courses are mainly large freshman and sophomore courses)?</p>
+</dd>
+<dt>native</dt><dd><p>factor. Is the instructor a native English speaker?</p>
+</dd>
+<dt>tenure</dt><dd><p>factor. Is the instructor on tenure track?</p>
+</dd>
+<dt>students</dt><dd><p>number of students that participated in the evaluation.</p>
+</dd>
+<dt>allstudents</dt><dd><p>number of students enrolled in the course.</p>
+</dd>
+<dt>prof</dt><dd><p>factor indicating instructor identifier.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A sample of student instructional ratings for a group of university teachers along with
+beauty rating (average from six independent judges)  and a number of other characteristics.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The data were provided by Prof. Hamermesh. The first 8 variables are also available in the
+online complements to Stock and Watson (2007) at
+</p>
+
+
+<h3>References</h3>
+
+<p>Hamermesh, D.S., and Parker, A. (2005).
+Beauty in the Classroom: Instructors' Pulchritude and Putative Pedagogical Productivity.
+<em>Economics of Education Review</em>, <b>24</b>, 369&ndash;376.
+</p>
+<p>Stock, J.H. and Watson, M.W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("TeachingRatings", package = "AER")
+
+## evaluation score vs. beauty
+plot(eval ~ beauty, data = TeachingRatings)
+fm &lt;- lm(eval ~ beauty, data = TeachingRatings)
+abline(fm)
+summary(fm)
+
+## prediction of Stock &amp; Watson's evaluation score
+sw &lt;- with(TeachingRatings, mean(beauty) + c(0, 1) * sd(beauty))
+names(sw) &lt;- c("Watson", "Stock")
+predict(fm, newdata = data.frame(beauty = sw))
+
+## Hamermesh and Parker, 2005, Table 3
+fmw &lt;- lm(eval ~ beauty + gender + minority + native + tenure + division + credits,
+  weights = students, data = TeachingRatings)
+coeftest(fmw, vcov = vcovCL, cluster = TeachingRatings$prof)
+</pre>
+
+
+</body></html>

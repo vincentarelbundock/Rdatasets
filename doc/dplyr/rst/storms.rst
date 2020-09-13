@@ -9,7 +9,7 @@ Description
 ~~~~~~~~~~~
 
 This data is a subset of the NOAA Atlantic hurricane database best track
-data, http://www.nhc.noaa.gov/data/#hurdat. The data includes the
+data, https://www.nhc.noaa.gov/data/#hurdat. The data includes the
 positions and attributes of 198 tropical storms, measured every six
 hours during the lifetime of a storm.
 

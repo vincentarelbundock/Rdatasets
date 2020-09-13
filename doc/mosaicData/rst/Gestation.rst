@@ -27,9 +27,10 @@ A data frame with 1236 observations on the following variables.
 
 -  ``id`` identification number
 
--  ``plurality`` 5 = single fetus
+-  ``plurality`` all "single fetus" in this data set
 
--  ``outcome`` 1 = live birth that survived at least 28 days
+-  ``outcome`` all "live birth" (survived at least 28 days) in this data
+   set
 
 -  ``date`` birth date where 1096=January 1, 1961
 
@@ -40,47 +41,41 @@ A data frame with 1236 observations on the following variables.
 -  ``parity`` total number of previous pregnancies (including fetal
    deaths and still births)
 
--  ``race`` mother's race: 0-5=white 6=mex 7=black 8=asian 9=mixed
+-  ``race`` mother's race: "asian", "black", "mex", "mixed", or "white"
 
 -  ``age`` mother's age in years at termination of pregnancy
 
--  ``ed`` mother's education: 0= less than 8th grade, 1 = 8th -12th
-   grade - did not graduate, 2= HS graduate–no other schooling, 3=
-   HS+trade, 4=HS+some college, 5=College graduate, 6=Trade school, 7=HS
-   unclear
+-  ``ed`` mother's education
 
 -  ``ht`` mother's height in inches to the last completed inch
 
 -  ``wt.1`` mother's prepregnancy weight (in pounds)
 
--  ``drace`` father's race (a factor with levels equivalent to mother's
-   race)
+-  ``drace`` father's race
 
 -  ``dage`` father's age (in years)
 
--  ``ded`` father's education (same coding as mother's education)
+-  ``ded`` father's education
 
 -  ``dht`` father's height in inches to the last completed inch
 
 -  ``dwt`` father's weight (in pounds)
 
--  ``marital`` marital status: 1=married, 2=legally separated,
-   3=divorced, 4=widowed, 5=never married
+-  ``marital`` marital status,
 
--  ``inc`` family yearly income in $2500 increments: 0=under 2500,
-   1=2500-4999, ..., 8=12,500-14,999, 9=15000+
+-  ``inc`` family yearly income in $2500 increments
 
--  ``smoke`` does mother smoke? 0=never, 1=smokes now, 2=until current
-   pregnancy, 3=once did, not now
+-  ``smoke`` does mother smoke? (never, smokes now, until current
+   pregnancy, once did, not now)
 
--  ``time`` time since quitting smoking: 0=never smoked, 1=still smokes,
-   2=during current preg, 3=within 1 year, 4=1 to 2 years ago, 5= 2 to 3
-   years ago, 6= 3 to 4 years ago, 7=5 to 9 years ago, 8=10+ years ago,
-   9=quit and don't know
+-  ``time`` time since quitting smoking (never smoked, still smokes,
+   during current preg, within 1 year, 1 to 2 years ago, 2 to 3 years
+   ago, 3 to 4 years ago, 5 to 9 years ago, 10+ years ago, quit and
+   don't know
 
 -  ``number`` number of cigarettes smoked per day for past and current
-   smokers 0=never, 1=1-4, 2=5-9, 3=10-14, 4=15-19, 5=20-29, 6=30-39,
-   7=40-60, 8=60+, 9=smoke but don't know
+   smokers (never, 1-4, 5-9, 10-14, 15-19, 20-29, 30-39, 40-60, 60+,
+   smoke but don't know)
 
 Details
 ~~~~~~~
@@ -94,7 +89,7 @@ Source
 
 The book by Nolan and Speed describes the data in more detail and
 provides an Internet site for accessing them:
-http://www.stat.berkeley.edu/users/statlabs
+https://www.stat.berkeley.edu/users/statlabs/
 
 References
 ~~~~~~~~~~

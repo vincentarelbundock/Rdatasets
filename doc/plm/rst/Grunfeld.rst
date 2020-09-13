@@ -59,9 +59,9 @@ Source
 
 Online complements to Baltagi (2001):
 
-http://www.wiley.com/legacy/wileychi/baltagi/
+https://www.wiley.com/legacy/wileychi/baltagi/
 
-http://www.wiley.com/legacy/wileychi/baltagi/supp/Grunfeld.fil
+https://www.wiley.com/legacy/wileychi/baltagi/supp/Grunfeld.fil
 
 Online complements to Baltagi (2013):
 
@@ -81,7 +81,7 @@ thesis, Department of Economics, University of Chicago.
 
 Kleiber C, Zeileis A (2010). “The Grunfeld Data at 50.” *German Economic
 Review*, **11**, 404-417.
-https://EconPapers.repec.org/RePEc:bla:germec:v:11:y:2010:i::p:404-417.
+https://doi.org/10.1111/j.1468-0475.2010.00513.x.
 
 website accompanying the paper with various variants of the Grunfeld
 data: https://eeecon.uibk.ac.at/~zeileis/grunfeld/.

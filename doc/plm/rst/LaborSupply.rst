@@ -47,7 +47,7 @@ Source
 Online complements to Ziliak (1997).
 
 Journal of Business Economics and Statistics web site:
-http://amstat.tandfonline.com/loi/ubes20/.
+https://amstat.tandfonline.com/loi/ubes20/.
 
 References
 ~~~~~~~~~~

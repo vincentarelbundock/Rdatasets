@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Cost Data for US Airlines</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for USAirlines"><tr><td>USAirlines</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cost Data for US Airlines</h2>
+
+<h3>Description</h3>
+
+<p>Cost data for six US airlines in 1970&ndash;1984.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("USAirlines")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 90 observations on 6 variables.
+</p>
+
+<dl>
+<dt>firm</dt><dd><p>factor indicating airline firm.</p>
+</dd>
+<dt>year</dt><dd><p>factor indicating year.</p>
+</dd>
+<dt>output</dt><dd><p>output revenue passenger miles index number.</p>
+</dd>
+<dt>cost</dt><dd><p>total cost (in USD 1000).</p>
+</dd>
+<dt>price</dt><dd><p>fuel price.</p>
+</dd>
+<dt>load</dt><dd><p>average capacity utilization of the fleet.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Online complements to Greene (2003). Table F7.1.
+</p>
+<p><a href="http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm">http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Greene, W.H. (2003). <em>Econometric Analysis</em>, 5th edition. Upper Saddle River, NJ: Prentice Hall.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Greene2003</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("USAirlines")
+
+## Example 7.2 in Greene (2003)
+fm_full &lt;- lm(log(cost) ~ log(output) + I(log(output)^2) + log(price) + load + year + firm,
+  data = USAirlines)
+fm_time &lt;- lm(log(cost) ~ log(output) + I(log(output)^2) + log(price) + load + year,
+  data = USAirlines)
+fm_firm &lt;- lm(log(cost) ~ log(output) + I(log(output)^2) + log(price) + load + firm,
+  data = USAirlines)
+fm_no &lt;- lm(log(cost) ~ log(output) + I(log(output)^2) + log(price) + load, data = USAirlines)
+
+## Table 7.2
+anova(fm_full, fm_time)
+anova(fm_full, fm_firm)
+anova(fm_full, fm_no)
+
+## alternatively, use plm()
+library("plm")
+usair &lt;- pdata.frame(USAirlines, c("firm", "year"))
+fm_full2 &lt;- plm(log(cost) ~ log(output) + I(log(output)^2) + log(price) + load,
+  data = usair, model = "within", effect = "twoways")
+fm_time2 &lt;- plm(log(cost) ~ log(output) + I(log(output)^2) + log(price) + load,
+  data = usair, model = "within", effect = "time")
+fm_firm2 &lt;- plm(log(cost) ~ log(output) + I(log(output)^2) + log(price) + load,
+  data = usair, model = "within", effect = "individual")
+fm_no2 &lt;- plm(log(cost) ~ log(output) + I(log(output)^2) + log(price) + load,
+  data = usair, model = "pooling")
+pFtest(fm_full2, fm_time2)
+pFtest(fm_full2, fm_firm2)
+pFtest(fm_full2, fm_no2)
+
+## More examples can be found in:
+## help("Greene2003")
+</pre>
+
+
+</body></html>

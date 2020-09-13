@@ -85,6 +85,6 @@ Examples
    if (require(ggformula)) {
      Weather %>%
        gf_linerange(low_temp + high_temp ~ date | city ~ ., 
-       color = ~ (high_temp + low_temp) / 2 ) %>%
+       color = ~ (high_temp + low_temp) / 2, show.legend = FALSE) %>%
        gf_refine(scale_color_gradientn(colors = rev(rainbow(5))))
    }

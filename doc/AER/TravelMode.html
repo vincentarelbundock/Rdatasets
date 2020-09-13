@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Travel Mode Choice Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for TravelMode"><tr><td>TravelMode</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Travel Mode Choice Data</h2>
+
+<h3>Description</h3>
+
+<p>Data on travel mode choice for travel between Sydney and Melbourne, Australia.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("TravelMode")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 840 observations on 4 modes for 210 individuals.
+</p>
+
+<dl>
+<dt>individual</dt><dd><p>Factor indicating individual with levels <code>1</code> to <code>200</code>.</p>
+</dd>
+<dt>mode</dt><dd><p>Factor indicating travel mode with levels
+<code>"car"</code>, <code>"air"</code>, <code>"train"</code>, or <code>"bus"</code>.</p>
+</dd>
+<dt>choice</dt><dd><p>Factor indicating choice with levels <code>"no"</code> and <code>"yes"</code>.</p>
+</dd>
+<dt>wait</dt><dd><p>Terminal waiting time, 0 for car.</p>
+</dd>
+<dt>vcost</dt><dd><p>Vehicle cost component.</p>
+</dd>
+<dt>travel</dt><dd><p>Travel time in the vehicle.</p>
+</dd>
+<dt>gcost</dt><dd><p>Generalized cost measure.</p>
+</dd>
+<dt>income</dt><dd><p>Household income.</p>
+</dd>
+<dt>size</dt><dd><p>Party size.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Online complements to Greene (2003).
+</p>
+<p><a href="http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm">http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Greene, W.H. (2003). <em>Econometric Analysis</em>, 5th edition. Upper Saddle River, NJ: Prentice Hall.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Greene2003</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("TravelMode")
+
+## overall proportions for chosen mode
+with(TravelMode, prop.table(table(mode[choice == "yes"])))
+
+## travel vs. waiting time for different travel modes
+library("lattice")
+xyplot(travel ~ wait | mode, data = TravelMode)
+
+## Greene (2003), Table 21.11, conditional logit model
+if(require("mlogit")) {
+TravelMode$incair &lt;- with(TravelMode, income * (mode == "air"))
+tm_cl &lt;- mlogit(choice ~ gcost + wait + incair, data = TravelMode,
+  shape = "long", alt.var = "mode", reflevel = "car")
+summary(tm_cl)
+}
+</pre>
+
+
+</body></html>

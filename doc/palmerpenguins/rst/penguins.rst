@@ -22,7 +22,7 @@ Usage
 Format
 ~~~~~~
 
-A tibble with 344 rows and 7 variables:
+A tibble with 344 rows and 8 variables:
 
 species
    a factor denoting penguin species (Adélie, Chinstrap and Gentoo)
@@ -45,6 +45,9 @@ body_mass_g
 
 sex
    a factor denoting penguin sex (female, male)
+
+year
+   an integer denoting the study year (2007, 2008, or 2009)
 
 Source
 ~~~~~~

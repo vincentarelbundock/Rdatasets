@@ -25,12 +25,9 @@ A data frame with 98 observations on the following variables.
 -  ``bookpageID`` a factor with levels for each book and page (unique
    identifier)
 
--  ``appdate`` a factor with levels corresponding to each of the dates
-   on which the application was filed (in the form MO/DY/YY, e.g.
-   1/22/99 represents January 22, 1999)
+-  ``appdate`` date on which the application was filed
 
--  ``ceremonydate`` a factor with levels corresponding to the date of
-   the ceremony
+-  ``ceremonydate`` date of the ceremony
 
 -  ``delay`` number of days between the application and the ceremony
 

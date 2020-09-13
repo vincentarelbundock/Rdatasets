@@ -1,0 +1,158 @@
+======== ===============
+PSID7682 R Documentation
+======== ===============
+
+PSID Earnings Panel Data (1976–1982)
+------------------------------------
+
+Description
+~~~~~~~~~~~
+
+Panel data on earnings of 595 individuals for the years 1976–1982,
+originating from the Panel Study of Income Dynamics.
+
+Usage
+~~~~~
+
+::
+
+   data("PSID7682")
+
+Format
+~~~~~~
+
+A data frame containing 7 annual observations on 12 variables for 595
+individuals.
+
+experience
+   Years of full-time work experience.
+
+weeks
+   Weeks worked.
+
+occupation
+   factor. Is the individual a white-collar (``"white"``) or blue-collar
+   (``"blue"``) worker?
+
+industry
+   factor. Does the individual work in a manufacturing industry?
+
+south
+   factor. Does the individual reside in the South?
+
+smsa
+   factor. Does the individual reside in a SMSA (standard metropolitan
+   statistical area)?
+
+married
+   factor. Is the individual married?
+
+gender
+   factor indicating gender.
+
+union
+   factor. Is the individual's wage set by a union contract?
+
+education
+   Years of education.
+
+ethnicity
+   factor indicating ethnicity. Is the individual African-American
+   (``"afam"``) or not (``"other"``)?
+
+wage
+   Wage.
+
+year
+   factor indicating year.
+
+id
+   factor indicating individual subject ID.
+
+Details
+~~~~~~~
+
+The data were originally analyzed by Cornwell and Rupert (1988) and
+employed for assessing various instrumental-variable estimators for
+panel models (including the Hausman-Taylor model). Baltagi and
+Khanti-Akom (1990) reanalyzed the data, made corrections to the data and
+also suggest modeling with a different set of instruments.
+
+``PSID7682`` is the version of the data as provided by Baltagi (2005),
+or Greene (2008).
+
+Baltagi (2002) just uses the cross-section for the year 1982, i.e.,
+``subset(PSID7682, year == "1982")``. This is also available as a
+standalone data set ``PSID1982`` because it was included in AER prior to
+the availability of the full ``PSID7682`` panel version.
+
+Source
+~~~~~~
+
+Online complements to Baltagi (2005).
+
+http://www.wiley.com/legacy/wileychi/baltagi3e/data_sets.html
+
+Also provided in the online complements to Greene (2008), Table F9.1.
+
+http://pages.stern.nyu.edu/~wgreene/Text/Edition6/tablelist6.htm
+
+References
+~~~~~~~~~~
+
+Baltagi, B.H., and Khanti-Akom, S. (1990). On Efficient Estimation with
+Panel Data: An Empirical Comparison of Instrumental Variables
+Estimators. *Journal of Applied Econometrics*, **5**, 401–406.
+
+Baltagi, B.H. (2001). *Econometric Analysis of Panel Data*, 2nd ed.
+Chichester, UK: John Wiley.
+
+Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+
+Baltagi, B.H. (2005). *Econometric Analysis of Panel Data*, 3rd ed.
+Chichester, UK: John Wiley.
+
+Cornwell, C., and Rupert, P. (1988). Efficient Estimation with Panel
+Data: An Empirical Comparison of Instrumental Variables Estimators.
+*Journal of Applied Econometrics*, **3**, 149–155.
+
+Greene, W.H. (2008). *Econometric Analysis*, 6th ed. Upper Saddle River,
+NJ: Prentice Hall.
+
+See Also
+~~~~~~~~
+
+``PSID1982``, ``Baltagi2002``
+
+Examples
+~~~~~~~~
+
+::
+
+   data("PSID7682")
+
+   library("plm")
+   psid <- pdata.frame(PSID7682, c("id", "year"))
+
+   ## Baltagi & Khanti-Akom, Table I, column "HT"
+   ## original Cornwell & Rupert choice of exogenous variables
+   psid_ht1 <- plm(log(wage) ~ weeks + south + smsa + married +
+     experience + I(experience^2) + occupation + industry + union + gender + ethnicity + education |
+     weeks + south + smsa + married + gender + ethnicity,
+     data = psid, model = "ht")
+
+   ## Baltagi & Khanti-Akom, Table II, column "HT"
+   ## alternative choice of exogenous variables
+   psid_ht2 <- plm(log(wage) ~ occupation + south + smsa + industry +
+     experience + I(experience^2) + weeks + married + union + gender + ethnicity + education |
+     occupation + south + smsa + industry + gender + ethnicity,
+     data = psid, model = "ht")
+
+   ## Baltagi & Khanti-Akom, Table III, column "HT"
+   ## original choice of exogenous variables + time dummies
+   ## (see also Baltagi, 2001, Table 7.1)
+   psid$time <- psid$year
+   psid_ht3 <- plm(log(wage) ~ weeks + south + smsa + married + experience + I(experience^2) +
+     occupation + industry + union + gender + ethnicity + education + time |
+     weeks + south + smsa + married + gender + ethnicity + time,
+     data = psid, model = "ht")

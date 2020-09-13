@@ -77,7 +77,7 @@ if (require(dplyr)) {
 if (require(ggformula)) {
   Weather %&gt;%
     gf_linerange(low_temp + high_temp ~ date | city ~ ., 
-    color = ~ (high_temp + low_temp) / 2 ) %&gt;%
+    color = ~ (high_temp + low_temp) / 2, show.legend = FALSE) %&gt;%
     gf_refine(scale_color_gradientn(colors = rev(rainbow(5))))
 }
 

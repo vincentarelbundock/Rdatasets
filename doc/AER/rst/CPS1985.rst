@@ -1,0 +1,122 @@
+======= ===============
+CPS1985 R Documentation
+======= ===============
+
+Determinants of Wages Data (CPS 1985)
+-------------------------------------
+
+Description
+~~~~~~~~~~~
+
+Cross-section data originating from the May 1985 Current Population
+Survey by the US Census Bureau (random sample drawn for Berndt 1991).
+
+Usage
+~~~~~
+
+::
+
+   data("CPS1985")
+
+Format
+~~~~~~
+
+A data frame containing 534 observations on 11 variables.
+
+wage
+   Wage (in dollars per hour).
+
+education
+   Number of years of education.
+
+experience
+   Number of years of potential work experience
+   (``age - education - 6``).
+
+age
+   Age in years.
+
+ethnicity
+   Factor with levels ``"cauc"``, ``"hispanic"``, ``"other"``.
+
+region
+   Factor. Does the individual live in the South?
+
+gender
+   Factor indicating gender.
+
+occupation
+   Factor with levels ``"worker"`` (tradesperson or assembly line
+   worker), ``"technical"`` (technical or professional worker),
+   ``"services"`` (service worker), ``"office"`` (office and clerical
+   worker), ``"sales"`` (sales worker), ``"management"`` (management and
+   administration).
+
+sector
+   Factor with levels ``"manufacturing"`` (manufacturing or mining),
+   ``"construction"``, ``"other"``.
+
+union
+   Factor. Does the individual work on a union job?
+
+married
+   Factor. Is the individual married?
+
+Source
+~~~~~~
+
+StatLib.
+
+http://lib.stat.cmu.edu/datasets/CPS_85_Wages
+
+References
+~~~~~~~~~~
+
+Berndt, E.R. (1991). *The Practice of Econometrics*. New York:
+Addison-Wesley.
+
+See Also
+~~~~~~~~
+
+``CPS1988``, ``CPSSW``
+
+Examples
+~~~~~~~~
+
+::
+
+   data("CPS1985")
+
+   ## Berndt (1991)
+   ## Exercise 2, p. 196
+   cps_2b <- lm(log(wage) ~ union + education, data = CPS1985)
+   cps_2c <- lm(log(wage) ~ -1 + union + education, data = CPS1985)
+
+   ## Exercise 3, p. 198/199
+   cps_3a <- lm(log(wage) ~ education + experience + I(experience^2),
+     data = CPS1985)
+   cps_3b <- lm(log(wage) ~ gender + education + experience + I(experience^2),
+     data = CPS1985)
+   cps_3c <- lm(log(wage) ~ gender + married + education + experience + I(experience^2),
+     data = CPS1985)
+   cps_3e <- lm(log(wage) ~ gender*married + education + experience + I(experience^2),
+     data = CPS1985)
+
+   ## Exercise 4, p. 199/200
+   cps_4a <- lm(log(wage) ~ gender + union + ethnicity + education + experience + I(experience^2),
+     data = CPS1985)
+   cps_4c <- lm(log(wage) ~ gender + union + ethnicity + education * experience + I(experience^2),
+     data = CPS1985)
+
+   ## Exercise 6, p. 203
+   cps_6a <- lm(log(wage) ~ gender + union + ethnicity + education + experience + I(experience^2),
+     data = CPS1985)
+   cps_6a_noeth <- lm(log(wage) ~ gender + union + education + experience + I(experience^2),
+     data = CPS1985)
+   anova(cps_6a_noeth, cps_6a)
+
+   ## Exercise 8, p. 208
+   cps_8a <- lm(log(wage) ~ gender + union + ethnicity + education + experience + I(experience^2),
+     data = CPS1985)
+   summary(cps_8a)
+   coeftest(cps_8a, vcov = vcovHC(cps_8a, type = "HC0"))

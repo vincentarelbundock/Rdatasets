@@ -57,7 +57,11 @@ tests, 4 motor speed tests, and 4 verbal tests. The sample size is 355.
 Another data set from Holzinger (Holzinger.9) represents 9 cognitive
 abilities (Holzinger, 1939) and is used as an example by Karl Joreskog
 (2003) for factor analysis by the MINRES algorithm and also appears in
-the LISREL manual as example NPV.KM.
+the LISREL manual as example NPV.KM. This data set represents the scores
+from the Grant White middle school for 9 tests: "t01_visperc"
+"t02_cubes" "t04_lozenges" "t06_paracomp" "t07_sentcomp" "t09_wordmean"
+"t10_addition" "t12_countdot" and "t13_sccaps" and as variables x1 ...
+x9 (for the Grant-White school) in the lavaan package.
 
 Another classic data set is the 9 variable Thurstone problem which is
 discussed in detail by R. P. McDonald (1985, 1999) and and is used as
@@ -120,11 +124,27 @@ in psychTools.1.9.11 or later.
 
 -  Thurstone: 9 x 9 correlation matrix of ability tests, N = 213
 
--  Thurstone.33: Another 9 x 9 correlation matrix of ability items,
+-  Thurstone.33: Another 9 x 9 correlation matrix of ability tests,
    N=4175
 
 -  Thurstone:9: And yet another 9 x 9 correlation matrix of ability
-   items, N =710
+   tests, N =710
+
+Note
+~~~~
+
+Note that these are tests, not items. Thus, it was possible to find the
+reliabilities of each test.
+
+For the Holzinger 14 tests these were found from 1- t2 where t = c(.332,
+.517, .360, .382, .354,.249, .444, .393, .455, .424, .393, .487, .534,
+.382) (page 53) and thus the reliabilities were 0.890, 0.733, 0.870,
+0.854, 0.875, 0.938, 0.803, 0.846, 0.793, 0.820, 0.846, 0.763, 0.715,
+0.854.
+
+For the Holzinger.9 tests, the reliabilities for the Grant-White tests
+were: .76, .57, .94, .65, .75, .87, .95, .84 and .89 (Keith Widamn,
+personal communication, 2020),
 
 Source
 ~~~~~~

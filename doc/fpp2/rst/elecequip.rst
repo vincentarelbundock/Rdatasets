@@ -20,7 +20,7 @@ Time series object of class ``ts``.
 Source
 ~~~~~~
 
-Eurostat. https://data.is/y6dO8i
+Eurostat.
 
 Examples
 ~~~~~~~~
