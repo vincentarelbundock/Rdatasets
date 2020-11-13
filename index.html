@@ -120,23 +120,24 @@
 <a href="#github-instructions" class="anchor"></a>Github instructions</h1>
 <p>These are mostly intended as a reminder for Vincent.</p>
 <p>First add new package to DESCRIPTION Imports and scrape the data:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">Rscript</span> scrape.R</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="bu">cd</span> doc</span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="ex">../documentation.sh</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">Rscript</span> scrape.R</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="bu">cd</span> doc</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="ex">../documentation.sh</span></span></code></pre></div>
 <p>Second, commit to master.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">git</span> add .</span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">git</span> commit</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="bu">cd</span> ..</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="fu">git</span> add .</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a><span class="fu">git</span> commit</span></code></pre></div>
 <p>Third, checkout gh-pages and import the new data there.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">git</span> checkout gh-pages</span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">git</span> checkout master -- csv</span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">git</span> checkout master -- doc</span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="fu">git</span> checkout master -- datasets.csv</span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="fu">git</span> checkout master -- datasets.html</span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="fu">git</span> add .</span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="fu">git</span> commit</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="fu">git</span> checkout gh-pages</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a><span class="fu">git</span> checkout master -- csv</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a><span class="fu">git</span> checkout master -- doc</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a><span class="fu">git</span> checkout master -- datasets.csv</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a><span class="fu">git</span> checkout master -- datasets.html</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true"></a><span class="fu">git</span> add .</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true"></a><span class="fu">git</span> commit</span></code></pre></div>
 <p>Finally, move back to master and build the gh-pages website:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">git</span> checkout master</span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="ex">Rscript</span> -e <span class="st">"pkgdown::deploy_to_branch()"</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="fu">git</span> checkout master</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true"></a><span class="ex">Rscript</span> -e <span class="st">"pkgdown::deploy_to_branch()"</span></span></code></pre></div>
 </div>
 
   </div>
