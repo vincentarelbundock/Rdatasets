@@ -44,14 +44,14 @@ south76
    lived in south in 1976 ?
 
 smsa76
-   lived in smsa in 1976 ?
+   lived in SMSA in 1976 ?
 
 region
    region, a factor with levels (``un``, ``midatl``, ``enc``, ``wnc``,
    ``sa``, ``esc``, ``wsc``, ``m``, ``p``)
 
 smsa66
-   lived in smsa in 1966 ?
+   lived in SMSA in 1966 ?
 
 momdad14
    lived with both parents at age 14 ?

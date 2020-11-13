@@ -15,17 +15,18 @@ seen in the standard GDP estimates from 1940 to 1945. It is also
 supported by the rapid decline in unemployment during the war.
 
 However, no comparable growth spurts in GDP per capita catch the eye in
-a plot of log(GDP per capita) from 1790 to 2015, whether associated with
-a war or not, using data from Measuring Worth. The only other features
-of that plot that seem visually comparable are the economic disaster of
-Herbert Hoover's presidency (when GDP per capital fell by 10 percent per
-year, 1929-1932), the impressive growth of the US economy during the
-first seven years of Franklin Roosevelt's presidency (6.4 percent per
-year, 1933-1940), and the post-World War II recession (when GDP per
-capita fell by 7.9 percent per year, 1945-1947). (NOTE: The web site for
-Measuring Worth, ``https://measuringworth.com/`` still works, but is not
-currently maintained to current internet security standards. Therefore,
-the link is provided here in text but not as a not link.)
+a plot of ``log(GDP per capita)`` from 1790 to 2015, whether associated
+with a war or not, using data from Measuring Worth. The only other
+features of that plot that seem visually comparable are the economic
+disaster of Herbert Hoover's presidency (when GDP per capital fell by 10
+percent per year, 1929-1932), the impressive growth of the US economy
+during the first seven years of Franklin Roosevelt's presidency (6.4
+percent per year, 1933-1940), and the post-World War II recession (when
+GDP per capita fell by 7.9 percent per year, 1945-1947). (NOTE: The web
+site for Measuring Worth, ``https://measuringworth.com/`` still works,
+but has not always been maintained to current internet security
+standards. Therefore, the link is provided here in text but not as a
+link.)
 
 Closer inspection of this plot suggests that the US economy has
 generally grown faster after FDR than before. This might plausibly be
@@ -63,7 +64,7 @@ Format
 A ``data.frame`` containing 259 observations on the following variables:
 
 Year
-   integer: the year, c(seq(1610, 1770, 10), 1774:2015)
+   integer: the year, ``c(seq(1610, 1770, 10), 1774:2015)``
 
 CPI
    Numeric: U. S. Consumer Price Index per Officer and Williamson
@@ -86,7 +87,7 @@ realGDPperCapita
 
 executive
    ``ordered``: Crown of England through 1774, followed by the
-   "ContinentalCongress" and the "ArticlesOfConfederation" until
+   ``"ContinentalCongress"`` and the ``"ArticlesOfConfederation"`` until
    Washington, who became President under the current base constitution
    in 1789. Two nineteenth century presidents are not listed here
    (William Henry Harrison and James A. Garfield), because they died so
@@ -111,9 +112,9 @@ war
 
    (2) It was listed in one of two lists of wars: For wars since 1816,
    it must have appeared in the `Correlates of
-   War <http://correlatesofwar.org/>`__. For wars between 1790 and 1815,
-   it must have appeared in the Wikipedia `"List of wars involving the
-   United
+   War <https://correlatesofwar.org/>`__. For wars between 1790 and
+   1815, it must have appeared in the Wikipedia `"List of wars involving
+   the United
    States" <https://en.wikipedia.org/wiki/List_of_wars_involving_the_United_States>`__.
 
    The resulting list includes a few adjustments to the list of wars
@@ -138,7 +139,7 @@ war
    in a way roughly comparable to the Spanish-American war. The two are
    therefore listed here together as "Spanish-American-Philippine" war.
 
-   `The Correlates of War (COW) <http://correlatesofwar.org/>`__ data
+   `The Correlates of War (COW) <https://correlatesofwar.org/>`__ data
    include multiple US uses of military force during the Vietnam War
    era. It starts with "Vietnam Phase 1", 1961-65, with 506 battle
    deaths in the COW data base. It includes the "Second Laotian" war
@@ -161,8 +162,9 @@ battleDeaths
    the different years the totals reported for each major war in
    proportion to the number of days officially in conflict each year.
    The totals were obtained (in August-September 2015) from `The
-   Correlates of War <http://correlatesofwar.org/>`__ data for conflicts
-   since 1816 and from Wikipedia for previous wars, as noted above.
+   Correlates of War <https://correlatesofwar.org/>`__ data for
+   conflicts since 1816 and from Wikipedia for previous wars, as noted
+   above.
 
 battleDeathsPMP
    numeric: battle deaths per million population =
@@ -212,11 +214,11 @@ Measuring Worth, accessed 2015-09-08. (NOTE: This came from
 ``https://www.measuringworth.org/usgdp/``. this web link generally works
 as of 2020-02-09 but routinely returns a warning, e.g., "SSL certificate
 problem". The web site seems to be good but not maintained to current
-security stqndards.)
+security standards.)
 
 Sarkees, Meredith Reid; Wayman, Frank (2010). `"The Correlates of War
 Project: COW War Data, 1816 - 2007
-(v4.0)" <http://correlatesofwar.org/data-sets/COW-war>`__, accessed
+(v4.0)" <https://correlatesofwar.org/data-sets/COW-war>`__, accessed
 2015-09-02.
 
 Wikipedia, `"List of wars involving the United
@@ -242,9 +244,9 @@ Robert M. Coen (1973) Labor Force and Unemployment in the 1920's and
 1930's: A Re-Examination Based on Postwar Experience", The Review of
 Economics and Statistics, 55(1): 46-55.
 
-The unemployment data since 1940 are from series LNS14000000 from the
-Current Population Survey. These data are available as a monthly series
-from the `Current Population Survey of the Bureau of Labor
+The unemployment data since 1940 are from series ``LNS14000000`` from
+the Current Population Survey. These data are available as a monthly
+series from the `Current Population Survey of the Bureau of Labor
 Statistics <https://www.bls.gov/cps/>`__.
 
 `Chuck Springston, "Population of the 13 Colonies 1610-1790", October

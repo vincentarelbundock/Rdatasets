@@ -89,7 +89,7 @@ pat4
 Source
 ~~~~~~
 
-Hall, Bronwyn , Zvi Griliches and Jerry Hausman (1986) “Patents and R&D:
+Hall, Bronwyn, Zvi Griliches and Jerry Hausman (1986) “Patents and R&D:
 Is There a Lag?”, *International Economic Review*, **27**, 265-283.
 
 References

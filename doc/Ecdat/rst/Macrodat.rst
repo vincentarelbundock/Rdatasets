@@ -32,7 +32,7 @@ lhur
    unemployment rate (average of months in quarter)
 
 punew
-   cPI (Average of Months in Quarter)
+   CPI (Average of Months in Quarter)
 
 fyff
    federal funds interest rate (last month in quarter)

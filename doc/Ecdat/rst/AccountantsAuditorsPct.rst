@@ -33,11 +33,10 @@ Use Microdata Series <https://en.wikipedia.org/wiki/IPUMS>`__ on
 2018-09-01 with the computations documented in a vignette by this title
 in the ``Ecfun`` package.
 
-This updates the data on Accountants and Auditors in in Wyatt and Hecker
+This updates the data on Accountants and Auditors in Wyatt and Hecker
 (2006). They relied primarily on data extracted from the `Integrated
-Public Use Microdata Series <https://en.wikipedia.org/wiki/IPUMS>`__. I
-did the same but found two problems that seemed to require
-modifications:
+Public Use Microdata Series <https://en.wikipedia.org/wiki/IPUMS>`__.
+This follows the same methodology with two modifications:
 
 1. IPUMS provided no data for 1940. Wyatt and Hecker (2006) used
 `Historical Statistics of the United States, Colonial Times to 1970,
@@ -59,7 +58,7 @@ decline the following decade. If, however, we swap the 1700 and 1200
 between 1860 and 1870, the percentages become quite stable: 0.013,
 0.015, and 0.014 percent, respectively.
 
-We use these latter numbers, even thought the uncorrected numbers seem
+We use these latter numbers, even though the uncorrected numbers seem
 more consistent with the numbers obtained from IPUMS.
 
 References

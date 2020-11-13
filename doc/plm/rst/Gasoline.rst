@@ -56,13 +56,13 @@ http://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&r
 References
 ~~~~~~~~~~
 
-Baltagi B (2001). *Econometric Analysis of Panel Data*, 3rd edition.
+Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
 John Wiley and Sons ltd.
 
-Baltagi B (2013). *Econometric Analysis of Panel Data*, 5th edition.
+Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
 John Wiley and Sons ltd.
 
 Baltagi BH, Griffin JM (1983). “Gasoline demand in the OECD: An
 application of pooling and testing procedures.” *European Economic
-Review*, **22**\ (2), 117 - 137. ISSN 0014-2921,
+Review*, **22**, 117–137.
 https://www.sciencedirect.com/science/article/pii/0014292183900776.

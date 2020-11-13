@@ -38,13 +38,15 @@ day
    the day
 
 ge
-   the return for General Electric, Permno 12060
+   the return for General Electric,
+   `PERMNO <http://www.crsp.org/products/documentation/crsp-link>`__
+   12060
 
 ibm
-   the return for IBM, Permno 12490
+   the return for IBM, PERMNO 12490
 
 mobil
-   the return for Mobil Corporation, Permno 15966
+   the return for Mobil Corporation, PERMNO 15966
 
 crsp
    the return for the CRSP value-weighted index, including dividends
@@ -54,7 +56,7 @@ Source
 
 Center for Research in Security Prices, Graduate School of Business,
 University of Chicago, 725 South Wells - Suite 800, Chicago, Illinois
-60607, http://www.crsp.com.
+60607, http://www.crsp.org.
 
 References
 ~~~~~~~~~~

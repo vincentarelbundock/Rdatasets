@@ -62,7 +62,7 @@ Details
 
 Thousands of words in the US tax code and federal tax regulations,
 1955-2015. This is based on data from the Tax Foundation
-(taxfoundation.org), adjusted to eliminate an obvious questionable
+(``taxfoundation.org``), adjusted to eliminate an obvious questionable
 observation in ``otherTaxRegulations`` for 1965. The numbers of words in
 ``otherTaxRegulations`` was not reported directly by the Tax Foundation
 but is easily computed as the difference between their Income and Entire
@@ -109,10 +109,10 @@ Source
 
 `Tax Foundation: Number of Words in Internal Revenue Code and Federal
 Tax Regulations,
-1955-2005 <http://taxfoundation.org/article/number-words-internal-revenue-code-and-federal-tax-regulations-1955-2005>`__
+1955-2005 <https://taxfoundation.org/number-words-internal-revenue-code-and-federal-tax-regulations-1955-2005>`__
 Scott Greenberg, `"Federal Tax Laws and Regulations are Now Over 10
 Million Words Long", October 08,
-2015 <http://taxfoundation.org/blog/federal-tax-laws-and-regulations-are-now-over-10-million-words-long>`__
+2015 <https://taxfoundation.org/federal-tax-laws-and-regulations-are-now-over-10-million-words-long/>`__
 
 References
 ~~~~~~~~~~

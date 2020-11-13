@@ -70,11 +70,6 @@ found in Moertel (1990). This data set is closest to that of the final
 report in Moertel (1991). A version of the data with less follow-up time
 was used in the paper by Lin (1994).
 
-Peter Higgins has pointed out a data inconsistency, revealed by
-``table(colon$nodes, colon$node4)``. We don't know which of the two
-variables is actually correct so have elected not to 'fix' it. (Real
-data has warts, why not have some in the example data too?)
-
 References
 ~~~~~~~~~~
 

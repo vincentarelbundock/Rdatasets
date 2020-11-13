@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Evolution of occupational distribution in the US</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for OCC1950"><tr><td>OCC1950</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Evolution of occupational distribution in the US 
+</h2>
+
+<h3>Description</h3>
+
+<p>Proportion of the US population in each of the 
+283 <code>OCC1950</code> occupation codes for each year 
+in the 
+<a href="https://en.wikipedia.org/wiki/IPUMS">Integrated Public Use Microdata Series (IPUMS) - US database</a>.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("OCC1950")</pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>matrix</code> with one row for each of 
+281 OCC1950 occupation codes in IPUMS-US and one
+column for each year in their dataset as of 
+2020-03-17, being 
+<code>c(1850:1880, 1900:2000, 2001:2016)</code>.
+</p>
+
+
+<h3>Details</h3>
+
+<p>This dataset was created using the code in the 
+IPUMS vignette in the <code>Ecfun</code> package using
+<code>tapply(HHWT, IPUMSdata[c("OCC1950", "YEAR")], sum)</code>, 
+then normalizing so the total for each year was 1.
+</p>
+<p>In fact a plot of the sums for each year of
+<code>HHWT</code> were close to the 
+<code>USGDPpresidents$population.K*1000</code> except 
+for 1970, when they were double.  
+</p>
+<p>Universe Note from the IPUMS documentation for 
+their variable <code>OCC1950</code>: &quot;New Workers&quot; are
+persons seeking employment for the first time, who 
+had not yet secured their first job.
+</p>
+<p>OCC1950 applies the 1950 Census Bureau occupational 
+classification system to occupational data, to 
+enhance comparability across years. For pre-1940 
+samples created at the University of Minnesota, 
+the alphabetic responses supplied by enumerators 
+were directly coded into the 1950 classification. 
+For other samples, the information in the variable 
+OCC was recoded into the 1950 classification. Codes above 970 are non-occupational responses retained 
+in the historical census samples or blank/unknown. 
+The design of OCC1950 is described at length in
+&quot;Integrated Occupation and Industry Codes and
+Occupational Standing Variables in the IPUMS.&quot;. 
+The composition of the 1950 occupation categories 
+is described in detail in U.S. Bureau of the 
+Census, Alphabetic Index of Occupations and 
+Industries: 1950 (Washington D.C., 1950). 
+</p>
+<p>In 1850-1880, any laborer with no specified industry in a household with a farmer is recoded into farm labor. In 1860-1900, any woman with an occupational response of &quot;housekeeper&quot; enters the non-occupational category &quot;keeping house&quot; if she is related to the head of household. Cases affected by these imputation procedures are identified by an appropriate data quality flag (present in the raw IPUMS data but ignored for this summary). 
+</p>
+<p>A parallel variable called OCC1990, available for the samples from 1950 onward, codes occupations into a simplified version of the 1990 occupational coding scheme.&quot; [OCC1990 was ignored for the present purposes, because it is not coded for data prior to 1950.]
+</p>
+<p>NOTE:  In the 2020-03-17 extraction, there were 283 OCC1950 codes documented, but only 291 of them were actually in the data I got.  The codes for &quot;Not yet classified&quot; and &quot;New Workers&quot; were not used.  
+</p>
+
+
+<h3>Source</h3>
+
+<p>Steven Ruggles, Sarah Flood, Ronald Goeken, 
+Josiah Grover, Erin Meyer, Jose Pacas, and 
+Matthew Sobek (2020) 
+<a href="https://doi.org/10.18128/D010.V10.0">IPUMS 
+USA: Version 10.0 [dataset]. Minneapolis, MN: 
+IPUMS</a>. 
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(OCC1950)
+</pre>
+
+
+</body></html>

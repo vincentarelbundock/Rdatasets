@@ -60,4 +60,4 @@ References
 
 Alonso-Borrego C, Arellano M (1999). “Symmetrically Normalized
 Instrumental-Variable Estimation Using Panel Data.” *Journal of Business
-and Economic Statistics*, **17**\ (1), 36-49.
+and Economic Statistics*, **17**, 36–49.

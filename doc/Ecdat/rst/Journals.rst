@@ -2,8 +2,8 @@
 Journals R Documentation
 ======== ===============
 
-Economic Journals Dat Set
--------------------------
+Economic Journals Data Set
+--------------------------
 
 Description
 ~~~~~~~~~~~

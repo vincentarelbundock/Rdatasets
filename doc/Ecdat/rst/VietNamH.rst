@@ -2,8 +2,8 @@
 VietNamH R Documentation
 ======== ===============
 
-Medical Expenses in Viet–nam (household Level)
-----------------------------------------------
+Medical Expenses in Vietnam (household Level)
+---------------------------------------------
 
 Description
 ~~~~~~~~~~~

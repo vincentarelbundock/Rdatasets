@@ -41,7 +41,7 @@ play
    contestant's choice : a factor with levels "foe" and "friend". If
    both players play "friend", they share the trust box, if both play
    "foe", both players receive zero prize, if one of them play "foe" and
-   the other one "friend", the "foe" player receive the entire trust bix
+   the other one "friend", the "foe" player receive the entire trust box
    and the "friend" player nothing
 
 round
@@ -82,7 +82,7 @@ References
 ~~~~~~~~~~
 
 Journal of Statistics Education's data archive :
-http://www.amstat.org/publications/jse/jse_data_archive.htm.
+http://jse.amstat.org/jse_data_archive.htm.
 
 See Also
 ~~~~~~~~

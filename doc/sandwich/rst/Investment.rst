@@ -53,10 +53,10 @@ Table 15.1 in Greene (1993)
 References
 ~~~~~~~~~~
 
-Greene W.H. (1993), *Econometric Analysis*, 2nd edition. Macmillan
+Greene W.H. (1993). *Econometric Analysis*, 2nd edition. Macmillan
 Publishing Company, New York.
 
-Executive Office of the President (1984), *Economic Report of the
+Executive Office of the President (1984). *Economic Report of the
 President*. US Government Printing Office, Washington, DC.
 
 Examples

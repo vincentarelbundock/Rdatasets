@@ -47,7 +47,7 @@ teachers
    number of teachers
 
 calwpct
-   percent qualifying for CalWorks
+   percent qualifying for CalWORKS
 
 mealpct
    percent qualifying for reduced-price lunch
@@ -56,7 +56,7 @@ computer
    number of computers
 
 testscr
-   average test score (read.scr+math.scr)/2
+   average test score ``(read.scr+math.scr)/2``
 
 compstu
    computer per student
@@ -82,7 +82,7 @@ mathscr
 Source
 ~~~~~~
 
-California Department of Education http://www.cde.ca.gov.
+California Department of Education https://www.cde.ca.gov.
 
 References
 ~~~~~~~~~~

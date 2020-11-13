@@ -29,10 +29,10 @@ Format
 A dataframe containing :
 
 smsa66
-   lived in smsa in 1966 ?
+   lived in SMSA in 1966 ?
 
 smsa76
-   lived in smsa in 1976 ?
+   lived in SMSA in 1976 ?
 
 nearc2
    grew up near 2-yr college ?
@@ -56,16 +56,16 @@ age76
    age in 1976
 
 daded
-   dads education (imputed avg if missing)
+   dad's education (imputed avg if missing)
 
 nodaded
-   dads education imputed ?
+   dad's education imputed ?
 
 momed
-   mothers education
+   mother's education
 
 nomomed
-   moms education imputed ?
+   mom's education imputed ?
 
 momdad14
    lived with mom and dad at age 14 ?
@@ -98,7 +98,7 @@ enroll76
    enrolled in 1976 ?
 
 kww
-   the kww score
+   the ``kww`` score
 
 iqscore
    a normed IQ score
@@ -115,7 +115,7 @@ exp76
 Source
 ~~~~~~
 
-National Longitudinal Survey of Young Men (NLSYM) .
+National Longitudinal Survey of Young Men (NLSYM).
 
 Card, D. (1995) *Using geographical variation in college proximity to
 estimate the return to schooling* *in* Christofides, L.N., E.K. Grant

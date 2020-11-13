@@ -58,8 +58,8 @@ uria
    1989 Massachusetts unemployment rate in the applicant's industry
 
 condominium
-   is unit a condominium ? (was called comdominiom in version 0.2-9 and
-   earlier versions of the package)
+   is unit a condominium ? (was called ``comdominiom`` in version 0.2-9
+   and earlier versions of the package)
 
 black
    is the applicant black ?

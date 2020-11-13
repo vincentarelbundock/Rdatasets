@@ -44,7 +44,7 @@ References
 ~~~~~~~~~~
 
 Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods and
-applications*, Cambridge, pp. 574–5 abd 582.
+applications*, Cambridge, pp. 574–5 and 582.
 
 See Also
 ~~~~~~~~

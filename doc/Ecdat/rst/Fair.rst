@@ -47,7 +47,7 @@ education
    education
 
 occupation
-   occupation, from 1 to 7, according to hollingshead classification
+   occupation, from 1 to 7, according to Hollingshead's classification
    (reverse numbering)
 
 rate

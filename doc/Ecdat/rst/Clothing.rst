@@ -62,7 +62,7 @@ inv2
    investment in automation.
 
 ssize
-   sales floorspace of the store (in m$^2$).
+   sales floor space of the store (in m$^2$).
 
 start
    year start of business

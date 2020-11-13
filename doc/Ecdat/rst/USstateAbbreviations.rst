@@ -42,13 +42,13 @@ Details
 ~~~~~~~
 
 This was read from `the Wikipedia article on "List of U.S. state
-abbreviations" <http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>`__
+abbreviations" <https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>`__
 
 Source
 ~~~~~~
 
 `the Wikipedia article on "List of U.S. state
-abbreviations" <http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>`__
+abbreviations" <https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>`__
 
 See Also
 ~~~~~~~~

@@ -28,28 +28,28 @@ Format
 
 A dataframe containing :
 
-date
-   date of observation (yymmdd)
+``date``
+   date of observation (``yymmdd``)
 
-day
+``day``
    day of the week (a factor)
 
-dm
+``dm``
    exchange rate Dollar/Deutsch Mark
 
-ddm
-   dm-dm(-1)
+``ddm``
+   ``dm-dm(-1)``
 
-bp
+``bp``
    exchange rate of Dollar/British Pound
 
-cd
+``cd``
    exchange rate of Dollar/Canadian Dollar
 
-dy
+``dy``
    exchange rate of Dollar/Yen
 
-sf
+``sf``
    exchange rate of Dollar/Swiss Franc
 
 References

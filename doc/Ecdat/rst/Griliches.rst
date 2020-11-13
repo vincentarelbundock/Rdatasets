@@ -2,8 +2,8 @@
 Griliches R Documentation
 ========= ===============
 
-Wage Datas
-----------
+Wage Data
+---------
 
 Description
 ~~~~~~~~~~~

@@ -18,7 +18,7 @@ States. This combines three data sources:
 (3) Gross Domestic Product and implicit price deflators from Measuring
 Worth. (NOTE: The Measuring Worth Web site,
 ``https://MeasuringWorth.com``, often gives security warnings. The
-desired data still seems to be available, however.)
+desired data still seems to be available and not corrupted, however.)
 
 Usage
 ~~~~~
@@ -51,11 +51,11 @@ P90, P95, P99, P99.5, P99.9, P99.99
 
 realGDP.M, GDP.Deflator, PopulationK, realGDPperCap
    real GDP in millions, GDP implicit price deflators, US population in
-   thousands, and real GDP per capita, according to MeasuringWorth.com.
-   (NOTE: The web address for this, ``https://MeasuringWorth.com``,
-   seems to be functional but may not be maintained to current internet
-   security standards. It is therefore given here as text rather than a
-   hot link.)
+   thousands, and real GDP per capita, according to
+   ``MeasuringWorth.com``. (NOTE: The web address for this,
+   ``https://MeasuringWorth.com``, seems to be functional but may not be
+   maintained to current internet security standards. It is therefore
+   given here as text rather than a hot link.)
 
 P95IRSvsCensus
    ratio of the estimates of the 95th percentile of distributions of
@@ -70,7 +70,7 @@ P95IRSvsCensus
 
 personsPerFamily
    average number of persons per family using the number of families
-   from US Census Table F-1 and the population from Measureing Worth.
+   from US Census Table F-1 and the population from MeasuringWorth.
    (Note: The web site for Measuring Worth,
    ``https://MeasuringWorth.com``, often gives security warnings. It
    still seems to work. It seems that the web site is not maintained to
@@ -87,10 +87,10 @@ Details
 ~~~~~~~
 
 For details on how this ``data.frame`` was created, see
-"F1.PikettySaez.R" in ``system.file('scripts', package='fda')``. This
-provides links for files to download and R commands to read those files
-and convert them into an updated version of ``incomeInequality``. This
-is a reasonable thing to do if it is more than 2 years since
+``"F1.PikettySaez.R"`` in ``system.file('scripts', package='fda')``.
+This provides links for files to download and R commands to read those
+files and convert them into an updated version of ``incomeInequality``.
+This is a reasonable thing to do if it is more than 2 years since
 ``max(incomeInequality$year)``. All data are in constant 2012 dollars.
 
 Author(s)
@@ -108,7 +108,7 @@ accessed 2016-12-09.
 
 Thomas Piketty and Emmanuel Saez (2003) "Income Inequality in the United
 States, 1913-1998", Quarterly Journal of Economics, 118(1) 1-39,
-https://eml.berkeley.edu/~saez, update accessed February 28, 2014.
+https://eml.berkeley.edu/~saez/, update accessed February 28, 2014.
 
 Louis Johnston and Samuel H. Williamson (2011) "What Was the U.S. GDP
 Then?" MeasuringWorth. (Note: Their web address,

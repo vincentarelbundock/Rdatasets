@@ -2,8 +2,8 @@
 Cracker R Documentation
 ======= ===============
 
-Choice of Brand for Crakers
----------------------------
+Choice of Brand for Crackers
+----------------------------
 
 Description
 ~~~~~~~~~~~
@@ -58,7 +58,7 @@ References
 ~~~~~~~~~~
 
 Journal of Business Economics and Statistics web site :
-http://amstat.tandfonline.com/loi/ubes20.
+https://amstat.tandfonline.com/loi/ubes20.
 
 See Also
 ~~~~~~~~

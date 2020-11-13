@@ -2,8 +2,8 @@
 VietNamI R Documentation
 ======== ===============
 
-Medical Expenses in Viet–nam (individual Level)
------------------------------------------------
+Medical Expenses in Vietnam (individual Level)
+----------------------------------------------
 
 Description
 ~~~~~~~~~~~

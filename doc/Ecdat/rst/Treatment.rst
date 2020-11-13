@@ -63,7 +63,7 @@ Lalonde, R. (1986) “Evaluating the Econometric Evaluations of Training
 Programs with Experimental Data”, *American Economic Review*, 604–620.
 
 Dehejia, R.H. and S. Wahba (1999) “Causal Effects in Nonexperimental
-Studies: reevaluating the Evaluation of Training Programs”, *Jasa*,
+Studies: reevaluating the Evaluation of Training Programs”, *JASA*,
 1053–1062.
 
 Dehejia, R.H. and S. Wahba (2002) “Propensity-score Matching Methods for

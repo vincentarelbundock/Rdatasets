@@ -29,7 +29,7 @@ Format
 A dataframe containing :
 
 age
-   age groups, a factor with levels (g1,g2,g3)
+   age groups, a factor with levels ``(g1,g2,g3)``
 
 y
    average annual earnings, in 1982 US dollars
