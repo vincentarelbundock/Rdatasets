@@ -39,8 +39,8 @@ lpi
    ``log``\ (annual participation incentive payment) or 0 if no payment
 
 fmde
-   ``log``\ (max(medical deductible expenditure)) if IDP=1 and MDE>1 or
-   0 otherwise
+   ``log``\ (max(medical deductible expenditure)) if ``IDP``\ =1 and
+   ``MDE``>1 or 0 otherwise
 
 physlim
    physical limitation ?

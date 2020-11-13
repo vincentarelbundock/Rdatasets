@@ -62,7 +62,7 @@ Source
 ~~~~~~
 
 Homepage of the Deutscher Fussball-Bund (DFB, German Football
-Association): http://www.dfb.de/
+Association): https://www.dfb.de/index/
 
 References
 ~~~~~~~~~~

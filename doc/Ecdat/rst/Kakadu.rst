@@ -92,7 +92,7 @@ vparks
    area in the previous 12 months?
 
 tvenv
-   the respondent watches tv programs about the environment? (from 1 to
+   the respondent watches TV programs about the environment? (from 1 to
    9)
 
 conservation
@@ -125,7 +125,7 @@ References
 ~~~~~~~~~~
 
 Journal of Business Economics and Statistics web site :
-http://amstat.tandfonline.com/loi/ubes20.
+https://amstat.tandfonline.com/loi/ubes20.
 
 See Also
 ~~~~~~~~

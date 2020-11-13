@@ -60,7 +60,7 @@ bluecol
    blue collar worker ?
 
 smsa
-   lives is smsa ?
+   lives in SMSA ?
 
 married
    married ?
@@ -97,7 +97,7 @@ Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley and
 Sons, chapter 7.
 
 Journal of Business Economics and Statistics web site :
-http://amstat.tandfonline.com/loi/ubes20.
+https://amstat.tandfonline.com/loi/ubes20.
 
 See Also
 ~~~~~~~~

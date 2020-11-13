@@ -50,7 +50,7 @@ Date_of_Breach
 
 Type_of_Breach
    ``factor`` with 29 levels giving the type of breach (e.g., "Theft"
-   vs., "Unauthorized Access/Disclosure", etc.)
+   vs. "Unauthorized Access/Disclosure", etc.)
 
 Location_of_Breached_Information
    ``factor`` with 41 levels coding the location from which the breach
@@ -97,11 +97,11 @@ The following corrections were made to the file:
 |        |                             | "Unauthorized               |
 +--------+-----------------------------+-----------------------------+
 |        |                             | Access / Disclosure" per    |
-|        |                             | `smartbrief.c               |
-|        |                             | om/03/29/10 <http://www.sma |
-|        |                             | rtbrief.com/03/29/10/5-more |
-|        |                             | -organizations-added-hhs-on |
-|        |                             | line-data-breach-list-0>`__ |
+|        |                             | ```smartbrief.com           |
+|        |                             | /03/29/10`` <https://www.sm |
+|        |                             | artbrief.com/s/2010/03/5-mo |
+|        |                             | re-organizations-added-hhs- |
+|        |                             | online-data-breach-list>`__ |
 +--------+-----------------------------+-----------------------------+
 | 55     | Reliant Rehabilitation      | Cause of breach was         |
 |        | Hospital North              | missing. Added              |
@@ -114,10 +114,10 @@ The following corrections were made to the file:
 |        |                             | Access Lead to              |
 |        |                             | Notification."              |
 +--------+-----------------------------+-----------------------------+
-|        |                             | [ww                         |
-|        |                             | w.phiprivacy.net/two-breach |
-|        |                             | es-involving-unauthorized-a |
-|        |                             | ccess-lead-to-notification; |
+|        |                             | ``www.                      |
+|        |                             | phiprivacy.net/two-breaches |
+|        |                             | -involving-unauthorized-acc |
+|        |                             | ess-lead-to-notification``; |
 |        |                             | approximately 2010-04-20.   |
 |        |                             | This web page has since     |
 |        |                             | been removed, apparently    |
@@ -128,8 +128,9 @@ The following corrections were made to the file:
 |        |                             | missing. Added Improper     |
 +--------+-----------------------------+-----------------------------+
 |        |                             | disposal per                |
-|        |                             | `Aetna.com/news/newsRele    |
-|        |                             | ases/2010/0630 <https://web |
+|        |                             | `                           |
+|        |                             | ``Aetna.com/news/newsReleas |
+|        |                             | es/2010/0630`` <https://web |
 |        |                             | .archive.org/web/2010113008 |
 |        |                             | 0315/http://www.aetna.com/n |
 |        |                             | ews/newsReleases/2010/0630_ |
@@ -150,19 +151,19 @@ The following corrections were made to the file:
 +--------+-----------------------------+-----------------------------+
 |        |                             | `Data Breach Today. N.p., 4 |
 |        |                             | Oct.                        |
-|        |                             | 20                          |
-|        |                             | 10 <http://www.databreachto |
+|        |                             | 201                         |
+|        |                             | 0 <https://www.databreachto |
 |        |                             | day.com/mayo-fires-employee |
 |        |                             | s-in-2-incidents-a-2974>`__ |
 +--------+-----------------------------+-----------------------------+
-| 341    | Saint Barnabas MedicL       | Misspelled "Saint Barnabas  |
-|        | Center                      | Medical Center"             |
+| 341    | ``Sai                       | Misspelled "Saint Barnabas  |
+|        | nt Barnabas MedicL Center`` | Medical Center"             |
 +--------+-----------------------------+-----------------------------+
-| 347    | Americar Health Medicare    | Misspelled "American Health |
-|        |                             | Medicare"                   |
+| 347    | `                           | Misspelled "American Health |
+|        | `Americar Health Medicare`` | Medicare"                   |
 +--------+-----------------------------+-----------------------------+
-| 484    | Lake Granbury Medicl Ceter  | Misspelled "Lake Granbury   |
-|        |                             | Medical Center"             |
+| 484    | ``L                         | Misspelled "Lake Granbury   |
+|        | ake Granbury Medicl Ceter`` | Medical Center"             |
 +--------+-----------------------------+-----------------------------+
 | 782    | See list of Practices under | Replaced name as "Cogent    |
 |        | Item 9                      | Healthcare, Inc." checked   |
@@ -180,8 +181,8 @@ The following corrections were made to the file:
 |        | Center                      | 09/14/2913 corrected as     |
 |        |                             | 09/14/2013                  |
 +--------+-----------------------------+-----------------------------+
-| 961    | Valley View Hosptial        | Misspelled "Valley View     |
-|        | Association                 | Hospital Association"       |
+| 961    | ``Valley                    | Misspelled "Valley View     |
+|        | View Hosptial Association`` | Hospital Association"       |
 +--------+-----------------------------+-----------------------------+
 | 1034   | Bio-Reference Laboratories, | Date changed from 00/00/000 |
 |        | Inc.                        | to 2/02/2014 as             |

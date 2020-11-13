@@ -77,10 +77,10 @@ http://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&r
 References
 ~~~~~~~~~~
 
-Baltagi B (2001). *Econometric Analysis of Panel Data*, 3rd edition.
+Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
 John Wiley and Sons ltd.
 
-Baltagi B (2013). *Econometric Analysis of Panel Data*, 5th edition.
+Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
 John Wiley and Sons ltd.
 
 Cornwell C, Rupert P (1988). “Efficient Estimation With Panel Data: an

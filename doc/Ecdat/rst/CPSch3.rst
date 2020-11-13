@@ -40,7 +40,8 @@ sex
 Source
 ~~~~~~
 
-Bureau of labor statistics, U.S. Department of Labor http://www.bls.gov.
+Bureau of labor statistics, U.S. Department of Labor
+https://www.bls.gov.
 
 References
 ~~~~~~~~~~

@@ -41,9 +41,9 @@ fdd
 Source
 ~~~~~~
 
-U.S. Bureau of Labor Statistics for PPIOJ and PWFSA, National Oceanic
-and Atmospheric Administration (NOAA) of the U.S Department of Commerce
-for FDD.
+U.S. Bureau of Labor Statistics for ``PPIOJ`` and ``PWFSA``, National
+Oceanic and Atmospheric Administration (NOAA) of the U.S Department of
+Commerce for ``fdd``.
 
 References
 ~~~~~~~~~~

@@ -54,7 +54,7 @@ eurobp3
 Source
 ~~~~~~
 
-Datastream .
+``Datastream``
 
 References
 ~~~~~~~~~~

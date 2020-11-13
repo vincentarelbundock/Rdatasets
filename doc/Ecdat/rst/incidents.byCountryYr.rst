@@ -68,7 +68,8 @@ methodology
    The National Consortium for the Study of Terrorism and Responses to
    Terrorism (``START``) has managed data collection since 2011-11-01.
    For this variable, partial years are ignored, so ``methodology`` =
-   CEDIS for 1998:2007, ISVG for 2008:2011, and START for 2012:2014.
+   ``CEDIS`` for 1998:2007, ``ISVG`` for 2008:2011, and ``START`` for
+   2012:2014.
 
 method
    a character vector consisting of the first character of the levels of
@@ -144,7 +145,7 @@ pNA.nkill, pNA.nkill.us, pNA.nwound, pNA.nwound.us
    proportion of observations by year with missing values. These numbers
    are higher for the early data than more recent numbers. This is
    particularly true for ``nkill.us`` and ``nwound.us``, which exceed 90
-   percent for most of the period with ``methodology`` = 'PGIS', prior
+   percent for most of the period with ``methodology`` = ``PGIS``, prior
    to 1998.
 
 worldPopulation, USpopulation
@@ -178,7 +179,7 @@ worldDeaths, USdeaths
 
    ``USdeaths`` were computed by summing across age groups in
    "Deaths_5x1.txt" for the United States, downloaded from
-   http://www.mortality.org/cgi-bin/hmd/country.php?cntr=USA&level=1
+   https://www.mortality.org/cgi-bin/hmd/country.php?cntr=USA&level=1
    from the Human Mortality Database; see sources below.
 
 kill.pmp, kill.pmp.us
@@ -205,7 +206,7 @@ Database <https://en.wikipedia.org/wiki/Suicide_Attack_Database>`__
 showed a 19 percent *decrease* over the same period. Pape et al.
 insisted that the most likely explanation for this difference is the
 change in the organization responsible for managing that data collection
-from ISVG to START.
+from ``ISVG`` to ``START``.
 
 If the issue is restricted to how incidents are classified as "suicide
 terrorism", this concern does not affect the other variables in this
@@ -224,14 +225,14 @@ Source
 
 National Consortium for the Study of Terrorism and Responses to
 Terrorism (START). (2017). Global Terrorism Database [Data file].
-Retrieved from http://www.start.umd.edu/gtd [accessed 2018-04-08].
+Retrieved from https://start.umd.edu/gtd [accessed 2018-04-08].
 
 See also the `Global Terrorism
 Database <https://en.wikipedia.org/wiki/Global_Terrorism_Database>`__
 maintained by the `National Consortium for the Study of Terrorism and
 Responses to
 Terrorism <https://en.wikipedia.org/wiki/National_Consortium_for_the_Study_of_Terrorism_and_Responses_to_Terrorism>`__
-(START, 2015), http://www.start.umd.edu/gtd.
+(START, 2015), https://www.start.umd.edu/gtd.
 
 The world and US population figures came from "Total Population - Both
 Sexes", World Population Prospects 2015, published by the Population
@@ -244,7 +245,7 @@ https://population.un.org/wpp/Download/Standard/Population/.
 
 `Human Mortality Database. University of California, Berkeley (USA), and
 Max Planck Institute for Demographic Research
-(Germany). <http://www.mortality.org/>`__
+(Germany). <https://www.mortality.org>`__
 
 References
 ~~~~~~~~~~

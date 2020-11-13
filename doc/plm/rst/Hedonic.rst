@@ -84,16 +84,16 @@ http://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&r
 References
 ~~~~~~~~~~
 
-Baltagi B (2001). *Econometric Analysis of Panel Data*, 3rd edition.
+Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
 John Wiley and Sons ltd.
 
-Baltagi B (2013). *Econometric Analysis of Panel Data*, 5th edition.
+Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
 John Wiley and Sons ltd.
 
 Besley DA, Kuh E, Welsch RE (1980). *Regression diagnostics: identifying
 influential data and sources of collinearity*. John Wiley and Sons ltd.
 Wiley series in probability and statistics.
 
-Harrison D, Rubinfeld D (1978). “Hedonic housing prices and the demand
+Harrison D, Rubinfeld DL (1978). “Hedonic housing prices and the demand
 for clean air.” *Journal of Environmental Economics and Management*,
-**5**, 81-102.
+**5**, 81–102.

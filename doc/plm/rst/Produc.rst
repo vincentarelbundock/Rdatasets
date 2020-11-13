@@ -71,15 +71,15 @@ http://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&r
 References
 ~~~~~~~~~~
 
-Baltagi B (2001). *Econometric Analysis of Panel Data*, 3rd edition.
+Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
 John Wiley and Sons ltd.
 
-Baltagi B (2013). *Econometric Analysis of Panel Data*, 5th edition.
+Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
 John Wiley and Sons ltd.
 
 Baltagi BH, Pinnoi N (1995). “Public capital stock and state
 productivity growth: further evidence from an error components model.”
-*Empirical Economics*, **20**, 351-359.
+*Empirical Economics*, **20**, 351–359.
 
-Munnell A (1990). “Why Has Productivity Growth Declined? Productivity
+Munnell A (1990). “Why Has Productivity Growth Declined?: Productivity
 and Public Investment.” *New England Economic Review*, 3–22.

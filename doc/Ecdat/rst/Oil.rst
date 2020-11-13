@@ -51,7 +51,8 @@ p
 
 vardp
    volatility of the real oil price process measured as the squared
-   recursive standard errors of the regression of pt-pt-1 on a constant
+   recursive standard errors of the regression of codept-pt-1 on a
+   constant
 
 p97
    adaptive expectations (with parameter theta=0.97) for the real
@@ -60,7 +61,7 @@ p97
 varp97
    volatility of the adaptive expectations (with parameter theta=0.97)
    for real after tax oil prices measured as the squared recursive
-   standard errors of the regression of pt on pte(theta)
+   standard errors of the regression of ``pt`` on ``pte(theta)``
 
 p98
    adaptive expectations (with parameter theta=0.98) for the real
@@ -69,7 +70,7 @@ p98
 varp98
    volatility of the adaptive expectations (with parameter theta=0.98)
    for real after tax oil prices measured as the squared recursive
-   standard errors of the regression of pt on pte(theta)
+   standard errors of the regression of ``pt`` on ``pte(theta)``
 
 Source
 ~~~~~~

@@ -41,7 +41,7 @@ size
    size of the household
 
 town
-   size of the town where the household is placed categorised into 5
+   size of the town where the household is placed categorized into 5
    groups: 1 for small towns, 5 for big ones
 
 sex

@@ -54,7 +54,7 @@ DerivClassActivity
 Details
 ~~~~~~~
 
-The lag 1 autocorrrelation of the first difference of the logarithms of
+The lag 1 autocorrelation of the first difference of the logarithms of
 ``DerivClassActivity`` through 2008 is ``-0.52``. However, because there
 are only 13 numbers (12 differences), this negative correlation is not
 statistically significant.

@@ -42,7 +42,7 @@ acc
 Source
 ~~~~~~
 
-McCullagh, P. and J. Nelder (1983) *Generalized linear methods*, New
+McCullagh, P. and J. Nelder (1983) *Generalized Linear Models*, New
 York:Chapman and Hall.
 
 References

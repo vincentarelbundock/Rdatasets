@@ -47,8 +47,8 @@ Source
 ~~~~~~
 
 Dahlberg, M. and E. Johansson (2000) “An examination of the dynamic
-behavior of local government using GMM boot-strapping methods”, *Journal
-of Applied Econometrics*, **21**, 333-355.
+behavior of local government using ``GMM`` boot-strapping methods”,
+*Journal of Applied Econometrics*, **21**, 333-355.
 
 References
 ~~~~~~~~~~

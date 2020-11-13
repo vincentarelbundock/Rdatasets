@@ -77,7 +77,7 @@ avgsalary
    average teacher salary
 
 pctel
-   percent english learnersh
+   percent English learners
 
 Source
 ~~~~~~

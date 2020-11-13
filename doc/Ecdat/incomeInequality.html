@@ -9,19 +9,21 @@
 
 <h3>Description</h3>
 
-<p>Data on quantiles of the distributions of family incomes in the United
-States. This combines three data sources:
+<p>Data on quantiles of the distributions of family
+incomes in the United States. This combines three
+data sources:
 </p>
 <p>(1) US Census Table F-1 for the central quantiles
 </p>
-<p>(2) Piketty and Saez for the 95th and higher quantiles
+<p>(2) Piketty and Saez for the 95th and higher
+quantiles
 </p>
-<p>(3) Gross Domestic Product and implicit price deflators 
-from Measuring Worth.  (NOTE:  The Measuring 
-Worth Web site, 
+<p>(3) Gross Domestic Product and implicit price
+deflators from Measuring Worth.  (NOTE:  The
+Measuring Worth Web site, 
 <code>https://MeasuringWorth.com</code>, often gives 
 security warnings.  The desired data still seems 
-to be available, however.)
+to be available and not corrupted, however.)
 </p>
 
 
@@ -60,8 +62,8 @@ practical purposes.
 <p>real GDP in millions, GDP implicit price 
 deflators, US population in thousands, and 
 real GDP per capita, according to
-MeasuringWorth.com.  (NOTE:  The web address
-for this, 
+<code>MeasuringWorth.com</code>.  (NOTE:  The web
+address for this, 
 <code>https://MeasuringWorth.com</code>, seems 
 to be functional but may not be maintained 
 to current internet security standards.  It 
@@ -70,22 +72,27 @@ a hot link.)
 </p>
 </dd>
 <dt>P95IRSvsCensus</dt><dd>
-<p>ratio of the estimates of the 95th percentile of distributions of
-family income from the Piketty and Saez analysis of data from the
-Internal Revenue Service (IRS) and from the US Census Bureau.
+<p>ratio of the estimates of the 95th 
+percentile of distributions of family 
+income from the Piketty and Saez analysis 
+of data from the Internal Revenue Service 
+(IRS) and from the US Census Bureau.
 </p>
-<p>The IRS has ranged between 72 and 98 percent of the Census Bureau
-figures for the 95th percentile of the distribution, with this
-ratio averaging around 75 percent since the late 1980s.  However,
-this systematic bias is modest relative to the differences between
-the different quantiles of interest in this combined dataset.
+<p>The IRS has ranged between 72 and 98 percent 
+of the Census Bureau figures for the 95th
+percentile of the distribution, with this
+ratio averaging around 75 percent since the
+late 1980s.  However, this systematic bias 
+is modest relative to the differences between
+the different quantiles of interest in this
+combined dataset.
 </p>
 </dd>
 <dt>personsPerFamily</dt><dd>
 <p>average number of persons per family using 
-the number of families from US Census Table F-1 
-and the population from Measureing Worth.  (Note:  
-The web site for Measuring Worth, 
+the number of families from US Census Table 
+F-1 and the population from MeasuringWorth.
+(Note:  The web site for Measuring Worth, 
 <code>https://MeasuringWorth.com</code>, often gives 
 security warnings.  It still seems to work.  
 It seems that the web site is not maintained 
@@ -97,9 +104,9 @@ to current internet security standards.)
 </p>
 </dd>
 <dt>mean.median</dt><dd>
-<p>ratio of <code>realGDPperFamily</code> to the median.  
-This is a measure of skewness and income 
-inequality.
+<p>ratio of <code>realGDPperFamily</code> to the 
+median.  This is a measure of skewness and
+income inequality.
 </p>
 </dd>
 </dl>
@@ -108,12 +115,15 @@ inequality.
 
 <h3>Details</h3>
 
-<p>For details on how this <code>data.frame</code> was created, see
-&quot;F1.PikettySaez.R&quot; in <code>system.file('scripts', package='fda')</code>.
-This provides links for files to download and R commands to read those
-files and convert them into an updated version of
-<code>incomeInequality</code>.  This is a reasonable thing to do if it is
-more  than 2 years since <code>max(incomeInequality$year)</code>.  All data
+<p>For details on how this <code>data.frame</code> was
+created, see <code>"F1.PikettySaez.R"</code> in
+<code>system.file('scripts', package='fda')</code>.
+This provides links for files to download and R
+commands to read those files and convert them 
+into an updated version of <code>incomeInequality</code>.
+This is a reasonable thing to do if it is more 
+than 2 years since 
+<code>max(incomeInequality$year)</code>.  All data
 are in constant 2012 dollars.
 </p>
 
@@ -134,7 +144,7 @@ accessed 2016-12-09.
 <p>Thomas Piketty and Emmanuel Saez (2003) &quot;Income 
 Inequality in the United States, 1913-1998&quot;, 
 Quarterly Journal of Economics, 118(1) 1-39, 
-<a href="https://eml.berkeley.edu/~saez">https://eml.berkeley.edu/~saez</a>, update accessed
+<a href="https://eml.berkeley.edu/~saez/">https://eml.berkeley.edu/~saez/</a>, update accessed
 February 28, 2014.
 </p>
 <p>Louis Johnston and Samuel H. Williamson (2011) 

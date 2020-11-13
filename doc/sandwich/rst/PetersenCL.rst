@@ -48,7 +48,7 @@ different from the standard errors clustered by year.
 Source
 ~~~~~~
 
-http://www.kellogg.northwestern.edu/faculty/petersen/htm/papers/se/test_data.htm
+https://www.kellogg.northwestern.edu/faculty/petersen/htm/papers/se/test_data.htm
 
 References
 ~~~~~~~~~~
@@ -56,4 +56,4 @@ References
 Petersen MA (2009). “Estimating Standard Errors in Finance Panel Data
 Sets: Comparing Approaches”, *The Review of Financial Studies*,
 **22**\ (1), 435–480. doi:
-`10.1093/rfs/hhn053 <http://doi.org/10.1093/rfs/hhn053>`__
+`10.1093/rfs/hhn053 <https://doi.org/10.1093/rfs/hhn053>`__

@@ -71,7 +71,7 @@ wcon
    weekly wage in construction
 
 wtuc
-   weekly wage in trns, util, commun
+   weekly wage in ``trns, util, commun``
 
 wtrd
    weekly wage in whole sales and retail trade
@@ -95,7 +95,7 @@ wloc
    weekly wage of local governments employees
 
 mix
-   offence mix: face-to-face/other
+   offense mix: face-to-face/other
 
 pctymle
    percentage of young males
@@ -114,20 +114,20 @@ Cornwell, C. and W.N. Trumbull (1994) “Estimating the economic model of
 crime with panel data”, *Review of Economics and Statistics*, **76**,
 360–366.
 
-Baltagi, B. H. (forthcoming) “Estimating an economic model of crime
-using panel data from North Carolina”, *Journal of Applied
-Econometrics*.
+Baltagi, B. H. (2006) “Estimating an economic model of crime using panel
+data from North Carolina”, *Journal of Applied Econometrics*, 21(4),
+May/June 2006, pp. 543-547.
 
-`CRIME4.DES <http://fmwww.bc.edu/ec-p/data/wooldridge/crime4.des>`__
+See also:
+```CRIME4.DES`` <http://fmwww.bc.edu/ec-p/data/wooldridge/crime4.des>`__
+and Baltagi in `JAE Data
+Archive <http://qed.econ.queensu.ca/jae/datasets/baltagi003/>`__.
 
 References
 ~~~~~~~~~~
 
 Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John Wiley
-and sons, http://www.wiley.com/legacy/wileychi/baltagi/, .
-
-Journal of Applied Econometrics data archive :
-http://qed.econ.queensu.ca/jae/.
+and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
 
 See Also
 ~~~~~~~~

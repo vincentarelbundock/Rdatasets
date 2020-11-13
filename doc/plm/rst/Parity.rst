@@ -56,15 +56,15 @@ Source
 
 Coakley J, Fuertes A, Smith R (2006). “Unobserved heterogeneity in panel
 time series models.” *Computational Statistics \\& Data Analysis*,
-**50**\ (9), 2361–2380.
+**50**, 2361–2380.
 
 References
 ~~~~~~~~~~
 
 Coakley J, Fuertes A, Smith R (2006). “Unobserved heterogeneity in panel
 time series models.” *Computational Statistics \\& Data Analysis*,
-**50**\ (9), 2361–2380.
+**50**, 2361–2380.
 
 Driscoll JC, Kraay AC (1998). “Consistent covariance matrix estimation
 with spatially dependent panel data.” *Review of economics and
-statistics*, **80**\ (4), 549–560.
+statistics*, **80**, 549–560.

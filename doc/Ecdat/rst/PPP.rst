@@ -46,7 +46,7 @@ cpifr
 Source
 ~~~~~~
 
-Datastream.
+``Datastream``.
 
 References
 ~~~~~~~~~~

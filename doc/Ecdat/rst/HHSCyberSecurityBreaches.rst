@@ -11,7 +11,7 @@ Description
 Since October 2009 organizations in the U.S. that store data on human
 health are required to report any incident that compromises the
 confidentiality of 500 or more patients / human subjects (`45 C.F.R.
-164.408 <http://www.hhs.gov/ocr/privacy/hipaa/administrative/breachnotificationrule/brinstruction.html>`__)
+164.408 <https://www.hhs.gov/hipaa/for-professionals/breach-notification/breach-reporting/index.html>`__)
 These reports are publicly available. ``HHSCyberSecurityBreaches`` was
 downloaded from `the Office for Civil Rights of the U.S. Department of
 Health and Human Services,
@@ -65,7 +65,7 @@ Location.of.Breached.Information
    Electronic Device", "Paper/Films"
 
 Business.Associate.Present
-   ``Logical`` = (Covered.Entity.Type == "Business Associate")
+   ``Logical`` = (``Covered.Entity.Type`` == "Business Associate")
 
 Web.Description
    A character vector giving a narrative description of the incident.
@@ -74,7 +74,7 @@ Details
 ~~~~~~~
 
 This contains the breach report data downloaded 2015-02-26 from the US
-Health and Human Services. This catalogues reports starting 2009-10-21.
+Health and Human Services. This catalogs reports starting 2009-10-21.
 Earlier downloads included a few breaches prior to 2009 when the law was
 enacted (inconsistently reported), and a date for breach occurrence in
 addition to the date of the report.
@@ -99,14 +99,14 @@ The following corrections were made to the file:
 -  Not applicable, breach date 11/2/2011 name changed to Northridge
    Hospital Medical Center and state changed to CA
 
--  na, breach date 4/4/2011 name changed to Brian J Daniels DDS, Paul R
-   Daniels DDS and state changed to AZ
+-  ``na``, breach date 4/4/2011 name changed to Brian J Daniels DDS,
+   Paul R Daniels DDS, and state changed to AZ
 
--  NA, breach date 5/27/2011 name changed to and Spartanburg Regional
-   Healthcare System state changed to SC
+-  ``NA``, breach date 5/27/2011 name changed to and Spartanburg
+   Regional Healthcare System state changed to SC
 
--  NA, breach date 7/4/2011 name changed to Yanz Dental Corporation and
-   state changed to CA
+-  ``NA``, breach date 7/4/2011 name changed to Yanz Dental Corporation
+   and state changed to CA
 
 Source
 ~~~~~~

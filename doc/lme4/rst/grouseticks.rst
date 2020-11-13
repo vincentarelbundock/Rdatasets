@@ -73,6 +73,7 @@ Examples
 
 ::
 
+   if (lme4_testlevel()>1) {
    data(grouseticks)
    ## Figure 1a from Elston et al
    par(las=1,bty="l")
@@ -96,3 +97,4 @@ Examples
    ## Model fitting
    form <- TICKS~YEAR+HEIGHT+(1|BROOD)+(1|INDEX)+(1|LOCATION)
    (full_mod1  <- glmer(form, family="poisson",data=grouseticks))
+   }

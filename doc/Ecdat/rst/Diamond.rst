@@ -35,7 +35,7 @@ colour
    a factor with levels (D,E,F,G,H,I)
 
 clarity
-   a factor with levels (IF,VVS1,VVS2,VS1,VS2)
+   a factor with levels (``IF,VVS1,VVS2,VS1,VS2``)
 
 certification
    certification body, a factor with levels ( ``GIA``, ``IGI``, ``HRD``)
@@ -53,7 +53,7 @@ References
 ~~~~~~~~~~
 
 Journal of Statistics Education's data archive :
-http://www.amstat.org/publications/jse/jse_data_archive.htm.
+http://jse.amstat.org/jse_data_archive.htm.
 
 See Also
 ~~~~~~~~

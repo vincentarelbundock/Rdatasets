@@ -70,18 +70,18 @@ http://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&r
 References
 ~~~~~~~~~~
 
-Baltagi B (2001). *Econometric Analysis of Panel Data*, 3rd edition.
+Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
 John Wiley and Sons ltd.
 
-Baltagi B (2013). *Econometric Analysis of Panel Data*, 5th edition.
+Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
 John Wiley and Sons ltd.
 
 Grunfeld Y (1958). *The determinants of corporate investment*. Ph.D.
-thesis, Department of Economics, University of Chicago.
+thesis, Department of Economics, University of Chicago [dgg].
 
 Kleiber C, Zeileis A (2010). “The Grunfeld Data at 50.” *German Economic
-Review*, **11**, 404-417.
-https://doi.org/10.1111/j.1468-0475.2010.00513.x.
+Review*, **11**, 404–417. doi:
+`10.1111/j.1468-0475.2010.00513.x <https://doi.org/10.1111/j.1468-0475.2010.00513.x>`__.
 
 website accompanying the paper with various variants of the Grunfeld
 data: https://eeecon.uibk.ac.at/~zeileis/grunfeld/.

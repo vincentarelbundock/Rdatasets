@@ -37,14 +37,14 @@ Table 14.1 in Greene (1993)
 References
 ~~~~~~~~~~
 
-Cribari-Neto F. (2004), Asymptotic Inference Under Heteroskedasticity of
-Unknown Form, *Computational Statistics \\& Data Analysis*, **45**,
+Cribari-Neto F. (2004). “Asymptotic Inference Under Heteroskedasticity
+of Unknown Form.” *Computational Statistics \\& Data Analysis*, **45**,
 215-233.
 
-Greene W.H. (1993), *Econometric Analysis*, 2nd edition. Macmillan
+Greene W.H. (1993). *Econometric Analysis*, 2nd edition. Macmillan
 Publishing Company, New York.
 
-US Department of Commerce (1979), *Statistical Abstract of the United
+US Department of Commerce (1979). *Statistical Abstract of the United
 States*. US Government Printing Office, Washington, DC.
 
 Examples

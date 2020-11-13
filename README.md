@@ -53,6 +53,7 @@ cd doc
 Second, commit to master.
 
 ```bash
+cd ..
 git add .
 git commit
 ```

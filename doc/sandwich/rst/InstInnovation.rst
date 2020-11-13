@@ -155,12 +155,12 @@ References
 
 Aghion P, Van Reenen J, Zingales L (2013). “Innovation and Institutional
 Ownership.” *The American Economic Review*, **103**\ (1), 277–304. doi:
-`10.1257/aer.103.1.277 <http://doi.org/10.1257/aer.103.1.277>`__
+`10.1257/aer.103.1.277 <https://doi.org/10.1257/aer.103.1.277>`__
 
 Berger S, Stocker H, Zeileis A (2017). “Innovation and Institutional
 Ownership Revisited: An Empirical Investigation with Count Data Models.”
 *Empirical Economics*, **52**\ (4), 1675–1688. doi:
-`10.1007/s00181-016-1118-0 <http://doi.org/10.1007/s00181-016-1118-0>`__
+`10.1007/s00181-016-1118-0 <https://doi.org/10.1007/s00181-016-1118-0>`__
 
 Blundell R, Griffith R, Van Reenen J (1999). “Market Share, Market Value
 and Innovation in a Panel of British Manufacturing Firms.” *Review of

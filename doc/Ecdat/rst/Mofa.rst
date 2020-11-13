@@ -2,8 +2,8 @@
 Mofa R Documentation
 ==== ===============
 
-International Expansion of U.S. Mofa's (majority–owned Foreign Affiliates in Fire (finance, Insurance and Real Estate)
-----------------------------------------------------------------------------------------------------------------------
+International Expansion of U.S. MOFAs (majority–owned Foreign Affiliates in Fire (finance, Insurance and Real Estate)
+---------------------------------------------------------------------------------------------------------------------
 
 Description
 ~~~~~~~~~~~
@@ -29,7 +29,7 @@ Format
 A dataframe containing :
 
 capexp
-   capital expenditures made by the MOFA's of nonbank U.S. corporations
+   capital expenditures made by the MOFAs of nonbank U.S. corporations
    in finance, insurance and real estate. Source: "U.S. Direct
    Investment Abroad: 1982 Benchmark Survey data." Table III.C 6.
 
@@ -49,7 +49,7 @@ nbaf
    variable is scaled by a factor of 1/100)
 
 netinc
-   net income earned by MOFA's of nonbank U.S. corporations operating in
+   net income earned by MOFAs of nonbank U.S. corporations operating in
    the nonbanking financial sector of the host country. Source: "U.S.
    Direct Investment Abroad: 1982 Benchmark Survey Data." Table III.D
    6.(This variable is scaled by a factor of 1/10)
@@ -65,7 +65,7 @@ References
 ~~~~~~~~~~
 
 Journal of Business Economics and Statistics web site :
-http://amstat.tandfonline.com/loi/ubes20.
+https://amstat.tandfonline.com/loi/ubes20.
 
 See Also
 ~~~~~~~~

@@ -36,6 +36,7 @@ Imports:
     geepack,
     gt,
     ggplot2,
+    ggplot2movies,
     HistData,
     HSAUR,
     hwde,

@@ -53,7 +53,7 @@ Source
 ~~~~~~
 
 Nunes, Paulo (2000) *Contingent Valuation of the Benefits of natural
-areas and its warmglow component*, PhD thesis 133, FETEW, `KU
+areas and its warmglow component*, PhD thesis 133, ``FETEW``, `KU
 Leuven <https://en.wikipedia.org/wiki/KU_Leuven>`__.
 
 References

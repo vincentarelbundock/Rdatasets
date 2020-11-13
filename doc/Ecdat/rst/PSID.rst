@@ -51,7 +51,7 @@ kids
 
 married
    last known marital status (married, never married, windowed,
-   divorced, separated, NA/DF, no histories)
+   divorced, separated, ``NA/DF``, no histories)
 
 Source
 ~~~~~~

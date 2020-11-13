@@ -58,5 +58,5 @@ Applications*. Cambridge University Press. ISBN 0521848059, doi:
 
 Ziliak JP (1997). “Efficient Estimation with Panel Data When Instruments
 Are Predetermined: An Empirical Comparison of Moment-Condition
-Estimators.” *Journal of Business & Economic Statistics*, **15**\ (4),
-419–431. ISSN 07350015.
+Estimators.” *Journal of Business & Economic Statistics*, **15**,
+419–431.

@@ -33,7 +33,7 @@ date
 
 s
    the ask price of the dollar in units of Yen in the spot market on
-   friday of the current week
+   Friday of the current week
 
 f
    the ask price of the dollar in units of Yen in the 30-day forward
