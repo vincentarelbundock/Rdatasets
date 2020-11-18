@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Hourly weather data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for weather"><tr><td>weather</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Hourly weather data</h2>
+
+<h3>Description</h3>
+
+<p>Hourly meterological data for LGA, JFK and EWR.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+weather
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with columns
+</p>
+
+<dl>
+<dt>origin</dt><dd><p>Weather station. Named <code>origin</code> to facilitate merging with
+<code>flights</code> data.</p>
+</dd>
+<dt>year, month, day, hour</dt><dd><p>Time of recording.</p>
+</dd>
+<dt>temp, dewp</dt><dd><p>Temperature and dewpoint in F.</p>
+</dd>
+<dt>humid</dt><dd><p>Relative humidity.</p>
+</dd>
+<dt>wind_dir, wind_speed, wind_gust</dt><dd><p>Wind direction (in degrees), speed
+and gust speed (in mph).</p>
+</dd>
+<dt>precip</dt><dd><p>Precipitation, in inches.</p>
+</dd>
+<dt>pressure</dt><dd><p>Sea level pressure in millibars.</p>
+</dd>
+<dt>visib</dt><dd><p>Visibility in miles.</p>
+</dd>
+<dt>time_hour</dt><dd><p>Date and hour of the recording as a <code>POSIXct</code> date.</p>
+</dd>
+</dl>
+
+
+<h3>Source</h3>
+
+<p>ASOS download from Iowa Environmental Mesonet,
+<a href="https://mesonet.agron.iastate.edu/request/download.phtml">https://mesonet.agron.iastate.edu/request/download.phtml</a>.
+</p>
+
+
+</body></html>
