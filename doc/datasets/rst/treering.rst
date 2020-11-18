@@ -34,8 +34,7 @@ Bristlecone Pine 2805M, 3726-11810 in Methuselah Walk, California.
 Source
 ~~~~~~
 
-Time Series Data Library:
-http://www-personal.buseco.monash.edu.au/~hyndman/TSDL/, series
+Time Series Data Library: https://robjhyndman.com/TSDL/, series
 ‘CA535.DAT’
 
 References

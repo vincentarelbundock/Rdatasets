@@ -39,7 +39,7 @@ Source
 ~~~~~~
 
 General Social Survey data, see the web site for detailed information on
-the variables. http://www3.norc.org/GSS+Website.
+the variables. https://gss.norc.org/.
 
 References
 ~~~~~~~~~~

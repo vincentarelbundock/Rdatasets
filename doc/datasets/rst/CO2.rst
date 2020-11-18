@@ -1,55 +1,87 @@
 === ===============
-co2 R Documentation
+CO2 R Documentation
 === ===============
 
-Mauna Loa Atmospheric CO2 Concentration
----------------------------------------
+Carbon Dioxide Uptake in Grass Plants
+-------------------------------------
 
 Description
 ~~~~~~~~~~~
 
-Atmospheric concentrations of CO\ *2* are expressed in parts per million
-(ppm) and reported in the preliminary 1997 SIO manometric mole fraction
-scale.
+The ``CO2`` data frame has 84 rows and 5 columns of data from an
+experiment on the cold tolerance of the grass species *Echinochloa
+crus-galli*.
 
 Usage
 ~~~~~
 
 ::
 
-   co2
+   CO2
 
 Format
 ~~~~~~
 
-A time series of 468 observations; monthly from 1959 to 1997.
+An object of class
+``c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame")``
+containing the following columns:
+
+Plant
+   an ordered factor with levels ``Qn1`` < ``Qn2`` < ``Qn3`` < ... <
+   ``Mc1`` giving a unique identifier for each plant.
+
+Type
+   a factor with levels ``Quebec`` ``Mississippi`` giving the origin of
+   the plant
+
+Treatment
+   a factor with levels ``nonchilled`` ``chilled``
+
+conc
+   a numeric vector of ambient carbon dioxide concentrations (mL/L).
+
+uptake
+   a numeric vector of carbon dioxide uptake rates (*umol/m^2* sec).
 
 Details
 ~~~~~~~
 
-The values for February, March and April of 1964 were missing and have
-been obtained by interpolating linearly between the values for January
-and May of 1964.
+The *CO2* uptake of six plants from Quebec and six plants from
+Mississippi was measured at several levels of ambient *CO2*
+concentration. Half the plants of each type were chilled overnight
+before the experiment was conducted.
+
+This dataset was originally part of package ``nlme``, and that has
+methods (including for ``[``, ``as.data.frame``, ``plot`` and ``print``)
+for its grouped-data classes.
 
 Source
 ~~~~~~
 
-Keeling, C. D. and Whorf, T. P., Scripps Institution of Oceanography
-(SIO), University of California, La Jolla, California USA 92093-0220.
+Potvin, C., Lechowicz, M. J. and Tardif, S. (1990) “The statistical
+analysis of ecophysiological response curves obtained from experiments
+involving repeated measures”, *Ecology*, **71**, 1389–1400.
 
-ftp://cdiac.esd.ornl.gov/pub/maunaloa-co2/maunaloa.co2.
-
-References
-~~~~~~~~~~
-
-Cleveland, W. S. (1993) *Visualizing Data*. New Jersey: Summit Press.
+Pinheiro, J. C. and Bates, D. M. (2000) *Mixed-effects Models in S and
+S-PLUS*, Springer.
 
 Examples
 ~~~~~~~~
 
 ::
 
-   require(graphics)
-   plot(co2, ylab = expression("Atmospheric concentration of CO"[2]),
-        las = 1)
-   title(main = "co2 data set")
+   require(stats); require(graphics)
+
+   coplot(uptake ~ conc | Plant, data = CO2, show.given = FALSE, type = "b")
+   ## fit the data for the first plant
+   fm1 <- nls(uptake ~ SSasymp(conc, Asym, lrc, c0),
+      data = CO2, subset = Plant == "Qn1")
+   summary(fm1)
+   ## fit each plant separately
+   fmlist <- list()
+   for (pp in levels(CO2$Plant)) {
+     fmlist[[pp]] <- nls(uptake ~ SSasymp(conc, Asym, lrc, c0),
+         data = CO2, subset = Plant == pp)
+   }
+   ## check the coefficients by plant
+   print(sapply(fmlist, coef), digits = 3)

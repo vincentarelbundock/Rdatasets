@@ -24,7 +24,7 @@ Format
 This data frame contains the following columns:
 
 ``Sex``
-   sex: Factor with evels ``"F"`` and ``"M"``.
+   sex: Factor with levels ``"F"`` and ``"M"``.
 
 ``Bwt``
    body weight in kg.

@@ -50,6 +50,7 @@ Imports:
     mi,
     mosaicData,
     multgee,
+    nycflights13,
     palmerpenguins,
     plm,
     plyr,

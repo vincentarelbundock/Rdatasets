@@ -23,8 +23,7 @@ Source
 ~~~~~~
 
 The data are given in Box & Jenkins (1976). Obtained from the Time
-Series Data Library at
-http://www-personal.buseco.monash.edu.au/~hyndman/TSDL/
+Series Data Library at https://robjhyndman.com/TSDL/
 
 References
 ~~~~~~~~~~

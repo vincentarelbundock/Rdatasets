@@ -16,9 +16,7 @@ Usage
 
 ::
 
-   heart
-   jasa
-   jasa1
+   data(heart)
 
 Format
 ~~~~~~
