@@ -1,0 +1,133 @@
+==== ===============
+TV16 R Documentation
+==== ===============
+
+The Individual Correlates of the Trump Vote in 2016
+---------------------------------------------------
+
+Description
+~~~~~~~~~~~
+
+These data come from the 2016 CCES and allow interested students to
+model the individual correlates of the Trump vote in 2016. Code/analysis
+heavily indebted to a 2017 analysis I did on my blog (see references).
+
+Usage
+~~~~~
+
+::
+
+   TV16
+
+Format
+~~~~~~
+
+A data frame with 64600 observations on the following 21 variables.
+
+``uid``
+   a numeric vector, a unique identifier for the respondent as they
+   first appear in the CCES data.
+
+``state``
+   a character vector for the state in which the respondent resides
+
+``votetrump``
+   a numeric that equals 1 if the respondent voted says s/he voted for
+   Trump in 2016.
+
+``age``
+   a numeric vector for age that is roughly calculated as 2016 -
+   ``birthyr``, as it's coded in the CCES data.
+
+``female``
+   a numeric that equals 1 if the respondent is a woman
+
+``collegeed``
+   a numeric vector that equals 1 if the respondent says s/he has a
+   college degree
+
+``racef``
+   a character vector for the race of the respondent
+
+``famincr``
+   a numeric vector for the respondent's household income. Ranges from 1
+   (Less than $10,000) to 12 ($150,000 or more).
+
+``ideo``
+   a numeric vector for the respondent's ideology on a
+   liberal-conservative discrete scale. 1 = very liberal. 5 = very
+   conservative.
+
+``pid7na``
+   a numeric vector for the respondent's partisanship on the familiar
+   1-7 scale. 1 = Strong Democrat. 7 = Strong Republican. Other party
+   supporters (e.g. libertarians) are coded as NA.
+
+``bornagain``
+   a numeric vector for whether the respondent self-identifies as a
+   born-again Christian.
+
+``religimp``
+   a numeric vector for the importance of religion to the respondent. 1
+   = not at all important. 4 = very important.
+
+``churchatd``
+   a numeric vector for the extent of church attendance for the
+   respondent. 1 = never. 6 = more than once a week.
+
+``prayerfreq``
+   a numeric vector for the frequency of prayer for the respondent. 1 =
+   never. 7 = several times a day.
+
+``angryracism``
+   a numeric vector for how angry the respondent is that racism exists.
+   1 = strongly agree (i.e. is angry racism exists). 5 = strongly
+   disagree.
+
+``whiteadv``
+   a numeric vector for agreement with statement that white people have
+   advantages over others in the U.S. 1 = strongly agree. 5 = strongly
+   disagree.
+
+``fearraces``
+   a numeric vector for agreement with statement that the respondent
+   fears other races. 1 = strongly disagree. 5 = strongly agree.
+
+``racerare``
+   a numeric vector for agreement with statement that racism is rare in
+   the U.S. 1 = strongly disagree. 5 = strongly agree.
+
+``lrelig``
+   a numeric vector that serves as a latent estimate for religiosity
+   from the ``bornagain``, ``religimp``, ``churchatd``, and
+   ``prayerfreq`` variables. Higher values = more religiosity.
+
+``lcograc``
+   a numeric vector that serves as a latent estimate for cognitive
+   racism. This is derived from the ``racerare`` and ``whiteadv``
+   variables.
+
+``lemprac``
+   a numeric vector that serves as a latent estimate for empathetic
+   racism. This is derived from the ``fearraces`` and ``angryracism``
+   variables.
+
+Details
+~~~~~~~
+
+The latent estimates for religiosity, cognitive racism, and empathetic
+racism come from a graded response model estimated in ``mirt``. The
+concepts of "cognitive racism" and "empathetic racism" come from DeSante
+and Smith.
+
+Source
+~~~~~~
+
+Cooperative Congressional Election Study, 2016
+
+References
+~~~~~~~~~~
+
+http://svmiller.com/blog/2017/04/age-income-racism-partisanship-trump-vote-2016/
+
+https://github.com/svmiller/2016-cces-trump-vote/blob/master/1-2016-cces-trump.R
