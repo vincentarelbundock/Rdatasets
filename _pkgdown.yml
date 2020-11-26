@@ -5,5 +5,5 @@ navbar:
   title: Rdatasets
   type: default
   left:
-    - text: List of Datasets
-      href: https://vincentarelbundock.github.io/Rdatasets/articles/data.html
+    - text: Available datasets
+      href: articles/data.html

@@ -15,7 +15,9 @@ knitr::opts_chunk$set(
 ```
 
 ```{r, messages=FALSE, warnings=FALSE, echo=FALSE}
-library(gt)
+# library(gt)
+
+library(DT)
 library(kableExtra)
 suppressMessages(library(tidyverse))
 dat <- read.csv('https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv') %>%
@@ -24,5 +26,10 @@ dat <- read.csv('https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/
               Doc = paste0('<a href="', Doc, '">Doc</a>'),
               Doc = map(Doc, gt::html)) %>%
        select(Package, Item, Title, CSV, Doc, Rows, Cols, order(names(.)))
-gt(dat) %>% tab_options(table.width = pct(100))
+
+
+options(DT.warn.size=FALSE)
+datatable(dat, options=list(paging=FALSE))
+
+# gt(dat) %>% tab_options(table.width = pct(100))
 ```
