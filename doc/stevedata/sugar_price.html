@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: IMF Primary Commodity Price Data for Sugar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for sugar_price"><tr><td>sugar_price</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>IMF Primary Commodity Price Data for Sugar</h2>
+
+<h3>Description</h3>
+
+<p>This is primary commodity price data for sugar globally,
+in the United States, and in Europe for every month from 1980 to (roughly)
+the present. Prices are nominal U.S. cents per pound and are
+not seasonally adjusted (&quot;NSA&quot;).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+sugar_price
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1,298 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>date</code></dt><dd><p>a date</p>
+</dd>
+<dt><code>category</code></dt><dd><p>the category (either the U.S., global, or Europe)</p>
+</dd>
+<dt><code>value</code></dt><dd><p>the price of sugar in U.S. cents per pound (NSA, nominal)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The price data for Europe do not appear to be updated as regularly as the
+global and U.S. prices. Thus, the last month in the data for Europe are June 2017.
+For that reason, I elected to make a data set of these data for posterity's sake.
+</p>
+
+
+<h3>Source</h3>
+
+<p>International Monetary Fund
+</p>
+
+
+</body></html>

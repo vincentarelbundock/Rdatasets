@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: The Individual Correlates of the Trump Vote in 2016</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for TV16"><tr><td>TV16</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Individual Correlates of the Trump Vote in 2016</h2>
+
+<h3>Description</h3>
+
+<p>These data come from the 2016 CCES and allow interested students to model the
+individual correlates of the Trump vote in 2016. Code/analysis heavily indebted
+to a 2017 analysis I did on my blog (see references).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+TV16
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 64600 observations on the following 21 variables.
+</p>
+
+<dl>
+<dt><code>uid</code></dt><dd><p>a numeric vector, a unique identifier for the respondent as they first appear in the CCES data.</p>
+</dd>
+<dt><code>state</code></dt><dd><p>a character vector for the state in which the respondent resides</p>
+</dd>
+<dt><code>votetrump</code></dt><dd><p>a numeric that equals 1 if the respondent voted says s/he voted for Trump in 2016.</p>
+</dd>
+<dt><code>age</code></dt><dd><p>a numeric vector for age that is roughly calculated as 2016 - <code>birthyr</code>, as it's coded in the CCES data.</p>
+</dd>
+<dt><code>female</code></dt><dd><p>a numeric that equals 1 if the respondent is a woman</p>
+</dd>
+<dt><code>collegeed</code></dt><dd><p>a numeric vector that equals 1 if the respondent says s/he has a college degree</p>
+</dd>
+<dt><code>racef</code></dt><dd><p>a character vector for the race of the respondent</p>
+</dd>
+<dt><code>famincr</code></dt><dd><p>a numeric vector for the respondent's household income. Ranges from 1 (Less than $10,000) to 12 ($150,000 or more).</p>
+</dd>
+<dt><code>ideo</code></dt><dd><p>a numeric vector for the respondent's ideology on a liberal-conservative discrete scale. 1 = very liberal. 5 = very conservative.</p>
+</dd>
+<dt><code>pid7na</code></dt><dd><p>a numeric vector for the respondent's partisanship on the familiar 1-7 scale. 1 = Strong Democrat. 7 = Strong Republican. Other party supporters (e.g. libertarians) are coded as NA.</p>
+</dd>
+<dt><code>bornagain</code></dt><dd><p>a numeric vector for whether the respondent self-identifies as a born-again Christian.</p>
+</dd>
+<dt><code>religimp</code></dt><dd><p>a numeric vector for the importance of religion to the respondent. 1 = not at all important. 4 = very important.</p>
+</dd>
+<dt><code>churchatd</code></dt><dd><p>a numeric vector for the extent of church attendance for the respondent. 1 = never. 6 = more than once a week.</p>
+</dd>
+<dt><code>prayerfreq</code></dt><dd><p>a numeric vector for the frequency of prayer for the respondent. 1 = never. 7 = several times a day.</p>
+</dd>
+<dt><code>angryracism</code></dt><dd><p>a numeric vector for how angry the respondent is that racism exists. 1 = strongly agree (i.e. is angry racism exists). 5 = strongly disagree.</p>
+</dd>
+<dt><code>whiteadv</code></dt><dd><p>a numeric vector for agreement with statement that white people have advantages over others in the U.S. 1 = strongly agree. 5 = strongly disagree.</p>
+</dd>
+<dt><code>fearraces</code></dt><dd><p>a numeric vector for agreement with statement that the respondent fears other races. 1 = strongly disagree. 5 = strongly agree.</p>
+</dd>
+<dt><code>racerare</code></dt><dd><p>a numeric vector for agreement with statement that racism is rare in the U.S. 1 = strongly disagree. 5 = strongly agree.</p>
+</dd>
+<dt><code>lrelig</code></dt><dd><p>a numeric vector that serves as a latent estimate for religiosity from the <code>bornagain</code>, <code>religimp</code>, <code>churchatd</code>, and <code>prayerfreq</code> variables. Higher values = more religiosity. </p>
+</dd>
+<dt><code>lcograc</code></dt><dd><p>a numeric vector that serves as a latent estimate for cognitive racism. This is derived from the <code>racerare</code> and <code>whiteadv</code> variables.</p>
+</dd>
+<dt><code>lemprac</code></dt><dd><p>a numeric vector that serves as a latent estimate for empathetic racism. This is derived from the <code>fearraces</code> and <code>angryracism</code> variables.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The latent estimates for religiosity, cognitive racism, and empathetic
+racism come from a graded response model estimated in <code>mirt</code>. The concepts of
+&quot;cognitive racism&quot; and &quot;empathetic racism&quot; come from DeSante and Smith.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Cooperative Congressional Election Study, 2016
+</p>
+
+
+<h3>References</h3>
+
+<p><a href="http://svmiller.com/blog/2017/04/age-income-racism-partisanship-trump-vote-2016/">http://svmiller.com/blog/2017/04/age-income-racism-partisanship-trump-vote-2016/</a>
+</p>
+<p><a href="https://github.com/svmiller/2016-cces-trump-vote/blob/master/1-2016-cces-trump.R">https://github.com/svmiller/2016-cces-trump-vote/blob/master/1-2016-cces-trump.R</a>
+</p>
+
+
+</body></html>
