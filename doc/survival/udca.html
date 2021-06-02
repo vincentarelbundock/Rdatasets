@@ -17,7 +17,10 @@ biliary cirrohosis (PBC).
 
 <h3>Usage</h3>
 
-<pre>data("udca")</pre>
+<pre>udca
+udca2
+data(udca, package="survival")
+</pre>
 
 
 <h3>Format</h3>
@@ -86,7 +89,6 @@ Gastroenterology, 106:1284-1290, 1994.
 <h3>Examples</h3>
 
 <pre>
-data(udca)
 # values found in table 8.3 of the book
 fit1 &lt;- coxph(Surv(futime, status) ~ trt + log(bili) + stage,
           cluster =id , data=udca1)

@@ -79,7 +79,7 @@ https://www.wiley.com/legacy/wileychi/baltagi/
 
 Online complements to Baltagi (2013):
 
-http://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
+https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
 
 References
 ~~~~~~~~~~

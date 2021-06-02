@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Simulated data sets, drawn from a normal distribution.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for simulated_normal"><tr><td>simulated_normal</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Simulated data sets, drawn from a normal distribution.</h2>
+
+<h3>Description</h3>
+
+<p>Data were simulated using <code>rnorm</code>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+simulated_normal
+</pre>
+
+
+<h3>Format</h3>
+
+<p>The format is: List of 3 $ n40 : 40 observations from a standard
+normal distribution.  $ n100: 100 observations from a standard normal
+distribution.  $ n400: 400 observations from a standard normal distribution.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+data(simulated_normal)
+lapply(simulated_normal, qqnorm)
+
+</pre>
+
+
+</body></html>

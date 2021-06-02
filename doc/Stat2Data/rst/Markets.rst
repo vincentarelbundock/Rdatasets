@@ -21,7 +21,7 @@ A dataset with 56 observations on the following 5 variables.
 ``Nik225ch`` Change in Nikkei 225 stock average
 ``Up``       Indicator for positive Nikkei change
 ``lagNik``   Previous day's Nikkei change
-\            
+\           
 ============ ======================================
 
 Details

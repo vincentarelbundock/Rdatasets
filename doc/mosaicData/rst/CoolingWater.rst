@@ -48,3 +48,4 @@ Examples
    if (require(ggformula)) {
      gf_point(temp ~ time, data = CoolingWater, alpha = 0.5)
    }
+

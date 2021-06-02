@@ -95,5 +95,6 @@ Source
 ~~~~~~
 
 Feng Q, Horrace WC (2012). “Alternative technical efficiency measures:
-Skew, bias and scale.” *Journal of Applied Econometrics*, **27**,
-253–268. doi: `10.1002/jae.1190 <https://doi.org/10.1002/jae.1190>`__.
+Skew, bias and scale.” *Journal of Applied Econometrics*, **27**\ (2),
+253–268. doi: `10.1002/jae.1190 <https://doi.org/10.1002/jae.1190>`__,
+https://onlinelibrary.wiley.com/doi/abs/10.1002/jae.1190.

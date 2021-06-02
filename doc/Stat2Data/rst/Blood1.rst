@@ -20,7 +20,7 @@ A data frame with 500 observations on the following 3 variables.
 ``SystolicBP`` Systolic blood pressure (mm of Hg)
 ``Smoke``      ``Y``\ =smoker or ``N``\ =non-smoker
 ``Overwt``     ``1``\ =normal, ``2``\ =overweight, or ``3``\ =obese
-\              
+\             
 ============== ====================================================
 
 Details

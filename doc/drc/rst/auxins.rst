@@ -90,3 +90,4 @@ Examples
 
    ## Comparing the two models
    anova(auxins.m2, auxins.m1)
+

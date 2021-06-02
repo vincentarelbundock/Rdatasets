@@ -15,30 +15,20 @@ Format
 
 A data frame with 51 observations on the following 9 variables.
 
-+------------+--------------------------------------------------------+
-| ``Age``    | Age at diagnosis (in years)                            |
-+------------+--------------------------------------------------------+
-| ``Smear``  | Differential percentage of blasts                      |
-+------------+--------------------------------------------------------+
-| ``Infil``  | Percentage of absolute marrow leukemia infiltrate      |
-+------------+--------------------------------------------------------+
-| ``Index``  | Percentage labeling index of the bone marrow leukemia  |
-|            | cells                                                  |
-+------------+--------------------------------------------------------+
-| ``Blasts`` | Absolute number of blasts, in thousands                |
-+------------+--------------------------------------------------------+
-| ``Temp``   | Highest temperature of the patient prior to treatment, |
-|            | in degrees Fahrenheit                                  |
-+------------+--------------------------------------------------------+
-| ``Resp``   | ``1``\ =responded to treatment or ``0``\ =failed to    |
-|            | respond                                                |
-+------------+--------------------------------------------------------+
-| ``Time``   | Survival time from diagnosis (in months)               |
-+------------+--------------------------------------------------------+
-| ``Status`` | ``0``\ =dead or ``1``\ =alive                          |
-+------------+--------------------------------------------------------+
-|            |                                                        |
-+------------+--------------------------------------------------------+
+==========
+============================================================================
+``Age``    Age at diagnosis (in years)
+``Smear``  Differential percentage of blasts
+``Infil``  Percentage of absolute marrow leukemia infiltrate
+``Index``  Percentage labeling index of the bone marrow leukemia cells
+``Blasts`` Absolute number of blasts, in thousands
+``Temp``   Highest temperature of the patient prior to treatment, in degrees Fahrenheit
+``Resp``   ``1``\ =responded to treatment or ``0``\ =failed to respond
+``Time``   Survival time from diagnosis (in months)
+``Status`` ``0``\ =dead or ``1``\ =alive
+\         
+==========
+============================================================================
 
 Details
 ~~~~~~~

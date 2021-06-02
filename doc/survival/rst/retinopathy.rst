@@ -16,7 +16,8 @@ Usage
 
 ::
 
-   data("retinopathy")
+   retinopathy
+   data(retinopathy, package="survival")
 
 Format
 ~~~~~~

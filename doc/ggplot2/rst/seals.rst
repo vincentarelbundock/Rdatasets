@@ -30,4 +30,4 @@ A data frame with 1155 rows and 4 variables
 References
 ~~~~~~~~~~
 
-http://www.stat.berkeley.edu/~brill/Papers/jspifinal.pdf
+https://www.stat.berkeley.edu/~brill/Papers/jspifinal.pdf

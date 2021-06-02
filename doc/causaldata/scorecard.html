@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Earnings and Loan Repayment in US Four-Year Colleges</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for scorecard"><tr><td>scorecard</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Earnings and Loan Repayment in US Four-Year Colleges</h2>
+
+<h3>Description</h3>
+
+<p>From the College Scorecard, this data set contains by-college-by-year data on how students who attended those colleges are doing.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+scorecard
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 48,445 rows and 8 variables:
+</p>
+
+<dl>
+<dt>unitid</dt><dd><p>College identifiers</p>
+</dd>
+<dt>inst_name</dt><dd><p>Name of the college or university</p>
+</dd>
+<dt>state_abbr</dt><dd><p>Two-letter abbreviation for the state the college is in</p>
+</dd>
+<dt>pred_degree_awarded_ipeds</dt><dd><p>Predominant degree awarded. 1 = less-than-two-year, 2 = two-year, 3 = four-year+</p>
+</dd>
+<dt>year</dt><dd><p>Year in which outcomes are measured</p>
+</dd>
+<dt>earnings_med</dt><dd><p>Median earnings among students (a) who received federal financial aid, (b) who began as undergraduates at the institution ten years prior, (c) with positive yearly earnings</p>
+</dd>
+<dt>count_not_working</dt><dd><p>Number of students who are (a) not working (not necessarily unemployed), (b) received federal financial aid, and (c) who began as undergraduates at the institution ten years prior</p>
+</dd>
+<dt>count_working</dt><dd><p>Number of students who are (a) working, (b) who received federal financial aid, and (c) who began as undergraduates at the institution ten years prior</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This data is not just limited to four-year colleges and includes a very wide variety of institutions.
+</p>
+<p>Note that the labor market (earnings, working) and repayment rate data do not refer to the same cohort of students, but rather are matched on the year in which outcomes are recorded. Labor market data refers to cohorts beginning college as undergraduates ten years prior, repayment rate data refers to cohorts entering repayment seven years prior.
+</p>
+<p>Data was downloaded using the Urban Institute's <code>educationdata</code> package.
+</p>
+<p>This data was used in the <em>Describing Variables</em> chapter of The Effect by Huntington-Klein
+</p>
+
+
+<h3>Source</h3>
+
+<p>Education Data Portal (Version 0.4.0 - Beta), Urban Institute, Center on Education Data and Policy, accessed June 28, 2019. <a href="https://educationdata.urban.org/documentation/">https://educationdata.urban.org/documentation/</a>, Scorecard.
+</p>
+
+
+<h3>References</h3>
+
+<p>Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. <a href="https://theeffectbook.net">https://theeffectbook.net</a>.
+</p>
+
+
+</body></html>

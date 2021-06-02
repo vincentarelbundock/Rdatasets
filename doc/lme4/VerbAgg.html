@@ -81,14 +81,16 @@ densityplot(~ Anger, person, groups = Gender, auto.key = list(columns = 2),
             xlab = "Trait Anger score (STAXI)")
 
 if(lme4:::testLevel() &gt;= 3) { ## takes about 15 sec
-print(fmVA &lt;- glmer(r2 ~ (Anger + Gender + btype + situ)^2 +
+    print(fmVA &lt;- glmer(r2 ~ (Anger + Gender + btype + situ)^2 +
  		   (1|id) + (1|item), family = binomial, data =
 		   VerbAgg), corr=FALSE)
-}
-                       ## much faster but less accurate
-print(fmVA0 &lt;- glmer(r2 ~ (Anger + Gender + btype + situ)^2 +
-                    (1|id) + (1|item), family = binomial, data =
-                    VerbAgg, nAGQ=0L), corr=FALSE)
+} ## testLevel() &gt;= 3
+if (interactive()) {
+## much faster but less accurate
+    print(fmVA0 &lt;- glmer(r2 ~ (Anger + Gender + btype + situ)^2 +
+                             (1|id) + (1|item), family = binomial,
+                         data = VerbAgg, nAGQ=0L), corr=FALSE)
+} ## interactive()
 </pre>
 
 

@@ -25,7 +25,7 @@ A data frame with 24 observations on the following 9 variables.
 ``RL``    Draft time (in seconds) for R.L.
 ``DR``    Draft time (in seconds) for D.R.
 ``MF``    Draft time (in seconds) for M.F.
-\         
+\        
 ========= ================================
 
 Details

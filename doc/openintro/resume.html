@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Which resume attributes drive job callbacks?  (Race and...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for resume"><tr><td>resume</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Which resume attributes drive job callbacks?  (Race and gender under study.)</h2>
+
+<h3>Description</h3>
+
+<p>This experiment data comes from a study that sought to understand the
+influence of race and gender on job application callback rates. The study
+monitored job postings in Boston and Chicago for several months during 2001
+and 2002 and used this to build up a set of test cases. Over this time
+period, the researchers randomly generating resumes to go out to a job
+posting, such as years of experience and education details, to create a
+realistic-looking resume. They then randomly assigned a name to the resume
+that would communicate the applicant's gender and race. The first names
+chosen for the study were selected so that the names would predominantly be
+recognized as belonging to black or white individuals. For example, Lakisha
+was a name that their survey indicated would be interpreted as a black
+woman, while Greg was a name that would generally be interpreted to be
+associated with a white male.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+resume
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 4870 observations, representing 4870 resumes, over
+30 different variables that describe the job details, the outcome
+(<code>received_callback</code>), and attributes of the resume. </p>
+
+<dl>
+<dt>job_ad_id</dt><dd><p>Unique ID associated with the advertisement.</p>
+</dd>
+<dt>job_city</dt><dd><p>City where the job was located.</p>
+</dd>
+<dt>job_industry</dt><dd><p>Industry of the job.</p>
+</dd>
+<dt>job_type</dt><dd><p>Type of role.</p>
+</dd> <dt>job_fed_contractor</dt><dd>
+<p>Indicator for if the employer is a federal contractor.</p>
+</dd>
+<dt>job_equal_opp_employer</dt><dd><p>Indicator for if the employer is an
+Equal Opportunity Employer.</p>
+</dd> <dt>job_ownership</dt><dd><p>The type of
+company, e.g. a nonprofit or a private company.</p>
+</dd>
+<dt>job_req_any</dt><dd><p>Indicator for if any job requirements are
+listed. If so, the other <code>job_req_*</code> fields give more detail.</p>
+</dd>
+<dt>job_req_communication</dt><dd><p>Indicator for if communication skills
+are required.</p>
+</dd> <dt>job_req_education</dt><dd><p>Indicator for if some
+level of education is required.</p>
+</dd> <dt>job_req_min_experience</dt><dd>
+<p>Amount of experience required.</p>
+</dd> <dt>job_req_computer</dt><dd><p>Indicator
+for if computer skills are required.</p>
+</dd> <dt>job_req_organization</dt><dd>
+<p>Indicator for if organization skills are required.</p>
+</dd>
+<dt>job_req_school</dt><dd><p>Level of education required.</p>
+</dd>
+<dt>received_callback</dt><dd><p>Indicator for if there was a callback from
+the job posting for the person listed on this resume.</p>
+</dd>
+<dt>firstname</dt><dd><p>The first name used on the resume.</p>
+</dd>
+<dt>race</dt><dd><p>Inferred race associated with the first name on the
+resume.</p>
+</dd> <dt>gender</dt><dd><p>Inferred gender associated with the first
+name on the resume.</p>
+</dd> <dt>years_college</dt><dd><p>Years of college
+education listed on the resume.</p>
+</dd> <dt>college_degree</dt><dd><p>Indicator
+for if the resume listed a college degree.</p>
+</dd> <dt>honors</dt><dd>
+<p>Indicator for if the resume listed that the candidate has been awarded some
+honors.</p>
+</dd> <dt>worked_during_school</dt><dd><p>Indicator for if the resume
+listed working while in school.</p>
+</dd> <dt>years_experience</dt><dd><p>Years of
+experience listed on the resume.</p>
+</dd> <dt>computer_skills</dt><dd>
+<p>Indicator for if computer skills were listed on the resume. These skills
+were adapted for listings, though the skills were assigned independently of
+other details on the resume.</p>
+</dd> <dt>special_skills</dt><dd><p>Indicator for
+if any special skills were listed on the resume.</p>
+</dd>
+<dt>volunteer</dt><dd><p>Indicator for if volunteering was listed on the
+resume.</p>
+</dd> <dt>military</dt><dd><p>Indicator for if military experience was
+listed on the resume.</p>
+</dd> <dt>employment_holes</dt><dd><p>Indicator for if
+there were holes in the person's employment history.</p>
+</dd>
+<dt>has_email_address</dt><dd><p>Indicator for if the resume lists an email
+address.</p>
+</dd> <dt>resume_quality</dt><dd><p>Each resume was generally
+classified as either lower or higher quality.</p>
+</dd> </dl>
+
+
+
+<h3>Details</h3>
+
+<p>Because this is an experiment, where the race and gender attributes are
+being randomly assigned to the resumes, we can conclude that any
+statistically significant difference in callback rates is causally linked to
+these attributes.
+</p>
+<p>Do you think it's reasonable to make a causal conclusion? You may have some
+health skepticism. However, do take care to appreciate that this was an
+experiment: the first name (and so the inferred race and gender) were
+randomly assigned to the resumes, and the quality and attributes of a resume
+were assigned independent of the race and gender. This means that any
+effects we observe are in fact causal, and the effects related to race are
+both statistically significant and very large: white applicants had about a
+50\
+</p>
+<p>Do you still have doubts lingering in the back of your mind about the
+validity of this study?  Maybe a counterargument about why the standard
+conclusions from this study may not apply? The article summarizing the
+results was exceptionally well-written, and it addresses many potential
+concerns about the study's approach. So if you're feeling skeptical about
+the conclusions, please find the link below and explore!
+</p>
+
+
+<h3>Source</h3>
+
+<p>Bertrand M, Mullainathan S. 2004. &quot;Are Emily and Greg More Employable
+than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination&quot;.
+The American Economic Review 94:4 (991-1013).
+doi: <a href="https://doi.org/10.3386/w9873">10.3386/w9873</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>resume</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+head(resume, 5)
+
+# Some checks to confirm balance between race and
+# other attributes of a resume. There should be
+# some minor differences due to randomness, but
+# each variable should be (and is) generally
+# well-balanced.
+table(resume$race, resume$years_college)
+table(resume$race, resume$college_degree)
+table(resume$race, resume$honors)
+table(resume$race, resume$worked_during_school)
+table(resume$race, resume$years_experience)
+table(resume$race, resume$computer_skills)
+table(resume$race, resume$special_skills)
+table(resume$race, resume$volunteer)
+table(resume$race, resume$military)
+table(resume$race, resume$employment_holes)
+table(resume$race, resume$has_email_address)
+table(resume$race, resume$resume_quality)
+
+# Regarding the callback outcome for race,
+# we observe a very large difference.
+tapply(
+    resume$received_callback,
+    resume[c("race", "gender")],
+    mean)
+
+# Natural question: is this statisticaly significant?
+# A proper analysis would take into account the
+# paired nature of the data. For each ad, let's
+# compute the following statistic:
+#     &lt;callback rate for white candidates&gt;
+#     - &lt;callback rate for black candidates&gt;
+# First contruct the callbacks for white and
+# black candidates by ad ID:
+table(resume$race)
+cb_white &lt;- with(
+    subset(resume, race == "white"),
+    tapply(received_callback, job_ad_id, mean))
+cb_black &lt;- with(
+    subset(resume, race == "black"),
+    tapply(received_callback, job_ad_id, mean))
+# Next, compute the differences, where the
+# names(cb_white) part ensures we matched up the
+# job ad IDs.
+diff &lt;- cb_white - cb_black[names(cb_white)]
+# Finally, we can apply a t-test on the differences:
+t.test(diff)
+# There is very strong evidence of an effect.
+
+# Here's a similar check with gender. There are
+# more female-inferred candidates used on the resumes.
+table(resume$gender)
+cb_male &lt;- with(
+    subset(resume, gender == "m"),
+    tapply(received_callback, job_ad_id, mean))
+cb_female &lt;- with(
+    subset(resume, gender == "f"),
+    tapply(received_callback, job_ad_id, mean))
+diff &lt;- cb_female - cb_male[names(cb_female)]
+# The `na.rm = TRUE` part ensures we limit to jobs
+# where both a male and female resume were sent.
+t.test(diff, na.rm = TRUE)
+# There is no statistically significant difference.
+
+# Was that the best analysis? Absolutely not!
+# However, the analysis was unbiased. To get more
+# precision on the estimates, we could build a
+# multivariate model that includes many characteristics
+# of the resumes sent, e.g. years of experience.
+# Since those other characteristics were assigned
+# independently of the race characteristics, this
+# means the race finding will almost certainy will
+# hold. However, it is possible that we'll find
+# more interesting results with the gender investigation.
+
+</pre>
+
+
+</body></html>

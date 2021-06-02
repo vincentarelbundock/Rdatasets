@@ -83,3 +83,4 @@ Examples
    # Here is a glimpse at the data
    # available in `sza`
    dplyr::glimpse(sza)
+

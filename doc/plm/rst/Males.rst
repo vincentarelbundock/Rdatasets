@@ -70,8 +70,8 @@ http://qed.econ.queensu.ca/jae/1998-v13.2/vella-verbeek/.
 References
 ~~~~~~~~~~
 
-Vella F, Verbeek M (1998). “Whose wages do unions raise?: A dynamic
-model of unionism and wage rate determination for young men.” *Journal
-of Applied Econometrics*, **13**, 163–183.
+Vella F, Verbeek M (1998). “Whose wages do unions raise? A dynamic model
+of unionism and wage rate determination for young men.” *Journal of
+Applied Econometrics*, **13**, 163–183.
 
 Verbeek M (2004). *A Guide to Modern Econometrics*. Wiley.

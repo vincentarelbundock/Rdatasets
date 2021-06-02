@@ -44,4 +44,4 @@ Organization Global Tuberculosis Report
 Source
 ~~~~~~
 
-https://www.who.int/tb/country/data/download/en/
+https://www.who.int/teams/global-tuberculosis-programme/data

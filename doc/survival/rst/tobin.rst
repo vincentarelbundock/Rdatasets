@@ -17,6 +17,7 @@ Usage
 ::
 
    tobin
+   data(tobin, package="survival")
 
 Format
 ~~~~~~
@@ -47,3 +48,4 @@ Examples
                    data=tobin, dist='gaussian')
 
    predict(tfit,type="response")
+

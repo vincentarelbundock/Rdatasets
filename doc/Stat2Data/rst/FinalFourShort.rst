@@ -15,19 +15,15 @@ Format
 
 A data frame with 512 observations on the following 4 variables.
 
-+----------+----------------------------------------------------------+
-| ``Year`` | Year (1979 - 2010)                                       |
-+----------+----------------------------------------------------------+
-| ``Seed`` | Seed in NCAA men's basketball tournament: 1 to 16        |
-+----------+----------------------------------------------------------+
-| ``In``   | Number of teams at that seed who made the Final Four     |
-|          | that year                                                |
-+----------+----------------------------------------------------------+
-| ``Out``  | Number of teams at that seed who did not made the Final  |
-|          | Four that year                                           |
-+----------+----------------------------------------------------------+
-|          |                                                          |
-+----------+----------------------------------------------------------+
+========
+======================================================================
+``Year`` Year (1979 - 2010)
+``Seed`` Seed in NCAA men's basketball tournament: 1 to 16
+``In``   Number of teams at that seed who made the Final Four that year
+``Out``  Number of teams at that seed who did not made the Final Four that year
+\       
+========
+======================================================================
 
 Details
 ~~~~~~~

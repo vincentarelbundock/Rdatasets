@@ -116,3 +116,4 @@ Examples
    library("tseries")
    adf.test(resid(gsreg), k = 0)
    adf.test(resid(sgreg), k = 0)
+

@@ -80,3 +80,4 @@ Examples
 
      data("heptathlon", package = "HSAUR")
      plot(heptathlon)
+

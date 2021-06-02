@@ -121,7 +121,7 @@ A data frame with 779 observations on the following 84 variables.
    V26: Similar religion or philosophy of life
 
 ``difRelig``
-   V27: Religion or philsophy felt different
+   V27: Religion or philosophy felt different
 
 ``philanthropy``
    V28: General philanthropy
@@ -163,7 +163,7 @@ A data frame with 779 observations on the following 84 variables.
    V40: Years since belligerents fought
 
 ``chronicFighting``
-   V41: Chronic figthing between belligerents
+   V41: Chronic fighting between belligerents
 
 ``persFriendship``
    V42: Autocrats personal friends
@@ -196,7 +196,7 @@ A data frame with 779 observations on the following 84 variables.
    V51: Church civil power
 
 ``noExtension``
-   V52: Policy not extending ter
+   V52: Policy not extending term
 
 ``territory``
    V53: Desired territory

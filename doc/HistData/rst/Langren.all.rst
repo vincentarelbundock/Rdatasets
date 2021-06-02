@@ -274,3 +274,5 @@ Examples
    # why the gap?
    gap.mod <- glm(Gap ~ Year + Source + Latitude, family=binomial, data=Langren1644)
    anova(gap.mod, test="Chisq")
+
+

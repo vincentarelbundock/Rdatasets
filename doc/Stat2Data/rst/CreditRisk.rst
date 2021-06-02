@@ -16,18 +16,15 @@ Format
 
 A data frame with 450 observations on the following 4 variables.
 
-+---------------+-----------------------------------------------------+
-| ``Age``       | Age of the student (in years)                       |
-+---------------+-----------------------------------------------------+
-| ``Sex``       | ``0``\ =male or ``1``\ =female                      |
-+---------------+-----------------------------------------------------+
-| ``DaysDrink`` | Number of days drinking alcohol (in past 30 days)   |
-+---------------+-----------------------------------------------------+
-| ``Overdrawn`` | Has student overdrawn a checking account?           |
-|               | ``0``\ =no or ``1``\ =yes                           |
-+---------------+-----------------------------------------------------+
-|               |                                                     |
-+---------------+-----------------------------------------------------+
+=============
+===================================================================
+``Age``       Age of the student (in years)
+``Sex``       ``0``\ =male or ``1``\ =female
+``DaysDrink`` Number of days drinking alcohol (in past 30 days)
+``Overdrawn`` Has student overdrawn a checking account? ``0``\ =no or ``1``\ =yes
+\            
+=============
+===================================================================
 
 Details
 ~~~~~~~

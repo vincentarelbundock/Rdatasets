@@ -122,7 +122,8 @@ Source
 ~~~~~~
 
 Lock, R. H. (1993) 1993 New Car Data. *Journal of Statistics Education*
-**1**\ (1). https://doi.org/10.1080/10691898.1993.11910459
+**1**\ (1). doi:
+`10.1080/10691898.1993.11910459 <https://doi.org/10.1080/10691898.1993.11910459>`__
 
 References
 ~~~~~~~~~~

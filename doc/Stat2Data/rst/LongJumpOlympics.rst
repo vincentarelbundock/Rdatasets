@@ -18,7 +18,7 @@ A data frame with 26 observations on the following 2 variables.
 ======== ============================================
 ``Year`` Year of the Olympics (1900 - 2008)
 ``Gold`` Winning men's long jump distance (in meters)
-\        
+\       
 ======== ============================================
 
 Details

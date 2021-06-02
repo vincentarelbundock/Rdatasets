@@ -15,16 +15,14 @@ Format
 
 A dataset with 36 observations on the following 3 variables.
 
-+---------------+-----------------------------------------------------+
-| ``Month``     | Month of the year                                   |
-+---------------+-----------------------------------------------------+
-| ``Moon``      | Relationship to full moon: ``After``, ``Before``,   |
-|               | or ``During``                                       |
-+---------------+-----------------------------------------------------+
-| ``Admission`` | Number of emergency room admissions                 |
-+---------------+-----------------------------------------------------+
-|               |                                                     |
-+---------------+-----------------------------------------------------+
+=============
+===============================================================
+``Month``     Month of the year
+``Moon``      Relationship to full moon: ``After``, ``Before``, or ``During``
+``Admission`` Number of emergency room admissions
+\            
+=============
+===============================================================
 
 Details
 ~~~~~~~

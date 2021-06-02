@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Body measurements of 507 physically active individuals.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for bdims"><tr><td>bdims</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Body measurements of 507 physically active individuals.</h2>
+
+<h3>Description</h3>
+
+<p>Body girth measurements and skeletal diameter measurements, as well as age,
+weight, height and gender, are given for 507 physically active individuals -
+247 men and 260 women. These data can be used to provide statistics students
+practice in the art of data analysis. Such analyses range from simple
+descriptive displays to more complicated multivariate analyses such as
+multiple regression and discriminant analysis.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+bdims
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 507 observations on the following 25 variables.
+</p>
+
+<dl>
+<dt>bia_di</dt><dd><p>A numerical vector, respondent's biacromial diameter in
+centimeters.</p>
+</dd>
+<dt>bii_di</dt><dd><p>A numerical vector, respondent's biiliac diameter
+(pelvic breadth) in centimeters.</p>
+</dd>
+<dt>bit_di</dt><dd><p>A numerical vector, respondent's bitrochanteric diameter
+in centimeters.</p>
+</dd>
+<dt>che_de</dt><dd><p>A numerical vector, respondent's chest depth in centimeters,
+measured between spine and sternum at nipple level, mid-expiration.</p>
+</dd>
+<dt>che_di</dt><dd><p>A numerical vector, respondent's chest diameter in
+centimeters, measured at nipple level, mid-expiration.</p>
+</dd>
+<dt>elb_di</dt><dd><p>A numerical vector, respondent's elbow diameter in
+centimeters, measured as sum of two elbows.</p>
+</dd>
+<dt>wri_di</dt><dd><p>A numerical vector, respondent's wrist diameter in
+centimeters, measured as sum of two wrists.</p>
+</dd>
+<dt>kne_di</dt><dd><p>A numerical vector, respondent's knee diameter in
+centimeters, measured as sum of two knees.</p>
+</dd>
+<dt>ank_di</dt><dd><p>A numerical vector, respondent's ankle diameter in
+centimeters, measured as sum of two ankles.</p>
+</dd>
+<dt>sho_gi</dt><dd><p>A numerical vector, respondent's shoulder girth in
+centimeters, measured over deltoid muscles.</p>
+</dd>
+<dt>che_gi</dt><dd><p>A numerical vector, respondent's chest girth in
+centimeters, measured at nipple line in males and just above breast tissue
+in females, mid-expiration.</p>
+</dd>
+<dt>wai_gi</dt><dd><p>A numerical vector, respondent's waist girth in
+centimeters, measured at the narrowest part of torso below the rib cage as
+average of contracted and relaxed position.</p>
+</dd>
+<dt>nav_gi</dt><dd><p>A numerical vector, respondent's navel (abdominal)
+girth in centimeters, measured at umbilicus and iliac crest using iliac
+crest as a landmark.</p>
+</dd>
+<dt>hip_gi</dt><dd><p>A numerical vector, respondent's hip girth in
+centimeters, measured at at level of bitrochanteric diameter.</p>
+</dd>
+<dt>thi_gi</dt><dd><p>A numerical vector, respondent's thigh girth in
+centimeters, measured below gluteal fold as the average of right and left
+girths.</p>
+</dd>
+<dt>bic_gi</dt><dd><p>A numerical vector, respondent's bicep girth in
+centimeters, measured when flexed as the average of right and left
+girths.</p>
+</dd>
+<dt>for_gi</dt><dd><p>A numerical vector, respondent's forearm girth in
+centimeters, measured when extended, palm up as the average of right and
+left girths.</p>
+</dd>
+<dt>kne_gi</dt><dd><p>A numerical vector, respondent's knee diameter in
+centimeters, measured as sum of two knees.</p>
+</dd>
+<dt>cal_gi</dt><dd><p>A numerical vector, respondent's calf maximum girth
+in centimeters, measured as average of right and left girths.</p>
+</dd>
+<dt>ank_gi</dt><dd><p>A numerical vector, respondent's ankle minimum girth
+in centimeters, measured as average of right and left girths.</p>
+</dd>
+<dt>wri_gi</dt><dd><p>A numerical vector, respondent's wrist minimum girth
+in centimeters, measured as average of right and left girths.</p>
+</dd>
+<dt>age</dt><dd><p>A numerical vector, respondent's age in years.</p>
+</dd>
+<dt>wgt</dt><dd><p>A numerical vector, respondent's weight in kilograms.</p>
+</dd>
+<dt>hgt</dt><dd><p>A numerical vector, respondent's height in centimeters.</p>
+</dd>
+<dt>sex</dt><dd><p>A categorical vector, 1 if the respondent is male,
+0 if female.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Heinz G, Peterson LJ, Johnson RW, Kerk CJ. 2003. Exploring
+Relationships in Body Dimensions. Journal of Statistics Education 11(2).
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+ggplot(bdims, aes(x = hgt)) +
+  geom_histogram(binwidth = 5)
+ggplot(bdims, aes(x = hgt, y = wgt)) +
+  geom_point() +
+  labs(x = "Height", y = "Weight")
+
+ggplot(bdims, aes(x = hgt, y = sho_gi)) +
+  geom_point() +
+  labs(x = "Height", y = "Shoulder girth")
+
+ggplot(bdims, aes(x = hgt, y = hip_gi)) +
+  geom_point() +
+  labs(x = "Height", y = "Hip girth")
+
+</pre>
+
+
+</body></html>

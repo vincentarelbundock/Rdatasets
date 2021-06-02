@@ -42,3 +42,4 @@ Examples
 
      data("birthdeathrates", package = "HSAUR")
      plot(birthdeathrates)
+

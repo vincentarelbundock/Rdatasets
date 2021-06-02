@@ -1,0 +1,57 @@
+======= ===============
+gss2010 R Documentation
+======= ===============
+
+2010 General Social Survey
+--------------------------
+
+Description
+~~~~~~~~~~~
+
+Data from the 2010 General Social Survey.
+
+Usage
+~~~~~
+
+::
+
+   gss2010
+
+Format
+~~~~~~
+
+A data frame with 2044 observations on the following 5 variables.
+
+hrsrelax
+   After an average work day, about how many hours do you have to relax
+   or pursue activities that you enjoy
+
+mntlhlth
+   For how many days during the past 30 days was your mental health,
+   which includes stress, depression, and problems with emotions, not
+   good?
+
+hrs1
+   Hours worked each week.
+
+degree
+   Educational attainment or degree.
+
+grass
+   Do you think the use of marijuana should be made legal, or not?
+
+Source
+~~~~~~
+
+US 2010 General Social Survey.
+
+Examples
+~~~~~~~~
+
+::
+
+
+
+   gss2010
+
+

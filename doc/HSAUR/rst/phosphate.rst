@@ -65,3 +65,4 @@ Examples
 
      data("phosphate", package = "HSAUR")
      plot(t0 ~ group, data = phosphate)
+

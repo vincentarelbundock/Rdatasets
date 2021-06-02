@@ -30,3 +30,4 @@ Examples
 
 
    autoplot(goog)
+

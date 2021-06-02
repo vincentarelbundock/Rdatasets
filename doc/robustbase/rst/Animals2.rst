@@ -32,12 +32,13 @@ Format
 Note
 ~~~~
 
-After loading the MASS package, the data set is simply constructed by
+After loading the `MASS <https://CRAN.R-project.org/package=MASS>`__
+package, the data set is simply constructed by
 ``Animals2 <- local({D <- rbind(Animals, mammals);       unique(D[order(D$body,D$brain),])})``.
 
-Rousseeuw and Leroy (1987)'s ‘brain’ data is the same as MASS's
-``Animals`` (with Rat and Brachiosaurus interchanged, see the example
-below).
+Rousseeuw and Leroy (1987)'s ‘brain’ data is the same as
+`MASS <https://CRAN.R-project.org/package=MASS>`__'s ``Animals`` (with
+Rat and Brachiosaurus interchanged, see the example below).
 
 Source
 ~~~~~~

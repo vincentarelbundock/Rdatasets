@@ -66,8 +66,6 @@ Examples
 
 ::
 
-
-                                                                           
    muscatine$cage <- muscatine$age - 12                                         
    muscatine$cage2 <- muscatine$cage^2                                          
                                                                            
@@ -87,3 +85,5 @@ Examples
    tidy(gee2)                                                              
    QIC(gee1)
    QIC(gee2)
+
+

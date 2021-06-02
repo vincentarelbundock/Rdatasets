@@ -74,7 +74,7 @@ References
 Wachsmuth, A.W., Wilkinson L., Dallal G.E. (2003). Galton's bend: A
 previously undiscovered nonlinearity in Galton's family stature
 regression data. *The American Statistician*, 57, 190-192.
-http://www.cs.uic.edu/~wilkinson/Publications/galton.pdf
+https://www.cs.uic.edu/~wilkinson/Publications/galton.pdf
 
 See Also
 ~~~~~~~~
@@ -136,3 +136,4 @@ Examples
                           values = c('green', 'red')) +
       theme(legend.position = c(0.14, 0.885),
            legend.background = element_rect(fill = 'white'))
+

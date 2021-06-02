@@ -65,3 +65,4 @@ Examples
 
      data("toothpaste", package = "HSAUR")
      toothpaste
+

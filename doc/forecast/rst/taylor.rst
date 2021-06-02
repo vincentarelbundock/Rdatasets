@@ -42,3 +42,4 @@ Examples
 ::
 
    plot(taylor)
+

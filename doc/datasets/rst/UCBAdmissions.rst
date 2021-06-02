@@ -48,14 +48,16 @@ with higher rejection rates).
 
 This data set can also be used for illustrating methods for graphical
 display of categorical data, such as the general-purpose mosaicplot or
-the fourfoldplot for 2-by-2-by-*k* tables.
+the fourfoldplot for 2-by-2-by-\ *k* tables.
 
 References
 ~~~~~~~~~~
 
 Bickel, P. J., Hammel, E. A., and O'Connell, J. W. (1975). Sex bias in
 graduate admissions: Data from Berkeley. *Science*, **187**, 398–403.
-http://www.jstor.org/stable/1739581.
+doi:
+`10.1126/science.187.4175.398 <https://doi.org/10.1126/science.187.4175.398>`__.
+https://www.jstor.org/stable/1739581.
 
 Examples
 ~~~~~~~~

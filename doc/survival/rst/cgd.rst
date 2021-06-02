@@ -18,6 +18,7 @@ Usage
 ::
 
    cgd
+   data(cgd)
 
 Format
 ~~~~~~

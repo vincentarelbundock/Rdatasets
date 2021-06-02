@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: London Borough Boundaries</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for london_boroughs"><tr><td>london_boroughs</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>London Borough Boundaries</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains the coordinates of the boundaries of all 32 boroughs
+of the Greater London area.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+london_boroughs
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 45341 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt>borough</dt><dd><p>Name of the borough.</p>
+</dd>
+<dt>x</dt><dd><p>The &quot;easting&quot; component of the coordinate, see details.</p>
+</dd>
+<dt>y</dt><dd><p>The &quot;northing&quot; component of the coordinate, see details.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Map data was made available through the Ordnance Survey Open Data
+initiative.  The data use the
+<a href="https://en.wikipedia.org/wiki/Ordnance_Survey_National_Grid">National Grid</a> coordinate system,
+based upon eastings (<code>x</code>) and northings (<code>y</code>) instead of longitude and latitude.
+</p>
+<p>The <code>name</code> variable covers all 32 boroughs in Greater London:
+<code>Barking &amp; Dagenham</code>, <code>Barnet</code>, <code>Bexley</code>, <code>Brent</code>,
+<code>Bromley</code>, <code>Camden</code>, <code>Croydon</code>, <code>Ealing</code>,
+<code>Enfield</code>, <code>Greenwich</code>, <code>Hackney</code>, <code>Hammersmith &amp;
+Fulham</code>, <code>Haringey</code>, <code>Harrow</code>, <code>Havering</code>, <code>Hillingdon</code>,
+<code>Hounslow</code>, <code>Islington</code>, <code>Kensington &amp; Chelsea</code>,
+<code>Kingston</code>, <code>Lambeth</code>, <code>Lewisham</code>, <code>Merton</code>,
+<code>Newham</code>, <code>Redbridge</code>, <code>Richmond</code>, <code>Southwark</code>,
+<code>Sutton</code>, <code>Tower Hamlets</code>, <code>Waltham Forest</code>,
+<code>Wandsworth</code>, <code>Westminster</code>
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://data.london.gov.uk/dataset/ordnance-survey-code-point">https://data.london.gov.uk/dataset/ordnance-survey-code-point</a>
+</p>
+<p>Contains Ordinance Survey data released under the
+<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">Open Government License, OGL v2</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>london_murders
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(dplyr)
+library(ggplot2)
+
+# Calculate number of murders by borough
+london_murders_counts &lt;- london_murders %&gt;%
+  group_by(borough) %&gt;%
+  add_tally()
+
+london_murders_counts
+
+## Not run: 
+# Add number of murders to geographic boundary data
+london_boroughs_murders &lt;- inner_join(london_boroughs, london_murders_counts, by = "borough")
+
+# Map murders
+ggplot(london_boroughs_murders) +
+  geom_polygon(aes(x = x, y = y, group = borough, fill = n), colour = "white") +
+    scale_fill_distiller(direction = 1) +
+  labs(x = "Easting", y = "Northing", fill = "Number of murders")
+
+## End(Not run)
+</pre>
+
+
+</body></html>

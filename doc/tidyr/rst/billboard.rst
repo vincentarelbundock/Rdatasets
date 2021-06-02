@@ -2,13 +2,13 @@
 billboard R Documentation
 ========= ===============
 
-Song rankings for billboard top 100 in the year 2000
+Song rankings for Billboard top 100 in the year 2000
 ----------------------------------------------------
 
 Description
 ~~~~~~~~~~~
 
-Song rankings for billboard top 100 in the year 2000
+Song rankings for Billboard top 100 in the year 2000
 
 Usage
 ~~~~~
@@ -27,8 +27,6 @@ artist
 
 track
    Song name
-
-,
 
 date.enter
    Date the song entered the top 100

@@ -18,7 +18,7 @@ A data frame with 21 observations on the following 2 variables.
 ============= ===============================
 ``Treatment`` ``Calcium`` or ``Placebo``
 ``Decrease``  Beginning-ending blood pressure
-\             
+\            
 ============= ===============================
 
 Details

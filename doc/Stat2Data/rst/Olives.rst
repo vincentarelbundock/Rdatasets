@@ -15,24 +15,18 @@ Format
 
 A dataset with 18 observations on the following 7 variables.
 
-+------------------------+--------------------------------------------+
-| ``SampleNumber``       | Code (1-6) for sample of olive oil         |
-+------------------------+--------------------------------------------+
-| ``Group``              | Code for group: ``1`` or ``2``             |
-+------------------------+--------------------------------------------+
-| ``Day``                | Time (in days) when sample was measured:   |
-|                        | ``0``, ``281``, or ``365``                 |
-+------------------------+--------------------------------------------+
-| ``Fenthion``           | Amount of fenthion (pesticide)             |
-+------------------------+--------------------------------------------+
-| ``FenthionSulphoxide`` | Amount of fenthion sulfide                 |
-+------------------------+--------------------------------------------+
-| ``FenthionSulphone``   | Amount of fenthion sulphone                |
-+------------------------+--------------------------------------------+
-| ``Time``               | Code (0, 3, or 4) for the number of days   |
-+------------------------+--------------------------------------------+
-|                        |                                            |
-+------------------------+--------------------------------------------+
+======================
+===================================================================
+``SampleNumber``       Code (1-6) for sample of olive oil
+``Group``              Code for group: ``1`` or ``2``
+``Day``                Time (in days) when sample was measured: ``0``, ``281``, or ``365``
+``Fenthion``           Amount of fenthion (pesticide)
+``FenthionSulphoxide`` Amount of fenthion sulfide
+``FenthionSulphone``   Amount of fenthion sulphone
+``Time``               Code (0, 3, or 4) for the number of days
+\                     
+======================
+===================================================================
 
 Details
 ~~~~~~~

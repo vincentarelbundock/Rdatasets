@@ -85,7 +85,7 @@ materials.
 
 Keen, K. J. (2010). *Graphics for Statistics and Data Analysis with R*,
 Boca Raton: CRC Press,
-http://www.unbc.ca/keen/graphics-for-statistics-and-data-analysis-with-r.
+https://www.unbc.ca/keen/graphics-for-statistics-and-data-analysis-with-r.
 
 See Also
 ~~~~~~~~
@@ -131,3 +131,4 @@ Examples
        abline(lm(father ~ mother), col="red", lwd=2)
        }
        )
+

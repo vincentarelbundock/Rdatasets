@@ -77,3 +77,4 @@ Examples
         geom_histogram(binwidth = 1)
      }
    }
+

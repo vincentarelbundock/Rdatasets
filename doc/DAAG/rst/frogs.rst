@@ -101,3 +101,4 @@ Examples
     reduced.acc <- cv.binary(frogs.glm, rand=rand, print.details=FALSE)$acc.cv
     cat("\nAll:", round(all.acc,3), "  Reduced:", round(reduced.acc,3))
    }
+

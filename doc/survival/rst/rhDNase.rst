@@ -11,6 +11,14 @@ Description
 Results of a randomized trial of rhDNase for the treatment of cystic
 fibrosis.
 
+Usage
+~~~~~
+
+::
+
+   rhDNase
+   data(rhDNase, package="survival")
+
 Format
 ~~~~~~
 
@@ -86,7 +94,7 @@ References
 T. M. Therneau and P. M. Grambsch, Modeling Survival Data: Extending the
 Cox Model, Springer, 2000.
 
-T. M. Therneau and S.A. Mamilton, rhDNase as an example of recurrent
+T. M. Therneau and S.A. Hamilton, rhDNase as an example of recurrent
 event analysis, Statistics in Medicine, 16:2029-2047, 1997.
 
 Examples

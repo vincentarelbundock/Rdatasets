@@ -12,8 +12,8 @@ The ``Snow`` data consists of the relevant 1854 London streets, the
 location of 578 deaths from cholera, and the position of 13 water pumps
 (wells) that can be used to re-create John Snow's map showing deaths
 from cholera in the area surrounding Broad Street, London in the 1854
-outbreak. Another data frame provides boundaries of a tesselation of the
-map into Thiessen (Voronoi) regions which include all cholera deaths
+outbreak. Another data frame provides boundaries of a tessellation of
+the map into Thiessen (Voronoi) regions which include all cholera deaths
 nearer to a given pump than to any other.
 
 The apocryphal story of the significance of Snow's map is that, by
@@ -217,3 +217,4 @@ Examples
    Snow.pumps.sp <- SpatialPointsDataFrame(spp,Snow.pumps[,c("x","y")])
    plot(Snow.pumps.sp, add=TRUE, col='blue', pch=17, cex=1.5)
    text(Snow.pumps[,c("x","y")], labels=Snow.pumps$label, pos=1, cex=0.8)
+

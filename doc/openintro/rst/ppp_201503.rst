@@ -1,0 +1,50 @@
+========== ===============
+ppp_201503 R Documentation
+========== ===============
+
+US Poll on who it is better to raise taxes on
+---------------------------------------------
+
+Description
+~~~~~~~~~~~
+
+A poll of 691 people, with party affiliation collected, asked whether
+they think it's better to raise taxes on the rich or raise taxes on the
+poor.
+
+Usage
+~~~~~
+
+::
+
+   ppp_201503
+
+Format
+~~~~~~
+
+A data frame with 691 observations on the following 2 variables.
+
+party
+   Political party affiliation.
+
+taxes
+   Support for who to raise taxes on.
+
+Source
+~~~~~~
+
+Public Policy Polling, Americans on College Degrees, Classic Literature,
+the Seasons, and More, data collected Feb 20-22, 2015.
+
+Examples
+~~~~~~~~
+
+::
+
+
+   library(ggplot2)
+
+   ggplot(ppp_201503, aes(x = party, fill = taxes)) +
+     geom_bar(position = "fill") +
+     labs(x = "Party", x = "Proportion", fill = "Taxes")
+

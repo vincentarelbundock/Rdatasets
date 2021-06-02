@@ -45,7 +45,7 @@ mosaic plots, sieve diagrams or association plots.
 Source
 ~~~~~~
 
-http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/haireye.sas
+http://www.datavis.ca/sas/vcd/catdata/haireye.sas
 
 Snee (1974) gives the two-way table aggregated over ``Sex``. The ``Sex``
 split of the ‘Brown hair, Brown eye’ cell was changed to agree with that
@@ -64,7 +64,7 @@ http://datavis.ca/papers/sugi/sugi17.pdf
 
 Friendly, M. (1992b). Mosaic displays for loglinear models. *Proceedings
 of the Statistical Graphics Section*, American Statistical Association,
-pp. 61–68. http://www.math.yorku.ca/SCS/Papers/asa92.html
+pp. 61–68. http://www.datavis.ca/papers/asa92.html
 
 Friendly, M. (2000). *Visualizing Categorical Data*. SAS Institute, ISBN
 1-58025-660-0.

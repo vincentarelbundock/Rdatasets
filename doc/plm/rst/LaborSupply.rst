@@ -54,9 +54,10 @@ References
 
 Colin Cameron A, K. Trivedi P (2005). *Microeconometrics: Methods and
 Applications*. Cambridge University Press. ISBN 0521848059, doi:
-`10.1017/CBO9780511811241 <https://doi.org/10.1017/CBO9780511811241>`__.
+`10.1017/CBO9780511811241 <https://doi.org/10.1017/CBO9780511811241>`__,
+https://doi.org/10.1017/CBO9780511811241.
 
 Ziliak JP (1997). “Efficient Estimation with Panel Data When Instruments
 Are Predetermined: An Empirical Comparison of Moment-Condition
-Estimators.” *Journal of Business & Economic Statistics*, **15**,
-419–431.
+Estimators.” *Journal of Business & Economic Statistics*, **15**\ (4),
+419–431. ISSN 07350015.

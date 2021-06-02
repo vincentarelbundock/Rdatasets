@@ -20,7 +20,7 @@ A data frame with 18 observations on the following 3 variables.
 ``Occasion``  Trial: I to IX
 ``Treatment`` ``Fresh`` or ``Stung``
 ``Stingers``  Number of stingers
-\             
+\            
 ============= ======================
 
 Details

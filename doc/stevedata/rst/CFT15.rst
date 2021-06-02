@@ -64,7 +64,7 @@ Source
 Cattaneo, Matias D. and Brigham R. Frandsen and Rocio Titiunik. 2015.
 "Randomization Inference in the Regression Discontinuity Design: An
 Application to Party Advantages in the U.S. Senate". *Journal of Causal
-Inference* 3(1): 1–24. DOI: https://doi.org/10.1515/jci-2013-0010
+Inference* 3(1): 1–24.
 
 References
 ~~~~~~~~~~
@@ -72,7 +72,7 @@ References
 Cattaneo, Matias D. and Brigham R. Frandsen and Rocio Titiunik. 2015.
 "Randomization Inference in the Regression Discontinuity Design: An
 Application to Party Advantages in the U.S. Senate". *Journal of Causal
-Inference* 3(1): 1–24. DOI: https://doi.org/10.1515/jci-2013-0010
+Inference* 3(1): 1–24.
 
 Calonico, Sebastian and Matias D. Cattaneo and Max H. Farrell and Rocio
 Titiunik. 2017. "``rdrobust``: Software for regression-discontinuity

@@ -1,0 +1,124 @@
+"","year","month","day","richter","area","region","deaths"
+"1",1902,"April",19,7.5,"Quezaltenango and San Marco","Guatemala",2000
+"2",1902,"December",16,6.4,"Uzbekistan","Russia",4700
+"3",1903,"April",28,7,"Malazgirt","Turkey",3500
+"4",1903,"May",28,5.8,"Gole","Turkey",1000
+"5",1905,"April",4,7.5,"Kangra","India",19000
+"6",1906,"January",31,8.8,"Esmeraldas (off coast)","Ecuador",1000
+"7",1906,"March",16,6.8,"Chia-i","Taiwan",1250
+"8",1906,"April",18,7.7,"San Francisco","United States",3000
+"9",1906,"August",17,8.6,"Valparaiso","Chile",3882
+"10",1907,"October",21,8.1,"Central","Asia",12000
+"11",1908,"December",28,7.2,"Messina","Italy",72000
+"12",1909,"January",23,7.3,"Silakhor","Iran",5000
+"13",1912,"August",9,7.4,"Murefte","Turkey",2800
+"14",1914,"October",3,7,"Burdur","Turkey",4000
+"15",1915,"January",13,7,"Avezzano","Italy",32610
+"16",1917,"July",30,7.5,"Yunnan","China",1800
+"17",1918,"February",13,7.4,"Guangdong","China",1000
+"18",1920,"December",16,7.8,"Gansu","China",2e+05
+"19",1923,"March",24,7.3,"Sichuan","China",3500
+"20",1923,"March",25,5.7,"Torbat-e Heydariyeh","Iran",2200
+"21",1923,"September",1,7.9,"Yokohama","Japan",142800
+"22",1925,"March",16,7,"Yunnan","China",5800
+"23",1927,"March",7,7.6,"Tango","Japan",3020
+"24",1927,"May",22,7.6,"Gansu","China",40900
+"25",1929,"May",1,7.2,"Koppeh Dagh","Iran",3800
+"26",1930,"May",6,7.2,"Salmas","Iran",2500
+"27",1930,"July",23,6.5,"Irpinia","Italy",1404
+"28",1931,"March",31,6,"Managua","Nicaragua",2500
+"29",1931,"April",27,5.7,"Border","Armenia-Azerbaijan",2800
+"30",1931,"August",10,8,"Xinjiang","China",10000
+"31",1933,"March",2,8.4,"Sanriku","Japan",2990
+"32",1933,"March",10,6.2,"Long Beach","United States",115
+"33",1933,"August",25,7.5,"Sichuan","China",9300
+"34",1934,"January",15,8.1,"Bihar","India-Nepal",10700
+"35",1935,"April",21,7.1,"Miao-Li","Taiwan",3270
+"36",1935,"May",30,7.6,"Quetta","Pakistan",30000
+"37",1939,"January",25,7.8,"Chillan","Chile",28000
+"38",1939,"December",26,7.8,"Erzincan","Turkey",32700
+"39",1940,"November",10,7.3,"Vrancea","Romania",1000
+"40",1942,"December",20,7.3,"Erbaa","Turkey",1100
+"41",1943,"September",10,7.4,"Tottori","Japan",1190
+"42",1943,"November",26,7.6,"Ladik","Turkey",4000
+"43",1944,"January",15,7.4,"San Juan","Argentina",8000
+"44",1944,"February",1,7.4,"Gerede","Turkey",2790
+"45",1945,"January",12,7.1,"Mikawa","Japan",1961
+"46",1945,"November",27,8,"Makran Coast","Pakistan",4000
+"47",1946,"May",31,5.9,"Ustukran","Turkey",1300
+"48",1946,"November",10,7.3,"Ancash","Peru",1400
+"49",1946,"December",29,8.1,"Honshu","Japan",1362
+"50",1948,"June",28,7.3,"Fukui","Japan",3769
+"51",1948,"October",5,7.3,"Ashgabat","Turkmenistan",110000
+"52",1949,"July",10,7.5,"Khait","Tajikistan",12000
+"53",1949,"August",5,6.8,"Pelileo","Ecuador",5050
+"54",1950,"August",15,8.6,"Assam","India",1526
+"55",1951,"August",2,5.8,"Cosiguina","Nicaragua",1000
+"56",1953,"March",18,7.3,"Northwest","Turkey",1070
+"57",1954,"September",9,6.8,"Orleansville","Algeria",1250
+"58",1956,"June",10,7.7,"North","Afghanistan",2000
+"59",1957,"July",2,7.1,"North","Iran",1200
+"60",1957,"December",13,7.1,"West","Iran",1130
+"61",1960,"February",29,5.7,"Agadir","Morocco",12000
+"62",1960,"May",21,9.5,"South","Chile",1655
+"63",1962,"September",1,7.1,"Northwest","Iran",12255
+"64",1963,"July",26,6,"Skopje","Yugoslavia",1100
+"65",1964,"March",27,9.2,"Alaska","United States",131
+"66",1966,"March",7,7,"Hebei","China",1000
+"67",1966,"March",22,6.9,"Hebei","Chine",1000
+"68",1966,"August",19,6.8,"East","Turkey",2529
+"69",1968,"August",31,7.3,"Northeast","Iran",12000
+"70",1969,"July",25,5.9,"Guangdong","China",3000
+"71",1970,"January",5,7.5,"Yunnan","China",10000
+"72",1970,"March",28,6.9,"West","Turkey",1086
+"73",1970,"May",31,7.9,"Chimbote","Peru",7e+05
+"74",1971,"February",9,6.6,"San Fernando Valley","United States",65
+"75",1971,"May",22,6.9,"SE of Ankara","Turkey",1000
+"76",1972,"April",10,7.1,"South","Iran",5054
+"77",1972,"December",23,6.2,"Managua","Nicaragua",5000
+"78",1974,"May",10,6.8,NA,"China",20000
+"79",1974,"December",28,6.2,"North","Pakistan",5300
+"80",1975,"February",4,7,"Haicheng","China",2000
+"81",1975,"September",6,6.7,"East","Turkey",2300
+"82",1976,"February",4,7.5,NA,"Guatemala",23000
+"83",1976,"May",6,6.5,"Northeast","Italy",1000
+"84",1976,"June",25,7.1,"Irian Jaya","New Guinea",422
+"85",1976,"July",28,7.5,"Tangshan","China",255000
+"86",1976,"August",16,7.9,"Mindanao","Philippines",8000
+"87",1976,"November",24,7.3,"Northwest Border","Iran-Turkey",5000
+"88",1977,"March",4,7.2,NA,"Romania",1500
+"89",1978,"September",16,7.8,"Northeast","Iran",15000
+"90",1980,"October",10,7.7,"Northwest","Algeria",5000
+"91",1980,"November",23,6.5,"South","Italy",2735
+"92",1981,"June",11,6.9,"South","Iran",3000
+"93",1981,"July",28,7.3,"South","Iran",1500
+"94",1982,"December",13,6,"W Arabian Peninsula",NA,2800
+"95",1983,"October",30,6.9,"East","Turkey",1342
+"96",1985,"September",19,8,"Michoacan","Mexico",9500
+"97",1986,"October",10,5.5,NA,"El Salvador",1000
+"98",1987,"March",6,7,"Border","Colombia-Ecuador",1000
+"99",1988,"August",20,6.8,"Border","India-Nepal",1000
+"100",1988,"December",7,6.8,"Spitak","Armenia",25000
+"101",1989,"October",17,6.9,"San Francisco","United States",63
+"102",1990,"June",20,7.4,"West","Iran",40000
+"103",1990,"July",16,7.7,"Luzon","Philippines",1621
+"104",1991,"February",1,6.8,"Border","Pakistan-Afghanistan",1200
+"105",1991,"October",19,7,"North","India",2000
+"106",1992,"March",13,6.8,"East","Turkey",4000
+"107",1992,"March",15,6,"East","Turkey",NA
+"108",1992,"June",28,7.3,"Landers","United States",3
+"109",1992,"June",28,6.5,"Big Bear","United States",NA
+"110",1992,"December",12,7.5,"Flores Island","Indonesia",2500
+"111",1993,"September",30,6.2,"Maharashtra","India",9748
+"112",1994,"January",17,6.8,"Northridge","United States",61
+"113",1994,"June",6,6.8,"Cauca","Colombia",1000
+"114",1995,"January",16,6.9,"Kobe","Japan",5502
+"115",1995,"May",27,7.5,"Sakhalin Island","Russia",1989
+"116",1997,"February",28,6.1,"Northwest","Iran",1000
+"117",1997,"May",10,7.3,"North","Iran",1567
+"118",1998,"February",4,5.9,"Hindu Kush","Afghanistan",2323
+"119",1998,"May",30,6.6,"Border","Afghanistan-Tajikistan",4000
+"120",1998,"July",17,7,"Papua","New Guinea",2183
+"121",1999,"January",25,6.1,"Armenia","Colombia",1185
+"122",1999,"August",17,7.6,"Izmit","Turkey",17118
+"123",1999,"September",20,7.6,"Taichung","Taiwan",2400

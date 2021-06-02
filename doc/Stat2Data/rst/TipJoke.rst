@@ -15,22 +15,16 @@ Format
 
 A dataset with 211 observations on the following 5 variables.
 
-+----------+----------------------------------------------------------+
-| ``Card`` | Type of card used: ``Ad``, ``Joke``, or ``None``         |
-+----------+----------------------------------------------------------+
-| ``Tip``  | ``1``\ =customer left a tip or ``0``\ =no tip            |
-+----------+----------------------------------------------------------+
-| ``Ad``   | Indicator for ``Ad`` card (``1``\ =ad card left or       |
-|          | ``0``\ =no ad card)                                      |
-+----------+----------------------------------------------------------+
-| ``Joke`` | Indicator for ``Joke`` card (``1``\ =joke card left or   |
-|          | ``0``\ =no joke card)                                    |
-+----------+----------------------------------------------------------+
-| ``None`` | Indicator for no card (``1``\ =no card left or           |
-|          | ``0``\ =ad or joke card left)                            |
-+----------+----------------------------------------------------------+
-|          |                                                          |
-+----------+----------------------------------------------------------+
+========
+============================================================================
+``Card`` Type of card used: ``Ad``, ``Joke``, or ``None``
+``Tip``  ``1``\ =customer left a tip or ``0``\ =no tip
+``Ad``   Indicator for ``Ad`` card (``1``\ =ad card left or ``0``\ =no ad card)
+``Joke`` Indicator for ``Joke`` card (``1``\ =joke card left or ``0``\ =no joke card)
+``None`` Indicator for no card (``1``\ =no card left or ``0``\ =ad or joke card left)
+\       
+========
+============================================================================
 
 Details
 ~~~~~~~

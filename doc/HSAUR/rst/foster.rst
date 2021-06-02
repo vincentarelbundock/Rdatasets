@@ -55,3 +55,4 @@ Examples
 
      data("foster", package = "HSAUR")
      plot.design(foster)
+

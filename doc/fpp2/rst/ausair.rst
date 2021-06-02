@@ -29,3 +29,4 @@ Examples
 
 
    autoplot(ausair)
+

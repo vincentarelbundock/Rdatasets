@@ -64,3 +64,4 @@ Examples
    titanic$survival <- titanic$survived == "yes"
    glmlr <- glm(survival ~ age + sex + factor(class), family=binomial, data=titanic)
    summary(glmlr)
+

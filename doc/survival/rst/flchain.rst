@@ -18,7 +18,8 @@ Usage
 
 ::
 
-   data(flchain)
+   flchain
+   data(flchain, package="survival")
 
 Format
 ~~~~~~

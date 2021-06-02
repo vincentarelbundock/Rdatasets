@@ -76,3 +76,4 @@ Examples
    lines(1:60, 0.95*predict(deguelin.m2, 
    newdata=data.frame(dose=1:60))+0.05*predict(deguelin.m1, newdata=data.frame(dose=1:60), se = FALSE),
    col = 3, lty=3)
+

@@ -53,3 +53,4 @@ Examples
 
      data("watervoles", package = "HSAUR")
      watervoles
+

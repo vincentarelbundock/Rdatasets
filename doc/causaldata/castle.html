@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Data on castle-doctrine statutes and violent crime</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for castle"><tr><td>castle</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Data on castle-doctrine statutes and violent crime</h2>
+
+<h3>Description</h3>
+
+<p>This data looks at the impact of castle-doctrine statutes on violent crime. Data from the FBI Uniform Crime Reports Summary files are combined with information on castle-doctrine/stand-your-ground law impementation in different states.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+castle
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 19584 rows and 21 variables
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year</p>
+</dd>
+<dt>sid</dt><dd><p>state id</p>
+</dd>
+<dt>robbery_gun_r</dt><dd><p>Region-quarter fixed effects</p>
+</dd>
+<dt>jhcitizen_c</dt><dd><p>justifiable homicide by private citizen count</p>
+</dd>
+<dt>jhpolice_c</dt><dd><p>justifiable homicide by police count</p>
+</dd>
+<dt>homicide</dt><dd><p>homicide count per 100,000 state population</p>
+</dd>
+<dt>robbery</dt><dd><p>Region-quarter fixed effects</p>
+</dd>
+<dt>assault</dt><dd><p>aggravated assault count per 100,000 state population</p>
+</dd>
+<dt>burglary</dt><dd><p>burglary count per 100,000 state population</p>
+</dd>
+<dt>larceny</dt><dd><p>larceny count per 100,000 state population</p>
+</dd>
+<dt>motor</dt><dd><p>motor vehicle theft count per 100,000 state population</p>
+</dd>
+<dt>murder</dt><dd><p>murder count per 100,000 state population</p>
+</dd>
+<dt>unemployrt</dt><dd><p>unemployment rate</p>
+</dd>
+<dt>blackm_15_24</dt><dd><p>% of black male aged 15-24</p>
+</dd>
+<dt>whitem_15_24</dt><dd><p>% of white male aged 15-24</p>
+</dd>
+<dt>blackm_25_44</dt><dd><p>% of black male aged 25-44</p>
+</dd>
+<dt>whitem_25_44</dt><dd><p>% of white male aged 25-44</p>
+</dd>
+<dt>poverty</dt><dd><p>poverty rate</p>
+</dd>
+<dt>l_homicide</dt><dd><p>Logged crime rate</p>
+</dd>
+<dt>l_larceny</dt><dd><p>Logged crime rate</p>
+</dd>
+<dt>l_motor</dt><dd><p>Logged crime rate</p>
+</dd>
+<dt>l_police</dt><dd><p>Logged police presence</p>
+</dd>
+<dt>l_income</dt><dd><p>Logged income</p>
+</dd>
+<dt>l_prisoner</dt><dd><p>Logged number of prisoners</p>
+</dd>
+<dt>l_lagprisoner</dt><dd><p>Lagged log prisoners</p>
+</dd>
+<dt>l_exp_subsidy</dt><dd><p>Logged subsidy spending</p>
+</dd>
+<dt>l_exp_pubwelfare</dt><dd><p>Logged public welfare spending</p>
+</dd>
+<dt>lead1,lead2,lead3,lead4,lead5,lead6,lead7,lead8,lead9,lag0,lag1,lag2,lag3,lag4,lag5</dt><dd><p>Indicators of how many time periods until/since treatment</p>
+</dd>
+<dt>popwt</dt><dd><p>Population weight</p>
+</dd>
+<dt>r20001,r20002,r20003,r20004,r20011,r20012,r20013,r20014,r20021,r20022,r20023,r20024,r20031,r20032,r20033,r20034,r20041,r20042,r20043,r20044,r20051,r20052,r20053,r20054,r20061,r20062,r20063,r20064,r20071,r20072,r20073,r20074,r20081,r20082,r20083,r20084,r20091,r20092,r20093,r20094,r20101,r20102,r20103,r20104</dt><dd><p>Region-quarter fixed effects</p>
+</dd>
+<dt>trend_1,trend_10,trend_11,trend_12,trend_13,trend_14,trend_15,trend_16,trend_17,trend_18,trend_19,trend_2,trend_20,trend_21,trend_22,trend_23,trend_24,trend_25,trend_26,trend_27,trend_28,trend_29,trend_3,trend_30,trend_31,trend_32,trend_33,trend_34,trend_35,trend_36,trend_37,trend_38,trend_39,trend_4,trend_40,trend_41,trend_42,trend_43,trend_44,trend_45,trend_46,trend_47,trend_48,trend_49,trend_5,trend_50,trend_51,trend_6,trend_7,trend_8,trend_9</dt><dd><p>State linear time trends</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This data is used in the <em>Difference-in-Differences</em> chapter of <em>Causal Inference: The Mixtape</em> by Cunningham.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Cheng, Cheng, and Mark Hoekstra. 2013. “Does Strengthening Self-Defense Law Deter Crime or Escalate Violence? Evidence from Expansions to Castle Doctrine.” Journal of Human Resources 48 (3): 821–54.
+</p>
+
+
+<h3>References</h3>
+
+<p>Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. <a href="https://mixtape.scunning.com/index.html">https://mixtape.scunning.com/index.html</a>.
+</p>
+
+
+</body></html>

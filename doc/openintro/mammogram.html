@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Experiment with Mammogram Randomized</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for mammogram"><tr><td>mammogram</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Experiment with Mammogram Randomized</h2>
+
+<h3>Description</h3>
+
+<p>An experiment where 89,835 women were randomized to either get a mammogram
+or a non-mammogram breast screening. The response measured was whether they
+had died from breast cancer within 25 years.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+mammogram
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 89835 observations on the following 2 variables.
+</p>
+<dl>
+<dt>treatment</dt><dd><p>a factor with levels <code>control</code>
+<code>mammogram</code></p>
+</dd> <dt>breast_cancer_death</dt><dd><p>a factor with levels <code>no</code>
+<code>yes</code></p>
+</dd> </dl>
+
+
+
+<h3>Source</h3>
+
+<p>Miller AB. 2014. Twenty five year follow-up for breast cancer
+incidence and mortality of the Canadian National Breast Screening Study:
+randomised screening trial. BMJ 2014;348:g366.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+
+table(mammogram)
+chisq.test(table(mammogram))
+
+
+</pre>
+
+
+</body></html>

@@ -22,7 +22,7 @@ Usage
 Format
 ~~~~~~
 
-A data frame with 51 observations on the following 10 variables.
+A data frame with 51 observations on the following 13 variables.
 
 ``year``
    the year of the presidential election (2016)
@@ -55,11 +55,26 @@ A data frame with 51 observations on the following 10 variables.
 ``trumpw``
    did Trump win the state?
 
+``trumpshare``
+   the share of the vote Trump received
+
+``sunempr``
+   the state-level unemployment rate entering Nov. 2016
+
+``sunempr12md``
+   the state-level unemployment rate (12-month difference) entering Nov.
+   2016
+
+``gdp``
+   an estimate of the state's GDP
+
 Details
 ~~~~~~~
 
 Data were created in early 2017 for an upper-division course on
 quantitative methods. Educational attainment and division/region data
-come from the Census. Voter turnout data come from the Elections Project
-at George Mason University. GDP per capita estimates come from Bureau of
-Economic Analysis.
+come from the Census. Voter turnout/share data come from the Elections
+Project at George Mason University. GDP per capita estimates come from
+Bureau of Economic Analysis. Unemployment data come from the Bureau of
+Labor Statistics and code to generate it was derived from a forthcoming
+publication of mine.

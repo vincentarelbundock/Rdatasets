@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Infant Mortality Rates, 2012</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for infmortrate"><tr><td>infmortrate</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Infant Mortality Rates, 2012</h2>
+
+<h3>Description</h3>
+
+<p>This entry gives the number of deaths of infants under one year old in 2012
+per 1,000 live births in the same year. This rate is often used as an
+indicator of the level of health in a country.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+infmortrate
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 222 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt>country</dt><dd><p>Name of country.</p>
+</dd>
+<dt>inf_mort_rate</dt><dd><p>Infant mortality rate per 1,000 live births.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data is given in decreasing order of infant mortality rates. There are a
+few potential outliers.
+</p>
+
+
+<h3>Source</h3>
+
+<p>CIA World Factbook,
+<a href="https://www.cia.gov/the-world-factbook/field/infant-mortality-rate/country-comparison">https://www.cia.gov/the-world-factbook/field/infant-mortality-rate/country-comparison</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+
+ggplot(infmortrate, aes(x = inf_mort_rate)) +
+  geom_histogram(binwidth = 10)
+
+ggplot(infmortrate, aes(x = inf_mort_rate)) +
+  geom_density()
+
+</pre>
+
+
+</body></html>

@@ -77,3 +77,4 @@ Examples
      boxplot(BCG$BCGTB/BCG$BCGVacc, BCG$NoVaccTB/BCG$NoVacc,
              names = c("BCG Vaccination", "No Vaccination"), 
              ylab = "Percent BCG cases")
+

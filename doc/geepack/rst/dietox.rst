@@ -23,28 +23,28 @@ Format
 This data frame contains the following columns:
 
 Weight
-   Weight
+   Weight in Kg
 
 Feed
-   Cumulated feed intake
+   Cumulated feed intake in Kg
 
 Time
    Time (in weeks) in the experiment
 
 Pig
-   Id of each pig
+   Factor; id of each pig
 
 Evit
-   Vitamin E dose
+   Factor; vitamin E dose; see 'details'.
 
 Cu
-   Copper dose
+   Factor, copper dose; see 'details'
 
 Start
    Start weight in experiment, i.e. weight at week 1.
 
 Litter
-   Id of litter of each pig
+   Factor, id of litter of each pig
 
 Details
 ~~~~~~~
@@ -70,5 +70,13 @@ Examples
 
 
    data(dietox)
-   str(dietox) ;
-   plot(dietox)
+   head(dietox)
+   ## Not run: 
+   if (require(ggplot2)){
+     qplot(Time, Weight, data=dietox, col=Pig) + geom_line() +
+           theme(legend.position = "none") + facet_grid(Evit~Cu)
+   } else {
+     coplot(Weight ~ Time | Evit * Cu, data=dietox)
+   }
+
+   ## End(Not run)

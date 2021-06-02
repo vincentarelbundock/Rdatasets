@@ -49,9 +49,10 @@ parentheses are the names used in the 1980 reference).
 Note
 ~~~~
 
-The boot package contains another version of this salinity data set,
-also attributed to Ruppert and Carroll (1980), but with two clear
-transcription errors, see the examples.
+The `boot <https://CRAN.R-project.org/package=boot>`__ package contains
+another version of this salinity data set, also attributed to Ruppert
+and Carroll (1980), but with two clear transcription errors, see the
+examples.
 
 Source
 ~~~~~~

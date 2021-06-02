@@ -74,8 +74,8 @@ Source
 ~~~~~~
 
 Macdonell, W. R. (1902). On Criminal Anthropometry and the
-Identification of Criminals. *Biometrika*, 1(2), 177-227.
-doi:10.1093/biomet/1.2.177 http://www.jstor.org/stable/2331487
+Identification of Criminals. *Biometrika*, 1(2), 177-227. doi:
+`10.1093/biomet/1.2.177 <https://doi.org/10.1093/biomet/1.2.177>`__
 
 The data used here were obtained from:
 
@@ -86,10 +86,10 @@ References
 ~~~~~~~~~~
 
 Hanley, J. and Julien, M. and Moodie, E. (2008). Student's z, t, and s:
-What if Gosset had R? *The American Statistican*, 62(1), 64-69.
+What if Gosset had R? *The American Statistician*, 62(1), 64-69.
 
 Gosset, W. S. [Student] (1908). Probable error of a mean. *Biometrika*,
-6(1), 1-25. http://www.york.ac.uk/depts/maths/histstat/student.pdf
+6(1), 1-25. https://www.york.ac.uk/depts/maths/histstat/student.pdf
 
 Gosset, W. S. [Student] (1908). Probable error of a correlation
 coefficient. *Biometrika*, 6, 302-310.
@@ -264,4 +264,6 @@ Examples
    Q <- qchisq(1:3000/3000, 2)
    plot(Q, sort(Dsq), xlab="Chisquare (2) quantile", ylab="Squared distance")
    abline(a=0, b=1, col="red", lwd=2)
+
+
 

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: 1986 Challenger disaster and O-rings</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for orings"><tr><td>orings</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>1986 Challenger disaster and O-rings</h2>
+
+<h3>Description</h3>
+
+<p>On January 28, 1986, a routine launch was anticipated for the Challenger
+space shuttle. Seventy-three seconds into the flight, disaster happened: the
+shuttle broke apart, killing all seven crew members on board. An
+investigation into the cause of the disaster focused on a critical seal
+called an O-ring, and it is believed that damage to these O-rings during a
+shuttle launch may be related to the ambient temperature during the launch.
+The table below summarizes observational data on O-rings for 23 shuttle
+missions, where the mission order is based on the temperature at the time of
+the launch.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+orings
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 23 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt>mission</dt><dd><p>Shuttle mission number.</p>
+</dd>
+<dt>temperature</dt><dd><p>Temperature, in Fahrenheit.</p>
+</dd>
+<dt>damaged</dt><dd><p>Number of damaged O-rings (out of 6).</p>
+</dd>
+<dt>undamaged</dt><dd><p>Number of undamaged O-rings (out of 6).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://archive.ics.uci.edu/ml/datasets/Challenger+USA+Space+Shuttle+O-Ring">https://archive.ics.uci.edu/ml/datasets/Challenger+USA+Space+Shuttle+O-Ring</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(dplyr)
+library(forcats)
+library(tidyr)
+library(broom)
+
+# This is a wide data frame. You can convert it to a long
+# data frame to predict probability of O-ring damage based
+# on temperature using logistic regression.
+
+orings_long &lt;- orings %&gt;%
+  pivot_longer(cols = c(damaged, undamaged), names_to = "outcome", values_to = "n") %&gt;%
+  uncount(n) %&gt;%
+  mutate(outcome = fct_relevel(outcome, "undamaged", "damaged"))
+
+orings_mod &lt;- glm(outcome ~ temperature, data = orings_long, family = "binomial")
+tidy(orings_mod)
+
+</pre>
+
+
+</body></html>

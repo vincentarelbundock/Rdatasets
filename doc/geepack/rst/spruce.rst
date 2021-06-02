@@ -70,3 +70,4 @@ Examples
    fit.89 <- geese(logsize ~ as.factor(wave) + contr - 1,
                    id=id, data=sitka89, corstr="ar1")
    summary(fit.89)
+

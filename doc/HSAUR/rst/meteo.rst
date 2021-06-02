@@ -61,3 +61,4 @@ Examples
 
      data("meteo", package = "HSAUR")
      meteo
+

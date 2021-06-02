@@ -38,8 +38,8 @@ A data frame with records for 88 age/alcohol/tobacco combinations.
 \                                    2 10--19
 \                                    3 20--29
 \                                    4 30+
-[,4] "ncases"    Number of cases     
-[,5] "ncontrols" Number of controls  
+[,4] "ncases"    Number of cases    
+[,5] "ncontrols" Number of controls 
 ==== =========== =================== ==============
 
 Author(s)

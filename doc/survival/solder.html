@@ -19,7 +19,9 @@ The response, measured by eye, is the number of visible solder skips.
 
 <h3>Usage</h3>
 
-<pre>data("solder")</pre>
+<pre>solder
+data(solder, package="survival")
+</pre>
 
 
 <h3>Format</h3>
@@ -66,7 +68,6 @@ pad type A6 and the other 3 with pad type A3.
 <h3>Examples</h3>
 
 <pre>
-data(solder)
 # The balanced subset used by Chambers and Hastie
 #   contains the first 180 of each mask and deletes mask A6. 
 index &lt;- 1 + (1:nrow(solder)) - match(solder$Mask, solder$Mask)

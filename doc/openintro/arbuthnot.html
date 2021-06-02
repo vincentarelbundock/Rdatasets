@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Male and female births in London</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for arbuthnot"><tr><td>arbuthnot</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Male and female births in London</h2>
+
+<h3>Description</h3>
+
+<p>Arbuthnot's data describes male and female christenings (births) for
+London from 1629-1710.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+arbuthnot
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A tbl_df with with 82 rows and 3 variables:
+</p>
+
+<dl>
+<dt>year</dt><dd><p>year, ranging from 1629 to 1710</p>
+</dd>
+<dt>boys</dt><dd><p>number of male christenings (births)</p>
+</dd>
+<dt>girls</dt><dd><p>number of female christenings (births)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>John Arbuthnot (1710) used these time series data to carry out the first
+known significance test. During every one of the 82 years, there were more
+male christenings than female christenings. As Arbuthnot wondered,
+we might also wonder if this could be due to chance, or whether it meant
+the birth ratio was not actually 1:1.
+</p>
+
+
+<h3>Source</h3>
+
+<p>These data are excerpted from the <code>Arbuthnot</code> data set in the
+<a href="https://CRAN.R-project.org/package=HistData">HistData</a> package.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+library(tidyr)
+
+# All births
+ggplot(arbuthnot, aes(x = year, y = boys + girls, group = 1)) +
+  geom_line()
+
+# Boys and girls
+arbuthnot %&gt;%
+  pivot_longer(cols = -year, names_to = "sex", values_to = "n") %&gt;%
+  ggplot(aes(x = year, y = n, color = sex, group = sex)) +
+  geom_line()
+
+</pre>
+
+
+</body></html>

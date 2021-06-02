@@ -16,7 +16,8 @@ Usage
 
 ::
 
-   data("diabetic")
+   diabetic
+   data(diabetic, package="survival")
 
 Format
 ~~~~~~

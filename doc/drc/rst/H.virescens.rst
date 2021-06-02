@@ -68,3 +68,5 @@ Examples
 
    ## Estimated ED values (matching those given in MASS)
    ED(Hv.m1, c(25, 50, 75))
+
+

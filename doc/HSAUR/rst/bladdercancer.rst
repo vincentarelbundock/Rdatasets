@@ -55,3 +55,4 @@ Examples
 
      data("bladdercancer", package = "HSAUR")
      mosaicplot(xtabs(~ number + tumorsize, data = bladdercancer))
+

@@ -26,23 +26,24 @@ dietox
 </p>
 
 <dl>
-<dt>Weight</dt><dd><p>Weight</p>
+<dt>Weight</dt><dd><p>Weight in Kg</p>
 </dd>
-<dt>Feed</dt><dd><p>Cumulated feed intake</p>
+<dt>Feed</dt><dd><p>Cumulated feed intake in Kg</p>
 </dd>
 <dt>Time</dt><dd><p>Time (in weeks) in the experiment</p>
 </dd>
-<dt>Pig</dt><dd><p>Id of each pig</p>
+<dt>Pig</dt><dd><p>Factor; id of each pig</p>
 </dd>
-<dt>Evit</dt><dd><p>Vitamin E dose</p>
+<dt>Evit</dt><dd><p>Factor; vitamin E dose; see 'details'.</p>
 </dd>
-<dt>Cu</dt><dd><p>Copper dose</p>
+<dt>Cu</dt><dd><p>Factor, copper dose; see 'details'</p>
 </dd>
 <dt>Start</dt><dd><p>Start weight in experiment, i.e. weight at week 1.</p>
 </dd>
-<dt>Litter</dt><dd><p>Id of litter of each pig</p>
+<dt>Litter</dt><dd><p>Factor, id of litter of each pig</p>
 </dd>
 </dl>
+
 
 
 <h3>Details</h3>
@@ -69,10 +70,16 @@ Antioxidant and Oxidative Status of Pigs. J. Anim. Sci.77:906-916
 <pre>
 
 data(dietox)
-str(dietox) ;
-plot(dietox)
+head(dietox)
+## Not run: 
+if (require(ggplot2)){
+  qplot(Time, Weight, data=dietox, col=Pig) + geom_line() +
+        theme(legend.position = "none") + facet_grid(Evit~Cu)
+} else {
+  coplot(Weight ~ Time | Evit * Cu, data=dietox)
+}
 
-
+## End(Not run)
 </pre>
 
 

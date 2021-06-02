@@ -71,3 +71,4 @@ Examples
      boxplot(smoking$qt/smoking$tt,
              smoking$qc/smoking$tc,
              names = c("Treated", "Control"), ylab = "Percent Quitters")
+

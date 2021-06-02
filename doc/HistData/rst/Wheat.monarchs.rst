@@ -70,7 +70,7 @@ Causes and Remedies*. London: W. Sams, 1821
 
 Data values: originally digitized from
 http://datavis.ca/gallery/images/playfair-wheat1.gif now taken from
-http://mbostock.github.com/protovis/ex/wheat.js
+http://mbostock.github.io/protovis/ex/wheat.js
 
 References
 ~~~~~~~~~~

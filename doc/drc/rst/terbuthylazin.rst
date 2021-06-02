@@ -60,3 +60,4 @@ Examples
    ##  with Box-Cox transformation
    terbuthylazin.m2 <- boxcox(terbuthylazin.m1, method = "anova")
    summary(terbuthylazin.m2)
+

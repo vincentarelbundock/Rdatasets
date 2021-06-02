@@ -78,3 +78,4 @@ Examples
                                            data=titanicgrp)
    summary(nb2o)
    exp(coef(nb2o))
+
