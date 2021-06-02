@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Can Americans categorize facts and opinions?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for fact_opinion"><tr><td>fact_opinion</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Can Americans categorize facts and opinions?</h2>
+
+<h3>Description</h3>
+
+<p>Pew Research Center conducted a survey in 2018, asking a sample of
+U.S. adults to categorize five factual and five opinion statements.
+This dataset provides data from this survey, with information on the age
+group of the participant as well as the number of factual and opinion
+statements they classified correctly (out of 5).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+fact_opinion
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 5,035 rows and 3 variables.
+</p>
+
+<dl>
+<dt>age_group</dt><dd><p>Age group of survey participant.</p>
+</dd>
+<dt>fact_correct</dt><dd><p>Number of factual statements classified correctly (out of 5).</p>
+</dd>
+<dt>opinion_correct</dt><dd><p>Number of opinion statements classified correctly (out of 5).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.pewresearch.org/fact-tank/2018/10/23/younger-americans-are-better-than-older-americans-at-telling-factual-news-statements-from-opinions/">Younger Americans are better than older Americans at telling factual news statements from opinions</a>, Pew Research Center, October 23, 2018.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(forcats)
+
+# Distribution of fact_correct by age group
+ggplot(fact_opinion, aes(x = age_group, y = fact_correct)) +
+  geom_boxplot() +
+  labs(
+    x = "Age group",
+    y = "Number correct (factual)",
+    title = "Number of factual statements classified correctly by age group"
+    )
+
+# Distribution of opinion_correct by age group
+ggplot(fact_opinion, aes(x = age_group, y = opinion_correct)) +
+  geom_boxplot() +
+  labs(
+    x = "Age group",
+    y = "Number correct (opinion)",
+    title = "Number of opinion statements classified correctly by age group"
+    )
+
+# Replicating the figure from Pew report (see source for link)
+fact_opinion %&gt;%
+  mutate(
+    facts = case_when(
+      fact_correct &lt;= 2        ~ "Two or fewer",
+      fact_correct %in% c(3,4) ~ "Three or four",
+      fact_correct == 5        ~ "All five"
+      ),
+    facts = fct_relevel(facts, "Two or fewer", "Three or four", "All five"),
+    opinions = case_when(
+      opinion_correct &lt;= 2        ~ "Two or fewer",
+      opinion_correct %in% c(3,4) ~ "Three or four",
+      opinion_correct == 5        ~ "All five"
+      ),
+    opinions = fct_relevel(opinions, "Two or fewer", "Three or four", "All five")
+  ) %&gt;%
+  select(-fact_correct, -opinion_correct) %&gt;%
+  pivot_longer(cols = -age_group, names_to = "question_type", values_to = "n_correct") %&gt;%
+  ggplot(aes(y = fct_rev(age_group), fill = n_correct)) +
+  geom_bar(position = "fill") +
+  facet_wrap(~question_type, ncol = 1) +
+  scale_fill_viridis_d(guide = guide_legend(reverse = TRUE)) +
+  labs(
+    x = "Proportion",
+    y = "Age group",
+    fill = "Number of\ncorrect\nclassifications"
+  )
+
+</pre>
+
+
+</body></html>

@@ -18,7 +18,7 @@ A dataset with 25 observations on the following 2 variables.
 ========= =========================================
 ``Year``  Years when stamp price changed
 ``Price`` Cost of a US first class stamp (in cents)
-\         
+\        
 ========= =========================================
 
 Details

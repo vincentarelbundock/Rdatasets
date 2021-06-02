@@ -20,7 +20,7 @@ A dataset with 67 observations on the following 3 variables.
 ``County``   Name of the Florida county
 ``Buchanan`` Number of votes for Pat Buchanan
 ``Bush``     Number of votes for George Bush
-\            
+\           
 ============ ================================
 
 Details

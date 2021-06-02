@@ -57,3 +57,4 @@ Examples
    plot(leaflength.crs4c2, broken = TRUE, conLevel = 0.001, type = "all", legend = FALSE, 
    ylab = "Produced leaf length (cm)", xlab = "Metsulfuron-methyl (mg/l)",
    main = "Hormesis: leaf length of barley")
+

@@ -21,7 +21,7 @@ A dataset with 16 observations on the following 4 variables.
 ``Opponent`` Name of opposing team
 ``Attempts`` Number of rushing attempts
 ``Yards``    Total yards gained rushing for the game
-\            
+\           
 ============ =======================================
 
 Details

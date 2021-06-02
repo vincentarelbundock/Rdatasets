@@ -25,7 +25,7 @@ A data frame with 123 observations on the following 9 variables.
 ``Mass``       Body mass (in grams)
 ``Skull``      Distance from base of bill to back of skull (in mm)
 ``Sex``        Sex coded as 0=female or 1=male
-\              
+\             
 ============== =====================================================
 
 Details

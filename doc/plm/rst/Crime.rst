@@ -178,7 +178,7 @@ https://www.wiley.com/legacy/wileychi/baltagi/
 
 Online complements to Baltagi (2013):
 
-http://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
+https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
 
 See also Journal of Applied Econometrics data archive entry for Baltagi
 (2006) at http://qed.econ.queensu.ca/jae/2006-v21.4/baltagi/.
@@ -189,9 +189,9 @@ References
 Cornwell C, Trumbull WN (1994). “Estimating the economic model of crime
 with panel data.” *Review of Economics and Statistics*, **76**, 360–366.
 
-Baltagi BH (2006-May - June). “Estmating an economic model of crime
-using panel data from North Carolina.” *Journal of Applied
-Econometrics*, **21**.
+Baltagi BH (2006). “Estmating an economic model of crime using panel
+data from North Carolina.” *Journal of Applied Econometrics*,
+**21**\ (4).
 
 Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
 John Wiley and Sons ltd.

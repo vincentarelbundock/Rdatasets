@@ -15,20 +15,15 @@ Format
 
 A dataset with 12 observations on the following 4 variables.
 
-+-------------+-------------------------------------------------------+
-| ``River``   | One of four rivers: ``Grasse``, ``Oswegatchie``,      |
-|             | ``Raquette``, or ``St. Regis``                        |
-+-------------+-------------------------------------------------------+
-| ``Site``    | Location of the site: ``DownStream``, ``MidStream``   |
-|             | or ``Upstream``                                       |
-+-------------+-------------------------------------------------------+
-| ``Iron``    | Iron concentration in the water sample (parts per     |
-|             | million)                                              |
-+-------------+-------------------------------------------------------+
-| ``LogIron`` | Log (base 10) of iron concentration                   |
-+-------------+-------------------------------------------------------+
-|             |                                                       |
-+-------------+-------------------------------------------------------+
+===========
+===============================================================================
+``River``   One of four rivers: ``Grasse``, ``Oswegatchie``, ``Raquette``, or ``St. Regis``
+``Site``    Location of the site: ``DownStream``, ``MidStream`` or ``Upstream``
+``Iron``    Iron concentration in the water sample (parts per million)
+``LogIron`` Log (base 10) of iron concentration
+\          
+===========
+===============================================================================
 
 Details
 ~~~~~~~

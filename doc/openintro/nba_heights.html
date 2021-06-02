@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: NBA Player heights from 2008-9</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for nba_heights"><tr><td>nba_heights</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>NBA Player heights from 2008-9</h2>
+
+<h3>Description</h3>
+
+<p>Heights of all NBA players from the 2008-9 season.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+nba_heights
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 435 observations (players) on the following 4
+variables.
+</p>
+
+<dl>
+<dt>last_name</dt><dd><p>Last name.</p>
+</dd>
+<dt>first_name</dt><dd><p>First name.</p>
+</dd>
+<dt>h_meters</dt><dd><p>Height, in meters.</p>
+</dd>
+<dt>h_in</dt><dd><p>Height, in inches.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Collected from <a href="https://www.nba.com/">NBA</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+qqnorm(nba_heights$h_meters)
+
+</pre>
+
+
+</body></html>

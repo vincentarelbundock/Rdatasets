@@ -55,3 +55,4 @@ Examples
 
      data("aspirin", package = "HSAUR")
      aspirin
+

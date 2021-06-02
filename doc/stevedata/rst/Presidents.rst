@@ -21,7 +21,7 @@ Usage
 Format
 ~~~~~~
 
-A data frame with 44 observations on the following 3 variables.
+A data frame with 45 observations on the following 3 variables.
 
 ``president``
    the president

@@ -16,22 +16,17 @@ Format
 
 A data frame with 46 observations on the following 6 variables.
 
-+----------------+----------------------------------------------------+
-| ``Peak``       | Name of the mountain                               |
-+----------------+----------------------------------------------------+
-| ``Elevation``  | Elevation at the highest point (in feet)           |
-+----------------+----------------------------------------------------+
-| ``Difficulty`` | Rating of difficulty of the hike: ``1`` (easy) to  |
-|                | ``7`` (most difficult)                             |
-+----------------+----------------------------------------------------+
-| ``Ascent``     | Vertical ascent (in feet)                          |
-+----------------+----------------------------------------------------+
-| ``Length``     | Length of hike (in miles)                          |
-+----------------+----------------------------------------------------+
-| ``Time``       | Expected trip time (in hours)                      |
-+----------------+----------------------------------------------------+
-|                |                                                    |
-+----------------+----------------------------------------------------+
+==============
+========================================================================
+``Peak``       Name of the mountain
+``Elevation``  Elevation at the highest point (in feet)
+``Difficulty`` Rating of difficulty of the hike: ``1`` (easy) to ``7`` (most difficult)
+``Ascent``     Vertical ascent (in feet)
+``Length``     Length of hike (in miles)
+``Time``       Expected trip time (in hours)
+\             
+==============
+========================================================================
 
 Details
 ~~~~~~~

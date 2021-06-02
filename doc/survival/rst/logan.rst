@@ -15,7 +15,8 @@ Usage
 
 ::
 
-   data(logan)
+   logan
+   data(logan, package="survival")
 
 Format
 ~~~~~~

@@ -48,7 +48,7 @@ tzone
 Source
 ~~~~~~
 
-http://openflights.org/data.html, downloaded 2014-06-27
+https://openflights.org/data.html, downloaded 2014-06-27
 
 Examples
 ~~~~~~~~

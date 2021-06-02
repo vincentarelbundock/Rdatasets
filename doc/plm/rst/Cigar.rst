@@ -60,7 +60,7 @@ https://www.wiley.com/legacy/wileychi/baltagi/
 
 Online complements to Baltagi (2013):
 
-http://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
+https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
 
 References
 ~~~~~~~~~~
@@ -72,12 +72,13 @@ Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
 John Wiley and Sons ltd.
 
 Baltagi B, Levin D (1992). “Cigarette taxation: Raising revenues and
-reducing consumption.” *Structural Change and Economic Dynamics*, **3**,
-321–335.
+reducing consumption.” *Structural Change and Economic Dynamics*,
+**3**\ (2), 321–335.
 https://EconPapers.repec.org/RePEc:eee:streco:v:3:y:1992:i:2:p:321-335.
 
 Baltagi BH, Griffin JM, Xiong W (2000). “To Pool or Not to Pool:
 Homogeneous Versus Heterogeneous Estimators Applied to Cigarette
-Demand.” *The Review of Economics and Statistics*, **82**, 117–126. doi:
+Demand.” *The Review of Economics and Statistics*, **82**\ (1), 117–126.
+doi:
 `10.1162/003465300558551 <https://doi.org/10.1162/003465300558551>`__,
 https://doi.org/10.1162/003465300558551.

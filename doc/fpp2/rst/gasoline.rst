@@ -28,3 +28,4 @@ Examples
 
 
    autoplot(gasoline, xlab="Year")
+

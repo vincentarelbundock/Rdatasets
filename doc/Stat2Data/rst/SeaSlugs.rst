@@ -18,7 +18,7 @@ A dataset with 36 observations on the following 2 variables.
 =========== ==================================================
 ``Time``    Minutes after tide come in
 ``Percent`` Proportion of 15 sea slug larvae that metamorphose
-\           
+\          
 =========== ==================================================
 
 Details

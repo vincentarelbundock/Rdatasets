@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: How important is it to ask pointed questions?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ask"><tr><td>ask</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>How important is it to ask pointed questions?</h2>
+
+<h3>Description</h3>
+
+<p>In this experiment, each individual was asked to be a seller of an iPod (a
+product commonly used to store music on before smart phones...).  They
+participant received $10 + 5% of the sale price for participating.  The
+iPod they were selling had frozen twice in the past inexplicably but
+otherwise worked fine. The prospective buyer starts off and then asks one of
+three final questions, depending on the seller's treatment group.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ask
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 219 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt>question_class</dt><dd><p>The type of question:
+<code>general</code>, <code>pos_assumption</code>, and <code>neg_assumption</code>.</p>
+</dd>
+<dt>question</dt><dd><p>The question corresponding to the
+<code>question.class</code></p>
+</dd>
+<dt>response</dt><dd><p>The classified response from the seller,
+either <code>disclose</code> or <code>hide</code>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The three possible questions:
+</p>
+
+<ul>
+<li><p> General: What can you tell me about it?
+</p>
+</li>
+<li><p> Positive Assumption: It doesn't have any problems, does it?
+</p>
+</li>
+<li><p> Negative Assumption: What problems does it have?
+</p>
+</li></ul>
+
+<p>The outcome variable is whether or not the participant discloses or hides
+the problem with the iPod.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Minson JA, Ruedy NE, Schweitzer ME. There <em>is</em> such a thing as
+a stupid question: Question disclosure in strategic communication.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(dplyr)
+library(ggplot2)
+
+# Distribution of responses based on question type
+ask %&gt;%
+  count(question_class, response)
+
+# Visualize relative frequencies of responses based on question type
+ggplot(ask, aes(x = question_class, fill = response)) +
+  geom_bar(position = "fill")
+
+# Perform chi-square test
+(test &lt;- chisq.test(table(ask$question_class, ask$response)))
+
+# Check the test's assumption around sufficient expected observations
+# per table cell.
+test$expected
+
+</pre>
+
+
+</body></html>

@@ -106,3 +106,4 @@ Examples
    (tm <- apply(MichelsonSets, 2, mean, trim=.1))
    points(1:5, mn)
    points(1:5+.05, tm, pch=16, col="blue")
+

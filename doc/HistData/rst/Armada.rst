@@ -8,7 +8,7 @@ La Felicisima Armada
 Description
 ~~~~~~~~~~~
 
-The Spanish Armada (Spanish: *Grande y Felicisima Armada*, literally
+The Spanish Armada (Spanish: *Grande y Felicissima Armada*, literally
 "Great and Most Fortunate Navy") was a Spanish fleet of 130 ships that
 sailed from La Coruna in August 1588. During its preparation, several
 accounts of its formidable strength were circulated to reassure allied
@@ -83,7 +83,7 @@ de Falguerolles, A. (2008) L'analyse des donnees; before and around.
 References
 ~~~~~~~~~~
 
-Pedro de Paz Salas and Antonio Alvares. La felicissima armada que elrey
+Pedro de Paz Salas and Antonio Alvares. La felicisima armada que elrey
 Don Felipe nuestro Senor mando juntar enel puerto de la ciudad de Lisboa
 enel Reyno de Portugal. Lisbon, 1588.
 

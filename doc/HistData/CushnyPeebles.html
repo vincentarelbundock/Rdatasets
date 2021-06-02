@@ -92,8 +92,7 @@ in analyses or other versions of this data set.
 <p>Cushny, A. R., and Peebles, A. R. (1905), &quot;The Action of Optical Isomers. II:
 Hyoscines,&quot; <em>Journal of Physiology</em>, 32, 501-510.
 </p>
-<p>Senn, Stephen, Data from Cushny and Peebles, <a href="http://www.senns.demon.co.uk/Data/Cushny.xls">http://www.senns.demon.co.uk/Data/Cushny.xls</a>
-</p>
+
 
 
 <h3>References</h3>
@@ -123,7 +122,6 @@ boxplot(CushnyPeebles, ylab="Hours of Sleep", xlab="Treatment")
 
 ##########################
 # Repeated measures MANOVA
-require(car)
 
 CPmod &lt;- lm(cbind(Control, L_hyoscyamine, L_hyoscine, DL_hyoscine) ~ 1, data=CushnyPeebles)
 
@@ -136,7 +134,9 @@ contrasts(Treatment) &lt;- matrix(
 colnames(contrasts(Treatment)) &lt;- c("Control.Drug", "L.DL", "L_hy.DL_hy")
 
 Treats &lt;- data.frame(Treatment)
+if (require(car)) {
 (CPaov &lt;- Anova(CPmod, idata=Treats, idesign= ~Treatment))
+}
 summary(CPaov, univariate=FALSE)
 
 if (require(heplots)) {

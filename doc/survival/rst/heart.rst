@@ -16,7 +16,8 @@ Usage
 
 ::
 
-   data(heart)
+   heart
+   data(heart, package="survival")
 
 Format
 ~~~~~~
@@ -38,28 +39,22 @@ mismatch:   mismatch score
 hla.a2:     particular type of mismatch
 mscore:     another mismatch score
 reject:     rejection occurred
-\           
+\          
 =========== ===========================
 
 jasa1, heart: processed data
 
-+---------------------+-----------------------------------------------+
-| start, stop, event: | Entry and exit time and status for this       |
-|                     | interval of time                              |
-+---------------------+-----------------------------------------------+
-| age:                | age-48 years                                  |
-+---------------------+-----------------------------------------------+
-| year:               | year of acceptance (in years after 1 Nov      |
-|                     | 1967)                                         |
-+---------------------+-----------------------------------------------+
-| surgery:            | prior bypass surgery 1=yes                    |
-+---------------------+-----------------------------------------------+
-| transplant:         | received transplant 1=yes                     |
-+---------------------+-----------------------------------------------+
-| id:                 | patient id                                    |
-+---------------------+-----------------------------------------------+
-|                     |                                               |
-+---------------------+-----------------------------------------------+
+===================
+========================================================
+start, stop, event: Entry and exit time and status for this interval of time
+age:                age-48 years
+year:               year of acceptance (in years after 1 Nov 1967)
+surgery:            prior bypass surgery 1=yes
+transplant:         received transplant 1=yes
+id:                 patient id
+\                  
+===================
+========================================================
 
 Source
 ~~~~~~

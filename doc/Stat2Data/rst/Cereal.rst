@@ -21,7 +21,7 @@ A data frame with 36 observations on the following 4 variables.
 ``Calories`` Calories per serving
 ``Sugar``    Grams of sugar per serving
 ``Fiber``    Grams of fiber per serving
-\            
+\           
 ============ ==========================
 
 Details

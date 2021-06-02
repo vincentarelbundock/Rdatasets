@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Community college housing (simulated data, 2015)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for student_housing"><tr><td>student_housing</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Community college housing (simulated data, 2015)</h2>
+
+<h3>Description</h3>
+
+<p>These are simulated data and intended to represent housing prices of
+students at a college.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+student_housing
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 175 observations on the following variable.
+</p>
+
+<dl>
+<dt>price</dt><dd><p>Monthly housing price, simulated.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre>
+
+set.seed(5)
+generate_student_housing&lt;- data.frame(
+    price = round(rnorm(175, 515, 65) + exp(rnorm(175, 4.2, 1))))
+hist(student_housing$price, 20)
+t.test(student_housing$price)
+mean(student_housing$price)
+sd(student_housing$price)
+identical(student_housing, generate_student_housing)
+
+
+</pre>
+
+
+</body></html>

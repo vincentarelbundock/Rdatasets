@@ -15,37 +15,23 @@ Format
 
 A data frame with 84 observations on the following 12 variables.
 
-+--------------+------------------------------------------------------+
-| ``Species``  | Latin species name                                   |
-+--------------+------------------------------------------------------+
-| ``Common``   | Common species name                                  |
-+--------------+------------------------------------------------------+
-| ``Page``     | Page in a bird manual describing the species         |
-+--------------+------------------------------------------------------+
-| ``Length``   | Mean body length for the species (in cm)             |
-+--------------+------------------------------------------------------+
-| ``Nesttype`` | Type of nest                                         |
-+--------------+------------------------------------------------------+
-| ``Location`` | Location of nest                                     |
-+--------------+------------------------------------------------------+
-| ``No.eggs``  | Number of eggs                                       |
-+--------------+------------------------------------------------------+
-| ``Color``    | Egg color (``0``\ =plain/solid or                    |
-|              | ``1``\ =speckled/spotted)                            |
-+--------------+------------------------------------------------------+
-| ``Incubate`` | Mean length of time (in days) the species incubates  |
-|              | eggs in the nest                                     |
-+--------------+------------------------------------------------------+
-| ``Nestling`` | Mean length of time (in days) the species cares for  |
-|              | babies in the nest until fledged                     |
-+--------------+------------------------------------------------------+
-| ``Totcare``  | Total care time = Incubate+Nestling                  |
-+--------------+------------------------------------------------------+
-| ``Closed``   | 1=closed nest (pendant, spherical, cavity, crevice,  |
-|              | burrow), 0=open nest (saucer, cup)                   |
-+--------------+------------------------------------------------------+
-|              |                                                      |
-+--------------+------------------------------------------------------+
+============
+======================================================================================
+``Species``  Latin species name
+``Common``   Common species name
+``Page``     Page in a bird manual describing the species
+``Length``   Mean body length for the species (in cm)
+``Nesttype`` Type of nest
+``Location`` Location of nest
+``No.eggs``  Number of eggs
+``Color``    Egg color (``0``\ =plain/solid or ``1``\ =speckled/spotted)
+``Incubate`` Mean length of time (in days) the species incubates eggs in the nest
+``Nestling`` Mean length of time (in days) the species cares for babies in the nest until fledged
+``Totcare``  Total care time = Incubate+Nestling
+``Closed``   1=closed nest (pendant, spherical, cavity, crevice, burrow), 0=open nest (saucer, cup)
+\           
+============
+======================================================================================
 
 Details
 ~~~~~~~

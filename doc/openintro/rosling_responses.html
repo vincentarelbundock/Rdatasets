@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Sample Responses to Two Public Health Questions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for rosling_responses"><tr><td>rosling_responses</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Sample Responses to Two Public Health Questions</h2>
+
+<h3>Description</h3>
+
+<p>Public health has improved and evolved, but has the public's knowledge
+changed with it? This data set explores sample responses for two survey
+questions posed by Hans Rosling during lectures to a wide array of
+well-educated audiences.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+rosling_responses
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 278 rows and 3 variables:
+</p>
+
+<dl>
+<dt>question</dt><dd><p>ID for the question being posed.</p>
+</dd>
+<dt>response</dt><dd><p>Noting whether the response was <code>correct</code>
+or <code>incorrect</code>.</p>
+</dd>
+<dt>prob_random_correct</dt><dd><p>The probability the person would have guessed
+the answer correctly if they were guessing completely randomly.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>The samples we describe are plausible based on the exact rates observed in larger samples.
+For more info on the actual rates observed, visit <a href="https://www.gapminder.org">https://www.gapminder.org</a>.
+</p>
+<p>Another relevant reference is a book by
+Hans Rosling, Anna Rosling Ronnlund, and Ola Rosling called
+<a href="https://www.gapminder.org/factfulness-book/">Factfulness</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+frac_correct &lt;- tapply(
+  rosling_responses$response == "correct",
+  rosling_responses$question,
+  mean
+)
+frac_correct
+n &lt;- table(rosling_responses$question)
+n
+expected &lt;- tapply(
+  rosling_responses$prob_random_correct,
+  rosling_responses$question,
+  mean
+)
+
+# Construct confidence intervals.
+se &lt;- sqrt(frac_correct * (1 - frac_correct) / n)
+# Lower bounds.
+frac_correct - 1.96 * se
+# Upper bounds.
+frac_correct + 1.96 * se
+
+# Construct Z-scores and p-values.
+z &lt;- (frac_correct - expected) / se
+pt(z, df = n - 1)
+
+</pre>
+
+
+</body></html>

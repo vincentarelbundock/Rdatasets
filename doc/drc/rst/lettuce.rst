@@ -76,3 +76,4 @@ Examples
    ## Hormesis effect highly significant
    ##  compare with t-test for the "f" parameter in the summary output)
    anova(lettuce.m1, lettuce.m2)
+

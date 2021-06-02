@@ -18,7 +18,7 @@ A dataset with 39 observations on the following 2 variables.
 ============ ==================================
 ``BodyMass`` Log of body size measured in grams
 ``Eggs``     Number of eggs present
-\            
+\           
 ============ ==================================
 
 Details

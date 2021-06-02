@@ -19,7 +19,7 @@ A data frame with 48 observations on the following 3 variables.
 ``Subj``     ID for the subject
 ``Fiber``    Type of fiber: ``bran``, ``combo``, ``control``, or ``gum``
 ``Calories`` Digested calories
-\            
+\           
 ============ ===========================================================
 
 Details

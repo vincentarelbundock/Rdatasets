@@ -31,3 +31,4 @@ Examples
 
    autoplot(a10)
    ggseasonplot(a10)
+

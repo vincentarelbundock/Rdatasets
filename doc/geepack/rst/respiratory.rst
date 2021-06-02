@@ -75,3 +75,4 @@ Examples
    mlist <- list(gee.ind, gee.exc, gee.uns, gee.ar1)
    do.call(rbind, lapply(mlist, QIC))
    lapply(mlist, tidy)
+

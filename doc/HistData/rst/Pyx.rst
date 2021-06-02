@@ -38,8 +38,8 @@ Format
 ~~~~~~
 
 A frequency data frame with 72 observations on the following 4 variables
-giving the distribution of 10,000 soverigns, classified according to the
-``Bags`` in which they were collected and the ``Deviation`` from the
+giving the distribution of 10,000 sovereigns, classified according to
+the ``Bags`` in which they were collected and the ``Deviation`` from the
 standard weight.
 
 ``Bags``
@@ -56,7 +56,7 @@ standard weight.
    ``(.2 to R)`` < ``Above R``
 
 ``count``
-   number of soverigns
+   number of sovereigns
 
 Details
 ~~~~~~~

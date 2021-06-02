@@ -18,7 +18,7 @@ A dataset with 587 observations on the following 2 variables.
 ========== ================================================
 ``Length`` Length of the putt (in feet)
 ``Made``   ``1``\ =made the putt or ``0``\ =missed the putt
-\          
+\         
 ========== ================================================
 
 Details

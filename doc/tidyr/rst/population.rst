@@ -65,4 +65,4 @@ age, ``2534`` = 25 to 34 years of age, ``3544`` = 35 to 44 years of age,
 Source
 ~~~~~~
 
-https://www.who.int/tb/country/data/download/en/
+https://www.who.int/teams/global-tuberculosis-programme/data

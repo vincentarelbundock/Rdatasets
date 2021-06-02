@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Earthquakes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for earthquakes"><tr><td>earthquakes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Earthquakes</h2>
+
+<h3>Description</h3>
+
+<p>Select set of notable earthquakes from 1900 to 1999.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+earthquakes
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 123 rows and 7 variables.
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year the earthquake took place.</p>
+</dd>
+<dt>month</dt><dd><p>Month the earthquake took place.</p>
+</dd>
+<dt>day</dt><dd><p>Day the earthquake took place</p>
+</dd>
+<dt>richter</dt><dd><p>Magnitude of earthquake using the Richter Scale.</p>
+</dd>
+<dt>area</dt><dd><p>City or geographic location of earthquakes.</p>
+</dd>
+<dt>region</dt><dd><p>Country or countries if the earthquake occurred on a border.</p>
+</dd>
+<dt>deaths</dt><dd><p>Approximate number of deaths caused by earthquake</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>World Almanac and Book of Facts: 2011.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+
+ggplot(earthquakes, aes(x = richter, y = deaths))+
+  geom_point()
+
+ggplot(earthquakes, aes(x = log(deaths)))+
+  geom_histogram()
+
+</pre>
+
+
+</body></html>

@@ -30,7 +30,7 @@ variable and its levels are
 == ======= ============
 No Name    Levels
 1  nDeaths 0, 1, ..., 4
-\          
+\         
 == ======= ============
 
 Source

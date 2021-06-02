@@ -15,30 +15,20 @@ Format
 
 A data frame with 200 observations on the following 9 variables.
 
-+---------------+-----------------------------------------------------+
-| ``ID``        | Patient ID code                                     |
-+---------------+-----------------------------------------------------+
-| ``Survive``   | ``1``\ =patient survived to discharge or            |
-|               | ``0``\ =patient died                                |
-+---------------+-----------------------------------------------------+
-| ``Age``       | Age (in years)                                      |
-+---------------+-----------------------------------------------------+
-| ``AgeGroup``  | ``1``\ = young (under 50), ``2``\ = middle (50-69), |
-|               | ``3`` = old (70+)                                   |
-+---------------+-----------------------------------------------------+
-| ``Sex``       | ``1``\ =female or ``0``\ =male                      |
-+---------------+-----------------------------------------------------+
-| ``Infection`` | ``1``\ =infection suspected or ``0``\ =no infection |
-+---------------+-----------------------------------------------------+
-| ``SysBP``     | Systolic blood pressure (in mm of Hg)               |
-+---------------+-----------------------------------------------------+
-| ``Pulse``     | Heart rate (beats per minute)                       |
-+---------------+-----------------------------------------------------+
-| ``Emergency`` | ``1``\ =emergency admission or ``0``\ =elective     |
-|               | admission                                           |
-+---------------+-----------------------------------------------------+
-|               |                                                     |
-+---------------+-----------------------------------------------------+
+=============
+=====================================================================
+``ID``        Patient ID code
+``Survive``   ``1``\ =patient survived to discharge or ``0``\ =patient died
+``Age``       Age (in years)
+``AgeGroup``  ``1``\ = young (under 50), ``2``\ = middle (50-69), ``3`` = old (70+)
+``Sex``       ``1``\ =female or ``0``\ =male
+``Infection`` ``1``\ =infection suspected or ``0``\ =no infection
+``SysBP``     Systolic blood pressure (in mm of Hg)
+``Pulse``     Heart rate (beats per minute)
+``Emergency`` ``1``\ =emergency admission or ``0``\ =elective admission
+\            
+=============
+=====================================================================
 
 Details
 ~~~~~~~

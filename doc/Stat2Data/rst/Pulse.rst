@@ -24,7 +24,7 @@ A dataset with 232 observations on the following 7 variables.
 ``Exercise`` Typical hours of exercise (per week)
 ``Hgt``      Height (in inches)
 ``Wgt``      Weight (in pounds)
-\            
+\           
 ============ ============================================
 
 Details

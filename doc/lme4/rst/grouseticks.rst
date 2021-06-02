@@ -73,7 +73,7 @@ Examples
 
 ::
 
-   if (lme4_testlevel()>1) {
+   if (interactive()) {
    data(grouseticks)
    ## Figure 1a from Elston et al
    par(las=1,bty="l")

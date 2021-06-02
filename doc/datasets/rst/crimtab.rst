@@ -54,7 +54,8 @@ The table is in fact page 216 and not page 219 in MacDonell(1902). In
 the MacDonell table, the middle finger lengths were given in mm and the
 heights in feet/inches intervals, they are both converted into cm here.
 The midpoints of intervals were used, e.g., where MacDonell has *4'
-7''9/16 -- 8''9/16*, we have 142.24 which is 2.54*56 = 2.54*(*4' 8''*).
+7''9/16 -- 8''9/16*, we have 142.24 which is 2.54*56 = 2.54*(\ *4'
+8''*).
 
 MacDonell credited the source of data (page 178) as follows: *The data
 on which the memoir is based were obtained, through the kindness of Dr
@@ -65,7 +66,7 @@ the office shelves; we are therefore dealing with a random sampling.*
 Source
 ~~~~~~
 
-http://pbil.univ-lyon1.fr/R/donnees/criminals1902.txt thanks to Jean R.
+https://pbil.univ-lyon1.fr/R/donnees/criminals1902.txt thanks to Jean R.
 Lobry and Anne-Béatrice Dufour.
 
 References

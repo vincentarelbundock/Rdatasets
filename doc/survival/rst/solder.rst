@@ -19,7 +19,8 @@ Usage
 
 ::
 
-   data("solder")
+   solder
+   data(solder, package="survival")
 
 Format
 ~~~~~~
@@ -65,7 +66,6 @@ Examples
 
 ::
 
-   data(solder)
    # The balanced subset used by Chambers and Hastie
    #   contains the first 180 of each mask and deletes mask A6. 
    index <- 1 + (1:nrow(solder)) - match(solder$Mask, solder$Mask)

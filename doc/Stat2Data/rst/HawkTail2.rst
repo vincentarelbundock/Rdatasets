@@ -18,7 +18,7 @@ A data frame with observations on the following 2 variables.
 =========== =======================================================
 ``Tail_RT`` Tail length (in mm) for a sample of Red-tailed hawks
 ``Tail_SS`` Tail length (in mm) for a sample of Sharp-shinned hawks
-\           
+\          
 =========== =======================================================
 
 Details

@@ -12,8 +12,8 @@ Version of the Barro Growth Data used in Koenker and Machado(1999). This
 is a regression data set consisting of 161 observations on determinants
 of cross country GDP growth rates. There are 13 covariates with dimnames
 corresponding to the original Barro and Lee source. See
-http://www.nber.org/pub/barro.lee/. The first 71 observations are on the
-period 1965-75, remainder on 1987-85.
+https://www.nber.org/pub/barro.lee/. The first 71 observations are on
+the period 1965-75, remainder on 1987-85.
 
 Usage
 ~~~~~

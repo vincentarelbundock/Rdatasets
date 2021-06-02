@@ -51,7 +51,7 @@ Source
 ~~~~~~
 
 The website accompanying the MMY-book:
-http://www.wiley.com/legacy/wileychi/robust_statistics
+https://www.wiley.com/legacy/wileychi/robust_statistics/
 
 References
 ~~~~~~~~~~

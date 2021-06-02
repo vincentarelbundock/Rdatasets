@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Sleep in Mammals</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for mammals"><tr><td>mammals</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Sleep in Mammals</h2>
+
+<h3>Description</h3>
+
+<p>This data set includes data for 39 species of mammals distributed over 13
+orders. The data were used for analyzing the relationship between
+constitutional and ecological factors and sleeping in mammals. Two
+qualitatively different sleep variables (dreaming and non dreaming) were
+recorded. Constitutional variables such as life span, body weight, brain
+weight and gestation time were evaluated. Ecological variables such as
+severity of predation, safety of sleeping place and overall danger were
+inferred from field observations in the literature.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+mammals
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 62 observations on the following 11 variables.
+</p>
+
+<dl>
+<dt>species</dt><dd><p>Species of mammals</p>
+</dd>
+<dt>body_wt</dt><dd><p>Total body weight of the mammal (in kg)</p>
+</dd>
+<dt>brain_wt</dt><dd><p>Brain weight of the mammal (in kg)</p>
+</dd>
+<dt>non_dreaming</dt><dd><p>Number of hours of non dreaming sleep</p>
+</dd>
+<dt>dreaming</dt><dd><p>Number of hours of dreaming sleep</p>
+</dd>
+<dt>total_sleep</dt><dd><p>Total number of hours of sleep</p>
+</dd>
+<dt>life_span</dt><dd><p>Life span (in years)</p>
+</dd>
+<dt>gestation</dt><dd><p>Gestation time (in days)</p>
+</dd>
+<dt>predation</dt><dd><p>An index of how likely the mammal is to be preyed upon.
+1 = least likely to be preyed upon. 5 = most likely to be preyed upon.</p>
+</dd>
+<dt>exposure</dt><dd><p>An index of the how exposed the mammal is during sleep.
+1 = least exposed (e.g., sleeps in a well-protected den). 5 = most exposed.</p>
+</dd>
+<dt>danger</dt><dd><p>An index of how much danger the mammal
+faces from other animals. This index is based upon Predation and Exposure. 1
+= least danger from other animals. 5 = most danger from other animals.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.statsci.org/data/general/sleep.txt">http://www.statsci.org/data/general/sleep.txt</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>T. Allison and D. Cicchetti, &quot;Sleep in mammals: ecological and
+constitutional correlates,&quot; Arch. Hydrobiol, vol. 75, p. 442, 1975.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+
+ggplot(mammals, aes(x = log(body_wt), y = log(brain_wt))) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(x = "Log of body weight", x = "Log of brain weight")
+
+</pre>
+
+
+</body></html>

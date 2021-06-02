@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Exam and course grades for statistics students</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for exam_grades"><tr><td>exam_grades</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Exam and course grades for statistics students</h2>
+
+<h3>Description</h3>
+
+<p>Grades on three exams and overall course grade for 233 students during
+several years for a statistics course at a university.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+exam_grades
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 233 observations, each representing a student.
+</p>
+
+<dl>
+<dt>semester</dt><dd><p>Semester when grades were recorded.</p>
+</dd>
+<dt>sex</dt><dd><p>Sex of the student as recorded on the university registration system: Man or Woman.</p>
+</dd>
+<dt>exam1</dt><dd><p>Exam 1 grade.</p>
+</dd>
+<dt>exam2</dt><dd><p>Exam 2 grade.</p>
+</dd>
+<dt>exam3</dt><dd><p>Exam 3 grade.</p>
+</dd>
+<dt>course_grade</dt><dd><p>Overall course grade.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+library(dplyr)
+
+# Course grade vs. each exam
+ggplot(exam_grades, aes(x = exam1, y = course_grade)) +
+  geom_point()
+
+ggplot(exam_grades, aes(x = exam2, y = course_grade)) +
+  geom_point()
+
+ggplot(exam_grades, aes(x = exam2, y = course_grade)) +
+  geom_point()
+
+# Semester averages
+exam_grades %&gt;%
+  group_by(semester) %&gt;%
+  summarise(across(exam1:course_grade, mean, na.rm = TRUE))
+
+</pre>
+
+
+</body></html>

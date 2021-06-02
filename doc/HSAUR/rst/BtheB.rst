@@ -84,3 +84,4 @@ Examples
      boxplot(subset(BtheB, treatment == "BtheB")[,grep("bdi", names(BtheB))], 
              main = "Beat the Blues", ylab = "BDI", xlab = "Time (in months)",
              names = c(0, 2, 4, 6, 8), ylim = ylim)
+

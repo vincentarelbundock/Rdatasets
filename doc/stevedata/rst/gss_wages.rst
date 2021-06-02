@@ -22,7 +22,7 @@ Usage
 Format
 ~~~~~~
 
-A data frame with eight variables:
+A data frame with 11 variables:
 
 ``year``
    the survey year
@@ -44,6 +44,11 @@ A data frame with eight variables:
 
 ``childs``
    number of children (0-8)
+
+``wrkstat``
+   the work status of the respondent (full-time, part-time, temporarily
+   not working, unemployed (laid off), retired, school, housekeeper,
+   other)
 
 ``gender``
    respondent's gender (male or female)

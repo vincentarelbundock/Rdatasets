@@ -26,6 +26,7 @@ Usage
 
    data(heart)
 
+
 Format
 ~~~~~~
 
@@ -44,8 +45,8 @@ Note
 ~~~~
 
 There are other ``heart`` datasets in other R packages, notably
-survival, hence considering using ``package = "robustbase"``, see
-examples.
+`survival <https://CRAN.R-project.org/package=survival>`__, hence
+considering using ``package = "robustbase"``, see examples.
 
 Source
 ~~~~~~

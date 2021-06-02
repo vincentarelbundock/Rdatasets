@@ -72,7 +72,7 @@ References
 
 Halley, E. (1693). An estimate of the degrees of the mortality of
 mankind, drawn from curious tables of the births and funerals at the
-city of Breslaw; with an attempt to ascertain the price of annuities
+city of Breslau; with an attempt to ascertain the price of annuities
 upon lives. *Philosophical Transactions of the Royal Society, London*,
 17, 596-610.
 
@@ -102,3 +102,5 @@ Examples
 
    # conditional probability of survival, one more year
    plot(ratio ~ age, data=HalleyLifeTable, ylab="Probability survive one more year")
+
+

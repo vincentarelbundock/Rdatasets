@@ -9,8 +9,8 @@ Description
 ~~~~~~~~~~~
 
 This dataset was produced from US economic time series data available
-from http://research.stlouisfed.org/fred2. ``economics`` is in "wide"
-format, ``economics_long`` is in "long" format.
+from https://fred.stlouisfed.org/. ``economics`` is in "wide" format,
+``economics_long`` is in "long" format.
 
 Usage
 ~~~~~
@@ -31,23 +31,22 @@ date
 
 pce
    personal consumption expenditures, in billions of dollars,
-   http://research.stlouisfed.org/fred2/series/PCE
+   https://fred.stlouisfed.org/series/PCE
 
 pop
    total population, in thousands,
-   http://research.stlouisfed.org/fred2/series/POP
+   https://fred.stlouisfed.org/series/POP
 
 psavert
-   personal savings rate,
-   http://research.stlouisfed.org/fred2/series/PSAVERT/
+   personal savings rate, https://fred.stlouisfed.org/series/PSAVERT/
 
 uempmed
    median duration of unemployment, in weeks,
-   http://research.stlouisfed.org/fred2/series/UEMPMED
+   https://fred.stlouisfed.org/series/UEMPMED
 
 unemploy
    number of unemployed in thousands,
-   http://research.stlouisfed.org/fred2/series/UNEMPLOY
+   https://fred.stlouisfed.org/series/UNEMPLOY
 
 An object of class ``tbl_df`` (inherits from ``tbl``, ``data.frame``)
 with 2870 rows and 4 columns.

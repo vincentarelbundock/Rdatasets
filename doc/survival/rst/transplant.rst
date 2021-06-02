@@ -17,13 +17,14 @@ Usage
 
 ::
 
-   data("transplant")
+   transplant
+   data(transplant, package="survival")
 
 Format
 ~~~~~~
 
-A data frame with 815 (transplant) or 861 (transplant2) observations on
-the following 6 variables.
+A data frame with 815 (transplant) observations on the following 6
+variables.
 
 ``age``
    age at addition to the waiting list
@@ -42,23 +43,6 @@ the following 6 variables.
 
 ``event``
    final disposition: ``censored``, ``death``, ``ltx`` or ``withdraw``
-
-``creat``
-   serum creatinine
-
-``bili``
-   serum bilirubin
-
-``inr``
-   International Normalized Ratio, a measure of the blood's clotting
-   ability
-
-``meld``
-   calculated MELD score
-
-diag
-   primary diagnosis: alcoholic liver disease, cholestatic liver
-   disease, hepatitis B, hepatitis C, or other
 
 Details
 ~~~~~~~

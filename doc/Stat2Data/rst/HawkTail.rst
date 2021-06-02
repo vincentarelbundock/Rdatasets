@@ -18,7 +18,7 @@ A data frame with 838 observations on the following 2 variables.
 =========== ===========================================
 ``Species`` ``RT``\ =Red-tailed, ``SS``\ =Sharp-shinned
 ``Tail``    Length of tail (in mm)
-\           
+\          
 =========== ===========================================
 
 Details

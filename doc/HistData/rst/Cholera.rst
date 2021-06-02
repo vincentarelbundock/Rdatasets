@@ -39,7 +39,7 @@ A data frame with 38 observations on the following 15 variables.
    deaths from cholera in 1849 per 10,000 inhabitants, a numeric vector
 
 ``cholera_deaths``
-   number of deaths registered from cohlera in 1849, a numeric vector
+   number of deaths registered from cholera in 1849, a numeric vector
 
 ``popn``
    population, in the middle of 1849, a numeric vector
@@ -133,26 +133,25 @@ Examples
    lines(mort ~ elev, lwd=2, col="blue")
 
    # better plots, using car::scatterplot
-   library(car)
 
+   if(require("car", quietly=TRUE)) {
    # show separate regression lines for each water supply
-
-   scatterplot(cholera_drate ~ elevation | water, data=Cholera, 
-               smooth=FALSE, pch=15:17,
-               id=list(n=2, labels=sub(",.*", "", Cholera$district)),
-               col=c("red", "darkgreen", "blue"),
-               legend=list(coords="topleft", title="Water supply"),
-               xlab="Elevation above high water mark (ft)",
-               ylab="Deaths from cholera in 1849 per 10,000")
-
-   scatterplot(cholera_drate ~ poor_rate | water, data=Cholera, 
-               smooth=FALSE, pch=15:17,
-               id=list(n=2, labels=sub(",.*", "", Cholera$district)),
-               col=c("red", "darkgreen", "blue"),
-               legend=list(coords="topleft", title="Water supply"),
-               xlab="Poor rate per pound of house value",
-               ylab="Deaths from cholera in 1849 per 10,000")
-
+     scatterplot(cholera_drate ~ elevation | water, data=Cholera, 
+                 smooth=FALSE, pch=15:17,
+                 id=list(n=2, labels=sub(",.*", "", Cholera$district)),
+                 col=c("red", "darkgreen", "blue"),
+                 legend=list(coords="topleft", title="Water supply"),
+                 xlab="Elevation above high water mark (ft)",
+                 ylab="Deaths from cholera in 1849 per 10,000")
+     
+     scatterplot(cholera_drate ~ poor_rate | water, data=Cholera, 
+                 smooth=FALSE, pch=15:17,
+                 id=list(n=2, labels=sub(",.*", "", Cholera$district)),
+                 col=c("red", "darkgreen", "blue"),
+                 legend=list(coords="topleft", title="Water supply"),
+                 xlab="Poor rate per pound of house value",
+                 ylab="Deaths from cholera in 1849 per 10,000")
+     }
 
    # fit a logistic regression model a la Bingham etal.
    fit <- glm( cbind(cholera_deaths, popn) ~ 
@@ -168,3 +167,4 @@ Examples
      eff <- allEffects(fit)
      plot(eff)
    }
+

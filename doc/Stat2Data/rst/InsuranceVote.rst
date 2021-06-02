@@ -15,33 +15,20 @@ Format
 
 A dataset with 435 observations on the following 9 variables.
 
-+---------------+-----------------------------------------------------+
-| ``Party``     | Party affiliation: ``D``\ =Democrat or              |
-|               | ``R``\ =Republican                                  |
-+---------------+-----------------------------------------------------+
-| ``Dist.``     | Congressional district (State-Number)               |
-+---------------+-----------------------------------------------------+
-| ``InsVote``   | Vote on the health insurance bill: ``1``\ =yes or   |
-|               | ``0``\ =no                                          |
-+---------------+-----------------------------------------------------+
-| ``Rep``       | Indicator for Republicans                           |
-+---------------+-----------------------------------------------------+
-| ``Dem``       | Indicator for Democrats                             |
-+---------------+-----------------------------------------------------+
-| ``Private``   | Percentage of non-senior citizens in district with  |
-|               | private health insurance                            |
-+---------------+-----------------------------------------------------+
-| ``Public``    | Percentage of non-senior citizens in district with  |
-|               | public health insurance                             |
-+---------------+-----------------------------------------------------+
-| ``Uninsured`` | Percentage of non-senior citizens in district with  |
-|               | no health insurance                                 |
-+---------------+-----------------------------------------------------+
-| ``Obama``     | District winner in 2008 presidential election:      |
-|               | ``1``\ =Obama ``0``\ =McCain                        |
-+---------------+-----------------------------------------------------+
-|               |                                                     |
-+---------------+-----------------------------------------------------+
+=============
+===========================================================================
+``Party``     Party affiliation: ``D``\ =Democrat or ``R``\ =Republican
+``Dist.``     Congressional district (State-Number)
+``InsVote``   Vote on the health insurance bill: ``1``\ =yes or ``0``\ =no
+``Rep``       Indicator for Republicans
+``Dem``       Indicator for Democrats
+``Private``   Percentage of non-senior citizens in district with private health insurance
+``Public``    Percentage of non-senior citizens in district with public health insurance
+``Uninsured`` Percentage of non-senior citizens in district with no health insurance
+``Obama``     District winner in 2008 presidential election: ``1``\ =Obama ``0``\ =McCain
+\            
+=============
+===========================================================================
 
 Details
 ~~~~~~~

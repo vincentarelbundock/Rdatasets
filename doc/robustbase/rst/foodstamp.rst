@@ -43,7 +43,8 @@ Source
 Data description and first analysis: Stefanski et al.(1986) who indicate
 Rizek(1978) as original source of the larger study.
 
-Electronic version from CRAN package catdata.
+Electronic version from CRAN package
+`catdata <https://CRAN.R-project.org/package=catdata>`__.
 
 References
 ~~~~~~~~~~

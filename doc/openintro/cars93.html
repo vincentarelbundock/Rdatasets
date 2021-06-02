@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: cars93</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for cars93"><tr><td>cars93</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>cars93</h2>
+
+<h3>Description</h3>
+
+<p>A data frame with 54 rows and 6 columns. This data is a subset of the
+<code>Cars93</code> data set from the <code>MASS</code> package.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+cars93
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 54 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt>type</dt><dd><p>The vehicle type with levels <code>large</code>, <code>midsize</code>,
+and <code>small</code>.</p>
+</dd>
+<dt>price</dt><dd><p>Vehicle price (USD).</p>
+</dd>
+<dt>mpg_city</dt><dd><p>Vehicle mileage in city (miles per gallon).</p>
+</dd>
+<dt>drive_train</dt><dd><p>Vehicle drive train with levels <code>4WD</code>, <code>front</code>,
+and <code>rear</code>.</p>
+</dd>
+<dt>passengers</dt><dd><p>The vehicle passenger capacity.</p>
+</dd>
+<dt>weight</dt><dd><p>Vehicle weight (lbs).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>These cars represent a random sample for 1993 models that were in both
+<em>Consumer Reports</em> and <em>PACE Buying Guide</em>. Only vehicles of type
+<code>small</code>, <code>midsize</code>, and <code>large</code> were include.
+</p>
+<p>Further description can be found in Lock (1993). Use the URL
+<a href="http://jse.amstat.org/v1n1/datasets.lock.html">http://jse.amstat.org/v1n1/datasets.lock.html</a>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lock, R. H. (1993) 1993 New Car Data. <em>Journal of Statistics
+Education</em> 1(1).
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+
+# Vehicle price by type
+ggplot(cars93, aes(x = price)) +
+  geom_histogram(binwidth = 5) +
+  facet_wrap(~type)
+
+# Vehicle price vs. weight
+ggplot(cars93, aes(x = weight, y = price)) +
+  geom_point()
+
+# Milleage vs. weight
+ggplot(cars93, aes(x = weight, y = mpg_city)) +
+  geom_point() +
+  geom_smooth()
+
+</pre>
+
+
+</body></html>

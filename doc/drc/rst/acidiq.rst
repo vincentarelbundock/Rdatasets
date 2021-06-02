@@ -91,3 +91,4 @@ Examples
 
    ## Plotting isobole based on the Hewlett model
    isobole(acidiq.free, acidiq.hew, xlim = c(0, 400), ylim = c(0, 450))  # good fit
+

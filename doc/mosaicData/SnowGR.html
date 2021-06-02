@@ -92,14 +92,15 @@ if (require(ggformula)) {
   gf_histogram( ~ Total, data = SnowGR)
   gf_point(Total ~ SeasonStart, data = SnowGR) %&gt;%
     gf_smooth()
-}
-if (require(tidyr) &amp;&amp; require(dplyr)) {
-  Snow2 &lt;- 
-    SnowGR %&gt;%
-    pivot_longer(Jul:Total, names_to = "month", values_to = "snowfall") %&gt;%
-    filter(month != "Total") %&gt;%
-    mutate(month = factor(month, levels = unique(month)))
-  gf_violin(snowfall ~ month, data = Snow2, scale = "width")
+    
+  if (require(tidyr) &amp;&amp; require(dplyr)) {
+    Snow2 &lt;- 
+      SnowGR %&gt;%
+      pivot_longer(Jul:Total, names_to = "month", values_to = "snowfall") %&gt;%
+      filter(month != "Total") %&gt;%
+      mutate(month = factor(month, levels = unique(month)))
+    gf_violin(snowfall ~ month, data = Snow2, scale = "width")
+  }
 }
 
 </pre>

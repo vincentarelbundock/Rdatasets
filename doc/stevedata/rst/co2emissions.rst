@@ -70,14 +70,12 @@ https://cdiac.ess-dive.lbl.gov/trends/co2/siple.html
 Mauna Loa, Hawaii: 1959 CE to 2015 CE NOAA (National Oceanic and
 Atmospheric Administration). 2016. Annual mean carbon dioxide
 concentrations for Mauna Loa, Hawaii.
-ftp://ftp.cmdl.noaa.gov/products/trends/co2/co2_annmean_mlo.txt.
 
 Barrow, Alaska: 1974 CE to 2014 CE Cape Matatula, American Samoa: 1976
 CE to 2014 CE South Pole, Antarctica: 1976 CE to 2014 CE NOAA (National
 Oceanic and Atmospheric Administration). 2016. Monthly mean carbon
 dioxide concentrations for Barrow, Alaska; Cape Matatula, American
 Samoa; and the South Pole.
-ftp://ftp.cmdl.noaa.gov/data/trace_gases/co2/in-situ/surface.
 
 Cape Grim, Australia: 1992 CE to 2006 CE Shetland Islands, Scotland:
 1993 CE to 2002 CE Steele, L.P., P.B. Krummel, and R.L. Langenfelds.

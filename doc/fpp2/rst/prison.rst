@@ -26,3 +26,4 @@ Examples
 
    autoplot(prison)
    head(prisonLF)
+

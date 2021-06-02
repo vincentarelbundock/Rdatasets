@@ -20,7 +20,7 @@ A data frame with 2 observations on the following 4 variables.
 ``Effective``    Count of effective cases
 ``NotEffective`` Count of noneffective cases
 ``Patients``     Number of patients in the treatment
-\                
+\               
 ================ ===================================
 
 Details

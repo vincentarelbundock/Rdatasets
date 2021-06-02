@@ -23,7 +23,7 @@ A dataset with 18 observations on the following 7 variables.
 ``LastDay``     Archery score on last day
 ``Improvement`` Last day - first day score
 ``Improve``     1=improved or 0=did not improve
-\               
+\              
 =============== ===============================
 
 Details

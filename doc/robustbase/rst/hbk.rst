@@ -44,7 +44,8 @@ Y
 Note
 ~~~~
 
-This data set is also available in package wle as ``artificial``.
+This data set is also available in package
+`wle <https://CRAN.R-project.org/package=wle>`__ as ``artificial``.
 
 Source
 ~~~~~~

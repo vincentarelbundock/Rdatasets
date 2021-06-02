@@ -62,3 +62,4 @@ Examples
 ::
 
    data(KidsFeet)
+

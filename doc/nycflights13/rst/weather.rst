@@ -20,7 +20,7 @@ Usage
 Format
 ~~~~~~
 
-A data frame with columns
+A data frame with columns:
 
 origin
    Weather station. Named ``origin`` to facilitate merging with

@@ -9,7 +9,7 @@ Description
 ~~~~~~~~~~~
 
 Information about the housing market in Texas provided by the TAMU real
-estate center, http://recenter.tamu.edu/.
+estate center, https://www.recenter.tamu.edu/.
 
 Usage
 ~~~~~

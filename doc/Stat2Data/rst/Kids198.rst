@@ -21,7 +21,7 @@ A data frame with 198 observations on the following 5 variables.
 ``Age``    Age (in months)
 ``Sex``    ``0``\ =male or ``1``\ =female
 ``Race``   ``0``\ =white or ``1``\ =other
-\          
+\         
 ========== ==============================
 
 Details

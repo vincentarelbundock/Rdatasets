@@ -103,3 +103,4 @@ Examples
    A2.lm <- lm(re78 ~ trt + (age + educ + re74 + re75) * (black +   
          hisp + marr + nodeg), data = nsw74psidA)
    anova(A1.lm, A2.lm)
+

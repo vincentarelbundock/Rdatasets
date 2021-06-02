@@ -1,0 +1,202 @@
+"","year","term","subject","subject_abbr","course","course_num","course_numeric","seminar","ind_study","apprenticeship","internship","honors_contracts","laboratory","special_topic","textbook_isbn","bookstore_new","bookstore_used","amazon_new","amazon_used","notes"
+"1",2018,"Fall","American Indian Studies","AM IND","Introduction to American Indian Studies","M10",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781138477858",47.97,44.97,47.45,51.2,""
+"2",2018,"Fall","Anthropology","ANTHRO","Archaeology: Introduction","2",2,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780307741806",14.26,10.96,13.55,7.1,""
+"3",2018,"Fall","Art",NA,"New Genres","11D",11,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"4",2018,"Fall","Arts and Architecture","ART&ARC","Arts Encounters: Exploring Arts Literacy in 21st Century","10",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780979757549",13.5,11,12.53,NA,""
+"5",2018,"Fall","Asian",NA,"Introduction to Buddhism","M60W",60,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780199861873",49.26,43.26,54.95,24.83,NA
+"6",2018,"Fall","Astronomy","ASTR","Black Holes and Cosmic Catastrophes","4",4,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780134073828",119.97,67,124.8,47.75,NA
+"7",2018,"Fall","Biomedical Research","BMD RES","Biomedical Research: Concepts and Strategies","5HA",5,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"8",2018,"Fall","Chemistry and Biochemistry","CHEM","Atomic and Molecular Structure, Equilibria, Acids, and Bases","14A",14,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781319254292",188.1,149,NA,NA,""
+"9",2018,"Fall","Chemistry and Biochemistry","CHEM","Thermodynamics, Electrochemistry, Kinetics, and Organic Chemistry","14B",14,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781319016821",215.75,162,NA,90,"New version only from resellers"
+"10",2018,"Fall","Chicana and Chicano Studies","CHICANO","Elementary Nahuatl","M5A",5,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"11",2018,"Fall","Communication","COMM","Introduction to Communication Studies","10",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780199754144",16.95,12.75,11.77,5.41,NA
+"12",2018,"Fall","Comparative Literature","COM LIT","Social Media and Storytelling: Comparing Cultures","1E",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"13",2018,"Fall","Comparative Literature","COM LIT","Survey of Literature: Age of Enlightenment to 20th Century","2CW",2,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780375756887",11.96,9.96,10.87,6.75,""
+"14",2018,"Fall","Dance",NA,"Beginning Hip-Hop Dance","9",9,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"15",2018,"Fall","Dance",NA,"Beginning Martial Arts","10",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780982203583",26.75,20.25,38.94,NA,""
+"16",2018,"Fall","Dance",NA,"Beginning Special Topics","12",12,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"17",2018,"Fall","Dance",NA,"Theories and Methods in Dance Composition I: Languages","67A",67,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"18",2018,"Fall","Dance",NA,"Yoga","11",11,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"19",2018,"Fall","Design / Media Arts","DESMA","Form","22",22,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"20",2018,"Fall","Ecology and Evolutionary Biology","EE BIOL","Evolutionary Medicine: How Natural Selection Helps Us Understand Why We Get Sick","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"21",2018,"Fall","Ecology and Evolutionary Biology","EE BIOL","Variable Topics in Ecology and Evolutionary Biology","97",97,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"22",2018,"Fall","Ecology and Evolutionary Biology","EE BIOL","Why Ecology Matters: Science Behind Environmental Issues","18",18,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9789891812695",37,NA,NA,191.05,""
+"23",2018,"Fall","Economics","ECON","Understanding Federal Spending","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"24",2018,"Fall","Electrical and Computer Engineering","EC ENGR","Introduction to Electrical Engineering","3",3,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"25",2018,"Fall","Electrical and Computer Engineering","EC ENGR","Logic Design of Digital Systems","M16",16,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"26",2018,"Fall","Engineering","ENGR","Introduction to Engineering Design: Go-karts","96A",96,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"27",2018,"Fall","Engineering","ENGR","Introduction to Engineering Design: Internet of Things","96C",96,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"28",2018,"Fall","Engineering","ENGR","Introduction to Engineering Design: Rockets","96A",96,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"29",2018,"Fall","English","ENGL","UCLA Centennial Initiative: Burning Books--UCLA, Fahrenheit 451, and Politics of Libraries","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781451673319",9.96,8.96,8.99,NA,""
+"30",2018,"Fall","English Composition","ENGCOMP","Approaches to University Writing for Multilingual Students","2I",2,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9789891812596",20,NA,NA,NA,"Instructor is author, no Amazon option"
+"31",2018,"Fall","English Composition","ENGCOMP","High-Intermediate Composition for Multilingual Students","1B",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"32",2018,"Fall","English Composition","ENGCOMP","Intermediate Composition for Multilingual Students","1A",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781108662260",39.97,32.97,35,34.3,NA
+"33",2018,"Fall","Ethnomusicology","ETHNMUS","Instruction in Jazz Performance: Guitar","71AF",71,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"34",2018,"Fall","Ethnomusicology","ETHNMUS","Instruction in Jazz Performance: Piano","71CF",71,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"35",2018,"Fall","Ethnomusicology","ETHNMUS","Instruction in Jazz Performance: Trumpet","71GF",71,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"36",2018,"Fall","Ethnomusicology","ETHNMUS","World Music Performance Organizations: Music of African Americans","91P",91,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"37",2018,"Fall","Ethnomusicology","ETHNMUS","World Music Performance Organizations: Open Ensemble: Irish Music Ensemble","91Z",91,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"38",2018,"Fall","Ethnomusicology","ETHNMUS","World Music Performance Organizations: Open Ensemble: Old-Time String Band Ensemble","91Z",91,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"39",2018,"Fall","Ethnomusicology","ETHNMUS","World Music Specializations: Music of Balkans--Choir","68N",68,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"40",2018,"Fall","Ethnomusicology","ETHNMUS","World Music Specializations: Music of Balkans--Instrumental Music","68O",68,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"41",2018,"Fall","Ethnomusicology","ETHNMUS","World Music Specializations: Music of China--Chinese Opera","68B",68,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"42",2018,"Fall","Ethnomusicology","ETHNMUS","World Music Specializations: Music of China--Ensemble","68A",68,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"43",2018,"Fall","Film and Television","FILM TV","Introduction to Art and Technique of Filmmaking","4",4,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781319059514",132.75,99.75,78.67,69.69,NA
+"44",2018,"Fall","French","FRNCH","Elementary French","2",2,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781337739467",149.97,NA,152.95,504.5,NA
+"45",2018,"Fall","French","FRNCH","Elementary French","3",3,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781337739467",149.97,NA,152.95,504.5,""
+"46",2018,"Fall","Geography","GEOG","Introduction to Geographic Information Systems","7",7,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"47",2018,"Fall","German",NA,"Intermediate German","4",4,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781626809529",219.97,167.25,NA,NA,"Not currently sold by Amazon.com"
+"48",2018,"Fall","History","HIST","History of Science: Renaissance to 1800","3A",3,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780333970027",43.96,38.96,41.99,22,""
+"49",2018,"Fall","History","HIST","Inequality: History of Neoliberalism","12B",12,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780807081778",12.77,12,12.23,15.65,NA
+"50",2018,"Fall","History","HIST","Introduction to Historical Practice: Culture Wars: Battles, Debates, and Skirmishes about Cultural Property in Contemporary Era","96W",96,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"51",2018,"Fall","History","HIST","Introduction to Western Civilization: Ancient Civilizations, Prehistory to circa A.D. 843","1A",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780495913030",114.96,91.96,119.95,96.79,""
+"52",2018,"Fall","Indigenous Languages of the Americas","IL AMER","Elementary Nahuatl","M5A",5,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"53",2018,"Fall","Italian",NA,"Elementary Italian--Continued","3",3,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"54",2018,"Fall","Italian",NA,"Intermediate Italian","6",6,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"55",2018,"Fall","Japanese","JAPAN","Elementary Modern Japanese","1",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"56",2018,"Fall","Latin",NA,"Elementary Latin","1",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781585103904",29.97,27.75,36.95,12.89,NA
+"57",2018,"Fall","Law","Undergraduate","Nonviolence and Women's Self-Defense","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780997996401",19.95,15,19.95,12.98,""
+"58",2018,"Fall","Life Sciences","LIFESCI","Quantitative Concepts for Life Sciences","20",20,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780465097678",11.96,9.26,10.87,7.3,NA
+"59",2018,"Fall","Linguistics","LING","Klingon Language and Linguistics","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780061336461",17.26,12.46,16.79,5.58,""
+"60",2018,"Fall","Management","MGMT","Principles of Accounting","1B",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781260666939",124.96,99.96,NA,NA,"Custom version, not available on Amazon.com"
+"61",2018,"Fall","Mathematics","MATH","Calculus for Life Sciences Students","3B",3,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781118988527",109.97,NA,NA,NA,"Custom version, not available on Amazon.com"
+"62",2018,"Fall","Mathematics","MATH","Calculus of Several Variables","32A",32,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781319025397",103.97,88.25,112.99,66.97,NA
+"63",2018,"Fall","Mathematics","MATH","Calculus of Several Variables","32B",32,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781319025397",103.97,88.25,112.99,66.97,NA
+"64",2018,"Fall","Mathematics","MATH","Classroom Practices in Middle School Mathematics","72SL",72,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"65",2018,"Fall","Mechanical and Aerospace Engineering","MECH&AE","Introduction to Computer Programming with MATLAB","M20",20,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780898716917",72.96,51.96,60.35,38.31,NA
+"66",2018,"Fall","Medicine","MED","UCLA Centennial Initiative: Breathe Well--Tobacco-Free Campus, Medicine, Nursing, and Public Health","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"67",2018,"Fall","Middle Eastern Studies","M E STD","First Civilizations","M50A",50,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780140449198",12.46,9.96,13.49,5.92,NA
+"68",2018,"Fall","Military Science","MIL SCI","Foundations of Officership","11",11,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"69",2018,"Fall","Military Science","MIL SCI","Individual Leadership Development","21",21,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"70",2018,"Fall","Molecular, Cell, and Developmental Biology","MCD BIO","Stem Cell Biology, Politics, and Ethics: Teasing Apart Issues","50",50,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781319149581",50.96,41.96,49.31,33.49,""
+"71",2018,"Fall","Music","MUSC","Chamber Singers","90C",90,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"72",2018,"Fall","Music","MUSC","Opera Workshop","90D",90,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"73",2018,"Fall","Music","MUSC","Symphonic Band","90F",90,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"74",2018,"Fall","Music","MUSC","UCLA Chorale","C90A",90,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"75",2018,"Fall","Music","MUSC","Undergraduate Instruction in Performance: Oboe","61BF",61,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"76",2018,"Fall","Musicology","MUSCLG","Beethoven","70",70,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9789891812800",22,NA,NA,NA,""
+"77",2018,"Fall","Musicology","MUSCLG","History of Rock and Roll","5",5,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780199811700",55.46,42.96,55.74,33.35,""
+"78",2018,"Fall","Musicology","MUSCLG","Introduction to Musicianship","M6A",6,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780393284911",89.96,84.96,100.19,84.32,NA
+"79",2018,"Fall","Neuroscience","NEUROSC","Brain Made Simple: Neuroscience for 21st Century","10",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"80",2018,"Fall","Nursing",NA,"Introduction to Nursing and Social Justice I","10",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781133129165",186.96,140.26,111.76,26.72,NA
+"81",2018,"Fall","Obstetrics and Gynecology","OBGYN","Biology of Stem Cells","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"82",2018,"Fall","Philosophy","PHILOS","Meaning and Communication","23",23,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"83",2018,"Fall","Philosophy","PHILOS","Why Not Anarchy?","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"84",2018,"Fall","Political Science","POL SCI","World Politics","20",20,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780393938098",106.97,88.25,NA,53.06,"Not available from Amazon.com for new"
+"85",2018,"Fall","Portuguese","PORTGSE","Intensive Portuguese","11A",11,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781269995542",219.97,170.75,NA,NA,"Custom version, could not find comparable requiring access code"
+"86",2018,"Fall","Portuguese","PORTGSE","Spanish, Portuguese, and Nature of Language","M35",35,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781337559577",133.96,109.96,133.75,113.3,""
+"87",2018,"Fall","Sociology","SOCIOL","Sex from Biology to Gendered Society","M72A",72,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"88",2018,"Fall","Spanish","SPAN","Intermediate Spanish","4",4,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781323771174",229.27,NA,229.37,164.45,"Used on Amazon probably missing online access"
+"89",2018,"Fall","Spanish","SPAN","Introductory Spanish for Heritage Speakers","7A",7,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781285718842",145.97,NA,146.95,289.65,""
+"90",2018,"Fall","Statistics","STATS","Statistics and Portfolio Risk Management with Stock Market Applications","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"91",2018,"Fall","Theater",NA,"Dance for Musical Theater I","34A",34,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"92",2018,"Fall","Theater",NA,"Introduction to Design","14A",14,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780415547543",63.95,48,57.23,45.77,NA
+"93",2018,"Fall","Theater",NA,"Production Practice in Theater, Film, Video, and Digital Media","72",72,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"94",2018,"Fall","Theater",NA,"Singing for Musical Theater I","35A",35,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781458443182",19.99,15,17,13.37,""
+"95",2018,"Fall","Theater",NA,"Tai Chi","2A",2,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"96",2018,"Fall","Theater",NA,"Theater Production","50",50,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"97",2018,"Fall","Theater",NA,"Theater Production: Theater Production Props","50",50,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"98",2018,"Fall","Theater",NA,"Theater Production: Theater Production Special","50",50,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"99",2018,"Fall","World Arts and Cultures","WL ARTS","Introduction to American Indian Studies","M23",23,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781138477858",47.97,44.97,47.45,51.2,NA
+"100",2018,"Fall","World Arts and Cultures","WL ARTS","Video Tools and Techniques","80",80,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"101",2018,"Fall","Anthropology","ANTHRO","Animals in Translation: Evolutionary Approaches to Animal Thinking and Autism","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"102",2018,"Fall","Art",NA,"Painting","11A",11,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"103",2018,"Fall","Art",NA,"Modernism","31A",31,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"104",2018,"Fall","Astronomy","ASTR","Life in Universe","5",5,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781938168284",56.96,43.46,43.08,43.25,NA
+"105",2018,"Fall","Chemistry and Biochemistry","CHEM","Structure of Organic Molecules","14C",14,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781319255015",200.75,150.75,NA,NA,"Custom version, not available on Amazon"
+"106",2018,"Fall","Chemistry and Biochemistry","CHEM","PEERS Collaborative Learning Workshops for Life Sciences Majors","98XA",98,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"107",2018,"Fall","Chicana and Chicano Studies","CHICANO","Intermediate Nahuatl","M15A",15,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"108",2018,"Fall","Comparative Literature","COM LIT","Literature and Writing: Middle Ages to 17th Century","4BW",4,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"109",2018,"Fall","Comparative Literature","COM LIT","Short Works of Franz Kafka, or How Modern World Works","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780805210576",11.96,9.96,12.29,5.88,NA
+"110",2018,"Fall","Dance",NA,"Moving Voice","5",5,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"111",2018,"Fall","Ecology and Evolutionary Biology","EE BIOL","Deep-Sea Communities: High Diversity in Extreme Environments","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"112",2018,"Fall","Electrical and Computer Engineering","EC ENGR","Physics for Electrical Engineers","2",2,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,""
+"113",9780133356038,"199.96","149.96",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,""
+"114",2018,"Fall","English","ENGL","Being There: History and Gossip in Jean Froissart's Chronicles","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780140442007",15.27,9.75,14.4,5.44,NA
+"115",2018,"Fall","English","ENGL","American Novel","85",85,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780142437278",12.26,9.96,14,5.7,NA
+"116",2018,"Fall","English Composition","ENGCOMP","Introduction to University Discourse","1",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781319057442",71.97,55.97,41.49,39.42,NA
+"117",2018,"Fall","English Composition","ENGCOMP","English Composition, Rhetoric, and Language","3",3,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781457699214",78.97,39.97,76.7,28.28,NA
+"118",2018,"Fall","Ethnomusicology","ETHNMUS","Introduction to Musicianship","M6A",6,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780393284911",89.96,84.96,98.2,84.32,NA
+"119",2018,"Fall","Ethnomusicology","ETHNMUS","Instruction in Jazz Performance: Saxophone","71DF",71,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"120",2018,"Fall","Ethnomusicology","ETHNMUS","World Music Performance Organizations: Music of Bali","91B",91,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"121",2018,"Fall","Ethnomusicology","ETHNMUS","World Music Performance Organizations: Music of Persia","91L",91,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"122",2018,"Fall","Ethnomusicology","ETHNMUS","Musical Cultures of World: Europe and Americas","20A",20,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"123",2018,"Fall","Ethnomusicology","ETHNMUS","Global Pop","25",25,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"124",2018,"Fall","Ethnomusicology","ETHNMUS","World Music Performance Organizations: Open Ensemble: Charles Mingus Ensemble","91Z",91,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"125",2018,"Fall","Ethnomusicology","ETHNMUS","Instruction in Jazz Performance: Voice","71IF",71,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"126",2018,"Fall","Ethnomusicology","ETHNMUS","Instruction in Jazz Performance: String Bass","71EF",71,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"127",2018,"Fall","French","FRNCH","Intermediate French","4",4,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"128",2018,"Fall","French","FRNCH","French Cinema and Culture","41",41,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"129",2018,"Fall","Geography","GEOG","Globalization: Regional Development and World Economy","4",4,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"130",2018,"Fall","Geography","GEOG","World Regions: Concepts and Contemporary Issues","6",6,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"131",2018,"Fall","German",NA,"Elementary German","3",3,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781680044287",255.97,198.25,NA,183.37,"Not for sale by Amazon"
+"132",2018,"Fall","History","HIST","History of the U.S. and Its Colonial Origins: Colonial Origins and First Nation Building Acts","13A",13,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"133",2018,"Fall","History","HIST","What Is History? An Introduction to Historical Thinking and Practice","94",94,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"134",2018,"Fall","History","HIST","Introduction to Western Civilization: Circa 1715 to Present","1C",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780393621969",102.75,77.25,NA,71.36,"Not for sale by Amazon"
+"135",2018,"Fall","History","HIST","China's Modern Youth Culture in Historical Perspective","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"136",2018,"Fall","History","HIST","Introduction to Historical Practice: Politics of Economic Knowledge","96W",96,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"137",2018,"Fall","History","HIST","Animals R Us","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"138",2018,"Fall","Indigenous Languages of the Americas","IL AMER","Intermediate Nahuatl","M15A",15,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"139",2018,"Fall","Italian",NA,"Elementary Italian--Continued","2",2,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781285074818",138.97,99.97,136.92,35.54,"Unclear if used version would come with access code"
+"140",2018,"Fall","Japanese","JAPAN","Intermediate Modern Japanese","4",4,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9784789014434",53.96,43.96,NA,41.95,"Not for sale by Amazon"
+"141",2018,"Fall","Life Sciences","LIFESCI","Life: Concepts and Issues","15",15,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781319065447",159.96,119.96,126.71,77.44,NA
+"142",2018,"Fall","Linguistics","LING","Language in Action: Perspectives from Applied Linguistics","11",11,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781138957084",45.96,35.96,50.95,12.98,NA
+"143",2018,"Fall","Linguistics","LING","Introduction to Study of Language","1",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780061336461",17.26,12.46,16.79,5.58,NA
+"144",2018,"Fall","Mathematics","MATH","Calculus for Life Sciences Students","3A",3,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781118988527",109.97,NA,NA,NA,"Custom version, not available on Amazon.com"
+"145",2018,"Fall","Mathematics","MATH","Precalculus","1",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"146",2018,"Fall","Music","MUSC","Marching and Varsity Bands","90M",90,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"147",2018,"Fall","Music","MUSC","Undergraduate Instruction in Performance: Harp","60EF",60,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"148",2018,"Fall","Music","MUSC","Undergraduate Instruction in Performance: String Bass","60DF",60,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"149",2018,"Fall","Music","MUSC","Undergraduate Instruction in Performance: Trombone","62CF",62,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"150",2018,"Fall","Music","MUSC","Undergraduate Instruction in Performance: Trumpet","62AF",62,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"151",2018,"Fall","Music","MUSC","Early Music Ensemble","M90T",90,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"152",2018,"Fall","Music","MUSC","Undergraduate Instruction in Performance: Clarinet","61CF",61,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"153",2018,"Fall","Musicology","MUSCLG","Writing about Music","12W",12,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780393631678",29.5,22.25,30.33,28.42,NA
+"154",2018,"Fall","Nursing",NA,"Pathophysiology II","54B",54,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781451190809",118.96,75.96,97.92,48.96,NA
+"155",2018,"Fall","Philosophy","PHILOS","Introduction to Political Philosophy","6",6,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780872207363",14.76,10.96,13.39,5.6,NA
+"156",2018,"Fall","Philosophy","PHILOS","Logic, First Course","31",31,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780195155044",89.97,75,89.89,33.98,NA
+"157",2018,"Fall","Philosophy","PHILOS","Skepticism and Rationality","21",21,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"158",2018,"Fall","Political Science","POL SCI","Introduction to American Politics","40",40,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780393283761",89.97,76.5,87.88,56.17,NA
+"159",2018,"Fall","Political Science","POL SCI","Politics and Strategy","30",30,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"160",2018,"Fall","Portuguese","PORTGSE","Advanced Composition and Style","27",27,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"161",2018,"Fall","Sociology","SOCIOL","Physician-Patient Interaction in Medical Visit","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780520287266",27.46,23.46,29.95,16.39,NA
+"162",2018,"Fall","Spanish","SPAN","Intermediate Spanish","5",5,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781323771174",229.27,NA,229.37,164.45,"Used on Amazon probably missing online access"
+"163",2018,"Fall","Spanish","SPAN","Catalan Language and Culture I","11A",11,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"164",2018,"Fall","Spanish","SPAN","Intermediate Spanish for Heritage Speakers","7B",7,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781285718842",145.97,NA,146.95,289.65,"Unclear if used on Amazon would come with required access card"
+"165",2018,"Fall","Spanish","SPAN","Advanced Spanish Composition for Heritage Speakers","27",27,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781680040135",169.97,NA,NA,89.6,"No New Amazon sold option, used likely not with required access code"
+"166",2018,"Fall","Theater",NA,"Introduction to Performance","12",12,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"167",2018,"Fall","World Arts and Cultures","WL ARTS","Special Studies in World Arts and Cultures","99",99,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"168",2018,"Fall","African American Studies","AF AMER","UCLA Centennial Initiative: Social Justice, Student Activism, and Academic Advancement Program","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780345386816",6.97,5.47,7.94,4.84,NA
+"169",2018,"Fall","Earth, Planetary, and Space Sciences","EPS SCI","Introduction to Earth Science","1",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781464138744",179.97,139.97,158.96,75.82,NA
+"170",2018,"Fall","Earth, Planetary, and Space Sciences","EPS SCI","Introduction to Computing for Geoscientists","71",71,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"171",2018,"Fall","Art History","ART HIS","Art and Architecture of Ancient Americas","27",27,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781466399365",19.95,12.75,14.95,12.98,NA
+"172",2018,"Fall","Asian American Studies","ASIA AM","History of Asian Americans","10",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781419718786",14.96,12.96,12.23,12.23,NA
+"173",2018,"Fall","Asian American Studies","ASIA AM","Asian American Movement","40W",40,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"174",2018,"Fall","Greek",NA,"Intermediate Greek","20",20,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781614273974",27.97,19.5,29.95,32.73,NA
+"175",2018,"Fall","Greek",NA,"Elementary Modern Greek","8A",8,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9789607307682",49.95,37.5,NA,NA,"No sellers for used"
+"176",2018,"Fall","Atmospheric and Oceanic Sciences","A&O SCI","Air Pollution","2",2,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781107691155",99.99,69.97,86.49,70.71,NA
+"177",2018,"Fall","Chinese","CHIN","Elementary Modern Chinese for Advanced Beginners","1A",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781622911356",59.99,45,56.99,45.58,NA
+"178",2018,"Fall","Chinese","CHIN","Intermediate Modern Chinese","4",4,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781622911561",66.96,56.96,66.99,48.23,NA
+"179",2018,"Fall","Chinese","CHIN","Chinese Civilization","50",50,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"180",2018,"Fall","Clusters","CLUSTER","Food: Lens for Environment and Sustainability","M1A",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780134810102",139.96,119.96,NA,NA,"Not available on Amazon, custom book and access code"
+"181",2018,"Fall","Clusters","CLUSTER","Evolution of Cosmos and Life","70A",70,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780767908184",10.96,9.26,9.99,5.5,NA
+"182",2018,"Fall","Physics",NA,"Why Are We Here? Origin of Universe, Life, and Consciousness","19",19,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"183",2018,"Fall","Physics",NA,"PEERS Collaborative Learning Workshops for Physical Sciences and Engineering Majors","98XB",98,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"184",2018,"Fall","Physics",NA,"Physics for Life Sciences Majors: Electricity, Magnetism, and Modern Physics","5C",5,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780135392737",229.97,NA,NA,NA,"Not available on Amazon, special version and access code"
+"185",2018,"Fall","Computer Science","COM SCI","Logic Design of Digital Systems","M51A",51,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"186",2018,"Fall","Labor and Workplace Studies","LBR&WS","Introduction to Labor and Workplace Studies","10",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780983628910",15,11.25,NA,NA,"Not found on Amazon"
+"187",2018,"Fall","Psychology","PSYCH","Introductory Psychology","10",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781464155468",256.75,192.75,NA,NA,"Amazon did not sell this book"
+"188",2018,"Fall","Digital Humanities","DGT HUM","Los Angeles Tech City: Digital Technologies and Spatial Justice","30",30,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"189",2018,"Fall","Russian","RUSSN","Introduction to Russian Film","31",31,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9781618112125",19.96,17.26,23.2,20.48,NA
+"190",2018,"Fall","Russian","RUSSN","Elementary Russian","1",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780781812511",34.26,25.46,29.36,24.99,NA
+"191",2018,"Fall","Religion, Study of","RELIGN","Social, Cultural, and Religious Institutions of Judaism","M10",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780231134897",35.96,24.96,32.4,17.47,NA
+"192",2018,"Fall","Religion, Study of","RELIGN","Religion in Los Angeles","11",11,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"193",2018,"Fall","University Studies","UNIV ST","ACE UCLA | Critical Strategies to Achieve Undergraduate Excellence for Incoming Freshmen","10A",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"194",2018,"Fall","University Studies","UNIV ST","ACE UCLA | Critical Strategies to Achieve Undergraduate Excellence for Incoming Transfers","10D",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"195",2018,"Fall","Information Studies","INF STD","Internet and Society","30",30,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"196",2018,"Fall","International and Area Studies","I A STD","Introduction to International and Area Studies","1",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"197",2018,"Fall","Korean","KOREA","Elementary Korean for Korean-Heritage Speakers","1A",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780824834401",24.96,19.96,23.79,17.8,NA
+"198",2018,"Fall","Korean","KOREA","Elementary Modern Korean","1",1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780824834401",24.96,19.96,23.79,17.8,NA
+"199",2018,"Fall","Science Education","SCI EDU","Classroom Practices in Middle School Science","10SL",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"200",2018,"Fall","Public Affairs","PUB AFF","Using Data to Learn about Society: Introduction to Empirical Research and Statistics","60",60,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA,NA,NA,NA
+"201",2018,"Fall","Jewish Studies","JEWISH","Social, Cultural, and Religious Institutions of Judaism","M10",10,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,"9780231134897",35.96,24.96,32.4,17.47,NA

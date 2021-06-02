@@ -98,3 +98,5 @@ Examples
      start=c(alpha = 1, beta = 1, gamma = 1, delta = 1), data=hills[-18,])
    summary(hills.nls)
    plot(residuals(hills.nls) ~ predict(hills.nls)) # residual plot
+
+

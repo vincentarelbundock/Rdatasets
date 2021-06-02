@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Helium football</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for helium"><tr><td>helium</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Helium football</h2>
+
+<h3>Description</h3>
+
+<p>At the 1976 Pro Bowl, Ray Guy, a punter for the Oakland Raiders, punted a
+ball that hung mid-air long enough for officials to question whether the
+pigskin was filled with helium. The ball was found to be filled with air,
+but since then many have tossed around the idea that a helium-filled
+football would outdistance an air-filled one. Students at Ohio State
+University conducted an experiment to test this myth. They used two
+identical footballs, one air filled with air and one filled with helium.
+Each football was kicked 39 times and the two footballs were alternated with
+each kick.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+helium
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 39 observations on the following 3 variables.
+</p>
+<dl>
+<dt>trial</dt><dd><p>Trial number.</p>
+</dd> <dt>air</dt><dd><p>Distance in years for
+air-filled football.</p>
+</dd> <dt>helium</dt><dd><p>Distance in years for helium-filled
+football.</p>
+</dd> </dl>
+
+
+
+<h3>Details</h3>
+
+<p>Lafferty, M. B. (1993), &quot;OSU scientists get a kick out of sports
+controversy, &quot;The Columbus Dispatch (November, 21, 1993), B7.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Previously part of the Data and Story Library, <a href="https://dasl.datadescription.com">https://dasl.datadescription.com</a>.
+Removed as of 2020.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+
+boxPlot(helium$air, xlab = "air")
+boxPlot(helium$helium, xlab = "helium")
+
+
+</pre>
+
+
+</body></html>

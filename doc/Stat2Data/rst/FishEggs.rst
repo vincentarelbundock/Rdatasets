@@ -15,18 +15,15 @@ Format
 
 A data frame with 35 observations on the following 4 variables.
 
-+-----------+---------------------------------------------------------+
-| ``Age``   | Age of the fish (in years)                              |
-+-----------+---------------------------------------------------------+
-| ``PctDM`` | Percentage of the total egg material that is solid      |
-+-----------+---------------------------------------------------------+
-| ``Month`` | Month fish was caught: ``Sep``\ =September or           |
-|           | ``Nov``\ =November                                      |
-+-----------+---------------------------------------------------------+
-| ``Sept``  | Indicator with ``1``\ =September or ``0``\ =November    |
-+-----------+---------------------------------------------------------+
-|           |                                                         |
-+-----------+---------------------------------------------------------+
+=========
+================================================================
+``Age``   Age of the fish (in years)
+``PctDM`` Percentage of the total egg material that is solid
+``Month`` Month fish was caught: ``Sep``\ =September or ``Nov``\ =November
+``Sept``  Indicator with ``1``\ =September or ``0``\ =November
+\        
+=========
+================================================================
 
 Details
 ~~~~~~~

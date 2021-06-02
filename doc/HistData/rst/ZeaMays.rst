@@ -148,3 +148,5 @@ Examples
    plot(density(allmeans), xlab="Mean difference, cross-self",
        main="Density plot of all mean differences")
    abline(v=c(1, -1)*mean(ZeaMays$diff), col="red", lwd=2, lty=1:2)
+
+

@@ -18,7 +18,7 @@ A data frame with 8 observations on the following 2 variables.
 ======== ========================================================
 ``Diet`` ``Control``, ``Fructose``, ``Glucose``, or ``Sucrose``
 ``Days`` Number of days until half the leafhoppers in a dish died
-\        
+\       
 ======== ========================================================
 
 Details

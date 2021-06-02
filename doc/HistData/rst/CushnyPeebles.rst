@@ -88,9 +88,6 @@ Source
 Cushny, A. R., and Peebles, A. R. (1905), "The Action of Optical
 Isomers. II: Hyoscines," *Journal of Physiology*, 32, 501-510.
 
-Senn, Stephen, Data from Cushny and Peebles,
-http://www.senns.demon.co.uk/Data/Cushny.xls
-
 References
 ~~~~~~~~~~
 
@@ -119,7 +116,6 @@ Examples
 
    ##########################
    # Repeated measures MANOVA
-   require(car)
 
    CPmod <- lm(cbind(Control, L_hyoscyamine, L_hyoscine, DL_hyoscine) ~ 1, data=CushnyPeebles)
 
@@ -132,7 +128,9 @@ Examples
    colnames(contrasts(Treatment)) <- c("Control.Drug", "L.DL", "L_hy.DL_hy")
 
    Treats <- data.frame(Treatment)
+   if (require(car)) {
    (CPaov <- Anova(CPmod, idata=Treats, idesign= ~Treatment))
+   }
    summary(CPaov, univariate=FALSE)
 
    if (require(heplots)) {
@@ -149,3 +147,4 @@ Examples
    CPN <- stack(CushnyPeeblesN)
    CPlong <- data.frame(patient=rep(1:11,4), CPlong, n=CPN$values)
    str(CPlong)
+

@@ -18,6 +18,7 @@ Usage
 ::
 
    nwtco
+   data(nwtco, package="survival")
 
 Format
 ~~~~~~

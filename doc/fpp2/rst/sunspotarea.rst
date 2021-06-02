@@ -33,3 +33,4 @@ Examples
 
 
    autoplot(sunspotarea)
+

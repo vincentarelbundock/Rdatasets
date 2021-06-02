@@ -11,7 +11,7 @@ Description
 In 1910, Karl Pearson weighed in on the debate, fostered by the
 temperance movement, on the evils done by alcohol not only to drinkers,
 but to their families. The report "A first study of the influence of
-parental alcholism on the physique and ability of their offspring" was
+parental alcoholism on the physique and ability of their offspring" was
 an ambitious attempt to the new methods of statistics to bear on an
 important question of social policy, to see if the hypothesis that
 children were damaged by parental alcoholism would stand up to
@@ -85,7 +85,7 @@ References
 ~~~~~~~~~~
 
 M. E. Elderton & K. Pearson (1910). A first study of the influence of
-parental alcholism on the physique and ability of their offspring,
+parental alcoholism on the physique and ability of their offspring,
 Eugenics Laboratory Memoirs, 10.
 
 Examples

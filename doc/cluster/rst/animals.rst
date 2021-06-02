@@ -29,7 +29,7 @@ A data frame with 20 observations on 6 variables:
 [ , 4] end endangered
 [ , 5] gro live in groups
 [ , 6] hai have hair
-\          
+\         
 ====== === ==============
 
 All variables are encoded as 1 = 'no', 2 = 'yes'.

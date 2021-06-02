@@ -60,3 +60,4 @@ Examples
    fit <- ordgee(ordered(resp) ~ trt, id = id, data = resp.l, int.const = FALSE,
                  z = zmat, corstr = "exchangeable")
    summary(fit)
+

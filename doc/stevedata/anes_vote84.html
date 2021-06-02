@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Simple Data for a Simple Model of Individual Voter Turnout...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for anes_vote84"><tr><td>anes_vote84</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Simple Data for a Simple Model of Individual Voter Turnout (ANES, 1984)</h2>
+
+<h3>Description</h3>
+
+<p>This is a simple data set for estimating a simple model on voter turnout from
+the 1984 American National Election Studies (ANES) 1984 time-series.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+anes_vote84
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2257 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>uid</code></dt><dd><p>a unique identifier for the respondent</p>
+</dd>
+<dt><code>stateabb</code></dt><dd><p>the state where the respondent lives (as an abbreviation)</p>
+</dd>
+<dt><code>vote</code></dt><dd><p>whether the respondent voted (1 = yes; 0 = no)</p>
+</dd>
+<dt><code>age</code></dt><dd><p>the age of the respondent</p>
+</dd>
+<dt><code>educ</code></dt><dd><p>the education-level of the respondent. See details section for more.</p>
+</dd>
+<dt><code>female</code></dt><dd><p>whether the respondent is a woman (1 = female; 0 = male)</p>
+</dd>
+<dt><code>south</code></dt><dd><p>does the respondent live in the south (1 = yes; 0 = no)</p>
+</dd>
+<dt><code>polint</code></dt><dd><p>the political interest of the respondent in the campaigns (-1 = not much interested; 0 = somewhat interested; 1 = very much interested)</p>
+</dd>
+<dt><code>govrace</code></dt><dd><p>did the respondent's state have a gubernatorial election that same November (1 = yes; 0 = no)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The <code>vote</code> variable is deliberately coded where those with a value of 1 are respondents
+who said they voted and the ANES was able to confirm that with voter registration records. There are purportedly
+85 responses in this raw variable where the respondent said they voted, but this could not be confirmed from
+registration records. Those cases are recorded as <code>NA</code>. The <code>educ</code> variable ranges from 1 (finished 8th
+grade or less than that) to 10 (respondent holds an advanced degree). The <code>uid</code> variable is a simple sequence variable
+ranging from 1 to 2257 and is calculated on the original 1984 time-series study (May 3, 1999 version)
+before other recoding was done. This should allow some reproducibility for an interested user.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data come from ANES's (1984) time series.
+</p>
+
+
+</body></html>

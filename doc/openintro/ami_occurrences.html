@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Acute Myocardial Infarction (Heart Attack) Events</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ami_occurrences"><tr><td>ami_occurrences</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Acute Myocardial Infarction (Heart Attack) Events</h2>
+
+<h3>Description</h3>
+
+<p>This data set is simulated but contains realistic occurrences of AMI in NY
+City.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ami_occurrences
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 365 observations on the following variable.
+</p>
+
+<dl>
+<dt>ami</dt><dd><p>Number of daily occurrences of heart attacks in NY City.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+
+ggplot(ami_occurrences, mapping = aes(x = ami)) +
+  geom_bar() +
+  labs(x = "Acute Myocardial Infarction events",
+       y = "Count",
+       title = "Acute Myocardial Infarction events in NYC")
+
+</pre>
+
+
+</body></html>
