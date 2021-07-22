@@ -19,7 +19,7 @@ A dataset with 30 observations on the following 3 variables.
 ``Price``   Asking price for the car (in $1,000's)
 ``Age``     Age of the car (in years)
 ``Mileage`` Previous miles driven (in 1,000's)
-\          
+\           
 =========== ======================================
 
 Details

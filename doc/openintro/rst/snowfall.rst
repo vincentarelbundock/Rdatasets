@@ -67,4 +67,3 @@ Examples
        x = "Year",
        caption = "Source: National Parks Services"
        )
-

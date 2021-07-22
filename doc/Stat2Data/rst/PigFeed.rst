@@ -19,7 +19,7 @@ A dataset with 12 observations on the following 3 variables.
 ``WgtGain``    Daily weight gain (hundredths of a pound over 1.00)
 ``Antibiotic`` Antibiotic in the feed? ``No`` or ``Yes``
 ``B12``        Vitamin B12 in the feed? ``No`` or ``Yes``
-\             
+\              
 ============== ===================================================
 
 Details

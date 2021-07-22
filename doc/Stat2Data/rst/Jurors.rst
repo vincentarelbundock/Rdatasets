@@ -21,7 +21,7 @@ A data frame with 52 observations on the following 4 variables.
 ``PctReport`` Percentage of selected jurors who report
 ``Year``      ``1998`` or ``2000``
 ``I2000``     Indicator for data from the year 2000
-\            
+\             
 ============= ==================================================
 
 Details

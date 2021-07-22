@@ -30,7 +30,7 @@ karno:    Karnofsky performance score (100=good)
 diagtime: months from diagnosis to randomisation
 age:      in years
 prior:    prior therapy 0=no, 10=yes
-\        
+\         
 ========= =========================================
 
 Source

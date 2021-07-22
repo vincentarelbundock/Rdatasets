@@ -2,14 +2,14 @@
 marathon R Documentation
 ======== ===============
 
-New York City Marathon Times
-----------------------------
+New York City Marathon Times (outdated)
+---------------------------------------
 
 Description
 ~~~~~~~~~~~
 
 Marathon times of male and female winners of the New York City Marathon
-1970-1999.
+1970-1999. See nyc_marathon for a more updated dataset.
 
 Usage
 ~~~~~
@@ -42,7 +42,6 @@ Examples
 
 ::
 
-
    library(ggplot2)
 
    ggplot(marathon, aes(x = time)) +
@@ -50,4 +49,3 @@ Examples
 
    ggplot(marathon, aes(y = time, x = gender)) +
      geom_boxplot()
-

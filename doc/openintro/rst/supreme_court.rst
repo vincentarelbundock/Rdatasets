@@ -37,4 +37,3 @@ Examples
 
 
    supreme_court
-

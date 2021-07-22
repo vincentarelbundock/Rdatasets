@@ -43,4 +43,3 @@ Examples
 
 
    gov_poll
-

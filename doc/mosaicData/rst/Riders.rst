@@ -95,4 +95,3 @@ Examples
 
    data(Riders)
    str(Riders)
-

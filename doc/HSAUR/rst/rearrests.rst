@@ -48,4 +48,3 @@ Examples
 
      data("rearrests", package = "HSAUR")
      rearrests
-

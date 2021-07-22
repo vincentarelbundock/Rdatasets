@@ -43,4 +43,3 @@ Examples
    points(1:7, 7:1-0.7, col = COL[,2], pch = 19, cex = 6)
    points(1:7, 7:1-1.4, col = COL[,3], pch = 19, cex = 6)
    points(1:7, 7:1-2.1, col = COL[,4], pch = 19, cex = 6)
-

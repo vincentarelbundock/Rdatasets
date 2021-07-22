@@ -58,4 +58,3 @@ Examples
 
 
    airmay.x <- data.matrix(airmay[,1:3])
-

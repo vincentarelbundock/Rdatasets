@@ -39,4 +39,3 @@ Examples
 
    ggplot(major_survey, aes(x = major, y = gpa)) +
      geom_boxplot()
-

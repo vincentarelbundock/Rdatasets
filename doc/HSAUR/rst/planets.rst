@@ -59,4 +59,3 @@ Examples
      scatterplot3d(log(planets$mass), log(planets$period), log(planets$eccen), 
                    type = "h", highlight.3d = TRUE,  angle = 55, 
                    scale.y = 0.7, pch = 16)
-

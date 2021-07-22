@@ -18,7 +18,7 @@ A data frame with 51 observations on the following 2 variables.
 =============== ======================================
 ``Calcium``     Log of free calcium concentration
 ``ProteinProp`` Proportion of protein bound to calcium
-\              
+\               
 =============== ======================================
 
 Details

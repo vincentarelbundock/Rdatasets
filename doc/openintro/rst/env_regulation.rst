@@ -55,4 +55,3 @@ Examples
 
 
    table(env_regulation)
-

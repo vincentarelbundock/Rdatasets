@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: prostateSurvival</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for prostateSurvival"><tr><td>prostateSurvival</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>prostateSurvival
+
+</h2>
+
+<h3>Description</h3>
+
+<p>This data set contains survival times
+for two competing causes: time from prostate cancer
+diagnosis to death
+from prostate cancer, and time from prostate cancer diagnosis to death from
+other causes. The data set also contains information on several risk factors.
+The data in this data set are simulated from detailed competing risk survival
+curves and counts of numbers of patients per group presented in Lu-Yao et al. (2009).
+Thus, the simulated data presented here contain many of the characteristics of
+the original SEER-Medicare prostate cancer data used in Lu-Yao et al. (2009).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("prostateSurvival")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 14294 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>grade</code></dt><dd><p>a factor with levels <code>mode</code> (moderately differentiated) and  <code>poor</code> (poorly differentiated)</p>
+</dd>
+<dt><code>stage</code></dt><dd><p>a factor with levels <code>T1ab</code> (Stage T1, clinically diagnoseed),
+<code>T1c</code> (Stage T1, diagnosed via a PSA test), and  
+<code>T2</code> (Stage T2)</p>
+</dd>
+<dt><code>ageGroup</code></dt><dd><p>a factor with levels <code>66-69</code> <code>70-74</code> <code>75-79</code> <code>80+</code></p>
+</dd>
+<dt><code>survTime</code></dt><dd><p>time from diagnosis to death or last date known alive</p>
+</dd>
+<dt><code>status</code></dt><dd><p>a censoring variable, <code>0</code>, (censored),
+<code>1</code> (death from prostate cancer), and <code>2</code> (death from other causes) </p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lu-Yao, GL, Albertsen PC, Moore DF, Shih W, Lin Y, DiPaola RS, Barry MJ, Zietman A, O'Leary M, Walker-Corkery E, Yao S-L (2009) 
+Outcomes of localized prostate cancer following conservative management. Journal of the American
+Medical Association 302, 1202 - 1209.) 
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(prostateSurvival)
+</pre>
+
+
+</body></html>

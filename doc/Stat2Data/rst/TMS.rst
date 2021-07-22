@@ -20,7 +20,7 @@ A dataset with 2 observations on the following 4 variables.
 ``Yes``    Count of number of patients that were pain-free
 ``No``     Count of number of patients that had pain
 ``Trials`` Number of patients in the group
-\         
+\          
 ========== ===============================================
 
 Details

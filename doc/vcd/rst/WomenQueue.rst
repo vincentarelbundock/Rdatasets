@@ -28,7 +28,7 @@ variable and its levels are
 == ====== =============
 No Name   Levels
 1  nWomen 0, 1, ..., 10
-\        
+\         
 == ====== =============
 
 Source

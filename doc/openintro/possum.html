@@ -1,11 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: possum</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Possums in Australia and New Guinea</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body>
 
 <table width="100%" summary="page for possum"><tr><td>possum</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>possum</h2>
+<h2>Possums in Australia and New Guinea</h2>
 
 <h3>Description</h3>
 
@@ -61,12 +61,13 @@ Journal of Zoology 43: 449-458.
 <h3>Examples</h3>
 
 <pre>
-
 library(ggplot2)
 
+# Skull width vs. head length
 ggplot(possum, aes(x = head_l, y = skull_w)) +
   geom_point()
 
+# Total length vs. sex
 ggplot(possum, aes(x = total_l, fill = sex)) +
   geom_density(alpha = 0.5)
 

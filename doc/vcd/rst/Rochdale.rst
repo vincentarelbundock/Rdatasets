@@ -34,7 +34,7 @@ No Name             Levels
 6  HusbandEducation yes, no
 7  Asian            yes, no
 8  HouseholdWorking yes, no
-\                  
+\                   
 == ================ ========
 
 Note

@@ -42,4 +42,3 @@ Examples
 
 
    offshore_drilling
-

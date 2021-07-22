@@ -65,4 +65,3 @@ Examples
    exam_grades %>%
      group_by(semester) %>%
      summarise(across(exam1:course_grade, mean, na.rm = TRUE))
-

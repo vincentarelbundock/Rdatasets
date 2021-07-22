@@ -167,4 +167,3 @@ Examples
      eff <- allEffects(fit)
      plot(eff)
    }
-

@@ -43,4 +43,3 @@ Examples
      geom_histogram(binwidth = 250)
 
    summary(penelope$weight)
-

@@ -40,4 +40,3 @@ Examples
 
    ggplot(poker, aes(x = winnings)) +
      geom_histogram(binwidth = 250)
-

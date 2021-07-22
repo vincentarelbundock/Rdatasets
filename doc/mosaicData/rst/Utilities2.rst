@@ -83,4 +83,3 @@ Examples
    if (require(ggformula)) {
      gf_point(gasbillpday ~ temp, data = Utilities2)
    }
-

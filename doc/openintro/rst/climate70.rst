@@ -78,4 +78,3 @@ Examples
 
    t.test(climate70$dx70_2018 - climate70$dx70_1948)
    t.test(climate70$dx90_2018 - climate70$dx90_1948)
-

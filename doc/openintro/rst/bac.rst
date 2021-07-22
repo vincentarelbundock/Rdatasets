@@ -49,4 +49,3 @@ Examples
    ggplot(bac, aes(x = beers, y = bac)) +
      geom_point() +
      labs(x = "Number of beers", y = "Blood alcohol content")
-

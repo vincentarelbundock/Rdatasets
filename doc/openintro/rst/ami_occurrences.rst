@@ -39,4 +39,3 @@ Examples
      labs(x = "Acute Myocardial Infarction events",
           y = "Count",
           title = "Acute Myocardial Infarction events in NYC")
-

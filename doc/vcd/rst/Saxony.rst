@@ -27,7 +27,7 @@ size 12. The variable and its levels are
 == ====== =============
 No Name   Levels
 1  nMales 0, 1, ..., 12
-\        
+\         
 == ====== =============
 
 Source

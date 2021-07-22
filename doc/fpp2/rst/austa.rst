@@ -27,4 +27,3 @@ Examples
 
 
    autoplot(austa)
-

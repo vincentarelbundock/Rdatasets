@@ -80,4 +80,3 @@ Examples
    plot(etmotc.m3, add = TRUE)
    modelFit(etmotc.m3)
    summary(etmotc.m3)
-

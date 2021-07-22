@@ -23,7 +23,7 @@ A data frame with 51 observations on the following 7 variables.
 ``PropMakes``   Proportion of attempts made
 ``Blocked``     Number of kicks blocked
 ``PropBlocked`` Proportion of kicks blocked
-\              
+\               
 =============== ============================================
 
 Details

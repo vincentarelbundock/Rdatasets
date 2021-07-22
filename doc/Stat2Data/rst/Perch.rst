@@ -20,7 +20,7 @@ A dataset with 56 observations on the following 4 variables.
 ``Weight`` Weight (in grams)
 ``Length`` Length (in centimeters)
 ``Width``  Width (in centimeters
-\         
+\          
 ========== =======================
 
 Details

@@ -72,5 +72,3 @@ Examples
        data = mail_me,
        family = binomial)
    summary(m)
-
-

@@ -122,4 +122,3 @@ Examples
               5, 44, 29, 19, 13, 36, 39, 42, 28, 2)
    d <- email[index, ][order, ]
    identical(d, email50)
-

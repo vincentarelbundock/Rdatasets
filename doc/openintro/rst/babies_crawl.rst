@@ -56,4 +56,3 @@ Examples
    ggplot(babies_crawl, aes(x = temperature, y = avg_crawling_age)) +
      geom_point() +
      labs(x = "Temperature", y = "Average crawling age")
-

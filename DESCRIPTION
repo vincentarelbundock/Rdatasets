@@ -18,6 +18,7 @@ Remotes:
     allisonhorst/palmerpenguins  
 Imports: 
     AER,
+    asaur,
     boot,
     car,
     carData,
@@ -73,6 +74,7 @@ Imports:
     survival,
     texmex,
     tidyr,
+    tidyverse,
     vcd
 Suggests: 
     knitr,

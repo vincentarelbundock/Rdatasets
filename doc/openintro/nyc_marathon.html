@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: New York City Marathon Times</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for nyc_marathon"><tr><td>nyc_marathon</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>New York City Marathon Times</h2>
+
+<h3>Description</h3>
+
+<p>Marathon times of runners in the Men and Women divisions of the New York
+City Marathon, 1970 - 2020.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+nyc_marathon
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 102 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year of marathom.</p>
+</dd>
+<dt>name</dt><dd><p>Name of winner.</p>
+</dd>
+<dt>country</dt><dd><p>Country of winner.</p>
+</dd>
+<dt>time</dt><dd><p>Running time (HH:MM:SS).</p>
+</dd>
+<dt>time_hrs</dt><dd><p>Running time (in hours).</p>
+</dd>
+<dt>division</dt><dd><p>Division: <code>Men</code> or <code>Women</code>.</p>
+</dd>
+<dt>note</dt><dd><p>Note about the race or the winning time.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Wikipedia, <a href="https://en.wikipedia.org/wiki/List_of_winners_of_the_New_York_City_Marathon">List of winners of the New York City Marathon</a>. Retrieved 28 April, 2021.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+library(ggplot2)
+
+ggplot(nyc_marathon, aes(x = year, y = time_hrs, color = division, shape = division)) +
+  geom_point()
+</pre>
+
+
+</body></html>

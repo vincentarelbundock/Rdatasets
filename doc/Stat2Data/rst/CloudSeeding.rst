@@ -23,7 +23,7 @@ A data frame with 28 observations on the following 7 variables.
 ``NC``     Rainfall in North (control)
 ``SC``     Rainfall in South (control)
 ``NWC``    Rainfall in Northwest (control)
-\         
+\          
 ========== =====================================================
 
 Details

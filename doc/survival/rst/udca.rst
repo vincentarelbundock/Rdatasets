@@ -101,4 +101,3 @@ Examples
              cluster =id , data=udca1)
    fit2 <- coxph(Surv(futime, status) ~ trt + log(bili) + stage +
              strata(endpoint), cluster=id,  data=udca2)
-

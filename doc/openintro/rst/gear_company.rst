@@ -36,4 +36,3 @@ Examples
 
 
    gear_company
-

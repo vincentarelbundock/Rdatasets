@@ -44,23 +44,22 @@ Below is a direct quote from Wikipedia describing the sources of the
 data:
 
 Own work by Peace01234 Complete raw data are on Peace01234. 1930-2009
-data are from Bureau of Labor Statistics, Employment status of the
-civilian noninstitutional population, 1940 to date
-ftp://ftp.bls.gov/pub/special.requests/lf/aat1.txt, retrieved March 6,
-2009 and retrieved February 12, 2010. Data prior to 1948 are for persons
-age 14 and over. Data beginning in 1948 are for persons age 16 and over.
-See also "Historical Comparability" under the Household Data section of
-the Explanatory Notes at https://www.bls.gov/cps/eetech_methods.pdf.
-1890-1930 data are from Christina Romer (1986). "Spurious Volatility in
-Historical Unemployment Data", The Journal of Political Economy, 94(1):
-1-37. 1930-1940 data are from Robert M. Coen (1973). "Labor Force and
-Unemployment in the 1920's and 1930's: A Re-Examination Based on Postwar
-Experience", The Review of Economics and Statistics, 55(1): 46-55.
-Unemployment data was only surveyed once each decade until 1940 when
-yearly surveys were begun. The yearly data estimates before 1940 are
-based on the decade surveys combined with other relevant surveys that
-were collected during those years. The methods are described in detail
-by Coen and Romer.
+data are from Bureau of Labor Statistics (BLS), Employment status of the
+civilian noninstitutional population, 1940 to date retrieved on March 6,
+2009 and February 12, 2010 from the BLS' FTP server. Data prior to 1948
+are for persons age 14 and over. Data beginning in 1948 are for persons
+age 16 and over. See also "Historical Comparability" under the Household
+Data section of the Explanatory Notes at
+https://www.bls.gov/cps/eetech_methods.pdf. 1890-1930 data are from
+Christina Romer (1986). "Spurious Volatility in Historical Unemployment
+Data", The Journal of Political Economy, 94(1): 1-37. 1930-1940 data are
+from Robert M. Coen (1973). "Labor Force and Unemployment in the 1920's
+and 1930's: A Re-Examination Based on Postwar Experience", The Review of
+Economics and Statistics, 55(1): 46-55. Unemployment data was only
+surveyed once each decade until 1940 when yearly surveys were begun. The
+yearly data estimates before 1940 are based on the decade surveys
+combined with other relevant surveys that were collected during those
+years. The methods are described in detail by Coen and Romer.
 
 Examples
 ~~~~~~~~
@@ -85,4 +84,3 @@ Examples
          c("World War I", "Great Depression", "World War II",
            "Vietnam War Start", "Vietnam War Escalated"),
          bg="#FFFFFF", border="#FFFFFF")
-

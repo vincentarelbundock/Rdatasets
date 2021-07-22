@@ -33,4 +33,3 @@ Examples
 
 
    hist(cchousing$price)
-

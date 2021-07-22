@@ -64,7 +64,7 @@ time:     number of days between registration and the earlier of death,
 \         transplantion, or study analysis in July, 1986
 trt:      1/2/NA for D-penicillmain, placebo, not randomised
 trig:     triglycerides (mg/dl)
-\        
+\         
 ========= =============================================================
 
 Source

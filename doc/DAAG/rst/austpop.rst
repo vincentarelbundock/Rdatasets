@@ -93,4 +93,3 @@ Examples
        ylab=names(austpop)[i], pch=16, ylim=c(0,10))}
    par(oldpar) 
    detach(austpop)
-

@@ -71,4 +71,3 @@ Examples
 
      data("pottery", package = "HSAUR")
      plot(pottery)
-

@@ -25,7 +25,7 @@ A data frame with 100 observations on the following 9 variables.
 ``Sex``            a factor with levels ``Female`` ``Male``
 ``Status``         Graduate or undergraduate? ``G`` or ``U``
 ``Units``          Number of credits taken that quarter
-\                 
+\                  
 ================== =========================================
 
 Details

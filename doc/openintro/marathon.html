@@ -1,16 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: New York City Marathon Times</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: New York City Marathon Times (outdated)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body>
 
 <table width="100%" summary="page for marathon"><tr><td>marathon</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>New York City Marathon Times</h2>
+<h2>New York City Marathon Times (outdated)</h2>
 
 <h3>Description</h3>
 
 <p>Marathon times of male and female winners of the New York City Marathon
-1970-1999.
+1970-1999. See nyc_marathon for a more updated dataset.
 </p>
 
 
@@ -46,7 +46,6 @@ marathon
 <h3>Examples</h3>
 
 <pre>
-
 library(ggplot2)
 
 ggplot(marathon, aes(x = time)) +
@@ -54,7 +53,6 @@ ggplot(marathon, aes(x = time)) +
 
 ggplot(marathon, aes(y = time, x = gender)) +
   geom_boxplot()
-
 </pre>
 
 

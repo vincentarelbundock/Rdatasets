@@ -67,4 +67,3 @@ Examples
    ## Are the ED50 values indetical across experiments?
    vinclozolin.m3 <- update(vinclozolin.m1, pmodels=data.frame(exper, exper, 1))
    anova(vinclozolin.m3, vinclozolin.m1)  # No!
-

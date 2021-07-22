@@ -18,7 +18,7 @@ A dataset with 36 observations on the following 2 variables.
 ============== =============================================
 ``WeightLoss`` weight loss (in pounds) after 4 months
 ``Group``      Treatment group: ``Control`` or ``Incentive``
-\             
+\              
 ============== =============================================
 
 Details

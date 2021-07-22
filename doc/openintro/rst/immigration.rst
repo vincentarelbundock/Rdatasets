@@ -47,5 +47,3 @@ Examples
 
 
    immigration
-
-

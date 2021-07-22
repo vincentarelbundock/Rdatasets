@@ -76,5 +76,3 @@ Examples
 
    ## Finding the minimum
    pressureVector[which.min(derivativeVector)]
-
-

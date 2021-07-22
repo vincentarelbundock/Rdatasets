@@ -42,4 +42,3 @@ Examples
    ggplot(simulated_scatter, aes(x = x, y = y)) +
      geom_point() +
      facet_wrap(~group)
-

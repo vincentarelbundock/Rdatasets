@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: pharmacoSmoking</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for pharmacoSmoking"><tr><td>pharmacoSmoking</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>pharmacoSmoking
+
+</h2>
+
+<h3>Description</h3>
+
+<p>Randomized trial of triple therapy vs. patch for smoking cessation.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("pharmacoSmoking")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 125 observations on the following 14 variables.
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p>patient ID number</p>
+</dd>
+<dt><code>ttr</code></dt><dd><p>Time in days until relapse</p>
+</dd>
+<dt><code>relapse</code></dt><dd><p>Indicator of relapse (return to smoking)</p>
+</dd>
+<dt><code>grp</code></dt><dd><p>Randomly assigned treatment group with levels <code>combination</code> or <code>patchOnly</code></p>
+</dd>
+<dt><code>age</code></dt><dd><p>Age in years at time of randomization</p>
+</dd>
+<dt><code>gender</code></dt><dd><p><code>Female</code> or <code>Male</code></p>
+</dd>
+<dt><code>race</code></dt><dd> <p><code>black</code>, <code>hispanic</code>, <code>white</code>, or <code>other</code></p>
+</dd>
+<dt><code>employment</code></dt><dd> <p><code>ft</code> (full-time), <code>pt</code> (part-time), or <code>other</code></p>
+</dd>
+<dt><code>yearsSmoking</code></dt><dd><p>Number of years the patient had been a smoker</p>
+</dd>
+<dt><code>levelSmoking</code></dt><dd> <p><code>heavy</code> or <code>light</code></p>
+</dd>
+<dt><code>ageGroup2</code></dt><dd><p>Age group with levels <code>21-49</code> or <code>50+</code></p>
+</dd>
+<dt><code>ageGroup4</code></dt><dd><p>Age group with levels <code>21-34</code>, <code>35-49</code>, <code>50-64</code>, or <code>65+</code></p>
+</dd>
+<dt><code>priorAttempts</code></dt><dd><p>The number of prior attempts to quit smoking</p>
+</dd>
+<dt><code>longestNoSmoke</code></dt><dd><p>The longest period of time, in days, that the patient has previously gone without smoking</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>This data is from a clinical trial described in Steinberg et al. (2009)
+</p>
+
+
+<h3>References</h3>
+
+<p>Steinberg, M.B. Greenhaus, S. Schmelzer, A.C. Bover, M.T., Foulds, J., Hoover, D.R., and Carson, J.L. (2009) Triple-combination pharmacotherapy for medically ill smokers: A randomized trial.
+Annals of Internal Medicine 150, 447-454.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(pharmacoSmoking)
+
+</pre>
+
+
+</body></html>

@@ -73,4 +73,3 @@ Examples
 
    ggplot(births, aes(x = smoke, y = weight)) +
      geom_boxplot()
-

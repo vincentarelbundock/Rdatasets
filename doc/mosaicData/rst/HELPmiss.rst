@@ -147,4 +147,3 @@ Examples
 ::
 
    data(HELPmiss)
-

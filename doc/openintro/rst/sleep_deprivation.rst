@@ -45,4 +45,3 @@ Examples
 
 
    sleep_deprivation
-

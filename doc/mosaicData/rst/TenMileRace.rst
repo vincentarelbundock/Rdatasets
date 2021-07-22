@@ -50,4 +50,3 @@ Examples
      gf_density2d(color = "gray40")
      lm(net ~ age + sex, data = TenMileRace)
    }
-

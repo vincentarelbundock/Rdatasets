@@ -2,8 +2,8 @@
 epa2012 R Documentation
 ======= ===============
 
-Vehicle info from the EPA
--------------------------
+Vehicle info from the EPA for 2012
+----------------------------------
 
 Description
 ~~~~~~~~~~~
@@ -113,6 +113,11 @@ Source
 
 Fueleconomy.gov, Shared MPG Estimates: Toyota Prius 2012.
 
+See Also
+~~~~~~~~
+
+epa2021
+
 Examples
 ~~~~~~~~
 
@@ -132,4 +137,3 @@ Examples
    ggplot(epa2012, aes(x = city_mpg, y = hwy_mpg, color = guzzler)) +
      geom_point() +
      facet_wrap(~guzzler, ncol = 1)
-

@@ -59,7 +59,7 @@ status:     End of interval code, 0=censored, 1=recurrence,
 rtumor:     Number of tumors found at the time of a recurrence
 rsize:      Size of largest tumor at a recurrence
 enum:       Event number (observation number within patient)
-\          
+\           
 =========== =========================================================
 
 bladder
@@ -71,7 +71,7 @@ number: Initial number of tumours (8=8 or more)
 size:   size (cm) of largest initial tumour
 stop:   recurrence or censoring time
 enum:   which recurrence (up to 4)
-\      
+\       
 ======= =======================================
 
 bladder2
@@ -84,7 +84,7 @@ size:   size (cm) of largest initial tumour
 start:  start of interval (0 or previous recurrence time)
 stop:   recurrence or censoring time
 enum:   which recurrence (up to 4)
-\      
+\       
 ======= =================================================
 
 Source

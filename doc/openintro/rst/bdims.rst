@@ -152,4 +152,3 @@ Examples
    ggplot(bdims, aes(x = hgt, y = hip_gi)) +
      geom_point() +
      labs(x = "Height", y = "Hip girth")
-

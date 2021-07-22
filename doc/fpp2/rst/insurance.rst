@@ -28,4 +28,3 @@ Examples
 
 
    autoplot(insurance)
-

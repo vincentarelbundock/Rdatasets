@@ -46,4 +46,3 @@ Examples
 
 
    table(cancer_in_dogs)
-

@@ -72,4 +72,3 @@ Examples
    # Here is a glimpse at the data
    # available in `exibble`
    dplyr::glimpse(exibble)
-

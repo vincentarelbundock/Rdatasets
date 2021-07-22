@@ -15,15 +15,18 @@ Format
 
 A dataset with 480 observations on the following 4 variables.
 
-==================
-======================================================================================
-``Province``       ``NAIROBI`` or ``PWANI``
-``Sex``            ``female`` or ``male``
-``Attitude.Score`` Score (out a possible 200 points) on a survey of attitude towards the Swahili language
-``School``         Code for the school: ``A`` through ``L``
-\                 
-==================
-======================================================================================
++--------------------+------------------------------------------------+
+| ``Province``       | ``NAIROBI`` or ``PWANI``                       |
++--------------------+------------------------------------------------+
+| ``Sex``            | ``female`` or ``male``                         |
++--------------------+------------------------------------------------+
+| ``Attitude.Score`` | Score (out a possible 200 points) on a survey  |
+|                    | of attitude towards the Swahili language       |
++--------------------+------------------------------------------------+
+| ``School``         | Code for the school: ``A`` through ``L``       |
++--------------------+------------------------------------------------+
+|                    |                                                |
++--------------------+------------------------------------------------+
 
 Details
 ~~~~~~~

@@ -48,7 +48,7 @@ with higher rejection rates).
 
 This data set can also be used for illustrating methods for graphical
 display of categorical data, such as the general-purpose mosaicplot or
-the fourfoldplot for 2-by-2-by-\ *k* tables.
+the fourfoldplot for 2-by-2-by-*k* tables.
 
 References
 ~~~~~~~~~~

@@ -56,4 +56,3 @@ Examples
 
    hist(nba_players_19$height, 20)
    table(nba_players_19$team)
-

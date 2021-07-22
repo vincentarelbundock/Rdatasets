@@ -15,22 +15,35 @@ Format
 
 A dataset with 102 observations on the following 11 variables.
 
-=============
-=======================================================================================
-``PollTaker`` Polling organization
-``PollDates`` Dates the poll data were collected
-``MidDate``   Midpoint of the polling period
-``Days``      Number of days after August 28th (end of Democratic convention)
-``n``         Sample size for the poll
-``Pop``       ``A``\ =all, ``LV``\ =likely voters, ``RV``\ =registered voters
-``McCain``    Percent supporting John McCain
-``Obama``     Percent supporting Barack Obama
-``Margin``    Obama percent minus McCain percent
-``Charlie``   Indicator for polls after Charlie Gibson interview with VP candidate Sarah Palin (9/11)
-``Meltdown``  Indicator for polls after Lehman Brothers bankruptcy (9/15)
-\            
-=============
-=======================================================================================
++---------------+-----------------------------------------------------+
+| ``PollTaker`` | Polling organization                                |
++---------------+-----------------------------------------------------+
+| ``PollDates`` | Dates the poll data were collected                  |
++---------------+-----------------------------------------------------+
+| ``MidDate``   | Midpoint of the polling period                      |
++---------------+-----------------------------------------------------+
+| ``Days``      | Number of days after August 28th (end of Democratic |
+|               | convention)                                         |
++---------------+-----------------------------------------------------+
+| ``n``         | Sample size for the poll                            |
++---------------+-----------------------------------------------------+
+| ``Pop``       | ``A``\ =all, ``LV``\ =likely voters,                |
+|               | ``RV``\ =registered voters                          |
++---------------+-----------------------------------------------------+
+| ``McCain``    | Percent supporting John McCain                      |
++---------------+-----------------------------------------------------+
+| ``Obama``     | Percent supporting Barack Obama                     |
++---------------+-----------------------------------------------------+
+| ``Margin``    | Obama percent minus McCain percent                  |
++---------------+-----------------------------------------------------+
+| ``Charlie``   | Indicator for polls after Charlie Gibson interview  |
+|               | with VP candidate Sarah Palin (9/11)                |
++---------------+-----------------------------------------------------+
+| ``Meltdown``  | Indicator for polls after Lehman Brothers           |
+|               | bankruptcy (9/15)                                   |
++---------------+-----------------------------------------------------+
+|               |                                                     |
++---------------+-----------------------------------------------------+
 
 Details
 ~~~~~~~

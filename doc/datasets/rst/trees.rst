@@ -25,13 +25,14 @@ Format
 
 A data frame with 31 observations on 3 variables.
 
-======== ========== =======
-=====================================================
-``[,1]`` ``Girth``  numeric Tree diameter (rather than girth, actually) in inches
-``[,2]`` ``Height`` numeric Height in ft
-``[,3]`` ``Volume`` numeric Volume of timber in cubic ft
-======== ========== =======
-=====================================================
++----------+------------+---------+---------------------------------+
+| ``[,1]`` | ``Girth``  | numeric | Tree diameter (rather than      |
+|          |            |         | girth, actually) in inches      |
++----------+------------+---------+---------------------------------+
+| ``[,2]`` | ``Height`` | numeric | Height in ft                    |
++----------+------------+---------+---------------------------------+
+| ``[,3]`` | ``Volume`` | numeric | Volume of timber in cubic ft    |
++----------+------------+---------+---------------------------------+
 
 Source
 ~~~~~~

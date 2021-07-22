@@ -96,4 +96,3 @@ Examples
      )
 
    ## End(Not run)
-

@@ -30,7 +30,7 @@ Format
 [,2] ``Water Temp`` Cooling Water Inlet Temperature
 [,3] ``Acid Conc.`` Concentration of acid [per 1000, minus 500]
 [,4] ``stack.loss`` Stack loss
-\                  
+\                   
 ==== ============== ===========================================
 
 For compatibility with S-PLUS, the data sets ``stack.x``, a matrix with
@@ -42,8 +42,8 @@ Details
 ~~~~~~~
 
 “Obtained from 21 days of operation of a plant for the oxidation of
-ammonia (NH*3*) to nitric acid (HNO*3*). The nitric oxides produced are
-absorbed in a countercurrent absorption tower”. (Brownlee, cited by
+ammonia (NH\ *3*) to nitric acid (HNO\ *3*). The nitric oxides produced
+are absorbed in a countercurrent absorption tower”. (Brownlee, cited by
 Dodge, slightly reformatted by MM.)
 
 ``Air Flow`` represents the rate of operation of the plant.

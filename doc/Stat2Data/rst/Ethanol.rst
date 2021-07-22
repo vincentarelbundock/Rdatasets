@@ -19,7 +19,7 @@ A data frame with 16 observations on the following 3 variables.
 ``Sugar``   Type of sugar: ``Galactose`` or ``Glucose``
 ``O2Conc``  Oxygen concentration
 ``Ethanol`` Ethanol concentration
-\          
+\           
 =========== ===========================================
 
 Details

@@ -85,4 +85,3 @@ Examples
 
    data(Tal.Or)
    mediate(reaction ~ cond + (pmi), data =Tal.Or,n.iter=50) 
-

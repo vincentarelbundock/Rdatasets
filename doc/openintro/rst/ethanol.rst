@@ -53,4 +53,3 @@ Examples
 
    table(ethanol)
    fisher.test(table(ethanol))
-

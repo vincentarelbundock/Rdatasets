@@ -44,4 +44,3 @@ Examples
 
    drone_blades %>%
      count(supplier, inspection)
-

@@ -71,4 +71,3 @@ Examples
    ## Confidence intervals based on back-transformation
    ##  complete agreement with results based on 'glm'
    ED(finney71.m2, c(10, 20, 50), interval = "fls", reference = "control")
-

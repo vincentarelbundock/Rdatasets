@@ -19,7 +19,7 @@ A data frame with 96 observations on the following 3 variables.
 ``Subj``    Subject number (1 - 24)
 ``List``    List of words: ``L1`` ``L2`` ``L3`` ``L4``
 ``Percent`` Percent (out of 50) of words correctly identified
-\          
+\           
 =========== =================================================
 
 Details

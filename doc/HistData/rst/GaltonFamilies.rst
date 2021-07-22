@@ -131,4 +131,3 @@ Examples
        abline(lm(father ~ mother), col="red", lwd=2)
        }
        )
-

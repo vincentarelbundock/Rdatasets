@@ -73,4 +73,3 @@ Examples
              subset = treatment == "Progabide")
      dotplot(I(seizure.rate / base) ~ period | subject, data = epilepsy, 
              subset = treatment == "Progabide")
-

@@ -40,4 +40,3 @@ Examples
 
 
    autoplot(departures, facets=TRUE)
-

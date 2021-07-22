@@ -2,8 +2,8 @@
 murders R Documentation
 ======= ===============
 
-Data for 20 metropolitan areas.
--------------------------------
+Data for 20 metropolitan areas
+------------------------------
 
 Description
 ~~~~~~~~~~~
@@ -54,4 +54,3 @@ Examples
        x = "Percent in poverty",
        y = "Number of murders per year per million people"
        )
-

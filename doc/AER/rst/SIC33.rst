@@ -96,4 +96,3 @@ Examples
      z <- outer(x, y, function(x, y) predict(fm_cb, data.frame(labor = x, capital = y)))
      rgl.surface(x, y, z, color = "blue", alpha = 0.5, shininess = 128)
    }
-

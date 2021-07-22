@@ -10,23 +10,27 @@ Description
 
 ``elecdemand`` is a half-hourly time series matrix with three columns:
 
-============
-====================================================================================
-Demand:      Total electricity demand in GW for Victoria, Australia, every half-hour during 2014.
-WorkDay:     taking value 1 on work days, and 0 otherwise.
-Temperature: half-hourly temperatures for Melbourne (BOM site 086071).
-============
-====================================================================================
++--------------+------------------------------------------------------+
+| Demand:      | Total electricity demand in GW for Victoria,         |
+|              | Australia, every half-hour during 2014.              |
++--------------+------------------------------------------------------+
+| WorkDay:     | taking value 1 on work days, and 0 otherwise.        |
++--------------+------------------------------------------------------+
+| Temperature: | half-hourly temperatures for Melbourne (BOM site     |
+|              | 086071).                                             |
++--------------+------------------------------------------------------+
 
 ``elecdaily`` is a daily time series matrix with three columns:
 
-============
-==============================================================================
-Demand:      Total electricity demand in GW for Victoria, Australia, every day during 2014.
-WorkDay:     taking value 1 on work days, and 0 otherwise.
-Temperature: maximum daily temperatures for Melbourne (BOM site 086071).
-============
-==============================================================================
++--------------+------------------------------------------------------+
+| Demand:      | Total electricity demand in GW for Victoria,         |
+|              | Australia, every day during 2014.                    |
++--------------+------------------------------------------------------+
+| WorkDay:     | taking value 1 on work days, and 0 otherwise.        |
++--------------+------------------------------------------------------+
+| Temperature: | maximum daily temperatures for Melbourne (BOM site   |
+|              | 086071).                                             |
++--------------+------------------------------------------------------+
 
 Format
 ~~~~~~
@@ -61,4 +65,3 @@ Examples
 
    summary(elecdemand)
    summary(elecdaily)
-

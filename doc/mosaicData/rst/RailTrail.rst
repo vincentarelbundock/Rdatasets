@@ -77,4 +77,3 @@ Examples
 ::
 
    data(RailTrail)
-

@@ -38,4 +38,3 @@ Examples
    points(1:7, 7:1-0.7, col=IMSCOL[,2], pch=19, cex=6)
    points(1:7, 7:1-1.4, col=IMSCOL[,3], pch=19, cex=6)
    points(1:7, 7:1-2.1, col=IMSCOL[,4], pch=19, cex=6)
-

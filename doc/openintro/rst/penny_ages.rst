@@ -35,4 +35,3 @@ Examples
 
 
    hist(penny_ages$year)
-

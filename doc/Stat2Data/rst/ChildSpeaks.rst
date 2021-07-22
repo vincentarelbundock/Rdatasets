@@ -19,7 +19,7 @@ A data frame with 21 observations on the following 3 variables.
 ``Child``  ID for each child
 ``Age``    Age at first speaking (in months)
 ``Gesell`` Gesell Aptitude Test Score
-\         
+\          
 ========== =================================
 
 Details

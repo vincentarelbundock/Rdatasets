@@ -64,5 +64,3 @@ Examples
 
    # _____ Box plot of log(salary) against position _____ #
    boxPlot(log(mlb$salary / 1000), mlb$position, horiz = TRUE, ylab = "")
-
-

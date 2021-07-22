@@ -38,7 +38,7 @@ Year
 Number.thousands
    number of families in the US
 
-quintile1, quintile2, median, quintile3, quintile4, p95 
+quintile1, quintile2, median, quintile3, quintile4, p95
    quintile1, quintile2, quintile3, quintile4, and p95 are the indicated
    quantiles of the distribution of family income from US Census Table
    F-1. The media is computed as the geometric mean of quintile2 and
@@ -49,7 +49,7 @@ quintile1, quintile2, median, quintile3, quintile4, p95
 P90, P95, P99, P99.5, P99.9, P99.99
    The indicated quantiles of family income per Piketty and Saez
 
-realGDP.M, GDP.Deflator, PopulationK, realGDPperCap 
+realGDP.M, GDP.Deflator, PopulationK, realGDPperCap
    real GDP in millions, GDP implicit price deflators, US population in
    thousands, and real GDP per capita, according to
    ``MeasuringWorth.com``. (NOTE: The web address for this,

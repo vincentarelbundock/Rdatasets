@@ -23,7 +23,7 @@ A data frame with 15 observations on the following 7 variables.
 ``Pitchers``   Total number of pitchers used (both teams
 ``Attendance`` Number of spectators at the game
 ``Time``       Total time for the game (in minutes)
-\             
+\              
 ============== =====================================================
 
 Details

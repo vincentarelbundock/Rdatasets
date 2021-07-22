@@ -33,5 +33,3 @@ Examples
 
 
    housing
-
-

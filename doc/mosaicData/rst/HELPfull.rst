@@ -1992,4 +1992,3 @@ Examples
 ::
 
    data(HELPfull)
-
