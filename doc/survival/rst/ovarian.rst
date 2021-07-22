@@ -28,7 +28,7 @@ age:      in years
 resid.ds: residual disease present (1=no,2=yes)
 rx:       treatment group
 ecog.ps:  ECOG performance status (1 is better, see reference)
-\        
+\         
 ========= ====================================================
 
 Source

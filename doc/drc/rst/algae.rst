@@ -54,4 +54,3 @@ Examples
 
    algae.m2 <- boxcox(algae.m1)
    summary(algae.m2)
-

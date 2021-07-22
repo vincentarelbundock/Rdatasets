@@ -47,4 +47,3 @@ Examples
 
 
    qqnorm(nba_heights$h_meters)
-

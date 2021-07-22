@@ -63,4 +63,3 @@ Examples
    lines(mintemp[ord],ds.fit$fit[ord,2]+2*ds.fit$se[ord,2],lty=2)
    detach(dewpoint)
    par(oldpar)
-

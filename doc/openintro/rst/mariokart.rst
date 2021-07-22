@@ -149,4 +149,3 @@ Examples
      geom_point() +
      labs(x = "Number of wheels", y = "Residuals",
           title = "Notice curvature")
-

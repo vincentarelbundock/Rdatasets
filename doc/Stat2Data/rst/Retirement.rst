@@ -18,7 +18,7 @@ A dataset with 16 observations on the following 2 variables.
 ======== ==========================================================
 ``Year`` 1997-2012
 ``SRA``  Annual contribution to the Supplemental Retirement Account
-\       
+\        
 ======== ==========================================================
 
 Details

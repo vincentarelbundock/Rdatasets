@@ -42,4 +42,3 @@ Examples
           title = "Pre-existing coniditions of children",
           subtitle = "in antibiotic use study") +
      coord_flip()
-

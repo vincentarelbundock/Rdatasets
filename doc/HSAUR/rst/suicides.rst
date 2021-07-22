@@ -38,4 +38,3 @@ Examples
 
      data("suicides", package = "HSAUR")
      mosaicplot(suicides)
-

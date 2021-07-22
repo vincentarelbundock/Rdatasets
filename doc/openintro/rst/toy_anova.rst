@@ -36,4 +36,3 @@ Examples
 
 
    toy_anova
-

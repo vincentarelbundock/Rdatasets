@@ -65,5 +65,3 @@ Examples
    m <- glm(I(outcome == "interview") ~ gender * class, data = law_resume, family = binomial)
    summary(m)
    predict(m, type = "response")
-
-

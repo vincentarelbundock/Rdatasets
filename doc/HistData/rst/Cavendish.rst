@@ -95,4 +95,3 @@ Examples
     
    boxplot(10^5 * G(Cavendish), ylab='~ Gravitational constant (G)', xlab='Data set')
    abline(h=10^5 * G(5.517), col="red", lwd=2)
-

@@ -19,7 +19,7 @@ A data frame with 2048 observations on the following 3 variables.
 ``Year``   Year (1979 - 2010)
 ``Seed``   Seed in NCAA men's basketball tournament: 1 to 16
 ``Final4`` ``1``\ =made Final Four or ``0``\ =did not make Final Four
-\         
+\          
 ========== ==========================================================
 
 Details

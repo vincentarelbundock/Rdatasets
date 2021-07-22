@@ -92,4 +92,3 @@ Examples
    pmodels = data.frame(treatment, treatment, 1, treatment), fct = LL2.4())
 
    EDcomp(G.aparine.m3, c(50, 50), logBase = exp(1))
-

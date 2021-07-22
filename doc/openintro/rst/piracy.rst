@@ -125,4 +125,3 @@ Examples
      labs(x = "Contribution by pro-PIPA groups",
           y = "Contribution by anti-PIPA groups",
           color = "For PIPA")
-

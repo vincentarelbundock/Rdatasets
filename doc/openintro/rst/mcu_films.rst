@@ -74,4 +74,3 @@ Examples
        ) +
      scale_x_continuous(labels = label_dollar(scale = 1/1000000)) +
      scale_y_continuous(labels = label_dollar(scale = 1/1000000))
-

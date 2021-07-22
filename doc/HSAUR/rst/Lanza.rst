@@ -80,4 +80,3 @@ Examples
          mosaicplot(table(Lanza[indx,"treatment"], 
                           Lanza[indx,"classification"]),
                     main = "", shade = TRUE))
-

@@ -31,4 +31,3 @@ Examples
 
 
    autoplot(melsyd, facets=TRUE)
-

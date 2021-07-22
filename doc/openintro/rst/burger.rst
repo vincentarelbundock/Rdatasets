@@ -41,4 +41,3 @@ Examples
 
 
    table(burger)
-

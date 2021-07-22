@@ -76,4 +76,3 @@ Examples
 
 
    table(yrbss_samp$physically_active_7d)
-

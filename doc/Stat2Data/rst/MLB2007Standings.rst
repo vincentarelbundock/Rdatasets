@@ -37,7 +37,7 @@ A dataset with 30 observations on the following 21 variables.
 ``StrikeOuts``  Number of strikeouts (by the team's pitchers)
 ``Saves``       Number of games saved (by the team's pitchers)
 ``WHIP``        Number of walks and hits per inning pitched
-\              
+\               
 =============== ======================================================
 
 Details

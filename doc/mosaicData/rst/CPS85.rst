@@ -73,4 +73,3 @@ Examples
 ::
 
    data(CPS85)
-

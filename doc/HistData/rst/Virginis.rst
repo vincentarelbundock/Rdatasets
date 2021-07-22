@@ -127,4 +127,3 @@ Examples
    # The data points, and indication of their uncertainty
    points(posangle ~ year, data=Virginis, pch=16)
    points(posangle ~ year, data=Virginis, cex=weight/2)
-

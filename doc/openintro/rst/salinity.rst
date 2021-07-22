@@ -2,8 +2,8 @@
 salinity R Documentation
 ======== ===============
 
-Salinity.
----------
+Salinity in Bimini Lagoon, Bahamas
+----------------------------------
 
 Description
 ~~~~~~~~~~~
@@ -40,7 +40,6 @@ Examples
 
 ::
 
-
    library(ggplot2)
    library(broom)
 
@@ -49,4 +48,3 @@ Examples
      facet_wrap(~site_number, ncol = 1)
 
    tidy(aov(salinity_ppt ~ site_number, data = salinity))
-

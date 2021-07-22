@@ -34,4 +34,3 @@ Examples
      deal(Cards, 5)         # poker hand
      shuffle(Cards)         # shuffled deck
    }
-

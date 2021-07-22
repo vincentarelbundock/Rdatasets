@@ -32,4 +32,3 @@ Examples
 
 
    hist(exams$scores)
-

@@ -34,4 +34,3 @@ Examples
 ::
 
    tsdisplay(wineind)
-

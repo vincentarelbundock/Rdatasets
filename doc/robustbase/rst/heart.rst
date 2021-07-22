@@ -26,7 +26,6 @@ Usage
 
    data(heart)
 
-
 Format
 ~~~~~~
 

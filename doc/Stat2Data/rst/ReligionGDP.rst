@@ -15,20 +15,28 @@ Format
 
 A dataset with 44 observations on the following 9 variables.
 
-===============
-===============================================================
-``Country``     Name of country
-``Religiosity`` A measure of degree of religiosity for residents of the country
-``GDP``         Per capita Gross Domestic Product in the country
-``Africa``      Indicator for countries in Africa
-``EastEurope``  Indicator for countries in Eastern Europe
-``MiddleEast``  Indicator for countries in the Middle East
-``Asia``        Indicator for countries in Asia
-``WestEurope``  Indicator for countries in Western Europe
-``Americas``    Indicator for countries in North/South America
-\              
-===============
-===============================================================
++-----------------+---------------------------------------------------+
+| ``Country``     | Name of country                                   |
++-----------------+---------------------------------------------------+
+| ``Religiosity`` | A measure of degree of religiosity for residents  |
+|                 | of the country                                    |
++-----------------+---------------------------------------------------+
+| ``GDP``         | Per capita Gross Domestic Product in the country  |
++-----------------+---------------------------------------------------+
+| ``Africa``      | Indicator for countries in Africa                 |
++-----------------+---------------------------------------------------+
+| ``EastEurope``  | Indicator for countries in Eastern Europe         |
++-----------------+---------------------------------------------------+
+| ``MiddleEast``  | Indicator for countries in the Middle East        |
++-----------------+---------------------------------------------------+
+| ``Asia``        | Indicator for countries in Asia                   |
++-----------------+---------------------------------------------------+
+| ``WestEurope``  | Indicator for countries in Western Europe         |
++-----------------+---------------------------------------------------+
+| ``Americas``    | Indicator for countries in North/South America    |
++-----------------+---------------------------------------------------+
+|                 |                                                   |
++-----------------+---------------------------------------------------+
 
 Details
 ~~~~~~~

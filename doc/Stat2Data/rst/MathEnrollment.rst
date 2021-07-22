@@ -19,7 +19,7 @@ A dataset with 11 observations on the following 3 variables.
 ``AYear``  Academic year (for the fall)
 ``Fall``   Fall semester total enrollments
 ``Spring`` Spring semester total enrollments
-\         
+\          
 ========== =================================
 
 Details

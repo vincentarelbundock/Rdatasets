@@ -40,4 +40,3 @@ Examples
 
 
    table(nuclear_survey)
-

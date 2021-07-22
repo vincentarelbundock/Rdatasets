@@ -87,5 +87,3 @@ Examples
    mosaic( ~ County + year, data=EdgeworthDeaths, 
        shade=TRUE, legend=FALSE, labeling=labeling_values, 
        gp=shading_Friendly)
-
-

@@ -162,4 +162,3 @@ Examples
      geom_point(color = ifelse(esi$code == "USA", "red", "black")) +
      geom_text(aes(label = ifelse(code == "USA", as.character(code),"")), hjust = 1.2, color = "red") +
      labs(x = "Vulnerability", y = "Capacity")
-

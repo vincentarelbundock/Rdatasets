@@ -41,4 +41,3 @@ Examples
 
 
    data(sitka89)
-

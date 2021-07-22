@@ -16,19 +16,28 @@ Format
 
 A dataset with 68 observations on the following 8 variables.
 
-============
-=======================================================================================================================================
-``Steps``    Total number of steps for the day
-``Moderate`` Number of steps at a moderate walking speed
-``Min``      Number of minutes walking at a moderate speed
-``kcal``     Number of calories burned walking at a moderate speed
-``Mile``     Total number of miles walked
-``Rain``     Type of weather (``rain`` or ``shine``)
-``Day``      Day of the week (``U``\ =Sunday, ``M``\ =Monday, ``T``\ =Tuesday, ``W``\ =Wednesday, ``R``\ =Thursday, ``F``\ =Friday, ``S``\ =Saturday
-``DayType``  Coded as ``Weekday`` or ``Weekend``
-\           
-============
-=======================================================================================================================================
++--------------+------------------------------------------------------+
+| ``Steps``    | Total number of steps for the day                    |
++--------------+------------------------------------------------------+
+| ``Moderate`` | Number of steps at a moderate walking speed          |
++--------------+------------------------------------------------------+
+| ``Min``      | Number of minutes walking at a moderate speed        |
++--------------+------------------------------------------------------+
+| ``kcal``     | Number of calories burned walking at a moderate      |
+|              | speed                                                |
++--------------+------------------------------------------------------+
+| ``Mile``     | Total number of miles walked                         |
++--------------+------------------------------------------------------+
+| ``Rain``     | Type of weather (``rain`` or ``shine``)              |
++--------------+------------------------------------------------------+
+| ``Day``      | Day of the week (``U``\ =Sunday, ``M``\ =Monday,     |
+|              | ``T``\ =Tuesday, ``W``\ =Wednesday,                  |
+|              | ``R``\ =Thursday, ``F``\ =Friday, ``S``\ =Saturday   |
++--------------+------------------------------------------------------+
+| ``DayType``  | Coded as ``Weekday`` or ``Weekend``                  |
++--------------+------------------------------------------------------+
+|              |                                                      |
++--------------+------------------------------------------------------+
 
 Details
 ~~~~~~~

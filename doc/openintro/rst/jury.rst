@@ -34,5 +34,3 @@ Examples
 
 
    jury
-
-

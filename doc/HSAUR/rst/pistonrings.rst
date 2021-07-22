@@ -47,4 +47,3 @@ Examples
      
      data("pistonrings", package = "HSAUR")
      mosaicplot(pistonrings)
-

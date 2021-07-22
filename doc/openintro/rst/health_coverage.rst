@@ -43,5 +43,3 @@ Examples
 
 
    table(health_coverage)
-
-

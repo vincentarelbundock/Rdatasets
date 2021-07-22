@@ -83,4 +83,3 @@ Examples
    glmfp <- glm(die ~ anterior + factor(killip) + offset(log(cases)), family=poisson, data=fasttrakg)
    summary(glmfp)
    exp(coef(glmfp))
-

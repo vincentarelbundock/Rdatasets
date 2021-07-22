@@ -2,8 +2,8 @@
 resume R Documentation
 ====== ===============
 
-Which resume attributes drive job callbacks? (Race and gender under study.)
----------------------------------------------------------------------------
+Which resume attributes drive job callbacks?
+--------------------------------------------
 
 Description
 ~~~~~~~~~~~
@@ -250,4 +250,3 @@ Examples
    # means the race finding will almost certainy will
    # hold. However, it is possible that we'll find
    # more interesting results with the gender investigation.
-

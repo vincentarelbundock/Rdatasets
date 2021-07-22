@@ -23,7 +23,7 @@ Format
 A data frame with 29 observations on the following 5 variables.
 
 year
-   a numeric vector
+   Year.
 
 potus
    The president in office.
@@ -49,4 +49,3 @@ Examples
 
 
    unemploy_pres
-

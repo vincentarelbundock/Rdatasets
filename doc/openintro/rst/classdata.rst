@@ -41,4 +41,3 @@ Examples
 
 
    anova(lm(m1 ~ lecture, classdata))
-

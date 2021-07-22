@@ -93,4 +93,3 @@ Examples
    ## Plotting isobole based on the Hewlett model
    isobole(glymet.free, glymet.hew, exchange = 0.01)  
    # no improvement over concentration addition
-

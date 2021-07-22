@@ -72,4 +72,3 @@ Examples
      data = anesthetic)
    anova(anes.logit)
    summary(anes.logit)
-

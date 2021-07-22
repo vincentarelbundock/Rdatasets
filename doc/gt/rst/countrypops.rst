@@ -67,4 +67,3 @@ Examples
    # Here is a glimpse at the data
    # available in `countrypops`
    dplyr::glimpse(countrypops)
-

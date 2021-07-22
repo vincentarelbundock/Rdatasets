@@ -24,38 +24,55 @@ Format
 
 mgus: A data frame with 241 observations on the following 12 variables.
 
-=======
-==================================================================
-id:     subject id
-age:    age in years at the detection of MGUS
-sex:    ``male`` or ``female``
-dxyr:   year of diagnosis
-pcdx:   for subjects who progress to a plasma cell malignancy
-\       the subtype of malignancy: multiple myeloma (MM) is the
-\       most common, followed by amyloidosis (AM), macroglobulinemia (MA),
-\       and other lymphprolifative disorders (LP)
-pctime: days from MGUS until diagnosis of a plasma cell malignancy
-futime: days from diagnosis to last follow-up
-death:  1= follow-up is until death
-alb:    albumin level at MGUS diagnosis
-creat:  creatinine at MGUS diagnosis
-hgb:    hemoglobin at MGUS diagnosis
-mspike: size of the monoclonal protein spike at diagnosis
-\      
-=======
-==================================================================
++---------+-----------------------------------------------------------+
+| id:     | subject id                                                |
++---------+-----------------------------------------------------------+
+| age:    | age in years at the detection of MGUS                     |
++---------+-----------------------------------------------------------+
+| sex:    | ``male`` or ``female``                                    |
++---------+-----------------------------------------------------------+
+| dxyr:   | year of diagnosis                                         |
++---------+-----------------------------------------------------------+
+| pcdx:   | for subjects who progress to a plasma cell malignancy     |
++---------+-----------------------------------------------------------+
+|         | the subtype of malignancy: multiple myeloma (MM) is the   |
++---------+-----------------------------------------------------------+
+|         | most common, followed by amyloidosis (AM),                |
+|         | macroglobulinemia (MA),                                   |
++---------+-----------------------------------------------------------+
+|         | and other lymphprolifative disorders (LP)                 |
++---------+-----------------------------------------------------------+
+| pctime: | days from MGUS until diagnosis of a plasma cell           |
+|         | malignancy                                                |
++---------+-----------------------------------------------------------+
+| futime: | days from diagnosis to last follow-up                     |
++---------+-----------------------------------------------------------+
+| death:  | 1= follow-up is until death                               |
++---------+-----------------------------------------------------------+
+| alb:    | albumin level at MGUS diagnosis                           |
++---------+-----------------------------------------------------------+
+| creat:  | creatinine at MGUS diagnosis                              |
++---------+-----------------------------------------------------------+
+| hgb:    | hemoglobin at MGUS diagnosis                              |
++---------+-----------------------------------------------------------+
+| mspike: | size of the monoclonal protein spike at diagnosis         |
++---------+-----------------------------------------------------------+
+|         |                                                           |
++---------+-----------------------------------------------------------+
 
 mgus1: The same data set in start,stop format. Contains the id, age,
 sex, and laboratory variable described above along with
 
-============
-============================================================================
-start, stop: sequential intervals of time for each subject
-status:      =1 if the interval ends in an event
-event:       a factor containing the event type: censor, death, or plasma cell malignancy
-enum:        event number for each subject: 1 or 2
-============
-============================================================================
++--------------+------------------------------------------------------+
+| start, stop: | sequential intervals of time for each subject        |
++--------------+------------------------------------------------------+
+| status:      | =1 if the interval ends in an event                  |
++--------------+------------------------------------------------------+
+| event:       | a factor containing the event type: censor, death,   |
+|              | or plasma cell malignancy                            |
++--------------+------------------------------------------------------+
+| enum:        | event number for each subject: 1 or 2                |
++--------------+------------------------------------------------------+
 
 Details
 ~~~~~~~

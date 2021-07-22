@@ -41,5 +41,3 @@ Examples
 
 
    table(leg_mari)
-
-

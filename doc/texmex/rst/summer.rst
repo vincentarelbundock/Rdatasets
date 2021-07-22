@@ -57,4 +57,3 @@ Examples
 
    data(summer)
    data(winter)
-

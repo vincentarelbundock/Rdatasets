@@ -41,4 +41,3 @@ Examples
 
 
    table(drug_use)
-

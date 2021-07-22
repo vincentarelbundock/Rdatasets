@@ -44,4 +44,3 @@ Examples
 
 
    table(ebola_survey)
-

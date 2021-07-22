@@ -80,5 +80,3 @@ Examples
        x = "Difference between reading and writing scores",
        y = "Socio-economic status"
        )
-
-

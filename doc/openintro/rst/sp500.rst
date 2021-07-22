@@ -96,4 +96,3 @@ Examples
      scale_y_log10() +
      labs(x = "Enterprise value / revenue, logged",
           y = "Market cap / forecasted earnings, logged")
-

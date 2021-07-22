@@ -56,4 +56,3 @@ Examples
    ggplot(gpa_study_hours, aes(x = study_hours, y = gpa)) +
      geom_point(alpha = 0.5) +
      labs(x = "Study hours/week", y = "GPA")
-

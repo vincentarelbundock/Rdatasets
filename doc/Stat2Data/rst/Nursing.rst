@@ -15,18 +15,26 @@ Format
 
 A dataset with 52 observations on the following 7 variables.
 
-====================
-======================================================
-``Beds``             Number of beds in the nursing home
-``InPatientDays``    Annual medical in-patient days (in hundreds)
-``AllPatientDays``   Annual total patient days (in hundreds)
-``PatientRevenue``   Annual patient care revenue (in hundreds of dollars)
-``NurseSalaries``    Annual nursing salaries (in hundreds of dollars)
-``FacilitiesExpend`` Annual facilities expenditure (in hundreds of dollars)
-``Rural``            1=\ ``rural`` or 0=\ ``non-rural``
-\                   
-====================
-======================================================
++----------------------+----------------------------------------------+
+| ``Beds``             | Number of beds in the nursing home           |
++----------------------+----------------------------------------------+
+| ``InPatientDays``    | Annual medical in-patient days (in hundreds) |
++----------------------+----------------------------------------------+
+| ``AllPatientDays``   | Annual total patient days (in hundreds)      |
++----------------------+----------------------------------------------+
+| ``PatientRevenue``   | Annual patient care revenue (in hundreds of  |
+|                      | dollars)                                     |
++----------------------+----------------------------------------------+
+| ``NurseSalaries``    | Annual nursing salaries (in hundreds of      |
+|                      | dollars)                                     |
++----------------------+----------------------------------------------+
+| ``FacilitiesExpend`` | Annual facilities expenditure (in hundreds   |
+|                      | of dollars)                                  |
++----------------------+----------------------------------------------+
+| ``Rural``            | 1=\ ``rural`` or 0=\ ``non-rural``           |
++----------------------+----------------------------------------------+
+|                      |                                              |
++----------------------+----------------------------------------------+
 
 Details
 ~~~~~~~

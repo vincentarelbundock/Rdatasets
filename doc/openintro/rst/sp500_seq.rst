@@ -43,4 +43,3 @@ Examples
 
 
    sp500_seq
-

@@ -21,7 +21,7 @@ A dataset with 14 observations on the following 5 variables.
 ``Species``    Number of mammal species
 ``logArea``    Natural logarithm (base e) of Area
 ``logSpecies`` Natural logarithm (base e) of Species
-\             
+\              
 ============== =====================================
 
 Details

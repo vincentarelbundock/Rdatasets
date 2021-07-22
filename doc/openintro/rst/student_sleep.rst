@@ -43,4 +43,3 @@ Examples
    x <- round(x - mean(x) + 7.42, 2)
 
    identical(x, student_sleep$hours)
-

@@ -56,4 +56,3 @@ Examples
 ::
 
    data(Whickham)
-

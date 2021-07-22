@@ -15,19 +15,32 @@ Format
 
 A data frame with 140 observations on the following 8 variables.
 
-=================
-===============================================================================
-``Location``      Where letter was "lost": ``DesMoines``, ``GrinnellCampus``, or ``GrinnellTown``
-``Address``       Address on the letter: ``Confederacy`` or ``Peaceworks``
-``Returned``      ``1``\ =letter was returned or ``0``\ =letter was not returned
-``DesMoines``     Indicator for letters left in Des Moines
-``GrinnellTown``  Indicator for letters left in the town of Grinnell
-``GrinellCampus`` Indicator for letters left on the Grinnell campus
-``Peaceworks``    Indicator for letters addressed to Iowa Peaceworks
-``Confederacy``   Indicator for letters addressed to Friends of the Confederacy
-\                
-=================
-===============================================================================
++-------------------+-------------------------------------------------+
+| ``Location``      | Where letter was "lost": ``DesMoines``,         |
+|                   | ``GrinnellCampus``, or ``GrinnellTown``         |
++-------------------+-------------------------------------------------+
+| ``Address``       | Address on the letter: ``Confederacy`` or       |
+|                   | ``Peaceworks``                                  |
++-------------------+-------------------------------------------------+
+| ``Returned``      | ``1``\ =letter was returned or ``0``\ =letter   |
+|                   | was not returned                                |
++-------------------+-------------------------------------------------+
+| ``DesMoines``     | Indicator for letters left in Des Moines        |
++-------------------+-------------------------------------------------+
+| ``GrinnellTown``  | Indicator for letters left in the town of       |
+|                   | Grinnell                                        |
++-------------------+-------------------------------------------------+
+| ``GrinellCampus`` | Indicator for letters left on the Grinnell      |
+|                   | campus                                          |
++-------------------+-------------------------------------------------+
+| ``Peaceworks``    | Indicator for letters addressed to Iowa         |
+|                   | Peaceworks                                      |
++-------------------+-------------------------------------------------+
+| ``Confederacy``   | Indicator for letters addressed to Friends of   |
+|                   | the Confederacy                                 |
++-------------------+-------------------------------------------------+
+|                   |                                                 |
++-------------------+-------------------------------------------------+
 
 Details
 ~~~~~~~

@@ -47,4 +47,3 @@ Examples
 
    data(smallpox)
    table(smallpox)
-

@@ -43,4 +43,3 @@ Examples
 
 
    full_body_scan
-

@@ -21,7 +21,7 @@ A dataset with 36 observations on the following 4 variables.
 ``Size``  Vehicle size: ``1``\ =small, ``2``\ =medium, or ``3``\ =large
 ``Type``  ``1``\ =standard filter or ``2``\ =new filter
 ``Side``  Side of vehicle: code1=right or ``2``\ =left
-\        
+\         
 ========= =============================================================
 
 Details

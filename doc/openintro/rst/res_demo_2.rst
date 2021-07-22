@@ -38,4 +38,3 @@ Examples
 
 
    res_demo_2
-

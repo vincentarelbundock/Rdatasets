@@ -48,4 +48,3 @@ Examples
 
 
    stem_cell
-

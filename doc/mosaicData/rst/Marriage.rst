@@ -85,4 +85,3 @@ Examples
 ::
 
    data(Marriage)
-

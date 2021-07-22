@@ -28,7 +28,7 @@ text. The variable and its levels are
 == ==== ============
 No Name Levels
 1  nMay 0, 1, ..., 6
-\      
+\       
 == ==== ============
 
 Source

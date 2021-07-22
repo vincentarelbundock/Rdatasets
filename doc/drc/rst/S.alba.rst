@@ -71,4 +71,3 @@ Examples
 
    ## Plotting fitted regression curves together with the data
    plot(S.alba.LL.4.2)
-

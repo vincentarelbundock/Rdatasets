@@ -20,7 +20,7 @@ A dataset with 5 observations on the following 4 variables.
 ``Made``   Number of putts made at this length
 ``Missed`` Number of putts missed at this length
 ``Trials`` Total number of putts attempted at this length
-\         
+\          
 ========== ==============================================
 
 Details

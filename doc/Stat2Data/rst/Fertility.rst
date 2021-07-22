@@ -27,7 +27,7 @@ A data frame with 333 observations on the following 10 variables.
 ``TotalGn``    Total gonadotropin level
 ``Oocytes``    Number of egg cells
 ``Embryos``    Number of embryos
-\             
+\              
 ============== ==========================================
 
 Details

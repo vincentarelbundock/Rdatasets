@@ -24,4 +24,3 @@ Examples
 
 
    autoplot(mens400)
-

@@ -18,7 +18,7 @@ A dataset with 30 observations on the following 2 variables.
 ========= ==================================
 ``Pages`` Number of pages in the textbook
 ``Price`` Price of the textbook (in dollars)
-\        
+\         
 ========= ==================================
 
 Details

@@ -22,7 +22,7 @@ A dataset with 60 observations on the following 5 variables.
 ``Age``     Age of the car (in years)
 ``Mileage`` Previous miles driven (in 1,000's)
 ``Porsche`` Indicator for Porsche (``1``) or Jaguar (``0``)
-\          
+\           
 =========== ===============================================
 
 Details

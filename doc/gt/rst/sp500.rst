@@ -56,4 +56,3 @@ Examples
    # Here is a glimpse at the data
    # available in `sp500`
    dplyr::glimpse(sp500)
-

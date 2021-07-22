@@ -9,7 +9,7 @@
 
 <h3>Description</h3>
 
-<p>Demographic information of midwest counties
+<p>Demographic information of midwest counties from 2000 US census
 </p>
 
 
@@ -26,13 +26,17 @@ midwest
 </p>
 
 <dl>
-<dt>PID</dt><dd></dd>
-<dt>county</dt><dd></dd>
-<dt>state</dt><dd></dd>
-<dt>area</dt><dd></dd>
-<dt>poptotal</dt><dd><p>Total population</p>
+<dt>PID</dt><dd><p>Unique county identifier.</p>
 </dd>
-<dt>popdensity</dt><dd><p>Population density</p>
+<dt>county</dt><dd><p>County name.</p>
+</dd>
+<dt>state</dt><dd><p>State to which county belongs to.</p>
+</dd>
+<dt>area</dt><dd><p>Area of county (units unknown).</p>
+</dd>
+<dt>poptotal</dt><dd><p>Total population.</p>
+</dd>
+<dt>popdensity</dt><dd><p>Population density (person/unit area).</p>
 </dd>
 <dt>popwhite</dt><dd><p>Number of whites.</p>
 </dd>
@@ -56,22 +60,39 @@ midwest
 </dd>
 <dt>popadults</dt><dd><p>Number of adults.</p>
 </dd>
-<dt>perchsd</dt><dd></dd>
+<dt>perchsd</dt><dd><p>Percent with high school diploma.</p>
+</dd>
 <dt>percollege</dt><dd><p>Percent college educated.</p>
 </dd>
-<dt>percprof</dt><dd><p>Percent profession.</p>
+<dt>percprof</dt><dd><p>Percent with professional degree.</p>
 </dd>
-<dt>poppovertyknown</dt><dd></dd>
-<dt>percpovertyknown</dt><dd></dd>
-<dt>percbelowpoverty</dt><dd></dd>
-<dt>percchildbelowpovert</dt><dd></dd>
-<dt>percadultpoverty</dt><dd></dd>
-<dt>percelderlypoverty</dt><dd></dd>
-<dt>inmetro</dt><dd><p>In a metro area.</p>
+<dt>poppovertyknown</dt><dd><p>Population with known poverty status.</p>
 </dd>
-<dt>category</dt><dd></dd>
+<dt>percpovertyknown</dt><dd><p>Percent of population with known poverty status.</p>
+</dd>
+<dt>percbelowpoverty</dt><dd><p>Percent of people below poverty line.</p>
+</dd>
+<dt>percchildbelowpovert</dt><dd><p>Percent of children below poverty line.</p>
+</dd>
+<dt>percadultpoverty</dt><dd><p>Percent of adults below poverty line.</p>
+</dd>
+<dt>percelderlypoverty</dt><dd><p>Percent of elderly below poverty line.</p>
+</dd>
+<dt>inmetro</dt><dd><p>County considered in a metro area.</p>
+</dd>
+<dt>category</dt><dd><p>Miscellaneous.</p>
+</dd>
 </dl>
 
+
+
+<h3>Details</h3>
+
+<p>Note: this dataset is included for illustrative purposes. The original
+descriptions were not documented and the current descriptions here are based
+on speculation. For more accurate and up-to-date US census data, see the
+<a href="https://cran.r-project.org/package=acs"><code>acs</code> package</a>.
+</p>
 
 
 </body></html>

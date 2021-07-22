@@ -78,4 +78,3 @@ Examples
    equal treatment from the police?",
        fill = "Response"
      )
-

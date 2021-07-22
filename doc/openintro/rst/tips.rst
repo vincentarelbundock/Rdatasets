@@ -74,4 +74,3 @@ Examples
    ggplot(tips, aes(x = tip, fill = factor(day))) +
     geom_density(alpha = 0.5) +
     labs(x = "Tip", y = "Density", fill = "Day")
-

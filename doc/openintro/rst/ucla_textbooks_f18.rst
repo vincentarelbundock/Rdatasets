@@ -159,4 +159,3 @@ Examples
 
    # t-test of price differences
    t.test(ucla_textbooks_f18_with_diff$diff)
-

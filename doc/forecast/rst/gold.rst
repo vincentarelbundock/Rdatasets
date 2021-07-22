@@ -28,4 +28,3 @@ Examples
 ::
 
    tsdisplay(gold)
-

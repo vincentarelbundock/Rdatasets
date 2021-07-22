@@ -54,5 +54,3 @@ Examples
 
 
    president
-
-

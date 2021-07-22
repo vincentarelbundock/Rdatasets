@@ -48,4 +48,3 @@ Examples
                    data=tobin, dist='gaussian')
 
    predict(tfit,type="response")
-

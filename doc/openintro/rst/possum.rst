@@ -2,8 +2,8 @@
 possum R Documentation
 ====== ===============
 
-possum
-------
+Possums in Australia and New Guinea
+-----------------------------------
 
 Description
 ~~~~~~~~~~~
@@ -62,12 +62,12 @@ Examples
 
 ::
 
-
    library(ggplot2)
 
+   # Skull width vs. head length
    ggplot(possum, aes(x = head_l, y = skull_w)) +
      geom_point()
 
+   # Total length vs. sex
    ggplot(possum, aes(x = total_l, fill = sex)) +
      geom_density(alpha = 0.5)
-

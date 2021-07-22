@@ -49,5 +49,3 @@ Examples
 
 
    healthcare_law_survey
-
-

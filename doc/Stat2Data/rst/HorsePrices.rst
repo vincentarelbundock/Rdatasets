@@ -22,7 +22,7 @@ A data frame with 50 observations on the following 5 variables.
 ``Age``     Age of the horse (in years)
 ``Height``  Height of the horse (in hands)
 ``Sex``     ``f``\ =female ``m``\ =male
-\          
+\           
 =========== ==============================
 
 Details

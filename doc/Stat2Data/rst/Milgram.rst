@@ -15,13 +15,15 @@ Format
 
 A dataset with 37 observations on the following 2 variables.
 
-===========
-===================================================================
-``Results`` Treatment group: ``Actual``, ``Complied``, or ``Refused``
-``Score``   Ethical score from 1 (not at all ethical) to 9 (completely ethical)
-\          
-===========
-===================================================================
++-------------+-------------------------------------------------------+
+| ``Results`` | Treatment group: ``Actual``, ``Complied``, or         |
+|             | ``Refused``                                           |
++-------------+-------------------------------------------------------+
+| ``Score``   | Ethical score from 1 (not at all ethical) to 9        |
+|             | (completely ethical)                                  |
++-------------+-------------------------------------------------------+
+|             |                                                       |
++-------------+-------------------------------------------------------+
 
 Details
 ~~~~~~~

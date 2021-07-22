@@ -42,4 +42,3 @@ Examples
 ::
 
    plot(taylor)
-

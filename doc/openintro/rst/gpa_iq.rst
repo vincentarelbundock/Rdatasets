@@ -45,4 +45,3 @@ Examples
 
 
    gpa_iq
-

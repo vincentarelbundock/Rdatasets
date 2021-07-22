@@ -29,4 +29,3 @@ Examples
 
 
    autoplot(elecequip)
-

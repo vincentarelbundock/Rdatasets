@@ -20,7 +20,7 @@ A data frame with 20 observations on the following 3 variables.
 ``Price`` Selling price (in dollars)
 ``Size``  Size of the house (in square feet)
 ``Lot``   Area of the house's lot (in square feet)
-\        
+\         
 ========= ========================================
 
 Details

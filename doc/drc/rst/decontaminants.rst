@@ -81,4 +81,3 @@ Examples
    type = "Poisson", pmodels = list(~group-1, ~1, ~group-1))
 
    summary(decon.LL.3.2)
-

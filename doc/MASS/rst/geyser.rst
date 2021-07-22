@@ -31,7 +31,7 @@ A data frame with 299 observations on 2 variables.
 ============ ======= ==============================
 ``duration`` numeric Eruption time in mins
 ``waiting``  numeric Waiting time for this eruption
-\                   
+\                    
 ============ ======= ==============================
 
 Note

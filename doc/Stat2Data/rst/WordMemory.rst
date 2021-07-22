@@ -20,7 +20,7 @@ A dataset with 40 observations on the following 4 variables.
 ``Abstract`` Words were abstract? ``No`` or ``Yes``
 ``Frequent`` Words were common? ``No`` or ``Yes``
 ``Percent``  Percentage of words recalled (out of 25)
-\           
+\            
 ============ =============================================
 
 Details

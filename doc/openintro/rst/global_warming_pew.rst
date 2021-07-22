@@ -44,4 +44,3 @@ Examples
 
 
    global_warming_pew
-

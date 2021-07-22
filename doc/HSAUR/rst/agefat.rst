@@ -56,4 +56,3 @@ Examples
 
      data("agefat", package = "HSAUR")
      plot(fat ~ age, data = agefat)
-

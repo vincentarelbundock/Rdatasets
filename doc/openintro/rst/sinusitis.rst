@@ -43,4 +43,3 @@ Examples
 
 
    sinusitis
-

@@ -81,4 +81,3 @@ Examples
    # Check the test's assumption around sufficient expected observations
    # per table cell.
    test$expected
-

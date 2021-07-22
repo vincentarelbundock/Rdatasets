@@ -73,4 +73,3 @@ Examples
    ## Comparing model1 and model2 
    ## (Can the first model be reduced to the second model?)
    anova(earthworms.m1, earthworms.m2)
-

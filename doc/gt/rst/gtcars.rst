@@ -95,4 +95,3 @@ Examples
    # Here is a glimpse at the data
    # available in `gtcars`
    dplyr::glimpse(gtcars)
-

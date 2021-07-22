@@ -76,4 +76,3 @@ Examples
    ## IGNORE_RDIFF_BEGIN
    summary(nl.lme)
    ## IGNORE_RDIFF_END
-
