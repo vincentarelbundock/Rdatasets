@@ -53,6 +53,7 @@ Imports:
     mediation,
     mi,
     mosaicData,
+    mstate,
     multgee,
     nycflights13,
     openintro,
