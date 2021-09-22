@@ -2,7 +2,7 @@
 title: "Available datasets"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{data}
+  %\VignetteIndexEntry{Available datasets}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
