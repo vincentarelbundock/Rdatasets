@@ -2,7 +2,7 @@
 so2concentrations R Documentation
 ================= ===============
 
-Sulfur Dioxide Emissions, 1980-2017
+Sulfur Dioxide Emissions, 1980-2020
 -----------------------------------
 
 Description
@@ -10,8 +10,9 @@ Description
 
 This data set contains yearly observations by the Environmental
 Protection Agency on the concentration of sulfur dioxide in parts per
-billion, based on 35 sites. I use this for in-class illustration. Note
-that the national standard is 75 parts per billion.
+billion, based on 32 sites. I use this for in-class illustration. Note
+that the national standard is 75 parts per billion. Data are the
+national trend.
 
 Usage
 ~~~~~
@@ -23,13 +24,13 @@ Usage
 Format
 ~~~~~~
 
-A data frame with 40 observations on the following 4 variables.
+A data frame with the following 4 variables.
 
 ``year``
    the year
 
 ``value``
-   the mean concentration of sulfur dioxide in the air based on 35 trend
+   the mean concentration of sulfur dioxide in the air based on 32 trend
    sites, in parts per billion
 
 ``ub``
@@ -41,5 +42,5 @@ A data frame with 40 observations on the following 4 variables.
 Source
 ~~~~~~
 
-Environmental Protection Agency, 2020.
+Environmental Protection Agency, 2021.
 https://www.epa.gov/air-trends/sulfur-dioxide-trends

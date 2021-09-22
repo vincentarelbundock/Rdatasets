@@ -28,7 +28,7 @@ A data frame with 10000 observations on the following 4 variables.
    Identification
 
 ``Income``
-   Income in $10,000's
+   Income in $1,000's
 
 ``Limit``
    Credit limit
@@ -75,8 +75,7 @@ References
 
 James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
 Introduction to Statistical Learning with applications in R*,
-`www.StatLearning.com <www.StatLearning.com>`__, Springer-Verlag, New
-York
+https://www.statlearning.com, Springer-Verlag, New York
 
 Examples
 ~~~~~~~~

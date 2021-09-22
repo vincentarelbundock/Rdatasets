@@ -80,8 +80,7 @@ Grunfeld Y (1958). *The determinants of corporate investment*. Ph.D.
 thesis, Department of Economics, University of Chicago.
 
 Kleiber C, Zeileis A (2010). “The Grunfeld Data at 50.” *German Economic
-Review*, **11**, 404–417. doi:
-`10.1111/j.1468-0475.2010.00513.x <https://doi.org/10.1111/j.1468-0475.2010.00513.x>`__,
+Review*, **11**, 404-417.
 https://doi.org/10.1111/j.1468-0475.2010.00513.x.
 
 website accompanying the paper with various variants of the Grunfeld

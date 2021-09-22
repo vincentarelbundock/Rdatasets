@@ -40,9 +40,6 @@ A data frame with 32,777 observations on the following 8 variables.
 ``yd``
    the day of the year
 
-``station``
-   the unique station identifier for NOAA
-
 ``value``
    the daily high in Celsius*10. I don't know why NOAA does it this way,
    but there you go.
@@ -53,4 +50,5 @@ A data frame with 32,777 observations on the following 8 variables.
 Details
 ~~~~~~~
 
-Data obtained from NOAA, via the rnoaa package.
+Data obtained from NOAA, via the rnoaa package. The station identifier
+is ``GHCND:USC00381770`` for added context.

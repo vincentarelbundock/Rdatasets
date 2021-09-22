@@ -23,7 +23,7 @@ Usage
 Format
 ~~~~~~
 
-A data frame with 1,298 observations on the following 3 variables.
+A data frame with 1,316 observations on the following 3 variables.
 
 ``date``
    a date

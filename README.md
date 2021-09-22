@@ -1,7 +1,7 @@
 
 # What is this?
 
-`Rdatasets` is a collection of nearly 1500 datasets that were originally distributed alongside the statistical software environment `R` and some of its add-on packages. The goal is to make these data more broadly accessible for teaching and statistical software development. 
+`Rdatasets` is a collection of over 1700 datasets that were originally distributed alongside the statistical software environment `R` and some of its add-on packages. The goal is to make these data more broadly accessible for teaching and statistical software development. 
 
 # What is included?
 
@@ -16,7 +16,7 @@ On the github repository you will also find:
 
 # Adding data
 
-Many `R` packages ship with associated datasets, but the script included here only downloads data from packages that are installed locally on the machine where it is run. If you spot interesting data in a package distributed on CRAN, let me know. I will try to install that package on my computer and I will re-run the download script to see if the data can be added to this repository. Requests should be filed on the Github issue tracker.  
+Many `R` packages ship with associated datasets, but the script included here only downloads data from packages that are installed locally on the machine where it is run. If you spot interesting data in a package distributed on CRAN, let me know. I will try to install that package on my computer and I will re-run the download script to see if the data can be added to this repository. Requests should be filed on the Github issue tracker.
 
 # Omitted packages
 

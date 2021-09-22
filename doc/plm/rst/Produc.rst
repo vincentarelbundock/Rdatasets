@@ -79,7 +79,7 @@ John Wiley and Sons ltd.
 
 Baltagi BH, Pinnoi N (1995). “Public capital stock and state
 productivity growth: further evidence from an error components model.”
-*Empirical Economics*, **20**, 351–359.
+*Empirical Economics*, **20**, 351-359.
 
 Munnell A (1990). “Why Has Productivity Growth Declined? Productivity
 and Public Investment.” *New England Economic Review*, 3–22.

@@ -96,4 +96,4 @@ Wiley series in probability and statistics.
 
 Harrison D, Rubinfeld DL (1978). “Hedonic housing prices and the demand
 for clean air.” *Journal of Environmental Economics and Management*,
-**5**, 81–102.
+**5**, 81-102.

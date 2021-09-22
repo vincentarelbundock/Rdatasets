@@ -42,8 +42,7 @@ References
 
 James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
 Introduction to Statistical Learning with applications in R*,
-`www.StatLearning.com <www.StatLearning.com>`__, Springer-Verlag, New
-York
+https://www.statlearning.com, Springer-Verlag, New York
 
 Examples
 ~~~~~~~~

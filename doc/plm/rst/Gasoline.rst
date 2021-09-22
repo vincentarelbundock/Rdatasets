@@ -64,5 +64,5 @@ John Wiley and Sons ltd.
 
 Baltagi BH, Griffin JM (1983). “Gasoline demand in the OECD: An
 application of pooling and testing procedures.” *European Economic
-Review*, **22**\ (2), 117–137. ISSN 0014-2921,
+Review*, **22**\ (2), 117 - 137. ISSN 0014-2921,
 https://www.sciencedirect.com/science/article/pii/0014292183900776.

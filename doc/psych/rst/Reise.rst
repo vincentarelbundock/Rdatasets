@@ -109,7 +109,7 @@ affective variables from ``link{burt}``.
 Another data set that is worth examining for tests of bifactor structure
 is the holzinger.swineford data set which includes the original data
 from Holzinger and Swineford (1939) supplied by Keith Widaman. This is
-in psychTools.1.9.11 or later.
+in the psychTools package.
 
 -  Bechtoldt.1: 17 x 17 correlation matrix of ability tests, N = 212.
 
@@ -143,7 +143,7 @@ For the Holzinger 14 tests these were found from 1- t2 where t = c(.332,
 0.854.
 
 For the Holzinger.9 tests, the reliabilities for the Grant-White tests
-were: .76, .57, .94, .65, .75, .87, .95, .84 and .89 (Keith Widamn,
+were: .76, .57, .94, .65, .75, .87, .95, .84 and .89 (Keith Widaman,
 personal communication, 2020),
 
 Source

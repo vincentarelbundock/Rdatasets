@@ -6,8 +6,7 @@ suppressMessages(library(tidyverse))
 packages <- desc_get_deps()$package
 
 # load packages
-sapply(packages, require, character.only=TRUE, warn.conflicts=FALSE,
-       quietly=TRUE)
+sapply(packages, function(x) suppressPackageStartupMessages(require(x, character.only = TRUE, warn.conflicts = FALSE, quietly = TRUE)))
 
 # Functions
 get_doc = function(package = 'mi', dataset = 'nlsyV') {
@@ -29,8 +28,12 @@ tidy_data = function(dat) {
     } else {
         dat = try(as.data.frame(dat), silent = TRUE)
     }
-    if (class(dat)[1] == 'data.frame') {
-        out = dat
+    if (inherits(dat, "data.frame")) {
+        # tibbles -> data.frame
+        out = as.data.frame(dat) 
+        # list columns cannot be saved to CSV and cause problems. see dplyr::starwars
+        idx <- sapply(out, function(x) class(x)[1]) != "list"
+        out <- out[, idx, drop = FALSE]
     } else {
         out = NA
         class(out) = 'try-error'

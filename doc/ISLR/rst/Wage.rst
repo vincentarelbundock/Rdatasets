@@ -67,19 +67,18 @@ A data frame with 3000 observations on the following 11 variables.
 Source
 ~~~~~~
 
-Data was manually assembled by Steve Miller, of Open BI
-(www.openbi.com), from the March 2011 Supplement to Current Population
+Data was manually assembled by Steve Miller, of Inquidia Consulting
+(formerly Open BI). From the March 2011 Supplement to Current Population
 Survey data.
 
-http://thedataweb.rm.census.gov/TheDataWeb
+https://www.re3data.org/repository/r3d100011860
 
 References
 ~~~~~~~~~~
 
 James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
 Introduction to Statistical Learning with applications in R*,
-`www.StatLearning.com <www.StatLearning.com>`__, Springer-Verlag, New
-York
+https://www.statlearning.com, Springer-Verlag, New York
 
 Examples
 ~~~~~~~~

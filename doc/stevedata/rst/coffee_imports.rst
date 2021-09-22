@@ -21,7 +21,7 @@ Usage
 Format
 ~~~~~~
 
-A data frame with 29 observations on the following 3 variables.
+A data frame with 30 observations on the following 3 variables.
 
 ``year``
    the year
