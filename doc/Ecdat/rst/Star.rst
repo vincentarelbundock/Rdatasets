@@ -1,76 +1,78 @@
-==== ===============
-Star R Documentation
-==== ===============
+.. container::
 
-Effects on Learning of Small Class Sizes
-----------------------------------------
+   ==== ===============
+   Star R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Effects on Learning of Small Class Sizes
+      :name: effects-on-learning-of-small-class-sizes
 
-a cross-section from 1985-89
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 5748
+   a cross-section from 1985-89
 
-*observation* : individuals
+   *number of observations* : 5748
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Star)
+   ::
 
-Format
-~~~~~~
+      data(Star)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-tmathssk
-   total math scaled score
+   A dataframe containing :
 
-treadssk
-   total reading scaled score
+   tmathssk
+      total math scaled score
 
-classk
-   type of class, a factor with levels
-   (regular,small.class,regular.with.aide)
+   treadssk
+      total reading scaled score
 
-totexpk
-   years of total teaching experience
+   classk
+      type of class, a factor with levels
+      (regular,small.class,regular.with.aide)
 
-sex
-   a factor with levels (boy,girl)
+   totexpk
+      years of total teaching experience
 
-freelunk
-   qualified for free lunch ?
+   sex
+      a factor with levels (boy,girl)
 
-race
-   a factor with levels (white,black,other)
+   freelunk
+      qualified for free lunch ?
 
-schidkn
-   school indicator variable
+   race
+      a factor with levels (white,black,other)
 
-Source
-~~~~~~
+   schidkn
+      school indicator variable
 
-Project STAR:
+   .. rubric:: Source
+      :name: source
 
-`Description from
-2001-06-02 <https://web.archive.org/web/20010602060225/http://www.heros-inc.org/star.htm>`__.
-`Description from
-2011-06-18 <https://web.archive.org/web/20110618025529/http://www.heros-inc.org/star.htm>`__.
+   Project STAR:
 
-References
-~~~~~~~~~~
+   `Description from
+   2001-06-02 <https://web.archive.org/web/20010602060225/http://www.heros-inc.org/star.htm>`__.
+   `Description from
+   2011-06-18 <https://web.archive.org/web/20110618025529/http://www.heros-inc.org/star.htm>`__.
 
-Stock, James H. and Mark W. Watson (2003) *Introduction to
-Econometrics*, Addison-Wesley Educational Publishers, chapter 11.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Stock, James H. and Mark W. Watson (2003) *Introduction to
+   Econometrics*, Addison-Wesley Educational Publishers, chapter 11.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

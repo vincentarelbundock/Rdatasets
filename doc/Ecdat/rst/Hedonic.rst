@@ -1,98 +1,100 @@
-======= ===============
-Hedonic R Documentation
-======= ===============
+.. container::
 
-Hedonic Prices of Census Tracts in Boston
------------------------------------------
+   ======= ===============
+   Hedonic R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Hedonic Prices of Census Tracts in Boston
+      :name: hedonic-prices-of-census-tracts-in-boston
 
-a cross-section
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 506
+   a cross-section
 
-*observation* : regional
+   *number of observations* : 506
 
-*country* : United States
+   *observation* : regional
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Hedonic)
+   ::
 
-Format
-~~~~~~
+      data(Hedonic)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-mv
-   median value of owner–occupied homes
+   A dataframe containing :
 
-crim
-   crime rate
+   mv
+      median value of owner–occupied homes
 
-zn
-   proportion of 25,000 square feet residential lots
+   crim
+      crime rate
 
-indus
-   proportion of nonretail business acres
+   zn
+      proportion of 25,000 square feet residential lots
 
-chas
-   is the tract bounds the Charles River ?
+   indus
+      proportion of nonretail business acres
 
-nox
-   annual average nitrogen oxide concentration in parts per hundred
-   million
+   chas
+      is the tract bounds the Charles River ?
 
-rm
-   average number of rooms
+   nox
+      annual average nitrogen oxide concentration in parts per hundred
+      million
 
-age
-   proportion of owner units built prior to 1940
+   rm
+      average number of rooms
 
-dis
-   weighted distances to five employment centers in the Boston area
+   age
+      proportion of owner units built prior to 1940
 
-rad
-   index of accessibility to radial highways
+   dis
+      weighted distances to five employment centers in the Boston area
 
-tax
-   full value property tax rate (\$/\$10,000)
+   rad
+      index of accessibility to radial highways
 
-ptratio
-   pupil/teacher ratio
+   tax
+      full value property tax rate (\$/\$10,000)
 
-blacks
-   proportion of blacks in the population
+   ptratio
+      pupil/teacher ratio
 
-lstat
-   proportion of population that is lower status
+   blacks
+      proportion of blacks in the population
 
-townid
-   town identifier
+   lstat
+      proportion of population that is lower status
 
-Source
-~~~~~~
+   townid
+      town identifier
 
-Harrison, D. and D.L. Rubinfeld (1978) “Hedonic housing prices and the
-demand for clean air”, *Journal of Environmental Economics Ans
-Management*, **5**, 81–102.
+   .. rubric:: Source
+      :name: source
 
-Belsley, D.A., E. Kuh and R. E. Welsch (1980) *Regression diagnostics:
-identifying influential data and sources of collinearity*, John Wiley,
-New–York.
+   Harrison, D. and D.L. Rubinfeld (1978) “Hedonic housing prices and
+   the demand for clean air”, *Journal of Environmental Economics Ans
+   Management*, **5**, 81–102.
 
-References
-~~~~~~~~~~
+   Belsley, D.A., E. Kuh and R. E. Welsch (1980) *Regression
+   diagnostics: identifying influential data and sources of
+   collinearity*, John Wiley, New–York.
 
-Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John Wiley
-and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John
+   Wiley and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

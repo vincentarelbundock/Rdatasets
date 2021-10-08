@@ -1,59 +1,62 @@
-== ===============
-VA R Documentation
-== ===============
+.. container::
 
-Veteran's Administration Lung Cancer Trial
-------------------------------------------
+   == ===============
+   VA R Documentation
+   == ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Veteran's Administration Lung Cancer Trial
+      :name: veterans-administration-lung-cancer-trial
 
-Veteran's Administration lung cancer trial from Kalbfleisch & Prentice.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Veteran's Administration lung cancer trial from Kalbfleisch &
+   Prentice.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   VA
+   ::
 
-Format
-~~~~~~
+      VA
 
-A data frame with columns:
+   .. rubric:: Format
+      :name: format
 
-``stime``
-   survival or follow-up time in days.
+   A data frame with columns:
 
-``status``
-   dead or censored.
+   ``stime``
+      survival or follow-up time in days.
 
-``treat``
-   treatment: standard or test.
+   ``status``
+      dead or censored.
 
-``age``
-   patient's age in years.
+   ``treat``
+      treatment: standard or test.
 
-``Karn``
-   Karnofsky score of patient's performance on a scale of 0 to 100.
+   ``age``
+      patient's age in years.
 
-``diag.time``
-   times since diagnosis in months at entry to trial.
+   ``Karn``
+      Karnofsky score of patient's performance on a scale of 0 to 100.
 
-``cell``
-   one of four cell types.
+   ``diag.time``
+      times since diagnosis in months at entry to trial.
 
-``prior``
-   prior therapy?
+   ``cell``
+      one of four cell types.
 
-Source
-~~~~~~
+   ``prior``
+      prior therapy?
 
-Kalbfleisch, J.D. and Prentice R.L. (1980) *The Statistical Analysis of
-Failure Time Data.* Wiley.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Kalbfleisch, J.D. and Prentice R.L. (1980) *The Statistical Analysis
+   of Failure Time Data.* Wiley.
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   .. rubric:: References
+      :name: references
+
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.

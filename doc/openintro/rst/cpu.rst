@@ -1,92 +1,94 @@
-=== ===============
-cpu R Documentation
-=== ===============
+.. container::
 
-CPU's Released between 2010 and 2020.
--------------------------------------
+   === ===============
+   cpu R Documentation
+   === ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: CPU's Released between 2010 and 2020.
+      :name: cpus-released-between-2010-and-2020.
 
-Data on computer processors released between 2010 and 2020.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data on computer processors released between 2010 and 2020.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   cpu
+   ::
 
-Format
-~~~~~~
+      cpu
 
-A data frame with 875 rows and 12 variables.
+   .. rubric:: Format
+      :name: format
 
-company
-   Manufacturer of the CPU.
+   A data frame with 875 rows and 12 variables.
 
-name
-   Model name of the processor.
+   company
+      Manufacturer of the CPU.
 
-codename
-   Name given by manufacturer to all chips with this architecture.
+   name
+      Model name of the processor.
 
-cores
-   Number of compute cores per processor.
+   codename
+      Name given by manufacturer to all chips with this architecture.
 
-threads
-   The number of *threads* represents the number of simultaneous
-   calculations that can be ongoing in the processor.
+   cores
+      Number of compute cores per processor.
 
-base_clock
-   Base speed for the CPU in GHz.
+   threads
+      The number of *threads* represents the number of simultaneous
+      calculations that can be ongoing in the processor.
 
-boost_clock
-   Single-core max speed for the CPU in GHz.
+   base_clock
+      Base speed for the CPU in GHz.
 
-socket
-   Specifies the type of connection to the motherboard.
+   boost_clock
+      Single-core max speed for the CPU in GHz.
 
-process
-   Size of the process node used in production in nm.
+   socket
+      Specifies the type of connection to the motherboard.
 
-l3_cache
-   Size of the level 3 cache on the processor in MB.
+   process
+      Size of the process node used in production in nm.
 
-tdp
-   Total draw power of the processor.
+   l3_cache
+      Size of the level 3 cache on the processor in MB.
 
-released
-   Date which the processor was released to the public.
+   tdp
+      Total draw power of the processor.
 
-Source
-~~~~~~
+   released
+      Date which the processor was released to the public.
 
-`TechPowerUp CPU
-Database <https://www.techpowerup.com/cpu-specs/?released=2019&sort=name>`__.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   `TechPowerUp CPU
+   Database <https://www.techpowerup.com/cpu-specs/?released=2019&sort=name>`__.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   # CPU base speed
-   ggplot(cpu, aes(x = company, y = base_clock)) +
-     geom_boxplot() +
-     labs(
-       x = "Company",
-       y = "Base Clock (GHz)",
-       title = "CPU base speed"
-       )
+      # CPU base speed
+      ggplot(cpu, aes(x = company, y = base_clock)) +
+        geom_boxplot() +
+        labs(
+          x = "Company",
+          y = "Base Clock (GHz)",
+          title = "CPU base speed"
+          )
 
-   # Process node size vs. boost speed
-   ggplot(cpu, aes(x = process, y = boost_clock)) +
-     geom_point() +
-     labs(
-       x = "Process node size (nm)",
-       y = "Boost Clock (GHz)",
-       title = "Process node size vs. boost speed"
-     )
+      # Process node size vs. boost speed
+      ggplot(cpu, aes(x = process, y = boost_clock)) +
+        geom_point() +
+        labs(
+          x = "Process node size (nm)",
+          y = "Boost Clock (GHz)",
+          title = "Process node size vs. boost speed"
+        )

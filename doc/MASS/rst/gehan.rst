@@ -1,68 +1,70 @@
-===== ===============
-gehan R Documentation
-===== ===============
+.. container::
 
-Remission Times of Leukaemia Patients
--------------------------------------
+   ===== ===============
+   gehan R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Remission Times of Leukaemia Patients
+      :name: remission-times-of-leukaemia-patients
 
-A data frame from a trial of 42 leukaemia patients. Some were treated
-with the drug *6-mercaptopurine* and the rest are controls. The trial
-was designed as matched pairs, both withdrawn from the trial when either
-came out of remission.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A data frame from a trial of 42 leukaemia patients. Some were treated
+   with the drug *6-mercaptopurine* and the rest are controls. The trial
+   was designed as matched pairs, both withdrawn from the trial when
+   either came out of remission.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   gehan
+   ::
 
-Format
-~~~~~~
+      gehan
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``pair``
-   label for pair.
+   This data frame contains the following columns:
 
-``time``
-   remission time in weeks.
+   ``pair``
+      label for pair.
 
-``cens``
-   censoring, 0/1.
+   ``time``
+      remission time in weeks.
 
-``treat``
-   treatment, control or 6-MP.
+   ``cens``
+      censoring, 0/1.
 
-Source
-~~~~~~
+   ``treat``
+      treatment, control or 6-MP.
 
-Cox, D. R. and Oakes, D. (1984) *Analysis of Survival Data.* Chapman &
-Hall, p. 7. Taken from
+   .. rubric:: Source
+      :name: source
 
-Gehan, E.A. (1965) A generalized Wilcoxon test for comparing arbitrarily
-single-censored samples. *Biometrika* **52**, 203–233.
+   Cox, D. R. and Oakes, D. (1984) *Analysis of Survival Data.* Chapman
+   & Hall, p. 7. Taken from
 
-References
-~~~~~~~~~~
+   Gehan, E.A. (1965) A generalized Wilcoxon test for comparing
+   arbitrarily single-censored samples. *Biometrika* **52**, 203–233.
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   library(survival)
-   gehan.surv <- survfit(Surv(time, cens) ~ treat, data = gehan,
-        conf.type = "log-log")
-   summary(gehan.surv)
-   survreg(Surv(time, cens) ~ factor(pair) + treat, gehan, dist = "exponential")
-   summary(survreg(Surv(time, cens) ~ treat, gehan, dist = "exponential"))
-   summary(survreg(Surv(time, cens) ~ treat, gehan))
-   gehan.cox <- coxph(Surv(time, cens) ~ treat, gehan)
-   summary(gehan.cox)
+   ::
+
+      library(survival)
+      gehan.surv <- survfit(Surv(time, cens) ~ treat, data = gehan,
+           conf.type = "log-log")
+      summary(gehan.surv)
+      survreg(Surv(time, cens) ~ factor(pair) + treat, gehan, dist = "exponential")
+      summary(survreg(Surv(time, cens) ~ treat, gehan, dist = "exponential"))
+      summary(survreg(Surv(time, cens) ~ treat, gehan))
+      gehan.cox <- coxph(Surv(time, cens) ~ treat, gehan)
+      summary(gehan.cox)

@@ -1,86 +1,90 @@
-===== ===============
-Klein R Documentation
-===== ===============
+.. container::
 
-Klein's Data on the U. S. Economy
----------------------------------
+   ===== ===============
+   Klein R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Klein's Data on the U. S. Economy
+      :name: kleins-data-on-the-u.-s.-economy
 
-Data for Klein's (1950) simple econometric model of the U. S. economy.
+   .. rubric:: Description
+      :name: description
 
-The ``Klein`` data frame has 22 rows and 10 columns.
+   Data for Klein's (1950) simple econometric model of the U. S.
+   economy.
 
-Usage
-~~~~~
+   The ``Klein`` data frame has 22 rows and 10 columns.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Klein
+   ::
 
-Format
-~~~~~~
+      Klein
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-Year
-   1921–1941
+   This data frame contains the following columns:
 
-C
-   consumption.
+   Year
+      1921–1941
 
-P
-   private profits.
+   C
+      consumption.
 
-Wp
-   private wages.
+   P
+      private profits.
 
-I
-   investment.
+   Wp
+      private wages.
 
-K.lag
-   capital stock, lagged one year.
+   I
+      investment.
 
-X
-   equilibrium demand.
+   K.lag
+      capital stock, lagged one year.
 
-Wg
-   government wages.
+   X
+      equilibrium demand.
 
-G
-   government non-wage spending.
+   Wg
+      government wages.
 
-T
-   indirect business taxes and net exports.
+   G
+      government non-wage spending.
 
-Source
-~~~~~~
+   T
+      indirect business taxes and net exports.
 
-Greene, W. H. (1993) *Econometric Analysis, Second Edition.* Macmillan.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Greene, W. H. (1993) *Econometric Analysis, Second Edition.*
+   Macmillan.
 
-Klein, L. (1950) *Economic Fluctuations in the United States 1921–1941.*
-Wiley.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Klein, L. (1950) *Economic Fluctuations in the United States
+   1921–1941.* Wiley.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   Klein$P.lag <- c(NA, Klein$P[-22])
-   Klein$X.lag <- c(NA, Klein$X[-22])
+   ::
 
-   summary(tsls(C ~ P + P.lag + I(Wp + Wg), 
-       instruments=~1 + G + T + Wg + I(Year - 1931) + K.lag + P.lag + X.lag,
-       data=Klein))
-       
-   summary(tsls(I ~ P + P.lag + K.lag,
-       instruments=~1 + G + T + Wg + I(Year - 1931) + K.lag + P.lag + X.lag,
-       data=Klein))
-       
-   summary(tsls(Wp ~ X + X.lag + I(Year - 1931),
-       instruments=~1 + G + T + Wg + I(Year - 1931) + K.lag + P.lag + X.lag,
-       data=Klein))
+      Klein$P.lag <- c(NA, Klein$P[-22])
+      Klein$X.lag <- c(NA, Klein$X[-22])
+
+      summary(tsls(C ~ P + P.lag + I(Wp + Wg), 
+          instruments=~1 + G + T + Wg + I(Year - 1931) + K.lag + P.lag + X.lag,
+          data=Klein))
+          
+      summary(tsls(I ~ P + P.lag + K.lag,
+          instruments=~1 + G + T + Wg + I(Year - 1931) + K.lag + P.lag + X.lag,
+          data=Klein))
+          
+      summary(tsls(Wp ~ X + X.lag + I(Year - 1931),
+          instruments=~1 + G + T + Wg + I(Year - 1931) + K.lag + P.lag + X.lag,
+          data=Klein))

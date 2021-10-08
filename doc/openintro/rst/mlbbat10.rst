@@ -1,139 +1,141 @@
-======== ===============
-mlbbat10 R Documentation
-======== ===============
+.. container::
 
-Major League Baseball Player Hitting Statistics for 2010
---------------------------------------------------------
+   ======== ===============
+   mlbbat10 R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Major League Baseball Player Hitting Statistics for 2010
+      :name: major-league-baseball-player-hitting-statistics-for-2010
 
-Major League Baseball Player Hitting Statistics for 2010.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Major League Baseball Player Hitting Statistics for 2010.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   mlbbat10
+   ::
 
-Format
-~~~~~~
+      mlbbat10
 
-A data frame with 1199 observations on the following 19 variables.
+   .. rubric:: Format
+      :name: format
 
-name
-   Player name
+   A data frame with 1199 observations on the following 19 variables.
 
-team
-   Team abbreviation
+   name
+      Player name
 
-position
-   Player position
+   team
+      Team abbreviation
 
-game
-   Number of games
+   position
+      Player position
 
-at_bat
-   Number of at bats
+   game
+      Number of games
 
-run
-   Number of runs
+   at_bat
+      Number of at bats
 
-hit
-   Number of hits
+   run
+      Number of runs
 
-double
-   Number of doubles
+   hit
+      Number of hits
 
-triple
-   Number of triples
+   double
+      Number of doubles
 
-home_run
-   Number of home runs
+   triple
+      Number of triples
 
-rbi
-   Number of runs batted in
+   home_run
+      Number of home runs
 
-total_base
-   Total bases, computed as 3\ *HR + 2*\ 3B + 1*2B + H
+   rbi
+      Number of runs batted in
 
-walk
-   Number of walks
+   total_base
+      Total bases, computed as 3\ *HR + 2*\ 3B + 1*2B + H
 
-strike_out
-   Number of strikeouts
+   walk
+      Number of walks
 
-stolen_base
-   Number of stolen bases
+   strike_out
+      Number of strikeouts
 
-caught_stealing
-   Number of times caught stealing
+   stolen_base
+      Number of stolen bases
 
-obp
-   On base percentage
+   caught_stealing
+      Number of times caught stealing
 
-slg
-   Slugging percentage (total_base / at_bat)
+   obp
+      On base percentage
 
-bat_avg
-   Batting average
+   slg
+      Slugging percentage (total_base / at_bat)
 
-Source
-~~~~~~
+   bat_avg
+      Batting average
 
-https://www.mlb.com, retrieved 2011-04-22.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   https://www.mlb.com, retrieved 2011-04-22.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
-   library(dplyr)
-   library(scales)
+      library(ggplot2)
+      library(dplyr)
+      library(scales)
 
-   mlbbat10_200 <- mlbbat10 %>%
-     filter(mlbbat10$at_bat > 200)
+      mlbbat10_200 <- mlbbat10 %>%
+        filter(mlbbat10$at_bat > 200)
 
-   # On-base percentage across positions
-   ggplot(mlbbat10_200, aes(x = position, y = obp, fill = position)) +
-     geom_boxplot(show.legend = FALSE) +
-     scale_y_continuous(labels = label_number(suffix = "%", accuracy = 0.01)) +
-     labs(
-       title = "On-base percentage across positions",
-       y = "On-base percentage across positions",
-       x = "Position"
-       )
+      # On-base percentage across positions
+      ggplot(mlbbat10_200, aes(x = position, y = obp, fill = position)) +
+        geom_boxplot(show.legend = FALSE) +
+        scale_y_continuous(labels = label_number(suffix = "%", accuracy = 0.01)) +
+        labs(
+          title = "On-base percentage across positions",
+          y = "On-base percentage across positions",
+          x = "Position"
+          )
 
-   # Batting average across positions
-   ggplot(mlbbat10_200, aes(x = bat_avg, fill = position)) +
-     geom_density(alpha = 0.5) +
-     labs(
-       title = "Batting average across positions",
-       fill = NULL,
-       y = "Batting average",
-       x = "Position"
-       )
+      # Batting average across positions
+      ggplot(mlbbat10_200, aes(x = bat_avg, fill = position)) +
+        geom_density(alpha = 0.5) +
+        labs(
+          title = "Batting average across positions",
+          fill = NULL,
+          y = "Batting average",
+          x = "Position"
+          )
 
-   # Mean number of home runs across positions
-   mlbbat10_200 %>%
-     group_by(position) %>%
-     summarise(mean_home_run = mean(home_run)) %>%
-     ggplot(aes(x = position, y = mean_home_run, fill = position)) +
-     geom_col(show.legend = FALSE) +
-     labs(
-       title = "Mean number of home runs across positions",
-       y = "Home runs",
-       x = "Position"
-       )
+      # Mean number of home runs across positions
+      mlbbat10_200 %>%
+        group_by(position) %>%
+        summarise(mean_home_run = mean(home_run)) %>%
+        ggplot(aes(x = position, y = mean_home_run, fill = position)) +
+        geom_col(show.legend = FALSE) +
+        labs(
+          title = "Mean number of home runs across positions",
+          y = "Home runs",
+          x = "Position"
+          )
 
-   # Runs batted in across positions
-   ggplot(mlbbat10_200, aes(x = run, y = obp, fill = position)) +
-     geom_boxplot(show.legend = FALSE) +
-     labs(
-       title = "Runs batted in across positions",
-       y = "Runs",
-       x = "Position"
-       )
+      # Runs batted in across positions
+      ggplot(mlbbat10_200, aes(x = run, y = obp, fill = position)) +
+        geom_boxplot(show.legend = FALSE) +
+        labs(
+          title = "Runs batted in across positions",
+          y = "Runs",
+          x = "Position"
+          )

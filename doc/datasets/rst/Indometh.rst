@@ -1,64 +1,67 @@
-======== ===============
-Indometh R Documentation
-======== ===============
+.. container::
 
-Pharmacokinetics of Indomethacin
---------------------------------
+   ======== ===============
+   Indometh R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Pharmacokinetics of Indomethacin
+      :name: pharmacokinetics-of-indomethacin
 
-The ``Indometh`` data frame has 66 rows and 3 columns of data on the
-pharmacokinetics of indometacin (or, older spelling, ‘indomethacin’).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Indometh`` data frame has 66 rows and 3 columns of data on the
+   pharmacokinetics of indometacin (or, older spelling, ‘indomethacin’).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Indometh
+   ::
 
-Format
-~~~~~~
+      Indometh
 
-An object of class
-``c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame")``
-containing the following columns:
+   .. rubric:: Format
+      :name: format
 
-Subject
-   an ordered factor with containing the subject codes. The ordering is
-   according to increasing maximum response.
+   An object of class
+   ``c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame")``
+   containing the following columns:
 
-time
-   a numeric vector of times at which blood samples were drawn (hr).
+   Subject
+      an ordered factor with containing the subject codes. The ordering
+      is according to increasing maximum response.
 
-conc
-   a numeric vector of plasma concentrations of indometacin (mcg/ml).
+   time
+      a numeric vector of times at which blood samples were drawn (hr).
 
-Details
-~~~~~~~
+   conc
+      a numeric vector of plasma concentrations of indometacin (mcg/ml).
 
-Each of the six subjects were given an intravenous injection of
-indometacin.
+   .. rubric:: Details
+      :name: details
 
-This dataset was originally part of package ``nlme``, and that has
-methods (including for ``[``, ``as.data.frame``, ``plot`` and ``print``)
-for its grouped-data classes.
+   Each of the six subjects were given an intravenous injection of
+   indometacin.
 
-Source
-~~~~~~
+   This dataset was originally part of package ``nlme``, and that has
+   methods (including for ``[``, ``as.data.frame``, ``plot`` and
+   ``print``) for its grouped-data classes.
 
-Kwan, Breault, Umbenhauer, McMahon and Duggan (1976) Kinetics of
-Indomethacin absorption, elimination, and enterohepatic circulation in
-man. *Journal of Pharmacokinetics and Biopharmaceutics* **4**, 255–280.
+   .. rubric:: Source
+      :name: source
 
-Davidian, M. and Giltinan, D. M. (1995) *Nonlinear Models for Repeated
-Measurement Data*, Chapman & Hall (section 5.2.4, p. 129)
+   Kwan, Breault, Umbenhauer, McMahon and Duggan (1976) Kinetics of
+   Indomethacin absorption, elimination, and enterohepatic circulation
+   in man. *Journal of Pharmacokinetics and Biopharmaceutics* **4**,
+   255–280.
 
-Pinheiro, J. C. and Bates, D. M. (2000) *Mixed-effects Models in S and
-S-PLUS*, Springer.
+   Davidian, M. and Giltinan, D. M. (1995) *Nonlinear Models for
+   Repeated Measurement Data*, Chapman & Hall (section 5.2.4, p. 129)
 
-See Also
-~~~~~~~~
+   Pinheiro, J. C. and Bates, D. M. (2000) *Mixed-effects Models in S
+   and S-PLUS*, Springer.
 
-``SSbiexp`` for models fitted to this dataset.
+   .. rubric:: See Also
+      :name: see-also
+
+   ``SSbiexp`` for models fitted to this dataset.

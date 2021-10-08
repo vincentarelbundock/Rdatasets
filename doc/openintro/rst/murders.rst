@@ -1,56 +1,59 @@
-======= ===============
-murders R Documentation
-======= ===============
+.. container::
 
-Data for 20 metropolitan areas
-------------------------------
+   ======= ===============
+   murders R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data for 20 metropolitan areas
+      :name: data-for-20-metropolitan-areas
 
-Population, percent in poverty, percent unemployment, and murder rate.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Population, percent in poverty, percent unemployment, and murder
+   rate.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   murders
+   ::
 
-Format
-~~~~~~
+      murders
 
-A data frame with 20 metropolitan areas on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-population
-   Population.
+   A data frame with 20 metropolitan areas on the following 4 variables.
 
-perc_pov
-   Percent in poverty.
+   population
+      Population.
 
-perc_unemp
-   Percent unemployed.
+   perc_pov
+      Percent in poverty.
 
-annual_murders_per_mil
-   Number of murders per year per million people.
+   perc_unemp
+      Percent unemployed.
 
-Source
-~~~~~~
+   annual_murders_per_mil
+      Number of murders per year per million people.
 
-We do not have provenance for these data hence recommend not using them
-for analysis.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   We do not have provenance for these data hence recommend not using
+   them for analysis.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(murders, aes(x = perc_pov, y = annual_murders_per_mil)) +
-     geom_point() +
-     labs(
-       x = "Percent in poverty",
-       y = "Number of murders per year per million people"
-       )
+      ggplot(murders, aes(x = perc_pov, y = annual_murders_per_mil)) +
+        geom_point() +
+        labs(
+          x = "Percent in poverty",
+          y = "Number of murders per year per million people"
+          )

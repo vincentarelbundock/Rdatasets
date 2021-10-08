@@ -1,30 +1,32 @@
-======== ===============
-qauselec R Documentation
-======== ===============
+.. container::
 
-Quarterly Australian Electricity production
--------------------------------------------
+   ======== ===============
+   qauselec R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Quarterly Australian Electricity production
+      :name: quarterly-australian-electricity-production
 
-Total quarterly electricity production in Australia (in billion kWh)
-from 1956:Q1 to 2010:Q2.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Total quarterly electricity production in Australia (in billion kWh)
+   from 1956:Q1 to 2010:Q2.
 
-Quarterly time series of class ``ts``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   Quarterly time series of class ``ts``.
 
-Australian Bureau of Statistics. Cat. 8301.0.55.001.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Australian Bureau of Statistics. Cat. 8301.0.55.001.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   autoplot(qauselec)
+      autoplot(qauselec)

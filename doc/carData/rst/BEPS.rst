@@ -1,69 +1,73 @@
-==== ===============
-BEPS R Documentation
-==== ===============
+.. container::
 
-British Election Panel Study
-----------------------------
+   ==== ===============
+   BEPS R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: British Election Panel Study
+      :name: british-election-panel-study
 
-These data are drawn from the 1997-2001 British Election Panel Study
-(BEPS).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These data are drawn from the 1997-2001 British Election Panel Study
+   (BEPS).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   BEPS
+   ::
 
-Format
-~~~~~~
+      BEPS
 
-A data frame with 1525 observations on the following 10 variables.
+   .. rubric:: Format
+      :name: format
 
-``vote``
-   Party choice: ``Conservative``, ``Labour``, or ``Liberal Democrat``
+   A data frame with 1525 observations on the following 10 variables.
 
-``age``
-   in years
+   ``vote``
+      Party choice: ``Conservative``, ``Labour``, or
+      ``Liberal Democrat``
 
-``economic.cond.national``
-   Assessment of current national economic conditions, 1 to 5.
+   ``age``
+      in years
 
-``economic.cond.household``
-   Assessment of current household economic conditions, 1 to 5.
+   ``economic.cond.national``
+      Assessment of current national economic conditions, 1 to 5.
 
-``Blair``
-   Assessment of the Labour leader, 1 to 5.
+   ``economic.cond.household``
+      Assessment of current household economic conditions, 1 to 5.
 
-``Hague``
-   Assessment of the Conservative leader, 1 to 5.
+   ``Blair``
+      Assessment of the Labour leader, 1 to 5.
 
-``Kennedy``
-   Assessment of the leader of the Liberal Democrats, 1 to 5.
+   ``Hague``
+      Assessment of the Conservative leader, 1 to 5.
 
-``Europe``
-   an 11-point scale that measures respondents' attitudes toward
-   European integration. High scores represent ‘Eurosceptic’ sentiment.
+   ``Kennedy``
+      Assessment of the leader of the Liberal Democrats, 1 to 5.
 
-``political.knowledge``
-   Knowledge of parties' positions on European integration, 0 to 3.
+   ``Europe``
+      an 11-point scale that measures respondents' attitudes toward
+      European integration. High scores represent ‘Eurosceptic’
+      sentiment.
 
-``gender``
-   ``female`` or ``male``.
+   ``political.knowledge``
+      Knowledge of parties' positions on European integration, 0 to 3.
 
-References
-~~~~~~~~~~
+   ``gender``
+      ``female`` or ``male``.
 
-J. Fox and R. Andersen (2006) Effect displays for multinomial and
-proportional-odds logit models. *Sociological Methodology* **36**,
-225–255.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   J. Fox and R. Andersen (2006) Effect displays for multinomial and
+   proportional-odds logit models. *Sociological Methodology* **36**,
+   225–255.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   summary(BEPS)
+   ::
+
+      summary(BEPS)

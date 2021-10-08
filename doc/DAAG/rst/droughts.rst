@@ -1,41 +1,43 @@
-======== ===============
-droughts R Documentation
-======== ===============
+.. container::
 
-Periods Between Rain Events
----------------------------
+   ======== ===============
+   droughts R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Periods Between Rain Events
+      :name: periods-between-rain-events
 
-Data collected at Winnipeg International Airport (Canada) on periods (in
-days) between rain events.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data collected at Winnipeg International Airport (Canada) on periods
+   (in days) between rain events.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   droughts
+   ::
 
-Format
-~~~~~~
+      droughts
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-length
-   the length of time from the completion of the last rain event to the
-   beginning of the next rain event.
+   This data frame contains the following columns:
 
-year
-   the calendar year.
+   length
+      the length of time from the completion of the last rain event to
+      the beginning of the next rain event.
 
-Examples
-~~~~~~~~
+   year
+      the calendar year.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-     boxplot(length ~ year, data=droughts)
-     boxplot(log(length) ~ year, data=droughts)
-     hist(droughts$length, main="Winnipeg Droughts", xlab="length (in days)")
-     hist(log(droughts$length), main="Winnipeg Droughts", xlab="length (in days, log scale)")
+   ::
+
+        boxplot(length ~ year, data=droughts)
+        boxplot(log(length) ~ year, data=droughts)
+        hist(droughts$length, main="Winnipeg Droughts", xlab="length (in days)")
+        hist(log(droughts$length), main="Winnipeg Droughts", xlab="length (in days, log scale)")

@@ -1,70 +1,72 @@
-====== ===============
-skulls R Documentation
-====== ===============
+.. container::
 
-Egyptian Skulls
----------------
+   ====== ===============
+   skulls R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Egyptian Skulls
+      :name: egyptian-skulls
 
-Measurements made on Egyptian skulls from five epochs.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Measurements made on Egyptian skulls from five epochs.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("skulls")
+   ::
 
-Format
-~~~~~~
+      data("skulls")
 
-A data frame with 150 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``epoch``
-   the epoch the skull as assigned to, a factor with levels ``c4000BC``
-   ``c3300BC``, ``c1850BC``, ``c200BC``, and ``cAD150``, where the years
-   are only given approximately, of course.
+   A data frame with 150 observations on the following 5 variables.
 
-``mb``
-   maximum breaths of the skull.
+   ``epoch``
+      the epoch the skull as assigned to, a factor with levels
+      ``c4000BC`` ``c3300BC``, ``c1850BC``, ``c200BC``, and ``cAD150``,
+      where the years are only given approximately, of course.
 
-``bh``
-   basibregmatic heights of the skull.
+   ``mb``
+      maximum breaths of the skull.
 
-``bl``
-   basialiveolar length of the skull.
+   ``bh``
+      basibregmatic heights of the skull.
 
-``nh``
-   nasal heights of the skull.
+   ``bl``
+      basialiveolar length of the skull.
 
-Details
-~~~~~~~
+   ``nh``
+      nasal heights of the skull.
 
-The question is whether the measurements change over time. Non-constant
-measurements of the skulls over time would indicate interbreeding with
-immigrant populations.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The question is whether the measurements change over time.
+   Non-constant measurements of the skulls over time would indicate
+   interbreeding with immigrant populations.
 
-D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski (1994).
-*A Handbook of Small Datasets*, Chapman and Hall/CRC, London.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
+   (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC, London.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-     data("skulls", package = "HSAUR")
-     means <- tapply(1:nrow(skulls), skulls$epoch, function(i)
-                  apply(skulls[i,colnames(skulls)[-1]], 2, mean))
-     means <- matrix(unlist(means), nrow = length(means), byrow = TRUE)
-     colnames(means) <- colnames(skulls)[-1]
-     rownames(means) <- levels(skulls$epoch)
-     pairs(means,
-         panel = function(x, y) {
-             text(x, y, levels(skulls$epoch))
-         })
+        data("skulls", package = "HSAUR")
+        means <- tapply(1:nrow(skulls), skulls$epoch, function(i)
+                     apply(skulls[i,colnames(skulls)[-1]], 2, mean))
+        means <- matrix(unlist(means), nrow = length(means), byrow = TRUE)
+        colnames(means) <- colnames(skulls)[-1]
+        rownames(means) <- levels(skulls$epoch)
+        pairs(means,
+            panel = function(x, y) {
+                text(x, y, levels(skulls$epoch))
+            })

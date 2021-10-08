@@ -1,47 +1,50 @@
-========== ===============
-greek_data R Documentation
-========== ===============
+.. container::
 
-Data from a fictional randomized heart transplant study
--------------------------------------------------------
+   ========== ===============
+   greek_data R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from a fictional randomized heart transplant study
+      :name: data-from-a-fictional-randomized-heart-transplant-study
 
-``greek_data`` is a fictional data set from Table 2.2 in Chapter 2 of
-Causal Inference. From the book: "Table 2.2 shows the data from our
-heart transplant randomized study. Besides data on treatment A (1 if the
-individual received a transplant, 0 otherwise) and outcome Y (1 if the
-individual died, 0 otherwise), Table 2.2 also contains data on the
-prognostic factor L (1 if the individual was in critical condition, 0
-otherwise), which we measured before treatment was assigned."
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   ``greek_data`` is a fictional data set from Table 2.2 in Chapter 2 of
+   Causal Inference. From the book: "Table 2.2 shows the data from our
+   heart transplant randomized study. Besides data on treatment A (1 if
+   the individual received a transplant, 0 otherwise) and outcome Y (1
+   if the individual died, 0 otherwise), Table 2.2 also contains data on
+   the prognostic factor L (1 if the individual was in critical
+   condition, 0 otherwise), which we measured before treatment was
+   assigned."
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   greek_data
+   ::
 
-Format
-~~~~~~
+      greek_data
 
-A data frame with 20 rows and 4 variables:
+   .. rubric:: Format
+      :name: format
 
-name
-   The name of a Greek god
+   A data frame with 20 rows and 4 variables:
 
-l
-   A prognostic factor
+   name
+      The name of a Greek god
 
-a
-   The treatment, a heart transplant
+   l
+      A prognostic factor
 
-y
-   The outcome, death
+   a
+      The treatment, a heart transplant
 
-Source
-~~~~~~
+   y
+      The outcome, death
 
-Hernán and Robins. Causal Inference.
-https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
+   .. rubric:: Source
+      :name: source
+
+   Hernán and Robins. Causal Inference.
+   https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/

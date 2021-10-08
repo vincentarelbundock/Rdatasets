@@ -1,52 +1,55 @@
-========== ===============
-pwt_sample R Documentation
-========== ===============
+.. container::
 
-Penn World Table (9.1) Macroeconomic Data for Select Countries, 1950-2017
--------------------------------------------------------------------------
+   ========== ===============
+   pwt_sample R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Penn World Table (9.1) Macroeconomic Data for Select
+      Countries, 1950-2017
+      :name: penn-world-table-9.1-macroeconomic-data-for-select-countries-1950-2017
 
-These are some macroeconomic data for 21 select (rich) countries. I've
-used these data before to discuss issues of grouping and skew in
-cross-sectional data.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These are some macroeconomic data for 21 select (rich) countries.
+   I've used these data before to discuss issues of grouping and skew in
+   cross-sectional data.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   pwt_sample
+   ::
 
-Format
-~~~~~~
+      pwt_sample
 
-A data frame with 1428 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-``country``
-   the country name
+   A data frame with 1428 observations on the following 7 variables.
 
-``isocode``
-   The country's ISO code
+   ``country``
+      the country name
 
-``year``
-   a numeric vector for the year
+   ``isocode``
+      The country's ISO code
 
-``pop``
-   Population in millions
+   ``year``
+      a numeric vector for the year
 
-``hc``
-   Index of human capital per person, based on years of schooling and
-   returns to education
+   ``pop``
+      Population in millions
 
-``rgdpna``
-   Real GDP at constant 2011 national prices (in million 2011 USD)
+   ``hc``
+      Index of human capital per person, based on years of schooling and
+      returns to education
 
-``labsh``
-   Share of labor compensation in GDP at current national prices
+   ``rgdpna``
+      Real GDP at constant 2011 national prices (in million 2011 USD)
 
-Source
-~~~~~~
+   ``labsh``
+      Share of labor compensation in GDP at current national prices
 
-Taken from the ``pwt9`` package. See: http://www.ggdc.net/pwt/
+   .. rubric:: Source
+      :name: source
+
+   Taken from the ``pwt9`` package. See: http://www.ggdc.net/pwt/

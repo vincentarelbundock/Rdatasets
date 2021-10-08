@@ -1,70 +1,72 @@
-========== ===============
-HorseKicks R Documentation
-========== ===============
+.. container::
 
-Death by Horse Kicks
---------------------
+   ========== ===============
+   HorseKicks R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Death by Horse Kicks
+      :name: death-by-horse-kicks
 
-Data from von Bortkiewicz (1898), given by Andrews \\& Herzberg (1985),
-on number of deaths by horse or mule kicks in 10 (of 14 reported) corps
-of the Prussian army. 4 corps were not considered by Fisher (1925) as
-they had a different organization. This data set is a popular subset of
-the ``VonBort`` data.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from von Bortkiewicz (1898), given by Andrews \\& Herzberg
+   (1985), on number of deaths by horse or mule kicks in 10 (of 14
+   reported) corps of the Prussian army. 4 corps were not considered by
+   Fisher (1925) as they had a different organization. This data set is
+   a popular subset of the ``VonBort`` data.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("HorseKicks")
+   ::
 
-Format
-~~~~~~
+      data("HorseKicks")
 
-A 1-way table giving the number of deaths in 200 corps-years. The
-variable and its levels are
+   .. rubric:: Format
+      :name: format
 
-== ======= ============
-No Name    Levels
-1  nDeaths 0, 1, ..., 4
-\          
-== ======= ============
+   A 1-way table giving the number of deaths in 200 corps-years. The
+   variable and its levels are
 
-Source
-~~~~~~
+   == ======= ============
+   No Name    Levels
+   1  nDeaths 0, 1, ..., 4
+   \          
+   == ======= ============
 
-Michael Friendly (2000), Visualizing Categorical Data, page 18.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Michael Friendly (2000), Visualizing Categorical Data, page 18.
 
-D. F. Andrews & A. M. Herzberg (1985), *Data: A Collection of Problems
-from Many Fields for the Student and Research Worker*. Springer-Verlag,
-New York, NY.
+   .. rubric:: References
+      :name: references
 
-R. A. Fisher (1925), *Statistical Methods for Research Workers*. Oliver
-\\& Boyd, London.
+   D. F. Andrews & A. M. Herzberg (1985), *Data: A Collection of
+   Problems from Many Fields for the Student and Research Worker*.
+   Springer-Verlag, New York, NY.
 
-L. von Bortkiewicz (1898), *Das Gesetz der kleinen Zahlen*. Teubner,
-Leipzig.
+   R. A. Fisher (1925), *Statistical Methods for Research Workers*.
+   Oliver \\& Boyd, London.
 
-M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute, Cary,
-NC.
+   L. von Bortkiewicz (1898), *Das Gesetz der kleinen Zahlen*. Teubner,
+   Leipzig.
 
-See Also
-~~~~~~~~
+   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+   Cary, NC.
 
-``VonBort``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``VonBort``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("HorseKicks")
-   gf <- goodfit(HorseKicks)
-   summary(gf)
-   plot(gf)
+   ::
+
+      data("HorseKicks")
+      gf <- goodfit(HorseKicks)
+      summary(gf)
+      plot(gf)

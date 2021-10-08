@@ -1,40 +1,42 @@
-============== ===============
-us_rent_income R Documentation
-============== ===============
+.. container::
 
-US rent and income data
------------------------
+   ============== ===============
+   us_rent_income R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: US rent and income data
+      :name: us-rent-and-income-data
 
-Captured from the 2017 American Community Survey using the tidycensus
-package.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Captured from the 2017 American Community Survey using the tidycensus
+   package.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   us_rent_income
+   ::
 
-Format
-~~~~~~
+      us_rent_income
 
-A dataset with variables:
+   .. rubric:: Format
+      :name: format
 
-GEOID
-   FIP state identifier
+   A dataset with variables:
 
-NAME
-   Name of state
+   GEOID
+      FIP state identifier
 
-variable
-   Variable name: income = median yearly income, rent = median monthly
-   rent
+   NAME
+      Name of state
 
-estimate
-   Estimated value
+   variable
+      Variable name: income = median yearly income, rent = median
+      monthly rent
 
-moe
-   90% margin of error
+   estimate
+      Estimated value
+
+   moe
+      90% margin of error

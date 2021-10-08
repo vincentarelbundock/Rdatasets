@@ -1,59 +1,61 @@
-======== ===============
-elastic1 R Documentation
-======== ===============
+.. container::
 
-Elastic Band Data Replicated
-----------------------------
+   ======== ===============
+   elastic1 R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Elastic Band Data Replicated
+      :name: elastic-band-data-replicated
 
-The ``elastic1`` data frame has 7 rows and 2 columns giving, for each
-amount by which an elastic band is stretched over the end of a ruler,
-the distance that the band traveled when released.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``elastic1`` data frame has 7 rows and 2 columns giving, for each
+   amount by which an elastic band is stretched over the end of a ruler,
+   the distance that the band traveled when released.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   elastic1
+   ::
 
-Format
-~~~~~~
+      elastic1
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-stretch
-   the amount by which the elastic band was stretched
+   This data frame contains the following columns:
 
-distance
-   the distance traveled
+   stretch
+      the amount by which the elastic band was stretched
 
-Source
-~~~~~~
+   distance
+      the distance traveled
 
-J. H. Maindonald
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   J. H. Maindonald
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## Not run: 
-   plot(elastic1)
+   ::
 
-   print("Inline Functions - Example 12.2.2")
-   sapply(elastic1, mean)
-   pause()
+      ## Not run: 
+      plot(elastic1)
 
-   sapply(elastic1, function(x)mean(x))
-   pause()
+      print("Inline Functions - Example 12.2.2")
+      sapply(elastic1, mean)
+      pause()
 
-   sapply(elastic1, function(x)sum(log(x)))
-   pause()
+      sapply(elastic1, function(x)mean(x))
+      pause()
 
-   print("Data Output - Example 12.3.2")
-   write.table(elastic1, file="bandsframe.txt")
+      sapply(elastic1, function(x)sum(log(x)))
+      pause()
 
-   ## End(Not run)
+      print("Data Output - Example 12.3.2")
+      write.table(elastic1, file="bandsframe.txt")
+
+      ## End(Not run)

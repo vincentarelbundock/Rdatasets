@@ -1,91 +1,93 @@
-============== ===============
-london_murders R Documentation
-============== ===============
+.. container::
 
-London Murders, 2006-2011
--------------------------
+   ============== ===============
+   london_murders R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: London Murders, 2006-2011
+      :name: london-murders-2006-2011
 
-This dataset contains the victim name, age, and location of every murder
-recorded in the Greater London area by the Metropolitan Police from
-January 1, 2006 to September 7, 2011.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This dataset contains the victim name, age, and location of every
+   murder recorded in the Greater London area by the Metropolitan Police
+   from January 1, 2006 to September 7, 2011.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   london_murders
+   ::
 
-Format
-~~~~~~
+      london_murders
 
-A data frame with 838 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-forename
-   First name(s) of the victim.
+   A data frame with 838 observations on the following 5 variables.
 
-age
-   Age of the victim.
+   forename
+      First name(s) of the victim.
 
-date
-   Date of the murder (YYYY-MM-DD).
+   age
+      Age of the victim.
 
-year
-   Year of the murder.
+   date
+      Date of the murder (YYYY-MM-DD).
 
-borough
-   The London borough in which the murder took place. See the Details
-   section for a list of all the boroughs.
+   year
+      Year of the murder.
 
-Details
-~~~~~~~
+   borough
+      The London borough in which the murder took place. See the Details
+      section for a list of all the boroughs.
 
-To visualize this data set using a map, see the ``london_boroughs``
-dataset, which contains the latitude and longitude of polygons that
-define the boundaries of the 32 boroughs of Greater London.
+   .. rubric:: Details
+      :name: details
 
-The ``borough`` variable covers all 32 boroughs in Greater London:
-``Barking & Dagenham``, ``Barnet``, ``Bexley``, ``Brent``, ``Bromley``,
-``Camden``, ``Croydon``, ``Ealing``, ``Enfield``, ``Greenwich``,
-``Hackney``, ``Hammersmith & Fulham``, ``Haringey``, ``Harrow``,
-``Havering``, ``Hillingdon``, ``Hounslow``, ``Islington``,
-``Kensington & Chelsea``, ``Kingston``, ``Lambeth``, ``Lewisham``,
-``Merton``, ``Newham``, ``Redbridge``, ``Richmond``, ``Southwark``,
-``Sutton``, ``Tower Hamlets``, ``Waltham Forest``, ``Wandsworth``,
-``Westminster``
+   To visualize this data set using a map, see the ``london_boroughs``
+   dataset, which contains the latitude and longitude of polygons that
+   define the boundaries of the 32 boroughs of Greater London.
 
-Source
-~~~~~~
+   The ``borough`` variable covers all 32 boroughs in Greater London:
+   ``Barking & Dagenham``, ``Barnet``, ``Bexley``, ``Brent``,
+   ``Bromley``, ``Camden``, ``Croydon``, ``Ealing``, ``Enfield``,
+   ``Greenwich``, ``Hackney``, ``Hammersmith & Fulham``, ``Haringey``,
+   ``Harrow``, ``Havering``, ``Hillingdon``, ``Hounslow``,
+   ``Islington``, ``Kensington & Chelsea``, ``Kingston``, ``Lambeth``,
+   ``Lewisham``, ``Merton``, ``Newham``, ``Redbridge``, ``Richmond``,
+   ``Southwark``, ``Sutton``, ``Tower Hamlets``, ``Waltham Forest``,
+   ``Wandsworth``, ``Westminster``
 
-https://www.theguardian.com/news/datablog/2011/oct/05/murder-london-list#data
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   https://www.theguardian.com/news/datablog/2011/oct/05/murder-london-list#data
 
-Inspired by `The Guardian
-Datablog <https://www.theguardian.com/news/datablog/interactive/2011/oct/05/murder-london-map>`__.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Inspired by `The Guardian
+   Datablog <https://www.theguardian.com/news/datablog/interactive/2011/oct/05/murder-london-map>`__.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(dplyr)
-   library(ggplot2)
-   library(lubridate)
+      library(dplyr)
+      library(ggplot2)
+      library(lubridate)
 
-   london_murders %>%
-     mutate(
-       day_count = as.numeric(date - ymd("2006-01-01")),
-       date_cut = cut(day_count, seq(0, 2160, 90))
-       ) %>%
-     group_by(date_cut) %>%
-     add_tally() %>%
-     ggplot(aes(x = date_cut, y = n)) +
-       geom_col() +
-       theme(axis.text.x = element_blank(), axis.ticks.x = element_blank()) +
-       labs(x = "Date from 01/2006 - 09/2011", y = "Number of deaths per 90 days")
+      london_murders %>%
+        mutate(
+          day_count = as.numeric(date - ymd("2006-01-01")),
+          date_cut = cut(day_count, seq(0, 2160, 90))
+          ) %>%
+        group_by(date_cut) %>%
+        add_tally() %>%
+        ggplot(aes(x = date_cut, y = n)) +
+          geom_col() +
+          theme(axis.text.x = element_blank(), axis.ticks.x = element_blank()) +
+          labs(x = "Date from 01/2006 - 09/2011", y = "Number of deaths per 90 days")

@@ -1,67 +1,70 @@
-========== ===============
-toothpaste R Documentation
-========== ===============
+.. container::
 
-Toothpaste Data
----------------
+   ========== ===============
+   toothpaste R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Toothpaste Data
+      :name: toothpaste-data
 
-Meta-analysis of studies comparing two different toothpastes.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Meta-analysis of studies comparing two different toothpastes.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("toothpaste")
+   ::
 
-Format
-~~~~~~
+      data("toothpaste")
 
-A data frame with 9 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-``Study``
-   the identifier of the study.
+   A data frame with 9 observations on the following 7 variables.
 
-``nA``
-   number of subjects using toothpaste A.
+   ``Study``
+      the identifier of the study.
 
-``meanA``
-   mean DMFS index of subjects using toothpaste A.
+   ``nA``
+      number of subjects using toothpaste A.
 
-``sdA``
-   standard deviation of DMFS index of subjects using toothpaste A.
+   ``meanA``
+      mean DMFS index of subjects using toothpaste A.
 
-``nB``
-   number of subjects using toothpaste B.
+   ``sdA``
+      standard deviation of DMFS index of subjects using toothpaste A.
 
-``meanB``
-   mean DMFS index of subjects using toothpaste B.
+   ``nB``
+      number of subjects using toothpaste B.
 
-``sdB``
-   standard deviation of DMFS index of subjects using toothpaste B.
+   ``meanB``
+      mean DMFS index of subjects using toothpaste B.
 
-Details
-~~~~~~~
+   ``sdB``
+      standard deviation of DMFS index of subjects using toothpaste B.
 
-The data are the results of nine randomised trials comparing two
-different toothpastes for the prevention of caries development. The
-outcomes in each trial was the change, from baseline, in the decayed,
-missing (due to caries) and filled surface dental index (DMFS).
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data are the results of nine randomised trials comparing two
+   different toothpastes for the prevention of caries development. The
+   outcomes in each trial was the change, from baseline, in the decayed,
+   missing (due to caries) and filled surface dental index (DMFS).
 
-B. S. Everitt and A. Pickles (2000), *Statistical Aspects of the Design
-and Analysis of Clinical Trials*, Imperial College Press, London.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   B. S. Everitt and A. Pickles (2000), *Statistical Aspects of the
+   Design and Analysis of Clinical Trials*, Imperial College Press,
+   London.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-     data("toothpaste", package = "HSAUR")
-     toothpaste
+        data("toothpaste", package = "HSAUR")
+        toothpaste

@@ -1,59 +1,61 @@
-============== ===============
-midterms_house R Documentation
-============== ===============
+.. container::
 
-President's party performance and unemployment rate
----------------------------------------------------
+   ============== ===============
+   midterms_house R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: President's party performance and unemployment rate
+      :name: presidents-party-performance-and-unemployment-rate
 
-Covers midterm elections.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Covers midterm elections.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   midterms_house
+   ::
 
-Format
-~~~~~~
+      midterms_house
 
-A data frame with 29 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-year
-   Year.
+   A data frame with 29 observations on the following 5 variables.
 
-potus
-   The president in office.
+   year
+      Year.
 
-party
-   President's party: Democrat or Republican.
+   potus
+      The president in office.
 
-unemp
-   Unemployment rate.
+   party
+      President's party: Democrat or Republican.
 
-house_change
-   Change in House seats for the President's party.
+   unemp
+      Unemployment rate.
 
-Details
-~~~~~~~
+   house_change
+      Change in House seats for the President's party.
 
-An older version of this data is at ``unemploy_pres``.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   An older version of this data is at ``unemploy_pres``.
 
-Wikipedia.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Wikipedia.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(midterms_house, aes(x = unemp, y = house_change)) +
-     geom_point()
+      ggplot(midterms_house, aes(x = unemp, y = house_change)) +
+        geom_point()

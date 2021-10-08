@@ -1,63 +1,65 @@
-============ ===============
-VisualAcuity R Documentation
-============ ===============
+.. container::
 
-Visual Acuity in Left and Right Eyes
-------------------------------------
+   ============ ===============
+   VisualAcuity R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Visual Acuity in Left and Right Eyes
+      :name: visual-acuity-in-left-and-right-eyes
 
-Data from Kendall & Stuart (1961) on unaided vision among 3,242 men and
-7,477 women, all aged 30-39 and employed in the U.K. Royal Ordnance
-factories 1943-1946.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from Kendall & Stuart (1961) on unaided vision among 3,242 men
+   and 7,477 women, all aged 30-39 and employed in the U.K. Royal
+   Ordnance factories 1943-1946.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("VisualAcuity")
+   ::
 
-Format
-~~~~~~
+      data("VisualAcuity")
 
-A data frame with 32 observations and 4 variables.
+   .. rubric:: Format
+      :name: format
 
-Freq
-   frequency of visual acuity measurements.
+   A data frame with 32 observations and 4 variables.
 
-right
-   visual acuity on right eye.
+   Freq
+      frequency of visual acuity measurements.
 
-left
-   visual acuity on left eye.
+   right
+      visual acuity on right eye.
 
-gender
-   factor indicating gender of patient.
+   left
+      visual acuity on left eye.
 
-Source
-~~~~~~
+   gender
+      factor indicating gender of patient.
 
-M. Friendly (2000), Visualizing Categorical Data:
-http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/vision.sas
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   M. Friendly (2000), Visualizing Categorical Data:
+   http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/vision.sas
 
-M. G. Kendall & A. Stuart (1961), *The Advanced Theory of Statistics*,
-Vol. 2. Griffin, London.
+   .. rubric:: References
+      :name: references
 
-M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute, Cary,
-NC.
+   M. G. Kendall & A. Stuart (1961), *The Advanced Theory of
+   Statistics*, Vol. 2. Griffin, London.
 
-Examples
-~~~~~~~~
+   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+   Cary, NC.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("VisualAcuity")
-   structable(~ gender + left + right, data = VisualAcuity)
-   sieve(Freq ~ left + right | gender, data = VisualAcuity, shade = TRUE)
-   cotabplot(Freq ~ left + right | gender, data = VisualAcuity,
-             panel = cotab_agreementplot)
+   ::
+
+      data("VisualAcuity")
+      structable(~ gender + left + right, data = VisualAcuity)
+      sieve(Freq ~ left + right | gender, data = VisualAcuity, shade = TRUE)
+      cotabplot(Freq ~ left + right | gender, data = VisualAcuity,
+                panel = cotab_agreementplot)

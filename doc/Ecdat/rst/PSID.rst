@@ -1,71 +1,73 @@
-==== ===============
-PSID R Documentation
-==== ===============
+.. container::
 
-Panel Survey of Income Dynamics
--------------------------------
+   ==== ===============
+   PSID R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Panel Survey of Income Dynamics
+      :name: panel-survey-of-income-dynamics
 
-a cross-section from 1993
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 4856
+   a cross-section from 1993
 
-*observation* : individuals
+   *number of observations* : 4856
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(PSID)
+   ::
 
-Format
-~~~~~~
+      data(PSID)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-intnum
-   1968 interview number
+   A dataframe containing :
 
-persnum
-   person number
+   intnum
+      1968 interview number
 
-age
-   age of individual
+   persnum
+      person number
 
-educatn
-   highest grade completed
+   age
+      age of individual
 
-earnings
-   total labor income
+   educatn
+      highest grade completed
 
-hours
-   annual work hours
+   earnings
+      total labor income
 
-kids
-   live births to this individual
+   hours
+      annual work hours
 
-married
-   last known marital status (married, never married, windowed,
-   divorced, separated, ``NA/DF``, no histories)
+   kids
+      live births to this individual
 
-Source
-~~~~~~
+   married
+      last known marital status (married, never married, windowed,
+      divorced, separated, ``NA/DF``, no histories)
 
-Panel Survey of Income Dynamics.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Panel Survey of Income Dynamics.
 
-Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods and
-applications*, Cambridge, pp. 295–300.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
+   and applications*, Cambridge, pp. 295–300.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

@@ -1,105 +1,108 @@
-========= ===============
-Gestation R Documentation
-========= ===============
+.. container::
 
-Data from the Child Health and Development Studies
---------------------------------------------------
+   ========= ===============
+   Gestation R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from the Child Health and Development Studies
+      :name: data-from-the-child-health-and-development-studies
 
-Birth weight, date, and gestational period collected as part of the
-Child Health and Development Studies in 1961 and 1962. Information about
-the baby's parents — age, education, height, weight, and whether the
-mother smoked is also recorded.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Birth weight, date, and gestational period collected as part of the
+   Child Health and Development Studies in 1961 and 1962. Information
+   about the baby's parents — age, education, height, weight, and
+   whether the mother smoked is also recorded.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Gestation)
+   ::
 
-Format
-~~~~~~
+      data(Gestation)
 
-A data frame with 1236 observations on the following variables.
+   .. rubric:: Format
+      :name: format
 
--  ``id`` identification number
+   A data frame with 1236 observations on the following variables.
 
--  ``plurality`` all "single fetus" in this data set
+   -  ``id`` identification number
 
--  ``outcome`` all "live birth" (survived at least 28 days) in this data
-   set
+   -  ``plurality`` all "single fetus" in this data set
 
--  ``date`` birth date where 1096=January 1, 1961
+   -  ``outcome`` all "live birth" (survived at least 28 days) in this
+      data set
 
--  ``gestation`` length of gestation (in days)
+   -  ``date`` birth date where 1096=January 1, 1961
 
--  ``wt`` birth weight (in ounces)
+   -  ``gestation`` length of gestation (in days)
 
--  ``parity`` total number of previous pregnancies (including fetal
-   deaths and still births)
+   -  ``wt`` birth weight (in ounces)
 
--  ``race`` mother's race: "asian", "black", "mex", "mixed", or "white"
+   -  ``parity`` total number of previous pregnancies (including fetal
+      deaths and still births)
 
--  ``age`` mother's age in years at termination of pregnancy
+   -  ``race`` mother's race: "asian", "black", "mex", "mixed", or
+      "white"
 
--  ``ed`` mother's education
+   -  ``age`` mother's age in years at termination of pregnancy
 
--  ``ht`` mother's height in inches to the last completed inch
+   -  ``ed`` mother's education
 
--  ``wt.1`` mother's prepregnancy weight (in pounds)
+   -  ``ht`` mother's height in inches to the last completed inch
 
--  ``drace`` father's race
+   -  ``wt.1`` mother's prepregnancy weight (in pounds)
 
--  ``dage`` father's age (in years)
+   -  ``drace`` father's race
 
--  ``ded`` father's education
+   -  ``dage`` father's age (in years)
 
--  ``dht`` father's height in inches to the last completed inch
+   -  ``ded`` father's education
 
--  ``dwt`` father's weight (in pounds)
+   -  ``dht`` father's height in inches to the last completed inch
 
--  ``marital`` marital status,
+   -  ``dwt`` father's weight (in pounds)
 
--  ``inc`` family yearly income in $2500 increments
+   -  ``marital`` marital status,
 
--  ``smoke`` does mother smoke? (never, smokes now, until current
-   pregnancy, once did, not now)
+   -  ``inc`` family yearly income in $2500 increments
 
--  ``time`` time since quitting smoking (never smoked, still smokes,
-   during current preg, within 1 year, 1 to 2 years ago, 2 to 3 years
-   ago, 3 to 4 years ago, 5 to 9 years ago, 10+ years ago, quit and
-   don't know
+   -  ``smoke`` does mother smoke? (never, smokes now, until current
+      pregnancy, once did, not now)
 
--  ``number`` number of cigarettes smoked per day for past and current
-   smokers (never, 1-4, 5-9, 10-14, 15-19, 20-29, 30-39, 40-60, 60+,
-   smoke but don't know)
+   -  ``time`` time since quitting smoking (never smoked, still smokes,
+      during current preg, within 1 year, 1 to 2 years ago, 2 to 3 years
+      ago, 3 to 4 years ago, 5 to 9 years ago, 10+ years ago, quit and
+      don't know
 
-Details
-~~~~~~~
+   -  ``number`` number of cigarettes smoked per day for past and
+      current smokers (never, 1-4, 5-9, 10-14, 15-19, 20-29, 30-39,
+      40-60, 60+, smoke but don't know)
 
-The data were presented by Nolan and Speed to address the question of
-whether there is a link between maternal smoking and the baby's health
-for male births.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data were presented by Nolan and Speed to address the question of
+   whether there is a link between maternal smoking and the baby's
+   health for male births.
 
-The book by Nolan and Speed describes the data in more detail and
-provides an Internet site for accessing them:
-https://www.stat.berkeley.edu/users/statlabs/
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The book by Nolan and Speed describes the data in more detail and
+   provides an Internet site for accessing them:
+   https://www.stat.berkeley.edu/users/statlabs/
 
-D Nolan and T Speed. *Stat Labs: Mathematical Statistics Through
-Applications* (2000), Springer-Verlag.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   D Nolan and T Speed. *Stat Labs: Mathematical Statistics Through
+   Applications* (2000), Springer-Verlag.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(Gestation)
+   ::
+
+      data(Gestation)

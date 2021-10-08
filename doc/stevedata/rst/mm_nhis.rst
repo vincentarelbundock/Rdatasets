@@ -1,69 +1,72 @@
-======= ===============
-mm_nhis R Documentation
-======= ===============
+.. container::
 
-Data from the 2009 National Health Interview Survey (NHIS)
-----------------------------------------------------------
+   ======= ===============
+   mm_nhis R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from the 2009 National Health Interview Survey
+      (NHIS)
+      :name: data-from-the-2009-national-health-interview-survey-nhis
 
-These are data from the 2009 NHIS survey. People who have read
-*Mastering 'Metrics* should recognize these data. They're featured
-prominently in that book and the authors' discussion of random
-assignment and experiments.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These are data from the 2009 NHIS survey. People who have read
+   *Mastering 'Metrics* should recognize these data. They're featured
+   prominently in that book and the authors' discussion of random
+   assignment and experiments.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   mm_nhis
+   ::
 
-Format
-~~~~~~
+      mm_nhis
 
-A data frame with 18790 observations on the following 10 variables.
+   .. rubric:: Format
+      :name: format
 
-``fml``
-   is the respondent a woman?
+   A data frame with 18790 observations on the following 10 variables.
 
-``hi``
-   a numeric vector for whether respondent has at least some health
-   insurance
+   ``fml``
+      is the respondent a woman?
 
-``hlth``
-   a numeric vector for a health index, broadly understood
+   ``hi``
+      a numeric vector for whether respondent has at least some health
+      insurance
 
-``nwhite``
-   is the respondent not white?
+   ``hlth``
+      a numeric vector for a health index, broadly understood
 
-``age``
-   the respondent's age in years
+   ``nwhite``
+      is the respondent not white?
 
-``yedu``
-   the respondent's total years of education
+   ``age``
+      the respondent's age in years
 
-``famsize``
-   the size of the respondent's family
+   ``yedu``
+      the respondent's total years of education
 
-``empl``
-   is the respondent employed
+   ``famsize``
+      the size of the respondent's family
 
-``inc``
-   the respondent's household/family income
+   ``empl``
+      is the respondent employed
 
-``perweight``
-   a numeric vector for weight
+   ``inc``
+      the respondent's household/family income
 
-Details
-~~~~~~~
+   ``perweight``
+      a numeric vector for weight
 
-Data are already cleaned in a way that facilitates an easy replication
-of Table 1.1 in *Mastering 'Metrics*. Check
-http://www.masteringmetrics.com for more information.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Data are already cleaned in a way that facilitates an easy
+   replication of Table 1.1 in *Mastering 'Metrics*. Check
+   http://www.masteringmetrics.com for more information.
 
-National Health Interview Survey (2009).
+   .. rubric:: Source
+      :name: source
+
+   National Health Interview Survey (2009).

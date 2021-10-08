@@ -1,39 +1,42 @@
-====== ===============
-Putts2 R Documentation
-====== ===============
+.. container::
 
-Putting Success by Length (Short Form)
---------------------------------------
+   ====== ===============
+   Putts2 R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Putting Success by Length (Short Form)
+      :name: putting-success-by-length-short-form
 
-Putting results for a golfing statistician (by length of the putts)
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Putting results for a golfing statistician (by length of the putts)
 
-A dataset with 5 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-========== ==============================================
-``Length`` Length of the attempted putt (in feet)
-``Made``   Number of putts made at this length
-``Missed`` Number of putts missed at this length
-``Trials`` Total number of putts attempted at this length
-\          
-========== ==============================================
+   A dataset with 5 observations on the following 4 variables.
 
-Details
-~~~~~~~
+   ========== ==============================================
+   ``Length`` Length of the attempted putt (in feet)
+   ``Made``   Number of putts made at this length
+   ``Missed`` Number of putts missed at this length
+   ``Trials`` Total number of putts attempted at this length
+   \          
+   ========== ==============================================
 
-A statistician golfer kept careful records of every putt he attempted
-when playing golf, recording the length of the putt and whether or not
-he was successful in making the putt. For each different length, this
-dataset records the number of putts made, missed, and the total number
-of attempts from that length. A similar dataset, Putts1, has one case
-for each of the 587 attempted putts, showing the length and outcome.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   A statistician golfer kept careful records of every putt he attempted
+   when playing golf, recording the length of the putt and whether or
+   not he was successful in making the putt. For each different length,
+   this dataset records the number of putts made, missed, and the total
+   number of attempts from that length. A similar dataset, Putts1, has
+   one case for each of the 587 attempted putts, showing the length and
+   outcome.
 
-Personal observations by one of the Stat2 authors
+   .. rubric:: Source
+      :name: source
+
+   Personal observations by one of the Stat2 authors

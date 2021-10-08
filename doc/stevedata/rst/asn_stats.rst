@@ -1,63 +1,67 @@
-========= ===============
-asn_stats R Documentation
-========= ===============
+.. container::
 
-Aviation Safety Network Statistics, 1942-2019
----------------------------------------------
+   ========= ===============
+   asn_stats R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Aviation Safety Network Statistics, 1942-2019
+      :name: aviation-safety-network-statistics-1942-2019
 
-These are yearly counts on air accidents and fatalities, including
-measures for corporate jet accidents and hijackings. The hijackings are
-of particular interest to me, at least from a historical terrorism
-perspective.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These are yearly counts on air accidents and fatalities, including
+   measures for corporate jet accidents and hijackings. The hijackings
+   are of particular interest to me, at least from a historical
+   terrorism perspective.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   asn_stats
+   ::
 
-Format
-~~~~~~
+      asn_stats
 
-A data frame with 78 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-``year``
-   numeric vector for the year
+   A data frame with 78 observations on the following 7 variables.
 
-``airacc``
-   a numeric vector for the number of airliner accidents
+   ``year``
+      numeric vector for the year
 
-``airfatal``
-   a numeric vector for the number of fatalities from airliner accidents
+   ``airacc``
+      a numeric vector for the number of airliner accidents
 
-``corpjetacc``
-   a numeric vector for the number of corporate jet accidents
+   ``airfatal``
+      a numeric vector for the number of fatalities from airliner
+      accidents
 
-``corpjetfatal``
-   a numeric vector for the number of fatalities from corporate jet
-   accidents
+   ``corpjetacc``
+      a numeric vector for the number of corporate jet accidents
 
-``hijack``
-   a numeric vector for the number of hijackings/skyjackings
+   ``corpjetfatal``
+      a numeric vector for the number of fatalities from corporate jet
+      accidents
 
-``hijackfatal``
-   a numeric vector for the number of fatalities from
-   hijackings/skyjackings
+   ``hijack``
+      a numeric vector for the number of hijackings/skyjackings
 
-Details
-~~~~~~~
+   ``hijackfatal``
+      a numeric vector for the number of fatalities from
+      hijackings/skyjackings
 
-All fatality estimates exclude ground fatalities. All accidents are
-hull-loss accidents. The airliner figures are for those flights with at
-least 14 passengers. Check
-https://aviation-safety.net/statistics/period/stats.php?cat=H2 for more.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   All fatality estimates exclude ground fatalities. All accidents are
+   hull-loss accidents. The airliner figures are for those flights with
+   at least 14 passengers. Check
+   https://aviation-safety.net/statistics/period/stats.php?cat=H2 for
+   more.
 
-Aviation Safety Network, a service provided by the Flight Safety
-Foundation.
+   .. rubric:: Source
+      :name: source
+
+   Aviation Safety Network, a service provided by the Flight Safety
+   Foundation.

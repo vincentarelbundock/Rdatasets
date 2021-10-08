@@ -1,56 +1,58 @@
-====== ===============
-CPSch3 R Documentation
-====== ===============
+.. container::
 
-Earnings from the Current Population Survey
--------------------------------------------
+   ====== ===============
+   CPSch3 R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Earnings from the Current Population Survey
+      :name: earnings-from-the-current-population-survey
 
-a cross-section from 1998
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 11130
+   a cross-section from 1998
 
-*observation* : individuals
+   *number of observations* : 11130
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(CPSch3)
+   ::
 
-Format
-~~~~~~
+      data(CPSch3)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-year
-   survey year
+   A dataframe containing :
 
-ahe
-   average hourly earnings
+   year
+      survey year
 
-sex
-   a factor with levels (male,female)
+   ahe
+      average hourly earnings
 
-Source
-~~~~~~
+   sex
+      a factor with levels (male,female)
 
-Bureau of labor statistics, U.S. Department of Labor
-https://www.bls.gov.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Bureau of labor statistics, U.S. Department of Labor
+   https://www.bls.gov.
 
-Stock, James H. and Mark W. Watson (2003) *Introduction to
-Econometrics*, Addison-Wesley Educational Publishers, chapter 3.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Stock, James H. and Mark W. Watson (2003) *Introduction to
+   Econometrics*, Addison-Wesley Educational Publishers, chapter 3.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

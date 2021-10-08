@@ -1,72 +1,74 @@
-====== ===============
-pluton R Documentation
-====== ===============
+.. container::
 
-Isotopic Composition Plutonium Batches
---------------------------------------
+   ====== ===============
+   pluton R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Isotopic Composition Plutonium Batches
+      :name: isotopic-composition-plutonium-batches
 
-The ``pluton`` data frame has 45 rows and 4 columns, containing
-percentages of isotopic composition of 45 Plutonium batches.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``pluton`` data frame has 45 rows and 4 columns, containing
+   percentages of isotopic composition of 45 Plutonium batches.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(pluton)
+   ::
 
-Format
-~~~~~~
+      data(pluton)
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-Pu238
-   the percentages of *(238)Pu*, always less than 2 percent.
+   This data frame contains the following columns:
 
-Pu239
-   the percentages of *(239)Pu*, typically between 60 and 80 percent
-   (from neutron capture of Uranium, *(238)U*).
+   Pu238
+      the percentages of *(238)Pu*, always less than 2 percent.
 
-Pu240
-   percentage of the plutonium 240 isotope.
+   Pu239
+      the percentages of *(239)Pu*, typically between 60 and 80 percent
+      (from neutron capture of Uranium, *(238)U*).
 
-Pu241
-   percentage of the plutonium 241 isotope.
+   Pu240
+      percentage of the plutonium 240 isotope.
 
-Details
-~~~~~~~
+   Pu241
+      percentage of the plutonium 241 isotope.
 
-Note that the percentage of plutonium~242 can be computed from the other
-four percentages, see the examples.
+   .. rubric:: Details
+      :name: details
 
-In the reference below it is explained why it is very desirable to
-combine these plutonium patches in three groups of similar size.
+   Note that the percentage of plutonium~242 can be computed from the
+   other four percentages, see the examples.
 
-Source
-~~~~~~
+   In the reference below it is explained why it is very desirable to
+   combine these plutonium patches in three groups of similar size.
 
-Available as ‘pluton.dat’ from the archive of the University of
-Antwerpen, ‘..../datasets/clusplot-examples.tar.gz’, no longer
-available.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Available as ‘pluton.dat’ from the archive of the University of
+   Antwerpen, ‘..../datasets/clusplot-examples.tar.gz’, no longer
+   available.
 
-Rousseeuw, P.J. and Kaufman, L and Trauwaert, E. (1996) Fuzzy clustering
-using scatter matrices, *Computational Statistics and Data Analysis*
-**23**\ (1), 135–151.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Rousseeuw, P.J. and Kaufman, L and Trauwaert, E. (1996) Fuzzy
+   clustering using scatter matrices, *Computational Statistics and Data
+   Analysis* **23**\ (1), 135–151.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(pluton)
+   ::
 
-   hist(apply(pluton,1,sum), col = "gray") # between 94% and 100%
-   pu5 <- pluton
-   pu5$Pu242 <- 100 - apply(pluton,1,sum) # the remaining isotope.
-   pairs(pu5)
+      data(pluton)
+
+      hist(apply(pluton,1,sum), col = "gray") # between 94% and 100%
+      pu5 <- pluton
+      pu5$Pu242 <- 100 - apply(pluton,1,sum) # the remaining isotope.
+      pairs(pu5)

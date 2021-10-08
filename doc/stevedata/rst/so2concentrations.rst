@@ -1,46 +1,48 @@
-================= ===============
-so2concentrations R Documentation
-================= ===============
+.. container::
 
-Sulfur Dioxide Emissions, 1980-2020
------------------------------------
+   ================= ===============
+   so2concentrations R Documentation
+   ================= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Sulfur Dioxide Emissions, 1980-2020
+      :name: sulfur-dioxide-emissions-1980-2020
 
-This data set contains yearly observations by the Environmental
-Protection Agency on the concentration of sulfur dioxide in parts per
-billion, based on 32 sites. I use this for in-class illustration. Note
-that the national standard is 75 parts per billion. Data are the
-national trend.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data set contains yearly observations by the Environmental
+   Protection Agency on the concentration of sulfur dioxide in parts per
+   billion, based on 32 sites. I use this for in-class illustration.
+   Note that the national standard is 75 parts per billion. Data are the
+   national trend.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   so2concentrations
+   ::
 
-Format
-~~~~~~
+      so2concentrations
 
-A data frame with the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``year``
-   the year
+   A data frame with the following 4 variables.
 
-``value``
-   the mean concentration of sulfur dioxide in the air based on 32 trend
-   sites, in parts per billion
+   ``year``
+      the year
 
-``ub``
-   the lower bound of the value (10th percentile)
+   ``value``
+      the mean concentration of sulfur dioxide in the air based on 32
+      trend sites, in parts per billion
 
-``lb``
-   the upper bound of the value (90th percentile)
+   ``ub``
+      the lower bound of the value (10th percentile)
 
-Source
-~~~~~~
+   ``lb``
+      the upper bound of the value (90th percentile)
 
-Environmental Protection Agency, 2021.
-https://www.epa.gov/air-trends/sulfur-dioxide-trends
+   .. rubric:: Source
+      :name: source
+
+   Environmental Protection Agency, 2021.
+   https://www.epa.gov/air-trends/sulfur-dioxide-trends

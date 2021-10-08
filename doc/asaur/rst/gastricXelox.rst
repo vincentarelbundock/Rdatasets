@@ -1,52 +1,54 @@
-============ ===============
-gastricXelox R Documentation
-============ ===============
+.. container::
 
-gasticXelox
------------
+   ============ ===============
+   gastricXelox R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: gasticXelox
+      :name: gasticxelox
 
-Data from a Phase II clinical trial of Xeloda and exaliplatin given
-before surgery to advanced gastric cancer patients with para-aortic
-lymph node metastasis.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from a Phase II clinical trial of Xeloda and exaliplatin given
+   before surgery to advanced gastric cancer patients with para-aortic
+   lymph node metastasis.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("gastricXelox")
+   ::
 
-Format
-~~~~~~
+      data("gastricXelox")
 
-A data frame with 48 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-``timeWeeks``
-   survival time in weeks
+   A data frame with 48 observations on the following 2 variables.
 
-``delta``
-   1 for death, 0 for censored
+   ``timeWeeks``
+      survival time in weeks
 
-Details
-~~~~~~~
+   ``delta``
+      1 for death, 0 for censored
 
-The data were extracted from the Kaplan-Meier survival plot.
+   .. rubric:: Details
+      :name: details
 
-References
-~~~~~~~~~~
+   The data were extracted from the Kaplan-Meier survival plot.
 
-Wang Y, Yu Y-Y, Li W, Feng Y, Hou J, Ji Y, Sun Y-H, Shen K-T, Shen Z-B,
-Qin X-Y, and Liu T-S. (2014) A phase II trial of xeloda and oxaliplatin
-(XELOX) neo-adjuvant chemotherapy followed by surgery for advanced
-gastric cancer patients with para-aortic lymph node metastasis. Cancer
-Chemotherapy and Pharmacology 73(6), 1155-1161.))
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Wang Y, Yu Y-Y, Li W, Feng Y, Hou J, Ji Y, Sun Y-H, Shen K-T, Shen
+   Z-B, Qin X-Y, and Liu T-S. (2014) A phase II trial of xeloda and
+   oxaliplatin (XELOX) neo-adjuvant chemotherapy followed by surgery for
+   advanced gastric cancer patients with para-aortic lymph node
+   metastasis. Cancer Chemotherapy and Pharmacology 73(6), 1155-1161.))
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(gastricXelox)
+   ::
+
+      data(gastricXelox)

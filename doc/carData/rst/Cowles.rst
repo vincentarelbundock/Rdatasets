@@ -1,43 +1,45 @@
-====== ===============
-Cowles R Documentation
-====== ===============
+.. container::
 
-Cowles and Davis's Data on Volunteering
----------------------------------------
+   ====== ===============
+   Cowles R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Cowles and Davis's Data on Volunteering
+      :name: cowles-and-daviss-data-on-volunteering
 
-The ``Cowles`` data frame has 1421 rows and 4 columns. These data come
-from a study of the personality determinants of volunteering for
-psychological research.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Cowles`` data frame has 1421 rows and 4 columns. These data
+   come from a study of the personality determinants of volunteering for
+   psychological research.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Cowles
+   ::
 
-Format
-~~~~~~
+      Cowles
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-neuroticism
-   scale from Eysenck personality inventory
+   This data frame contains the following columns:
 
-extraversion
-   scale from Eysenck personality inventory
+   neuroticism
+      scale from Eysenck personality inventory
 
-sex
-   a factor with levels: ``female``; ``male``
+   extraversion
+      scale from Eysenck personality inventory
 
-volunteer
-   volunteeing, a factor with levels: ``no``; ``yes``
+   sex
+      a factor with levels: ``female``; ``male``
 
-Source
-~~~~~~
+   volunteer
+      volunteeing, a factor with levels: ``no``; ``yes``
 
-Cowles, M. and C. Davis (1987) The subject matter of psychology:
-Volunteers. *British Journal of Social Psychology* **26**, 97–102.
+   .. rubric:: Source
+      :name: source
+
+   Cowles, M. and C. Davis (1987) The subject matter of psychology:
+   Volunteers. *British Journal of Social Psychology* **26**, 97–102.

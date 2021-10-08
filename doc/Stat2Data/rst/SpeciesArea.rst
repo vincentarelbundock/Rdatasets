@@ -1,39 +1,41 @@
-=========== ===============
-SpeciesArea R Documentation
-=========== ===============
+.. container::
 
-Land Area and Mammal Species
-----------------------------
+   =========== ===============
+   SpeciesArea R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Land Area and Mammal Species
+      :name: land-area-and-mammal-species
 
-Land area and number of mammal species for islands in Southeast Asia
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Land area and number of mammal species for islands in Southeast Asia
 
-A dataset with 14 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-============== =====================================
-``Name``       Name of the island
-``Area``       Area (in sq. km)
-``Species``    Number of mammal species
-``logArea``    Natural logarithm (base e) of Area
-``logSpecies`` Natural logarithm (base e) of Species
-\              
-============== =====================================
+   A dataset with 14 observations on the following 5 variables.
 
-Details
-~~~~~~~
+   ============== =====================================
+   ``Name``       Name of the island
+   ``Area``       Area (in sq. km)
+   ``Species``    Number of mammal species
+   ``logArea``    Natural logarithm (base e) of Area
+   ``logSpecies`` Natural logarithm (base e) of Species
+   \              
+   ============== =====================================
 
-This dataset shows the number of mammal species and the area for 13
-islands in Southeast Asia. Biologists have speculated that the number of
-species is related to the size of an island and would like to be able to
-predict the number of species given the size of an island.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This dataset shows the number of mammal species and the area for 13
+   islands in Southeast Asia. Biologists have speculated that the number
+   of species is related to the size of an island and would like to be
+   able to predict the number of species given the size of an island.
 
-Heaney, Lawrence R. (1984) "Mammalian species richness on islands on the
-Sunda Shelf, Southeast Asia," Oecologia, 61:11 17.
+   .. rubric:: Source
+      :name: source
+
+   Heaney, Lawrence R. (1984) "Mammalian species richness on islands on
+   the Sunda Shelf, Southeast Asia," Oecologia, 61:11 17.

@@ -1,58 +1,61 @@
-======== ===============
-students R Documentation
-======== ===============
+.. container::
 
-Student Risk Taking
--------------------
+   ======== ===============
+   students R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Student Risk Taking
+      :name: student-risk-taking
 
-Students were administered two parallel forms of a test after a random
-assignment to three different treatments.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Students were administered two parallel forms of a test after a
+   random assignment to three different treatments.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("students")
+   ::
 
-Format
-~~~~~~
+      data("students")
 
-A data frame with 35 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``treatment``
-   a factor with levels ``AA``, ``C``, and ``NC``.
+   A data frame with 35 observations on the following 3 variables.
 
-``low``
-   the result of the first test.
+   ``treatment``
+      a factor with levels ``AA``, ``C``, and ``NC``.
 
-``high``
-   the result of the second test.
+   ``low``
+      the result of the first test.
 
-Details
-~~~~~~~
+   ``high``
+      the result of the second test.
 
-The data arise from a large study of risk taking (Timm, 2002). Students
-were randomly assigned to three different treatments labelled AA, C and
-NC. Students were administered two parallel forms of a test called
-``low`` and ``high``. The aim is to carry out a test of the equality of
-the bivariate means of each treatment population.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data arise from a large study of risk taking (Timm, 2002).
+   Students were randomly assigned to three different treatments
+   labelled AA, C and NC. Students were administered two parallel forms
+   of a test called ``low`` and ``high``. The aim is to carry out a test
+   of the equality of the bivariate means of each treatment population.
 
-N. H. Timm (2002), *Applied Multivariate Analysis*. Springer, New York.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   N. H. Timm (2002), *Applied Multivariate Analysis*. Springer, New
+   York.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-     data("students", package = "HSAUR")
-     layout(matrix(1:2, ncol = 2))
-     boxplot(low ~ treatment, data = students, ylab = "low")
-     boxplot(high ~ treatment, data = students, ylab = "high")
+        data("students", package = "HSAUR")
+        layout(matrix(1:2, ncol = 2))
+        boxplot(low ~ treatment, data = students, ylab = "low")
+        boxplot(high ~ treatment, data = students, ylab = "high")

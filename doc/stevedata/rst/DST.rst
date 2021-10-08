@@ -1,62 +1,66 @@
-=== ===============
-DST R Documentation
-=== ===============
+.. container::
 
-Casualties/Fatalities in the U.S. for Drunk-Driving, Suicide, and Terrorism
----------------------------------------------------------------------------
+   === ===============
+   DST R Documentation
+   === ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Casualties/Fatalities in the U.S. for Drunk-Driving,
+      Suicide, and Terrorism
+      :name: casualtiesfatalities-in-the-u.s.-for-drunk-driving-suicide-and-terrorism
 
-These are fatalities (and, in the case of terrorism, casualties as well)
-for drunk-driving, suicide, and acts of terrorism in the U.S. spanning
-1970 to 2018. Only one of these is sufficiently important to command
-public attention despite being the least severe public bad. Do you want
-to guess which one?
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These are fatalities (and, in the case of terrorism, casualties as
+   well) for drunk-driving, suicide, and acts of terrorism in the U.S.
+   spanning 1970 to 2018. Only one of these is sufficiently important to
+   command public attention despite being the least severe public bad.
+   Do you want to guess which one?
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   DST
+   ::
 
-Format
-~~~~~~
+      DST
 
-A data frame with 49 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``year``
-   the year
+   A data frame with 49 observations on the following 5 variables.
 
-``nkill``
-   a numeric vector for the number killed in acts of terrorism
+   ``year``
+      the year
 
-``terrtotal``
-   a numeric vector for the number killed or wounded in acts of
-   terrorism
+   ``nkill``
+      a numeric vector for the number killed in acts of terrorism
 
-``suicides``
-   a numeric vector for the number of suicides
+   ``terrtotal``
+      a numeric vector for the number killed or wounded in acts of
+      terrorism
 
-``ddfat``
-   a numeric vector for the number of drunk-driving fatalities
+   ``suicides``
+      a numeric vector for the number of suicides
 
-Details
-~~~~~~~
+   ``ddfat``
+      a numeric vector for the number of drunk-driving fatalities
 
-Following my own work in *Political Research Quarterly*, terror
-incidents with unknown fatalities or number wounded were imputed to be
-1. In those cases, the GTD has reason to believe at least one person
-died or was wounded, but doesn't know how many. GTD is weird about 1993,
-so perhaps treat those observations with some care (though it does well
-to capture the WTC bombing that year). Suicides include only those who
-passed, not those who survived a suicide attempt. Drunk-driving
-fatalities seem to include those who were killed in a drunk-driving
-accident despite not being drunk themselves.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Following my own work in *Political Research Quarterly*, terror
+   incidents with unknown fatalities or number wounded were imputed to
+   be 1. In those cases, the GTD has reason to believe at least one
+   person died or was wounded, but doesn't know how many. GTD is weird
+   about 1993, so perhaps treat those observations with some care
+   (though it does well to capture the WTC bombing that year). Suicides
+   include only those who passed, not those who survived a suicide
+   attempt. Drunk-driving fatalities seem to include those who were
+   killed in a drunk-driving accident despite not being drunk
+   themselves.
 
-Global Terrorism Database (Sept. 2019 update), Centers for Disease
-Control, U.S. Department of Transportation
+   .. rubric:: Source
+      :name: source
+
+   Global Terrorism Database (Sept. 2019 update), Centers for Disease
+   Control, U.S. Department of Transportation

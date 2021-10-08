@@ -1,65 +1,68 @@
-=========== ===============
-rpdr_contep R Documentation
-=========== ===============
+.. container::
 
-RuPaul's Drag Race Episode-Contestant Data
-------------------------------------------
+   =========== ===============
+   rpdr_contep R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: RuPaul's Drag Race Episode-Contestant Data
+      :name: rupauls-drag-race-episode-contestant-data
 
-These are episode-contestant-level data for RuPaul's Drag Race for all
-available seasons (currently through Season 12). For a given season,
-observations mostly decrease with each episode. Data include all sorts
-of information.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These are episode-contestant-level data for RuPaul's Drag Race for
+   all available seasons (currently through Season 12). For a given
+   season, observations mostly decrease with each episode. Data include
+   all sorts of information.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   rpdr_contep
+   ::
 
-Format
-~~~~~~
+      rpdr_contep
 
-A data frame with 1,888 observations on the following 11 variables.
+   .. rubric:: Format
+      :name: format
 
-``season``
-   a character vector for the season
+   A data frame with 1,888 observations on the following 11 variables.
 
-``rank``
-   a numeric vector for the final rank of the contestant
+   ``season``
+      a character vector for the season
 
-``contestant``
-   a character vector for the contestant's name
+   ``rank``
+      a numeric vector for the final rank of the contestant
 
-``missc``
-   a dummy variable indicating if the contestant was Miss Congeniality
+   ``contestant``
+      a character vector for the contestant's name
 
-``episode``
-   a numeric vector for the episode number
+   ``missc``
+      a dummy variable indicating if the contestant was Miss
+      Congeniality
 
-``outcome``
-   a character vector for the outcome for the queen after the main
-   challenge
+   ``episode``
+      a numeric vector for the episode number
 
-``eliminated``
-   a character vector (0,1) for if the queen was eliminated/removed from
-   the competition after the episode
+   ``outcome``
+      a character vector for the outcome for the queen after the main
+      challenge
 
-``participant``
-   a character vector (0,1) for if the queen was a participant in the
-   show
+   ``eliminated``
+      a character vector (0,1) for if the queen was eliminated/removed
+      from the competition after the episode
 
-``minichalw``
-   a character vector (0,1) if the queen won a mini-challenge that
-   episode. NOTE: this is a work in progress. For now, I encourage
-   getting the mini-challenge data from one of the other data sets.
+   ``participant``
+      a character vector (0,1) for if the queen was a participant in the
+      show
 
-``finale``
-   a numeric vector for if the episode was the finale
+   ``minichalw``
+      a character vector (0,1) if the queen won a mini-challenge that
+      episode. NOTE: this is a work in progress. For now, I encourage
+      getting the mini-challenge data from one of the other data sets.
 
-``penultimate``
-   a numeric vector for if the episode was the penultimate before the
-   finale. Applicable to seasons 6, 7, and 8.
+   ``finale``
+      a numeric vector for if the episode was the finale
+
+   ``penultimate``
+      a numeric vector for if the episode was the penultimate before the
+      finale. Applicable to seasons 6, 7, and 8.

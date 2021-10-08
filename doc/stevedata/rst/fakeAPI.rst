@@ -1,79 +1,84 @@
-======= ===============
-fakeAPI R Documentation
-======= ===============
+.. container::
 
-Hypothetical (Fake) Data on Academic Performance
-------------------------------------------------
+   ======= ===============
+   fakeAPI R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Hypothetical (Fake) Data on Academic Performance
+      :name: hypothetical-fake-data-on-academic-performance
 
-This is a hypothetical universe of schools in a given territorial unit,
-patterned off the ``apipop`` data available in the ``survey`` package.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This is a hypothetical universe of schools in a given territorial
+   unit, patterned off the ``apipop`` data available in the ``survey``
+   package.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   fakeAPI
+   ::
 
-Format
-~~~~~~
+      fakeAPI
 
-A data frame with 10000 observations on the following 8 variables.
+   .. rubric:: Format
+      :name: format
 
-``uid``
-   a numeric vector as a unique identifier for schools
+   A data frame with 10000 observations on the following 8 variables.
 
-``schooltype``
-   a character vector for school type. E = elementary school. M = middle
-   school. H = high school
+   ``uid``
+      a numeric vector as a unique identifier for schools
 
-``county``
-   a character vector for the county, named after an Ohio State
-   All-American. “County” incidence is weighted by how many All-American
-   honors the Ohio State player had. It's my fake data. You make your
-   own if you have a problem with it.
+   ``schooltype``
+      a character vector for school type. E = elementary school. M =
+      middle school. H = high school
 
-``community``
-   a character vector for the school's community, either rural,
-   suburban, or urban.
+   ``county``
+      a character vector for the county, named after an Ohio State
+      All-American. “County” incidence is weighted by how many
+      All-American honors the Ohio State player had. It's my fake data.
+      You make your own if you have a problem with it.
 
-``api``
-   a numeric vector vector an academic performance index for the school
+   ``community``
+      a character vector for the school's community, either rural,
+      suburban, or urban.
 
-``meals``
-   a numeric vector for the percentage of school students eligible for
-   subsidized meals
+   ``api``
+      a numeric vector vector an academic performance index for the
+      school
 
-``colgrad``
-   a numeric vector for the percentage of school parents with college
-   degrees
+   ``meals``
+      a numeric vector for the percentage of school students eligible
+      for subsidized meals
 
-``fullqual``
-   a numeric vector for the percentage of the school with teachers that
-   are fully qualified
+   ``colgrad``
+      a numeric vector for the percentage of school parents with college
+      degrees
 
-``sbase``
-   a numeric vector for some base differences between schools, patterned
-   off the school type means for ``api00`` in the ``apipop`` data.
+   ``fullqual``
+      a numeric vector for the percentage of the school with teachers
+      that are fully qualified
 
-``cbase``
-   a numeric vector for some base differences between counties, randomly
-   drawn from a uniform distribution
+   ``sbase``
+      a numeric vector for some base differences between schools,
+      patterned off the school type means for ``api00`` in the
+      ``apipop`` data.
 
-``e``
-   a numeric vector for random errors
+   ``cbase``
+      a numeric vector for some base differences between counties,
+      randomly drawn from a uniform distribution
 
-Details
-~~~~~~~
+   ``e``
+      a numeric vector for random errors
 
-These data were generated for a blog post on my website.
+   .. rubric:: Details
+      :name: details
 
-References
-~~~~~~~~~~
+   These data were generated for a blog post on my website.
 
-Miller, Steven V. 2020. "Some Parlor Tricks with Survey-Type Analyses in
-R." URL:
-http://svmiller.com/blog/2020/08/some-parlor-tricks-with-survey-type-analyses-in-r/
+   .. rubric:: References
+      :name: references
+
+   Miller, Steven V. 2020. "Some Parlor Tricks with Survey-Type Analyses
+   in R." URL:
+   http://svmiller.com/blog/2020/08/some-parlor-tricks-with-survey-type-analyses-in-r/

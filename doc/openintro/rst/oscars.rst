@@ -1,88 +1,91 @@
-====== ===============
-oscars R Documentation
-====== ===============
+.. container::
 
-Oscar winners, 1929 to 2018
----------------------------
+   ====== ===============
+   oscars R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Oscar winners, 1929 to 2018
+      :name: oscar-winners-1929-to-2018
 
-Best actor and actress Oscar winners from 1929 to 2018
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Best actor and actress Oscar winners from 1929 to 2018
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   oscars
+   ::
 
-Format
-~~~~~~
+      oscars
 
-A data frame with 182 observations on the following 10 variables.
+   .. rubric:: Format
+      :name: format
 
-oscar_no
-   Oscar ceremony number.
+   A data frame with 182 observations on the following 10 variables.
 
-oscar_yr
-   Year the Oscar ceremony was held.
+   oscar_no
+      Oscar ceremony number.
 
-award
-   ``Best actress`` or ``Best actor``.
+   oscar_yr
+      Year the Oscar ceremony was held.
 
-name
-   Name of winning actor or actress.
+   award
+      ``Best actress`` or ``Best actor``.
 
-movie
-   Name of movie actor or actress got the Oscar for.
+   name
+      Name of winning actor or actress.
 
-age
-   Age at which the actor or actress won the Oscar.
+   movie
+      Name of movie actor or actress got the Oscar for.
 
-birth_pl
-   US State where the actor or actress was born, country if foreign.
+   age
+      Age at which the actor or actress won the Oscar.
 
-birth_date
-   Birth date of actor or actress.
+   birth_pl
+      US State where the actor or actress was born, country if foreign.
 
-birth_mo
-   Birth month of actor or actress.
+   birth_date
+      Birth date of actor or actress.
 
-birth_d
-   Birth day of actor or actress.
+   birth_mo
+      Birth month of actor or actress.
 
-birth_y
-   Birth year of actor or actress.
+   birth_d
+      Birth day of actor or actress.
 
-Details
-~~~~~~~
+   birth_y
+      Birth year of actor or actress.
 
-Although there have been only 84 Oscar ceremonies until 2012, there are
-85 male winners and 85 female winners because ties happened on two
-occasions (1933 for the best actor and 1969 for the best actress).
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Although there have been only 84 Oscar ceremonies until 2012, there
+   are 85 male winners and 85 female winners because ties happened on
+   two occasions (1933 for the best actor and 1969 for the best
+   actress).
 
-Journal of Statistical Education,
-http://jse.amstat.org/datasets/oscars.dat.txt, updated through 2019
-using information from Oscars.org and Wikipedia.org.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Journal of Statistical Education,
+   http://jse.amstat.org/datasets/oscars.dat.txt, updated through 2019
+   using information from Oscars.org and Wikipedia.org.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
-   library(dplyr)
+      library(ggplot2)
+      library(dplyr)
 
-   ggplot(oscars, aes(x = award, y = age)) +
-     geom_boxplot()
+      ggplot(oscars, aes(x = award, y = age)) +
+        geom_boxplot()
 
-   ggplot(oscars, aes(x = factor(birth_mo))) +
-     geom_bar()
+      ggplot(oscars, aes(x = factor(birth_mo))) +
+        geom_bar()
 
-   oscars %>%
-     count(birth_pl, sort = TRUE)
+      oscars %>%
+        count(birth_pl, sort = TRUE)

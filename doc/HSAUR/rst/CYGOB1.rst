@@ -1,56 +1,59 @@
-====== ===============
-CYGOB1 R Documentation
-====== ===============
+.. container::
 
-CYG OB1 Star Cluster Data
--------------------------
+   ====== ===============
+   CYGOB1 R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: CYG OB1 Star Cluster Data
+      :name: cyg-ob1-star-cluster-data
 
-Energy output and surface termperature for Star Cluster CYG OB1.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Energy output and surface termperature for Star Cluster CYG OB1.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("CYGOB1")
+   ::
 
-Format
-~~~~~~
+      data("CYGOB1")
 
-A data frame with 47 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-``logst``
-   log survface termperature of the star.
+   A data frame with 47 observations on the following 2 variables.
 
-``logli``
-   log light intensity of the star.
+   ``logst``
+      log survface termperature of the star.
 
-Details
-~~~~~~~
+   ``logli``
+      log light intensity of the star.
 
-The Hertzsprung-Russell (H-R) diagram forms the basis of the theory of
-stellar evolution. The diagram is essentially a plot of the energy
-output of stars plotted against their surface temperature. Data from the
-H-R diagram of Star Cluster CYG OB1, calibrated according to
-VanismaGreve1972 are given here.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The Hertzsprung-Russell (H-R) diagram forms the basis of the theory
+   of stellar evolution. The diagram is essentially a plot of the energy
+   output of stars plotted against their surface temperature. Data from
+   the H-R diagram of Star Cluster CYG OB1, calibrated according to
+   VanismaGreve1972 are given here.
 
-F. Vanisma and J. P. De Greve (1972), Close binary systems before and
-after mass transfer. *Astrophysics and Space Science*, **87**, 377–401.
+   .. rubric:: Source
+      :name: source
 
-D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski (1994).
-*A Handbook of Small Datasets*, Chapman and Hall/CRC, London.
+   F. Vanisma and J. P. De Greve (1972), Close binary systems before and
+   after mass transfer. *Astrophysics and Space Science*, **87**,
+   377–401.
 
-Examples
-~~~~~~~~
+   D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
+   (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC, London.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-     data("CYGOB1", package = "HSAUR")
-     plot(logst ~ logli, data = CYGOB1)
+        data("CYGOB1", package = "HSAUR")
+        plot(logst ~ logli, data = CYGOB1)

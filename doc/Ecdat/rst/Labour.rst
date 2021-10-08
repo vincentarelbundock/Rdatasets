@@ -1,53 +1,55 @@
-====== ===============
-Labour R Documentation
-====== ===============
+.. container::
 
-Belgian Firms
--------------
+   ====== ===============
+   Labour R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Belgian Firms
+      :name: belgian-firms
 
-a cross-section from 1996
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 569
+   a cross-section from 1996
 
-*observation* : production units
+   *number of observations* : 569
 
-*country* : Belgium
+   *observation* : production units
 
-Usage
-~~~~~
+   *country* : Belgium
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Labour)
+   ::
 
-Format
-~~~~~~
+      data(Labour)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-capital
-   total fixed assets, end of 1995 (in 1000000 euro)
+   A dataframe containing :
 
-labour
-   number of workers (employment)
+   capital
+      total fixed assets, end of 1995 (in 1000000 euro)
 
-output
-   value added (in 1000000 euro)
+   labour
+      number of workers (employment)
 
-wage
-   wage costs per worker (in 1000 euro)
+   output
+      value added (in 1000000 euro)
 
-References
-~~~~~~~~~~
+   wage
+      wage costs per worker (in 1000 euro)
 
-Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley and
-Sons, chapter 4.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+   and Sons, chapter 4.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

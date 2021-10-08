@@ -1,115 +1,118 @@
-======= ===============
-midwest R Documentation
-======= ===============
+.. container::
 
-Midwest demographics
---------------------
+   ======= ===============
+   midwest R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Midwest demographics
+      :name: midwest-demographics
 
-Demographic information of midwest counties from 2000 US census
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Demographic information of midwest counties from 2000 US census
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   midwest
+   ::
 
-Format
-~~~~~~
+      midwest
 
-A data frame with 437 rows and 28 variables:
+   .. rubric:: Format
+      :name: format
 
-PID
-   Unique county identifier.
+   A data frame with 437 rows and 28 variables:
 
-county
-   County name.
+   PID
+      Unique county identifier.
 
-state
-   State to which county belongs to.
+   county
+      County name.
 
-area
-   Area of county (units unknown).
+   state
+      State to which county belongs to.
 
-poptotal
-   Total population.
+   area
+      Area of county (units unknown).
 
-popdensity
-   Population density (person/unit area).
+   poptotal
+      Total population.
 
-popwhite
-   Number of whites.
+   popdensity
+      Population density (person/unit area).
 
-popblack
-   Number of blacks.
+   popwhite
+      Number of whites.
 
-popamerindian
-   Number of American Indians.
+   popblack
+      Number of blacks.
 
-popasian
-   Number of Asians.
+   popamerindian
+      Number of American Indians.
 
-popother
-   Number of other races.
+   popasian
+      Number of Asians.
 
-percwhite
-   Percent white.
+   popother
+      Number of other races.
 
-percblack
-   Percent black.
+   percwhite
+      Percent white.
 
-percamerindan
-   Percent American Indian.
+   percblack
+      Percent black.
 
-percasian
-   Percent Asian.
+   percamerindan
+      Percent American Indian.
 
-percother
-   Percent other races.
+   percasian
+      Percent Asian.
 
-popadults
-   Number of adults.
+   percother
+      Percent other races.
 
-perchsd
-   Percent with high school diploma.
+   popadults
+      Number of adults.
 
-percollege
-   Percent college educated.
+   perchsd
+      Percent with high school diploma.
 
-percprof
-   Percent with professional degree.
+   percollege
+      Percent college educated.
 
-poppovertyknown
-   Population with known poverty status.
+   percprof
+      Percent with professional degree.
 
-percpovertyknown
-   Percent of population with known poverty status.
+   poppovertyknown
+      Population with known poverty status.
 
-percbelowpoverty
-   Percent of people below poverty line.
+   percpovertyknown
+      Percent of population with known poverty status.
 
-percchildbelowpovert
-   Percent of children below poverty line.
+   percbelowpoverty
+      Percent of people below poverty line.
 
-percadultpoverty
-   Percent of adults below poverty line.
+   percchildbelowpovert
+      Percent of children below poverty line.
 
-percelderlypoverty
-   Percent of elderly below poverty line.
+   percadultpoverty
+      Percent of adults below poverty line.
 
-inmetro
-   County considered in a metro area.
+   percelderlypoverty
+      Percent of elderly below poverty line.
 
-category
-   Miscellaneous.
+   inmetro
+      County considered in a metro area.
 
-Details
-~~~~~~~
+   category
+      Miscellaneous.
 
-Note: this dataset is included for illustrative purposes. The original
-descriptions were not documented and the current descriptions here are
-based on speculation. For more accurate and up-to-date US census data,
-see the ```acs`` package <https://cran.r-project.org/package=acs>`__.
+   .. rubric:: Details
+      :name: details
+
+   Note: this dataset is included for illustrative purposes. The
+   original descriptions were not documented and the current
+   descriptions here are based on speculation. For more accurate and
+   up-to-date US census data, see the ```acs``
+   package <https://cran.r-project.org/package=acs>`__.

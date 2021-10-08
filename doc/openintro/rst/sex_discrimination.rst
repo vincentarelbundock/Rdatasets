@@ -1,49 +1,51 @@
-================== ===============
-sex_discrimination R Documentation
-================== ===============
+.. container::
 
-Bank manager recommendations based on sex
------------------------------------------
+   ================== ===============
+   sex_discrimination R Documentation
+   ================== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Bank manager recommendations based on sex
+      :name: bank-manager-recommendations-based-on-sex
 
-Study from the 1970s about whether sex influences hiring
-recommendations.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Study from the 1970s about whether sex influences hiring
+   recommendations.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   sex_discrimination
+   ::
 
-Format
-~~~~~~
+      sex_discrimination
 
-A data frame with 48 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-sex
-   a factor with levels ``female`` and ``male``
+   A data frame with 48 observations on the following 2 variables.
 
-decision
-   a factor with levels ``not promoted`` and ``promoted``
+   sex
+      a factor with levels ``female`` and ``male``
 
-Source
-~~~~~~
+   decision
+      a factor with levels ``not promoted`` and ``promoted``
 
-Rosen B and Jerdee T. 1974. Influence of sex role stereotypes on
-personnel decisions. Journal of Applied Psychology 59(1):9-14.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Rosen B and Jerdee T. 1974. Influence of sex role stereotypes on
+   personnel decisions. Journal of Applied Psychology 59(1):9-14.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   table(sex_discrimination)
+      table(sex_discrimination)
 
-   ggplot(sex_discrimination, aes(y = sex, fill = decision)) +
-     geom_bar(position = "fill")
+      ggplot(sex_discrimination, aes(y = sex, fill = decision)) +
+        geom_bar(position = "fill")

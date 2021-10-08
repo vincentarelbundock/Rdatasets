@@ -1,68 +1,70 @@
-========= ===============
-kidrecurr R Documentation
-========= ===============
+.. container::
 
-Data on 38 individuals using a kidney dialysis machine
-------------------------------------------------------
+   ========= ===============
+   kidrecurr R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data on 38 individuals using a kidney dialysis machine
+      :name: data-on-38-individuals-using-a-kidney-dialysis-machine
 
-Data on 38 individuals using a kidney dialysis machine See Problem
-13.5.2
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data on 38 individuals using a kidney dialysis machine See Problem
+   13.5.2
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(kidrecurr)
+   ::
 
-Format
-~~~~~~
+      data(kidrecurr)
 
-A data frame with 38 observations on the following 10 variables.
+   .. rubric:: Format
+      :name: format
 
-patient
-   Patient number
+   A data frame with 38 observations on the following 10 variables.
 
-time1
-   Time one of recurrence of infection, days
+   patient
+      Patient number
 
-infect1
-   Indicator infection one (1=yes, 0=no)
+   time1
+      Time one of recurrence of infection, days
 
-time2
-   Time two of recurrence of infection, days
+   infect1
+      Indicator infection one (1=yes, 0=no)
 
-infect2
-   Indicator infection two (1=yes, 0=no)
+   time2
+      Time two of recurrence of infection, days
 
-age
-   Patient's age
+   infect2
+      Indicator infection two (1=yes, 0=no)
 
-gender
-   Patient's gender
+   age
+      Patient's age
 
-gn
-   Disease type GN (1=yes, 0=no)
+   gender
+      Patient's gender
 
-an
-   Disease type AN (1=yes, 0=no)
+   gn
+      Disease type GN (1=yes, 0=no)
 
-pkd
-   Disease type PKD (1=yes, 0=no)
+   an
+      Disease type AN (1=yes, 0=no)
 
-Source
-~~~~~~
+   pkd
+      Disease type PKD (1=yes, 0=no)
 
-Klein and Moeschberger (1997) *Survival Analysis Techniques for Censored
-and truncated data*, Springer. McGilchrist and Aisbett 47
-(1991):461-466.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Klein and Moeschberger (1997) *Survival Analysis Techniques for
+   Censored and truncated data*, Springer. McGilchrist and Aisbett 47
+   (1991):461-466.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(kidrecurr)
+   ::
+
+      data(kidrecurr)

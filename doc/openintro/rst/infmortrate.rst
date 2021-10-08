@@ -1,57 +1,59 @@
-=========== ===============
-infmortrate R Documentation
-=========== ===============
+.. container::
 
-Infant Mortality Rates, 2012
-----------------------------
+   =========== ===============
+   infmortrate R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Infant Mortality Rates, 2012
+      :name: infant-mortality-rates-2012
 
-This entry gives the number of deaths of infants under one year old in
-2012 per 1,000 live births in the same year. This rate is often used as
-an indicator of the level of health in a country.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This entry gives the number of deaths of infants under one year old
+   in 2012 per 1,000 live births in the same year. This rate is often
+   used as an indicator of the level of health in a country.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   infmortrate
+   ::
 
-Format
-~~~~~~
+      infmortrate
 
-A data frame with 222 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-country
-   Name of country.
+   A data frame with 222 observations on the following 2 variables.
 
-inf_mort_rate
-   Infant mortality rate per 1,000 live births.
+   country
+      Name of country.
 
-Details
-~~~~~~~
+   inf_mort_rate
+      Infant mortality rate per 1,000 live births.
 
-The data is given in decreasing order of infant mortality rates. There
-are a few potential outliers.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data is given in decreasing order of infant mortality rates.
+   There are a few potential outliers.
 
-CIA World Factbook,
-https://www.cia.gov/the-world-factbook/field/infant-mortality-rate/country-comparison.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   CIA World Factbook,
+   https://www.cia.gov/the-world-factbook/field/infant-mortality-rate/country-comparison.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(infmortrate, aes(x = inf_mort_rate)) +
-     geom_histogram(binwidth = 10)
+      ggplot(infmortrate, aes(x = inf_mort_rate)) +
+        geom_histogram(binwidth = 10)
 
-   ggplot(infmortrate, aes(x = inf_mort_rate)) +
-     geom_density()
+      ggplot(infmortrate, aes(x = inf_mort_rate)) +
+        geom_density()

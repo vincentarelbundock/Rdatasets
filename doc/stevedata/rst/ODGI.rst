@@ -1,85 +1,89 @@
-==== ===============
-ODGI R Documentation
-==== ===============
+.. container::
 
-Ozone Depleting Gas Index Data, 1992-2019
------------------------------------------
+   ==== ===============
+   ODGI R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Ozone Depleting Gas Index Data, 1992-2019
+      :name: ozone-depleting-gas-index-data-1992-2019
 
-The NOAA Earth System Research Laboratory has an "ozone depleting gas
-index" (ODGI) data set from 1992 to 2018. This dataset summarizes Table
-1 and Table 2 from its website. The primary interest here (for my
-purposes) is the ODGI indices (including the new 2012 measure). The data
-set includes constituent greenhouse gases/chlorines as well in parts per
-trillion. The primary use here is for in-class illustration.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The NOAA Earth System Research Laboratory has an "ozone depleting gas
+   index" (ODGI) data set from 1992 to 2018. This dataset summarizes
+   Table 1 and Table 2 from its website. The primary interest here (for
+   my purposes) is the ODGI indices (including the new 2012 measure).
+   The data set includes constituent greenhouse gases/chlorines as well
+   in parts per trillion. The primary use here is for in-class
+   illustration.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   ODGI
+   ::
 
-Format
-~~~~~~
+      ODGI
 
-A data frame with 56 observations on the following 16 variables.
+   .. rubric:: Format
+      :name: format
 
-``year``
-   the year
+   A data frame with 56 observations on the following 16 variables.
 
-``cat``
-   categorical variable for the Antarctic or Mid-Latitudes measurements
+   ``year``
+      the year
 
-``cfc12``
-   CFC-12 concentration in parts per trillion
+   ``cat``
+      categorical variable for the Antarctic or Mid-Latitudes
+      measurements
 
-``cfc11``
-   CFC-11 concentration in parts per trillion
+   ``cfc12``
+      CFC-12 concentration in parts per trillion
 
-``ch3cl``
-   chloromethane concentration in parts per trillion
+   ``cfc11``
+      CFC-11 concentration in parts per trillion
 
-``ch3br``
-   bromomethane concentration in parts per trillion
+   ``ch3cl``
+      chloromethane concentration in parts per trillion
 
-``ccl4``
-   carbon tetrachloride concentration in parts per trillion
+   ``ch3br``
+      bromomethane concentration in parts per trillion
 
-``ch3ccl3``
-   methyl chloroform concentration in parts per trillion
+   ``ccl4``
+      carbon tetrachloride concentration in parts per trillion
 
-``halons``
-   aggregate concentration in parts per trillion of H-1211, H-1301 and
-   H-2402
+   ``ch3ccl3``
+      methyl chloroform concentration in parts per trillion
 
-``cfc113``
-   trichlorotrifluoroethane concentration in parts per trillion
+   ``halons``
+      aggregate concentration in parts per trillion of H-1211, H-1301
+      and H-2402
 
-``hcfcs``
-   aggregate concentration in parts per trillion of HCFC-22, HCFC-141b,
-   and HCFC-142b
+   ``cfc113``
+      trichlorotrifluoroethane concentration in parts per trillion
 
-``wmo_minor``
-   aggregate concentration in parts per trillion of CFC-114, CFC-115,
-   halon 2402 and halon 1201
+   ``hcfcs``
+      aggregate concentration in parts per trillion of HCFC-22,
+      HCFC-141b, and HCFC-142b
 
-``sum``
-   the sum of all greenhouse gas concentration measurements
+   ``wmo_minor``
+      aggregate concentration in parts per trillion of CFC-114, CFC-115,
+      halon 2402 and halon 1201
 
-``eesc``
-   includes consideration of lag times for transport and mixing
-   associated with transport. New as of 2012
+   ``sum``
+      the sum of all greenhouse gas concentration measurements
 
-``odgi_old``
-   old greenhouse gas index, no longer supported as of 2012
+   ``eesc``
+      includes consideration of lag times for transport and mixing
+      associated with transport. New as of 2012
 
-``odgi_new``
-   new greenhouse gas index, as of 2012
+   ``odgi_old``
+      old greenhouse gas index, no longer supported as of 2012
 
-Source
-~~~~~~
+   ``odgi_new``
+      new greenhouse gas index, as of 2012
 
-https://gml.noaa.gov/odgi/
+   .. rubric:: Source
+      :name: source
+
+   https://gml.noaa.gov/odgi/

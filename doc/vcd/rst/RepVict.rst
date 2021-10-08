@@ -1,70 +1,73 @@
-======= ===============
-RepVict R Documentation
-======= ===============
+.. container::
 
-Repeat Victimization Data
--------------------------
+   ======= ===============
+   RepVict R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Repeat Victimization Data
+      :name: repeat-victimization-data
 
-Data from Reiss (1980) given by Fienberg (1980) about instances of
-repeat victimization for households in the U.S. National Crime Survey.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from Reiss (1980) given by Fienberg (1980) about instances of
+   repeat victimization for households in the U.S. National Crime
+   Survey.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("RepVict")
+   ::
 
-Format
-~~~~~~
+      data("RepVict")
 
-A 2-dimensional array resulting from cross-tabulating victimization. The
-variables and their levels are as follows:
+   .. rubric:: Format
+      :name: format
 
-+----+----------------------+-------------------------------+
-| No | Name                 | Levels                        |
-+----+----------------------+-------------------------------+
-| 1  | First Victimization  | Rape, Assault, Robbery,       |
-|    |                      | Pickpocket, Personal Larceny, |
-+----+----------------------+-------------------------------+
-|    |                      | Burglary, Household Larceny,  |
-|    |                      | Auto Theft                    |
-+----+----------------------+-------------------------------+
-| 2  | Second Victimization | Rape, Assault, Robbery,       |
-|    |                      | Pickpocket, Personal Larceny, |
-+----+----------------------+-------------------------------+
-|    |                      | Burglary, Household Larceny,  |
-|    |                      | Auto Theft                    |
-+----+----------------------+-------------------------------+
+   A 2-dimensional array resulting from cross-tabulating victimization.
+   The variables and their levels are as follows:
 
-Source
-~~~~~~
+   +----+----------------------+-------------------------------+
+   | No | Name                 | Levels                        |
+   +----+----------------------+-------------------------------+
+   | 1  | First Victimization  | Rape, Assault, Robbery,       |
+   |    |                      | Pickpocket, Personal Larceny, |
+   +----+----------------------+-------------------------------+
+   |    |                      | Burglary, Household Larceny,  |
+   |    |                      | Auto Theft                    |
+   +----+----------------------+-------------------------------+
+   | 2  | Second Victimization | Rape, Assault, Robbery,       |
+   |    |                      | Pickpocket, Personal Larceny, |
+   +----+----------------------+-------------------------------+
+   |    |                      | Burglary, Household Larceny,  |
+   |    |                      | Auto Theft                    |
+   +----+----------------------+-------------------------------+
 
-Michael Friendly (2000), Visualizing Categorical Data, page 113.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Michael Friendly (2000), Visualizing Categorical Data, page 113.
 
-S. E. Fienberg (1980), *The Analysis of Cross-Classified Categorical
-Data*, MIT Press, Cambridge, 2nd edition.
+   .. rubric:: References
+      :name: references
 
-A. J. J. Reiss (1980), Victim proneness by type of crime in repeat
-victimization. In S. E. Fienberg & A. J. J. Reiss (eds.), *Indicators of
-Crime and Criminal Justice*. U.S. Government Printing Office,
-Washington, DC.
+   S. E. Fienberg (1980), *The Analysis of Cross-Classified Categorical
+   Data*, MIT Press, Cambridge, 2nd edition.
 
-M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute, Cary,
-NC.
+   A. J. J. Reiss (1980), Victim proneness by type of crime in repeat
+   victimization. In S. E. Fienberg & A. J. J. Reiss (eds.), *Indicators
+   of Crime and Criminal Justice*. U.S. Government Printing Office,
+   Washington, DC.
 
-Examples
-~~~~~~~~
+   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+   Cary, NC.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("RepVict")
+   ::
 
-   mosaic(RepVict[-c(4,7),-c(4,7)], gp = shading_max,
-          main = "Repeat Victimization Data")
+      data("RepVict")
+
+      mosaic(RepVict[-c(4,7),-c(4,7)], gp = shading_max,
+             main = "Repeat Victimization Data")

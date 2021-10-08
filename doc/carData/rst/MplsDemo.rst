@@ -1,59 +1,61 @@
-======== ===============
-MplsDemo R Documentation
-======== ===============
+.. container::
 
-Minneapolis Demographic Data 2015, by Neighborhood
---------------------------------------------------
+   ======== ===============
+   MplsDemo R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Minneapolis Demographic Data 2015, by Neighborhood
+      :name: minneapolis-demographic-data-2015-by-neighborhood
 
-Minneapolis Demographic Data 2015, by Neighborhood, from the 2015
-American Community Survey
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Minneapolis Demographic Data 2015, by Neighborhood, from the 2015
+   American Community Survey
 
-A data frame with 84 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-``neighborhood``
-   name of the neighborhood
+   A data frame with 84 observations on the following 7 variables.
 
-``population``
-   total population
+   ``neighborhood``
+      name of the neighborhood
 
-``black``
-   fraction of the population estimated to be black
+   ``population``
+      total population
 
-``white``
-   fraction of the population estimated to be white
+   ``black``
+      fraction of the population estimated to be black
 
-``foreignBorn``
-   fraction of the population estimated to be foreign born
+   ``white``
+      fraction of the population estimated to be white
 
-``hhIncome``
-   estimated median household income
+   ``foreignBorn``
+      fraction of the population estimated to be foreign born
 
-``poverty``
-   estimated fraction earning less than twice the poverty level
+   ``hhIncome``
+      estimated median household income
 
-``collegeGrad``
-   estimated fraction with a college degree
+   ``poverty``
+      estimated fraction earning less than twice the poverty level
 
-Details
-~~~~~~~
+   ``collegeGrad``
+      estimated fraction with a college degree
 
-The data frame ``MplsStops`` contains 2017 Minneapolis Police stop data,
-using the same neighborhood names as this data file.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data frame ``MplsStops`` contains 2017 Minneapolis Police stop
+   data, using the same neighborhood names as this data file.
 
-http://www.mncompass.org/profiles/neighborhoods/minneapolis-saint-paul#!community-areas
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   http://www.mncompass.org/profiles/neighborhoods/minneapolis-saint-paul#!community-areas
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   str(MplsDemo)
+   ::
+
+      str(MplsDemo)

@@ -1,62 +1,64 @@
-========== ===============
-womensrole R Documentation
-========== ===============
+.. container::
 
-Womens Role in Society
-----------------------
+   ========== ===============
+   womensrole R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Womens Role in Society
+      :name: womens-role-in-society
 
-Data from a survey from 1974 / 1975 asking both female and male
-responders about their opinion on the statement: Women should take care
-of running their homes and leave running the country up to men.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from a survey from 1974 / 1975 asking both female and male
+   responders about their opinion on the statement: Women should take
+   care of running their homes and leave running the country up to men.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("womensrole")
+   ::
 
-Format
-~~~~~~
+      data("womensrole")
 
-A data frame with 42 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``education``
-   years of education.
+   A data frame with 42 observations on the following 4 variables.
 
-``sex``
-   a factor with levels ``Male`` and ``Female``.
+   ``education``
+      years of education.
 
-``agree``
-   number of subjects in agreement with the statement.
+   ``sex``
+      a factor with levels ``Male`` and ``Female``.
 
-``disagree``
-   number of subjects in disagreement with the statement.
+   ``agree``
+      number of subjects in agreement with the statement.
 
-Details
-~~~~~~~
+   ``disagree``
+      number of subjects in disagreement with the statement.
 
-The data are from Haberman (1973) and also given in Collett (2003). The
-questions here are whether the response of men and women differ.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data are from Haberman (1973) and also given in Collett (2003).
+   The questions here are whether the response of men and women differ.
 
-S. J. Haberman (1973), The analysis of residuals in cross-classificed
-tables. *Biometrics*, **29**, 205–220.
+   .. rubric:: Source
+      :name: source
 
-D. Collett (2003), *Modelling Binary Data*. Chapman and Hall / CRC,
-London. 2nd edition.
+   S. J. Haberman (1973), The analysis of residuals in cross-classificed
+   tables. *Biometrics*, **29**, 205–220.
 
-Examples
-~~~~~~~~
+   D. Collett (2003), *Modelling Binary Data*. Chapman and Hall / CRC,
+   London. 2nd edition.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-     data("womensrole", package = "HSAUR")
-     summary(subset(womensrole, sex == "Female"))
-     summary(subset(womensrole, sex == "Male"))
+        data("womensrole", package = "HSAUR")
+        summary(subset(womensrole, sex == "Female"))
+        summary(subset(womensrole, sex == "Male"))

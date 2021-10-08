@@ -1,81 +1,83 @@
-============= ===============
-ManufactCosts R Documentation
-============= ===============
+.. container::
 
-Manufacturing Costs Data
-------------------------
+   ============= ===============
+   ManufactCosts R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Manufacturing Costs Data
+      :name: manufacturing-costs-data
 
-US time series data on prices and cost shares in manufacturing,
-1947–1971.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   US time series data on prices and cost shares in manufacturing,
+   1947–1971.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("ManufactCosts")
+   ::
 
-Format
-~~~~~~
+      data("ManufactCosts")
 
-An annual multiple time series from 1947 to 1971 with 9 variables.
+   .. rubric:: Format
+      :name: format
 
-cost
-   Cost index.
+   An annual multiple time series from 1947 to 1971 with 9 variables.
 
-capitalcost
-   Capital cost share.
+   cost
+      Cost index.
 
-laborcost
-   Labor cost share.
+   capitalcost
+      Capital cost share.
 
-energycost
-   Energy cost share.
+   laborcost
+      Labor cost share.
 
-materialscost
-   Materials cost share.
+   energycost
+      Energy cost share.
 
-capitalprice
-   Capital price.
+   materialscost
+      Materials cost share.
 
-laborprice
-   Labor price.
+   capitalprice
+      Capital price.
 
-energyprice
-   Energy price.
+   laborprice
+      Labor price.
 
-materialsprice
-   Materials price.
+   energyprice
+      Energy price.
 
-Source
-~~~~~~
+   materialsprice
+      Materials price.
 
-Online complements to Greene (2003).
+   .. rubric:: Source
+      :name: source
 
-http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+   Online complements to Greene (2003).
 
-References
-~~~~~~~~~~
+   http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-Berndt, E. and Wood, D. (1975). Technology, Prices, and the Derived
-Demand for Energy. *Review of Economics and Statistics*, **57**,
-376–384.
+   .. rubric:: References
+      :name: references
 
-Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper Saddle
-River, NJ: Prentice Hall.
+   Berndt, E. and Wood, D. (1975). Technology, Prices, and the Derived
+   Demand for Energy. *Review of Economics and Statistics*, **57**,
+   376–384.
 
-See Also
-~~~~~~~~
+   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+   Saddle River, NJ: Prentice Hall.
 
-``Greene2003``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Greene2003``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("ManufactCosts")
-   plot(ManufactCosts)
+   ::
+
+      data("ManufactCosts")
+      plot(ManufactCosts)

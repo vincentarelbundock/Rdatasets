@@ -1,57 +1,59 @@
-====== ===============
-foster R Documentation
-====== ===============
+.. container::
 
-Foster Feeding Experiment
--------------------------
+   ====== ===============
+   foster R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Foster Feeding Experiment
+      :name: foster-feeding-experiment
 
-The data are from a foster feeding experiment with rat mothers and
-litters of four different genotypes. The measurement is the litter
-weight after a trial feeding period.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The data are from a foster feeding experiment with rat mothers and
+   litters of four different genotypes. The measurement is the litter
+   weight after a trial feeding period.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("foster")
+   ::
 
-Format
-~~~~~~
+      data("foster")
 
-A data frame with 61 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``litgen``
-   genotype of the litter, a factor with levels ``A``, ``B``, ``I``, and
-   ``J``.
+   A data frame with 61 observations on the following 3 variables.
 
-``motgen``
-   genotype of the mother, a factor with levels ``A``, ``B``, ``I``, and
-   ``J``.
+   ``litgen``
+      genotype of the litter, a factor with levels ``A``, ``B``, ``I``,
+      and ``J``.
 
-``weight``
-   the weight of the litter after a feeding period.
+   ``motgen``
+      genotype of the mother, a factor with levels ``A``, ``B``, ``I``,
+      and ``J``.
 
-Details
-~~~~~~~
+   ``weight``
+      the weight of the litter after a feeding period.
 
-Here the interest lies in uncovering the effect of genotype of mother
-and litter on litter weight.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Here the interest lies in uncovering the effect of genotype of mother
+   and litter on litter weight.
 
-D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski (1994).
-*A Handbook of Small Datasets*, Chapman and Hall/CRC, London.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
+   (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC, London.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-     data("foster", package = "HSAUR")
-     plot.design(foster)
+        data("foster", package = "HSAUR")
+        plot.design(foster)

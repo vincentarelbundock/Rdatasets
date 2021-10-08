@@ -1,57 +1,59 @@
-============== ===============
-BrokenMarriage R Documentation
-============== ===============
+.. container::
 
-Broken Marriage Data
---------------------
+   ============== ===============
+   BrokenMarriage R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Broken Marriage Data
+      :name: broken-marriage-data
 
-Data from the Danish Welfare Study about broken marriages or permanent
-relationships depending on gender and social rank.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from the Danish Welfare Study about broken marriages or
+   permanent relationships depending on gender and social rank.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("BrokenMarriage")
+   ::
 
-Format
-~~~~~~
+      data("BrokenMarriage")
 
-A data frame with 20 observations and 4 variables.
+   .. rubric:: Format
+      :name: format
 
-Freq
-   frequency.
+   A data frame with 20 observations and 4 variables.
 
-gender
-   factor indicating gender (male, female).
+   Freq
+      frequency.
 
-rank
-   factor indicating social rank (I, II, III, IV, V).
+   gender
+      factor indicating gender (male, female).
 
-broken
-   factor indicating whether the marriage or permanent relationship was
-   broken (yes, no).
+   rank
+      factor indicating social rank (I, II, III, IV, V).
 
-Source
-~~~~~~
+   broken
+      factor indicating whether the marriage or permanent relationship
+      was broken (yes, no).
 
-E. B. Andersen (1991), The Statistical Analysis of Categorical Data,
-page 177.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   E. B. Andersen (1991), The Statistical Analysis of Categorical Data,
+   page 177.
 
-E. B. Andersen (1991), *The Statistical Analysis of Categorical Data*.
-2nd edition. Springer-Verlag, Berlin.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   E. B. Andersen (1991), *The Statistical Analysis of Categorical
+   Data*. 2nd edition. Springer-Verlag, Berlin.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("BrokenMarriage")
-   structable(~ ., data = BrokenMarriage)
+   ::
+
+      data("BrokenMarriage")
+      structable(~ ., data = BrokenMarriage)

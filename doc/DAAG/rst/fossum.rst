@@ -1,84 +1,86 @@
-====== ===============
-fossum R Documentation
-====== ===============
+.. container::
 
-Female Possum Measurements
---------------------------
+   ====== ===============
+   fossum R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Female Possum Measurements
+      :name: female-possum-measurements
 
-The ``fossum`` data frame consists of nine morphometric measurements on
-each of 43 female mountain brushtail possums, trapped at seven sites
-from Southern Victoria to central Queensland. This is a subset of the
-``possum`` data frame.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``fossum`` data frame consists of nine morphometric measurements
+   on each of 43 female mountain brushtail possums, trapped at seven
+   sites from Southern Victoria to central Queensland. This is a subset
+   of the ``possum`` data frame.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   fossum
+   ::
 
-Format
-~~~~~~
+      fossum
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-case
-   observation number
+   This data frame contains the following columns:
 
-site
-   one of seven locations where possums were trapped
+   case
+      observation number
 
-Pop
-   a factor which classifies the sites as ``Vic`` Victoria, ``other``
-   New South Wales or Queensland
+   site
+      one of seven locations where possums were trapped
 
-sex
-   a factor with levels ``f`` female, ``m`` male
+   Pop
+      a factor which classifies the sites as ``Vic`` Victoria, ``other``
+      New South Wales or Queensland
 
-age
+   sex
+      a factor with levels ``f`` female, ``m`` male
+
    age
+      age
 
-hdlngth
-   head length
+   hdlngth
+      head length
 
-skullw
-   skull width
+   skullw
+      skull width
 
-totlngth
-   total length
+   totlngth
+      total length
 
-taill
-   tail length
+   taill
+      tail length
 
-footlgth
-   foot length
+   footlgth
+      foot length
 
-earconch
-   ear conch length
+   earconch
+      ear conch length
 
-eye
-   distance from medial canthus to lateral canthus of right eye
+   eye
+      distance from medial canthus to lateral canthus of right eye
 
-chest
-   chest girth (in cm)
+   chest
+      chest girth (in cm)
 
-belly
-   belly girth (in cm)
+   belly
+      belly girth (in cm)
 
-Source
-~~~~~~
+   .. rubric:: Source
+      :name: source
 
-Lindenmayer, D. B., Viggers, K. L., Cunningham, R. B., and Donnelly, C.
-F. 1995. Morphological variation among columns of the mountain brushtail
-possum, Trichosurus caninus Ogilby (Phalangeridae: Marsupiala).
-Australian Journal of Zoology 43: 449-458.
+   Lindenmayer, D. B., Viggers, K. L., Cunningham, R. B., and Donnelly,
+   C. F. 1995. Morphological variation among columns of the mountain
+   brushtail possum, Trichosurus caninus Ogilby (Phalangeridae:
+   Marsupiala). Australian Journal of Zoology 43: 449-458.
 
-Examples
-~~~~~~~~
+   .. rubric:: Examples
+      :name: examples
 
-::
+   ::
 
-   boxplot(fossum$totlngth)
+      boxplot(fossum$totlngth)

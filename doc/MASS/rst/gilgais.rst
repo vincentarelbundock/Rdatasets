@@ -1,74 +1,76 @@
-======= ===============
-gilgais R Documentation
-======= ===============
+.. container::
 
-Line Transect of Soil in Gilgai Territory
------------------------------------------
+   ======= ===============
+   gilgais R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Line Transect of Soil in Gilgai Territory
+      :name: line-transect-of-soil-in-gilgai-territory
 
-This dataset was collected on a line transect survey in gilgai territory
-in New South Wales, Australia. Gilgais are natural gentle depressions in
-otherwise flat land, and sometimes seem to be regularly distributed. The
-data collection was stimulated by the question: are these patterns
-reflected in soil properties? At each of 365 sampling locations on a
-linear grid of 4 meters spacing, samples were taken at depths 0-10 cm,
-30-40 cm and 80-90 cm below the surface. pH, electrical conductivity and
-chloride content were measured on a 1:5 soil:water extract from each
-sample.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This dataset was collected on a line transect survey in gilgai
+   territory in New South Wales, Australia. Gilgais are natural gentle
+   depressions in otherwise flat land, and sometimes seem to be
+   regularly distributed. The data collection was stimulated by the
+   question: are these patterns reflected in soil properties? At each of
+   365 sampling locations on a linear grid of 4 meters spacing, samples
+   were taken at depths 0-10 cm, 30-40 cm and 80-90 cm below the
+   surface. pH, electrical conductivity and chloride content were
+   measured on a 1:5 soil:water extract from each sample.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   gilgais
+   ::
 
-Format
-~~~~~~
+      gilgais
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``pH00``
-   pH at depth 0–10 cm.
+   This data frame contains the following columns:
 
-``pH30``
-   pH at depth 30–40 cm.
+   ``pH00``
+      pH at depth 0–10 cm.
 
-``pH80``
-   pH at depth 80–90 cm.
+   ``pH30``
+      pH at depth 30–40 cm.
 
-``e00``
-   electrical conductivity in mS/cm (0–10 cm).
+   ``pH80``
+      pH at depth 80–90 cm.
 
-``e30``
-   electrical conductivity in mS/cm (30–40 cm).
+   ``e00``
+      electrical conductivity in mS/cm (0–10 cm).
 
-``e80``
-   electrical conductivity in mS/cm (80–90 cm).
+   ``e30``
+      electrical conductivity in mS/cm (30–40 cm).
 
-``c00``
-   chloride content in ppm (0–10 cm).
+   ``e80``
+      electrical conductivity in mS/cm (80–90 cm).
 
-``c30``
-   chloride content in ppm (30–40 cm).
+   ``c00``
+      chloride content in ppm (0–10 cm).
 
-``c80``
-   chloride content in ppm (80–90 cm).
+   ``c30``
+      chloride content in ppm (30–40 cm).
 
-Source
-~~~~~~
+   ``c80``
+      chloride content in ppm (80–90 cm).
 
-Webster, R. (1977) Spectral analysis of gilgai soil. *Australian Journal
-of Soil Research* **15**, 191–204.
+   .. rubric:: Source
+      :name: source
 
-Laslett, G. M. (1989) Kriging and splines: An empirical comparison of
-their predictive performance in some applications (with discussion).
-*Journal of the American Statistical Association* **89**, 319–409
+   Webster, R. (1977) Spectral analysis of gilgai soil. *Australian
+   Journal of Soil Research* **15**, 191–204.
 
-References
-~~~~~~~~~~
+   Laslett, G. M. (1989) Kriging and splines: An empirical comparison of
+   their predictive performance in some applications (with discussion).
+   *Journal of the American Statistical Association* **89**, 319–409
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   .. rubric:: References
+      :name: references
+
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.

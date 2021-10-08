@@ -1,62 +1,64 @@
-========== ===============
-WomenQueue R Documentation
-========== ===============
+.. container::
 
-Women in Queues
----------------
+   ========== ===============
+   WomenQueue R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Women in Queues
+      :name: women-in-queues
 
-Data from Jinkinson \\& Slater (1981) and Hoaglin \\& Tukey (1985)
-reporting the frequency distribution of females in 100 queues of length
-10 in a London Underground station.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from Jinkinson \\& Slater (1981) and Hoaglin \\& Tukey (1985)
+   reporting the frequency distribution of females in 100 queues of
+   length 10 in a London Underground station.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("WomenQueue")
+   ::
 
-Format
-~~~~~~
+      data("WomenQueue")
 
-A 1-way table giving the number of women in 100 queues of length 10. The
-variable and its levels are
+   .. rubric:: Format
+      :name: format
 
-== ====== =============
-No Name   Levels
-1  nWomen 0, 1, ..., 10
-\         
-== ====== =============
+   A 1-way table giving the number of women in 100 queues of length 10.
+   The variable and its levels are
 
-Source
-~~~~~~
+   == ====== =============
+   No Name   Levels
+   1  nWomen 0, 1, ..., 10
+   \         
+   == ====== =============
 
-M. Friendly (2000), Visualizing Categorical Data, pages 19–20.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   M. Friendly (2000), Visualizing Categorical Data, pages 19–20.
 
-D. C. Hoaglin \\& J. W. Tukey (1985), Checking the shape of discrete
-distributions. In D. C. Hoaglin, F. Mosteller, J. W. Tukey (eds.),
-*Exploring Data Tables, Trends and Shapes*, chapter 9. John Wiley \\&
-Sons, New York.
+   .. rubric:: References
+      :name: references
 
-R. A. Jinkinson \\& M. Slater (1981), Critical discussion of a graphical
-method for identifying discrete distributions, *The Statistician*,
-**30**, 239–248.
+   D. C. Hoaglin \\& J. W. Tukey (1985), Checking the shape of discrete
+   distributions. In D. C. Hoaglin, F. Mosteller, J. W. Tukey (eds.),
+   *Exploring Data Tables, Trends and Shapes*, chapter 9. John Wiley \\&
+   Sons, New York.
 
-M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute, Cary,
-NC.
+   R. A. Jinkinson \\& M. Slater (1981), Critical discussion of a
+   graphical method for identifying discrete distributions, *The
+   Statistician*, **30**, 239–248.
 
-Examples
-~~~~~~~~
+   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+   Cary, NC.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("WomenQueue")
-   gf <- goodfit(WomenQueue, type = "binomial")
-   summary(gf)
-   plot(gf)
+   ::
+
+      data("WomenQueue")
+      gf <- goodfit(WomenQueue, type = "binomial")
+      summary(gf)
+      plot(gf)

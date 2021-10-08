@@ -1,94 +1,96 @@
-================ ===============
-MLBStandings2016 R Documentation
-================ ===============
+.. container::
 
-MLB Standings in 2016
----------------------
+   ================ ===============
+   MLBStandings2016 R Documentation
+   ================ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: MLB Standings in 2016
+      :name: mlb-standings-in-2016
 
-Major League Baseball (MLB) standings and team statistics for the 2016
-season
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Major League Baseball (MLB) standings and team statistics for the
+   2016 season
 
-A data frame with 30 observations on the following 21 variables.
+   .. rubric:: Format
+      :name: format
 
-``Team``
-   Team name
+   A data frame with 30 observations on the following 21 variables.
 
-``League``
-   ``AL``\ =American or ``NL``\ =National
+   ``Team``
+      Team name
 
-``Wins``
-   Number of wins for the season (out of 162 games)
+   ``League``
+      ``AL``\ =American or ``NL``\ =National
 
-``Losses``
-   Number of losses for the season
+   ``Wins``
+      Number of wins for the season (out of 162 games)
 
-``WinPct``
-   Proportion of games won
+   ``Losses``
+      Number of losses for the season
 
-``BattingAverage``
-   Team batting average
+   ``WinPct``
+      Proportion of games won
 
-``Runs``
-   Number of runs scored
+   ``BattingAverage``
+      Team batting average
 
-``Hits``
-   Number of hits
+   ``Runs``
+      Number of runs scored
 
-``HR``
-   Number of home runs hit
+   ``Hits``
+      Number of hits
 
-``Doubles``
-   Number of doubles hit
+   ``HR``
+      Number of home runs hit
 
-``Triples``
-   Number of triples hit
+   ``Doubles``
+      Number of doubles hit
 
-``RBI``
-   Number of runs batted in
+   ``Triples``
+      Number of triples hit
 
-``SB``
-   Number of stolen bases
+   ``RBI``
+      Number of runs batted in
 
-``OBP``
-   On base percentage
+   ``SB``
+      Number of stolen bases
 
-``SLG``
-   Slugging percentage
+   ``OBP``
+      On base percentage
 
-``ERA``
-   Earned run average (earned runs allowed per 9 innings)
+   ``SLG``
+      Slugging percentage
 
-``HitsAllowed``
-   Number of hits against the team
+   ``ERA``
+      Earned run average (earned runs allowed per 9 innings)
 
-``Walks``
-   Number of walks allowed
+   ``HitsAllowed``
+      Number of hits against the team
 
-``StrikeOuts``
-   Number of strikeouts (by the team's pitchers)
+   ``Walks``
+      Number of walks allowed
 
-``Saves``
-   Number of games saved (by the team's pitchers)
+   ``StrikeOuts``
+      Number of strikeouts (by the team's pitchers)
 
-``WHIP``
-   Number of walks and hits per inning pitched
+   ``Saves``
+      Number of games saved (by the team's pitchers)
 
-Details
-~~~~~~~
+   ``WHIP``
+      Number of walks and hits per inning pitched
 
-Data for all 30 Major League Baseball (MLB) teams for the 2016 regular
-season. This includes team batting statistics (BattingAvg through SLG)
-and team pitching statistics (ERA through WHIP)
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Data for all 30 Major League Baseball (MLB) teams for the 2016
+   regular season. This includes team batting statistics (BattingAvg
+   through SLG) and team pitching statistics (ERA through WHIP)
 
-| Data downloaded from baseball-reference.com:
-| http://www.baseball-reference.com/leagues/MLB/2016-standings.shtml
-| http://www.baseball-reference.com/leagues/MLB/2016.shtml
+   .. rubric:: Source
+      :name: source
+
+   | Data downloaded from baseball-reference.com:
+   | http://www.baseball-reference.com/leagues/MLB/2016-standings.shtml
+   | http://www.baseball-reference.com/leagues/MLB/2016.shtml

@@ -1,51 +1,53 @@
-============== ===============
-Manitoba.lakes R Documentation
-============== ===============
+.. container::
 
-The Nine Largest Lakes in Manitoba
-----------------------------------
+   ============== ===============
+   Manitoba.lakes R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: The Nine Largest Lakes in Manitoba
+      :name: the-nine-largest-lakes-in-manitoba
 
-The ``Manitoba.lakes`` data frame has 9 rows and 2 columns. The areas
-and elevations of the nine largest lakes in Manitoba, Canada. The
-geography of Manitoba (a relatively flat province) can be divided
-crudely into three main areas: a very flat prairie in the south which is
-at a relatively high elevation, a middle region consisting of mainly of
-forest and Precambrian rock, and a northern region which drains more
-rapidly into Hudson Bay. All water in Manitoba, which does not
-evaporate, eventually drains into Hudson Bay.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Manitoba.lakes`` data frame has 9 rows and 2 columns. The areas
+   and elevations of the nine largest lakes in Manitoba, Canada. The
+   geography of Manitoba (a relatively flat province) can be divided
+   crudely into three main areas: a very flat prairie in the south which
+   is at a relatively high elevation, a middle region consisting of
+   mainly of forest and Precambrian rock, and a northern region which
+   drains more rapidly into Hudson Bay. All water in Manitoba, which
+   does not evaporate, eventually drains into Hudson Bay.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Manitoba.lakes
+   ::
 
-Format
-~~~~~~
+      Manitoba.lakes
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-elevation
-   a numeric vector consisting of the elevations of the lakes (in
-   meters)
+   This data frame contains the following columns:
 
-area
-   a numeric vector consisting of the areas of the lakes (in square
-   kilometers)
+   elevation
+      a numeric vector consisting of the elevations of the lakes (in
+      meters)
 
-Source
-~~~~~~
+   area
+      a numeric vector consisting of the areas of the lakes (in square
+      kilometers)
 
-The CANSIM data base at Statistics Canada.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   The CANSIM data base at Statistics Canada.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   plot(Manitoba.lakes)
-   plot(Manitoba.lakes[-1,])
+   ::
+
+      plot(Manitoba.lakes)
+      plot(Manitoba.lakes[-1,])

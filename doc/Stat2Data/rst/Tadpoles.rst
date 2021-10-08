@@ -1,44 +1,46 @@
-======== ===============
-Tadpoles R Documentation
-======== ===============
+.. container::
 
-Effects of a Fungus on Tadpoles
--------------------------------
+   ======== ===============
+   Tadpoles R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Effects of a Fungus on Tadpoles
+      :name: effects-of-a-fungus-on-tadpoles
 
-Comparing intestine lengths for tadpoles with and without exposure to Bd
-fugus
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Comparing intestine lengths for tadpoles with and without exposure to
+   Bd fugus
 
-A data frame with 27 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``Treatment``
-   Exposed to fungus (``Bd``\ =yes or ``Control``\ =no)
+   A data frame with 27 observations on the following 4 variables.
 
-``Body``
-   Length of body (in mm)
+   ``Treatment``
+      Exposed to fungus (``Bd``\ =yes or ``Control``\ =no)
 
-``GutLength``
-   Length of intestine (in mm)
+   ``Body``
+      Length of body (in mm)
 
-``MouthpartDamage``
-   Measure of damage to the mouth (e.g. missing teeth)
+   ``GutLength``
+      Length of intestine (in mm)
 
-Details
-~~~~~~~
+   ``MouthpartDamage``
+      Measure of damage to the mouth (e.g. missing teeth)
 
-Biologists wondered whether tadpoles can adjust the relative length of
-their intestines if they are exposed to a fungus called Batrachochytrium
-dendrobatidis (Bd).
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Biologists wondered whether tadpoles can adjust the relative length
+   of their intestines if they are exposed to a fungus called
+   Batrachochytrium dendrobatidis (Bd).
 
-Venesky MD, Hanlon SM, Lynch K, Parris MJ, Rohr JR. (2013) "Optimal
-digestion theory does not predict the effect of pathogens on intestinal
-plasticity," Biol Lett 9: 20130038.
-http://dx.doi.org/10.1098/rsbl.2013.0038
+   .. rubric:: Source
+      :name: source
+
+   Venesky MD, Hanlon SM, Lynch K, Parris MJ, Rohr JR. (2013) "Optimal
+   digestion theory does not predict the effect of pathogens on
+   intestinal plasticity," Biol Lett 9: 20130038.
+   http://dx.doi.org/10.1098/rsbl.2013.0038

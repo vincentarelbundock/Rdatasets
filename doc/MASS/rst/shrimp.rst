@@ -1,30 +1,32 @@
-====== ===============
-shrimp R Documentation
-====== ===============
+.. container::
 
-Percentage of Shrimp in Shrimp Cocktail
----------------------------------------
+   ====== ===============
+   shrimp R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Percentage of Shrimp in Shrimp Cocktail
+      :name: percentage-of-shrimp-in-shrimp-cocktail
 
-A numeric vector with 18 determinations by different laboratories of the
-amount (percentage of the declared total weight) of shrimp in shrimp
-cocktail.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A numeric vector with 18 determinations by different laboratories of
+   the amount (percentage of the declared total weight) of shrimp in
+   shrimp cocktail.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   shrimp
+   ::
 
-Source
-~~~~~~
+      shrimp
 
-F. J. King and J. J. Ryan (1976) Collaborative study of the
-determination of the amount of shrimp in shrimp cocktail. *J. Off. Anal.
-Chem.* **59**, 644–649.
+   .. rubric:: Source
+      :name: source
 
-R. G. Staudte and S. J. Sheather (1990) *Robust Estimation and Testing.*
-Wiley.
+   F. J. King and J. J. Ryan (1976) Collaborative study of the
+   determination of the amount of shrimp in shrimp cocktail. *J. Off.
+   Anal. Chem.* **59**, 644–649.
+
+   R. G. Staudte and S. J. Sheather (1990) *Robust Estimation and
+   Testing.* Wiley.

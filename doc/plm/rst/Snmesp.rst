@@ -1,63 +1,65 @@
-====== ===============
-Snmesp R Documentation
-====== ===============
+.. container::
 
-Employment and Wages in Spain
------------------------------
+   ====== ===============
+   Snmesp R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Employment and Wages in Spain
+      :name: employment-and-wages-in-spain
 
-A panel of 738 observations from 1983 to 1990
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   A panel of 738 observations from 1983 to 1990
 
-A data frame containing:
+   .. rubric:: Format
+      :name: format
 
-firm
-   firm index
+   A data frame containing:
 
-year
+   firm
+      firm index
+
    year
+      year
 
-n
-   log of employment
+   n
+      log of employment
 
-w
-   log of wages
+   w
+      log of wages
 
-y
-   log of real output
+   y
+      log of real output
 
-i
-   log of intermediate inputs
+   i
+      log of intermediate inputs
 
-k
-   log of real capital stock
+   k
+      log of real capital stock
 
-f
-   real cash flow
+   f
+      real cash flow
 
-Details
-~~~~~~~
+   .. rubric:: Details
+      :name: details
 
-*total number of observations*: 5904
+   *total number of observations*: 5904
 
-*observation*: firms
+   *observation*: firms
 
-*country*: Spain
+   *country*: Spain
 
-Source
-~~~~~~
+   .. rubric:: Source
+      :name: source
 
-Journal of Business Economics and Statistics data archive:
+   Journal of Business Economics and Statistics data archive:
 
-https://amstat.tandfonline.com/loi/ubes20/.
+   https://amstat.tandfonline.com/loi/ubes20/.
 
-References
-~~~~~~~~~~
+   .. rubric:: References
+      :name: references
 
-Alonso-Borrego C, Arellano M (1999). “Symmetrically Normalized
-Instrumental-Variable Estimation Using Panel Data.” *Journal of Business
-and Economic Statistics*, **17**\ (1), 36-49.
+   Alonso-Borrego C, Arellano M (1999). “Symmetrically Normalized
+   Instrumental-Variable Estimation Using Panel Data.” *Journal of
+   Business and Economic Statistics*, **17**\ (1), 36-49.

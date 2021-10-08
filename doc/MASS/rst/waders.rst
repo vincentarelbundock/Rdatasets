@@ -1,116 +1,118 @@
-====== ===============
-waders R Documentation
-====== ===============
+.. container::
 
-Counts of Waders at 15 Sites in South Africa
---------------------------------------------
+   ====== ===============
+   waders R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Counts of Waders at 15 Sites in South Africa
+      :name: counts-of-waders-at-15-sites-in-south-africa
 
-The ``waders`` data frame has 15 rows and 19 columns. The entries are
-counts of waders in summer.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``waders`` data frame has 15 rows and 19 columns. The entries are
+   counts of waders in summer.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   waders
+   ::
 
-Format
-~~~~~~
+      waders
 
-This data frame contains the following columns (species)
+   .. rubric:: Format
+      :name: format
 
-``S1``
-   Oystercatcher
+   This data frame contains the following columns (species)
 
-``S2``
-   White-fronted Plover
+   ``S1``
+      Oystercatcher
 
-``S3``
-   Kitt Lutz's Plover
+   ``S2``
+      White-fronted Plover
 
-``S4``
-   Three-banded Plover
+   ``S3``
+      Kitt Lutz's Plover
 
-``S5``
-   Grey Plover
+   ``S4``
+      Three-banded Plover
 
-``S6``
-   Ringed Plover
+   ``S5``
+      Grey Plover
 
-``S7``
-   Bar-tailed Godwit
+   ``S6``
+      Ringed Plover
 
-``S8``
-   Whimbrel
+   ``S7``
+      Bar-tailed Godwit
 
-``S9``
-   Marsh Sandpiper
+   ``S8``
+      Whimbrel
 
-``S10``
-   Greenshank
+   ``S9``
+      Marsh Sandpiper
 
-``S11``
-   Common Sandpiper
+   ``S10``
+      Greenshank
 
-``S12``
-   Turnstone
+   ``S11``
+      Common Sandpiper
 
-``S13``
-   Knot
+   ``S12``
+      Turnstone
 
-``S14``
-   Sanderling
+   ``S13``
+      Knot
 
-``S15``
-   Little Stint
+   ``S14``
+      Sanderling
 
-``S16``
-   Curlew Sandpiper
+   ``S15``
+      Little Stint
 
-``S17``
-   Ruff
+   ``S16``
+      Curlew Sandpiper
 
-``S18``
-   Avocet
+   ``S17``
+      Ruff
 
-``S19``
-   Black-winged Stilt
+   ``S18``
+      Avocet
 
-The rows are the sites:
+   ``S19``
+      Black-winged Stilt
 
-| A = Namibia North coast
-| B = Namibia North wetland
-| C = Namibia South coast
-| D = Namibia South wetland
-| E = Cape North coast
-| F = Cape North wetland
-| G = Cape West coast
-| H = Cape West wetland
-| I = Cape South coast
-| J= Cape South wetland
-| K = Cape East coast
-| L = Cape East wetland
-| M = Transkei coast
-| N = Natal coast
-| O = Natal wetland
+   The rows are the sites:
 
-Source
-~~~~~~
+   | A = Namibia North coast
+   | B = Namibia North wetland
+   | C = Namibia South coast
+   | D = Namibia South wetland
+   | E = Cape North coast
+   | F = Cape North wetland
+   | G = Cape West coast
+   | H = Cape West wetland
+   | I = Cape South coast
+   | J= Cape South wetland
+   | K = Cape East coast
+   | L = Cape East wetland
+   | M = Transkei coast
+   | N = Natal coast
+   | O = Natal wetland
 
-J.C. Gower and D.J. Hand (1996) *Biplots* Chapman & Hall Table 9.1.
-Quoted as from:
+   .. rubric:: Source
+      :name: source
 
-R.W. Summers, L.G. Underhill, D.J. Pearson and D.A. Scott (1987) Wader
-migration systems in south and eastern Africa and western Asia. *Wader
-Study Group Bulletin* **49** Supplement, 15–34.
+   J.C. Gower and D.J. Hand (1996) *Biplots* Chapman & Hall Table 9.1.
+   Quoted as from:
 
-Examples
-~~~~~~~~
+   R.W. Summers, L.G. Underhill, D.J. Pearson and D.A. Scott (1987)
+   Wader migration systems in south and eastern Africa and western Asia.
+   *Wader Study Group Bulletin* **49** Supplement, 15–34.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   plot(corresp(waders, nf=2))
+   ::
+
+      plot(corresp(waders, nf=2))

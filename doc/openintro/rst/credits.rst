@@ -1,43 +1,45 @@
-======= ===============
-credits R Documentation
-======= ===============
+.. container::
 
-College credits.
-----------------
+   ======= ===============
+   credits R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: College credits.
+      :name: college-credits.
 
-A simulated data set of number of credits taken by college students each
-semester.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A simulated data set of number of credits taken by college students
+   each semester.
 
-::
+   .. rubric:: Usage
+      :name: usage
+
+   ::
+
+      credits
+
+   .. rubric:: Format
+      :name: format
+
+   A data frame with 100 observations on the following variable.
 
    credits
+      Number of credits.
 
-Format
-~~~~~~
+   .. rubric:: Source
+      :name: source
 
-A data frame with 100 observations on the following variable.
+   Simulated data.
 
-credits
-   Number of credits.
+   .. rubric:: Examples
+      :name: examples
 
-Source
-~~~~~~
-
-Simulated data.
-
-Examples
-~~~~~~~~
-
-::
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(credits, aes(x = credits)) +
-     geom_histogram(binwidth = 1)
+      ggplot(credits, aes(x = credits)) +
+        geom_histogram(binwidth = 1)

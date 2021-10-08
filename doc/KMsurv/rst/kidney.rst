@@ -1,39 +1,41 @@
-====== ===============
-kidney R Documentation
-====== ===============
+.. container::
 
-data from Section 1.4
----------------------
+   ====== ===============
+   kidney R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: data from Section 1.4
+      :name: data-from-section-1.4
 
-The ``kidney`` data frame has 119 rows and 3 columns.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   The ``kidney`` data frame has 119 rows and 3 columns.
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-time
-   Time to infection, months
+   This data frame contains the following columns:
 
-delta
-   Infection indicator (0=no, 1=yes)
+   time
+      Time to infection, months
 
-type
-   Catheter placement (1=surgically, 2=percutaneously)
+   delta
+      Infection indicator (0=no, 1=yes)
 
-Source
-~~~~~~
+   type
+      Catheter placement (1=surgically, 2=percutaneously)
 
-Klein and Moeschberger (1997) *Survival Analysis Techniques for Censored
-and truncated data*, Springer. Nahman el at. J. Am Soc. Nephrology 3
-(1992): 103-107.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Klein and Moeschberger (1997) *Survival Analysis Techniques for
+   Censored and truncated data*, Springer. Nahman el at. J. Am Soc.
+   Nephrology 3 (1992): 103-107.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(kidney)
+   ::
+
+      data(kidney)

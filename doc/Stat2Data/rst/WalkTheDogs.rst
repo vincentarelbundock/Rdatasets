@@ -1,49 +1,52 @@
-=========== ===============
-WalkTheDogs R Documentation
-=========== ===============
+.. container::
 
-Did the Author Walk the Dogs Today?
------------------------------------
+   =========== ===============
+   WalkTheDogs R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Did the Author Walk the Dogs Today?
+      :name: did-the-author-walk-the-dogs-today
 
-Daily pedometer data for one of the authors
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Daily pedometer data for one of the authors
 
-A data frame with 223 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-``StepCount``
-   Number of steps taken in the day
+   A data frame with 223 observations on the following 7 variables.
 
-``Kcal``
-   Calories burned (according to pedometer)
+   ``StepCount``
+      Number of steps taken in the day
 
-``Miles``
-   Miles walked
+   ``Kcal``
+      Calories burned (according to pedometer)
 
-``Weather``
-   ``cold``, ``rain``, or ``shine``
+   ``Miles``
+      Miles walked
 
-``Day``
-   Day of week (``F``\ =Friday, ``M``\ =Monday, ``R``\ =Thursday,
-   ``S``\ =Saturday, ``T``\ =Tuesday, ``U``\ =Sunday, ``W``\ =Wednesday)
+   ``Weather``
+      ``cold``, ``rain``, or ``shine``
 
-``Walk``
-   Were the dogs walked? (``1``\ =yes or ``0``\ =no)
+   ``Day``
+      Day of week (``F``\ =Friday, ``M``\ =Monday, ``R``\ =Thursday,
+      ``S``\ =Saturday, ``T``\ =Tuesday, ``U``\ =Sunday,
+      ``W``\ =Wednesday)
 
-``Steps``
-   Steps in units of 1,000 (so StepCount/1000)
+   ``Walk``
+      Were the dogs walked? (``1``\ =yes or ``0``\ =no)
 
-Details
-~~~~~~~
+   ``Steps``
+      Steps in units of 1,000 (so StepCount/1000)
 
-One of the authors recorded daily pedometer data, the weather, and
-whether or not he walked the dogs.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   One of the authors recorded daily pedometer data, the weather, and
+   whether or not he walked the dogs.
 
-One of the author's pedometer records.
+   .. rubric:: Source
+      :name: source
+
+   One of the author's pedometer records.

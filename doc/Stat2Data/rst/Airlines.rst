@@ -1,44 +1,46 @@
-======== ===============
-Airlines R Documentation
-======== ===============
+.. container::
 
-Ontime Records for Two Airlines at Two Airports
------------------------------------------------
+   ======== ===============
+   Airlines R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Ontime Records for Two Airlines at Two Airports
+      :name: ontime-records-for-two-airlines-at-two-airports
 
-Ontime arrivals for American and Delta airlines at LaGuardia and O'Hare
-airports
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Ontime arrivals for American and Delta airlines at LaGuardia and
+   O'Hare airports
 
-A data frame with 10333 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``airline``
-   ``American`` or ``Delta``
+   A data frame with 10333 observations on the following 5 variables.
 
-``airport``
-   ``LGA``\ =LaGuardia ``ORD``\ =O'Hare
+   ``airline``
+      ``American`` or ``Delta``
 
-``OnTime``
-   ``no`` or ``yes``
+   ``airport``
+      ``LGA``\ =LaGuardia ``ORD``\ =O'Hare
 
-``IndOHare``
-   Is the airport ORD? (``1``\ =yes or ``0``\ =no)
+   ``OnTime``
+      ``no`` or ``yes``
 
-``IndDelta``
-   Is the airline Delta? (``1``\ =yes or ``0``\ =no)
+   ``IndOHare``
+      Is the airport ORD? (``1``\ =yes or ``0``\ =no)
 
-Details
-~~~~~~~
+   ``IndDelta``
+      Is the airline Delta? (``1``\ =yes or ``0``\ =no)
 
-Ontime/late data for individual flights to LaGuardia and O'Hare airports
-by American and Delta airlines.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Ontime/late data for individual flights to LaGuardia and O'Hare
+   airports by American and Delta airlines.
 
-Data collected on 9/20/16 from
-http://www.transtats.bts.gov/ot_delay/OT_DelayCause1.asp?pn=1
+   .. rubric:: Source
+      :name: source
+
+   Data collected on 9/20/16 from
+   http://www.transtats.bts.gov/ot_delay/OT_DelayCause1.asp?pn=1

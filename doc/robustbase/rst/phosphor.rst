@@ -1,54 +1,56 @@
-======== ===============
-phosphor R Documentation
-======== ===============
+.. container::
 
-Phosphorus Content Data
------------------------
+   ======== ===============
+   phosphor R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Phosphorus Content Data
+      :name: phosphorus-content-data
 
-This dataset investigates the effect from inorganic and organic
-Phosphorus in the soil upon the phosphorus content of the corn grown in
-this soil, from Prescott (1975).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This dataset investigates the effect from inorganic and organic
+   Phosphorus in the soil upon the phosphorus content of the corn grown
+   in this soil, from Prescott (1975).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(phosphor, package="robustbase")
+   ::
 
-Format
-~~~~~~
+      data(phosphor, package="robustbase")
 
-A data frame with 18 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``inorg``
-   Inorganic soil Phosphorus
+   A data frame with 18 observations on the following 3 variables.
 
-``organic``
-   Organic soil Phosphorus
+   ``inorg``
+      Inorganic soil Phosphorus
 
-``plant``
-   Plant Phosphorus content
+   ``organic``
+      Organic soil Phosphorus
 
-Source
-~~~~~~
+   ``plant``
+      Plant Phosphorus content
 
-P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
-Detection.* Wiley, p.156, table 24.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
+   Detection.* Wiley, p.156, table 24.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(phosphor)
-   plot(phosphor)
-   summary(lm.phosphor <- lm(plant ~ ., data = phosphor))
-   summary(lts.phosphor <- ltsReg(plant ~ ., data = phosphor))
+   ::
 
-   phosphor.x <- data.matrix(phosphor[, 1:2])
-   cPh <- covMcd(phosphor.x)
-   plot(cPh, "dd")
+      data(phosphor)
+      plot(phosphor)
+      summary(lm.phosphor <- lm(plant ~ ., data = phosphor))
+      summary(lts.phosphor <- ltsReg(plant ~ ., data = phosphor))
+
+      phosphor.x <- data.matrix(phosphor[, 1:2])
+      cPh <- covMcd(phosphor.x)
+      plot(cPh, "dd")

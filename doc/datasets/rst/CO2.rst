@@ -1,87 +1,90 @@
-=== ===============
-CO2 R Documentation
-=== ===============
+.. container::
 
-Carbon Dioxide Uptake in Grass Plants
--------------------------------------
+   === ===============
+   CO2 R Documentation
+   === ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Carbon Dioxide Uptake in Grass Plants
+      :name: carbon-dioxide-uptake-in-grass-plants
 
-The ``CO2`` data frame has 84 rows and 5 columns of data from an
-experiment on the cold tolerance of the grass species *Echinochloa
-crus-galli*.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``CO2`` data frame has 84 rows and 5 columns of data from an
+   experiment on the cold tolerance of the grass species *Echinochloa
+   crus-galli*.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   CO2
+   ::
 
-Format
-~~~~~~
+      CO2
 
-An object of class
-``c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame")``
-containing the following columns:
+   .. rubric:: Format
+      :name: format
 
-Plant
-   an ordered factor with levels ``Qn1`` < ``Qn2`` < ``Qn3`` < ... <
-   ``Mc1`` giving a unique identifier for each plant.
+   An object of class
+   ``c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame")``
+   containing the following columns:
 
-Type
-   a factor with levels ``Quebec`` ``Mississippi`` giving the origin of
-   the plant
+   Plant
+      an ordered factor with levels ``Qn1`` < ``Qn2`` < ``Qn3`` < ... <
+      ``Mc1`` giving a unique identifier for each plant.
 
-Treatment
-   a factor with levels ``nonchilled`` ``chilled``
+   Type
+      a factor with levels ``Quebec`` ``Mississippi`` giving the origin
+      of the plant
 
-conc
-   a numeric vector of ambient carbon dioxide concentrations (mL/L).
+   Treatment
+      a factor with levels ``nonchilled`` ``chilled``
 
-uptake
-   a numeric vector of carbon dioxide uptake rates (*umol/m^2* sec).
+   conc
+      a numeric vector of ambient carbon dioxide concentrations (mL/L).
 
-Details
-~~~~~~~
+   uptake
+      a numeric vector of carbon dioxide uptake rates (*umol/m^2* sec).
 
-The *CO2* uptake of six plants from Quebec and six plants from
-Mississippi was measured at several levels of ambient *CO2*
-concentration. Half the plants of each type were chilled overnight
-before the experiment was conducted.
+   .. rubric:: Details
+      :name: details
 
-This dataset was originally part of package ``nlme``, and that has
-methods (including for ``[``, ``as.data.frame``, ``plot`` and ``print``)
-for its grouped-data classes.
+   The *CO2* uptake of six plants from Quebec and six plants from
+   Mississippi was measured at several levels of ambient *CO2*
+   concentration. Half the plants of each type were chilled overnight
+   before the experiment was conducted.
 
-Source
-~~~~~~
+   This dataset was originally part of package ``nlme``, and that has
+   methods (including for ``[``, ``as.data.frame``, ``plot`` and
+   ``print``) for its grouped-data classes.
 
-Potvin, C., Lechowicz, M. J. and Tardif, S. (1990) “The statistical
-analysis of ecophysiological response curves obtained from experiments
-involving repeated measures”, *Ecology*, **71**, 1389–1400.
+   .. rubric:: Source
+      :name: source
 
-Pinheiro, J. C. and Bates, D. M. (2000) *Mixed-effects Models in S and
-S-PLUS*, Springer.
+   Potvin, C., Lechowicz, M. J. and Tardif, S. (1990) “The statistical
+   analysis of ecophysiological response curves obtained from
+   experiments involving repeated measures”, *Ecology*, **71**,
+   1389–1400.
 
-Examples
-~~~~~~~~
+   Pinheiro, J. C. and Bates, D. M. (2000) *Mixed-effects Models in S
+   and S-PLUS*, Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(stats); require(graphics)
+   ::
 
-   coplot(uptake ~ conc | Plant, data = CO2, show.given = FALSE, type = "b")
-   ## fit the data for the first plant
-   fm1 <- nls(uptake ~ SSasymp(conc, Asym, lrc, c0),
-      data = CO2, subset = Plant == "Qn1")
-   summary(fm1)
-   ## fit each plant separately
-   fmlist <- list()
-   for (pp in levels(CO2$Plant)) {
-     fmlist[[pp]] <- nls(uptake ~ SSasymp(conc, Asym, lrc, c0),
-         data = CO2, subset = Plant == pp)
-   }
-   ## check the coefficients by plant
-   print(sapply(fmlist, coef), digits = 3)
+      require(stats); require(graphics)
+
+      coplot(uptake ~ conc | Plant, data = CO2, show.given = FALSE, type = "b")
+      ## fit the data for the first plant
+      fm1 <- nls(uptake ~ SSasymp(conc, Asym, lrc, c0),
+         data = CO2, subset = Plant == "Qn1")
+      summary(fm1)
+      ## fit each plant separately
+      fmlist <- list()
+      for (pp in levels(CO2$Plant)) {
+        fmlist[[pp]] <- nls(uptake ~ SSasymp(conc, Asym, lrc, c0),
+            data = CO2, subset = Plant == pp)
+      }
+      ## check the coefficients by plant
+      print(sapply(fmlist, coef), digits = 3)

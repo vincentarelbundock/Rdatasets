@@ -1,73 +1,75 @@
-====== ===============
-storms R Documentation
-====== ===============
+.. container::
 
-Storm tracks data
------------------
+   ====== ===============
+   storms R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Storm tracks data
+      :name: storm-tracks-data
 
-This data is a subset of the NOAA Atlantic hurricane database best track
-data, https://www.nhc.noaa.gov/data/#hurdat. The data includes the
-positions and attributes of 198 tropical storms, measured every six
-hours during the lifetime of a storm.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data is a subset of the NOAA Atlantic hurricane database best
+   track data, https://www.nhc.noaa.gov/data/#hurdat. The data includes
+   the positions and attributes of 198 tropical storms, measured every
+   six hours during the lifetime of a storm.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   storms
+   ::
 
-Format
-~~~~~~
+      storms
 
-A tibble with 10,010 observations and 13 variables:
+   .. rubric:: Format
+      :name: format
 
-name
-   Storm Name
+   A tibble with 10,010 observations and 13 variables:
 
-year,month,day
-   Date of report
+   name
+      Storm Name
 
-hour
-   Hour of report (in UTC)
+   year,month,day
+      Date of report
 
-lat,long
-   Location of storm center
+   hour
+      Hour of report (in UTC)
 
-status
-   Storm classification (Tropical Depression, Tropical Storm, or
-   Hurricane)
+   lat,long
+      Location of storm center
 
-category
-   Saffir-Simpson storm category (estimated from wind speed. -1 =
-   Tropical Depression, 0 = Tropical Storm)
+   status
+      Storm classification (Tropical Depression, Tropical Storm, or
+      Hurricane)
 
-wind
-   storm's maximum sustained wind speed (in knots)
+   category
+      Saffir-Simpson storm category (estimated from wind speed. -1 =
+      Tropical Depression, 0 = Tropical Storm)
 
-pressure
-   Air pressure at the storm's center (in millibars)
+   wind
+      storm's maximum sustained wind speed (in knots)
 
-ts_diameter
-   Diameter of the area experiencing tropical storm strength winds (34
-   knots or above)
+   pressure
+      Air pressure at the storm's center (in millibars)
 
-hu_diameter
-   Diameter of the area experiencing hurricane strength winds (64 knots
-   or above)
+   ts_diameter
+      Diameter of the area experiencing tropical storm strength winds
+      (34 knots or above)
 
-See Also
-~~~~~~~~
+   hu_diameter
+      Diameter of the area experiencing hurricane strength winds (64
+      knots or above)
 
-The script to create the storms data set:
-https://github.com/tidyverse/dplyr/blob/master/data-raw/storms.R
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   The script to create the storms data set:
+   https://github.com/tidyverse/dplyr/blob/master/data-raw/storms.R
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   storms
+   ::
+
+      storms

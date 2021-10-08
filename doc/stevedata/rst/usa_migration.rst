@@ -1,49 +1,51 @@
-============= ===============
-usa_migration R Documentation
-============= ===============
+.. container::
 
-U.S. Inbound/Outbound Migration Data, 1990-2017
------------------------------------------------
+   ============= ===============
+   usa_migration R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: U.S. Inbound/Outbound Migration Data, 1990-2017
+      :name: u.s.-inboundoutbound-migration-data-1990-2017
 
-This data set contains counts/estimates for the number of inbound
-migrants in the U.S as well as outbound migrants of American origin to
-other countries from 1990 to 2017.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data set contains counts/estimates for the number of inbound
+   migrants in the U.S as well as outbound migrants of American origin
+   to other countries from 1990 to 2017.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   usa_migration
+   ::
 
-Format
-~~~~~~
+      usa_migration
 
-A data frame with 3535 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``year``
-   a numeric vector for 1990, 1995, 2000, 2005, 2010, 2015, 2017
+   A data frame with 3535 observations on the following 5 variables.
 
-``country``
-   a character vector/constant for the United States
+   ``year``
+      a numeric vector for 1990, 1995, 2000, 2005, 2010, 2015, 2017
 
-``category``
-   a character vector for whether the ``count`` is inbound to the U.S.
-   from the ``area`` variable or outbound (i.e. American expats) to the
-   ``area`` variable in a given year.
+   ``country``
+      a character vector/constant for the United States
 
-``area``
-   a character vector for the area of origin (if ``category`` ==
-   "Inbound") or destination for American migrants (if ``category`` ==
-   "Outbound")
+   ``category``
+      a character vector for whether the ``count`` is inbound to the
+      U.S. from the ``area`` variable or outbound (i.e. American expats)
+      to the ``area`` variable in a given year.
 
-``count``
-   a numeric vector for the count of inbound/outbound migrants
+   ``area``
+      a character vector for the area of origin (if ``category`` ==
+      "Inbound") or destination for American migrants (if ``category``
+      == "Outbound")
 
-Source
-~~~~~~
+   ``count``
+      a numeric vector for the count of inbound/outbound migrants
 
-United Nations Population Division (DESA)
+   .. rubric:: Source
+      :name: source
+
+   United Nations Population Division (DESA)

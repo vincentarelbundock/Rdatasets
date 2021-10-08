@@ -1,99 +1,103 @@
-========= ===============
-pulpfiber R Documentation
-========= ===============
+.. container::
 
-Pulp Fiber and Paper Data
--------------------------
+   ========= ===============
+   pulpfiber R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Pulp Fiber and Paper Data
+      :name: pulp-fiber-and-paper-data
 
-Measurements of aspects pulp fibers and the paper produced from them.
-Four properties of each are measured in sixty-two samples.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Measurements of aspects pulp fibers and the paper produced from them.
+   Four properties of each are measured in sixty-two samples.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(pulpfiber, package="robustbase")
+   ::
 
-Format
-~~~~~~
+      data(pulpfiber, package="robustbase")
 
-A data frame with 62 observations on the following 8 variables.
+   .. rubric:: Format
+      :name: format
 
-``X1``
-   numeric vector of arithmetic fiber length
+   A data frame with 62 observations on the following 8 variables.
 
-``X2``
-   numeric vector of long fiber fraction
+   ``X1``
+      numeric vector of arithmetic fiber length
 
-``X3``
-   numeric vector of fine fiber fraction
+   ``X2``
+      numeric vector of long fiber fraction
 
-``X4``
-   numeric vector of zero span tensile
+   ``X3``
+      numeric vector of fine fiber fraction
 
-``Y1``
-   numeric vector of breaking length
+   ``X4``
+      numeric vector of zero span tensile
 
-``Y2``
-   numeric vector of elastic modulus
+   ``Y1``
+      numeric vector of breaking length
 
-``Y3``
-   numeric vector of stress at failure
+   ``Y2``
+      numeric vector of elastic modulus
 
-``Y4``
-   numeric vector of burst strength
+   ``Y3``
+      numeric vector of stress at failure
 
-Details
-~~~~~~~
+   ``Y4``
+      numeric vector of burst strength
 
-Cited from the reference article: *The dataset contains measurements of
-properties of pulp fibers and the paper made from them. The aim is to
-investigate relations between pulp fiber properties and the resulting
-paper properties. The dataset contains n = 62 measurements of the
-following four pulp fiber characteristics: arithmetic fiber length, long
-fiber fraction, fine fiber fraction, and zero span tensile. The four
-paper properties that have been measured are breaking length, elastic
-modulus, stress at failure, and burst strength.*
+   .. rubric:: Details
+      :name: details
 
-The goal is to predict the *q = 4* paper properties from the *p = 4*
-fiber characteristics.
+   Cited from the reference article: *The dataset contains measurements
+   of properties of pulp fibers and the paper made from them. The aim is
+   to investigate relations between pulp fiber properties and the
+   resulting paper properties. The dataset contains n = 62 measurements
+   of the following four pulp fiber characteristics: arithmetic fiber
+   length, long fiber fraction, fine fiber fraction, and zero span
+   tensile. The four paper properties that have been measured are
+   breaking length, elastic modulus, stress at failure, and burst
+   strength.*
 
-Author(s)
-~~~~~~~~~
+   The goal is to predict the *q = 4* paper properties from the *p = 4*
+   fiber characteristics.
 
-port to R and this help page: Martin Maechler
+   .. rubric:: Author(s)
+      :name: authors
 
-Source
-~~~~~~
+   port to R and this help page: Martin Maechler
 
-Rousseeuw, P. J., Van Aelst, S., Van Driessen, K., and Agulló, J. (2004)
-Robust multivariate regression; *Technometrics* **46**, 293–305.
+   .. rubric:: Source
+      :name: source
 
-Till 2016 available from
-``http://users.ugent.be/~svaelst/data/pulpfiber.txt``
+   Rousseeuw, P. J., Van Aelst, S., Van Driessen, K., and Agulló, J.
+   (2004) Robust multivariate regression; *Technometrics* **46**,
+   293–305.
 
-References
-~~~~~~~~~~
+   Till 2016 available from
+   ``http://users.ugent.be/~svaelst/data/pulpfiber.txt``
 
-Lee, J. (1992) *Relationships Between Properties of Pulp-Fibre and
-Paper*, unpublished doctoral thesis, U. Toronto, Faculty of Forestry.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Lee, J. (1992) *Relationships Between Properties of Pulp-Fibre and
+   Paper*, unpublished doctoral thesis, U. Toronto, Faculty of Forestry.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(pulpfiber)
-   str(pulpfiber)
+   ::
 
-   pairs(pulpfiber, gap=.1)
-   ## 2 blocks of 4 ..
-   c1 <- cov(pulpfiber)
-   cR <- covMcd(pulpfiber)
-   ## how different are they: The robust estimate has more clear high correlations:
-   symnum(cov2cor(c1))
-   symnum(cov2cor(cR$cov))
+      data(pulpfiber)
+      str(pulpfiber)
+
+      pairs(pulpfiber, gap=.1)
+      ## 2 blocks of 4 ..
+      c1 <- cov(pulpfiber)
+      cR <- covMcd(pulpfiber)
+      ## how different are they: The robust estimate has more clear high correlations:
+      symnum(cov2cor(c1))
+      symnum(cov2cor(cR$cov))

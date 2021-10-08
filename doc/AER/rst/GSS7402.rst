@@ -1,146 +1,148 @@
-======= ===============
-GSS7402 R Documentation
-======= ===============
+.. container::
 
-US General Social Survey 1974–2002
-----------------------------------
+   ======= ===============
+   GSS7402 R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: US General Social Survey 1974–2002
+      :name: us-general-social-survey-19742002
 
-Cross-section data for 9120 women taken from every fourth year of the US
-General Social Survey between 1974 and 2002 to investigate the
-determinants of fertility.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Cross-section data for 9120 women taken from every fourth year of the
+   US General Social Survey between 1974 and 2002 to investigate the
+   determinants of fertility.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("GSS7402")
+   ::
 
-Format
-~~~~~~
+      data("GSS7402")
 
-A data frame containing 9120 observations on 10 variables.
+   .. rubric:: Format
+      :name: format
 
-kids
-   Number of children. This is coded as a numerical variable but note
-   that the value ``8`` actually encompasses 8 or more children.
+   A data frame containing 9120 observations on 10 variables.
 
-age
-   Age of respondent.
+   kids
+      Number of children. This is coded as a numerical variable but note
+      that the value ``8`` actually encompasses 8 or more children.
 
-education
-   Highest year of school completed.
+   age
+      Age of respondent.
 
-year
-   GSS year for respondent.
+   education
+      Highest year of school completed.
 
-siblings
-   Number of brothers and sisters.
+   year
+      GSS year for respondent.
 
-agefirstbirth
-   Woman's age at birth of first child.
+   siblings
+      Number of brothers and sisters.
 
-ethnicity
-   factor indicating ethnicity. Is the individual Caucasian (``"cauc"``)
-   or not (``"other"``)?
+   agefirstbirth
+      Woman's age at birth of first child.
 
-city16
-   factor. Did the respondent live in a city (with population > 50,000)
-   at age 16?
+   ethnicity
+      factor indicating ethnicity. Is the individual Caucasian
+      (``"cauc"``) or not (``"other"``)?
 
-lowincome16
-   factor. Was the income below average at age 16?
+   city16
+      factor. Did the respondent live in a city (with population >
+      50,000) at age 16?
 
-immigrant
-   factor. Was the respondent (or both parents) born abroad?
+   lowincome16
+      factor. Was the income below average at age 16?
 
-Details
-~~~~~~~
+   immigrant
+      factor. Was the respondent (or both parents) born abroad?
 
-This subset of the US General Social Survey (GSS) for every fourth year
-between 1974 and 2002 has been selected by Winkelmann and Boes (2009) to
-investigate the determinants of fertility. To do so they typically
-restrict their empirical analysis to the women for which the completed
-fertility is (assumed to be) known, employing the common cutoff of 40
-years. Both, the average number of children borne to a woman and the
-probability of being childless, are of interest.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This subset of the US General Social Survey (GSS) for every fourth
+   year between 1974 and 2002 has been selected by Winkelmann and Boes
+   (2009) to investigate the determinants of fertility. To do so they
+   typically restrict their empirical analysis to the women for which
+   the completed fertility is (assumed to be) known, employing the
+   common cutoff of 40 years. Both, the average number of children borne
+   to a woman and the probability of being childless, are of interest.
 
-Online complements to Winkelmann and Boes (2009).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Winkelmann and Boes (2009).
 
-Winkelmann, R., and Boes, S. (2009). *Analysis of Microdata*, 2nd ed.
-Berlin and Heidelberg: Springer-Verlag.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Winkelmann, R., and Boes, S. (2009). *Analysis of Microdata*, 2nd ed.
+   Berlin and Heidelberg: Springer-Verlag.
 
-``WinkelmannBoes2009``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``WinkelmannBoes2009``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## completed fertility subset
-   data("GSS7402", package = "AER")
-   gss40 <- subset(GSS7402, age >= 40)
+   ::
 
-   ## Chapter 1
-   ## exploratory statistics
-   gss_kids <- prop.table(table(gss40$kids))
-   names(gss_kids)[9] <- "8+"
+      ## completed fertility subset
+      data("GSS7402", package = "AER")
+      gss40 <- subset(GSS7402, age >= 40)
 
-   gss_zoo <- as.matrix(with(gss40, cbind(
-     tapply(kids, year, mean),
-     tapply(kids, year, function(x) mean(x <= 0)),
-     tapply(education, year, mean))))
-   colnames(gss_zoo) <- c("Number of children",
-     "Proportion childless", "Years of schooling")
-   gss_zoo <- zoo(gss_zoo, sort(unique(gss40$year)))
+      ## Chapter 1
+      ## exploratory statistics
+      gss_kids <- prop.table(table(gss40$kids))
+      names(gss_kids)[9] <- "8+"
 
-   ## visualizations instead of tables
-   barplot(gss_kids,
-     xlab = "Number of children ever borne to women (age 40+)",
-     ylab = "Relative frequencies")
+      gss_zoo <- as.matrix(with(gss40, cbind(
+        tapply(kids, year, mean),
+        tapply(kids, year, function(x) mean(x <= 0)),
+        tapply(education, year, mean))))
+      colnames(gss_zoo) <- c("Number of children",
+        "Proportion childless", "Years of schooling")
+      gss_zoo <- zoo(gss_zoo, sort(unique(gss40$year)))
 
-   library("lattice")
-   trellis.par.set(theme = canonical.theme(color = FALSE))
-   print(xyplot(gss_zoo[,3:1], type = "b", xlab = "Year"))
+      ## visualizations instead of tables
+      barplot(gss_kids,
+        xlab = "Number of children ever borne to women (age 40+)",
+        ylab = "Relative frequencies")
 
-
-   ## Chapter 3, Example 3.14
-   ## Table 3.1
-   gss40$nokids <- factor(gss40$kids <= 0, levels = c(FALSE, TRUE), labels = c("no", "yes"))
-   gss40$trend <- gss40$year - 1974
-   nokids_p1 <- glm(nokids ~ 1, data = gss40, family = binomial(link = "probit"))
-   nokids_p2 <- glm(nokids ~ trend, data = gss40, family = binomial(link = "probit"))
-   nokids_p3 <- glm(nokids ~ trend + education + ethnicity + siblings,
-     data = gss40, family = binomial(link = "probit"))
-   lrtest(nokids_p1, nokids_p2, nokids_p3)
+      library("lattice")
+      trellis.par.set(theme = canonical.theme(color = FALSE))
+      print(xyplot(gss_zoo[,3:1], type = "b", xlab = "Year"))
 
 
-   ## Chapter 4, Figure 4.4
-   library("effects")
-   nokids_p3_ef <- effect("education", nokids_p3, xlevels = list(education = 0:20))
-   plot(nokids_p3_ef, rescale.axis = FALSE, ylim = c(0, 0.3))
+      ## Chapter 3, Example 3.14
+      ## Table 3.1
+      gss40$nokids <- factor(gss40$kids <= 0, levels = c(FALSE, TRUE), labels = c("no", "yes"))
+      gss40$trend <- gss40$year - 1974
+      nokids_p1 <- glm(nokids ~ 1, data = gss40, family = binomial(link = "probit"))
+      nokids_p2 <- glm(nokids ~ trend, data = gss40, family = binomial(link = "probit"))
+      nokids_p3 <- glm(nokids ~ trend + education + ethnicity + siblings,
+        data = gss40, family = binomial(link = "probit"))
+      lrtest(nokids_p1, nokids_p2, nokids_p3)
 
 
-   ## Chapter 8, Example 8.11
-   kids_pois <- glm(kids ~ education + trend + ethnicity + immigrant + lowincome16 + city16,
-     data = gss40, family = poisson)
-   library("MASS")
-   kids_nb <- glm.nb(kids ~ education + trend + ethnicity + immigrant + lowincome16 + city16,
-     data = gss40)
-   lrtest(kids_pois, kids_nb)
+      ## Chapter 4, Figure 4.4
+      library("effects")
+      nokids_p3_ef <- effect("education", nokids_p3, xlevels = list(education = 0:20))
+      plot(nokids_p3_ef, rescale.axis = FALSE, ylim = c(0, 0.3))
 
 
-   ## More examples can be found in:
-   ## help("WinkelmannBoes2009")
+      ## Chapter 8, Example 8.11
+      kids_pois <- glm(kids ~ education + trend + ethnicity + immigrant + lowincome16 + city16,
+        data = gss40, family = poisson)
+      library("MASS")
+      kids_nb <- glm.nb(kids ~ education + trend + ethnicity + immigrant + lowincome16 + city16,
+        data = gss40)
+      lrtest(kids_pois, kids_nb)
+
+
+      ## More examples can be found in:
+      ## help("WinkelmannBoes2009")

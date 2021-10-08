@@ -1,135 +1,137 @@
-========= ===============
-Schooling R Documentation
-========= ===============
+.. container::
 
-Wages and Schooling
--------------------
+   ========= ===============
+   Schooling R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Wages and Schooling
+      :name: wages-and-schooling
 
-a cross-section from 1976
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 3010
+   a cross-section from 1976
 
-*observation* : individuals
+   *number of observations* : 3010
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Schooling)
+   ::
 
-Format
-~~~~~~
+      data(Schooling)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-smsa66
-   lived in SMSA in 1966 ?
+   A dataframe containing :
 
-smsa76
-   lived in SMSA in 1976 ?
+   smsa66
+      lived in SMSA in 1966 ?
 
-nearc2
-   grew up near 2-yr college ?
+   smsa76
+      lived in SMSA in 1976 ?
 
-nearc4
-   grew up near 4-yr college ?
+   nearc2
+      grew up near 2-yr college ?
 
-nearc4a
-   grew up near 4-year public college ?
+   nearc4
+      grew up near 4-yr college ?
 
-nearc4b
-   grew up near 4-year private college ?
+   nearc4a
+      grew up near 4-year public college ?
 
-ed76
-   education in 1976
+   nearc4b
+      grew up near 4-year private college ?
 
-ed66
-   education in 1966
+   ed76
+      education in 1976
 
-age76
-   age in 1976
+   ed66
+      education in 1966
 
-daded
-   dad's education (imputed avg if missing)
+   age76
+      age in 1976
 
-nodaded
-   dad's education imputed ?
+   daded
+      dad's education (imputed avg if missing)
 
-momed
-   mother's education
+   nodaded
+      dad's education imputed ?
 
-nomomed
-   mom's education imputed ?
+   momed
+      mother's education
 
-momdad14
-   lived with mom and dad at age 14 ?
+   nomomed
+      mom's education imputed ?
 
-sinmom14
-   single mom at age 14 ?
+   momdad14
+      lived with mom and dad at age 14 ?
 
-step14
-   step parent at age 14 ?
+   sinmom14
+      single mom at age 14 ?
 
-south66
-   lived in south in 1966 ?
+   step14
+      step parent at age 14 ?
 
-south76
-   lived in south in 1976 ?
+   south66
+      lived in south in 1966 ?
 
-lwage76
-   log wage in 1976 (outliers trimmed)
+   south76
+      lived in south in 1976 ?
 
-famed
-   mom-dad education class (1-9)
+   lwage76
+      log wage in 1976 (outliers trimmed)
 
-black
-   black ?
+   famed
+      mom-dad education class (1-9)
 
-wage76
-   wage in 1976 (raw, cents per hour)
+   black
+      black ?
 
-enroll76
-   enrolled in 1976 ?
+   wage76
+      wage in 1976 (raw, cents per hour)
 
-kww
-   the ``kww`` score
+   enroll76
+      enrolled in 1976 ?
 
-iqscore
-   a normed IQ score
+   kww
+      the ``kww`` score
 
-mar76
-   married in 1976 ?
+   iqscore
+      a normed IQ score
 
-libcrd14
-   library card in home at age 14 ?
+   mar76
+      married in 1976 ?
 
-exp76
-   experience in 1976
+   libcrd14
+      library card in home at age 14 ?
 
-Source
-~~~~~~
+   exp76
+      experience in 1976
 
-National Longitudinal Survey of Young Men (NLSYM).
+   .. rubric:: Source
+      :name: source
 
-Card, D. (1995) *Using geographical variation in college proximity to
-estimate the return to schooling* *in* Christofides, L.N., E.K. Grant
-and R. Swidinsky (1995) *Aspects of labour market behaviour : essays in
-honour of John Vanderkamp*, University of Toronto Press, Toronto.
+   National Longitudinal Survey of Young Men (NLSYM).
 
-References
-~~~~~~~~~~
+   Card, D. (1995) *Using geographical variation in college proximity to
+   estimate the return to schooling* *in* Christofides, L.N., E.K. Grant
+   and R. Swidinsky (1995) *Aspects of labour market behaviour : essays
+   in honour of John Vanderkamp*, University of Toronto Press, Toronto.
 
-Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley and
-Sons, chapter 5.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+   and Sons, chapter 5.
 
-``RetSchool``, ``Index.Source``, ``Index.Economics``,
-``Index.Econometrics``, ``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``RetSchool``, ``Index.Source``, ``Index.Economics``,
+   ``Index.Econometrics``, ``Index.Observations``

@@ -1,132 +1,134 @@
-======== ===============
-Baseball R Documentation
-======== ===============
+.. container::
 
-Baseball Data
--------------
+   ======== ===============
+   Baseball R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Baseball Data
+      :name: baseball-data
 
-Baseball data.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Baseball data.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("Baseball")
+   ::
 
-Format
-~~~~~~
+      data("Baseball")
 
-A data frame with 322 observations and 25 variables.
+   .. rubric:: Format
+      :name: format
 
-name1
-   player's first name.
+   A data frame with 322 observations and 25 variables.
 
-name2
-   player's last name.
+   name1
+      player's first name.
 
-atbat86
-   times at Bat: number of official plate appearances by a hitter. It
-   counts as an official at-bat as long as the batter does not walk,
-   sacrifice, get hit by a pitch or reach base due to catcher's
-   interference.
+   name2
+      player's last name.
 
-hits86
-   hits.
+   atbat86
+      times at Bat: number of official plate appearances by a hitter. It
+      counts as an official at-bat as long as the batter does not walk,
+      sacrifice, get hit by a pitch or reach base due to catcher's
+      interference.
 
-homer86
-   home runs.
+   hits86
+      hits.
 
-runs86
-   the number of runs scored by a player. A run is scored by an
-   offensive player who advances from batter to runner and touches
-   first, second, third and home base in that order without being put
-   out.
+   homer86
+      home runs.
 
-rbi86
-   Runs Batted In: A hitter earns a run batted in when he drives in a
-   run via a hit, walk, sacrifice (bunt or fly) fielder's choice,
-   hit-batsman or on an error (when the official scorer rules that the
-   run would have scored anyway).
+   runs86
+      the number of runs scored by a player. A run is scored by an
+      offensive player who advances from batter to runner and touches
+      first, second, third and home base in that order without being put
+      out.
 
-walks86
-   A “walk” (or “base on balls”) is an award of first base granted to a
-   batter who receives four pitches outside the strike zone.
+   rbi86
+      Runs Batted In: A hitter earns a run batted in when he drives in a
+      run via a hit, walk, sacrifice (bunt or fly) fielder's choice,
+      hit-batsman or on an error (when the official scorer rules that
+      the run would have scored anyway).
 
-years
-   Years in the Major Leagues. Seems to count all years a player has
-   actually played in the Major Leagues, not necessarily consecutive.
+   walks86
+      A “walk” (or “base on balls”) is an award of first base granted to
+      a batter who receives four pitches outside the strike zone.
 
-atbat
-   career times at bat.
+   years
+      Years in the Major Leagues. Seems to count all years a player has
+      actually played in the Major Leagues, not necessarily consecutive.
 
-hits
-   career hits.
+   atbat
+      career times at bat.
 
-homeruns
-   career home runs.
+   hits
+      career hits.
 
-runs
-   career runs.
+   homeruns
+      career home runs.
 
-rbi
-   career runs batted in.
+   runs
+      career runs.
 
-walks
-   career walks.
+   rbi
+      career runs batted in.
 
-league86
-   player's league.
+   walks
+      career walks.
 
-div86
-   player's division.
+   league86
+      player's league.
 
-team86
-   player's team.
+   div86
+      player's division.
 
-posit86
-   player's position (see ``Hitters``).
+   team86
+      player's team.
 
-outs86
-   number of putouts (see ``Hitters``)
+   posit86
+      player's position (see ``Hitters``).
 
-assist86
-   number of assists (see ``Hitters``)
+   outs86
+      number of putouts (see ``Hitters``)
 
-error86
-   number of assists (see ``Hitters``)
+   assist86
+      number of assists (see ``Hitters``)
 
-sal87
-   annual salary on opening day (in USD 1000).
+   error86
+      number of assists (see ``Hitters``)
 
-league87
-   league in 1987.
+   sal87
+      annual salary on opening day (in USD 1000).
 
-team87
-   team in 1987.
+   league87
+      league in 1987.
 
-Source
-~~~~~~
+   team87
+      team in 1987.
 
-SAS System for Statistical Graphics, First Edition, page A2.3
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   SAS System for Statistical Graphics, First Edition, page A2.3
 
-M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute, Cary,
-NC.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+   Cary, NC.
 
-``Hitters``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Hitters``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("Baseball")
+   ::
+
+      data("Baseball")

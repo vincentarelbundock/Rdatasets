@@ -1,154 +1,161 @@
-===== ===============
-bdims R Documentation
-===== ===============
+.. container::
 
-Body measurements of 507 physically active individuals.
--------------------------------------------------------
+   ===== ===============
+   bdims R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Body measurements of 507 physically active individuals.
+      :name: body-measurements-of-507-physically-active-individuals.
 
-Body girth measurements and skeletal diameter measurements, as well as
-age, weight, height and gender, are given for 507 physically active
-individuals - 247 men and 260 women. These data can be used to provide
-statistics students practice in the art of data analysis. Such analyses
-range from simple descriptive displays to more complicated multivariate
-analyses such as multiple regression and discriminant analysis.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Body girth measurements and skeletal diameter measurements, as well
+   as age, weight, height and gender, are given for 507 physically
+   active individuals - 247 men and 260 women. These data can be used to
+   provide statistics students practice in the art of data analysis.
+   Such analyses range from simple descriptive displays to more
+   complicated multivariate analyses such as multiple regression and
+   discriminant analysis.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   bdims
+   ::
 
-Format
-~~~~~~
+      bdims
 
-A data frame with 507 observations on the following 25 variables.
+   .. rubric:: Format
+      :name: format
 
-bia_di
-   A numerical vector, respondent's biacromial diameter in centimeters.
+   A data frame with 507 observations on the following 25 variables.
 
-bii_di
-   A numerical vector, respondent's biiliac diameter (pelvic breadth) in
-   centimeters.
+   bia_di
+      A numerical vector, respondent's biacromial diameter in
+      centimeters.
 
-bit_di
-   A numerical vector, respondent's bitrochanteric diameter in
-   centimeters.
+   bii_di
+      A numerical vector, respondent's biiliac diameter (pelvic breadth)
+      in centimeters.
 
-che_de
-   A numerical vector, respondent's chest depth in centimeters, measured
-   between spine and sternum at nipple level, mid-expiration.
+   bit_di
+      A numerical vector, respondent's bitrochanteric diameter in
+      centimeters.
 
-che_di
-   A numerical vector, respondent's chest diameter in centimeters,
-   measured at nipple level, mid-expiration.
+   che_de
+      A numerical vector, respondent's chest depth in centimeters,
+      measured between spine and sternum at nipple level,
+      mid-expiration.
 
-elb_di
-   A numerical vector, respondent's elbow diameter in centimeters,
-   measured as sum of two elbows.
+   che_di
+      A numerical vector, respondent's chest diameter in centimeters,
+      measured at nipple level, mid-expiration.
 
-wri_di
-   A numerical vector, respondent's wrist diameter in centimeters,
-   measured as sum of two wrists.
+   elb_di
+      A numerical vector, respondent's elbow diameter in centimeters,
+      measured as sum of two elbows.
 
-kne_di
-   A numerical vector, respondent's knee diameter in centimeters,
-   measured as sum of two knees.
+   wri_di
+      A numerical vector, respondent's wrist diameter in centimeters,
+      measured as sum of two wrists.
 
-ank_di
-   A numerical vector, respondent's ankle diameter in centimeters,
-   measured as sum of two ankles.
+   kne_di
+      A numerical vector, respondent's knee diameter in centimeters,
+      measured as sum of two knees.
 
-sho_gi
-   A numerical vector, respondent's shoulder girth in centimeters,
-   measured over deltoid muscles.
+   ank_di
+      A numerical vector, respondent's ankle diameter in centimeters,
+      measured as sum of two ankles.
 
-che_gi
-   A numerical vector, respondent's chest girth in centimeters, measured
-   at nipple line in males and just above breast tissue in females,
-   mid-expiration.
+   sho_gi
+      A numerical vector, respondent's shoulder girth in centimeters,
+      measured over deltoid muscles.
 
-wai_gi
-   A numerical vector, respondent's waist girth in centimeters, measured
-   at the narrowest part of torso below the rib cage as average of
-   contracted and relaxed position.
+   che_gi
+      A numerical vector, respondent's chest girth in centimeters,
+      measured at nipple line in males and just above breast tissue in
+      females, mid-expiration.
 
-nav_gi
-   A numerical vector, respondent's navel (abdominal) girth in
-   centimeters, measured at umbilicus and iliac crest using iliac crest
-   as a landmark.
+   wai_gi
+      A numerical vector, respondent's waist girth in centimeters,
+      measured at the narrowest part of torso below the rib cage as
+      average of contracted and relaxed position.
 
-hip_gi
-   A numerical vector, respondent's hip girth in centimeters, measured
-   at at level of bitrochanteric diameter.
+   nav_gi
+      A numerical vector, respondent's navel (abdominal) girth in
+      centimeters, measured at umbilicus and iliac crest using iliac
+      crest as a landmark.
 
-thi_gi
-   A numerical vector, respondent's thigh girth in centimeters, measured
-   below gluteal fold as the average of right and left girths.
+   hip_gi
+      A numerical vector, respondent's hip girth in centimeters,
+      measured at at level of bitrochanteric diameter.
 
-bic_gi
-   A numerical vector, respondent's bicep girth in centimeters, measured
-   when flexed as the average of right and left girths.
+   thi_gi
+      A numerical vector, respondent's thigh girth in centimeters,
+      measured below gluteal fold as the average of right and left
+      girths.
 
-for_gi
-   A numerical vector, respondent's forearm girth in centimeters,
-   measured when extended, palm up as the average of right and left
-   girths.
+   bic_gi
+      A numerical vector, respondent's bicep girth in centimeters,
+      measured when flexed as the average of right and left girths.
 
-kne_gi
-   A numerical vector, respondent's knee diameter in centimeters,
-   measured as sum of two knees.
+   for_gi
+      A numerical vector, respondent's forearm girth in centimeters,
+      measured when extended, palm up as the average of right and left
+      girths.
 
-cal_gi
-   A numerical vector, respondent's calf maximum girth in centimeters,
-   measured as average of right and left girths.
+   kne_gi
+      A numerical vector, respondent's knee diameter in centimeters,
+      measured as sum of two knees.
 
-ank_gi
-   A numerical vector, respondent's ankle minimum girth in centimeters,
-   measured as average of right and left girths.
+   cal_gi
+      A numerical vector, respondent's calf maximum girth in
+      centimeters, measured as average of right and left girths.
 
-wri_gi
-   A numerical vector, respondent's wrist minimum girth in centimeters,
-   measured as average of right and left girths.
+   ank_gi
+      A numerical vector, respondent's ankle minimum girth in
+      centimeters, measured as average of right and left girths.
 
-age
-   A numerical vector, respondent's age in years.
+   wri_gi
+      A numerical vector, respondent's wrist minimum girth in
+      centimeters, measured as average of right and left girths.
 
-wgt
-   A numerical vector, respondent's weight in kilograms.
+   age
+      A numerical vector, respondent's age in years.
 
-hgt
-   A numerical vector, respondent's height in centimeters.
+   wgt
+      A numerical vector, respondent's weight in kilograms.
 
-sex
-   A categorical vector, 1 if the respondent is male, 0 if female.
+   hgt
+      A numerical vector, respondent's height in centimeters.
 
-Source
-~~~~~~
+   sex
+      A categorical vector, 1 if the respondent is male, 0 if female.
 
-Heinz G, Peterson LJ, Johnson RW, Kerk CJ. 2003. Exploring Relationships
-in Body Dimensions. Journal of Statistics Education 11(2).
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Heinz G, Peterson LJ, Johnson RW, Kerk CJ. 2003. Exploring
+   Relationships in Body Dimensions. Journal of Statistics Education
+   11(2).
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
-   ggplot(bdims, aes(x = hgt)) +
-     geom_histogram(binwidth = 5)
-   ggplot(bdims, aes(x = hgt, y = wgt)) +
-     geom_point() +
-     labs(x = "Height", y = "Weight")
+      library(ggplot2)
+      ggplot(bdims, aes(x = hgt)) +
+        geom_histogram(binwidth = 5)
+      ggplot(bdims, aes(x = hgt, y = wgt)) +
+        geom_point() +
+        labs(x = "Height", y = "Weight")
 
-   ggplot(bdims, aes(x = hgt, y = sho_gi)) +
-     geom_point() +
-     labs(x = "Height", y = "Shoulder girth")
+      ggplot(bdims, aes(x = hgt, y = sho_gi)) +
+        geom_point() +
+        labs(x = "Height", y = "Shoulder girth")
 
-   ggplot(bdims, aes(x = hgt, y = hip_gi)) +
-     geom_point() +
-     labs(x = "Height", y = "Hip girth")
+      ggplot(bdims, aes(x = hgt, y = hip_gi)) +
+        geom_point() +
+        labs(x = "Height", y = "Hip girth")

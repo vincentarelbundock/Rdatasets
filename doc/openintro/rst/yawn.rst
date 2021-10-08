@@ -1,47 +1,49 @@
-==== ===============
-yawn R Documentation
-==== ===============
+.. container::
 
-Contagiousness of yawning
--------------------------
+   ==== ===============
+   yawn R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Contagiousness of yawning
+      :name: contagiousness-of-yawning
 
-An experiment conducted by the MythBusters, a science entertainment TV
-program on the Discovery Channel, tested if a person can be
-subconsciously influenced into yawning if another person near them
-yawns. 50 people were randomly assigned to two groups: 34 to a group
-where a person near them yawned (treatment) and 16 to a group where
-there wasn't a person yawning near them (control).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   An experiment conducted by the MythBusters, a science entertainment
+   TV program on the Discovery Channel, tested if a person can be
+   subconsciously influenced into yawning if another person near them
+   yawns. 50 people were randomly assigned to two groups: 34 to a group
+   where a person near them yawned (treatment) and 16 to a group where
+   there wasn't a person yawning near them (control).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   yawn
+   ::
 
-Format
-~~~~~~
+      yawn
 
-A data frame with 50 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-result
-   a factor with levels ``not yawn`` ``yawn``
+   A data frame with 50 observations on the following 2 variables.
 
-group
-   a factor with levels ``ctrl`` ``trmt``
+   result
+      a factor with levels ``not yawn`` ``yawn``
 
-Source
-~~~~~~
+   group
+      a factor with levels ``ctrl`` ``trmt``
 
-MythBusters, Season 3, Episode 28.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   MythBusters, Season 3, Episode 28.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   yawn
+      yawn

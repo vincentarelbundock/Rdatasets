@@ -1,51 +1,54 @@
-======== ===============
-Melanoma R Documentation
-======== ===============
+.. container::
 
-Survival from Malignant Melanoma
---------------------------------
+   ======== ===============
+   Melanoma R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Survival from Malignant Melanoma
+      :name: survival-from-malignant-melanoma
 
-The ``Melanoma`` data frame has data on 205 patients in Denmark with
-malignant melanoma.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Melanoma`` data frame has data on 205 patients in Denmark with
+   malignant melanoma.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Melanoma
+   ::
 
-Format
-~~~~~~
+      Melanoma
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``time``
-   survival time in days, possibly censored.
+   This data frame contains the following columns:
 
-``status``
-   ``1`` died from melanoma, ``2`` alive, ``3`` dead from other causes.
+   ``time``
+      survival time in days, possibly censored.
 
-``sex``
-   ``1`` = male, ``0`` = female.
+   ``status``
+      ``1`` died from melanoma, ``2`` alive, ``3`` dead from other
+      causes.
 
-``age``
-   age in years.
+   ``sex``
+      ``1`` = male, ``0`` = female.
 
-``year``
-   of operation.
+   ``age``
+      age in years.
 
-``thickness``
-   tumour thickness in mm.
+   ``year``
+      of operation.
 
-``ulcer``
-   ``1`` = presence, ``0`` = absence.
+   ``thickness``
+      tumour thickness in mm.
 
-Source
-~~~~~~
+   ``ulcer``
+      ``1`` = presence, ``0`` = absence.
 
-P. K. Andersen, O. Borgan, R. D. Gill and N. Keiding (1993) *Statistical
-Models based on Counting Processes.* Springer.
+   .. rubric:: Source
+      :name: source
+
+   P. K. Andersen, O. Borgan, R. D. Gill and N. Keiding (1993)
+   *Statistical Models based on Counting Processes.* Springer.

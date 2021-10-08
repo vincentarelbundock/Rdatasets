@@ -1,43 +1,45 @@
-========== ===============
-arg_tariff R Documentation
-========== ===============
+.. container::
 
-Simple Mean Tariff Rate for Argentina
--------------------------------------
+   ========== ===============
+   arg_tariff R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Simple Mean Tariff Rate for Argentina
+      :name: simple-mean-tariff-rate-for-argentina
 
-Simple mean tariff rate for Argentina, starting in 1980. The goal is to
-keep these data current.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Simple mean tariff rate for Argentina, starting in 1980. The goal is
+   to keep these data current.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   arg_tariff
+   ::
 
-Format
-~~~~~~
+      arg_tariff
 
-A data frame with three variables:
+   .. rubric:: Format
+      :name: format
 
-``country``
-   country name (Argentina)
+   A data frame with three variables:
 
-``year``
-   the year
+   ``country``
+      country name (Argentina)
 
-``tariffrate``
-   the simple mean tariff rate for Argentina on all products (as a
-   percentage)
+   ``year``
+      the year
 
-Details
-~~~~~~~
+   ``tariffrate``
+      the simple mean tariff rate for Argentina on all products (as a
+      percentage)
 
-Data come from various sources. World Bank estimates are used for
-1980-1984 and 2010-2018, but see also Lora's (2012) report for the
-Inter-American Development Bank. The 1980-1984 estimates are actually
-means for 1980-1 and 1982-4 via Laird and Nogues' (1989) article in the
-World Bank Economic Review.
+   .. rubric:: Details
+      :name: details
+
+   Data come from various sources. World Bank estimates are used for
+   1980-1984 and 2010-2018, but see also Lora's (2012) report for the
+   Inter-American Development Bank. The 1980-1984 estimates are actually
+   means for 1980-1 and 1982-4 via Laird and Nogues' (1989) article in
+   the World Bank Economic Review.

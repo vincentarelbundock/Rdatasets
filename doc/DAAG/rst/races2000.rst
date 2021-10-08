@@ -1,54 +1,56 @@
-========= ===============
-races2000 R Documentation
-========= ===============
+.. container::
 
-Scottish Hill Races Data - 2000
--------------------------------
+   ========= ===============
+   races2000 R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Scottish Hill Races Data - 2000
+      :name: scottish-hill-races-data---2000
 
-The record times in 2000 for 77 Scottish long distance races. We believe
-the data are, for the most part, trustworthy. However, the ``dist``
-variable for Caerketton (record 58) seems to have been variously
-recorded as 1.5 mi and 2.5 mi.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The record times in 2000 for 77 Scottish long distance races. We
+   believe the data are, for the most part, trustworthy. However, the
+   ``dist`` variable for Caerketton (record 58) seems to have been
+   variously recorded as 1.5 mi and 2.5 mi.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   races2000
+   ::
 
-Format
-~~~~~~
+      races2000
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-dist
-   distance, in miles (on the map)
+   This data frame contains the following columns:
 
-climb
-   total height gained during the route, in feet
+   dist
+      distance, in miles (on the map)
 
-time
-   record time in hours
+   climb
+      total height gained during the route, in feet
 
-timef
-   record time in hours for females
+   time
+      record time in hours
 
-type
-   a factor, with levels indicating type of race, i.e. hill, marathon,
-   relay, uphill or other
+   timef
+      record time in hours for females
 
-Source
-~~~~~~
+   type
+      a factor, with levels indicating type of race, i.e. hill,
+      marathon, relay, uphill or other
 
-The Scottish Running Resource, http://www.hillrunning.co.uk
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   The Scottish Running Resource, http://www.hillrunning.co.uk
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-       pairs(races2000[,-5])
+   ::
+
+          pairs(races2000[,-5])

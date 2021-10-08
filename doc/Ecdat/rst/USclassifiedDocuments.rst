@@ -1,103 +1,106 @@
-===================== ===============
-USclassifiedDocuments R Documentation
-===================== ===============
+.. container::
 
-Official Secrecy of the United States Government
-------------------------------------------------
+   ===================== ===============
+   USclassifiedDocuments R Documentation
+   ===================== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Official Secrecy of the United States Government
+      :name: official-secrecy-of-the-united-states-government
 
-Data on classification activity of the United States government.
+   .. rubric:: Description
+      :name: description
 
-Fitzpatrick (2013) notes that the dramatic jump in derivative
-classification activity (``DerivClassActivity``) that occurred in 2009
-coincided with "New guidance issued to include electronic environment".
-Apart from the jump in 2009, the ``DerivClassActivity`` tended to
-increase by roughly 12 percent per year (with a standard deviation of
-the increase in the natural logarithm of ``DerivClassActivity`` of
-0.18).
+   Data on classification activity of the United States government.
 
-Usage
-~~~~~
+   Fitzpatrick (2013) notes that the dramatic jump in derivative
+   classification activity (``DerivClassActivity``) that occurred in
+   2009 coincided with "New guidance issued to include electronic
+   environment". Apart from the jump in 2009, the ``DerivClassActivity``
+   tended to increase by roughly 12 percent per year (with a standard
+   deviation of the increase in the natural logarithm of
+   ``DerivClassActivity`` of 0.18).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(USclassifiedDocuments)
+   ::
 
-Format
-~~~~~~
+      data(USclassifiedDocuments)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-year
-   the calendar year
+   A dataframe containing :
 
-OCAuthority
-   Number of people in the government designated as Original
-   Classification Authorities for the indicated ``year``.
+   year
+      the calendar year
 
-OCActivity
-   Original classification activity for the indicated year: These are
-   the number of documents created with an original classification,
-   i.e., so designated by an official Original Classification Authority.
+   OCAuthority
+      Number of people in the government designated as Original
+      Classification Authorities for the indicated ``year``.
 
-TenYearDeclass
-   Percent of ``OCActivity`` covered by the 10 year declassification
-   rules.
+   OCActivity
+      Original classification activity for the indicated year: These are
+      the number of documents created with an original classification,
+      i.e., so designated by an official Original Classification
+      Authority.
 
-DerivClassActivity
-   Derivative classification activity for the indicated year: These are
-   the number of documents created that claim another document as the
-   authority for classification.
+   TenYearDeclass
+      Percent of ``OCActivity`` covered by the 10 year declassification
+      rules.
 
-Details
-~~~~~~~
+   DerivClassActivity
+      Derivative classification activity for the indicated year: These
+      are the number of documents created that claim another document as
+      the authority for classification.
 
-The lag 1 autocorrelation of the first difference of the logarithms of
-``DerivClassActivity`` through 2008 is ``-0.52``. However, because there
-are only 13 numbers (12 differences), this negative correlation is not
-statistically significant.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The lag 1 autocorrelation of the first difference of the logarithms
+   of ``DerivClassActivity`` through 2008 is ``-0.52``. However, because
+   there are only 13 numbers (12 differences), this negative correlation
+   is not statistically significant.
 
-Fitzpatrick, John P. (2013) *Annual Report to the President for 2012*,
-United States Information Security Oversight Office, National Archives
-and Record Administration, June 20, 2013. `Information Security
-Oversight Office (ISOO) of the National
-Archives. <https://www.archives.gov/isoo/reports>`__
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Fitzpatrick, John P. (2013) *Annual Report to the President for
+   2012*, United States Information Security Oversight Office, National
+   Archives and Record Administration, June 20, 2013. `Information
+   Security Oversight Office (ISOO) of the National
+   Archives. <https://www.archives.gov/isoo/reports>`__
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ##
-   ## 1.  plot DerivClassActivity 
-   ##
-   plot(DerivClassActivity~year, USclassifiedDocuments)
-   #  Exponential growth?  
+   ::
 
-   plot(DerivClassActivity~year, USclassifiedDocuments, 
-        log='y')
-   # A jump in 2009 as discussed by Fitzpatrick (2013).  
-   # Otherwise plausibly a straight line.   
+      ##
+      ## 1.  plot DerivClassActivity 
+      ##
+      plot(DerivClassActivity~year, USclassifiedDocuments)
+      #  Exponential growth?  
 
-   ##
-   ## 2.  First difference? 
-   ##
-   plot(diff(log(DerivClassActivity))~year[-1], 
-        USclassifiedDocuments)
-   # Jump in 2009 but otherwise on distribution 
+      plot(DerivClassActivity~year, USclassifiedDocuments, 
+           log='y')
+      # A jump in 2009 as discussed by Fitzpatrick (2013).  
+      # Otherwise plausibly a straight line.   
 
-   ##
-   ## 3.  autocorrelation?  
-   ##
-   sel <- with(USclassifiedDocuments, 
-               (1995 < year) & (year < 2009) )
-   acf(diff(log(USclassifiedDocuments$
-                DerivClassActivity[sel])))
-   # lag 1 autocorrelation = (-0.52).  
-   # However, with only 12 numbers, 
-   # this is not statistically significant.  
+      ##
+      ## 2.  First difference? 
+      ##
+      plot(diff(log(DerivClassActivity))~year[-1], 
+           USclassifiedDocuments)
+      # Jump in 2009 but otherwise on distribution 
+
+      ##
+      ## 3.  autocorrelation?  
+      ##
+      sel <- with(USclassifiedDocuments, 
+                  (1995 < year) & (year < 2009) )
+      acf(diff(log(USclassifiedDocuments$
+                   DerivClassActivity[sel])))
+      # lag 1 autocorrelation = (-0.52).  
+      # However, with only 12 numbers, 
+      # this is not statistically significant.  

@@ -1,123 +1,126 @@
-===== ===============
-evals R Documentation
-===== ===============
+.. container::
 
-Professor evaluations and beauty
---------------------------------
+   ===== ===============
+   evals R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Professor evaluations and beauty
+      :name: professor-evaluations-and-beauty
 
-The data are gathered from end of semester student evaluations for 463
-courses taught by a sample of 94 professors from the University of Texas
-at Austin. In addition, six students rate the professors' physical
-appearance. The result is a data frame where each row contains a
-different course and each column has information on the course and the
-professor who taught that course.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The data are gathered from end of semester student evaluations for
+   463 courses taught by a sample of 94 professors from the University
+   of Texas at Austin. In addition, six students rate the professors'
+   physical appearance. The result is a data frame where each row
+   contains a different course and each column has information on the
+   course and the professor who taught that course.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   evals
+   ::
 
-Format
-~~~~~~
+      evals
 
-A data frame with 463 observations on the following 23 variables.
+   .. rubric:: Format
+      :name: format
 
-course_id
-   Variable identifying the course (out of 463 courses).
+   A data frame with 463 observations on the following 23 variables.
 
-prof_id
-   Variable identifying the professor who taught the course (out of 94
-   professors).
+   course_id
+      Variable identifying the course (out of 463 courses).
 
-score
-   Average professor evaluation score: (1) very unsatisfactory - (5)
-   excellent.
+   prof_id
+      Variable identifying the professor who taught the course (out of
+      94 professors).
 
-rank
-   Rank of professor: teaching, tenure track, tenured.
+   score
+      Average professor evaluation score: (1) very unsatisfactory - (5)
+      excellent.
 
-ethnicity
-   Ethnicity of professor: not minority, minority.
+   rank
+      Rank of professor: teaching, tenure track, tenured.
 
-gender
-   Gender of professor: female, male.
+   ethnicity
+      Ethnicity of professor: not minority, minority.
 
-language
-   Language of school where professor received education: English or
-   non-English.
+   gender
+      Gender of professor: female, male.
 
-age
-   Age of professor.
+   language
+      Language of school where professor received education: English or
+      non-English.
 
-cls_perc_eval
-   Percent of students in class who completed evaluation.
+   age
+      Age of professor.
 
-cls_did_eval
-   Number of students in class who completed evaluation.
+   cls_perc_eval
+      Percent of students in class who completed evaluation.
 
-cls_students
-   Total number of students in class.
+   cls_did_eval
+      Number of students in class who completed evaluation.
 
-cls_level
-   Class level: lower, upper.
+   cls_students
+      Total number of students in class.
 
-cls_profs
-   Number of professors teaching sections in course in sample: single,
-   multiple.
+   cls_level
+      Class level: lower, upper.
 
-cls_credits
-   Number of credits of class: one credit (lab, PE, etc.), multi credit.
+   cls_profs
+      Number of professors teaching sections in course in sample:
+      single, multiple.
 
-bty_f1lower
-   Beauty rating of professor from lower level female: (1) lowest - (10)
-   highest.
+   cls_credits
+      Number of credits of class: one credit (lab, PE, etc.), multi
+      credit.
 
-bty_f1upper
-   Beauty rating of professor from upper level female: (1) lowest - (10)
-   highest.
+   bty_f1lower
+      Beauty rating of professor from lower level female: (1) lowest -
+      (10) highest.
 
-bty_f2upper
-   Beauty rating of professor from second level female: (1) lowest -
-   (10) highest.
+   bty_f1upper
+      Beauty rating of professor from upper level female: (1) lowest -
+      (10) highest.
 
-bty_m1lower
-   Beauty rating of professor from lower level male: (1) lowest - (10)
-   highest.
+   bty_f2upper
+      Beauty rating of professor from second level female: (1) lowest -
+      (10) highest.
 
-bty_m1upper
-   Beauty rating of professor from upper level male: (1) lowest - (10)
-   highest.
+   bty_m1lower
+      Beauty rating of professor from lower level male: (1) lowest -
+      (10) highest.
 
-bty_m2upper
-   Beauty rating of professor from second upper level male: (1) lowest -
-   (10) highest.
+   bty_m1upper
+      Beauty rating of professor from upper level male: (1) lowest -
+      (10) highest.
 
-bty_avg
-   Average beauty rating of professor.
+   bty_m2upper
+      Beauty rating of professor from second upper level male: (1)
+      lowest - (10) highest.
 
-pic_outfit
-   Outfit of professor in picture: not formal, formal.
+   bty_avg
+      Average beauty rating of professor.
 
-pic_color
-   Color of professor's picture: color, black & white.
+   pic_outfit
+      Outfit of professor in picture: not formal, formal.
 
-Source
-~~~~~~
+   pic_color
+      Color of professor's picture: color, black & white.
 
-Daniel S. Hamermesh, Amy Parker, Beauty in the classroom: instructors’
-pulchritude and putative pedagogical productivity, Economics of
-Education Review, Volume 24, Issue 4, 2005. doi:
-`10.1016/j.econedurev.2004.07.013 <https://doi.org/10.1016/j.econedurev.2004.07.013>`__.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Daniel S. Hamermesh, Amy Parker, Beauty in the classroom:
+   instructors’ pulchritude and putative pedagogical productivity,
+   Economics of Education Review, Volume 24, Issue 4, 2005. doi:
+   `10.1016/j.econedurev.2004.07.013 <https://doi.org/10.1016/j.econedurev.2004.07.013>`__.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   evals
+      evals

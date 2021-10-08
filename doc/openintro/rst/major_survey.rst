@@ -1,41 +1,43 @@
-============ ===============
-major_survey R Documentation
-============ ===============
+.. container::
 
-Survey of Duke students and the area of their major
----------------------------------------------------
+   ============ ===============
+   major_survey R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Survey of Duke students and the area of their major
+      :name: survey-of-duke-students-and-the-area-of-their-major
 
-Survey of 218 students, collecting information on their GPAs and their
-academic major.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Survey of 218 students, collecting information on their GPAs and
+   their academic major.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   major_survey
+   ::
 
-Format
-~~~~~~
+      major_survey
 
-A data frame with 218 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-gpa
-   Grade point average (GPA).
+   A data frame with 218 observations on the following 2 variables.
 
-major
-   Area of academic major.
+   gpa
+      Grade point average (GPA).
 
-Examples
-~~~~~~~~
+   major
+      Area of academic major.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(major_survey, aes(x = major, y = gpa)) +
-     geom_boxplot()
+      ggplot(major_survey, aes(x = major, y = gpa)) +
+        geom_boxplot()

@@ -1,63 +1,66 @@
-================ ===============
-OBrienKaiserLong R Documentation
-================ ===============
+.. container::
 
-O'Brien and Kaiser's Repeated-Measures Data in "Long" Format
-------------------------------------------------------------
+   ================ ===============
+   OBrienKaiserLong R Documentation
+   ================ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: O'Brien and Kaiser's Repeated-Measures Data in "Long"
+      Format
+      :name: obrien-and-kaisers-repeated-measures-data-in-long-format
 
-Contrived repeated-measures data from O'Brien and Kaiser (1985). For
-details see ``OBrienKaiser``, which is for the "wide" form of the same
-data.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Contrived repeated-measures data from O'Brien and Kaiser (1985). For
+   details see ``OBrienKaiser``, which is for the "wide" form of the
+   same data.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   OBrienKaiserLong
+   ::
 
-Format
-~~~~~~
+      OBrienKaiserLong
 
-A data frame with 240 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``treatment``
-   a between-subjects factor with levels ``control``, ``A``, ``B``.
+   A data frame with 240 observations on the following 6 variables.
 
-``gender``
-   a between-subjects factor with levels ``F``, ``M.``
+   ``treatment``
+      a between-subjects factor with levels ``control``, ``A``, ``B``.
 
-``score``
-   the numeric response variable.
+   ``gender``
+      a between-subjects factor with levels ``F``, ``M.``
 
-``id``
-   the subject id number.
+   ``score``
+      the numeric response variable.
 
-``phase``
-   a within-subjects factor with levels ``pre``, ``post``, ``fup``.
+   ``id``
+      the subject id number.
 
-``hour``
-   a within-subjects factor with levels ``1``, ``2``, ``3``, ``4``,
-   ``5``.
+   ``phase``
+      a within-subjects factor with levels ``pre``, ``post``, ``fup``.
 
-Source
-~~~~~~
+   ``hour``
+      a within-subjects factor with levels ``1``, ``2``, ``3``, ``4``,
+      ``5``.
 
-O'Brien, R. G., and Kaiser, M. K. (1985) MANOVA method for analyzing
-repeated measures designs: An extensive primer. *Psychological Bulletin*
-**97**, 316–333, Table 7.
+   .. rubric:: Source
+      :name: source
 
-See Also
-~~~~~~~~
+   O'Brien, R. G., and Kaiser, M. K. (1985) MANOVA method for analyzing
+   repeated measures designs: An extensive primer. *Psychological
+   Bulletin* **97**, 316–333, Table 7.
 
-``OBrienKaiser``.
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``OBrienKaiser``.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   head(OBrienKaiserLong, 15) # first subject
+   ::
+
+      head(OBrienKaiserLong, 15) # first subject

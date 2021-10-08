@@ -1,44 +1,47 @@
-================ ===============
-assortive_mating R Documentation
-================ ===============
+.. container::
 
-Eye color of couples
---------------------
+   ================ ===============
+   assortive_mating R Documentation
+   ================ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Eye color of couples
+      :name: eye-color-of-couples
 
-Colors of the eye colors of male and female partners.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Colors of the eye colors of male and female partners.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   assortive_mating
+   ::
 
-Format
-~~~~~~
+      assortive_mating
 
-A data frame with 204 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-self_male
-   a factor with levels ``blue``, ``brown``, and ``green``
+   A data frame with 204 observations on the following 2 variables.
 
-partner_female
-   a factor with ``blue``, ``brown``, and ``green``
+   self_male
+      a factor with levels ``blue``, ``brown``, and ``green``
 
-Source
-~~~~~~
+   partner_female
+      a factor with ``blue``, ``brown``, and ``green``
 
-B. Laeng et al. Why do blue-eyed men prefer women with the same eye
-color? In: Behavioral Ecology and Sociobiology 61.3 (2007), pp. 371-384.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   B. Laeng et al. Why do blue-eyed men prefer women with the same eye
+   color? In: Behavioral Ecology and Sociobiology 61.3 (2007), pp.
+   371-384.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   data(assortive_mating)
-   table(assortive_mating)
+      data(assortive_mating)
+      table(assortive_mating)

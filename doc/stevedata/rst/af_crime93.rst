@@ -1,67 +1,72 @@
-========== ===============
-af_crime93 R Documentation
-========== ===============
+.. container::
 
-Statewide Crime Data (1993)
----------------------------
+   ========== ===============
+   af_crime93 R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Statewide Crime Data (1993)
+      :name: statewide-crime-data-1993
 
-These data are in Table 9.1 of the 3rd edition of Agresti and Finlay's
-\*Statistical Methods for the Social Sciences*. The data are from
-\*Statistical Abstract of the United States\* and most variables were
-measured in 1993.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These data are in Table 9.1 of the 3rd edition of Agresti and
+   Finlay's \*Statistical Methods for the Social Sciences*. The data are
+   from \*Statistical Abstract of the United States\* and most variables
+   were measured in 1993.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   af_crime93
+   ::
 
-Format
-~~~~~~
+      af_crime93
 
-A data frame with 51 observations on the following 8 variables.
+   .. rubric:: Format
+      :name: format
 
-``state``
-   a character vector for the state
+   A data frame with 51 observations on the following 8 variables.
 
-``violent``
-   a numeric vector for the violent crime rate (per 100,000 people in
-   population)
+   ``state``
+      a character vector for the state
 
-``murder``
-   a numeric vector for the murder rate (per 100,000 people in
-   population)
+   ``violent``
+      a numeric vector for the violent crime rate (per 100,000 people in
+      population)
 
-``poverty``
-   a numeric vector for the percent with income below the poverty level
+   ``murder``
+      a numeric vector for the murder rate (per 100,000 people in
+      population)
 
-``single``
-   a numeric vector for the percent of families headed by a single
-   parent
+   ``poverty``
+      a numeric vector for the percent with income below the poverty
+      level
 
-``metro``
-   a numeric vector for the percent of population in metropolitan areas
+   ``single``
+      a numeric vector for the percent of families headed by a single
+      parent
 
-``white``
-   a numeric vector for the percentage of the state that is white
+   ``metro``
+      a numeric vector for the percent of population in metropolitan
+      areas
 
-``highschool``
-   a numeric vector for the percent of state that graduated from high
-   school
+   ``white``
+      a numeric vector for the percentage of the state that is white
 
-Details
-~~~~~~~
+   ``highschool``
+      a numeric vector for the percent of state that graduated from high
+      school
 
-The data are from Statistical Abstract of the United States and most
-variables were measured in 1993. These data should result in regressions
-that would flunk a Breusch-Pagan test for heteroskedasticity.
+   .. rubric:: Details
+      :name: details
 
-References
-~~~~~~~~~~
+   The data are from Statistical Abstract of the United States and most
+   variables were measured in 1993. These data should result in
+   regressions that would flunk a Breusch-Pagan test for
+   heteroskedasticity.
 
-Agresti, Alan and Barbara Finley. 1997. *Statistical Methods for the
-Social Sciences*. Prentice Hall. (3rd Edition)
+   .. rubric:: References
+      :name: references
+
+   Agresti, Alan and Barbara Finley. 1997. *Statistical Methods for the
+   Social Sciences*. Prentice Hall. (3rd Edition)

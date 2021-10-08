@@ -1,43 +1,46 @@
-============= ===============
-TeenPregnancy R Documentation
-============= ===============
+.. container::
 
-State Teen Pregnancy Rates
---------------------------
+   ============= ===============
+   TeenPregnancy R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: State Teen Pregnancy Rates
+      :name: state-teen-pregnancy-rates
 
-State teen pregnancy rates, Civil War participation, and church
-attendance.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   State teen pregnancy rates, Civil War participation, and church
+   attendance.
 
-A data frame with 50 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``State``
-   State abbreviation
+   A data frame with 50 observations on the following 4 variables.
 
-``CivilWar``
-   Role in Civil War (``B``\ =border, ``C``\ =Confederate,
-   ``O``\ =other, or ``U``\ =union)
+   ``State``
+      State abbreviation
 
-``Church``
-   Percentage who attended church in previous week (from a state survey)
+   ``CivilWar``
+      Role in Civil War (``B``\ =border, ``C``\ =Confederate,
+      ``O``\ =other, or ``U``\ =union)
 
-``Teen``
-   Number of pregnancies per 1000 teenage girls in state
+   ``Church``
+      Percentage who attended church in previous week (from a state
+      survey)
 
-Details
-~~~~~~~
+   ``Teen``
+      Number of pregnancies per 1000 teenage girls in state
 
-State level data on teen pregnancies, church attendance, and role in the
-U.S. Civil War.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   State level data on teen pregnancies, church attendance, and role in
+   the U.S. Civil War.
 
-2010 teen pregnancy rate, per 1000 teenage women, per year. Source:
-Guttmacher Institute, via Tanya Lewis (5 May 2014) "Teen pregnancy rates
-by state," https://www.livescience.com
+   .. rubric:: Source
+      :name: source
+
+   2010 teen pregnancy rate, per 1000 teenage women, per year. Source:
+   Guttmacher Institute, via Tanya Lewis (5 May 2014) "Teen pregnancy
+   rates by state," https://www.livescience.com

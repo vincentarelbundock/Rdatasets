@@ -1,62 +1,64 @@
-======== ===============
-chickwts R Documentation
-======== ===============
+.. container::
 
-Chicken Weights by Feed Type
-----------------------------
+   ======== ===============
+   chickwts R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Chicken Weights by Feed Type
+      :name: chicken-weights-by-feed-type
 
-An experiment was conducted to measure and compare the effectiveness of
-various feed supplements on the growth rate of chickens.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   An experiment was conducted to measure and compare the effectiveness
+   of various feed supplements on the growth rate of chickens.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   chickwts
+   ::
 
-Format
-~~~~~~
+      chickwts
 
-A data frame with 71 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-``weight``
-   a numeric variable giving the chick weight.
+   A data frame with 71 observations on the following 2 variables.
 
-``feed``
-   a factor giving the feed type.
+   ``weight``
+      a numeric variable giving the chick weight.
 
-Details
-~~~~~~~
+   ``feed``
+      a factor giving the feed type.
 
-Newly hatched chicks were randomly allocated into six groups, and each
-group was given a different feed supplement. Their weights in grams
-after six weeks are given along with feed types.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Newly hatched chicks were randomly allocated into six groups, and
+   each group was given a different feed supplement. Their weights in
+   grams after six weeks are given along with feed types.
 
-Anonymous (1948) *Biometrika*, **35**, 214.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Anonymous (1948) *Biometrika*, **35**, 214.
 
-McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(stats); require(graphics)
-   boxplot(weight ~ feed, data = chickwts, col = "lightgray",
-       varwidth = TRUE, notch = TRUE, main = "chickwt data",
-       ylab = "Weight at six weeks (gm)")
-   anova(fm1 <- lm(weight ~ feed, data = chickwts))
-   opar <- par(mfrow = c(2, 2), oma = c(0, 0, 1.1, 0),
-               mar = c(4.1, 4.1, 2.1, 1.1))
-   plot(fm1)
-   par(opar)
+   ::
+
+      require(stats); require(graphics)
+      boxplot(weight ~ feed, data = chickwts, col = "lightgray",
+          varwidth = TRUE, notch = TRUE, main = "chickwt data",
+          ylab = "Weight at six weeks (gm)")
+      anova(fm1 <- lm(weight ~ feed, data = chickwts))
+      opar <- par(mfrow = c(2, 2), oma = c(0, 0, 1.1, 0),
+                  mar = c(4.1, 4.1, 2.1, 1.1))
+      plot(fm1)
+      par(opar)

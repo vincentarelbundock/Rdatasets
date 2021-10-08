@@ -1,68 +1,70 @@
-====== ===============
-movies R Documentation
-====== ===============
+.. container::
 
-Movie information and user ratings from IMDB.com.
--------------------------------------------------
+   ====== ===============
+   movies R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Movie information and user ratings from IMDB.com.
+      :name: movie-information-and-user-ratings-from-imdb.com.
 
-The internet movie database, http://imdb.com/, is a website devoted to
-collecting movie data supplied by studios and fans. It claims to be the
-biggest movie database on the web and is run by amazon. More about
-information imdb.com can be found online,
-http://imdb.com/help/show_leaf?about, including information about the
-data collection process, http://imdb.com/help/show_leaf?infosource.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The internet movie database, http://imdb.com/, is a website devoted
+   to collecting movie data supplied by studios and fans. It claims to
+   be the biggest movie database on the web and is run by amazon. More
+   about information imdb.com can be found online,
+   http://imdb.com/help/show_leaf?about, including information about the
+   data collection process, http://imdb.com/help/show_leaf?infosource.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   movies
+   ::
 
-Format
-~~~~~~
+      movies
 
-A data frame with 28819 rows and 24 variables
+   .. rubric:: Format
+      :name: format
 
--  title. Title of the movie.
+   A data frame with 28819 rows and 24 variables
 
--  year. Year of release.
+   -  title. Title of the movie.
 
--  budget. Total budget (if known) in US dollars
+   -  year. Year of release.
 
--  length. Length in minutes.
+   -  budget. Total budget (if known) in US dollars
 
--  rating. Average IMDB user rating.
+   -  length. Length in minutes.
 
--  votes. Number of IMDB users who rated this movie.
+   -  rating. Average IMDB user rating.
 
--  r1-10. Multiplying by ten gives percentile (to nearest 10%) of users
-   who rated this movie a 1.
+   -  votes. Number of IMDB users who rated this movie.
 
--  mpaa. MPAA rating.
+   -  r1-10. Multiplying by ten gives percentile (to nearest 10%) of
+      users who rated this movie a 1.
 
--  action, animation, comedy, drama, documentary, romance, short. Binary
-   variables representing if movie was classified as belonging to that
-   genre.
+   -  mpaa. MPAA rating.
 
-Details
-~~~~~~~
+   -  action, animation, comedy, drama, documentary, romance, short.
+      Binary variables representing if movie was classified as belonging
+      to that genre.
 
-Movies were selected for inclusion if they had a known length and had
-been rated by at least one imdb user.
+   .. rubric:: Details
+      :name: details
 
-References
-~~~~~~~~~~
+   Movies were selected for inclusion if they had a known length and had
+   been rated by at least one imdb user.
 
-http://had.co.nz/data/movies/
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   http://had.co.nz/data/movies/
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   dim(movies)
-   head(movies)
+   ::
+
+      dim(movies)
+      head(movies)

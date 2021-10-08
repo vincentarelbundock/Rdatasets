@@ -1,52 +1,55 @@
-======== ===============
-pressure R Documentation
-======== ===============
+.. container::
 
-Vapor Pressure of Mercury as a Function of Temperature
-------------------------------------------------------
+   ======== ===============
+   pressure R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Vapor Pressure of Mercury as a Function of Temperature
+      :name: vapor-pressure-of-mercury-as-a-function-of-temperature
 
-Data on the relation between temperature in degrees Celsius and vapor
-pressure of mercury in millimeters (of mercury).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data on the relation between temperature in degrees Celsius and vapor
+   pressure of mercury in millimeters (of mercury).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   pressure
+   ::
 
-Format
-~~~~~~
+      pressure
 
-A data frame with 19 observations on 2 variables.
+   .. rubric:: Format
+      :name: format
 
-===== =========== ======= ===================
-[, 1] temperature numeric temperature (deg C)
-[, 2] pressure    numeric pressure (mm)
-===== =========== ======= ===================
+   A data frame with 19 observations on 2 variables.
 
-Source
-~~~~~~
+   ===== =========== ======= ===================
+   [, 1] temperature numeric temperature (deg C)
+   [, 2] pressure    numeric pressure (mm)
+   ===== =========== ======= ===================
 
-Weast, R. C., ed. (1973) *Handbook of Chemistry and Physics*. CRC Press.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Weast, R. C., ed. (1973) *Handbook of Chemistry and Physics*. CRC
+   Press.
 
-McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(graphics)
-   plot(pressure, xlab = "Temperature (deg C)",
-        ylab = "Pressure (mm of Hg)",
-        main = "pressure data: Vapor Pressure of Mercury")
-   plot(pressure, xlab = "Temperature (deg C)",  log = "y",
-        ylab = "Pressure (mm of Hg)",
-        main = "pressure data: Vapor Pressure of Mercury")
+   ::
+
+      require(graphics)
+      plot(pressure, xlab = "Temperature (deg C)",
+           ylab = "Pressure (mm of Hg)",
+           main = "pressure data: Vapor Pressure of Mercury")
+      plot(pressure, xlab = "Temperature (deg C)",  log = "y",
+           ylab = "Pressure (mm of Hg)",
+           main = "pressure data: Vapor Pressure of Mercury")

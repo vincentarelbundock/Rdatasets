@@ -1,43 +1,46 @@
-========= ===============
-socialexp R Documentation
-========= ===============
+.. container::
 
-Social experiment
------------------
+   ========= ===============
+   socialexp R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Social experiment
+      :name: social-experiment
 
-A "social experiment" conducted by a TV program questioned what people
-do when they see a very obviously bruised woman getting picked on by her
-boyfriend. On two different occasions at the same restaurant, the same
-couple was depicted. In one scenario the woman was dressed
-"provocatively" and in the other scenario the woman was dressed
-"conservatively". The table below shows how many restaurant diners were
-present under each scenario, and whether or not they intervened.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A "social experiment" conducted by a TV program questioned what
+   people do when they see a very obviously bruised woman getting picked
+   on by her boyfriend. On two different occasions at the same
+   restaurant, the same couple was depicted. In one scenario the woman
+   was dressed "provocatively" and in the other scenario the woman was
+   dressed "conservatively". The table below shows how many restaurant
+   diners were present under each scenario, and whether or not they
+   intervened.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   socialexp
+   ::
 
-Format
-~~~~~~
+      socialexp
 
-A data frame with 45 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-intervene
-   Whether other diners intervened or not.
+   A data frame with 45 observations on the following 2 variables.
 
-scenario
-   How the woman was dressed.
+   intervene
+      Whether other diners intervened or not.
 
-Examples
-~~~~~~~~
+   scenario
+      How the woman was dressed.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   table(socialexp)
+      table(socialexp)

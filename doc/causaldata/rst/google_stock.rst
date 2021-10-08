@@ -1,54 +1,56 @@
-============ ===============
-google_stock R Documentation
-============ ===============
+.. container::
 
-Google Stock Data
------------------
+   ============ ===============
+   google_stock R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Google Stock Data
+      :name: google-stock-data
 
-The ``google_stock`` data contains data on daily stock returns for
-Google and the S&P 500 for May through Augut 2015, centering around the
-August 10, 2015 announcement that Google would reorganize under parent
-company Alphabet.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``google_stock`` data contains data on daily stock returns for
+   Google and the S&P 500 for May through Augut 2015, centering around
+   the August 10, 2015 announcement that Google would reorganize under
+   parent company Alphabet.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   google_stock
+   ::
 
-Format
-~~~~~~
+      google_stock
 
-A data frame with 84 rows and 3 variables
+   .. rubric:: Format
+      :name: format
 
-Date
-   The date
+   A data frame with 84 rows and 3 variables
 
-Google_Return
-   Daily GOOG Stock Return (1 = 100 percent daily return)
+   Date
+      The date
 
-SP500_Return
-   Daily S&P 500 Index Return (1 = 100 percent daily return)
+   Google_Return
+      Daily GOOG Stock Return (1 = 100 percent daily return)
 
-Details
-~~~~~~~
+   SP500_Return
+      Daily S&P 500 Index Return (1 = 100 percent daily return)
 
-This data was downloaded using the *tidyquant* package, and is used in
-the *Event Studies* chapter of *The Effect*.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This data was downloaded using the *tidyquant* package, and is used
+   in the *Event Studies* chapter of *The Effect*.
 
-Matt Dancho and Davis Vaughan (2021). tidyquant: Tidy Quantitative
-Financial Analysis. R package version 1.0.3.
-https://CRAN.R-project.org/package=tidyquant
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Matt Dancho and Davis Vaughan (2021). tidyquant: Tidy Quantitative
+   Financial Analysis. R package version 1.0.3.
+   https://CRAN.R-project.org/package=tidyquant
 
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design
-and Causality. https://theeffectbook.net.
+   .. rubric:: References
+      :name: references
+
+   Huntington-Klein. 2021. The Effect: An Introduction to Research
+   Design and Causality. https://theeffectbook.net.

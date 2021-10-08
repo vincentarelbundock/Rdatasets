@@ -1,31 +1,35 @@
-============== ===============
-EuStockMarkets R Documentation
-============== ===============
+.. container::
 
-Daily Closing Prices of Major European Stock Indices, 1991–1998
----------------------------------------------------------------
+   ============== ===============
+   EuStockMarkets R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Daily Closing Prices of Major European Stock Indices,
+      1991–1998
+      :name: daily-closing-prices-of-major-european-stock-indices-19911998
 
-Contains the daily closing prices of major European stock indices:
-Germany DAX (Ibis), Switzerland SMI, France CAC, and UK FTSE. The data
-are sampled in business time, i.e., weekends and holidays are omitted.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Contains the daily closing prices of major European stock indices:
+   Germany DAX (Ibis), Switzerland SMI, France CAC, and UK FTSE. The
+   data are sampled in business time, i.e., weekends and holidays are
+   omitted.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   EuStockMarkets
+   ::
 
-Format
-~~~~~~
+      EuStockMarkets
 
-A multivariate time series with 1860 observations on 4 variables. The
-object is of class ``"mts"``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A multivariate time series with 1860 observations on 4 variables. The
+   object is of class ``"mts"``.
 
-The data were kindly provided by Erste Bank AG, Vienna, Austria.
+   .. rubric:: Source
+      :name: source
+
+   The data were kindly provided by Erste Bank AG, Vienna, Austria.

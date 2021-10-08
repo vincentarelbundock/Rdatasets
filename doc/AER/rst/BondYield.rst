@@ -1,50 +1,52 @@
-========= ===============
-BondYield R Documentation
-========= ===============
+.. container::
 
-Bond Yield Data
----------------
+   ========= ===============
+   BondYield R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Bond Yield Data
+      :name: bond-yield-data
 
-Monthly averages of the yield on a Moody's Aaa rated corporate bond (in
-percent/year).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Monthly averages of the yield on a Moody's Aaa rated corporate bond
+   (in percent/year).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("BondYield")
+   ::
 
-Format
-~~~~~~
+      data("BondYield")
 
-A monthly univariate time series from 1990(1) to 1994(12).
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A monthly univariate time series from 1990(1) to 1994(12).
 
-Online complements to Greene (2003), Table F20.1.
+   .. rubric:: Source
+      :name: source
 
-http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+   Online complements to Greene (2003), Table F20.1.
 
-References
-~~~~~~~~~~
+   http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper Saddle
-River, NJ: Prentice Hall.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+   Saddle River, NJ: Prentice Hall.
 
-``Greene2003``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Greene2003``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("BondYield")
-   plot(BondYield)
+   ::
+
+      data("BondYield")
+      plot(BondYield)

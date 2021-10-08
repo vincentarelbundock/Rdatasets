@@ -1,58 +1,60 @@
-======== ===============
-USMacroB R Documentation
-======== ===============
+.. container::
 
-US Macroeconomic Data (1959–1995, Baltagi)
-------------------------------------------
+   ======== ===============
+   USMacroB R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: US Macroeconomic Data (1959–1995, Baltagi)
+      :name: us-macroeconomic-data-19591995-baltagi
 
-Time series data on 3 US macroeconomic variables for 1959–1995,
-extracted from the Citibank data base.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Time series data on 3 US macroeconomic variables for 1959–1995,
+   extracted from the Citibank data base.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("USMacroB")
+   ::
 
-Format
-~~~~~~
+      data("USMacroB")
 
-A quarterly multiple time series from 1959(1) to 1995(2) with 3
-variables.
+   .. rubric:: Format
+      :name: format
 
-gnp
-   Gross national product.
+   A quarterly multiple time series from 1959(1) to 1995(2) with 3
+   variables.
 
-mbase
-   Average of the seasonally adjusted monetary base.
+   gnp
+      Gross national product.
 
-tbill
-   Average of 3 month treasury-bill rate (per annum).
+   mbase
+      Average of the seasonally adjusted monetary base.
 
-Source
-~~~~~~
+   tbill
+      Average of 3 month treasury-bill rate (per annum).
 
-The data is from Baltagi (2002).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The data is from Baltagi (2002).
 
-Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
 
-``Baltagi2002``, ``USMacroSW``, ``USMacroSWQ``, ``USMacroSWM``,
-``USMacroG``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Baltagi2002``, ``USMacroSW``, ``USMacroSWQ``, ``USMacroSWM``,
+   ``USMacroG``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("USMacroB")
-   plot(USMacroB)
+   ::
+
+      data("USMacroB")
+      plot(USMacroB)

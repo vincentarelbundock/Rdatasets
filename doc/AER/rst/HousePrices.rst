@@ -1,107 +1,109 @@
-=========== ===============
-HousePrices R Documentation
-=========== ===============
+.. container::
 
-House Prices in the City of Windsor, Canada
--------------------------------------------
+   =========== ===============
+   HousePrices R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: House Prices in the City of Windsor, Canada
+      :name: house-prices-in-the-city-of-windsor-canada
 
-Sales prices of houses sold in the city of Windsor, Canada, during July,
-August and September, 1987.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Sales prices of houses sold in the city of Windsor, Canada, during
+   July, August and September, 1987.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("HousePrices")
+   ::
 
-Format
-~~~~~~
+      data("HousePrices")
 
-A data frame containing 546 observations on 12 variables.
+   .. rubric:: Format
+      :name: format
 
-price
-   Sale price of a house.
+   A data frame containing 546 observations on 12 variables.
 
-lotsize
-   Lot size of a property in square feet.
+   price
+      Sale price of a house.
 
-bedrooms
-   Number of bedrooms.
+   lotsize
+      Lot size of a property in square feet.
 
-bathrooms
-   Number of full bathrooms.
+   bedrooms
+      Number of bedrooms.
 
-stories
-   Number of stories excluding basement.
+   bathrooms
+      Number of full bathrooms.
 
-driveway
-   Factor. Does the house have a driveway?
+   stories
+      Number of stories excluding basement.
 
-recreation
-   Factor. Does the house have a recreational room?
+   driveway
+      Factor. Does the house have a driveway?
 
-fullbase
-   Factor. Does the house have a full finished basement?
+   recreation
+      Factor. Does the house have a recreational room?
 
-gasheat
-   Factor. Does the house use gas for hot water heating?
+   fullbase
+      Factor. Does the house have a full finished basement?
 
-aircon
-   Factor. Is there central air conditioning?
+   gasheat
+      Factor. Does the house use gas for hot water heating?
 
-garage
-   Number of garage places.
+   aircon
+      Factor. Is there central air conditioning?
 
-prefer
-   Factor. Is the house located in the preferred neighborhood of the
-   city?
+   garage
+      Number of garage places.
 
-Source
-~~~~~~
+   prefer
+      Factor. Is the house located in the preferred neighborhood of the
+      city?
 
-Journal of Applied Econometrics Data Archive.
+   .. rubric:: Source
+      :name: source
 
-http://qed.econ.queensu.ca/jae/1996-v11.6/anglin-gencay/
+   Journal of Applied Econometrics Data Archive.
 
-References
-~~~~~~~~~~
+   http://qed.econ.queensu.ca/jae/1996-v11.6/anglin-gencay/
 
-Anglin, P., and Gencay, R. (1996). Semiparametric Estimation of a
-Hedonic Price Function. *Journal of Applied Econometrics*, **11**,
-633–648.
+   .. rubric:: References
+      :name: references
 
-Verbeek, M. (2004). *A Guide to Modern Econometrics*, 2nd ed.
-Chichester, UK: John Wiley.
+   Anglin, P., and Gencay, R. (1996). Semiparametric Estimation of a
+   Hedonic Price Function. *Journal of Applied Econometrics*, **11**,
+   633–648.
 
-Examples
-~~~~~~~~
+   Verbeek, M. (2004). *A Guide to Modern Econometrics*, 2nd ed.
+   Chichester, UK: John Wiley.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("HousePrices")
+   ::
 
-   ### Anglin + Gencay (1996), Table II
-   fm_ag <- lm(log(price) ~ driveway + recreation + fullbase + gasheat + 
-     aircon + garage + prefer + log(lotsize) + log(bedrooms) + 
-     log(bathrooms) + log(stories), data = HousePrices)
+      data("HousePrices")
 
-   ### Anglin + Gencay (1996), Table III
-   fm_ag2 <- lm(log(price) ~ driveway + recreation + fullbase + gasheat + 
-     aircon + garage + prefer + log(lotsize) + bedrooms + 
-     bathrooms + stories, data = HousePrices)
+      ### Anglin + Gencay (1996), Table II
+      fm_ag <- lm(log(price) ~ driveway + recreation + fullbase + gasheat + 
+        aircon + garage + prefer + log(lotsize) + log(bedrooms) + 
+        log(bathrooms) + log(stories), data = HousePrices)
 
-   ### Verbeek (2004), Table 3.1
-   fm <- lm(log(price) ~ log(lotsize) + bedrooms + bathrooms + aircon, data = HousePrices)
-   summary(fm)
+      ### Anglin + Gencay (1996), Table III
+      fm_ag2 <- lm(log(price) ~ driveway + recreation + fullbase + gasheat + 
+        aircon + garage + prefer + log(lotsize) + bedrooms + 
+        bathrooms + stories, data = HousePrices)
 
-   ### Verbeek (2004), Table 3.2
-   fm_ext <- lm(log(price) ~ . - lotsize + log(lotsize), data = HousePrices)
-   summary(fm_ext)
+      ### Verbeek (2004), Table 3.1
+      fm <- lm(log(price) ~ log(lotsize) + bedrooms + bathrooms + aircon, data = HousePrices)
+      summary(fm)
 
-   ### Verbeek (2004), Table 3.3
-   fm_lin <- lm(price ~ . , data = HousePrices)
-   summary(fm_lin)
+      ### Verbeek (2004), Table 3.2
+      fm_ext <- lm(log(price) ~ . - lotsize + log(lotsize), data = HousePrices)
+      summary(fm_ext)
+
+      ### Verbeek (2004), Table 3.3
+      fm_lin <- lm(price ~ . , data = HousePrices)
+      summary(fm_lin)

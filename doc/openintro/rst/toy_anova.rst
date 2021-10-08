@@ -1,38 +1,40 @@
-========= ===============
-toy_anova R Documentation
-========= ===============
+.. container::
 
-Simulated data set for ANOVA
-----------------------------
+   ========= ===============
+   toy_anova R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Simulated data set for ANOVA
+      :name: simulated-data-set-for-anova
 
-Simulated data set for getting a better understanding of intuition that
-ANOVA is based off of.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Simulated data set for getting a better understanding of intuition
+   that ANOVA is based off of.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   toy_anova
+   ::
 
-Format
-~~~~~~
+      toy_anova
 
-A data frame with 70 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-group
-   a factor with levels ``I`` ``II`` ``III``
+   A data frame with 70 observations on the following 3 variables.
 
-outcome
-   a numeric vector
+   group
+      a factor with levels ``I`` ``II`` ``III``
 
-Examples
-~~~~~~~~
+   outcome
+      a numeric vector
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   toy_anova
+      toy_anova

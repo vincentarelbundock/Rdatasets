@@ -1,50 +1,52 @@
-========= ===============
-stem_cell R Documentation
-========= ===============
+.. container::
 
-Embryonic stem cells to treat heart attack (in sheep)
------------------------------------------------------
+   ========= ===============
+   stem_cell R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Embryonic stem cells to treat heart attack (in sheep)
+      :name: embryonic-stem-cells-to-treat-heart-attack-in-sheep
 
-Does treatment using embryonic stem cells (ESCs) help improve heart
-function following a heart attack? Each sheep in the study was randomly
-assigned to the ESC or control group, and the change in their hearts'
-pumping capacity was measured in the study. A positive value corresponds
-to increased pumping capacity, which generally suggests a stronger
-recovery.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Does treatment using embryonic stem cells (ESCs) help improve heart
+   function following a heart attack? Each sheep in the study was
+   randomly assigned to the ESC or control group, and the change in
+   their hearts' pumping capacity was measured in the study. A positive
+   value corresponds to increased pumping capacity, which generally
+   suggests a stronger recovery.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   stem_cell
+   ::
 
-Format
-~~~~~~
+      stem_cell
 
-A data frame with 18 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-trmt
-   a factor with levels ``ctrl`` ``esc``
+   A data frame with 18 observations on the following 3 variables.
 
-before
-   a numeric vector
+   trmt
+      a factor with levels ``ctrl`` ``esc``
 
-after
-   a numeric vector
+   before
+      a numeric vector
 
-Source
-~~~~~~
+   after
+      a numeric vector
 
-https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(05)67380-1/fulltext
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(05)67380-1/fulltext
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   stem_cell
+      stem_cell

@@ -1,54 +1,56 @@
-========= ===============
-stVincent R Documentation
-========= ===============
+.. container::
 
-Averages by block of yields for the St. Vincent Corn data
----------------------------------------------------------
+   ========= ===============
+   stVincent R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Averages by block of yields for the St. Vincent Corn data
+      :name: averages-by-block-of-yields-for-the-st.-vincent-corn-data
 
-These data frames have yield averages by blocks (parcels).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These data frames have yield averages by blocks (parcels).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   stVincent
+   ::
 
-Format
-~~~~~~
+      stVincent
 
-A data frame with 324 observations on 8 variables.
+   .. rubric:: Format
+      :name: format
 
-code
-   a numeric vector
+   A data frame with 324 observations on 8 variables.
 
-island
-   a numeric vector
+   code
+      a numeric vector
 
-id
-   a numeric vector
+   island
+      a numeric vector
 
-site
-   a factor with 8 levels.
+   id
+      a numeric vector
 
-block
-   a factor with levels ``I`` ``II`` ``III`` ``IV``
+   site
+      a factor with 8 levels.
 
-plot
-   a numeric vector
+   block
+      a factor with levels ``I`` ``II`` ``III`` ``IV``
 
-trt
-   a factor consisting of 12 levels
+   plot
+      a numeric vector
 
-harvwt
-   a numeric vector; the average yield
+   trt
+      a factor consisting of 12 levels
 
-Source
-~~~~~~
+   harvwt
+      a numeric vector; the average yield
 
-Andrews DF; Herzberg AM, 1985. Data. A Collection of Problems from Many
-Fields for the Student and Research Worker. Springer-Verlag. (pp.
-339-353)
+   .. rubric:: Source
+      :name: source
+
+   Andrews DF; Herzberg AM, 1985. Data. A Collection of Problems from
+   Many Fields for the Student and Research Worker. Springer-Verlag.
+   (pp. 339-353)

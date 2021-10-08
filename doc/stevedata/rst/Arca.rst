@@ -1,46 +1,48 @@
-==== ===============
-Arca R Documentation
-==== ===============
+.. container::
 
-NYSE Arca Steel Index data, 2017–present
-----------------------------------------
+   ==== ===============
+   Arca R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: NYSE Arca Steel Index data, 2017–present
+      :name: nyse-arca-steel-index-data-2017present
 
-Daily data on the NYSE Arca Steel Index. These data are useful for me in
-teaching how Trump's 2018 steel tariffs didn't do much good for the
-steel industry.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Daily data on the NYSE Arca Steel Index. These data are useful for me
+   in teaching how Trump's 2018 steel tariffs didn't do much good for
+   the steel industry.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Arca
+   ::
 
-Format
-~~~~~~
+      Arca
 
-A data frame with 966 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``date``
-   the date
+   A data frame with 966 observations on the following 6 variables.
 
-``close``
-   the closing price
+   ``date``
+      the date
 
-``open``
-   the opening price
+   ``close``
+      the closing price
 
-``high``
-   the daily high in that day's trading
+   ``open``
+      the opening price
 
-``low``
-   the daily low in that day's trading
+   ``high``
+      the daily high in that day's trading
 
-Details
-~~~~~~~
+   ``low``
+      the daily low in that day's trading
 
-These data are taken from ``investing.com``. See:
-https://www.investing.com/indices/arca-steel-historical-data
+   .. rubric:: Details
+      :name: details
+
+   These data are taken from ``investing.com``. See:
+   https://www.investing.com/indices/arca-steel-historical-data

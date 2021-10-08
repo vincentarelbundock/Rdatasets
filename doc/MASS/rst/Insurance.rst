@@ -1,73 +1,75 @@
-========= ===============
-Insurance R Documentation
-========= ===============
+.. container::
 
-Numbers of Car Insurance claims
--------------------------------
+   ========= ===============
+   Insurance R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Numbers of Car Insurance claims
+      :name: numbers-of-car-insurance-claims
 
-The data given in data frame ``Insurance`` consist of the numbers of
-policyholders of an insurance company who were exposed to risk, and the
-numbers of car insurance claims made by those policyholders in the third
-quarter of 1973.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The data given in data frame ``Insurance`` consist of the numbers of
+   policyholders of an insurance company who were exposed to risk, and
+   the numbers of car insurance claims made by those policyholders in
+   the third quarter of 1973.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Insurance
+   ::
 
-Format
-~~~~~~
+      Insurance
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``District``
-   factor: district of residence of policyholder (1 to 4): 4 is major
-   cities.
+   This data frame contains the following columns:
 
-``Group``
-   an ordered factor: group of car with levels <1 litre, 1–1.5 litre,
-   1.5–2 litre, >2 litre.
+   ``District``
+      factor: district of residence of policyholder (1 to 4): 4 is major
+      cities.
 
-``Age``
-   an ordered factor: the age of the insured in 4 groups labelled <25,
-   25–29, 30–35, >35.
+   ``Group``
+      an ordered factor: group of car with levels <1 litre, 1–1.5 litre,
+      1.5–2 litre, >2 litre.
 
-``Holders``
-   numbers of policyholders.
+   ``Age``
+      an ordered factor: the age of the insured in 4 groups labelled
+      <25, 25–29, 30–35, >35.
 
-``Claims``
-   numbers of claims
+   ``Holders``
+      numbers of policyholders.
 
-Source
-~~~~~~
+   ``Claims``
+      numbers of claims
 
-L. A. Baxter, S. M. Coutts and G. A. F. Ross (1980) Applications of
-linear models in motor insurance. *Proceedings of the 21st International
-Congress of Actuaries, Zurich* pp. 11–29.
+   .. rubric:: Source
+      :name: source
 
-M. Aitkin, D. Anderson, B. Francis and J. Hinde (1989) *Statistical
-Modelling in GLIM.* Oxford University Press.
+   L. A. Baxter, S. M. Coutts and G. A. F. Ross (1980) Applications of
+   linear models in motor insurance. *Proceedings of the 21st
+   International Congress of Actuaries, Zurich* pp. 11–29.
 
-References
-~~~~~~~~~~
+   M. Aitkin, D. Anderson, B. Francis and J. Hinde (1989) *Statistical
+   Modelling in GLIM.* Oxford University Press.
 
-Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics with
-S-PLUS.* Third Edition. Springer.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics
+   with S-PLUS.* Third Edition. Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## main-effects fit as Poisson GLM with offset
-   glm(Claims ~ District + Group + Age + offset(log(Holders)),
-       data = Insurance, family = poisson)
+   ::
 
-   # same via loglm
-   loglm(Claims ~ District + Group + Age + offset(log(Holders)),
-         data = Insurance)
+      ## main-effects fit as Poisson GLM with offset
+      glm(Claims ~ District + Group + Age + offset(log(Holders)),
+          data = Insurance, family = poisson)
+
+      # same via loglm
+      loglm(Claims ~ District + Group + Age + offset(log(Holders)),
+            data = Insurance)

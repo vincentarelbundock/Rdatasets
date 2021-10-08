@@ -1,69 +1,71 @@
-=========== ===============
-countrypops R Documentation
-=========== ===============
+.. container::
 
-Yearly populations of countries from 1960 to 2017
--------------------------------------------------
+   =========== ===============
+   countrypops R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Yearly populations of countries from 1960 to 2017
+      :name: yearly-populations-of-countries-from-1960-to-2017
 
-A dataset that presents yearly, total populations of countries. Total
-population is based on counts of all residents regardless of legal
-status or citizenship. Country identifiers include the English-language
-country names, and the 2- and 3-letter ISO 3166-1 country codes. Each
-row contains a ``population`` value for a given ``year`` (from 1960 to
-2017). Any ``NA`` values for ``populations`` indicate the non-existence
-of the country during that year.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A dataset that presents yearly, total populations of countries. Total
+   population is based on counts of all residents regardless of legal
+   status or citizenship. Country identifiers include the
+   English-language country names, and the 2- and 3-letter ISO 3166-1
+   country codes. Each row contains a ``population`` value for a given
+   ``year`` (from 1960 to 2017). Any ``NA`` values for ``populations``
+   indicate the non-existence of the country during that year.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   countrypops
+   ::
 
-Format
-~~~~~~
+      countrypops
 
-A tibble with 12470 rows and 5 variables:
+   .. rubric:: Format
+      :name: format
 
-country_name
-   Name of the country
+   A tibble with 12470 rows and 5 variables:
 
-country_code_2
-   The 2-letter ISO 3166-1 country code
+   country_name
+      Name of the country
 
-country_code_3
-   The 3-letter ISO 3166-1 country code
+   country_code_2
+      The 2-letter ISO 3166-1 country code
 
-year
-   The year for the population estimate
+   country_code_3
+      The 3-letter ISO 3166-1 country code
 
-population
-   The population estimate, midway through the year
+   year
+      The year for the population estimate
 
-Function ID
-~~~~~~~~~~~
+   population
+      The population estimate, midway through the year
 
-11-1
+   .. rubric:: Function ID
+      :name: function-id
 
-Source
-~~~~~~
+   11-1
 
-https://data.worldbank.org/indicator/SP.POP.TOTL
+   .. rubric:: Source
+      :name: source
 
-See Also
-~~~~~~~~
+   https://data.worldbank.org/indicator/SP.POP.TOTL
 
-Other Datasets: ``exibble``, ``gtcars``, ``pizzaplace``, ``sp500``,
-``sza``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   Other Datasets: ``exibble``, ``gtcars``, ``pizzaplace``, ``sp500``,
+   ``sza``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   # Here is a glimpse at the data
-   # available in `countrypops`
-   dplyr::glimpse(countrypops)
+   ::
+
+      # Here is a glimpse at the data
+      # available in `countrypops`
+      dplyr::glimpse(countrypops)

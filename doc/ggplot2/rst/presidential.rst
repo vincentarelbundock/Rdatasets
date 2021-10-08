@@ -1,36 +1,38 @@
-============ ===============
-presidential R Documentation
-============ ===============
+.. container::
 
-Terms of 11 presidents from Eisenhower to Obama
------------------------------------------------
+   ============ ===============
+   presidential R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Terms of 11 presidents from Eisenhower to Obama
+      :name: terms-of-11-presidents-from-eisenhower-to-obama
 
-The names of each president, the start and end date of their term, and
-their party of 11 US presidents from Eisenhower to Obama.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The names of each president, the start and end date of their term,
+   and their party of 11 US presidents from Eisenhower to Obama.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   presidential
+   ::
 
-Format
-~~~~~~
+      presidential
 
-A data frame with 11 rows and 4 variables:
+   .. rubric:: Format
+      :name: format
 
-name
-   Last name of president
+   A data frame with 11 rows and 4 variables:
 
-start
-   Presidency start date
+   name
+      Last name of president
 
-end
-   Presidency end date
+   start
+      Presidency start date
 
-party
-   Party of president
+   end
+      Presidency end date
+
+   party
+      Party of president

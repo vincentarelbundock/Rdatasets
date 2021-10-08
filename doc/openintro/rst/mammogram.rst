@@ -1,48 +1,50 @@
-========= ===============
-mammogram R Documentation
-========= ===============
+.. container::
 
-Experiment with Mammogram Randomized
-------------------------------------
+   ========= ===============
+   mammogram R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Experiment with Mammogram Randomized
+      :name: experiment-with-mammogram-randomized
 
-An experiment where 89,835 women were randomized to either get a
-mammogram or a non-mammogram breast screening. The response measured was
-whether they had died from breast cancer within 25 years.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   An experiment where 89,835 women were randomized to either get a
+   mammogram or a non-mammogram breast screening. The response measured
+   was whether they had died from breast cancer within 25 years.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   mammogram
+   ::
 
-Format
-~~~~~~
+      mammogram
 
-A data frame with 89835 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-treatment
-   a factor with levels ``control`` ``mammogram``
+   A data frame with 89835 observations on the following 2 variables.
 
-breast_cancer_death
-   a factor with levels ``no`` ``yes``
+   treatment
+      a factor with levels ``control`` ``mammogram``
 
-Source
-~~~~~~
+   breast_cancer_death
+      a factor with levels ``no`` ``yes``
 
-Miller AB. 2014. Twenty five year follow-up for breast cancer incidence
-and mortality of the Canadian National Breast Screening Study:
-randomised screening trial. BMJ 2014;348:g366.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Miller AB. 2014. Twenty five year follow-up for breast cancer
+   incidence and mortality of the Canadian National Breast Screening
+   Study: randomised screening trial. BMJ 2014;348:g366.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
 
-   table(mammogram)
-   chisq.test(table(mammogram))
+      table(mammogram)
+      chisq.test(table(mammogram))

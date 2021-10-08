@@ -1,77 +1,79 @@
-============= ===============
-MetroHealth83 R Documentation
-============= ===============
+.. container::
 
-Health Services in Metropolitan Areas
--------------------------------------
+   ============= ===============
+   MetroHealth83 R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Health Services in Metropolitan Areas
+      :name: health-services-in-metropolitan-areas
 
-Health services data for 83 metropolitan areas
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Health services data for 83 metropolitan areas
 
-A dataset with 83 observations on the following 16 variables.
+   .. rubric:: Format
+      :name: format
 
-+-----------------------+---------------------------------------------+
-| ``City``              | Name of the metropolitan area               |
-+-----------------------+---------------------------------------------+
-| ``NumMDs``            | Number of physicians                        |
-+-----------------------+---------------------------------------------+
-| ``RateMDs``           | Number of physicians per 100,000 people     |
-+-----------------------+---------------------------------------------+
-| ``NumHospitals``      | Number of community hospitals               |
-+-----------------------+---------------------------------------------+
-| ``NumBeds``           | Number of hospital beds                     |
-+-----------------------+---------------------------------------------+
-| ``RateBeds``          | Number of hospital beds per 100,000 people  |
-+-----------------------+---------------------------------------------+
-| ``NumMedicare``       | Number of Medicare recipients in 2003       |
-+-----------------------+---------------------------------------------+
-| ``PctChangeMedicare`` | Percent change in Medicare recipients (2000 |
-|                       | to 2003)                                    |
-+-----------------------+---------------------------------------------+
-| ``MedicareRate``      | Number of Medicare recipients per 100,000   |
-|                       | people                                      |
-+-----------------------+---------------------------------------------+
-| ``SSBNum``            | Number of Social Security recipients in     |
-|                       | 2004                                        |
-+-----------------------+---------------------------------------------+
-| ``SSBRate``           | Number of Social Security recipients per    |
-|                       | 100,000 people                              |
-+-----------------------+---------------------------------------------+
-| ``SSBChange``         | Percent change in Social Security           |
-|                       | recipients (2000 to 2004)                   |
-+-----------------------+---------------------------------------------+
-| ``NumRetired``        | Number of retired workers                   |
-+-----------------------+---------------------------------------------+
-| ``SSINum``            | Number of Supplemental Security Income      |
-|                       | recipients in 2004                          |
-+-----------------------+---------------------------------------------+
-| ``SSIRate``           | Number of Supplemental Security Income      |
-|                       | recipients per 100,000 people               |
-+-----------------------+---------------------------------------------+
-| ``SqrtMDs``           | Square root of number of physicians         |
-+-----------------------+---------------------------------------------+
-|                       |                                             |
-+-----------------------+---------------------------------------------+
+   A dataset with 83 observations on the following 16 variables.
 
-Details
-~~~~~~~
+   +-----------------------+---------------------------------------------+
+   | ``City``              | Name of the metropolitan area               |
+   +-----------------------+---------------------------------------------+
+   | ``NumMDs``            | Number of physicians                        |
+   +-----------------------+---------------------------------------------+
+   | ``RateMDs``           | Number of physicians per 100,000 people     |
+   +-----------------------+---------------------------------------------+
+   | ``NumHospitals``      | Number of community hospitals               |
+   +-----------------------+---------------------------------------------+
+   | ``NumBeds``           | Number of hospital beds                     |
+   +-----------------------+---------------------------------------------+
+   | ``RateBeds``          | Number of hospital beds per 100,000 people  |
+   +-----------------------+---------------------------------------------+
+   | ``NumMedicare``       | Number of Medicare recipients in 2003       |
+   +-----------------------+---------------------------------------------+
+   | ``PctChangeMedicare`` | Percent change in Medicare recipients (2000 |
+   |                       | to 2003)                                    |
+   +-----------------------+---------------------------------------------+
+   | ``MedicareRate``      | Number of Medicare recipients per 100,000   |
+   |                       | people                                      |
+   +-----------------------+---------------------------------------------+
+   | ``SSBNum``            | Number of Social Security recipients in     |
+   |                       | 2004                                        |
+   +-----------------------+---------------------------------------------+
+   | ``SSBRate``           | Number of Social Security recipients per    |
+   |                       | 100,000 people                              |
+   +-----------------------+---------------------------------------------+
+   | ``SSBChange``         | Percent change in Social Security           |
+   |                       | recipients (2000 to 2004)                   |
+   +-----------------------+---------------------------------------------+
+   | ``NumRetired``        | Number of retired workers                   |
+   +-----------------------+---------------------------------------------+
+   | ``SSINum``            | Number of Supplemental Security Income      |
+   |                       | recipients in 2004                          |
+   +-----------------------+---------------------------------------------+
+   | ``SSIRate``           | Number of Supplemental Security Income      |
+   |                       | recipients per 100,000 people               |
+   +-----------------------+---------------------------------------------+
+   | ``SqrtMDs``           | Square root of number of physicians         |
+   +-----------------------+---------------------------------------------+
+   |                       |                                             |
+   +-----------------------+---------------------------------------------+
 
-The U.S. Census Bureau regularly collects information for many
-metropolitan areas in the United States, including data on number of
-physicians and number (and size) of hospitals. This dataset has such
-information for 83 different metropolitan areas.
+   .. rubric:: Details
+      :name: details
 
-This dataset is in the first edition, but replaced by CountyHealth in
-the second edition.
+   The U.S. Census Bureau regularly collects information for many
+   metropolitan areas in the United States, including data on number of
+   physicians and number (and size) of hospitals. This dataset has such
+   information for 83 different metropolitan areas.
 
-Source
-~~~~~~
+   This dataset is in the first edition, but replaced by CountyHealth in
+   the second edition.
 
-| U.S. Census Bureau: 2006 State and Metropolitan Area Data Book (Table
-  B-6)
-| http://www.census.gov/prod/2006pubs/smadb/smadb-06.pdf
+   .. rubric:: Source
+      :name: source
+
+   | U.S. Census Bureau: 2006 State and Metropolitan Area Data Book
+     (Table B-6)
+   | http://www.census.gov/prod/2006pubs/smadb/smadb-06.pdf

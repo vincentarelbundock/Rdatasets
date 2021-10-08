@@ -1,41 +1,43 @@
-==== ===============
-rats R Documentation
-==== ===============
+.. container::
 
-data from Exercise 7.13, p225
------------------------------
+   ==== ===============
+   rats R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: data from Exercise 7.13, p225
+      :name: data-from-exercise-7.13-p225
 
-The ``rats`` data frame has 50 rows and 4 columns.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   The ``rats`` data frame has 50 rows and 4 columns.
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-time
-   Time to tumor development
+   This data frame contains the following columns:
 
-tumor
-   Indicator of tumor development (1=yes, 0=no)
+   time
+      Time to tumor development
 
-trt
-   Treatment (1=treated with drug, 0=given placebo)
+   tumor
+      Indicator of tumor development (1=yes, 0=no)
 
-litter
-   Litter
+   trt
+      Treatment (1=treated with drug, 0=given placebo)
 
-Source
-~~~~~~
+   litter
+      Litter
 
-Klein and Moeschberger (1997) *Survival Analysis Techniques for Censored
-and truncated data*, Springer.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Klein and Moeschberger (1997) *Survival Analysis Techniques for
+   Censored and truncated data*, Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(rats)
+   ::
+
+      data(rats)

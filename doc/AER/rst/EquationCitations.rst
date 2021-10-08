@@ -1,166 +1,169 @@
-================= ===============
-EquationCitations R Documentation
-================= ===============
+.. container::
 
-Number of Equations and Citations for Evolutionary Biology Publications
------------------------------------------------------------------------
+   ================= ===============
+   EquationCitations R Documentation
+   ================= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Number of Equations and Citations for Evolutionary
+      Biology Publications
+      :name: number-of-equations-and-citations-for-evolutionary-biology-publications
 
-Analysis of citations of evolutionary biology papers published in 1998
-in the top three journals (as judged by their 5-year impact factors in
-the Thomson Reuters Journal Citation Reports 2010).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Analysis of citations of evolutionary biology papers published in
+   1998 in the top three journals (as judged by their 5-year impact
+   factors in the Thomson Reuters Journal Citation Reports 2010).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("EquationCitations")
+   ::
 
-Format
-~~~~~~
+      data("EquationCitations")
 
-A data frame containing 649 observations on 13 variables.
+   .. rubric:: Format
+      :name: format
 
-journal
-   Factor. Journal in which the paper was published (The American
-   Naturalist, Evolution, Proceedings of the Royal Society of London B:
-   Biological Sciences).
+   A data frame containing 649 observations on 13 variables.
 
-authors
-   Character. Names of authors.
+   journal
+      Factor. Journal in which the paper was published (The American
+      Naturalist, Evolution, Proceedings of the Royal Society of London
+      B: Biological Sciences).
 
-volume
-   Volume in which the paper was published.
+   authors
+      Character. Names of authors.
 
-startpage
-   Starting page of publication.
+   volume
+      Volume in which the paper was published.
 
-pages
-   Number of pages.
+   startpage
+      Starting page of publication.
 
-equations
-   Number of equations in total.
+   pages
+      Number of pages.
 
-mainequations
-   Number of equations in main text.
+   equations
+      Number of equations in total.
 
-appequations
-   Number of equations in appendix.
+   mainequations
+      Number of equations in main text.
 
-cites
-   Number of citations in total.
+   appequations
+      Number of equations in appendix.
 
-selfcites
-   Number of citations by the authors themselves.
+   cites
+      Number of citations in total.
 
-othercites
-   Number of citations by other authors.
+   selfcites
+      Number of citations by the authors themselves.
 
-theocites
-   Number of citations by theoretical papers.
+   othercites
+      Number of citations by other authors.
 
-nontheocites
-   Number of citations by nontheoretical papers.
+   theocites
+      Number of citations by theoretical papers.
 
-Details
-~~~~~~~
+   nontheocites
+      Number of citations by nontheoretical papers.
 
-Fawcett and Higginson (2012) investigate the relationship between the
-number of citations evolutionary biology papers receive, depending on
-the number of equations per page in the cited paper. Overall it can be
-shown that papers with many mathematical equations significantly lower
-the number of citations they receive, in particular from nontheoretical
-papers.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Fawcett and Higginson (2012) investigate the relationship between the
+   number of citations evolutionary biology papers receive, depending on
+   the number of equations per page in the cited paper. Overall it can
+   be shown that papers with many mathematical equations significantly
+   lower the number of citations they receive, in particular from
+   nontheoretical papers.
 
-Online supplements to Fawcett and Higginson (2012).
+   .. rubric:: Source
+      :name: source
 
-http://www.pnas.org/lookup/suppl/doi:10.1073/pnas.1205259109/-/DCSupplemental
+   Online supplements to Fawcett and Higginson (2012).
 
-References
-~~~~~~~~~~
+   http://www.pnas.org/lookup/suppl/doi:10.1073/pnas.1205259109/-/DCSupplemental
 
-Fawcett, T.W. and Higginson, A.D. (2012). Heavy Use of Equations Impedes
-Communication among Biologists. *PNAS – Proceedings of the National
-Academy of Sciences of the United States of America*, **109**,
-11735–11739. http://dx.doi.org/10.1073/pnas.1205259109
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Fawcett, T.W. and Higginson, A.D. (2012). Heavy Use of Equations
+   Impedes Communication among Biologists. *PNAS – Proceedings of the
+   National Academy of Sciences of the United States of America*,
+   **109**, 11735–11739. http://dx.doi.org/10.1073/pnas.1205259109
 
-``PhDPublications``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``PhDPublications``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## load data and MASS package
-   data("EquationCitations", package = "AER")
-   library("MASS")
+   ::
 
-   ## convenience function for summarizing NB models
-   nbtable <- function(obj, digits = 3) round(cbind(
-     "OR" = exp(coef(obj)),
-     "CI" = exp(confint.default(obj)),
-     "Wald z" = coeftest(obj)[,3],
-     "p" = coeftest(obj)[, 4]), digits = digits)
+      ## load data and MASS package
+      data("EquationCitations", package = "AER")
+      library("MASS")
 
-
-   #################
-   ## Replication ##
-   #################
-
-   ## Table 1
-   m1a <- glm.nb(othercites ~ I(equations/pages) * pages + journal,
-     data = EquationCitations)
-   m1b <- update(m1a, nontheocites ~ .)
-   m1c <- update(m1a, theocites ~ .)
-   nbtable(m1a)
-   nbtable(m1b)
-   nbtable(m1c)
-
-   ## Table 2
-   m2a <- glm.nb(
-     othercites ~ (I(mainequations/pages) + I(appequations/pages)) * pages + journal,
-     data = EquationCitations)
-   m2b <- update(m2a, nontheocites ~ .)
-   m2c <- update(m2a, theocites ~ .)
-   nbtable(m2a)
-   nbtable(m2b)
-   nbtable(m2c)
+      ## convenience function for summarizing NB models
+      nbtable <- function(obj, digits = 3) round(cbind(
+        "OR" = exp(coef(obj)),
+        "CI" = exp(confint.default(obj)),
+        "Wald z" = coeftest(obj)[,3],
+        "p" = coeftest(obj)[, 4]), digits = digits)
 
 
-   ###############
-   ## Extension ##
-   ###############
+      #################
+      ## Replication ##
+      #################
 
-   ## nonlinear page effect: use log(pages) instead of pages+interaction
-   m3a <- glm.nb(othercites ~ I(equations/pages) + log(pages) + journal,
-     data = EquationCitations)
-   m3b <- update(m3a, nontheocites ~ .)
-   m3c <- update(m3a, theocites ~ .)
+      ## Table 1
+      m1a <- glm.nb(othercites ~ I(equations/pages) * pages + journal,
+        data = EquationCitations)
+      m1b <- update(m1a, nontheocites ~ .)
+      m1c <- update(m1a, theocites ~ .)
+      nbtable(m1a)
+      nbtable(m1b)
+      nbtable(m1c)
 
-   ## nested models: allow different equation effects over journals
-   m4a <- glm.nb(othercites ~ journal / I(equations/pages) + log(pages),
-     data = EquationCitations)
-   m4b <- update(m4a, nontheocites ~ .)
-   m4c <- update(m4a, theocites ~ .)
+      ## Table 2
+      m2a <- glm.nb(
+        othercites ~ (I(mainequations/pages) + I(appequations/pages)) * pages + journal,
+        data = EquationCitations)
+      m2b <- update(m2a, nontheocites ~ .)
+      m2c <- update(m2a, theocites ~ .)
+      nbtable(m2a)
+      nbtable(m2b)
+      nbtable(m2c)
 
-   ## nested model best (wrt AIC) for all responses
-   AIC(m1a, m2a, m3a, m4a)
-   nbtable(m4a)
-   AIC(m1b, m2b, m3b, m4b)
-   nbtable(m4b)
-   AIC(m1c, m2c, m3c, m4c)
-   nbtable(m4c)
-   ## equation effect by journal/response
-   ##           comb nontheo theo
-   ## AmNat     =/-  -       +
-   ## Evolution =/+  =       +
-   ## ProcB     -    -       =/+
+
+      ###############
+      ## Extension ##
+      ###############
+
+      ## nonlinear page effect: use log(pages) instead of pages+interaction
+      m3a <- glm.nb(othercites ~ I(equations/pages) + log(pages) + journal,
+        data = EquationCitations)
+      m3b <- update(m3a, nontheocites ~ .)
+      m3c <- update(m3a, theocites ~ .)
+
+      ## nested models: allow different equation effects over journals
+      m4a <- glm.nb(othercites ~ journal / I(equations/pages) + log(pages),
+        data = EquationCitations)
+      m4b <- update(m4a, nontheocites ~ .)
+      m4c <- update(m4a, theocites ~ .)
+
+      ## nested model best (wrt AIC) for all responses
+      AIC(m1a, m2a, m3a, m4a)
+      nbtable(m4a)
+      AIC(m1b, m2b, m3b, m4b)
+      nbtable(m4b)
+      AIC(m1c, m2c, m3c, m4c)
+      nbtable(m4c)
+      ## equation effect by journal/response
+      ##           comb nontheo theo
+      ## AmNat     =/-  -       +
+      ## Evolution =/+  =       +
+      ## ProcB     -    -       =/+

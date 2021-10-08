@@ -1,69 +1,71 @@
-========= ===============
-SexualFun R Documentation
-========= ===============
+.. container::
 
-Sex is Fun
-----------
+   ========= ===============
+   SexualFun R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Sex is Fun
+      :name: sex-is-fun
 
-Data from Hout et al. (1987) given by Agresti (1990) summarizing the
-responses of married couples to the questionnaire item: Sex is fun for
-me and my partner: (a) never or occasionally, (b) fairly often, (c) very
-often, (d) almost always.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from Hout et al. (1987) given by Agresti (1990) summarizing the
+   responses of married couples to the questionnaire item: Sex is fun
+   for me and my partner: (a) never or occasionally, (b) fairly often,
+   (c) very often, (d) almost always.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("SexualFun")
+   ::
 
-Format
-~~~~~~
+      data("SexualFun")
 
-A 2-dimensional array resulting from cross-tabulating the ratings of 91
-married couples. The variables and their levels are as follows:
+   .. rubric:: Format
+      :name: format
 
-== ======= ===============================================
-No Name    Levels
-1  Husband Never Fun, Fairly Often, Very Often, Always Fun
-2  Wife    Never Fun, Fairly Often, Very Often, Always Fun
-== ======= ===============================================
+   A 2-dimensional array resulting from cross-tabulating the ratings of
+   91 married couples. The variables and their levels are as follows:
 
-Source
-~~~~~~
+   == ======= ===============================================
+   No Name    Levels
+   1  Husband Never Fun, Fairly Often, Very Often, Always Fun
+   2  Wife    Never Fun, Fairly Often, Very Often, Always Fun
+   == ======= ===============================================
 
-M. Friendly (2000), Visualizing Categorical Data, page 91.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   M. Friendly (2000), Visualizing Categorical Data, page 91.
 
-A. Agresti (1990), *Categorical Data Analysis*. Wiley-Interscience, New
-York.
+   .. rubric:: References
+      :name: references
 
-M. Hout, O. D. Duncan, M. E. Sobel (1987), Association and
-heterogeneity: Structural models of similarities and differences,
-*Sociological Methodology*, **17**, 145-184.
+   A. Agresti (1990), *Categorical Data Analysis*. Wiley-Interscience,
+   New York.
 
-M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute, Cary,
-NC.
+   M. Hout, O. D. Duncan, M. E. Sobel (1987), Association and
+   heterogeneity: Structural models of similarities and differences,
+   *Sociological Methodology*, **17**, 145-184.
 
-Examples
-~~~~~~~~
+   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+   Cary, NC.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("SexualFun")
+   ::
 
-   ## Kappa statistics
-   Kappa(SexualFun)
+      data("SexualFun")
 
-   ## Agreement Chart
-   agreementplot(t(SexualFun), weights = 1)
-   ## Partial Agreement Chart and B-Statistics
-   agreementplot(t(SexualFun),
-                 xlab = "Husband's Rating",
-                 ylab = "Wife's Rating",
-                 main = "Husband's and Wife's Sexual Fun")
+      ## Kappa statistics
+      Kappa(SexualFun)
+
+      ## Agreement Chart
+      agreementplot(t(SexualFun), weights = 1)
+      ## Partial Agreement Chart and B-Statistics
+      agreementplot(t(SexualFun),
+                    xlab = "Husband's Rating",
+                    ylab = "Wife's Rating",
+                    main = "Husband's and Wife's Sexual Fun")

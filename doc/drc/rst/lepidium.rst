@@ -1,55 +1,58 @@
-======== ===============
-lepidium R Documentation
-======== ===============
+.. container::
 
-Dose-response profile of degradation of agrochemical using lepidium
--------------------------------------------------------------------
+   ======== ===============
+   lepidium R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Dose-response profile of degradation of agrochemical
+      using lepidium
+      :name: dose-response-profile-of-degradation-of-agrochemical-using-lepidium
 
-Estimation of the degradation profile of an agrochemical based on soil
-samples at depth 0-10cm from a calibration experiment.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Estimation of the degradation profile of an agrochemical based on
+   soil samples at depth 0-10cm from a calibration experiment.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(lepidium)
+   ::
 
-Format
-~~~~~~
+      data(lepidium)
 
-A data frame with 42 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-``conc``
-   a numeric vector of concentrations (g/ha)
+   A data frame with 42 observations on the following 2 variables.
 
-``weight``
-   a numeric vector of plant weight (g) after 3 weeks' growth
+   ``conc``
+      a numeric vector of concentrations (g/ha)
 
-Details
-~~~~~~~
+   ``weight``
+      a numeric vector of plant weight (g) after 3 weeks' growth
 
-It is an experiment with seven concentrations and six replicates per
-concentration. *Lepidium* is rather robust as it only responds to high
-concentrations.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   It is an experiment with seven concentrations and six replicates per
+   concentration. *Lepidium* is rather robust as it only responds to
+   high concentrations.
 
-Racine-Poon, A. (1988) A Bayesian Approach to Nonlinear Calibration
-Problems, *J. Am. Statist. Ass.*, **83**, 650–656.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Racine-Poon, A. (1988) A Bayesian Approach to Nonlinear Calibration
+   Problems, *J. Am. Statist. Ass.*, **83**, 650–656.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   lepidium.m1 <- drm(weight~conc, data=lepidium, fct = LL.4())
+      lepidium.m1 <- drm(weight~conc, data=lepidium, fct = LL.4())
 
-   modelFit(lepidium.m1)
+      modelFit(lepidium.m1)
 
-   plot(lepidium.m1, type = "all", log = "")
+      plot(lepidium.m1, type = "all", log = "")

@@ -1,52 +1,54 @@
-============ ===============
-OrangeCounty R Documentation
-============ ===============
+.. container::
 
-Orange County Employment
-------------------------
+   ============ ===============
+   OrangeCounty R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Orange County Employment
+      :name: orange-county-employment
 
-Quarterly time series data on employment in Orange county, 1965–1983.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Quarterly time series data on employment in Orange county, 1965–1983.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("OrangeCounty")
+   ::
 
-Format
-~~~~~~
+      data("OrangeCounty")
 
-A quarterly multiple time series from 1965 to 1983 with 2 variables.
+   .. rubric:: Format
+      :name: format
 
-employment
-   Quarterly employment in Orange county.
+   A quarterly multiple time series from 1965 to 1983 with 2 variables.
 
-gnp
-   Quarterly real GNP.
+   employment
+      Quarterly employment in Orange county.
 
-Source
-~~~~~~
+   gnp
+      Quarterly real GNP.
 
-The data is from Baltagi (2002).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The data is from Baltagi (2002).
 
-Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
 
-``Baltagi2002``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Baltagi2002``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("OrangeCounty")
-   plot(OrangeCounty)
+   ::
+
+      data("OrangeCounty")
+      plot(OrangeCounty)

@@ -1,71 +1,74 @@
-======= ===============
-codling R Documentation
-======= ===============
+.. container::
 
-Dose-mortality data, for fumigation of codling moth with methyl bromide
------------------------------------------------------------------------
+   ======= ===============
+   codling R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Dose-mortality data, for fumigation of codling moth with
+      methyl bromide
+      :name: dose-mortality-data-for-fumigation-of-codling-moth-with-methyl-bromide
 
-Data are from trials that studied the mortality response of codling moth
-to fumigation with methyl bromide.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data are from trials that studied the mortality response of codling
+   moth to fumigation with methyl bromide.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(codling)
+   ::
 
-Format
-~~~~~~
+      data(codling)
 
-A data frame with 99 observations on the following 10 variables.
+   .. rubric:: Format
+      :name: format
 
-dose
-   Injected dose of methyl bromide, in gm per cubic meter
+   A data frame with 99 observations on the following 10 variables.
 
-tot
-   Number of insects in chamber
+   dose
+      Injected dose of methyl bromide, in gm per cubic meter
 
-dead
-   Number of insects dying
+   tot
+      Number of insects in chamber
 
-pobs
-   Proportion dying
+   dead
+      Number of insects dying
 
-cm
-   Control mortality, i.e., at dose 0
+   pobs
+      Proportion dying
 
-ct
-   Concentration-time sum
+   cm
+      Control mortality, i.e., at dose 0
 
-Cultivar
-   a factor with levels ``BRAEBURN`` ``FUJI`` ``GRANNY`` ``Gala``
-   ``ROYAL`` ``Red Delicious`` ``Splendour``
+   ct
+      Concentration-time sum
 
-gp
-   a factor which has a different level for each different combination
-   of ``Cultivar``, ``year`` and ``rep`` (replicate).
+   Cultivar
+      a factor with levels ``BRAEBURN`` ``FUJI`` ``GRANNY`` ``Gala``
+      ``ROYAL`` ``Red Delicious`` ``Splendour``
 
-year
-   a factor with levels ``1988`` ``1989``
+   gp
+      a factor which has a different level for each different
+      combination of ``Cultivar``, ``year`` and ``rep`` (replicate).
 
-numcm
-   a numeric vector: total number of control insects
+   year
+      a factor with levels ``1988`` ``1989``
 
-Details
-~~~~~~~
+   numcm
+      a numeric vector: total number of control insects
 
-The research that generated these data was in part funded by New Zealand
-pipfruit growers. The published analysis was funded by New Zealand
-pipfruit growers. See also ``sorption``.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The research that generated these data was in part funded by New
+   Zealand pipfruit growers. The published analysis was funded by New
+   Zealand pipfruit growers. See also ``sorption``.
 
-Maindonald, J.H.; Waddell, B.C.; Petry, R.J. 2001. Apple cultivar
-effects on codling moth (Lepidoptera: Tortricidae) egg mortality
-following fumigation with methyl bromide. Postharvest Biology and
-Technology 22: 99-110.
+   .. rubric:: Source
+      :name: source
+
+   Maindonald, J.H.; Waddell, B.C.; Petry, R.J. 2001. Apple cultivar
+   effects on codling moth (Lepidoptera: Tortricidae) egg mortality
+   following fumigation with methyl bromide. Postharvest Biology and
+   Technology 22: 99-110.

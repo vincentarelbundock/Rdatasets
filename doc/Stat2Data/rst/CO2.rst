@@ -1,36 +1,38 @@
-=== ===============
-CO2 R Documentation
-=== ===============
+.. container::
 
-Daily CO2 Measurements in Germany
----------------------------------
+   === ===============
+   CO2 R Documentation
+   === ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Daily CO2 Measurements in Germany
+      :name: daily-co2-measurements-in-germany
 
-Daily carbon dioxide measurements for April through November 2011
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Daily carbon dioxide measurements for April through November 2011
 
-A data frame with 237 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-``CO2``
-   Carbon dioxide (CO2) level (in parts per million)
+   A data frame with 237 observations on the following 2 variables.
 
-``Day``
-   Number of day in 2011 (April 1 = day 91)
+   ``CO2``
+      Carbon dioxide (CO2) level (in parts per million)
 
-Details
-~~~~~~~
+   ``Day``
+      Number of day in 2011 (April 1 = day 91)
 
-Scientists at a research station in Brotjacklriegel, Germany recorded
-CO2 levels, in parts per million, in the atmosphere for each day from
-the start of April through November in 2011.
+   .. rubric:: Details
+      :name: details
 
-This dataset was renamed to CO2Germany for the second edition.
+   Scientists at a research station in Brotjacklriegel, Germany recorded
+   CO2 levels, in parts per million, in the atmosphere for each day from
+   the start of April through November in 2011.
 
-Source
-~~~~~~
+   This dataset was renamed to CO2Germany for the second edition.
 
-http://gaw.empa.ch/gawsis/reports.asp?StationID=-739519191
+   .. rubric:: Source
+      :name: source
+
+   http://gaw.empa.ch/gawsis/reports.asp?StationID=-739519191

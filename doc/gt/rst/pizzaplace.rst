@@ -1,195 +1,199 @@
-========== ===============
-pizzaplace R Documentation
-========== ===============
+.. container::
 
-A year of pizza sales from a pizza place
-----------------------------------------
+   ========== ===============
+   pizzaplace R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: A year of pizza sales from a pizza place
+      :name: a-year-of-pizza-sales-from-a-pizza-place
 
-A synthetic dataset that describes pizza sales for a pizza place
-somewhere in the US. While the contents are artificial, the ingredients
-used to make the pizzas are far from it. There are 32 different pizzas
-that fall into 4 different categories: ``classic`` (classic pizzas: 'You
-probably had one like it before, but never like this!'), ``chicken``
-(pizzas with chicken as a major ingredient: 'Try the Southwest Chicken
-Pizza! You'll love it!'), ``supreme`` (pizzas that try a little harder:
-'My Soppressata pizza uses only the finest salami from my personal
-salumist!'), and, ``veggie`` (pizzas without any meats whatsoever: 'My
-Five Cheese pizza has so many cheeses, I can only offer it in Large
-Size!').
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A synthetic dataset that describes pizza sales for a pizza place
+   somewhere in the US. While the contents are artificial, the
+   ingredients used to make the pizzas are far from it. There are 32
+   different pizzas that fall into 4 different categories: ``classic``
+   (classic pizzas: 'You probably had one like it before, but never like
+   this!'), ``chicken`` (pizzas with chicken as a major ingredient: 'Try
+   the Southwest Chicken Pizza! You'll love it!'), ``supreme`` (pizzas
+   that try a little harder: 'My Soppressata pizza uses only the finest
+   salami from my personal salumist!'), and, ``veggie`` (pizzas without
+   any meats whatsoever: 'My Five Cheese pizza has so many cheeses, I
+   can only offer it in Large Size!').
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   pizzaplace
+   ::
 
-Format
-~~~~~~
+      pizzaplace
 
-A tibble with 49574 rows and 7 variables:
+   .. rubric:: Format
+      :name: format
 
-id
-   The ID for the order, which consists of one or more pizzas at a give
-   ``date`` and ``time``
+   A tibble with 49574 rows and 7 variables:
 
-date
-   A character representation of the ``order`` date, expressed in the
-   ISO 8601 date format (YYYY-MM-DD)
+   id
+      The ID for the order, which consists of one or more pizzas at a
+      give ``date`` and ``time``
 
-time
-   A character representation of the ``order`` time, expressed as a
-   24-hour time the ISO 8601 extended time format (hh:mm:ss)
+   date
+      A character representation of the ``order`` date, expressed in the
+      ISO 8601 date format (YYYY-MM-DD)
 
-name
-   The short name for the pizza
+   time
+      A character representation of the ``order`` time, expressed as a
+      24-hour time the ISO 8601 extended time format (hh:mm:ss)
 
-size
-   The size of the pizza, which can either be ``S``, ``M``, ``L``,
-   ``XL`` (rare!), or ``XXL`` (even rarer!); most pizzas are available
-   in the ``S``, ``M``, and ``L`` sizes but exceptions apply
+   name
+      The short name for the pizza
 
-type
-   The category or type of pizza, which can either be ``classic``,
-   ``chicken``, ``supreme``, or ``veggie``
+   size
+      The size of the pizza, which can either be ``S``, ``M``, ``L``,
+      ``XL`` (rare!), or ``XXL`` (even rarer!); most pizzas are
+      available in the ``S``, ``M``, and ``L`` sizes but exceptions
+      apply
 
-price
-   The price of the pizza and the amount that it sold for (in USD)
+   type
+      The category or type of pizza, which can either be ``classic``,
+      ``chicken``, ``supreme``, or ``veggie``
 
-Details
-~~~~~~~
+   price
+      The price of the pizza and the amount that it sold for (in USD)
 
-Each pizza in the dataset is identified by a short ``name``. The
-following listings provide the full names of each pizza and their main
-ingredients.
+   .. rubric:: Details
+      :name: details
 
-Classic Pizzas:
+   Each pizza in the dataset is identified by a short ``name``. The
+   following listings provide the full names of each pizza and their
+   main ingredients.
 
--  ``classic_dlx``: The Classic Deluxe Pizza (Pepperoni, Mushrooms, Red
-   Onions, Red Peppers, Bacon)
+   Classic Pizzas:
 
--  ``big_meat``: The Big Meat Pizza (Bacon, Pepperoni, Italian Sausage,
-   Chorizo Sausage)
+   -  ``classic_dlx``: The Classic Deluxe Pizza (Pepperoni, Mushrooms,
+      Red Onions, Red Peppers, Bacon)
 
--  ``pepperoni``: The Pepperoni Pizza (Mozzarella Cheese, Pepperoni)
+   -  ``big_meat``: The Big Meat Pizza (Bacon, Pepperoni, Italian
+      Sausage, Chorizo Sausage)
 
--  ``hawaiian``: The Hawaiian Pizza (Sliced Ham, Pineapple, Mozzarella
-   Cheese)
+   -  ``pepperoni``: The Pepperoni Pizza (Mozzarella Cheese, Pepperoni)
 
--  ``pep_msh_pep``: The Pepperoni, Mushroom, and Peppers Pizza
-   (Pepperoni, Mushrooms, and Green Peppers)
+   -  ``hawaiian``: The Hawaiian Pizza (Sliced Ham, Pineapple,
+      Mozzarella Cheese)
 
--  ``ital_cpcllo``: The Italian Capocollo Pizza (Capocollo, Red Peppers,
-   Tomatoes, Goat Cheese, Garlic, Oregano)
+   -  ``pep_msh_pep``: The Pepperoni, Mushroom, and Peppers Pizza
+      (Pepperoni, Mushrooms, and Green Peppers)
 
--  ``napolitana``: The Napolitana Pizza (Tomatoes, Anchovies, Green
-   Olives, Red Onions, Garlic)
+   -  ``ital_cpcllo``: The Italian Capocollo Pizza (Capocollo, Red
+      Peppers, Tomatoes, Goat Cheese, Garlic, Oregano)
 
--  ``the_greek``: The Greek Pizza (Kalamata Olives, Feta Cheese,
-   Tomatoes, Garlic, Beef Chuck Roast, Red Onions)
+   -  ``napolitana``: The Napolitana Pizza (Tomatoes, Anchovies, Green
+      Olives, Red Onions, Garlic)
 
-Chicken Pizzas:
+   -  ``the_greek``: The Greek Pizza (Kalamata Olives, Feta Cheese,
+      Tomatoes, Garlic, Beef Chuck Roast, Red Onions)
 
--  ``thai_ckn``: The Thai Chicken Pizza (Chicken, Pineapple, Tomatoes,
-   Red Peppers, Thai Sweet Chilli Sauce)
+   Chicken Pizzas:
 
--  ``bbq_ckn``: The Barbecue Chicken Pizza (Barbecued Chicken, Red
-   Peppers, Green Peppers, Tomatoes, Red Onions, Barbecue Sauce)
+   -  ``thai_ckn``: The Thai Chicken Pizza (Chicken, Pineapple,
+      Tomatoes, Red Peppers, Thai Sweet Chilli Sauce)
 
--  ``southw_ckn``: The Southwest Chicken Pizza (Chicken, Tomatoes, Red
-   Peppers, Red Onions, Jalapeno Peppers, Corn, Cilantro, Chipotle
-   Sauce)
+   -  ``bbq_ckn``: The Barbecue Chicken Pizza (Barbecued Chicken, Red
+      Peppers, Green Peppers, Tomatoes, Red Onions, Barbecue Sauce)
 
--  ``cali_ckn``: The California Chicken Pizza (Chicken, Artichoke,
-   Spinach, Garlic, Jalapeno Peppers, Fontina Cheese, Gouda Cheese)
+   -  ``southw_ckn``: The Southwest Chicken Pizza (Chicken, Tomatoes,
+      Red Peppers, Red Onions, Jalapeno Peppers, Corn, Cilantro,
+      Chipotle Sauce)
 
--  ``ckn_pesto``: The Chicken Pesto Pizza (Chicken, Tomatoes, Red
-   Peppers, Spinach, Garlic, Pesto Sauce)
+   -  ``cali_ckn``: The California Chicken Pizza (Chicken, Artichoke,
+      Spinach, Garlic, Jalapeno Peppers, Fontina Cheese, Gouda Cheese)
 
--  ``ckn_alfredo``: The Chicken Alfredo Pizza (Chicken, Red Onions, Red
-   Peppers, Mushrooms, Asiago Cheese, Alfredo Sauce)
+   -  ``ckn_pesto``: The Chicken Pesto Pizza (Chicken, Tomatoes, Red
+      Peppers, Spinach, Garlic, Pesto Sauce)
 
-Supreme Pizzas:
+   -  ``ckn_alfredo``: The Chicken Alfredo Pizza (Chicken, Red Onions,
+      Red Peppers, Mushrooms, Asiago Cheese, Alfredo Sauce)
 
--  ``brie_carre``: The Brie Carre Pizza (Brie Carre Cheese, Prosciutto,
-   Caramelized Onions, Pears, Thyme, Garlic)
+   Supreme Pizzas:
 
--  ``calabrese``: The Calabrese Pizza (‘Nduja Salami, Pancetta,
-   Tomatoes, Red Onions, Friggitello Peppers, Garlic)
+   -  ``brie_carre``: The Brie Carre Pizza (Brie Carre Cheese,
+      Prosciutto, Caramelized Onions, Pears, Thyme, Garlic)
 
--  ``soppressata``: The Soppressata Pizza (Soppressata Salami, Fontina
-   Cheese, Mozzarella Cheese, Mushrooms, Garlic)
+   -  ``calabrese``: The Calabrese Pizza (‘Nduja Salami, Pancetta,
+      Tomatoes, Red Onions, Friggitello Peppers, Garlic)
 
--  ``sicilian``: The Sicilian Pizza (Coarse Sicilian Salami, Tomatoes,
-   Green Olives, Luganega Sausage, Onions, Garlic)
+   -  ``soppressata``: The Soppressata Pizza (Soppressata Salami,
+      Fontina Cheese, Mozzarella Cheese, Mushrooms, Garlic)
 
--  ``ital_supr``: The Italian Supreme Pizza (Calabrese Salami,
-   Capocollo, Tomatoes, Red Onions, Green Olives, Garlic)
+   -  ``sicilian``: The Sicilian Pizza (Coarse Sicilian Salami,
+      Tomatoes, Green Olives, Luganega Sausage, Onions, Garlic)
 
--  ``peppr_salami``: The Pepper Salami Pizza (Genoa Salami, Capocollo,
-   Pepperoni, Tomatoes, Asiago Cheese, Garlic)
+   -  ``ital_supr``: The Italian Supreme Pizza (Calabrese Salami,
+      Capocollo, Tomatoes, Red Onions, Green Olives, Garlic)
 
--  ``prsc_argla``: The Prosciutto and Arugula Pizza (Prosciutto di San
-   Daniele, Arugula, Mozzarella Cheese)
+   -  ``peppr_salami``: The Pepper Salami Pizza (Genoa Salami,
+      Capocollo, Pepperoni, Tomatoes, Asiago Cheese, Garlic)
 
--  ``spinach_supr``: The Spinach Supreme Pizza (Spinach, Red Onions,
-   Pepperoni, Tomatoes, Artichokes, Kalamata Olives, Garlic, Asiago
-   Cheese)
+   -  ``prsc_argla``: The Prosciutto and Arugula Pizza (Prosciutto di
+      San Daniele, Arugula, Mozzarella Cheese)
 
--  ``spicy_ital``: The Spicy Italian Pizza (Capocollo, Tomatoes, Goat
-   Cheese, Artichokes, Peperoncini verdi, Garlic)
+   -  ``spinach_supr``: The Spinach Supreme Pizza (Spinach, Red Onions,
+      Pepperoni, Tomatoes, Artichokes, Kalamata Olives, Garlic, Asiago
+      Cheese)
 
-Vegetable Pizzas
+   -  ``spicy_ital``: The Spicy Italian Pizza (Capocollo, Tomatoes, Goat
+      Cheese, Artichokes, Peperoncini verdi, Garlic)
 
--  ``mexicana``: The Mexicana Pizza (Tomatoes, Red Peppers, Jalapeno
-   Peppers, Red Onions, Cilantro, Corn, Chipotle Sauce, Garlic)
+   Vegetable Pizzas
 
--  ``four_cheese``: The Four Cheese Pizza (Ricotta Cheese, Gorgonzola
-   Piccante Cheese, Mozzarella Cheese, Parmigiano Reggiano Cheese,
-   Garlic)
+   -  ``mexicana``: The Mexicana Pizza (Tomatoes, Red Peppers, Jalapeno
+      Peppers, Red Onions, Cilantro, Corn, Chipotle Sauce, Garlic)
 
--  ``five_cheese``: The Five Cheese Pizza (Mozzarella Cheese, Provolone
-   Cheese, Smoked Gouda Cheese, Romano Cheese, Blue Cheese, Garlic)
+   -  ``four_cheese``: The Four Cheese Pizza (Ricotta Cheese, Gorgonzola
+      Piccante Cheese, Mozzarella Cheese, Parmigiano Reggiano Cheese,
+      Garlic)
 
--  ``spin_pesto``: The Spinach Pesto Pizza (Spinach, Artichokes,
-   Tomatoes, Sun-dried Tomatoes, Garlic, Pesto Sauce)
+   -  ``five_cheese``: The Five Cheese Pizza (Mozzarella Cheese,
+      Provolone Cheese, Smoked Gouda Cheese, Romano Cheese, Blue Cheese,
+      Garlic)
 
--  ``veggie_veg``: The Vegetables + Vegetables Pizza (Mushrooms,
-   Tomatoes, Red Peppers, Green Peppers, Red Onions, Zucchini, Spinach,
-   Garlic)
+   -  ``spin_pesto``: The Spinach Pesto Pizza (Spinach, Artichokes,
+      Tomatoes, Sun-dried Tomatoes, Garlic, Pesto Sauce)
 
--  ``green_garden``: The Green Garden Pizza (Spinach, Mushrooms,
-   Tomatoes, Green Olives, Feta Cheese)
+   -  ``veggie_veg``: The Vegetables + Vegetables Pizza (Mushrooms,
+      Tomatoes, Red Peppers, Green Peppers, Red Onions, Zucchini,
+      Spinach, Garlic)
 
--  ``mediterraneo``: The Mediterranean Pizza (Spinach, Artichokes,
-   Kalamata Olives, Sun-dried Tomatoes, Feta Cheese, Plum Tomatoes, Red
-   Onions)
+   -  ``green_garden``: The Green Garden Pizza (Spinach, Mushrooms,
+      Tomatoes, Green Olives, Feta Cheese)
 
--  ``spinach_fet``: The Spinach and Feta Pizza (Spinach, Mushrooms, Red
-   Onions, Feta Cheese, Garlic)
+   -  ``mediterraneo``: The Mediterranean Pizza (Spinach, Artichokes,
+      Kalamata Olives, Sun-dried Tomatoes, Feta Cheese, Plum Tomatoes,
+      Red Onions)
 
--  ``ital_veggie``: The Italian Vegetables Pizza (Eggplant, Artichokes,
-   Tomatoes, Zucchini, Red Peppers, Garlic, Pesto Sauce)
+   -  ``spinach_fet``: The Spinach and Feta Pizza (Spinach, Mushrooms,
+      Red Onions, Feta Cheese, Garlic)
 
-Function ID
-~~~~~~~~~~~
+   -  ``ital_veggie``: The Italian Vegetables Pizza (Eggplant,
+      Artichokes, Tomatoes, Zucchini, Red Peppers, Garlic, Pesto Sauce)
 
-11-5
+   .. rubric:: Function ID
+      :name: function-id
 
-See Also
-~~~~~~~~
+   11-5
 
-Other Datasets: ``countrypops``, ``exibble``, ``gtcars``, ``sp500``,
-``sza``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   Other Datasets: ``countrypops``, ``exibble``, ``gtcars``, ``sp500``,
+   ``sza``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   # Here is a glimpse at the data
-   # available in `pizzaplace`
-   dplyr::glimpse(pizzaplace)
+   ::
+
+      # Here is a glimpse at the data
+      # available in `pizzaplace`
+      dplyr::glimpse(pizzaplace)

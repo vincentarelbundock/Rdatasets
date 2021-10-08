@@ -1,70 +1,72 @@
-====== ===============
-Parity R Documentation
-====== ===============
+.. container::
 
-Purchasing Power Parity and other parity relationships
-------------------------------------------------------
+   ====== ===============
+   Parity R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Purchasing Power Parity and other parity relationships
+      :name: purchasing-power-parity-and-other-parity-relationships
 
-A panel of 104 quarterly observations from 1973Q1 to 1998Q4
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   A panel of 104 quarterly observations from 1973Q1 to 1998Q4
 
-A data frame containing :
+   .. rubric:: Format
+      :name: format
 
-country
-   country codes: a factor with 17 levels
+   A data frame containing :
 
-time
-   the quarter index, 1973Q1-1998Q4
+   country
+      country codes: a factor with 17 levels
 
-ls
-   log spot exchange rate vs. USD
+   time
+      the quarter index, 1973Q1-1998Q4
 
-lp
-   log price level
+   ls
+      log spot exchange rate vs. USD
 
-is
-   short term interest rate
+   lp
+      log price level
 
-il
-   long term interest rate
+   is
+      short term interest rate
 
-ld
-   log price differential vs. USA
+   il
+      long term interest rate
 
-uis
-   U.S. short term interest rate
+   ld
+      log price differential vs. USA
 
-uil
-   U.S. long term interest rate
+   uis
+      U.S. short term interest rate
 
-Details
-~~~~~~~
+   uil
+      U.S. long term interest rate
 
-*total number of observations* : 1768
+   .. rubric:: Details
+      :name: details
 
-*observation* : country
+   *total number of observations* : 1768
 
-*country* : OECD
+   *observation* : country
 
-Source
-~~~~~~
+   *country* : OECD
 
-Coakley J, Fuertes A, Smith R (2006). “Unobserved heterogeneity in panel
-time series models.” *Computational Statistics \\& Data Analysis*,
-**50**\ (9), 2361–2380.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Coakley J, Fuertes A, Smith R (2006). “Unobserved heterogeneity in
+   panel time series models.” *Computational Statistics \\& Data
+   Analysis*, **50**\ (9), 2361–2380.
 
-Coakley J, Fuertes A, Smith R (2006). “Unobserved heterogeneity in panel
-time series models.” *Computational Statistics \\& Data Analysis*,
-**50**\ (9), 2361–2380.
+   .. rubric:: References
+      :name: references
 
-Driscoll JC, Kraay AC (1998). “Consistent covariance matrix estimation
-with spatially dependent panel data.” *Review of economics and
-statistics*, **80**\ (4), 549–560.
+   Coakley J, Fuertes A, Smith R (2006). “Unobserved heterogeneity in
+   panel time series models.” *Computational Statistics \\& Data
+   Analysis*, **50**\ (9), 2361–2380.
+
+   Driscoll JC, Kraay AC (1998). “Consistent covariance matrix
+   estimation with spatially dependent panel data.” *Review of economics
+   and statistics*, **80**\ (4), 549–560.

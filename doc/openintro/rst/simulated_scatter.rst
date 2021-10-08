@@ -1,44 +1,46 @@
-================= ===============
-simulated_scatter R Documentation
-================= ===============
+.. container::
 
-Simulated data for sample scatterplots
---------------------------------------
+   ================= ===============
+   simulated_scatter R Documentation
+   ================= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Simulated data for sample scatterplots
+      :name: simulated-data-for-sample-scatterplots
 
-Fake data.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Fake data.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   simulated_scatter
+   ::
 
-Format
-~~~~~~
+      simulated_scatter
 
-A data frame with 500 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-group
-   Group, representing data for a specific plot.
+   A data frame with 500 observations on the following 3 variables.
 
-x
-   x-value.
+   group
+      Group, representing data for a specific plot.
 
-y
-   y-value.
+   x
+      x-value.
 
-Examples
-~~~~~~~~
+   y
+      y-value.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(simulated_scatter, aes(x = x, y = y)) +
-     geom_point() +
-     facet_wrap(~group)
+      ggplot(simulated_scatter, aes(x = x, y = y)) +
+        geom_point() +
+        facet_wrap(~group)

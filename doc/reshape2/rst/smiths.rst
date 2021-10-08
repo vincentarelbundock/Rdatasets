@@ -1,24 +1,26 @@
-====== ===============
-smiths R Documentation
-====== ===============
+.. container::
 
-Demo data describing the Smiths.
---------------------------------
+   ====== ===============
+   smiths R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Demo data describing the Smiths.
+      :name: demo-data-describing-the-smiths.
 
-A small demo dataset describing John and Mary Smith. Used in the
-introductory vignette.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A small demo dataset describing John and Mary Smith. Used in the
+   introductory vignette.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   smiths
+   ::
 
-Format
-~~~~~~
+      smiths
 
-A data frame with 2 rows and 5 variables
+   .. rubric:: Format
+      :name: format
+
+   A data frame with 2 rows and 5 variables

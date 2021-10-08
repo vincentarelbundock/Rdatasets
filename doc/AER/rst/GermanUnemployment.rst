@@ -1,54 +1,56 @@
-================== ===============
-GermanUnemployment R Documentation
-================== ===============
+.. container::
 
-Unemployment in Germany Data
-----------------------------
+   ================== ===============
+   GermanUnemployment R Documentation
+   ================== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Unemployment in Germany Data
+      :name: unemployment-in-germany-data
 
-Time series of unemployment rate (in percent) in Germany.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Time series of unemployment rate (in percent) in Germany.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("GermanUnemployment")
+   ::
 
-Format
-~~~~~~
+      data("GermanUnemployment")
 
-A quarterly multiple time series from 1962(1) to 1991(4) with 2
-variables.
+   .. rubric:: Format
+      :name: format
 
-unadjusted
-   Raw unemployment rate,
+   A quarterly multiple time series from 1962(1) to 1991(4) with 2
+   variables.
 
-adjusted
-   Seasonally adjusted rate.
+   unadjusted
+      Raw unemployment rate,
 
-Source
-~~~~~~
+   adjusted
+      Seasonally adjusted rate.
 
-Online complements to Franses (1998).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Franses (1998).
 
-Franses, P.H. (1998). *Time Series Models for Business and Economic
-Forecasting*. Cambridge, UK: Cambridge University Press.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Franses, P.H. (1998). *Time Series Models for Business and Economic
+   Forecasting*. Cambridge, UK: Cambridge University Press.
 
-``Franses1998``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Franses1998``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("GermanUnemployment")
-   plot(GermanUnemployment, plot.type = "single", col = 1:2)
+   ::
+
+      data("GermanUnemployment")
+      plot(GermanUnemployment, plot.type = "single", col = 1:2)

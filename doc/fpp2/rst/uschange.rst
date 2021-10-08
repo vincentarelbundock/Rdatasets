@@ -1,31 +1,34 @@
-======== ===============
-uschange R Documentation
-======== ===============
+.. container::
 
-Growth rates of personal consumption and personal income in the USA.
---------------------------------------------------------------------
+   ======== ===============
+   uschange R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Growth rates of personal consumption and personal income
+      in the USA.
+      :name: growth-rates-of-personal-consumption-and-personal-income-in-the-usa.
 
-Percentage changes in quarterly personal consumption expenditure,
-personal disposable income, production, savings and the unemployment
-rate for the US, 1960 to 2016.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Percentage changes in quarterly personal consumption expenditure,
+   personal disposable income, production, savings and the unemployment
+   rate for the US, 1960 to 2016.
 
-Time series object of class ``ts``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   Time series object of class ``ts``.
 
-Federal Reserve Bank of St Louis.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Federal Reserve Bank of St Louis.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   autoplot(uschange, facet=TRUE)
+      autoplot(uschange, facet=TRUE)

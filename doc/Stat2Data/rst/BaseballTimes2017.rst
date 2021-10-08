@@ -1,49 +1,51 @@
-================= ===============
-BaseballTimes2017 R Documentation
-================= ===============
+.. container::
 
-Baseball Game Times of One Day in 2017
---------------------------------------
+   ================= ===============
+   BaseballTimes2017 R Documentation
+   ================= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Baseball Game Times of One Day in 2017
+      :name: baseball-game-times-of-one-day-in-2017
 
-Times for one day's major league baseball games
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Times for one day's major league baseball games
 
-A data frame with 14 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-``Game``
-   MLB teams that played
+   A data frame with 14 observations on the following 7 variables.
 
-``League``
-   ``AL``\ =American League, ``IL``\ =Interleague, or ``NL``\ =National
-   League
+   ``Game``
+      MLB teams that played
 
-``Runs``
-   Runs scored by the two teams combined
+   ``League``
+      ``AL``\ =American League, ``IL``\ =Interleague, or
+      ``NL``\ =National League
 
-``Margin``
-   Winning margin
+   ``Runs``
+      Runs scored by the two teams combined
 
-``Pitchers``
-   Number of pitchers used total for two teams
+   ``Margin``
+      Winning margin
 
-``Attendance``
-   Announced attendance
+   ``Pitchers``
+      Number of pitchers used total for two teams
 
-``Time``
-   Time in minutes to play the game
+   ``Attendance``
+      Announced attendance
 
-Details
-~~~~~~~
+   ``Time``
+      Time in minutes to play the game
 
-Data from all MLB games played on August 11, 2017. There were no
-extra-innings game nor any rain delays.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Data from all MLB games played on August 11, 2017. There were no
+   extra-innings game nor any rain delays.
 
-https://www.baseball-reference.com/boxes/?month=8&day=11&year=2017
+   .. rubric:: Source
+      :name: source
+
+   https://www.baseball-reference.com/boxes/?month=8&day=11&year=2017

@@ -1,72 +1,74 @@
-======= ===============
-OECDGas R Documentation
-======= ===============
+.. container::
 
-Gasoline Consumption Data
--------------------------
+   ======= ===============
+   OECDGas R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Gasoline Consumption Data
+      :name: gasoline-consumption-data
 
-Panel data on gasoline consumption in 18 OECD countries over 19 years,
-1960–1978.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Panel data on gasoline consumption in 18 OECD countries over 19
+   years, 1960–1978.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("OECDGas")
+   ::
 
-Format
-~~~~~~
+      data("OECDGas")
 
-A data frame containing 342 observations on 6 variables.
+   .. rubric:: Format
+      :name: format
 
-country
-   Factor indicating country.
+   A data frame containing 342 observations on 6 variables.
 
-year
-   Year.
+   country
+      Factor indicating country.
 
-gas
-   Logarithm of motor gasoline consumption per car.
+   year
+      Year.
 
-income
-   Logarithm of real per-capita income.
+   gas
+      Logarithm of motor gasoline consumption per car.
 
-price
-   Logarithm of real motor gasoline price.
+   income
+      Logarithm of real per-capita income.
 
-cars
-   Logarithm of the stock of cars per-capita.
+   price
+      Logarithm of real motor gasoline price.
 
-Source
-~~~~~~
+   cars
+      Logarithm of the stock of cars per-capita.
 
-The data is from Baltagi (2002).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The data is from Baltagi (2002).
 
-Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+   .. rubric:: References
+      :name: references
 
-Baltagi, B.H. and Griffin, J.M. (1983). Gasoline Demand in the OECD: An
-Application of Pooling and Testing Procedures. *European Economic
-Review*, **22**, 117–137.
+   Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
 
-See Also
-~~~~~~~~
+   Baltagi, B.H. and Griffin, J.M. (1983). Gasoline Demand in the OECD:
+   An Application of Pooling and Testing Procedures. *European Economic
+   Review*, **22**, 117–137.
 
-``Baltagi2002``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Baltagi2002``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("OECDGas")
+   ::
 
-   library("lattice")
-   xyplot(exp(cars) ~ year | country, data = OECDGas, type = "l")
-   xyplot(exp(gas) ~ year | country, data = OECDGas, type = "l")
+      data("OECDGas")
+
+      library("lattice")
+      xyplot(exp(cars) ~ year | country, data = OECDGas, type = "l")
+      xyplot(exp(gas) ~ year | country, data = OECDGas, type = "l")

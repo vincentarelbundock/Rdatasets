@@ -1,38 +1,40 @@
-====================== ===============
-exclusive_relationship R Documentation
-====================== ===============
+.. container::
 
-Number of Exclusive Relationships
----------------------------------
+   ====================== ===============
+   exclusive_relationship R Documentation
+   ====================== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Number of Exclusive Relationships
+      :name: number-of-exclusive-relationships
 
-A survey conducted on a reasonably random sample of 203 undergraduates
-asked, among many other questions, about the number of exclusive
-relationships these students have been in.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A survey conducted on a reasonably random sample of 203
+   undergraduates asked, among many other questions, about the number of
+   exclusive relationships these students have been in.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   exclusive_relationship
+   ::
 
-Format
-~~~~~~
+      exclusive_relationship
 
-A data frame with 218 observations on the following variable.
+   .. rubric:: Format
+      :name: format
 
-num
-   Number of exclusive relationships.
+   A data frame with 218 observations on the following variable.
 
-Examples
-~~~~~~~~
+   num
+      Number of exclusive relationships.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   summary(exclusive_relationship$num)
-   table(exclusive_relationship$num)
-   hist(exclusive_relationship$num)
+      summary(exclusive_relationship$num)
+      table(exclusive_relationship$num)
+      hist(exclusive_relationship$num)

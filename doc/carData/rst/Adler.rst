@@ -1,58 +1,60 @@
-===== ===============
-Adler R Documentation
-===== ===============
+.. container::
 
-Experimenter Expectations
--------------------------
+   ===== ===============
+   Adler R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Experimenter Expectations
+      :name: experimenter-expectations
 
-The ``Adler`` data frame has 108 rows and 3 columns.
+   .. rubric:: Description
+      :name: description
 
-The “experimenters” were the actual subjects of the study. They
-collected ratings of the apparent success of people in pictures who were
-pre-selected for their average appearance of success. The experimenters
-were told prior to collecting data that particular subjects were either
-high or low in their tendency to rate appearance of success, and were
-instructed to get good data, scientific data, or were given no such
-instruction. Each experimenter collected ratings from 18 randomly
-assigned subjects. This version of the Adler data is taken from Erickson
-and Nosanchuk (1977). The data described in the original source, Adler
-(1973), have a more complex structure.
+   The ``Adler`` data frame has 108 rows and 3 columns.
 
-Usage
-~~~~~
+   The “experimenters” were the actual subjects of the study. They
+   collected ratings of the apparent success of people in pictures who
+   were pre-selected for their average appearance of success. The
+   experimenters were told prior to collecting data that particular
+   subjects were either high or low in their tendency to rate appearance
+   of success, and were instructed to get good data, scientific data, or
+   were given no such instruction. Each experimenter collected ratings
+   from 18 randomly assigned subjects. This version of the Adler data is
+   taken from Erickson and Nosanchuk (1977). The data described in the
+   original source, Adler (1973), have a more complex structure.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Adler
+   ::
 
-Format
-~~~~~~
+      Adler
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-instruction
-   a factor with levels: ``good``, good data; ``none``, no stress;
-   ``scientific``, scientific data.
+   This data frame contains the following columns:
 
-expectation
-   a factor with levels: ``high``, expect high ratings; ``low``, expect
-   low ratings.
+   instruction
+      a factor with levels: ``good``, good data; ``none``, no stress;
+      ``scientific``, scientific data.
 
-rating
-   The average rating obtained.
+   expectation
+      a factor with levels: ``high``, expect high ratings; ``low``,
+      expect low ratings.
 
-Source
-~~~~~~
+   rating
+      The average rating obtained.
 
-Erickson, B. H., and Nosanchuk, T. A. (1977) *Understanding Data.*
-McGraw-Hill Ryerson.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Erickson, B. H., and Nosanchuk, T. A. (1977) *Understanding Data.*
+   McGraw-Hill Ryerson.
 
-Adler, N. E. (1973) Impact of prior sets given experimenters and
-subjects on the experimenter expectancy effect. *Sociometry* **36**,
-113–126.
+   .. rubric:: References
+      :name: references
+
+   Adler, N. E. (1973) Impact of prior sets given experimenters and
+   subjects on the experimenter expectancy effect. *Sociometry* **36**,
+   113–126.

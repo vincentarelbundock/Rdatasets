@@ -1,50 +1,52 @@
-======== ===============
-salinity R Documentation
-======== ===============
+.. container::
 
-Salinity in Bimini Lagoon, Bahamas
-----------------------------------
+   ======== ===============
+   salinity R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Salinity in Bimini Lagoon, Bahamas
+      :name: salinity-in-bimini-lagoon-bahamas
 
-Data collected at three different water masses in the Bimini Lagoon,
-Bahamas.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data collected at three different water masses in the Bimini Lagoon,
+   Bahamas.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   salinity
+   ::
 
-Format
-~~~~~~
+      salinity
 
-A data frame with 30 rows and 2 variables.
+   .. rubric:: Format
+      :name: format
 
-site_number
-   Location where measurments were taken.
+   A data frame with 30 rows and 2 variables.
 
-salinity_ppt
-   Salinity value in parts per thousand.
+   site_number
+      Location where measurments were taken.
 
-Source
-~~~~~~
+   salinity_ppt
+      Salinity value in parts per thousand.
 
-Till, R. (1974) Statistical Methods for the Earth Scientist: An
-Introduction. London: Macmillon, 104.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Till, R. (1974) Statistical Methods for the Earth Scientist: An
+   Introduction. London: Macmillon, 104.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   library(ggplot2)
-   library(broom)
+   ::
 
-   ggplot(salinity, aes(x = salinity_ppt)) +
-     geom_dotplot() +
-     facet_wrap(~site_number, ncol = 1)
+      library(ggplot2)
+      library(broom)
 
-   tidy(aov(salinity_ppt ~ site_number, data = salinity))
+      ggplot(salinity, aes(x = salinity_ppt)) +
+        geom_dotplot() +
+        facet_wrap(~site_number, ncol = 1)
+
+      tidy(aov(salinity_ppt ~ site_number, data = salinity))

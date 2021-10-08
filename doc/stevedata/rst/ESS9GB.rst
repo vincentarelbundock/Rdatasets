@@ -1,100 +1,102 @@
-====== ===============
-ESS9GB R Documentation
-====== ===============
+.. container::
 
-British Attitudes Toward Immigration (2018-19)
-----------------------------------------------
+   ====== ===============
+   ESS9GB R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: British Attitudes Toward Immigration (2018-19)
+      :name: british-attitudes-toward-immigration-2018-19
 
-This is a replication data originally set to accompany a blog post and
-presentation to students at the University of Nottingham in March 2020.
-However, COVID-19 led to the cancellation of the talk.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This is a replication data originally set to accompany a blog post
+   and presentation to students at the University of Nottingham in March
+   2020. However, COVID-19 led to the cancellation of the talk.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   ESS9GB
+   ::
 
-Format
-~~~~~~
+      ESS9GB
 
-A data frame with 1,905 observations on the following 19 variables.
+   .. rubric:: Format
+      :name: format
 
-``name``
-   a character for the name of the survey
+   A data frame with 1,905 observations on the following 19 variables.
 
-``essround``
-   a numeric for the ESS round
+   ``name``
+      a character for the name of the survey
 
-``edition``
-   a character for the particular edition of the ESS round
+   ``essround``
+      a numeric for the ESS round
 
-``idno``
-   a numeric/unique identifier
+   ``edition``
+      a character for the particular edition of the ESS round
 
-``cntry``
-   a character vector for the country (i.e. the UK)
+   ``idno``
+      a numeric/unique identifier
 
-``region``
-   a character vector for the region of the UK the respondent lives
+   ``cntry``
+      a character vector for the country (i.e. the UK)
 
-``brncntr``
-   a numeric vector for if the respondent was born in the UK
+   ``region``
+      a character vector for the region of the UK the respondent lives
 
-``stintrvw``
-   a Date for the interview start date
+   ``brncntr``
+      a numeric vector for if the respondent was born in the UK
 
-``endintrvw``
-   a Date for the interview end date
+   ``stintrvw``
+      a Date for the interview start date
 
-``imbgeco``
-   a numeric vector for if respondent thinks immigrants are generally
-   good or bad for UK's economy. Higher values = good
+   ``endintrvw``
+      a Date for the interview end date
 
-``imueclt``
-   a numeric vector for if respondent thinks immigrants enrich or
-   undermine UK's culture. Higher values = enrich more than undermine
+   ``imbgeco``
+      a numeric vector for if respondent thinks immigrants are generally
+      good or bad for UK's economy. Higher values = good
 
-``imwbcnt``
-   a numeric vector for if respondent thinks immigrants make UK a better
-   place to live. Higher values = better place to live
+   ``imueclt``
+      a numeric vector for if respondent thinks immigrants enrich or
+      undermine UK's culture. Higher values = enrich more than undermine
 
-``immigsent``
-   a numeric vector for immigration sentiment (i.e. ``imbgeco`` +
-   ``imueclt`` + ``imwbcnt``). Higher values = more pro-immigration
-   sentiment
+   ``imwbcnt``
+      a numeric vector for if respondent thinks immigrants make UK a
+      better place to live. Higher values = better place to live
 
-``agea``
-   a numeric vector for the respondent's age in years
+   ``immigsent``
+      a numeric vector for immigration sentiment (i.e. ``imbgeco`` +
+      ``imueclt`` + ``imwbcnt``). Higher values = more pro-immigration
+      sentiment
 
-``female``
-   a numeric vector for whether the respondent is a woman
+   ``agea``
+      a numeric vector for the respondent's age in years
 
-``eduyrs``
-   a numeric vector for total years of education for the respondent
+   ``female``
+      a numeric vector for whether the respondent is a woman
 
-``uempla``
-   a numeric vector for whether the respondent is currently unemployed
-   but seeking work
+   ``eduyrs``
+      a numeric vector for total years of education for the respondent
 
-``hinctnta``
-   a numeric vector for household income in deciles
+   ``uempla``
+      a numeric vector for whether the respondent is currently
+      unemployed but seeking work
 
-``lrscale``
-   a numeric vector for the ideology of the respondent on an 11-point
-   [0:10] scale
+   ``hinctnta``
+      a numeric vector for household income in deciles
 
-Details
-~~~~~~~
+   ``lrscale``
+      a numeric vector for the ideology of the respondent on an 11-point
+      [0:10] scale
 
-See accompanying blog post at
-http://svmiller.com/blog/2020/03/what-explains-british-attitudes-toward-immigration-a-pedagogical-example/.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   See accompanying blog post at
+   http://svmiller.com/blog/2020/03/what-explains-british-attitudes-toward-immigration-a-pedagogical-example/.
 
-European Social Survey, Round 9
+   .. rubric:: Source
+      :name: source
+
+   European Social Survey, Round 9

@@ -1,106 +1,110 @@
-============ ===============
-gss_abortion R Documentation
-============ ===============
+.. container::
 
-Abortion Opinions in the General Social Survey
-----------------------------------------------
+   ============ ===============
+   gss_abortion R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Abortion Opinions in the General Social Survey
+      :name: abortion-opinions-in-the-general-social-survey
 
-This is a toy data set derived from the General Social Survey that I
-intend to use for several purposes. First, the battery of abortion items
-can serve as toy data to illustrate mixed effects modeling as equivalent
-to a one-parameter (Rasch) model. Second, I include some covariates to
-also do some basic regressions. I think abortion opinions are useful
-learning tools for statistical inference for college students. Third,
-there's a time-series component as well for understanding how abortion
-attitudes have changed over time.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This is a toy data set derived from the General Social Survey that I
+   intend to use for several purposes. First, the battery of abortion
+   items can serve as toy data to illustrate mixed effects modeling as
+   equivalent to a one-parameter (Rasch) model. Second, I include some
+   covariates to also do some basic regressions. I think abortion
+   opinions are useful learning tools for statistical inference for
+   college students. Third, there's a time-series component as well for
+   understanding how abortion attitudes have changed over time.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   gss_abortion
+   ::
 
-Format
-~~~~~~
+      gss_abortion
 
-A data frame with 64,814 observations on the following 18 variables.
+   .. rubric:: Format
+      :name: format
 
-``id``
-   a unique respondent identifier
+   A data frame with 64,814 observations on the following 18 variables.
 
-``year``
-   the survey year
+   ``id``
+      a unique respondent identifier
 
-``age``
-   the respondent's age in years
+   ``year``
+      the survey year
 
-``race``
-   the respondent's race, as character variable
+   ``age``
+      the respondent's age in years
 
-``sex``
-   the respondent's gender, as character variable
+   ``race``
+      the respondent's race, as character variable
 
-``hispaniccat``
-   the respondent's Hispanic ethnicity, as character variable
+   ``sex``
+      the respondent's gender, as character variable
 
-``educ``
-   how many years the respondent spent in school
+   ``hispaniccat``
+      the respondent's Hispanic ethnicity, as character variable
 
-``partyid``
-   the respondent's party identification, as character variable
+   ``educ``
+      how many years the respondent spent in school
 
-``relactiv``
-   the self-reported religious activity of the respondent on a 1:11
-   scale
+   ``partyid``
+      the respondent's party identification, as character variable
 
-``abany``
-   a binary variable that equals 1 if the respondent thinks abortion
-   should be legal for any reason. 0 indicates no support for abortion
-   for any reason.
+   ``relactiv``
+      the self-reported religious activity of the respondent on a 1:11
+      scale
 
-``abdefect``
-   a numeric vector that equals 1 if the respondent thinks abortion
-   should be legal if there is a serious defect in the fetus. 0
-   indicates no support for abortion in this circumstance.
+   ``abany``
+      a binary variable that equals 1 if the respondent thinks abortion
+      should be legal for any reason. 0 indicates no support for
+      abortion for any reason.
 
-``abnomore``
-   a numeric vector that equals 1 if the respondent thinks abortion
-   should be legal if a woman is pregnant but wants no more children. 0
-   indicates no support for abortion in this circumstance.
+   ``abdefect``
+      a numeric vector that equals 1 if the respondent thinks abortion
+      should be legal if there is a serious defect in the fetus. 0
+      indicates no support for abortion in this circumstance.
 
-``abhlth``
-   a numeric vector that equals 1 if the respondent thinks abortion
-   should be legal if a pregnant woman's health is in danger. 0
-   indicates no support for abortion in this circumstance.
+   ``abnomore``
+      a numeric vector that equals 1 if the respondent thinks abortion
+      should be legal if a woman is pregnant but wants no more children.
+      0 indicates no support for abortion in this circumstance.
 
-``abpoor``
-   a numeric vector that equals 1 if the respondent thinks abortion
-   should be legal if a pregnant woman is poor and cannot afford more
-   children. 0 indicates no support for abortion in this circumstance.
+   ``abhlth``
+      a numeric vector that equals 1 if the respondent thinks abortion
+      should be legal if a pregnant woman's health is in danger. 0
+      indicates no support for abortion in this circumstance.
 
-``abrape``
-   a numeric vector that equals 1 if the respondent thinks abortion
-   should be legal if the woman became pregnant because of a rape. 0
-   indicates no support for abortion in this circumstance.
+   ``abpoor``
+      a numeric vector that equals 1 if the respondent thinks abortion
+      should be legal if a pregnant woman is poor and cannot afford more
+      children. 0 indicates no support for abortion in this
+      circumstance.
 
-``absingle``
-   a numeric vector that equals 1 if the respondent thinks abortion
-   should be legal if a pregnant woman is single and does not want to
-   marry the man who impregnated her. 0 indicates no support for
-   abortion in this circumstance.
+   ``abrape``
+      a numeric vector that equals 1 if the respondent thinks abortion
+      should be legal if the woman became pregnant because of a rape. 0
+      indicates no support for abortion in this circumstance.
 
-``pid``
-   ``partyid`` recoded so that 7 = NA
+   ``absingle``
+      a numeric vector that equals 1 if the respondent thinks abortion
+      should be legal if a pregnant woman is single and does not want to
+      marry the man who impregnated her. 0 indicates no support for
+      abortion in this circumstance.
 
-``hispanic``
-   a dummy variable that equals 1 if the respondent is any way Hispanic
+   ``pid``
+      ``partyid`` recoded so that 7 = NA
 
-Details
-~~~~~~~
+   ``hispanic``
+      a dummy variable that equals 1 if the respondent is any way
+      Hispanic
 
-Data include all General Social Survey observations from 1972 to 2018
-for these variables. Be mindful of missing data.
+   .. rubric:: Details
+      :name: details
+
+   Data include all General Social Survey observations from 1972 to 2018
+   for these variables. Be mindful of missing data.

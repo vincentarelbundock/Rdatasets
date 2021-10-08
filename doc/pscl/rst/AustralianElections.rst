@@ -1,144 +1,147 @@
-=================== ===============
-AustralianElections R Documentation
-=================== ===============
+.. container::
 
-elections to Australian House of Representatives, 1949-2016
------------------------------------------------------------
+   =================== ===============
+   AustralianElections R Documentation
+   =================== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: elections to Australian House of Representatives,
+      1949-2016
+      :name: elections-to-australian-house-of-representatives-1949-2016
 
-Aggregate data on the 24 elections to Australia's House of
-Representatives, 1949 to 2016.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Aggregate data on the 24 elections to Australia's House of
+   Representatives, 1949 to 2016.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(AustralianElections)
+   ::
 
-Format
-~~~~~~
+      data(AustralianElections)
 
-A data frame with the following variables:
+   .. rubric:: Format
+      :name: format
 
-``date``
-   date of election, stored using the ``Date`` class
+   A data frame with the following variables:
 
-``Seats``
-   numeric, number of seats in the House of Representatives
+   ``date``
+      date of election, stored using the ``Date`` class
 
-``Uncontested``
-   numeric, number of uncontested seats
+   ``Seats``
+      numeric, number of seats in the House of Representatives
 
-``ALPSeats``
-   numeric, number of seats won by the Australian Labor Party
+   ``Uncontested``
+      numeric, number of uncontested seats
 
-``LPSeats``
-   numeric, number of seats won by the Liberal Party
+   ``ALPSeats``
+      numeric, number of seats won by the Australian Labor Party
 
-``NPSeats``
-   numeric, number of seats won by the National Party (previously known
-   as the Country Party)
+   ``LPSeats``
+      numeric, number of seats won by the Liberal Party
 
-``OtherSeats``
-   numeric, number of seats won by other parties and/or independent
-   candidates
+   ``NPSeats``
+      numeric, number of seats won by the National Party (previously
+      known as the Country Party)
 
-``ALP``
-   numeric, percentage of first preference votes cast for Australian
-   Labor Party candidates
+   ``OtherSeats``
+      numeric, number of seats won by other parties and/or independent
+      candidates
 
-``ALP2PP``
-   numeric, percentage of the two-party preferred vote won by Australian
-   Labor Party candidates
+   ``ALP``
+      numeric, percentage of first preference votes cast for Australian
+      Labor Party candidates
 
-``LP``
-   numeric, percent of first preference votes cast for Liberal Party
-   candidates
+   ``ALP2PP``
+      numeric, percentage of the two-party preferred vote won by
+      Australian Labor Party candidates
 
-``NP``
-   numeric, percent of first preference votes cast for National Party
-   (Country Party) candidates
+   ``LP``
+      numeric, percent of first preference votes cast for Liberal Party
+      candidates
 
-``DLP``
-   numeric, percent of first preference votes cast for Democratic Labor
-   Party candidates
+   ``NP``
+      numeric, percent of first preference votes cast for National Party
+      (Country Party) candidates
 
-``Dem``
-   numeric, percent of first preference votes cast for Australian
-   Democrat candidates
+   ``DLP``
+      numeric, percent of first preference votes cast for Democratic
+      Labor Party candidates
 
-``Green``
-   numeric, percent of first preference votes cast for Green Party
-   candidates
+   ``Dem``
+      numeric, percent of first preference votes cast for Australian
+      Democrat candidates
 
-``Hanson``
-   numeric, percent of first preference votes cast for candidates from
-   Pauline Hanson's One Nation party
+   ``Green``
+      numeric, percent of first preference votes cast for Green Party
+      candidates
 
-``Com``
-   numeric, percent of first preference votes cast for Communist Party
-   candidates
+   ``Hanson``
+      numeric, percent of first preference votes cast for candidates
+      from Pauline Hanson's One Nation party
 
-``AP``
-   numeric, percent of first preference votes cast for Australia Party
-   candidates
+   ``Com``
+      numeric, percent of first preference votes cast for Communist
+      Party candidates
 
-``Informal``
-   numeric, percent of ballots cast that are spoiled, blank, or
-   otherwise uncountable (usually because of errors in enumerating
-   preferences)
+   ``AP``
+      numeric, percent of first preference votes cast for Australia
+      Party candidates
 
-``Turnout``
-   numeric, percent of enrolled voters recorded as having turned out to
-   vote (Australia has compulsory voting)
+   ``Informal``
+      numeric, percent of ballots cast that are spoiled, blank, or
+      otherwise uncountable (usually because of errors in enumerating
+      preferences)
 
-Note
-~~~~
+   ``Turnout``
+      numeric, percent of enrolled voters recorded as having turned out
+      to vote (Australia has compulsory voting)
 
-The Liberal National Party of Queensland formed in 2008 after a merger
-of the Liberal Party and the National Party. In all elections following
-2008, they have been categorised under ``LP``.
+   .. rubric:: Note
+      :name: note
 
-Source
-~~~~~~
+   The Liberal National Party of Queensland formed in 2008 after a
+   merger of the Liberal Party and the National Party. In all elections
+   following 2008, they have been categorised under ``LP``.
 
-Australian Electoral Commission. http://www.aec.gov.au.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Australian Electoral Commission. http://www.aec.gov.au.
 
-Jackman, Simon. 2009. *Bayesian Analysis for the Social Sciences*.
-Wiley: Hoboken, New Jersey. Example 3.5.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Jackman, Simon. 2009. *Bayesian Analysis for the Social Sciences*.
+   Wiley: Hoboken, New Jersey. Example 3.5.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(AustralianElections)
-   attach(AustralianElections)
-   alpSeatShare <- ALPSeats/Seats
-   alpVoteShare <- ALP2PP/100
+   ::
 
-   ## log-odds transforms
-   x <- log(alpVoteShare/(1-alpVoteShare))
-   y <- log(alpSeatShare/(1-alpSeatShare))
+      data(AustralianElections)
+      attach(AustralianElections)
+      alpSeatShare <- ALPSeats/Seats
+      alpVoteShare <- ALP2PP/100
 
-   ols <- lm(y~x)   ## Tufte-style seats-votes regression
+      ## log-odds transforms
+      x <- log(alpVoteShare/(1-alpVoteShare))
+      y <- log(alpSeatShare/(1-alpSeatShare))
 
-   xseq <- seq(-4.5,4.5,length=500)
-   yhat <- coef(ols)[1] + coef(ols)[2]*xseq
-   yhat <- exp(yhat)/(1+exp(yhat))
-   xseq <- exp(xseq)/(1+exp(xseq))
+      ols <- lm(y~x)   ## Tufte-style seats-votes regression
 
-   ## seats vote curve
-   plot(x=alpVoteShare,
-        y=alpSeatShare,
-        xlab="ALP Vote Share",
-        ylab="ALP Seat Share")
-   lines(xseq,yhat,lwd=2)
-   abline(h=.5,lty=2)
-   abline(v=.5,lty=2)
+      xseq <- seq(-4.5,4.5,length=500)
+      yhat <- coef(ols)[1] + coef(ols)[2]*xseq
+      yhat <- exp(yhat)/(1+exp(yhat))
+      xseq <- exp(xseq)/(1+exp(xseq))
+
+      ## seats vote curve
+      plot(x=alpVoteShare,
+           y=alpSeatShare,
+           xlab="ALP Vote Share",
+           ylab="ALP Seat Share")
+      lines(xseq,yhat,lwd=2)
+      abline(h=.5,lty=2)
+      abline(v=.5,lty=2)

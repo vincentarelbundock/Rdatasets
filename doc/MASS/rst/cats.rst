@@ -1,45 +1,48 @@
-==== ===============
-cats R Documentation
-==== ===============
+.. container::
 
-Anatomical Data from Domestic Cats
-----------------------------------
+   ==== ===============
+   cats R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Anatomical Data from Domestic Cats
+      :name: anatomical-data-from-domestic-cats
 
-The heart and body weights of samples of male and female cats used for
-*digitalis* experiments. The cats were all adult, over 2 kg body weight.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The heart and body weights of samples of male and female cats used
+   for *digitalis* experiments. The cats were all adult, over 2 kg body
+   weight.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   cats
+   ::
 
-Format
-~~~~~~
+      cats
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``Sex``
-   sex: Factor with levels ``"F"`` and ``"M"``.
+   This data frame contains the following columns:
 
-``Bwt``
-   body weight in kg.
+   ``Sex``
+      sex: Factor with levels ``"F"`` and ``"M"``.
 
-``Hwt``
-   heart weight in g.
+   ``Bwt``
+      body weight in kg.
 
-Source
-~~~~~~
+   ``Hwt``
+      heart weight in g.
 
-R. A. Fisher (1947) The analysis of covariance method for the relation
-between a part and the whole, *Biometrics* **3**, 65–68.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   R. A. Fisher (1947) The analysis of covariance method for the
+   relation between a part and the whole, *Biometrics* **3**, 65–68.
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   .. rubric:: References
+      :name: references
+
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.

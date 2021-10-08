@@ -1,91 +1,93 @@
-========= ===============
-FriendFoe R Documentation
-========= ===============
+.. container::
 
-Data from the Television Game Show Friend Or Foe ?
---------------------------------------------------
+   ========= ===============
+   FriendFoe R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from the Television Game Show Friend Or Foe ?
+      :name: data-from-the-television-game-show-friend-or-foe
 
-a cross-section from 2002–03
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 227
+   a cross-section from 2002–03
 
-*observation* : individuals
+   *number of observations* : 227
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(FriendFoe)
+   ::
 
-Format
-~~~~~~
+      data(FriendFoe)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-sex
-   contestant's sex
+   A dataframe containing :
 
-white
-   is contestant white ?
+   sex
+      contestant's sex
 
-age
-   contestant's age in years
+   white
+      is contestant white ?
 
-play
-   contestant's choice : a factor with levels "foe" and "friend". If
-   both players play "friend", they share the trust box, if both play
-   "foe", both players receive zero prize, if one of them play "foe" and
-   the other one "friend", the "foe" player receive the entire trust box
-   and the "friend" player nothing
+   age
+      contestant's age in years
 
-round
-   round in which contestant is eliminated, a factor with levels
-   ("1","2","3")
+   play
+      contestant's choice : a factor with levels "foe" and "friend". If
+      both players play "friend", they share the trust box, if both play
+      "foe", both players receive zero prize, if one of them play "foe"
+      and the other one "friend", the "foe" player receive the entire
+      trust box and the "friend" player nothing
 
-season
-   season show, a factor with levels ("1","2")
+   round
+      round in which contestant is eliminated, a factor with levels
+      ("1","2","3")
 
-cash
-   the amount of cash in the trust box
+   season
+      season show, a factor with levels ("1","2")
 
-sex1
-   partner's sex
+   cash
+      the amount of cash in the trust box
 
-white1
-   is partner white ?
+   sex1
+      partner's sex
 
-age1
-   partner's age in years
+   white1
+      is partner white ?
 
-play1
-   partner's choice : a factor with levels "foe" and "friend"
+   age1
+      partner's age in years
 
-win
-   money won by contestant
+   play1
+      partner's choice : a factor with levels "foe" and "friend"
 
-win1
-   money won by partner
+   win
+      money won by contestant
 
-Source
-~~~~~~
+   win1
+      money won by partner
 
-Kalist, David E. (2004) “Data from the Television Game Show "Friend or
-Foe?"”, *Journal of Statistics Education*, **12(3)**.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Kalist, David E. (2004) “Data from the Television Game Show "Friend
+   or Foe?"”, *Journal of Statistics Education*, **12(3)**.
 
-Journal of Statistics Education's data archive :
-http://jse.amstat.org/jse_data_archive.htm.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Journal of Statistics Education's data archive :
+   http://jse.amstat.org/jse_data_archive.htm.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

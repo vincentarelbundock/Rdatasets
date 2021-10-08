@@ -1,57 +1,59 @@
-====== ===============
-Tbrate R Documentation
-====== ===============
+.. container::
 
-Interest Rate, GDP and Inflation
---------------------------------
+   ====== ===============
+   Tbrate R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Interest Rate, GDP and Inflation
+      :name: interest-rate-gdp-and-inflation
 
-quarterly observations from 1950-1 to 1996-4
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 188
+   quarterly observations from 1950-1 to 1996-4
 
-*observation* : country
+   *number of observations* : 188
 
-*country* : Canada
+   *observation* : country
 
-Usage
-~~~~~
+   *country* : Canada
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Tbrate)
+   ::
 
-Format
-~~~~~~
+      data(Tbrate)
 
-A time series containing :
+   .. rubric:: Format
+      :name: format
 
-r
-   the 91-day treasury bill rate
+   A time series containing :
 
-y
-   the log of real GDP
+   r
+      the 91-day treasury bill rate
 
-pi
-   the inflation rate
+   y
+      the log of real GDP
 
-Source
-~~~~~~
+   pi
+      the inflation rate
 
-CANSIM database of Statistics Canada.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   CANSIM database of Statistics Canada.
 
-Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
-Methods*, New York, Oxford University Press, chapter 2.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
+   Methods*, New York, Oxford University Press, chapter 2.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
+
+   ``Index.Time.Series``

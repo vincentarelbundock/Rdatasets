@@ -1,74 +1,76 @@
-============== ===============
-car.test.frame R Documentation
-============== ===============
+.. container::
 
-Automobile Data from 'Consumer Reports' 1990
---------------------------------------------
+   ============== ===============
+   car.test.frame R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Automobile Data from 'Consumer Reports' 1990
+      :name: automobile-data-from-consumer-reports-1990
 
-The ``car.test.frame`` data frame has 60 rows and 8 columns, giving data
-on makes of cars taken from the April, 1990 issue of *Consumer Reports*.
-This is part of a larger dataset, some columns of which are given in
-``cu.summary``.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``car.test.frame`` data frame has 60 rows and 8 columns, giving
+   data on makes of cars taken from the April, 1990 issue of *Consumer
+   Reports*. This is part of a larger dataset, some columns of which are
+   given in ``cu.summary``.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   car.test.frame
+   ::
 
-Format
-~~~~~~
+      car.test.frame
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``Price``
-   a numeric vector giving the list price in US dollars of a standard
-   model
+   This data frame contains the following columns:
 
-``Country``
-   of origin, a factor with levels France, Germany, Japan , Japan/USA,
-   Korea, Mexico, Sweden and USA
+   ``Price``
+      a numeric vector giving the list price in US dollars of a standard
+      model
 
-``Reliability``
-   a numeric vector coded ``1`` to ``5``.
+   ``Country``
+      of origin, a factor with levels France, Germany, Japan ,
+      Japan/USA, Korea, Mexico, Sweden and USA
 
-``Mileage``
-   fuel consumption miles per US gallon, as tested.
+   ``Reliability``
+      a numeric vector coded ``1`` to ``5``.
 
-``Type``
-   a factor with levels ``Compact`` ``Large`` ``Medium`` ``Small``
-   ``Sporty`` ``Van``
+   ``Mileage``
+      fuel consumption miles per US gallon, as tested.
 
-``Weight``
-   kerb weight in pounds.
+   ``Type``
+      a factor with levels ``Compact`` ``Large`` ``Medium`` ``Small``
+      ``Sporty`` ``Van``
 
-``Disp.``
-   the engine capacity (displacement) in litres.
+   ``Weight``
+      kerb weight in pounds.
 
-``HP``
-   the net horsepower of the vehicle.
+   ``Disp.``
+      the engine capacity (displacement) in litres.
 
-Source
-~~~~~~
+   ``HP``
+      the net horsepower of the vehicle.
 
-*Consumer Reports*, April, 1990, pp. 235–288 quoted in
+   .. rubric:: Source
+      :name: source
 
-John M. Chambers and Trevor J. Hastie eds. (1992) *Statistical Models in
-S*, Wadsworth and Brooks/Cole, Pacific Grove, CA, pp. 46–47.
+   *Consumer Reports*, April, 1990, pp. 235–288 quoted in
 
-See Also
-~~~~~~~~
+   John M. Chambers and Trevor J. Hastie eds. (1992) *Statistical Models
+   in S*, Wadsworth and Brooks/Cole, Pacific Grove, CA, pp. 46–47.
 
-``car90``, ``cu.summary``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``car90``, ``cu.summary``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   z.auto <- rpart(Mileage ~ Weight, car.test.frame)
-   summary(z.auto)
+   ::
+
+      z.auto <- rpart(Mileage ~ Weight, car.test.frame)
+      summary(z.auto)

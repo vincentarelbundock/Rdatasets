@@ -1,47 +1,49 @@
-====== ===============
-gpa_iq R Documentation
-====== ===============
+.. container::
 
-Sample of students and their GPA and IQ
----------------------------------------
+   ====== ===============
+   gpa_iq R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Sample of students and their GPA and IQ
+      :name: sample-of-students-and-their-gpa-and-iq
 
-Data on 78 students including GPA, IQ, and gender.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data on 78 students including GPA, IQ, and gender.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   gpa_iq
+   ::
 
-Format
-~~~~~~
+      gpa_iq
 
-A data frame with 78 observations representing students on the following
-5 variables.
+   .. rubric:: Format
+      :name: format
 
-obs
-   a numeric vector
+   A data frame with 78 observations representing students on the
+   following 5 variables.
 
-gpa
-   Grade point average (GPA).
+   obs
+      a numeric vector
 
-iq
-   IQ.
+   gpa
+      Grade point average (GPA).
 
-gender
-   Gender.
+   iq
+      IQ.
 
-concept
-   a numeric vector
+   gender
+      Gender.
 
-Examples
-~~~~~~~~
+   concept
+      a numeric vector
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   gpa_iq
+      gpa_iq

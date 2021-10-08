@@ -1,60 +1,62 @@
-====== ===============
-orings R Documentation
-====== ===============
+.. container::
 
-Challenger O-rings Data
------------------------
+   ====== ===============
+   orings R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Challenger O-rings Data
+      :name: challenger-o-rings-data
 
-Record of the number and type of O-ring failures prior to the tragic
-Challenger mission in January, 1986.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Record of the number and type of O-ring failures prior to the tragic
+   Challenger mission in January, 1986.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   orings
+   ::
 
-Format
-~~~~~~
+      orings
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-Temperature
-   O-ring temperature for each test firing or actual launch of the
-   shuttle rocket engine
+   This data frame contains the following columns:
 
-Erosion
-   Number of erosion incidents
+   Temperature
+      O-ring temperature for each test firing or actual launch of the
+      shuttle rocket engine
 
-Blowby
-   Number of blowby incidents
+   Erosion
+      Number of erosion incidents
 
-Total
-   Total number of incidents
+   Blowby
+      Number of blowby incidents
 
-Source
-~~~~~~
+   Total
+      Total number of incidents
 
-Presidential Commission on the Space Shuttle Challenger Accident, Vol.
-1, 1986: 129-131.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Presidential Commission on the Space Shuttle Challenger Accident,
+   Vol. 1, 1986: 129-131.
 
-Tufte, E. R. 1997. Visual Explanations. Graphics Press, Cheshire,
-Connecticut, U.S.A.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Tufte, E. R. 1997. Visual Explanations. Graphics Press, Cheshire,
+   Connecticut, U.S.A.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   oldpar <- par(mfrow=c(1,2))
-   plot(Total~Temperature, data = orings[c(1,2,4,11,13,18),]) # the 
-                  # observations included in the pre-launch charts
-   plot(Total~Temperature, data = orings)
-   par(oldpar)
+   ::
+
+      oldpar <- par(mfrow=c(1,2))
+      plot(Total~Temperature, data = orings[c(1,2,4,11,13,18),]) # the 
+                     # observations included in the pre-launch charts
+      plot(Total~Temperature, data = orings)
+      par(oldpar)

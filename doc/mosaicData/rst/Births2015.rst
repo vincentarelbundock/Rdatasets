@@ -1,70 +1,72 @@
-========== ===============
-Births2015 R Documentation
-========== ===============
+.. container::
 
-US Births in 2015
------------------
+   ========== ===============
+   Births2015 R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: US Births in 2015
+      :name: us-births-in-2015
 
-A day by day record of the number of births in the United States in
-2015.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A day by day record of the number of births in the United States in
+   2015.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Births2015)
+   ::
 
-Format
-~~~~~~
+      data(Births2015)
 
-A data.frame with 365 observations on the following 8 variables.
+   .. rubric:: Format
+      :name: format
 
--  ``date`` Date
+   A data.frame with 365 observations on the following 8 variables.
 
--  ``births`` Number of births on ``date`` (integer)
+   -  ``date`` Date
 
--  ``wday`` Day of week (ordered factor)
+   -  ``births`` Number of births on ``date`` (integer)
 
--  ``year`` Year (integer)
+   -  ``wday`` Day of week (ordered factor)
 
--  ``month`` Month (integer)
+   -  ``year`` Year (integer)
 
--  ``day_of_year`` Day of year (integer)
+   -  ``month`` Month (integer)
 
--  ``day_of_month`` Day of month (integer)
+   -  ``day_of_year`` Day of year (integer)
 
--  ``day_of_week`` Day of week (integer)
+   -  ``day_of_month`` Day of month (integer)
 
-Source
-~~~~~~
+   -  ``day_of_week`` Day of week (integer)
 
-Obtained from the National Center for Health Statistics, National Vital
-Statistics System, Natality, 2015 data.
+   .. rubric:: Source
+      :name: source
 
-See Also
-~~~~~~~~
+   Obtained from the National Center for Health Statistics, National
+   Vital Statistics System, Natality, 2015 data.
 
-``Births78``, ``Births``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Births78``, ``Births``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(Births2015)
-   if (require(ggformula)) {
-     gf_point(births ~ date, data = Births2015)
-     gf_point(births ~ date, data = Births2015, color = ~ wday)
-   }
-   if (require(dplyr)) {
-     Births78 %>% 
-       group_by(wday) %>% summarise(births = sum(births)) %>% 
-       ungroup() %>% mutate(frac = births / sum(births))
-     Births2015 %>% 
-       group_by(wday) %>% summarise(births = sum(births)) %>% 
-       ungroup() %>% mutate(frac = births / sum(births))
-   }
+   ::
+
+      data(Births2015)
+      if (require(ggformula)) {
+        gf_point(births ~ date, data = Births2015)
+        gf_point(births ~ date, data = Births2015, color = ~ wday)
+      }
+      if (require(dplyr)) {
+        Births78 %>% 
+          group_by(wday) %>% summarise(births = sum(births)) %>% 
+          ungroup() %>% mutate(frac = births / sum(births))
+        Births2015 %>% 
+          group_by(wday) %>% summarise(births = sum(births)) %>% 
+          ungroup() %>% mutate(frac = births / sum(births))
+      }

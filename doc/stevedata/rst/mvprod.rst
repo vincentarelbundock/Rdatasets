@@ -1,47 +1,49 @@
-====== ===============
-mvprod R Documentation
-====== ===============
+.. container::
 
-Motor Vehicle Production by Country, 1950-2019
-----------------------------------------------
+   ====== ===============
+   mvprod R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Motor Vehicle Production by Country, 1950-2019
+      :name: motor-vehicle-production-by-country-1950-2019
 
-Data, largely from Organisation Internationale des Constructeurs
-d'Automobiles (OICA), on motor vehicle production in various countries
-(and the world totals) from 1950 to 2019 at various intervals. Tallies
-include production of passenger cars, light commercial vehicles,
-minibuses, trucks, buses and coaches.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data, largely from Organisation Internationale des Constructeurs
+   d'Automobiles (OICA), on motor vehicle production in various
+   countries (and the world totals) from 1950 to 2019 at various
+   intervals. Tallies include production of passenger cars, light
+   commercial vehicles, minibuses, trucks, buses and coaches.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   mvprod
+   ::
 
-Format
-~~~~~~
+      mvprod
 
-A data frame with three variables
+   .. rubric:: Format
+      :name: format
 
-``country``
-   the country's name
+   A data frame with three variables
 
-``year``
-   the year
+   ``country``
+      the country's name
 
-``value``
-   the total motor vehicles produced that year
+   ``year``
+      the year
 
-Details
-~~~~~~~
+   ``value``
+      the total motor vehicles produced that year
 
-This is a Wikipedia web-scraping job. See:
-https://en.wikipedia.org/wiki/List_of_countries_by_motor_vehicle_production
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This is a Wikipedia web-scraping job. See:
+   https://en.wikipedia.org/wiki/List_of_countries_by_motor_vehicle_production
 
-Organisation Internationale des Constructeurs d'Automobiles (OICA)
+   .. rubric:: Source
+      :name: source
+
+   Organisation Internationale des Constructeurs d'Automobiles (OICA)

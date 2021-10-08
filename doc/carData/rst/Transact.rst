@@ -1,48 +1,51 @@
-======== ===============
-Transact R Documentation
-======== ===============
+.. container::
 
-Transaction data
-----------------
+   ======== ===============
+   Transact R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Transaction data
+      :name: transaction-data
 
-Data on transaction times in branch offices of a large Australian bank.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data on transaction times in branch offices of a large Australian
+   bank.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Transact
+   ::
 
-Format
-~~~~~~
+      Transact
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-t1
-   number of type 1 transactions
+   This data frame contains the following columns:
 
-t2
-   number of type 2 transactions
+   t1
+      number of type 1 transactions
 
-time
-   total transaction time, minutes
+   t2
+      number of type 2 transactions
 
-Source
-~~~~~~
+   time
+      total transaction time, minutes
 
-Cunningham, R. and Heathcote, C. (1989), Estimating a non-Gaussian
-regression model with multicollinearity. Australian Journal of
-Statistics, 31,12-17.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Cunningham, R. and Heathcote, C. (1989), Estimating a non-Gaussian
+   regression model with multicollinearity. Australian Journal of
+   Statistics, 31,12-17.
 
-Fox, J. and Weisberg, S. (2019) *An R Companion to Applied Regression*,
-Third Edition, Sage.
+   .. rubric:: References
+      :name: references
 
-Weisberg, S. (2014) *Applied Linear Regression*, Fourth Edition, Wiley,
-Section 4.6.1.
+   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+   Regression*, Third Edition, Sage.
+
+   Weisberg, S. (2014) *Applied Linear Regression*, Fourth Edition,
+   Wiley, Section 4.6.1.

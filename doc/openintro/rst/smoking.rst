@@ -1,98 +1,101 @@
-======= ===============
-smoking R Documentation
-======= ===============
+.. container::
 
-UK Smoking Data
----------------
+   ======= ===============
+   smoking R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: UK Smoking Data
+      :name: uk-smoking-data
 
-Survey data on smoking habits from the UK. The data set can be used for
-analyzing the demographic characteristics of smokers and types of
-tobacco consumed.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Survey data on smoking habits from the UK. The data set can be used
+   for analyzing the demographic characteristics of smokers and types of
+   tobacco consumed.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   smoking
+   ::
 
-Format
-~~~~~~
+      smoking
 
-A data frame with 1691 observations on the following 12 variables.
+   .. rubric:: Format
+      :name: format
 
-gender
-   Gender with levels ``Female`` and ``Male``.
+   A data frame with 1691 observations on the following 12 variables.
 
-age
-   Age.
+   gender
+      Gender with levels ``Female`` and ``Male``.
 
-marital_status
-   Marital status with levels ``Divorced``, ``Married``, ``Separated``,
-   ``Single`` and ``Widowed``.
+   age
+      Age.
 
-highest_qualification
-   Highest education level with levels ``A Levels``, ``Degree``,
-   ``GCSE/CSE``, ``GCSE/O Level``, ``Higher/Sub Degree``,
-   ``No Qualification``, ``ONC/BTEC`` and ``Other/Sub Degree``
+   marital_status
+      Marital status with levels ``Divorced``, ``Married``,
+      ``Separated``, ``Single`` and ``Widowed``.
 
-nationality
-   Nationality with levels ``British``, ``English``, ``Irish``,
-   ``Scottish``, ``Welsh``, ``Other``, ``Refused`` and ``Unknown``.
+   highest_qualification
+      Highest education level with levels ``A Levels``, ``Degree``,
+      ``GCSE/CSE``, ``GCSE/O Level``, ``Higher/Sub Degree``,
+      ``No Qualification``, ``ONC/BTEC`` and ``Other/Sub Degree``
 
-ethnicity
-   Ethnicity with levels ``Asian``, ``Black``, ``Chinese``, ``Mixed``,
-   ``White`` and ``Refused`` ``Unknown``.
+   nationality
+      Nationality with levels ``British``, ``English``, ``Irish``,
+      ``Scottish``, ``Welsh``, ``Other``, ``Refused`` and ``Unknown``.
 
-gross_income
-   Gross income with levels ``Under 2,600``, ``2,600 to 5,200``,
-   ``5,200 to 10,400``, ``10,400 to 15,600``, ``15,600 to 20,800``,
-   ``20,800 to 28,600``, ``28,600 to 36,400``, ``Above 36,400``,
-   ``Refused`` and ``Unknown``.
+   ethnicity
+      Ethnicity with levels ``Asian``, ``Black``, ``Chinese``,
+      ``Mixed``, ``White`` and ``Refused`` ``Unknown``.
 
-region
-   Region with levels ``London``, ``Midlands & East Anglia``,
-   ``Scotland``, ``South East``, ``South West``, ``The North`` and
-   ``Wales``
+   gross_income
+      Gross income with levels ``Under 2,600``, ``2,600 to 5,200``,
+      ``5,200 to 10,400``, ``10,400 to 15,600``, ``15,600 to 20,800``,
+      ``20,800 to 28,600``, ``28,600 to 36,400``, ``Above 36,400``,
+      ``Refused`` and ``Unknown``.
 
-smoke
-   Smoking status with levels ``No`` and ``Yes``
+   region
+      Region with levels ``London``, ``Midlands & East Anglia``,
+      ``Scotland``, ``South East``, ``South West``, ``The North`` and
+      ``Wales``
 
-amt_weekends
-   Number of cigarettes smoked per day on weekends.
+   smoke
+      Smoking status with levels ``No`` and ``Yes``
 
-amt_weekdays
-   Number of cigarettes smoked per day on weekdays.
+   amt_weekends
+      Number of cigarettes smoked per day on weekends.
 
-type
-   Type of cigarettes smoked with levels ``Packets``, ``Hand-Rolled``,
-   ``Both/Mainly Packets`` and ``Both/Mainly Hand-Rolled``
+   amt_weekdays
+      Number of cigarettes smoked per day on weekdays.
 
-Source
-~~~~~~
+   type
+      Type of cigarettes smoked with levels ``Packets``,
+      ``Hand-Rolled``, ``Both/Mainly Packets`` and
+      ``Both/Mainly Hand-Rolled``
 
-National STEM Centre, Large Datasets from stats4schools,
-https://www.stem.org.uk/resources/elibrary/resource/28452/large-datasets-stats4schools.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   National STEM Centre, Large Datasets from stats4schools,
+   https://www.stem.org.uk/resources/elibrary/resource/28452/large-datasets-stats4schools.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(smoking, aes(x = amt_weekends)) +
-     geom_histogram(binwidth = 5)
+      ggplot(smoking, aes(x = amt_weekends)) +
+        geom_histogram(binwidth = 5)
 
-   ggplot(smoking, aes(x = amt_weekdays)) +
-     geom_histogram(binwidth = 5)
+      ggplot(smoking, aes(x = amt_weekdays)) +
+        geom_histogram(binwidth = 5)
 
-   ggplot(smoking, aes(x = gender, fill = smoke)) +
-     geom_bar(position = "fill")
+      ggplot(smoking, aes(x = gender, fill = smoke)) +
+        geom_bar(position = "fill")
 
-   ggplot(smoking, aes(x = marital_status, fill = smoke)) +
-     geom_bar(position = "fill")
+      ggplot(smoking, aes(x = marital_status, fill = smoke)) +
+        geom_bar(position = "fill")

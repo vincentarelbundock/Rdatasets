@@ -1,97 +1,99 @@
-======== ===============
-Caschool R Documentation
-======== ===============
+.. container::
 
-The California Test Score Data Set
-----------------------------------
+   ======== ===============
+   Caschool R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: The California Test Score Data Set
+      :name: the-california-test-score-data-set
 
-a cross-section from 1998-1999
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 420
+   a cross-section from 1998-1999
 
-*observation* : schools
+   *number of observations* : 420
 
-*country* : United States
+   *observation* : schools
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Caschool)
+   ::
 
-Format
-~~~~~~
+      data(Caschool)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-distcod
-   district code
+   A dataframe containing :
 
-county
+   distcod
+      district code
+
    county
+      county
 
-district
    district
+      district
 
-grspan
-   grade span of district
+   grspan
+      grade span of district
 
-enrltot
-   total enrollment
+   enrltot
+      total enrollment
 
-teachers
-   number of teachers
+   teachers
+      number of teachers
 
-calwpct
-   percent qualifying for CalWORKS
+   calwpct
+      percent qualifying for CalWORKS
 
-mealpct
-   percent qualifying for reduced-price lunch
+   mealpct
+      percent qualifying for reduced-price lunch
 
-computer
-   number of computers
+   computer
+      number of computers
 
-testscr
-   average test score ``(read.scr+math.scr)/2``
+   testscr
+      average test score ``(read.scr+math.scr)/2``
 
-compstu
-   computer per student
+   compstu
+      computer per student
 
-expnstu
-   expenditure per student
+   expnstu
+      expenditure per student
 
-str
-   student teacher ratio
+   str
+      student teacher ratio
 
-avginc
-   district average income
+   avginc
+      district average income
 
-elpct
-   percent of English learners
+   elpct
+      percent of English learners
 
-readscr
-   average reading score
+   readscr
+      average reading score
 
-mathscr
-   average math score
+   mathscr
+      average math score
 
-Source
-~~~~~~
+   .. rubric:: Source
+      :name: source
 
-California Department of Education https://www.cde.ca.gov.
+   California Department of Education https://www.cde.ca.gov.
 
-References
-~~~~~~~~~~
+   .. rubric:: References
+      :name: references
 
-Stock, James H. and Mark W. Watson (2003) *Introduction to
-Econometrics*, Addison-Wesley Educational Publishers, chapter 4–7.
+   Stock, James H. and Mark W. Watson (2003) *Introduction to
+   Econometrics*, Addison-Wesley Educational Publishers, chapter 4–7.
 
-See Also
-~~~~~~~~
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

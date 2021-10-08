@@ -1,61 +1,63 @@
-======= ===============
-shuttle R Documentation
-======= ===============
+.. container::
 
-Space Shuttle Autolander Problem
---------------------------------
+   ======= ===============
+   shuttle R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Space Shuttle Autolander Problem
+      :name: space-shuttle-autolander-problem
 
-The ``shuttle`` data frame has 256 rows and 7 columns. The first six
-columns are categorical variables giving example conditions; the seventh
-is the decision. The first 253 rows are the training set, the last 3 the
-test conditions.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``shuttle`` data frame has 256 rows and 7 columns. The first six
+   columns are categorical variables giving example conditions; the
+   seventh is the decision. The first 253 rows are the training set, the
+   last 3 the test conditions.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   shuttle
+   ::
 
-Format
-~~~~~~
+      shuttle
 
-This data frame contains the following factor columns:
+   .. rubric:: Format
+      :name: format
 
-``stability``
-   stable positioning or not (``stab`` / ``xstab``).
+   This data frame contains the following factor columns:
 
-``error``
-   size of error (``MM`` / ``SS`` / ``LX`` / ``XL``).
+   ``stability``
+      stable positioning or not (``stab`` / ``xstab``).
 
-``sign``
-   sign of error, positive or negative (``pp`` / ``nn``).
+   ``error``
+      size of error (``MM`` / ``SS`` / ``LX`` / ``XL``).
 
-``wind``
-   wind sign (``head`` / ``tail``).
+   ``sign``
+      sign of error, positive or negative (``pp`` / ``nn``).
 
-``magn``
-   wind strength (``Light`` / ``Medium`` / ``Strong`` /
-   ``Out of Range``).
+   ``wind``
+      wind sign (``head`` / ``tail``).
 
-``vis``
-   visibility (``yes`` / ``no``).
+   ``magn``
+      wind strength (``Light`` / ``Medium`` / ``Strong`` /
+      ``Out of Range``).
 
-``use``
-   use the autolander or not. (``auto`` / ``noauto``.)
+   ``vis``
+      visibility (``yes`` / ``no``).
 
-Source
-~~~~~~
+   ``use``
+      use the autolander or not. (``auto`` / ``noauto``.)
 
-D. Michie (1989) Problems of computer-aided concept formation. In
-*Applications of Expert Systems 2*, ed. J. R. Quinlan, Turing Institute
-Press / Addison-Wesley, pp. 310–333.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   D. Michie (1989) Problems of computer-aided concept formation. In
+   *Applications of Expert Systems 2*, ed. J. R. Quinlan, Turing
+   Institute Press / Addison-Wesley, pp. 310–333.
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   .. rubric:: References
+      :name: references
+
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.

@@ -1,36 +1,39 @@
-================ ===============
-LongJumpOlympics R Documentation
-================ ===============
+.. container::
 
-Olympic Men's Long Jump Gold Medal Distance (1900 - 2008)
----------------------------------------------------------
+   ================ ===============
+   LongJumpOlympics R Documentation
+   ================ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Olympic Men's Long Jump Gold Medal Distance (1900 - 2008)
+      :name: olympic-mens-long-jump-gold-medal-distance-1900---2008
 
-Winning distances in men's Olympic long jump competitions (1900 - 2008)
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Winning distances in men's Olympic long jump competitions (1900 -
+   2008)
 
-A data frame with 26 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-======== ============================================
-``Year`` Year of the Olympics (1900 - 2008)
-``Gold`` Winning men's long jump distance (in meters)
-\        
-======== ============================================
+   A data frame with 26 observations on the following 2 variables.
 
-Details
-~~~~~~~
+   ======== ============================================
+   ``Year`` Year of the Olympics (1900 - 2008)
+   ``Gold`` Winning men's long jump distance (in meters)
+   \        
+   ======== ============================================
 
-Gold medal winning distances for the men's long jump at the Olympics
-from 1900 to 2008.
+   .. rubric:: Details
+      :name: details
 
-Updated to LongJumpOlympics2016 in second edition.
+   Gold medal winning distances for the men's long jump at the Olympics
+   from 1900 to 2008.
 
-Source
-~~~~~~
+   Updated to LongJumpOlympics2016 in second edition.
 
-Historical Olympic long ump results at
-http://trackandfield.about.com/od/longjump/qt/olymlongjumpmen.htm
+   .. rubric:: Source
+      :name: source
+
+   Historical Olympic long ump results at
+   http://trackandfield.about.com/od/longjump/qt/olymlongjumpmen.htm

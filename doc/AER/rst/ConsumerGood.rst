@@ -1,57 +1,60 @@
-============ ===============
-ConsumerGood R Documentation
-============ ===============
+.. container::
 
-Properties of a Fast-Moving Consumer Good
------------------------------------------
+   ============ ===============
+   ConsumerGood R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Properties of a Fast-Moving Consumer Good
+      :name: properties-of-a-fast-moving-consumer-good
 
-Time series of distribution, market share and price of a fast-moving
-consumer good.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Time series of distribution, market share and price of a fast-moving
+   consumer good.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("ConsumerGood")
+   ::
 
-Format
-~~~~~~
+      data("ConsumerGood")
 
-A weekly multiple time series from 1989(11) to 1991(9) with 3 variables.
+   .. rubric:: Format
+      :name: format
 
-distribution
-   Distribution.
+   A weekly multiple time series from 1989(11) to 1991(9) with 3
+   variables.
 
-share
-   Market share.
+   distribution
+      Distribution.
 
-price
-   Price.
+   share
+      Market share.
 
-Source
-~~~~~~
+   price
+      Price.
 
-Online complements to Franses (1998).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Franses (1998).
 
-Franses, P.H. (1998). *Time Series Models for Business and Economic
-Forecasting*. Cambridge, UK: Cambridge University Press.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Franses, P.H. (1998). *Time Series Models for Business and Economic
+   Forecasting*. Cambridge, UK: Cambridge University Press.
 
-``Franses1998``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Franses1998``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("ConsumerGood")
-   plot(ConsumerGood)
+   ::
+
+      data("ConsumerGood")
+      plot(ConsumerGood)

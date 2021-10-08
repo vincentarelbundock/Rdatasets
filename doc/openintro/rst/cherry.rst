@@ -1,55 +1,57 @@
-====== ===============
-cherry R Documentation
-====== ===============
+.. container::
 
-Summary information for 31 cherry trees
----------------------------------------
+   ====== ===============
+   cherry R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Summary information for 31 cherry trees
+      :name: summary-information-for-31-cherry-trees
 
-Researchers wanting to understand the relationship between these
-variables for black cherry trees collected data from 31 trees in the
-Allegheny National Forest, Pennsylvania.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Researchers wanting to understand the relationship between these
+   variables for black cherry trees collected data from 31 trees in the
+   Allegheny National Forest, Pennsylvania.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   cherry
+   ::
 
-Format
-~~~~~~
+      cherry
 
-A data frame with 31 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-diam
-   diameter in inches (at 54 inches above ground)
+   A data frame with 31 observations on the following 3 variables.
 
-height
-   height is measured in feet
+   diam
+      diameter in inches (at 54 inches above ground)
 
-volume
-   volume in cubic feet
+   height
+      height is measured in feet
 
-Source
-~~~~~~
+   volume
+      volume in cubic feet
 
-D.J. Hand. A handbook of small data sets. Chapman & Hall/CRC, 1994.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   D.J. Hand. A handbook of small data sets. Chapman & Hall/CRC, 1994.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
-   library(broom)
+      library(ggplot2)
+      library(broom)
 
-   ggplot(cherry, aes(x = diam, y = volume)) +
-     geom_point() +
-     geom_smooth(method = "lm")
+      ggplot(cherry, aes(x = diam, y = volume)) +
+        geom_point() +
+        geom_smooth(method = "lm")
 
-   mod <- lm(volume ~ diam + height, cherry)
-   tidy(mod)
+      mod <- lm(volume ~ diam + height, cherry)
+      tidy(mod)

@@ -1,55 +1,57 @@
-============== ===============
-Contraceptives R Documentation
-============== ===============
+.. container::
 
-Drug Interaction with Contraceptives
-------------------------------------
+   ============== ===============
+   Contraceptives R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Drug Interaction with Contraceptives
+      :name: drug-interaction-with-contraceptives
 
-Drug interaction study with oral contraceptives
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Drug interaction study with oral contraceptives
 
-A data frame with 44 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``ID``
-   ID number for each of the women
+   A data frame with 44 observations on the following 6 variables.
 
-``StudyPeriod``
-   ``1=first`` or ``2``\ =second
+   ``ID``
+      ID number for each of the women
 
-``Treatment``
-   ``Drug`` or ``Placebo``
+   ``StudyPeriod``
+      ``1=first`` or ``2``\ =second
 
-``EE``
-   Bioavailability of the ethinyl estradiol component of the oral
-   contraceptive (in pg*hr/ml)
+   ``Treatment``
+      ``Drug`` or ``Placebo``
 
-``ComparisonValues``
-   Comparison values used for a Tukey nonadditivity plot
+   ``EE``
+      Bioavailability of the ethinyl estradiol component of the oral
+      contraceptive (in pg*hr/ml)
 
-``Residuals``
-   Residuals used for a Tukey nonadditivity plot
+   ``ComparisonValues``
+      Comparison values used for a Tukey nonadditivity plot
 
-Details
-~~~~~~~
+   ``Residuals``
+      Residuals used for a Tukey nonadditivity plot
 
-Twenty-two female subjects were allocated randomly to one of two
-treatment sequences in a two period crossover design. The two treatments
-were a new Drug D or placebo, both given concomitantly with a standard
-oral contraceptive which was given in both study periods. The oral
-contraceptive has two components, ethinyl estradiol (EE) and
-norethindrone (NET). The purpose of the study was to evaluate whether
-the presence of Drug D affected the bioavailability of each of the oral
-contraceptive components. Note that our dataset does not include the NET
-variable.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Twenty-two female subjects were allocated randomly to one of two
+   treatment sequences in a two period crossover design. The two
+   treatments were a new Drug D or placebo, both given concomitantly
+   with a standard oral contraceptive which was given in both study
+   periods. The oral contraceptive has two components, ethinyl estradiol
+   (EE) and norethindrone (NET). The purpose of the study was to
+   evaluate whether the presence of Drug D affected the bioavailability
+   of each of the oral contraceptive components. Note that our dataset
+   does not include the NET variable.
 
-Thomas E. Bradstreet & Deborah L. Panebianco (2017) "An Oral
-Contraceptive Drug Interaction Study", Journal of Statistics Education,
-12:1, DOI: 10.1080/10691898.2004.11910719
+   .. rubric:: Source
+      :name: source
+
+   Thomas E. Bradstreet & Deborah L. Panebianco (2017) "An Oral
+   Contraceptive Drug Interaction Study", Journal of Statistics
+   Education, 12:1, DOI: 10.1080/10691898.2004.11910719

@@ -1,41 +1,43 @@
-==== ===============
-lung R Documentation
-==== ===============
+.. container::
 
-data from Exercise 4.4, p120
-----------------------------
+   ==== ===============
+   lung R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: data from Exercise 4.4, p120
+      :name: data-from-exercise-4.4-p120
 
-The ``lung`` data frame has 25 rows and 4 columns.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   The ``lung`` data frame has 25 rows and 4 columns.
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-time
-   Days to death
+   This data frame contains the following columns:
 
-death
-   Death indicator (1=dead), complete follow-up on all patients
+   time
+      Days to death
 
-time2
-   Days to 3/31/80 or death (interim analysis)
+   death
+      Death indicator (1=dead), complete follow-up on all patients
 
-death2
-   Death indicator as of 3/31/80 (1=dead, 0=alive)
+   time2
+      Days to 3/31/80 or death (interim analysis)
 
-Source
-~~~~~~
+   death2
+      Death indicator as of 3/31/80 (1=dead, 0=alive)
 
-Klein and Moeschberger (1997) *Survival Analysis Techniques for Censored
-and truncated data*, Springer.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Klein and Moeschberger (1997) *Survival Analysis Techniques for
+   Censored and truncated data*, Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(lung)
+   ::
+
+      data(lung)

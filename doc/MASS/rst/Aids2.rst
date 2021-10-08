@@ -1,63 +1,65 @@
-===== ===============
-Aids2 R Documentation
-===== ===============
+.. container::
 
-Australian AIDS Survival Data
------------------------------
+   ===== ===============
+   Aids2 R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Australian AIDS Survival Data
+      :name: australian-aids-survival-data
 
-Data on patients diagnosed with AIDS in Australia before 1 July 1991.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data on patients diagnosed with AIDS in Australia before 1 July 1991.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Aids2
+   ::
 
-Format
-~~~~~~
+      Aids2
 
-This data frame contains 2843 rows and the following columns:
+   .. rubric:: Format
+      :name: format
 
-``state``
-   Grouped state of origin: ``"NSW "``\ includes ACT and ``"other"`` is
-   WA, SA, NT and TAS.
+   This data frame contains 2843 rows and the following columns:
 
-``sex``
-   Sex of patient.
+   ``state``
+      Grouped state of origin: ``"NSW "``\ includes ACT and ``"other"``
+      is WA, SA, NT and TAS.
 
-``diag``
-   (Julian) date of diagnosis.
+   ``sex``
+      Sex of patient.
 
-``death``
-   (Julian) date of death or end of observation.
+   ``diag``
+      (Julian) date of diagnosis.
 
-``status``
-   ``"A"`` (alive) or ``"D"`` (dead) at end of observation.
+   ``death``
+      (Julian) date of death or end of observation.
 
-``T.categ``
-   Reported transmission category.
+   ``status``
+      ``"A"`` (alive) or ``"D"`` (dead) at end of observation.
 
-``age``
-   Age (years) at diagnosis.
+   ``T.categ``
+      Reported transmission category.
 
-Note
-~~~~
+   ``age``
+      Age (years) at diagnosis.
 
-This data set has been slightly jittered as a condition of its release,
-to ensure patient confidentiality.
+   .. rubric:: Note
+      :name: note
 
-Source
-~~~~~~
+   This data set has been slightly jittered as a condition of its
+   release, to ensure patient confidentiality.
 
-Dr P. J. Solomon and the Australian National Centre in HIV Epidemiology
-and Clinical Research.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Dr P. J. Solomon and the Australian National Centre in HIV
+   Epidemiology and Clinical Research.
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   .. rubric:: References
+      :name: references
+
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.

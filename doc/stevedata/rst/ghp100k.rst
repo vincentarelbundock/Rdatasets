@@ -1,67 +1,69 @@
-======= ===============
-ghp100k R Documentation
-======= ===============
+.. container::
 
-Gun Homicide Rate per 100,000 People, by Country
-------------------------------------------------
+   ======= ===============
+   ghp100k R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Gun Homicide Rate per 100,000 People, by Country
+      :name: gun-homicide-rate-per-100000-people-by-country
 
-This is the yearly rate of gun homicides per 100,000 people in the
-population, selecting on "Western" countries of interest.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This is the yearly rate of gun homicides per 100,000 people in the
+   population, selecting on "Western" countries of interest.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   ghp100k
+   ::
 
-Format
-~~~~~~
+      ghp100k
 
-A data frame with 561 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``country``
-   the country
+   A data frame with 561 observations on the following 3 variables.
 
-``year``
-   the year
+   ``country``
+      the country
 
-``value``
-   a numeric vector for the estimated rate of gun homicide per 100,000
-   people
+   ``year``
+      the year
 
-Details
-~~~~~~~
+   ``value``
+      a numeric vector for the estimated rate of gun homicide per
+      100,000 people
 
-The reported, or calculated annual crude rate of completed, intentional
-homicide committed with a firearm, per 100,000 population, in years
-descending.
+   .. rubric:: Details
+      :name: details
 
-Where a jurisdiction's published count of 'annual homicide' includes
-cases of attempted (uncompleted) homicide, these figures have been
-disaggregated wherever possible.
+   The reported, or calculated annual crude rate of completed,
+   intentional homicide committed with a firearm, per 100,000
+   population, in years descending.
 
-In the United States, this category is confused by inaccurate and
-conflicting data published, suppressed or labeled as unreliable by the
-Centers for Disease Control and Prevention (CDC) and the Federal Bureau
-of Investigation (FBI). Suppression can result in zero values where in
-fact homicides did occur.
+   Where a jurisdiction's published count of 'annual homicide' includes
+   cases of attempted (uncompleted) homicide, these figures have been
+   disaggregated wherever possible.
 
-Incomplete classification by local agencies can also result in a
-significant proportion of events being categorized as 'unknown cause' or
-similar.
+   In the United States, this category is confused by inaccurate and
+   conflicting data published, suppressed or labeled as unreliable by
+   the Centers for Disease Control and Prevention (CDC) and the Federal
+   Bureau of Investigation (FBI). Suppression can result in zero values
+   where in fact homicides did occur.
 
-Before quoting these datasets, please follow the citation links for a
-description of the considerable differences between them and the reasons
-for data suppression.
+   Incomplete classification by local agencies can also result in a
+   significant proportion of events being categorized as 'unknown cause'
+   or similar.
 
-Where a rate is calculated by ``GunPolicy.org``, a matched population
-estimate is also cited.
+   Before quoting these datasets, please follow the citation links for a
+   description of the considerable differences between them and the
+   reasons for data suppression.
 
-Source
-~~~~~~
+   Where a rate is calculated by ``GunPolicy.org``, a matched population
+   estimate is also cited.
 
-https://www.gunpolicy.org
+   .. rubric:: Source
+      :name: source
+
+   https://www.gunpolicy.org

@@ -1,59 +1,61 @@
-========= ===============
-leafshape R Documentation
-========= ===============
+.. container::
 
-Full Leaf Shape Data Set
-------------------------
+   ========= ===============
+   leafshape R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Full Leaf Shape Data Set
+      :name: full-leaf-shape-data-set
 
-Leaf length, width and petiole measurements taken at various sites in
-Australia.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Leaf length, width and petiole measurements taken at various sites in
+   Australia.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   leafshape
+   ::
 
-Format
-~~~~~~
+      leafshape
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-bladelen
-   leaf length (in mm)
+   This data frame contains the following columns:
 
-petiole
-   a numeric vector
+   bladelen
+      leaf length (in mm)
 
-bladewid
-   leaf width (in mm)
+   petiole
+      a numeric vector
 
-latitude
+   bladewid
+      leaf width (in mm)
+
    latitude
+      latitude
 
-logwid
-   natural logarithm of width
+   logwid
+      natural logarithm of width
 
-logpet
-   logarithm of petiole
+   logpet
+      logarithm of petiole
 
-loglen
-   logarithm of length
+   loglen
+      logarithm of length
 
-arch
-   leaf architecture (0 = plagiotropic, 1 = orthotropic
+   arch
+      leaf architecture (0 = plagiotropic, 1 = orthotropic
 
-location
-   a factor with levels ``Sabah``, ``Panama``, ``Costa Rica``,
-   ``N Queensland``, ``S Queensland``, ``Tasmania``
+   location
+      a factor with levels ``Sabah``, ``Panama``, ``Costa Rica``,
+      ``N Queensland``, ``S Queensland``, ``Tasmania``
 
-Source
-~~~~~~
+   .. rubric:: Source
+      :name: source
 
-King, D.A. and Maindonald, J.H. 1999. Tree architecture in relation to
-leaf dimensions and tree stature in temperate and tropical rain forests.
-Journal of Ecology 87: 1012-1024.
+   King, D.A. and Maindonald, J.H. 1999. Tree architecture in relation
+   to leaf dimensions and tree stature in temperate and tropical rain
+   forests. Journal of Ecology 87: 1012-1024.

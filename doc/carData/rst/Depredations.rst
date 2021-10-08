@@ -1,49 +1,51 @@
-============ ===============
-Depredations R Documentation
-============ ===============
+.. container::
 
-Minnesota Wolf Depredation Data
--------------------------------
+   ============ ===============
+   Depredations R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Minnesota Wolf Depredation Data
+      :name: minnesota-wolf-depredation-data
 
-Wolf depredations of livestock on Minnesota farms, 1976-1998.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Wolf depredations of livestock on Minnesota farms, 1976-1998.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Depredations
+   ::
 
-Format
-~~~~~~
+      Depredations
 
-A data frame with 434 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``longitude``
-   longitude of the farm
+   A data frame with 434 observations on the following 5 variables.
 
-``latitude``
-   latitude of the farm
+   ``longitude``
+      longitude of the farm
 
-``number``
-   number of depredations 1976-1998
+   ``latitude``
+      latitude of the farm
 
-``early``
-   number of depredations 1991 or before
+   ``number``
+      number of depredations 1976-1998
 
-``late``
-   number of depredations 1992 or later
+   ``early``
+      number of depredations 1991 or before
 
-References
-~~~~~~~~~~
+   ``late``
+      number of depredations 1992 or later
 
-Fox, J. and Weisberg, S. (2019) *An R Companion to Applied Regression*,
-Third Edition, Sage.
+   .. rubric:: References
+      :name: references
 
-Harper, Elizabeth K. and Paul, William J. and Mech, L. David and
-Weisberg, Sanford (2008), Effectiveness of Lethal, Directed
-Wolf-Depredation Control in Minnesota, *Journal of Wildlife Management*,
-72, 3, 778-784. http://dx.doi.org/10.2193/2007-273
+   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+   Regression*, Third Edition, Sage.
+
+   Harper, Elizabeth K. and Paul, William J. and Mech, L. David and
+   Weisberg, Sanford (2008), Effectiveness of Lethal, Directed
+   Wolf-Depredation Control in Minnesota, *Journal of Wildlife
+   Management*, 72, 3, 778-784. http://dx.doi.org/10.2193/2007-273

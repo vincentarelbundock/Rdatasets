@@ -1,39 +1,41 @@
-=========== ===============
-ElephantsMF R Documentation
-=========== ===============
+.. container::
 
-Measurements of African Elephants
----------------------------------
+   =========== ===============
+   ElephantsMF R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Measurements of African Elephants
+      :name: measurements-of-african-elephants
 
-Age and height of African elephants
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Age and height of African elephants
 
-A data frame with 288 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``Age``
-   Age (in years)
+   A data frame with 288 observations on the following 3 variables.
 
-``Height``
-   Shoulder height (in cm)
+   ``Age``
+      Age (in years)
 
-``Sex``
-   ``F``\ =female or ``M``\ =male
+   ``Height``
+      Shoulder height (in cm)
 
-Details
-~~~~~~~
+   ``Sex``
+      ``F``\ =female or ``M``\ =male
 
-Data on 288 African elephants that lived through droughts in the first
-two years of life.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Data on 288 African elephants that lived through droughts in the
+   first two years of life.
 
-Data are from Phyllis Lee, Stirling University, and are related to Lee,
-P., et al. (2013), "Enduring consequences of early experiences: 40-year
-effects on survival and success among African elephants (Loxodonta
-Africana)," Biology Letters, 9: 20130011.
+   .. rubric:: Source
+      :name: source
+
+   Data are from Phyllis Lee, Stirling University, and are related to
+   Lee, P., et al. (2013), "Enduring consequences of early experiences:
+   40-year effects on survival and success among African elephants
+   (Loxodonta Africana)," Biology Letters, 9: 20130011.

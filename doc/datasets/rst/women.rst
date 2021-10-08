@@ -1,58 +1,60 @@
-===== ===============
-women R Documentation
-===== ===============
+.. container::
 
-Average Heights and Weights for American Women
-----------------------------------------------
+   ===== ===============
+   women R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Average Heights and Weights for American Women
+      :name: average-heights-and-weights-for-american-women
 
-This data set gives the average heights and weights for American women
-aged 30–39.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data set gives the average heights and weights for American
+   women aged 30–39.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   women
+   ::
 
-Format
-~~~~~~
+      women
 
-A data frame with 15 observations on 2 variables.
+   .. rubric:: Format
+      :name: format
 
-======== ========== ======= ============
-``[,1]`` ``height`` numeric Height (in)
-``[,2]`` ``weight`` numeric Weight (lbs)
-======== ========== ======= ============
+   A data frame with 15 observations on 2 variables.
 
-Details
-~~~~~~~
+   ======== ========== ======= ============
+   ``[,1]`` ``height`` numeric Height (in)
+   ``[,2]`` ``weight`` numeric Weight (lbs)
+   ======== ========== ======= ============
 
-The data set appears to have been taken from the American Society of
-Actuaries *Build and Blood Pressure Study* for some (unknown to us)
-earlier year.
+   .. rubric:: Details
+      :name: details
 
-The World Almanac notes: “The figures represent weights in ordinary
-indoor clothing and shoes, and heights with shoes”.
+   The data set appears to have been taken from the American Society of
+   Actuaries *Build and Blood Pressure Study* for some (unknown to us)
+   earlier year.
 
-Source
-~~~~~~
+   The World Almanac notes: “The figures represent weights in ordinary
+   indoor clothing and shoes, and heights with shoes”.
 
-The World Almanac and Book of Facts, 1975.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The World Almanac and Book of Facts, 1975.
 
-McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(graphics)
-   plot(women, xlab = "Height (in)", ylab = "Weight (lb)",
-        main = "women data: American women aged 30-39")
+   ::
+
+      require(graphics)
+      plot(women, xlab = "Height (in)", ylab = "Weight (lb)",
+           main = "women data: American women aged 30-39")

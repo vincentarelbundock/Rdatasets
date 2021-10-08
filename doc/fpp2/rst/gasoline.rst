@@ -1,30 +1,32 @@
-======== ===============
-gasoline R Documentation
-======== ===============
+.. container::
 
-US finished motor gasoline product supplied.
---------------------------------------------
+   ======== ===============
+   gasoline R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: US finished motor gasoline product supplied.
+      :name: us-finished-motor-gasoline-product-supplied.
 
-Weekly data beginning 2 February 1991, ending 20 January 2017. Units are
-"million barrels per day".
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Weekly data beginning 2 February 1991, ending 20 January 2017. Units
+   are "million barrels per day".
 
-Time series object of class ``ts``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   Time series object of class ``ts``.
 
-US Energy Information Administration.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   US Energy Information Administration.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   autoplot(gasoline, xlab="Year")
+      autoplot(gasoline, xlab="Year")

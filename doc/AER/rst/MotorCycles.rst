@@ -1,54 +1,56 @@
-=========== ===============
-MotorCycles R Documentation
-=========== ===============
+.. container::
 
-Motor Cycles in The Netherlands
--------------------------------
+   =========== ===============
+   MotorCycles R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Motor Cycles in The Netherlands
+      :name: motor-cycles-in-the-netherlands
 
-Time series of stock of motor cycles (two wheels) in The Netherlands (in
-thousands).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Time series of stock of motor cycles (two wheels) in The Netherlands
+   (in thousands).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("MotorCycles")
+   ::
 
-Format
-~~~~~~
+      data("MotorCycles")
 
-An annual univariate time series from 1946 to 1993.
+   .. rubric:: Format
+      :name: format
 
-Details
-~~~~~~~
+   An annual univariate time series from 1946 to 1993.
 
-An updated version is available under the name ``MotorCycles2``.
-However, the values for the years 1992 and 1993 differ there.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   An updated version is available under the name ``MotorCycles2``.
+   However, the values for the years 1992 and 1993 differ there.
 
-Online complements to Franses (1998).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Franses (1998).
 
-Franses, P.H. (1998). *Time Series Models for Business and Economic
-Forecasting*. Cambridge, UK: Cambridge University Press.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Franses, P.H. (1998). *Time Series Models for Business and Economic
+   Forecasting*. Cambridge, UK: Cambridge University Press.
 
-``Franses1998``, ``MotorCycles2``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Franses1998``, ``MotorCycles2``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("MotorCycles")
-   plot(MotorCycles)
+   ::
+
+      data("MotorCycles")
+      plot(MotorCycles)

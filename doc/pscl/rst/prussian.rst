@@ -1,47 +1,49 @@
-======== ===============
-prussian R Documentation
-======== ===============
+.. container::
 
-Prussian army horse kick data
------------------------------
+   ======== ===============
+   prussian R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Prussian army horse kick data
+      :name: prussian-army-horse-kick-data
 
-Deaths by year, by corp, from horse kicks.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Deaths by year, by corp, from horse kicks.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(prussian)
+   ::
 
-Format
-~~~~~~
+      data(prussian)
 
-A data frame with 280 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``y``
-   a numeric vector, count of deaths
+   A data frame with 280 observations on the following 3 variables.
 
-``year``
-   a numeric vector, 18XX, year of observation
+   ``y``
+      a numeric vector, count of deaths
 
-``corp``
-   a ``factor``, corp of Prussian Army generating observation
+   ``year``
+      a numeric vector, 18XX, year of observation
 
-Source
-~~~~~~
+   ``corp``
+      a ``factor``, corp of Prussian Army generating observation
 
-von Bortkiewicz, L. 1898. *Das Gesetz der Kleinen Zahlen.* Leipzig:
-Teubner.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   von Bortkiewicz, L. 1898. *Das Gesetz der Kleinen Zahlen.* Leipzig:
+   Teubner.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(prussian)
-   corpP <- glm(y ~ corp, family=poisson,data=prussian)
-   summary(corpP)
+   ::
+
+      data(prussian)
+      corpP <- glm(y ~ corp, family=poisson,data=prussian)
+      summary(corpP)

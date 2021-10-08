@@ -1,76 +1,78 @@
-==== ===============
-Auto R Documentation
-==== ===============
+.. container::
 
-Auto Data Set
--------------
+   ==== ===============
+   Auto R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Auto Data Set
+      :name: auto-data-set
 
-Gas mileage, horsepower, and other information for 392 vehicles.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Gas mileage, horsepower, and other information for 392 vehicles.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Auto
+   ::
 
-Format
-~~~~~~
+      Auto
 
-A data frame with 392 observations on the following 9 variables.
+   .. rubric:: Format
+      :name: format
 
-``mpg``
-   miles per gallon
+   A data frame with 392 observations on the following 9 variables.
 
-``cylinders``
-   Number of cylinders between 4 and 8
+   ``mpg``
+      miles per gallon
 
-``displacement``
-   Engine displacement (cu. inches)
+   ``cylinders``
+      Number of cylinders between 4 and 8
 
-``horsepower``
-   Engine horsepower
+   ``displacement``
+      Engine displacement (cu. inches)
 
-``weight``
-   Vehicle weight (lbs.)
+   ``horsepower``
+      Engine horsepower
 
-``acceleration``
-   Time to accelerate from 0 to 60 mph (sec.)
+   ``weight``
+      Vehicle weight (lbs.)
 
-``year``
-   Model year (modulo 100)
+   ``acceleration``
+      Time to accelerate from 0 to 60 mph (sec.)
 
-``origin``
-   Origin of car (1. American, 2. European, 3. Japanese)
+   ``year``
+      Model year (modulo 100)
 
-``name``
-   Vehicle name
+   ``origin``
+      Origin of car (1. American, 2. European, 3. Japanese)
 
-The orginal data contained 408 observations but 16 observations with
-missing values were removed.
+   ``name``
+      Vehicle name
 
-Source
-~~~~~~
+   The orginal data contained 408 observations but 16 observations with
+   missing values were removed.
 
-This dataset was taken from the StatLib library which is maintained at
-Carnegie Mellon University. The dataset was used in the 1983 American
-Statistical Association Exposition.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   This dataset was taken from the StatLib library which is maintained
+   at Carnegie Mellon University. The dataset was used in the 1983
+   American Statistical Association Exposition.
 
-James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
-Introduction to Statistical Learning with applications in R*,
-https://www.statlearning.com, Springer-Verlag, New York
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
+   Introduction to Statistical Learning with applications in R*,
+   https://www.statlearning.com, Springer-Verlag, New York
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   pairs(Auto)
-   attach(Auto)
-   hist(mpg)
+   ::
+
+      pairs(Auto)
+      attach(Auto)
+      hist(mpg)

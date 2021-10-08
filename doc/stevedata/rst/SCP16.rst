@@ -1,80 +1,83 @@
-===== ===============
-SCP16 R Documentation
-===== ===============
+.. container::
 
-South Carolina County GOP/Democratic Primary Data, 2016
--------------------------------------------------------
+   ===== ===============
+   SCP16 R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: South Carolina County GOP/Democratic Primary Data, 2016
+      :name: south-carolina-county-gopdemocratic-primary-data-2016
 
-County-level data on vote share and various background/demographic
-information for the 2016 South Carolina GOP/Democratic primaries.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   County-level data on vote share and various background/demographic
+   information for the 2016 South Carolina GOP/Democratic primaries.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   SCP16
+   ::
 
-Format
-~~~~~~
+      SCP16
 
-A data frame with 46 observations on the following 15 variables.
+   .. rubric:: Format
+      :name: format
 
-``county``
-   the county
+   A data frame with 46 observations on the following 15 variables.
 
-``clinton``
-   Hillary Clinton's county-level vote share in the 2016 party primary
+   ``county``
+      the county
 
-``sanders``
-   Bernie Sanders' county-level vote share in the 2016 party primary
+   ``clinton``
+      Hillary Clinton's county-level vote share in the 2016 party
+      primary
 
-``trump``
-   Donald Trump's county-level vote share in the 2016 party primary
+   ``sanders``
+      Bernie Sanders' county-level vote share in the 2016 party primary
 
-``cruz``
-   Ted Cruz' county-level vote share in the 2016 party primary
+   ``trump``
+      Donald Trump's county-level vote share in the 2016 party primary
 
-``rubio``
-   Marco Rubio's county-level vote share in the 2016 party primary
+   ``cruz``
+      Ted Cruz' county-level vote share in the 2016 party primary
 
-``percapinc``
-   A county-level estimate for per capita income
+   ``rubio``
+      Marco Rubio's county-level vote share in the 2016 party primary
 
-``medhouseinc``
-   A county-level estimate for the median household income
+   ``percapinc``
+      A county-level estimate for per capita income
 
-``medfaminc``
-   A county-level estimate for the median family income
+   ``medhouseinc``
+      A county-level estimate for the median household income
 
-``illiteracy``
-   An estimate of the percent of the county lacking "basic" prose
-   literacy skills
+   ``medfaminc``
+      A county-level estimate for the median family income
 
-``perblack``
-   Percentage of the county that is black
+   ``illiteracy``
+      An estimate of the percent of the county lacking "basic" prose
+      literacy skills
 
-``population``
-   An estimate of the county-level population
+   ``perblack``
+      Percentage of the county that is black
 
-``romneyshare2012``
-   Mitt Romney's vote share at the county-level from the 2012 general
-   election
+   ``population``
+      An estimate of the county-level population
 
-``perhsgrad``
-   Percentage of the county whose residents 25 years and older have at
-   least a high school education
+   ``romneyshare2012``
+      Mitt Romney's vote share at the county-level from the 2012 general
+      election
 
-``unemployment``
-   Unemployment rate for the county for January 2016
+   ``perhsgrad``
+      Percentage of the county whose residents 25 years and older have
+      at least a high school education
 
-Details
-~~~~~~~
+   ``unemployment``
+      Unemployment rate for the county for January 2016
 
-The illiteracy estimate comes from a Department of Education report from
-2003. The unemployment rate data come from the Bureau of Labor
-Statistics. A Github repository contains more information:
-https://github.com/svmiller/sc-primary-2016.
+   .. rubric:: Details
+      :name: details
+
+   The illiteracy estimate comes from a Department of Education report
+   from 2003. The unemployment rate data come from the Bureau of Labor
+   Statistics. A Github repository contains more information:
+   https://github.com/svmiller/sc-primary-2016.

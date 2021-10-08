@@ -1,71 +1,73 @@
-======== ===============
-starwars R Documentation
-======== ===============
+.. container::
 
-Starwars characters
--------------------
+   ======== ===============
+   starwars R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Starwars characters
+      :name: starwars-characters
 
-The original data, from SWAPI, the Star Wars API, https://swapi.dev/,
-has been revised to reflect additional research into gender and sex
-determinations of characters.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The original data, from SWAPI, the Star Wars API, https://swapi.dev/,
+   has been revised to reflect additional research into gender and sex
+   determinations of characters.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   starwars
+   ::
 
-Format
-~~~~~~
+      starwars
 
-A tibble with 87 rows and 14 variables:
+   .. rubric:: Format
+      :name: format
 
-name
-   Name of the character
+   A tibble with 87 rows and 14 variables:
 
-height
-   Height (cm)
+   name
+      Name of the character
 
-mass
-   Weight (kg)
+   height
+      Height (cm)
 
-hair_color,skin_color,eye_color
-   Hair, skin, and eye colors
+   mass
+      Weight (kg)
 
-birth_year
-   Year born (BBY = Before Battle of Yavin)
+   hair_color,skin_color,eye_color
+      Hair, skin, and eye colors
 
-sex
-   The biological sex of the character, namely male, female,
-   hermaphroditic, or none (as in the case for Droids).
+   birth_year
+      Year born (BBY = Before Battle of Yavin)
 
-gender
-   The gender role or gender identity of the character as determined by
-   their personality or the way they were programmed (as in the case for
-   Droids).
+   sex
+      The biological sex of the character, namely male, female,
+      hermaphroditic, or none (as in the case for Droids).
 
-homeworld
-   Name of homeworld
+   gender
+      The gender role or gender identity of the character as determined
+      by their personality or the way they were programmed (as in the
+      case for Droids).
 
-species
-   Name of species
+   homeworld
+      Name of homeworld
 
-films
-   List of films the character appeared in
+   species
+      Name of species
 
-vehicles
-   List of vehicles the character has piloted
+   films
+      List of films the character appeared in
 
-starships
-   List of starships the character has piloted
+   vehicles
+      List of vehicles the character has piloted
 
-Examples
-~~~~~~~~
+   starships
+      List of starships the character has piloted
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   starwars
+   ::
+
+      starwars

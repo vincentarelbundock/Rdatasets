@@ -1,49 +1,51 @@
-==== ===============
-coal R Documentation
-==== ===============
+.. container::
 
-Dates of Coal Mining Disasters
-------------------------------
+   ==== ===============
+   coal R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Dates of Coal Mining Disasters
+      :name: dates-of-coal-mining-disasters
 
-The ``coal`` data frame has 191 rows and 1 columns.
+   .. rubric:: Description
+      :name: description
 
-This data frame gives the dates of 191 explosions in coal mines which
-resulted in 10 or more fatalities. The time span of the data is from
-March 15, 1851 until March 22 1962.
+   The ``coal`` data frame has 191 rows and 1 columns.
 
-Usage
-~~~~~
+   This data frame gives the dates of 191 explosions in coal mines which
+   resulted in 10 or more fatalities. The time span of the data is from
+   March 15, 1851 until March 22 1962.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   coal
+   ::
 
-Format
-~~~~~~
+      coal
 
-This data frame contains the following column:
+   .. rubric:: Format
+      :name: format
 
-``date``
-   The date of the disaster. The integer part of ``date`` gives the
-   year. The day is represented as the fraction of the year that had
-   elapsed on that day.
+   This data frame contains the following column:
 
-Source
-~~~~~~
+   ``date``
+      The date of the disaster. The integer part of ``date`` gives the
+      year. The day is represented as the fraction of the year that had
+      elapsed on that day.
 
-The data were obtained from
+   .. rubric:: Source
+      :name: source
 
-Hand, D.J., Daly, F., Lunn, A.D., McConway, K.J. and Ostrowski, E.
-(1994) *A Handbook of Small Data Sets*, Chapman and Hall.
+   The data were obtained from
 
-References
-~~~~~~~~~~
+   Hand, D.J., Daly, F., Lunn, A.D., McConway, K.J. and Ostrowski, E.
+   (1994) *A Handbook of Small Data Sets*, Chapman and Hall.
 
-Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-Application*. Cambridge University Press.
+   .. rubric:: References
+      :name: references
 
-Jarrett, R.G. (1979) A note on the intervals between coal-mining
-disasters. *Biometrika*, **66**, 191-193.
+   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
+   Application*. Cambridge University Press.
+
+   Jarrett, R.G. (1979) A note on the intervals between coal-mining
+   disasters. *Biometrika*, **66**, 191-193.

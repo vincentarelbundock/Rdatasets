@@ -1,52 +1,54 @@
-========= ===============
-economics R Documentation
-========= ===============
+.. container::
 
-US economic time series
------------------------
+   ========= ===============
+   economics R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: US economic time series
+      :name: us-economic-time-series
 
-This dataset was produced from US economic time series data available
-from https://fred.stlouisfed.org/. ``economics`` is in "wide" format,
-``economics_long`` is in "long" format.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This dataset was produced from US economic time series data available
+   from https://fred.stlouisfed.org/. ``economics`` is in "wide" format,
+   ``economics_long`` is in "long" format.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   economics
+   ::
 
-   economics_long
+      economics
 
-Format
-~~~~~~
+      economics_long
 
-A data frame with 574 rows and 6 variables:
+   .. rubric:: Format
+      :name: format
 
-date
-   Month of data collection
+   A data frame with 574 rows and 6 variables:
 
-pce
-   personal consumption expenditures, in billions of dollars,
-   https://fred.stlouisfed.org/series/PCE
+   date
+      Month of data collection
 
-pop
-   total population, in thousands,
-   https://fred.stlouisfed.org/series/POP
+   pce
+      personal consumption expenditures, in billions of dollars,
+      https://fred.stlouisfed.org/series/PCE
 
-psavert
-   personal savings rate, https://fred.stlouisfed.org/series/PSAVERT/
+   pop
+      total population, in thousands,
+      https://fred.stlouisfed.org/series/POP
 
-uempmed
-   median duration of unemployment, in weeks,
-   https://fred.stlouisfed.org/series/UEMPMED
+   psavert
+      personal savings rate, https://fred.stlouisfed.org/series/PSAVERT/
 
-unemploy
-   number of unemployed in thousands,
-   https://fred.stlouisfed.org/series/UNEMPLOY
+   uempmed
+      median duration of unemployment, in weeks,
+      https://fred.stlouisfed.org/series/UEMPMED
 
-An object of class ``tbl_df`` (inherits from ``tbl``, ``data.frame``)
-with 2870 rows and 4 columns.
+   unemploy
+      number of unemployed in thousands,
+      https://fred.stlouisfed.org/series/UNEMPLOY
+
+   An object of class ``tbl_df`` (inherits from ``tbl``, ``data.frame``)
+   with 2870 rows and 4 columns.

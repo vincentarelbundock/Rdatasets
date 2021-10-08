@@ -1,69 +1,71 @@
-===== ===============
-nwtco R Documentation
-===== ===============
+.. container::
 
-Data from the National Wilm's Tumor Study
------------------------------------------
+   ===== ===============
+   nwtco R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from the National Wilm's Tumor Study
+      :name: data-from-the-national-wilms-tumor-study
 
-Measurement error example. Tumor histology predicts survival, but
-prediction is stronger with central lab histology than with the local
-institution determination.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Measurement error example. Tumor histology predicts survival, but
+   prediction is stronger with central lab histology than with the local
+   institution determination.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   nwtco
-   data(nwtco, package="survival")
+   ::
 
-Format
-~~~~~~
+      nwtco
+      data(nwtco, package="survival")
 
-A data frame with 4028 observations on the following 9 variables.
+   .. rubric:: Format
+      :name: format
 
-``seqno``
-   id number
+   A data frame with 4028 observations on the following 9 variables.
 
-``instit``
-   Histology from local institution
+   ``seqno``
+      id number
 
-``histol``
-   Histology from central lab
+   ``instit``
+      Histology from local institution
 
-``stage``
-   Disease stage
+   ``histol``
+      Histology from central lab
 
-``study``
-   study
+   ``stage``
+      Disease stage
 
-``rel``
-   indicator for relapse
+   ``study``
+      study
 
-``edrel``
-   time to relapse
+   ``rel``
+      indicator for relapse
 
-``age``
-   age in months
+   ``edrel``
+      time to relapse
 
-``in.subcohort``
-   Included in the subcohort for the example in the paper
+   ``age``
+      age in months
 
-References
-~~~~~~~~~~
+   ``in.subcohort``
+      Included in the subcohort for the example in the paper
 
-NE Breslow and N Chatterjee (1999), Design and analysis of two-phase
-studies with binary outcome applied to Wilms tumour prognosis. *Applied
-Statistics* **48**, 457–68.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   NE Breslow and N Chatterjee (1999), Design and analysis of two-phase
+   studies with binary outcome applied to Wilms tumour prognosis.
+   *Applied Statistics* **48**, 457–68.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   with(nwtco, table(instit,histol))
-   anova(coxph(Surv(edrel,rel)~histol+instit,data=nwtco))
-   anova(coxph(Surv(edrel,rel)~instit+histol,data=nwtco))
+   ::
+
+      with(nwtco, table(instit,histol))
+      anova(coxph(Surv(edrel,rel)~histol+instit,data=nwtco))
+      anova(coxph(Surv(edrel,rel)~instit+histol,data=nwtco))

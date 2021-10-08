@@ -1,69 +1,72 @@
-======== ===============
-Macrodat R Documentation
-======== ===============
+.. container::
 
-Macroeconomic Time Series for the United States
------------------------------------------------
+   ======== ===============
+   Macrodat R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Macroeconomic Time Series for the United States
+      :name: macroeconomic-time-series-for-the-united-states
 
-quarterly observations from 1959-1 to 2000-4
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 168
+   quarterly observations from 1959-1 to 2000-4
 
-*observation* : country
+   *number of observations* : 168
 
-*country* : United States
+   *observation* : country
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Macrodat)
+   ::
 
-Format
-~~~~~~
+      data(Macrodat)
 
-A time series containing :
+   .. rubric:: Format
+      :name: format
 
-lhur
-   unemployment rate (average of months in quarter)
+   A time series containing :
 
-punew
-   CPI (Average of Months in Quarter)
+   lhur
+      unemployment rate (average of months in quarter)
 
-fyff
-   federal funds interest rate (last month in quarter)
+   punew
+      CPI (Average of Months in Quarter)
 
-fygm3
-   3 month treasury bill interest rate (last month in quarter)
+   fyff
+      federal funds interest rate (last month in quarter)
 
-fygt1
-   1 year treasury bond interest rate (last month in quarter)
+   fygm3
+      3 month treasury bill interest rate (last month in quarter)
 
-exruk
-   dollar / Pound exchange rate (last month in quarter)
+   fygt1
+      1 year treasury bond interest rate (last month in quarter)
 
-gdpjp
-   real GDP for Japan
+   exruk
+      dollar / Pound exchange rate (last month in quarter)
 
-Source
-~~~~~~
+   gdpjp
+      real GDP for Japan
 
-Bureau of Labor Statistics, OECD, Federal Reserve.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Bureau of Labor Statistics, OECD, Federal Reserve.
 
-Stock, James H. and Mark W. Watson (2003) *Introduction to
-Econometrics*, Addison-Wesley Educational Publishers, chapter 12 and 14.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Stock, James H. and Mark W. Watson (2003) *Introduction to
+   Econometrics*, Addison-Wesley Educational Publishers, chapter 12 and
+   14.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
+
+   ``Index.Time.Series``

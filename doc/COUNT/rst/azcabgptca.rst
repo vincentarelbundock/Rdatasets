@@ -1,74 +1,77 @@
-========== ===============
-azcabgptca R Documentation
-========== ===============
+.. container::
 
-azcabgptca
-----------
+   ========== ===============
+   azcabgptca R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: azcabgptca
+      :name: azcabgptca
 
-Random subset of the 1991 Arizona Medicare data for patients
-hospitalized subsequent to undergoing a CABG (DRGs 106, 107) or PTCA
-(DRG 112) cardiovascular procedure.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Random subset of the 1991 Arizona Medicare data for patients
+   hospitalized subsequent to undergoing a CABG (DRGs 106, 107) or PTCA
+   (DRG 112) cardiovascular procedure.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(azcabgptca)
+   ::
 
-Format
-~~~~~~
+      data(azcabgptca)
 
-A data frame with 1959 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``died``
-   systolic blood pressure of subject
+   A data frame with 1959 observations on the following 6 variables.
 
-``procedure``
-   1=CABG; 0=PTCA
+   ``died``
+      systolic blood pressure of subject
 
-``gender``
-   1=male; 0=female
+   ``procedure``
+      1=CABG; 0=PTCA
 
-``age``
-   age of subject
+   ``gender``
+      1=male; 0=female
 
-``los``
-   hospital length of stay
+   ``age``
+      age of subject
 
-``type``
-   1=emerg/urgent; 0=elective
+   ``los``
+      hospital length of stay
 
-Details
-~~~~~~~
+   ``type``
+      1=emerg/urgent; 0=elective
 
-azcabgptca is saved as a data frame.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   azcabgptca is saved as a data frame.
 
-Hilbe, Negative Binomial Regression, 2nd ed, Cambridge Univ Press
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Hilbe, Negative Binomial Regression, 2nd ed, Cambridge Univ Press
 
-Hilbe, Joseph M (2014), Modeling Count Data, Cambridge University Press
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Hilbe, Joseph M (2014), Modeling Count Data, Cambridge University
+   Press
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   data(azcabgptca); attach(azcabgptca)
-   table(los); table(procedure, type); table(los, procedure)
-   summary(los)
-   summary(c91a <- glm(los ~ procedure+ type, family=poisson, data=azcabgptca))
-   modelfit(c91a)
-   summary(c91b <- glm(los ~ procedure+ type, family=quasipoisson, data=azcabgptca))
-   modelfit(c91b)
-   library(sandwich)
-   sqrt(diag(vcovHC(c91a, type="HC0")))
+      data(azcabgptca); attach(azcabgptca)
+      table(los); table(procedure, type); table(los, procedure)
+      summary(los)
+      summary(c91a <- glm(los ~ procedure+ type, family=poisson, data=azcabgptca))
+      modelfit(c91a)
+      summary(c91b <- glm(los ~ procedure+ type, family=quasipoisson, data=azcabgptca))
+      modelfit(c91b)
+      library(sandwich)
+      sqrt(diag(vcovHC(c91a, type="HC0")))

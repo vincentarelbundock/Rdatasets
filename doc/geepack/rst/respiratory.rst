@@ -1,77 +1,81 @@
-=========== ===============
-respiratory R Documentation
-=========== ===============
+.. container::
 
-Data from a clinical trial comparing two treatments for a respiratory illness
------------------------------------------------------------------------------
+   =========== ===============
+   respiratory R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from a clinical trial comparing two treatments for a
+      respiratory illness
+      :name: data-from-a-clinical-trial-comparing-two-treatments-for-a-respiratory-illness
 
-The data are from a clinical trial of patients with respiratory illness,
-where 111 patients from two different clinics were randomized to receive
-either placebo or an active treatment. Patients were examined at
-baseline and at four visits during treatment. The respiratory status
-(categorized as 1 = good, 0 = poor) was determined at each visit.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The data are from a clinical trial of patients with respiratory
+   illness, where 111 patients from two different clinics were
+   randomized to receive either placebo or an active treatment. Patients
+   were examined at baseline and at four visits during treatment. The
+   respiratory status (categorized as 1 = good, 0 = poor) was determined
+   at each visit.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   respiratory
+   ::
 
-Format
-~~~~~~
+      respiratory
 
-A data frame with 444 observations on the following 8 variables.
+   .. rubric:: Format
+      :name: format
 
-center
-   a numeric vector
+   A data frame with 444 observations on the following 8 variables.
 
-id
-   a numeric vector
+   center
+      a numeric vector
 
-treat
-   treatment or placebo
+   id
+      a numeric vector
 
-sex
-   M or F
+   treat
+      treatment or placebo
 
-age
-   in years at baseline
+   sex
+      M or F
 
-baseline
-   resporatory status at baseline
+   age
+      in years at baseline
 
-visit
-   id of each of four visits
+   baseline
+      resporatory status at baseline
 
-outcome
-   respiratory status at each visit
+   visit
+      id of each of four visits
 
-Examples
-~~~~~~~~
+   outcome
+      respiratory status at each visit
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   data(respiratory)
-   data(respiratory, package="geepack")
-   respiratory$center <- factor(respiratory$center)
-   head(respiratory)
+      data(respiratory)
+      data(respiratory, package="geepack")
+      respiratory$center <- factor(respiratory$center)
+      head(respiratory)
 
-   m1 <- glm(outcome ~ center + treat + age + baseline, data=respiratory,                
-             family=binomial())                                                          
-   gee.ind <- geeglm(outcome ~ center + treat + age + baseline, data=respiratory, id=id, 
-             family=binomial(), corstr="independence")                                   
-   gee.exc <- geeglm(outcome ~ center + treat + age + baseline, data=respiratory, id=id, 
-                family=binomial(), corstr="exchangeable")                                
-   gee.uns <- geeglm(outcome ~ center + treat + age + baseline, data=respiratory, id=id, 
-                family=binomial(), corstr="unstructured")                                
-   gee.ar1 <- geeglm(outcome ~ center + treat + age + baseline, data=respiratory, id=id, 
-                family=binomial(), corstr="ar1")                                         
+      m1 <- glm(outcome ~ center + treat + age + baseline, data=respiratory,                
+                family=binomial())                                                          
+      gee.ind <- geeglm(outcome ~ center + treat + age + baseline, data=respiratory, id=id, 
+                family=binomial(), corstr="independence")                                   
+      gee.exc <- geeglm(outcome ~ center + treat + age + baseline, data=respiratory, id=id, 
+                   family=binomial(), corstr="exchangeable")                                
+      gee.uns <- geeglm(outcome ~ center + treat + age + baseline, data=respiratory, id=id, 
+                   family=binomial(), corstr="unstructured")                                
+      gee.ar1 <- geeglm(outcome ~ center + treat + age + baseline, data=respiratory, id=id, 
+                   family=binomial(), corstr="ar1")                                         
 
-   mlist <- list(gee.ind, gee.exc, gee.uns, gee.ar1)
-   do.call(rbind, lapply(mlist, QIC))
-   lapply(mlist, tidy)
+      mlist <- list(gee.ind, gee.exc, gee.uns, gee.ar1)
+      do.call(rbind, lapply(mlist, QIC))
+      lapply(mlist, tidy)

@@ -1,88 +1,90 @@
-=== ===============
-lbw R Documentation
-=== ===============
+.. container::
 
-lbw
----
+   === ===============
+   lbw R Documentation
+   === ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: lbw
+      :name: lbw
 
-The data come to us from Hosmer and Lemeshow (2000). Called the low
-birth weight (lbw) data, the response is a binary variable, low, which
-indicates whether the birth weight of a baby is under 2500g (low=1), or
-over (low=0).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The data come to us from Hosmer and Lemeshow (2000). Called the low
+   birth weight (lbw) data, the response is a binary variable, low,
+   which indicates whether the birth weight of a baby is under 2500g
+   (low=1), or over (low=0).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(lbw)
+   ::
 
-Format
-~~~~~~
+      data(lbw)
 
-A data frame with 189 observations on the following 10 variables.
+   .. rubric:: Format
+      :name: format
 
-``low``
-   1=low birthweight baby; 0=norml weight
+   A data frame with 189 observations on the following 10 variables.
 
-``smoke``
-   1=history of mother smoking; 0=mother nonsmoker
+   ``low``
+      1=low birthweight baby; 0=norml weight
 
-``race``
-   categorical 1-3: 1=white; 2-=black; 3=other
+   ``smoke``
+      1=history of mother smoking; 0=mother nonsmoker
 
-``age``
-   age of mother: 14-45
+   ``race``
+      categorical 1-3: 1=white; 2-=black; 3=other
 
-``lwt``
-   weight (lbs) at last menstrual period: 80-250 lbs
+   ``age``
+      age of mother: 14-45
 
-``ptl``
-   number of false of premature labors: 0-3
+   ``lwt``
+      weight (lbs) at last menstrual period: 80-250 lbs
 
-``ht``
-   1=history of hypertension; 0 =no hypertension
+   ``ptl``
+      number of false of premature labors: 0-3
 
-``ui``
-   1=uterine irritability; 0 no irritability
+   ``ht``
+      1=history of hypertension; 0 =no hypertension
 
-``ftv``
-   number of physician visits in 1st trimester: 0-6
+   ``ui``
+      1=uterine irritability; 0 no irritability
 
-``bwt``
-   birth weight in grams: 709 - 4990 gr
+   ``ftv``
+      number of physician visits in 1st trimester: 0-6
 
-Details
-~~~~~~~
+   ``bwt``
+      birth weight in grams: 709 - 4990 gr
 
-lbw is saved as a data frame. Count models can use ftv as a response
-variable, or convert it to grouped format
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   lbw is saved as a data frame. Count models can use ftv as a response
+   variable, or convert it to grouped format
 
-Hosmer, D and S. Lemeshow (2000), Applied Logistic Regression, Wiley
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Hosmer, D and S. Lemeshow (2000), Applied Logistic Regression, Wiley
 
-Hilbe, Joseph M (2007, 2011), Negative Binomial Regression, Cambridge
-University Press Hilbe, Joseph M (2009), Logistic Regression Models,
-Chapman & Hall/CRC
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Hilbe, Joseph M (2007, 2011), Negative Binomial Regression, Cambridge
+   University Press Hilbe, Joseph M (2009), Logistic Regression Models,
+   Chapman & Hall/CRC
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(lbw)
-   glmbwp <- glm(ftv ~ low + smoke + factor(race), family=poisson, data=lbw)
-   summary(glmbwp)
-   exp(coef(glmbwp))
-   library(MASS)
-   glmbwnb <- glm.nb(ftv ~ low + smoke + factor(race), data=lbw)
-   summary(glmbwnb)
-   exp(coef(glmbwnb))
+   ::
+
+      data(lbw)
+      glmbwp <- glm(ftv ~ low + smoke + factor(race), family=poisson, data=lbw)
+      summary(glmbwp)
+      exp(coef(glmbwp))
+      library(MASS)
+      glmbwnb <- glm.nb(ftv ~ low + smoke + factor(race), data=lbw)
+      summary(glmbwnb)
+      exp(coef(glmbwnb))

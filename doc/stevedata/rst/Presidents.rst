@@ -1,40 +1,42 @@
-========== ===============
-Presidents R Documentation
-========== ===============
+.. container::
 
-U.S. Presidents and Their Terms in Office
------------------------------------------
+   ========== ===============
+   Presidents R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: U.S. Presidents and Their Terms in Office
+      :name: u.s.-presidents-and-their-terms-in-office
 
-This should be self-evident. Here are all U.S. presidents who have
-completed their terms in office (i.e. excluding the current one).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This should be self-evident. Here are all U.S. presidents who have
+   completed their terms in office (i.e. excluding the current one).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Presidents
+   ::
 
-Format
-~~~~~~
+      Presidents
 
-A data frame with 45 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``president``
-   the president
+   A data frame with 45 observations on the following 3 variables.
 
-``start``
-   the start date of the term, as a date
+   ``president``
+      the president
 
-``end``
-   the end date of the term, as a date
+   ``start``
+      the start date of the term, as a date
 
-Details
-~~~~~~~
+   ``end``
+      the end date of the term, as a date
 
-I scraped this from https://www.presidentsusa.net/presvplist.html. Data
-frame is capital-P "Presidents" to avoid a conflict with the
-``presidents`` data frame from the ``datasets`` package.
+   .. rubric:: Details
+      :name: details
+
+   I scraped this from https://www.presidentsusa.net/presvplist.html.
+   Data frame is capital-P "Presidents" to avoid a conflict with the
+   ``presidents`` data frame from the ``datasets`` package.

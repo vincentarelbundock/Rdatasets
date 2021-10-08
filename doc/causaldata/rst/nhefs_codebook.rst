@@ -1,40 +1,43 @@
-============== ===============
-nhefs_codebook R Documentation
-============== ===============
+.. container::
 
-NHEFS Codebook
---------------
+   ============== ===============
+   nhefs_codebook R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: NHEFS Codebook
+      :name: nhefs-codebook
 
-``nhefs_codebook`` is the codebook for ``nhefs`` and ``nhefs_complete``.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   ``nhefs_codebook`` is the codebook for ``nhefs`` and
+   ``nhefs_complete``.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   nhefs_codebook
+   ::
 
-Format
-~~~~~~
+      nhefs_codebook
 
-A data frame with 64 rows and 2 variables.
+   .. rubric:: Format
+      :name: format
 
-variable
-   The variable being described
+   A data frame with 64 rows and 2 variables.
 
-description
-   The variable description
+   variable
+      The variable being described
 
-Source
-~~~~~~
+   description
+      The variable description
 
-https://wwwn.cdc.gov/nchs/nhanes/nhefs/
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   https://wwwn.cdc.gov/nchs/nhanes/nhefs/
 
-Hernán and Robins. Causal Inference.
-https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
+   .. rubric:: References
+      :name: references
+
+   Hernán and Robins. Causal Inference.
+   https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/

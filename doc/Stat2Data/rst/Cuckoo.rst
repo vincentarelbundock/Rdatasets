@@ -1,48 +1,51 @@
-====== ===============
-Cuckoo R Documentation
-====== ===============
+.. container::
 
-Measurements of Cuckoo Eggs
----------------------------
+   ====== ===============
+   Cuckoo R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Measurements of Cuckoo Eggs
+      :name: measurements-of-cuckoo-eggs
 
-Lengths of cuckoo eggs laid in other birds' nests
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Lengths of cuckoo eggs laid in other birds' nests
 
-A data frame with 120 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-+------------+--------------------------------------------------------+
-| ``Bird``   | Type of bird nest: ``mdw_pipit`` (meadow pipit),       |
-|            | ``tree_pipit``,                                        |
-+------------+--------------------------------------------------------+
-|            | ``hedge_sparrow``, ``robin``, ``wagtail``, or ``wren`` |
-+------------+--------------------------------------------------------+
-| ``Length`` | Cuckoo egg length (in mm)                              |
-+------------+--------------------------------------------------------+
-|            |                                                        |
-+------------+--------------------------------------------------------+
+   A data frame with 120 observations on the following 2 variables.
 
-Details
-~~~~~~~
+   +------------+--------------------------------------------------------+
+   | ``Bird``   | Type of bird nest: ``mdw_pipit`` (meadow pipit),       |
+   |            | ``tree_pipit``,                                        |
+   +------------+--------------------------------------------------------+
+   |            | ``hedge_sparrow``, ``robin``, ``wagtail``, or ``wren`` |
+   +------------+--------------------------------------------------------+
+   | ``Length`` | Cuckoo egg length (in mm)                              |
+   +------------+--------------------------------------------------------+
+   |            |                                                        |
+   +------------+--------------------------------------------------------+
 
-Cuckoos are knows to lay their eggs in the nests of other (host) birds.
-The eggs are then adopted and hatched by the host birds. The data give
-the lengths of cuckoo eggs found in nests of various other bird species.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Cuckoos are knows to lay their eggs in the nests of other (host)
+   birds. The eggs are then adopted and hatched by the host birds. The
+   data give the lengths of cuckoo eggs found in nests of various other
+   bird species.
 
-Downloaded from DASL at
-http://lib.stat.cmu.edu/DASL/Datafiles/cuckoodat.html
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Downloaded from DASL at
+   http://lib.stat.cmu.edu/DASL/Datafiles/cuckoodat.html
 
-"The Egg of Cuculus Canorus. An Enquiry into the Dimensions of the
-Cuckoo's Egg and the Relation of the Variations to the Size of the Eggs
-of the Foster-Parent, with Notes on Coloration", by Oswald H. Latter,
-Biometrika, Vol. 1, No. 2 (Jan., 1902), pp. 164-176.
+   .. rubric:: References
+      :name: references
+
+   "The Egg of Cuculus Canorus. An Enquiry into the Dimensions of the
+   Cuckoo's Egg and the Relation of the Variations to the Size of the
+   Eggs of the Foster-Parent, with Notes on Coloration", by Oswald H.
+   Latter, Biometrika, Vol. 1, No. 2 (Jan., 1902), pp. 164-176.

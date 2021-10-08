@@ -1,58 +1,60 @@
-====== ===============
-Saxony R Documentation
-====== ===============
+.. container::
 
-Families in Saxony
-------------------
+   ====== ===============
+   Saxony R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Families in Saxony
+      :name: families-in-saxony
 
-Data from Geissler, cited in Sokal & Rohlf (1969) and Lindsey (1995) on
-gender distributions in families in Saxony in the 19th century.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from Geissler, cited in Sokal & Rohlf (1969) and Lindsey (1995)
+   on gender distributions in families in Saxony in the 19th century.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("Saxony")
+   ::
 
-Format
-~~~~~~
+      data("Saxony")
 
-A 1-way table giving the number of male children in 6115 families of
-size 12. The variable and its levels are
+   .. rubric:: Format
+      :name: format
 
-== ====== =============
-No Name   Levels
-1  nMales 0, 1, ..., 12
-\         
-== ====== =============
+   A 1-way table giving the number of male children in 6115 families of
+   size 12. The variable and its levels are
 
-Source
-~~~~~~
+   == ====== =============
+   No Name   Levels
+   1  nMales 0, 1, ..., 12
+   \         
+   == ====== =============
 
-M. Friendly (2000), Visualizing Categorical Data, pages 40–42.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   M. Friendly (2000), Visualizing Categorical Data, pages 40–42.
 
-J. K. Lindsey (1995), *Analysis of Frequency and Count Data*. Oxford
-University Press, Oxford, UK.
+   .. rubric:: References
+      :name: references
 
-R. R. Sokal & F. J. Rohlf (1969), *Biometry. The Principles and Practice
-of Statistics*. W. H. Freeman, San Francisco, CA.
+   J. K. Lindsey (1995), *Analysis of Frequency and Count Data*. Oxford
+   University Press, Oxford, UK.
 
-M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute, Cary,
-NC.
+   R. R. Sokal & F. J. Rohlf (1969), *Biometry. The Principles and
+   Practice of Statistics*. W. H. Freeman, San Francisco, CA.
 
-Examples
-~~~~~~~~
+   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+   Cary, NC.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("Saxony")
-   gf <- goodfit(Saxony, type = "binomial")
-   summary(gf)
-   plot(gf)
+   ::
+
+      data("Saxony")
+      gf <- goodfit(Saxony, type = "binomial")
+      summary(gf)
+      plot(gf)

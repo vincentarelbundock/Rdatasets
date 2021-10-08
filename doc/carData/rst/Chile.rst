@@ -1,67 +1,69 @@
-===== ===============
-Chile R Documentation
-===== ===============
+.. container::
 
-Voting Intentions in the 1988 Chilean Plebiscite
-------------------------------------------------
+   ===== ===============
+   Chile R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Voting Intentions in the 1988 Chilean Plebiscite
+      :name: voting-intentions-in-the-1988-chilean-plebiscite
 
-The ``Chile`` data frame has 2700 rows and 8 columns. The data are from
-a national survey conducted in April and May of 1988 by FLACSO/Chile.
-There are some missing data.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Chile`` data frame has 2700 rows and 8 columns. The data are
+   from a national survey conducted in April and May of 1988 by
+   FLACSO/Chile. There are some missing data.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Chile
+   ::
 
-Format
-~~~~~~
+      Chile
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-region
-   A factor with levels: ``C``, Central; ``M``, Metropolitan Santiago
-   area; ``N``, North; ``S``, South; ``SA``, city of Santiago.
+   This data frame contains the following columns:
 
-population
-   Population size of respondent's community.
+   region
+      A factor with levels: ``C``, Central; ``M``, Metropolitan Santiago
+      area; ``N``, North; ``S``, South; ``SA``, city of Santiago.
 
-sex
-   A factor with levels: ``F``, female; ``M``, male.
+   population
+      Population size of respondent's community.
 
-age
-   in years.
+   sex
+      A factor with levels: ``F``, female; ``M``, male.
 
-education
-   A factor with levels (note: out of order): ``P``, Primary; ``PS``,
-   Post-secondary; ``S``, Secondary.
+   age
+      in years.
 
-income
-   Monthly income, in Pesos.
+   education
+      A factor with levels (note: out of order): ``P``, Primary; ``PS``,
+      Post-secondary; ``S``, Secondary.
 
-statusquo
-   Scale of support for the status-quo.
+   income
+      Monthly income, in Pesos.
 
-vote
-   a factor with levels: ``A``, will abstain; ``N``, will vote no
-   (against Pinochet); ``U``, undecided; ``Y``, will vote yes (for
-   Pinochet).
+   statusquo
+      Scale of support for the status-quo.
 
-Source
-~~~~~~
+   vote
+      a factor with levels: ``A``, will abstain; ``N``, will vote no
+      (against Pinochet); ``U``, undecided; ``Y``, will vote yes (for
+      Pinochet).
 
-Personal communication from FLACSO/Chile.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Personal communication from FLACSO/Chile.
 
-Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-Models*, Third Edition. Sage.
+   .. rubric:: References
+      :name: references
 
-Fox, J. and Weisberg, S. (2019) *An R Companion to Applied Regression*,
-Third Edition, Sage.
+   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+   Models*, Third Edition. Sage.
+
+   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+   Regression*, Third Edition, Sage.

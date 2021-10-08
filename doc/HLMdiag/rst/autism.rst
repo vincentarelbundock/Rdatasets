@@ -1,67 +1,69 @@
-====== ===============
-autism R Documentation
-====== ===============
+.. container::
 
-Autism data
------------
+   ====== ===============
+   autism R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Autism data
+      :name: autism-data
 
-Data from a prospective longitudinal study following 214 children
-between the ages of 2 and 13 who were diagnosed with either autism
-spectrum disorder or non-spectrum developmental delays at age 2.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from a prospective longitudinal study following 214 children
+   between the ages of 2 and 13 who were diagnosed with either autism
+   spectrum disorder or non-spectrum developmental delays at age 2.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(autism)
+   ::
 
-Format
-~~~~~~
+      data(autism)
 
-A data frame with 604 observation on the following 7 variables:
+   .. rubric:: Format
+      :name: format
 
-childid
-   Child ID.
+   A data frame with 604 observation on the following 7 variables:
 
-sicdegp
-   Sequenced Inventory of Communication Development group (an assessment
-   of expressive language development) - a factor. Levels are ``low``,
-   ``med``, and ``high``.
+   childid
+      Child ID.
 
-age2
-   Age (in years) centered around age 2 (age at diagnosis).
+   sicdegp
+      Sequenced Inventory of Communication Development group (an
+      assessment of expressive language development) - a factor. Levels
+      are ``low``, ``med``, and ``high``.
 
-vsae
-   Vineland Socialization Age Equivalent
+   age2
+      Age (in years) centered around age 2 (age at diagnosis).
 
-gender
-   Child's gender - a factor. Levels are ``male`` and ``female``.
+   vsae
+      Vineland Socialization Age Equivalent
 
-race
-   Child's race - a factor. Levels are ``white`` and ``nonwhite``.
+   gender
+      Child's gender - a factor. Levels are ``male`` and ``female``.
 
-bestest2
-   Diagnosis at age 2 - a factor. Levels are ``autism`` and ``pdd``
-   (pervasive developmental disorder).
+   race
+      Child's race - a factor. Levels are ``white`` and ``nonwhite``.
 
-Source
-~~~~~~
+   bestest2
+      Diagnosis at age 2 - a factor. Levels are ``autism`` and ``pdd``
+      (pervasive developmental disorder).
 
-http://www-personal.umich.edu/~kwelch/
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   http://www-personal.umich.edu/~kwelch/
 
-Anderson, D. K., Lord, C., Risi, S., DiLavore, P. S., Shulman, C.,
-Thurm, A., et al. (2007). Patterns of growth in verbal abilities among
-children with autism spectrum disorder. *Journal of Consulting and
-Clinical Psychology*, **75**\ (4), 594–604.
+   .. rubric:: References
+      :name: references
 
-Anderson, D. K., Oti, R. S., Lord, C., & Welch, K. (2009). Patterns of
-Growth in Adaptive Social Abilities Among Children with Autism Spectrum
-Disorders. *Journal of Abnormal Child Psychology*, **37**\ (7),
-1019–1034.
+   Anderson, D. K., Lord, C., Risi, S., DiLavore, P. S., Shulman, C.,
+   Thurm, A., et al. (2007). Patterns of growth in verbal abilities
+   among children with autism spectrum disorder. *Journal of Consulting
+   and Clinical Psychology*, **75**\ (4), 594–604.
+
+   Anderson, D. K., Oti, R. S., Lord, C., & Welch, K. (2009). Patterns
+   of Growth in Adaptive Social Abilities Among Children with Autism
+   Spectrum Disorders. *Journal of Abnormal Child Psychology*,
+   **37**\ (7), 1019–1034.

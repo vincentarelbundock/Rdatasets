@@ -1,45 +1,47 @@
-======= ===============
-turnips R Documentation
-======= ===============
+.. container::
 
-Turnip prices in Animal Crossing (New Horizons)
------------------------------------------------
+   ======= ===============
+   turnips R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Turnip prices in Animal Crossing (New Horizons)
+      :name: turnip-prices-in-animal-crossing-new-horizons
 
-A data set on turnip prices from my experience with Animal Crossing (New
-Horizons)
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A data set on turnip prices from my experience with Animal Crossing
+   (New Horizons)
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   turnips
+   ::
 
-Format
-~~~~~~
+      turnips
 
-A data frame with the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``date``
-   a date
+   A data frame with the following 3 variables.
 
-``time``
-   a character vector referring to the particular time period of
-   observation
+   ``date``
+      a date
 
-``price``
-   a numeric vector for the price of turnips, in bells
+   ``time``
+      a character vector referring to the particular time period of
+      observation
 
-Details
-~~~~~~~
+   ``price``
+      a numeric vector for the price of turnips, in bells
 
-Sunday prices are set for purchase and do not fluctuate. Tommy and Timmy
-do not accept turnips on Sunday either. Daily prices fluctuate both at
-opening on Nook's Cranny and at noon. This amounts to three time periods
-in the data. "5:00 a.m." is reserved only for Sunday purchases (i.e.
-when Daisy Mae arrives on the island). 8:00 a.m. is the morning price
-because that is when Nook's Cranny opens. 12:00 p.m. is when the price
-changes for the day.
+   .. rubric:: Details
+      :name: details
+
+   Sunday prices are set for purchase and do not fluctuate. Tommy and
+   Timmy do not accept turnips on Sunday either. Daily prices fluctuate
+   both at opening on Nook's Cranny and at noon. This amounts to three
+   time periods in the data. "5:00 a.m." is reserved only for Sunday
+   purchases (i.e. when Daisy Mae arrives on the island). 8:00 a.m. is
+   the morning price because that is when Nook's Cranny opens. 12:00
+   p.m. is when the price changes for the day.

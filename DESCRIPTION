@@ -24,6 +24,7 @@ Imports:
     carData,
     causaldata,
     cluster,
+    crch,
     COUNT,
     DAAG,
     datasets,

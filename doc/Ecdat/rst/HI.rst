@@ -1,89 +1,91 @@
-== ===============
-HI R Documentation
-== ===============
+.. container::
 
-Health Insurance and Hours Worked By Wives
-------------------------------------------
+   == ===============
+   HI R Documentation
+   == ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Health Insurance and Hours Worked By Wives
+      :name: health-insurance-and-hours-worked-by-wives
 
-a cross-section from 1993
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 22272
+   a cross-section from 1993
 
-*observation* : individuals
+   *number of observations* : 22272
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(HI)
+   ::
 
-Format
-~~~~~~
+      data(HI)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-whrswk
-   hours worked per week by wife
+   A dataframe containing :
 
-hhi
-   wife covered by husband's HI ?
+   whrswk
+      hours worked per week by wife
 
-whi
-   wife has HI thru her job ?
+   hhi
+      wife covered by husband's HI ?
 
-hhi2
-   husband has HI thru own job ?
+   whi
+      wife has HI thru her job ?
 
-education
-   a factor with levels, "<9years", "9-11years", "12years",
-   "13-15years", "16years", ">16years"
+   hhi2
+      husband has HI thru own job ?
 
-race
-   one of white, black, other
+   education
+      a factor with levels, "<9years", "9-11years", "12years",
+      "13-15years", "16years", ">16years"
 
-hispanic
-   Hispanic ?
+   race
+      one of white, black, other
 
-experience
-   years of potential work experience
+   hispanic
+      Hispanic ?
 
-kidslt6
-   number of kids under age of 6
+   experience
+      years of potential work experience
 
-kids618
-   number of kids 6–18 years old
+   kidslt6
+      number of kids under age of 6
 
-husby
-   husband's income in thousands of dollars
+   kids618
+      number of kids 6–18 years old
 
-region
-   one of ``other``, ``northcentral``, ``south``, ``west``
+   husby
+      husband's income in thousands of dollars
 
-wght
-   sampling weight
+   region
+      one of ``other``, ``northcentral``, ``south``, ``west``
 
-Source
-~~~~~~
+   wght
+      sampling weight
 
-Olson, Craig A. (1998) “A comparison of parametric and semiparametric
-estimates of the effect of spousal health insurance coverage on weekly
-hours worked by wives”, *Journal of Applied Econometrics*, **13(5)**,
-September–October, 543–565.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Olson, Craig A. (1998) “A comparison of parametric and semiparametric
+   estimates of the effect of spousal health insurance coverage on
+   weekly hours worked by wives”, *Journal of Applied Econometrics*,
+   **13(5)**, September–October, 543–565.
 
-Journal of Applied Econometrics data archive :
-http://qed.econ.queensu.ca/jae/.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Journal of Applied Econometrics data archive :
+   http://qed.econ.queensu.ca/jae/.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

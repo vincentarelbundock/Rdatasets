@@ -1,42 +1,44 @@
-==== ===============
-Burt R Documentation
-==== ===============
+.. container::
 
-Fraudulent Data on IQs of Twins Raised Apart
---------------------------------------------
+   ==== ===============
+   Burt R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Fraudulent Data on IQs of Twins Raised Apart
+      :name: fraudulent-data-on-iqs-of-twins-raised-apart
 
-The ``Burt`` data frame has 27 rows and 4 columns. The “data” were
-simply (and notoriously) manufactured. The same data are in the dataset
-“twins" in the ``alr3`` package, but with different labels.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Burt`` data frame has 27 rows and 4 columns. The “data” were
+   simply (and notoriously) manufactured. The same data are in the
+   dataset “twins" in the ``alr3`` package, but with different labels.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Burt
+   ::
 
-Format
-~~~~~~
+      Burt
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-IQbio
-   IQ of twin raised by biological parents
+   This data frame contains the following columns:
 
-IQfoster
-   IQ of twin raised by foster parents
+   IQbio
+      IQ of twin raised by biological parents
 
-class
-   A factor with levels (note: out of order): ``high``; ``low``;
-   ``medium``.
+   IQfoster
+      IQ of twin raised by foster parents
 
-Source
-~~~~~~
+   class
+      A factor with levels (note: out of order): ``high``; ``low``;
+      ``medium``.
 
-Burt, C. (1966) The genetic determination of differences in
-intelligence: A study of monozygotic twins reared together and apart.
-*British Journal of Psychology* **57**, 137–153.
+   .. rubric:: Source
+      :name: source
+
+   Burt, C. (1966) The genetic determination of differences in
+   intelligence: A study of monozygotic twins reared together and apart.
+   *British Journal of Psychology* **57**, 137–153.

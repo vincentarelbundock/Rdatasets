@@ -1,56 +1,59 @@
-======= ===============
-Wrinkle R Documentation
-======= ===============
+.. container::
 
-Moving Wet Objects with Wrinkled Fingers
-----------------------------------------
+   ======= ===============
+   Wrinkle R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Moving Wet Objects with Wrinkled Fingers
+      :name: moving-wet-objects-with-wrinkled-fingers
 
-Results from an experiment to move wet/dry objects with wrinkled/dry
-fingers
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Results from an experiment to move wet/dry objects with wrinkled/dry
+   fingers
 
-A data frame with 80 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-``Participant``
-   Participant ID (``p1`` to ``p20``)
+   A data frame with 80 observations on the following 7 variables.
 
-``Time``
-   Time to move objects (seconds)
+   ``Participant``
+      Participant ID (``p1`` to ``p20``)
 
-``Condition``
-   ``non-wrinkled/dry``, ``non-wrinkled/wet``, ``wrinkled/dry``, or
-   ``wrinkled/wet``
+   ``Time``
+      Time to move objects (seconds)
 
-``Fingers``
-   Status of fingers (``non`` or ``wrinkled``)
+   ``Condition``
+      ``non-wrinkled/dry``, ``non-wrinkled/wet``, ``wrinkled/dry``, or
+      ``wrinkled/wet``
 
-``Objects``
-   Status of objects (``dry`` or ``wet``)
+   ``Fingers``
+      Status of fingers (``non`` or ``wrinkled``)
 
-``WrinkledThenNon``
-   Wrinkled first? (``1``\ =yes or ``1``\ =no)
+   ``Objects``
+      Status of objects (``dry`` or ``wet``)
 
-``DryThenWet``
-   Dry first? (``1``\ =yes or ``1``\ =no)
+   ``WrinkledThenNon``
+      Wrinkled first? (``1``\ =yes or ``1``\ =no)
 
-Details
-~~~~~~~
+   ``DryThenWet``
+      Dry first? (``1``\ =yes or ``1``\ =no)
 
-Each of 20 participants were measured doing a "transfer task" several
-times under each of four conditions. The transfer task was to pick up an
-item with the right hand thumb and index finger, pass the item through a
-small hole and grab it with the left hand, and then put the item into a
-box that had a hole in the lid. Sometimes the participant's fingers were
-wrinkled; sometimes the items were sitting in water.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Each of 20 participants were measured doing a "transfer task" several
+   times under each of four conditions. The transfer task was to pick up
+   an item with the right hand thumb and index finger, pass the item
+   through a small hole and grab it with the left hand, and then put the
+   item into a box that had a hole in the lid. Sometimes the
+   participant's fingers were wrinkled; sometimes the items were sitting
+   in water.
 
-Kareklas, Nettle, and Smulders (2013) "Water-induced finger wrinkles
-improve handling of wet objects", Biology Letters,
-http://dx.doi.org/10.1098/rsbl.2012.0999
+   .. rubric:: Source
+      :name: source
+
+   Kareklas, Nettle, and Smulders (2013) "Water-induced finger wrinkles
+   improve handling of wet objects", Biology Letters,
+   http://dx.doi.org/10.1098/rsbl.2012.0999

@@ -1,54 +1,57 @@
-======================= ===============
-training_bias_reduction R Documentation
-======================= ===============
+.. container::
 
-Simulated data from a job training program for a bias reduction method
-----------------------------------------------------------------------
+   ======================= ===============
+   training_bias_reduction R Documentation
+   ======================= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Simulated data from a job training program for a bias
+      reduction method
+      :name: simulated-data-from-a-job-training-program-for-a-bias-reduction-method
 
-This simulated data is used to demonstrate the bias-reduction method in
-matching as per Abadie and Imbens (2011).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This simulated data is used to demonstrate the bias-reduction method
+   in matching as per Abadie and Imbens (2011).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   training_bias_reduction
+   ::
 
-Format
-~~~~~~
+      training_bias_reduction
 
-A data frame with 8 rows and 4 variables
+   .. rubric:: Format
+      :name: format
 
-Unit
-   Unit ID
+   A data frame with 8 rows and 4 variables
 
-Y
-   Outcome
+   Unit
+      Unit ID
 
-D
-   Treatment
+   Y
+      Outcome
 
-X
-   Matching variable
+   D
+      Treatment
 
-Details
-~~~~~~~
+   X
+      Matching variable
 
-This data is used in the *Matching and Subclassification* chapter of
-*Causal Inference: The Mixtape* by Cunningham.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This data is used in the *Matching and Subclassification* chapter of
+   *Causal Inference: The Mixtape* by Cunningham.
 
-Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-https://mixtape.scunning.com/index.html.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+   https://mixtape.scunning.com/index.html.
 
-Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-https://mixtape.scunning.com/index.html.
+   .. rubric:: References
+      :name: references
+
+   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+   https://mixtape.scunning.com/index.html.

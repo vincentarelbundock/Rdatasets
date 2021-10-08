@@ -1,56 +1,58 @@
-========= ===============
-president R Documentation
-========= ===============
+.. container::
 
-United States Presidental History
----------------------------------
+   ========= ===============
+   president R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: United States Presidental History
+      :name: united-states-presidental-history
 
-Summary of the changes in the president and vice president for the
-United States of America.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Summary of the changes in the president and vice president for the
+   United States of America.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   president
+   ::
 
-Format
-~~~~~~
+      president
 
-A data frame with 67 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-potus
-   President of the United States
+   A data frame with 67 observations on the following 5 variables.
 
-party
-   Political party of the president
+   potus
+      President of the United States
 
-start
-   Start year
+   party
+      Political party of the president
 
-end
-   End year
+   start
+      Start year
 
-vpotus
-   Vice President of the United States
+   end
+      End year
 
-Source
-~~~~~~
+   vpotus
+      Vice President of the United States
 
-Presidents of the United States (table) – infoplease.com (visited: Nov
-2nd, 2010)
+   .. rubric:: Source
+      :name: source
 
-http://www.infoplease.com/ce6/history/A0840075.html
+   Presidents of the United States (table) – infoplease.com (visited:
+   Nov 2nd, 2010)
 
-Examples
-~~~~~~~~
+   http://www.infoplease.com/ce6/history/A0840075.html
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
 
-   president
+      president

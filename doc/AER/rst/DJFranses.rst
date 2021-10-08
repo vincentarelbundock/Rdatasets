@@ -1,48 +1,50 @@
-========= ===============
-DJFranses R Documentation
-========= ===============
+.. container::
 
-Dow Jones Index Data (Franses)
-------------------------------
+   ========= ===============
+   DJFranses R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Dow Jones Index Data (Franses)
+      :name: dow-jones-index-data-franses
 
-Dow Jones index time series computed at the end of the week where week
-is assumed to run from Thursday to Wednesday.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Dow Jones index time series computed at the end of the week where
+   week is assumed to run from Thursday to Wednesday.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("DJFranses")
+   ::
 
-Format
-~~~~~~
+      data("DJFranses")
 
-A weekly univariate time series from 1980(1) to 1994(42).
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A weekly univariate time series from 1980(1) to 1994(42).
 
-Online complements to Franses (1998).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Franses (1998).
 
-Franses, P.H. (1998). *Time Series Models for Business and Economic
-Forecasting*. Cambridge, UK: Cambridge University Press.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Franses, P.H. (1998). *Time Series Models for Business and Economic
+   Forecasting*. Cambridge, UK: Cambridge University Press.
 
-``Franses1998``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Franses1998``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("DJFranses")
-   plot(DJFranses)
+   ::
+
+      data("DJFranses")
+      plot(DJFranses)

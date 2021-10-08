@@ -1,56 +1,58 @@
-====== ===============
-NYSESW R Documentation
-====== ===============
+.. container::
 
-Daily NYSE Composite Index
---------------------------
+   ====== ===============
+   NYSESW R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Daily NYSE Composite Index
+      :name: daily-nyse-composite-index
 
-A daily time series from 1990 to 2005 of the New York Stock Exchange
-composite index.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A daily time series from 1990 to 2005 of the New York Stock Exchange
+   composite index.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("NYSESW")
+   ::
 
-Format
-~~~~~~
+      data("NYSESW")
 
-A daily univariate time series from 1990-01-02 to 2005-11-11 (of class
-``"zoo"`` with ``"Date"`` index).
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A daily univariate time series from 1990-01-02 to 2005-11-11 (of
+   class ``"zoo"`` with ``"Date"`` index).
 
-Online complements to Stock and Watson (2007).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Stock and Watson (2007).
 
-Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*, 2nd
-ed. Boston: Addison Wesley.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
+   2nd ed. Boston: Addison Wesley.
 
-``StockWatson2007``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``StockWatson2007``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## returns
-   data("NYSESW")
-   ret <- 100 * diff(log(NYSESW))
-   plot(ret)
+   ::
 
-   ## Stock and Watson (2007), p. 667, GARCH(1,1) model
-   library("tseries")
-   fm <- garch(coredata(ret))
-   summary(fm)
+      ## returns
+      data("NYSESW")
+      ret <- 100 * diff(log(NYSESW))
+      plot(ret)
+
+      ## Stock and Watson (2007), p. 667, GARCH(1,1) model
+      library("tseries")
+      fm <- garch(coredata(ret))
+      summary(fm)

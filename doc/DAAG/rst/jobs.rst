@@ -1,89 +1,91 @@
-==== ===============
-jobs R Documentation
-==== ===============
+.. container::
 
-Canadian Labour Force Summary Data (1995-96)
---------------------------------------------
+   ==== ===============
+   jobs R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Canadian Labour Force Summary Data (1995-96)
+      :name: canadian-labour-force-summary-data-1995-96
 
-The number of workers in the Canadian labour force broken down by region
-(BC, Alberta, Prairies, Ontario, Quebec, Atlantic) for the 24-month
-period from January, 1995 to December, 1996 (a time when Canada was
-emerging from a deep economic recession).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The number of workers in the Canadian labour force broken down by
+   region (BC, Alberta, Prairies, Ontario, Quebec, Atlantic) for the
+   24-month period from January, 1995 to December, 1996 (a time when
+   Canada was emerging from a deep economic recession).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   jobs
+   ::
 
-Format
-~~~~~~
+      jobs
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-BC
-   monthly labour force counts in British Columbia
+   This data frame contains the following columns:
 
-Alberta
-   monthly labour force counts in Alberta
+   BC
+      monthly labour force counts in British Columbia
 
-Prairies
-   monthly labour force counts in Saskatchewan and Manitoba
+   Alberta
+      monthly labour force counts in Alberta
 
-Ontario
-   monthly labour force counts in Ontario
+   Prairies
+      monthly labour force counts in Saskatchewan and Manitoba
 
-Quebec
-   monthly labour force counts in Quebec
+   Ontario
+      monthly labour force counts in Ontario
 
-Atlantic
-   monthly labour force counts in Newfoundland, Nova Scotia, Prince
-   Edward Island and New Brunswick
+   Quebec
+      monthly labour force counts in Quebec
 
-Date
-   year (in decimal form)
+   Atlantic
+      monthly labour force counts in Newfoundland, Nova Scotia, Prince
+      Edward Island and New Brunswick
 
-Details
-~~~~~~~
+   Date
+      year (in decimal form)
 
-These data have been seasonally adjusted.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   These data have been seasonally adjusted.
 
-Statistics Canada
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Statistics Canada
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   print("Multiple Variables and Times - Example 2.1.4")
-   sapply(jobs, range)
-   pause()
+   ::
 
-   matplot(jobs[,7], jobs[,-7], type="l", xlim=c(95,97.1))
-    # Notice that we have been able to use a data frame as the second argument to matplot().
-    # For more information on matplot(), type help(matplot)
-   text(rep(jobs[24,7], 6), jobs[24,1:6], names(jobs)[1:6], adj=0)
-   pause()
+      print("Multiple Variables and Times - Example 2.1.4")
+      sapply(jobs, range)
+      pause()
 
-   sapply(log(jobs[,-7]), range)
-   apply(sapply(log(jobs[,-7]), range), 2, diff)
-   pause()
+      matplot(jobs[,7], jobs[,-7], type="l", xlim=c(95,97.1))
+       # Notice that we have been able to use a data frame as the second argument to matplot().
+       # For more information on matplot(), type help(matplot)
+      text(rep(jobs[24,7], 6), jobs[24,1:6], names(jobs)[1:6], adj=0)
+      pause()
 
-   oldpar <- par(mfrow=c(2,3))
-   range.log <- sapply(log(jobs[,-7], 2), range)
-   maxdiff <- max(apply(range.log, 2, diff))
-   range.log[2,] <- range.log[1,] + maxdiff
-   titles <- c("BC Jobs","Alberta Jobs","Prairie Jobs",
-      "Ontario Jobs", "Quebec Jobs", "Atlantic Jobs")
-   for (i in 1:6){
-   plot(jobs$Date, log(jobs[,i], 2), type = "l", ylim = range.log[,i],
-       xlab = "Time", ylab = "Number of jobs", main = titles[i])
-   }
-   par(oldpar)
+      sapply(log(jobs[,-7]), range)
+      apply(sapply(log(jobs[,-7]), range), 2, diff)
+      pause()
+
+      oldpar <- par(mfrow=c(2,3))
+      range.log <- sapply(log(jobs[,-7], 2), range)
+      maxdiff <- max(apply(range.log, 2, diff))
+      range.log[2,] <- range.log[1,] + maxdiff
+      titles <- c("BC Jobs","Alberta Jobs","Prairie Jobs",
+         "Ontario Jobs", "Quebec Jobs", "Atlantic Jobs")
+      for (i in 1:6){
+      plot(jobs$Date, log(jobs[,i], 2), type = "l", ylim = range.log[,i],
+          xlab = "Time", ylab = "Number of jobs", main = titles[i])
+      }
+      par(oldpar)

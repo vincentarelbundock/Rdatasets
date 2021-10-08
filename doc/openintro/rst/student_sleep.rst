@@ -1,45 +1,47 @@
-============= ===============
-student_sleep R Documentation
-============= ===============
+.. container::
 
-Sleep for 110 students (simulated)
-----------------------------------
+   ============= ===============
+   student_sleep R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Sleep for 110 students (simulated)
+      :name: sleep-for-110-students-simulated
 
-A simulated data set for how much 110 college students each slept in a
-single night.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A simulated data set for how much 110 college students each slept in
+   a single night.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   student_sleep
+   ::
 
-Format
-~~~~~~
+      student_sleep
 
-A data frame with 110 observations on the following variable.
+   .. rubric:: Format
+      :name: format
 
-hours
-   Number of hours slept by this student (simulated).
+   A data frame with 110 observations on the following variable.
 
-Source
-~~~~~~
+   hours
+      Number of hours slept by this student (simulated).
 
-Simulated data.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Simulated data.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   set.seed(2)
-   x <- exp(c(rnorm(100, log(7.5), 0.15),
-              rnorm(10, log(10), 0.196)))
-   x <- round(x - mean(x) + 7.42, 2)
+      set.seed(2)
+      x <- exp(c(rnorm(100, log(7.5), 0.15),
+                 rnorm(10, log(10), 0.196)))
+      x <- round(x - mean(x) + 7.42, 2)
 
-   identical(x, student_sleep$hours)
+      identical(x, student_sleep$hours)

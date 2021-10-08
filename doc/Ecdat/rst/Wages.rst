@@ -1,88 +1,90 @@
-===== ===============
-Wages R Documentation
-===== ===============
+.. container::
 
-Panel Data of Individual Wages
-------------------------------
+   ===== ===============
+   Wages R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Panel Data of Individual Wages
+      :name: panel-data-of-individual-wages
 
-a panel of 595 observations from 1976 to 1982
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 4165
+   a panel of 595 observations from 1976 to 1982
 
-*observation* : individuals
+   *number of observations* : 4165
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Wages)
+   ::
 
-Format
-~~~~~~
+      data(Wages)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-exp
-   years of full-time work experience
+   A dataframe containing :
 
-wks
-   weeks worked
+   exp
+      years of full-time work experience
 
-bluecol
-   blue collar ?
+   wks
+      weeks worked
 
-ind
-   works in a manufacturing industry ?
+   bluecol
+      blue collar ?
 
-south
-   resides in the south ?
+   ind
+      works in a manufacturing industry ?
 
-smsa
-   resides in a standard metropolitan statistical are ?
+   south
+      resides in the south ?
 
-married
-   married ?
+   smsa
+      resides in a standard metropolitan statistical are ?
 
-sex
-   a factor with levels (male,female)
+   married
+      married ?
 
-union
-   individual's wage set by a union contract ?
+   sex
+      a factor with levels (male,female)
 
-ed
-   years of education
+   union
+      individual's wage set by a union contract ?
 
-black
-   is the individual black ?
+   ed
+      years of education
 
-lwage
-   logarithm of wage
+   black
+      is the individual black ?
 
-Source
-~~~~~~
+   lwage
+      logarithm of wage
 
-Cornwell, C. and P. Rupert (1988) “Efficient estimation with panel data:
-an empirical comparison of instrumental variables estimators”, *Journal
-of Applied Econometrics*, **3**, 149–155.
+   .. rubric:: Source
+      :name: source
 
-Panel study of income dynamics.
+   Cornwell, C. and P. Rupert (1988) “Efficient estimation with panel
+   data: an empirical comparison of instrumental variables estimators”,
+   *Journal of Applied Econometrics*, **3**, 149–155.
 
-References
-~~~~~~~~~~
+   Panel study of income dynamics.
 
-Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John Wiley
-and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John
+   Wiley and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
+
+   ``Index.Time.Series``

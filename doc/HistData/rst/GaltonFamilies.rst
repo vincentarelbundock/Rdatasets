@@ -1,133 +1,137 @@
-============== ===============
-GaltonFamilies R Documentation
-============== ===============
+.. container::
 
-Galton's data on the heights of parents and their children, by child
---------------------------------------------------------------------
+   ============== ===============
+   GaltonFamilies R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Galton's data on the heights of parents and their
+      children, by child
+      :name: galtons-data-on-the-heights-of-parents-and-their-children-by-child
 
-This data set lists the individual observations for 934 children in 205
-families on which Galton (1886) based his cross-tabulation.
+   .. rubric:: Description
+      :name: description
 
-In addition to the question of the relation between heights of parents
-and their offspring, for which this data is mainly famous, Galton had
-another purpose which the data in this form allows to address: Does
-marriage selection indicate a relationship between the heights of
-husbands and wives, a topic he called *assortative mating*? Keen [p.
-297-298](2010) provides a brief discussion of this topic.
+   This data set lists the individual observations for 934 children in
+   205 families on which Galton (1886) based his cross-tabulation.
 
-Usage
-~~~~~
+   In addition to the question of the relation between heights of
+   parents and their offspring, for which this data is mainly famous,
+   Galton had another purpose which the data in this form allows to
+   address: Does marriage selection indicate a relationship between the
+   heights of husbands and wives, a topic he called *assortative
+   mating*? Keen [p. 297-298](2010) provides a brief discussion of this
+   topic.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(GaltonFamilies)
+   ::
 
-Format
-~~~~~~
+      data(GaltonFamilies)
 
-A data frame with 934 observations on the following 8 variables.
+   .. rubric:: Format
+      :name: format
 
-``family``
-   family ID, a factor with levels ``001``-``204``
+   A data frame with 934 observations on the following 8 variables.
 
-``father``
-   height of father
+   ``family``
+      family ID, a factor with levels ``001``-``204``
 
-``mother``
-   height of mother
+   ``father``
+      height of father
 
-``midparentHeight``
-   mid-parent height, calculated as ``(father + 1.08*mother)/2``
+   ``mother``
+      height of mother
 
-``children``
-   number of children in this family
+   ``midparentHeight``
+      mid-parent height, calculated as ``(father + 1.08*mother)/2``
 
-``childNum``
-   number of this child within family. Children are listed in decreasing
-   order of height for boys followed by girls
+   ``children``
+      number of children in this family
 
-``gender``
-   child gender, a factor with levels ``female`` ``male``
+   ``childNum``
+      number of this child within family. Children are listed in
+      decreasing order of height for boys followed by girls
 
-``childHeight``
-   height of child
+   ``gender``
+      child gender, a factor with levels ``female`` ``male``
 
-Details
-~~~~~~~
+   ``childHeight``
+      height of child
 
-Galton's notebook lists 963 children in 205 families ranging from 1-15
-adult children children. Of these, 29 had non-numeric heights recorded
-and are not included here.
+   .. rubric:: Details
+      :name: details
 
-Families are largely listed in descending order of fathers and mothers
-height.
+   Galton's notebook lists 963 children in 205 families ranging from
+   1-15 adult children children. Of these, 29 had non-numeric heights
+   recorded and are not included here.
 
-Source
-~~~~~~
+   Families are largely listed in descending order of fathers and
+   mothers height.
 
-Galton's notebook,
-http://www.medicine.mcgill.ca/epidemiology/hanley/galton/notebook/,
-transcribed by Beverley Shipley in 2001.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Galton's notebook,
+   http://www.medicine.mcgill.ca/epidemiology/hanley/galton/notebook/,
+   transcribed by Beverley Shipley in 2001.
 
-Galton, F. (1886). Regression Towards Mediocrity in Hereditary Stature
-*Journal of the Anthropological Institute*, 15, 246-263
+   .. rubric:: References
+      :name: references
 
-Hanley, J. A. (2004). "Transmuting" Women into Men: Galton's Family Data
-on Human Stature. *The American Statistician*, 58, 237-243. See:
-http://www.medicine.mcgill.ca/epidemiology/hanley/galton/ for source
-materials.
+   Galton, F. (1886). Regression Towards Mediocrity in Hereditary
+   Stature *Journal of the Anthropological Institute*, 15, 246-263
 
-Keen, K. J. (2010). *Graphics for Statistics and Data Analysis with R*,
-Boca Raton: CRC Press,
-https://www.unbc.ca/keen/graphics-for-statistics-and-data-analysis-with-r.
+   Hanley, J. A. (2004). "Transmuting" Women into Men: Galton's Family
+   Data on Human Stature. *The American Statistician*, 58, 237-243. See:
+   http://www.medicine.mcgill.ca/epidemiology/hanley/galton/ for source
+   materials.
 
-See Also
-~~~~~~~~
+   Keen, K. J. (2010). *Graphics for Statistics and Data Analysis with
+   R*, Boca Raton: CRC Press,
+   https://www.unbc.ca/keen/graphics-for-statistics-and-data-analysis-with-r.
 
-``Galton``, ``PearsonLee``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Galton``, ``PearsonLee``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(GaltonFamilies)
-   str(GaltonFamilies)
+   ::
 
-   ## reproduce Fig 2 in Hanley (2004)
-   library(car)
-   scatterplot(childHeight ~ midparentHeight | gender, data=GaltonFamilies, 
-       ellipse=TRUE, levels=0.68, legend.coords=list(x=64, y=78))
+      data(GaltonFamilies)
+      str(GaltonFamilies)
 
-   # multiply daughters' heights by 1.08
-   GF1 <- within(GaltonFamilies, 
-                 {childHeight <- ifelse (gender=="female", 1.08*childHeight, childHeight)} )
-   scatterplot(childHeight ~ midparentHeight | gender, data=GF1, 
-       ellipse=TRUE, levels=0.68, legend.coords=list(x=64, y=78))
+      ## reproduce Fig 2 in Hanley (2004)
+      library(car)
+      scatterplot(childHeight ~ midparentHeight | gender, data=GaltonFamilies, 
+          ellipse=TRUE, levels=0.68, legend.coords=list(x=64, y=78))
 
-   # add 5.2 to daughters' heights 
-   GF2 <- within(GaltonFamilies, 
-                 {childHeight <- ifelse (gender=="female", childHeight+5.2, childHeight)} )
-   scatterplot(childHeight ~ midparentHeight | gender, data=GF2, 
-       ellipse=TRUE, levels=0.68, legend.coords=list(x=64, y=78))
+      # multiply daughters' heights by 1.08
+      GF1 <- within(GaltonFamilies, 
+                    {childHeight <- ifelse (gender=="female", 1.08*childHeight, childHeight)} )
+      scatterplot(childHeight ~ midparentHeight | gender, data=GF1, 
+          ellipse=TRUE, levels=0.68, legend.coords=list(x=64, y=78))
 
-   #########################################
-   # relationship between heights of parents
-   #########################################
+      # add 5.2 to daughters' heights 
+      GF2 <- within(GaltonFamilies, 
+                    {childHeight <- ifelse (gender=="female", childHeight+5.2, childHeight)} )
+      scatterplot(childHeight ~ midparentHeight | gender, data=GF2, 
+          ellipse=TRUE, levels=0.68, legend.coords=list(x=64, y=78))
 
-   Parents <- subset(GaltonFamilies, !duplicated(GaltonFamilies$family))
+      #########################################
+      # relationship between heights of parents
+      #########################################
 
-   with(Parents, {
-     sunflowerplot(mother, father, rotate=TRUE, pch=16, 
-        xlab="Mother height", ylab="Father height")
-       dataEllipse(mother, father, add=TRUE, plot.points=FALSE, 
-        center.pch=NULL, levels=0.68)
-       abline(lm(father ~ mother), col="red", lwd=2)
-       }
-       )
+      Parents <- subset(GaltonFamilies, !duplicated(GaltonFamilies$family))
+
+      with(Parents, {
+        sunflowerplot(mother, father, rotate=TRUE, pch=16, 
+           xlab="Mother height", ylab="Father height")
+          dataEllipse(mother, father, add=TRUE, plot.points=FALSE, 
+           center.pch=NULL, levels=0.68)
+          abline(lm(father ~ mother), col="red", lwd=2)
+          }
+          )

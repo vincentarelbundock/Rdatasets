@@ -1,104 +1,106 @@
-============ ===============
-CigarettesSW R Documentation
-============ ===============
+.. container::
 
-Cigarette Consumption Panel Data
---------------------------------
+   ============ ===============
+   CigarettesSW R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Cigarette Consumption Panel Data
+      :name: cigarette-consumption-panel-data
 
-Panel data on cigarette consumption for the 48 continental US States
-from 1985–1995.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Panel data on cigarette consumption for the 48 continental US States
+   from 1985–1995.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("CigarettesSW")
+   ::
 
-Format
-~~~~~~
+      data("CigarettesSW")
 
-A data frame containing 48 observations on 7 variables for 2 periods.
+   .. rubric:: Format
+      :name: format
 
-state
-   Factor indicating state.
+   A data frame containing 48 observations on 7 variables for 2 periods.
 
-year
-   Factor indicating year.
+   state
+      Factor indicating state.
 
-cpi
-   Consumer price index.
+   year
+      Factor indicating year.
 
-population
-   State population.
+   cpi
+      Consumer price index.
 
-packs
-   Number of packs per capita.
+   population
+      State population.
 
-income
-   State personal income (total, nominal).
+   packs
+      Number of packs per capita.
 
-tax
-   Average state, federal and average local excise taxes for fiscal
-   year.
+   income
+      State personal income (total, nominal).
 
-price
-   Average price during fiscal year, including sales tax.
+   tax
+      Average state, federal and average local excise taxes for fiscal
+      year.
 
-taxs
-   Average excise taxes for fiscal year, including sales tax.
+   price
+      Average price during fiscal year, including sales tax.
 
-Source
-~~~~~~
+   taxs
+      Average excise taxes for fiscal year, including sales tax.
 
-Online complements to Stock and Watson (2007).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Stock and Watson (2007).
 
-Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*, 2nd
-ed. Boston: Addison Wesley.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
+   2nd ed. Boston: Addison Wesley.
 
-``StockWatson2007``, ``CigarettesB``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``StockWatson2007``, ``CigarettesB``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## Stock and Watson (2007)
-   ## data and transformations 
-   data("CigarettesSW")
-   CigarettesSW$rprice <- with(CigarettesSW, price/cpi)
-   CigarettesSW$rincome <- with(CigarettesSW, income/population/cpi)
-   CigarettesSW$rtax <- with(CigarettesSW, tax/cpi)
-   CigarettesSW$rtdiff <- with(CigarettesSW, (taxs - tax)/cpi)
-   c1985 <- subset(CigarettesSW, year == "1985")
-   c1995 <- subset(CigarettesSW, year == "1995")
+   ::
 
-   ## convenience function: HC1 covariances
-   hc1 <- function(x) vcovHC(x, type = "HC1")
+      ## Stock and Watson (2007)
+      ## data and transformations 
+      data("CigarettesSW")
+      CigarettesSW$rprice <- with(CigarettesSW, price/cpi)
+      CigarettesSW$rincome <- with(CigarettesSW, income/population/cpi)
+      CigarettesSW$rtax <- with(CigarettesSW, tax/cpi)
+      CigarettesSW$rtdiff <- with(CigarettesSW, (taxs - tax)/cpi)
+      c1985 <- subset(CigarettesSW, year == "1985")
+      c1995 <- subset(CigarettesSW, year == "1995")
 
-   ## Equations 12.9--12.11
-   fm_s1 <- lm(log(rprice) ~ rtdiff, data = c1995)
-   coeftest(fm_s1, vcov = hc1)
-   fm_s2 <- lm(log(packs) ~ fitted(fm_s1), data = c1995)
-   fm_ivreg <- ivreg(log(packs) ~ log(rprice) | rtdiff, data = c1995)
-   coeftest(fm_ivreg, vcov = hc1)
+      ## convenience function: HC1 covariances
+      hc1 <- function(x) vcovHC(x, type = "HC1")
 
-   ## Equation 12.15
-   fm_ivreg2 <- ivreg(log(packs) ~ log(rprice) + log(rincome) | log(rincome) + rtdiff, data = c1995)
-   coeftest(fm_ivreg2, vcov = hc1)
-   ## Equation 12.16
-   fm_ivreg3 <- ivreg(log(packs) ~ log(rprice) + log(rincome) | log(rincome) + rtdiff + rtax,
-     data = c1995)
-   coeftest(fm_ivreg3, vcov = hc1)
+      ## Equations 12.9--12.11
+      fm_s1 <- lm(log(rprice) ~ rtdiff, data = c1995)
+      coeftest(fm_s1, vcov = hc1)
+      fm_s2 <- lm(log(packs) ~ fitted(fm_s1), data = c1995)
+      fm_ivreg <- ivreg(log(packs) ~ log(rprice) | rtdiff, data = c1995)
+      coeftest(fm_ivreg, vcov = hc1)
 
-   ## More examples can be found in:
-   ## help("StockWatson2007")
+      ## Equation 12.15
+      fm_ivreg2 <- ivreg(log(packs) ~ log(rprice) + log(rincome) | log(rincome) + rtdiff, data = c1995)
+      coeftest(fm_ivreg2, vcov = hc1)
+      ## Equation 12.16
+      fm_ivreg3 <- ivreg(log(packs) ~ log(rprice) + log(rincome) | log(rincome) + rtdiff + rtax,
+        data = c1995)
+      coeftest(fm_ivreg3, vcov = hc1)
+
+      ## More examples can be found in:
+      ## help("StockWatson2007")

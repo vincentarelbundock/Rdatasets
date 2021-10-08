@@ -1,92 +1,95 @@
-====== ===============
-MedExp R Documentation
-====== ===============
+.. container::
 
-Structure of Demand for Medical Care
-------------------------------------
+   ====== ===============
+   MedExp R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Structure of Demand for Medical Care
+      :name: structure-of-demand-for-medical-care
 
-Journal of Applied Econometrics data archive :
-http://qed.econ.queensu.ca/jae/
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 5574
+   Journal of Applied Econometrics data archive :
+   http://qed.econ.queensu.ca/jae/
 
-Usage
-~~~~~
+   *number of observations* : 5574
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(MedExp)
+   ::
 
-Format
-~~~~~~
+      data(MedExp)
 
-A time series containing :
+   .. rubric:: Format
+      :name: format
 
-med
-   annual medical expenditures in constant dollars excluding dental and
-   outpatient mental
+   A time series containing :
 
-lc
-   ``log(coinsrate+1)`` where coinsurance rate is 0 to 100
+   med
+      annual medical expenditures in constant dollars excluding dental
+      and outpatient mental
 
-idp
-   individual deductible plan ?
+   lc
+      ``log(coinsrate+1)`` where coinsurance rate is 0 to 100
 
-lpi
-   ``log``\ (annual participation incentive payment) or 0 if no payment
+   idp
+      individual deductible plan ?
 
-fmde
-   ``log``\ (max(medical deductible expenditure)) if ``IDP``\ =1 and
-   ``MDE``>1 or 0 otherwise
+   lpi
+      ``log``\ (annual participation incentive payment) or 0 if no
+      payment
 
-physlim
-   physical limitation ?
+   fmde
+      ``log``\ (max(medical deductible expenditure)) if ``IDP``\ =1 and
+      ``MDE``>1 or 0 otherwise
 
-ndisease
-   number of chronic diseases
+   physlim
+      physical limitation ?
 
-health
-   self–rate health (excellent,good,fair,poor)
+   ndisease
+      number of chronic diseases
 
-linc
-   log of annual family income (in \\$)
+   health
+      self–rate health (excellent,good,fair,poor)
 
-lfam
-   log of family size
+   linc
+      log of annual family income (in \\$)
 
-educdec
-   years of schooling of household head
+   lfam
+      log of family size
 
-age
-   exact age
+   educdec
+      years of schooling of household head
 
-sex
-   sex (male,female)
+   age
+      exact age
 
-child
-   age less than 18 ?
+   sex
+      sex (male,female)
 
-black
-   is household head black ?
+   child
+      age less than 18 ?
 
-Source
-~~~~~~
+   black
+      is household head black ?
 
-Deb, P. and P.K. Trivedi (2002) “The Structure of Demand for Medical
-Care: Latent Class versus Two-Part Models”, *Journal of Health
-Economics*, **21**, 601–625.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Deb, P. and P.K. Trivedi (2002) “The Structure of Demand for Medical
+   Care: Latent Class versus Two-Part Models”, *Journal of Health
+   Economics*, **21**, 601–625.
 
-Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods and
-applications*, Cambridge.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
+   and applications*, Cambridge.
 
-``DoctorContacts``, ``Index.Source``, ``Index.Economics``,
-``Index.Econometrics``, ``Index.Observations``, ``Index.Time.Series``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``DoctorContacts``, ``Index.Source``, ``Index.Economics``,
+   ``Index.Econometrics``, ``Index.Observations``, ``Index.Time.Series``

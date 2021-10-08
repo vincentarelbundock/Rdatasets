@@ -1,79 +1,81 @@
-========= ===============
-RailTrail R Documentation
-========= ===============
+.. container::
 
-Volume of Users of a Rail Trail
--------------------------------
+   ========= ===============
+   RailTrail R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Volume of Users of a Rail Trail
+      :name: volume-of-users-of-a-rail-trail
 
-The Pioneer Valley Planning Commission (PVPC) collected data north of
-Chestnut Street in Florence, MA for ninety days from April 5, 2005 to
-November 15, 2005. Data collectors set up a laser sensor, with breaks in
-the laser beam recording when a rail-trail user passed the data
-collection station.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The Pioneer Valley Planning Commission (PVPC) collected data north of
+   Chestnut Street in Florence, MA for ninety days from April 5, 2005 to
+   November 15, 2005. Data collectors set up a laser sensor, with breaks
+   in the laser beam recording when a rail-trail user passed the data
+   collection station.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(RailTrail)
+   ::
 
-Format
-~~~~~~
+      data(RailTrail)
 
-A data frame with 90 observations on the following variables.
+   .. rubric:: Format
+      :name: format
 
--  ``hightemp`` daily high temperature (in degrees Fahrenheit)
+   A data frame with 90 observations on the following variables.
 
--  ``lowtemp`` daily low temperature (in degrees Fahrenheit)
+   -  ``hightemp`` daily high temperature (in degrees Fahrenheit)
 
--  ``avgtemp`` average of daily low and daily high temperature (in
-   degrees Fahrenheit)
+   -  ``lowtemp`` daily low temperature (in degrees Fahrenheit)
 
--  ``spring`` indicator of whether the season was Spring
+   -  ``avgtemp`` average of daily low and daily high temperature (in
+      degrees Fahrenheit)
 
--  ``summer`` indicator of whether the season was Summer
+   -  ``spring`` indicator of whether the season was Spring
 
--  ``fall`` indicator of whether the season was Fall
+   -  ``summer`` indicator of whether the season was Summer
 
--  ``cloudcover`` measure of cloud cover (in oktas)
+   -  ``fall`` indicator of whether the season was Fall
 
--  ``precip`` measure of precipitation (in inches)
+   -  ``cloudcover`` measure of cloud cover (in oktas)
 
--  ``volume`` estimated number of trail users that day (number of breaks
-   recorded)
+   -  ``precip`` measure of precipitation (in inches)
 
--  ``weekday`` logical indicator of whether the day was a non-holiday
-   weekday
+   -  ``volume`` estimated number of trail users that day (number of
+      breaks recorded)
 
--  ``dayType`` one of "weekday" or "weekend"
+   -  ``weekday`` logical indicator of whether the day was a non-holiday
+      weekday
 
-Details
-~~~~~~~
+   -  ``dayType`` one of "weekday" or "weekend"
 
-There is a potential for error when two users trigger the infrared beam
-at exactly the same time since the counter would only logs one of the
-crossings. The collectors left the motion detector out during the
-winter, but because the counter drops data when the temperature falls
-below 14 degrees Fahrenheit, there is no data for the cold winter
-months.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   There is a potential for error when two users trigger the infrared
+   beam at exactly the same time since the counter would only logs one
+   of the crossings. The collectors left the motion detector out during
+   the winter, but because the counter drops data when the temperature
+   falls below 14 degrees Fahrenheit, there is no data for the cold
+   winter months.
 
-Pioneer Valley Planning Commission
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Pioneer Valley Planning Commission
 
-http://www.fvgreenway.org/pdfs/Northampton-Bikepath-Volume-Counts%20_05_LTA.pdf
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   http://www.fvgreenway.org/pdfs/Northampton-Bikepath-Volume-Counts%20_05_LTA.pdf
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(RailTrail)
+   ::
+
+      data(RailTrail)

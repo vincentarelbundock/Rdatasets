@@ -1,91 +1,93 @@
-======= ===============
-UScrime R Documentation
-======= ===============
+.. container::
 
-The Effect of Punishment Regimes on Crime Rates
------------------------------------------------
+   ======= ===============
+   UScrime R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: The Effect of Punishment Regimes on Crime Rates
+      :name: the-effect-of-punishment-regimes-on-crime-rates
 
-Criminologists are interested in the effect of punishment regimes on
-crime rates. This has been studied using aggregate data on 47 states of
-the USA for 1960 given in this data frame. The variables seem to have
-been re-scaled to convenient numbers.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Criminologists are interested in the effect of punishment regimes on
+   crime rates. This has been studied using aggregate data on 47 states
+   of the USA for 1960 given in this data frame. The variables seem to
+   have been re-scaled to convenient numbers.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   UScrime
+   ::
 
-Format
-~~~~~~
+      UScrime
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``M``
-   percentage of males aged 14–24.
+   This data frame contains the following columns:
 
-``So``
-   indicator variable for a Southern state.
+   ``M``
+      percentage of males aged 14–24.
 
-``Ed``
-   mean years of schooling.
+   ``So``
+      indicator variable for a Southern state.
 
-``Po1``
-   police expenditure in 1960.
+   ``Ed``
+      mean years of schooling.
 
-``Po2``
-   police expenditure in 1959.
+   ``Po1``
+      police expenditure in 1960.
 
-``LF``
-   labour force participation rate.
+   ``Po2``
+      police expenditure in 1959.
 
-``M.F``
-   number of males per 1000 females.
+   ``LF``
+      labour force participation rate.
 
-``Pop``
-   state population.
+   ``M.F``
+      number of males per 1000 females.
 
-``NW``
-   number of non-whites per 1000 people.
+   ``Pop``
+      state population.
 
-``U1``
-   unemployment rate of urban males 14–24.
+   ``NW``
+      number of non-whites per 1000 people.
 
-``U2``
-   unemployment rate of urban males 35–39.
+   ``U1``
+      unemployment rate of urban males 14–24.
 
-``GDP``
-   gross domestic product per head.
+   ``U2``
+      unemployment rate of urban males 35–39.
 
-``Ineq``
-   income inequality.
+   ``GDP``
+      gross domestic product per head.
 
-``Prob``
-   probability of imprisonment.
+   ``Ineq``
+      income inequality.
 
-``Time``
-   average time served in state prisons.
+   ``Prob``
+      probability of imprisonment.
 
-``y``
-   rate of crimes in a particular category per head of population.
+   ``Time``
+      average time served in state prisons.
 
-Source
-~~~~~~
+   ``y``
+      rate of crimes in a particular category per head of population.
 
-Ehrlich, I. (1973) Participation in illegitimate activities: a
-theoretical and empirical investigation. *Journal of Political Economy*,
-**81**, 521–565.
+   .. rubric:: Source
+      :name: source
 
-Vandaele, W. (1978) Participation in illegitimate activities: Ehrlich
-revisited. In *Deterrence and Incapacitation*, eds A. Blumstein, J.
-Cohen and D. Nagin, pp. 270–335. US National Academy of Sciences.
+   Ehrlich, I. (1973) Participation in illegitimate activities: a
+   theoretical and empirical investigation. *Journal of Political
+   Economy*, **81**, 521–565.
 
-References
-~~~~~~~~~~
+   Vandaele, W. (1978) Participation in illegitimate activities: Ehrlich
+   revisited. In *Deterrence and Incapacitation*, eds A. Blumstein, J.
+   Cohen and D. Nagin, pp. 270–335. US National Academy of Sciences.
 
-Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics with
-S-PLUS.* Third Edition. Springer.
+   .. rubric:: References
+      :name: references
+
+   Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics
+   with S-PLUS.* Third Edition. Springer.

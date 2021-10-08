@@ -1,100 +1,103 @@
-=========== ===============
-USSeatBelts R Documentation
-=========== ===============
+.. container::
 
-Effects of Mandatory Seat Belt Laws in the US
----------------------------------------------
+   =========== ===============
+   USSeatBelts R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Effects of Mandatory Seat Belt Laws in the US
+      :name: effects-of-mandatory-seat-belt-laws-in-the-us
 
-Balanced panel data for the years 1983–1997 from 50 US States, plus the
-District of Columbia, for assessing traffic fatalities and seat belt
-usage.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Balanced panel data for the years 1983–1997 from 50 US States, plus
+   the District of Columbia, for assessing traffic fatalities and seat
+   belt usage.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("USSeatBelts")
+   ::
 
-Format
-~~~~~~
+      data("USSeatBelts")
 
-A data frame containing 765 observations on 12 variables.
+   .. rubric:: Format
+      :name: format
 
-state
-   factor indicating US state (abbreviation).
+   A data frame containing 765 observations on 12 variables.
 
-year
-   factor indicating year.
+   state
+      factor indicating US state (abbreviation).
 
-miles
-   millions of traffic miles per year.
+   year
+      factor indicating year.
 
-fatalities
-   number of fatalities per million of traffic miles (absolute
-   frequencies of fatalities = ``fatalities`` times ``miles``).
+   miles
+      millions of traffic miles per year.
 
-seatbelt
-   seat belt usage rate, as self-reported by state population surveyed.
+   fatalities
+      number of fatalities per million of traffic miles (absolute
+      frequencies of fatalities = ``fatalities`` times ``miles``).
 
-speed65
-   factor. Is there a 65 mile per hour speed limit?
+   seatbelt
+      seat belt usage rate, as self-reported by state population
+      surveyed.
 
-speed70
-   factor. Is there a 70 (or higher) mile per hour speed limit?
+   speed65
+      factor. Is there a 65 mile per hour speed limit?
 
-drinkage
-   factor. Is there a minimum drinking age of 21 years?
+   speed70
+      factor. Is there a 70 (or higher) mile per hour speed limit?
 
-alcohol
-   factor. Is there a maximum of 0.08 blood alcohol content?
+   drinkage
+      factor. Is there a minimum drinking age of 21 years?
 
-income
-   median per capita income (in current US dollar).
+   alcohol
+      factor. Is there a maximum of 0.08 blood alcohol content?
 
-age
-   mean age.
+   income
+      median per capita income (in current US dollar).
 
-enforce
-   factor indicating seat belt law enforcement (``"no"``, ``"primary"``,
-   ``"secondary"``).
+   age
+      mean age.
 
-Details
-~~~~~~~
+   enforce
+      factor indicating seat belt law enforcement (``"no"``,
+      ``"primary"``, ``"secondary"``).
 
-Some data series from Cohen and Einav (2003) have not been included in
-the data frame.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Some data series from Cohen and Einav (2003) have not been included
+   in the data frame.
 
-Online complements to Stock and Watson (2007).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Stock and Watson (2007).
 
-Cohen, A., and Einav, L. (2003). The Effects of Mandatory Seat Belt Laws
-on Driving Behavior and Traffic Fatalities. *The Review of Economics and
-Statistics*, **85**, 828–843
+   .. rubric:: References
+      :name: references
 
-Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*, 2nd
-ed. Boston: Addison Wesley.
+   Cohen, A., and Einav, L. (2003). The Effects of Mandatory Seat Belt
+   Laws on Driving Behavior and Traffic Fatalities. *The Review of
+   Economics and Statistics*, **85**, 828–843
 
-See Also
-~~~~~~~~
+   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
+   2nd ed. Boston: Addison Wesley.
 
-``StockWatson2007``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``StockWatson2007``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("USSeatBelts")
-   summary(USSeatBelts)
+   ::
 
-   library("lattice")
-   xyplot(fatalities ~ as.numeric(as.character(year)) | state, data = USSeatBelts, type = "l")
+      data("USSeatBelts")
+      summary(USSeatBelts)
+
+      library("lattice")
+      xyplot(fatalities ~ as.numeric(as.character(year)) | state, data = USSeatBelts, type = "l")

@@ -1,65 +1,67 @@
-======== ===============
-hotspots R Documentation
-======== ===============
+.. container::
 
-Hawaian island chain hotspot Potassium-Argon ages
--------------------------------------------------
+   ======== ===============
+   hotspots R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Hawaian island chain hotspot Potassium-Argon ages
+      :name: hawaian-island-chain-hotspot-potassium-argon-ages
 
-K-Ar Ages (millions of years) and distances (km) from Kilauea along the
-trend of the chain of Hawaian volcanic islands and other seamounts that
-are believed to have been created by a moving "hot spot". The age of
-Kilauea is given as 0-0.4 Ma.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   K-Ar Ages (millions of years) and distances (km) from Kilauea along
+   the trend of the chain of Hawaian volcanic islands and other
+   seamounts that are believed to have been created by a moving "hot
+   spot". The age of Kilauea is given as 0-0.4 Ma.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(hotspots)
+   ::
 
-Format
-~~~~~~
+      data(hotspots)
 
-A data frame with 36 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``ID``
-   Volcano identifier
+   A data frame with 36 observations on the following 6 variables.
 
-``name``
-   Name
+   ``ID``
+      Volcano identifier
 
-``distance``
-   Distance in kilometers
+   ``name``
+      Name
 
-``age``
-   K-Ar age in millions of years
+   ``distance``
+      Distance in kilometers
 
-``error``
-   Standard error of estimate?
+   ``age``
+      K-Ar age in millions of years
 
-``source``
-   Data source; see information on web site below.
+   ``error``
+      Standard error of estimate?
 
-Details
-~~~~~~~
+   ``source``
+      Data source; see information on web site below.
 
-For details of the way that errors werre calculated, refer to the
-original papers. See also the comments under ``hotspots2006``. In
-general, errors do not account for geological uncertainty.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   For details of the way that errors werre calculated, refer to the
+   original papers. See also the comments under ``hotspots2006``. In
+   general, errors do not account for geological uncertainty.
 
-http://www.soest.hawaii.edu/GG/HCV/haw_formation.html
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   http://www.soest.hawaii.edu/GG/HCV/haw_formation.html
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(hotspots)
-   plot(age ~ distance, data=hotspots)
-   abline(lm(age ~ distance, data=hotspots))
+   ::
+
+      data(hotspots)
+      plot(age ~ distance, data=hotspots)
+      abline(lm(age ~ distance, data=hotspots))

@@ -1,81 +1,83 @@
-=============== ===============
-get_it_dunn_run R Documentation
-=============== ===============
+.. container::
 
-Get it Dunn Run, Race Times
----------------------------
+   =============== ===============
+   get_it_dunn_run R Documentation
+   =============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Get it Dunn Run, Race Times
+      :name: get-it-dunn-run-race-times
 
-Get it Dunn is a small regional run that got extra attention when a
-runner, Nichole Porath, made the Guiness Book of World Records for the
-fastest time pushing a double stroller in a half marathon. This dataset
-contains results from the 2017 and 2018 races.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Get it Dunn is a small regional run that got extra attention when a
+   runner, Nichole Porath, made the Guiness Book of World Records for
+   the fastest time pushing a double stroller in a half marathon. This
+   dataset contains results from the 2017 and 2018 races.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   get_it_dunn_run
+   ::
 
-Format
-~~~~~~
+      get_it_dunn_run
 
-A data frame with 978 observations on the following 10 variables.
+   .. rubric:: Format
+      :name: format
 
-date
-   Date of the run.
+   A data frame with 978 observations on the following 10 variables.
 
-race
-   Run distance.
+   date
+      Date of the run.
 
-bib_num
-   Bib number of the runner.
+   race
+      Run distance.
 
-first_name
-   First name of the runner.
+   bib_num
+      Bib number of the runner.
 
-last_initial
-   Initial of the runner's last name.
+   first_name
+      First name of the runner.
 
-sex
-   Sex of the runner.
+   last_initial
+      Initial of the runner's last name.
 
-age
-   Age of the runner.
+   sex
+      Sex of the runner.
 
-city
-   City of residence.
+   age
+      Age of the runner.
 
-state
-   State of residence.
+   city
+      City of residence.
 
-run_time_minutes
-   Run time, in minutes.
+   state
+      State of residence.
 
-Source
-~~~~~~
+   run_time_minutes
+      Run time, in minutes.
 
-Data were collected from GSE Timing: `2018
-data <https://www.gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=718>`__,
-`2017 race
-data <https://www.gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=640>`__.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Data were collected from GSE Timing: `2018
+   data <https://www.gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=718>`__,
+   `2017 race
+   data <https://www.gsetiming.com/results/fitness_events/results.asp?event_type=5&event_id=640>`__.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   d <- subset(get_it_dunn_run,
-       race == "5k" & date == "2018-05-12" &
-           !is.na(age) & state %in% c("MN", "WI"))
-   head(d)
-   m <- lm(run_time_minutes ~ sex + age + state, d)
-   summary(m)
-   plot(m$fitted, m$residuals)
-   boxplot(m$residuals ~ d$sex)
-   plot(m$residuals ~ d$age)
-   hist(m$residuals)
+      d <- subset(get_it_dunn_run,
+          race == "5k" & date == "2018-05-12" &
+              !is.na(age) & state %in% c("MN", "WI"))
+      head(d)
+      m <- lm(run_time_minutes ~ sex + age + state, d)
+      summary(m)
+      plot(m$fitted, m$residuals)
+      boxplot(m$residuals ~ d$sex)
+      plot(m$residuals ~ d$age)
+      hist(m$residuals)

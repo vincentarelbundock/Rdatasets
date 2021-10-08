@@ -1,71 +1,73 @@
-======= ===============
-Forward R Documentation
-======= ===============
+.. container::
 
-Exchange Rates of US Dollar Against Other Currencies
-----------------------------------------------------
+   ======= ===============
+   Forward R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Exchange Rates of US Dollar Against Other Currencies
+      :name: exchange-rates-of-us-dollar-against-other-currencies
 
-monthly observations from 1979–01 to 2001–12
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 276
+   monthly observations from 1979–01 to 2001–12
 
-Usage
-~~~~~
+   *number of observations* : 276
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Forward)
+   ::
 
-Format
-~~~~~~
+      data(Forward)
 
-A time series containing :
+   .. rubric:: Format
+      :name: format
 
-usdbp
-   exchange rate USD/British Pound Sterling
+   A time series containing :
 
-usdeuro
-   exchange rate US D/Euro
+   usdbp
+      exchange rate USD/British Pound Sterling
 
-eurobp
-   exchange rate Euro/Pound
+   usdeuro
+      exchange rate US D/Euro
 
-usdbp1
-   1 month forward rate USD/Pound
+   eurobp
+      exchange rate Euro/Pound
 
-usdeuro1
-   1 month forward rate USD/Euro
+   usdbp1
+      1 month forward rate USD/Pound
 
-eurobp1
-   1 month forward rate Euro/Pound
+   usdeuro1
+      1 month forward rate USD/Euro
 
-usdbp3
-   3 month forward rate USD/Pound
+   eurobp1
+      1 month forward rate Euro/Pound
 
-usdeuro3
-   month forward rate USD/Euro
+   usdbp3
+      3 month forward rate USD/Pound
 
-eurobp3
-   month forward rate Euro/Pound
+   usdeuro3
+      month forward rate USD/Euro
 
-Source
-~~~~~~
+   eurobp3
+      month forward rate Euro/Pound
 
-``Datastream``
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   ``Datastream``
 
-Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley and
-Sons, chapter 4.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+   and Sons, chapter 4.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
+
+   ``Index.Time.Series``

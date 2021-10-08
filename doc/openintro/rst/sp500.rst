@@ -1,98 +1,102 @@
-===== ===============
-sp500 R Documentation
-===== ===============
+.. container::
 
-Financial information for 50 S&P 500 companies
-----------------------------------------------
+   ===== ===============
+   sp500 R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Financial information for 50 S&P 500 companies
+      :name: financial-information-for-50-sp-500-companies
 
-Fifty companies were randomly sampled from the 500 companies in the S&P
-500, and their financial information was collected on March 8, 2012.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Fifty companies were randomly sampled from the 500 companies in the
+   S&P 500, and their financial information was collected on March 8,
+   2012.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   sp500
+   ::
 
-Format
-~~~~~~
+      sp500
 
-A data frame with 50 observations on the following 12 variables.
+   .. rubric:: Format
+      :name: format
 
-market_cap
-   Total value of all company shares, in millions of dollars.
+   A data frame with 50 observations on the following 12 variables.
 
-stock
-   The name of the stock (e.g. ``AAPL`` for Apple).
+   market_cap
+      Total value of all company shares, in millions of dollars.
 
-ent_value
-   Enterprise value, which is an alternative to market cap that also
-   accounts for things like cash and debt, in millions of dollars.
+   stock
+      The name of the stock (e.g. ``AAPL`` for Apple).
 
-trail_pe
-   The market cap divided by the earnings (profits) over the last year.
+   ent_value
+      Enterprise value, which is an alternative to market cap that also
+      accounts for things like cash and debt, in millions of dollars.
 
-forward_pe
-   The market cap divided by the forecasted earnings (profits) over the
-   next year.
+   trail_pe
+      The market cap divided by the earnings (profits) over the last
+      year.
 
-ev_over_rev
-   Enterprise value divided by the company's revenue.
+   forward_pe
+      The market cap divided by the forecasted earnings (profits) over
+      the next year.
 
-profit_margin
-   Percent of earnings that are profits.
+   ev_over_rev
+      Enterprise value divided by the company's revenue.
 
-revenue
-   Revenue, in millions of dollars.
+   profit_margin
+      Percent of earnings that are profits.
 
-growth
-   Quartly revenue growth (year over year), in millions of dollars.
+   revenue
+      Revenue, in millions of dollars.
 
-earn_before
-   Earnings before interest, taxes, depreciation, and amortization, in
-   millions of dollars.
+   growth
+      Quartly revenue growth (year over year), in millions of dollars.
 
-cash
-   Total cash, in millions of dollars.
+   earn_before
+      Earnings before interest, taxes, depreciation, and amortization,
+      in millions of dollars.
 
-debt
-   Total debt, in millions of dollars.
+   cash
+      Total cash, in millions of dollars.
 
-Source
-~~~~~~
+   debt
+      Total debt, in millions of dollars.
 
-Yahoo! Finance, retrieved 2012-03-08.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Yahoo! Finance, retrieved 2012-03-08.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(sp500, aes(x = ent_value, y = earn_before)) +
-     geom_point() +
-     labs(x = "Enterprise value", y = "Earnings")
+      ggplot(sp500, aes(x = ent_value, y = earn_before)) +
+        geom_point() +
+        labs(x = "Enterprise value", y = "Earnings")
 
-   ggplot(sp500, aes(x = ev_over_rev, y = forward_pe)) +
-     geom_point() +
-     labs(x = "Enterprise value / revenue, logged",
-          y = "Market cap / forecasted earnings, logged")
+      ggplot(sp500, aes(x = ev_over_rev, y = forward_pe)) +
+        geom_point() +
+        labs(x = "Enterprise value / revenue, logged",
+             y = "Market cap / forecasted earnings, logged")
 
-   ggplot(sp500, aes(x = ent_value, y = earn_before)) +
-     geom_point() +
-     scale_x_log10() +
-     scale_y_log10() +
-     labs(x = "Enterprise value", y = "Earnings")
+      ggplot(sp500, aes(x = ent_value, y = earn_before)) +
+        geom_point() +
+        scale_x_log10() +
+        scale_y_log10() +
+        labs(x = "Enterprise value", y = "Earnings")
 
-   ggplot(sp500, aes(x = ev_over_rev, y = forward_pe)) +
-     geom_point() +
-     scale_x_log10() +
-     scale_y_log10() +
-     labs(x = "Enterprise value / revenue, logged",
-          y = "Market cap / forecasted earnings, logged")
+      ggplot(sp500, aes(x = ev_over_rev, y = forward_pe)) +
+        geom_point() +
+        scale_x_log10() +
+        scale_y_log10() +
+        labs(x = "Enterprise value / revenue, logged",
+             y = "Market cap / forecasted earnings, logged")

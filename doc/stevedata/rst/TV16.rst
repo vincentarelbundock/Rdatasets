@@ -1,133 +1,136 @@
-==== ===============
-TV16 R Documentation
-==== ===============
+.. container::
 
-The Individual Correlates of the Trump Vote in 2016
----------------------------------------------------
+   ==== ===============
+   TV16 R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: The Individual Correlates of the Trump Vote in 2016
+      :name: the-individual-correlates-of-the-trump-vote-in-2016
 
-These data come from the 2016 CCES and allow interested students to
-model the individual correlates of the Trump vote in 2016. Code/analysis
-heavily indebted to a 2017 analysis I did on my blog (see references).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These data come from the 2016 CCES and allow interested students to
+   model the individual correlates of the Trump vote in 2016.
+   Code/analysis heavily indebted to a 2017 analysis I did on my blog
+   (see references).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   TV16
+   ::
 
-Format
-~~~~~~
+      TV16
 
-A data frame with 64600 observations on the following 21 variables.
+   .. rubric:: Format
+      :name: format
 
-``uid``
-   a numeric vector, a unique identifier for the respondent as they
-   first appear in the CCES data.
+   A data frame with 64600 observations on the following 21 variables.
 
-``state``
-   a character vector for the state in which the respondent resides
+   ``uid``
+      a numeric vector, a unique identifier for the respondent as they
+      first appear in the CCES data.
 
-``votetrump``
-   a numeric that equals 1 if the respondent voted says s/he voted for
-   Trump in 2016.
+   ``state``
+      a character vector for the state in which the respondent resides
 
-``age``
-   a numeric vector for age that is roughly calculated as 2016 -
-   ``birthyr``, as it's coded in the CCES data.
+   ``votetrump``
+      a numeric that equals 1 if the respondent voted says s/he voted
+      for Trump in 2016.
 
-``female``
-   a numeric that equals 1 if the respondent is a woman
+   ``age``
+      a numeric vector for age that is roughly calculated as 2016 -
+      ``birthyr``, as it's coded in the CCES data.
 
-``collegeed``
-   a numeric vector that equals 1 if the respondent says s/he has a
-   college degree
+   ``female``
+      a numeric that equals 1 if the respondent is a woman
 
-``racef``
-   a character vector for the race of the respondent
+   ``collegeed``
+      a numeric vector that equals 1 if the respondent says s/he has a
+      college degree
 
-``famincr``
-   a numeric vector for the respondent's household income. Ranges from 1
-   (Less than $10,000) to 12 ($150,000 or more).
+   ``racef``
+      a character vector for the race of the respondent
 
-``ideo``
-   a numeric vector for the respondent's ideology on a
-   liberal-conservative discrete scale. 1 = very liberal. 5 = very
-   conservative.
+   ``famincr``
+      a numeric vector for the respondent's household income. Ranges
+      from 1 (Less than $10,000) to 12 ($150,000 or more).
 
-``pid7na``
-   a numeric vector for the respondent's partisanship on the familiar
-   1-7 scale. 1 = Strong Democrat. 7 = Strong Republican. Other party
-   supporters (e.g. libertarians) are coded as NA.
+   ``ideo``
+      a numeric vector for the respondent's ideology on a
+      liberal-conservative discrete scale. 1 = very liberal. 5 = very
+      conservative.
 
-``bornagain``
-   a numeric vector for whether the respondent self-identifies as a
-   born-again Christian.
+   ``pid7na``
+      a numeric vector for the respondent's partisanship on the familiar
+      1-7 scale. 1 = Strong Democrat. 7 = Strong Republican. Other party
+      supporters (e.g. libertarians) are coded as NA.
 
-``religimp``
-   a numeric vector for the importance of religion to the respondent. 1
-   = not at all important. 4 = very important.
+   ``bornagain``
+      a numeric vector for whether the respondent self-identifies as a
+      born-again Christian.
 
-``churchatd``
-   a numeric vector for the extent of church attendance for the
-   respondent. 1 = never. 6 = more than once a week.
+   ``religimp``
+      a numeric vector for the importance of religion to the respondent.
+      1 = not at all important. 4 = very important.
 
-``prayerfreq``
-   a numeric vector for the frequency of prayer for the respondent. 1 =
-   never. 7 = several times a day.
+   ``churchatd``
+      a numeric vector for the extent of church attendance for the
+      respondent. 1 = never. 6 = more than once a week.
 
-``angryracism``
-   a numeric vector for how angry the respondent is that racism exists.
-   1 = strongly agree (i.e. is angry racism exists). 5 = strongly
-   disagree.
+   ``prayerfreq``
+      a numeric vector for the frequency of prayer for the respondent. 1
+      = never. 7 = several times a day.
 
-``whiteadv``
-   a numeric vector for agreement with statement that white people have
-   advantages over others in the U.S. 1 = strongly agree. 5 = strongly
-   disagree.
+   ``angryracism``
+      a numeric vector for how angry the respondent is that racism
+      exists. 1 = strongly agree (i.e. is angry racism exists). 5 =
+      strongly disagree.
 
-``fearraces``
-   a numeric vector for agreement with statement that the respondent
-   fears other races. 1 = strongly disagree. 5 = strongly agree.
+   ``whiteadv``
+      a numeric vector for agreement with statement that white people
+      have advantages over others in the U.S. 1 = strongly agree. 5 =
+      strongly disagree.
 
-``racerare``
-   a numeric vector for agreement with statement that racism is rare in
-   the U.S. 1 = strongly disagree. 5 = strongly agree.
+   ``fearraces``
+      a numeric vector for agreement with statement that the respondent
+      fears other races. 1 = strongly disagree. 5 = strongly agree.
 
-``lrelig``
-   a numeric vector that serves as a latent estimate for religiosity
-   from the ``bornagain``, ``religimp``, ``churchatd``, and
-   ``prayerfreq`` variables. Higher values = more religiosity.
+   ``racerare``
+      a numeric vector for agreement with statement that racism is rare
+      in the U.S. 1 = strongly disagree. 5 = strongly agree.
 
-``lcograc``
-   a numeric vector that serves as a latent estimate for cognitive
-   racism. This is derived from the ``racerare`` and ``whiteadv``
-   variables.
+   ``lrelig``
+      a numeric vector that serves as a latent estimate for religiosity
+      from the ``bornagain``, ``religimp``, ``churchatd``, and
+      ``prayerfreq`` variables. Higher values = more religiosity.
 
-``lemprac``
-   a numeric vector that serves as a latent estimate for empathetic
-   racism. This is derived from the ``fearraces`` and ``angryracism``
-   variables.
+   ``lcograc``
+      a numeric vector that serves as a latent estimate for cognitive
+      racism. This is derived from the ``racerare`` and ``whiteadv``
+      variables.
 
-Details
-~~~~~~~
+   ``lemprac``
+      a numeric vector that serves as a latent estimate for empathetic
+      racism. This is derived from the ``fearraces`` and ``angryracism``
+      variables.
 
-The latent estimates for religiosity, cognitive racism, and empathetic
-racism come from a graded response model estimated in ``mirt``. The
-concepts of "cognitive racism" and "empathetic racism" come from DeSante
-and Smith.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The latent estimates for religiosity, cognitive racism, and
+   empathetic racism come from a graded response model estimated in
+   ``mirt``. The concepts of "cognitive racism" and "empathetic racism"
+   come from DeSante and Smith.
 
-Cooperative Congressional Election Study, 2016
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Cooperative Congressional Election Study, 2016
 
-http://svmiller.com/blog/2017/04/age-income-racism-partisanship-trump-vote-2016/
+   .. rubric:: References
+      :name: references
 
-https://github.com/svmiller/2016-cces-trump-vote/blob/master/1-2016-cces-trump.R
+   http://svmiller.com/blog/2017/04/age-income-racism-partisanship-trump-vote-2016/
+
+   https://github.com/svmiller/2016-cces-trump-vote/blob/master/1-2016-cces-trump.R

@@ -1,44 +1,46 @@
-====== ===============
-whoops R Documentation
-====== ===============
+.. container::
 
-Deaths from whooping cough, in London
--------------------------------------
+   ====== ===============
+   whoops R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Deaths from whooping cough, in London
+      :name: deaths-from-whooping-cough-in-london
 
-Deaths from whooping cough, in London from 1740 to 1881.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Deaths from whooping cough, in London from 1740 to 1881.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(whoops)
+   ::
 
-Format
-~~~~~~
+      data(whoops)
 
-This is a multiple time series consisting of 3 series: ``wcough``,
-``ratio``, and ``alldeaths``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   This is a multiple time series consisting of 3 series: ``wcough``,
+   ``ratio``, and ``alldeaths``.
 
-Guy, W. A. 1882. Two hundred and fifty years of small pox in London.
-Journal of the Royal Statistical Society 399-443.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Guy, W. A. 1882. Two hundred and fifty years of small pox in London.
+   Journal of the Royal Statistical Society 399-443.
 
-Lancaster, H. O. 1990. Expectations of Life. Springer.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Lancaster, H. O. 1990. Expectations of Life. Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(whoops)
-   str(whoops)
-   plot(whoops) 
+   ::
+
+      data(whoops)
+      str(whoops)
+      plot(whoops) 

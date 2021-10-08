@@ -1,77 +1,79 @@
-==== ===============
-Fair R Documentation
-==== ===============
+.. container::
 
-Extramarital Affairs Data
--------------------------
+   ==== ===============
+   Fair R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Extramarital Affairs Data
+      :name: extramarital-affairs-data
 
-a cross-section
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 601
+   a cross-section
 
-*observation* : individuals
+   *number of observations* : 601
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Fair)
+   ::
 
-Format
-~~~~~~
+      data(Fair)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-sex
-   a factor with levels (male,female)
+   A dataframe containing :
 
-age
+   sex
+      a factor with levels (male,female)
+
    age
+      age
 
-ym
-   number of years married
+   ym
+      number of years married
 
-child
-   children ? a factor
+   child
+      children ? a factor
 
-religious
-   how religious, from 1 (anti) to 5 (very)
+   religious
+      how religious, from 1 (anti) to 5 (very)
 
-education
    education
+      education
 
-occupation
-   occupation, from 1 to 7, according to Hollingshead's classification
-   (reverse numbering)
+   occupation
+      occupation, from 1 to 7, according to Hollingshead's
+      classification (reverse numbering)
 
-rate
-   self rating of marriage, from 1 (very unhappy) to 5 (very happy)
+   rate
+      self rating of marriage, from 1 (very unhappy) to 5 (very happy)
 
-nbaffairs
-   number of affairs in past year
+   nbaffairs
+      number of affairs in past year
 
-Source
-~~~~~~
+   .. rubric:: Source
+      :name: source
 
-Fair, R. (1977) “A note on the computation of the tobit estimator”,
-*Econometrica*, **45**, 1723-1727.
+   Fair, R. (1977) “A note on the computation of the tobit estimator”,
+   *Econometrica*, **45**, 1723-1727.
 
-http://fairmodel.econ.yale.edu/rayfair/pdf/1978A200.PDF.
+   http://fairmodel.econ.yale.edu/rayfair/pdf/1978A200.PDF.
 
-References
-~~~~~~~~~~
+   .. rubric:: References
+      :name: references
 
-Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-http://www.prenhall.com/greene/greene1.html, Table F22.2.
+   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+   http://www.prenhall.com/greene/greene1.html, Table F22.2.
 
-See Also
-~~~~~~~~
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

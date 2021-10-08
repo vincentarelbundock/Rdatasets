@@ -1,67 +1,70 @@
-======= ===============
-Heating R Documentation
-======= ===============
+.. container::
 
-Heating System Choice in California Houses
-------------------------------------------
+   ======= ===============
+   Heating R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Heating System Choice in California Houses
+      :name: heating-system-choice-in-california-houses
 
-a cross-section
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 900
+   a cross-section
 
-*observation* : households
+   *number of observations* : 900
 
-*country* : California
+   *observation* : households
 
-Usage
-~~~~~
+   *country* : California
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Heating)
+   ::
 
-Format
-~~~~~~
+      data(Heating)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-idcase
-   id
+   A dataframe containing :
 
-depvar
-   heating system, one of ``gc`` (gas central), ``gr`` (gas room),
-   ``ec`` (electric central), ``er`` (electric room), ``hp`` (heat pump)
+   idcase
+      id
 
-ic.z
-   installation cost for heating system z (defined for the 5 heating
-   systems)
+   depvar
+      heating system, one of ``gc`` (gas central), ``gr`` (gas room),
+      ``ec`` (electric central), ``er`` (electric room), ``hp`` (heat
+      pump)
 
-oc.z
-   annual operating cost for heating system z (defined for the 5 heating
-   systems)
+   ic.z
+      installation cost for heating system z (defined for the 5 heating
+      systems)
 
-pb.z
-   ratio ``oc.z/ic.z``
+   oc.z
+      annual operating cost for heating system z (defined for the 5
+      heating systems)
 
-income
-   annual income of the household
+   pb.z
+      ratio ``oc.z/ic.z``
 
-agehed
-   age of the household head
+   income
+      annual income of the household
 
-rooms
-   numbers of rooms in the house
+   agehed
+      age of the household head
 
-References
-~~~~~~~~~~
+   rooms
+      numbers of rooms in the house
 
-Kenneth Train's home page : https://eml.berkeley.edu/~train/.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Kenneth Train's home page : https://eml.berkeley.edu/~train/.
 
-``HC``, ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``HC``, ``Index.Source``, ``Index.Economics``,
+   ``Index.Econometrics``, ``Index.Observations``

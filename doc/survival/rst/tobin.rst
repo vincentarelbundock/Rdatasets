@@ -1,50 +1,52 @@
-===== ===============
-tobin R Documentation
-===== ===============
+.. container::
 
-Tobin's Tobit data
-------------------
+   ===== ===============
+   tobin R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Tobin's Tobit data
+      :name: tobins-tobit-data
 
-Economists fit a parametric censored data model called the ‘tobit’.
-These data are from Tobin's original paper.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Economists fit a parametric censored data model called the ‘tobit’.
+   These data are from Tobin's original paper.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   tobin
-   data(tobin, package="survival")
+   ::
 
-Format
-~~~~~~
+      tobin
+      data(tobin, package="survival")
 
-A data frame with 20 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-durable
-   Durable goods purchase
+   A data frame with 20 observations on the following 3 variables.
 
-age
-   Age in years
+   durable
+      Durable goods purchase
 
-quant
-   Liquidity ratio (x 1000)
+   age
+      Age in years
 
-Source
-~~~~~~
+   quant
+      Liquidity ratio (x 1000)
 
-J Tobin (1958), Estimation of relationships for limited dependent
-variables. *Econometrica* **26**, 24–36.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   J Tobin (1958), Estimation of relationships for limited dependent
+   variables. *Econometrica* **26**, 24–36.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   tfit <- survreg(Surv(durable, durable>0, type='left') ~age + quant,
-                   data=tobin, dist='gaussian')
+   ::
 
-   predict(tfit,type="response")
+      tfit <- survreg(Surv(durable, durable>0, type='left') ~age + quant,
+                      data=tobin, dist='gaussian')
+
+      predict(tfit,type="response")

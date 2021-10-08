@@ -1,74 +1,76 @@
-========= ===============
-textbooks R Documentation
-========= ===============
+.. container::
 
-Textbook data for UCLA Bookstore and Amazon
--------------------------------------------
+   ========= ===============
+   textbooks R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Textbook data for UCLA Bookstore and Amazon
+      :name: textbook-data-for-ucla-bookstore-and-amazon
 
-A random sample was taken of nearly 10\\ textbook for each course was
-identified, and its new price at the UCLA Bookstore and on Amazon.com
-were recorded.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A random sample was taken of nearly 10\\ textbook for each course was
+   identified, and its new price at the UCLA Bookstore and on Amazon.com
+   were recorded.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   textbooks
+   ::
 
-Format
-~~~~~~
+      textbooks
 
-A data frame with 73 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-dept_abbr
-   Course department (abbreviated).
+   A data frame with 73 observations on the following 7 variables.
 
-course
-   Course number.
+   dept_abbr
+      Course department (abbreviated).
 
-isbn
-   Book ISBN.
+   course
+      Course number.
 
-ucla_new
-   New price at the UCLA Bookstore.
+   isbn
+      Book ISBN.
 
-amaz_new
-   New price on Amazon.com.
+   ucla_new
+      New price at the UCLA Bookstore.
 
-more
-   Whether additional books were required for the course (``Y`` means
-   "yes, additional books were required").
+   amaz_new
+      New price on Amazon.com.
 
-diff
-   The UCLA Bookstore price minus the Amazon.com price for each book.
+   more
+      Whether additional books were required for the course (``Y`` means
+      "yes, additional books were required").
 
-Details
-~~~~~~~
+   diff
+      The UCLA Bookstore price minus the Amazon.com price for each book.
 
-The sample represents only courses where textbooks were listed online
-through UCLA Bookstore's website. The most expensive textbook was
-selected based on the UCLA Bookstore price, which may insert bias into
-the data; for this reason, it may be beneficial to analyze only the data
-where ``more`` is ``"N"``.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The sample represents only courses where textbooks were listed online
+   through UCLA Bookstore's website. The most expensive textbook was
+   selected based on the UCLA Bookstore price, which may insert bias
+   into the data; for this reason, it may be beneficial to analyze only
+   the data where ``more`` is ``"N"``.
 
-Collected by David Diez.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Collected by David Diez.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(textbooks, aes(x = diff)) +
-     geom_histogram(binwidth = 5)
+      ggplot(textbooks, aes(x = diff)) +
+        geom_histogram(binwidth = 5)
 
-   t.test(textbooks$diff)
+      t.test(textbooks$diff)

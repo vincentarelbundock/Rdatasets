@@ -1,75 +1,77 @@
-======== ===============
-epilepsy R Documentation
-======== ===============
+.. container::
 
-Epilepsy Data
--------------
+   ======== ===============
+   epilepsy R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Epilepsy Data
+      :name: epilepsy-data
 
-A randomised clinical trial investigating the effect of an
-anti-epileptic drug.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A randomised clinical trial investigating the effect of an
+   anti-epileptic drug.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("epilepsy")
+   ::
 
-Format
-~~~~~~
+      data("epilepsy")
 
-A data frame with 236 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``treatment``
-   the treatment group, a factor with levels ``placebo`` and
-   ``Progabide``.
+   A data frame with 236 observations on the following 6 variables.
 
-``base``
-   the number of seizures before the trial.
+   ``treatment``
+      the treatment group, a factor with levels ``placebo`` and
+      ``Progabide``.
 
-``age``
-   the age of the patient.
+   ``base``
+      the number of seizures before the trial.
 
-``seizure.rate``
-   the number of seizures (response variable).
+   ``age``
+      the age of the patient.
 
-``period``
-   treatment period, an ordered factor with levels ``1`` to ``4``.
+   ``seizure.rate``
+      the number of seizures (response variable).
 
-``subject``
-   the patient ID, a factor with levels ``1`` to ``59``.
+   ``period``
+      treatment period, an ordered factor with levels ``1`` to ``4``.
 
-Details
-~~~~~~~
+   ``subject``
+      the patient ID, a factor with levels ``1`` to ``59``.
 
-In this clinical trial, 59 patients suffering from epilepsy were
-randomized to groups receiving either the anti-epileptic drug Progabide
-or a placebo in addition to standard chemotherapy. The numbers of
-seizures suffered in each of four, two-week periods were recorded for
-each patient along with a baseline seizure count for the 8 weeks prior
-to being randomized to treatment and age. The main question of interest
-is whether taking progabide reduced the number of epileptic seizures
-compared with placebo.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   In this clinical trial, 59 patients suffering from epilepsy were
+   randomized to groups receiving either the anti-epileptic drug
+   Progabide or a placebo in addition to standard chemotherapy. The
+   numbers of seizures suffered in each of four, two-week periods were
+   recorded for each patient along with a baseline seizure count for the
+   8 weeks prior to being randomized to treatment and age. The main
+   question of interest is whether taking progabide reduced the number
+   of epileptic seizures compared with placebo.
 
-P. F. Thall and S. C. Vail (1990), Some covariance models for
-longitudinal count data with overdispersion. *Biometrics*, **46**,
-657–671.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   P. F. Thall and S. C. Vail (1990), Some covariance models for
+   longitudinal count data with overdispersion. *Biometrics*, **46**,
+   657–671.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-     data("epilepsy", package = "HSAUR")
-     library(lattice)
-     dotplot(I(seizure.rate / base) ~ period | subject, data = epilepsy, 
-             subset = treatment == "Progabide")
-     dotplot(I(seizure.rate / base) ~ period | subject, data = epilepsy, 
-             subset = treatment == "Progabide")
+        data("epilepsy", package = "HSAUR")
+        library(lattice)
+        dotplot(I(seizure.rate / base) ~ period | subject, data = epilepsy, 
+                subset = treatment == "Progabide")
+        dotplot(I(seizure.rate / base) ~ period | subject, data = epilepsy, 
+                subset = treatment == "Progabide")

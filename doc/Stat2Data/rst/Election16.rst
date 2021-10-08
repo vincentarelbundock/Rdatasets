@@ -1,61 +1,63 @@
-========== ===============
-Election16 R Documentation
-========== ===============
+.. container::
 
-2016 U.S. Presidential Election
--------------------------------
+   ========== ===============
+   Election16 R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: 2016 U.S. Presidential Election
+      :name: u.s.-presidential-election
 
-2016 presidential election and state demographic data
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   2016 presidential election and state demographic data
 
-A data frame with 50 observations on the following 8 variables.
+   .. rubric:: Format
+      :name: format
 
-``State``
-   State name
+   A data frame with 50 observations on the following 8 variables.
 
-``Abr``
-   Abbreviation for state name
+   ``State``
+      State name
 
-``Income``
-   Per capita income in the state
+   ``Abr``
+      Abbreviation for state name
 
-``HS``
-   Percent high school grads
+   ``Income``
+      Per capita income in the state
 
-``BA``
-   Percent college grads
+   ``HS``
+      Percent high school grads
 
-``Adv``
-   Percent with advanced degrees
+   ``BA``
+      Percent college grads
 
-``Dem.Rep``
-   Democratic lean - Republican lean in 2015 Gallup poll
+   ``Adv``
+      Percent with advanced degrees
 
-``TrumpWin``
-   Trump won the state? (``1``\ =yes or ``0``\ =no)
+   ``Dem.Rep``
+      Democratic lean - Republican lean in 2015 Gallup poll
 
-Details
-~~~~~~~
+   ``TrumpWin``
+      Trump won the state? (``1``\ =yes or ``0``\ =no)
 
-This dataset contains information from all 50 states and the District of
-Columbia for the 2016 U.S. presidential election. It is similar to
-Election08 for the 2008 election.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This dataset contains information from all 50 states and the District
+   of Columbia for the 2016 U.S. presidential election. It is similar to
+   Election08 for the 2008 election.
 
-| Income data from
-| https://www.census.gov/search-results.html?q=per+capita+income+by+state&search.x=0
-  &search.y=0&search=submit&page=1&stateGeo=none&searchtype=web&cssp=SERP
+   .. rubric:: Source
+      :name: source
 
-| 2015 data via American Community Survey
-| https://en.wikipedia.org/wiki/List_of_U.S._states_by_educational_attainment
-  from Bureau, U.S. Census. "2011-2015 American Community Survey 5-Year
-  Estimates. factfinder.census.gov. Retrieved 2017-01-19.
+   | Income data from
+   | https://www.census.gov/search-results.html?q=per+capita+income+by+state&search.x=0
+     &search.y=0&search=submit&page=1&stateGeo=none&searchtype=web&cssp=SERP
 
-http://www.gallup.com/poll/188969/red-states-outnumber-blue-first-time-gallup-tracking.aspx
+   | 2015 data via American Community Survey
+   | https://en.wikipedia.org/wiki/List_of_U.S._states_by_educational_attainment
+     from Bureau, U.S. Census. "2011-2015 American Community Survey
+     5-Year Estimates. factfinder.census.gov. Retrieved 2017-01-19.
+
+   http://www.gallup.com/poll/188969/red-states-outnumber-blue-first-time-gallup-tracking.aspx

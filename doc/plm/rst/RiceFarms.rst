@@ -1,101 +1,104 @@
-========= ===============
-RiceFarms R Documentation
-========= ===============
+.. container::
 
-Production of Rice in Indonesia
--------------------------------
+   ========= ===============
+   RiceFarms R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Production of Rice in Indonesia
+      :name: production-of-rice-in-indonesia
 
-a panel of 171 observations
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   a panel of 171 observations
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-id
-   the farm identifier
+   A dataframe containing :
 
-size
-   the total area cultivated with rice, measured in hectares
+   id
+      the farm identifier
 
-status
-   land status, on of ``'owner'`` (non sharecroppers, owner operators or
-   leaseholders or both), ``'share'`` (sharecroppers), ``'mixed'``
-   (mixed of the two previous status)
+   size
+      the total area cultivated with rice, measured in hectares
 
-varieties
-   one of ``'trad'`` (traditional varieties), ``'high'`` (high yielding
-   varieties) and ``'mixed'`` (mixed varieties)
+   status
+      land status, on of ``'owner'`` (non sharecroppers, owner operators
+      or leaseholders or both), ``'share'`` (sharecroppers), ``'mixed'``
+      (mixed of the two previous status)
 
-bimas
-   bIMAS is an intensification program; one of ``'no'`` (non-bimas
-   farmer), ``'yes'`` (bimas farmer) or ``'mixed'`` (part but not all of
-   farmer's land was registered to be in the bimas program)
+   varieties
+      one of ``'trad'`` (traditional varieties), ``'high'`` (high
+      yielding varieties) and ``'mixed'`` (mixed varieties)
 
-seed
-   seed in kilogram
+   bimas
+      bIMAS is an intensification program; one of ``'no'`` (non-bimas
+      farmer), ``'yes'`` (bimas farmer) or ``'mixed'`` (part but not all
+      of farmer's land was registered to be in the bimas program)
 
-urea
-   urea in kilogram
+   seed
+      seed in kilogram
 
-phosphate
-   phosphate in kilogram
+   urea
+      urea in kilogram
 
-pesticide
-   pesticide cost in Rupiah
+   phosphate
+      phosphate in kilogram
 
-pseed
-   price of seed in Rupiah per kg
+   pesticide
+      pesticide cost in Rupiah
 
-purea
-   price of urea in Rupiah per kg
+   pseed
+      price of seed in Rupiah per kg
 
-pphosph
-   price of phosphate in Rupiah per kg
+   purea
+      price of urea in Rupiah per kg
 
-hiredlabor
-   hired labor in hours
+   pphosph
+      price of phosphate in Rupiah per kg
 
-famlabor
-   family labor in hours
+   hiredlabor
+      hired labor in hours
 
-totlabor
-   total labor (excluding harvest labor)
+   famlabor
+      family labor in hours
 
-wage
-   labor wage in Rupiah per hour
+   totlabor
+      total labor (excluding harvest labor)
 
-goutput
-   gross output of rice in kg
+   wage
+      labor wage in Rupiah per hour
 
-noutput
-   net output, gross output minus harvesting cost (paid in terms of
-   rice)
+   goutput
+      gross output of rice in kg
 
-price
-   price of rough rice in Rupiah per kg
+   noutput
+      net output, gross output minus harvesting cost (paid in terms of
+      rice)
 
-region
-   one of ``'wargabinangun'``, ``'langan'``, ``'gunungwangi'``,
-   ``'malausma'``, ``'sukaambit'``, ``'ciwangi'``
+   price
+      price of rough rice in Rupiah per kg
 
-Details
-~~~~~~~
+   region
+      one of ``'wargabinangun'``, ``'langan'``, ``'gunungwangi'``,
+      ``'malausma'``, ``'sukaambit'``, ``'ciwangi'``
 
-*number of observations* : 1026
+   .. rubric:: Details
+      :name: details
 
-*observation* : farms
+   *number of observations* : 1026
 
-*country* : Indonesia
+   *observation* : farms
 
-Source
-~~~~~~
+   *country* : Indonesia
 
-Feng Q, Horrace WC (2012). “Alternative technical efficiency measures:
-Skew, bias and scale.” *Journal of Applied Econometrics*, **27**\ (2),
-253-268. doi: `10.1002/jae.1190 <https://doi.org/10.1002/jae.1190>`__,
-https://onlinelibrary.wiley.com/doi/pdf/10.1002/jae.1190,
-https://onlinelibrary.wiley.com/doi/abs/10.1002/jae.1190.
+   .. rubric:: Source
+      :name: source
+
+   Feng Q, Horrace WC (2012). “Alternative technical efficiency
+   measures: Skew, bias and scale.” *Journal of Applied Econometrics*,
+   **27**\ (2), 253-268. doi:
+   `10.1002/jae.1190 <https://doi.org/10.1002/jae.1190>`__,
+   https://onlinelibrary.wiley.com/doi/pdf/10.1002/jae.1190,
+   https://onlinelibrary.wiley.com/doi/abs/10.1002/jae.1190.

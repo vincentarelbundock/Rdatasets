@@ -1,74 +1,76 @@
-======== ===============
-fastfood R Documentation
-======== ===============
+.. container::
 
-Nutrition in fast food
-----------------------
+   ======== ===============
+   fastfood R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Nutrition in fast food
+      :name: nutrition-in-fast-food
 
-Nutrition amounts in 515 fast food items.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Nutrition amounts in 515 fast food items.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   fastfood
+   ::
 
-Format
-~~~~~~
+      fastfood
 
-A data frame with 515 observations on the following 17 variables.
+   .. rubric:: Format
+      :name: format
 
-restaurant
-   Name of restaurant
+   A data frame with 515 observations on the following 17 variables.
 
-item
-   Name of item
+   restaurant
+      Name of restaurant
 
-calories
-   Number of calories
+   item
+      Name of item
 
-cal_fat
-   Calories from fat
+   calories
+      Number of calories
 
-total_fat
-   Total fat
+   cal_fat
+      Calories from fat
 
-sat_fat
-   Saturated fat
+   total_fat
+      Total fat
 
-trans_fat
-   Trans fat
+   sat_fat
+      Saturated fat
 
-cholesterol
-   Cholesterol
+   trans_fat
+      Trans fat
 
-sodium
-   Sodium
+   cholesterol
+      Cholesterol
 
-total_carb
-   Total carbs
+   sodium
+      Sodium
 
-fiber
-   Fiber
+   total_carb
+      Total carbs
 
-sugar
-   Suger
+   fiber
+      Fiber
 
-protein
-   Protein
+   sugar
+      Suger
 
-vit_a
-   Vitamin A
+   protein
+      Protein
 
-vit_c
-   Vitamin C
+   vit_a
+      Vitamin A
 
-calcium
-   Calcium
+   vit_c
+      Vitamin C
 
-salad
-   Salad or not
+   calcium
+      Calcium
+
+   salad
+      Salad or not

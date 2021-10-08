@@ -1,43 +1,45 @@
-=============== ===============
-coast_starlight R Documentation
-=============== ===============
+.. container::
 
-Coast Starlight Amtrak train
-----------------------------
+   =============== ===============
+   coast_starlight R Documentation
+   =============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Coast Starlight Amtrak train
+      :name: coast-starlight-amtrak-train
 
-Travel times and distances.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Travel times and distances.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   coast_starlight
+   ::
 
-Format
-~~~~~~
+      coast_starlight
 
-A data frame with 16 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-station
-   Station.
+   A data frame with 16 observations on the following 3 variables.
 
-dist
-   Distance.
+   station
+      Station.
 
-travel_time
-   Travel time.
+   dist
+      Distance.
 
-Examples
-~~~~~~~~
+   travel_time
+      Travel time.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(coast_starlight, aes(x = dist, y = travel_time)) +
-     geom_point()
+      ggplot(coast_starlight, aes(x = dist, y = travel_time)) +
+        geom_point()

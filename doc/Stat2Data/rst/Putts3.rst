@@ -1,39 +1,41 @@
-====== ===============
-Putts3 R Documentation
-====== ===============
+.. container::
 
-Hypothetical Putting Data (Short Form)
---------------------------------------
+   ====== ===============
+   Putts3 R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Hypothetical Putting Data (Short Form)
+      :name: hypothetical-putting-data-short-form
 
-Hypothetical putting results for a golfing statistician
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Hypothetical putting results for a golfing statistician
 
-A data frame with 5 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``Length``
-   Length of the attempted putt (in feet)
+   A data frame with 5 observations on the following 4 variables.
 
-``Made``
-   Number of putts made at this length
+   ``Length``
+      Length of the attempted putt (in feet)
 
-``Missed``
-   Number of putts missed at this length
+   ``Made``
+      Number of putts made at this length
 
-``Trials``
-   Total number of putts attempted at this length
+   ``Missed``
+      Number of putts missed at this length
 
-Details
-~~~~~~~
+   ``Trials``
+      Total number of putts attempted at this length
 
-This is a hypothetical revision of the table of putting success in
-Putts2 that helps demonstrate overdispersion.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This is a hypothetical revision of the table of putting success in
+   Putts2 that helps demonstrate overdispersion.
 
-Modified from personal observations by one of the Stat2 authors.
+   .. rubric:: Source
+      :name: source
+
+   Modified from personal observations by one of the Stat2 authors.

@@ -1,63 +1,66 @@
-== ===============
-HC R Documentation
-== ===============
+.. container::
 
-Heating and Cooling System Choice in Newly Built Houses in California
----------------------------------------------------------------------
+   == ===============
+   HC R Documentation
+   == ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Heating and Cooling System Choice in Newly Built Houses
+      in California
+      :name: heating-and-cooling-system-choice-in-newly-built-houses-in-california
 
-a cross-section
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 250
+   a cross-section
 
-*observation* : households
+   *number of observations* : 250
 
-*country* : California
+   *observation* : households
 
-Usage
-~~~~~
+   *country* : California
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(HC)
+   ::
 
-Format
-~~~~~~
+      data(HC)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-depvar
-   heating system, one of ``gcc`` (gas central heat with cooling),
-   ``ecc`` (electric central resistance heat with cooling), ``erc``
-   (electric room resistance heat with cooling), ``hpc`` (electric heat
-   pump which provides cooling also), ``gc`` (gas central heat without
-   cooling, ``ec`` (electric central resistance heat without cooling),
-   ``er`` (electric room resistance heat without cooling)
+   A dataframe containing :
 
-ich.z
-   installation cost of the heating portion of the system
+   depvar
+      heating system, one of ``gcc`` (gas central heat with cooling),
+      ``ecc`` (electric central resistance heat with cooling), ``erc``
+      (electric room resistance heat with cooling), ``hpc`` (electric
+      heat pump which provides cooling also), ``gc`` (gas central heat
+      without cooling, ``ec`` (electric central resistance heat without
+      cooling), ``er`` (electric room resistance heat without cooling)
 
-icca
-   installation cost for cooling
+   ich.z
+      installation cost of the heating portion of the system
 
-och.z
-   operating cost for the heating portion of the system
+   icca
+      installation cost for cooling
 
-occa
-   operating cost for cooling
+   och.z
+      operating cost for the heating portion of the system
 
-income
-   annual income of the household
+   occa
+      operating cost for cooling
 
-References
-~~~~~~~~~~
+   income
+      annual income of the household
 
-Kenneth Train's home page : http://elsa.berkeley.edu/~train/.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Kenneth Train's home page : http://elsa.berkeley.edu/~train/.
 
-``Heating``, ``Index.Source``, ``Index.Economics``,
-``Index.Econometrics``, ``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Heating``, ``Index.Source``, ``Index.Economics``,
+   ``Index.Econometrics``, ``Index.Observations``

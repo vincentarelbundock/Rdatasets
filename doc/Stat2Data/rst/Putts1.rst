@@ -1,36 +1,39 @@
-====== ===============
-Putts1 R Documentation
-====== ===============
+.. container::
 
-Putting Success by Length (Long Form)
--------------------------------------
+   ====== ===============
+   Putts1 R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Putting Success by Length (Long Form)
+      :name: putting-success-by-length-long-form
 
-Putting results for a golfing statistician
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Putting results for a golfing statistician
 
-A dataset with 587 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-========== ================================================
-``Length`` Length of the putt (in feet)
-``Made``   ``1``\ =made the putt or ``0``\ =missed the putt
-\          
-========== ================================================
+   A dataset with 587 observations on the following 2 variables.
 
-Details
-~~~~~~~
+   ========== ================================================
+   ``Length`` Length of the putt (in feet)
+   ``Made``   ``1``\ =made the putt or ``0``\ =missed the putt
+   \          
+   ========== ================================================
 
-A statistician golfer kept careful records of every putt he attempted
-when playing golf, recording the length of the putt and whether or not
-he was successful in making the putt. This dataset has one case for each
-of the 587 attempted putts. A different form of the same data (Putts2)
-accumulates counts of makes and misses for each putt length.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   A statistician golfer kept careful records of every putt he attempted
+   when playing golf, recording the length of the putt and whether or
+   not he was successful in making the putt. This dataset has one case
+   for each of the 587 attempted putts. A different form of the same
+   data (Putts2) accumulates counts of makes and misses for each putt
+   length.
 
-Personal observations by one of the Stat2 authors
+   .. rubric:: Source
+      :name: source
+
+   Personal observations by one of the Stat2 authors

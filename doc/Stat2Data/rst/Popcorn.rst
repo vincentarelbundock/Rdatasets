@@ -1,40 +1,43 @@
-======= ===============
-Popcorn R Documentation
-======= ===============
+.. container::
 
-Popcorn Popping Success
------------------------
+   ======= ===============
+   Popcorn R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Popcorn Popping Success
+      :name: popcorn-popping-success
 
-Unpopped kernels in bags of microwave popcorn
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Unpopped kernels in bags of microwave popcorn
 
-A dataset with 12 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-============ =========================================================
-``Unpopped`` Number of unpopped kernels (adjusted for size difference)
-``Brand``    ``Orville`` or ``Seaway``
-``Trial``    Trial number
-\            
-============ =========================================================
+   A dataset with 12 observations on the following 3 variables.
 
-Details
-~~~~~~~
+   ============ =========================================================
+   ``Unpopped`` Number of unpopped kernels (adjusted for size difference)
+   ``Brand``    ``Orville`` or ``Seaway``
+   ``Trial``    Trial number
+   \            
+   ============ =========================================================
 
-Two students, Lara and Lisa, conducted an experiment to compare Orville
-Redenbacher's Light Butter Flavor vs. Seaway microwave popcorn. They
-made 12 batches of popcorn, 6 of each type, cooking each batch for four
-minutes. They noted that the microwave oven seemed to get warmer as they
-went along so they kept track of six trials and randomly chose which
-brand would go first for each trial. For a response variable they
-counted the number of unpopped kernels and then adjusted the count for
-Seaway for having more ounces per bag of popcorn (3.5 vs 3.0).
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Two students, Lara and Lisa, conducted an experiment to compare
+   Orville Redenbacher's Light Butter Flavor vs. Seaway microwave
+   popcorn. They made 12 batches of popcorn, 6 of each type, cooking
+   each batch for four minutes. They noted that the microwave oven
+   seemed to get warmer as they went along so they kept track of six
+   trials and randomly chose which brand would go first for each trial.
+   For a response variable they counted the number of unpopped kernels
+   and then adjusted the count for Seaway for having more ounces per bag
+   of popcorn (3.5 vs 3.0).
 
-Student project
+   .. rubric:: Source
+      :name: source
+
+   Student project

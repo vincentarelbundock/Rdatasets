@@ -1,80 +1,83 @@
-============ ===============
-cia_factbook R Documentation
-============ ===============
+.. container::
 
-CIA Factbook Details on Countries
----------------------------------
+   ============ ===============
+   cia_factbook R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: CIA Factbook Details on Countries
+      :name: cia-factbook-details-on-countries
 
-Country-level statistics from the US Central Intelligence Agency (CIA).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Country-level statistics from the US Central Intelligence Agency
+   (CIA).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   cia_factbook
+   ::
 
-Format
-~~~~~~
+      cia_factbook
 
-A data frame with 259 observations on the following 11 variables.
+   .. rubric:: Format
+      :name: format
 
-country
-   Country name.
+   A data frame with 259 observations on the following 11 variables.
 
-area
-   Land area, in square kilometers. (1 square kilometer is 0.386 square
-   miles
+   country
+      Country name.
 
-birth_rate
-   Birth rate, in births per 1,000 people.
+   area
+      Land area, in square kilometers. (1 square kilometer is 0.386
+      square miles
 
-death_rate
-   Death rate, in deaths per 1,000 people.
+   birth_rate
+      Birth rate, in births per 1,000 people.
 
-infant_mortality_rate
-   Infant mortality, in deaths per 1,000 live births.
+   death_rate
+      Death rate, in deaths per 1,000 people.
 
-internet_users
-   Total number of internet users.
+   infant_mortality_rate
+      Infant mortality, in deaths per 1,000 live births.
 
-life_exp_at_birth
-   Live expectancy at birth, in years.
+   internet_users
+      Total number of internet users.
 
-maternal_mortality_rate
-   Number of female deaths per 100,000 live births where the death is
-   related to pregnancy or birth.
+   life_exp_at_birth
+      Live expectancy at birth, in years.
 
-net_migration_rate
-   Net migration rate.
+   maternal_mortality_rate
+      Number of female deaths per 100,000 live births where the death is
+      related to pregnancy or birth.
 
-population
-   Total population.
+   net_migration_rate
+      Net migration rate.
 
-population_growth_rate
-   Population growth rate.
+   population
+      Total population.
 
-Source
-~~~~~~
+   population_growth_rate
+      Population growth rate.
 
-CIA Factbook, Country Comparisons, 2014.
-https://www.cia.gov/the-world-factbook/references/guide-to-country-comparisons/
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   CIA Factbook, Country Comparisons, 2014.
+   https://www.cia.gov/the-world-factbook/references/guide-to-country-comparisons/
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(dplyr)
-   library(ggplot2)
+      library(dplyr)
+      library(ggplot2)
 
-   cia_factbook_iup <- cia_factbook %>%
-     mutate(internet_users_percent = 100 * internet_users / population)
+      cia_factbook_iup <- cia_factbook %>%
+        mutate(internet_users_percent = 100 * internet_users / population)
 
-   ggplot(cia_factbook_iup, aes(x = internet_users_percent, y = life_exp_at_birth)) +
-     geom_point() +
-     labs(x = "Percentage of internet users", y = "Life expectancy at birth")
+      ggplot(cia_factbook_iup, aes(x = internet_users_percent, y = life_exp_at_birth)) +
+        geom_point() +
+        labs(x = "Percentage of internet users", y = "Life expectancy at birth")

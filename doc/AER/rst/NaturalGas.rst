@@ -1,76 +1,78 @@
-========== ===============
-NaturalGas R Documentation
-========== ===============
+.. container::
 
-Natural Gas Data
-----------------
+   ========== ===============
+   NaturalGas R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Natural Gas Data
+      :name: natural-gas-data
 
-Panel data originating from 6 US states over the period 1967–1989.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Panel data originating from 6 US states over the period 1967–1989.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("NaturalGas")
+   ::
 
-Format
-~~~~~~
+      data("NaturalGas")
 
-A data frame containing 138 observations on 10 variables.
+   .. rubric:: Format
+      :name: format
 
-state
-   factor. State abbreviation.
+   A data frame containing 138 observations on 10 variables.
 
-statecode
-   factor. State Code.
+   state
+      factor. State abbreviation.
 
-year
-   factor coding year.
+   statecode
+      factor. State Code.
 
-consumption
-   Consumption of natural gas by the residential sector.
+   year
+      factor coding year.
 
-price
-   Price of natural gas
+   consumption
+      Consumption of natural gas by the residential sector.
 
-eprice
-   Price of electricity.
+   price
+      Price of natural gas
 
-oprice
-   Price of distillate fuel oil.
+   eprice
+      Price of electricity.
 
-lprice
-   Price of liquefied petroleum gas.
+   oprice
+      Price of distillate fuel oil.
 
-heating
-   Heating degree days.
+   lprice
+      Price of liquefied petroleum gas.
 
-income
-   Real per-capita personal income.
+   heating
+      Heating degree days.
 
-Source
-~~~~~~
+   income
+      Real per-capita personal income.
 
-The data are from Baltagi (2002).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The data are from Baltagi (2002).
 
-Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
 
-``Baltagi2002``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Baltagi2002``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("NaturalGas")
-   summary(NaturalGas)
+   ::
+
+      data("NaturalGas")
+      summary(NaturalGas)

@@ -1,49 +1,51 @@
-=========== ===============
-pistonrings R Documentation
-=========== ===============
+.. container::
 
-Piston Rings Failures
----------------------
+   =========== ===============
+   pistonrings R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Piston Rings Failures
+      :name: piston-rings-failures
 
-Number of failures of piston rings in three legs of four steam-driven
-compressors.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Number of failures of piston rings in three legs of four steam-driven
+   compressors.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("pistonrings")
+   ::
 
-Format
-~~~~~~
+      data("pistonrings")
 
-A two-way classification, see ``table``.
+   .. rubric:: Format
+      :name: format
 
-Details
-~~~~~~~
+   A two-way classification, see ``table``.
 
-The data are given in form of a ``table``. The table gives the number of
-piston-ring failures in each of three legs of four steam-driven
-compressors located in the same building. The compressors have identical
-design and are oriented in the same way. The question of interest is
-whether the two classification variables (compressor and leg) are
-independent.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data are given in form of a ``table``. The table gives the number
+   of piston-ring failures in each of three legs of four steam-driven
+   compressors located in the same building. The compressors have
+   identical design and are oriented in the same way. The question of
+   interest is whether the two classification variables (compressor and
+   leg) are independent.
 
-S. J. Haberman (1973), The analysis of residuals in cross-classificed
-tables. *Biometrics* **29**, 205–220.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   S. J. Haberman (1973), The analysis of residuals in cross-classificed
+   tables. *Biometrics* **29**, 205–220.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-     
-     data("pistonrings", package = "HSAUR")
-     mosaicplot(pistonrings)
+   ::
+
+        
+        data("pistonrings", package = "HSAUR")
+        mosaicplot(pistonrings)

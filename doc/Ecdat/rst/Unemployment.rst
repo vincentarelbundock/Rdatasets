@@ -1,94 +1,97 @@
-============ ===============
-Unemployment R Documentation
-============ ===============
+.. container::
 
-Unemployment Duration
----------------------
+   ============ ===============
+   Unemployment R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Unemployment Duration
+      :name: unemployment-duration
 
-a cross-section from 1993
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 452
+   a cross-section from 1993
 
-*observation* : individuals
+   *number of observations* : 452
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Unemployment)
+   ::
 
-Format
-~~~~~~
+      data(Unemployment)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-duration
-   duration of first spell of unemployment, t, in weeks
+   A dataframe containing :
 
-spell
-   1 if spell is complete
+   duration
+      duration of first spell of unemployment, t, in weeks
 
-race
-   one of nonwhite, white
+   spell
+      1 if spell is complete
 
-sex
-   one of male, female
+   race
+      one of nonwhite, white
 
-reason
-   reason for unemployment, one of ``new`` (new entrant), ``lose`` (job
-   loser), ``leave`` (job leaver), ``reentr`` (labor force reentrant)
+   sex
+      one of male, female
 
-search
-   'yes' if (1) the unemployment spell is completed between the first
-   and second surveys and number of methods used to search > average
-   number of methods used across all records in the sample, or, (2) for
-   individuals who remain unemployed for consecutive surveys, if the
-   number of methods used is strictly nondecreasing at all survey
-   points, and is strictly increasing at least at one survey point
+   reason
+      reason for unemployment, one of ``new`` (new entrant), ``lose``
+      (job loser), ``leave`` (job leaver), ``reentr`` (labor force
+      reentrant)
 
-pubemp
-   'yes' if an individual used a public employment agency to search for
-   work at any survey points relating to the individuals first
-   unemployment spell
+   search
+      'yes' if (1) the unemployment spell is completed between the first
+      and second surveys and number of methods used to search > average
+      number of methods used across all records in the sample, or, (2)
+      for individuals who remain unemployed for consecutive surveys, if
+      the number of methods used is strictly nondecreasing at all survey
+      points, and is strictly increasing at least at one survey point
 
-ftp1
-   1 if an individual is searching for full time work at survey 1
+   pubemp
+      'yes' if an individual used a public employment agency to search
+      for work at any survey points relating to the individuals first
+      unemployment spell
 
-ftp2
-   1 if an individual is searching for full time work at survey 2
+   ftp1
+      1 if an individual is searching for full time work at survey 1
 
-ftp3
-   1 if an individual is searching for full time work at survey 3
+   ftp2
+      1 if an individual is searching for full time work at survey 2
 
-ftp4
-   1 if an individual is searching for full time work at survey 4
+   ftp3
+      1 if an individual is searching for full time work at survey 3
 
-nobs
-   number of observations on the first spell of unemployment for the
-   record
+   ftp4
+      1 if an individual is searching for full time work at survey 4
 
-Source
-~~~~~~
+   nobs
+      number of observations on the first spell of unemployment for the
+      record
 
-Romeo, Charles J. (1999) “Conducting inference in semiparametric
-duration models under inequality restrictions on the shape of the hazard
-implied by the job search theory”, *Journal of Applied Econometrics*,
-**14(6)**, 587–605.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Romeo, Charles J. (1999) “Conducting inference in semiparametric
+   duration models under inequality restrictions on the shape of the
+   hazard implied by the job search theory”, *Journal of Applied
+   Econometrics*, **14(6)**, 587–605.
 
-Journal of Applied Econometrics data archive :
-http://qed.econ.queensu.ca/jae/.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Journal of Applied Econometrics data archive :
+   http://qed.econ.queensu.ca/jae/.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

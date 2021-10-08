@@ -1,63 +1,65 @@
-=========== ===============
-absenteeism R Documentation
-=========== ===============
+.. container::
 
-Absenteeism from school in New South Wales
-------------------------------------------
+   =========== ===============
+   absenteeism R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Absenteeism from school in New South Wales
+      :name: absenteeism-from-school-in-new-south-wales
 
-Researchers interested in the relationship between absenteeism from
-school and certain demographic characteristics of children collected
-data from 146 randomly sampled students in rural New South Wales,
-Australia, in a particular school year.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Researchers interested in the relationship between absenteeism from
+   school and certain demographic characteristics of children collected
+   data from 146 randomly sampled students in rural New South Wales,
+   Australia, in a particular school year.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   absenteeism
+   ::
 
-Format
-~~~~~~
+      absenteeism
 
-A data frame with 146 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-eth
-   Ethnicity, representing Aboriginal (``A``) or not (``N``).
+   A data frame with 146 observations on the following 5 variables.
 
-sex
-   Gender.
+   eth
+      Ethnicity, representing Aboriginal (``A``) or not (``N``).
 
-age
-   Age bucket.
+   sex
+      Gender.
 
-lrn
-   Learner status, with average learner (``AL``) and slow learner
-   (``SL``).
+   age
+      Age bucket.
 
-days
-   Number of days absent.
+   lrn
+      Learner status, with average learner (``AL``) and slow learner
+      (``SL``).
 
-Source
-~~~~~~
+   days
+      Number of days absent.
 
-Venables WN, Ripley BD. 2002. Modern Applied Statistics with S. Fourth
-Edition. New York: Springer.
+   .. rubric:: Source
+      :name: source
 
-Data can also be found in the R ``MASS`` package under the data set name
-``quine``.
+   Venables WN, Ripley BD. 2002. Modern Applied Statistics with S.
+   Fourth Edition. New York: Springer.
 
-Examples
-~~~~~~~~
+   Data can also be found in the R ``MASS`` package under the data set
+   name ``quine``.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(absenteeism, aes(x = eth, y = days)) +
-     geom_boxplot() +
-     coord_flip()
+      ggplot(absenteeism, aes(x = eth, y = days)) +
+        geom_boxplot() +
+        coord_flip()

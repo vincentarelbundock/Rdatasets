@@ -1,40 +1,42 @@
-========== ===============
-HeatingOil R Documentation
-========== ===============
+.. container::
 
-Heating Oil Consumption
------------------------
+   ========== ===============
+   HeatingOil R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Heating Oil Consumption
+      :name: heating-oil-consumption
 
-Monthly US residential consumption of fuel oil (1983-2016)
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Monthly US residential consumption of fuel oil (1983-2016)
 
-A data frame with 408 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``Year``
-   Year (1983 to 2016)
+   A data frame with 408 observations on the following 4 variables.
 
-``Month``
-   Month (1=Jan through 12=Dec)
+   ``Year``
+      Year (1983 to 2016)
 
-``t``
-   Time index (1 to 408)
+   ``Month``
+      Month (1=Jan through 12=Dec)
 
-``FuelOil``
-   Residential consumption of fuel oil (in 1,000 barrels/day)
+   ``t``
+      Time index (1 to 408)
 
-Details
-~~~~~~~
+   ``FuelOil``
+      Residential consumption of fuel oil (in 1,000 barrels/day)
 
-U.S. residential consumption of distillate fuel oil each month from
-January 1983 through December 2016.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   U.S. residential consumption of distillate fuel oil each month from
+   January 1983 through December 2016.
 
-U.S. Energy Information Administration website,
-https://www.eia.gov/totalenergy/data/monthly/index.php
+   .. rubric:: Source
+      :name: source
+
+   U.S. Energy Information Administration website,
+   https://www.eia.gov/totalenergy/data/monthly/index.php

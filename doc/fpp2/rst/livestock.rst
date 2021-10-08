@@ -1,29 +1,31 @@
-========= ===============
-livestock R Documentation
-========= ===============
+.. container::
 
-Livestock (sheep) in Asia, 1961-2007.
--------------------------------------
+   ========= ===============
+   livestock R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Livestock (sheep) in Asia, 1961-2007.
+      :name: livestock-sheep-in-asia-1961-2007.
 
-Annual sheep livestock numbers in Asia (in million head).
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Annual sheep livestock numbers in Asia (in million head).
 
-Annual time series of class ``ts``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   Annual time series of class ``ts``.
 
-United Nations.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   United Nations.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   autoplot(livestock)
+      autoplot(livestock)

@@ -1,80 +1,82 @@
-============ ===============
-NOxEmissions R Documentation
-============ ===============
+.. container::
 
-NOx Air Pollution Data
-----------------------
+   ============ ===============
+   NOxEmissions R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: NOx Air Pollution Data
+      :name: nox-air-pollution-data
 
-A typical medium sized environmental data set with hourly measurements
-of *NOx* pollution content in the ambient air.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A typical medium sized environmental data set with hourly
+   measurements of *NOx* pollution content in the ambient air.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(NOxEmissions, package="robustbase")
+   ::
 
-Format
-~~~~~~
+      data(NOxEmissions, package="robustbase")
 
-A data frame with 8088 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``julday``
-   day number, a factor with levels ``373`` ... ``730``, typically with
-   24 hourly measurements.
+   A data frame with 8088 observations on the following 4 variables.
 
-``LNOx``
-   *\\log* of hourly mean of NOx concentration in ambient air [ppb] next
-   to a highly frequented motorway.
+   ``julday``
+      day number, a factor with levels ``373`` ... ``730``, typically
+      with 24 hourly measurements.
 
-``LNOxEm``
-   *\\log* of hourly sum of NOx emission of cars on this motorway in
-   arbitrary units.
+   ``LNOx``
+      *\\log* of hourly mean of NOx concentration in ambient air [ppb]
+      next to a highly frequented motorway.
 
-``sqrtWS``
-   Square root of wind speed [m/s].
+   ``LNOxEm``
+      *\\log* of hourly sum of NOx emission of cars on this motorway in
+      arbitrary units.
 
-Details
-~~~~~~~
+   ``sqrtWS``
+      Square root of wind speed [m/s].
 
-The original data set had more observations, but with missing values.
-Here, all cases with missing values were omitted (``na.omit(.)``), and
-then only those were retained that belonged to days with at least 20
-(fully) observed hourly measurements.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The original data set had more observations, but with missing values.
+   Here, all cases with missing values were omitted (``na.omit(.)``),
+   and then only those were retained that belonged to days with at least
+   20 (fully) observed hourly measurements.
 
-René Locher (at ZHAW, Switzerland).
+   .. rubric:: Source
+      :name: source
 
-See Also
-~~~~~~~~
+   René Locher (at ZHAW, Switzerland).
 
-another NOx dataset, ``ambientNOxCH``.
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   another NOx dataset, ``ambientNOxCH``.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(NOxEmissions)
-   plot(LNOx ~ LNOxEm, data = NOxEmissions, cex = 0.25, col = "gray30")
+   ::
 
-   ## Not run: ## these take too much time --
-    ## p = 340  ==> already Least Squares is not fast
-    (lmNOx <- lm(LNOx ~ . ,data = NOxEmissions))
-    plot(lmNOx) #->  indication of 1 outlier
+      data(NOxEmissions)
+      plot(LNOx ~ LNOxEm, data = NOxEmissions, cex = 0.25, col = "gray30")
 
-    M.NOx <- MASS::rlm(LNOx ~ . , data = NOxEmissions)
-    ## M-estimation works
-    ## whereas  MM-estimation fails:
-    try(MM.NOx <- MASS::rlm(LNOx ~ . , data = NOxEmissions, method = "MM"))
-    ## namely because S-estimation fails:
-    try(lts.NOx <- ltsReg(LNOx ~ . , data = NOxEmissions))
-    try(lmR.NOx <- lmrob (LNOx ~ . , data = NOxEmissions))
+      ## Not run: ## these take too much time --
+       ## p = 340  ==> already Least Squares is not fast
+       (lmNOx <- lm(LNOx ~ . ,data = NOxEmissions))
+       plot(lmNOx) #->  indication of 1 outlier
 
-   ## End(Not run)
+       M.NOx <- MASS::rlm(LNOx ~ . , data = NOxEmissions)
+       ## M-estimation works
+       ## whereas  MM-estimation fails:
+       try(MM.NOx <- MASS::rlm(LNOx ~ . , data = NOxEmissions, method = "MM"))
+       ## namely because S-estimation fails:
+       try(lts.NOx <- ltsReg(LNOx ~ . , data = NOxEmissions))
+       try(lmR.NOx <- lmrob (LNOx ~ . , data = NOxEmissions))
+
+      ## End(Not run)

@@ -1,82 +1,84 @@
-======= ===============
-teacher R Documentation
-======= ===============
+.. container::
 
-Teacher Salaries in St. Louis, Michigan
----------------------------------------
+   ======= ===============
+   teacher R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Teacher Salaries in St. Louis, Michigan
+      :name: teacher-salaries-in-st.-louis-michigan
 
-This data set contains teacher salaries from 2009-2010 for 71 teachers
-employed by the St. Louis Public School in Michigan, as well as several
-covariates.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data set contains teacher salaries from 2009-2010 for 71
+   teachers employed by the St. Louis Public School in Michigan, as well
+   as several covariates.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   teacher
+   ::
 
-Format
-~~~~~~
+      teacher
 
-A data frame with 71 observations on the following 8 variables.
+   .. rubric:: Format
+      :name: format
 
-id
-   Identification code for each teacher, assigned randomly.
+   A data frame with 71 observations on the following 8 variables.
 
-degree
-   Highest educational degree attained: ``BA`` (bachelor's degree) or
-   ``MA`` (master's degree).
+   id
+      Identification code for each teacher, assigned randomly.
 
-fte
-   Full-time enrollment status: full-time ``1`` or part-time ``0.5``.
+   degree
+      Highest educational degree attained: ``BA`` (bachelor's degree) or
+      ``MA`` (master's degree).
 
-years
-   Number of years employed by the school district.
+   fte
+      Full-time enrollment status: full-time ``1`` or part-time ``0.5``.
 
-base
-   Base annual salary, in dollars.
+   years
+      Number of years employed by the school district.
 
-fica
-   Amount paid into Social Security and Medicare per year through the
-   Federal Insurance Contribution Act (FICA), in dollars.
+   base
+      Base annual salary, in dollars.
 
-retirement
-   Amount paid into the retirement fund of the teacher per year, in
-   dollars.
+   fica
+      Amount paid into Social Security and Medicare per year through the
+      Federal Insurance Contribution Act (FICA), in dollars.
 
-total
-   Total annual salary of the teacher, resulting from the sum of base
-   salary + fica + retirement, in dollars.
+   retirement
+      Amount paid into the retirement fund of the teacher per year, in
+      dollars.
 
-Source
-~~~~~~
+   total
+      Total annual salary of the teacher, resulting from the sum of base
+      salary + fica + retirement, in dollars.
 
-Originally posted on https://dev.socrata.com/data, removed in 2020.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Originally posted on https://dev.socrata.com/data, removed in 2020.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   # Salary and education level
-   ggplot(teacher, aes(x = degree, y = base)) +
-     geom_boxplot() +
-     labs(x = "Highest educational degree attained",
-          y = "Base annual salary, in $",
-          color = "Degree",
-          title = "Salary and education level")
+      # Salary and education level
+      ggplot(teacher, aes(x = degree, y = base)) +
+        geom_boxplot() +
+        labs(x = "Highest educational degree attained",
+             y = "Base annual salary, in $",
+             color = "Degree",
+             title = "Salary and education level")
 
-   # Salary and years of employment
-   ggplot(teacher, aes(x = years, y = base, color = degree)) +
-     geom_point() +
-     labs(x = "Number of years employed by the school district",
-          y = "Base annual salary, in $",
-          color = "Degree",
-          title = "Salary and years of employment")
+      # Salary and years of employment
+      ggplot(teacher, aes(x = years, y = base, color = degree)) +
+        geom_point() +
+        labs(x = "Number of years employed by the school district",
+             y = "Base annual salary, in $",
+             color = "Degree",
+             title = "Salary and years of employment")

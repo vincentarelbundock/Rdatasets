@@ -1,44 +1,46 @@
-========= ===============
-LeafWidth R Documentation
-========= ===============
+.. container::
 
-Leaf Measurements
------------------
+   ========= ===============
+   LeafWidth R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Leaf Measurements
+      :name: leaf-measurements
 
-Measurements of Dodonaea viscosa leaves
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Measurements of Dodonaea viscosa leaves
 
-A data frame with 252 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``Width``
-   Average width (in mm)
+   A data frame with 252 observations on the following 5 variables.
 
-``Length``
-   Average length (in mm)
+   ``Width``
+      Average width (in mm)
 
-``LWRatio``
-   Length divided by Width
+   ``Length``
+      Average length (in mm)
 
-``Area``
-   Area (in sq. mm)
+   ``LWRatio``
+      Length divided by Width
 
-``Year``
-   Year the leaves were collected
+   ``Area``
+      Area (in sq. mm)
 
-Details
-~~~~~~~
+   ``Year``
+      Year the leaves were collected
 
-Data on samples of leaves from the species Dodonaea viscosa subsp.
-angustissima (common name hopbush), which have been collected in a
-certain region of South Australia for many years.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Data on samples of leaves from the species Dodonaea viscosa subsp.
+   angustissima (common name hopbush), which have been collected in a
+   certain region of South Australia for many years.
 
-Guerin, G., Wen, H., Lowe, A. (2012), "Leaf morphology shift linked to
-climate change," Biol. Lett., 8, doi: 10.1098/rsbl.2012.0458
+   .. rubric:: Source
+      :name: source
+
+   Guerin, G., Wen, H., Lowe, A. (2012), "Leaf morphology shift linked
+   to climate change," Biol. Lett., 8, doi: 10.1098/rsbl.2012.0458

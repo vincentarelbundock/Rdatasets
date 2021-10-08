@@ -1,55 +1,57 @@
-======= ===============
-titanic R Documentation
-======= ===============
+.. container::
 
-Data from the sinking of the Titanic
-------------------------------------
+   ======= ===============
+   titanic R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from the sinking of the Titanic
+      :name: data-from-the-sinking-of-the-titanic
 
-``titanic`` comes from the sinking of the Titanic, and can be used to
-look at survival by different demographic characteristics.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   ``titanic`` comes from the sinking of the Titanic, and can be used to
+   look at survival by different demographic characteristics.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   titanic
+   ::
 
-Format
-~~~~~~
+      titanic
 
-A data frame with 4820 rows and 7 variables
+   .. rubric:: Format
+      :name: format
 
-class
-   class (ticket)
+   A data frame with 4820 rows and 7 variables
 
-age
-   Age (Child vs. Adult)
+   class
+      class (ticket)
 
-sex
-   Gender
+   age
+      Age (Child vs. Adult)
 
-survived
-   Survived
+   sex
+      Gender
 
-Details
-~~~~~~~
+   survived
+      Survived
 
-This data is used in the Matching and Subclassification chapter of
-Causal Inference: The Mixtape by Cunningham.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This data is used in the Matching and Subclassification chapter of
+   Causal Inference: The Mixtape by Cunningham.
 
-British Board of Trade (1990), Report on the Loss of the ‘Titanic’
-(S.S.). British Board of Trade Inquiry Report (reprint). Gloucester, UK:
-Allan Sutton Publishing.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   British Board of Trade (1990), Report on the Loss of the ‘Titanic’
+   (S.S.). British Board of Trade Inquiry Report (reprint). Gloucester,
+   UK: Allan Sutton Publishing.
 
-Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-https://mixtape.scunning.com/index.html.
+   .. rubric:: References
+      :name: references
+
+   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+   https://mixtape.scunning.com/index.html.

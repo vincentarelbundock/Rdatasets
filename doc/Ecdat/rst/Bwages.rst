@@ -1,58 +1,60 @@
-====== ===============
-Bwages R Documentation
-====== ===============
+.. container::
 
-Wages in Belgium
-----------------
+   ====== ===============
+   Bwages R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Wages in Belgium
+      :name: wages-in-belgium
 
-a cross-section from 1994
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 1472
+   a cross-section from 1994
 
-*observation* : individuals
+   *number of observations* : 1472
 
-*country* : Belgium
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : Belgium
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Bwages)
+   ::
 
-Format
-~~~~~~
+      data(Bwages)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-wage
-   gross hourly wage rate in euro
+   A dataframe containing :
 
-educ
-   education level from 1 [low] to 5 [high]
+   wage
+      gross hourly wage rate in euro
 
-exper
-   years of experience
+   educ
+      education level from 1 [low] to 5 [high]
 
-sex
-   a factor with levels (males,female)
+   exper
+      years of experience
 
-Source
-~~~~~~
+   sex
+      a factor with levels (males,female)
 
-European Community Household Panel.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   European Community Household Panel.
 
-Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley and
-Sons, chapter 3.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+   and Sons, chapter 3.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

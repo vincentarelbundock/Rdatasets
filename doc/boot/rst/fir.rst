@@ -1,42 +1,44 @@
-=== ===============
-fir R Documentation
-=== ===============
+.. container::
 
-Counts of Balsam-fir Seedlings
-------------------------------
+   === ===============
+   fir R Documentation
+   === ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Counts of Balsam-fir Seedlings
+      :name: counts-of-balsam-fir-seedlings
 
-The ``fir`` data frame has 50 rows and 3 columns.
+   .. rubric:: Description
+      :name: description
 
-The number of balsam-fir seedlings in each quadrant of a grid of 50 five
-foot square quadrants were counted. The grid consisted of 5 rows of 10
-quadrants in each row.
+   The ``fir`` data frame has 50 rows and 3 columns.
 
-Usage
-~~~~~
+   The number of balsam-fir seedlings in each quadrant of a grid of 50
+   five foot square quadrants were counted. The grid consisted of 5 rows
+   of 10 quadrants in each row.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   fir
+   ::
 
-Format
-~~~~~~
+      fir
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``count``
-   The number of seedlings in the quadrant.
+   This data frame contains the following columns:
 
-``row``
-   The row number of the quadrant.
+   ``count``
+      The number of seedlings in the quadrant.
 
-``col``
-   The quadrant number within the row.
+   ``row``
+      The row number of the quadrant.
 
-Source
-~~~~~~
+   ``col``
+      The quadrant number within the row.
 
-Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-Application*. Cambridge University Press.
+   .. rubric:: Source
+      :name: source
+
+   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
+   Application*. Cambridge University Press.

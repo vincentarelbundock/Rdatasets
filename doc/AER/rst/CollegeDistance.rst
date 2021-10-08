@@ -1,113 +1,116 @@
-=============== ===============
-CollegeDistance R Documentation
-=============== ===============
+.. container::
 
-College Distance Data
----------------------
+   =============== ===============
+   CollegeDistance R Documentation
+   =============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: College Distance Data
+      :name: college-distance-data
 
-Cross-section data from the High School and Beyond survey conducted by
-the Department of Education in 1980, with a follow-up in 1986. The
-survey included students from approximately 1,100 high schools.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Cross-section data from the High School and Beyond survey conducted
+   by the Department of Education in 1980, with a follow-up in 1986. The
+   survey included students from approximately 1,100 high schools.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("CollegeDistance")
+   ::
 
-Format
-~~~~~~
+      data("CollegeDistance")
 
-A data frame containing 4,739 observations on 14 variables.
+   .. rubric:: Format
+      :name: format
 
-gender
-   factor indicating gender.
+   A data frame containing 4,739 observations on 14 variables.
 
-ethnicity
-   factor indicating ethnicity (African-American, Hispanic or other).
+   gender
+      factor indicating gender.
 
-score
-   base year composite test score. These are achievement tests given to
-   high school seniors in the sample.
+   ethnicity
+      factor indicating ethnicity (African-American, Hispanic or other).
 
-fcollege
-   factor. Is the father a college graduate?
+   score
+      base year composite test score. These are achievement tests given
+      to high school seniors in the sample.
 
-mcollege
-   factor. Is the mother a college graduate?
+   fcollege
+      factor. Is the father a college graduate?
 
-home
-   factor. Does the family own their home?
+   mcollege
+      factor. Is the mother a college graduate?
 
-urban
-   factor. Is the school in an urban area?
+   home
+      factor. Does the family own their home?
 
-unemp
-   county unemployment rate in 1980.
+   urban
+      factor. Is the school in an urban area?
 
-wage
-   state hourly wage in manufacturing in 1980.
+   unemp
+      county unemployment rate in 1980.
 
-distance
-   distance from 4-year college (in 10 miles).
+   wage
+      state hourly wage in manufacturing in 1980.
 
-tuition
-   average state 4-year college tuition (in 1000 USD).
+   distance
+      distance from 4-year college (in 10 miles).
 
-education
-   number of years of education.
+   tuition
+      average state 4-year college tuition (in 1000 USD).
 
-income
-   factor. Is the family income above USD 25,000 per year?
+   education
+      number of years of education.
 
-region
-   factor indicating region (West or other).
+   income
+      factor. Is the family income above USD 25,000 per year?
 
-Details
-~~~~~~~
+   region
+      factor indicating region (West or other).
 
-Rouse (1995) computed years of education by assigning 12 years to all
-members of the senior class. Each additional year of secondary education
-counted as a one year. Students with vocational degrees were assigned 13
-years, AA degrees were assigned 14 years, BA degrees were assigned 16
-years, those with some graduate education were assigned 17 years, and
-those with a graduate degree were assigned 18 years.
+   .. rubric:: Details
+      :name: details
 
-Stock and Watson (2007) provide separate data files for the students
-from Western states and the remaining students. ``CollegeDistance``
-includes both data sets, subsets are easily obtained (see also
-examples).
+   Rouse (1995) computed years of education by assigning 12 years to all
+   members of the senior class. Each additional year of secondary
+   education counted as a one year. Students with vocational degrees
+   were assigned 13 years, AA degrees were assigned 14 years, BA degrees
+   were assigned 16 years, those with some graduate education were
+   assigned 17 years, and those with a graduate degree were assigned 18
+   years.
 
-Source
-~~~~~~
+   Stock and Watson (2007) provide separate data files for the students
+   from Western states and the remaining students. ``CollegeDistance``
+   includes both data sets, subsets are easily obtained (see also
+   examples).
 
-Online complements to Stock and Watson (2007).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Stock and Watson (2007).
 
-Rouse, C.E. (1995). Democratization or Diversion? The Effect of
-Community Colleges on Educational Attainment. *Journal of Business \\&
-Economic Statistics*, **12**, 217–224.
+   .. rubric:: References
+      :name: references
 
-Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*, 2nd
-ed. Boston: Addison Wesley.
+   Rouse, C.E. (1995). Democratization or Diversion? The Effect of
+   Community Colleges on Educational Attainment. *Journal of Business
+   \\& Economic Statistics*, **12**, 217–224.
 
-See Also
-~~~~~~~~
+   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
+   2nd ed. Boston: Addison Wesley.
 
-``StockWatson2007``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``StockWatson2007``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## exclude students from Western states
-   data("CollegeDistance")
-   cd <- subset(CollegeDistance, region != "west")
-   summary(cd)
+   ::
+
+      ## exclude students from Western states
+      data("CollegeDistance")
+      cd <- subset(CollegeDistance, region != "west")
+      summary(cd)

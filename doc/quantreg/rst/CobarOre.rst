@@ -1,48 +1,51 @@
-======== ===============
-CobarOre R Documentation
-======== ===============
+.. container::
 
-Cobar Ore data
---------------
+   ======== ===============
+   CobarOre R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Cobar Ore data
+      :name: cobar-ore-data
 
-Cobar Ore data from Green and Silverman (1994). The data consists of
-measurements on the "true width" of an ore-bearing rock layer from a
-mine in Cobar, Australia.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Cobar Ore data from Green and Silverman (1994). The data consists of
+   measurements on the "true width" of an ore-bearing rock layer from a
+   mine in Cobar, Australia.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(CobarOre)
+   ::
 
-Format
-~~~~~~
+      data(CobarOre)
 
-A data frame with 38 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-x
-   x-coordinate of location of mine site
+   A data frame with 38 observations on the following 3 variables.
 
-y
-   y-coordinate of location of mine site
+   x
+      x-coordinate of location of mine site
 
-z
-   ore thickness
+   y
+      y-coordinate of location of mine site
 
-Source
-~~~~~~
+   z
+      ore thickness
 
-Green, P.J. and B.W. Silverman (1994) Nonparametric Regression
-Generalized Linear Models: A roughness penalty approach, Chapman Hall.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Green, P.J. and B.W. Silverman (1994) Nonparametric Regression
+   Generalized Linear Models: A roughness penalty approach, Chapman
+   Hall.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(CobarOre)
-   plot(CobarOre)
+   ::
+
+      data(CobarOre)
+      plot(CobarOre)

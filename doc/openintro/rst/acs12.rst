@@ -1,102 +1,104 @@
-===== ===============
-acs12 R Documentation
-===== ===============
+.. container::
 
-American Community Survey, 2012
--------------------------------
+   ===== ===============
+   acs12 R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: American Community Survey, 2012
+      :name: american-community-survey-2012
 
-Results from the US Census American Community Survey, 2012.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Results from the US Census American Community Survey, 2012.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   acs12
+   ::
 
-Format
-~~~~~~
+      acs12
 
-A data frame with 2000 observations on the following 13 variables.
+   .. rubric:: Format
+      :name: format
 
-income
-   Annual income.
+   A data frame with 2000 observations on the following 13 variables.
 
-employment
-   Employment status.
+   income
+      Annual income.
 
-hrs_work
-   Hours worked per week.
+   employment
+      Employment status.
 
-race
-   Race.
+   hrs_work
+      Hours worked per week.
 
-age
-   Age, in years.
+   race
+      Race.
 
-gender
-   Gender.
+   age
+      Age, in years.
 
-citizen
-   Whether the person is a U.S. citizen.
+   gender
+      Gender.
 
-time_to_work
-   Travel time to work, in minutes.
+   citizen
+      Whether the person is a U.S. citizen.
 
-lang
-   Language spoken at home.
+   time_to_work
+      Travel time to work, in minutes.
 
-married
-   Whether the person is married.
+   lang
+      Language spoken at home.
 
-edu
-   Education level.
+   married
+      Whether the person is married.
 
-disability
-   Whether the person is disabled.
+   edu
+      Education level.
 
-birth_qrtr
-   The quarter of the year that the person was born, e.g.
-   ``Jan thru Mar``.
+   disability
+      Whether the person is disabled.
 
-Source
-~~~~~~
+   birth_qrtr
+      The quarter of the year that the person was born, e.g.
+      ``Jan thru Mar``.
 
-https://www.census.gov/programs-surveys/acs
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   https://www.census.gov/programs-surveys/acs
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(dplyr)
-   library(ggplot2)
-   library(broom)
+      library(dplyr)
+      library(ggplot2)
+      library(broom)
 
-   # employed only
-   acs12_emp <- acs12 %>%
-     filter(
-       age >= 30, age <= 60,
-       employment == "employed",
-       income > 0
-     )
+      # employed only
+      acs12_emp <- acs12 %>%
+        filter(
+          age >= 30, age <= 60,
+          employment == "employed",
+          income > 0
+        )
 
-   # linear model
-   ggplot(acs12_emp, mapping = aes(x = age, y = income)) +
-     geom_point() +
-     geom_smooth(method = "lm")
+      # linear model
+      ggplot(acs12_emp, mapping = aes(x = age, y = income)) +
+        geom_point() +
+        geom_smooth(method = "lm")
 
-   lm(income ~ age, data = acs12_emp) %>%
-     tidy()
+      lm(income ~ age, data = acs12_emp) %>%
+        tidy()
 
-   # log-transormed model
-   ggplot(acs12_emp, mapping = aes(x = age, y = log(income))) +
-     geom_point() +
-     geom_smooth(method = "lm")
+      # log-transormed model
+      ggplot(acs12_emp, mapping = aes(x = age, y = log(income))) +
+        geom_point() +
+        geom_smooth(method = "lm")
 
-   lm(log(income) ~ age, data = acs12_emp) %>%
-     tidy()
+      lm(log(income) ~ age, data = acs12_emp) %>%
+        tidy()

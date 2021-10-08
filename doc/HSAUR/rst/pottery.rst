@@ -1,73 +1,75 @@
-======= ===============
-pottery R Documentation
-======= ===============
+.. container::
 
-Romano-British Pottery Data
----------------------------
+   ======= ===============
+   pottery R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Romano-British Pottery Data
+      :name: romano-british-pottery-data
 
-Chemical composition of Romano-British pottery.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Chemical composition of Romano-British pottery.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("pottery")
+   ::
 
-Format
-~~~~~~
+      data("pottery")
 
-A data frame with 45 observations on the following 9 chemicals.
+   .. rubric:: Format
+      :name: format
 
-Al2O3
-   aluminium trioxide.
+   A data frame with 45 observations on the following 9 chemicals.
 
-Fe2O3
-   iron trioxide.
+   Al2O3
+      aluminium trioxide.
 
-MgO
-   magnesium oxide.
+   Fe2O3
+      iron trioxide.
 
-CaO
-   calcium oxide.
+   MgO
+      magnesium oxide.
 
-Na2O
-   natrium oxide.
+   CaO
+      calcium oxide.
 
-K2O
-   calium oxide.
+   Na2O
+      natrium oxide.
 
-TiO2
-   titanium oxide.
+   K2O
+      calium oxide.
 
-MnO
-   mangan oxide.
+   TiO2
+      titanium oxide.
 
-BaO
-   barium oxide.
+   MnO
+      mangan oxide.
 
-Details
-~~~~~~~
+   BaO
+      barium oxide.
 
-The data gives the chemical composition of specimens of Romano-British
-pottery, determined by atomic absorption spectrophotometry, for nine
-oxides.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data gives the chemical composition of specimens of
+   Romano-British pottery, determined by atomic absorption
+   spectrophotometry, for nine oxides.
 
-A. Tubb and N. J. Parker and G. Nickless (1980), The analysis of
-Romano-British pottery by atomic absorption spectrophotometry.
-*Archaeometry*, **22**, 153–171.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   A. Tubb and N. J. Parker and G. Nickless (1980), The analysis of
+   Romano-British pottery by atomic absorption spectrophotometry.
+   *Archaeometry*, **22**, 153–171.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-     data("pottery", package = "HSAUR")
-     plot(pottery)
+        data("pottery", package = "HSAUR")
+        plot(pottery)

@@ -1,39 +1,41 @@
-====== ===============
-tongue R Documentation
-====== ===============
+.. container::
 
-data from Section 1.11
-----------------------
+   ====== ===============
+   tongue R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: data from Section 1.11
+      :name: data-from-section-1.11
 
-The ``tongue`` data frame has 80 rows and 3 columns.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   The ``tongue`` data frame has 80 rows and 3 columns.
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-type
-   Tumor DNA profile (1=Aneuploid Tumor, 2=Diploid Tumor)
+   This data frame contains the following columns:
 
-time
-   Time to death or on-study time, weeks
+   type
+      Tumor DNA profile (1=Aneuploid Tumor, 2=Diploid Tumor)
 
-delta
-   Death indicator (0=alive, 1=dead)
+   time
+      Time to death or on-study time, weeks
 
-Source
-~~~~~~
+   delta
+      Death indicator (0=alive, 1=dead)
 
-Klein and Moeschberger (1997) *Survival Analysis Techniques for Censored
-and truncated data*, Springer. Sickle-Santanello et al. Cytometry 9
-(1988): 594-599.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Klein and Moeschberger (1997) *Survival Analysis Techniques for
+   Censored and truncated data*, Springer. Sickle-Santanello et al.
+   Cytometry 9 (1988): 594-599.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(tongue)
+   ::
+
+      data(tongue)

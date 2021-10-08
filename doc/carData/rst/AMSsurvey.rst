@@ -1,66 +1,69 @@
-========= ===============
-AMSsurvey R Documentation
-========= ===============
+.. container::
 
-American Math Society Survey Data
----------------------------------
+   ========= ===============
+   AMSsurvey R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: American Math Society Survey Data
+      :name: american-math-society-survey-data
 
-Counts of new PhDs in the mathematical sciences for 2008-09 and 2011-12
-categorized by type of institution, gender, and US citizenship status.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Counts of new PhDs in the mathematical sciences for 2008-09 and
+   2011-12 categorized by type of institution, gender, and US
+   citizenship status.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   AMSsurvey
+   ::
 
-Format
-~~~~~~
+      AMSsurvey
 
-A data frame with 24 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-type
-   a factor with levels ``I(Pu)`` for group I public universities,
-   ``I(Pr)`` for group I private universities, ``II`` and ``III`` for
-   groups II and III, ``IV`` for statistics and biostatistics programs,
-   and ``Va`` for applied mathemeatics programs.
+   A data frame with 24 observations on the following 5 variables.
 
-sex
-   a factor with levels ``Female``, ``Male`` of the recipient
+   type
+      a factor with levels ``I(Pu)`` for group I public universities,
+      ``I(Pr)`` for group I private universities, ``II`` and ``III`` for
+      groups II and III, ``IV`` for statistics and biostatistics
+      programs, and ``Va`` for applied mathemeatics programs.
 
-citizen
-   a factor with levels ``Non-US``, ``US`` giving citizenship status
+   sex
+      a factor with levels ``Female``, ``Male`` of the recipient
 
-count
-   The number of individuals of each type in 2008-09
+   citizen
+      a factor with levels ``Non-US``, ``US`` giving citizenship status
 
-count11
-   The number of individuals of each type in 2011-12
+   count
+      The number of individuals of each type in 2008-09
 
-Details
-~~~~~~~
+   count11
+      The number of individuals of each type in 2011-12
 
-These data are produced yearly by the American Math Society.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   These data are produced yearly by the American Math Society.
 
-http://www.ams.org/employment/surveyreports.html Supplementary Table 4
-in the 2008-09 data. See
-http://www.ams.org/profession/data/annual-survey/docsgrtd for more
-recent data.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   http://www.ams.org/employment/surveyreports.html Supplementary Table
+   4 in the 2008-09 data. See
+   http://www.ams.org/profession/data/annual-survey/docsgrtd for more
+   recent data.
 
-Fox, J. and Weisberg, S. (2019) *An R Companion to Applied Regression*,
-Third Edition, Sage.
+   .. rubric:: References
+      :name: references
 
-Phipps, Polly, Maxwell, James W. and Rose, Colleen (2009), *2009 Annual
-Survey of the Mathematical Sciences*, 57, 250–259, Supplementary Table
-4, orginally downloaded from
-http://www.ams.org/employment/2009Survey-First-Report-Supp-Table4.pdf
+   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+   Regression*, Third Edition, Sage.
+
+   Phipps, Polly, Maxwell, James W. and Rose, Colleen (2009), *2009
+   Annual Survey of the Mathematical Sciences*, 57, 250–259,
+   Supplementary Table 4, orginally downloaded from
+   http://www.ams.org/employment/2009Survey-First-Report-Supp-Table4.pdf

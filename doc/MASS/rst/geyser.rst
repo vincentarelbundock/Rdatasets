@@ -1,57 +1,60 @@
-====== ===============
-geyser R Documentation
-====== ===============
+.. container::
 
-Old Faithful Geyser Data
-------------------------
+   ====== ===============
+   geyser R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Old Faithful Geyser Data
+      :name: old-faithful-geyser-data
 
-A version of the eruptions data from the ‘Old Faithful’ geyser in
-Yellowstone National Park, Wyoming. This version comes from Azzalini and
-Bowman (1990) and is of continuous measurement from August 1 to August
-15, 1985.
+   .. rubric:: Description
+      :name: description
 
-Some nocturnal duration measurements were coded as 2, 3 or 4 minutes,
-having originally been described as ‘short’, ‘medium’ or ‘long’.
+   A version of the eruptions data from the ‘Old Faithful’ geyser in
+   Yellowstone National Park, Wyoming. This version comes from Azzalini
+   and Bowman (1990) and is of continuous measurement from August 1 to
+   August 15, 1985.
 
-Usage
-~~~~~
+   Some nocturnal duration measurements were coded as 2, 3 or 4 minutes,
+   having originally been described as ‘short’, ‘medium’ or ‘long’.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   geyser
+   ::
 
-Format
-~~~~~~
+      geyser
 
-A data frame with 299 observations on 2 variables.
+   .. rubric:: Format
+      :name: format
 
-============ ======= ==============================
-``duration`` numeric Eruption time in mins
-``waiting``  numeric Waiting time for this eruption
-\                    
-============ ======= ==============================
+   A data frame with 299 observations on 2 variables.
 
-Note
-~~~~
+   ============ ======= ==============================
+   ``duration`` numeric Eruption time in mins
+   ``waiting``  numeric Waiting time for this eruption
+   \                    
+   ============ ======= ==============================
 
-The ``waiting`` time was incorrectly described as the time to the next
-eruption in the original files, and corrected for MASS version 7.3-30.
+   .. rubric:: Note
+      :name: note
 
-References
-~~~~~~~~~~
+   The ``waiting`` time was incorrectly described as the time to the
+   next eruption in the original files, and corrected for MASS version
+   7.3-30.
 
-Azzalini, A. and Bowman, A. W. (1990) A look at some data on the Old
-Faithful geyser. *Applied Statistics* **39**, 357–365.
+   .. rubric:: References
+      :name: references
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   Azzalini, A. and Bowman, A. W. (1990) A look at some data on the Old
+   Faithful geyser. *Applied Statistics* **39**, 357–365.
 
-See Also
-~~~~~~~~
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.
 
-``faithful``.
+   .. rubric:: See Also
+      :name: see-also
 
-CRAN package sm.
+   ``faithful``.
+
+   CRAN package sm.

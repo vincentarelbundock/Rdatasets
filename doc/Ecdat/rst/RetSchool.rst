@@ -1,103 +1,105 @@
-========= ===============
-RetSchool R Documentation
-========= ===============
+.. container::
 
-Return to Schooling
--------------------
+   ========= ===============
+   RetSchool R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Return to Schooling
+      :name: return-to-schooling
 
-a panel of 48 observations from 1970 to 1986
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 5225
+   a panel of 48 observations from 1970 to 1986
 
-*observation* : individuals
+   *number of observations* : 5225
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(RetSchool)
+   ::
 
-Format
-~~~~~~
+      data(RetSchool)
 
-A time series containing :
+   .. rubric:: Format
+      :name: format
 
-wage76
-   wage in 1876
+   A time series containing :
 
-grade76
-   grade level in 1976
+   wage76
+      wage in 1876
 
-exp76
-   experience 1n 1976
+   grade76
+      grade level in 1976
 
-black
-   black ?
+   exp76
+      experience 1n 1976
 
-south76
-   lived in south in 1976 ?
+   black
+      black ?
 
-smsa76
-   lived in SMSA in 1976 ?
+   south76
+      lived in south in 1976 ?
 
-region
-   region, a factor with levels (``un``, ``midatl``, ``enc``, ``wnc``,
-   ``sa``, ``esc``, ``wsc``, ``m``, ``p``)
+   smsa76
+      lived in SMSA in 1976 ?
 
-smsa66
-   lived in SMSA in 1966 ?
+   region
+      region, a factor with levels (``un``, ``midatl``, ``enc``,
+      ``wnc``, ``sa``, ``esc``, ``wsc``, ``m``, ``p``)
 
-momdad14
-   lived with both parents at age 14 ?
+   smsa66
+      lived in SMSA in 1966 ?
 
-sinmom14
-   lived with mother only at age 14 ?
+   momdad14
+      lived with both parents at age 14 ?
 
-nodaded
-   father has no formal education ?
+   sinmom14
+      lived with mother only at age 14 ?
 
-nomomed
-   mother has no formal education ?
+   nodaded
+      father has no formal education ?
 
-daded
-   mean grade level of father
+   nomomed
+      mother has no formal education ?
 
-momed
-   mean grade level of mother
+   daded
+      mean grade level of father
 
-famed
-   father's and mother's education, a factor with 9 levels
+   momed
+      mean grade level of mother
 
-age76
-   age in 1976
+   famed
+      father's and mother's education, a factor with 9 levels
 
-col4
-   is any 4-year college nearby ?
+   age76
+      age in 1976
 
-Source
-~~~~~~
+   col4
+      is any 4-year college nearby ?
 
-Kling, Jeffrey R. (2001) “Interpreting Instrumental Variables Estimates
-of the Return to Schooling”, *Journal of Business and Economic
-Statistics*, **19(3)**, July, 358–364.
+   .. rubric:: Source
+      :name: source
 
-Dehejia, R.H. and S. Wahba (2002) “Propensity-score Matching Methods for
-Nonexperimental Causal Studies”, *Restat*, 151–161.
+   Kling, Jeffrey R. (2001) “Interpreting Instrumental Variables
+   Estimates of the Return to Schooling”, *Journal of Business and
+   Economic Statistics*, **19(3)**, July, 358–364.
 
-References
-~~~~~~~~~~
+   Dehejia, R.H. and S. Wahba (2002) “Propensity-score Matching Methods
+   for Nonexperimental Causal Studies”, *Restat*, 151–161.
 
-Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods and
-applications*, Cambridge.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
+   and applications*, Cambridge.
 
-``Schooling``, ``Treatment``, ``Index.Source``, ``Index.Economics``,
-``Index.Econometrics``, ``Index.Observations``, ``Index.Time.Series``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Schooling``, ``Treatment``, ``Index.Source``, ``Index.Economics``,
+   ``Index.Econometrics``, ``Index.Observations``, ``Index.Time.Series``

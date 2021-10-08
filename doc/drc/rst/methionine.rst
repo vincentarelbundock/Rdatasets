@@ -1,64 +1,66 @@
-========== ===============
-methionine R Documentation
-========== ===============
+.. container::
 
-Weight gain for different methionine sources
---------------------------------------------
+   ========== ===============
+   methionine R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Weight gain for different methionine sources
+      :name: weight-gain-for-different-methionine-sources
 
-Data consist of average body weight gain of chickens being treated with
-one of the two methionine sources DLM and HMTBA.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data consist of average body weight gain of chickens being treated
+   with one of the two methionine sources DLM and HMTBA.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(methionine)
+   ::
 
-Format
-~~~~~~
+      data(methionine)
 
-A data frame with 9 observations on the following 3 variables:
+   .. rubric:: Format
+      :name: format
 
-``product``
-   a factor with levels ``control``, ``DLM`` and ``MHA`` denoting the
-   treatments
+   A data frame with 9 observations on the following 3 variables:
 
-``dose``
-   a numeric vector of methionine dose
+   ``product``
+      a factor with levels ``control``, ``DLM`` and ``MHA`` denoting the
+      treatments
 
-``gain``
-   a numeric vector of average body weight gain
+   ``dose``
+      a numeric vector of methionine dose
 
-Details
-~~~~~~~
+   ``gain``
+      a numeric vector of average body weight gain
 
-The dataset contains a common control measurement for the two
-treatments. More examples using this dataset are found under ``AR.2``
-and ``MM.2``.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The dataset contains a common control measurement for the two
+   treatments. More examples using this dataset are found under ``AR.2``
+   and ``MM.2``.
 
-Kratzer. D. D. and Littell, R. C. (2006) Appropriate Statistical Methods
-to Compare Dose Responses of Methionine Sources, *Poultry Science*,
-**85**, 947–954.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Kratzer. D. D. and Littell, R. C. (2006) Appropriate Statistical
+   Methods to Compare Dose Responses of Methionine Sources, *Poultry
+   Science*, **85**, 947–954.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   ## Fitting model with constraint on one parameter 
-   met.ar.m1 <- drm(gain~dose, product, data = methionine, 
-   fct = AR.3(), pmodels = list(~1, ~factor(product), ~factor(product)), 
-   upperl = c(Inf, Inf, 1700, Inf, Inf)) 
+      ## Fitting model with constraint on one parameter 
+      met.ar.m1 <- drm(gain~dose, product, data = methionine, 
+      fct = AR.3(), pmodels = list(~1, ~factor(product), ~factor(product)), 
+      upperl = c(Inf, Inf, 1700, Inf, Inf)) 
 
-   plot(met.ar.m1, xlim=c(0,0.3), ylim=c(1450, 1800))
-   abline(h=1700, lty=1)
+      plot(met.ar.m1, xlim=c(0,0.3), ylim=c(1450, 1800))
+      abline(h=1700, lty=1)
 
-   summary(met.ar.m1)
+      summary(met.ar.m1)

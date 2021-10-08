@@ -1,99 +1,101 @@
-================ ===============
-pm25_2011_durham R Documentation
-================ ===============
+.. container::
 
-Air quality for Durham, NC
---------------------------
+   ================ ===============
+   pm25_2011_durham R Documentation
+   ================ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Air quality for Durham, NC
+      :name: air-quality-for-durham-nc
 
-Daily air quality is measured by the air quality index (AQI) reported by
-the Environmental Protection Agency.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Daily air quality is measured by the air quality index (AQI) reported
+   by the Environmental Protection Agency.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   pm25_2011_durham
+   ::
 
-Format
-~~~~~~
+      pm25_2011_durham
 
-A data frame with 449 observations on the following 20 variables.
+   .. rubric:: Format
+      :name: format
 
-date
-   Date
+   A data frame with 449 observations on the following 20 variables.
 
-aqs_site_id
-   a factor with levels ``37-063-0015``
+   date
+      Date
 
-poc
-   a numeric vector
+   aqs_site_id
+      a factor with levels ``37-063-0015``
 
-daily_mean_pm2_5_concentration
-   a numeric vector
+   poc
+      a numeric vector
 
-units
-   a factor with levels ``ug/m3 LC``
+   daily_mean_pm2_5_concentration
+      a numeric vector
 
-daily_aqi_value
-   a numeric vector
+   units
+      a factor with levels ``ug/m3 LC``
 
-daily_obs_count
-   a numeric vector
+   daily_aqi_value
+      a numeric vector
 
-percent_complete
-   a numeric vector
+   daily_obs_count
+      a numeric vector
 
-aqs_parameter_code
-   a numeric vector
+   percent_complete
+      a numeric vector
 
-aqs_parameter_desc
-   a factor with levels ``Acceptable PM2.5 AQI & Speciation Mass``
-   ``PM2.5 - Local Conditions``
+   aqs_parameter_code
+      a numeric vector
 
-csa_code
-   a numeric vector
+   aqs_parameter_desc
+      a factor with levels ``Acceptable PM2.5 AQI & Speciation Mass``
+      ``PM2.5 - Local Conditions``
 
-csa_name
-   a factor with levels ``Raleigh-Durham-Cary, NC``
+   csa_code
+      a numeric vector
 
-cbsa_code
-   a numeric vector
+   csa_name
+      a factor with levels ``Raleigh-Durham-Cary, NC``
 
-cbsa_name
-   a factor with levels ``Durham, NC``
+   cbsa_code
+      a numeric vector
 
-state_code
-   a numeric vector
+   cbsa_name
+      a factor with levels ``Durham, NC``
 
-state
-   a factor with levels ``North Carolina``
+   state_code
+      a numeric vector
 
-county_code
-   a numeric vector
+   state
+      a factor with levels ``North Carolina``
 
-county
-   a factor with levels ``Durham``
+   county_code
+      a numeric vector
 
-site_latitude
-   a numeric vector
+   county
+      a factor with levels ``Durham``
 
-site_longitude
-   a numeric vector
+   site_latitude
+      a numeric vector
 
-Source
-~~~~~~
+   site_longitude
+      a numeric vector
 
-US Environmental Protection Agency, AirData, 2011.
-http://www3.epa.gov/airdata/ad_data_daily.html
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   US Environmental Protection Agency, AirData, 2011.
+   http://www3.epa.gov/airdata/ad_data_daily.html
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   pm25_2011_durham
+      pm25_2011_durham

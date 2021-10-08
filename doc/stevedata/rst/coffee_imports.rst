@@ -1,40 +1,42 @@
-============== ===============
-coffee_imports R Documentation
-============== ===============
+.. container::
 
-Coffee Imports for Select Importing Countries
----------------------------------------------
+   ============== ===============
+   coffee_imports R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Coffee Imports for Select Importing Countries
+      :name: coffee-imports-for-select-importing-countries
 
-A simple time series on coffee imports for select importing countries
-(i.e. European Union + Japan + Russia + Tunisia + United States).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A simple time series on coffee imports for select importing countries
+   (i.e. European Union + Japan + Russia + Tunisia + United States).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   coffee_imports
+   ::
 
-Format
-~~~~~~
+      coffee_imports
 
-A data frame with 30 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``year``
-   the year
+   A data frame with 30 observations on the following 3 variables.
 
-``imports``
-   coffee imports for all select importing countries (in thousand 60-kg
-   bags)
+   ``year``
+      the year
 
-``usaimports``
-   coffee imports for just the United States (in thousand 60-kg bags)
+   ``imports``
+      coffee imports for all select importing countries (in thousand
+      60-kg bags)
 
-Details
-~~~~~~~
+   ``usaimports``
+      coffee imports for just the United States (in thousand 60-kg bags)
 
-Data come from the International Coffee Organization, of which I feel I
-should be a member.
+   .. rubric:: Details
+      :name: details
+
+   Data come from the International Coffee Organization, of which I feel
+   I should be a member.

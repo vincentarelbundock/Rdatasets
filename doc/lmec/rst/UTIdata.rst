@@ -1,57 +1,59 @@
-======= ===============
-UTIdata R Documentation
-======= ===============
+.. container::
 
-Data set for Unstructured Treatment Interruption Study
-------------------------------------------------------
+   ======= ===============
+   UTIdata R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data set for Unstructured Treatment Interruption Study
+      :name: data-set-for-unstructured-treatment-interruption-study
 
-Data set from a study of Unstructured Treatment Interruption in
-HIV-infected adolescents in four institutions in the US. The main
-outcome is the HIV-1 RNA viral load, which is subject to censoring below
-the lower limit of detection of the assay (50 copies/mL). The censored
-observations are indicated by the variable RNAcens
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data set from a study of Unstructured Treatment Interruption in
+   HIV-infected adolescents in four institutions in the US. The main
+   outcome is the HIV-1 RNA viral load, which is subject to censoring
+   below the lower limit of detection of the assay (50 copies/mL). The
+   censored observations are indicated by the variable RNAcens
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(UTIdata)
+   ::
 
-Format
-~~~~~~
+      data(UTIdata)
 
-A data frame with 373 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``Patid``
-   patient ID
+   A data frame with 373 observations on the following 5 variables.
 
-``Days.after.TI``
-   days after treatment interruption
+   ``Patid``
+      patient ID
 
-``Fup``
-   follow-up months
+   ``Days.after.TI``
+      days after treatment interruption
 
-``RNA``
-   viral load RNA
+   ``Fup``
+      follow-up months
 
-``RNAcens``
-   censoring indicator for viral load
+   ``RNA``
+      viral load RNA
 
-References
-~~~~~~~~~~
+   ``RNAcens``
+      censoring indicator for viral load
 
-Saitoh, A., Foca, M, et al. (2008), Clinical outcome in perinatally
-acquired HIV-infected children and adolescents after unstructured
-treatment interruption, Pediatrics,121, e513-e521.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Saitoh, A., Foca, M, et al. (2008), Clinical outcome in perinatally
+   acquired HIV-infected children and adolescents after unstructured
+   treatment interruption, Pediatrics,121, e513-e521.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(UTIdata)
-   ## maybe str(UTIdata) ; plot(UTIdata) ...
+   ::
+
+      data(UTIdata)
+      ## maybe str(UTIdata) ; plot(UTIdata) ...

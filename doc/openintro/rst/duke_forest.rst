@@ -1,98 +1,100 @@
-=========== ===============
-duke_forest R Documentation
-=========== ===============
+.. container::
 
-Sale prices of houses in Duke Forest, Durham, NC
-------------------------------------------------
+   =========== ===============
+   duke_forest R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Sale prices of houses in Duke Forest, Durham, NC
+      :name: sale-prices-of-houses-in-duke-forest-durham-nc
 
-Data on houses that were recently sold in the Duke Forest neighborhood
-of Durham, NC in November 2020.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data on houses that were recently sold in the Duke Forest
+   neighborhood of Durham, NC in November 2020.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   duke_forest
+   ::
 
-Format
-~~~~~~
+      duke_forest
 
-A data frame with 98 rows and 13 variables.
+   .. rubric:: Format
+      :name: format
 
-address
-   Address of house.
+   A data frame with 98 rows and 13 variables.
 
-price
-   Sale price, in USD.
+   address
+      Address of house.
 
-bed
-   Number of bedrooms.
+   price
+      Sale price, in USD.
 
-bath
-   Number of bathrooms.
+   bed
+      Number of bedrooms.
 
-area
-   Area of home, in square feet.
+   bath
+      Number of bathrooms.
 
-type
-   Type of home (all are Single Family).
+   area
+      Area of home, in square feet.
 
-year_built
-   Year the home was built.
+   type
+      Type of home (all are Single Family).
 
-heating
-   Heating sytem.
+   year_built
+      Year the home was built.
 
-cooling
-   Cooling system (``other`` or ``central``).
+   heating
+      Heating sytem.
 
-parking
-   Type of parking available and number of parking spaces.
+   cooling
+      Cooling system (``other`` or ``central``).
 
-lot
-   Area of the entire property, in acres.
+   parking
+      Type of parking available and number of parking spaces.
 
-hoa
-   If the home belongs to an Home Owners Association, the associted fee
-   (``NA`` otherwise).
+   lot
+      Area of the entire property, in acres.
 
-url
-   URL of the listing.
+   hoa
+      If the home belongs to an Home Owners Association, the associted
+      fee (``NA`` otherwise).
 
-Source
-~~~~~~
+   url
+      URL of the listing.
 
-Data were collected from `Zillow.com <https://www.zillow.com/>`__ in
-November 2020.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Data were collected from `Zillow.com <https://www.zillow.com/>`__ in
+   November 2020.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   # Number of bedrooms and price
-   ggplot(duke_forest, aes(x = as.factor(bed), y = price)) +
-     geom_boxplot() +
-     labs(
-       x = "Number of bedrooms",
-       y = "Sale price (USD)",
-       title = "Homes for sale in Duke Forest, Durham, NC",
-       subtitle = "Data are from November 2020"
-       )
+      # Number of bedrooms and price
+      ggplot(duke_forest, aes(x = as.factor(bed), y = price)) +
+        geom_boxplot() +
+        labs(
+          x = "Number of bedrooms",
+          y = "Sale price (USD)",
+          title = "Homes for sale in Duke Forest, Durham, NC",
+          subtitle = "Data are from November 2020"
+          )
 
-   # Area and price
-   ggplot(duke_forest, aes(x = area, y = price)) +
-     geom_point() +
-     labs(
-       x = "Area (square feet)",
-       y = "Sale price (USD)",
-       title = "Homes for sale in Duke Forest, Durham, NC",
-       subtitle = "Data are from November 2020"
-       )
+      # Area and price
+      ggplot(duke_forest, aes(x = area, y = price)) +
+        geom_point() +
+        labs(
+          x = "Area (square feet)",
+          y = "Sale price (USD)",
+          title = "Homes for sale in Duke Forest, Durham, NC",
+          subtitle = "Data are from November 2020"
+          )

@@ -1,58 +1,61 @@
-========= ===============
-starbucks R Documentation
-========= ===============
+.. container::
 
-Starbucks nutrition
--------------------
+   ========= ===============
+   starbucks R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Starbucks nutrition
+      :name: starbucks-nutrition
 
-Nutrition facts for several Starbucks food items
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Nutrition facts for several Starbucks food items
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   starbucks
+   ::
 
-Format
-~~~~~~
+      starbucks
 
-A data frame with 77 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-item
-   Food item.
+   A data frame with 77 observations on the following 7 variables.
 
-calories
-   Calories.
+   item
+      Food item.
 
-fat
-   a numeric vector
+   calories
+      Calories.
 
-carb
-   a numeric vector
+   fat
+      a numeric vector
 
-fiber
-   a numeric vector
+   carb
+      a numeric vector
 
-protein
-   a numeric vector
+   fiber
+      a numeric vector
 
-type
-   a factor with levels ``bakery``, ``bistro box``, ``hot breakfast``,
-   ``parfait``, ``petite``, ``salad``, and ``sandwich``
+   protein
+      a numeric vector
 
-Source
-~~~~~~
+   type
+      a factor with levels ``bakery``, ``bistro box``,
+      ``hot breakfast``, ``parfait``, ``petite``, ``salad``, and
+      ``sandwich``
 
-https://www.starbucks.com/menu, retrieved 2011-03-10.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   https://www.starbucks.com/menu, retrieved 2011-03-10.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   starbucks
+      starbucks

@@ -1,44 +1,46 @@
-=========== ===============
-discoveries R Documentation
-=========== ===============
+.. container::
 
-Yearly Numbers of Important Discoveries
----------------------------------------
+   =========== ===============
+   discoveries R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Yearly Numbers of Important Discoveries
+      :name: yearly-numbers-of-important-discoveries
 
-The numbers of “great” inventions and scientific discoveries in each
-year from 1860 to 1959.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The numbers of “great” inventions and scientific discoveries in each
+   year from 1860 to 1959.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   discoveries
+   ::
 
-Format
-~~~~~~
+      discoveries
 
-A time series of 100 values.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A time series of 100 values.
 
-The World Almanac and Book of Facts, 1975 Edition, pages 315–318.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The World Almanac and Book of Facts, 1975 Edition, pages 315–318.
 
-McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(graphics)
-   plot(discoveries, ylab = "Number of important discoveries",
-        las = 1)
-   title(main = "discoveries data set")
+   ::
+
+      require(graphics)
+      plot(discoveries, ylab = "Number of important discoveries",
+           las = 1)
+      title(main = "discoveries data set")

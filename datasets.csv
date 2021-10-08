@@ -289,6 +289,7 @@
 "COUNT","smoking","smoking",6,4,2,0,0,0,4,"https://vincentarelbundock.github.io/Rdatasets/csv/COUNT/smoking.csv","https://vincentarelbundock.github.io/Rdatasets/doc/COUNT/smoking.html"
 "COUNT","titanic","titanic",1316,4,3,0,4,0,0,"https://vincentarelbundock.github.io/Rdatasets/csv/COUNT/titanic.csv","https://vincentarelbundock.github.io/Rdatasets/doc/COUNT/titanic.html"
 "COUNT","titanicgrp","titanicgrp",12,5,2,0,0,0,5,"https://vincentarelbundock.github.io/Rdatasets/csv/COUNT/titanicgrp.csv","https://vincentarelbundock.github.io/Rdatasets/doc/COUNT/titanicgrp.html"
+"crch","RainIbk","Precipitation Observations and Forecasts for Innsbruck",4971,12,0,0,0,0,12,"https://vincentarelbundock.github.io/Rdatasets/csv/crch/RainIbk.csv","https://vincentarelbundock.github.io/Rdatasets/doc/crch/RainIbk.html"
 "DAAG","ACF1","Aberrant Crypt Foci in Rat Colons",22,2,0,0,0,0,2,"https://vincentarelbundock.github.io/Rdatasets/csv/DAAG/ACF1.csv","https://vincentarelbundock.github.io/Rdatasets/doc/DAAG/ACF1.html"
 "DAAG","ais","Australian athletes data set",202,13,1,0,2,0,11,"https://vincentarelbundock.github.io/Rdatasets/csv/DAAG/ais.csv","https://vincentarelbundock.github.io/Rdatasets/doc/DAAG/ais.html"
 "DAAG","allbacks","Measurements on a Selection of Books",15,4,1,0,1,0,3,"https://vincentarelbundock.github.io/Rdatasets/csv/DAAG/allbacks.csv","https://vincentarelbundock.github.io/Rdatasets/doc/DAAG/allbacks.html"

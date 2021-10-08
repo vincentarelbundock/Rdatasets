@@ -1,47 +1,49 @@
-======= ===============
-kidtran R Documentation
-======= ===============
+.. container::
 
-data from Section 1.7
----------------------
+   ======= ===============
+   kidtran R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: data from Section 1.7
+      :name: data-from-section-1.7
 
-The ``kidtran`` data frame has 863 rows and 6 columns.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   The ``kidtran`` data frame has 863 rows and 6 columns.
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-obs
-   Observation number
+   This data frame contains the following columns:
 
-time
-   Time to death or on-study time
+   obs
+      Observation number
 
-delta
-   Death indicator (0=alive, 1=dead)
+   time
+      Time to death or on-study time
 
-gender
-   1=male, 2=female
+   delta
+      Death indicator (0=alive, 1=dead)
 
-race
-   1=white, 2=black
+   gender
+      1=male, 2=female
 
-age
-   Age in years
+   race
+      1=white, 2=black
 
-Source
-~~~~~~
+   age
+      Age in years
 
-Klein and Moeschberger (1997) *Survival Analysis Techniques for Censored
-and truncated data*, Springer.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Klein and Moeschberger (1997) *Survival Analysis Techniques for
+   Censored and truncated data*, Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(kidtran)
+   ::
+
+      data(kidtran)

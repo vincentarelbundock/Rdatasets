@@ -1,51 +1,53 @@
-======== ===============
-Lottario R Documentation
-======== ===============
+.. container::
 
-Ontario Lottery Data
---------------------
+   ======== ===============
+   Lottario R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Ontario Lottery Data
+      :name: ontario-lottery-data
 
-The data frame ``Lottario`` is a summary of 122 weekly draws of an
-Ontario lottery, beginning in November, 1978. Each draw consists of 7
-numbered balls, drawn without replacement from an urn consisting of
-balls numbered from 1 through 39.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The data frame ``Lottario`` is a summary of 122 weekly draws of an
+   Ontario lottery, beginning in November, 1978. Each draw consists of 7
+   numbered balls, drawn without replacement from an urn consisting of
+   balls numbered from 1 through 39.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Lottario
+   ::
 
-Format
-~~~~~~
+      Lottario
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-Number
-   the integers from 1 to 39, representing the numbered balls
+   This data frame contains the following columns:
 
-Frequency
-   the number of occurrences of each numbered ball
+   Number
+      the integers from 1 to 39, representing the numbered balls
 
-Source
-~~~~~~
+   Frequency
+      the number of occurrences of each numbered ball
 
-The Ontario Lottery Corporation
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The Ontario Lottery Corporation
 
-Bellhouse, D.R. (1982). Fair is fair: new rules for Canadian lotteries.
-Canadian Public Policy - Analyse de Politiques 8: 311-320.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Bellhouse, D.R. (1982). Fair is fair: new rules for Canadian
+   lotteries. Canadian Public Policy - Analyse de Politiques 8: 311-320.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-    
-   order(Lottario$Frequency)[33:39]  # the 7 most frequently chosen numbers
+   ::
+
+       
+      order(Lottario$Frequency)[33:39]  # the 7 most frequently chosen numbers

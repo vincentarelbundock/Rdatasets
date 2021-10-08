@@ -1,42 +1,44 @@
-============= ===============
-ButterfliesBc R Documentation
-============= ===============
+.. container::
 
-Butterfly (Boloria chariclea) Measurements
-------------------------------------------
+   ============= ===============
+   ButterfliesBc R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Butterfly (Boloria chariclea) Measurements
+      :name: butterfly-boloria-chariclea-measurements
 
-Measurements for a sample of butterflies in Greenland
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Measurements for a sample of butterflies in Greenland
 
-A data frame with 32 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``Temp``
-   Average temperature for preceding summer (Celsius)
+   A data frame with 32 observations on the following 4 variables.
 
-``Wing``
-   Average wing length (mm)
+   ``Temp``
+      Average temperature for preceding summer (Celsius)
 
-``Sex``
-   ``Female`` or ``Male``
+   ``Wing``
+      Average wing length (mm)
 
-``Species``
-   all are ``Bc``, Boloria chariclea
+   ``Sex``
+      ``Female`` or ``Male``
 
-Details
-~~~~~~~
+   ``Species``
+      all are ``Bc``, Boloria chariclea
 
-Scientists measured wing length of a species of butterfly, Boloria
-chariclea (Bc), in Greenland each year from 1996 through 2013. They also
-recorded summer temperatures.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Scientists measured wing length of a species of butterfly, Boloria
+   chariclea (Bc), in Greenland each year from 1996 through 2013. They
+   also recorded summer temperatures.
 
-Digitized data from plots in Bowden, J. et al., "High-Arctic butterflies
-become smaller with rising temperatures", published in Biology Letters
-11: 20150574
+   .. rubric:: Source
+      :name: source
+
+   Digitized data from plots in Bowden, J. et al., "High-Arctic
+   butterflies become smaller with rising temperatures", published in
+   Biology Letters 11: 20150574

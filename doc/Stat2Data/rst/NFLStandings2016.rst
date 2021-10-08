@@ -1,63 +1,65 @@
-================ ===============
-NFLStandings2016 R Documentation
-================ ===============
+.. container::
 
-NFL Standings for 2016 Regular Season
--------------------------------------
+   ================ ===============
+   NFLStandings2016 R Documentation
+   ================ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: NFL Standings for 2016 Regular Season
+      :name: nfl-standings-for-2016-regular-season
 
-Standings and team statistics for National Football League (NFL) teams
-in the 2016 season
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Standings and team statistics for National Football League (NFL)
+   teams in the 2016 season
 
-A data frame with 32 observations on the following 11 variables.
+   .. rubric:: Format
+      :name: format
 
-``Team``
-   Team name
+   A data frame with 32 observations on the following 11 variables.
 
-``Wins``
-   Wins in the 2016 regular season (out of 16 games)
+   ``Team``
+      Team name
 
-``Losses``
-   Losses in the 2016 regular season
+   ``Wins``
+      Wins in the 2016 regular season (out of 16 games)
 
-``Ties``
-   Ties in the 2016 regular season (ties are very rare in the NFL)
+   ``Losses``
+      Losses in the 2016 regular season
 
-``WinPct``
-   Winning percentage = (Wins+0.5*Ties)/16 games
+   ``Ties``
+      Ties in the 2016 regular season (ties are very rare in the NFL)
 
-``PointsFor``
-   Points scored
+   ``WinPct``
+      Winning percentage = (Wins+0.5*Ties)/16 games
 
-``PointsAgainst``
-   Points allowed
+   ``PointsFor``
+      Points scored
 
-``NetPts``
-   Points scored minus Points allowed
+   ``PointsAgainst``
+      Points allowed
 
-``YardsFor``
-   Offensive yards gained by the team
+   ``NetPts``
+      Points scored minus Points allowed
 
-``YardsAgainst``
-   Offensive yards against the team
+   ``YardsFor``
+      Offensive yards gained by the team
 
-``TDs``
-   Touchdowns scored
+   ``YardsAgainst``
+      Offensive yards against the team
 
-Details
-~~~~~~~
+   ``TDs``
+      Touchdowns scored
 
-Standings for the 2016 regular season of the National Football League
-(NFL) along with points and scored and allowed for each team in its16
-games.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Standings for the 2016 regular season of the National Football League
+   (NFL) along with points and scored and allowed for each team in its16
+   games.
 
-| Data downloaded from:
-| http://www.pro-football-reference.com/years/2016/
+   .. rubric:: Source
+      :name: source
+
+   | Data downloaded from:
+   | http://www.pro-football-reference.com/years/2016/

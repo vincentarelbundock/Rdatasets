@@ -1,100 +1,102 @@
-======= ===============
-mm_mlda R Documentation
-======= ===============
+.. container::
 
-Minimum Legal Drinking Age Fatalities Data
-------------------------------------------
+   ======= ===============
+   mm_mlda R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Minimum Legal Drinking Age Fatalities Data
+      :name: minimum-legal-drinking-age-fatalities-data
 
-These are data you can use to replicate the regression discontinuity
-design analyses throughout Chapter 4 of *Mastering 'Metrics*. Original
-analyses come from Carpenter and Dobkin (2009, 2011).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These are data you can use to replicate the regression discontinuity
+   design analyses throughout Chapter 4 of *Mastering 'Metrics*.
+   Original analyses come from Carpenter and Dobkin (2009, 2011).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   mm_mlda
+   ::
 
-Format
-~~~~~~
+      mm_mlda
 
-A data frame with 50 observations on the following 19 variables.
+   .. rubric:: Format
+      :name: format
 
-``agecell``
-   a numeric
+   A data frame with 50 observations on the following 19 variables.
 
-``all``
-   a numeric
+   ``agecell``
+      a numeric
 
-``allfitted``
-   a numeric
+   ``all``
+      a numeric
 
-``internal``
-   a numeric
+   ``allfitted``
+      a numeric
 
-``internalfitted``
-   a numeric
+   ``internal``
+      a numeric
 
-``external``
-   a numeric
+   ``internalfitted``
+      a numeric
 
-``externalfitted``
-   a numeric
+   ``external``
+      a numeric
 
-``alcohol``
-   a numeric
+   ``externalfitted``
+      a numeric
 
-``alcoholfitted``
-   a numeric
+   ``alcohol``
+      a numeric
 
-``homicide``
-   a numeric
+   ``alcoholfitted``
+      a numeric
 
-``homicidefitted``
-   a numeric
+   ``homicide``
+      a numeric
 
-``suicide``
-   a numeric
+   ``homicidefitted``
+      a numeric
 
-``suicidefitted``
-   a numeric
+   ``suicide``
+      a numeric
 
-``mva``
-   a numeric
+   ``suicidefitted``
+      a numeric
 
-``mvafitted``
-   a numeric
+   ``mva``
+      a numeric
 
-``drugs``
-   a numeric
+   ``mvafitted``
+      a numeric
 
-``drugsfitted``
-   a numeric
+   ``drugs``
+      a numeric
 
-``externalother``
-   a numeric
+   ``drugsfitted``
+      a numeric
 
-``externalotherfitted``
-   a numeric
+   ``externalother``
+      a numeric
 
-Details
-~~~~~~~
+   ``externalotherfitted``
+      a numeric
 
-These data are not well-documented. You guys are on your own here. Good
-luck.
+   .. rubric:: Details
+      :name: details
 
-References
-~~~~~~~~~~
+   These data are not well-documented. You guys are on your own here.
+   Good luck.
 
-Carpenter, Christopher and Carlos Dobkin. 2009. "The Effect of Alcohol
-Consumption on Mortality: Regression Discontinuity Evidence from the
-Minimum Drinking Age". *American Economic Journal: Applied Economics*
-1(1): 164–182.
+   .. rubric:: References
+      :name: references
 
-Carpenter, Christopher and Carloss Dobkin. 2011. "The Minimum Legal
-Drinking Age and Public Health". *Journal of Economic Perspectives*
-25(2): 133–156.
+   Carpenter, Christopher and Carlos Dobkin. 2009. "The Effect of
+   Alcohol Consumption on Mortality: Regression Discontinuity Evidence
+   from the Minimum Drinking Age". *American Economic Journal: Applied
+   Economics* 1(1): 164–182.
+
+   Carpenter, Christopher and Carloss Dobkin. 2011. "The Minimum Legal
+   Drinking Age and Public Health". *Journal of Economic Perspectives*
+   25(2): 133–156.

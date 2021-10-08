@@ -1,70 +1,72 @@
-======== ===============
-daphnids R Documentation
-======== ===============
+.. container::
 
-Daphnia test
-------------
+   ======== ===============
+   daphnids R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Daphnia test
+      :name: daphnia-test
 
-The number of immobile daphnids –in contrast to mobile daphnids– out of
-a total of 20 daphnids was counted for several concentrations of a toxic
-substance.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The number of immobile daphnids –in contrast to mobile daphnids– out
+   of a total of 20 daphnids was counted for several concentrations of a
+   toxic substance.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(daphnids)
+   ::
 
-Format
-~~~~~~
+      data(daphnids)
 
-A data frame with 16 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``dose``
-   a numeric vector
+   A data frame with 16 observations on the following 4 variables.
 
-``no``
-   a numeric vector
+   ``dose``
+      a numeric vector
 
-``total``
-   a numeric vector
+   ``no``
+      a numeric vector
 
-``time``
-   a factor with levels ``24h`` ``48h``
+   ``total``
+      a numeric vector
 
-Details
-~~~~~~~
+   ``time``
+      a factor with levels ``24h`` ``48h``
 
-The same daphnids were counted at 24h and later again at 48h.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The same daphnids were counted at 24h and later again at 48h.
 
-Nina Cedergreen, Faculty of Life Sciences, University of Copenhagen,
-Denmark.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Nina Cedergreen, Faculty of Life Sciences, University of Copenhagen,
+   Denmark.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   ## Fitting a model with different parameters
-   ## for different curves
-   daphnids.m1 <- drm(no/total~dose, time, weights = total, 
-   data = daphnids, fct = LL.2(), type = "binomial")
+      ## Fitting a model with different parameters
+      ## for different curves
+      daphnids.m1 <- drm(no/total~dose, time, weights = total, 
+      data = daphnids, fct = LL.2(), type = "binomial")
 
-   ## Goodness-of-fit test
-   modelFit(daphnids.m1)
+      ## Goodness-of-fit test
+      modelFit(daphnids.m1)
 
-   ## Summary of the data
-   summary(daphnids.m1)
+      ## Summary of the data
+      summary(daphnids.m1)
 
-   ## Fitting a model with a common intercept parameter
-   daphnids.m2 <- drm(no/total~dose, time, weights = total, 
-   data = daphnids, fct = LL.2(), type = "binomial", 
-   pmodels = list(~1, ~time))
+      ## Fitting a model with a common intercept parameter
+      daphnids.m2 <- drm(no/total~dose, time, weights = total, 
+      data = daphnids, fct = LL.2(), type = "binomial", 
+      pmodels = list(~1, ~time))
