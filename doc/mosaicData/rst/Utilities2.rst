@@ -1,85 +1,87 @@
-========== ===============
-Utilities2 R Documentation
-========== ===============
+.. container::
 
-Utility bills
--------------
+   ========== ===============
+   Utilities2 R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Utility bills
+      :name: utility-bills
 
-Data from utility bills at a private residence. This is an augmented
-version of ``Utilities``.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from utility bills at a private residence. This is an augmented
+   version of ``Utilities``.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Utilities2)
+   ::
 
-Format
-~~~~~~
+      data(Utilities2)
 
-A data frame containing 117 observations for the following variables.
+   .. rubric:: Format
+      :name: format
 
--  ``month`` month (coded as a number)
+   A data frame containing 117 observations for the following variables.
 
--  ``day`` day of month on which bill was calculated
+   -  ``month`` month (coded as a number)
 
--  ``year`` year of bill
+   -  ``day`` day of month on which bill was calculated
 
--  ``temp`` average temperature (F) for billing period
+   -  ``year`` year of bill
 
--  ``kwh`` electricity usage (kwh)
+   -  ``temp`` average temperature (F) for billing period
 
--  ``ccf`` gas usage (ccf)
+   -  ``kwh`` electricity usage (kwh)
 
--  ``thermsPerDay`` a numeric vector
+   -  ``ccf`` gas usage (ccf)
 
--  ``billingDays`` number of billing days in billing period
+   -  ``thermsPerDay`` a numeric vector
 
--  ``totalbill`` total bill (in dollars)
+   -  ``billingDays`` number of billing days in billing period
 
--  ``gasbill`` gas bill (in dollars)
+   -  ``totalbill`` total bill (in dollars)
 
--  ``elecbill`` electric bill (in dollars)
+   -  ``gasbill`` gas bill (in dollars)
 
--  ``notes`` notes about the billing period
+   -  ``elecbill`` electric bill (in dollars)
 
--  ``ccfpday`` average gas usage per day (``Utilities2`` only)
+   -  ``notes`` notes about the billing period
 
--  ``kwhpday`` average electric usage per day (``Utilities2`` only)
+   -  ``ccfpday`` average gas usage per day (``Utilities2`` only)
 
--  ``gasbillpday`` gas bill divided by billing days (``Utilities2``
-   only)
+   -  ``kwhpday`` average electric usage per day (``Utilities2`` only)
 
--  ``elecbillpday`` electric bill divided by billing days a numeric
-   vector (``Utilities2`` only)
+   -  ``gasbillpday`` gas bill divided by billing days (``Utilities2``
+      only)
 
--  ``totalbillpday`` total bill divided by billing days a numeric vector
-   (``Utilities2`` only)
+   -  ``elecbillpday`` electric bill divided by billing days a numeric
+      vector (``Utilities2`` only)
 
--  ``therms`` ``thermsPerDay * billingDays`` (``Utilities2`` only)
+   -  ``totalbillpday`` total bill divided by billing days a numeric
+      vector (``Utilities2`` only)
 
--  ``monthsSinceY2K`` months since 2000 (``Utilities2`` only)
+   -  ``therms`` ``thermsPerDay * billingDays`` (``Utilities2`` only)
 
-Source
-~~~~~~
+   -  ``monthsSinceY2K`` months since 2000 (``Utilities2`` only)
 
-Daniel T. Kaplan, *Statistical modeling: A fresh approach*, 2009.
+   .. rubric:: Source
+      :name: source
 
-See Also
-~~~~~~~~
+   Daniel T. Kaplan, *Statistical modeling: A fresh approach*, 2009.
 
-``Utilities``.
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Utilities``.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(Utilities2)
-   if (require(ggformula)) {
-     gf_point(gasbillpday ~ temp, data = Utilities2)
-   }
+   ::
+
+      data(Utilities2)
+      if (require(ggformula)) {
+        gf_point(gasbillpday ~ temp, data = Utilities2)
+      }

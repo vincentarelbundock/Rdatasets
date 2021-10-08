@@ -1,45 +1,48 @@
-========= ===============
-sp500_seq R Documentation
-========= ===============
+.. container::
 
-S&P 500 stock data
-------------------
+   ========= ===============
+   sp500_seq R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: S&P 500 stock data
+      :name: sp-500-stock-data
 
-Daily stock returns from the S&P500 for 1990-2011 can be used to assess
-whether stock activity each day is independent of the stock's behavior
-on previous days. We label each day as Up or Down (D) depending on
-whether the market was up or down that day. For example, consider the
-following changes in price, their new labels of up and down, and then
-the number of days that must be observed before each Up day.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Daily stock returns from the S&P500 for 1990-2011 can be used to
+   assess whether stock activity each day is independent of the stock's
+   behavior on previous days. We label each day as Up or Down (D)
+   depending on whether the market was up or down that day. For example,
+   consider the following changes in price, their new labels of up and
+   down, and then the number of days that must be observed before each
+   Up day.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   sp500_seq
+   ::
 
-Format
-~~~~~~
+      sp500_seq
 
-A data frame with 2948 observations on the following variable.
+   .. rubric:: Format
+      :name: format
 
-race
-   a factor with levels ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, and
-   ``7+``
+   A data frame with 2948 observations on the following variable.
 
-Source
-~~~~~~
+   race
+      a factor with levels ``1``, ``2``, ``3``, ``4``, ``5``, ``6``, and
+      ``7+``
 
-`Google Finance <https://www.google.com/finance/>`__.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   `Google Finance <https://www.google.com/finance/>`__.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   sp500_seq
+      sp500_seq

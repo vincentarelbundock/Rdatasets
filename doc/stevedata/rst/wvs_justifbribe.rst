@@ -1,52 +1,55 @@
-=============== ===============
-wvs_justifbribe R Documentation
-=============== ===============
+.. container::
 
-Attitudes about the Justifiability of Bribe-Taking in the World Values Survey
------------------------------------------------------------------------------
+   =============== ===============
+   wvs_justifbribe R Documentation
+   =============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Attitudes about the Justifiability of Bribe-Taking in the
+      World Values Survey
+      :name: attitudes-about-the-justifiability-of-bribe-taking-in-the-world-values-survey
 
-A data set on attitudes about the justifiability of bribe-taking for all
-observations in the third to sixth wave of the World Values Survey. I
-use these data for in-class illustration about seemingly interval-level,
-but information-poor measurements.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A data set on attitudes about the justifiability of bribe-taking for
+   all observations in the third to sixth wave of the World Values
+   Survey. I use these data for in-class illustration about seemingly
+   interval-level, but information-poor measurements.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   wvs_justifbribe
+   ::
 
-Format
-~~~~~~
+      wvs_justifbribe
 
-A data frame with 348532 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``s002``
-   the World Values Survey wave
+   A data frame with 348532 observations on the following 6 variables.
 
-``s003``
-   the World Values Survey country code
+   ``s002``
+      the World Values Survey wave
 
-``country``
-   the country name
+   ``s003``
+      the World Values Survey country code
 
-``s020``
-   the survey year
+   ``country``
+      the country name
 
-``uid``
-   a unique identifier for the survey respondent
+   ``s020``
+      the survey year
 
-``f117``
-   an attitude about the justifiability of bribe-taking in the World
-   Values Survey
+   ``uid``
+      a unique identifier for the survey respondent
 
-Details
-~~~~~~~
+   ``f117``
+      an attitude about the justifiability of bribe-taking in the World
+      Values Survey
 
-1 = "never justifiable". 10 = "always justifiable". Increasing values on
-this 1-10 scale imply increasing permissiveness for the respondent
-toward this particular/blatant form of corruption.
+   .. rubric:: Details
+      :name: details
+
+   1 = "never justifiable". 10 = "always justifiable". Increasing values
+   on this 1-10 scale imply increasing permissiveness for the respondent
+   toward this particular/blatant form of corruption.

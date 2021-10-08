@@ -1,43 +1,46 @@
-============ ===============
-coffee_price R Documentation
-============ ===============
+.. container::
 
-The Primary Commodity Price for Coffee (Arabica, Robustas)
-----------------------------------------------------------
+   ============ ===============
+   coffee_price R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: The Primary Commodity Price for Coffee (Arabica,
+      Robustas)
+      :name: the-primary-commodity-price-for-coffee-arabica-robustas
 
-This is primary commodity price data for coffee (Arabica, Robustas) from
-1980 to the present. I manually update these data since FRED's coverage
-since 2017 has been spotty.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This is primary commodity price data for coffee (Arabica, Robustas)
+   from 1980 to the present. I manually update these data since FRED's
+   coverage since 2017 has been spotty.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   coffee_price
+   ::
 
-Format
-~~~~~~
+      coffee_price
 
-A data frame with 489 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``date``
-   the date (year-month)
+   A data frame with the following 3 variables.
 
-``arabica``
-   the price (monthly average) of mild Arabica, via International Coffee
-   Organization data, in nominal US cents per pound
+   ``date``
+      the date (year-month)
 
-``robustas``
-   the price (monthly average) of Robustas, via International Coffee
-   Organization data, in nominal US cents per pound
+   ``arabica``
+      the price (monthly average) of mild Arabica, via International
+      Coffee Organization data, in nominal US cents per pound
 
-Details
-~~~~~~~
+   ``robustas``
+      the price (monthly average) of Robustas, via International Coffee
+      Organization data, in nominal US cents per pound
 
-Data come from International Monetary Fund (Primary Commodity Prices)
-and International Coffee Organization. The IMF adds these prices are
-global and the New York cash price, ex-dock
+   .. rubric:: Details
+      :name: details
+
+   Data come from International Monetary Fund (Primary Commodity Prices)
+   and International Coffee Organization. The IMF adds these prices are
+   global and the New York cash price, ex-dock

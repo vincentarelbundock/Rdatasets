@@ -1,77 +1,80 @@
-============== ===============
-GrinnellHouses R Documentation
-============== ===============
+.. container::
 
-House Sales in Grinnell, Iowa
------------------------------
+   ============== ===============
+   GrinnellHouses R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: House Sales in Grinnell, Iowa
+      :name: house-sales-in-grinnell-iowa
 
-Data on houses sold between 2005 and 2015 in Grinnell, Iowa
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Data on houses sold between 2005 and 2015 in Grinnell, Iowa
 
-A data frame with 929 observations on the following 15 variables.
+   .. rubric:: Format
+      :name: format
 
-``Date``
-   Coded value for date of sale (Jan 1, 2005=16436)
+   A data frame with 929 observations on the following 15 variables.
 
-``Address``
-   Street address of the house
+   ``Date``
+      Coded value for date of sale (Jan 1, 2005=16436)
 
-``Bedrooms``
-   Number of bedrooms
+   ``Address``
+      Street address of the house
 
-``Baths``
-   Number of bathrooms
+   ``Bedrooms``
+      Number of bedrooms
 
-``SquareFeet``
-   The square footage of the home's living space
+   ``Baths``
+      Number of bathrooms
 
-``LotSize``
-   Lot size (in acres)
+   ``SquareFeet``
+      The square footage of the home's living space
 
-``YearBuilt``
-   Year the house was built; many pre-1900 homes are listed as 1900
+   ``LotSize``
+      Lot size (in acres)
 
-``YearSold``
-   The year the house was sold, for this case
+   ``YearBuilt``
+      Year the house was built; many pre-1900 homes are listed as 1900
 
-``MonthSold``
-   The month the house was sold (1=Jan, 2=Feb, to 12=Dec)
+   ``YearSold``
+      The year the house was sold, for this case
 
-``DaySold``
-   Day of the month the house was sold (1 to 31)
+   ``MonthSold``
+      The month the house was sold (1=Jan, 2=Feb, to 12=Dec)
 
-``CostPerSqFt``
-   SalePrice / SquareFeet (round to nearest penny)
+   ``DaySold``
+      Day of the month the house was sold (1 to 31)
 
-``OrigPrice``
-   List price of the house when originally put on the market (dollars)
+   ``CostPerSqFt``
+      SalePrice / SquareFeet (round to nearest penny)
 
-``ListPrice``
-   List price at the time of sale (dollars)
+   ``OrigPrice``
+      List price of the house when originally put on the market
+      (dollars)
 
-``SalePrice``
-   Sale price of the house (dollars)
+   ``ListPrice``
+      List price at the time of sale (dollars)
 
-``SPLPPct``
-   (Sale_Price / List_Price ) \* 100
+   ``SalePrice``
+      Sale price of the house (dollars)
 
-Details
-~~~~~~~
+   ``SPLPPct``
+      (Sale_Price / List_Price ) \* 100
 
-A local Grinnell realtor, Matt Karjalahti, put these data together to
-see what patterns might be found, perhaps with an improvement in how one
-sells houses or buys them. He asked Grinnell College economists, Lee
-Logan and Eric Ohrn, to help with the analysis and we obtained the data
-from them.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   A local Grinnell realtor, Matt Karjalahti, put these data together to
+   see what patterns might be found, perhaps with an improvement in how
+   one sells houses or buys them. He asked Grinnell College economists,
+   Lee Logan and Eric Ohrn, to help with the analysis and we obtained
+   the data from them.
 
-Thanks to Grinnell realtor Matt Karjalahti who originally collected the
-data and Grinnell College economists Lee Logan and Eric Ohrn who gave us
-the data.
+   .. rubric:: Source
+      :name: source
+
+   Thanks to Grinnell realtor Matt Karjalahti who originally collected
+   the data and Grinnell College economists Lee Logan and Eric Ohrn who
+   gave us the data.

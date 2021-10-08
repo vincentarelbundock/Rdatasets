@@ -1,63 +1,64 @@
-=========== ===============
-LaborSupply R Documentation
-=========== ===============
+.. container::
 
-Wages and Hours Worked
-----------------------
+   =========== ===============
+   LaborSupply R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Wages and Hours Worked
+      :name: wages-and-hours-worked
 
-A panel of 532 observations from 1979 to 1988
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   A panel of 532 observations from 1979 to 1988
 
-A data frame containing :
+   .. rubric:: Format
+      :name: format
 
-lnhr
-   log of annual hours worked
+   A data frame containing :
 
-lnwg
-   log of hourly wage
+   lnhr
+      log of annual hours worked
 
-kids
-   number of children
+   lnwg
+      log of hourly wage
 
-age
+   kids
+      number of children
+
    age
+      age
 
-disab
-   bad health
+   disab
+      bad health
 
-id
    id
+      id
 
-year
    year
+      year
 
-Details
-~~~~~~~
+   .. rubric:: Details
+      :name: details
 
-*number of observations* : 5320
+   *number of observations* : 5320
 
-Source
-~~~~~~
+   .. rubric:: Source
+      :name: source
 
-Online complements to Ziliak (1997).
+   Online complements to Ziliak (1997).
 
-Journal of Business Economics and Statistics web site:
-https://amstat.tandfonline.com/loi/ubes20/.
+   Journal of Business Economics and Statistics web site:
+   https://amstat.tandfonline.com/loi/ubes20/.
 
-References
-~~~~~~~~~~
+   .. rubric:: References
+      :name: references
 
-Colin Cameron A, K. Trivedi P (2005). *Microeconometrics: Methods and
-Applications*. Cambridge University Press. ISBN 0521848059, doi:
-`10.1017/CBO9780511811241 <https://doi.org/10.1017/CBO9780511811241>`__,
-https://doi.org/10.1017/CBO9780511811241.
+   Colin Cameron A, K. Trivedi P (2005). *Microeconometrics: Methods and
+   Applications*. Cambridge University Press. ISBN 0521848059, doi:
+   `10.1017/CBO9780511811241 <https://doi.org/10.1017/CBO9780511811241>`__.
 
-Ziliak JP (1997). “Efficient Estimation with Panel Data When Instruments
-Are Predetermined: An Empirical Comparison of Moment-Condition
-Estimators.” *Journal of Business & Economic Statistics*, **15**\ (4),
-419–431. ISSN 07350015.
+   Ziliak JP (1997). “Efficient Estimation with Panel Data When
+   Instruments Are Predetermined: An Empirical Comparison of
+   Moment-Condition Estimators.” *Journal of Business & Economic
+   Statistics*, **15**\ (4), 419–431. ISSN 07350015.

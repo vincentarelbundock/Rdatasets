@@ -1,57 +1,59 @@
-======= ===============
-weather R Documentation
-======= ===============
+.. container::
 
-Hourly weather data
--------------------
+   ======= ===============
+   weather R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Hourly weather data
+      :name: hourly-weather-data
 
-Hourly meterological data for LGA, JFK and EWR.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Hourly meterological data for LGA, JFK and EWR.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   weather
+   ::
 
-Format
-~~~~~~
+      weather
 
-A data frame with columns:
+   .. rubric:: Format
+      :name: format
 
-origin
-   Weather station. Named ``origin`` to facilitate merging with
-   ``flights`` data.
+   A data frame with columns:
 
-year, month, day, hour
-   Time of recording.
+   origin
+      Weather station. Named ``origin`` to facilitate merging with
+      ``flights`` data.
 
-temp, dewp
-   Temperature and dewpoint in F.
+   year, month, day, hour
+      Time of recording.
 
-humid
-   Relative humidity.
+   temp, dewp
+      Temperature and dewpoint in F.
 
-wind_dir, wind_speed, wind_gust
-   Wind direction (in degrees), speed and gust speed (in mph).
+   humid
+      Relative humidity.
 
-precip
-   Precipitation, in inches.
+   wind_dir, wind_speed, wind_gust
+      Wind direction (in degrees), speed and gust speed (in mph).
 
-pressure
-   Sea level pressure in millibars.
+   precip
+      Precipitation, in inches.
 
-visib
-   Visibility in miles.
+   pressure
+      Sea level pressure in millibars.
 
-time_hour
-   Date and hour of the recording as a ``POSIXct`` date.
+   visib
+      Visibility in miles.
 
-Source
-~~~~~~
+   time_hour
+      Date and hour of the recording as a ``POSIXct`` date.
 
-ASOS download from Iowa Environmental Mesonet,
-https://mesonet.agron.iastate.edu/request/download.phtml.
+   .. rubric:: Source
+      :name: source
+
+   ASOS download from Iowa Environmental Mesonet,
+   https://mesonet.agron.iastate.edu/request/download.phtml.

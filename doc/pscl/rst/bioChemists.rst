@@ -1,49 +1,52 @@
-=========== ===============
-bioChemists R Documentation
-=========== ===============
+.. container::
 
-article production by graduate students in biochemistry Ph.D. programs
-----------------------------------------------------------------------
+   =========== ===============
+   bioChemists R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: article production by graduate students in biochemistry
+      Ph.D. programs
+      :name: article-production-by-graduate-students-in-biochemistry-ph.d.-programs
 
-A sample of 915 biochemistry graduate students.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A sample of 915 biochemistry graduate students.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(bioChemists)
+   ::
 
-Format
-~~~~~~
+      data(bioChemists)
 
-``art``
-   count of articles produced during last 3 years of Ph.D.
+   .. rubric:: Format
+      :name: format
 
-``fem``
-   factor indicating gender of student, with levels Men and Women
+   ``art``
+      count of articles produced during last 3 years of Ph.D.
 
-``mar``
-   factor indicating marital status of student, with levels Single and
-   Married
+   ``fem``
+      factor indicating gender of student, with levels Men and Women
 
-``kid5``
-   number of children aged 5 or younger
+   ``mar``
+      factor indicating marital status of student, with levels Single
+      and Married
 
-``phd``
-   prestige of Ph.D. department
+   ``kid5``
+      number of children aged 5 or younger
 
-``ment``
-   count of articles produced by Ph.D. mentor during last 3 years
+   ``phd``
+      prestige of Ph.D. department
 
-References
-~~~~~~~~~~
+   ``ment``
+      count of articles produced by Ph.D. mentor during last 3 years
 
-Long, J. Scott. 1990. The origins of sex differences in science. *Social
-Forces*. 68(3):1297-1316.
+   .. rubric:: References
+      :name: references
 
-Long, J. Scott. 1997. *Regression Models for Categorical and Limited
-Dependent Variables*. Thousand Oaks, California: Sage.
+   Long, J. Scott. 1990. The origins of sex differences in science.
+   *Social Forces*. 68(3):1297-1316.
+
+   Long, J. Scott. 1997. *Regression Models for Categorical and Limited
+   Dependent Variables*. Thousand Oaks, California: Sage.

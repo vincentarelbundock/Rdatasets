@@ -1,57 +1,59 @@
-======== ===============
-Earnings R Documentation
-======== ===============
+.. container::
 
-Earnings for Three Age Groups
------------------------------
+   ======== ===============
+   Earnings R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Earnings for Three Age Groups
+      :name: earnings-for-three-age-groups
 
-a cross-section from 1988-1989
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 4266
+   a cross-section from 1988-1989
 
-*observation* : individuals
+   *number of observations* : 4266
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Earnings)
+   ::
 
-Format
-~~~~~~
+      data(Earnings)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-age
-   age groups, a factor with levels ``(g1,g2,g3)``
+   A dataframe containing :
 
-y
-   average annual earnings, in 1982 US dollars
+   age
+      age groups, a factor with levels ``(g1,g2,g3)``
 
-Source
-~~~~~~
+   y
+      average annual earnings, in 1982 US dollars
 
-Mills, Jeffery A. and Sourushe Zandvakili (1997) “Statistical Inference
-via Bootstrapping for Measures of Inequality”, *Journal of Applied
-Econometrics*, **12(2)**, pp. 133-150.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Mills, Jeffery A. and Sourushe Zandvakili (1997) “Statistical
+   Inference via Bootstrapping for Measures of Inequality”, *Journal of
+   Applied Econometrics*, **12(2)**, pp. 133-150.
 
-Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
-Methods*, New York, Oxford University Press, chapter 5 and 7.
+   .. rubric:: References
+      :name: references
 
-Journal of Applied Econometrics data archive :
-http://qed.econ.queensu.ca/jae/.
+   Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
+   Methods*, New York, Oxford University Press, chapter 5 and 7.
 
-See Also
-~~~~~~~~
+   Journal of Applied Econometrics data archive :
+   http://qed.econ.queensu.ca/jae/.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

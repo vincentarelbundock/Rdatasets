@@ -1,91 +1,94 @@
-======= ===============
-mammals R Documentation
-======= ===============
+.. container::
 
-Sleep in Mammals
-----------------
+   ======= ===============
+   mammals R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Sleep in Mammals
+      :name: sleep-in-mammals
 
-This data set includes data for 39 species of mammals distributed over
-13 orders. The data were used for analyzing the relationship between
-constitutional and ecological factors and sleeping in mammals. Two
-qualitatively different sleep variables (dreaming and non dreaming) were
-recorded. Constitutional variables such as life span, body weight, brain
-weight and gestation time were evaluated. Ecological variables such as
-severity of predation, safety of sleeping place and overall danger were
-inferred from field observations in the literature.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data set includes data for 39 species of mammals distributed
+   over 13 orders. The data were used for analyzing the relationship
+   between constitutional and ecological factors and sleeping in
+   mammals. Two qualitatively different sleep variables (dreaming and
+   non dreaming) were recorded. Constitutional variables such as life
+   span, body weight, brain weight and gestation time were evaluated.
+   Ecological variables such as severity of predation, safety of
+   sleeping place and overall danger were inferred from field
+   observations in the literature.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   mammals
+   ::
 
-Format
-~~~~~~
+      mammals
 
-A data frame with 62 observations on the following 11 variables.
+   .. rubric:: Format
+      :name: format
 
-species
-   Species of mammals
+   A data frame with 62 observations on the following 11 variables.
 
-body_wt
-   Total body weight of the mammal (in kg)
+   species
+      Species of mammals
 
-brain_wt
-   Brain weight of the mammal (in kg)
+   body_wt
+      Total body weight of the mammal (in kg)
 
-non_dreaming
-   Number of hours of non dreaming sleep
+   brain_wt
+      Brain weight of the mammal (in kg)
 
-dreaming
-   Number of hours of dreaming sleep
+   non_dreaming
+      Number of hours of non dreaming sleep
 
-total_sleep
-   Total number of hours of sleep
+   dreaming
+      Number of hours of dreaming sleep
 
-life_span
-   Life span (in years)
+   total_sleep
+      Total number of hours of sleep
 
-gestation
-   Gestation time (in days)
+   life_span
+      Life span (in years)
 
-predation
-   An index of how likely the mammal is to be preyed upon. 1 = least
-   likely to be preyed upon. 5 = most likely to be preyed upon.
+   gestation
+      Gestation time (in days)
 
-exposure
-   An index of the how exposed the mammal is during sleep. 1 = least
-   exposed (e.g., sleeps in a well-protected den). 5 = most exposed.
+   predation
+      An index of how likely the mammal is to be preyed upon. 1 = least
+      likely to be preyed upon. 5 = most likely to be preyed upon.
 
-danger
-   An index of how much danger the mammal faces from other animals. This
-   index is based upon Predation and Exposure. 1 = least danger from
-   other animals. 5 = most danger from other animals.
+   exposure
+      An index of the how exposed the mammal is during sleep. 1 = least
+      exposed (e.g., sleeps in a well-protected den). 5 = most exposed.
 
-Source
-~~~~~~
+   danger
+      An index of how much danger the mammal faces from other animals.
+      This index is based upon Predation and Exposure. 1 = least danger
+      from other animals. 5 = most danger from other animals.
 
-http://www.statsci.org/data/general/sleep.txt
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   http://www.statsci.org/data/general/sleep.txt
 
-T. Allison and D. Cicchetti, "Sleep in mammals: ecological and
-constitutional correlates," Arch. Hydrobiol, vol. 75, p. 442, 1975.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   T. Allison and D. Cicchetti, "Sleep in mammals: ecological and
+   constitutional correlates," Arch. Hydrobiol, vol. 75, p. 442, 1975.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(mammals, aes(x = log(body_wt), y = log(brain_wt))) +
-     geom_point() +
-     geom_smooth(method = "lm") +
-     labs(x = "Log of body weight", x = "Log of brain weight")
+      ggplot(mammals, aes(x = log(body_wt), y = log(brain_wt))) +
+        geom_point() +
+        geom_smooth(method = "lm") +
+        labs(x = "Log of body weight", x = "Log of brain weight")

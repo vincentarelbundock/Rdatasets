@@ -1,56 +1,58 @@
-======== ===============
-Ginzberg R Documentation
-======== ===============
+.. container::
 
-Data on Depression
-------------------
+   ======== ===============
+   Ginzberg R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data on Depression
+      :name: data-on-depression
 
-The ``Ginzberg`` data frame has 82 rows and 6 columns. The data are for
-psychiatric patients hospitalized for depression.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Ginzberg`` data frame has 82 rows and 6 columns. The data are
+   for psychiatric patients hospitalized for depression.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Ginzberg
+   ::
 
-Format
-~~~~~~
+      Ginzberg
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-simplicity
-   Measures subject's need to see the world in black and white.
+   This data frame contains the following columns:
 
-fatalism
-   Fatalism scale.
+   simplicity
+      Measures subject's need to see the world in black and white.
 
-depression
-   Beck self-report depression scale.
+   fatalism
+      Fatalism scale.
 
-adjsimp
-   Adjusted Simplicity: Simplicity adjusted (by regression) for other
-   variables thought to influence depression.
+   depression
+      Beck self-report depression scale.
 
-adjfatal
-   Adjusted Fatalism.
+   adjsimp
+      Adjusted Simplicity: Simplicity adjusted (by regression) for other
+      variables thought to influence depression.
 
-adjdep
-   Adjusted Depression.
+   adjfatal
+      Adjusted Fatalism.
 
-Source
-~~~~~~
+   adjdep
+      Adjusted Depression.
 
-Personal communication from Georges Monette, Department of Mathematics
-and Statistics, York University, with the permission of the original
-investigator.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Personal communication from Georges Monette, Department of
+   Mathematics and Statistics, York University, with the permission of
+   the original investigator.
 
-Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-Models*, Third Edition. Sage.
+   .. rubric:: References
+      :name: references
+
+   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+   Models*, Third Edition. Sage.

@@ -1,64 +1,66 @@
-======= ===============
-Florida R Documentation
-======= ===============
+.. container::
 
-Florida County Voting
----------------------
+   ======= ===============
+   Florida R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Florida County Voting
+      :name: florida-county-voting
 
-The ``Florida`` data frame has 67 rows and 11 columns. Vote by county in
-Florida for President in the 2000 election.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Florida`` data frame has 67 rows and 11 columns. Vote by county
+   in Florida for President in the 2000 election.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Florida
+   ::
 
-Format
-~~~~~~
+      Florida
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-GORE
-   Number of votes for Gore
+   This data frame contains the following columns:
 
-BUSH
-   Number of votes for Bush.
+   GORE
+      Number of votes for Gore
 
-BUCHANAN
-   Number of votes for Buchanan.
+   BUSH
+      Number of votes for Bush.
 
-NADER
-   Number of votes for Nader.
+   BUCHANAN
+      Number of votes for Buchanan.
 
-BROWNE
-   Number of votes for Browne (whoever that is).
+   NADER
+      Number of votes for Nader.
 
-HAGELIN
-   Number of votes for Hagelin (whoever that is).
+   BROWNE
+      Number of votes for Browne (whoever that is).
 
-HARRIS
-   Number of votes for Harris (whoever that is).
+   HAGELIN
+      Number of votes for Hagelin (whoever that is).
 
-MCREYNOLDS
-   Number of votes for McReynolds (whoever that is).
+   HARRIS
+      Number of votes for Harris (whoever that is).
 
-MOOREHEAD
-   Number of votes for Moorehead (whoever that is).
+   MCREYNOLDS
+      Number of votes for McReynolds (whoever that is).
 
-PHILLIPS
-   Number of votes for Phillips (whoever that is).
+   MOOREHEAD
+      Number of votes for Moorehead (whoever that is).
 
-Total
-   Total number of votes.
+   PHILLIPS
+      Number of votes for Phillips (whoever that is).
 
-Source
-~~~~~~
+   Total
+      Total number of votes.
 
-Adams, G. D. and Fastnow, C. F. (2000) A note on the voting
-irregularities in Palm Beach, FL. Formerly at
-http://madison.hss.cmu.edu/, but no longer available there.
+   .. rubric:: Source
+      :name: source
+
+   Adams, G. D. and Fastnow, C. F. (2000) A note on the voting
+   irregularities in Palm Beach, FL. Formerly at
+   http://madison.hss.cmu.edu/, but no longer available there.

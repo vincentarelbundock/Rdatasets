@@ -1,87 +1,89 @@
-=========== ===============
-leafshape17 R Documentation
-=========== ===============
+.. container::
 
-Subset of Leaf Shape Data Set
------------------------------
+   =========== ===============
+   leafshape17 R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Subset of Leaf Shape Data Set
+      :name: subset-of-leaf-shape-data-set
 
-The ``leafshape17`` data frame has 61 rows and 8 columns. These are leaf
-length, width and petiole measurements taken at several sites in
-Australia. This is a subset of the ``leafshape`` data frame.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``leafshape17`` data frame has 61 rows and 8 columns. These are
+   leaf length, width and petiole measurements taken at several sites in
+   Australia. This is a subset of the ``leafshape`` data frame.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   leafshape17
+   ::
 
-Format
-~~~~~~
+      leafshape17
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-bladelen
-   leaf length (in mm)
+   This data frame contains the following columns:
 
-petiole
-   a numeric vector
+   bladelen
+      leaf length (in mm)
 
-bladewid
-   leaf width (in mm)
+   petiole
+      a numeric vector
 
-latitude
+   bladewid
+      leaf width (in mm)
+
    latitude
+      latitude
 
-logwid
-   natural logarithm of width
+   logwid
+      natural logarithm of width
 
-logpet
-   logarithm of petiole measurement
+   logpet
+      logarithm of petiole measurement
 
-loglen
-   logarithm of length
+   loglen
+      logarithm of length
 
-arch
-   leaf architecture (0 = orthotropic, 1 = plagiotropic)
+   arch
+      leaf architecture (0 = orthotropic, 1 = plagiotropic)
 
-Source
-~~~~~~
+   .. rubric:: Source
+      :name: source
 
-King, D.A. and Maindonald, J.H. 1999. Tree architecture in relation to
-leaf dimensions and tree stature in temperate and tropical rain forests.
-Journal of Ecology 87: 1012-1024.
+   King, D.A. and Maindonald, J.H. 1999. Tree architecture in relation
+   to leaf dimensions and tree stature in temperate and tropical rain
+   forests. Journal of Ecology 87: 1012-1024.
 
-Examples
-~~~~~~~~
+   .. rubric:: Examples
+      :name: examples
 
-::
+   ::
 
-   print("Discriminant Analysis - Example 11.2")
+      print("Discriminant Analysis - Example 11.2")
 
-   require(MASS)
-   leaf17.lda <- lda(arch ~ logwid+loglen, data=leafshape17)
-   leaf17.hat <- predict(leaf17.lda)
-   leaf17.lda
-    table(leafshape17$arch, leaf17.hat$class)
-   pause()
+      require(MASS)
+      leaf17.lda <- lda(arch ~ logwid+loglen, data=leafshape17)
+      leaf17.hat <- predict(leaf17.lda)
+      leaf17.lda
+       table(leafshape17$arch, leaf17.hat$class)
+      pause()
 
-   tab <- table(leafshape17$arch, leaf17.hat$class)
-    sum(tab[row(tab)==col(tab)])/sum(tab)
-   leaf17cv.lda <- lda(arch ~ logwid+loglen, data=leafshape17, CV=TRUE)
-   tab <- table(leafshape17$arch, leaf17cv.lda$class)
-   pause()
+      tab <- table(leafshape17$arch, leaf17.hat$class)
+       sum(tab[row(tab)==col(tab)])/sum(tab)
+      leaf17cv.lda <- lda(arch ~ logwid+loglen, data=leafshape17, CV=TRUE)
+      tab <- table(leafshape17$arch, leaf17cv.lda$class)
+      pause()
 
-   leaf17.glm <- glm(arch ~ logwid + loglen, family=binomial, data=leafshape17)
-    options(digits=3)
-   summary(leaf17.glm)$coef
-   pause()
+      leaf17.glm <- glm(arch ~ logwid + loglen, family=binomial, data=leafshape17)
+       options(digits=3)
+      summary(leaf17.glm)$coef
+      pause()
 
-   leaf17.one <- cv.binary(leaf17.glm)
-   table(leafshape17$arch, round(leaf17.one$internal))     # Resubstitution
-   pause()
+      leaf17.one <- cv.binary(leaf17.glm)
+      table(leafshape17$arch, round(leaf17.one$internal))     # Resubstitution
+      pause()
 
-   table(leafshape17$arch, round(leaf17.one$cv))           # Cross-validation
+      table(leafshape17$arch, round(leaf17.one$cv))           # Cross-validation

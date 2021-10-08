@@ -1,34 +1,36 @@
-============ ===============
-Fluorescence R Documentation
-============ ===============
+.. container::
 
-Measuring Calcium Binding to Proteins
--------------------------------------
+   ============ ===============
+   Fluorescence R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Measuring Calcium Binding to Proteins
+      :name: measuring-calcium-binding-to-proteins
 
-Data from an experiment on calcium binding to proteins
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Data from an experiment on calcium binding to proteins
 
-A data frame with 51 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-=============== ======================================
-``Calcium``     Log of free calcium concentration
-``ProteinProp`` Proportion of protein bound to calcium
-\               
-=============== ======================================
+   A data frame with 51 observations on the following 2 variables.
 
-Details
-~~~~~~~
+   =============== ======================================
+   ``Calcium``     Log of free calcium concentration
+   ``ProteinProp`` Proportion of protein bound to calcium
+   \               
+   =============== ======================================
 
-Suzanne Rohrback used a novel approach in a series of experiments to
-examine calcium binding proteins.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Suzanne Rohrback used a novel approach in a series of experiments to
+   examine calcium binding proteins.
 
-Thanks to Suzanne Rohrback for providing these data from her honors
-experiments at Kenyon College.
+   .. rubric:: Source
+      :name: source
+
+   Thanks to Suzanne Rohrback for providing these data from her honors
+   experiments at Kenyon College.

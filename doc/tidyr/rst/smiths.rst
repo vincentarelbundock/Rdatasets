@@ -1,23 +1,25 @@
-====== ===============
-smiths R Documentation
-====== ===============
+.. container::
 
-Some data about the Smith family
---------------------------------
+   ====== ===============
+   smiths R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Some data about the Smith family
+      :name: some-data-about-the-smith-family
 
-A small demo dataset describing John and Mary Smith.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A small demo dataset describing John and Mary Smith.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   smiths
+   ::
 
-Format
-~~~~~~
+      smiths
 
-A data frame with 2 rows and 5 columns.
+   .. rubric:: Format
+      :name: format
+
+   A data frame with 2 rows and 5 columns.

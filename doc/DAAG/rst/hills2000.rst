@@ -1,49 +1,51 @@
-========= ===============
-hills2000 R Documentation
-========= ===============
+.. container::
 
-Scottish Hill Races Data - 2000
--------------------------------
+   ========= ===============
+   hills2000 R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Scottish Hill Races Data - 2000
+      :name: scottish-hill-races-data---2000
 
-The record times in 2000 for 56 Scottish hill races. We believe the data
-are, for the most part, trustworthy. This is the subset of ``races2000``
-for which ``type`` is ``hill``.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The record times in 2000 for 56 Scottish hill races. We believe the
+   data are, for the most part, trustworthy. This is the subset of
+   ``races2000`` for which ``type`` is ``hill``.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   hills2000
+   ::
 
-Format
-~~~~~~
+      hills2000
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-dist
-   distance, in miles (on the map)
+   This data frame contains the following columns:
 
-climb
-   total height gained during the route, in feet
+   dist
+      distance, in miles (on the map)
 
-time
-   record time in hours
+   climb
+      total height gained during the route, in feet
 
-timef
-   record time in hours for females
+   time
+      record time in hours
 
-Source
-~~~~~~
+   timef
+      record time in hours for females
 
-The Scottish Running Resource, http://www.hillrunning.co.uk
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   The Scottish Running Resource, http://www.hillrunning.co.uk
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-       pairs(hills2000)
+   ::
+
+          pairs(hills2000)

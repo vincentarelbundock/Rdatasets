@@ -1,42 +1,44 @@
-========== ===============
-fossilfuel R Documentation
-========== ===============
+.. container::
 
-Fossil Fuel Data
-----------------
+   ========== ===============
+   fossilfuel R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Fossil Fuel Data
+      :name: fossil-fuel-data
 
-Estimates of total worldwide carbon emissions from fossil fuel use.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Estimates of total worldwide carbon emissions from fossil fuel use.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   fossilfuel
+   ::
 
-Format
-~~~~~~
+      fossilfuel
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-year
-   a numeric vector giving the year the measurement was taken.
+   This data frame contains the following columns:
 
-carbon
-   a numeric vector giving the total worldwide carbon emissions from
-   fossil fuel use, in millions of tonnes.
+   year
+      a numeric vector giving the year the measurement was taken.
 
-Source
-~~~~~~
+   carbon
+      a numeric vector giving the total worldwide carbon emissions from
+      fossil fuel use, in millions of tonnes.
 
-Marland et al (2003)
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Marland et al (2003)
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   plot(fossilfuel)
+   ::
+
+      plot(fossilfuel)

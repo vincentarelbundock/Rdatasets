@@ -1,44 +1,46 @@
-===== ===============
-telef R Documentation
-===== ===============
+.. container::
 
-Number of International Calls from Belgium
-------------------------------------------
+   ===== ===============
+   telef R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Number of International Calls from Belgium
+      :name: number-of-international-calls-from-belgium
 
-Number of international calls from Belgium, taken from the Belgian
-Statistical Survey, published by the Ministry of Economy.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Number of international calls from Belgium, taken from the Belgian
+   Statistical Survey, published by the Ministry of Economy.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(telef, package="robustbase")
+   ::
 
-Format
-~~~~~~
+      data(telef, package="robustbase")
 
-A data frame with 24 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-``Calls``
-   Number of Calls (in tens of millions)
+   A data frame with 24 observations on the following 2 variables.
 
-``Year``
-   Year (1950 - 1973)
+   ``Calls``
+      Number of Calls (in tens of millions)
 
-Source
-~~~~~~
+   ``Year``
+      Year (1950 - 1973)
 
-P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
-Detection*; Wiley, page 26, table 2.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
+   Detection*; Wiley, page 26, table 2.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(telef)
-   summary(lm.telef <- lm(Year~., data=telef))
+   ::
+
+      data(telef)
+      summary(lm.telef <- lm(Year~., data=telef))

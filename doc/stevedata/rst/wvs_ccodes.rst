@@ -1,40 +1,42 @@
-========== ===============
-wvs_ccodes R Documentation
-========== ===============
+.. container::
 
-Syncing Word Values Survey Country Codes with CoW Codes
--------------------------------------------------------
+   ========== ===============
+   wvs_ccodes R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Syncing Word Values Survey Country Codes with CoW Codes
+      :name: syncing-word-values-survey-country-codes-with-cow-codes
 
-A simple data set that syncs World Values Survey country codes
-(``s003``) with corresponding country codes from the Correlates of War
-state system membership data.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A simple data set that syncs World Values Survey country codes
+   (``s003``) with corresponding country codes from the Correlates of
+   War state system membership data.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   wvs_ccodes
+   ::
 
-Format
-~~~~~~
+      wvs_ccodes
 
-A data frame with 112 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``s003``
-   the World Values Survey country code
+   A data frame with 112 observations on the following 3 variables.
 
-``country``
-   a character vector for the corresponding country name
+   ``s003``
+      the World Values Survey country code
 
-``ccode``
-   the equivalent country code from the Correlates of War state system
-   membership data
+   ``country``
+      a character vector for the corresponding country name
 
-Details
-~~~~~~~
+   ``ccode``
+      the equivalent country code from the Correlates of War state
+      system membership data
 
-http://svmiller.com/blog/2015/06/syncing-word-values-survey-country-codes-with-cow-codes/
+   .. rubric:: Details
+      :name: details
+
+   http://svmiller.com/blog/2015/06/syncing-word-values-survey-country-codes-with-cow-codes/

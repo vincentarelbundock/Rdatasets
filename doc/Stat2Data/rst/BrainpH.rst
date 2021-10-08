@@ -1,49 +1,52 @@
-======= ===============
-BrainpH R Documentation
-======= ===============
+.. container::
 
-Brain pH Measurements
----------------------
+   ======= ===============
+   BrainpH R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Brain pH Measurements
+      :name: brain-ph-measurements
 
-Brain tissue pH at time of death
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Brain tissue pH at time of death
 
-A data frame with 54 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``pH``
-   Brain tissue pH
+   A data frame with 54 observations on the following 5 variables.
 
-``Sex``
-   ``F`` or ``M``
+   ``pH``
+      Brain tissue pH
 
-``Ethnicity``
-   ``AfricanAmerican``, ``Asian``, ``Caucasian``, or ``PacificIslander``
+   ``Sex``
+      ``F`` or ``M``
 
-``Age``
-   Age at death
+   ``Ethnicity``
+      ``AfricanAmerican``, ``Asian``, ``Caucasian``, or
+      ``PacificIslander``
 
-``DeathType``
-   Cause of death (``Cardiac``, ``Other``, or ``Suicide``)
+   ``Age``
+      Age at death
 
-Details
-~~~~~~~
+   ``DeathType``
+      Cause of death (``Cardiac``, ``Other``, or ``Suicide``)
 
-These are data from a PNAS article (supplemental file) on pH in brain
-tissue samples for controls and for people who had Major Depressive
-Disorder. We extracted just the controls (roughly 3/4 of whom died of
-cardiac arrest).
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   These are data from a PNAS article (supplemental file) on pH in brain
+   tissue samples for controls and for people who had Major Depressive
+   Disorder. We extracted just the controls (roughly 3/4 of whom died of
+   cardiac arrest).
 
-Jun Z. Li et al. (2013), "Circadian patterns of gene expression in the
-human brain and disruption in major depressive disorder," PNAS, vol 110,
-no. 24, www.pnas.org/cgi/doi/10.1073/pnas.1305814110
+   .. rubric:: Source
+      :name: source
 
-Data extracted from Supporting Information, Table S4: Li et al.
-www.pnas.org/cgi/content/short/1305814110
+   Jun Z. Li et al. (2013), "Circadian patterns of gene expression in
+   the human brain and disruption in major depressive disorder," PNAS,
+   vol 110, no. 24, www.pnas.org/cgi/doi/10.1073/pnas.1305814110
+
+   Data extracted from Supporting Information, Table S4: Li et al.
+   www.pnas.org/cgi/content/short/1305814110

@@ -1,79 +1,82 @@
-======== ===============
-UnempDur R Documentation
-======== ===============
+.. container::
 
-Unemployment Duration
----------------------
+   ======== ===============
+   UnempDur R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Unemployment Duration
+      :name: unemployment-duration
 
-Journal of Business Economics and Statistics web site :
-https://amstat.tandfonline.com/loi/ubes20
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 3343
+   Journal of Business Economics and Statistics web site :
+   https://amstat.tandfonline.com/loi/ubes20
 
-Usage
-~~~~~
+   *number of observations* : 3343
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(UnempDur)
+   ::
 
-Format
-~~~~~~
+      data(UnempDur)
 
-A time series containing :
+   .. rubric:: Format
+      :name: format
 
-spell
-   length of spell in number of two-week intervals
+   A time series containing :
 
-censor1
-   = 1 if re-employed at full-time job
+   spell
+      length of spell in number of two-week intervals
 
-censor2
-   = 1 if re-employed at part-time job
+   censor1
+      = 1 if re-employed at full-time job
 
-censor3
-   1 if re-employed but left job: pt-ft status unknown
+   censor2
+      = 1 if re-employed at part-time job
 
-censor4
-   1 if still jobless
+   censor3
+      1 if re-employed but left job: pt-ft status unknown
 
-age
+   censor4
+      1 if still jobless
+
    age
+      age
 
-ui
-   = 1 if filed UI claim
+   ui
+      = 1 if filed UI claim
 
-reprate
-   eligible replacement rate
+   reprate
+      eligible replacement rate
 
-disrate
-   eligible disregard rate
+   disrate
+      eligible disregard rate
 
-logwage
-   log weekly earnings in lost job (1985\$)
+   logwage
+      log weekly earnings in lost job (1985\$)
 
-tenure
-   years tenure in lost job
+   tenure
+      years tenure in lost job
 
-Source
-~~~~~~
+   .. rubric:: Source
+      :name: source
 
-McCall, B.P. (1996) “Unemployment Insurance Rules, Joblessness, and
-Part-time Work”, *Econometrica*, **64**, 647–682.
+   McCall, B.P. (1996) “Unemployment Insurance Rules, Joblessness, and
+   Part-time Work”, *Econometrica*, **64**, 647–682.
 
-References
-~~~~~~~~~~
+   .. rubric:: References
+      :name: references
 
-Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods and
-applications*, Cambridge, pp. 603–8, 632–6, 658–62, 671–4 and 692.
+   Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
+   and applications*, Cambridge, pp. 603–8, 632–6, 658–62, 671–4 and
+   692.
 
-See Also
-~~~~~~~~
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
 
-``Index.Time.Series``
+   ``Index.Time.Series``

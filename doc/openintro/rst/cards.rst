@@ -1,48 +1,50 @@
-===== ===============
-cards R Documentation
-===== ===============
+.. container::
 
-Deck of cards
--------------
+   ===== ===============
+   cards R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Deck of cards
+      :name: deck-of-cards
 
-All the cards in a standard deck.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   All the cards in a standard deck.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   cards
+   ::
 
-Format
-~~~~~~
+      cards
 
-A data frame with 52 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-value
-   a factor with levels ``10`` ``2`` ``3`` ``4`` ``5`` ``6`` ``7`` ``8``
-   ``9`` ``A`` ``J`` ``K`` ``Q``
+   A data frame with 52 observations on the following 4 variables.
 
-color
-   a factor with levels ``black`` ``red``
+   value
+      a factor with levels ``10`` ``2`` ``3`` ``4`` ``5`` ``6`` ``7``
+      ``8`` ``9`` ``A`` ``J`` ``K`` ``Q``
 
-suit
-   a factor with levels ``Club`` ``Diamond`` ``Heart`` ``Spade``
+   color
+      a factor with levels ``black`` ``red``
 
-face
-   a logical vector
+   suit
+      a factor with levels ``Club`` ``Diamond`` ``Heart`` ``Spade``
 
-Examples
-~~~~~~~~
+   face
+      a logical vector
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   table(cards$value)
-   table(cards$color)
-   table(cards$suit)
-   table(cards$face)
-   table(cards$suit, cards$face)
+      table(cards$value)
+      table(cards$color)
+      table(cards$suit)
+      table(cards$face)
+      table(cards$suit, cards$face)

@@ -1,104 +1,107 @@
-=============== ===============
-Electricity1955 R Documentation
-=============== ===============
+.. container::
 
-Cost Function of Electricity Producers (1955, Nerlove Data)
------------------------------------------------------------
+   =============== ===============
+   Electricity1955 R Documentation
+   =============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Cost Function of Electricity Producers (1955, Nerlove
+      Data)
+      :name: cost-function-of-electricity-producers-1955-nerlove-data
 
-Cost function data for 145 (+14) US electricity producers in 1955.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Cost function data for 145 (+14) US electricity producers in 1955.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("Electricity1955")
+   ::
 
-Format
-~~~~~~
+      data("Electricity1955")
 
-A data frame containing 159 observations on 8 variables.
+   .. rubric:: Format
+      :name: format
 
-cost
-   total cost.
+   A data frame containing 159 observations on 8 variables.
 
-output
-   total output.
+   cost
+      total cost.
 
-labor
-   wage rate.
+   output
+      total output.
 
-laborshare
-   cost share for labor.
+   labor
+      wage rate.
 
-capital
-   capital price index.
+   laborshare
+      cost share for labor.
 
-capitalshare
-   cost share for capital.
+   capital
+      capital price index.
 
-fuel
-   fuel price.
+   capitalshare
+      cost share for capital.
 
-fuelshare
-   cost share for fuel.
+   fuel
+      fuel price.
 
-Details
-~~~~~~~
+   fuelshare
+      cost share for fuel.
 
-The data contains several extra observations that are aggregates of
-commonly owned firms. Only the first 145 observations should be used for
-analysis.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data contains several extra observations that are aggregates of
+   commonly owned firms. Only the first 145 observations should be used
+   for analysis.
 
-Online complements to Greene (2003). Table F14.2.
+   .. rubric:: Source
+      :name: source
 
-http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+   Online complements to Greene (2003). Table F14.2.
 
-References
-~~~~~~~~~~
+   http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper Saddle
-River, NJ: Prentice Hall.
+   .. rubric:: References
+      :name: references
 
-Nerlove, M. (1963) “Returns to Scale in Electricity Supply.” In C.
-Christ (ed.), *Measurement in Economics: Studies in Mathematical
-Economics and Econometrics in Memory of Yehuda Grunfeld*. Stanford
-University Press, 1963.
+   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+   Saddle River, NJ: Prentice Hall.
 
-See Also
-~~~~~~~~
+   Nerlove, M. (1963) “Returns to Scale in Electricity Supply.” In C.
+   Christ (ed.), *Measurement in Economics: Studies in Mathematical
+   Economics and Econometrics in Memory of Yehuda Grunfeld*. Stanford
+   University Press, 1963.
 
-``Greene2003``, ``Electricity1970``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Greene2003``, ``Electricity1970``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("Electricity1955")
-   Electricity <- Electricity1955[1:145,]
+   ::
 
-   ## Greene (2003)
-   ## Example 7.3
-   ## Cobb-Douglas cost function
-   fm_all <- lm(log(cost/fuel) ~ log(output) + log(labor/fuel) + log(capital/fuel),
-     data = Electricity)
-   summary(fm_all)
+      data("Electricity1955")
+      Electricity <- Electricity1955[1:145,]
 
-   ## hypothesis of constant returns to scale
-   linearHypothesis(fm_all, "log(output) = 1")
+      ## Greene (2003)
+      ## Example 7.3
+      ## Cobb-Douglas cost function
+      fm_all <- lm(log(cost/fuel) ~ log(output) + log(labor/fuel) + log(capital/fuel),
+        data = Electricity)
+      summary(fm_all)
 
-   ## Table 7.4
-   ## log quadratic cost function
-   fm_all2 <- lm(log(cost/fuel) ~ log(output) + I(log(output)^2) + log(labor/fuel) + log(capital/fuel),
-     data = Electricity)
-   summary(fm_all2)
+      ## hypothesis of constant returns to scale
+      linearHypothesis(fm_all, "log(output) = 1")
 
-   ## More examples can be found in:
-   ## help("Greene2003")
+      ## Table 7.4
+      ## log quadratic cost function
+      fm_all2 <- lm(log(cost/fuel) ~ log(output) + I(log(output)^2) + log(labor/fuel) + log(capital/fuel),
+        data = Electricity)
+      summary(fm_all2)
+
+      ## More examples can be found in:
+      ## help("Greene2003")

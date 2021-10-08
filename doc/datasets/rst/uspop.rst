@@ -1,38 +1,40 @@
-===== ===============
-uspop R Documentation
-===== ===============
+.. container::
 
-Populations Recorded by the US Census
--------------------------------------
+   ===== ===============
+   uspop R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Populations Recorded by the US Census
+      :name: populations-recorded-by-the-us-census
 
-This data set gives the population of the United States (in millions) as
-recorded by the decennial census for the period 1790–1970.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data set gives the population of the United States (in millions)
+   as recorded by the decennial census for the period 1790–1970.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   uspop
+   ::
 
-Format
-~~~~~~
+      uspop
 
-A time series of 19 values.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A time series of 19 values.
 
-McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(graphics)
-   plot(uspop, log = "y", main = "uspop data", xlab = "Year",
-        ylab = "U.S. Population (millions)")
+   ::
+
+      require(graphics)
+      plot(uspop, log = "y", main = "uspop data", xlab = "Year",
+           ylab = "U.S. Population (millions)")

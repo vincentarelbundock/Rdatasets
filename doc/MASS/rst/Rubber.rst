@@ -1,45 +1,47 @@
-====== ===============
-Rubber R Documentation
-====== ===============
+.. container::
 
-Accelerated Testing of Tyre Rubber
-----------------------------------
+   ====== ===============
+   Rubber R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Accelerated Testing of Tyre Rubber
+      :name: accelerated-testing-of-tyre-rubber
 
-Data frame from accelerated testing of tyre rubber.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data frame from accelerated testing of tyre rubber.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Rubber
+   ::
 
-Format
-~~~~~~
+      Rubber
 
-``loss``
-   the abrasion loss in gm/hr.
+   .. rubric:: Format
+      :name: format
 
-``hard``
-   the hardness in Shore units.
+   ``loss``
+      the abrasion loss in gm/hr.
 
-``tens``
-   tensile strength in kg/sq m.
+   ``hard``
+      the hardness in Shore units.
 
-Source
-~~~~~~
+   ``tens``
+      tensile strength in kg/sq m.
 
-O.L. Davies (1947) *Statistical Methods in Research and Production.*
-Oliver and Boyd, Table 6.1 p. 119.
+   .. rubric:: Source
+      :name: source
 
-O.L. Davies and P.L. Goldsmith (1972) *Statistical Methods in Research
-and Production.* 4th edition, Longmans, Table 8.1 p. 239.
+   O.L. Davies (1947) *Statistical Methods in Research and Production.*
+   Oliver and Boyd, Table 6.1 p. 119.
 
-References
-~~~~~~~~~~
+   O.L. Davies and P.L. Goldsmith (1972) *Statistical Methods in
+   Research and Production.* 4th edition, Longmans, Table 8.1 p. 239.
 
-Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics with
-S-PLUS.* Third Edition. Springer.
+   .. rubric:: References
+      :name: references
+
+   Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics
+   with S-PLUS.* Third Edition. Springer.

@@ -1,56 +1,59 @@
-==== ===============
-SLID R Documentation
-==== ===============
+.. container::
 
-Survey of Labour and Income Dynamics
-------------------------------------
+   ==== ===============
+   SLID R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Survey of Labour and Income Dynamics
+      :name: survey-of-labour-and-income-dynamics
 
-The ``SLID`` data frame has 7425 rows and 5 columns. The data are from
-the 1994 wave of the Canadian Survey of Labour and Income Dynamics, for
-the province of Ontario. There are missing data, particularly for wages.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``SLID`` data frame has 7425 rows and 5 columns. The data are
+   from the 1994 wave of the Canadian Survey of Labour and Income
+   Dynamics, for the province of Ontario. There are missing data,
+   particularly for wages.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   SLID
+   ::
 
-Format
-~~~~~~
+      SLID
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-wages
-   Composite hourly wage rate from all jobs.
+   This data frame contains the following columns:
 
-education
-   Number of years of schooling.
+   wages
+      Composite hourly wage rate from all jobs.
 
-age
-   in years.
+   education
+      Number of years of schooling.
 
-sex
-   A factor with levels: ``Female``, ``Male``.
+   age
+      in years.
 
-language
-   A factor with levels: ``English``, ``French``, ``Other``.
+   sex
+      A factor with levels: ``Female``, ``Male``.
 
-Source
-~~~~~~
+   language
+      A factor with levels: ``English``, ``French``, ``Other``.
 
-The data are taken from the public-use dataset made available by
-Statistics Canada, and prepared by the Institute for Social Research,
-York University.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The data are taken from the public-use dataset made available by
+   Statistics Canada, and prepared by the Institute for Social Research,
+   York University.
 
-Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-Models*, Third Edition. Sage.
+   .. rubric:: References
+      :name: references
 
-Fox, J. and Weisberg, S. (2019) *An R Companion to Applied Regression*,
-Third Edition, Sage.
+   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+   Models*, Third Edition. Sage.
+
+   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+   Regression*, Third Edition, Sage.

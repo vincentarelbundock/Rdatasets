@@ -1,59 +1,62 @@
-======= ===============
-gravity R Documentation
-======= ===============
+.. container::
 
-Acceleration Due to Gravity
----------------------------
+   ======= ===============
+   gravity R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Acceleration Due to Gravity
+      :name: acceleration-due-to-gravity
 
-The ``gravity`` data frame has 81 rows and 2 columns.
+   .. rubric:: Description
+      :name: description
 
-The ``grav`` data set has 26 rows and 2 columns.
+   The ``gravity`` data frame has 81 rows and 2 columns.
 
-Between May 1934 and July 1935, the National Bureau of Standards in
-Washington D.C. conducted a series of experiments to estimate the
-acceleration due to gravity, *g*, at Washington. Each experiment
-produced a number of replicate estimates of *g* using the same
-methodology. Although the basic method remained the same for all
-experiments, that of the reversible pendulum, there were changes in
-configuration.
+   The ``grav`` data set has 26 rows and 2 columns.
 
-The ``gravity`` data frame contains the data from all eight experiments.
-The ``grav`` data frame contains the data from the experiments 7 and 8.
-The data are expressed as deviations from 980.000 in centimetres per
-second squared.
+   Between May 1934 and July 1935, the National Bureau of Standards in
+   Washington D.C. conducted a series of experiments to estimate the
+   acceleration due to gravity, *g*, at Washington. Each experiment
+   produced a number of replicate estimates of *g* using the same
+   methodology. Although the basic method remained the same for all
+   experiments, that of the reversible pendulum, there were changes in
+   configuration.
 
-Usage
-~~~~~
+   The ``gravity`` data frame contains the data from all eight
+   experiments. The ``grav`` data frame contains the data from the
+   experiments 7 and 8. The data are expressed as deviations from
+   980.000 in centimetres per second squared.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   gravity
+   ::
 
-Format
-~~~~~~
+      gravity
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``g``
-   The deviation of the estimate from 980.000 centimetres per second
-   squared.
+   This data frame contains the following columns:
 
-``series``
-   A factor describing from which experiment the estimate was derived.
+   ``g``
+      The deviation of the estimate from 980.000 centimetres per second
+      squared.
 
-Source
-~~~~~~
+   ``series``
+      A factor describing from which experiment the estimate was
+      derived.
 
-The data were obtained from
+   .. rubric:: Source
+      :name: source
 
-Cressie, N. (1982) Playing safe with misweighted means. *Journal of the
-American Statistical Association*, **77**, 754–759.
+   The data were obtained from
 
-References
-~~~~~~~~~~
+   Cressie, N. (1982) Playing safe with misweighted means. *Journal of
+   the American Statistical Association*, **77**, 754–759.
 
-Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-Application*. Cambridge University Press.
+   .. rubric:: References
+      :name: references
+
+   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
+   Application*. Cambridge University Press.

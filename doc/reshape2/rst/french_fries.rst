@@ -1,49 +1,51 @@
-============ ===============
-french_fries R Documentation
-============ ===============
+.. container::
 
-Sensory data from a french fries experiment.
---------------------------------------------
+   ============ ===============
+   french_fries R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Sensory data from a french fries experiment.
+      :name: sensory-data-from-a-french-fries-experiment.
 
-This data was collected from a sensory experiment conducted at Iowa
-State University in 2004. The investigators were interested in the
-effect of using three different fryer oils had on the taste of the
-fries.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data was collected from a sensory experiment conducted at Iowa
+   State University in 2004. The investigators were interested in the
+   effect of using three different fryer oils had on the taste of the
+   fries.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   french_fries
+   ::
 
-Format
-~~~~~~
+      french_fries
 
-A data frame with 696 rows and 9 variables
+   .. rubric:: Format
+      :name: format
 
-Details
-~~~~~~~
+   A data frame with 696 rows and 9 variables
 
-Variables:
+   .. rubric:: Details
+      :name: details
 
--  time in weeks from start of study.
+   Variables:
 
--  treatment (type of oil),
+   -  time in weeks from start of study.
 
--  subject,
+   -  treatment (type of oil),
 
--  replicate,
+   -  subject,
 
--  potato-y flavour,
+   -  replicate,
 
--  buttery flavour,
+   -  potato-y flavour,
 
--  grassy flavour,
+   -  buttery flavour,
 
--  rancid flavour,
+   -  grassy flavour,
 
--  painty flavour
+   -  rancid flavour,
+
+   -  painty flavour

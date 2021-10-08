@@ -1,163 +1,165 @@
-===== ===============
-car90 R Documentation
-===== ===============
+.. container::
 
-Automobile Data from 'Consumer Reports' 1990
---------------------------------------------
+   ===== ===============
+   car90 R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Automobile Data from 'Consumer Reports' 1990
+      :name: automobile-data-from-consumer-reports-1990
 
-Data on 111 cars, taken from pages 235–255, 281–285 and 287–288 of the
-April 1990 *Consumer Reports* Magazine.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data on 111 cars, taken from pages 235–255, 281–285 and 287–288 of
+   the April 1990 *Consumer Reports* Magazine.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(car90)
+   ::
 
-Format
-~~~~~~
+      data(car90)
 
-The data frame contains the following columns
+   .. rubric:: Format
+      :name: format
 
-Country
-   a factor giving the country in which the car was manufactured
+   The data frame contains the following columns
 
-Disp
-   engine displacement in cubic inches
+   Country
+      a factor giving the country in which the car was manufactured
 
-Disp2
-   engine displacement in liters
+   Disp
+      engine displacement in cubic inches
 
-Eng.Rev
-   engine revolutions per mile, or engine speed at 60 mph
+   Disp2
+      engine displacement in liters
 
-Front.Hd
-   distance between the car's head-liner and the head of a 5 ft. 9 in.
-   front seat passenger, in inches, as measured by CU
+   Eng.Rev
+      engine revolutions per mile, or engine speed at 60 mph
 
-Frt.Leg.Room
-   maximum front leg room, in inches, as measured by CU
+   Front.Hd
+      distance between the car's head-liner and the head of a 5 ft. 9
+      in. front seat passenger, in inches, as measured by CU
 
-Frt.Shld
-   front shoulder room, in inches, as measured by CU
+   Frt.Leg.Room
+      maximum front leg room, in inches, as measured by CU
 
-Gear.Ratio
-   the overall gear ratio, high gear, for manual transmission
+   Frt.Shld
+      front shoulder room, in inches, as measured by CU
 
-Gear2
-   the overall gear ratio, high gear, for automatic transmission
+   Gear.Ratio
+      the overall gear ratio, high gear, for manual transmission
 
-HP
-   net horsepower
+   Gear2
+      the overall gear ratio, high gear, for automatic transmission
 
-HP.revs
-   the red line—the maximum safe engine speed in rpm
+   HP
+      net horsepower
 
-Height
-   height of car, in inches, as supplied by manufacturer
+   HP.revs
+      the red line—the maximum safe engine speed in rpm
 
-Length
-   overall length, in inches, as supplied by manufacturer
+   Height
+      height of car, in inches, as supplied by manufacturer
 
-Luggage
-   luggage space
+   Length
+      overall length, in inches, as supplied by manufacturer
 
-Mileage
-   a numeric vector of gas mileage in miles/gallon as tested by CU;
-   contains NAs.
+   Luggage
+      luggage space
 
-Model2
-   alternate name, if the car was sold under two labels
+   Mileage
+      a numeric vector of gas mileage in miles/gallon as tested by CU;
+      contains NAs.
 
-Price
-   list price with standard equipment, in dollars
+   Model2
+      alternate name, if the car was sold under two labels
 
-Rear.Hd
-   distance between the car's head-liner and the head of a 5 ft 9 in.
-   rear seat passenger, in inches, as measured by CU
+   Price
+      list price with standard equipment, in dollars
 
-Rear.Seating
-   rear fore-and-aft seating room, in inches, as measured by CU
+   Rear.Hd
+      distance between the car's head-liner and the head of a 5 ft 9 in.
+      rear seat passenger, in inches, as measured by CU
 
-RearShld
-   rear shoulder room, in inches, as measured by CU
+   Rear.Seating
+      rear fore-and-aft seating room, in inches, as measured by CU
 
-Reliability
-   an ordered factor with levels Much worse < worse < average < better <
-   Much better: contains ``NA``\ s.
+   RearShld
+      rear shoulder room, in inches, as measured by CU
 
-Rim
-   factor giving the rim size
+   Reliability
+      an ordered factor with levels Much worse < worse < average <
+      better < Much better: contains ``NA``\ s.
 
-Sratio.m
-   Number of turns of the steering wheel required for a turn of 30 foot
-   radius, manual steering
+   Rim
+      factor giving the rim size
 
-Sratio.p
-   Number of turns of the steering wheel required for a turn of 30 foot
-   radius, power steering
+   Sratio.m
+      Number of turns of the steering wheel required for a turn of 30
+      foot radius, manual steering
 
-Steering
-   steering type offered: manual, power, or both
+   Sratio.p
+      Number of turns of the steering wheel required for a turn of 30
+      foot radius, power steering
 
-Tank
-   fuel refill capacity in gallons
+   Steering
+      steering type offered: manual, power, or both
 
-Tires
-   factor giving tire size
+   Tank
+      fuel refill capacity in gallons
 
-Trans1
-   manual transmission, a factor with levels , man.4, man.5 and man.6
+   Tires
+      factor giving tire size
 
-Trans2
-   automatic transmission, a factor with levels , auto.3, auto.4, and
-   auto.CVT. No car is missing both the manual and automatic
-   transmission variables, but several had both as options
+   Trans1
+      manual transmission, a factor with levels , man.4, man.5 and man.6
 
-Turning
-   the radius of the turning circle in feet
+   Trans2
+      automatic transmission, a factor with levels , auto.3, auto.4, and
+      auto.CVT. No car is missing both the manual and automatic
+      transmission variables, but several had both as options
 
-Type
-   a factor giving the general type of car. The levels are: Small,
-   Sporty, Compact, Medium, Large, Van
+   Turning
+      the radius of the turning circle in feet
 
-Weight
-   an order statistic giving the relative weights of the cars; 1 is the
-   lightest and 111 is the heaviest
+   Type
+      a factor giving the general type of car. The levels are: Small,
+      Sporty, Compact, Medium, Large, Van
 
-Wheel.base
-   length of wheelbase, in inches, as supplied by manufacturer
+   Weight
+      an order statistic giving the relative weights of the cars; 1 is
+      the lightest and 111 is the heaviest
 
-Width
-   width of car, in inches, as supplied by manufacturer
+   Wheel.base
+      length of wheelbase, in inches, as supplied by manufacturer
 
-Source
-~~~~~~
+   Width
+      width of car, in inches, as supplied by manufacturer
 
-This is derived (with permission) from the data set ``car.all`` in
-S-PLUS, but with some further clean up of variable names and
-definitions.
+   .. rubric:: Source
+      :name: source
 
-See Also
-~~~~~~~~
+   This is derived (with permission) from the data set ``car.all`` in
+   S-PLUS, but with some further clean up of variable names and
+   definitions.
 
-``car.test.frame``, ``cu.summary`` for extracts from other versions of
-the dataset.
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``car.test.frame``, ``cu.summary`` for extracts from other versions
+   of the dataset.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(car90)
-   plot(car90$Price/1000, car90$Weight,
-        xlab = "Price (thousands)", ylab = "Weight (lbs)")
-   mlowess <- function(x, y, ...) {
-       keep <- !(is.na(x) | is.na(y))
-       lowess(x[keep], y[keep], ...)
-   }
-   with(car90, lines(mlowess(Price/1000, Weight, f = 0.5)))
+   ::
+
+      data(car90)
+      plot(car90$Price/1000, car90$Weight,
+           xlab = "Price (thousands)", ylab = "Weight (lbs)")
+      mlowess <- function(x, y, ...) {
+          keep <- !(is.na(x) | is.na(y))
+          lowess(x[keep], y[keep], ...)
+      }
+      with(car90, lines(mlowess(Price/1000, Weight, f = 0.5)))

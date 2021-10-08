@@ -1,128 +1,131 @@
-========= ===============
-CASchools R Documentation
-========= ===============
+.. container::
 
-California Test Score Data
---------------------------
+   ========= ===============
+   CASchools R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: California Test Score Data
+      :name: california-test-score-data
 
-The dataset contains data on test performance, school characteristics
-and student demographic backgrounds for school districts in California.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The dataset contains data on test performance, school characteristics
+   and student demographic backgrounds for school districts in
+   California.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("CASchools")
+   ::
 
-Format
-~~~~~~
+      data("CASchools")
 
-A data frame containing 420 observations on 14 variables.
+   .. rubric:: Format
+      :name: format
 
-district
-   character. District code.
+   A data frame containing 420 observations on 14 variables.
 
-school
-   character. School name.
+   district
+      character. District code.
 
-county
-   factor indicating county.
+   school
+      character. School name.
 
-grades
-   factor indicating grade span of district.
+   county
+      factor indicating county.
 
-students
-   Total enrollment.
+   grades
+      factor indicating grade span of district.
 
-teachers
-   Number of teachers.
+   students
+      Total enrollment.
 
-calworks
-   Percent qualifying for CalWorks (income assistance).
+   teachers
+      Number of teachers.
 
-lunch
-   Percent qualifying for reduced-price lunch.
+   calworks
+      Percent qualifying for CalWorks (income assistance).
 
-computer
-   Number of computers.
+   lunch
+      Percent qualifying for reduced-price lunch.
 
-expenditure
-   Expenditure per student.
+   computer
+      Number of computers.
 
-income
-   District average income (in USD 1,000).
+   expenditure
+      Expenditure per student.
 
-english
-   Percent of English learners.
+   income
+      District average income (in USD 1,000).
 
-read
-   Average reading score.
+   english
+      Percent of English learners.
 
-math
-   Average math score.
+   read
+      Average reading score.
 
-Details
-~~~~~~~
+   math
+      Average math score.
 
-The data used here are from all 420 K-6 and K-8 districts in California
-with data available for 1998 and 1999. Test scores are on the Stanford 9
-standardized test administered to 5th grade students. School
-characteristics (averaged across the district) include enrollment,
-number of teachers (measured as “full-time equivalents”, number of
-computers per classroom, and expenditures per student. Demographic
-variables for the students are averaged across the district. The
-demographic variables include the percentage of students in the public
-assistance program CalWorks (formerly AFDC), the percentage of students
-that qualify for a reduced price lunch, and the percentage of students
-that are English learners (that is, students for whom English is a
-second language).
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data used here are from all 420 K-6 and K-8 districts in
+   California with data available for 1998 and 1999. Test scores are on
+   the Stanford 9 standardized test administered to 5th grade students.
+   School characteristics (averaged across the district) include
+   enrollment, number of teachers (measured as “full-time equivalents”,
+   number of computers per classroom, and expenditures per student.
+   Demographic variables for the students are averaged across the
+   district. The demographic variables include the percentage of
+   students in the public assistance program CalWorks (formerly AFDC),
+   the percentage of students that qualify for a reduced price lunch,
+   and the percentage of students that are English learners (that is,
+   students for whom English is a second language).
 
-Online complements to Stock and Watson (2007).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Stock and Watson (2007).
 
-Stock, J. H. and Watson, M. W. (2007). *Introduction to Econometrics*,
-2nd ed. Boston: Addison Wesley.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Stock, J. H. and Watson, M. W. (2007). *Introduction to
+   Econometrics*, 2nd ed. Boston: Addison Wesley.
 
-``StockWatson2007``, ``MASchools``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``StockWatson2007``, ``MASchools``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## data and transformations
-   data("CASchools")
-   CASchools$stratio <- with(CASchools, students/teachers)
-   CASchools$score <- with(CASchools, (math + read)/2)
+   ::
 
-   ## Stock and Watson (2007)
-   ## p. 152
-   fm1 <- lm(score ~ stratio, data = CASchools)
-   coeftest(fm1, vcov = sandwich)
+      ## data and transformations
+      data("CASchools")
+      CASchools$stratio <- with(CASchools, students/teachers)
+      CASchools$score <- with(CASchools, (math + read)/2)
 
-   ## p. 159
-   fm2 <- lm(score ~ I(stratio < 20), data = CASchools)
-   ## p. 199
-   fm3 <- lm(score ~ stratio + english, data = CASchools)
-   ## p. 224
-   fm4 <- lm(score ~ stratio + expenditure + english, data = CASchools)
+      ## Stock and Watson (2007)
+      ## p. 152
+      fm1 <- lm(score ~ stratio, data = CASchools)
+      coeftest(fm1, vcov = sandwich)
 
-   ## Table 7.1, p. 242 (numbers refer to columns)
-   fmc3 <- lm(score ~ stratio + english + lunch, data = CASchools)
-   fmc4 <- lm(score ~ stratio + english + calworks, data = CASchools)
-   fmc5 <- lm(score ~ stratio + english + lunch + calworks, data = CASchools)
+      ## p. 159
+      fm2 <- lm(score ~ I(stratio < 20), data = CASchools)
+      ## p. 199
+      fm3 <- lm(score ~ stratio + english, data = CASchools)
+      ## p. 224
+      fm4 <- lm(score ~ stratio + expenditure + english, data = CASchools)
 
-   ## More examples can be found in:
-   ## help("StockWatson2007")
+      ## Table 7.1, p. 242 (numbers refer to columns)
+      fmc3 <- lm(score ~ stratio + english + lunch, data = CASchools)
+      fmc4 <- lm(score ~ stratio + english + calworks, data = CASchools)
+      fmc5 <- lm(score ~ stratio + english + lunch + calworks, data = CASchools)
+
+      ## More examples can be found in:
+      ## help("StockWatson2007")

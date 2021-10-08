@@ -1,65 +1,67 @@
-===== ===============
-spam7 R Documentation
-===== ===============
+.. container::
 
-Spam E-mail Data
-----------------
+   ===== ===============
+   spam7 R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Spam E-mail Data
+      :name: spam-e-mail-data
 
-The data consist of 4601 email items, of which 1813 items were
-identified as spam.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The data consist of 4601 email items, of which 1813 items were
+   identified as spam.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   spam7
+   ::
 
-Format
-~~~~~~
+      spam7
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-crl.tot
-   total length of words in capitals
+   This data frame contains the following columns:
 
-dollar
-   number of occurrences of the \\$ symbol
+   crl.tot
+      total length of words in capitals
 
-bang
-   number of occurrences of the ! symbol
+   dollar
+      number of occurrences of the \\$ symbol
 
-money
-   number of occurrences of the word ‘money’
+   bang
+      number of occurrences of the ! symbol
 
-n000
-   number of occurrences of the string ‘000’
+   money
+      number of occurrences of the word ‘money’
 
-make
-   number of occurrences of the word ‘make’
+   n000
+      number of occurrences of the string ‘000’
 
-yesno
-   outcome variable, a factor with levels ``n`` not spam, ``y`` spam
+   make
+      number of occurrences of the word ‘make’
 
-Source
-~~~~~~
+   yesno
+      outcome variable, a factor with levels ``n`` not spam, ``y`` spam
 
-George Forman, Hewlett-Packard Laboratories
+   .. rubric:: Source
+      :name: source
 
-These data are available from the University of California at Irvine
-Repository of Machine Learning Databases and Domain Theories. The
-address is: http://www.ics.uci.edu/~Here
+   George Forman, Hewlett-Packard Laboratories
 
-Examples
-~~~~~~~~
+   These data are available from the University of California at Irvine
+   Repository of Machine Learning Databases and Domain Theories. The
+   address is: http://www.ics.uci.edu/~Here
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(rpart)
-   spam.rpart <- rpart(formula = yesno ~ crl.tot + dollar + bang +
-      money + n000 + make, data=spam7)
-   plot(spam.rpart)
-   text(spam.rpart)
+   ::
+
+      require(rpart)
+      spam.rpart <- rpart(formula = yesno ~ crl.tot + dollar + bang +
+         money + n000 + make, data=spam7)
+      plot(spam.rpart)
+      text(spam.rpart)

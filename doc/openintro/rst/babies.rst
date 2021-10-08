@@ -1,59 +1,62 @@
-====== ===============
-babies R Documentation
-====== ===============
+.. container::
 
-The Child Health and Development Studies
-----------------------------------------
+   ====== ===============
+   babies R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: The Child Health and Development Studies
+      :name: the-child-health-and-development-studies
 
-The Child Health and Development Studies investigate a range of topics.
-One study, in particular, considered all pregnancies between 1960 and
-1967 among women in the Kaiser Foundation Health Plan in the San
-Francisco East Bay area. We do not have ideal provenance for these data.
-For a better documented and more recent dataset on a similar topic with
-similar variables, see births14. Additionally, ``Gestation`` dataset in
-the `mosaicData <https://CRAN.R-project.org/package=mosaicData>`__
-package also contains similar data.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The Child Health and Development Studies investigate a range of
+   topics. One study, in particular, considered all pregnancies between
+   1960 and 1967 among women in the Kaiser Foundation Health Plan in the
+   San Francisco East Bay area. We do not have ideal provenance for
+   these data. For a better documented and more recent dataset on a
+   similar topic with similar variables, see births14. Additionally,
+   ``Gestation`` dataset in the
+   `mosaicData <https://CRAN.R-project.org/package=mosaicData>`__
+   package also contains similar data.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   babies
+   ::
 
-Format
-~~~~~~
+      babies
 
-A data frame with 1236 rows and 8 variables:
+   .. rubric:: Format
+      :name: format
 
-case
-   id number
+   A data frame with 1236 rows and 8 variables:
 
-bwt
-   birthweight, in ounces
+   case
+      id number
 
-gestation
-   length of gestation, in days
+   bwt
+      birthweight, in ounces
 
-parity
-   binary indicator for a first pregnancy (0 = first pregnancy)
+   gestation
+      length of gestation, in days
 
-age
-   mother's age in years
+   parity
+      binary indicator for a first pregnancy (0 = first pregnancy)
 
-height
-   mother's height in inches
+   age
+      mother's age in years
 
-weight
-   mother's weight in pounds
+   height
+      mother's height in inches
 
-smoke
-   binary indicator for whether the mother smokes
+   weight
+      mother's weight in pounds
 
-Source
-~~~~~~
+   smoke
+      binary indicator for whether the mother smokes
 
-These data come from Child Health and Development Studies.
+   .. rubric:: Source
+      :name: source
+
+   These data come from Child Health and Development Studies.

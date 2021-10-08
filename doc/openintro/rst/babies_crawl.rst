@@ -1,58 +1,60 @@
-============ ===============
-babies_crawl R Documentation
-============ ===============
+.. container::
 
-Crawling age
-------------
+   ============ ===============
+   babies_crawl R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Crawling age
+      :name: crawling-age
 
-Crawling age of babies along with the average outdoor temperature at 6
-months of age.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Crawling age of babies along with the average outdoor temperature at
+   6 months of age.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   babies_crawl
+   ::
 
-Format
-~~~~~~
+      babies_crawl
 
-A data frame with 12 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-birth_month
-   A factor with levels corresponding to months
+   A data frame with 12 observations on the following 5 variables.
 
-avg_crawling_age
-   a numeric vector
+   birth_month
+      A factor with levels corresponding to months
 
-sd
-   a numeric vector
+   avg_crawling_age
+      a numeric vector
 
-n
-   a numeric vector
+   sd
+      a numeric vector
 
-temperature
-   a numeric vector
+   n
+      a numeric vector
 
-Source
-~~~~~~
+   temperature
+      a numeric vector
 
-J.B. Benson. Season of birth and onset of locomotion: Theoretical and
-methodological implications. In: Infant behavior and development 16.1
-(1993), pp. 69-81. issn: 0163-6383.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   J.B. Benson. Season of birth and onset of locomotion: Theoretical and
+   methodological implications. In: Infant behavior and development 16.1
+   (1993), pp. 69-81. issn: 0163-6383.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(babies_crawl, aes(x = temperature, y = avg_crawling_age)) +
-     geom_point() +
-     labs(x = "Temperature", y = "Average crawling age")
+      ggplot(babies_crawl, aes(x = temperature, y = avg_crawling_age)) +
+        geom_point() +
+        labs(x = "Temperature", y = "Average crawling age")

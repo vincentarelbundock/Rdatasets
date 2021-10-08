@@ -1,63 +1,66 @@
-====== ===============
-Catsup R Documentation
-====== ===============
+.. container::
 
-Choice of Brand for Catsup
---------------------------
+   ====== ===============
+   Catsup R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Choice of Brand for Catsup
+      :name: choice-of-brand-for-catsup
 
-a cross-section
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 2798
+   a cross-section
 
-*observation* : individuals
+   *number of observations* : 2798
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Catsup)
+   ::
 
-Format
-~~~~~~
+      data(Catsup)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-id
-   individuals identifiers
+   A dataframe containing :
 
-choice
-   one of ``heinz41``, ``heinz32``, ``heinz28``, ``hunts32``
+   id
+      individuals identifiers
 
-disp.z
-   is there a display for brand z ?
+   choice
+      one of ``heinz41``, ``heinz32``, ``heinz28``, ``hunts32``
 
-feat.z
-   is there a newspaper feature advertisement for brand z ?
+   disp.z
+      is there a display for brand z ?
 
-price.z
-   price of brand z
+   feat.z
+      is there a newspaper feature advertisement for brand z ?
 
-Source
-~~~~~~
+   price.z
+      price of brand z
 
-Jain, Dipak C., Naufel J. Vilcassim and Pradeep K. Chintagunta (1994) “A
-random–coefficients logit brand–choice model applied to panel data”,
-*Journal of Business and Economics Statistics*, **12(3)**, 317.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Jain, Dipak C., Naufel J. Vilcassim and Pradeep K. Chintagunta (1994)
+   “A random–coefficients logit brand–choice model applied to panel
+   data”, *Journal of Business and Economics Statistics*, **12(3)**,
+   317.
 
-Journal of Business Economics and Statistics web site :
-https://amstat.tandfonline.com/loi/ubes20.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Journal of Business Economics and Statistics web site :
+   https://amstat.tandfonline.com/loi/ubes20.
 
-``Ketchup``, ``Index.Source``, ``Index.Economics``,
-``Index.Econometrics``, ``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Ketchup``, ``Index.Source``, ``Index.Economics``,
+   ``Index.Econometrics``, ``Index.Observations``

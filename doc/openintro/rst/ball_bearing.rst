@@ -1,44 +1,46 @@
-============ ===============
-ball_bearing R Documentation
-============ ===============
+.. container::
 
-Lifespan of ball bearings
--------------------------
+   ============ ===============
+   ball_bearing R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Lifespan of ball bearings
+      :name: lifespan-of-ball-bearings
 
-A simulated data set on lifespan of ball bearings.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A simulated data set on lifespan of ball bearings.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   ball_bearing
+   ::
 
-Format
-~~~~~~
+      ball_bearing
 
-A data frame with 75 observations on the following variable.
+   .. rubric:: Format
+      :name: format
 
-life_span
-   Lifespan of ball bearings (in hours).
+   A data frame with 75 observations on the following variable.
 
-Source
-~~~~~~
+   life_span
+      Lifespan of ball bearings (in hours).
 
-Simulated data.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Simulated data.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(ball_bearing, aes(x = life_span)) +
-     geom_histogram(binwidth = 1)
+      ggplot(ball_bearing, aes(x = life_span)) +
+        geom_histogram(binwidth = 1)
 
-   qqnorm(ball_bearing$life_span)
+      qqnorm(ball_bearing$life_span)

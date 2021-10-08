@@ -1,30 +1,32 @@
-========= ===============
-insurance R Documentation
-========= ===============
+.. container::
 
-Insurance quotations and advertising expenditure.
--------------------------------------------------
+   ========= ===============
+   insurance R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Insurance quotations and advertising expenditure.
+      :name: insurance-quotations-and-advertising-expenditure.
 
-Monthly quotations and monthly television advertising expenditure for a
-US insurance company. January 2002 to April 2005.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Monthly quotations and monthly television advertising expenditure for
+   a US insurance company. January 2002 to April 2005.
 
-Monthly time series of class ``ts``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   Monthly time series of class ``ts``.
 
-Kindly provided by Dave Reilly, Automatic Forecasting Systems.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Kindly provided by Dave Reilly, Automatic Forecasting Systems.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   autoplot(insurance)
+      autoplot(insurance)

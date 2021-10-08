@@ -1,48 +1,50 @@
-==== ===============
-tuna R Documentation
-==== ===============
+.. container::
 
-Tuna Sighting Data
-------------------
+   ==== ===============
+   tuna R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Tuna Sighting Data
+      :name: tuna-sighting-data
 
-The ``tuna`` data frame has 64 rows and 1 columns.
+   .. rubric:: Description
+      :name: description
 
-The data come from an aerial line transect survey of Southern Bluefin
-Tuna in the Great Australian Bight. An aircraft with two spotters on
-board flies randomly allocated line transects. Each school of tuna
-sighted is counted and its perpendicular distance from the transect
-measured. The survey was conducted in summer when tuna tend to stay on
-the surface.
+   The ``tuna`` data frame has 64 rows and 1 columns.
 
-Usage
-~~~~~
+   The data come from an aerial line transect survey of Southern Bluefin
+   Tuna in the Great Australian Bight. An aircraft with two spotters on
+   board flies randomly allocated line transects. Each school of tuna
+   sighted is counted and its perpendicular distance from the transect
+   measured. The survey was conducted in summer when tuna tend to stay
+   on the surface.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   tuna
+   ::
 
-Format
-~~~~~~
+      tuna
 
-This data frame contains the following column:
+   .. rubric:: Format
+      :name: format
 
-``y``
-   The perpendicular distance, in miles, from the transect for 64
-   independent sightings of tuna schools.
+   This data frame contains the following column:
 
-Source
-~~~~~~
+   ``y``
+      The perpendicular distance, in miles, from the transect for 64
+      independent sightings of tuna schools.
 
-The data were obtained from
+   .. rubric:: Source
+      :name: source
 
-Chen, S.X. (1996) Empirical likelihood confidence intervals for
-nonparametric density estimation. *Biometrika*, **83**, 329–341.
+   The data were obtained from
 
-References
-~~~~~~~~~~
+   Chen, S.X. (1996) Empirical likelihood confidence intervals for
+   nonparametric density estimation. *Biometrika*, **83**, 329–341.
 
-Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-Application*. Cambridge University Press.
+   .. rubric:: References
+      :name: references
+
+   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
+   Application*. Cambridge University Press.

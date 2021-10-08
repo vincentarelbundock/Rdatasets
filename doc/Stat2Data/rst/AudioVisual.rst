@@ -1,44 +1,46 @@
-=========== ===============
-AudioVisual R Documentation
-=========== ===============
+.. container::
 
-Reaction Times to Audio and Visual Stimuli
-------------------------------------------
+   =========== ===============
+   AudioVisual R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Reaction Times to Audio and Visual Stimuli
+      :name: reaction-times-to-audio-and-visual-stimuli
 
-Data from an experiment on reaction times to audio or visual stimuli by
-Oberlin College students.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Data from an experiment on reaction times to audio or visual stimuli
+   by Oberlin College students.
 
-A data frame with 72 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``Subject``
-   SubjectIDs coded ``s1`` to ``s36``
+   A data frame with 72 observations on the following 4 variables.
 
-``ResponseTime``
-   Time to respond to a stimulus (in ms)
+   ``Subject``
+      SubjectIDs coded ``s1`` to ``s36``
 
-``Stimulus``
-   Type of stimulus (``auditory`` or ``visual``)
+   ``ResponseTime``
+      Time to respond to a stimulus (in ms)
 
-``Group``
-   ``Musician`` or ``NonMusician``
+   ``Stimulus``
+      Type of stimulus (``auditory`` or ``visual``)
 
-Details
-~~~~~~~
+   ``Group``
+      ``Musician`` or ``NonMusician``
 
-Subjects in a reaction time study were asked to press a button as fast
-as possible after being exposed to either an auditory stimulus (a burst
-of white noise) or a visual stimulus (a circle flashing on a computer
-screen). Average reaction times (ms) were recorded for between 10 and 20
-trials for each type of stimulus for each subject. Data also identifies
-which subjects are musicians.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Subjects in a reaction time study were asked to press a button as
+   fast as possible after being exposed to either an auditory stimulus
+   (a burst of white noise) or a visual stimulus (a circle flashing on a
+   computer screen). Average reaction times (ms) were recorded for
+   between 10 and 20 trials for each type of stimulus for each subject.
+   Data also identifies which subjects are musicians.
 
-Arjuna Pettit, Jr. and Jeremy Potterfield at Oberlin College
+   .. rubric:: Source
+      :name: source
+
+   Arjuna Pettit, Jr. and Jeremy Potterfield at Oberlin College

@@ -1,80 +1,82 @@
-========== ===============
-nsw74psidA R Documentation
-========== ===============
+.. container::
 
-A Subset of the nsw74psid1 Data Set
------------------------------------
+   ========== ===============
+   nsw74psidA R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: A Subset of the nsw74psid1 Data Set
+      :name: a-subset-of-the-nsw74psid1-data-set
 
-The ``nsw74psidA`` data frame has 252 rows and 10 columns. See
-``nsw74psid1`` for more information.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``nsw74psidA`` data frame has 252 rows and 10 columns. See
+   ``nsw74psid1`` for more information.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   nsw74psidA
+   ::
 
-Format
-~~~~~~
+      nsw74psidA
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-trt
-   a numeric vector
+   This data frame contains the following columns:
 
-age
-   a numeric vector
+   trt
+      a numeric vector
 
-educ
-   a numeric vector
+   age
+      a numeric vector
 
-black
-   a numeric vector
+   educ
+      a numeric vector
 
-hisp
-   a numeric vector
+   black
+      a numeric vector
 
-marr
-   a numeric vector
+   hisp
+      a numeric vector
 
-nodeg
-   a numeric vector
+   marr
+      a numeric vector
 
-re74
-   a numeric vector
+   nodeg
+      a numeric vector
 
-re75
-   a numeric vector
+   re74
+      a numeric vector
 
-re78
-   a numeric vector
+   re75
+      a numeric vector
 
-Details
-~~~~~~~
+   re78
+      a numeric vector
 
-This data set was obtained using:
+   .. rubric:: Details
+      :name: details
 
-``here <- age <= 40 & re74<=5000 & re75 <= 5000 & re78 < 30000``
+   This data set was obtained using:
 
-``nsw74psidA <- nsw74psid1[here, ]``
+   ``here <- age <= 40 & re74<=5000 & re75 <= 5000 & re78 < 30000``
 
-Examples
-~~~~~~~~
+   ``nsw74psidA <- nsw74psid1[here, ]``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   table(nsw74psidA$trt)
-   A1.lm <- lm(re78 ~ trt + (age + educ + re74 + re75) + (black +
-         hisp + marr + nodeg), data = nsw74psidA)
-   summary(A1.lm)$coef
-   discA.glm <- glm(formula = trt ~ age + educ + black + hisp +
-     marr + nodeg + re74 + re75, family = binomial, data = nsw74psidA)
-   A.scores <- predict(discA.glm)
-   options(digits=4)
-   overlap <- A.scores > -3.5 & A.scores < 3.8
-   A.lm <- lm(re78 ~ trt + A.scores, data=nsw74psidA, subset = overlap)
-   summary(A.lm)$coef
+   ::
+
+      table(nsw74psidA$trt)
+      A1.lm <- lm(re78 ~ trt + (age + educ + re74 + re75) + (black +
+            hisp + marr + nodeg), data = nsw74psidA)
+      summary(A1.lm)$coef
+      discA.glm <- glm(formula = trt ~ age + educ + black + hisp +
+        marr + nodeg + re74 + re75, family = binomial, data = nsw74psidA)
+      A.scores <- predict(discA.glm)
+      options(digits=4)
+      overlap <- A.scores > -3.5 & A.scores < 3.8
+      A.lm <- lm(re78 ~ trt + A.scores, data=nsw74psidA, subset = overlap)
+      summary(A.lm)$coef

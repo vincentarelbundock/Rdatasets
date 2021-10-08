@@ -1,39 +1,42 @@
-========= ===============
-LewyDLBad R Documentation
-========= ===============
+.. container::
 
-Lewy Bodies and Dimentia with Alzheimer's
------------------------------------------
+   ========= ===============
+   LewyDLBad R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Lewy Bodies and Dimentia with Alzheimer's
+      :name: lewy-bodies-and-dimentia-with-alzheimers
 
-Dementia Study with Lewy Bodies
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Dementia Study with Lewy Bodies
 
-A data frame with 20 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``group``
-   ``DLB/AD``\ =DLB and Alzheimer's Disease
+   A data frame with 20 observations on the following 3 variables.
 
-``APC``
-   Annualized Percentage Change from baseline volume of the brain
+   ``group``
+      ``DLB/AD``\ =DLB and Alzheimer's Disease
 
-``MMSE``
-   Change in functional performance on the Mini Mental State Examination
+   ``APC``
+      Annualized Percentage Change from baseline volume of the brain
 
-Details
-~~~~~~~
+   ``MMSE``
+      Change in functional performance on the Mini Mental State
+      Examination
 
-Brain MRIs were used to study the brains of patients with Dementia with
-Lewy Bodies. These are the cases that were also diagnosed with
-Alzheimer's Disease. This is a subset of LewBody2Groups
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Brain MRIs were used to study the brains of patients with Dementia
+   with Lewy Bodies. These are the cases that were also diagnosed with
+   Alzheimer's Disease. This is a subset of LewBody2Groups
 
-Z. Nedelksa et al. (2015), "Pattern of brain atrophy rates in
-autopsy-confirmed dementia with Lewy bodies," Neurobiology of Aging, 36:
-452-461.
+   .. rubric:: Source
+      :name: source
+
+   Z. Nedelksa et al. (2015), "Pattern of brain atrophy rates in
+   autopsy-confirmed dementia with Lewy bodies," Neurobiology of Aging,
+   36: 452-461.

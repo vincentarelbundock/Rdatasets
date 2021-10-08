@@ -1,131 +1,134 @@
-=========== ===============
-RailsTrails R Documentation
-=========== ===============
+.. container::
 
-Homes in Northampton MA Near Rail Trails
-----------------------------------------
+   =========== ===============
+   RailsTrails R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Homes in Northampton MA Near Rail Trails
+      :name: homes-in-northampton-ma-near-rail-trails
 
-Sample of homes in Northampton, MA to see whether being close to a bike
-trail enhances the value of the home
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Sample of homes in Northampton, MA to see whether being close to a
+   bike trail enhances the value of the home
 
-A data frame with 104 observations on the following 30 variables.
+   .. rubric:: Format
+      :name: format
 
-``HouseNum``
-   Unique house number
+   A data frame with 104 observations on the following 30 variables.
 
-``Acre``
-   Lot size for the house (in acres)
+   ``HouseNum``
+      Unique house number
 
-``AcreGroup``
-   Lot size groups (``<= 1/4 acre`` or ``> 1/4 acre``)
+   ``Acre``
+      Lot size for the house (in acres)
 
-``Adj1998``
-   Estimated 1998 price (in thousands of 2014 dollars)
+   ``AcreGroup``
+      Lot size groups (``<= 1/4 acre`` or ``> 1/4 acre``)
 
-``Adj2007``
-   Estimated 2007 price (in thousands of 2014 dollars)
+   ``Adj1998``
+      Estimated 1998 price (in thousands of 2014 dollars)
 
-``Adj2011``
-   Estimated 2011 price (in thousands of 2014 dollars)
+   ``Adj2007``
+      Estimated 2007 price (in thousands of 2014 dollars)
 
-``BedGroup``
-   Bedroom groups (``1-2 beds``, ``3 beds``, or ``4+ beds``)
+   ``Adj2011``
+      Estimated 2011 price (in thousands of 2014 dollars)
 
-``Bedrooms``
-   Number of bedrooms
+   ``BedGroup``
+      Bedroom groups (``1-2 beds``, ``3 beds``, or ``4+ beds``)
 
-``BikeScore``
-   Bike friendliness (0-100 score, higher scores are better)
+   ``Bedrooms``
+      Number of bedrooms
 
-``Diff2014``
-   Difference in price between 2014 estimate and adjusted 1998 estimate
-   (in thousands of dollars)
+   ``BikeScore``
+      Bike friendliness (0-100 score, higher scores are better)
 
-``Distance``
-   Distance (in feet) to the nearest entry point to the rail trail
-   network
+   ``Diff2014``
+      Difference in price between 2014 estimate and adjusted 1998
+      estimate (in thousands of dollars)
 
-``DistGroup``
-   Distance groups, compared to 1/2 mile (``Closer`` or
-   ``Farther Away``)
+   ``Distance``
+      Distance (in feet) to the nearest entry point to the rail trail
+      network
 
-``GarageSpaces``
-   Number of garage spaces (0-4)
+   ``DistGroup``
+      Distance groups, compared to 1/2 mile (``Closer`` or
+      ``Farther Away``)
 
-``GarageGroup``
-   Any garage spaces? (``no`` or ``yes``)
+   ``GarageSpaces``
+      Number of garage spaces (0-4)
 
-``Latitude``
-   Latitude (for mapping)
+   ``GarageGroup``
+      Any garage spaces? (``no`` or ``yes``)
 
-``Longitude``
-   Longitude (for mapping)
+   ``Latitude``
+      Latitude (for mapping)
 
-``NumFullBaths``
-   Number of full baths (includes shower or bathtub)
+   ``Longitude``
+      Longitude (for mapping)
 
-``NumHalfBaths``
-   Number of half baths (no shower or bathtub)
+   ``NumFullBaths``
+      Number of full baths (includes shower or bathtub)
 
-``NumRooms``
-   Number of rooms
+   ``NumHalfBaths``
+      Number of half baths (no shower or bathtub)
 
-``PctChange``
-   Percentage change from adjusted 1998 price to 2014 (value of zero
-   means no change)
+   ``NumRooms``
+      Number of rooms
 
-``Price1998``
-   Zillow 10 year estimate from 2008 (in thousands of dollars)
+   ``PctChange``
+      Percentage change from adjusted 1998 price to 2014 (value of zero
+      means no change)
 
-``Price2007``
-   Zillow price estimate from 2007 (in thousands of dollars)
+   ``Price1998``
+      Zillow 10 year estimate from 2008 (in thousands of dollars)
 
-``Price2011``
-   Zillow price estimate from 2011 (in thousands of dollars)
+   ``Price2007``
+      Zillow price estimate from 2007 (in thousands of dollars)
 
-``Price2014``
-   Zillow price estimate from 2014 (in thousands of dollars)
+   ``Price2011``
+      Zillow price estimate from 2011 (in thousands of dollars)
 
-``SFGroup``
-   SquareFeet group (``<= 1500 sf`` or ``> 1500 sf``)
+   ``Price2014``
+      Zillow price estimate from 2014 (in thousands of dollars)
 
-``SquareFeet``
-   Square footage of interior finished space (in thousands of sf)
+   ``SFGroup``
+      SquareFeet group (``<= 1500 sf`` or ``> 1500 sf``)
 
-``StreetName``
-   Street name
+   ``SquareFeet``
+      Square footage of interior finished space (in thousands of sf)
 
-``StreetNum``
-   House number on street
+   ``StreetName``
+      Street name
 
-``WalkScore``
-   Walk friendliness (0-100 score, higher scores are better)
+   ``StreetNum``
+      House number on street
 
-``Zip``
-   Location (``1060`` = Northampton or ``1062`` = Florence)
+   ``WalkScore``
+      Walk friendliness (0-100 score, higher scores are better)
 
-Details
-~~~~~~~
+   ``Zip``
+      Location (``1060`` = Northampton or ``1062`` = Florence)
 
-This dataset comprises 104 homes in Northampton, MA that were sold in
-2007. The authors measured the shortest distance from each home to a
-railtrail on streets and pathways with Google maps and recorded the
-Zillow.com estimate of each home's price in 1998 and 2011. Additional
-attributes such as square footage, number of bedrooms and number of
-bathrooms are available from a realty database from 2007. We divide the
-houses into two groups based on distance to the trail (DistGroup).
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This dataset comprises 104 homes in Northampton, MA that were sold in
+   2007. The authors measured the shortest distance from each home to a
+   railtrail on streets and pathways with Google maps and recorded the
+   Zillow.com estimate of each home's price in 1998 and 2011. Additional
+   attributes such as square footage, number of bedrooms and number of
+   bathrooms are available from a realty database from 2007. We divide
+   the houses into two groups based on distance to the trail
+   (DistGroup).
 
-From July 2015 JSE Datasets and Stories: "Rail Trails and Property
-Values: Is There an Association?", Ella Hartenian, Smith College and
-Nicholas J. Horton, Amherst College.
+   .. rubric:: Source
+      :name: source
 
-http://www.amstat.org/publications/jse/v23n2/horton.pdf
+   From July 2015 JSE Datasets and Stories: "Rail Trails and Property
+   Values: Is There an Association?", Ella Hartenian, Smith College and
+   Nicholas J. Horton, Amherst College.
+
+   http://www.amstat.org/publications/jse/v23n2/horton.pdf

@@ -1,84 +1,86 @@
-========== ===============
-nsw74psid3 R Documentation
-========== ===============
+.. container::
 
-Labour Training Evaluation Data
--------------------------------
+   ========== ===============
+   nsw74psid3 R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Labour Training Evaluation Data
+      :name: labour-training-evaluation-data
 
-These data are pertinent to an investigation of the way that earnings
-changed, between 1974-1975 and 1978, in the absence of training. The
-data frame combines data for the experimental treatment group (NSW, 185
-observations), using as control data results from the PSID (Panel Study
-of Income Dynamics) study (128 observations). The latter were chosen to
-mimic the characteristics of the NSW training and control groups. These
-are a subset of the ``nsw74psid1`` data.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These data are pertinent to an investigation of the way that earnings
+   changed, between 1974-1975 and 1978, in the absence of training. The
+   data frame combines data for the experimental treatment group (NSW,
+   185 observations), using as control data results from the PSID (Panel
+   Study of Income Dynamics) study (128 observations). The latter were
+   chosen to mimic the characteristics of the NSW training and control
+   groups. These are a subset of the ``nsw74psid1`` data.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   nsw74psid3
+   ::
 
-Format
-~~~~~~
+      nsw74psid3
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-trt
-   a numeric vector identifying the study in which the subjects were
-   enrolled (0 = PSID, 1 = NSW)
+   This data frame contains the following columns:
 
-age
-   age (in years)
+   trt
+      a numeric vector identifying the study in which the subjects were
+      enrolled (0 = PSID, 1 = NSW)
 
-educ
-   years of education
+   age
+      age (in years)
 
-black
-   (0 = not black, 1 = black)
+   educ
+      years of education
 
-hisp
-   (0 = not hispanic, 1 = hispanic)
+   black
+      (0 = not black, 1 = black)
 
-marr
-   (0 = not married, 1 = married)
+   hisp
+      (0 = not hispanic, 1 = hispanic)
 
-nodeg
-   (0 = completed high school, 1 = dropout)
+   marr
+      (0 = not married, 1 = married)
 
-re74
-   real earnings in 1974
+   nodeg
+      (0 = completed high school, 1 = dropout)
 
-re75
-   real earnings in 1975
+   re74
+      real earnings in 1974
 
-re78
-   real earnings in 1978
+   re75
+      real earnings in 1975
 
-Source
-~~~~~~
+   re78
+      real earnings in 1978
 
-http://www.columbia.edu/~rd247/nswdata.html
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   http://www.columbia.edu/~rd247/nswdata.html
 
-Dehejia, R.H. and Wahba, S. 1999. Causal effects in non-experimental
-studies: re-evaluating the evaluation of training programs. Journal of
-the American Statistical Association 94: 1053-1062.
+   .. rubric:: References
+      :name: references
 
-Lalonde, R. 1986. Evaluating the economic evaluations of training
-programs. American Economic Review 76: 604-620.
+   Dehejia, R.H. and Wahba, S. 1999. Causal effects in non-experimental
+   studies: re-evaluating the evaluation of training programs. Journal
+   of the American Statistical Association 94: 1053-1062.
 
-Examples
-~~~~~~~~
+   Lalonde, R. 1986. Evaluating the economic evaluations of training
+   programs. American Economic Review 76: 604-620.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   print("Contingency Tables - Example 4.4")
-   table(nsw74psid3$trt, nsw74psid3$nodeg)
-   chisq.test(table(nsw74psid3$trt,nsw74psid3$nodeg))
+   ::
+
+      print("Contingency Tables - Example 4.4")
+      table(nsw74psid3$trt, nsw74psid3$nodeg)
+      chisq.test(table(nsw74psid3$trt,nsw74psid3$nodeg))

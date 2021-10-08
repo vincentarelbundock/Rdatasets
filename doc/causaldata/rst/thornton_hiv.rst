@@ -1,64 +1,66 @@
-============ ===============
-thornton_hiv R Documentation
-============ ===============
+.. container::
 
-Data from HIV information experiment in Thornton (2008)
--------------------------------------------------------
+   ============ ===============
+   thornton_hiv R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from HIV information experiment in Thornton (2008)
+      :name: data-from-hiv-information-experiment-in-thornton-2008
 
-``thornton_hiv`` comes from an experiment in Malawi looking at whether
-cash incentives could encourage people to learn the results of their HIV
-tests.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   ``thornton_hiv`` comes from an experiment in Malawi looking at
+   whether cash incentives could encourage people to learn the results
+   of their HIV tests.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   thornton_hiv
+   ::
 
-Format
-~~~~~~
+      thornton_hiv
 
-A data frame with 4820 rows and 7 variables
+   .. rubric:: Format
+      :name: format
 
-villnum
-   Village ID
+   A data frame with 4820 rows and 7 variables
 
-got
-   Got HIV results
+   villnum
+      Village ID
 
-distvct
-   Distance in kilometers
+   got
+      Got HIV results
 
-tinc
-   Total incentive
+   distvct
+      Distance in kilometers
 
-any
-   Received any incentive
+   tinc
+      Total incentive
 
-age
-   Age
+   any
+      Received any incentive
 
-hiv2004
-   HIV results
+   age
+      Age
 
-Details
-~~~~~~~
+   hiv2004
+      HIV results
 
-This data is used in the Potential Outcomes Causal Model chapter of
-Causal Inference: The Mixtape by Cunningham.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This data is used in the Potential Outcomes Causal Model chapter of
+   Causal Inference: The Mixtape by Cunningham.
 
-Thornton, Rebecca L. 2008. 'The Demand for, and Impact of, Learning Hiv
-Status.' American Economic Review 98 (5): 1829–63.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Thornton, Rebecca L. 2008. 'The Demand for, and Impact of, Learning
+   Hiv Status.' American Economic Review 98 (5): 1829–63.
 
-Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-https://mixtape.scunning.com/index.html.
+   .. rubric:: References
+      :name: references
+
+   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+   https://mixtape.scunning.com/index.html.

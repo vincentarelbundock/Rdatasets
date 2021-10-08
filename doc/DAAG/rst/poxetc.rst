@@ -1,45 +1,48 @@
-====== ===============
-poxetc R Documentation
-====== ===============
+.. container::
 
-Deaths from various causes, in London from 1629 till 1881, with gaps
---------------------------------------------------------------------
+   ====== ===============
+   poxetc R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Deaths from various causes, in London from 1629 till
+      1881, with gaps
+      :name: deaths-from-various-causes-in-london-from-1629-till-1881-with-gaps
 
-Deaths from "flux" or smallpox, measles, all causes, and ratios of the
-the first two categories to total deaths.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Deaths from "flux" or smallpox, measles, all causes, and ratios of
+   the the first two categories to total deaths.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(poxetc)
+   ::
 
-Format
-~~~~~~
+      data(poxetc)
 
-This is a multiple time series consisting of 5 series: ``fpox``,
-``measles``, ``all``, ``fpox2all``, ``measles2all``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   This is a multiple time series consisting of 5 series: ``fpox``,
+   ``measles``, ``all``, ``fpox2all``, ``measles2all``.
 
-Guy, W. A. 1882. Two hundred and fifty years of small pox in London.
-Journal of the Royal Statistical Society 399-443.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Guy, W. A. 1882. Two hundred and fifty years of small pox in London.
+   Journal of the Royal Statistical Society 399-443.
 
-Lancaster, H. O. 1990. Expectations of Life. Springer.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Lancaster, H. O. 1990. Expectations of Life. Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(poxetc)
-   str(poxetc)
-   plot(poxetc) 
+   ::
+
+      data(poxetc)
+      str(poxetc)
+      plot(poxetc) 

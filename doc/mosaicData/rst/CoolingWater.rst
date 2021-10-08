@@ -1,50 +1,53 @@
-============ ===============
-CoolingWater R Documentation
-============ ===============
+.. container::
 
-CoolingWater
-------------
+   ============ ===============
+   CoolingWater R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: CoolingWater
+      :name: coolingwater
 
-Temperature of a mug of water as it cools
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Temperature of a mug of water as it cools
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(CoolingWater)
+   ::
 
-Format
-~~~~~~
+      data(CoolingWater)
 
-A data frame with 222 observations of the following variables.
+   .. rubric:: Format
+      :name: format
 
--  ``time`` time in minutes
+   A data frame with 222 observations of the following variables.
 
--  ``temp`` temperature in Celsius
+   -  ``time`` time in minutes
 
-Details
-~~~~~~~
+   -  ``temp`` temperature in Celsius
 
-The water was poured into a mug and a temperature probe inserted into
-the water with a few seconds of the pour.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The water was poured into a mug and a temperature probe inserted into
+   the water with a few seconds of the pour.
 
-These data were collected Stan Wagon to help his mathematical modeling
-students explore Newton's Law of Cooling and the ways that the law is
-really only an approximation. More about Stan: http://stanwagon.com.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   These data were collected Stan Wagon to help his mathematical
+   modeling students explore Newton's Law of Cooling and the ways that
+   the law is really only an approximation. More about Stan:
+   http://stanwagon.com.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(CoolingWater)
-   if (require(ggformula)) {
-     gf_point(temp ~ time, data = CoolingWater, alpha = 0.5)
-   }
+   ::
+
+      data(CoolingWater)
+      if (require(ggformula)) {
+        gf_point(temp ~ time, data = CoolingWater, alpha = 0.5)
+      }

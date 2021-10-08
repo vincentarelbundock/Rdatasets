@@ -1,73 +1,75 @@
-======= ===============
-CRSPday R Documentation
-======= ===============
+.. container::
 
-Daily Returns from the CRSP Database
-------------------------------------
+   ======= ===============
+   CRSPday R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Daily Returns from the CRSP Database
+      :name: daily-returns-from-the-crsp-database
 
-daily observations from 1969-1-03 to 1998-12-31
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 2528
+   daily observations from 1969-1-03 to 1998-12-31
 
-*observation* : production units
+   *number of observations* : 2528
 
-*country* : United States
+   *observation* : production units
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(CRSPday)
+   ::
 
-Format
-~~~~~~
+      data(CRSPday)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-year
-   the year
+   A dataframe containing :
 
-month
-   the month
+   year
+      the year
 
-day
-   the day
+   month
+      the month
 
-ge
-   the return for General Electric,
-   `PERMNO <http://www.crsp.org/products/documentation/crsp-link>`__
-   12060
+   day
+      the day
 
-ibm
-   the return for IBM, PERMNO 12490
+   ge
+      the return for General Electric,
+      `PERMNO <http://www.crsp.org/products/documentation/crsp-link>`__
+      12060
 
-mobil
-   the return for Mobil Corporation, PERMNO 15966
+   ibm
+      the return for IBM, PERMNO 12490
 
-crsp
-   the return for the CRSP value-weighted index, including dividends
+   mobil
+      the return for Mobil Corporation, PERMNO 15966
 
-Source
-~~~~~~
+   crsp
+      the return for the CRSP value-weighted index, including dividends
 
-Center for Research in Security Prices, Graduate School of Business,
-University of Chicago, 725 South Wells - Suite 800, Chicago, Illinois
-60607, http://www.crsp.org.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Center for Research in Security Prices, Graduate School of Business,
+   University of Chicago, 725 South Wells - Suite 800, Chicago, Illinois
+   60607, http://www.crsp.org.
 
-Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
-Methods*, New York, Oxford University Press, chapter 7, 9 and 15.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
+   Methods*, New York, Oxford University Press, chapter 7, 9 and 15.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
+
+   ``Index.Time.Series``

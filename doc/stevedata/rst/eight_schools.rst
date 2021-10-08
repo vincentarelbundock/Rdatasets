@@ -1,56 +1,59 @@
-============= ===============
-eight_schools R Documentation
-============= ===============
+.. container::
 
-The Effect of Special Preparation on SAT-V Scores in Eight Randomized Experiments
----------------------------------------------------------------------------------
+   ============= ===============
+   eight_schools R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: The Effect of Special Preparation on SAT-V Scores in
+      Eight Randomized Experiments
+      :name: the-effect-of-special-preparation-on-sat-v-scores-in-eight-randomized-experiments
 
-You've all seen these before. These are the "eight schools" that
-everyone gets when being introduced to Bayesian programming. Here are
-the full data for your consideration, which you can use instead of
-awkwardly searching where the data are and copy-pasting them as a list.
-Every damn time, Steve.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   You've all seen these before. These are the "eight schools" that
+   everyone gets when being introduced to Bayesian programming. Here are
+   the full data for your consideration, which you can use instead of
+   awkwardly searching where the data are and copy-pasting them as a
+   list. Every damn time, Steve.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   eight_schools
+   ::
 
-Format
-~~~~~~
+      eight_schools
 
-A data frame with 8 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``school``
-   a letter denoting the school
+   A data frame with 8 observations on the following 6 variables.
 
-``num_treat``
-   the number of students in the school receiving the treatment
+   ``school``
+      a letter denoting the school
 
-``num_control``
-   the number of students in the school in the control group
+   ``num_treat``
+      the number of students in the school receiving the treatment
 
-``est``
-   the estimated treatment effect
+   ``num_control``
+      the number of students in the school in the control group
 
-``se``
-   the standard error of the effect estimate
+   ``est``
+      the estimated treatment effect
 
-``rvar``
-   the residual variance
+   ``se``
+      the standard error of the effect estimate
 
-Details
-~~~~~~~
+   ``rvar``
+      the residual variance
 
-Data copy-pasted from Table 1 in Rubin (1981).
+   .. rubric:: Details
+      :name: details
 
-References
-~~~~~~~~~~
+   Data copy-pasted from Table 1 in Rubin (1981).
 
-Rubin, Donald B. 1981. "Estimation in Parallel Randomized Experiments."
-*Journal of Educational Statistics* 6(4): 377-401.
+   .. rubric:: References
+      :name: references
+
+   Rubin, Donald B. 1981. "Estimation in Parallel Randomized
+   Experiments." *Journal of Educational Statistics* 6(4): 377-401.

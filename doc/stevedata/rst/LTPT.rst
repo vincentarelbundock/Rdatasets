@@ -1,48 +1,51 @@
-==== ===============
-LTPT R Documentation
-==== ===============
+.. container::
 
-Long-Term Price Trends for Computers, TVs, and Related Items
-------------------------------------------------------------
+   ==== ===============
+   LTPT R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Long-Term Price Trends for Computers, TVs, and Related
+      Items
+      :name: long-term-price-trends-for-computers-tvs-and-related-items
 
-These data are a monthly time-series of changes in the consumer price
-index relative to a Dec. 1997 starting date for televisions, computers,
-and related items. I use this as in-class illustration that
-globalization has made consumer electronics cheaper across the board for
-Americans.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These data are a monthly time-series of changes in the consumer price
+   index relative to a Dec. 1997 starting date for televisions,
+   computers, and related items. I use this as in-class illustration
+   that globalization has made consumer electronics cheaper across the
+   board for Americans.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   LTPT
+   ::
 
-Format
-~~~~~~
+      LTPT
 
-A data frame with 1,704 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``date``
-   a date
+   A data frame with 1,704 observations on the following 3 variables.
 
-``category``
-   the particular category (e.g. all items, televisions, etc.)
+   ``date``
+      a date
 
-``value``
-   the consumer price index (Dec. 1997 = 100)
+   ``category``
+      the particular category (e.g. all items, televisions, etc.)
 
-Details
-~~~~~~~
+   ``value``
+      the consumer price index (Dec. 1997 = 100)
 
-This is a web-scraping job from the U.S. Bureau of Labor Statistics.
-Post is titled "Long-term price trends for computers, TVs, and related
-items" and was published on Oct. 13, 2015.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This is a web-scraping job from the U.S. Bureau of Labor Statistics.
+   Post is titled "Long-term price trends for computers, TVs, and
+   related items" and was published on Oct. 13, 2015.
 
-U.S. Bureau of Labor Statistics.
+   .. rubric:: Source
+      :name: source
+
+   U.S. Bureau of Labor Statistics.

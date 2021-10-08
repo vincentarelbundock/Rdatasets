@@ -1,45 +1,48 @@
-========= ===============
-Dinosaurs R Documentation
-========= ===============
+.. container::
 
-Iridium Levels in Rock Layers to Investigate Dinosaur Extinction
-----------------------------------------------------------------
+   ========= ===============
+   Dinosaurs R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Iridium Levels in Rock Layers to Investigate Dinosaur
+      Extinction
+      :name: iridium-levels-in-rock-layers-to-investigate-dinosaur-extinction
 
-Iridium levels in prehistoric rock layers
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Iridium levels in prehistoric rock layers
 
-A data frame with 28 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``ID``
-   Sample identifier
+   A data frame with 28 observations on the following 4 variables.
 
-``Source``
-   Type of rock (``Limestone`` ``Shale``)
+   ``ID``
+      Sample identifier
 
-``Depth``
-   Depth of the sample (in meters)
+   ``Source``
+      Type of rock (``Limestone`` ``Shale``)
 
-``Iridium``
-   Iridium concentration (ppb)
+   ``Depth``
+      Depth of the sample (in meters)
 
-Details
-~~~~~~~
+   ``Iridium``
+      Iridium concentration (ppb)
 
-The question of interest is whether a volcanic eruption or asteroid
-strike had created a dust cloud that led to extinction of most
-dinosaurs. Rock samples taken in Gubbio, Italy were measured for the
-concentration of iridium (a rare metal which is more common in
-asteroids). The deeper the sample, the older the rocks are. A sudden
-increase in iridium at some point in time would lend support for the
-asteroid hypothesis.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The question of interest is whether a volcanic eruption or asteroid
+   strike had created a dust cloud that led to extinction of most
+   dinosaurs. Rock samples taken in Gubbio, Italy were measured for the
+   concentration of iridium (a rare metal which is more common in
+   asteroids). The deeper the sample, the older the rocks are. A sudden
+   increase in iridium at some point in time would lend support for the
+   asteroid hypothesis.
 
-Ramsey, Fred L. and Daniel W. Schafer (2002). The Statistical Sleuth,
-2nd ed., Pacific Grove, CA, Duxbury, pp.405-407.
+   .. rubric:: Source
+      :name: source
+
+   Ramsey, Fred L. and Daniel W. Schafer (2002). The Statistical Sleuth,
+   2nd ed., Pacific Grove, CA, Duxbury, pp.405-407.

@@ -1,49 +1,51 @@
-===================== ===============
-gender_discrimination R Documentation
-===================== ===============
+.. container::
 
-Bank manager recommendations based on gender
---------------------------------------------
+   ===================== ===============
+   gender_discrimination R Documentation
+   ===================== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Bank manager recommendations based on gender
+      :name: bank-manager-recommendations-based-on-gender
 
-Study from the 1970s about whether gender influences hiring
-recommendations.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Study from the 1970s about whether gender influences hiring
+   recommendations.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   gender_discrimination
+   ::
 
-Format
-~~~~~~
+      gender_discrimination
 
-A data frame with 48 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-gender
-   a factor with levels ``female`` and ``male``
+   A data frame with 48 observations on the following 2 variables.
 
-decision
-   a factor with levels ``not promoted`` and ``promoted``
+   gender
+      a factor with levels ``female`` and ``male``
 
-Source
-~~~~~~
+   decision
+      a factor with levels ``not promoted`` and ``promoted``
 
-Rosen B and Jerdee T. 1974. Influence of sex role stereotypes on
-personnel decisions. Journal of Applied Psychology 59(1):9-14.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Rosen B and Jerdee T. 1974. Influence of sex role stereotypes on
+   personnel decisions. Journal of Applied Psychology 59(1):9-14.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   table(gender_discrimination)
+      table(gender_discrimination)
 
-   ggplot(gender_discrimination, aes(y = gender, fill = decision)) +
-     geom_bar(position = "fill")
+      ggplot(gender_discrimination, aes(y = gender, fill = decision)) +
+        geom_bar(position = "fill")

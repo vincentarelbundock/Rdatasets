@@ -1,49 +1,51 @@
-========= ===============
-Birthdays R Documentation
-========= ===============
+.. container::
 
-US Births in 1969 - 1988
-------------------------
+   ========= ===============
+   Birthdays R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: US Births in 1969 - 1988
+      :name: us-births-in-1969---1988
 
-A day by day record of the number of births in each US State.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A day by day record of the number of births in each US State.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Birthdays)
+   ::
 
-Format
-~~~~~~
+      data(Birthdays)
 
-A data frame with 374221 observations on the following variables.
+   .. rubric:: Format
+      :name: format
 
--  ``state`` state where child was born
+   A data frame with 374221 observations on the following variables.
 
--  ``year`` year (1969-1988)
+   -  ``state`` state where child was born
 
--  ``month`` month (1-12)
+   -  ``year`` year (1969-1988)
 
--  ``day`` day of month
+   -  ``month`` month (1-12)
 
--  ``date`` date as a date object
+   -  ``day`` day of month
 
--  ``births`` number of births
+   -  ``date`` date as a date object
 
-Examples
-~~~~~~~~
+   -  ``births`` number of births
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(Birthdays)
-   if (require(mosaic)) {
-     MI <- Birthdays %>% filter(state == "MI")
-     gf_point(births ~ date, Birthdays, data = MI) 
-     gf_line(births ~ date, Birthdays, data = MI, color = ~ wday)
-     gf_line(births ~ date, 
-       data = Birthdays %>% group_by(date) %>% summarise(births = sum(births)))
-     }
+   ::
+
+      data(Birthdays)
+      if (require(mosaic)) {
+        MI <- Birthdays %>% filter(state == "MI")
+        gf_point(births ~ date, Birthdays, data = MI) 
+        gf_line(births ~ date, Birthdays, data = MI, color = ~ wday)
+        gf_line(births ~ date, 
+          data = Birthdays %>% group_by(date) %>% summarise(births = sum(births)))
+        }

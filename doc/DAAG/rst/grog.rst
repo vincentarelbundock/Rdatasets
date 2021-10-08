@@ -1,67 +1,70 @@
-==== ===============
-grog R Documentation
-==== ===============
+.. container::
 
-Alcohol consumption in Australia and New Zealand
-------------------------------------------------
+   ==== ===============
+   grog R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Alcohol consumption in Australia and New Zealand
+      :name: alcohol-consumption-in-australia-and-new-zealand
 
-Data are annual apparent alcohol consumption in Australia and New
-Zealand, in liters of pure alcohol content per annum, separately for
-beer, wine, and spirits (including spirit-based products).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data are annual apparent alcohol consumption in Australia and New
+   Zealand, in liters of pure alcohol content per annum, separately for
+   beer, wine, and spirits (including spirit-based products).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(grog)
+   ::
 
-Format
-~~~~~~
+      data(grog)
 
-A data frame with 18 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``Beer``
-   liters per annum
+   A data frame with 18 observations on the following 5 variables.
 
-``Wine``
-   liters per annum
+   ``Beer``
+      liters per annum
 
-``Spirit``
-   liters per annum
+   ``Wine``
+      liters per annum
 
-``Country``
-   a factor with levels ``Australia`` ``NewZealand``
+   ``Spirit``
+      liters per annum
 
-``Year``
-   Year ending in June of the given year
+   ``Country``
+      a factor with levels ``Australia`` ``NewZealand``
 
-Details
-~~~~~~~
+   ``Year``
+      Year ending in June of the given year
 
-Data are total available pure alcohol content, for the three categories,
-divided by numbers of persons aged 15 years or more. The source data for
-New Zealand included quarterly figures from December 1997, and annual
-data to December for all years. The annual New Zealand figure to June
-1998 required an estimate for September 1997 that was obtained by
-extrapolating back the third quarter trend line from later years.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Data are total available pure alcohol content, for the three
+   categories, divided by numbers of persons aged 15 years or more. The
+   source data for New Zealand included quarterly figures from December
+   1997, and annual data to December for all years. The annual New
+   Zealand figure to June 1998 required an estimate for September 1997
+   that was obtained by extrapolating back the third quarter trend line
+   from later years.
 
-Australian data are from http://www.abs.gov.au. For New Zealand data, go
-to http://www.stats.govt.nz/infoshare/ Click on 'Industry sectors' and
-then on 'Alcohol Available for Consumption - ALC'.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Australian data are from http://www.abs.gov.au. For New Zealand data,
+   go to http://www.stats.govt.nz/infoshare/ Click on 'Industry sectors'
+   and then on 'Alcohol Available for Consumption - ALC'.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(grog)
-   library(lattice)
-   xyplot(Beer+Wine+Spirit ~ Year | Country, data=grog)
-   xyplot(Beer+Wine+Spirit ~ Year, groups=Country, data=grog, outer=TRUE)
+   ::
+
+      data(grog)
+      library(lattice)
+      xyplot(Beer+Wine+Spirit ~ Year | Country, data=grog)
+      xyplot(Beer+Wine+Spirit ~ Year, groups=Country, data=grog, outer=TRUE)

@@ -1,46 +1,49 @@
-======= ===============
-volcano R Documentation
-======= ===============
+.. container::
 
-Topographic Information on Auckland's Maunga Whau Volcano
----------------------------------------------------------
+   ======= ===============
+   volcano R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Topographic Information on Auckland's Maunga Whau Volcano
+      :name: topographic-information-on-aucklands-maunga-whau-volcano
 
-Maunga Whau (Mt Eden) is one of about 50 volcanos in the Auckland
-volcanic field. This data set gives topographic information for Maunga
-Whau on a 10m by 10m grid.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Maunga Whau (Mt Eden) is one of about 50 volcanos in the Auckland
+   volcanic field. This data set gives topographic information for
+   Maunga Whau on a 10m by 10m grid.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   volcano
+   ::
 
-Format
-~~~~~~
+      volcano
 
-A matrix with 87 rows and 61 columns, rows corresponding to grid lines
-running east to west and columns to grid lines running south to north.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A matrix with 87 rows and 61 columns, rows corresponding to grid
+   lines running east to west and columns to grid lines running south to
+   north.
 
-Digitized from a topographic map by Ross Ihaka. These data should not be
-regarded as accurate.
+   .. rubric:: Source
+      :name: source
 
-See Also
-~~~~~~~~
+   Digitized from a topographic map by Ross Ihaka. These data should not
+   be regarded as accurate.
 
-``filled.contour`` for a nice plot.
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``filled.contour`` for a nice plot.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(grDevices); require(graphics)
-   filled.contour(volcano, color.palette = terrain.colors, asp = 1)
-   title(main = "volcano data: filled contour map")
+   ::
+
+      require(grDevices); require(graphics)
+      filled.contour(volcano, color.palette = terrain.colors, asp = 1)
+      title(main = "volcano data: filled contour map")

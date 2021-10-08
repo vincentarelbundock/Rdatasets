@@ -1,43 +1,46 @@
-======== ===============
-leg_mari R Documentation
-======== ===============
+.. container::
 
-Legalization of Marijuana Support in 2010 California Survey
------------------------------------------------------------
+   ======== ===============
+   leg_mari R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Legalization of Marijuana Support in 2010 California
+      Survey
+      :name: legalization-of-marijuana-support-in-2010-california-survey
 
-In a 2010 Survey USA poll, 70% of the 119 respondents between the ages
-of 18 and 34 said they would vote in the 2010 general election for Prop
-19, which would change California law to legalize marijuana and allow it
-to be regulated and taxed.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   In a 2010 Survey USA poll, 70% of the 119 respondents between the
+   ages of 18 and 34 said they would vote in the 2010 general election
+   for Prop 19, which would change California law to legalize marijuana
+   and allow it to be regulated and taxed.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   leg_mari
+   ::
 
-Format
-~~~~~~
+      leg_mari
 
-A data frame with 119 observations on the following variable.
+   .. rubric:: Format
+      :name: format
 
-response
-   One of two values: ``oppose`` or ``support``.
+   A data frame with 119 observations on the following variable.
 
-Source
-~~~~~~
+   response
+      One of two values: ``oppose`` or ``support``.
 
-Survey USA, Election Poll #16804, data collected July 8-11, 2010.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Survey USA, Election Poll #16804, data collected July 8-11, 2010.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
 
-   table(leg_mari)
+      table(leg_mari)

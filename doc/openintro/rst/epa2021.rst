@@ -1,150 +1,153 @@
-======= ===============
-epa2021 R Documentation
-======= ===============
+.. container::
 
-Vehicle info from the EPA for 2021
-----------------------------------
+   ======= ===============
+   epa2021 R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Vehicle info from the EPA for 2021
+      :name: vehicle-info-from-the-epa-for-2021
 
-Details from the EPA.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Details from the EPA.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   epa2021
+   ::
 
-Format
-~~~~~~
+      epa2021
 
-A data frame with 1108 observations on the following 28 variables.
+   .. rubric:: Format
+      :name: format
 
-model_yr
-   a numeric vector
+   A data frame with 1108 observations on the following 28 variables.
 
-mfr_name
-   Manufacturer name.
+   model_yr
+      a numeric vector
 
-division
-   Vehicle division.
+   mfr_name
+      Manufacturer name.
 
-carline
-   Vehicle line.
+   division
+      Vehicle division.
 
-mfr_code
-   Manufacturer code.
+   carline
+      Vehicle line.
 
-model_type_index
-   Model type index.
+   mfr_code
+      Manufacturer code.
 
-engine_displacement
-   Engine displacement.
+   model_type_index
+      Model type index.
 
-no_cylinders
-   Number of cylinders.
+   engine_displacement
+      Engine displacement.
 
-transmission_speed
-   Transmission speed.
+   no_cylinders
+      Number of cylinders.
 
-city_mpg
-   City mileage.
+   transmission_speed
+      Transmission speed.
 
-hwy_mpg
-   Highway mileage.
+   city_mpg
+      City mileage.
 
-comb_mpg
-   Combined mileage.
+   hwy_mpg
+      Highway mileage.
 
-guzzler
-   Whether the car is considered a "guzzler" or not, a factor with
-   levels ``N`` and ``Y.``
+   comb_mpg
+      Combined mileage.
 
-air_aspir_method
-   Air aspiration method.
+   guzzler
+      Whether the car is considered a "guzzler" or not, a factor with
+      levels ``N`` and ``Y.``
 
-air_aspir_method_desc
-   Air aspiration method description.
+   air_aspir_method
+      Air aspiration method.
 
-transmission
-   Transmission type.
+   air_aspir_method_desc
+      Air aspiration method description.
 
-transmission_desc
-   Transmission type description.
+   transmission
+      Transmission type.
 
-no_gears
-   Number of gears.
+   transmission_desc
+      Transmission type description.
 
-trans_lockup
-   Whether transmission locks up, a factor with levels ``N`` and ``Y``.
+   no_gears
+      Number of gears.
 
-trans_creeper_gear
-   A factor with level ``N`` only.
+   trans_lockup
+      Whether transmission locks up, a factor with levels ``N`` and
+      ``Y``.
 
-drive_sys
-   Drive system, a factor with levels.
+   trans_creeper_gear
+      A factor with level ``N`` only.
 
-drive_desc
-   Drive system description.
+   drive_sys
+      Drive system, a factor with levels.
 
-fuel_usage
-   Fuel usage, a factor with levels.
+   drive_desc
+      Drive system description.
 
-fuel_usage_desc
-   Fuel usage description.
+   fuel_usage
+      Fuel usage, a factor with levels.
 
-class
-   Class of car.
+   fuel_usage_desc
+      Fuel usage description.
 
-car_truck
-   Car or truck, a factor with levels ``car``, ``1``, ``??``, ``1``.
+   class
+      Class of car.
 
-release_date
-   Date of vehicle release.
+   car_truck
+      Car or truck, a factor with levels ``car``, ``1``, ``??``, ``1``.
 
-fuel_cell
-   Whether the car has a fuel cell or not, a factor with levels ``N``,
-   ``NA``.
+   release_date
+      Date of vehicle release.
 
-Source
-~~~~~~
+   fuel_cell
+      Whether the car has a fuel cell or not, a factor with levels
+      ``N``, ``NA``.
 
-Fuel Economy Data from
-`fueleconomy.gov <https://www.fueleconomy.gov/feg/download.shtml>`__.
-Retrieved 6 May, 2021.
+   .. rubric:: Source
+      :name: source
 
-See Also
-~~~~~~~~
+   Fuel Economy Data from
+   `fueleconomy.gov <https://www.fueleconomy.gov/feg/download.shtml>`__.
+   Retrieved 6 May, 2021.
 
-epa2012
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   epa2012
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
-   library(dplyr)
+      library(ggplot2)
+      library(dplyr)
 
-   # Variable descriptions
-   distinct(epa2021, air_aspir_method_desc, air_aspir_method)
-   distinct(epa2021, transmission_desc, transmission)
-   distinct(epa2021, drive_desc, drive_sys)
-   distinct(epa2021, fuel_usage_desc, fuel_usage)
+      # Variable descriptions
+      distinct(epa2021, air_aspir_method_desc, air_aspir_method)
+      distinct(epa2021, transmission_desc, transmission)
+      distinct(epa2021, drive_desc, drive_sys)
+      distinct(epa2021, fuel_usage_desc, fuel_usage)
 
-   # Guzzlers and their mileages
-   ggplot(epa2021, aes(x = city_mpg, y = hwy_mpg, color = guzzler)) +
-     geom_point() +
-     facet_wrap(~guzzler, ncol = 1)
+      # Guzzlers and their mileages
+      ggplot(epa2021, aes(x = city_mpg, y = hwy_mpg, color = guzzler)) +
+        geom_point() +
+        facet_wrap(~guzzler, ncol = 1)
 
-   # Compare to 2012
-   epa2021 %>%
-     bind_rows(epa2012) %>%
-     group_by(model_yr) %>%
-     summarise(
-       mean_city = mean(city_mpg),
-       mean_hwy  = mean(hwy_mpg)
-       )
+      # Compare to 2012
+      epa2021 %>%
+        bind_rows(epa2012) %>%
+        group_by(model_yr) %>%
+        summarise(
+          mean_city = mean(city_mpg),
+          mean_hwy  = mean(hwy_mpg)
+          )

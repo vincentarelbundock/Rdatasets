@@ -1,48 +1,50 @@
-======== ===============
-sunspots R Documentation
-======== ===============
+.. container::
 
-Monthly Sunspot Numbers, 1749–1983
-----------------------------------
+   ======== ===============
+   sunspots R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Monthly Sunspot Numbers, 1749–1983
+      :name: monthly-sunspot-numbers-17491983
 
-Monthly mean relative sunspot numbers from 1749 to 1983. Collected at
-Swiss Federal Observatory, Zurich until 1960, then Tokyo Astronomical
-Observatory.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Monthly mean relative sunspot numbers from 1749 to 1983. Collected at
+   Swiss Federal Observatory, Zurich until 1960, then Tokyo Astronomical
+   Observatory.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   sunspots
+   ::
 
-Format
-~~~~~~
+      sunspots
 
-A time series of monthly data from 1749 to 1983.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A time series of monthly data from 1749 to 1983.
 
-Andrews, D. F. and Herzberg, A. M. (1985) *Data: A Collection of
-Problems from Many Fields for the Student and Research Worker*. New
-York: Springer-Verlag.
+   .. rubric:: Source
+      :name: source
 
-See Also
-~~~~~~~~
+   Andrews, D. F. and Herzberg, A. M. (1985) *Data: A Collection of
+   Problems from Many Fields for the Student and Research Worker*. New
+   York: Springer-Verlag.
 
-``sunspot.month`` has a longer (and a bit different) series,
-``sunspot.year`` is a much shorter one. See there for getting more
-current sunspot numbers.
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``sunspot.month`` has a longer (and a bit different) series,
+   ``sunspot.year`` is a much shorter one. See there for getting more
+   current sunspot numbers.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(graphics)
-   plot(sunspots, main = "sunspots data", xlab = "Year",
-        ylab = "Monthly sunspot numbers")
+   ::
+
+      require(graphics)
+      plot(sunspots, main = "sunspots data", xlab = "Year",
+           ylab = "Monthly sunspot numbers")

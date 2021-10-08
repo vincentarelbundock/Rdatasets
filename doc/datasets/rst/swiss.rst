@@ -1,97 +1,101 @@
-===== ===============
-swiss R Documentation
-===== ===============
+.. container::
 
-Swiss Fertility and Socioeconomic Indicators (1888) Data
---------------------------------------------------------
+   ===== ===============
+   swiss R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Swiss Fertility and Socioeconomic Indicators (1888) Data
+      :name: swiss-fertility-and-socioeconomic-indicators-1888-data
 
-Standardized fertility measure and socio-economic indicators for each of
-47 French-speaking provinces of Switzerland at about 1888.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Standardized fertility measure and socio-economic indicators for each
+   of 47 French-speaking provinces of Switzerland at about 1888.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   swiss
+   ::
 
-Format
-~~~~~~
+      swiss
 
-A data frame with 47 observations on 6 variables, *each* of which is in
-percent, i.e., in *[0, 100]*.
+   .. rubric:: Format
+      :name: format
 
-+------+------------------+------------------------------------------+
-| [,1] | Fertility        | *Ig*, ‘common standardized fertility     |
-|      |                  | measure’                                 |
-+------+------------------+------------------------------------------+
-| [,2] | Agriculture      | % of males involved in agriculture as    |
-|      |                  | occupation                               |
-+------+------------------+------------------------------------------+
-| [,3] | Examination      | % draftees receiving highest mark on     |
-|      |                  | army examination                         |
-+------+------------------+------------------------------------------+
-| [,4] | Education        | % education beyond primary school for    |
-|      |                  | draftees.                                |
-+------+------------------+------------------------------------------+
-| [,5] | Catholic         | % ‘catholic’ (as opposed to              |
-|      |                  | ‘protestant’).                           |
-+------+------------------+------------------------------------------+
-| [,6] | Infant.Mortality | live births who live less than 1 year.   |
-+------+------------------+------------------------------------------+
+   A data frame with 47 observations on 6 variables, *each* of which is
+   in percent, i.e., in *[0, 100]*.
 
-All variables but ‘Fertility’ give proportions of the population.
+   +------+------------------+------------------------------------------+
+   | [,1] | Fertility        | *Ig*, ‘common standardized fertility     |
+   |      |                  | measure’                                 |
+   +------+------------------+------------------------------------------+
+   | [,2] | Agriculture      | % of males involved in agriculture as    |
+   |      |                  | occupation                               |
+   +------+------------------+------------------------------------------+
+   | [,3] | Examination      | % draftees receiving highest mark on     |
+   |      |                  | army examination                         |
+   +------+------------------+------------------------------------------+
+   | [,4] | Education        | % education beyond primary school for    |
+   |      |                  | draftees.                                |
+   +------+------------------+------------------------------------------+
+   | [,5] | Catholic         | % ‘catholic’ (as opposed to              |
+   |      |                  | ‘protestant’).                           |
+   +------+------------------+------------------------------------------+
+   | [,6] | Infant.Mortality | live births who live less than 1 year.   |
+   +------+------------------+------------------------------------------+
 
-Details
-~~~~~~~
+   All variables but ‘Fertility’ give proportions of the population.
 
-(paraphrasing Mosteller and Tukey):
+   .. rubric:: Details
+      :name: details
 
-Switzerland, in 1888, was entering a period known as the *demographic
-transition*; i.e., its fertility was beginning to fall from the high
-level typical of underdeveloped countries.
+   (paraphrasing Mosteller and Tukey):
 
-The data collected are for 47 French-speaking “provinces” at about 1888.
+   Switzerland, in 1888, was entering a period known as the *demographic
+   transition*; i.e., its fertility was beginning to fall from the high
+   level typical of underdeveloped countries.
 
-Here, all variables are scaled to *[0, 100]*, where in the original, all
-but ``"Catholic"`` were scaled to *[0, 1]*.
+   The data collected are for 47 French-speaking “provinces” at about
+   1888.
 
-Note
-~~~~
+   Here, all variables are scaled to *[0, 100]*, where in the original,
+   all but ``"Catholic"`` were scaled to *[0, 1]*.
 
-Files for all 182 districts in 1888 and other years have been available
-at https://opr.princeton.edu/archive/pefp/switz.aspx.
+   .. rubric:: Note
+      :name: note
 
-They state that variables ``Examination`` and ``Education`` are averages
-for 1887, 1888 and 1889.
+   Files for all 182 districts in 1888 and other years have been
+   available at https://opr.princeton.edu/archive/pefp/switz.aspx.
 
-Source
-~~~~~~
+   They state that variables ``Examination`` and ``Education`` are
+   averages for 1887, 1888 and 1889.
 
-Project “16P5”, pages 549–551 in
+   .. rubric:: Source
+      :name: source
 
-Mosteller, F. and Tukey, J. W. (1977) *Data Analysis and Regression: A
-Second Course in Statistics*. Addison-Wesley, Reading Mass.
+   Project “16P5”, pages 549–551 in
 
-indicating their source as “Data used by permission of Franice van de
-Walle. Office of Population Research, Princeton University, 1976.
-Unpublished data assembled under NICHD contract number No 1-HD-O-2077.”
+   Mosteller, F. and Tukey, J. W. (1977) *Data Analysis and Regression:
+   A Second Course in Statistics*. Addison-Wesley, Reading Mass.
 
-References
-~~~~~~~~~~
+   indicating their source as “Data used by permission of Franice van de
+   Walle. Office of Population Research, Princeton University, 1976.
+   Unpublished data assembled under NICHD contract number No
+   1-HD-O-2077.”
 
-Becker, R. A., Chambers, J. M. and Wilks, A. R. (1988) *The New S
-Language*. Wadsworth & Brooks/Cole.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Becker, R. A., Chambers, J. M. and Wilks, A. R. (1988) *The New S
+   Language*. Wadsworth & Brooks/Cole.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(stats); require(graphics)
-   pairs(swiss, panel = panel.smooth, main = "swiss data",
-         col = 3 + (swiss$Catholic > 50))
-   summary(lm(Fertility ~ . , data = swiss))
+   ::
+
+      require(stats); require(graphics)
+      pairs(swiss, panel = panel.smooth, main = "swiss data",
+            col = 3 + (swiss$Catholic > 50))
+      summary(lm(Fertility ~ . , data = swiss))

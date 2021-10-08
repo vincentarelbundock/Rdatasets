@@ -1,76 +1,78 @@
-========= ===============
-Cigarette R Documentation
-========= ===============
+.. container::
 
-The Cigarette Consumption Panel Data Set
-----------------------------------------
+   ========= ===============
+   Cigarette R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: The Cigarette Consumption Panel Data Set
+      :name: the-cigarette-consumption-panel-data-set
 
-a panel of 48 observations from 1985 to 1995
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 528
+   a panel of 48 observations from 1985 to 1995
 
-*observation* : regional
+   *number of observations* : 528
 
-*country* : United States
+   *observation* : regional
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Cigarette)
+   ::
 
-Format
-~~~~~~
+      data(Cigarette)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-state
+   A dataframe containing :
+
    state
+      state
 
-year
    year
+      year
 
-cpi
-   consumer price index
+   cpi
+      consumer price index
 
-pop
-   state population
+   pop
+      state population
 
-packpc
-   number of packs per capita
+   packpc
+      number of packs per capita
 
-income
-   state personal income (total, nominal)
+   income
+      state personal income (total, nominal)
 
-tax
-   average state, federal, and average local excise taxes for fiscal
-   year
+   tax
+      average state, federal, and average local excise taxes for fiscal
+      year
 
-avgprs
-   average price during fiscal year, including sales taxes
+   avgprs
+      average price during fiscal year, including sales taxes
 
-taxs
-   average excise taxes for fiscal year, including sales taxes
+   taxs
+      average excise taxes for fiscal year, including sales taxes
 
-Source
-~~~~~~
+   .. rubric:: Source
+      :name: source
 
-Professor Jonathan Gruber, MIT.
+   Professor Jonathan Gruber, MIT.
 
-References
-~~~~~~~~~~
+   .. rubric:: References
+      :name: references
 
-Stock, James H. and Mark W. Watson (2003) *Introduction to
-Econometrics*, Addison-Wesley Educational Publishers, chapter 10.
+   Stock, James H. and Mark W. Watson (2003) *Introduction to
+   Econometrics*, Addison-Wesley Educational Publishers, chapter 10.
 
-See Also
-~~~~~~~~
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
 
-``Index.Time.Series``
+   ``Index.Time.Series``

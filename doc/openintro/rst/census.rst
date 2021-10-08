@@ -1,70 +1,72 @@
-====== ===============
-census R Documentation
-====== ===============
+.. container::
 
-Random sample of 2000 U.S. Census Data
---------------------------------------
+   ====== ===============
+   census R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Random sample of 2000 U.S. Census Data
+      :name: random-sample-of-2000-u.s.-census-data
 
-A random sample of 500 observations from the 2000 U.S. Census Data.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A random sample of 500 observations from the 2000 U.S. Census Data.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   census
+   ::
 
-Format
-~~~~~~
+      census
 
-A data frame with 500 observations on the following 8 variables.
+   .. rubric:: Format
+      :name: format
 
-census_year
-   Census Year.
+   A data frame with 500 observations on the following 8 variables.
 
-state_fips_code
-   Name of state.
+   census_year
+      Census Year.
 
-total_family_income
-   Total family income (in U.S. dollars).
+   state_fips_code
+      Name of state.
 
-age
-   Age.
+   total_family_income
+      Total family income (in U.S. dollars).
 
-sex
-   Sex with levels ``Female`` and ``Male``.
+   age
+      Age.
 
-race_general
-   Race with levels ``American Indian or Alaska Native``, ``Black``,
-   ``Chinese``, ``Japanese``, ``Other Asian or Pacific Islander``,
-   ``Two major races``, ``White`` and ``Other``.
+   sex
+      Sex with levels ``Female`` and ``Male``.
 
-marital_status
-   Marital status with levels ``Divorced``, ``Married/spouse absent``,
-   ``Married/spouse present``, ``Never married/single``, ``Separated``
-   and ``Widowed``.
+   race_general
+      Race with levels ``American Indian or Alaska Native``, ``Black``,
+      ``Chinese``, ``Japanese``, ``Other Asian or Pacific Islander``,
+      ``Two major races``, ``White`` and ``Other``.
 
-total_personal_income
-   Total personal income (in U.S. dollars).
+   marital_status
+      Marital status with levels ``Divorced``,
+      ``Married/spouse absent``, ``Married/spouse present``,
+      ``Never married/single``, ``Separated`` and ``Widowed``.
 
-Source
-~~~~~~
+   total_personal_income
+      Total personal income (in U.S. dollars).
 
-http://factfinder.census.gov
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   http://factfinder.census.gov
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(dplyr)
-   library(ggplot2)
+      library(dplyr)
+      library(ggplot2)
 
-   census %>%
-     filter(total_family_income > 0) %>%
-     ggplot(aes(x = total_family_income)) +
-       geom_histogram(binwidth = 25000)
+      census %>%
+        filter(total_family_income > 0) %>%
+        ggplot(aes(x = total_family_income)) +
+          geom_histogram(binwidth = 25000)

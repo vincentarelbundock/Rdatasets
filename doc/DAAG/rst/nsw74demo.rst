@@ -1,73 +1,75 @@
-========= ===============
-nsw74demo R Documentation
-========= ===============
+.. container::
 
-Labour Training Evaluation Data
--------------------------------
+   ========= ===============
+   nsw74demo R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Labour Training Evaluation Data
+      :name: labour-training-evaluation-data
 
-This data frame contains 445 rows and 10 columns. These data are from an
-investigation of the effect of training on changes, between 1974-1975
-and 1978, in the earnings of individuals who had experienced employment
-difficulties Data are for the male experimental control and treatment
-groups.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data frame contains 445 rows and 10 columns. These data are from
+   an investigation of the effect of training on changes, between
+   1974-1975 and 1978, in the earnings of individuals who had
+   experienced employment difficulties Data are for the male
+   experimental control and treatment groups.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   nsw74demo
+   ::
 
-Format
-~~~~~~
+      nsw74demo
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-trt
-   a numeric vector identifying the study in which the subjects were
-   enrolled (0 = PSID, 1 = NSW).
+   This data frame contains the following columns:
 
-age
-   age (in years).
+   trt
+      a numeric vector identifying the study in which the subjects were
+      enrolled (0 = PSID, 1 = NSW).
 
-educ
-   years of education.
+   age
+      age (in years).
 
-black
-   (0 = not black, 1 = black).
+   educ
+      years of education.
 
-hisp
-   (0 = not hispanic, 1 = hispanic).
+   black
+      (0 = not black, 1 = black).
 
-marr
-   (0 = not married, 1 = married).
+   hisp
+      (0 = not hispanic, 1 = hispanic).
 
-nodeg
-   (0 = completed high school, 1 = dropout).
+   marr
+      (0 = not married, 1 = married).
 
-re74
-   real earnings in 1974.
+   nodeg
+      (0 = completed high school, 1 = dropout).
 
-re75
-   real earnings in 1975.
+   re74
+      real earnings in 1974.
 
-re78
-   real earnings in 1978.
+   re75
+      real earnings in 1975.
 
-Source
-~~~~~~
+   re78
+      real earnings in 1978.
 
-http://www.columbia.edu/~rd247/nswdata.html
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   http://www.columbia.edu/~rd247/nswdata.html
 
-Dehejia, R.H. and Wahba, S. 1999. Causal effects in non-experimental
-studies: re-evaluating the evaluation of training programs. Journal of
-the American Statistical Association 94: 1053-1062.
+   .. rubric:: References
+      :name: references
 
-Lalonde, R. 1986. Evaluating the economic evaluations of training
-programs. American Economic Review 76: 604-620.
+   Dehejia, R.H. and Wahba, S. 1999. Causal effects in non-experimental
+   studies: re-evaluating the evaluation of training programs. Journal
+   of the American Statistical Association 94: 1053-1062.
+
+   Lalonde, R. 1986. Evaluating the economic evaluations of training
+   programs. American Economic Review 76: 604-620.

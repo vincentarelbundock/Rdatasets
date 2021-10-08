@@ -1,69 +1,71 @@
-====== ===============
-Trucks R Documentation
-====== ===============
+.. container::
 
-Truck Accidents Data
---------------------
+   ====== ===============
+   Trucks R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Truck Accidents Data
+      :name: truck-accidents-data
 
-Data from a study in England in two periods from November 1969 to
-October 1971 and November 1971 to October 1973. A new compulsory safety
-measure for trucks was introduced in October 1971. Therefore, the
-question is whether the safety measure had an effect on the number of
-accidents and on the point of collision on the truck.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from a study in England in two periods from November 1969 to
+   October 1971 and November 1971 to October 1973. A new compulsory
+   safety measure for trucks was introduced in October 1971. Therefore,
+   the question is whether the safety measure had an effect on the
+   number of accidents and on the point of collision on the truck.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("Trucks")
+   ::
 
-Format
-~~~~~~
+      data("Trucks")
 
-A data frame with 24 observations on 5 variables.
+   .. rubric:: Format
+      :name: format
 
-Freq
-   frequency of accidents involving trucks.
+   A data frame with 24 observations on 5 variables.
 
-period
-   factor indicating time period (before, after) 1971-11-01.
+   Freq
+      frequency of accidents involving trucks.
 
-collision
-   factor indicating whether the collision was in the back or forward
-   (including the front and the sides) of the truck (back, forward).
+   period
+      factor indicating time period (before, after) 1971-11-01.
 
-parked
-   factor indicating whether the truck was parked (yes, no).
+   collision
+      factor indicating whether the collision was in the back or forward
+      (including the front and the sides) of the truck (back, forward).
 
-light
-   factor indicating light conditions: day light (daylight), night on an
-   illuminated road (night, illuminate), night on a dark road (night,
-   dark).
+   parked
+      factor indicating whether the truck was parked (yes, no).
 
-Source
-~~~~~~
+   light
+      factor indicating light conditions: day light (daylight), night on
+      an illuminated road (night, illuminate), night on a dark road
+      (night, dark).
 
-E. B. Andersen (1991), The Statistical Analysis of Categorical Data,
-Table 6.8.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   E. B. Andersen (1991), The Statistical Analysis of Categorical Data,
+   Table 6.8.
 
-E. B. Andersen (1991), *The Statistical Analysis of Categorical Data*.
-2nd edition. Springer-Verlag, Berlin.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   E. B. Andersen (1991), *The Statistical Analysis of Categorical
+   Data*. 2nd edition. Springer-Verlag, Berlin.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   library(MASS)
-   data("Trucks")
-   tab <- xtabs(Freq ~ period + collision + light + parked, data = Trucks)
-   loglm(~ (collision + period) * parked * light, data = tab)
-   doubledecker(collision ~ parked + light + period, data = tab)
-   cotabplot(tab, panel = cotab_coindep)
+   ::
+
+      library(MASS)
+      data("Trucks")
+      tab <- xtabs(Freq ~ period + collision + light + parked, data = Trucks)
+      loglm(~ (collision + period) * parked * light, data = tab)
+      doubledecker(collision ~ parked + light + period, data = tab)
+      cotabplot(tab, panel = cotab_coindep)

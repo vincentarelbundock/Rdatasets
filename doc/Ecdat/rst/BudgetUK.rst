@@ -1,80 +1,82 @@
-======== ===============
-BudgetUK R Documentation
-======== ===============
+.. container::
 
-Budget Shares of British Households
------------------------------------
+   ======== ===============
+   BudgetUK R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Budget Shares of British Households
+      :name: budget-shares-of-british-households
 
-a cross-section from 1980 to 1982
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 1519
+   a cross-section from 1980 to 1982
 
-*observation* : households
+   *number of observations* : 1519
 
-*country* : United Kingdom
+   *observation* : households
 
-Usage
-~~~~~
+   *country* : United Kingdom
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(BudgetUK)
+   ::
 
-Format
-~~~~~~
+      data(BudgetUK)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-wfood
-   budget share for food expenditure
+   A dataframe containing :
 
-wfuel
-   budget share for fuel expenditure
+   wfood
+      budget share for food expenditure
 
-wcloth
-   budget share for clothing expenditure
+   wfuel
+      budget share for fuel expenditure
 
-walc
-   budget share for alcohol expenditure
+   wcloth
+      budget share for clothing expenditure
 
-wtrans
-   budget share for transport expenditure
+   walc
+      budget share for alcohol expenditure
 
-wother
-   budget share for other good expenditure
+   wtrans
+      budget share for transport expenditure
 
-totexp
-   total household expenditure (rounded to the nearest 10 UK pounds
-   sterling)
+   wother
+      budget share for other good expenditure
 
-income
-   total net household income (rounded to the nearest 10 UK pounds
-   sterling)
+   totexp
+      total household expenditure (rounded to the nearest 10 UK pounds
+      sterling)
 
-age
-   age of household head
+   income
+      total net household income (rounded to the nearest 10 UK pounds
+      sterling)
 
-children
-   number of children
+   age
+      age of household head
 
-Source
-~~~~~~
+   children
+      number of children
 
-Blundell, Richard, Alan Duncan and Krishna Pendakur (1998)
-“Semiparametric estimation and consumer demand”, *Journal of Applied
-Econometrics*, **13(5)**, 435–462.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Blundell, Richard, Alan Duncan and Krishna Pendakur (1998)
+   “Semiparametric estimation and consumer demand”, *Journal of Applied
+   Econometrics*, **13(5)**, 435–462.
 
-Journal of Applied Econometrics data archive :
-http://qed.econ.queensu.ca/jae/.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Journal of Applied Econometrics data archive :
+   http://qed.econ.queensu.ca/jae/.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

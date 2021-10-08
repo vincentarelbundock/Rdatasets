@@ -1,37 +1,39 @@
-========= ===============
-accdeaths R Documentation
-========= ===============
+.. container::
 
-Accidental Deaths in the US 1973-1978
--------------------------------------
+   ========= ===============
+   accdeaths R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Accidental Deaths in the US 1973-1978
+      :name: accidental-deaths-in-the-us-1973-1978
 
-A regular time series giving the monthly totals of accidental deaths in
-the USA.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A regular time series giving the monthly totals of accidental deaths
+   in the USA.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   accdeaths
+   ::
 
-Details
-~~~~~~~
+      accdeaths
 
-The values for first six months of 1979 (p. 326) were
-``7798 7406 8363 8460 9217 9316``.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The values for first six months of 1979 (p. 326) were
+   ``7798 7406 8363 8460 9217 9316``.
 
-P. J. Brockwell and R. A. Davis (1991) *Time Series: Theory and
-Methods.* Springer, New York.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   P. J. Brockwell and R. A. Davis (1991) *Time Series: Theory and
+   Methods.* Springer, New York.
 
-Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics with
-S-PLUS.* Third Edition. Springer.
+   .. rubric:: References
+      :name: references
+
+   Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics
+   with S-PLUS.* Third Edition. Springer.

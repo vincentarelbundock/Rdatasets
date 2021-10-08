@@ -1,61 +1,63 @@
-============= ===============
-USConsump1979 R Documentation
-============= ===============
+.. container::
 
-US Consumption Data (1970–1979)
--------------------------------
+   ============= ===============
+   USConsump1979 R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: US Consumption Data (1970–1979)
+      :name: us-consumption-data-19701979
 
-Time series data on US income and consumption expenditure, 1970–1979.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Time series data on US income and consumption expenditure, 1970–1979.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("USConsump1979")
+   ::
 
-Format
-~~~~~~
+      data("USConsump1979")
 
-An annual multiple time series from 1970 to 1979 with 2 variables.
+   .. rubric:: Format
+      :name: format
 
-income
-   Disposable income.
+   An annual multiple time series from 1970 to 1979 with 2 variables.
 
-expenditure
-   Consumption expenditure.
+   income
+      Disposable income.
 
-Source
-~~~~~~
+   expenditure
+      Consumption expenditure.
 
-Online complements to Greene (2003). Table F1.1.
+   .. rubric:: Source
+      :name: source
 
-http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+   Online complements to Greene (2003). Table F1.1.
 
-References
-~~~~~~~~~~
+   http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper Saddle
-River, NJ: Prentice Hall.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+   Saddle River, NJ: Prentice Hall.
 
-``Greene2003``, ``USConsump1950``, ``USConsump1993``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Greene2003``, ``USConsump1950``, ``USConsump1993``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("USConsump1979")
-   plot(USConsump1979)
+   ::
 
-   ## Example 1.1 in Greene (2003)
-   plot(expenditure ~ income, data = as.data.frame(USConsump1979), pch = 19)
-   fm <- lm(expenditure ~ income, data = as.data.frame(USConsump1979))
-   summary(fm)
-   abline(fm)
+      data("USConsump1979")
+      plot(USConsump1979)
+
+      ## Example 1.1 in Greene (2003)
+      plot(expenditure ~ income, data = as.data.frame(USConsump1979), pch = 19)
+      fm <- lm(expenditure ~ income, data = as.data.frame(USConsump1979))
+      summary(fm)
+      abline(fm)

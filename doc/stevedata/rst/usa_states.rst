@@ -1,37 +1,39 @@
-========== ===============
-usa_states R Documentation
-========== ===============
+.. container::
 
-State Abbreviations, Names, and Regions/Divisions
--------------------------------------------------
+   ========== ===============
+   usa_states R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: State Abbreviations, Names, and Regions/Divisions
+      :name: state-abbreviations-names-and-regionsdivisions
 
-A simple data set from ``state.abb``, ``state.name``, ``state.region``,
-and ``state.division`` (+ District of Columbia). I'd rather just have
-all these in one place.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A simple data set from ``state.abb``, ``state.name``,
+   ``state.region``, and ``state.division`` (+ District of Columbia).
+   I'd rather just have all these in one place.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   usa_states
+   ::
 
-Format
-~~~~~~
+      usa_states
 
-A data frame with 51 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``stateabb``
-   the state abbreviation
+   A data frame with 51 observations on the following 4 variables.
 
-``statename``
-   the state's name
+   ``stateabb``
+      the state abbreviation
 
-``region``
-   the state's Census region
+   ``statename``
+      the state's name
 
-``division``
-   the state's Census division
+   ``region``
+      the state's Census region
+
+   ``division``
+      the state's Census division

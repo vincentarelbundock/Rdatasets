@@ -1,61 +1,63 @@
-======= ===============
-cle_sac R Documentation
-======= ===============
+.. container::
 
-Cleveland and Sacramento
-------------------------
+   ======= ===============
+   cle_sac R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Cleveland and Sacramento
+      :name: cleveland-and-sacramento
 
-Data on a sample of 500 people from the Cleveland, OH and Sacramento, CA
-metro areas.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data on a sample of 500 people from the Cleveland, OH and Sacramento,
+   CA metro areas.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   cle_sac
+   ::
 
-Format
-~~~~~~
+      cle_sac
 
-A data frame with 500 observations representing people on the following
-8 variables.
+   .. rubric:: Format
+      :name: format
 
-year
-   Year the data was collected.
+   A data frame with 500 observations representing people on the
+   following 8 variables.
 
-state
-   State where person resides.
+   year
+      Year the data was collected.
 
-city
-   City.
+   state
+      State where person resides.
 
-age
-   Age of the person.
+   city
+      City.
 
-sex
-   Gender.
+   age
+      Age of the person.
 
-race
-   Ethnicity.
+   sex
+      Gender.
 
-marital_status
-   Marital status.
+   race
+      Ethnicity.
 
-personal_income
-   Personal income.
+   marital_status
+      Marital status.
 
-Examples
-~~~~~~~~
+   personal_income
+      Personal income.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(cle_sac, aes(x = personal_income)) +
-     geom_histogram(binwidth = 20000) +
-     facet_wrap(~city)
+      ggplot(cle_sac, aes(x = personal_income)) +
+        geom_histogram(binwidth = 20000) +
+        facet_wrap(~city)

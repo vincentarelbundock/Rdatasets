@@ -1,60 +1,63 @@
-=== ===============
-mpg R Documentation
-=== ===============
+.. container::
 
-Fuel economy data from 1999 to 2008 for 38 popular models of cars
------------------------------------------------------------------
+   === ===============
+   mpg R Documentation
+   === ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Fuel economy data from 1999 to 2008 for 38 popular models
+      of cars
+      :name: fuel-economy-data-from-1999-to-2008-for-38-popular-models-of-cars
 
-This dataset contains a subset of the fuel economy data that the EPA
-makes available on https://fueleconomy.gov/. It contains only models
-which had a new release every year between 1999 and 2008 - this was used
-as a proxy for the popularity of the car.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This dataset contains a subset of the fuel economy data that the EPA
+   makes available on https://fueleconomy.gov/. It contains only models
+   which had a new release every year between 1999 and 2008 - this was
+   used as a proxy for the popularity of the car.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   mpg
+   ::
 
-Format
-~~~~~~
+      mpg
 
-A data frame with 234 rows and 11 variables:
+   .. rubric:: Format
+      :name: format
 
-manufacturer
-   manufacturer name
+   A data frame with 234 rows and 11 variables:
 
-model
-   model name
+   manufacturer
+      manufacturer name
 
-displ
-   engine displacement, in litres
+   model
+      model name
 
-year
-   year of manufacture
+   displ
+      engine displacement, in litres
 
-cyl
-   number of cylinders
+   year
+      year of manufacture
 
-trans
-   type of transmission
+   cyl
+      number of cylinders
 
-drv
-   the type of drive train, where f = front-wheel drive, r = rear wheel
-   drive, 4 = 4wd
+   trans
+      type of transmission
 
-cty
-   city miles per gallon
+   drv
+      the type of drive train, where f = front-wheel drive, r = rear
+      wheel drive, 4 = 4wd
 
-hwy
-   highway miles per gallon
+   cty
+      city miles per gallon
 
-fl
-   fuel type
+   hwy
+      highway miles per gallon
 
-class
-   "type" of car
+   fl
+      fuel type
+
+   class
+      "type" of car

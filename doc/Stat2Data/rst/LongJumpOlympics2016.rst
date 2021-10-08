@@ -1,34 +1,36 @@
-==================== ===============
-LongJumpOlympics2016 R Documentation
-==================== ===============
+.. container::
 
-Olympic Men's Long Jump Gold Medal Distance (1900 - 2016)
----------------------------------------------------------
+   ==================== ===============
+   LongJumpOlympics2016 R Documentation
+   ==================== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Olympic Men's Long Jump Gold Medal Distance (1900 - 2016)
+      :name: olympic-mens-long-jump-gold-medal-distance-1900---2016
 
-Gold medal distance for Olympic men's long jump
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Gold medal distance for Olympic men's long jump
 
-A data frame with 28 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-``Year``
-   Olympic Year (1900-2016)
+   A data frame with 28 observations on the following 2 variables.
 
-``Gold``
-   Gold medal distance (in meters)
+   ``Year``
+      Olympic Year (1900-2016)
 
-Details
-~~~~~~~
+   ``Gold``
+      Gold medal distance (in meters)
 
-Gold medal winning distances for the men's long jump at the Olympics
-from 1900 to 2016.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Gold medal winning distances for the men's long jump at the Olympics
+   from 1900 to 2016.
 
-Historical Olympic long jump results at
-http://trackandfield.about.com/od/longjump/qt/olymlongjumpmen.htm
+   .. rubric:: Source
+      :name: source
+
+   Historical Olympic long jump results at
+   http://trackandfield.about.com/od/longjump/qt/olymlongjumpmen.htm

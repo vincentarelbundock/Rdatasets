@@ -1,48 +1,51 @@
-==== ===============
-milk R Documentation
-==== ===============
+.. container::
 
-Milk Sweetness Study
---------------------
+   ==== ===============
+   milk R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Milk Sweetness Study
+      :name: milk-sweetness-study
 
-The ``milk`` data frame has 17 rows and 2 columns. Each of 17 panelists
-compared two milk samples for sweetness.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``milk`` data frame has 17 rows and 2 columns. Each of 17
+   panelists compared two milk samples for sweetness.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   milk
+   ::
 
-Format
-~~~~~~
+      milk
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-four
-   a numeric vector consisting of the assessments for four units of
-   additive
+   This data frame contains the following columns:
 
-one
-   a numeric vector while the is the assessment for one unit of additive
+   four
+      a numeric vector consisting of the assessments for four units of
+      additive
 
-Source
-~~~~~~
+   one
+      a numeric vector while the is the assessment for one unit of
+      additive
 
-J.H. Maindonald
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   J.H. Maindonald
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   print("Rug Plot - Example 1.8.1")
-   xyrange <- range(milk)
-   plot(four ~ one, data = milk, xlim = xyrange, ylim = xyrange, pch = 16)
-   rug(milk$one)
-   rug(milk$four, side = 2)
-   abline(0, 1)
+   ::
+
+      print("Rug Plot - Example 1.8.1")
+      xyrange <- range(milk)
+      plot(four ~ one, data = milk, xlim = xyrange, ylim = xyrange, pch = 16)
+      rug(milk$one)
+      rug(milk$four, side = 2)
+      abline(0, 1)

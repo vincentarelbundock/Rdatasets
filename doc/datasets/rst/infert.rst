@@ -1,71 +1,73 @@
-====== ===============
-infert R Documentation
-====== ===============
+.. container::
 
-Infertility after Spontaneous and Induced Abortion
---------------------------------------------------
+   ====== ===============
+   infert R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Infertility after Spontaneous and Induced Abortion
+      :name: infertility-after-spontaneous-and-induced-abortion
 
-This is a matched case-control study dating from before the availability
-of conditional logistic regression.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This is a matched case-control study dating from before the
+   availability of conditional logistic regression.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   infert
+   ::
 
-Format
-~~~~~~
+      infert
 
-== ===================== ====================
-1. Education             0 = 0-5 years
-\                        1 = 6-11 years
-\                        2 = 12+ years
-2. age                   age in years of case
-3. parity                count
-4. number of prior       0 = 0
-\  induced abortions     1 = 1
-\                        2 = 2 or more
-5. case status           1 = case
-\                        0 = control
-6. number of prior       0 = 0
-\  spontaneous abortions 1 = 1
-\                        2 = 2 or more
-7. matched set number    1-83
-8. stratum number        1-63
-== ===================== ====================
+   .. rubric:: Format
+      :name: format
 
-Note
-~~~~
+   == ===================== ====================
+   1. Education             0 = 0-5 years
+   \                        1 = 6-11 years
+   \                        2 = 12+ years
+   2. age                   age in years of case
+   3. parity                count
+   4. number of prior       0 = 0
+   \  induced abortions     1 = 1
+   \                        2 = 2 or more
+   5. case status           1 = case
+   \                        0 = control
+   6. number of prior       0 = 0
+   \  spontaneous abortions 1 = 1
+   \                        2 = 2 or more
+   7. matched set number    1-83
+   8. stratum number        1-63
+   == ===================== ====================
 
-One case with two prior spontaneous abortions and two prior induced
-abortions is omitted.
+   .. rubric:: Note
+      :name: note
 
-Source
-~~~~~~
+   One case with two prior spontaneous abortions and two prior induced
+   abortions is omitted.
 
-Trichopoulos *et al* (1976) *Br. J. of Obst. and Gynaec.* **83**,
-645–650.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Trichopoulos *et al* (1976) *Br. J. of Obst. and Gynaec.* **83**,
+   645–650.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(stats)
-   model1 <- glm(case ~ spontaneous+induced, data = infert, family = binomial())
-   summary(model1)
-   ## adjusted for other potential confounders:
-   summary(model2 <- glm(case ~ age+parity+education+spontaneous+induced,
-                        data = infert, family = binomial()))
-   ## Really should be analysed by conditional logistic regression
-   ## which is in the survival package
-   if(require(survival)){
-     model3 <- clogit(case ~ spontaneous+induced+strata(stratum), data = infert)
-     print(summary(model3))
-     detach()  # survival (conflicts)
-   }
+   ::
+
+      require(stats)
+      model1 <- glm(case ~ spontaneous+induced, data = infert, family = binomial())
+      summary(model1)
+      ## adjusted for other potential confounders:
+      summary(model2 <- glm(case ~ age+parity+education+spontaneous+induced,
+                           data = infert, family = binomial()))
+      ## Really should be analysed by conditional logistic regression
+      ## which is in the survival package
+      if(require(survival)){
+        model3 <- clogit(case ~ spontaneous+induced+strata(stratum), data = infert)
+        print(summary(model3))
+        detach()  # survival (conflicts)
+      }

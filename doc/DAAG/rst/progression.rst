@@ -1,63 +1,65 @@
-=========== ===============
-progression R Documentation
-=========== ===============
+.. container::
 
-Progression of Record times for track races, 1912 - 2008
---------------------------------------------------------
+   =========== ===============
+   progression R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Progression of Record times for track races, 1912 - 2008
+      :name: progression-of-record-times-for-track-races-1912---2008
 
-Progression in world record times for track and road races.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Progression in world record times for track and road races.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(progression)
+   ::
 
-Format
-~~~~~~
+      data(progression)
 
-A data frame with 227 observations on the following 4 columns.
+   .. rubric:: Format
+      :name: format
 
-``year``
-   Year that time was first recorded
+   A data frame with 227 observations on the following 4 columns.
 
-``Distance``
-   distance in kilometers
+   ``year``
+      Year that time was first recorded
 
-``Time``
-   time in minutes
+   ``Distance``
+      distance in kilometers
 
-``race``
-   character; descriptor for event (100m, mile, ...)
+   ``Time``
+      time in minutes
 
-Details
-~~~~~~~
+   ``race``
+      character; descriptor for event (100m, mile, ...)
 
-Record times for men's track events, from 1912 onwards. The series
-starts with times that were recognized as record times in 1912, where
-available.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Record times for men's track events, from 1912 onwards. The series
+   starts with times that were recognized as record times in 1912, where
+   available.
 
-Links to sources for the data are at
+   .. rubric:: Source
+      :name: source
 
-http://en.wikipedia.org/wiki/Athletics_world_record
+   Links to sources for the data are at
 
-Examples
-~~~~~~~~
+   http://en.wikipedia.org/wiki/Athletics_world_record
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(progression)
-   plot(log(Time) ~ log(Distance), data=progression)
-   xyplot(log(Time) ~ log(Distance), data=progression, type=c("p","r"))
-   xyplot(log(Time) ~ log(Distance), data=progression,
-          type=c("p","smooth"))
-   res <- resid(lm(log(Time) ~ log(Distance), data=progression))
-   plot(res ~ log(Distance), data=progression,
-        ylab="Residuals from regression line on log scales")
+   ::
+
+      data(progression)
+      plot(log(Time) ~ log(Distance), data=progression)
+      xyplot(log(Time) ~ log(Distance), data=progression, type=c("p","r"))
+      xyplot(log(Time) ~ log(Distance), data=progression,
+             type=c("p","smooth"))
+      res <- resid(lm(log(Time) ~ log(Distance), data=progression))
+      plot(res ~ log(Distance), data=progression,
+           ylab="Residuals from regression line on log scales")

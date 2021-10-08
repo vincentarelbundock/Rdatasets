@@ -1,30 +1,32 @@
-======== ===============
-arrivals R Documentation
-======== ===============
+.. container::
 
-International Arrivals to Australia
------------------------------------
+   ======== ===============
+   arrivals R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: International Arrivals to Australia
+      :name: international-arrivals-to-australia
 
-Quarterly international arrivals (in thousands) to Australia from Japan,
-New Zealand, UK and the US. 1981Q1 - 2012Q3.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Quarterly international arrivals (in thousands) to Australia from
+   Japan, New Zealand, UK and the US. 1981Q1 - 2012Q3.
 
-Quarterly time series of class ``ts``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   Quarterly time series of class ``ts``.
 
-Tourism Research Australia.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Tourism Research Australia.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   autoplot(arrivals)
+      autoplot(arrivals)

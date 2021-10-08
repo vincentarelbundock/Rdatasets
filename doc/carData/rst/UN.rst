@@ -1,79 +1,83 @@
-== ===============
-UN R Documentation
-== ===============
+.. container::
 
-National Statistics from the United Nations, Mostly From 2009–2011
-------------------------------------------------------------------
+   == ===============
+   UN R Documentation
+   == ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: National Statistics from the United Nations, Mostly From
+      2009–2011
+      :name: national-statistics-from-the-united-nations-mostly-from-20092011
 
-National health, welfare, and education statistics for 213 places,
-mostly UN members, but also other areas like Hong Kong that are not
-independent countries.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   National health, welfare, and education statistics for 213 places,
+   mostly UN members, but also other areas like Hong Kong that are not
+   independent countries.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(UN)
+   ::
 
-Format
-~~~~~~
+      data(UN)
 
-A data frame with 213 rows on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-``region``
-   Region of the world: ``Africa``, ``Asia``, ``Caribbean``, ``Europe``,
-   ``Latin Amer``, ``North America``, ``NorthAtlantic``, ``Oceania``.
+   A data frame with 213 rows on the following 7 variables.
 
-``group``
-   A factor with levels ``oecd`` for countries that are members of the
-   OECD, the Organization for Economic Co-operation and Development, as
-   of May 2012, ``africa`` for countries on the African continent, and
-   ``other`` for all other countries. No OECD countries are located in
-   Africa.
+   ``region``
+      Region of the world: ``Africa``, ``Asia``, ``Caribbean``,
+      ``Europe``, ``Latin Amer``, ``North America``, ``NorthAtlantic``,
+      ``Oceania``.
 
-``fertility``
-   Total fertility rate, number of children per woman.
+   ``group``
+      A factor with levels ``oecd`` for countries that are members of
+      the OECD, the Organization for Economic Co-operation and
+      Development, as of May 2012, ``africa`` for countries on the
+      African continent, and ``other`` for all other countries. No OECD
+      countries are located in Africa.
 
-``ppgdp``
-   Per capita gross domestic product in US dollars.
+   ``fertility``
+      Total fertility rate, number of children per woman.
 
-``lifeExpF``
-   Female life expectancy, years.
+   ``ppgdp``
+      Per capita gross domestic product in US dollars.
 
-``pctUrban``
-   Percent urban.
+   ``lifeExpF``
+      Female life expectancy, years.
 
-``infantMortality``
-   Infant deaths by age 1 year per 1000 live births
+   ``pctUrban``
+      Percent urban.
 
-Note
-~~~~
+   ``infantMortality``
+      Infant deaths by age 1 year per 1000 live births
 
-Similar data, from the period 2000-2003, appear in the ``alr3`` package
-under the name ``UN3``. This data set was formerly named ``UNlla`` and
-replaces the older dataset named ``UN``.
+   .. rubric:: Note
+      :name: note
 
-Source
-~~~~~~
+   Similar data, from the period 2000-2003, appear in the ``alr3``
+   package under the name ``UN3``. This data set was formerly named
+   ``UNlla`` and replaces the older dataset named ``UN``.
 
-All data were collected from UN tables accessed at
-http://unstats.un.org/unsd/demographic/products/socind/ on April 23,
-2012. OECD membership is from https://www.oecd.org/, accessed May 25,
-2012.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   All data were collected from UN tables accessed at
+   http://unstats.un.org/unsd/demographic/products/socind/ on April 23,
+   2012. OECD membership is from https://www.oecd.org/, accessed May 25,
+   2012.
 
-Weisberg, S. (2014). *Applied Linear Regression*, 4th edition. Hoboken
-NJ: Wiley.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Weisberg, S. (2014). *Applied Linear Regression*, 4th edition.
+   Hoboken NJ: Wiley.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   summary(UN)
+   ::
+
+      summary(UN)

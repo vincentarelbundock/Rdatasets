@@ -1,71 +1,73 @@
-=========== ===============
-TradeCredit R Documentation
-=========== ===============
+.. container::
 
-Trade Credit and the Money Market
----------------------------------
+   =========== ===============
+   TradeCredit R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Trade Credit and the Money Market
+      :name: trade-credit-and-the-money-market
 
-Macroeconomic time series data from 1946 to 1966 on trade credit and the
-money market.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Macroeconomic time series data from 1946 to 1966 on trade credit and
+   the money market.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("TradeCredit")
+   ::
 
-Format
-~~~~~~
+      data("TradeCredit")
 
-An annual multiple time series from 1946 to 1966 on 7 variables.
+   .. rubric:: Format
+      :name: format
 
-trade
-   Nominal total trade money.
+   An annual multiple time series from 1946 to 1966 on 7 variables.
 
-reserve
-   Nominal effective reserve money.
+   trade
+      Nominal total trade money.
 
-gnp
-   GNP in current dollars.
+   reserve
+      Nominal effective reserve money.
 
-utilization
-   Degree of market utilization.
+   gnp
+      GNP in current dollars.
 
-interest
-   Short-term rate of interest.
+   utilization
+      Degree of market utilization.
 
-size
-   Mean real size of the representative economic unit (1939 = 100).
+   interest
+      Short-term rate of interest.
 
-price
-   GNP price deflator (1958 = 100).
+   size
+      Mean real size of the representative economic unit (1939 = 100).
 
-Source
-~~~~~~
+   price
+      GNP price deflator (1958 = 100).
 
-The data are from Baltagi (2002).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The data are from Baltagi (2002).
 
-Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+   .. rubric:: References
+      :name: references
 
-Laffer, A.B. (1970). Trade Credit and the Money Market. *Journal of
-Political Economy*, **78**, 239–267.
+   Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
 
-See Also
-~~~~~~~~
+   Laffer, A.B. (1970). Trade Credit and the Money Market. *Journal of
+   Political Economy*, **78**, 239–267.
 
-``Baltagi2002``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Baltagi2002``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("TradeCredit")
-   plot(TradeCredit)
+   ::
+
+      data("TradeCredit")
+      plot(TradeCredit)

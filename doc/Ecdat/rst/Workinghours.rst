@@ -1,85 +1,87 @@
-============ ===============
-Workinghours R Documentation
-============ ===============
+.. container::
 
-Wife Working Hours
-------------------
+   ============ ===============
+   Workinghours R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Wife Working Hours
+      :name: wife-working-hours
 
-a cross-section from 1987
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 3382
+   a cross-section from 1987
 
-*observation* : individuals
+   *number of observations* : 3382
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Workinghours)
+   ::
 
-Format
-~~~~~~
+      data(Workinghours)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-hours
-   wife working hours per year
+   A dataframe containing :
 
-income
-   the other household income in hundreds of dollars
+   hours
+      wife working hours per year
 
-age
-   age of the wife
+   income
+      the other household income in hundreds of dollars
 
-education
-   education years of the wife
+   age
+      age of the wife
 
-child5
-   number of children for ages 0 to 5
+   education
+      education years of the wife
 
-child13
-   number of children for ages 6 to 13
+   child5
+      number of children for ages 0 to 5
 
-child17
-   number of children for ages 14 to 17
+   child13
+      number of children for ages 6 to 13
 
-nonwhite
-   non–white ?
+   child17
+      number of children for ages 14 to 17
 
-owned
-   is the home owned by the household ?
+   nonwhite
+      non–white ?
 
-mortgage
-   is the home on mortgage ?
+   owned
+      is the home owned by the household ?
 
-occupation
-   occupation of the husband, one of mp (manager or
+   mortgage
+      is the home on mortgage ?
 
-unemp
-   local unemployment rate in %
+   occupation
+      occupation of the husband, one of mp (manager or
 
-Source
-~~~~~~
+   unemp
+      local unemployment rate in %
 
-Lee, Myoung–Jae (1995) “Semi–parametric estimation of simultaneous
-equations with limited dependent variables : a case study of female
-labour supply”, *Journal of Applied Econometrics*, **10(2)**,
-April–June, 187–200.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Lee, Myoung–Jae (1995) “Semi–parametric estimation of simultaneous
+   equations with limited dependent variables : a case study of female
+   labour supply”, *Journal of Applied Econometrics*, **10(2)**,
+   April–June, 187–200.
 
-Journal of Applied Econometrics data archive :
-http://qed.econ.queensu.ca/jae/.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Journal of Applied Econometrics data archive :
+   http://qed.econ.queensu.ca/jae/.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

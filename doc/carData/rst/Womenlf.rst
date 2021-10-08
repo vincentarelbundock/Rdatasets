@@ -1,54 +1,58 @@
-======= ===============
-Womenlf R Documentation
-======= ===============
+.. container::
 
-Canadian Women's Labour-Force Participation
--------------------------------------------
+   ======= ===============
+   Womenlf R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Canadian Women's Labour-Force Participation
+      :name: canadian-womens-labour-force-participation
 
-The ``Womenlf`` data frame has 263 rows and 4 columns. The data are from
-a 1977 survey of the Canadian population.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Womenlf`` data frame has 263 rows and 4 columns. The data are
+   from a 1977 survey of the Canadian population.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Womenlf
+   ::
 
-Format
-~~~~~~
+      Womenlf
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-partic
-   Labour-Force Participation. A factor with levels (note: out of
-   order): ``fulltime``, Working full-time; ``not.work``, Not working
-   outside the home; ``parttime``, Working part-time.
+   This data frame contains the following columns:
 
-hincome
-   Husband's income, $1000s.
+   partic
+      Labour-Force Participation. A factor with levels (note: out of
+      order): ``fulltime``, Working full-time; ``not.work``, Not working
+      outside the home; ``parttime``, Working part-time.
 
-children
-   Presence of children in the household. A factor with levels:
-   ``absent``, ``present``.
+   hincome
+      Husband's income, $1000s.
 
-region
-   A factor with levels: ``Atlantic``, Atlantic Canada; ``BC``, British
-   Columbia; ``Ontario``; ``Prairie``, Prairie provinces; ``Quebec``.
+   children
+      Presence of children in the household. A factor with levels:
+      ``absent``, ``present``.
 
-Source
-~~~~~~
+   region
+      A factor with levels: ``Atlantic``, Atlantic Canada; ``BC``,
+      British Columbia; ``Ontario``; ``Prairie``, Prairie provinces;
+      ``Quebec``.
 
-*Social Change in Canada Project.* York Institute for Social Research.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   *Social Change in Canada Project.* York Institute for Social
+   Research.
 
-Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-Models*, Third Edition. Sage.
+   .. rubric:: References
+      :name: references
 
-Fox, J. and Weisberg, S. (2019) *An R Companion to Applied Regression*,
-Third Edition, Sage.
+   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+   Models*, Third Edition. Sage.
+
+   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+   Regression*, Third Edition, Sage.

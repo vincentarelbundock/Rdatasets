@@ -1,45 +1,47 @@
-======= ===============
-islands R Documentation
-======= ===============
+.. container::
 
-Areas of the World's Major Landmasses
--------------------------------------
+   ======= ===============
+   islands R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Areas of the World's Major Landmasses
+      :name: areas-of-the-worlds-major-landmasses
 
-The areas in thousands of square miles of the landmasses which exceed
-10,000 square miles.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The areas in thousands of square miles of the landmasses which exceed
+   10,000 square miles.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   islands
+   ::
 
-Format
-~~~~~~
+      islands
 
-A named vector of length 48.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A named vector of length 48.
 
-The World Almanac and Book of Facts, 1975, page 406.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The World Almanac and Book of Facts, 1975, page 406.
 
-McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(graphics)
-   dotchart(log(islands, 10),
-      main = "islands data: log10(area) (log10(sq. miles))")
-   dotchart(log(islands[order(islands)], 10),
-      main = "islands data: log10(area) (log10(sq. miles))")
+   ::
+
+      require(graphics)
+      dotchart(log(islands, 10),
+         main = "islands data: log10(area) (log10(sq. miles))")
+      dotchart(log(islands[order(islands)], 10),
+         main = "islands data: log10(area) (log10(sq. miles))")

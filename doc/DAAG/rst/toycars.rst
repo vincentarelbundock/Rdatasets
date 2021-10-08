@@ -1,43 +1,45 @@
-======= ===============
-toycars R Documentation
-======= ===============
+.. container::
 
-Toy Cars Data
--------------
+   ======= ===============
+   toycars R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Toy Cars Data
+      :name: toy-cars-data
 
-The ``toycars`` data frame has 27 rows and 3 columns. Observations are
-on the distance traveled by one of three different toy cars on a smooth
-surface, starting from rest at the top of a 16 inch long ramp tilted at
-varying angles.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``toycars`` data frame has 27 rows and 3 columns. Observations
+   are on the distance traveled by one of three different toy cars on a
+   smooth surface, starting from rest at the top of a 16 inch long ramp
+   tilted at varying angles.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   toycars
+   ::
 
-Format
-~~~~~~
+      toycars
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-angle
-   tilt of ramp, in degrees
+   This data frame contains the following columns:
 
-distance
-   distance traveled, in meters
+   angle
+      tilt of ramp, in degrees
 
-car
-   a numeric code (1 = first car, 2 = second car, 3 = third car)
+   distance
+      distance traveled, in meters
 
-Examples
-~~~~~~~~
+   car
+      a numeric code (1 = first car, 2 = second car, 3 = third car)
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   toycars.lm <- lm(distance ~ angle + factor(car), data=toycars)
-   summary(toycars.lm)
+   ::
+
+      toycars.lm <- lm(distance ~ angle + factor(car), data=toycars)
+      summary(toycars.lm)

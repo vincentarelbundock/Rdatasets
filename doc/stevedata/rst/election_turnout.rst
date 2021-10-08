@@ -1,80 +1,82 @@
-================ ===============
-election_turnout R Documentation
-================ ===============
+.. container::
 
-State-Level Education and Voter Turnout in 2016
------------------------------------------------
+   ================ ===============
+   election_turnout R Documentation
+   ================ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: State-Level Education and Voter Turnout in 2016
+      :name: state-level-education-and-voter-turnout-in-2016
 
-A simple data set on education and state-level (+ DC) turnout in the
-2016 presidential election. This is inspired by what Pollock (2012) does
-in his book.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A simple data set on education and state-level (+ DC) turnout in the
+   2016 presidential election. This is inspired by what Pollock (2012)
+   does in his book.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   election_turnout
+   ::
 
-Format
-~~~~~~
+      election_turnout
 
-A data frame with 51 observations on the following 13 variables.
+   .. rubric:: Format
+      :name: format
 
-``year``
-   the year of the presidential election (2016)
+   A data frame with 51 observations on the following 13 variables.
 
-``state``
-   the state abbreviation
+   ``year``
+      the year of the presidential election (2016)
 
-``region``
-   the state's Census region
+   ``state``
+      the state abbreviation
 
-``division``
-   the state's Census division
+   ``region``
+      the state's Census region
 
-``turnoutho``
-   voter turnout for the highest office as percent of voting-eligible
-   population (VEP)
+   ``division``
+      the state's Census division
 
-``perhsed``
-   the percentage of the state that completed high school
+   ``turnoutho``
+      voter turnout for the highest office as percent of voting-eligible
+      population (VEP)
 
-``percoled``
-   the percentage of the state that completed college
+   ``perhsed``
+      the percentage of the state that completed high school
 
-``gdppercap``
-   an estimate of the state's GDP per capita
+   ``percoled``
+      the percentage of the state that completed college
 
-``ss``
-   is it a “swing state?”
+   ``gdppercap``
+      an estimate of the state's GDP per capita
 
-``trumpw``
-   did Trump win the state?
+   ``ss``
+      is it a “swing state?”
 
-``trumpshare``
-   the share of the vote Trump received
+   ``trumpw``
+      did Trump win the state?
 
-``sunempr``
-   the state-level unemployment rate entering Nov. 2016
+   ``trumpshare``
+      the share of the vote Trump received
 
-``sunempr12md``
-   the state-level unemployment rate (12-month difference) entering Nov.
-   2016
+   ``sunempr``
+      the state-level unemployment rate entering Nov. 2016
 
-``gdp``
-   an estimate of the state's GDP
+   ``sunempr12md``
+      the state-level unemployment rate (12-month difference) entering
+      Nov. 2016
 
-Details
-~~~~~~~
+   ``gdp``
+      an estimate of the state's GDP
 
-Data were created in early 2017 for an upper-division course on
-quantitative methods. Educational attainment and division/region data
-come from the Census. Voter turnout/share data come from the Elections
-Project at George Mason University. GDP per capita estimates come from
-Bureau of Economic Analysis. Unemployment data come from the Bureau of
-Labor Statistics and code to generate it was derived from a forthcoming
-publication of mine.
+   .. rubric:: Details
+      :name: details
+
+   Data were created in early 2017 for an upper-division course on
+   quantitative methods. Educational attainment and division/region data
+   come from the Census. Voter turnout/share data come from the
+   Elections Project at George Mason University. GDP per capita
+   estimates come from Bureau of Economic Analysis. Unemployment data
+   come from the Bureau of Labor Statistics and code to generate it was
+   derived from a forthcoming publication of mine.

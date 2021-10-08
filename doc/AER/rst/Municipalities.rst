@@ -1,84 +1,86 @@
-============== ===============
-Municipalities R Documentation
-============== ===============
+.. container::
 
-Municipal Expenditure Data
---------------------------
+   ============== ===============
+   Municipalities R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Municipal Expenditure Data
+      :name: municipal-expenditure-data
 
-Panel data set for 265 Swedish municipalities covering 9 years
-(1979-1987).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Panel data set for 265 Swedish municipalities covering 9 years
+   (1979-1987).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("Municipalities")
+   ::
 
-Format
-~~~~~~
+      data("Municipalities")
 
-A data frame containing 2,385 observations on 5 variables.
+   .. rubric:: Format
+      :name: format
 
-municipality
-   factor with ID number for municipality.
+   A data frame containing 2,385 observations on 5 variables.
 
-year
-   factor coding year.
+   municipality
+      factor with ID number for municipality.
 
-expenditures
-   total expenditures.
+   year
+      factor coding year.
 
-revenues
-   total own-source revenues.
+   expenditures
+      total expenditures.
 
-grants
-   intergovernmental grants received by the municipality.
+   revenues
+      total own-source revenues.
 
-Details
-~~~~~~~
+   grants
+      intergovernmental grants received by the municipality.
 
-Total expenditures contains both capital and current expenditures.
+   .. rubric:: Details
+      :name: details
 
-Expenditures, revenues, and grants are expressed in million SEK. The
-series are deflated and in per capita form. The implicit deflator is a
-municipality-specific price index obtained by dividing total local
-consumption expenditures at current prices by total local consumption
-expenditures at fixed (1985) prices.
+   Total expenditures contains both capital and current expenditures.
 
-The data are gathered by Statistics Sweden and obtained from Financial
-Accounts for the Municipalities (Kommunernas Finanser).
+   Expenditures, revenues, and grants are expressed in million SEK. The
+   series are deflated and in per capita form. The implicit deflator is
+   a municipality-specific price index obtained by dividing total local
+   consumption expenditures at current prices by total local consumption
+   expenditures at fixed (1985) prices.
 
-Source
-~~~~~~
+   The data are gathered by Statistics Sweden and obtained from
+   Financial Accounts for the Municipalities (Kommunernas Finanser).
 
-Journal of Applied Econometrics Data Archive.
+   .. rubric:: Source
+      :name: source
 
-http://qed.econ.queensu.ca/jae/2000-v15.4/dahlberg-johansson/
+   Journal of Applied Econometrics Data Archive.
 
-References
-~~~~~~~~~~
+   http://qed.econ.queensu.ca/jae/2000-v15.4/dahlberg-johansson/
 
-Dahlberg, M., and Johansson, E. (2000). An Examination of the Dynamic
-Behavior of Local Governments Using GMM Bootstrapping Methods. *Journal
-of Applied Econometrics*, **15**, 401–416.
+   .. rubric:: References
+      :name: references
 
-Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper Saddle
-River, NJ: Prentice Hall.
+   Dahlberg, M., and Johansson, E. (2000). An Examination of the Dynamic
+   Behavior of Local Governments Using GMM Bootstrapping Methods.
+   *Journal of Applied Econometrics*, **15**, 401–416.
 
-See Also
-~~~~~~~~
+   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+   Saddle River, NJ: Prentice Hall.
 
-``Greene2003``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Greene2003``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## Greene (2003), Table 18.2
-   data("Municipalities")
-   summary(Municipalities)
+   ::
+
+      ## Greene (2003), Table 18.2
+      data("Municipalities")
+      summary(Municipalities)

@@ -1,80 +1,83 @@
-======== ===============
-melanoma R Documentation
-======== ===============
+.. container::
 
-Survival from Malignant Melanoma
---------------------------------
+   ======== ===============
+   melanoma R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Survival from Malignant Melanoma
+      :name: survival-from-malignant-melanoma
 
-The ``melanoma`` data frame has 205 rows and 7 columns.
+   .. rubric:: Description
+      :name: description
 
-The data consist of measurements made on patients with malignant
-melanoma. Each patient had their tumour removed by surgery at the
-Department of Plastic Surgery, University Hospital of Odense, Denmark
-during the period 1962 to 1977. The surgery consisted of complete
-removal of the tumour together with about 2.5cm of the surrounding skin.
-Among the measurements taken were the thickness of the tumour and
-whether it was ulcerated or not. These are thought to be important
-prognostic variables in that patients with a thick and/or ulcerated
-tumour have an increased chance of death from melanoma. Patients were
-followed until the end of 1977.
+   The ``melanoma`` data frame has 205 rows and 7 columns.
 
-Usage
-~~~~~
+   The data consist of measurements made on patients with malignant
+   melanoma. Each patient had their tumour removed by surgery at the
+   Department of Plastic Surgery, University Hospital of Odense, Denmark
+   during the period 1962 to 1977. The surgery consisted of complete
+   removal of the tumour together with about 2.5cm of the surrounding
+   skin. Among the measurements taken were the thickness of the tumour
+   and whether it was ulcerated or not. These are thought to be
+   important prognostic variables in that patients with a thick and/or
+   ulcerated tumour have an increased chance of death from melanoma.
+   Patients were followed until the end of 1977.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   melanoma
+   ::
 
-Format
-~~~~~~
+      melanoma
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``time``
-   Survival time in days since the operation, possibly censored.
+   This data frame contains the following columns:
 
-``status``
-   The patients status at the end of the study. 1 indicates that they
-   had died from melanoma, 2 indicates that they were still alive and 3
-   indicates that they had died from causes unrelated to their melanoma.
+   ``time``
+      Survival time in days since the operation, possibly censored.
 
-``sex``
-   The patients sex; 1=male, 0=female.
+   ``status``
+      The patients status at the end of the study. 1 indicates that they
+      had died from melanoma, 2 indicates that they were still alive and
+      3 indicates that they had died from causes unrelated to their
+      melanoma.
 
-``age``
-   Age in years at the time of the operation.
+   ``sex``
+      The patients sex; 1=male, 0=female.
 
-``year``
-   Year of operation.
+   ``age``
+      Age in years at the time of the operation.
 
-``thickness``
-   Tumour thickness in mm.
+   ``year``
+      Year of operation.
 
-``ulcer``
-   Indicator of ulceration; 1=present, 0=absent.
+   ``thickness``
+      Tumour thickness in mm.
 
-Note
-~~~~
+   ``ulcer``
+      Indicator of ulceration; 1=present, 0=absent.
 
-This dataset is not related to the dataset in the lattice package with
-the same name.
+   .. rubric:: Note
+      :name: note
 
-Source
-~~~~~~
+   This dataset is not related to the dataset in the lattice package
+   with the same name.
 
-The data were obtained from
+   .. rubric:: Source
+      :name: source
 
-Andersen, P.K., Borgan, O., Gill, R.D. and Keiding, N. (1993)
-*Statistical Models Based on Counting Processes*. Springer-Verlag.
+   The data were obtained from
 
-References
-~~~~~~~~~~
+   Andersen, P.K., Borgan, O., Gill, R.D. and Keiding, N. (1993)
+   *Statistical Models Based on Counting Processes*. Springer-Verlag.
 
-Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-Application*. Cambridge University Press.
+   .. rubric:: References
+      :name: references
 
-Venables, W.N. and Ripley, B.D. (1994) *Modern Applied Statistics with
-S-Plus*. Springer-Verlag.
+   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
+   Application*. Cambridge University Press.
+
+   Venables, W.N. and Ripley, B.D. (1994) *Modern Applied Statistics
+   with S-Plus*. Springer-Verlag.

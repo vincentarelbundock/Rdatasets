@@ -1,58 +1,60 @@
-==== ===============
-goog R Documentation
-==== ===============
+.. container::
 
-Google stock data
------------------
+   ==== ===============
+   goog R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Google stock data
+      :name: google-stock-data
 
-Google stock data from 2006 to early 2014, where data from the first day
-each month was collected.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Google stock data from 2006 to early 2014, where data from the first
+   day each month was collected.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   goog
+   ::
 
-Format
-~~~~~~
+      goog
 
-A data frame with 98 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-date
-   a factor with levels ``2006-01-03``, ``2006-02-01``, and so on
+   A data frame with 98 observations on the following 7 variables.
 
-open
-   a numeric vector
+   date
+      a factor with levels ``2006-01-03``, ``2006-02-01``, and so on
 
-high
-   a numeric vector
+   open
+      a numeric vector
 
-low
-   a numeric vector
+   high
+      a numeric vector
 
-close
-   a numeric vector
+   low
+      a numeric vector
 
-volume
-   a numeric vector
+   close
+      a numeric vector
 
-adj_close
-   a numeric vector
+   volume
+      a numeric vector
 
-Source
-~~~~~~
+   adj_close
+      a numeric vector
 
-Yahoo! Finance.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Yahoo! Finance.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   goog
+      goog

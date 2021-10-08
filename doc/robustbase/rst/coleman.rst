@@ -1,72 +1,74 @@
-======= ===============
-coleman R Documentation
-======= ===============
+.. container::
 
-Coleman Data Set
-----------------
+   ======= ===============
+   coleman R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Coleman Data Set
+      :name: coleman-data-set
 
-Contains information on 20 Schools from the Mid-Atlantic and New England
-States, drawn from a population studied by Coleman et al. (1966).
-Mosteller and Tukey (1977) analyze this sample consisting of
-measurements on six different variables, one of which will be treated as
-a responce.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Contains information on 20 Schools from the Mid-Atlantic and New
+   England States, drawn from a population studied by Coleman et al.
+   (1966). Mosteller and Tukey (1977) analyze this sample consisting of
+   measurements on six different variables, one of which will be treated
+   as a responce.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(coleman, package="robustbase")
+   ::
 
-Format
-~~~~~~
+      data(coleman, package="robustbase")
 
-A data frame with 20 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``salaryP``
-   staff salaries per pupil
+   A data frame with 20 observations on the following 6 variables.
 
-``fatherWc``
-   percent of white-collar fathers
+   ``salaryP``
+      staff salaries per pupil
 
-``sstatus``
-   socioeconomic status composite deviation: means for family size,
-   family intactness, father's education, mother's education, and home
-   items
+   ``fatherWc``
+      percent of white-collar fathers
 
-``teacherSc``
-   mean teacher's verbal test score
+   ``sstatus``
+      socioeconomic status composite deviation: means for family size,
+      family intactness, father's education, mother's education, and
+      home items
 
-``motherLev``
-   mean mother's educational level, one unit is equal to two school
-   years
+   ``teacherSc``
+      mean teacher's verbal test score
 
-``Y``
-   verbal mean test score (y, all sixth graders)
+   ``motherLev``
+      mean mother's educational level, one unit is equal to two school
+      years
 
-Author(s)
-~~~~~~~~~
+   ``Y``
+      verbal mean test score (y, all sixth graders)
 
-Valentin Todorov
+   .. rubric:: Author(s)
+      :name: authors
 
-Source
-~~~~~~
+   Valentin Todorov
 
-P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
-Detection* Wiley, p.79, table 2.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
+   Detection* Wiley, p.79, table 2.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(coleman)
-   pairs(coleman)
-   summary( lm.coleman <-     lm(Y ~ . , data = coleman))
-   summary(lts.coleman <- ltsReg(Y ~ . , data = coleman))
+   ::
 
-   coleman.x <- data.matrix(coleman[, 1:6])
-   (Cc <- covMcd(coleman.x))
+      data(coleman)
+      pairs(coleman)
+      summary( lm.coleman <-     lm(Y ~ . , data = coleman))
+      summary(lts.coleman <- ltsReg(Y ~ . , data = coleman))
+
+      coleman.x <- data.matrix(coleman[, 1:6])
+      (Cc <- covMcd(coleman.x))

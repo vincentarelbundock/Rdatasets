@@ -1,73 +1,75 @@
-====== ===============
-S.alba R Documentation
-====== ===============
+.. container::
 
-Potency of two herbicides
--------------------------
+   ====== ===============
+   S.alba R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Potency of two herbicides
+      :name: potency-of-two-herbicides
 
-Data are from an experiment, comparing the potency of the two herbicides
-glyphosate and bentazone in white mustard *Sinapis alba*.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data are from an experiment, comparing the potency of the two
+   herbicides glyphosate and bentazone in white mustard *Sinapis alba*.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(S.alba)
+   ::
 
-Format
-~~~~~~
+      data(S.alba)
 
-A data frame with 68 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``Dose``
-   a numeric vector containing the dose in g/ha.
+   A data frame with 68 observations on the following 3 variables.
 
-``Herbicide``
-   a factor with levels ``Bentazone`` ``Glyphosate`` (the two herbicides
-   applied).
+   ``Dose``
+      a numeric vector containing the dose in g/ha.
 
-``DryMatter``
-   a numeric vector containing the response (dry matter in g/pot).
+   ``Herbicide``
+      a factor with levels ``Bentazone`` ``Glyphosate`` (the two
+      herbicides applied).
 
-Details
-~~~~~~~
+   ``DryMatter``
+      a numeric vector containing the response (dry matter in g/pot).
 
-The lower and upper limits for the two herbicides can be assumed
-identical, whereas slopes and ED50 values are different (in the
-log-logistic model).
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The lower and upper limits for the two herbicides can be assumed
+   identical, whereas slopes and ED50 values are different (in the
+   log-logistic model).
 
-Christensen, M. G. and Teicher, H. B., and Streibig, J. C. (2003)
-Linking fluorescence induction curve and biomass in herbicide screening,
-*Pest Management Science*, **59**, 1303–1310.
+   .. rubric:: Source
+      :name: source
 
-See Also
-~~~~~~~~
+   Christensen, M. G. and Teicher, H. B., and Streibig, J. C. (2003)
+   Linking fluorescence induction curve and biomass in herbicide
+   screening, *Pest Management Science*, **59**, 1303–1310.
 
-See the examples sections for ``drm`` and ``EDcomp``.
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   See the examples sections for ``drm`` and ``EDcomp``.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   ## Fitting a log-logistic model with
-   ##  common lower and upper limits
-   S.alba.LL.4.1 <- drm(DryMatter~Dose, Herbicide, data=S.alba, fct = LL.4(),
-   pmodels=data.frame(Herbicide,1,1,Herbicide)) 
-   summary(S.alba.LL.4.1)
+      ## Fitting a log-logistic model with
+      ##  common lower and upper limits
+      S.alba.LL.4.1 <- drm(DryMatter~Dose, Herbicide, data=S.alba, fct = LL.4(),
+      pmodels=data.frame(Herbicide,1,1,Herbicide)) 
+      summary(S.alba.LL.4.1)
 
-   ## Applying the optimal transform-both-sides Box-Cox transformation
-   ## (using the initial model fit)  
-   S.alba.LL.4.2 <- boxcox(S.alba.LL.4.1, method = "anova") 
-   summary(S.alba.LL.4.2)
+      ## Applying the optimal transform-both-sides Box-Cox transformation
+      ## (using the initial model fit)  
+      S.alba.LL.4.2 <- boxcox(S.alba.LL.4.1, method = "anova") 
+      summary(S.alba.LL.4.2)
 
-   ## Plotting fitted regression curves together with the data
-   plot(S.alba.LL.4.2)
+      ## Plotting fitted regression curves together with the data
+      plot(S.alba.LL.4.2)

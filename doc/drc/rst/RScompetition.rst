@@ -1,58 +1,62 @@
-============= ===============
-RScompetition R Documentation
-============= ===============
+.. container::
 
-Competition between two biotypes
---------------------------------
+   ============= ===============
+   RScompetition R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Competition between two biotypes
+      :name: competition-between-two-biotypes
 
-To assess the competitive ability between two biotypes of *Lolium
-rigidum*, one resistant to glyphosate and the other a sensitive wild
-type, the density of resistant and sensitive biotypes was counted after
-germination.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   To assess the competitive ability between two biotypes of *Lolium
+   rigidum*, one resistant to glyphosate and the other a sensitive wild
+   type, the density of resistant and sensitive biotypes was counted
+   after germination.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(RScompetition)
+   ::
 
-Format
-~~~~~~
+      data(RScompetition)
 
-A data frame with 49 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``z``
-   a numeric vector with densities of the resistant biotype (plants/m2)
+   A data frame with 49 observations on the following 3 variables.
 
-``x``
-   a numeric vector with densities of the sensitive biotype (plants/m2)
+   ``z``
+      a numeric vector with densities of the resistant biotype
+      (plants/m2)
 
-``biomass``
-   a numeric vector of biomass weight (g/plant)
+   ``x``
+      a numeric vector with densities of the sensitive biotype
+      (plants/m2)
 
-Details
-~~~~~~~
+   ``biomass``
+      a numeric vector of biomass weight (g/plant)
 
-A hyperbolic model (Jensen, 1993) is describing the data reasonably
-well.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   A hyperbolic model (Jensen, 1993) is describing the data reasonably
+   well.
 
-The dataset is from Pedersen et al (2007).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The dataset is from Pedersen et al (2007).
 
-Jensen, J. E. (1993) Fitness of herbicide-resistant weed biotypes
-described by competition models, *Proceedings of the 8th EWRS Symposium,
-14-16 June, Braunschweig, Germany*, **1**, 25–32.
+   .. rubric:: References
+      :name: references
 
-Pedersen, B. P. and Neve, P. and Andreasen, C. and Powles, S. (2007)
-Ecological fitness of a glyphosate resistant *Lolium rigidum*
-population: Growth and seed production along a competition gradient,
-*Basic and Applied Ecology*, **8**, 258–268.
+   Jensen, J. E. (1993) Fitness of herbicide-resistant weed biotypes
+   described by competition models, *Proceedings of the 8th EWRS
+   Symposium, 14-16 June, Braunschweig, Germany*, **1**, 25–32.
+
+   Pedersen, B. P. and Neve, P. and Andreasen, C. and Powles, S. (2007)
+   Ecological fitness of a glyphosate resistant *Lolium rigidum*
+   population: Growth and seed production along a competition gradient,
+   *Basic and Applied Ecology*, **8**, 258–268.

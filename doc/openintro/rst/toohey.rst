@@ -1,34 +1,36 @@
-====== ===============
-toohey R Documentation
-====== ===============
+.. container::
 
-Simulated polling data set
---------------------------
+   ====== ===============
+   toohey R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Simulated polling data set
+      :name: simulated-polling-data-set
 
-Simulated data for a fake political candidate.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Simulated data for a fake political candidate.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   toohey
+   ::
 
-Format
-~~~~~~
+      toohey
 
-A data frame with 500 observations on the following variable.
+   .. rubric:: Format
+      :name: format
 
-vote_for
-   a factor with levels ``no`` ``yes``
+   A data frame with 500 observations on the following variable.
 
-Examples
-~~~~~~~~
+   vote_for
+      a factor with levels ``no`` ``yes``
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   toohey
+      toohey

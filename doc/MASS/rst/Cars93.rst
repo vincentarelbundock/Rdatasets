@@ -1,132 +1,135 @@
-====== ===============
-Cars93 R Documentation
-====== ===============
+.. container::
 
-Data from 93 Cars on Sale in the USA in 1993
---------------------------------------------
+   ====== ===============
+   Cars93 R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from 93 Cars on Sale in the USA in 1993
+      :name: data-from-93-cars-on-sale-in-the-usa-in-1993
 
-The ``Cars93`` data frame has 93 rows and 27 columns.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Cars93`` data frame has 93 rows and 27 columns.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Cars93
+   ::
 
-Format
-~~~~~~
+      Cars93
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``Manufacturer``
-   Manufacturer.
+   This data frame contains the following columns:
 
-``Model``
-   Model.
+   ``Manufacturer``
+      Manufacturer.
 
-``Type``
-   Type: a factor with levels ``"Small"``, ``"Sporty"``, ``"Compact"``,
-   ``"Midsize"``, ``"Large"`` and ``"Van"``.
+   ``Model``
+      Model.
 
-``Min.Price``
-   Minimum Price (in \\$1,000): price for a basic version.
+   ``Type``
+      Type: a factor with levels ``"Small"``, ``"Sporty"``,
+      ``"Compact"``, ``"Midsize"``, ``"Large"`` and ``"Van"``.
 
-``Price``
-   Midrange Price (in \\$1,000): average of ``Min.Price`` and
-   ``Max.Price``.
+   ``Min.Price``
+      Minimum Price (in \\$1,000): price for a basic version.
 
-``Max.Price``
-   Maximum Price (in \\$1,000): price for “a premium version”.
+   ``Price``
+      Midrange Price (in \\$1,000): average of ``Min.Price`` and
+      ``Max.Price``.
 
-``MPG.city``
-   City MPG (miles per US gallon by EPA rating).
+   ``Max.Price``
+      Maximum Price (in \\$1,000): price for “a premium version”.
 
-``MPG.highway``
-   Highway MPG.
+   ``MPG.city``
+      City MPG (miles per US gallon by EPA rating).
 
-``AirBags``
-   Air Bags standard. Factor: none, driver only, or driver & passenger.
+   ``MPG.highway``
+      Highway MPG.
 
-``DriveTrain``
-   Drive train type: rear wheel, front wheel or 4WD; (factor).
+   ``AirBags``
+      Air Bags standard. Factor: none, driver only, or driver &
+      passenger.
 
-``Cylinders``
-   Number of cylinders (missing for Mazda RX-7, which has a rotary
-   engine).
+   ``DriveTrain``
+      Drive train type: rear wheel, front wheel or 4WD; (factor).
 
-``EngineSize``
-   Engine size (litres).
+   ``Cylinders``
+      Number of cylinders (missing for Mazda RX-7, which has a rotary
+      engine).
 
-``Horsepower``
-   Horsepower (maximum).
+   ``EngineSize``
+      Engine size (litres).
 
-``RPM``
-   RPM (revs per minute at maximum horsepower).
+   ``Horsepower``
+      Horsepower (maximum).
 
-``Rev.per.mile``
-   Engine revolutions per mile (in highest gear).
+   ``RPM``
+      RPM (revs per minute at maximum horsepower).
 
-``Man.trans.avail``
-   Is a manual transmission version available? (yes or no, Factor).
+   ``Rev.per.mile``
+      Engine revolutions per mile (in highest gear).
 
-``Fuel.tank.capacity``
-   Fuel tank capacity (US gallons).
+   ``Man.trans.avail``
+      Is a manual transmission version available? (yes or no, Factor).
 
-``Passengers``
-   Passenger capacity (persons)
+   ``Fuel.tank.capacity``
+      Fuel tank capacity (US gallons).
 
-``Length``
-   Length (inches).
+   ``Passengers``
+      Passenger capacity (persons)
 
-``Wheelbase``
-   Wheelbase (inches).
+   ``Length``
+      Length (inches).
 
-``Width``
-   Width (inches).
+   ``Wheelbase``
+      Wheelbase (inches).
 
-``Turn.circle``
-   U-turn space (feet).
+   ``Width``
+      Width (inches).
 
-``Rear.seat.room``
-   Rear seat room (inches) (missing for 2-seater vehicles).
+   ``Turn.circle``
+      U-turn space (feet).
 
-``Luggage.room``
-   Luggage capacity (cubic feet) (missing for vans).
+   ``Rear.seat.room``
+      Rear seat room (inches) (missing for 2-seater vehicles).
 
-``Weight``
-   Weight (pounds).
+   ``Luggage.room``
+      Luggage capacity (cubic feet) (missing for vans).
 
-``Origin``
-   Of non-USA or USA company origins? (factor).
+   ``Weight``
+      Weight (pounds).
 
-``Make``
-   Combination of Manufacturer and Model (character).
+   ``Origin``
+      Of non-USA or USA company origins? (factor).
 
-Details
-~~~~~~~
+   ``Make``
+      Combination of Manufacturer and Model (character).
 
-Cars were selected at random from among 1993 passenger car models that
-were listed in both the *Consumer Reports* issue and the *PACE Buying
-Guide*. Pickup trucks and Sport/Utility vehicles were eliminated due to
-incomplete information in the *Consumer Reports* source. Duplicate
-models (e.g., Dodge Shadow and Plymouth Sundance) were listed at most
-once.
+   .. rubric:: Details
+      :name: details
 
-Further description can be found in Lock (1993).
+   Cars were selected at random from among 1993 passenger car models
+   that were listed in both the *Consumer Reports* issue and the *PACE
+   Buying Guide*. Pickup trucks and Sport/Utility vehicles were
+   eliminated due to incomplete information in the *Consumer Reports*
+   source. Duplicate models (e.g., Dodge Shadow and Plymouth Sundance)
+   were listed at most once.
 
-Source
-~~~~~~
+   Further description can be found in Lock (1993).
 
-Lock, R. H. (1993) 1993 New Car Data. *Journal of Statistics Education*
-**1**\ (1). doi:
-`10.1080/10691898.1993.11910459 <https://doi.org/10.1080/10691898.1993.11910459>`__
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Lock, R. H. (1993) 1993 New Car Data. *Journal of Statistics
+   Education* **1**\ (1). doi:
+   `10.1080/10691898.1993.11910459 <https://doi.org/10.1080/10691898.1993.11910459>`__
 
-Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics with
-S-PLUS.* Third Edition. Springer.
+   .. rubric:: References
+      :name: references
+
+   Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics
+   with S-PLUS.* Third Edition. Springer.

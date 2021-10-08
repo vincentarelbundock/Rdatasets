@@ -1,47 +1,49 @@
-====== ===============
-CanPop R Documentation
-====== ===============
+.. container::
 
-Canadian Population Data
-------------------------
+   ====== ===============
+   CanPop R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Canadian Population Data
+      :name: canadian-population-data
 
-The ``CanPop`` data frame has 16 rows and 2 columns. Decennial
-time-series of Canadian population, 1851–2001.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``CanPop`` data frame has 16 rows and 2 columns. Decennial
+   time-series of Canadian population, 1851–2001.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   CanPop
+   ::
 
-Format
-~~~~~~
+      CanPop
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-year
-   census year.
+   This data frame contains the following columns:
 
-population
-   Population, in millions
+   year
+      census year.
 
-Source
-~~~~~~
+   population
+      Population, in millions
 
-Urquhart, M. C. and Buckley, K. A. H. (Eds.) (1965) *Historical
-Statistics of Canada*. Macmillan, p. 1369.
+   .. rubric:: Source
+      :name: source
 
-Canada (1994) *Canada Year Book*. Statistics Canada, Table 3.2.
+   Urquhart, M. C. and Buckley, K. A. H. (Eds.) (1965) *Historical
+   Statistics of Canada*. Macmillan, p. 1369.
 
-Statistics Canada:
-http://www12.statcan.ca/english/census01/products/standard/popdwell/Table-PR.cfm.
+   Canada (1994) *Canada Year Book*. Statistics Canada, Table 3.2.
 
-References
-~~~~~~~~~~
+   Statistics Canada:
+   http://www12.statcan.ca/english/census01/products/standard/popdwell/Table-PR.cfm.
 
-Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-Models*, Third Edition. Sage.
+   .. rubric:: References
+      :name: references
+
+   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+   Models*, Third Edition. Sage.

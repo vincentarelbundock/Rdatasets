@@ -1,62 +1,64 @@
-============== ===============
-husbands_wives R Documentation
-============== ===============
+.. container::
 
-Great Britain: husband and wife pairs
--------------------------------------
+   ============== ===============
+   husbands_wives R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Great Britain: husband and wife pairs
+      :name: great-britain-husband-and-wife-pairs
 
-The Great Britain Office of Population Census and Surveys once collected
-data on a random sample of 170 married couples in Britain, recording the
-age (in years) and heights of the husbands and wives.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The Great Britain Office of Population Census and Surveys once
+   collected data on a random sample of 170 married couples in Britain,
+   recording the age (in years) and heights of the husbands and wives.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   husbands_wives
+   ::
 
-Format
-~~~~~~
+      husbands_wives
 
-A data frame with 199 observations on the following 8 variables.
+   .. rubric:: Format
+      :name: format
 
-age_husband
-   Age of husband.
+   A data frame with 199 observations on the following 8 variables.
 
-age_wife
-   Age of wife.
+   age_husband
+      Age of husband.
 
-ht_husband
-   Height of husband (mm).
+   age_wife
+      Age of wife.
 
-ht_wife
-   Height of wife (mm).
+   ht_husband
+      Height of husband (mm).
 
-age_husb_at_marriage
-   Age of husband at the time they married.
+   ht_wife
+      Height of wife (mm).
 
-age_wife_at_marriage
-   Age of wife at the time they married.
+   age_husb_at_marriage
+      Age of husband at the time they married.
 
-years_married
-   Number of years married.
+   age_wife_at_marriage
+      Age of wife at the time they married.
 
-Source
-~~~~~~
+   years_married
+      Number of years married.
 
-Hand DJ. 1994. A handbook of small data sets. Chapman & Hall/CRC.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Hand DJ. 1994. A handbook of small data sets. Chapman & Hall/CRC.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(husbands_wives, aes(x = ht_husband, y = ht_wife)) +
-     geom_point()
+      ggplot(husbands_wives, aes(x = ht_husband, y = ht_wife)) +
+        geom_point()

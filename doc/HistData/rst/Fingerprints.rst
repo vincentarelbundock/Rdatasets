@@ -1,78 +1,80 @@
-============ ===============
-Fingerprints R Documentation
-============ ===============
+.. container::
 
-Waite's data on Patterns in Fingerprints
-----------------------------------------
+   ============ ===============
+   Fingerprints R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Waite's data on Patterns in Fingerprints
+      :name: waites-data-on-patterns-in-fingerprints
 
-Waite (1915) was interested in analyzing the association of patterns in
-fingerprints, and produced a table of counts for 2000 right hands,
-classified by the number of fingers describable as a "whorl", a "small
-loop" (or neither). Because each hand contributes five fingers, the
-number of ``Whorls + Loops`` cannot exceed 5, so the contingency table
-is necessarily triangular.
+   .. rubric:: Description
+      :name: description
 
-Karl Pearson (1904) introduced the test for independence in contingency
-tables, and by 1913 had developed methods for "restricted contingency
-tables," such as the triangular table analyzed by Waite. The general
-formulation of such tests for association in restricted tables is now
-referred to as models for quasi-independence.
+   Waite (1915) was interested in analyzing the association of patterns
+   in fingerprints, and produced a table of counts for 2000 right hands,
+   classified by the number of fingers describable as a "whorl", a
+   "small loop" (or neither). Because each hand contributes five
+   fingers, the number of ``Whorls + Loops`` cannot exceed 5, so the
+   contingency table is necessarily triangular.
 
-Usage
-~~~~~
+   Karl Pearson (1904) introduced the test for independence in
+   contingency tables, and by 1913 had developed methods for "restricted
+   contingency tables," such as the triangular table analyzed by Waite.
+   The general formulation of such tests for association in restricted
+   tables is now referred to as models for quasi-independence.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Fingerprints)
+   ::
 
-Format
-~~~~~~
+      data(Fingerprints)
 
-A frequency data frame with 36 observations on the following 3
-variables, representing a 6 x 6 table giving the cross-classification of
-the fingers on 2000 right hands as a whorl, small loop or neither.
+   .. rubric:: Format
+      :name: format
 
-``Whorls``
-   Number of whorls, an ordered factor with levels ``0`` < ``1`` < ``2``
-   < ``3`` < ``4`` < ``5``
+   A frequency data frame with 36 observations on the following 3
+   variables, representing a 6 x 6 table giving the cross-classification
+   of the fingers on 2000 right hands as a whorl, small loop or neither.
 
-``Loops``
-   Number of small loops, an ordered factor with levels ``0`` < ``1`` <
-   ``2`` < ``3`` < ``4`` < ``5``
+   ``Whorls``
+      Number of whorls, an ordered factor with levels ``0`` < ``1`` <
+      ``2`` < ``3`` < ``4`` < ``5``
 
-``count``
-   Number of hands
+   ``Loops``
+      Number of small loops, an ordered factor with levels ``0`` < ``1``
+      < ``2`` < ``3`` < ``4`` < ``5``
 
-Details
-~~~~~~~
+   ``count``
+      Number of hands
 
-Cells for which ``Whorls + Loops>5`` have ``NA`` for ``count``
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Cells for which ``Whorls + Loops>5`` have ``NA`` for ``count``
 
-Stigler, S. M. (1999). *Statistics on the Table*. Cambridge, MA: Harvard
-University Press, table 19.4.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Stigler, S. M. (1999). *Statistics on the Table*. Cambridge, MA:
+   Harvard University Press, table 19.4.
 
-Pearson, K. (1904). Mathematical contributions to the theory of
-evolution. XIII. On the theory of contingency and its relation to
-association and normal correlation. Reprinted in *Karl Pearson's Early
-Statistical Papers*, Cambridge: Cambridge University Press, 1948,
-443-475.
+   .. rubric:: References
+      :name: references
 
-Waite, H. (1915). The analysis of fingerprints, *Biometrika*, 10,
-421-478.
+   Pearson, K. (1904). Mathematical contributions to the theory of
+   evolution. XIII. On the theory of contingency and its relation to
+   association and normal correlation. Reprinted in *Karl Pearson's
+   Early Statistical Papers*, Cambridge: Cambridge University Press,
+   1948, 443-475.
 
-Examples
-~~~~~~~~
+   Waite, H. (1915). The analysis of fingerprints, *Biometrika*, 10,
+   421-478.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(Fingerprints)
-   xtabs(count ~ Whorls + Loops, data=Fingerprints)
+   ::
+
+      data(Fingerprints)
+      xtabs(count ~ Whorls + Loops, data=Fingerprints)

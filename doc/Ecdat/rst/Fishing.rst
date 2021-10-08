@@ -1,84 +1,86 @@
-======= ===============
-Fishing R Documentation
-======= ===============
+.. container::
 
-Choice of Fishing Mode
-----------------------
+   ======= ===============
+   Fishing R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Choice of Fishing Mode
+      :name: choice-of-fishing-mode
 
-a cross-section
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 1182
+   a cross-section
 
-*observation* : individuals
+   *number of observations* : 1182
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Fishing)
+   ::
 
-Format
-~~~~~~
+      data(Fishing)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-mode
-   recreation mode choice, on of : beach, pier, boat and charter
+   A dataframe containing :
 
-price
-   price for chosen alternative
+   mode
+      recreation mode choice, on of : beach, pier, boat and charter
 
-catch
-   catch rate for chosen alternative
+   price
+      price for chosen alternative
 
-pbeach
-   price for beach mode
+   catch
+      catch rate for chosen alternative
 
-ppier
-   price for pier mode
+   pbeach
+      price for beach mode
 
-pboat
-   price for private boat mode
+   ppier
+      price for pier mode
 
-pcharter
-   price for charter boat mode
+   pboat
+      price for private boat mode
 
-cbeach
-   catch rate for beach mode
+   pcharter
+      price for charter boat mode
 
-cpier
-   catch rate for pier mode
+   cbeach
+      catch rate for beach mode
 
-cboat
-   catch rate for private boat mode
+   cpier
+      catch rate for pier mode
 
-ccharter
-   catch rate for charter boat mode
+   cboat
+      catch rate for private boat mode
 
-income
-   monthly income
+   ccharter
+      catch rate for charter boat mode
 
-Source
-~~~~~~
+   income
+      monthly income
 
-Herriges, J. A. and C. L. Kling (1999) “Nonlinear Income Effects in
-Random Utility Models”, *Review of Economics and Statistics*, **81**,
-62-72.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Herriges, J. A. and C. L. Kling (1999) “Nonlinear Income Effects in
+   Random Utility Models”, *Review of Economics and Statistics*, **81**,
+   62-72.
 
-Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods and
-applications*, Cambridge, pp. 463–466, 486 and 491–495.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
+   and applications*, Cambridge, pp. 463–466, 486 and 491–495.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

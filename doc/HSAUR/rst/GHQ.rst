@@ -1,62 +1,64 @@
-=== ===============
-GHQ R Documentation
-=== ===============
+.. container::
 
-General Health Questionnaire
-----------------------------
+   === ===============
+   GHQ R Documentation
+   === ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: General Health Questionnaire
+      :name: general-health-questionnaire
 
-Data from an psychiatric screening questionnaire
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from an psychiatric screening questionnaire
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("GHQ")
+   ::
 
-Format
-~~~~~~
+      data("GHQ")
 
-A data frame with 22 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``GHQ``
-   the General Health Questionnaire score.
+   A data frame with 22 observations on the following 4 variables.
 
-``sex``
-   a factor with levels ``female`` and ``male``
+   ``GHQ``
+      the General Health Questionnaire score.
 
-``cases``
-   the number of diseased subjects.
+   ``sex``
+      a factor with levels ``female`` and ``male``
 
-``non.cases``
-   the number of healthy subjects.
+   ``cases``
+      the number of diseased subjects.
 
-Details
-~~~~~~~
+   ``non.cases``
+      the number of healthy subjects.
 
-The data arise from a study of a psychiatric screening questionnaire
-called the GHQ (General Health Questionnaire, see Goldberg, 1972). Here
-the main question of interest is to see how caseness is related to
-gender and GHQ score.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data arise from a study of a psychiatric screening questionnaire
+   called the GHQ (General Health Questionnaire, see Goldberg, 1972).
+   Here the main question of interest is to see how caseness is related
+   to gender and GHQ score.
 
-D. Goldberg (1972). *The Detection of Psychiatric Illness by
-Questionnaire*, Oxford University Press, Oxford, UK.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   D. Goldberg (1972). *The Detection of Psychiatric Illness by
+   Questionnaire*, Oxford University Press, Oxford, UK.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-     data("GHQ", package = "HSAUR")
-     male <- subset(GHQ, sex == "male")
-     female <- subset(GHQ, sex == "female")
-     layout(matrix(1:2, ncol = 2))
-     barplot(t(as.matrix(male[,c("cases", "non.cases")])), main = "Male", xlab = "GHC score")
-     barplot(t(as.matrix(male[,c("cases", "non.cases")])), main = "Female", xlab = "GHC score")
+        data("GHQ", package = "HSAUR")
+        male <- subset(GHQ, sex == "male")
+        female <- subset(GHQ, sex == "female")
+        layout(matrix(1:2, ncol = 2))
+        barplot(t(as.matrix(male[,c("cases", "non.cases")])), main = "Male", xlab = "GHC score")
+        barplot(t(as.matrix(male[,c("cases", "non.cases")])), main = "Female", xlab = "GHC score")

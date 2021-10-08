@@ -1,57 +1,59 @@
-======= ===============
-nihills R Documentation
-======= ===============
+.. container::
 
-Record times for Northern Ireland mountain running events
----------------------------------------------------------
+   ======= ===============
+   nihills R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Record times for Northern Ireland mountain running events
+      :name: record-times-for-northern-ireland-mountain-running-events
 
-Data were from the 2007 calendar for the Northern Ireland Mountain
-Running Association.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data were from the 2007 calendar for the Northern Ireland Mountain
+   Running Association.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(nihills)
+   ::
 
-Format
-~~~~~~
+      data(nihills)
 
-A data frame with 23 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``dist``
-   distances in miles
+   A data frame with 23 observations on the following 4 variables.
 
-``climb``
-   amount of climb in feet
+   ``dist``
+      distances in miles
 
-``time``
-   record time in hours for males
+   ``climb``
+      amount of climb in feet
 
-``timef``
-   record time in hours for females
+   ``time``
+      record time in hours for males
 
-Details
-~~~~~~~
+   ``timef``
+      record time in hours for females
 
-These data make an interesting comparison with the dataset ``hills2000``
-in the DAAG package.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   These data make an interesting comparison with the dataset
+   ``hills2000`` in the DAAG package.
 
-For more recent information, see
-http://www.nimra.org.uk/index.php/fixtures/
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   For more recent information, see
+   http://www.nimra.org.uk/index.php/fixtures/
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(nihills)
-   lm(formula = log(time) ~ log(dist) + log(climb), data = nihills)
-   lm(formula = log(time) ~ log(dist) + log(climb/dist), data = nihills)
+   ::
+
+      data(nihills)
+      lm(formula = log(time) ~ log(dist) + log(climb), data = nihills)
+      lm(formula = log(time) ~ log(dist) + log(climb/dist), data = nihills)

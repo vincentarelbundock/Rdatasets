@@ -1,24 +1,26 @@
-=========== ===============
-nidd.annual R Documentation
-=========== ===============
+.. container::
 
-The River Nidd Data
--------------------
+   =========== ===============
+   nidd.annual R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: The River Nidd Data
+      :name: the-river-nidd-data
 
-These data represent annual maximal levels of the River Nidd in
-Yorkshire. These data are suitable for analysis with ``gev``.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These data represent annual maximal levels of the River Nidd in
+   Yorkshire. These data are suitable for analysis with ``gev``.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(nidd.annual)
+   ::
 
-Format
-~~~~~~
+      data(nidd.annual)
 
-A numeric vector containing 35 observations.
+   .. rubric:: Format
+      :name: format
+
+   A numeric vector containing 35 observations.

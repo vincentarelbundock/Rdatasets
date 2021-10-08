@@ -1,45 +1,47 @@
-========= ===============
-Inflation R Documentation
-========= ===============
+.. container::
 
-Monthly Consumer Price Index (2009-2016)
-----------------------------------------
+   ========= ===============
+   Inflation R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Monthly Consumer Price Index (2009-2016)
+      :name: monthly-consumer-price-index-2009-2016
 
-Consumer Price Index (CPI) each month for 2009 through 2016
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Consumer Price Index (CPI) each month for 2009 through 2016
 
-A data frame with 96 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``Month``
-   Month: ``1``\ =January to ``12``\ =December
+   A data frame with 96 observations on the following 5 variables.
 
-``Year``
-   Year (2009 to 2016)
+   ``Month``
+      Month: ``1``\ =January to ``12``\ =December
 
-``CPI``
-   Consumer Price Index (base=100 in 1984)
+   ``Year``
+      Year (2009 to 2016)
 
-``CPIPctDiff``
-   Monthly percent change in CPI
+   ``CPI``
+      Consumer Price Index (base=100 in 1984)
 
-``t``
-   Time index (1 to 96)
+   ``CPIPctDiff``
+      Monthly percent change in CPI
 
-Details
-~~~~~~~
+   ``t``
+      Time index (1 to 96)
 
-Monthly Consumer Price Index for 2009 to 2016 as produced by the Bureau
-of Labor Statistics (Series Id. CUUR0000SA0). Based on prices for all
-items in U.S. city average for all consumers (not seasonally) Base
-period is 1982-1984-100.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Monthly Consumer Price Index for 2009 to 2016 as produced by the
+   Bureau of Labor Statistics (Series Id. CUUR0000SA0). Based on prices
+   for all items in U.S. city average for all consumers (not seasonally)
+   Base period is 1982-1984-100.
 
-| Data downloaded from Bureau of Labor Statistics at
-| https://www.bls.gov/data/
+   .. rubric:: Source
+      :name: source
+
+   | Data downloaded from Bureau of Labor Statistics at
+   | https://www.bls.gov/data/

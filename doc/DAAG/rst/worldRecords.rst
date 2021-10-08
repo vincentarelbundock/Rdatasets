@@ -1,61 +1,63 @@
-============ ===============
-worldRecords R Documentation
-============ ===============
+.. container::
 
-Record times for track and road races, at August 9th 2006
----------------------------------------------------------
+   ============ ===============
+   worldRecords R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Record times for track and road races, at August 9th 2006
+      :name: record-times-for-track-and-road-races-at-august-9th-2006
 
-Record times for track and road races, at August 9th 2006
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Record times for track and road races, at August 9th 2006
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(worldRecords)
+   ::
 
-Format
-~~~~~~
+      data(worldRecords)
 
-A data frame with 40 observations on the following 9 variables.
+   .. rubric:: Format
+      :name: format
 
-``Distance``
-   distance in kilometers
+   A data frame with 40 observations on the following 9 variables.
 
-``roadORtrack``
-   a factor with levels ``road`` ``track``
+   ``Distance``
+      distance in kilometers
 
-``Place``
-   place; a character vector
+   ``roadORtrack``
+      a factor with levels ``road`` ``track``
 
-``Time``
-   time in minutes
+   ``Place``
+      place; a character vector
 
-``Date``
-   a Date
+   ``Time``
+      time in minutes
 
-Details
-~~~~~~~
+   ``Date``
+      a Date
 
-For further details, and some additional details, see the web site that
-is the source of the data.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   For further details, and some additional details, see the web site
+   that is the source of the data.
 
-http://www.gbrathletics.com/wrec.htm
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   http://www.gbrathletics.com/wrec.htm
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(worldRecords)
-   xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords)
-   xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords,
-          type=c("p","r"))
-   xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords,
-          type=c("p","smooth"))
+   ::
+
+      data(worldRecords)
+      xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords)
+      xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords,
+             type=c("p","r"))
+      xyplot(log(Time) ~ log(Distance), groups=roadORtrack, data=worldRecords,
+             type=c("p","smooth"))

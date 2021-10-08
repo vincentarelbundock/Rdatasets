@@ -1,60 +1,63 @@
-======== ===============
-aircraft R Documentation
-======== ===============
+.. container::
 
-Aircraft Data
--------------
+   ======== ===============
+   aircraft R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Aircraft Data
+      :name: aircraft-data
 
-Aircraft Data, deals with 23 single-engine aircraft built over the years
-1947-1979, from Office of Naval Research. The dependent variable is cost
-(in units of \\$100,000) and the explanatory variables are aspect ratio,
-lift-to-drag ratio, weight of plane (in pounds) and maximal thrust.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Aircraft Data, deals with 23 single-engine aircraft built over the
+   years 1947-1979, from Office of Naval Research. The dependent
+   variable is cost (in units of \\$100,000) and the explanatory
+   variables are aspect ratio, lift-to-drag ratio, weight of plane (in
+   pounds) and maximal thrust.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(aircraft, package="robustbase")
+   ::
 
-Format
-~~~~~~
+      data(aircraft, package="robustbase")
 
-A data frame with 23 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``X1``
-   Aspect Ratio
+   A data frame with 23 observations on the following 5 variables.
 
-``X2``
-   Lift-to-Drag Ratio
+   ``X1``
+      Aspect Ratio
 
-``X3``
-   Weight
+   ``X2``
+      Lift-to-Drag Ratio
 
-``X4``
-   Thrust
+   ``X3``
+      Weight
 
-``Y``
-   Cost
+   ``X4``
+      Thrust
 
-Source
-~~~~~~
+   ``Y``
+      Cost
 
-P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
-Detection*; Wiley, page 154, table 22.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
+   Detection*; Wiley, page 154, table 22.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(aircraft)
-   summary( lm.airc <-        lm(Y ~ ., data = aircraft))
-   summary(rlm.airc <- MASS::rlm(Y ~ ., data = aircraft))
+   ::
 
-   aircraft.x <- data.matrix(aircraft[,1:4])
-   c_air <- covMcd(aircraft.x)
-   c_air
+      data(aircraft)
+      summary( lm.airc <-        lm(Y ~ ., data = aircraft))
+      summary(rlm.airc <- MASS::rlm(Y ~ ., data = aircraft))
+
+      aircraft.x <- data.matrix(aircraft[,1:4])
+      c_air <- covMcd(aircraft.x)
+      c_air

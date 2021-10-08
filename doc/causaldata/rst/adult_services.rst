@@ -1,144 +1,147 @@
-============== ===============
-adult_services R Documentation
-============== ===============
+.. container::
 
-Data from a survey of internet-mediated sex workers
----------------------------------------------------
+   ============== ===============
+   adult_services R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from a survey of internet-mediated sex workers
+      :name: data-from-a-survey-of-internet-mediated-sex-workers
 
-This data comes from a survey of 700 internet-mediated sex workers in
-2008 and 2009, asking the same sex workers standard labor market
-information over several time periods.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data comes from a survey of 700 internet-mediated sex workers in
+   2008 and 2009, asking the same sex workers standard labor market
+   information over several time periods.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   adult_services
+   ::
 
-Format
-~~~~~~
+      adult_services
 
-A data frame with 1787 rows and 31 variables
+   .. rubric:: Format
+      :name: format
 
-id
-   Provider identifier
+   A data frame with 1787 rows and 31 variables
 
-session
-   Client session identifier
+   id
+      Provider identifier
 
-age
-   Age of provider
+   session
+      Client session identifier
 
-age_cl
-   Age of Client
+   age
+      Age of provider
 
-appearance_cl
-   Client Attractiveness (Scale of 1 to 10)
+   age_cl
+      Age of Client
 
-bmi
-   Body Mass Index
+   appearance_cl
+      Client Attractiveness (Scale of 1 to 10)
 
-schooling
-   Imputed Years of Schooling
+   bmi
+      Body Mass Index
 
-asq_cl
-   Age of Client Squared
+   schooling
+      Imputed Years of Schooling
 
-provider_second
-   Second Provider Involved
+   asq_cl
+      Age of Client Squared
 
-asian_cl
-   Asian Client
+   provider_second
+      Second Provider Involved
 
-black_cl
-   Black Client
+   asian_cl
+      Asian Client
 
-hispanic_cl
-   Hispanic Client
+   black_cl
+      Black Client
 
-othrace_cl
-   Other Ethnicity Client
+   hispanic_cl
+      Hispanic Client
 
-reg
-   Client was a Regular
+   othrace_cl
+      Other Ethnicity Client
 
-hot
-   Met Client in Hotel
+   reg
+      Client was a Regular
 
-massage_cl
-   Gave Client a Massage
+   hot
+      Met Client in Hotel
 
-lnw
-   Log of Hourly Wage
+   massage_cl
+      Gave Client a Massage
 
-llength
-   Ln(Length)
+   lnw
+      Log of Hourly Wage
 
-unsafe
-   Unprotected sex with client of any kind
+   llength
+      Ln(Length)
 
-asian
-   race==1. Asian
+   unsafe
+      Unprotected sex with client of any kind
 
-black
-   race==2. Black
+   asian
+      race==1. Asian
 
-hispanic
-   race==3. Hispanic
+   black
+      race==2. Black
 
-other
-   race==4. Other
+   hispanic
+      race==3. Hispanic
 
-white
-   race==5. White
+   other
+      race==4. Other
 
-asq
-   Age of provider squared
+   white
+      race==5. White
 
-cohab
-   ms==Cohabitating (living with a partner) but unmarried
+   asq
+      Age of provider squared
 
-married
-   ms==Currently married and living with your spouse
+   cohab
+      ms==Cohabitating (living with a partner) but unmarried
 
-divorced
-   ms==Divorced and not remarried
+   married
+      ms==Currently married and living with your spouse
 
-separated
-   ms==Married but not currently living with your spouse
+   divorced
+      ms==Divorced and not remarried
 
-nevermarried
-   ms==Single and never married
+   separated
+      ms==Married but not currently living with your spouse
 
-widowed
-   ms==Widowed and not remarried
+   nevermarried
+      ms==Single and never married
 
-Details
-~~~~~~~
+   widowed
+      ms==Widowed and not remarried
 
-This data is used in the *Panel Data* chapter of *Causal Inference: The
-Mixtape* by Cunningham.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This data is used in the *Panel Data* chapter of *Causal Inference:
+   The Mixtape* by Cunningham.
 
-Cunningham, Scott, and Todd D. Kendall. 2011. “Prostitution 2.0: The
-Changing Face of Sex Work.” Journal of Urban Economics 69: 273–87.
+   .. rubric:: Source
+      :name: source
 
-Cunningham, Scott, and Todd D. Kendall. 2014. “Examining the Role of
-Client Reviews and Reputation Within Online Prostitution.” In, edited by
-Scott Cunningham and Manisha Shah. Vol. Handbook on the Economics of
-Prostitution. Oxford University Press.
+   Cunningham, Scott, and Todd D. Kendall. 2011. “Prostitution 2.0: The
+   Changing Face of Sex Work.” Journal of Urban Economics 69: 273–87.
 
-Cunningham, Scott, and Todd D. Kendall. 2016. “Prostitution Labor Supply
-and Education.” Review of Economics of the Household. Forthcoming.
+   Cunningham, Scott, and Todd D. Kendall. 2014. “Examining the Role of
+   Client Reviews and Reputation Within Online Prostitution.” In, edited
+   by Scott Cunningham and Manisha Shah. Vol. Handbook on the Economics
+   of Prostitution. Oxford University Press.
 
-References
-~~~~~~~~~~
+   Cunningham, Scott, and Todd D. Kendall. 2016. “Prostitution Labor
+   Supply and Education.” Review of Economics of the Household.
+   Forthcoming.
 
-Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-https://mixtape.scunning.com/index.html.
+   .. rubric:: References
+      :name: references
+
+   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+   https://mixtape.scunning.com/index.html.

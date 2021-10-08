@@ -1,50 +1,53 @@
-========= ===============
-MusicTime R Documentation
-========= ===============
+.. container::
 
-Estimating Time with Different Music Playing
---------------------------------------------
+   ========= ===============
+   MusicTime R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Estimating Time with Different Music Playing
+      :name: estimating-time-with-different-music-playing
 
-Estimates of 45 seconds with different music playing
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Estimates of 45 seconds with different music playing
 
-A data frame with 60 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``MusicBg``
-   Music playing in the background (``no`` or ``yes``)
+   A data frame with 60 observations on the following 6 variables.
 
-``Subject``
-   Code for each subject (``subj1`` through ``subj20``)
+   ``MusicBg``
+      Music playing in the background (``no`` or ``yes``)
 
-``Sex``
-   Subject's sex (``f``\ =female or ``m``\ =male)
+   ``Subject``
+      Code for each subject (``subj1`` through ``subj20``)
 
-``TimeGuess``
-   Subject's time estimating 45 seconds (in seconds)
+   ``Sex``
+      Subject's sex (``f``\ =female or ``m``\ =male)
 
-``Music``
-   Type of music (``calm``, ``control``, or ``upbeat``)
+   ``TimeGuess``
+      Subject's time estimating 45 seconds (in seconds)
 
-``Accuracy``
-   Absolute value of TimeGuess minus 45
+   ``Music``
+      Type of music (``calm``, ``control``, or ``upbeat``)
 
-Details
-~~~~~~~
+   ``Accuracy``
+      Absolute value of TimeGuess minus 45
 
-Participants were asked to judge when 45 seconds had passed in silence
-(control), while listening to an upbeat song (Metropolis, by David
-Guetta and Nicky Romero), and while listening to a calm song (Bach's Das
-Wohltemperierte Klavier, Prelude in C Major). The order in which the
-three conditions were experienced was randomized for each participant.
-Time until subject guessed 45 seconds had elapsed (TimeGuess) and the
-magnitude of the difference from 45 (Accuracy) were recorded.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Participants were asked to judge when 45 seconds had passed in
+   silence (control), while listening to an upbeat song (Metropolis, by
+   David Guetta and Nicky Romero), and while listening to a calm song
+   (Bach's Das Wohltemperierte Klavier, Prelude in C Major). The order
+   in which the three conditions were experienced was randomized for
+   each participant. Time until subject guessed 45 seconds had elapsed
+   (TimeGuess) and the magnitude of the difference from 45 (Accuracy)
+   were recorded.
 
-Data collected by Ksenia Vlasov at Oberlin College.
+   .. rubric:: Source
+      :name: source
+
+   Data collected by Ksenia Vlasov at Oberlin College.

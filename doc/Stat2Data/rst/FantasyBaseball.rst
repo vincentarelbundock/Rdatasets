@@ -1,40 +1,42 @@
-=============== ===============
-FantasyBaseball R Documentation
-=============== ===============
+.. container::
 
-Selection Times in a Fantasy Baseball Draft
--------------------------------------------
+   =============== ===============
+   FantasyBaseball R Documentation
+   =============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Selection Times in a Fantasy Baseball Draft
+      :name: selection-times-in-a-fantasy-baseball-draft
 
-Draft selection times for a fantasy baseball league
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Draft selection times for a fantasy baseball league
 
-A data frame with 24 observations on the following 9 variables.
+   .. rubric:: Format
+      :name: format
 
-========= ================================
-``Round`` Round of the draft (1 to 24)
-``DJ``    Draft time (in seconds) for D.J.
-``AR``    Draft time (in seconds) for A.R.
-``BK``    Draft time (in seconds) for B.K.
-``JW``    Draft time (in seconds) for J.W.
-``TS``    Draft time (in seconds) for T.S.
-``RL``    Draft time (in seconds) for R.L.
-``DR``    Draft time (in seconds) for D.R.
-``MF``    Draft time (in seconds) for M.F.
-\         
-========= ================================
+   A data frame with 24 observations on the following 9 variables.
 
-Details
-~~~~~~~
+   ========= ================================
+   ``Round`` Round of the draft (1 to 24)
+   ``DJ``    Draft time (in seconds) for D.J.
+   ``AR``    Draft time (in seconds) for A.R.
+   ``BK``    Draft time (in seconds) for B.K.
+   ``JW``    Draft time (in seconds) for J.W.
+   ``TS``    Draft time (in seconds) for T.S.
+   ``RL``    Draft time (in seconds) for R.L.
+   ``DR``    Draft time (in seconds) for D.R.
+   ``MF``    Draft time (in seconds) for M.F.
+   \         
+   ========= ================================
 
-Time (in seconds) for participants in a draft for a fantasy baseball
-league to make a selection at each round.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Time (in seconds) for participants in a draft for a fantasy baseball
+   league to make a selection at each round.
 
-Mathematical Science Baseball League historical records (online).
+   .. rubric:: Source
+      :name: source
+
+   Mathematical Science Baseball League historical records (online).

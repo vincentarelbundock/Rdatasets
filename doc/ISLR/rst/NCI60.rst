@@ -1,48 +1,49 @@
-===== ===============
-NCI60 R Documentation
-===== ===============
+.. container::
 
-NCI 60 Data
------------
+   ===== ===============
+   NCI60 R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: NCI 60 Data
+      :name: nci-60-data
 
-NCI microarray data. The data contains expression levels on 6830 genes
-from 64 cancer cell lines. Cancer type is also recorded.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   NCI microarray data. The data contains expression levels on 6830
+   genes from 64 cancer cell lines. Cancer type is also recorded.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   NCI60
+   ::
 
-Format
-~~~~~~
+      NCI60
 
-The format is a list containing two elements: ``data`` and ``labs``.
+   .. rubric:: Format
+      :name: format
 
-``data`` is a 64 by 6830 matrix of the expression values while ``labs``
-is a vector listing the cancer types for the 64 cell lines.
+   The format is a list containing two elements: ``data`` and ``labs``.
 
-Source
-~~~~~~
+   ``data`` is a 64 by 6830 matrix of the expression values while
+   ``labs`` is a vector listing the cancer types for the 64 cell lines.
 
-The data come from Ross et al. (Nat Genet., 2000). More information can
-be obtained at http://genome-www.stanford.edu/nci60/
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The data come from Ross et al. (Nat Genet., 2000). More information
+   can be obtained at http://genome-www.stanford.edu/nci60/
 
-James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
-Introduction to Statistical Learning with applications in R*,
-`www.StatLearning.com <www.StatLearning.com>`__, Springer-Verlag, New
-York
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
+   Introduction to Statistical Learning with applications in R*,
+   https://www.statlearning.com, Springer-Verlag, New York
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   table(NCI60$labs)
+   ::
+
+      table(NCI60$labs)

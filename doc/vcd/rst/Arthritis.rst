@@ -1,67 +1,69 @@
-========= ===============
-Arthritis R Documentation
-========= ===============
+.. container::
 
-Arthritis Treatment Data
-------------------------
+   ========= ===============
+   Arthritis R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Arthritis Treatment Data
+      :name: arthritis-treatment-data
 
-Data from Koch \\& Edwards (1988) from a double-blind clinical trial
-investigating a new treatment for rheumatoid arthritis.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from Koch \\& Edwards (1988) from a double-blind clinical trial
+   investigating a new treatment for rheumatoid arthritis.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("Arthritis")
+   ::
 
-Format
-~~~~~~
+      data("Arthritis")
 
-A data frame with 84 observations and 5 variables.
+   .. rubric:: Format
+      :name: format
 
-ID
-   patient ID.
+   A data frame with 84 observations and 5 variables.
 
-Treatment
-   factor indicating treatment (Placebo, Treated).
+   ID
+      patient ID.
 
-Sex
-   factor indicating sex (Female, Male).
+   Treatment
+      factor indicating treatment (Placebo, Treated).
 
-Age
-   age of patient.
+   Sex
+      factor indicating sex (Female, Male).
 
-Improved
-   ordered factor indicating treatment outcome (None, Some, Marked).
+   Age
+      age of patient.
 
-Source
-~~~~~~
+   Improved
+      ordered factor indicating treatment outcome (None, Some, Marked).
 
-Michael Friendly (2000), Visualizing Categorical Data:
-http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/arthrit.sas
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Michael Friendly (2000), Visualizing Categorical Data:
+   http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/arthrit.sas
 
-G. Koch \\& S. Edwards (1988), Clinical efficiency trials with
-categorical data. In K. E. Peace (ed.), *Biopharmaceutical Statistics
-for Drug Development*, 403–451. Marcel Dekker, New York.
+   .. rubric:: References
+      :name: references
 
-M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute, Cary,
-NC.
+   G. Koch \\& S. Edwards (1988), Clinical efficiency trials with
+   categorical data. In K. E. Peace (ed.), *Biopharmaceutical Statistics
+   for Drug Development*, 403–451. Marcel Dekker, New York.
 
-Examples
-~~~~~~~~
+   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+   Cary, NC.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("Arthritis")
-   art <- xtabs(~ Treatment + Improved, data = Arthritis, subset = Sex == "Female")
-   art
+   ::
 
-   mosaic(art, gp = shading_Friendly)
-   mosaic(art, gp = shading_max)
+      data("Arthritis")
+      art <- xtabs(~ Treatment + Improved, data = Arthritis, subset = Sex == "Female")
+      art
+
+      mosaic(art, gp = shading_Friendly)
+      mosaic(art, gp = shading_max)

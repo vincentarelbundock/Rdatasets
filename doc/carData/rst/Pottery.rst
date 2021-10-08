@@ -1,57 +1,60 @@
-======= ===============
-Pottery R Documentation
-======= ===============
+.. container::
 
-Chemical Composition of Pottery
--------------------------------
+   ======= ===============
+   Pottery R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Chemical Composition of Pottery
+      :name: chemical-composition-of-pottery
 
-The data give the chemical composition of ancient pottery found at four
-sites in Great Britain. They appear in Hand, et al. (1994), and are used
-to illustrate MANOVA in the SAS Manual. (Suggested by Michael Friendly.)
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The data give the chemical composition of ancient pottery found at
+   four sites in Great Britain. They appear in Hand, et al. (1994), and
+   are used to illustrate MANOVA in the SAS Manual. (Suggested by
+   Michael Friendly.)
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Pottery
+   ::
 
-Format
-~~~~~~
+      Pottery
 
-A data frame with 26 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``Site``
-   a factor with levels ``AshleyRails`` ``Caldicot`` ``IsleThorns``
-   ``Llanedyrn``
+   A data frame with 26 observations on the following 6 variables.
 
-``Al``
-   Aluminum
+   ``Site``
+      a factor with levels ``AshleyRails`` ``Caldicot`` ``IsleThorns``
+      ``Llanedyrn``
 
-``Fe``
-   Iron
+   ``Al``
+      Aluminum
 
-``Mg``
-   Magnesium
+   ``Fe``
+      Iron
 
-``Ca``
-   Calcium
+   ``Mg``
+      Magnesium
 
-``Na``
-   Sodium
+   ``Ca``
+      Calcium
 
-Source
-~~~~~~
+   ``Na``
+      Sodium
 
-Hand, D. J., Daly, F., Lunn, A. D., McConway, K. J., and E., O. (1994)
-*A Handbook of Small Data Sets*. Chapman and Hall.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Hand, D. J., Daly, F., Lunn, A. D., McConway, K. J., and E., O.
+   (1994) *A Handbook of Small Data Sets*. Chapman and Hall.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   Pottery
+   ::
+
+      Pottery

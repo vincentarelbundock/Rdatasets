@@ -1,64 +1,66 @@
-======= ===============
-CRSPmon R Documentation
-======= ===============
+.. container::
 
-Monthly Returns from the CRSP Database
---------------------------------------
+   ======= ===============
+   CRSPmon R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Monthly Returns from the CRSP Database
+      :name: monthly-returns-from-the-crsp-database
 
-monthly observations from 1969-1 to 1998-12
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 360
+   monthly observations from 1969-1 to 1998-12
 
-*observation* : production units
+   *number of observations* : 360
 
-*country* : United States
+   *observation* : production units
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(CRSPmon)
+   ::
 
-Format
-~~~~~~
+      data(CRSPmon)
 
-A time series containing :
+   .. rubric:: Format
+      :name: format
 
-ge
-   the return for General Electric,
-   `PERMNO <http://www.crsp.org/products/documentation/crsp-link>`__
-   12060
+   A time series containing :
 
-ibm
-   the return for IBM, PERMNO 12490
+   ge
+      the return for General Electric,
+      `PERMNO <http://www.crsp.org/products/documentation/crsp-link>`__
+      12060
 
-mobil
-   the return for Mobil Corporation, PERMNO 15966
+   ibm
+      the return for IBM, PERMNO 12490
 
-crsp
-   the return for the CRSP value-weighted index, including dividends
+   mobil
+      the return for Mobil Corporation, PERMNO 15966
 
-Source
-~~~~~~
+   crsp
+      the return for the CRSP value-weighted index, including dividends
 
-Center for Research in Security Prices, Graduate School of Business,
-University of Chicago, 725 South Wells - Suite 800, Chicago, Illinois
-60607, http://www.crsp.org.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Center for Research in Security Prices, Graduate School of Business,
+   University of Chicago, 725 South Wells - Suite 800, Chicago, Illinois
+   60607, http://www.crsp.org.
 
-Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
-Methods*, New York, Oxford University Press, chapter 13.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
+   Methods*, New York, Oxford University Press, chapter 13.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
+
+   ``Index.Time.Series``

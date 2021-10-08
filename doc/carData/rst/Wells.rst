@@ -1,72 +1,75 @@
-===== ===============
-Wells R Documentation
-===== ===============
+.. container::
 
-Well Switching in Bangladesh
-----------------------------
+   ===== ===============
+   Wells R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Well Switching in Bangladesh
+      :name: well-switching-in-bangladesh
 
-Data on whether or not households in Bangladesh changed the wells that
-they were using.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data on whether or not households in Bangladesh changed the wells
+   that they were using.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Wells
+   ::
 
-Format
-~~~~~~
+      Wells
 
-A data frame with 3020 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``switch``
-   whether or not the household switched to another well from an unsafe
-   well: ``no`` or ``yes``.
+   A data frame with 3020 observations on the following 5 variables.
 
-``arsenic``
-   the level of arsenic contamination in the household's original well,
-   in hundreds of micrograms per liter; all are above 0.5, which was the
-   level identified as “safe”.
+   ``switch``
+      whether or not the household switched to another well from an
+      unsafe well: ``no`` or ``yes``.
 
-``distance``
-   in meters to the closest known safe well.
+   ``arsenic``
+      the level of arsenic contamination in the household's original
+      well, in hundreds of micrograms per liter; all are above 0.5,
+      which was the level identified as “safe”.
 
-``education``
-   in years of the head of the household.
+   ``distance``
+      in meters to the closest known safe well.
 
-``association``
-   whether or not any members of the household participated in any
-   community organizations: ``no`` or ``yes``.
+   ``education``
+      in years of the head of the household.
 
-Details
-~~~~~~~
+   ``association``
+      whether or not any members of the household participated in any
+      community organizations: ``no`` or ``yes``.
 
-The data are for an area of Arahazar upazila, Bangladesh. The
-researchers labelled each well with its level of arsenic and an
-indication of whether the well was “safe” or “unsafe.” Those using
-unsafe wells were encouraged to switch. After several years, it was
-determined whether each household using an unsafe well had changed its
-well. These data are used by Gelman and Hill (2007) for a
-logistic-regression example.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data are for an area of Arahazar upazila, Bangladesh. The
+   researchers labelled each well with its level of arsenic and an
+   indication of whether the well was “safe” or “unsafe.” Those using
+   unsafe wells were encouraged to switch. After several years, it was
+   determined whether each household using an unsafe well had changed
+   its well. These data are used by Gelman and Hill (2007) for a
+   logistic-regression example.
 
-http://www.stat.columbia.edu/~gelman/arm/examples/arsenic/wells.dat.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   http://www.stat.columbia.edu/~gelman/arm/examples/arsenic/wells.dat.
 
-A. Gelman and J. Hill (2007) *Data Analysis Using Regression and
-Multilevel/Hierarchical Models.* Cambridge: Cambridge University Press.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   A. Gelman and J. Hill (2007) *Data Analysis Using Regression and
+   Multilevel/Hierarchical Models.* Cambridge: Cambridge University
+   Press.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   summary(Wells)
+   ::
+
+      summary(Wells)

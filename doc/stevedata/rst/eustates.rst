@@ -1,37 +1,40 @@
-======== ===============
-eustates R Documentation
-======== ===============
+.. container::
 
-EU Member States (Current as of 2019)
--------------------------------------
+   ======== ===============
+   eustates R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: EU Member States (Current as of 2019)
+      :name: eu-member-states-current-as-of-2019
 
-European Union membership by accession date
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   European Union membership by accession date
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   eustates
+   ::
 
-Format
-~~~~~~
+      eustates
 
-A data frame with 28 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``date``
-   a date indicating accession
+   A data frame with 28 observations on the following 3 variables.
 
-``country``
-   a character vector for the country
+   ``date``
+      a date indicating accession
 
-``iso2c``
-   a character vector for iso2c
+   ``country``
+      a character vector for the country
 
-Details
-~~~~~~~
+   ``iso2c``
+      a character vector for iso2c
 
-Data come from https://europa.eu/european-union/about-eu/countries_en.
+   .. rubric:: Details
+      :name: details
+
+   Data come from
+   https://europa.eu/european-union/about-eu/countries_en.

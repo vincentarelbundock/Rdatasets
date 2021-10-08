@@ -1,43 +1,45 @@
-====== ===============
-nhtemp R Documentation
-====== ===============
+.. container::
 
-Average Yearly Temperatures in New Haven
-----------------------------------------
+   ====== ===============
+   nhtemp R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Average Yearly Temperatures in New Haven
+      :name: average-yearly-temperatures-in-new-haven
 
-The mean annual temperature in degrees Fahrenheit in New Haven,
-Connecticut, from 1912 to 1971.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The mean annual temperature in degrees Fahrenheit in New Haven,
+   Connecticut, from 1912 to 1971.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   nhtemp
+   ::
 
-Format
-~~~~~~
+      nhtemp
 
-A time series of 60 observations.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A time series of 60 observations.
 
-Vaux, J. E. and Brinker, N. B. (1972) *Cycles*, **1972**, 117–121.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Vaux, J. E. and Brinker, N. B. (1972) *Cycles*, **1972**, 117–121.
 
-McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(stats); require(graphics)
-   plot(nhtemp, main = "nhtemp data",
-     ylab = "Mean annual temperature in New Haven, CT (deg. F)")
+   ::
+
+      require(stats); require(graphics)
+      plot(nhtemp, main = "nhtemp data",
+        ylab = "Mean annual temperature in New Haven, CT (deg. F)")

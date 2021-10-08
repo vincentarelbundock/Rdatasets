@@ -1,57 +1,59 @@
-== ===============
-MW R Documentation
-== ===============
+.. container::
 
-Growth of Disposable Income and Treasury Bill Rate
---------------------------------------------------
+   == ===============
+   MW R Documentation
+   == ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Growth of Disposable Income and Treasury Bill Rate
+      :name: growth-of-disposable-income-and-treasury-bill-rate
 
-quarterly observations from 1963-3 to 1975-4
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 50
+   quarterly observations from 1963-3 to 1975-4
 
-*observation* : country
+   *number of observations* : 50
 
-*country* : United States
+   *observation* : country
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(MW)
+   ::
 
-Format
-~~~~~~
+      data(MW)
 
-A time series containing :
+   .. rubric:: Format
+      :name: format
 
-rdi
-   the rate of growth of real U.S. disposable income, seasonally
-   adjusted
+   A time series containing :
 
-trate
-   the U.S. treasury bill rate
+   rdi
+      the rate of growth of real U.S. disposable income, seasonally
+      adjusted
 
-Source
-~~~~~~
+   trate
+      the U.S. treasury bill rate
 
-MacKinnon, J. G. and H. T. White (1985) “Some heteroskedasticity
-consistent covariance matrix estimators with improved finite sample
-properties”, *Journal of Econometrics*, **29**, 305-325.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   MacKinnon, J. G. and H. T. White (1985) “Some heteroskedasticity
+   consistent covariance matrix estimators with improved finite sample
+   properties”, *Journal of Econometrics*, **29**, 305-325.
 
-Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
-Methods*, New York, Oxford University Press, chapter 5.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
+   Methods*, New York, Oxford University Press, chapter 5.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
+
+   ``Index.Time.Series``

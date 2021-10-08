@@ -1,63 +1,65 @@
-======== ===============
-Prestige R Documentation
-======== ===============
+.. container::
 
-Prestige of Canadian Occupations
---------------------------------
+   ======== ===============
+   Prestige R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Prestige of Canadian Occupations
+      :name: prestige-of-canadian-occupations
 
-The ``Prestige`` data frame has 102 rows and 6 columns. The observations
-are occupations.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Prestige`` data frame has 102 rows and 6 columns. The
+   observations are occupations.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Prestige
+   ::
 
-Format
-~~~~~~
+      Prestige
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-education
-   Average education of occupational incumbents, years, in 1971.
+   This data frame contains the following columns:
 
-income
-   Average income of incumbents, dollars, in 1971.
+   education
+      Average education of occupational incumbents, years, in 1971.
 
-women
-   Percentage of incumbents who are women.
+   income
+      Average income of incumbents, dollars, in 1971.
 
-prestige
-   Pineo-Porter prestige score for occupation, from a social survey
-   conducted in the mid-1960s.
+   women
+      Percentage of incumbents who are women.
 
-census
-   Canadian Census occupational code.
+   prestige
+      Pineo-Porter prestige score for occupation, from a social survey
+      conducted in the mid-1960s.
 
-type
-   Type of occupation. A factor with levels (note: out of order):
-   ``bc``, Blue Collar; ``prof``, Professional, Managerial, and
-   Technical; ``wc``, White Collar.
+   census
+      Canadian Census occupational code.
 
-Source
-~~~~~~
+   type
+      Type of occupation. A factor with levels (note: out of order):
+      ``bc``, Blue Collar; ``prof``, Professional, Managerial, and
+      Technical; ``wc``, White Collar.
 
-Canada (1971) *Census of Canada*. Vol. 3, Part 6. Statistics Canada [pp.
-19-1–19-21].
+   .. rubric:: Source
+      :name: source
 
-Personal communication from B. Blishen, W. Carroll, and C. Moore,
-Departments of Sociology, York University and University of Victoria.
+   Canada (1971) *Census of Canada*. Vol. 3, Part 6. Statistics Canada
+   [pp. 19-1–19-21].
 
-References
-~~~~~~~~~~
+   Personal communication from B. Blishen, W. Carroll, and C. Moore,
+   Departments of Sociology, York University and University of Victoria.
 
-Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-Models*, Third Edition. Sage.
+   .. rubric:: References
+      :name: references
 
-Fox, J. and Weisberg, S. (2019) *An R Companion to Applied Regression*,
-Third Edition, Sage.
+   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+   Models*, Third Edition. Sage.
+
+   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+   Regression*, Third Edition, Sage.

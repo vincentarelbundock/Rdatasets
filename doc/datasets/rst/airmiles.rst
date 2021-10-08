@@ -1,44 +1,46 @@
-======== ===============
-airmiles R Documentation
-======== ===============
+.. container::
 
-Passenger Miles on Commercial US Airlines, 1937–1960
-----------------------------------------------------
+   ======== ===============
+   airmiles R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Passenger Miles on Commercial US Airlines, 1937–1960
+      :name: passenger-miles-on-commercial-us-airlines-19371960
 
-The revenue passenger miles flown by commercial airlines in the United
-States for each year from 1937 to 1960.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The revenue passenger miles flown by commercial airlines in the
+   United States for each year from 1937 to 1960.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   airmiles
+   ::
 
-Format
-~~~~~~
+      airmiles
 
-A time series of 24 observations; yearly, 1937–1960.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A time series of 24 observations; yearly, 1937–1960.
 
-F.A.A. Statistical Handbook of Aviation.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   F.A.A. Statistical Handbook of Aviation.
 
-Brown, R. G. (1963) *Smoothing, Forecasting and Prediction of Discrete
-Time Series*. Prentice-Hall.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Brown, R. G. (1963) *Smoothing, Forecasting and Prediction of
+   Discrete Time Series*. Prentice-Hall.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(graphics)
-   plot(airmiles, main = "airmiles data",
-        xlab = "Passenger-miles flown by U.S. commercial airlines", col = 4)
+   ::
+
+      require(graphics)
+      plot(airmiles, main = "airmiles data",
+           xlab = "Passenger-miles flown by U.S. commercial airlines", col = 4)

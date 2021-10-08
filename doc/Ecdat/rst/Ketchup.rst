@@ -1,61 +1,63 @@
-======= ===============
-Ketchup R Documentation
-======= ===============
+.. container::
 
-Choice of Brand for Ketchup
----------------------------
+   ======= ===============
+   Ketchup R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Choice of Brand for Ketchup
+      :name: choice-of-brand-for-ketchup
 
-a cross-section
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 4956
+   a cross-section
 
-*observation* : individuals
+   *number of observations* : 4956
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Ketchup)
+   ::
 
-Format
-~~~~~~
+      data(Ketchup)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-hid
-   individuals identifiers
+   A dataframe containing :
 
-id
-   purchase identifiers
+   hid
+      individuals identifiers
 
-choice
-   one of ``heinz``, ``hunts``, ``delmonte``, ``stb`` (store brand)
+   id
+      purchase identifiers
 
-price.z
-   price of brand z
+   choice
+      one of ``heinz``, ``hunts``, ``delmonte``, ``stb`` (store brand)
 
-Source
-~~~~~~
+   price.z
+      price of brand z
 
-Kim, Byong–Do, Robert C. Blattberg and Peter E. Rossi (1995) “Modeling
-the distribution of price sensitivity and implications for optimal
-retail pricing”, *Journal of Business Economics and Statistics*,
-**13(3)**, 291.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Kim, Byong–Do, Robert C. Blattberg and Peter E. Rossi (1995)
+   “Modeling the distribution of price sensitivity and implications for
+   optimal retail pricing”, *Journal of Business Economics and
+   Statistics*, **13(3)**, 291.
 
-Journal of Business Economics and Statistics web site :
-https://amstat.tandfonline.com/loi/ubes20.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Journal of Business Economics and Statistics web site :
+   https://amstat.tandfonline.com/loi/ubes20.
 
-``Catsup``, ``Index.Source``, ``Index.Economics``,
-``Index.Econometrics``, ``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Catsup``, ``Index.Source``, ``Index.Economics``,
+   ``Index.Econometrics``, ``Index.Observations``

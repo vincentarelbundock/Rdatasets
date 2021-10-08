@@ -1,47 +1,50 @@
-======== ===============
-channing R Documentation
-======== ===============
+.. container::
 
-data from Section 1.16
-----------------------
+   ======== ===============
+   channing R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: data from Section 1.16
+      :name: data-from-section-1.16
 
-The ``channing`` data frame has 462 rows and 6 columns.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   The ``channing`` data frame has 462 rows and 6 columns.
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-obs
-   Observation number
+   This data frame contains the following columns:
 
-death
-   Death status (1=dead, 0=alive)
+   obs
+      Observation number
 
-ageentry
-   Age of entry into retirement home, months
+   death
+      Death status (1=dead, 0=alive)
 
-age
-   Age of death or left retirement home, months
+   ageentry
+      Age of entry into retirement home, months
 
-time
-   Difference between the above two ages, months
+   age
+      Age of death or left retirement home, months
 
-gender
-   Gender (1=male, 2=female)
+   time
+      Difference between the above two ages, months
 
-Source
-~~~~~~
+   gender
+      Gender (1=male, 2=female)
 
-Klein and Moeschberger (1997) *Survival Analysis Techniques for Censored
-and truncated data*, Springer. Hyde Biometrika (1977), 225-230.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Klein and Moeschberger (1997) *Survival Analysis Techniques for
+   Censored and truncated data*, Springer. Hyde Biometrika (1977),
+   225-230.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(channing)
+   ::
+
+      data(channing)

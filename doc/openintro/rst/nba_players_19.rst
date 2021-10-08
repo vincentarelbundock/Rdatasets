@@ -1,58 +1,60 @@
-============== ===============
-nba_players_19 R Documentation
-============== ===============
+.. container::
 
-NBA Players for the 2018-2019 season
-------------------------------------
+   ============== ===============
+   nba_players_19 R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: NBA Players for the 2018-2019 season
+      :name: nba-players-for-the-2018-2019-season
 
-Summary information from the NBA players for the 2018-2019 season.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Summary information from the NBA players for the 2018-2019 season.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   nba_players_19
+   ::
 
-Format
-~~~~~~
+      nba_players_19
 
-A data frame with 494 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-first_name
-   First name.
+   A data frame with 494 observations on the following 7 variables.
 
-last_name
-   Last name.
+   first_name
+      First name.
 
-team
-   Team name
+   last_name
+      Last name.
 
-team_abbr
-   3-letter team abbreviation.
+   team
+      Team name
 
-position
-   Player position.
+   team_abbr
+      3-letter team abbreviation.
 
-number
-   Jersey number.
+   position
+      Player position.
 
-height
-   Height, in inches.
+   number
+      Jersey number.
 
-Source
-~~~~~~
+   height
+      Height, in inches.
 
-https://www.nba.com/players
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   https://www.nba.com/players
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   hist(nba_players_19$height, 20)
-   table(nba_players_19$team)
+      hist(nba_players_19$height, 20)
+      table(nba_players_19$team)

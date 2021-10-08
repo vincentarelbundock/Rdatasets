@@ -1,57 +1,60 @@
-=== ===============
-ahd R Documentation
-=== ===============
+.. container::
 
-Methylprednisolone data
------------------------
+   === ===============
+   ahd R Documentation
+   === ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Methylprednisolone data
+      :name: methylprednisolone-data
 
-Data from a longitudinal study examining the effectiveness of
-Methylprednisolone as a treatment for patients with severe alcoholic
-hepatitis. Subjects were randomly assigned to a treatment (31 received a
-placebo, 35 received the treatment) and serum bilirubin was measures
-each week for four weeks.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from a longitudinal study examining the effectiveness of
+   Methylprednisolone as a treatment for patients with severe alcoholic
+   hepatitis. Subjects were randomly assigned to a treatment (31
+   received a placebo, 35 received the treatment) and serum bilirubin
+   was measures each week for four weeks.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(ahd)
+   ::
 
-Format
-~~~~~~
+      data(ahd)
 
-A data frame with 330 observations on the following 5 variables:
+   .. rubric:: Format
+      :name: format
 
-treatment
-   The treatment a subject received - a factor. Levels are ``placebo``
-   and ``treated``.
+   A data frame with 330 observations on the following 5 variables:
 
-subject
-   Subject ID - a factor.
+   treatment
+      The treatment a subject received - a factor. Levels are
+      ``placebo`` and ``treated``.
 
-week
-   Week of the study (0–4) - the time variable.
+   subject
+      Subject ID - a factor.
 
-sbvalue
-   Serum bilirubin level (in *μ*\ mol/L).
+   week
+      Week of the study (0–4) - the time variable.
 
-baseline
-   A subject's serum bilirubin level at week 0.
+   sbvalue
+      Serum bilirubin level (in *μ*\ mol/L).
 
-Source
-~~~~~~
+   baseline
+      A subject's serum bilirubin level at week 0.
 
-Vonesh, E. F. and Chinchilli, V. M. (1997) *Linear and Nonlinear Models
-for the Analysis of Repeated Measurements*. Marcel Dekker, New York.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Vonesh, E. F. and Chinchilli, V. M. (1997) *Linear and Nonlinear
+   Models for the Analysis of Repeated Measurements*. Marcel Dekker, New
+   York.
 
-Carithers, R. L., Herlong, H. F., Diehl, A. M., Shaw, E. W., Combes, B.,
-Fallon, H. J. & Maddrey, W. C. (1989) Methylprednisolone therapy in
-patients with severe alcoholic hepatitis. *Annals of Internal Medicine*,
-**110**\ (9), 685–690.
+   .. rubric:: References
+      :name: references
+
+   Carithers, R. L., Herlong, H. F., Diehl, A. M., Shaw, E. W., Combes,
+   B., Fallon, H. J. & Maddrey, W. C. (1989) Methylprednisolone therapy
+   in patients with severe alcoholic hepatitis. *Annals of Internal
+   Medicine*, **110**\ (9), 685–690.

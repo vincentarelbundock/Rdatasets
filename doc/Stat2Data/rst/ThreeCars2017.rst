@@ -1,51 +1,53 @@
-============= ===============
-ThreeCars2017 R Documentation
-============= ===============
+.. container::
 
-Price, Age, and Mileage of Three Used Car Models
-------------------------------------------------
+   ============= ===============
+   ThreeCars2017 R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Price, Age, and Mileage of Three Used Car Models
+      :name: price-age-and-mileage-of-three-used-car-models
 
-Data from cars.com for a sample of three different models of used cars
-in 2017
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Data from cars.com for a sample of three different models of used
+   cars in 2017
 
-A data frame with 90 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-``CarType``
-   Model (``Accord``, ``Maxima``, or ``Mazda6``)
+   A data frame with 90 observations on the following 7 variables.
 
-``Age``
-   Age of used car (years)
+   ``CarType``
+      Model (``Accord``, ``Maxima``, or ``Mazda6``)
 
-``Price``
-   Price (in thousands of dollars)
+   ``Age``
+      Age of used car (years)
 
-``Mileage``
-   Mileage (in thousands of miles)
+   ``Price``
+      Price (in thousands of dollars)
 
-``Mazda6``
-   Is the car a Mazda6? (``1``\ =yes or ``0``\ =no)
+   ``Mileage``
+      Mileage (in thousands of miles)
 
-``Accord``
-   Is the car an Accord? (``1``\ =yes or ``0``\ =no)
+   ``Mazda6``
+      Is the car a Mazda6? (``1``\ =yes or ``0``\ =no)
 
-``Maxima``
-   Is the car a Maxima? (``1``\ =yes or ``0``\ =no)
+   ``Accord``
+      Is the car an Accord? (``1``\ =yes or ``0``\ =no)
 
-Details
-~~~~~~~
+   ``Maxima``
+      Is the car a Maxima? (``1``\ =yes or ``0``\ =no)
 
-Data for a sample of cars from three models (Mazda6, Honda Accord,
-Toyota Maxima) from a website. The dataset AccordPrice is a subset of
-this file.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Data for a sample of cars from three models (Mazda6, Honda Accord,
+   Toyota Maxima) from a website. The dataset AccordPrice is a subset of
+   this file.
 
-Data obtained from cars.com, February 2017 using zip code 44107,
-Lakewood, Ohio.
+   .. rubric:: Source
+      :name: source
+
+   Data obtained from cars.com, February 2017 using zip code 44107,
+   Lakewood, Ohio.

@@ -1,65 +1,67 @@
-===== ===============
-immer R Documentation
-===== ===============
+.. container::
 
-Yields from a Barley Field Trial
---------------------------------
+   ===== ===============
+   immer R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Yields from a Barley Field Trial
+      :name: yields-from-a-barley-field-trial
 
-The ``immer`` data frame has 30 rows and 4 columns. Five varieties of
-barley were grown in six locations in each of 1931 and 1932.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``immer`` data frame has 30 rows and 4 columns. Five varieties of
+   barley were grown in six locations in each of 1931 and 1932.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   immer
+   ::
 
-Format
-~~~~~~
+      immer
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``Loc``
-   The location.
+   This data frame contains the following columns:
 
-``Var``
-   The variety of barley (``"manchuria"``, ``"svansota"``, ``"velvet"``,
-   ``"trebi"`` and ``"peatland"``).
+   ``Loc``
+      The location.
 
-``Y1``
-   Yield in 1931.
+   ``Var``
+      The variety of barley (``"manchuria"``, ``"svansota"``,
+      ``"velvet"``, ``"trebi"`` and ``"peatland"``).
 
-``Y2``
-   Yield in 1932.
+   ``Y1``
+      Yield in 1931.
 
-Source
-~~~~~~
+   ``Y2``
+      Yield in 1932.
 
-Immer, F.R., Hayes, H.D. and LeRoy Powers (1934) Statistical
-determination of barley varietal adaptation. *Journal of the American
-Society for Agronomy* **26**, 403–419.
+   .. rubric:: Source
+      :name: source
 
-Fisher, R.A. (1947) *The Design of Experiments.* 4th edition. Edinburgh:
-Oliver and Boyd.
+   Immer, F.R., Hayes, H.D. and LeRoy Powers (1934) Statistical
+   determination of barley varietal adaptation. *Journal of the American
+   Society for Agronomy* **26**, 403–419.
 
-References
-~~~~~~~~~~
+   Fisher, R.A. (1947) *The Design of Experiments.* 4th edition.
+   Edinburgh: Oliver and Boyd.
 
-Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics with
-S-PLUS.* Third Edition. Springer.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics
+   with S-PLUS.* Third Edition. Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   immer.aov <- aov(cbind(Y1,Y2) ~ Loc + Var, data = immer)
-   summary(immer.aov)
+   ::
 
-   immer.aov <- aov((Y1+Y2)/2 ~ Var + Loc, data = immer)
-   summary(immer.aov)
-   model.tables(immer.aov, type = "means", se = TRUE, cterms = "Var")
+      immer.aov <- aov(cbind(Y1,Y2) ~ Loc + Var, data = immer)
+      summary(immer.aov)
+
+      immer.aov <- aov((Y1+Y2)/2 ~ Var + Loc, data = immer)
+      summary(immer.aov)
+      model.tables(immer.aov, type = "means", se = TRUE, cterms = "Var")

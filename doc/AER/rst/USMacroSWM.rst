@@ -1,60 +1,65 @@
-========== ===============
-USMacroSWM R Documentation
-========== ===============
+.. container::
 
-Monthly US Macroeconomic Data (1947–2004, Stock \\& Watson)
------------------------------------------------------------
+   ========== ===============
+   USMacroSWM R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Monthly US Macroeconomic Data (1947–2004, Stock \\&
+      Watson)
+      :name: monthly-us-macroeconomic-data-19472004-stock-watson
 
-Time series data on 4 US macroeconomic variables for 1947–2004.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Time series data on 4 US macroeconomic variables for 1947–2004.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("USMacroSWM")
+   ::
 
-Format
-~~~~~~
+      data("USMacroSWM")
 
-A monthly multiple time series from 1947(1) to 2004(4) with 4 variables.
+   .. rubric:: Format
+      :name: format
 
-production
-   index of industrial production.
+   A monthly multiple time series from 1947(1) to 2004(4) with 4
+   variables.
 
-oil
-   oil price shocks, starting 1948(1).
+   production
+      index of industrial production.
 
-cpi
-   all-items consumer price index.
+   oil
+      oil price shocks, starting 1948(1).
 
-expenditure
-   personal consumption expenditures price deflator, starting 1959(1).
+   cpi
+      all-items consumer price index.
 
-Source
-~~~~~~
+   expenditure
+      personal consumption expenditures price deflator, starting
+      1959(1).
 
-Online complements to Stock and Watson (2007).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Stock and Watson (2007).
 
-Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*, 2nd
-ed. Boston: Addison Wesley.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
+   2nd ed. Boston: Addison Wesley.
 
-``StockWatson2007``, ``USMacroSW``, ``USMacroSWQ``, ``USMacroB``,
-``USMacroG``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``StockWatson2007``, ``USMacroSW``, ``USMacroSWQ``, ``USMacroB``,
+   ``USMacroG``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("USMacroSWM")
-   plot(USMacroSWM)
+   ::
+
+      data("USMacroSWM")
+      plot(USMacroSWM)

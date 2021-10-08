@@ -1,52 +1,54 @@
-====== ===============
-Chirot R Documentation
-====== ===============
+.. container::
 
-The 1907 Romanian Peasant Rebellion
------------------------------------
+   ====== ===============
+   Chirot R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: The 1907 Romanian Peasant Rebellion
+      :name: the-1907-romanian-peasant-rebellion
 
-The ``Chirot`` data frame has 32 rows and 5 columns. The observations
-are counties in Romania.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Chirot`` data frame has 32 rows and 5 columns. The observations
+   are counties in Romania.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Chirot
+   ::
 
-Format
-~~~~~~
+      Chirot
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-intensity
-   Intensity of the rebellion
+   This data frame contains the following columns:
 
-commerce
-   Commercialization of agriculture
+   intensity
+      Intensity of the rebellion
 
-tradition
-   Traditionalism
+   commerce
+      Commercialization of agriculture
 
-midpeasant
-   Strength of middle peasantry
+   tradition
+      Traditionalism
 
-inequality
-   Inequality of land tenure
+   midpeasant
+      Strength of middle peasantry
 
-Source
-~~~~~~
+   inequality
+      Inequality of land tenure
 
-Chirot, D. and C. Ragin (1975) The market, tradition and peasant
-rebellion: The case of Romania. *American Sociological Review* **40**,
-428–444 [Table 1].
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Chirot, D. and C. Ragin (1975) The market, tradition and peasant
+   rebellion: The case of Romania. *American Sociological Review*
+   **40**, 428–444 [Table 1].
 
-Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-Models*, Third Edition. Sage.
+   .. rubric:: References
+      :name: references
+
+   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+   Models*, Third Edition. Sage.

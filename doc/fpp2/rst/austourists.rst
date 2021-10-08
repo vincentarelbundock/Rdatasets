@@ -1,30 +1,33 @@
-=========== ===============
-austourists R Documentation
-=========== ===============
+.. container::
 
-International Tourists to Australia: Total visitor nights.
-----------------------------------------------------------
+   =========== ===============
+   austourists R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: International Tourists to Australia: Total visitor
+      nights.
+      :name: international-tourists-to-australia-total-visitor-nights.
 
-Quarterly visitor nights (in millions) spent by international tourists
-to Australia. 1999-2015.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Quarterly visitor nights (in millions) spent by international
+   tourists to Australia. 1999-2015.
 
-Quarterly time series of class ``ts``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   Quarterly time series of class ``ts``.
 
-Tourism Research Australia.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Tourism Research Australia.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   autoplot(austourists)
+      autoplot(austourists)

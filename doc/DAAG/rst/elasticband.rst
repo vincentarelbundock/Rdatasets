@@ -1,82 +1,84 @@
-=========== ===============
-elasticband R Documentation
-=========== ===============
+.. container::
 
-Elastic Band Data
------------------
+   =========== ===============
+   elasticband R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Elastic Band Data
+      :name: elastic-band-data
 
-The ``elasticband`` data frame has 7 rows and 2 columns giving, for each
-amount by which an elastic band is stretched over the end of a ruler,
-the distance that the band traveled when released.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``elasticband`` data frame has 7 rows and 2 columns giving, for
+   each amount by which an elastic band is stretched over the end of a
+   ruler, the distance that the band traveled when released.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   elasticband
+   ::
 
-Format
-~~~~~~
+      elasticband
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-stretch
-   the amount by which the elastic band was stretched
+   This data frame contains the following columns:
 
-distance
-   the distance traveled
+   stretch
+      the amount by which the elastic band was stretched
 
-Source
-~~~~~~
+   distance
+      the distance traveled
 
-J. H. Maindonald
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   J. H. Maindonald
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## Not run: 
-   print("Example 1.8.1")
+   ::
 
-   attach(elasticband)     # R now knows where to find stretch and distance
-   plot(stretch, distance) # Alternative: plot(distance ~ stretch)
-   detach(elasticband)
-   pause()
+      ## Not run: 
+      print("Example 1.8.1")
 
-   print("Output of Data Frames - Example 12.3.2")
+      attach(elasticband)     # R now knows where to find stretch and distance
+      plot(stretch, distance) # Alternative: plot(distance ~ stretch)
+      detach(elasticband)
+      pause()
 
-   write(t(elasticband),file="bands.txt",ncol=2)
+      print("Output of Data Frames - Example 12.3.2")
 
-   sink("bands2.txt")
-   elasticband   # NB: No output on screen
-   sink()
+      write(t(elasticband),file="bands.txt",ncol=2)
 
-   print("Lists - Example 12.7")
+      sink("bands2.txt")
+      elasticband   # NB: No output on screen
+      sink()
 
-   elastic.lm <- lm(distance ~ stretch, data=elasticband)
-    names(elastic.lm)
-    elastic.lm$coefficients
-   elastic.lm[["coefficients"]]
-   pause()
+      print("Lists - Example 12.7")
 
-   elastic.lm[[1]]
-   pause()
+      elastic.lm <- lm(distance ~ stretch, data=elasticband)
+       names(elastic.lm)
+       elastic.lm$coefficients
+      elastic.lm[["coefficients"]]
+      pause()
 
-   elastic.lm[1]
-   pause()
+      elastic.lm[[1]]
+      pause()
 
-   options(digits=3)
-   elastic.lm$residuals 
-   pause()
+      elastic.lm[1]
+      pause()
 
-   elastic.lm$call
-   pause()
+      options(digits=3)
+      elastic.lm$residuals 
+      pause()
 
-    mode(elastic.lm$call)
+      elastic.lm$call
+      pause()
 
-   ## End(Not run)
+       mode(elastic.lm$call)
+
+      ## End(Not run)

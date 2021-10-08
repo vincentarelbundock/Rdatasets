@@ -1,78 +1,80 @@
-===== ===============
-Train R Documentation
-===== ===============
+.. container::
 
-Stated Preferences for Train Traveling
---------------------------------------
+   ===== ===============
+   Train R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Stated Preferences for Train Traveling
+      :name: stated-preferences-for-train-traveling
 
-a cross-section from 1987
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 2929
+   a cross-section from 1987
 
-*observation* : individuals
+   *number of observations* : 2929
 
-*country* : Netherland
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : Netherland
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Train)
+   ::
 
-Format
-~~~~~~
+      data(Train)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-id
-   individual identifier
+   A dataframe containing :
 
-choiceid
-   choice identifier
+   id
+      individual identifier
 
-choice
-   one of choice1, choice2
+   choiceid
+      choice identifier
 
-pricez
-   price of proposition z (z=1,2) in cents of guilders
+   choice
+      one of choice1, choice2
 
-timez
-   travel time of proposition z (z=1,2) in minutes
+   pricez
+      price of proposition z (z=1,2) in cents of guilders
 
-comfortz
-   comfort of proposition z (z=1,2), 0, 1 or 2 in decreasing comfort
-   order
+   timez
+      travel time of proposition z (z=1,2) in minutes
 
-changez
-   number of changes for proposition z (z=1,2)
+   comfortz
+      comfort of proposition z (z=1,2), 0, 1 or 2 in decreasing comfort
+      order
 
-Source
-~~~~~~
+   changez
+      number of changes for proposition z (z=1,2)
 
-Meijer, Erik and Jan Rouwendal (2005) “Measuring welfare effects in
-models with random coefficients”, *Journal of Applied Econometrics*,
-**forthcoming**.
+   .. rubric:: Source
+      :name: source
 
-Ben–Akiva, M., D. Bolduc and M. Bradley (1993) “Estimation of travel
-choice models with randomly distributed values of time”, *Transportation
-Research Record*, **1413**, 88–97.
+   Meijer, Erik and Jan Rouwendal (2005) “Measuring welfare effects in
+   models with random coefficients”, *Journal of Applied Econometrics*,
+   **forthcoming**.
 
-Carson, R.T., L. Wilks and D. Imber (1994) “Valuing the preservation of
-Australia's Kakadu conservation zone”, *Oxford Economic Papers*, **46**,
-727–749.
+   Ben–Akiva, M., D. Bolduc and M. Bradley (1993) “Estimation of travel
+   choice models with randomly distributed values of time”,
+   *Transportation Research Record*, **1413**, 88–97.
 
-References
-~~~~~~~~~~
+   Carson, R.T., L. Wilks and D. Imber (1994) “Valuing the preservation
+   of Australia's Kakadu conservation zone”, *Oxford Economic Papers*,
+   **46**, 727–749.
 
-Journal of Applied Econometrics data archive :
-http://qed.econ.queensu.ca/jae/.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Journal of Applied Econometrics data archive :
+   http://qed.econ.queensu.ca/jae/.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

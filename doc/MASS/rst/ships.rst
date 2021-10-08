@@ -1,44 +1,47 @@
-===== ===============
-ships R Documentation
-===== ===============
+.. container::
 
-Ships Damage Data
------------------
+   ===== ===============
+   ships R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Ships Damage Data
+      :name: ships-damage-data
 
-Data frame giving the number of damage incidents and aggregate months of
-service by ship type, year of construction, and period of operation.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data frame giving the number of damage incidents and aggregate months
+   of service by ship type, year of construction, and period of
+   operation.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   ships
+   ::
 
-Format
-~~~~~~
+      ships
 
-``type``
-   type: ``"A"`` to ``"E"``.
+   .. rubric:: Format
+      :name: format
 
-``year``
-   year of construction: 1960–64, 65–69, 70–74, 75–79 (coded as
-   ``"60"``, ``"65"``, ``"70"``, ``"75"``).
+   ``type``
+      type: ``"A"`` to ``"E"``.
 
-``period``
-   period of operation : 1960–74, 75–79.
+   ``year``
+      year of construction: 1960–64, 65–69, 70–74, 75–79 (coded as
+      ``"60"``, ``"65"``, ``"70"``, ``"75"``).
 
-``service``
-   aggregate months of service.
+   ``period``
+      period of operation : 1960–74, 75–79.
 
-``incidents``
-   number of damage incidents.
+   ``service``
+      aggregate months of service.
 
-Source
-~~~~~~
+   ``incidents``
+      number of damage incidents.
 
-P. McCullagh and J. A. Nelder, (1983), *Generalized Linear Models.*
-Chapman & Hall, section 6.3.2, page 137
+   .. rubric:: Source
+      :name: source
+
+   P. McCullagh and J. A. Nelder, (1983), *Generalized Linear Models.*
+   Chapman & Hall, section 6.3.2, page 137

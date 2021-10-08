@@ -1,62 +1,65 @@
-=========== ===============
-Prostitutes R Documentation
-=========== ===============
+.. container::
 
-Parent-Duchatelet's time-series data on the number of prostitutes in Paris
---------------------------------------------------------------------------
+   =========== ===============
+   Prostitutes R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Parent-Duchatelet's time-series data on the number of
+      prostitutes in Paris
+      :name: parent-duchatelets-time-series-data-on-the-number-of-prostitutes-in-paris
 
-A table indicating month by month, for the years 1812-1854, the number
-of prostitutes on the registers of the administration of the city of
-Paris.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A table indicating month by month, for the years 1812-1854, the
+   number of prostitutes on the registers of the administration of the
+   city of Paris.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Prostitutes)
+   ::
 
-Format
-~~~~~~
+      data(Prostitutes)
 
-A data frame with 516 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``Year``
-   a numeric vector
+   A data frame with 516 observations on the following 5 variables.
 
-``month``
-   a factor with levels ``Apr`` ``Aug`` ``Dec`` ``Feb`` ``Jan`` ``Jul``
-   ``Jun`` ``Mar`` ``May`` ``Nov`` ``Oct`` ``Sep``
+   ``Year``
+      a numeric vector
 
-``count``
-   a numeric vector: number of prostitutes
+   ``month``
+      a factor with levels ``Apr`` ``Aug`` ``Dec`` ``Feb`` ``Jan``
+      ``Jul`` ``Jun`` ``Mar`` ``May`` ``Nov`` ``Oct`` ``Sep``
 
-``mon``
-   a numeric vector: numeric month
+   ``count``
+      a numeric vector: number of prostitutes
 
-``date``
-   a Date
+   ``mon``
+      a numeric vector: numeric month
 
-Details
-~~~~~~~
+   ``date``
+      a Date
 
-The data table was digitally scanned with OCR, and errors were corrected
-by comparing the yearly totals recorded in the table to the row sums of
-the scanned data.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data table was digitally scanned with OCR, and errors were
+   corrected by comparing the yearly totals recorded in the table to the
+   row sums of the scanned data.
 
-Parent-Duchatelet, A. (1857), *De la prostitution dans la ville de
-Paris*, 3rd ed, p. 32, 36
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Parent-Duchatelet, A. (1857), *De la prostitution dans la ville de
+   Paris*, 3rd ed, p. 32, 36
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(Prostitutes)
-   ## maybe str(Prostitutes) ; plot(Prostitutes) ...
+   ::
+
+      data(Prostitutes)
+      ## maybe str(Prostitutes) ; plot(Prostitutes) ...

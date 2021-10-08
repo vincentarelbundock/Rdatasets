@@ -1,87 +1,89 @@
-========= ===============
-foodstamp R Documentation
-========= ===============
+.. container::
 
-Food Stamp Program Participation
---------------------------------
+   ========= ===============
+   foodstamp R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Food Stamp Program Participation
+      :name: food-stamp-program-participation
 
-This data consists of 150 randomly selected persons from a survey with
-information on over 2000 elderly US citizens, where the response,
-indicates participation in the U.S. Food Stamp Program.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data consists of 150 randomly selected persons from a survey
+   with information on over 2000 elderly US citizens, where the
+   response, indicates participation in the U.S. Food Stamp Program.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(foodstamp, package="robustbase")
+   ::
 
-Format
-~~~~~~
+      data(foodstamp, package="robustbase")
 
-A data frame with 150 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``participation``
-   participation in U.S. Food Stamp Program; yes = 1, no = 0
+   A data frame with 150 observations on the following 4 variables.
 
-``tenancy``
-   tenancy, indicating home ownership; yes = 1, no = 0
+   ``participation``
+      participation in U.S. Food Stamp Program; yes = 1, no = 0
 
-``suppl.income``
-   supplemental income, indicating whether some form of supplemental
-   security income is received; yes = 1, no = 0
+   ``tenancy``
+      tenancy, indicating home ownership; yes = 1, no = 0
 
-``income``
-   monthly income (in US dollars)
+   ``suppl.income``
+      supplemental income, indicating whether some form of supplemental
+      security income is received; yes = 1, no = 0
 
-Source
-~~~~~~
+   ``income``
+      monthly income (in US dollars)
 
-Data description and first analysis: Stefanski et al.(1986) who indicate
-Rizek(1978) as original source of the larger study.
+   .. rubric:: Source
+      :name: source
 
-Electronic version from CRAN package
-`catdata <https://CRAN.R-project.org/package=catdata>`__.
+   Data description and first analysis: Stefanski et al.(1986) who
+   indicate Rizek(1978) as original source of the larger study.
 
-References
-~~~~~~~~~~
+   Electronic version from CRAN package
+   `catdata <https://CRAN.R-project.org/package=catdata>`__.
 
-Rizek, R. L. (1978) The 1977-78 Nationwide Food Consumption Survey.
-*Family Econ. Rev.*, Fall, 3–7.
+   .. rubric:: References
+      :name: references
 
-Stefanski, L. A., Carroll, R. J. and Ruppert, D. (1986) Optimally
-bounded score functions for generalized linear models with applications
-to logistic regression. *Biometrika* **73**, 413–424.
+   Rizek, R. L. (1978) The 1977-78 Nationwide Food Consumption Survey.
+   *Family Econ. Rev.*, Fall, 3–7.
 
-Künsch, H. R., Stefanski, L. A., Carroll, R. J. (1989) Conditionally
-unbiased bounded-influence estimation in general regression models, with
-applications to generalized linear models. *J. American Statistical
-Association* **84**, 460–466.
+   Stefanski, L. A., Carroll, R. J. and Ruppert, D. (1986) Optimally
+   bounded score functions for generalized linear models with
+   applications to logistic regression. *Biometrika* **73**, 413–424.
 
-Examples
-~~~~~~~~
+   Künsch, H. R., Stefanski, L. A., Carroll, R. J. (1989) Conditionally
+   unbiased bounded-influence estimation in general regression models,
+   with applications to generalized linear models. *J. American
+   Statistical Association* **84**, 460–466.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(foodstamp)
+   ::
 
-   (T123 <- xtabs(~ participation+ tenancy+ suppl.income, data=foodstamp))
-   summary(T123) ## ==> the binary var's are clearly not independent
+      data(foodstamp)
 
-   foodSt <- within(foodstamp, {
-      logInc <- log(1 + income)
-      rm(income)
-   })
+      (T123 <- xtabs(~ participation+ tenancy+ suppl.income, data=foodstamp))
+      summary(T123) ## ==> the binary var's are clearly not independent
 
-   m1 <- glm(participation ~ ., family=binomial, data=foodSt)
-   summary(m1)
-   rm1 <- glmrob(participation ~ ., family=binomial, data=foodSt)
-   summary(rm1)
-   ## Now use robust weights.on.x :
-   rm2 <- glmrob(participation ~ ., family=binomial, data=foodSt,
-                 weights.on.x = "robCov")
-   summary(rm2)## aha, now the weights are different:
-   which( weights(rm2, type="robust") < 0.5)
+      foodSt <- within(foodstamp, {
+         logInc <- log(1 + income)
+         rm(income)
+      })
+
+      m1 <- glm(participation ~ ., family=binomial, data=foodSt)
+      summary(m1)
+      rm1 <- glmrob(participation ~ ., family=binomial, data=foodSt)
+      summary(rm1)
+      ## Now use robust weights.on.x :
+      rm2 <- glmrob(participation ~ ., family=binomial, data=foodSt,
+                    weights.on.x = "robCov")
+      summary(rm2)## aha, now the weights are different:
+      which( weights(rm2, type="robust") < 0.5)

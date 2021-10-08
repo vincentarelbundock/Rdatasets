@@ -1,54 +1,56 @@
-======= ===============
-stent30 R Documentation
-======= ===============
+.. container::
 
-Stents for the treatment of stroke
-----------------------------------
+   ======= ===============
+   stent30 R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Stents for the treatment of stroke
+      :name: stents-for-the-treatment-of-stroke
 
-An experiment that studies effectiveness of stents in treating patients
-at risk of stroke with some unexpected results. ``stent30`` represents
-the results 30 days after stroke and ``stent365`` represents the results
-365 days after stroke.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   An experiment that studies effectiveness of stents in treating
+   patients at risk of stroke with some unexpected results. ``stent30``
+   represents the results 30 days after stroke and ``stent365``
+   represents the results 365 days after stroke.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   stent30
+   ::
 
-Format
-~~~~~~
+      stent30
 
-A data frame with 451 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-group
-   a factor with levels ``control`` and ``treatment``
+   A data frame with 451 observations on the following 2 variables.
 
-outcome
-   a factor with levels ``no event`` and ``stroke``
+   group
+      a factor with levels ``control`` and ``treatment``
 
-Source
-~~~~~~
+   outcome
+      a factor with levels ``no event`` and ``stroke``
 
-Chimowitz MI, Lynn MJ, Derdeyn CP, et al. 2011. Stenting versus
-Aggressive Med- ical Therapy for Intracranial Arterial Stenosis. New
-England Journal of Medicine 365:993- 1003. doi:
-`10.1056/NEJMoa1105335 <https://doi.org/10.1056/NEJMoa1105335>`__. NY
-Times article reporting on the study:
-https://www.nytimes.com/2011/09/08/health/research/08stent.html.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Chimowitz MI, Lynn MJ, Derdeyn CP, et al. 2011. Stenting versus
+   Aggressive Med- ical Therapy for Intracranial Arterial Stenosis. New
+   England Journal of Medicine 365:993- 1003. doi:
+   `10.1056/NEJMoa1105335 <https://doi.org/10.1056/NEJMoa1105335>`__. NY
+   Times article reporting on the study:
+   https://www.nytimes.com/2011/09/08/health/research/08stent.html.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   # 30-day results
-   table(stent30)
+      # 30-day results
+      table(stent30)
 
-   # 365-day results
-   table(stent365)
+      # 365-day results
+      table(stent365)

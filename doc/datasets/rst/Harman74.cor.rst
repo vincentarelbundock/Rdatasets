@@ -1,37 +1,40 @@
-============ ===============
-Harman74.cor R Documentation
-============ ===============
+.. container::
 
-Harman Example 7.4
-------------------
+   ============ ===============
+   Harman74.cor R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Harman Example 7.4
+      :name: harman-example-7.4
 
-A correlation matrix of 24 psychological tests given to 145 seventh and
-eight-grade children in a Chicago suburb by Holzinger and Swineford.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A correlation matrix of 24 psychological tests given to 145 seventh
+   and eight-grade children in a Chicago suburb by Holzinger and
+   Swineford.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Harman74.cor
+   ::
 
-Source
-~~~~~~
+      Harman74.cor
 
-Harman, H. H. (1976) *Modern Factor Analysis*, Third Edition Revised,
-University of Chicago Press, Table 7.4.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Harman, H. H. (1976) *Modern Factor Analysis*, Third Edition Revised,
+   University of Chicago Press, Table 7.4.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(stats)
-   (Harman74.FA <- factanal(factors = 1, covmat = Harman74.cor))
-   for(factors in 2:5) print(update(Harman74.FA, factors = factors))
-   Harman74.FA <- factanal(factors = 5, covmat = Harman74.cor,
-                           rotation = "promax")
-   print(Harman74.FA$loadings, sort = TRUE)
+   ::
+
+      require(stats)
+      (Harman74.FA <- factanal(factors = 1, covmat = Harman74.cor))
+      for(factors in 2:5) print(update(Harman74.FA, factors = factors))
+      Harman74.FA <- factanal(factors = 5, covmat = Harman74.cor,
+                              rotation = "promax")
+      print(Harman74.FA$loadings, sort = TRUE)

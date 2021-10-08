@@ -1,31 +1,33 @@
-========= ===============
-elecequip R Documentation
-========= ===============
+.. container::
 
-Electrical equipment manufactured in the Euro area.
----------------------------------------------------
+   ========= ===============
+   elecequip R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Electrical equipment manufactured in the Euro area.
+      :name: electrical-equipment-manufactured-in-the-euro-area.
 
-Monthly manufacture of electrical equipment: computer, electronic and
-optical products. January 1996 - March 2012. Data adjusted by working
-days; Euro area (17 countries). Industry new orders index. 2005=100.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Monthly manufacture of electrical equipment: computer, electronic and
+   optical products. January 1996 - March 2012. Data adjusted by working
+   days; Euro area (17 countries). Industry new orders index. 2005=100.
 
-Time series object of class ``ts``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   Time series object of class ``ts``.
 
-Eurostat.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Eurostat.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   autoplot(elecequip)
+      autoplot(elecequip)

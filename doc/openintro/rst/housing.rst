@@ -1,35 +1,37 @@
-======= ===============
-housing R Documentation
-======= ===============
+.. container::
 
-Simulated data set on student housing
--------------------------------------
+   ======= ===============
+   housing R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Simulated data set on student housing
+      :name: simulated-data-set-on-student-housing
 
-Each observation represents a simulated rent price for a student.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Each observation represents a simulated rent price for a student.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   housing
+   ::
 
-Format
-~~~~~~
+      housing
 
-A data frame with 75 observations on the following variable.
+   .. rubric:: Format
+      :name: format
 
-cost
-   a numeric vector
+   A data frame with 75 observations on the following variable.
 
-Examples
-~~~~~~~~
+   cost
+      a numeric vector
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
 
-   housing
+      housing

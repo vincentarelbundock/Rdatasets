@@ -1,87 +1,88 @@
-====== ===============
-Credit R Documentation
-====== ===============
+.. container::
 
-Credit Card Balance Data
-------------------------
+   ====== ===============
+   Credit R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Credit Card Balance Data
+      :name: credit-card-balance-data
 
-A simulated data set containing information on ten thousand customers.
-The aim here is to predict which customers will default on their credit
-card debt.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A simulated data set containing information on ten thousand
+   customers. The aim here is to predict which customers will default on
+   their credit card debt.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Credit
+   ::
 
-Format
-~~~~~~
+      Credit
 
-A data frame with 10000 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``ID``
-   Identification
+   A data frame with 10000 observations on the following 4 variables.
 
-``Income``
-   Income in $10,000's
+   ``ID``
+      Identification
 
-``Limit``
-   Credit limit
+   ``Income``
+      Income in $1,000's
 
-``Rating``
-   Credit rating
+   ``Limit``
+      Credit limit
 
-``Cards``
-   Number of credit cards
+   ``Rating``
+      Credit rating
 
-``Age``
-   Age in years
+   ``Cards``
+      Number of credit cards
 
-``Education``
-   Number of years of education
+   ``Age``
+      Age in years
 
-``Gender``
-   A factor with levels ``Male`` and ``Female``
+   ``Education``
+      Number of years of education
 
-``Student``
-   A factor with levels ``No`` and ``Yes`` indicating whether the
-   individual was a student
+   ``Gender``
+      A factor with levels ``Male`` and ``Female``
 
-``Married``
-   A factor with levels ``No`` and ``Yes`` indicating whether the
-   individual was married
+   ``Student``
+      A factor with levels ``No`` and ``Yes`` indicating whether the
+      individual was a student
 
-``Ethnicity``
-   A factor with levels ``African American``, ``Asian``, and
-   ``Caucasian`` indicating the individual's ethnicity
+   ``Married``
+      A factor with levels ``No`` and ``Yes`` indicating whether the
+      individual was married
 
-``Balance``
-   Average credit card balance in $.
+   ``Ethnicity``
+      A factor with levels ``African American``, ``Asian``, and
+      ``Caucasian`` indicating the individual's ethnicity
 
-Source
-~~~~~~
+   ``Balance``
+      Average credit card balance in $.
 
-Simulated data, with thanks to Albert Kim for pointing out that this was
-omitted, and supplying the data and man documentation page on Oct 19,
-2017
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Simulated data, with thanks to Albert Kim for pointing out that this
+   was omitted, and supplying the data and man documentation page on Oct
+   19, 2017
 
-James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
-Introduction to Statistical Learning with applications in R*,
-`www.StatLearning.com <www.StatLearning.com>`__, Springer-Verlag, New
-York
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
+   Introduction to Statistical Learning with applications in R*,
+   https://www.statlearning.com, Springer-Verlag, New York
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   summary(Credit)
-   lm(Balance ~ Student + Limit, data=Credit)
+   ::
+
+      summary(Credit)
+      lm(Balance ~ Student + Limit, data=Credit)

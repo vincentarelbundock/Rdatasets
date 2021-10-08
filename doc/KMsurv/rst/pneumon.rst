@@ -1,75 +1,78 @@
-======= ===============
-pneumon R Documentation
-======= ===============
+.. container::
 
-data from Section 1.13
-----------------------
+   ======= ===============
+   pneumon R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: data from Section 1.13
+      :name: data-from-section-1.13
 
-The ``pneumon`` data frame has 3470 rows and 15 columns.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   The ``pneumon`` data frame has 3470 rows and 15 columns.
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-chldage
-   Age child had pneumonia, months
+   This data frame contains the following columns:
 
-hospital
-   Indicator for hospitalization for pneumonia (1=yes, 0=no)
+   chldage
+      Age child had pneumonia, months
 
-mthage
-   Age of the mother, years
+   hospital
+      Indicator for hospitalization for pneumonia (1=yes, 0=no)
 
-urban
-   Urban environment for mother (1=yes, 0=no)
+   mthage
+      Age of the mother, years
 
-alcohol
-   Alcohol use by mother during pregnancy (1=yes, 0=no)
+   urban
+      Urban environment for mother (1=yes, 0=no)
 
-smoke
-   Cigarette use by mother during pregnancy (1=yes, 0=no)
+   alcohol
+      Alcohol use by mother during pregnancy (1=yes, 0=no)
 
-region
-   Region of the coutry (1=northeast, 2=north central, 3=south, 4=west)
+   smoke
+      Cigarette use by mother during pregnancy (1=yes, 0=no)
 
-poverty
-   Mother at poverty level (1=yes, 0=no)
+   region
+      Region of the coutry (1=northeast, 2=north central, 3=south,
+      4=west)
 
-bweight
-   Normal birthweight (>5.5 lbs.) (1=yes, 0=no)
+   poverty
+      Mother at poverty level (1=yes, 0=no)
 
-race
-   Race of the mother (1=white, 2=black, 3=other)
+   bweight
+      Normal birthweight (>5.5 lbs.) (1=yes, 0=no)
 
-education
-   Education of the mother, years of school
+   race
+      Race of the mother (1=white, 2=black, 3=other)
 
-nsibs
-   Number of siblings of the child
+   education
+      Education of the mother, years of school
 
-wmonth
-   Month the child was weaned
+   nsibs
+      Number of siblings of the child
 
-sfmonth
-   Month the child on solid food
+   wmonth
+      Month the child was weaned
 
-agepn
-   Age child in the hospital for pneumonia, months
+   sfmonth
+      Month the child on solid food
 
-Source
-~~~~~~
+   agepn
+      Age child in the hospital for pneumonia, months
 
-Klein and Moeschberger (1997) *Survival Analysis Techniques for Censored
-and truncated data*, Springer. *National Longitudinal Survey of Youth
-Handbook* The Ohio State University, 1995.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Klein and Moeschberger (1997) *Survival Analysis Techniques for
+   Censored and truncated data*, Springer. *National Longitudinal Survey
+   of Youth Handbook* The Ohio State University, 1995.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(pneumon)
+   ::
+
+      data(pneumon)

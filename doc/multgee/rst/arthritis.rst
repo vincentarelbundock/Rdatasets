@@ -1,62 +1,64 @@
-========= ===============
-arthritis R Documentation
-========= ===============
+.. container::
 
-Rheumatoid Arthritis Clinical Trial
------------------------------------
+   ========= ===============
+   arthritis R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Rheumatoid Arthritis Clinical Trial
+      :name: rheumatoid-arthritis-clinical-trial
 
-Rheumatoid self-assessment scores for 302 patients, measured on a
-five-level ordinal response scale at three follow-up times.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Rheumatoid self-assessment scores for 302 patients, measured on a
+   five-level ordinal response scale at three follow-up times.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   arthritis
+   ::
 
-Format
-~~~~~~
+      arthritis
 
-A data frame with 906 observations on the following 7 variables:
+   .. rubric:: Format
+      :name: format
 
-id
-   Patient identifier variable.
+   A data frame with 906 observations on the following 7 variables:
 
-y
-   Self-assessment score of rheumatoid arthritis measured on a
-   five-level ordinal response scale.
+   id
+      Patient identifier variable.
 
-sex
-   Coded as (1) for female and (2) for male.
+   y
+      Self-assessment score of rheumatoid arthritis measured on a
+      five-level ordinal response scale.
 
-age
-   Recorded at the baseline.
+   sex
+      Coded as (1) for female and (2) for male.
 
-trt
-   Treatment group variable, coded as (1) for the placebo group and (2)
-   for the drug group.
+   age
+      Recorded at the baseline.
 
-baseline
-   Self-assessment score of rheumatoid arthritis at the baseline.
+   trt
+      Treatment group variable, coded as (1) for the placebo group and
+      (2) for the drug group.
 
-time
-   Follow-up time recorded in months.
+   baseline
+      Self-assessment score of rheumatoid arthritis at the baseline.
 
-Source
-~~~~~~
+   time
+      Follow-up time recorded in months.
 
-Lipsitz, S.R. and Kim, K. and Zhao, L. (1994) Analysis of repeated
-categorical data using generalized estimating equations. *Statistics in
-Medicine*, **13**, 1149–1163.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Lipsitz, S.R. and Kim, K. and Zhao, L. (1994) Analysis of repeated
+   categorical data using generalized estimating equations. *Statistics
+   in Medicine*, **13**, 1149–1163.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(arthritis)
-   str(arthritis)
+   ::
+
+      data(arthritis)
+      str(arthritis)

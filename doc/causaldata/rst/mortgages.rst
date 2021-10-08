@@ -1,64 +1,67 @@
-========= ===============
-mortgages R Documentation
-========= ===============
+.. container::
 
-Data from "How do Mortgage Subsidies Affect Home Ownership? Evidence from the Mid-Century GI Bills"
----------------------------------------------------------------------------------------------------
+   ========= ===============
+   mortgages R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from "How do Mortgage Subsidies Affect Home
+      Ownership? Evidence from the Mid-Century GI Bills"
+      :name: data-from-how-do-mortgage-subsidies-affect-home-ownership-evidence-from-the-mid-century-gi-bills
 
-The ``mortgages`` data contains data from Fetter (2015) on home
-ownership rates by men, focusing on whether they were born at the right
-time to be eligible for mortgage subsidies based on their military
-service.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``mortgages`` data contains data from Fetter (2015) on home
+   ownership rates by men, focusing on whether they were born at the
+   right time to be eligible for mortgage subsidies based on their
+   military service.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   mortgages
+   ::
 
-Format
-~~~~~~
+      mortgages
 
-A data frame with 214144 rows and 6 variables
+   .. rubric:: Format
+      :name: format
 
-bpl
-   Birth State
+   A data frame with 214144 rows and 6 variables
 
-qob
-   Quarter of birth
+   bpl
+      Birth State
 
-nonwhite
-   White/nonwhite race indicator. 1 = Nonwhite
+   qob
+      Quarter of birth
 
-vet_wwko
-   Veteran of either the Korean war or World War II
+   nonwhite
+      White/nonwhite race indicator. 1 = Nonwhite
 
-home_ownership
-   Owns a home
+   vet_wwko
+      Veteran of either the Korean war or World War II
 
-qob_minus_kw
-   Quarter of birth centered on eligibility for mortgage subsidy (0+ =
-   eligible)
+   home_ownership
+      Owns a home
 
-Details
-~~~~~~~
+   qob_minus_kw
+      Quarter of birth centered on eligibility for mortgage subsidy (0+
+      = eligible)
 
-This data is used in the *Regression Discontinuity* chapter of *The
-Effect*.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This data is used in the *Regression Discontinuity* chapter of *The
+   Effect*.
 
-Fetter, D.K., 2013. How do mortgage subsidies affect home ownership?
-Evidence from the mid-century GI bills. *American Economic Journal:
-Economic Policy*, 5(2), pp.111-47.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Fetter, D.K., 2013. How do mortgage subsidies affect home ownership?
+   Evidence from the mid-century GI bills. *American Economic Journal:
+   Economic Policy*, 5(2), pp.111-47.
 
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design
-and Causality. https://theeffectbook.net.
+   .. rubric:: References
+      :name: references
+
+   Huntington-Klein. 2021. The Effect: An Introduction to Research
+   Design and Causality. https://theeffectbook.net.

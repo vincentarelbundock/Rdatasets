@@ -1,30 +1,32 @@
-==== ===============
-qgas R Documentation
-==== ===============
+.. container::
 
-Quarterly Australian Gas Production
------------------------------------
+   ==== ===============
+   qgas R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Quarterly Australian Gas Production
+      :name: quarterly-australian-gas-production
 
-Total quarterly gas production in Australia (in petajoules) from 1956:Q1
-to 2010:Q2.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Total quarterly gas production in Australia (in petajoules) from
+   1956:Q1 to 2010:Q2.
 
-Quarterly time series of class ``ts``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   Quarterly time series of class ``ts``.
 
-Australian Bureau of Statistics. Cat. 8301.0.55.001.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Australian Bureau of Statistics. Cat. 8301.0.55.001.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   autoplot(qgas)
+      autoplot(qgas)

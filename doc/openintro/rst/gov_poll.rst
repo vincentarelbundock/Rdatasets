@@ -1,45 +1,47 @@
-======== ===============
-gov_poll R Documentation
-======== ===============
+.. container::
 
-Pew Research poll on government approval ratings
-------------------------------------------------
+   ======== ===============
+   gov_poll R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Pew Research poll on government approval ratings
+      :name: pew-research-poll-on-government-approval-ratings
 
-The poll's focus is on Obama and then Democrats and Republicans in
-Congress.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The poll's focus is on Obama and then Democrats and Republicans in
+   Congress.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   gov_poll
+   ::
 
-Format
-~~~~~~
+      gov_poll
 
-A data frame with 4223 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-poll
-   a factor with levels ``approve`` ``disapprove``
+   A data frame with 4223 observations on the following 2 variables.
 
-eval
-   a factor with levels ``Democrats`` ``Obama`` ``Republicans``
+   poll
+      a factor with levels ``approve`` ``disapprove``
 
-Source
-~~~~~~
+   eval
+      a factor with levels ``Democrats`` ``Obama`` ``Republicans``
 
-See the Pew Research website:
-www.people-press.org/2012/03/14/romney-leads-gop-contest-trails-in-
-matchup-with-obama. The counts in Table 6.19 are approximate.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   See the Pew Research website:
+   www.people-press.org/2012/03/14/romney-leads-gop-contest-trails-in-
+   matchup-with-obama. The counts in Table 6.19 are approximate.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   gov_poll
+      gov_poll

@@ -1,60 +1,63 @@
-======= ===============
-biomass R Documentation
-======= ===============
+.. container::
 
-Biomass Data
-------------
+   ======= ===============
+   biomass R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Biomass Data
+      :name: biomass-data
 
-The ``biomass`` data frame has 135 rows and 8 columns. The
-``rainforest`` data frame is a subset of this one.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``biomass`` data frame has 135 rows and 8 columns. The
+   ``rainforest`` data frame is a subset of this one.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   biomass
+   ::
 
-Format
-~~~~~~
+      biomass
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-dbh
-   a numeric vector
+   This data frame contains the following columns:
 
-wood
-   a numeric vector
+   dbh
+      a numeric vector
 
-bark
-   a numeric vector
+   wood
+      a numeric vector
 
-fac26
-   a factor with 3 levels
+   bark
+      a numeric vector
 
-root
-   a numeric vector
+   fac26
+      a factor with 3 levels
 
-rootsk
-   a numeric vector
+   root
+      a numeric vector
 
-branch
-   a numeric vector
+   rootsk
+      a numeric vector
 
-species
-   a factor with levels ``Acacia mabellae``, ``C. fraseri``,
-   ``Acmena smithii``, ``B. myrtifolia``
+   branch
+      a numeric vector
 
-Source
-~~~~~~
+   species
+      a factor with levels ``Acacia mabellae``, ``C. fraseri``,
+      ``Acmena smithii``, ``B. myrtifolia``
 
-J. Ash, Australian National University
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   J. Ash, Australian National University
 
-Ash, J. and Helman, C. (1990) Floristics and vegetation biomass of a
-forest catchment, Kioloa, south coastal N.S.W. Cunninghamia, 2: 167-182.
+   .. rubric:: References
+      :name: references
+
+   Ash, J. and Helman, C. (1990) Floristics and vegetation biomass of a
+   forest catchment, Kioloa, south coastal N.S.W. Cunninghamia, 2:
+   167-182.

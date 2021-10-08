@@ -1,65 +1,67 @@
-======= ===============
-animals R Documentation
-======= ===============
+.. container::
 
-Attributes of Animals
----------------------
+   ======= ===============
+   animals R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Attributes of Animals
+      :name: attributes-of-animals
 
-This data set considers 6 binary attributes for 20 animals.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data set considers 6 binary attributes for 20 animals.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(animals)
+   ::
 
-Format
-~~~~~~
+      data(animals)
 
-A data frame with 20 observations on 6 variables:
+   .. rubric:: Format
+      :name: format
 
-====== === ==============
-[ , 1] war warm-blooded
-[ , 2] fly can fly
-[ , 3] ver vertebrate
-[ , 4] end endangered
-[ , 5] gro live in groups
-[ , 6] hai have hair
-\          
-====== === ==============
+   A data frame with 20 observations on 6 variables:
 
-All variables are encoded as 1 = 'no', 2 = 'yes'.
+   ====== === ==============
+   [ , 1] war warm-blooded
+   [ , 2] fly can fly
+   [ , 3] ver vertebrate
+   [ , 4] end endangered
+   [ , 5] gro live in groups
+   [ , 6] hai have hair
+   \          
+   ====== === ==============
 
-Details
-~~~~~~~
+   All variables are encoded as 1 = 'no', 2 = 'yes'.
 
-This dataset is useful for illustrating monothetic (only a single
-variable is used for each split) hierarchical clustering.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This dataset is useful for illustrating monothetic (only a single
+   variable is used for each split) hierarchical clustering.
 
-Leonard Kaufman and Peter J. Rousseeuw (1990): *Finding Groups in Data*
-(pp 297ff). New York: Wiley.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Leonard Kaufman and Peter J. Rousseeuw (1990): *Finding Groups in
+   Data* (pp 297ff). New York: Wiley.
 
-see Struyf, Hubert & Rousseeuw (1996), in ``agnes``.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   see Struyf, Hubert & Rousseeuw (1996), in ``agnes``.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(animals)
-   apply(animals,2, table) # simple overview
+   ::
 
-   ma <- mona(animals)
-   ma
-   ## Plot similar to Figure 10 in Struyf et al (1996)
-   plot(ma)
+      data(animals)
+      apply(animals,2, table) # simple overview
+
+      ma <- mona(animals)
+      ma
+      ## Plot similar to Figure 10 in Struyf et al (1996)
+      plot(ma)

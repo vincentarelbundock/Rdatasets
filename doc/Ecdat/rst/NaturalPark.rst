@@ -1,69 +1,72 @@
-=========== ===============
-NaturalPark R Documentation
-=========== ===============
+.. container::
 
-Willingness to Pay for the Preservation of the Alentejo Natural Park
---------------------------------------------------------------------
+   =========== ===============
+   NaturalPark R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Willingness to Pay for the Preservation of the Alentejo
+      Natural Park
+      :name: willingness-to-pay-for-the-preservation-of-the-alentejo-natural-park
 
-a cross-section from 1987
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 312
+   a cross-section from 1987
 
-*observation* : individuals
+   *number of observations* : 312
 
-*country* : Portugal
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : Portugal
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(NaturalPark)
+   ::
 
-Format
-~~~~~~
+      data(NaturalPark)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-bid1
-   initial bid, in euro
+   A dataframe containing :
 
-bidh
-   higher bid
+   bid1
+      initial bid, in euro
 
-bidl
-   lower bid
+   bidh
+      higher bid
 
-answers
-   a factor with levels (``nn``, ``ny``, ``yn``, ``yy``)
+   bidl
+      lower bid
 
-age
-   age in 6 classes
+   answers
+      a factor with levels (``nn``, ``ny``, ``yn``, ``yy``)
 
-sex
-   a factor with levels (male,female)
+   age
+      age in 6 classes
 
-income
-   income in 8 classes
+   sex
+      a factor with levels (male,female)
 
-Source
-~~~~~~
+   income
+      income in 8 classes
 
-Nunes, Paulo (2000) *Contingent Valuation of the Benefits of natural
-areas and its warmglow component*, PhD thesis 133, ``FETEW``, `KU
-Leuven <https://en.wikipedia.org/wiki/KU_Leuven>`__.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Nunes, Paulo (2000) *Contingent Valuation of the Benefits of natural
+   areas and its warmglow component*, PhD thesis 133, ``FETEW``, `KU
+   Leuven <https://en.wikipedia.org/wiki/KU_Leuven>`__.
 
-Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley and
-Sons, chapter 7.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+   and Sons, chapter 7.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

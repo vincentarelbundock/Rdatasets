@@ -1,84 +1,86 @@
-=== ===============
-ais R Documentation
-=== ===============
+.. container::
 
-Australian athletes data set
-----------------------------
+   === ===============
+   ais R Documentation
+   === ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Australian athletes data set
+      :name: australian-athletes-data-set
 
-These data were collected in a study of how data on various
-characteristics of the bloood varied with sport body size and sex of the
-athlete.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These data were collected in a study of how data on various
+   characteristics of the bloood varied with sport body size and sex of
+   the athlete.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(ais)
+   ::
 
-Format
-~~~~~~
+      data(ais)
 
-A data frame with 202 observations on the following 13 variables.
+   .. rubric:: Format
+      :name: format
 
-rcc
-   red blood cell count, in
+   A data frame with 202 observations on the following 13 variables.
 
-wcc
-   while blood cell count, in per liter
+   rcc
+      red blood cell count, in
 
-hc
-   hematocrit, percent
+   wcc
+      while blood cell count, in per liter
 
-hg
-   hemaglobin concentration, in g per decaliter
+   hc
+      hematocrit, percent
 
-ferr
-   plasma ferritins, ng
+   hg
+      hemaglobin concentration, in g per decaliter
 
-bmi
-   Body mass index, kg
+   ferr
+      plasma ferritins, ng
 
-ssf
-   sum of skin folds
+   bmi
+      Body mass index, kg
 
-pcBfat
-   percent Body fat
+   ssf
+      sum of skin folds
 
-lbm
-   lean body mass, kg
+   pcBfat
+      percent Body fat
 
-ht
-   height, cm
+   lbm
+      lean body mass, kg
 
-wt
-   weight, kg
+   ht
+      height, cm
 
-sex
-   a factor with levels ``f`` ``m``
+   wt
+      weight, kg
 
-sport
-   a factor with levels ``B_Ball`` ``Field`` ``Gym`` ``Netball`` ``Row``
-   ``Swim`` ``T_400m`` ``T_Sprnt`` ``Tennis`` ``W_Polo``
+   sex
+      a factor with levels ``f`` ``m``
 
-Details
-~~~~~~~
+   sport
+      a factor with levels ``B_Ball`` ``Field`` ``Gym`` ``Netball``
+      ``Row`` ``Swim`` ``T_400m`` ``T_Sprnt`` ``Tennis`` ``W_Polo``
 
-Do blood hemoglobin concentrations of athletes in endurance-related
-events differ from those in power-related events?
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Do blood hemoglobin concentrations of athletes in endurance-related
+   events differ from those in power-related events?
 
-These data were the basis for the analyses that are reported in Telford
-and Cunningham (1991).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   These data were the basis for the analyses that are reported in
+   Telford and Cunningham (1991).
 
-Telford, R.D. and Cunningham, R.B. 1991. Sex, sport and body-size
-dependency of hematology in highly trained athletes. Medicine and
-Science in Sports and Exercise 23: 788-794.
+   .. rubric:: References
+      :name: references
+
+   Telford, R.D. and Cunningham, R.B. 1991. Sex, sport and body-size
+   dependency of hematology in highly trained athletes. Medicine and
+   Science in Sports and Exercise 23: 788-794.

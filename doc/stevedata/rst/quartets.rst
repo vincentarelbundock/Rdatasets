@@ -1,46 +1,49 @@
-======== ===============
-quartets R Documentation
-======== ===============
+.. container::
 
-Anscombe's (1973) Quartets
---------------------------
+   ======== ===============
+   quartets R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Anscombe's (1973) Quartets
+      :name: anscombes-1973-quartets
 
-These are four x-y data sets, combined into a long format, which have
-the same traditional statistical properties (mean, variance,
-correlation, regression line, etc.). However, they look quite different.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   These are four x-y data sets, combined into a long format, which have
+   the same traditional statistical properties (mean, variance,
+   correlation, regression line, etc.). However, they look quite
+   different.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   quartets
+   ::
 
-Format
-~~~~~~
+      quartets
 
-A data frame with 44 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``group``
-   a categorical identifier for the quartet
+   A data frame with 44 observations on the following 3 variables.
 
-``x``
-   a continuous variable
+   ``group``
+      a categorical identifier for the quartet
 
-``y``
-   a continuous variable
+   ``x``
+      a continuous variable
 
-Details
-~~~~~~~
+   ``y``
+      a continuous variable
 
-Data come default in R, but I elected to change the format to be a bit
-more accessible.
+   .. rubric:: Details
+      :name: details
 
-References
-~~~~~~~~~~
+   Data come default in R, but I elected to change the format to be a
+   bit more accessible.
 
-Anscombe, Francis J. (1973). "Graphs in Statistical Analysis." *The
-American Statistician* 27: 17–21.
+   .. rubric:: References
+      :name: references
+
+   Anscombe, Francis J. (1973). "Graphs in Statistical Analysis." *The
+   American Statistician* 27: 17–21.

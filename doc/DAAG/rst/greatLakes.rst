@@ -1,46 +1,48 @@
-========== ===============
-greatLakes R Documentation
-========== ===============
+.. container::
 
-Yearly averages of Great Lake heights: 1918 - 2009
---------------------------------------------------
+   ========== ===============
+   greatLakes R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Yearly averages of Great Lake heights: 1918 - 2009
+      :name: yearly-averages-of-great-lake-heights-1918---2009
 
-Heights, stored as a multivariate time series, are for the lakes Erie,
-Michigan/Huron, Ontario and St Clair
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Heights, stored as a multivariate time series, are for the lakes
+   Erie, Michigan/Huron, Ontario and St Clair
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(greatLakes)
+   ::
 
-Format
-~~~~~~
+      data(greatLakes)
 
-The format is: mts [1:92, 1:4] 174 174 174 174 174 ... - attr(*,
-"dimnames")=List of 2 ..$ : NULL ..$ : chr [1:4] "Erie" "michHuron"
-"Ontario" "StClair" - attr(*, "tsp")= num [1:3] 1918 2009 1 - attr(*,
-"class")= chr [1:2] "mts" "ts"
+   .. rubric:: Format
+      :name: format
 
-Details
-~~~~~~~
+   The format is: mts [1:92, 1:4] 174 174 174 174 174 ... - attr(*,
+   "dimnames")=List of 2 ..$ : NULL ..$ : chr [1:4] "Erie" "michHuron"
+   "Ontario" "StClair" - attr(*, "tsp")= num [1:3] 1918 2009 1 - attr(*,
+   "class")= chr [1:2] "mts" "ts"
 
-For more details, go to the website that is the source of the data.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   For more details, go to the website that is the source of the data.
 
-http://www.lre.usace.army.mil/Missions/GreatLakesInformation/GreatLakesWaterLevels/HistoricalData.aspx
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   http://www.lre.usace.army.mil/Missions/GreatLakesInformation/GreatLakesWaterLevels/HistoricalData.aspx
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(greatLakes)
-   plot(greatLakes)
-   ## maybe str(greatLakes)
+   ::
+
+      data(greatLakes)
+      plot(greatLakes)
+      ## maybe str(greatLakes)

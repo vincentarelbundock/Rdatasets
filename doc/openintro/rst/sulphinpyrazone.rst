@@ -1,45 +1,47 @@
-=============== ===============
-sulphinpyrazone R Documentation
-=============== ===============
+.. container::
 
-Treating heart attacks
-----------------------
+   =============== ===============
+   sulphinpyrazone R Documentation
+   =============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Treating heart attacks
+      :name: treating-heart-attacks
 
-Experiment data for studying the efficacy of treating patients who have
-had a heart attack with Sulphinpyrazone.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Experiment data for studying the efficacy of treating patients who
+   have had a heart attack with Sulphinpyrazone.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   sulphinpyrazone
+   ::
 
-Format
-~~~~~~
+      sulphinpyrazone
 
-A data frame with 1475 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-group
-   a factor with levels ``control`` ``treatment``
+   A data frame with 1475 observations on the following 2 variables.
 
-outcome
-   a factor with levels ``died`` ``lived``
+   group
+      a factor with levels ``control`` ``treatment``
 
-Source
-~~~~~~
+   outcome
+      a factor with levels ``died`` ``lived``
 
-Anturane Reinfarction Trial Research Group. 1980. Sulfinpyrazone in the
-prevention of sudden death after myocardial infarction. New England
-Journal of Medicine 302(5):250-256.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Anturane Reinfarction Trial Research Group. 1980. Sulfinpyrazone in
+   the prevention of sudden death after myocardial infarction. New
+   England Journal of Medicine 302(5):250-256.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   sulphinpyrazone
+      sulphinpyrazone

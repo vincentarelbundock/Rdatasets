@@ -1,97 +1,101 @@
-====== ===============
-gtcars R Documentation
-====== ===============
+.. container::
 
-Deluxe automobiles from the 2014-2017 period
---------------------------------------------
+   ====== ===============
+   gtcars R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Deluxe automobiles from the 2014-2017 period
+      :name: deluxe-automobiles-from-the-2014-2017-period
 
-Expensive and fast cars. Not your father's ``mtcars``. Each row
-describes a car of a certain make, model, year, and trim. Basic
-specifications such as horsepower, torque, EPA MPG ratings, type of
-drivetrain, and transmission characteristics are provided. The country
-of origin for the car manufacturer is also given.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Expensive and fast cars. Not your father's ``mtcars``. Each row
+   describes a car of a certain make, model, year, and trim. Basic
+   specifications such as horsepower, torque, EPA MPG ratings, type of
+   drivetrain, and transmission characteristics are provided. The
+   country of origin for the car manufacturer is also given.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   gtcars
+   ::
 
-Format
-~~~~~~
+      gtcars
 
-A tibble with 47 rows and 15 variables:
+   .. rubric:: Format
+      :name: format
 
-mfr
-   The name of the car manufacturer
+   A tibble with 47 rows and 15 variables:
 
-model
-   The car's model name
+   mfr
+      The name of the car manufacturer
 
-year
-   The car's model year
+   model
+      The car's model name
 
-trim
-   A short description of the car model's trim
+   year
+      The car's model year
 
-bdy_style
-   An identifier of the car's body style, which is either ``coupe``,
-   ``convertible``, ``sedan``, or ``hatchback``
+   trim
+      A short description of the car model's trim
 
-hp, hp_rpm
-   The car's horsepower and the associated RPM level
+   bdy_style
+      An identifier of the car's body style, which is either ``coupe``,
+      ``convertible``, ``sedan``, or ``hatchback``
 
-trq, trq_rpm
-   The car's torque and the associated RPM level
+   hp, hp_rpm
+      The car's horsepower and the associated RPM level
 
-mpg_c, mpg_h
-   The miles per gallon fuel efficiency rating for city and highway
-   driving
+   trq, trq_rpm
+      The car's torque and the associated RPM level
 
-drivetrain
-   The car's drivetrain which, for this dataset is either ``rwd`` (Rear
-   Wheel Drive) or ``awd`` (All Wheel Drive)
+   mpg_c, mpg_h
+      The miles per gallon fuel efficiency rating for city and highway
+      driving
 
-trsmn
-   The codified transmission type, where the number part is the number
-   of gears; the car could have automatic transmission (``a``), manual
-   transmission (``m``), an option to switch between both types
-   (``am``), or, direct drive (``dd``)
+   drivetrain
+      The car's drivetrain which, for this dataset is either ``rwd``
+      (Rear Wheel Drive) or ``awd`` (All Wheel Drive)
 
-ctry_origin
-   The country name for where the vehicle manufacturer is headquartered
+   trsmn
+      The codified transmission type, where the number part is the
+      number of gears; the car could have automatic transmission
+      (``a``), manual transmission (``m``), an option to switch between
+      both types (``am``), or, direct drive (``dd``)
 
-Details
-~~~~~~~
+   ctry_origin
+      The country name for where the vehicle manufacturer is
+      headquartered
 
-All of the ``gtcars`` have something else in common (aside from the high
-asking prices): they are all grand tourer vehicles. These are proper GT
-cars that blend pure driving thrills with a level of comfort that is
-more expected from a fine limousine (e.g., a Rolls-Royce Phantom EWB).
-You'll find that, with these cars, comfort is emphasized over all-out
-performance. Nevertheless, the driving experience should also mean
-motoring at speed, doing so in style and safety.
+   .. rubric:: Details
+      :name: details
 
-Function ID
-~~~~~~~~~~~
+   All of the ``gtcars`` have something else in common (aside from the
+   high asking prices): they are all grand tourer vehicles. These are
+   proper GT cars that blend pure driving thrills with a level of
+   comfort that is more expected from a fine limousine (e.g., a
+   Rolls-Royce Phantom EWB). You'll find that, with these cars, comfort
+   is emphasized over all-out performance. Nevertheless, the driving
+   experience should also mean motoring at speed, doing so in style and
+   safety.
 
-11-3
+   .. rubric:: Function ID
+      :name: function-id
 
-See Also
-~~~~~~~~
+   11-3
 
-Other Datasets: ``countrypops``, ``exibble``, ``pizzaplace``, ``sp500``,
-``sza``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   Other Datasets: ``countrypops``, ``exibble``, ``pizzaplace``,
+   ``sp500``, ``sza``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   # Here is a glimpse at the data
-   # available in `gtcars`
-   dplyr::glimpse(gtcars)
+   ::
+
+      # Here is a glimpse at the data
+      # available in `gtcars`
+      dplyr::glimpse(gtcars)

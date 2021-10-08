@@ -1,59 +1,61 @@
-========== ===============
-WeldonDice R Documentation
-========== ===============
+.. container::
 
-Weldon's Dice Data
-------------------
+   ========== ===============
+   WeldonDice R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Weldon's Dice Data
+      :name: weldons-dice-data
 
-Data from Pearson (1900) about the frequency of 5s and 6s in throws of
-12 dice. Weldon tossed the dice 26,306 times and reported his results in
-a letter to Francis Galton on 1894-02-02.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from Pearson (1900) about the frequency of 5s and 6s in throws
+   of 12 dice. Weldon tossed the dice 26,306 times and reported his
+   results in a letter to Francis Galton on 1894-02-02.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("WeldonDice")
+   ::
 
-Format
-~~~~~~
+      data("WeldonDice")
 
-A 1-way table giving the frequency of a 5 or a 6 in 26,306 throws of 12
-dice where 10 indicates ‘10 or more’ 5s or 6s. The variable and its
-levels are
+   .. rubric:: Format
+      :name: format
 
-== ==== =============
-No Name Levels
-1  n56  0, 1, ..., 10
-\       
-== ==== =============
+   A 1-way table giving the frequency of a 5 or a 6 in 26,306 throws of
+   12 dice where 10 indicates ‘10 or more’ 5s or 6s. The variable and
+   its levels are
 
-Source
-~~~~~~
+   == ==== =============
+   No Name Levels
+   1  n56  0, 1, ..., 10
+   \       
+   == ==== =============
 
-M. Friendly (2000), Visualizing Categorical Data, pages 20–21.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   M. Friendly (2000), Visualizing Categorical Data, pages 20–21.
 
-K. Pearson (1900), On the criterion that a given system of deviations
-from the probable in the case of a correlated system of variables is
-such that it can be reasonably supposed to have arisen by random
-sampling, *Philosophical Magazine*, **50** (5th series), 157–175.
+   .. rubric:: References
+      :name: references
 
-M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute, Cary,
-NC.
+   K. Pearson (1900), On the criterion that a given system of deviations
+   from the probable in the case of a correlated system of variables is
+   such that it can be reasonably supposed to have arisen by random
+   sampling, *Philosophical Magazine*, **50** (5th series), 157–175.
 
-Examples
-~~~~~~~~
+   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+   Cary, NC.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("WeldonDice")
-   gf <- goodfit(WeldonDice, type = "binomial")
-   summary(gf)
-   plot(gf)
+   ::
+
+      data("WeldonDice")
+      gf <- goodfit(WeldonDice, type = "binomial")
+      summary(gf)
+      plot(gf)

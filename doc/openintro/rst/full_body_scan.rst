@@ -1,45 +1,47 @@
-============== ===============
-full_body_scan R Documentation
-============== ===============
+.. container::
 
-Poll about use of full-body airport scanners
---------------------------------------------
+   ============== ===============
+   full_body_scan R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Poll about use of full-body airport scanners
+      :name: poll-about-use-of-full-body-airport-scanners
 
-Poll about use of full-body airport scanners, where about 4-in-5 people
-supported the use of the scanners.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Poll about use of full-body airport scanners, where about 4-in-5
+   people supported the use of the scanners.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   full_body_scan
+   ::
 
-Format
-~~~~~~
+      full_body_scan
 
-A data frame with 1137 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-answer
-   a factor with levels ``do not know / no answer`` ``should``
-   ``should not``
+   A data frame with 1137 observations on the following 2 variables.
 
-party.affiliation
-   a factor with levels ``Democrat`` ``Independent`` ``Republican``
+   answer
+      a factor with levels ``do not know / no answer`` ``should``
+      ``should not``
 
-Source
-~~~~~~
+   party.affiliation
+      a factor with levels ``Democrat`` ``Independent`` ``Republican``
 
-S. Condon. Poll: 4 in 5 Support Full-Body Airport Scanners. In: CBS News
-(2010).
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   S. Condon. Poll: 4 in 5 Support Full-Body Airport Scanners. In: CBS
+   News (2010).
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   full_body_scan
+      full_body_scan

@@ -1,115 +1,117 @@
-======= ===============
-Kershaw R Documentation
-======= ===============
+.. container::
 
-Kershaw Pitch Data
-------------------
+   ======= ===============
+   Kershaw R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Kershaw Pitch Data
+      :name: kershaw-pitch-data
 
-Pitch-by-pitch data for baseball pitcher Clayton Kershaw in the 2013
-season
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Pitch-by-pitch data for baseball pitcher Clayton Kershaw in the 2013
+   season
 
-A data frame with 3402 observations on the following 24 variables.
+   .. rubric:: Format
+      :name: format
 
-``BatterNumber``
-   Number of batters faced so far that game
+   A data frame with 3402 observations on the following 24 variables.
 
-``Outcome``
-   One of 14 possible results for a pitch (e.g. ``Ball``,
-   ``Ball In Dirt``, ``Called Strike``, ...,
-   ``Swinging Strike (Blocked))``
+   ``BatterNumber``
+      Number of batters faced so far that game
 
-``Class``
-   One of three classifications (``B``\ =ball, ``S``\ =strike, or
-   ``X``\ =in play)
+   ``Outcome``
+      One of 14 possible results for a pitch (e.g. ``Ball``,
+      ``Ball In Dirt``, ``Called Strike``, ...,
+      ``Swinging Strike (Blocked))``
 
-``Result``
-   From pitcher's perspective (``Neg``\ =ball or hit, ``Pos``\ =strike
-   or out)
+   ``Class``
+      One of three classifications (``B``\ =ball, ``S``\ =strike, or
+      ``X``\ =in play)
 
-``Swing``
-   Did the batter swing at the pitch? (``No`` or ``Yes``)
+   ``Result``
+      From pitcher's perspective (``Neg``\ =ball or hit,
+      ``Pos``\ =strike or out)
 
-``Time``
-   Date and time of the pitch (format ``yyyy-mm-ddThh:mm:ssZ``)
+   ``Swing``
+      Did the batter swing at the pitch? (``No`` or ``Yes``)
 
-``StartSpeed``
-   Speed leaving the pitcher's hand (in mph)
+   ``Time``
+      Date and time of the pitch (format ``yyyy-mm-ddThh:mm:ssZ``)
 
-``EndSpeed``
-   Speed crossing home plate (in mph)
+   ``StartSpeed``
+      Speed leaving the pitcher's hand (in mph)
 
-``HDev``
-   Horizontal movement (inches)
+   ``EndSpeed``
+      Speed crossing home plate (in mph)
 
-``VDev``
-   Vertical movement (inches)
+   ``HDev``
+      Horizontal movement (inches)
 
-``HPos``
-   Horizontal position at home plate (inches from center, positive is
-   catcher's right)
+   ``VDev``
+      Vertical movement (inches)
 
-``VPos``
-   Vertical position at home plate (inches above the ground)
+   ``HPos``
+      Horizontal position at home plate (inches from center, positive is
+      catcher's right)
 
-``PitchType``
-   Code for pitch type (``CH``\ =changeup, ``CU``\ =curve,
-   ``FF``\ =fastball, or ``SL``\ =slider)
+   ``VPos``
+      Vertical position at home plate (inches above the ground)
 
-``Zone``
-   1-9 in theoretical strike zone (upper left to lower right), 11-14 are
-   out of strike zone
+   ``PitchType``
+      Code for pitch type (``CH``\ =changeup, ``CU``\ =curve,
+      ``FF``\ =fastball, or ``SL``\ =slider)
 
-``Nasty``
-   A measure on a 0-100 scale of difficulty of the pitch to hit (100 is
-   most difficult)
+   ``Zone``
+      1-9 in theoretical strike zone (upper left to lower right), 11-14
+      are out of strike zone
 
-``Count``
-   Ball strike count (``0-0``, ``0-1``, ``0-2``, ``1-1``, ``1-2``,
-   ``2-1``, ``2-2``, ``3-1``, or ``3-2``)
+   ``Nasty``
+      A measure on a 0-100 scale of difficulty of the pitch to hit (100
+      is most difficult)
 
-``BallCount``
-   Number of balls before the pitch (0, 1, 2, or 3)
+   ``Count``
+      Ball strike count (``0-0``, ``0-1``, ``0-2``, ``1-1``, ``1-2``,
+      ``2-1``, ``2-2``, ``3-1``, or ``3-2``)
 
-``StrikeCount``
-   Number of strikes before the pitch (0, 1, or 2)
+   ``BallCount``
+      Number of balls before the pitch (0, 1, 2, or 3)
 
-``Inning``
-   Inning of the game
+   ``StrikeCount``
+      Number of strikes before the pitch (0, 1, or 2)
 
-``InningSide``
-   Portion of the inning (``bottom``\ = pitcher at home or
-   ``top``\ =pitcher away)
+   ``Inning``
+      Inning of the game
 
-``Outs``
-   Number of outs when the pitch is thrown
+   ``InningSide``
+      Portion of the inning (``bottom``\ = pitcher at home or
+      ``top``\ =pitcher away)
 
-``BatterHand``
-   Batter's stance (``L``\ =left or ``R``\ =right)
+   ``Outs``
+      Number of outs when the pitch is thrown
 
-``ABEvent``
-   Result of the at bat (several possibilities)
+   ``BatterHand``
+      Batter's stance (``L``\ =left or ``R``\ =right)
 
-``Batter``
-   Name of the batter faced
+   ``ABEvent``
+      Result of the at bat (several possibilities)
 
-Details
-~~~~~~~
+   ``Batter``
+      Name of the batter faced
 
-Dataset includes information for 3,402 individual pitches thrown by Los
-Angeles Dodger baseball pitcher Clayton Kershaw during the 2013 regular
-season when he won the Cy Young award as the best pitcher in the
-National League. Many variables are measured using Major League
-Baseball's PITCHf/x system that uses camera systems in each ballpark to
-track characteristics of each pitch thrown.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Dataset includes information for 3,402 individual pitches thrown by
+   Los Angeles Dodger baseball pitcher Clayton Kershaw during the 2013
+   regular season when he won the Cy Young award as the best pitcher in
+   the National League. Many variables are measured using Major League
+   Baseball's PITCHf/x system that uses camera systems in each ballpark
+   to track characteristics of each pitch thrown.
 
-Data scraped from the MLB GameDay website
-(http://gd2.mlb.com/components/game/mlb/) using pitchRx
+   .. rubric:: Source
+      :name: source
+
+   Data scraped from the MLB GameDay website
+   (http://gd2.mlb.com/components/game/mlb/) using pitchRx

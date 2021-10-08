@@ -1,103 +1,105 @@
-==== ===============
-udca R Documentation
-==== ===============
+.. container::
 
-Data from a trial of usrodeoxycholic acid
------------------------------------------
+   ==== ===============
+   udca R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from a trial of usrodeoxycholic acid
+      :name: data-from-a-trial-of-usrodeoxycholic-acid
 
-Data from a trial of ursodeoxycholic acid (UDCA) in patients with
-primary biliary cirrohosis (PBC).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from a trial of ursodeoxycholic acid (UDCA) in patients with
+   primary biliary cirrohosis (PBC).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   udca
-   udca2
-   data(udca, package="survival")
+   ::
 
-Format
-~~~~~~
+      udca
+      udca2
+      data(udca, package="survival")
 
-A data frame with 170 observations on the following 15 variables.
+   .. rubric:: Format
+      :name: format
 
-``id``
-   subject identifier
+   A data frame with 170 observations on the following 15 variables.
 
-``trt``
-   treatment of 0=placebo, 1=UDCA
+   ``id``
+      subject identifier
 
-``entry.dt``
-   date of entry into the study
+   ``trt``
+      treatment of 0=placebo, 1=UDCA
 
-``last.dt``
-   date of last on-study visit
+   ``entry.dt``
+      date of entry into the study
 
-``stage``
-   stage of disease
+   ``last.dt``
+      date of last on-study visit
 
-``bili``
-   bilirubin value at entry
+   ``stage``
+      stage of disease
 
-``riskscore``
-   the Mayo PBC risk score at entry
+   ``bili``
+      bilirubin value at entry
 
-``death.dt``
-   date of death
+   ``riskscore``
+      the Mayo PBC risk score at entry
 
-``tx.dt``
-   date of liver transplant
+   ``death.dt``
+      date of death
 
-``hprogress.dt``
-   date of histologic progression
+   ``tx.dt``
+      date of liver transplant
 
-``varices.dt``
-   appearance of esphogeal varices
+   ``hprogress.dt``
+      date of histologic progression
 
-``ascites.dt``
-   appearance of ascites
+   ``varices.dt``
+      appearance of esphogeal varices
 
-``enceph.dt``
-   appearance of encephalopathy
+   ``ascites.dt``
+      appearance of ascites
 
-``double.dt``
-   doubling of initial bilirubin
+   ``enceph.dt``
+      appearance of encephalopathy
 
-``worsen.dt``
-   worsening of symptoms by two stages
+   ``double.dt``
+      doubling of initial bilirubin
 
-Details
-~~~~~~~
+   ``worsen.dt``
+      worsening of symptoms by two stages
 
-This data set is used in the Therneau and Grambsh. The ``udca1`` data
-set contains the baseline variables along with the time until the first
-endpoint (any of death, transplant, ..., worsening). The ``udca2`` data
-set treats all of the endpoints as parallel events and has a stratum for
-each.
+   .. rubric:: Details
+      :name: details
 
-References
-~~~~~~~~~~
+   This data set is used in the Therneau and Grambsh. The ``udca1`` data
+   set contains the baseline variables along with the time until the
+   first endpoint (any of death, transplant, ..., worsening). The
+   ``udca2`` data set treats all of the endpoints as parallel events and
+   has a stratum for each.
 
-T. M. Therneau and P. M. Grambsch, Modeling survival data: extending the
-Cox model. Springer, 2000.
+   .. rubric:: References
+      :name: references
 
-K. D. Lindor, E. R. Dickson, W. P Baldus, R.A. Jorgensen, J. Ludwig, P.
-A. Murtaugh, J. M. Harrison, R. H. Weisner, M. L. Anderson, S. M. Lange,
-G. LeSage, S. S. Rossi and A. F. Hofman. Ursodeoxycholic acid in the
-treatment of primary biliary cirrhosis. Gastroenterology, 106:1284-1290,
-1994.
+   T. M. Therneau and P. M. Grambsch, Modeling survival data: extending
+   the Cox model. Springer, 2000.
 
-Examples
-~~~~~~~~
+   K. D. Lindor, E. R. Dickson, W. P Baldus, R.A. Jorgensen, J. Ludwig,
+   P. A. Murtaugh, J. M. Harrison, R. H. Weisner, M. L. Anderson, S. M.
+   Lange, G. LeSage, S. S. Rossi and A. F. Hofman. Ursodeoxycholic acid
+   in the treatment of primary biliary cirrhosis. Gastroenterology,
+   106:1284-1290, 1994.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   # values found in table 8.3 of the book
-   fit1 <- coxph(Surv(futime, status) ~ trt + log(bili) + stage,
-             cluster =id , data=udca1)
-   fit2 <- coxph(Surv(futime, status) ~ trt + log(bili) + stage +
-             strata(endpoint), cluster=id,  data=udca2)
+   ::
+
+      # values found in table 8.3 of the book
+      fit1 <- coxph(Surv(futime, status) ~ trt + log(bili) + stage,
+                cluster =id , data=udca1)
+      fit2 <- coxph(Surv(futime, status) ~ trt + log(bili) + stage +
+                strata(endpoint), cluster=id,  data=udca2)

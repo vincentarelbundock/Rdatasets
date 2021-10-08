@@ -1,54 +1,57 @@
-====== ===============
-wtloss R Documentation
-====== ===============
+.. container::
 
-Weight Loss Data from an Obese Patient
---------------------------------------
+   ====== ===============
+   wtloss R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Weight Loss Data from an Obese Patient
+      :name: weight-loss-data-from-an-obese-patient
 
-The data frame gives the weight, in kilograms, of an obese patient at 52
-time points over an 8 month period of a weight rehabilitation programme.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The data frame gives the weight, in kilograms, of an obese patient at
+   52 time points over an 8 month period of a weight rehabilitation
+   programme.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   wtloss
+   ::
 
-Format
-~~~~~~
+      wtloss
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``Days``
-   time in days since the start of the programme.
+   This data frame contains the following columns:
 
-``Weight``
-   weight in kilograms of the patient.
+   ``Days``
+      time in days since the start of the programme.
 
-Source
-~~~~~~
+   ``Weight``
+      weight in kilograms of the patient.
 
-Dr T. Davies, Adelaide.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Dr T. Davies, Adelaide.
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## IGNORE_RDIFF_BEGIN
-   wtloss.fm <- nls(Weight ~ b0 + b1*2^(-Days/th),
-       data = wtloss, start = list(b0=90, b1=95, th=120))
-   wtloss.fm
-   ## IGNORE_RDIFF_END
-   plot(wtloss)
-   with(wtloss, lines(Days, fitted(wtloss.fm)))
+   ::
+
+      ## IGNORE_RDIFF_BEGIN
+      wtloss.fm <- nls(Weight ~ b0 + b1*2^(-Days/th),
+          data = wtloss, start = list(b0=90, b1=95, th=120))
+      wtloss.fm
+      ## IGNORE_RDIFF_END
+      plot(wtloss)
+      with(wtloss, lines(Days, fitted(wtloss.fm)))

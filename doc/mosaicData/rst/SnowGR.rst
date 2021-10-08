@@ -1,85 +1,87 @@
-====== ===============
-SnowGR R Documentation
-====== ===============
+.. container::
 
-Snowfall data for Grand Rapids, MI
-----------------------------------
+   ====== ===============
+   SnowGR R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Snowfall data for Grand Rapids, MI
+      :name: snowfall-data-for-grand-rapids-mi
 
-Official snowfall data by month and season for Grand Rapids, MI, going
-back to 1893.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Official snowfall data by month and season for Grand Rapids, MI,
+   going back to 1893.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(SnowGR)
+   ::
 
-Format
-~~~~~~
+      data(SnowGR)
 
-A data frame with 119 observations of the following variables.
+   .. rubric:: Format
+      :name: format
 
--  ``SeasonStart`` Year in which season started (July is start of
-   season)
+   A data frame with 119 observations of the following variables.
 
--  ``SeasonEnd`` Year in which season ended (June is end of season)
+   -  ``SeasonStart`` Year in which season started (July is start of
+      season)
 
--  ``Jul`` Inches of snow in July
+   -  ``SeasonEnd`` Year in which season ended (June is end of season)
 
--  ``Aug`` Inches of snow in August
+   -  ``Jul`` Inches of snow in July
 
--  ``Sep`` Inches of snow in September
+   -  ``Aug`` Inches of snow in August
 
--  ``Oct`` Inches of snow in October
+   -  ``Sep`` Inches of snow in September
 
--  ``Nov`` Inches of snow in November
+   -  ``Oct`` Inches of snow in October
 
--  ``Dec`` Inches of snow in December
+   -  ``Nov`` Inches of snow in November
 
--  ``Jan`` Inches of snow in January
+   -  ``Dec`` Inches of snow in December
 
--  ``Feb`` Inches of snow in February
+   -  ``Jan`` Inches of snow in January
 
--  ``Mar`` Inches of snow in March
+   -  ``Feb`` Inches of snow in February
 
--  ``Apr`` Inches of snow in April
+   -  ``Mar`` Inches of snow in March
 
--  ``May`` Inches of snow in May
+   -  ``Apr`` Inches of snow in April
 
--  ``Jun`` Inches of snow in June
+   -  ``May`` Inches of snow in May
 
--  ``Total`` Inches of snow for entire season (July-June)
+   -  ``Jun`` Inches of snow in June
 
-Source
-~~~~~~
+   -  ``Total`` Inches of snow for entire season (July-June)
 
-These data were compiled by Laura Kapitula from data available from
-NOAA. The original URL used
-(http://www.crh.noaa.gov/grr/climate/data/grr/snowfall/) is no longer in
-service.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   These data were compiled by Laura Kapitula from data available from
+   NOAA. The original URL used
+   (http://www.crh.noaa.gov/grr/climate/data/grr/snowfall/) is no longer
+   in service.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(SnowGR)
-   if (require(ggformula)) {
-     df_stats(~ Total, data = SnowGR)
-     gf_histogram( ~ Total, data = SnowGR)
-     gf_point(Total ~ SeasonStart, data = SnowGR) %>%
-       gf_smooth()
-       
-     if (require(tidyr) && require(dplyr)) {
-       Snow2 <- 
-         SnowGR %>%
-         pivot_longer(Jul:Total, names_to = "month", values_to = "snowfall") %>%
-         filter(month != "Total") %>%
-         mutate(month = factor(month, levels = unique(month)))
-       gf_violin(snowfall ~ month, data = Snow2, scale = "width")
-     }
-   }
+   ::
+
+      data(SnowGR)
+      if (require(ggformula)) {
+        df_stats(~ Total, data = SnowGR)
+        gf_histogram( ~ Total, data = SnowGR)
+        gf_point(Total ~ SeasonStart, data = SnowGR) %>%
+          gf_smooth()
+          
+        if (require(tidyr) && require(dplyr)) {
+          Snow2 <- 
+            SnowGR %>%
+            pivot_longer(Jul:Total, names_to = "month", values_to = "snowfall") %>%
+            filter(month != "Total") %>%
+            mutate(month = factor(month, levels = unique(month)))
+          gf_violin(snowfall ~ month, data = Snow2, scale = "width")
+        }
+      }

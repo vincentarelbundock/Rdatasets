@@ -1,43 +1,45 @@
-====== ===============
-therms R Documentation
-====== ===============
+.. container::
 
-Thermometer Ratings for Donald Trump and Barack Obama
------------------------------------------------------
+   ====== ===============
+   therms R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Thermometer Ratings for Donald Trump and Barack Obama
+      :name: thermometer-ratings-for-donald-trump-and-barack-obama
 
-A data set on thermometer ratings for Donald Trump and Barack Obama in
-2020. I use these data for in-class illustration of central limit
-theorem. Basically: the sampling distribution of a population is normal,
-even if the underlying population is decidedly not.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A data set on thermometer ratings for Donald Trump and Barack Obama
+   in 2020. I use these data for in-class illustration of central limit
+   theorem. Basically: the sampling distribution of a population is
+   normal, even if the underlying population is decidedly not.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   therms
+   ::
 
-Format
-~~~~~~
+      therms
 
-A data frame with 3080 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-``fttrump1``
-   a thermometer rating for Donald Trump [0:100]
+   A data frame with 3080 observations on the following 2 variables.
 
-``ftobama1``
-   a thermometer rating for Barack Obama [0:100]
+   ``fttrump1``
+      a thermometer rating for Donald Trump [0:100]
 
-Details
-~~~~~~~
+   ``ftobama1``
+      a thermometer rating for Barack Obama [0:100]
 
-The survey period was April 10-18, 2020 and was done entirely online.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The survey period was April 10-18, 2020 and was done entirely online.
 
-American National Election Studies (ANES) Exploratory Testing Survey
-(ETS)
+   .. rubric:: Source
+      :name: source
+
+   American National Election Studies (ANES) Exploratory Testing Survey
+   (ETS)

@@ -1,72 +1,75 @@
-==== ===============
-Mroz R Documentation
-==== ===============
+.. container::
 
-U.S. Women's Labor-Force Participation
---------------------------------------
+   ==== ===============
+   Mroz R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: U.S. Women's Labor-Force Participation
+      :name: u.s.-womens-labor-force-participation
 
-The ``Mroz`` data frame has 753 rows and 8 columns. The observations,
-from the Panel Study of Income Dynamics (PSID), are married women.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Mroz`` data frame has 753 rows and 8 columns. The observations,
+   from the Panel Study of Income Dynamics (PSID), are married women.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Mroz
+   ::
 
-Format
-~~~~~~
+      Mroz
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-lfp
-   labor-force participation; a factor with levels: ``no``; ``yes``.
+   This data frame contains the following columns:
 
-k5
-   number of children 5 years old or younger.
+   lfp
+      labor-force participation; a factor with levels: ``no``; ``yes``.
 
-k618
-   number of children 6 to 18 years old.
+   k5
+      number of children 5 years old or younger.
 
-age
-   in years.
+   k618
+      number of children 6 to 18 years old.
 
-wc
-   wife's college attendance; a factor with levels: ``no``; ``yes``.
+   age
+      in years.
 
-hc
-   husband's college attendance; a factor with levels: ``no``; ``yes``.
+   wc
+      wife's college attendance; a factor with levels: ``no``; ``yes``.
 
-lwg
-   log expected wage rate; for women in the labor force, the actual wage
-   rate; for women not in the labor force, an imputed value based on the
-   regression of ``lwg`` on the other variables.
+   hc
+      husband's college attendance; a factor with levels: ``no``;
+      ``yes``.
 
-inc
-   family income exclusive of wife's income.
+   lwg
+      log expected wage rate; for women in the labor force, the actual
+      wage rate; for women not in the labor force, an imputed value
+      based on the regression of ``lwg`` on the other variables.
 
-Source
-~~~~~~
+   inc
+      family income exclusive of wife's income.
 
-Mroz, T. A. (1987) The sensitivity of an empirical model of married
-women's hours of work to economic and statistical assumptions.
-*Econometrica* **55**, 765–799.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Mroz, T. A. (1987) The sensitivity of an empirical model of married
+   women's hours of work to economic and statistical assumptions.
+   *Econometrica* **55**, 765–799.
 
-Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-Models*, Third Edition. Sage.
+   .. rubric:: References
+      :name: references
 
-Fox, J. (2000) *Multiple and Generalized Nonparametric Regression.*
-Sage.
+   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+   Models*, Third Edition. Sage.
 
-Fox, J. and Weisberg, S. (2019) *An R Companion to Applied Regression*,
-Third Edition, Sage.
+   Fox, J. (2000) *Multiple and Generalized Nonparametric Regression.*
+   Sage.
 
-Long. J. S. (1997) *Regression Models for Categorical and Limited
-Dependent Variables.* Sage.
+   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+   Regression*, Third Edition, Sage.
+
+   Long. J. S. (1997) *Regression Models for Categorical and Limited
+   Dependent Variables.* Sage.

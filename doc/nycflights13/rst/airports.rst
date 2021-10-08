@@ -1,66 +1,68 @@
-======== ===============
-airports R Documentation
-======== ===============
+.. container::
 
-Airport metadata
-----------------
+   ======== ===============
+   airports R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Airport metadata
+      :name: airport-metadata
 
-Useful metadata about airports.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Useful metadata about airports.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   airports
+   ::
 
-Format
-~~~~~~
+      airports
 
-A data frame with columns:
+   .. rubric:: Format
+      :name: format
 
-faa
-   FAA airport code.
+   A data frame with columns:
 
-name
-   Usual name of the aiport.
+   faa
+      FAA airport code.
 
-lat, lon
-   Location of airport.
+   name
+      Usual name of the aiport.
 
-alt
-   Altitude, in feet.
+   lat, lon
+      Location of airport.
 
-tz
-   Timezone offset from GMT.
+   alt
+      Altitude, in feet.
 
-dst
-   Daylight savings time zone. A = Standard US DST: starts on the second
-   Sunday of March, ends on the first Sunday of November. U = unknown. N
-   = no dst.
+   tz
+      Timezone offset from GMT.
 
-tzone
-   IANA time zone, as determined by GeoNames webservice.
+   dst
+      Daylight savings time zone. A = Standard US DST: starts on the
+      second Sunday of March, ends on the first Sunday of November. U =
+      unknown. N = no dst.
 
-Source
-~~~~~~
+   tzone
+      IANA time zone, as determined by GeoNames webservice.
 
-https://openflights.org/data.html, downloaded 2014-06-27
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   https://openflights.org/data.html, downloaded 2014-06-27
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   airports
+   ::
 
-   if (require("dplyr")) {
+      airports
 
-   airports %>% rename(dest = faa) %>% semi_join(flights)
-   flights %>% anti_join(airports %>% rename(dest = faa))
-   airports %>% rename(origin = faa) %>% semi_join(flights)
+      if (require("dplyr")) {
 
-   }
+      airports %>% rename(dest = faa) %>% semi_join(flights)
+      flights %>% anti_join(airports %>% rename(dest = faa))
+      airports %>% rename(origin = faa) %>% semi_join(flights)
+
+      }

@@ -1,51 +1,54 @@
-========== ===============
-state.info R Documentation
-========== ===============
+.. container::
 
-information about the American states needed for U.S. Congress
---------------------------------------------------------------
+   ========== ===============
+   state.info R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: information about the American states needed for U.S.
+      Congress
+      :name: information-about-the-american-states-needed-for-u.s.-congress
 
-Numeric codes and names of 50 states and the District of Columbia,
-required to parse Keith Poole and Howard Rosenthal's collections of U.S.
-Congressional roll calls.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Numeric codes and names of 50 states and the District of Columbia,
+   required to parse Keith Poole and Howard Rosenthal's collections of
+   U.S. Congressional roll calls.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(state.info)
+   ::
 
-Format
-~~~~~~
+      data(state.info)
 
-``icpsr``
-   integer, numeric code for state used by the Inter-university
-   Consortium for Political and Social Research
+   .. rubric:: Format
+      :name: format
 
-``state``
-   character, name of state or ``Washington     D.C.``
+   ``icpsr``
+      integer, numeric code for state used by the Inter-university
+      Consortium for Political and Social Research
 
-``year``
-   numeric or ``NA``, year of statehood
+   ``state``
+      character, name of state or ``Washington     D.C.``
 
-Details
-~~~~~~~
+   ``year``
+      numeric or ``NA``, year of statehood
 
-The function ``readKH`` converts the integer ICPSR codes into strings,
-via a table lookup in this data frame. Another table lookup in
-``state.abb`` provides the 2-letter abbreviation commonly used in
-identifying American legislators, e.g., ``KENNEDY, E (D-MA)``.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The function ``readKH`` converts the integer ICPSR codes into
+   strings, via a table lookup in this data frame. Another table lookup
+   in ``state.abb`` provides the 2-letter abbreviation commonly used in
+   identifying American legislators, e.g., ``KENNEDY, E (D-MA)``.
 
-Various ICPSR codebooks. http://www.icpsr.umich.edu
+   .. rubric:: Source
+      :name: source
 
-See Also
-~~~~~~~~
+   Various ICPSR codebooks. http://www.icpsr.umich.edu
 
-``state``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``state``

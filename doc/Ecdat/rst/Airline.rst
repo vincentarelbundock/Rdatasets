@@ -1,59 +1,61 @@
-======= ===============
-Airline R Documentation
-======= ===============
+.. container::
 
-Cost for U.S. Airlines
-----------------------
+   ======= ===============
+   Airline R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Cost for U.S. Airlines
+      :name: cost-for-u.s.-airlines
 
-a panel of 6 observations from 1970 to 1984
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 90
+   a panel of 6 observations from 1970 to 1984
 
-*observation* : production units
+   *number of observations* : 90
 
-*country* : United States
+   *observation* : production units
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Airline)
+   ::
 
-Format
-~~~~~~
+      data(Airline)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-airline
+   A dataframe containing :
+
    airline
+      airline
 
-year
    year
+      year
 
-cost
-   total cost, in \\$1,000
+   cost
+      total cost, in \\$1,000
 
-output
-   output, in revenue passenger miles, index number
+   output
+      output, in revenue passenger miles, index number
 
-pf
-   fuel price
+   pf
+      fuel price
 
-lf
-   load factor, the average capacity utilization of the fleet
+   lf
+      load factor, the average capacity utilization of the fleet
 
-References
-~~~~~~~~~~
+   .. rubric:: References
+      :name: references
 
-Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-http://www.prenhall.com/greene/greene1.html, Table F7.1.
+   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+   http://www.prenhall.com/greene/greene1.html, Table F7.1.
 
-See Also
-~~~~~~~~
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``, ``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``, ``Index.Time.Series``

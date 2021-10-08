@@ -1,38 +1,40 @@
-================== ===============
-thanksgiving_spend R Documentation
-================== ===============
+.. container::
 
-Thanksgiving spending, simulated based on Gallup poll.
-------------------------------------------------------
+   ================== ===============
+   thanksgiving_spend R Documentation
+   ================== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Thanksgiving spending, simulated based on Gallup poll.
+      :name: thanksgiving-spending-simulated-based-on-gallup-poll.
 
-This entry gives simulated spending data for Americans during
-Thanksgiving in 2009 based on findings of a Gallup poll.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This entry gives simulated spending data for Americans during
+   Thanksgiving in 2009 based on findings of a Gallup poll.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   thanksgiving_spend
+   ::
 
-Format
-~~~~~~
+      thanksgiving_spend
 
-A data frame with 436 observations on the following 1 variable.
+   .. rubric:: Format
+      :name: format
 
-spending
-   Amount of spending, in US dollars.
+   A data frame with 436 observations on the following 1 variable.
 
-Examples
-~~~~~~~~
+   spending
+      Amount of spending, in US dollars.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(thanksgiving_spend, aes(x = spending)) +
-     geom_histogram(binwidth = 20)
+      ggplot(thanksgiving_spend, aes(x = spending)) +
+        geom_histogram(binwidth = 20)

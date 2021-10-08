@@ -1,34 +1,38 @@
-============== ===============
-MathEnrollment R Documentation
-============== ===============
+.. container::
 
-Enrollments in Math Courses
----------------------------
+   ============== ===============
+   MathEnrollment R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Enrollments in Math Courses
+      :name: enrollments-in-math-courses
 
-Semester enrollments in mathematics courses
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Semester enrollments in mathematics courses
 
-A dataset with 11 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-========== =================================
-``AYear``  Academic year (for the fall)
-``Fall``   Fall semester total enrollments
-``Spring`` Spring semester total enrollments
-\          
-========== =================================
+   A dataset with 11 observations on the following 3 variables.
 
-Details
-~~~~~~~
+   ========== =================================
+   ``AYear``  Academic year (for the fall)
+   ``Fall``   Fall semester total enrollments
+   ``Spring`` Spring semester total enrollments
+   \          
+   ========== =================================
 
-Total enrollments in mathematics courses at a small liberal arts college
-were obtained for each semester from Fall 2001 to Spring 2012.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Total enrollments in mathematics courses at a small liberal arts
+   college were obtained for each semester from Fall 2001 to Spring
+   2012.
 
-The data were obtained from http://Registrar.Kenyon.edu on June 1, 2012.
+   .. rubric:: Source
+      :name: source
+
+   The data were obtained from http://Registrar.Kenyon.edu on June 1,
+   2012.

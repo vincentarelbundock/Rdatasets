@@ -1,47 +1,49 @@
-===================== ===============
-USPersonalExpenditure R Documentation
-===================== ===============
+.. container::
 
-Personal Expenditure Data
--------------------------
+   ===================== ===============
+   USPersonalExpenditure R Documentation
+   ===================== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Personal Expenditure Data
+      :name: personal-expenditure-data
 
-This data set consists of United States personal expenditures (in
-billions of dollars) in the categories; food and tobacco, household
-operation, medical and health, personal care, and private education for
-the years 1940, 1945, 1950, 1955 and 1960.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data set consists of United States personal expenditures (in
+   billions of dollars) in the categories; food and tobacco, household
+   operation, medical and health, personal care, and private education
+   for the years 1940, 1945, 1950, 1955 and 1960.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   USPersonalExpenditure
+   ::
 
-Format
-~~~~~~
+      USPersonalExpenditure
 
-A matrix with 5 rows and 5 columns.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A matrix with 5 rows and 5 columns.
 
-The World Almanac and Book of Facts, 1962, page 756.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The World Almanac and Book of Facts, 1962, page 756.
 
-Tukey, J. W. (1977) *Exploratory Data Analysis*. Addison-Wesley.
+   .. rubric:: References
+      :name: references
 
-McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
+   Tukey, J. W. (1977) *Exploratory Data Analysis*. Addison-Wesley.
 
-Examples
-~~~~~~~~
+   McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(stats) # for medpolish
-   USPersonalExpenditure
-   medpolish(log10(USPersonalExpenditure))
+   ::
+
+      require(stats) # for medpolish
+      USPersonalExpenditure
+      medpolish(log10(USPersonalExpenditure))

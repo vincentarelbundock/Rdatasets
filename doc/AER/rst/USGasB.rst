@@ -1,64 +1,66 @@
-====== ===============
-USGasB R Documentation
-====== ===============
+.. container::
 
-US Gasoline Market Data (1950–1987, Baltagi)
---------------------------------------------
+   ====== ===============
+   USGasB R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: US Gasoline Market Data (1950–1987, Baltagi)
+      :name: us-gasoline-market-data-19501987-baltagi
 
-Time series data on the US gasoline market.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Time series data on the US gasoline market.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("USGasB")
+   ::
 
-Format
-~~~~~~
+      data("USGasB")
 
-An annual multiple time series from 1950 to 1987 with 6 variables.
+   .. rubric:: Format
+      :name: format
 
-cars
-   Stock of cars.
+   An annual multiple time series from 1950 to 1987 with 6 variables.
 
-gas
-   Consumption of motor gasoline (in 1000 gallons).
+   cars
+      Stock of cars.
 
-price
-   Retail price of motor gasoline.
+   gas
+      Consumption of motor gasoline (in 1000 gallons).
 
-population
-   Population.
+   price
+      Retail price of motor gasoline.
 
-gnp
-   Real gross national product (in 1982 dollars).
+   population
+      Population.
 
-deflator
-   GNP deflator (1982 = 100).
+   gnp
+      Real gross national product (in 1982 dollars).
 
-Source
-~~~~~~
+   deflator
+      GNP deflator (1982 = 100).
 
-The data are from Baltagi (2002).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The data are from Baltagi (2002).
 
-Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
 
-``Baltagi2002``, ``USGasG``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Baltagi2002``, ``USGasG``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("USGasB")
-   plot(USGasB)
+   ::
+
+      data("USGasB")
+      plot(USGasB)

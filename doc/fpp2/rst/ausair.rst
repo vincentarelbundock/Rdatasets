@@ -1,31 +1,33 @@
-====== ===============
-ausair R Documentation
-====== ===============
+.. container::
 
-Air Transport Passengers Australia
-----------------------------------
+   ====== ===============
+   ausair R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Air Transport Passengers Australia
+      :name: air-transport-passengers-australia
 
-Total annual air passengers (in millions) including domestic and
-international aircraft passengers of air carriers registered in
-Australia. 1970-2016.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Total annual air passengers (in millions) including domestic and
+   international aircraft passengers of air carriers registered in
+   Australia. 1970-2016.
 
-Annual time series of class ``ts``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   Annual time series of class ``ts``.
 
-World Bank.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   World Bank.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   autoplot(ausair)
+      autoplot(ausair)

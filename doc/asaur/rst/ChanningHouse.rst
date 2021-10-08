@@ -1,81 +1,86 @@
-============= ===============
-ChanningHouse R Documentation
-============= ===============
+.. container::
 
-Channing House Data
--------------------
+   ============= ===============
+   ChanningHouse R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Channing House Data
+      :name: channing-house-data
 
-The ``ChanningHouse`` data frame has 457 rows and 5 columns. This is 5
-fewer than the parent channing data frame in the boot package. These 5
-were removed because the exit time was not smaller than the entry time.
+   .. rubric:: Description
+      :name: description
 
-Channing House is a retirement centre in Palo Alto, California. These
-data were collected between the opening of the house in 1964 until July
-1, 1975. In that time 97 men and 365 women passed through the centre.
-For each of these, their age on entry and also on leaving or death was
-recorded. A large number of the observations were censored mainly due to
-the resident being alive on July 1, 1975 when the data was collected.
-Over the time of the study 130 women and 46 men died at Channing House.
-Differences between the survival of the sexes, taking age into account,
-was one of the primary concerns of this study.
+   The ``ChanningHouse`` data frame has 457 rows and 5 columns. This is
+   5 fewer than the parent channing data frame in the boot package.
+   These 5 were removed because the exit time was not smaller than the
+   entry time.
 
-Usage
-~~~~~
+   Channing House is a retirement centre in Palo Alto, California. These
+   data were collected between the opening of the house in 1964 until
+   July 1, 1975. In that time 97 men and 365 women passed through the
+   centre. For each of these, their age on entry and also on leaving or
+   death was recorded. A large number of the observations were censored
+   mainly due to the resident being alive on July 1, 1975 when the data
+   was collected. Over the time of the study 130 women and 46 men died
+   at Channing House. Differences between the survival of the sexes,
+   taking age into account, was one of the primary concerns of this
+   study.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("ChanningHouse")
+   ::
 
-Format
-~~~~~~
+      data("ChanningHouse")
 
-A data frame with 457 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``sex``
-   a factor for the sex of each resident with levels ``Female`` ``Male``
+   A data frame with 457 observations on the following 5 variables.
 
-``entry``
-   The residents age (in months) on entry to the center)
+   ``sex``
+      a factor for the sex of each resident with levels ``Female``
+      ``Male``
 
-``exit``
-   The age (in months) of the resident on death, leaving the center or
-   July 1, 1975, whichever event occurred first.)
+   ``entry``
+      The residents age (in months) on entry to the center)
 
-``time``
-   The length of time (in months) that the resident spent at Channing
-   House. (``time=exit-entry``)))
+   ``exit``
+      The age (in months) of the resident on death, leaving the center
+      or July 1, 1975, whichever event occurred first.)
 
-``cens``
-   The indicator of reight censoring. 1 indicates that the resident died
-   at Channing House, 0 indicates that they left the house prior to July
-   1, 1975 or that they were still alive and living in the center at
-   that date.
+   ``time``
+      The length of time (in months) that the resident spent at Channing
+      House. (``time=exit-entry``)))
 
-Source
-~~~~~~
+   ``cens``
+      The indicator of reight censoring. 1 indicates that the resident
+      died at Channing House, 0 indicates that they left the house prior
+      to July 1, 1975 or that they were still alive and living in the
+      center at that date.
 
-The current data were derived from the "channing" data frame in the
-"boot" package. The original source for the data was
+   .. rubric:: Source
+      :name: source
 
-Hyde, J. (1980) Testing survival with incomplete observations.
-Biostatistics Casebook. R.G. Miller, B. Efron, B.W. Brown and L.E. Moses
-(editors), 31-46. John Wiley.
+   The current data were derived from the "channing" data frame in the
+   "boot" package. The original source for the data was
 
-References
-~~~~~~~~~~
+   Hyde, J. (1980) Testing survival with incomplete observations.
+   Biostatistics Casebook. R.G. Miller, B. Efron, B.W. Brown and L.E.
+   Moses (editors), 31-46. John Wiley.
 
-Davison, A.C. and Hinkley, D.V. (1997) Bootstrap Methods and Their
-Application. Cambridge University Press.
+   .. rubric:: References
+      :name: references
 
-Canty, A. and Ripley, B. (2015) boot package.
+   Davison, A.C. and Hinkley, D.V. (1997) Bootstrap Methods and Their
+   Application. Cambridge University Press.
 
-Examples
-~~~~~~~~
+   Canty, A. and Ripley, B. (2015) boot package.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(ChanningHouse)
-     
+   ::
+
+      data(ChanningHouse)
+        

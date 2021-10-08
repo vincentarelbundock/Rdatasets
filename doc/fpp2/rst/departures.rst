@@ -1,42 +1,44 @@
-========== ===============
-departures R Documentation
-========== ===============
+.. container::
 
-Total monthly departures from Australia
----------------------------------------
+   ========== ===============
+   departures R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Total monthly departures from Australia
+      :name: total-monthly-departures-from-australia
 
-Overseas departures from Australia: permanent departures, long-term
-(more than one year) residents departing, long-term (more than one year)
-visitors departing, short-term (less than one year) residents departing
-and short-term (less than one year) visitors departing. January 1976 -
-November 2016.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Overseas departures from Australia: permanent departures, long-term
+   (more than one year) residents departing, long-term (more than one
+   year) visitors departing, short-term (less than one year) residents
+   departing and short-term (less than one year) visitors departing.
+   January 1976 - November 2016.
 
-Multiple monthly time series of class ``mts`` containing the following
-series:
+   .. rubric:: Format
+      :name: format
 
-========= ==============================================
-permanent permanent departures from Australia.
-reslong   long-term resident departures from Australia.
-vislong   long-term visitor departures from Australia.
-resshort  short-term resident departures from Australia.
-visshort  short-term visitor departures from Australia.
-========= ==============================================
+   Multiple monthly time series of class ``mts`` containing the
+   following series:
 
-Source
-~~~~~~
+   ========= ==============================================
+   permanent permanent departures from Australia.
+   reslong   long-term resident departures from Australia.
+   vislong   long-term visitor departures from Australia.
+   resshort  short-term resident departures from Australia.
+   visshort  short-term visitor departures from Australia.
+   ========= ==============================================
 
-Australian Bureau of Statistics. Catalogue No 3401.02.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Australian Bureau of Statistics. Catalogue No 3401.02.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   autoplot(departures, facets=TRUE)
+      autoplot(departures, facets=TRUE)

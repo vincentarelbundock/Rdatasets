@@ -1,42 +1,44 @@
-===== ===============
-SP500 R Documentation
-===== ===============
+.. container::
 
-Returns on Standard \\& Poor's 500 Index
-----------------------------------------
+   ===== ===============
+   SP500 R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Returns on Standard \\& Poor's 500 Index
+      :name: returns-on-standard-poors-500-index
 
-daily observations from 1981–01 to 1991–04
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 2783
+   daily observations from 1981–01 to 1991–04
 
-Usage
-~~~~~
+   *number of observations* : 2783
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(SP500)
+   ::
 
-Format
-~~~~~~
+      data(SP500)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-r500
-   daily return S\&P500 (change in log index)
+   A dataframe containing :
 
-References
-~~~~~~~~~~
+   r500
+      daily return S\&P500 (change in log index)
 
-Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley and
-Sons.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+   and Sons.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
+
+   ``Index.Time.Series``

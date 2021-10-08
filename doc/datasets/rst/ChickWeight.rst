@@ -1,80 +1,82 @@
-=========== ===============
-ChickWeight R Documentation
-=========== ===============
+.. container::
 
-Weight versus age of chicks on different diets
-----------------------------------------------
+   =========== ===============
+   ChickWeight R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Weight versus age of chicks on different diets
+      :name: weight-versus-age-of-chicks-on-different-diets
 
-The ``ChickWeight`` data frame has 578 rows and 4 columns from an
-experiment on the effect of diet on early growth of chicks.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``ChickWeight`` data frame has 578 rows and 4 columns from an
+   experiment on the effect of diet on early growth of chicks.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   ChickWeight
+   ::
 
-Format
-~~~~~~
+      ChickWeight
 
-An object of class
-``c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame")``
-containing the following columns:
+   .. rubric:: Format
+      :name: format
 
-weight
-   a numeric vector giving the body weight of the chick (gm).
+   An object of class
+   ``c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame")``
+   containing the following columns:
 
-Time
-   a numeric vector giving the number of days since birth when the
-   measurement was made.
+   weight
+      a numeric vector giving the body weight of the chick (gm).
 
-Chick
-   an ordered factor with levels ``18`` < ... < ``48`` giving a unique
-   identifier for the chick. The ordering of the levels groups chicks on
-   the same diet together and orders them according to their final
-   weight (lightest to heaviest) within diet.
+   Time
+      a numeric vector giving the number of days since birth when the
+      measurement was made.
 
-Diet
-   a factor with levels 1, ..., 4 indicating which experimental diet the
-   chick received.
+   Chick
+      an ordered factor with levels ``18`` < ... < ``48`` giving a
+      unique identifier for the chick. The ordering of the levels groups
+      chicks on the same diet together and orders them according to
+      their final weight (lightest to heaviest) within diet.
 
-Details
-~~~~~~~
+   Diet
+      a factor with levels 1, ..., 4 indicating which experimental diet
+      the chick received.
 
-The body weights of the chicks were measured at birth and every second
-day thereafter until day 20. They were also measured on day 21. There
-were four groups on chicks on different protein diets.
+   .. rubric:: Details
+      :name: details
 
-This dataset was originally part of package ``nlme``, and that has
-methods (including for ``[``, ``as.data.frame``, ``plot`` and ``print``)
-for its grouped-data classes.
+   The body weights of the chicks were measured at birth and every
+   second day thereafter until day 20. They were also measured on day
+   21. There were four groups on chicks on different protein diets.
 
-Source
-~~~~~~
+   This dataset was originally part of package ``nlme``, and that has
+   methods (including for ``[``, ``as.data.frame``, ``plot`` and
+   ``print``) for its grouped-data classes.
 
-Crowder, M. and Hand, D. (1990), *Analysis of Repeated Measures*,
-Chapman and Hall (example 5.3)
+   .. rubric:: Source
+      :name: source
 
-Hand, D. and Crowder, M. (1996), *Practical Longitudinal Data Analysis*,
-Chapman and Hall (table A.2)
+   Crowder, M. and Hand, D. (1990), *Analysis of Repeated Measures*,
+   Chapman and Hall (example 5.3)
 
-Pinheiro, J. C. and Bates, D. M. (2000) *Mixed-effects Models in S and
-S-PLUS*, Springer.
+   Hand, D. and Crowder, M. (1996), *Practical Longitudinal Data
+   Analysis*, Chapman and Hall (table A.2)
 
-See Also
-~~~~~~~~
+   Pinheiro, J. C. and Bates, D. M. (2000) *Mixed-effects Models in S
+   and S-PLUS*, Springer.
 
-``SSlogis`` for models fitted to this dataset.
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``SSlogis`` for models fitted to this dataset.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   require(graphics)
-   coplot(weight ~ Time | Chick, data = ChickWeight,
-          type = "b", show.given = FALSE)
+   ::
+
+      require(graphics)
+      coplot(weight ~ Time | Chick, data = ChickWeight,
+             type = "b", show.given = FALSE)

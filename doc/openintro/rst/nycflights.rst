@@ -1,83 +1,85 @@
-========== ===============
-nycflights R Documentation
-========== ===============
+.. container::
 
-Flights data
-------------
+   ========== ===============
+   nycflights R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Flights data
+      :name: flights-data
 
-On-time data for a random sample of flights that departed NYC (i.e. JFK,
-LGA or EWR) in 2013.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   On-time data for a random sample of flights that departed NYC (i.e.
+   JFK, LGA or EWR) in 2013.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   nycflights
+   ::
 
-Format
-~~~~~~
+      nycflights
 
-A tbl_df with 32,735 rows and 16 variables:
+   .. rubric:: Format
+      :name: format
 
-year,month,day
-   Date of departure.
+   A tbl_df with 32,735 rows and 16 variables:
 
-dep_time,arr_time
-   Departure and arrival times, local tz.
+   year,month,day
+      Date of departure.
 
-dep_delay,arr_delay
-   Departure and arrival delays, in minutes. Negative times represent
-   early departures/arrivals.
+   dep_time,arr_time
+      Departure and arrival times, local tz.
 
-hour,minute
-   Time of departure broken in to hour and minutes.
+   dep_delay,arr_delay
+      Departure and arrival delays, in minutes. Negative times represent
+      early departures/arrivals.
 
-carrier
-   Two letter carrier abbreviation. See ``airlines`` in the
-   ``nycflights13`` package for more information or google the airline
-   code.
+   hour,minute
+      Time of departure broken in to hour and minutes.
 
-tailnum
-   Plane tail number.
+   carrier
+      Two letter carrier abbreviation. See ``airlines`` in the
+      ``nycflights13`` package for more information or google the
+      airline code.
 
-flight
-   Flight number.
+   tailnum
+      Plane tail number.
 
-origin,dest
-   Origin and destination. See ``airports`` in the ``nycflights13``
-   package for more information or google airport the code.
+   flight
+      Flight number.
 
-air_time
-   Amount of time spent in the air.
+   origin,dest
+      Origin and destination. See ``airports`` in the ``nycflights13``
+      package for more information or google airport the code.
 
-distance
-   Distance flown.
+   air_time
+      Amount of time spent in the air.
 
-Source
-~~~~~~
+   distance
+      Distance flown.
 
-Hadley Wickham (2014).
-`nycflights13 <https://CRAN.R-project.org/package=nycflights13>`__: Data
-about flights departing NYC in 2013. R package version 0.1.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Hadley Wickham (2014).
+   `nycflights13 <https://CRAN.R-project.org/package=nycflights13>`__:
+   Data about flights departing NYC in 2013. R package version 0.1.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(dplyr)
+      library(dplyr)
 
-   # Longest departure delays
-   nycflights %>%
-     select(flight, origin, dest, dep_delay, arr_delay) %>%
-     arrange(desc(dep_delay))
+      # Longest departure delays
+      nycflights %>%
+        select(flight, origin, dest, dep_delay, arr_delay) %>%
+        arrange(desc(dep_delay))
 
-   # Longest arrival delays
-   nycflights %>%
-     select(flight, origin, dest, dep_delay, arr_delay) %>%
-     arrange(desc(arr_delay))
+      # Longest arrival delays
+      nycflights %>%
+        select(flight, origin, dest, dep_delay, arr_delay) %>%
+        arrange(desc(arr_delay))

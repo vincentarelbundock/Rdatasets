@@ -1,45 +1,47 @@
-========= ===============
-sinusitis R Documentation
-========= ===============
+.. container::
 
-Sinusitis and antibiotic experiment
------------------------------------
+   ========= ===============
+   sinusitis R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Sinusitis and antibiotic experiment
+      :name: sinusitis-and-antibiotic-experiment
 
-Researchers studying the effect of antibiotic treatment for acute
-sinusitis to one of two groups: treatment or control.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Researchers studying the effect of antibiotic treatment for acute
+   sinusitis to one of two groups: treatment or control.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   sinusitis
+   ::
 
-Format
-~~~~~~
+      sinusitis
 
-A data frame with 166 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-group
-   a factor with levels ``control`` and ``treatment``
+   A data frame with 166 observations on the following 2 variables.
 
-self_reported_improvement
-   a factor with levels ``no`` and ``yes``
+   group
+      a factor with levels ``control`` and ``treatment``
 
-Source
-~~~~~~
+   self_reported_improvement
+      a factor with levels ``no`` and ``yes``
 
-J.M. Garbutt et al. Amoxicillin for Acute Rhinosinusitis: A Randomized
-Controlled Trial. In: JAMA: The Journal of the American Medical
-Association 307.7 (2012), pp. 685-692.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   J.M. Garbutt et al. Amoxicillin for Acute Rhinosinusitis: A
+   Randomized Controlled Trial. In: JAMA: The Journal of the American
+   Medical Association 307.7 (2012), pp. 685-692.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   sinusitis
+      sinusitis

@@ -1,63 +1,65 @@
-============= ===============
-DanishWelfare R Documentation
-============= ===============
+.. container::
 
-Danish Welfare Study Data
--------------------------
+   ============= ===============
+   DanishWelfare R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Danish Welfare Study Data
+      :name: danish-welfare-study-data
 
-Data from the Danish Welfare Study.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from the Danish Welfare Study.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("DanishWelfare")
+   ::
 
-Format
-~~~~~~
+      data("DanishWelfare")
 
-A data frame with 180 observations and 5 variables.
+   .. rubric:: Format
+      :name: format
 
-Freq
-   frequency.
+   A data frame with 180 observations and 5 variables.
 
-Alcohol
-   factor indicating daily alcohol consumption: less than 1 unit (<1),
-   1-2 units (1-2) or more than 2 units (>2). 1 unit is approximately 1
-   bottle of beer or 4cl 40% alcohol.
+   Freq
+      frequency.
 
-Income
-   factor indicating income group in 1000 DKK (0-50, 50-100, 100-150,
-   >150).
+   Alcohol
+      factor indicating daily alcohol consumption: less than 1 unit
+      (<1), 1-2 units (1-2) or more than 2 units (>2). 1 unit is
+      approximately 1 bottle of beer or 4cl 40% alcohol.
 
-Status
-   factor indicating marriage status (Widow, Married, Unmarried).
+   Income
+      factor indicating income group in 1000 DKK (0-50, 50-100, 100-150,
+      >150).
 
-Urban
-   factor indicating urbanization: Copenhagen (Copenhagen), Suburbian
-   Copenhagen (SubCopenhagen), three largest cities (LargeCity), other
-   cities (City), countryside (Country).
+   Status
+      factor indicating marriage status (Widow, Married, Unmarried).
 
-Source
-~~~~~~
+   Urban
+      factor indicating urbanization: Copenhagen (Copenhagen), Suburbian
+      Copenhagen (SubCopenhagen), three largest cities (LargeCity),
+      other cities (City), countryside (Country).
 
-E. B. Andersen (1991), The Statistical Analysis of Categorical Data,
-page 205.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   E. B. Andersen (1991), The Statistical Analysis of Categorical Data,
+   page 205.
 
-E. B. Andersen (1991), *The Statistical Analysis of Categorical Data*.
-2nd edition. Springer-Verlag, Berlin.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   E. B. Andersen (1991), *The Statistical Analysis of Categorical
+   Data*. 2nd edition. Springer-Verlag, Berlin.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("DanishWelfare")
-   ftable(xtabs(Freq ~ ., data = DanishWelfare))
+   ::
+
+      data("DanishWelfare")
+      ftable(xtabs(Freq ~ ., data = DanishWelfare))

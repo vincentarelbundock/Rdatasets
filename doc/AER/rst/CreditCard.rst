@@ -1,136 +1,138 @@
-========== ===============
-CreditCard R Documentation
-========== ===============
+.. container::
 
-Expenditure and Default Data
-----------------------------
+   ========== ===============
+   CreditCard R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Expenditure and Default Data
+      :name: expenditure-and-default-data
 
-Cross-section data on the credit history for a sample of applicants for
-a type of credit card.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Cross-section data on the credit history for a sample of applicants
+   for a type of credit card.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("CreditCard")
+   ::
 
-Format
-~~~~~~
+      data("CreditCard")
 
-A data frame containing 1,319 observations on 12 variables.
+   .. rubric:: Format
+      :name: format
 
-card
-   Factor. Was the application for a credit card accepted?
+   A data frame containing 1,319 observations on 12 variables.
 
-reports
-   Number of major derogatory reports.
+   card
+      Factor. Was the application for a credit card accepted?
 
-age
-   Age in years plus twelfths of a year.
+   reports
+      Number of major derogatory reports.
 
-income
-   Yearly income (in USD 10,000).
+   age
+      Age in years plus twelfths of a year.
 
-share
-   Ratio of monthly credit card expenditure to yearly income.
+   income
+      Yearly income (in USD 10,000).
 
-expenditure
-   Average monthly credit card expenditure.
+   share
+      Ratio of monthly credit card expenditure to yearly income.
 
-owner
-   Factor. Does the individual own their home?
+   expenditure
+      Average monthly credit card expenditure.
 
-selfemp
-   Factor. Is the individual self-employed?
+   owner
+      Factor. Does the individual own their home?
 
-dependents
-   Number of dependents.
+   selfemp
+      Factor. Is the individual self-employed?
 
-months
-   Months living at current address.
+   dependents
+      Number of dependents.
 
-majorcards
-   Number of major credit cards held.
+   months
+      Months living at current address.
 
-active
-   Number of active credit accounts.
+   majorcards
+      Number of major credit cards held.
 
-Details
-~~~~~~~
+   active
+      Number of active credit accounts.
 
-According to Greene (2003, p. 952) ``dependents`` equals
-``1 + number of dependents``, our calculations suggest that it equals
-``number of dependents``.
+   .. rubric:: Details
+      :name: details
 
-Greene (2003) provides this data set twice in Table F21.4 and F9.1,
-respectively. Table F9.1 has just the observations, rounded to two
-digits. Here, we give the F21.4 version, see the examples for the F9.1
-version. Note that ``age`` has some suspiciously low values (below one
-year) for some applicants. One of these differs between the F9.1 and
-F21.4 version.
+   According to Greene (2003, p. 952) ``dependents`` equals
+   ``1 + number of dependents``, our calculations suggest that it equals
+   ``number of dependents``.
 
-Source
-~~~~~~
+   Greene (2003) provides this data set twice in Table F21.4 and F9.1,
+   respectively. Table F9.1 has just the observations, rounded to two
+   digits. Here, we give the F21.4 version, see the examples for the
+   F9.1 version. Note that ``age`` has some suspiciously low values
+   (below one year) for some applicants. One of these differs between
+   the F9.1 and F21.4 version.
 
-Online complements to Greene (2003). Table F21.4.
+   .. rubric:: Source
+      :name: source
 
-http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+   Online complements to Greene (2003). Table F21.4.
 
-References
-~~~~~~~~~~
+   http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper Saddle
-River, NJ: Prentice Hall.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+   Saddle River, NJ: Prentice Hall.
 
-``Greene2003``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Greene2003``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("CreditCard")
+   ::
 
-   ## Greene (2003)
-   ## extract data set F9.1
-   ccard <- CreditCard[1:100,]
-   ccard$income <- round(ccard$income, digits = 2)
-   ccard$expenditure <- round(ccard$expenditure, digits = 2)
-   ccard$age <- round(ccard$age + .01)
-   ## suspicious:
-   CreditCard$age[CreditCard$age < 1]
-   ## the first of these is also in TableF9.1 with 36 instead of 0.5:
-   ccard$age[79] <- 36
+      data("CreditCard")
 
-   ## Example 11.1
-   ccard <- ccard[order(ccard$income),]
-   ccard0 <- subset(ccard, expenditure > 0)
-   cc_ols <- lm(expenditure ~ age + owner + income + I(income^2), data = ccard0)
+      ## Greene (2003)
+      ## extract data set F9.1
+      ccard <- CreditCard[1:100,]
+      ccard$income <- round(ccard$income, digits = 2)
+      ccard$expenditure <- round(ccard$expenditure, digits = 2)
+      ccard$age <- round(ccard$age + .01)
+      ## suspicious:
+      CreditCard$age[CreditCard$age < 1]
+      ## the first of these is also in TableF9.1 with 36 instead of 0.5:
+      ccard$age[79] <- 36
 
-   ## Figure 11.1
-   plot(residuals(cc_ols) ~ income, data = ccard0, pch = 19)
+      ## Example 11.1
+      ccard <- ccard[order(ccard$income),]
+      ccard0 <- subset(ccard, expenditure > 0)
+      cc_ols <- lm(expenditure ~ age + owner + income + I(income^2), data = ccard0)
 
-   ## Table 11.1
-   mean(ccard$age)
-   prop.table(table(ccard$owner))
-   mean(ccard$income)
+      ## Figure 11.1
+      plot(residuals(cc_ols) ~ income, data = ccard0, pch = 19)
 
-   summary(cc_ols)
-   sqrt(diag(vcovHC(cc_ols, type = "HC0")))
-   sqrt(diag(vcovHC(cc_ols, type = "HC2"))) 
-   sqrt(diag(vcovHC(cc_ols, type = "HC1")))
+      ## Table 11.1
+      mean(ccard$age)
+      prop.table(table(ccard$owner))
+      mean(ccard$income)
 
-   bptest(cc_ols, ~ (age + income + I(income^2) + owner)^2 + I(age^2) + I(income^4), data = ccard0)
-   gqtest(cc_ols)
-   bptest(cc_ols, ~ income + I(income^2), data = ccard0, studentize = FALSE)
-   bptest(cc_ols, ~ income + I(income^2), data = ccard0)
+      summary(cc_ols)
+      sqrt(diag(vcovHC(cc_ols, type = "HC0")))
+      sqrt(diag(vcovHC(cc_ols, type = "HC2"))) 
+      sqrt(diag(vcovHC(cc_ols, type = "HC1")))
 
-   ## More examples can be found in:
-   ## help("Greene2003")
+      bptest(cc_ols, ~ (age + income + I(income^2) + owner)^2 + I(age^2) + I(income^4), data = ccard0)
+      gqtest(cc_ols)
+      bptest(cc_ols, ~ income + I(income^2), data = ccard0, studentize = FALSE)
+      bptest(cc_ols, ~ income + I(income^2), data = ccard0)
+
+      ## More examples can be found in:
+      ## help("Greene2003")

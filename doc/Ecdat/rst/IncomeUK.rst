@@ -1,49 +1,52 @@
-======== ===============
-IncomeUK R Documentation
-======== ===============
+.. container::
 
-Seasonally Unadjusted Quarterly Data on Disposable Income and Expenditure
--------------------------------------------------------------------------
+   ======== ===============
+   IncomeUK R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Seasonally Unadjusted Quarterly Data on Disposable Income
+      and Expenditure
+      :name: seasonally-unadjusted-quarterly-data-on-disposable-income-and-expenditure
 
-quarterly observations from 1971–1 to 1985–2
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 58
+   quarterly observations from 1971–1 to 1985–2
 
-*observation* : country
+   *number of observations* : 58
 
-*country* : United Kingdom
+   *observation* : country
 
-Usage
-~~~~~
+   *country* : United Kingdom
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(IncomeUK)
+   ::
 
-Format
-~~~~~~
+      data(IncomeUK)
 
-A time series containing :
+   .. rubric:: Format
+      :name: format
 
-income
-   total disposable income (million Pounds, current prices)
+   A time series containing :
 
-consumption
-   consumer expenditure (million Pounds, current prices)
+   income
+      total disposable income (million Pounds, current prices)
 
-References
-~~~~~~~~~~
+   consumption
+      consumer expenditure (million Pounds, current prices)
 
-Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley and
-Sons, chapters 8 and 9.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+   and Sons, chapters 8 and 9.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
+
+   ``Index.Time.Series``

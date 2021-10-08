@@ -1,45 +1,47 @@
-========== ===============
-FunnelDrop R Documentation
-========== ===============
+.. container::
 
-Funnel Drop Times
------------------
+   ========== ===============
+   FunnelDrop R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Funnel Drop Times
+      :name: funnel-drop-times
 
-Experiment with a ball swirling thorough a funnel
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Experiment with a ball swirling thorough a funnel
 
-A data frame with 120 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``Funnel``
-   Height of the funnel (inches)
+   A data frame with 120 observations on the following 3 variables.
 
-``Tube``
-   Height of the drop tube (inches)
+   ``Funnel``
+      Height of the funnel (inches)
 
-``Time``
-   Time (in seconds) for the ball to drop/swirl though the funnel
+   ``Tube``
+      Height of the drop tube (inches)
 
-Details
-~~~~~~~
+   ``Time``
+      Time (in seconds) for the ball to drop/swirl though the funnel
 
-Data from a class experiment to see where a steel ball was rolled
-through a plastic tube into a long plastic funnel. The angle of the
-funnel and the angle of the tube with respect to the flat table could be
-adjusted by changing the height of either (Funnel measured from the
-table, Tube measured from the top of the funnel). The ball rolls down
-the tube, then swirls around the funnel until dropping out at the
-bottom. Total trip time was measured with a stopwatch. Heights were
-adjusted after every two drops in a randomized order.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Data from a class experiment to see where a steel ball was rolled
+   through a plastic tube into a long plastic funnel. The angle of the
+   funnel and the angle of the tube with respect to the flat table could
+   be adjusted by changing the height of either (Funnel measured from
+   the table, Tube measured from the top of the funnel). The ball rolls
+   down the tube, then swirls around the funnel until dropping out at
+   the bottom. Total trip time was measured with a stopwatch. Heights
+   were adjusted after every two drops in a randomized order.
 
-The funnel dropping experiment was originally described in Gunter, B.
-(1993) "Through a Funnel Slowly with Ball Bearing and Insight to Teach
-Experimental Design," The American Statistician, Vol. 47. These data
-come from a class experiment based on the setup in that article.
+   .. rubric:: Source
+      :name: source
+
+   The funnel dropping experiment was originally described in Gunter, B.
+   (1993) "Through a Funnel Slowly with Ball Bearing and Insight to
+   Teach Experimental Design," The American Statistician, Vol. 47. These
+   data come from a class experiment based on the setup in that article.

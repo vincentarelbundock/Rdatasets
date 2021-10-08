@@ -1,56 +1,59 @@
-============ ===============
-SandwichAnts R Documentation
-============ ===============
+.. container::
 
-Ants on Sandwiches
-------------------
+   ============ ===============
+   SandwichAnts R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Ants on Sandwiches
+      :name: ants-on-sandwiches
 
-Ant counts on samples of different kinds of sandwiches
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Ant counts on samples of different kinds of sandwiches
 
-A dataset with 48 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-+-------------+-------------------------------------------------------+
-| ``Trial``   | Trial number                                          |
-+-------------+-------------------------------------------------------+
-| ``Bread``   | Type of bread: ``Multigrain``, ``Rye``, ``White``, or |
-|             | ``Wholemeal``                                         |
-+-------------+-------------------------------------------------------+
-| ``Filling`` | Type of filling: ``HamPickles``, ``PeanutButter``, or |
-|             | ``Vegemite``                                          |
-+-------------+-------------------------------------------------------+
-| ``Butter``  | Butter on the sandwich? ``no`` or ``yes``             |
-+-------------+-------------------------------------------------------+
-| ``Ants``    | Number of ants on the sandwich                        |
-+-------------+-------------------------------------------------------+
-|             |                                                       |
-+-------------+-------------------------------------------------------+
+   A dataset with 48 observations on the following 5 variables.
 
-Details
-~~~~~~~
+   +-------------+-------------------------------------------------------+
+   | ``Trial``   | Trial number                                          |
+   +-------------+-------------------------------------------------------+
+   | ``Bread``   | Type of bread: ``Multigrain``, ``Rye``, ``White``, or |
+   |             | ``Wholemeal``                                         |
+   +-------------+-------------------------------------------------------+
+   | ``Filling`` | Type of filling: ``HamPickles``, ``PeanutButter``, or |
+   |             | ``Vegemite``                                          |
+   +-------------+-------------------------------------------------------+
+   | ``Butter``  | Butter on the sandwich? ``no`` or ``yes``             |
+   +-------------+-------------------------------------------------------+
+   | ``Ants``    | Number of ants on the sandwich                        |
+   +-------------+-------------------------------------------------------+
+   |             |                                                       |
+   +-------------+-------------------------------------------------------+
 
-| As young students, Dominic Kelly and his friends enjoyed watching ants
-  gather on pieces of sandwiches. Later, as a university student,
-  Dominic decided to study this with a more formal experiment. He chose
-  three types of sandwich fillings (vegemite, peanut butter, and ham &
-  pickles), four types of bread (multigrain, rye, white, and wholemeal),
-  and put butter on some of the sandwiches.
-| To conduct the experiment he randomly chose a sandwich, broke off a
-  piece, and left it on the ground near an ant hill. After several
-  minutes he placed a jar over the sandwich bit and counted the number
-  of ants. He repeated the process, allowing time for ants to return to
-  the hill after each trial, until he had two samples for each
-  combination of the three factors.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   | As young students, Dominic Kelly and his friends enjoyed watching
+     ants gather on pieces of sandwiches. Later, as a university
+     student, Dominic decided to study this with a more formal
+     experiment. He chose three types of sandwich fillings (vegemite,
+     peanut butter, and ham & pickles), four types of bread (multigrain,
+     rye, white, and wholemeal), and put butter on some of the
+     sandwiches.
+   | To conduct the experiment he randomly chose a sandwich, broke off a
+     piece, and left it on the ground near an ant hill. After several
+     minutes he placed a jar over the sandwich bit and counted the
+     number of ants. He repeated the process, allowing time for ants to
+     return to the hill after each trial, until he had two samples for
+     each combination of the three factors.
 
-| Margaret Mackisack, “Favourite Experiments: An Addendum to What is the
-  Use of Experiments Conducted by Statistics Students?", Journal of
-  Statistics Education (1994)
-| http://www.amstat.org/publications/jse/v2n1/mackisack.supp.html
+   .. rubric:: Source
+      :name: source
+
+   | Margaret Mackisack, “Favourite Experiments: An Addendum to What is
+     the Use of Experiments Conducted by Statistics Students?", Journal
+     of Statistics Education (1994)
+   | http://www.amstat.org/publications/jse/v2n1/mackisack.supp.html

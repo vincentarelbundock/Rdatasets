@@ -1,49 +1,52 @@
-========= ===============
-Blackmore R Documentation
-========= ===============
+.. container::
 
-Exercise Histories of Eating-Disordered and Control Subjects
-------------------------------------------------------------
+   ========= ===============
+   Blackmore R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Exercise Histories of Eating-Disordered and Control
+      Subjects
+      :name: exercise-histories-of-eating-disordered-and-control-subjects
 
-The ``Blackmore`` data frame has 945 rows and 4 columns. Blackmore and
-Davis's data on exercise histories of 138 teenaged girls hospitalized
-for eating disorders and 98 control subjects.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Blackmore`` data frame has 945 rows and 4 columns. Blackmore
+   and Davis's data on exercise histories of 138 teenaged girls
+   hospitalized for eating disorders and 98 control subjects.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Blackmore
+   ::
 
-Format
-~~~~~~
+      Blackmore
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-subject
-   a factor with subject id codes. There are several observations for
-   each subject, but because the girls were hospitalized at different
-   ages, the number of cases and the age at the last case vary.
+   This data frame contains the following columns:
 
-age
-   subject's age in years at the time of observation; all but the last
-   observation for each subject were collected retrospectively at
-   intervals of two years, starting at age 8.
+   subject
+      a factor with subject id codes. There are several observations for
+      each subject, but because the girls were hospitalized at different
+      ages, the number of cases and the age at the last case vary.
 
-exercise
-   the amount of exercise in which the subject engaged, expressed as
-   estimated hours per week.
+   age
+      subject's age in years at the time of observation; all but the
+      last observation for each subject were collected retrospectively
+      at intervals of two years, starting at age 8.
 
-group
-   a factor with levels: ``control``, Control subjects; ``patient``,
-   Eating-disordered patients.
+   exercise
+      the amount of exercise in which the subject engaged, expressed as
+      estimated hours per week.
 
-Source
-~~~~~~
+   group
+      a factor with levels: ``control``, Control subjects; ``patient``,
+      Eating-disordered patients.
 
-Personal communication from Elizabeth Blackmore and Caroline Davis, York
-University.
+   .. rubric:: Source
+      :name: source
+
+   Personal communication from Elizabeth Blackmore and Caroline Davis,
+   York University.

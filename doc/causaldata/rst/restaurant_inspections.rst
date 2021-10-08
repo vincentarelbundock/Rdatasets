@@ -1,56 +1,58 @@
-====================== ===============
-restaurant_inspections R Documentation
-====================== ===============
+.. container::
 
-Data on Restaurant Inspections
-------------------------------
+   ====================== ===============
+   restaurant_inspections R Documentation
+   ====================== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data on Restaurant Inspections
+      :name: data-on-restaurant-inspections
 
-The ``restaurant_inspections`` data contains data on restaurant health
-inspections performed in Anchorage, Alaska.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``restaurant_inspections`` data contains data on restaurant
+   health inspections performed in Anchorage, Alaska.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   restaurant_inspections
+   ::
 
-Format
-~~~~~~
+      restaurant_inspections
 
-A data frame with 27178 rows and 5 variables
+   .. rubric:: Format
+      :name: format
 
-business_name
-   Name of restaurant/chain
+   A data frame with 27178 rows and 5 variables
 
-inspection_score
-   Health Inspection Score
+   business_name
+      Name of restaurant/chain
 
-Year
-   Year of inspection
+   inspection_score
+      Health Inspection Score
 
-NumberofLocations
-   Number of locations in restaurant chain
+   Year
+      Year of inspection
 
-Weekend
-   Was the inspection performed on a weekend?
+   NumberofLocations
+      Number of locations in restaurant chain
 
-Details
-~~~~~~~
+   Weekend
+      Was the inspection performed on a weekend?
 
-This data set is used in the *Regression* chapter of *The Effect*.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This data set is used in the *Regression* chapter of *The Effect*.
 
-Camus, Louis-Ashley. 2020.
-https://www.kaggle.com/loulouashley/inspection-score-restaurant-inspection
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Camus, Louis-Ashley. 2020.
+   https://www.kaggle.com/loulouashley/inspection-score-restaurant-inspection
 
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design
-and Causality. https://theeffectbook.net.
+   .. rubric:: References
+      :name: references
+
+   Huntington-Klein. 2021. The Effect: An Introduction to Research
+   Design and Causality. https://theeffectbook.net.

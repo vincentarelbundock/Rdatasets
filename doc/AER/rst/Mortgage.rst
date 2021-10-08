@@ -1,102 +1,104 @@
-======== ===============
-Mortgage R Documentation
-======== ===============
+.. container::
 
-Fixed versus Adjustable Mortgages
----------------------------------
+   ======== ===============
+   Mortgage R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Fixed versus Adjustable Mortgages
+      :name: fixed-versus-adjustable-mortgages
 
-Cross-section data about fixed versus adjustable mortgages for 78
-households.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Cross-section data about fixed versus adjustable mortgages for 78
+   households.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("Mortgage")
+   ::
 
-Format
-~~~~~~
+      data("Mortgage")
 
-A data frame containing 78 observations on 16 variables.
+   .. rubric:: Format
+      :name: format
 
-rate
-   Factor with levels ``"fixed"`` and ``"adjustable"``.
+   A data frame containing 78 observations on 16 variables.
 
-age
-   Age of the borrower.
+   rate
+      Factor with levels ``"fixed"`` and ``"adjustable"``.
 
-school
-   Years of schooling for the borrower.
+   age
+      Age of the borrower.
 
-networth
-   Net worth of the borrower.
+   school
+      Years of schooling for the borrower.
 
-interest
-   Fixed interest rate.
+   networth
+      Net worth of the borrower.
 
-points
-   Ratio of points paid on adjustable to fixed rate mortgages.
+   interest
+      Fixed interest rate.
 
-maturities
-   Ratio of maturities on adjustable to fixed rate mortgages.
+   points
+      Ratio of points paid on adjustable to fixed rate mortgages.
 
-years
-   Years at the present address.
+   maturities
+      Ratio of maturities on adjustable to fixed rate mortgages.
 
-married
-   Factor. Is the borrower married?
+   years
+      Years at the present address.
 
-first
-   Factor. Is the borrower a first-time home buyer?
+   married
+      Factor. Is the borrower married?
 
-selfemp
-   Factor. Is the borrower self-employed?
+   first
+      Factor. Is the borrower a first-time home buyer?
 
-tdiff
-   The difference between the 10-year treasury rate less the 1-year
-   treasury rate.
+   selfemp
+      Factor. Is the borrower self-employed?
 
-margin
-   The margin on the adjustable rate mortgage.
+   tdiff
+      The difference between the 10-year treasury rate less the 1-year
+      treasury rate.
 
-coborrower
-   Factor. Is there a co-borrower?
+   margin
+      The margin on the adjustable rate mortgage.
 
-liability
-   Short-term liabilities.
+   coborrower
+      Factor. Is there a co-borrower?
 
-liquid
-   Liquid assets.
+   liability
+      Short-term liabilities.
 
-Source
-~~~~~~
+   liquid
+      Liquid assets.
 
-The data is from Baltagi (2002).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The data is from Baltagi (2002).
 
-Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+   .. rubric:: References
+      :name: references
 
-Dhillon, U.S., Shilling, J.D. and Sirmans, C.F. (1987). Choosing Between
-Fixed and Adjustable Rate Mortgages. *Journal of Money, Credit and
-Banking*, **19**, 260–267.
+   Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
 
-See Also
-~~~~~~~~
+   Dhillon, U.S., Shilling, J.D. and Sirmans, C.F. (1987). Choosing
+   Between Fixed and Adjustable Rate Mortgages. *Journal of Money,
+   Credit and Banking*, **19**, 260–267.
 
-``Baltagi2002``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Baltagi2002``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("Mortgage")
-   plot(rate ~ interest, data = Mortgage, breaks = fivenum(Mortgage$interest))
-   plot(rate ~ margin, data = Mortgage, breaks = fivenum(Mortgage$margin))
-   plot(rate ~ coborrower, data = Mortgage)
+   ::
+
+      data("Mortgage")
+      plot(rate ~ interest, data = Mortgage, breaks = fivenum(Mortgage$interest))
+      plot(rate ~ margin, data = Mortgage, breaks = fivenum(Mortgage$margin))
+      plot(rate ~ coborrower, data = Mortgage)

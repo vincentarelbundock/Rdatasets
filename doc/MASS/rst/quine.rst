@@ -1,56 +1,58 @@
-===== ===============
-quine R Documentation
-===== ===============
+.. container::
 
-Absenteeism from School in Rural New South Wales
-------------------------------------------------
+   ===== ===============
+   quine R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Absenteeism from School in Rural New South Wales
+      :name: absenteeism-from-school-in-rural-new-south-wales
 
-The ``quine`` data frame has 146 rows and 5 columns. Children from
-Walgett, New South Wales, Australia, were classified by Culture, Age,
-Sex and Learner status and the number of days absent from school in a
-particular school year was recorded.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``quine`` data frame has 146 rows and 5 columns. Children from
+   Walgett, New South Wales, Australia, were classified by Culture, Age,
+   Sex and Learner status and the number of days absent from school in a
+   particular school year was recorded.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   quine
+   ::
 
-Format
-~~~~~~
+      quine
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``Eth``
-   ethnic background: Aboriginal or Not, (``"A"`` or ``"N"``).
+   This data frame contains the following columns:
 
-``Sex``
-   sex: factor with levels (``"F"`` or ``"M"``).
+   ``Eth``
+      ethnic background: Aboriginal or Not, (``"A"`` or ``"N"``).
 
-``Age``
-   age group: Primary (``"F0"``), or forms ``"F1,"`` ``"F2"`` or
-   ``"F3"``.
+   ``Sex``
+      sex: factor with levels (``"F"`` or ``"M"``).
 
-``Lrn``
-   learner status: factor with levels Average or Slow learner, (``"AL"``
-   or ``"SL"``).
+   ``Age``
+      age group: Primary (``"F0"``), or forms ``"F1,"`` ``"F2"`` or
+      ``"F3"``.
 
-``Days``
-   days absent from school in the year.
+   ``Lrn``
+      learner status: factor with levels Average or Slow learner,
+      (``"AL"`` or ``"SL"``).
 
-Source
-~~~~~~
+   ``Days``
+      days absent from school in the year.
 
-S. Quine, quoted in Aitkin, M. (1978) The analysis of unbalanced cross
-classifications (with discussion). *Journal of the Royal Statistical
-Society series A* **141**, 195–223.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   S. Quine, quoted in Aitkin, M. (1978) The analysis of unbalanced
+   cross classifications (with discussion). *Journal of the Royal
+   Statistical Society series A* **141**, 195–223.
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   .. rubric:: References
+      :name: references
+
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.

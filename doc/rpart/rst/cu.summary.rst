@@ -1,66 +1,69 @@
-========== ===============
-cu.summary R Documentation
-========== ===============
+.. container::
 
-Automobile Data from 'Consumer Reports' 1990
---------------------------------------------
+   ========== ===============
+   cu.summary R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Automobile Data from 'Consumer Reports' 1990
+      :name: automobile-data-from-consumer-reports-1990
 
-The ``cu.summary`` data frame has 117 rows and 5 columns, giving data on
-makes of cars taken from the April, 1990 issue of *Consumer Reports*.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``cu.summary`` data frame has 117 rows and 5 columns, giving data
+   on makes of cars taken from the April, 1990 issue of *Consumer
+   Reports*.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   cu.summary
+   ::
 
-Format
-~~~~~~
+      cu.summary
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``Price``
-   a numeric vector giving the list price in US dollars of a standard
-   model
+   This data frame contains the following columns:
 
-``Country``
-   of origin, a factor with levels Brazil, England, France, Germany,
-   Japan, Japan/USA, Korea, Mexico, Sweden and USA
+   ``Price``
+      a numeric vector giving the list price in US dollars of a standard
+      model
 
-``Reliability``
-   an ordered factor with levels Much worse < worse < average < better <
-   Much better
+   ``Country``
+      of origin, a factor with levels Brazil, England, France, Germany,
+      Japan, Japan/USA, Korea, Mexico, Sweden and USA
 
-``Mileage``
-   fuel consumption miles per US gallon, as tested.
+   ``Reliability``
+      an ordered factor with levels Much worse < worse < average <
+      better < Much better
 
-``Type``
-   a factor with levels ``Compact`` ``Large`` ``Medium`` ``Small``
-   ``Sporty`` ``Van``
+   ``Mileage``
+      fuel consumption miles per US gallon, as tested.
 
-Source
-~~~~~~
+   ``Type``
+      a factor with levels ``Compact`` ``Large`` ``Medium`` ``Small``
+      ``Sporty`` ``Van``
 
-*Consumer Reports*, April, 1990, pp. 235–288 quoted in
+   .. rubric:: Source
+      :name: source
 
-John M. Chambers and Trevor J. Hastie eds. (1992) *Statistical Models in
-S*, Wadsworth and Brooks/Cole, Pacific Grove, CA, pp. 46–47.
+   *Consumer Reports*, April, 1990, pp. 235–288 quoted in
 
-See Also
-~~~~~~~~
+   John M. Chambers and Trevor J. Hastie eds. (1992) *Statistical Models
+   in S*, Wadsworth and Brooks/Cole, Pacific Grove, CA, pp. 46–47.
 
-``car.test.frame``, ``car90``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``car.test.frame``, ``car90``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   fit <- rpart(Price ~ Mileage + Type + Country, cu.summary)
-   par(xpd = TRUE)
-   plot(fit, compress = TRUE)
-   text(fit, use.n = TRUE)
+   ::
+
+      fit <- rpart(Price ~ Mileage + Type + Country, cu.summary)
+      par(xpd = TRUE)
+      plot(fit, compress = TRUE)
+      text(fit, use.n = TRUE)

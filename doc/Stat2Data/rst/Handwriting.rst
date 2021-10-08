@@ -1,61 +1,63 @@
-=========== ===============
-Handwriting R Documentation
-=========== ===============
+.. container::
 
-Guess Author's Sex from Handwriting?
-------------------------------------
+   =========== ===============
+   Handwriting R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Guess Author's Sex from Handwriting?
+      :name: guess-authors-sex-from-handwriting
 
-Survey data to see if subjects can guess author's sex from handwriting
-specimens
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Survey data to see if subjects can guess author's sex from
+   handwriting specimens
 
-A data frame with 204 observations on the following 8 variables.
+   .. rubric:: Format
+      :name: format
 
-``Individual``
-   Survey Respondent Number
+   A data frame with 204 observations on the following 8 variables.
 
-``Gender``
-   Gender of Respondent (``0`` = male, ``1`` = female)
+   ``Individual``
+      Survey Respondent Number
 
-``Survey1``
-   Percent correct on Survey 1
+   ``Gender``
+      Gender of Respondent (``0`` = male, ``1`` = female)
 
-``Survey2``
-   Percent correct on Survey 2
+   ``Survey1``
+      Percent correct on Survey 1
 
-``FemaleID``
-   Percent correct in identifying female specimens on Survey 1
+   ``Survey2``
+      Percent correct on Survey 2
 
-``MaleID``
-   Percent correct in identifying male specimens on Survey 1
+   ``FemaleID``
+      Percent correct in identifying female specimens on Survey 1
 
-``Both``
-   Percent correctly identified on Survey 1 AND Survey 2
+   ``MaleID``
+      Percent correct in identifying male specimens on Survey 1
 
-``DIFF``
-   Survey1 - Survey2
+   ``Both``
+      Percent correctly identified on Survey 1 AND Survey 2
 
-Details
-~~~~~~~
+   ``DIFF``
+      Survey1 - Survey2
 
-Bradley and colleagues at Clarke University gave two identical surveys
-to a sample of 203 students (each student did the survey twice). Each
-survey contains 25 writing specimens and students were asked to identify
-whether the author is male or female. Of the 25 specimens, 12 are
-written by a female, 13 by a male.
+   .. rubric:: Details
+      :name: details
 
-| An example of the survey form can be found at
-| https://docs.google.com/forms/d/1sO6vlsozsORbqaCTsA7Ta0qZL7_6_MCEPJ7tYeKYyvI/viewform
+   Bradley and colleagues at Clarke University gave two identical
+   surveys to a sample of 203 students (each student did the survey
+   twice). Each survey contains 25 writing specimens and students were
+   asked to identify whether the author is male or female. Of the 25
+   specimens, 12 are written by a female, 13 by a male.
 
-Source
-~~~~~~
+   | An example of the survey form can be found at
+   | https://docs.google.com/forms/d/1sO6vlsozsORbqaCTsA7Ta0qZL7_6_MCEPJ7tYeKYyvI/viewform
 
-Bradley, S., (2015), "Handwriting and Gender: A Multi-use Dataset", JSE
-(Datasets and Stories). March 2015.
+   .. rubric:: Source
+      :name: source
 
-http://www.amstat.org/publications/jse/v23n1/bradley.pdf
+   Bradley, S., (2015), "Handwriting and Gender: A Multi-use Dataset",
+   JSE (Datasets and Stories). March 2015.
+
+   http://www.amstat.org/publications/jse/v23n1/bradley.pdf

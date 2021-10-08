@@ -1,94 +1,96 @@
-====== ===============
-dengue R Documentation
-====== ===============
+.. container::
 
-Dengue prevalence, by administrative region
--------------------------------------------
+   ====== ===============
+   dengue R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Dengue prevalence, by administrative region
+      :name: dengue-prevalence-by-administrative-region
 
-Data record, for each of 2000 administrative regions, whether or not
-dengue was recorded at any time between 1961 and 1990.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data record, for each of 2000 administrative regions, whether or not
+   dengue was recorded at any time between 1961 and 1990.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(dengue)
+   ::
 
-Format
-~~~~~~
+      data(dengue)
 
-A data frame with 2000 observations on the following 13 variables.
+   .. rubric:: Format
+      :name: format
 
-humid
-   Average vapour density: 1961-1990
+   A data frame with 2000 observations on the following 13 variables.
 
-humid90
-   90th percentile of ``humid``
+   humid
+      Average vapour density: 1961-1990
 
-temp
-   Average temperature: 1961-1990
+   humid90
+      90th percentile of ``humid``
 
-temp90
-   90th percentile of ``temp``
+   temp
+      Average temperature: 1961-1990
 
-h10pix
-   maximum of ``humid``, within a 10 pixel radius
+   temp90
+      90th percentile of ``temp``
 
-h10pix90
-   maximum of ``humid90``, within a 10 pixel radius
+   h10pix
+      maximum of ``humid``, within a 10 pixel radius
 
-trees
-   Percent tree cover, from satellite data
+   h10pix90
+      maximum of ``humid90``, within a 10 pixel radius
 
-trees90
-   90th percentile of ``trees``
+   trees
+      Percent tree cover, from satellite data
 
-NoYes
-   Was dengue observed? (1=yes)
+   trees90
+      90th percentile of ``trees``
 
-Xmin
-   minimum longitude
+   NoYes
+      Was dengue observed? (1=yes)
 
-Xmax
-   maximum longitude
+   Xmin
+      minimum longitude
 
-Ymin
-   minimum latitude
+   Xmax
+      maximum longitude
 
-Ymax
-   maximum latitude
+   Ymin
+      minimum latitude
 
-Details
-~~~~~~~
+   Ymax
+      maximum latitude
 
-This is derived from a data set in which the climate and tree cover
-information were given for each half degree of latitude by half degreee
-of longitude pixel. The variable ``NoYes`` was given by administrative
-region. The climate data and tree cover data given here are 50th or 90th
-percentiles, where percetiles were calculates across pixels for an
-administrative region.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This is derived from a data set in which the climate and tree cover
+   information were given for each half degree of latitude by half
+   degreee of longitude pixel. The variable ``NoYes`` was given by
+   administrative region. The climate data and tree cover data given
+   here are 50th or 90th percentiles, where percetiles were calculates
+   across pixels for an administrative region.
 
-Simon Hales, Environmental Research New Zealand Ltd.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Simon Hales, Environmental Research New Zealand Ltd.
 
-Hales, S., de Wet, N., Maindonald, J. and Woodward, A. 2002. Potential
-effect of population and climate change global distribution of dengue
-fever: an empirical model. The Lancet 2002; 360: 830-34.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Hales, S., de Wet, N., Maindonald, J. and Woodward, A. 2002.
+   Potential effect of population and climate change global distribution
+   of dengue fever: an empirical model. The Lancet 2002; 360: 830-34.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   str(dengue)
-   glm(NoYes ~ humid, data=dengue, family=binomial)
-   glm(NoYes ~ humid90, data=dengue, family=binomial)
+   ::
+
+      str(dengue)
+      glm(NoYes ~ humid, data=dengue, family=binomial)
+      glm(NoYes ~ humid90, data=dengue, family=binomial)

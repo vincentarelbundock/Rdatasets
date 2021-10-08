@@ -1,50 +1,52 @@
-======== ===============
-Friendly R Documentation
-======== ===============
+.. container::
 
-Format Effects on Recall
-------------------------
+   ======== ===============
+   Friendly R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Format Effects on Recall
+      :name: format-effects-on-recall
 
-The ``Friendly`` data frame has 30 rows and 2 columns. The data are from
-an experiment on subjects' ability to remember words based on the
-presentation format.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Friendly`` data frame has 30 rows and 2 columns. The data are
+   from an experiment on subjects' ability to remember words based on
+   the presentation format.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Friendly
+   ::
 
-Format
-~~~~~~
+      Friendly
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-condition
-   A factor with levels: ``Before``, Recalled words presented before
-   others; ``Meshed``, Recalled words meshed with others; ``SFR``,
-   Standard free recall.
+   This data frame contains the following columns:
 
-correct
-   Number of words correctly recalled, out of 40 on final trial of the
-   experiment.
+   condition
+      A factor with levels: ``Before``, Recalled words presented before
+      others; ``Meshed``, Recalled words meshed with others; ``SFR``,
+      Standard free recall.
 
-Source
-~~~~~~
+   correct
+      Number of words correctly recalled, out of 40 on final trial of
+      the experiment.
 
-Friendly, M. and Franklin, P. (1980) Interactive presentation in
-multitrial free recall. *Memory and Cognition* **8** 265–270 [Personal
-communication from M. Friendly].
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Friendly, M. and Franklin, P. (1980) Interactive presentation in
+   multitrial free recall. *Memory and Cognition* **8** 265–270
+   [Personal communication from M. Friendly].
 
-Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-Models*, Third Edition. Sage.
+   .. rubric:: References
+      :name: references
 
-Fox, J. and Weisberg, S. (2019) *An R Companion to Applied Regression*,
-Third Edition, Sage.
+   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+   Models*, Third Edition. Sage.
+
+   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+   Regression*, Third Edition, Sage.

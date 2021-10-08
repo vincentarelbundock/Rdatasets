@@ -1,77 +1,79 @@
-======== ===============
-iraqVote R Documentation
-======== ===============
+.. container::
 
-U.S. Senate vote on the use of force against Iraq, 2002.
---------------------------------------------------------
+   ======== ===============
+   iraqVote R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: U.S. Senate vote on the use of force against Iraq, 2002.
+      :name: u.s.-senate-vote-on-the-use-of-force-against-iraq-2002.
 
-On October 11, 2002, the United States Senate voted 77-23 to authorize
-the use of military force against Iraq. This data set lists the “Ayes”
-and “Nays” for each Senator and some covariates.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   On October 11, 2002, the United States Senate voted 77-23 to
+   authorize the use of military force against Iraq. This data set lists
+   the “Ayes” and “Nays” for each Senator and some covariates.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(iraqVote)
+   ::
 
-Format
-~~~~~~
+      data(iraqVote)
 
-A data frame with 100 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``y``
-   a numeric vector, the recorded vote (1 if Aye, 0 if Nay)
+   A data frame with 100 observations on the following 6 variables.
 
-``state.abb``
-   two letter abbreviation for each state
+   ``y``
+      a numeric vector, the recorded vote (1 if Aye, 0 if Nay)
 
-``name``
-   senator name, party and state, e.g., ``AKAKA (D HI)``
+   ``state.abb``
+      two letter abbreviation for each state
 
-``rep``
-   logical, ``TRUE`` for Republican senators
+   ``name``
+      senator name, party and state, e.g., ``AKAKA (D HI)``
 
-``state.name``
-   name of state
+   ``rep``
+      logical, ``TRUE`` for Republican senators
 
-``gorevote``
-   numeric, the vote share recorded by Al Gore in the corresponding
-   state in the 2000 Presidential election
+   ``state.name``
+      name of state
 
-Details
-~~~~~~~
+   ``gorevote``
+      numeric, the vote share recorded by Al Gore in the corresponding
+      state in the 2000 Presidential election
 
-The only Republican to vote against the resolution was Lincoln Chafee
-(Rhode Island); Democrats split 29-22 in favor of the resolution.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The only Republican to vote against the resolution was Lincoln Chafee
+   (Rhode Island); Democrats split 29-22 in favor of the resolution.
 
-Keith Poole, 107th Senate Roll Call Data.
-https://voteview.com/static/data/out/votes/S107_votes.ord The Iraq vote
-is vote number 617.
+   .. rubric:: Source
+      :name: source
 
-David Leip's Atlas of U.S. Presidential Elections.
-http://uselectionatlas.org
+   Keith Poole, 107th Senate Roll Call Data.
+   https://voteview.com/static/data/out/votes/S107_votes.ord The Iraq
+   vote is vote number 617.
 
-References
-~~~~~~~~~~
+   David Leip's Atlas of U.S. Presidential Elections.
+   http://uselectionatlas.org
 
-Jackman, Simon. 2009. *Bayesian Analysis for the Social Sciences*.
-Wiley: Chichester. Example 8.3.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Jackman, Simon. 2009. *Bayesian Analysis for the Social Sciences*.
+   Wiley: Chichester. Example 8.3.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(iraqVote)
-   ## probit model
-   glm1 <- glm(y ~ gorevote + rep,
-               data=iraqVote,
-               family=binomial(link=probit))
+   ::
+
+      data(iraqVote)
+      ## probit model
+      glm1 <- glm(y ~ gorevote + rep,
+                  data=iraqVote,
+                  family=binomial(link=probit))

@@ -1,81 +1,83 @@
-======== ===============
-diabetic R Documentation
-======== ===============
+.. container::
 
-Ddiabetic retinopathy
----------------------
+   ======== ===============
+   diabetic R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Ddiabetic retinopathy
+      :name: ddiabetic-retinopathy
 
-Partial results from a trial of laser coagulation for the treatment of
-diabetic retinopathy.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Partial results from a trial of laser coagulation for the treatment
+   of diabetic retinopathy.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   diabetic
-   data(diabetic, package="survival")
+   ::
 
-Format
-~~~~~~
+      diabetic
+      data(diabetic, package="survival")
 
-A data frame with 394 observations on the following 8 variables.
+   .. rubric:: Format
+      :name: format
 
-``id``
-   subject id
+   A data frame with 394 observations on the following 8 variables.
 
-``laser``
-   laser type: ``xenon`` or ``argon``
+   ``id``
+      subject id
 
-``age``
-   age at diagnosis
+   ``laser``
+      laser type: ``xenon`` or ``argon``
 
-``eye``
-   a factor with levels of ``left`` ``right``
+   ``age``
+      age at diagnosis
 
-``trt``
-   treatment: 0 = no treatment, 1= laser
+   ``eye``
+      a factor with levels of ``left`` ``right``
 
-``risk``
-   risk group of 6-12
+   ``trt``
+      treatment: 0 = no treatment, 1= laser
 
-``time``
-   time to event or last follow-up
+   ``risk``
+      risk group of 6-12
 
-``status``
-   status of 0= censored or 1 = visual loss
+   ``time``
+      time to event or last follow-up
 
-Details
-~~~~~~~
+   ``status``
+      status of 0= censored or 1 = visual loss
 
-The 197 patients in this dataset were a 50% random sample of the
-patients with "high-risk" diabetic retinopathy as defined by the
-Diabetic Retinopathy Study (DRS). Each patient had one eye randomized to
-laser treatment and the other eye received no treatment. For each eye,
-the event of interest was the time from initiation of treatment to the
-time when visual acuity dropped below 5/200 two visits in a row. Thus
-there is a built-in lag time of approximately 6 months (visits were
-every 3 months). Survival times in this dataset are therefore the actual
-time to blindness in months, minus the minimum possible time to event
-(6.5 months). Censoring was caused by death, dropout, or end of the
-study.
+   .. rubric:: Details
+      :name: details
 
-References
-~~~~~~~~~~
+   The 197 patients in this dataset were a 50% random sample of the
+   patients with "high-risk" diabetic retinopathy as defined by the
+   Diabetic Retinopathy Study (DRS). Each patient had one eye randomized
+   to laser treatment and the other eye received no treatment. For each
+   eye, the event of interest was the time from initiation of treatment
+   to the time when visual acuity dropped below 5/200 two visits in a
+   row. Thus there is a built-in lag time of approximately 6 months
+   (visits were every 3 months). Survival times in this dataset are
+   therefore the actual time to blindness in months, minus the minimum
+   possible time to event (6.5 months). Censoring was caused by death,
+   dropout, or end of the study.
 
-Huster, Brookmeyer and Self, Biometrics, 1989.
+   .. rubric:: References
+      :name: references
 
-American Journal of Ophthalmology, 1976, 81:4, pp 383-396
+   Huster, Brookmeyer and Self, Biometrics, 1989.
 
-Examples
-~~~~~~~~
+   American Journal of Ophthalmology, 1976, 81:4, pp 383-396
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   # juvenile diabetes is defined as and age less than 20
-   juvenile <- 1*(diabetic$age < 20)
-   coxph(Surv(time, status) ~ trt + juvenile, cluster= id,
-               data= diabetic)
+   ::
+
+      # juvenile diabetes is defined as and age less than 20
+      juvenile <- 1*(diabetic$age < 20)
+      coxph(Surv(time, status) ~ trt + juvenile, cluster= id,
+                  data= diabetic)

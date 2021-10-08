@@ -1,55 +1,57 @@
-============== ===============
-photo_classify R Documentation
-============== ===============
+.. container::
 
-Photo classifications: fashion or not
--------------------------------------
+   ============== ===============
+   photo_classify R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Photo classifications: fashion or not
+      :name: photo-classifications-fashion-or-not
 
-This is a simulated data set for photo classifications based on a
-machine learning algorithm versus what the true classification is for
-those photos. While the data are not real, they resemble performance
-that would be reasonable to expect in a well-built classifier.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This is a simulated data set for photo classifications based on a
+   machine learning algorithm versus what the true classification is for
+   those photos. While the data are not real, they resemble performance
+   that would be reasonable to expect in a well-built classifier.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   photo_classify
+   ::
 
-Format
-~~~~~~
+      photo_classify
 
-A data frame with 1822 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-mach_learn
-   The prediction by the machine learning system as to whether the photo
-   is about fashion or not.
+   A data frame with 1822 observations on the following 2 variables.
 
-truth
-   The actual classification of the photo by a team of humans.
+   mach_learn
+      The prediction by the machine learning system as to whether the
+      photo is about fashion or not.
 
-Details
-~~~~~~~
+   truth
+      The actual classification of the photo by a team of humans.
 
-The hypothetical ML algorithm has a precision of 90\\ photos it claims
-are fashion, about 90\\ The recall of the ML algorithm is about 64\\
-about fashion, it correctly predicts that they are about fashion about
-64\\ of the time.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The hypothetical ML algorithm has a precision of 90\\ photos it
+   claims are fashion, about 90\\ The recall of the ML algorithm is
+   about 64\\ about fashion, it correctly predicts that they are about
+   fashion about 64\\ of the time.
 
-The data are simulated / hypothetical.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   The data are simulated / hypothetical.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   data(photo_classify)
-   table(photo_classify)
+      data(photo_classify)
+      table(photo_classify)

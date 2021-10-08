@@ -1,68 +1,70 @@
-======== ===============
-Gasoline R Documentation
-======== ===============
+.. container::
 
-Gasoline Consumption
---------------------
+   ======== ===============
+   Gasoline R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Gasoline Consumption
+      :name: gasoline-consumption
 
-A panel of 18 observations from 1960 to 1978
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   A panel of 18 observations from 1960 to 1978
 
-A data frame containing :
+   .. rubric:: Format
+      :name: format
 
-country
-   a factor with 18 levels
+   A data frame containing :
 
-year
-   the year
+   country
+      a factor with 18 levels
 
-lgaspcar
-   logarithm of motor gasoline consumption per car
+   year
+      the year
 
-lincomep
-   logarithm of real per-capita income
+   lgaspcar
+      logarithm of motor gasoline consumption per car
 
-lrpmg
-   logarithm of real motor gasoline price
+   lincomep
+      logarithm of real per-capita income
 
-lcarpcap
-   logarithm of the stock of cars per capita
+   lrpmg
+      logarithm of real motor gasoline price
 
-Details
-~~~~~~~
+   lcarpcap
+      logarithm of the stock of cars per capita
 
-*total number of observations* : 342
+   .. rubric:: Details
+      :name: details
 
-*observation* : country
+   *total number of observations* : 342
 
-*country* : OECD
+   *observation* : country
 
-Source
-~~~~~~
+   *country* : OECD
 
-Online complements to Baltagi (2001):
+   .. rubric:: Source
+      :name: source
 
-https://www.wiley.com/legacy/wileychi/baltagi/
+   Online complements to Baltagi (2001):
 
-Online complements to Baltagi (2013):
+   https://www.wiley.com/legacy/wileychi/baltagi/
 
-https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
+   Online complements to Baltagi (2013):
 
-References
-~~~~~~~~~~
+   https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
 
-Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
-John Wiley and Sons ltd.
+   .. rubric:: References
+      :name: references
 
-Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
-John Wiley and Sons ltd.
+   Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
+   John Wiley and Sons ltd.
 
-Baltagi BH, Griffin JM (1983). “Gasoline demand in the OECD: An
-application of pooling and testing procedures.” *European Economic
-Review*, **22**\ (2), 117–137. ISSN 0014-2921,
-https://www.sciencedirect.com/science/article/pii/0014292183900776.
+   Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
+   John Wiley and Sons ltd.
+
+   Baltagi BH, Griffin JM (1983). “Gasoline demand in the OECD: An
+   application of pooling and testing procedures.” *European Economic
+   Review*, **22**\ (2), 117 - 137. ISSN 0014-2921,
+   https://www.sciencedirect.com/science/article/pii/0014292183900776.

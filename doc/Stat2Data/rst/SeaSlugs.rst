@@ -1,51 +1,53 @@
-======== ===============
-SeaSlugs R Documentation
-======== ===============
+.. container::
 
-Sea Slug Larvae
----------------
+   ======== ===============
+   SeaSlugs R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Sea Slug Larvae
+      :name: sea-slug-larvae
 
-Metamorphose rates for sea slugs exposed to different water samples
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Metamorphose rates for sea slugs exposed to different water samples
 
-A dataset with 36 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-=========== ==================================================
-``Time``    Minutes after tide come in
-``Percent`` Proportion of 15 sea slug larvae that metamorphose
-\           
-=========== ==================================================
+   A dataset with 36 observations on the following 2 variables.
 
-Details
-~~~~~~~
+   =========== ==================================================
+   ``Time``    Minutes after tide come in
+   ``Percent`` Proportion of 15 sea slug larvae that metamorphose
+   \           
+   =========== ==================================================
 
-Sea slugs, common on the coast of southern California, live on
-vaucherian seaweed. The larvae from these sea slugs need to locate this
-type of seaweed to survive. A study was done to try to determine whether
-chemicals that leach out of the seaweed attract the larvae. Seawater was
-collected over a patch of this kind of seaweed at 5-minute intervals as
-the tide was coming in and, presumably, mixing with the chemicals. The
-idea was that as more seawater came in, the concentration of the
-chemicals was reduced. Each sample of water was divided into 6 parts.
-Fifteen larvae were then introduced to this seawater to see what
-percentage metamorphosed (an indication that the desired chemical was
-detected).
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Sea slugs, common on the coast of southern California, live on
+   vaucherian seaweed. The larvae from these sea slugs need to locate
+   this type of seaweed to survive. A study was done to try to determine
+   whether chemicals that leach out of the seaweed attract the larvae.
+   Seawater was collected over a patch of this kind of seaweed at
+   5-minute intervals as the tide was coming in and, presumably, mixing
+   with the chemicals. The idea was that as more seawater came in, the
+   concentration of the chemicals was reduced. Each sample of water was
+   divided into 6 parts. Fifteen larvae were then introduced to this
+   seawater to see what percentage metamorphosed (an indication that the
+   desired chemical was detected).
 
-Data downloaded from
-http://www.stat.ucla.edu/projects/datasets/seaslug-explanation.html
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Data downloaded from
+   http://www.stat.ucla.edu/projects/datasets/seaslug-explanation.html
 
-A paper based on these data: Krug, P.J. and R.K. Zimmer. 2000b. Larval
-settlement: chemical markers for tracing production, transport, and
-distribution of a waterborne cue. Marine Ecology Progress Series, vol.
-207: 283-296.
+   .. rubric:: References
+      :name: references
+
+   A paper based on these data: Krug, P.J. and R.K. Zimmer. 2000b.
+   Larval settlement: chemical markers for tracing production,
+   transport, and distribution of a waterborne cue. Marine Ecology
+   Progress Series, vol. 207: 283-296.

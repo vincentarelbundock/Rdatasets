@@ -1,31 +1,35 @@
-========= ===============
-visnights R Documentation
-========= ===============
+.. container::
 
-Quarterly visitor nights for various regions of Australia.
-----------------------------------------------------------
+   ========= ===============
+   visnights R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Quarterly visitor nights for various regions of
+      Australia.
+      :name: quarterly-visitor-nights-for-various-regions-of-australia.
 
-Total quarterly visitor nights (in millions) from 1998-2016 for twenty
-regions of Australia within six states. The states are: New South Wales,
-Queensland, South Australia, Victoria, Western Australia, and Other.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Total quarterly visitor nights (in millions) from 1998-2016 for
+   twenty regions of Australia within six states. The states are: New
+   South Wales, Queensland, South Australia, Victoria, Western
+   Australia, and Other.
 
-Time series object of class ``mts``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   Time series object of class ``mts``.
 
-Tourism Research Australia.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Tourism Research Australia.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   autoplot(visnights)
+      autoplot(visnights)

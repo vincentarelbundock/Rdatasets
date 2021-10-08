@@ -1,75 +1,78 @@
-=================== ===============
-close_elections_lmb R Documentation
-=================== ===============
+.. container::
 
-A close-elections regression discontinuity study from Lee, Moretti, and Butler (2004)
--------------------------------------------------------------------------------------
+   =================== ===============
+   close_elections_lmb R Documentation
+   =================== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: A close-elections regression discontinuity study from
+      Lee, Moretti, and Butler (2004)
+      :name: a-close-elections-regression-discontinuity-study-from-lee-moretti-and-butler-2004
 
-This data comes from a close-elections regression discontinuity study
-from Lee, Moretti, and Butler (2004). The design is intended to test
-convergence and divergence in policy. Major effects of electing someone
-from a particular party on policy outcomes \*in a close race\* indicates
-that the victor does what they want. Small or null effects indicate that
-the electee moderates their position towards their nearly-split
-electorate.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data comes from a close-elections regression discontinuity study
+   from Lee, Moretti, and Butler (2004). The design is intended to test
+   convergence and divergence in policy. Major effects of electing
+   someone from a particular party on policy outcomes \*in a close
+   race\* indicates that the victor does what they want. Small or null
+   effects indicate that the electee moderates their position towards
+   their nearly-split electorate.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   close_elections_lmb
+   ::
 
-Format
-~~~~~~
+      close_elections_lmb
 
-A data frame with 13588 rows and 9 variables
+   .. rubric:: Format
+      :name: format
 
-state
-   ICPSR state code
+   A data frame with 13588 rows and 9 variables
 
-district
-   district code
+   state
+      ICPSR state code
 
-id
-   Election ID
+   district
+      district code
 
-score
-   ADA voting score (higher = more liberal)
+   id
+      Election ID
 
-year
-   Year of election
+   score
+      ADA voting score (higher = more liberal)
 
-demvoteshare
-   Democratic share of the vote
+   year
+      Year of election
 
-democrat
-   Democratic victory
+   demvoteshare
+      Democratic share of the vote
 
-lagdemocrat
-   Lagged Democratic victory
+   democrat
+      Democratic victory
 
-lagdemvoteshare
-   Lagged democratic share of the vote
+   lagdemocrat
+      Lagged Democratic victory
 
-Details
-~~~~~~~
+   lagdemvoteshare
+      Lagged democratic share of the vote
 
-This data is used in the *Regression Discontinuity* chapter of *Causal
-Inference: The Mixtape* by Cunningham.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This data is used in the *Regression Discontinuity* chapter of
+   *Causal Inference: The Mixtape* by Cunningham.
 
-Lee, David S., Enrico Moretti, and Matthew J. Butler. 2004. “Do Voters
-Affect or Elect Policies: Evidence from the U.S. House.” Quarterly
-Journal of Economics 119 (3): 807–59.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Lee, David S., Enrico Moretti, and Matthew J. Butler. 2004. “Do
+   Voters Affect or Elect Policies: Evidence from the U.S. House.”
+   Quarterly Journal of Economics 119 (3): 807–59.
 
-Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-https://mixtape.scunning.com/index.html.
+   .. rubric:: References
+      :name: references
+
+   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+   https://mixtape.scunning.com/index.html.

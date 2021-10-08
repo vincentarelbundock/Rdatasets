@@ -1,65 +1,67 @@
-======= ===============
-breslow R Documentation
-======= ===============
+.. container::
 
-Smoking Deaths Among Doctors
-----------------------------
+   ======= ===============
+   breslow R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Smoking Deaths Among Doctors
+      :name: smoking-deaths-among-doctors
 
-The ``breslow`` data frame has 10 rows and 5 columns.
+   .. rubric:: Description
+      :name: description
 
-In 1961 Doll and Hill sent out a questionnaire to all men on the British
-Medical Register enquiring about their smoking habits. Almost 70% of
-such men replied. Death certificates were obtained for medical
-practitioners and causes of death were assigned on the basis of these
-certificates. The ``breslow`` data set contains the person-years of
-observations and deaths from coronary artery disease accumulated during
-the first ten years of the study.
+   The ``breslow`` data frame has 10 rows and 5 columns.
 
-Usage
-~~~~~
+   In 1961 Doll and Hill sent out a questionnaire to all men on the
+   British Medical Register enquiring about their smoking habits. Almost
+   70% of such men replied. Death certificates were obtained for medical
+   practitioners and causes of death were assigned on the basis of these
+   certificates. The ``breslow`` data set contains the person-years of
+   observations and deaths from coronary artery disease accumulated
+   during the first ten years of the study.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   breslow
+   ::
 
-Format
-~~~~~~
+      breslow
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``age``
-   The mid-point of the 10 year age-group for the doctors.
+   This data frame contains the following columns:
 
-``smoke``
-   An indicator of whether the doctors smoked (1) or not (0).
+   ``age``
+      The mid-point of the 10 year age-group for the doctors.
 
-``n``
-   The number of person-years in the category.
+   ``smoke``
+      An indicator of whether the doctors smoked (1) or not (0).
 
-``y``
-   The number of deaths attributed to coronary artery disease.
+   ``n``
+      The number of person-years in the category.
 
-``ns``
-   The number of smoker years in the category (``smoke*n``).
+   ``y``
+      The number of deaths attributed to coronary artery disease.
 
-Source
-~~~~~~
+   ``ns``
+      The number of smoker years in the category (``smoke*n``).
 
-The data were obtained from
+   .. rubric:: Source
+      :name: source
 
-Breslow, N.E. (1985) Cohort Analysis in Epidemiology. In *A Celebration
-of Statistics* A.C. Atkinson and S.E. Fienberg (editors), 109–143.
-Springer-Verlag.
+   The data were obtained from
 
-References
-~~~~~~~~~~
+   Breslow, N.E. (1985) Cohort Analysis in Epidemiology. In *A
+   Celebration of Statistics* A.C. Atkinson and S.E. Fienberg (editors),
+   109–143. Springer-Verlag.
 
-Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-Application*. Cambridge University Press.
+   .. rubric:: References
+      :name: references
 
-Doll, R. and Hill, A.B. (1966) Mortality of British doctors in relation
-to smoking: Observations on coronary thrombosis. *National Cancer
-Institute Monograph*, **19**, 205-268.
+   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
+   Application*. Cambridge University Press.
+
+   Doll, R. and Hill, A.B. (1966) Mortality of British doctors in
+   relation to smoking: Observations on coronary thrombosis. *National
+   Cancer Institute Monograph*, **19**, 205-268.

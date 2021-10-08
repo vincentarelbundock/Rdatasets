@@ -1,83 +1,87 @@
-==================== ===============
-politicalInformation R Documentation
-==================== ===============
+.. container::
 
-Interviewer ratings of respondent levels of political information
------------------------------------------------------------------
+   ==================== ===============
+   politicalInformation R Documentation
+   ==================== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Interviewer ratings of respondent levels of political
+      information
+      :name: interviewer-ratings-of-respondent-levels-of-political-information
 
-Interviewers administering the 2000 American National Election Studies
-assigned an ordinal rating to each respondent's "general level of
-information" about politics and public affairs.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Interviewers administering the 2000 American National Election
+   Studies assigned an ordinal rating to each respondent's "general
+   level of information" about politics and public affairs.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(politicalInformation)
+   ::
 
-Format
-~~~~~~
+      data(politicalInformation)
 
-A data frame with 1807 observations on the following 8 variables.
+   .. rubric:: Format
+      :name: format
 
-``y``
-   interviewer rating, a factor with levels ``Very Low`` ``Fairly Low``
-   ``Average`` ``Fairly High`` ``Very High``
+   A data frame with 1807 observations on the following 8 variables.
 
-``collegeDegree``
-   a factor with levels ``No`` ``Yes``
+   ``y``
+      interviewer rating, a factor with levels ``Very Low``
+      ``Fairly Low`` ``Average`` ``Fairly High`` ``Very High``
 
-``female``
-   a factor with levels ``No`` ``Yes``
+   ``collegeDegree``
+      a factor with levels ``No`` ``Yes``
 
-``age``
-   a numeric vector, respondent age in years
+   ``female``
+      a factor with levels ``No`` ``Yes``
 
-``homeOwn``
-   a factor with levels ``No`` ``Yes``
+   ``age``
+      a numeric vector, respondent age in years
 
-``govt``
-   a factor with levels ``No`` ``Yes``
+   ``homeOwn``
+      a factor with levels ``No`` ``Yes``
 
-``length``
-   a numeric vector, length of ANES pre-election interview in minutes
+   ``govt``
+      a factor with levels ``No`` ``Yes``
 
-``id``
-   a factor, unique identifier for each interviewer
+   ``length``
+      a numeric vector, length of ANES pre-election interview in minutes
 
-Details
-~~~~~~~
+   ``id``
+      a factor, unique identifier for each interviewer
 
-Seven respondents have missing data on the ordinal interviewer rating.
-The covariates ``age`` and ``length`` also have some missing data.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Seven respondents have missing data on the ordinal interviewer
+   rating. The covariates ``age`` and ``length`` also have some missing
+   data.
 
-The National Election Studies (www.electionstudies.org). THE 2000
-NATIONAL ELECTION STUDY [dataset]. Ann Arbor, MI: University of
-Michigan, Center for Political Studies [producer and distributor].
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The National Election Studies (www.electionstudies.org). THE 2000
+   NATIONAL ELECTION STUDY [dataset]. Ann Arbor, MI: University of
+   Michigan, Center for Political Studies [producer and distributor].
 
-Jackman, Simon. 2009. *Bayesian Analysis for the Social Sciences*.
-Wiley: Hoboken, New Jersey.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Jackman, Simon. 2009. *Bayesian Analysis for the Social Sciences*.
+   Wiley: Hoboken, New Jersey.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(politicalInformation)
+   ::
 
-   table(politicalInformation$y,exclude=NULL)
+      data(politicalInformation)
 
-   op <- MASS::polr(y ~ collegeDegree + female + log(age) + homeOwn + govt + log(length),
-              data=politicalInformation,
-              Hess=TRUE,
-              method="probit")
+      table(politicalInformation$y,exclude=NULL)
+
+      op <- MASS::polr(y ~ collegeDegree + female + log(age) + homeOwn + govt + log(length),
+                 data=politicalInformation,
+                 Hess=TRUE,
+                 method="probit")

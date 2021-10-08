@@ -1,46 +1,49 @@
-======= ===============
-avandia R Documentation
-======= ===============
+.. container::
 
-Cardiovascular problems for two types of Diabetes medicines
------------------------------------------------------------
+   ======= ===============
+   avandia R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Cardiovascular problems for two types of Diabetes
+      medicines
+      :name: cardiovascular-problems-for-two-types-of-diabetes-medicines
 
-A comparison of cardiovascular problems for Rosiglitazone and
-Pioglitazone.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A comparison of cardiovascular problems for Rosiglitazone and
+   Pioglitazone.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   avandia
+   ::
 
-Format
-~~~~~~
+      avandia
 
-A data frame with 227571 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-treatment
-   a factor with levels ``Pioglitazone`` and ``Rosiglitazone``
+   A data frame with 227571 observations on the following 2 variables.
 
-cardiovascular_problems
-   a factor with levels ``no`` and ``yes``
+   treatment
+      a factor with levels ``Pioglitazone`` and ``Rosiglitazone``
 
-Source
-~~~~~~
+   cardiovascular_problems
+      a factor with levels ``no`` and ``yes``
 
-D.J. Graham et al. Risk of acute myocardial infarction, stroke, heart
-failure, and death in elderly Medicare patients treated with
-rosiglitazone or pioglitazone. In: JAMA 304.4 (2010), p. 411. issn:
-0098-7484.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   D.J. Graham et al. Risk of acute myocardial infarction, stroke, heart
+   failure, and death in elderly Medicare patients treated with
+   rosiglitazone or pioglitazone. In: JAMA 304.4 (2010), p. 411. issn:
+   0098-7484.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   table(avandia)
+      table(avandia)

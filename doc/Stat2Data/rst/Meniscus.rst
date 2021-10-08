@@ -1,50 +1,52 @@
-======== ===============
-Meniscus R Documentation
-======== ===============
+.. container::
 
-Meniscus Repair Methods
------------------------
+   ======== ===============
+   Meniscus R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Meniscus Repair Methods
+      :name: meniscus-repair-methods
 
-Comparing meniscus repair methods on cadaver knees
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Comparing meniscus repair methods on cadaver knees
 
-A data frame with 18 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``Method``
-   Meniscus repair method (``1`` = Vertical Suture, ``2`` = Meniscus
-   Arrow, ``3`` = FasT-Fix)
+   A data frame with 18 observations on the following 4 variables.
 
-``FailureLoad``
-   Load at failure (in Newtons)
+   ``Method``
+      Meniscus repair method (``1`` = Vertical Suture, ``2`` = Meniscus
+      Arrow, ``3`` = FasT-Fix)
 
-``Displacement``
-   Displacement (in mm)
+   ``FailureLoad``
+      Load at failure (in Newtons)
 
-``Stiffness``
-   Stiffness (Newtons/mm)
+   ``Displacement``
+      Displacement (in mm)
 
-Details
-~~~~~~~
+   ``Stiffness``
+      Stiffness (Newtons/mm)
 
-Eighteen, lightly embalmed, cadaveric knee specimens were used in a
-study to compare three different methods of meniscus repair. The
-specimens were randomly assigned to one of the three treatments:
-vertical suture, meniscus arrow, FasT-Fix. They were evaluated on three
-different response variables: load at failure, stiffness, and
-displacement.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Eighteen, lightly embalmed, cadaveric knee specimens were used in a
+   study to compare three different methods of meniscus repair. The
+   specimens were randomly assigned to one of the three treatments:
+   vertical suture, meniscus arrow, FasT-Fix. They were evaluated on
+   three different response variables: load at failure, stiffness, and
+   displacement.
 
-P. Borden, J. Nyland, D.N.M. Caborn, D. Pienkowski (2003),
-"Biomechanical Comparison of the FasT-Fix Meniscal Repair Suture System
-with Vertical Mattress Sutures and Meniscus Arrows," The American
-Journal of Sports Medicine, Vol. 31, #3, pp. 374-378
+   .. rubric:: Source
+      :name: source
 
-Dataset downloaded from
-http://www.stat.ufl.edu/~winner/data/meniscus.txt
+   P. Borden, J. Nyland, D.N.M. Caborn, D. Pienkowski (2003),
+   "Biomechanical Comparison of the FasT-Fix Meniscal Repair Suture
+   System with Vertical Mattress Sutures and Meniscus Arrows," The
+   American Journal of Sports Medicine, Vol. 31, #3, pp. 374-378
+
+   Dataset downloaded from
+   http://www.stat.ufl.edu/~winner/data/meniscus.txt

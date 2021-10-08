@@ -1,39 +1,41 @@
-======= ===============
-Kids198 R Documentation
-======= ===============
+.. container::
 
-Body Measurements of Children
------------------------------
+   ======= ===============
+   Kids198 R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Body Measurements of Children
+      :name: body-measurements-of-children
 
-Body measurements for a sample of 198 children
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Body measurements for a sample of 198 children
 
-A data frame with 198 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-========== ==============================
-``Height`` Height (in inches)
-``Weight`` Weight (in pounds)
-``Age``    Age (in months)
-``Sex``    ``0``\ =male or ``1``\ =female
-``Race``   ``0``\ =white or ``1``\ =other
-\          
-========== ==============================
+   A data frame with 198 observations on the following 5 variables.
 
-Details
-~~~~~~~
+   ========== ==============================
+   ``Height`` Height (in inches)
+   ``Weight`` Weight (in pounds)
+   ``Age``    Age (in months)
+   ``Sex``    ``0``\ =male or ``1``\ =female
+   ``Race``   ``0``\ =white or ``1``\ =other
+   \          
+   ========== ==============================
 
-This dataset comes from a 1977 anthropometric study of body measurements
-for children. Subjects in this sample are between the ages of 8 and 18
-years old, selected at random from the much larger dataset of the
-original study.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This dataset comes from a 1977 anthropometric study of body
+   measurements for children. Subjects in this sample are between the
+   ages of 8 and 18 years old, selected at random from the much larger
+   dataset of the original study.
 
-A sample of 198 cases from the NIST's AnthroKids dataset at
-http://ovrt.nist.gov/projects/anthrokids/
+   .. rubric:: Source
+      :name: source
+
+   A sample of 198 cases from the NIST's AnthroKids dataset at
+   http://ovrt.nist.gov/projects/anthrokids/

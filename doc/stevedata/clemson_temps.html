@@ -1,7 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Daily Clemson Temperature Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body>
+</head><body><div class="container">
 
 <table width="100%" summary="page for clemson_temps"><tr><td>clemson_temps</td><td style="text-align: right;">R Documentation</td></tr></table>
 
@@ -39,8 +40,6 @@ clemson_temps
 </dd>
 <dt><code>yd</code></dt><dd><p>the day of the year</p>
 </dd>
-<dt><code>station</code></dt><dd><p>the unique station identifier for NOAA</p>
-</dd>
 <dt><code>value</code></dt><dd><p>the daily high in Celsius*10. I don't know why NOAA does it this way, but there you go.</p>
 </dd>
 <dt><code>tmax</code></dt><dd><p>the daily high, adjusted to Fahrenheit</p>
@@ -51,8 +50,8 @@ clemson_temps
 
 <h3>Details</h3>
 
-<p>Data obtained from NOAA, via the rnoaa package.
+<p>Data obtained from NOAA, via the <span class="pkg">rnoaa</span> package. The station identifier is <code>GHCND:USC00381770</code> for added context.
 </p>
 
 
-</body></html>
+</div></body></html>

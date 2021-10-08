@@ -1,58 +1,60 @@
-======== ===============
-menarche R Documentation
-======== ===============
+.. container::
 
-Age of Menarche in Warsaw
--------------------------
+   ======== ===============
+   menarche R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Age of Menarche in Warsaw
+      :name: age-of-menarche-in-warsaw
 
-Proportions of female children at various ages during adolescence who
-have reached menarche.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Proportions of female children at various ages during adolescence who
+   have reached menarche.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   menarche
+   ::
 
-Format
-~~~~~~
+      menarche
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``Age``
-   Average age of the group. (The groups are reasonably age
-   homogeneous.)
+   This data frame contains the following columns:
 
-``Total``
-   Total number of children in the group.
+   ``Age``
+      Average age of the group. (The groups are reasonably age
+      homogeneous.)
 
-``Menarche``
-   Number who have reached menarche.
+   ``Total``
+      Total number of children in the group.
 
-Source
-~~~~~~
+   ``Menarche``
+      Number who have reached menarche.
 
-Milicer, H. and Szczotka, F. (1966) Age at Menarche in Warsaw girls in
-1965. *Human Biology* **38**, 199–203.
+   .. rubric:: Source
+      :name: source
 
-| The data are also given in
-| Aranda-Ordaz, F.J. (1981) On two families of transformations to
-  additivity for binary response data. *Biometrika* **68**, 357–363.
+   Milicer, H. and Szczotka, F. (1966) Age at Menarche in Warsaw girls
+   in 1965. *Human Biology* **38**, 199–203.
 
-References
-~~~~~~~~~~
+   | The data are also given in
+   | Aranda-Ordaz, F.J. (1981) On two families of transformations to
+     additivity for binary response data. *Biometrika* **68**, 357–363.
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   mprob <- glm(cbind(Menarche, Total - Menarche) ~ Age,
-                binomial(link = probit), data = menarche)
+   ::
+
+      mprob <- glm(cbind(Menarche, Total - Menarche) ~ Age,
+                   binomial(link = probit), data = menarche)

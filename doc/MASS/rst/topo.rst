@@ -1,44 +1,46 @@
-==== ===============
-topo R Documentation
-==== ===============
+.. container::
 
-Spatial Topographic Data
-------------------------
+   ==== ===============
+   topo R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Spatial Topographic Data
+      :name: spatial-topographic-data
 
-The ``topo`` data frame has 52 rows and 3 columns, of topographic
-heights within a 310 feet square.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``topo`` data frame has 52 rows and 3 columns, of topographic
+   heights within a 310 feet square.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   topo
+   ::
 
-Format
-~~~~~~
+      topo
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``x``
-   x coordinates (units of 50 feet)
+   This data frame contains the following columns:
 
-``y``
-   y coordinates (units of 50 feet)
+   ``x``
+      x coordinates (units of 50 feet)
 
-``z``
-   heights (feet)
+   ``y``
+      y coordinates (units of 50 feet)
 
-Source
-~~~~~~
+   ``z``
+      heights (feet)
 
-Davis, J.C. (1973) *Statistics and Data Analysis in Geology.* Wiley.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Davis, J.C. (1973) *Statistics and Data Analysis in Geology.* Wiley.
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   .. rubric:: References
+      :name: references
+
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.

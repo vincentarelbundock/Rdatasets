@@ -1,43 +1,46 @@
-================= ===============
-scotus_healthcare R Documentation
-================= ===============
+.. container::
 
-Public Opinion with SCOTUS ruling on American Healthcare Act
-------------------------------------------------------------
+   ================= ===============
+   scotus_healthcare R Documentation
+   ================= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Public Opinion with SCOTUS ruling on American Healthcare
+      Act
+      :name: public-opinion-with-scotus-ruling-on-american-healthcare-act
 
-On June 28, 2012 the U.S. Supreme Court upheld the much debated 2010
-healthcare law, declaring it constitutional. A Gallup poll released the
-day after this decision indicates that 46% of 1,012 Americans agree with
-this decision.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   On June 28, 2012 the U.S. Supreme Court upheld the much debated 2010
+   healthcare law, declaring it constitutional. A Gallup poll released
+   the day after this decision indicates that 46% of 1,012 Americans
+   agree with this decision.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   scotus_healthcare
+   ::
 
-Format
-~~~~~~
+      scotus_healthcare
 
-A data frame with 1012 observations on the following variable.
+   .. rubric:: Format
+      :name: format
 
-response
-   Response values reported are ``agree`` and ``other``.
+   A data frame with 1012 observations on the following variable.
 
-Source
-~~~~~~
+   response
+      Response values reported are ``agree`` and ``other``.
 
-Gallup, Americans Issue Split Decision on Healthcare Ruling, retrieved
-2012-06-28.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Gallup, Americans Issue Split Decision on Healthcare Ruling,
+   retrieved 2012-06-28.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   table(scotus_healthcare)
+      table(scotus_healthcare)

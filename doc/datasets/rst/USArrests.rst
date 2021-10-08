@@ -1,86 +1,88 @@
-========= ===============
-USArrests R Documentation
-========= ===============
+.. container::
 
-Violent Crime Rates by US State
--------------------------------
+   ========= ===============
+   USArrests R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Violent Crime Rates by US State
+      :name: violent-crime-rates-by-us-state
 
-This data set contains statistics, in arrests per 100,000 residents for
-assault, murder, and rape in each of the 50 US states in 1973. Also
-given is the percent of the population living in urban areas.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data set contains statistics, in arrests per 100,000 residents
+   for assault, murder, and rape in each of the 50 US states in 1973.
+   Also given is the percent of the population living in urban areas.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   USArrests
+   ::
 
-Format
-~~~~~~
+      USArrests
 
-A data frame with 50 observations on 4 variables.
+   .. rubric:: Format
+      :name: format
 
-==== ======== ======= =============================
-[,1] Murder   numeric Murder arrests (per 100,000)
-[,2] Assault  numeric Assault arrests (per 100,000)
-[,3] UrbanPop numeric Percent urban population
-[,4] Rape     numeric Rape arrests (per 100,000)
-==== ======== ======= =============================
+   A data frame with 50 observations on 4 variables.
 
-Note
-~~~~
+   ==== ======== ======= =============================
+   [,1] Murder   numeric Murder arrests (per 100,000)
+   [,2] Assault  numeric Assault arrests (per 100,000)
+   [,3] UrbanPop numeric Percent urban population
+   [,4] Rape     numeric Rape arrests (per 100,000)
+   ==== ======== ======= =============================
 
-``USArrests`` contains the data as in McNeil's monograph. For the
-``UrbanPop`` percentages, a review of the table (No. 21) in the
-Statistical Abstracts 1975 reveals a transcription error for Maryland
-(and that McNeil used the same “round to even” rule that R's ``round()``
-uses), as found by Daniel S Coven (Arizona).
+   .. rubric:: Note
+      :name: note
 
-See the example below on how to correct the error and improve accuracy
-for the ‘<n>.5’ percentages.
+   ``USArrests`` contains the data as in McNeil's monograph. For the
+   ``UrbanPop`` percentages, a review of the table (No. 21) in the
+   Statistical Abstracts 1975 reveals a transcription error for Maryland
+   (and that McNeil used the same “round to even” rule that R's
+   ``round()`` uses), as found by Daniel S Coven (Arizona).
 
-Source
-~~~~~~
+   See the example below on how to correct the error and improve
+   accuracy for the ‘<n>.5’ percentages.
 
-World Almanac and Book of facts 1975. (Crime rates).
+   .. rubric:: Source
+      :name: source
 
-Statistical Abstracts of the United States 1975, p.20, (Urban rates),
-possibly available as
-https://books.google.ch/books?id=zl9qAAAAMAAJ&pg=PA20.
+   World Almanac and Book of facts 1975. (Crime rates).
 
-References
-~~~~~~~~~~
+   Statistical Abstracts of the United States 1975, p.20, (Urban rates),
+   possibly available as
+   https://books.google.ch/books?id=zl9qAAAAMAAJ&pg=PA20.
 
-McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
 
-The ``state`` data sets.
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   The ``state`` data sets.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   summary(USArrests)
+   ::
 
-   require(graphics)
-   pairs(USArrests, panel = panel.smooth, main = "USArrests data")
+      summary(USArrests)
 
-   ## Difference between 'USArrests' and its correction
-   USArrests["Maryland", "UrbanPop"] # 67 -- the transcription error
-   UA.C <- USArrests
-   UA.C["Maryland", "UrbanPop"] <- 76.6
+      require(graphics)
+      pairs(USArrests, panel = panel.smooth, main = "USArrests data")
 
-   ## also +/- 0.5 to restore the original  <n>.5  percentages
-   s5u <- c("Colorado", "Florida", "Mississippi", "Wyoming")
-   s5d <- c("Nebraska", "Pennsylvania")
-   UA.C[s5u, "UrbanPop"] <- UA.C[s5u, "UrbanPop"] + 0.5
-   UA.C[s5d, "UrbanPop"] <- UA.C[s5d, "UrbanPop"] - 0.5
+      ## Difference between 'USArrests' and its correction
+      USArrests["Maryland", "UrbanPop"] # 67 -- the transcription error
+      UA.C <- USArrests
+      UA.C["Maryland", "UrbanPop"] <- 76.6
 
-   ## ==> UA.C  is now a *C*orrected version of  USArrests
+      ## also +/- 0.5 to restore the original  <n>.5  percentages
+      s5u <- c("Colorado", "Florida", "Mississippi", "Wyoming")
+      s5d <- c("Nebraska", "Pennsylvania")
+      UA.C[s5u, "UrbanPop"] <- UA.C[s5u, "UrbanPop"] + 0.5
+      UA.C[s5d, "UrbanPop"] <- UA.C[s5d, "UrbanPop"] - 0.5
+
+      ## ==> UA.C  is now a *C*orrected version of  USArrests

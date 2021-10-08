@@ -1,78 +1,83 @@
-======== ===============
-Grunfeld R Documentation
-======== ===============
+.. container::
 
-Grunfeld Investment Data
-------------------------
+   ======== ===============
+   Grunfeld R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Grunfeld Investment Data
+      :name: grunfeld-investment-data
 
-a panel of 20 annual observations from 1935 to 1954 on each of 10 firms.
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 200
+   a panel of 20 annual observations from 1935 to 1954 on each of 10
+   firms.
 
-*observation* : production units
+   *number of observations* : 200
 
-*country* : United States
+   *observation* : production units
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Grunfeld)
+   ::
 
-Format
-~~~~~~
+      data(Grunfeld)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-firm
-   observation
+   A dataframe containing :
 
-year
-   date
+   firm
+      observation
 
-inv
-   gross Investment
+   year
+      date
 
-value
-   value of the firm
+   inv
+      gross Investment
 
-capital
-   stock of plant and equipment
+   value
+      value of the firm
 
-Details
-~~~~~~~
+   capital
+      stock of plant and equipment
 
-There are several versions of these data.
+   .. rubric:: Details
+      :name: details
 
-``GrunfeldGreene`` is "A data frame containing 20 annual observations on
-3 variables for 5 firms." That dataset reportedly contains errors but is
-maintained in that way to avoid breaking the code of others who use it.
-That help file also provides a link to the corrected version.
+   There are several versions of these data.
 
-See also `for a version with only 5
-firms <http://people.stern.nyu.edu/wgreene/Text/tables/TableF13-1.txt>`__.
+   ``GrunfeldGreene`` is "A data frame containing 20 annual observations
+   on 3 variables for 5 firms." That dataset reportedly contains errors
+   but is maintained in that way to avoid breaking the code of others
+   who use it. That help file also provides a link to the corrected
+   version.
 
-Source
-~~~~~~
+   See also `for a version with only 5
+   firms <http://people.stern.nyu.edu/wgreene/Text/tables/TableF13-1.txt>`__.
 
-Moody's Industrial Manual, Survey of Current Business.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Moody's Industrial Manual, Survey of Current Business.
 
-Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall, Table F13.1.
+   .. rubric:: References
+      :name: references
 
-Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John Wiley
-and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
+   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall, Table
+   F13.1.
 
-See Also
-~~~~~~~~
+   Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John
+   Wiley and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``, ``GrunfeldGreene``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``, ``GrunfeldGreene``,
+
+   ``Index.Time.Series``

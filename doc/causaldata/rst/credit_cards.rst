@@ -1,54 +1,56 @@
-============ ===============
-credit_cards R Documentation
-============ ===============
+.. container::
 
-Data on Taiwanese Credit Card Holders
--------------------------------------
+   ============ ===============
+   credit_cards R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data on Taiwanese Credit Card Holders
+      :name: data-on-taiwanese-credit-card-holders
 
-Data from the UCI Machine Learning Repository on Taiwanese credit card
-holders, the amount of their credit card bill, and whether their payment
-was late.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from the UCI Machine Learning Repository on Taiwanese credit
+   card holders, the amount of their credit card bill, and whether their
+   payment was late.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   credit_cards
+   ::
 
-Format
-~~~~~~
+      credit_cards
 
-A data frame with 30000 rows and 4 variables
+   .. rubric:: Format
+      :name: format
 
-LateSept
-   Credit card payment is late in Sept 2005
+   A data frame with 30000 rows and 4 variables
 
-LateApril
-   Credit card payment is late in April 2005
+   LateSept
+      Credit card payment is late in Sept 2005
 
-BillApril
-   Total bill in April 2005 in thousands of New Taiwan Dollars
+   LateApril
+      Credit card payment is late in April 2005
 
-AGE
-   Age of card-holder
+   BillApril
+      Total bill in April 2005 in thousands of New Taiwan Dollars
 
-Details
-~~~~~~~
+   AGE
+      Age of card-holder
 
-This data is used in the *Matching* chapter of *The Effect* by
-Huntington-Klein.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This data is used in the *Matching* chapter of *The Effect* by
+   Huntington-Klein.
 
-Lichman, Moshe. 2013. UCI Machine Learning Repository.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Lichman, Moshe. 2013. UCI Machine Learning Repository.
 
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design
-and Causality. https://theeffectbook.net.
+   .. rubric:: References
+      :name: references
+
+   Huntington-Klein. 2021. The Effect: An Introduction to Research
+   Design and Causality. https://theeffectbook.net.

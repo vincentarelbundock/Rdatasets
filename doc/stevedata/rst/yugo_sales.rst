@@ -1,43 +1,45 @@
-========== ===============
-yugo_sales R Documentation
-========== ===============
+.. container::
 
-Yugo Sales in the United States, 1985-1992
-------------------------------------------
+   ========== ===============
+   yugo_sales R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Yugo Sales in the United States, 1985-1992
+      :name: yugo-sales-in-the-united-states-1985-1992
 
-A data set on Yugo sales against two competing models in the United
-States from 1985 to 1992.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A data set on Yugo sales against two competing models in the United
+   States from 1985 to 1992.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   yugo_sales
+   ::
 
-Format
-~~~~~~
+      yugo_sales
 
-A data frame with 24 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``year``
-   the year
+   A data frame with 24 observations on the following 3 variables.
 
-``car``
-   the car type, either the Hyundai Excel, Yugo, or Toyota Tercel
+   ``year``
+      the year
 
-``sales``
-   the number of units sold in the United States
+   ``car``
+      the car type, either the Hyundai Excel, Yugo, or Toyota Tercel
 
-Details
-~~~~~~~
+   ``sales``
+      the number of units sold in the United States
 
-Data come from https://carsalesbase.com. I'm aware the inclusion of the
-Tercel is questionable since the third generation of Tercels were quite
-different from the first and second generations. However, I use these
-data to illustrate how poorly the Yugo fared against competing models,
-including the first and second generation Tercels. I think the inclusion
-is fair for that purpose.
+   .. rubric:: Details
+      :name: details
+
+   Data come from https://carsalesbase.com. I'm aware the inclusion of
+   the Tercel is questionable since the third generation of Tercels were
+   quite different from the first and second generations. However, I use
+   these data to illustrate how poorly the Yugo fared against competing
+   models, including the first and second generation Tercels. I think
+   the inclusion is fair for that purpose.

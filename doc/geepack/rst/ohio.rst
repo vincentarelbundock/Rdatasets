@@ -1,59 +1,62 @@
-==== ===============
-ohio R Documentation
-==== ===============
+.. container::
 
-Ohio Children Wheeze Status
----------------------------
+   ==== ===============
+   ohio R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Ohio Children Wheeze Status
+      :name: ohio-children-wheeze-status
 
-The ``ohio`` data frame has 2148 rows and 4 columns. The dataset is a
-subset of the six-city study, a longitudinal study of the health effects
-of air pollution.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``ohio`` data frame has 2148 rows and 4 columns. The dataset is a
+   subset of the six-city study, a longitudinal study of the health
+   effects of air pollution.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   ohio
+   ::
 
-Format
-~~~~~~
+      ohio
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-resp
-   an indicator of wheeze status (1=yes, 0=no)
+   This data frame contains the following columns:
 
-id
-   a numeric vector for subject id
+   resp
+      an indicator of wheeze status (1=yes, 0=no)
 
-age
-   a numeric vector of age, 0 is 9 years old
+   id
+      a numeric vector for subject id
 
-smoke
-   an indicator of maternal smoking at the first year of the study
+   age
+      a numeric vector of age, 0 is 9 years old
 
-References
-~~~~~~~~~~
+   smoke
+      an indicator of maternal smoking at the first year of the study
 
-Fitzmaurice, G.M. and Laird, N.M. (1993) A likelihood-based method for
-analyzing longitudinal binary responses, *Biometrika* **80**: 141–151.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Fitzmaurice, G.M. and Laird, N.M. (1993) A likelihood-based method
+   for analyzing longitudinal binary responses, *Biometrika* **80**:
+   141–151.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   data(ohio)
+      data(ohio)
 
-   fit.ex <- geeglm(resp ~ age + smoke + age:smoke, id=id, data=ohio,
-      family=binomial, corstr="exch", scale.fix=TRUE)
-   QIC(fit.ex)
+      fit.ex <- geeglm(resp ~ age + smoke + age:smoke, id=id, data=ohio,
+         family=binomial, corstr="exch", scale.fix=TRUE)
+      QIC(fit.ex)
 
-   fit.ar <- geeglm(resp ~ age + smoke + age:smoke, id=id, data=ohio,
-      family=binomial, corstr="ar1", scale.fix=TRUE)
-   QIC(fit.ex)
+      fit.ar <- geeglm(resp ~ age + smoke + age:smoke, id=id, data=ohio,
+         family=binomial, corstr="ar1", scale.fix=TRUE)
+      QIC(fit.ex)

@@ -1,75 +1,77 @@
-===== ===============
-CPS85 R Documentation
-===== ===============
+.. container::
 
-Data from the 1985 Current Population Survey (CPS85)
-----------------------------------------------------
+   ===== ===============
+   CPS85 R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from the 1985 Current Population Survey (CPS85)
+      :name: data-from-the-1985-current-population-survey-cps85
 
-The Current Population Survey (CPS) is used to supplement census
-information between census years. These data consist of a random sample
-of persons from the CPS85, with information on wages and other
-characteristics of the workers, including sex, number of years of
-education, years of work experience, occupational status, region of
-residence and union membership.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The Current Population Survey (CPS) is used to supplement census
+   information between census years. These data consist of a random
+   sample of persons from the CPS85, with information on wages and other
+   characteristics of the workers, including sex, number of years of
+   education, years of work experience, occupational status, region of
+   residence and union membership.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(CPS85)
+   ::
 
-Format
-~~~~~~
+      data(CPS85)
 
-A data frame with 534 observations on the following variables.
+   .. rubric:: Format
+      :name: format
 
--  ``wage`` wage (US dollars per hour)
+   A data frame with 534 observations on the following variables.
 
--  ``educ`` number of years of education
+   -  ``wage`` wage (US dollars per hour)
 
--  ``race`` a factor with levels ``NW`` (nonwhite) or ``W`` (white)
+   -  ``educ`` number of years of education
 
--  ``sex`` a factor with levels ``F`` ``M``
+   -  ``race`` a factor with levels ``NW`` (nonwhite) or ``W`` (white)
 
--  ``hispanic`` a factor with levels ``Hisp`` ``NH``
+   -  ``sex`` a factor with levels ``F`` ``M``
 
--  ``south`` a factor with levels ``NS`` ``S``
+   -  ``hispanic`` a factor with levels ``Hisp`` ``NH``
 
--  ``married`` a factor with levels ``Married`` ``Single``
+   -  ``south`` a factor with levels ``NS`` ``S``
 
--  ``exper`` number of years of work experience (inferred from ``age``
-   and ``educ``)
+   -  ``married`` a factor with levels ``Married`` ``Single``
 
--  ``union`` a factor with levels ``Not`` ``Union``
+   -  ``exper`` number of years of work experience (inferred from
+      ``age`` and ``educ``)
 
--  ``age`` age in years
+   -  ``union`` a factor with levels ``Not`` ``Union``
 
--  ``sector`` a factor with levels ``clerical`` ``const`` ``manag``
-   ``manuf`` ``other`` ``prof`` ``sales`` ``service``
+   -  ``age`` age in years
 
-Details
-~~~~~~~
+   -  ``sector`` a factor with levels ``clerical`` ``const`` ``manag``
+      ``manuf`` ``other`` ``prof`` ``sales`` ``service``
 
-Data are from 1985. The data file is recoded from the original, which
-had entirely numerical codes.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Data are from 1985. The data file is recoded from the original, which
+   had entirely numerical codes.
 
-Data are from https://dasl.datadescription.com
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Data are from https://dasl.datadescription.com
 
-Berndt, ER. *The Practice of Econometrics* 1991. Addison-Wesley.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Berndt, ER. *The Practice of Econometrics* 1991. Addison-Wesley.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(CPS85)
+   ::
+
+      data(CPS85)

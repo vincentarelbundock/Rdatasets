@@ -1,76 +1,80 @@
-====== ===============
-petrol R Documentation
-====== ===============
+.. container::
 
-N. L. Prater's Petrol Refinery Data
------------------------------------
+   ====== ===============
+   petrol R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: N. L. Prater's Petrol Refinery Data
+      :name: n.-l.-praters-petrol-refinery-data
 
-The yield of a petroleum refining process with four covariates. The
-crude oil appears to come from only 10 distinct samples.
+   .. rubric:: Description
+      :name: description
 
-These data were originally used by Prater (1956) to build an estimation
-equation for the yield of the refining process of crude oil to gasoline.
+   The yield of a petroleum refining process with four covariates. The
+   crude oil appears to come from only 10 distinct samples.
 
-Usage
-~~~~~
+   These data were originally used by Prater (1956) to build an
+   estimation equation for the yield of the refining process of crude
+   oil to gasoline.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   petrol
+   ::
 
-Format
-~~~~~~
+      petrol
 
-The variables are as follows
+   .. rubric:: Format
+      :name: format
 
-``No``
-   crude oil sample identification label. (Factor.)
+   The variables are as follows
 
-``SG``
-   specific gravity, degrees API. (Constant within sample.)
+   ``No``
+      crude oil sample identification label. (Factor.)
 
-``VP``
-   vapour pressure in pounds per square inch. (Constant within sample.)
+   ``SG``
+      specific gravity, degrees API. (Constant within sample.)
 
-``V10``
-   volatility of crude; ASTM 10% point. (Constant within sample.)
+   ``VP``
+      vapour pressure in pounds per square inch. (Constant within
+      sample.)
 
-``EP``
-   desired volatility of gasoline. (The end point. Varies within
-   sample.)
+   ``V10``
+      volatility of crude; ASTM 10% point. (Constant within sample.)
 
-``Y``
-   yield as a percentage of crude.
+   ``EP``
+      desired volatility of gasoline. (The end point. Varies within
+      sample.)
 
-Source
-~~~~~~
+   ``Y``
+      yield as a percentage of crude.
 
-N. H. Prater (1956) Estimate gasoline yields from crudes. *Petroleum
-Refiner* **35**, 236–238.
+   .. rubric:: Source
+      :name: source
 
-This dataset is also given in D. J. Hand, F. Daly, K. McConway, D. Lunn
-and E. Ostrowski (eds) (1994) *A Handbook of Small Data Sets.* Chapman &
-Hall.
+   N. H. Prater (1956) Estimate gasoline yields from crudes. *Petroleum
+   Refiner* **35**, 236–238.
 
-References
-~~~~~~~~~~
+   This dataset is also given in D. J. Hand, F. Daly, K. McConway, D.
+   Lunn and E. Ostrowski (eds) (1994) *A Handbook of Small Data Sets.*
+   Chapman & Hall.
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   library(nlme)
-   Petrol <- petrol
-   Petrol[, 2:5] <- scale(as.matrix(Petrol[, 2:5]), scale = FALSE)
-   pet3.lme <- lme(Y ~ SG + VP + V10 + EP,
-                   random = ~ 1 | No, data = Petrol)
-   pet3.lme <- update(pet3.lme, method = "ML")
-   pet4.lme <- update(pet3.lme, fixed = Y ~ V10 + EP)
-   anova(pet4.lme, pet3.lme)
+   ::
+
+      library(nlme)
+      Petrol <- petrol
+      Petrol[, 2:5] <- scale(as.matrix(Petrol[, 2:5]), scale = FALSE)
+      pet3.lme <- lme(Y ~ SG + VP + V10 + EP,
+                      random = ~ 1 | No, data = Petrol)
+      pet3.lme <- update(pet3.lme, method = "ML")
+      pet4.lme <- update(pet3.lme, fixed = Y ~ V10 + EP)
+      anova(pet4.lme, pet3.lme)

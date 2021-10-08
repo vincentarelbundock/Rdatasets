@@ -1,39 +1,41 @@
-======= ===============
-FatRats R Documentation
-======= ===============
+.. container::
 
-Diet and Weight of Rats
------------------------
+   ======= ===============
+   FatRats R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Diet and Weight of Rats
+      :name: diet-and-weight-of-rats
 
-Experiment on effects of diets on weight gain of rats
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Experiment on effects of diets on weight gain of rats
 
-A data frame with 60 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``Gain``
-   Weight gain (in grams per week)
+   A data frame with 60 observations on the following 3 variables.
 
-``Protein``
-   Level of protein (``Hi`` or ``Lo``)
+   ``Gain``
+      Weight gain (in grams per week)
 
-``Source``
-   Source of protein (``Beef``, ``Cereal``, or ``Pork``)
+   ``Protein``
+      Level of protein (``Hi`` or ``Lo``)
 
-Details
-~~~~~~~
+   ``Source``
+      Source of protein (``Beef``, ``Cereal``, or ``Pork``)
 
-Data from this experiment compared weight gain for 60 baby rats that
-were fed different diets. Half of the rats had low-protein diets (Lo)
-and the rest had high-protein (Hi). The source of protein was either
-beef, cereal, or pork.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Data from this experiment compared weight gain for 60 baby rats that
+   were fed different diets. Half of the rats had low-protein diets (Lo)
+   and the rest had high-protein (Hi). The source of protein was either
+   beef, cereal, or pork.
 
-C. P. Wilsie, Iowa State College Agricultural Station (1944) via
-Snedecor and Cochran
+   .. rubric:: Source
+      :name: source
+
+   C. P. Wilsie, Iowa State College Agricultural Station (1944) via
+   Snedecor and Cochran

@@ -1,31 +1,33 @@
-======= ===============
-bostonc R Documentation
-======= ===============
+.. container::
 
-Boston Housing Data – Corrected
--------------------------------
+   ======= ===============
+   bostonc R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Boston Housing Data – Corrected
+      :name: boston-housing-data-corrected
 
-The corrected Boston housing data (from
-http://lib.stat.cmu.edu/datasets/).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The corrected Boston housing data (from
+   http://lib.stat.cmu.edu/datasets/).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   bostonc
+   ::
 
-Format
-~~~~~~
+      bostonc
 
-A single vector containing the contents of "boston\_corrected.txt".
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A single vector containing the contents of "boston\_corrected.txt".
 
-Harrison, D. and Rubinfeld, D.L. 'Hedonic prices and the demand for
-clean air', J. Environ. Economics & Management, vol.5, 81-102, 1978.
-corrected by Kelley Pace (kpace@unix1.sncc.lsu.edu)
+   .. rubric:: Source
+      :name: source
+
+   Harrison, D. and Rubinfeld, D.L. 'Hedonic prices and the demand for
+   clean air', J. Environ. Economics & Management, vol.5, 81-102, 1978.
+   corrected by Kelley Pace (kpace@unix1.sncc.lsu.edu)

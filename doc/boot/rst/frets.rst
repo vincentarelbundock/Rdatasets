@@ -1,55 +1,58 @@
-===== ===============
-frets R Documentation
-===== ===============
+.. container::
 
-Head Dimensions in Brothers
----------------------------
+   ===== ===============
+   frets R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Head Dimensions in Brothers
+      :name: head-dimensions-in-brothers
 
-The ``frets`` data frame has 25 rows and 4 columns.
+   .. rubric:: Description
+      :name: description
 
-The data consist of measurements of the length and breadth of the heads
-of pairs of adult brothers in 25 randomly sampled families. All
-measurements are expressed in millimetres.
+   The ``frets`` data frame has 25 rows and 4 columns.
 
-Usage
-~~~~~
+   The data consist of measurements of the length and breadth of the
+   heads of pairs of adult brothers in 25 randomly sampled families. All
+   measurements are expressed in millimetres.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   frets
+   ::
 
-Format
-~~~~~~
+      frets
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``l1``
-   The head length of the eldest son.
+   This data frame contains the following columns:
 
-``b1``
-   The head breadth of the eldest son.
+   ``l1``
+      The head length of the eldest son.
 
-``l2``
-   The head length of the second son.
+   ``b1``
+      The head breadth of the eldest son.
 
-``b2``
-   The head breadth of the second son.
+   ``l2``
+      The head length of the second son.
 
-Source
-~~~~~~
+   ``b2``
+      The head breadth of the second son.
 
-The data were obtained from
+   .. rubric:: Source
+      :name: source
 
-Frets, G.P. (1921) Heredity of head form in man. *Genetica*, **3**, 193.
+   The data were obtained from
 
-References
-~~~~~~~~~~
+   Frets, G.P. (1921) Heredity of head form in man. *Genetica*, **3**,
+   193.
 
-Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-Application*. Cambridge University Press.
+   .. rubric:: References
+      :name: references
 
-Whittaker, J. (1990) *Graphical Models in Applied Multivariate
-Statistics*. John Wiley.
+   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
+   Application*. Cambridge University Press.
+
+   Whittaker, J. (1990) *Graphical Models in Applied Multivariate
+   Statistics*. John Wiley.

@@ -1,62 +1,64 @@
-============ ===============
-nyc_marathon R Documentation
-============ ===============
+.. container::
 
-New York City Marathon Times
-----------------------------
+   ============ ===============
+   nyc_marathon R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: New York City Marathon Times
+      :name: new-york-city-marathon-times
 
-Marathon times of runners in the Men and Women divisions of the New York
-City Marathon, 1970 - 2020.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Marathon times of runners in the Men and Women divisions of the New
+   York City Marathon, 1970 - 2020.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   nyc_marathon
+   ::
 
-Format
-~~~~~~
+      nyc_marathon
 
-A data frame with 102 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-year
-   Year of marathom.
+   A data frame with 102 observations on the following 7 variables.
 
-name
-   Name of winner.
+   year
+      Year of marathom.
 
-country
-   Country of winner.
+   name
+      Name of winner.
 
-time
-   Running time (HH:MM:SS).
+   country
+      Country of winner.
 
-time_hrs
-   Running time (in hours).
+   time
+      Running time (HH:MM:SS).
 
-division
-   Division: ``Men`` or ``Women``.
+   time_hrs
+      Running time (in hours).
 
-note
-   Note about the race or the winning time.
+   division
+      Division: ``Men`` or ``Women``.
 
-Source
-~~~~~~
+   note
+      Note about the race or the winning time.
 
-Wikipedia, `List of winners of the New York City
-Marathon <https://en.wikipedia.org/wiki/List_of_winners_of_the_New_York_City_Marathon>`__.
-Retrieved 28 April, 2021.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Wikipedia, `List of winners of the New York City
+   Marathon <https://en.wikipedia.org/wiki/List_of_winners_of_the_New_York_City_Marathon>`__.
+   Retrieved 28 April, 2021.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   library(ggplot2)
+   ::
 
-   ggplot(nyc_marathon, aes(x = year, y = time_hrs, color = division, shape = division)) +
-     geom_point()
+      library(ggplot2)
+
+      ggplot(nyc_marathon, aes(x = year, y = time_hrs, color = division, shape = division)) +
+        geom_point()

@@ -1,44 +1,46 @@
-========= ===============
-aulatlong R Documentation
-========= ===============
+.. container::
 
-Latitudes and longitudes for ten Australian cities
---------------------------------------------------
+   ========= ===============
+   aulatlong R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Latitudes and longitudes for ten Australian cities
+      :name: latitudes-and-longitudes-for-ten-australian-cities
 
-Latitudes and longitudes for Adelaide, Alice, Brisbane, Broome, Cairns,
-Canberra, Darwin, Melbourne, Perth and Sydney; i.e., for the cities to
-which the road distances in ``audists`` relate.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Latitudes and longitudes for Adelaide, Alice, Brisbane, Broome,
+   Cairns, Canberra, Darwin, Melbourne, Perth and Sydney; i.e., for the
+   cities to which the road distances in ``audists`` relate.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   aulatlong
+   ::
 
-Format
-~~~~~~
+      aulatlong
 
-A data frame with 10 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-``latitude``
-   Latitude, as a decimal number
+   A data frame with 10 observations on the following 2 variables.
 
-``longitude``
-   Latitude, as a decimal number
+   ``latitude``
+      Latitude, as a decimal number
 
-Source
-~~~~~~
+   ``longitude``
+      Latitude, as a decimal number
 
-Map of Australia showing latitude and longitude information.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Map of Australia showing latitude and longitude information.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(aulatlong)
-   ## maybe str(aulatlong) ; plot(aulatlong) ...
+   ::
+
+      data(aulatlong)
+      ## maybe str(aulatlong) ; plot(aulatlong) ...

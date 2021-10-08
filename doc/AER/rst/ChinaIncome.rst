@@ -1,66 +1,68 @@
-=========== ===============
-ChinaIncome R Documentation
-=========== ===============
+.. container::
 
-Chinese Real National Income Data
----------------------------------
+   =========== ===============
+   ChinaIncome R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Chinese Real National Income Data
+      :name: chinese-real-national-income-data
 
-Time series of real national income in China per section (index with
-1952 = 100).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Time series of real national income in China per section (index with
+   1952 = 100).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("ChinaIncome")
+   ::
 
-Format
-~~~~~~
+      data("ChinaIncome")
 
-An annual multiple time series from 1952 to 1988 with 5 variables.
+   .. rubric:: Format
+      :name: format
 
-agriculture
-   Real national income in agriculture sector.
+   An annual multiple time series from 1952 to 1988 with 5 variables.
 
-industry
-   Real national income in industry sector.
+   agriculture
+      Real national income in agriculture sector.
 
-construction
-   Real national income in construction sector.
+   industry
+      Real national income in industry sector.
 
-transport
-   Real national income in transport sector.
+   construction
+      Real national income in construction sector.
 
-commerce
-   Real national income in commerce sector.
+   transport
+      Real national income in transport sector.
 
-Source
-~~~~~~
+   commerce
+      Real national income in commerce sector.
 
-Online complements to Franses (1998).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Franses (1998).
 
-Chow, G.C. (1993). Capital Formation and Economic Growth in China.
-*Quarterly Journal of Economics*, **103**, 809–842.
+   .. rubric:: References
+      :name: references
 
-Franses, P.H. (1998). *Time Series Models for Business and Economic
-Forecasting*. Cambridge, UK: Cambridge University Press.
+   Chow, G.C. (1993). Capital Formation and Economic Growth in China.
+   *Quarterly Journal of Economics*, **103**, 809–842.
 
-See Also
-~~~~~~~~
+   Franses, P.H. (1998). *Time Series Models for Business and Economic
+   Forecasting*. Cambridge, UK: Cambridge University Press.
 
-``Franses1998``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Franses1998``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("ChinaIncome")
-   plot(ChinaIncome)
+   ::
+
+      data("ChinaIncome")
+      plot(ChinaIncome)

@@ -1,80 +1,82 @@
-========== ===============
-titanicgrp R Documentation
-========== ===============
+.. container::
 
-titanicgrp
-----------
+   ========== ===============
+   titanicgrp R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: titanicgrp
+      :name: titanicgrp
 
-The data is an grouped version of the 1912 Titanic passenger survival
-log,
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The data is an grouped version of the 1912 Titanic passenger survival
+   log,
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(titanicgrp)
+   ::
 
-Format
-~~~~~~
+      data(titanicgrp)
 
-A data frame with 12 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``survive``
-   number of passengers who survived
+   A data frame with 12 observations on the following 5 variables.
 
-``cases``
-   number of passengers with same pattern of covariates
+   ``survive``
+      number of passengers who survived
 
-``age``
-   1=adult; 0=child
+   ``cases``
+      number of passengers with same pattern of covariates
 
-``sex``
-   1=Male; 0=female
+   ``age``
+      1=adult; 0=child
 
-``class``
-   ticket class 1= 1st class; 2= second class; 3= third class
+   ``sex``
+      1=Male; 0=female
 
-Details
-~~~~~~~
+   ``class``
+      ticket class 1= 1st class; 2= second class; 3= third class
 
-titanicgrp is saved as a data frame. Used to assess risk ratios
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   titanicgrp is saved as a data frame. Used to assess risk ratios
 
-Found in many other texts
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Found in many other texts
 
-Hilbe, Joseph M (2014), Modeling Count Data, Cambridge University Press
-Hilbe, Joseph M (2007, 2011), Negative Binomial Regression, Cambridge
-University Press Hilbe, Joseph M (2009), Logistic Regression Models,
-Chapman & Hall/CRC
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   Hilbe, Joseph M (2014), Modeling Count Data, Cambridge University
+   Press Hilbe, Joseph M (2007, 2011), Negative Binomial Regression,
+   Cambridge University Press Hilbe, Joseph M (2009), Logistic
+   Regression Models, Chapman & Hall/CRC
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   library(MASS)
-   library(msme)
-   data(titanicgrp)
-   glmlr <- glm(survive ~ age + sex + factor(class) + offset(log(cases)),
-                family=poisson, data=titanicgrp)
-   summary(glmlr)
-   exp(coef(glmlr))
+   ::
 
-   lcases <- titanicgrp$cases
-   nb2o <- nbinomial(survive ~ age + sex + factor(class), 
-                                           formula2 =~ age + sex,
-                                           offset = lcases,
-                                           mean.link="log",
-                                           scale.link="log_s",
-                                           data=titanicgrp)
-   summary(nb2o)
-   exp(coef(nb2o))
+      library(MASS)
+      library(msme)
+      data(titanicgrp)
+      glmlr <- glm(survive ~ age + sex + factor(class) + offset(log(cases)),
+                   family=poisson, data=titanicgrp)
+      summary(glmlr)
+      exp(coef(glmlr))
+
+      lcases <- titanicgrp$cases
+      nb2o <- nbinomial(survive ~ age + sex + factor(class), 
+                                              formula2 =~ age + sex,
+                                              offset = lcases,
+                                              mean.link="log",
+                                              scale.link="log_s",
+                                              data=titanicgrp)
+      summary(nb2o)
+      exp(coef(nb2o))

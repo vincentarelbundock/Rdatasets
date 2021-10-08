@@ -1,53 +1,56 @@
-========= ===============
-OlympicTV R Documentation
-========= ===============
+.. container::
 
-Television Rights for Olympic Games
------------------------------------
+   ========= ===============
+   OlympicTV R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Television Rights for Olympic Games
+      :name: television-rights-for-olympic-games
 
-Television rights for Olympic Games for US networks (in millions USD).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Television rights for Olympic Games for US networks (in millions
+   USD).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("OlympicTV")
+   ::
 
-Format
-~~~~~~
+      data("OlympicTV")
 
-A data frame with 10 observations and 2 variables.
+   .. rubric:: Format
+      :name: format
 
-rights
-   time series of television rights (in million USD),
+   A data frame with 10 observations and 2 variables.
 
-network
-   factor coding television network.
+   rights
+      time series of television rights (in million USD),
 
-Source
-~~~~~~
+   network
+      factor coding television network.
 
-Online complements to Franses (1998).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Franses (1998).
 
-Franses, P.H. (1998). *Time Series Models for Business and Economic
-Forecasting*. Cambridge, UK: Cambridge University Press.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Franses, P.H. (1998). *Time Series Models for Business and Economic
+   Forecasting*. Cambridge, UK: Cambridge University Press.
 
-``Franses1998``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Franses1998``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("OlympicTV")
-   plot(OlympicTV$rights)
+   ::
+
+      data("OlympicTV")
+      plot(OlympicTV$rights)

@@ -1,71 +1,75 @@
-========== ===============
-schooldays R Documentation
-========== ===============
+.. container::
 
-Days not Spent at School
-------------------------
+   ========== ===============
+   schooldays R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Days not Spent at School
+      :name: days-not-spent-at-school
 
-Data from a sociological study, the number of days absent from school is
-the response variable.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from a sociological study, the number of days absent from school
+   is the response variable.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("schooldays")
+   ::
 
-Format
-~~~~~~
+      data("schooldays")
 
-A data frame with 154 observations on the following 5 variables.
+   .. rubric:: Format
+      :name: format
 
-``race``
-   race of the child, a factor with levels ``aboriginal`` and
-   ``non-aboriginal``.
+   A data frame with 154 observations on the following 5 variables.
 
-``sex``
-   the sex of the child, a factor with levels ``female`` and ``male``.
+   ``race``
+      race of the child, a factor with levels ``aboriginal`` and
+      ``non-aboriginal``.
 
-``school``
-   the school type, a factor with levels ``F0`` (primary), ``F1``
-   (first), ``F2`` (second) and ``F3`` (third form).
+   ``sex``
+      the sex of the child, a factor with levels ``female`` and
+      ``male``.
 
-``learner``
-   how good is the child in learning things, a factor with levels
-   ``average`` and ``slow``.
+   ``school``
+      the school type, a factor with levels ``F0`` (primary), ``F1``
+      (first), ``F2`` (second) and ``F3`` (third form).
 
-``absent``
-   number of days absent from school.
+   ``learner``
+      how good is the child in learning things, a factor with levels
+      ``average`` and ``slow``.
 
-Details
-~~~~~~~
+   ``absent``
+      number of days absent from school.
 
-The data arise from a sociological study of Australian Aboriginal and
-white children reported by Quine (1975).
+   .. rubric:: Details
+      :name: details
 
-In this study, children of both sexes from four age groups (final grade
-in primary schools and first, second and third form in secondary school)
-and from two cultural groups were used. The children in age group were
-classified as slow or average learners. The response variable was the
-number of days absent from school during the school year. (Children who
-had suffered a serious illness during the years were excluded.)
+   The data arise from a sociological study of Australian Aboriginal and
+   white children reported by Quine (1975).
 
-Source
-~~~~~~
+   In this study, children of both sexes from four age groups (final
+   grade in primary schools and first, second and third form in
+   secondary school) and from two cultural groups were used. The
+   children in age group were classified as slow or average learners.
+   The response variable was the number of days absent from school
+   during the school year. (Children who had suffered a serious illness
+   during the years were excluded.)
 
-S. Quine (1975), Achievement Orientation of Aboriginal and White
-Adolescents. Doctoral Dissertation, Australian National University,
-Canberra.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   S. Quine (1975), Achievement Orientation of Aboriginal and White
+   Adolescents. Doctoral Dissertation, Australian National University,
+   Canberra.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-     data("schooldays", package = "HSAUR")
-     plot.design(schooldays)
+        data("schooldays", package = "HSAUR")
+        plot.design(schooldays)

@@ -1,123 +1,127 @@
-=========== ===============
-fish_oil_18 R Documentation
-=========== ===============
+.. container::
 
-Findings on n-3 Fatty Acid Supplement Health Benefits
------------------------------------------------------
+   =========== ===============
+   fish_oil_18 R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Findings on n-3 Fatty Acid Supplement Health Benefits
+      :name: findings-on-n-3-fatty-acid-supplement-health-benefits
 
-The results summarize each of the health outcomes for an experiment
-where 12,933 subjects received a 1g fish oil supplement daily and 12,938
-received a placebo daily. The experiment's duration was 5-years.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The results summarize each of the health outcomes for an experiment
+   where 12,933 subjects received a 1g fish oil supplement daily and
+   12,938 received a placebo daily. The experiment's duration was
+   5-years.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   fish_oil_18
+   ::
 
-Format
-~~~~~~
+      fish_oil_18
 
-The format is a list of 24 matrices. Each matrix is a 2x2 table, and
-below are the named items in the list, which also represent the
-outcomes.
+   .. rubric:: Format
+      :name: format
 
-major_cardio_event
-   Major cardiovascular event. (Primary end point.)
+   The format is a list of 24 matrices. Each matrix is a 2x2 table, and
+   below are the named items in the list, which also represent the
+   outcomes.
 
-cardio_event_expanded
-   Cardiovascular event in expanded composite endpoint.
+   major_cardio_event
+      Major cardiovascular event. (Primary end point.)
 
-myocardioal_infarction
-   Total myocardial infarction. (Heart attack.)
+   cardio_event_expanded
+      Cardiovascular event in expanded composite endpoint.
 
-stroke
-   Total stroke.
+   myocardioal_infarction
+      Total myocardial infarction. (Heart attack.)
 
-cardio_death
-   Death from cardiovascular causes.
+   stroke
+      Total stroke.
 
-PCI
-   Percutaneous coronary intervention.
+   cardio_death
+      Death from cardiovascular causes.
 
-CABG
-   Coronary artery bypass graft.
+   PCI
+      Percutaneous coronary intervention.
 
-total_coronary_heart_disease
-   Total coronary heart disease.
+   CABG
+      Coronary artery bypass graft.
 
-ischemic_stroke
-   Ischemic stroke.
+   total_coronary_heart_disease
+      Total coronary heart disease.
 
-hemorrhagic_stroke
-   Hemorrhagic stroke.
+   ischemic_stroke
+      Ischemic stroke.
 
-chd_death
-   Death from coronary heart disease.
+   hemorrhagic_stroke
+      Hemorrhagic stroke.
 
-myocardial_infarction_death
-   Death from myocardial infraction.
+   chd_death
+      Death from coronary heart disease.
 
-stroke_death
-   Death from stroke.
+   myocardial_infarction_death
+      Death from myocardial infraction.
 
-invasive_cancer
-   Invasive cancer of any type. (Primary end point.)
+   stroke_death
+      Death from stroke.
 
-breast_cancer
-   Breast cancer.
+   invasive_cancer
+      Invasive cancer of any type. (Primary end point.)
 
-prostate_cancer
-   Prostate cancer.
+   breast_cancer
+      Breast cancer.
 
-colorectal_cancer
-   Colorectal cancer.
+   prostate_cancer
+      Prostate cancer.
 
-cancer_death
-   Death from cancer.
+   colorectal_cancer
+      Colorectal cancer.
 
-death
-   Death from any cause.
+   cancer_death
+      Death from cancer.
 
-major_cardio_event_after_2y
-   Major cardiovascular event, excluding the first 2 years of follow-up.
+   death
+      Death from any cause.
 
-myocardial_infarction_after_2y
-   Total myocardial infarction, excluding the first 2 years of
-   follow-up.
+   major_cardio_event_after_2y
+      Major cardiovascular event, excluding the first 2 years of
+      follow-up.
 
-invasive_cancer_after_2y
-   Invasive cancer of any type, excluding the first 2 years of
-   follow-up.
+   myocardial_infarction_after_2y
+      Total myocardial infarction, excluding the first 2 years of
+      follow-up.
 
-cancer_death_after_2y
-   Death from cancer, excluding the first 2 years of follow-up.
+   invasive_cancer_after_2y
+      Invasive cancer of any type, excluding the first 2 years of
+      follow-up.
 
-death_after_2y
-   Death from any cause, excluding the first 2 years of follow-up.
+   cancer_death_after_2y
+      Death from cancer, excluding the first 2 years of follow-up.
 
-Source
-~~~~~~
+   death_after_2y
+      Death from any cause, excluding the first 2 years of follow-up.
 
-Manson JE, et al. 2018. Marine n-3 Fatty Acids and Prevention of
-Cardiovascular Disease and Cancer. NEJMoa1811403. doi:
-`10.1056/NEJMoa1811403 <https://doi.org/10.1056/NEJMoa1811403>`__.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Manson JE, et al. 2018. Marine n-3 Fatty Acids and Prevention of
+   Cardiovascular Disease and Cancer. NEJMoa1811403. doi:
+   `10.1056/NEJMoa1811403 <https://doi.org/10.1056/NEJMoa1811403>`__.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   names(fish_oil_18)
-   (tab <- fish_oil_18[["major_cardio_event"]])
-   chisq.test(tab)
-   fisher.test(tab)
+      names(fish_oil_18)
+      (tab <- fish_oil_18[["major_cardio_event"]])
+      chisq.test(tab)
+      fisher.test(tab)
 
-   (tab <- fish_oil_18[["myocardioal_infarction"]])
-   chisq.test(tab)
-   fisher.test(tab)
+      (tab <- fish_oil_18[["myocardioal_infarction"]])
+      chisq.test(tab)
+      fisher.test(tab)

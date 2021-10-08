@@ -1,87 +1,91 @@
-======= ===============
-framing R Documentation
-======= ===============
+.. container::
 
-Brader, Valentino and Suhay (2008) Framing Experiment Data
-----------------------------------------------------------
+   ======= ===============
+   framing R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Brader, Valentino and Suhay (2008) Framing Experiment
+      Data
+      :name: brader-valentino-and-suhay-2008-framing-experiment-data
 
-The ``framing`` data contains 265 rows and 15 columns of data from a
-framing experiment conducted by Brader, Valentino and Suhay (2008).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``framing`` data contains 265 rows and 15 columns of data from a
+   framing experiment conducted by Brader, Valentino and Suhay (2008).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   framing
+   ::
 
-Format
-~~~~~~
+      framing
 
-A data frame containing the following variables:
+   .. rubric:: Format
+      :name: format
 
-immigr:
-   A four-point scale measuring subjects' attitudes toward increased
-   immigration. Larger values indicate more negative attitudes.
+   A data frame containing the following variables:
 
-english:
-   A four-point scale indicating whether subjects favor or oppose a law
-   making English the official language of the U.S.
+   immigr:
+      A four-point scale measuring subjects' attitudes toward increased
+      immigration. Larger values indicate more negative attitudes.
 
-cong_mesg:
-   Whether subjects requested sending an anti-immigration message to
-   Congress on their behalf.
+   english:
+      A four-point scale indicating whether subjects favor or oppose a
+      law making English the official language of the U.S.
 
-anti_info:
-   Whether subjects wanted to receive information from anti-immigration
-   organizations.
+   cong_mesg:
+      Whether subjects requested sending an anti-immigration message to
+      Congress on their behalf.
 
-tone:
-   1st treatment; whether the news story is framed positively or
-   negatively.
+   anti_info:
+      Whether subjects wanted to receive information from
+      anti-immigration organizations.
 
-eth:
-   2nd treatment; whether the news story features a Latino or European
-   immigrant.
+   tone:
+      1st treatment; whether the news story is framed positively or
+      negatively.
 
-cond:
-   Four level measure recording joint treatment status of tone and eth.
+   eth:
+      2nd treatment; whether the news story features a Latino or
+      European immigrant.
 
-treat:
-   Product of the two treatment variables. In the original study the
-   authors only find this cell to be significant.
+   cond:
+      Four level measure recording joint treatment status of tone and
+      eth.
 
-emo:
-   Measure of subjects' negative feeling during the experiment. A
-   numeric scale ranging between 3 and 12 where 3 indicates the most
-   negative feeling.
+   treat:
+      Product of the two treatment variables. In the original study the
+      authors only find this cell to be significant.
 
-anx:
-   A four-point scale measuring subjects' anxiety about increased
-   immigration.
+   emo:
+      Measure of subjects' negative feeling during the experiment. A
+      numeric scale ranging between 3 and 12 where 3 indicates the most
+      negative feeling.
 
-p_harm:
-   Subjects' perceived harm caused by increased immigration. A numeric
-   scale between 2 and 8.
+   anx:
+      A four-point scale measuring subjects' anxiety about increased
+      immigration.
 
-age:
-   Subjects' age.
+   p_harm:
+      Subjects' perceived harm caused by increased immigration. A
+      numeric scale between 2 and 8.
 
-educ:
-   Subjects' highest educational attainments.
+   age:
+      Subjects' age.
 
-gender:
-   Subjects' gender.
+   educ:
+      Subjects' highest educational attainments.
 
-income:
-   Subjects' income, measured as a 19-point scale.
+   gender:
+      Subjects' gender.
 
-Source
-~~~~~~
+   income:
+      Subjects' income, measured as a 19-point scale.
 
-Brader, T., Valentino, N. and Suhay, E. (2008). What triggers public
-opposition to immigration? Anxiety, group cues, and immigration threat.
-American Journal of Political Science 52, 4, 959–978.
+   .. rubric:: Source
+      :name: source
+
+   Brader, T., Valentino, N. and Suhay, E. (2008). What triggers public
+   opposition to immigration? Anxiety, group cues, and immigration
+   threat. American Journal of Political Science 52, 4, 959–978.

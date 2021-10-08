@@ -1,39 +1,42 @@
-============== ===============
-nhefs_complete R Documentation
-============== ===============
+.. container::
 
-Complete-Data National Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study
----------------------------------------------------------------------------------------------------
+   ============== ===============
+   nhefs_complete R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Complete-Data National Health and Nutrition Examination
+      Survey Data I Epidemiologic Follow-up Study
+      :name: complete-data-national-health-and-nutrition-examination-survey-data-i-epidemiologic-follow-up-study
 
-``nhefs_complete`` is the same as ``nhefs``, but only participants with
-complete data are included. The variables that need to be complete to be
-included are: ``qsmk``, ``sex``, ``race``, ``age``, ``school``,
-``smokeintensity``, ``smokeyrs``, ``exercise``, ``active``, ``wt71``,
-``wt82``, and ``wt82_71``.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   ``nhefs_complete`` is the same as ``nhefs``, but only participants
+   with complete data are included. The variables that need to be
+   complete to be included are: ``qsmk``, ``sex``, ``race``, ``age``,
+   ``school``, ``smokeintensity``, ``smokeyrs``, ``exercise``,
+   ``active``, ``wt71``, ``wt82``, and ``wt82_71``.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   nhefs_complete
+   ::
 
-Format
-~~~~~~
+      nhefs_complete
 
-A data frame with 1556 rows and 67 variables. The codebook is available
-as ``nhefs_codebook``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A data frame with 1556 rows and 67 variables. The codebook is
+   available as ``nhefs_codebook``.
 
-https://wwwn.cdc.gov/nchs/nhanes/nhefs/
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   https://wwwn.cdc.gov/nchs/nhanes/nhefs/
 
-Hernán and Robins. Causal Inference.
-https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/
+   .. rubric:: References
+      :name: references
+
+   Hernán and Robins. Causal Inference.
+   https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/

@@ -1,62 +1,64 @@
-=============== ===============
-JobSatisfaction R Documentation
-=============== ===============
+.. container::
 
-Job Satisfaction Data
----------------------
+   =============== ===============
+   JobSatisfaction R Documentation
+   =============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Job Satisfaction Data
+      :name: job-satisfaction-data
 
-Data from Petersen (1968) about the job satisfaction of 715 blue collar
-workers, selected from Danish Industry in 1968.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from Petersen (1968) about the job satisfaction of 715 blue
+   collar workers, selected from Danish Industry in 1968.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("JobSatisfaction")
+   ::
 
-Format
-~~~~~~
+      data("JobSatisfaction")
 
-A data frame with 8 observations and 4 variables.
+   .. rubric:: Format
+      :name: format
 
-Freq
-   frequency.
+   A data frame with 8 observations and 4 variables.
 
-management
-   factor indicating quality of management (bad, good).
+   Freq
+      frequency.
 
-supervisor
-   factor indicating supervisor's job satisfaction (low, high).
+   management
+      factor indicating quality of management (bad, good).
 
-own
-   factor indicating worker's own job satisfaction (low, high).
+   supervisor
+      factor indicating supervisor's job satisfaction (low, high).
 
-Source
-~~~~~~
+   own
+      factor indicating worker's own job satisfaction (low, high).
 
-E. B. Andersen (1991), The Statistical Analysis of Categorical Data,
-Table 5.4.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   E. B. Andersen (1991), The Statistical Analysis of Categorical Data,
+   Table 5.4.
 
-E. B. Andersen (1991), *The Statistical Analysis of Categorical Data*.
-2nd edition. Springer-Verlag, Berlin.
+   .. rubric:: References
+      :name: references
 
-E. Petersen (1968), *Job Satisfaction in Denmark*. (In Danish).
-Mentalhygiejnisk Forlag, Copenhagen.
+   E. B. Andersen (1991), *The Statistical Analysis of Categorical
+   Data*. 2nd edition. Springer-Verlag, Berlin.
 
-Examples
-~~~~~~~~
+   E. Petersen (1968), *Job Satisfaction in Denmark*. (In Danish).
+   Mentalhygiejnisk Forlag, Copenhagen.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("JobSatisfaction")
-   structable(~ ., data = JobSatisfaction)
+   ::
 
-   mantelhaen.test(xtabs(Freq ~ own + supervisor + management,
-                         data = JobSatisfaction))
+      data("JobSatisfaction")
+      structable(~ ., data = JobSatisfaction)
+
+      mantelhaen.test(xtabs(Freq ~ own + supervisor + management,
+                            data = JobSatisfaction))

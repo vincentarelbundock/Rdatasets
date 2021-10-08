@@ -1,124 +1,128 @@
-========== ===============
-socsupport R Documentation
-========== ===============
+.. container::
 
-Social Support Data
--------------------
+   ========== ===============
+   socsupport R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Social Support Data
+      :name: social-support-data
 
-Data from a survey on social and other kinds of support.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from a survey on social and other kinds of support.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   socsupport
+   ::
 
-Format
-~~~~~~
+      socsupport
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-gender
-   a factor with levels ``female``, ``male``
+   This data frame contains the following columns:
 
-age
-   age, in years, with levels ``18-20``, ``21-24``, ``25-30``,
-   ``31-40``,\ ``40+``
+   gender
+      a factor with levels ``female``, ``male``
 
-country
-   a factor with levels ``australia``, ``other``
+   age
+      age, in years, with levels ``18-20``, ``21-24``, ``25-30``,
+      ``31-40``,\ ``40+``
 
-marital
-   a factor with levels ``married``, ``other``, ``single``
+   country
+      a factor with levels ``australia``, ``other``
 
-livewith
-   a factor with levels ``alone``, ``friends``, ``other``, ``parents``,
-   ``partner``, ``residences``
+   marital
+      a factor with levels ``married``, ``other``, ``single``
 
-employment
-   a factor with levels ``employed fulltime``, ``employed part-time``,
-   ``govt assistance``, ``other``, ``parental support``
+   livewith
+      a factor with levels ``alone``, ``friends``, ``other``,
+      ``parents``, ``partner``, ``residences``
 
-firstyr
-   a factor with levels ``first year``, ``other``
+   employment
+      a factor with levels ``employed fulltime``,
+      ``employed part-time``, ``govt assistance``, ``other``,
+      ``parental support``
 
-enrolment
-   a factor with levels ``full-time``, ``part-time``, ``<NA>``
+   firstyr
+      a factor with levels ``first year``, ``other``
 
-emotional
-   summary of 5 questions on emotional support availability
+   enrolment
+      a factor with levels ``full-time``, ``part-time``, ``<NA>``
 
-emotionalsat
-   summary of 5 questions on emotional support satisfaction
+   emotional
+      summary of 5 questions on emotional support availability
 
-tangible
-   summary of 4 questions on availability of tangible support
+   emotionalsat
+      summary of 5 questions on emotional support satisfaction
 
-tangiblesat
-   summary of 4 questions on satisfaction with tangible support
+   tangible
+      summary of 4 questions on availability of tangible support
 
-affect
-   summary of 3 questions on availability of affectionate support
-   sources
+   tangiblesat
+      summary of 4 questions on satisfaction with tangible support
 
-affectsat
-   summary of 3 questions on satisfaction with affectionate support
-   sources
+   affect
+      summary of 3 questions on availability of affectionate support
+      sources
 
-psi
-   summary of 3 questions on availability of positive social interaction
+   affectsat
+      summary of 3 questions on satisfaction with affectionate support
+      sources
 
-psisat
-   summary of 3 questions on satisfaction with positive social
-   interaction
+   psi
+      summary of 3 questions on availability of positive social
+      interaction
 
-esupport
-   summary of 4 questions on extent of emotional support sources
+   psisat
+      summary of 3 questions on satisfaction with positive social
+      interaction
 
-psupport
-   summary of 4 questions on extent of practical support sources
+   esupport
+      summary of 4 questions on extent of emotional support sources
 
-supsources
-   summary of 4 questions on extent of social support sources (formerly,
-   socsupport)
+   psupport
+      summary of 4 questions on extent of practical support sources
 
-BDI
-   Score on the Beck depression index (summary of 21 questions)
+   supsources
+      summary of 4 questions on extent of social support sources
+      (formerly, socsupport)
 
-Source
-~~~~~~
+   BDI
+      Score on the Beck depression index (summary of 21 questions)
 
-Melissa Manning, Psychology, Australian National University
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Melissa Manning, Psychology, Australian National University
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   attach(socsupport)
+   ::
 
-   not.na <- apply(socsupport[,9:19], 1, function(x)!any(is.na(x)))
-   ss.pr1 <- princomp(as.matrix(socsupport[not.na, 9:19]), cor=TRUE)  
-   pairs(ss.pr1$scores[,1:3])
-   sort(-ss.pr1$scores[,1])        # Minus the largest value appears first
-   pause()
+      attach(socsupport)
 
-   not.na[36] <- FALSE
-   ss.pr <- princomp(as.matrix(socsupport[not.na, 9:19]), cor=TRUE)  
-   summary(ss.pr)          # Examine the contribution of the components
-   pause()
+      not.na <- apply(socsupport[,9:19], 1, function(x)!any(is.na(x)))
+      ss.pr1 <- princomp(as.matrix(socsupport[not.na, 9:19]), cor=TRUE)  
+      pairs(ss.pr1$scores[,1:3])
+      sort(-ss.pr1$scores[,1])        # Minus the largest value appears first
+      pause()
 
-   # We now regress BDI on the first six principal components:
-   ss.lm <- lm(BDI[not.na] ~ ss.pr$scores[, 1:6], data=socsupport)
-   summary(ss.lm)$coef
-   pause()
+      not.na[36] <- FALSE
+      ss.pr <- princomp(as.matrix(socsupport[not.na, 9:19]), cor=TRUE)  
+      summary(ss.pr)          # Examine the contribution of the components
+      pause()
 
-   ss.pr$loadings[,1]
-   plot(BDI[not.na] ~  ss.pr$scores[ ,1], col=as.numeric(gender), 
-   pch=as.numeric(gender),  xlab ="1st principal component", ylab="BDI")
-   topleft <- par()$usr[c(1,4)]
-   legend(topleft[1], topleft[2], col=1:2, pch=1:2, legend=levels(gender))
+      # We now regress BDI on the first six principal components:
+      ss.lm <- lm(BDI[not.na] ~ ss.pr$scores[, 1:6], data=socsupport)
+      summary(ss.lm)$coef
+      pause()
+
+      ss.pr$loadings[,1]
+      plot(BDI[not.na] ~  ss.pr$scores[ ,1], col=as.numeric(gender), 
+      pch=as.numeric(gender),  xlab ="1st principal component", ylab="BDI")
+      topleft <- par()$usr[c(1,4)]
+      legend(topleft[1], topleft[2], col=1:2, pch=1:2, legend=levels(gender))

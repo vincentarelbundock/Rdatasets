@@ -1,41 +1,43 @@
-======= ===============
-Sahlins R Documentation
-======= ===============
+.. container::
 
-Agricultural Production in Mazulu Village
------------------------------------------
+   ======= ===============
+   Sahlins R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Agricultural Production in Mazulu Village
+      :name: agricultural-production-in-mazulu-village
 
-The ``Sahlins`` data frame has 20 rows and 2 columns. The observations
-are households in a Central African village.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Sahlins`` data frame has 20 rows and 2 columns. The
+   observations are households in a Central African village.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Sahlins
+   ::
 
-Format
-~~~~~~
+      Sahlins
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-consumers
-   Consumers/Gardener, ratio of consumers to productive individuals.
+   This data frame contains the following columns:
 
-acres
-   Acres/Gardener, amount of land cultivated per gardener.
+   consumers
+      Consumers/Gardener, ratio of consumers to productive individuals.
 
-Source
-~~~~~~
+   acres
+      Acres/Gardener, amount of land cultivated per gardener.
 
-Sahlins, M. (1972) *Stone Age Economics.* Aldine [Table 3.1].
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Sahlins, M. (1972) *Stone Age Economics.* Aldine [Table 3.1].
 
-Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-Models*, Third Edition. Sage.
+   .. rubric:: References
+      :name: references
+
+   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+   Models*, Third Edition. Sage.

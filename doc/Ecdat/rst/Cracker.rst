@@ -1,67 +1,71 @@
-======= ===============
-Cracker R Documentation
-======= ===============
+.. container::
 
-Choice of Brand for Crackers
-----------------------------
+   ======= ===============
+   Cracker R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Choice of Brand for Crackers
+      :name: choice-of-brand-for-crackers
 
-a cross-section
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 3292
+   a cross-section
 
-*observation* : individuals
+   *number of observations* : 3292
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Cracker)
+   ::
 
-Format
-~~~~~~
+      data(Cracker)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-id
-   individuals identifiers
+   A dataframe containing :
 
-choice
-   one of ``sunshine``, ``kleebler``, ``nabisco``, ``private``
+   id
+      individuals identifiers
 
-disp.z
-   is there a display for brand z ?
+   choice
+      one of ``sunshine``, ``kleebler``, ``nabisco``, ``private``
 
-feat.z
-   is there a newspaper feature advertisement for brand z ?
+   disp.z
+      is there a display for brand z ?
 
-price.z
-   price of brand z
+   feat.z
+      is there a newspaper feature advertisement for brand z ?
 
-Source
-~~~~~~
+   price.z
+      price of brand z
 
-Jain, Dipak C., Naufel J. Vilcassim and Pradeep K. Chintagunta (1994) “A
-random–coefficients logit brand–choice model applied to panel data”,
-*Journal of Business and Economics Statistics*, **12(3)**, 317.
+   .. rubric:: Source
+      :name: source
 
-Paap, R. and Philip Hans Frances (2000) “A dynamic multinomial probit
-model for brand choices with different short–run effects of marketing
-mix variables”, *Journal of Applied Econometrics*, **15(6)**, 717–744.
+   Jain, Dipak C., Naufel J. Vilcassim and Pradeep K. Chintagunta (1994)
+   “A random–coefficients logit brand–choice model applied to panel
+   data”, *Journal of Business and Economics Statistics*, **12(3)**,
+   317.
 
-References
-~~~~~~~~~~
+   Paap, R. and Philip Hans Frances (2000) “A dynamic multinomial probit
+   model for brand choices with different short–run effects of marketing
+   mix variables”, *Journal of Applied Econometrics*, **15(6)**,
+   717–744.
 
-Journal of Business Economics and Statistics web site :
-https://amstat.tandfonline.com/loi/ubes20.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Journal of Business Economics and Statistics web site :
+   https://amstat.tandfonline.com/loi/ubes20.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

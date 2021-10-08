@@ -1,47 +1,49 @@
-======== ===============
-Cushings R Documentation
-======== ===============
+.. container::
 
-Diagnostic Tests on Patients with Cushing's Syndrome
-----------------------------------------------------
+   ======== ===============
+   Cushings R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Diagnostic Tests on Patients with Cushing's Syndrome
+      :name: diagnostic-tests-on-patients-with-cushings-syndrome
 
-Cushing's syndrome is a hypertensive disorder associated with
-over-secretion of cortisol by the adrenal gland. The observations are
-urinary excretion rates of two steroid metabolites.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Cushing's syndrome is a hypertensive disorder associated with
+   over-secretion of cortisol by the adrenal gland. The observations are
+   urinary excretion rates of two steroid metabolites.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Cushings
+   ::
 
-Format
-~~~~~~
+      Cushings
 
-The ``Cushings`` data frame has 27 rows and 3 columns:
+   .. rubric:: Format
+      :name: format
 
-``Tetrahydrocortisone``
-   urinary excretion rate (mg/24hr) of Tetrahydrocortisone.
+   The ``Cushings`` data frame has 27 rows and 3 columns:
 
-``Pregnanetriol``
-   urinary excretion rate (mg/24hr) of Pregnanetriol.
+   ``Tetrahydrocortisone``
+      urinary excretion rate (mg/24hr) of Tetrahydrocortisone.
 
-``Type``
-   underlying type of syndrome, coded ``a`` (adenoma) , ``b`` (bilateral
-   hyperplasia), ``c`` (carcinoma) or ``u`` for unknown.
+   ``Pregnanetriol``
+      urinary excretion rate (mg/24hr) of Pregnanetriol.
 
-Source
-~~~~~~
+   ``Type``
+      underlying type of syndrome, coded ``a`` (adenoma) , ``b``
+      (bilateral hyperplasia), ``c`` (carcinoma) or ``u`` for unknown.
 
-J. Aitchison and I. R. Dunsmore (1975) *Statistical Prediction
-Analysis.* Cambridge University Press, Tables 11.1–3.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   J. Aitchison and I. R. Dunsmore (1975) *Statistical Prediction
+   Analysis.* Cambridge University Press, Tables 11.1–3.
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   .. rubric:: References
+      :name: references
+
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.

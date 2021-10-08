@@ -1,63 +1,65 @@
-============ ===============
-ArgentinaCPI R Documentation
-============ ===============
+.. container::
 
-Consumer Price Index in Argentina
----------------------------------
+   ============ ===============
+   ArgentinaCPI R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Consumer Price Index in Argentina
+      :name: consumer-price-index-in-argentina
 
-Time series of consumer price index (CPI) in Argentina (index with
-1969(4) = 1).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Time series of consumer price index (CPI) in Argentina (index with
+   1969(4) = 1).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("ArgentinaCPI")
+   ::
 
-Format
-~~~~~~
+      data("ArgentinaCPI")
 
-A quarterly univariate time series from 1970(1) to 1989(4).
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A quarterly univariate time series from 1970(1) to 1989(4).
 
-Online complements to Franses (1998).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Franses (1998).
 
-De Ruyter van Steveninck, M.A. (1996). *The Impact of Capital Imports;
-Argentina 1970–1989*. Amsterdam: Thesis Publishers.
+   .. rubric:: References
+      :name: references
 
-Franses, P.H. (1998). *Time Series Models for Business and Economic
-Forecasting*. Cambridge, UK: Cambridge University Press.
+   De Ruyter van Steveninck, M.A. (1996). *The Impact of Capital
+   Imports; Argentina 1970–1989*. Amsterdam: Thesis Publishers.
 
-See Also
-~~~~~~~~
+   Franses, P.H. (1998). *Time Series Models for Business and Economic
+   Forecasting*. Cambridge, UK: Cambridge University Press.
 
-``Franses1998``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Franses1998``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("ArgentinaCPI")
-   plot(ArgentinaCPI)
-   plot(log(ArgentinaCPI))
+   ::
 
-   library("dynlm")
-   ## estimation sample 1970.3-1988.4 means
-   acpi <- window(ArgentinaCPI, start = c(1970,1), end = c(1988,4)) 
+      data("ArgentinaCPI")
+      plot(ArgentinaCPI)
+      plot(log(ArgentinaCPI))
 
-   ## eq. (3.90), p.54
-   acpi_ols <- dynlm(d(log(acpi)) ~ L(d(log(acpi))))
-   summary(acpi_ols)
+      library("dynlm")
+      ## estimation sample 1970.3-1988.4 means
+      acpi <- window(ArgentinaCPI, start = c(1970,1), end = c(1988,4)) 
 
-   ## alternatively
-   ar(diff(log(acpi)), order.max = 1, method = "ols") 
+      ## eq. (3.90), p.54
+      acpi_ols <- dynlm(d(log(acpi)) ~ L(d(log(acpi))))
+      summary(acpi_ols)
+
+      ## alternatively
+      ar(diff(log(acpi)), order.max = 1, method = "ols") 

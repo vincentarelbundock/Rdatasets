@@ -1,54 +1,56 @@
-== ===============
-PE R Documentation
-== ===============
+.. container::
 
-Price and Earnings Index
-------------------------
+   == ===============
+   PE R Documentation
+   == ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Price and Earnings Index
+      :name: price-and-earnings-index
 
-annual observations from 1800 to 1931
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 132
+   annual observations from 1800 to 1931
 
-*observation* : country
+   *number of observations* : 132
 
-*country* : United States
+   *observation* : country
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(PE)
+   ::
 
-Format
-~~~~~~
+      data(PE)
 
-A time series containing :
+   .. rubric:: Format
+      :name: format
 
-price
-   S\&P composite stock price index
+   A time series containing :
 
-earnings
-   S\&P composite earnings index
+   price
+      S\&P composite stock price index
 
-Source
-~~~~~~
+   earnings
+      S\&P composite earnings index
 
-Robert Shiller.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Robert Shiller.
 
-Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley and
-Sons, chapter 8.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+   and Sons, chapter 8.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
+
+   ``Index.Time.Series``

@@ -1,88 +1,90 @@
-======== ===============
-USInvest R Documentation
-======== ===============
+.. container::
 
-US Investment Data
-------------------
+   ======== ===============
+   USInvest R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: US Investment Data
+      :name: us-investment-data
 
-Time series data on investments in the US, 1968–1982.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Time series data on investments in the US, 1968–1982.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("USInvest")
+   ::
 
-Format
-~~~~~~
+      data("USInvest")
 
-An annual multiple time series from 1968 to 1982 with 4 variables.
+   .. rubric:: Format
+      :name: format
 
-gnp
-   Nominal gross national product,
+   An annual multiple time series from 1968 to 1982 with 4 variables.
 
-invest
-   Nominal investment,
+   gnp
+      Nominal gross national product,
 
-price
-   Consumer price index,
+   invest
+      Nominal investment,
 
-interest
-   Interest rate (average yearly discount rate at the New York Federal
-   Reserve Bank).
+   price
+      Consumer price index,
 
-Source
-~~~~~~
+   interest
+      Interest rate (average yearly discount rate at the New York
+      Federal Reserve Bank).
 
-Online complements to Greene (2003). Table F3.1.
+   .. rubric:: Source
+      :name: source
 
-http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+   Online complements to Greene (2003). Table F3.1.
 
-References
-~~~~~~~~~~
+   http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper Saddle
-River, NJ: Prentice Hall.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+   Saddle River, NJ: Prentice Hall.
 
-``Greene2003``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Greene2003``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("USInvest")
+   ::
 
-   ## Chapter 3 in Greene (2003)
-   ## transform (and round) data to match Table 3.1
-   us <- as.data.frame(USInvest)
-   us$invest <- round(0.1 * us$invest/us$price, digits = 3)
-   us$gnp <- round(0.1 * us$gnp/us$price, digits = 3)
-   us$inflation <- c(4.4, round(100 * diff(us$price)/us$price[-15], digits = 2))
-   us$trend <- 1:15
-   us <- us[, c(2, 6, 1, 4, 5)]
+      data("USInvest")
 
-   ## p. 22-24
-   coef(lm(invest ~ trend + gnp, data = us))
-   coef(lm(invest ~ gnp, data = us))
+      ## Chapter 3 in Greene (2003)
+      ## transform (and round) data to match Table 3.1
+      us <- as.data.frame(USInvest)
+      us$invest <- round(0.1 * us$invest/us$price, digits = 3)
+      us$gnp <- round(0.1 * us$gnp/us$price, digits = 3)
+      us$inflation <- c(4.4, round(100 * diff(us$price)/us$price[-15], digits = 2))
+      us$trend <- 1:15
+      us <- us[, c(2, 6, 1, 4, 5)]
 
-   ## Example 3.1, Table 3.2
-   cor(us)[1,-1]
-   pcor <- solve(cor(us))
-   dcor <- 1/sqrt(diag(pcor))
-   pcor <- (-pcor * (dcor %o% dcor))[1,-1]
+      ## p. 22-24
+      coef(lm(invest ~ trend + gnp, data = us))
+      coef(lm(invest ~ gnp, data = us))
 
-   ## Table 3.4
-   fm  <- lm(invest ~ trend + gnp + interest + inflation, data = us)
-   fm1 <- lm(invest ~ 1, data = us)
-   anova(fm1, fm)
+      ## Example 3.1, Table 3.2
+      cor(us)[1,-1]
+      pcor <- solve(cor(us))
+      dcor <- 1/sqrt(diag(pcor))
+      pcor <- (-pcor * (dcor %o% dcor))[1,-1]
 
-   ## More examples can be found in:
-   ## help("Greene2003")
+      ## Table 3.4
+      fm  <- lm(invest ~ trend + gnp + interest + inflation, data = us)
+      fm1 <- lm(invest ~ 1, data = us)
+      anova(fm1, fm)
+
+      ## More examples can be found in:
+      ## help("Greene2003")

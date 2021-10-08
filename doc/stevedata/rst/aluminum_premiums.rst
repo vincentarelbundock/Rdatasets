@@ -1,46 +1,49 @@
-================= ===============
-aluminum_premiums R Documentation
-================= ===============
+.. container::
 
-LME Aluminum Premiums Data
---------------------------
+   ================= ===============
+   aluminum_premiums R Documentation
+   ================= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: LME Aluminum Premiums Data
+      :name: lme-aluminum-premiums-data
 
-A near daily data set on the price of aluminum premiums (USD/MT) for LME
-in the U.S., Western Europe, East Asia, and Southeast Asia. I like these
-data as illustrative of some of the shortsightedness of the aluminum
-tariffs that Donald Trump announced in March 2018. The tariffs had no
-discernible effect on manufacturing employment or earnings, but they
-created a supply shock that made aluminum more expensive.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A near daily data set on the price of aluminum premiums (USD/MT) for
+   LME in the U.S., Western Europe, East Asia, and Southeast Asia. I
+   like these data as illustrative of some of the shortsightedness of
+   the aluminum tariffs that Donald Trump announced in March 2018. The
+   tariffs had no discernible effect on manufacturing employment or
+   earnings, but they created a supply shock that made aluminum more
+   expensive.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   aluminum_premiums
+   ::
 
-Format
-~~~~~~
+      aluminum_premiums
 
-A data frame with 2,812 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``date``
-   a date
+   A data frame with 2,812 observations on the following 3 variables.
 
-``group``
-   a factor with levels of ``East Asia``, ``Southeast Asia``,
-   ``United States``, and ``Western Europe``
+   ``date``
+      a date
 
-``price``
-   a numeric vector for the price of the LME aluminum premium
+   ``group``
+      a factor with levels of ``East Asia``, ``Southeast Asia``,
+      ``United States``, and ``Western Europe``
 
-Details
-~~~~~~~
+   ``price``
+      a numeric vector for the price of the LME aluminum premium
 
-LME aluminum premiums (monthly contracts going out to 15 months) work
-alongside LME aluminum contracts to allow market participants to hedge
-the all-in price and physically deliver or receive premium aluminum
-warrants in non-queued LME premium warehouses.
+   .. rubric:: Details
+      :name: details
+
+   LME aluminum premiums (monthly contracts going out to 15 months) work
+   alongside LME aluminum contracts to allow market participants to
+   hedge the all-in price and physically deliver or receive premium
+   aluminum warrants in non-queued LME premium warehouses.

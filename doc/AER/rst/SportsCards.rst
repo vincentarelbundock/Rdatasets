@@ -1,100 +1,102 @@
-=========== ===============
-SportsCards R Documentation
-=========== ===============
+.. container::
 
-Endowment Effect for Sports Cards
----------------------------------
+   =========== ===============
+   SportsCards R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Endowment Effect for Sports Cards
+      :name: endowment-effect-for-sports-cards
 
-Trading sports cards: Does ownership increase the value of goods to
-consumers?
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Trading sports cards: Does ownership increase the value of goods to
+   consumers?
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("SportsCards")
+   ::
 
-Format
-~~~~~~
+      data("SportsCards")
 
-A data frame containing 148 observations on 9 variables.
+   .. rubric:: Format
+      :name: format
 
-good
-   factor. Was the individual given good A or B (see below)?
+   A data frame containing 148 observations on 9 variables.
 
-dealer
-   factor. Was the individual a dealer?
+   good
+      factor. Was the individual given good A or B (see below)?
 
-permonth
-   number of trades per month reported by the individual.
+   dealer
+      factor. Was the individual a dealer?
 
-years
-   number of years that the individual has been trading.
+   permonth
+      number of trades per month reported by the individual.
 
-income
-   factor indicating income group (in 1000 USD).
+   years
+      number of years that the individual has been trading.
 
-gender
-   factor indicating gender.
+   income
+      factor indicating income group (in 1000 USD).
 
-education
-   factor indicating highest level of education (8th grade or less, high
-   school, 2-year college, other post-high school, 4-year college or
-   graduate school).
+   gender
+      factor indicating gender.
 
-age
-   age in years.
+   education
+      factor indicating highest level of education (8th grade or less,
+      high school, 2-year college, other post-high school, 4-year
+      college or graduate school).
 
-trade
-   factor. Did the individual trade the good he was given for the other
-   good?
+   age
+      age in years.
 
-Details
-~~~~~~~
+   trade
+      factor. Did the individual trade the good he was given for the
+      other good?
 
-``SportsCards`` contains data from 148 randomly selected traders who
-attended a trading card show in Orlando, Florida, in 1998. Traders were
-randomly given one of two sports collectables, say good A or good B,
-that had approximately equal market value. Those receiving good A were
-then given the option of trading good A for good B with the
-experimenter; those receiving good B were given the option of trading
-good B for good A with the experimenter. Good A was a ticket stub from
-the game that Cal Ripken Jr. set the record for consecutive games
-played, and Good B was a souvenir from the game that Nolan Ryan won his
-300th game.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   ``SportsCards`` contains data from 148 randomly selected traders who
+   attended a trading card show in Orlando, Florida, in 1998. Traders
+   were randomly given one of two sports collectables, say good A or
+   good B, that had approximately equal market value. Those receiving
+   good A were then given the option of trading good A for good B with
+   the experimenter; those receiving good B were given the option of
+   trading good B for good A with the experimenter. Good A was a ticket
+   stub from the game that Cal Ripken Jr. set the record for consecutive
+   games played, and Good B was a souvenir from the game that Nolan Ryan
+   won his 300th game.
 
-Online complements to Stock and Watson (2007).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Stock and Watson (2007).
 
-List, J.A. (2003). Does Market Experience Eliminate Market Anomalies?
-*Quarterly Journal of Economcis*, **118**, 41–71.
+   .. rubric:: References
+      :name: references
 
-Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*, 2nd
-ed. Boston: Addison Wesley.
+   List, J.A. (2003). Does Market Experience Eliminate Market Anomalies?
+   *Quarterly Journal of Economcis*, **118**, 41–71.
 
-See Also
-~~~~~~~~
+   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
+   2nd ed. Boston: Addison Wesley.
 
-``StockWatson2007``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``StockWatson2007``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("SportsCards")
-   summary(SportsCards)
+   ::
 
-   plot(trade ~ permonth, data = SportsCards,
-     ylevels = 2:1, breaks = c(0, 5, 10, 20, 30, 70))
-   plot(trade ~ years, data = SportsCards,
-     ylevels = 2:1, breaks = c(0, 5, 10, 20, 60))
+      data("SportsCards")
+      summary(SportsCards)
+
+      plot(trade ~ permonth, data = SportsCards,
+        ylevels = 2:1, breaks = c(0, 5, 10, 20, 30, 70))
+      plot(trade ~ years, data = SportsCards,
+        ylevels = 2:1, breaks = c(0, 5, 10, 20, 60))

@@ -1,51 +1,54 @@
-===== ===============
-Vocab R Documentation
-===== ===============
+.. container::
 
-Vocabulary and Education
-------------------------
+   ===== ===============
+   Vocab R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Vocabulary and Education
+      :name: vocabulary-and-education
 
-The ``Vocab`` data frame has 30,351 rows and 4 columns. The observations
-are respondents to U.S. General Social Surveys, 1972-2016.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``Vocab`` data frame has 30,351 rows and 4 columns. The
+   observations are respondents to U.S. General Social Surveys,
+   1972-2016.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Vocab
+   ::
 
-Format
-~~~~~~
+      Vocab
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-year
-   Year of the survey.
+   This data frame contains the following columns:
 
-sex
-   Sex of the respondent, ``Female`` or ``Male``.
+   year
+      Year of the survey.
 
-education
-   Education, in years.
+   sex
+      Sex of the respondent, ``Female`` or ``Male``.
 
-vocabulary
-   Vocabulary test score: number correct on a 10-word test.
+   education
+      Education, in years.
 
-Source
-~~~~~~
+   vocabulary
+      Vocabulary test score: number correct on a 10-word test.
 
-National Opinion Research Center *General Social Survey.* GSS Cumulative
-Datafile 1972-2016, downloaded from http://gss.norc.org/.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   National Opinion Research Center *General Social Survey.* GSS
+   Cumulative Datafile 1972-2016, downloaded from http://gss.norc.org/.
 
-Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-Models*, Third Edition. Sage.
+   .. rubric:: References
+      :name: references
 
-Fox, J. and Weisberg, S. (2019) *An R Companion to Applied Regression*,
-Third Edition, Sage.
+   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+   Models*, Third Edition. Sage.
+
+   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+   Regression*, Third Edition, Sage.

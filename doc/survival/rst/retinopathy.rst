@@ -1,85 +1,88 @@
-=========== ===============
-retinopathy R Documentation
-=========== ===============
+.. container::
 
-Diabetic Retinopathy
---------------------
+   =========== ===============
+   retinopathy R Documentation
+   =========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Diabetic Retinopathy
+      :name: diabetic-retinopathy
 
-A trial of laser coagulation as a treatment to delay diabetic
-retinopathy.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A trial of laser coagulation as a treatment to delay diabetic
+   retinopathy.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   retinopathy
-   data(retinopathy, package="survival")
+   ::
 
-Format
-~~~~~~
+      retinopathy
+      data(retinopathy, package="survival")
 
-A data frame with 394 observations on the following 9 variables.
+   .. rubric:: Format
+      :name: format
 
-``id``
-   numeric subject id
+   A data frame with 394 observations on the following 9 variables.
 
-``laser``
-   type of laser used: ``xenon`` ``argon``
+   ``id``
+      numeric subject id
 
-``eye``
-   which eye was treated: ``right`` ``left``
+   ``laser``
+      type of laser used: ``xenon`` ``argon``
 
-``age``
-   age at diagnosis of diabetes
+   ``eye``
+      which eye was treated: ``right`` ``left``
 
-``type``
-   type of diabetes: ``juvenile`` ``adult``, (diagnosis before age 20)
+   ``age``
+      age at diagnosis of diabetes
 
-``trt``
-   0 = control eye, 1 = treated eye
+   ``type``
+      type of diabetes: ``juvenile`` ``adult``, (diagnosis before age
+      20)
 
-``futime``
-   time to loss of vision or last follow-up
+   ``trt``
+      0 = control eye, 1 = treated eye
 
-``status``
-   0 = censored, 1 = loss of vision in this eye
+   ``futime``
+      time to loss of vision or last follow-up
 
-``risk``
-   a risk score for the eye. This high risk subset is defined as a score
-   of 6 or greater in at least one eye.
+   ``status``
+      0 = censored, 1 = loss of vision in this eye
 
-Details
-~~~~~~~
+   ``risk``
+      a risk score for the eye. This high risk subset is defined as a
+      score of 6 or greater in at least one eye.
 
-The 197 patients in this dataset were a 50% random sample of the
-patients with "high-risk" diabetic retinopathy as defined by the
-Diabetic Retinopathy Study (DRS). Each patient had one eye randomized to
-laser treatment and the other eye received no treatment, and has two
-observations in the data set. For each eye, the event of interest was
-the time from initiation of treatment to the time when visual acuity
-dropped below 5/200 two visits in a row. Thus there is a built-in lag
-time of approximately 6 months (visits were every 3 months). Survival
-times in this dataset are the actual time to vision loss in months,
-minus the minimum possible time to event (6.5 months). Censoring was
-caused by death, dropout, or end of the study.
+   .. rubric:: Details
+      :name: details
 
-References
-~~~~~~~~~~
+   The 197 patients in this dataset were a 50% random sample of the
+   patients with "high-risk" diabetic retinopathy as defined by the
+   Diabetic Retinopathy Study (DRS). Each patient had one eye randomized
+   to laser treatment and the other eye received no treatment, and has
+   two observations in the data set. For each eye, the event of interest
+   was the time from initiation of treatment to the time when visual
+   acuity dropped below 5/200 two visits in a row. Thus there is a
+   built-in lag time of approximately 6 months (visits were every 3
+   months). Survival times in this dataset are the actual time to vision
+   loss in months, minus the minimum possible time to event (6.5
+   months). Censoring was caused by death, dropout, or end of the study.
 
-W. J. Huster, R. Brookmeyer and S. G. Self (1989). Modelling paired
-survival data with covariates, Biometrics 45:145-156.
+   .. rubric:: References
+      :name: references
 
-A. L. Blair, D. R. Hadden, J. A. Weaver, D. B. Archer, P. B. Johnston
-and C. J. Maguire (1976). The 5-year prognosis for vision in diabetes,
-American Journal of Ophthalmology, 81:383-396.
+   W. J. Huster, R. Brookmeyer and S. G. Self (1989). Modelling paired
+   survival data with covariates, Biometrics 45:145-156.
 
-Examples
-~~~~~~~~
+   A. L. Blair, D. R. Hadden, J. A. Weaver, D. B. Archer, P. B. Johnston
+   and C. J. Maguire (1976). The 5-year prognosis for vision in
+   diabetes, American Journal of Ophthalmology, 81:383-396.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   coxph(Surv(futime, status) ~ type + trt, cluster= id, retinopathy)
+   ::
+
+      coxph(Surv(futime, status) ~ type + trt, cluster= id, retinopathy)

@@ -1,45 +1,47 @@
-======= ===============
-Undoing R Documentation
-======= ===============
+.. container::
 
-Defense of Undoing OCD Symptoms in Psychotherapy
-------------------------------------------------
+   ======= ===============
+   Undoing R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Defense of Undoing OCD Symptoms in Psychotherapy
+      :name: defense-of-undoing-ocd-symptoms-in-psychotherapy
 
-Ratings of an OCD symptom in psychotherapy sessions
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Ratings of an OCD symptom in psychotherapy sessions
 
-A data frame with 44 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-``Group``
-   Time frame of the session (``I``\ =early through ``VI``\ =late)
+   A data frame with 44 observations on the following 3 variables.
 
-``Score``
-   Rating of OCD symptom on a 1 to 4 scale
+   ``Group``
+      Time frame of the session (``I``\ =early through ``VI``\ =late)
 
-``Symbol``
-   Indicator for groups I, III, and IV
+   ``Score``
+      Rating of OCD symptom on a 1 to 4 scale
 
-Details
-~~~~~~~
+   ``Symbol``
+      Indicator for groups I, III, and IV
 
-A patient had been diagnosed with OCD (obsessive/compulsive disorder)
-and underwent a series of psychotherapy sessions. Notes from the
-sessions were presented to three different experienced therapists who
-rated sessions with a particular OCD symptom (defense of undoing) on a 1
-to 4 scale (smaller values indicating worse symptoms). If all three
-judges agreed on the stage of a session, that determined the category.
-Otherwise, they discussed until they reached a consensus. The sessions
-were also grouped into six groups with I being the earliest sessions and
-VI being the latest.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   A patient had been diagnosed with OCD (obsessive/compulsive disorder)
+   and underwent a series of psychotherapy sessions. Notes from the
+   sessions were presented to three different experienced therapists who
+   rated sessions with a particular OCD symptom (defense of undoing) on
+   a 1 to 4 scale (smaller values indicating worse symptoms). If all
+   three judges agreed on the stage of a session, that determined the
+   category. Otherwise, they discussed until they reached a consensus.
+   The sessions were also grouped into six groups with I being the
+   earliest sessions and VI being the latest.
 
-Sampson, Harold, Joseph Weiss, L. Mlodansky, and Edward Hause (1972)
-"Defense analysis and the emergence of warded off mental contents,"
-Archives of General Psychiatry, v. 26, pp. 524-532.
+   .. rubric:: Source
+      :name: source
+
+   Sampson, Harold, Joseph Weiss, L. Mlodansky, and Edward Hause (1972)
+   "Defense analysis and the emergence of warded off mental contents,"
+   Archives of General Psychiatry, v. 26, pp. 524-532.

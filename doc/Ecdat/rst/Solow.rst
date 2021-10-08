@@ -1,58 +1,60 @@
-===== ===============
-Solow R Documentation
-===== ===============
+.. container::
 
-Solow's Technological Change Data
----------------------------------
+   ===== ===============
+   Solow R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Solow's Technological Change Data
+      :name: solows-technological-change-data
 
-annual observations from 1909 to 1949
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 41
+   annual observations from 1909 to 1949
 
-*observation* : country
+   *number of observations* : 41
 
-*country* : United States
+   *observation* : country
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Solow)
+   ::
 
-Format
-~~~~~~
+      data(Solow)
 
-A time series containing :
+   .. rubric:: Format
+      :name: format
 
-q
-   output
+   A time series containing :
 
-k
-   capital/labor ratio
+   q
+      output
 
-A
-   index of technology
+   k
+      capital/labor ratio
 
-Source
-~~~~~~
+   A
+      index of technology
 
-Solow, R. (1957) “Technical change and the aggregate production
-function”, *Review of Economics and Statistics*, **39**, 312-320.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Solow, R. (1957) “Technical change and the aggregate production
+   function”, *Review of Economics and Statistics*, **39**, 312-320.
 
-Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-http://www.prenhall.com/greene/greene1.html, Table F7.2.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+   http://www.prenhall.com/greene/greene1.html, Table F7.2.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
+
+   ``Index.Time.Series``

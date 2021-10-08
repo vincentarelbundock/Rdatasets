@@ -1,55 +1,58 @@
-========== ===============
-EuroEnergy R Documentation
-========== ===============
+.. container::
 
-European Energy Consumption Data
---------------------------------
+   ========== ===============
+   EuroEnergy R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: European Energy Consumption Data
+      :name: european-energy-consumption-data
 
-Cross-section data on energy consumption for 20 European countries, for
-the year 1980.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Cross-section data on energy consumption for 20 European countries,
+   for the year 1980.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("EuroEnergy")
+   ::
 
-Format
-~~~~~~
+      data("EuroEnergy")
 
-A data frame containing 20 observations on 2 variables.
+   .. rubric:: Format
+      :name: format
 
-gdp
-   Real gross domestic product for the year 1980 (in million 1975 US
-   dollars).
+   A data frame containing 20 observations on 2 variables.
 
-energy
-   Aggregate energy consumption (in million kilograms coal equivalence).
+   gdp
+      Real gross domestic product for the year 1980 (in million 1975 US
+      dollars).
 
-Source
-~~~~~~
+   energy
+      Aggregate energy consumption (in million kilograms coal
+      equivalence).
 
-The data are from Baltagi (2002).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The data are from Baltagi (2002).
 
-Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
 
-``Baltagi2002``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Baltagi2002``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("EuroEnergy")
-   energy_lm <- lm(log(energy) ~ log(gdp), data = EuroEnergy)
-   influence.measures(energy_lm)
+   ::
+
+      data("EuroEnergy")
+      energy_lm <- lm(log(energy) ~ log(gdp), data = EuroEnergy)
+      influence.measures(energy_lm)

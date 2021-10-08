@@ -1,60 +1,62 @@
-====== ===============
-Orange R Documentation
-====== ===============
+.. container::
 
-The Orange Juice Data Set
--------------------------
+   ====== ===============
+   Orange R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: The Orange Juice Data Set
+      :name: the-orange-juice-data-set
 
-monthly observations from 1948-01 to 2001-06
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 642
+   monthly observations from 1948-01 to 2001-06
 
-*observation* : country
+   *number of observations* : 642
 
-*country* : United States
+   *observation* : country
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Orange)
+   ::
 
-Format
-~~~~~~
+      data(Orange)
 
-A time series containing :
+   .. rubric:: Format
+      :name: format
 
-priceoj
-   producer price for frozen orange juice
+   A time series containing :
 
-pricefg
-   producer price index for finished goods
+   priceoj
+      producer price for frozen orange juice
 
-fdd
-   freezing degree days (from daily minimum temperature recorded at
-   Orlando area airports)
+   pricefg
+      producer price index for finished goods
 
-Source
-~~~~~~
+   fdd
+      freezing degree days (from daily minimum temperature recorded at
+      Orlando area airports)
 
-U.S. Bureau of Labor Statistics for ``PPIOJ`` and ``PWFSA``, National
-Oceanic and Atmospheric Administration (NOAA) of the U.S Department of
-Commerce for ``fdd``.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   U.S. Bureau of Labor Statistics for ``PPIOJ`` and ``PWFSA``, National
+   Oceanic and Atmospheric Administration (NOAA) of the U.S Department
+   of Commerce for ``fdd``.
 
-Stock, James H. and Mark W. Watson (2003) *Introduction to
-Econometrics*, Addison-Wesley Educational Publishers.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Stock, James H. and Mark W. Watson (2003) *Introduction to
+   Econometrics*, Addison-Wesley Educational Publishers.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
+
+   ``Index.Time.Series``

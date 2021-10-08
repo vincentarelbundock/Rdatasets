@@ -1,25 +1,27 @@
-== ===============
-lh R Documentation
-== ===============
+.. container::
 
-Luteinizing Hormone in Blood Samples
-------------------------------------
+   == ===============
+   lh R Documentation
+   == ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Luteinizing Hormone in Blood Samples
+      :name: luteinizing-hormone-in-blood-samples
 
-A regular time series giving the luteinizing hormone in blood samples at
-10 mins intervals from a human female, 48 samples.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A regular time series giving the luteinizing hormone in blood samples
+   at 10 mins intervals from a human female, 48 samples.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   lh
+   ::
 
-Source
-~~~~~~
+      lh
 
-P.J. Diggle (1990) *Time Series: A Biostatistical Introduction.* Oxford,
-table A.1, series 3
+   .. rubric:: Source
+      :name: source
+
+   P.J. Diggle (1990) *Time Series: A Biostatistical Introduction.*
+   Oxford, table A.1, series 3

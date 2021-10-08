@@ -1,94 +1,96 @@
-=============== ===============
-london_boroughs R Documentation
-=============== ===============
+.. container::
 
-London Borough Boundaries
--------------------------
+   =============== ===============
+   london_boroughs R Documentation
+   =============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: London Borough Boundaries
+      :name: london-borough-boundaries
 
-This dataset contains the coordinates of the boundaries of all 32
-boroughs of the Greater London area.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This dataset contains the coordinates of the boundaries of all 32
+   boroughs of the Greater London area.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   london_boroughs
+   ::
 
-Format
-~~~~~~
+      london_boroughs
 
-A data frame with 45341 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-borough
-   Name of the borough.
+   A data frame with 45341 observations on the following 3 variables.
 
-x
-   The "easting" component of the coordinate, see details.
+   borough
+      Name of the borough.
 
-y
-   The "northing" component of the coordinate, see details.
+   x
+      The "easting" component of the coordinate, see details.
 
-Details
-~~~~~~~
+   y
+      The "northing" component of the coordinate, see details.
 
-Map data was made available through the Ordnance Survey Open Data
-initiative. The data use the `National
-Grid <https://en.wikipedia.org/wiki/Ordnance_Survey_National_Grid>`__
-coordinate system, based upon eastings (``x``) and northings (``y``)
-instead of longitude and latitude.
+   .. rubric:: Details
+      :name: details
 
-The ``name`` variable covers all 32 boroughs in Greater London:
-``Barking & Dagenham``, ``Barnet``, ``Bexley``, ``Brent``, ``Bromley``,
-``Camden``, ``Croydon``, ``Ealing``, ``Enfield``, ``Greenwich``,
-``Hackney``, ``Hammersmith & Fulham``, ``Haringey``, ``Harrow``,
-``Havering``, ``Hillingdon``, ``Hounslow``, ``Islington``,
-``Kensington & Chelsea``, ``Kingston``, ``Lambeth``, ``Lewisham``,
-``Merton``, ``Newham``, ``Redbridge``, ``Richmond``, ``Southwark``,
-``Sutton``, ``Tower Hamlets``, ``Waltham Forest``, ``Wandsworth``,
-``Westminster``
+   Map data was made available through the Ordnance Survey Open Data
+   initiative. The data use the `National
+   Grid <https://en.wikipedia.org/wiki/Ordnance_Survey_National_Grid>`__
+   coordinate system, based upon eastings (``x``) and northings (``y``)
+   instead of longitude and latitude.
 
-Source
-~~~~~~
+   The ``name`` variable covers all 32 boroughs in Greater London:
+   ``Barking & Dagenham``, ``Barnet``, ``Bexley``, ``Brent``,
+   ``Bromley``, ``Camden``, ``Croydon``, ``Ealing``, ``Enfield``,
+   ``Greenwich``, ``Hackney``, ``Hammersmith & Fulham``, ``Haringey``,
+   ``Harrow``, ``Havering``, ``Hillingdon``, ``Hounslow``,
+   ``Islington``, ``Kensington & Chelsea``, ``Kingston``, ``Lambeth``,
+   ``Lewisham``, ``Merton``, ``Newham``, ``Redbridge``, ``Richmond``,
+   ``Southwark``, ``Sutton``, ``Tower Hamlets``, ``Waltham Forest``,
+   ``Wandsworth``, ``Westminster``
 
-https://data.london.gov.uk/dataset/ordnance-survey-code-point
+   .. rubric:: Source
+      :name: source
 
-Contains Ordinance Survey data released under the `Open Government
-License, OGL
-v2 <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/>`__.
+   https://data.london.gov.uk/dataset/ordnance-survey-code-point
 
-See Also
-~~~~~~~~
+   Contains Ordinance Survey data released under the `Open Government
+   License, OGL
+   v2 <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/>`__.
 
-london_murders
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   london_murders
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(dplyr)
-   library(ggplot2)
+      library(dplyr)
+      library(ggplot2)
 
-   # Calculate number of murders by borough
-   london_murders_counts <- london_murders %>%
-     group_by(borough) %>%
-     add_tally()
+      # Calculate number of murders by borough
+      london_murders_counts <- london_murders %>%
+        group_by(borough) %>%
+        add_tally()
 
-   london_murders_counts
+      london_murders_counts
 
-   ## Not run: 
-   # Add number of murders to geographic boundary data
-   london_boroughs_murders <- inner_join(london_boroughs, london_murders_counts, by = "borough")
+      ## Not run: 
+      # Add number of murders to geographic boundary data
+      london_boroughs_murders <- inner_join(london_boroughs, london_murders_counts, by = "borough")
 
-   # Map murders
-   ggplot(london_boroughs_murders) +
-     geom_polygon(aes(x = x, y = y, group = borough, fill = n), colour = "white") +
-       scale_fill_distiller(direction = 1) +
-     labs(x = "Easting", y = "Northing", fill = "Number of murders")
+      # Map murders
+      ggplot(london_boroughs_murders) +
+        geom_polygon(aes(x = x, y = y, group = borough, fill = n), colour = "white") +
+          scale_fill_distiller(direction = 1) +
+        labs(x = "Easting", y = "Northing", fill = "Number of murders")
 
-   ## End(Not run)
+      ## End(Not run)

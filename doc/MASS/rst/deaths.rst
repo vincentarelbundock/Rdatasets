@@ -1,36 +1,38 @@
-====== ===============
-deaths R Documentation
-====== ===============
+.. container::
 
-Monthly Deaths from Lung Diseases in the UK
--------------------------------------------
+   ====== ===============
+   deaths R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Monthly Deaths from Lung Diseases in the UK
+      :name: monthly-deaths-from-lung-diseases-in-the-uk
 
-A time series giving the monthly deaths from bronchitis, emphysema and
-asthma in the UK, 1974-1979, both sexes (``deaths``),
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A time series giving the monthly deaths from bronchitis, emphysema
+   and asthma in the UK, 1974-1979, both sexes (``deaths``),
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   deaths
+   ::
 
-Source
-~~~~~~
+      deaths
 
-P. J. Diggle (1990) *Time Series: A Biostatistical Introduction.*
-Oxford, table A.3
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   P. J. Diggle (1990) *Time Series: A Biostatistical Introduction.*
+   Oxford, table A.3
 
-Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics with
-S.* Fourth edition. Springer.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S.* Fourth edition. Springer.
 
-This the same as dataset ``ldeaths`` in R's datasets package.
+   .. rubric:: See Also
+      :name: see-also
+
+   This the same as dataset ``ldeaths`` in R's datasets package.

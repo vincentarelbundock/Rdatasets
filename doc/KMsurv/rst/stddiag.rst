@@ -1,35 +1,37 @@
-======= ===============
-stddiag R Documentation
-======= ===============
+.. container::
 
-data from Exercise 5.6, p146
-----------------------------
+   ======= ===============
+   stddiag R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: data from Exercise 5.6, p146
+      :name: data-from-exercise-5.6-p146
 
-The ``stddiag`` data frame has 25 rows and 2 columns.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   The ``stddiag`` data frame has 25 rows and 2 columns.
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-encounter
-   Months from 1/93 to encounter
+   This data frame contains the following columns:
 
-diagnosed
-   Months until STD diagnosed in the clinic
+   encounter
+      Months from 1/93 to encounter
 
-Source
-~~~~~~
+   diagnosed
+      Months until STD diagnosed in the clinic
 
-Klein and Moeschberger (1997) *Survival Analysis Techniques for Censored
-and truncated data*, Springer.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Klein and Moeschberger (1997) *Survival Analysis Techniques for
+   Censored and truncated data*, Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(stddiag)
+   ::
+
+      data(stddiag)

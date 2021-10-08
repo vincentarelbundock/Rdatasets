@@ -1,52 +1,54 @@
-========= ===============
-stocks_18 R Documentation
-========= ===============
+.. container::
 
-Monthly Returns for a few stocks
---------------------------------
+   ========= ===============
+   stocks_18 R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Monthly Returns for a few stocks
+      :name: monthly-returns-for-a-few-stocks
 
-Monthly return data for a few stocks, which covers stock prices from
-November 2015 through October 2018.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Monthly return data for a few stocks, which covers stock prices from
+   November 2015 through October 2018.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   stocks_18
+   ::
 
-Format
-~~~~~~
+      stocks_18
 
-A data frame with 36 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-date
-   First day of the month corresponding to the returns.
+   A data frame with 36 observations on the following 3 variables.
 
-goog
-   Google stock price change.
+   date
+      First day of the month corresponding to the returns.
 
-cat
-   Caterpillar stock price change.
+   goog
+      Google stock price change.
 
-xom
-   Exxon Mobil stock price change.
+   cat
+      Caterpillar stock price change.
 
-Source
-~~~~~~
+   xom
+      Exxon Mobil stock price change.
 
-Yahoo! Finance, direct download.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Yahoo! Finance, direct download.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   d <- stocks_18
-   dim(d)
-   apply(d[, 2:3], 2, mean)
-   apply(d[, 2:3], 2, sd)
+      d <- stocks_18
+      dim(d)
+      apply(d[, 2:3], 2, mean)
+      apply(d[, 2:3], 2, sd)

@@ -1,74 +1,79 @@
-======= ===============
-exibble R Documentation
-======= ===============
+.. container::
 
-A toy example tibble for testing with gt: exibble
--------------------------------------------------
+   ======= ===============
+   exibble R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: A toy example tibble for testing with gt: exibble
+      :name: a-toy-example-tibble-for-testing-with-gt-exibble
 
-This tibble contains data of a few different classes, which makes it
-well-suited for quick experimentation with the functions in this
-package. It contains only eight rows with numeric, character, and factor
-columns. The last 4 rows contain ``NA`` values in the majority of this
-tibble's columns (1 missing value per column). The ``date``, ``time``,
-and ``datetime`` columns are character-based dates/times in the familiar
-ISO 8601 format. The ``row`` and ``group`` columns provide for unique
-rownames and two groups (``grp_a`` and ``grp_b``) for experimenting with
-the ``gt()`` function's ``rowname_col`` and ``groupname_col`` arguments.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This tibble contains data of a few different classes, which makes it
+   well-suited for quick experimentation with the functions in this
+   package. It contains only eight rows with numeric, character, and
+   factor columns. The last 4 rows contain ``NA`` values in the majority
+   of this tibble's columns (1 missing value per column). The ``date``,
+   ``time``, and ``datetime`` columns are character-based dates/times in
+   the familiar ISO 8601 format. The ``row`` and ``group`` columns
+   provide for unique rownames and two groups (``grp_a`` and ``grp_b``)
+   for experimenting with the ``gt()`` function's ``rowname_col`` and
+   ``groupname_col`` arguments.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   exibble
+   ::
 
-Format
-~~~~~~
+      exibble
 
-A tibble with 8 rows and 9 variables:
+   .. rubric:: Format
+      :name: format
 
-num
-   a numeric column ordered with increasingly larger values
+   A tibble with 8 rows and 9 variables:
 
-char
-   a character column composed of names of fruits from ``a`` to ``h``
+   num
+      a numeric column ordered with increasingly larger values
 
-fctr
-   a factor column with numbers from 1 to 8, written out
+   char
+      a character column composed of names of fruits from ``a`` to ``h``
 
-date, time, datetime
-   character columns with dates, times, and datetimes
+   fctr
+      a factor column with numbers from 1 to 8, written out
 
-currency
-   a numeric column that is useful for testing currency-based formatting
+   date, time, datetime
+      character columns with dates, times, and datetimes
 
-row
-   a character column in the format ``row_X`` which can be useful for
-   testing with row captions in a table stub
+   currency
+      a numeric column that is useful for testing currency-based
+      formatting
 
-group
-   a character column with four ``grp_a`` values and four ``grp_b``
-   values which can be useful for testing tables that contain row groups
+   row
+      a character column in the format ``row_X`` which can be useful for
+      testing with row captions in a table stub
 
-Function ID
-~~~~~~~~~~~
+   group
+      a character column with four ``grp_a`` values and four ``grp_b``
+      values which can be useful for testing tables that contain row
+      groups
 
-11-6
+   .. rubric:: Function ID
+      :name: function-id
 
-See Also
-~~~~~~~~
+   11-6
 
-Other Datasets: ``countrypops``, ``gtcars``, ``pizzaplace``, ``sp500``,
-``sza``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   Other Datasets: ``countrypops``, ``gtcars``, ``pizzaplace``,
+   ``sp500``, ``sza``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   # Here is a glimpse at the data
-   # available in `exibble`
-   dplyr::glimpse(exibble)
+   ::
+
+      # Here is a glimpse at the data
+      # available in `exibble`
+      dplyr::glimpse(exibble)

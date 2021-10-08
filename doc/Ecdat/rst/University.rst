@@ -1,100 +1,102 @@
-========== ===============
-University R Documentation
-========== ===============
+.. container::
 
-Provision of University Teaching and Research
----------------------------------------------
+   ========== ===============
+   University R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Provision of University Teaching and Research
+      :name: provision-of-university-teaching-and-research
 
-a cross-section from 1988
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 62
+   a cross-section from 1988
 
-*observation* : schools
+   *number of observations* : 62
 
-*country* : United Kingdom
+   *observation* : schools
 
-Usage
-~~~~~
+   *country* : United Kingdom
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(University)
+   ::
 
-Format
-~~~~~~
+      data(University)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-undstudents
-   undergraduate students
+   A dataframe containing :
 
-poststudents
-   postgraduate students
+   undstudents
+      undergraduate students
 
-nassets
-   net assets
+   poststudents
+      postgraduate students
 
-acnumbers
-   academic numbers
+   nassets
+      net assets
 
-acrelnum
-   academic related numbers
+   acnumbers
+      academic numbers
 
-clernum
-   clerical numbers
+   acrelnum
+      academic related numbers
 
-compop
-   computer operators
+   clernum
+      clerical numbers
 
-techn
-   technicians
+   compop
+      computer operators
 
-stfees
-   student fees
+   techn
+      technicians
 
-acpay
-   academic pay
+   stfees
+      student fees
 
-acrelpay
-   academic related pay
+   acpay
+      academic pay
 
-secrpay
-   secretarial pay
+   acrelpay
+      academic related pay
 
-admpay
-   admin pay
+   secrpay
+      secretarial pay
 
-agresrk
-   aggregate research rank
+   admpay
+      admin pay
 
-furneq
-   furniture and equipment
+   agresrk
+      aggregate research rank
 
-landbuild
-   land and buildings
+   furneq
+      furniture and equipment
 
-resgr
-   research grants
+   landbuild
+      land and buildings
 
-Source
-~~~~~~
+   resgr
+      research grants
 
-Glass, J.C., D.G. McKillop and N. Hyndman (1995) “Efficiency in the
-provision of university teaching and research : an empirical analysis of
-UK universities”, *Journal of Applied Econometrics*, **10(1)**,
-January–March, 61–72.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Glass, J.C., D.G. McKillop and N. Hyndman (1995) “Efficiency in the
+   provision of university teaching and research : an empirical analysis
+   of UK universities”, *Journal of Applied Econometrics*, **10(1)**,
+   January–March, 61–72.
 
-Journal of Applied Econometrics data archive :
-http://qed.econ.queensu.ca/jae/.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Journal of Applied Econometrics data archive :
+   http://qed.econ.queensu.ca/jae/.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``

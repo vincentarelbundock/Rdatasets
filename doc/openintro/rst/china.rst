@@ -1,47 +1,50 @@
-===== ===============
-china R Documentation
-===== ===============
+.. container::
 
-Child care hours
-----------------
+   ===== ===============
+   china R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Child care hours
+      :name: child-care-hours
 
-The China Health and Nutrition Survey aims to examine the effects of the
-health, nutrition, and family planning policies and programs implemented
-by national and local governments.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The China Health and Nutrition Survey aims to examine the effects of
+   the health, nutrition, and family planning policies and programs
+   implemented by national and local governments.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   china
+   ::
 
-Format
-~~~~~~
+      china
 
-A data frame with 9788 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-gender
-   a numeric vector
+   A data frame with 9788 observations on the following 3 variables.
 
-edu
-   a numeric vector
+   gender
+      a numeric vector
 
-child_care
-   a numeric vector
+   edu
+      a numeric vector
 
-Source
-~~~~~~
+   child_care
+      a numeric vector
 
-UNC Carolina Population Center, China Health and Nutrition Survey, 2006.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   UNC Carolina Population Center, China Health and Nutrition Survey,
+   2006.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   summary(china)
+      summary(china)

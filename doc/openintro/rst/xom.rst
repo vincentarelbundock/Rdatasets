@@ -1,57 +1,59 @@
-=== ===============
-xom R Documentation
-=== ===============
+.. container::
 
-Exxon Mobile stock data
------------------------
+   === ===============
+   xom R Documentation
+   === ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Exxon Mobile stock data
+      :name: exxon-mobile-stock-data
 
-Monthly data covering 2006 through early 2014.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Monthly data covering 2006 through early 2014.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   xom
+   ::
 
-Format
-~~~~~~
+      xom
 
-A data frame with 98 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-date
-   Date.
+   A data frame with 98 observations on the following 7 variables.
 
-open
-   a numeric vector
+   date
+      Date.
 
-high
-   a numeric vector
+   open
+      a numeric vector
 
-low
-   a numeric vector
+   high
+      a numeric vector
 
-close
-   a numeric vector
+   low
+      a numeric vector
 
-volume
-   a numeric vector
+   close
+      a numeric vector
 
-adj_close
-   a numeric vector
+   volume
+      a numeric vector
 
-Source
-~~~~~~
+   adj_close
+      a numeric vector
 
-Yahoo! Finance.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Yahoo! Finance.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   xom
+      xom

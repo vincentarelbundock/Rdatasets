@@ -1,49 +1,52 @@
-========= ===============
-YouthRisk R Documentation
-========= ===============
+.. container::
 
-Annual survey of health-risk youth behaviors
---------------------------------------------
+   ========= ===============
+   YouthRisk R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Annual survey of health-risk youth behaviors
+      :name: annual-survey-of-health-risk-youth-behaviors
 
-Data from the Youth Risk Behavior Surveillance System
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Data from the Youth Risk Behavior Surveillance System
 
-A data frame with 13387 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``ride.alc.driver``
-   ``1``\ =rode with a drinking driver in past 30 days or ``0``\ =did
-   not
+   A data frame with 13387 observations on the following 6 variables.
 
-``female``
-   ``1``\ =female or ``0``\ =male
+   ``ride.alc.driver``
+      ``1``\ =rode with a drinking driver in past 30 days or ``0``\ =did
+      not
 
-``grade``
-   Year in high school: ``9``, ``10``, ``11``, or ``12``
+   ``female``
+      ``1``\ =female or ``0``\ =male
 
-``age4``
-   Age (in years)
+   ``grade``
+      Year in high school: ``9``, ``10``, ``11``, or ``12``
 
-``smoke``
-   Ever smoked? ``1``\ =yes or ``0``\ =no
+   ``age4``
+      Age (in years)
 
-``DriverLicense``
-   Have a driver's license? ``1``\ =yes or ``0``\ =no
+   ``smoke``
+      Ever smoked? ``1``\ =yes or ``0``\ =no
 
-Details
-~~~~~~~
+   ``DriverLicense``
+      Have a driver's license? ``1``\ =yes or ``0``\ =no
 
-This dataset is derived from the 2007 Youth Risk Behavior Surveillance
-System (YRBSS), which is an annual survey conducted by the Centers for
-Disease Control and Prevention (CDC) to monitor the prevalence of
-health-risk youth behaviors. This dataset focuses on whether or not
-youths have recently (in past 30 days) ridden with a drunk driver.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This dataset is derived from the 2007 Youth Risk Behavior
+   Surveillance System (YRBSS), which is an annual survey conducted by
+   the Centers for Disease Control and Prevention (CDC) to monitor the
+   prevalence of health-risk youth behaviors. This dataset focuses on
+   whether or not youths have recently (in past 30 days) ridden with a
+   drunk driver.
 
-http://www.cdc.gov/HealthyYouth/yrbs/index.htm
+   .. rubric:: Source
+      :name: source
+
+   http://www.cdc.gov/HealthyYouth/yrbs/index.htm

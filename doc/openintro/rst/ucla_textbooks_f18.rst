@@ -1,161 +1,163 @@
-================== ===============
-ucla_textbooks_f18 R Documentation
-================== ===============
+.. container::
 
-Sample of UCLA course textbooks for Fall 2018
----------------------------------------------
+   ================== ===============
+   ucla_textbooks_f18 R Documentation
+   ================== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Sample of UCLA course textbooks for Fall 2018
+      :name: sample-of-ucla-course-textbooks-for-fall-2018
 
-A sample of courses were collected from UCLA from Fall 2018, and the
-corresponding textbook prices were collected from the UCLA bookstore and
-also from Amazon.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A sample of courses were collected from UCLA from Fall 2018, and the
+   corresponding textbook prices were collected from the UCLA bookstore
+   and also from Amazon.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   ucla_textbooks_f18
+   ::
 
-Format
-~~~~~~
+      ucla_textbooks_f18
 
-A data frame with 201 observations on the following 20 variables.
+   .. rubric:: Format
+      :name: format
 
-year
-   Year the course was offered
+   A data frame with 201 observations on the following 20 variables.
 
-term
-   Term the course was offered
+   year
+      Year the course was offered
 
-subject
-   Subject
+   term
+      Term the course was offered
 
-subject_abbr
-   Subject abbreviation, if any
+   subject
+      Subject
 
-course
-   Course name
+   subject_abbr
+      Subject abbreviation, if any
 
-course_num
-   Course number, complete
+   course
+      Course name
 
-course_numeric
-   Course number, numeric only
+   course_num
+      Course number, complete
 
-seminar
-   Boolean for if this is a seminar course.
+   course_numeric
+      Course number, numeric only
 
-ind_study
-   Boolean for if this is some form of independent study
+   seminar
+      Boolean for if this is a seminar course.
 
-apprenticeship
-   Boolean for if this is an apprenticeship
+   ind_study
+      Boolean for if this is some form of independent study
 
-internship
-   Boolean for if this is an internship
+   apprenticeship
+      Boolean for if this is an apprenticeship
 
-honors_contracts
-   Boolean for if this is an honors contracts course
+   internship
+      Boolean for if this is an internship
 
-laboratory
-   Boolean for if this is a lab
+   honors_contracts
+      Boolean for if this is an honors contracts course
 
-special_topic
-   Boolean for if this is any of the special types of courses listed
+   laboratory
+      Boolean for if this is a lab
 
-textbook_isbn
-   Textbook ISBN
+   special_topic
+      Boolean for if this is any of the special types of courses listed
 
-bookstore_new
-   New price at the UCLA bookstore
+   textbook_isbn
+      Textbook ISBN
 
-bookstore_used
-   Used price at the UCLA bookstore
+   bookstore_new
+      New price at the UCLA bookstore
 
-amazon_new
-   New price sold by Amazon
+   bookstore_used
+      Used price at the UCLA bookstore
 
-amazon_used
-   Used price sold by Amazon
+   amazon_new
+      New price sold by Amazon
 
-notes
-   Any relevant notes
+   amazon_used
+      Used price sold by Amazon
 
-Details
-~~~~~~~
+   notes
+      Any relevant notes
 
-A past data set was collected from UCLA courses in Spring 2010, and
-Amazon at that time was found to be almost uniformly lower than those of
-the UCLA bookstore's. Now in 2018, the UCLA bookstore is about even with
-Amazon on the vast majority of titles, and there is no statistical
-difference in the sample data.
+   .. rubric:: Details
+      :name: details
 
-The most expensive book required for the course was generally used.
+   A past data set was collected from UCLA courses in Spring 2010, and
+   Amazon at that time was found to be almost uniformly lower than those
+   of the UCLA bookstore's. Now in 2018, the UCLA bookstore is about
+   even with Amazon on the vast majority of titles, and there is no
+   statistical difference in the sample data.
 
-The reason why we advocate for using raw amount differences instead of
-percent differences is that a 20\\ to a 20\\ price difference on
-low-priced books would balance numerically (but not in a practical
-sense) a moderate but important price difference on more expensive
-books. So while this tends to result in a bit less sensitivity in
-detecting *some* effect, we believe the absolute difference compares
-prices in a more meaningful way.
+   The most expensive book required for the course was generally used.
 
-Used prices contain the shipping cost but do not contain tax. The used
-prices are a more nuanced comparison, since these are all 3rd party
-sellers. Amazon is often more a marketplace than a retail site at this
-point, and many people buy from 3rd party sellers on Amazon now without
-realizing it. The relationship Amazon has with 3rd party sellers is also
-challenging. Given the frequently changing dynamics in this space, we
-don't think any analysis here will be very reliable for long term
-insights since products from these sellers changes frequently in
-quantity and price. For this reason, we focus only on new books sold
-directly by Amazon in our comparison. In a future round of data
-collection, it may be interesting to explore whether the dynamics have
-changed in the used market.
+   The reason why we advocate for using raw amount differences instead
+   of percent differences is that a 20\\ to a 20\\ price difference on
+   low-priced books would balance numerically (but not in a practical
+   sense) a moderate but important price difference on more expensive
+   books. So while this tends to result in a bit less sensitivity in
+   detecting *some* effect, we believe the absolute difference compares
+   prices in a more meaningful way.
 
-Source
-~~~~~~
+   Used prices contain the shipping cost but do not contain tax. The
+   used prices are a more nuanced comparison, since these are all 3rd
+   party sellers. Amazon is often more a marketplace than a retail site
+   at this point, and many people buy from 3rd party sellers on Amazon
+   now without realizing it. The relationship Amazon has with 3rd party
+   sellers is also challenging. Given the frequently changing dynamics
+   in this space, we don't think any analysis here will be very reliable
+   for long term insights since products from these sellers changes
+   frequently in quantity and price. For this reason, we focus only on
+   new books sold directly by Amazon in our comparison. In a future
+   round of data collection, it may be interesting to explore whether
+   the dynamics have changed in the used market.
 
-https://sa.ucla.edu/ro/public/soc
+   .. rubric:: Source
+      :name: source
 
-https://ucla.verbacompare.com
+   https://sa.ucla.edu/ro/public/soc
 
-https://www.amazon.com
+   https://ucla.verbacompare.com
 
-See Also
-~~~~~~~~
+   https://www.amazon.com
 
-``textbooks``, ``ucla_f18``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``textbooks``, ``ucla_f18``
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
-   library(dplyr)
+      library(ggplot2)
+      library(dplyr)
 
-   ggplot(ucla_textbooks_f18, aes(x = bookstore_new, y = amazon_new)) +
-     geom_point() +
-     geom_abline(slope = 1, intercept = 0, color = "orange") +
-     labs(x = "UCLA Bookstore price", y = "Amazon price",
-          title = "Amazon vs. UCLA Bookstore prices of new textbooks",
-          subtitle = "Orange line represents y = x")
+      ggplot(ucla_textbooks_f18, aes(x = bookstore_new, y = amazon_new)) +
+        geom_point() +
+        geom_abline(slope = 1, intercept = 0, color = "orange") +
+        labs(x = "UCLA Bookstore price", y = "Amazon price",
+             title = "Amazon vs. UCLA Bookstore prices of new textbooks",
+             subtitle = "Orange line represents y = x")
 
-   # The following outliers were double checked for accuracy
-   ucla_textbooks_f18_with_diff <-  ucla_textbooks_f18 %>%
-     mutate(diff = bookstore_new - amazon_new)
+      # The following outliers were double checked for accuracy
+      ucla_textbooks_f18_with_diff <-  ucla_textbooks_f18 %>%
+        mutate(diff = bookstore_new - amazon_new)
 
-   ucla_textbooks_f18_with_diff %>%
-     filter(diff > 20 | diff < -20)
+      ucla_textbooks_f18_with_diff %>%
+        filter(diff > 20 | diff < -20)
 
-   # Distribution of price differences
-   ggplot(ucla_textbooks_f18_with_diff, aes(x = diff)) +
-     geom_histogram(binwidth = 5)
+      # Distribution of price differences
+      ggplot(ucla_textbooks_f18_with_diff, aes(x = diff)) +
+        geom_histogram(binwidth = 5)
 
-   # t-test of price differences
-   t.test(ucla_textbooks_f18_with_diff$diff)
+      # t-test of price differences
+      t.test(ucla_textbooks_f18_with_diff$diff)

@@ -1,52 +1,54 @@
-============ ===============
-arcticseaice R Documentation
-============ ===============
+.. container::
 
-Arctic Sea Ice Extent Data, 1901-2015
--------------------------------------
+   ============ ===============
+   arcticseaice R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Arctic Sea Ice Extent Data, 1901-2015
+      :name: arctic-sea-ice-extent-data-1901-2015
 
-This data set from Connelly et al. (2017) measures the Arctic sea ice
-extent in 10^6 square kilometers. It includes lower bounds and upper
-bounds on annual averages.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data set from Connelly et al. (2017) measures the Arctic sea ice
+   extent in 10^6 square kilometers. It includes lower bounds and upper
+   bounds on annual averages.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   arcticseaice
+   ::
 
-Format
-~~~~~~
+      arcticseaice
 
-A data frame with 115 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``year``
-   the year
+   A data frame with 115 observations on the following 4 variables.
 
-``value``
-   the annual Arctic sea ice extent (in 10^6 sq km)
+   ``year``
+      the year
 
-``ub``
-   The upper bound of the value, provided by Connelly et al.
+   ``value``
+      the annual Arctic sea ice extent (in 10^6 sq km)
 
-``lb``
-   The lower bound of the value, provided by Connelly et al.
+   ``ub``
+      The upper bound of the value, provided by Connelly et al.
 
-Details
-~~~~~~~
+   ``lb``
+      The lower bound of the value, provided by Connelly et al.
 
-This is for illustration of climate change for my intro students.
-Connelly et al. (2017) are in part a methodological paper. The data I
-present here are from the "rescaled (unadjusted T)" data in the second
-sheet from their replication files.
+   .. rubric:: Details
+      :name: details
 
-References
-~~~~~~~~~~
+   This is for illustration of climate change for my intro students.
+   Connelly et al. (2017) are in part a methodological paper. The data I
+   present here are from the "rescaled (unadjusted T)" data in the
+   second sheet from their replication files.
 
-Connolly et al. (2017), ”Re-calibration of Arctic sea ice extent
-datasets using Arctic surface air temperature records”. \*Hydrological
-Sciences Journal\* 62(8): 1317–40.
+   .. rubric:: References
+      :name: references
+
+   Connolly et al. (2017), ”Re-calibration of Arctic sea ice extent
+   datasets using Arctic surface air temperature records”.
+   \*Hydrological Sciences Journal\* 62(8): 1317–40.

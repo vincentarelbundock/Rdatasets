@@ -1,61 +1,62 @@
-======= ===============
-Default R Documentation
-======= ===============
+.. container::
 
-Credit Card Default Data
-------------------------
+   ======= ===============
+   Default R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Credit Card Default Data
+      :name: credit-card-default-data
 
-A simulated data set containing information on ten thousand customers.
-The aim here is to predict which customers will default on their credit
-card debt.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A simulated data set containing information on ten thousand
+   customers. The aim here is to predict which customers will default on
+   their credit card debt.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Default
+   ::
 
-Format
-~~~~~~
+      Default
 
-A data frame with 10000 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-``default``
-   A factor with levels ``No`` and ``Yes`` indicating whether the
-   customer defaulted on their debt
+   A data frame with 10000 observations on the following 4 variables.
 
-``student``
-   A factor with levels ``No`` and ``Yes`` indicating whether the
-   customer is a student
+   ``default``
+      A factor with levels ``No`` and ``Yes`` indicating whether the
+      customer defaulted on their debt
 
-``balance``
-   The average balance that the customer has remaining on their credit
-   card after making their monthly payment
+   ``student``
+      A factor with levels ``No`` and ``Yes`` indicating whether the
+      customer is a student
 
-``income``
-   Income of customer
+   ``balance``
+      The average balance that the customer has remaining on their
+      credit card after making their monthly payment
 
-Source
-~~~~~~
+   ``income``
+      Income of customer
 
-Simulated data
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Simulated data
 
-James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
-Introduction to Statistical Learning with applications in R*,
-`www.StatLearning.com <www.StatLearning.com>`__, Springer-Verlag, New
-York
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
+   Introduction to Statistical Learning with applications in R*,
+   https://www.statlearning.com, Springer-Verlag, New York
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   summary(Default)
-   glm(default~student+balance+income,family="binomial",data=Default)
+   ::
+
+      summary(Default)
+      glm(default~student+balance+income,family="binomial",data=Default)

@@ -1,63 +1,65 @@
-========== ===============
-lizard_run R Documentation
-========== ===============
+.. container::
 
-Lizard speeds
--------------
+   ========== ===============
+   lizard_run R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Lizard speeds
+      :name: lizard-speeds
 
-Data on top speeds measured on a laboratory race track for two species
-of lizards: Western fence lizard (Sceloporus occidentalis) and Sagebrush
-lizard (Sceloporus graciosus).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data on top speeds measured on a laboratory race track for two
+   species of lizards: Western fence lizard (Sceloporus occidentalis)
+   and Sagebrush lizard (Sceloporus graciosus).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   lizard_run
+   ::
 
-Format
-~~~~~~
+      lizard_run
 
-A data frame with 48 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-top_speed
-   Top speed of lizard, meters per second.
+   A data frame with 48 observations on the following 3 variables.
 
-common_name
-   Common name: ``Western fence lizard`` and ``Sagebrush lizard``.
+   top_speed
+      Top speed of lizard, meters per second.
 
-scientific_name
-   Scientific name (Genus and species): ``Sceloporus occidentalis`` and
-   ``Sceloporus graciosus``.
+   common_name
+      Common name: ``Western fence lizard`` and ``Sagebrush lizard``.
 
-Source
-~~~~~~
+   scientific_name
+      Scientific name (Genus and species): ``Sceloporus occidentalis``
+      and ``Sceloporus graciosus``.
 
-Adolph, S. C. 1987. Physiological and behavioral ecology of the lizards
-Sceloporus occidentalis and Sceloporus graciosus. Dissertation.
-University of Washington, Seattle, Washington, USA.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Adolph, S. C. 1987. Physiological and behavioral ecology of the
+   lizards Sceloporus occidentalis and Sceloporus graciosus.
+   Dissertation. University of Washington, Seattle, Washington, USA.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   library(ggplot2)
-   library(dplyr)
+   ::
 
-   # Top speed by species
-   ggplot(lizard_run, aes(x = top_speed, color = common_name, fill = common_name)) +
-     geom_density(alpha = 0.5)
+      library(ggplot2)
+      library(dplyr)
 
-   # Top speed summary statistics by species
-   lizard_run %>%
-     group_by(common_name) %>%
-     summarise(
-       n    = n(),
-       mean = mean(top_speed),
-       sd   = sd(top_speed)
-     )
+      # Top speed by species
+      ggplot(lizard_run, aes(x = top_speed, color = common_name, fill = common_name)) +
+        geom_density(alpha = 0.5)
+
+      # Top speed summary statistics by species
+      lizard_run %>%
+        group_by(common_name) %>%
+        summarise(
+          n    = n(),
+          mean = mean(top_speed),
+          sd   = sd(top_speed)
+        )

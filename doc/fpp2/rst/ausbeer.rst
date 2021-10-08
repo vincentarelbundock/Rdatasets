@@ -1,31 +1,33 @@
-======= ===============
-ausbeer R Documentation
-======= ===============
+.. container::
 
-Quarterly Australian Beer production
-------------------------------------
+   ======= ===============
+   ausbeer R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Quarterly Australian Beer production
+      :name: quarterly-australian-beer-production
 
-Total quarterly beer production in Australia (in megalitres) from
-1956:Q1 to 2010:Q2.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Total quarterly beer production in Australia (in megalitres) from
+   1956:Q1 to 2010:Q2.
 
-Quarterly time series of class ``ts``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   Quarterly time series of class ``ts``.
 
-Australian Bureau of Statistics. Cat. 8301.0.55.001.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Australian Bureau of Statistics. Cat. 8301.0.55.001.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   data(ausbeer)
-   ggseasonplot(ausbeer)
+      data(ausbeer)
+      ggseasonplot(ausbeer)

@@ -1,64 +1,66 @@
-========== ===============
-DutchSales R Documentation
-========== ===============
+.. container::
 
-Dutch Retail Sales Index Data
------------------------------
+   ========== ===============
+   DutchSales R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Dutch Retail Sales Index Data
+      :name: dutch-retail-sales-index-data
 
-Time series of retail sales index in The Netherlands.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Time series of retail sales index in The Netherlands.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("DutchSales")
+   ::
 
-Format
-~~~~~~
+      data("DutchSales")
 
-A monthly univariate time series from 1960(5) to 1995(9).
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A monthly univariate time series from 1960(5) to 1995(9).
 
-Online complements to Franses (1998).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Franses (1998).
 
-Franses, P.H. (1998). *Time Series Models for Business and Economic
-Forecasting*. Cambridge, UK: Cambridge University Press.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Franses, P.H. (1998). *Time Series Models for Business and Economic
+   Forecasting*. Cambridge, UK: Cambridge University Press.
 
-``Franses1998``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Franses1998``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("DutchSales")
-   plot(DutchSales)
+   ::
 
-   ## EACF tables (Franses 1998, p. 99)
-   ctrafo <- function(x) residuals(lm(x ~ factor(cycle(x))))
-   ddiff <- function(x) diff(diff(x, frequency(x)), 1)
-   eacf <- function(y, lag = 12) {
-     stopifnot(all(lag > 0))
-     if(length(lag) < 2) lag <- 1:lag
-     rval <- sapply(
-       list(y = y, dy = diff(y), cdy = ctrafo(diff(y)),
-            Dy = diff(y, frequency(y)), dDy = ddiff(y)),
-       function(x) acf(x, plot = FALSE, lag.max = max(lag))$acf[lag + 1])
-     rownames(rval) <- lag
-     return(rval)
-   }
+      data("DutchSales")
+      plot(DutchSales)
 
-   ## Franses (1998), Table 5.3
-   round(eacf(log(DutchSales), lag = c(1:18, 24, 36)), digits = 3)
+      ## EACF tables (Franses 1998, p. 99)
+      ctrafo <- function(x) residuals(lm(x ~ factor(cycle(x))))
+      ddiff <- function(x) diff(diff(x, frequency(x)), 1)
+      eacf <- function(y, lag = 12) {
+        stopifnot(all(lag > 0))
+        if(length(lag) < 2) lag <- 1:lag
+        rval <- sapply(
+          list(y = y, dy = diff(y), cdy = ctrafo(diff(y)),
+               Dy = diff(y, frequency(y)), dDy = ddiff(y)),
+          function(x) acf(x, plot = FALSE, lag.max = max(lag))$acf[lag + 1])
+        rownames(rval) <- lag
+        return(rval)
+      }
+
+      ## Franses (1998), Table 5.3
+      round(eacf(log(DutchSales), lag = c(1:18, 24, 36)), digits = 3)

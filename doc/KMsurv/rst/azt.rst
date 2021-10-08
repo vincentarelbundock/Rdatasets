@@ -1,41 +1,43 @@
-=== ===============
-azt R Documentation
-=== ===============
+.. container::
 
-data from Exercise 4.7, p122
-----------------------------
+   === ===============
+   azt R Documentation
+   === ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: data from Exercise 4.7, p122
+      :name: data-from-exercise-4.7-p122
 
-The ``azt`` data frame has 45 rows and 4 columns.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   The ``azt`` data frame has 45 rows and 4 columns.
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-patient
-   Patient number
+   This data frame contains the following columns:
 
-ageentry
-   Age at entry into AZT study, months
+   patient
+      Patient number
 
-age
-   Age at death or censoring time, months
+   ageentry
+      Age at entry into AZT study, months
 
-death
-   Death indicator (1=dead, 0=alive)
+   age
+      Age at death or censoring time, months
 
-Source
-~~~~~~
+   death
+      Death indicator (1=dead, 0=alive)
 
-Klein and Moeschberger (1997) *Survival Analysis Techniques for Censored
-and truncated data*, Springer.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Klein and Moeschberger (1997) *Survival Analysis Techniques for
+   Censored and truncated data*, Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(azt)
+   ::
+
+      data(azt)

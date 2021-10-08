@@ -1,45 +1,47 @@
-====== ===============
-larynx R Documentation
-====== ===============
+.. container::
 
-data from Section 1.8
----------------------
+   ====== ===============
+   larynx R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: data from Section 1.8
+      :name: data-from-section-1.8
 
-The ``larynx`` data frame has 90 rows and 5 columns.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   The ``larynx`` data frame has 90 rows and 5 columns.
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-stage
-   Stage of disease (1=stage 1, 2=stage2, 3=stage 3, 4=stage 4)
+   This data frame contains the following columns:
 
-time
-   Time to death or on-study time, months
+   stage
+      Stage of disease (1=stage 1, 2=stage2, 3=stage 3, 4=stage 4)
 
-age
-   Age at diagnosis of larynx cancer
+   time
+      Time to death or on-study time, months
 
-diagyr
-   Year of diagnosis of larynx cancer
+   age
+      Age at diagnosis of larynx cancer
 
-delta
-   Death indicator (0=alive, 1=dead)
+   diagyr
+      Year of diagnosis of larynx cancer
 
-Source
-~~~~~~
+   delta
+      Death indicator (0=alive, 1=dead)
 
-Klein and Moeschberger (1997) *Survival Analysis Techniques for Censored
-and truncated data*, Springer. Kardaun Stat. Nederlandica 37 (1983),
-103-126.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Klein and Moeschberger (1997) *Survival Analysis Techniques for
+   Censored and truncated data*, Springer. Kardaun Stat. Nederlandica 37
+   (1983), 103-126.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(larynx)
+   ::
+
+      data(larynx)

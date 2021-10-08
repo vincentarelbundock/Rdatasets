@@ -1,52 +1,54 @@
-==== ===============
-DJIA R Documentation
-==== ===============
+.. container::
 
-Dow Jones Industrial Average, 1885-Present
-------------------------------------------
+   ==== ===============
+   DJIA R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Dow Jones Industrial Average, 1885-Present
+      :name: dow-jones-industrial-average-1885-present
 
-This data set contains the value of the Dow Jones Industrial Average on
-daily close for all available dates (to the best of my knowledge) from
-1885 to the most recently concluded calendar year. Extensions shouldn't
-be too difficult with existing packages.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This data set contains the value of the Dow Jones Industrial Average
+   on daily close for all available dates (to the best of my knowledge)
+   from 1885 to the most recently concluded calendar year. Extensions
+   shouldn't be too difficult with existing packages.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   DJIA
+   ::
 
-Format
-~~~~~~
+      DJIA
 
-A data frame with 36951 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-``date``
-   the date
+   A data frame with 36951 observations on the following 2 variables.
 
-``value``
-   the value of the the Dow Jones Industrial Average at daily close
+   ``date``
+      the date
 
-Details
-~~~~~~~
+   ``value``
+      the value of the the Dow Jones Industrial Average at daily close
 
-Observations before October 7, 1896 are from the single Dow Jones
-Average. Observations from October 7, 1896 to July 30, 1914 are from the
-first DJIA. Observations before the 1914 closure of the first DJIA in
-July 1914 come from MeasuringWorth. Observations from its reopening in
-Dec. 12, 1914 to January 28, 1985 come from Pinnacle Systems.
-Observations from January 29, 1985 to the most recent observation come
-from a ``quantmod`` call.
+   .. rubric:: Details
+      :name: details
 
-References
-~~~~~~~~~~
+   Observations before October 7, 1896 are from the single Dow Jones
+   Average. Observations from October 7, 1896 to July 30, 1914 are from
+   the first DJIA. Observations before the 1914 closure of the first
+   DJIA in July 1914 come from MeasuringWorth. Observations from its
+   reopening in Dec. 12, 1914 to January 28, 1985 come from Pinnacle
+   Systems. Observations from January 29, 1985 to the most recent
+   observation come from a ``quantmod`` call.
 
-Samuel H. Williamson, 'Daily Closing Value of the Dow Jones Average,
-1885 to Present,' MeasuringWorth, 2019.
+   .. rubric:: References
+      :name: references
 
-Jeffrey A. Ryan and Joshua M. Ulrich, '``quantmod``: Quantitative
-Financial Modelling Framework,' 2018.
+   Samuel H. Williamson, 'Daily Closing Value of the Dow Jones Average,
+   1885 to Present,' MeasuringWorth, 2019.
+
+   Jeffrey A. Ryan and Joshua M. Ulrich, '``quantmod``: Quantitative
+   Financial Modelling Framework,' 2018.

@@ -1,51 +1,53 @@
-======= ===============
-present R Documentation
-======= ===============
+.. container::
 
-Birth counts
-------------
+   ======= ===============
+   present R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Birth counts
+      :name: birth-counts
 
-An updated version of the historical Arbuthnot dataset. Numbers of boys
-and girls born in the United States between 1940 and 2002.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   An updated version of the historical Arbuthnot dataset. Numbers of
+   boys and girls born in the United States between 1940 and 2002.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   present
+   ::
 
-Format
-~~~~~~
+      present
 
-A data frame with 63 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-year
-   Year.
+   A data frame with 63 observations on the following 3 variables.
 
-boys
-   Number of boys born.
+   year
+      Year.
 
-girls
-   Number of girls born.
+   boys
+      Number of boys born.
 
-Source
-~~~~~~
+   girls
+      Number of girls born.
 
-Mathews, T. J., and Brady E. Hamilton. "Trend analysis of the sex ratio
-at birth in the United States." National vital statistics reports 53.20
-(2005): 1-17.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Mathews, T. J., and Brady E. Hamilton. "Trend analysis of the sex
+   ratio at birth in the United States." National vital statistics
+   reports 53.20 (2005): 1-17.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
+      library(ggplot2)
 
-   ggplot(present, mapping = aes(x = year, y = boys / girls)) +
-     geom_line()
+      ggplot(present, mapping = aes(x = year, y = boys / girls)) +
+        geom_line()

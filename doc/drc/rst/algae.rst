@@ -1,56 +1,59 @@
-===== ===============
-algae R Documentation
-===== ===============
+.. container::
 
-Volume of algae as function of increasing concentrations of a herbicide
------------------------------------------------------------------------
+   ===== ===============
+   algae R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Volume of algae as function of increasing concentrations
+      of a herbicide
+      :name: volume-of-algae-as-function-of-increasing-concentrations-of-a-herbicide
 
-Dataset from an experiment exploring the effect of increasing
-concentrations of a herbicide on the volume of the treated algae.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Dataset from an experiment exploring the effect of increasing
+   concentrations of a herbicide on the volume of the treated algae.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(algae)
+   ::
 
-Format
-~~~~~~
+      data(algae)
 
-A data frame with 14 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-``conc``
-   a numeric vector of concentrations.
+   A data frame with 14 observations on the following 2 variables.
 
-``vol``
-   a numeric vector of response values, that is relative change in
-   volume.
+   ``conc``
+      a numeric vector of concentrations.
 
-Details
-~~~~~~~
+   ``vol``
+      a numeric vector of response values, that is relative change in
+      volume.
 
-This datasets requires a cubic root transformation in order to stabilise
-the variance.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This datasets requires a cubic root transformation in order to
+   stabilise the variance.
 
-Meister, R. and van den Brink, P. (2000) *The Analysis of Laboratory
-Toxicity Experiments*, Chapter 4 in *Statistics in Ecotoxicology*,
-Editor: T. Sparks, New York: John Wiley \\& Sons, (pp. 114–116).
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Meister, R. and van den Brink, P. (2000) *The Analysis of Laboratory
+   Toxicity Experiments*, Chapter 4 in *Statistics in Ecotoxicology*,
+   Editor: T. Sparks, New York: John Wiley \\& Sons, (pp. 114–116).
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   algae.m1 <- drm(vol~conc, data=algae, fct=LL.3())
-   summary(algae.m1)
+      algae.m1 <- drm(vol~conc, data=algae, fct=LL.3())
+      summary(algae.m1)
 
-   algae.m2 <- boxcox(algae.m1)
-   summary(algae.m2)
+      algae.m2 <- boxcox(algae.m1)
+      summary(algae.m2)

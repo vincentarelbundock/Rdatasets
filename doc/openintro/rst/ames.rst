@@ -1,282 +1,285 @@
-==== ===============
-ames R Documentation
-==== ===============
+.. container::
 
-Housing prices in Ames, Iowa
-----------------------------
+   ==== ===============
+   ames R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Housing prices in Ames, Iowa
+      :name: housing-prices-in-ames-iowa
 
-Data set contains information from the Ames Assessor's Office used in
-computing assessed values for individual residential properties sold in
-Ames, IA from 2006 to 2010. See
-`here <http://jse.amstat.org/v19n3/decock/DataDocumentation.txt>`__ for
-detailed variable descriptions.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data set contains information from the Ames Assessor's Office used in
+   computing assessed values for individual residential properties sold
+   in Ames, IA from 2006 to 2010. See
+   `here <http://jse.amstat.org/v19n3/decock/DataDocumentation.txt>`__
+   for detailed variable descriptions.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   ames
+   ::
 
-Format
-~~~~~~
+      ames
 
-A tbl_df with with 2930 rows and 82 variables:
+   .. rubric:: Format
+      :name: format
 
-Order
-   Observation number.
+   A tbl_df with with 2930 rows and 82 variables:
 
-PID
-   Parcel identification number - can be used with city web site for
-   parcel review.
+   Order
+      Observation number.
 
-area
-   Above grade (ground) living area square feet.
+   PID
+      Parcel identification number - can be used with city web site for
+      parcel review.
 
-price
-   Sale price in USD.
+   area
+      Above grade (ground) living area square feet.
 
-MS.SubClass
-   Identifies the type of dwelling involved in the sale.
+   price
+      Sale price in USD.
 
-MS.Zoning
-   Identifies the general zoning classification of the sale.
+   MS.SubClass
+      Identifies the type of dwelling involved in the sale.
 
-Lot.Frontage
-   Linear feet of street connected to property.
+   MS.Zoning
+      Identifies the general zoning classification of the sale.
 
-Lot.Area
-   Lot size in square feet.
+   Lot.Frontage
+      Linear feet of street connected to property.
 
-Street
-   Type of road access to property.
+   Lot.Area
+      Lot size in square feet.
 
-Alley
-   Type of alley access to property.
+   Street
+      Type of road access to property.
 
-Lot.Shape
-   General shape of property.
+   Alley
+      Type of alley access to property.
 
-Land.Contour
-   Flatness of the property.
+   Lot.Shape
+      General shape of property.
 
-Utilities
-   Type of utilities available.
+   Land.Contour
+      Flatness of the property.
 
-Lot.Config
-   Lot configuration.
+   Utilities
+      Type of utilities available.
 
-Land.Slope
-   Slope of property.
+   Lot.Config
+      Lot configuration.
 
-Neighborhood
-   Physical locations within Ames city limits (map available).
+   Land.Slope
+      Slope of property.
 
-Condition.1
-   Proximity to various conditions.
+   Neighborhood
+      Physical locations within Ames city limits (map available).
 
-Condition.2
-   Proximity to various conditions (if more than one is present).
+   Condition.1
+      Proximity to various conditions.
 
-Bldg.Type
-   Type of dwelling.
+   Condition.2
+      Proximity to various conditions (if more than one is present).
 
-House.Style
-   Style of dwelling.
+   Bldg.Type
+      Type of dwelling.
 
-Overall.Qual
-   Rates the overall material and finish of the house.
+   House.Style
+      Style of dwelling.
 
-Overall.Cond
-   Rates the overall condition of the house.
+   Overall.Qual
+      Rates the overall material and finish of the house.
 
-Year.Built
-   Original construction date.
+   Overall.Cond
+      Rates the overall condition of the house.
 
-Year.Remod.Add
-   Remodel date (same as construction date if no remodeling or
-   additions).
+   Year.Built
+      Original construction date.
 
-Roof.Style
-   Type of roof.
+   Year.Remod.Add
+      Remodel date (same as construction date if no remodeling or
+      additions).
 
-Roof.Matl
-   Roof material.
+   Roof.Style
+      Type of roof.
 
-Exterior.1st
-   Exterior covering on house.
+   Roof.Matl
+      Roof material.
 
-Exterior.2nd
-   Exterior covering on house (if more than one material).
+   Exterior.1st
+      Exterior covering on house.
 
-Mas.Vnr.Type
-   Masonry veneer type.
+   Exterior.2nd
+      Exterior covering on house (if more than one material).
 
-Mas.Vnr.Area
-   Masonry veneer area in square feet.
+   Mas.Vnr.Type
+      Masonry veneer type.
 
-Exter.Qual
-   Evaluates the quality of the material on the exterior.
+   Mas.Vnr.Area
+      Masonry veneer area in square feet.
 
-Exter.Cond
-   Evaluates the present condition of the material on the exterior.
+   Exter.Qual
+      Evaluates the quality of the material on the exterior.
 
-Foundation
-   Type of foundation.
+   Exter.Cond
+      Evaluates the present condition of the material on the exterior.
 
-Bsmt.Qual
-   Evaluates the height of the basement.
+   Foundation
+      Type of foundation.
 
-Bsmt.Cond
-   Evaluates the general condition of the basement.
+   Bsmt.Qual
+      Evaluates the height of the basement.
 
-Bsmt.Exposure
-   Refers to walkout or garden level walls.
+   Bsmt.Cond
+      Evaluates the general condition of the basement.
 
-BsmtFin.Type.1
-   Rating of basement finished area.
+   Bsmt.Exposure
+      Refers to walkout or garden level walls.
 
-BsmtFin.SF.1
-   Type 1 finished square feet.
+   BsmtFin.Type.1
+      Rating of basement finished area.
 
-BsmtFin.Type.2
-   Rating of basement finished area (if multiple types).
+   BsmtFin.SF.1
+      Type 1 finished square feet.
 
-BsmtFin.SF.2
-   Type 2 finished square feet.
+   BsmtFin.Type.2
+      Rating of basement finished area (if multiple types).
 
-Bsmt.Unf.SF
-   Unfinished square feet of basement area.
+   BsmtFin.SF.2
+      Type 2 finished square feet.
 
-Total.Bsmt.SF
-   Total square feet of basement area.
+   Bsmt.Unf.SF
+      Unfinished square feet of basement area.
 
-Heating
-   Type of heating.
+   Total.Bsmt.SF
+      Total square feet of basement area.
 
-Heating.QC
-   Heating quality and condition.
+   Heating
+      Type of heating.
 
-Central.Air
-   Central air conditioning.
+   Heating.QC
+      Heating quality and condition.
 
-Electrical
-   Electrical system.
+   Central.Air
+      Central air conditioning.
 
-X1st.Flr.SF
-   First Floor square feet.
+   Electrical
+      Electrical system.
 
-X2nd.Flr.SF
-   Second floor square feet.
+   X1st.Flr.SF
+      First Floor square feet.
 
-Low.Qual.Fin.SF
-   Low quality finished square feet (all floors).
+   X2nd.Flr.SF
+      Second floor square feet.
 
-Bsmt.Full.Bath
-   Basement full bathrooms.
+   Low.Qual.Fin.SF
+      Low quality finished square feet (all floors).
 
-Bsmt.Half.Bath
-   Basement half bathrooms.
+   Bsmt.Full.Bath
+      Basement full bathrooms.
 
-Full.Bath
-   Full bathrooms above grade.
+   Bsmt.Half.Bath
+      Basement half bathrooms.
 
-Half.Bath
-   Half baths above grade.
+   Full.Bath
+      Full bathrooms above grade.
 
-Bedroom.AbvGr
-   Bedrooms above grade (does NOT include basement bedrooms).
+   Half.Bath
+      Half baths above grade.
 
-Kitchen.AbvGr
-   Kitchens above grade.
+   Bedroom.AbvGr
+      Bedrooms above grade (does NOT include basement bedrooms).
 
-Kitchen.Qual
-   Kitchen quality.
+   Kitchen.AbvGr
+      Kitchens above grade.
 
-TotRms.AbvGrd
-   Total rooms above grade (does not include bathrooms).
+   Kitchen.Qual
+      Kitchen quality.
 
-Functional
-   Home functionality (Assume typical unless deductions are warranted).
+   TotRms.AbvGrd
+      Total rooms above grade (does not include bathrooms).
 
-Fireplaces
-   Number of fireplaces.
+   Functional
+      Home functionality (Assume typical unless deductions are
+      warranted).
 
-Fireplace.Qu
-   Fireplace quality.
+   Fireplaces
+      Number of fireplaces.
 
-Garage.Type
-   Garage location.
+   Fireplace.Qu
+      Fireplace quality.
 
-Garage.Yr.Blt
-   Year garage was built.
+   Garage.Type
+      Garage location.
 
-Garage.Finish
-   Interior finish of the garage.
+   Garage.Yr.Blt
+      Year garage was built.
 
-Garage.Cars
-   Size of garage in car capacity.
+   Garage.Finish
+      Interior finish of the garage.
 
-Garage.Area
-   Size of garage in square feet.
+   Garage.Cars
+      Size of garage in car capacity.
 
-Garage.Qual
-   Garage quality.
+   Garage.Area
+      Size of garage in square feet.
 
-Garage.Cond
-   Garage condition.
+   Garage.Qual
+      Garage quality.
 
-Paved.Drive
-   Paved driveway.
+   Garage.Cond
+      Garage condition.
 
-Wood.Deck.SF
-   Wood deck area in square feet.
+   Paved.Drive
+      Paved driveway.
 
-Open.Porch.SF
-   Open porch area in square feet.
+   Wood.Deck.SF
+      Wood deck area in square feet.
 
-Enclosed.Porch
-   Enclosed porch area in square feet.
+   Open.Porch.SF
+      Open porch area in square feet.
 
-X3Ssn.Porch
-   Three season porch area in square feet.
+   Enclosed.Porch
+      Enclosed porch area in square feet.
 
-Screen.Porch
-   Screen porch area in square feet.
+   X3Ssn.Porch
+      Three season porch area in square feet.
 
-Pool.Area
-   Pool area in square feet.
+   Screen.Porch
+      Screen porch area in square feet.
 
-Pool.QC
-   Pool quality.
+   Pool.Area
+      Pool area in square feet.
 
-Fence
-   Fence quality.
+   Pool.QC
+      Pool quality.
 
-Misc.Feature
-   Miscellaneous feature not covered in other categories.
+   Fence
+      Fence quality.
 
-Misc.Val
-   Dollar value of miscellaneous feature.
+   Misc.Feature
+      Miscellaneous feature not covered in other categories.
 
-Mo.Sold
-   Month Sold (MM).
+   Misc.Val
+      Dollar value of miscellaneous feature.
 
-Yr.Sold
-   Year Sold (YYYY).
+   Mo.Sold
+      Month Sold (MM).
 
-Sale.Type
-   Type of sale.
+   Yr.Sold
+      Year Sold (YYYY).
 
-Sale.Condition
-   Condition of sale.
+   Sale.Type
+      Type of sale.
 
-Source
-~~~~~~
+   Sale.Condition
+      Condition of sale.
 
-De Cock, Dean. "Ames, Iowa: Alternative to the Boston housing data as an
-end of semester regression project." Journal of Statistics Education
-19.3 (2011).
+   .. rubric:: Source
+      :name: source
+
+   De Cock, Dean. "Ames, Iowa: Alternative to the Boston housing data as
+   an end of semester regression project." Journal of Statistics
+   Education 19.3 (2011).

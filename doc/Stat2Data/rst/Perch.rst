@@ -1,37 +1,39 @@
-===== ===============
-Perch R Documentation
-===== ===============
+.. container::
 
-Perch Sizes
------------
+   ===== ===============
+   Perch R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Perch Sizes
+      :name: perch-sizes
 
-Size of perch caught in a Finnish lake
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Size of perch caught in a Finnish lake
 
-A dataset with 56 observations on the following 4 variables.
+   .. rubric:: Format
+      :name: format
 
-========== =======================
-``Obs``    Observation number
-``Weight`` Weight (in grams)
-``Length`` Length (in centimeters)
-``Width``  Width (in centimeters
-\          
-========== =======================
+   A dataset with 56 observations on the following 4 variables.
 
-Details
-~~~~~~~
+   ========== =======================
+   ``Obs``    Observation number
+   ``Weight`` Weight (in grams)
+   ``Length`` Length (in centimeters)
+   ``Width``  Width (in centimeters
+   \          
+   ========== =======================
 
-This dataset comes from a sample of fish (perch) caught at Lake
-Laengelmavesi in Finland.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This dataset comes from a sample of fish (perch) caught at Lake
+   Laengelmavesi in Finland.
 
-JSE Data Archive,
-http://www.amstat.org/publications/jse/jse_data_archive.htm, submitted
-by Juha Puranen.
+   .. rubric:: Source
+      :name: source
+
+   JSE Data Archive,
+   http://www.amstat.org/publications/jse/jse_data_archive.htm,
+   submitted by Juha Puranen.

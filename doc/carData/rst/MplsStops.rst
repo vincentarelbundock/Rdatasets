@@ -1,97 +1,99 @@
-========= ===============
-MplsStops R Documentation
-========= ===============
+.. container::
 
-Minneapolis Police Department 2017 Stop Data
---------------------------------------------
+   ========= ===============
+   MplsStops R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Minneapolis Police Department 2017 Stop Data
+      :name: minneapolis-police-department-2017-stop-data
 
-Results of nearly all stops made by the Minneapolis Police Department
-for the year 2017.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Results of nearly all stops made by the Minneapolis Police Department
+   for the year 2017.
 
-A data frame with 51857 observations on the following 14 variables.
+   .. rubric:: Format
+      :name: format
 
-``idNum``
-   character vector of incident identifiers
+   A data frame with 51857 observations on the following 14 variables.
 
-``date``
-   a POSIXlt date variable giving the date and time of the stop
+   ``idNum``
+      character vector of incident identifiers
 
-``problem``
-   a factor with levels ``suspicious`` for suspicious vehicle or person
-   stops and ``traffic`` for traffic stops
+   ``date``
+      a POSIXlt date variable giving the date and time of the stop
 
-``citationIssued``
-   a factor with levels ``no`` ``yes`` indicating if a citation was
-   issued
+   ``problem``
+      a factor with levels ``suspicious`` for suspicious vehicle or
+      person stops and ``traffic`` for traffic stops
 
-``personSearch``
-   a factor with levels ``no`` ``yes`` indicating if the stopped person
-   was searched
+   ``citationIssued``
+      a factor with levels ``no`` ``yes`` indicating if a citation was
+      issued
 
-``vehicleSearch``
-   a factor with levels ``no`` or ``yes`` indicating if a vehicle was
-   searched
+   ``personSearch``
+      a factor with levels ``no`` ``yes`` indicating if the stopped
+      person was searched
 
-``preRace``
-   a factor with levels ``white``, ``black``, ``east african``,
-   ``latino``, ``native american``, ``asian``, ``other``, ``unknown``
-   for the officer's assessment of race of the person stopped before
-   speaking with the person stopped
+   ``vehicleSearch``
+      a factor with levels ``no`` or ``yes`` indicating if a vehicle was
+      searched
 
-``race``
-   a factor with levels ``white``, ``black``, ``east african``,
-   ``latino``, ``native american``, ``asian``, ``other``, ``unknown``,
-   officer's determination of race after the incident
+   ``preRace``
+      a factor with levels ``white``, ``black``, ``east african``,
+      ``latino``, ``native american``, ``asian``, ``other``, ``unknown``
+      for the officer's assessment of race of the person stopped before
+      speaking with the person stopped
 
-``gender``
-   a factor with levels ``female``, ``male``, ``unknown``, gender of
-   person stopped
+   ``race``
+      a factor with levels ``white``, ``black``, ``east african``,
+      ``latino``, ``native american``, ``asian``, ``other``,
+      ``unknown``, officer's determination of race after the incident
 
-``lat``
-   latitude of the location of the incident, somewhat rounded
+   ``gender``
+      a factor with levels ``female``, ``male``, ``unknown``, gender of
+      person stopped
 
-``long``
-   latitude of the location of the incident, somewhat rounded
+   ``lat``
+      latitude of the location of the incident, somewhat rounded
 
-``policePrecinct``
-   Minneapolis Police Precinct number
+   ``long``
+      latitude of the location of the incident, somewhat rounded
 
-``neighborhood``
-   a factor with 84 levels giving the name of the Minneapolis
-   neighborhood of the incident
+   ``policePrecinct``
+      Minneapolis Police Precinct number
 
-``MDC``
-   a factor with levels ``mdc`` for data collected via in-vehicle
-   computer, and ``other`` for data submitted by officers not in a
-   vehicle, either on foot, bicycle or horseback. Several of the
-   variables above were recorded only in-vehicle
+   ``neighborhood``
+      a factor with 84 levels giving the name of the Minneapolis
+      neighborhood of the incident
 
-Details
-~~~~~~~
+   ``MDC``
+      a factor with levels ``mdc`` for data collected via in-vehicle
+      computer, and ``other`` for data submitted by officers not in a
+      vehicle, either on foot, bicycle or horseback. Several of the
+      variables above were recorded only in-vehicle
 
-A few stops have been deleted, either because thesu location data was
-missing, or a few very rare categories were also removed. The data frame
-``MplsDemo`` contains 2015 demongraphic data on Minneapolis
-neighborhoods, using the same neighborhood names as this data file.
-Demographics are available for 84 of Minneaolis' 87 neighborhoods. The
-remaining 3 presumably have no housing.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   A few stops have been deleted, either because thesu location data was
+   missing, or a few very rare categories were also removed. The data
+   frame ``MplsDemo`` contains 2015 demongraphic data on Minneapolis
+   neighborhoods, using the same neighborhood names as this data file.
+   Demographics are available for 84 of Minneaolis' 87 neighborhoods.
+   The remaining 3 presumably have no housing.
 
-These are public data obtained from
-<http://opendata.minneapolismn.gov/datasets/police-stop-data>. A few
-more fields, and more data, are available at the original source
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   These are public data obtained from
+   <http://opendata.minneapolismn.gov/datasets/police-stop-data>. A few
+   more fields, and more data, are available at the original source
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   summary(MplsStops)
+   ::
+
+      summary(MplsStops)

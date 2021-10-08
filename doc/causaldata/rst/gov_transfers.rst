@@ -1,61 +1,63 @@
-============= ===============
-gov_transfers R Documentation
-============= ===============
+.. container::
 
-Data from "Government Transfers and Political Support"
-------------------------------------------------------
+   ============= ===============
+   gov_transfers R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Data from "Government Transfers and Political Support"
+      :name: data-from-government-transfers-and-political-support
 
-The ``gov_transfers`` data contains data from Manacorda, Miguel, and
-Vigorito (2011) on government transfer program that was administered
-based on an income cutoff. Data is pre-limited to households that were
-just around the income cutoff.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``gov_transfers`` data contains data from Manacorda, Miguel, and
+   Vigorito (2011) on government transfer program that was administered
+   based on an income cutoff. Data is pre-limited to households that
+   were just around the income cutoff.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   gov_transfers
+   ::
 
-Format
-~~~~~~
+      gov_transfers
 
-A data frame with 1948 rows and 5 variables
+   .. rubric:: Format
+      :name: format
 
-Income_Centered
-   Income measure, centered around program cutoff (negative value =
-   eligible)
+   A data frame with 1948 rows and 5 variables
 
-Education
-   Household average years of education among those 16+
+   Income_Centered
+      Income measure, centered around program cutoff (negative value =
+      eligible)
 
-Age
-   Household average age
+   Education
+      Household average years of education among those 16+
 
-Participation
-   Participation in transfers
+   Age
+      Household average age
 
-Support
-   Measure of support for the government
+   Participation
+      Participation in transfers
 
-Details
-~~~~~~~
+   Support
+      Measure of support for the government
 
-This data is used in the *Regression Discontinuity* chapter of *The
-Effect*.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   This data is used in the *Regression Discontinuity* chapter of *The
+   Effect*.
 
-Manacorda, M., Miguel, E. and Vigorito, A., 2011. Government transfers
-and political support. *American Economic Journal: Applied Economics*,
-3(3), pp.1-28.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Manacorda, M., Miguel, E. and Vigorito, A., 2011. Government
+   transfers and political support. *American Economic Journal: Applied
+   Economics*, 3(3), pp.1-28.
 
-Huntington-Klein. 2021. The Effect: An Introduction to Research Design
-and Causality. https://theeffectbook.net.
+   .. rubric:: References
+      :name: references
+
+   Huntington-Klein. 2021. The Effect: An Introduction to Research
+   Design and Causality. https://theeffectbook.net.

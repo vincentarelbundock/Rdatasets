@@ -1,99 +1,101 @@
-======= ===============
-Hedonic R Documentation
-======= ===============
+.. container::
 
-Hedonic Prices of Census Tracts in the Boston Area
---------------------------------------------------
+   ======= ===============
+   Hedonic R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Hedonic Prices of Census Tracts in the Boston Area
+      :name: hedonic-prices-of-census-tracts-in-the-boston-area
 
-A cross-section
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   A cross-section
 
-A dataframe containing:
+   .. rubric:: Format
+      :name: format
 
-mv
-   median value of owner–occupied homes
+   A dataframe containing:
 
-crim
-   crime rate
+   mv
+      median value of owner–occupied homes
 
-zn
-   proportion of 25,000 square feet residential lots
+   crim
+      crime rate
 
-indus
-   proportion of no–retail business acres
+   zn
+      proportion of 25,000 square feet residential lots
 
-chas
-   is the tract bounds the Charles River?
+   indus
+      proportion of no–retail business acres
 
-nox
-   annual average nitrogen oxide concentration in parts per hundred
-   million
+   chas
+      is the tract bounds the Charles River?
 
-rm
-   average number of rooms
+   nox
+      annual average nitrogen oxide concentration in parts per hundred
+      million
 
-age
-   proportion of owner units built prior to 1940
+   rm
+      average number of rooms
 
-dis
-   weighted distances to five employment centers in the Boston area
+   age
+      proportion of owner units built prior to 1940
 
-rad
-   index of accessibility to radial highways
+   dis
+      weighted distances to five employment centers in the Boston area
 
-tax
-   full value property tax rate ($/$10,000)
+   rad
+      index of accessibility to radial highways
 
-ptratio
-   pupil/teacher ratio
+   tax
+      full value property tax rate ($/$10,000)
 
-blacks
-   proportion of blacks in the population
+   ptratio
+      pupil/teacher ratio
 
-lstat
-   proportion of population that is lower status
+   blacks
+      proportion of blacks in the population
 
-townid
-   town identifier
+   lstat
+      proportion of population that is lower status
 
-Details
-~~~~~~~
+   townid
+      town identifier
 
-*number of observations* : 506
+   .. rubric:: Details
+      :name: details
 
-*observation* : regional
+   *number of observations* : 506
 
-*country* : United States
+   *observation* : regional
 
-Source
-~~~~~~
+   *country* : United States
 
-Online complements to Baltagi (2001):
+   .. rubric:: Source
+      :name: source
 
-https://www.wiley.com/legacy/wileychi/baltagi/
+   Online complements to Baltagi (2001):
 
-Online complements to Baltagi (2013):
+   https://www.wiley.com/legacy/wileychi/baltagi/
 
-https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
+   Online complements to Baltagi (2013):
 
-References
-~~~~~~~~~~
+   https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
 
-Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
-John Wiley and Sons ltd.
+   .. rubric:: References
+      :name: references
 
-Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
-John Wiley and Sons ltd.
+   Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
+   John Wiley and Sons ltd.
 
-Besley DA, Kuh E, Welsch RE (1980). *Regression diagnostics: identifying
-influential data and sources of collinearity*. John Wiley and Sons ltd.
-Wiley series in probability and statistics.
+   Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
+   John Wiley and Sons ltd.
 
-Harrison D, Rubinfeld DL (1978). “Hedonic housing prices and the demand
-for clean air.” *Journal of Environmental Economics and Management*,
-**5**, 81–102.
+   Besley DA, Kuh E, Welsch RE (1980). *Regression diagnostics:
+   identifying influential data and sources of collinearity*. John Wiley
+   and Sons ltd. Wiley series in probability and statistics.
+
+   Harrison D, Rubinfeld DL (1978). “Hedonic housing prices and the
+   demand for clean air.” *Journal of Environmental Economics and
+   Management*, **5**, 81-102.

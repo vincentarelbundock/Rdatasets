@@ -1,60 +1,62 @@
-==== ===============
-Capm R Documentation
-==== ===============
+.. container::
 
-Stock Market Data
------------------
+   ==== ===============
+   Capm R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Stock Market Data
+      :name: stock-market-data
 
-monthly observations from 1960–01 to 2002–12
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 516
+   monthly observations from 1960–01 to 2002–12
 
-Usage
-~~~~~
+   *number of observations* : 516
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Capm)
+   ::
 
-Format
-~~~~~~
+      data(Capm)
 
-A time series containing :
+   .. rubric:: Format
+      :name: format
 
-rfood
-   excess returns food industry
+   A time series containing :
 
-rdur
-   excess returns durables industry
+   rfood
+      excess returns food industry
 
-rcon
-   excess returns construction industry
+   rdur
+      excess returns durables industry
 
-rmrf
-   excess returns market portfolio
+   rcon
+      excess returns construction industry
 
-rf
-   risk-free return
+   rmrf
+      excess returns market portfolio
 
-Source
-~~~~~~
+   rf
+      risk-free return
 
-most of the above data are from Kenneth French's data library at
-http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   most of the above data are from Kenneth French's data library at
+   http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html.
 
-Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley and
-Sons, chapter 2.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+   and Sons, chapter 2.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``,
+   .. rubric:: See Also
+      :name: see-also
 
-``Index.Time.Series``
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``,
+
+   ``Index.Time.Series``

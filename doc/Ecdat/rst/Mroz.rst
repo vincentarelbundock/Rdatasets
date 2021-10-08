@@ -1,131 +1,134 @@
-==== ===============
-Mroz R Documentation
-==== ===============
+.. container::
 
-Labor Supply Data
------------------
+   ==== ===============
+   Mroz R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Labor Supply Data
+      :name: labor-supply-data
 
-a cross-section
+   .. rubric:: Description
+      :name: description
 
-*number of observations* : 753
+   a cross-section
 
-*observation* : individuals
+   *number of observations* : 753
 
-*country* : United States
+   *observation* : individuals
 
-Usage
-~~~~~
+   *country* : United States
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Mroz)
+   ::
 
-Format
-~~~~~~
+      data(Mroz)
 
-A dataframe containing :
+   .. rubric:: Format
+      :name: format
 
-work
-   work at home in 1975? (Same ``carData::Mroz[['lfp']]`` = labor force
-   participation.)
+   A dataframe containing :
 
-hoursw
-   wife's hours of work in 1975
+   work
+      work at home in 1975? (Same ``carData::Mroz[['lfp']]`` = labor
+      force participation.)
 
-child6
-   number of children less than 6 years old in household (Same as
-   ``carData::Mroz['k5']``.)
+   hoursw
+      wife's hours of work in 1975
 
-child618
-   number of children between ages 6 and 18 in household (Same as
-   ``carData::Mroz['k618']``)
+   child6
+      number of children less than 6 years old in household (Same as
+      ``carData::Mroz['k5']``.)
 
-agew
-   wife's age
+   child618
+      number of children between ages 6 and 18 in household (Same as
+      ``carData::Mroz['k618']``)
 
-educw
-   wife's educational attainment, in years
+   agew
+      wife's age
 
-hearnw
-   wife's average hourly earnings, in 1975 dollars
+   educw
+      wife's educational attainment, in years
 
-wagew
-   wife's wage reported at the time of the 1976 interview (not= 1975
-   estimated wage)
+   hearnw
+      wife's average hourly earnings, in 1975 dollars
 
-hoursh
-   husband's hours worked in 1975
+   wagew
+      wife's wage reported at the time of the 1976 interview (not= 1975
+      estimated wage)
 
-ageh
-   husband's age
+   hoursh
+      husband's hours worked in 1975
 
-educh
-   husband's educational attainment, in years
+   ageh
+      husband's age
 
-wageh
-   husband's wage, in 1975 dollars
+   educh
+      husband's educational attainment, in years
 
-income
-   family income, in 1975 dollars
+   wageh
+      husband's wage, in 1975 dollars
 
-educwm
-   wife's mother's educational attainment, in years
+   income
+      family income, in 1975 dollars
 
-educwf
-   wife's father's educational attainment, in years
+   educwm
+      wife's mother's educational attainment, in years
 
-unemprate
-   unemployment rate in county of residence, in percentage points
+   educwf
+      wife's father's educational attainment, in years
 
-city
-   lives in large city (SMSA) ?
+   unemprate
+      unemployment rate in county of residence, in percentage points
 
-experience
-   actual years of wife's previous labor market experience
+   city
+      lives in large city (SMSA) ?
 
-Details
-~~~~~~~
+   experience
+      actual years of wife's previous labor market experience
 
-These data seem to have come from the same source as ``carData::Mroz``,
-though each data set has variables not in the other. The variables that
-are shared have different names.
+   .. rubric:: Details
+      :name: details
 
-On 2019-11-04 Bruno Rodrigues explained that ``Ecdat::Mroz['work']`` had
-the two labels incorrectly swapped, and ``wooldridge::mroz['inlf']`` was
-correct; ``wooldridge`` matches ``carData::Mroz['lfp']``.
+   These data seem to have come from the same source as
+   ``carData::Mroz``, though each data set has variables not in the
+   other. The variables that are shared have different names.
 
-Source
-~~~~~~
+   On 2019-11-04 Bruno Rodrigues explained that ``Ecdat::Mroz['work']``
+   had the two labels incorrectly swapped, and
+   ``wooldridge::mroz['inlf']`` was correct; ``wooldridge`` matches
+   ``carData::Mroz['lfp']``.
 
-Mroz, T. (1987) “The sensitivity of an empirical model of married
-women's hours of work to economic and statistical assumptions”,
-*Econometrica*, **55**, 765-799.
+   .. rubric:: Source
+      :name: source
 
-1976 Panel Study of Income Dynamics.
+   Mroz, T. (1987) “The sensitivity of an empirical model of married
+   women's hours of work to economic and statistical assumptions”,
+   *Econometrica*, **55**, 765-799.
 
-References
-~~~~~~~~~~
+   1976 Panel Study of Income Dynamics.
 
-Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-http://www.prenhall.com/greene/greene1.html, Table F4.1.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+   http://www.prenhall.com/greene/greene1.html, Table F4.1.
 
-``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-``Index.Observations``, ``Mroz`` ``mroz``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+   ``Index.Observations``, ``Mroz`` ``mroz``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   head(Mroz)
+   ::
 
-   #If 'car' and / or 'carData' is also in the path, 
-   # then use the following to be clear that 
-   # you want this version: 
-   head(Ecdat::Mroz)
+      head(Mroz)
+
+      #If 'car' and / or 'carData' is also in the path, 
+      # then use the following to be clear that 
+      # you want this version: 
+      head(Ecdat::Mroz)

@@ -1,31 +1,33 @@
-======== ===============
-euretail R Documentation
-======== ===============
+.. container::
 
-Quarterly retail trade: Euro area.
-----------------------------------
+   ======== ===============
+   euretail R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Quarterly retail trade: Euro area.
+      :name: quarterly-retail-trade-euro-area.
 
-Quarterly retail trade index in the Euro area (17 countries), 1996-2011,
-covering wholesale and retail trade, and repair of motor vehicles and
-motorcycles. (Index: 2005 = 100).
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Quarterly retail trade index in the Euro area (17 countries),
+   1996-2011, covering wholesale and retail trade, and repair of motor
+   vehicles and motorcycles. (Index: 2005 = 100).
 
-Quarterly time series of class ``ts``.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   Quarterly time series of class ``ts``.
 
-Eurostat.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Eurostat.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   autoplot(euretail)
+      autoplot(euretail)

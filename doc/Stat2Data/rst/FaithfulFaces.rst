@@ -1,58 +1,61 @@
-============= ===============
-FaithfulFaces R Documentation
-============= ===============
+.. container::
 
-Faithfulness from a Photo?
---------------------------
+   ============= ===============
+   FaithfulFaces R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Faithfulness from a Photo?
+      :name: faithfulness-from-a-photo
 
-Ratings from a facial photo and actual faithfulness.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Ratings from a facial photo and actual faithfulness.
 
-A data frame with 170 observations on the following 7 variables.
+   .. rubric:: Format
+      :name: format
 
-``SexDimorph``
-   Rating of sexual dimorphism (masculinity for males, femininity for
-   females)
+   A data frame with 170 observations on the following 7 variables.
 
-``Attract``
-   Rating of attractiveness
+   ``SexDimorph``
+      Rating of sexual dimorphism (masculinity for males, femininity for
+      females)
 
-``Cheater``
-   Was the face subject unfaithful to a partner? (``1``\ =yes or
-   ``0``\ =no)
+   ``Attract``
+      Rating of attractiveness
 
-``Trust``
-   Rating of trustworthiness
+   ``Cheater``
+      Was the face subject unfaithful to a partner? (``1``\ =yes or
+      ``0``\ =no)
 
-``Faithful``
-   Rating of faithfulness
+   ``Trust``
+      Rating of trustworthiness
 
-``FaceSex``
-   Sex of face (``F``\ =female or ``M``\ =male)
+   ``Faithful``
+      Rating of faithfulness
 
-``RaterSex``
-   Sex of rater (``F``\ =female or ``M``\ =male)
+   ``FaceSex``
+      Sex of face (``F``\ =female or ``M``\ =male)
 
-Details
-~~~~~~~
+   ``RaterSex``
+      Sex of rater (``F``\ =female or ``M``\ =male)
 
-College students were asked to look at a photograph of an opposite-sex
-adult face and to rate the person, on a scale from 1 (low) to 10 (high),
-for attractiveness. They were also asked to rate trustworthiness,
-faithfulness, and sexual dimorphism (i.e., how masculine a male face is
-and how feminine a female face is). Overall, 68 students (34 males and
-34 females) rated 170 faces (88 men and 82 women).
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   College students were asked to look at a photograph of an
+   opposite-sex adult face and to rate the person, on a scale from 1
+   (low) to 10 (high), for attractiveness. They were also asked to rate
+   trustworthiness, faithfulness, and sexual dimorphism (i.e., how
+   masculine a male face is and how feminine a female face is). Overall,
+   68 students (34 males and 34 females) rated 170 faces (88 men and 82
+   women).
 
-This dataset is based on G. Rhodes et al. (2012), "Women can judge
-sexual unfaithfulness from unfamiliar men's faces," Biology Letters,
-November 2012. All of the 68 raters were heterosexual Caucasians, as
-were the 170 persons who were rated. (We have deleted 3 subjects with
-missing values and 16 subjects who were over age 35.)
+   .. rubric:: Source
+      :name: source
+
+   This dataset is based on G. Rhodes et al. (2012), "Women can judge
+   sexual unfaithfulness from unfamiliar men's faces," Biology Letters,
+   November 2012. All of the 68 raters were heterosexual Caucasians, as
+   were the 170 persons who were rated. (We have deleted 3 subjects with
+   missing values and 16 subjects who were over age 35.)

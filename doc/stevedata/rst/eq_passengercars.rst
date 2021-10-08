@@ -1,50 +1,52 @@
-================ ===============
-eq_passengercars R Documentation
-================ ===============
+.. container::
 
-Export Quality Data for Passenger Cars, 1963-2014
--------------------------------------------------
+   ================ ===============
+   eq_passengercars R Documentation
+   ================ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Export Quality Data for Passenger Cars, 1963-2014
+      :name: export-quality-data-for-passenger-cars-1963-2014
 
-Data from the International Monetary Fund for the export quality and
-unit/trade value of passenger cars for all available countries and years
-from 1963 to 2014.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Data from the International Monetary Fund for the export quality and
+   unit/trade value of passenger cars for all available countries and
+   years from 1963 to 2014.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   eq_passengercars
+   ::
 
-Format
-~~~~~~
+      eq_passengercars
 
-A data frame with 60424 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``country``
-   a character vector for the country/area.
+   A data frame with 60424 observations on the following 6 variables.
 
-``ccode``
-   a numeric vector for the Correlates of War country code.
+   ``country``
+      a character vector for the country/area.
 
-``category``
-   a factor with levels ``Export Quality Index``,
-   ``Export quality 95 percent interval - lower bound``,
-   ``Export quality 95 percent interval - upper bound``
-   ``Unit value of exports``,
-   ``Unit value 95 percent interval - lower bound``,
-   ``Unit value 95 percent interval - upper bound``,
-   ``Trade value of exports``
+   ``ccode``
+      a numeric vector for the Correlates of War country code.
 
-``type``
-   a factor with levels ``51. Transport equipment, Passenger cars``.
-   This is a constant. I just felt like making it a factor.
+   ``category``
+      a factor with levels ``Export Quality Index``,
+      ``Export quality 95 percent interval - lower bound``,
+      ``Export quality 95 percent interval - upper bound``
+      ``Unit value of exports``,
+      ``Unit value 95 percent interval - lower bound``,
+      ``Unit value 95 percent interval - upper bound``,
+      ``Trade value of exports``
 
-``year``
-   a numeric vector for the year
+   ``type``
+      a factor with levels ``51. Transport equipment, Passenger cars``.
+      This is a constant. I just felt like making it a factor.
 
-``value``
-   a numeric vector for the value of the particular category.
+   ``year``
+      a numeric vector for the year
+
+   ``value``
+      a numeric vector for the value of the particular category.

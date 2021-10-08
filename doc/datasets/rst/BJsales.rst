@@ -1,35 +1,38 @@
-======= ===============
-BJsales R Documentation
-======= ===============
+.. container::
 
-Sales Data with Leading Indicator
----------------------------------
+   ======= ===============
+   BJsales R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Sales Data with Leading Indicator
+      :name: sales-data-with-leading-indicator
 
-The sales time series ``BJsales`` and leading indicator ``BJsales.lead``
-each contain 150 observations. The objects are of class ``"ts"``.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The sales time series ``BJsales`` and leading indicator
+   ``BJsales.lead`` each contain 150 observations. The objects are of
+   class ``"ts"``.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   BJsales
-   BJsales.lead
+   ::
 
-Source
-~~~~~~
+      BJsales
+      BJsales.lead
 
-The data are given in Box & Jenkins (1976). Obtained from the Time
-Series Data Library at https://robjhyndman.com/TSDL/
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   The data are given in Box & Jenkins (1976). Obtained from the Time
+   Series Data Library at https://robjhyndman.com/TSDL/
 
-G. E. P. Box and G. M. Jenkins (1976): *Time Series Analysis,
-Forecasting and Control*, Holden-Day, San Francisco, p. 537.
+   .. rubric:: References
+      :name: references
 
-P. J. Brockwell and R. A. Davis (1991): *Time Series: Theory and
-Methods*, Second edition, Springer Verlag, NY, pp. 414.
+   G. E. P. Box and G. M. Jenkins (1976): *Time Series Analysis,
+   Forecasting and Control*, Holden-Day, San Francisco, p. 537.
+
+   P. J. Brockwell and R. A. Davis (1991): *Time Series: Theory and
+   Methods*, Second edition, Springer Verlag, NY, pp. 414.

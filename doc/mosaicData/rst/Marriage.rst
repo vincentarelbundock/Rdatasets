@@ -1,87 +1,89 @@
-======== ===============
-Marriage R Documentation
-======== ===============
+.. container::
 
-Marriage records
-----------------
+   ======== ===============
+   Marriage R Documentation
+   ======== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Marriage records
+      :name: marriage-records
 
-Marriage records from the Mobile County, Alabama, probate court.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Marriage records from the Mobile County, Alabama, probate court.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Marriage)
+   ::
 
-Format
-~~~~~~
+      data(Marriage)
 
-A data frame with 98 observations on the following variables.
+   .. rubric:: Format
+      :name: format
 
--  ``bookpageID`` a factor with levels for each book and page (unique
-   identifier)
+   A data frame with 98 observations on the following variables.
 
--  ``appdate`` date on which the application was filed
+   -  ``bookpageID`` a factor with levels for each book and page (unique
+      identifier)
 
--  ``ceremonydate`` date of the ceremony
+   -  ``appdate`` date on which the application was filed
 
--  ``delay`` number of days between the application and the ceremony
+   -  ``ceremonydate`` date of the ceremony
 
--  ``officialTitle`` a factor with levels ``BISHOP`` ``CATHOLIC PRIEST``
-   ``CHIEF CLERK`` ``CIRCUIT JUDGE`` ``ELDER`` ``MARRIAGE OFFICIAL``
-   ``MINISTER`` ``PASTOR`` ``REVEREND``
+   -  ``delay`` number of days between the application and the ceremony
 
--  ``person`` a factor with levels ``Bride`` ``Groom``
+   -  ``officialTitle`` a factor with levels ``BISHOP``
+      ``CATHOLIC PRIEST`` ``CHIEF CLERK`` ``CIRCUIT JUDGE`` ``ELDER``
+      ``MARRIAGE OFFICIAL`` ``MINISTER`` ``PASTOR`` ``REVEREND``
 
--  ``dob`` a factor with levels corresponding to the date of birth of
-   the person
+   -  ``person`` a factor with levels ``Bride`` ``Groom``
 
--  ``age`` age of the person (in years)
+   -  ``dob`` a factor with levels corresponding to the date of birth of
+      the person
 
--  ``race`` a factor with levels ``American Indian`` ``Black``
-   ``Hispanic`` ``White``
+   -  ``age`` age of the person (in years)
 
--  ``prevcount`` the number of previous marriages of the person, as
-   listed on the application
+   -  ``race`` a factor with levels ``American Indian`` ``Black``
+      ``Hispanic`` ``White``
 
--  ``prevconc`` the way the last marriage ended, as listed on the
-   application
+   -  ``prevcount`` the number of previous marriages of the person, as
+      listed on the application
 
--  ``hs`` the number of years of high school education, as listed on the
-   application
+   -  ``prevconc`` the way the last marriage ended, as listed on the
+      application
 
--  ``college`` the number of years College education, as listed on the
-   application. Where no number was listed, this field was left blank,
-   unless less than 12 years High School was reported, in which case it
-   was entered as 0.
+   -  ``hs`` the number of years of high school education, as listed on
+      the application
 
--  ``dayOfBirth`` the day of birth, as a number from 1 to 365 counting
-   from January 1
+   -  ``college`` the number of years College education, as listed on
+      the application. Where no number was listed, this field was left
+      blank, unless less than 12 years High School was reported, in
+      which case it was entered as 0.
 
--  ``sign`` the astrological sign, with levels ``Aquarius`` ``Aries``
-   ``Cancer`` ``Capricorn`` ``Gemini`` ``Leo`` ``Libra`` ``Pisces``
-   ``Sagittarius`` ``Scorpio`` ``Taurus`` ``Virgo``
+   -  ``dayOfBirth`` the day of birth, as a number from 1 to 365
+      counting from January 1
 
-Details
-~~~~~~~
+   -  ``sign`` the astrological sign, with levels ``Aquarius`` ``Aries``
+      ``Cancer`` ``Capricorn`` ``Gemini`` ``Leo`` ``Libra`` ``Pisces``
+      ``Sagittarius`` ``Scorpio`` ``Taurus`` ``Virgo``
 
-The calculation of the astrological sign may not correctly sort people
-directly on the borders between signs. This variable is not part of the
-original record.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The calculation of the astrological sign may not correctly sort
+   people directly on the borders between signs. This variable is not
+   part of the original record.
 
-The records were collected through
-http://www.mobilecounty.org/probatecourt/recordssearch.htm
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   The records were collected through
+   http://www.mobilecounty.org/probatecourt/recordssearch.htm
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(Marriage)
+   ::
+
+      data(Marriage)

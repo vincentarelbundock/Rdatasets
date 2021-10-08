@@ -1,62 +1,64 @@
-========= ===============
-prius_mpg R Documentation
-========= ===============
+.. container::
 
-User reported fuel efficiency for 2017 Toyota Prius Prime
----------------------------------------------------------
+   ========= ===============
+   prius_mpg R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: User reported fuel efficiency for 2017 Toyota Prius Prime
+      :name: user-reported-fuel-efficiency-for-2017-toyota-prius-prime
 
-Fueleconomy.gov, the official US government source for fuel economy
-information, allows users to share gas mileage information on their
-vehicles. These data come from 19 users sharing gas mileage on their
-2017 Toyota Prius Prime. Note that these data are user estimates and
-since the sources data cannot be verified, the accuracy of these
-estimates are not guaranteed.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Fueleconomy.gov, the official US government source for fuel economy
+   information, allows users to share gas mileage information on their
+   vehicles. These data come from 19 users sharing gas mileage on their
+   2017 Toyota Prius Prime. Note that these data are user estimates and
+   since the sources data cannot be verified, the accuracy of these
+   estimates are not guaranteed.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   prius_mpg
+   ::
 
-Format
-~~~~~~
+      prius_mpg
 
-A data frame with 19 observations on the following 10 variables.
+   .. rubric:: Format
+      :name: format
 
-average_mpg
-   Average mileage as estimated by the user.
+   A data frame with 19 observations on the following 10 variables.
 
-state
-   US State the user lives in.
+   average_mpg
+      Average mileage as estimated by the user.
 
-stop_and_go
-   Proportion of stop and go driving.
+   state
+      US State the user lives in.
 
-highway
-   Proportion of highway driving.
+   stop_and_go
+      Proportion of stop and go driving.
 
-last_updated
-   Date estimate was last updated.
+   highway
+      Proportion of highway driving.
 
-Source
-~~~~~~
+   last_updated
+      Date estimate was last updated.
 
-Fueleconomy.gov,
-https://www.fueleconomy.gov/mpg/MPG.do?action=mpgData&vehicleID=38531&browser=true&details=on,
-retrieved 2019-04-14.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Fueleconomy.gov,
+   https://www.fueleconomy.gov/mpg/MPG.do?action=mpgData&vehicleID=38531&browser=true&details=on,
+   retrieved 2019-04-14.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   library(ggplot2)
-   library(dplyr)
+      library(ggplot2)
+      library(dplyr)
 
-   ggplot(prius_mpg, aes(x = average_mpg)) +
-     geom_histogram(binwidth = 25)
+      ggplot(prius_mpg, aes(x = average_mpg)) +
+        geom_histogram(binwidth = 25)

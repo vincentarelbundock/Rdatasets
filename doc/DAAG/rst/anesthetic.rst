@@ -1,74 +1,77 @@
-========== ===============
-anesthetic R Documentation
-========== ===============
+.. container::
 
-Anesthetic Effectiveness
-------------------------
+   ========== ===============
+   anesthetic R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Anesthetic Effectiveness
+      :name: anesthetic-effectiveness
 
-Thirty patients were given an anesthetic agent maintained at a
-predetermined level (conc) for 15 minutes before making an incision. It
-was then noted whether the patient moved, i.e. jerked or twisted.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Thirty patients were given an anesthetic agent maintained at a
+   predetermined level (conc) for 15 minutes before making an incision.
+   It was then noted whether the patient moved, i.e. jerked or twisted.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   anesthetic
+   ::
 
-Format
-~~~~~~
+      anesthetic
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-move
-   a binary numeric vector coded for patient movement (0 = no movement,
-   1 = movement)
+   This data frame contains the following columns:
 
-conc
-   anesthetic concentration
+   move
+      a binary numeric vector coded for patient movement (0 = no
+      movement, 1 = movement)
 
-logconc
-   logarithm of concentration
+   conc
+      anesthetic concentration
 
-nomove
-   the complement of move
+   logconc
+      logarithm of concentration
 
-Details
-~~~~~~~
+   nomove
+      the complement of move
 
-The interest is in estimating how the probability of jerking or twisting
-varies with increasing concentration of the anesthetic agent.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The interest is in estimating how the probability of jerking or
+   twisting varies with increasing concentration of the anesthetic
+   agent.
 
-unknown
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   unknown
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   print("Logistic Regression - Example 8.1.4")
+   ::
 
-   z <- table(anesthetic$nomove, anesthetic$conc)
-   tot <- apply(z, 2, sum)         # totals at each concentration
-   prop <- z[2,  ]/(tot)           # proportions at each concentration
-   oprop <- sum(z[2,  ])/sum(tot)  # expected proportion moving if concentration had no effect
-   conc <- as.numeric(dimnames(z)[[2]])
-   plot(conc, prop, xlab = "Concentration", ylab = "Proportion", xlim = c(.5,2.5),
-       ylim = c(0, 1), pch = 16)
-   chw <- par()$cxy[1]
-   text(conc - 0.75 * chw, prop, paste(tot), adj = 1)
-   abline(h = oprop, lty = 2)
+      print("Logistic Regression - Example 8.1.4")
 
-   pause()
+      z <- table(anesthetic$nomove, anesthetic$conc)
+      tot <- apply(z, 2, sum)         # totals at each concentration
+      prop <- z[2,  ]/(tot)           # proportions at each concentration
+      oprop <- sum(z[2,  ])/sum(tot)  # expected proportion moving if concentration had no effect
+      conc <- as.numeric(dimnames(z)[[2]])
+      plot(conc, prop, xlab = "Concentration", ylab = "Proportion", xlim = c(.5,2.5),
+          ylim = c(0, 1), pch = 16)
+      chw <- par()$cxy[1]
+      text(conc - 0.75 * chw, prop, paste(tot), adj = 1)
+      abline(h = oprop, lty = 2)
 
-   anes.logit <- glm(nomove ~ conc, family = binomial(link = logit),
-     data = anesthetic)
-   anova(anes.logit)
-   summary(anes.logit)
+      pause()
+
+      anes.logit <- glm(nomove ~ conc, family = binomial(link = logit),
+        data = anesthetic)
+      anova(anes.logit)
+      summary(anes.logit)

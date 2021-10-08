@@ -1,37 +1,39 @@
-====== ===============
-Blood1 R Documentation
-====== ===============
+.. container::
 
-Blood Pressure, Weight, and Smoking Status
-------------------------------------------
+   ====== ===============
+   Blood1 R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Blood Pressure, Weight, and Smoking Status
+      :name: blood-pressure-weight-and-smoking-status
 
-Systolic blood pressure, weight and smoking status for a sample of 500
-adults
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Systolic blood pressure, weight and smoking status for a sample of
+   500 adults
 
-A data frame with 500 observations on the following 3 variables.
+   .. rubric:: Format
+      :name: format
 
-============== ====================================================
-``SystolicBP`` Systolic blood pressure (mm of Hg)
-``Smoke``      ``Y``\ =smoker or ``N``\ =non-smoker
-``Overwt``     ``1``\ =normal, ``2``\ =overweight, or ``3``\ =obese
-\              
-============== ====================================================
+   A data frame with 500 observations on the following 3 variables.
 
-Details
-~~~~~~~
+   ============== ====================================================
+   ``SystolicBP`` Systolic blood pressure (mm of Hg)
+   ``Smoke``      ``Y``\ =smoker or ``N``\ =non-smoker
+   ``Overwt``     ``1``\ =normal, ``2``\ =overweight, or ``3``\ =obese
+   \              
+   ============== ====================================================
 
-Data on systolic blood pressure, along with smoker status and weight
-status, for a sample of 500 adults.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Data on systolic blood pressure, along with smoker status and weight
+   status, for a sample of 500 adults.
 
-| Data are part of a larger case study for the 2003 Annual Meeting of
-  the Statistical Society of Canada.
-| http://www.ssc.ca/en/education/archived-case-studies/case-studies-for-the-2003-annual-meeting-blood-pressure.
+   .. rubric:: Source
+      :name: source
+
+   | Data are part of a larger case study for the 2003 Annual Meeting of
+     the Statistical Society of Canada.
+   | http://www.ssc.ca/en/education/archived-case-studies/case-studies-for-the-2003-annual-meeting-blood-pressure.

@@ -1,67 +1,69 @@
-========= ===============
-phosphate R Documentation
-========= ===============
+.. container::
 
-Phosphate Level Data
---------------------
+   ========= ===============
+   phosphate R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Phosphate Level Data
+      :name: phosphate-level-data
 
-Plasma inorganic phosphate levels from 33 subjects.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Plasma inorganic phosphate levels from 33 subjects.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("phosphate")
+   ::
 
-Format
-~~~~~~
+      data("phosphate")
 
-A data frame with 33 observations on the following 9 variables.
+   .. rubric:: Format
+      :name: format
 
-``group``
-   a factor with levels ``control`` and ``obese``.
+   A data frame with 33 observations on the following 9 variables.
 
-``t0``
-   baseline phosphate level
+   ``group``
+      a factor with levels ``control`` and ``obese``.
 
-,
+   ``t0``
+      baseline phosphate level
 
-``t0.5``
-   phosphate level after 1/2 an hour.
+   ,
 
-``t1``
-   phosphate level after one an hour.
+   ``t0.5``
+      phosphate level after 1/2 an hour.
 
-``t1.5``
-   phosphate level after 1 1/2 hours.
+   ``t1``
+      phosphate level after one an hour.
 
-``t2``
-   phosphate level after two hours.
+   ``t1.5``
+      phosphate level after 1 1/2 hours.
 
-``t3``
-   phosphate level after three hours.
+   ``t2``
+      phosphate level after two hours.
 
-``t4``
-   phosphate level after four hours.
+   ``t3``
+      phosphate level after three hours.
 
-``t5``
-   phosphate level after five hours.
+   ``t4``
+      phosphate level after four hours.
 
-Source
-~~~~~~
+   ``t5``
+      phosphate level after five hours.
 
-C. S. Davis (2002), *Statistical Methods for the Analysis of Repeated
-Measurements*, Springer, New York.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   C. S. Davis (2002), *Statistical Methods for the Analysis of Repeated
+   Measurements*, Springer, New York.
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-     data("phosphate", package = "HSAUR")
-     plot(t0 ~ group, data = phosphate)
+        data("phosphate", package = "HSAUR")
+        plot(t0 ~ group, data = phosphate)

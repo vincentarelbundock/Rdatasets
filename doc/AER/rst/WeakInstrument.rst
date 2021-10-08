@@ -1,57 +1,59 @@
-============== ===============
-WeakInstrument R Documentation
-============== ===============
+.. container::
 
-Artificial Weak Instrument Data
--------------------------------
+   ============== ===============
+   WeakInstrument R Documentation
+   ============== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Artificial Weak Instrument Data
+      :name: artificial-weak-instrument-data
 
-Artificial data set to illustrate the problem of weak instruments.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Artificial data set to illustrate the problem of weak instruments.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("WeakInstrument")
+   ::
 
-Format
-~~~~~~
+      data("WeakInstrument")
 
-A data frame containing 200 observations on 3 variables.
+   .. rubric:: Format
+      :name: format
 
-y
-   dependent variable.
+   A data frame containing 200 observations on 3 variables.
 
-x
-   regressor variable.
+   y
+      dependent variable.
 
-z
-   instrument variable.
+   x
+      regressor variable.
 
-Source
-~~~~~~
+   z
+      instrument variable.
 
-Online complements to Stock and Watson (2007).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Online complements to Stock and Watson (2007).
 
-Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*, 2nd
-ed. Boston: Addison Wesley.
+   .. rubric:: References
+      :name: references
 
-See Also
-~~~~~~~~
+   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
+   2nd ed. Boston: Addison Wesley.
 
-``StockWatson2007``
+   .. rubric:: See Also
+      :name: see-also
 
-Examples
-~~~~~~~~
+   ``StockWatson2007``
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data("WeakInstrument")
-   fm <- ivreg(y ~ x | z, data = WeakInstrument)
-   summary(fm)
+   ::
+
+      data("WeakInstrument")
+      fm <- ivreg(y ~ x | z, data = WeakInstrument)
+      summary(fm)

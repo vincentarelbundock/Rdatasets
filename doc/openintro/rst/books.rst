@@ -1,37 +1,39 @@
-===== ===============
-books R Documentation
-===== ===============
+.. container::
 
-Sample of books on a shelf
---------------------------
+   ===== ===============
+   books R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Sample of books on a shelf
+      :name: sample-of-books-on-a-shelf
 
-Simulated data set.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Simulated data set.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   books
+   ::
 
-Format
-~~~~~~
+      books
 
-A data frame with 95 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-type
-   a factor with levels ``fiction`` and ``nonfiction``
+   A data frame with 95 observations on the following 2 variables.
 
-format
-   a factor with levels ``hardcover`` and ``paperback``
+   type
+      a factor with levels ``fiction`` and ``nonfiction``
 
-Examples
-~~~~~~~~
+   format
+      a factor with levels ``hardcover`` and ``paperback``
 
-::
+   .. rubric:: Examples
+      :name: examples
+
+   ::
 
 
-   table(books)
+      table(books)

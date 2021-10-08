@@ -1,55 +1,56 @@
-========= ===============
-Portfolio R Documentation
-========= ===============
+.. container::
 
-Portfolio Data
---------------
+   ========= ===============
+   Portfolio R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Portfolio Data
+      :name: portfolio-data
 
-A simple simulated data set containing 100 returns for each of two
-assets, X and Y. The data is used to estimate the optimal fraction to
-invest in each asset to minimize investment risk of the combined
-portfolio. One can then use the Bootstrap to estimate the standard error
-of this estimate.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   A simple simulated data set containing 100 returns for each of two
+   assets, X and Y. The data is used to estimate the optimal fraction to
+   invest in each asset to minimize investment risk of the combined
+   portfolio. One can then use the Bootstrap to estimate the standard
+   error of this estimate.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   Portfolio
+   ::
 
-Format
-~~~~~~
+      Portfolio
 
-A data frame with 100 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-``X``
-   Returns for Asset X
+   A data frame with 100 observations on the following 2 variables.
 
-``Y``
-   Returns for Asset Y
+   ``X``
+      Returns for Asset X
 
-Source
-~~~~~~
+   ``Y``
+      Returns for Asset Y
 
-Simulated data
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Simulated data
 
-James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
-Introduction to Statistical Learning with applications in R*,
-`www.StatLearning.com <www.StatLearning.com>`__, Springer-Verlag, New
-York
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
+   Introduction to Statistical Learning with applications in R*,
+   https://www.statlearning.com, Springer-Verlag, New York
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   summary(Portfolio)
-   attach(Portfolio)
-   plot(X,Y)
+   ::
+
+      summary(Portfolio)
+      attach(Portfolio)
+      plot(X,Y)

@@ -1,43 +1,47 @@
-======= ===============
-Amyloid R Documentation
-======= ===============
+.. container::
 
-Amyloid-beta and Cognitive Impairment
--------------------------------------
+   ======= ===============
+   Amyloid R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Amyloid-beta and Cognitive Impairment
+      :name: amyloid-beta-and-cognitive-impairment
 
-Amyloid-beta and cognitive impairment for a sample of Catholic priests
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   Amyloid-beta and cognitive impairment for a sample of Catholic
+   priests
 
-A data frame with 57 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
-``Group``
-   ``mAD``\ =Alzheimer's, ``MCI``\ =mild impairment, ``NCI``\ =no
-   impairment
+   A data frame with 57 observations on the following 2 variables.
 
-``Abeta``
-   Amount of Abeta from the posterior cingulate cortex (pmol/g tissue)
+   ``Group``
+      ``mAD``\ =Alzheimer's, ``MCI``\ =mild impairment, ``NCI``\ =no
+      impairment
 
-Details
-~~~~~~~
+   ``Abeta``
+      Amount of Abeta from the posterior cingulate cortex (pmol/g
+      tissue)
 
-Amyloid-beta (Abeta) is a protein fragment that has been linked to
-Alzheimer's disease. Autopsies from a sample of Catholic priests
-included measurements of Abeta (pmol/g tissue from the posterior
-cingulate cortex) from three groups: subjects who had exhibited no
-cognitive impairment before death, subjects who had exhibited mild
-cognitive impairment, and subjects who had mild to moderate Alzheimer's
-disease.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   Amyloid-beta (Abeta) is a protein fragment that has been linked to
+   Alzheimer's disease. Autopsies from a sample of Catholic priests
+   included measurements of Abeta (pmol/g tissue from the posterior
+   cingulate cortex) from three groups: subjects who had exhibited no
+   cognitive impairment before death, subjects who had exhibited mild
+   cognitive impairment, and subjects who had mild to moderate
+   Alzheimer's disease.
 
-Violetta N. Pivtoraiko, Eric E. Abrahamson, Sue E. Leurgans, Steven T.
-DeKosky, Elliott J. Mufson,, Milos D. Ikonomovic (2015) Cortical
-pyroglutamate amyloid-beta levels and cognitive decline in Alzheimer's
-disease. Neurobiology of Aging (36) 12-19. Data are read from Figure 1,
-panel d.
+   .. rubric:: Source
+      :name: source
+
+   Violetta N. Pivtoraiko, Eric E. Abrahamson, Sue E. Leurgans, Steven
+   T. DeKosky, Elliott J. Mufson,, Milos D. Ikonomovic (2015) Cortical
+   pyroglutamate amyloid-beta levels and cognitive decline in
+   Alzheimer's disease. Neurobiology of Aging (36) 12-19. Data are read
+   from Figure 1, panel d.

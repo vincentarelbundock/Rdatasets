@@ -1,64 +1,67 @@
-============= ===============
-AirPassengers R Documentation
-============= ===============
+.. container::
 
-Monthly Airline Passenger Numbers 1949-1960
--------------------------------------------
+   ============= ===============
+   AirPassengers R Documentation
+   ============= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Monthly Airline Passenger Numbers 1949-1960
+      :name: monthly-airline-passenger-numbers-1949-1960
 
-The classic Box & Jenkins airline data. Monthly totals of international
-airline passengers, 1949 to 1960.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The classic Box & Jenkins airline data. Monthly totals of
+   international airline passengers, 1949 to 1960.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   AirPassengers
+   ::
 
-Format
-~~~~~~
+      AirPassengers
 
-A monthly time series, in thousands.
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   A monthly time series, in thousands.
 
-Box, G. E. P., Jenkins, G. M. and Reinsel, G. C. (1976) *Time Series
-Analysis, Forecasting and Control.* Third Edition. Holden-Day. Series G.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Box, G. E. P., Jenkins, G. M. and Reinsel, G. C. (1976) *Time Series
+   Analysis, Forecasting and Control.* Third Edition. Holden-Day. Series
+   G.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## Not run: 
-   ## These are quite slow and so not run by example(AirPassengers)
+   ::
 
-   ## The classic 'airline model', by full ML
-   (fit <- arima(log10(AirPassengers), c(0, 1, 1),
-                 seasonal = list(order = c(0, 1, 1), period = 12)))
-   update(fit, method = "CSS")
-   update(fit, x = window(log10(AirPassengers), start = 1954))
-   pred <- predict(fit, n.ahead = 24)
-   tl <- pred$pred - 1.96 * pred$se
-   tu <- pred$pred + 1.96 * pred$se
-   ts.plot(AirPassengers, 10^tl, 10^tu, log = "y", lty = c(1, 2, 2))
+      ## Not run: 
+      ## These are quite slow and so not run by example(AirPassengers)
 
-   ## full ML fit is the same if the series is reversed, CSS fit is not
-   ap0 <- rev(log10(AirPassengers))
-   attributes(ap0) <- attributes(AirPassengers)
-   arima(ap0, c(0, 1, 1), seasonal = list(order = c(0, 1, 1), period = 12))
-   arima(ap0, c(0, 1, 1), seasonal = list(order = c(0, 1, 1), period = 12),
-         method = "CSS")
+      ## The classic 'airline model', by full ML
+      (fit <- arima(log10(AirPassengers), c(0, 1, 1),
+                    seasonal = list(order = c(0, 1, 1), period = 12)))
+      update(fit, method = "CSS")
+      update(fit, x = window(log10(AirPassengers), start = 1954))
+      pred <- predict(fit, n.ahead = 24)
+      tl <- pred$pred - 1.96 * pred$se
+      tu <- pred$pred + 1.96 * pred$se
+      ts.plot(AirPassengers, 10^tl, 10^tu, log = "y", lty = c(1, 2, 2))
 
-   ## Structural Time Series
-   ap <- log10(AirPassengers) - 2
-   (fit <- StructTS(ap, type = "BSM"))
-   par(mfrow = c(1, 2))
-   plot(cbind(ap, fitted(fit)), plot.type = "single")
-   plot(cbind(ap, tsSmooth(fit)), plot.type = "single")
+      ## full ML fit is the same if the series is reversed, CSS fit is not
+      ap0 <- rev(log10(AirPassengers))
+      attributes(ap0) <- attributes(AirPassengers)
+      arima(ap0, c(0, 1, 1), seasonal = list(order = c(0, 1, 1), period = 12))
+      arima(ap0, c(0, 1, 1), seasonal = list(order = c(0, 1, 1), period = 12),
+            method = "CSS")
 
-   ## End(Not run)
+      ## Structural Time Series
+      ap <- log10(AirPassengers) - 2
+      (fit <- StructTS(ap, type = "BSM"))
+      par(mfrow = c(1, 2))
+      plot(cbind(ap, fitted(fit)), plot.type = "single")
+      plot(cbind(ap, tsSmooth(fit)), plot.type = "single")
+
+      ## End(Not run)

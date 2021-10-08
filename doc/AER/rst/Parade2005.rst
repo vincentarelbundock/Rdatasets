@@ -1,85 +1,88 @@
-========== ===============
-Parade2005 R Documentation
-========== ===============
+.. container::
 
-Parade Magazine 2005 Earnings Data
-----------------------------------
+   ========== ===============
+   Parade2005 R Documentation
+   ========== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Parade Magazine 2005 Earnings Data
+      :name: parade-magazine-2005-earnings-data
 
-US earnings data, as provided in an annual survey of Parade (here from
-2005), the Sunday newspaper magazine supplementing the Sunday (or
-Weekend) edition of many daily newspapers in the USA.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   US earnings data, as provided in an annual survey of Parade (here
+   from 2005), the Sunday newspaper magazine supplementing the Sunday
+   (or Weekend) edition of many daily newspapers in the USA.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data("Parade2005")
+   ::
 
-Format
-~~~~~~
+      data("Parade2005")
 
-A data frame containing 130 observations on 5 variables.
+   .. rubric:: Format
+      :name: format
 
-earnings
-   Annual personal earnings.
+   A data frame containing 130 observations on 5 variables.
 
-age
-   Age in years.
+   earnings
+      Annual personal earnings.
 
-gender
-   Factor indicating gender.
+   age
+      Age in years.
 
-state
-   Factor indicating state.
+   gender
+      Factor indicating gender.
 
-celebrity
-   Factor. Is the individual a celebrity?
+   state
+      Factor indicating state.
 
-Details
-~~~~~~~
+   celebrity
+      Factor. Is the individual a celebrity?
 
-In addition to the four variables provided by Parade (earnings, age,
-gender, and state), a fifth variable was introduced, the “celebrity
-factor” (here actors, athletes, TV personalities, politicians, and CEOs
-are considered celebrities). The data are quite far from a simple random
-sample, there being substantial oversampling of celebrities.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   In addition to the four variables provided by Parade (earnings, age,
+   gender, and state), a fifth variable was introduced, the “celebrity
+   factor” (here actors, athletes, TV personalities, politicians, and
+   CEOs are considered celebrities). The data are quite far from a
+   simple random sample, there being substantial oversampling of
+   celebrities.
 
-Parade (2005). What People Earn. Issue March 13, 2005.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Parade (2005). What People Earn. Issue March 13, 2005.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## data
-   data("Parade2005")
-   attach(Parade2005)
-   summary(Parade2005)
+   ::
 
-   ## bivariate visualizations
-   plot(density(log(earnings), bw = "SJ"), type = "l", main = "log(earnings)")
-   rug(log(earnings))
-   plot(log(earnings) ~ gender, main = "log(earnings)")
+      ## data
+      data("Parade2005")
+      attach(Parade2005)
+      summary(Parade2005)
 
-   ## celebrity vs. non-celebrity earnings
-   noncel <- subset(Parade2005, celebrity == "no")
-   cel <- subset(Parade2005, celebrity == "yes")
+      ## bivariate visualizations
+      plot(density(log(earnings), bw = "SJ"), type = "l", main = "log(earnings)")
+      rug(log(earnings))
+      plot(log(earnings) ~ gender, main = "log(earnings)")
 
-   library("ineq")
-   plot(Lc(noncel$earnings), main = "log(earnings)")
-   lines(Lc(cel$earnings), lty = 2)
-   lines(Lc(earnings), lty = 3)
+      ## celebrity vs. non-celebrity earnings
+      noncel <- subset(Parade2005, celebrity == "no")
+      cel <- subset(Parade2005, celebrity == "yes")
 
-   Gini(noncel$earnings)
-   Gini(cel$earnings)
-   Gini(earnings)
+      library("ineq")
+      plot(Lc(noncel$earnings), main = "log(earnings)")
+      lines(Lc(cel$earnings), lty = 2)
+      lines(Lc(earnings), lty = 3)
 
-   ## detach data
-   detach(Parade2005)
+      Gini(noncel$earnings)
+      Gini(cel$earnings)
+      Gini(earnings)
+
+      ## detach data
+      detach(Parade2005)

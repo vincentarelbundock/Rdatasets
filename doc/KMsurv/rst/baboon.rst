@@ -1,38 +1,40 @@
-====== ===============
-baboon R Documentation
-====== ===============
+.. container::
 
-data from Exercise 5.8, p147
-----------------------------
+   ====== ===============
+   baboon R Documentation
+   ====== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: data from Exercise 5.8, p147
+      :name: data-from-exercise-5.8-p147
 
-The ``baboon`` data frame has 25 rows and 2 columns.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   The ``baboon`` data frame has 25 rows and 2 columns.
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-date
-   Date (day/month/year)
+   This data frame contains the following columns:
 
-time
-   Descent time (military time)
+   date
+      Date (day/month/year)
 
-observed
-   Indicator of observed or not (1=observed, 0=not observed)
+   time
+      Descent time (military time)
 
-Source
-~~~~~~
+   observed
+      Indicator of observed or not (1=observed, 0=not observed)
 
-Klein and Moeschberger (1997) *Survival Analysis Techniques for Censored
-and truncated data*, Springer.
+   .. rubric:: Source
+      :name: source
 
-Examples
-~~~~~~~~
+   Klein and Moeschberger (1997) *Survival Analysis Techniques for
+   Censored and truncated data*, Springer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   data(baboon)
+   ::
+
+      data(baboon)

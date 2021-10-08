@@ -1,102 +1,103 @@
-======= ===============
-College R Documentation
-======= ===============
+.. container::
 
-U.S. News and World Report's College Data
------------------------------------------
+   ======= ===============
+   College R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: U.S. News and World Report's College Data
+      :name: u.s.-news-and-world-reports-college-data
 
-Statistics for a large number of US Colleges from the 1995 issue of US
-News and World Report.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Statistics for a large number of US Colleges from the 1995 issue of
+   US News and World Report.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   College
+   ::
 
-Format
-~~~~~~
+      College
 
-A data frame with 777 observations on the following 18 variables.
+   .. rubric:: Format
+      :name: format
 
-``Private``
-   A factor with levels ``No`` and ``Yes`` indicating private or public
-   university
+   A data frame with 777 observations on the following 18 variables.
 
-``Apps``
-   Number of applications received
+   ``Private``
+      A factor with levels ``No`` and ``Yes`` indicating private or
+      public university
 
-``Accept``
-   Number of applications accepted
+   ``Apps``
+      Number of applications received
 
-``Enroll``
-   Number of new students enrolled
+   ``Accept``
+      Number of applications accepted
 
-``Top10perc``
-   Pct. new students from top 10% of H.S. class
+   ``Enroll``
+      Number of new students enrolled
 
-``Top25perc``
-   Pct. new students from top 25% of H.S. class
+   ``Top10perc``
+      Pct. new students from top 10% of H.S. class
 
-``F.Undergrad``
-   Number of fulltime undergraduates
+   ``Top25perc``
+      Pct. new students from top 25% of H.S. class
 
-``P.Undergrad``
-   Number of parttime undergraduates
+   ``F.Undergrad``
+      Number of fulltime undergraduates
 
-``Outstate``
-   Out-of-state tuition
+   ``P.Undergrad``
+      Number of parttime undergraduates
 
-``Room.Board``
-   Room and board costs
+   ``Outstate``
+      Out-of-state tuition
 
-``Books``
-   Estimated book costs
+   ``Room.Board``
+      Room and board costs
 
-``Personal``
-   Estimated personal spending
+   ``Books``
+      Estimated book costs
 
-``PhD``
-   Pct. of faculty with Ph.D.'s
+   ``Personal``
+      Estimated personal spending
 
-``Terminal``
-   Pct. of faculty with terminal degree
+   ``PhD``
+      Pct. of faculty with Ph.D.'s
 
-``S.F.Ratio``
-   Student/faculty ratio
+   ``Terminal``
+      Pct. of faculty with terminal degree
 
-``perc.alumni``
-   Pct. alumni who donate
+   ``S.F.Ratio``
+      Student/faculty ratio
 
-``Expend``
-   Instructional expenditure per student
+   ``perc.alumni``
+      Pct. alumni who donate
 
-``Grad.Rate``
-   Graduation rate
+   ``Expend``
+      Instructional expenditure per student
 
-Source
-~~~~~~
+   ``Grad.Rate``
+      Graduation rate
 
-This dataset was taken from the StatLib library which is maintained at
-Carnegie Mellon University. The dataset was used in the ASA Statistical
-Graphics Section's 1995 Data Analysis Exposition.
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   This dataset was taken from the StatLib library which is maintained
+   at Carnegie Mellon University. The dataset was used in the ASA
+   Statistical Graphics Section's 1995 Data Analysis Exposition.
 
-James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
-Introduction to Statistical Learning with applications in R*,
-`www.StatLearning.com <www.StatLearning.com>`__, Springer-Verlag, New
-York
+   .. rubric:: References
+      :name: references
 
-Examples
-~~~~~~~~
+   James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
+   Introduction to Statistical Learning with applications in R*,
+   https://www.statlearning.com, Springer-Verlag, New York
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   summary(College)
-   lm(Apps~Private+Accept,data=College)
+   ::
+
+      summary(College)
+      lm(Apps~Private+Accept,data=College)

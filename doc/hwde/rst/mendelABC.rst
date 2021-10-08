@@ -1,78 +1,83 @@
-========= ===============
-mendelABC R Documentation
-========= ===============
+.. container::
 
-Mendel's F2 trifactorial data for seed shape (A: round or wrinkled), cotyledon color (B: albumen yellow or green), and seed coat color (C: grey-brown or white)
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+   ========= ===============
+   mendelABC R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Mendel's F2 trifactorial data for seed shape (A: round or
+      wrinkled), cotyledon color (B: albumen yellow or green), and seed
+      coat color (C: grey-brown or white)
+      :name: mendels-f2-trifactorial-data-for-seed-shape-a-round-or-wrinkled-cotyledon-color-b-albumen-yellow-or-green-and-seed-coat-color-c-grey-brown-or-white
 
-The ``mendel3`` data frame has 27 rows and 4 columns. Data are from
-Mendel (1886), and are reproduced in Fisher (1936) and Weir (1996).
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``mendel3`` data frame has 27 rows and 4 columns. Data are from
+   Mendel (1886), and are reproduced in Fisher (1936) and Weir (1996).
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(mendelABC)
+   ::
 
-Format
-~~~~~~
+      data(mendelABC)
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-seedshape
-   Factor with levels: ``AA``, ``Aa`` and ``aa``
+   This data frame contains the following columns:
 
-cotylcolor
-   Factor with levels: ``BB``, ``Bb`` and ``bb``
+   seedshape
+      Factor with levels: ``AA``, ``Aa`` and ``aa``
 
-coatcolor
-   Factor with levels: ``CC``, ``Cc`` and ``cc``
+   cotylcolor
+      Factor with levels: ``BB``, ``Bb`` and ``bb``
 
-Observed
-   a numeric vector that holds the frequencies.
+   coatcolor
+      Factor with levels: ``CC``, ``Cc`` and ``cc``
 
-Details
-~~~~~~~
+   Observed
+      a numeric vector that holds the frequencies.
 
-The data are reviewed in detail in Fisher (1936). For a brief
-discussion, and references to work that revisits Fisher's conclusions,
-see Weir (1996).
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   The data are reviewed in detail in Fisher (1936). For a brief
+   discussion, and references to work that revisits Fisher's
+   conclusions, see Weir (1996).
 
-Data are from Mendel (1886), and are reproduced in Fisher (1936) and
-Weir (1996).
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Data are from Mendel (1886), and are reproduced in Fisher (1936) and
+   Weir (1996).
 
-1. Fisher, R.A. 1936. Has Mendel's work been rediscovered? *Annals of
-Science* **1**:115-137.
+   .. rubric:: References
+      :name: references
 
-2. Mendel, G. 1886. Versuche uber Pflanzen-Hybriden. Verhandlugen des
-Naturforschenden Vereines in Brunn **4**:3-47. (An English translation.
-with annotations, is available from
-http://www.esp.org/foundations/genetics/classical/gm-65.pdf NB also the
-English translation by Royal Horticultural Society of London, reprinted
-in Peters, J.A. 1959. *Classic Papers in Genetics.* Prentice-Hall.)
+   1. Fisher, R.A. 1936. Has Mendel's work been rediscovered? *Annals of
+   Science* **1**:115-137.
 
-3. Weir, B.S. 1996. *Genetic Data Analysis II.* Sinauer.
+   2. Mendel, G. 1886. Versuche uber Pflanzen-Hybriden. Verhandlugen des
+   Naturforschenden Vereines in Brunn **4**:3-47. (An English
+   translation. with annotations, is available from
+   http://www.esp.org/foundations/genetics/classical/gm-65.pdf NB also
+   the English translation by Royal Horticultural Society of London,
+   reprinted in Peters, J.A. 1959. *Classic Papers in Genetics.*
+   Prentice-Hall.)
 
-Examples
-~~~~~~~~
+   3. Weir, B.S. 1996. *Genetic Data Analysis II.* Sinauer.
 
-::
+   .. rubric:: Examples
+      :name: examples
 
-   ## Lay table out as a 3D array, as in Fisher (1936)
-   abc <- aperm(array(mendelABC[,4], dim=c(3,3,3)), c(1,3,2))
-   dimnames(abc) <- list(B=c('BB','Bb','bb'), 
-                         A=c('AA','Aa','aa'),
-                         C=c('CC','Cc','cc'))
-   abc
-   ## Fit Hardy-Weinberg disequilibium model
-   hwde(mendelABC, loci=c("seedshape","cotylcolor","coatcolor"))
+   ::
+
+      ## Lay table out as a 3D array, as in Fisher (1936)
+      abc <- aperm(array(mendelABC[,4], dim=c(3,3,3)), c(1,3,2))
+      dimnames(abc) <- list(B=c('BB','Bb','bb'), 
+                            A=c('AA','Aa','aa'),
+                            C=c('CC','Cc','cc'))
+      abc
+      ## Fit Hardy-Weinberg disequilibium model
+      hwde(mendelABC, loci=c("seedshape","cotylcolor","coatcolor"))

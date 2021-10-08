@@ -1,58 +1,61 @@
-==== ===============
-CP77 R Documentation
-==== ===============
+.. container::
 
-Education Expenditure Data (Chatterjee and Price, 1977)
--------------------------------------------------------
+   ==== ===============
+   CP77 R Documentation
+   ==== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Education Expenditure Data (Chatterjee and Price, 1977)
+      :name: education-expenditure-data-chatterjee-and-price-1977
 
-This is a simple data set provided by Chatterjee and Price (1977, p.
-108) that serves as a known example of heteroscedasticity.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This is a simple data set provided by Chatterjee and Price (1977, p.
+   108) that serves as a known example of heteroscedasticity.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   CP77
+   ::
 
-Format
-~~~~~~
+      CP77
 
-A data frame with 50 observations on the following 6 variables.
+   .. rubric:: Format
+      :name: format
 
-``state``
-   a character vector for the state
+   A data frame with 50 observations on the following 6 variables.
 
-``region``
-   a character vector for the Census region
+   ``state``
+      a character vector for the state
 
-``urbanpop``
-   a numeric vector for the number of residents (per thousand) living in
-   urban areas in 1970
+   ``region``
+      a character vector for the Census region
 
-``incpc``
-   a numeric vector for income per capita in 1973
+   ``urbanpop``
+      a numeric vector for the number of residents (per thousand) living
+      in urban areas in 1970
 
-``pop``
-   a numeric vector for residents (per thousand) under 18 years of age
-   in 1974
+   ``incpc``
+      a numeric vector for income per capita in 1973
 
-``edexppc``
-   a numeric vector for per capita public school expenditures in a
-   state, projected for 1975.
+   ``pop``
+      a numeric vector for residents (per thousand) under 18 years of
+      age in 1974
 
-Details
-~~~~~~~
+   ``edexppc``
+      a numeric vector for per capita public school expenditures in a
+      state, projected for 1975.
 
-I copied these data from the ``robustbase`` package. I just didn't want
-to make my students install it. Note: I'm pretty sure "NB" was suppose
-to be "NE" and that "DY" is supposed to be "KY". I made those changes.
+   .. rubric:: Details
+      :name: details
 
-References
-~~~~~~~~~~
+   I copied these data from the ``robustbase`` package. I just didn't
+   want to make my students install it. Note: I'm pretty sure "NB" was
+   suppose to be "NE" and that "DY" is supposed to be "KY". I made those
+   changes.
 
-P. J. Rousseeuw and A. M. Leroy (1987) Robust Regression and Outlier
-Detection; Wiley, p.110, table 16.
+   .. rubric:: References
+      :name: references
+
+   P. J. Rousseeuw and A. M. Leroy (1987) Robust Regression and Outlier
+   Detection; Wiley, p.110, table 16.

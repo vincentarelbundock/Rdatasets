@@ -1,39 +1,41 @@
-===== ===============
-Dimes R Documentation
-===== ===============
+.. container::
 
-Weight of dimes
----------------
+   ===== ===============
+   Dimes R Documentation
+   ===== ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Weight of dimes
+      :name: weight-of-dimes
 
-Weights of a sample of dimes.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Weights of a sample of dimes.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   data(Dimes)
+   ::
 
-Format
-~~~~~~
+      data(Dimes)
 
-A data frame with 30 observations on the following 2 variables.
+   .. rubric:: Format
+      :name: format
 
--  ``mass`` mass of dime in grams
+   A data frame with 30 observations on the following 2 variables.
 
--  ``year`` year the dime was minted
+   -  ``mass`` mass of dime in grams
 
-Details
-~~~~~~~
+   -  ``year`` year the dime was minted
 
-These data were collected on a sample taken from a large sack of dimes
-for the purpose of estimating the total number of dimes in the sack
-based on the weights of the individual dimes.
+   .. rubric:: Details
+      :name: details
 
-Source
-~~~~~~
+   These data were collected on a sample taken from a large sack of
+   dimes for the purpose of estimating the total number of dimes in the
+   sack based on the weights of the individual dimes.
 
-Data were collected by Michael Stob.
+   .. rubric:: Source
+      :name: source
+
+   Data were collected by Michael Stob.

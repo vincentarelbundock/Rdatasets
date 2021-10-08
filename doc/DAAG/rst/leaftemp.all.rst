@@ -1,55 +1,57 @@
-============ ===============
-leaftemp.all R Documentation
-============ ===============
+.. container::
 
-Full Leaf and Air Temperature Data Set
---------------------------------------
+   ============ ===============
+   leaftemp.all R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Full Leaf and Air Temperature Data Set
+      :name: full-leaf-and-air-temperature-data-set
 
-The ``leaftemp.all`` data frame has 62 rows and 9 columns.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``leaftemp.all`` data frame has 62 rows and 9 columns.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   leaftemp.all
+   ::
 
-Format
-~~~~~~
+      leaftemp.all
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-glasshouse
-   a factor with levels ``A``, ``B``, ``C``
+   This data frame contains the following columns:
 
-CO2level
-   a factor with Carbon Dioxide Levels: ``high``, ``low``, ``medium``
+   glasshouse
+      a factor with levels ``A``, ``B``, ``C``
 
-day
-   a factor
+   CO2level
+      a factor with Carbon Dioxide Levels: ``high``, ``low``, ``medium``
 
-light
-   a numeric vector
+   day
+      a factor
 
-CO2
-   a numeric vector
+   light
+      a numeric vector
 
-tempDiff
-   Difference between Leaf and Air Temperature
+   CO2
+      a numeric vector
 
-BtempDiff
-   a numeric vector
+   tempDiff
+      Difference between Leaf and Air Temperature
 
-airTemp
-   Air Temperature
+   BtempDiff
+      a numeric vector
 
-vapPress
-   Vapour Pressure
+   airTemp
+      Air Temperature
 
-Source
-~~~~~~
+   vapPress
+      Vapour Pressure
 
-J.H. Maindonald
+   .. rubric:: Source
+      :name: source
+
+   J.H. Maindonald

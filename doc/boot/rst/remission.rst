@@ -1,46 +1,49 @@
-========= ===============
-remission R Documentation
-========= ===============
+.. container::
 
-Cancer Remission and Cell Activity
-----------------------------------
+   ========= ===============
+   remission R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Cancer Remission and Cell Activity
+      :name: cancer-remission-and-cell-activity
 
-The ``remission`` data frame has 27 rows and 3 columns.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   The ``remission`` data frame has 27 rows and 3 columns.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   remission
+   ::
 
-Format
-~~~~~~
+      remission
 
-This data frame contains the following columns:
+   .. rubric:: Format
+      :name: format
 
-``LI``
-   A measure of cell activity.
+   This data frame contains the following columns:
 
-``m``
-   The number of patients in each group (all values are actually 1
-   here).
+   ``LI``
+      A measure of cell activity.
 
-``r``
-   The number of patients (out of ``m``) who went into remission.
+   ``m``
+      The number of patients in each group (all values are actually 1
+      here).
 
-Source
-~~~~~~
+   ``r``
+      The number of patients (out of ``m``) who went into remission.
 
-The data were obtained from
+   .. rubric:: Source
+      :name: source
 
-Freeman, D.H. (1987) *Applied Categorical Data Analysis*. Marcel Dekker.
+   The data were obtained from
 
-References
-~~~~~~~~~~
+   Freeman, D.H. (1987) *Applied Categorical Data Analysis*. Marcel
+   Dekker.
 
-Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-Application*. Cambridge University Press.
+   .. rubric:: References
+      :name: references
+
+   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
+   Application*. Cambridge University Press.
