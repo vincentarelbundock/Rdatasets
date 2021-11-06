@@ -88,3 +88,4 @@
 
       ## Reproducing the FA-cI plot shown in Figure 5d
       plotFACI(CuZn.effects, "ED", ylim = c(0.8, 1.6), showPoints = TRUE)
+

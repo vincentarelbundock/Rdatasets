@@ -172,3 +172,4 @@
         eff <- allEffects(fit)
         plot(eff)
       }
+

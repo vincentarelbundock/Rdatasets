@@ -44,3 +44,4 @@
 
       data(telef)
       summary(lm.telef <- lm(Year~., data=telef))
+

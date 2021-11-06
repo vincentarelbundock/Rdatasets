@@ -44,3 +44,4 @@
         geom_histogram(binwidth = 1)
 
       qqnorm(ball_bearing$life_span)
+

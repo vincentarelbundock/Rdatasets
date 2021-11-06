@@ -197,3 +197,4 @@
        xbomsoi2.maSel
       qqnorm(resid(xbomsoi.maSel, type="normalized"))
       detach(xbomsoi)
+

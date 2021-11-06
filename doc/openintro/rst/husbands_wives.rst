@@ -62,3 +62,4 @@
 
       ggplot(husbands_wives, aes(x = ht_husband, y = ht_wife)) +
         geom_point()
+

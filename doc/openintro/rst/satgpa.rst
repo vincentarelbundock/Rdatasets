@@ -84,3 +84,4 @@
 
       mod <- lm(fy_gpa ~ sat_m, data = satgpa)
       tidy(mod)
+

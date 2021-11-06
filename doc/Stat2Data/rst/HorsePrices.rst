@@ -24,7 +24,7 @@
    ``Age``     Age of the horse (in years)
    ``Height``  Height of the horse (in hands)
    ``Sex``     ``f``\ =female ``m``\ =male
-   \           
+   \          
    =========== ==============================
 
    .. rubric:: Details

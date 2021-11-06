@@ -70,3 +70,4 @@
       daphnids.m2 <- drm(no/total~dose, time, weights = total, 
       data = daphnids, fct = LL.2(), type = "binomial", 
       pmodels = list(~1, ~time))
+

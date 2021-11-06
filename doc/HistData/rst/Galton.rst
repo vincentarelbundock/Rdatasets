@@ -107,3 +107,4 @@
           dataEllipse(parent,child, xlim=c(62,74), ylim=c(62,74), plot.points=FALSE)
               }
         })
+

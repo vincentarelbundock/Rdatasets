@@ -48,3 +48,5 @@
 
       table(mammogram)
       chisq.test(table(mammogram))
+
+

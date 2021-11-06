@@ -271,3 +271,5 @@
       plot(Q, sort(Dsq), xlab="Chisquare (2) quantile", ylab="Squared distance")
       abline(a=0, b=1, col="red", lwd=2)
 
+
+

@@ -22,7 +22,7 @@
    ``Effective``    Count of effective cases
    ``NotEffective`` Count of noneffective cases
    ``Patients``     Number of patients in the treatment
-   \                
+   \               
    ================ ===================================
 
    .. rubric:: Details

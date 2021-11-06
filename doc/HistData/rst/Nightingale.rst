@@ -224,3 +224,4 @@
       axis.Date(1, at=seq(as.Date("1854/4/1"), as.Date("1856/3/1"), "3 months"), format="%b %Y")
       legend(as.Date("1854/8/20"), 60, c("Preventable disease", "Wounds and injuries", "Other"),
           col=colors, fill=colors, title="Cause", cex=1.25)
+

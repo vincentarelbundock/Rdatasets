@@ -135,3 +135,4 @@
         ggplot(aes(y = phase_of_flt, fill = effect)) +
         geom_bar(position = "fill") +
         labs(x = "Proportion", y = "Phase of flight", fill = "Effect")
+

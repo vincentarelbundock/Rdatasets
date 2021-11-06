@@ -50,3 +50,4 @@
           suit = rep(c("Spade", "Diamond", "Club", "Heart"), rep(13, 4)))
       playing_cards$face_card <-
           ifelse(playing_cards$number %in% c(2:10, "A"), "no", "yes")
+

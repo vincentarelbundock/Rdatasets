@@ -27,7 +27,7 @@ Format
 time:   survival or censoring time
 status: censoring status
 x:      maintenance chemotherapy given? (factor)
-\       
+\      
 ======= ========================================
 
 Source

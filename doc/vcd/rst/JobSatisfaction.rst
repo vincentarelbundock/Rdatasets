@@ -62,3 +62,4 @@
 
       mantelhaen.test(xtabs(Freq ~ own + supervisor + management,
                             data = JobSatisfaction))
+

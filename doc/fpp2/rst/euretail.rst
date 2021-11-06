@@ -31,3 +31,4 @@
 
 
       autoplot(euretail)
+

@@ -88,3 +88,4 @@
       ggplot(heart_transplant, aes(x = transplant, fill = survived)) +
         geom_bar(position = "fill") +
         labs(x = "Transplant", y = "Proportion", fill = "Outcome")
+

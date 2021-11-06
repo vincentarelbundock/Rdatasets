@@ -78,6 +78,7 @@ Imports:
     texmex,
     tidyr,
     tidyverse,
+    validate,
     vcd
 Suggests: 
     knitr,

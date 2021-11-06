@@ -65,3 +65,4 @@
 
         data("meteo", package = "HSAUR")
         meteo
+

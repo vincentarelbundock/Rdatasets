@@ -89,3 +89,4 @@
 
       oscars %>%
         count(birth_pl, sort = TRUE)
+

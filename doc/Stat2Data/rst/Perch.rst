@@ -22,7 +22,7 @@
    ``Weight`` Weight (in grams)
    ``Length`` Length (in centimeters)
    ``Width``  Width (in centimeters
-   \          
+   \         
    ========== =======================
 
    .. rubric:: Details

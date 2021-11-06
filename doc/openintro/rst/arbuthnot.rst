@@ -67,3 +67,4 @@
         pivot_longer(cols = -year, names_to = "sex", values_to = "n") %>%
         ggplot(aes(x = year, y = n, color = sex, group = sex)) +
         geom_line()
+

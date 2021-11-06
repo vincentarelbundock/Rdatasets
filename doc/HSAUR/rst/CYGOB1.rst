@@ -57,3 +57,4 @@
 
         data("CYGOB1", package = "HSAUR")
         plot(logst ~ logli, data = CYGOB1)
+

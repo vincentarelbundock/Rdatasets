@@ -92,3 +92,4 @@
       # not too far from the value 138.45 reported in the paper
       # (note that the estimation procedure is not exactly the same)
       # (and we use the log-logistic model instead of the log-normal model)
+

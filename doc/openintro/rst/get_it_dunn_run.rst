@@ -81,3 +81,4 @@
       boxplot(m$residuals ~ d$sex)
       plot(m$residuals ~ d$age)
       hist(m$residuals)
+

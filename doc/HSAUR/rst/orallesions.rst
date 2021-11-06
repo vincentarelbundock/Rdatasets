@@ -40,3 +40,4 @@
 
         data("orallesions", package = "HSAUR")
         mosaicplot(orallesions)
+

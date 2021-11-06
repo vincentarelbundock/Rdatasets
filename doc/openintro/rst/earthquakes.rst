@@ -63,3 +63,4 @@
 
       ggplot(earthquakes, aes(x = log(deaths)))+
         geom_histogram()
+

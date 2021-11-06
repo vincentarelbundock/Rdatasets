@@ -85,3 +85,4 @@
       # Better pairwise comparison method.
       anova(m1 <- aov(torque ~ treatment, data = penetrating_oil))
       TukeyHSD(m1)
+

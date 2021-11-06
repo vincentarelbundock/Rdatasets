@@ -64,3 +64,4 @@
 
         data("schizophrenia2", package = "HSAUR")
         mosaicplot(xtabs( ~ onset + month + disorder, data = schizophrenia2))
+

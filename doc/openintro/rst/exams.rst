@@ -34,3 +34,4 @@
 
 
       hist(exams$scores)
+

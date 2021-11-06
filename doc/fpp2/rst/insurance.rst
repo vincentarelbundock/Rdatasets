@@ -30,3 +30,4 @@
 
 
       autoplot(insurance)
+

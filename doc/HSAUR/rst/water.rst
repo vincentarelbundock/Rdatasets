@@ -66,3 +66,4 @@
         data("water", package = "HSAUR")
         plot(mortality ~ hardness, data = water, 
              col = as.numeric(water$location))
+

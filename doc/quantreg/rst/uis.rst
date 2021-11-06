@@ -15,7 +15,8 @@
 
    Variable descriptions:
 
-   ======== =============================== ==============================
+   ======== ===============================
+   ==============================
    Variable Description                     Codes/Values
    ID       Identification Code             1 - 628
    AGE      Age at Enrollment               Years
@@ -35,21 +36,22 @@
    SITE     Treatment Site                  0 = A
    \                                        1 = B
    LEN.T    Length of Stay in Treatment     Days
-   \        (Admission Date to Exit Date)   
+   \        (Admission Date to Exit Date)  
    TIME     Time to Drug Relapse            Days
-   \        (Measured from Admission Date)  
+   \        (Measured from Admission Date) 
    CENSOR   Event for Treating Lost to      1 = Returned to Drugs
    \        Follow-Up as Returned to Drugs  or Lost to Follow-Up
    \                                        0 = Otherwise
-   Y        log of TIME                     
-   ND1      Component of NDT                
-   ND2      Component of NDT                
-   LNDT                                     
+   Y        log of TIME                    
+   ND1      Component of NDT               
+   ND2      Component of NDT               
+   LNDT                                    
    FRAC     Compliance fraction             LEN.T/90 for short trt
    \                                        LEN.T/180 for long trt
    IV3      Recent IV use                   1 = Yes
    \                                        0 = No
-   ======== =============================== ==============================
+   ======== ===============================
+   ==============================
 
    .. rubric:: Usage
       :name: usage

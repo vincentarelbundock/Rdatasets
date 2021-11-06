@@ -102,3 +102,4 @@
 
       lm(log(income) ~ age, data = acs12_emp) %>%
         tidy()
+

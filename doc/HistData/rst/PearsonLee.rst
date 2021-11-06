@@ -139,3 +139,4 @@
                              values = c('green', 'red')) +
          theme(legend.position = c(0.14, 0.885),
               legend.background = element_rect(fill = 'white'))
+

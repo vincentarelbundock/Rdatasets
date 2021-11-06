@@ -18,14 +18,13 @@
 
    A dataset with 24 observations on the following 2 variables.
 
-   +-----------+---------------------------------------------------------+
-   | ``Group`` | Treatments: ``exercise control``, ``final report``,     |
-   |           | ``special exercises``, or ``weekly report``             |
-   +-----------+---------------------------------------------------------+
-   | ``Age``   | Age (in months) when first walking                      |
-   +-----------+---------------------------------------------------------+
-   |           |                                                         |
-   +-----------+---------------------------------------------------------+
+   =========
+   ===============================================================================================
+   ``Group`` Treatments: ``exercise control``, ``final report``, ``special exercises``, or ``weekly report``
+   ``Age``   Age (in months) when first walking
+   \        
+   =========
+   ===============================================================================================
 
    .. rubric:: Details
       :name: details

@@ -42,3 +42,4 @@
 
       ggplot(ipod, aes(x = song_length)) +
         geom_histogram(binwidth = 0.5)
+

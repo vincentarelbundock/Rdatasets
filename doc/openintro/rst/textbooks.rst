@@ -74,3 +74,4 @@
         geom_histogram(binwidth = 5)
 
       t.test(textbooks$diff)
+

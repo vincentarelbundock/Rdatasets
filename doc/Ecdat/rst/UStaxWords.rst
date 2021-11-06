@@ -201,3 +201,4 @@
         EntireTaxCodeAndRegs~year + Reagan
       fitReagan <- lm(ReaganMdl, UStaxWords )
       summary(fitReagan)
+

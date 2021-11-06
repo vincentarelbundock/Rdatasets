@@ -27,7 +27,7 @@ time:   survival or censoring time
 status: censoring status
 age:    in years
 t5:     T5 mismatch score
-\       
+\      
 ======= ==========================
 
 Source

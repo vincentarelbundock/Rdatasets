@@ -63,3 +63,4 @@
            col = col, pch = 19)
       plot(winery_cars$car_number, winery_cars$time_until_next,
            col = fadeColor(col, "88"), pch = 19)
+

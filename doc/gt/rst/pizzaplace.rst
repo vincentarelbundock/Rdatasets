@@ -197,3 +197,4 @@
       # Here is a glimpse at the data
       # available in `pizzaplace`
       dplyr::glimpse(pizzaplace)
+

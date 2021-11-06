@@ -23,7 +23,7 @@
    ``Species``    Number of mammal species
    ``logArea``    Natural logarithm (base e) of Area
    ``logSpecies`` Natural logarithm (base e) of Species
-   \              
+   \             
    ============== =====================================
 
    .. rubric:: Details

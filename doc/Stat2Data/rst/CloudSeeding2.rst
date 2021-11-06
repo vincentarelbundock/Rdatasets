@@ -26,7 +26,7 @@
    ``NC``     Rainfall in North (control)
    ``SC``     Rainfall in South (control)
    ``NWC``    Rainfall in Northwest (control)
-   \          
+   \         
    ========== ==========================================================
 
    .. rubric:: Details

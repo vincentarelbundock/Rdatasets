@@ -20,7 +20,7 @@
    ============== =============================================
    ``WeightLoss`` weight loss (in pounds) after 4 months
    ``Group``      Treatment group: ``Control`` or ``Incentive``
-   \              
+   \             
    ============== =============================================
 
    .. rubric:: Details

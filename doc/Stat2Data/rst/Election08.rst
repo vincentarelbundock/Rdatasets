@@ -17,28 +17,18 @@
 
    A dataframe with 51 observations on the following 7 variables.
 
-   +--------------+------------------------------------------------------+
-   | ``State``    | Name of the state                                    |
-   +--------------+------------------------------------------------------+
-   | ``Abr``      | Abbreviation for the state                           |
-   +--------------+------------------------------------------------------+
-   | ``Income``   | Per capita income in the state as of 2007 (in        |
-   |              | dollars)                                             |
-   +--------------+------------------------------------------------------+
-   | ``HS``       | Percentage of adults with at least a high school     |
-   |              | education                                            |
-   +--------------+------------------------------------------------------+
-   | ``BA``       | Percentage of adults with at least a college         |
-   |              | education                                            |
-   +--------------+------------------------------------------------------+
-   | ``Dem.Rep``  | Difference in %Democrat and %Republican (according   |
-   |              | to 2008 Gallup survey)                               |
-   +--------------+------------------------------------------------------+
-   | ``ObamaWin`` | ``1``\ = Obama (Democrat) wins state in 2008 or      |
-   |              | ``0``\ =McCain (Republican) wins                     |
-   +--------------+------------------------------------------------------+
-   |              |                                                      |
-   +--------------+------------------------------------------------------+
+   ============
+   ================================================================================
+   ``State``    Name of the state
+   ``Abr``      Abbreviation for the state
+   ``Income``   Per capita income in the state as of 2007 (in dollars)
+   ``HS``       Percentage of adults with at least a high school education
+   ``BA``       Percentage of adults with at least a college education
+   ``Dem.Rep``  Difference in %Democrat and %Republican (according to 2008 Gallup survey)
+   ``ObamaWin`` ``1``\ = Obama (Democrat) wins state in 2008 or ``0``\ =McCain (Republican) wins
+   \           
+   ============
+   ================================================================================
 
    .. rubric:: Details
       :name: details

@@ -129,3 +129,4 @@
       plot(out ~ as.factor(gp))
       summary(lm(out ~ as.factor(gp)))
       anova(lm(out ~ as.factor(gp)))
+
