@@ -62,3 +62,4 @@
       # using a self-starting model
       fm3 <- nls(demand ~ SSasympOrig(Time, A, lrc), data = BOD)
       summary(fm3)
+

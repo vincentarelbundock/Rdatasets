@@ -81,3 +81,4 @@
       ggplot(cia_factbook_iup, aes(x = internet_users_percent, y = life_exp_at_birth)) +
         geom_point() +
         labs(x = "Percentage of internet users", y = "Life expectancy at birth")
+

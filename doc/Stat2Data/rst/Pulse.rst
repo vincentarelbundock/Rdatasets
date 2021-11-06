@@ -26,7 +26,7 @@
    ``Exercise`` Typical hours of exercise (per week)
    ``Hgt``      Height (in inches)
    ``Wgt``      Weight (in pounds)
-   \            
+   \           
    ============ ============================================
 
    .. rubric:: Details

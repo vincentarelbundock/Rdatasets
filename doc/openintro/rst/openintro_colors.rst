@@ -34,3 +34,4 @@
       openintro_colors
 
       openintro_colors["blue"]
+

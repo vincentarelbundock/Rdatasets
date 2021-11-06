@@ -20,7 +20,7 @@
    ======== ========================================================
    ``Diet`` ``Control``, ``Fructose``, ``Glucose``, or ``Sucrose``
    ``Days`` Number of days until half the leafhoppers in a dish died
-   \        
+   \       
    ======== ========================================================
 
    .. rubric:: Details

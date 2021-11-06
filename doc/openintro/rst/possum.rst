@@ -73,3 +73,4 @@
       # Total length vs. sex
       ggplot(possum, aes(x = total_l, fill = sex)) +
         geom_density(alpha = 0.5)
+

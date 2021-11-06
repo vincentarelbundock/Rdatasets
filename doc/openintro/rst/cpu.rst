@@ -92,3 +92,4 @@
           y = "Boost Clock (GHz)",
           title = "Process node size vs. boost speed"
         )
+

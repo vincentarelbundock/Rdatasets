@@ -52,3 +52,4 @@
         gf_point( (keep/(keep+sell)) ~ bid, data = GoosePermits, ylim = c(0,1.05)) %>%
         gf_fun(y.hat(b) ~ b, add = TRUE, color = "red", alpha = 0.5) 
       }
+

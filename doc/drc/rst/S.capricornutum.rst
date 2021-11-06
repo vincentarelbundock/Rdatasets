@@ -73,3 +73,4 @@
       s.cap.m4 <- boxcox(s.cap.m3, method = "anova")
       summary(s.cap.m4)
       ED(s.cap.m4, c(10, 20, 50), interval = "fls")
+

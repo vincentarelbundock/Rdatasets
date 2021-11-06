@@ -31,7 +31,7 @@
    ``Result``     ``1``\ =made the field goal or ``0``\ =missed
    ``Yards``      Number of yards for the field goal attempt
    ``Block``      ``1``\ =attempt blocked or ``0``\ =not blocked
-   \              
+   \             
    ============== ==============================================
 
    .. rubric:: Details

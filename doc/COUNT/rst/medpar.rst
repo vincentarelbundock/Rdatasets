@@ -99,3 +99,4 @@
       glmnb <- glm.nb(los ~ hmo + white + factor(type), data=medpar)
       summary(glmnb)
       exp(coef(glmnb))
+

@@ -52,9 +52,9 @@
    = ==================================
    A highest level of lime sulphur
    B next highest level of lime sulphur
-   . 
-   . 
-   . 
+   .
+   .
+   .
    G lowest level of lime sulphur
    H no lime sulphur
    = ==================================

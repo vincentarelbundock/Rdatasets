@@ -17,28 +17,18 @@
 
    A dataset with 464 observations on the following 7 variables.
 
-   +--------------+------------------------------------------------------+
-   | ``FlockID``  | Flock ID                                             |
-   +--------------+------------------------------------------------------+
-   | ``Altitude`` | Altitude of the overflight by the helicopter (in     |
-   |              | 100m)                                                |
-   +--------------+------------------------------------------------------+
-   | ``Lateral``  | Lateral distance (in 100m) between the aircraft and  |
-   |              | flock                                                |
-   +--------------+------------------------------------------------------+
-   | ``Flight``   | ``1``\ =more than 10% of flock flies away or         |
-   |              | ``0``\ =otherwise                                    |
-   +--------------+------------------------------------------------------+
-   | ``AltLat``   | Product of Altitude x Lateral                        |
-   +--------------+------------------------------------------------------+
-   | ``AltCat``   | Altitude categories: ``low``\ =under 3, ``mid``\ =3  |
-   |              | to 6, ``high``\ =over 6                              |
-   +--------------+------------------------------------------------------+
-   | ``LatCat``   | Lateral categories: ``1``\ under 10 to ``4``\ =over  |
-   |              | 30                                                   |
-   +--------------+------------------------------------------------------+
-   |              |                                                      |
-   +--------------+------------------------------------------------------+
+   ============
+   ===========================================================================
+   ``FlockID``  Flock ID
+   ``Altitude`` Altitude of the overflight by the helicopter (in 100m)
+   ``Lateral``  Lateral distance (in 100m) between the aircraft and flock
+   ``Flight``   ``1``\ =more than 10% of flock flies away or ``0``\ =otherwise
+   ``AltLat``   Product of Altitude x Lateral
+   ``AltCat``   Altitude categories: ``low``\ =under 3, ``mid``\ =3 to 6, ``high``\ =over 6
+   ``LatCat``   Lateral categories: ``1``\ under 10 to ``4``\ =over 30
+   \           
+   ============
+   ===========================================================================
 
    .. rubric:: Details
       :name: details

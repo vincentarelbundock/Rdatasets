@@ -70,3 +70,4 @@
             panel = function(x, y) {
                 text(x, y, levels(skulls$epoch))
             })
+

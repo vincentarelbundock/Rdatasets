@@ -58,3 +58,4 @@
 
         data("waves", package = "HSAUR")
         plot(method1 ~ method2, data = waves)
+

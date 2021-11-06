@@ -57,3 +57,4 @@
         tally(~ treatment + outcome, data=Mites)
         tally(~ outcome | treatment, format="percent", data=Mites)
       }
+

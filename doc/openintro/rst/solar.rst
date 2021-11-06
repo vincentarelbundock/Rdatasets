@@ -65,3 +65,4 @@
 
       d <- merge(solar.ha, solar.is, by = "date")
       plot(d$date, d$kwh.x / d$kwh.y, type = "l")
+

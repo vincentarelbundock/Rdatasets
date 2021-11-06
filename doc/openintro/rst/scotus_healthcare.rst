@@ -44,3 +44,4 @@
 
 
       table(scotus_healthcare)
+

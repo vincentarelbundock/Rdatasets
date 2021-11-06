@@ -63,3 +63,4 @@
       ggplot(absenteeism, aes(x = eth, y = days)) +
         geom_boxplot() +
         coord_flip()
+

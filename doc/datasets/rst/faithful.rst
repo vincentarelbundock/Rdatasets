@@ -28,7 +28,7 @@
    ==== ========= ======= =======================================
    [,1] eruptions numeric Eruption time in mins
    [,2] waiting   numeric Waiting time to next eruption (in mins)
-   \                      
+   \                     
    ==== ========= ======= =======================================
 
    .. rubric:: Details

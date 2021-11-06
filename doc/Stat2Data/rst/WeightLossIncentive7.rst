@@ -20,7 +20,7 @@
    ============== =============================================
    ``Group``      Treatment group: ``Control`` or ``Incentive``
    ``Month7Loss`` Weight loss (in pounds) after seven months
-   \              
+   \             
    ============== =============================================
 
    .. rubric:: Details

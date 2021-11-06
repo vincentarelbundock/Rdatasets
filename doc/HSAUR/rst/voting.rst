@@ -53,3 +53,4 @@
         text(voting_mds$points[,1], voting_mds$points[,2], 
              labels = colnames(voting))
         voting_sh <- Shepard(voting[lower.tri(voting)], voting_mds$points)
+

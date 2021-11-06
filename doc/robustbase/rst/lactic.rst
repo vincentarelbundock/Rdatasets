@@ -45,3 +45,4 @@
 
       data(lactic)
       summary(lm.lactic <- lm(Y ~., data=lactic))
+

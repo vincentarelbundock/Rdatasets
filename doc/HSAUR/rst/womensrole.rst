@@ -62,3 +62,4 @@
         data("womensrole", package = "HSAUR")
         summary(subset(womensrole, sex == "Female"))
         summary(subset(womensrole, sex == "Male"))
+

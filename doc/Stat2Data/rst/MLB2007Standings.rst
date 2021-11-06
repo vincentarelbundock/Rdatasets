@@ -18,7 +18,8 @@
 
    A dataset with 30 observations on the following 21 variables.
 
-   =============== ======================================================
+   ===============
+   ======================================================
    ``Team``        Name of the team
    ``League``      League: ``AL`` or ``NL``
    ``Wins``        Number of wins for the season (out of 162 games)
@@ -40,8 +41,9 @@
    ``StrikeOuts``  Number of strikeouts (by the team's pitchers)
    ``Saves``       Number of games saved (by the team's pitchers)
    ``WHIP``        Number of walks and hits per inning pitched
-   \               
-   =============== ======================================================
+   \              
+   ===============
+   ======================================================
 
    .. rubric:: Details
       :name: details

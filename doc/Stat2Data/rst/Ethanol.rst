@@ -21,7 +21,7 @@
    ``Sugar``   Type of sugar: ``Galactose`` or ``Glucose``
    ``O2Conc``  Oxygen concentration
    ``Ethanol`` Ethanol concentration
-   \           
+   \          
    =========== ===========================================
 
    .. rubric:: Details

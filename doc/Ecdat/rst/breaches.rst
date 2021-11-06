@@ -91,110 +91,37 @@
 
    The following corrections were made to the file:
 
-   +--------+-----------------------------+-----------------------------+
-   | Number | Name of Covered Entity      | Corrections                 |
-   +--------+-----------------------------+-----------------------------+
-   |        |                             |                             |
-   +--------+-----------------------------+-----------------------------+
-   | 45     | Wyoming Department of       | Cause of breach was         |
-   |        | Health                      | missing. Added              |
-   |        |                             | "Unauthorized               |
-   +--------+-----------------------------+-----------------------------+
-   |        |                             | Access / Disclosure" per    |
-   |        |                             | ```smartbrief.com           |
-   |        |                             | /03/29/10`` <https://www.sm |
-   |        |                             | artbrief.com/s/2010/03/5-mo |
-   |        |                             | re-organizations-added-hhs- |
-   |        |                             | online-data-breach-list>`__ |
-   +--------+-----------------------------+-----------------------------+
-   | 55     | Reliant Rehabilitation      | Cause of breach was         |
-   |        | Hospital North              | missing. Added              |
-   |        |                             | "Unauthorized               |
-   +--------+-----------------------------+-----------------------------+
-   |        | Houston                     | Access / Disclosure" per    |
-   |        |                             | Dissent. "Two Breaches      |
-   +--------+-----------------------------+-----------------------------+
-   |        |                             | Involving Unauthorized      |
-   |        |                             | Access Lead to              |
-   |        |                             | Notification."              |
-   +--------+-----------------------------+-----------------------------+
-   |        |                             | ``www.                      |
-   |        |                             | phiprivacy.net/two-breaches |
-   |        |                             | -involving-unauthorized-acc |
-   |        |                             | ess-lead-to-notification``; |
-   |        |                             | approximately 2010-04-20.   |
-   |        |                             | This web page has since     |
-   |        |                             | been removed, apparently    |
-   |        |                             | without having been         |
-   |        |                             | captured by archive.net.]   |
-   +--------+-----------------------------+-----------------------------+
-   | 123    | Aetna                       | Cause of breach was         |
-   |        |                             | missing. Added Improper     |
-   +--------+-----------------------------+-----------------------------+
-   |        |                             | disposal per                |
-   |        |                             | `                           |
-   |        |                             | ``Aetna.com/news/newsReleas |
-   |        |                             | es/2010/0630`` <https://web |
-   |        |                             | .archive.org/web/2010113008 |
-   |        |                             | 0315/http://www.aetna.com/n |
-   |        |                             | ews/newsReleases/2010/0630_ |
-   |        |                             | File_Cabinet_Final.html>`__ |
-   +--------+-----------------------------+-----------------------------+
-   | 157    | Mayo Clinic                 | Cause of breach was         |
-   |        |                             | missing. Added Unauthorized |
-   +--------+-----------------------------+-----------------------------+
-   |        |                             | Access/Disclosure per       |
-   |        |                             | Anderson, Howard. "Mayo     |
-   |        |                             | Fires                       |
-   +--------+-----------------------------+-----------------------------+
-   |        |                             | "Employees in 2 Incidents:  |
-   |        |                             | Both Involved               |
-   +--------+-----------------------------+-----------------------------+
-   |        |                             | Unauthorized Access to      |
-   |        |                             | Records."                   |
-   +--------+-----------------------------+-----------------------------+
-   |        |                             | `Data Breach Today. N.p., 4 |
-   |        |                             | Oct.                        |
-   |        |                             | 201                         |
-   |        |                             | 0 <https://www.databreachto |
-   |        |                             | day.com/mayo-fires-employee |
-   |        |                             | s-in-2-incidents-a-2974>`__ |
-   +--------+-----------------------------+-----------------------------+
-   | 341    | ``Sai                       | Misspelled "Saint Barnabas  |
-   |        | nt Barnabas MedicL Center`` | Medical Center"             |
-   +--------+-----------------------------+-----------------------------+
-   | 347    | `                           | Misspelled "American Health |
-   |        | `Americar Health Medicare`` | Medicare"                   |
-   +--------+-----------------------------+-----------------------------+
-   | 484    | ``L                         | Misspelled "Lake Granbury   |
-   |        | ake Granbury Medicl Ceter`` | Medical Center"             |
-   +--------+-----------------------------+-----------------------------+
-   | 782    | See list of Practices under | Replaced name as "Cogent    |
-   |        | Item 9                      | Healthcare, Inc." checked   |
-   +--------+-----------------------------+-----------------------------+
-   |        |                             | from XML and web documents  |
-   +--------+-----------------------------+-----------------------------+
-   | 805    | Dermatology Associates of   | Had 00/00/0000 on breach    |
-   |        | Tallahassee                 | date. This was crossed      |
-   +--------+-----------------------------+-----------------------------+
-   |        |                             | check to determine that it  |
-   |        |                             | was Sept 4, 2013 with 916   |
-   |        |                             | records                     |
-   +--------+-----------------------------+-----------------------------+
-   | 815    | Santa Clara Valley Medical  | Mistype breach year as      |
-   |        | Center                      | 09/14/2913 corrected as     |
-   |        |                             | 09/14/2013                  |
-   +--------+-----------------------------+-----------------------------+
-   | 961    | ``Valley                    | Misspelled "Valley View     |
-   |        | View Hosptial Association`` | Hospital Association"       |
-   +--------+-----------------------------+-----------------------------+
-   | 1034   | Bio-Reference Laboratories, | Date changed from 00/00/000 |
-   |        | Inc.                        | to 2/02/2014 as             |
-   +--------+-----------------------------+-----------------------------+
-   |        |                             | subsequently determined.    |
-   +--------+-----------------------------+-----------------------------+
-   |        |                             |                             |
-   +--------+-----------------------------+-----------------------------+
+   ====== =====================================
+   ================================================================================================================================================================================================================
+   Number Name of Covered Entity                Corrections
+   \                                           
+   45     Wyoming Department of Health          Cause of breach was missing. Added "Unauthorized
+   \                                            Access / Disclosure" per ```smartbrief.com/03/29/10`` <https://www.smartbrief.com/s/2010/03/5-more-organizations-added-hhs-online-data-breach-list>`__
+   55     Reliant Rehabilitation Hospital North Cause of breach was missing. Added "Unauthorized
+   \      Houston                               Access / Disclosure" per Dissent. "Two Breaches
+   \                                            Involving Unauthorized Access Lead to Notification."
+   \                                            ``www.phiprivacy.net/two-breaches-involving-unauthorized-access-lead-to-notification``; approximately 2010-04-20. This web page has since been removed, apparently without having been captured by archive.net.]
+   123    Aetna                                 Cause of breach was missing. Added Improper
+   \                                            disposal per ```Aetna.com/news/newsReleases/2010/0630`` <https://web.archive.org/web/20101130080315/http://www.aetna.com/news/newsReleases/2010/0630_File_Cabinet_Final.html>`__
+   157    Mayo Clinic                           Cause of breach was missing. Added Unauthorized
+   \                                            Access/Disclosure per Anderson, Howard. "Mayo Fires
+   \                                            "Employees in 2 Incidents: Both Involved
+   \                                            Unauthorized Access to Records."
+   \                                            `Data Breach Today. N.p., 4 Oct. 2010 <https://www.databreachtoday.com/mayo-fires-employees-in-2-incidents-a-2974>`__
+   341    ``Saint Barnabas MedicL Center``      Misspelled "Saint Barnabas Medical Center"
+   347    ``Americar Health Medicare``          Misspelled "American Health Medicare"
+   484    ``Lake Granbury Medicl Ceter``        Misspelled "Lake Granbury Medical Center"
+   782    See list of Practices under Item 9    Replaced name as "Cogent Healthcare, Inc." checked
+   \                                            from XML and web documents
+   805    Dermatology Associates of Tallahassee Had 00/00/0000 on breach date. This was crossed
+   \                                            check to determine that it was Sept 4, 2013 with 916 records
+   815    Santa Clara Valley Medical Center     Mistype breach year as 09/14/2913 corrected as 09/14/2013
+   961    ``Valley View Hosptial Association``  Misspelled "Valley View Hospital Association"
+   1034   Bio-Reference Laboratories, Inc.      Date changed from 00/00/000 to 2/02/2014 as
+   \                                            subsequently determined.
+   \                                           
+   ====== =====================================
+   ================================================================================================================================================================================================================
 
    .. rubric:: Author(s)
       :name: authors

@@ -17,21 +17,16 @@
 
    A dataset with 48 observations on the following 5 variables.
 
-   +-------------+-------------------------------------------------------+
-   | ``Trial``   | Trial number                                          |
-   +-------------+-------------------------------------------------------+
-   | ``Bread``   | Type of bread: ``Multigrain``, ``Rye``, ``White``, or |
-   |             | ``Wholemeal``                                         |
-   +-------------+-------------------------------------------------------+
-   | ``Filling`` | Type of filling: ``HamPickles``, ``PeanutButter``, or |
-   |             | ``Vegemite``                                          |
-   +-------------+-------------------------------------------------------+
-   | ``Butter``  | Butter on the sandwich? ``no`` or ``yes``             |
-   +-------------+-------------------------------------------------------+
-   | ``Ants``    | Number of ants on the sandwich                        |
-   +-------------+-------------------------------------------------------+
-   |             |                                                       |
-   +-------------+-------------------------------------------------------+
+   ===========
+   ===================================================================
+   ``Trial``   Trial number
+   ``Bread``   Type of bread: ``Multigrain``, ``Rye``, ``White``, or ``Wholemeal``
+   ``Filling`` Type of filling: ``HamPickles``, ``PeanutButter``, or ``Vegemite``
+   ``Butter``  Butter on the sandwich? ``no`` or ``yes``
+   ``Ants``    Number of ants on the sandwich
+   \          
+   ===========
+   ===================================================================
 
    .. rubric:: Details
       :name: details

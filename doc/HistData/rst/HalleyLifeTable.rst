@@ -106,3 +106,5 @@
 
       # conditional probability of survival, one more year
       plot(ratio ~ age, data=HalleyLifeTable, ylab="Probability survive one more year")
+
+

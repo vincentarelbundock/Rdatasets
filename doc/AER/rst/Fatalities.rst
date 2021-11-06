@@ -249,3 +249,4 @@
       coeftest(fm7, vcov = vcovHC)
 
       ## TODO: Testing exclusion restrictions
+

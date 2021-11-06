@@ -25,7 +25,7 @@
    ``LastDay``     Archery score on last day
    ``Improvement`` Last day - first day score
    ``Improve``     1=improved or 0=did not improve
-   \               
+   \              
    =============== ===============================
 
    .. rubric:: Details

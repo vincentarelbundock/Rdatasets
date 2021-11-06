@@ -76,3 +76,4 @@
         ) +
         facet_wrap(~form_factor, ncol = 1, scales = "free") +
         guides(color = FALSE)
+

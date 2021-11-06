@@ -112,3 +112,4 @@
         theme_minimal() +
         ylim(0, 100) +
         labs(x = "Year", y = "Percentage of seats", fill = "Era")
+

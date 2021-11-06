@@ -87,3 +87,4 @@
             c("World War I", "Great Depression", "World War II",
               "Vietnam War Start", "Vietnam War Escalated"),
             bg="#FFFFFF", border="#FFFFFF")
+

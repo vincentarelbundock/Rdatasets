@@ -42,3 +42,5 @@
       mean(student_housing$price)
       sd(student_housing$price)
       identical(student_housing, generate_student_housing)
+
+

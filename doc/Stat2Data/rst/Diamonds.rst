@@ -17,22 +17,17 @@
 
    A data frame with 351 observations on the following 6 variables.
 
-   +----------------+----------------------------------------------------+
-   | ``Carat``      | Size of the diamond (in carats)                    |
-   +----------------+----------------------------------------------------+
-   | ``Color``      | Coded as ``D`` (most white/bright) through ``J``   |
-   +----------------+----------------------------------------------------+
-   | ``Clarity``    | Coded as ``IF``, ``VVS1``, ``VVS2``, ``VS1``,      |
-   |                | ``VS2``, ``SI1``, ``SI2``, or ``SI3``              |
-   +----------------+----------------------------------------------------+
-   | ``Depth``      | Depth (as a percentage of diameter)                |
-   +----------------+----------------------------------------------------+
-   | ``PricePerCt`` | Price per carat                                    |
-   +----------------+----------------------------------------------------+
-   | ``TotalPrice`` | Price for the diamond (in dollars)                 |
-   +----------------+----------------------------------------------------+
-   |                |                                                    |
-   +----------------+----------------------------------------------------+
+   ==============
+   ===================================================================================
+   ``Carat``      Size of the diamond (in carats)
+   ``Color``      Coded as ``D`` (most white/bright) through ``J``
+   ``Clarity``    Coded as ``IF``, ``VVS1``, ``VVS2``, ``VS1``, ``VS2``, ``SI1``, ``SI2``, or ``SI3``
+   ``Depth``      Depth (as a percentage of diameter)
+   ``PricePerCt`` Price per carat
+   ``TotalPrice`` Price for the diamond (in dollars)
+   \             
+   ==============
+   ===================================================================================
 
    .. rubric:: Details
       :name: details

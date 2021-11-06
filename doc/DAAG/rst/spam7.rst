@@ -65,3 +65,4 @@
          money + n000 + make, data=spam7)
       plot(spam.rpart)
       text(spam.rpart)
+

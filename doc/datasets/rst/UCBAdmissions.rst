@@ -51,7 +51,7 @@
 
    This data set can also be used for illustrating methods for graphical
    display of categorical data, such as the general-purpose mosaicplot
-   or the fourfoldplot for 2-by-2-by-*k* tables.
+   or the fourfoldplot for 2-by-2-by-\ *k* tables.
 
    .. rubric:: References
       :name: references

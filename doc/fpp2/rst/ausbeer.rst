@@ -31,3 +31,4 @@
 
       data(ausbeer)
       ggseasonplot(ausbeer)
+

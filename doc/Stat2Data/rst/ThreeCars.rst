@@ -27,7 +27,7 @@
    ``Porsche`` Indicator with ``1``\ = Porsche and ``0``\ =otherwise
    ``Jaguar``  Indicator with ``1``\ = Jaguar and ``0``\ =otherwise
    ``BMW``     Indicator with ``1``\ = BMW and ``0``\ =otherwise
-   \           
+   \          
    =========== =====================================================
 
    .. rubric:: Details

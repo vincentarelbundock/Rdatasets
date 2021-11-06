@@ -23,7 +23,7 @@
    ``Calories`` Calories per serving
    ``Sugar``    Grams of sugar per serving
    ``Fiber``    Grams of fiber per serving
-   \            
+   \           
    ============ ==========================
 
    .. rubric:: Details

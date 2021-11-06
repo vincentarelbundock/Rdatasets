@@ -55,3 +55,4 @@
 
       table(ethanol)
       fisher.test(table(ethanol))
+

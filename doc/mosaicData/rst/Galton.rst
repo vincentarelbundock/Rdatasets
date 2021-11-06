@@ -64,3 +64,4 @@
    ::
 
       data(Galton)
+

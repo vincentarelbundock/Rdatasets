@@ -58,3 +58,4 @@
         data("weightgain", package = "HSAUR")
         interaction.plot(weightgain$type, weightgain$source, 
                          weightgain$weightgain)
+

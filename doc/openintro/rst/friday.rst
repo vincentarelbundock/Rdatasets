@@ -86,3 +86,4 @@
         ggplot(aes(x = thirteenth)) +
           geom_histogram(binwidth = 2000) +
           xlim(110000, 140000)
+

@@ -22,7 +22,7 @@
    ``Price`` Selling price (in dollars)
    ``Size``  Size of the house (in square feet)
    ``Lot``   Area of the house's lot (in square feet)
-   \         
+   \        
    ========= ========================================
 
    .. rubric:: Details
