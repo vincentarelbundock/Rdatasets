@@ -102,4 +102,5 @@
 
    Friendly, M. (2006) Data ellipses, HE plots and reduced-rank displays
    for multivariate linear models: SAS software and examples. *Journal
-   of Statistical Software*, 17(6), http://www.jstatsoft.org/v17/i06.
+   of Statistical Software*, 17(6), doi:
+   `10.18637/jss.v017.i06 <https://doi.org/10.18637/jss.v017.i06>`__.

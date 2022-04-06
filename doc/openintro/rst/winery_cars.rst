@@ -60,7 +60,8 @@
       winery_cars$car_number <- rep(1:7, 10)[1:nrow(winery_cars)]
       col <- COL[ifelse(winery_cars$car_number == 3, 4, 1)]
       plot(winery_cars[, c("obs_number", "time_until_next")],
-           col = col, pch = 19)
+        col = col, pch = 19
+      )
       plot(winery_cars$car_number, winery_cars$time_until_next,
-           col = fadeColor(col, "88"), pch = 19)
-
+        col = fadeColor(col, "88"), pch = 19
+      )

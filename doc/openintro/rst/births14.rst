@@ -99,4 +99,3 @@
       ggplot(births14, aes(x = mature, y = gained)) +
         geom_boxplot() +
         labs(x = "Mother's age category", y = "Weight gained during pregnancy")
-

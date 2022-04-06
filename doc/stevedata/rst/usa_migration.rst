@@ -45,6 +45,13 @@
    ``count``
       a numeric vector for the count of inbound/outbound migrants
 
+   .. rubric:: Details
+      :name: details
+
+   "Cote d'Ivoire", "Curacao", and "Reunion" originally had UTF-8
+   characters, which were removed for maximal compliance with CRAN. CRAN
+   raises a note for every non-ASCII character it sees.
+
    .. rubric:: Source
       :name: source
 

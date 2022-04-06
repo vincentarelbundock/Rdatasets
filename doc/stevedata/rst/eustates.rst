@@ -36,5 +36,4 @@
    .. rubric:: Details
       :name: details
 
-   Data come from
-   https://europa.eu/european-union/about-eu/countries_en.
+   Data come from the European Union's website.

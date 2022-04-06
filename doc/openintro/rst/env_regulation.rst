@@ -57,4 +57,3 @@
 
 
       table(env_regulation)
-

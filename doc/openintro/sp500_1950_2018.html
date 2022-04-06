@@ -56,12 +56,12 @@ sp500_1950_2018
 <pre>
 
 data(sp500_1950_2018)
-sp500.ten.years &lt;- subset(sp500_1950_2018,
-    "2009-01-01" &lt;= as.Date(Date) &amp; as.Date(Date) &lt;= "2018-12-31")
+sp500.ten.years &lt;- subset(
+  sp500_1950_2018,
+  "2009-01-01" &lt;= as.Date(Date) &amp; as.Date(Date) &lt;= "2018-12-31"
+)
 d &lt;- diff(sp500.ten.years$Adj.Close)
 mean(d &gt; 0)
-
-
 </pre>
 
 

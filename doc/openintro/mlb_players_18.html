@@ -99,24 +99,25 @@ summary(model)
 anova(model)
 
 # _____ Simplified Analysis, Fewer Positions _____ #
-pos &lt;- list(c("LF", "CF", "RF"),
-    c("1B", "2B", "3B", "SS"),
-    "C")
+pos &lt;- list(
+  c("LF", "CF", "RF"),
+  c("1B", "2B", "3B", "SS"),
+  "C"
+)
 POS &lt;- c("OF", "IF", "C")
 table(d$position)
 
 # _____ On-Base Percentage Across Positions _____ #
 out &lt;- c()
-gp  &lt;- c()
-for(i in 1:length(pos)){
+gp &lt;- c()
+for (i in 1:length(pos)) {
   these &lt;- which(d$position %in% pos[[i]])
-  out   &lt;- c(out, d$OBP[these])
-  gp    &lt;- c(gp, rep(POS[i], length(these)))
+  out &lt;- c(out, d$OBP[these])
+  gp &lt;- c(gp, rep(POS[i], length(these)))
 }
 plot(out ~ as.factor(gp))
 summary(lm(out ~ as.factor(gp)))
 anova(lm(out ~ as.factor(gp)))
-
 </pre>
 
 

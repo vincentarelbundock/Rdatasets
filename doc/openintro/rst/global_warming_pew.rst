@@ -46,4 +46,3 @@
 
 
       global_warming_pew
-

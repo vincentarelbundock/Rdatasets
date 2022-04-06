@@ -55,4 +55,3 @@
 
       mod <- lm(volume ~ diam + height, cherry)
       tidy(mod)
-

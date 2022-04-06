@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Systemic Banking Crises Database II</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for SBCD"><tr><td>SBCD</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Systemic Banking Crises Database II</h2>
+
+<h3>Description</h3>
+
+<p>A data set on banking, currency, debt, and debt-restructuring crises from
+1970 to 2017.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+SBCD
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 574 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>country</code></dt><dd><p>the country, as it appears in the data</p>
+</dd>
+<dt><code>type</code></dt><dd><p>the type of crisis, entered here as &quot;banking&quot;, &quot;currency&quot;, &quot;debt&quot;, or &quot;debtrestructuring&quot;</p>
+</dd>
+<dt><code>year</code></dt><dd><p>the year of the crisis</p>
+</dd>
+<dt><code>month</code></dt><dd><p>the month the crisis started, if known</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data are cobbled from the second and third sheets of the spreadsheet
+the authors provide. Country names are as entered in their spreadsheet.
+Liberia has an &quot;NA&quot; in the raw data for sovereign debt restructuring and I
+don't know why. I elect to keep it.
+</p>
+
+
+<h3>References</h3>
+
+<p>Laeven, Luc and Fabian Valencia. 2020. &quot;Systemic Banking Crises
+Database II&quot;. *IMF Economic Review* 68: 307&ndash;361.
+</p>
+
+
+</div></body></html>

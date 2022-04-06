@@ -48,4 +48,3 @@
 
 
       summary(china)
-

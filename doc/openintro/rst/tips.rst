@@ -68,13 +68,12 @@
         geom_boxplot()
 
       ggplot(tips, aes(x = tip, fill = factor(week))) +
-       geom_density(alpha = 0.5) +
-       labs(x = "Tip", y = "Density", fill = "Week")
+        geom_density(alpha = 0.5) +
+        labs(x = "Tip", y = "Density", fill = "Week")
 
       ggplot(tips, aes(x = tip)) +
-       geom_dotplot()
+        geom_dotplot()
 
       ggplot(tips, aes(x = tip, fill = factor(day))) +
-       geom_density(alpha = 0.5) +
-       labs(x = "Tip", y = "Density", fill = "Day")
-
+        geom_density(alpha = 0.5) +
+        labs(x = "Tip", y = "Density", fill = "Day")

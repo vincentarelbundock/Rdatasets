@@ -67,4 +67,3 @@
       ggplot(ukdemo, aes(x = pay, y = rpi)) +
         geom_point() +
         labs(x = "Average hourly pay", y = "Retail price index")
-

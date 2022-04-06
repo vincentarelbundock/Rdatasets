@@ -46,4 +46,3 @@
 
       drone_blades %>%
         count(supplier, inspection)
-

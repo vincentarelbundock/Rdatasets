@@ -26,7 +26,7 @@
    A data frame with 30 rows and 2 variables.
 
    site_number
-      Location where measurments were taken.
+      Location where measurements were taken.
 
    salinity_ppt
       Salinity value in parts per thousand.
@@ -50,4 +50,3 @@
         facet_wrap(~site_number, ncol = 1)
 
       tidy(aov(salinity_ppt ~ site_number, data = salinity))
-

@@ -82,7 +82,7 @@
           x = "Company",
           y = "Base Clock (GHz)",
           title = "CPU base speed"
-          )
+        )
 
       # Process node size vs. boost speed
       ggplot(cpu, aes(x = process, y = boost_clock)) +
@@ -92,4 +92,3 @@
           y = "Boost Clock (GHz)",
           title = "Process node size vs. boost speed"
         )
-

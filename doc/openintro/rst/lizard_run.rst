@@ -63,4 +63,3 @@
           mean = mean(top_speed),
           sd   = sd(top_speed)
         )
-

@@ -45,12 +45,13 @@ student_sleep
 <pre>
 
 set.seed(2)
-x &lt;- exp(c(rnorm(100, log(7.5), 0.15),
-           rnorm(10, log(10), 0.196)))
+x &lt;- exp(c(
+  rnorm(100, log(7.5), 0.15),
+  rnorm(10, log(10), 0.196)
+))
 x &lt;- round(x - mean(x) + 7.42, 2)
 
 identical(x, student_sleep$hours)
-
 </pre>
 
 

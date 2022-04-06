@@ -53,7 +53,7 @@
    Barnola, U. Siegenthaler, D. Raynaud, J. Jouzel, H. Fischer, K.
    Kawamura, and T.F. Stocker. 2008. High-resolution carbon dioxide
    concentration record 650,000–800,000 years before present. Nature
-   453:379–382. https://www.ncdc.noaa.gov/paleo-search/.
+   453:379–382.
 
    Law Dome, Antarctica, 75-year smoothed: approximately 1010 CE to 1975
    CE Etheridge, D.M., L.P. Steele, R.L. Langenfelds, R.J. Francey,

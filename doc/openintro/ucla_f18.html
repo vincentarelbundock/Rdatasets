@@ -74,12 +74,14 @@ table(ucla_f18$special_topic)
 subset(ucla_f18, is.na(course_numeric))
 table(subset(ucla_f18, !special_topic)$course_numeric &lt; 100)
 elig_courses &lt;-
-    subset(ucla_f18, !special_topic &amp; course_numeric &lt; 100)
+  subset(ucla_f18, !special_topic &amp; course_numeric &lt; 100)
 set.seed(1)
 ucla_textbooks_f18 &lt;-
-    elig_courses[sample(nrow(elig_courses), 100), ]
-tmp &lt;- order(ucla_textbooks_f18$subject,
-    ucla_textbooks_f18$course_numeric)
+  elig_courses[sample(nrow(elig_courses), 100), ]
+tmp &lt;- order(
+  ucla_textbooks_f18$subject,
+  ucla_textbooks_f18$course_numeric
+)
 ucla_textbooks_f18 &lt;- ucla_textbooks_f18[tmp, ]
 rownames(ucla_textbooks_f18) &lt;- NULL
 head(ucla_textbooks_f18)

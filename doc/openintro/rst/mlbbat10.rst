@@ -107,7 +107,7 @@
           title = "On-base percentage across positions",
           y = "On-base percentage across positions",
           x = "Position"
-          )
+        )
 
       # Batting average across positions
       ggplot(mlbbat10_200, aes(x = bat_avg, fill = position)) +
@@ -117,7 +117,7 @@
           fill = NULL,
           y = "Batting average",
           x = "Position"
-          )
+        )
 
       # Mean number of home runs across positions
       mlbbat10_200 %>%
@@ -129,7 +129,7 @@
           title = "Mean number of home runs across positions",
           y = "Home runs",
           x = "Position"
-          )
+        )
 
       # Runs batted in across positions
       ggplot(mlbbat10_200, aes(x = run, y = obp, fill = position)) +
@@ -138,5 +138,4 @@
           title = "Runs batted in across positions",
           y = "Runs",
           x = "Position"
-          )
-
+        )

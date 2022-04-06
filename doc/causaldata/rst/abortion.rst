@@ -26,7 +26,7 @@
    .. rubric:: Format
       :name: format
 
-   A data frame with 19584 rows and 21 variables
+   A data frame with 19584 rows and 22 variables
 
    fip
       State FIPS code
@@ -39,6 +39,9 @@
 
    year
       Year
+
+   t
+      Year but counted on a different scale
 
    sex
       Sex: 1 = male, 2 = female

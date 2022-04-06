@@ -34,10 +34,11 @@
    ::
 
 
-      plot(1:7, 7:1, col=IMSCOL, pch=19, cex=6, xlab="", ylab="",
-           xlim=c(0.5,7.5), ylim=c(-2.5,8), axes=FALSE)
-      text(1:7, 7:1+0.7, paste("IMSCOL[", 1:7, "]", sep=""), cex=0.9)
-      points(1:7, 7:1-0.7, col=IMSCOL[,2], pch=19, cex=6)
-      points(1:7, 7:1-1.4, col=IMSCOL[,3], pch=19, cex=6)
-      points(1:7, 7:1-2.1, col=IMSCOL[,4], pch=19, cex=6)
-
+      plot(1:7, 7:1,
+        col = IMSCOL, pch = 19, cex = 6, xlab = "", ylab = "",
+        xlim = c(0.5, 7.5), ylim = c(-2.5, 8), axes = FALSE
+      )
+      text(1:7, 7:1 + 0.7, paste("IMSCOL[", 1:7, "]", sep = ""), cex = 0.9)
+      points(1:7, 7:1 - 0.7, col = IMSCOL[, 2], pch = 19, cex = 6)
+      points(1:7, 7:1 - 1.4, col = IMSCOL[, 3], pch = 19, cex = 6)
+      points(1:7, 7:1 - 2.1, col = IMSCOL[, 4], pch = 19, cex = 6)

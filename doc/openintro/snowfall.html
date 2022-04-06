@@ -52,26 +52,25 @@ snowfall
 
 library(ggplot2)
 
-ggplot(snowfall, aes(x = total_snow))+
-  geom_histogram(binwidth = 50)+
+ggplot(snowfall, aes(x = total_snow)) +
+  geom_histogram(binwidth = 50) +
   labs(
     title = "Annual Snowfall",
     subtitle = "Paradise, Mt. Rainier National Park",
     x = "Snowfall (in.)",
     y = "Number of Years",
     caption = "Source: National Parks Services"
-    )
+  )
 
-ggplot(snowfall, aes(x = year_start, y = total_snow, group = 1))+
-  geom_line()+
+ggplot(snowfall, aes(x = year_start, y = total_snow, group = 1)) +
+  geom_line() +
   labs(
     title = "Annual Snowfall",
     subtitle = "Paradise, Mt. Rainier National Park",
     y = "Snowfall (in.)",
     x = "Year",
     caption = "Source: National Parks Services"
-    )
-
+  )
 </pre>
 
 

@@ -58,4 +58,3 @@
 
       mod <- lm(gift_aid ~ family_income, data = elmhurst)
       tidy(mod)
-

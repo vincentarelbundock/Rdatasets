@@ -158,11 +158,16 @@
 
       ggplot(esi, aes(x = cap_st, y = glo_col)) +
         geom_point(color = ifelse(esi$code == "USA", "red", "black")) +
-        geom_text(aes(label = ifelse(code == "USA", as.character(code),"")), hjust = 1.2, color = "red") +
+        geom_text(
+        aes(label = ifelse(code == "USA", as.character(code), "")),
+          hjust = 1.2, color = "red"
+          ) +
         labs(x = "Science and technology", y = "Participation in international collaboration efforts")
 
       ggplot(esi, aes(x = vulner, y = cap)) +
         geom_point(color = ifelse(esi$code == "USA", "red", "black")) +
-        geom_text(aes(label = ifelse(code == "USA", as.character(code),"")), hjust = 1.2, color = "red") +
+        geom_text(
+          aes(label = ifelse(code == "USA", as.character(code), "")),
+          hjust = 1.2, color = "red"
+          ) +
         labs(x = "Vulnerability", y = "Capacity")
-

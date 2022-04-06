@@ -63,7 +63,7 @@ Fulham</code>, <code>Haringey</code>, <code>Harrow</code>, <code>Havering</code>
 <p><a href="https://data.london.gov.uk/dataset/ordnance-survey-code-point">https://data.london.gov.uk/dataset/ordnance-survey-code-point</a>
 </p>
 <p>Contains Ordinance Survey data released under the
-<a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">Open Government License, OGL v2</a>.
+<a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/">Open Government License, OGL v2</a>.
 </p>
 
 
@@ -86,7 +86,6 @@ london_murders_counts &lt;- london_murders %&gt;%
   add_tally()
 
 london_murders_counts
-
 ## Not run: 
 # Add number of murders to geographic boundary data
 london_boroughs_murders &lt;- inner_join(london_boroughs, london_murders_counts, by = "borough")
@@ -94,7 +93,7 @@ london_boroughs_murders &lt;- inner_join(london_boroughs, london_murders_counts,
 # Map murders
 ggplot(london_boroughs_murders) +
   geom_polygon(aes(x = x, y = y, group = borough, fill = n), colour = "white") +
-    scale_fill_distiller(direction = 1) +
+  scale_fill_distiller(direction = 1) +
   labs(x = "Easting", y = "Northing", fill = "Number of murders")
 
 ## End(Not run)

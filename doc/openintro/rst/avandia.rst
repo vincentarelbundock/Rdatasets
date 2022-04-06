@@ -47,4 +47,3 @@
 
 
       table(avandia)
-

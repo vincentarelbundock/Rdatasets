@@ -44,4 +44,3 @@
 
       ggplot(helmet, aes(x = lunch, y = helmet)) +
         geom_point()
-

@@ -203,9 +203,10 @@
       # Regarding the callback outcome for race,
       # we observe a very large difference.
       tapply(
-          resume$received_callback,
-          resume[c("race", "gender")],
-          mean)
+        resume$received_callback,
+        resume[c("race", "gender")],
+        mean
+      )
 
       # Natural question: is this statisticaly significant?
       # A proper analysis would take into account the
@@ -217,11 +218,13 @@
       # black candidates by ad ID:
       table(resume$race)
       cb_white <- with(
-          subset(resume, race == "white"),
-          tapply(received_callback, job_ad_id, mean))
+        subset(resume, race == "white"),
+        tapply(received_callback, job_ad_id, mean)
+      )
       cb_black <- with(
-          subset(resume, race == "black"),
-          tapply(received_callback, job_ad_id, mean))
+        subset(resume, race == "black"),
+        tapply(received_callback, job_ad_id, mean)
+      )
       # Next, compute the differences, where the
       # names(cb_white) part ensures we matched up the
       # job ad IDs.
@@ -234,11 +237,13 @@
       # more female-inferred candidates used on the resumes.
       table(resume$gender)
       cb_male <- with(
-          subset(resume, gender == "m"),
-          tapply(received_callback, job_ad_id, mean))
+        subset(resume, gender == "m"),
+        tapply(received_callback, job_ad_id, mean)
+      )
       cb_female <- with(
-          subset(resume, gender == "f"),
-          tapply(received_callback, job_ad_id, mean))
+        subset(resume, gender == "f"),
+        tapply(received_callback, job_ad_id, mean)
+      )
       diff <- cb_female - cb_male[names(cb_female)]
       # The `na.rm = TRUE` part ensures we limit to jobs
       # where both a male and female resume were sent.
@@ -255,4 +260,3 @@
       # means the race finding will almost certainy will
       # hold. However, it is possible that we'll find
       # more interesting results with the gender investigation.
-

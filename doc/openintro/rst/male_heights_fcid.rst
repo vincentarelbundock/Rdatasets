@@ -41,4 +41,3 @@
 
       data(male_heights_fcid)
       histPlot(male_heights_fcid$height_inch)
-

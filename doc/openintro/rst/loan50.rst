@@ -43,7 +43,7 @@
    state
       Two-letter state code.
 
-   home_ownership
+   homeownership
       The ownership status of the applicant's residence.
 
    annual_income
@@ -227,5 +227,3 @@
 
 
       loans_full_schema
-
-

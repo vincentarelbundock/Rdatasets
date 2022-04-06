@@ -58,9 +58,8 @@
 
       library(ggplot2)
 
-      ggplot(earthquakes, aes(x = richter, y = deaths))+
+      ggplot(earthquakes, aes(x = richter, y = deaths)) +
         geom_point()
 
-      ggplot(earthquakes, aes(x = log(deaths)))+
+      ggplot(earthquakes, aes(x = log(deaths))) +
         geom_histogram()
-

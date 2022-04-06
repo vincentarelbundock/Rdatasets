@@ -47,4 +47,3 @@
 
 
       table(ebola_survey)
-

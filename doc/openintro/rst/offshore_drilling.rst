@@ -44,4 +44,3 @@
 
 
       offshore_drilling
-

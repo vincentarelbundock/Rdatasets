@@ -25,10 +25,13 @@
    .. rubric:: Format
       :name: format
 
-   A data frame with 19584 rows and 21 variables
+   A data frame with 19584 rows and 22 variables
 
    year
       Year
+
+   post
+      After-treatment
 
    sid
       state id

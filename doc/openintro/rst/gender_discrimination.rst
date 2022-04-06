@@ -49,4 +49,3 @@
 
       ggplot(gender_discrimination, aes(y = gender, fill = decision)) +
         geom_bar(position = "fill")
-

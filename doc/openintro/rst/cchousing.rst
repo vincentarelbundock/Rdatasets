@@ -35,4 +35,3 @@
 
 
       hist(cchousing$price)
-

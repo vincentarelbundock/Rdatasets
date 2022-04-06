@@ -44,5 +44,3 @@
 
 
       table(leg_mari)
-
-

@@ -67,16 +67,15 @@ They are from the year the film was released.
 library(ggplot2)
 library(scales)
 
-ggplot(mcu_films, aes(x = opening_weekend_us, y = gross_us))+
+ggplot(mcu_films, aes(x = opening_weekend_us, y = gross_us)) +
   geom_point() +
   labs(
     title = "MCU Box Office Totals: Opening weekend vs. all-time",
     x = "Opening weekend totals (USD in millions)",
     y = "All-time totals (USD)"
-    ) +
-  scale_x_continuous(labels = label_dollar(scale = 1/1000000)) +
-  scale_y_continuous(labels = label_dollar(scale = 1/1000000))
-
+  ) +
+  scale_x_continuous(labels = label_dollar(scale = 1 / 1000000)) +
+  scale_y_continuous(labels = label_dollar(scale = 1 / 1000000))
 </pre>
 
 
