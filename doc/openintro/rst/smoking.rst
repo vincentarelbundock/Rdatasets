@@ -99,4 +99,3 @@
 
       ggplot(smoking, aes(x = marital_status, fill = smoke)) +
         geom_bar(position = "fill")
-

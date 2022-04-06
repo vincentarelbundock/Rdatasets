@@ -27,7 +27,7 @@ salinity
 </p>
 
 <dl>
-<dt>site_number</dt><dd><p>Location where measurments were taken.</p>
+<dt>site_number</dt><dd><p>Location where measurements were taken.</p>
 </dd>
 <dt>salinity_ppt</dt><dd><p>Salinity value in parts per thousand.</p>
 </dd>
@@ -52,7 +52,6 @@ ggplot(salinity, aes(x = salinity_ppt)) +
   facet_wrap(~site_number, ncol = 1)
 
 tidy(aov(salinity_ppt ~ site_number, data = salinity))
-
 </pre>
 
 

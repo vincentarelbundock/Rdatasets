@@ -43,4 +43,3 @@
 
 
       table(burger)
-

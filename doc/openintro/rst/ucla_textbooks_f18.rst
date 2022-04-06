@@ -144,12 +144,14 @@
       ggplot(ucla_textbooks_f18, aes(x = bookstore_new, y = amazon_new)) +
         geom_point() +
         geom_abline(slope = 1, intercept = 0, color = "orange") +
-        labs(x = "UCLA Bookstore price", y = "Amazon price",
-             title = "Amazon vs. UCLA Bookstore prices of new textbooks",
-             subtitle = "Orange line represents y = x")
+        labs(
+          x = "UCLA Bookstore price", y = "Amazon price",
+          title = "Amazon vs. UCLA Bookstore prices of new textbooks",
+          subtitle = "Orange line represents y = x"
+        )
 
       # The following outliers were double checked for accuracy
-      ucla_textbooks_f18_with_diff <-  ucla_textbooks_f18 %>%
+      ucla_textbooks_f18_with_diff <- ucla_textbooks_f18 %>%
         mutate(diff = bookstore_new - amazon_new)
 
       ucla_textbooks_f18_with_diff %>%
@@ -161,4 +163,3 @@
 
       # t-test of price differences
       t.test(ucla_textbooks_f18_with_diff$diff)
-

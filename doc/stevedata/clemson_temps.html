@@ -10,7 +10,7 @@
 
 <h3>Description</h3>
 
-<p>This data set contains daily temperatures (highs) for Clemson, South Carolina
+<p>This data set contains daily temperatures (highs and lows) for Clemson, South Carolina
 from Jan. 1, 1930 to the end of the most recent calendar year.
 The goal is to update this periodically with new data for
 as long as I live in this town.
@@ -26,21 +26,13 @@ clemson_temps
 
 <h3>Format</h3>
 
-<p>A data frame with 32,777 observations on the following 8 variables.
+<p>A data frame with 33,148 observations on the following 3 variables.
 </p>
 
 <dl>
 <dt><code>date</code></dt><dd><p>the date</p>
 </dd>
-<dt><code>year</code></dt><dd><p>the year</p>
-</dd>
-<dt><code>month</code></dt><dd><p>the month</p>
-</dd>
-<dt><code>day</code></dt><dd><p>the day of the month</p>
-</dd>
-<dt><code>yd</code></dt><dd><p>the day of the year</p>
-</dd>
-<dt><code>value</code></dt><dd><p>the daily high in Celsius*10. I don't know why NOAA does it this way, but there you go.</p>
+<dt><code>tmin</code></dt><dd><p>the daily low, adjusted to Fahrenheit</p>
 </dd>
 <dt><code>tmax</code></dt><dd><p>the daily high, adjusted to Fahrenheit</p>
 </dd>
@@ -51,6 +43,7 @@ clemson_temps
 <h3>Details</h3>
 
 <p>Data obtained from NOAA, via the <span class="pkg">rnoaa</span> package. The station identifier is <code>GHCND:USC00381770</code> for added context.
+The call from <span class="pkg">rnoaa</span> returns these values initially as Celsius*10. I don't know why NOAA does it this way, but there you go.
 </p>
 
 

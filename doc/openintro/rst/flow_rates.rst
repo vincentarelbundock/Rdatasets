@@ -28,7 +28,7 @@
    A data frame with 31 rows and 3 variables.
 
    site
-      Location where measurments were taken.
+      Location where measurements were taken.
 
    date
       Date measurements were taken.
@@ -56,7 +56,7 @@
         labs(
           title = "River flow rates by site",
           x = "Site",
-          y = expression(paste("Flow (ft"^3*"/s)"))
+          y = expression(paste("Flow (ft"^3 * "/s)"))
         )
 
       # River flow rates over time
@@ -65,7 +65,6 @@
         labs(
           title = "River flow rates over time",
           x = "Date",
-          y = expression(paste("Flow (ft"^3*"/s)")),
+          y = expression(paste("Flow (ft"^3 * "/s)")),
           color = "Site", shape = "Site"
         )
-

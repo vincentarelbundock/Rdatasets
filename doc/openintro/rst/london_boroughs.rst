@@ -60,7 +60,7 @@
 
    Contains Ordinance Survey data released under the `Open Government
    License, OGL
-   v2 <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/>`__.
+   v2 <https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/>`__.
 
    .. rubric:: See Also
       :name: see-also
@@ -82,7 +82,6 @@
         add_tally()
 
       london_murders_counts
-
       ## Not run: 
       # Add number of murders to geographic boundary data
       london_boroughs_murders <- inner_join(london_boroughs, london_murders_counts, by = "borough")
@@ -90,7 +89,7 @@
       # Map murders
       ggplot(london_boroughs_murders) +
         geom_polygon(aes(x = x, y = y, group = borough, fill = n), colour = "white") +
-          scale_fill_distiller(direction = 1) +
+        scale_fill_distiller(direction = 1) +
         labs(x = "Easting", y = "Northing", fill = "Number of murders")
 
       ## End(Not run)

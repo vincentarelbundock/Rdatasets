@@ -52,4 +52,3 @@
       dim(d)
       apply(d[, 2:3], 2, mean)
       apply(d[, 2:3], 2, sd)
-

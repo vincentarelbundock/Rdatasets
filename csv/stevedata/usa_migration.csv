@@ -377,13 +377,13 @@
 "376",2010,"United States of America","Inbound","Costa Rica",90687
 "377",2015,"United States of America","Inbound","Costa Rica",87551
 "378",2017,"United States of America","Inbound","Costa Rica",90455
-"379",1990,"United States of America","Inbound","Côte d'Ivoire",1388
-"380",1995,"United States of America","Inbound","Côte d'Ivoire",4337
-"381",2000,"United States of America","Inbound","Côte d'Ivoire",7355
-"382",2005,"United States of America","Inbound","Côte d'Ivoire",14130
-"383",2010,"United States of America","Inbound","Côte d'Ivoire",21516
-"384",2015,"United States of America","Inbound","Côte d'Ivoire",27438
-"385",2017,"United States of America","Inbound","Côte d'Ivoire",28348
+"379",1990,"United States of America","Inbound","Cote d'Ivoire",1388
+"380",1995,"United States of America","Inbound","Cote d'Ivoire",4337
+"381",2000,"United States of America","Inbound","Cote d'Ivoire",7355
+"382",2005,"United States of America","Inbound","Cote d'Ivoire",14130
+"383",2010,"United States of America","Inbound","Cote d'Ivoire",21516
+"384",2015,"United States of America","Inbound","Cote d'Ivoire",27438
+"385",2017,"United States of America","Inbound","Cote d'Ivoire",28348
 "386",1990,"United States of America","Inbound","Croatia",22927
 "387",1995,"United States of America","Inbound","Croatia",32344
 "388",2000,"United States of America","Inbound","Croatia",41946
@@ -398,13 +398,13 @@
 "397",2010,"United States of America","Inbound","Cuba",1055229
 "398",2015,"United States of America","Inbound","Cuba",1210873
 "399",2017,"United States of America","Inbound","Cuba",1251037
-"400",1990,"United States of America","Inbound","Curaçao",NA
-"401",1995,"United States of America","Inbound","Curaçao",NA
-"402",2000,"United States of America","Inbound","Curaçao",NA
-"403",2005,"United States of America","Inbound","Curaçao",NA
-"404",2010,"United States of America","Inbound","Curaçao",NA
-"405",2015,"United States of America","Inbound","Curaçao",NA
-"406",2017,"United States of America","Inbound","Curaçao",NA
+"400",1990,"United States of America","Inbound","Curacao",NA
+"401",1995,"United States of America","Inbound","Curacao",NA
+"402",2000,"United States of America","Inbound","Curacao",NA
+"403",2005,"United States of America","Inbound","Curacao",NA
+"404",2010,"United States of America","Inbound","Curacao",NA
+"405",2015,"United States of America","Inbound","Curacao",NA
+"406",2017,"United States of America","Inbound","Curacao",NA
 "407",1990,"United States of America","Inbound","Cyprus",10060
 "408",1995,"United States of America","Inbound","Cyprus",10714
 "409",2000,"United States of America","Inbound","Cyprus",11368
@@ -1196,13 +1196,13 @@
 "1195",2010,"United States of America","Inbound","Republic of Moldova",31694
 "1196",2015,"United States of America","Inbound","Republic of Moldova",41832
 "1197",2017,"United States of America","Inbound","Republic of Moldova",43219
-"1198",1990,"United States of America","Inbound","Réunion",NA
-"1199",1995,"United States of America","Inbound","Réunion",NA
-"1200",2000,"United States of America","Inbound","Réunion",NA
-"1201",2005,"United States of America","Inbound","Réunion",NA
-"1202",2010,"United States of America","Inbound","Réunion",NA
-"1203",2015,"United States of America","Inbound","Réunion",NA
-"1204",2017,"United States of America","Inbound","Réunion",NA
+"1198",1990,"United States of America","Inbound","Reunion",NA
+"1199",1995,"United States of America","Inbound","Reunion",NA
+"1200",2000,"United States of America","Inbound","Reunion",NA
+"1201",2005,"United States of America","Inbound","Reunion",NA
+"1202",2010,"United States of America","Inbound","Reunion",NA
+"1203",2015,"United States of America","Inbound","Reunion",NA
+"1204",2017,"United States of America","Inbound","Reunion",NA
 "1205",1990,"United States of America","Inbound","Romania",91106
 "1206",1995,"United States of America","Inbound","Romania",115055
 "1207",2000,"United States of America","Inbound","Romania",139418
@@ -1668,7 +1668,7 @@
 "1667",1990,"United States of America","Outbound","Mauritius",37
 "1668",1990,"United States of America","Outbound","Mayotte",NA
 "1669",1990,"United States of America","Outbound","Mozambique",NA
-"1670",1990,"United States of America","Outbound","Réunion",NA
+"1670",1990,"United States of America","Outbound","Reunion",NA
 "1671",1990,"United States of America","Outbound","Rwanda",NA
 "1672",1990,"United States of America","Outbound","Seychelles",NA
 "1673",1990,"United States of America","Outbound","Somalia",NA
@@ -1705,7 +1705,7 @@
 "1704",1990,"United States of America","Outbound","Benin",NA
 "1705",1990,"United States of America","Outbound","Burkina Faso",NA
 "1706",1990,"United States of America","Outbound","Cabo Verde",188
-"1707",1990,"United States of America","Outbound","Côte d'Ivoire",NA
+"1707",1990,"United States of America","Outbound","Cote d'Ivoire",NA
 "1708",1990,"United States of America","Outbound","Gambia",NA
 "1709",1990,"United States of America","Outbound","Ghana",437
 "1710",1990,"United States of America","Outbound","Guinea",552
@@ -1839,7 +1839,7 @@
 "1838",1990,"United States of America","Outbound","Caribbean Netherlands",346
 "1839",1990,"United States of America","Outbound","Cayman Islands",1632
 "1840",1990,"United States of America","Outbound","Cuba",1186
-"1841",1990,"United States of America","Outbound","Curaçao",NA
+"1841",1990,"United States of America","Outbound","Curacao",NA
 "1842",1990,"United States of America","Outbound","Dominica",226
 "1843",1990,"United States of America","Outbound","Dominican Republic",9115
 "1844",1990,"United States of America","Outbound","Grenada",NA
@@ -1938,7 +1938,7 @@
 "1937",1995,"United States of America","Outbound","Mauritius",30
 "1938",1995,"United States of America","Outbound","Mayotte",NA
 "1939",1995,"United States of America","Outbound","Mozambique",NA
-"1940",1995,"United States of America","Outbound","Réunion",NA
+"1940",1995,"United States of America","Outbound","Reunion",NA
 "1941",1995,"United States of America","Outbound","Rwanda",NA
 "1942",1995,"United States of America","Outbound","Seychelles",NA
 "1943",1995,"United States of America","Outbound","Somalia",NA
@@ -1975,7 +1975,7 @@
 "1974",1995,"United States of America","Outbound","Benin",NA
 "1975",1995,"United States of America","Outbound","Burkina Faso",NA
 "1976",1995,"United States of America","Outbound","Cabo Verde",232
-"1977",1995,"United States of America","Outbound","Côte d'Ivoire",NA
+"1977",1995,"United States of America","Outbound","Cote d'Ivoire",NA
 "1978",1995,"United States of America","Outbound","Gambia",NA
 "1979",1995,"United States of America","Outbound","Ghana",435
 "1980",1995,"United States of America","Outbound","Guinea",636
@@ -2109,7 +2109,7 @@
 "2108",1995,"United States of America","Outbound","Caribbean Netherlands",722
 "2109",1995,"United States of America","Outbound","Cayman Islands",1743
 "2110",1995,"United States of America","Outbound","Cuba",899
-"2111",1995,"United States of America","Outbound","Curaçao",NA
+"2111",1995,"United States of America","Outbound","Curacao",NA
 "2112",1995,"United States of America","Outbound","Dominica",299
 "2113",1995,"United States of America","Outbound","Dominican Republic",10124
 "2114",1995,"United States of America","Outbound","Grenada",NA
@@ -2208,7 +2208,7 @@
 "2207",2000,"United States of America","Outbound","Mauritius",41
 "2208",2000,"United States of America","Outbound","Mayotte",NA
 "2209",2000,"United States of America","Outbound","Mozambique",NA
-"2210",2000,"United States of America","Outbound","Réunion",NA
+"2210",2000,"United States of America","Outbound","Reunion",NA
 "2211",2000,"United States of America","Outbound","Rwanda",NA
 "2212",2000,"United States of America","Outbound","Seychelles",NA
 "2213",2000,"United States of America","Outbound","Somalia",NA
@@ -2245,7 +2245,7 @@
 "2244",2000,"United States of America","Outbound","Benin",NA
 "2245",2000,"United States of America","Outbound","Burkina Faso",NA
 "2246",2000,"United States of America","Outbound","Cabo Verde",275
-"2247",2000,"United States of America","Outbound","Côte d'Ivoire",NA
+"2247",2000,"United States of America","Outbound","Cote d'Ivoire",NA
 "2248",2000,"United States of America","Outbound","Gambia",NA
 "2249",2000,"United States of America","Outbound","Ghana",487
 "2250",2000,"United States of America","Outbound","Guinea",689
@@ -2379,7 +2379,7 @@
 "2378",2000,"United States of America","Outbound","Caribbean Netherlands",1098
 "2379",2000,"United States of America","Outbound","Cayman Islands",1829
 "2380",2000,"United States of America","Outbound","Cuba",612
-"2381",2000,"United States of America","Outbound","Curaçao",NA
+"2381",2000,"United States of America","Outbound","Curacao",NA
 "2382",2000,"United States of America","Outbound","Dominica",356
 "2383",2000,"United States of America","Outbound","Dominican Republic",11133
 "2384",2000,"United States of America","Outbound","Grenada",NA
@@ -2478,7 +2478,7 @@
 "2477",2005,"United States of America","Outbound","Mauritius",40
 "2478",2005,"United States of America","Outbound","Mayotte",NA
 "2479",2005,"United States of America","Outbound","Mozambique",NA
-"2480",2005,"United States of America","Outbound","Réunion",NA
+"2480",2005,"United States of America","Outbound","Reunion",NA
 "2481",2005,"United States of America","Outbound","Rwanda",NA
 "2482",2005,"United States of America","Outbound","Seychelles",NA
 "2483",2005,"United States of America","Outbound","Somalia",NA
@@ -2515,7 +2515,7 @@
 "2514",2005,"United States of America","Outbound","Benin",NA
 "2515",2005,"United States of America","Outbound","Burkina Faso",NA
 "2516",2005,"United States of America","Outbound","Cabo Verde",307
-"2517",2005,"United States of America","Outbound","Côte d'Ivoire",NA
+"2517",2005,"United States of America","Outbound","Cote d'Ivoire",NA
 "2518",2005,"United States of America","Outbound","Gambia",NA
 "2519",2005,"United States of America","Outbound","Ghana",685
 "2520",2005,"United States of America","Outbound","Guinea",550
@@ -2649,7 +2649,7 @@
 "2648",2005,"United States of America","Outbound","Caribbean Netherlands",1170
 "2649",2005,"United States of America","Outbound","Cayman Islands",2234
 "2650",2005,"United States of America","Outbound","Cuba",609
-"2651",2005,"United States of America","Outbound","Curaçao",NA
+"2651",2005,"United States of America","Outbound","Curacao",NA
 "2652",2005,"United States of America","Outbound","Dominica",439
 "2653",2005,"United States of America","Outbound","Dominican Republic",17858
 "2654",2005,"United States of America","Outbound","Grenada",NA
@@ -2748,7 +2748,7 @@
 "2747",2010,"United States of America","Outbound","Mauritius",43
 "2748",2010,"United States of America","Outbound","Mayotte",NA
 "2749",2010,"United States of America","Outbound","Mozambique",NA
-"2750",2010,"United States of America","Outbound","Réunion",NA
+"2750",2010,"United States of America","Outbound","Reunion",NA
 "2751",2010,"United States of America","Outbound","Rwanda",NA
 "2752",2010,"United States of America","Outbound","Seychelles",NA
 "2753",2010,"United States of America","Outbound","Somalia",NA
@@ -2785,7 +2785,7 @@
 "2784",2010,"United States of America","Outbound","Benin",NA
 "2785",2010,"United States of America","Outbound","Burkina Faso",NA
 "2786",2010,"United States of America","Outbound","Cabo Verde",338
-"2787",2010,"United States of America","Outbound","Côte d'Ivoire",NA
+"2787",2010,"United States of America","Outbound","Cote d'Ivoire",NA
 "2788",2010,"United States of America","Outbound","Gambia",NA
 "2789",2010,"United States of America","Outbound","Ghana",508
 "2790",2010,"United States of America","Outbound","Guinea",472
@@ -2919,7 +2919,7 @@
 "2918",2010,"United States of America","Outbound","Caribbean Netherlands",517
 "2919",2010,"United States of America","Outbound","Cayman Islands",2640
 "2920",2010,"United States of America","Outbound","Cuba",556
-"2921",2010,"United States of America","Outbound","Curaçao",304
+"2921",2010,"United States of America","Outbound","Curacao",304
 "2922",2010,"United States of America","Outbound","Dominica",534
 "2923",2010,"United States of America","Outbound","Dominican Republic",24457
 "2924",2010,"United States of America","Outbound","Grenada",NA
@@ -3018,7 +3018,7 @@
 "3017",2015,"United States of America","Outbound","Mauritius",49
 "3018",2015,"United States of America","Outbound","Mayotte",NA
 "3019",2015,"United States of America","Outbound","Mozambique",NA
-"3020",2015,"United States of America","Outbound","Réunion",NA
+"3020",2015,"United States of America","Outbound","Reunion",NA
 "3021",2015,"United States of America","Outbound","Rwanda",NA
 "3022",2015,"United States of America","Outbound","Seychelles",NA
 "3023",2015,"United States of America","Outbound","Somalia",NA
@@ -3055,7 +3055,7 @@
 "3054",2015,"United States of America","Outbound","Benin",NA
 "3055",2015,"United States of America","Outbound","Burkina Faso",NA
 "3056",2015,"United States of America","Outbound","Cabo Verde",351
-"3057",2015,"United States of America","Outbound","Côte d'Ivoire",NA
+"3057",2015,"United States of America","Outbound","Cote d'Ivoire",NA
 "3058",2015,"United States of America","Outbound","Gambia",NA
 "3059",2015,"United States of America","Outbound","Ghana",602
 "3060",2015,"United States of America","Outbound","Guinea",301
@@ -3189,7 +3189,7 @@
 "3188",2015,"United States of America","Outbound","Caribbean Netherlands",588
 "3189",2015,"United States of America","Outbound","Cayman Islands",2607
 "3190",2015,"United States of America","Outbound","Cuba",500
-"3191",2015,"United States of America","Outbound","Curaçao",330
+"3191",2015,"United States of America","Outbound","Curacao",330
 "3192",2015,"United States of America","Outbound","Dominica",623
 "3193",2015,"United States of America","Outbound","Dominican Republic",25814
 "3194",2015,"United States of America","Outbound","Grenada",NA
@@ -3288,7 +3288,7 @@
 "3287",2017,"United States of America","Outbound","Mauritius",49
 "3288",2017,"United States of America","Outbound","Mayotte",NA
 "3289",2017,"United States of America","Outbound","Mozambique",NA
-"3290",2017,"United States of America","Outbound","Réunion",NA
+"3290",2017,"United States of America","Outbound","Reunion",NA
 "3291",2017,"United States of America","Outbound","Rwanda",NA
 "3292",2017,"United States of America","Outbound","Seychelles",NA
 "3293",2017,"United States of America","Outbound","Somalia",NA
@@ -3325,7 +3325,7 @@
 "3324",2017,"United States of America","Outbound","Benin",NA
 "3325",2017,"United States of America","Outbound","Burkina Faso",NA
 "3326",2017,"United States of America","Outbound","Cabo Verde",359
-"3327",2017,"United States of America","Outbound","Côte d'Ivoire",NA
+"3327",2017,"United States of America","Outbound","Cote d'Ivoire",NA
 "3328",2017,"United States of America","Outbound","Gambia",NA
 "3329",2017,"United States of America","Outbound","Ghana",629
 "3330",2017,"United States of America","Outbound","Guinea",292
@@ -3459,7 +3459,7 @@
 "3458",2017,"United States of America","Outbound","Caribbean Netherlands",610
 "3459",2017,"United States of America","Outbound","Cayman Islands",2676
 "3460",2017,"United States of America","Outbound","Cuba",492
-"3461",2017,"United States of America","Outbound","Curaçao",336
+"3461",2017,"United States of America","Outbound","Curacao",336
 "3462",2017,"United States of America","Outbound","Dominica",628
 "3463",2017,"United States of America","Outbound","Dominican Republic",26397
 "3464",2017,"United States of America","Outbound","Grenada",NA

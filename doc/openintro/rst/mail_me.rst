@@ -71,8 +71,7 @@
       chisq.test(x)
 
       m <- glm(mailed_letter ~ stamped + found_coin + gender,
-          data = mail_me,
-          family = binomial)
+        data = mail_me,
+        family = binomial
+      )
       summary(m)
-
-

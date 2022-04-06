@@ -131,4 +131,3 @@
 
       ggplot(mtl, aes(x = ipa_qgrp, y = met_minwk)) +
         geom_boxplot()
-

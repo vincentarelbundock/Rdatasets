@@ -10,7 +10,7 @@
    .. rubric:: Description
       :name: description
 
-   Results from a Yahoo! News poll conducted by YouGov on May 29-39,
+   Results from a Yahoo! News poll conducted by YouGov on May 29-31,
    2020. In total 1060 U.S. adults were asked a series of questions
    regarding race and justice in the wake of the killing of George Floyd
    by a police officer. Results in this data set are percentages for the
@@ -81,4 +81,3 @@
       equal treatment from the police?",
           fill = "Response"
         )
-

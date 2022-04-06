@@ -78,4 +78,3 @@
       # Construct Z-scores and p-values.
       z <- (frac_correct - expected) / se
       pt(z, df = n - 1)
-

@@ -52,8 +52,8 @@
    .. rubric:: Source
       :name: source
 
-   http://www.ams.org/employment/surveyreports.html Supplementary Table
-   4 in the 2008-09 data. See
+   From the now defunct http://www.ams.org/employment/surveyreports.html
+   Supplementary Table 4 in the 2008-09 data. See
    http://www.ams.org/profession/data/annual-survey/docsgrtd for more
    recent data.
 

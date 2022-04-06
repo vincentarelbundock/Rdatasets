@@ -50,4 +50,3 @@
 
 
       stem_cell
-

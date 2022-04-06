@@ -68,6 +68,9 @@
       The country name for where the vehicle manufacturer is
       headquartered
 
+   msrp
+      Manufacturer's suggested retail price in U.S. dollars (USD)
+
    .. rubric:: Details
       :name: details
 

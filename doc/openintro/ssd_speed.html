@@ -63,8 +63,8 @@ ssd_speed %&gt;%
 
 ssd_speed %&gt;%
   filter(form_factor != "mSATA") %&gt;%
-  ggplot(aes(x = read, y = write, color = form_factor))+
-  geom_point()+
+  ggplot(aes(x = read, y = write, color = form_factor)) +
+  geom_point() +
   labs(
     title = "Average read vs. write speed of SSDs",
     x = "Read speed (MB/s)",
@@ -72,7 +72,6 @@ ssd_speed %&gt;%
   ) +
   facet_wrap(~form_factor, ncol = 1, scales = "free") +
   guides(color = FALSE)
-
 </pre>
 
 

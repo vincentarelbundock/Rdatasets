@@ -87,7 +87,7 @@
           y = "Sale price (USD)",
           title = "Homes for sale in Duke Forest, Durham, NC",
           subtitle = "Data are from November 2020"
-          )
+        )
 
       # Area and price
       ggplot(duke_forest, aes(x = area, y = price)) +
@@ -97,5 +97,4 @@
           y = "Sale price (USD)",
           title = "Homes for sale in Duke Forest, Durham, NC",
           subtitle = "Data are from November 2020"
-          )
-
+        )

@@ -71,4 +71,3 @@
 
       orings_mod <- glm(outcome ~ temperature, data = orings_long, family = "binomial")
       tidy(orings_mod)
-

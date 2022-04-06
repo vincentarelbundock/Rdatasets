@@ -48,4 +48,5 @@
    Harper, Elizabeth K. and Paul, William J. and Mech, L. David and
    Weisberg, Sanford (2008), Effectiveness of Lethal, Directed
    Wolf-Depredation Control in Minnesota, *Journal of Wildlife
-   Management*, 72, 3, 778-784. http://dx.doi.org/10.2193/2007-273
+   Management*, 72, 3, 778-784. doi:
+   `10.2193/2007-273 <https://doi.org/10.2193/2007-273>`__

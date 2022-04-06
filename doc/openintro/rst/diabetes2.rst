@@ -62,4 +62,3 @@
       (cont.table <- table(diabetes2))
       (m <- chisq.test(cont.table))
       m$expected
-

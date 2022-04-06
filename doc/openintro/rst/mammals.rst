@@ -92,4 +92,3 @@
         geom_point() +
         geom_smooth(method = "lm") +
         labs(x = "Log of body weight", x = "Log of brain weight")
-

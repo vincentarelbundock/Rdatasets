@@ -45,4 +45,3 @@
 
 
       full_body_scan
-

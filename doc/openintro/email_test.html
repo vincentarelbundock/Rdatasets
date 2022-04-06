@@ -93,7 +93,7 @@ observations on the following 21 variables.
 
 e &lt;- email
 
-#______ Variables For Logistic Regression ______#
+# ______ Variables For Logistic Regression ______#
 # Variables are modified to match
 #   OpenIntro Statistics, Second Edition
 # As Is (7): spam, to_multiple, winner, format,
@@ -102,45 +102,49 @@ e &lt;- email
 #              viagra, urgent_subj, number
 # Become Indicators (5): cc, attach, dollar,
 #                        inherit, password
-e$cc       &lt;- ifelse(email$cc &gt; 0, 1, 0)
-e$attach   &lt;- ifelse(email$attach &gt; 0, 1, 0)
-e$dollar   &lt;- ifelse(email$dollar &gt; 0, 1, 0)
-e$inherit  &lt;- ifelse(email$inherit &gt; 0, 1, 0)
+e$cc &lt;- ifelse(email$cc &gt; 0, 1, 0)
+e$attach &lt;- ifelse(email$attach &gt; 0, 1, 0)
+e$dollar &lt;- ifelse(email$dollar &gt; 0, 1, 0)
+e$inherit &lt;- ifelse(email$inherit &gt; 0, 1, 0)
 e$password &lt;- ifelse(email$password &gt; 0, 1, 0)
 # Transform (3): num_char, line_breaks, exclaim_mess
-#e$num_char     &lt;- cut(email$num_char, c(0,1,5,10,20,1000))
-#e$line_breaks  &lt;- cut(email$line_breaks, c(0,10,100,500,10000))
-#e$exclaim_mess &lt;- cut(email$exclaim_mess, c(-1,0,1,5,10000))
+# e$num_char     &lt;- cut(email$num_char, c(0,1,5,10,20,1000))
+# e$line_breaks  &lt;- cut(email$line_breaks, c(0,10,100,500,10000))
+# e$exclaim_mess &lt;- cut(email$exclaim_mess, c(-1,0,1,5,10000))
 g &lt;- glm(spam ~ to_multiple + winner + format +
-                re_subj + exclaim_subj +
-                cc + attach + dollar +
-                inherit + password, # +
-                #num_char + line_breaks + exclaim_mess,
-                data=e, family=binomial)
+  re_subj + exclaim_subj +
+  cc + attach + dollar +
+  inherit + password, # +
+# num_char + line_breaks + exclaim_mess,
+data = e, family = binomial
+)
 summary(g)
 
 
-#______ Variable Selection Via AIC ______#
+# ______ Variable Selection Via AIC ______#
 g. &lt;- step(g)
-plot(predict(g., type="response"), e$spam)
+plot(predict(g., type = "response"), e$spam)
 
 
-#______ Splitting num_char by html ______#
-x   &lt;- log(email$num_char)
-bw  &lt;- 0.004
-R   &lt;- range(x) + c(-1, 1)
-wt  &lt;- sum(email$format == 1)/nrow(email)
-htmlAll   &lt;- density(x, bw=0.4, from=R[1], to=R[2])
-htmlNo    &lt;- density(x[email$format != 1], bw=0.4,
-                     from=R[1], to=R[2])
-htmlYes   &lt;- density(x[email$format == 1], bw=0.4,
-                     from=R[1], to=R[2])
-htmlNo$y  &lt;- htmlNo$y #* (1-wt)
+# ______ Splitting num_char by html ______#
+x &lt;- log(email$num_char)
+bw &lt;- 0.004
+R &lt;- range(x) + c(-1, 1)
+wt &lt;- sum(email$format == 1) / nrow(email)
+htmlAll &lt;- density(x, bw = 0.4, from = R[1], to = R[2])
+htmlNo &lt;- density(x[email$format != 1],
+  bw = 0.4,
+  from = R[1], to = R[2]
+)
+htmlYes &lt;- density(x[email$format == 1],
+  bw = 0.4,
+  from = R[1], to = R[2]
+)
+htmlNo$y &lt;- htmlNo$y #* (1-wt)
 htmlYes$y &lt;- htmlYes$y #* wt + htmlNo$y
-plot(htmlAll, xlim=c(-4, 6), ylim=c(0, 0.4))
-lines(htmlNo, col=4)
-lines(htmlYes, lwd=2, col=2)
-
+plot(htmlAll, xlim = c(-4, 6), ylim = c(0, 0.4))
+lines(htmlNo, col = 4)
+lines(htmlYes, lwd = 2, col = 2)
 </pre>
 
 

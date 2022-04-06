@@ -48,4 +48,3 @@
       table(cards$suit)
       table(cards$face)
       table(cards$suit, cards$face)
-

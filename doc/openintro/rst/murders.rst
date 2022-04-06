@@ -56,5 +56,4 @@
         labs(
           x = "Percent in poverty",
           y = "Number of murders per year per million people"
-          )
-
+        )

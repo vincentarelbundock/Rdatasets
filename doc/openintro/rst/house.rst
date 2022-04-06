@@ -91,25 +91,28 @@
             between(year_start, 1940, 1945) ~ "World War II",
             between(year_start, 1960, 1965) ~ "Vietnam War Start",
             between(year_start, 1965, 1975) ~ "Vietnam War Escalated",
-            TRUE                            ~ NA_character_
+            TRUE ~ NA_character_
           ),
-          era = fct_relevel(era, "Civil War", "World War I",
-                                 "Great Depression", "World War II",
-                                 "Vietnam War Start", "Vietnam War Escalated")
+          era = fct_relevel(
+            era, "Civil War", "World War I",
+            "Great Depression", "World War II",
+            "Vietnam War Start", "Vietnam War Escalated"
+          )
         )
 
       ggplot(house_since_1855, aes(x = year_start)) +
-        geom_rect(aes(xmin = year_start, xmax = lead(year_start),
-                      ymin = -Inf, ymax = Inf, fill = era)) +
-        geom_line(aes(y = p1_perc, color = "Democrats")) +  # Democrats
+        geom_rect(aes(
+          xmin = year_start, xmax = lead(year_start),
+          ymin = -Inf, ymax = Inf, fill = era
+        )) +
+        geom_line(aes(y = p1_perc, color = "Democrats")) + # Democrats
         geom_line(aes(y = p2_perc, color = "Republicans")) + # Republicans
         scale_fill_brewer(palette = "Pastel1", na.translate = FALSE) +
         scale_color_manual(
           name   = "Party",
           values = c("Democrats" = "blue", "Republicans" = "red"),
           labels = c("Democrats", "Republicans")
-          ) +
+        ) +
         theme_minimal() +
         ylim(0, 100) +
         labs(x = "Year", y = "Percentage of seats", fill = "Era")
-

@@ -34,4 +34,3 @@
 
 
       hist(fheights$heights)
-

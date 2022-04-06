@@ -12,7 +12,7 @@
 
 <p>This data is a subset of the NOAA Atlantic hurricane database best track
 data, <a href="https://www.nhc.noaa.gov/data/#hurdat">https://www.nhc.noaa.gov/data/#hurdat</a>. The data includes the
-positions and attributes of 198 tropical storms, measured every six hours
+positions and attributes of storms from 1975-2020, measured every six hours
 during the lifetime of a storm.
 </p>
 
@@ -26,7 +26,7 @@ storms
 
 <h3>Format</h3>
 
-<p>A tibble with 10,010 observations and 13 variables:
+<p>A tibble with 11,859 observations and 13 variables:
 </p>
 
 <dl>
@@ -48,9 +48,9 @@ or Hurricane)</p>
 </dd>
 <dt>pressure</dt><dd><p>Air pressure at the storm's center (in millibars)</p>
 </dd>
-<dt>ts_diameter</dt><dd><p>Diameter of the area experiencing tropical storm strength winds (34 knots or above)</p>
+<dt>tropicalstorm_force_diameter</dt><dd><p>Diameter (in nautical miles) of the area experiencing tropical storm strength winds (34 knots or above)</p>
 </dd>
-<dt>hu_diameter</dt><dd><p>Diameter of the area experiencing hurricane strength winds (64 knots or above)</p>
+<dt>hurricane_force_diameter</dt><dd><p>Diameter (in nautical miles) of the area experiencing hurricane strength winds (64 knots or above)</p>
 </dd>
 </dl>
 
@@ -58,13 +58,24 @@ or Hurricane)</p>
 
 <h3>See Also</h3>
 
-<p>The script to create the storms data set: <a href="https://github.com/tidyverse/dplyr/blob/master/data-raw/storms.R">https://github.com/tidyverse/dplyr/blob/master/data-raw/storms.R</a>
+<p>The script to create the storms data set: <a href="https://github.com/tidyverse/dplyr/blob/main/data-raw/storms.R">https://github.com/tidyverse/dplyr/blob/main/data-raw/storms.R</a>
 </p>
 
 
 <h3>Examples</h3>
 
 <pre>
+
+# show a plot of the storm paths
+if (requireNamespace("ggplot2", quietly = TRUE)) {
+  library(ggplot2)
+  ggplot(storms) +
+    aes(x=long, y=lat, color=paste(year, name)) +
+    geom_path() +
+    guides(color='none') +
+    facet_wrap(~year)
+}
+
 storms
 </pre>
 

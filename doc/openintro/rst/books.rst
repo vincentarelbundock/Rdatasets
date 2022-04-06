@@ -37,4 +37,3 @@
 
 
       table(books)
-

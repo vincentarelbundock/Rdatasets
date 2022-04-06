@@ -97,21 +97,27 @@
         summarise(money_pro_mean = mean(money_pro, na.rm = TRUE)) %>%
         ggplot(aes(x = stance, y = money_pro_mean)) +
         geom_col() +
-        labs(x = "Stance", y = "Average contribution, in $",
-             title = "Average contribution to the legislator's campaign in 2010",
-             subtitle = "by groups supportive of PIPA/SOPA (movie and TV studios, record labels)")
+        labs(
+          x = "Stance", y = "Average contribution, in $",
+          title = "Average contribution to the legislator's campaign in 2010",
+          subtitle = "by groups supportive of PIPA/SOPA (movie and TV studios, record labels)"
+        )
 
       ggplot(pipa, aes(x = stance, y = money_pro)) +
         geom_boxplot() +
-        labs(x = "Stance", y = "Contribution, in $",
-             title = "Contribution by groups supportive of PIPA/SOPA",
-             subtitle = "Movie and TV studios, record labels")
+        labs(
+          x = "Stance", y = "Contribution, in $",
+          title = "Contribution by groups supportive of PIPA/SOPA",
+          subtitle = "Movie and TV studios, record labels"
+        )
 
       ggplot(pipa, aes(x = stance, y = money_con)) +
         geom_boxplot() +
-        labs(x = "Stance", y = "Contribution, in $",
-             title = "Contribution by groups opposed to PIPA/SOPA",
-             subtitle = "Computer and internet companies")
+        labs(
+          x = "Stance", y = "Contribution, in $",
+          title = "Contribution by groups opposed to PIPA/SOPA",
+          subtitle = "Computer and internet companies"
+        )
 
       pipa %>%
         filter(
@@ -124,7 +130,8 @@
         scale_color_manual(values = c("gray", "red")) +
         scale_y_log10() +
         scale_x_log10() +
-        labs(x = "Contribution by pro-PIPA groups",
-             y = "Contribution by anti-PIPA groups",
-             color = "For PIPA")
-
+        labs(
+          x = "Contribution by pro-PIPA groups",
+          y = "Contribution by anti-PIPA groups",
+          color = "For PIPA"
+        )

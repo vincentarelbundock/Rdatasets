@@ -40,4 +40,3 @@
 
 
       male_heights
-

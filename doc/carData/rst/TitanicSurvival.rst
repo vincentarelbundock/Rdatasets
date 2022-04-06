@@ -47,13 +47,13 @@
    .. rubric:: Source
       :name: source
 
-   Data set ``titanic3`` from
+   Data set ``titanic3`` from the now defunct
    http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/DataSets.
 
    .. rubric:: References
       :name: references
 
-   http://www.encyclopedia-titanica.org/
+   https://www.encyclopedia-titanica.org/
 
    F. E. Harrell, Jr. (2001) *Regression Modeling Strategies* New York:
    Springer.

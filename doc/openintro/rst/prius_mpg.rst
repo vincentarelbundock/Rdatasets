@@ -62,4 +62,3 @@
 
       ggplot(prius_mpg, aes(x = average_mpg)) +
         geom_histogram(binwidth = 25)
-

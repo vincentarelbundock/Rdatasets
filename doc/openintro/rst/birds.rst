@@ -103,7 +103,7 @@
 
    Aircraft Wildlife Strike Data: Search Tool - FAA Wildlife Strike
    Database. Available at
-   https://dev.socrata.com/foundry/datahub.transportation.gov/jhay-dgxy.
+   https://datahub.transportation.gov/Aviation/Aircraft-Wildlife-Strike-Data-Search-Tool-FAA-Wild/jhay-dgxy.
    Retrieval date: Feb 4, 2012.
 
    .. rubric:: Examples
@@ -135,4 +135,3 @@
         ggplot(aes(y = phase_of_flt, fill = effect)) +
         geom_bar(position = "fill") +
         labs(x = "Proportion", y = "Phase of flight", fill = "Effect")
-

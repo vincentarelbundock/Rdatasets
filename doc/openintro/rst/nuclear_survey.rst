@@ -42,4 +42,3 @@
 
 
       table(nuclear_survey)
-

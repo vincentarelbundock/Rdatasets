@@ -35,7 +35,7 @@
       :name: source
 
    U.S.~Census Bureau:
-   http://www.census-charts.com/Population/pop-us-1790-2000.html,
+   https://www.census-charts.com/Population/pop-us-1790-2000.html,
    downloaded 1 May 2008.
 
    .. rubric:: References

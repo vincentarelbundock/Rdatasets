@@ -11,7 +11,9 @@
       :name: description
 
    Marathon times of male and female winners of the New York City
-   Marathon 1970-1999. See nyc_marathon for a more updated dataset.
+   Marathon 1970-1999. See nyc_marathon for a more updated dataset. We
+   recommend not using this dataset since the data source has been taken
+   off the web.
 
    .. rubric:: Usage
       :name: usage
@@ -37,7 +39,7 @@
    .. rubric:: Source
       :name: source
 
-   https://www.webcitation.org/5kx7ilFLp
+   Data source has been removed.
 
    .. rubric:: Examples
       :name: examples

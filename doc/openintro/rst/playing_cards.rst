@@ -46,8 +46,8 @@
 
 
       playing_cards <- data.frame(
-          number = rep(c(2:10, "J", "Q", "K", "A"), 4),
-          suit = rep(c("Spade", "Diamond", "Club", "Heart"), rep(13, 4)))
+        number = rep(c(2:10, "J", "Q", "K", "A"), 4),
+        suit = rep(c("Spade", "Diamond", "Club", "Heart"), rep(13, 4))
+      )
       playing_cards$face_card <-
-          ifelse(playing_cards$number %in% c(2:10, "A"), "no", "yes")
-
+        ifelse(playing_cards$number %in% c(2:10, "A"), "no", "yes")

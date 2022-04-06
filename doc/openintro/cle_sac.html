@@ -35,11 +35,11 @@ following 8 variables.
 </dd>
 <dt>city</dt><dd><p>City.</p>
 </dd>
-<dt>age</dt><dd><p>Age of the person.</p>
+<dt>age</dt><dd><p>Age.</p>
 </dd>
-<dt>sex</dt><dd><p>Gender.</p>
+<dt>sex</dt><dd><p>Sex.</p>
 </dd>
-<dt>race</dt><dd><p>Ethnicity.</p>
+<dt>race</dt><dd><p>Race.</p>
 </dd>
 <dt>marital_status</dt><dd><p>Marital status.</p>
 </dd>
@@ -58,7 +58,6 @@ library(ggplot2)
 ggplot(cle_sac, aes(x = personal_income)) +
   geom_histogram(binwidth = 20000) +
   facet_wrap(~city)
-
 </pre>
 
 

@@ -46,4 +46,3 @@
 
       family_college %>%
         count(teen, parents)
-

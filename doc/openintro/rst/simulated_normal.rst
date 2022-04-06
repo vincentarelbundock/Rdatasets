@@ -35,4 +35,3 @@
 
       data(simulated_normal)
       lapply(simulated_normal, qqnorm)
-

@@ -58,7 +58,7 @@
    .. rubric:: Source
       :name: source
 
-   https://www.ncdc.noaa.gov/cdo-web/datasets, retrieved 2019-04-24.
+   https://www.ncdc.noaa.gov/cdo-web, retrieved 2019-04-24.
 
    .. rubric:: Examples
       :name: examples
@@ -81,4 +81,3 @@
 
       t.test(climate70$dx70_2018 - climate70$dx70_1948)
       t.test(climate70$dx90_2018 - climate70$dx90_1948)
-

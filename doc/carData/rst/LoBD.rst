@@ -85,9 +85,9 @@
    .. rubric:: Source
       :name: source
 
-   Used as an illustrative example for Box-Cox type transformations with
-   negative readings in Hawkins and Weisberg (2015). For examples of its
-   use, see ``bcnPower``.
+   Used as an illustrative application for Box-Cox type transformations
+   with negative values in Hawkins and Weisberg (2015). For examples of
+   its use, see ``bcnPower``.
 
    .. rubric:: References
       :name: references

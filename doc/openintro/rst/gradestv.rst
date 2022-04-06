@@ -57,4 +57,3 @@
       ggplot(gradestv, aes(x = tv, y = grades)) +
         geom_point() +
         geom_smooth(method = "lm")
-

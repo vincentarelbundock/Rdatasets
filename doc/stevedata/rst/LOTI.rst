@@ -45,4 +45,5 @@
    .. rubric:: Source
       :name: source
 
-   https://data.giss.nasa.gov/gistemp/
+   National Aeronautics and Space Administration's Goddard Institute for
+   Space Studies.

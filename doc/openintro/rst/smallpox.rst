@@ -49,4 +49,3 @@
 
       data(smallpox)
       table(smallpox)
-

@@ -45,5 +45,3 @@
 
 
       table(health_coverage)
-
-

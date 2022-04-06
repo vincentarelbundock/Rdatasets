@@ -45,6 +45,7 @@
 
       ggplot(age_at_mar, mapping = aes(x = age)) +
         geom_histogram(binwidth = 3) +
-        labs(x = "Age", y = "Count", title = "Age at first marriage, US Women",
-             subtitle = "Source: National Survey of Family Growth Survey, 2006 - 2010")
-
+        labs(
+          x = "Age", y = "Count", title = "Age at first marriage, US Women",
+          subtitle = "Source: National Survey of Family Growth Survey, 2006 - 2010"
+        )

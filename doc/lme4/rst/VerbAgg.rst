@@ -11,9 +11,8 @@
       :name: description
 
    These are the item responses to a questionaire on verbal aggression.
-   These data are used throughout De Boeck and Wilson, *Explanatory Item
-   Response Models* (Springer, 2004) to illustrate various forms of item
-   response models.
+   These data are used throughout De Boeck and Wilson (2004) to
+   illustrate various forms of item response models.
 
    .. rubric:: Format
       :name: format
@@ -55,7 +54,8 @@
    .. rubric:: Source
       :name: source
 
-   http://bear.soe.berkeley.edu/EIRM/
+   Data available from the UC Berkeley BEAR Center (web page at
+   https://bearcenter.berkeley.edu/page/materials-explanatory-item-response-models).
 
    .. rubric:: References
       :name: references
