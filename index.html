@@ -19,6 +19,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">Rdatasets</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.0.0</span>
       </span>
     </div>
 
@@ -43,7 +45,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/vincentarelbundock/Rdatasets/">
+  <a href="https://github.com/vincentarelbundock/Rdatasets/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -61,18 +63,18 @@
       </header><div class="row">
   <div class="contents col-md-9">
 
-<div id="what-is-this" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#what-is-this" class="anchor"></a>What is this?</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="what-is-this">What is this?<a class="anchor" aria-label="anchor" href="#what-is-this"></a>
+</h1></div>
 <p><code>Rdatasets</code> is a collection of over 1700 datasets that were originally distributed alongside the statistical software environment <code>R</code> and some of its add-on packages. The goal is to make these data more broadly accessible for teaching and statistical software development.</p>
 </div>
-<div id="what-is-included" class="section level1">
-<h1 class="hasAnchor">
-<a href="#what-is-included" class="anchor"></a>What is included?</h1>
+<div class="section level1">
+<h1 id="what-is-included">What is included?<a class="anchor" aria-label="anchor" href="#what-is-included"></a>
+</h1>
 <p>The list of available datasets (csv and docs) is available here:</p>
 <ul>
-<li><a href="https://vincentarelbundock.github.io/Rdatasets/articles/data.html">HTML index</a></li>
-<li><a href="https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv">CSV index</a></li>
+<li><a href="https://vincentarelbundock.github.io/Rdatasets/articles/data.html" class="external-link">HTML index</a></li>
+<li><a href="https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv" class="external-link">CSV index</a></li>
 </ul>
 <p>On the github repository you will also find:</p>
 <ul>
@@ -80,17 +82,17 @@
 <code>Rdatasets.R</code>: <code>R</code> script to download CSV copies and HTML docs for all datasets distributed in <code>Base R</code> and a list of R packages.</li>
 </ul>
 </div>
-<div id="adding-data" class="section level1">
-<h1 class="hasAnchor">
-<a href="#adding-data" class="anchor"></a>Adding data</h1>
+<div class="section level1">
+<h1 id="adding-data">Adding data<a class="anchor" aria-label="anchor" href="#adding-data"></a>
+</h1>
 <p>Many <code>R</code> packages ship with associated datasets, but the script included here only downloads data from packages that are installed locally on the machine where it is run. If you spot interesting data in a package distributed on CRAN, let me know. I will try to install that package on my computer and I will re-run the download script to see if the data can be added to this repository. Requests should be filed on the Github issue tracker.</p>
 </div>
-<div id="omitted-packages" class="section level1">
-<h1 class="hasAnchor">
-<a href="#omitted-packages" class="anchor"></a>Omitted packages</h1>
+<div class="section level1">
+<h1 id="omitted-packages">Omitted packages<a class="anchor" aria-label="anchor" href="#omitted-packages"></a>
+</h1>
 <p>Here are some packages that contain data but were not include in Rdatasets for one reason or another:</p>
 <ul>
-<li>CASdatasets: <code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages("CASdatasets", repos = "http://cas.uqam.ca/pub/R/")</a></code>
+<li>CASdatasets: <code>install.packages("CASdatasets", repos = "http://cas.uqam.ca/pub/R/")</code>
 <ul>
 <li>Some of the included datasets exceed the Github size limit.</li>
 <li>Not on CRAN.</li>
@@ -108,16 +110,16 @@
 </li>
 </ul>
 </div>
-<div id="license" class="section level1">
-<h1 class="hasAnchor">
-<a href="#license" class="anchor"></a>License</h1>
+<div class="section level1">
+<h1 id="license">License<a class="anchor" aria-label="anchor" href="#license"></a>
+</h1>
 <p>The code in this repository is licensed under GPL-3.</p>
 <p>I believe that the R documentation which I copied to the Rdatasets html folder is licensed under GPL. You will find a copy of the GPL in the Rdatasets github repository.</p>
 <p>I made a good faith effort to determine the license under which the actual data (i.e. rows/columns of numbers) were distributed, but I was unable to find a definitive answer. My understanding is that these datasets are free to re-distribute. However, if you own the rights to data that are included here and you object to their inclusion in Rdatasets, send me an email at <a href="mailto:vincent.arel-bundock@umontreal.ca" class="email">vincent.arel-bundock@umontreal.ca</a>. I will promptly remove the data in question and will make sure that all traces are erased from the git revision history.</p>
 </div>
-<div id="github-instructions" class="section level1">
-<h1 class="hasAnchor">
-<a href="#github-instructions" class="anchor"></a>Github instructions</h1>
+<div class="section level1">
+<h1 id="github-instructions">Github instructions<a class="anchor" aria-label="anchor" href="#github-instructions"></a>
+</h1>
 <p>These are mostly intended as a reminder for Vincent.</p>
 <p>First add new package to DESCRIPTION Imports and scrape the data:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">Rscript</span> scrape.R</a>
@@ -144,38 +146,50 @@
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/vincentarelbundock/Rdatasets/">https://​github.com/​vincentarelbundock/​Rdatasets/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/vincentarelbundock/Rdatasets/issues">https://​github.com/​vincentarelbundock/​Rdatasets/​issues</a>
-</li>
+<li><a href="https://github.com/vincentarelbundock/Rdatasets/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/vincentarelbundock/Rdatasets/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a></small></li>
+<li><small><a href="https://www.r-project.org/Licenses/GPL-3" class="external-link">GPL-3</a></small></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing Rdatasets</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Vincent Arel-Bundock <br><small class="roles"> Author, maintainer </small>  </li>
 </ul>
 </div>
+
+
 
   </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Vincent Arel-Bundock.</p>
+  <p></p>
+<p>Developed by Vincent Arel-Bundock.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
 </div>
 
       </footer>
@@ -183,6 +197,8 @@
 
   
 
+
+  
 
   </body>
 </html>
