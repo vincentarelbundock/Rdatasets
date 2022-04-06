@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Crawling age</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for babies_crawl"><tr><td>babies_crawl</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Crawling age</h2>
+
+<h3>Description</h3>
+
+<p>Crawling age of babies along with the average outdoor temperature at 6
+months of age.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+babies_crawl
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 12 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt>birth_month</dt><dd><p>A factor with levels corresponding to months</p>
+</dd>
+<dt>avg_crawling_age</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>sd</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>n</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>temperature</dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>J.B. Benson. Season of birth and onset of locomotion: Theoretical
+and methodological implications. In: Infant behavior and development 16.1
+(1993), pp. 69-81. issn: 0163-6383.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+
+ggplot(babies_crawl, aes(x = temperature, y = avg_crawling_age)) +
+  geom_point() +
+  labs(x = "Temperature", y = "Average crawling age")
+</pre>
+
+
+</div></body></html>

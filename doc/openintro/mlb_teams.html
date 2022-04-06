@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Major League Baseball Teams Data.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for mlb_teams"><tr><td>mlb_teams</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Major League Baseball Teams Data.</h2>
+
+<h3>Description</h3>
+
+<p>A subset of data on Major League Baseball teams from
+Lahman's Baseball Database. The full data set is available
+in the <a href="https://github.com/cdalzell/Lahman">Lahman R package</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+mlb_teams
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2784 rows and 41 variables.
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year of play.</p>
+</dd>
+<dt>league_id</dt><dd><p>League the team plays in with levels AL (American League) and NL (National League).</p>
+</dd>
+<dt>division_id</dt><dd><p>Division the team plays in with levels W (west), E (east) and C (central).</p>
+</dd>
+<dt>rank</dt><dd><p>Team's rank in their division at the end of the regular season.</p>
+</dd>
+<dt>games_played</dt><dd><p>Games played.</p>
+</dd>
+<dt>home_games</dt><dd><p>Games played at home.</p>
+</dd>
+<dt>wins</dt><dd><p>Number of games won.</p>
+</dd>
+<dt>losses</dt><dd><p>Number of games lost.</p>
+</dd>
+<dt>division_winner</dt><dd><p>Did the team win their division? Levels of Y (yes) and N (no).</p>
+</dd>
+<dt>wild_card_winner</dt><dd><p>Was the team a wild card winner. Levels of Y (yes) and N (no).</p>
+</dd>
+<dt>league_winner</dt><dd><p>Did the team win their league? Levels of Y (yes) and N (no).</p>
+</dd>
+<dt>world_series_winner</dt><dd><p>Did the team win the World Series? Levels of Y (yes) and N (no).</p>
+</dd>
+<dt>runs_scored</dt><dd><p>Number of runs scored during the season.</p>
+</dd>
+<dt>at_bats</dt><dd><p>Number of at bats during the season.</p>
+</dd>
+<dt>hits</dt><dd><p>Number of hits during the season. Includes singles, doubles, triples and homeruns.</p>
+</dd>
+<dt>doubles</dt><dd><p>Number of doubles hit.</p>
+</dd>
+<dt>triples</dt><dd><p>Number of triples hit.</p>
+</dd>
+<dt>homeruns</dt><dd><p>Homeruns by batters.</p>
+</dd>
+<dt>walks</dt><dd><p>Number of walks.</p>
+</dd>
+<dt>strikeouts_by_batters</dt><dd><p>Number of batters struckout.</p>
+</dd>
+<dt>stolen_bases</dt><dd><p>Number of stolen bases.</p>
+</dd>
+<dt>caught_stealing</dt><dd><p>Number of base runners caught stealing.</p>
+</dd>
+<dt>batters_hit_by_pitch</dt><dd><p>Number of batters hit by a pitch.</p>
+</dd>
+<dt>sacrifice_flies</dt><dd><p>Number of sacrifice flies.</p>
+</dd>
+<dt>opponents_runs_scored</dt><dd><p>Number of runs scored by opponents.</p>
+</dd>
+<dt>earned_runs_allowed</dt><dd><p>Number of earned runs allowed.</p>
+</dd>
+<dt>earned_run_average</dt><dd><p>Earned run average.</p>
+</dd>
+<dt>complete_games</dt><dd><p>Number of games where a single pitcher played the entire game.</p>
+</dd>
+<dt>shutouts</dt><dd><p>Number of shutouts.</p>
+</dd>
+<dt>saves</dt><dd><p>Number of saves.</p>
+</dd>
+<dt>outs_pitches</dt><dd><p>Number of outs pitched for the season (number of innings pitched times 3).</p>
+</dd>
+<dt>hits_allowed</dt><dd><p>Number of hits made by opponents.</p>
+</dd>
+<dt>homeruns_allowed</dt><dd><p>Number of homeruns hit by opponents.</p>
+</dd>
+<dt>walks_allowed</dt><dd><p>Number of opponents who were walked.</p>
+</dd>
+<dt>strikeouts_by_pitchers</dt><dd><p>Number of opponents who were struckout.</p>
+</dd>
+<dt>errors</dt><dd><p>Number of errors.</p>
+</dd>
+<dt>double_plays</dt><dd><p>Number of double plays.</p>
+</dd>
+<dt>fielding_percentage</dt><dd><p>Teams fielding  percentage.</p>
+</dd>
+<dt>team_name</dt><dd><p>Full name of team.</p>
+</dd>
+<dt>ball_park</dt><dd><p>Home ballpark name.</p>
+</dd>
+<dt>home_attendance</dt><dd><p>Home attendance total.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.seanlahman.com/baseball-archive/statistics/">Lahmans Baseball Database</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+library(dplyr)
+
+# List the World Series winning teams for each year
+mlb_teams %&gt;%
+  filter(world_series_winner == "Y") %&gt;%
+  select(year, team_name, ball_park)
+
+# List the teams with their average number of wins and losses
+mlb_teams %&gt;%
+  group_by(team_name) %&gt;%
+  summarize(mean_wins = mean(wins), mean_losses = mean(losses)) %&gt;%
+  arrange((team_name))
+</pre>
+
+
+</div></body></html>

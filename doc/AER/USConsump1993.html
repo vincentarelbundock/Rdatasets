@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: US Consumption Data (1950-1993)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for USConsump1993"><tr><td>USConsump1993</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Consumption Data (1950&ndash;1993)</h2>
+
+<h3>Description</h3>
+
+<p>Time series data on US income and consumption expenditure, 1950&ndash;1993.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("USConsump1993")</pre>
+
+
+<h3>Format</h3>
+
+<p>An annual multiple time series from 1950 to 1993 with 2 variables.
+</p>
+
+<dl>
+<dt>income</dt><dd><p>Disposable personal income (in 1987 USD).</p>
+</dd>
+<dt>expenditure</dt><dd><p>Personal consumption expenditures (in 1987 USD).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>The data is from Baltagi (2002).
+</p>
+
+
+<h3>References</h3>
+
+<p>Baltagi, B.H. (2002). <em>Econometrics</em>, 3rd ed. Berlin, Springer. 
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Baltagi2002</code>, <code>USConsump1950</code>, <code>USConsump1979</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## data from Baltagi (2002)
+data("USConsump1993", package = "AER")
+plot(USConsump1993, plot.type = "single", col = 1:2)
+
+## Chapter 5 (p. 122-125)
+fm &lt;- lm(expenditure ~ income, data = USConsump1993)
+summary(fm)
+## Durbin-Watson test (p. 122)
+dwtest(fm)
+## Breusch-Godfrey test (Table 5.4, p. 124)
+bgtest(fm)
+## Newey-West standard errors (Table 5.5, p. 125)
+coeftest(fm, vcov = NeweyWest(fm, lag = 3, prewhite = FALSE, adjust = TRUE)) 
+
+## Chapter 8
+library("strucchange")
+## Recursive residuals
+rr &lt;- recresid(fm)
+rr
+## Recursive CUSUM test
+rcus &lt;- efp(expenditure ~ income, data = USConsump1993)
+plot(rcus)
+sctest(rcus)
+## Harvey-Collier test
+harvtest(fm)
+## NOTE" Mistake in Baltagi (2002) who computes
+## the t-statistic incorrectly as 0.0733 via
+mean(rr)/sd(rr)/sqrt(length(rr))
+## whereas it should be (as in harvtest)
+mean(rr)/sd(rr) * sqrt(length(rr))
+
+## Rainbow test
+raintest(fm, center = 23)
+
+## J test for non-nested models
+library("dynlm")
+fm1 &lt;- dynlm(expenditure ~ income + L(income), data = USConsump1993)
+fm2 &lt;- dynlm(expenditure ~ income + L(expenditure), data = USConsump1993)
+jtest(fm1, fm2)
+
+## Chapter 14
+## ACF and PACF for expenditures and first differences
+exps &lt;- USConsump1993[, "expenditure"]
+(acf(exps))
+(pacf(exps))
+(acf(diff(exps)))
+(pacf(diff(exps)))
+
+## dynamic regressions, eq. (14.8)
+fm &lt;- dynlm(d(exps) ~ I(time(exps) - 1949) + L(exps))
+summary(fm)
+</pre>
+
+
+</div></body></html>

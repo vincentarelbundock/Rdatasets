@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Human Freedom Index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for hfi"><tr><td>hfi</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Human Freedom Index</h2>
+
+<h3>Description</h3>
+
+<p>The Human Freedom Index is a report that attempts to summarize the idea of &quot;freedom&quot;
+through a bunch of different variables for many countries around the globe.
+It serves as a rough objective measure for the relationships between the different
+types of freedom - whether it's political, religious, economical or personal freedom -
+and other social and economic circumstances. The Human Freedom Index is an annually
+co-published report by the Cato Institute, the Fraser Institute, and the Liberales
+Institut at the Friedrich Naumann Foundation for Freedom.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+hfi
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1458 observations on the following 123 variables.
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year</p>
+</dd>
+<dt>ISO_code</dt><dd><p>ISO code of country</p>
+</dd>
+<dt>countries</dt><dd><p>Name of country</p>
+</dd>
+<dt>region</dt><dd><p>Region where country is located</p>
+</dd>
+<dt>pf_rol_procedural</dt><dd><p>Procedural justice</p>
+</dd>
+<dt>pf_rol_civil</dt><dd><p>Civil justice</p>
+</dd>
+<dt>pf_rol_criminal</dt><dd><p>Criminal justice</p>
+</dd>
+<dt>pf_rol</dt><dd><p>Rule of law</p>
+</dd>
+<dt>pf_ss_homicide</dt><dd><p>Homicide</p>
+</dd>
+<dt>pf_ss_disappearances_disap</dt><dd><p>Disappearances</p>
+</dd>
+<dt>pf_ss_disappearances_violent</dt><dd><p>Violent conflicts</p>
+</dd>
+<dt>pf_ss_disappearances_organized</dt><dd><p>Violent conflicts</p>
+</dd>
+<dt>pf_ss_disappearances_fatalities</dt><dd><p>Terrorism fatalities</p>
+</dd>
+<dt>pf_ss_disappearances_injuries</dt><dd><p>Terrorism injuries</p>
+</dd>
+<dt>pf_ss_disappearances</dt><dd><p>Disappearances, conflict, and terrorism</p>
+</dd>
+<dt>pf_ss_women_fgm</dt><dd><p>Female genital mutilation</p>
+</dd>
+<dt>pf_ss_women_missing</dt><dd><p>Missing women</p>
+</dd>
+<dt>pf_ss_women_inheritance_widows</dt><dd><p>Inheritance rights for widows</p>
+</dd>
+<dt>pf_ss_women_inheritance_daughters</dt><dd><p>Inheritance rights for daughters</p>
+</dd>
+<dt>pf_ss_women_inheritance</dt><dd><p>Inheritance</p>
+</dd>
+<dt>pf_ss_women</dt><dd><p>Women's security</p>
+</dd>
+<dt>pf_ss</dt><dd><p>Security and safety</p>
+</dd>
+<dt>pf_movement_domestic</dt><dd><p>Freedom of domestic movement</p>
+</dd>
+<dt>pf_movement_foreign</dt><dd><p>Freedom of foreign movement</p>
+</dd>
+<dt>pf_movement_women</dt><dd><p>Women's movement</p>
+</dd>
+<dt>pf_movement</dt><dd><p>Freedom of movement</p>
+</dd>
+<dt>pf_religion_estop_establish</dt><dd><p>Freedom to establish religious organizations</p>
+</dd>
+<dt>pf_religion_estop_operate</dt><dd><p>Freedom to operate religious organizations</p>
+</dd>
+<dt>pf_religion_estop</dt><dd><p>Freedom to establish and operate religious organizations</p>
+</dd>
+<dt>pf_religion_harassment</dt><dd><p>Harassment and physical hostilities</p>
+</dd>
+<dt>pf_religion_restrictions</dt><dd><p>Legal and regulatory restrictions</p>
+</dd>
+<dt>pf_religion</dt><dd><p>Religious freedom</p>
+</dd>
+<dt>pf_association_association</dt><dd><p>Freedom of association</p>
+</dd>
+<dt>pf_association_assembly</dt><dd><p>Freedom of assembly</p>
+</dd>
+<dt>pf_association_political_establish</dt><dd><p>Freedom to establish political parties</p>
+</dd>
+<dt>pf_association_political_operate</dt><dd><p>Freedom to operate political parties</p>
+</dd>
+<dt>pf_association_political</dt><dd><p>Freedom to establish and operate political parties</p>
+</dd>
+<dt>pf_association_prof_establish</dt><dd><p>Freedom to establish professional organizations</p>
+</dd>
+<dt>pf_association_prof_operate</dt><dd><p>Freedom to operate professional organizations</p>
+</dd>
+<dt>pf_association_prof</dt><dd><p>Freedom to establish and operate professional organizations</p>
+</dd>
+<dt>pf_association_sport_establish</dt><dd><p>Freedom to establish educational, sporting, and cultural organizations</p>
+</dd>
+<dt>pf_association_sport_operate</dt><dd><p>Freedom to operate educational, sporting, and cultural organizations</p>
+</dd>
+<dt>pf_association_sport</dt><dd><p>Freedom to establish and operate educational, sporting, and cultural organizations</p>
+</dd>
+<dt>pf_association</dt><dd><p>Freedom to associate and assemble with peaceful individuals or organizations</p>
+</dd>
+<dt>pf_expression_killed</dt><dd><p>Press killed</p>
+</dd>
+<dt>pf_expression_jailed</dt><dd><p>Press jailed</p>
+</dd>
+<dt>pf_expression_influence</dt><dd><p>Laws and regulations that influence media content</p>
+</dd>
+<dt>pf_expression_control</dt><dd><p>Political pressures and controls on media content</p>
+</dd>
+<dt>pf_expression_cable</dt><dd><p>Access to cable/satellite</p>
+</dd>
+<dt>pf_expression_newspapers</dt><dd><p>Access to foreign newspapers</p>
+</dd>
+<dt>pf_expression_internet</dt><dd><p>State control over internet access</p>
+</dd>
+<dt>pf_expression</dt><dd><p>Freedom of expression</p>
+</dd>
+<dt>pf_identity_legal</dt><dd><p>Legal gender</p>
+</dd>
+<dt>pf_identity_parental_marriage</dt><dd><p>Parental rights in marriage</p>
+</dd>
+<dt>pf_identity_parental_divorce</dt><dd><p>Parental rights after divorce</p>
+</dd>
+<dt>pf_identity_parental</dt><dd><p>Parental rights</p>
+</dd>
+<dt>pf_identity_sex_male</dt><dd><p>Male-to-male relationships</p>
+</dd>
+<dt>pf_identity_sex_female</dt><dd><p>Female-to-female relationships</p>
+</dd>
+<dt>pf_identity_sex</dt><dd><p>Same-sex relationships</p>
+</dd>
+<dt>pf_identity_divorce</dt><dd><p>Divor</p>
+</dd>
+<dt>pf_identity</dt><dd><p>Identity and relationships</p>
+</dd>
+<dt>pf_score</dt><dd><p>Personal Freedom (score)</p>
+</dd>
+<dt>pf_rank</dt><dd><p>Personal Freedom (rank)</p>
+</dd>
+<dt>ef_government_consumption</dt><dd><p>Government consumption</p>
+</dd>
+<dt>ef_government_transfers</dt><dd><p>Transfers and subsidies</p>
+</dd>
+<dt>ef_government_enterprises</dt><dd><p>Government enterprises and investments</p>
+</dd>
+<dt>ef_government_tax_income</dt><dd><p>Top marginal income tax rate - Top marginal income tax rates</p>
+</dd>
+<dt>ef_government_tax_payroll</dt><dd><p>Top marginal income tax rate - Top marginal income and payroll tax rate</p>
+</dd>
+<dt>ef_government_tax</dt><dd><p>Top marginal tax rate</p>
+</dd>
+<dt>ef_government</dt><dd><p>Size of government</p>
+</dd>
+<dt>ef_legal_judicial</dt><dd><p>Judicial independence</p>
+</dd>
+<dt>ef_legal_courts</dt><dd><p>Impartial courts</p>
+</dd>
+<dt>ef_legal_protection</dt><dd><p>Protection of property rights</p>
+</dd>
+<dt>ef_legal_military</dt><dd><p>Military interference in rule of law and politics</p>
+</dd>
+<dt>ef_legal_integrity</dt><dd><p>Integrity of the legal system</p>
+</dd>
+<dt>ef_legal_enforcement</dt><dd><p>Legal enforcement of contracts</p>
+</dd>
+<dt>ef_legal_restrictions</dt><dd><p>Regulatory restrictions on the sale of real property</p>
+</dd>
+<dt>ef_legal_police</dt><dd><p>Reliability of police</p>
+</dd>
+<dt>ef_legal_crime</dt><dd><p>Business costs of crime</p>
+</dd>
+<dt>ef_legal_gender</dt><dd><p>Gender adjustment</p>
+</dd>
+<dt>ef_legal</dt><dd><p>Legal system and property rights</p>
+</dd>
+<dt>ef_money_growth</dt><dd><p>Money growth</p>
+</dd>
+<dt>ef_money_sd</dt><dd><p>Standard deviation of inflation</p>
+</dd>
+<dt>ef_money_inflation</dt><dd><p>Inflation - most recent year</p>
+</dd>
+<dt>ef_money_currency</dt><dd><p>Freedom to own foreign currency bank account</p>
+</dd>
+<dt>ef_money</dt><dd><p>Sound money</p>
+</dd>
+<dt>ef_trade_tariffs_revenue</dt><dd><p>Tariffs - Revenue from trade taxes (percentage of trade sector)</p>
+</dd>
+<dt>ef_trade_tariffs_mean</dt><dd><p>Tariffs - Mean tariff rate</p>
+</dd>
+<dt>ef_trade_tariffs_sd</dt><dd><p>Tariffs - Standard deviation of tariffs rates</p>
+</dd>
+<dt>ef_trade_tariffs</dt><dd><p>Tariffs</p>
+</dd>
+<dt>ef_trade_regulatory_nontariff</dt><dd><p>Regulatory trade barriers - Nontariff trade barriers</p>
+</dd>
+<dt>ef_trade_regulatory_compliance</dt><dd><p>Regulatory trade barriers - Compliance costs of importing and exporting</p>
+</dd>
+<dt>ef_trade_regulatory</dt><dd><p>Regulatory trade barriers</p>
+</dd>
+<dt>ef_trade_black</dt><dd><p>Black-market exchange rates</p>
+</dd>
+<dt>ef_trade_movement_foreign</dt><dd><p>Controls of the movement of capital and people - Foreign ownership/investment restrictions</p>
+</dd>
+<dt>ef_trade_movement_capital</dt><dd><p>Controls of the movement of capital and people - Capital controls</p>
+</dd>
+<dt>ef_trade_movement_visit</dt><dd><p>Controls of the movement of capital and people - Freedom of foreigners to visit</p>
+</dd>
+<dt>ef_trade_movement</dt><dd><p>Controls of the movement of capital and people</p>
+</dd>
+<dt>ef_trade</dt><dd><p>Freedom to trade internationally</p>
+</dd>
+<dt>ef_regulation_credit_ownership</dt><dd><p>Credit market regulations - Ownership of banks</p>
+</dd>
+<dt>ef_regulation_credit_private</dt><dd><p>Credit market regulations - Private sector credit</p>
+</dd>
+<dt>ef_regulation_credit_interest</dt><dd><p>Credit market regulations - Interest rate controls/negative real interest rates</p>
+</dd>
+<dt>ef_regulation_credit</dt><dd><p>Credit market regulation</p>
+</dd>
+<dt>ef_regulation_labor_minwage</dt><dd><p>Labor market regulations - Hiring regulations and minimum wage</p>
+</dd>
+<dt>ef_regulation_labor_firing</dt><dd><p>Labor market regulations - Hiring and firing regulations</p>
+</dd>
+<dt>ef_regulation_labor_bargain</dt><dd><p>Labor market regulations - Centralized collective bargaining</p>
+</dd>
+<dt>ef_regulation_labor_hours</dt><dd><p>Labor market regulations - Hours regulations</p>
+</dd>
+<dt>ef_regulation_labor_dismissal</dt><dd><p>Labor market regulations - Dismissal regulations</p>
+</dd>
+<dt>ef_regulation_labor_conscription</dt><dd><p>Labor market regulations - Conscription</p>
+</dd>
+<dt>ef_regulation_labor</dt><dd><p>Labor market regulation</p>
+</dd>
+<dt>ef_regulation_business_adm</dt><dd><p>Business regulations - Administrative requirements</p>
+</dd>
+<dt>ef_regulation_business_bureaucracy</dt><dd><p>Business regulations - Bureaucracy costs</p>
+</dd>
+<dt>ef_regulation_business_start</dt><dd><p>Business regulations - Starting a business</p>
+</dd>
+<dt>ef_regulation_business_bribes</dt><dd><p>Business regulations - Extra payments/bribes/favoritism</p>
+</dd>
+<dt>ef_regulation_business_licensing</dt><dd><p>Business regulations - Licensing restrictions</p>
+</dd>
+<dt>ef_regulation_business_compliance</dt><dd><p>Business regulations - Cost of tax compliance</p>
+</dd>
+<dt>ef_regulation_business</dt><dd><p>Business regulation</p>
+</dd>
+<dt>ef_regulation</dt><dd><p>Economic freedom regulation score</p>
+</dd>
+<dt>ef_score</dt><dd><p>Economic freedom score</p>
+</dd>
+<dt>ef_rank</dt><dd><p>Economic freedom rank</p>
+</dd>
+<dt>hf_score</dt><dd><p>Human freedom score</p>
+</dd>
+<dt>hf_rank</dt><dd><p>Human freedom rank</p>
+</dd>
+<dt>hf_quartile</dt><dd><p>Human freedom quartile</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains information from Human Freedom Index reports from 2008-2016.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Ian Vasquez and Tanja Porcnik, The Human Freedom Index 2018:
+A Global Measurement of Personal, Civil, and Economic Freedom
+(Washington: Cato Institute, Fraser Institute, and the Friedrich Naumann
+Foundation for Freedom, 2018).
+<a href="https://www.cato.org/sites/cato.org/files/human-freedom-index-files/human-freedom-index-2016.pdf">https://www.cato.org/sites/cato.org/files/human-freedom-index-files/human-freedom-index-2016.pdf</a>.
+<a href="https://www.kaggle.com/gsutters/the-human-freedom-index">https://www.kaggle.com/gsutters/the-human-freedom-index</a>.
+</p>
+
+
+</div></body></html>

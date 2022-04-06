@@ -1,0 +1,65 @@
+"","First.Victimization","Second.Victimization","Freq"
+"1","Rape","Rape",26
+"2","Assault","Rape",65
+"3","Robbery","Rape",12
+"4","Pickpocket","Rape",3
+"5","Personal Larcency","Rape",75
+"6","Burglary","Rape",52
+"7","Household Larceny","Rape",42
+"8","Auto Theft","Rape",3
+"9","Rape","Assault",50
+"10","Assault","Assault",2997
+"11","Robbery","Assault",279
+"12","Pickpocket","Assault",102
+"13","Personal Larcency","Assault",2628
+"14","Burglary","Assault",1117
+"15","Household Larceny","Assault",1251
+"16","Auto Theft","Assault",221
+"17","Rape","Robbery",11
+"18","Assault","Robbery",238
+"19","Robbery","Robbery",197
+"20","Pickpocket","Robbery",40
+"21","Personal Larcency","Robbery",413
+"22","Burglary","Robbery",191
+"23","Household Larceny","Robbery",206
+"24","Auto Theft","Robbery",51
+"25","Rape","Pickpocket",6
+"26","Assault","Pickpocket",85
+"27","Robbery","Pickpocket",36
+"28","Pickpocket","Pickpocket",61
+"29","Personal Larcency","Pickpocket",329
+"30","Burglary","Pickpocket",102
+"31","Household Larceny","Pickpocket",117
+"32","Auto Theft","Pickpocket",24
+"33","Rape","Personal Larcency",82
+"34","Assault","Personal Larcency",2553
+"35","Robbery","Personal Larcency",459
+"36","Pickpocket","Personal Larcency",243
+"37","Personal Larcency","Personal Larcency",12137
+"38","Burglary","Personal Larcency",2649
+"39","Household Larceny","Personal Larcency",3757
+"40","Auto Theft","Personal Larcency",678
+"41","Rape","Burglary",39
+"42","Assault","Burglary",1083
+"43","Robbery","Burglary",197
+"44","Pickpocket","Burglary",115
+"45","Personal Larcency","Burglary",2685
+"46","Burglary","Burglary",3210
+"47","Household Larceny","Burglary",1962
+"48","Auto Theft","Burglary",301
+"49","Rape","Household Larceny",48
+"50","Assault","Household Larceny",1349
+"51","Robbery","Household Larceny",221
+"52","Pickpocket","Household Larceny",101
+"53","Personal Larcency","Household Larceny",3689
+"54","Burglary","Household Larceny",1973
+"55","Household Larceny","Household Larceny",4646
+"56","Auto Theft","Household Larceny",367
+"57","Rape","Auto Theft",11
+"58","Assault","Auto Theft",216
+"59","Robbery","Auto Theft",47
+"60","Pickpocket","Auto Theft",38
+"61","Personal Larcency","Auto Theft",687
+"62","Burglary","Auto Theft",301
+"63","Household Larceny","Auto Theft",391
+"64","Auto Theft","Auto Theft",269

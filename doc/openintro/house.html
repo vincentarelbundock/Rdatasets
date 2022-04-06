@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: United States House of Representatives historical make-up</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for house"><tr><td>house</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>United States House of Representatives historical make-up</h2>
+
+<h3>Description</h3>
+
+<p>The make-up of the United States House of Representatives every two years
+since 1789. The last Congress included is the 112th Congress, which
+completed its term in 2013.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+house
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 112 observations on the following 12 variables.
+</p>
+
+<dl>
+<dt>congress</dt><dd><p>The number of that year's Congress</p>
+</dd>
+<dt>year_start</dt><dd><p>Starting year</p>
+</dd>
+<dt>year_end</dt><dd><p>Ending year</p>
+</dd>
+<dt>seats</dt><dd><p>Total number of seats</p>
+</dd>
+<dt>p1</dt><dd><p>Name of the first political party</p>
+</dd>
+<dt>np1</dt><dd><p>Number of seats held by the first political party</p>
+</dd>
+<dt>p2</dt><dd><p>Name of the second political party</p>
+</dd>
+<dt>np2</dt><dd><p>Number of seats held by the second political party</p>
+</dd>
+<dt>other</dt><dd><p>Other</p>
+</dd>
+<dt>vac</dt><dd><p>Vacancy</p>
+</dd>
+<dt>del</dt><dd><p>Delegate</p>
+</dd>
+<dt>res</dt><dd><p>Resident commissioner</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Party Divisions of the House of Representatives, 1789 to Present.
+<a href="https://history.house.gov/Institution/Party-Divisions/Party-Divisions">https://history.house.gov/Institution/Party-Divisions/Party-Divisions</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(dplyr)
+library(ggplot2)
+library(forcats)
+
+# Examine two-party relationship since 1855
+house_since_1855 &lt;- house %&gt;%
+  filter(year_start &gt;= 1855) %&gt;%
+  mutate(
+    p1_perc = 100 * np1 / seats,
+    p2_perc = 100 * np2 / seats,
+    era = case_when(
+      between(year_start, 1861, 1865) ~ "Civil War",
+      between(year_start, 1914, 1918) ~ "World War I",
+      between(year_start, 1929, 1939) ~ "Great Depression",
+      between(year_start, 1940, 1945) ~ "World War II",
+      between(year_start, 1960, 1965) ~ "Vietnam War Start",
+      between(year_start, 1965, 1975) ~ "Vietnam War Escalated",
+      TRUE ~ NA_character_
+    ),
+    era = fct_relevel(
+      era, "Civil War", "World War I",
+      "Great Depression", "World War II",
+      "Vietnam War Start", "Vietnam War Escalated"
+    )
+  )
+
+ggplot(house_since_1855, aes(x = year_start)) +
+  geom_rect(aes(
+    xmin = year_start, xmax = lead(year_start),
+    ymin = -Inf, ymax = Inf, fill = era
+  )) +
+  geom_line(aes(y = p1_perc, color = "Democrats")) + # Democrats
+  geom_line(aes(y = p2_perc, color = "Republicans")) + # Republicans
+  scale_fill_brewer(palette = "Pastel1", na.translate = FALSE) +
+  scale_color_manual(
+    name   = "Party",
+    values = c("Democrats" = "blue", "Republicans" = "red"),
+    labels = c("Democrats", "Republicans")
+  ) +
+  theme_minimal() +
+  ylim(0, 100) +
+  labs(x = "Year", y = "Percentage of seats", fill = "Era")
+</pre>
+
+
+</div></body></html>

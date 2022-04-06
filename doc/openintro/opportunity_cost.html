@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Opportunity cost of purchases</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for opportunity_cost"><tr><td>opportunity_cost</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Opportunity cost of purchases</h2>
+
+<h3>Description</h3>
+
+<p>In a study on opportunity cost, 150 students were given the following statement:
+&quot;Imagine that you have been saving some extra money on the side to make some
+purchases, and on your most recent visit to the video store you come across
+a special sale on a new video. This video is one with your favorite actor or
+actress, and your favorite type of movie (such as a comedy, drama, thriller,
+etc.). This particular video that you are considering is one you have been
+thinking about buying for a long time. It is available for a special sale
+price of $14.99. What would you do in this situation? Please circle one of
+the options below.&quot; Half of the students were given the following two options:
+(A) Buy this entertaining video. (B) Not buy this entertaining video. The
+other half were given the following two options (note the modified option B):
+(A) Buy this entertaining video. (B) Not buy this entertaining video.
+Keep the $14.99 for other purchases.
+The results of this study are in this dataset.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+opportunity_cost
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 150 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt>group</dt><dd><p>a factor with levels <code>control</code> and <code>treatment</code></p>
+</dd>
+<dt>decision</dt><dd><p>a factor with levels <code>buy video</code> and <code>not buy video</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Frederick S, Novemsky N, Wang J, Dhar R, Nowlis S. 2009.
+Opportunity Cost Neglect. Journal of Consumer Research 36: 553-561.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+
+table(opportunity_cost)
+
+ggplot(opportunity_cost, aes(y = group, fill = decision)) +
+  geom_bar(position = "fill")
+</pre>
+
+
+</div></body></html>

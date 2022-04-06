@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Plane metadata.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for planes"><tr><td>planes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Plane metadata.</h2>
+
+<h3>Description</h3>
+
+<p>Plane metadata for all plane tailnumbers found in the FAA aircraft
+registry. American Airways (AA) and Envoy Air (MQ) report fleet numbers
+rather than tail numbers so can't be matched.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+planes
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with columns:
+</p>
+
+<dl>
+<dt>tailnum</dt><dd><p>Tail number.</p>
+</dd>
+<dt>year</dt><dd><p>Year manufactured.</p>
+</dd>
+<dt>type</dt><dd><p>Type of plane.</p>
+</dd>
+<dt>manufacturer, model</dt><dd><p>Manufacturer and model.</p>
+</dd>
+<dt>engines, seats</dt><dd><p>Number of engines and seats.</p>
+</dd>
+<dt>speed</dt><dd><p>Average cruising speed in mph.</p>
+</dd>
+<dt>engine</dt><dd><p>Type of engine.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>FAA Aircraft registry,
+<a href="https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/releasable_aircraft_download/">https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/releasable_aircraft_download/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+planes
+
+if (require("dplyr")) {
+
+# Flights that don't have plane metadata
+flights %&gt;% anti_join(planes, "tailnum")
+
+}
+</pre>
+
+
+</div></body></html>

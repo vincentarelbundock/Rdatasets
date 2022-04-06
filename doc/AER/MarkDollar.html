@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: DEM/USD Exchange Rate Returns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for MarkDollar"><tr><td>MarkDollar</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>DEM/USD Exchange Rate Returns</h2>
+
+<h3>Description</h3>
+
+<p>A time series of intra-day percentage returns of Deutsche mark/US dollar (DEM/USD)
+exchange rates, consisting of two observations per day from 1992-10-01 through 1993-09-29.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("MarkDollar")</pre>
+
+
+<h3>Format</h3>
+
+<p>A univariate time series of 518 returns (exact dates unknown) for the DEM/USD exchange rate.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Journal of Business \&amp; Economic Statistics Data Archive. 
+</p>
+<p><code style="white-space: pre;">http://www.amstat.org/publications/jbes/upload/index.cfm?fuseaction=ViewArticles&amp;pub=JBES&amp;issue=96-2-APR</code>
+</p>
+
+
+<h3>References</h3>
+
+<p>Bollerslev, T., and Ghysels, E. (1996). Periodic Autoregressive Conditional Heteroskedasticity.  
+<em>Journal of Business \&amp; Economic Statistics</em>,
+<b>14</b>, 139&ndash;151.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>MarkPound</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+library("tseries")
+data("MarkDollar")
+
+## GARCH(1,1)
+fm &lt;- garch(MarkDollar, grad = "numerical")
+summary(fm)
+logLik(fm)  
+</pre>
+
+
+</div></body></html>

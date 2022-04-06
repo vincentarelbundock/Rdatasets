@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Absenteeism from school in New South Wales</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for absenteeism"><tr><td>absenteeism</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Absenteeism from school in New South Wales</h2>
+
+<h3>Description</h3>
+
+<p>Researchers interested in the relationship between absenteeism from school
+and certain demographic characteristics of children collected data from 146
+randomly sampled students in rural New South Wales, Australia, in a
+particular school year.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+absenteeism
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 146 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt>eth</dt><dd><p>Ethnicity, representing Aboriginal (<code>A</code>) or not (<code>N</code>).</p>
+</dd>
+<dt>sex</dt><dd><p>Gender.</p>
+</dd>
+<dt>age</dt><dd><p>Age bucket.</p>
+</dd>
+<dt>lrn</dt><dd><p>Learner status, with average learner (<code>AL</code>) and
+slow learner (<code>SL</code>).</p>
+</dd>
+<dt>days</dt><dd><p>Number of days absent.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Venables WN, Ripley BD. 2002. Modern Applied Statistics with S.
+Fourth Edition. New York: Springer.
+</p>
+<p>Data can also be found in the R <code>MASS</code> package under the data set name
+<code>quine</code>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+
+ggplot(absenteeism, aes(x = eth, y = days)) +
+  geom_boxplot() +
+  coord_flip()
+</pre>
+
+
+</div></body></html>

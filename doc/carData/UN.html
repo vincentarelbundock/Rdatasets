@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: National Statistics from the United Nations, Mostly From...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for UN"><tr><td>UN</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+National Statistics from the United Nations, Mostly From 2009&ndash;2011
+</h2>
+
+<h3>Description</h3>
+
+<p>National health, welfare, and education statistics for 213
+places, mostly UN members, but also other areas like Hong Kong that are not
+independent countries.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data(UN)</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 213 rows on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>region</code></dt><dd><p>Region of the world: <code>Africa</code>, <code>Asia</code>, <code>Caribbean</code>, <code>Europe</code>, 
+<code>Latin Amer</code>, <code>North America</code>, <code>NorthAtlantic</code>, <code>Oceania</code>.</p>
+</dd>
+<dt><code>group</code></dt><dd><p>A factor with levels <code>oecd</code> for countries that
+are members of the OECD, the Organization for Economic Co-operation and
+Development, as of May 2012, <code>africa</code> for countries on the African
+continent, and <code>other</code> for all other countries.  No OECD countries are
+located in Africa.</p>
+</dd>
+<dt><code>fertility</code></dt><dd><p>Total fertility rate, number of children per woman.</p>
+</dd>
+<dt><code>ppgdp</code></dt><dd><p>Per capita gross domestic product in US dollars.</p>
+</dd>
+<dt><code>lifeExpF</code></dt><dd><p>Female life expectancy, years.</p>
+</dd>
+<dt><code>pctUrban</code></dt><dd><p>Percent urban.</p>
+</dd>
+<dt><code>infantMortality</code></dt><dd><p>Infant deaths by age 1 year per 1000 live births</p>
+</dd>
+</dl>
+
+
+
+<h3>Note</h3>
+
+<p>Similar data, from the period 2000-2003, appear in the <code>alr3</code> package
+under the name <code>UN3</code>. 
+This data set was formerly named <code>UNlla</code> and replaces the older dataset named <code>UN</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>All data were collected from UN tables accessed at <a href="http://unstats.un.org/unsd/demographic/products/socind/">http://unstats.un.org/unsd/demographic/products/socind/</a>
+on April 23, 2012. OECD membership is from <a href="https://www.oecd.org/">https://www.oecd.org/</a>, accessed
+May 25, 2012.
+</p>
+
+
+<h3>References</h3>
+
+<p>Weisberg, S. (2014). <em>Applied Linear Regression</em>, 4th edition.
+Hoboken NJ: Wiley.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+summary(UN)
+</pre>
+
+
+</div></body></html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Sample of UCLA course textbooks for Fall 2018</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for ucla_textbooks_f18"><tr><td>ucla_textbooks_f18</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Sample of UCLA course textbooks for Fall 2018</h2>
+
+<h3>Description</h3>
+
+<p>A sample of courses were collected from UCLA from Fall 2018, and the
+corresponding textbook prices were collected from the UCLA bookstore and
+also from Amazon.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ucla_textbooks_f18
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 201 observations on the following 20 variables.
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year the course was offered</p>
+</dd>
+<dt>term</dt><dd><p>Term the course was offered</p>
+</dd>
+<dt>subject</dt><dd><p>Subject</p>
+</dd>
+<dt>subject_abbr</dt><dd><p>Subject abbreviation, if any</p>
+</dd>
+<dt>course</dt><dd><p>Course name</p>
+</dd>
+<dt>course_num</dt><dd><p>Course number, complete</p>
+</dd>
+<dt>course_numeric</dt><dd><p>Course number, numeric only</p>
+</dd>
+<dt>seminar</dt><dd><p> Boolean for if this is a seminar course.</p>
+</dd>
+<dt>ind_study</dt><dd><p> Boolean for if this is some form of independent study</p>
+</dd>
+<dt>apprenticeship</dt><dd><p> Boolean for if this is an apprenticeship</p>
+</dd>
+<dt>internship</dt><dd><p> Boolean for if this is an internship</p>
+</dd>
+<dt>honors_contracts</dt><dd><p> Boolean for if this is an honors contracts course</p>
+</dd>
+<dt>laboratory</dt><dd><p>Boolean for if this is a lab</p>
+</dd>
+<dt>special_topic</dt><dd><p> Boolean for if this is any of the special types of courses listed</p>
+</dd>
+<dt>textbook_isbn</dt><dd><p>Textbook ISBN</p>
+</dd>
+<dt>bookstore_new</dt><dd><p> New price at the UCLA bookstore</p>
+</dd>
+<dt>bookstore_used</dt><dd><p> Used price at the UCLA bookstore</p>
+</dd>
+<dt>amazon_new</dt><dd><p>New price sold by Amazon</p>
+</dd>
+<dt>amazon_used</dt><dd><p>Used price sold by Amazon</p>
+</dd>
+<dt>notes</dt><dd><p>Any relevant notes</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A past data set was collected from UCLA courses in Spring 2010, and Amazon
+at that time was found to be almost uniformly lower than those of the UCLA
+bookstore's.  Now in 2018, the UCLA bookstore is about even with Amazon on
+the vast majority of titles, and there is no statistical difference in the
+sample data.
+</p>
+<p>The most expensive book required for the course was generally used.
+</p>
+<p>The reason why we advocate for using raw amount differences instead of
+percent differences is that a 20\
+to a 20\
+price difference on low-priced books would balance numerically (but not in a
+practical sense) a moderate but important price difference on more expensive
+books.  So while this tends to result in a bit less sensitivity in detecting
+<em>some</em> effect, we believe the absolute difference compares prices in a
+more meaningful way.
+</p>
+<p>Used prices contain the shipping cost but do not contain tax.  The used
+prices are a more nuanced comparison, since these are all 3rd party sellers.
+Amazon is often more a marketplace than a retail site at this point, and
+many people buy from 3rd party sellers on Amazon now without realizing it.
+The relationship Amazon has with 3rd party sellers is also challenging.
+Given the frequently changing dynamics in this space, we don't think any
+analysis here will be very reliable for long term insights since products
+from these sellers changes frequently in quantity and price.  For this
+reason, we focus only on new books sold directly by Amazon in our
+comparison.  In a future round of data collection, it may be interesting to
+explore whether the dynamics have changed in the used market.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://sa.ucla.edu/ro/public/soc">https://sa.ucla.edu/ro/public/soc</a>
+</p>
+<p><a href="https://ucla.verbacompare.com">https://ucla.verbacompare.com</a>
+</p>
+<p><a href="https://www.amazon.com">https://www.amazon.com</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>textbooks</code>, <code>ucla_f18</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+library(dplyr)
+
+ggplot(ucla_textbooks_f18, aes(x = bookstore_new, y = amazon_new)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = 0, color = "orange") +
+  labs(
+    x = "UCLA Bookstore price", y = "Amazon price",
+    title = "Amazon vs. UCLA Bookstore prices of new textbooks",
+    subtitle = "Orange line represents y = x"
+  )
+
+# The following outliers were double checked for accuracy
+ucla_textbooks_f18_with_diff &lt;- ucla_textbooks_f18 %&gt;%
+  mutate(diff = bookstore_new - amazon_new)
+
+ucla_textbooks_f18_with_diff %&gt;%
+  filter(diff &gt; 20 | diff &lt; -20)
+
+# Distribution of price differences
+ggplot(ucla_textbooks_f18_with_diff, aes(x = diff)) +
+  geom_histogram(binwidth = 5)
+
+# t-test of price differences
+t.test(ucla_textbooks_f18_with_diff$diff)
+</pre>
+
+
+</div></body></html>

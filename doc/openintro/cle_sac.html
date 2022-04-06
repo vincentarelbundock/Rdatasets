@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Cleveland and Sacramento</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for cle_sac"><tr><td>cle_sac</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cleveland and Sacramento</h2>
+
+<h3>Description</h3>
+
+<p>Data on a sample of 500 people from the Cleveland, OH and Sacramento, CA
+metro areas.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+cle_sac
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 500 observations representing people on the
+following 8 variables.
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year the data was collected.</p>
+</dd>
+<dt>state</dt><dd><p>State where person resides.</p>
+</dd>
+<dt>city</dt><dd><p>City.</p>
+</dd>
+<dt>age</dt><dd><p>Age.</p>
+</dd>
+<dt>sex</dt><dd><p>Sex.</p>
+</dd>
+<dt>race</dt><dd><p>Race.</p>
+</dd>
+<dt>marital_status</dt><dd><p>Marital status.</p>
+</dd>
+<dt>personal_income</dt><dd><p>Personal income.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+
+ggplot(cle_sac, aes(x = personal_income)) +
+  geom_histogram(binwidth = 20000) +
+  facet_wrap(~city)
+</pre>
+
+
+</div></body></html>

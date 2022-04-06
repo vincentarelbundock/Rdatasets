@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Tip data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for tips"><tr><td>tips</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Tip data</h2>
+
+<h3>Description</h3>
+
+<p>A simulated data set of tips over a few weeks on a couple days per week.
+Each tip is associated with a single group, which may include several bills
+and tables (i.e. groups paid in one lump sum in simulations).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+tips
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 95 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt>week</dt><dd><p>Week number.</p>
+</dd>
+<dt>day</dt><dd><p>Day, either <code>Friday</code> or <code>Tuesday</code>.</p>
+</dd>
+<dt>n_peop</dt><dd><p>Number of people associated with the group.</p>
+</dd>
+<dt>bill</dt><dd><p>Total bill for the group.</p>
+</dd>
+<dt>tip</dt><dd><p>Total tip from the group.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This data set was built using simulations of tables, then bills, then tips
+based on the bills. Large groups were assumed to only pay the gratuity,
+which is evident in the data. Tips were set to be plausible round values;
+they were often (but not always) rounded to dollars, quarters, etc.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Simulated data set.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+
+ggplot(tips, aes(x = day, y = tip)) +
+  geom_boxplot()
+
+ggplot(tips, aes(x = tip, fill = factor(week))) +
+  geom_density(alpha = 0.5) +
+  labs(x = "Tip", y = "Density", fill = "Week")
+
+ggplot(tips, aes(x = tip)) +
+  geom_dotplot()
+
+ggplot(tips, aes(x = tip, fill = factor(day))) +
+  geom_density(alpha = 0.5) +
+  labs(x = "Tip", y = "Density", fill = "Day")
+</pre>
+
+
+</div></body></html>

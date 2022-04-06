@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Pew Survey on Energy Sources in 2018</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for pew_energy_2018"><tr><td>pew_energy_2018</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Pew Survey on Energy Sources in 2018</h2>
+
+<h3>Description</h3>
+
+<p>US-based survey on support for expanding six different sources of energy,
+including solar, wind, offshore drilling, hydrolic fracturing (&quot;fracking&quot;),
+coal, and nuclear.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+pew_energy_2018
+</pre>
+
+
+<h3>Format</h3>
+
+<p>The format is: List of 6 $ solar_panel_farms : List of responses on
+solar farms.  $ wind_turbine_farms : List of responses on wind turbine
+farms.  $ offshore_drilling : List of responses on offshore drilling.  $
+hydrolic_fracturing : List of responses on hydrolic fracturing.  $
+coal_mining : List of responses on coal mining.  $ nuclear_power_plants:
+List of responses on nuclear.
+</p>
+
+
+<h3>Details</h3>
+
+<p>We did not have access to individual responses in original data set, so we
+took the published percentages and backed out the breakdown
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.pewresearch.org/science/2018/05/14/majorities-see-government-efforts-to-protect-the-environment-as-insufficient/">https://www.pewresearch.org/science/2018/05/14/majorities-see-government-efforts-to-protect-the-environment-as-insufficient/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+data(pew_energy_2018)
+lapply(pew_energy_2018, head)
+lapply(pew_energy_2018, length)
+lapply(pew_energy_2018, table)
+Prop &lt;- function(x) {
+  table(x) / length(x)
+}
+lapply(pew_energy_2018, Prop)
+</pre>
+
+
+</div></body></html>

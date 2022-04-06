@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Attitudes on the Justifiability of Abortion in the United...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for wvs_usa_abortion"><tr><td>wvs_usa_abortion</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Attitudes on the Justifiability of Abortion in the United States (World Values Survey, 1982-2011)</h2>
+
+<h3>Description</h3>
+
+<p>A data set on attitudes about the justifiability of abortion in the United States
+based on World Values Survey responses recorded across six waves (from 1982
+to 2011). I assembled this data frame probably around 2014 and routinely use it
+for in-class illustration about regression, post-estimation simulation, quantities of
+interest, and how to think about modeling a dependent variable that is on a
+1-10 scale, but has curious heaping patterns.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+wvs_usa_abortion
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 10387 observations on the following 16 variables.
+</p>
+
+<dl>
+<dt><code>wvsccode</code></dt><dd><p>the country code for the United States (a numeric constant)</p>
+</dd>
+<dt><code>wave</code></dt><dd><p>the survey wave</p>
+</dd>
+<dt><code>year</code></dt><dd><p>the survey year corresponding to the survey wave</p>
+</dd>
+<dt><code>aj</code></dt><dd><p>the justifiability of abortion on a 1-10 scale (1 = never justifiable; 10 = always justifiable)</p>
+</dd>
+<dt><code>age</code></dt><dd><p>the age of the respondent in years</p>
+</dd>
+<dt><code>collegeed</code></dt><dd><p>a dummy variable that equals 1 if the respondent graduated from college</p>
+</dd>
+<dt><code>female</code></dt><dd><p>a dummy variable that equals 1 if the respondent is a woman</p>
+</dd>
+<dt><code>unemployed</code></dt><dd><p>a dummy variable that equals 1 if the respondent is unemployed</p>
+</dd>
+<dt><code>ideology</code></dt><dd><p>the ideological self-placement of the respondent on a 1-10 scale (1 = furthest to the left; 10 = furthest to the right)</p>
+</dd>
+<dt><code>satisfinancial</code></dt><dd><p>the respondent's financial satisfaction with his/her life (1 = most dissatisfied; 10 = most satisfied)</p>
+</dd>
+<dt><code>postma4</code></dt><dd><p>the post-materialist index for the respondent (-1 = materialist; 0 = mixed, 1 = post-materialist)</p>
+</dd>
+<dt><code>cai</code></dt><dd><p>the child autonomy index, which ranges from -2 to 2</p>
+</dd>
+<dt><code>trustmostpeople</code></dt><dd><p>can most people be trusted (1) or &quot;(you) never can be too careful&quot; (0)</p>
+</dd>
+<dt><code>godimportant</code></dt><dd><p>the importance of God to the respondent on a 1-10 scale (1 = God is not at all important; 10 = God is most important)</p>
+</dd>
+<dt><code>respectauthority</code></dt><dd><p>would more respect for authority be a welcome change to the United States?</p>
+</dd>
+<dt><code>nationalpride</code></dt><dd><p>a dummy that equals 1 if the respondent is very proud to be an American.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data come from the World Values Survey. Note that the college education variable
+is curiously <code>NA</code> until the third survey wave. The child autonomy index ranges from
+-2 to 2 where increasing values indicate that children should learn determination and
+independence over obedience and religious faith. The <code>respectauthority</code> variable is coded
+where -1  means the respondent believes greater respect for authority in the United States
+as a future change to the country would be a bad thing. 0 means the respondent doesn't mind
+such a change. 1 = the respondent believes it would be a good thing.
+</p>
+
+
+</div></body></html>

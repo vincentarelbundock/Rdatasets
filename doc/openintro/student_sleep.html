@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Sleep for 110 students (simulated)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for student_sleep"><tr><td>student_sleep</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Sleep for 110 students (simulated)</h2>
+
+<h3>Description</h3>
+
+<p>A simulated data set for how much 110 college students each slept in a
+single night.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+student_sleep
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 110 observations on the following variable.
+</p>
+
+<dl>
+<dt>hours</dt><dd><p>Number of hours slept by this student (simulated).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Simulated data.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+set.seed(2)
+x &lt;- exp(c(
+  rnorm(100, log(7.5), 0.15),
+  rnorm(10, log(10), 0.196)
+))
+x &lt;- round(x - mean(x) + 7.42, 2)
+
+identical(x, student_sleep$hours)
+</pre>
+
+
+</div></body></html>

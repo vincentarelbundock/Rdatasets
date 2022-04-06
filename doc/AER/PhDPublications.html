@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Doctoral Publications</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for PhDPublications"><tr><td>PhDPublications</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Doctoral Publications</h2>
+
+<h3>Description</h3>
+
+<p>Cross-section data on the scientific productivity of PhD students in biochemistry. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("PhDPublications")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 915 observations on 6 variables.
+</p>
+
+<dl>
+<dt>articles</dt><dd><p>Number of articles published during last 3 years of PhD.</p>
+</dd>
+<dt>gender</dt><dd><p>factor indicating gender.</p>
+</dd>
+<dt>married</dt><dd><p>factor. Is the PhD student married?</p>
+</dd>
+<dt>kids</dt><dd><p>Number of children less than 6 years old.</p>
+</dd>
+<dt>prestige</dt><dd><p>Prestige of the graduate program.</p>
+</dd>
+<dt>mentor</dt><dd><p>Number of articles published by student's mentor.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Online complements to Long (1997). 
+</p>
+<p><a href="http://www.indiana.edu/~jslsoc/research_rm4cldvs.htm">http://www.indiana.edu/~jslsoc/research_rm4cldvs.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Long, J.S. (1990).
+<em>Regression Models for Categorical and Limited Dependent Variables</em>.
+Thousand Oaks: Sage Publications.
+</p>
+<p>Long, J.S. (1997). The Origin of Sex Differences in Science.
+<em>Social Forces</em>, <b>68</b>, 1297&ndash;1315.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## from Long (1997)
+data("PhDPublications")
+
+## Table 8.1, p. 227
+summary(PhDPublications)
+
+## Figure 8.2, p. 220
+plot(0:10, dpois(0:10, mean(PhDPublications$articles)), type = "b", col = 2,
+  xlab = "Number of articles", ylab = "Probability")
+lines(0:10, prop.table(table(PhDPublications$articles))[1:11], type = "b")
+legend("topright", c("observed", "predicted"), col = 1:2, lty = rep(1, 2), bty = "n")
+
+## Table 8.2, p. 228
+fm_lrm &lt;- lm(log(articles + 0.5) ~ ., data = PhDPublications)
+summary(fm_lrm)
+-2 * logLik(fm_lrm)
+fm_prm &lt;- glm(articles ~ ., data = PhDPublications, family = poisson)
+library("MASS")
+fm_nbrm &lt;- glm.nb(articles ~ ., data = PhDPublications)
+
+## Table 8.3, p. 246
+library("pscl")
+fm_zip &lt;- zeroinfl(articles ~ . | ., data = PhDPublications)
+fm_zinb &lt;- zeroinfl(articles ~ . | ., data = PhDPublications, dist = "negbin")
+</pre>
+
+
+</div></body></html>

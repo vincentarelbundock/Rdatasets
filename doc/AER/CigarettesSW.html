@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Cigarette Consumption Panel Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for CigarettesSW"><tr><td>CigarettesSW</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cigarette Consumption Panel Data</h2>
+
+<h3>Description</h3>
+
+<p>Panel data on cigarette consumption for the 48 continental US States from 1985&ndash;1995.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("CigarettesSW")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 48 observations on 7 variables for 2 periods. 
+</p>
+
+<dl>
+<dt>state</dt><dd><p>Factor indicating state.</p>
+</dd>
+<dt>year</dt><dd><p>Factor indicating year.</p>
+</dd>
+<dt>cpi</dt><dd><p>Consumer price index.</p>
+</dd>
+<dt>population</dt><dd><p>State population.</p>
+</dd>
+<dt>packs</dt><dd><p>Number of packs per capita.</p>
+</dd>
+<dt>income</dt><dd><p>State personal income (total, nominal).</p>
+</dd>
+<dt>tax</dt><dd><p>Average state, federal and average local excise taxes for fiscal year.</p>
+</dd>
+<dt>price</dt><dd><p>Average price during fiscal year, including sales tax.</p>
+</dd>
+<dt>taxs</dt><dd><p>Average excise taxes for fiscal year, including sales tax.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>Stock, J.H. and Watson, M.W. (2007). <em>Introduction to Econometrics</em>,
+2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code>, <code>CigarettesB</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Stock and Watson (2007)
+## data and transformations 
+data("CigarettesSW")
+CigarettesSW$rprice &lt;- with(CigarettesSW, price/cpi)
+CigarettesSW$rincome &lt;- with(CigarettesSW, income/population/cpi)
+CigarettesSW$rtax &lt;- with(CigarettesSW, tax/cpi)
+CigarettesSW$rtdiff &lt;- with(CigarettesSW, (taxs - tax)/cpi)
+c1985 &lt;- subset(CigarettesSW, year == "1985")
+c1995 &lt;- subset(CigarettesSW, year == "1995")
+
+## convenience function: HC1 covariances
+hc1 &lt;- function(x) vcovHC(x, type = "HC1")
+
+## Equations 12.9--12.11
+fm_s1 &lt;- lm(log(rprice) ~ rtdiff, data = c1995)
+coeftest(fm_s1, vcov = hc1)
+fm_s2 &lt;- lm(log(packs) ~ fitted(fm_s1), data = c1995)
+fm_ivreg &lt;- ivreg(log(packs) ~ log(rprice) | rtdiff, data = c1995)
+coeftest(fm_ivreg, vcov = hc1)
+
+## Equation 12.15
+fm_ivreg2 &lt;- ivreg(log(packs) ~ log(rprice) + log(rincome) | log(rincome) + rtdiff, data = c1995)
+coeftest(fm_ivreg2, vcov = hc1)
+## Equation 12.16
+fm_ivreg3 &lt;- ivreg(log(packs) ~ log(rprice) + log(rincome) | log(rincome) + rtdiff + rtax,
+  data = c1995)
+coeftest(fm_ivreg3, vcov = hc1)
+
+## More examples can be found in:
+## help("StockWatson2007")
+</pre>
+
+
+</div></body></html>

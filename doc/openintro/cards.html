@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Deck of cards</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for cards"><tr><td>cards</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Deck of cards</h2>
+
+<h3>Description</h3>
+
+<p>All the cards in a standard deck.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+cards
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 52 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt>value</dt><dd><p>a factor with levels <code>10</code> <code>2</code> <code>3</code> <code>4</code>
+<code>5</code> <code>6</code> <code>7</code> <code>8</code> <code>9</code> <code>A</code> <code>J</code> <code>K</code>
+<code>Q</code></p>
+</dd>
+<dt>color</dt><dd><p>a factor with levels <code>black</code> <code>red</code></p>
+</dd>
+<dt>suit</dt><dd><p>a factor with levels <code>Club</code> <code>Diamond</code> <code>Heart</code> <code>Spade</code></p>
+</dd>
+<dt>face</dt><dd><p>a logical vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre>
+
+table(cards$value)
+table(cards$color)
+table(cards$suit)
+table(cards$face)
+table(cards$suit, cards$face)
+</pre>
+
+
+</div></body></html>

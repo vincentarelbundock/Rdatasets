@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Cross-National Rates of Trade Union Density</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for uniondensity"><tr><td>uniondensity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cross-National Rates of Trade Union Density</h2>
+
+<h3>Description</h3>
+
+<p>Cross-national data on relative size of the trade unions and predictors in 20 countries.
+This is a data set of interest to replicating Western and Jackman (1994),
+who themselves were addressing a debate between Wallerstein and Stephens on
+which of two highly correlated predictors explains trade union density.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+uniondensity
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 20 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>country</code></dt><dd><p>a character vector for the country</p>
+</dd>
+<dt><code>union</code></dt><dd><p>a numeric vector for the percentage of the total number of
+wage and salary earners plus the unemployed who are union members, measured
+between 1975 and 1980, with most of the data drawn from 1979.</p>
+</dd>
+<dt><code>left</code></dt><dd><p>a numeric vector tapping the extent to which parties of
+the left have controlled governments since 1919, due to Wilensky (1981).</p>
+</dd>
+<dt><code>size</code></dt><dd><p>a numeric vector measuring the log of labor force size,
+defined as the number of wage and salary earners, plus the unemployed.</p>
+</dd>
+<dt><code>concen</code></dt><dd><p>a numeric vector measuring the percentage of employment,
+shipments, or production accounted for by the four largest enterprises in
+a particular industry, averaged over industries (with weights proportional
+to the size of the industry) and the resulting measure is normalized such
+that the United States scores a 1.0, and is due to Pryor (1973).
+Some of the scores on this variable are imputed using procedures
+described in Stephens and Wallerstein (1991, 945).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data documentation are derived from Simon Jackman's <code>pscl</code> package.
+I just tidied up the presentation a bit.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pryor, Frederic. 1973. Property and Industrial Organization in Communist and Capitalist Countries. Bloomington: Indiana University Press.
+</p>
+<p>Stephens, John and Michael Wallerstein. 1991. Industrial Concentration, Country Size and Trade Union Membership. American Political Science Review 85:941-953.
+</p>
+<p>Western, Bruce and Simon Jackman. 1994. Bayesian Inference for Comparative Research. American Political Science Review 88:412-423.
+</p>
+<p>Wilensky, Harold L. 1981. Leftism, Catholicism, Democratic Corporatism: The Role of Political Parties in Recemt Welfare State Development. In The Development of Welfare States in Europe and America, ed. Peter Flora and Arnold J. Heidenheimer. New Brunswick: Transaction Books.
+</p>
+
+
+<h3>References</h3>
+
+<p>Jackman, Simon. 2009. Bayesian Analysis for the Social Sciences. Wiley: Hoboken, New Jersey.
+</p>
+
+
+</div></body></html>

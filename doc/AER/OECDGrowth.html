@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: OECD Macroeconomic Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for OECDGrowth"><tr><td>OECDGrowth</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>OECD Macroeconomic Data</h2>
+
+<h3>Description</h3>
+
+<p>Cross-section data on OECD countries, used for growth regressions. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("OECDGrowth")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 22 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt>gdp85</dt><dd><p>real GDP in 1985 (per person of working age, i.e., age 15 to 65),
+in 1985 international prices.</p>
+</dd>
+<dt>gdp60</dt><dd><p>real GDP in 1960 (per person of working age, i.e., age 15 to 65),
+in 1985 international prices.</p>
+</dd>
+<dt>invest</dt><dd><p>average of annual ratios of real domestic investment to real GDP (1960&ndash;1985).</p>
+</dd>
+<dt>school</dt><dd><p>percentage of the working-age population that is in secondary school.</p>
+</dd>
+<dt>randd</dt><dd><p>average of annual ratios of gross domestic expenditure on research 
+and development to nominal GDP (of available observations during 1960&ndash;1985).</p>
+</dd>    
+<dt>popgrowth</dt><dd><p>annual population growth 1960&ndash;1985, computed as <code>log(pop85/pop60)/25</code>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Appendix 1 Nonneman and Vanhoudt (1996), except for one bad misprint:
+The value of <code>school</code> for Norway is given as 0.01, the correct value is 0.1
+(see Mankiw, Romer and Weil, 1992). <code>OECDGrowth</code> contains the corrected data.
+</p>
+
+
+<h3>References</h3>
+
+<p>Mankiw, N.G., Romer, D., and Weil, D.N. (1992). A Contribution to the Empirics of Economic Growth. 
+<em>Quarterly Journal of Economics</em>, <b>107</b>, 407&ndash;437.
+</p>
+<p>Nonneman, W., and Vanhoudt, P. (1996). A Further Augmentation of the Solow Model
+and the Empirics of Economic Growth. <em>Quarterly Journal of Economics</em>, <b>111</b>, 943&ndash;953.
+</p>
+<p>Zaman, A., Rousseeuw, P.J., and  Orhan, M. (2001). Econometric Applications of
+High-Breakdown Robust Regression Techniques. <em>Economics Letters</em>, <b>71</b>, 1&ndash;8.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>GrowthDJ</code>, <code>GrowthSW</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("OECDGrowth")
+
+## Nonneman and Vanhoudt (1996), Table II
+cor(OECDGrowth[, 3:6])
+cor(log(OECDGrowth[, 3:6]))
+
+## textbook Solow model
+## Nonneman and Vanhoudt (1996), Table IV, and
+## Zaman, Rousseeuw and Orhan (2001), Table 2
+so_ols &lt;- lm(log(gdp85/gdp60) ~ log(gdp60) + log(invest) + log(popgrowth+.05),
+  data = OECDGrowth)
+summary(so_ols)
+
+## augmented and extended Solow growth model
+## Nonneman and Vanhoudt (1996), Table IV
+aso_ols &lt;- lm(log(gdp85/gdp60) ~ log(gdp60) + log(invest) +
+  log(school) + log(popgrowth+.05), data = OECDGrowth)
+eso_ols &lt;- lm(log(gdp85/gdp60) ~ log(gdp60) + log(invest) +
+  log(school) + log(randd) + log(popgrowth+.05), data = OECDGrowth)
+
+## determine unusual observations using LTS
+library("MASS")
+so_lts &lt;- lqs(log(gdp85/gdp60) ~ log(gdp60) +  log(invest) + log(popgrowth+.05),
+  data = OECDGrowth, psamp = 13, nsamp = "exact")
+
+## large residuals
+nok1 &lt;- abs(residuals(so_lts))/so_lts$scale[2] &gt; 2.5
+residuals(so_lts)[nok1]/so_lts$scale[2]
+
+## high leverage
+X &lt;- model.matrix(so_ols)[,-1]
+cv &lt;- cov.rob(X, nsamp = "exact")
+mh &lt;- sqrt(mahalanobis(X, cv$center, cv$cov))
+nok2 &lt;- mh &gt; 2.5
+mh[nok2]
+
+## bad leverage
+nok &lt;- which(nok1 &amp; nok2)
+nok
+
+## robust results without bad leverage points
+so_rob &lt;- update(so_ols, subset = -nok)
+summary(so_rob)
+## This is similar to Zaman, Rousseeuw and Orhan (2001), Table 2
+## but uses exact computations (and not sub-optimal results
+## for the robust functions lqs and cov.rob)
+</pre>
+
+
+</div></body></html>

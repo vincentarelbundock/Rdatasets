@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Daycare fines</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for daycare_fines"><tr><td>daycare_fines</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Daycare fines</h2>
+
+<h3>Description</h3>
+
+<p>Researchers tested the deterrence hypothesis which predicts that the
+introduction of a penalty will reduce the occurrence of the behavior subject
+to the fine, with the condition that the fine leaves everything else
+unchanged by instituting a fine for late pickup at daycare centers.
+For this study, they worked with 10 volunteer daycare centers that did not
+originally impose a fine to parents for picking up their kids late.
+They randomly selected 6 of these daycare centers and instituted a monetary
+fine (of a considerable amount) for picking up children late and then removed it.
+In the remaining 4 daycare centers no fine was introduced.
+The study period was divided into four: before the fine (weeks 1–4), the first
+4 weeks with the fine (weeks 5-8), the entire period with the fine (weeks 5–16),
+and the after fine period (weeks 17-20). Throughout the study, the number of kids
+who were picked up late was recorded each week for each daycare. The study
+found that the number of late-coming parents increased significantly when the
+fine was introduced, and no reduction occurred after the fine was removed.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+daycare_fines
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 200 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt>center</dt><dd><p>Daycare center id.</p>
+</dd>
+<dt>group</dt><dd><p>Study group: <code>test</code> (fine instituted) or <code>control</code> (no fine).</p>
+</dd>
+<dt>children</dt><dd><p>Number of children at daycare center.</p>
+</dd>
+<dt>week</dt><dd><p>Week of study.</p>
+</dd>
+<dt>late_pickups</dt><dd><p>Number of late pickups for a given week and daycare center.</p>
+</dd>
+<dt>study_period_4</dt><dd><p>Period of study, divided into 4 periods:
+<code style="white-space: pre;">before fine</code>, <code style="white-space: pre;">first 4 weeks with fine</code>, <code style="white-space: pre;">last 8 weeks with fine</code>, <code style="white-space: pre;">after fine</code></p>
+</dd>
+<dt>study_period_3</dt><dd><p>Period of study, divided into 4 periods:
+<code style="white-space: pre;">before fine</code>, <code style="white-space: pre;">with fine</code>, <code style="white-space: pre;">after fine</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Gneezy, Uri, and Aldo Rustichini. &quot;A fine is a price.&quot;
+The Journal of Legal Studies 29, no. 1 (2000): 1-17.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+# The following tables roughly match results presented in Table 2 of the source article
+# The results are only off by rounding for some of the weeks
+daycare_fines %&gt;%
+  group_by(center, study_period_4) %&gt;%
+  summarise(avg_late_pickups = mean(late_pickups), .groups = "drop") %&gt;%
+  pivot_wider(names_from = study_period_4, values_from = avg_late_pickups)
+
+daycare_fines %&gt;%
+  group_by(center, study_period_3) %&gt;%
+  summarise(avg_late_pickups = mean(late_pickups), .groups = "drop") %&gt;%
+  pivot_wider(names_from = study_period_3, values_from = avg_late_pickups)
+
+# The following plot matches Figure 1 of the source article
+daycare_fines %&gt;%
+  group_by(week, group) %&gt;%
+  summarise(avg_late_pickups = mean(late_pickups), .groups = "drop") %&gt;%
+  ggplot(aes(x = week, y = avg_late_pickups, group = group, color = group)) +
+  geom_point() +
+  geom_line()
+</pre>
+
+
+</div></body></html>

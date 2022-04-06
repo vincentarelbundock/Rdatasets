@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Determinants of Wages Data (CPS 1988)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for CPS1988"><tr><td>CPS1988</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Determinants of Wages Data (CPS 1988)</h2>
+
+<h3>Description</h3>
+
+<p>Cross-section data originating from the March 1988 Current Population Survey by the 
+US Census Bureau.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("CPS1988")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 28,155 observations on 7 variables.
+</p>
+
+<dl>
+<dt>wage</dt><dd><p>Wage (in dollars per week).</p>
+</dd>
+<dt>education</dt><dd><p>Number of years of education.</p>
+</dd>
+<dt>experience</dt><dd><p>Number of years of potential work experience.</p>
+</dd>
+<dt>ethnicity</dt><dd><p>Factor with levels <code>"cauc"</code> and <code>"afam"</code> (African-American).</p>
+</dd>
+<dt>smsa</dt><dd><p>Factor. Does the individual reside in a Standard Metropolitan Statistical Area (SMSA)?</p>
+</dd>
+<dt>region</dt><dd><p>Factor with levels <code>"northeast"</code>, <code>"midwest"</code>, <code>"south"</code>, <code>"west"</code>.</p>
+</dd>
+<dt>parttime</dt><dd><p>Factor. Does the individual work part-time?</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A sample of men aged 18 to 70 with positive annual income greater than USD 50 in 1992, 
+who are not self-employed nor working without pay. Wages are deflated by the deflator of 
+Personal Consumption Expenditure for 1992.
+</p>
+<p>A problem with CPS data is that it does not provide actual work experience. 
+It is therefore customary to compute experience as <code>age - education - 6</code> 
+(as was done by Bierens and Ginther, 2001), this may be considered potential experience. 
+As a result, some respondents have negative experience.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.personal.psu.edu/hxb11/MEDIAN.HTM">http://www.personal.psu.edu/hxb11/MEDIAN.HTM</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Bierens, H.J., and Ginther, D. (2001). Integrated Conditional Moment Testing of Quantile Regression Models. 
+<em>Empirical Economics</em>, <b>26</b>, 307&ndash;324.
+</p>
+<p>Buchinsky, M. (1998). Recent Advances in Quantile Regression Models: A Practical Guide for Empirical Research. 
+<em>Journal of Human Resources</em>, <b>33</b>, 88&ndash;126.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>CPS1985</code>, <code>CPSSW</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## data and packages
+library("quantreg")
+data("CPS1988")
+CPS1988$region &lt;- relevel(CPS1988$region, ref = "south")
+
+## Model equations: Mincer-type, quartic, Buchinsky-type
+mincer &lt;- log(wage) ~ ethnicity + education + experience + I(experience^2)
+quart &lt;- log(wage) ~ ethnicity + education + experience + I(experience^2) +
+  I(experience^3) + I(experience^4)
+buchinsky &lt;- log(wage) ~ ethnicity * (education + experience + parttime) + 
+  region*smsa + I(experience^2) + I(education^2) + I(education*experience)
+
+## OLS and LAD fits (for LAD see Bierens and Ginter, Tables 1-3.A.)
+mincer_ols &lt;- lm(mincer, data = CPS1988)
+mincer_lad &lt;- rq(mincer, data = CPS1988)
+quart_ols &lt;- lm(quart, data = CPS1988)
+quart_lad &lt;- rq(quart, data = CPS1988)
+buchinsky_ols &lt;- lm(buchinsky, data = CPS1988)
+buchinsky_lad &lt;- rq(buchinsky, data = CPS1988)
+</pre>
+
+
+</div></body></html>

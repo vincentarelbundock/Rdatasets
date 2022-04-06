@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Growth curves of pigs in a 3x3 factorial experiment</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for dietox"><tr><td>dietox</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Growth curves of pigs in a 3x3 factorial experiment</h2>
+
+<h3>Description</h3>
+
+<p>The <code>dietox</code> data frame has 861 rows and 7 columns.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+dietox
+</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Weight</dt><dd><p>Weight in Kg</p>
+</dd>
+<dt>Feed</dt><dd><p>Cumulated feed intake in Kg</p>
+</dd>
+<dt>Time</dt><dd><p>Time (in weeks) in the experiment</p>
+</dd>
+<dt>Pig</dt><dd><p>Factor; id of each pig</p>
+</dd>
+<dt>Evit</dt><dd><p>Factor; vitamin E dose; see 'details'.</p>
+</dd>
+<dt>Cu</dt><dd><p>Factor, copper dose; see 'details'</p>
+</dd>
+<dt>Start</dt><dd><p>Start weight in experiment, i.e. weight at week 1.</p>
+</dd>
+<dt>Litter</dt><dd><p>Factor, id of litter of each pig</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data contains weight of slaughter pigs measured weekly for 12
+weeks. Data also contains the startweight (i.e. the weight at week
+1). The treatments are 3 different levels of Evit = vitamin E (dose: 0,
+100, 200 mg dl-alpha-tocopheryl acetat /kg feed) in combination with 3
+different levels of Cu=copper (dose: 0, 35, 175 mg/kg feed) in the feed.
+The cumulated feed intake is also recorded. The pigs are littermates.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lauridsen, C., Højsgaard, S.,Sørensen, M.T. C. (1999) Influence of
+Dietary Rapeseed Oli, Vitamin E, and Copper on Performance and
+Antioxidant and Oxidative Status of Pigs. J. Anim. Sci.77:906-916
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+data(dietox)
+head(dietox)
+## Not run: 
+if (require(ggplot2)){
+  qplot(Time, Weight, data=dietox, col=Pig) + geom_line() +
+        theme(legend.position = "none") + facet_grid(Evit~Cu)
+} else {
+  coplot(Weight ~ Time | Evit * Cu, data=dietox)
+}
+
+## End(Not run)
+</pre>
+
+
+</div></body></html>

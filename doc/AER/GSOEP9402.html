@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: German Socio-Economic Panel 1994-2002</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for GSOEP9402"><tr><td>GSOEP9402</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>German Socio-Economic Panel 1994&ndash;2002</h2>
+
+<h3>Description</h3>
+
+<p>Cross-section data for 675 14-year old children born between 1980 and 1988.
+The sample is taken from the German Socio-Economic Panel (GSOEP) for the years
+1994 to 2002 to investigate the determinants of secondary school choice.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("GSOEP9402")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 675 observations on 12 variables. 
+</p>
+
+<dl>
+<dt>school</dt><dd><p>factor. Child's secondary school level.</p>
+</dd>
+<dt>birthyear</dt><dd><p>Year of child's birth.</p>
+</dd>
+<dt>gender</dt><dd><p>factor indicating child's gender.</p>
+</dd>
+<dt>kids</dt><dd><p>Total number of kids living in household.</p>
+</dd>
+<dt>parity</dt><dd><p>Birth order.</p>
+</dd>
+<dt>income</dt><dd><p>Household income.</p>
+</dd>
+<dt>size</dt><dd><p>Household size</p>
+</dd>
+<dt>state</dt><dd><p>factor indicating German federal state.</p>
+</dd>
+<dt>marital</dt><dd><p>factor indicating mother's marital status.</p>
+</dd>
+<dt>meducation</dt><dd><p>Mother's educational level in years.</p>
+</dd>
+<dt>memployment</dt><dd><p>factor indicating mother's employment level:
+full-time, part-time, or not working.</p>
+</dd>
+<dt>year</dt><dd><p>Year of GSOEP wave.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This sample from the German Socio-Economic Panel (GSOEP) for the years
+between 1994 and 2002 has been selected by Winkelmann and Boes (2009)
+to investigate the determinants of secondary school choice.
+</p>
+<p>In the German schooling system, students are separated relatively early into
+different school types, depending on their ability as perceived by the teachers
+after four years of primary school. After that, around the age of ten, students are placed
+into one of three types of secondary school: <code>"Hauptschule"</code>
+(lower secondary school), <code>"Realschule"</code> (middle secondary school), or
+<code>"Gymnasium"</code> (upper secondary school). Only a degree from the latter
+type of school (called Abitur) provides direct access to universities.
+</p>
+<p>A frequent criticism of this system is that the tracking takes place too
+early, and that it cements inequalities in education across generations. 
+Although the secondary school choice is based on the teachers' recommendations,
+it is typically also influenced by the parents; both indirectly through
+their own educational level and directly through influence on the teachers.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Winkelmann and Boes (2009).
+</p>
+
+
+<h3>References</h3>
+
+<p>Winkelmann, R., and Boes, S. (2009). <em>Analysis of Microdata</em>, 2nd ed. Berlin and Heidelberg: Springer-Verlag.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>WinkelmannBoes2009</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## data
+data("GSOEP9402", package = "AER")
+
+## some convenience data transformations
+gsoep &lt;- GSOEP9402
+gsoep$year2 &lt;- factor(gsoep$year)
+
+## visualization
+plot(school ~ meducation, data = gsoep, breaks = c(7, 9, 10.5, 11.5, 12.5, 15, 18))
+
+
+## Chapter 5, Table 5.1
+library("nnet")
+gsoep_mnl &lt;- multinom(
+  school ~ meducation + memployment + log(income) + log(size) + parity + year2,
+  data = gsoep)
+coeftest(gsoep_mnl)[c(1:6, 1:6 + 14),]
+ 
+## alternatively
+if(require("mlogit")) {
+gsoep_mnl2 &lt;- mlogit(
+  school ~ 0 | meducation + memployment + log(income) + log(size) + parity + year2,
+  data = gsoep, shape = "wide", reflevel = "Hauptschule")
+coeftest(gsoep_mnl2)[1:12,]
+}
+
+## Table 5.2
+library("effects")
+gsoep_eff &lt;- effect("meducation", gsoep_mnl,
+  xlevels = list(meducation = sort(unique(gsoep$meducation))))
+gsoep_eff$prob
+plot(gsoep_eff, confint = FALSE)
+
+## omit year
+gsoep_mnl1 &lt;- multinom(
+  school ~ meducation + memployment + log(income) + log(size) + parity,
+  data = gsoep)
+lrtest(gsoep_mnl, gsoep_mnl1)
+
+
+## Chapter 6
+## Table 6.1
+library("MASS")
+gsoep_pop &lt;- polr(
+  school ~ meducation + I(memployment != "none") + log(income) + log(size) + parity + year2,
+  data = gsoep, method = "probit", Hess = TRUE)
+gsoep_pol &lt;- polr(
+  school ~ meducation + I(memployment != "none") + log(income) + log(size) + parity + year2,
+  data = gsoep, Hess = TRUE)
+
+## compare polr and multinom via AIC
+gsoep_pol1 &lt;- polr(
+  school ~ meducation + memployment + log(income) + log(size) + parity,
+  data = gsoep, Hess = TRUE)
+AIC(gsoep_pol1, gsoep_mnl)
+
+## effects
+eff_pol1 &lt;- allEffects(gsoep_pol1)
+plot(eff_pol1, ask = FALSE, confint = FALSE)
+
+
+## More examples can be found in:
+## help("WinkelmannBoes2009")
+</pre>
+
+
+</div></body></html>

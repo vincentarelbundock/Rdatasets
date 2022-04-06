@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Elastic Band Data Replicated</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for elastic1"><tr><td>elastic1</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Elastic Band Data Replicated</h2>
+
+<h3>Description</h3>
+
+<p>The <code>elastic1</code> data frame has 7 rows and 2 columns
+giving, for each amount by which an elastic band is stretched
+over the end of a ruler, the distance that the band traveled when
+released.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>elastic1</pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>stretch</dt><dd><p>the amount by which the
+elastic band was stretched</p>
+</dd>
+<dt>distance</dt><dd><p>the distance traveled</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>J. H. Maindonald
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Not run: 
+plot(elastic1)
+
+print("Inline Functions - Example 12.2.2")
+sapply(elastic1, mean)
+pause()
+
+sapply(elastic1, function(x)mean(x))
+pause()
+
+sapply(elastic1, function(x)sum(log(x)))
+pause()
+
+print("Data Output - Example 12.3.2")
+write.table(elastic1, file="bandsframe.txt")
+
+## End(Not run)
+</pre>
+
+
+</div></body></html>

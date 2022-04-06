@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: CoolingWater</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for CoolingWater"><tr><td>CoolingWater</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>CoolingWater</h2>
+
+<h3>Description</h3>
+
+<p>Temperature of a mug of water as it cools
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data(CoolingWater)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 222 observations of the following variables.
+</p>
+
+<ul>
+<li> <p><code>time</code> time in minutes
+</p>
+</li>
+<li> <p><code>temp</code> temperature in Celsius
+</p>
+</li></ul>
+
+
+
+<h3>Details</h3>
+
+<p>The water was poured into a mug and a temperature probe inserted into
+the water with a few seconds of the pour.
+</p>
+
+
+<h3>Source</h3>
+
+<p>These data were collected Stan Wagon to help his
+mathematical modeling students explore Newton's
+Law of Cooling and the ways that the law is really
+only an approximation. More about Stan: <a href="http://stanwagon.com">http://stanwagon.com</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(CoolingWater)
+if (require(ggformula)) {
+  gf_point(temp ~ time, data = CoolingWater, alpha = 0.5)
+}
+
+</pre>
+
+
+</div></body></html>

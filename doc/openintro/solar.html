@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Energy Output From Two Solar Arrays in San Francisco</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for solar"><tr><td>solar</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Energy Output From Two Solar Arrays in San Francisco</h2>
+
+<h3>Description</h3>
+
+<p>The data provide the energy output for several months from two roof-top
+solar arrays in San Francisco. This city is known for having highly variable
+weather, so while these two arrays are only about 1 mile apart from each
+other, the Inner Sunset location tends to have more fog.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+solar
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 284 observations on the following 3 variables.
+Each row represents a single day for one of the arrays.
+</p>
+
+<dl>
+<dt>location</dt><dd><p>Location for the array.</p>
+</dd>
+<dt>date</dt><dd><p>Date.</p>
+</dd>
+<dt>kwh</dt><dd><p>Number of kWh</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The Haight-Ashbury array is a 10.4 kWh array, while the Inner Sunset array
+is a 2.8 kWh array. The kWh units represents kilowatt-hours, which is
+the unit of energy that typically is used for electricity bills. The cost
+per kWh in San Francisco was about $0.25 in 2016.
+</p>
+
+
+<h3>Source</h3>
+
+<p>These data were provided by Larry Rosenfeld, a resident in San Francisco.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+solar.is &lt;- subset(solar, location == "Inner_Sunset")
+solar.ha &lt;- subset(solar, location == "Haight_Ashbury")
+plot(solar.is$date, solar.is$kwh, type = "l", ylim = c(0, max(solar$kwh)))
+lines(solar.ha$date, solar.ha$kwh, col = 4)
+
+d &lt;- merge(solar.ha, solar.is, by = "date")
+plot(d$date, d$kwh.x / d$kwh.y, type = "l")
+</pre>
+
+
+</div></body></html>

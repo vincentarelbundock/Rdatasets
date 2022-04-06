@@ -1,0 +1,103 @@
+"","year","name","country","time","time_hrs","division","note"
+"1",1970,"Gary Muhrcke","United States",02:31:38,2.52722222222222,"Men","Course record"
+"2",1970,NA,NA,NA,NA,"Women","No woman finishers"
+"3",1971,"Norman Higgins","United States",02:22:54,2.38166666666667,"Men","Course record"
+"4",1971,"Beth Bonner","United States",02:55:22,2.92277777777778,"Women","World record"
+"5",1972,"Sheldon Karlin","United States",02:27:52,2.46444444444444,"Men",NA
+"6",1972,"Nina Kuscsik","United States",03:08:41,3.14472222222222,"Women",NA
+"7",1973,"Tom Fleming","United States",02:21:54,2.365,"Men","Course record"
+"8",1973,"Nina Kuscsik","United States",02:57:07,2.95194444444444,"Women","Second victory"
+"9",1974,"Norbert Sander","United States",02:26:30,2.44166666666667,"Men",NA
+"10",1974,"Kathrine Switzer","United States",03:07:29,3.12472222222222,"Women",NA
+"11",1975,"Tom Fleming","United States",02:19:27,2.32416666666667,"Men","Course record, second victory"
+"12",1975,"Kim Merritt","United States",02:46:14,2.77055555555556,"Women","Course record"
+"13",1976,"Bill Rodgers","United States",02:10:10,2.16944444444444,"Men","Course record"
+"14",1976,"Miki Gorman","United States",02:39:11,2.65305555555556,"Women","Course record"
+"15",1977,"Bill Rodgers","United States",02:11:28,2.19111111111111,"Men","Second victory"
+"16",1977,"Miki Gorman","United States",02:43:10,2.71944444444444,"Women","Second victory"
+"17",1978,"Bill Rodgers","United States",02:12:12,2.20333333333333,"Men","Third victory"
+"18",1978,"Grete Waitz","Norway",02:32:30,2.54166666666667,"Women","World record"
+"19",1979,"Bill Rodgers","United States",02:11:42,2.195,"Men","Fourth victory"
+"20",1979,"Grete Waitz","Norway",02:27:33,2.45916666666667,"Women","World record, second victory"
+"21",1980,"Alberto Salazar","United States",02:09:41,2.16138888888889,"Men","Course record"
+"22",1980,"Grete Waitz","Norway",02:25:42,2.42833333333333,"Women","World record, third victory"
+"23",1981,"Alberto Salazar","United States",02:08:13,2.13694444444444,"Men","Course record (course measured short), second victory"
+"24",1981,"Allison Roe","New Zealand",02:25:29,2.42472222222222,"Women","Course record (course measured short)"
+"25",1982,"Alberto Salazar","United States",02:09:29,2.15805555555556,"Men","Third victory"
+"26",1982,"Grete Waitz","Norway",02:27:14,2.45388888888889,"Women","Fourth victory"
+"27",1983,"Rod Dixon","New Zealand",02:08:59,2.14972222222222,"Men",NA
+"28",1983,"Grete Waitz","Norway",02:27:00,2.45,"Women","Fifth victory"
+"29",1984,"Orlando Pizzolato","Italy",02:14:53,2.24805555555556,"Men",NA
+"30",1984,"Grete Waitz","Norway",02:29:30,2.49166666666667,"Women","Sixth victory"
+"31",1985,"Orlando Pizzolato","Italy",02:11:34,2.19277777777778,"Men","Second victory"
+"32",1985,"Grete Waitz","Norway",02:28:34,2.47611111111111,"Women","Seventh victory"
+"33",1986,"Gianni Poli","Italy",02:11:06,2.185,"Men",NA
+"34",1986,"Grete Waitz","Norway",02:28:06,2.46833333333333,"Women","Eighth victory"
+"35",1987,"Ibrahim Hussein","Kenya",02:11:01,2.18361111111111,"Men",NA
+"36",1987,"Priscilla Welch","United Kingdom",02:30:17,2.50472222222222,"Women",NA
+"37",1988,"Steve Jones","United Kingdom",02:08:20,2.13888888888889,"Men",NA
+"38",1988,"Grete Waitz","Norway",02:28:07,2.46861111111111,"Women","Ninth victory"
+"39",1989,"Juma Ikangaa","Tanzania",02:08:01,2.13361111111111,"Men","Course record"
+"40",1989,"Ingrid Kristiansen","Norway",02:25:30,2.425,"Women",NA
+"41",1990,"Douglas Wakiihuri","Kenya",02:12:39,2.21083333333333,"Men",NA
+"42",1990,"Wanda Panfil","Poland",02:30:45,2.5125,"Women",NA
+"43",1991,"Salvador Garca","Mexico",02:09:28,2.15777777777778,"Men",NA
+"44",1991,"Liz McColgan","United Kingdom",02:27:32,2.45888888888889,"Women",NA
+"45",1992,"Willie Mtolo","South Africa",02:09:29,2.15805555555556,"Men",NA
+"46",1992,"Lisa Ondieki","Australia",02:24:40,2.41111111111111,"Women","Course record"
+"47",1993,"Andrs Espinosa","Mexico",02:10:04,2.16777777777778,"Men",NA
+"48",1993,"Uta Pippig","Germany",02:26:24,2.44,"Women",NA
+"49",1994,"Germn Silva","Mexico",02:11:21,2.18916666666667,"Men",NA
+"50",1994,"Tegla Loroupe","Kenya",02:27:37,2.46027777777778,"Women",NA
+"51",1995,"Germn Silva","Mexico",02:11:00,2.18333333333333,"Men","Second victory"
+"52",1995,"Tegla Loroupe","Kenya",02:28:06,2.46833333333333,"Women","Second victory"
+"53",1996,"Giacomo Leone","Italy",02:09:54,2.165,"Men",NA
+"54",1996,"Anua Ctun","Romania",02:28:18,2.47166666666667,"Women",NA
+"55",1997,"John Kagwe","Kenya",02:08:12,2.13666666666667,"Men",NA
+"56",1997,"Franziska Rochat-Moser","Switzerland",02:28:43,2.47861111111111,"Women",NA
+"57",1998,"John Kagwe","Kenya",02:08:45,2.14583333333333,"Men","Second victory"
+"58",1998,"Franca Fiacconi","Italy",02:25:17,2.42138888888889,"Women",NA
+"59",1999,"Joseph Chebet","Kenya",02:09:14,2.15388888888889,"Men",NA
+"60",1999,"Adriana Fernndez","Mexico",02:25:06,2.41833333333333,"Women",NA
+"61",2000,"Abdelkader El Mouaziz","Morocco",02:10:09,2.16916666666667,"Men",NA
+"62",2000,"Lyudmila Petrova","Russia",02:25:45,2.42916666666667,"Women",NA
+"63",2001,"Tesfaye Jifar","Ethiopia",02:07:43,2.12861111111111,"Men","Course record"
+"64",2001,"Margaret Okayo","Kenya",02:24:21,2.40583333333333,"Women","Course record"
+"65",2002,"Rodgers Rop","Kenya",02:08:07,2.13527777777778,"Men",NA
+"66",2002,"Joyce Chepchumba","Kenya",02:25:56,2.43222222222222,"Women",NA
+"67",2003,"Martin Lel","Kenya",02:10:30,2.175,"Men",NA
+"68",2003,"Margaret Okayo","Kenya",02:22:31,2.37527777777778,"Women","Current course record, second victory"
+"69",2004,"Hendrick Ramaala","South Africa",02:09:28,2.15777777777778,"Men",NA
+"70",2004,"Paula Radcliffe","United Kingdom",02:23:10,2.38611111111111,"Women",NA
+"71",2005,"Paul Tergat","Kenya",02:09:30,2.15833333333333,"Men",NA
+"72",2005,"Jeena Prokopuka","Latvia",02:24:41,2.41138888888889,"Women",NA
+"73",2006,"Marlson Gomes dos Santos","Brazil",02:09:58,2.16611111111111,"Men",NA
+"74",2006,"Jeena Prokopuka","Latvia",02:25:05,2.41805555555556,"Women","Second victory"
+"75",2007,"Martin Lel","Kenya",02:09:04,2.15111111111111,"Men","Second victory"
+"76",2007,"Paula Radcliffe","United Kingdom",02:23:09,2.38583333333333,"Women","Second victory"
+"77",2008,"Marlson Gomes dos Santos","Brazil",02:08:43,2.14527777777778,"Men","Second victory"
+"78",2008,"Paula Radcliffe","United Kingdom",02:23:56,2.39888888888889,"Women","Third victory"
+"79",2009,"Meb Keflezighi","United States",02:09:15,2.15416666666667,"Men",NA
+"80",2009,"Derartu Tulu","Ethiopia",02:28:52,2.48111111111111,"Women",NA
+"81",2010,"Gebregziabher Gebremariam","Ethiopia",02:08:14,2.13722222222222,"Men",NA
+"82",2010,"Edna Kiplagat","Kenya",02:28:20,2.47222222222222,"Women",NA
+"83",2011,"Geoffrey Mutai","Kenya",02:05:06,2.085,"Men","Current course record"
+"84",2011,"Firehiwot Dado","Ethiopia",02:23:15,2.3875,"Women",NA
+"85",2012,NA,NA,NA,NA,"Men","Canceled due to Hurricane Sandy"
+"86",2012,NA,NA,NA,NA,"Women","Canceled due to Hurricane Sandy"
+"87",2013,"Geoffrey Mutai","Kenya",02:08:24,2.14,"Men","Second victory"
+"88",2013,"Priscah Jeptoo","Kenya",02:25:07,2.41861111111111,"Women",NA
+"89",2014,"Wilson Kipsang","Kenya",02:10:59,2.18305555555556,"Men",NA
+"90",2014,"Mary Keitany","Kenya",02:25:07,2.41861111111111,"Women",NA
+"91",2015,"Stanley Biwott","Kenya",02:10:34,2.17611111111111,"Men",NA
+"92",2015,"Mary Keitany","Kenya",02:24:25,2.40694444444444,"Women","Second victory"
+"93",2016,"Ghirmay Ghebreslassie","Eritrea",02:07:51,2.13083333333333,"Men",NA
+"94",2016,"Mary Keitany","Kenya",02:24:26,2.40722222222222,"Women","Third victory"
+"95",2017,"Geoffrey Kamworor","Kenya",02:10:53,2.18138888888889,"Men",NA
+"96",2017,"Shalane Flanagan","United States",02:26:53,2.44805555555556,"Women",NA
+"97",2018,"Lelisa Desisa","Ethiopia",02:05:59,2.09972222222222,"Men",NA
+"98",2018,"Mary Keitany","Kenya",02:22:48,2.38,"Women","Fourth victory"
+"99",2019,"Geoffrey Kamworor","Kenya",02:08:13,2.13694444444444,"Men","Second victory"
+"100",2019,"Joyciline Jepkosgei","Kenya",02:22:38,2.37722222222222,"Women",NA
+"101",2020,"Kevin Quinn","United Kingdom",02:23:48,2.39666666666667,"Men","Virtual event held due to the COVID-19"
+"102",2020,"Stephanie Bruce","United States",02:35:28,2.59111111111111,"Women","Virtual event held due to the COVID-19"

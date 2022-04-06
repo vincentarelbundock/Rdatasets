@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Elmhurst College gift aid</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for elmhurst"><tr><td>elmhurst</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Elmhurst College gift aid</h2>
+
+<h3>Description</h3>
+
+<p>A random sample of 50 students gift aid for students at Elmhurst College.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+elmhurst
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 50 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt>family_income</dt><dd><p>Family income of the student.</p>
+</dd>
+<dt>gift_aid</dt><dd><p>Gift aid, in $1000s.</p>
+</dd>
+<dt>price_paid</dt><dd><p>Price paid by the student (tuition - gift aid).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>These data were sampled from a table of data for all freshman from
+the 2011 class at Elmhurst College that accompanied an article titled What
+Students Really Pay to Go to College published online by The Chronicle of
+Higher Education:
+<a href="https://www.chronicle.com/article/what-students-really-pay-to-go-to-college/">https://www.chronicle.com/article/what-students-really-pay-to-go-to-college/</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+library(broom)
+
+ggplot(elmhurst, aes(x = family_income, y = gift_aid)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+
+mod &lt;- lm(gift_aid ~ family_income, data = elmhurst)
+tidy(mod)
+</pre>
+
+
+</div></body></html>

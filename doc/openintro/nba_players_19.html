@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: NBA Players for the 2018-2019 season</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for nba_players_19"><tr><td>nba_players_19</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>NBA Players for the 2018-2019 season</h2>
+
+<h3>Description</h3>
+
+<p>Summary information from the NBA players for the 2018-2019 season.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+nba_players_19
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 494 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt>first_name</dt><dd><p>First name.</p>
+</dd>
+<dt>last_name</dt><dd><p>Last name.</p>
+</dd>
+<dt>team</dt><dd><p>Team name</p>
+</dd>
+<dt>team_abbr</dt><dd><p>3-letter team abbreviation.</p>
+</dd>
+<dt>position</dt><dd><p>Player position.</p>
+</dd>
+<dt>number</dt><dd><p>Jersey number.</p>
+</dd>
+<dt>height</dt><dd><p>Height, in inches.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.nba.com/players">https://www.nba.com/players</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+hist(nba_players_19$height, 20)
+table(nba_players_19$team)
+</pre>
+
+
+</div></body></html>
