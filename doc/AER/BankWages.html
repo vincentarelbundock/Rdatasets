@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Bank Wages</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for BankWages"><tr><td>BankWages</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Bank Wages</h2>
+
+<h3>Description</h3>
+
+<p>Wages of employees of a US bank.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("BankWages")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 474 observations on 4 variables.
+</p>
+
+<dl>
+<dt>job</dt><dd><p>Ordered factor indicating job category, with levels <code>"custodial"</code>,
+<code>"admin"</code>  and <code>"manage"</code>.</p>
+</dd>
+<dt>education</dt><dd><p>Education in years.</p>
+</dd>
+<dt>gender</dt><dd><p>Factor indicating gender.</p>
+</dd>
+<dt>minority</dt><dd><p>Factor. Is the employee member of a minority?</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Online complements to Heij, de Boer, Franses, Kloek, and van Dijk (2004). 
+</p>
+<p><a href="http://www.oup.com/uk/booksites/content/0199268010/datasets/ch6/xr614bwa.asc">http://www.oup.com/uk/booksites/content/0199268010/datasets/ch6/xr614bwa.asc</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Heij, C., de Boer, P.M.C., Franses, P.H., Kloek, T. and van Dijk, H.K. (2004). 
+<em>Econometric Methods with Applications in Business and Economics</em>. 
+Oxford: Oxford University Press.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("BankWages")
+
+## exploratory analysis of job ~ education
+## (tables and spine plots, some education levels merged)
+xtabs(~ education + job, data = BankWages)
+edcat &lt;- factor(BankWages$education)
+levels(edcat)[3:10] &lt;- rep(c("14-15", "16-18", "19-21"), c(2, 3, 3))
+tab &lt;- xtabs(~ edcat + job, data = BankWages)
+prop.table(tab, 1)
+spineplot(tab, off = 0)
+plot(job ~ edcat, data = BankWages, off = 0)
+
+## fit multinomial model for male employees
+library("nnet")
+fm_mnl &lt;- multinom(job ~ education + minority, data = BankWages,
+  subset = gender == "male", trace = FALSE)
+summary(fm_mnl)
+confint(fm_mnl)
+
+## same with mlogit package
+if(require("mlogit")) {
+fm_mlogit &lt;- mlogit(job ~ 1 | education + minority, data = BankWages,
+  subset = gender == "male", shape = "wide", reflevel = "custodial")
+summary(fm_mlogit)
+}
+</pre>
+
+
+</div></body></html>

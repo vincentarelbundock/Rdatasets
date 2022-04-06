@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Malaria Vaccine Trial</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for malaria"><tr><td>malaria</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Malaria Vaccine Trial</h2>
+
+<h3>Description</h3>
+
+<p>Volunteer patients were randomized into one of two experiment groups where
+they would receive an experimental vaccine or a placebo.  They were
+subsequently exposed to a drug-sensitive strain of malaria and observed to
+see whether they came down with an infection.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+malaria
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 20 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt>treatment</dt><dd><p>Whether a person was given the experimental <code>vaccine</code> or a <code>placebo</code>.</p>
+</dd>
+<dt>outcome</dt><dd><p>Whether the person got an <code>infection</code> or <code style="white-space: pre;">no infection</code>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In this study, volunteer patients were randomized into one of two experiment
+groups: 14 patients received an experimental vaccine or 6 patients received
+a placebo vaccine.  Nineteen weeks later, all 20 patients were exposed to a
+drug-sensitive malaria virus strain; the motivation of using a
+drug-sensitive strain of virus here is for ethical considerations, allowing
+any infections to be treated effectively.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Lyke et al. 2017. PfSPZ vaccine induces strain-transcending T cells
+and durable protection against heterologous controlled human malaria
+infection. PNAS 114(10):2711-2716.
+doi: <a href="https://doi.org/10.1073/pnas.1615324114">10.1073/pnas.1615324114</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(dplyr)
+
+# Calculate conditional probabilities of infection after vaccine/placebo
+malaria %&gt;%
+  count(treatment, outcome) %&gt;%
+  group_by(treatment) %&gt;%
+  mutate(prop = n / sum(n))
+
+# Fisher's exact text
+fisher.test(table(malaria))
+</pre>
+
+
+</div></body></html>

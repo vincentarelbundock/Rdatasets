@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Stock and Watson CPS Data Sets</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for CPSSW"><tr><td>CPSSW</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Stock and Watson CPS Data Sets</h2>
+
+<h3>Description</h3>
+
+<p>Stock and Watson (2007) provide several subsets created from 
+March Current Population Surveys (CPS) with data on the
+relationship of earnings and education over several year.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data("CPSSW9204")
+data("CPSSW9298")
+data("CPSSW04")
+data("CPSSW3")
+data("CPSSW8")
+data("CPSSWEducation")
+</pre>
+
+
+<h3>Format</h3>
+
+<p><code>CPSSW9298</code>: A data frame containing 13,501 observations on 5 variables.
+<code>CPSSW9204</code>: A data frame containing 15,588 observations on 5 variables.
+<code>CPSSW04</code>: A data frame containing 7,986 observations on 4 variables.
+<code>CPSSW3</code>: A data frame containing 20,999 observations on 3 variables.
+<code>CPSSW8</code>: A data frame containing 61,395 observations on 5 variables.
+<code>CPSSWEducation</code>: A data frame containing 2,950 observations on 4 variables.
+</p>
+
+<dl>
+<dt>year</dt><dd><p>factor indicating year.</p>
+</dd>
+<dt>earnings</dt><dd><p>average hourly earnings (sum of annual pretax wages, salaries, tips,
+and bonuses, divided by the number of hours worked annually).</p>
+</dd>
+<dt>education</dt><dd><p>number of years of education.</p>
+</dd>
+<dt>degree</dt><dd><p>factor indicating highest educational degree (<code>"bachelor"</code>
+or<code>"highschool"</code>).</p>
+</dd>
+<dt>gender</dt><dd><p>factor indicating gender.</p>
+</dd>
+<dt>age</dt><dd><p>age in years.</p>
+</dd> 
+<dt>region</dt><dd><p>factor indicating region of residence
+(<code>"Northeast"</code>, <code>"Midwest"</code>, <code>"South"</code>, <code>"West"</code>).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Each month the Bureau of Labor Statistics in the US Department of Labor
+conducts the Current Population Survey (CPS), which provides data
+on labor force characteristics of the population, including the level of
+employment, unemployment, and earnings. Approximately 65,000 randomly
+selected US households are surveyed each month. The sample is chosen by
+randomly selecting addresses from a database. 
+Details can be found in the Handbook of Labor Statistics and is described
+on the Bureau of Labor Statistics website (<a href="http://www.bls.gov/">http://www.bls.gov/</a>).
+</p>
+<p>The survey conducted each March is more detailed than in other months
+and asks questions about earnings during the previous year. 
+The data sets contain data for 2004 (from the March 2005 survey), and some
+also for earlier years (up to 1992). 
+</p>
+<p>If education is given, it is for full-time workers, defined as
+workers employed more than 35 hours per week for at least 48 weeks in the
+previous year. Data are provided for workers whose 
+highest educational achievement is a high school diploma and a bachelor's degree.
+</p>
+<p>Earnings for years earlier than 2004 were adjusted for inflation by putting them
+in 2004 USD using the Consumer Price Index (CPI). From 1992 to 2004, the
+price of the CPI market basket rose by 34.6%. To make earnings in 1992 and 2004
+comparable, 1992 earnings are inflated by the amount of overall CPI price
+inflation, by multiplying 1992 earnings by 1.346 to put them into 2004 dollars.
+</p>
+<p><code>CPSSW9204</code> provides the distribution of earnings in the US in 1992 and 2004
+for college-educated full-time workers aged 25&ndash;34.
+<code>CPSSW04</code> is a subset of <code>CPSSW9204</code> and provides the distribution of
+earnings in the US in 2004 for college-educated full-time workers aged 25&ndash;34.
+<code>CPSSWEducation</code> is similar (but not a true subset) and contains the
+distribution of earnings in the US in 2004 for college-educated full-time workers
+aged 29&ndash;30.
+<code>CPSSW8</code> contains a larger sample with workers aged 21&ndash;64, additionally
+providing information about the region of residence.
+<code>CPSSW9298</code> is similar to <code>CPSSW9204</code> providing data from 1992 and 1998
+(with the 1992 subsets not being exactly identical).
+<code>CPSSW3</code> provides trends (from 1992 to 2004) in hourly earnings in the US of
+working college graduates aged 25&ndash;34 (in 2004 USD).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>Stock, J.H. and Watson, M.W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code>, <code>CPS1985</code>, <code>CPS1988</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("CPSSW3")
+with(CPSSW3, interaction.plot(year, gender, earnings))
+
+## Stock and Watson, p. 165
+data("CPSSWEducation")
+plot(earnings ~ education, data = CPSSWEducation)
+fm &lt;- lm(earnings ~ education, data = CPSSWEducation)
+coeftest(fm, vcov = sandwich)
+abline(fm)
+</pre>
+
+
+</div></body></html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Ddiabetic retinopathy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for diabetic"><tr><td>diabetic</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Ddiabetic retinopathy</h2>
+
+<h3>Description</h3>
+
+<p>Partial results from a trial of laser coagulation for the treatment
+of diabetic retinopathy.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>diabetic
+data(diabetic, package="survival")
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 394 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p>subject id</p>
+</dd>
+<dt><code>laser</code></dt><dd><p>laser type: <code>xenon</code> or <code>argon</code></p>
+</dd>
+<dt><code>age</code></dt><dd><p>age at diagnosis</p>
+</dd>
+<dt><code>eye</code></dt><dd><p>a factor with levels of <code>left</code> <code>right</code></p>
+</dd>
+<dt><code>trt</code></dt><dd><p>treatment: 0 = no treatment, 1= laser</p>
+</dd>
+<dt><code>risk</code></dt><dd><p>risk group of 6-12</p>
+</dd>
+<dt><code>time</code></dt><dd><p>time to event or last follow-up</p>
+</dd>
+<dt><code>status</code></dt><dd><p>status of 0= censored or 1 = visual loss</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The 197 patients in this dataset were a 50% random sample of the
+patients with &quot;high-risk&quot; diabetic retinopathy as defined by the
+Diabetic Retinopathy Study (DRS).  Each patient had one eye randomized
+to laser treatment and the other eye received no treatment.  For each
+eye, the event of interest was the time from initiation of treatment
+to the time when visual acuity dropped below 5/200 two visits in a row.
+Thus there is a built-in lag time of
+approximately 6 months (visits were every 3 months).  Survival times
+in this dataset are therefore the actual time to blindness in months,
+minus the minimum possible time to event (6.5 months).  Censoring was
+caused by death, dropout, or end of the study.
+</p>
+
+
+<h3>References</h3>
+
+<p>Huster, Brookmeyer and Self, Biometrics, 1989.
+</p>
+<p>American Journal of Ophthalmology, 1976, 81:4, pp 383-396
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+# juvenile diabetes is defined as and age less than 20
+juvenile &lt;- 1*(diabetic$age &lt; 20)
+coxph(Surv(time, status) ~ trt + juvenile, cluster= id,
+            data= diabetic)
+</pre>
+
+
+</div></body></html>

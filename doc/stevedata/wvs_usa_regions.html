@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Region Categories for the United States in the World Values...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for wvs_usa_regions"><tr><td>wvs_usa_regions</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Region Categories for the United States in the World Values Survey</h2>
+
+<h3>Description</h3>
+
+<p>This is a simple data set that summarizes what the region codes are in the World Values Survey for the United States.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+wvs_usa_regions
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 63 observations the following 6 variables.
+</p>
+
+<dl>
+<dt><code>x048wvs</code></dt><dd><p>the numeric code for supposedly the region in which the interview was conducted</p>
+</dd>
+<dt><code>x048wvsmeaning</code></dt><dd><p>the meaning behind the unique <code>x048wvs</code> code</p>
+</dd>
+<dt><code>stateabb</code></dt><dd><p>the corresponding state abbreviation (if available) for the unique <code>x048wvs</code> code</p>
+</dd>
+<dt><code>statename</code></dt><dd><p>the corresponding state abbreviation (if available) for the unique <code>x048wvs</code> code</p>
+</dd>
+<dt><code>division</code></dt><dd><p>the corresponding division for the unique <code>x048wvs</code> code</p>
+</dd>
+<dt><code>region</code></dt><dd><p>the corresponding region for the unique <code>x048wvs</code> code</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The region codes are a mess. Some of these are informed guesses. For example, I assume &quot;Northwest&quot; means
+&quot;Pacific&quot; and that Idaho was not included in that category. I make a similar assumption that &quot;Rocky Mountain state&quot;
+means &quot;Mountain&quot;.
+</p>
+
+
+</div></body></html>

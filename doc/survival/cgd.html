@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Chronic Granulotamous Disease data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for cgd"><tr><td>cgd</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Chronic Granulotamous Disease data</h2>
+
+<h3>Description</h3>
+
+<p>Data are from a placebo controlled trial of gamma
+interferon in chronic granulotomous disease (CGD).
+Contains the data on time to serious infections observed through
+end of study for each patient. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>cgd
+data(cgd)
+</pre>
+
+
+<h3>Format</h3>
+
+
+<dl>
+<dt>id</dt><dd><p>subject identification number</p>
+</dd>
+<dt>center</dt><dd><p>enrolling center </p>
+</dd>
+<dt>random</dt><dd><p>date of randomization </p>
+</dd>
+<dt>treatment</dt><dd><p>placebo or gamma interferon </p>
+</dd>
+<dt>sex</dt><dd><p>sex</p>
+</dd>
+<dt>age</dt><dd><p>age in years, at study entry </p>
+</dd>
+<dt>height</dt><dd><p>height in cm at study entry</p>
+</dd>
+<dt>weight</dt><dd><p>weight in kg at study entry</p>
+</dd>
+<dt>inherit</dt><dd><p>pattern of inheritance </p>
+</dd>
+<dt>steroids</dt><dd><p>use of steroids at study entry,1=yes</p>
+</dd>
+<dt>propylac</dt><dd><p>use of prophylactic antibiotics at study entry</p>
+</dd>
+<dt>hos.cat</dt><dd><p>a categorization of the centers into 4 groups</p>
+</dd>
+<dt>tstart, tstop</dt><dd><p>start and end of each time interval </p>
+</dd>
+<dt>status</dt><dd><p>1=the interval ends with an infection </p>
+</dd>
+<dt>enum</dt><dd><p>observation number within subject</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The <code>cgd0</code> data set is in the form found in the references,
+with one line per patient and no recoding of the variables.
+The <code>cgd</code> data set (this one) has been cast into (start, stop]
+format with one line per event, and covariates
+such as center recoded as factors
+to include meaningful labels. 
+</p>
+
+
+<h3>Source</h3>
+
+<p>Fleming and Harrington, Counting Processes and Survival Analysis,
+appendix D.2. 
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>link{cgd0}</code></p>
+
+
+</div></body></html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Temperature Summary Data, Geography Limited</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for climate70"><tr><td>climate70</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Temperature Summary Data, Geography Limited</h2>
+
+<h3>Description</h3>
+
+<p>A random set of monitoring locations were taken from NOAA data that had both
+years of interest (1948 and 2018) as well as data for both summary metrics
+of interest (dx70 and dx90, which are described below).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+climate70
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 197 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt>station</dt><dd><p>Station ID.</p>
+</dd>
+<dt>latitude</dt><dd><p>Latitude of the station.</p>
+</dd>
+<dt>longitude</dt><dd><p>Longitude of the station.</p>
+</dd>
+<dt>dx70_1948</dt><dd><p>Number of days above 70 degrees in 1948.</p>
+</dd>
+<dt>dx70_2018</dt><dd><p>Number of days above 70 degrees in 2018.</p>
+</dd>
+<dt>dx90_1948</dt><dd><p>Number of days above 90 degrees in 1948.</p>
+</dd>
+<dt>dx90_2018</dt><dd><p>Number of days above 90 degrees in 2018.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Please keep in mind that these are two annual snapshots, and a complete
+analysis would consider much more than two years of data and much additional
+information for those years.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.ncdc.noaa.gov/cdo-web">https://www.ncdc.noaa.gov/cdo-web</a>, retrieved 2019-04-24.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+# Data sampled are from the US, Europe, and Australia.
+# This geographic limitation may be due to the particular
+# years considered, since locations without both 1948 and
+# 2018 were discarded for this (simple) data set.
+plot(climate70$longitude, climate70$latitude)
+
+plot(climate70$dx70_1948, climate70$dx70_2018)
+abline(0, 1, lty = 2)
+plot(climate70$dx90_1948, climate70$dx90_2018)
+abline(0, 1, lty = 2)
+hist(climate70$dx70_2018 - climate70$dx70_1948)
+hist(climate70$dx90_2018 - climate70$dx90_1948)
+
+t.test(climate70$dx70_2018 - climate70$dx70_1948)
+t.test(climate70$dx90_2018 - climate70$dx90_1948)
+</pre>
+
+
+</div></body></html>

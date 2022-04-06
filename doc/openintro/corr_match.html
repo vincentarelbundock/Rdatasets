@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Sample data sets for correlation problems</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for corr_match"><tr><td>corr_match</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Sample data sets for correlation problems</h2>
+
+<h3>Description</h3>
+
+<p>Simulated data.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+corr_match
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 121 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt>x</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>y1</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>y2</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>y3</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>y4</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>y5</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>y6</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>y7</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>y8</dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Simulated data set.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+
+ggplot(corr_match, aes(x = x, y = y1)) +
+  geom_point()
+
+cor(corr_match$x, corr_match$y1)
+</pre>
+
+
+</div></body></html>

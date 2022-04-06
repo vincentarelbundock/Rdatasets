@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: CIA Factbook Details on Countries</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for cia_factbook"><tr><td>cia_factbook</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>CIA Factbook Details on Countries</h2>
+
+<h3>Description</h3>
+
+<p>Country-level statistics from the US Central Intelligence Agency (CIA).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+cia_factbook
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 259 observations on the following 11 variables.
+</p>
+
+<dl>
+<dt>country</dt><dd><p>Country name.</p>
+</dd>
+<dt>area</dt><dd><p>Land area, in square kilometers. (1 square kilometer is 0.386 square miles</p>
+</dd>
+<dt>birth_rate</dt><dd><p>Birth rate, in births per 1,000 people.</p>
+</dd>
+<dt>death_rate</dt><dd><p>Death rate, in deaths per 1,000 people.</p>
+</dd>
+<dt>infant_mortality_rate</dt><dd><p>Infant mortality, in deaths per 1,000 live births.</p>
+</dd>
+<dt>internet_users</dt><dd><p>Total number of internet users.</p>
+</dd>
+<dt>life_exp_at_birth</dt><dd><p>Live expectancy at birth, in years.</p>
+</dd>
+<dt>maternal_mortality_rate</dt><dd><p>Number of female deaths per 100,000 live births where the death is related to pregnancy or birth.</p>
+</dd>
+<dt>net_migration_rate</dt><dd><p>Net migration rate.</p>
+</dd>
+<dt>population</dt><dd><p>Total population.</p>
+</dd>
+<dt>population_growth_rate</dt><dd><p>Population growth rate.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>CIA Factbook, Country Comparisons, 2014.
+<a href="https://www.cia.gov/the-world-factbook/references/guide-to-country-comparisons/">https://www.cia.gov/the-world-factbook/references/guide-to-country-comparisons/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(dplyr)
+library(ggplot2)
+
+cia_factbook_iup &lt;- cia_factbook %&gt;%
+  mutate(internet_users_percent = 100 * internet_users / population)
+
+ggplot(cia_factbook_iup, aes(x = internet_users_percent, y = life_exp_at_birth)) +
+  geom_point() +
+  labs(x = "Percentage of internet users", y = "Life expectancy at birth")
+</pre>
+
+
+</div></body></html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Financial information for 50 S&amp;P 500 companies</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for sp500"><tr><td>sp500</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Financial information for 50 S&amp;P 500 companies</h2>
+
+<h3>Description</h3>
+
+<p>Fifty companies were randomly sampled from the 500 companies in the S&amp;P 500,
+and their financial information was collected on March 8, 2012.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+sp500
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 50 observations on the following 12 variables.
+</p>
+
+<dl>
+<dt>market_cap</dt><dd><p>Total value of all company shares, in millions of
+dollars.</p>
+</dd>
+<dt>stock</dt><dd><p>The name of the stock (e.g. <code>AAPL</code> for Apple).</p>
+</dd>
+<dt>ent_value</dt><dd><p>Enterprise value, which is an alternative to market cap that
+also accounts for things like cash and debt, in millions of dollars.</p>
+</dd>
+<dt>trail_pe</dt><dd><p>The market cap divided by the earnings (profits) over the last
+year.</p>
+</dd>
+<dt>forward_pe</dt><dd><p>The market cap divided by the forecasted earnings (profits)
+over the next year.</p>
+</dd>
+<dt>ev_over_rev</dt><dd><p>Enterprise value divided by the company's revenue.</p>
+</dd>
+<dt>profit_margin</dt><dd><p>Percent of earnings that are profits.</p>
+</dd>
+<dt>revenue</dt><dd><p>Revenue, in millions of dollars.</p>
+</dd>
+<dt>growth</dt><dd><p>Quartly revenue growth (year over year), in millions of dollars.</p>
+</dd>
+<dt>earn_before</dt><dd><p>Earnings before interest, taxes, depreciation, and
+amortization, in millions of dollars.</p>
+</dd>
+<dt>cash</dt><dd><p>Total cash, in millions of dollars.</p>
+</dd>
+<dt>debt</dt><dd><p>Total debt, in millions of dollars.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Yahoo! Finance, retrieved 2012-03-08.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+
+ggplot(sp500, aes(x = ent_value, y = earn_before)) +
+  geom_point() +
+  labs(x = "Enterprise value", y = "Earnings")
+
+ggplot(sp500, aes(x = ev_over_rev, y = forward_pe)) +
+  geom_point() +
+  labs(
+    x = "Enterprise value / revenue, logged",
+    y = "Market cap / forecasted earnings, logged"
+  )
+
+ggplot(sp500, aes(x = ent_value, y = earn_before)) +
+  geom_point() +
+  scale_x_log10() +
+  scale_y_log10() +
+  labs(x = "Enterprise value", y = "Earnings")
+
+ggplot(sp500, aes(x = ev_over_rev, y = forward_pe)) +
+  geom_point() +
+  scale_x_log10() +
+  scale_y_log10() +
+  labs(
+    x = "Enterprise value / revenue, logged",
+    y = "Market cap / forecasted earnings, logged"
+  )
+</pre>
+
+
+</div></body></html>

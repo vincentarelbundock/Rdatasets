@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: US Macroeconomic Data (1957-2005, Stock &amp; Watson)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for USMacroSW"><tr><td>USMacroSW</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Macroeconomic Data (1957&ndash;2005, Stock \&amp; Watson)</h2>
+
+<h3>Description</h3>
+
+<p>Time series data on 7 (mostly) US macroeconomic variables for 1957&ndash;2005.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("USMacroSW")
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A quarterly multiple time series from 1957(1) to 2005(1) with 7 variables.
+</p>
+
+<dl>
+<dt>unemp</dt><dd><p>Unemployment rate.</p>
+</dd>
+<dt>cpi</dt><dd><p>Consumer price index.</p>
+</dd>
+<dt>ffrate</dt><dd><p>Federal funds interest rate.</p>
+</dd>    
+<dt>tbill</dt><dd><p>3-month treasury bill interest rate.</p>
+</dd>
+<dt>tbond</dt><dd><p>1-year treasury bond interest rate.</p>
+</dd>
+<dt>gbpusd</dt><dd><p>GBP/USD exchange rate (US dollar in cents per British pound).</p>
+</dd>
+<dt>gdpjp</dt><dd><p>GDP for Japan.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The US Consumer Price Index is measured using monthly surveys 
+and is compiled by the Bureau of Labor Statistics (BLS). The
+unemployment rate is computed from the BLS's Current Population. The quarterly data
+used here were computed by averaging the monthly values. The interest data are the
+monthly average of daily rates as reported by the Federal Reserve and the dollar-pound
+exchange rate data are the monthly average of daily rates; both are for the final month in
+the quarter. Japanese real GDP data were obtained from the OECD.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>Stock, J.H. and Watson, M.W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code>, <code>USMacroSWM</code>, <code>USMacroSWQ</code>,
+<code>USMacroB</code>, <code>USMacroG</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Stock and Watson (2007)
+data("USMacroSW", package = "AER")
+library("dynlm")
+library("strucchange")
+usm &lt;- ts.intersect(USMacroSW, 4 * 100 * diff(log(USMacroSW[, "cpi"])))
+colnames(usm) &lt;- c(colnames(USMacroSW), "infl")
+
+## Equations 14.7, 14.13, 14.16, 14.17, pp. 536
+fm_ar1 &lt;- dynlm(d(infl) ~ L(d(infl)),
+  data = usm, start = c(1962,1), end = c(2004,4))
+fm_ar4 &lt;- dynlm(d(infl) ~ L(d(infl), 1:4), 
+  data = usm, start = c(1962,1), end = c(2004,4))
+fm_adl41 &lt;- dynlm(d(infl) ~ L(d(infl), 1:4) + L(unemp),
+  data = usm, start = c(1962,1), end = c(2004,4))
+fm_adl44 &lt;- dynlm(d(infl) ~ L(d(infl), 1:4) + L(unemp, 1:4),
+  data = usm, start = c(1962,1), end = c(2004,4))
+coeftest(fm_ar1, vcov = sandwich)
+coeftest(fm_ar4, vcov = sandwich)
+coeftest(fm_adl41, vcov = sandwich)
+coeftest(fm_adl44, vcov = sandwich)
+
+## Granger causality test mentioned on p. 547
+waldtest(fm_ar4, fm_adl44, vcov = sandwich)  
+
+## Figure 14.5, p. 570
+## SW perform partial break test of unemp coefs
+## here full model is used
+mf &lt;- model.frame(fm_adl44) ## re-use fm_adl44
+mf &lt;- ts(as.matrix(mf), start = c(1962, 1), freq = 4)
+colnames(mf) &lt;- c("y", paste("x", 1:8, sep = ""))
+ff &lt;- as.formula(paste("y", "~",  paste("x", 1:8, sep = "", collapse = " + ")))
+fs &lt;- Fstats(ff, data = mf, from = 0.1)
+plot(fs)
+lines(boundary(fs, alpha = 0.01), lty = 2, col = 2)
+lines(boundary(fs, alpha = 0.1), lty = 3, col = 2)
+
+## More examples can be found in:
+## help("StockWatson2007")
+</pre>
+
+
+</div></body></html>

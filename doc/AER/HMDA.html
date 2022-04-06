@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Home Mortgage Disclosure Act Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for HMDA"><tr><td>HMDA</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Home Mortgage Disclosure Act Data</h2>
+
+<h3>Description</h3>
+
+<p>Cross-section data on the Home Mortgage Disclosure Act (HMDA).</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("HMDA")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 2,380 observations on 14 variables.
+</p>
+
+<dl>
+<dt>deny</dt><dd><p>Factor. Was the mortgage denied?</p>
+</dd>
+<dt>pirat</dt><dd><p>Payments to income ratio.</p>
+</dd>    
+<dt>hirat</dt><dd><p>Housing expense to income ratio.</p>
+</dd>
+<dt>lvrat</dt><dd><p>Loan to value ratio.</p>
+</dd>
+<dt>chist</dt><dd><p>Factor. Credit history: consumer payments.</p>
+</dd>      
+<dt>mhist</dt><dd><p>Factor. Credit history: mortgage payments.</p>
+</dd>          
+<dt>phist</dt><dd><p>Factor. Public bad credit record?</p>
+</dd>    
+<dt>unemp</dt><dd><p>1989 Massachusetts unemployment rate in applicant's industry.</p>
+</dd>    
+<dt>selfemp</dt><dd><p>Factor. Is the individual self-employed?</p>
+</dd>  
+<dt>insurance</dt><dd><p>Factor. Was the individual denied mortgage insurance?</p>
+</dd>  
+<dt>condomin</dt><dd><p>Factor. Is the unit a condominium?</p>
+</dd>    
+<dt>afam</dt><dd><p>Factor. Is the individual African-American?</p>
+</dd>  
+<dt>single</dt><dd><p>Factor. Is the individual single?</p>
+</dd>    
+<dt>hschool</dt><dd><p>Factor. Does the individual have a high-school diploma?</p>
+</dd>    
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Only includes variables used by Stock and Watson (2007), 
+some of which had to be generated from the raw data.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>Munnell, A. H., Tootell, G. M. B., Browne, L. E. and McEneaney, J. (1996). 
+Mortgage Lending in Boston: Interpreting HMDA Data. <em>American Economic Review</em>, <b>86</b>, 25&ndash;53.
+</p>
+<p>Stock, J. H. and Watson, M. W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("HMDA")
+
+## Stock and Watson (2007)
+## Equations 11.1, 11.3, 11.7, 11.8 and 11.10, pp. 387--395
+fm1 &lt;- lm(I(as.numeric(deny) - 1) ~ pirat, data = HMDA)
+fm2 &lt;- lm(I(as.numeric(deny) - 1) ~ pirat + afam, data = HMDA)
+fm3 &lt;- glm(deny ~ pirat, family = binomial(link = "probit"), data = HMDA)
+fm4 &lt;- glm(deny ~ pirat + afam, family = binomial(link = "probit"), data = HMDA)
+fm5 &lt;- glm(deny ~ pirat + afam, family = binomial(link = "logit"), data = HMDA)
+
+## More examples can be found in:
+## help("StockWatson2007")
+</pre>
+
+
+</div></body></html>

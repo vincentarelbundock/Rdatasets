@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Major League Baseball Player Hitting Statistics for 2010</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for mlbbat10"><tr><td>mlbbat10</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Major League Baseball Player Hitting Statistics for 2010</h2>
+
+<h3>Description</h3>
+
+<p>Major League Baseball Player Hitting Statistics for 2010.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+mlbbat10
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1199 observations on the following 19 variables.
+</p>
+
+<dl>
+<dt>name</dt><dd><p>Player name</p>
+</dd>
+<dt>team</dt><dd><p>Team abbreviation</p>
+</dd>
+<dt>position</dt><dd><p>Player position</p>
+</dd>
+<dt>game</dt><dd><p>Number of games</p>
+</dd>
+<dt>at_bat</dt><dd><p>Number of at bats</p>
+</dd>
+<dt>run</dt><dd><p>Number of runs</p>
+</dd>
+<dt>hit</dt><dd><p>Number of hits</p>
+</dd>
+<dt>double</dt><dd><p>Number of doubles</p>
+</dd>
+<dt>triple</dt><dd><p>Number of triples</p>
+</dd>
+<dt>home_run</dt><dd><p>Number of home runs</p>
+</dd>
+<dt>rbi</dt><dd><p>Number of runs batted in</p>
+</dd>
+<dt>total_base</dt><dd><p>Total bases, computed as 3<em>HR + 2</em>3B + 1*2B + H</p>
+</dd>
+<dt>walk</dt><dd><p>Number of walks</p>
+</dd>
+<dt>strike_out</dt><dd><p>Number of strikeouts</p>
+</dd>
+<dt>stolen_base</dt><dd><p>Number of stolen bases</p>
+</dd>
+<dt>caught_stealing</dt><dd><p>Number of times caught stealing</p>
+</dd>
+<dt>obp</dt><dd><p>On base percentage</p>
+</dd>
+<dt>slg</dt><dd><p>Slugging percentage (total_base / at_bat)</p>
+</dd>
+<dt>bat_avg</dt><dd><p>Batting average</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.mlb.com">https://www.mlb.com</a>, retrieved 2011-04-22.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+library(dplyr)
+library(scales)
+
+mlbbat10_200 &lt;- mlbbat10 %&gt;%
+  filter(mlbbat10$at_bat &gt; 200)
+
+# On-base percentage across positions
+ggplot(mlbbat10_200, aes(x = position, y = obp, fill = position)) +
+  geom_boxplot(show.legend = FALSE) +
+  scale_y_continuous(labels = label_number(suffix = "%", accuracy = 0.01)) +
+  labs(
+    title = "On-base percentage across positions",
+    y = "On-base percentage across positions",
+    x = "Position"
+  )
+
+# Batting average across positions
+ggplot(mlbbat10_200, aes(x = bat_avg, fill = position)) +
+  geom_density(alpha = 0.5) +
+  labs(
+    title = "Batting average across positions",
+    fill = NULL,
+    y = "Batting average",
+    x = "Position"
+  )
+
+# Mean number of home runs across positions
+mlbbat10_200 %&gt;%
+  group_by(position) %&gt;%
+  summarise(mean_home_run = mean(home_run)) %&gt;%
+  ggplot(aes(x = position, y = mean_home_run, fill = position)) +
+  geom_col(show.legend = FALSE) +
+  labs(
+    title = "Mean number of home runs across positions",
+    y = "Home runs",
+    x = "Position"
+  )
+
+# Runs batted in across positions
+ggplot(mlbbat10_200, aes(x = run, y = obp, fill = position)) +
+  geom_boxplot(show.legend = FALSE) +
+  labs(
+    title = "Runs batted in across positions",
+    y = "Runs",
+    x = "Position"
+  )
+</pre>
+
+
+</div></body></html>

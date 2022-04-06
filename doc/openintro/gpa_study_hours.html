@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: gpa_study_hours</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for gpa_study_hours"><tr><td>gpa_study_hours</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>gpa_study_hours</h2>
+
+<h3>Description</h3>
+
+<p>A data frame with 193 rows and 2 columns. The columns represent the
+variables <code>gpa</code> and <code>study_hours</code> for a sample of 193
+undergraduate students who took an introductory statistics course in 2012 at
+a private US university.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+gpa_study_hours
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 193 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt>gpa</dt><dd><p>Grade point average (GPA) of student.</p>
+</dd>
+<dt>study_hours</dt><dd><p>Number of hours students study per week.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>GPA ranges from 0 to 4 points, however one student reported a GPA &gt; 4. This
+is a data error but this observation has been left in the dataset as it is
+used to illustrate issues with real survey data. Both variables are self
+reported, hence may not be accurate.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Collected at a private US university as part of an anonymous survey
+in an introductory statistics course.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+library(ggplot2)
+
+ggplot(gpa_study_hours, aes(x = study_hours, y = gpa)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Study hours/week", y = "GPA")
+</pre>
+
+
+</div></body></html>

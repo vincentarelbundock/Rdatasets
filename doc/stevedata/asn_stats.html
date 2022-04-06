@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Aviation Safety Network Statistics, 1942-2019</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for asn_stats"><tr><td>asn_stats</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Aviation Safety Network Statistics, 1942-2019</h2>
+
+<h3>Description</h3>
+
+<p>These are yearly counts on air accidents and fatalities, including measures for
+corporate jet accidents and hijackings. The hijackings are of particular interest
+to me, at least from a historical terrorism perspective.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+asn_stats
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 78 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>numeric vector for the year</p>
+</dd>
+<dt><code>airacc</code></dt><dd><p>a numeric vector for the number of airliner accidents</p>
+</dd>
+<dt><code>airfatal</code></dt><dd><p>a numeric vector for the number of fatalities from airliner accidents</p>
+</dd>
+<dt><code>corpjetacc</code></dt><dd><p>a numeric vector for the number of corporate jet accidents</p>
+</dd>
+<dt><code>corpjetfatal</code></dt><dd><p>a numeric vector for the number of fatalities from corporate jet accidents</p>
+</dd>
+<dt><code>hijack</code></dt><dd><p>a numeric vector for the number of hijackings/skyjackings</p>
+</dd>
+<dt><code>hijackfatal</code></dt><dd><p>a numeric vector for the number of fatalities from hijackings/skyjackings</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>All fatality estimates exclude ground fatalities. All accidents are hull-loss accidents.
+The airliner figures are for those flights with at least 14 passengers.
+Check <a href="https://aviation-safety.net/statistics/period/stats.php?cat=H2">https://aviation-safety.net/statistics/period/stats.php?cat=H2</a> for more.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Aviation Safety Network, a service provided by the Flight Safety Foundation.
+</p>
+
+
+</div></body></html>

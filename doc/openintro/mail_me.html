@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Influence of a Good Mood on Helpfulness</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for mail_me"><tr><td>mail_me</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Influence of a Good Mood on Helpfulness</h2>
+
+<h3>Description</h3>
+
+<p>This study investigated whether finding a coin influenced a person's
+likelihood of mailing a sealed but addressed letter that appeared to have
+been accidentally left in a conspicuous place. Several variables were
+collected during the experiment, including two randomized variables of
+whether there was a coin to be found and whether the letter already had a
+stamp on it.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+mail_me
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 42 observations on the following 4 variables.
+</p>
+ <dl>
+<dt>stamped</dt><dd><p>a factor with levels <code>no</code> <code>yes</code></p>
+</dd>
+<dt>found_coin</dt><dd><p>a factor with levels <code>coin</code> <code>no_coin</code></p>
+</dd>
+<dt>gender</dt><dd><p>a factor with levels <code>female</code> <code>male</code></p>
+</dd>
+<dt>mailed_letter</dt><dd><p>a factor with levels <code>no</code> <code>yes</code></p>
+</dd> </dl>
+
+
+
+<h3>Details</h3>
+
+<p>The precise context was in a phone booth (this study is from the 1970s!),
+where a person who entered a phone booth would find a dime in the phone
+tray, which would be sufficient to pay for their phone call. There was also
+a letter next to the phone, which sometimes had a stamp on it.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Levin PF, Isen AM. 1975. Studies on the Effect of Feeling Good on
+Helping. Sociometry 31(1), p141-147.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+
+table(mail_me)
+(x &lt;- table(mail_me[, c("mailed_letter", "found_coin")]))
+chisq.test(x)
+
+(x &lt;- table(mail_me[, c("mailed_letter", "stamped")]))
+chisq.test(x)
+
+m &lt;- glm(mailed_letter ~ stamped + found_coin + gender,
+  data = mail_me,
+  family = binomial
+)
+summary(m)
+</pre>
+
+
+</div></body></html>

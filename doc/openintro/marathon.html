@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: New York City Marathon Times (outdated)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for marathon"><tr><td>marathon</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>New York City Marathon Times (outdated)</h2>
+
+<h3>Description</h3>
+
+<p>Marathon times of male and female winners of the New York City Marathon
+1970-1999. See nyc_marathon for a more updated dataset. We recommend not
+using this dataset since the data source has been taken off the web.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+marathon
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 60 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year</p>
+</dd>
+<dt>gender</dt><dd><p>Gender</p>
+</dd>
+<dt>time</dt><dd><p>Running time (in hours)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data source has been removed.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+library(ggplot2)
+
+ggplot(marathon, aes(x = time)) +
+  geom_histogram(binwidth = 0.15)
+
+ggplot(marathon, aes(y = time, x = gender)) +
+  geom_boxplot()
+</pre>
+
+
+</div></body></html>

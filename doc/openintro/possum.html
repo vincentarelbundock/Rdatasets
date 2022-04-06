@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Possums in Australia and New Guinea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for possum"><tr><td>possum</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Possums in Australia and New Guinea</h2>
+
+<h3>Description</h3>
+
+<p>Data representing possums in Australia and New Guinea. This is a copy of the
+data set by the same name in the <code>DAAG</code> package, however, the data set
+included here includes fewer variables.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+possum
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 104 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt>site</dt><dd><p>The site number where the possum was trapped.</p>
+</dd>
+<dt>pop</dt><dd><p>Population, either <code>Vic</code> (Victoria) or <code>other</code>
+(New South Wales or Queensland).</p>
+</dd>
+<dt>sex</dt><dd><p>Gender, either <code>m</code> (male) or <code>f</code> (female).</p>
+</dd>
+<dt>age</dt><dd><p>Age.</p>
+</dd>
+<dt>head_l</dt><dd><p>Head length, in mm.</p>
+</dd>
+<dt>skull_w</dt><dd><p>Skull width, in mm.</p>
+</dd>
+<dt>total_l</dt><dd><p>Total length, in cm.</p>
+</dd>
+<dt>tail_l</dt><dd><p>Tail length, in cm.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lindenmayer, D. B., Viggers, K. L., Cunningham, R. B., and Donnelly,
+C. F. 1995. Morphological variation among columns of the mountain brushtail
+possum, Trichosurus caninus Ogilby (Phalangeridae: Marsupiala). Australian
+Journal of Zoology 43: 449-458.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+library(ggplot2)
+
+# Skull width vs. head length
+ggplot(possum, aes(x = head_l, y = skull_w)) +
+  geom_point()
+
+# Total length vs. sex
+ggplot(possum, aes(x = total_l, fill = sex)) +
+  geom_density(alpha = 0.5)
+</pre>
+
+
+</div></body></html>

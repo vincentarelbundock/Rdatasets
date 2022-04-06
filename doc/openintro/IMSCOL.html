@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Introduction to Modern Statistics (IMS) Colors</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for IMSCOL"><tr><td>IMSCOL</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Introduction to Modern Statistics (IMS) Colors</h2>
+
+<h3>Description</h3>
+
+<p>These are the core colors used for the Introduction to Modern Statistics textbook.
+The blue, green, pink, yellow, and red colors are also gray-scaled, meaning no
+changes are required when printing black and white copies.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+IMSCOL
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>8-by-13</code> matrix of 7 colors with four fading scales: blue,
+green, pink, yellow, red, black, gray, and light gray.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+plot(1:7, 7:1,
+  col = IMSCOL, pch = 19, cex = 6, xlab = "", ylab = "",
+  xlim = c(0.5, 7.5), ylim = c(-2.5, 8), axes = FALSE
+)
+text(1:7, 7:1 + 0.7, paste("IMSCOL[", 1:7, "]", sep = ""), cex = 0.9)
+points(1:7, 7:1 - 0.7, col = IMSCOL[, 2], pch = 19, cex = 6)
+points(1:7, 7:1 - 1.4, col = IMSCOL[, 3], pch = 19, cex = 6)
+points(1:7, 7:1 - 2.1, col = IMSCOL[, 4], pch = 19, cex = 6)
+</pre>
+
+
+</div></body></html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Named US Atlantic Hurricanes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for hurricNamed"><tr><td>hurricNamed</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Named US Atlantic Hurricanes
+</h2>
+
+<h3>Description</h3>
+
+<p>Details are given of atmospheric pressure at landfall, estimated
+damage in millions of dollars, and deaths, for named hurricanes
+that made landfall in the US mainland from 1950 through to 2012.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("hurricNamed")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 94 observations on the following 11 variables.
+</p>
+
+<dl>
+<dt><code>Name</code></dt><dd><p>Hurricane name</p>
+</dd>
+<dt><code>Year</code></dt><dd><p>Numeric</p>
+</dd>
+<dt><code>LF.WindsMPH</code></dt><dd><p>Maximum sustained windspeed (&gt;= 1 minute) to occur along
+the US coast. Prior to 1980, this is estimated from the maximum
+windspeed associated with the Saffir-Simpson index at landfall. If 2
+or more landfalls, the maximum is taken</p>
+</dd>
+<dt><code>LF.PressureMB</code></dt><dd><p>Atmospheric pressure at landfall in
+millibars. If 2 or more landfalls, the minimum is taken</p>
+</dd>
+<dt><code>LF.times</code></dt><dd><p>Date of first landfall</p>
+</dd>
+<dt><code>BaseDam2014</code></dt><dd><p>Property damage (millions of 2014 US dollars)</p>
+</dd>
+<dt><code>BaseDamage</code></dt><dd><p>Property damage (in millions of dollars for that year)</p>
+</dd>
+<dt><code>NDAM2014</code></dt><dd><p>Damage, had hurricane appeared in 2014</p>
+</dd>
+<dt><code>AffectedStates</code></dt><dd><p>Affected states (2-digit
+abbreviations), pasted together</p>
+</dd>
+<dt><code>firstLF</code></dt><dd><p>Date of first landfall</p>
+</dd>
+<dt><code>deaths</code></dt><dd><p>Number of continental US direct and indirect deaths</p>
+</dd>
+<dt><code>mf</code></dt><dd><p>Gender of name; a factor with levels <code>f</code> <code>m</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An earlier version of these data was the subject of a controversial
+paper that claimed to have found that hurricanes with female names,
+presumably because taken less seriously, did more human damage after
+adjusting for the severity of the storm than those with male names.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.icatdamageestimator.com/">http://www.icatdamageestimator.com/</a>
+Deaths except for Audrey and Katrina, are in the Excel file
+that is available from
+<a href="http://www.pnas.org/content/suppl/2014/05/30/1402786111.DCSupplemental">http://www.pnas.org/content/suppl/2014/05/30/1402786111.DCSupplemental</a>
+NOAA Monthly Weather Reports (MWRs) supplied the numbers of deaths for
+all except Donna, Celia, Audrey and Katrina.  The figure for Celia is
+from <a href="http://www.nhc.noaa.gov/pdf/NWS-TPC-5.pdf">http://www.nhc.noaa.gov/pdf/NWS-TPC-5.pdf</a>.  For the other
+three hurricanes it is from the Atlantic hurricane list in Wikipedia
+(see the references.)
+</p>
+
+
+<h3>References</h3>
+
+<p><a href="http://www.icatdamageestimator.com/">http://www.icatdamageestimator.com/</a>
+<a href="https://www.aoml.noaa.gov/hrd/hurdat/mwr_pdf/">https://www.aoml.noaa.gov/hrd/hurdat/mwr_pdf/</a>
+<a href="http://en.wikipedia.org/wiki/List_of_Atlantic_hurricanes">http://en.wikipedia.org/wiki/List_of_Atlantic_hurricanes</a>
+<a href="http://www.pnas.org/cgi/doi/10.1073/pnas.1402786111">http://www.pnas.org/cgi/doi/10.1073/pnas.1402786111</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(hurricNamed)
+str(hurricNamed)
+plot(log(deaths+0.5) ~ log(NDAM2014), data=hurricNamed)
+with(hurricNamed, lines(lowess(log(deaths+0.5) ~ log(NDAM2014))))
+plot(log(deaths+0.5) ~ I(NDAM2014^0.14), data=hurricNamed)
+with(hurricNamed, lines(lowess(log(deaths+0.1) ~ I(NDAM2014^0.14))))
+</pre>
+
+
+</div></body></html>

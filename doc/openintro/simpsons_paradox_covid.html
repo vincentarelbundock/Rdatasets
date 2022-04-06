@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Simpson's Paradox: Covid</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for simpsons_paradox_covid"><tr><td>simpsons_paradox_covid</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Simpson's Paradox: Covid</h2>
+
+<h3>Description</h3>
+
+<p>A dataset on Delta Variant Covid-19 cases in the UK. This dataset gives a great example of Simpson's Paradox. When aggregating results without regard to age group, the death rate for vaccinated individuals is higher &ndash; but they have a much higher risk population. Once we look at populations with more comparable risks (breakout age groups), we see that the vaccinated group tends to be lower risk in each risk-bucketed group and that many of the higher risk patients had gotten vaccinated. The dataset was brought to OpenIntro's attention by Matthew T. Brenneman of Embry-Riddle Aeronautical University. Note: some totals in the original source differ as there were some cases that did not have ages associated with them.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+simpsons_paradox_covid
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 286,166 rows and 3 variables:
+</p>
+
+<dl>
+<dt>age_group</dt><dd><p>Age of the person. Levels: <code style="white-space: pre;">under 50</code>,  <code style="white-space: pre;">50 +</code>.</p>
+</dd>
+<dt>vaccine_status</dt><dd><p>Vaccination status of the person. Note: the vaccinated group includes those who were only partially vaccinated. Levels: <code>vaccinated</code>, <code>unvaccinated</code></p>
+</dd>
+<dt>outcome</dt><dd><p>Did the person die from the Delta variant? Levels: <code>death</code> and <code>survived</code>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1009243/Technical_Briefing_20.pdf">Public Health England: Technical briefing 20</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+library(dplyr)
+library(scales)
+# Calculate the mortality rate for all cases by vaccination status
+simpsons_paradox_covid %&gt;%
+ group_by(vaccine_status, outcome) %&gt;%
+ summarize(count = n()) %&gt;%
+ ungroup() %&gt;%
+ group_by(vaccine_status) %&gt;%
+ mutate(total = sum(count)) %&gt;%
+ filter(outcome == "death") %&gt;%
+ select(c(vaccine_status, count, total)) %&gt;%
+ mutate(mortality_rate = label_percent(accuracy = 0.01)(round(count / total, 4))) %&gt;%
+ select(-c(count, total))
+
+# Calculate mortality rate by age group and vaccination status
+simpsons_paradox_covid %&gt;%
+ group_by(age_group, vaccine_status, outcome) %&gt;%
+ summarize(count = n()) %&gt;%
+ ungroup() %&gt;%
+ group_by(age_group, vaccine_status) %&gt;%
+ mutate(total = sum(count)) %&gt;%
+ filter(outcome == "death") %&gt;%
+ select(c(age_group, vaccine_status, count, total)) %&gt;%
+ mutate(mortality_rate = label_percent(accuracy = 0.01)(round(count / total, 4))) %&gt;%
+ select(-c(count, total))
+</pre>
+
+
+</div></body></html>

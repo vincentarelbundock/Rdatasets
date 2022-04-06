@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Technological Change Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for TechChange"><tr><td>TechChange</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Technological Change Data</h2>
+
+<h3>Description</h3>
+
+<p>US time series data, 1909&ndash;1949.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("TechChange")</pre>
+
+
+<h3>Format</h3>
+
+<p>An annual multiple time series from 1909 to 1949 with 3 variables.
+</p>
+
+<dl>
+<dt>output</dt><dd><p>Output.</p>
+</dd>
+<dt>clr</dt><dd><p>Capital/labor ratio.</p>
+</dd>
+<dt>technology</dt><dd><p>Index of technology.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Online complements to Greene (2003), Table F7.2.
+</p>
+<p><a href="http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm">http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Greene, W.H. (2003). <em>Econometric Analysis</em>, 5th edition. Upper Saddle River, NJ: Prentice Hall.
+</p>
+<p>Solow, R. (1957). Technical Change and the Aggregate Production Function. 
+<em>Review of Economics and Statistics</em>, <b>39</b>, 312&ndash;320.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Greene2003</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("TechChange")
+
+## Greene (2003)
+## Exercise 7.1
+fm1 &lt;- lm(I(output/technology) ~ log(clr), data = TechChange)
+fm2 &lt;- lm(I(output/technology) ~ I(1/clr), data = TechChange)
+fm3 &lt;- lm(log(output/technology) ~ log(clr), data = TechChange)
+fm4 &lt;- lm(log(output/technology) ~ I(1/clr), data = TechChange)
+
+## Exercise 7.2 (a) and (c)
+plot(I(output/technology) ~ clr, data = TechChange)
+
+library("strucchange")
+sctest(I(output/technology) ~ log(clr), data = TechChange, type = "Chow", point = c(1942, 1))
+</pre>
+
+
+</div></body></html>

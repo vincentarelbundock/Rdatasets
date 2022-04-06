@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Radon data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for radon"><tr><td>radon</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Radon data</h2>
+
+<h3>Description</h3>
+
+<p>Radon measurements of 919 owner-occupied homes in 85 counties of Minnesota.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data(radon)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 919 observations on the following 5 variables:
+</p>
+
+<dl>
+<dt>log.radon</dt><dd><p>Radon measurement (in log pCi/L, i.e., log picoCurie per liter)</p>
+</dd>
+<dt>basement</dt><dd><p>Indicator for the level of the home at which the radon measurement
+was taken - 0 = basement, 1 = first floor.</p>
+</dd>
+<dt>uranium</dt><dd><p>Average county-level soil uranium content.</p>
+</dd>
+<dt>county</dt><dd><p>County ID.</p>
+</dd>
+<dt>county.name</dt><dd><p>County name - a factor.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.stat.columbia.edu/~gelman/arm/software/">http://www.stat.columbia.edu/~gelman/arm/software/</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Price, P. N., Nero, A. V. and Gelman, A. (1996) Bayesian prediction of mean 
+indoor radon concentrations for Minnesota counties. <em>Health Physics</em>.
+<b>71</b>(6), 922&ndash;936.
+</p>
+<p>Gelman, A. and Hill, J. (2007) <em>Data analysis using regression and 
+multilevel/hierarchical models</em>. Cambridge University Press.
+</p>
+
+
+</div></body></html>

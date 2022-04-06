@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Alcohol Consumption per Capita</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for Alcohol"><tr><td>Alcohol</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Alcohol Consumption per Capita</h2>
+
+<h3>Description</h3>
+
+<p>These data provide per capita alcohol consumption values
+for many countries in 2005 and 2008.  There are also a few
+countries for which there are data in other years.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data(Alcohol)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 411 observations on the following variables.
+</p>
+
+<ul>
+<li><p><code>country</code> country name
+</p>
+</li>
+<li><p><code>year</code> year
+</p>
+</li>
+<li><p><code>alcohol</code> estimated per capita alcohol consumption for adults (15+)
+in litres pure alcohol
+</p>
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p>Gapminder (<a href="https://www.gapminder.org/data/">https://www.gapminder.org/data/</a>)
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(Alcohol)
+# There are only a few observations in years other than 2005 and 2008
+subset(Alcohol, ! year %in% c(2005,2008))
+</pre>
+
+
+</div></body></html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Breast cancer data set used in Royston and Altman (2013)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for rotterdam"><tr><td>rotterdam</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Breast cancer data set used in Royston and Altman (2013)</h2>
+
+<h3>Description</h3>
+
+<p>The <code>rotterdam</code> data set includes 2982 primary breast cancers patients
+whose data whose records were included in the Rotterdam tumor bank.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("rotterdam")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2982 observations on the following 15 variables.
+</p>
+
+<dl>
+<dt><code>pid</code></dt><dd><p>patient identifier</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year of cancer incidence</p>
+</dd>
+<dt><code>age</code></dt><dd><p>age</p>
+</dd>
+<dt><code>meno</code></dt><dd><p>menopausal status (0= premenopausal, 1= postmenopausal)</p>
+</dd>
+<dt><code>size</code></dt><dd><p>tumor size, a factor with levels <code>&lt;=20</code> <code>20-50</code> <code>&gt;50</code></p>
+</dd>
+<dt><code>grade</code></dt><dd><p>tumor grade</p>
+</dd>
+<dt><code>nodes</code></dt><dd><p>number of positive lymph nodes</p>
+</dd>
+<dt><code>pgr</code></dt><dd><p>progesterone receptors (fmol/l)</p>
+</dd>
+<dt><code>er</code></dt><dd><p>estrogen receptors (fmol/l)</p>
+</dd>
+<dt><code>hormon</code></dt><dd><p>hormonal treatment (0=no, 1=yes)</p>
+</dd>
+<dt><code>chemo</code></dt><dd><p>chemotherapy</p>
+</dd>
+<dt><code>rtime</code></dt><dd><p>days to recurrence or last follow-up</p>
+</dd>
+<dt><code>recur</code></dt><dd><p>0= no recurrence, 1= recurrence</p>
+</dd>
+<dt><code>dtime</code></dt><dd><p>days to death or last follow-up</p>
+</dd>
+<dt><code>death</code></dt><dd><p>0= alive, 1= dead</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>These data sets are used in the paper by Royston and Altman.
+The Rotterdam data is used to create a fitted model, and the GBSG data for 
+validation of the model.  The paper gives references for the data source.
+</p>
+
+
+<h3>References</h3>
+
+<p>Patrick Royston and Douglas Altman, External validation of a Cox prognostic
+model: principles and methods.  BMC Medical Research Methodology 2013, 13:33
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>gbsg</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+rfstime &lt;- pmin(rotterdam$rtime, rotterdam$dtime)
+status  &lt;- pmax(rotterdam$recur, rotterdam$death)
+fit1 &lt;- coxph(Surv(rfstime, status) ~ pspline(age) + meno + size + 
+        pspline(nodes) + er,
+     data=rotterdam, subset = (nodes &gt; 0))
+# Royston and Altman used fractional polynomials for the nonlinear terms
+</pre>
+
+
+</body></html>

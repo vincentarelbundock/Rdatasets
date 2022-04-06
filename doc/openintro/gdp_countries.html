@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: GDP Countries Data.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for gdp_countries"><tr><td>gdp_countries</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>GDP Countries Data.</h2>
+
+<h3>Description</h3>
+
+<p>From World Bank, GDP in current U.S. dollars 1960-2020 by decade
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+gdp_countries
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 659 rows and 9 variables.
+</p>
+
+<dl>
+<dt>country</dt><dd><p>Name of country.</p>
+</dd>
+<dt>description</dt><dd><p>description of data: GDP (in current US$),
+GDP growth (annual %), GDP per capita (in current US$)</p>
+</dd>
+<dt>year_1960</dt><dd><p>value in 1960</p>
+</dd>
+<dt>year_1970</dt><dd><p>value in 1970</p>
+</dd>
+<dt>year_1980</dt><dd><p>value in 1980</p>
+</dd>
+<dt>year_1990</dt><dd><p>value in 1990</p>
+</dd>
+<dt>year_2000</dt><dd><p>value in 2000</p>
+</dd>
+<dt>year_2010</dt><dd><p>value in 2010</p>
+</dd>
+<dt>year_2020</dt><dd><p>value in 2020</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://databank.worldbank.org/home.aspx">World Bank</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+library(dplyr)
+# don't use scientific notation
+options(scipen = 999)
+# List the top 10 countries by GDP (There is a row for World)
+gdp_countries %&gt;% 
+  filter(description == 'GDP') %&gt;%
+  mutate(year2020 = format(year_2020,big.mark=",")) %&gt;%
+  select(country,year2020) %&gt;%  
+  arrange(desc(year2020)) %&gt;% 
+  top_n(n = 11)
+
+# List the 10 countries with the biggest GDP per capita change from 1960 to 2020
+gdp_countries %&gt;% 
+  filter(description == 'GDP per capita') %&gt;%
+  mutate(change = format(round(year_2020-year_1960,0),big.mark=",")) %&gt;%
+  select(country,change,year_1960,year_2020) %&gt;%  
+  na.omit() %&gt;%
+  arrange(desc(change)) %&gt;% 
+  top_n(n = 10)  
+
+</pre>
+
+
+</div></body></html>

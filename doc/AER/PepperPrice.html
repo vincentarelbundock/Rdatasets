@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Black and White Pepper Prices</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for PepperPrice"><tr><td>PepperPrice</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Black and White Pepper Prices</h2>
+
+<h3>Description</h3>
+
+<p>Time series of average monthly European spot prices for black and
+white pepper (fair average quality) in US dollars per ton.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("PepperPrice")</pre>
+
+
+<h3>Format</h3>
+
+<p>A monthly multiple time series from 1973(10) to 1996(4) with 2 variables.
+</p>
+
+<dl>
+<dt>black</dt><dd><p>spot price for black pepper,</p>
+</dd>
+<dt>white</dt><dd><p>spot price for white pepper.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Originally available as an online supplement to Franses (1998). Now available via online complements to Franses, van Dijk and Opschoor (2014).
+</p>
+<p><a href="http://www.cambridge.org/us/academic/subjects/economics/econometrics-statistics-and-mathematical-economics/time-series-models-business-and-economic-forecasting-2nd-edition">http://www.cambridge.org/us/academic/subjects/economics/econometrics-statistics-and-mathematical-economics/time-series-models-business-and-economic-forecasting-2nd-edition</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Franses, P.H. (1998). <em>Time Series Models for Business and Economic Forecasting</em>.
+Cambridge, UK: Cambridge University Press.
+</p>
+<p>Franses, P.H., van Dijk, D. and Opschoor, A. (2014). <em>Time Series Models for Business and Economic Forecasting</em>, 2nd ed.
+Cambridge, UK: Cambridge University Press.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## data
+data("PepperPrice")
+plot(PepperPrice, plot.type = "single", col = 1:2)
+
+## package
+library("tseries")
+library("urca")
+
+## unit root tests
+adf.test(log(PepperPrice[, "white"]))
+adf.test(diff(log(PepperPrice[, "white"])))
+pp.test(log(PepperPrice[, "white"]), type = "Z(t_alpha)")
+pepper_ers &lt;- ur.ers(log(PepperPrice[, "white"]),
+  type = "DF-GLS", model = "const", lag.max = 4)
+summary(pepper_ers)
+
+## stationarity tests
+kpss.test(log(PepperPrice[, "white"]))
+
+## cointegration
+po.test(log(PepperPrice))
+pepper_jo &lt;- ca.jo(log(PepperPrice), ecdet = "const", type = "trace")
+summary(pepper_jo)
+pepper_jo2 &lt;- ca.jo(log(PepperPrice), ecdet = "const", type = "eigen")
+summary(pepper_jo2)
+</pre>
+
+
+</div></body></html>

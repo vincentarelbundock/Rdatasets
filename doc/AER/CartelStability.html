@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: CartelStability</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for CartelStability"><tr><td>CartelStability</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>CartelStability</h2>
+
+<h3>Description</h3>
+
+<p>Weekly observations on prices and other factors from 1880&ndash;1886, for a total of 326 weeks.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("CartelStability")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 328 observations on 5 variables.
+</p>
+
+<dl>
+<dt>price</dt><dd><p>weekly index of price of shipping a ton of grain by rail.</p>
+</dd>
+<dt>cartel</dt><dd><p>factor. Is a railroad cartel operative?</p>
+</dd>
+<dt>quantity</dt><dd><p>total tonnage of grain shipped in the week.</p>
+</dd>
+<dt>season</dt><dd><p>factor indicating season of year. To match the weekly data,
+the calendar has been divided into 13 periods, each approximately 4 weeks long.</p>
+</dd>
+<dt>ice</dt><dd><p>factor. Are the Great Lakes innavigable because of ice?</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>Porter, R. H. (1983). A Study of Cartel Stability: The Joint Executive Committee, 1880&ndash;1886. <em>The Bell Journal of Economics</em>, <b>14</b>, 301&ndash;314.
+</p>
+<p>Stock, J.H. and Watson, M.W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("CartelStability")
+summary(CartelStability)
+</pre>
+
+
+</div></body></html>

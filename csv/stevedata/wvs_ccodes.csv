@@ -1,0 +1,113 @@
+"","s003","country","ccode"
+"1",8,"Albania",339
+"2",12,"Algeria",615
+"3",20,"Andorra",232
+"4",31,"Azerbaijan",373
+"5",32,"Argentina",160
+"6",36,"Australia",900
+"7",48,"Bahrain",692
+"8",50,"Bangladesh",771
+"9",51,"Armenia",371
+"10",70,"Bosnia",346
+"11",76,"Brazil",140
+"12",100,"Bulgaria",355
+"13",112,"Belarus",370
+"14",124,"Canada",20
+"15",152,"Chile",155
+"16",156,"China",710
+"17",158,"Taiwan",713
+"18",170,"Colombia",100
+"19",191,"Croatia",344
+"20",196,"Cyprus",352
+"21",203,"Czech Rep.",316
+"22",214,"Dominican Republic",42
+"23",218,"Ecuador",130
+"24",222,"El Salvador",92
+"25",231,"Ethiopia",530
+"26",233,"Estonia",366
+"27",246,"Finland",375
+"28",250,"France",220
+"29",268,"Georgia",372
+"30",275,"Palestine",NA
+"31",276,"Germany",255
+"32",288,"Ghana",452
+"33",320,"Guatemala",90
+"34",344,"Hong Kong",NA
+"35",348,"Hungary",310
+"36",356,"India",750
+"37",360,"Indonesia",850
+"38",364,"Iran",630
+"39",368,"Iraq",645
+"40",376,"Israel",666
+"41",380,"Italy",325
+"42",392,"Japan",740
+"43",398,"Kazakhstan",705
+"44",400,"Jordan",663
+"45",410,"South Korea",732
+"46",414,"Kuwait",690
+"47",417,"Kyrgyzstan",703
+"48",422,"Lebanon",660
+"49",428,"Latvia",367
+"50",434,"Libya",620
+"51",440,"Lithuania",368
+"52",458,"Malaysia",820
+"53",466,"Mali",432
+"54",484,"Mexico",70
+"55",498,"Moldova",359
+"56",499,"Montenegro",341
+"57",504,"Morocco",600
+"58",528,"Netherlands",210
+"59",554,"New Zealand",920
+"60",566,"Nigeria",475
+"61",578,"Norway",385
+"62",586,"Pakistan",770
+"63",604,"Peru",135
+"64",608,"Philippines",840
+"65",616,"Poland",290
+"66",630,"Puerto Rico",NA
+"67",634,"Qatar",694
+"68",642,"Romania",360
+"69",643,"Russia",365
+"70",646,"Rwanda",517
+"71",682,"Saudi Arabia",670
+"72",688,"Serbia",345
+"73",702,"Singapore",830
+"74",703,"Slovakia",317
+"75",704,"Vietnam",816
+"76",705,"Slovenia",349
+"77",710,"South Africa",560
+"78",716,"Zimbabwe",552
+"79",724,"Spain",230
+"80",752,"Sweden",380
+"81",756,"Switzerland",225
+"82",764,"Thailand",800
+"83",780,"Trinidad and Tobago",52
+"84",788,"Tunisia",616
+"85",792,"Turkey",640
+"86",800,"Uganda",500
+"87",804,"Ukraine",369
+"88",807,"Macedonia",343
+"89",818,"Egypt",651
+"90",826,"Great Britain",200
+"91",834,"Tanzania",510
+"92",840,"United States",2
+"93",854,"Burkina Faso",439
+"94",858,"Uruguay",165
+"95",860,"Uzbekistan",704
+"96",862,"Venezuela",101
+"97",887,"Yemen",679
+"98",891,"Serbia and Montenegro",345
+"99",894,"Zambia",551
+"100",914,"Bosnia",346
+"101",40,"Austria",305
+"102",56,"Belgium",211
+"103",208,"Denmark",390
+"104",300,"Greece",350
+"105",352,"Iceland",395
+"106",372,"Ireland",205
+"107",442,"Luxembourg",212
+"108",470,"Malta",338
+"109",620,"Portugal",235
+"110",909,"North Ireland",NA
+"111",197,"Northern Cyprus",NA
+"112",915,"Kosovo",347

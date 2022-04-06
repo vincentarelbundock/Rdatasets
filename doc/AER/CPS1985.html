@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Determinants of Wages Data (CPS 1985)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for CPS1985"><tr><td>CPS1985</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Determinants of Wages Data (CPS 1985)</h2>
+
+<h3>Description</h3>
+
+<p>Cross-section data originating from the May 1985 Current Population Survey
+by the US Census Bureau (random sample drawn for Berndt 1991).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("CPS1985")</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 534 observations on 11 variables.
+</p>
+
+<dl>
+<dt>wage</dt><dd><p>Wage (in dollars per hour).</p>
+</dd>
+<dt>education</dt><dd><p>Number of years of education.</p>
+</dd>
+<dt>experience</dt><dd><p>Number of years of potential work experience
+(<code>age - education - 6</code>).</p>
+</dd>
+<dt>age</dt><dd><p>Age in years.</p>
+</dd>
+<dt>ethnicity</dt><dd><p>Factor with levels <code>"cauc"</code>, <code>"hispanic"</code>,
+<code>"other"</code>.</p>
+</dd>
+<dt>region</dt><dd><p>Factor. Does the individual live in the South?</p>
+</dd>
+<dt>gender</dt><dd><p>Factor indicating gender.</p>
+</dd>
+<dt>occupation</dt><dd><p>Factor with levels <code>"worker"</code> (tradesperson or assembly line worker),
+<code>"technical"</code> (technical or professional worker), <code>"services"</code> (service
+worker), <code>"office"</code> (office and clerical worker), <code>"sales"</code> (sales worker),
+<code>"management"</code> (management and administration).</p>
+</dd>
+<dt>sector</dt><dd><p>Factor with levels <code>"manufacturing"</code> (manufacturing or mining),
+<code>"construction"</code>, <code>"other"</code>.</p>
+</dd>
+<dt>union</dt><dd><p>Factor. Does the individual work on a union job?</p>
+</dd>
+<dt>married</dt><dd><p>Factor. Is the individual married?</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>StatLib. 
+</p>
+<p><a href="http://lib.stat.cmu.edu/datasets/CPS_85_Wages">http://lib.stat.cmu.edu/datasets/CPS_85_Wages</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Berndt, E.R. (1991). <em>The Practice of Econometrics</em>. New York: Addison-Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>CPS1988</code>, <code>CPSSW</code></p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data("CPS1985")
+
+## Berndt (1991)
+## Exercise 2, p. 196
+cps_2b &lt;- lm(log(wage) ~ union + education, data = CPS1985)
+cps_2c &lt;- lm(log(wage) ~ -1 + union + education, data = CPS1985)
+
+## Exercise 3, p. 198/199
+cps_3a &lt;- lm(log(wage) ~ education + experience + I(experience^2),
+  data = CPS1985)
+cps_3b &lt;- lm(log(wage) ~ gender + education + experience + I(experience^2),
+  data = CPS1985)
+cps_3c &lt;- lm(log(wage) ~ gender + married + education + experience + I(experience^2),
+  data = CPS1985)
+cps_3e &lt;- lm(log(wage) ~ gender*married + education + experience + I(experience^2),
+  data = CPS1985)
+
+## Exercise 4, p. 199/200
+cps_4a &lt;- lm(log(wage) ~ gender + union + ethnicity + education + experience + I(experience^2),
+  data = CPS1985)
+cps_4c &lt;- lm(log(wage) ~ gender + union + ethnicity + education * experience + I(experience^2),
+  data = CPS1985)
+
+## Exercise 6, p. 203
+cps_6a &lt;- lm(log(wage) ~ gender + union + ethnicity + education + experience + I(experience^2),
+  data = CPS1985)
+cps_6a_noeth &lt;- lm(log(wage) ~ gender + union + education + experience + I(experience^2),
+  data = CPS1985)
+anova(cps_6a_noeth, cps_6a)
+
+## Exercise 8, p. 208
+cps_8a &lt;- lm(log(wage) ~ gender + union + ethnicity + education + experience + I(experience^2),
+  data = CPS1985)
+summary(cps_8a)
+coeftest(cps_8a, vcov = vcovHC(cps_8a, type = "HC0"))
+</pre>
+
+
+</div></body></html>
