@@ -12,8 +12,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-
-# There are currently `r nrow(read.csv('https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv'))` datasets available.
+```
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 library(DT)
