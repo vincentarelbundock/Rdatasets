@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: inven</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for inven"><tr><td>inven</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>inven</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Economic Report of the President, 1997, Tables B-4, B-20, B-61, and B-71. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('inven')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 37 observations on 13 variables:
+</p>
+
+<ul>
+<li> <p><strong>year:</strong> 1959-1995
+</p>
+</li>
+<li> <p><strong>i3:</strong> 3 mo. T-bill rate
+</p>
+</li>
+<li> <p><strong>inf:</strong> CPI inflation rate
+</p>
+</li>
+<li> <p><strong>inven:</strong> inventories, billions '92 $
+</p>
+</li>
+<li> <p><strong>gdp:</strong> GDP, billions '92 $
+</p>
+</li>
+<li> <p><strong>r3:</strong> real interest: i3 - inf
+</p>
+</li>
+<li> <p><strong>cinven:</strong> inven - inven[_n-1]
+</p>
+</li>
+<li> <p><strong>cgdp:</strong> gdp - gdp[_n-1]
+</p>
+</li>
+<li> <p><strong>cr3:</strong> r3 - r3[_n-1]
+</p>
+</li>
+<li> <p><strong>ci3:</strong> i3 - i3[_n-1]
+</p>
+</li>
+<li> <p><strong>cinf:</strong> inf - inf[_n-1]
+</p>
+</li>
+<li> <p><strong>ginven:</strong> log(inven) - log(inven[_n-1])
+</p>
+</li>
+<li> <p><strong>ggdp:</strong> log(gdp) - log(gdp[_n-1])
+</p>
+</li></ul>
+
+
+
+<h3>Used in Text</h3>
+
+<p>pages 408, 444, 643, 830
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(inven)
+</pre>
+
+
+</div></body></html>

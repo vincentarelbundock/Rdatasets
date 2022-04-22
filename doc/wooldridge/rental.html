@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: rental</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for rental"><tr><td>rental</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>rental</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: David Harvey, a former MSU undergraduate, collected the data for 64 “college towns” from the 1980 and 1990 United States censuses. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('rental')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 128 observations on 23 variables:
+</p>
+
+<ul>
+<li> <p><strong>city:</strong> city label, 1 to 64
+</p>
+</li>
+<li> <p><strong>year:</strong> 80 or 90
+</p>
+</li>
+<li> <p><strong>pop:</strong> city population
+</p>
+</li>
+<li> <p><strong>enroll:</strong> # college students enrolled
+</p>
+</li>
+<li> <p><strong>rent:</strong> average rent
+</p>
+</li>
+<li> <p><strong>rnthsg:</strong> renter occupied units
+</p>
+</li>
+<li> <p><strong>tothsg:</strong> occupied housing units
+</p>
+</li>
+<li> <p><strong>avginc:</strong> per capita income
+</p>
+</li>
+<li> <p><strong>lenroll:</strong> log(enroll)
+</p>
+</li>
+<li> <p><strong>lpop:</strong> log(pop)
+</p>
+</li>
+<li> <p><strong>lrent:</strong> log(rent)
+</p>
+</li>
+<li> <p><strong>ltothsg:</strong> log(tothsg)
+</p>
+</li>
+<li> <p><strong>lrnthsg:</strong> log(rnthsg)
+</p>
+</li>
+<li> <p><strong>lavginc:</strong> log(avginc)
+</p>
+</li>
+<li> <p><strong>clenroll:</strong> change in lrent from 80 to 90
+</p>
+</li>
+<li> <p><strong>clpop:</strong> change in lpop
+</p>
+</li>
+<li> <p><strong>clrent:</strong> change in lrent
+</p>
+</li>
+<li> <p><strong>cltothsg:</strong> change in ltothsg
+</p>
+</li>
+<li> <p><strong>clrnthsg:</strong> change in lrnthsg
+</p>
+</li>
+<li> <p><strong>clavginc:</strong> change in lavginc
+</p>
+</li>
+<li> <p><strong>pctstu:</strong> percent of population students
+</p>
+</li>
+<li> <p><strong>cpctstu:</strong> change in pctstu
+</p>
+</li>
+<li> <p><strong>y90:</strong> =1 if year == 90
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>These data can be used in a somewhat crude simultaneous equations analysis, either focusing on one year or pooling the two years. (In the latter case, in an advanced class, you might have students compute the standard errors robust to serial correlation across the two time periods.) The demand equation would have ltothsg as a function of lrent, lavginc, and lpop. The supply equation would have ltothsg as a function of lrent, pctst, and lpop. Thus, in estimating the demand function, pctstu is used as an IV for lrent. Clearly one can quibble with excluding pctstu from the demand equation, but the estimated demand function gives a negative price effect. Getting information for 2000, and adding many more college towns, would make for a much better analysis. Information on number of spaces in on-campus dormitories would be a big improvement, too.
+</p>
+<p>Used in Text: pages 160, 477, 503-504
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(rental)
+</pre>
+
+
+</div></body></html>

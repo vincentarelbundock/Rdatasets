@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: wage1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for wage1"><tr><td>wage1</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>wage1</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: These are data from the 1976 Current Population Survey, collected by Henry Farber when he and I were colleagues at MIT in 1988. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('wage1')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 526 observations on 24 variables:
+</p>
+
+<ul>
+<li> <p><strong>wage:</strong> average hourly earnings
+</p>
+</li>
+<li> <p><strong>educ:</strong> years of education
+</p>
+</li>
+<li> <p><strong>exper:</strong> years potential experience
+</p>
+</li>
+<li> <p><strong>tenure:</strong> years with current employer
+</p>
+</li>
+<li> <p><strong>nonwhite:</strong> =1 if nonwhite
+</p>
+</li>
+<li> <p><strong>female:</strong> =1 if female
+</p>
+</li>
+<li> <p><strong>married:</strong> =1 if married
+</p>
+</li>
+<li> <p><strong>numdep:</strong> number of dependents
+</p>
+</li>
+<li> <p><strong>smsa:</strong> =1 if live in SMSA
+</p>
+</li>
+<li> <p><strong>northcen:</strong> =1 if live in north central U.S
+</p>
+</li>
+<li> <p><strong>south:</strong> =1 if live in southern region
+</p>
+</li>
+<li> <p><strong>west:</strong> =1 if live in western region
+</p>
+</li>
+<li> <p><strong>construc:</strong> =1 if work in construc. indus.
+</p>
+</li>
+<li> <p><strong>ndurman:</strong> =1 if in nondur. manuf. indus.
+</p>
+</li>
+<li> <p><strong>trcommpu:</strong> =1 if in trans, commun, pub ut
+</p>
+</li>
+<li> <p><strong>trade:</strong> =1 if in wholesale or retail
+</p>
+</li>
+<li> <p><strong>services:</strong> =1 if in services indus.
+</p>
+</li>
+<li> <p><strong>profserv:</strong> =1 if in prof. serv. indus.
+</p>
+</li>
+<li> <p><strong>profocc:</strong> =1 if in profess. occupation
+</p>
+</li>
+<li> <p><strong>clerocc:</strong> =1 if in clerical occupation
+</p>
+</li>
+<li> <p><strong>servocc:</strong> =1 if in service occupation
+</p>
+</li>
+<li> <p><strong>lwage:</strong> log(wage)
+</p>
+</li>
+<li> <p><strong>expersq:</strong> exper^2
+</p>
+</li>
+<li> <p><strong>tenursq:</strong> tenure^2
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>Barry Murphy, of the University of Portsmouth in the UK, has pointed out that for several observations the values for exper and tenure are in logical conflict. In particular, for some workers the number of years with current employer (tenure) is greater than overall work experience (exper). At least some of these conflicts are due to the definition of exper as “potential” work experience, but probably not all. Nevertheless, I am using the data set as it was supplied to me.
+</p>
+<p>Used in Text: pages 7, 17, 33-34, 37, 76, 91, 125, 183, 194-195, 220, 231, 234, 235-236, 240-241, 243-244, 263, 272, 326, 678
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(wage1)
+</pre>
+
+
+</div></body></html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: hprice1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for hprice1"><tr><td>hprice1</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>hprice1</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Collected from the real estate pages of the Boston Globe during 1990. These are homes that sold in the Boston, MA area. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('hprice1')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 88 observations on 10 variables:
+</p>
+
+<ul>
+<li> <p><strong>price:</strong> house price, $1000s
+</p>
+</li>
+<li> <p><strong>assess:</strong> assessed value, $1000s
+</p>
+</li>
+<li> <p><strong>bdrms:</strong> number of bdrms
+</p>
+</li>
+<li> <p><strong>lotsize:</strong> size of lot in square feet
+</p>
+</li>
+<li> <p><strong>sqrft:</strong> size of house in square feet
+</p>
+</li>
+<li> <p><strong>colonial:</strong> =1 if home is colonial style
+</p>
+</li>
+<li> <p><strong>lprice:</strong> log(price)
+</p>
+</li>
+<li> <p><strong>lassess:</strong> log(assess
+</p>
+</li>
+<li> <p><strong>llotsize:</strong> log(lotsize)
+</p>
+</li>
+<li> <p><strong>lsqrft:</strong> log(sqrft)
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>Typically, it is very easy to obtain data on selling prices and characteristics of homes, using publicly available data bases. It is interesting to match the information on houses with other information – such as local crime rates, quality of the local schools, pollution levels, and so on – and estimate the effects of such variables on housing prices.
+</p>
+<p>Used in Text: pages 110, 153-154, 160-161, 165, 211-212, 221, 222, 234, 278, 280, 299, 307
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(hprice1)
+</pre>
+
+
+</div></body></html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: intdef</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for intdef"><tr><td>intdef</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>intdef</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Economic Report of the President, 2004, Tables B-64, B-73, and B-79. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('intdef')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 56 observations on 13 variables:
+</p>
+
+<ul>
+<li> <p><strong>year:</strong> 1948 to 2003
+</p>
+</li>
+<li> <p><strong>i3:</strong> 3 month T-bill rate
+</p>
+</li>
+<li> <p><strong>inf:</strong> CPI inflation rate
+</p>
+</li>
+<li> <p><strong>rec:</strong> federal receipts, percent GDP
+</p>
+</li>
+<li> <p><strong>out:</strong> federal outlays, percent GDP
+</p>
+</li>
+<li> <p><strong>def:</strong> out - rec
+</p>
+</li>
+<li> <p><strong>i3_1:</strong> i3[_n-1]
+</p>
+</li>
+<li> <p><strong>inf_1:</strong> inf[_n-1]
+</p>
+</li>
+<li> <p><strong>def_1:</strong> def[_n-1]
+</p>
+</li>
+<li> <p><strong>ci3:</strong> i3 - i3_1
+</p>
+</li>
+<li> <p><strong>cinf:</strong> inf - inf_1
+</p>
+</li>
+<li> <p><strong>cdef:</strong> def - def_1
+</p>
+</li>
+<li> <p><strong>y77:</strong> =1 if year &gt;= 1977; change in FY
+</p>
+</li></ul>
+
+
+
+<h3>Used in Text</h3>
+
+<p>pages 356, 377, 430, 547-548
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(intdef)
+</pre>
+
+
+</div></body></html>

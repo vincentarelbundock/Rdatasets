@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: apple</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for apple"><tr><td>apple</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>apple</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: These data were used in the doctoral dissertation of Jeffrey Blend, Department of Agricultural Economics, Michigan State University, 1998. The thesis was supervised by Professor Eileen van Ravensway. Drs. Blend and van Ravensway kindly provided the data, which were obtained from a telephone survey conducted by the Institute for Public Policy and Social Research at MSU. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('apple')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 660 observations on 17 variables:
+</p>
+
+<ul>
+<li> <p><strong>id:</strong> respondent identifier
+</p>
+</li>
+<li> <p><strong>educ:</strong> years schooling
+</p>
+</li>
+<li> <p><strong>date:</strong> date:  month/day/year
+</p>
+</li>
+<li> <p><strong>state:</strong> home state
+</p>
+</li>
+<li> <p><strong>regprc:</strong> price of regular apples
+</p>
+</li>
+<li> <p><strong>ecoprc:</strong> price of ecolabeled apples
+</p>
+</li>
+<li> <p><strong>inseason:</strong> =1 if interviewed in Nov.
+</p>
+</li>
+<li> <p><strong>hhsize:</strong> household size
+</p>
+</li>
+<li> <p><strong>male:</strong> =1 if male
+</p>
+</li>
+<li> <p><strong>faminc:</strong> family income, thousands
+</p>
+</li>
+<li> <p><strong>age:</strong> in years
+</p>
+</li>
+<li> <p><strong>reglbs:</strong> quantity regular apples, pounds
+</p>
+</li>
+<li> <p><strong>ecolbs:</strong> quantity ecolabeled apples, lbs
+</p>
+</li>
+<li> <p><strong>numlt5:</strong> # in household younger than 5
+</p>
+</li>
+<li> <p><strong>num5_17:</strong> # in household 5 to 17
+</p>
+</li>
+<li> <p><strong>num18_64:</strong> # in household 18 to 64
+</p>
+</li>
+<li> <p><strong>numgt64:</strong> # in household older than 64
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>This data set is close to a true experimental data set because the price pairs facing a family were randomly determined. In other words, the family head was presented with prices for the eco-labeled and regular apples, and then asked how much of each kind of apple the family would buy at the given prices. As predicted by basic economics, the own price effect is negative (and strong) and the cross price effect is positive (and strong). While the main dependent variable, ecolbs, piles up at zero, estimating a linear model is still worthwhile. Interestingly, because the survey design induces a strong positive correlation between the prices of eco-labeled and regular apples, there is an omitted variable problem if either of the price variables is dropped from the demand equation. A good exam question is to show a simple regression of ecolbs on ecoprc and then a multiple regression on both prices, and ask students to decide whether the price variables must be positively or negatively correlated.
+</p>
+<p>Used in Text: pages 201, 223, 266, 626-627
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(apple)
+</pre>
+
+
+</div></body></html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: fair</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for fair"><tr><td>fair</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>fair</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: R.C. Fair (1996), “Econometrics and Presidential Elections,” Journal of Economic Perspectives 10, 89-102. The data set is provided in the article. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('fair')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 21 observations on 28 variables:
+</p>
+
+<ul>
+<li> <p><strong>year:</strong> 1916 to 1992, by 4
+</p>
+</li>
+<li> <p><strong>V:</strong> prop. dem. vote
+</p>
+</li>
+<li> <p><strong>I:</strong> =1 if demwh, -1 if repwh
+</p>
+</li>
+<li> <p><strong>DPER:</strong> incumbent running
+</p>
+</li>
+<li> <p><strong>DUR:</strong> duration
+</p>
+</li>
+<li> <p><strong>g3:</strong> avg ann grwth rte, prev 3 qrts
+</p>
+</li>
+<li> <p><strong>p15:</strong> avg ann inf rate, prev 15 qtrs
+</p>
+</li>
+<li> <p><strong>n:</strong> quarters of good news
+</p>
+</li>
+<li> <p><strong>g2:</strong> avg ann grwth rte, prev 2 qrts
+</p>
+</li>
+<li> <p><strong>gYR:</strong> ann grwth rte, prev year
+</p>
+</li>
+<li> <p><strong>p8:</strong> avg ann inf rate, prev 8 qtrs
+</p>
+</li>
+<li> <p><strong>p2YR:</strong> inf rte over 2 yr period
+</p>
+</li>
+<li> <p><strong>Ig2:</strong> I*g2
+</p>
+</li>
+<li> <p><strong>Ip8:</strong> I*p8
+</p>
+</li>
+<li> <p><strong>demwins:</strong> =1 if V &gt; .5
+</p>
+</li>
+<li> <p><strong>In:</strong> I*n
+</p>
+</li>
+<li> <p><strong>d:</strong> =1 in 1920, 1944,1948
+</p>
+</li>
+<li> <p><strong>Id:</strong> I*d
+</p>
+</li>
+<li> <p><strong>Ig3:</strong> I*g3
+</p>
+</li>
+<li> <p><strong>Ip151md:</strong> I*p15*(1-d)
+</p>
+</li>
+<li> <p><strong>In1md:</strong> I*n*(1-d)
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>An updated version of this data set, through the 2004 election, is available at Professor Fair’s web site at Yale University: http://fairmodel.econ.yale.edu/rayfair/pdf/2001b.htm. Students might want to try their own hands at predicting the most recent election outcome, but they should be restricted to no more than a handful of explanatory variables because of the small sample size.
+</p>
+<p>Used in Text: pages 362-363, 440, 442
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(fair)
+</pre>
+
+
+</div></body></html>

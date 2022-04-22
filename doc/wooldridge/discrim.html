@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: discrim</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for discrim"><tr><td>discrim</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>discrim</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: K. Graddy (1997), “Do Fast-Food Chains Price Discriminate on the Race and Income Characteristics of an Area?” Journal of Business and Economic Statistics 15, 391-401. Professor Graddy kindly provided the data set. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('discrim')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 410 observations on 37 variables:
+</p>
+
+<ul>
+<li> <p><strong>psoda:</strong> price of medium soda, 1st wave
+</p>
+</li>
+<li> <p><strong>pfries:</strong> price of small fries, 1st wave
+</p>
+</li>
+<li> <p><strong>pentree:</strong> price entree (burger or chicken), 1st wave
+</p>
+</li>
+<li> <p><strong>wagest:</strong> starting wage, 1st wave
+</p>
+</li>
+<li> <p><strong>nmgrs:</strong> number of managers, 1st wave
+</p>
+</li>
+<li> <p><strong>nregs:</strong> number of registers, 1st wave
+</p>
+</li>
+<li> <p><strong>hrsopen:</strong> hours open, 1st wave
+</p>
+</li>
+<li> <p><strong>emp:</strong> number of employees, 1st wave
+</p>
+</li>
+<li> <p><strong>psoda2:</strong> price of medium soday, 2nd wave
+</p>
+</li>
+<li> <p><strong>pfries2:</strong> price of small fries, 2nd wave
+</p>
+</li>
+<li> <p><strong>pentree2:</strong> price entree, 2nd wave
+</p>
+</li>
+<li> <p><strong>wagest2:</strong> starting wage, 2nd wave
+</p>
+</li>
+<li> <p><strong>nmgrs2:</strong> number of managers, 2nd wave
+</p>
+</li>
+<li> <p><strong>nregs2:</strong> number of registers, 2nd wave
+</p>
+</li>
+<li> <p><strong>hrsopen2:</strong> hours open, 2nd wave
+</p>
+</li>
+<li> <p><strong>emp2:</strong> number of employees, 2nd wave
+</p>
+</li>
+<li> <p><strong>compown:</strong> =1 if company owned
+</p>
+</li>
+<li> <p><strong>chain:</strong> BK = 1, KFC = 2, Roy Rogers = 3, Wendy's = 4
+</p>
+</li>
+<li> <p><strong>density:</strong> population density, town
+</p>
+</li>
+<li> <p><strong>crmrte:</strong> crime rate, town
+</p>
+</li>
+<li> <p><strong>state:</strong> NJ = 1, PA = 2
+</p>
+</li>
+<li> <p><strong>prpblck:</strong> proportion black, zipcode
+</p>
+</li>
+<li> <p><strong>prppov:</strong> proportion in poverty, zipcode
+</p>
+</li>
+<li> <p><strong>prpncar:</strong> proportion no car, zipcode
+</p>
+</li>
+<li> <p><strong>hseval:</strong> median housing value, zipcode
+</p>
+</li>
+<li> <p><strong>nstores:</strong> number of stores, zipcode
+</p>
+</li>
+<li> <p><strong>income:</strong> median family income, zipcode
+</p>
+</li>
+<li> <p><strong>county:</strong> county label
+</p>
+</li>
+<li> <p><strong>lpsoda:</strong> log(psoda)
+</p>
+</li>
+<li> <p><strong>lpfries:</strong> log(pfries)
+</p>
+</li>
+<li> <p><strong>lhseval:</strong> log(hseval)
+</p>
+</li>
+<li> <p><strong>lincome:</strong> log(income)
+</p>
+</li>
+<li> <p><strong>ldensity:</strong> log(density)
+</p>
+</li>
+<li> <p><strong>NJ:</strong> =1 for New Jersey
+</p>
+</li>
+<li> <p><strong>BK:</strong> =1 if Burger King
+</p>
+</li>
+<li> <p><strong>KFC:</strong> =1 if Kentucky Fried Chicken
+</p>
+</li>
+<li> <p><strong>RR:</strong> =1 if Roy Rogers
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>If you want to assign a common final project, this would be a good data set. There are many possible dependent variables, namely, prices of various fast-food items. The key variable is the fraction of the population that is black, along with controls for poverty, income, housing values, and so on. These data were also used in a famous study by David Card and Alan Krueger on estimation of minimum wage effects on employment. See the book by Card and Krueger, Myth and Measurement, 1997, Princeton University Press, for a detailed analysis.
+</p>
+<p>Used in Text: pages 112, 166, 699-700
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(discrim)
+</pre>
+
+
+</div></body></html>

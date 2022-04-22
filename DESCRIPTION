@@ -81,7 +81,8 @@ Imports:
     tidyr,
     tidyverse,
     validate,
-    vcd
+    vcd,
+    wooldridge
 Suggests: 
     knitr,
     rmarkdown

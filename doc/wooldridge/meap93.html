@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: meap93</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for meap93"><tr><td>meap93</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>meap93</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: I collected these data from the old Michigan Department of Education web site. See MATHPNL.RAW for the current web site. I used data on most high schools in the state of Michigan for 1993. I dropped some high schools that had suspicious-looking data. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('meap93')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 408 observations on 17 variables:
+</p>
+
+<ul>
+<li> <p><strong>lnchprg:</strong> perc of studs in sch lnch prog
+</p>
+</li>
+<li> <p><strong>enroll:</strong> school enrollment
+</p>
+</li>
+<li> <p><strong>staff:</strong> staff per 1000 students
+</p>
+</li>
+<li> <p><strong>expend:</strong> expend. per stud, $
+</p>
+</li>
+<li> <p><strong>salary:</strong> avg. teacher salary, $
+</p>
+</li>
+<li> <p><strong>benefits:</strong> avg. teacher benefits, $
+</p>
+</li>
+<li> <p><strong>droprate:</strong> school dropout rate, perc
+</p>
+</li>
+<li> <p><strong>gradrate:</strong> school graduation rate, perc
+</p>
+</li>
+<li> <p><strong>math10:</strong> perc studs passing MEAP math
+</p>
+</li>
+<li> <p><strong>sci11:</strong> perc studs passing MEAP science
+</p>
+</li>
+<li> <p><strong>totcomp:</strong> salary + benefits
+</p>
+</li>
+<li> <p><strong>ltotcomp:</strong> log(totcomp)
+</p>
+</li>
+<li> <p><strong>lexpend:</strong> log of expend
+</p>
+</li>
+<li> <p><strong>lenroll:</strong> log(enroll)
+</p>
+</li>
+<li> <p><strong>lstaff:</strong> log(staff)
+</p>
+</li>
+<li> <p><strong>bensal:</strong> benefits/salary
+</p>
+</li>
+<li> <p><strong>lsalary:</strong> log(salary)
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>Many states have data, at either the district or building level, on student performance and spending. A good exercise in data collection and cleaning is to have students find such data for a particular state, and to put it into a form that can be used for econometric analysis.
+</p>
+<p>Used in Text: pages 50, 65, 111-112, 127-128, 155-156, 219, 336, 339, 696-697
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(meap93)
+</pre>
+
+
+</div></body></html>

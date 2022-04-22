@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: injury</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for injury"><tr><td>injury</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>injury</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: B.D. Meyer, W.K. Viscusi, and D.L. Durbin (1995), “Workers’ Compensation and Injury Duration: Evidence from a Natural Experiment,” American Economic Review 85, 322-340. Professor Meyer kindly provided the data. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('injury')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 7150 observations on 30 variables:
+</p>
+
+<ul>
+<li> <p><strong>durat:</strong> duration of benefits
+</p>
+</li>
+<li> <p><strong>afchnge:</strong> =1 if after change in benefits
+</p>
+</li>
+<li> <p><strong>highearn:</strong> =1 if high earner
+</p>
+</li>
+<li> <p><strong>male:</strong> =1 if male
+</p>
+</li>
+<li> <p><strong>married:</strong> =1 if married
+</p>
+</li>
+<li> <p><strong>hosp:</strong> =1 if inj. required hosp. stay
+</p>
+</li>
+<li> <p><strong>indust:</strong> industry
+</p>
+</li>
+<li> <p><strong>injtype:</strong> type of injury
+</p>
+</li>
+<li> <p><strong>age:</strong> age at time of injury
+</p>
+</li>
+<li> <p><strong>prewage:</strong> previous weekly wage, 1982 $
+</p>
+</li>
+<li> <p><strong>totmed:</strong> total med. costs, 1982 $
+</p>
+</li>
+<li> <p><strong>injdes:</strong> 4 digit injury description
+</p>
+</li>
+<li> <p><strong>benefit:</strong> real dollar value of benefit
+</p>
+</li>
+<li> <p><strong>ky:</strong> =1 for kentucky
+</p>
+</li>
+<li> <p><strong>mi:</strong> =1 for michigan
+</p>
+</li>
+<li> <p><strong>ldurat:</strong> log(durat)
+</p>
+</li>
+<li> <p><strong>afhigh:</strong> afchnge*highearn
+</p>
+</li>
+<li> <p><strong>lprewage:</strong> log(wage)
+</p>
+</li>
+<li> <p><strong>lage:</strong> log(age)
+</p>
+</li>
+<li> <p><strong>ltotmed:</strong> log(totmed); = 0 if totmed &lt; 1
+</p>
+</li>
+<li> <p><strong>head:</strong> =1 if head injury
+</p>
+</li>
+<li> <p><strong>neck:</strong> =1 if neck injury
+</p>
+</li>
+<li> <p><strong>upextr:</strong> =1 if upper extremities injury
+</p>
+</li>
+<li> <p><strong>trunk:</strong> =1 if trunk injury
+</p>
+</li>
+<li> <p><strong>lowback:</strong> =1 if lower back injury
+</p>
+</li>
+<li> <p><strong>lowextr:</strong> =1 if lower extremities injury
+</p>
+</li>
+<li> <p><strong>occdis:</strong> =1 if occupational disease
+</p>
+</li>
+<li> <p><strong>manuf:</strong> =1 if manufacturing industry
+</p>
+</li>
+<li> <p><strong>construc:</strong> =1 if construction industry
+</p>
+</li>
+<li> <p><strong>highlpre:</strong> highearn*lprewage
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>This data set also can be used to illustrate the Chow test in Chapter 7. In particular, students can test whether the regression functions differ between Kentucky and Michigan. Or, allowing for different intercepts for the two states, do the slopes differ? A good lesson from this example is that a small R-squared is compatible with the ability to estimate the effects of a policy. Of course, for the Michigan data, which has a smaller sample size, the estimated effect is much less precise (but of virtually identical magnitude).
+</p>
+<p>Used in Text: pages 458-459, 475-476
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(injury)
+</pre>
+
+
+</div></body></html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: prison</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for prison"><tr><td>prison</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>prison</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: S.D. Levitt (1996), “The Effect of Prison Population Size on Crime Rates: Evidence from Prison Overcrowding Legislation,” Quarterly Journal of Economics 111, 319-351. Professor Levitt kindly provided me with the data, of which I used a subset. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('prison')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 714 observations on 45 variables:
+</p>
+
+<ul>
+<li> <p><strong>state:</strong> alphabetical; DC = 9
+</p>
+</li>
+<li> <p><strong>year:</strong> 80 to 93
+</p>
+</li>
+<li> <p><strong>govelec:</strong> =1 if gubernatorial election
+</p>
+</li>
+<li> <p><strong>black:</strong> proportion black
+</p>
+</li>
+<li> <p><strong>metro:</strong> proportion in metro. areas
+</p>
+</li>
+<li> <p><strong>unem:</strong> proportion unemployed
+</p>
+</li>
+<li> <p><strong>criv:</strong> viol. crimes per 100,000
+</p>
+</li>
+<li> <p><strong>crip:</strong> prop. crimes per 100,000
+</p>
+</li>
+<li> <p><strong>lcriv:</strong> log(criv)
+</p>
+</li>
+<li> <p><strong>lcrip:</strong> log(crip)
+</p>
+</li>
+<li> <p><strong>gcriv:</strong> lcriv - lcriv_1
+</p>
+</li>
+<li> <p><strong>gcrip:</strong> lcrip - lcrip_1
+</p>
+</li>
+<li> <p><strong>y81:</strong> =1 if year == 81
+</p>
+</li>
+<li> <p><strong>y82:</strong> 
+</p>
+</li>
+<li> <p><strong>y83:</strong> 
+</p>
+</li>
+<li> <p><strong>y84:</strong> 
+</p>
+</li>
+<li> <p><strong>y85:</strong> 
+</p>
+</li>
+<li> <p><strong>y86:</strong> 
+</p>
+</li>
+<li> <p><strong>y87:</strong> 
+</p>
+</li>
+<li> <p><strong>y88:</strong> 
+</p>
+</li>
+<li> <p><strong>y89:</strong> 
+</p>
+</li>
+<li> <p><strong>y90:</strong> 
+</p>
+</li>
+<li> <p><strong>y91:</strong> 
+</p>
+</li>
+<li> <p><strong>y92:</strong> 
+</p>
+</li>
+<li> <p><strong>y93:</strong> 
+</p>
+</li>
+<li> <p><strong>ag0_14:</strong> prop. pop. 0 to 14 yrs
+</p>
+</li>
+<li> <p><strong>ag15_17:</strong> prop. pop. 15 to 17 yrs
+</p>
+</li>
+<li> <p><strong>ag18_24:</strong> prop. pop. 18 to 24 yrs
+</p>
+</li>
+<li> <p><strong>ag25_34:</strong> prop. pop. 25 to 34 yrs
+</p>
+</li>
+<li> <p><strong>incpc:</strong> per capita income, nominal
+</p>
+</li>
+<li> <p><strong>polpc:</strong> police per 100,000 residents
+</p>
+</li>
+<li> <p><strong>gincpc:</strong> log(incpc) - log(incpc_1)
+</p>
+</li>
+<li> <p><strong>gpolpc:</strong> lpolpc - lpolpc_1
+</p>
+</li>
+<li> <p><strong>cag0_14:</strong> change in ag0_14
+</p>
+</li>
+<li> <p><strong>cag15_17:</strong> change in ag15_17
+</p>
+</li>
+<li> <p><strong>cag18_24:</strong> change in ag18_24
+</p>
+</li>
+<li> <p><strong>cag25_34:</strong> change in ag25_34
+</p>
+</li>
+<li> <p><strong>cunem:</strong> change in unem
+</p>
+</li>
+<li> <p><strong>cblack:</strong> change in black
+</p>
+</li>
+<li> <p><strong>cmetro:</strong> change in metro
+</p>
+</li>
+<li> <p><strong>pris:</strong> prison pop. per 100,000
+</p>
+</li>
+<li> <p><strong>lpris:</strong> log(pris)
+</p>
+</li>
+<li> <p><strong>gpris:</strong> lpris - lpris[_n-1]
+</p>
+</li>
+<li> <p><strong>final1:</strong> =1 if fnl dec on litig, curr yr
+</p>
+</li>
+<li> <p><strong>final2:</strong> =1 if dec on litig, prev 2 yrs
+</p>
+</li></ul>
+
+
+
+<h3>Used in Text</h3>
+
+<p>pages 573-574
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(prison)
+</pre>
+
+
+</div></body></html>

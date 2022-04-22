@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: fringe</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for fringe"><tr><td>fringe</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>fringe</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: F. Vella (1993), “A Simple Estimator for Simultaneous Models with Censored Endogenous Regressors,” International Economic Review 34, 441-457. Professor Vella kindly provided the data. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('fringe')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 616 observations on 39 variables:
+</p>
+
+<ul>
+<li> <p><strong>annearn:</strong> annual earnings, $
+</p>
+</li>
+<li> <p><strong>hrearn:</strong> hourly earnings, $
+</p>
+</li>
+<li> <p><strong>exper:</strong> years work experience
+</p>
+</li>
+<li> <p><strong>age:</strong> age in years
+</p>
+</li>
+<li> <p><strong>depends:</strong> number of dependents
+</p>
+</li>
+<li> <p><strong>married:</strong> =1 if married
+</p>
+</li>
+<li> <p><strong>tenure:</strong> years with current employer
+</p>
+</li>
+<li> <p><strong>educ:</strong> years schooling
+</p>
+</li>
+<li> <p><strong>nrtheast:</strong> =1 if live in northeast
+</p>
+</li>
+<li> <p><strong>nrthcen:</strong> =1 if live in north central
+</p>
+</li>
+<li> <p><strong>south:</strong> =1 if live in south
+</p>
+</li>
+<li> <p><strong>male:</strong> =1 if male
+</p>
+</li>
+<li> <p><strong>white:</strong> =1 if white
+</p>
+</li>
+<li> <p><strong>union:</strong> =1 if union member
+</p>
+</li>
+<li> <p><strong>office:</strong> 
+</p>
+</li>
+<li> <p><strong>annhrs:</strong> annual hours worked
+</p>
+</li>
+<li> <p><strong>ind1:</strong> industry dummy
+</p>
+</li>
+<li> <p><strong>ind2:</strong> 
+</p>
+</li>
+<li> <p><strong>ind3:</strong> 
+</p>
+</li>
+<li> <p><strong>ind4:</strong> 
+</p>
+</li>
+<li> <p><strong>ind5:</strong> 
+</p>
+</li>
+<li> <p><strong>ind6:</strong> 
+</p>
+</li>
+<li> <p><strong>ind7:</strong> 
+</p>
+</li>
+<li> <p><strong>ind8:</strong> 
+</p>
+</li>
+<li> <p><strong>ind9:</strong> 
+</p>
+</li>
+<li> <p><strong>vacdays:</strong> $ value of vac. days
+</p>
+</li>
+<li> <p><strong>sicklve:</strong> $ value of sick leave
+</p>
+</li>
+<li> <p><strong>insur:</strong> $ value of employee insur
+</p>
+</li>
+<li> <p><strong>pension:</strong> $ value of employee pension
+</p>
+</li>
+<li> <p><strong>annbens:</strong> vacdays+sicklve+insur+pension
+</p>
+</li>
+<li> <p><strong>hrbens:</strong> hourly benefits, $
+</p>
+</li>
+<li> <p><strong>annhrssq:</strong> annhrs^2
+</p>
+</li>
+<li> <p><strong>beratio:</strong> annbens/annearn
+</p>
+</li>
+<li> <p><strong>lannhrs:</strong> log(annhrs)
+</p>
+</li>
+<li> <p><strong>tenuresq:</strong> tenure^2
+</p>
+</li>
+<li> <p><strong>expersq:</strong> exper^2
+</p>
+</li>
+<li> <p><strong>lannearn:</strong> log(annearn)
+</p>
+</li>
+<li> <p><strong>peratio:</strong> pension/annearn
+</p>
+</li>
+<li> <p><strong>vserat:</strong> (vacdays+sicklve)/annearn
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>Currently, this data set is used in only one Computer Exercise – to illustrate the Tobit model. It can be used much earlier. First, one could just ignore the pileup at zero and use a linear model where any of the hourly benefit measures is the dependent variable. Another possibility is to use this data set for a problem set in Chapter 4, after students have read Example 4.10. That example, which uses teacher salary/benefit data at the school level, finds the expected tradeoff, although it appears to less than one-to-one. By contrast, if you do a similar analysis with FRINGE.RAW, you will not find a tradeoff. A positive coefficient on the benefit/salary ratio is not too surprising because we probably cannot control for enough factors, especially when looking across different occupations. The Michigan school-level data is more aggregated than one would like, but it does restrict attention to a more homogeneous group: high school teachers in Michigan.
+</p>
+<p>Used in Text: page 624-625
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(fringe)
+</pre>
+
+
+</div></body></html>
