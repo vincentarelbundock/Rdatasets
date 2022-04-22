@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: rdtelec</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for rdtelec"><tr><td>rdtelec</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>rdtelec</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: See RDCHEM.RAW Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('rdtelec')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 29 observations on 6 variables:
+</p>
+
+<ul>
+<li> <p><strong>rd:</strong> R&amp;D spending, millions $
+</p>
+</li>
+<li> <p><strong>sales:</strong> firm sales, millions $
+</p>
+</li>
+<li> <p><strong>rdintens:</strong> rd as percent of sales
+</p>
+</li>
+<li> <p><strong>lrd:</strong> log(rd)
+</p>
+</li>
+<li> <p><strong>lsales:</strong> log(sales)
+</p>
+</li>
+<li> <p><strong>salessq:</strong> sales^2
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>According to these data, the R&amp;D/firm size relationship is different in the telecommunications industry than in the chemical industry: there is pretty strong evidence that R&amp;D intensity decreases with firm size in telecommunications. Of course, that was in 1991. The data could easily be updated, and a panel data set could be constructed.
+</p>
+<p>Used in Text: not used
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(rdtelec)
+</pre>
+
+
+</div></body></html>

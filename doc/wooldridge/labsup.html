@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: labsup</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for labsup"><tr><td>labsup</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>labsup</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source:  The subset of data for black or Hispanic women used in J.A. Angrist and W.E. Evans (1998) Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('labsup')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 31857 observations on 20 variables:
+</p>
+
+<ul>
+<li> <p><strong>kids: </strong>number of kids
+</p>
+</li>
+<li> <p><strong>morekids: </strong>had more than 2 kids
+</p>
+</li>
+<li> <p><strong>boys2: </strong>first two births boys
+</p>
+</li>
+<li> <p><strong>girls2: </strong>first two births girls
+</p>
+</li>
+<li> <p><strong>boy1st: </strong>first birth boy
+</p>
+</li>
+<li> <p><strong>boy2nd: </strong>second birth boy
+</p>
+</li>
+<li> <p><strong>samesex: </strong>first two kids are of same sex
+</p>
+</li>
+<li> <p><strong>multi2nd: </strong>=1 if 2nd birth is twin
+</p>
+</li>
+<li> <p><strong>age: </strong>age of mom
+</p>
+</li>
+<li> <p><strong>agefstm: </strong>age of mom at first birth
+</p>
+</li>
+<li> <p><strong>black: </strong>=1 of black
+</p>
+</li>
+<li> <p><strong>hispan: </strong>=1 if hispanic
+</p>
+</li>
+<li> <p><strong>worked: </strong>mom worked last year
+</p>
+</li>
+<li> <p><strong>weeks: </strong>weeks worked mom
+</p>
+</li>
+<li> <p><strong>hours: </strong>hours of work per week, mom
+</p>
+</li>
+<li> <p><strong>labinc: </strong>mom's labor income, $1000s
+</p>
+</li>
+<li> <p><strong>faminc: </strong>family income, $1000s
+</p>
+</li>
+<li> <p><strong>nonmomi: </strong>'non-mom' income, $1000s
+</p>
+</li>
+<li> <p><strong>educ: </strong>mom's years of education
+</p>
+</li>
+<li> <p><strong>agesq: </strong>
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>This example can promote an interesting discussion of instrument validity, and in particular, how a variable that is beyond our control – for example, whether the first two children have the same gender – can, nevertheless, affect subsequent economic choices. Students are asked to think about such issues in Computer Exercise C13 in Chapter 15. A more egregious version of this mistake would be to treat a variable such as age as a suitable instrument because it is beyond our control: clearly age has a direct effect on many economic outcomes that would play the role of the dependent variable.
+</p>
+<p>Used in Text: pages 530-531
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.cengage.com/c/introductory-econometrics-a-modern-approach-7e-wooldridge">http://www.cengage.com/c/introductory-econometrics-a-modern-approach-7e-wooldridge</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(labsup)
+</pre>
+
+
+</div></body></html>

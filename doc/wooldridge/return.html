@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: return</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for return"><tr><td>return</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>return</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Collected by Stephanie Balys, a former MSU undergraduate, from the New York Stock Exchange and Compustat. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('return')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 142 observations on 12 variables:
+</p>
+
+<ul>
+<li> <p><strong>roe:</strong> return on equity, 1990
+</p>
+</li>
+<li> <p><strong>rok:</strong> return on capital, 1990
+</p>
+</li>
+<li> <p><strong>dkr:</strong> debt/capital, 1990
+</p>
+</li>
+<li> <p><strong>eps:</strong> earnings per share, 1990
+</p>
+</li>
+<li> <p><strong>netinc:</strong> net income, 1990 (mills.)
+</p>
+</li>
+<li> <p><strong>sp90:</strong> stock price, end 1990
+</p>
+</li>
+<li> <p><strong>sp94:</strong> stock price, end 1994
+</p>
+</li>
+<li> <p><strong>salary:</strong> CEO salary, 1990 (thous.)
+</p>
+</li>
+<li> <p><strong>return:</strong> percent change s.p., 90-94
+</p>
+</li>
+<li> <p><strong>lsalary:</strong> log(salary)
+</p>
+</li>
+<li> <p><strong>lsp90:</strong> log(sp90)
+</p>
+</li>
+<li> <p><strong>lnetinc:</strong> log(netinc)
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>More can be done with this data set. Recently, I discovered that lsp90 does appear to predict return (and the log of the 1990 stock price works better than sp90). I am a little suspicious, but you could use the negative coefficient on lsp90 to illustrate “reversion to the mean.”
+</p>
+<p>Used in Text: page 162-163
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(return)
+</pre>
+
+
+</div></body></html>

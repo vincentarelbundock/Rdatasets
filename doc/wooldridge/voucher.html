@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: voucher</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for voucher"><tr><td>voucher</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>voucher</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Rouse, C.E. (1998), “Private School Vouchers and Student Achievement: An Evaluation of the Milwaukee Parental Choice Program,” Quarterly Journal of Economics 113, 553-602. Professor Rouse kindly provided the original data set from her paper. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('voucher')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 990 observations on 19 variables:
+</p>
+
+<ul>
+<li> <p><strong>studyid:</strong> student identifier
+</p>
+</li>
+<li> <p><strong>black:</strong> = 1 if African-American
+</p>
+</li>
+<li> <p><strong>hispanic:</strong> = 1 if Hispanic
+</p>
+</li>
+<li> <p><strong>female:</strong> = 1 if female
+</p>
+</li>
+<li> <p><strong>appyear:</strong> year of first application: 90 to 93
+</p>
+</li>
+<li> <p><strong>mnce:</strong> math NCE test score, 1994
+</p>
+</li>
+<li> <p><strong>select:</strong> = 1 if ever selected to attend choice school
+</p>
+</li>
+<li> <p><strong>choice:</strong> = 1 if attending choice school, 1994
+</p>
+</li>
+<li> <p><strong>selectyrs:</strong> years selected to attend choice school
+</p>
+</li>
+<li> <p><strong>choiceyrs:</strong> years attended choice school
+</p>
+</li>
+<li> <p><strong>mnce90:</strong> mnce in 1990
+</p>
+</li>
+<li> <p><strong>selectyrs1:</strong> = 1 if selectyrs == 1
+</p>
+</li>
+<li> <p><strong>selectyrs2:</strong> = 1 if selectyrs == 2
+</p>
+</li>
+<li> <p><strong>selectyrs3:</strong> = 1 if selectyrs == 3
+</p>
+</li>
+<li> <p><strong>selectyrs4:</strong> = 1 if selectyrs == 4
+</p>
+</li>
+<li> <p><strong>choiceyrs1:</strong> = 1 if choiceyrs == 1
+</p>
+</li>
+<li> <p><strong>choiceyrs2:</strong> = 1 if choiceyrs == 2
+</p>
+</li>
+<li> <p><strong>choiceyrs3:</strong> = 1 if choiceyrs == 3
+</p>
+</li>
+<li> <p><strong>choiceyrs4:</strong> = 1 if choiceyrs == 4
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>This is a condensed version of the data set used by Professor Rouse. The original data set had missing information on many variables, including post-policy and pre-policy test scores. I did not impute any missing data and have dropped observations that were unusable without filling in missing data. There are 990 students in the current data set but pre-policy test scores are available for only 328 of them. This is a good example of where eligibility for a program is randomized but participation need not be. In addition, even if we look at just the effect of eligibility (captured in the variable selectyrs) on the math test score (mnce), we need to confront the fact that attrition (students leaving the district) can bias the results. Controlling for the pre-policy test score, mnce90, can help – but at the cost of losing two-thirds of the observations. A simple regression of mnce on selectyrs followed by a multiple regression that adds mnce90 as a control is informative. The selectyrs dummy variables can be used as instrumental variables for the choiceyrs variable to try to estimate the effect of actually participating in the program (rather than estimating the so- called intention-to-treat effect). Computer Exercise C15.11 steps through the details.
+</p>
+<p>Used in Text: pages 550-551
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(voucher)
+</pre>
+
+
+</div></body></html>

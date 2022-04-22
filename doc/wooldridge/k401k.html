@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: k401k</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for k401k"><tr><td>k401k</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>k401k</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: L.E. Papke (1995), “Participation in and Contributions to 401(k) Pension Plans:Evidence from Plan Data,” Journal of Human Resources 30, 311-325. Professor Papke kindly provided these data. She gathered them from the Internal Revenue Service’s Form 5500 tapes. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('k401k')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 1534 observations on 8 variables:
+</p>
+
+<ul>
+<li> <p><strong>prate:</strong> participation rate, percent
+</p>
+</li>
+<li> <p><strong>mrate:</strong> 401k plan match rate
+</p>
+</li>
+<li> <p><strong>totpart:</strong> total 401k participants
+</p>
+</li>
+<li> <p><strong>totelg:</strong> total eligible for 401k plan
+</p>
+</li>
+<li> <p><strong>age:</strong> age of 401k plan
+</p>
+</li>
+<li> <p><strong>totemp:</strong> total number of firm employees
+</p>
+</li>
+<li> <p><strong>sole:</strong> = 1 if 401k is firm's sole plan
+</p>
+</li>
+<li> <p><strong>ltotemp:</strong> log of totemp
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>This data set is used in a variety of ways in the text. One additional possibility is to investigate whether the coefficients from the regression of prate on mrate, log(totemp) differ by whether the plan is a sole plan. The Chow test (see Section 7.4), and the less restrictive version that allows different intercepts, can be used.
+</p>
+<p>Used in Text: pages 63, 79, 136, 174, 219, 692
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(k401k)
+</pre>
+
+
+</div></body></html>

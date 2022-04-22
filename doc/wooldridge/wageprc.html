@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: wageprc</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for wageprc"><tr><td>wageprc</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>wageprc</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Economic Report of the President, various years. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('wageprc')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 286 observations on 20 variables:
+</p>
+
+<ul>
+<li> <p><strong>price:</strong> consumer price index
+</p>
+</li>
+<li> <p><strong>wage:</strong> nominal hourly wage
+</p>
+</li>
+<li> <p><strong>t:</strong> time trend = 1, 2 , 3, ...
+</p>
+</li>
+<li> <p><strong>lprice:</strong> log(price)
+</p>
+</li>
+<li> <p><strong>lwage:</strong> log(wage)
+</p>
+</li>
+<li> <p><strong>gprice:</strong> lprice - lprice[_n-1]
+</p>
+</li>
+<li> <p><strong>gwage:</strong> lwage - lwage[_n-1]
+</p>
+</li>
+<li> <p><strong>gwage_1:</strong> gwage[_n-1]
+</p>
+</li>
+<li> <p><strong>gwage_2:</strong> gwage[_n-2]
+</p>
+</li>
+<li> <p><strong>gwage_3:</strong> 
+</p>
+</li>
+<li> <p><strong>gwage_4:</strong> 
+</p>
+</li>
+<li> <p><strong>gwage_5:</strong> 
+</p>
+</li>
+<li> <p><strong>gwage_6:</strong> 
+</p>
+</li>
+<li> <p><strong>gwage_7:</strong> 
+</p>
+</li>
+<li> <p><strong>gwage_8:</strong> 
+</p>
+</li>
+<li> <p><strong>gwage_9:</strong> 
+</p>
+</li>
+<li> <p><strong>gwage_10:</strong> 
+</p>
+</li>
+<li> <p><strong>gwage_11:</strong> 
+</p>
+</li>
+<li> <p><strong>gwage_12:</strong> 
+</p>
+</li>
+<li> <p><strong>gprice_1:</strong> gprice[_n-1]
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>These monthly data run from January 1964 through October 1987. The consumer price index averages to 100 in 1967.
+</p>
+<p>Used in Text: pages 405, 444-445, 671.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(wageprc)
+</pre>
+
+
+</div></body></html>

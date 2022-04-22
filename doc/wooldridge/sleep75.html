@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: sleep75</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for sleep75"><tr><td>sleep75</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>sleep75</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: J.E. Biddle and D.S. Hamermesh (1990), “Sleep and the Allocation of Time,” Journal of Political Economy 98, 922-943. Professor Biddle kindly provided the data. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('sleep75')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 706 observations on 34 variables:
+</p>
+
+<ul>
+<li> <p><strong>age:</strong> in years
+</p>
+</li>
+<li> <p><strong>black:</strong> =1 if black
+</p>
+</li>
+<li> <p><strong>case:</strong> identifier
+</p>
+</li>
+<li> <p><strong>clerical:</strong> =1 if clerical worker
+</p>
+</li>
+<li> <p><strong>construc:</strong> =1 if construction worker
+</p>
+</li>
+<li> <p><strong>educ:</strong> years of schooling
+</p>
+</li>
+<li> <p><strong>earns74:</strong> total earnings, 1974
+</p>
+</li>
+<li> <p><strong>gdhlth:</strong> =1 if in good or excel. health
+</p>
+</li>
+<li> <p><strong>inlf:</strong> =1 if in labor force
+</p>
+</li>
+<li> <p><strong>leis1:</strong> sleep - totwrk
+</p>
+</li>
+<li> <p><strong>leis2:</strong> slpnaps - totwrk
+</p>
+</li>
+<li> <p><strong>leis3:</strong> rlxall - totwrk
+</p>
+</li>
+<li> <p><strong>smsa:</strong> =1 if live in smsa
+</p>
+</li>
+<li> <p><strong>lhrwage:</strong> log hourly wage
+</p>
+</li>
+<li> <p><strong>lothinc:</strong> log othinc, unless othinc &lt; 0
+</p>
+</li>
+<li> <p><strong>male:</strong> =1 if male
+</p>
+</li>
+<li> <p><strong>marr:</strong> =1 if married
+</p>
+</li>
+<li> <p><strong>prot:</strong> =1 if Protestant
+</p>
+</li>
+<li> <p><strong>rlxall:</strong> slpnaps + personal activs
+</p>
+</li>
+<li> <p><strong>selfe:</strong> =1 if self employed
+</p>
+</li>
+<li> <p><strong>sleep:</strong> mins sleep at night, per wk
+</p>
+</li>
+<li> <p><strong>slpnaps:</strong> minutes sleep, inc. naps
+</p>
+</li>
+<li> <p><strong>south:</strong> =1 if live in south
+</p>
+</li>
+<li> <p><strong>spsepay:</strong> spousal wage income
+</p>
+</li>
+<li> <p><strong>spwrk75:</strong> =1 if spouse works
+</p>
+</li>
+<li> <p><strong>totwrk:</strong> mins worked per week
+</p>
+</li>
+<li> <p><strong>union:</strong> =1 if belong to union
+</p>
+</li>
+<li> <p><strong>worknrm:</strong> mins work main job
+</p>
+</li>
+<li> <p><strong>workscnd:</strong> mins work second job
+</p>
+</li>
+<li> <p><strong>exper:</strong> age - educ - 6
+</p>
+</li>
+<li> <p><strong>yngkid:</strong> =1 if children &lt; 3 present
+</p>
+</li>
+<li> <p><strong>yrsmarr:</strong> years married
+</p>
+</li>
+<li> <p><strong>hrwage:</strong> hourly wage
+</p>
+</li>
+<li> <p><strong>agesq:</strong> age^2
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>In their article, Biddle and Hamermesh include an hourly wage measure in the sleep equation. An econometric problem that arises is that the hourly wage is missing for those who do not work. Plus, the wage offer may be endogenous (even if it were always observed). Biddle and Hamermesh employ extensions of the sample selection methods in Section 17.5. See their article for details.
+</p>
+<p>Used in Text: pages 64, 106-107, 162, 259, 263, 299
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(sleep75)
+</pre>
+
+
+</div></body></html>

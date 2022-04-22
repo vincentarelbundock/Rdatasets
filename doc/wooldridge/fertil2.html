@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: fertil2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for fertil2"><tr><td>fertil2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>fertil2</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: These data were obtained by James Heakins, a former MSU undergraduate, for a term project. They come from Botswana’s 1988 Demographic and Health Survey. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data('fertil2')
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 4361 observations on 27 variables:
+</p>
+
+<ul>
+<li> <p><strong>mnthborn:</strong> month woman born
+</p>
+</li>
+<li> <p><strong>yearborn:</strong> year woman born
+</p>
+</li>
+<li> <p><strong>age:</strong> age in years
+</p>
+</li>
+<li> <p><strong>electric:</strong> =1 if has electricity
+</p>
+</li>
+<li> <p><strong>radio:</strong> =1 if has radio
+</p>
+</li>
+<li> <p><strong>tv:</strong> =1 if has tv
+</p>
+</li>
+<li> <p><strong>bicycle:</strong> =1 if has bicycle
+</p>
+</li>
+<li> <p><strong>educ:</strong> years of education
+</p>
+</li>
+<li> <p><strong>ceb:</strong> children ever born
+</p>
+</li>
+<li> <p><strong>agefbrth:</strong> age at first birth
+</p>
+</li>
+<li> <p><strong>children:</strong> number of living children
+</p>
+</li>
+<li> <p><strong>knowmeth:</strong> =1 if know about birth control
+</p>
+</li>
+<li> <p><strong>usemeth:</strong> =1 if ever use birth control
+</p>
+</li>
+<li> <p><strong>monthfm:</strong> month of first marriage
+</p>
+</li>
+<li> <p><strong>yearfm:</strong> year of first marriage
+</p>
+</li>
+<li> <p><strong>agefm:</strong> age at first marriage
+</p>
+</li>
+<li> <p><strong>idlnchld:</strong> 'ideal' number of children
+</p>
+</li>
+<li> <p><strong>heduc:</strong> husband's years of education
+</p>
+</li>
+<li> <p><strong>agesq:</strong> age^2
+</p>
+</li>
+<li> <p><strong>urban:</strong> =1 if live in urban area
+</p>
+</li>
+<li> <p><strong>urb_educ:</strong> urban*educ
+</p>
+</li>
+<li> <p><strong>spirit:</strong> =1 if religion == spirit
+</p>
+</li>
+<li> <p><strong>protest:</strong> =1 if religion == protestant
+</p>
+</li>
+<li> <p><strong>catholic:</strong> =1 if religion == catholic
+</p>
+</li>
+<li> <p><strong>frsthalf:</strong> =1 if mnthborn &lt;= 6
+</p>
+</li>
+<li> <p><strong>educ0:</strong> =1 if educ == 0
+</p>
+</li>
+<li> <p><strong>evermarr:</strong> =1 if ever married
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>Currently, this data set is used only in one computer exercise. Since the dependent variable of interest – number of living children or number of children every born – is a count variable, the Poisson regression model discussed in Chapter 17 can be used. However, some care is required to combine Poisson regression with an endogenous explanatory variable (educ). I refer you to Chapter 19 of my book Econometric Analysis of Cross Section and Panel Data. Even in the context of linear models, much can be done beyond Computer Exercise C15.2. At a minimum, the binary indicators for various religions can be added as controls. One might also interact the schooling variable, educ, with some of the exogenous explanatory variables.
+</p>
+<p>Used in Text: page 547
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(fertil2)
+</pre>
+
+
+</div></body></html>
