@@ -43,6 +43,9 @@ Rdatasets for one reason or another:
       - Not on CRAN.
   - gamclass
       - Not on CRAN.
+  - Data4Ecologists
+      - Not on CRAN. (check out [this link](https://github.com/jfieberg/Data4Ecologists)).
+      - `devtools::install_github("jfieberg/Data4Ecologists")`
 
 # License
 

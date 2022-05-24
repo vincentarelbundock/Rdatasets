@@ -39,6 +39,9 @@ Here are some packages that contain data but were not include in Rdatasets for o
     - Not on CRAN.
 * gamclass
     - Not on CRAN.
+* Data4Ecologists
+    - Not on CRAN. (check out [this link](https://github.com/jfieberg/Data4Ecologists)).
+    - `devtools::install_github("jfieberg/Data4Ecologists")`
 
 # License
 
