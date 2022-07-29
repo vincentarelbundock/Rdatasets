@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title>R: Medical-Care Expenditure: A Cross-National Survey (Newhouse,...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Newhouse77</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Medical-Care Expenditure: A Cross-National Survey (Newhouse, 1977)</h2>
+
+<h3>Description</h3>
+
+<p>These are the data in Newhouse's (1977) simple OLS model from 1977. In
+his case, he's trying to explain medical care expenditures as a function of GDP
+per capita for these countries. It's probably the easiest OLS model I can find
+in print because Newhouse helpfully provides all the data in one simple table.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Newhouse77
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 13 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>country</code></dt><dd><p>a character vector for the country</p>
+</dd>
+<dt><code>year</code></dt><dd><p>a numeric vector for the year</p>
+</dd>
+<dt><code>gdppc</code></dt><dd><p>a numeric vector for the per capita GDP in USD</p>
+</dd>
+<dt><code>medsharegdp</code></dt><dd><p>a numeric vector for the medical care share as percentage of GDP</p>
+</dd>
+<dt><code>medexppc</code></dt><dd><p>a numeric vector for per capita medical care expenditure (in USD)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Table 1 in Newhouse (1977) is well-annotated with background information.
+</p>
+
+
+<h3>References</h3>
+
+<p>Newhouse, Joseph P. 1977. &quot;Medical-Care Expenditure: A Cross-National Survey.&quot; <em>Journal of Human Resources</em> 12(1): 115-125.
+</p>
+
+
+</div>
+</body></html>

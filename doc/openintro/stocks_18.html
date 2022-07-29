@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title>R: Monthly Returns for a few stocks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>stocks_18</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Monthly Returns for a few stocks</h2>
+
+<h3>Description</h3>
+
+<p>Monthly return data for a few stocks, which covers stock prices from
+November 2015 through October 2018.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>stocks_18
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 36 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt>date</dt><dd><p>First day of the month corresponding to the returns.</p>
+</dd>
+<dt>goog</dt><dd><p>Google stock price change.</p>
+</dd>
+<dt>cat</dt><dd><p>Caterpillar stock price change.</p>
+</dd>
+<dt>xom</dt><dd><p>Exxon Mobil stock price change.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Yahoo! Finance, direct download.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+d &lt;- stocks_18
+dim(d)
+apply(d[, 2:3], 2, mean)
+apply(d[, 2:3], 2, sd)
+</code></pre>
+
+
+</div>
+</body></html>

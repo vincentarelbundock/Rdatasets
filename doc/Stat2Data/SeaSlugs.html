@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: Sea Slug Larvae</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>SeaSlugs</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Sea Slug Larvae</h2>
+
+<h3>Description</h3>
+
+<p>Metamorphose rates for sea slugs exposed to different water samples
+</p>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 36 observations on the following 2 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>Time</code> </td><td style="text-align: left;"> Minutes after tide come in</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Percent</code> </td><td style="text-align: left;"> Proportion of 15 sea slug larvae that metamorphose</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>Sea slugs, common on the coast of southern California, live on vaucherian
+seaweed. The larvae from these sea slugs need to locate this type of seaweed to survive. A study
+was done to try to determine whether chemicals that leach out of the seaweed attract the larvae.
+Seawater was collected over a patch of this kind of seaweed at 5-minute intervals as the tide was
+coming in and, presumably, mixing with the chemicals. The idea was that as more seawater came
+in, the concentration of the chemicals was reduced. Each sample of water was divided into 6 parts.
+Fifteen larvae were then introduced to this seawater to see what percentage metamorphosed (an indication that the
+desired chemical was detected).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data downloaded from http://www.stat.ucla.edu/projects/datasets/seaslug-explanation.html
+</p>
+
+
+<h3>References</h3>
+
+<p>A paper based on these data: Krug, P.J. and R.K. Zimmer. 2000b.  Larval settlement: chemical markers
+for  tracing production, transport, and distribution of a waterborne cue.
+Marine Ecology Progress Series, vol. 207: 283-296.
+</p>
+
+
+</div>
+</body></html>

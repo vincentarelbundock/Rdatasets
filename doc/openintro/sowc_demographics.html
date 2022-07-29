@@ -1,0 +1,130 @@
+<!DOCTYPE html><html><head><title>R: SOWC Demographics Data.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>sowc_demographics</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>SOWC Demographics Data.</h2>
+
+<h3>Description</h3>
+
+<p>Demographic data from UNICEF's State of the World's Children 2019 Statistical Tables.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>sowc_demographics
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 202 rows and 18 variables.
+</p>
+
+<dl>
+<dt>countries_and_areas</dt><dd><p>Country or area name.</p>
+</dd>
+<dt>total_pop_2018</dt><dd><p>Population in 2018 in thousands.</p>
+</dd>
+<dt>under18_pop_2018</dt><dd><p>Population under age 18 in 2018 in thousands.</p>
+</dd>
+<dt>under5_pop_2018</dt><dd><p>Population under age 5 in 2018 in thousands.</p>
+</dd>
+<dt>pop_growth_rate_2018</dt><dd><p>Rate at which population is growing in 2018.</p>
+</dd>
+<dt>pop_growth_rate_2030</dt><dd><p>Rate at which population is estimated to grow
+in 2030.</p>
+</dd>
+<dt>births_2018</dt><dd><p>Number of births in 2018 in thousands.</p>
+</dd>
+<dt>fertility_2018</dt><dd><p>Number of live births per woman in 2018.A total
+fertility level of 2.1 is called replacement level and represents a
+level at which the population would remain the same size. </p>
+</dd>
+<dt>life_expectancy_1970</dt><dd><p>Life expectancy at birth in 1970.</p>
+</dd>
+<dt>life_expectancy_2000</dt><dd><p>Life expectancy at birth in 2000.</p>
+</dd>
+<dt>life_expectancy_2018</dt><dd><p>Life expectancy at birth in 2018.</p>
+</dd>
+<dt>dependency_ratio_total</dt><dd><p>The ratio of the not-working-age
+population to the working-age population of 15 - 64 years.</p>
+</dd>
+<dt>dependency_ratio_child</dt><dd><p>The ratio of the under 15 population
+to the working-age population of 15 - 64 years.</p>
+</dd>
+<dt>dependency_ratio_oldage</dt><dd><p>The ratio of the  over 64 population
+to the working-age population of 15 - 64 years.</p>
+</dd>
+<dt>percent_urban_2018</dt><dd><p>Percent of population living in urban areas.</p>
+</dd>
+<dt>pop_urban_growth_rate_2018</dt><dd><p>Annual urban population growth rate
+from 2000 to 2018.</p>
+</dd>
+<dt>pop_urban_growth_rate_2030</dt><dd><p>Estimated annual urban population growth
+rate from 2018 to 2030.</p>
+</dd>
+<dt>migration_rate</dt><dd><p>Net migration rate per 1000 population from
+2015 to 2020.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://data.unicef.org/resources/dataset/sowc-2019-statistical-tables/">United Nations Children's Emergency Fund (UNICEF)</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+library(ggplot2)
+
+# List countries and areas' life expectancy, ordered by rank of life expectancy in 2018
+sowc_demographics %&gt;%
+  mutate(life_expectancy_change = life_expectancy_2018 - life_expectancy_1970) %&gt;%
+  mutate(rank_life_expectancy = round(rank(-life_expectancy_2018), 0)) %&gt;%
+  select(
+  countries_and_areas, rank_life_expectancy, life_expectancy_2018,
+    life_expectancy_change
+    ) %&gt;%
+  arrange(rank_life_expectancy)
+
+# List countries and areas' migration rate and population, ordered by rank of migration rate
+sowc_demographics %&gt;%
+  mutate(rank = round(rank(migration_rate))) %&gt;%
+  mutate(population_millions = total_pop_2018 / 1000) %&gt;%
+  select(countries_and_areas, rank, migration_rate, population_millions) %&gt;%
+  arrange(rank)
+
+# Scatterplot of life expectancy v population in 2018
+ggplot(sowc_demographics, aes(life_expectancy_1970, life_expectancy_2018, size = total_pop_2018)) +
+  geom_point(alpha = 0.5) +
+  labs(
+    title = "Life Expectancy",
+    subtitle = "1970 v. 2018",
+    x = "Life Expectancy in 1970",
+    y = "Life Expectancy in 2018",
+    size = "2018 Total Population"
+  )
+</code></pre>
+
+
+</div>
+</body></html>

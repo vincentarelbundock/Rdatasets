@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: SAT Scores and GPA</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>SATGPA</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>SAT Scores and GPA</h2>
+
+<h3>Description</h3>
+
+<p>A sample of SAT scores and grade point averages for statistics students
+</p>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 24 observations on the following 3 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>MathSAT</code> </td><td style="text-align: left;"> Score (out of 800) on the mathematics portion of the SAT exam</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>VerbalSAT</code> </td><td style="text-align: left;"> Score (out of 800) on the verbal portion of the SAT exam</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>GPA</code> </td><td style="text-align: left;"> Grade point average (0.0-4.0 scale)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>In recent years many colleges have re-examined the traditional role the scores on the Scholastic
+Aptitude Tests (SAT's) play in making decisions on which students to admit. Do SAT scores really
+help predict success in college? To investigate this question a group of 24 introductory statistics students supplied the data in this dataset showing their score on the Verbal and Math portions of the SAT
+as well as their current grade point average (GPA) on a 0.0-4.0 scale.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Student survey in an introductory statistics course.
+</p>
+
+
+</div>
+</body></html>

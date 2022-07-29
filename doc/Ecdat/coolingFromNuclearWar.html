@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><title>R: Global cooling from a nuclear war</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>coolingFromNuclearWar</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Global cooling from a nuclear war</h2>
+
+<h3>Description</h3>
+
+<p>Average surface temperature changes 
+world wide and in the Northern Hemisphere
+3 and 10 years after the injections of 5, 
+50 and 150 Tg (teragrams = millions of 
+metric tons) of smoke into the upper 
+troposphere, per Robock, Oman, and 
+Stenchikov (2007).
+</p>
+<p>These numbers are relative to the 
+average for 1925-1975, which explains why 
+the numbers are positive with smoke = 0.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(coolingFromNuclearWar)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataframe containing :
+</p>
+
+<dl>
+<dt>smoke</dt><dd><p>teragrams = millions of metric tons</p>
+</dd>
+<dt>dC3g, dC10g, dC3n, dC10n</dt><dd>
+<p>average change in surface temperature 3 and 
+10 years after injection of <code>smoke</code> into 
+the upper troposphere globally (<code>g</code>) or in 
+the Northern Hemisphere (<code>n</code>) in degrees 
+Celsius.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Alan Robock, Luke Oman, and Georgiy L. Stenchikov
+(2007) Nuclear winter revisited with a modern
+climate model and current nuclear arsenals: Still
+catastrophic consequences, 
+<em>Journal of Geophysical Research</em>, 112
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(coolingFromNuclearWar)
+matplot(coolingFromNuclearWar[, 'smoke'], 
+    coolingFromNuclearWar[, 2:5], type='l')
+(linFit &lt;- lm(cbind(dC3g, dC10g, dC3n, dC10n)~smoke, 
+      coolingFromNuclearWar))
+      
+# total change 
+dC &lt;- as.matrix(coolingFromNuclearWar[, 2:5] - 
+        rep(unlist(coolingFromNuclearWar[1, -1]), e=4))
+(linFit0 &lt;- lm(dC~smoke, coolingFromNuclearWar))
+summary(linFit0)
+</code></pre>
+
+
+</div>
+</body></html>

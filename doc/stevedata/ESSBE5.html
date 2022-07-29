@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: Trust in the Police in Belgium (European Social Survey, Round...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ESSBE5</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Trust in the Police in Belgium (European Social Survey, Round 5)</h2>
+
+<h3>Description</h3>
+
+<p>This is a sample data set cobbled from the fifth round of
+European Social Survey data for Belgium. It offers a means to do a
+basic replication of some of Chapter 5 of The SAGE Handbook of
+Regression Analysis and Causal Inference.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ESSBE5
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1704 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt><code>essround</code></dt><dd><p>a numeric for the ESS round</p>
+</dd>
+<dt><code>edition</code></dt><dd><p>a character for the edition number of the fifth round</p>
+</dd>
+<dt><code>idno</code></dt><dd><p>a numeric id number</p>
+</dd>
+<dt><code>cntry</code></dt><dd><p>a character vector for the country (i.e. Belgium, or <code>BE</code>)</p>
+</dd>
+<dt><code>trstplc</code></dt><dd><p>a numeric vector for trust in the police on an 11-point scale. Higher values indicate more trust. 0 = &quot;no trust at all&quot;. 10 = &quot;complete trust&quot;</p>
+</dd>
+<dt><code>agea</code></dt><dd><p>a numeric vector for the respondent's age</p>
+</dd>
+<dt><code>female</code></dt><dd><p>a numeric vector for whether the respondent is a woman or not.</p>
+</dd>
+<dt><code>eduyrs</code></dt><dd><p>a numeric vector for years of education.</p>
+</dd>
+<dt><code>hincfel</code></dt><dd><p>a numeric vector for the respondent's feeling about their household income. 1 = &quot;living comfortably&quot;, 2 = &quot;coping on present income&quot;, 3 = &quot;difficult on present income&quot;, 4 = &quot;very difficult on present income&quot;</p>
+</dd>
+<dt><code>plcpvcr</code></dt><dd><p>a numeric vector for how successful police are at preventing crimes in a country on an 11-point scale. 0 = &quot;extremely unsuccessful&quot;. 10  = &quot;extremely successful.&quot;</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>See Chapter 5 of The SAGE Handbook of Regression Analysis and Causal Inference for more information.
+</p>
+
+
+<h3>Source</h3>
+
+<p>European Social Survey (Round 5)
+</p>
+
+
+</div>
+</body></html>

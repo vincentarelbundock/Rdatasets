@@ -1,0 +1,227 @@
+<!DOCTYPE html><html><head><title>R: Loan data from Lending Club</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>loans_full_schema</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Loan data from Lending Club</h2>
+
+<h3>Description</h3>
+
+<p>This data set represents thousands of loans made through the Lending Club
+platform, which is a platform that allows individuals to lend to other
+individuals. Of course, not all loans are created equal. Someone who is a
+essentially a sure bet to pay back a loan will have an easier time getting a
+loan with a low interest rate than someone who appears to be riskier. And
+for people who are very risky? They may not even get a loan offer, or they
+may not have accepted the loan offer due to a high interest rate. It is
+important to keep that last part in mind, since this data set only
+represents loans actually made, i.e. do not mistake this data for loan
+applications!
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>loans_full_schema
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 10,000 observations on the following 55 variables.
+</p>
+
+<dl>
+<dt>emp_title</dt><dd><p>Job title.</p>
+</dd>
+<dt>emp_length</dt><dd><p>Number of years in the job, rounded down.
+If longer than 10 years, then this is represented by the value
+<code>10</code>.</p>
+</dd>
+<dt>state</dt><dd><p>Two-letter state code.</p>
+</dd>
+<dt>homeownership</dt><dd><p>The ownership status of the
+applicant's residence.</p>
+</dd>
+<dt>annual_income</dt><dd><p>Annual income.</p>
+</dd>
+<dt>verified_income</dt><dd><p>Type of verification
+of the applicant's income.</p>
+</dd>
+<dt>debt_to_income</dt><dd><p>Debt-to-income ratio.</p>
+</dd>
+<dt>annual_income_joint</dt><dd><p>If this is a joint application,
+then the annual income of the two parties applying.</p>
+</dd>
+<dt>verification_income_joint</dt><dd><p>Type of verification of
+the joint income.</p>
+</dd>
+<dt>debt_to_income_joint</dt><dd><p>Debt-to-income ratio for the
+two parties.</p>
+</dd>
+<dt>delinq_2y</dt><dd><p>Delinquencies on lines of credit in the
+last 2 years.</p>
+</dd>
+<dt>months_since_last_delinq</dt><dd><p>Months since the last
+delinquency.</p>
+</dd>
+<dt>earliest_credit_line</dt><dd><p>Year of the applicant's
+earliest line of credit</p>
+</dd>
+<dt>inquiries_last_12m</dt><dd><p>Inquiries into the applicant's
+credit during the last 12 months.</p>
+</dd>
+<dt>total_credit_lines</dt><dd><p>Total number of credit lines
+in this applicant's credit history.</p>
+</dd>
+<dt>open_credit_lines</dt><dd><p>Number of currently open lines
+of credit.</p>
+</dd>
+<dt>total_credit_limit</dt><dd><p>Total available credit, e.g.
+if only credit cards, then the total of all the credit limits.
+This excludes a mortgage.</p>
+</dd>
+<dt>total_credit_utilized</dt><dd><p>Total credit balance,
+excluding a mortgage.</p>
+</dd>
+<dt>num_collections_last_12m</dt><dd><p>Number of collections
+in the last 12 months. This excludes medical collections.</p>
+</dd>
+<dt>num_historical_failed_to_pay</dt><dd><p>The number of
+derogatory public records, which roughly means the
+number of times the applicant failed to pay.</p>
+</dd>
+<dt>months_since_90d_late</dt><dd><p>Months since the last time
+the applicant was 90 days late on a payment.</p>
+</dd>
+<dt>current_accounts_delinq</dt><dd><p>Number of accounts where
+the applicant is currently delinquent.</p>
+</dd>
+<dt>total_collection_amount_ever</dt><dd><p>The total amount
+that the applicant has had against them in collections.</p>
+</dd>
+<dt>current_installment_accounts</dt><dd><p>Number of installment
+accounts, which are (roughly) accounts with a fixed payment
+amount and period. A typical example might be a 36-month
+car loan.</p>
+</dd>
+<dt>accounts_opened_24m</dt><dd><p>Number of new lines of credit
+opened in the last 24 months.</p>
+</dd>
+<dt>months_since_last_credit_inquiry</dt><dd><p>Number of months
+since the last credit inquiry on this applicant.</p>
+</dd>
+<dt>num_satisfactory_accounts</dt><dd><p>Number of satisfactory
+accounts.</p>
+</dd>
+<dt>num_accounts_120d_past_due</dt><dd><p>Number of current
+accounts that are 120 days past due.</p>
+</dd>
+<dt>num_accounts_30d_past_due</dt><dd><p>Number of current
+accounts that are 30 days past due.</p>
+</dd>
+<dt>num_active_debit_accounts</dt><dd><p>Number of currently
+active bank cards.</p>
+</dd>
+<dt>total_debit_limit</dt><dd><p>Total of all bank card limits.</p>
+</dd>
+<dt>num_total_cc_accounts</dt><dd><p>Total number of credit card
+accounts in the applicant's history.</p>
+</dd>
+<dt>num_open_cc_accounts</dt><dd><p>Total number of currently
+open credit card accounts.</p>
+</dd>
+<dt>num_cc_carrying_balance</dt><dd><p>Number of credit cards
+that are carrying a balance.</p>
+</dd>
+<dt>num_mort_accounts</dt><dd><p>Number of mortgage accounts.</p>
+</dd>
+<dt>account_never_delinq_percent</dt><dd><p>Percent of all lines
+of credit where the applicant was never delinquent.</p>
+</dd>
+<dt>tax_liens</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>public_record_bankrupt</dt><dd><p>Number of bankruptcies
+listed in the public record for this applicant.</p>
+</dd>
+<dt>loan_purpose</dt><dd><p>The category for the purpose
+of the loan.</p>
+</dd>
+<dt>application_type</dt><dd><p>The type of application: either
+<code>individual</code> or <code>joint</code>.</p>
+</dd>
+<dt>loan_amount</dt><dd><p>The amount of the loan the
+applicant received.</p>
+</dd>
+<dt>term</dt><dd><p>The number of months of the loan
+the applicant received.</p>
+</dd>
+<dt>interest_rate</dt><dd><p>Interest rate of the loan
+the applicant received.</p>
+</dd>
+<dt>installment</dt><dd><p>Monthly payment for the loan the
+applicant received.</p>
+</dd>
+<dt>grade</dt><dd><p>Grade associated with the loan.</p>
+</dd>
+<dt>sub_grade</dt><dd><p>Detailed grade associated with the loan.</p>
+</dd>
+<dt>issue_month</dt><dd><p>Month the loan was issued.</p>
+</dd>
+<dt>loan_status</dt><dd><p>Status of the loan.</p>
+</dd>
+<dt>initial_listing_status</dt><dd><p>Initial listing status
+of the loan. (I think this has to do with whether the
+lender provided the entire loan or if the loan is across
+multiple lenders.)</p>
+</dd>
+<dt>disbursement_method</dt><dd><p>Dispersement method of the loan.</p>
+</dd>
+<dt>balance</dt><dd><p>Current balance on the loan.</p>
+</dd>
+<dt>paid_total</dt><dd><p>Total that has been paid on the loan by the
+applicant.</p>
+</dd>
+<dt>paid_principal</dt><dd><p>The difference between the original loan
+amount and the current balance on the loan.</p>
+</dd>
+<dt>paid_interest</dt><dd><p>The amount of interest paid so far by the
+applicant.</p>
+</dd>
+<dt>paid_late_fees</dt><dd><p>Late fees paid by the applicant.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>This data comes from Lending Club
+(<a href="https://www.lendingclub.com/info/statistics.action">https://www.lendingclub.com/info/statistics.action</a>), which
+provides a very large, open set of data on the people who received loans
+through their platform.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+loans_full_schema
+</code></pre>
+
+
+</div>
+</body></html>

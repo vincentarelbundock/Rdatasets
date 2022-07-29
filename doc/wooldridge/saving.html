@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: saving</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>saving</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>saving</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Unknown Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('saving')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 100 observations on 7 variables:
+</p>
+
+<ul>
+<li> <p><strong>sav:</strong> annual savings, $
+</p>
+</li>
+<li> <p><strong>inc:</strong> annual income, $
+</p>
+</li>
+<li> <p><strong>size:</strong> family size
+</p>
+</li>
+<li> <p><strong>educ:</strong> years educ, household head
+</p>
+</li>
+<li> <p><strong>age:</strong> age of household head
+</p>
+</li>
+<li> <p><strong>black:</strong> =1 if household head is black
+</p>
+</li>
+<li> <p><strong>cons:</strong> annual consumption, $
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>I remember entering this data set in the late 1980s, and I am pretty sure it came directly from an introductory econometrics text. But so far my search has been fruitless. If anyone runs across this data set, I would appreciate knowing about it.
+</p>
+<p>Used in Text: not used
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(saving)
+</code></pre>
+
+
+</div>
+</body></html>

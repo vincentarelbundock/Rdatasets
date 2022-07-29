@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><title>R: Tasting experiment that compared four apple varieties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>appletaste</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Tasting experiment that compared four apple varieties</h2>
+
+<h3>Description</h3>
+
+<p>Each of 20 tasters each assessed three out of the four varieties.
+The experiment was conducted according to a balanced incomplete
+block design.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(appletaste)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 60 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt>aftertaste</dt><dd><p>a numeric vector</p>
+</dd></dl>
+<p> Apple samples were rated for
+<code>aftertaste</code>, by making a mark on a continuous scale that
+ranged from 0 (extreme dislike) to 150 (like very much).
+</p>
+<dl>
+<dt>panelist</dt><dd><p>a factor with levels <code>a</code> <code>b</code> <code>c</code> <code>d</code> <code>e</code> <code>f</code> <code>g</code> <code>h</code> <code>i</code> <code>j</code> <code>k</code> <code>l</code> <code>m</code> <code>n</code> <code>o</code> <code>p</code> <code>q</code> <code>r</code> <code>s</code> <code>t</code></p>
+</dd>
+<dt>product</dt><dd><p>a factor with levels <code>298</code> <code>493</code> <code>649</code> <code>937</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(appletaste)
+appletaste.aov &lt;- aov(aftertaste ~ panelist + product, data=appletaste)
+termplot(appletaste.aov)
+</code></pre>
+
+
+</div>
+</body></html>

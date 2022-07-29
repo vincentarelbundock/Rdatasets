@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><title>R: Alfalfa Growth</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Alfalfa</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Alfalfa Growth
+</h2>
+
+<h3>Description</h3>
+
+<p>Growth of alfalfa sprouts in acidic conditions
+</p>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 15 observations on the following 3 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>Ht4</code> </td><td style="text-align: left;"> Height of alfalfa sprouts after four days</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Acid</code> </td><td style="text-align: left;"> Amount of acid: <code>1.5HCl</code>, <code>3.0HCl</code>, or <code>water</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Row</code> </td><td style="text-align: left;"> <code>a</code> through <code>e</code> with <code>a</code>= closest to window and  <code>e</code>=farthest from window</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>Some students were interested in how an acidic environment might affect
+the growth of plants. They planted alfalfa seeds in 15 cups and randomly chose five to get plain
+water, five to get a moderate amount of acid (1.5M HCl), and five to get a stronger acid solution
+(3.0M HCl). The plants were grown in an indoor room so the students assumed that the distance
+from the main source of daylight (windows) might have an affect on growth rates. For this reason,
+they arranged the cups in five rows of three with one cup from each Acid level in each row. These
+are labeled in the data set as Row: a=farthest from the window through e=nearest to the window.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Neumann, A., Richards, A. L., and Randa, J. (2001).
+Effects of acid rain on alfalfa plants. Unpublished manuscript, Oberlin College.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Alfalfa)
+</code></pre>
+
+
+</div>
+</body></html>

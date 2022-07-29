@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head><title>R: Standard Deck of Cards</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Cards</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Standard Deck of Cards</h2>
+
+<h3>Description</h3>
+
+<p>A character vector with two or three character representations of
+each card in a standard 52-card deck.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Cards
+</code></pre>
+
+
+<h3>Details</h3>
+
+<p>The 2 of clubs is represented as &quot;2C&quot;, while the 10 of diamonds is &quot;10D&quot;.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>if (require(mosaic)) {
+  deal(Cards, 13)        # bridge hand
+  deal(Cards, 5)         # poker hand
+  shuffle(Cards)         # shuffled deck
+}
+
+</code></pre>
+
+
+</div>
+</body></html>

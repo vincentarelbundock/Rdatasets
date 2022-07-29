@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: smoking</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>smoking</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>smoking</h2>
+
+<h3>Description</h3>
+
+<p>A simple data set with only 6 observations. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(smoking)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 6 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>sbp</code></dt><dd><p>systolic blood pressure of subject</p>
+</dd>
+<dt><code>male</code></dt><dd><p>1=male; 0=female</p>
+</dd>
+<dt><code>smoker</code></dt><dd><p>1=hist of smoking; 0= no hist of smoking</p>
+</dd>
+<dt><code>age</code></dt><dd><p>age of subject</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>smoking is saved as a data frame.
+</p>
+
+
+<h3>Source</h3>
+
+<p>none 
+</p>
+
+
+<h3>References</h3>
+
+<p>Hilbe, Joseph M (2014), Modeling Count Data, Cambridge University Press
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>sbp    &lt;- c(131,132,122,119,123,115)
+male   &lt;- c(1,1,1,0,0,0)
+smoker &lt;- c(1,1,0,0,1,0)
+age    &lt;- c(34,36,30,32,26,23)
+summary(reg1 &lt;- lm(sbp~ male+smoker+age))
+</code></pre>
+
+
+</div>
+</body></html>

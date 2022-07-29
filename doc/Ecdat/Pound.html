@@ -1,0 +1,96 @@
+<!DOCTYPE html><html><head><title>R: Pound-dollar Exchange Rate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Pound</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Pound-dollar Exchange Rate </h2>
+
+<h3>Description</h3>
+
+<p>weekly observations from 1975 to 1989
+</p>
+<p><em>number of observations</em> :  778
+</p>
+<p><em>observation</em> :  country
+</p>
+<p><em>country</em> :  Germany
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Pound)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataframe containing :
+</p>
+
+<dl>
+<dt>date</dt><dd>
+<p>the date of the observation (19850104 
+is January, 4, 1985)
+</p>
+</dd>
+<dt>s</dt><dd>
+<p>the ask price of the dollar in units of 
+Pound in the spot market on Friday of 
+the current week
+</p>
+</dd>
+<dt>f</dt><dd>
+<p>the ask price of the dollar in units of 
+Pound in the 30-day forward market on 
+Friday of the current week
+</p>
+</dd>
+<dt>s30</dt><dd>
+<p>the bid price of the dollar in units of 
+Pound in the spot market on the delivery 
+date on a current forward contract
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Bekaert, G.  and  R.  Hodrick (1993) &ldquo;On biases in the measurement of foreign exchange risk premiums&rdquo;, <em>Journal of International Money and Finance</em>, <b>12</b>, 115-138.
+</p>
+
+
+<h3>References</h3>
+
+<p>Hayashi, F. (2000) <em>Econometrics</em>, Princeton University Press, <a href="http://fhayashi.fc2web.com/hayashi_econometrics.htm">http://fhayashi.fc2web.com/hayashi_econometrics.htm</a>, chapter 6, 438-443.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>DM</code>, 
+<code>Yen</code>, 
+<code>Index.Source</code>, 
+<code>Index.Economics</code>, 
+<code>Index.Econometrics</code>, 
+<code>Index.Observations</code>,
+<code>Index.Time.Series</code>
+</p>
+
+
+</div>
+</body></html>

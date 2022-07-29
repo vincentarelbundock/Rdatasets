@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><title>R: Occupational Status of Fathers and their Sons</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>occupationalStatus</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Occupational Status of Fathers and their Sons</h2>
+
+<h3>Description</h3>
+
+<p>Cross-classification of a sample of British males according to each
+subject's occupational status and his father's occupational status.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>occupationalStatus</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>table</code> of counts, with classifying factors
+<code>origin</code> (father's occupational status; levels <code>1:8</code>)
+and <code>destination</code> (son's occupational status; levels <code>1:8</code>).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Goodman, L. A. (1979)
+Simple Models for the Analysis of Association in Cross-Classifications
+having Ordered Categories.
+<em>J. Am. Stat. Assoc.</em>, <b>74</b> (367), 537&ndash;552.
+</p>
+<p>The data set has been in package <a href="https://CRAN.R-project.org/package=gnm"><span class="pkg">gnm</span></a> and been provided by the
+package authors.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>require(stats); require(graphics)
+
+plot(occupationalStatus)
+
+##  Fit a uniform association model separating diagonal effects
+Diag &lt;- as.factor(diag(1:8))
+Rscore &lt;- scale(as.numeric(row(occupationalStatus)), scale = FALSE)
+Cscore &lt;- scale(as.numeric(col(occupationalStatus)), scale = FALSE)
+modUnif &lt;- glm(Freq ~ origin + destination + Diag + Rscore:Cscore,
+               family = poisson, data = occupationalStatus)
+
+summary(modUnif)
+plot(modUnif) # 4 plots, with warning about  h_ii ~= 1
+</code></pre>
+
+
+</div>
+</body></html>

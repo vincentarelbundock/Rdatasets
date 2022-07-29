@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><title>R: Strike Duration Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Strike</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Strike Duration Data </h2>
+
+<h3>Description</h3>
+
+<p>a cross-section from 1968 to 1976
+</p>
+<p><em>number of observations</em> :  62
+</p>
+<p><em>country</em> :  United States
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Strike)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataframe containing :
+</p>
+
+<dl>
+<dt>duration</dt><dd><p>strike duration in days</p>
+</dd>
+<dt>prod</dt><dd><p>unanticipated output</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Kennan, J. (1985) &ldquo;The duration of contract strikes in U.S. manufacturing&rdquo;, <em>Journal of Econometrics</em>, <b>28</b>, 5-28.
+</p>
+
+
+<h3>References</h3>
+
+<p>Greene, W.H. (2003) <em>Econometric Analysis</em>, Prentice Hall, <a href="https://archive.org/details/econometrics0000haya">https://archive.org/details/econometrics0000haya</a>, Table F22.1.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Index.Source</code>, <code>Index.Economics</code>, <code>Index.Econometrics</code>, <code>Index.Observations</code></p>
+
+
+</div>
+</body></html>

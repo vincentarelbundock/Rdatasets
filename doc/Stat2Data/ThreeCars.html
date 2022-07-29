@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><title>R: Prices of Three Used Car Models (2007)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ThreeCars</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Prices of Three Used Car Models (2007)</h2>
+
+<h3>Description</h3>
+
+<p>Compare prices for Porsche, Jaguar, and BMW cars offered for sale at an internet site
+</p>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 90 observations on the following 8 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>CarType</code> </td><td style="text-align: left;"> <code>BMW</code>, <code>Jaguar</code>, or <code>Porsche</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Price</code> </td><td style="text-align: left;"> Asking price (in $1,000's)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Age</code> </td><td style="text-align: left;"> Age of the car (in years)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Mileage</code> </td><td style="text-align: left;"> previous miles driven (in 1,000's)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Car</code> </td><td style="text-align: left;"> <code>0</code>=Porsche, <code>1</code>=Jaguar, <code>2</code>=BMW</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Porsche</code> </td><td style="text-align: left;"> Indicator with <code>1</code>= Porsche and <code>0</code>=otherwise</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Jaguar</code> </td><td style="text-align: left;"> Indicator with <code>1</code>= Jaguar and <code>0</code>=otherwise</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>BMW</code> </td><td style="text-align: left;"> Indicator with <code>1</code>= BMW and <code>0</code>=otherwise</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>Two students collected samples of Porsche, Jaguar, and BMW cars that were offered for sale at an internet site.
+In addition to asking price, they recorded the model year (converting to age) and mileage of each advertised car.
+The PorschePrice dataset (from the first edition) has only the Porsche data and the PorscheJaguar dataset has the data for those two models.
+</p>
+<p>This dataset has been updated (with different car models) to ThreeCars2017 for the second edition.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Student project data collected from autotrader.com in Spring 2007.
+</p>
+
+
+</div>
+</body></html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html><html><head><title>R: crime2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>crime2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>crime2</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: These data were collected by David Dicicco, a former MSU undergraduate, for a final project. They came from various issues of the County and City Data Book, and are for the years 1982 and 1985. Unfortunately, I do not have the list of cities. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('crime2')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 92 observations on 34 variables:
+</p>
+
+<ul>
+<li> <p><strong>pop:</strong> population
+</p>
+</li>
+<li> <p><strong>crimes:</strong> total number index crimes
+</p>
+</li>
+<li> <p><strong>unem:</strong> unemployment rate
+</p>
+</li>
+<li> <p><strong>officers:</strong> number police officers
+</p>
+</li>
+<li> <p><strong>pcinc:</strong> per capita income
+</p>
+</li>
+<li> <p><strong>west:</strong> =1 if city in west
+</p>
+</li>
+<li> <p><strong>nrtheast:</strong> =1 if city in NE
+</p>
+</li>
+<li> <p><strong>south:</strong> =1 if city in south
+</p>
+</li>
+<li> <p><strong>year:</strong> 82 or 87
+</p>
+</li>
+<li> <p><strong>area:</strong> land area, square miles
+</p>
+</li>
+<li> <p><strong>d87:</strong> =1 if year = 87
+</p>
+</li>
+<li> <p><strong>popden:</strong> people per sq mile
+</p>
+</li>
+<li> <p><strong>crmrte:</strong> crimes per 1000 people
+</p>
+</li>
+<li> <p><strong>offarea:</strong> officers per sq mile
+</p>
+</li>
+<li> <p><strong>lawexpc:</strong> law enforce. expend. pc, $
+</p>
+</li>
+<li> <p><strong>polpc:</strong> police per 1000 people
+</p>
+</li>
+<li> <p><strong>lpop:</strong> log(pop)
+</p>
+</li>
+<li> <p><strong>loffic:</strong> log(officers)
+</p>
+</li>
+<li> <p><strong>lpcinc:</strong> log(pcinc)
+</p>
+</li>
+<li> <p><strong>llawexpc:</strong> log(lawexpc)
+</p>
+</li>
+<li> <p><strong>lpopden:</strong> log(popden)
+</p>
+</li>
+<li> <p><strong>lcrimes:</strong> log(crimes)
+</p>
+</li>
+<li> <p><strong>larea:</strong> log(area)
+</p>
+</li>
+<li> <p><strong>lcrmrte:</strong> log(crmrte)
+</p>
+</li>
+<li> <p><strong>clcrimes:</strong> change in lcrimes
+</p>
+</li>
+<li> <p><strong>clpop:</strong> change in lpop
+</p>
+</li>
+<li> <p><strong>clcrmrte:</strong> change in lcrmrte
+</p>
+</li>
+<li> <p><strong>lpolpc:</strong> log(polpc)
+</p>
+</li>
+<li> <p><strong>clpolpc:</strong> change in lpolpc
+</p>
+</li>
+<li> <p><strong>cllawexp:</strong> change in llawexp
+</p>
+</li>
+<li> <p><strong>cunem:</strong> change in unem
+</p>
+</li>
+<li> <p><strong>clpopden:</strong> change in lpopden
+</p>
+</li>
+<li> <p><strong>lcrmrt_1:</strong> lcrmrte lagged
+</p>
+</li>
+<li> <p><strong>ccrmrte:</strong> change in crmrte
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>Very rich crime data sets, at the county, or even city, level, can be collected using the FBI’s Uniform Crime Reports. These data can be matched up with demographic and economic data, at least for census years. The County and City Data Book contains a variety of statistics, but the years do not always match up. These data sets can be used investigate issues such as the effects of casinos on city or county crime rates.
+</p>
+<p>Used in Text: pages 313-314, 459-460
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(crime2)
+</code></pre>
+
+
+</div>
+</body></html>

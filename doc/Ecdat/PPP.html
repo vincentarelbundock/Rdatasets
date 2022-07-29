@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: Exchange Rates and Price Indices for France and Italy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>PPP</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Exchange Rates and Price Indices for France and Italy </h2>
+
+<h3>Description</h3>
+
+<p>monthly observations from 1981&ndash;01 to 1996&ndash;06
+</p>
+<p><em>number of observations</em> :  186
+</p>
+<p><em>observation</em> :  country
+</p>
+<p><em>country</em> :  France and Italy
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(PPP)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A time series containing :
+</p>
+
+<dl>
+<dt>lnit</dt><dd><p>log price index Italy</p>
+</dd>
+<dt>lnfr</dt><dd><p>log price index France</p>
+</dd>
+<dt>lnx</dt><dd><p> log exchange rate France/Italy</p>
+</dd>
+<dt>cpiit</dt><dd><p>consumer price index Italy</p>
+</dd>
+<dt>cpifr</dt><dd><p>consumer price index France</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><code>Datastream</code>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Verbeek, Marno (2004) <em>A Guide to Modern Econometrics</em>, John Wiley and Sons, chapters 8 and 9.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Index.Source</code>, <code>Index.Economics</code>, <code>Index.Econometrics</code>, <code>Index.Observations</code>,
+</p>
+<p><code>Index.Time.Series</code></p>
+
+
+</div>
+</body></html>

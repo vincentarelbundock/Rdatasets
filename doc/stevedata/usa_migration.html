@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: U.S. Inbound/Outbound Migration Data, 1990-2017</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>usa_migration</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>U.S. Inbound/Outbound Migration Data, 1990-2017</h2>
+
+<h3>Description</h3>
+
+<p>This data set contains counts/estimates for the number of inbound migrants
+in the U.S as well as outbound migrants of American origin to other countries
+from 1990 to 2017.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>usa_migration
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3535 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>a numeric vector for 1990, 1995, 2000, 2005, 2010, 2015, 2017</p>
+</dd>
+<dt><code>country</code></dt><dd><p>a character vector/constant for the United States</p>
+</dd>
+<dt><code>category</code></dt><dd><p>a character vector for whether the <code>count</code> is inbound to the U.S. from the <code>area</code> variable or outbound (i.e. American expats) to the  <code>area</code>  variable in a given year.</p>
+</dd>
+<dt><code>area</code></dt><dd><p>a character vector for the area of origin (if <code>category</code> == &quot;Inbound&quot;) or destination for American migrants (if <code>category</code> == &quot;Outbound&quot;)</p>
+</dd>
+<dt><code>count</code></dt><dd><p>a numeric vector for the count of inbound/outbound migrants</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>&quot;Cote d'Ivoire&quot;, &quot;Curacao&quot;, and &quot;Reunion&quot; originally had UTF-8
+characters, which were removed for maximal compliance with CRAN. CRAN
+raises a note for every non-ASCII character it sees.
+</p>
+
+
+<h3>Source</h3>
+
+<p>United Nations Population Division (DESA)
+</p>
+
+
+</div>
+</body></html>

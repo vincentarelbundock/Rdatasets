@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><title>R: Weight of dimes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Dimes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Weight of dimes</h2>
+
+<h3>Description</h3>
+
+<p>Weights of a sample of dimes.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Dimes)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 30 observations on the following 2 variables.
+</p>
+
+<ul>
+<li><p><code>mass</code> mass of dime in grams
+</p>
+</li>
+<li><p><code>year</code> year the dime was minted
+</p>
+</li></ul>
+
+
+
+<h3>Details</h3>
+
+<p>These data were collected on a sample taken from a large sack of dimes
+for the purpose of estimating the total number of dimes in the sack based on the
+weights of the individual dimes.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data were collected by Michael Stob.
+</p>
+
+
+</div>
+</body></html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><title>R: Bollen's Data on Industrialization and Political Democracy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Bollen</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Bollen's Data on Industrialization and Political Democracy
+</h2>
+
+<h3>Description</h3>
+
+<p>This data set includes four measures of democracy at two points in
+time, 1960 and 1965, and three measures of industrialization in 1960,
+for 75 developing countries.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Bollen</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 75 observations on the following 11 variables.
+</p>
+
+<dl>
+<dt><code>y1</code></dt><dd><p>freedom of the press, 1960</p>
+</dd>
+<dt><code>y2</code></dt><dd><p>freedom of political opposition, 1960</p>
+</dd>
+<dt><code>y3</code></dt><dd><p>fairness of elections, 1960</p>
+</dd>
+<dt><code>y4</code></dt><dd><p>effectivness of elected legislature, 1960</p>
+</dd>
+<dt><code>y5</code></dt><dd><p>freedom of the press, 1965</p>
+</dd>
+<dt><code>y6</code></dt><dd><p>freedom of political opposition, 1965</p>
+</dd>
+<dt><code>y7</code></dt><dd><p>fairness of elections, 1965</p>
+</dd>
+<dt><code>y8</code></dt><dd><p>effectivness of elected legislature, 1965</p>
+</dd>
+<dt><code>x1</code></dt><dd><p>GNP per capita, 1960</p>
+</dd>
+<dt><code>x2</code></dt><dd><p>energy consumption per capita, 1960</p>
+</dd>
+<dt><code>x3</code></dt><dd><p>percentage of labor force in industry, 1960</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Variables <code>y1</code> through <code>y4</code> are intended to be indicators of the latent variable <em>political democracy in 1960</em>;
+<code>y5</code> through <code>y8</code> indicators of <em>political democracy in 1965</em>; and
+<code>x1</code> through <code>x3</code> indicators of <em>industrialization in 1960</em>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>personal communication from Ken Bollen.
+</p>
+
+
+<h3>References</h3>
+
+<p>Bollen, K. A. (1989) <em>Structural Equations With Latent Variables</em>. Wiley. 
+</p>
+
+
+</div>
+</body></html>

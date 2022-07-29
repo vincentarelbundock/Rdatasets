@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><title>R: Number of Doctor Visits</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Doctor</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Number of Doctor Visits </h2>
+
+<h3>Description</h3>
+
+<p>a cross-section from 1986
+</p>
+<p><em>number of observations</em> :  485
+</p>
+<p><em>observation</em> :  individuals
+</p>
+<p><em>country</em> :  United States
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Doctor)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataframe containing :
+</p>
+
+<dl>
+<dt>doctor</dt><dd><p>the number of doctor visits</p>
+</dd>
+<dt>children</dt><dd><p>the number of children in the household</p>
+</dd>
+<dt>access</dt><dd><p>is a measure of access to health care</p>
+</dd>
+<dt>health</dt><dd><p>a measure of health status (larger positive numbers are  associated with poorer health)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Gurmu, Shiferaw (1997) &ldquo;Semiparametric estimation of hurdle regression models with an application to medicaid utilization&rdquo;, <em>Journal of Applied Econometrics</em>, <b>12(3)</b>, 225-242.
+</p>
+
+
+<h3>References</h3>
+
+<p>Davidson, R.  and  James G.  MacKinnon (2004) <em>Econometric Theory and Methods</em>, New York, Oxford University Press, chapter 11.
+</p>
+<p>Journal of Applied Econometrics data archive : <a href="http://qed.econ.queensu.ca/jae/">http://qed.econ.queensu.ca/jae/</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>DoctorContacts</code>, 
+<code>DoctorAUS</code>, 
+<code>Index.Source</code>, 
+<code>Index.Economics</code>, 
+<code>Index.Econometrics</code>, 
+<code>Index.Observations</code>
+</p>
+
+
+</div>
+</body></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head><title>R: Determinants of Economic Growth</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>GrowthSW</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Determinants of Economic Growth</h2>
+
+<h3>Description</h3>
+
+<p>Data on average growth rates over 1960&ndash;1995 for 65 countries, along with
+variables that are potentially related to growth.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("GrowthSW")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 65 observations on 6 variables.
+</p>
+
+<dl>
+<dt>growth</dt><dd><p>average annual percentage growth of real GDP from 1960 to 1995.</p>
+</dd>
+<dt>rgdp60</dt><dd><p>value of GDP per capita in 1960, converted to 1960 US dollars.</p>
+</dd>
+<dt>tradeshare</dt><dd><p>average share of trade in the economy from 1960 to 1995, 
+measured as the sum of exports (X) plus imports (M), divided by GDP;
+that is, the average value of (X + M)/GDP from 1960 to 1995.</p>
+</dd>
+<dt>education</dt><dd><p>average number of years of schooling of adult residents in that country in 1960.</p>
+</dd>
+<dt>revolutions</dt><dd><p>average annual number of revolutions, 
+insurrections (successful or not) and coup d'etats in that country from 1960 to 1995.</p>
+</dd>
+<dt>assassinations</dt><dd><p>average annual number of political assassinations 
+in that country from 1960 to 1995 (in per million population).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>Beck, T., Levine, R., and Loayza, N. (2000). Finance and the Sources of Growth.
+<em>Journal of Financial Economics</em>, <b>58</b>, 261&ndash;300.
+</p>
+<p>Stock, J. H. and Watson, M. W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code>, <code>GrowthDJ</code>, <code>OECDGrowth</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("GrowthSW")
+summary(GrowthSW)
+</code></pre>
+
+
+</div>
+</body></html>

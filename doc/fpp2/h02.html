@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head><title>R: Monthly corticosteroid drug subsidy in Australia from 1991 to...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>h02</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Monthly corticosteroid drug subsidy in Australia from 1991 to 2008.</h2>
+
+<h3>Description</h3>
+
+<p>Monthly government expenditure (millions of dollars) as part of the
+Pharmaceutical Benefit Scheme for products falling under ATC code H02
+as recorded by the Australian Health Insurance Commission.
+July 1991 - June 2008.
+</p>
+
+
+<h3>Format</h3>
+
+<p>Monthly time series of class <code>ts</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Medicare Australia
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+autoplot(h02)
+ggseasonplot(h02)
+
+</code></pre>
+
+
+</div>
+</body></html>

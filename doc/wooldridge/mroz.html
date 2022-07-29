@@ -1,0 +1,127 @@
+<!DOCTYPE html><html><head><title>R: mroz</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>mroz</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>mroz</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: T.A. Mroz (1987), “The Sensitivity of an Empirical Model of Married Women’s Hours of Work to Economic and Statistical Assumptions,” Econometrica 55, 765-799. Professor Ernst R. Berndt, of MIT, kindly provided the data, which he obtained from Professor Mroz. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('mroz')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 753 observations on 22 variables:
+</p>
+
+<ul>
+<li> <p><strong>inlf:</strong> =1 if in lab frce, 1975
+</p>
+</li>
+<li> <p><strong>hours:</strong> hours worked, 1975
+</p>
+</li>
+<li> <p><strong>kidslt6:</strong> # kids &lt; 6 years
+</p>
+</li>
+<li> <p><strong>kidsge6:</strong> # kids 6-18
+</p>
+</li>
+<li> <p><strong>age:</strong> woman's age in yrs
+</p>
+</li>
+<li> <p><strong>educ:</strong> years of schooling
+</p>
+</li>
+<li> <p><strong>wage:</strong> est. wage from earn, hrs
+</p>
+</li>
+<li> <p><strong>repwage:</strong> rep. wage at interview in 1976
+</p>
+</li>
+<li> <p><strong>hushrs:</strong> hours worked by husband, 1975
+</p>
+</li>
+<li> <p><strong>husage:</strong> husband's age
+</p>
+</li>
+<li> <p><strong>huseduc:</strong> husband's years of schooling
+</p>
+</li>
+<li> <p><strong>huswage:</strong> husband's hourly wage, 1975
+</p>
+</li>
+<li> <p><strong>faminc:</strong> family income, 1975
+</p>
+</li>
+<li> <p><strong>mtr:</strong> fed. marg. tax rte facing woman
+</p>
+</li>
+<li> <p><strong>motheduc:</strong> mother's years of schooling
+</p>
+</li>
+<li> <p><strong>fatheduc:</strong> father's years of schooling
+</p>
+</li>
+<li> <p><strong>unem:</strong> unem. rate in county of resid.
+</p>
+</li>
+<li> <p><strong>city:</strong> =1 if live in SMSA
+</p>
+</li>
+<li> <p><strong>exper:</strong> actual labor mkt exper
+</p>
+</li>
+<li> <p><strong>nwifeinc:</strong> (faminc - wage*hours)/1000
+</p>
+</li>
+<li> <p><strong>lwage:</strong> log(wage)
+</p>
+</li>
+<li> <p><strong>expersq:</strong> exper^2
+</p>
+</li></ul>
+
+
+
+<h3>Used in Text</h3>
+
+<p>pages 249-251, 260, 294, 519-520, 530, 535, 535-536, 565-566, 578-579, 593- 595, 601-603, 619-620, 625
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(mroz)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title>R: Salaries for Professors</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Salaries</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Salaries for Professors
+</h2>
+
+<h3>Description</h3>
+
+<p>The 2008-09 nine-month academic
+salary for Assistant Professors, Associate Professors and Professors in a
+college in the U.S. The data were collected as part of the
+on-going effort of the college's administration to monitor salary differences
+between male and female faculty members. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Salaries</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 397 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>rank</code></dt><dd><p>a factor with levels <code>AssocProf</code> <code>AsstProf</code> <code>Prof</code></p>
+</dd>
+<dt><code>discipline</code></dt><dd><p>a factor with levels <code>A</code> (&ldquo;theoretical&rdquo; departments) 
+or <code>B</code> (&ldquo;applied&rdquo; departments).</p>
+</dd>
+<dt><code>yrs.since.phd</code></dt><dd><p>years since PhD.</p>
+</dd>
+<dt><code>yrs.service</code></dt><dd><p>years of service.</p>
+</dd>
+<dt><code>sex</code></dt><dd><p>a factor with levels <code>Female</code> <code>Male</code></p>
+</dd>
+<dt><code>salary</code></dt><dd><p>nine-month salary, in dollars.</p>
+</dd>
+</dl>
+
+
+
+<h3>References</h3>
+
+<p>Fox J. and Weisberg, S. (2019)
+<em>An R Companion to Applied Regression</em>, Third Edition, Sage.
+</p>
+
+
+</div>
+</body></html>

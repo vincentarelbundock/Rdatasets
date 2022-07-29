@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: Data from Card (1995) to estimate the effect of college...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>close_college</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Data from Card (1995) to estimate the effect of college education on earnings</h2>
+
+<h3>Description</h3>
+
+<p>Data from the National Longitudinal Survey Young Men Cohort. This data is used to estimate the effect of college education on earnings, using the presence of a nearby (in-county) college as an instrument for college attendance.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>close_college
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3010 rows and 8 variables
+</p>
+
+<dl>
+<dt>lwage</dt><dd><p>Log wages</p>
+</dd>
+<dt>educ</dt><dd><p>Years of education</p>
+</dd>
+<dt>exper</dt><dd><p>Years of work experience</p>
+</dd>
+<dt>black</dt><dd><p>Race: Black</p>
+</dd>
+<dt>south</dt><dd><p>In the southern United States</p>
+</dd>
+<dt>married</dt><dd><p>Is married</p>
+</dd>
+<dt>smsa</dt><dd><p>In a Standard Metropolitan Statistical Area (urban)</p>
+</dd>
+<dt>nearc4</dt><dd><p>There is a four-year college in the county</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This data is used in the <em>Instrumental Variables</em> chapter of <em>Causal Inference: The Mixtape</em> by Cunningham.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Card, David. 1995. “Aspects of Labour Economics: Essays in Honour of John Vanderkamp.” In. University of Toronto Press.
+</p>
+
+
+<h3>References</h3>
+
+<p>Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. <a href="https://mixtape.scunning.com/index.html">https://mixtape.scunning.com/index.html</a>.
+</p>
+
+
+</div>
+</body></html>

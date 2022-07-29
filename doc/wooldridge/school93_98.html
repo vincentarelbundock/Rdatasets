@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><title>R: school93_98</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>school93_98</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>school93_98</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: L.E. Papke (2005), “The Effects of Spending on Test Pass Rates: Evidence from Michigan,” Journal of Public Economics 89, 821-839. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('school93_98')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 10668 observations on 18 variables:
+</p>
+
+<ul>
+<li> <p><strong>distid: </strong>
+</p>
+</li>
+<li> <p><strong>schid: </strong>
+</p>
+</li>
+<li> <p><strong>lunch: </strong>percent eligible for free lunch
+</p>
+</li>
+<li> <p><strong>enrol: </strong>number of students
+</p>
+</li>
+<li> <p><strong>exppp: </strong>exp per pupil
+</p>
+</li>
+<li> <p><strong>math4: </strong>
+</p>
+</li>
+<li> <p><strong>year: </strong>1993 = school year 1992-1993
+</p>
+</li>
+<li> <p><strong>y93: </strong>
+</p>
+</li>
+<li> <p><strong>y94: </strong>
+</p>
+</li>
+<li> <p><strong>y95: </strong>
+</p>
+</li>
+<li> <p><strong>y96: </strong>
+</p>
+</li>
+<li> <p><strong>y97: </strong>
+</p>
+</li>
+<li> <p><strong>y98: </strong>
+</p>
+</li>
+<li> <p><strong>rexpp: </strong>(exppp/cpi)1.605:  1997 $
+</p>
+</li>
+<li> <p><strong>found: </strong>
+</p>
+</li>
+<li> <p><strong>lenrol: </strong>log(enrol)
+</p>
+</li>
+<li> <p><strong>lrexpp: </strong>log(rexpp)
+</p>
+</li>
+<li> <p><strong>lavgrexpp: </strong>log((rexpp + L.rexpp)/2)
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>This is closer to the data actually used in the Papke paper as it is at the school (building) level. It is unbalanced because data on scores and some of the spending and other variables is missing for some schools. While the usual RE and FE methods can be applied directly, obtaining the correlated random effects version of the Hausman test is more advance. Computer Exercise 17 in Chapter 14 walks the reader through it.
+</p>
+<p>Used in Text: page 491
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.cengage.com/c/introductory-econometrics-a-modern-approach-7e-wooldridge">http://www.cengage.com/c/introductory-econometrics-a-modern-approach-7e-wooldridge</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(school93_98)
+</code></pre>
+
+
+</div>
+</body></html>

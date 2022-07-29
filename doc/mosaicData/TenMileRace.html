@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: Cherry Blossom Race</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>TenMileRace</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cherry Blossom Race</h2>
+
+<h3>Description</h3>
+
+<p>The Cherry Blossom 10 Mile Run is a road race held in Washington,
+D.C. in April each year.  (The name comes from the famous cherry trees
+that are in bloom in April in Washington.)  The results of this race
+are published.  This data frame  contains the results from the 2005 race.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(TenMileRace)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 8636 observations on the following variables.
+</p>
+
+<ul>
+<li><p><code>state</code> State of residence of runner.
+</p>
+</li>
+<li><p><code>time</code> Official time from starting gun to finish line.
+</p>
+</li>
+<li><p><code>net</code> The recorded time (in seconds) from when the runner crossed the starting
+line to when the runner crossed the finish line.  This is generally
+less than the official time because of the large number of runners in
+the race: it takes time to reach the starting line after the gun has
+gone off.
+</p>
+</li>
+<li><p><code>age</code> Age of runner in years.
+</p>
+</li>
+<li><p><code>sex</code> A factor with levels <code>F</code> <code>M</code>.
+</p>
+</li></ul>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(TenMileRace)
+if (require(ggformula)) {
+  gf_point(net ~ age | sex, data = TenMileRace, color = ~sex, alpha = 0.1) %&gt;%
+  gf_density2d(color = "gray40")
+  lm(net ~ age + sex, data = TenMileRace)
+}
+
+</code></pre>
+
+
+</div>
+</body></html>

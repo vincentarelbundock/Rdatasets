@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><title>R: U.S. Women's Labor-Force Participation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Mroz</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>U.S. Women's Labor-Force Participation</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Mroz</code> data frame has 753 rows and 8 columns. The observations, from the Panel Study of Income Dynamics (PSID), are married women.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Mroz
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 753 rows and 8 variables
+</p>
+
+<dl>
+<dt>lfp</dt><dd><p>Labor-force participation</p>
+</dd>
+<dt>k5</dt><dd><p>Number of children 5 years old or younger</p>
+</dd>
+<dt>k618</dt><dd><p>Number of children 6 to 17 years old</p>
+</dd>
+<dt>age</dt><dd><p>Age in years</p>
+</dd>
+<dt>wc</dt><dd><p>Wife attended college</p>
+</dd>
+<dt>hc</dt><dd><p>Husband attended college</p>
+</dd>
+<dt>lwg</dt><dd><p>Log expected wage rate. For women in the labor force, the actual wage rate; for women not in the labor force, an imputed value based on the regression of lwg on the other variables.</p>
+</dd>
+<dt>inc</dt><dd><p>Family income exclusive of wife's income</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This data set is a lightly edited version of the one found in the <em>carData</em> package in R. It is used in the Describing Relationships chapter of <em>The Effect</em>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Mroz, T. A. (1987) The sensitivity of an empirical model of married women's hours of work to economic and statistical assumptions. *Econometrica* 55, 765–799.
+</p>
+<p>John Fox, Sanford Weisberg and Brad Price (2020). carData: Companion to Applied Regression Data Sets. R package version 3.0-4. <a href="https://CRAN.R-project.org/package=carData">https://CRAN.R-project.org/package=carData</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Fox, J. (2016) *Applied Regression Analysis and Generalized Linear Models,* Third Edition. Sage.
+</p>
+<p>Fox, J. (2000) *Multiple and Generalized Nonparametric Regression.* Sage.
+</p>
+<p>Fox, J. and Weisberg, S. (2019) *An R Companion to Applied Regression.* Third Edition, Sage.
+</p>
+<p>Long. J. S. (1997) *Regression Models for Categorical and Limited Dependent Variables.* Sage.
+</p>
+<p>Huntington-Klein. 2021. The Effect: An Introduction to Research Design and Causality. <a href="https://theeffectbook.net">https://theeffectbook.net</a>.
+</p>
+
+
+</div>
+</body></html>

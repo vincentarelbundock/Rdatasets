@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: Record times for Northern Ireland mountain running events</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>nihills</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Record times for Northern Ireland mountain running events</h2>
+
+<h3>Description</h3>
+
+<p>Data were from the 2007 calendar for the Northern Ireland Mountain
+Running Association.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(nihills)
+data(lognihills)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 23 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>dist</code></dt><dd><p>distances in miles</p>
+</dd>
+<dt><code>climb</code></dt><dd><p>amount of climb in feet</p>
+</dd>
+<dt><code>time</code></dt><dd><p>record time in hours for males</p>
+</dd>
+<dt><code>timef</code></dt><dd><p>record time in hours for females</p>
+</dd>
+<dt><code>logdist</code></dt><dd><p>distances, log(miles)</p>
+</dd>
+<dt><code>logclimb</code></dt><dd><p>climb, log(feet)</p>
+</dd>
+<dt><code>logtime</code></dt><dd><p>record time for males, log(hours)</p>
+</dd>
+<dt><code>logtimef</code></dt><dd><p>record time for females, log(hours)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>These data make an interesting comparison with the dataset
+<code>hills2000</code> in the DAAG package.</p>
+
+
+<h3>Source</h3>
+
+<p>For more recent information, see
+<a href="https://www.nimra.org.uk/index.php/fixtures/">https://www.nimra.org.uk/index.php/fixtures/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(nihills)
+lm(formula = log(time) ~ log(dist) + log(climb), data = nihills)
+lm(formula = log(time) ~ log(dist) + log(climb/dist), data = nihills)
+lm(formula = logtime ~ logdist + I(logclimb-logdist), data = lognihills)
+</code></pre>
+
+
+</div>
+</body></html>

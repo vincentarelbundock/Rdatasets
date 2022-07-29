@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title>R: Alcohol Consumption per Capita</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Alcohol</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Alcohol Consumption per Capita</h2>
+
+<h3>Description</h3>
+
+<p>These data provide per capita alcohol consumption values
+for many countries in 2005 and 2008.  There are also a few
+countries for which there are data in other years.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Alcohol)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 411 observations on the following variables.
+</p>
+
+<ul>
+<li><p><code>country</code> country name
+</p>
+</li>
+<li><p><code>year</code> year
+</p>
+</li>
+<li><p><code>alcohol</code> estimated per capita alcohol consumption for adults (15+)
+in litres pure alcohol
+</p>
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p>Gapminder (<a href="https://www.gapminder.org/data/">https://www.gapminder.org/data/</a>)
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Alcohol)
+# There are only a few observations in years other than 2005 and 2008
+subset(Alcohol, ! year %in% c(2005,2008))
+</code></pre>
+
+
+</div>
+</body></html>

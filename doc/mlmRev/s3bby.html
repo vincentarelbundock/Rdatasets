@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><title>R: Responses simulated by Rodriguez and Goldman</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>s3bby</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Responses simulated by Rodriguez and Goldman</h2>
+
+<h3>Description</h3>
+
+<p>A matrix of the results of 100 simulations of dichotomous multilevel
+data. The rows correspond to the 2449 births for which the covariates
+are given in <code>s3bbx</code>.  The elements of the matrix are all
+0, indicating no modern prenatal care, or 1, indicating model prenatal
+care.  These were simulated with &quot;large&quot; variances for both the family
+and the community random effects.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(s3bby)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An integer matrix with 2449 rows and 100 columns.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://data.princeton.edu/multilevel/simul.htm">http://data.princeton.edu/multilevel/simul.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Rodriguez, Germán and Goldman, Noreen (1995)
+An assessment of estimation procedures for multilevel models with
+binary responses,
+<em>Journal of the Royal Statistical Society, Series A</em> <b>158</b>, 73&ndash;89.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>str(s3bby)
+</code></pre>
+
+
+</div>
+</body></html>

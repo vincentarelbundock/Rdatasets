@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><title>R: Immunization in Guatemala</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>guImmun</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Immunization in Guatemala</h2>
+
+<h3>Description</h3>
+
+<p>Immunizations received by children in Guatemala.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(guImmun)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2159 observations on the following 13 variables.
+</p>
+
+<dl>
+<dt>kid</dt><dd><p>a factor identifying the child</p>
+</dd>
+<dt>mom</dt><dd><p>a factor identifying the family.</p>
+</dd>
+<dt>comm</dt><dd><p>a factor identifying the community.</p>
+</dd>
+<dt>immun</dt><dd><p>a factor indicating if the child received a
+complete set of immunizations. All children in this data frame
+received at least one immunization.</p>
+</dd>
+<dt>kid2p</dt><dd><p>a factor indicating if the child was 2 years or older
+at the time of the survey.</p>
+</dd>
+<dt>mom25p</dt><dd><p>a factor indicating if the mother was 25 years or older.</p>
+</dd>
+<dt>ord</dt><dd><p>an factor indicating the child's birth's order within the
+family.  Levels are <code>01</code> - first child, <code>23</code> - second or
+third child, <code>46</code> - fourth to sixth child, <code>7p</code> -
+seventh or later child.</p>
+</dd>
+<dt>ethn</dt><dd><p>a factor indicating the mother's ethnicity.  Levels are
+<code>L</code> - Ladino, <code>N</code> - indigenous not speaking Spanish, and
+<code>S</code> - indigenous speaking Spanish.</p>
+</dd>
+<dt>momEd</dt><dd><p>a factor describing the mother's level of eduation.
+Levels are <code>N</code> - not finished primary, <code>P</code> - finished
+primary, <code>S</code> - finished secondary</p>
+</dd>
+<dt>husEd</dt><dd><p>a factor describing the husband's level of education.
+Levels are the same as for <code>momEd</code> plus <code>U</code> - unknown.</p>
+</dd>
+<dt>momWork</dt><dd><p>a factor indicating if the mother had ever
+worked outside the home.</p>
+</dd>
+<dt>rural</dt><dd><p>a factor indicating if the family's location is
+considered rural or urban.</p>
+</dd>
+<dt>pcInd81</dt><dd><p>the percentage of indigenous population in the
+community at the 1981 census.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>These data are available at
+<a href="http://data.princeton.edu/multilevel/guImmun.dat">http://data.princeton.edu/multilevel/guImmun.dat</a>.  Multiple
+indicator columns in the original data table have been collapsed to
+factors for this data frame.
+</p>
+
+
+<h3>References</h3>
+
+<p>Rodriguez, Germán and Goldman, Noreen (1995), &quot;Improved estimation
+procedures for multilevel models with binary response: a case-study&quot;,
+<em>Journal of the Royal Statistical Society, Series A</em>, <b>164</b>,
+339-355.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(guImmun)
+summary(guImmun)
+</code></pre>
+
+
+</div>
+</body></html>

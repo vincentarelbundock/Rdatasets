@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><title>R: The Child Health and Development Studies</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>babies</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Child Health and Development Studies</h2>
+
+<h3>Description</h3>
+
+<p>The Child Health and Development Studies investigate a range of topics. One
+study, in particular, considered all pregnancies between 1960 and 1967 among
+women in the Kaiser Foundation Health Plan in the San Francisco East Bay
+area. We do not have ideal provenance for these data. For a better documented
+and more recent dataset on a similar topic with similar variables,
+see births14. Additionally, <code>Gestation</code> dataset in the
+<a href="https://CRAN.R-project.org/package=mosaicData">mosaicData</a>
+package also contains similar data.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>babies
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1236 rows and 8 variables:
+</p>
+
+<dl>
+<dt>case</dt><dd><p>id number</p>
+</dd>
+<dt>bwt</dt><dd><p>birthweight, in ounces</p>
+</dd>
+<dt>gestation</dt><dd><p>length of gestation, in days</p>
+</dd>
+<dt>parity</dt><dd><p>binary indicator for a first pregnancy (0 = first pregnancy)</p>
+</dd>
+<dt>age</dt><dd><p>mother's age in years</p>
+</dd>
+<dt>height</dt><dd><p>mother's height in inches</p>
+</dd>
+<dt>weight</dt><dd><p>mother's weight in pounds</p>
+</dd>
+<dt>smoke</dt><dd><p>binary indicator for whether the mother smokes</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>These data come from Child Health and Development Studies.
+</p>
+
+
+</div>
+</body></html>

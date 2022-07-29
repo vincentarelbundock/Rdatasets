@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: US Crudes Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>USCrudes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Crudes Data</h2>
+
+<h3>Description</h3>
+
+<p>Cross-section data originating from 99 US oil field postings. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("USCrudes")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 99 observations on 3 variables.
+</p>
+
+<dl>
+<dt>price</dt><dd><p>Crude prices (USD/barrel).</p>
+</dd>
+<dt>gravity</dt><dd><p>Gravity (degree API).</p>
+</dd>
+<dt>sulphur</dt><dd><p>Sulphur (in %).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>The data is from Baltagi (2002).
+</p>
+
+
+<h3>References</h3>
+
+<p>Baltagi, B.H. (2002). <em>Econometrics</em>, 3rd ed. Berlin, Springer. 
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Baltagi2002</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+data("USCrudes")
+plot(price ~ gravity, data = USCrudes)
+plot(price ~ sulphur, data = USCrudes)
+fm &lt;- lm(price ~ sulphur + gravity, data = USCrudes)
+
+## 3D Visualization
+library("scatterplot3d")
+s3d &lt;- scatterplot3d(USCrudes[, 3:1], pch = 16)
+s3d$plane3d(fm, lty.box = "solid", col = 4)
+</code></pre>
+
+
+</div>
+</body></html>

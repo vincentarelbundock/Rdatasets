@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><title>R: 2008 U.S. Presidential Election</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Election08</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>2008 U.S. Presidential Election</h2>
+
+<h3>Description</h3>
+
+<p>State-by-state information from the 2008 U.S. presidential election
+</p>
+
+
+<h3>Format</h3>
+
+<p>A dataframe with 51 observations on the following 7 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>State</code> </td><td style="text-align: left;"> Name of the state</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Abr</code> </td><td style="text-align: left;"> Abbreviation for the state</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Income</code> </td><td style="text-align: left;"> Per capita income in the state as of 2007 (in dollars)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>HS</code> </td><td style="text-align: left;"> Percentage of adults with at least a high school education</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>BA</code> </td><td style="text-align: left;"> Percentage of adults with at least a college education</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Dem.Rep</code> </td><td style="text-align: left;"> Difference in %Democrat and %Republican (according to 2008 Gallup survey)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>ObamaWin</code> </td><td style="text-align: left;"> <code>1</code>= Obama (Democrat) wins state in 2008 or <code>0</code>=McCain (Republican) wins</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset contains information from all 50 states and the District of Columbia for the 2008 U.S. presidential election.
+</p>
+
+
+<h3>Source</h3>
+
+<p>State income data from: Census Bureau Table 659. Personal Income Per Capita (in 2007)<br />
+High school data from: U.S. Census Bureau, 1990 Census of Population, <br />
+http://nces.ed.gov/programs/digest/d08/tables/dt08_011.asp <br />
+College data from: Census Bureau Table 225. Educational Attainment by State (in 2007)<br />
+% Democrat and %Republican: <br />
+http://www.gallup.com/poll/114016/state-states-political-party-affiliation.aspx#1
+</p>
+
+
+</div>
+</body></html>

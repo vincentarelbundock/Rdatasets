@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: Root weights of tomato plants exposed to 4 different...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>tomato</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Root weights of tomato plants exposed to 4 different treatments</h2>
+
+<h3>Description</h3>
+
+<p>The <code>tomato</code> data frame has 24 rows and 2 columns.
+They are from an experiment that exposed tomato plants
+to four different 'nutrients'.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(tomato)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>weight</dt><dd><p>weight, in g</p>
+</dd>
+<dt>trt</dt><dd><p>a factor with levels
+<code>water only</code>,
+<code>conc nutrient</code>,
+<code>2-4-D + conc nutrient</code>,
+<code>3x conc nutrient</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Dr Ron Balham, Victoria University of Wellington NZ, sometime
+in 1971 - 1976.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>tomato.aov &lt;- aov(log(weight) ~ trt, data=tomato)
+fitted.values(tomato.aov)
+summary.lm(tomato.aov)
+tomato.aov &lt;- aov(formula = weight ~ trt, data = tomato)
+summary.lm(tomato.aov)
+</code></pre>
+
+
+</div>
+</body></html>

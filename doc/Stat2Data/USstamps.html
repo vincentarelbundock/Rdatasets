@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><title>R: Price of US Stamps</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>USstamps</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Price of US Stamps</h2>
+
+<h3>Description</h3>
+
+<p>Price of US stamp for first class mail 1885-2012
+</p>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 25 observations on the following 2 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>Year</code></td><td style="text-align: left;"> Years when stamp price changed</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Price</code></td><td style="text-align: left;"> Cost of a US first class stamp (in cents)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+ </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>The data record the year and price for each change in price for a
+US first class (1 ounce, domestic letter) stamp since 1885.
+</p>
+
+
+<h3>Source</h3>
+
+<p>http://about.usps.com/who-we-are/postal-history/domestic-letter-rates-1863-2011.htm
+</p>
+
+
+</div>
+</body></html>

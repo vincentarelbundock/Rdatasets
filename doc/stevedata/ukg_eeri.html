@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><title>R: United Kingdom Effective Exchange Rate Index Data, 1990-2019</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ukg_eeri</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>United Kingdom Effective Exchange Rate Index Data, 1990-2019</h2>
+
+<h3>Description</h3>
+
+<p>This is a (near) daily data set on the effective exchange rate index for
+the United Kingdom's pound sterling from 1990 to 2018. The data are
+indexed, such that 100 equals the monthly average in January 2005. This
+is useful for illustrating devaluations of the pound after Black Wednesday,
+the financial crisis, and, more recently, the UK's efforts to leave the
+European Union.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ukg_eeri
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 7583 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>date</code></dt><dd><p>a date</p>
+</dd>
+<dt><code>value</code></dt><dd><p>a numeric vector for the effective exchange rate index (Jan. 2005 = 100)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Credit to the Bank of England for making these data readily available and
+accessible. The Bank of England's website (<a href="https://www.bankofengland.co.uk/">https://www.bankofengland.co.uk/</a>) has
+these data with a code of <code>XUDLBK67</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Bank of England
+</p>
+
+
+</div>
+</body></html>

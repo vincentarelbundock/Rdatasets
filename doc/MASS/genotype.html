@@ -1,0 +1,80 @@
+<!DOCTYPE html><html><head><title>R: Rat Genotype Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>genotype</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Rat Genotype Data
+</h2>
+
+<h3>Description</h3>
+
+<p>Data from a foster feeding experiment with rat mothers and litters of
+four different genotypes: <code>A</code>, <code>B</code>, <code>I</code> and <code>J</code>.
+Rat litters were separated from their natural mothers at birth and
+given to foster mothers to rear.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>genotype
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The data frame has the following components:
+</p>
+
+<dl>
+<dt><code>Litter</code></dt><dd>
+<p>genotype of the litter.
+</p>
+</dd>
+<dt><code>Mother</code></dt><dd>
+<p>genotype of the foster mother.
+</p>
+</dd>
+<dt><code>Wt</code></dt><dd>
+<p>Litter average weight gain of the litter, in grams at age 28 days.
+(The source states that the within-litter variability is negligible.)
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Scheffe, H. (1959) <em>The Analysis of Variance</em> Wiley p. 140.
+</p>
+<p>Bailey, D. W. (1953)
+<em>The Inheritance of Maternal Influences on the Growth of the Rat.</em>
+Unpublished Ph.D. thesis, University of California. Table B of the Appendix.
+</p>
+
+
+<h3>References</h3>
+
+<p>Venables, W. N. and Ripley, B. D. (1999)
+<em>Modern Applied Statistics with S-PLUS.</em> Third
+Edition. Springer.
+</p>
+
+
+</div>
+</body></html>

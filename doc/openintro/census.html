@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: Random sample of 2000 U.S. Census Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>census</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Random sample of 2000 U.S. Census Data</h2>
+
+<h3>Description</h3>
+
+<p>A random sample of 500 observations from the 2000 U.S. Census Data.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>census
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 500 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt>census_year</dt><dd><p>Census Year.</p>
+</dd>
+<dt>state_fips_code</dt><dd><p>Name of state.</p>
+</dd>
+<dt>total_family_income</dt><dd><p>Total family income (in U.S. dollars).</p>
+</dd>
+<dt>age</dt><dd><p>Age.</p>
+</dd>
+<dt>sex</dt><dd><p>Sex with levels <code>Female</code> and <code>Male</code>.</p>
+</dd>
+<dt>race_general</dt><dd><p>Race with levels <code>American Indian or Alaska Native</code>, <code>Black</code>, <code>Chinese</code>, <code>Japanese</code>, <code>Other Asian or Pacific Islander</code>, <code>Two major races</code>, <code>White</code> and <code>Other</code>.</p>
+</dd>
+<dt>marital_status</dt><dd><p>Marital status with levels <code>Divorced</code>, <code>Married/spouse absent</code>, <code>Married/spouse present</code>, <code>Never married/single</code>, <code>Separated</code> and <code>Widowed</code>.</p>
+</dd>
+<dt>total_personal_income</dt><dd><p>Total personal income (in U.S. dollars).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="http://factfinder.census.gov">http://factfinder.census.gov</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(dplyr)
+library(ggplot2)
+
+census %&gt;%
+  filter(total_family_income &gt; 0) %&gt;%
+  ggplot(aes(x = total_family_income)) +
+  geom_histogram(binwidth = 25000)
+</code></pre>
+
+
+</div>
+</body></html>

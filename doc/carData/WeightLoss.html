@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>R: Weight Loss Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>WeightLoss</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Weight Loss Data
+</h2>
+
+<h3>Description</h3>
+
+<p>Contrived data on weight loss and self esteem over three months,
+for three groups of individuals: Control, Diet and Diet + Exercise.
+The data constitute a double-multivariate design.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>WeightLoss</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 34 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>group</code></dt><dd><p>a factor with levels <code>Control</code> <code>Diet</code> <code>DietEx</code>.</p>
+</dd>
+<dt><code>wl1</code></dt><dd><p>Weight loss at 1 month</p>
+</dd>
+<dt><code>wl2</code></dt><dd><p>Weight loss at 2 months</p>
+</dd>
+<dt><code>wl3</code></dt><dd><p>Weight loss at 3 months</p>
+</dd>
+<dt><code>se1</code></dt><dd><p>Self esteem at 1 month</p>
+</dd>
+<dt><code>se2</code></dt><dd><p>Self esteem at 2 months</p>
+</dd>
+<dt><code>se3</code></dt><dd><p>Self esteem at 3 months</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Helmert contrasts are assigned to <code>group</code>, comparing <code>Control</code> vs. (<code>Diet</code> <code>DietEx</code>)
+and <code>Diet</code> vs. <code>DietEx</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Originally taken from <a href="http://www.csun.edu/~ata20315/psy524/main.htm">http://www.csun.edu/~ata20315/psy524/main.htm</a>,
+but modified slightly. Courtesy of Michael Friendly.
+</p>
+
+
+</div>
+</body></html>

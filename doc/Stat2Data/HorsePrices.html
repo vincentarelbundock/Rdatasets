@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: Prices of Horses</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>HorsePrices</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Prices of Horses</h2>
+
+<h3>Description</h3>
+
+<p>Price and related characteristics of horses listed for sale on the internet
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 50 observations on the following 5 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>HorseID</code> </td><td style="text-align: left;"> ID code for each horse</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Price</code> </td><td style="text-align: left;"> Price (in dollars)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Age</code> </td><td style="text-align: left;"> Age of the horse (in years)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Height</code> </td><td style="text-align: left;"> Height of the horse (in hands)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Sex</code> </td><td style="text-align: left;"> <code>f</code>=female <code>m</code>=male</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>Undergraduate students at Cal Poly collected data on prices of 50 horses
+advertised for sale on the internet. Predictor variables of price include the age and height of the horse (in
+hands), as well as its sex.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Cal Poly students using a horse sale website.
+</p>
+
+
+</div>
+</body></html>

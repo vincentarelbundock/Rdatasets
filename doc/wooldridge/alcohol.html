@@ -1,0 +1,160 @@
+<!DOCTYPE html><html><head><title>R: alcohol</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>alcohol</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>alcohol</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Terza, J.V. (2002), “Alcohol Abuse and Employment: A Second Look,” Journal of Applied Econometrics 17, 393-404. I obtained these data from the Journal of Applied Econometrics data archive at http://qed.econ.queensu.ca/jae/. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('alcohol')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 9822 observations on 33 variables:
+</p>
+
+<ul>
+<li> <p><strong>abuse:</strong> =1 if abuse alcohol
+</p>
+</li>
+<li> <p><strong>status:</strong> out of workforce = 1; unemployed = 2, employed = 3
+</p>
+</li>
+<li> <p><strong>unemrate:</strong> state unemployment rate
+</p>
+</li>
+<li> <p><strong>age:</strong> age in years
+</p>
+</li>
+<li> <p><strong>educ:</strong> years of schooling
+</p>
+</li>
+<li> <p><strong>married:</strong> =1 if married
+</p>
+</li>
+<li> <p><strong>famsize:</strong> family size
+</p>
+</li>
+<li> <p><strong>white:</strong> =1 if white
+</p>
+</li>
+<li> <p><strong>exhealth:</strong> =1 if in excellent health
+</p>
+</li>
+<li> <p><strong>vghealth:</strong> =1 if in very good health
+</p>
+</li>
+<li> <p><strong>goodhealth:</strong> =1 if in good health
+</p>
+</li>
+<li> <p><strong>fairhealth:</strong> =1 if in fair health
+</p>
+</li>
+<li> <p><strong>northeast:</strong> =1 if live in northeast
+</p>
+</li>
+<li> <p><strong>midwest:</strong> =1 if live in midwest
+</p>
+</li>
+<li> <p><strong>south:</strong> =1 if live in south
+</p>
+</li>
+<li> <p><strong>centcity:</strong> =1 if live in central city of MSA
+</p>
+</li>
+<li> <p><strong>outercity:</strong> =1 if in outer city of MSA
+</p>
+</li>
+<li> <p><strong>qrt1:</strong> =1 if interviewed in first quarter
+</p>
+</li>
+<li> <p><strong>qrt2:</strong> =1 if interviewed in second quarter
+</p>
+</li>
+<li> <p><strong>qrt3:</strong> =1 if interviewed in third quarter
+</p>
+</li>
+<li> <p><strong>beertax:</strong> state excise tax, $ per gallon
+</p>
+</li>
+<li> <p><strong>cigtax:</strong> state cigarette tax, cents per pack
+</p>
+</li>
+<li> <p><strong>ethanol:</strong> state per-capita ethanol consumption
+</p>
+</li>
+<li> <p><strong>mothalc:</strong> =1 if mother an alcoholic
+</p>
+</li>
+<li> <p><strong>fathalc:</strong> =1 if father an alcoholic
+</p>
+</li>
+<li> <p><strong>livealc:</strong> =1 if lived with alcoholic
+</p>
+</li>
+<li> <p><strong>inwf:</strong> =1 if status &gt; 1
+</p>
+</li>
+<li> <p><strong>employ:</strong> =1 if employed
+</p>
+</li>
+<li> <p><strong>agesq:</strong> age^2
+</p>
+</li>
+<li> <p><strong>beertaxsq:</strong> beertax^2
+</p>
+</li>
+<li> <p><strong>cigtaxsq:</strong> cigtax^2
+</p>
+</li>
+<li> <p><strong>ethanolsq:</strong> ethanol^2
+</p>
+</li>
+<li> <p><strong>educsq:</strong> educ^2
+</p>
+</li></ul>
+
+
+
+<h3>Used in Text</h3>
+
+<p>page 629
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(alcohol)
+</code></pre>
+
+
+</div>
+</body></html>

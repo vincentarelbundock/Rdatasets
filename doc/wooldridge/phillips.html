@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><title>R: phillips</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>phillips</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>phillips</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Economic Report of the President, 2004, Tables B-42 and B-64. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('phillips')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 56 observations on 7 variables:
+</p>
+
+<ul>
+<li> <p><strong>year:</strong> 1948 through 2003
+</p>
+</li>
+<li> <p><strong>unem:</strong> civilian unemployment rate, percent
+</p>
+</li>
+<li> <p><strong>inf:</strong> percentage change in CPI
+</p>
+</li>
+<li> <p><strong>inf_1:</strong> inf[_n-1]
+</p>
+</li>
+<li> <p><strong>unem_1:</strong> unem[_n-1]
+</p>
+</li>
+<li> <p><strong>cinf:</strong> inf - inf_1
+</p>
+</li>
+<li> <p><strong>cunem:</strong> unem - unem_1
+</p>
+</li></ul>
+
+
+
+<h3>Used in Text</h3>
+
+<p>pages 355-356, 379, 390-391, 408, 409, 409, 418, 428, 443, 548-549, 642, 656, 659, 662, 672, 817.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(phillips)
+</code></pre>
+
+
+</div>
+</body></html>

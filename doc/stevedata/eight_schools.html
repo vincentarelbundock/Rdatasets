@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: The Effect of Special Preparation on SAT-V Scores in Eight...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>eight_schools</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Effect of Special Preparation on SAT-V Scores in Eight Randomized Experiments</h2>
+
+<h3>Description</h3>
+
+<p>You've all seen these before. These are the &quot;eight schools&quot; that everyone gets when
+being introduced to Bayesian programming. Here are the full data for your consideration,
+which you can use instead of awkwardly searching where the data are and copy-pasting
+them as a list. Every damn time, Steve.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>eight_schools
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 8 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>school</code></dt><dd><p>a letter denoting the school</p>
+</dd>
+<dt><code>num_treat</code></dt><dd><p>the number of students in the school receiving the treatment</p>
+</dd>
+<dt><code>num_control</code></dt><dd><p>the number of students in the school in the control group</p>
+</dd>
+<dt><code>est</code></dt><dd><p>the estimated treatment effect</p>
+</dd>
+<dt><code>se</code></dt><dd><p>the standard error of the effect estimate</p>
+</dd>
+<dt><code>rvar</code></dt><dd><p>the residual variance</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data copy-pasted from Table 1 in Rubin (1981).
+</p>
+
+
+<h3>References</h3>
+
+<p>Rubin, Donald B. 1981. &quot;Estimation in Parallel Randomized Experiments.&quot; <em>Journal of Educational Statistics</em> 6(4): 377-401.
+</p>
+
+
+</div>
+</body></html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html><html><head><title>R: Cyber Security Breaches</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>breaches</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2> Cyber Security Breaches </h2>
+
+<h3>Description</h3>
+
+<p><code>data.frame</code> of cyber security breaches 
+involving health care records of 500 or more 
+humans reported to the U.S. Department of 
+Health and Human Services (HHS) as of June 
+27, 2014.   
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(breaches)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>data.frame</code> with 1055 observations on 
+the following 24 variables:
+</p>
+
+<dl>
+<dt>Number</dt><dd>
+<p>integer record number in the HHS data base 
+</p>
+</dd>
+<dt>Name_of_Covered_Entity</dt><dd>
+<p><code>factor</code> giving the name of the
+entity experiencing the breach 
+</p>
+</dd>
+<dt>State</dt><dd>
+<p>Factor giving the 2-letter code of the state
+where the breach occurred.  This has 52 levels
+for the 50 states plus the District of Columbia 
+(DC) and Puerto Rico (PR).  
+</p>
+</dd>
+<dt>Business_Associate_Involved</dt><dd>
+<p>Factor giving the name of a subcontractor (or
+blank) associated with the breach.  
+</p>
+</dd>     
+<dt>Individuals_Affected</dt><dd>
+<p><code>integer</code> number of humans whose
+records were compromised in the breach.  This
+is 500 or greater;  U.S. law requires reports
+of breaches involving 500 or more records but
+not of breaches involving fewer.  
+</p>
+</dd>
+<dt>Date_of_Breach</dt><dd>
+<p><code>character</code> vector giving the 
+date or date range of the breach.  Recodes 
+as <code>Date</code>s in <code>breach_start</code>
+and <code>breach_end</code>.  
+</p>
+</dd>
+<dt>Type_of_Breach</dt><dd>
+<p><code>factor</code> with 29 levels giving the
+type of breach (e.g., &quot;Theft&quot; vs.
+&quot;Unauthorized Access/Disclosure&quot;, etc.)
+</p>
+</dd>
+<dt>Location_of_Breached_Information</dt><dd> 
+<p><code>factor</code> with 41 levels coding the 
+location from which the breach occurred (e.g.,
+&quot;Paper&quot;, &quot;Laptop&quot;, etc.)
+</p>
+</dd>
+<dt>Date_Posted_or_Updated</dt><dd>
+<p><code>Date</code> the information was posted
+to the HHS data base or last updated.  
+</p>
+</dd>
+<dt>Summary</dt><dd>
+<p><code>character</code> vector of a summary of 
+the incident.  
+</p>
+</dd>
+<dt>breach_start</dt><dd>
+<p><code>Date</code> of the start of the 
+incident = first date given in
+<code>Date_of_Breach</code> above. 
+</p>
+</dd>
+</dl>
+<p><code>breach_end</code>
+<code>Date</code> of the end of the incident
+or <code>NA</code> if only one date is given in 
+<code>Date_of_Breach</code> above.  
+
+<code>year</code>
+<code>integer</code> giving the year of the
+breach 
+
+
+</p>
+
+
+<h3>Details</h3>
+
+<p>The data primarily consists of breaches that
+occurred from 2010 through early 2014 when the
+extract was taken.  However, a few breaches are
+recorded including 1 from 1997, 8 from 2002-2007,
+13 from 2008 and 56 from 2009.  The numbers of
+breaches from 2010 - 2014 are 211, 229, 227, 
+254 and 56, respectively. (A chi-square test for
+equality of the counts from 2010 through 2013 is 
+4.11, which with 3 degrees of freedom has a
+significance probability of 0.25.  Thus, even
+though the lowest number is the first and the
+largest count is the last, the apparent trend is 
+not statistically significant under the usual
+assumption of independent Poisson trials.)  
+</p>
+<p>The following corrections were made to the file:  
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    Number </td><td style="text-align: left;"> Name of Covered Entity </td><td style="text-align: left;">
+    Corrections </td>
+</tr>
+<tr>
+ <td style="text-align: right;"> </td>
+</tr>
+<tr>
+ <td style="text-align: right;"> 45 </td><td style="text-align: left;"> Wyoming Department 
+    of Health </td><td style="text-align: left;"> Cause of breach was missing. 
+    Added "Unauthorized </td>
+</tr>
+<tr>
+ <td style="text-align: right;"> </td><td style="text-align: left;"> </td><td style="text-align: left;"> Access /
+    Disclosure" per 
+    <a href="https://web.archive.org/web/20210115131543/https://www.smartbrief.com/s/2010/03/5-more-organizations-added-hhs-online-data-breach-list"><code>smartbrief.com/03/29/10</code></a> </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    
+    55 </td><td style="text-align: left;"> Reliant Rehabilitation Hospital North
+    </td><td style="text-align: left;"> Cause of breach was missing.  Added 
+    "Unauthorized </td>
+</tr>
+<tr>
+ <td style="text-align: right;"> </td><td style="text-align: left;"> Houston </td><td style="text-align: left;"> Access / 
+    Disclosure" per Dissent. "Two Breaches </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    </td><td style="text-align: left;"> </td><td style="text-align: left;"> Involving Unauthorized Access Lead to
+    Notification." </td>
+</tr>
+<tr>
+ <td style="text-align: right;"> </td><td style="text-align: left;"> </td><td style="text-align: left;"> 
+    <code>www.phiprivacy.net/two-breaches-involving-unauthorized-access-lead-to-notification</code>;
+    approximately 2010-04-20.  This web page has
+    since been removed, apparently without having
+    been captured by archive.net.] </td>
+</tr>
+<tr>
+ <td style="text-align: right;"> 
+
+    123 </td><td style="text-align: left;"> Aetna </td><td style="text-align: left;"> Cause of breach was missing. Added Improper </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    </td><td style="text-align: left;"> </td><td style="text-align: left;"> disposal per <a href="https://web.archive.org/web/20101130080315/http://www.aetna.com/news/newsReleases/2010/0630_File_Cabinet_Final.html">
+<code>Aetna.com/news/newsReleases/2010/0630</code></a>
+    </td>
+</tr>
+<tr>
+ <td style="text-align: right;"> 
+    
+    157 </td><td style="text-align: left;"> Mayo Clinic </td><td style="text-align: left;"> Cause of breach was missing.  Added 
+    Unauthorized </td>
+</tr>
+<tr>
+ <td style="text-align: right;"> 
+    </td><td style="text-align: left;"> </td><td style="text-align: left;"> Access/Disclosure per Anderson, Howard. 
+    "Mayo Fires </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    </td><td style="text-align: left;"> </td><td style="text-align: left;"> "Employees in 2 Incidents: Both Involved </td>
+</tr>
+<tr>
+ <td style="text-align: right;"> 
+    </td><td style="text-align: left;"> </td><td style="text-align: left;"> Unauthorized Access to Records." </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    </td><td style="text-align: left;"> </td><td style="text-align: left;"> <a href="https://www.databreachtoday.com/mayo-fires-employees-in-2-incidents-a-2974">Data Breach Today. N.p., 4 Oct. 2010</a></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  
+    341 </td><td style="text-align: left;"> <code>Saint Barnabas MedicL Center</code> </td><td style="text-align: left;"> Misspelled "Saint 
+    Barnabas Medical Center" </td>
+</tr>
+<tr>
+ <td style="text-align: right;"> 
+  
+    347 </td><td style="text-align: left;"> <code>Americar Health Medicare</code> </td><td style="text-align: left;"> Misspelled "American 
+    Health Medicare" </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  
+    484 </td><td style="text-align: left;"> <code>Lake Granbury Medicl Ceter</code> </td><td style="text-align: left;"> Misspelled "Lake 
+    Granbury Medical Center" </td>
+</tr>
+<tr>
+ <td style="text-align: right;"> 
+  
+    782 </td><td style="text-align: left;"> See list of Practices under Item 9 </td><td style="text-align: left;"> Replaced name 
+    as "Cogent Healthcare, Inc." checked </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    </td><td style="text-align: left;"> </td><td style="text-align: left;"> from XML and web documents
+    </td>
+</tr>
+<tr>
+ <td style="text-align: right;"> 
+  
+    805 </td><td style="text-align: left;"> Dermatology Associates of Tallahassee </td><td style="text-align: left;"> Had 
+    00/00/0000 on breach date.  This was crossed </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    </td><td style="text-align: left;"> </td><td style="text-align: left;"> check to determine that it was Sept 4, 2013 with 
+    916 records </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  
+    815 </td><td style="text-align: left;"> Santa Clara Valley Medical Center </td><td style="text-align: left;"> Mistype breach 
+    year as 09/14/2913 corrected as 09/14/2013 </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  
+    961 </td><td style="text-align: left;"> <code>Valley View Hosptial Association</code> </td><td style="text-align: left;"> Misspelled 
+    "Valley View Hospital Association" </td>
+</tr>
+<tr>
+ <td style="text-align: right;"> 
+
+    1034 </td><td style="text-align: left;"> Bio-Reference Laboratories, Inc. </td><td style="text-align: left;"> Date changed 
+    from 00/00/000 to 2/02/2014 as </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    </td><td style="text-align: left;"> </td><td style="text-align: left;"> subsequently determined.  </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Author(s)</h3>
+
+<p>Spencer Graves</p>
+
+
+<h3>Source</h3>
+
+<p>U.S. Department of Health and Human Services: Health Information 
+Privacy: <a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf">Breaches Affecting 500 or More Individuals</a>
+
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>HHSCyberSecurityBreaches</code> for a version of 
+these data downloaded more recently.  This newer version 
+includes changes in reporting and in the variables included
+in the <code>data.frame</code>.  
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(breaches)
+quantile(breaches$Individuals_Affected)
+# confirm that the smallest number is 500 
+# -- and the largest is 4.9e6
+# ... and there are no NAs
+
+dDays &lt;- with(breaches, breach_end - breach_start)
+quantile(dDays, na.rm=TRUE)
+# confirm that breach_end is NA or is later than 
+# breach_start 
+</code></pre>
+
+
+</div>
+</body></html>

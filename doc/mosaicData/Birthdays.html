@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: US Births in 1969 - 1988</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Birthdays</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Births in 1969 - 1988</h2>
+
+<h3>Description</h3>
+
+<p>A day by day record of the number of births in each US State.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Birthdays)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 374221 observations on the following variables.
+</p>
+
+<ul>
+<li><p><code>state</code> state where child was born
+</p>
+</li>
+<li><p><code>year</code> year (1969-1988)
+</p>
+</li>
+<li><p><code>month</code> month (1-12)
+</p>
+</li>
+<li><p><code>day</code> day of month
+</p>
+</li>
+<li><p><code>date</code> date as a date object
+</p>
+</li>
+<li><p><code>births</code> number of births
+</p>
+</li></ul>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Birthdays)
+if (require(mosaic)) {
+  MI &lt;- Birthdays %&gt;% filter(state == "MI")
+  gf_point(births ~ date, Birthdays, data = MI) 
+  gf_line(births ~ date, Birthdays, data = MI, color = ~ wday)
+  gf_line(births ~ date, 
+    data = Birthdays %&gt;% group_by(date) %&gt;% summarise(births = sum(births)))
+  }
+</code></pre>
+
+
+</div>
+</body></html>

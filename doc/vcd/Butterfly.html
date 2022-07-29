@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><title>R: Butterfly Species in Malaya</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Butterfly</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Butterfly Species in Malaya</h2>
+
+<h3>Description</h3>
+
+<p>Data from Fisher et al. (1943) giving the number of tokens found for
+each of 501 species of butterflies collected in Malaya.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Butterfly")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A 1-way table giving the number of tokens for 501 species of
+butterflies. The variable and its levels are
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1 </td><td style="text-align: left;"> nTokens </td><td style="text-align: left;"> 0, 1, ..., 24 </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Michael Friendly (2000),
+Visualizing Categorical Data, pages 21&ndash;22.
+</p>
+
+
+<h3>References</h3>
+
+<p>R. A. Fisher, A. S. Corbet, C. B. Williams (1943),
+The relation between the number of species and the number of
+individuals,
+<em>Journal of Animal Ecology</em>, <b>12</b>, 42&ndash;58.
+</p>
+<p>M. Friendly (2000),
+<em>Visualizing Categorical Data</em>.
+SAS Institute, Cary, NC.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("Butterfly")
+Ord_plot(Butterfly)
+</code></pre>
+
+
+</div>
+</body></html>

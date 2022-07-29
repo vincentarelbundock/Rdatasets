@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><title>R: Attributes of Animals</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>animals</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Attributes of Animals</h2>
+
+<h3>Description</h3>
+
+<p>This data set considers 6 binary attributes for 20 animals.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(animals)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 20 observations on 6 variables:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    [ , 1] </td><td style="text-align: left;"> war </td><td style="text-align: left;"> warm-blooded </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    [ , 2] </td><td style="text-align: left;"> fly </td><td style="text-align: left;"> can fly </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    [ , 3] </td><td style="text-align: left;"> ver </td><td style="text-align: left;"> vertebrate </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    [ , 4] </td><td style="text-align: left;"> end </td><td style="text-align: left;"> endangered </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    [ , 5] </td><td style="text-align: left;"> gro </td><td style="text-align: left;"> live in groups </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    [ , 6] </td><td style="text-align: left;"> hai </td><td style="text-align: left;"> have hair </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+<p>All variables are encoded as 1 = 'no', 2 = 'yes'.
+</p>
+
+
+<h3>Details</h3>
+
+<p>This dataset is useful for illustrating monothetic (only a single
+variable is used for each split) hierarchical clustering.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Leonard Kaufman and Peter J. Rousseeuw (1990):
+<em>Finding Groups in Data</em>
+(pp 297ff).
+New York: Wiley.
+</p>
+
+
+<h3>References</h3>
+
+<p>see Struyf, Hubert &amp; Rousseeuw (1996),  in <code>agnes</code>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(animals)
+apply(animals,2, table) # simple overview
+
+ma &lt;- mona(animals)
+ma
+## Plot similar to Figure 10 in Struyf et al (1996)
+plot(ma)
+</code></pre>
+
+
+</div>
+</body></html>

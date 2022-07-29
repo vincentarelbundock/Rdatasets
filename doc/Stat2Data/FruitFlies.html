@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Fruit Fly Sexual Activity and Longevity</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>FruitFlies</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Fruit Fly Sexual Activity and Longevity</h2>
+
+<h3>Description</h3>
+
+<p>Sexual activity and lifetimes of fruit flies
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 125 observations on the following 7 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>ID</code> </td><td style="text-align: left;"> a numeric vector</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Partners</code> </td><td style="text-align: left;"> Number of female partners: 0, 1, or 8</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Type</code> </td><td style="text-align: left;"> <code>0</code>=pregnant, <code>1</code>=virgin, <code>9</code>=none</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Longevity</code> </td><td style="text-align: left;"> Lifespan (in days)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Thorax</code> </td><td style="text-align: left;"> Length of thorax (in mm)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Sleep</code> </td><td style="text-align: left;"> Percent of day sleeping</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+   <code>Treatment</code> </td><td style="text-align: left;"> <code>1 pregnant</code>, <code>1 virgin</code>, <code>8 pregnant</code>, <code>8 virgin</code>, or <code>none</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>Hanley and Shapiro (1994) report on a
+study conducted by Partridge and Farquhar (1981) about the sexual behavior of fruit flies. It was
+already known that increased reproduction leads to shorter life spans for female fruit flies. But the
+question remained whether an increase in sexual activity would also reduce the life spans of male
+fruit flies. The researchers designed an experiment to answer this question. They had a total of
+125 male fruit flies to use and they randomly assigned each of the 125 to one of the following five
+groups.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The data are given as part of the data archive on the Journal of Statistics Education website
+and can be found on the page <br />
+http://www.amstat.org/publications/jse/jse_data_archive.htm.
+</p>
+
+
+<h3>References</h3>
+
+<p>Hanley and Shapiro, (1994) &quot;Sexual Activity and the Lifespan of Male Fruitflies: A Dataset That Gets Attention,&quot; Journal of Statistics Education
+v.2, n.1<br />
+http://www.amstat.org/publications/jse/v2n1/datasets.hanley.html
+</p>
+
+
+</div>
+</body></html>

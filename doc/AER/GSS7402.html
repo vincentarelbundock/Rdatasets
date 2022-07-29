@@ -1,0 +1,159 @@
+<!DOCTYPE html><html><head><title>R: US General Social Survey 1974-2002</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>GSS7402</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US General Social Survey 1974&ndash;2002</h2>
+
+<h3>Description</h3>
+
+<p>Cross-section data for 9120 women taken from every fourth
+year of the US General Social Survey between 1974 and 2002
+to investigate the determinants of fertility.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("GSS7402")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 9120 observations on 10 variables. 
+</p>
+
+<dl>
+<dt>kids</dt><dd><p>Number of children. This is coded as a numerical variable
+but note that the value <code>8</code> actually encompasses 8 or more children.</p>
+</dd>
+<dt>age</dt><dd><p>Age of respondent.</p>
+</dd>
+<dt>education</dt><dd><p>Highest year of school completed.</p>
+</dd>
+<dt>year</dt><dd><p>GSS year for respondent.</p>
+</dd>
+<dt>siblings</dt><dd><p>Number of brothers and sisters.</p>
+</dd>
+<dt>agefirstbirth</dt><dd><p>Woman's age at birth of first child.</p>
+</dd>
+<dt>ethnicity</dt><dd><p>factor indicating ethnicity.
+Is the individual Caucasian (<code>"cauc"</code>) or not (<code>"other"</code>)?</p>
+</dd>
+<dt>city16</dt><dd><p>factor. Did the respondent live in a city
+(with population &gt; 50,000) at age 16?</p>
+</dd>
+<dt>lowincome16</dt><dd><p>factor. Was the income below average at age 16?</p>
+</dd>
+<dt>immigrant</dt><dd><p>factor. Was the respondent (or both parents)
+born abroad?</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This subset of the US General Social Survey (GSS) for every fourth year
+between 1974 and 2002 has been selected by Winkelmann and Boes (2009)
+to investigate the determinants of fertility. To do so they typically
+restrict their empirical analysis to the women for which the completed
+fertility is (assumed to be) known, employing the common cutoff of 40 years.
+Both, the average number of children borne to a woman and the probability
+of being childless, are of interest.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Winkelmann and Boes (2009).
+</p>
+
+
+<h3>References</h3>
+
+<p>Winkelmann, R., and Boes, S. (2009). <em>Analysis of Microdata</em>, 2nd ed. Berlin and Heidelberg: Springer-Verlag.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>WinkelmannBoes2009</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+## completed fertility subset
+data("GSS7402", package = "AER")
+gss40 &lt;- subset(GSS7402, age &gt;= 40)
+
+## Chapter 1
+## exploratory statistics
+gss_kids &lt;- prop.table(table(gss40$kids))
+names(gss_kids)[9] &lt;- "8+"
+
+gss_zoo &lt;- as.matrix(with(gss40, cbind(
+  tapply(kids, year, mean),
+  tapply(kids, year, function(x) mean(x &lt;= 0)),
+  tapply(education, year, mean))))
+colnames(gss_zoo) &lt;- c("Number of children",
+  "Proportion childless", "Years of schooling")
+gss_zoo &lt;- zoo(gss_zoo, sort(unique(gss40$year)))
+
+## visualizations instead of tables
+barplot(gss_kids,
+  xlab = "Number of children ever borne to women (age 40+)",
+  ylab = "Relative frequencies")
+
+library("lattice")
+trellis.par.set(theme = canonical.theme(color = FALSE))
+print(xyplot(gss_zoo[,3:1], type = "b", xlab = "Year"))
+
+
+## Chapter 3, Example 3.14
+## Table 3.1
+gss40$nokids &lt;- factor(gss40$kids &lt;= 0, levels = c(FALSE, TRUE), labels = c("no", "yes"))
+gss40$trend &lt;- gss40$year - 1974
+nokids_p1 &lt;- glm(nokids ~ 1, data = gss40, family = binomial(link = "probit"))
+nokids_p2 &lt;- glm(nokids ~ trend, data = gss40, family = binomial(link = "probit"))
+nokids_p3 &lt;- glm(nokids ~ trend + education + ethnicity + siblings,
+  data = gss40, family = binomial(link = "probit"))
+lrtest(nokids_p1, nokids_p2, nokids_p3)
+
+
+## Chapter 4, Figure 4.4
+library("effects")
+nokids_p3_ef &lt;- effect("education", nokids_p3, xlevels = list(education = 0:20))
+plot(nokids_p3_ef, rescale.axis = FALSE, ylim = c(0, 0.3))
+
+
+## Chapter 8, Example 8.11
+kids_pois &lt;- glm(kids ~ education + trend + ethnicity + immigrant + lowincome16 + city16,
+  data = gss40, family = poisson)
+library("MASS")
+kids_nb &lt;- glm.nb(kids ~ education + trend + ethnicity + immigrant + lowincome16 + city16,
+  data = gss40)
+lrtest(kids_pois, kids_nb)
+
+
+## More examples can be found in:
+## help("WinkelmannBoes2009")
+</code></pre>
+
+
+</div>
+</body></html>

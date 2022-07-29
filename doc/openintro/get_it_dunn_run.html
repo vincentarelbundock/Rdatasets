@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Get it Dunn Run, Race Times</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>get_it_dunn_run</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Get it Dunn Run, Race Times</h2>
+
+<h3>Description</h3>
+
+<p>Get it Dunn is a small regional run that got extra attention when a runner,
+Nichole Porath, made the Guiness Book of World Records for the fastest time
+pushing a double stroller in a half marathon. This dataset contains results
+from the 2017 and 2018 races.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>get_it_dunn_run
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 978 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt>date</dt><dd><p>Date of the run.</p>
+</dd>
+<dt>race</dt><dd><p>Run distance.</p>
+</dd>
+<dt>bib_num</dt><dd><p>Bib number of the runner.</p>
+</dd>
+<dt>first_name</dt><dd><p>First name of the runner.</p>
+</dd>
+<dt>last_initial</dt><dd><p>Initial of the runner's last name.</p>
+</dd>
+<dt>sex</dt><dd><p>Sex of the runner.</p>
+</dd>
+<dt>age</dt><dd><p>Age of the runner.</p>
+</dd>
+<dt>city</dt><dd><p>City of residence.</p>
+</dd>
+<dt>state</dt><dd><p>State of residence.</p>
+</dd>
+<dt>run_time_minutes</dt><dd><p>Run time, in minutes.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data were collected from GSE Timing:
+<a href="https://gsetiming.com/results/fitness_events/results.asp?event_type=5&amp;event_id=718">2018 data</a>,
+<a href="https://gsetiming.com/results/fitness_events/results.asp?event_type=5&amp;event_id=640">2017 race data</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+d &lt;- subset(
+  get_it_dunn_run,
+  race == "5k" &amp; date == "2018-05-12" &amp;
+    !is.na(age) &amp; state %in% c("MN", "WI")
+)
+head(d)
+m &lt;- lm(run_time_minutes ~ sex + age + state, d)
+summary(m)
+plot(m$fitted, m$residuals)
+boxplot(m$residuals ~ d$sex)
+plot(m$residuals ~ d$age)
+hist(m$residuals)
+</code></pre>
+
+
+</div>
+</body></html>

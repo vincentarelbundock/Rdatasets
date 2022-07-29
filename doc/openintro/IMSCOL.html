@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><title>R: Introduction to Modern Statistics (IMS) Colors</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>IMSCOL</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Introduction to Modern Statistics (IMS) Colors</h2>
+
+<h3>Description</h3>
+
+<p>These are the core colors used for the Introduction to Modern Statistics textbook.
+The blue, green, pink, yellow, and red colors are also gray-scaled, meaning no
+changes are required when printing black and white copies.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>IMSCOL
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>8-by-13</code> matrix of 7 colors with four fading scales: blue,
+green, pink, yellow, red, black, gray, and light gray.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+plot(1:7, 7:1,
+  col = IMSCOL, pch = 19, cex = 6, xlab = "", ylab = "",
+  xlim = c(0.5, 7.5), ylim = c(-2.5, 8), axes = FALSE
+)
+text(1:7, 7:1 + 0.7, paste("IMSCOL[", 1:7, "]", sep = ""), cex = 0.9)
+points(1:7, 7:1 - 0.7, col = IMSCOL[, 2], pch = 19, cex = 6)
+points(1:7, 7:1 - 1.4, col = IMSCOL[, 3], pch = 19, cex = 6)
+points(1:7, 7:1 - 2.1, col = IMSCOL[, 4], pch = 19, cex = 6)
+</code></pre>
+
+
+</div>
+</body></html>

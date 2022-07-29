@@ -1,0 +1,103 @@
+<!DOCTYPE html><html><head><title>R: Economic data on Samplonia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>samplonomy</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Economic data on Samplonia</h2>
+
+<h3>Description</h3>
+
+<p>Simulated economic time series representing GDP, Import, Export and
+Balance of Trade (BOT) of Samplonia. Samplonia is a fictional Island
+invented by Jelke Bethelehem (2009). The country has 10 000 inhabitants.
+It consists of two provinces: Agria and Induston. Agria is a rural
+province consisting of the mostly fruit and vegetable producing district
+of Wheaton and the mostly cattle producing Greenham. Induston has four
+districts. Two districts with heavy industry named Smokeley and Mudwater.
+Newbay is a young, developing district while Crowdon is where the rich
+Samplonians retire. The current data set contains several time series
+from Samplonia's national accounts system in long format.
+</p>
+<p>There are annual and quarterly time series on GDP, Import, Export and
+Balance of Trade, for Samplonia as a whole, for each province and each
+district. BOT is defined as Export-Import for each region and period;
+quarterly figures are expected to add up to annual figures for each
+region and measure, and subregions are expected to add up to their
+super-regions.
+</p>
+
+<ul>
+<li><p> region:  Region (Samplonia, one if its 2 provinces, or one of its 6 districts)
+</p>
+</li>
+<li><p> freq:    Frequency of the time series
+</p>
+</li>
+<li><p> period:  Period (year or quarter)
+</p>
+</li>
+<li><p> measure: The economic variable (gdp, import, export, balance)
+</p>
+</li>
+<li><p> value:   The value 
+</p>
+</li></ul>
+
+<p>The data set has been endowed with the following errors.
+</p>
+
+<ul>
+<li><p> For Agria, the 2015 GDP record is not present.
+</p>
+</li>
+<li><p> For Induston, the 2018Q3 export value is missing (<code>NA</code>)
+</p>
+</li>
+<li><p> For Induston, there are two different values for the 2018Q2 Export
+</p>
+</li>
+<li><p> For Crowdon, the 2015Q1 balance value is missing (<code>NA</code>).
+</p>
+</li>
+<li><p> For Wheaton, the 2019Q2 import is missing (<code>NA</code>).
+</p>
+</li></ul>
+
+
+
+<h3>Format</h3>
+
+<p>An RData file.
+</p>
+
+
+<h3>References</h3>
+
+<p>J. Bethlehem (2009), Applied Survey Methods: A Statistical Perspective. John
+Wiley &amp; Sons, Hoboken, NJ.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other datasets: 
+<code>nace_rev2</code>,
+<code>retailers</code>
+</p>
+
+
+</div>
+</body></html>

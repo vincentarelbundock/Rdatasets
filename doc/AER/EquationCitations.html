@@ -1,0 +1,176 @@
+<!DOCTYPE html><html><head><title>R: Number of Equations and Citations for Evolutionary Biology...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>EquationCitations</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Number of Equations and Citations for Evolutionary Biology Publications</h2>
+
+<h3>Description</h3>
+
+<p>Analysis of citations of evolutionary biology papers published in 1998 in the
+top three journals (as judged by their 5-year impact factors in
+the Thomson Reuters Journal Citation Reports 2010).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("EquationCitations")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 649 observations on 13 variables.
+</p>
+
+<dl>
+<dt>journal</dt><dd><p>Factor. Journal in which the paper was published
+(The American Naturalist, Evolution, Proceedings of the Royal Society
+of London B: Biological Sciences).</p>
+</dd>
+<dt>authors</dt><dd><p>Character. Names of authors.</p>
+</dd>
+<dt>volume</dt><dd><p>Volume in which the paper was published.</p>
+</dd>
+<dt>startpage</dt><dd><p>Starting page of publication.</p>
+</dd>
+<dt>pages</dt><dd><p>Number of pages.</p>
+</dd>
+<dt>equations</dt><dd><p>Number of equations in total.</p>
+</dd>
+<dt>mainequations</dt><dd><p>Number of equations in main text.</p>
+</dd>
+<dt>appequations</dt><dd><p>Number of equations in appendix.</p>
+</dd>
+<dt>cites</dt><dd><p>Number of citations in total.</p>
+</dd>
+<dt>selfcites</dt><dd><p>Number of citations by the authors themselves.</p>
+</dd>
+<dt>othercites</dt><dd><p>Number of citations by other authors.</p>
+</dd>
+<dt>theocites</dt><dd><p>Number of citations by theoretical papers.</p>
+</dd>
+<dt>nontheocites</dt><dd><p>Number of citations by nontheoretical papers.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Fawcett and Higginson (2012) investigate the relationship between the
+number of citations evolutionary biology papers receive, depending on the number
+of equations per page in the cited paper. Overall it can be shown
+that papers with many mathematical equations significantly lower
+the number of citations they receive, in particular from
+nontheoretical papers.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online supplements to Fawcett and Higginson (2012).
+</p>
+<p><a href="https://www.pnas.org/doi/suppl/10.1073/pnas.1205259109/suppl_file/sd01.xlsx">https://www.pnas.org/doi/suppl/10.1073/pnas.1205259109/suppl_file/sd01.xlsx</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Fawcett, T.W. and Higginson, A.D. (2012). Heavy Use of Equations Impedes
+Communication among Biologists.
+<em>PNAS &ndash; Proceedings of the National Academy of Sciences of the United States of America</em>,
+<b>109</b>, 11735&ndash;11739. <a href="https://doi.org/10.1073/pnas.1205259109">doi:10.1073/pnas.1205259109</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>PhDPublications</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+## load data and MASS package
+data("EquationCitations", package = "AER")
+library("MASS")
+
+## convenience function for summarizing NB models
+nbtable &lt;- function(obj, digits = 3) round(cbind(
+  "OR" = exp(coef(obj)),
+  "CI" = exp(confint.default(obj)),
+  "Wald z" = coeftest(obj)[,3],
+  "p" = coeftest(obj)[, 4]), digits = digits)
+
+
+#################
+## Replication ##
+#################
+
+## Table 1
+m1a &lt;- glm.nb(othercites ~ I(equations/pages) * pages + journal,
+  data = EquationCitations)
+m1b &lt;- update(m1a, nontheocites ~ .)
+m1c &lt;- update(m1a, theocites ~ .)
+nbtable(m1a)
+nbtable(m1b)
+nbtable(m1c)
+
+## Table 2
+m2a &lt;- glm.nb(
+  othercites ~ (I(mainequations/pages) + I(appequations/pages)) * pages + journal,
+  data = EquationCitations)
+m2b &lt;- update(m2a, nontheocites ~ .)
+m2c &lt;- update(m2a, theocites ~ .)
+nbtable(m2a)
+nbtable(m2b)
+nbtable(m2c)
+
+
+###############
+## Extension ##
+###############
+
+## nonlinear page effect: use log(pages) instead of pages+interaction
+m3a &lt;- glm.nb(othercites ~ I(equations/pages) + log(pages) + journal,
+  data = EquationCitations)
+m3b &lt;- update(m3a, nontheocites ~ .)
+m3c &lt;- update(m3a, theocites ~ .)
+
+## nested models: allow different equation effects over journals
+m4a &lt;- glm.nb(othercites ~ journal / I(equations/pages) + log(pages),
+  data = EquationCitations)
+m4b &lt;- update(m4a, nontheocites ~ .)
+m4c &lt;- update(m4a, theocites ~ .)
+
+## nested model best (wrt AIC) for all responses
+AIC(m1a, m2a, m3a, m4a)
+nbtable(m4a)
+AIC(m1b, m2b, m3b, m4b)
+nbtable(m4b)
+AIC(m1c, m2c, m3c, m4c)
+nbtable(m4c)
+## equation effect by journal/response
+##           comb nontheo theo
+## AmNat     =/-  -       +
+## Evolution =/+  =       +
+## ProcB     -    -       =/+
+</code></pre>
+
+
+</div>
+</body></html>

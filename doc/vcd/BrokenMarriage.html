@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: Broken Marriage Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>BrokenMarriage</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Broken Marriage Data</h2>
+
+<h3>Description</h3>
+
+<p>Data from the Danish Welfare Study about broken marriages or permanent
+relationships depending on gender and social rank.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("BrokenMarriage")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 20 observations and 4 variables.
+</p>
+
+<dl>
+<dt>Freq</dt><dd><p>frequency.</p>
+</dd>
+<dt>gender</dt><dd><p>factor indicating gender (male, female).</p>
+</dd>
+<dt>rank</dt><dd><p>factor indicating social rank (I, II, III, IV, V).</p>
+</dd>
+<dt>broken</dt><dd><p>factor indicating whether the marriage or permanent
+relationship was broken (yes, no).</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>E. B. Andersen (1991),
+The Statistical Analysis of Categorical Data, page 177.
+</p>
+
+
+<h3>References</h3>
+
+<p>E. B. Andersen (1991),
+<em>The Statistical Analysis of Categorical Data</em>.
+2nd edition.
+Springer-Verlag, Berlin.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("BrokenMarriage")
+structable(~ ., data = BrokenMarriage)
+</code></pre>
+
+
+</div>
+</body></html>

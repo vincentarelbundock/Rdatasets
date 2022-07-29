@@ -1,0 +1,96 @@
+<!DOCTYPE html><html><head><title>R: Isotopic Composition Plutonium Batches</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>pluton</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Isotopic Composition Plutonium Batches</h2>
+
+<h3>Description</h3>
+
+<p>The <code>pluton</code> data frame has 45 rows and 4 columns,
+containing percentages of isotopic composition of 45 Plutonium
+batches.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(pluton)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Pu238</dt><dd><p>the percentages of <code class="reqn">\ ^{238}Pu</code>,
+always less than 2 percent.</p>
+</dd>
+<dt>Pu239</dt><dd><p>the percentages of <code class="reqn">\ ^{239}Pu</code>,
+typically between 60 and 80 percent (from neutron capture of Uranium,
+<code class="reqn">\ ^{238}U</code>).</p>
+</dd>
+<dt>Pu240</dt><dd><p>percentage of the plutonium 240 isotope.</p>
+</dd>
+<dt>Pu241</dt><dd><p>percentage of the plutonium 241 isotope.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Note that the percentage of plutonium~242 can be computed from the
+other four percentages, see the examples.
+</p>
+<p>In the reference below it is explained why it is very desirable to
+combine these plutonium patches in three groups of similar size.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Available as &lsquo;<span class="file">pluton.dat</span>&rsquo; from the archive of the University of Antwerpen,
+
+
+
+
+&lsquo;<span class="file">..../datasets/clusplot-examples.tar.gz</span>&rsquo;, no longer available.
+</p>
+
+
+<h3>References</h3>
+
+<p>Rousseeuw, P.J. and Kaufman, L and Trauwaert, E. (1996)
+Fuzzy clustering using scatter matrices,
+<em>Computational Statistics and Data Analysis</em> <b>23</b>(1), 135&ndash;151.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(pluton)
+
+hist(apply(pluton,1,sum), col = "gray") # between 94% and 100%
+pu5 &lt;- pluton
+pu5$Pu242 &lt;- 100 - apply(pluton,1,sum) # the remaining isotope.
+pairs(pu5)
+</code></pre>
+
+
+</div>
+</body></html>

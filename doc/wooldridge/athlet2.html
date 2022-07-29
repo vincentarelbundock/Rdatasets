@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: athlet2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>athlet2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>athlet2</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Sources: Peterson's Guide to Four Year Colleges, 1995 (25th edition). Princeton University Press. 1995 Information Please Sports Almanac (6th edition). Houghton Mifflin. New York, NY Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('athlet2')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 30 observations on 10 variables:
+</p>
+
+<ul>
+<li> <p><strong>dscore:</strong> home scr. - vist. scr., 1993
+</p>
+</li>
+<li> <p><strong>dinstt:</strong> diff. in-state tuit., 1994
+</p>
+</li>
+<li> <p><strong>doutstt:</strong> diff. out-state tuit., 1994
+</p>
+</li>
+<li> <p><strong>htpriv:</strong> =1 if home team priv. sch.
+</p>
+</li>
+<li> <p><strong>vtpriv:</strong> =1 if vist. team priv. sch.
+</p>
+</li>
+<li> <p><strong>dapps:</strong> diff. in applications, 1994
+</p>
+</li>
+<li> <p><strong>htwrd:</strong> =1 if home win. record, 1993
+</p>
+</li>
+<li> <p><strong>vtwrd:</strong> =1 if vist. win. record, 1993
+</p>
+</li>
+<li> <p><strong>dwinrec:</strong> htwrd - vtwrd
+</p>
+</li>
+<li> <p><strong>dpriv:</strong> htpriv - vtpriv
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>These data were collected by Paul Anderson, an MSU economics major, for a term project. The score from football outcomes for natural rivals (Michigan-Michigan State, California-Stanford, Florida-Florida State, to name a few) is matched with application and academic data. The application and tuition data are for Fall 1994. Football records and scores are from 1993 football season. Extended these data to obtain a long stretch of panel data and other “natural” rivals could be very interesting.
+</p>
+<p>Used in Text: page 697
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(athlet2)
+</code></pre>
+
+
+</div>
+</body></html>

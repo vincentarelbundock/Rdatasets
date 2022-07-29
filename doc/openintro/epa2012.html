@@ -1,0 +1,131 @@
+<!DOCTYPE html><html><head><title>R: Vehicle info from the EPA for 2012</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>epa2012</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Vehicle info from the EPA for 2012</h2>
+
+<h3>Description</h3>
+
+<p>Details from the EPA.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>epa2012
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1129 observations on the following 28 variables.
+</p>
+
+<dl>
+<dt>model_yr</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>mfr_name</dt><dd><p>Manufacturer name.</p>
+</dd>
+<dt>division</dt><dd><p>Vehicle division.</p>
+</dd>
+<dt>carline</dt><dd><p>Vehicle line.</p>
+</dd>
+<dt>mfr_code</dt><dd><p>Manufacturer code.</p>
+</dd>
+<dt>model_type_index</dt><dd><p>Model type index.</p>
+</dd>
+<dt>engine_displacement</dt><dd><p>Engine displacement.</p>
+</dd>
+<dt>no_cylinders</dt><dd><p>Number of cylinders.</p>
+</dd>
+<dt>transmission_speed</dt><dd><p>Transmission speed.</p>
+</dd>
+<dt>city_mpg</dt><dd><p>City mileage.</p>
+</dd>
+<dt>hwy_mpg</dt><dd><p>Highway mileage.</p>
+</dd>
+<dt>comb_mpg</dt><dd><p>Combined mileage.</p>
+</dd>
+<dt>guzzler</dt><dd><p>Whether the car is considered a &quot;guzzler&quot; or not, a factor with levels <code>N</code> and <code>Y.</code></p>
+</dd>
+<dt>air_aspir_method</dt><dd><p>Air aspiration method.</p>
+</dd>
+<dt>air_aspir_method_desc</dt><dd><p>Air aspiration method description.</p>
+</dd>
+<dt>transmission</dt><dd><p>Transmission type.</p>
+</dd>
+<dt>transmission_desc</dt><dd><p>Transmission type description.</p>
+</dd>
+<dt>no_gears</dt><dd><p>Number of gears.</p>
+</dd>
+<dt>trans_lockup</dt><dd><p>Whether transmission locks up, a factor with levels <code>N</code> and <code>Y</code>.</p>
+</dd>
+<dt>trans_creeper_gear</dt><dd><p>A factor with level <code>N</code> only.</p>
+</dd>
+<dt>drive_sys</dt><dd><p>Drive system, a factor with levels.</p>
+</dd>
+<dt>drive_desc</dt><dd><p>Drive system description.</p>
+</dd>
+<dt>fuel_usage</dt><dd><p>Fuel usage, a factor with levels.</p>
+</dd>
+<dt>fuel_usage_desc</dt><dd><p>Fuel usage description.</p>
+</dd>
+<dt>class</dt><dd><p>Class of car.</p>
+</dd>
+<dt>car_truck</dt><dd><p>Car or truck, a factor with levels <code>car</code>, <code>1</code>, <code>2</code>.</p>
+</dd>
+<dt>release_date</dt><dd><p>Date of vehicle release.</p>
+</dd>
+<dt>fuel_cell</dt><dd><p>Whether the car has a fuel cell or not, a factor with levels <code>N</code>, <code>Y</code>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Fueleconomy.gov, Shared MPG Estimates: Toyota Prius 2012.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>epa2021
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+library(dplyr)
+
+# Variable descriptions
+distinct(epa2012, air_aspir_method_desc, air_aspir_method)
+distinct(epa2012, transmission_desc, transmission)
+distinct(epa2012, drive_desc, drive_sys)
+distinct(epa2012, fuel_usage_desc, fuel_usage)
+
+# Guzzlers and their mileages
+ggplot(epa2012, aes(x = city_mpg, y = hwy_mpg, color = guzzler)) +
+  geom_point() +
+  facet_wrap(~guzzler, ncol = 1)
+</code></pre>
+
+
+</div>
+</body></html>

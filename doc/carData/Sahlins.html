@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: Agricultural Production in Mazulu Village</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Sahlins</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Agricultural Production in Mazulu Village</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Sahlins</code> data frame has 20 rows and 2 columns.
+The observations are households in a Central African village.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Sahlins
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>consumers</dt><dd>
+<p>Consumers/Gardener, ratio of consumers to productive individuals.
+</p>
+</dd>
+<dt>acres</dt><dd>
+<p>Acres/Gardener, amount of land cultivated per gardener.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Sahlins, M. (1972)
+<em>Stone Age Economics.</em> 
+Aldine
+[Table 3.1]. 
+</p>
+
+
+<h3>References</h3>
+
+<p>Fox, J. (2016)
+<em>Applied Regression Analysis and Generalized Linear Models</em>,
+Third Edition. Sage.  
+</p>
+
+
+</div>
+</body></html>

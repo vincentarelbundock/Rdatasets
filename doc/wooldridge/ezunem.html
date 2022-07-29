@@ -1,0 +1,174 @@
+<!DOCTYPE html><html><head><title>R: ezunem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ezunem</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>ezunem</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: See EZANDERS.RAW Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('ezunem')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 198 observations on 37 variables:
+</p>
+
+<ul>
+<li> <p><strong>year:</strong> 1980 to 1988
+</p>
+</li>
+<li> <p><strong>uclms:</strong> unemployment claims
+</p>
+</li>
+<li> <p><strong>ez:</strong> =1 if have enterprise zone
+</p>
+</li>
+<li> <p><strong>d81:</strong> =1 if year == 1981
+</p>
+</li>
+<li> <p><strong>d82:</strong> =1 if year == 1982
+</p>
+</li>
+<li> <p><strong>d83:</strong> =1 if year == 1983
+</p>
+</li>
+<li> <p><strong>d84:</strong> =1 if year == 1984
+</p>
+</li>
+<li> <p><strong>d85:</strong> =1 if year == 1985
+</p>
+</li>
+<li> <p><strong>d86:</strong> =1 if year == 1986
+</p>
+</li>
+<li> <p><strong>d87:</strong> =1 if year == 1987
+</p>
+</li>
+<li> <p><strong>d88:</strong> =1 if year == 1988
+</p>
+</li>
+<li> <p><strong>c1:</strong> =1 if city == 1
+</p>
+</li>
+<li> <p><strong>c2:</strong> =1 if city == 2
+</p>
+</li>
+<li> <p><strong>c3:</strong> =1 if city == 3
+</p>
+</li>
+<li> <p><strong>c4:</strong> 
+</p>
+</li>
+<li> <p><strong>c5:</strong> 
+</p>
+</li>
+<li> <p><strong>c6:</strong> 
+</p>
+</li>
+<li> <p><strong>c7:</strong> 
+</p>
+</li>
+<li> <p><strong>c8:</strong> 
+</p>
+</li>
+<li> <p><strong>c9:</strong> 
+</p>
+</li>
+<li> <p><strong>c10:</strong> 
+</p>
+</li>
+<li> <p><strong>c11:</strong> 
+</p>
+</li>
+<li> <p><strong>c12:</strong> 
+</p>
+</li>
+<li> <p><strong>c13:</strong> 
+</p>
+</li>
+<li> <p><strong>c14:</strong> 
+</p>
+</li>
+<li> <p><strong>c15:</strong> 
+</p>
+</li>
+<li> <p><strong>c16:</strong> 
+</p>
+</li>
+<li> <p><strong>c17:</strong> 
+</p>
+</li>
+<li> <p><strong>c18:</strong> 
+</p>
+</li>
+<li> <p><strong>c19:</strong> 
+</p>
+</li>
+<li> <p><strong>c20:</strong> 
+</p>
+</li>
+<li> <p><strong>c21:</strong> 
+</p>
+</li>
+<li> <p><strong>c22:</strong> =1 if city == 22
+</p>
+</li>
+<li> <p><strong>luclms:</strong> log(uclms)
+</p>
+</li>
+<li> <p><strong>guclms:</strong> luclms - luclms[_n-1]
+</p>
+</li>
+<li> <p><strong>cez:</strong> ez - ez[_n-1]
+</p>
+</li>
+<li> <p><strong>city:</strong> city identifier, 1 through 22
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>A very good project is to have students analyze enterprise, empowerment, or renaissance zone policies in their home states. Many states now have such programs. A few years of panel data straddling periods of zone designation, at the city or zip code level, could make a nice study.
+</p>
+<p>Used in Text: pages 470, 504
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(ezunem)
+</code></pre>
+
+
+</div>
+</body></html>

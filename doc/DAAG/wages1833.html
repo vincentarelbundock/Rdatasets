@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: Wages of Lancashire Cotton Factory Workers in 1833</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>wages1833</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Wages of Lancashire Cotton Factory Workers in 1833</h2>
+
+<h3>Description</h3>
+
+<p>The <code>wages1833</code> data frame gives the wages 
+of Lancashire cotton factory workers in 1833. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>wages1833</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>age</dt><dd><p>age in years</p>
+</dd>
+<dt>mnum</dt><dd><p>number of male workers</p>
+</dd>
+<dt>mwage</dt><dd><p>average wage of male workers</p>
+</dd>
+<dt>fnum</dt><dd><p>number of female workers</p>
+</dd>
+<dt>fwage</dt><dd><p>average wage of female workers</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Boot, H.M. 1995. How Skilled Were the Lancashire Cotton Factory
+Workers in 1833? Economic History Review 48: 283-303.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>attach(wages1833)
+plot(mwage~age,ylim=range(c(mwage,fwage[fwage&gt;0])))
+points(fwage[fwage&gt;0]~age[fwage&gt;0],pch=15,col="red")
+lines(lowess(age,mwage))
+lines(lowess(age[fwage&gt;0],fwage[fwage&gt;0]),col="red")
+</code></pre>
+
+
+</div>
+</body></html>

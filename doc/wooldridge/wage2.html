@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: wage2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>wage2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>wage2</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: M. Blackburn and D. Neumark (1992), “Unobserved Ability, Efficiency Wages, and Interindustry Wage Differentials,” Quarterly Journal of Economics 107, 1421-1436. Professor Neumark kindly provided the data, of which I used just the data for 1980. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('wage2')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 935 observations on 17 variables:
+</p>
+
+<ul>
+<li> <p><strong>wage:</strong> monthly earnings
+</p>
+</li>
+<li> <p><strong>hours:</strong> average weekly hours
+</p>
+</li>
+<li> <p><strong>IQ:</strong> IQ score
+</p>
+</li>
+<li> <p><strong>KWW:</strong> knowledge of world work score
+</p>
+</li>
+<li> <p><strong>educ:</strong> years of education
+</p>
+</li>
+<li> <p><strong>exper:</strong> years of work experience
+</p>
+</li>
+<li> <p><strong>tenure:</strong> years with current employer
+</p>
+</li>
+<li> <p><strong>age:</strong> age in years
+</p>
+</li>
+<li> <p><strong>married:</strong> =1 if married
+</p>
+</li>
+<li> <p><strong>black:</strong> =1 if black
+</p>
+</li>
+<li> <p><strong>south:</strong> =1 if live in south
+</p>
+</li>
+<li> <p><strong>urban:</strong> =1 if live in SMSA
+</p>
+</li>
+<li> <p><strong>sibs:</strong> number of siblings
+</p>
+</li>
+<li> <p><strong>brthord:</strong> birth order
+</p>
+</li>
+<li> <p><strong>meduc:</strong> mother's education
+</p>
+</li>
+<li> <p><strong>feduc:</strong> father's education
+</p>
+</li>
+<li> <p><strong>lwage:</strong> natural log of wage
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>As with WAGE1.RAW, there are some clear inconsistencies among the variables tenure, exper, and age. I have not been able to track down the causes, and so any changes would be effectively arbitrary. Instead, I am using the data as provided by the authors of the above QJE article.
+</p>
+<p>Used in Text: pages 64, 106, 111, 165, 218-219, 220-221, 262, 310-312, 338, 519-520, 534, 546-547, 549, 678
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(wage2)
+</code></pre>
+
+
+</div>
+</body></html>

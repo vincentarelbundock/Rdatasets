@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head><title>R: Cost Function of Electricity Producers 1970</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Electricity1970</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cost Function of Electricity Producers 1970</h2>
+
+<h3>Description</h3>
+
+<p>Cross-section data, at the firm level, on electric power generation.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Electricity1970")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 158 cross-section observations on 9 variables.
+</p>
+
+<dl>
+<dt>cost</dt><dd><p>total cost.</p>
+</dd>
+<dt>output</dt><dd><p>total output.</p>
+</dd>
+<dt>labor</dt><dd><p>wage rate.</p>
+</dd>
+<dt>laborshare</dt><dd><p>cost share for labor.</p>
+</dd>
+<dt>capital</dt><dd><p>capital price index.</p>
+</dd>
+<dt>capitalshare</dt><dd><p>cost share for capital.</p>
+</dd>
+<dt>fuel</dt><dd><p>fuel price.</p>
+</dd>
+<dt>fuelshare</dt><dd><p>cost share for fuel.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are from Christensen and Greene (1976) and pertain to the year 1970. 
+However, the file contains some extra observations, the holding companies. 
+Only the first 123 observations are needed to replicate Christensen and Greene (1976).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Greene (2003), Table F5.2.
+</p>
+<p><a href="https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm">https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Christensen, L. and Greene, W.H. (1976). Economies of Scale in U.S. Electric Power Generation.
+<em>Journal of Political Economy</em>, <b>84</b>, 655&ndash;676.
+</p>
+<p>Greene, W.H. (2003). <em>Econometric Analysis</em>, 5th edition. Upper Saddle River, NJ: Prentice Hall.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Greene2003</code>, <code>Electricity1955</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("Electricity1970")
+
+## Greene (2003), Ex. 5.6: a generalized Cobb-Douglas cost function
+fm &lt;- lm(log(cost/fuel) ~ log(output) + I(log(output)^2/2) + 
+  log(capital/fuel) + log(labor/fuel), data=Electricity1970[1:123,])
+
+</code></pre>
+
+
+</div>
+</body></html>

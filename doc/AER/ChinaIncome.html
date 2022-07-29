@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: Chinese Real National Income Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ChinaIncome</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Chinese Real National Income Data</h2>
+
+<h3>Description</h3>
+
+<p>Time series of real national income in China per section (index with 1952 = 100).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("ChinaIncome")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An annual multiple time series from 1952 to 1988 with 5 variables.
+</p>
+
+<dl>
+<dt>agriculture</dt><dd><p>Real national income in agriculture sector.</p>
+</dd>
+<dt>industry</dt><dd><p>Real national income in industry sector.</p>
+</dd>
+<dt>construction</dt><dd><p>Real national income in construction sector.</p>
+</dd>
+<dt>transport</dt><dd><p>Real national income in transport sector.</p>
+</dd>
+<dt>commerce</dt><dd><p>Real national income in commerce sector.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Online complements to Franses (1998).
+</p>
+
+
+<h3>References</h3>
+
+<p>Chow, G.C. (1993). Capital Formation and Economic Growth in China.
+<em>Quarterly Journal of Economics</em>, <b>103</b>, 809&ndash;842.
+</p>
+<p>Franses, P.H. (1998). <em>Time Series Models for Business and Economic Forecasting</em>.
+Cambridge, UK: Cambridge University Press.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Franses1998</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("ChinaIncome")
+plot(ChinaIncome)
+</code></pre>
+
+
+</div>
+</body></html>

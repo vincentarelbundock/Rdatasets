@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><title>R: Marvel Cinematic Universe films</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>mcu_films</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Marvel Cinematic Universe films</h2>
+
+<h3>Description</h3>
+
+<p>A list of Marvel Cinematic Universe films through the Infinity saga.
+The Infinity saga is a 23 movie storyline spanning from Ironman
+in 2008 to Endgame in 2019.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>mcu_films
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 23 rows and 7 variables.
+</p>
+
+<dl>
+<dt>movie</dt><dd><p>Title of the movie.</p>
+</dd>
+<dt>length_hrs</dt><dd><p>Length of the movie: hours portion.</p>
+</dd>
+<dt>length_min</dt><dd><p>Length of the movie: minutes portion.</p>
+</dd>
+<dt>release_date</dt><dd><p>Date the movie was released in the US.</p>
+</dd>
+<dt>opening_weekend_us</dt><dd><p>Box office totals for opening weekend in the US.</p>
+</dd>
+<dt>gross_us</dt><dd><p>All box office totals in US.</p>
+</dd>
+<dt>gross_world</dt><dd><p>All box office totals world wide.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Box office figures are not adjusted to a specific year.
+They are from the year the film was released.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.imdb.com/">Internet Movie Database</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+library(scales)
+
+ggplot(mcu_films, aes(x = opening_weekend_us, y = gross_us)) +
+  geom_point() +
+  labs(
+    title = "MCU Box Office Totals: Opening weekend vs. all-time",
+    x = "Opening weekend totals (USD in millions)",
+    y = "All-time totals (USD)"
+  ) +
+  scale_x_continuous(labels = label_dollar(scale = 1 / 1000000)) +
+  scale_y_continuous(labels = label_dollar(scale = 1 / 1000000))
+</code></pre>
+
+
+</div>
+</body></html>

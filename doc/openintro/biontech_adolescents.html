@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: Efficacy of Pfizer-BioNTech COVID-19 vaccine on adolescents</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>biontech_adolescents</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Efficacy of Pfizer-BioNTech COVID-19 vaccine on adolescents</h2>
+
+<h3>Description</h3>
+
+<p>On March 31, 2021, Pfizer and BioNTech announced that &quot;in a Phase 3 trial in
+adolescents 12 to 15 years of age with or without prior evidence of SARS-CoV-2
+infection, the Pfizer-BioNTech COVID-19 vaccine BNT162b2 demonstrated
+100% efficacy and robust antibody responses, exceeding those recorded earlier
+in vaccinated participants aged 16 to 25 years old, and was well tolerated.&quot;
+These results are from a Phase 3 trial in 2,260 adolescents 12 to 15 years of
+age in the United States. In the trial, 18 cases of COVID-19 were observed
+in the placebo group (n = 1,129) versus none in the vaccinated group (n = 1,131).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>biontech_adolescents
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2260 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt>group</dt><dd><p>Study group: <code>vaccine</code> (Pfizer-BioNTech COVID-19 vaccine administered)
+or <code>placebo</code>.</p>
+</dd>
+<dt>outcome</dt><dd><p>Study outcome: <code>COVID-19</code> or <code style="white-space: pre;">&#8288;no COVID-19&#8288;</code>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.pfizer.com/news/press-release/press-release-detail/pfizer-biontech-announce-positive-topline-results-pivotal">&quot;Pfizer-Biontech Announce Positive Topline Results Of Pivotal Covid-19 Vaccine Study In Adolescents&quot;</a>.
+March 21, 2021. (Retrieved April 25, 2021.)
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(dplyr)
+library(ggplot2)
+
+biontech_adolescents %&gt;%
+  count(group, outcome)
+
+ggplot(biontech_adolescents, aes(y = group, fill = outcome)) +
+  geom_bar()
+</code></pre>
+
+
+</div>
+</body></html>

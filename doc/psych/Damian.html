@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Project Talent data set from Marion Spengler and Rodica...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for Spengler"><tr><td>Spengler</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Project Talent data set from Marion Spengler and Rodica Damian
+</h2>
+
+<h3>Description</h3>
+
+<p>Project Talent gave 440,000 US high school students a number of personality and ability tests. Of these, the data fror 346,000 were available for followup. Subsequent followups were collected 11 and 50 years later.
+Marion Spengler and her colleagues Rodica Damian, and Brent Roberts reported on the stability and change across 50 years of personality and ability. Here is the correlation matrix of 25 of their variables (Spengler) as well as a slightly different set of 19 variables (Damian).
+This is a nice example of mediation and regression from a correlation matrix.  (Temporarily copied from psychTools to pass CRAN checks.  )
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>data("Damian")</pre>
+
+
+<h3>Format</h3>
+
+<p>A 25 x 25 correlation matrix of demographic, personality, and ability variables, based upon 346,660 participants.
+</p>
+
+<dl>
+<dt><code>Race/Ethnicity</code></dt><dd><p>1 = other, 2 = white/caucasian</p>
+</dd>
+<dt><code>Sex</code></dt><dd><p>1=Male, 2=Female</p>
+</dd>
+<dt><code>Age</code></dt><dd><p>Cohort =9th grade, 10th grade, 11th grade, 12th grade</p>
+</dd>
+<dt><code>Parental</code></dt><dd><p>Parental SES based upon 9 questions of home value, family income, etc.</p>
+</dd>
+<dt><code>IQ</code></dt><dd><p>Standardized composite of Verbal, Spatial and Mathematical</p>
+</dd>
+<dt><code>Sociability etc.</code></dt><dd><p>10 scales based upon prior work by Damian and Roberts</p>
+</dd>
+<dt><code>Maturity</code></dt><dd><p>A higher order factor from the prior 10 scales</p>
+</dd>
+<dt><code>Extraversion</code></dt><dd><p>The second higher order factor</p>
+</dd>
+<dt><code>Interest</code></dt><dd><p>Self reported interest in school</p>
+</dd>
+<dt><code>Reading</code></dt><dd><p>Self report reading skills</p>
+</dd>
+<dt><code>Writing</code></dt><dd><p>Self report writing skills </p>
+</dd>
+<dt><code>Responsible</code></dt><dd><p>Self reported responsibility scale</p>
+</dd>
+<dt><code>Ed.11</code></dt><dd><p>Education level at 11 year followup</p>
+</dd>
+<dt><code>Educ.50</code></dt><dd><p>Education level at 50 year followup</p>
+</dd>
+<dt><code>OccPres.11</code></dt><dd><p>Occupational Prestige at 11 year followup</p>
+</dd>
+<dt><code>OccPres.50</code></dt><dd><p>Occupational Prestige at 50 year followup</p>
+</dd>
+<dt><code>Income.11</code></dt><dd><p>Income at 11 year followup</p>
+</dd>
+<dt><code>Income.50</code></dt><dd><p>Income at 50 year followup</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data from Project Talent was collected in 1960 on a representative sample of American high school students.  Subsequent follow up 11 and 50 years later are reported by Spengler et al (2018) and others.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Marion Spengler, supplementary material to Damian et al. and Spengler et al.
+</p>
+
+
+<h3>References</h3>
+
+<p>Rodica Ioana Damian and Marion Spengler and Andreea Sutu and Brent W. Roberts, 2019, Sixteen going on sixty-six: A longitudinal study of personality stability and change across 50 years 
+Journal of Personality and Social Psychology. 117, (3) 274-695.
+</p>
+<p>Marian Spengler and Rodica Ioana Damian and Brent W. Roberts (2018), How you behave in school predicts life success above and beyond family background, broad traits, and cognitive ability
+Journal of Personality and Social Psychology, 114 (4) 600-636
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+data(Damian)
+Spengler.stat #show the basic descriptives of the original data set
+psych::lowerMat(Spengler[psych::cs(IQ,Parental,Ed.11,OccPres.50),
+                        psych::cs(IQ,Parental,Ed.11,OccPres.50)])
+psych::setCor(OccPres.50 ~ IQ + Parental + (Ed.11),data=Spengler)
+#we reduce the number of subjects for faster replication in this example
+mod &lt;- psych::mediate(OccPres.50 ~ IQ + Parental + (Ed.11),data=Spengler,
+       n.iter=50,n.obs=1000) #for speed
+summary(mod)
+
+</pre>
+
+
+</div></body></html>

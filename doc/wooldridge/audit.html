@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: audit</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>audit</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>audit</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: These data come from a 1988 Urban Institute audit study in the Washington, D.C. area. I obtained them from the article “The Urban Institute Audit Studies: Their Methods and Findings,” by James J. Heckman and Peter Siegelman. In Fix, M. and Struyk, R., eds., Clear and Convincing Evidence: Measurement of Discrimination in America. Washington, D.C.: Urban Institute Press, 1993, 187-258. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('audit')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 241 observations on 3 variables:
+</p>
+
+<ul>
+<li> <p><strong>w:</strong> =1 if white app. got job offer
+</p>
+</li>
+<li> <p><strong>b:</strong> =1 if black app. got job offer
+</p>
+</li>
+<li> <p><strong>y:</strong> b - w
+</p>
+</li></ul>
+
+
+
+<h3>Used in Text</h3>
+
+<p>pages 776-777, 784, 787
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(audit)
+</code></pre>
+
+
+</div>
+</body></html>

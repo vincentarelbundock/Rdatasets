@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><title>R: data from Section 1.15</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>psych</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>data from Section 1.15</h2>
+
+<h3>Description</h3>
+
+<p>The <code>psych</code> data frame has 927 rows and 10 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>sex</dt><dd>
+<p>Patient sex (1=male, 2=female)
+</p>
+</dd>
+<dt>age</dt><dd>
+<p>Patient age
+</p>
+</dd>
+<dt>time</dt><dd>
+<p>Time to death or on-study time
+</p>
+</dd>
+<dt>death</dt><dd>
+<p>Death indicator (0=alive, 1=dead)
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Klein and Moeschberger (1997) <em>Survival Analysis Techniques for Censored
+and truncated data</em>, Springer.
+Woolsen Biometrics 37 (1981): 687-696.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(psych)
+</code></pre>
+
+
+</div>
+</body></html>

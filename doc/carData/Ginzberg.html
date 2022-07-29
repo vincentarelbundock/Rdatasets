@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><title>R: Data on Depression</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Ginzberg</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Data on Depression</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Ginzberg</code> data frame has 82 rows and 6 columns.
+The data are for psychiatric patients hospitalized for depression.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Ginzberg
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>simplicity</dt><dd>
+<p>Measures subject's need to see the world in black and white.
+</p>
+</dd>
+<dt>fatalism</dt><dd>
+<p>Fatalism scale.
+</p>
+</dd>
+<dt>depression</dt><dd>
+<p>Beck self-report depression scale.
+</p>
+</dd>
+<dt>adjsimp</dt><dd>
+<p>Adjusted Simplicity: Simplicity adjusted (by regression) for other
+variables thought to influence depression.
+</p>
+</dd>
+<dt>adjfatal</dt><dd>
+<p>Adjusted Fatalism.
+</p>
+</dd>
+<dt>adjdep</dt><dd>
+<p>Adjusted Depression.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Personal communication from Georges Monette, Department of
+Mathematics and Statistics, York University, with the permission
+of the original investigator.
+</p>
+
+
+<h3>References</h3>
+
+<p>Fox, J. (2016)
+<em>Applied Regression Analysis and Generalized Linear Models</em>,
+Third Edition. Sage.  
+</p>
+
+
+</div>
+</body></html>

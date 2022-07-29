@@ -1,0 +1,133 @@
+<!DOCTYPE html><html><head><title>R: Batter Statistics for 2018 Major League Baseball (MLB) Season</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>mlb_players_18</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Batter Statistics for 2018 Major League Baseball (MLB) Season</h2>
+
+<h3>Description</h3>
+
+<p>Batter statistics for 2018 Major League Baseball season.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>mlb_players_18
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1270 observations on the following 19 variables.
+</p>
+
+<dl>
+<dt>name</dt><dd><p>Player name</p>
+</dd>
+<dt>team</dt><dd><p>Team abbreviation</p>
+</dd>
+<dt>position</dt><dd><p>Position abbreviation: <code>1B</code> = first base,
+<code>2B</code> = second base, <code>3B</code> = third base, <code>C</code> = catcher,
+<code>CF</code> = center field (outfield), <code>DH</code> = designated hitter,
+<code>LF</code> = left field (outfield), <code>P</code> = pitcher,
+<code>RF</code> = right field (outfield), <code>SS</code> = shortstop.</p>
+</dd>
+<dt>games</dt><dd><p>Number of games played.</p>
+</dd>
+<dt>AB</dt><dd><p>At bats.</p>
+</dd>
+<dt>R</dt><dd><p>Runs.</p>
+</dd>
+<dt>H</dt><dd><p>Hits.</p>
+</dd>
+<dt>doubles</dt><dd><p>Doubles.</p>
+</dd>
+<dt>triples</dt><dd><p>Triples.</p>
+</dd>
+<dt>HR</dt><dd><p>Home runs.</p>
+</dd>
+<dt>RBI</dt><dd><p>Runs batted in.</p>
+</dd>
+<dt>walks</dt><dd><p>Walks.</p>
+</dd>
+<dt>strike_outs</dt><dd><p>Strike outs.</p>
+</dd>
+<dt>stolen_bases</dt><dd><p>Stolen bases.</p>
+</dd>
+<dt>caught_stealing_base</dt><dd><p>Number of times caught stealing a base.</p>
+</dd>
+<dt>AVG</dt><dd><p>Batting average.</p>
+</dd>
+<dt>OBP</dt><dd><p>On-base percentage.</p>
+</dd>
+<dt>SLG</dt><dd><p>Slugging percentage.</p>
+</dd>
+<dt>OPS</dt><dd><p>On-base percentage plus slugging percentage.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.mlb.com/stats">https://www.mlb.com/stats</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>mlbbat10</code>, <code>mlb</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+d &lt;- subset(mlb_players_18, !position %in% c("P", "DH") &amp; AB &gt;= 100)
+dim(d)
+
+# _____ Per Position, No Further Grouping _____ #
+plot(d$OBP ~ as.factor(d$position))
+model &lt;- lm(OBP ~ as.factor(position), d)
+summary(model)
+anova(model)
+
+# _____ Simplified Analysis, Fewer Positions _____ #
+pos &lt;- list(
+  c("LF", "CF", "RF"),
+  c("1B", "2B", "3B", "SS"),
+  "C"
+)
+POS &lt;- c("OF", "IF", "C")
+table(d$position)
+
+# _____ On-Base Percentage Across Positions _____ #
+out &lt;- c()
+gp &lt;- c()
+for (i in 1:length(pos)) {
+  these &lt;- which(d$position %in% pos[[i]])
+  out &lt;- c(out, d$OBP[these])
+  gp &lt;- c(gp, rep(POS[i], length(these)))
+}
+plot(out ~ as.factor(gp))
+summary(lm(out ~ as.factor(gp)))
+anova(lm(out ~ as.factor(gp)))
+</code></pre>
+
+
+</div>
+</body></html>

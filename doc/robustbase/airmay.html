@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: Air Quality Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>airmay</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Air Quality Data</h2>
+
+<h3>Description</h3>
+
+<p>Air Quality Data Set for May 1973, from Chambers et al. (1983).
+The whole data set consists of daily readings of air quality
+values from May 1, 1973 to September 30, 1973,
+but here are included only the values for May. This data set
+is an example of the special treatment of the missing values.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(airmay, package="robustbase")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 31 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>X1</code></dt><dd><p>Solar Radiation in Longleys in the frequency
+band 4000-7700 from 0800 to 1200 hours at Central Park</p>
+</dd>
+<dt><code>X2</code></dt><dd><p>Average windspeed (in miles per hour) between 7000
+and 1000 hours at La Guardia Airport</p>
+</dd>
+<dt><code>X3</code></dt><dd><p>Maximum daily temperature (in degrees Fahrenheit)
+at La Guardia Airport</p>
+</dd>
+<dt><code>Y</code></dt><dd><p>Mean ozone concentration (in parts per billion)
+from 1300 to 1500 hours at Roosevelt Island</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>P. J. Rousseeuw and A. M. Leroy (1987)
+<em>Robust Regression and Outlier Detection</em>;
+Wiley, p.86, table 6.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(airmay)
+summary(lm.airmay &lt;- lm(Y ~ ., data=airmay))
+
+
+airmay.x &lt;- data.matrix(airmay[,1:3])
+
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html><html><head><title>R: Municipal Expenditure Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Municipalities</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Municipal Expenditure Data</h2>
+
+<h3>Description</h3>
+
+<p>Panel data set for 265 Swedish municipalities covering 9 years (1979-1987).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Municipalities")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 2,385 observations on 5 variables.
+</p>
+
+<dl>
+<dt>municipality</dt><dd><p>factor with ID number for municipality.</p>
+</dd>
+<dt>year</dt><dd><p>factor coding year.</p>
+</dd>
+<dt>expenditures</dt><dd><p>total expenditures.</p>
+</dd>
+<dt>revenues</dt><dd><p>total own-source revenues.</p>
+</dd>
+<dt>grants</dt><dd><p>intergovernmental grants received by the municipality.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Total expenditures contains both capital and current expenditures. 
+</p>
+<p>Expenditures, revenues, and grants are expressed in million SEK. The 
+series are deflated and in per capita form. The implicit deflator is a 
+municipality-specific price index obtained by dividing total local 
+consumption expenditures at current prices by total local consumption 
+expenditures at fixed (1985) prices. 
+</p>
+<p>The data are gathered by Statistics Sweden and obtained from 
+Financial Accounts for the Municipalities (Kommunernas Finanser). 
+</p>
+
+
+<h3>Source</h3>
+
+<p>Journal of Applied Econometrics Data Archive. 
+</p>
+<p><a href="http://qed.econ.queensu.ca/jae/2000-v15.4/dahlberg-johansson/">http://qed.econ.queensu.ca/jae/2000-v15.4/dahlberg-johansson/</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Dahlberg, M., and Johansson, E. (2000). An Examination of the Dynamic Behavior of Local Governments Using GMM Bootstrapping Methods. 
+<em>Journal of Applied Econometrics</em>, <b>15</b>, 401&ndash;416.
+</p>
+<p>Greene, W.H. (2003). <em>Econometric Analysis</em>, 5th edition. Upper Saddle River, NJ: Prentice Hall.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Greene2003</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Greene (2003), Table 18.2
+data("Municipalities")
+summary(Municipalities)
+</code></pre>
+
+
+</div>
+</body></html>

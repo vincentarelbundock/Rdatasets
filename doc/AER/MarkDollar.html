@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: DEM/USD Exchange Rate Returns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>MarkDollar</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>DEM/USD Exchange Rate Returns</h2>
+
+<h3>Description</h3>
+
+<p>A time series of intra-day percentage returns of Deutsche mark/US dollar (DEM/USD)
+exchange rates, consisting of two observations per day from 1992-10-01 through 1993-09-29.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("MarkDollar")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A univariate time series of 518 returns (exact dates unknown) for the DEM/USD exchange rate.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Journal of Business &amp; Economic Statistics Data Archive. 
+</p>
+<p><code style="white-space: pre;">&#8288;http://www.amstat.org/publications/jbes/upload/index.cfm?fuseaction=ViewArticles&amp;pub=JBES&amp;issue=96-2-APR&#8288;</code>
+</p>
+
+
+<h3>References</h3>
+
+<p>Bollerslev, T., and Ghysels, E. (1996). Periodic Autoregressive Conditional Heteroskedasticity.  
+<em>Journal of Business &amp; Economic Statistics</em>,
+<b>14</b>, 139&ndash;151.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>MarkPound</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library("tseries")
+data("MarkDollar")
+
+## GARCH(1,1)
+fm &lt;- garch(MarkDollar, grad = "numerical")
+summary(fm)
+logLik(fm)  
+</code></pre>
+
+
+</div>
+</body></html>

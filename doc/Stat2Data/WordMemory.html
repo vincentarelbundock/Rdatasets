@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: Experiment on Word Memory</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>WordMemory</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Experiment on Word Memory</h2>
+
+<h3>Description</h3>
+
+<p>Percentage of different types of words recalled
+</p>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 40 observations on the following 4 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>Subject</code></td><td style="text-align: left;"> Code to identify each subject: <code>A</code> to <code>J</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Abstract</code></td><td style="text-align: left;"> Words were abstract? <code>No</code> or <code>Yes</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Frequent</code></td><td style="text-align: left;"> Words were common? <code>No</code> or <code>Yes</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Percent</code></td><td style="text-align: left;"> Percentage of words recalled (out of 25)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>One hundred words were presented to each subject in a randomized order.
+The goal of the experiment was to see whether some kinds of words were easier to remember than
+others. In particular, are common words like potato, love, diet, and magazine easier to remember
+than less common words like manatee, hangnail, fillip, and apostasy? Are concrete words like coffee,
+dog, kale, and tamborine easier than abstract words like beauty, sympathy, fauna, and guile? There
+were 25 words each of four kinds, obtained by crossing the two factors of interest, Abstraction
+(concrete or abstract) and Frequency (common or rare).
+</p>
+<p>This dataset appears in the first edition, but is not used in the second edition.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data from a student laboratory project, Department of Psychology and Education, Mount Holyoke College.
+</p>
+
+
+</div>
+</body></html>

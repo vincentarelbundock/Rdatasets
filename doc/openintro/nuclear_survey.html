@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><title>R: Nuclear Arms Reduction Survey</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>nuclear_survey</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Nuclear Arms Reduction Survey</h2>
+
+<h3>Description</h3>
+
+<p>A simple random sample of 1,028 US adults in March 2013 found that 56\
+support nuclear arms reduction.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>nuclear_survey
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1028 observations on the following variable.
+</p>
+<dl>
+<dt>arms_reduction</dt><dd><p>Responses of <code>favor</code> or
+<code>against</code>.</p>
+</dd> </dl>
+
+
+
+<h3>Source</h3>
+
+<p>Gallup report: In U.S., 56 percent Favor U.S.-Russian Nuclear Arms Reductions.
+Available at <a href="https://news.gallup.com/poll/161198/favor-russian-nuclear-arms-reductions.aspx">https://news.gallup.com/poll/161198/favor-russian-nuclear-arms-reductions.aspx</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+table(nuclear_survey)
+</code></pre>
+
+
+</div>
+</body></html>

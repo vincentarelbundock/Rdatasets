@@ -1,0 +1,109 @@
+<!DOCTYPE html><html><head><title>R: London Murders, 2006-2011</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>london_murders</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>London Murders, 2006-2011</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains the victim name, age, and location of every murder
+recorded in the Greater London area by the Metropolitan Police from January
+1, 2006 to September 7, 2011.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>london_murders
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 838 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt>forename</dt><dd><p>First name(s) of the victim.</p>
+</dd>
+<dt>age</dt><dd><p>Age of the victim.</p>
+</dd>
+<dt>date</dt><dd><p>Date of the murder (YYYY-MM-DD).</p>
+</dd>
+<dt>year</dt><dd><p>Year of the murder.</p>
+</dd>
+<dt>borough</dt><dd><p>The London borough in which the murder took place. See the Details section for a list of all the boroughs.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>To visualize this data set using a map, see the
+<code>london_boroughs</code> dataset, which contains the latitude and
+longitude of polygons that define the boundaries of the 32 boroughs of
+Greater London.
+</p>
+<p>The <code>borough</code> variable covers all 32 boroughs in Greater London:
+<code>Barking &amp; Dagenham</code>, <code>Barnet</code>, <code>Bexley</code>, <code>Brent</code>,
+<code>Bromley</code>, <code>Camden</code>, <code>Croydon</code>, <code>Ealing</code>,
+<code>Enfield</code>, <code>Greenwich</code>, <code>Hackney</code>, <code>Hammersmith &amp;
+Fulham</code>, <code>Haringey</code>, <code>Harrow</code>, <code>Havering</code>, <code>Hillingdon</code>,
+<code>Hounslow</code>, <code>Islington</code>, <code>Kensington &amp; Chelsea</code>,
+<code>Kingston</code>, <code>Lambeth</code>, <code>Lewisham</code>, <code>Merton</code>,
+<code>Newham</code>, <code>Redbridge</code>, <code>Richmond</code>, <code>Southwark</code>,
+<code>Sutton</code>, <code>Tower Hamlets</code>, <code>Waltham Forest</code>,
+<code>Wandsworth</code>, <code>Westminster</code>
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.theguardian.com/news/datablog/2011/oct/05/murder-london-list#data">https://www.theguardian.com/news/datablog/2011/oct/05/murder-london-list#data</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Inspired by <a href="https://www.theguardian.com/news/datablog/interactive/2011/oct/05/murder-london-map">The Guardian Datablog</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+
+london_murders %&gt;%
+  mutate(
+    day_count = as.numeric(date - ymd("2006-01-01")),
+    date_cut = cut(day_count, seq(0, 2160, 90))
+  ) %&gt;%
+  group_by(date_cut) %&gt;%
+  add_tally() %&gt;%
+  ggplot(aes(x = date_cut, y = n)) +
+  geom_col() +
+  theme(axis.text.x = element_blank(), axis.ticks.x = element_blank()) +
+  labs(x = "Date from 01/2006 - 09/2011", y = "Number of deaths per 90 days")
+</code></pre>
+
+
+</div>
+</body></html>

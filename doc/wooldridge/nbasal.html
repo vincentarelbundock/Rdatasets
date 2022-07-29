@@ -1,0 +1,129 @@
+<!DOCTYPE html><html><head><title>R: nbasal</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>nbasal</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>nbasal</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Collected by Christopher Torrente, a former MSU undergraduate, for a term project. He obtained the salary data and the career statistics from The Complete Handbook of Pro Basketball, 1995, edited by Zander Hollander. New York: Signet. The demographic information (marital status, number of children, and so on) was obtained from the teams’ 1994-1995 media guides. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('nbasal')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 269 observations on 22 variables:
+</p>
+
+<ul>
+<li> <p><strong>marr:</strong> =1 if married
+</p>
+</li>
+<li> <p><strong>wage:</strong> annual salary, thousands $
+</p>
+</li>
+<li> <p><strong>exper:</strong> years as professional player
+</p>
+</li>
+<li> <p><strong>age:</strong> age in years
+</p>
+</li>
+<li> <p><strong>coll:</strong> years played in college
+</p>
+</li>
+<li> <p><strong>games:</strong> average games per year
+</p>
+</li>
+<li> <p><strong>minutes:</strong> average minutes per year
+</p>
+</li>
+<li> <p><strong>guard:</strong> =1 if guard
+</p>
+</li>
+<li> <p><strong>forward:</strong> =1 if forward
+</p>
+</li>
+<li> <p><strong>center:</strong> =1 if center
+</p>
+</li>
+<li> <p><strong>points:</strong> points per game
+</p>
+</li>
+<li> <p><strong>rebounds:</strong> rebounds per game
+</p>
+</li>
+<li> <p><strong>assists:</strong> assists per game
+</p>
+</li>
+<li> <p><strong>draft:</strong> draft number
+</p>
+</li>
+<li> <p><strong>allstar:</strong> =1 if ever all star
+</p>
+</li>
+<li> <p><strong>avgmin:</strong> minutes per game
+</p>
+</li>
+<li> <p><strong>lwage:</strong> log(wage)
+</p>
+</li>
+<li> <p><strong>black:</strong> =1 if black
+</p>
+</li>
+<li> <p><strong>children:</strong> =1 if has children
+</p>
+</li>
+<li> <p><strong>expersq:</strong> exper^2
+</p>
+</li>
+<li> <p><strong>agesq:</strong> age^2
+</p>
+</li>
+<li> <p><strong>marrblck:</strong> marr*black
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>A panel version of this data set could be useful for further isolating productivity effects of marital status. One would need to obtain information on enough different players in at least two years, where some players who were not married in the initial year are married in later years. Fixed effects (or first differencing, for two years) is the natural estimation method.
+</p>
+<p>Used in Text: pages 222-223, 264-265
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(nbasal)
+</code></pre>
+
+
+</div>
+</body></html>

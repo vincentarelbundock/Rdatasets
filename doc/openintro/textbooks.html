@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><title>R: Textbook data for UCLA Bookstore and Amazon</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>textbooks</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Textbook data for UCLA Bookstore and Amazon</h2>
+
+<h3>Description</h3>
+
+<p>A random sample was taken of nearly 10\
+textbook for each course was identified, and its new price at the UCLA
+Bookstore and on Amazon.com were recorded.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>textbooks
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 73 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt>dept_abbr</dt><dd><p>Course department (abbreviated).</p>
+</dd>
+<dt>course</dt><dd><p>Course number.</p>
+</dd>
+<dt>isbn</dt><dd><p>Book ISBN.</p>
+</dd>
+<dt>ucla_new</dt><dd><p>New price at the UCLA Bookstore.</p>
+</dd>
+<dt>amaz_new</dt><dd><p>New price on Amazon.com.</p>
+</dd>
+<dt>more</dt><dd><p>Whether additional books were required for the course (<code>Y</code> means &quot;yes, additional books were required&quot;).</p>
+</dd>
+<dt>diff</dt><dd><p>The UCLA Bookstore price minus the Amazon.com price for each book.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The sample represents only courses where textbooks were listed online
+through UCLA Bookstore's website. The most expensive textbook was selected
+based on the UCLA Bookstore price, which may insert bias into the data; for
+this reason, it may be beneficial to analyze only the data where <code>more</code>
+is <code>"N"</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Collected by David Diez.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+
+ggplot(textbooks, aes(x = diff)) +
+  geom_histogram(binwidth = 5)
+
+t.test(textbooks$diff)
+</code></pre>
+
+
+</div>
+</body></html>

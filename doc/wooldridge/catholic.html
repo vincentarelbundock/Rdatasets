@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head><title>R: catholic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>catholic</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>catholic</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Altonji, J.G., T.E. Elder, and C.R. Taber (2005), “An Evaluation of Instrumental Variable Strategies for Estimating the Effects of Catholic Schooling,” Journal of Human Resources 40, 791-821. Professor Elder kindly provided a subset of the data, with some variables stripped away for confidentiality reasons. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('catholic')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 7430 observations on 13 variables:
+</p>
+
+<ul>
+<li> <p><strong>id: </strong>person identifier
+</p>
+</li>
+<li> <p><strong>read12: </strong>reading standardized score
+</p>
+</li>
+<li> <p><strong>math12: </strong>mathematics standardized score
+</p>
+</li>
+<li> <p><strong>female: </strong>=1 if female
+</p>
+</li>
+<li> <p><strong>asian: </strong>=1 if Asian
+</p>
+</li>
+<li> <p><strong>hispan: </strong>=1 if Hispanic
+</p>
+</li>
+<li> <p><strong>black: </strong>=1 if black
+</p>
+</li>
+<li> <p><strong>motheduc: </strong>mother's years of education
+</p>
+</li>
+<li> <p><strong>fatheduc: </strong>father's years of education
+</p>
+</li>
+<li> <p><strong>lfaminc: </strong>log of family income
+</p>
+</li>
+<li> <p><strong>hsgrad: </strong>=1 if graduated from high school by 1994
+</p>
+</li>
+<li> <p><strong>cathhs: </strong>=1 if attended Catholic HS
+</p>
+</li>
+<li> <p><strong>parcath: </strong>=1 if a parent reports being Catholic
+</p>
+</li></ul>
+
+
+
+<h3>Used in Text</h3>
+
+<p>pages 267, 551
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge">http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(catholic)
+</code></pre>
+
+
+</div>
+</body></html>

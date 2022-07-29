@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: Survival from Malignant Melanoma</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Melanoma</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Survival from Malignant Melanoma
+</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Melanoma</code> data frame has data on 205 patients in Denmark
+with malignant melanoma.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Melanoma
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt><code>time</code></dt><dd>
+<p>survival time in days, possibly censored.
+</p>
+</dd>
+<dt><code>status</code></dt><dd>
+<p><code>1</code> died from melanoma, <code>2</code> alive, <code>3</code> dead from
+other causes.
+</p>
+</dd>
+<dt><code>sex</code></dt><dd>
+<p><code>1</code> = male, <code>0</code> = female.
+</p>
+</dd>
+<dt><code>age</code></dt><dd>
+<p>age in years.
+</p>
+</dd>
+<dt><code>year</code></dt><dd>
+<p>of operation.
+</p>
+</dd>
+<dt><code>thickness</code></dt><dd>
+<p>tumour thickness in mm.
+</p>
+</dd>
+<dt><code>ulcer</code></dt><dd>
+<p><code>1</code> = presence, <code>0</code> = absence.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>P. K. Andersen, O. Borgan, R. D. Gill and N. Keiding (1993)
+<em>Statistical Models based on Counting Processes.</em>
+Springer.
+</p>
+
+
+</div>
+</body></html>

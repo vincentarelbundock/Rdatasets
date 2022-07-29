@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title>R: RuPaul's Drag Race Episode-Contestant Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>rpdr_contep</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>RuPaul's Drag Race Episode-Contestant Data</h2>
+
+<h3>Description</h3>
+
+<p>These are episode-contestant-level data for RuPaul's Drag Race for all available seasons
+(currently through Season 14). For a given season, observations mostly decrease with
+each episode. Data include all sorts of information.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>rpdr_contep
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with the following 11 variables.
+</p>
+
+<dl>
+<dt><code>season</code></dt><dd><p>a character vector for the season</p>
+</dd>
+<dt><code>rank</code></dt><dd><p>a numeric vector for the final rank of the contestant</p>
+</dd>
+<dt><code>contestant</code></dt><dd><p>a character vector for the contestant's name</p>
+</dd>
+<dt><code>missc</code></dt><dd><p>a dummy variable indicating if the contestant was Miss Congeniality</p>
+</dd>
+<dt><code>episode</code></dt><dd><p>a numeric vector for the episode number</p>
+</dd>
+<dt><code>outcome</code></dt><dd><p>a character vector for the outcome for the queen after the main challenge</p>
+</dd>
+<dt><code>eliminated</code></dt><dd><p>a character vector (0,1) for if the queen was eliminated/removed from the competition after the episode</p>
+</dd>
+<dt><code>participant</code></dt><dd><p>a character vector (0,1) for if the queen was a participant in the show</p>
+</dd>
+<dt><code>minichalw</code></dt><dd><p>a character vector (0,1) if the queen won a mini-challenge that episode. NOTE: this is a work in progress.
+For now, I encourage getting the mini-challenge data from one of the other data sets.</p>
+</dd>
+<dt><code>finale</code></dt><dd><p>a numeric vector for if the episode was the finale</p>
+</dd>
+<dt><code>penultimate</code></dt><dd><p>a numeric vector for if the episode was the penultimate before the finale. Applicable to seasons 6, 7, and 8.</p>
+</dd>
+</dl>
+
+
+
+</div>
+</body></html>

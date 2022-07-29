@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><title>R: Gasoline Consumption Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>OECDGas</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Gasoline Consumption Data</h2>
+
+<h3>Description</h3>
+
+<p>Panel data on gasoline consumption in 18 OECD countries over 19 years, 1960&ndash;1978. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("OECDGas")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 342 observations on 6 variables.
+</p>
+
+<dl>
+<dt>country</dt><dd><p>Factor indicating country.</p>
+</dd>
+<dt>year</dt><dd><p>Year.</p>
+</dd>
+<dt>gas</dt><dd><p>Logarithm of motor gasoline consumption per car.</p>
+</dd>
+<dt>income</dt><dd><p>Logarithm of real per-capita income.</p>
+</dd>
+<dt>price</dt><dd><p>Logarithm of real motor gasoline price.</p>
+</dd>
+<dt>cars</dt><dd><p>Logarithm of the stock of cars per-capita.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>The data is from Baltagi (2002).
+</p>
+
+
+<h3>References</h3>
+
+<p>Baltagi, B.H. (2002). <em>Econometrics</em>, 3rd ed. Berlin, Springer. 
+</p>
+<p>Baltagi, B.H. and Griffin, J.M. (1983). Gasoline Demand in the OECD: An Application
+of Pooling and Testing Procedures. <em>European Economic Review</em>, <b>22</b>, 117&ndash;137.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Baltagi2002</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+data("OECDGas")
+
+library("lattice")
+xyplot(exp(cars) ~ year | country, data = OECDGas, type = "l")
+xyplot(exp(gas) ~ year | country, data = OECDGas, type = "l")
+</code></pre>
+
+
+</div>
+</body></html>

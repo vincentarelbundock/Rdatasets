@@ -1,0 +1,103 @@
+<!DOCTYPE html><html><head><title>R: bwght</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>bwght</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>bwght</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: J. Mullahy (1997), “Instrumental-Variable Estimation of Count Data Models: Applications to Models of Cigarette Smoking Behavior,” Review of Economics and Statistics 79, 596-593. Professor Mullahy kindly provided the data. He obtained them from the 1988 National Health Interview Survey. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('bwght')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 1388 observations on 14 variables:
+</p>
+
+<ul>
+<li> <p><strong>faminc:</strong> 1988 family income, $1000s
+</p>
+</li>
+<li> <p><strong>cigtax:</strong> cig. tax in home state, 1988
+</p>
+</li>
+<li> <p><strong>cigprice:</strong> cig. price in home state, 1988
+</p>
+</li>
+<li> <p><strong>bwght:</strong> birth weight, ounces
+</p>
+</li>
+<li> <p><strong>fatheduc:</strong> father's yrs of educ
+</p>
+</li>
+<li> <p><strong>motheduc:</strong> mother's yrs of educ
+</p>
+</li>
+<li> <p><strong>parity:</strong> birth order of child
+</p>
+</li>
+<li> <p><strong>male:</strong> =1 if male child
+</p>
+</li>
+<li> <p><strong>white:</strong> =1 if white
+</p>
+</li>
+<li> <p><strong>cigs:</strong> cigs smked per day while preg
+</p>
+</li>
+<li> <p><strong>lbwght:</strong> log of bwght
+</p>
+</li>
+<li> <p><strong>bwghtlbs:</strong> birth weight, pounds
+</p>
+</li>
+<li> <p><strong>packs:</strong> packs smked per day while preg
+</p>
+</li>
+<li> <p><strong>lfaminc:</strong> log(faminc)
+</p>
+</li></ul>
+
+
+
+<h3>Used in Text</h3>
+
+<p>pages 18, 61, 110, 151, 165, 178, 184, 187-188, 258-259, 522-523
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(bwght)
+</code></pre>
+
+
+</div>
+</body></html>

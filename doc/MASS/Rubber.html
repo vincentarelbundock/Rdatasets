@@ -1,0 +1,76 @@
+<!DOCTYPE html><html><head><title>R: Accelerated Testing of Tyre Rubber</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Rubber</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Accelerated Testing of Tyre Rubber
+</h2>
+
+<h3>Description</h3>
+
+<p>Data frame from accelerated testing of tyre rubber.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Rubber
+</code></pre>
+
+
+<h3>Format</h3>
+
+
+<dl>
+<dt><code>loss</code></dt><dd>
+<p>the abrasion loss in gm/hr.
+</p>
+</dd>
+<dt><code>hard</code></dt><dd>
+<p>the hardness in Shore units.
+</p>
+</dd>
+<dt><code>tens</code></dt><dd>
+<p>tensile strength in kg/sq m.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>O.L. Davies (1947)
+<em>Statistical Methods in Research and Production.</em>
+Oliver and Boyd, Table 6.1 p. 119.
+</p>
+<p>O.L. Davies and P.L. Goldsmith (1972)
+<em>Statistical Methods in Research and Production.</em>
+4th edition, Longmans, Table 8.1 p. 239.
+</p>
+
+
+<h3>References</h3>
+
+<p>Venables, W. N. and Ripley, B. D. (1999)
+<em>Modern Applied Statistics with S-PLUS.</em> Third
+Edition. Springer.
+</p>
+
+
+</div>
+</body></html>

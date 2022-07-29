@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: Noise Levels of Filters to Reduce Automobile Pollution</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>AutoPollution</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Noise Levels of Filters to Reduce Automobile Pollution
+</h2>
+
+<h3>Description</h3>
+
+<p>Measurements of noise levels for different filters to reduce pollution levels of automobiles.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 36 observations on the following 4 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>Noise</code> </td><td style="text-align: left;"> Noise level (decibels)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Size</code> </td><td style="text-align: left;"> Vehicle size: <code>1</code>=small, <code>2</code>=medium, or <code>3</code>=large</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Type</code> </td><td style="text-align: left;"> <code>1</code>=standard filter or <code>2</code>=new filter</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Side</code> </td><td style="text-align: left;"> Side of vehicle: code1=right or <code>2</code>=left</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>In a 1973 testimony before the Air and Water Pollution Subcommittee
+of the Senate Public Works Committee, John McKinley, President of Texaco discussed a new filter
+that had been developed to reduce pollution. Questions were raised about the effects of this filter
+on other measures of vehicle performance. The data set AutoPollution gives the results of an
+experiment on 36 different cars. The cars were randomly assigned to get either this new filter or a
+standard filter and the noise level for each car was measured.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data explanation and link can be found at http://lib.stat.cmu.edu/DASL/Stories/airpollutionfilters.html.
+</p>
+
+
+<h3>References</h3>
+
+<p>A.Y. Lewin and M.F. Shakun, Policy Sciences: Methodology and Cases, Pergammon Press, 1976, p 313.
+</p>
+
+
+</div>
+</body></html>

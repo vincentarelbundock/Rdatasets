@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><title>R: cross national rates of trade union density</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>unionDensity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>cross national rates of trade union density</h2>
+
+<h3>Description</h3>
+
+<p>Cross-national data on relative size of the trade unions and
+predictors, in 20 countries.  Two of the predictors are highly
+collinear, and are the source of a debate between Stephens and
+Wallerstein (1991), later reviewed by Western and Jackman (1994).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(unionDensity)
+</code></pre>
+
+
+<h3>Format</h3>
+
+
+<ul>
+<li><p><code>union</code>numeric, percentage of the total number of wage
+and salary earners plus the unemployed who are union members,
+measured between 1975 and 1980, with most of the data drawn from 1979
+</p>
+</li>
+<li><p><code>left</code>numeric, an index tapping the extent to which
+parties of the left have controlled governments since 1919, due to
+Wilensky (1981).
+</p>
+</li>
+<li><p><code>size</code>numeric, log of labor force size, defined as the
+number of wage and salary earners, plus the unemployed
+</p>
+</li>
+<li><p><code>concen</code>numeric, percentage of employment, shipments, or
+production accounted for by the four largest enterprises in a
+particular industry, averaged over industries (with weights
+proportional to the size of the industry) and the resulting measure
+is normalized such that the United States scores a 1.0, and is due
+to Pryor (1973). Some of the scores on this variable are imputed
+using procedures described in Stephens and Wallerstein (1991, 945).
+</p>
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p>Pryor, Frederic. 1973. <em>Property and Industrial
+Organization in Communist and Capitalist Countries</em>. Bloomington:
+Indiana University Press.  
+</p>
+<p>Stephens, John and Michael Wallerstein. 1991. Industrial
+Concentration, Country Size and Trade Union Membership.
+<em>American Political Science Review</em> 85:941-953.
+</p>
+<p>Western, Bruce and Simon Jackman. 1994. Bayesian Inference for
+Comparative Research.  <em>American Political Science Review</em>
+88:412-423. 
+</p>
+<p>Wilensky, Harold L. 1981. Leftism, Catholicism, Democratic
+Corporatism: The Role of Political Parties in Recent Welfare State
+Development. In <em>The Development of Welfare States in Europe
+and America</em>, ed. Peter Flora and Arnold J. Heidenheimer. New
+Brunswick: Transaction Books. 
+</p>
+
+
+<h3>References</h3>
+
+<p>Jackman, Simon. 2009.  <em>Bayesian Analysis for the Social Sciences</em>. Wiley: Hoboken, New Jersey.</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(unionDensity)
+summary(unionDensity)
+pairs(unionDensity,
+      labels=c("Union\nDensity",
+        "Left\nGovernment",
+        "log Size of\nLabor Force",
+        "Economic\nConcentration"),
+      lower.panel=function(x,y,digits=2){
+        r &lt;- cor(x,y)
+        par(usr=c(0,1,0,1))
+        text(.5,.5,
+             format(c(r,0.123456789),digits=digits)[1],
+             cex=1.5)
+      }
+      )
+ols &lt;- lm(union ~ left + size + concen,
+          data=unionDensity)
+summary(ols)
+</code></pre>
+
+
+</div>
+</body></html>

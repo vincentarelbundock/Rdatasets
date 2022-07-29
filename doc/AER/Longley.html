@@ -1,0 +1,98 @@
+<!DOCTYPE html><html><head><title>R: Longley's Regression Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Longley</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Longley's Regression Data</h2>
+
+<h3>Description</h3>
+
+<p>US macroeconomic time series, 1947&ndash;1962.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Longley")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An annual multiple time series from 1947 to 1962 with 4 variables.
+</p>
+
+<dl>
+<dt>employment</dt><dd><p>Number of people employed (in 1000s).</p>
+</dd>
+<dt>price</dt><dd><p>GNP deflator.</p>
+</dd>
+<dt>gnp</dt><dd><p>Gross national product.</p>
+</dd>
+<dt>armedforces</dt><dd><p>Number of people in the armed forces.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An extended version of this data set, formatted as a <code>"data.frame"</code>
+is available as <code>longley</code> in base R.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Greene (2003). Table F4.2.
+</p>
+<p><a href="https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm">https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Greene, W.H. (2003). <em>Econometric Analysis</em>, 5th edition. Upper Saddle River, NJ: Prentice Hall.
+</p>
+<p>Longley, J.W. (1967). An Appraisal of Least-Squares Programs from the Point of View of the User.
+<em>Journal of the American Statistical Association</em>, <b>62</b>, 819&ndash;841.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>longley</code>, <code>Greene2003</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+data("Longley")
+library("dynlm")
+
+## Example 4.6 in Greene (2003)
+fm1 &lt;- dynlm(employment ~ time(employment) + price + gnp + armedforces,
+  data = Longley)
+fm2 &lt;- update(fm1, end = 1961)
+cbind(coef(fm2), coef(fm1))
+
+## Figure 4.3 in Greene (2003)
+plot(rstandard(fm2), type = "b", ylim = c(-3, 3))
+abline(h = c(-2, 2), lty = 2)
+</code></pre>
+
+
+</div>
+</body></html>

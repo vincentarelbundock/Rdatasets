@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: CAA Final Four by Seed (Short Version through 2010)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>FinalFourShort</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>CAA Final Four by Seed (Short Version through 2010)</h2>
+
+<h3>Description</h3>
+
+<p>NCAA Final Four participation summarized each year by seed
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 512 observations on the following 4 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>Year</code> </td><td style="text-align: left;"> Year (1979  - 2010)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Seed</code> </td><td style="text-align: left;"> Seed in NCAA men's basketball tournament: 1 to 16</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>In</code> </td><td style="text-align: left;"> Number of teams at that seed who made the Final Four that year</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Out</code> </td><td style="text-align: left;"> Number of teams at that seed who did not made the Final Four that year</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>Each year 64 college teams are selected for the NCAA Division I Men's
+Basketball tournament, with 16 teams placed in each of four regions. Within each region the teams
+are seeded from 1 to 16, with the (presumed) best team as the 1 seed and the (presumed) weakest
+team as the 16 seed; this practice of seeding teams began in 1979 for the NCAA tournament. Only
+one team from each region (so four teams each year) advances to the Final Four. This dataset is similar to FinalFourLong,
+except that each row combines the count of the results (make/don't make the Final Four) for each seed, so that In+Out= 4 for each row.
+</p>
+<p>Updated to FinalFourShort17 in second edition.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Final Four teams and their seed can be found at <br />
+http://www.championshiphistory.com/ncaahoops.php.
+</p>
+
+
+</div>
+</body></html>

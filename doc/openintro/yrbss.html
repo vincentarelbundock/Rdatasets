@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><title>R: Youth Risk Behavior Surveillance System (YRBSS)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>yrbss</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Youth Risk Behavior Surveillance System (YRBSS)</h2>
+
+<h3>Description</h3>
+
+<p>Select variables from YRBSS.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>yrbss
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 13583 observations on the following 13 variables.
+</p>
+
+<dl>
+<dt>age</dt><dd><p>Age, in years.</p>
+</dd>
+<dt>gender</dt><dd><p>Gender.</p>
+</dd>
+<dt>grade</dt><dd><p>School grade.</p>
+</dd>
+<dt>hispanic</dt><dd><p>Hispanic or not.</p>
+</dd>
+<dt>race</dt><dd><p>Race / ethnicity.</p>
+</dd>
+<dt>height</dt><dd><p>Height, in meters (3.28 feet per meter).</p>
+</dd>
+<dt>weight</dt><dd><p>Weight, in kilograms (2.2 pounds per kilogram).</p>
+</dd>
+<dt>helmet_12m</dt><dd><p>How often did you wear a helmet when biking in the last
+12 months?</p>
+</dd>
+<dt>text_while_driving_30d</dt><dd><p>How many days did you text while driving in
+the last 30 days?</p>
+</dd>
+<dt>physically_active_7d</dt><dd><p>How many days were you physically active for
+60+ minutes in the last 7 days?</p>
+</dd>
+<dt>hours_tv_per_school_day</dt><dd><p>How many hours of TV do you typically watch
+on a school night?</p>
+</dd>
+<dt>strength_training_7d</dt><dd><p>How many days did you do strength training
+(e.g. lift weights) in the last 7 days?</p>
+</dd>
+<dt>school_night_hours_sleep</dt><dd><p>How many hours of sleep do you typically
+get on a school night?</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cdc.gov/healthyyouth/data/yrbs/data.htm">CDC's Youth Risk Behavior Surveillance System (YRBSS)</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+table(yrbss$physically_active_7d)
+</code></pre>
+
+
+</div>
+</body></html>
