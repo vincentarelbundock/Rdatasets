@@ -10,6 +10,9 @@
     <loc>/LICENSE.html</loc>
   </url>
   <url>
+    <loc>/README.html</loc>
+  </url>
+  <url>
     <loc>/articles/data.html</loc>
   </url>
   <url>
@@ -460,6 +463,12 @@
     <loc>/doc/DAAG/bomregions2012.html</loc>
   </url>
   <url>
+    <loc>/doc/DAAG/bomregions2018.html</loc>
+  </url>
+  <url>
+    <loc>/doc/DAAG/bomregions2021.html</loc>
+  </url>
+  <url>
     <loc>/doc/DAAG/bomsoi.html</loc>
   </url>
   <url>
@@ -482,6 +491,9 @@
   </url>
   <url>
     <loc>/doc/DAAG/codling.html</loc>
+  </url>
+  <url>
+    <loc>/doc/DAAG/coralPval.html</loc>
   </url>
   <url>
     <loc>/doc/DAAG/cottonworkers.html</loc>
@@ -613,7 +625,13 @@
     <loc>/doc/DAAG/litters.html</loc>
   </url>
   <url>
+    <loc>/doc/DAAG/lognihills.html</loc>
+  </url>
+  <url>
     <loc>/doc/DAAG/lung.html</loc>
+  </url>
+  <url>
+    <loc>/doc/DAAG/mdbAVtJtoD.html</loc>
   </url>
   <url>
     <loc>/doc/DAAG/measles.html</loc>
@@ -1102,7 +1120,16 @@
     <loc>/doc/Ecdat/USGDPpresidents.html</loc>
   </url>
   <url>
+    <loc>/doc/Ecdat/USPS.html</loc>
+  </url>
+  <url>
     <loc>/doc/Ecdat/USclassifiedDocuments.html</loc>
+  </url>
+  <url>
+    <loc>/doc/Ecdat/USincarcerations.html</loc>
+  </url>
+  <url>
+    <loc>/doc/Ecdat/USnewspapers.html</loc>
   </url>
   <url>
     <loc>/doc/Ecdat/USstateAbbreviations.html</loc>
@@ -3502,6 +3529,15 @@
     <loc>/doc/gap/fsnps.html</loc>
   </url>
   <url>
+    <loc>/doc/gap/hg18.html</loc>
+  </url>
+  <url>
+    <loc>/doc/gap/hg19.html</loc>
+  </url>
+  <url>
+    <loc>/doc/gap/hg38.html</loc>
+  </url>
+  <url>
     <loc>/doc/gap/hla.html</loc>
   </url>
   <url>
@@ -3704,6 +3740,57 @@
   </url>
   <url>
     <loc>/doc/mi/nlsyV.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/Chem97.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/Contraception.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/Early.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/Exam.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/Gcsemv.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/Hsb82.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/Mmmec.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/Oxboys.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/ScotsSec.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/Socatt.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/bdf.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/egsingle.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/guImmun.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/guPrenat.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/s3bbx.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/s3bby.html</loc>
+  </url>
+  <url>
+    <loc>/doc/mlmRev/star.html</loc>
   </url>
   <url>
     <loc>/doc/mosaicData/Alcohol.html</loc>
@@ -4685,6 +4772,9 @@
   </url>
   <url>
     <loc>/doc/quantreg/Mammals.html</loc>
+  </url>
+  <url>
+    <loc>/doc/quantreg/MelTemp.html</loc>
   </url>
   <url>
     <loc>/doc/quantreg/barro.html</loc>

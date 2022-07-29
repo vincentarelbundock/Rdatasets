@@ -77,10 +77,8 @@
 <li><a href="https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv" class="external-link">CSV index</a></li>
 </ul>
 <p>On the github repository you will also find:</p>
-<ul>
-<li>
-<code>Rdatasets.R</code>: <code>R</code> script to download CSV copies and HTML docs for all datasets distributed in <code>Base R</code> and a list of R packages.</li>
-</ul>
+<ul><li>
+<code>Rdatasets.R</code>: <code>R</code> script to download CSV copies and HTML docs for all datasets distributed in <code>Base R</code> and a list of R packages.</li></ul>
 </div>
 <div class="section level1">
 <h1 id="adding-data">Adding data<a class="anchor" aria-label="anchor" href="#adding-data"></a>
@@ -92,20 +90,18 @@
 </h1>
 <p>Here are some packages that contain data but were not include in Rdatasets for one reason or another:</p>
 <ul>
-<li>CASdatasets: <code>install.packages("CASdatasets", repos = "http://cas.uqam.ca/pub/R/")</code>
-<ul>
+<li>CASdatasets: <code>install.packages("CASdatasets", repos =     "http://cas.uqam.ca/pub/R/")</code><ul>
 <li>Some of the included datasets exceed the Github size limit.</li>
 <li>Not on CRAN.</li>
 </ul>
 </li>
-<li>Zelig
-<ul>
-<li>Not on CRAN.</li>
-</ul>
+<li>Zelig<ul><li>Not on CRAN.</li></ul>
 </li>
-<li>gamclass
-<ul>
-<li>Not on CRAN.</li>
+<li>gamclass<ul><li>Not on CRAN.</li></ul>
+</li>
+<li>Data4Ecologists<ul>
+<li>Not on CRAN. (check out <a href="https://github.com/jfieberg/Data4Ecologists" class="external-link">this link</a>).</li>
+<li><code>devtools::install_github("jfieberg/Data4Ecologists")</code></li>
 </ul>
 </li>
 </ul>
@@ -122,25 +118,25 @@
 </h1>
 <p>These are mostly intended as a reminder for Vincent.</p>
 <p>First add new package to DESCRIPTION Imports and scrape the data:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">Rscript</span> scrape.R</a>
-<a class="sourceLine" id="cb1-2" title="2"><span class="bu">cd</span> doc</a>
-<a class="sourceLine" id="cb1-3" title="3"><span class="ex">../documentation.sh</span></a>
-<a class="sourceLine" id="cb1-4" title="4"><span class="ex">Rscript</span> -e <span class="st">"rmarkdown::render("</span>README.Rmd<span class="st">")"</span></a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">Rscript</span> scrape.R</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="bu">cd</span> doc</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="ex">../documentation.sh</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="ex">Rscript</span> -e <span class="st">"rmarkdown::render("</span>README.Rmd<span class="st">")"</span></span></code></pre></div>
 <p>Second, commit to master.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="bu">cd</span> ..</a>
-<a class="sourceLine" id="cb2-2" title="2"><span class="fu">git</span> add .</a>
-<a class="sourceLine" id="cb2-3" title="3"><span class="fu">git</span> commit</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="bu">cd</span> ..</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="fu">git</span> add .</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a><span class="fu">git</span> commit</span></code></pre></div>
 <p>Third, checkout gh-pages and import the new data there.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="fu">git</span> checkout gh-pages</a>
-<a class="sourceLine" id="cb3-2" title="2"><span class="fu">git</span> checkout master -- csv</a>
-<a class="sourceLine" id="cb3-3" title="3"><span class="fu">git</span> checkout master -- doc</a>
-<a class="sourceLine" id="cb3-4" title="4"><span class="fu">git</span> checkout master -- datasets.csv</a>
-<a class="sourceLine" id="cb3-5" title="5"><span class="fu">git</span> checkout master -- datasets.html</a>
-<a class="sourceLine" id="cb3-6" title="6"><span class="fu">git</span> add .</a>
-<a class="sourceLine" id="cb3-7" title="7"><span class="fu">git</span> commit</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="fu">git</span> checkout gh-pages</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a><span class="fu">git</span> checkout master -- csv</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a><span class="fu">git</span> checkout master -- doc</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a><span class="fu">git</span> checkout master -- datasets.csv</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a><span class="fu">git</span> checkout master -- datasets.html</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true"></a><span class="fu">git</span> add .</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true"></a><span class="fu">git</span> commit</span></code></pre></div>
 <p>Finally, move back to master and build the gh-pages website:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="fu">git</span> checkout master</a>
-<a class="sourceLine" id="cb4-2" title="2"><span class="ex">Rscript</span> -e <span class="st">"pkgdown::deploy_to_branch(clean = FALSE)"</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="fu">git</span> checkout master</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true"></a><span class="ex">Rscript</span> -e <span class="st">"pkgdown::deploy_to_branch(clean = FALSE)"</span></span></code></pre></div>
 </div>
 
   </div>
@@ -190,7 +186,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
 </div>
 
       </footer>
