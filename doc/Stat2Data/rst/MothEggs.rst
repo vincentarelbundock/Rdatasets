@@ -20,7 +20,7 @@
    ============ ==================================
    ``BodyMass`` Log of body size measured in grams
    ``Eggs``     Number of eggs present
-   \           
+   \            
    ============ ==================================
 
    .. rubric:: Details

@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Petersen's Simulated Data for Assessing Clustered Standard...</title>
+<!DOCTYPE html><html><head><title>R: Petersen's Simulated Data for Assessing Clustered Standard...</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for PetersenCL"><tr><td>PetersenCL</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>PetersenCL</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Petersen's Simulated Data for Assessing Clustered Standard Errors</h2>
 
@@ -17,7 +27,7 @@ illustrating and benchmarking clustered standard errors.
 
 <h3>Usage</h3>
 
-<pre>data("PetersenCL")</pre>
+<pre><code class='language-R'>data("PetersenCL")</code></pre>
 
 
 <h3>Format</h3>
@@ -59,8 +69,9 @@ the standard errors clustered by year.
 <p>Petersen MA (2009).
 &ldquo;Estimating Standard Errors in Finance Panel Data Sets: Comparing Approaches&rdquo;,
 <em>The Review of Financial Studies</em>, <b>22</b>(1), 435&ndash;480.
-doi: <a href="https://doi.org/10.1093/rfs/hhn053">10.1093/rfs/hhn053</a>
+<a href="https://doi.org/10.1093/rfs/hhn053">doi:10.1093/rfs/hhn053</a>
 </p>
 
 
-</div></body></html>
+</div>
+</body></html>

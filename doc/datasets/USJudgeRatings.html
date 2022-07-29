@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Lawyers' Ratings of State Judges in the US Superior Court</title>
+<!DOCTYPE html><html><head><title>R: Lawyers' Ratings of State Judges in the US Superior Court</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for USJudgeRatings"><tr><td>USJudgeRatings</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>USJudgeRatings</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Lawyers' Ratings of State Judges in the US Superior Court</h2>
 
@@ -16,7 +26,7 @@
 
 <h3>Usage</h3>
 
-<pre>USJudgeRatings</pre>
+<pre><code class='language-R'>USJudgeRatings</code></pre>
 
 
 <h3>Format</h3>
@@ -24,7 +34,7 @@
 <p>A data frame containing 43 observations on 12 numeric variables.
 </p>
 
-<table summary="Rd table">
+<table>
 <tr>
  <td style="text-align: right;">
     [,1] </td><td style="text-align: left;"> CONT </td><td style="text-align: left;"> Number of contacts of lawyer with judge.</td>
@@ -87,10 +97,10 @@
 
 <h3>Examples</h3>
 
-<pre>
-require(graphics)
+<pre><code class='language-R'>require(graphics)
 pairs(USJudgeRatings, main = "USJudgeRatings data")
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

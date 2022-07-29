@@ -50,7 +50,6 @@
 
    ::
 
-
       lepidium.m1 <- drm(weight~conc, data=lepidium, fct = LL.4())
 
       modelFit(lepidium.m1)

@@ -1,24 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Flow of the River Nile</title>
+<!DOCTYPE html><html><head><title>R: Flow of the River Nile</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for Nile"><tr><td>Nile</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>Nile</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Flow of the River Nile</h2>
 
 <h3>Description</h3>
 
 <p>Measurements of the annual flow of the river Nile at Aswan (formerly
-<code>Assuan</code>), 1871&ndash;1970, in <i>10^8 m^3</i>,
+<code>Assuan</code>), 1871&ndash;1970, in <code class="reqn">10^8 m^3</code>,
 &ldquo;with apparent changepoint near 1898&rdquo; (Cobb(1978), Table 1, p.249).
 </p>
 
 
 <h3>Usage</h3>
 
-<pre>Nile</pre>
+<pre><code class='language-R'>Nile</code></pre>
 
 
 <h3>Format</h3>
@@ -41,20 +51,19 @@ Oxford University Press.
 <p>Balke, N. S. (1993).
 Detecting level shifts in time series.
 <em>Journal of Business and Economic Statistics</em>, <b>11</b>, 81&ndash;92.
-doi: <a href="https://doi.org/10.2307/1391308">10.2307/1391308</a>.
+<a href="https://doi.org/10.2307/1391308">doi:10.2307/1391308</a>.
 </p>
 <p>Cobb, G. W. (1978).
 The problem of the Nile: conditional solution to a change-point
 problem.
 <em>Biometrika</em> <b>65</b>, 243&ndash;51.
-doi: <a href="https://doi.org/10.2307/2335202">10.2307/2335202</a>.
+<a href="https://doi.org/10.2307/2335202">doi:10.2307/2335202</a>.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre>
-require(stats); require(graphics)
+<pre><code class='language-R'>require(stats); require(graphics)
 par(mfrow = c(2, 2))
 plot(Nile)
 acf(Nile)
@@ -101,7 +110,8 @@ plot(NileNA)
 lines(fitted(fit3), lty = 2)
 lines(tsSmooth(fit3), lty = 3)
 plot(residuals(fit3)); abline(h = 0, lty = 3)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

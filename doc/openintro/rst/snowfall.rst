@@ -47,7 +47,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(snowfall, aes(x = total_snow)) +

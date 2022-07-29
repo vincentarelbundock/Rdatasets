@@ -1,16 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Women in Queues</title>
+<!DOCTYPE html><html><head><title>R: Women in Queues</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for WomenQueue"><tr><td>WomenQueue</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>WomenQueue</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Women in Queues</h2>
 
 <h3>Description</h3>
 
-<p>Data from Jinkinson \&amp; Slater (1981) and Hoaglin \&amp; Tukey (1985)
+<p>Data from Jinkinson &amp; Slater (1981) and Hoaglin &amp; Tukey (1985)
 reporting the frequency distribution of females in 100 queues of
 length 10 in a London Underground station.
 </p>
@@ -18,9 +28,8 @@ length 10 in a London Underground station.
 
 <h3>Usage</h3>
 
-<pre>
-data("WomenQueue")
-</pre>
+<pre><code class='language-R'>data("WomenQueue")
+</code></pre>
 
 
 <h3>Format</h3>
@@ -29,7 +38,7 @@ data("WomenQueue")
 10.  The variable and its levels are 
 </p>
 
-<table summary="Rd table">
+<table>
 <tr>
  <td style="text-align: right;">
     No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
@@ -57,13 +66,13 @@ pages 19&ndash;20.
 
 <h3>References</h3>
 
-<p>D. C. Hoaglin \&amp; J. W. Tukey (1985),
+<p>D. C. Hoaglin &amp; J. W. Tukey (1985),
 Checking the shape of discrete distributions.
 In D. C. Hoaglin, F. Mosteller, J. W. Tukey (eds.),
 <em>Exploring Data Tables, Trends and Shapes</em>, chapter 9.
-John Wiley \&amp; Sons, New York.
+John Wiley &amp; Sons, New York.
 </p>
-<p>R. A. Jinkinson \&amp; M. Slater (1981),
+<p>R. A. Jinkinson &amp; M. Slater (1981),
 Critical discussion of a graphical method for identifying discrete
 distributions,
 <em>The Statistician</em>, <b>30</b>, 239&ndash;248.
@@ -76,12 +85,12 @@ SAS Institute, Cary, NC.
 
 <h3>Examples</h3>
 
-<pre>
-data("WomenQueue")
+<pre><code class='language-R'>data("WomenQueue")
 gf &lt;- goodfit(WomenQueue, type = "binomial")
 summary(gf)
 plot(gf)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

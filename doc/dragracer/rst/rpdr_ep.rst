@@ -11,7 +11,7 @@
       :name: description
 
    These are episode-level data for RuPaul's Drag Race for all available
-   seasons (currently through Season 12). Data include all sorts of
+   seasons (currently through Season 14). Data include all sorts of
    information.
 
    .. rubric:: Usage
@@ -24,7 +24,7 @@
    .. rubric:: Format
       :name: format
 
-   A data frame with 159 observations on the following 22 variables.
+   A data frame with the following 22 variables.
 
    ``season``
       a character vector for season
@@ -61,7 +61,11 @@
       applicable
 
    ``minicw3``
-      a character vector for a second mini-challenge winner, where
+      a character vector for a third mini-challenge winner, where
+      applicable
+
+   ``minicw4``
+      a character vector for a fourth mini-challenge winner, where
       applicable
 
    ``bottom1``
@@ -85,6 +89,10 @@
    ``bottom6``
       a character vector for the sixth queen in the bottom of that
       episode. Thanks, Season 11.
+
+   ``bottom7``
+      a character vector for the seventh queen in the bottom of that
+      episode. Thanks, Season 14.
 
    ``lipsyncartist``
       a character vector for the lip-sync artist

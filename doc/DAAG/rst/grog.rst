@@ -55,9 +55,9 @@
    .. rubric:: Source
       :name: source
 
-   Australian data are from http://www.abs.gov.au. For New Zealand data,
-   go to http://www.stats.govt.nz/infoshare/ Click on 'Industry sectors'
-   and then on 'Alcohol Available for Consumption - ALC'.
+   Australian data are from https://www.abs.gov.au. For New Zealand
+   data, go to https://infoshare.stats.govt.nz/ Click on 'Industry
+   sectors' and then on 'Alcohol Available for Consumption - ALC'.
 
    .. rubric:: Examples
       :name: examples

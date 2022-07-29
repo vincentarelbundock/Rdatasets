@@ -63,7 +63,7 @@
 
    Online complements to Greene (2003).
 
-   http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
    .. rubric:: References
       :name: references
@@ -72,7 +72,7 @@
    Saddle River, NJ: Prentice Hall.
 
    McCullagh, P. and Nelder, J.A. (1989). *Generalized Linear Models*,
-   2nd edition. London: Chapman \\& Hall.
+   2nd edition. London: Chapman & Hall.
 
    .. rubric:: See Also
       :name: see-also

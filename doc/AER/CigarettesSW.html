@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Cigarette Consumption Panel Data</title>
+<!DOCTYPE html><html><head><title>R: Cigarette Consumption Panel Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for CigarettesSW"><tr><td>CigarettesSW</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>CigarettesSW</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Cigarette Consumption Panel Data</h2>
 
@@ -16,7 +26,7 @@
 
 <h3>Usage</h3>
 
-<pre>data("CigarettesSW")</pre>
+<pre><code class='language-R'>data("CigarettesSW")</code></pre>
 
 
 <h3>Format</h3>
@@ -67,14 +77,15 @@
 
 <h3>Examples</h3>
 
-<pre>
-## Stock and Watson (2007)
+<pre><code class='language-R'>## Stock and Watson (2007)
 ## data and transformations 
 data("CigarettesSW")
-CigarettesSW$rprice &lt;- with(CigarettesSW, price/cpi)
-CigarettesSW$rincome &lt;- with(CigarettesSW, income/population/cpi)
-CigarettesSW$rtax &lt;- with(CigarettesSW, tax/cpi)
-CigarettesSW$rtdiff &lt;- with(CigarettesSW, (taxs - tax)/cpi)
+CigarettesSW &lt;- transform(CigarettesSW,
+  rprice  = price/cpi,
+  rincome = income/population/cpi,
+  rtax    = tax/cpi,
+  rtdiff  = (taxs - tax)/cpi
+)
 c1985 &lt;- subset(CigarettesSW, year == "1985")
 c1995 &lt;- subset(CigarettesSW, year == "1995")
 
@@ -98,7 +109,8 @@ coeftest(fm_ivreg3, vcov = hc1)
 
 ## More examples can be found in:
 ## help("StockWatson2007")
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

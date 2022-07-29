@@ -76,4 +76,3 @@
 
       #  To change all of the names, try
       names(Cars93.summary) <- c("minpass","maxpass","number","code")
-

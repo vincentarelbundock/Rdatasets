@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Toxicity of Carboxylic Acids Data</title>
+<!DOCTYPE html><html><head><title>R: Toxicity of Carboxylic Acids Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for toxicity"><tr><td>toxicity</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>toxicity</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Toxicity of Carboxylic Acids Data</h2>
 
@@ -17,7 +27,7 @@ the basis of several molecular descriptors.
 
 <h3>Usage</h3>
 
-<pre>data(toxicity, package="robustbase")</pre>
+<pre><code class='language-R'>data(toxicity, package="robustbase")</code></pre>
 
 
 <h3>Format</h3>
@@ -28,9 +38,9 @@ attributes for carboxylic acids:
 
 <dl>
 <dt><code>toxicity</code></dt><dd><p>aquatic toxicity, defined as
-<i>log(IGC50^(-1))</i>; typically the &ldquo;response&rdquo;.</p>
+<code class="reqn">\log(IGC_{50}^{-1})</code>; typically the &ldquo;response&rdquo;.</p>
 </dd>
-<dt><code>logKow</code></dt><dd><p><i>log Kow</i>, the partition coefficient</p>
+<dt><code>logKow</code></dt><dd><p><code class="reqn">log Kow</code>, the partition coefficient</p>
 </dd>
 <dt><code>pKa</code></dt><dd><p>pKa: the dissociation constant</p>
 </dd>
@@ -70,8 +80,7 @@ Improved QSAR analysis of the toxicity of aliphatic carboxylic acids;
 
 <h3>Examples</h3>
 
-<pre>
-data(toxicity)
+<pre><code class='language-R'>data(toxicity)
 summary(toxicity)
 plot(toxicity)
 plot(toxicity ~ pKa, data = toxicity)
@@ -82,7 +91,8 @@ scTox &lt;- scale(toxicity, center = FALSE, scale = scQ.tox)
 csT &lt;- covOGK(scTox, n.iter = 2,
               sigmamu = s_Qn, weight.fn = hard.rejection)
 as.dist(round(cov2cor(csT$cov), 2))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

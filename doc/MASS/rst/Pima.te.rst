@@ -44,7 +44,7 @@
       triceps skin fold thickness (mm).
 
    ``bmi``
-      body mass index (weight in kg/(height in m)\ *\\^2*).
+      body mass index (weight in kg/(height in m)\ ``^2``).
 
    ``ped``
       diabetes pedigree function.

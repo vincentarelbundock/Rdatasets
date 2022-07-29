@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Cost Function for Electricity Producers, 1955</title>
+<!DOCTYPE html><html><head><title>R: Cost Function for Electricity Producers, 1955</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for Nerlove"><tr><td>Nerlove</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>Nerlove</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Cost Function for Electricity Producers, 1955 </h2>
 
@@ -22,7 +32,7 @@
 
 <h3>Usage</h3>
 
-<pre>data(Nerlove)</pre>
+<pre><code class='language-R'>data(Nerlove)</code></pre>
 
 
 <h3>Format</h3>
@@ -61,9 +71,9 @@
 
 <h3>References</h3>
 
-<p>Greene, W.H. (2003) <em>Econometric Analysis</em>, Prentice Hall, <a href="http://www.prenhall.com/greene/greene1.html">http://www.prenhall.com/greene/greene1.html</a>, Table F14.2.
+<p>Greene, W.H. (2003) <em>Econometric Analysis</em>, Prentice Hall, <a href="https://archive.org/details/econometricanaly0000gree_f4x3">https://archive.org/details/econometricanaly0000gree_f4x3</a>, Table F14.2.
 </p>
-<p>Hayashi, F. (2000) <em>Econometrics</em>, Princeton University Press, <a href="http://fhayashi.fc2web.com/hayashi_econometrics.htm">http://fhayashi.fc2web.com/hayashi_econometrics.htm</a>, chapter 1, 76-84.
+<p>Hayashi, F. (2000) <em>Econometrics</em>, Princeton University Press, <a href="https://archive.org/details/econometrics0000haya">https://archive.org/details/econometrics0000haya</a>, chapter 1, 76-84.
 </p>
 
 
@@ -72,4 +82,5 @@
 <p><code>Index.Source</code>, <code>Index.Economics</code>, <code>Index.Econometrics</code>, <code>Index.Observations</code></p>
 
 
-</div></body></html>
+</div>
+</body></html>

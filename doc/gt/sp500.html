@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Daily S&amp;P 500 Index data from 1950 to 2015</title>
+<!DOCTYPE html><html><head><title>R: Daily S&amp;P 500 Index data from 1950 to 2015</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for sp500"><tr><td>sp500</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>sp500</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Daily S&amp;P 500 Index data from 1950 to 2015</h2>
 
@@ -18,9 +28,8 @@ companies and captures about 80\
 
 <h3>Usage</h3>
 
-<pre>
-sp500
-</pre>
+<pre><code class='language-R'>sp500
+</code></pre>
 
 
 <h3>Format</h3>
@@ -42,6 +51,24 @@ prices in USD; the <code>close</code> price is adjusted for splits</p>
 
 
 
+<h3>Examples</h3>
+
+<p>Here is a glimpse at the data available in <code>sp500</code>.
+</p>
+<div class="sourceCode r"><pre>dplyr::glimpse(sp500)
+</pre></div>
+<div class="sourceCode"><pre>## Rows: 16,607
+## Columns: 7
+## $ date      &lt;date&gt; 2015-12-31, 2015-12-30, 2015-12-29, 2015-12-28, 2015-12-24,…
+## $ open      &lt;dbl&gt; 2060.59, 2077.34, 2060.54, 2057.77, 2063.52, 2042.20, 2023.1…
+## $ high      &lt;dbl&gt; 2062.54, 2077.34, 2081.56, 2057.77, 2067.36, 2064.73, 2042.7…
+## $ low       &lt;dbl&gt; 2043.62, 2061.97, 2060.54, 2044.20, 2058.73, 2042.20, 2020.4…
+## $ close     &lt;dbl&gt; 2043.94, 2063.36, 2078.36, 2056.50, 2060.99, 2064.29, 2038.9…
+## $ volume    &lt;dbl&gt; 2655330000, 2367430000, 2542000000, 2492510000, 1411860000, …
+## $ adj_close &lt;dbl&gt; 2043.94, 2063.36, 2078.36, 2056.50, 2060.99, 2064.29, 2038.9…
+</pre></div>
+
+
 <h3>Function ID</h3>
 
 <p>11-4
@@ -59,14 +86,5 @@ prices in USD; the <code>close</code> price is adjusted for splits</p>
 </p>
 
 
-<h3>Examples</h3>
-
-<pre>
-# Here is a glimpse at the data
-# available in `sp500`
-dplyr::glimpse(sp500)
-
-</pre>
-
-
-</div></body></html>
+</div>
+</body></html>

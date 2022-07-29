@@ -1,12 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Monthly US Stock Returns (1931-2002, Stock &amp; Watson)</title>
+<!DOCTYPE html><html><head><title>R: Monthly US Stock Returns (1931-2002, Stock &amp; Watson)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for USStocksSW"><tr><td>USStocksSW</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>USStocksSW</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>Monthly US Stock Returns (1931&ndash;2002, Stock \&amp; Watson)</h2>
+<h2>Monthly US Stock Returns (1931&ndash;2002, Stock &amp; Watson)</h2>
 
 <h3>Description</h3>
 
@@ -18,7 +28,7 @@ constructed by the Center for Research in Security Prices (CRSP).
 
 <h3>Usage</h3>
 
-<pre>data("USStocksSW")</pre>
+<pre><code class='language-R'>data("USStocksSW")</code></pre>
 
 
 <h3>Format</h3>
@@ -62,7 +72,7 @@ as the dividends over the past 12 months, divided by the price in the current mo
 
 <h3>Examples</h3>
 
-<pre>
+<pre><code class='language-R'>
 data("USStocksSW")
 plot(USStocksSW)
 
@@ -79,7 +89,8 @@ waldtest(fm3, vcov = sandwich)
 fm4 &lt;- dynlm(returns ~ L(returns) + L(d(dividend)), data = USStocksSW, start = c(1960, 1))
 fm5 &lt;- dynlm(returns ~ L(returns, 1:2) + L(d(dividend), 1:2), data = USStocksSW, start = c(1960,1))
 fm6 &lt;- dynlm(returns ~ L(returns) + L(dividend), data = USStocksSW, start = c(1960,1))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

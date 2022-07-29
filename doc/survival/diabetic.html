@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Ddiabetic retinopathy</title>
+<!DOCTYPE html><html><head><title>R: Ddiabetic retinopathy</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for diabetic"><tr><td>diabetic</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>diabetic</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Ddiabetic retinopathy</h2>
 
@@ -17,9 +27,9 @@ of diabetic retinopathy.
 
 <h3>Usage</h3>
 
-<pre>diabetic
+<pre><code class='language-R'>diabetic
 data(diabetic, package="survival")
-</pre>
+</code></pre>
 
 
 <h3>Format</h3>
@@ -74,12 +84,12 @@ caused by death, dropout, or end of the study.
 
 <h3>Examples</h3>
 
-<pre>
-# juvenile diabetes is defined as and age less than 20
+<pre><code class='language-R'># juvenile diabetes is defined as and age less than 20
 juvenile &lt;- 1*(diabetic$age &lt; 20)
 coxph(Surv(time, status) ~ trt + juvenile, cluster= id,
             data= diabetic)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

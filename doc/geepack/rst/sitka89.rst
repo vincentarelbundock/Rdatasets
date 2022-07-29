@@ -25,7 +25,7 @@
    A dataframe
 
    size:
-      size of the tree measured in *log(height*diamter^2)*
+      size of the tree measured in ``log(height*diamter^2)``
 
    time:
       days after the 1st january, 1988
@@ -41,6 +41,4 @@
 
    ::
 
-
       data(sitka89)
-

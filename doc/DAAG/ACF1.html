@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Aberrant Crypt Foci in Rat Colons</title>
+<!DOCTYPE html><html><head><title>R: Aberrant Crypt Foci in Rat Colons</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for ACF1"><tr><td>ACF1</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>ACF1</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Aberrant Crypt Foci in Rat Colons</h2>
 
@@ -19,7 +29,7 @@ at 3 different times.
 
 <h3>Usage</h3>
 
-<pre>ACF1</pre>
+<pre><code class='language-R'>ACF1</code></pre>
 
 
 <h3>Format</h3>
@@ -28,7 +38,7 @@ at 3 different times.
 </p>
 
 <dl>
-<dt>count</dt><dd><p>The number of ACF observed in section 1 of
+<dt>count</dt><dd><p>Observed number of ACF in section 1 of
 each rat colon</p>
 </dd>
 <dt>endtime</dt><dd><p>Time of sacrifice, in weeks following injection
@@ -56,8 +66,7 @@ preneoplastic lesions in rat colon.  Carcinogenesis, 12(11): 2093-2098,
 
 <h3>Examples</h3>
 
-<pre>
-sapply(split(ACF1$count,ACF1$endtime),var)
+<pre><code class='language-R'>sapply(split(ACF1$count,ACF1$endtime),var)
 plot(count ~ endtime, data=ACF1, pch=16)
 pause()
 print("Poisson Regression - Example 8.3")
@@ -77,7 +86,8 @@ pause()
 ACF.glm &lt;- glm(formula = count ~ endtime + I(endtime^2),
   family = quasipoisson, data = ACF1)
 summary(ACF.glm)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

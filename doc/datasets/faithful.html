@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Old Faithful Geyser Data</title>
+<!DOCTYPE html><html><head><title>R: Old Faithful Geyser Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for faithful"><tr><td>faithful</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>faithful</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Old Faithful Geyser Data</h2>
 
@@ -17,7 +27,7 @@ the Old Faithful geyser in Yellowstone National Park, Wyoming, USA.
 
 <h3>Usage</h3>
 
-<pre>faithful</pre>
+<pre><code class='language-R'>faithful</code></pre>
 
 
 <h3>Format</h3>
@@ -25,7 +35,7 @@ the Old Faithful geyser in Yellowstone National Park, Wyoming, USA.
 <p>A data frame with 272 observations on 2 variables.
 </p>
 
-<table summary="Rd table">
+<table>
 <tr>
  <td style="text-align: right;">
     [,1]  </td><td style="text-align: left;"> eruptions  </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> Eruption time in mins </td>
@@ -70,7 +80,7 @@ New York: Springer.
 <p>Azzalini, A. and Bowman, A. W. (1990).
 A look at some data on the Old Faithful geyser.
 <em>Applied Statistics</em>, <b>39</b>, 357&ndash;365.
-doi: <a href="https://doi.org/10.2307/2347385">10.2307/2347385</a>.
+<a href="https://doi.org/10.2307/2347385">doi:10.2307/2347385</a>.
 </p>
 
 
@@ -82,8 +92,7 @@ doi: <a href="https://doi.org/10.2307/2347385">10.2307/2347385</a>.
 
 <h3>Examples</h3>
 
-<pre>
-require(stats); require(graphics)
+<pre><code class='language-R'>require(stats); require(graphics)
 f.tit &lt;-  "faithful data: Eruptions of Old Faithful"
 
 ne60 &lt;- round(e60 &lt;- 60 * faithful$eruptions)
@@ -99,7 +108,8 @@ plot(faithful[, -3], main = f.tit,
      ylab = "Waiting time to next eruption (min)")
 lines(lowess(faithful$eruptions, faithful$waiting, f = 2/3, iter = 3),
       col = "red")
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

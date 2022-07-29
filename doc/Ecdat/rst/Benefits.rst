@@ -47,7 +47,7 @@
 
    joblost
       a factor with levels
-      (slack\_work,position\_abolished,seasonal\_job\_ended,other)
+      (slack_work,position_abolished,seasonal_job_ended,other)
 
    nwhite
       non-white ?

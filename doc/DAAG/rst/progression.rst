@@ -48,7 +48,7 @@
 
    Links to sources for the data are at
 
-   http://en.wikipedia.org/wiki/Athletics_world_record
+   https://en.wikipedia.org/wiki/Athletics_world_record
 
    .. rubric:: Examples
       :name: examples
@@ -57,9 +57,10 @@
 
       data(progression)
       plot(log(Time) ~ log(Distance), data=progression)
-      xyplot(log(Time) ~ log(Distance), data=progression, type=c("p","r"))
-      xyplot(log(Time) ~ log(Distance), data=progression,
-             type=c("p","smooth"))
       res <- resid(lm(log(Time) ~ log(Distance), data=progression))
       plot(res ~ log(Distance), data=progression,
            ylab="Residuals from regression line on log scales")
+      library(lattice)
+      xyplot(log(Time) ~ log(Distance), data=progression, type=c("p","r"))
+      xyplot(log(Time) ~ log(Distance), data=progression,
+             type=c("p","smooth"))

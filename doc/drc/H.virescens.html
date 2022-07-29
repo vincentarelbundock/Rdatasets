@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Mortality of tobacco budworms</title>
+<!DOCTYPE html><html><head><title>R: Mortality of tobacco budworms</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for H.virescens"><tr><td>H.virescens</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>H.virescens</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Mortality of tobacco budworms</h2>
 
@@ -17,7 +27,7 @@ to doses of the pyrethroid trans-cypermethrin.
 
 <h3>Usage</h3>
 
-<pre>data(H.virescens)</pre>
+<pre><code class='language-R'>data(H.virescens)</code></pre>
 
 
 <h3>Format</h3>
@@ -26,7 +36,7 @@ to doses of the pyrethroid trans-cypermethrin.
 </p>
 
 <dl>
-<dt><code>dose</code></dt><dd><p>a numeric vector of dose values (<i>&mu; g</i>)</p>
+<dt><code>dose</code></dt><dd><p>a numeric vector of dose values (<code class="reqn">\mu g</code>)</p>
 </dd>
 <dt><code>numdead</code></dt><dd><p>a numeric vector of dead or knocked-down moths</p>
 </dd>
@@ -53,8 +63,7 @@ as explanatory variable.
 
 <h3>Examples</h3>
 
-<pre>
-
+<pre><code class='language-R'>
 ## Fitting dose-response model (log-logistic with common slope)
 Hv.m1 &lt;- drm(numdead/total~dose, sex, weights = total, data = H.virescens, fct = LL.2(), 
 pmodels = list(~ 1, ~ sex - 1), type = "binomial")
@@ -72,7 +81,8 @@ logLik(Hv.m2)
 ED(Hv.m1, c(25, 50, 75))
 
 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

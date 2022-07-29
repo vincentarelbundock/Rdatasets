@@ -87,4 +87,3 @@
    ::
 
       data(Marriage)
-

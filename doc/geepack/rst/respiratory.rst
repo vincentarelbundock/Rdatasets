@@ -59,7 +59,6 @@
 
    ::
 
-
       data(respiratory)
       data(respiratory, package="geepack")
       respiratory$center <- factor(respiratory$center)
@@ -79,4 +78,3 @@
       mlist <- list(gee.ind, gee.exc, gee.uns, gee.ar1)
       do.call(rbind, lapply(mlist, QIC))
       lapply(mlist, tidy)
-

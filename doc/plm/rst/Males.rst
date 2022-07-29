@@ -33,7 +33,7 @@
       wage set by collective bargaining?
 
    ethn
-      a factor with levels ``black, hisp, other``
+      a factor with levels ``⁠black, hisp, other⁠``
 
    married
       married?
@@ -52,7 +52,7 @@
 
    residence
       a factor with levels
-      ``rural_area, north_east, northern_central, south``
+      ``⁠rural_area, north_east, northern_central, south⁠``
 
    .. rubric:: Details
       :name: details

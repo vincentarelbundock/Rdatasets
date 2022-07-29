@@ -59,7 +59,6 @@
 
    ::
 
-
       ## Fitting a log-logistic model with
       ##  common lower and upper limits
       S.alba.LL.4.1 <- drm(DryMatter~Dose, Herbicide, data=S.alba, fct = LL.4(),
@@ -73,4 +72,3 @@
 
       ## Plotting fitted regression curves together with the data
       plot(S.alba.LL.4.2)
-

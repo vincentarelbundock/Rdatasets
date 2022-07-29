@@ -65,9 +65,9 @@
    .. rubric:: Source
       :name: source
 
-   Journal of Business \\& Economic Statistics Data Archive.
+   Journal of Business & Economic Statistics Data Archive.
 
-   ``http://www.amstat.org/publications/jbes/upload/index.cfm?fuseaction=ViewArticles&pub=JBES&issue=96-4-OCT``
+   ``⁠http://www.amstat.org/publications/jbes/upload/index.cfm?fuseaction=ViewArticles&pub=JBES&issue=96-4-OCT⁠``
 
    .. rubric:: References
       :name: references
@@ -76,7 +76,7 @@
    Data*. Cambridge: Cambridge University Press.
 
    Gurmu, S. and Trivedi, P.K. (1996). Excess Zeros in Count Models for
-   Recreational Trips. *Journal of Business \\& Economic Statistics*,
+   Recreational Trips. *Journal of Business & Economic Statistics*,
    **14**, 469–477.
 
    Ozuna, T. and Gomez, I.A. (1995). Specification and Testing of Count

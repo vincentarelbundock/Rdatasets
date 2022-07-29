@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Bank Wages</title>
+<!DOCTYPE html><html><head><title>R: Bank Wages</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for BankWages"><tr><td>BankWages</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>BankWages</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Bank Wages</h2>
 
@@ -16,7 +26,7 @@
 
 <h3>Usage</h3>
 
-<pre>data("BankWages")</pre>
+<pre><code class='language-R'>data("BankWages")</code></pre>
 
 
 <h3>Format</h3>
@@ -42,7 +52,7 @@
 
 <p>Online complements to Heij, de Boer, Franses, Kloek, and van Dijk (2004). 
 </p>
-<p><a href="http://www.oup.com/uk/booksites/content/0199268010/datasets/ch6/xr614bwa.asc">http://www.oup.com/uk/booksites/content/0199268010/datasets/ch6/xr614bwa.asc</a>
+<p><a href="https://global.oup.com/booksites/content/0199268010/datasets/ch6/xr614bwa.asc">https://global.oup.com/booksites/content/0199268010/datasets/ch6/xr614bwa.asc</a>
 </p>
 
 
@@ -56,7 +66,7 @@ Oxford: Oxford University Press.
 
 <h3>Examples</h3>
 
-<pre>
+<pre><code class='language-R'>
 data("BankWages")
 
 ## exploratory analysis of job ~ education
@@ -77,12 +87,12 @@ summary(fm_mnl)
 confint(fm_mnl)
 
 ## same with mlogit package
-if(require("mlogit")) {
+library("mlogit")
 fm_mlogit &lt;- mlogit(job ~ 1 | education + minority, data = BankWages,
   subset = gender == "male", shape = "wide", reflevel = "custodial")
 summary(fm_mlogit)
-}
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

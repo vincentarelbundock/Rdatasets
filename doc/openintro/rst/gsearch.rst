@@ -36,7 +36,6 @@
 
    ::
 
-
       library(ggplot2)
 
       table(gsearch$type, gsearch$outcome)

@@ -49,7 +49,7 @@
       :name: references
 
    Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   http://www.prenhall.com/greene/greene1.html, Table F7.2.
+   https://archive.org/details/econometrics0000haya, Table F7.2.
 
    .. rubric:: See Also
       :name: see-also

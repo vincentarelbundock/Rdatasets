@@ -37,7 +37,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(ipod, aes(x = song_length)) +

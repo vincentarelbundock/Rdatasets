@@ -225,5 +225,4 @@
 
    ::
 
-
       loans_full_schema

@@ -20,7 +20,7 @@
    ============= ===============================
    ``Treatment`` ``Calcium`` or ``Placebo``
    ``Decrease``  Beginning-ending blood pressure
-   \            
+   \             
    ============= ===============================
 
    .. rubric:: Details

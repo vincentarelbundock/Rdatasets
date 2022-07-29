@@ -35,7 +35,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(antibiotics, aes(x = condition)) +

@@ -33,7 +33,6 @@
 
    ::
 
-
       set.seed(5)
       generate_student_housing <- data.frame(
         price = round(rnorm(175, 515, 65) + exp(rnorm(175, 4.2, 1)))

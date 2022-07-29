@@ -75,11 +75,9 @@
 
    ::
 
-
         data("Lanza", package = "HSAUR")
         layout(matrix(1:4, nrow = 2))
         pl <- tapply(1:nrow(Lanza), Lanza$study, function(indx)
             mosaicplot(table(Lanza[indx,"treatment"], 
                              Lanza[indx,"classification"]),
                        main = "", shade = TRUE))
-

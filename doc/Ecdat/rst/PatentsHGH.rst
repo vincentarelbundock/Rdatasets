@@ -4,7 +4,7 @@
    PatentsHGH R Documentation
    ========== ===============
 
-   .. rubric:: Dynamic Relation Between Patents and R\&D
+   .. rubric:: Dynamic Relation Between Patents and R&D
       :name: dynamic-relation-between-patents-and-rd
 
    .. rubric:: Description

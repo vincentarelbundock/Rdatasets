@@ -47,7 +47,6 @@
    ::
 
 
-
       # _____ Basic Histogram _____ #
       hist(mlb$salary / 1000,
         breaks = 15,

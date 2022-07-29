@@ -1,32 +1,52 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Labour Training Evaluation Data</title>
+<!DOCTYPE html><html><head><title>R: Labour Training Evaluation Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for nsw74psid1"><tr><td>nsw74psid1</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>nsw74demo</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Labour Training Evaluation Data</h2>
 
 <h3>Description</h3>
 
-<p>This data frame contains 2675 rows and 10 columns.
-These data are pertinent to an investigation of the way that   
-earnings changed, between 1974-1975 and 1978, in the absence
-of training.  Data for the experimental treatment 
-group (NSW) were combined with control data results from the 
-Panel Study of Income Dynamics (PSID) study.  
+<p>This <code>nsw74demo</code> data frame, with 445 rows and 10 columns,
+is the subset of the <code>nswdemo</code> dataset for which 1974
+earnings are available. 
+Data are for the male experimental control and treatment
+groups, in an investigation of the effect of training
+on changes, between 1974-1975 and 1978, in the earnings
+of individuals who had experienced employment difficulties.
+</p>
+<p>Likewise, <code>nsw74psid1</code> (2675 rows) is the subset of the
+<code>nswpsid1</code> data, and <code>nsw74psid3</code> (313 rows) is the subset of
+the  <code>nswpsid3</code> data, for which 1974 income is available.
+NB, also, the <code>nsw74psidA</code> data set.
 </p>
 
 
 <h3>Usage</h3>
 
-<pre>nsw74psid1</pre>
+<pre><code class='language-R'>  data(nsw74demo)
+  data(nsw74psid1)
+  data(nsw74psid3)
+  data(nsw74psidA)
+</code></pre>
 
 
 <h3>Format</h3>
 
-<p>This data frame contains the following columns:
+<p>Columns are:
 </p>
 
 <dl>
@@ -56,6 +76,17 @@ identifying the study in which the subjects were enrolled
 
 
 
+<h3>Details</h3>
+
+<p>The <code>nsw74psidA</code> data set (252 rows) was obtained from
+<code>nsw74psid1</code> using:
+</p>
+<p><code>here &lt;- age &lt;= 40 &amp; re74&lt;=5000 &amp; re75 &lt;= 5000 &amp; re78 &lt; 30000</code>
+</p>
+<p><code>nsw74psidA &lt;- nsw74psid1[here, ]</code>
+</p>
+
+
 <h3>Source</h3>
 
 <p>http://www.columbia.edu/~rd247/nswdata.html
@@ -74,37 +105,5 @@ training programs. American Economic Review 76: 604-620.
 </p>
 
 
-<h3>Examples</h3>
-
-<pre>
-print("Interpretation of Regression Coefficients - Example 6.6")
-
- nsw74psid1.lm &lt;- lm(re78~ trt+ (age + educ + re74 + re75) +
-   (black + hisp + marr + nodeg), data = nsw74psid1)
- summary(nsw74psid1.lm)$coef
-options(digits=4)
-sapply(nsw74psid1[, c(2,3,8,9,10)], quantile, prob=c(.25,.5,.75,.95,1))
-attach(nsw74psid1)
-sapply(nsw74psid1[trt==1, c(2,3,8,9,10)], quantile, 
-prob=c(.25,.5,.75,.95,1))
-pause()
-
-here &lt;- age &lt;= 40 &amp; re74&lt;=5000 &amp; re75 &lt;= 5000 &amp; re78 &lt; 30000 
-nsw74psidA &lt;- nsw74psid1[here, ]
-detach(nsw74psid1)
-table(nsw74psidA$trt)
-pause()
-
-A1.lm &lt;- lm(re78 ~ trt + (age + educ + re74 + re75) + (black +
-      hisp + marr + nodeg), data = nsw74psidA)
-summary(A1.lm)$coef
-pause()
-
-A2.lm &lt;- lm(re78 ~ trt + (age + educ + re74 + re75) * (black +   
-      hisp + marr + nodeg), data = nsw74psidA)
-anova(A1.lm, A2.lm)
-
-</pre>
-
-
-</div></body></html>
+</div>
+</body></html>

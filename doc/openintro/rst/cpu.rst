@@ -72,7 +72,6 @@
 
    ::
 
-
       library(ggplot2)
 
       # CPU base speed

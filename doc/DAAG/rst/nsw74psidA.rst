@@ -1,82 +1,94 @@
 .. container::
 
-   ========== ===============
-   nsw74psidA R Documentation
-   ========== ===============
+   ========= ===============
+   nsw74demo R Documentation
+   ========= ===============
 
-   .. rubric:: A Subset of the nsw74psid1 Data Set
-      :name: a-subset-of-the-nsw74psid1-data-set
+   .. rubric:: Labour Training Evaluation Data
+      :name: labour-training-evaluation-data
 
    .. rubric:: Description
       :name: description
 
-   The ``nsw74psidA`` data frame has 252 rows and 10 columns. See
-   ``nsw74psid1`` for more information.
+   This ``nsw74demo`` data frame, with 445 rows and 10 columns, is the
+   subset of the ``nswdemo`` dataset for which 1974 earnings are
+   available. Data are for the male experimental control and treatment
+   groups, in an investigation of the effect of training on changes,
+   between 1974-1975 and 1978, in the earnings of individuals who had
+   experienced employment difficulties.
+
+   Likewise, ``nsw74psid1`` (2675 rows) is the subset of the
+   ``nswpsid1`` data, and ``nsw74psid3`` (313 rows) is the subset of the
+   ``nswpsid3`` data, for which 1974 income is available. NB, also, the
+   ``nsw74psidA`` data set.
 
    .. rubric:: Usage
       :name: usage
 
    ::
 
-      nsw74psidA
+        data(nsw74demo)
+        data(nsw74psid1)
+        data(nsw74psid3)
+        data(nsw74psidA)
 
    .. rubric:: Format
       :name: format
 
-   This data frame contains the following columns:
+   Columns are:
 
    trt
-      a numeric vector
+      a numeric vector identifying the study in which the subjects were
+      enrolled (0 = PSID, 1 = NSW).
 
    age
-      a numeric vector
+      age (in years).
 
    educ
-      a numeric vector
+      years of education.
 
    black
-      a numeric vector
+      (0 = not black, 1 = black).
 
    hisp
-      a numeric vector
+      (0 = not hispanic, 1 = hispanic).
 
    marr
-      a numeric vector
+      (0 = not married, 1 = married).
 
    nodeg
-      a numeric vector
+      (0 = completed high school, 1 = dropout).
 
    re74
-      a numeric vector
+      real earnings in 1974.
 
    re75
-      a numeric vector
+      real earnings in 1975.
 
    re78
-      a numeric vector
+      real earnings in 1978.
 
    .. rubric:: Details
       :name: details
 
-   This data set was obtained using:
+   The ``nsw74psidA`` data set (252 rows) was obtained from
+   ``nsw74psid1`` using:
 
    ``here <- age <= 40 & re74<=5000 & re75 <= 5000 & re78 < 30000``
 
    ``nsw74psidA <- nsw74psid1[here, ]``
 
-   .. rubric:: Examples
-      :name: examples
+   .. rubric:: Source
+      :name: source
 
-   ::
+   http://www.columbia.edu/~rd247/nswdata.html
 
-      table(nsw74psidA$trt)
-      A1.lm <- lm(re78 ~ trt + (age + educ + re74 + re75) + (black +
-            hisp + marr + nodeg), data = nsw74psidA)
-      summary(A1.lm)$coef
-      discA.glm <- glm(formula = trt ~ age + educ + black + hisp +
-        marr + nodeg + re74 + re75, family = binomial, data = nsw74psidA)
-      A.scores <- predict(discA.glm)
-      options(digits=4)
-      overlap <- A.scores > -3.5 & A.scores < 3.8
-      A.lm <- lm(re78 ~ trt + A.scores, data=nsw74psidA, subset = overlap)
-      summary(A.lm)$coef
+   .. rubric:: References
+      :name: references
+
+   Dehejia, R.H. and Wahba, S. 1999. Causal effects in non-experimental
+   studies: re-evaluating the evaluation of training programs. Journal
+   of the American Statistical Association 94: 1053-1062.
+
+   Lalonde, R. 1986. Evaluating the economic evaluations of training
+   programs. American Economic Review 76: 604-620.

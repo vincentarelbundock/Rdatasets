@@ -199,7 +199,6 @@
 
    ::
 
-
       if(!require(GPArotation)) {message("I am sorry, to run omega requires GPArotation") 
               } else {
       #holz <- omega(Holzinger,4, title = "14 ability tests from Holzinger-Swineford")

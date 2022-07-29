@@ -112,7 +112,7 @@
 
    Zeileis, A., Kleiber, C., and Jackman, S. (2008). Regression Models
    for Count Data in R. *Journal of Statistical Software*, **27**\ (8).
-   URL http://www.jstatsoft.org/v27/i08/.
+   `doi:10.18637/jss.v027.i08 <https://doi.org/10.18637/jss.v027.i08>`__.
 
    .. rubric:: See Also
       :name: see-also

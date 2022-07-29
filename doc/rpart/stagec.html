@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Stage C Prostate Cancer</title>
+<!DOCTYPE html><html><head><title>R: Stage C Prostate Cancer</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for stagec"><tr><td>stagec</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>stagec</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Stage C Prostate Cancer</h2>
 
@@ -16,7 +26,7 @@ study exploring the prognostic value of flow cytometry.</p>
 
 <h3>Usage</h3>
 
-<pre>data(stagec)</pre>
+<pre><code class='language-R'>data(stagec)</code></pre>
 
 
 <h3>Format</h3>
@@ -40,8 +50,8 @@ study exploring the prognostic value of flow cytometry.</p>
 <dt><code>gleason</code></dt><dd><p>grade of the tumor, Gleason system</p>
 </dd>
 <dt><code>ploidy</code></dt><dd><p>the ploidy status of the tumor, from flow
-cytometry. Values are <span class="samp">diploid</span>, <span class="samp">tetraploid</span>,
-and <span class="samp">aneuploid</span></p>
+cytometry. Values are &lsquo;<span class="samp">&#8288;diploid&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;tetraploid&#8288;</span>&rsquo;,
+and &lsquo;<span class="samp">&#8288;aneuploid&#8288;</span>&rsquo;</p>
 </dd>
 </dl>
 
@@ -59,10 +69,10 @@ impossible to measure.
 
 <h3>Examples</h3>
 
-<pre>
-require(survival)
+<pre><code class='language-R'>require(survival)
 rpart(Surv(pgtime, pgstat) ~ ., stagec)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

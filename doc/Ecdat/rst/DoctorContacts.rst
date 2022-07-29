@@ -53,7 +53,7 @@
       self–rate health (excellent,good,fair,poor)
 
    linc
-      log of annual family income (in \\$)
+      log of annual family income (in $)
 
    lfam
       log of family size

@@ -44,4 +44,3 @@
    ::
 
       plot(taylor)
-

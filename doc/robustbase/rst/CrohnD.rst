@@ -33,7 +33,7 @@
       the number of adverse events
 
    ``BMI``
-      Body MASS Index, i.e., *weight[kg] / (height[m])^2*.
+      Body MASS Index, i.e., ``weight[kg] / (height[m])^2``.
 
    ``height``
       in cm

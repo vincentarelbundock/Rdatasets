@@ -114,7 +114,6 @@
 
    ::
 
-
       e <- email
 
       # ______ Variables For Logistic Regression ______#

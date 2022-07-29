@@ -55,7 +55,7 @@
       eligible disregard rate
 
    logwage
-      log weekly earnings in lost job (1985\$)
+      log weekly earnings in lost job (1985$)
 
    tenure
       years tenure in lost job

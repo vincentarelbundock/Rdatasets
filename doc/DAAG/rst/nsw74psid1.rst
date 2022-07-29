@@ -1,8 +1,8 @@
 .. container::
 
-   ========== ===============
-   nsw74psid1 R Documentation
-   ========== ===============
+   ========= ===============
+   nsw74demo R Documentation
+   ========= ===============
 
    .. rubric:: Labour Training Evaluation Data
       :name: labour-training-evaluation-data
@@ -10,23 +10,32 @@
    .. rubric:: Description
       :name: description
 
-   This data frame contains 2675 rows and 10 columns. These data are
-   pertinent to an investigation of the way that earnings changed,
-   between 1974-1975 and 1978, in the absence of training. Data for the
-   experimental treatment group (NSW) were combined with control data
-   results from the Panel Study of Income Dynamics (PSID) study.
+   This ``nsw74demo`` data frame, with 445 rows and 10 columns, is the
+   subset of the ``nswdemo`` dataset for which 1974 earnings are
+   available. Data are for the male experimental control and treatment
+   groups, in an investigation of the effect of training on changes,
+   between 1974-1975 and 1978, in the earnings of individuals who had
+   experienced employment difficulties.
+
+   Likewise, ``nsw74psid1`` (2675 rows) is the subset of the
+   ``nswpsid1`` data, and ``nsw74psid3`` (313 rows) is the subset of the
+   ``nswpsid3`` data, for which 1974 income is available. NB, also, the
+   ``nsw74psidA`` data set.
 
    .. rubric:: Usage
       :name: usage
 
    ::
 
-      nsw74psid1
+        data(nsw74demo)
+        data(nsw74psid1)
+        data(nsw74psid3)
+        data(nsw74psidA)
 
    .. rubric:: Format
       :name: format
 
-   This data frame contains the following columns:
+   Columns are:
 
    trt
       a numeric vector identifying the study in which the subjects were
@@ -59,6 +68,16 @@
    re78
       real earnings in 1978.
 
+   .. rubric:: Details
+      :name: details
+
+   The ``nsw74psidA`` data set (252 rows) was obtained from
+   ``nsw74psid1`` using:
+
+   ``here <- age <= 40 & re74<=5000 & re75 <= 5000 & re78 < 30000``
+
+   ``nsw74psidA <- nsw74psid1[here, ]``
+
    .. rubric:: Source
       :name: source
 
@@ -73,36 +92,3 @@
 
    Lalonde, R. 1986. Evaluating the economic evaluations of training
    programs. American Economic Review 76: 604-620.
-
-   .. rubric:: Examples
-      :name: examples
-
-   ::
-
-      print("Interpretation of Regression Coefficients - Example 6.6")
-
-       nsw74psid1.lm <- lm(re78~ trt+ (age + educ + re74 + re75) +
-         (black + hisp + marr + nodeg), data = nsw74psid1)
-       summary(nsw74psid1.lm)$coef
-      options(digits=4)
-      sapply(nsw74psid1[, c(2,3,8,9,10)], quantile, prob=c(.25,.5,.75,.95,1))
-      attach(nsw74psid1)
-      sapply(nsw74psid1[trt==1, c(2,3,8,9,10)], quantile, 
-      prob=c(.25,.5,.75,.95,1))
-      pause()
-
-      here <- age <= 40 & re74<=5000 & re75 <= 5000 & re78 < 30000 
-      nsw74psidA <- nsw74psid1[here, ]
-      detach(nsw74psid1)
-      table(nsw74psidA$trt)
-      pause()
-
-      A1.lm <- lm(re78 ~ trt + (age + educ + re74 + re75) + (black +
-            hisp + marr + nodeg), data = nsw74psidA)
-      summary(A1.lm)$coef
-      pause()
-
-      A2.lm <- lm(re78 ~ trt + (age + educ + re74 + re75) * (black +   
-            hisp + marr + nodeg), data = nsw74psidA)
-      anova(A1.lm, A2.lm)
-

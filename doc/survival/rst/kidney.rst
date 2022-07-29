@@ -29,7 +29,7 @@ age:     in years
 sex:     1=male, 2=female
 disease: disease type (0=GN, 1=AN, 2=PKD, 3=Other)
 frail:   frailty estimate from original paper
-\       
+\        
 ======== =========================================
 
 Note
@@ -53,4 +53,3 @@ Examples
    kfit0 <- coxph(Surv(time, status)~ age + sex + disease, kidney)
    kfitm1 <- coxph(Surv(time,status) ~ age + sex + disease + 
            frailty(id, dist='gauss'), kidney)
-

@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Home Mortgage Disclosure Act Data</title>
+<!DOCTYPE html><html><head><title>R: Home Mortgage Disclosure Act Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for HMDA"><tr><td>HMDA</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>HMDA</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Home Mortgage Disclosure Act Data</h2>
 
@@ -15,7 +25,7 @@
 
 <h3>Usage</h3>
 
-<pre>data("HMDA")</pre>
+<pre><code class='language-R'>data("HMDA")</code></pre>
 
 
 <h3>Format</h3>
@@ -85,8 +95,7 @@ Mortgage Lending in Boston: Interpreting HMDA Data. <em>American Economic Review
 
 <h3>Examples</h3>
 
-<pre>
-data("HMDA")
+<pre><code class='language-R'>data("HMDA")
 
 ## Stock and Watson (2007)
 ## Equations 11.1, 11.3, 11.7, 11.8 and 11.10, pp. 387--395
@@ -98,7 +107,8 @@ fm5 &lt;- glm(deny ~ pirat + afam, family = binomial(link = "logit"), data = HMD
 
 ## More examples can be found in:
 ## help("StockWatson2007")
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

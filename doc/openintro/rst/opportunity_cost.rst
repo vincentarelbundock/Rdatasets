@@ -55,7 +55,6 @@
 
    ::
 
-
       library(ggplot2)
 
       table(opportunity_cost)

@@ -46,5 +46,4 @@
 
    ::
 
-
       summary(china)

@@ -82,5 +82,3 @@
 
       expected <- 
       with(ChestSizes, diff(pnorm(c(32, chest) + .5, xbar, std)) * sum(count))
-
-

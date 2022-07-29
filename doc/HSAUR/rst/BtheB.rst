@@ -78,7 +78,6 @@
 
    ::
 
-
         data("BtheB", package = "HSAUR")
         layout(matrix(1:2, nrow = 1))   
         ylim <- range(BtheB[,grep("bdi", names(BtheB))], na.rm = TRUE)
@@ -88,4 +87,3 @@
         boxplot(subset(BtheB, treatment == "BtheB")[,grep("bdi", names(BtheB))], 
                 main = "Beat the Blues", ylab = "BDI", xlab = "Time (in months)",
                 names = c(0, 2, 4, 6, 8), ylim = ylim)
-

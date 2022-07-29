@@ -30,6 +30,4 @@
 
    ::
 
-
       autoplot(uschange, facet=TRUE)
-

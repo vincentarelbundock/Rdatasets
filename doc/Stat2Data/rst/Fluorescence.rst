@@ -20,7 +20,7 @@
    =============== ======================================
    ``Calcium``     Log of free calcium concentration
    ``ProteinProp`` Proportion of protein bound to calcium
-   \              
+   \               
    =============== ======================================
 
    .. rubric:: Details

@@ -56,13 +56,13 @@
       Number of late pickups for a given week and daycare center.
 
    study_period_4
-      Period of study, divided into 4 periods: ``before fine``,
-      ``first 4 weeks with fine``, ``last 8 weeks with fine``,
-      ``after fine``
+      Period of study, divided into 4 periods: ``⁠before fine⁠``,
+      ``⁠first 4 weeks with fine⁠``, ``⁠last 8 weeks with fine⁠``,
+      ``⁠after fine⁠``
 
    study_period_3
-      Period of study, divided into 4 periods: ``before fine``,
-      ``with fine``, ``after fine``
+      Period of study, divided into 4 periods: ``⁠before fine⁠``,
+      ``⁠with fine⁠``, ``⁠after fine⁠``
 
    .. rubric:: Source
       :name: source
@@ -74,7 +74,6 @@
       :name: examples
 
    ::
-
 
       library(dplyr)
       library(tidyr)

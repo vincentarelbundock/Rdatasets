@@ -43,5 +43,4 @@
    ::
 
 
-
       table(health_coverage)

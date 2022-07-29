@@ -42,6 +42,5 @@
 
    ::
 
-
       data(assortive_mating)
       table(assortive_mating)

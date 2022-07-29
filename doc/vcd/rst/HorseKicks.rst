@@ -10,11 +10,11 @@
    .. rubric:: Description
       :name: description
 
-   Data from von Bortkiewicz (1898), given by Andrews \\& Herzberg
-   (1985), on number of deaths by horse or mule kicks in 10 (of 14
-   reported) corps of the Prussian army. 4 corps were not considered by
-   Fisher (1925) as they had a different organization. This data set is
-   a popular subset of the ``VonBort`` data.
+   Data from von Bortkiewicz (1898), given by Andrews & Herzberg (1985),
+   on number of deaths by horse or mule kicks in 10 (of 14 reported)
+   corps of the Prussian army. 4 corps were not considered by Fisher
+   (1925) as they had a different organization. This data set is a
+   popular subset of the ``VonBort`` data.
 
    .. rubric:: Usage
       :name: usage
@@ -32,7 +32,7 @@
    == ======= ============
    No Name    Levels
    1  nDeaths 0, 1, ..., 4
-   \         
+   \          
    == ======= ============
 
    .. rubric:: Source
@@ -48,7 +48,7 @@
    Springer-Verlag, New York, NY.
 
    R. A. Fisher (1925), *Statistical Methods for Research Workers*.
-   Oliver \\& Boyd, London.
+   Oliver & Boyd, London.
 
    L. von Bortkiewicz (1898), *Das Gesetz der kleinen Zahlen*. Teubner,
    Leipzig.

@@ -36,5 +36,4 @@
 
    ::
 
-
       gear_company

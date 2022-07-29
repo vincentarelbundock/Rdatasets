@@ -52,7 +52,6 @@
 
    ::
 
-
       ## Fitting the baro5 model
       heartrate.m1 <- drm(rate~pressure, data=heartrate, fct=baro5())
       plot(heartrate.m1)
@@ -78,5 +77,3 @@
 
       ## Finding the minimum
       pressureVector[which.min(derivativeVector)]
-
-

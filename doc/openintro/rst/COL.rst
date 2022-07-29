@@ -38,7 +38,6 @@
 
    ::
 
-
       plot(1:7, 7:1,
         col = COL, pch = 19, cex = 6, xlab = "", ylab = "",
         xlim = c(0.5, 7.5), ylim = c(-2.5, 8), axes = FALSE

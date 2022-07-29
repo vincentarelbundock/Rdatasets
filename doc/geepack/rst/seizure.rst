@@ -66,7 +66,6 @@
 
    ::
 
-
       data(seizure)
       ## Diggle, Liang, and Zeger (1994) pp166-168, compare Table 8.10
       seiz.l <- reshape(seizure,
@@ -104,4 +103,3 @@
                   data = seiz.l, corstr = "ar1", family = poisson,
                   zcor = z, cor.link = "fisherz", sca.link = "log")
       summary(m4)
-

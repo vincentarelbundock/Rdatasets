@@ -75,4 +75,3 @@
 
       ## Plot similar to Figure 8 in Struyf et al (1996)
       ## Not run: plot(diana(agriculture), ask = TRUE)
-

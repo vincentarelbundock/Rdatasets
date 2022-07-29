@@ -12,7 +12,7 @@
 
    The Southern Oscillation Index (SOI) is the difference in barometric
    pressure at sea level between Tahiti and Darwin. Annual SOI and
-   Australian rainfall data, for the years 1900-2001, are given.
+   Australian rainfall data, for the years 1900-2005, are given.
    Australia's annual mean rainfall is an area-weighted average of the
    total annual precipitation at approximately 370 rainfall stations
    around the country.
@@ -209,4 +209,3 @@
        xbomsoi2.maSel
       qqnorm(resid(xbomsoi.maSel, type="normalized"))
       detach(xbomsoi)
-

@@ -10,8 +10,8 @@
    .. rubric:: Description
       :name: description
 
-   These data consist of measurements of vapour pressure and of the
-   difference between leaf and air temperature.
+   Data are measurements of vapour pressure and of the difference
+   between leaf and air temperature.
 
    .. rubric:: Usage
       :name: usage
@@ -60,4 +60,3 @@
 
       summary(leaf.lm2)
       plot(leaf.lm2)
-

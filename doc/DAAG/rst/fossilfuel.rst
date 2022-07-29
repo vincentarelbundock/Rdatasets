@@ -31,10 +31,19 @@
       a numeric vector giving the total worldwide carbon emissions from
       fossil fuel use, in millions of tonnes.
 
+   .. rubric:: Details
+      :name: details
+
+   Data for the years 1751 through to 2014 is available from Data for
+   the years 2014
+   https://cdiac.ess-dive.lbl.gov/ftp/ndp030/global.1751_2014.ems
+
    .. rubric:: Source
       :name: source
 
-   Marland et al (2003)
+   Boden TA, Marland G, Andres RJ (2017). “Global, Regional, and
+   National Fossil-Fuel CO2 Emissions.”
+   https://cdiac.ess-dive.lbl.gov/trends/emis/meth_reg.html.
 
    .. rubric:: Examples
       :name: examples

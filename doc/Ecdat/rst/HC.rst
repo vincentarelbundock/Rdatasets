@@ -57,7 +57,7 @@
    .. rubric:: References
       :name: references
 
-   Kenneth Train's home page : http://elsa.berkeley.edu/~train/.
+   Kenneth Train's home page : https://eml.berkeley.edu/~train/.
 
    .. rubric:: See Also
       :name: see-also

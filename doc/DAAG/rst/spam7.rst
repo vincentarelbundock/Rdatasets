@@ -11,7 +11,8 @@
       :name: description
 
    The data consist of 4601 email items, of which 1813 items were
-   identified as spam.
+   identified as spam. This is a subset of the full dataset, with six
+   only of the 57 explanatory variables in the complete dataset.
 
    .. rubric:: Usage
       :name: usage
@@ -23,25 +24,27 @@
    .. rubric:: Format
       :name: format
 
-   This data frame contains the following columns:
+   Columns included are:
 
    crl.tot
-      total length of words in capitals
+      total length of uninterrupted sequences of capitals
 
    dollar
-      number of occurrences of the \\$ symbol
+      Occurrences of the dollar sign, as percent of total number of
+      characters
 
    bang
-      number of occurrences of the ! symbol
+      Occurrences of ‘!’, as percent of total number of characters
 
    money
-      number of occurrences of the word ‘money’
+      Occurrences of ‘money’, as percent of total number of words
 
    n000
-      number of occurrences of the string ‘000’
+      Occurrences of the string ‘000’, as percent of total number of
+      words
 
    make
-      number of occurrences of the word ‘make’
+      Occurrences of ‘make’, as a percent of total number of words
 
    yesno
       outcome variable, a factor with levels ``n`` not spam, ``y`` spam
@@ -51,9 +54,8 @@
 
    George Forman, Hewlett-Packard Laboratories
 
-   These data are available from the University of California at Irvine
-   Repository of Machine Learning Databases and Domain Theories. The
-   address is: http://www.ics.uci.edu/~Here
+   The complete dataset, and documentation, are available from `Spam
+   database <https://archive.ics.uci.edu/ml/datasets/spambasehttps://archive.ics.uci.edu/ml/datasets/spambase/>`__
 
    .. rubric:: Examples
       :name: examples
@@ -65,4 +67,3 @@
          money + n000 + make, data=spam7)
       plot(spam.rpart)
       text(spam.rpart)
-

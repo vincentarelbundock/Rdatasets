@@ -1,30 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: RuPaul's Drag Race Episode Data</title>
+<!DOCTYPE html><html><head><title>R: RuPaul's Drag Race Episode Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for rpdr_ep"><tr><td>rpdr_ep</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>rpdr_ep</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>RuPaul's Drag Race Episode Data</h2>
 
 <h3>Description</h3>
 
 <p>These are episode-level data for RuPaul's Drag Race for all available seasons
-(currently through Season 12). Data include all sorts of information.
+(currently through Season 14). Data include all sorts of information.
 </p>
 
 
 <h3>Usage</h3>
 
-<pre>
-rpdr_ep
-</pre>
+<pre><code class='language-R'>rpdr_ep
+</code></pre>
 
 
 <h3>Format</h3>
 
-<p>A data frame with 159 observations on the following 22 variables.
+<p>A data frame with the following 22 variables.
 </p>
 
 <dl>
@@ -50,7 +59,9 @@ rpdr_ep
 </dd>
 <dt><code>minicw2</code></dt><dd><p>a character vector for a second mini-challenge winner, where applicable</p>
 </dd>
-<dt><code>minicw3</code></dt><dd><p>a character vector for a second mini-challenge winner, where applicable</p>
+<dt><code>minicw3</code></dt><dd><p>a character vector for a third mini-challenge winner, where applicable</p>
+</dd>
+<dt><code>minicw4</code></dt><dd><p>a character vector for a fourth mini-challenge winner, where applicable</p>
 </dd>
 <dt><code>bottom1</code></dt><dd><p>a character vector for queen in the bottom 2 of that episode</p>
 </dd>
@@ -64,6 +75,8 @@ rpdr_ep
 </dd>
 <dt><code>bottom6</code></dt><dd><p>a character vector for the sixth queen in the bottom of that episode. Thanks, Season 11.</p>
 </dd>
+<dt><code>bottom7</code></dt><dd><p>a character vector for the seventh queen in the bottom of that episode. Thanks, Season 14.</p>
+</dd>
 <dt><code>lipsyncartist</code></dt><dd><p>a character vector for the lip-sync artist</p>
 </dd>
 <dt><code>lipsyncsong</code></dt><dd><p>a character vector for the lip-sync artist's song</p>
@@ -76,4 +89,5 @@ rpdr_ep
 
 
 
-</div></body></html>
+</div>
+</body></html>

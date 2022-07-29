@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Named US Atlantic Hurricanes</title>
+<!DOCTYPE html><html><head><title>R: Named US Atlantic Hurricanes</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for hurricNamed"><tr><td>hurricNamed</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>hurricNamed</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>
 Named US Atlantic Hurricanes
@@ -20,7 +30,7 @@ that made landfall in the US mainland from 1950 through to 2012.
 
 <h3>Usage</h3>
 
-<pre>data("hurricNamed")</pre>
+<pre><code class='language-R'>data("hurricNamed")</code></pre>
 
 
 <h3>Format</h3>
@@ -35,8 +45,8 @@ that made landfall in the US mainland from 1950 through to 2012.
 </dd>
 <dt><code>LF.WindsMPH</code></dt><dd><p>Maximum sustained windspeed (&gt;= 1 minute) to occur along
 the US coast. Prior to 1980, this is estimated from the maximum
-windspeed associated with the Saffir-Simpson index at landfall. If 2
-or more landfalls, the maximum is taken</p>
+windspeed associated with the Saffir-Simpson index at landfall.
+If 2 or more landfalls, the maximum is taken</p>
 </dd>
 <dt><code>LF.PressureMB</code></dt><dd><p>Atmospheric pressure at landfall in
 millibars. If 2 or more landfalls, the minimum is taken</p>
@@ -73,37 +83,39 @@ adjusting for the severity of the storm than those with male names.
 
 <h3>Source</h3>
 
-<p><a href="http://www.icatdamageestimator.com/">http://www.icatdamageestimator.com/</a>
+<p><a href="https://www.icat.com/storms/catastrophe-resources">https://www.icat.com/storms/catastrophe-resources</a>
 Deaths except for Audrey and Katrina, are in the Excel file
 that is available from
-<a href="http://www.pnas.org/content/suppl/2014/05/30/1402786111.DCSupplemental">http://www.pnas.org/content/suppl/2014/05/30/1402786111.DCSupplemental</a>
-NOAA Monthly Weather Reports (MWRs) supplied the numbers of deaths for
+<a href="https://www.pnas.org/doi/10.1073/pnas.1402786111">https://www.pnas.org/doi/10.1073/pnas.1402786111</a>
+</p>
+<p>NOAA Monthly Weather Reports (MWRs) supplied the numbers of deaths for
 all except Donna, Celia, Audrey and Katrina.  The figure for Celia is
-from <a href="http://www.nhc.noaa.gov/pdf/NWS-TPC-5.pdf">http://www.nhc.noaa.gov/pdf/NWS-TPC-5.pdf</a>.  For the other
-three hurricanes it is from the Atlantic hurricane list in Wikipedia
+from <a href="https://www.nhc.noaa.gov/pdf/NWS-TPC-5.pdf">https://www.nhc.noaa.gov/pdf/NWS-TPC-5.pdf</a>.  For the other
+three hurricanes, it is from the Atlantic hurricane list in Wikipedia
 (see the references.)
 </p>
 
 
 <h3>References</h3>
 
-<p><a href="http://www.icatdamageestimator.com/">http://www.icatdamageestimator.com/</a>
-<a href="https://www.aoml.noaa.gov/hrd/hurdat/mwr_pdf/">https://www.aoml.noaa.gov/hrd/hurdat/mwr_pdf/</a>
-<a href="http://en.wikipedia.org/wiki/List_of_Atlantic_hurricanes">http://en.wikipedia.org/wiki/List_of_Atlantic_hurricanes</a>
-<a href="http://www.pnas.org/cgi/doi/10.1073/pnas.1402786111">http://www.pnas.org/cgi/doi/10.1073/pnas.1402786111</a>
+<p><a href="https://www.aoml.noaa.gov/hrd/hurdat/mwr_pdf/">https://www.aoml.noaa.gov/hrd/hurdat/mwr_pdf/</a>
+<a href="https://en.wikipedia.org/wiki/List_of_Atlantic_hurricanes">https://en.wikipedia.org/wiki/List_of_Atlantic_hurricanes</a>
+<a href="https://www.nhtsa.gov/file-downloads">https://www.nhtsa.gov/file-downloads</a>
+</p>
+<p>Jung, Kiju, et al. &quot;Female hurricanes are deadlier than male hurricanes.&quot; Proceedings of the National Academy of Sciences 111.24 (2014): 8782-8787.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre>
-data(hurricNamed)
+<pre><code class='language-R'>data(hurricNamed)
 str(hurricNamed)
 plot(log(deaths+0.5) ~ log(NDAM2014), data=hurricNamed)
 with(hurricNamed, lines(lowess(log(deaths+0.5) ~ log(NDAM2014))))
 plot(log(deaths+0.5) ~ I(NDAM2014^0.14), data=hurricNamed)
 with(hurricNamed, lines(lowess(log(deaths+0.1) ~ I(NDAM2014^0.14))))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

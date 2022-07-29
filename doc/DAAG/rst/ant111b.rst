@@ -1,57 +1,53 @@
 .. container::
 
    ======= ===============
-   ant111b R Documentation
+   antigua R Documentation
    ======= ===============
 
-   .. rubric:: Averages by block of corn yields, for treatment 111 only
-      :name: averages-by-block-of-corn-yields-for-treatment-111-only
+   .. rubric:: Averages by block of yields for the Antigua Corn data
+      :name: averages-by-block-of-yields-for-the-antigua-corn-data
 
    .. rubric:: Description
       :name: description
 
-   These data frames have averages by blocks (parcels) for the treatment
-   ``111``.
+   These data frames have yield averages by blocks (parcels). The
+   ``ant111b``\ dataset is a subset that has block averages of corn
+   yields for treatment 111 only
 
    .. rubric:: Usage
       :name: usage
 
    ::
 
-      ant111b
+        data(antigua)
+        data(ant111b)
+        
 
    .. rubric:: Format
       :name: format
 
-   A data frame with 36 observations on 9 variables.
-
-   site
-      a factor with levels (``ant111b``:) ``DBAN`` ``LFAN`` ``NSAN``
-      ``ORAN`` ``OVAN`` ``TEAN`` ``WEAN`` ``WLAN``
-
-   parcel
-      a factor with levels ``I`` ``II`` ``III`` ``IV``
-
-   code
-      a numeric vector
-
-   island
-      a numeric vector
+   A data frame with 324 observations on 7 variables.
 
    id
       a numeric vector
+
+   site
+      a factor with 8 levels.
+
+   block
+      a factor with levels ``I`` ``II`` ``III`` ``IV``
 
    plot
       a numeric vector
 
    trt
-      a numeric vector
+      a factor consisting of 12 levels
 
    ears
-      a numeric vector
+      a numeric vector; note that -9999 is used as a missing value code.
 
    harvwt
-      a numeric vector
+      a numeric vector; the average yield
 
    .. rubric:: Source
       :name: source

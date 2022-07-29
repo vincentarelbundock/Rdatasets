@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Sustainability and Economic Indicators for South Africa.</title>
+<!DOCTYPE html><html><head><title>R: Sustainability and Economic Indicators for South Africa.</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for sa_gdp_elec"><tr><td>sa_gdp_elec</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>sa_gdp_elec</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Sustainability and Economic Indicators for South Africa.</h2>
 
@@ -16,9 +26,8 @@
 
 <h3>Usage</h3>
 
-<pre>
-sa_gdp_elec
-</pre>
+<pre><code class='language-R'>sa_gdp_elec
+</code></pre>
 
 
 <h3>Format</h3>
@@ -63,8 +72,7 @@ sa_gdp_elec
 
 <h3>Examples</h3>
 
-<pre>
-library(ggplot2)
+<pre><code class='language-R'>library(ggplot2)
 
 ggplot(sa_gdp_elec, aes(year, access_elec))+
  geom_point(alpha = 0.3) +
@@ -72,7 +80,8 @@ ggplot(sa_gdp_elec, aes(year, access_elec))+
        y = "Percent of Population",
        title = "Access to Electricity in South Africa 2003 - 2018")
 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

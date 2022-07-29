@@ -83,7 +83,7 @@
 
    Online supplements to Fawcett and Higginson (2012).
 
-   http://www.pnas.org/lookup/suppl/doi:10.1073/pnas.1205259109/-/DCSupplemental
+   https://www.pnas.org/doi/suppl/10.1073/pnas.1205259109/suppl_file/sd01.xlsx
 
    .. rubric:: References
       :name: references
@@ -91,7 +91,8 @@
    Fawcett, T.W. and Higginson, A.D. (2012). Heavy Use of Equations
    Impedes Communication among Biologists. *PNAS – Proceedings of the
    National Academy of Sciences of the United States of America*,
-   **109**, 11735–11739. http://dx.doi.org/10.1073/pnas.1205259109
+   **109**, 11735–11739.
+   `doi:10.1073/pnas.1205259109 <https://doi.org/10.1073/pnas.1205259109>`__
 
    .. rubric:: See Also
       :name: see-also

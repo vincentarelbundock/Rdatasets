@@ -26,7 +26,7 @@
    A data frame with 12 observations on the following 4 variables.
 
    ``dose``
-      a numeric vector of dose values (*μ g*)
+      a numeric vector of dose values (``\mu g``)
 
    ``numdead``
       a numeric vector of dead or knocked-down moths
@@ -56,7 +56,6 @@
 
    ::
 
-
       ## Fitting dose-response model (log-logistic with common slope)
       Hv.m1 <- drm(numdead/total~dose, sex, weights = total, data = H.virescens, fct = LL.2(), 
       pmodels = list(~ 1, ~ sex - 1), type = "binomial")
@@ -72,5 +71,3 @@
 
       ## Estimated ED values (matching those given in MASS)
       ED(Hv.m1, c(25, 50, 75))
-
-

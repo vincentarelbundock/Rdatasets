@@ -55,7 +55,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(cle_sac, aes(x = personal_income)) +

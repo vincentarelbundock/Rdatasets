@@ -48,7 +48,7 @@
 
    ``ploidy``
       the ploidy status of the tumor, from flow cytometry. Values are
-      diploid, tetraploid, and aneuploid
+      ‘⁠diploid⁠’, ‘⁠tetraploid⁠’, and ‘⁠aneuploid⁠’
 
    .. rubric:: Details
       :name: details

@@ -65,7 +65,6 @@
 
    ::
 
-
       library(ggplot2)
 
       # Salary and education level

@@ -11,7 +11,7 @@
    .. rubric:: Description
       :name: description
 
-   Four *x*-*y* datasets which have the same traditional statistical
+   Four ``x``-``y`` datasets which have the same traditional statistical
    properties (mean, variance, correlation, regression line, etc.), yet
    are quite different.
 
@@ -43,8 +43,8 @@
       :name: references
 
    Anscombe, Francis J. (1973). Graphs in statistical analysis. *The
-   American Statistician*, **27**, 17–21. doi:
-   `10.2307/2682899 <https://doi.org/10.2307/2682899>`__.
+   American Statistician*, **27**, 17–21.
+   `doi:10.2307/2682899 <https://doi.org/10.2307/2682899>`__.
 
    .. rubric:: Examples
       :name: examples

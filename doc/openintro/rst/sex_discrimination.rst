@@ -42,7 +42,6 @@
 
    ::
 
-
       library(ggplot2)
 
       table(sex_discrimination)

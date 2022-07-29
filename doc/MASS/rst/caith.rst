@@ -45,7 +45,10 @@
 
    ::
 
+      ## IGNORE_RDIFF_BEGIN
+      ## The signs can vary by platform
       corresp(caith)
+      ## IGNORE_RDIFF_END
       dimnames(caith)[[2]] <- c("F", "R", "M", "D", "B")
       par(mfcol=c(1,3))
       plot(corresp(caith, nf=2)); title("symmetric")

@@ -17,18 +17,24 @@
 
    A data frame with 100 observations on the following 7 variables.
 
-   ================
-   ============================================================================
-   ``Senator``      Senator's name
-   ``State``        Code for senator's state
-   ``Party``        party affiliation: ``D``\ =Democrat, ``I``\ =Independent, ``R``\ =Republican
-   ``Contribution`` Contributions from car manufactures (dollars)
-   ``LogContr``     Log of (Contribution+1)
-   ``Dem``          ``1``\ =Democrat/Independent ``0``\ =Republican
-   ``Vote``         ``1``\ =yes or ``0``\ =no
-   \               
-   ================
-   ============================================================================
+   +------------------+--------------------------------------------------+
+   | ``Senator``      | Senator's name                                   |
+   +------------------+--------------------------------------------------+
+   | ``State``        | Code for senator's state                         |
+   +------------------+--------------------------------------------------+
+   | ``Party``        | party affiliation: ``D``\ =Democrat,             |
+   |                  | ``I``\ =Independent, ``R``\ =Republican          |
+   +------------------+--------------------------------------------------+
+   | ``Contribution`` | Contributions from car manufactures (dollars)    |
+   +------------------+--------------------------------------------------+
+   | ``LogContr``     | Log of (Contribution+1)                          |
+   +------------------+--------------------------------------------------+
+   | ``Dem``          | ``1``\ =Democrat/Independent ``0``\ =Republican  |
+   +------------------+--------------------------------------------------+
+   | ``Vote``         | ``1``\ =yes or ``0``\ =no                        |
+   +------------------+--------------------------------------------------+
+   |                  |                                                  |
+   +------------------+--------------------------------------------------+
 
    .. rubric:: Details
       :name: details

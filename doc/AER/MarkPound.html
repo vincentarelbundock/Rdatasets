@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: DEM/GBP Exchange Rate Returns</title>
+<!DOCTYPE html><html><head><title>R: DEM/GBP Exchange Rate Returns</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for MarkPound"><tr><td>MarkPound</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>MarkPound</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>DEM/GBP Exchange Rate Returns</h2>
 
@@ -17,7 +27,7 @@ exchange rates from 1984-01-03 through 1991-12-31.
 
 <h3>Usage</h3>
 
-<pre>data("MarkPound")</pre>
+<pre><code class='language-R'>data("MarkPound")</code></pre>
 
 
 <h3>Format</h3>
@@ -37,16 +47,16 @@ eight observations where a slightly different rounding arithmetic was used).
 
 <h3>Source</h3>
 
-<p>Journal of Business \&amp; Economic Statistics Data Archive. 
+<p>Journal of Business &amp; Economic Statistics Data Archive. 
 </p>
-<p><code style="white-space: pre;">http://www.amstat.org/publications/jbes/upload/index.cfm?fuseaction=ViewArticles&amp;pub=JBES&amp;issue=96-2-APR</code>
+<p><code style="white-space: pre;">&#8288;http://www.amstat.org/publications/jbes/upload/index.cfm?fuseaction=ViewArticles&amp;pub=JBES&amp;issue=96-2-APR&#8288;</code>
 </p>
 
 
 <h3>References</h3>
 
 <p>Bollerslev, T., and Ghysels, E. (1996). Periodic Autoregressive Conditional Heteroskedasticity.  
-<em>Journal of Business \&amp; Economic Statistics</em>,
+<em>Journal of Business &amp; Economic Statistics</em>,
 <b>14</b>, 139&ndash;151.
 </p>
 <p>Greene, W.H. (2003). <em>Econometric Analysis</em>, 5th edition. Upper Saddle River, NJ: Prentice Hall.
@@ -60,7 +70,7 @@ eight observations where a slightly different rounding arithmetic was used).
 
 <h3>Examples</h3>
 
-<pre>
+<pre><code class='language-R'>
 ## data as given by Greene (2003)
 data("MarkPound")
 mp &lt;- round(MarkPound, digits = 6)
@@ -85,7 +95,8 @@ mp_ols &lt;- dynlm(res ~ L(res, 1:10))
 summary(mp_ols)
 logLik(mp_ols)
 summary(mp_ols)$r.squared * length(residuals(mp_ols))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

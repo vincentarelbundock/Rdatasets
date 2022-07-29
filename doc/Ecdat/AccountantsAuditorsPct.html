@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Accountants and Auditors in the US 1850-2016</title>
+<!DOCTYPE html><html><head><title>R: Accountants and Auditors in the US 1850-2016</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for AccountantsAuditorsPct"><tr><td>AccountantsAuditorsPct</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>AccountantsAuditorsPct</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Accountants and Auditors in the US 1850-2016</h2>
 
@@ -18,7 +28,7 @@ Wyatt and Hecker (2006).
 
 <h3>Usage</h3>
 
-<pre>data(AccountantsAuditorsPct)</pre>
+<pre><code class='language-R'>data(AccountantsAuditorsPct)</code></pre>
 
 
 <h3>Format</h3>
@@ -87,10 +97,9 @@ Bureau of the Census, 1975)</a>
 </p>
 <p>Steven Ruggles, Sarah Flood, Ronald Goeken, 
 Josiah Grover, Erin Meyer, Jose Pacas, and 
-Matthew Sobek (2018) 
-<a href="https://doi.org/10.18128/D010.V8.0">IPUMS 
-USA: Version 8.0 [dataset]. Minneapolis, MN: 
-IPUMS</a>. 
+Matthew Sobek (2018) IPUMS USA: Version 8.0 
+[dataset]. Minneapolis, MN: IPUMS. 
+<a href="https://doi.org/10.18128/D010.V8.0">doi:10.18128/D010.V8.0</a>
 </p>
 <p>Matthew Sobek (2006) Chapter Ba. &quot;Labor Occupations&quot; 
 in Susan B. Carter, ed., 
@@ -112,12 +121,12 @@ Monthly Labor Review, March 2006, pp. 35-57</a>
 
 <h3>Examples</h3>
 
-<pre>
-data(AccountantsAuditorsPct)
+<pre><code class='language-R'>data(AccountantsAuditorsPct)
 plot(names(AccountantsAuditorsPct), AccountantsAuditorsPct, 
   type='l', log='y', cex.axis=1.8)
 # for the version of this contributed to Wikimedia Commons  
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

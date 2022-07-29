@@ -88,4 +88,3 @@
    ::
 
       data(pharmacoSmoking)
-

@@ -27,7 +27,7 @@
    Year,Month
       Record date
 
-   ``1 unit``, ``2 to 4 units``, ``5 units or mote``
+   ``⁠1 unit⁠``, ``⁠2 to 4 units⁠``, ``⁠5 units or mote⁠``
       Number of completed units of each size
 
    Northeast,Midwest,South,West

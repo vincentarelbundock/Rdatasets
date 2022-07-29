@@ -37,4 +37,3 @@
       plot(gas)
       seasonplot(gas)
       tsdisplay(gas)
-

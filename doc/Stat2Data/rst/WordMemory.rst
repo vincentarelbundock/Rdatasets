@@ -22,7 +22,7 @@
    ``Abstract`` Words were abstract? ``No`` or ``Yes``
    ``Frequent`` Words were common? ``No`` or ``Yes``
    ``Percent``  Percentage of words recalled (out of 25)
-   \           
+   \            
    ============ =============================================
 
    .. rubric:: Details

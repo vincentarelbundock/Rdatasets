@@ -28,7 +28,6 @@
 
       data(heart)
 
-
    .. rubric:: Format
       :name: format
 

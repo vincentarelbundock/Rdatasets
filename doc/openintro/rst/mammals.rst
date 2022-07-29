@@ -85,7 +85,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(mammals, aes(x = log(body_wt), y = log(brain_wt))) +

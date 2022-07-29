@@ -14,7 +14,7 @@
    which contains 47 stars in the direction of Cygnus, from C.Doom. The
    first variable is the logarithm of the effective temperature at the
    surface of the star (Te) and the second one is the logarithm of its
-   light intencity (*L/L_0*).
+   light intencity (``L/L_0``).
 
    | In the Hertzsprung-Russell diagram, which is the scatterplot of
      these data points, where the log temperature is plotted from left
@@ -41,7 +41,7 @@
       (Te).
 
    ``log.light``
-      Logarithm of its light intencity (*L/L_0*)
+      Logarithm of its light intencity (``L/L_0``)
 
    .. rubric:: Source
       :name: source

@@ -55,5 +55,4 @@
 
    ::
 
-
       table(env_regulation)

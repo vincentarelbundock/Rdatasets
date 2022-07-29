@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: CPU's Released between 2010 and 2020.</title>
+<!DOCTYPE html><html><head><title>R: CPU's Released between 2010 and 2020.</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for cpu"><tr><td>cpu</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>cpu</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>CPU's Released between 2010 and 2020.</h2>
 
@@ -16,9 +26,8 @@
 
 <h3>Usage</h3>
 
-<pre>
-cpu
-</pre>
+<pre><code class='language-R'>cpu
+</code></pre>
 
 
 <h3>Format</h3>
@@ -63,8 +72,7 @@ cpu
 
 <h3>Examples</h3>
 
-<pre>
-
+<pre><code class='language-R'>
 library(ggplot2)
 
 # CPU base speed
@@ -84,7 +92,8 @@ ggplot(cpu, aes(x = process, y = boost_clock)) +
     y = "Boost Clock (GHz)",
     title = "Process node size vs. boost speed"
   )
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

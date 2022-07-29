@@ -27,11 +27,11 @@
    are attributes for carboxylic acids:
 
    ``toxicity``
-      aquatic toxicity, defined as *log(IGC50^(-1))*; typically the
-      “response”.
+      aquatic toxicity, defined as ``\log(IGC_{50}^{-1})``; typically
+      the “response”.
 
    ``logKow``
-      *log Kow*, the partition coefficient
+      ``log Kow``, the partition coefficient
 
    ``pKa``
       pKa: the dissociation constant

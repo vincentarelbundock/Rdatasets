@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Halley's Life Table</title>
+<!DOCTYPE html><html><head><title>R: Halley's Life Table</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for HalleyLifeTable"><tr><td>HalleyLifeTable</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>HalleyLifeTable</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>
 Halley's Life Table
@@ -23,7 +33,7 @@ also used his table to compute the price of life annuities.
 
 <h3>Usage</h3>
 
-<pre>data("HalleyLifeTable")</pre>
+<pre><code class='language-R'>data("HalleyLifeTable")</code></pre>
 
 
 <h3>Format</h3>
@@ -34,11 +44,11 @@ also used his table to compute the price of life annuities.
 <dl>
 <dt><code>age</code></dt><dd><p>a numeric vector</p>
 </dd>
-<dt><code>deaths</code></dt><dd><p>number of deaths, <i>D_k</i>, among people of age k, a numeric vector</p>
+<dt><code>deaths</code></dt><dd><p>number of deaths, <code class="reqn">D_k</code>, among people of age k, a numeric vector</p>
 </dd>
-<dt><code>number</code></dt><dd><p>size of the population, <i>P_k</i> surviving until this age, a numeric vector</p>
+<dt><code>number</code></dt><dd><p>size of the population, <code class="reqn">P_k</code> surviving until this age, a numeric vector</p>
 </dd>
-<dt><code>ratio</code></dt><dd><p>the ratio <i>P_{k+1}/P_k</i>, the conditional probability
+<dt><code>ratio</code></dt><dd><p>the ratio <code class="reqn">P_{k+1}/P_k</code>, the conditional probability
 of surviving until age k + 1 given that one had already reached age k, a numeric vector</p>
 </dd>
 </dl>
@@ -52,12 +62,13 @@ For people aged over 84 years, Halley just noted that their total number was 107
 This value is not included in the data set.
 </p>
 <p>The data from Breslau had a mean of 1,238 births per year: this is the value that
-Halley took for the size, <i>P_0</i> of the population cohort at age 0. 
+Halley took for the size, <code class="reqn">P_0</code> of the population cohort at age 0. 
 From the data, he could compute the annual mean
-<i>D_k</i> of the number of deaths among people aged <i>k</i> for all <i>k &gt;= 0</i>.
-From this, he calculated the number <i>P_{k+1}</i> surviving one more year,
+<code class="reqn">D_k</code> of the number of deaths among people aged <code class="reqn">k</code> for all <code class="reqn">k &gt;= 0</code>.
+From this, he calculated the number <code class="reqn">P_{k+1}</code> surviving one more year,
 </p>
-<p style="text-align: center;"><i>P_{k+1} = P_k - D_k</i></p>
+<p style="text-align: center;"><code class="reqn">P_{k+1} = P_k - D_k</code>
+</p>
 
 <p>This method had the great advantage of not requiring a general census but only knowledge of the
 number of births and deaths and of the age at which people died during a few years.
@@ -94,8 +105,7 @@ to ascertain the price of annuities upon lives.
 
 <h3>Examples</h3>
 
-<pre>
-data(HalleyLifeTable)
+<pre><code class='language-R'>data(HalleyLifeTable)
 # what was the estimated population of Breslau?
 sum(HalleyLifeTable$number)
 
@@ -110,7 +120,8 @@ with(HalleyLifeTable, segments(0, age, number, age, lwd=2))
 plot(ratio ~ age, data=HalleyLifeTable, ylab="Probability survive one more year")
 
 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

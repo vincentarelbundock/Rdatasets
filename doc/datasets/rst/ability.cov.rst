@@ -59,10 +59,10 @@
    .. rubric:: References
       :name: references
 
-   Smith, G. A. and Stanley G. (1983). Clocking *g*: relating
+   Smith, G. A. and Stanley G. (1983). Clocking ``g``: relating
    intelligence and measures of timed performance. *Intelligence*,
-   **7**, 353–368. doi:
-   `10.1016/0160-2896(83)90010-7 <https://doi.org/10.1016/0160-2896(83)90010-7>`__.
+   **7**, 353–368.
+   `doi:10.1016/0160-2896(83)90010-7 <https://doi.org/10.1016/0160-2896%2883%2990010-7>`__.
 
    .. rubric:: Examples
       :name: examples

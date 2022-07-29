@@ -17,27 +17,48 @@
 
    A dataset with 83 observations on the following 16 variables.
 
-   =====================
-   ====================================================================
-   ``City``              Name of the metropolitan area
-   ``NumMDs``            Number of physicians
-   ``RateMDs``           Number of physicians per 100,000 people
-   ``NumHospitals``      Number of community hospitals
-   ``NumBeds``           Number of hospital beds
-   ``RateBeds``          Number of hospital beds per 100,000 people
-   ``NumMedicare``       Number of Medicare recipients in 2003
-   ``PctChangeMedicare`` Percent change in Medicare recipients (2000 to 2003)
-   ``MedicareRate``      Number of Medicare recipients per 100,000 people
-   ``SSBNum``            Number of Social Security recipients in 2004
-   ``SSBRate``           Number of Social Security recipients per 100,000 people
-   ``SSBChange``         Percent change in Social Security recipients (2000 to 2004)
-   ``NumRetired``        Number of retired workers
-   ``SSINum``            Number of Supplemental Security Income recipients in 2004
-   ``SSIRate``           Number of Supplemental Security Income recipients per 100,000 people
-   ``SqrtMDs``           Square root of number of physicians
-   \                    
-   =====================
-   ====================================================================
+   +-----------------------+---------------------------------------------+
+   | ``City``              | Name of the metropolitan area               |
+   +-----------------------+---------------------------------------------+
+   | ``NumMDs``            | Number of physicians                        |
+   +-----------------------+---------------------------------------------+
+   | ``RateMDs``           | Number of physicians per 100,000 people     |
+   +-----------------------+---------------------------------------------+
+   | ``NumHospitals``      | Number of community hospitals               |
+   +-----------------------+---------------------------------------------+
+   | ``NumBeds``           | Number of hospital beds                     |
+   +-----------------------+---------------------------------------------+
+   | ``RateBeds``          | Number of hospital beds per 100,000 people  |
+   +-----------------------+---------------------------------------------+
+   | ``NumMedicare``       | Number of Medicare recipients in 2003       |
+   +-----------------------+---------------------------------------------+
+   | ``PctChangeMedicare`` | Percent change in Medicare recipients (2000 |
+   |                       | to 2003)                                    |
+   +-----------------------+---------------------------------------------+
+   | ``MedicareRate``      | Number of Medicare recipients per 100,000   |
+   |                       | people                                      |
+   +-----------------------+---------------------------------------------+
+   | ``SSBNum``            | Number of Social Security recipients in     |
+   |                       | 2004                                        |
+   +-----------------------+---------------------------------------------+
+   | ``SSBRate``           | Number of Social Security recipients per    |
+   |                       | 100,000 people                              |
+   +-----------------------+---------------------------------------------+
+   | ``SSBChange``         | Percent change in Social Security           |
+   |                       | recipients (2000 to 2004)                   |
+   +-----------------------+---------------------------------------------+
+   | ``NumRetired``        | Number of retired workers                   |
+   +-----------------------+---------------------------------------------+
+   | ``SSINum``            | Number of Supplemental Security Income      |
+   |                       | recipients in 2004                          |
+   +-----------------------+---------------------------------------------+
+   | ``SSIRate``           | Number of Supplemental Security Income      |
+   |                       | recipients per 100,000 people               |
+   +-----------------------+---------------------------------------------+
+   | ``SqrtMDs``           | Square root of number of physicians         |
+   +-----------------------+---------------------------------------------+
+   |                       |                                             |
+   +-----------------------+---------------------------------------------+
 
    .. rubric:: Details
       :name: details

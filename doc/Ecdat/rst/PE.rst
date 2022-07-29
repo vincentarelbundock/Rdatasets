@@ -31,10 +31,10 @@
    A time series containing :
 
    price
-      S\&P composite stock price index
+      S&P composite stock price index
 
    earnings
-      S\&P composite earnings index
+      S&P composite earnings index
 
    .. rubric:: Source
       :name: source

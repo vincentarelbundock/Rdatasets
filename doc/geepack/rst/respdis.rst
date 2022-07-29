@@ -50,7 +50,6 @@
 
    ::
 
-
       data(respdis)
       resp.l <- reshape(respdis, varying = list(c("y1", "y2", "y3", "y4")),
                         v.names = "resp", direction = "long")
@@ -64,4 +63,3 @@
       fit <- ordgee(ordered(resp) ~ trt, id = id, data = resp.l, int.const = FALSE,
                     z = zmat, corstr = "exchangeable")
       summary(fit)
-

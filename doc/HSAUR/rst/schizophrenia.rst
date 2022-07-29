@@ -55,7 +55,5 @@
 
    ::
 
-
         data("schizophrenia", package = "HSAUR")
         boxplot(age ~ gender, data = schizophrenia)
-

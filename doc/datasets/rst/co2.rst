@@ -10,7 +10,7 @@
    .. rubric:: Description
       :name: description
 
-   Atmospheric concentrations of CO\ *2* are expressed in parts per
+   Atmospheric concentrations of CO\ ``_2`` are expressed in parts per
    million (ppm) and reported in the preliminary 1997 SIO manometric
    mole fraction scale.
 

@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Liver transplant waiting list</title>
+<!DOCTYPE html><html><head><title>R: Liver transplant waiting list</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for transplant"><tr><td>transplant</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>transplant</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Liver transplant waiting list</h2>
 
@@ -18,9 +28,9 @@ the list, or censored.
 
 <h3>Usage</h3>
 
-<pre>transplant
+<pre><code class='language-R'>transplant
 data(transplant, package="survival")
-</pre>
+</code></pre>
 
 
 <h3>Format</h3>
@@ -89,8 +99,7 @@ Hepatology 2006 Feb; 43(2):345-51.
 
 <h3>Examples</h3>
 
-<pre>
-#since event is a factor, survfit creates competing risk curves
+<pre><code class='language-R'>#since event is a factor, survfit creates competing risk curves
 pfit &lt;- survfit(Surv(futime, event) ~ abo, transplant)
 pfit[,2]  #time to liver transplant, by blood type
 plot(pfit[,2], mark.time=FALSE, col=1:4, lwd=2, xmax=735,
@@ -103,7 +112,8 @@ legend(450, .35, levels(transplant$abo), lty=1, col=1:4, lwd=2)
 # competing risks for type O
 plot(pfit[4,], xscale=30.5, xmax=735, col=1:3, lwd=2)
 legend(450, .4, c("Death", "Transpant", "Withdrawal"), col=1:3, lwd=2)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Speed and Stopping Distances of Cars</title>
+<!DOCTYPE html><html><head><title>R: Speed and Stopping Distances of Cars</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for cars"><tr><td>cars</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>cars</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Speed and Stopping Distances of Cars</h2>
 
@@ -17,7 +27,7 @@ Note that the data were recorded in the 1920s.
 
 <h3>Usage</h3>
 
-<pre>cars</pre>
+<pre><code class='language-R'>cars</code></pre>
 
 
 <h3>Format</h3>
@@ -25,7 +35,7 @@ Note that the data were recorded in the 1920s.
 <p>A data frame with 50 observations on 2 variables.
 </p>
 
-<table summary="Rd table">
+<table>
 <tr>
  <td style="text-align: right;">
     [,1]  </td><td style="text-align: left;"> speed  </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> Speed (mph)</td>
@@ -58,8 +68,7 @@ Wiley.
 
 <h3>Examples</h3>
 
-<pre>
-require(stats); require(graphics)
+<pre><code class='language-R'>require(stats); require(graphics)
 plot(cars, xlab = "Speed (mph)", ylab = "Stopping distance (ft)",
      las = 1)
 lines(lowess(cars$speed, cars$dist, f = 2/3, iter = 3), col = "red")
@@ -84,7 +93,8 @@ for(degree in 1:4) {
   lines(d, predict(fm, data.frame(speed = d)), col = degree)
 }
 anova(cars.1, cars.2, cars.3, cars.4)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

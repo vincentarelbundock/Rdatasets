@@ -65,7 +65,5 @@
 
    ::
 
-
         data("toothpaste", package = "HSAUR")
         toothpaste
-

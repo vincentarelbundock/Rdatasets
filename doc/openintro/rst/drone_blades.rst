@@ -41,7 +41,6 @@
 
    ::
 
-
       library(dplyr)
 
       drone_blades %>%

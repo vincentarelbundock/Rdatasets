@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Wagner's Hannover Employment Growth Data</title>
+<!DOCTYPE html><html><head><title>R: Wagner's Hannover Employment Growth Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for wagnerGrowth"><tr><td>wagnerGrowth</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>wagnerGrowth</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>
 Wagner's Hannover Employment Growth Data
@@ -23,12 +33,12 @@ the greater Hannover area.
 
 <h3>Usage</h3>
 
-<pre>data(wagnerGrowth, package="robustbase")</pre>
+<pre><code class='language-R'>data(wagnerGrowth, package="robustbase")</code></pre>
 
 
 <h3>Format</h3>
 
-<p>A data frame with <i>21 * 3 = 63</i> observations
+<p>A data frame with <code class="reqn">21 \times 3 = 63</code> observations
 (one per <code>Region x Period</code>) on the following 7 variables.
 </p>
 
@@ -73,8 +83,7 @@ Produktionsdienste: Ergebnisse für den Grossraum Hannover (1979-1992).
 
 <h3>Examples</h3>
 
-<pre>
-data(wagnerGrowth)
+<pre><code class='language-R'>data(wagnerGrowth)
 ## maybe
 str(wagnerGrowth)
 
@@ -86,7 +95,8 @@ require(lattice)
 (dotplot(y ~ reorder(Region,y,median), data = wagnerGrowth,
          main = "wagnerGrowth",
          xlab = "Region [ordered by  median(y | Region) ]"))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

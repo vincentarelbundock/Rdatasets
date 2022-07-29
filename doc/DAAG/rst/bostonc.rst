@@ -23,7 +23,7 @@
    .. rubric:: Format
       :name: format
 
-   A single vector containing the contents of "boston\_corrected.txt".
+   A single vector containing the contents of "boston_corrected.txt".
 
    .. rubric:: Source
       :name: source

@@ -87,4 +87,3 @@
       interaction.plot(fac1, anu843, ShootDryMass)
       detach(rice)
       par(oldpar)
-

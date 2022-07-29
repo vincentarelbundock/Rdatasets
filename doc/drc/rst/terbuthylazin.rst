@@ -36,7 +36,7 @@
 
    Dose is
 
-   *μ l^{-1}*
+   ``\mu l^{-1}``
 
    and rgr is the relative growth rate of *Lemna*.
 
@@ -50,7 +50,6 @@
 
    ::
 
-
       ## displaying first 6 rows of the data set
       head(terbuthylazin)
 
@@ -62,4 +61,3 @@
       ##  with Box-Cox transformation
       terbuthylazin.m2 <- boxcox(terbuthylazin.m1, method = "anova")
       summary(terbuthylazin.m2)
-

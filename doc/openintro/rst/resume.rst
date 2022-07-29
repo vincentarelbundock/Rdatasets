@@ -179,7 +179,6 @@
 
    ::
 
-
       head(resume, 5)
 
       # Some checks to confirm balance between race and

@@ -27,7 +27,7 @@
    ``Sex``            a factor with levels ``Female`` ``Male``
    ``Status``         Graduate or undergraduate? ``G`` or ``U``
    ``Units``          Number of credits taken that quarter
-   \                 
+   \                  
    ================== =========================================
 
    .. rubric:: Details

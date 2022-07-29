@@ -81,4 +81,3 @@
         na.omit() %>%
         arrange(desc(change)) %>% 
         top_n(n = 10)  
-

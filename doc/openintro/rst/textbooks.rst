@@ -67,7 +67,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(textbooks, aes(x = diff)) +

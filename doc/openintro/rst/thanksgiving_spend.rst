@@ -33,7 +33,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(thanksgiving_spend, aes(x = spending)) +

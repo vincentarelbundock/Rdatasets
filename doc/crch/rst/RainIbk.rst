@@ -76,4 +76,3 @@
       boxplot((sqrt(rain) - sqrtensmean)^2~sdcat, RainIbk, 
         xlab = "Quintile of ensemble standard deviation", 
         ylab = "mean squared error", main = "Spread skill relationship")
-

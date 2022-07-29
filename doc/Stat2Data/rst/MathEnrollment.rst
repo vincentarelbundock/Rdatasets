@@ -21,7 +21,7 @@
    ``AYear``  Academic year (for the fall)
    ``Fall``   Fall semester total enrollments
    ``Spring`` Spring semester total enrollments
-   \         
+   \          
    ========== =================================
 
    .. rubric:: Details

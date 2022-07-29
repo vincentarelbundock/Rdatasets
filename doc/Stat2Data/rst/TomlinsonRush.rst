@@ -23,7 +23,7 @@
    ``Opponent`` Name of opposing team
    ``Attempts`` Number of rushing attempts
    ``Yards``    Total yards gained rushing for the game
-   \           
+   \            
    ============ =======================================
 
    .. rubric:: Details

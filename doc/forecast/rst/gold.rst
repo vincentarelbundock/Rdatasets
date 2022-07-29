@@ -31,4 +31,3 @@
    ::
 
       tsdisplay(gold)
-

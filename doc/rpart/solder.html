@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Soldering of Components on Printed-Circuit Boards</title>
+<!DOCTYPE html><html><head><title>R: Soldering of Components on Printed-Circuit Boards</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for solder.balance"><tr><td>solder.balance</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>solder.balance</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Soldering of Components on Printed-Circuit Boards</h2>
 
@@ -21,9 +31,8 @@ rows.  It is located in both the rpart and the survival packages.
 
 <h3>Usage</h3>
 
-<pre>
-solder
-</pre>
+<pre><code class='language-R'>solder
+</code></pre>
 
 
 <h3>Format</h3>
@@ -34,25 +43,25 @@ solder
 <dl>
 <dt><code>Opening</code></dt><dd>
 <p>a factor with levels
-<span class="samp">L</span>, <span class="samp">M</span> and <span class="samp">S</span>
+&lsquo;<span class="samp">&#8288;L&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;M&#8288;</span>&rsquo; and &lsquo;<span class="samp">&#8288;S&#8288;</span>&rsquo;
 indicating the amount of clearance around the mounting pad.
 </p>
 </dd>
 <dt><code>Solder</code></dt><dd>
 <p>a factor with levels
-<span class="samp">Thick</span> and <span class="samp">Thin</span>
+&lsquo;<span class="samp">&#8288;Thick&#8288;</span>&rsquo; and &lsquo;<span class="samp">&#8288;Thin&#8288;</span>&rsquo;
 giving the thickness of the solder used.
 </p>
 </dd>
 <dt><code>Mask</code></dt><dd>
 <p>a factor with levels
-<span class="samp">A1.5</span>, <span class="samp">A3</span>, <span class="samp">B3</span> and <span class="samp">B6</span>
+&lsquo;<span class="samp">&#8288;A1.5&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;A3&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;B3&#8288;</span>&rsquo; and &lsquo;<span class="samp">&#8288;B6&#8288;</span>&rsquo;
 indicating the type and thickness of mask used.
 </p>
 </dd>
 <dt><code>PadType</code></dt><dd>
-<p>a factor with levels <span class="samp">D4</span>, <span class="samp">D6</span>, <span class="samp">D7</span>, <span class="samp">L4</span>,
-<span class="samp">L6</span>, <span class="samp">L7</span>, <span class="samp">L8</span>, <span class="samp">L9</span>, <span class="samp">W4</span> and <span class="samp">W9</span>
+<p>a factor with levels &lsquo;<span class="samp">&#8288;D4&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;D6&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;D7&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;L4&#8288;</span>&rsquo;,
+&lsquo;<span class="samp">&#8288;L6&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;L7&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;L8&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;L9&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;W4&#8288;</span>&rsquo; and &lsquo;<span class="samp">&#8288;W9&#8288;</span>&rsquo;
 giving the size and geometry of the mounting pad.
 </p>
 </dd>
@@ -77,12 +86,12 @@ Pacific Grove, CA.
 
 <h3>Examples</h3>
 
-<pre>
-fit &lt;- rpart(skips ~ Opening + Solder + Mask + PadType + Panel,
+<pre><code class='language-R'>fit &lt;- rpart(skips ~ Opening + Solder + Mask + PadType + Panel,
              data = solder.balance, method = "anova")
 summary(residuals(fit))
 plot(predict(fit), residuals(fit))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

@@ -52,7 +52,6 @@
 
    ::
 
-
       ## Displaying the data set
       ryegrass
 
@@ -91,5 +90,3 @@
 
       arrows(2.5, 0.9, 5.7, 0.9, 0.15, lwd=2)
       text(3,0.9, "Weibull-1", pos=2, cex=1.2)
-
-

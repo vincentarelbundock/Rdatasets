@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Cyber Security Breaches</title>
+<!DOCTYPE html><html><head><title>R: Cyber Security Breaches</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for breaches"><tr><td>breaches</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>breaches</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2> Cyber Security Breaches </h2>
 
@@ -20,7 +30,7 @@ Health and Human Services (HHS) as of June
 
 <h3>Usage</h3>
 
-<pre>data(breaches)</pre>
+<pre><code class='language-R'>data(breaches)</code></pre>
 
 
 <h3>Format</h3>
@@ -128,7 +138,7 @@ assumption of independent Poisson trials.)
 <p>The following corrections were made to the file:  
 </p>
 
-<table summary="Rd table">
+<table>
 <tr>
  <td style="text-align: right;">
     Number </td><td style="text-align: left;"> Name of Covered Entity </td><td style="text-align: left;">
@@ -145,7 +155,7 @@ assumption of independent Poisson trials.)
 <tr>
  <td style="text-align: right;"> </td><td style="text-align: left;"> </td><td style="text-align: left;"> Access /
     Disclosure" per 
-    <a href="https://www.smartbrief.com/s/2010/03/5-more-organizations-added-hhs-online-data-breach-list"><code>smartbrief.com/03/29/10</code></a> </td>
+    <a href="https://web.archive.org/web/20210115131543/https://www.smartbrief.com/s/2010/03/5-more-organizations-added-hhs-online-data-breach-list"><code>smartbrief.com/03/29/10</code></a> </td>
 </tr>
 <tr>
  <td style="text-align: right;">
@@ -299,8 +309,7 @@ in the <code>data.frame</code>.
 
 <h3>Examples</h3>
 
-<pre>
-data(breaches)
+<pre><code class='language-R'>data(breaches)
 quantile(breaches$Individuals_Affected)
 # confirm that the smallest number is 500 
 # -- and the largest is 4.9e6
@@ -310,7 +319,8 @@ dDays &lt;- with(breaches, breach_end - breach_start)
 quantile(dDays, na.rm=TRUE)
 # confirm that breach_end is NA or is later than 
 # breach_start 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

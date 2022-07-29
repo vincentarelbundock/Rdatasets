@@ -38,7 +38,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(poker, aes(x = winnings)) +

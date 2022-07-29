@@ -39,7 +39,7 @@
       administered) or ``placebo``.
 
    outcome
-      Study outcome: ``COVID-19`` or ``no COVID-19``.
+      Study outcome: ``COVID-19`` or ``⁠no COVID-19⁠``.
 
    .. rubric:: Source
       :name: source
@@ -53,7 +53,6 @@
       :name: examples
 
    ::
-
 
       library(dplyr)
       library(ggplot2)

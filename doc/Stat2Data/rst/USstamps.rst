@@ -20,7 +20,7 @@
    ========= =========================================
    ``Year``  Years when stamp price changed
    ``Price`` Cost of a US first class stamp (in cents)
-   \        
+   \         
    ========= =========================================
 
    .. rubric:: Details

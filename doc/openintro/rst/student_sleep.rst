@@ -38,7 +38,6 @@
 
    ::
 
-
       set.seed(2)
       x <- exp(c(
         rnorm(100, log(7.5), 0.15),

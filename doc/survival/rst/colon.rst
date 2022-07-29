@@ -24,27 +24,43 @@ Usage
 Format
 ~~~~~~
 
-=========
-=================================================================================
-id:       id
-study:    1 for all patients
-rx:       Treatment - Obs(ervation), Lev(amisole), Lev(amisole)+5-FU
-sex:      1=male
-age:      in years
-obstruct: obstruction of colon by tumour
-perfor:   perforation of colon
-adhere:   adherence to nearby organs
-nodes:    number of lymph nodes with detectable cancer
-time:     days until event or censoring
-status:   censoring status
-differ:   differentiation of tumour (1=well, 2=moderate, 3=poor)
-extent:   Extent of local spread (1=submucosa, 2=muscle, 3=serosa, 4=contiguous structures)
-surg:     time from surgery to registration (0=short, 1=long)
-node4:    more than 4 positive lymph nodes
-etype:    event type: 1=recurrence,2=death
-\        
-=========
-=================================================================================
++-----------+---------------------------------------------------------+
+| id:       | id                                                      |
++-----------+---------------------------------------------------------+
+| study:    | 1 for all patients                                      |
++-----------+---------------------------------------------------------+
+| rx:       | Treatment - Obs(ervation), Lev(amisole),                |
+|           | Lev(amisole)+5-FU                                       |
++-----------+---------------------------------------------------------+
+| sex:      | 1=male                                                  |
++-----------+---------------------------------------------------------+
+| age:      | in years                                                |
++-----------+---------------------------------------------------------+
+| obstruct: | obstruction of colon by tumour                          |
++-----------+---------------------------------------------------------+
+| perfor:   | perforation of colon                                    |
++-----------+---------------------------------------------------------+
+| adhere:   | adherence to nearby organs                              |
++-----------+---------------------------------------------------------+
+| nodes:    | number of lymph nodes with detectable cancer            |
++-----------+---------------------------------------------------------+
+| time:     | days until event or censoring                           |
++-----------+---------------------------------------------------------+
+| status:   | censoring status                                        |
++-----------+---------------------------------------------------------+
+| differ:   | differentiation of tumour (1=well, 2=moderate, 3=poor)  |
++-----------+---------------------------------------------------------+
+| extent:   | Extent of local spread (1=submucosa, 2=muscle,          |
+|           | 3=serosa, 4=contiguous structures)                      |
++-----------+---------------------------------------------------------+
+| surg:     | time from surgery to registration (0=short, 1=long)     |
++-----------+---------------------------------------------------------+
+| node4:    | more than 4 positive lymph nodes                        |
++-----------+---------------------------------------------------------+
+| etype:    | event type: 1=recurrence,2=death                        |
++-----------+---------------------------------------------------------+
+|           |                                                         |
++-----------+---------------------------------------------------------+
 
 Note
 ~~~~

@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: The Joyner-Boore Attenuation Data</title>
+<!DOCTYPE html><html><head><title>R: The Joyner-Boore Attenuation Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for attenu"><tr><td>attenu</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>attenu</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>The Joyner&ndash;Boore Attenuation Data</h2>
 
@@ -19,7 +29,7 @@ on ground acceleration.
 
 <h3>Usage</h3>
 
-<pre>attenu</pre>
+<pre><code class='language-R'>attenu</code></pre>
 
 
 <h3>Format</h3>
@@ -27,7 +37,7 @@ on ground acceleration.
 <p>A data frame with 182 observations on 5 variables.
 </p>
 
-<table summary="Rd table">
+<table>
 <tr>
  <td style="text-align: right;">
     [,1] </td><td style="text-align: left;"> event   </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Event Number</td>
@@ -95,8 +105,7 @@ Manuscript.
 
 <h3>Examples</h3>
 
-<pre>
-require(graphics)
+<pre><code class='language-R'>require(graphics)
 ## check the data class of the variables
 sapply(attenu, data.class)
 summary(attenu)
@@ -104,7 +113,8 @@ pairs(attenu, main = "attenu data")
 coplot(accel ~ dist | as.factor(event), data = attenu, show.given = FALSE)
 coplot(log(accel) ~ log(dist) | as.factor(event),
        data = attenu, panel = panel.smooth, show.given = FALSE)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

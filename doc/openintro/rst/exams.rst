@@ -32,5 +32,4 @@
 
    ::
 
-
       hist(exams$scores)

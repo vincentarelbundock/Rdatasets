@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Population figures for Australian States and Territories</title>
+<!DOCTYPE html><html><head><title>R: Population figures for Australian States and Territories</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for austpop"><tr><td>austpop</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>austpop</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Population figures for Australian States and Territories</h2>
 
@@ -17,7 +27,7 @@
 
 <h3>Usage</h3>
 
-<pre>austpop</pre>
+<pre><code class='language-R'>austpop</code></pre>
 
 
 <h3>Format</h3>
@@ -61,8 +71,7 @@ the whole country</p>
 
 <h3>Examples</h3>
 
-<pre>
-print("Looping - Example 1.7")
+<pre><code class='language-R'>print("Looping - Example 1.7")
 
 growth.rates &lt;- numeric(8)
 for (j in seq(2,9)) {
@@ -93,7 +102,8 @@ plot(austpop[,1], log(austpop[, i]), xlab="Year",
 par(oldpar) 
 detach(austpop)
 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

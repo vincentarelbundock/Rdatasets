@@ -35,14 +35,14 @@
       ``"Compact"``, ``"Midsize"``, ``"Large"`` and ``"Van"``.
 
    ``Min.Price``
-      Minimum Price (in \\$1,000): price for a basic version.
+      Minimum Price (in $1,000): price for a basic version.
 
    ``Price``
-      Midrange Price (in \\$1,000): average of ``Min.Price`` and
+      Midrange Price (in $1,000): average of ``Min.Price`` and
       ``Max.Price``.
 
    ``Max.Price``
-      Maximum Price (in \\$1,000): price for “a premium version”.
+      Maximum Price (in $1,000): price for “a premium version”.
 
    ``MPG.city``
       City MPG (miles per US gallon by EPA rating).
@@ -125,8 +125,8 @@
       :name: source
 
    Lock, R. H. (1993) 1993 New Car Data. *Journal of Statistics
-   Education* **1**\ (1). doi:
-   `10.1080/10691898.1993.11910459 <https://doi.org/10.1080/10691898.1993.11910459>`__
+   Education* **1**\ (1).
+   `doi:10.1080/10691898.1993.11910459 <https://doi.org/10.1080/10691898.1993.11910459>`__
 
    .. rubric:: References
       :name: references

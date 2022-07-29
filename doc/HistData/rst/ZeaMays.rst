@@ -65,7 +65,7 @@
    into account.
 
    (b) Permutation test based on assigning each ``abs(diff)`` a + or -
-   sign, and calculating the mean(diff). There are *2^{15}* such
+   sign, and calculating the mean(diff). There are ``2^{15}`` such
    possible values. This is essentially what Fisher proposed. The
    p-value for the test is the proportion of absolute mean differences
    under such randomization which exceed the observed mean difference.
@@ -152,5 +152,3 @@
       plot(density(allmeans), xlab="Mean difference, cross-self",
           main="Density plot of all mean differences")
       abline(v=c(1, -1)*mean(ZeaMays$diff), col="red", lwd=2, lty=1:2)
-
-

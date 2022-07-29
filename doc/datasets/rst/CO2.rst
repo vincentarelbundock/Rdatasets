@@ -43,13 +43,14 @@
       a numeric vector of ambient carbon dioxide concentrations (mL/L).
 
    uptake
-      a numeric vector of carbon dioxide uptake rates (*umol/m^2* sec).
+      a numeric vector of carbon dioxide uptake rates
+      (``\mu\mbox{mol}/m^2`` sec).
 
    .. rubric:: Details
       :name: details
 
-   The *CO2* uptake of six plants from Quebec and six plants from
-   Mississippi was measured at several levels of ambient *CO2*
+   The ``CO_2`` uptake of six plants from Quebec and six plants from
+   Mississippi was measured at several levels of ambient ``CO_2``
    concentration. Half the plants of each type were chilled overnight
    before the experiment was conducted.
 

@@ -10,23 +10,32 @@
    .. rubric:: Description
       :name: description
 
-   This data frame contains 445 rows and 10 columns. These data are from
-   an investigation of the effect of training on changes, between
-   1974-1975 and 1978, in the earnings of individuals who had
-   experienced employment difficulties Data are for the male
-   experimental control and treatment groups.
+   This ``nsw74demo`` data frame, with 445 rows and 10 columns, is the
+   subset of the ``nswdemo`` dataset for which 1974 earnings are
+   available. Data are for the male experimental control and treatment
+   groups, in an investigation of the effect of training on changes,
+   between 1974-1975 and 1978, in the earnings of individuals who had
+   experienced employment difficulties.
+
+   Likewise, ``nsw74psid1`` (2675 rows) is the subset of the
+   ``nswpsid1`` data, and ``nsw74psid3`` (313 rows) is the subset of the
+   ``nswpsid3`` data, for which 1974 income is available. NB, also, the
+   ``nsw74psidA`` data set.
 
    .. rubric:: Usage
       :name: usage
 
    ::
 
-      nsw74demo
+        data(nsw74demo)
+        data(nsw74psid1)
+        data(nsw74psid3)
+        data(nsw74psidA)
 
    .. rubric:: Format
       :name: format
 
-   This data frame contains the following columns:
+   Columns are:
 
    trt
       a numeric vector identifying the study in which the subjects were
@@ -58,6 +67,16 @@
 
    re78
       real earnings in 1978.
+
+   .. rubric:: Details
+      :name: details
+
+   The ``nsw74psidA`` data set (252 rows) was obtained from
+   ``nsw74psid1`` using:
+
+   ``here <- age <= 40 & re74<=5000 & re75 <= 5000 & re78 < 30000``
+
+   ``nsw74psidA <- nsw74psid1[here, ]``
 
    .. rubric:: Source
       :name: source

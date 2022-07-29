@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Airbag and other influences on accident fatalities</title>
+<!DOCTYPE html><html><head><title>R: Airbag and other influences on accident fatalities</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for nassCDS"><tr><td>nassCDS</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>nassCDS</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Airbag and other influences on accident fatalities</h2>
 
@@ -19,7 +29,7 @@ are restricted in other ways also.</p>
 
 <h3>Usage</h3>
 
-<pre>nassCDS</pre>
+<pre><code class='language-R'>nassCDS</code></pre>
 
 
 <h3>Format</h3>
@@ -28,43 +38,43 @@ are restricted in other ways also.</p>
 </p>
 
 <dl>
-<dt><code>dvcat</code></dt><dd><p>ordered factor with levels (estimated impact
+<dt>dvcat</dt><dd><p>ordered factor with levels (estimated impact
 speeds) <code>1-9km/h</code>, <code>10-24</code>, <code>25-39</code>, <code>40-54</code>,
 <code>55+</code>
 </p>
 </dd>
-<dt><code>weight</code></dt><dd><p>Observation weights, albeit of uncertain
+<dt>weight</dt><dd><p>Observation weights, albeit of uncertain
 accuracy, designed to account for varying sampling probabilities.</p>
 </dd>
-<dt><code>dead</code></dt><dd><p>factor with levels <code>alive</code> <code>dead</code></p>
+<dt>dead</dt><dd><p>factor with levels <code>alive</code> <code>dead</code></p>
 </dd>
-<dt><code>airbag</code></dt><dd><p>a factor with levels <code>none</code> <code>airbag</code></p>
+<dt>airbag</dt><dd><p>a factor with levels <code>none</code> <code>airbag</code></p>
 </dd>
-<dt><code>seatbelt</code></dt><dd><p>a factor with levels <code>none</code> <code>belted</code></p>
+<dt>seatbelt</dt><dd><p>a factor with levels <code>none</code> <code>belted</code></p>
 </dd>
-<dt><code>frontal</code></dt><dd><p>a numeric vector; 0 = non-frontal, 1=frontal impact</p>
+<dt>frontal</dt><dd><p>a numeric vector; 0 = non-frontal, 1=frontal impact</p>
 </dd>
-<dt><code>sex</code></dt><dd><p>a factor with levels <code>f</code> <code>m</code></p>
+<dt>sex</dt><dd><p>a factor with levels <code>f</code> <code>m</code></p>
 </dd>
-<dt><code>ageOFocc</code></dt><dd><p>age of occupant in years</p>
+<dt>ageOFocc</dt><dd><p>age of occupant in years</p>
 </dd>
-<dt><code>yearacc</code></dt><dd><p>year of accident</p>
+<dt>yearacc</dt><dd><p>year of accident</p>
 </dd>
-<dt><code>yearVeh</code></dt><dd><p>Year of model of vehicle; a numeric vector</p>
+<dt>yearVeh</dt><dd><p>Year of model of vehicle; a numeric vector</p>
 </dd>
-<dt><code>abcat</code></dt><dd><p>Did one or more (driver or passenger) airbag(s)
+<dt>abcat</dt><dd><p>Did one or more (driver or passenger) airbag(s)
 deploy? This factor has levels <code>deploy</code> <code>nodeploy</code>
 <code>unavail</code></p>
 </dd>
-<dt><code>occRole</code></dt><dd><p>a factor with levels <code>driver</code> <code>pass</code></p>
+<dt>occRole</dt><dd><p>a factor with levels <code>driver</code> <code>pass</code></p>
 </dd>
-<dt><code>deploy</code></dt><dd><p>a numeric vector: 0 if an airbag was
+<dt>deploy</dt><dd><p>a numeric vector: 0 if an airbag was
 unavailable or did not deploy; 1 if one or more bags deployed.</p>
 </dd>
-<dt><code>injSeverity</code></dt><dd><p>a numeric vector; 0:none, 1:possible injury,
+<dt>injSeverity</dt><dd><p>a numeric vector; 0:none, 1:possible injury,
 2:no incapacity, 3:incapacity, 4:killed; 5:unknown, 6:prior death</p>
 </dd>
-<dt><code>caseid</code></dt><dd><p>character, created by pasting together the
+<dt>caseid</dt><dd><p>character, created by pasting together the
 populations sampling unit, the case number, and the vehicle
 number.  Within each year, use this to uniquely identify the
 vehicle.
@@ -88,11 +98,11 @@ dataset.
 
 <h3>Source</h3>
 
-<p><a href="http://www.stat.colostate.edu/~meyer/airbags.htm">http://www.stat.colostate.edu/~meyer/airbags.htm</a>\
-<a href="ftp://ftp.nhtsa.dot.gov/nass/">ftp://ftp.nhtsa.dot.gov/nass/</a>
+<p><a href="https://www.stat.colostate.edu/~meyer/airbags.htm">https://www.stat.colostate.edu/~meyer/airbags.htm</a>\
+<a href="https://www.nhtsa.gov/file-downloads">https://www.nhtsa.gov/file-downloads</a>
 </p>
 <p>See also\
-<a href="http://www.maths.anu.edu.au/~johnm/datasets/airbags">http://www.maths.anu.edu.au/~johnm/datasets/airbags</a>
+<a href="https://maths-people.anu.edu.au/~johnm/datasets/airbags/">https://maths-people.anu.edu.au/~johnm/datasets/airbags/</a>
 </p>
 
 
@@ -133,14 +143,14 @@ which there was at least one fatality.
 
 <h3>Examples</h3>
 
-<pre>
-data(nassCDS)
+<pre><code class='language-R'>data(nassCDS)
 xtabs(weight ~ dead + airbag, data=nassCDS)
 xtabs(weight ~ dead + airbag + seatbelt + dvcat, data=nassCDS)
 tab &lt;- xtabs(weight ~ dead + abcat, data=nassCDS,
              subset=dvcat=="25-39"&amp;frontal==0)[, c(3,1,2)]
 round(tab[2, ]/apply(tab,2,sum)*100,2)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

@@ -1,58 +1,85 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: A Subset of the nsw74psid1 Data Set</title>
+<!DOCTYPE html><html><head><title>R: Labour Training Evaluation Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for nsw74psidA"><tr><td>nsw74psidA</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>nsw74demo</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>A Subset of the nsw74psid1 Data Set</h2>
+<h2>Labour Training Evaluation Data</h2>
 
 <h3>Description</h3>
 
-<p>The <code>nsw74psidA</code> data frame has 252 rows and 10 columns.
-See <code>nsw74psid1</code> for more information.
+<p>This <code>nsw74demo</code> data frame, with 445 rows and 10 columns,
+is the subset of the <code>nswdemo</code> dataset for which 1974
+earnings are available. 
+Data are for the male experimental control and treatment
+groups, in an investigation of the effect of training
+on changes, between 1974-1975 and 1978, in the earnings
+of individuals who had experienced employment difficulties.
+</p>
+<p>Likewise, <code>nsw74psid1</code> (2675 rows) is the subset of the
+<code>nswpsid1</code> data, and <code>nsw74psid3</code> (313 rows) is the subset of
+the  <code>nswpsid3</code> data, for which 1974 income is available.
+NB, also, the <code>nsw74psidA</code> data set.
 </p>
 
 
 <h3>Usage</h3>
 
-<pre>nsw74psidA</pre>
+<pre><code class='language-R'>  data(nsw74demo)
+  data(nsw74psid1)
+  data(nsw74psid3)
+  data(nsw74psidA)
+</code></pre>
 
 
 <h3>Format</h3>
 
-<p>This data frame contains the following columns:
+<p>Columns are:
 </p>
 
 <dl>
-<dt>trt</dt><dd><p>a numeric vector</p>
+<dt>trt</dt><dd><p>a numeric vector 
+identifying the study in which the subjects were enrolled
+(0 = PSID, 1 = NSW).</p>
 </dd>
-<dt>age</dt><dd><p>a numeric vector</p>
+<dt>age</dt><dd><p> age (in years).</p>
 </dd>
-<dt>educ</dt><dd><p>a numeric vector</p>
+<dt>educ</dt><dd><p> years of education.</p>
 </dd>
-<dt>black</dt><dd><p>a numeric vector</p>
+<dt>black</dt><dd><p> (0 = not black, 1 = black).</p>
 </dd>
-<dt>hisp</dt><dd><p>a numeric vector</p>
+<dt>hisp</dt><dd><p> (0 = not hispanic, 1 = hispanic).</p>
 </dd>
-<dt>marr</dt><dd><p>a numeric vector</p>
+<dt>marr</dt><dd><p> (0 = not married, 1 = married).</p>
 </dd>
-<dt>nodeg</dt><dd><p>a numeric vector</p>
+<dt>nodeg</dt><dd><p> (0 = completed high school, 1 = dropout).</p>
 </dd>
-<dt>re74</dt><dd><p>a numeric vector</p>
+<dt>re74</dt><dd><p> real earnings in 1974.</p>
 </dd>
-<dt>re75</dt><dd><p>a numeric vector</p>
+<dt>re75</dt><dd><p> real earnings in 1975.</p>
 </dd>
-<dt>re78</dt><dd><p>a numeric vector</p>
-</dd>
+<dt>re78</dt><dd><p> real earnings in 1978.</p>
+</dd> 
 </dl>
 
 
 
 <h3>Details</h3>
 
-<p>This data set was obtained using:
+<p>The <code>nsw74psidA</code> data set (252 rows) was obtained from
+<code>nsw74psid1</code> using:
 </p>
 <p><code>here &lt;- age &lt;= 40 &amp; re74&lt;=5000 &amp; re75 &lt;= 5000 &amp; re78 &lt; 30000</code>
 </p>
@@ -60,21 +87,23 @@ See <code>nsw74psid1</code> for more information.
 </p>
 
 
-<h3>Examples</h3>
+<h3>Source</h3>
 
-<pre>
-table(nsw74psidA$trt)
-A1.lm &lt;- lm(re78 ~ trt + (age + educ + re74 + re75) + (black +
-      hisp + marr + nodeg), data = nsw74psidA)
-summary(A1.lm)$coef
-discA.glm &lt;- glm(formula = trt ~ age + educ + black + hisp +
-  marr + nodeg + re74 + re75, family = binomial, data = nsw74psidA)
-A.scores &lt;- predict(discA.glm)
-options(digits=4)
-overlap &lt;- A.scores &gt; -3.5 &amp; A.scores &lt; 3.8
-A.lm &lt;- lm(re78 ~ trt + A.scores, data=nsw74psidA, subset = overlap)
-summary(A.lm)$coef
-</pre>
+<p>http://www.columbia.edu/~rd247/nswdata.html
+</p>
 
 
-</div></body></html>
+<h3>References</h3>
+
+<p>Dehejia, R.H. and Wahba, S. 1999. Causal effects in
+non-experimental studies: re-evaluating the evaluation of training
+programs. Journal of the American Statistical Association 94:
+1053-1062.
+</p>
+<p>Lalonde, R. 1986. Evaluating the economic evaluations of
+training programs. American Economic Review 76: 604-620.
+</p>
+
+
+</div>
+</body></html>

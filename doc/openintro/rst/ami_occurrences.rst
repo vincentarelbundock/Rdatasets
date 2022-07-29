@@ -33,7 +33,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(ami_occurrences, mapping = aes(x = ami)) +

@@ -82,7 +82,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(ncbirths, aes(x = habit, y = weight)) +

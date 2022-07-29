@@ -65,7 +65,6 @@
 
    ::
 
-
       data(azcabgptca); attach(azcabgptca)
       table(los); table(procedure, type); table(los, procedure)
       summary(los)

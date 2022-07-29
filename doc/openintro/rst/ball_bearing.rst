@@ -37,7 +37,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(ball_bearing, aes(x = life_span)) +

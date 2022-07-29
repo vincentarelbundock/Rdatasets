@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Community college housing (simulated data, 2015)</title>
+<!DOCTYPE html><html><head><title>R: Community college housing (simulated data, 2015)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for student_housing"><tr><td>student_housing</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>student_housing</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Community college housing (simulated data, 2015)</h2>
 
@@ -17,9 +27,8 @@ students at a college.
 
 <h3>Usage</h3>
 
-<pre>
-student_housing
-</pre>
+<pre><code class='language-R'>student_housing
+</code></pre>
 
 
 <h3>Format</h3>
@@ -36,8 +45,7 @@ student_housing
 
 <h3>Examples</h3>
 
-<pre>
-
+<pre><code class='language-R'>
 set.seed(5)
 generate_student_housing &lt;- data.frame(
   price = round(rnorm(175, 515, 65) + exp(rnorm(175, 4.2, 1)))
@@ -47,7 +55,8 @@ t.test(student_housing$price)
 mean(student_housing$price)
 sd(student_housing$price)
 identical(student_housing, generate_student_housing)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

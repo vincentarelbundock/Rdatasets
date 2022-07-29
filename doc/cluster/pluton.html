@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Isotopic Composition Plutonium Batches</title>
+<!DOCTYPE html><html><head><title>R: Isotopic Composition Plutonium Batches</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for pluton"><tr><td>pluton</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>pluton</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Isotopic Composition Plutonium Batches</h2>
 
@@ -18,7 +28,7 @@ batches.
 
 <h3>Usage</h3>
 
-<pre>data(pluton)</pre>
+<pre><code class='language-R'>data(pluton)</code></pre>
 
 
 <h3>Format</h3>
@@ -27,12 +37,12 @@ batches.
 </p>
 
 <dl>
-<dt>Pu238</dt><dd><p>the percentages of <i>(238)Pu</i>,
+<dt>Pu238</dt><dd><p>the percentages of <code class="reqn">\ ^{238}Pu</code>,
 always less than 2 percent.</p>
 </dd>
-<dt>Pu239</dt><dd><p>the percentages of <i>(239)Pu</i>,
+<dt>Pu239</dt><dd><p>the percentages of <code class="reqn">\ ^{239}Pu</code>,
 typically between 60 and 80 percent (from neutron capture of Uranium,
-<i>(238)U</i>).</p>
+<code class="reqn">\ ^{238}U</code>).</p>
 </dd>
 <dt>Pu240</dt><dd><p>percentage of the plutonium 240 isotope.</p>
 </dd>
@@ -73,14 +83,14 @@ Fuzzy clustering using scatter matrices,
 
 <h3>Examples</h3>
 
-<pre>
-data(pluton)
+<pre><code class='language-R'>data(pluton)
 
 hist(apply(pluton,1,sum), col = "gray") # between 94% and 100%
 pu5 &lt;- pluton
 pu5$Pu242 &lt;- 100 - apply(pluton,1,sum) # the remaining isotope.
 pairs(pu5)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

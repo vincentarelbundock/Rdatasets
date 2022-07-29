@@ -91,7 +91,7 @@
    Multivariate-covariance and canonical analysis: A method for
    selecting the most effective discriminators in a multivariate
    situation. *Biometrics* **24**, 845–858. Originally from
-   http://www.stat.lsu.edu/faculty/moser/exst7037/soils.sas but no
+   ‘⁠http://www.stat.lsu.edu/faculty/moser/exst7037/soils.sas⁠’ but no
    longer available there.
 
    .. rubric:: References

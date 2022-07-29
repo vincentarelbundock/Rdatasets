@@ -33,7 +33,7 @@
    ============ ======= ==============================
    ``duration`` numeric Eruption time in mins
    ``waiting``  numeric Waiting time for this eruption
-   \                   
+   \                    
    ============ ======= ==============================
 
    .. rubric:: Note

@@ -50,7 +50,6 @@
 
    ::
 
-
       data(ohio)
 
       fit.ex <- geeglm(resp ~ age + smoke + age:smoke, id=id, data=ohio,

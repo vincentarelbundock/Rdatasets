@@ -25,7 +25,7 @@
    ``PropMakes``   Proportion of attempts made
    ``Blocked``     Number of kicks blocked
    ``PropBlocked`` Proportion of kicks blocked
-   \              
+   \               
    =============== ============================================
 
    .. rubric:: Details

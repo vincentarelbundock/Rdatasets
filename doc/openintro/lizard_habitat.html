@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Field data on lizards observed in their natural habitat</title>
+<!DOCTYPE html><html><head><title>R: Field data on lizards observed in their natural habitat</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for lizard_habitat"><tr><td>lizard_habitat</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>lizard_habitat</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Field data on lizards observed in their natural habitat</h2>
 
@@ -19,9 +29,8 @@ by Dee Asbury in 2002-3 (in valley site).
 
 <h3>Usage</h3>
 
-<pre>
-lizard_habitat
-</pre>
+<pre><code class='language-R'>lizard_habitat
+</code></pre>
 
 
 <h3>Format</h3>
@@ -53,8 +62,7 @@ Evolutionary Ecology Research 9:801-815.
 
 <h3>Examples</h3>
 
-<pre>
-library(ggplot2)
+<pre><code class='language-R'>library(ggplot2)
 
 # Frequencies
 table(lizard_habitat)
@@ -63,7 +71,8 @@ table(lizard_habitat)
 ggplot(lizard_habitat, aes(y = site, fill = sunlight)) +
   geom_bar(position = "fill") +
   labs(x = "Proportion")
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

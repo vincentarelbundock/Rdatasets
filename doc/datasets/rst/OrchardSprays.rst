@@ -46,15 +46,15 @@
    100 bees into the chamber for two hours, and then measuring the
    decrease in volume of the solutions in the various cells.
 
-   An *8 x 8* Latin square design was used and the treatments were coded
-   as follows:
+   An ``8 \times 8`` Latin square design was used and the treatments
+   were coded as follows:
 
    = ==================================
    A highest level of lime sulphur
    B next highest level of lime sulphur
-   .
-   .
-   .
+   . 
+   . 
+   . 
    G lowest level of lime sulphur
    H no lime sulphur
    = ==================================

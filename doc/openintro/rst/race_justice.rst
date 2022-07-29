@@ -37,7 +37,7 @@
    response
       Response to the question "Do you think Black and White people
       receive equal treatment from the police?", with levels ``Yes``,
-      ``No``, and ``Not sure``.
+      ``No``, and ``⁠Not sure⁠``.
 
    .. rubric:: Source
       :name: source
@@ -49,7 +49,6 @@
       :name: examples
 
    ::
-
 
       library(ggplot2)
       library(dplyr)

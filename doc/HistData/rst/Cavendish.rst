@@ -13,8 +13,8 @@
    Henry Cavendish carried out a series of experiments in 1798 to
    determine the mean density of the earth, as an indirect means to
    calculate the gravitational constant, G, in Newton's formula for the
-   force (f) of gravitational attraction, *f = G m M / r^2* between two
-   bodies of mass m and M.
+   force (f) of gravitational attraction, ``f = G m M / r^2`` between
+   two bodies of mass m and M.
 
    Stigler (1977) used these data to illustrate properties of robust
    estimators with real, historical data. For these data sets, he found
@@ -47,8 +47,9 @@
 
    Density values (D) of the earth are given as relative to that of
    water. If the earth is regarded as a sphere of radius R, Newton's law
-   can be expressed as *G D = 3 g / (4 π R)*, where *g=9.806 m/s^2* is
-   the acceleration due to gravity; so G is proportional to 1/D.
+   can be expressed as ``G D = 3 g / (4 \pi R)``, where
+   ``g=9.806 m/s^2`` is the acceleration due to gravity; so G is
+   proportional to 1/D.
 
    ``density`` contains Cavendish's measurements as analyzed, where he
    treated the value 4.88 as if it were 5.88. ``density2`` corrects
@@ -57,7 +58,7 @@
    ``density3`` replaces the first 6 values with ``NA``.
 
    The modern "true" value of D is taken as 5.517. The gravitational
-   constant can be expressed as *G = 6.674 \* 10^-11 m^3/kg/s^2*.
+   constant can be expressed as ``G = 6.674 * 10^-11 m^3/kg/s^2``.
 
    .. rubric:: Source
       :name: source
@@ -97,4 +98,3 @@
        
       boxplot(10^5 * G(Cavendish), ylab='~ Gravitational constant (G)', xlab='Data set')
       abline(h=10^5 * G(5.517), col="red", lwd=2)
-

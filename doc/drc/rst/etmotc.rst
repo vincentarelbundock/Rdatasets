@@ -68,7 +68,6 @@
 
    ::
 
-
       etmotc.m1<-drm(rgr1~dose1, data=etmotc[1:15,], fct=LL.4())
       plot(etmotc.m1)
       modelFit(etmotc.m1)
@@ -83,4 +82,3 @@
       plot(etmotc.m3, add = TRUE)
       modelFit(etmotc.m3)
       summary(etmotc.m3)
-

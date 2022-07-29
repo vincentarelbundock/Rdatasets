@@ -1,25 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Subset of Leaf Shape Data Set</title>
+<!DOCTYPE html><html><head><title>R: Full Leaf Shape Data Set</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for leafshape17"><tr><td>leafshape17</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>leafshape</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>Subset of Leaf Shape Data Set</h2>
+<h2>Full Leaf Shape Data Set</h2>
 
 <h3>Description</h3>
 
-<p>The <code>leafshape17</code> data frame has 61 rows and 8 columns.
-These are leaf length, width and petiole measurements taken
-at several sites in Australia.  This is a subset of the 
-<code>leafshape</code> data frame.
+<p>Leaf length, width and petiole measurements taken at various
+sites worldwide.  The <code>leafshape17</code> data frame is the
+subset that has data for North Queensland sites.
 </p>
 
 
 <h3>Usage</h3>
 
-<pre>leafshape17</pre>
+<pre><code class='language-R'>data(leafshape)
+data(leafshape17)
+</code></pre>
 
 
 <h3>Format</h3>
@@ -38,11 +49,16 @@ at several sites in Australia.  This is a subset of the
 </dd>
 <dt>logwid</dt><dd><p>natural logarithm of width</p>
 </dd>
-<dt>logpet</dt><dd><p>logarithm of petiole measurement</p>
+<dt>logpet</dt><dd><p>logarithm of petiole</p>
 </dd>
 <dt>loglen</dt><dd><p>logarithm of length</p>
 </dd>
-<dt>arch</dt><dd><p>leaf architecture (0 = orthotropic, 1 = plagiotropic)</p>
+<dt>arch</dt><dd><p>leaf architecture (0 = plagiotropic, 1 = orthotropic</p>
+</dd>
+<dt>location</dt><dd><p>a factor with levels
+<code>Sabah</code>, <code>Panama</code>, <code>Costa Rica</code>,
+<code>N Queensland</code>, <code>S Queensland</code>, 
+<code>Tasmania</code> </p>
 </dd>
 </dl>
 
@@ -58,10 +74,7 @@ forests. Journal of Ecology 87: 1012-1024.
 
 <h3>Examples</h3>
 
-<pre>
-print("Discriminant Analysis - Example 11.2")
-
-require(MASS)
+<pre><code class='language-R'>library(MASS)
 leaf17.lda &lt;- lda(arch ~ logwid+loglen, data=leafshape17)
 leaf17.hat &lt;- predict(leaf17.lda)
 leaf17.lda
@@ -84,7 +97,8 @@ table(leafshape17$arch, round(leaf17.one$internal))     # Resubstitution
 pause()
 
 table(leafshape17$arch, round(leaf17.one$cv))           # Cross-validation
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

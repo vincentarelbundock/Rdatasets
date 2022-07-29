@@ -52,6 +52,5 @@
 
    ::
 
-
       data(photo_classify)
       table(photo_classify)

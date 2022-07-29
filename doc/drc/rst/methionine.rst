@@ -54,7 +54,6 @@
 
    ::
 
-
       ## Fitting model with constraint on one parameter 
       met.ar.m1 <- drm(gain~dose, product, data = methionine, 
       fct = AR.3(), pmodels = list(~1, ~factor(product), ~factor(product)), 
@@ -64,4 +63,3 @@
       abline(h=1700, lty=1)
 
       summary(met.ar.m1)
-

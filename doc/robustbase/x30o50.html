@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Extreme Data examples</title>
+<!DOCTYPE html><html><head><title>R: Extreme Data examples</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for xtrData"><tr><td>xtrData</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>xtrData</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Extreme Data examples</h2>
 
@@ -22,9 +32,8 @@ between 0.0022 and 1.66.
 
 <h3>Usage</h3>
 
-<pre>
-data(x30o50, package="robustbase")
-</pre>
+<pre><code class='language-R'>data(x30o50, package="robustbase")
+</code></pre>
 
 
 <h3>Format</h3>
@@ -62,8 +71,7 @@ to <code>eps1 = 1e-13</code>.
 
 <h3>Examples</h3>
 
-<pre>
-data(x30o50)
+<pre><code class='language-R'>data(x30o50)
 ## have 4  duplicated values :
 table(dX &lt;- duplicated(x30o50))
      x30o50[dX] # 0 2.77e-17 4.16e-17 2.08e-16
@@ -114,7 +122,8 @@ plot((-mcXc) ~ cHs, type="b", log="xy", xlab=quote(c[huberize]))
 ## but for "regular" outlier skew data, there's no such dependency:
 mcXcu &lt;- mcHubc(cushny)(cHs)
 stopifnot( abs(mcXcu - mcXcu[1]) &lt; 1e-15)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Average Monthly Temperatures at Nottingham, 1920-1939</title>
+<!DOCTYPE html><html><head><title>R: Average Monthly Temperatures at Nottingham, 1920-1939</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for nottem"><tr><td>nottem</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>nottem</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>
 Average Monthly Temperatures at Nottingham, 1920&ndash;1939
@@ -19,7 +29,7 @@ Nottingham Castle in degrees Fahrenheit for 20 years.
 
 <h3>Usage</h3>
 
-<pre>nottem</pre>
+<pre><code class='language-R'>nottem</code></pre>
 
 
 <h3>Source</h3>
@@ -32,14 +42,14 @@ Butterworths. Series R.
 
 <h3>Examples</h3>
 
-<pre>
-require(stats); require(graphics)
+<pre><code class='language-R'>require(stats); require(graphics)
 nott &lt;- window(nottem, end = c(1936,12))
 fit &lt;- arima(nott, order = c(1,0,0), list(order = c(2,1,0), period = 12))
 nott.fore &lt;- predict(fit, n.ahead = 36)
 ts.plot(nott, nott.fore$pred, nott.fore$pred+2*nott.fore$se,
         nott.fore$pred-2*nott.fore$se, gpars = list(col = c(1,1,4,4)))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

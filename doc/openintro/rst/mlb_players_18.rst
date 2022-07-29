@@ -101,7 +101,6 @@
 
    ::
 
-
       d <- subset(mlb_players_18, !position %in% c("P", "DH") & AB >= 100)
       dim(d)
 

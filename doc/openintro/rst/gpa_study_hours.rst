@@ -52,7 +52,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(gpa_study_hours, aes(x = study_hours, y = gpa)) +

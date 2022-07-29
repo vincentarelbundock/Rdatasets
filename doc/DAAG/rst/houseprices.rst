@@ -95,4 +95,3 @@
       plot(apply(houseprices2.boot$t,2, sd)/predict.lm(houseprices.lm, se.fit=TRUE)$se.fit,
            ylab="Ratio of Bootstrap SE's to Model-Based SE's", xlab="House", pch=16)
       abline(1,0)
-

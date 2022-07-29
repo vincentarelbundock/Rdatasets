@@ -110,4 +110,3 @@
       with(Jmean, plot(actual, V1, ylab='Mean error', xlab='Actual number', type='b', main='Jevons data'))
       abline(h=0)
       }
-

@@ -126,7 +126,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(mtl, aes(x = ipa_qgrp, y = met_minwk)) +

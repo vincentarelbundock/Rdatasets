@@ -18,14 +18,17 @@
 
    A dataset with 24 observations on the following 3 variables.
 
-   =============
-   =============================================================
-   ``MathSAT``   Score (out of 800) on the mathematics portion of the SAT exam
-   ``VerbalSAT`` Score (out of 800) on the verbal portion of the SAT exam
-   ``GPA``       Grade point average (0.0-4.0 scale)
-   \            
-   =============
-   =============================================================
+   +---------------+-----------------------------------------------------+
+   | ``MathSAT``   | Score (out of 800) on the mathematics portion of    |
+   |               | the SAT exam                                        |
+   +---------------+-----------------------------------------------------+
+   | ``VerbalSAT`` | Score (out of 800) on the verbal portion of the SAT |
+   |               | exam                                                |
+   +---------------+-----------------------------------------------------+
+   | ``GPA``       | Grade point average (0.0-4.0 scale)                 |
+   +---------------+-----------------------------------------------------+
+   |               |                                                     |
+   +---------------+-----------------------------------------------------+
 
    .. rubric:: Details
       :name: details

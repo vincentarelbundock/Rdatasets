@@ -144,7 +144,6 @@
 
    ::
 
-
       library(ggplot2)
       ggplot(bdims, aes(x = hgt)) +
         geom_histogram(binwidth = 5)

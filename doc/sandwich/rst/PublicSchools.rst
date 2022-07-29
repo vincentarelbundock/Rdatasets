@@ -18,7 +18,7 @@
 
    ::
 
-      data(PublicSchools)
+      data("PublicSchools")
 
    .. rubric:: Format
       :name: format
@@ -40,8 +40,8 @@
       :name: references
 
    Cribari-Neto F. (2004). “Asymptotic Inference Under
-   Heteroskedasticity of Unknown Form.” *Computational Statistics \\&
-   Data Analysis*, **45**, 215-233.
+   Heteroskedasticity of Unknown Form.” *Computational Statistics & Data
+   Analysis*, **45**, 215-233.
 
    Greene W.H. (1993). *Econometric Analysis*, 2nd edition. Macmillan
    Publishing Company, New York.
@@ -57,7 +57,7 @@
       ## Willam H. Greene, Econometric Analysis, 2nd Ed.
       ## Chapter 14
       ## load data set, p. 385, Table 14.1
-      data(PublicSchools)
+      data("PublicSchools", package = "sandwich")
 
       ## omit NA in Wisconsin and scale income
       ps <- na.omit(PublicSchools)
@@ -69,7 +69,6 @@
 
       ## compare standard and HC0 standard errors
       ## p. 391, Table 14.3
-      library(sandwich)
       coef(fmq)
       sqrt(diag(vcovHC(fmq, type = "const")))
       sqrt(diag(vcovHC(fmq, type = "HC0")))

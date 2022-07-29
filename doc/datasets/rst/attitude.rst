@@ -37,7 +37,7 @@
    X[3] learning   numeric Opportunity to learn
    X[4] raises     numeric Raises based on performance
    X[5] critical   numeric Too critical
-   X[6] advancel   numeric Advancement
+   X[6] advance    numeric Advancement
    ==== ========== ======= =================================
 
    .. rubric:: Source

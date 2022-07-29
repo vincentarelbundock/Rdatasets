@@ -53,7 +53,6 @@
 
    ::
 
-
       ## Fitting a four-parameter log-logistic model
       secalonic.m1 <- drm(rootl ~ dose, data = secalonic, fct = LL.4())
       summary(secalonic.m1)
@@ -74,4 +73,3 @@
       plot(secalonic.L4, broken=TRUE, ylim=c(0,7), add=TRUE, type="none", lty=2, lwd=2)
 
       abline(h=coef(secalonic.L4)[3], lty=3, lwd=2)
-

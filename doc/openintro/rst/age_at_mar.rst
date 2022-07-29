@@ -40,7 +40,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(age_at_mar, mapping = aes(x = age)) +

@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Cushny-Peebles Data: Soporific Effects of Scopolamine...</title>
+<!DOCTYPE html><html><head><title>R: Cushny-Peebles Data: Soporific Effects of Scopolamine...</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for CushnyPeebles"><tr><td>CushnyPeebles</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>CushnyPeebles</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>
 Cushny-Peebles Data: Soporific Effects of Scopolamine Derivatives
@@ -43,10 +53,9 @@ is contained in the data frame <code>CushnyPeeblesN</code>.
 
 <h3>Usage</h3>
 
-<pre>
-data(CushnyPeebles)
+<pre><code class='language-R'>data(CushnyPeebles)
 data(CushnyPeeblesN)
-	</pre>
+	</code></pre>
 
 
 <h3>Format</h3>
@@ -115,8 +124,7 @@ Oliver &amp; Boyd.
 
 <h3>Examples</h3>
 
-<pre>
-data(CushnyPeebles)
+<pre><code class='language-R'>data(CushnyPeebles)
 # quick looks at the data
 plot(CushnyPeebles)
 boxplot(CushnyPeebles, ylab="Hours of Sleep", xlab="Treatment")
@@ -155,7 +163,8 @@ CPN &lt;- stack(CushnyPeeblesN)
 CPlong &lt;- data.frame(patient=rep(1:11,4), CPlong, n=CPN$values)
 str(CPlong)
 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Economics Journal Subscription Data</title>
+<!DOCTYPE html><html><head><title>R: Economics Journal Subscription Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for Journals"><tr><td>Journals</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>Journals</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Economics Journal Subscription Data</h2>
 
@@ -16,7 +26,7 @@
 
 <h3>Usage</h3>
 
-<pre>data("Journals")</pre>
+<pre><code class='language-R'>data("Journals")</code></pre>
 
 
 <h3>Format</h3>
@@ -52,7 +62,7 @@
 <h3>Details</h3>
 
 <p>Data on 180 economic journals, collected in particular for analyzing journal
-pricing. See also <a href="http://www.econ.ucsb.edu/~tedb/Journals/jpricing.html">http://www.econ.ucsb.edu/~tedb/Journals/jpricing.html</a>
+pricing. See also <a href="https://econ.ucsb.edu/~tedb/Journals/jpricing.html">https://econ.ucsb.edu/~tedb/Journals/jpricing.html</a>
 for general information on this topic as well as a more up-to-date version of
 the data set. This version is taken from Stock and Watson (2007).
 </p>
@@ -83,7 +93,7 @@ seemed to be an error and was changed to &ldquo;The World Economy&rdquo;.
 
 <h3>Examples</h3>
 
-<pre>
+<pre><code class='language-R'>
 ## data and transformed variables
 data("Journals")
 journals &lt;- Journals[, c("subs", "price")]
@@ -124,7 +134,8 @@ plot(subs ~ citeprice, data = log(journals), pch = 19, col = (age &gt; log(bp.ag
 abline(coef(bp)[1,], col = 1)
 abline(coef(bp)[2,], col = 2)
 legend("bottomleft", legend = c("age &gt; 18", "age &lt; 18"), lty = 1, col = 2:1, bty = "n")
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

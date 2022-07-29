@@ -116,7 +116,6 @@
 
    ::
 
-
       names(fish_oil_18)
       (tab <- fish_oil_18[["major_cardio_event"]])
       chisq.test(tab)

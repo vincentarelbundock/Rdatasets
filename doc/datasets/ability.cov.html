@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Ability and Intelligence Tests</title>
+<!DOCTYPE html><html><head><title>R: Ability and Intelligence Tests</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for ability.cov"><tr><td>ability.cov</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>ability.cov</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Ability and Intelligence Tests</h2>
 
@@ -17,7 +27,7 @@ given in this object.
 
 <h3>Usage</h3>
 
-<pre>ability.cov</pre>
+<pre><code class='language-R'>ability.cov</code></pre>
 
 
 <h3>Details</h3>
@@ -61,23 +71,24 @@ Second Edition, Arnold.
 <h3>References</h3>
 
 <p>Smith, G. A. and Stanley G. (1983).
-Clocking <i>g</i>: relating intelligence and measures of timed
+Clocking <code class="reqn">g</code>: relating intelligence and measures of timed
 performance.
 <em>Intelligence</em>, <b>7</b>, 353&ndash;368.
-doi: <a href="https://doi.org/10.1016/0160-2896(83)90010-7">10.1016/0160-2896(83)90010-7</a>.
+<a href="https://doi.org/10.1016/0160-2896%2883%2990010-7">doi:10.1016/0160-2896(83)90010-7</a>.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre>
+<pre><code class='language-R'>
 require(stats)
 (ability.FA &lt;- factanal(factors = 1, covmat = ability.cov))
 update(ability.FA, factors = 2)
 ## The signs of factors and hence the signs of correlations are
 ## arbitrary with promax rotation.
 update(ability.FA, factors = 2, rotation = "promax")
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

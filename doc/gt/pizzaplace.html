@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: A year of pizza sales from a pizza place</title>
+<!DOCTYPE html><html><head><title>R: A year of pizza sales from a pizza place</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for pizzaplace"><tr><td>pizzaplace</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>pizzaplace</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>A year of pizza sales from a pizza place</h2>
 
@@ -25,9 +35,8 @@ Large Size!').
 
 <h3>Usage</h3>
 
-<pre>
-pizzaplace
-</pre>
+<pre><code class='language-R'>pizzaplace
+</code></pre>
 
 
 <h3>Format</h3>
@@ -217,6 +226,24 @@ Tomatoes, Zucchini, Red Peppers, Garlic, Pesto Sauce)
 
 
 
+<h3>Examples</h3>
+
+<p>Here is a glimpse at the pizza data available in <code>pizzaplace</code>.
+</p>
+<div class="sourceCode r"><pre>dplyr::glimpse(pizzaplace)
+</pre></div>
+<div class="sourceCode"><pre>## Rows: 49,574
+## Columns: 7
+## $ id    &lt;chr&gt; "2015-000001", "2015-000002", "2015-000002", "2015-000002", "201…
+## $ date  &lt;chr&gt; "2015-01-01", "2015-01-01", "2015-01-01", "2015-01-01", "2015-01…
+## $ time  &lt;chr&gt; "11:38:36", "11:57:40", "11:57:40", "11:57:40", "11:57:40", "11:…
+## $ name  &lt;chr&gt; "hawaiian", "classic_dlx", "mexicana", "thai_ckn", "five_cheese"…
+## $ size  &lt;chr&gt; "M", "M", "M", "L", "L", "L", "L", "M", "M", "M", "S", "S", "S",…
+## $ type  &lt;chr&gt; "classic", "classic", "veggie", "chicken", "veggie", "supreme", …
+## $ price &lt;dbl&gt; 13.25, 16.00, 16.00, 20.75, 18.50, 20.75, 20.75, 16.50, 16.50, 1…
+</pre></div>
+
+
 <h3>Function ID</h3>
 
 <p>11-5
@@ -234,14 +261,5 @@ Tomatoes, Zucchini, Red Peppers, Garlic, Pesto Sauce)
 </p>
 
 
-<h3>Examples</h3>
-
-<pre>
-# Here is a glimpse at the data
-# available in `pizzaplace`
-dplyr::glimpse(pizzaplace)
-
-</pre>
-
-
-</div></body></html>
+</div>
+</body></html>

@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Moths Data</title>
+<!DOCTYPE html><html><head><title>R: Moths Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for moths"><tr><td>moths</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>moths</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Moths Data</h2>
 
@@ -20,7 +30,7 @@ were identified according to habitat type.
 
 <h3>Usage</h3>
 
-<pre>moths</pre>
+<pre><code class='language-R'>moths</code></pre>
 
 
 <h3>Format</h3>
@@ -57,8 +67,7 @@ were identified according to habitat type.
 
 <h3>Examples</h3>
 
-<pre>
-print("Quasi Poisson Regression - Example 8.3")
+<pre><code class='language-R'>print("Quasi Poisson Regression - Example 8.3")
 rbind(table(moths[,4]), sapply(split(moths[,-4], moths$habitat), apply,2,
 sum))
 A.glm &lt;- glm(formula = A ~ log(meters) + factor(habitat), family =
@@ -72,7 +81,8 @@ summary(A.glm)$coef
 A2.glm &lt;- glm(formula = A ~ sqrt(meters) + factor(habitat), family =
                   quasipoisson(link=sqrt), data = moths)
 summary(A2.glm)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

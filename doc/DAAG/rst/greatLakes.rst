@@ -36,7 +36,7 @@
    .. rubric:: Source
       :name: source
 
-   http://www.lre.usace.army.mil/Missions/GreatLakesInformation/GreatLakesWaterLevels/HistoricalData.aspx
+   https://www.lre.usace.army.mil/Missions/Great-Lakes-Information/Great-Lakes-Information-2/Water-Level-Data/
 
    .. rubric:: Examples
       :name: examples

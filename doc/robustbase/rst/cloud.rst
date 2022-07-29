@@ -45,4 +45,3 @@
 
       data(cloud)
       summary(lm.cloud <- lm(CloudPoint ~., data=cloud))
-

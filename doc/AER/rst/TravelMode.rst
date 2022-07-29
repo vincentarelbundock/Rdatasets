@@ -27,7 +27,7 @@
    individuals.
 
    individual
-      Factor indicating individual with levels ``1`` to ``200``.
+      Factor indicating individual with levels ``1`` to ``210``.
 
    mode
       Factor indicating travel mode with levels ``"car"``, ``"air"``,
@@ -59,7 +59,7 @@
 
    Online complements to Greene (2003).
 
-   http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
    .. rubric:: References
       :name: references
@@ -77,7 +77,7 @@
 
    ::
 
-      data("TravelMode")
+      data("TravelMode", package = "AER")
 
       ## overall proportions for chosen mode
       with(TravelMode, prop.table(table(mode[choice == "yes"])))
@@ -87,9 +87,8 @@
       xyplot(travel ~ wait | mode, data = TravelMode)
 
       ## Greene (2003), Table 21.11, conditional logit model
-      if(require("mlogit")) {
+      library("mlogit")
       TravelMode$incair <- with(TravelMode, income * (mode == "air"))
       tm_cl <- mlogit(choice ~ gcost + wait + incair, data = TravelMode,
         shape = "long", alt.var = "mode", reflevel = "car")
       summary(tm_cl)
-      }

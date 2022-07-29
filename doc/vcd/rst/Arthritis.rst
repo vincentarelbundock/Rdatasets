@@ -10,7 +10,7 @@
    .. rubric:: Description
       :name: description
 
-   Data from Koch \\& Edwards (1988) from a double-blind clinical trial
+   Data from Koch & Edwards (1988) from a double-blind clinical trial
    investigating a new treatment for rheumatoid arthritis.
 
    .. rubric:: Usage
@@ -49,7 +49,7 @@
    .. rubric:: References
       :name: references
 
-   G. Koch \\& S. Edwards (1988), Clinical efficiency trials with
+   G. Koch & S. Edwards (1988), Clinical efficiency trials with
    categorical data. In K. E. Peace (ed.), *Biopharmaceutical Statistics
    for Drug Development*, 403–451. Marcel Dekker, New York.
 

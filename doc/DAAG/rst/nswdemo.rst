@@ -68,7 +68,7 @@
    .. rubric:: Source
       :name: source
 
-   http://www.nber.org/~rdehejia/nswdata.html
+   https://users.nber.org/~rdehejia/nswdata.html
 
    .. rubric:: References
       :name: references

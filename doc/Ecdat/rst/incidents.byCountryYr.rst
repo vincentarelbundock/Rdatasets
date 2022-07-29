@@ -185,8 +185,8 @@
 
       ``USdeaths`` were computed by summing across age groups in
       "Deaths_5x1.txt" for the United States, downloaded from
-      https://www.mortality.org/cgi-bin/hmd/country.php?cntr=USA&level=1
-      from the Human Mortality Database; see sources below.
+      https://www.mortality.org/Country/Country?cntr=USA from the Human
+      Mortality Database; see sources below.
 
    kill.pmp, kill.pmp.us
       terrorism deaths per million population worldwide and in the US =

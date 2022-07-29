@@ -41,4 +41,3 @@
         boxplot(log(length) ~ year, data=droughts)
         hist(droughts$length, main="Winnipeg Droughts", xlab="length (in days)")
         hist(log(droughts$length), main="Winnipeg Droughts", xlab="length (in days, log scale)")
-

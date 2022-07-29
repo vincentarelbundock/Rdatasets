@@ -33,16 +33,16 @@
       a numeric vector
 
    ``deaths``
-      number of deaths, *D_k*, among people of age k, a numeric vector
+      number of deaths, ``D_k``, among people of age k, a numeric vector
 
    ``number``
-      size of the population, *P_k* surviving until this age, a numeric
-      vector
+      size of the population, ``P_k`` surviving until this age, a
+      numeric vector
 
    ``ratio``
-      the ratio *P_{k+1}/P_k*, the conditional probability of surviving
-      until age k + 1 given that one had already reached age k, a
-      numeric vector
+      the ratio ``P_{k+1}/P_k``, the conditional probability of
+      surviving until age k + 1 given that one had already reached age
+      k, a numeric vector
 
    .. rubric:: Details
       :name: details
@@ -52,13 +52,13 @@
    This value is not included in the data set.
 
    The data from Breslau had a mean of 1,238 births per year: this is
-   the value that Halley took for the size, *P_0* of the population
+   the value that Halley took for the size, ``P_0`` of the population
    cohort at age 0. From the data, he could compute the annual mean
-   *D_k* of the number of deaths among people aged *k* for all *k >= 0*.
-   From this, he calculated the number *P_{k+1}* surviving one more
-   year,
+   ``D_k`` of the number of deaths among people aged ``k`` for all
+   ``k >= 0``. From this, he calculated the number ``P_{k+1}`` surviving
+   one more year,
 
-   *P_{k+1} = P_k - D_k*
+   ``P_{k+1} = P_k - D_k``
 
    This method had the great advantage of not requiring a general census
    but only knowledge of the number of births and deaths and of the age
@@ -106,5 +106,3 @@
 
       # conditional probability of survival, one more year
       plot(ratio ~ age, data=HalleyLifeTable, ylab="Probability survive one more year")
-
-

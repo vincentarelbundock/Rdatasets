@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Batter Statistics for 2018 Major League Baseball (MLB) Season</title>
+<!DOCTYPE html><html><head><title>R: Batter Statistics for 2018 Major League Baseball (MLB) Season</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for mlb_players_18"><tr><td>mlb_players_18</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>mlb_players_18</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Batter Statistics for 2018 Major League Baseball (MLB) Season</h2>
 
@@ -16,9 +26,8 @@
 
 <h3>Usage</h3>
 
-<pre>
-mlb_players_18
-</pre>
+<pre><code class='language-R'>mlb_players_18
+</code></pre>
 
 
 <h3>Format</h3>
@@ -87,8 +96,7 @@ mlb_players_18
 
 <h3>Examples</h3>
 
-<pre>
-
+<pre><code class='language-R'>
 d &lt;- subset(mlb_players_18, !position %in% c("P", "DH") &amp; AB &gt;= 100)
 dim(d)
 
@@ -118,7 +126,8 @@ for (i in 1:length(pos)) {
 plot(out ~ as.factor(gp))
 summary(lm(out ~ as.factor(gp)))
 anova(lm(out ~ as.factor(gp)))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

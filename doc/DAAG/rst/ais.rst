@@ -11,7 +11,7 @@
       :name: description
 
    These data were collected in a study of how data on various
-   characteristics of the bloood varied with sport body size and sex of
+   characteristics of the blood varied with sport, body size, and sex of
    the athlete.
 
    .. rubric:: Usage
@@ -27,10 +27,10 @@
    A data frame with 202 observations on the following 13 variables.
 
    rcc
-      red blood cell count, in
+      red blood cell count, in ``10^{12} l^{-1}``
 
    wcc
-      while blood cell count, in per liter
+      while blood cell count, in ``10^{12}`` per liter
 
    hc
       hematocrit, percent
@@ -39,10 +39,10 @@
       hemaglobin concentration, in g per decaliter
 
    ferr
-      plasma ferritins, ng
+      plasma ferritins, ng ``dl^{-1}``
 
    bmi
-      Body mass index, kg
+      Body mass index, kg ``cm^{-2} 10^2``
 
    ssf
       sum of skin folds

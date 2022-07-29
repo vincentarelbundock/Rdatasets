@@ -30,20 +30,21 @@
    This data frame contains the following columns:
 
    ``Opening``
-      a factor with levels L, M and S indicating the amount of clearance
-      around the mounting pad.
+      a factor with levels ‘⁠L⁠’, ‘⁠M⁠’ and ‘⁠S⁠’ indicating the amount
+      of clearance around the mounting pad.
 
    ``Solder``
-      a factor with levels Thick and Thin giving the thickness of the
-      solder used.
+      a factor with levels ‘⁠Thick⁠’ and ‘⁠Thin⁠’ giving the thickness
+      of the solder used.
 
    ``Mask``
-      a factor with levels A1.5, A3, B3 and B6 indicating the type and
-      thickness of mask used.
+      a factor with levels ‘⁠A1.5⁠’, ‘⁠A3⁠’, ‘⁠B3⁠’ and ‘⁠B6⁠’
+      indicating the type and thickness of mask used.
 
    ``PadType``
-      a factor with levels D4, D6, D7, L4, L6, L7, L8, L9, W4 and W9
-      giving the size and geometry of the mounting pad.
+      a factor with levels ‘⁠D4⁠’, ‘⁠D6⁠’, ‘⁠D7⁠’, ‘⁠L4⁠’, ‘⁠L6⁠’,
+      ‘⁠L7⁠’, ‘⁠L8⁠’, ‘⁠L9⁠’, ‘⁠W4⁠’ and ‘⁠W9⁠’ giving the size and
+      geometry of the mounting pad.
 
    ``Panel``
       ``1:3`` indicating the panel on a board being tested.

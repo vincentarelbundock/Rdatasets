@@ -22,7 +22,7 @@
    ``SystolicBP`` Systolic blood pressure (mm of Hg)
    ``Smoke``      ``Y``\ =smoker or ``N``\ =non-smoker
    ``Overwt``     ``1``\ =normal, ``2``\ =overweight, or ``3``\ =obese
-   \             
+   \              
    ============== ====================================================
 
    .. rubric:: Details

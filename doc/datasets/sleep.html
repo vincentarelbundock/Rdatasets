@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Student's Sleep Data</title>
+<!DOCTYPE html><html><head><title>R: Student's Sleep Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for sleep"><tr><td>sleep</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>sleep</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Student's Sleep Data</h2>
 
@@ -17,7 +27,7 @@ of sleep compared to control) on 10 patients.
 
 <h3>Usage</h3>
 
-<pre>sleep</pre>
+<pre><code class='language-R'>sleep</code></pre>
 
 
 <h3>Format</h3>
@@ -25,7 +35,7 @@ of sleep compared to control) on 10 patients.
 <p>A data frame with 20 observations on 3 variables.
 </p>
 
-<table summary="Rd table">
+<table>
 <tr>
  <td style="text-align: right;">
     [, 1] </td><td style="text-align: left;"> extra </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> increase in hours of sleep</td>
@@ -74,8 +84,7 @@ New York, NY: Wiley.
 
 <h3>Examples</h3>
 
-<pre>
-require(stats)
+<pre><code class='language-R'>require(stats)
 ## Student's paired t-test
 with(sleep,
      t.test(extra[group == 1],
@@ -88,7 +97,8 @@ stripchart(sleep1, method = "stack", xlab = "hours",
            main = "Sleep prolongation (n = 10)")
 boxplot(sleep1, horizontal = TRUE, add = TRUE,
         at = .6, pars = list(boxwex = 0.5, staplewex = 0.25))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

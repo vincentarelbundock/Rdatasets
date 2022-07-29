@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Bank manager recommendations based on sex</title>
+<!DOCTYPE html><html><head><title>R: Bank manager recommendations based on sex</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for sex_discrimination"><tr><td>sex_discrimination</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>sex_discrimination</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Bank manager recommendations based on sex</h2>
 
@@ -16,9 +26,8 @@
 
 <h3>Usage</h3>
 
-<pre>
-sex_discrimination
-</pre>
+<pre><code class='language-R'>sex_discrimination
+</code></pre>
 
 
 <h3>Format</h3>
@@ -44,15 +53,15 @@ personnel decisions. Journal of Applied Psychology 59(1):9-14.
 
 <h3>Examples</h3>
 
-<pre>
-
+<pre><code class='language-R'>
 library(ggplot2)
 
 table(sex_discrimination)
 
 ggplot(sex_discrimination, aes(y = sex, fill = decision)) +
   geom_bar(position = "fill")
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

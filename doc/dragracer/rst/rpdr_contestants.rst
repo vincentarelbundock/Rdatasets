@@ -11,7 +11,7 @@
       :name: description
 
    These are contestant-level data for RuPaul's Drag Race for all
-   available seasons (currently through Season 12). Data include all
+   available seasons (currently through Season 14). Data include all
    sorts of information.
 
    .. rubric:: Usage
@@ -24,7 +24,7 @@
    .. rubric:: Format
       :name: format
 
-   A data frame with 157 observations on the following 5 variables.
+   A data frame with the following 5 variables.
 
    ``season``
       a character vector for season

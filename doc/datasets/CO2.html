@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Carbon Dioxide Uptake in Grass Plants</title>
+<!DOCTYPE html><html><head><title>R: Carbon Dioxide Uptake in Grass Plants</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for CO2"><tr><td>CO2</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>CO2</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Carbon Dioxide Uptake in Grass Plants</h2>
 
@@ -18,7 +28,7 @@ experiment on the cold tolerance of the grass species
 
 <h3>Usage</h3>
 
-<pre>CO2</pre>
+<pre><code class='language-R'>CO2</code></pre>
 
 
 <h3>Format</h3>
@@ -54,7 +64,7 @@ giving the origin of the plant
 </dd>
 <dt>uptake</dt><dd>
 <p>a numeric vector of carbon dioxide uptake rates
-(<i>umol/m^2</i> sec).
+(<code class="reqn">\mu\mbox{mol}/m^2</code> sec).
 </p>
 </dd>
 </dl>
@@ -63,9 +73,9 @@ giving the origin of the plant
 
 <h3>Details</h3>
 
-<p>The <i>CO2</i> uptake of six plants from Quebec and six plants
+<p>The <code class="reqn">CO_2</code> uptake of six plants from Quebec and six plants
 from Mississippi was measured at several levels of ambient
-<i>CO2</i> concentration.  Half the plants of each type were
+<code class="reqn">CO_2</code> concentration.  Half the plants of each type were
 chilled overnight before the experiment was conducted.
 </p>
 <p>This dataset was originally part of package <code>nlme</code>, and that has
@@ -88,8 +98,7 @@ obtained from experiments involving repeated measures&rdquo;, <em>Ecology</em>,
 
 <h3>Examples</h3>
 
-<pre>
-require(stats); require(graphics)
+<pre><code class='language-R'>require(stats); require(graphics)
 
 coplot(uptake ~ conc | Plant, data = CO2, show.given = FALSE, type = "b")
 ## fit the data for the first plant
@@ -104,7 +113,8 @@ for (pp in levels(CO2$Plant)) {
 }
 ## check the coefficients by plant
 print(sapply(fmlist, coef), digits = 3)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

@@ -10,20 +10,22 @@
    .. rubric:: Description
       :name: description
 
-   The ``monica`` data frame has 6357 rows and 12 columns. Note that
-   ``mifem`` is the female subset of this data frame.
+   The ``monica`` data frame has 6357 rows and 12 columns. The dataset
+   ``mifem`` (1295 rows) is the subset that has data for females.
 
    .. rubric:: Usage
       :name: usage
 
    ::
 
-      monica
+        data(monica)
+        data(mifem)
+        
 
    .. rubric:: Format
       :name: format
 
-   This data frame contains the following columns:
+   Columns are:
 
    outcome
       mortality outcome, a factor with levels ``live``, ``dead``
@@ -80,11 +82,19 @@
       summary(monica)
       pause()
 
-      require(rpart)
+      library(rpart)
       monica.rpart <- rpart(outcome ~ ., data = monica, cp = 0.0025)
       plotcp(monica.rpart)
       printcp(monica.rpart)
       pause()
-
       monicab.rpart <- prune(monica.rpart, cp=0.006)
       print(monicab.rpart)
+      summary(mifem)
+      pause()
+      mifem.rpart <- rpart(outcome ~ ., data = mifem, cp = 0.0025)
+      plotcp(mifem.rpart)
+      printcp(mifem.rpart)
+      pause()
+
+      mifemb.rpart <- prune(mifem.rpart, cp=0.006)
+      print(mifemb.rpart)

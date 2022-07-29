@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Recreation Demand Data</title>
+<!DOCTYPE html><html><head><title>R: Recreation Demand Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for RecreationDemand"><tr><td>RecreationDemand</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>RecreationDemand</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Recreation Demand Data</h2>
 
@@ -17,7 +27,7 @@ based on a survey administered to 2,000 registered leisure boat owners in 23 cou
 
 <h3>Usage</h3>
 
-<pre>data("RecreationDemand")</pre>
+<pre><code class='language-R'>data("RecreationDemand")</code></pre>
 
 
 <h3>Format</h3>
@@ -54,9 +64,9 @@ based on a survey administered to 2,000 registered leisure boat owners in 23 cou
 
 <h3>Source</h3>
 
-<p>Journal of Business \&amp; Economic Statistics Data Archive. 
+<p>Journal of Business &amp; Economic Statistics Data Archive. 
 </p>
-<p><code style="white-space: pre;">http://www.amstat.org/publications/jbes/upload/index.cfm?fuseaction=ViewArticles&amp;pub=JBES&amp;issue=96-4-OCT</code>
+<p><code style="white-space: pre;">&#8288;http://www.amstat.org/publications/jbes/upload/index.cfm?fuseaction=ViewArticles&amp;pub=JBES&amp;issue=96-4-OCT&#8288;</code>
 </p>
 
 
@@ -66,7 +76,7 @@ based on a survey administered to 2,000 registered leisure boat owners in 23 cou
 Cambridge: Cambridge University Press.
 </p>
 <p>Gurmu, S. and Trivedi, P.K. (1996). Excess Zeros in Count Models for Recreational Trips.  
-<em>Journal of Business \&amp; Economic Statistics</em>,
+<em>Journal of Business &amp; Economic Statistics</em>,
 <b>14</b>, 469&ndash;477.
 </p>
 <p>Ozuna, T. and Gomez, I.A. (1995). Specification and Testing of Count Data Recreation Demand Functions.
@@ -83,7 +93,7 @@ Cambridge: Cambridge University Press.
 
 <h3>Examples</h3>
 
-<pre>
+<pre><code class='language-R'>
 data("RecreationDemand")
 
 ## Poisson model:
@@ -118,7 +128,8 @@ fm_hgnb &lt;- hurdle(trips ~ ., data = RecreationDemand, dist = "negbin")
 
 ## Note: quasi-complete separation
 with(RecreationDemand, table(trips &gt; 0, userfee))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

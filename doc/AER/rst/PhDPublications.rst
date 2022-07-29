@@ -48,8 +48,6 @@
 
    Online complements to Long (1997).
 
-   http://www.indiana.edu/~jslsoc/research_rm4cldvs.htm
-
    .. rubric:: References
       :name: references
 

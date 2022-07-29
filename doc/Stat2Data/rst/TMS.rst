@@ -23,7 +23,7 @@
    ``Yes``    Count of number of patients that were pain-free
    ``No``     Count of number of patients that had pain
    ``Trials`` Number of patients in the group
-   \         
+   \          
    ========== ===============================================
 
    .. rubric:: Details

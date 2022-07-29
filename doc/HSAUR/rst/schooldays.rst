@@ -70,7 +70,5 @@
 
    ::
 
-
         data("schooldays", package = "HSAUR")
         plot.design(schooldays)
-

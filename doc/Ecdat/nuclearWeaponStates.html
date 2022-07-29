@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Nations with nuclear weapons</title>
+<!DOCTYPE html><html><head><title>R: Nations with nuclear weapons</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for nuclearWeaponStates"><tr><td>nuclearWeaponStates</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>nuclearWeaponStates</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Nations with nuclear weapons</h2>
 
@@ -17,7 +27,7 @@ April 2019.
 
 <h3>Usage</h3>
 
-<pre>data(nuclearWeaponStates)</pre>
+<pre><code class='language-R'>data(nuclearWeaponStates)</code></pre>
 
 
 <h3>Format</h3>
@@ -172,7 +182,7 @@ going back to the work of
 offended by the refusal of the US to 
 support them in the 
 <a href="https://en.wikipedia.org/wiki/Suez_Crisis">Suez Crisis</a>.  
-On <a href="https://fas.org/nuke/guide/israel/nuke/farr.htm">France and Israel secretly agreed to
+On <a href="https://nuke.fas.org/guide/israel/nuke/farr.htm">France and Israel secretly agreed to
 collaborate in the development of nuclear
 weapons</a>.  
 
@@ -276,37 +286,37 @@ developing nuclear weapons until around
 </p>
 <p><code>firstTest</code> from <a href="https://en.wikipedia.org/wiki/List_of_states_with_nuclear_weapons">Wikipedia, &quot;List of states with nuclear weapons&quot;</a>
 </p>
-<p>US from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1438219?needAccess=true">Hans M. Kristensen &amp; Robert S. Norris (2018) United States nuclear forces,2018, Bulletin of the Atomic Scientists, 74:2, 120-131, DOI: 10.1080/00963402.2018.143821</a>
+<p>US from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1438219">Hans M. Kristensen &amp; Robert S. Norris (2018) United States nuclear forces,2018, Bulletin of the Atomic Scientists, 74:2, 120-131, DOI: 10.1080/00963402.2018.143821</a>
 </p>
-<p>Russia from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2019.1580891?needAccess=true">Hans M. Kristensen &amp; Matt Korda (2019) Russian nuclear forces, 2019, Bulletin of the Atomic Scientists, 75:2, 73-84, DOI: 10.1080/00963402.2019.1580891</a>
+<p>Russia from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2019.1580891">Hans M. Kristensen &amp; Matt Korda (2019) Russian nuclear forces, 2019, Bulletin of the Atomic Scientists, 75:2, 73-84, DOI: 10.1080/00963402.2019.1580891</a>
 </p>
 <p>UK from <a href="https://journals.sagepub.com/doi/pdf/10.1177/0096340213493260">Robert S. Norris and Hans M. Kristensen (2013) The British nuclear stockpile, 1953-2013, Bulletin of the Atomic Scientists, 69:4, 69-75s</a>
 </p>
 <p>France from <a href="https://journals.sagepub.com/doi/pdf/10.2968/064004012">Robert S. Norris &amp; Hans M. Kristensen (2008) French nuclear forces, 2008, Bulletin of the Atomic Scientists, 64:4, 52-54, 57</a>  
 </p>
-<p>China from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1486620?needAccess=true">Hans M. Kristensen &amp; Robert S. Norris (2018) Chinese nuclear forces, 2018,Bulletin of the Atomic Scientists, 74:4, 289-295</a>
+<p>China from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1486620">Hans M. Kristensen &amp; Robert S. Norris (2018) Chinese nuclear forces, 2018,Bulletin of the Atomic Scientists, 74:4, 289-295</a>
 </p>
-<p>India from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2017.1337998?needAccess=true"> Hans M. Kristensen &amp; Robert S. Norris (2017) Indian nuclear forces, 2017,Bulletin of the Atomic Scientists, 73:4, 205-209</a>
+<p>India from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2017.1337998"> Hans M. Kristensen &amp; Robert S. Norris (2017) Indian nuclear forces, 2017,Bulletin of the Atomic Scientists, 73:4, 205-209</a>
 </p>
 <p>Israel from <a href="https://journals.sagepub.com/doi/pdf/10.1177/0096340214555409">Hans M. Kristensen and Robert S. Norris (2014) Israeli nuclear weapons, 2014, Bulletin of the Atomic Scientists, 70:6, 97-115</a>
 </p>
-<p>Pakistan from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1507796?needAccess=true">Hans M. Kristensen, Robert S. Norris &amp; Julia Diamond (2018)Pakistani nuclear forces, 2018, Bulletin of the Atomic Scientists, 74:5, 348-358</a>
+<p>Pakistan from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1507796">Hans M. Kristensen, Robert S. Norris &amp; Julia Diamond (2018)Pakistani nuclear forces, 2018, Bulletin of the Atomic Scientists, 74:5, 348-358</a>
 </p>
-<p>North Korea from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2017.1413062?needAccess=true"> Hans M. Kristensen &amp; Robert S. Norris (2018) North Korean nuclear capabilities, 2018, Bulletin of the Atomic Scientists, 74:1, 41-51</a>
+<p>North Korea from <a href="https://www.tandfonline.com/doi/pdf/10.1080/00963402.2017.1413062"> Hans M. Kristensen &amp; Robert S. Norris (2018) North Korean nuclear capabilities, 2018, Bulletin of the Atomic Scientists, 74:1, 41-51</a>
 </p>
-<p>Derek Bolton (2012) North Korea's Nuclear Program (2012-08, American Security Program, accessed 2020-07-15) <a href="https://www.americansecurityproject.org/ASP%20Reports/Ref%200072%20-%20North%20Korea’s%20Nuclear%20Program%20.pdf">https://www.americansecurityproject.org/ASP%20Reports/Ref%200072%20-%20North%20Korea’s%20Nuclear%20Program%20.pdf</a>
+<p>Derek Bolton (2012) North Korea's Nuclear Program (2012-08, American Security Program, accessed 2020-07-15) <a href="https://www.americansecurityproject.org/ASP%20Reports/Ref%200072%20-%20North%20Korea%E2%80%99s%20Nuclear%20Program%20.pdf">https://www.americansecurityproject.org/ASP%20Reports/Ref%200072%20-%20North%20Korea%E2%80%99s%20Nuclear%20Program%20.pdf</a>
 </p>
 
 
 <h3>Examples</h3>
 
-<pre>
-data(nuclearWeaponStates)
+<pre><code class='language-R'>data(nuclearWeaponStates)
 plot(yearsSinceLastFirstTest~firstTest, 
     nuclearWeaponStates, type='h', xlab='', ylab='')
 with(nuclearWeaponStates, 
   text(firstTest, yearsSinceLastFirstTest, ctry))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Global Terrorism Database yearly summaries</title>
+<!DOCTYPE html><html><head><title>R: Global Terrorism Database yearly summaries</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for terrorism"><tr><td>terrorism</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>terrorism</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>
 Global Terrorism Database yearly summaries
@@ -37,11 +47,10 @@ the same period.
 
 <h3>Usage</h3>
 
-<pre>
-  data(terrorism)
+<pre><code class='language-R'>  data(terrorism)
   data(incidents.byCountryYr)
   data(nkill.byCountryYr)
-</pre>
+</code></pre>
 
 
 <h3>Format</h3>
@@ -267,8 +276,8 @@ US
 <p><code>USdeaths</code> were computed by summing 
 across age groups in &quot;Deaths_5x1.txt&quot; for 
 the United States, downloaded from 
-<a href="https://www.mortality.org/cgi-bin/hmd/country.php?cntr=USA&amp;level=1">https://www.mortality.org/cgi-bin/hmd/country.php?cntr=USA&amp;level=1</a> from the Human 
-Mortality Database;  see sources below.  
+<a href="https://www.mortality.org/Country/Country?cntr=USA">https://www.mortality.org/Country/Country?cntr=USA</a> 
+from the Human Mortality Database;  see sources below.  
 </p>
 </dd>
 <dt>kill.pmp, kill.pmp.us</dt><dd>
@@ -356,8 +365,7 @@ and why it matters&quot;</a>,
 
 <h3>Examples</h3>
 
-<pre>
-data(terrorism)
+<pre><code class='language-R'>data(terrorism)
 ##
 ## plot deaths per million population 
 ##
@@ -425,7 +433,8 @@ axis(2, sqrt(i.nk), i.nk, las=1)
 ip &lt;- paste(pch., names(maxDeaths[omax[1:8]]))
 legend('topleft', ip, cex=.55, 
        col=cols, text.col=cols)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

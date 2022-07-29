@@ -21,7 +21,7 @@
    ======== ============================================
    ``Year`` Year of the Olympics (1900 - 2008)
    ``Gold`` Winning men's long jump distance (in meters)
-   \       
+   \        
    ======== ============================================
 
    .. rubric:: Details

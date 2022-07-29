@@ -19,7 +19,7 @@
 
    On the assumption that male and female births were equally likely, he
    showed that the probability of observing 82 years with more males
-   than females was vanishingly small (*~ 4.14 x 10^{-25}*). He used
+   than females was vanishingly small (``~ 4.14 x 10^{-25}``). He used
    this to argue that a nearly constant birth ratio > 1 could be
    interpreted to show the guiding hand of a devine being. The data set
    adds variables of deaths from the plague and total mortality obtained

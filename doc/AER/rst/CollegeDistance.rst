@@ -94,8 +94,8 @@
       :name: references
 
    Rouse, C.E. (1995). Democratization or Diversion? The Effect of
-   Community Colleges on Educational Attainment. *Journal of Business
-   \\& Economic Statistics*, **12**, 217–224.
+   Community Colleges on Educational Attainment. *Journal of Business &
+   Economic Statistics*, **12**, 217–224.
 
    Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
    2nd ed. Boston: Addison Wesley.

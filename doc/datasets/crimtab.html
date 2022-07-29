@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Student's 3000 Criminals Data</title>
+<!DOCTYPE html><html><head><title>R: Student's 3000 Criminals Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for crimtab"><tr><td>crimtab</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>crimtab</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Student's 3000 Criminals Data</h2>
 
@@ -17,13 +27,13 @@ sentences in the chief prisons of England and Wales.
 
 <h3>Usage</h3>
 
-<pre>crimtab</pre>
+<pre><code class='language-R'>crimtab</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A <code>table</code> object of  <code>integer</code> counts, of dimension
-<i>42 * 22</i> with a total count, <code>sum(crimtab)</code> of
+<code class="reqn">42 \times 22</code> with a total count, <code>sum(crimtab)</code> of
 3000.
 </p>
 <p>The 42 <code>rownames</code> (<code>"9.4"</code>, <code>"9.5"</code>, ...)
@@ -60,8 +70,8 @@ giving us the <em>z</em> of Section III.&rdquo;
 In the MacDonell table, the middle finger lengths were given in mm
 and the heights in feet/inches intervals, they are both converted into
 cm here.  The midpoints of intervals were used, e.g., where MacDonell
-has <i>4' 7''9/16 -- 8''9/16</i>, we have 142.24 which is 2.54*56 =
-2.54*(<i>4' 8''</i>).
+has <code class="reqn">4' 7''9/16 -- 8''9/16</code>, we have 142.24 which is 2.54*56 =
+2.54*(<code class="reqn">4' 8''</code>).
 </p>
 <p>MacDonell credited the source of data (page 178) as follows:
 <em>The data on which the memoir is based were obtained, through the
@@ -86,24 +96,23 @@ The metric system of identification of criminals, as used in in Great
 Britain and Ireland.
 <em>The Journal of the Anthropological Institute of Great Britain
 and Ireland</em>, <b>30</b>, 161&ndash;198.
-doi: <a href="https://doi.org/10.2307/2842627">10.2307/2842627</a>.
+<a href="https://doi.org/10.2307/2842627">doi:10.2307/2842627</a>.
 </p>
 <p>MacDonell, W.R. (1902).
 On criminal anthropometry and the identification of criminals.
 <em>Biometrika</em>, <b>1</b>(2), 177&ndash;227.
-doi: <a href="https://doi.org/10.2307/2331487">10.2307/2331487</a>.
+<a href="https://doi.org/10.2307/2331487">doi:10.2307/2331487</a>.
 </p>
 <p>Student (1908).
 The probable error of a mean.
 <em>Biometrika</em>, <b>6</b>, 1&ndash;25.
-doi: <a href="https://doi.org/10.2307/2331554">10.2307/2331554</a>.
+<a href="https://doi.org/10.2307/2331554">doi:10.2307/2331554</a>.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre>
-require(stats)
+<pre><code class='language-R'>require(stats)
 dim(crimtab)
 utils::str(crimtab)
 ## for nicer printing:
@@ -151,7 +160,8 @@ require(grDevices); require(graphics)
 hist(x = zobs, probability = TRUE, xlab = "Student's z",
      col = grey(0.8), border = grey(0.5),
      main = "Distribution of Student's z score  for 'crimtab' data")
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

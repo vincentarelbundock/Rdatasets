@@ -69,8 +69,8 @@
    Harvey, A. C. and Durbin, J. (1986). The effects of seat belt
    legislation on British road casualties: A case study in structural
    time series modelling. *Journal of the Royal Statistical Society*
-   series A, **149**, 187–227. doi:
-   `10.2307/2981553 <https://doi.org/10.2307/2981553>`__.
+   series A, **149**, 187–227.
+   `doi:10.2307/2981553 <https://doi.org/10.2307/2981553>`__.
 
    .. rubric:: Examples
       :name: examples

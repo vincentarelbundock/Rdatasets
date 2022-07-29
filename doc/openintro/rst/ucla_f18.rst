@@ -76,7 +76,6 @@
 
    ::
 
-
       nrow(ucla_f18)
       table(ucla_f18$special_topic)
       subset(ucla_f18, is.na(course_numeric))

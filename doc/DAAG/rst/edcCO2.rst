@@ -39,7 +39,7 @@
    .. rubric:: Source
       :name: source
 
-   http://www.ncdc.noaa.gov/paleo/icecore/antarctica/domec/domec_epica_data.html
+   https://www.ncei.noaa.gov/products/paleoclimatology/ice-core
 
    .. rubric:: References
       :name: references

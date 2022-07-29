@@ -43,7 +43,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(ppp_201503, aes(x = party, fill = taxes)) +

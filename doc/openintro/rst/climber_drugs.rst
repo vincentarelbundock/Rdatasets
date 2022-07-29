@@ -68,4 +68,3 @@
       climber_drugs %>%
         group_by(substance) %>%
         summarize(prop = n() / 154)
-

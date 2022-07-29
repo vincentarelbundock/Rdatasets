@@ -47,7 +47,6 @@
 
    ::
 
-
       data(pew_energy_2018)
       lapply(pew_energy_2018, head)
       lapply(pew_energy_2018, length)

@@ -5,8 +5,8 @@
    ======== ===============
 
    .. rubric:: John F. W. Herschel's Data on the Orbit of the Twin Stars
-      *γ* *Virginis*
-      :name: john-f.-w.-herschels-data-on-the-orbit-of-the-twin-stars-γ-virginis
+      ``\gamma`` *Virginis*
+      :name: john-f.-w.-herschels-data-on-the-orbit-of-the-twin-stars-gamma-virginis
 
    .. rubric:: Description
       :name: description
@@ -19,15 +19,15 @@
    In the process, he invented the scatterplot, and the use of visual
    smoothing to obtain a reliable curve that surpassed the accuracy of
    individual observations (Friendly & Denis, 2005). His data on the
-   recordings of the twin stars *γ* *Virginis* provide an accessible
-   example of his methods.
+   recordings of the twin stars ``\gamma`` *Virginis* provide an
+   accessible example of his methods.
 
    .. rubric:: Usage
       :name: usage
 
    ::
 
-          data("Virginis")
+        data("Virginis")
           data("Virginis.interp")
 
    .. rubric:: Format
@@ -69,7 +69,7 @@
       recorded position angle between the two stars, a numeric vector
 
    ``distance``
-      separation distance, calculated *1/sqrt(velocity)*
+      separation distance, calculated ``1/sqrt(velocity)``
 
    ``velocity``
       angular velocity, calculated as the instantaneous slopes of
@@ -87,7 +87,8 @@
    In the ``notes`` and ``authority`` variables, ``"H"`` refers to
    William Herschel (John's farther, the discoverer of the planet
    Uranus), ``"h"`` refers to John Herschel himself, and ``"Sigma"``,
-   rendered *Σ* in the table on p. 35 refers to Joseph Fraunhofer.
+   rendered ``\Sigma`` in the table on p. 35 refers to Joseph
+   Fraunhofer.
 
    The data in ``Virginis.interp`` come from Table 1 on p. 190 of the
    supplementary paper.
@@ -130,4 +131,3 @@
       # The data points, and indication of their uncertainty
       points(posangle ~ year, data=Virginis, pch=16)
       points(posangle ~ year, data=Virginis, cex=weight/2)
-

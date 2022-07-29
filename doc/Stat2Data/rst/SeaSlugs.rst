@@ -20,7 +20,7 @@
    =========== ==================================================
    ``Time``    Minutes after tide come in
    ``Percent`` Proportion of 15 sea slug larvae that metamorphose
-   \          
+   \           
    =========== ==================================================
 
    .. rubric:: Details

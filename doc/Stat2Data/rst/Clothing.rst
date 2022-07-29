@@ -17,19 +17,27 @@
 
    A data frame with 60 observations on the following 8 variables.
 
-   ============
-   ================================================================================
-   ``ID``       Case ID
-   ``Amount``   Net dollar amount spent by customers in their latest purchase from this retailer
-   ``Recency``  Number of months since the last purchase
-   ``Freq12``   Number of purchases in the last 12 months
-   ``Dollar12`` Dollar amount of purchases in the last 12 months
-   ``Freq24``   Number of purchases in the last 24 months
-   ``Dollar24`` Dollar amount of purchases in the last 24 months
-   ``Card``     1 for customers who have a private-label credit card with the retailer, 0 if not
-   \           
-   ============
-   ================================================================================
+   +--------------+------------------------------------------------------+
+   | ``ID``       | Case ID                                              |
+   +--------------+------------------------------------------------------+
+   | ``Amount``   | Net dollar amount spent by customers in their latest |
+   |              | purchase from this retailer                          |
+   +--------------+------------------------------------------------------+
+   | ``Recency``  | Number of months since the last purchase             |
+   +--------------+------------------------------------------------------+
+   | ``Freq12``   | Number of purchases in the last 12 months            |
+   +--------------+------------------------------------------------------+
+   | ``Dollar12`` | Dollar amount of purchases in the last 12 months     |
+   +--------------+------------------------------------------------------+
+   | ``Freq24``   | Number of purchases in the last 24 months            |
+   +--------------+------------------------------------------------------+
+   | ``Dollar24`` | Dollar amount of purchases in the last 24 months     |
+   +--------------+------------------------------------------------------+
+   | ``Card``     | 1 for customers who have a private-label credit card |
+   |              | with the retailer, 0 if not                          |
+   +--------------+------------------------------------------------------+
+   |              |                                                      |
+   +--------------+------------------------------------------------------+
 
    .. rubric:: Details
       :name: details
