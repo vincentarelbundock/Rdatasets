@@ -30,11 +30,12 @@
       Top speed of lizard, meters per second.
 
    common_name
-      Common name: ``Western fence lizard`` and ``Sagebrush lizard``.
+      Common name: ``⁠Western fence lizard⁠`` and
+      ``⁠Sagebrush lizard⁠``.
 
    scientific_name
-      Scientific name (Genus and species): ``Sceloporus occidentalis``
-      and ``Sceloporus graciosus``.
+      Scientific name (Genus and species): ``⁠Sceloporus occidentalis⁠``
+      and ``⁠Sceloporus graciosus⁠``.
 
    .. rubric:: Source
       :name: source

@@ -55,4 +55,3 @@
    ::
 
       data(pancreatic2)
-

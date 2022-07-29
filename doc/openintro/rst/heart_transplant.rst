@@ -78,7 +78,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(heart_transplant, aes(x = transplant, y = survtime)) +

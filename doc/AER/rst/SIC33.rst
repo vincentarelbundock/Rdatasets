@@ -38,7 +38,7 @@
 
    Online complements to Greene (2003). Table F6.1.
 
-   http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
    .. rubric:: References
       :name: references
@@ -56,7 +56,7 @@
 
    ::
 
-      data("SIC33")
+      data("SIC33", package = "AER")
 
       ## Example 6.2 in Greene (2003)
       ## Translog model
@@ -79,10 +79,9 @@
       linearHypothesis(fm_cb, "labor + capital = 1")
 
       ## 3D Visualization
-      if(require("scatterplot3d")) {
+      library("scatterplot3d")
         s3d <- scatterplot3d(log(SIC33)[,c(2, 3, 1)], pch = 16)
         s3d$plane3d(fm_cb, lty.box = "solid", col = 4)
-      }
 
       ## Interactive 3D Visualization
 
@@ -98,4 +97,3 @@
         z <- outer(x, y, function(x, y) predict(fm_cb, data.frame(labor = x, capital = y)))
         rgl.surface(x, y, z, color = "blue", alpha = 0.5, shininess = 128)
       }
-

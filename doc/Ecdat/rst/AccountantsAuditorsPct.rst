@@ -73,9 +73,9 @@
    1975) <https://www.census.gov/library/publications/1975/compendia/hist_stats_colonial-1970.html>`__
 
    Steven Ruggles, Sarah Flood, Ronald Goeken, Josiah Grover, Erin
-   Meyer, Jose Pacas, and Matthew Sobek (2018) `IPUMS USA: Version 8.0
-   [dataset]. Minneapolis, MN:
-   IPUMS <https://doi.org/10.18128/D010.V8.0>`__.
+   Meyer, Jose Pacas, and Matthew Sobek (2018) IPUMS USA: Version 8.0
+   [dataset]. Minneapolis, MN: IPUMS.
+   `doi:10.18128/D010.V8.0 <https://doi.org/10.18128/D010.V8.0>`__
 
    Matthew Sobek (2006) Chapter Ba. "Labor Occupations" in Susan B.
    Carter, ed., `Historical Statistics of the United States, Cambridge

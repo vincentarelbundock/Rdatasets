@@ -55,15 +55,15 @@
    Cited from the reference article: *The dataset contains measurements
    of properties of pulp fibers and the paper made from them. The aim is
    to investigate relations between pulp fiber properties and the
-   resulting paper properties. The dataset contains n = 62 measurements
-   of the following four pulp fiber characteristics: arithmetic fiber
-   length, long fiber fraction, fine fiber fraction, and zero span
-   tensile. The four paper properties that have been measured are
-   breaking length, elastic modulus, stress at failure, and burst
-   strength.*
+   resulting paper properties. The dataset contains ``n = 62``
+   measurements of the following four pulp fiber characteristics:
+   arithmetic fiber length, long fiber fraction, fine fiber fraction,
+   and zero span tensile. The four paper properties that have been
+   measured are breaking length, elastic modulus, stress at failure, and
+   burst strength.*
 
-   The goal is to predict the *q = 4* paper properties from the *p = 4*
-   fiber characteristics.
+   The goal is to predict the ``q = 4`` paper properties from the
+   ``p = 4`` fiber characteristics.
 
    .. rubric:: Author(s)
       :name: authors

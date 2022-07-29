@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Effect of erythromycin on mixed sewage microorganisms</title>
+<!DOCTYPE html><html><head><title>R: Effect of erythromycin on mixed sewage microorganisms</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for etmotc"><tr><td>etmotc</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>etmotc</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Effect of erythromycin on mixed sewage microorganisms</h2>
 
@@ -17,7 +27,7 @@ increasing concentrations of the antibiotic erythromycin (mg/l).
 
 <h3>Usage</h3>
 
-<pre>data(etmotc)</pre>
+<pre><code class='language-R'>data(etmotc)</code></pre>
 
 
 <h3>Format</h3>
@@ -62,8 +72,7 @@ Ecotoxicity of mixtures of antibiotics used in aquacultures,
 
 <h3>Examples</h3>
 
-<pre>
-
+<pre><code class='language-R'>
 etmotc.m1&lt;-drm(rgr1~dose1, data=etmotc[1:15,], fct=LL.4())
 plot(etmotc.m1)
 modelFit(etmotc.m1)
@@ -79,7 +88,8 @@ plot(etmotc.m3, add = TRUE)
 modelFit(etmotc.m3)
 summary(etmotc.m3)
 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

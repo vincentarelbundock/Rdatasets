@@ -99,7 +99,6 @@
 
    ::
 
-
       ## Not run: 
       # Compare plm's Grunfeld data to Baltagi's (2001) Grunfeld data:
         data("Grunfeld", package="plm")
@@ -109,4 +108,3 @@
         compare::compare(Grunfeld, Grunfeld_baltagi2001, allowAll = T) # same data set
         
       ## End(Not run)
-

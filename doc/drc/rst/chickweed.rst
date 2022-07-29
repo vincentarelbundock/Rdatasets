@@ -77,7 +77,6 @@
 
    ::
 
-
       ## Incorrect analysis using a logistic regression model
       ## (treating event times as binomial data)
       ## The argument "type" specifies that binomial data are supplied 
@@ -155,4 +154,3 @@
       #nrpred <- predict(chickweed.m0b, data.frame(time=0:340), interval="confidence")
       #lines(0:340, nrpred[,2], lty=2, lwd=2, col="darkgray")
       #lines(0:340, nrpred[,3], lty=2, lwd=2, col="darkgray")
-

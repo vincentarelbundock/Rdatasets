@@ -55,4 +55,3 @@
       stripchart(distance.traveled ~ starting.point, vertical=TRUE, pch=15,
                  xlab = "Distance up ramp", ylab="Distance traveled")
       detach(modelcars)
-

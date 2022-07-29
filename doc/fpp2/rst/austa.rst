@@ -27,6 +27,4 @@
 
    ::
 
-
       autoplot(austa)
-

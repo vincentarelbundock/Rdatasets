@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: UK Smoking Data</title>
+<!DOCTYPE html><html><head><title>R: UK Smoking Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for smoking"><tr><td>smoking</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>smoking</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>UK Smoking Data</h2>
 
@@ -18,9 +28,8 @@ consumed.
 
 <h3>Usage</h3>
 
-<pre>
-smoking
-</pre>
+<pre><code class='language-R'>smoking
+</code></pre>
 
 
 <h3>Format</h3>
@@ -80,8 +89,7 @@ and <code>Wales</code></p>
 
 <h3>Examples</h3>
 
-<pre>
-
+<pre><code class='language-R'>
 library(ggplot2)
 
 ggplot(smoking, aes(x = amt_weekends)) +
@@ -95,7 +103,8 @@ ggplot(smoking, aes(x = gender, fill = smoke)) +
 
 ggplot(smoking, aes(x = marital_status, fill = smoke)) +
   geom_bar(position = "fill")
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

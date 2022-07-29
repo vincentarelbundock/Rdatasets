@@ -60,7 +60,7 @@
 
    Data on 180 economic journals, collected in particular for analyzing
    journal pricing. See also
-   http://www.econ.ucsb.edu/~tedb/Journals/jpricing.html for general
+   https://econ.ucsb.edu/~tedb/Journals/jpricing.html for general
    information on this topic as well as a more up-to-date version of the
    data set. This version is taken from Stock and Watson (2007).
 

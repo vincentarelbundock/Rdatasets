@@ -28,7 +28,5 @@
 
    ::
 
-
       data(ausbeer)
       ggseasonplot(ausbeer)
-

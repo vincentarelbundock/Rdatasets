@@ -25,6 +25,4 @@
 
    ::
 
-
       autoplot(mens400)
-

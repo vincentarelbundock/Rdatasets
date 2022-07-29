@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Data from heavy metal mixture experiments</title>
+<!DOCTYPE html><html><head><title>R: Data from heavy metal mixture experiments</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for metals"><tr><td>metals</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>metals</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>
 Data from heavy metal mixture experiments
@@ -18,7 +28,7 @@ Data from heavy metal mixture experiments
 
 <h3>Usage</h3>
 
-<pre>data("metals")</pre>
+<pre><code class='language-R'>data("metals")</code></pre>
 
 
 <h3>Format</h3>
@@ -53,8 +63,7 @@ Defining an additivity framework for mixture research in inducible whole-cell bi
 
 <h3>Examples</h3>
 
-<pre>
-## One example from the paper by Martin-Betancor et al (2015)
+<pre><code class='language-R'>## One example from the paper by Martin-Betancor et al (2015)
 
 ## Figure 2
 
@@ -86,7 +95,8 @@ c(-5, -10, -20, -30, -40, -50, -60, -70, -80, -90, -99, 99, 90, 80, 70, 60, 50, 
 ## Reproducing the FA-cI plot shown in Figure 5d
 plotFACI(CuZn.effects, "ED", ylim = c(0.8, 1.6), showPoints = TRUE)
 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

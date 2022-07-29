@@ -11,12 +11,12 @@
       :name: description
 
    Five rabbits were studied on two occasions, after treatment with
-   saline (control) and after treatment with the *5-HT_3* antagonist MDL
-   72222. After each treatment ascending doses of phenylbiguanide were
-   injected intravenously at 10 minute intervals and the responses of
-   mean blood pressure measured. The goal was to test whether the
+   saline (control) and after treatment with the ``5-HT_3`` antagonist
+   MDL 72222. After each treatment ascending doses of phenylbiguanide
+   were injected intravenously at 10 minute intervals and the responses
+   of mean blood pressure measured. The goal was to test whether the
    cardiogenic chemoreflex elicited by phenylbiguanide depends on the
-   activation of *5-HT_3* receptors.
+   activation of ``5-HT_3`` receptors.
 
    .. rubric:: Usage
       :name: usage
@@ -40,7 +40,7 @@
       label of run (``"C1"`` to ``"C5"``, then ``"M1"`` to ``"M5"``).
 
    ``Treatment``
-      placebo or the *5-HT_3* antagonist MDL 72222.
+      placebo or the ``5-HT_3`` antagonist MDL 72222.
 
    ``Animal``
       label of animal used (``"R1"`` to ``"R5"``).

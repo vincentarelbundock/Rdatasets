@@ -1,36 +1,43 @@
 .. container::
 
-   ===== ===============
-   mifem R Documentation
-   ===== ===============
+   ====== ===============
+   monica R Documentation
+   ====== ===============
 
-   .. rubric:: Mortality Outcomes for Females Suffering Myocardial
-      Infarction
-      :name: mortality-outcomes-for-females-suffering-myocardial-infarction
+   .. rubric:: WHO Monica Data
+      :name: who-monica-data
 
    .. rubric:: Description
       :name: description
 
-   The ``mifem`` data frame has 1295 rows and 10 columns. This is the
-   female subset of the 'monica' data frame
+   The ``monica`` data frame has 6357 rows and 12 columns. The dataset
+   ``mifem`` (1295 rows) is the subset that has data for females.
 
    .. rubric:: Usage
       :name: usage
 
    ::
 
-      mifem
+        data(monica)
+        data(mifem)
+        
 
    .. rubric:: Format
       :name: format
 
-   This data frame contains the following columns:
+   Columns are:
 
    outcome
       mortality outcome, a factor with levels ``live``, ``dead``
 
    age
       age at onset
+
+   sex
+      m = male, f = female
+
+   hosp
+      y = hospitalized, n = not hospitalized
 
    yronset
       year of onset
@@ -72,10 +79,18 @@
    ::
 
       print("CART - Example 10.7")
-      summary(mifem)
+      summary(monica)
       pause()
 
-      require(rpart)
+      library(rpart)
+      monica.rpart <- rpart(outcome ~ ., data = monica, cp = 0.0025)
+      plotcp(monica.rpart)
+      printcp(monica.rpart)
+      pause()
+      monicab.rpart <- prune(monica.rpart, cp=0.006)
+      print(monicab.rpart)
+      summary(mifem)
+      pause()
       mifem.rpart <- rpart(outcome ~ ., data = mifem, cp = 0.0025)
       plotcp(mifem.rpart)
       printcp(mifem.rpart)

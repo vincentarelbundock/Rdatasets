@@ -23,8 +23,8 @@
    .. rubric:: Format
       :name: format
 
-   A ``table`` object of ``integer`` counts, of dimension *42 \* 22*
-   with a total count, ``sum(crimtab)`` of 3000.
+   A ``table`` object of ``integer`` counts, of dimension
+   ``42 \times 22`` with a total count, ``sum(crimtab)`` of 3000.
 
    The 42 ``rownames`` (``"9.4"``, ``"9.5"``, ...) correspond to
    midpoints of intervals of finger lengths whereas the 22 column names
@@ -56,8 +56,8 @@
    the MacDonell table, the middle finger lengths were given in mm and
    the heights in feet/inches intervals, they are both converted into cm
    here. The midpoints of intervals were used, e.g., where MacDonell has
-   *4' 7''9/16 -- 8''9/16*, we have 142.24 which is 2.54*56 =
-   2.54*(\ *4' 8''*).
+   ``4' 7''9/16 -- 8''9/16``, we have 142.24 which is 2.54*56 =
+   2.54*(``4' 8''``).
 
    MacDonell credited the source of data (page 178) as follows: *The
    data on which the memoir is based were obtained, through the kindness
@@ -78,14 +78,14 @@
    Garson, J.G. (1900). The metric system of identification of
    criminals, as used in in Great Britain and Ireland. *The Journal of
    the Anthropological Institute of Great Britain and Ireland*, **30**,
-   161–198. doi: `10.2307/2842627 <https://doi.org/10.2307/2842627>`__.
+   161–198. `doi:10.2307/2842627 <https://doi.org/10.2307/2842627>`__.
 
    MacDonell, W.R. (1902). On criminal anthropometry and the
-   identification of criminals. *Biometrika*, **1**\ (2), 177–227. doi:
-   `10.2307/2331487 <https://doi.org/10.2307/2331487>`__.
+   identification of criminals. *Biometrika*, **1**\ (2), 177–227.
+   `doi:10.2307/2331487 <https://doi.org/10.2307/2331487>`__.
 
    Student (1908). The probable error of a mean. *Biometrika*, **6**,
-   1–25. doi: `10.2307/2331554 <https://doi.org/10.2307/2331554>`__.
+   1–25. `doi:10.2307/2331554 <https://doi.org/10.2307/2331554>`__.
 
    .. rubric:: Examples
       :name: examples

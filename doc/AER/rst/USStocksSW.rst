@@ -4,7 +4,7 @@
    USStocksSW R Documentation
    ========== ===============
 
-   .. rubric:: Monthly US Stock Returns (1931–2002, Stock \\& Watson)
+   .. rubric:: Monthly US Stock Returns (1931–2002, Stock & Watson)
       :name: monthly-us-stock-returns-19312002-stock-watson
 
    .. rubric:: Description

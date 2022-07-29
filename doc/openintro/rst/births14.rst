@@ -56,7 +56,7 @@
 
    lowbirthweight
       Whether baby was classified as low birthweight (``low``) or not
-      (``not low``).
+      (``⁠not low⁠``).
 
    sex
       Sex of the baby, ``female`` or ``male``.
@@ -65,10 +65,10 @@
       Status of the mother as a ``nonsmoker`` or a ``smoker``.
 
    marital
-      Whether mother is ``married`` or ``not married`` at birth.
+      Whether mother is ``married`` or ``⁠not married⁠`` at birth.
 
    whitemom
-      Whether mom is ``white`` or ``not white``.
+      Whether mom is ``white`` or ``⁠not white⁠``.
 
    .. rubric:: Source
       :name: source
@@ -84,7 +84,6 @@
       :name: examples
 
    ::
-
 
       library(ggplot2)
 

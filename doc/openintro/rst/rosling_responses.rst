@@ -53,7 +53,6 @@
 
    ::
 
-
       frac_correct <- tapply(
         rosling_responses$response == "correct",
         rosling_responses$question,

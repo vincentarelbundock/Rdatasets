@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Tobin's Tobit data</title>
+<!DOCTYPE html><html><head><title>R: Tobin's Tobit data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for tobin"><tr><td>tobin</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>tobin</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Tobin's Tobit data</h2>
 
@@ -17,9 +27,9 @@
 
 <h3>Usage</h3>
 
-<pre>tobin
+<pre><code class='language-R'>tobin
 data(tobin, package="survival")
-</pre>
+</code></pre>
 
 
 <h3>Format</h3>
@@ -48,13 +58,13 @@ Estimation of relationships for limited dependent variables.
 
 <h3>Examples</h3>
 
-<pre>
-tfit &lt;- survreg(Surv(durable, durable&gt;0, type='left') ~age + quant,
+<pre><code class='language-R'>tfit &lt;- survreg(Surv(durable, durable&gt;0, type='left') ~age + quant,
                 data=tobin, dist='gaussian')
 
 predict(tfit,type="response")
 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

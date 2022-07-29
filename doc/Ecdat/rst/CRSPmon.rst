@@ -32,7 +32,7 @@
 
    ge
       the return for General Electric,
-      `PERMNO <http://www.crsp.org/products/documentation/crsp-link>`__
+      `PERMNO <https://www.crsp.org/products/documentation/crsp-link>`__
       12060
 
    ibm
@@ -49,7 +49,7 @@
 
    Center for Research in Security Prices, Graduate School of Business,
    University of Chicago, 725 South Wells - Suite 800, Chicago, Illinois
-   60607, http://www.crsp.org.
+   60607, https://www.crsp.org.
 
    .. rubric:: References
       :name: references

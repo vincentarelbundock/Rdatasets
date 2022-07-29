@@ -71,7 +71,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(births, aes(x = smoke, y = weight)) +

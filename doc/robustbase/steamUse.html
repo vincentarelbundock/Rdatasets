@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Steam Usage Data (Excerpt)</title>
+<!DOCTYPE html><html><head><title>R: Steam Usage Data (Excerpt)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for steamUse"><tr><td>steamUse</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>steamUse</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Steam Usage Data (Excerpt)</h2>
 
@@ -19,7 +29,7 @@ mean outside temperature per month (<code>Temperature</code>).
 
 <h3>Usage</h3>
 
-<pre>data("steamUse", package="robustbase")</pre>
+<pre><code class='language-R'>data("steamUse", package="robustbase")</code></pre>
 
 
 <h3>Format</h3>
@@ -28,7 +38,7 @@ mean outside temperature per month (<code>Temperature</code>).
 </p>
 
 <dl>
-<dt><code>Steam</code>:</dt><dd><p>regression response <i>Y</i>, the poinds of
+<dt><code>Steam</code>:</dt><dd><p>regression response <code class="reqn">Y</code>, the poinds of
 steam used monthly.</p>
 </dd>
 <dt><code>fattyAcid</code>:</dt><dd><p>pounds of Real Fatty Acid in storage per month.</p>
@@ -38,13 +48,13 @@ steam used monthly.</p>
 <dt><code>wind</code>:</dt><dd><p>average wind velocity in miles per hour (a numeric vector).</p>
 </dd>
 <dt><code>days</code>:</dt><dd><p>an integer vector with number of days of that
-month, i.e., in <i>28..31</i>.</p>
+month, i.e., in <code class="reqn">28..31</code>.</p>
 </dd>
 <dt><code>op.days</code>:</dt><dd><p>the number of operating days for the given
 month (integer).</p>
 </dd>
 <dt><code>freeze.d</code>:</dt><dd><p>the number of days below
-32 degrees Fahrenheit (<i>= 0</i>°C (C=Celsius) <i>=</i>
+32 degrees Fahrenheit (<code class="reqn">= 0</code>°C (C=Celsius) <code class="reqn">=</code>
 freezing temperature of water).</p>
 </dd>
 <dt><code>temperature</code>:</dt><dd><p>a numeric vector of average outside temperature in
@@ -85,8 +95,7 @@ names <code>x1 .. x10</code> (<code>x9</code> being <code>wind^2</code>, hence e
 
 <h3>Examples</h3>
 
-<pre>
-## Not run: 
+<pre><code class='language-R'>## Not run: 
 if(require("aprean3")) { # show how  'steamUse'  is related to 'dsa01a'
   stm &lt;- dsa01a
   names(stm) &lt;- c("Steam", "fattyAcid", "glycerine", "wind",
@@ -116,7 +125,8 @@ summary(fm1 &lt;- lmrob(Steam ~ temperature + op.days, data=steamUse))
 summary(fm.14 &lt;- lmrob(Steam ~ temperature + op.days, data=steamUse,
          setting="KS2014"))
 pairs(Steam ~ temperature+op.days, steamUse)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

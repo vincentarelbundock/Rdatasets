@@ -72,7 +72,7 @@
    randomly selected US households are surveyed each month. The sample
    is chosen by randomly selecting addresses from a database. Details
    can be found in the Handbook of Labor Statistics and is described on
-   the Bureau of Labor Statistics website (http://www.bls.gov/).
+   the Bureau of Labor Statistics website (https://www.bls.gov/).
 
    The survey conducted each March is more detailed than in other months
    and asks questions about earnings during the previous year. The data

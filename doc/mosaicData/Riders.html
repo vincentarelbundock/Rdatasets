@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Volume of Users of a Massachusetts Rail Trail</title>
+<!DOCTYPE html><html><head><title>R: Volume of Users of a Massachusetts Rail Trail</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for Riders"><tr><td>Riders</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>Riders</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Volume of Users of a Massachusetts Rail Trail</h2>
 
@@ -19,9 +29,8 @@ recording when a rail-trail user passed the data collection station.
 
 <h3>Usage</h3>
 
-<pre>
-data(Riders)
-</pre>
+<pre><code class='language-R'>data(Riders)
+</code></pre>
 
 
 <h3>Format</h3>
@@ -86,11 +95,11 @@ http://www.amstat.org/publications/jse/v23n2/horton.pdf
 
 <h3>Examples</h3>
 
-<pre>
-data(Riders)
+<pre><code class='language-R'>data(Riders)
 str(Riders)
 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

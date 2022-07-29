@@ -55,7 +55,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(earthquakes, aes(x = richter, y = deaths)) +

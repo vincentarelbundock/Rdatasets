@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><title>R: Malignant melanoma deaths in Europe</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Mmmec</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Malignant melanoma deaths in Europe</h2>
+
+<h3>Description</h3>
+
+<p>Malignant Melanoma Mortality in the European Community associated with
+the impact of UV radiation exposure.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Mmmec)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 354 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt>nation</dt><dd><p>a factor with levels <code>Belgium</code>, <code>W.Germany</code>,
+<code>Denmark</code>, <code>France</code>, <code>UK</code>, <code>Italy</code>, <code>Ireland</code>,
+<code>Luxembourg</code>, and <code>Netherlands</code></p>
+</dd>
+<dt>region</dt><dd><p>Region ID - a factor.</p>
+</dd>
+<dt>county</dt><dd><p>County ID - a factor.</p>
+</dd>
+<dt>deaths</dt><dd><p>Number of male deaths due to MM during 1971&ndash;1980</p>
+</dd>
+<dt>expected</dt><dd><p>Number of expected deaths.</p>
+</dd>
+<dt>uvb</dt><dd><p>Centered measure of the UVB dose reaching the earth's
+surface in each county.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html">http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Langford, I.H., Bentham, G. and McDonald, A. 1998: Multilevel
+modelling of geographically aggregated health data: a case study on
+malignant melanoma mortality and UV exposure in the European
+community. <em>Statistics in Medicine</em> 17: 41-58.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>str(Mmmec)
+summary(Mmmec)
+(fm1 &lt;- glmer(deaths ~ uvb + (1|region), Mmmec, poisson, offset = log(expected)))
+</code></pre>
+
+
+</div>
+</body></html>

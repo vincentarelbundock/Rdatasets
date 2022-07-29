@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Type 2 Diabetes Clinical Trial for Patients 10-17 Years Old</title>
+<!DOCTYPE html><html><head><title>R: Type 2 Diabetes Clinical Trial for Patients 10-17 Years Old</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for diabetes2"><tr><td>diabetes2</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>diabetes2</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Type 2 Diabetes Clinical Trial for Patients 10-17 Years Old</h2>
 
@@ -20,9 +30,8 @@ insulin, which is not the preferred outcome for a patient.
 
 <h3>Usage</h3>
 
-<pre>
-diabetes2
-</pre>
+<pre><code class='language-R'>diabetes2
+</code></pre>
 
 
 <h3>Format</h3>
@@ -59,13 +68,13 @@ Control in Youth with Type 2 Diabetes. N Engl J Med.
 
 <h3>Examples</h3>
 
-<pre>
-
+<pre><code class='language-R'>
 lapply(diabetes2, table)
 (cont.table &lt;- table(diabetes2))
 (m &lt;- chisq.test(cont.table))
 m$expected
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

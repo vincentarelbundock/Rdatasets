@@ -46,6 +46,5 @@
 
    ::
 
-
       data(smallpox)
       table(smallpox)

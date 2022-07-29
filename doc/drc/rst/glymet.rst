@@ -63,7 +63,6 @@
    ::
 
 
-
       ## Fitting the model with freely varying ED50 values
       glymet.free <- drm(rgr~dose, pct, data = glymet, 
       fct = LL.3(), pmodels = list(~factor(pct) , ~1, ~factor(pct))) 
@@ -95,4 +94,3 @@
       ## Plotting isobole based on the Hewlett model
       isobole(glymet.free, glymet.hew, exchange = 0.01)  
       # no improvement over concentration addition
-

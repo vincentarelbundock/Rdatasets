@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Determination of Formaldehyde</title>
+<!DOCTYPE html><html><head><title>R: Determination of Formaldehyde</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for Formaldehyde"><tr><td>Formaldehyde</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>Formaldehyde</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Determination of Formaldehyde</h2>
 
@@ -19,7 +29,7 @@ purple color on a spectrophotometer.
 
 <h3>Usage</h3>
 
-<pre>Formaldehyde</pre>
+<pre><code class='language-R'>Formaldehyde</code></pre>
 
 
 <h3>Format</h3>
@@ -27,7 +37,7 @@ purple color on a spectrophotometer.
 <p>A data frame with 6 observations on 2 variables.
 </p>
 
-<table summary="Rd table">
+<table>
 <tr>
  <td style="text-align: right;">
     [,1] </td><td style="text-align: left;"> carb</td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Carbohydrate (ml) </td>
@@ -59,8 +69,7 @@ New York: Wiley.
 
 <h3>Examples</h3>
 
-<pre>
-require(stats); require(graphics)
+<pre><code class='language-R'>require(stats); require(graphics)
 plot(optden ~ carb, data = Formaldehyde,
      xlab = "Carbohydrate (ml)", ylab = "Optical Density",
      main = "Formaldehyde data", col = 4, las = 1)
@@ -69,7 +78,8 @@ summary(fm1)
 opar &lt;- par(mfrow = c(2, 2), oma = c(0, 0, 1.1, 0))
 plot(fm1)
 par(opar)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

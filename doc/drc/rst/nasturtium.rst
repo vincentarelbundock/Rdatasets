@@ -53,7 +53,6 @@
 
    ::
 
-
       nasturtium.m1 <- drm(weight~conc, data=nasturtium, fct = LL.3())
 
       modelFit(nasturtium.m1)

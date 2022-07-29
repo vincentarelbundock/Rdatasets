@@ -102,7 +102,8 @@
       Class of car.
 
    car_truck
-      Car or truck, a factor with levels ``car``, ``1``, ``??``, ``1``.
+      Car or truck, a factor with levels ``car``, ``1``, ``⁠??⁠``,
+      ``1``.
 
    release_date
       Date of vehicle release.
@@ -127,7 +128,6 @@
       :name: examples
 
    ::
-
 
       library(ggplot2)
       library(dplyr)

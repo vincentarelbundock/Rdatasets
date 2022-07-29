@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: House Insulation: Whiteside's Data</title>
+<!DOCTYPE html><html><head><title>R: House Insulation: Whiteside's Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for whiteside"><tr><td>whiteside</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>whiteside</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>
 House Insulation: Whiteside's Data
@@ -23,9 +33,8 @@ insulation on gas consumption.
 
 <h3>Usage</h3>
 
-<pre>
-whiteside
-</pre>
+<pre><code class='language-R'>whiteside
+</code></pre>
 
 
 <h3>Format</h3>
@@ -70,8 +79,7 @@ Chapman &amp; Hall, p. 69.
 
 <h3>Examples</h3>
 
-<pre>
-require(lattice)
+<pre><code class='language-R'>require(lattice)
 xyplot(Gas ~ Temp | Insul, whiteside, panel =
   function(x, y, ...) {
     panel.xyplot(x, y, ...)
@@ -95,7 +103,8 @@ anova(gasPR, gasBA)
 options(contrasts = c("contr.treatment", "contr.poly"))
 gasBA1 &lt;- lm(Gas ~ Insul*Temp, whiteside)
 coef(summary(gasBA1))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

@@ -1,23 +1,33 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: NOx Air Pollution Data</title>
+<!DOCTYPE html><html><head><title>R: NOx Air Pollution Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for NOxEmissions"><tr><td>NOxEmissions</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>NOxEmissions</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>NOx Air Pollution Data</h2>
 
 <h3>Description</h3>
 
 <p>A typical medium sized environmental data set with hourly measurements
-of <i>NOx</i> pollution content in the ambient air.
+of <code class="reqn">NOx</code> pollution content in the ambient air.
 </p>
 
 
 <h3>Usage</h3>
 
-<pre>data(NOxEmissions, package="robustbase")</pre>
+<pre><code class='language-R'>data(NOxEmissions, package="robustbase")</code></pre>
 
 
 <h3>Format</h3>
@@ -29,10 +39,10 @@ of <i>NOx</i> pollution content in the ambient air.
 <dt><code>julday</code></dt><dd><p>day number, a factor with levels <code>373</code>
 ... <code>730</code>, typically with 24 hourly measurements.</p>
 </dd>
-<dt><code>LNOx</code></dt><dd><p><i>\log</i> of hourly mean of NOx concentration in
+<dt><code>LNOx</code></dt><dd><p><code class="reqn">\log</code> of hourly mean of NOx concentration in
 ambient air [ppb] next to a highly frequented motorway.</p>
 </dd>
-<dt><code>LNOxEm</code></dt><dd><p><i>\log</i> of hourly sum of NOx emission of
+<dt><code>LNOxEm</code></dt><dd><p><code class="reqn">\log</code> of hourly sum of NOx emission of
 cars on this motorway in arbitrary units.</p>
 </dd>
 <dt><code>sqrtWS</code></dt><dd><p>Square root of wind speed [m/s].</p>
@@ -66,8 +76,7 @@ measurements.
 
 <h3>Examples</h3>
 
-<pre>
-data(NOxEmissions)
+<pre><code class='language-R'>data(NOxEmissions)
 plot(LNOx ~ LNOxEm, data = NOxEmissions, cex = 0.25, col = "gray30")
 
 ## Not run: ## these take too much time --
@@ -84,7 +93,8 @@ plot(LNOx ~ LNOxEm, data = NOxEmissions, cex = 0.25, col = "gray30")
  try(lmR.NOx &lt;- lmrob (LNOx ~ . , data = NOxEmissions))
 
 ## End(Not run)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

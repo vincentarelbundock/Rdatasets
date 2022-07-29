@@ -71,7 +71,6 @@
 
    ::
 
-
       data(dietox)
       head(dietox)
       ## Not run: 

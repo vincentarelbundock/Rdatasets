@@ -58,7 +58,7 @@
    version.
 
    See also `for a version with only 5
-   firms <http://people.stern.nyu.edu/wgreene/Text/tables/TableF13-1.txt>`__.
+   firms <https://pages.stern.nyu.edu/~wgreene/Text/tables/TableF13-1.txt>`__.
 
    .. rubric:: Source
       :name: source

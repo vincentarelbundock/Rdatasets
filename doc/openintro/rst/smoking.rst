@@ -85,7 +85,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(smoking, aes(x = amt_weekends)) +

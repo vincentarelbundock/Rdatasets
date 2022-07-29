@@ -33,6 +33,4 @@
 
    ::
 
-
       autoplot(sunspotarea)
-

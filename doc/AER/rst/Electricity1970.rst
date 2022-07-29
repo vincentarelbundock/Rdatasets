@@ -62,7 +62,7 @@
 
    Online complements to Greene (2003), Table F5.2.
 
-   http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
    .. rubric:: References
       :name: references
@@ -89,4 +89,3 @@
       ## Greene (2003), Ex. 5.6: a generalized Cobb-Douglas cost function
       fm <- lm(log(cost/fuel) ~ log(output) + I(log(output)^2/2) + 
         log(capital/fuel) + log(labor/fuel), data=Electricity1970[1:123,])
-

@@ -70,7 +70,6 @@
 
    ::
 
-
       d <- subset(
         get_it_dunn_run,
         race == "5k" & date == "2018-05-12" &

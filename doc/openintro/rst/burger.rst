@@ -41,5 +41,4 @@
 
    ::
 
-
       table(burger)

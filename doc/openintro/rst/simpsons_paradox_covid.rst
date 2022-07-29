@@ -35,7 +35,7 @@
    A data frame with 286,166 rows and 3 variables:
 
    age_group
-      Age of the person. Levels: ``under 50``, ``50 +``.
+      Age of the person. Levels: ``⁠under 50⁠``, ``⁠50 +⁠``.
 
    vaccine_status
       Vaccination status of the person. Note: the vaccinated group

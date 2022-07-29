@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Soil Compositions of Physical and Chemical Characteristics</title>
+<!DOCTYPE html><html><head><title>R: Soil Compositions of Physical and Chemical Characteristics</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for Soils"><tr><td>Soils</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>Soils</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Soil Compositions of Physical and Chemical Characteristics</h2>
 
@@ -19,7 +29,7 @@ blocks, in a randomized block design. (Suggested by Michael Friendly.)
 
 <h3>Usage</h3>
 
-<pre>Soils</pre>
+<pre><code class='language-R'>Soils</code></pre>
 
 
 <h3>Format</h3>
@@ -77,7 +87,7 @@ polynomial contrasts are useful).
 Multivariate-covariance and canonical analysis: 
 A method for selecting the most effective discriminators in a multivariate situation.
 <em>Biometrics</em> <b>24</b>, 845&ndash;858.
-Originally from <span class="samp">http://www.stat.lsu.edu/faculty/moser/exst7037/soils.sas</span> but no longer available there.
+Originally from &lsquo;<span class="samp">&#8288;http://www.stat.lsu.edu/faculty/moser/exst7037/soils.sas&#8288;</span>&rsquo; but no longer available there.
 </p>
 
 
@@ -95,4 +105,5 @@ doi: <a href="https://doi.org/10.18637/jss.v017.i06">10.18637/jss.v017.i06</a>.
 </p>
 
 
-</div></body></html>
+</div>
+</body></html>

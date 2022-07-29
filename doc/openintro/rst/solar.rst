@@ -57,7 +57,6 @@
 
    ::
 
-
       solar.is <- subset(solar, location == "Inner_Sunset")
       solar.ha <- subset(solar, location == "Haight_Ashbury")
       plot(solar.is$date, solar.is$kwh, type = "l", ylim = c(0, max(solar$kwh)))

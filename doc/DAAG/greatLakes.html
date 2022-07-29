@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Yearly averages of Great Lake heights: 1918 - 2009</title>
+<!DOCTYPE html><html><head><title>R: Yearly averages of Great Lake heights: 1918 - 2009</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for greatLakes"><tr><td>greatLakes</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>greatLakes</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>
 Yearly averages of Great Lake heights: 1918 - 2009
@@ -19,7 +29,7 @@ Michigan/Huron, Ontario and St Clair
 
 <h3>Usage</h3>
 
-<pre>data(greatLakes)</pre>
+<pre><code class='language-R'>data(greatLakes)</code></pre>
 
 
 <h3>Format</h3>
@@ -42,17 +52,17 @@ mts [1:92, 1:4] 174 174 174 174 174 ...
 
 <h3>Source</h3>
 
-<p><a href="http://www.lre.usace.army.mil/Missions/GreatLakesInformation/GreatLakesWaterLevels/HistoricalData.aspx">http://www.lre.usace.army.mil/Missions/GreatLakesInformation/GreatLakesWaterLevels/HistoricalData.aspx</a>
+<p><a href="https://www.lre.usace.army.mil/Missions/Great-Lakes-Information/Great-Lakes-Information-2/Water-Level-Data/">https://www.lre.usace.army.mil/Missions/Great-Lakes-Information/Great-Lakes-Information-2/Water-Level-Data/</a>
 </p>
 
 
 <h3>Examples</h3>
 
-<pre>
-data(greatLakes)
+<pre><code class='language-R'>data(greatLakes)
 plot(greatLakes)
 ## maybe str(greatLakes)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

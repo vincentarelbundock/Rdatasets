@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Remission Times of Leukaemia Patients</title>
+<!DOCTYPE html><html><head><title>R: Remission Times of Leukaemia Patients</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for gehan"><tr><td>gehan</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>gehan</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>
 Remission Times of Leukaemia Patients
@@ -21,9 +31,8 @@ both withdrawn from the trial when either came out of remission.
 
 <h3>Usage</h3>
 
-<pre>
-gehan
-</pre>
+<pre><code class='language-R'>gehan
+</code></pre>
 
 
 <h3>Format</h3>
@@ -72,8 +81,7 @@ arbitrarily single-censored samples.
 
 <h3>Examples</h3>
 
-<pre>
-library(survival)
+<pre><code class='language-R'>library(survival)
 gehan.surv &lt;- survfit(Surv(time, cens) ~ treat, data = gehan,
      conf.type = "log-log")
 summary(gehan.surv)
@@ -82,7 +90,8 @@ summary(survreg(Surv(time, cens) ~ treat, gehan, dist = "exponential"))
 summary(survreg(Surv(time, cens) ~ treat, gehan))
 gehan.cox &lt;- coxph(Surv(time, cens) ~ treat, gehan)
 summary(gehan.cox)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

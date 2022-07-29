@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Barley Seeding Rate Data</title>
+<!DOCTYPE html><html><head><title>R: Barley Seeding Rate Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for seedrates"><tr><td>seedrates</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>seedrates</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Barley Seeding Rate Data</h2>
 
@@ -17,7 +27,7 @@ the effect of seeding rate of barley on yield.
 
 <h3>Usage</h3>
 
-<pre>seedrates</pre>
+<pre><code class='language-R'>seedrates</code></pre>
 
 
 <h3>Format</h3>
@@ -49,8 +59,7 @@ issues. New Zealand Journal of Agricultural Research 35: 121-141.</p>
 
 <h3>Examples</h3>
 
-<pre>
-plot(grain~rate,data=seedrates,xlim=c(50,180),ylim=c(15.5,22),axes=FALSE)
+<pre><code class='language-R'>plot(grain~rate,data=seedrates,xlim=c(50,180),ylim=c(15.5,22),axes=FALSE)
 new.df&lt;-data.frame(rate=(2:8)*25)
 seedrates.lm1&lt;-lm(grain~rate,data=seedrates)
 seedrates.lm2&lt;-lm(grain~rate+I(rate^2),data=seedrates)
@@ -64,7 +73,8 @@ lines(spline(rate,hat1[,"lwr"]),lty=1,col=3)
 lines(spline(rate,hat1[,"upr"]),lty=1,col=3)
 lines(z2$x,z2$y,lty=4)
 lines(spline(rate,hat2[,"lwr"]),lty=4,col=3)
-lines(spline(rate,hat2[,"upr"]),lty=4,col=3)</pre>
+lines(spline(rate,hat2[,"upr"]),lty=4,col=3)</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

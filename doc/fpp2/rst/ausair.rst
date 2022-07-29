@@ -29,6 +29,4 @@
 
    ::
 
-
       autoplot(ausair)
-

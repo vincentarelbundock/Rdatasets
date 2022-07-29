@@ -39,7 +39,7 @@
       Week of the study (0–4) - the time variable.
 
    sbvalue
-      Serum bilirubin level (in *μ*\ mol/L).
+      Serum bilirubin level (in ``\mu``\ mol/L).
 
    baseline
       A subject's serum bilirubin level at week 0.

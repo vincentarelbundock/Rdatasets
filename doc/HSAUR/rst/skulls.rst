@@ -59,7 +59,6 @@
 
    ::
 
-
         data("skulls", package = "HSAUR")
         means <- tapply(1:nrow(skulls), skulls$epoch, function(i)
                      apply(skulls[i,colnames(skulls)[-1]], 2, mean))
@@ -70,4 +69,3 @@
             panel = function(x, y) {
                 text(x, y, levels(skulls$epoch))
             })
-

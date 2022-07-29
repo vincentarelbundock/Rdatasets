@@ -17,14 +17,12 @@
 
    A dataset with 12 observations on the following 3 variables.
 
-   ============
-   =========================================================
+   ============ =========================================================
    ``Unpopped`` Number of unpopped kernels (adjusted for size difference)
    ``Brand``    ``Orville`` or ``Seaway``
    ``Trial``    Trial number
-   \           
-   ============
-   =========================================================
+   \            
+   ============ =========================================================
 
    .. rubric:: Details
       :name: details

@@ -11,7 +11,7 @@
       :name: description
 
    ``SASname`` and ``longname`` are from the SAS XPT file
-   nass9702cor.XPT that is available from the webite noted below. The
+   nass9702cor.XPT that is available from the website noted below. The
    name ``shortname`` is the name used in the data frame
    ``nass9702cor``, not included in this package, but available from my
    website that is noted below. It is also used in ``nassCDS``, for
@@ -29,13 +29,13 @@
 
    A data frame with 56 observations on the following 3 variables.
 
-   ``shortname``
+   shortname
       a character vector
 
-   ``SASname``
+   SASname
       a character vector
 
-   ``longname``
+   longname
       a character vector
 
    .. rubric:: Details
@@ -49,10 +49,10 @@
    .. rubric:: Source
       :name: source
 
-   http://www.stat.colostate.edu/~meyer/airbags.htm\\
-   ftp://ftp.nhtsa.dot.gov/nass/\\ Click, e.g., on 1997 and then on
-   SASformats. See also
-   http://www.maths.anu.edu.au/~johnm/datasets/airbags
+   https://www.stat.colostate.edu/~meyer/airbags.htm\\
+   https://www.nhtsa.gov/file-downloads\\
+
+   See also https://maths-people.anu.edu.au/~johnm/datasets/airbags/
 
    .. rubric:: References
       :name: references

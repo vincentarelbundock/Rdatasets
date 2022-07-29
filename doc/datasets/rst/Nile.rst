@@ -11,7 +11,7 @@
       :name: description
 
    Measurements of the annual flow of the river Nile at Aswan (formerly
-   ``Assuan``), 1871–1970, in *10^8 m^3*, “with apparent changepoint
+   ``Assuan``), 1871–1970, in ``10^8 m^3``, “with apparent changepoint
    near 1898” (Cobb(1978), Table 1, p.249).
 
    .. rubric:: Usage
@@ -37,12 +37,12 @@
       :name: references
 
    Balke, N. S. (1993). Detecting level shifts in time series. *Journal
-   of Business and Economic Statistics*, **11**, 81–92. doi:
-   `10.2307/1391308 <https://doi.org/10.2307/1391308>`__.
+   of Business and Economic Statistics*, **11**, 81–92.
+   `doi:10.2307/1391308 <https://doi.org/10.2307/1391308>`__.
 
    Cobb, G. W. (1978). The problem of the Nile: conditional solution to
-   a change-point problem. *Biometrika* **65**, 243–51. doi:
-   `10.2307/2335202 <https://doi.org/10.2307/2335202>`__.
+   a change-point problem. *Biometrika* **65**, 243–51.
+   `doi:10.2307/2335202 <https://doi.org/10.2307/2335202>`__.
 
    .. rubric:: Examples
       :name: examples

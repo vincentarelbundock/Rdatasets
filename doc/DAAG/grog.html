@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Alcohol consumption in Australia and New Zealand</title>
+<!DOCTYPE html><html><head><title>R: Alcohol consumption in Australia and New Zealand</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for grog"><tr><td>grog</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>grog</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Alcohol consumption in Australia and New Zealand</h2>
 
@@ -18,7 +28,7 @@ beer, wine, and spirits (including spirit-based products).
 
 <h3>Usage</h3>
 
-<pre>data(grog)</pre>
+<pre><code class='language-R'>data(grog)</code></pre>
 
 
 <h3>Format</h3>
@@ -56,21 +66,21 @@ line from later years.
 
 <h3>Source</h3>
 
-<p>Australian data are from <a href="http://www.abs.gov.au">http://www.abs.gov.au</a>.
+<p>Australian data are from <a href="https://www.abs.gov.au">https://www.abs.gov.au</a>.
 For New Zealand data, go to
-<a href="http://www.stats.govt.nz/infoshare/">http://www.stats.govt.nz/infoshare/</a> Click on 'Industry sectors'
+<a href="https://infoshare.stats.govt.nz/">https://infoshare.stats.govt.nz/</a> Click on 'Industry sectors'
 and then on 'Alcohol Available for Consumption - ALC'.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre>
-data(grog)
+<pre><code class='language-R'>data(grog)
 library(lattice)
 xyplot(Beer+Wine+Spirit ~ Year | Country, data=grog)
 xyplot(Beer+Wine+Spirit ~ Year, groups=Country, data=grog, outer=TRUE)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

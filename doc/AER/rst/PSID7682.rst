@@ -97,7 +97,7 @@
 
    Also provided in the online complements to Greene (2008), Table F9.1.
 
-   http://pages.stern.nyu.edu/~wgreene/Text/Edition6/tablelist6.htm
+   https://pages.stern.nyu.edu/~wgreene/Text/Edition6/tablelist6.htm
 
    .. rubric:: References
       :name: references

@@ -30,7 +30,7 @@
 
    Online complements to Franses, van Dijk and Opschoor (2014).
 
-   http://www.cambridge.org/us/academic/subjects/economics/econometrics-statistics-and-mathematical-economics/time-series-models-business-and-economic-forecasting-2nd-edition
+   https://www.cambridge.org/us/academic/subjects/economics/econometrics-statistics-and-mathematical-economics/time-series-models-business-and-economic-forecasting-2nd-edition
 
    .. rubric:: References
       :name: references

@@ -76,7 +76,5 @@
 
    ::
 
-
         data("respiratory", package = "HSAUR")
         mosaicplot(xtabs( ~ treatment + month + status, data = respiratory))
-

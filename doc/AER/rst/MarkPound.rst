@@ -39,15 +39,15 @@
    .. rubric:: Source
       :name: source
 
-   Journal of Business \\& Economic Statistics Data Archive.
+   Journal of Business & Economic Statistics Data Archive.
 
-   ``http://www.amstat.org/publications/jbes/upload/index.cfm?fuseaction=ViewArticles&pub=JBES&issue=96-2-APR``
+   ``⁠http://www.amstat.org/publications/jbes/upload/index.cfm?fuseaction=ViewArticles&pub=JBES&issue=96-2-APR⁠``
 
    .. rubric:: References
       :name: references
 
    Bollerslev, T., and Ghysels, E. (1996). Periodic Autoregressive
-   Conditional Heteroskedasticity. *Journal of Business \\& Economic
+   Conditional Heteroskedasticity. *Journal of Business & Economic
    Statistics*, **14**, 139–151.
 
    Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper

@@ -65,7 +65,6 @@
 
    ::
 
-
       library(ggplot2)
 
       # Vehicle price by type

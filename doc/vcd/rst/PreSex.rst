@@ -10,7 +10,7 @@
    .. rubric:: Description
       :name: description
 
-   Data from Thornes \\& Collard (1979), reported in Gilbert (1981), on
+   Data from Thornes & Collard (1979), reported in Gilbert (1981), on
    pre- and extra-marital sex and divorce.
 
    .. rubric:: Usage
@@ -47,8 +47,8 @@
    G. N. Gilbert (1981), *Modelling Society: An Introduction to
    Loglinear Analysis for Social Researchers*. Allen and Unwin, London.
 
-   B. Thornes \\& J. Collard (1979), *Who Divorces?*. Routledge \\&
-   Kegan, London.
+   B. Thornes & J. Collard (1979), *Who Divorces?*. Routledge & Kegan,
+   London.
 
    M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
    Cary, NC.

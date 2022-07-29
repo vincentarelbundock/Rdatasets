@@ -71,7 +71,6 @@
 
    ::
 
-
       library(dplyr)
 
       # Longest departure delays

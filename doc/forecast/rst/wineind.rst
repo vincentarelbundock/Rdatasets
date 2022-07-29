@@ -36,4 +36,3 @@
    ::
 
       tsdisplay(wineind)
-

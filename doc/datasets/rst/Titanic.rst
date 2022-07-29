@@ -61,8 +61,8 @@
       :name: source
 
    Dawson, Robert J. MacG. (1995), The ‘Unusual Episode’ Data Revisited.
-   *Journal of Statistics Education*, **3**. doi:
-   `10.1080/10691898.1995.11910499 <https://doi.org/10.1080/10691898.1995.11910499>`__.
+   *Journal of Statistics Education*, **3**.
+   `doi:10.1080/10691898.1995.11910499 <https://doi.org/10.1080/10691898.1995.11910499>`__.
 
    The source provides a data set recording class, sex, age, and
    survival status for each person on board of the Titanic, and is based

@@ -62,7 +62,7 @@
       :name: source
 
    Gordon, N. C. et al.(1995): 'Enhancement of Morphine Analgesia by the
-   GABA\ *\_B* against Baclofen'. *Neuroscience* 69: 345-349.
+   GABA\ ``_B`` against Baclofen'. *Neuroscience* 69: 345-349.
 
    .. rubric:: Examples
       :name: examples

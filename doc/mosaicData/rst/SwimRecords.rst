@@ -39,4 +39,3 @@
       if (require(ggformula)) {
         gf_point(time ~ year, data = SwimRecords, color = ~ sex) 
       }
-

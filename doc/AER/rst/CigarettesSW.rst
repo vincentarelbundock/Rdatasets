@@ -77,10 +77,12 @@
       ## Stock and Watson (2007)
       ## data and transformations 
       data("CigarettesSW")
-      CigarettesSW$rprice <- with(CigarettesSW, price/cpi)
-      CigarettesSW$rincome <- with(CigarettesSW, income/population/cpi)
-      CigarettesSW$rtax <- with(CigarettesSW, tax/cpi)
-      CigarettesSW$rtdiff <- with(CigarettesSW, (taxs - tax)/cpi)
+      CigarettesSW <- transform(CigarettesSW,
+        rprice  = price/cpi,
+        rincome = income/population/cpi,
+        rtax    = tax/cpi,
+        rtdiff  = (taxs - tax)/cpi
+      )
       c1985 <- subset(CigarettesSW, year == "1985")
       c1995 <- subset(CigarettesSW, year == "1995")
 

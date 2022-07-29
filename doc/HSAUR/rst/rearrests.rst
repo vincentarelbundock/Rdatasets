@@ -48,7 +48,5 @@
 
    ::
 
-
         data("rearrests", package = "HSAUR")
         rearrests
-

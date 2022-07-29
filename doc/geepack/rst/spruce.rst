@@ -59,7 +59,6 @@
 
    ::
 
-
       data(spruce)
       spruce$contr <- ifelse(spruce$ozone=="enriched", 0, 1)
       sitka88 <- spruce[spruce$wave <= 5,]
@@ -72,4 +71,3 @@
       fit.89 <- geese(logsize ~ as.factor(wave) + contr - 1,
                       id=id, data=sitka89, corstr="ar1")
       summary(fit.89)
-

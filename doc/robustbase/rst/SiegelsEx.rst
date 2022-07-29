@@ -11,7 +11,7 @@
       :name: description
 
    A small counterexample data set devised by Andrew Siegel. Six (out of
-   nine) data points lie on the line *y = 0* such that some robust
+   nine) data points lie on the line ``y = 0`` such that some robust
    regression estimators exhibit the “\ *exact fit*\ ” property.
 
    .. rubric:: Usage

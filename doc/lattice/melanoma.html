@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Melanoma skin cancer incidence</title>
+<!DOCTYPE html><html><head><title>R: Melanoma skin cancer incidence</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for H_melanoma"><tr><td>H_melanoma</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>H_melanoma</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2> Melanoma skin cancer incidence </h2>
 
@@ -18,7 +28,7 @@ age-adjusted numbers of melanoma skin-cancer incidences per
 
 <h3>Usage</h3>
 
-<pre>melanoma</pre>
+<pre><code class='language-R'>melanoma</code></pre>
 
 
 <h3>Format</h3>
@@ -69,8 +79,7 @@ Summit, New Jersey.
 
 <h3>Examples</h3>
 
-<pre>
-# Time-series plot.  Figure 3.64 from Cleveland.
+<pre><code class='language-R'># Time-series plot.  Figure 3.64 from Cleveland.
 xyplot(incidence ~ year,
   data = melanoma,
 	aspect = "xy",
@@ -79,7 +88,8 @@ xyplot(incidence ~ year,
 	ylim = c(0, 6),
 	xlab = "Year",
 	ylab = "Incidence")
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

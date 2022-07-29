@@ -22,7 +22,7 @@
    ``County``   Name of the Florida county
    ``Buchanan`` Number of votes for Pat Buchanan
    ``Bush``     Number of votes for George Bush
-   \           
+   \            
    ============ ================================
 
    .. rubric:: Details

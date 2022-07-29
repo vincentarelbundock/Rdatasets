@@ -11,7 +11,7 @@
       :name: description
 
    A typical medium sized environmental data set with hourly
-   measurements of *NOx* pollution content in the ambient air.
+   measurements of ``NOx`` pollution content in the ambient air.
 
    .. rubric:: Usage
       :name: usage
@@ -30,11 +30,11 @@
       with 24 hourly measurements.
 
    ``LNOx``
-      *\\log* of hourly mean of NOx concentration in ambient air [ppb]
+      ``\log`` of hourly mean of NOx concentration in ambient air [ppb]
       next to a highly frequented motorway.
 
    ``LNOxEm``
-      *\\log* of hourly sum of NOx emission of cars on this motorway in
+      ``\log`` of hourly sum of NOx emission of cars on this motorway in
       arbitrary units.
 
    ``sqrtWS``

@@ -53,7 +53,7 @@
    .. rubric:: Source
       :name: source
 
-   http://www.forbes.com, assessed on November 26th, 2004.
+   https://www.forbes.com, assessed on November 26th, 2004.
 
    .. rubric:: Examples
       :name: examples

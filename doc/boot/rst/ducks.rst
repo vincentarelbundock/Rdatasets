@@ -57,5 +57,5 @@
    Application*. Cambridge University Press.
 
    Sharpe, R.S., and Johnsgard, P.A. (1966) Inheritance of behavioral
-   characters in *F2* mallard x pintail (*Anas Platyrhynchos L. x Anas
-   Acuta L.*) hybrids. *Behaviour*, **27**, 259-272.
+   characters in ``F_2`` mallard x pintail (*Anas Platyrhynchos L. x
+   Anas Acuta L.*) hybrids. *Behaviour*, **27**, 259-272.

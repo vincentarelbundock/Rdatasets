@@ -70,4 +70,3 @@
        labs( x= "Year",
              y = "Percent of Population",
              title = "Access to Electricity in South Africa 2003 - 2018")
-

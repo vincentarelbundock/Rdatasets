@@ -65,7 +65,6 @@
 
    ::
 
-
       # Data sampled are from the US, Europe, and Australia.
       # This geographic limitation may be due to the particular
       # years considered, since locations without both 1948 and

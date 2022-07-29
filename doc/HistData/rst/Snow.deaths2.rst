@@ -35,7 +35,7 @@
 
    ::
 
-          data(Snow.deaths)
+        data(Snow.deaths)
           data(Snow.pumps)
           data(Snow.streets)
           data(Snow.polygons)
@@ -225,4 +225,3 @@
       Snow.pumps.sp <- SpatialPointsDataFrame(spp,Snow.pumps[,c("x","y")])
       plot(Snow.pumps.sp, add=TRUE, col='blue', pch=17, cex=1.5)
       text(Snow.pumps[,c("x","y")], labels=Snow.pumps$label, pos=1, cex=0.8)
-

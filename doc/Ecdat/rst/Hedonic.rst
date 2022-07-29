@@ -62,7 +62,7 @@
       index of accessibility to radial highways
 
    tax
-      full value property tax rate (\$/\$10,000)
+      full value property tax rate ($ / $10,000)
 
    ptratio
       pupil/teacher ratio

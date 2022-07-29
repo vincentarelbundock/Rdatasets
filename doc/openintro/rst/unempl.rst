@@ -69,7 +69,6 @@
 
    ::
 
-
       # =====> Time Series Plot of Data <=====#
       COL <- c("#DDEEBB", "#EEDDBB", "#BBDDEE", "#FFD5DD", "#FFC5CC")
       plot(unempl$year, unempl$unemp, type = "n")

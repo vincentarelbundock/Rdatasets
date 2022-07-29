@@ -32,6 +32,4 @@
 
    ::
 
-
       autoplot(melsyd, facets=TRUE)
-

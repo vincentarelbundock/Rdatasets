@@ -262,7 +262,6 @@
 
    ::
 
-
       library(ggplot2)
 
       # Histogram of Expected Retirement Age.
@@ -282,4 +281,3 @@
           x = "Dollar Amount (in local currency)",
           y = "Number of Respondents"
         )
-

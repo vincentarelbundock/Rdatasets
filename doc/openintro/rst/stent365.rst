@@ -48,7 +48,6 @@
 
    ::
 
-
       # 30-day results
       table(stent30)
 

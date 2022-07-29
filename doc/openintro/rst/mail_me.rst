@@ -62,7 +62,6 @@
    ::
 
 
-
       table(mail_me)
       (x <- table(mail_me[, c("mailed_letter", "found_coin")]))
       chisq.test(x)

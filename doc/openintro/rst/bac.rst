@@ -45,7 +45,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(bac, aes(x = beers, y = bac)) +

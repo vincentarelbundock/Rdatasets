@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Wages and Education of Young Males</title>
+<!DOCTYPE html><html><head><title>R: Wages and Education of Young Males</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for Males"><tr><td>Males</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>Males</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Wages and Education of Young Males</h2>
 
@@ -30,7 +40,7 @@
 </dd>
 <dt>union</dt><dd><p>wage set by collective bargaining?</p>
 </dd>
-<dt>ethn</dt><dd><p>a factor with levels <code style="white-space: pre;">black, hisp, other</code></p>
+<dt>ethn</dt><dd><p>a factor with levels <code style="white-space: pre;">&#8288;black, hisp, other&#8288;</code></p>
 </dd>
 <dt>married</dt><dd><p>married?</p>
 </dd>
@@ -42,7 +52,7 @@
 </dd>
 <dt>occupation</dt><dd><p>a factor with 9 levels</p>
 </dd>
-<dt>residence</dt><dd><p>a factor with levels <code style="white-space: pre;">rural_area, north_east, northern_central, south</code></p>
+<dt>residence</dt><dd><p>a factor with levels <code style="white-space: pre;">&#8288;rural_area, north_east, northern_central, south&#8288;</code></p>
 </dd>
 </dl>
 
@@ -77,4 +87,5 @@ Wiley.
 </p>
 
 
-</div></body></html>
+</div>
+</body></html>

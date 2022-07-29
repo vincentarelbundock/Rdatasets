@@ -10,7 +10,7 @@
    .. rubric:: Description
       :name: description
 
-   Data from Westlund \\& Kurland (1953) on the diagnosis of multiple
+   Data from Westlund & Kurland (1953) on the diagnosis of multiple
    sclerosis (MS): two samples of patients, one from Winnipeg and one
    from New Orleans, were each rated by two neurologists (one from each
    city) in four diagnostic categories.
@@ -45,9 +45,9 @@
    .. rubric:: References
       :name: references
 
-   K. B. Westlund \\& L. T. Kurland (1953), Studies on multiple
-   sclerosis in Winnipeg, Manitoba and New Orleans, Louisiana, *American
-   Journal of Hygiene*, **57**, 380–396.
+   K. B. Westlund & L. T. Kurland (1953), Studies on multiple sclerosis
+   in Winnipeg, Manitoba and New Orleans, Louisiana, *American Journal
+   of Hygiene*, **57**, 380–396.
 
    M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
    Cary, NC.

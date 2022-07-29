@@ -55,7 +55,6 @@
 
    ::
 
-
       data(sp500_1950_2018)
       sp500.ten.years <- subset(
         sp500_1950_2018,

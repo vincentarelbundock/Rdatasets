@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Daycare fines</title>
+<!DOCTYPE html><html><head><title>R: Daycare fines</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for daycare_fines"><tr><td>daycare_fines</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>daycare_fines</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Daycare fines</h2>
 
@@ -30,9 +40,8 @@ fine was introduced, and no reduction occurred after the fine was removed.
 
 <h3>Usage</h3>
 
-<pre>
-daycare_fines
-</pre>
+<pre><code class='language-R'>daycare_fines
+</code></pre>
 
 
 <h3>Format</h3>
@@ -52,10 +61,10 @@ daycare_fines
 <dt>late_pickups</dt><dd><p>Number of late pickups for a given week and daycare center.</p>
 </dd>
 <dt>study_period_4</dt><dd><p>Period of study, divided into 4 periods:
-<code style="white-space: pre;">before fine</code>, <code style="white-space: pre;">first 4 weeks with fine</code>, <code style="white-space: pre;">last 8 weeks with fine</code>, <code style="white-space: pre;">after fine</code></p>
+<code style="white-space: pre;">&#8288;before fine&#8288;</code>, <code style="white-space: pre;">&#8288;first 4 weeks with fine&#8288;</code>, <code style="white-space: pre;">&#8288;last 8 weeks with fine&#8288;</code>, <code style="white-space: pre;">&#8288;after fine&#8288;</code></p>
 </dd>
 <dt>study_period_3</dt><dd><p>Period of study, divided into 4 periods:
-<code style="white-space: pre;">before fine</code>, <code style="white-space: pre;">with fine</code>, <code style="white-space: pre;">after fine</code></p>
+<code style="white-space: pre;">&#8288;before fine&#8288;</code>, <code style="white-space: pre;">&#8288;with fine&#8288;</code>, <code style="white-space: pre;">&#8288;after fine&#8288;</code></p>
 </dd>
 </dl>
 
@@ -70,8 +79,7 @@ The Journal of Legal Studies 29, no. 1 (2000): 1-17.
 
 <h3>Examples</h3>
 
-<pre>
-
+<pre><code class='language-R'>
 library(dplyr)
 library(tidyr)
 library(ggplot2)
@@ -95,7 +103,8 @@ daycare_fines %&gt;%
   ggplot(aes(x = week, y = avg_late_pickups, group = group, color = group)) +
   geom_point() +
   geom_line()
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: mdvis</title>
+<!DOCTYPE html><html><head><title>R: mdvis</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for mdvis"><tr><td>mdvis</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>mdvis</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>mdvis</h2>
 
@@ -24,7 +34,7 @@ indicates the number of patient visits to a physician's office during a three mo
 
 <h3>Usage</h3>
 
-<pre>data(mdvis)</pre>
+<pre><code class='language-R'>data(mdvis)</code></pre>
 
 
 <h3>Format</h3>
@@ -88,8 +98,7 @@ College Station: Stata Press.
 
 <h3>Examples</h3>
 
-<pre>
-data(mdvis)
+<pre><code class='language-R'>data(mdvis)
 glmmdp &lt;- glm(numvisit ~ reform + factor(educ) + factor(agegrp), family=poisson, data=mdvis)
 summary(glmmdp)
 exp(coef(glmmdp))
@@ -97,7 +106,8 @@ library(MASS)
 glmmdnb &lt;- glm.nb(numvisit ~ reform + factor(educ) + factor(agegrp), data=mdvis)
 summary(glmmdnb)
 exp(coef(glmmdnb))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

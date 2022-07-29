@@ -28,54 +28,54 @@
 
    A data frame with 26217 observations on the following 15 variables.
 
-   ``dvcat``
+   dvcat
       ordered factor with levels (estimated impact speeds) ``1-9km/h``,
       ``10-24``, ``25-39``, ``40-54``, ``55+``
 
-   ``weight``
+   weight
       Observation weights, albeit of uncertain accuracy, designed to
       account for varying sampling probabilities.
 
-   ``dead``
+   dead
       factor with levels ``alive`` ``dead``
 
-   ``airbag``
+   airbag
       a factor with levels ``none`` ``airbag``
 
-   ``seatbelt``
+   seatbelt
       a factor with levels ``none`` ``belted``
 
-   ``frontal``
+   frontal
       a numeric vector; 0 = non-frontal, 1=frontal impact
 
-   ``sex``
+   sex
       a factor with levels ``f`` ``m``
 
-   ``ageOFocc``
+   ageOFocc
       age of occupant in years
 
-   ``yearacc``
+   yearacc
       year of accident
 
-   ``yearVeh``
+   yearVeh
       Year of model of vehicle; a numeric vector
 
-   ``abcat``
+   abcat
       Did one or more (driver or passenger) airbag(s) deploy? This
       factor has levels ``deploy`` ``nodeploy`` ``unavail``
 
-   ``occRole``
+   occRole
       a factor with levels ``driver`` ``pass``
 
-   ``deploy``
+   deploy
       a numeric vector: 0 if an airbag was unavailable or did not
       deploy; 1 if one or more bags deployed.
 
-   ``injSeverity``
+   injSeverity
       a numeric vector; 0:none, 1:possible injury, 2:no incapacity,
       3:incapacity, 4:killed; 5:unknown, 6:prior death
 
-   ``caseid``
+   caseid
       character, created by pasting together the populations sampling
       unit, the case number, and the vehicle number. Within each year,
       use this to uniquely identify the vehicle.
@@ -93,10 +93,10 @@
    .. rubric:: Source
       :name: source
 
-   http://www.stat.colostate.edu/~meyer/airbags.htm\\
-   ftp://ftp.nhtsa.dot.gov/nass/
+   https://www.stat.colostate.edu/~meyer/airbags.htm\\
+   https://www.nhtsa.gov/file-downloads
 
-   See also\\ http://www.maths.anu.edu.au/~johnm/datasets/airbags
+   See also\\ https://maths-people.anu.edu.au/~johnm/datasets/airbags/
 
    .. rubric:: References
       :name: references

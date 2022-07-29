@@ -38,7 +38,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(credits, aes(x = credits)) +

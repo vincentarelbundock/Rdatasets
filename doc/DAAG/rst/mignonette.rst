@@ -10,9 +10,10 @@
    .. rubric:: Description
       :name: description
 
-   Data which compare the heights of crossed plants with self-fertilized
-   plants. Plants were paired within the pots in which they were grown,
-   with one on one side and one on the other.
+   Data compare the heights of crossed plants with self-fertilized
+   plants of the wild mignonette *reseda lutea*. Plants were paired
+   within the pots in which they were grown, with one on one side and
+   one on the other.
 
    .. rubric:: Usage
       :name: usage
@@ -36,7 +37,7 @@
       :name: source
 
    Darwin, Charles. 1877. The Effects of Cross and Self Fertilisation in
-   the Vegetable Kingdom. Appleton and Company, New York.
+   the Vegetable Kingdom. Appleton and Company, New York, page 118.
 
    .. rubric:: Examples
       :name: examples

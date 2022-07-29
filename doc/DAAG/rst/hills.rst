@@ -10,19 +10,21 @@
    .. rubric:: Description
       :name: description
 
-   The record times in 1984 for 35 Scottish hill races.
+   The record times in 1984 (``hills``) for 35 Scottish hill races, or
+   in 2000 (``hills2000``) for 56 hill races. The ``hills2000`` dataset
+   is the subset of ``races2000`` for which ``type`` is ``hill``.
 
    .. rubric:: Usage
       :name: usage
 
    ::
 
-      hills
+        data(hills)
+        data(hills2000)
+        
 
    .. rubric:: Format
       :name: format
-
-   This data frame contains the following columns:
 
    dist
       distance, in miles (on the map)
@@ -33,6 +35,9 @@
    time
       record time in hours
 
+   timef
+      record time in hours for females, in the ``hills2000`` dataset.
+
    .. rubric:: Source
       :name: source
 
@@ -41,12 +46,15 @@
 
    Also, in MASS library, with time in minutes.
 
+   The Scottish Running Resource, http://www.hillrunning.co.uk
+
    .. rubric:: References
       :name: references
 
    A.C. Atkinson (1988) Transformations unmasked. Technometrics 30,
-   311-318. [ "corrects" the time for Knock Hill from 78.65 to 18.65. It
-   is unclear if this based on the original records.]
+   311-318. [ "corrects" the time for Knock Hill, in the ``hills``
+   dataset, from 78.65 to 18.65. It is unclear if this based on the
+   original records.]
 
    .. rubric:: Examples
       :name: examples
@@ -100,5 +108,3 @@
         start=c(alpha = 1, beta = 1, gamma = 1, delta = 1), data=hills[-18,])
       summary(hills.nls)
       plot(residuals(hills.nls) ~ predict(hills.nls)) # residual plot
-
-

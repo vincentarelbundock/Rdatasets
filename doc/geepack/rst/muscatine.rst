@@ -88,5 +88,3 @@
       tidy(gee2)                                                              
       QIC(gee1)
       QIC(gee2)
-
-

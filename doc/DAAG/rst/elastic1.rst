@@ -10,21 +10,25 @@
    .. rubric:: Description
       :name: description
 
-   The ``elastic1`` data frame has 7 rows and 2 columns giving, for each
-   amount by which an elastic band is stretched over the end of a ruler,
-   the distance that the band traveled when released.
+   Both datasets give, for each amount by which an elastic band is
+   stretched over the end of a ruler, the distance that the band
+   traveled when released. The ``elastic1`` data frame has 7 rows. The
+   ``elastic2`` data frame, whose data span a wider range of stretches
+   and distances, has 9 rows.
 
    .. rubric:: Usage
       :name: usage
 
    ::
 
-      elastic1
+        data(elastic1)
+        data(elastic2)
+        
 
    .. rubric:: Format
       :name: format
 
-   This data frame contains the following columns:
+   These data frames contains the following columns:
 
    stretch
       the amount by which the elastic band was stretched
@@ -42,20 +46,26 @@
 
    ::
 
-      ## Not run: 
       plot(elastic1)
-
-      print("Inline Functions - Example 12.2.2")
       sapply(elastic1, mean)
       pause()
-
       sapply(elastic1, function(x)mean(x))
       pause()
-
       sapply(elastic1, function(x)sum(log(x)))
       pause()
-
-      print("Data Output - Example 12.3.2")
-      write.table(elastic1, file="bandsframe.txt")
-
-      ## End(Not run)
+      yrange <- range(c(elastic1$distance, elastic2$distance))
+      xrange <- range(c(elastic1$stretch, elastic2$stretch))
+      plot(distance ~ stretch, data = elastic1, pch = 16, ylim = yrange, xlim = 
+      xrange)
+      points(distance ~ stretch, data = elastic2, pch = 15, col = 2)
+      legend(xrange[1], yrange[2], legend = c("Data set 1", "Data set 2"), pch = 
+      c(16, 15), col = c(1, 2))
+      elastic1.lm <- lm(distance ~ stretch, data = elastic1)
+      elastic2.lm <- lm(distance ~ stretch, data = elastic2)
+      abline(elastic1.lm)
+      abline(elastic2.lm, col = 2)
+      summary(elastic1.lm)
+      summary(elastic2.lm)
+      pause()
+      predict(elastic1.lm, se.fit=TRUE)
+      predict(elastic2.lm, se.fit=TRUE)

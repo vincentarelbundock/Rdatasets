@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: 12 variables created by Schmid and Leiman to show the...</title>
+<!DOCTYPE html><html><head><title>R: 12 variables created by Schmid and Leiman to show the...</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for Schmid"><tr><td>Schmid</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>Schmid</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>12 variables created by Schmid and Leiman to show the Schmid-Leiman Transformation</h2>
 
@@ -16,7 +26,7 @@
 
 <h3>Usage</h3>
 
-<pre>data(Schmid)</pre>
+<pre><code class='language-R'>data(Schmid)</code></pre>
 
 
 <h3>Details</h3>
@@ -63,13 +73,13 @@ cheer you up?  (d) Disease worry subscale: &ldquo;Were you afraid because of you
 
 <h3>Examples</h3>
 
-<pre>
-data(Schmid)
+<pre><code class='language-R'>data(Schmid)
 cor.plot(Schmid,TRUE)
 print(fa(Schmid,6,rotate="oblimin"),cut=0)  #shows an oblique solution
 round(cov2cor(schmid.leiman),2)
 cor.plot(cov2cor(West),TRUE)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

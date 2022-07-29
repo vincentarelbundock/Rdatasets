@@ -77,22 +77,26 @@
    .. rubric:: Source
       :name: source
 
-   http://www.icatdamageestimator.com/ Deaths except for Audrey and
-   Katrina, are in the Excel file that is available from
-   http://www.pnas.org/content/suppl/2014/05/30/1402786111.DCSupplemental
+   https://www.icat.com/storms/catastrophe-resources Deaths except for
+   Audrey and Katrina, are in the Excel file that is available from
+   https://www.pnas.org/doi/10.1073/pnas.1402786111
+
    NOAA Monthly Weather Reports (MWRs) supplied the numbers of deaths
    for all except Donna, Celia, Audrey and Katrina. The figure for Celia
-   is from http://www.nhc.noaa.gov/pdf/NWS-TPC-5.pdf. For the other
-   three hurricanes it is from the Atlantic hurricane list in Wikipedia
+   is from https://www.nhc.noaa.gov/pdf/NWS-TPC-5.pdf. For the other
+   three hurricanes, it is from the Atlantic hurricane list in Wikipedia
    (see the references.)
 
    .. rubric:: References
       :name: references
 
-   http://www.icatdamageestimator.com/
    https://www.aoml.noaa.gov/hrd/hurdat/mwr_pdf/
-   http://en.wikipedia.org/wiki/List_of_Atlantic_hurricanes
-   http://www.pnas.org/cgi/doi/10.1073/pnas.1402786111
+   https://en.wikipedia.org/wiki/List_of_Atlantic_hurricanes
+   https://www.nhtsa.gov/file-downloads
+
+   Jung, Kiju, et al. "Female hurricanes are deadlier than male
+   hurricanes." Proceedings of the National Academy of Sciences 111.24
+   (2014): 8782-8787.
 
    .. rubric:: Examples
       :name: examples

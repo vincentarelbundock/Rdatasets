@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Bivariate Data Set with 3 Clusters</title>
+<!DOCTYPE html><html><head><title>R: Bivariate Data Set with 3 Clusters</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for xclara"><tr><td>xclara</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>xclara</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Bivariate Data Set with 3 Clusters</h2>
 
@@ -17,14 +27,14 @@ clusters.
 
 <h3>Usage</h3>
 
-<pre>data(xclara)</pre>
+<pre><code class='language-R'>data(xclara)</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A data frame with 3000 observations on 2 numeric variables (named
 <code>V1</code> and <code>V2</code>) giving the
-<i>x</i> and <i>y</i> coordinates of the points, respectively.
+<code class="reqn">x</code> and <code class="reqn">y</code> coordinates of the points, respectively.
 </p>
 
 
@@ -41,8 +51,8 @@ formatting.
 each of size 1000, which is clearly wrong.  <code>pam(*, 3)</code>
 gives cluster sizes of 899, 1149, and 952, which apart from seven
 &ldquo;outliers&rdquo; (or &ldquo;mislabellings&rdquo;) correspond to
-observation indices <i>1:900</i>, <i>901:2050</i>, and
-<i>2051:3000</i>, see the example.
+observation indices <code class="reqn">\{1:900\}</code>, <code class="reqn">\{901:2050\}</code>, and
+<code class="reqn">\{2051:3000\}</code>, see the example.
 </p>
 
 
@@ -64,8 +74,7 @@ doi: <a href="https://doi.org/10.18637/jss.v001.i04">10.18637/jss.v001.i04</a>
 
 <h3>Examples</h3>
 
-<pre>
-## Visualization: Assuming groups are defined as {1:1000}, {1001:2000}, {2001:3000}
+<pre><code class='language-R'>## Visualization: Assuming groups are defined as {1:1000}, {1001:2000}, {2001:3000}
 plot(xclara, cex = 3/4, col = rep(1:3, each=1000))
 p.ID &lt;- c(78, 1411, 2535) ## PAM's medoid indices  == pam(xclara, 3)$id.med
 text(xclara[p.ID,], labels = 1:3, cex=2, col=1:3)
@@ -90,7 +99,8 @@ text(xclara[p.ID,], labels = 1:3, cex=2, col=1:3)
  abline(v = iR, col = gc, lty=3)
  axis(3, at = c(0, iR[2,]), padj = 1.2, col=gc, col.axis=gc)
 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

@@ -67,7 +67,6 @@
 
    ::
 
-
       nl1 <- within(nlschools, {
       IQave <- tapply(IQ, class, mean)[as.character(class)]
       IQ <- IQ - IQave
@@ -80,4 +79,3 @@
       ## IGNORE_RDIFF_BEGIN
       summary(nl.lme)
       ## IGNORE_RDIFF_END
-

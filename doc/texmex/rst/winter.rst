@@ -58,7 +58,5 @@
 
    ::
 
-
       data(summer)
       data(winter)
-

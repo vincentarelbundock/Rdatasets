@@ -4,7 +4,7 @@
    USMacroSW R Documentation
    ========= ===============
 
-   .. rubric:: US Macroeconomic Data (1957–2005, Stock \\& Watson)
+   .. rubric:: US Macroeconomic Data (1957–2005, Stock & Watson)
       :name: us-macroeconomic-data-19572005-stock-watson
 
    .. rubric:: Description

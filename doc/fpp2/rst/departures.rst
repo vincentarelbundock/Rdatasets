@@ -40,6 +40,4 @@
 
    ::
 
-
       autoplot(departures, facets=TRUE)
-

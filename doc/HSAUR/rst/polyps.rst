@@ -57,15 +57,13 @@
    Medicine*, **328**\ (18), 1313–1316.
 
    S. Piantadosi (1997), *Clinical Trials: A Methodologic Perspective*.
-   John Wiley \\& Sons, New York.
+   John Wiley & Sons, New York.
 
    .. rubric:: Examples
       :name: examples
 
    ::
 
-
         data("polyps", package = "HSAUR")
         plot(number ~ age, data = polyps, pch = as.numeric(polyps$treat))
         legend(40, 40, legend = levels(polyps$treat), pch = 1:2, bty = "n")
-

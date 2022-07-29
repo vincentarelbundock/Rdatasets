@@ -46,7 +46,7 @@
       :name: source
 
    G. U. H. Seeber (1998), Poisson Regression. In: *Encyclopedia of
-   Biostatistics* (P. Armitage and T. Colton, eds), John Wiley \\& Sons,
+   Biostatistics* (P. Armitage and T. Colton, eds), John Wiley & Sons,
    Chichester.
 
    .. rubric:: Examples
@@ -54,7 +54,5 @@
 
    ::
 
-
         data("bladdercancer", package = "HSAUR")
         mosaicplot(xtabs(~ number + tumorsize, data = bladdercancer))
-

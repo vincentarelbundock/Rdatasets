@@ -53,7 +53,6 @@
 
    ::
 
-
       ## Model with ED50 on log scale as parameter
       p.prom.m1<-drm(dryweight~conc, data=P.promelas, fct=LN.3())
 
@@ -67,4 +66,3 @@
       p.prom.m2<-drm(dryweight~conc, data=P.promelas, fct=LN.3(loge=TRUE))
       summary(p.prom.m2)
       ED(p.prom.m2, c(10,20,50), interval="fls")
-

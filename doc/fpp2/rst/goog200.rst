@@ -30,6 +30,4 @@
 
    ::
 
-
       autoplot(goog)
-

@@ -49,5 +49,3 @@
 
 
       all.equal(ncol(nonEnglishNames), 2)
-
-

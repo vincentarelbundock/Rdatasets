@@ -64,7 +64,6 @@
 
    ::
 
-
       require(lattice)
       str(Dyestuff)
       dotplot(reorder(Batch, Yield) ~ Yield, Dyestuff,

@@ -39,7 +39,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(helmet, aes(x = lunch, y = helmet)) +

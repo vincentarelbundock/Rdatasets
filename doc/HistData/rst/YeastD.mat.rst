@@ -33,7 +33,7 @@
 
    ::
 
-          data(Yeast)
+        data(Yeast)
           data(YeastD.mat)
           
 
@@ -58,13 +58,13 @@
    .. rubric:: Details
       :name: details
 
-   Student considers the distribution of a total of *Nm* particles
-   distributed over *N* unit areas with an average of *m* particles per
-   unit area. With uniform mixing, for a given particle, the probability
-   of it falling on any one area is *p = 1/N*, and not falling on that
-   area is *q = 1 - 1/N*. He derives the probability distribution of 0,
-   1, 2, 3, ... particles on a single unit area from the binomial
-   expansion of *(p + q)^{mN}*.
+   Student considers the distribution of a total of ``Nm`` particles
+   distributed over ``N`` unit areas with an average of ``m`` particles
+   per unit area. With uniform mixing, for a given particle, the
+   probability of it falling on any one area is ``p = 1/N``, and not
+   falling on that area is ``q = 1 - 1/N``. He derives the probability
+   distribution of 0, 1, 2, 3, ... particles on a single unit area from
+   the binomial expansion of ``(p + q)^{mN}``.
 
    .. rubric:: Source
       :name: source

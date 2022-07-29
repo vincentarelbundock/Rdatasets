@@ -64,13 +64,14 @@
    Fair, R. (1977) “A note on the computation of the tobit estimator”,
    *Econometrica*, **45**, 1723-1727.
 
-   http://fairmodel.econ.yale.edu/rayfair/pdf/1978A200.PDF.
+   https://fairmodel.econ.yale.edu/rayfair/pdf/1978A200.PDF.
 
    .. rubric:: References
       :name: references
 
    Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   http://www.prenhall.com/greene/greene1.html, Table F22.2.
+   https://archive.org/details/econometricanaly0000gree_f4x3, Table
+   F22.2.
 
    .. rubric:: See Also
       :name: see-also

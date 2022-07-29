@@ -28,7 +28,7 @@
    ==== ========= ======= =======================================
    [,1] eruptions numeric Eruption time in mins
    [,2] waiting   numeric Waiting time to next eruption (in mins)
-   \                     
+   \                      
    ==== ========= ======= =======================================
 
    .. rubric:: Details
@@ -54,8 +54,8 @@
    New York: Springer.
 
    Azzalini, A. and Bowman, A. W. (1990). A look at some data on the Old
-   Faithful geyser. *Applied Statistics*, **39**, 357–365. doi:
-   `10.2307/2347385 <https://doi.org/10.2307/2347385>`__.
+   Faithful geyser. *Applied Statistics*, **39**, 357–365.
+   `doi:10.2307/2347385 <https://doi.org/10.2307/2347385>`__.
 
    .. rubric:: See Also
       :name: see-also

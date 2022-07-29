@@ -153,4 +153,3 @@
       CPN <- stack(CushnyPeeblesN)
       CPlong <- data.frame(patient=rep(1:11,4), CPlong, n=CPN$values)
       str(CPlong)
-

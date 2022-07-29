@@ -38,7 +38,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(penelope, aes(x = weight)) +

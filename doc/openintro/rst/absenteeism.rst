@@ -57,7 +57,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(absenteeism, aes(x = eth, y = days)) +

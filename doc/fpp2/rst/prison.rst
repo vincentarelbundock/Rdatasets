@@ -25,7 +25,5 @@
 
    ::
 
-
       autoplot(prison)
       head(prisonLF)
-

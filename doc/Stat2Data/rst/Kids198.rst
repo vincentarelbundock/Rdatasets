@@ -23,7 +23,7 @@
    ``Age``    Age (in months)
    ``Sex``    ``0``\ =male or ``1``\ =female
    ``Race``   ``0``\ =white or ``1``\ =other
-   \         
+   \          
    ========== ==============================
 
    .. rubric:: Details

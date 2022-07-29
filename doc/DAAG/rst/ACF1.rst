@@ -27,7 +27,7 @@
    This data frame contains the following columns:
 
    count
-      The number of ACF observed in section 1 of each rat colon
+      Observed number of ACF in section 1 of each rat colon
 
    endtime
       Time of sacrifice, in weeks following injection of AOM

@@ -35,5 +35,4 @@
 
    ::
 
-
       table(books)

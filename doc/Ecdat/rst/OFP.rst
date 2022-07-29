@@ -71,7 +71,7 @@
       number of years of education
 
    faminc
-      family income in 10000\$
+      family income in 10000$
 
    employed
       is the person employed ?

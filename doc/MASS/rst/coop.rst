@@ -35,7 +35,7 @@
       Batch, ``B1``, ``B2``, ``B3`` (nested within ``Spc/Lab``),
 
    ``Conc``
-      Concentration of Analyte in *g/kg*.
+      Concentration of Analyte in ``g/kg``.
 
    .. rubric:: Source
       :name: source

@@ -31,12 +31,13 @@
       model
 
    ``Country``
-      of origin, a factor with levels Brazil, England, France, Germany,
-      Japan, Japan/USA, Korea, Mexico, Sweden and USA
+      of origin, a factor with levels ‘⁠Brazil⁠’, ‘⁠England⁠’,
+      ‘⁠France⁠’, ‘⁠Germany⁠’, ‘⁠Japan⁠’, ‘⁠Japan/USA⁠’, ‘⁠Korea⁠’,
+      ‘⁠Mexico⁠’, ‘⁠Sweden⁠’ and ‘⁠USA⁠’
 
    ``Reliability``
-      an ordered factor with levels Much worse < worse < average <
-      better < Much better
+      an ordered factor with levels ‘⁠Much worse⁠’ < ‘⁠worse⁠’ <
+      ‘⁠average⁠’ < ‘⁠better⁠’ < ‘⁠Much better⁠’
 
    ``Mileage``
       fuel consumption miles per US gallon, as tested.

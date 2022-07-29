@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Brownlee's Stack Loss Plant Data</title>
+<!DOCTYPE html><html><head><title>R: Brownlee's Stack Loss Plant Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for stackloss"><tr><td>stackloss</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>stackloss</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Brownlee's Stack Loss Plant Data</h2>
 
@@ -17,12 +27,11 @@ acid.
 
 <h3>Usage</h3>
 
-<pre>
-stackloss
+<pre><code class='language-R'>stackloss
 
 stack.x
 stack.loss
-</pre>
+</code></pre>
 
 
 <h3>Format</h3>
@@ -30,7 +39,7 @@ stack.loss
 <p><code>stackloss</code> is a data frame with 21 observations on 4 variables.
 </p>
 
-<table summary="Rd table">
+<table>
 <tr>
  <td style="text-align: right;">
     [,1] </td><td style="text-align: left;"> <code>Air Flow</code>   </td><td style="text-align: left;"> Flow of cooling air</td>
@@ -66,8 +75,8 @@ variable, are provided as well.
 <h3>Details</h3>
 
 <p>&ldquo;Obtained from 21 days of operation of a plant for the
-oxidation of ammonia (NH<i>3</i>) to nitric acid
-(HNO<i>3</i>).  The nitric oxides produced are absorbed in a
+oxidation of ammonia (NH<code class="reqn">_3</code>) to nitric acid
+(HNO<code class="reqn">_3</code>).  The nitric oxides produced are absorbed in a
 countercurrent absorption tower&rdquo;.
 (Brownlee, cited by Dodge, slightly reformatted by MM.)
 </p>
@@ -107,10 +116,10 @@ Methods; In Honor of Peter Huber's 60th Birthday</em>, 1996,
 
 <h3>Examples</h3>
 
-<pre>
-require(stats)
+<pre><code class='language-R'>require(stats)
 summary(lm.stack &lt;- lm(stack.loss ~ stack.x))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

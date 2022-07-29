@@ -34,7 +34,6 @@
 
    ::
 
-
       summary(exclusive_relationship$num)
       table(exclusive_relationship$num)
       hist(exclusive_relationship$num)

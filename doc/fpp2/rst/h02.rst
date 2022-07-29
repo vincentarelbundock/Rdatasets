@@ -31,7 +31,5 @@
 
    ::
 
-
       autoplot(h02)
       ggseasonplot(h02)
-

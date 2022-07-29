@@ -72,7 +72,7 @@
 
    Online complements to Greene (2003). Table F22.2.
 
-   http://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
    .. rubric:: References
       :name: references

@@ -36,7 +36,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(major_survey, aes(x = major, y = gpa)) +

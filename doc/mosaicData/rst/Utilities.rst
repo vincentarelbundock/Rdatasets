@@ -68,4 +68,3 @@
       if (require(ggformula)) {
         gf_point(gasbill ~ temp, data = Utilities)
       }
-

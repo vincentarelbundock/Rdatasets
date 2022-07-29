@@ -22,7 +22,7 @@
    ``Occasion``  Trial: I to IX
    ``Treatment`` ``Fresh`` or ``Stung``
    ``Stingers``  Number of stingers
-   \            
+   \             
    ============= ======================
 
    .. rubric:: Details

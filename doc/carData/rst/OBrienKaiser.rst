@@ -18,8 +18,8 @@
    hour. The design, therefore, has two between-subject and two
    within-subject factors.
 
-   The contrasts for the ``treatment`` factor are set to *-2, 1, 1* and
-   *0, -1, 1*. The contrasts for the ``gender`` factor are set to
+   The contrasts for the ``treatment`` factor are set to ``-2, 1, 1``
+   and ``0, -1, 1``. The contrasts for the ``gender`` factor are set to
    ``contr.sum``.
 
    .. rubric:: Usage

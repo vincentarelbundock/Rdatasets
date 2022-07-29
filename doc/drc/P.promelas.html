@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Effect of sodium pentachlorophenate on growth of fathead...</title>
+<!DOCTYPE html><html><head><title>R: Effect of sodium pentachlorophenate on growth of fathead...</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for P.promelas"><tr><td>P.promelas</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>P.promelas</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Effect of sodium pentachlorophenate on growth of fathead minnow</h2>
 
@@ -18,7 +28,7 @@ The average dry weight was measured.
 
 <h3>Usage</h3>
 
-<pre>data(P.promelas)</pre>
+<pre><code class='language-R'>data(P.promelas)</code></pre>
 
 
 <h3>Format</h3>
@@ -51,8 +61,7 @@ dose-response model (using the logarithm with base 10).
 
 <h3>Examples</h3>
 
-<pre>
-
+<pre><code class='language-R'>
 ## Model with ED50 on log scale as parameter
 p.prom.m1&lt;-drm(dryweight~conc, data=P.promelas, fct=LN.3())
 
@@ -67,7 +76,8 @@ p.prom.m2&lt;-drm(dryweight~conc, data=P.promelas, fct=LN.3(loge=TRUE))
 summary(p.prom.m2)
 ED(p.prom.m2, c(10,20,50), interval="fls")
 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

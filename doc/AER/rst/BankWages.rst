@@ -43,7 +43,7 @@
    Online complements to Heij, de Boer, Franses, Kloek, and van Dijk
    (2004).
 
-   http://www.oup.com/uk/booksites/content/0199268010/datasets/ch6/xr614bwa.asc
+   https://global.oup.com/booksites/content/0199268010/datasets/ch6/xr614bwa.asc
 
    .. rubric:: References
       :name: references
@@ -77,8 +77,7 @@
       confint(fm_mnl)
 
       ## same with mlogit package
-      if(require("mlogit")) {
+      library("mlogit")
       fm_mlogit <- mlogit(job ~ 1 | education + minority, data = BankWages,
         subset = gender == "male", shape = "wide", reflevel = "custodial")
       summary(fm_mlogit)
-      }

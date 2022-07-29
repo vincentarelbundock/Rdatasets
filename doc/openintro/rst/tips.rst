@@ -61,7 +61,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(tips, aes(x = day, y = tip)) +

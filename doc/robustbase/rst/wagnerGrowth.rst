@@ -27,7 +27,7 @@
    .. rubric:: Format
       :name: format
 
-   A data frame with *21 \* 3 = 63* observations (one per
+   A data frame with ``21 \times 3 = 63`` observations (one per
    ``Region x Period``) on the following 7 variables.
 
    ``Region``

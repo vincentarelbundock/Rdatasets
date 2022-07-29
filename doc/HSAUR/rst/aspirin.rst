@@ -54,7 +54,5 @@
 
    ::
 
-
         data("aspirin", package = "HSAUR")
         aspirin
-

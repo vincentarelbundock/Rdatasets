@@ -1,16 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Von Bortkiewicz Horse Kicks Data</title>
+<!DOCTYPE html><html><head><title>R: Von Bortkiewicz Horse Kicks Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for VonBort"><tr><td>VonBort</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>VonBort</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Von Bortkiewicz Horse Kicks Data</h2>
 
 <h3>Description</h3>
 
-<p>Data from von Bortkiewicz (1898), given by Andrews \&amp; Herzberg (1985),
+<p>Data from von Bortkiewicz (1898), given by Andrews &amp; Herzberg (1985),
 on number of deaths by horse or mule kicks in 14 corps of the Prussian
 army.
 </p>
@@ -18,9 +28,8 @@ army.
 
 <h3>Usage</h3>
 
-<pre>
-data("VonBort")
-</pre>
+<pre><code class='language-R'>data("VonBort")
+</code></pre>
 
 
 <h3>Format</h3>
@@ -52,7 +61,7 @@ Visualizing Categorical Data:
 
 <h3>References</h3>
 
-<p>D. F. Andrews \&amp; A. M. Herzberg (1985),
+<p>D. F. Andrews &amp; A. M. Herzberg (1985),
 <em>Data: A Collection of Problems from Many Fields for the Student
 and Research Worker</em>.
 Springer-Verlag, New York, NY.
@@ -79,11 +88,11 @@ SAS Institute, Cary, NC.
 
 <h3>Examples</h3>
 
-<pre>
-data("VonBort")
+<pre><code class='language-R'>data("VonBort")
 ## HorseKicks data
 xtabs(~ deaths, data = VonBort, subset = fisher == "yes")
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

@@ -45,7 +45,6 @@
 
    ::
 
-
       ## Model with ED50 as a parameter
       finney71.m1 <- drm(affected/total ~ dose, weights = total,
       data = finney71, fct = LL.2(), type = "binomial")
@@ -73,4 +72,3 @@
       ## Confidence intervals based on back-transformation
       ##  complete agreement with results based on 'glm'
       ED(finney71.m2, c(10, 20, 50), interval = "fls", reference = "control")
-

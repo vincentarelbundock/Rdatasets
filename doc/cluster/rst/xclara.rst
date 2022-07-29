@@ -24,8 +24,8 @@
       :name: format
 
    A data frame with 3000 observations on 2 numeric variables (named
-   ``V1`` and ``V2``) giving the *x* and *y* coordinates of the points,
-   respectively.
+   ``V1`` and ``V2``) giving the ``x`` and ``y`` coordinates of the
+   points, respectively.
 
    .. rubric:: Note
       :name: note
@@ -40,7 +40,8 @@
    each of size 1000, which is clearly wrong. ``pam(*, 3)`` gives
    cluster sizes of 899, 1149, and 952, which apart from seven
    “outliers” (or “mislabellings”) correspond to observation indices
-   *1:900*, *901:2050*, and *2051:3000*, see the example.
+   ``\{1:900\}``, ``\{901:2050\}``, and ``\{2051:3000\}``, see the
+   example.
 
    .. rubric:: Source
       :name: source
@@ -85,4 +86,3 @@
        gc <- adjustcolor("gray20",1/2)
        abline(v = iR, col = gc, lty=3)
        axis(3, at = c(0, iR[2,]), padj = 1.2, col=gc, col.axis=gc)
-

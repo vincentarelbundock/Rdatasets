@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Student's (1906) Yeast Cell Counts</title>
+<!DOCTYPE html><html><head><title>R: Student's (1906) Yeast Cell Counts</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for Yeast"><tr><td>Yeast</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>Yeast</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>
 Student's (1906) Yeast Cell Counts
@@ -33,10 +43,9 @@ grid for sample D, given here as <code>YeastD.mat</code>.
 
 <h3>Usage</h3>
 
-<pre>
-	data(Yeast)
+<pre><code class='language-R'>	data(Yeast)
 	data(YeastD.mat)
-	</pre>
+	</code></pre>
 
 
 <h3>Format</h3>
@@ -61,12 +70,12 @@ sample D.
 
 <h3>Details</h3>
 
-<p>Student considers the distribution of a total of <i>Nm</i> particles distributed over
-<i>N</i> unit areas with an average of <i>m</i> particles per unit area.
+<p>Student considers the distribution of a total of <code class="reqn">Nm</code> particles distributed over
+<code class="reqn">N</code> unit areas with an average of <code class="reqn">m</code> particles per unit area.
 With uniform mixing, for a given particle, the probability of it falling on any one
-area is <i>p = 1/N</i>, and not falling on that area is <i>q = 1 - 1/N</i>.
+area is <code class="reqn">p = 1/N</code>, and not falling on that area is <code class="reqn">q = 1 - 1/N</code>.
 He derives the probability distribution of 0, 1, 2, 3, ...
-particles on a single unit area from the binomial expansion of <i>(p + q)^{mN}</i>.
+particles on a single unit area from the binomial expansion of <code class="reqn">(p + q)^{mN}</code>.
 </p>
 
 
@@ -91,8 +100,7 @@ Biometrika, 5, 351-360.
 
 <h3>Examples</h3>
 
-<pre>
-data(Yeast)
+<pre><code class='language-R'>data(Yeast)
 
 require(lattice)
 # basic bar charts 
@@ -104,7 +112,8 @@ barchart(freq~count|sample, data=Yeast, xlab="Number of Cells", ylab="Frequency"
 # same, using xyplot
 xyplot(freq~count|sample, data=Yeast, xlab="Number of Cells", ylab="Frequency",
 	horizontal=FALSE, origin=0, type="h", lwd=10)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

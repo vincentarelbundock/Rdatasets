@@ -46,7 +46,6 @@
 
    ::
 
-
       m <- lm(torque ~ treatment, data = penetrating_oil)
       anova(m)
 

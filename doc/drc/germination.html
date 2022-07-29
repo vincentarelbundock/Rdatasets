@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Germination of three crops</title>
+<!DOCTYPE html><html><head><title>R: Germination of three crops</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for germination"><tr><td>germination</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>germination</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>
 Germination of three crops
@@ -19,7 +29,7 @@ to different temperatures between 10 and 40 degrees Celsius. Experiments lasted 
 
 <h3>Usage</h3>
 
-<pre>data(germination)</pre>
+<pre><code class='language-R'>data(germination)</code></pre>
 
 
 <h3>Format</h3>
@@ -66,8 +76,7 @@ that different combinations of species and temperature may lead to different ger
 
 <h3>Examples</h3>
 
-<pre>
-
+<pre><code class='language-R'>
 ## Fitting two-parameter log-logistic curves to each combination of species and temperature 
 ##  (upper limit fixed at 1)
 ## Note: Rows 24 and 62 are omitted from the dataset (all mungbean seeds germinated 
@@ -143,7 +152,8 @@ that different combinations of species and temperature may lead to different ger
 #legendText=c(expression(10*degree), expression(16*degree), expression(22*degree), 
 #expression(28*degree), expression(34*degree), expression(40*degree)))
 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

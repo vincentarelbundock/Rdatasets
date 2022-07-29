@@ -23,7 +23,7 @@
    ``Nik225ch`` Change in Nikkei 225 stock average
    ``Up``       Indicator for positive Nikkei change
    ``lagNik``   Previous day's Nikkei change
-   \           
+   \            
    ============ ======================================
 
    .. rubric:: Details

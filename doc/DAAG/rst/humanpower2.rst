@@ -10,7 +10,7 @@
    .. rubric:: Description
       :name: description
 
-   The data set from Daedalus project.
+   Data are from Daedalus project; see the reference below.
 
    .. rubric:: Usage
       :name: usage

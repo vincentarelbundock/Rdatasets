@@ -63,7 +63,6 @@
 
    ::
 
-
       ## Fitting the model with freely varying ED50 values
       ## Ooops: Box-Cox transformation is needed
       acidiq.free <- drm(rgr ~ dose, pct, data = acidiq, fct = LL.4(),
@@ -94,4 +93,3 @@
 
       ## Plotting isobole based on the Hewlett model
       isobole(acidiq.free, acidiq.hew, xlim = c(0, 400), ylim = c(0, 450))  # good fit
-

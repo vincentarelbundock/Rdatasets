@@ -47,4 +47,3 @@
 
       data(pilot)
       summary(lm.pilot <- lm(Y ~.,data=pilot))
-

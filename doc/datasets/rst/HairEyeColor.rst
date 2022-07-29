@@ -37,7 +37,7 @@
    .. rubric:: Details
       :name: details
 
-   The Hair *x* Eye table comes from a survey of students at the
+   The Hair ``\times`` Eye table comes from a survey of students at the
    University of Delaware reported by Snee (1974). The split by ``Sex``
    was added by Friendly (1992a) for didactic purposes.
 
@@ -59,8 +59,8 @@
       :name: references
 
    Snee, R. D. (1974). Graphical display of two-way contingency tables.
-   *The American Statistician*, **28**, 9–12. doi:
-   `10.2307/2683520 <https://doi.org/10.2307/2683520>`__.
+   *The American Statistician*, **28**, 9–12.
+   `doi:10.2307/2683520 <https://doi.org/10.2307/2683520>`__.
 
    Friendly, M. (1992a). Graphical methods for categorical data. *SAS
    User Group International Conference Proceedings*, **17**, 190–200.

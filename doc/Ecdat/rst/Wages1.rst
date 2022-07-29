@@ -40,7 +40,7 @@
       years of schooling
 
    wage
-      wage (in 1980 \\$) per hour
+      wage (in 1980 $) per hour
 
    .. rubric:: References
       :name: references

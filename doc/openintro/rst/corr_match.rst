@@ -61,7 +61,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(corr_match, aes(x = x, y = y1)) +

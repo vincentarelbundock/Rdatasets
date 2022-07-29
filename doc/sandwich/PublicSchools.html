@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: US Expenditures for Public Schools</title>
+<!DOCTYPE html><html><head><title>R: US Expenditures for Public Schools</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for PublicSchools"><tr><td>PublicSchools</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>PublicSchools</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>US Expenditures for Public Schools</h2>
 
@@ -17,7 +27,7 @@ by state in 1979.
 
 <h3>Usage</h3>
 
-<pre>data(PublicSchools)</pre>
+<pre><code class='language-R'>data("PublicSchools")</code></pre>
 
 
 <h3>Format</h3>
@@ -43,7 +53,7 @@ by state in 1979.
 
 <p>Cribari-Neto F. (2004).
 &ldquo;Asymptotic Inference Under Heteroskedasticity of Unknown Form.&rdquo;
-<em>Computational Statistics \&amp; Data Analysis</em>,
+<em>Computational Statistics &amp; Data Analysis</em>,
 <b>45</b>, 215-233.
 </p>
 <p>Greene W.H. (1993). <em>Econometric Analysis</em>, 2nd edition.
@@ -56,11 +66,10 @@ United States</em>. US Government Printing Office, Washington, DC.
 
 <h3>Examples</h3>
 
-<pre>
-## Willam H. Greene, Econometric Analysis, 2nd Ed.
+<pre><code class='language-R'>## Willam H. Greene, Econometric Analysis, 2nd Ed.
 ## Chapter 14
 ## load data set, p. 385, Table 14.1
-data(PublicSchools)
+data("PublicSchools", package = "sandwich")
 
 ## omit NA in Wisconsin and scale income
 ps &lt;- na.omit(PublicSchools)
@@ -72,7 +81,6 @@ summary(fmq)
 
 ## compare standard and HC0 standard errors
 ## p. 391, Table 14.3
-library(sandwich)
 coef(fmq)
 sqrt(diag(vcovHC(fmq, type = "const")))
 sqrt(diag(vcovHC(fmq, type = "HC0")))
@@ -115,7 +123,8 @@ lines(inc, predict(fmq, data.frame(Income = inc)), col = 4)
 fml &lt;- lm(Expenditure ~ Income, data = ps)
 abline(fml)
 text(ps[2,2], ps[2,1], rownames(ps)[2], pos = 2)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

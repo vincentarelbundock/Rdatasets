@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Hitters Data</title>
+<!DOCTYPE html><html><head><title>R: Hitters Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for Hitters"><tr><td>Hitters</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>Hitters</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Hitters Data</h2>
 
@@ -23,7 +33,7 @@ by the maximum of the variable.
 
 <h3>Usage</h3>
 
-<pre>data("Hitters")</pre>
+<pre><code class='language-R'>data("Hitters")</code></pre>
 
 
 <h3>Format</h3>
@@ -64,8 +74,7 @@ SAS Institute, Cary, NC.
 
 <h3>Examples</h3>
 
-<pre>
-data("Hitters")
+<pre><code class='language-R'>data("Hitters")
 attach(Hitters)
 
 colors &lt;- c("black","red","green","blue","red","black","blue")
@@ -78,7 +87,8 @@ grid_legend(0.8, 0.9, pch, colors, levels(Positions),
   title = "POSITION(S)")
 
 detach(Hitters)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

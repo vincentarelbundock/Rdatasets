@@ -42,21 +42,11 @@
 
    ::
 
-      ## Not run: 
       print("Example 1.8.1")
 
       attach(elasticband)     # R now knows where to find stretch and distance
       plot(stretch, distance) # Alternative: plot(distance ~ stretch)
       detach(elasticband)
-      pause()
-
-      print("Output of Data Frames - Example 12.3.2")
-
-      write(t(elasticband),file="bands.txt",ncol=2)
-
-      sink("bands2.txt")
-      elasticband   # NB: No output on screen
-      sink()
 
       print("Lists - Example 12.7")
 
@@ -80,5 +70,3 @@
       pause()
 
        mode(elastic.lm$call)
-
-      ## End(Not run)

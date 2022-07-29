@@ -24,18 +24,26 @@
       :name: format
 
    A data frame with 47 observations on 6 variables, *each* of which is
-   in percent, i.e., in *[0, 100]*.
+   in percent, i.e., in ``[0, 100]``.
 
-   ==== ================
-   =====================================================
-   [,1] Fertility        *Ig*, ‘common standardized fertility measure’
-   [,2] Agriculture      % of males involved in agriculture as occupation
-   [,3] Examination      % draftees receiving highest mark on army examination
-   [,4] Education        % education beyond primary school for draftees.
-   [,5] Catholic         % ‘catholic’ (as opposed to ‘protestant’).
-   [,6] Infant.Mortality live births who live less than 1 year.
-   ==== ================
-   =====================================================
+   +------+------------------+------------------------------------------+
+   | [,1] | Fertility        | ``I_g``, ‘common standardized fertility  |
+   |      |                  | measure’                                 |
+   +------+------------------+------------------------------------------+
+   | [,2] | Agriculture      | % of males involved in agriculture as    |
+   |      |                  | occupation                               |
+   +------+------------------+------------------------------------------+
+   | [,3] | Examination      | % draftees receiving highest mark on     |
+   |      |                  | army examination                         |
+   +------+------------------+------------------------------------------+
+   | [,4] | Education        | % education beyond primary school for    |
+   |      |                  | draftees.                                |
+   +------+------------------+------------------------------------------+
+   | [,5] | Catholic         | % ‘catholic’ (as opposed to              |
+   |      |                  | ‘protestant’).                           |
+   +------+------------------+------------------------------------------+
+   | [,6] | Infant.Mortality | live births who live less than 1 year.   |
+   +------+------------------+------------------------------------------+
 
    All variables but ‘Fertility’ give proportions of the population.
 
@@ -51,8 +59,8 @@
    The data collected are for 47 French-speaking “provinces” at about
    1888.
 
-   Here, all variables are scaled to *[0, 100]*, where in the original,
-   all but ``"Catholic"`` were scaled to *[0, 1]*.
+   Here, all variables are scaled to ``[0, 100]``, where in the
+   original, all but ``"Catholic"`` were scaled to ``[0, 1]``.
 
    .. rubric:: Note
       :name: note

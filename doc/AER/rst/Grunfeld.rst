@@ -100,7 +100,7 @@
 
    Kleiber, C., and Zeileis, A. (2010). “The Grunfeld Data at 50.”
    *German Economic Review*, **11**\ (4), 404–417.
-   http://dx.doi.org/10.1111/j.1468-0475.2010.00513.x
+   `doi:10.1111/j.1468-0475.2010.00513.x <https://doi.org/10.1111/j.1468-0475.2010.00513.x>`__
 
    .. rubric:: See Also
       :name: see-also

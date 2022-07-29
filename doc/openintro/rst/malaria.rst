@@ -32,7 +32,7 @@
       ``placebo``.
 
    outcome
-      Whether the person got an ``infection`` or ``no infection``.
+      Whether the person got an ``infection`` or ``⁠no infection⁠``.
 
    .. rubric:: Details
       :name: details
@@ -57,7 +57,6 @@
       :name: examples
 
    ::
-
 
       library(dplyr)
 

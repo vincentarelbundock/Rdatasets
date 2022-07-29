@@ -60,17 +60,15 @@
       :name: source
 
    C. Silagy (2003), Nicotine replacement therapy for smoking cessation
-   (Cochrane Review). *The Cochrane Library*, **4**, John Wiley \\&
-   Sons, Chichester.
+   (Cochrane Review). *The Cochrane Library*, **4**, John Wiley & Sons,
+   Chichester.
 
    .. rubric:: Examples
       :name: examples
 
    ::
 
-
         data("smoking", package = "HSAUR")
         boxplot(smoking$qt/smoking$tt,
                 smoking$qc/smoking$tc,
                 names = c("Treated", "Control"), ylab = "Percent Quitters")
-

@@ -1,29 +1,54 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Labour Training Evaluation Data</title>
+<!DOCTYPE html><html><head><title>R: Labour Training Evaluation Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for psid2"><tr><td>psid2</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>nswpsid1</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Labour Training Evaluation Data</h2>
 
 <h3>Description</h3>
 
-<p>A non-experimental &quot;control&quot; group, used in various studies of
+<p>The <code>cps1</code>  (15992 rows) and <code>psid1</code> (2490 rows)
+datasets are from
+non-experimental &quot;control&quot; groups, used in various studies of
 the effect of a labor training program, alternative to the
 experimental control group in <code>nswdemo</code>.
+The <code>cps2</code> (2369 rows) and <code>cps3</code> (429 rows) subsets
+of <code>cps1</code> are designed to 
+be better matched to the experimental data than <code>cps1</code>.
+Likewise, <code>psid2</code> (253 rows) and <code>psid3</code> (128 rows)
+are subsets of <code>psid1</code> that are
+designed to be better matched to the experimental data than
+<code>psid1</code>.
+The <code>nswpsid1</code> dataset (2675 rows) combines the experimental
+treatment group in <code>nswdemo</code> with the <code>psid1</code> 
+control data from the Panel Study of Income Dynamics
+(PSID) study.
 </p>
 
 
 <h3>Usage</h3>
 
-<pre>psid2</pre>
+<pre><code class='language-R'>  data(psid1)
+  data(nswpsid1)
+  </code></pre>
 
 
 <h3>Format</h3>
 
-<p>This data frame contains the following columns:
+<p>Columns are:
 </p>
 
 <dl>
@@ -63,13 +88,15 @@ be satisfactory. <code>cps2</code> and <code>cps3</code> are subsets of <code>cp
 designed to be better matched to the experimental data than <code>cps1</code>.
 Similary <code>psid2</code> and <code>psid3</code> are subsets of <code>psid1</code>,
 designed to be better matched to the experimental data than
-<code>psid1</code>.
+<code>psid1</code>. <code>nswpsid1</code> combines data for the experimental
+treatment group in <code>nswdemo</code> with the <code>psid1</code> control data
+from the Panel Study of Income Dynamics (PSID) study.
 </p>
 
 
 <h3>Source</h3>
 
-<p>http://www.nber.org/~rdehejia/nswdata.html
+<p><a href="https://users.nber.org/~rdehejia/nswdata.html">https://users.nber.org/~rdehejia/nswdata.html</a>
 </p>
 
 
@@ -81,7 +108,7 @@ programs. <em>Journal of the American Statistical Association</em> 94:
 1053-1062.
 </p>
 <p>Lalonde, R. 1986. Evaluating the economic evaluations of
-training programs. American Economic Review 76: 604-620.
+training programs. <em>American Economic Review</em> 76: 604-620.
 </p>
 <p>Smith, J. A. and Todd, P.E. &quot;Does Matching overcome. LaLonde?s
 critique of nonexperimental estimators&quot;, <em>Journal of
@@ -92,4 +119,5 @@ Smith and Todd. <em>Journal of Econometrics</em> 125: 355-364.
 </p>
 
 
-</div></body></html>
+</div>
+</body></html>

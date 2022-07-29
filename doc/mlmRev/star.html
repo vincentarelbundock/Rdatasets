@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><title>R: Student Teacher Achievement Ratio (STAR) project data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>star</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Student Teacher Achievement Ratio (STAR) project data</h2>
+
+<h3>Description</h3>
+
+<p>Data from Tennessee's Student Teacher Achievement Ratio (STAR) project
+which was  a large-scale, four-year study of the effect of reduced class size.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(star)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 26796 observations on the following 18 variables.
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p>a factor - student id number</p>
+</dd>
+<dt><code>sch</code></dt><dd><p>a factor - school id number</p>
+</dd>
+<dt><code>gr</code></dt><dd><p>grade - an ordered factor with levels <code>K</code> &lt;
+<code>1</code> &lt; <code>2</code> &lt; <code>3</code></p>
+</dd> 
+<dt><code>cltype</code></dt><dd><p>class type - a factor with levels <code>small</code>,
+<code>reg</code> and <code>reg+A</code>.  The last level indicates a regular
+class size with a teachers aide.</p>
+</dd> 
+<dt><code>hdeg</code></dt><dd><p>highest degree obtained by the teacher - an
+ordered factor with levels <code>ASSOC</code> &lt; <code>BS/BA</code> &lt;
+<code>MS/MA/MEd</code> &lt; <code>MA+</code> &lt; <code>Ed.S</code> &lt; <code>Ed.D/Ph.D</code></p>
+</dd> 
+<dt><code>clad</code></dt><dd><p>career ladder position of the teacher - a factor
+with levels <code>NOT</code> <code>APPR</code> <code>PROB</code> <code>PEND</code>
+<code>1</code> <code>2</code> <code>3</code></p>
+</dd> 
+<dt><code>exp</code></dt><dd><p>a numeric vector - the total number of years of
+experience of the teacher</p>
+</dd>
+<dt><code>trace</code></dt><dd><p>teacher's race - a factor with levels <code>W</code>,
+<code>B</code>, <code>A</code>, <code>H</code>, <code>I</code> and <code>O</code> representing
+white, black, Asian, Hispanic, Indian (Native American) and other</p>
+</dd>
+<dt><code>read</code></dt><dd><p>the student's total reading scaled score</p>
+</dd>
+<dt><code>math</code></dt><dd><p>the student's total math scaled score</p>
+</dd>
+<dt><code>ses</code></dt><dd><p>socioeconomic status - a factor with levels
+<code>F</code> and <code>N</code> representing eligible for free lunches or
+not eligible</p>
+</dd>
+<dt><code>schtype</code></dt><dd><p>school type - a factor with levels
+<code>inner</code>, <code>suburb</code>, <code>rural</code> and <code>urban</code></p>
+</dd>
+<dt><code>sx</code></dt><dd><p>student's sex - a factor with levels <code>M</code> <code>F</code></p>
+</dd>
+<dt><code>eth</code></dt><dd><p>student's ethnicity - a factor with the same
+levels as <code>trace</code></p>
+</dd>
+<dt><code>birthq</code></dt><dd><p>student's birth quarter - an ordered factor with
+levels <code>1977:1</code> &lt; ... &lt; <code>1982:2</code></p>
+</dd>
+<dt><code>birthy</code></dt><dd><p>student's birth year - an ordered factor with levels <code>1977:1982</code></p>
+</dd>
+<dt><code>yrs</code></dt><dd><p>number of years of schooling for the student - a
+numeric version of the grade <code>gr</code> with Kindergarten
+represented as 0.  This variable was generated from <code>gr</code> and
+does not allow for a student being retained.</p>
+</dd>
+<dt><code>tch</code></dt><dd><p>a factor - teacher id number</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Details of the original data source and the process of conversion to
+this representation are given in the vignette.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.heros-inc.org/data.htm">http://www.heros-inc.org/data.htm</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>str(star)
+</code></pre>
+
+
+</div>
+</body></html>

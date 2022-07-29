@@ -94,8 +94,6 @@
 
    ::
 
-
       # data set 'Wages' is organized as a stacked time series/balanced panel
       data("Wages", package = "plm")
       Wag <- pdata.frame(Wages, index=595)
-

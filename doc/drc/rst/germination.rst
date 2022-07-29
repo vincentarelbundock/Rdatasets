@@ -76,7 +76,6 @@
 
    ::
 
-
       ## Fitting two-parameter log-logistic curves to each combination of species and temperature 
       ##  (upper limit fixed at 1)
       ## Note: Rows 24 and 62 are omitted from the dataset (all mungbean seeds germinated 
@@ -151,4 +150,3 @@
       #legendPos=c(3, 1.05), 
       #legendText=c(expression(10*degree), expression(16*degree), expression(22*degree), 
       #expression(28*degree), expression(34*degree), expression(40*degree)))
-

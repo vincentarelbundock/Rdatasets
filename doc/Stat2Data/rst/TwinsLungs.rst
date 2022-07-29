@@ -22,7 +22,7 @@
    ``Pair``    Code for the twin pair: ``A`` - ``G``
    ``Environ`` Living environment: ``Rural`` or ``Urban``
    ``Percent`` Percentage of radioactivity remaining in lungs
-   \          
+   \           
    =========== ==============================================
 
    .. rubric:: Details

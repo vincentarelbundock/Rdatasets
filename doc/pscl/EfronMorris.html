@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Batting Averages for 18 major league baseball players, 1970</title>
+<!DOCTYPE html><html><head><title>R: Batting Averages for 18 major league baseball players, 1970</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for EfronMorris"><tr><td>EfronMorris</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>EfronMorris</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Batting Averages for 18 major league baseball players, 1970</h2>
 
@@ -16,7 +26,7 @@ first 45 at bats of the 1970 season.</p>
 
 <h3>Usage</h3>
 
-<pre>data(EfronMorris)</pre>
+<pre><code class='language-R'>data(EfronMorris)</code></pre>
 
 
 <h3>Format</h3>
@@ -53,8 +63,7 @@ Statistical Association</em>. 70:311-319.
 
 <h3>Examples</h3>
 
-<pre>
-data(EfronMorris)
+<pre><code class='language-R'>data(EfronMorris)
 attach(EfronMorris)
 plot(p~y,
      xlim=range(p,y),
@@ -62,7 +71,8 @@ plot(p~y,
      xlab="Batting Average, 1st 45 at bats",
      ylab="Batting Average, Remainder of Season")
 abline(0,1)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

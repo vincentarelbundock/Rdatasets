@@ -23,7 +23,7 @@
    ``PctReport`` Percentage of selected jurors who report
    ``Year``      ``1998`` or ``2000``
    ``I2000``     Indicator for data from the year 2000
-   \            
+   \             
    ============= ==================================================
 
    .. rubric:: Details

@@ -46,8 +46,8 @@
 
    Crampton, E. W. (1947). The growth of the odontoblast of the incisor
    teeth as a criterion of vitamin C intake of the guinea pig. *The
-   Journal of Nutrition*, **33**\ (5), 491–504. doi:
-   `10.1093/jn/33.5.491 <https://doi.org/10.1093/jn/33.5.491>`__.
+   Journal of Nutrition*, **33**\ (5), 491–504.
+   `doi:10.1093/jn/33.5.491 <https://doi.org/10.1093/jn/33.5.491>`__.
 
    .. rubric:: Examples
       :name: examples

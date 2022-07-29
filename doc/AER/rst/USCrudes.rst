@@ -59,7 +59,6 @@
       fm <- lm(price ~ sulphur + gravity, data = USCrudes)
 
       ## 3D Visualization
-      if(require("scatterplot3d")) {
-        s3d <- scatterplot3d(USCrudes[, 3:1], pch = 16)
-        s3d$plane3d(fm, lty.box = "solid", col = 4)
-      }
+      library("scatterplot3d")
+      s3d <- scatterplot3d(USCrudes[, 3:1], pch = 16)
+      s3d$plane3d(fm, lty.box = "solid", col = 4)

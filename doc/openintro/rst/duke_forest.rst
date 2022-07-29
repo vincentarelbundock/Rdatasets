@@ -76,7 +76,6 @@
 
    ::
 
-
       library(ggplot2)
 
       # Number of bedrooms and price

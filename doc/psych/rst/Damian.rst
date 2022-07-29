@@ -130,4 +130,3 @@
       mod <- psych::mediate(OccPres.50 ~ IQ + Parental + (Ed.11),data=Spengler,
              n.iter=50,n.obs=1000) #for speed
       summary(mod)
-

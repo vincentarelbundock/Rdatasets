@@ -4,7 +4,7 @@
    SP500 R Documentation
    ===== ===============
 
-   .. rubric:: Returns on Standard \\& Poor's 500 Index
+   .. rubric:: Returns on Standard & Poor's 500 Index
       :name: returns-on-standard-poors-500-index
 
    .. rubric:: Description
@@ -27,7 +27,7 @@
    A dataframe containing :
 
    r500
-      daily return S\&P500 (change in log index)
+      daily return S&P500 (change in log index)
 
    .. rubric:: References
       :name: references

@@ -10,8 +10,8 @@
    .. rubric:: Description
       :name: description
 
-   Data from von Bortkiewicz (1898), given by Andrews \\& Herzberg
-   (1985), on number of deaths by horse or mule kicks in 14 corps of the
+   Data from von Bortkiewicz (1898), given by Andrews & Herzberg (1985),
+   on number of deaths by horse or mule kicks in 14 corps of the
    Prussian army.
 
    .. rubric:: Usage
@@ -48,7 +48,7 @@
    .. rubric:: References
       :name: references
 
-   D. F. Andrews \\& A. M. Herzberg (1985), *Data: A Collection of
+   D. F. Andrews & A. M. Herzberg (1985), *Data: A Collection of
    Problems from Many Fields for the Student and Research Worker*.
    Springer-Verlag, New York, NY.
 

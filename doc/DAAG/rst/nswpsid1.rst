@@ -10,24 +10,31 @@
    .. rubric:: Description
       :name: description
 
-   This data frame contains 2787 rows and 10 columns. These data are
-   pertinent to an investigation of the way that earnings changed,
-   between 1974-1975 and 1978, in the absence of training. Data for the
-   experimental treatment group in ``nswdemo`` are combined with the
-   ``psid1`` control data from the Panel Study of Income Dynamics (PSID)
-   study.
+   The ``cps1`` (15992 rows) and ``psid1`` (2490 rows) datasets are from
+   non-experimental "control" groups, used in various studies of the
+   effect of a labor training program, alternative to the experimental
+   control group in ``nswdemo``. The ``cps2`` (2369 rows) and ``cps3``
+   (429 rows) subsets of ``cps1`` are designed to be better matched to
+   the experimental data than ``cps1``. Likewise, ``psid2`` (253 rows)
+   and ``psid3`` (128 rows) are subsets of ``psid1`` that are designed
+   to be better matched to the experimental data than ``psid1``. The
+   ``nswpsid1`` dataset (2675 rows) combines the experimental treatment
+   group in ``nswdemo`` with the ``psid1`` control data from the Panel
+   Study of Income Dynamics (PSID) study.
 
    .. rubric:: Usage
       :name: usage
 
    ::
 
-      psid1
+        data(psid1)
+        data(nswpsid1)
+        
 
    .. rubric:: Format
       :name: format
 
-   This data frame contains the following columns:
+   Columns are:
 
    trt
       a numeric vector identifying the study in which the subjects were
@@ -77,7 +84,7 @@
    .. rubric:: Source
       :name: source
 
-   http://www.nber.org/~rdehejia/nswdata.html
+   https://users.nber.org/~rdehejia/nswdata.html
 
    .. rubric:: References
       :name: references

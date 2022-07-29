@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Determinants of Wages Data (CPS 1985)</title>
+<!DOCTYPE html><html><head><title>R: Determinants of Wages Data (CPS 1985)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for CPS1985"><tr><td>CPS1985</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>CPS1985</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Determinants of Wages Data (CPS 1985)</h2>
 
@@ -17,7 +27,7 @@ by the US Census Bureau (random sample drawn for Berndt 1991).
 
 <h3>Usage</h3>
 
-<pre>data("CPS1985")</pre>
+<pre><code class='language-R'>data("CPS1985")</code></pre>
 
 
 <h3>Format</h3>
@@ -79,8 +89,7 @@ worker), <code>"office"</code> (office and clerical worker), <code>"sales"</code
 
 <h3>Examples</h3>
 
-<pre>
-data("CPS1985")
+<pre><code class='language-R'>data("CPS1985")
 
 ## Berndt (1991)
 ## Exercise 2, p. 196
@@ -115,7 +124,8 @@ cps_8a &lt;- lm(log(wage) ~ gender + union + ethnicity + education + experience 
   data = CPS1985)
 summary(cps_8a)
 coeftest(cps_8a, vcov = vcovHC(cps_8a, type = "HC0"))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

@@ -27,7 +27,7 @@
    religion
       Name of religion
 
-   ``<$10k``-``Don\'t know/refused``
+   ``⁠<$10k⁠``-``⁠Don\'t know/refused⁠``
       Number of respondees with income range in column name
 
    .. rubric:: Source

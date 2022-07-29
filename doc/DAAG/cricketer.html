@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Lifespans of UK 1st class cricketers born 1840-1960</title>
+<!DOCTYPE html><html><head><title>R: Lifespans of UK 1st class cricketers born 1840-1960</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for cricketer"><tr><td>cricketer</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>cricketer</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Lifespans of UK 1st class cricketers born 1840-1960</h2>
 
@@ -19,7 +29,7 @@ information in the Who's who of cricketers.  The status
 
 <h3>Usage</h3>
 
-<pre>data(cricketer)</pre>
+<pre><code class='language-R'>data(cricketer)</code></pre>
 
 
 <h3>Format</h3>
@@ -87,8 +97,7 @@ Significance 2, 166-170.
 
 <h3>Examples</h3>
 
-<pre>
-data(cricketer)
+<pre><code class='language-R'>data(cricketer)
 numLH &lt;- xtabs(~ left+year, data=cricketer)
 propLH &lt;- prop.table(numLH, margin=2)[2,]
 yr &lt;- as.numeric(colnames(numLH))
@@ -104,7 +113,8 @@ require(survival)
 summary(coxph(Surv(life, kia) ~ bs(year,3) +left, data=cricketer))
 cricketer$notacdDead &lt;- with(cricketer, {dead[acd==1]&lt;-0; dead})
 summary(coxph(Surv(life, notacdDead) ~ ns(year,2) +left, data=cricketer))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

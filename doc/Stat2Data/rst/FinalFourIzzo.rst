@@ -18,15 +18,13 @@
 
    A dataset with 1664 observations on the following 4 variables.
 
-   ==========
-   ============================================================
+   ========== ============================================================
    ``Year``   Year (1985 - 2010)
    ``Seed``   Seed in NCAA men's basketball tournament: 1 to 16
    ``Final4`` ``1``\ =made Final Four or ``0``\ =did not make Final Four
    ``Izzo``   ``1``\ =team coached by Tom Izzo or ``0``\ =not an Izzo team
-   \         
-   ==========
-   ============================================================
+   \          
+   ========== ============================================================
 
    .. rubric:: Details
       :name: details

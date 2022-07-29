@@ -31,6 +31,4 @@
 
    ::
 
-
       autoplot(hyndsight, xlab="Weeks")
-

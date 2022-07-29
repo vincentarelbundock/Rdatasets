@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Automobile Data from 'Consumer Reports' 1990</title>
+<!DOCTYPE html><html><head><title>R: Automobile Data from 'Consumer Reports' 1990</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for car90"><tr><td>car90</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>car90</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Automobile Data from 'Consumer Reports' 1990</h2>
 
@@ -17,7 +27,7 @@ April 1990 <em>Consumer Reports</em> Magazine.
 
 <h3>Usage</h3>
 
-<pre>data(car90)</pre>
+<pre><code class='language-R'>data(car90)</code></pre>
 
 
 <h3>Format</h3>
@@ -72,9 +82,9 @@ as measured by CU</p>
 </dd>
 <dt>RearShld</dt><dd><p>rear shoulder room, in inches, as measured by CU</p>
 </dd>
-<dt>Reliability</dt><dd><p>an ordered factor with levels <span class="samp">Much worse</span> &lt;
-<span class="samp">worse</span> &lt; <span class="samp">average</span> &lt; <span class="samp">better</span> &lt; <span class="samp">Much
-	better</span>: contains <code>NA</code>s.</p>
+<dt>Reliability</dt><dd><p>an ordered factor with levels &lsquo;<span class="samp">&#8288;Much worse&#8288;</span>&rsquo; &lt;
+&lsquo;<span class="samp">&#8288;worse&#8288;</span>&rsquo; &lt; &lsquo;<span class="samp">&#8288;average&#8288;</span>&rsquo; &lt; &lsquo;<span class="samp">&#8288;better&#8288;</span>&rsquo; &lt; &lsquo;<span class="samp">&#8288;Much
+	better&#8288;</span>&rsquo;: contains <code>NA</code>s.</p>
 </dd>
 <dt>Rim</dt><dd><p>factor giving the rim size</p>
 </dd>
@@ -90,18 +100,18 @@ wheel required for a turn of 30 foot radius, power steering</p>
 </dd>
 <dt>Tires</dt><dd><p>factor giving tire size</p>
 </dd>
-<dt>Trans1</dt><dd><p>manual transmission, a factor with levels <span class="samp"></span>,
-<span class="samp">man.4</span>, <span class="samp">man.5</span> and <span class="samp">man.6</span></p>
+<dt>Trans1</dt><dd><p>manual transmission, a factor with levels &lsquo;<span class="samp">&#8288;&#8288;</span>&rsquo;,
+&lsquo;<span class="samp">&#8288;man.4&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;man.5&#8288;</span>&rsquo; and &lsquo;<span class="samp">&#8288;man.6&#8288;</span>&rsquo;</p>
 </dd>
-<dt>Trans2</dt><dd><p>automatic transmission, a factor with levels <span class="samp"></span>,
-<span class="samp">auto.3</span>, <span class="samp">auto.4</span>, and <span class="samp">auto.CVT</span>.  No car is
+<dt>Trans2</dt><dd><p>automatic transmission, a factor with levels &lsquo;<span class="samp">&#8288;&#8288;</span>&rsquo;,
+&lsquo;<span class="samp">&#8288;auto.3&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;auto.4&#8288;</span>&rsquo;, and &lsquo;<span class="samp">&#8288;auto.CVT&#8288;</span>&rsquo;.  No car is
 missing both the manual and automatic transmission variables, but
 several had both as options</p>
 </dd> 
 <dt>Turning</dt><dd><p>the radius of the turning circle in feet</p>
 </dd>
 <dt>Type</dt><dd><p>a factor giving the general type of car.
-The levels are: <span class="samp">Small</span>, <span class="samp">Sporty</span>, <span class="samp">Compact</span>, <span class="samp">Medium</span>, <span class="samp">Large</span>, <span class="samp">Van</span></p>
+The levels are: &lsquo;<span class="samp">&#8288;Small&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;Sporty&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;Compact&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;Medium&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;Large&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;Van&#8288;</span>&rsquo;</p>
 </dd>
 <dt>Weight</dt><dd><p>an order statistic giving the relative weights of the
 cars; 1 is the lightest and 111 is the heaviest</p>
@@ -129,8 +139,7 @@ S-PLUS, but with some further clean up of variable names and definitions.
 
 <h3>Examples</h3>
 
-<pre>
-data(car90)
+<pre><code class='language-R'>data(car90)
 plot(car90$Price/1000, car90$Weight,
      xlab = "Price (thousands)", ylab = "Weight (lbs)")
 mlowess &lt;- function(x, y, ...) {
@@ -138,7 +147,8 @@ mlowess &lt;- function(x, y, ...) {
     lowess(x[keep], y[keep], ...)
 }
 with(car90, lines(mlowess(Price/1000, Weight, f = 0.5)))
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

@@ -44,7 +44,8 @@
    Latter, O.H. (1902). The eggs of Cuculus canorus. An Inquiry into the
    dimensions of the cuckoo's egg and the relation of the variations to
    the size of the eggs of the foster-parent, with notes on coloration,
-   &c. Biometrika i, 164.
+   &c. Biometrika i, 164. Tippett (1931) gives summary details of the
+   data.
 
    .. rubric:: References
       :name: references

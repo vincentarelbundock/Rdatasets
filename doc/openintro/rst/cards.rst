@@ -42,7 +42,6 @@
 
    ::
 
-
       table(cards$value)
       table(cards$color)
       table(cards$suit)

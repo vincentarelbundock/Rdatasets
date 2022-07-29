@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Vehicle info from the EPA for 2021</title>
+<!DOCTYPE html><html><head><title>R: Vehicle info from the EPA for 2021</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for epa2021"><tr><td>epa2021</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>epa2021</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Vehicle info from the EPA for 2021</h2>
 
@@ -16,9 +26,8 @@
 
 <h3>Usage</h3>
 
-<pre>
-epa2021
-</pre>
+<pre><code class='language-R'>epa2021
+</code></pre>
 
 
 <h3>Format</h3>
@@ -77,7 +86,7 @@ epa2021
 </dd>
 <dt>class</dt><dd><p>Class of car.</p>
 </dd>
-<dt>car_truck</dt><dd><p>Car or truck, a factor with levels <code>car</code>, <code>1</code>, <code style="white-space: pre;">??</code>, <code>1</code>.</p>
+<dt>car_truck</dt><dd><p>Car or truck, a factor with levels <code>car</code>, <code>1</code>, <code style="white-space: pre;">&#8288;??&#8288;</code>, <code>1</code>.</p>
 </dd>
 <dt>release_date</dt><dd><p>Date of vehicle release.</p>
 </dd>
@@ -101,8 +110,7 @@ epa2021
 
 <h3>Examples</h3>
 
-<pre>
-
+<pre><code class='language-R'>
 library(ggplot2)
 library(dplyr)
 
@@ -125,7 +133,8 @@ epa2021 %&gt;%
     mean_city = mean(city_mpg),
     mean_hwy  = mean(hwy_mpg)
   )
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

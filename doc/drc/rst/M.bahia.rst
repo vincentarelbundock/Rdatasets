@@ -53,7 +53,6 @@
 
    ::
 
-
       M.bahia.m1 <- drm(dryweight~conc, data=M.bahia, fct=LN.3())
 
       ## Variation increasing
@@ -77,4 +76,3 @@
       #plot(fitted(M.bahia.m3), residuals(M.bahia.m3))
       plot(M.bahia.m3, add=TRUE, type="none", broken=TRUE, lty=3, col=2)
       ED(M.bahia.m3, c(10,20,50), ci="fls")
-

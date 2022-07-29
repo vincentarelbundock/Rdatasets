@@ -24,10 +24,10 @@
       :name: format
 
    A data frame with 7 economical variables, observed yearly from 1947
-   to 1962 (*n=16*).
+   to 1962 (``n=16``).
 
    ``GNP.deflator``
-      GNP implicit price deflator (*1954=100*)
+      GNP implicit price deflator (``1954=100``)
 
    ``GNP``
       Gross National Product.
@@ -39,7 +39,7 @@
       number of people in the armed forces.
 
    ``Population``
-      ‘noninstitutionalized’ population *≥* 14 years of age.
+      ‘noninstitutionalized’ population ``\ge`` 14 years of age.
 
    ``Year``
       the year (time).

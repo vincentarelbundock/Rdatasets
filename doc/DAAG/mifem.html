@@ -1,28 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Mortality Outcomes for Females Suffering Myocardial...</title>
+<!DOCTYPE html><html><head><title>R: WHO Monica Data</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for mifem"><tr><td>mifem</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>monica</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>Mortality Outcomes for Females Suffering Myocardial Infarction</h2>
+<h2>WHO Monica Data</h2>
 
 <h3>Description</h3>
 
-<p>The <code>mifem</code> data frame has 1295 rows and 10 columns.  This is the
-female subset of the 'monica' data frame
+<p>The <code>monica</code> data frame has 6357 rows and 12 columns. The
+dataset <code>mifem</code> (1295 rows) is the subset that has data
+for females.
 </p>
 
 
 <h3>Usage</h3>
 
-<pre>mifem</pre>
+<pre><code class='language-R'>  data(monica)
+  data(mifem)
+  </code></pre>
 
 
 <h3>Format</h3>
 
-<p>This data frame contains the following columns:
+<p>Columns are:
 </p>
 
 <dl>
@@ -30,6 +43,10 @@ female subset of the 'monica' data frame
 <code>dead</code></p>
 </dd> 
 <dt>age</dt><dd><p>age at onset</p>
+</dd>
+<dt>sex</dt><dd><p>m = male, f = female</p>
+</dd>
+<dt>hosp</dt><dd><p>y = hospitalized, n = not hospitalized</p>
 </dd>
 <dt>yronset</dt><dd><p>year of onset</p>
 </dd>
@@ -67,12 +84,19 @@ project; see the web site http://www.ktl.fi/monica
 
 <h3>Examples</h3>
 
-<pre>
-print("CART - Example 10.7")
-summary(mifem)
+<pre><code class='language-R'>print("CART - Example 10.7")
+summary(monica)
 pause()
 
-require(rpart)
+library(rpart)
+monica.rpart &lt;- rpart(outcome ~ ., data = monica, cp = 0.0025)
+plotcp(monica.rpart)
+printcp(monica.rpart)
+pause()
+monicab.rpart &lt;- prune(monica.rpart, cp=0.006)
+print(monicab.rpart)
+summary(mifem)
+pause()
 mifem.rpart &lt;- rpart(outcome ~ ., data = mifem, cp = 0.0025)
 plotcp(mifem.rpart)
 printcp(mifem.rpart)
@@ -80,7 +104,8 @@ pause()
 
 mifemb.rpart &lt;- prune(mifem.rpart, cp=0.006)
 print(mifemb.rpart)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

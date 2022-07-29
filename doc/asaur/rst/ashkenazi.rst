@@ -58,4 +58,3 @@
    ::
 
       data(ashkenazi)
-

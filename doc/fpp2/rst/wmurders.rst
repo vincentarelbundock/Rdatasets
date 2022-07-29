@@ -28,6 +28,4 @@
 
    ::
 
-
       autoplot(wmurders)
-

@@ -20,7 +20,7 @@
    ========= ==================================
    ``Pages`` Number of pages in the textbook
    ``Price`` Price of the textbook (in dollars)
-   \        
+   \         
    ========= ==================================
 
    .. rubric:: Details

@@ -45,8 +45,7 @@
    .. rubric:: Format
       :name: format
 
-   =========
-   =============================================================
+   ========= =============================================================
    age:      in years
    albumin:  serum albumin (g/dl)
    alk.phos: alkaline phosphotase (U/liter)
@@ -69,9 +68,8 @@
    \         transplantion, or study analysis in July, 1986
    trt:      1/2/NA for D-penicillmain, placebo, not randomised
    trig:     triglycerides (mg/dl)
-   \        
-   =========
-   =============================================================
+   \         
+   ========= =============================================================
 
    .. rubric:: Source
       :name: source

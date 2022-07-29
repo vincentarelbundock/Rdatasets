@@ -73,7 +73,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(hsb2, aes(x = read - write, y = ses)) +

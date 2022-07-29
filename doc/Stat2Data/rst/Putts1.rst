@@ -20,7 +20,7 @@
    ========== ================================================
    ``Length`` Length of the putt (in feet)
    ``Made``   ``1``\ =made the putt or ``0``\ =missed the putt
-   \         
+   \          
    ========== ================================================
 
    .. rubric:: Details

@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Five data sets from Harman (1967). 9 cognitive variables from...</title>
+<!DOCTYPE html><html><head><title>R: Five data sets from Harman (1967). 9 cognitive variables from...</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for Harman"><tr><td>Harman</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>Harman</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Five data sets from Harman (1967). 9 cognitive variables from Holzinger and 8 emotional variables from Burt</h2>
 
@@ -16,11 +26,11 @@
 
 <h3>Usage</h3>
 
-<pre>data(Harman)  
+<pre><code class='language-R'>data(Harman)  
 data(Harman.5)
 data(Harman.political)
 data(Harman.8)
-</pre>
+</code></pre>
 
 
 <h3>Details</h3>
@@ -102,13 +112,13 @@ composites. In Handbook of latent variable and related models, pages 1&ndash;17.
 
 <h3>Examples</h3>
 
-<pre>
-data(Harman)
+<pre><code class='language-R'>data(Harman)
 cor.plot(Harman.Holzinger)
 cor.plot(Harman.Burt)  
 smc(Harman.Burt)  #note how this produces impossible results
 f2 &lt;- fa(Harman.8,2, rotate="none")  #minres matches Harman and Jones
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

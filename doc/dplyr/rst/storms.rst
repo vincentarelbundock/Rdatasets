@@ -72,7 +72,6 @@
 
    ::
 
-
       # show a plot of the storm paths
       if (requireNamespace("ggplot2", quietly = TRUE)) {
         library(ggplot2)

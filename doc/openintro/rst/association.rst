@@ -74,7 +74,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(association, aes(x = x1, y = y1)) +

@@ -62,7 +62,6 @@
 
    ::
 
-
       ## Fitting the model with freely varying ED50 values
       mecter.free <- drm(rgr ~ dose, pct, data = mecter, 
       fct = LL.4(), pmodels = list(~1, ~1, ~1, ~factor(pct) - 1)) 
@@ -100,4 +99,3 @@
 
       ## Plotting isobole based on the Voelund model
       isobole(mecter.free, mecter.voe, exchange = 0.02)  # good fit
-

@@ -65,11 +65,11 @@
       :name: references
 
    Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   http://www.prenhall.com/greene/greene1.html, chapter 4, 317-320.
+   https://archive.org/details/econometricanaly0000gree_f4x3, chapter 4,
+   317-320.
 
    Hayashi, F. (2000) *Econometrics*, Princeton University Press,
-   http://fhayashi.fc2web.com/hayashi_econometrics.htm, chapter 1,
-   76-84.
+   https://archive.org/details/econometrics0000haya, chapter 1, 76-84.
 
    .. rubric:: See Also
       :name: see-also

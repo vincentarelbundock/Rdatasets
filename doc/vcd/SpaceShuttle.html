@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Space Shuttle O-ring Failures</title>
+<!DOCTYPE html><html><head><title>R: Space Shuttle O-ring Failures</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for SpaceShuttle"><tr><td>SpaceShuttle</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>SpaceShuttle</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Space Shuttle O-ring Failures</h2>
 
@@ -18,9 +28,8 @@ by Tufte (1997).
 
 <h3>Usage</h3>
 
-<pre>
-data("SpaceShuttle")
-</pre>
+<pre><code class='language-R'>data("SpaceShuttle")
+</code></pre>
 
 
 <h3>Format</h3>
@@ -74,8 +83,7 @@ SAS Institute, Cary, NC.
 
 <h3>Examples</h3>
 
-<pre>
-data("SpaceShuttle")
+<pre><code class='language-R'>data("SpaceShuttle")
 plot(nFailures/6 ~ Temperature, data = SpaceShuttle,
      xlim = c(30, 81), ylim = c(0,1),
      main = "NASA Space Shuttle O-Ring Failures",
@@ -88,7 +96,8 @@ lines(30 : 81,
       predict(fm, data.frame(Temperature = 30 : 81), type = "re"),
       lwd = 2)
 abline(v = 31, lty = 3)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

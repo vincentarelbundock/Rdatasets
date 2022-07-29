@@ -28,7 +28,7 @@
    A data frame with 25 observations on the following 9 variables.
 
    ``Steam``:
-      regression response *Y*, the poinds of steam used monthly.
+      regression response ``Y``, the poinds of steam used monthly.
 
    ``fattyAcid``:
       pounds of Real Fatty Acid in storage per month.
@@ -41,14 +41,14 @@
 
    ``days``:
       an integer vector with number of days of that month, i.e., in
-      *28..31*.
+      ``28..31``.
 
    ``op.days``:
       the number of operating days for the given month (integer).
 
    ``freeze.d``:
-      the number of days below 32 degrees Fahrenheit (*= 0*\ °C
-      (C=Celsius) *=* freezing temperature of water).
+      the number of days below 32 degrees Fahrenheit (``= 0``\ °C
+      (C=Celsius) ``=`` freezing temperature of water).
 
    ``temperature``:
       a numeric vector of average outside temperature in Fahrenheit (F).

@@ -28,6 +28,4 @@
 
    ::
 
-
       autoplot(calls, xlab="Weeks")
-

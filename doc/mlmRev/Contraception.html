@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><title>R: Contraceptive use in Bangladesh</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Contraception</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Contraceptive use in Bangladesh</h2>
+
+<h3>Description</h3>
+
+<p>These data on the use of contraception by women in urban and rural
+areas come from the 1988 Bangladesh Fertility Survey.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Contraception)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1934 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt>woman</dt><dd><p>Identifying code for each woman - a factor</p>
+</dd>
+<dt>district</dt><dd><p>Identifying code for each district - a factor</p>
+</dd>
+<dt>use</dt><dd><p>Contraceptive use at time of survey</p>
+</dd>
+<dt>livch</dt><dd><p>Number of living children at time of survey - an
+ordered factor.  Levels are <code>0</code>, <code>1</code>, <code>2</code>, <code>3+</code></p>
+</dd>
+<dt>age</dt><dd><p>Age of woman at time of survey (in years), centred around
+mean.</p>
+</dd>
+<dt>urban</dt><dd><p>Type of region of residence - a factor.  Levels are
+<code>urban</code> and <code>rural</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html">http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Steele, F., Diamond, I. And Amin, S. (1996). Immunization uptake in
+rural Bangladesh: a multilevel analysis. <em>Journal of the Royal
+Statistical Society, Series A</em> (159): 289-299.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>str(Contraception)
+summary(Contraception)
+(fm1 &lt;- glmer(use ~ urban+age+livch+(1|district), Contraception, binomial))
+(fm2 &lt;- glmer(use ~ urban+age+livch+(urban|district), Contraception, binomial))
+</code></pre>
+
+
+</div>
+</body></html>

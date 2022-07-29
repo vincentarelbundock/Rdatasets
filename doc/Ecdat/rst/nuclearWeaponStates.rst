@@ -134,7 +134,7 @@
       Crisis <https://en.wikipedia.org/wiki/Suez_Crisis>`__. On `France
       and Israel secretly agreed to collaborate in the development of
       nuclear
-      weapons <https://fas.org/nuke/guide/israel/nuke/farr.htm>`__.
+      weapons <https://nuke.fas.org/guide/israel/nuke/farr.htm>`__.
 
    -  ``CN`` `Mao Zedong reportedly decided to begin a Chinese
       nuclear-weapons
@@ -208,11 +208,11 @@
    US from `Hans M. Kristensen & Robert S. Norris (2018) United States
    nuclear forces,2018, Bulletin of the Atomic Scientists, 74:2,
    120-131, DOI:
-   10.1080/00963402.2018.143821 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1438219?needAccess=true>`__
+   10.1080/00963402.2018.143821 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1438219>`__
 
    Russia from `Hans M. Kristensen & Matt Korda (2019) Russian nuclear
    forces, 2019, Bulletin of the Atomic Scientists, 75:2, 73-84, DOI:
-   10.1080/00963402.2019.1580891 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2019.1580891?needAccess=true>`__
+   10.1080/00963402.2019.1580891 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2019.1580891>`__
 
    UK from `Robert S. Norris and Hans M. Kristensen (2013) The British
    nuclear stockpile, 1953-2013, Bulletin of the Atomic Scientists,
@@ -225,11 +225,11 @@
 
    China from `Hans M. Kristensen & Robert S. Norris (2018) Chinese
    nuclear forces, 2018,Bulletin of the Atomic Scientists, 74:4,
-   289-295 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1486620?needAccess=true>`__
+   289-295 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1486620>`__
 
    India from `Hans M. Kristensen & Robert S. Norris (2017) Indian
    nuclear forces, 2017,Bulletin of the Atomic Scientists, 73:4,
-   205-209 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2017.1337998?needAccess=true>`__
+   205-209 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2017.1337998>`__
 
    Israel from `Hans M. Kristensen and Robert S. Norris (2014) Israeli
    nuclear weapons, 2014, Bulletin of the Atomic Scientists, 70:6,
@@ -238,16 +238,16 @@
    Pakistan from `Hans M. Kristensen, Robert S. Norris & Julia Diamond
    (2018)Pakistani nuclear forces, 2018, Bulletin of the Atomic
    Scientists, 74:5,
-   348-358 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1507796?needAccess=true>`__
+   348-358 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1507796>`__
 
    North Korea from `Hans M. Kristensen & Robert S. Norris (2018) North
    Korean nuclear capabilities, 2018, Bulletin of the Atomic Scientists,
    74:1,
-   41-51 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2017.1413062?needAccess=true>`__
+   41-51 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2017.1413062>`__
 
    Derek Bolton (2012) North Korea's Nuclear Program (2012-08, American
    Security Program, accessed 2020-07-15)
-   `https://www.americansecurityproject.org/ASP%20Reports/Ref%200072%20-%20North%20Korea’s%20Nuclear%20Program%20.pdf <https://www.americansecurityproject.org/ASP%20Reports/Ref%200072%20-%20North%20Korea’s%20Nuclear%20Program%20.pdf>`__
+   https://www.americansecurityproject.org/ASP%20Reports/Ref%200072%20-%20North%20Korea%E2%80%99s%20Nuclear%20Program%20.pdf
 
    .. rubric:: Examples
       :name: examples

@@ -76,7 +76,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(sp500, aes(x = ent_value, y = earn_before)) +

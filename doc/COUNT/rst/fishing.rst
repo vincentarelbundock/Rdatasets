@@ -80,7 +80,6 @@
    ::
 
 
-
       ## Not run: 
       library(MASS)
       library(flexmix)

@@ -20,7 +20,7 @@
    =========== ================================
    ``Voltage`` Voltage (in volts)
    ``Time``    Time after charging (in seconds)
-   \          
+   \           
    =========== ================================
 
    .. rubric:: Details

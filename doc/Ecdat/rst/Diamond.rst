@@ -44,7 +44,7 @@
       ``HRD``)
 
    price
-      price in Singapore \\$
+      price in Singapore $
 
    .. rubric:: Source
       :name: source

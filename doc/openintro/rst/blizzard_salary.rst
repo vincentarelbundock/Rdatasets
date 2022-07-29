@@ -79,4 +79,3 @@
           x = "Salary",
           y = "Number of Employees"
         )
-

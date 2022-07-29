@@ -62,7 +62,7 @@
 
    birth_qrtr
       The quarter of the year that the person was born, e.g.
-      ``Jan thru Mar``.
+      ``⁠Jan thru Mar⁠``.
 
    .. rubric:: Source
       :name: source
@@ -73,7 +73,6 @@
       :name: examples
 
    ::
-
 
       library(dplyr)
       library(ggplot2)

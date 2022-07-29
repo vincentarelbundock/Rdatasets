@@ -29,7 +29,7 @@
    ``TotalGn``    Total gonadotropin level
    ``Oocytes``    Number of egg cells
    ``Embryos``    Number of embryos
-   \             
+   \              
    ============== ==========================================
 
    .. rubric:: Details

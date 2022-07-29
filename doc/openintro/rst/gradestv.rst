@@ -51,7 +51,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(gradestv, aes(x = tv, y = grades)) +

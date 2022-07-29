@@ -61,7 +61,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(ukdemo, aes(x = pay, y = rpi)) +

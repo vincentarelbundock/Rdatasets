@@ -1,0 +1,105 @@
+<!DOCTYPE html><html><head><title>R: Prenatal care in Guatemala</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>guPrenat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Prenatal care in Guatemala</h2>
+
+<h3>Description</h3>
+
+<p>Data on the prenatal care received by mothers in Guatemala.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(guPrenat)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2449 observations on the following 15 variables.
+</p>
+
+<dl>
+<dt>kid</dt><dd><p>a factor identifying the birth</p>
+</dd>
+<dt>mom</dt><dd><p>a factor identifying the mother or family</p>
+</dd>
+<dt>cluster</dt><dd><p>a factor identifying the community</p>
+</dd>
+<dt>prenat</dt><dd><p>a factor indicating if traditional or modern prenatal
+care was provided for the birth.</p>
+</dd>
+<dt>childAge</dt><dd><p>an ordered factor of the child's age at the time of
+the survey. </p>
+</dd>
+<dt>motherAge</dt><dd><p>a factor indicating if the mother was older or
+younger.  The cut-off age is 25 years.</p>
+</dd>
+<dt>birthOrd</dt><dd><p>an ordered factor for the birth's order within the family.</p>
+</dd>
+<dt>indig</dt><dd><p>a factor indicating if the mother is Ladino, or
+indigenous not speaking Spanish, or indigenous speaking Spanish.</p>
+</dd>
+<dt>momEd</dt><dd><p>a factor describing the mother's level of eduation.</p>
+</dd>
+<dt>husEd</dt><dd><p>a factor describing the husband's level of education.</p>
+</dd>
+<dt>husEmpl</dt><dd><p>a factor describing the husband's employment status.</p>
+</dd>
+<dt>toilet</dt><dd><p>a factor indicating if there is a modern toilet in the
+house.</p>
+</dd>
+<dt>TV</dt><dd><p>a factor indicating if there is a TV in the house and, if
+so, the frequency with which it is used.</p>
+</dd>
+<dt>pcInd81</dt><dd><p>the percentage of indigenous population in the
+community at the 1981 census.</p>
+</dd>
+<dt>ssDist</dt><dd><p>distance from the community to the nearest clinic.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>These data are available at
+<a href="http://data.princeton.edu/multilevel/guPrenat.dat">http://data.princeton.edu/multilevel/guPrenat.dat</a>.  Multiple
+indicator columns in the original data table have been collapsed to
+factors for this data frame.
+</p>
+
+
+<h3>References</h3>
+
+<p>Rodriguez, Germán and Goldman, Noreen (1995), &quot;Improved estimation
+procedures for multilevel models with binary response: a case-study&quot;,
+<em>Journal of the Royal Statistical Society, Series A</em>, <b>164</b>,
+339-355.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(guPrenat)
+summary(guPrenat)
+</code></pre>
+
+
+</div>
+</body></html>

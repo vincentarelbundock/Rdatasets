@@ -25,7 +25,7 @@
    ``Months``       Months since August 1975
    ``Late``         ``1``\ =after 1986 or ``0``\ =before 1986
    ``Unemployment`` Unemployment rate
-   \               
+   \                
    ================ ==============================================
 
    .. rubric:: Details

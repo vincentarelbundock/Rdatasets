@@ -1,25 +1,26 @@
 .. container::
 
-   =========== ===============
-   leafshape17 R Documentation
-   =========== ===============
+   ========= ===============
+   leafshape R Documentation
+   ========= ===============
 
-   .. rubric:: Subset of Leaf Shape Data Set
-      :name: subset-of-leaf-shape-data-set
+   .. rubric:: Full Leaf Shape Data Set
+      :name: full-leaf-shape-data-set
 
    .. rubric:: Description
       :name: description
 
-   The ``leafshape17`` data frame has 61 rows and 8 columns. These are
-   leaf length, width and petiole measurements taken at several sites in
-   Australia. This is a subset of the ``leafshape`` data frame.
+   Leaf length, width and petiole measurements taken at various sites
+   worldwide. The ``leafshape17`` data frame is the subset that has data
+   for North Queensland sites.
 
    .. rubric:: Usage
       :name: usage
 
    ::
 
-      leafshape17
+      data(leafshape)
+      data(leafshape17)
 
    .. rubric:: Format
       :name: format
@@ -42,13 +43,17 @@
       natural logarithm of width
 
    logpet
-      logarithm of petiole measurement
+      logarithm of petiole
 
    loglen
       logarithm of length
 
    arch
-      leaf architecture (0 = orthotropic, 1 = plagiotropic)
+      leaf architecture (0 = plagiotropic, 1 = orthotropic
+
+   location
+      a factor with levels ``Sabah``, ``Panama``, ``Costa Rica``,
+      ``N Queensland``, ``S Queensland``, ``Tasmania``
 
    .. rubric:: Source
       :name: source
@@ -62,9 +67,7 @@
 
    ::
 
-      print("Discriminant Analysis - Example 11.2")
-
-      require(MASS)
+      library(MASS)
       leaf17.lda <- lda(arch ~ logwid+loglen, data=leafshape17)
       leaf17.hat <- predict(leaf17.lda)
       leaf17.lda

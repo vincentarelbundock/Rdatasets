@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Glyphosate and metsulfuron-methyl tested on algae.</title>
+<!DOCTYPE html><html><head><title>R: Glyphosate and metsulfuron-methyl tested on algae.</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for glymet"><tr><td>glymet</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>glymet</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Glyphosate and metsulfuron-methyl tested on algae.</h2>
 
@@ -17,7 +27,7 @@ Four observations are missing, giving a total of 113 observations.
 
 <h3>Usage</h3>
 
-<pre>data(glymet)</pre>
+<pre><code class='language-R'>data(glymet)</code></pre>
 
 
 <h3>Format</h3>
@@ -60,8 +70,7 @@ An isobole-based statistical model and test for synergism/antagonism in binary m
 
 <h3>Examples</h3>
 
-<pre>
-
+<pre><code class='language-R'>
 
 ## Fitting the model with freely varying ED50 values
 glymet.free &lt;- drm(rgr~dose, pct, data = glymet, 
@@ -95,7 +104,8 @@ anova(glymet.ca, glymet.hew)
 isobole(glymet.free, glymet.hew, exchange = 0.01)  
 # no improvement over concentration addition
 
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

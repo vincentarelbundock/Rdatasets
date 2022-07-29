@@ -56,7 +56,6 @@
 
    ::
 
-
       winery_cars$car_number <- rep(1:7, 10)[1:nrow(winery_cars)]
       col <- COL[ifelse(winery_cars$car_number == 3, 4, 1)]
       plot(winery_cars[, c("obs_number", "time_until_next")],

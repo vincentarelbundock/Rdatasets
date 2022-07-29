@@ -62,7 +62,7 @@
       :name: source
 
    National Longitudinal Survey of Youth, 1997,
-   http://www.bls.gov/nls/nlsy97.htm
+   https://www.bls.gov/nls/nlsy97.htm
 
    .. rubric:: Examples
       :name: examples

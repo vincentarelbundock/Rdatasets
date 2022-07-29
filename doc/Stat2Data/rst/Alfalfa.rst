@@ -17,14 +17,16 @@
 
    A dataset with 15 observations on the following 3 variables.
 
-   ========
-   ====================================================================================
-   ``Ht4``  Height of alfalfa sprouts after four days
-   ``Acid`` Amount of acid: ``1.5HCl``, ``3.0HCl``, or ``water``
-   ``Row``  ``a`` through ``e`` with ``a``\ = closest to window and ``e``\ =farthest from window
-   \       
-   ========
-   ====================================================================================
+   +----------+----------------------------------------------------------+
+   | ``Ht4``  | Height of alfalfa sprouts after four days                |
+   +----------+----------------------------------------------------------+
+   | ``Acid`` | Amount of acid: ``1.5HCl``, ``3.0HCl``, or ``water``     |
+   +----------+----------------------------------------------------------+
+   | ``Row``  | ``a`` through ``e`` with ``a``\ = closest to window and  |
+   |          | ``e``\ =farthest from window                             |
+   +----------+----------------------------------------------------------+
+   |          |                                                          |
+   +----------+----------------------------------------------------------+
 
    .. rubric:: Details
       :name: details

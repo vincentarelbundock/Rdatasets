@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Yearly Sunspot Data, 1700-1988</title>
+<!DOCTYPE html><html><head><title>R: Yearly Sunspot Data, 1700-1988</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for sunspot.year"><tr><td>sunspot.year</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>sunspot.year</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Yearly Sunspot Data, 1700&ndash;1988</h2>
 
@@ -19,9 +29,8 @@
 
 <h3>Usage</h3>
 
-<pre>
-sunspot.year
-</pre>
+<pre><code class='language-R'>sunspot.year
+</code></pre>
 
 
 <h3>Format</h3>
@@ -51,8 +60,7 @@ WDC-SILSO, Royal Observatory of Belgium, at
 
 <h3>Examples</h3>
 
-<pre>
-utils::str(sm &lt;- sunspots)# the monthly version we keep unchanged
+<pre><code class='language-R'>utils::str(sm &lt;- sunspots)# the monthly version we keep unchanged
 utils::str(sy &lt;- sunspot.year)
 ## The common time interval
 (t1 &lt;- c(max(start(sm), start(sy)),     1)) # Jan 1749
@@ -67,7 +75,8 @@ stopifnot(length(s.y) * 12 == length(s.m),
 ndays &lt;- c(31, 28.25, rep(c(31,30, 31,30, 31), 2))
 all.equal(s.y, aggregate(s.m, FUN = mean))                     # 0.0013
 all.equal(s.y, aggregate(s.m, FUN = weighted.mean, w = ndays)) # 0.0017
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

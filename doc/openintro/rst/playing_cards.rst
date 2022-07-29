@@ -44,7 +44,6 @@
 
    ::
 
-
       playing_cards <- data.frame(
         number = rep(c(2:10, "J", "Q", "K", "A"), 4),
         suit = rep(c("Spade", "Diamond", "Club", "Heart"), rep(13, 4))

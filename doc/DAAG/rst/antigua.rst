@@ -11,14 +11,17 @@
       :name: description
 
    These data frames have yield averages by blocks (parcels). The
-   ``ant111b`` data set is a subset of this.
+   ``ant111b``\ dataset is a subset that has block averages of corn
+   yields for treatment 111 only
 
    .. rubric:: Usage
       :name: usage
 
    ::
 
-      antigua
+        data(antigua)
+        data(ant111b)
+        
 
    .. rubric:: Format
       :name: format

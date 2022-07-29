@@ -4,8 +4,7 @@
    USMacroSWM R Documentation
    ========== ===============
 
-   .. rubric:: Monthly US Macroeconomic Data (1947–2004, Stock \\&
-      Watson)
+   .. rubric:: Monthly US Macroeconomic Data (1947–2004, Stock & Watson)
       :name: monthly-us-macroeconomic-data-19472004-stock-watson
 
    .. rubric:: Description

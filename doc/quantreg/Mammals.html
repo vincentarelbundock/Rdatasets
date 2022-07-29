@@ -1,10 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Garland(1983) Data on Running Speed of Mammals</title>
+<!DOCTYPE html><html><head><title>R: Garland(1983) Data on Running Speed of Mammals</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table width="100%" summary="page for Mammals"><tr><td>Mammals</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>Mammals</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Garland(1983) Data on Running Speed of Mammals</h2>
 
@@ -17,7 +27,7 @@ and their body mass.
 
 <h3>Usage</h3>
 
-<pre>data(Mammals)</pre>
+<pre><code class='language-R'>data(Mammals)</code></pre>
 
 
 <h3>Format</h3>
@@ -75,8 +85,7 @@ Allometry,  <em>J. Theo. Biology</em>, 138, 235-256.
 
 <h3>Examples</h3>
 
-<pre>
-data(Mammals)
+<pre><code class='language-R'>data(Mammals)
 attach(Mammals)
 x &lt;- log(weight)
 y &lt;- log(speed)
@@ -87,7 +96,8 @@ others &lt;- (!hoppers &amp; !specials)
 points(x[others],y[others], col="black",cex = .75)
 fit &lt;- rqss(y ~ qss(x, lambda = 1),tau = .9)
 plot(fit)
-</pre>
+</code></pre>
 
 
-</div></body></html>
+</div>
+</body></html>

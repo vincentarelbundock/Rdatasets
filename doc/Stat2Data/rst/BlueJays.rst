@@ -27,7 +27,7 @@
    ``Mass``       Body mass (in grams)
    ``Skull``      Distance from base of bill to back of skull (in mm)
    ``Sex``        Sex coded as 0=female or 1=male
-   \             
+   \              
    ============== =====================================================
 
    .. rubric:: Details

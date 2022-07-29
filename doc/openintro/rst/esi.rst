@@ -153,7 +153,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(esi, aes(x = cap_st, y = glo_col)) +

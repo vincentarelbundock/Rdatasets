@@ -48,7 +48,6 @@
 
    ::
 
-
       library(ggplot2)
 
       ggplot(murders, aes(x = perc_pov, y = annual_murders_per_mil)) +
