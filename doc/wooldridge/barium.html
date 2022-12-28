@@ -1,0 +1,156 @@
+<!DOCTYPE html><html><head><title>R: barium</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>barium</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>barium</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: C.M. Krupp and P.S. Pollard (1999), Market Responses to Antidumpting Laws: Some Evidence from the U.S. Chemical Industry, Canadian Journal of Economics 29, 199-227. Dr. Krupp kindly provided the data. They are monthly data covering February 1978 through December 1988. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('barium')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 131 observations on 31 variables:
+</p>
+
+<ul>
+<li> <p><strong>chnimp:</strong> Chinese imports, bar. chl.
+</p>
+</li>
+<li> <p><strong>bchlimp:</strong> total imports bar. chl.
+</p>
+</li>
+<li> <p><strong>befile6:</strong> =1 for all 6 mos before filing
+</p>
+</li>
+<li> <p><strong>affile6:</strong> =1 for all 6 mos after filing
+</p>
+</li>
+<li> <p><strong>afdec6:</strong> =1 for all 6 mos after decision
+</p>
+</li>
+<li> <p><strong>befile12:</strong> =1 all 12 mos before filing
+</p>
+</li>
+<li> <p><strong>affile12:</strong> =1 all 12 mos after filing
+</p>
+</li>
+<li> <p><strong>afdec12:</strong> =1 all 12 mos after decision
+</p>
+</li>
+<li> <p><strong>chempi:</strong> chemical production index
+</p>
+</li>
+<li> <p><strong>gas:</strong> gasoline production
+</p>
+</li>
+<li> <p><strong>rtwex:</strong> exchange rate index
+</p>
+</li>
+<li> <p><strong>spr:</strong> =1 for spring months
+</p>
+</li>
+<li> <p><strong>sum:</strong> =1 for summer months
+</p>
+</li>
+<li> <p><strong>fall:</strong> =1 for fall months
+</p>
+</li>
+<li> <p><strong>lchnimp:</strong> log(chnimp)
+</p>
+</li>
+<li> <p><strong>lgas:</strong> log(gas)
+</p>
+</li>
+<li> <p><strong>lrtwex:</strong> log(rtwex)
+</p>
+</li>
+<li> <p><strong>lchempi:</strong> log(chempi)
+</p>
+</li>
+<li> <p><strong>t:</strong> time trend
+</p>
+</li>
+<li> <p><strong>feb:</strong> =1 if month is feb
+</p>
+</li>
+<li> <p><strong>mar:</strong> =1 if month is march
+</p>
+</li>
+<li> <p><strong>apr:</strong> 
+</p>
+</li>
+<li> <p><strong>may:</strong> 
+</p>
+</li>
+<li> <p><strong>jun:</strong> 
+</p>
+</li>
+<li> <p><strong>jul:</strong> 
+</p>
+</li>
+<li> <p><strong>aug:</strong> 
+</p>
+</li>
+<li> <p><strong>sep:</strong> 
+</p>
+</li>
+<li> <p><strong>oct:</strong> 
+</p>
+</li>
+<li> <p><strong>nov:</strong> 
+</p>
+</li>
+<li> <p><strong>dec:</strong> 
+</p>
+</li>
+<li> <p><strong>percchn:</strong> percent imports from china
+</p>
+</li></ul>
+
+
+
+<h3>Note</h3>
+
+<p>Rather than just having intercept shifts for the different regimes, one could conduct a full Chow test across the different regimes.
+</p>
+<p>Used in Text: pages 361-362, 372, 377, 426, 442-443, 445, 663, 665, 672
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(barium)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html><html><head><title>R: ncaa_rpi</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ncaa_rpi</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>ncaa_rpi</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Data on NCAA men’s basketball teams, collected by Weizhao Sun for a senior seminar project in sports economics at Michigan State University, Spring 2017. He used various sources, including www.espn.com and www.teamrankings.com/ncaa-basketball/rpi-ranking/rpi-rating-by-team. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('ncaa_rpi')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 336 observations on 14 variables:
+</p>
+
+<ul>
+<li> <p><strong>team: </strong>Name
+</p>
+</li>
+<li> <p><strong>year: </strong>Year
+</p>
+</li>
+<li> <p><strong>conference: </strong>Conference
+</p>
+</li>
+<li> <p><strong>postrpi: </strong>Post Rank
+</p>
+</li>
+<li> <p><strong>prerpi: </strong>Preseason Rank
+</p>
+</li>
+<li> <p><strong>postrpi_1: </strong>Post Rank 1 yr ago
+</p>
+</li>
+<li> <p><strong>postrpi_2: </strong>Post Rank 2 yrs ago
+</p>
+</li>
+<li> <p><strong>recruitrank: </strong>Recruits Rank
+</p>
+</li>
+<li> <p><strong>wins: </strong>Number of games won
+</p>
+</li>
+<li> <p><strong>losses: </strong>Number of games lost
+</p>
+</li>
+<li> <p><strong>winperc: </strong>Winning Percentage
+</p>
+</li>
+<li> <p><strong>tourney: </strong>Tournament dummy
+</p>
+</li>
+<li> <p><strong>coachexper: </strong>Coach Experience
+</p>
+</li>
+<li> <p><strong>power5: </strong>PowerFive Dummy
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>This is a nice example of how multiple regression analysis can be used to determine whether rankings compiled by experts – the so-called pre-season RPI in this case – provide additional information beyond what we can obtain from widely available data bases. A simple and interesting question is whether, once the previous year’s post-season RPI is controlled for, does the pre-season RPI – which is supposed to add information on recruiting and player development – help to predict performance (such as win percentage or making it to the NCAA men’s basketball tournament). For the binary outcome that indicates making it to the NCAA tournament, a probit or logit model can be used for courses that introduce more advanced methods. There are some other interesting variables, such as coaching experience, that can be included, too. 
+</p>
+<p>Used in Text: not used
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.cengage.com/c/introductory-econometrics-a-modern-approach-7e-wooldridge">http://www.cengage.com/c/introductory-econometrics-a-modern-approach-7e-wooldridge</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(ncaa_rpi)
+</code></pre>
+
+
+</div>
+</body></html>

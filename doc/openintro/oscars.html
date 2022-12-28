@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Oscar winners, 1929 to 2018</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>oscars</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Oscar winners, 1929 to 2018</h2>
+
+<h3>Description</h3>
+
+<p>Best actor and actress Oscar winners from 1929 to 2018
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>oscars
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 182 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt>oscar_no</dt><dd><p>Oscar ceremony number.</p>
+</dd>
+<dt>oscar_yr</dt><dd><p>Year the Oscar ceremony was held.</p>
+</dd>
+<dt>award</dt><dd><p><code>Best actress</code> or <code>Best actor</code>.</p>
+</dd>
+<dt>name</dt><dd><p>Name of winning actor or actress.</p>
+</dd>
+<dt>movie</dt><dd><p>Name of movie actor or actress got the Oscar for.</p>
+</dd>
+<dt>age</dt><dd><p>Age at which the actor or actress won the Oscar.</p>
+</dd>
+<dt>birth_pl</dt><dd><p>US State where the actor or actress was born, country if foreign.</p>
+</dd>
+<dt>birth_date</dt><dd><p>Birth date of actor or actress.</p>
+</dd>
+<dt>birth_mo</dt><dd><p>Birth month of actor or actress.</p>
+</dd>
+<dt>birth_d</dt><dd><p>Birth day of actor or actress.</p>
+</dd>
+<dt>birth_y</dt><dd><p>Birth year of actor or actress.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Although there have been only 84 Oscar ceremonies until 2012, there are 85
+male winners and 85 female winners because ties happened on two occasions
+(1933 for the best actor and 1969 for the best actress).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Journal of Statistical Education,
+<a href="http://jse.amstat.org/datasets/oscars.dat.txt">http://jse.amstat.org/datasets/oscars.dat.txt</a>, updated through 2019 using
+information from Oscars.org and Wikipedia.org.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+library(dplyr)
+
+ggplot(oscars, aes(x = award, y = age)) +
+  geom_boxplot()
+
+ggplot(oscars, aes(x = factor(birth_mo))) +
+  geom_bar()
+
+oscars %&gt;%
+  count(birth_pl, sort = TRUE)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Refugee Appeals</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Greene</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Refugee Appeals</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Greene</code> data frame has 384 rows and 7 columns.
+These are cases filed in 1990, in which refugee claimants rejected
+by the Canadian Immigration and Refugee Board asked the Federal
+Court of Appeal for leave to appeal the negative ruling of the Board.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Greene
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>judge</dt><dd>
+<p>Name of judge hearing case.
+A factor with levels:
+<code>Desjardins</code>, <code>Heald</code>, <code>Hugessen</code>, <code>Iacobucci</code>, <code>MacGuigan</code>, 
+<code>Mahoney</code>, <code>Marceau</code>, <code>Pratte</code>, <code>Stone</code>, <code>Urie</code>. 
+</p>
+</dd>
+<dt>nation</dt><dd>
+<p>Nation of origin of claimant.
+A factor with levels:
+<code>Argentina</code>, <code>Bulgaria</code>, <code>China</code>, <code>Czechoslovakia</code>,
+<code>El.Salvador</code>, <code>Fiji</code>, <code>Ghana</code>, <code>Guatemala</code>, 
+<code>India</code>, <code>Iran</code>, <code>Lebanon</code>, <code>Nicaragua</code>, 
+<code>Nigeria</code>, <code>Pakistan</code>, <code>Poland</code>, <code>Somalia</code>, 
+<code>Sri.Lanka</code>.
+</p>
+</dd>
+<dt>rater</dt><dd>
+<p>Judgment of independent rater.
+A factor with levels:
+<code>no</code>, case has no merit;
+<code>yes</code>, case has some merit (leave to appeal should be granted).
+</p>
+</dd>
+<dt>decision</dt><dd>
+<p>Judge's decision.
+A factor with levels:
+<code>no</code>, leave to appeal not granted;
+<code>yes</code>, leave to appeal granted.
+</p>
+</dd>
+<dt>language</dt><dd>
+<p>Language of case. 
+A factor with levels:
+<code>English</code>,
+<code>French</code>.
+</p>
+</dd>
+<dt>location</dt><dd>
+<p>Location of original refugee claim.
+A factor with levels:
+<code>Montreal</code>,
+<code>other</code>,
+<code>Toronto</code>.
+</p>
+</dd>
+<dt>success</dt><dd>
+<p>Logit of success rate, for all cases from the applicant's nation.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Personal communication from Ian Greene, Department of
+Political Science, York University.
+</p>
+
+
+<h3>References</h3>
+
+<p>Fox, J. (2016)
+<em>Applied Regression Analysis and Generalized Linear Models</em>,
+Third Edition. Sage.  
+</p>
+
+
+</div>
+</body></html>

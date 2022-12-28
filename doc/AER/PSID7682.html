@@ -1,0 +1,164 @@
+<!DOCTYPE html><html><head><title>R: PSID Earnings Panel Data (1976-1982)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>PSID7682</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>PSID Earnings Panel Data (1976&ndash;1982)</h2>
+
+<h3>Description</h3>
+
+<p>Panel data on earnings of 595 individuals for the years 1976&ndash;1982,
+originating from the Panel Study of Income Dynamics.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("PSID7682")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 7 annual observations on 12 variables for 595 individuals. 
+</p>
+
+<dl>
+<dt>experience</dt><dd><p>Years of full-time work experience.</p>
+</dd>
+<dt>weeks</dt><dd><p>Weeks worked.</p>
+</dd>
+<dt>occupation</dt><dd><p>factor. Is the individual a white-collar (<code>"white"</code>)
+or blue-collar (<code>"blue"</code>) worker?</p>
+</dd>
+<dt>industry</dt><dd><p>factor. Does the individual work in a manufacturing industry?</p>
+</dd>
+<dt>south</dt><dd><p>factor. Does the individual reside in the South?</p>
+</dd>
+<dt>smsa</dt><dd><p>factor. Does the individual reside in a SMSA (standard
+metropolitan statistical area)?</p>
+</dd>
+<dt>married</dt><dd><p>factor. Is the individual married?</p>
+</dd>
+<dt>gender</dt><dd><p>factor indicating gender.</p>
+</dd>
+<dt>union</dt><dd><p>factor. Is the individual's wage set by a union contract?</p>
+</dd>
+<dt>education</dt><dd><p>Years of education.</p>
+</dd>
+<dt>ethnicity</dt><dd><p>factor indicating ethnicity.
+Is the individual African-American (<code>"afam"</code>) or not (<code>"other"</code>)?</p>
+</dd>
+<dt>wage</dt><dd><p>Wage.</p>
+</dd>
+<dt>year</dt><dd><p>factor indicating year.</p>
+</dd>
+<dt>id</dt><dd><p>factor indicating individual subject ID.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data were originally analyzed by Cornwell and Rupert (1988) and employed
+for assessing various instrumental-variable estimators for panel models
+(including the Hausman-Taylor model). Baltagi and Khanti-Akom (1990) reanalyzed
+the data, made corrections to the data and also suggest modeling with a different
+set of instruments.
+</p>
+<p><code>PSID7682</code> is the version of the data as provided by Baltagi (2005),
+or Greene (2008).
+</p>
+<p>Baltagi (2002) just uses the cross-section for the year 1982,
+i.e., <code>subset(PSID7682, year == "1982")</code>. This is also available as
+a standalone data set <code>PSID1982</code> because it was included
+in <span class="pkg">AER</span> prior to the availability of the full <code>PSID7682</code> panel
+version.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Baltagi (2005).
+</p>
+<p><a href="http://www.wiley.com/legacy/wileychi/baltagi3e/data_sets.html">http://www.wiley.com/legacy/wileychi/baltagi3e/data_sets.html</a>
+</p>
+<p>Also provided in the online complements to Greene (2008), Table F9.1.
+</p>
+<p><a href="https://pages.stern.nyu.edu/~wgreene/Text/Edition6/tablelist6.htm">https://pages.stern.nyu.edu/~wgreene/Text/Edition6/tablelist6.htm</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Baltagi, B.H., and Khanti-Akom, S. (1990). On Efficient Estimation with
+Panel Data: An Empirical Comparison of Instrumental Variables Estimators.
+<em>Journal of Applied Econometrics</em>, <b>5</b>, 401&ndash;406.
+</p>
+<p>Baltagi, B.H. (2001). <em>Econometric Analysis of Panel Data</em>, 2nd ed. Chichester, UK: John Wiley.
+</p>
+<p>Baltagi, B.H. (2002). <em>Econometrics</em>, 3rd ed. Berlin, Springer. 
+</p>
+<p>Baltagi, B.H. (2005). <em>Econometric Analysis of Panel Data</em>, 3rd ed. Chichester, UK: John Wiley.
+</p>
+<p>Cornwell, C., and Rupert, P. (1988). Efficient Estimation with Panel Data: 
+An Empirical Comparison of Instrumental Variables Estimators. 
+<em>Journal of Applied Econometrics</em>, <b>3</b>, 149&ndash;155.
+</p>
+<p>Greene, W.H. (2008). <em>Econometric Analysis</em>, 6th ed. Upper Saddle River, NJ: Prentice Hall.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>PSID1982</code>, <code>Baltagi2002</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+data("PSID7682")
+
+library("plm")
+psid &lt;- pdata.frame(PSID7682, c("id", "year"))
+
+## Baltagi &amp; Khanti-Akom, Table I, column "HT"
+## original Cornwell &amp; Rupert choice of exogenous variables
+psid_ht1 &lt;- plm(log(wage) ~ weeks + south + smsa + married +
+  experience + I(experience^2) + occupation + industry + union + gender + ethnicity + education |
+  weeks + south + smsa + married + gender + ethnicity,
+  data = psid, model = "ht")
+
+## Baltagi &amp; Khanti-Akom, Table II, column "HT"
+## alternative choice of exogenous variables
+psid_ht2 &lt;- plm(log(wage) ~ occupation + south + smsa + industry +
+  experience + I(experience^2) + weeks + married + union + gender + ethnicity + education |
+  occupation + south + smsa + industry + gender + ethnicity,
+  data = psid, model = "ht")
+
+## Baltagi &amp; Khanti-Akom, Table III, column "HT"
+## original choice of exogenous variables + time dummies
+## (see also Baltagi, 2001, Table 7.1)
+psid$time &lt;- psid$year
+psid_ht3 &lt;- plm(log(wage) ~ weeks + south + smsa + married + experience + I(experience^2) +
+  occupation + industry + union + gender + ethnicity + education + time |
+  weeks + south + smsa + married + gender + ethnicity + time,
+  data = psid, model = "ht")
+</code></pre>
+
+
+</div>
+</body></html>

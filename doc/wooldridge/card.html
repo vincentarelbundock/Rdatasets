@@ -1,0 +1,165 @@
+<!DOCTYPE html><html><head><title>R: card</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>card</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>card</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: D. Card (1995), Using Geographic Variation in College Proximity to Estimate the Return to Schooling, in Aspects of Labour Market Behavior: Essays in Honour of John Vanderkamp. Ed. L.N. Christophides, E.K. Grant, and R. Swidinsky, 201-222. Toronto: University of Toronto Press. Professor Card kindly provided these data. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('card')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 3010 observations on 34 variables:
+</p>
+
+<ul>
+<li> <p><strong>id:</strong> person identifier
+</p>
+</li>
+<li> <p><strong>nearc2:</strong> =1 if near 2 yr college, 1966
+</p>
+</li>
+<li> <p><strong>nearc4:</strong> =1 if near 4 yr college, 1966
+</p>
+</li>
+<li> <p><strong>educ:</strong> years of schooling, 1976
+</p>
+</li>
+<li> <p><strong>age:</strong> in years
+</p>
+</li>
+<li> <p><strong>fatheduc:</strong> father's schooling
+</p>
+</li>
+<li> <p><strong>motheduc:</strong> mother's schooling
+</p>
+</li>
+<li> <p><strong>weight:</strong> NLS sampling weight, 1976
+</p>
+</li>
+<li> <p><strong>momdad14:</strong> =1 if live with mom, dad at 14
+</p>
+</li>
+<li> <p><strong>sinmom14:</strong> =1 if with single mom at 14
+</p>
+</li>
+<li> <p><strong>step14:</strong> =1 if with step parent at 14
+</p>
+</li>
+<li> <p><strong>reg661:</strong> =1 for region 1, 1966
+</p>
+</li>
+<li> <p><strong>reg662:</strong> =1 for region 2, 1966
+</p>
+</li>
+<li> <p><strong>reg663:</strong> =1 for region 3, 1966
+</p>
+</li>
+<li> <p><strong>reg664:</strong> =1 for region 4, 1966
+</p>
+</li>
+<li> <p><strong>reg665:</strong> =1 for region 5, 1966
+</p>
+</li>
+<li> <p><strong>reg666:</strong> =1 for region 6, 1966
+</p>
+</li>
+<li> <p><strong>reg667:</strong> =1 for region 7, 1966
+</p>
+</li>
+<li> <p><strong>reg668:</strong> =1 for region 8, 1966
+</p>
+</li>
+<li> <p><strong>reg669:</strong> =1 for region 9, 1966
+</p>
+</li>
+<li> <p><strong>south66:</strong> =1 if in south in 1966
+</p>
+</li>
+<li> <p><strong>black:</strong> =1 if black
+</p>
+</li>
+<li> <p><strong>smsa:</strong> =1 in in SMSA, 1976
+</p>
+</li>
+<li> <p><strong>south:</strong> =1 if in south, 1976
+</p>
+</li>
+<li> <p><strong>smsa66:</strong> =1 if in SMSA, 1966
+</p>
+</li>
+<li> <p><strong>wage:</strong> hourly wage in cents, 1976
+</p>
+</li>
+<li> <p><strong>enroll:</strong> =1 if enrolled in school, 1976
+</p>
+</li>
+<li> <p><strong>KWW:</strong> knowledge world of work score
+</p>
+</li>
+<li> <p><strong>IQ:</strong> IQ score
+</p>
+</li>
+<li> <p><strong>married:</strong> =1 if married, 1976
+</p>
+</li>
+<li> <p><strong>libcrd14:</strong> =1 if lib. card in home at 14
+</p>
+</li>
+<li> <p><strong>exper:</strong> age - educ - 6
+</p>
+</li>
+<li> <p><strong>lwage:</strong> log(wage)
+</p>
+</li>
+<li> <p><strong>expersq:</strong> exper^2
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>Computer Exercise C15.3 is important for analyzing these data. There, it is shown that the instrumental variable, &lsquo;nearc4', is actually correlated with 'IQ', at least for the subset of men for which an IQ score is reported. However, the correlation between 'nearc4&ldquo; and 'IQ', once the other explanatory variables are netted out, is arguably zero. At least, it is not statistically different from zero. In other words, 'nearc4' fails the exogeneity requirement in a simple regression model but it passes, at least using the crude test described above, if controls are added to the wage equation. For a more advanced course, a nice extension of Card&rsquo;s analysis is to allow the return to education to differ by race. A relatively simple extension is to include black education (blackeduc) as an additional explanatory variable; its natural instrument is blacknearc4.
+</p>
+<p>Used in Text: pages 526-527, 547
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(card)
+</code></pre>
+
+
+</div>
+</body></html>

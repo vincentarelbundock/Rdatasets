@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head><title>R: North Carolina births, 100 cases</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>births</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>North Carolina births, 100 cases</h2>
+
+<h3>Description</h3>
+
+<p>Data on a random sample of 100 births for babies in North Carolina where the
+mother was not a smoker and another 50 where the mother was a smoker.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>births
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 150 observations on the following 14 variables.
+</p>
+
+<dl>
+<dt>f_age</dt><dd><p>Father's age.</p>
+</dd>
+<dt>m_age</dt><dd><p>Mother's age.</p>
+</dd>
+<dt>weeks</dt><dd><p>Weeks at which the mother gave birth.</p>
+</dd>
+<dt>premature</dt><dd><p>Indicates whether the baby was premature or not.</p>
+</dd>
+<dt>visits</dt><dd><p>Number of hospital visits.</p>
+</dd>
+<dt>gained</dt><dd><p>Weight gained by mother.</p>
+</dd>
+<dt>weight</dt><dd><p>Birth weight of the baby.</p>
+</dd>
+<dt>sex_baby</dt><dd><p>Gender of the baby.</p>
+</dd>
+<dt>smoke</dt><dd><p>Whether or not the mother was a smoker.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Birth records released by North Carolina in 2004.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>We do not have ideal provenance for these data. For a better
+documented and more recent dataset on a similar topic with similar variables,
+see births14. Additionally, ncbirths also contains similar data.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+
+ggplot(births, aes(x = smoke, y = weight)) +
+  geom_boxplot()
+</code></pre>
+
+
+</div>
+</body></html>

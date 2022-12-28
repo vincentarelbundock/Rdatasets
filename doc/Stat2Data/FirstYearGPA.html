@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><title>R: First Year GPA for College Students</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>FirstYearGPA</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>First Year GPA for College Students</h2>
+
+<h3>Description</h3>
+
+<p>Predicting first-year college GPA
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 219 observations on the following 10 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>GPA</code> </td><td style="text-align: left;"> First-year college GPA on a 0.0 to 4.0 scale</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>HSGPA</code> </td><td style="text-align: left;"> High school GPA on a 0.0 to 4.0 scale</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>SATV</code> </td><td style="text-align: left;"> Verbal/critical reading SAT score</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>SATM</code> </td><td style="text-align: left;"> Math SAT score</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Male</code> </td><td style="text-align: left;"> <code>1</code>= male, <code>0</code>= female</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>HU</code> </td><td style="text-align: left;"> Number of credit hours earned in humanities courses in high school</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>SS</code> </td><td style="text-align: left;"> Number of credit hours earned in social science courses in high school</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>FirstGen</code> </td><td style="text-align: left;"> <code>1</code>= student is the first in her or his family to attend college, <code>0</code>=otherwise</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>White</code> </td><td style="text-align: left;"> <code>1</code>= white students, <code>0</code>= others</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>CollegeBound</code> </td><td style="text-align: left;"> <code>1</code>=attended a high school where &gt;=50% students intended to go on to college, <code>0</code>=otherwise</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>The data in FirstYearGPA contains information from a sample of 219
+first year students at a midwestern college that might be used to build a model to predict their first
+year GPA.
+</p>
+
+
+<h3>Source</h3>
+
+<p>A sample from a larger set of data collected in 1996 by a professor at this college.
+</p>
+
+
+</div>
+</body></html>

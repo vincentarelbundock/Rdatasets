@@ -1,0 +1,80 @@
+<!DOCTYPE html><html><head><title>R: Simulated data from a job training program</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>training_example</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Simulated data from a job training program</h2>
+
+<h3>Description</h3>
+
+<p>This simulated data, which is presented in the form of a full results, table, is used to demonstrate a matching procedure.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>training_example
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 25 rows and 9 variables
+</p>
+
+<dl>
+<dt>unit_treat</dt><dd><p>Unit ID for treated observations</p>
+</dd>
+<dt>age_treat</dt><dd><p>age for treated observations</p>
+</dd>
+<dt>earnings_treat</dt><dd><p>earnings for treated observations</p>
+</dd>
+<dt>unit_control</dt><dd><p>Unit ID for control observations</p>
+</dd>
+<dt>age_control</dt><dd><p>age for control observations</p>
+</dd>
+<dt>earnings_control</dt><dd><p>earnings for control observations</p>
+</dd>
+<dt>unit_matched</dt><dd><p>Unit ID for matched controls</p>
+</dd>
+<dt>age_matched</dt><dd><p>age for matched controls</p>
+</dd>
+<dt>earnings_matched</dt><dd><p>earnings for matched controls</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This data is used in the <em>Matching and Subclassification</em> chapter of <em>Causal Inference: The Mixtape</em> by Cunningham.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. <a href="https://mixtape.scunning.com/index.html">https://mixtape.scunning.com/index.html</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Cunningham. 2021. Causal Inference: The Mixtape. Yale Press. <a href="https://mixtape.scunning.com/index.html">https://mixtape.scunning.com/index.html</a>.
+</p>
+
+
+</div>
+</body></html>

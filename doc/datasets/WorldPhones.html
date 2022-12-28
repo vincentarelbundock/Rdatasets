@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: The World's Telephones</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>WorldPhones</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The World's Telephones</h2>
+
+<h3>Description</h3>
+
+<p>The number of telephones in various regions of the world (in
+thousands).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>WorldPhones</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A matrix with 7 rows and 8 columns.  The columns of the matrix give
+the figures for a given region, and the rows the figures for a year.
+</p>
+<p>The regions are: North America, Europe, Asia, South America, Oceania,
+Africa, Central America.
+</p>
+<p>The years are: 1951, 1956, 1957, 1958, 1959, 1960, 1961.
+</p>
+
+
+<h3>Source</h3>
+
+<p>AT&amp;T (1961) <em>The World's Telephones</em>.
+</p>
+
+
+<h3>References</h3>
+
+<p>McNeil, D. R. (1977)
+<em>Interactive Data Analysis</em>.
+New York: Wiley.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>require(graphics)
+matplot(rownames(WorldPhones), WorldPhones, type = "b", log = "y",
+        xlab = "Year", ylab = "Number of telephones (1000's)")
+legend(1951.5, 80000, colnames(WorldPhones), col = 1:6, lty = 1:5,
+       pch = rep(21, 7))
+title(main = "World phones data: log scale for response")
+</code></pre>
+
+
+</div>
+</body></html>

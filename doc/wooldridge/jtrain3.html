@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head><title>R: jtrain3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>jtrain3</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>jtrain3</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: R.H. Dehejia and S. Wahba (1999), “Causal Effects in Nonexperimental Studies: Reevaluating the Evaluation of Training Programs,” Journal of the American Statistical Association 94, 1053-1062. Professor Sergio Firpo, at the University of British Columbia, has used this data set in his recent work, and he kindly provided it to me. This data set is a subset of that originally used by Lalonde in the study cited for JTRAIN2.RAW. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('jtrain3')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 2675 observations on 20 variables:
+</p>
+
+<ul>
+<li> <p><strong>train:</strong> =1 if in job training
+</p>
+</li>
+<li> <p><strong>age:</strong> in years, 1977
+</p>
+</li>
+<li> <p><strong>educ:</strong> years of schooling
+</p>
+</li>
+<li> <p><strong>black:</strong> =1 if black
+</p>
+</li>
+<li> <p><strong>hisp:</strong> =1 if Hispanic
+</p>
+</li>
+<li> <p><strong>married:</strong> =1 if married
+</p>
+</li>
+<li> <p><strong>re74:</strong> '74 earnings, $1000s '82
+</p>
+</li>
+<li> <p><strong>re75:</strong> '75 earnings, $1000s '82
+</p>
+</li>
+<li> <p><strong>unem75:</strong> =1 if unem. all of '75
+</p>
+</li>
+<li> <p><strong>unem74:</strong> =1 if unem. all of '74
+</p>
+</li>
+<li> <p><strong>re78:</strong> '78 earnings, $1000s '82
+</p>
+</li>
+<li> <p><strong>agesq:</strong> age^2
+</p>
+</li>
+<li> <p><strong>trre74:</strong> train*re74
+</p>
+</li>
+<li> <p><strong>trre75:</strong> train*re75
+</p>
+</li>
+<li> <p><strong>trun74:</strong> train*unem74
+</p>
+</li>
+<li> <p><strong>trun75:</strong> train*unem75
+</p>
+</li>
+<li> <p><strong>avgre:</strong> (re74 + re75)/2
+</p>
+</li>
+<li> <p><strong>travgre:</strong> train*avgre
+</p>
+</li>
+<li> <p><strong>unem78:</strong> =1 if unem. all of '78
+</p>
+</li>
+<li> <p><strong>em78:</strong> 1 - unem78
+</p>
+</li></ul>
+
+
+
+<h3>Used in Text</h3>
+
+<p>pages 340-341, 480-481
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(jtrain3)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: hprice2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>hprice2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>hprice2</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: D. Harrison and D.L. Rubinfeld (1978), “Hedonic Housing Prices and the Demand for Clean Air,” by Harrison, D. and D.L.Rubinfeld, Journal of Environmental Economics and Management 5, 81-102. Diego Garcia, a former Ph.D. student in economics at MIT, kindly provided these data, which he obtained from the book Regression Diagnostics: Identifying Influential Data and Sources of Collinearity, by D.A. Belsey, E. Kuh, and R. Welsch, 1990. New York: Wiley. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('hprice2')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 506 observations on 12 variables:
+</p>
+
+<ul>
+<li> <p><strong>price:</strong> median housing price, $
+</p>
+</li>
+<li> <p><strong>crime:</strong> crimes committed per capita
+</p>
+</li>
+<li> <p><strong>nox:</strong> nit ox concen; parts per 100m
+</p>
+</li>
+<li> <p><strong>rooms:</strong> avg number of rooms
+</p>
+</li>
+<li> <p><strong>dist:</strong> wght dist to 5 employ centers
+</p>
+</li>
+<li> <p><strong>radial:</strong> access. index to rad. hghwys
+</p>
+</li>
+<li> <p><strong>proptax:</strong> property tax per $1000
+</p>
+</li>
+<li> <p><strong>stratio:</strong> average student-teacher ratio
+</p>
+</li>
+<li> <p><strong>lowstat:</strong> perc of people 'lower status'
+</p>
+</li>
+<li> <p><strong>lprice:</strong> log(price)
+</p>
+</li>
+<li> <p><strong>lnox:</strong> log(nox)
+</p>
+</li>
+<li> <p><strong>lproptax:</strong> log(proptax)
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>The census contains rich information on variables such as median housing prices, median income levels, average family size, and so on, for fairly small geographical areas. If such data can be merged with pollution data, one can update the Harrison and Rubinfeld study. Presumably, this has been done in academic journals.
+</p>
+<p>Used in Text: pages 108, 132-133, 190-191, 196-197.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(hprice2)
+</code></pre>
+
+
+</div>
+</body></html>

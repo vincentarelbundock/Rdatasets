@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>R: Parade Magazine 2005 Earnings Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Parade2005</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Parade Magazine 2005 Earnings Data</h2>
+
+<h3>Description</h3>
+
+<p>US earnings data, as provided in an annual survey of Parade (here from 2005), the
+Sunday newspaper magazine supplementing the Sunday (or Weekend) edition of many
+daily newspapers in the USA. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Parade2005")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 130 observations on 5 variables.
+</p>
+
+<dl>
+<dt>earnings</dt><dd><p>Annual personal earnings.</p>
+</dd>
+<dt>age</dt><dd><p>Age in years.</p>
+</dd>
+<dt>gender</dt><dd><p>Factor indicating gender.</p>
+</dd>
+<dt>state</dt><dd><p>Factor indicating state.</p>
+</dd>
+<dt>celebrity</dt><dd><p>Factor. Is the individual a celebrity?</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In addition to the four variables provided by Parade (earnings, age, gender, and state),
+a fifth variable was introduced, the &ldquo;celebrity factor&rdquo; (here actors, athletes, 
+TV personalities, politicians, and CEOs are considered celebrities). The data are quite 
+far from a simple random sample, there being substantial oversampling of celebrities.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Parade (2005). What People Earn. Issue March 13, 2005.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+## data
+data("Parade2005")
+attach(Parade2005)
+summary(Parade2005)
+
+## bivariate visualizations
+plot(density(log(earnings), bw = "SJ"), type = "l", main = "log(earnings)")
+rug(log(earnings))
+plot(log(earnings) ~ gender, main = "log(earnings)")
+
+## celebrity vs. non-celebrity earnings
+noncel &lt;- subset(Parade2005, celebrity == "no")
+cel &lt;- subset(Parade2005, celebrity == "yes")
+
+library("ineq")
+plot(Lc(noncel$earnings), main = "log(earnings)")
+lines(Lc(cel$earnings), lty = 2)
+lines(Lc(earnings), lty = 3)
+
+Gini(noncel$earnings)
+Gini(cel$earnings)
+Gini(earnings)
+
+## detach data
+detach(Parade2005)
+</code></pre>
+
+
+</div>
+</body></html>

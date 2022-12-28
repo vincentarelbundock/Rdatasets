@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title>R: Birth counts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>present</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Birth counts</h2>
+
+<h3>Description</h3>
+
+<p>An updated version of the historical Arbuthnot dataset. Numbers of boys and
+girls born in the United States between 1940 and 2002.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>present
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 63 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year.</p>
+</dd>
+<dt>boys</dt><dd><p>Number of boys born.</p>
+</dd>
+<dt>girls</dt><dd><p>Number of girls born.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Mathews, T. J., and Brady E. Hamilton. &quot;Trend analysis of the sex
+ratio at birth in the United States.&quot; National vital statistics reports
+53.20 (2005): 1-17.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+
+ggplot(present, mapping = aes(x = year, y = boys / girls)) +
+  geom_line()
+</code></pre>
+
+
+</div>
+</body></html>

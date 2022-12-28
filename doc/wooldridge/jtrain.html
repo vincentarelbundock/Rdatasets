@@ -1,0 +1,151 @@
+<!DOCTYPE html><html><head><title>R: jtrain</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>jtrain</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>jtrain</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: H. Holzer, R. Block, M. Cheatham, and J. Knott (1993), “Are Training Subsidies Effective? The Michigan Experience,” Industrial and Labor Relations Review 46, 625-636. The authors kindly provided the data. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('jtrain')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 471 observations on 30 variables:
+</p>
+
+<ul>
+<li> <p><strong>year:</strong> 1987, 1988, or 1989
+</p>
+</li>
+<li> <p><strong>fcode:</strong> firm code number
+</p>
+</li>
+<li> <p><strong>employ:</strong> # employees at plant
+</p>
+</li>
+<li> <p><strong>sales:</strong> annual sales, $
+</p>
+</li>
+<li> <p><strong>avgsal:</strong> average employee salary
+</p>
+</li>
+<li> <p><strong>scrap:</strong> scrap rate (per 100 items)
+</p>
+</li>
+<li> <p><strong>rework:</strong> rework rate (per 100 items)
+</p>
+</li>
+<li> <p><strong>tothrs:</strong> total hours training
+</p>
+</li>
+<li> <p><strong>union:</strong> =1 if unionized
+</p>
+</li>
+<li> <p><strong>grant:</strong> = 1 if received grant
+</p>
+</li>
+<li> <p><strong>d89:</strong> = 1 if year = 1989
+</p>
+</li>
+<li> <p><strong>d88:</strong> = 1 if year = 1988
+</p>
+</li>
+<li> <p><strong>totrain:</strong> total employees trained
+</p>
+</li>
+<li> <p><strong>hrsemp:</strong> tothrs/totrain
+</p>
+</li>
+<li> <p><strong>lscrap:</strong> log(scrap)
+</p>
+</li>
+<li> <p><strong>lemploy:</strong> log(employ)
+</p>
+</li>
+<li> <p><strong>lsales:</strong> log(sales)
+</p>
+</li>
+<li> <p><strong>lrework:</strong> log(rework)
+</p>
+</li>
+<li> <p><strong>lhrsemp:</strong> log(1 + hrsemp)
+</p>
+</li>
+<li> <p><strong>lscrap_1:</strong> lagged lscrap; missing 1987
+</p>
+</li>
+<li> <p><strong>grant_1:</strong> lagged grant; assumed 0 in 1987
+</p>
+</li>
+<li> <p><strong>clscrap:</strong> lscrap - lscrap_1; year &gt; 1987
+</p>
+</li>
+<li> <p><strong>cgrant:</strong> grant - grant_1
+</p>
+</li>
+<li> <p><strong>clemploy:</strong> lemploy - lemploy[_n-1]
+</p>
+</li>
+<li> <p><strong>clsales:</strong> lavgsal - lavgsal[_n-1]
+</p>
+</li>
+<li> <p><strong>lavgsal:</strong> log(avgsal)
+</p>
+</li>
+<li> <p><strong>clavgsal:</strong> lavgsal - lavgsal[_n-1]
+</p>
+</li>
+<li> <p><strong>cgrant_1:</strong> cgrant[_n-1]
+</p>
+</li>
+<li> <p><strong>chrsemp:</strong> hrsemp - hrsemp[_n-1]
+</p>
+</li>
+<li> <p><strong>clhrsemp:</strong> lhrsemp - lhrsemp[_n-1]
+</p>
+</li></ul>
+
+
+
+<h3>Used in Text</h3>
+
+<p>pages 137, 161, 233, 254, 339, 465-466, 479, 486-487, 492, 504, 541-542, 774-775, 786-787, 788, 819.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(jtrain)
+</code></pre>
+
+
+</div>
+</body></html>

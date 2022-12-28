@@ -1,0 +1,209 @@
+<!DOCTYPE html><html><head><title>R: Reddit Survey on Financial Independence.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>reddit_finance</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Reddit Survey on Financial Independence.</h2>
+
+<h3>Description</h3>
+
+<p>A reduced set of the official results of the 2020 FI Survey from Reddit (r/financialindependence).
+Only responses that represent the respondent (not other contributors in the household) are listed.
+Does not include retired individuals. As per instructed, respondents give dollar values in their
+native currency.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>reddit_finance
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1998 rows and 65 variables.
+</p>
+
+<dl>
+<dt>num_incomes</dt><dd><p>How many individuals contribute to your household income?</p>
+</dd>
+<dt>pan_inc_chg</dt><dd><p>As a result of the pandemic, did your earned income increase, decrease, or remain the same?</p>
+</dd>
+<dt>pan_inc_chg_pct</dt><dd><p>By how much did your earned income change?</p>
+</dd>
+<dt>pan_exp_chg</dt><dd><p>As a result of the pandemic, did your expenses increase, decrease, or remain the same?</p>
+</dd>
+<dt>pan_exp_chg_pct</dt><dd><p>By how much did your expenses change?</p>
+</dd>
+<dt>pan_fi_chg</dt><dd><p>As a result of the pandemic, did your FI (financially independent) number...</p>
+</dd>
+<dt>pan_ret_date_chg</dt><dd><p>As a result of the pandemic, did your planned RE (retirement) date...</p>
+</dd>
+<dt>pan_financial_impact</dt><dd><p>Overall, how would you characterize the pandemic's impact on your finances?</p>
+</dd>
+<dt>political</dt><dd><p>With which political party do you most closely identify?  You do not need to be registered with a party to select it, answer based on your personal views.</p>
+</dd>
+<dt>race_eth</dt><dd><p>What is your race/ethnicity?  Select all that apply.</p>
+</dd>
+<dt>gender</dt><dd><p>What is your gender?</p>
+</dd>
+<dt>age</dt><dd><p>What is your age?</p>
+</dd>
+<dt>edu</dt><dd><p>What is the highest level of education you have completed?</p>
+</dd>
+<dt>rel_status</dt><dd><p>What is your relationship status?</p>
+</dd>
+<dt>children</dt><dd><p>Do you have children?</p>
+</dd>
+<dt>country</dt><dd><p>What country are you in?</p>
+</dd>
+<dt>fin_indy</dt><dd><p>Are you financially independent?  Meaning you do not need to work for money, regardless of whether you work for money.</p>
+</dd>
+<dt>fin_indy_num</dt><dd><p>At what amount invested will you consider yourself Financially Independent? (What is your FI number?)</p>
+</dd>
+<dt>fin_indy_pct</dt><dd><p>What percent FI are you? (What percent of your FI number do you currently have?)</p>
+</dd>
+<dt>retire_invst_num</dt><dd><p>At what amount invested do you intend to retire? (What is your RE number)</p>
+</dd>
+<dt>tgt_sf_wthdrw_rt</dt><dd><p>What is your target safe withdrawal rate?  (If your answer is 3.5%, enter it as 3.5)</p>
+</dd>
+<dt>max_retire_sup</dt><dd><p>How much annual income do you expect to have from the sources you selected in question T5 at the point where you are utilizing all of them (or a majority if you do not intend to use all at the same time)? Enter your answer as a dollar amount.</p>
+</dd>
+<dt>retire_exp</dt><dd><p>How much money (from your savings and other sources) do you intend to spend each year once you are retired? Enter your answer as a dollar amount.</p>
+</dd>
+<dt>whn_fin_indy_num</dt><dd><p>At what amount invested did you consider yourself Financially Independent? (AKA what was your &quot;FI number&quot;)</p>
+</dd>
+<dt>fin_indy_lvl</dt><dd><p>Which of the following would you have considered yourself at the time you reached Financial Independence:</p>
+</dd>
+<dt>retire_age</dt><dd><p>At what age do you intend to retire?</p>
+</dd>
+<dt>stp_whn_fin_indy</dt><dd><p>Do you intend to stop working for money when you reach financial independence?</p>
+</dd>
+<dt>industry</dt><dd><p>Which of the following best describes the industry in which you currently or most recently work(ed)?</p>
+</dd>
+<dt>employer</dt><dd><p>Which of the following best describes your current or most recent employer?</p>
+</dd>
+<dt>role</dt><dd><p>Which of the following best describes your current or most recent job role?</p>
+</dd>
+<dt>ft_status</dt><dd><p>What is your current employment status? - Full Time</p>
+</dd>
+<dt>pt_status</dt><dd><p>What is your current employment status? - Part Time, Regular</p>
+</dd>
+<dt>gig_status</dt><dd><p>What is your current employment status? -Side Gig, Intermittent</p>
+</dd>
+<dt>ne_status</dt><dd><p>What is your current employment status? -Not Employed</p>
+</dd>
+<dt>edu_status</dt><dd><p>What is your current educational status?</p>
+</dd>
+<dt>housing</dt><dd><p>What is your current housing situation?</p>
+</dd>
+<dt>home_value</dt><dd><p>Primary residence value.</p>
+</dd>
+<dt>brokerage_accts_tax</dt><dd><p>Brokerage accounts (Taxable).</p>
+</dd>
+<dt>retirement_accts_tax</dt><dd><p>Retirement accounts (Tax Advantaged).</p>
+</dd>
+<dt>cash</dt><dd><p>Cash / cash equivalents (Savings, Checking, C.D.s, Money Market).</p>
+</dd>
+<dt>invst_accts</dt><dd><p>Dedicated Savings/Investment Accounts (Healthcare, Education).</p>
+</dd>
+<dt>spec_crypto</dt><dd><p>Speculation (Crypto, P2P Lending, Gold, etc.).</p>
+</dd>
+<dt>invst_prop_bus_own</dt><dd><p>investment properties / owned business(es).</p>
+</dd>
+<dt>other_val</dt><dd><p>Other assets.</p>
+</dd>
+<dt>student_loans</dt><dd><p>Outstanding student loans.</p>
+</dd>
+<dt>mortgage</dt><dd><p>Outstanding mortgage / HELOC.</p>
+</dd>
+<dt>auto_loan</dt><dd><p>Outstanding auto loans.</p>
+</dd>
+<dt>credit_personal_loan</dt><dd><p>Outstanding credit cards / personal loans.</p>
+</dd>
+<dt>medical_debt</dt><dd><p>Outstanding medical debt.</p>
+</dd>
+<dt>invst_prop_bus_own_debt</dt><dd><p>Debt from investment properties / owned business.</p>
+</dd>
+<dt>other_debt</dt><dd><p>Debt from other sources.</p>
+</dd>
+<dt>2020_gross_inc</dt><dd><p>What was your 2020 gross (pre-tax, pre-deductions) annual household income?</p>
+</dd>
+<dt>2020_housing_exp</dt><dd><p>Housing expenses(rent, mortgage, insurance, taxes, upkeep).</p>
+</dd>
+<dt>2020_utilities_exp</dt><dd><p>Utilities expenses(phone, internet, gas, electric, water, sewer).</p>
+</dd>
+<dt>2020_transp_exp</dt><dd><p>Transportation expenses(car payment, bus / subway tickets, gas, insurance, maintenance).</p>
+</dd>
+<dt>2020_necessities_exp</dt><dd><p>Necessities expenses(Groceries, Clothing, Personal Care, Household Supplies).</p>
+</dd>
+<dt>2020_lux_exp</dt><dd><p>Luxury expenses (Restaurants/Dining, Entertainment, Hobbies, Travel, Pets, Gifts).</p>
+</dd>
+<dt>2020_child_exp</dt><dd><p>Children expenses(child care, soccer team, etc.).</p>
+</dd>
+<dt>2020_debt_repay</dt><dd><p>Debt repayment (excluding mortgage/auto).</p>
+</dd>
+<dt>2020_invst_save</dt><dd><p>Investments / savings.</p>
+</dd>
+<dt>2020_charity</dt><dd><p>Charity / Tithing.</p>
+</dd>
+<dt>2020_healthcare_exp</dt><dd><p>Healthcare expenses(direct costs, co-pays, insurance you pay).</p>
+</dd>
+<dt>2020_taxes</dt><dd><p>Taxes (the sum of all taxes paid, including amounts deducted from paychecks).</p>
+</dd>
+<dt>2020_edu_exp</dt><dd><p>Education expenses.</p>
+</dd>
+<dt>2020_other_exp</dt><dd><p>Other expenses.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Reddit Official 2020 FI Survey Results, https://www.reddit.com/r/financialindependence/comments/m1q8ia/official_2020_fi_survey_results.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+
+# Histogram of Expected Retirement Age.
+ggplot(reddit_finance, aes(retire_age)) +
+  geom_bar(na.rm = TRUE) +
+  labs(
+    title = "At what age do you expect to retire?",
+    x = "Age Bracket",
+    y = "Number of Respondents"
+  )
+
+# Histogram of Dollar Amount at Which FI was reached.
+ggplot(reddit_finance, aes(whn_fin_indy_num)) +
+  geom_histogram(na.rm = TRUE, bins = 20) +
+  labs(
+    title = "At what amount invested did you consider\nyourself Financially Independent?",
+    x = "Dollar Amount (in local currency)",
+    y = "Number of Respondents"
+  )
+
+</code></pre>
+
+
+</div>
+</body></html>

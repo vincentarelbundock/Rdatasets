@@ -1,0 +1,132 @@
+<!DOCTYPE html><html><head><title>R: htv</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>htv</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>htv</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: J.J. Heckman, J.L. Tobias, and E. Vytlacil (2003), “Simple Estimators for Treatment Parameters in a Latent-Variable Framework,” Review of Economics and Statistics 85, 748-755. Professor Tobias kindly provided the data, which were obtained from the 1991 National Longitudinal Survey of Youth. All people in the sample are males age 26 to 34. For confidentiality reasons, I have included only a subset of the variables used by the authors. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('htv')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 1230 observations on 23 variables:
+</p>
+
+<ul>
+<li> <p><strong>wage:</strong> hourly wage, 1991
+</p>
+</li>
+<li> <p><strong>abil:</strong> abil. measure, not standardized
+</p>
+</li>
+<li> <p><strong>educ:</strong> highest grade completed by 1991
+</p>
+</li>
+<li> <p><strong>ne:</strong> =1 if in northeast, 1991
+</p>
+</li>
+<li> <p><strong>nc:</strong> =1 if in nrthcntrl, 1991
+</p>
+</li>
+<li> <p><strong>west:</strong> =1 if in west, 1991
+</p>
+</li>
+<li> <p><strong>south:</strong> =1 if in south, 1991
+</p>
+</li>
+<li> <p><strong>exper:</strong> potential experience
+</p>
+</li>
+<li> <p><strong>motheduc:</strong> highest grade, mother
+</p>
+</li>
+<li> <p><strong>fatheduc:</strong> highest grade, father
+</p>
+</li>
+<li> <p><strong>brkhme14:</strong> =1 if broken home, age 14
+</p>
+</li>
+<li> <p><strong>sibs:</strong> number of siblings
+</p>
+</li>
+<li> <p><strong>urban:</strong> =1 if in urban area, 1991
+</p>
+</li>
+<li> <p><strong>ne18:</strong> =1 if in NE, age 18
+</p>
+</li>
+<li> <p><strong>nc18:</strong> =1 if in NC, age 18
+</p>
+</li>
+<li> <p><strong>south18:</strong> =1 if in south, age 18
+</p>
+</li>
+<li> <p><strong>west18:</strong> =1 if in west, age 18
+</p>
+</li>
+<li> <p><strong>urban18:</strong> =1 if in urban area, age 18
+</p>
+</li>
+<li> <p><strong>tuit17:</strong> college tuition, age 17
+</p>
+</li>
+<li> <p><strong>tuit18:</strong> college tuition, age 18
+</p>
+</li>
+<li> <p><strong>lwage:</strong> log(wage)
+</p>
+</li>
+<li> <p><strong>expersq:</strong> exper^2
+</p>
+</li>
+<li> <p><strong>ctuit:</strong> tuit18 - tuit17
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>Because an ability measure is included in this data set, it can be used as another illustration of including proxy variables in regression models. See Chapter 9. Also, one can try the IV procedure with the ability measure included as an exogenous explanatory variable.
+</p>
+<p>Used in Text: pages 550, 628
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(htv)
+</code></pre>
+
+
+</div>
+</body></html>

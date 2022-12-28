@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><title>R: S&amp;P 500 stock data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>sp500_seq</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>S&amp;P 500 stock data</h2>
+
+<h3>Description</h3>
+
+<p>Daily stock returns from the S&amp;P500 for 1990-2011 can be used to assess
+whether stock activity each day is independent of the stock's behavior on
+previous days. We label each day as Up or Down (D) depending on whether the
+market was up or down that day. For example, consider the following changes
+in price, their new labels of up and down, and then the number of days that
+must be observed before each Up day.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>sp500_seq
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2948 observations on the following variable.
+</p>
+
+<dl>
+<dt>race</dt><dd><p>a factor with levels <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>,
+<code>5</code>, <code>6</code>, and <code>7+</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.google.com/finance/">Google Finance</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+sp500_seq
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html><html><head><title>R: Are Emily and Greg More Employable Than Lakisha and Jamal?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>labor_market_discriminiation</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Are Emily and Greg More Employable Than Lakisha and Jamal?</h2>
+
+<h3>Description</h3>
+
+<p>Original data from the experiment run by Bertrand and Mullainathan (2004).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>labor_market_discrimination
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 4870 observations of 63 variables.
+</p>
+
+<dl>
+<dt>education</dt><dd><p>Highest education, with levels of 0 = not reported; 1 = high school diploma; 2 = high school graduate; 3 = some college; 4 = college or more.</p>
+</dd>
+<dt>n_jobs</dt><dd><p>Number of jobs listed on resume.</p>
+</dd>
+<dt>years_exp</dt><dd><p>Number of years of work experience on the resume.</p>
+</dd>
+<dt>honors</dt><dd><p>Indicator variable for which 1 = resume mentions some honors.</p>
+</dd>
+<dt>volunteer</dt><dd><p>Indicator variable for which 1 = resume mentions some volunteering experience.</p>
+</dd>
+<dt>military</dt><dd><p>Indicator variable for which 1 = resume mentions some military experience.</p>
+</dd>
+<dt>emp_holes</dt><dd><p>Indicator variable for which 1 = resume mentions some employment holes.</p>
+</dd>
+<dt>occup_specific</dt><dd><p>1990 Census Occupation Code. See sources for a key.</p>
+</dd>
+<dt>occup_broad</dt><dd><p>Occupation broad with levels 1 = executives and managerial occupations, 2 = administrative supervisors, 3 = sales representatives, 4 = sales workers, 5 = secretaries and legal assistants, 6 = clerical occupations</p>
+</dd>
+<dt>work_in_school</dt><dd><p>Indicator variable for which 1 = resume mentions some work experience while at school</p>
+</dd>
+<dt>email</dt><dd><p>Indicator variable for which 1 = email address on applicant's resume.</p>
+</dd>
+<dt>computer_skills</dt><dd><p>Indicator variable for which 1 = resume mentions some computer skills.</p>
+</dd>
+<dt>special_skills</dt><dd><p>Indicator variable for which 1 = resume mentions some special skills.</p>
+</dd>
+<dt>first_name</dt><dd><p>Applicant's first name.</p>
+</dd>
+<dt>sex</dt><dd><p>Sex, with levels of 'f' = female; 'm' = male.</p>
+</dd>
+<dt>race</dt><dd><p>Race, with levels of 'b' = black; 'w' = white.</p>
+</dd>
+<dt>h</dt><dd><p>Indicator variable for which 1 = high quality resume.</p>
+</dd>
+<dt>l</dt><dd><p>Indicator variable for which 1 = low quality resume.</p>
+</dd>
+<dt>call</dt><dd><p>Indicator variable for which 1 = applicant was called back.</p>
+</dd>
+<dt>city</dt><dd><p>City, with levels of 'c' = chicago; 'b' = boston.</p>
+</dd>
+<dt>kind</dt><dd><p>Kind, with levels of 'a' = administrative; 's' = sales.</p>
+</dd>
+<dt>ad_id</dt><dd><p>Employment ad identifier.</p>
+</dd>
+<dt>frac_black</dt><dd><p>Fraction of blacks in applicant's zip.</p>
+</dd>
+<dt>frac_white</dt><dd><p>Fraction of whites in applicant's zip.</p>
+</dd>
+<dt>l_med_hh_inc</dt><dd><p>Log median household income in applicant's zip.</p>
+</dd>
+<dt>frac_dropout</dt><dd><p>Fraction of high-school dropouts in applicant's zip.</p>
+</dd>
+<dt>frac_colp</dt><dd><p>Fraction of college degree or more in applicant's zip</p>
+</dd>
+<dt>l_inc</dt><dd><p>Log per capita income in applicant's zip.</p>
+</dd>
+<dt>col</dt><dd><p>Indicator variable for which 1 = applicant has college degree or more.</p>
+</dd>
+<dt>expminreq</dt><dd><p>Minimum experience required, if any (in years when numeric).</p>
+</dd>
+<dt>school_req</dt><dd><p>Specific education requirement, if any. 'hsg' = high school graduate, 'somcol' = some college, 'colp' = four year degree or higher</p>
+</dd>
+<dt>eoe</dt><dd><p>Indicator variable for which 1 = ad mentions employer is 'Equal Opportunity Employer'.</p>
+</dd>
+<dt>parent_sales</dt><dd><p>Sales of parent company (in millions of US $).</p>
+</dd>
+<dt>parent_emp</dt><dd><p>Number of parent company employees.</p>
+</dd>
+<dt>branch_sales</dt><dd><p>Sales of branch (in millions of US $).</p>
+</dd>
+<dt>branch_emp</dt><dd><p>Number of branch employees.</p>
+</dd>
+<dt>fed</dt><dd><p>Indicator variable for which 1 = employer is a federal contractor.</p>
+</dd>
+<dt>frac_black_emp_zip</dt><dd><p>Fraction of blacks in employers's zipcode.</p>
+</dd>
+<dt>frac_white_emp_zip</dt><dd><p>Fraction of whites in employer's zipcode.</p>
+</dd>
+<dt>l_med_hh_inc_emp_zip</dt><dd><p>Log median household income in employer's zipcode.</p>
+</dd>
+<dt>frac_dropout_emp_zip</dt><dd><p>Fraction of high-school dropouts in employer's zipcode.</p>
+</dd>
+<dt>frac_colp_emp_zip</dt><dd><p>Fraction of college degree or more in employer's  zipcode.</p>
+</dd>
+<dt>l_inc_emp_zip</dt><dd><p>Log per capita income in employer's zipcode.</p>
+</dd>
+<dt>manager</dt><dd><p>Indicator variable for which 1 = executives or managers wanted.</p>
+</dd>
+<dt>supervisor</dt><dd><p>Indicator variable for which 1 = administrative supervisors wanted.</p>
+</dd>
+<dt>secretary</dt><dd><p>Indicator variable for which 1 = secretaries or legal assistants wanted.</p>
+</dd>
+<dt>off_support</dt><dd><p>Indicator variable for which 1 = clerical workers wanted.</p>
+</dd>
+<dt>sales_rep</dt><dd><p>Indicator variable for which 1 = sales representative wanted.</p>
+</dd>
+<dt>retail_sales</dt><dd><p>Indicator variable for which 1 = retail sales worker wanted.</p>
+</dd>
+<dt>req</dt><dd><p>Indicator variable for which 1 = ad mentions any requirement for job.</p>
+</dd>
+<dt>exp_req</dt><dd><p>Indicator variable for which 1 = ad mentions some experience requirement.</p>
+</dd>
+<dt>com_req</dt><dd><p>Indicator variable for which 1 = ad mentions some communication skills requirement.</p>
+</dd>
+<dt>educ_req</dt><dd><p>Indicator variable for which 1 = ad mentions some educational requirement.</p>
+</dd>
+<dt>comp_req</dt><dd><p>Indicator variable for which 1 = ad mentions some computer skill requirement.</p>
+</dd>
+<dt>org_req</dt><dd><p>Indicator variable for which 1 = ad mentions some organizational skills requirement.</p>
+</dd>
+<dt>manuf</dt><dd><p>Indicator variable for which 1 = employer industry is manufacturing.</p>
+</dd>
+<dt>trans_com</dt><dd><p>Indicator variable for which 1 = employer industry is transport or communication.</p>
+</dd>
+<dt>bank_real</dt><dd><p>Indicator variable for which 1 = employer industry is finance, insurance or real estate.</p>
+</dd>
+<dt>trade</dt><dd><p>Indicator variable for which 1 = employer industry is wholesale or retail trade.</p>
+</dd>
+<dt>bus_service</dt><dd><p>Indicator variable for which 1 = employer industry is business or personal  services.</p>
+</dd>
+<dt>oth_service</dt><dd><p>Indicator variable for which 1 = employer industry is health, education or social  services.</p>
+</dd>
+<dt>miss_ind</dt><dd><p>Indicator variable for which 1 = employer industry is other or unknown.</p>
+</dd>
+<dt>ownership</dt><dd><p>Ownership status of employer, with levels of 'non-profit'; 'private'; 'public'</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>From the summary: &quot;We study race in the labor market by sending fictitious resumes to help-wanted ads in Boston and Chicago newspapers. To manipulate perceived race, resumes are randomly assigned African-American- or White-sounding names. White names receive 50 percent more callbacks for interviews. Callbacks are also more responsive to resume quality for White names than for African-American ones. The racial gap is uniform across occupation, industry, and employer size. We also find little evidence that employers are inferring social class from the names. Differential treatment by race still appears to be prominent in the U. S. labor market.&quot;
+</p>
+
+
+<h3>Source</h3>
+
+<p>Bertrand, Marianne, and Mullainathan, Sendhil. Replication data for: Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination. Nashville, TN: American Economic Association [publisher], 2004. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2019-12-06. <a href="https://doi.org/10.3886/E116023V1">doi:10.3886/E116023V1</a>.
+</p>
+<p><a href="https://www.nber.org/system/files/working_papers/w9873/w9873.pdf">NBER Working Papers</a>
+</p>
+<p><a href="https://usa.ipums.org/usa/volii/occ1990.shtml">1990 Census Occupation Codes</a>
+</p>
+<p>Note: The description of the variables follows closely the labels provided in the original dataset, with small edits for clarity.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+
+# Percent callback for typical White names and typical African-American names (table 1, p. 997)
+
+labor_market_discrimination %&gt;%
+  group_by(race) %&gt;%
+  summarise(call_back = mean(call))
+</code></pre>
+
+
+</div>
+</body></html>

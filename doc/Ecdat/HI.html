@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Health Insurance and Hours Worked By Wives</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>HI</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Health Insurance and Hours Worked By Wives </h2>
+
+<h3>Description</h3>
+
+<p>a cross-section from 1993
+</p>
+<p><em>number of observations</em> :  22272
+</p>
+<p><em>observation</em> :  individuals
+</p>
+<p><em>country</em> :  United States
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(HI)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataframe containing :
+</p>
+
+<dl>
+<dt>whrswk</dt><dd><p>hours worked per week by wife</p>
+</dd>
+<dt>hhi</dt><dd><p>wife covered by husband's HI ?</p>
+</dd>
+<dt>whi</dt><dd><p>wife has HI thru her job ?</p>
+</dd>
+<dt>hhi2</dt><dd><p>husband has HI thru own job ?</p>
+</dd>
+<dt>education</dt><dd><p>a factor with levels, &quot;&lt;9years&quot;, &quot;9-11years&quot;, &quot;12years&quot;, &quot;13-15years&quot;, &quot;16years&quot;, &quot;&gt;16years&quot;</p>
+</dd>
+<dt>race</dt><dd><p>one of white, black, other</p>
+</dd>
+<dt>hispanic</dt><dd><p>Hispanic ?</p>
+</dd>
+<dt>experience</dt><dd><p>years of potential work experience</p>
+</dd>
+<dt>kidslt6</dt><dd><p>number of kids under age of 6</p>
+</dd>
+<dt>kids618</dt><dd><p>number of kids 6&ndash;18 years old</p>
+</dd>
+<dt>husby</dt><dd><p>husband's income in thousands of dollars</p>
+</dd>
+<dt>region</dt><dd>
+<p>one of <code>other</code>, <code>northcentral</code>, 
+<code>south</code>, <code>west</code>
+</p>
+</dd>
+<dt>wght</dt><dd><p>sampling weight</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Olson, Craig A. (1998) &ldquo;A comparison of parametric and semiparametric estimates of the effect of spousal health insurance coverage on weekly hours worked by wives&rdquo;, <em>Journal of Applied Econometrics</em>, <b>13(5)</b>, September&ndash;October, 543&ndash;565.
+</p>
+
+
+<h3>References</h3>
+
+<p>Journal of Applied Econometrics data archive : <a href="http://qed.econ.queensu.ca/jae/">http://qed.econ.queensu.ca/jae/</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Index.Source</code>, <code>Index.Economics</code>, <code>Index.Econometrics</code>, <code>Index.Observations</code></p>
+
+
+</div>
+</body></html>

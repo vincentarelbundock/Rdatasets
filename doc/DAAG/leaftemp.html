@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: Leaf and Air Temperature Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>leaftemp</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Leaf and Air Temperature Data</h2>
+
+<h3>Description</h3>
+
+<p>Data are measurements of vapour pressure and of the 
+difference between leaf and air temperature.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>leaftemp</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>CO2level</dt><dd><p>Carbon Dioxide level
+<code>low</code>, <code>medium</code>, <code>high</code> </p>
+</dd>
+<dt>vapPress</dt><dd><p>Vapour pressure</p>
+</dd>
+<dt>tempDiff</dt><dd><p>Difference between leaf and air temperature</p>
+</dd>
+<dt>BtempDiff</dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Katharina Siebke and Susan von Cammerer, Australian National University.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>print("Fitting Multiple Lines - Example 7.3")
+
+leaf.lm1 &lt;- lm(tempDiff ~ 1 , data = leaftemp)
+leaf.lm2 &lt;- lm(tempDiff ~ vapPress, data = leaftemp)
+leaf.lm3 &lt;- lm(tempDiff ~ CO2level + vapPress, data = leaftemp)
+leaf.lm4 &lt;- lm(tempDiff ~ CO2level + vapPress + vapPress:CO2level,
+  data = leaftemp)
+
+anova(leaf.lm1, leaf.lm2, leaf.lm3, leaf.lm4)
+
+summary(leaf.lm2)
+plot(leaf.lm2)
+
+</code></pre>
+
+
+</div>
+</body></html>

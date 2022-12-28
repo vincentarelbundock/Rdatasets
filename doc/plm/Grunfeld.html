@@ -1,0 +1,134 @@
+<!DOCTYPE html><html><head><title>R: Grunfeld's Investment Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Grunfeld</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Grunfeld's Investment Data</h2>
+
+<h3>Description</h3>
+
+<p>A balanced panel of 10 observational units (firms) from 1935 to 1954
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing :
+</p>
+
+<dl>
+<dt>firm</dt><dd><p>observation</p>
+</dd>
+<dt>year</dt><dd><p>date</p>
+</dd>
+<dt>inv</dt><dd><p>gross Investment</p>
+</dd>
+<dt>value</dt><dd><p>value of the firm</p>
+</dd>
+<dt>capital</dt><dd><p>stock of plant and equipment</p>
+</dd> </dl>
+
+
+
+<h3>Details</h3>
+
+<p><em>total number of observations</em> : 200
+</p>
+<p><em>observation</em> : production units
+</p>
+<p><em>country</em> : United States
+</p>
+
+
+<h3>Note</h3>
+
+<p>The Grunfeld data as provided in package <code>plm</code> is the
+same data as used in Baltagi (2001), see <strong>Examples</strong> below.
+</p>
+<p>NB:<br /> Various versions of the Grunfeld data circulate
+online. Also, various text books (and also varying among editions)
+and papers use different subsets of the original Grunfeld data,
+some of which contain errors in a few data points compared to the
+original data used by Grunfeld (1958) in his PhD thesis. See
+Kleiber/Zeileis (2010) and its accompanying website for a
+comparison of various Grunfeld data sets in use.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Baltagi (2001):
+</p>
+<p><a href="https://www.wiley.com/legacy/wileychi/baltagi/">https://www.wiley.com/legacy/wileychi/baltagi/</a>
+</p>
+<p><a href="https://www.wiley.com/legacy/wileychi/baltagi/supp/Grunfeld.fil">https://www.wiley.com/legacy/wileychi/baltagi/supp/Grunfeld.fil</a>
+</p>
+<p>Online complements to Baltagi (2013):
+</p>
+<p><a href="https://bcs.wiley.com/he-bcs/Books?action=resource&amp;bcsId=4338&amp;itemId=1118672321&amp;resourceId=13452">https://bcs.wiley.com/he-bcs/Books?action=resource&amp;bcsId=4338&amp;itemId=1118672321&amp;resourceId=13452</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Baltagi BH (2001).
+<em>Econometric Analysis of Panel Data</em>, 3rd edition.
+John Wiley and Sons ltd.
+</p>
+<p>Baltagi BH (2013).
+<em>Econometric Analysis of Panel Data</em>, 5th edition.
+John Wiley and Sons ltd.
+</p>
+<p>Grunfeld Y (1958).
+<em>The determinants of corporate investment</em>.
+Ph.D. thesis, Department of Economics, University of Chicago.
+</p>
+<p>Kleiber C, Zeileis A (2010).
+&ldquo;The Grunfeld Data at 50.&rdquo;
+<em>German Economic Review</em>, <b>11</b>, 404-417.
+<a href="https://doi.org/10.1111/j.1468-0475.2010.00513.x">https://doi.org/10.1111/j.1468-0475.2010.00513.x</a>.
+</p>
+<p>website accompanying the paper with various variants of the
+Grunfeld data:
+<a href="https://www.zeileis.org/grunfeld/">https://www.zeileis.org/grunfeld/</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>For the complete Grunfeld data (11 firms), see
+AER::Grunfeld, in the <code>AER</code> package.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+## Not run: 
+# Compare plm's Grunfeld data to Baltagi's (2001) Grunfeld data:
+  data("Grunfeld", package="plm")
+  Grunfeld_baltagi2001 &lt;- read.csv("http://www.wiley.com/legacy/wileychi/
+    baltagi/supp/Grunfeld.fil", sep="", header = FALSE)
+  library(compare)
+  compare::compare(Grunfeld, Grunfeld_baltagi2001, allowAll = T) # same data set
+  
+## End(Not run)
+
+</code></pre>
+
+
+</div>
+</body></html>

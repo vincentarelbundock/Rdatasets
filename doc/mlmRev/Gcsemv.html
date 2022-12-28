@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>R: GCSE exam score</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Gcsemv</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>GCSE exam score</h2>
+
+<h3>Description</h3>
+
+<p>The GCSE exam scores on a science subject. Two components of the exam
+were chosen as outcome variables: written paper and course work. There
+are 1,905 students from 73 schools in England.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Gcsemv)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1905 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt>school</dt><dd><p>School ID - a factor</p>
+</dd>
+<dt>student</dt><dd><p>Student ID - a factor</p>
+</dd>
+<dt>gender</dt><dd><p>Gender of student</p>
+</dd>
+<dt>written</dt><dd><p>Total score on written paper</p>
+</dd>
+<dt>course</dt><dd><p>Total score on coursework paper</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html">http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Multivariate response models. (2000). In Rasbash, J., et al, <em>A
+user's guide to MLwiN</em>, Institute of Education, University of
+London.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>str(Gcsemv)
+</code></pre>
+
+
+</div>
+</body></html>

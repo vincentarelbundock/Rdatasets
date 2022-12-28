@@ -1,0 +1,94 @@
+<!DOCTYPE html><html><head><title>R: Ability and Intelligence Tests</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ability.cov</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Ability and Intelligence Tests</h2>
+
+<h3>Description</h3>
+
+<p>Six tests were given to 112 individuals. The covariance matrix is
+given in this object.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ability.cov</code></pre>
+
+
+<h3>Details</h3>
+
+<p>The tests are described as
+</p>
+
+<dl>
+<dt>general:</dt><dd><p>a non-verbal measure of general intelligence using
+Cattell's culture-fair test.</p>
+</dd>
+<dt>picture:</dt><dd><p>a picture-completion test</p>
+</dd>
+<dt>blocks:</dt><dd><p>block design</p>
+</dd>
+<dt>maze:</dt><dd><p>mazes</p>
+</dd>
+<dt>reading:</dt><dd><p>reading comprehension</p>
+</dd>
+<dt>vocab:</dt><dd><p>vocabulary</p>
+</dd>
+</dl>
+
+<p>Bartholomew gives both covariance and correlation matrices,
+but these are inconsistent.  Neither are in the original paper.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Bartholomew, D. J. (1987).
+<em>Latent Variable Analysis and Factor Analysis</em>.
+Griffin.
+</p>
+<p>Bartholomew, D. J. and Knott, M. (1990).
+<em>Latent Variable Analysis and Factor Analysis</em>.
+Second Edition, Arnold.
+</p>
+
+
+<h3>References</h3>
+
+<p>Smith, G. A. and Stanley G. (1983).
+Clocking <code class="reqn">g</code>: relating intelligence and measures of timed
+performance.
+<em>Intelligence</em>, <b>7</b>, 353&ndash;368.
+<a href="https://doi.org/10.1016/0160-2896%2883%2990010-7">doi:10.1016/0160-2896(83)90010-7</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+require(stats)
+(ability.FA &lt;- factanal(factors = 1, covmat = ability.cov))
+update(ability.FA, factors = 2)
+## The signs of factors and hence the signs of correlations are
+## arbitrary with promax rotation.
+update(ability.FA, factors = 2, rotation = "promax")
+</code></pre>
+
+
+</div>
+</body></html>

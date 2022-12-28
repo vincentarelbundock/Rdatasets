@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><title>R: Lawn Roller Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>roller</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Lawn Roller Data</h2>
+
+<h3>Description</h3>
+
+<p>The <code>roller</code> data frame has 10 rows and 2 columns.
+Different weights of roller were rolled over different parts
+of a lawn, and the depression was recorded.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>roller</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>weight</dt><dd><p>a numeric vector consisting of the roller weights</p>
+</dd>
+<dt>depression</dt><dd><p>the depth of the depression made in the grass
+under the roller</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Stewart, K.M., Van Toor, R.F., Crosbie,
+S.F. 1988. Control of grass grub (Coleoptera: Scarabaeidae) with
+rollers of different design. N.Z. Journal of Experimental Agriculture
+16: 141-150.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>plot(roller)
+roller.lm &lt;- lm(depression ~ weight, data = roller)
+plot(roller.lm, which = 4)
+</code></pre>
+
+
+</div>
+</body></html>

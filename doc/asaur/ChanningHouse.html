@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: Channing House Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ChanningHouse</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Channing House Data
+</h2>
+
+<h3>Description</h3>
+
+<p>The <code>ChanningHouse</code> data frame has 457 rows and 5 columns. This is 5 fewer
+than the parent channing data frame in the boot package. These 5 were
+removed because the exit time was not smaller than the entry time.
+</p>
+<p>Channing House is a retirement centre in Palo Alto, California. These data were collected between the opening of the house in 1964 until July 1, 1975. In that time 97 men and 365 women passed through the centre. For each of these, their age on entry and also on leaving or death was recorded. A large number of the observations were censored mainly due to the resident being alive on July 1, 1975 when the data was collected. Over the time of the study 130 women and 46 men died at Channing House. Differences between the survival of the sexes, taking age into account, was one of the primary concerns of this study.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("ChanningHouse")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 457 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>sex</code></dt><dd><p>a factor for the sex of each resident with levels <code>Female</code> <code>Male</code></p>
+</dd>
+<dt><code>entry</code></dt><dd><p>The residents age (in months) on entry to the center)</p>
+</dd>
+<dt><code>exit</code></dt><dd><p>The age (in months) of the resident on death, leaving the center or July 1, 1975, whichever event occurred first.)</p>
+</dd>
+<dt><code>time</code></dt><dd><p>The length of time (in months) that the resident spent at Channing House. (<code>time=exit-entry</code>)))</p>
+</dd>
+<dt><code>cens</code></dt><dd><p>The indicator of reight censoring. 1 indicates that the resident died at Channing House, 0 indicates that they left the house prior to July 1, 1975 or that they were still alive and living in the center at that date.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>The current data were derived from the &quot;channing&quot; data frame in the &quot;boot&quot; package. The original source for the data was
+</p>
+<p>Hyde, J. (1980) Testing survival with incomplete observations. Biostatistics Casebook. R.G. Miller, B. Efron, B.W. Brown and L.E. Moses (editors), 31-46. John Wiley. 
+</p>
+
+
+<h3>References</h3>
+
+<p>Davison, A.C. and Hinkley, D.V. (1997) Bootstrap Methods and Their Application. Cambridge University Press. 
+</p>
+<p>Canty, A. and Ripley, B. (2015) boot package.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(ChanningHouse)
+  </code></pre>
+
+
+</div>
+</body></html>

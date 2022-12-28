@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: Sensory data from a french fries experiment.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>french_fries</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Sensory data from a french fries experiment.</h2>
+
+<h3>Description</h3>
+
+<p>This data was collected from a sensory experiment conducted at Iowa State
+University in 2004.  The investigators were interested in the effect of
+using three different fryer oils had on the taste of the fries.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>french_fries
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 696 rows and 9 variables
+</p>
+
+
+<h3>Details</h3>
+
+<p>Variables:
+</p>
+
+<ul>
+<li><p> time in weeks from start of study.
+</p>
+</li>
+<li><p> treatment (type of oil),
+</p>
+</li>
+<li><p> subject,
+</p>
+</li>
+<li><p> replicate,
+</p>
+</li>
+<li><p> potato-y flavour,
+</p>
+</li>
+<li><p> buttery flavour,
+</p>
+</li>
+<li><p> grassy flavour,
+</p>
+</li>
+<li><p> rancid flavour,
+</p>
+</li>
+<li><p> painty flavour
+</p>
+</li></ul>
+
+
+
+</div>
+</body></html>

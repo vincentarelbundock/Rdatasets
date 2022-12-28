@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><title>R: Frosted Flakes data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>frostedflakes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Frosted Flakes data</h2>
+
+<h3>Description</h3>
+
+<p>The <code>frosted flakes</code> data frame has 101 rows and 2 columns
+giving the sugar concentration (in percent) for 25 g samples
+of a cereal as measured by 2 methods &ndash; high performance liquid
+chromatography (a slow accurate lab method) and a quick method
+using the infra-analyzer 400.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>elastic1</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Lab</dt><dd><p>careful laboratory analysis measurements using
+high performance liquid chromatography</p>
+</dd>
+<dt>IA400</dt><dd><p>measurements based on the infra-analyzer 400</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>W. J. Braun
+</p>
+
+
+</div>
+</body></html>

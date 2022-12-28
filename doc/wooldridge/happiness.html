@@ -1,0 +1,160 @@
+<!DOCTYPE html><html><head><title>R: happiness</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>happiness</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>happiness</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge  Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('happiness')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 17137 observations on 33 variables:
+</p>
+
+<ul>
+<li> <p><strong>year:</strong> gss year for this respondent
+</p>
+</li>
+<li> <p><strong>workstat:</strong> work force status
+</p>
+</li>
+<li> <p><strong>prestige:</strong> occupational prestige score
+</p>
+</li>
+<li> <p><strong>divorce:</strong> ever been divorced or separated
+</p>
+</li>
+<li> <p><strong>widowed:</strong> ever been widowed
+</p>
+</li>
+<li> <p><strong>educ:</strong> highest year of school completed
+</p>
+</li>
+<li> <p><strong>reg16:</strong> region of residence, age 16
+</p>
+</li>
+<li> <p><strong>babies:</strong> household members less than 6 yrs old
+</p>
+</li>
+<li> <p><strong>preteen:</strong> household members 6 thru 12 yrs old
+</p>
+</li>
+<li> <p><strong>teens:</strong> household members 13 thru 17 yrs old
+</p>
+</li>
+<li> <p><strong>income:</strong> total family income
+</p>
+</li>
+<li> <p><strong>region:</strong> region of interview
+</p>
+</li>
+<li> <p><strong>attend:</strong> how often r attends religious services
+</p>
+</li>
+<li> <p><strong>happy:</strong> general happiness
+</p>
+</li>
+<li> <p><strong>owngun:</strong> =1 if own gun
+</p>
+</li>
+<li> <p><strong>tvhours:</strong> hours per day watching tv
+</p>
+</li>
+<li> <p><strong>vhappy:</strong> =1 if 'very happy'
+</p>
+</li>
+<li> <p><strong>mothfath16:</strong> =1 if live with mother and father at 16
+</p>
+</li>
+<li> <p><strong>black:</strong> =1 if black
+</p>
+</li>
+<li> <p><strong>gwbush04:</strong> =1 if voted for G.W. Bush in 2004
+</p>
+</li>
+<li> <p><strong>female:</strong> =1 if female
+</p>
+</li>
+<li> <p><strong>blackfemale:</strong> black*female
+</p>
+</li>
+<li> <p><strong>gwbush00:</strong> =1 if voted for G.W. Bush in 2000
+</p>
+</li>
+<li> <p><strong>occattend:</strong> =1 if attend is 3, 4, or 5
+</p>
+</li>
+<li> <p><strong>regattend:</strong> =1 if attend is 6, 7, or 8
+</p>
+</li>
+<li> <p><strong>y94:</strong> =1 if year == 1994
+</p>
+</li>
+<li> <p><strong>y96:</strong> 
+</p>
+</li>
+<li> <p><strong>y98:</strong> 
+</p>
+</li>
+<li> <p><strong>y00:</strong> 
+</p>
+</li>
+<li> <p><strong>y02:</strong> 
+</p>
+</li>
+<li> <p><strong>y04:</strong> 
+</p>
+</li>
+<li> <p><strong>y06:</strong> =1 if year == 2006
+</p>
+</li>
+<li> <p><strong>unem10:</strong> =1 if unemployed in last 10 years
+</p>
+</li></ul>
+
+
+
+<h3></h3>
+
+<p>NA
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(happiness)
+</code></pre>
+
+
+</div>
+</body></html>

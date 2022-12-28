@@ -1,0 +1,76 @@
+<!DOCTYPE html><html><head><title>R: Money, GDP and Interest Rate in Canada</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Money</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Money, GDP and Interest Rate in Canada </h2>
+
+<h3>Description</h3>
+
+<p>quarterly observations from 1967-1 to 1998-4
+</p>
+<p><em>number of observations</em> :  128
+</p>
+<p><em>observation</em> :  country
+</p>
+<p><em>country</em> :  Canada
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Money)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A time series containing :
+</p>
+
+<dl>
+<dt>m</dt><dd><p>log of the real money supply</p>
+</dd>
+<dt>y</dt><dd><p>the log of GDP, in 1992 dollars, seasonally adjusted</p>
+</dd>
+<dt>p</dt><dd><p>the log of the price level</p>
+</dd>
+<dt>r</dt><dd><p>the 3-month treasury till rate</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>CANSIM Database of Statistics Canada.
+</p>
+
+
+<h3>References</h3>
+
+<p>Davidson, R.  and  James G.  MacKinnon (2004) <em>Econometric Theory and Methods</em>, New York, Oxford University Press, chapter 7 and 8.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Index.Source</code>, <code>Index.Economics</code>, <code>Index.Econometrics</code>, <code>Index.Observations</code>,
+</p>
+<p><code>Index.Time.Series</code></p>
+
+
+</div>
+</body></html>

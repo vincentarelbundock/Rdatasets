@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: Riding with a Driver Who Has Been Drinking</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>YouthRisk2007</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Riding with a Driver Who Has Been Drinking</h2>
+
+<h3>Description</h3>
+
+<p>Risky behavior (riding with a drinking driver) in youths
+</p>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 13387 observations on the following 6 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>ride.alc.driver</code></td><td style="text-align: left;"> <code>1</code>=rode with a drinking driver in past 30 days or <code>0</code>=did not</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>female</code></td><td style="text-align: left;"> <code>1</code>=female or <code>0</code>=male</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>grade</code></td><td style="text-align: left;"> Year in high school: <code>9</code>, <code>10</code>, <code>11</code>, or <code>12</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>age4</code></td><td style="text-align: left;"> Age (in years)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>smoke</code></td><td style="text-align: left;"> Ever smoked? <code>1</code>=yes or <code>0</code>=no</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>DriverLicense</code></td><td style="text-align: left;"> Have a driver's license? <code>1</code>=yes or <code>0</code>=no</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset is derived from
+the 2007 Youth Risk Behavior Surveillance System (YRBSS), which is an annual survey conducted
+by the Centers for Disease Control and Prevention (CDC) to monitor the prevalence of health-risk
+youth behaviors. This dataset focuses on whether or not youths have recently (in past 30  days)
+ridden with a drunk driver.
+</p>
+<p>This dataset renamed as YouthRisk for the second edition.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The article &quot;Which Young People Accept a Lift From a Drunk or Drugged Driver?&quot; in Accident Analysis and
+Prevention (July 2009. pp. 703-9) provides more details.
+</p>
+
+
+<h3>References</h3>
+
+<p>A more recent version of the full dataset is available at http://www.cdc.gov/brfss/technical_infodata/surveydata.htm.
+</p>
+
+
+</div>
+</body></html>

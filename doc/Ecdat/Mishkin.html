@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: Inflation and Interest Rates</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Mishkin</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Inflation and Interest Rates </h2>
+
+<h3>Description</h3>
+
+<p>monthly observations from 1950-2 to 1990-12
+</p>
+<p><em>number of observations</em> :  491
+</p>
+<p><em>observation</em> :  country
+</p>
+<p><em>country</em> :  United States
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Mishkin)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A time series containing :
+</p>
+
+<dl>
+<dt>pai1</dt><dd><p>one-month inflation rate (in percent, annual rate)</p>
+</dd>
+<dt>pai3</dt><dd><p>three-month inflation rate (in percent, annual rate)</p>
+</dd>
+<dt>tb1</dt><dd><p>one-month T-bill rate (in percent, annual rate)</p>
+</dd>
+<dt>tb3</dt><dd><p>three-month T-bill rate (in percent, annual rate)</p>
+</dd>
+<dt>cpi</dt><dd><p>CPI for urban consumers, all items (the 1982-1984 average is set to 100)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Mishkin, F. (1992) &ldquo;Is the Fisher effect for real ?&rdquo;, <em>Journal of Monetary Economics</em>, <b>30</b>, 195-215.
+</p>
+
+
+<h3>References</h3>
+
+<p>Hayashi, F. (2000) <em>Econometrics</em>, Princeton University Press, <a href="http://fhayashi.fc2web.com/hayashi_econometrics.htm">http://fhayashi.fc2web.com/hayashi_econometrics.htm</a>, chapter 2, 176-184.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Index.Source</code>, <code>Index.Economics</code>, <code>Index.Econometrics</code>, <code>Index.Observations</code>,
+</p>
+<p><code>Index.Time.Series</code></p>
+
+
+</div>
+</body></html>

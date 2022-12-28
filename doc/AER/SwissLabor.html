@@ -1,0 +1,90 @@
+<!DOCTYPE html><html><head><title>R: Swiss Labor Market Participation Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>SwissLabor</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Swiss Labor Market Participation Data</h2>
+
+<h3>Description</h3>
+
+<p>Cross-section data originating from the health survey SOMIPOPS
+for Switzerland in 1981.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("SwissLabor")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 872 observations on 7 variables.
+</p>
+
+<dl>
+<dt>participation</dt><dd><p>Factor. Did the individual participate in the labor force?</p>
+</dd>
+<dt>income</dt><dd><p>Logarithm of nonlabor income.</p>
+</dd>
+<dt>age</dt><dd><p>Age in decades (years divided by 10).</p>
+</dd>
+<dt>education</dt><dd><p>Years of formal education.</p>
+</dd>
+<dt>youngkids</dt><dd><p>Number of young children (under 7 years of age).</p>
+</dd>
+<dt>oldkids</dt><dd><p>Number of older children (over 7 years of age).</p>
+</dd>
+<dt>foreign</dt><dd><p>Factor. Is the individual a foreigner (i.e., not Swiss)?</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Journal of Applied Econometrics Data Archive. 
+</p>
+<p><a href="http://qed.econ.queensu.ca/jae/1996-v11.3/gerfin/">http://qed.econ.queensu.ca/jae/1996-v11.3/gerfin/</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Gerfin, M. (1996). Parametric and Semi-Parametric Estimation of the Binary Response
+Model of Labour Market Participation. <em>Journal of Applied Econometrics</em>,
+<b>11</b>, 321&ndash;339.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("SwissLabor")
+
+### Gerfin (1996), Table I.
+fm_probit &lt;- glm(participation ~ . + I(age^2), data = SwissLabor,
+  family = binomial(link = "probit"))
+summary(fm_probit)
+
+### alternatively
+fm_logit &lt;- glm(participation ~ . + I(age^2), data = SwissLabor,
+  family = binomial)
+summary(fm_logit)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html><html><head><title>R: South Carolina County GOP/Democratic Primary Data, 2016</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>SCP16</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>South Carolina County GOP/Democratic Primary Data, 2016</h2>
+
+<h3>Description</h3>
+
+<p>County-level data on vote share and various background/demographic
+information for the 2016 South Carolina GOP/Democratic primaries.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>SCP16
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 46 observations on the following 15 variables.
+</p>
+
+<dl>
+<dt><code>county</code></dt><dd><p>the county</p>
+</dd>
+<dt><code>clinton</code></dt><dd><p>Hillary Clinton's county-level vote share in the 2016 party primary</p>
+</dd>
+<dt><code>sanders</code></dt><dd><p>Bernie Sanders' county-level vote share in the 2016 party primary</p>
+</dd>
+<dt><code>trump</code></dt><dd><p>Donald Trump's county-level vote share in the 2016 party primary</p>
+</dd>
+<dt><code>cruz</code></dt><dd><p>Ted Cruz' county-level vote share in the 2016 party primary</p>
+</dd>
+<dt><code>rubio</code></dt><dd><p>Marco Rubio's county-level vote share in the 2016 party primary</p>
+</dd>
+<dt><code>percapinc</code></dt><dd><p>A county-level estimate for per capita income</p>
+</dd>
+<dt><code>medhouseinc</code></dt><dd><p>A county-level estimate for the median household income</p>
+</dd>
+<dt><code>medfaminc</code></dt><dd><p>A county-level estimate for the median family income</p>
+</dd>
+<dt><code>illiteracy</code></dt><dd><p>An estimate of the percent of the county lacking &quot;basic&quot; prose literacy skills</p>
+</dd>
+<dt><code>perblack</code></dt><dd><p>Percentage of the county that is black</p>
+</dd>
+<dt><code>population</code></dt><dd><p>An estimate of the county-level population</p>
+</dd>
+<dt><code>romneyshare2012</code></dt><dd><p>Mitt Romney's vote share at the county-level from the 2012 general election</p>
+</dd>
+<dt><code>perhsgrad</code></dt><dd><p>Percentage of the county whose residents 25 years and older have at least a high school education</p>
+</dd>
+<dt><code>unemployment</code></dt><dd><p>Unemployment rate for the county for January 2016</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The illiteracy estimate comes from a Department of Education report from 2003.
+The unemployment rate data come from the Bureau of Labor Statistics. A Github repository contains
+more information: <a href="https://github.com/svmiller/sc-primary-2016">https://github.com/svmiller/sc-primary-2016</a>.
+</p>
+
+
+</div>
+</body></html>

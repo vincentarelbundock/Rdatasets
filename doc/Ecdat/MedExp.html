@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Structure of Demand for Medical Care</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>MedExp</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Structure of Demand for Medical Care </h2>
+
+<h3>Description</h3>
+
+<p>Journal of Applied Econometrics data archive : <a href="http://qed.econ.queensu.ca/jae/">http://qed.econ.queensu.ca/jae/</a>
+</p>
+<p><em>number of observations</em> :  5574
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(MedExp)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A time series containing :
+</p>
+
+<dl>
+<dt>med</dt><dd>
+<p>annual medical expenditures in 
+constant dollars excluding dental 
+and outpatient mental 
+</p>
+</dd>
+<dt>lc</dt><dd>
+<p><code>log(coinsrate+1)</code>  where 
+coinsurance rate is 0 to 100
+</p>
+</dd>
+<dt>idp</dt><dd><p>individual deductible plan ?</p>
+</dd>
+<dt>lpi</dt><dd>
+<p><code>log</code>(annual participation 
+incentive payment) or 0 if no payment 
+</p>
+</dd>
+<dt>fmde</dt><dd>
+<p><code>log</code>(max(medical deductible 
+expenditure)) if <code>IDP</code>=1 and 
+<code>MDE</code>&gt;1 or 0 otherwise
+</p>
+</dd>
+<dt>physlim</dt><dd><p>physical limitation ?</p>
+</dd>
+<dt>ndisease</dt><dd><p>number of chronic diseases</p>
+</dd>
+<dt>health</dt><dd><p>self&ndash;rate health (excellent,good,fair,poor)</p>
+</dd>
+<dt>linc</dt><dd><p>log of annual family income (in $)</p>
+</dd>
+<dt>lfam</dt><dd><p>log of family size</p>
+</dd>
+<dt>educdec</dt><dd><p>years of schooling of household head</p>
+</dd>
+<dt>age</dt><dd><p>exact age</p>
+</dd>
+<dt>sex</dt><dd><p>sex (male,female)</p>
+</dd>
+<dt>child</dt><dd><p>age less than 18 ?</p>
+</dd>
+<dt>black</dt><dd><p>is household head black ?</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Deb, P.  and P.K.  Trivedi (2002) &ldquo;The Structure of Demand for Medical Care: Latent Class versus Two-Part Models&rdquo;, <em>Journal of Health Economics</em>, <b>21</b>, 601&ndash;625.
+</p>
+
+
+<h3>References</h3>
+
+<p>Cameron, A.C.  and  P.K.  Trivedi (2005) <em>Microeconometrics : methods and applications</em>, Cambridge.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>DoctorContacts</code>,
+<code>Index.Source</code>, 
+<code>Index.Economics</code>, 
+<code>Index.Econometrics</code>, 
+<code>Index.Observations</code>,
+<code>Index.Time.Series</code>
+</p>
+
+
+</div>
+</body></html>

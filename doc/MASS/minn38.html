@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: Minnesota High School Graduates of 1938</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>minn38</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Minnesota High School Graduates of 1938
+</h2>
+
+<h3>Description</h3>
+
+<p>The Minnesota high school graduates of 1938 were classified according to
+four factors, described below.  The <code>minn38</code> data frame has 168
+rows and 5 columns.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>minn38
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt><code>hs</code></dt><dd>
+<p>high school rank: <code>"L"</code>, <code>"M"</code> and <code>"U"</code> for lower,
+middle and upper third.
+</p>
+</dd>
+<dt><code>phs</code></dt><dd>
+<p>post high school status: Enrolled in college, (<code>"C"</code>), enrolled in
+non-collegiate school, (<code>"N"</code>), employed full-time, (<code>"E"</code>)
+and other, (<code>"O"</code>).
+</p>
+</dd>
+<dt><code>fol</code></dt><dd>
+<p>father's occupational level, (seven levels, <code>"F1"</code>, <code>"F2"</code>,
+..., <code>"F7"</code>).
+</p>
+</dd>
+<dt><code>sex</code></dt><dd>
+<p>sex: factor with levels<code>"F"</code> or <code>"M"</code>.
+</p>
+</dd>
+<dt><code>f</code></dt><dd>
+<p>frequency.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>From R. L. Plackett, (1974) <em>The Analysis of Categorical
+Data.</em> London: Griffin
+</p>
+<p>who quotes the data from
+</p>
+<p>Hoyt, C. J., Krishnaiah, P. R. and Torrance, E. P. (1959) Analysis of
+complex contingency tables, <em>J. Exp. Ed.</em> <b>27</b>, 187&ndash;194.
+</p>
+
+
+</div>
+</body></html>

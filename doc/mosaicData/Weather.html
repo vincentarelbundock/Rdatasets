@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><title>R: Weather</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Weather</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Weather</h2>
+
+<h3>Description</h3>
+
+<p>2016-17 weather in several cities
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Weather)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with weather-related variables for several world cities.
+</p>
+
+<dl>
+<dt>city</dt><dd><p>City name.</p>
+</dd>
+<dt>date</dt><dd><p>Date.</p>
+</dd>
+<dt>year</dt><dd><p>Numeric year.</p>
+</dd>
+<dt>month</dt><dd><p>Numeric month.</p>
+</dd>
+<dt>day</dt><dd><p>Numeric day.</p>
+</dd>
+<dt>high_temp, avg_temp, low_temp</dt><dd><p>High, average, and low temperature for the day in degrees F.</p>
+</dd>
+<dt>high_dewpt, avg_dewpt, low_dewpt</dt><dd><p>High, average, and low dew point for the day in degrees F.</p>
+</dd>
+<dt>high_humidity, avg_humidity, low_humidity</dt><dd><p>High, average, and low relative humidity.</p>
+</dd>
+<dt>high_hg, avg_hg, low_hg</dt><dd><p>High, average, and low sea level pressure in inches of mercury.</p>
+</dd>
+<dt>high_vis, avg_vis, low_vis</dt><dd><p>High, average, and low visability for the day in miles.</p>
+</dd>
+<dt>high_wind, avg_wind, low_wind</dt><dd><p>High, average, and low wind speed for the day in mph.</p>
+</dd>
+<dt>precip</dt><dd><p>Precipitation for the day &ndash; a character vale; <code>T</code> means &quot;trace amount&quot;.</p>
+</dd>
+<dt>events</dt><dd><p>Character string naming weather events on the day (Rain, Fog, Snow, etc.)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>These data were downloaded from WeatherUnderground in January 2018.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>if (require(dplyr)) {
+  Weather %&gt;%
+    group_by(city, year) %&gt;%
+    summarise(
+      min_temp = min(low_temp),
+      max_temp = max(high_temp)
+      )
+}
+
+if (require(ggformula)) {
+  Weather %&gt;%
+    gf_linerange(low_temp + high_temp ~ date | city ~ ., 
+    color = ~ (high_temp + low_temp) / 2, show.legend = FALSE) %&gt;%
+    gf_refine(scale_color_gradientn(colors = rev(rainbow(5))))
+}
+
+</code></pre>
+
+
+</div>
+</body></html>

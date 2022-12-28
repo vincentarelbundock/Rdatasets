@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><title>R: Diabetic Retinopathy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>retinopathy</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Diabetic Retinopathy</h2>
+
+<h3>Description</h3>
+
+<p>A trial of laser coagulation as a treatment to delay
+diabetic retinopathy.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>retinopathy
+data(retinopathy, package="survival")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 394 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p>numeric subject id</p>
+</dd>
+<dt><code>laser</code></dt><dd><p>type of laser used: <code>xenon</code> <code>argon</code></p>
+</dd>
+<dt><code>eye</code></dt><dd><p>which eye was treated: <code>right</code> <code>left</code></p>
+</dd>
+<dt><code>age</code></dt><dd><p>age at diagnosis of diabetes</p>
+</dd>
+<dt><code>type</code></dt><dd><p>type of diabetes: <code>juvenile</code> <code>adult</code>,
+(diagnosis before age 20)</p>
+</dd>
+<dt><code>trt</code></dt><dd><p>0 = control eye, 1 = treated eye</p>
+</dd>
+<dt><code>futime</code></dt><dd><p>time to loss of vision or last follow-up</p>
+</dd>
+<dt><code>status</code></dt><dd><p>0 = censored, 1 = loss of vision in this eye</p>
+</dd>
+<dt><code>risk</code></dt><dd><p>a risk score for the eye.  This high risk
+subset is defined as a score of 6 or greater in at least one eye.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The 197 patients in this dataset were a 50% random sample of the
+patients with &quot;high-risk&quot; diabetic retinopathy as defined by the
+Diabetic Retinopathy Study (DRS).  Each patient had one eye randomized
+to laser treatment and the other eye received no treatment,
+and has two observations in the data set.
+For each
+eye, the event of interest was the time from initiation of treatment
+to the time when visual acuity dropped below 5/200 two visits in a row.
+Thus there is a built-in lag time of
+approximately 6 months (visits were every 3 months).  Survival times
+in this dataset are the actual time to vision loss in months,
+minus the minimum possible time to event (6.5 months).  Censoring was
+caused by death, dropout, or end of the study.
+</p>
+
+
+<h3>References</h3>
+
+<p>W. J. Huster, R. Brookmeyer and S. G. Self (1989).
+Modelling paired survival data with covariates,
+Biometrics 45:145-156.
+</p>
+<p>A. L. Blair, D. R. Hadden, J. A. Weaver, D. B. Archer, P. B. Johnston
+and C. J. Maguire (1976).  The 5-year prognosis for vision in diabetes,
+American Journal of Ophthalmology, 81:383-396.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>coxph(Surv(futime, status) ~ type + trt, cluster= id, retinopathy)
+</code></pre>
+
+
+</div>
+</body></html>

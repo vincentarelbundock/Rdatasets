@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Australian athletes data set</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ais</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Australian athletes data set</h2>
+
+<h3>Description</h3>
+
+<p>These data were collected in a study of how data on 
+various characteristics of the blood varied with sport,
+body size, and sex of the athlete.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(ais)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 202 observations on the following 13 variables.
+</p>
+
+<dl>
+<dt>rcc</dt><dd><p>red blood cell count, in <code class="reqn">10^{12} l^{-1}</code></p>
+</dd>
+<dt>wcc</dt><dd><p>while blood cell count, in <code class="reqn">10^{12}</code> per liter</p>
+</dd>
+<dt>hc</dt><dd><p>hematocrit, percent</p>
+</dd>
+<dt>hg</dt><dd><p>hemaglobin concentration, in g per decaliter</p>
+</dd>
+<dt>ferr</dt><dd><p>plasma ferritins, ng <code class="reqn">dl^{-1}</code></p>
+</dd>
+<dt>bmi</dt><dd><p>Body mass index, kg <code class="reqn">cm^{-2} 10^2</code></p>
+</dd>
+<dt>ssf</dt><dd><p>sum of skin folds</p>
+</dd>
+<dt>pcBfat</dt><dd><p>percent Body fat</p>
+</dd>
+<dt>lbm</dt><dd><p>lean body mass, kg</p>
+</dd>
+<dt>ht</dt><dd><p>height, cm</p>
+</dd>
+<dt>wt</dt><dd><p>weight, kg</p>
+</dd>
+<dt>sex</dt><dd><p>a factor with levels <code>f</code> <code>m</code></p>
+</dd>
+<dt>sport</dt><dd><p>a factor with levels <code>B_Ball</code> <code>Field</code> 
+<code>Gym</code> <code>Netball</code> <code>Row</code> <code>Swim</code> <code>T_400m</code> 
+<code>T_Sprnt</code> <code>Tennis</code> <code>W_Polo</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Do blood hemoglobin concentrations of athletes in endurance-related
+events differ from those in power-related events?
+</p>
+
+
+<h3>Source</h3>
+
+<p>These data were the basis for the analyses that are reported in
+Telford and Cunningham (1991).
+</p>
+
+
+<h3>References</h3>
+
+<p>Telford, R.D. and Cunningham, R.B. 1991.  Sex, sport and
+body-size dependency of hematology in highly trained athletes.
+Medicine and Science in Sports and Exercise 23: 788-794.
+</p>
+
+
+</div>
+</body></html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head><title>R: Daily Closing Prices of Major European Stock Indices,...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>EuStockMarkets</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Daily Closing Prices of Major European Stock Indices, 1991&ndash;1998
+</h2>
+
+<h3>Description</h3>
+
+<p>Contains the daily closing prices of major European stock indices:
+Germany DAX (Ibis), Switzerland SMI, France CAC, and UK FTSE.  The
+data are sampled in business time, i.e., weekends and holidays are
+omitted.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>EuStockMarkets
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A multivariate time series with 1860 observations on 4 variables.
+The object is of class <code>"mts"</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The data were kindly provided by Erste Bank AG, Vienna, Austria.
+</p>
+
+
+</div>
+</body></html>

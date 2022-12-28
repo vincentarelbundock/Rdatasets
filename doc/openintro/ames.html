@@ -1,0 +1,226 @@
+<!DOCTYPE html><html><head><title>R: Housing prices in Ames, Iowa</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ames</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Housing prices in Ames, Iowa</h2>
+
+<h3>Description</h3>
+
+<p>Data set contains information from the Ames Assessor's Office used in
+computing assessed values for individual residential properties sold in
+Ames, IA from 2006 to 2010. See <a href="http://jse.amstat.org/v19n3/decock/DataDocumentation.txt">here</a>
+for detailed variable descriptions.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ames
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tbl_df with with 2930 rows and 82 variables:
+</p>
+
+<dl>
+<dt>Order</dt><dd><p>Observation number.</p>
+</dd>
+<dt>PID</dt><dd><p>Parcel identification number  - can be used with city web site
+for parcel review.</p>
+</dd>
+<dt>area</dt><dd><p>Above grade (ground) living area square feet.</p>
+</dd>
+<dt>price</dt><dd><p>Sale price in USD.</p>
+</dd>
+<dt>MS.SubClass</dt><dd><p>Identifies the type of dwelling involved in the sale.</p>
+</dd>
+<dt>MS.Zoning</dt><dd><p>Identifies the general zoning classification of the sale.</p>
+</dd>
+<dt>Lot.Frontage</dt><dd><p>Linear feet of street connected to property.</p>
+</dd>
+<dt>Lot.Area</dt><dd><p>Lot size in square feet.</p>
+</dd>
+<dt>Street</dt><dd><p>Type of road access to property.</p>
+</dd>
+<dt>Alley</dt><dd><p>Type of alley access to property.</p>
+</dd>
+<dt>Lot.Shape</dt><dd><p>General shape of property.</p>
+</dd>
+<dt>Land.Contour</dt><dd><p>Flatness of the property.</p>
+</dd>
+<dt>Utilities</dt><dd><p>Type of utilities available.</p>
+</dd>
+<dt>Lot.Config</dt><dd><p>Lot configuration.</p>
+</dd>
+<dt>Land.Slope</dt><dd><p>Slope of property.</p>
+</dd>
+<dt>Neighborhood</dt><dd><p>Physical locations within Ames city limits (map
+available).</p>
+</dd>
+<dt>Condition.1</dt><dd><p>Proximity to various conditions.</p>
+</dd>
+<dt>Condition.2</dt><dd><p>Proximity to various conditions (if more than one is
+present).</p>
+</dd>
+<dt>Bldg.Type</dt><dd><p>Type of dwelling.</p>
+</dd>
+<dt>House.Style</dt><dd><p>Style of dwelling.</p>
+</dd>
+<dt>Overall.Qual</dt><dd><p>Rates the overall material and finish of the house.</p>
+</dd>
+<dt>Overall.Cond</dt><dd><p>Rates the overall condition of the house.</p>
+</dd>
+<dt>Year.Built</dt><dd><p>Original construction date.</p>
+</dd>
+<dt>Year.Remod.Add</dt><dd><p>Remodel date (same as construction date if no
+remodeling or additions).</p>
+</dd>
+<dt>Roof.Style</dt><dd><p>Type of roof.</p>
+</dd>
+<dt>Roof.Matl</dt><dd><p>Roof material.</p>
+</dd>
+<dt>Exterior.1st</dt><dd><p>Exterior covering on house.</p>
+</dd>
+<dt>Exterior.2nd</dt><dd><p>Exterior covering on house (if more than one material).</p>
+</dd>
+<dt>Mas.Vnr.Type</dt><dd><p>Masonry veneer type.</p>
+</dd>
+<dt>Mas.Vnr.Area</dt><dd><p>Masonry veneer area in square feet.</p>
+</dd>
+<dt>Exter.Qual</dt><dd><p>Evaluates the quality of the material on the exterior.</p>
+</dd>
+<dt>Exter.Cond</dt><dd><p>Evaluates the present condition of the material on the
+exterior.</p>
+</dd>
+<dt>Foundation</dt><dd><p>Type of foundation.</p>
+</dd>
+<dt>Bsmt.Qual</dt><dd><p>Evaluates the height of the basement.</p>
+</dd>
+<dt>Bsmt.Cond</dt><dd><p>Evaluates the general condition of the basement.</p>
+</dd>
+<dt>Bsmt.Exposure</dt><dd><p>Refers to walkout or garden level walls.</p>
+</dd>
+<dt>BsmtFin.Type.1</dt><dd><p>Rating of basement finished area.</p>
+</dd>
+<dt>BsmtFin.SF.1</dt><dd><p>Type 1 finished square feet.</p>
+</dd>
+<dt>BsmtFin.Type.2</dt><dd><p>Rating of basement finished area (if multiple types).</p>
+</dd>
+<dt>BsmtFin.SF.2</dt><dd><p>Type 2 finished square feet.</p>
+</dd>
+<dt>Bsmt.Unf.SF</dt><dd><p>Unfinished square feet of basement area.</p>
+</dd>
+<dt>Total.Bsmt.SF</dt><dd><p>Total square feet of basement area.</p>
+</dd>
+<dt>Heating</dt><dd><p>Type of heating.</p>
+</dd>
+<dt>Heating.QC</dt><dd><p>Heating quality and condition.</p>
+</dd>
+<dt>Central.Air</dt><dd><p>Central air conditioning.</p>
+</dd>
+<dt>Electrical</dt><dd><p>Electrical system.</p>
+</dd>
+<dt>X1st.Flr.SF</dt><dd><p>First Floor square feet.</p>
+</dd>
+<dt>X2nd.Flr.SF</dt><dd><p>Second floor square feet.</p>
+</dd>
+<dt>Low.Qual.Fin.SF</dt><dd><p>Low quality finished square feet (all floors).</p>
+</dd>
+<dt>Bsmt.Full.Bath</dt><dd><p>Basement full bathrooms.</p>
+</dd>
+<dt>Bsmt.Half.Bath</dt><dd><p>Basement half bathrooms.</p>
+</dd>
+<dt>Full.Bath</dt><dd><p>Full bathrooms above grade.</p>
+</dd>
+<dt>Half.Bath</dt><dd><p>Half baths above grade.</p>
+</dd>
+<dt>Bedroom.AbvGr</dt><dd><p>Bedrooms above grade (does NOT include basement
+bedrooms).</p>
+</dd>
+<dt>Kitchen.AbvGr</dt><dd><p>Kitchens above grade.</p>
+</dd>
+<dt>Kitchen.Qual</dt><dd><p>Kitchen quality.</p>
+</dd>
+<dt>TotRms.AbvGrd</dt><dd><p>Total rooms above grade (does not include bathrooms).</p>
+</dd>
+<dt>Functional</dt><dd><p>Home functionality (Assume typical unless deductions are
+warranted).</p>
+</dd>
+<dt>Fireplaces</dt><dd><p>Number of fireplaces.</p>
+</dd>
+<dt>Fireplace.Qu</dt><dd><p>Fireplace quality.</p>
+</dd>
+<dt>Garage.Type</dt><dd><p>Garage location.</p>
+</dd>
+<dt>Garage.Yr.Blt</dt><dd><p>Year garage was built.</p>
+</dd>
+<dt>Garage.Finish</dt><dd><p>Interior finish of the garage.</p>
+</dd>
+<dt>Garage.Cars</dt><dd><p>Size of garage in car capacity.</p>
+</dd>
+<dt>Garage.Area</dt><dd><p>Size of garage in square feet.</p>
+</dd>
+<dt>Garage.Qual</dt><dd><p>Garage quality.</p>
+</dd>
+<dt>Garage.Cond</dt><dd><p>Garage condition.</p>
+</dd>
+<dt>Paved.Drive</dt><dd><p>Paved driveway.</p>
+</dd>
+<dt>Wood.Deck.SF</dt><dd><p>Wood deck area in square feet.</p>
+</dd>
+<dt>Open.Porch.SF</dt><dd><p>Open porch area in square feet.</p>
+</dd>
+<dt>Enclosed.Porch</dt><dd><p>Enclosed porch area in square feet.</p>
+</dd>
+<dt>X3Ssn.Porch</dt><dd><p>Three season porch area in square feet.</p>
+</dd>
+<dt>Screen.Porch</dt><dd><p>Screen porch area in square feet.</p>
+</dd>
+<dt>Pool.Area</dt><dd><p>Pool area in square feet.</p>
+</dd>
+<dt>Pool.QC</dt><dd><p>Pool quality.</p>
+</dd>
+<dt>Fence</dt><dd><p>Fence quality.</p>
+</dd>
+<dt>Misc.Feature</dt><dd><p>Miscellaneous feature not covered in other categories.</p>
+</dd>
+<dt>Misc.Val</dt><dd><p>Dollar value of miscellaneous feature.</p>
+</dd>
+<dt>Mo.Sold</dt><dd><p>Month Sold (MM).</p>
+</dd>
+<dt>Yr.Sold</dt><dd><p>Year Sold (YYYY).</p>
+</dd>
+<dt>Sale.Type</dt><dd><p>Type of sale.</p>
+</dd>
+<dt>Sale.Condition</dt><dd><p>Condition of sale.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>De Cock, Dean. &quot;Ames, Iowa: Alternative to the Boston housing data as
+an end of semester regression project.&quot; Journal of Statistics Education 19.3
+(2011).
+</p>
+
+
+</div>
+</body></html>

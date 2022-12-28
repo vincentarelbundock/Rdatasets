@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><title>R: Pupil Dilation and Sexual Orientation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Eyes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Pupil Dilation and Sexual Orientation</h2>
+
+<h3>Description</h3>
+
+<p>Data from an experiment relating pupil dilation to sexual orientation.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 106 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>DilateDiff</code></dt><dd><p>Difference in pupil dilation when looking at same-sex and opposite-sex nude photographs</p>
+</dd>
+<dt><code>Sex</code></dt><dd><p><code>F</code>=female or <code>M</code>=male</p>
+</dd>
+<dt><code>Gay</code></dt><dd><p><code>1</code>=gay or <code>0</code>=not, based on Kinsey scale score greater than 3</p>
+</dd>
+<dt><code>SexMale</code></dt><dd><p><code>0</code>=female or <code>1</code>=male</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>DilateDiff is, essentially, the difference in pupil dilation when looking at (a) same-sex nudes and (b) opposite-sex nude photographs. More specifically, multiple measurements of pupil size were taken under each of the two conditions, together with a third condition that involved a neutral stimulus. Within-subject z-scores were then computed, which led to the DilateDiff numbers used here.
+</p>
+
+
+<h3>Source</h3>
+
+<p>G. Rieger and R.C. Savin-Williams (2012),&quot;The Eyes Have It: Sex and Sexual Orientation Differences in Pupil Dilation Patterns,&quot;  in PLoS ONE. The full study included 325 students. Here we are analyzing a subset of the data that excludes White students.
+</p>
+
+
+</div>
+</body></html>

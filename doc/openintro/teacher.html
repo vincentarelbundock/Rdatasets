@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Teacher Salaries in St. Louis, Michigan</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>teacher</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Teacher Salaries in St. Louis, Michigan</h2>
+
+<h3>Description</h3>
+
+<p>This data set contains teacher salaries from 2009-2010 for 71 teachers
+employed by the St. Louis Public School in Michigan, as well as several
+covariates.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>teacher
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 71 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt>id</dt><dd><p>Identification code for each teacher, assigned randomly.</p>
+</dd>
+<dt>degree</dt><dd><p>Highest educational degree attained: <code>BA</code> (bachelor's degree) or <code>MA</code> (master's degree).</p>
+</dd>
+<dt>fte</dt><dd><p>Full-time enrollment status: full-time <code>1</code> or part-time <code>0.5</code>.</p>
+</dd>
+<dt>years</dt><dd><p>Number of years employed by the school district.</p>
+</dd>
+<dt>base</dt><dd><p>Base annual salary, in dollars.</p>
+</dd>
+<dt>fica</dt><dd><p>Amount paid into Social Security and Medicare per year through the Federal Insurance Contribution Act (FICA), in dollars.</p>
+</dd>
+<dt>retirement</dt><dd><p>Amount paid into the retirement fund of the teacher per year, in dollars.</p>
+</dd>
+<dt>total</dt><dd><p>Total annual salary of the teacher, resulting from the sum of base salary + fica + retirement, in dollars.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Originally posted on SODA Developers (dev.socrata.com/data), removed in 2020.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+
+# Salary and education level
+ggplot(teacher, aes(x = degree, y = base)) +
+  geom_boxplot() +
+  labs(
+    x = "Highest educational degree attained",
+    y = "Base annual salary, in $",
+    color = "Degree",
+    title = "Salary and education level"
+  )
+
+# Salary and years of employment
+ggplot(teacher, aes(x = years, y = base, color = degree)) +
+  geom_point() +
+  labs(
+    x = "Number of years employed by the school district",
+    y = "Base annual salary, in $",
+    color = "Degree",
+    title = "Salary and years of employment"
+  )
+</code></pre>
+
+
+</div>
+</body></html>

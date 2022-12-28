@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><title>R: Heart Transplant Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>heart_transplant</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Heart Transplant Data</h2>
+
+<h3>Description</h3>
+
+<p>The Stanford University Heart Transplant Study was conducted to determine
+whether an experimental heart transplant program increased lifespan. Each
+patient entering the program was designated officially a heart transplant
+candidate, meaning that he was gravely ill and would most likely benefit
+from a new heart. Then the actual heart transplant occurs between a few
+weeks to several months depending on the availability of a donor. Very few
+candidates during this waiting period show improvement and get
+<em>deselected</em> as a heart transplant candidate, but for the purposes of
+this experiment those patients were kept in the data as continuing
+candidates.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>heart_transplant
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 103 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt>id</dt><dd><p>ID number of the patient.</p>
+</dd>
+<dt>acceptyear</dt><dd><p>Year of acceptance as a heart transplant candidate.</p>
+</dd>
+<dt>age</dt><dd><p>Age of the patient at the beginning of the study.</p>
+</dd>
+<dt>survived</dt><dd><p>Survival status with levels <code>alive</code> and <code>dead</code>.</p>
+</dd>
+<dt>survtime</dt><dd><p>Number of days patients were alive after the date they were
+determined to be a candidate for a heart transplant until the termination
+date of the study</p>
+</dd>
+<dt>prior</dt><dd><p>Whether or not the patient had prior surgery with levels
+<code>yes</code> and <code>no</code>.</p>
+</dd>
+<dt>transplant</dt><dd><p>Transplant status with levels <code>control</code> (did not
+receive a transplant) and <code>treatment</code> (received a transplant).</p>
+</dd>
+<dt>wait</dt><dd><p>Waiting Time for Transplant</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.stat.ucla.edu/~jsanchez/data/stanford.txt">http://www.stat.ucla.edu/~jsanchez/data/stanford.txt</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Turnbull B, Brown B, and Hu M (1974). &quot;Survivorship of heart
+transplant data.&quot; Journal of the American Statistical Association, vol. 69,
+pp. 74-80.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+
+ggplot(heart_transplant, aes(x = transplant, y = survtime)) +
+  geom_boxplot() +
+  labs(x = "Transplant", y = "Survival time (days)")
+
+ggplot(heart_transplant, aes(x = transplant, fill = survived)) +
+  geom_bar(position = "fill") +
+  labs(x = "Transplant", y = "Proportion", fill = "Outcome")
+</code></pre>
+
+
+</div>
+</body></html>

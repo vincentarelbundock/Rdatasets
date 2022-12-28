@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><title>R: Time Between Gondola Cars at Sterling Winery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>winery_cars</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Time Between Gondola Cars at Sterling Winery</h2>
+
+<h3>Description</h3>
+
+<p>These times represent times between gondolas at Sterling Winery. The main
+take-away: there are 7 cars, as evidenced by the somewhat regular increases
+in splits between every 7 cars. The reason the times are slightly
+non-constant is that the gondolas come off the tracks, so times will change
+a little between each period.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>winery_cars
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 52 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt>obs_number</dt><dd><p>The observation number, e.g. observation 3 was immediately
+preceded by observation 2.</p>
+</dd>
+<dt>time_until_next</dt><dd><p>Time until this gondola car arrived since the last
+car had left.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Important context: there was a sufficient line that people were leaving the
+winery.
+</p>
+<p>So why is this data valuable? It indicates that the winery should add one
+more car since it has a lot of time wasted every 7th car. By adding another
+car, fewer visitors are likely to be turned away, resulting in increased
+revenue.
+</p>
+
+
+<h3>Source</h3>
+
+<p>In-person data collection by David Diez (OpenIntro) on 2013-07-04.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+winery_cars$car_number &lt;- rep(1:7, 10)[1:nrow(winery_cars)]
+col &lt;- COL[ifelse(winery_cars$car_number == 3, 4, 1)]
+plot(winery_cars[, c("obs_number", "time_until_next")],
+  col = col, pch = 19
+)
+plot(winery_cars$car_number, winery_cars$time_until_next,
+  col = fadeColor(col, "88"), pch = 19
+)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,201 @@
+"","id","gender","race","ses","schtyp","prog","read","write","math","science","socst"
+"1",70,"male","white","low","public","general",57,52,41,47,57
+"2",121,"female","white","middle","public","vocational",68,59,53,63,61
+"3",86,"male","white","high","public","general",44,33,54,58,31
+"4",141,"male","white","high","public","vocational",63,44,47,53,56
+"5",172,"male","white","middle","public","academic",47,52,57,53,61
+"6",113,"male","white","middle","public","academic",44,52,51,63,61
+"7",50,"male","african american","middle","public","general",50,59,42,53,61
+"8",11,"male","hispanic","middle","public","academic",34,46,45,39,36
+"9",84,"male","white","middle","public","general",63,57,54,58,51
+"10",48,"male","african american","middle","public","academic",57,55,52,50,51
+"11",75,"male","white","middle","public","vocational",60,46,51,53,61
+"12",60,"male","white","middle","public","academic",57,65,51,63,61
+"13",95,"male","white","high","public","academic",73,60,71,61,71
+"14",104,"male","white","high","public","academic",54,63,57,55,46
+"15",38,"male","african american","low","public","academic",45,57,50,31,56
+"16",115,"male","white","low","public","general",42,49,43,50,56
+"17",76,"male","white","high","public","academic",47,52,51,50,56
+"18",195,"male","white","middle","private","general",57,57,60,58,56
+"19",114,"male","white","high","public","academic",68,65,62,55,61
+"20",85,"male","white","middle","public","general",55,39,57,53,46
+"21",167,"male","white","middle","public","general",63,49,35,66,41
+"22",143,"male","white","middle","public","vocational",63,63,75,72,66
+"23",41,"male","african american","middle","public","academic",50,40,45,55,56
+"24",20,"male","hispanic","high","public","academic",60,52,57,61,61
+"25",12,"male","hispanic","middle","public","vocational",37,44,45,39,46
+"26",53,"male","african american","middle","public","vocational",34,37,46,39,31
+"27",154,"male","white","high","public","academic",65,65,66,61,66
+"28",178,"male","white","middle","private","vocational",47,57,57,58,46
+"29",196,"male","white","high","private","academic",44,38,49,39,46
+"30",29,"male","asian","low","public","general",52,44,49,55,41
+"31",126,"male","white","middle","public","general",42,31,57,47,51
+"32",103,"male","white","high","public","academic",76,52,64,64,61
+"33",192,"male","white","high","private","academic",65,67,63,66,71
+"34",150,"male","white","middle","public","vocational",42,41,57,72,31
+"35",199,"male","white","high","private","academic",52,59,50,61,61
+"36",144,"male","white","high","public","general",60,65,58,61,66
+"37",200,"male","white","middle","private","academic",68,54,75,66,66
+"38",80,"male","white","high","public","academic",65,62,68,66,66
+"39",16,"male","hispanic","low","public","vocational",47,31,44,36,36
+"40",153,"male","white","middle","public","vocational",39,31,40,39,51
+"41",176,"male","white","middle","private","academic",47,47,41,42,51
+"42",177,"male","white","middle","private","academic",55,59,62,58,51
+"43",168,"male","white","middle","public","academic",52,54,57,55,51
+"44",40,"male","african american","low","public","general",42,41,43,50,41
+"45",62,"male","white","high","public","general",65,65,48,63,66
+"46",169,"male","white","low","public","general",55,59,63,69,46
+"47",49,"male","african american","high","public","vocational",50,40,39,49,47
+"48",136,"male","white","middle","public","academic",65,59,70,63,51
+"49",189,"male","white","middle","private","academic",47,59,63,53,46
+"50",7,"male","hispanic","middle","public","academic",57,54,59,47,51
+"51",27,"male","asian","middle","public","academic",53,61,61,57,56
+"52",128,"male","white","high","public","academic",39,33,38,47,41
+"53",21,"male","hispanic","middle","public","general",44,44,61,50,46
+"54",183,"male","white","middle","private","academic",63,59,49,55,71
+"55",132,"male","white","middle","public","academic",73,62,73,69,66
+"56",15,"male","hispanic","high","public","vocational",39,39,44,26,42
+"57",67,"male","white","low","public","vocational",37,37,42,33,32
+"58",22,"male","hispanic","middle","public","vocational",42,39,39,56,46
+"59",185,"male","white","middle","private","academic",63,57,55,58,41
+"60",9,"male","hispanic","middle","public","vocational",48,49,52,44,51
+"61",181,"male","white","middle","private","academic",50,46,45,58,61
+"62",170,"male","white","high","public","academic",47,62,61,69,66
+"63",134,"male","white","low","public","general",44,44,39,34,46
+"64",108,"male","white","middle","public","general",34,33,41,36,36
+"65",197,"male","white","high","private","academic",50,42,50,36,61
+"66",140,"male","white","middle","public","vocational",44,41,40,50,26
+"67",171,"male","white","middle","public","academic",60,54,60,55,66
+"68",107,"male","white","low","public","vocational",47,39,47,42,26
+"69",81,"male","white","low","public","academic",63,43,59,65,44
+"70",18,"male","hispanic","middle","public","vocational",50,33,49,44,36
+"71",155,"male","white","middle","public","general",44,44,46,39,51
+"72",97,"male","white","high","public","academic",60,54,58,58,61
+"73",68,"male","white","middle","public","academic",73,67,71,63,66
+"74",157,"male","white","middle","public","general",68,59,58,74,66
+"75",56,"male","white","middle","public","vocational",55,45,46,58,51
+"76",5,"male","hispanic","low","public","academic",47,40,43,45,31
+"77",159,"male","white","high","public","academic",55,61,54,49,61
+"78",123,"male","white","high","public","general",68,59,56,63,66
+"79",164,"male","white","middle","public","vocational",31,36,46,39,46
+"80",14,"male","hispanic","high","public","academic",47,41,54,42,56
+"81",127,"male","white","high","public","academic",63,59,57,55,56
+"82",165,"male","white","low","public","vocational",36,49,54,61,36
+"83",174,"male","white","middle","private","academic",68,59,71,66,56
+"84",3,"male","hispanic","low","public","academic",63,65,48,63,56
+"85",58,"male","white","middle","public","vocational",55,41,40,44,41
+"86",146,"male","white","high","public","academic",55,62,64,63,66
+"87",102,"male","white","high","public","academic",52,41,51,53,56
+"88",117,"male","white","high","public","vocational",34,49,39,42,56
+"89",133,"male","white","middle","public","vocational",50,31,40,34,31
+"90",94,"male","white","high","public","academic",55,49,61,61,56
+"91",24,"male","asian","middle","public","academic",52,62,66,47,46
+"92",149,"male","white","low","public","general",63,49,49,66,46
+"93",82,"female","white","high","public","academic",68,62,65,69,61
+"94",8,"female","hispanic","low","public","academic",39,44,52,44,48
+"95",129,"female","white","low","public","general",44,44,46,47,51
+"96",173,"female","white","low","public","general",50,62,61,63,51
+"97",57,"female","white","middle","public","academic",71,65,72,66,56
+"98",100,"female","white","high","public","academic",63,65,71,69,71
+"99",1,"female","hispanic","low","public","vocational",34,44,40,39,41
+"100",194,"female","white","high","private","academic",63,63,69,61,61
+"101",88,"female","white","high","public","academic",68,60,64,69,66
+"102",99,"female","white","high","public","general",47,59,56,66,61
+"103",47,"female","african american","low","public","academic",47,46,49,33,41
+"104",120,"female","white","high","public","academic",63,52,54,50,51
+"105",166,"female","white","middle","public","academic",52,59,53,61,51
+"106",65,"female","white","middle","public","academic",55,54,66,42,56
+"107",101,"female","white","high","public","academic",60,62,67,50,56
+"108",89,"female","white","low","public","vocational",35,35,40,51,33
+"109",54,"female","african american","low","private","general",47,54,46,50,56
+"110",180,"female","white","high","private","academic",71,65,69,58,71
+"111",162,"female","white","middle","public","vocational",57,52,40,61,56
+"112",4,"female","hispanic","low","public","academic",44,50,41,39,51
+"113",131,"female","white","high","public","academic",65,59,57,46,66
+"114",125,"female","white","low","public","academic",68,65,58,59,56
+"115",34,"female","hispanic","high","private","academic",73,61,57,55,66
+"116",106,"female","white","middle","public","vocational",36,44,37,42,41
+"117",130,"female","white","high","public","general",43,54,55,55,46
+"118",93,"female","white","high","public","academic",73,67,62,58,66
+"119",163,"female","white","low","public","academic",52,57,64,58,56
+"120",37,"female","african american","low","public","vocational",41,47,40,39,51
+"121",35,"female","hispanic","low","private","general",60,54,50,50,51
+"122",87,"female","white","middle","public","general",50,52,46,50,56
+"123",73,"female","white","middle","public","academic",50,52,53,39,56
+"124",151,"female","white","middle","public","vocational",47,46,52,48,46
+"125",44,"female","african american","low","public","vocational",47,62,45,34,46
+"126",152,"female","white","high","public","academic",55,57,56,58,61
+"127",105,"female","white","middle","public","academic",50,41,45,44,56
+"128",28,"female","asian","middle","public","general",39,53,54,50,41
+"129",91,"female","white","high","public","vocational",50,49,56,47,46
+"130",45,"female","african american","low","public","vocational",34,35,41,29,26
+"131",116,"female","white","middle","public","academic",57,59,54,50,56
+"132",33,"female","asian","low","public","academic",57,65,72,54,56
+"133",66,"female","white","middle","public","vocational",68,62,56,50,51
+"134",72,"female","white","middle","public","vocational",42,54,47,47,46
+"135",77,"female","white","low","public","academic",61,59,49,44,66
+"136",61,"female","white","high","public","academic",76,63,60,67,66
+"137",190,"female","white","middle","private","academic",47,59,54,58,46
+"138",42,"female","african american","middle","public","vocational",46,52,55,44,56
+"139",2,"female","hispanic","middle","public","vocational",39,41,33,42,41
+"140",55,"female","african american","middle","private","academic",52,49,49,44,61
+"141",19,"female","hispanic","low","public","general",28,46,43,44,51
+"142",90,"female","white","high","public","academic",42,54,50,50,52
+"143",142,"female","white","middle","public","vocational",47,42,52,39,51
+"144",17,"female","hispanic","middle","public","academic",47,57,48,44,41
+"145",122,"female","white","middle","public","academic",52,59,58,53,66
+"146",191,"female","white","high","private","academic",47,52,43,48,61
+"147",83,"female","white","middle","public","vocational",50,62,41,55,31
+"148",182,"female","white","middle","private","academic",44,52,43,44,51
+"149",6,"female","hispanic","low","public","academic",47,41,46,40,41
+"150",46,"female","african american","low","public","academic",45,55,44,34,41
+"151",43,"female","african american","low","public","academic",47,37,43,42,46
+"152",96,"female","white","high","public","academic",65,54,61,58,56
+"153",138,"female","white","middle","public","vocational",43,57,40,50,51
+"154",10,"female","hispanic","middle","public","general",47,54,49,53,61
+"155",71,"female","white","middle","public","general",57,62,56,58,66
+"156",139,"female","white","middle","public","academic",68,59,61,55,71
+"157",110,"female","white","middle","public","vocational",52,55,50,54,61
+"158",148,"female","white","middle","public","vocational",42,57,51,47,61
+"159",109,"female","white","middle","public","general",42,39,42,42,41
+"160",39,"female","african american","high","public","academic",66,67,67,61,66
+"161",147,"female","white","low","public","academic",47,62,53,53,61
+"162",74,"female","white","middle","public","academic",57,50,50,51,58
+"163",198,"female","white","high","private","academic",47,61,51,63,31
+"164",161,"female","white","low","public","academic",57,62,72,61,61
+"165",112,"female","white","middle","public","academic",52,59,48,55,61
+"166",69,"female","white","low","public","vocational",44,44,40,40,31
+"167",156,"female","white","middle","public","academic",50,59,53,61,61
+"168",111,"female","white","low","public","general",39,54,39,47,36
+"169",186,"female","white","middle","private","academic",57,62,63,55,41
+"170",98,"female","white","low","public","vocational",57,60,51,53,37
+"171",119,"female","white","low","public","general",42,57,45,50,43
+"172",13,"female","hispanic","middle","public","vocational",47,46,39,47,61
+"173",51,"female","african american","high","public","general",42,36,42,31,39
+"174",26,"female","asian","high","public","academic",60,59,62,61,51
+"175",36,"female","african american","low","public","general",44,49,44,35,51
+"176",135,"female","white","low","public","academic",63,60,65,54,66
+"177",59,"female","white","middle","public","academic",65,67,63,55,71
+"178",78,"female","white","middle","public","academic",39,54,54,53,41
+"179",64,"female","white","high","public","vocational",50,52,45,58,36
+"180",63,"female","white","low","public","general",52,65,60,56,51
+"181",79,"female","white","middle","public","academic",60,62,49,50,51
+"182",193,"female","white","middle","private","academic",44,49,48,39,51
+"183",92,"female","white","high","public","general",52,67,57,63,61
+"184",160,"female","white","middle","public","academic",55,65,55,50,61
+"185",32,"female","asian","high","public","vocational",50,67,66,66,56
+"186",23,"female","asian","low","public","academic",65,65,64,58,71
+"187",158,"female","white","middle","public","general",52,54,55,53,51
+"188",25,"female","asian","middle","public","general",47,44,42,42,36
+"189",188,"female","white","high","private","academic",63,62,56,55,61
+"190",52,"female","african american","low","public","academic",50,46,53,53,66
+"191",124,"female","white","low","public","vocational",42,54,41,42,41
+"192",175,"female","white","high","private","general",36,57,42,50,41
+"193",184,"female","white","middle","private","vocational",50,52,53,55,56
+"194",30,"female","asian","high","public","academic",41,59,42,34,51
+"195",179,"female","white","middle","private","academic",47,65,60,50,56
+"196",31,"female","asian","middle","private","general",55,59,52,42,56
+"197",145,"female","white","middle","public","vocational",42,46,38,36,46
+"198",187,"female","white","middle","private","general",57,41,57,55,52
+"199",118,"female","white","middle","public","general",55,62,58,58,61
+"200",137,"female","white","high","public","academic",63,65,65,53,61

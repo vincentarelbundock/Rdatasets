@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: pntsprd</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>pntsprd</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>pntsprd</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Collected by Scott Resnick, a former MSU undergraduate, from various newspaper sources. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('pntsprd')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 553 observations on 12 variables:
+</p>
+
+<ul>
+<li> <p><strong>favscr:</strong> favored team's score
+</p>
+</li>
+<li> <p><strong>undscr:</strong> underdog's score
+</p>
+</li>
+<li> <p><strong>spread:</strong> las vegas spread
+</p>
+</li>
+<li> <p><strong>favhome:</strong> =1 if favored team at home
+</p>
+</li>
+<li> <p><strong>neutral:</strong> =1 if neutral site
+</p>
+</li>
+<li> <p><strong>fav25:</strong> =1 if favored team in top 25
+</p>
+</li>
+<li> <p><strong>und25:</strong> =1 if underdog in top 25
+</p>
+</li>
+<li> <p><strong>fregion:</strong> favorite's region of country
+</p>
+</li>
+<li> <p><strong>uregion:</strong> underdog's region of country
+</p>
+</li>
+<li> <p><strong>scrdiff:</strong> favscr - undscr
+</p>
+</li>
+<li> <p><strong>sprdcvr:</strong> =1 if spread covered
+</p>
+</li>
+<li> <p><strong>favwin:</strong> =1 if favored team wins
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>The data are for the 1994-1995 men’s college basketball seasons. The spread is for the day before the game was played. One might collect more recent data and determine whether the spread has become a less accurate predictor of the actual outcome in more recent years. In other words, in the simple regression of the actual score differential on the spread, is the variance larger in more recent years. (We should fully expect the slope coefficient not to be statistically different from one.)
+</p>
+<p>Used in Text: pages 300, 624, 697
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(pntsprd)
+</code></pre>
+
+
+</div>
+</body></html>

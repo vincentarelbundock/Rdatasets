@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: Overdrawn Checking Account?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Overdrawn</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Overdrawn Checking Account?</h2>
+
+<h3>Description</h3>
+
+<p>Survey of college students to took at factors related to having overdrawn a checking account.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 450 observations on the following 4 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>Age</code> </td><td style="text-align: left;"> Age of the student (in years)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Sex</code> </td><td style="text-align: left;"> <code>0</code>=male or <code>1</code>=female</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>DaysDrink</code> </td><td style="text-align: left;"> Number of days drinking alcohol (in past 30 days)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Overdrawn</code> </td><td style="text-align: left;"> Has student overdrawn a checking account? <code>0</code>=no or <code>1</code>=yes</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>Researchers conducted a survey of 450 undergraduates in large
+introductory courses at either Mississippi State University or the University of Mississippi. There
+were close to 150 questions on the survey, but only four of these variables are included in this
+dataset. (You can consult the paper to learn how the variables beyond these 4 affect
+the analysis.)  The primary interest for the researchers was factors relating to whether or not a student
+has ever overdrawn a checking account.
+</p>
+<p>Renamed as CreditRisk in second edition.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Worthy S.L., Jonkman J.N., Blinn-Pike L. (2010), &quot;Sensation-Seeking, Risk-Taking, and Problematic Financial Behaviors of College Students,&quot;
+Journal of Family and Economic Issues, 31: 161-170
+</p>
+
+
+</div>
+</body></html>

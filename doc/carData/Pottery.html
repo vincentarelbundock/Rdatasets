@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: Chemical Composition of Pottery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Pottery</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Chemical Composition of Pottery</h2>
+
+<h3>Description</h3>
+
+<p>The data give the chemical composition of ancient pottery found at four sites in Great Britain. They 
+appear in Hand, et al. (1994), and are used to illustrate MANOVA in the SAS Manual. (Suggested by Michael
+Friendly.)
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Pottery
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 26 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>Site</code></dt><dd><p>a factor with levels <code>AshleyRails</code> <code>Caldicot</code> <code>IsleThorns</code> <code>Llanedyrn</code></p>
+</dd>
+<dt><code>Al</code></dt><dd><p>Aluminum</p>
+</dd>
+<dt><code>Fe</code></dt><dd><p>Iron</p>
+</dd>
+<dt><code>Mg</code></dt><dd><p>Magnesium</p>
+</dd>
+<dt><code>Ca</code></dt><dd><p>Calcium</p>
+</dd>
+<dt><code>Na</code></dt><dd><p>Sodium</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Hand, D. J., Daly, F., Lunn, A. D., McConway, K. J., and E., O. (1994)
+<em>A Handbook of Small Data Sets</em>. Chapman and Hall.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>Pottery
+</code></pre>
+
+
+</div>
+</body></html>

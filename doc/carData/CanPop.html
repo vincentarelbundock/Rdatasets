@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: Canadian Population Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>CanPop</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Canadian Population Data</h2>
+
+<h3>Description</h3>
+
+<p>The <code>CanPop</code> data frame has 16 rows and 2 columns.
+Decennial time-series of Canadian population, 1851&ndash;2001.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>CanPop
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>year</dt><dd>
+<p>census year.
+</p>
+</dd>
+<dt>population</dt><dd>
+<p>Population, in millions
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Urquhart, M. C. and Buckley, K. A. H. (Eds.) (1965)
+<em>Historical Statistics of Canada</em>. Macmillan, p. 1369.
+</p>
+<p>Canada (1994)
+<em>Canada Year Book</em>. Statistics Canada, Table 3.2.
+</p>
+<p>Statistics Canada: from the now defunct
+http://www12.statcan.ca/english/census01/products/standard/popdwell/Table-PR.cfm.
+</p>
+
+
+<h3>References</h3>
+
+<p>Fox, J. (2016)
+<em>Applied Regression Analysis and Generalized Linear Models</em>,
+Third Edition. Sage.  
+</p>
+
+
+</div>
+</body></html>

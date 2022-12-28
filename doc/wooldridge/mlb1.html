@@ -1,0 +1,204 @@
+<!DOCTYPE html><html><head><title>R: mlb1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>mlb1</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>mlb1</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Collected by G. Mark Holmes, a former MSU undergraduate, for a term project. The salary data were obtained from the New York Times, April 11, 1993. The baseball statistics are from The Baseball Encyclopedia, 9th edition, and the city population figures are from the Statistical Abstract of the United States. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('mlb1')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 353 observations on 47 variables:
+</p>
+
+<ul>
+<li> <p><strong>salary:</strong> 1993 season salary
+</p>
+</li>
+<li> <p><strong>teamsal:</strong> team payroll
+</p>
+</li>
+<li> <p><strong>nl:</strong> =1 if national league
+</p>
+</li>
+<li> <p><strong>years:</strong> years in major leagues
+</p>
+</li>
+<li> <p><strong>games:</strong> career games played
+</p>
+</li>
+<li> <p><strong>atbats:</strong> career at bats
+</p>
+</li>
+<li> <p><strong>runs:</strong> career runs scored
+</p>
+</li>
+<li> <p><strong>hits:</strong> career hits
+</p>
+</li>
+<li> <p><strong>doubles:</strong> career doubles
+</p>
+</li>
+<li> <p><strong>triples:</strong> career triples
+</p>
+</li>
+<li> <p><strong>hruns:</strong> career home runs
+</p>
+</li>
+<li> <p><strong>rbis:</strong> career runs batted in
+</p>
+</li>
+<li> <p><strong>bavg:</strong> career batting average
+</p>
+</li>
+<li> <p><strong>bb:</strong> career walks
+</p>
+</li>
+<li> <p><strong>so:</strong> career strike outs
+</p>
+</li>
+<li> <p><strong>sbases:</strong> career stolen bases
+</p>
+</li>
+<li> <p><strong>fldperc:</strong> career fielding perc
+</p>
+</li>
+<li> <p><strong>frstbase:</strong> = 1 if first base
+</p>
+</li>
+<li> <p><strong>scndbase:</strong> =1 if second base
+</p>
+</li>
+<li> <p><strong>shrtstop:</strong> =1 if shortstop
+</p>
+</li>
+<li> <p><strong>thrdbase:</strong> =1 if third base
+</p>
+</li>
+<li> <p><strong>outfield:</strong> =1 if outfield
+</p>
+</li>
+<li> <p><strong>catcher:</strong> =1 if catcher
+</p>
+</li>
+<li> <p><strong>yrsallst:</strong> years as all-star
+</p>
+</li>
+<li> <p><strong>hispan:</strong> =1 if hispanic
+</p>
+</li>
+<li> <p><strong>black:</strong> =1 if black
+</p>
+</li>
+<li> <p><strong>whitepop:</strong> white pop. in city
+</p>
+</li>
+<li> <p><strong>blackpop:</strong> black pop. in city
+</p>
+</li>
+<li> <p><strong>hisppop:</strong> hispanic pop. in city
+</p>
+</li>
+<li> <p><strong>pcinc:</strong> city per capita income
+</p>
+</li>
+<li> <p><strong>gamesyr:</strong> games per year in league
+</p>
+</li>
+<li> <p><strong>hrunsyr:</strong> home runs per year
+</p>
+</li>
+<li> <p><strong>atbatsyr:</strong> at bats per year
+</p>
+</li>
+<li> <p><strong>allstar:</strong> perc. of years an all-star
+</p>
+</li>
+<li> <p><strong>slugavg:</strong> career slugging average
+</p>
+</li>
+<li> <p><strong>rbisyr:</strong> rbis per year
+</p>
+</li>
+<li> <p><strong>sbasesyr:</strong> stolen bases per year
+</p>
+</li>
+<li> <p><strong>runsyr:</strong> runs scored per year
+</p>
+</li>
+<li> <p><strong>percwhte:</strong> percent white in city
+</p>
+</li>
+<li> <p><strong>percblck:</strong> percent black in city
+</p>
+</li>
+<li> <p><strong>perchisp:</strong> percent hispanic in city
+</p>
+</li>
+<li> <p><strong>blckpb:</strong> black*percblck
+</p>
+</li>
+<li> <p><strong>hispph:</strong> hispan*perchisp
+</p>
+</li>
+<li> <p><strong>whtepw:</strong> white*percwhte
+</p>
+</li>
+<li> <p><strong>blckph:</strong> black*perchisp
+</p>
+</li>
+<li> <p><strong>hisppb:</strong> hispan*percblck
+</p>
+</li>
+<li> <p><strong>lsalary:</strong> log(salary)
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>The baseball statistics are career statistics through the 1992 season. Players whose race or ethnicity could not be easily determined were not included. It should not be too difficult to obtain the city population and racial composition numbers for Montreal and Toronto for 1993. Of course, the data can be pretty easily obtained for more recent players.
+</p>
+<p>Used in Text: pages 143-149, 165, 244-245, 262
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(mlb1)
+</code></pre>
+
+
+</div>
+</body></html>

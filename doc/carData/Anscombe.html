@@ -1,0 +1,76 @@
+<!DOCTYPE html><html><head><title>R: U. S. State Public-School Expenditures</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Anscombe</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>U. S. State Public-School Expenditures</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Anscombe</code> data frame has 51 rows and 4 columns.
+The observations are the U. S. states plus Washington, D. C. in 1970.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Anscombe
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>education</dt><dd>
+<p>Per-capita education expenditures, dollars.
+</p>
+</dd>
+<dt>income</dt><dd>
+<p>Per-capita income, dollars. 
+</p>
+</dd>
+<dt>young</dt><dd>
+<p>Proportion under 18, per 1000. 
+</p>
+</dd>
+<dt>urban</dt><dd>
+<p>Proportion urban, per 1000. 
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Anscombe, F. J. (1981)
+<em>Computing in Statistical Science Through APL</em>. Springer-Verlag.
+</p>
+
+
+<h3>References</h3>
+
+<p>Fox, J. (2016)
+<em>Applied Regression Analysis and Generalized Linear Models</em>,
+Third Edition. Sage.  
+</p>
+
+
+</div>
+</body></html>

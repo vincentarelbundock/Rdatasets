@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: Quarterly US Macroeconomic Data (1947-2004, Stock &amp; Watson)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>USMacroSWQ</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Quarterly US Macroeconomic Data (1947&ndash;2004, Stock &amp; Watson)</h2>
+
+<h3>Description</h3>
+
+<p>Time series data on 2 US macroeconomic variables for 1947&ndash;2004.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("USMacroSWQ")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A quarterly multiple time series from 1947(1) to 2004(4) with 2 variables.
+</p>
+
+<dl>
+<dt>gdp</dt><dd><p>real GDP for the United States in billions of chained (2000) dollars
+seasonally adjusted, annual rate.</p>
+</dd>
+<dt>tbill</dt><dd><p>3-month treasury bill rate. Quarterly averages of daily dates
+in percentage points at an annual rate.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>Stock, J.H. and Watson, M.W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code>, <code>USMacroSW</code>, <code>USMacroSWM</code>,
+<code>USMacroB</code>, <code>USMacroG</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("USMacroSWQ")
+plot(USMacroSWQ)
+</code></pre>
+
+
+</div>
+</body></html>

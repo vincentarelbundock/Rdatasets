@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><title>R: United States Recessions, 1855-present</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>recessions</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>United States Recessions, 1855-present</h2>
+
+<h3>Description</h3>
+
+<p>Data on U.S. recessions, past to present. Data include information on contraction,
+expansion, and cycle.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>recessions
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 35 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>peak</code></dt><dd><p>the year-month of the peak, as a date</p>
+</dd>
+<dt><code>trough</code></dt><dd><p>the year-month of the trough, as a date</p>
+</dd>
+<dt><code>peakq</code></dt><dd><p>the peak quarter</p>
+</dd>
+<dt><code>troughq</code></dt><dd><p>the trough quarter</p>
+</dd>
+<dt><code>p2t</code></dt><dd><p>peak to trough (in months)</p>
+</dd>
+<dt><code>prev_t2p</code></dt><dd><p>previous trough to this peak (in months)</p>
+</dd>
+<dt><code>tfpt</code></dt><dd><p>trough from previous trough (in months)</p>
+</dd>
+<dt><code>pfpp</code></dt><dd><p>peak from previous peak (in months)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data come from via scraping job of <a href="https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions">https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions</a>
+</p>
+
+
+<h3>Source</h3>
+
+<p>National Bureau of Economic Research (NBER)
+</p>
+
+
+</div>
+</body></html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html><html><head><title>R: PSID Earnings Data 1982</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>PSID1982</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>PSID Earnings Data 1982</h2>
+
+<h3>Description</h3>
+
+<p>Cross-section data originating from the Panel Study on Income Dynamics, 1982.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("PSID1982")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 595 observations on 12 variables.
+</p>
+
+<dl>
+<dt>experience</dt><dd><p>Years of full-time work experience.</p>
+</dd>
+<dt>weeks</dt><dd><p>Weeks worked.</p>
+</dd>
+<dt>occupation</dt><dd><p>factor. Is the individual a white-collar (<code>"white"</code>) or blue-collar (<code>"blue"</code>) worker?</p>
+</dd>
+<dt>industry</dt><dd><p>factor. Does the individual work in a manufacturing industry?</p>
+</dd>
+<dt>south</dt><dd><p>factor. Does the individual reside in the South?</p>
+</dd>
+<dt>smsa</dt><dd><p>factor. Does the individual reside in a SMSA (standard metropolitan statistical area)?</p>
+</dd>
+<dt>married</dt><dd><p>factor. Is the individual married?</p>
+</dd>
+<dt>gender</dt><dd><p>factor indicating gender.</p>
+</dd>
+<dt>union</dt><dd><p>factor. Is the individual's wage set by a union contract?</p>
+</dd>
+<dt>education</dt><dd><p>Years of education.</p>
+</dd>
+<dt>ethnicity</dt><dd><p>factor indicating ethnicity.
+Is the individual African-American (<code>"afam"</code>) or not (<code>"other"</code>)?</p>
+</dd>
+<dt>wage</dt><dd><p>Wage.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p><code>PSID1982</code> is the cross-section for the year 1982 taken from a larger panel data set
+<code>PSID7682</code> for the years 1976&ndash;1982, originating from Cornwell and Rupert (1988).
+Baltagi (2002) just uses the 1982 cross-section; hence <code>PSID1982</code> is available as a
+standalone data set because it was included in <span class="pkg">AER</span> prior to the availability of the
+full <code>PSID7682</code> panel version.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The data is from Baltagi (2002).
+</p>
+
+
+<h3>References</h3>
+
+<p>Baltagi, B.H. (2002). <em>Econometrics</em>, 3rd ed. Berlin, Springer. 
+</p>
+<p>Cornwell, C., and Rupert, P. (1988). Efficient Estimation with Panel Data: 
+An Empirical Comparison of Instrumental Variables Estimators. 
+<em>Journal of Applied Econometrics</em>, <b>3</b>, 149&ndash;155.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>PSID7682</code>, <code>Baltagi2002</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("PSID1982")
+plot(density(PSID1982$wage, bw = "SJ"))
+
+## Baltagi (2002), Table 4.1
+earn_lm &lt;- lm(log(wage) ~ . + I(experience^2), data = PSID1982)
+summary(earn_lm)
+
+## Baltagi (2002), Table 13.1
+union_lpm &lt;- lm(I(as.numeric(union) - 1) ~ . - wage, data = PSID1982)
+union_probit &lt;- glm(union ~ . - wage, data = PSID1982, family = binomial(link = "probit"))
+union_logit &lt;- glm(union ~ . - wage, data = PSID1982, family = binomial)
+## probit OK, logit and LPM rather different.
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html><html><head><title>R: Palm Beach Butterfly Ballot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>PalmBeach</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Palm Beach Butterfly Ballot</h2>
+
+<h3>Description</h3>
+
+<p>Votes for Geroge Bush and Pat Buchanan in Florida counties for the 2000 U.S. presidential election
+</p>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 67 observations on the following 3 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>County</code> </td><td style="text-align: left;"> Name of the Florida county</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Buchanan</code> </td><td style="text-align: left;"> Number of votes for Pat Buchanan</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Bush</code> </td><td style="text-align: left;"> Number of votes for George Bush</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>The race for the presidency of the United States in the fall of 2000 was very close, with the electoral
+votes from Florida determining the outcome. In the disputed final tally in Florida, George W. Bush won by just 537 votes over Al Gore,
+out of almost 6 million votes cast. About 2.3% of the votes cast in Florida
+were awarded to other candidates. One of those other candidates was Pat Buchanan, who did
+much better in Palm Beach County than he did anywhere else. Palm Beach County used a unique
+&quot;butterfly ballot&quot; that had candidate names on either side of the page with &quot;chads&quot; to be punched
+in the middle. This non-standard ballot seemed to confuse some voters, who punched votes for
+Buchanan that may have been intended for a different candidate.  This dataset shows the number of votes for Bush and
+Buchanan in each Florida county.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Florida county data for the 2000 presidential election can be found at <br />
+http://election.dos.state.fl.us/elections/resultsarchive/Index.asp?ElectionDate=11/7/00
+</p>
+
+
+</div>
+</body></html>

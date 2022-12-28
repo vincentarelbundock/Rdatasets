@@ -1,0 +1,119 @@
+<!DOCTYPE html><html><head><title>R: College Distance Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>CollegeDistance</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>College Distance Data</h2>
+
+<h3>Description</h3>
+
+<p>Cross-section data from the High School and Beyond survey conducted by the
+Department of Education in 1980, with a follow-up in 1986. The survey included
+students from approximately 1,100 high schools.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("CollegeDistance")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 4,739 observations on 14 variables.
+</p>
+
+<dl>
+<dt>gender</dt><dd><p>factor indicating gender.</p>
+</dd>
+<dt>ethnicity</dt><dd><p>factor indicating ethnicity (African-American, Hispanic or other).</p>
+</dd>
+<dt>score</dt><dd><p>base year composite test score. These are achievement tests given to high
+school seniors in the sample.</p>
+</dd>
+<dt>fcollege</dt><dd><p>factor. Is the father a college graduate?</p>
+</dd>
+<dt>mcollege</dt><dd><p>factor. Is the mother a college graduate?</p>
+</dd>
+<dt>home</dt><dd><p>factor. Does the family own their home?</p>
+</dd>
+<dt>urban</dt><dd><p>factor. Is the school in an urban area?</p>
+</dd>
+<dt>unemp</dt><dd><p>county unemployment rate in 1980.</p>
+</dd>
+<dt>wage</dt><dd><p>state hourly wage in manufacturing in 1980.</p>
+</dd>
+<dt>distance</dt><dd><p>distance from 4-year college (in 10 miles).</p>
+</dd>
+<dt>tuition</dt><dd><p>average state 4-year college tuition (in 1000 USD).</p>
+</dd>
+<dt>education</dt><dd><p>number of years of education.</p>
+</dd>
+<dt>income</dt><dd><p>factor. Is the family income above USD 25,000 per year?</p>
+</dd>
+<dt>region</dt><dd><p>factor indicating region (West or other).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Rouse (1995) computed years of education by assigning 12 years to all
+members of the senior class. Each additional year of secondary education counted as a
+one year. Students with vocational degrees were assigned 13 years, AA degrees were
+assigned 14 years, BA degrees were assigned 16 years, those with some graduate
+education were assigned 17 years, and those with a graduate degree were assigned 18
+years.
+</p>
+<p>Stock and Watson (2007) provide separate data files for the students from
+Western states and the remaining students. <code>CollegeDistance</code> includes
+both data sets, subsets are easily obtained (see also examples).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>Rouse, C.E. (1995). Democratization or Diversion? The Effect of Community
+Colleges on Educational Attainment. <em>Journal of Business &amp; Economic Statistics</em>,
+<b>12</b>, 217&ndash;224.
+</p>
+<p>Stock, J.H. and Watson, M.W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## exclude students from Western states
+data("CollegeDistance")
+cd &lt;- subset(CollegeDistance, region != "west")
+summary(cd)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: Michelson Speed of Light Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>morley</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Michelson Speed of Light Data</h2>
+
+<h3>Description</h3>
+
+<p>A classical data of Michelson (but not this one with Morley) on
+measurements done in 1879 on the speed of light.  The data consists of
+five experiments, each consisting of 20 consecutive &lsquo;runs&rsquo;.
+The response is the speed of light measurement, suitably coded
+(km/sec, with <code>299000</code> subtracted).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>morley
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 100 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>Expt</code></dt><dd><p>The experiment number, from 1 to 5.</p>
+</dd>
+<dt><code>Run</code></dt><dd><p>The run number within each experiment.</p>
+</dd>
+<dt><code>Speed</code></dt><dd><p>Speed-of-light measurement.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data is here viewed as a randomized block experiment with
+&lsquo;experiment&rsquo; and &lsquo;run&rsquo; as the factors.  &lsquo;run&rsquo; may
+also be considered a quantitative variate to account for linear (or
+polynomial) changes in the measurement over the course of a single
+experiment.
+</p>
+
+
+<h3>Note</h3>
+
+<p>This is the same dataset as <code>michelson</code> in package
+<a href="https://CRAN.R-project.org/package=MASS"><span class="pkg">MASS</span></a>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>A. J. Weekes (1986)
+<em>A Genstat Primer</em>.
+London: Edward Arnold.
+</p>
+<p>S. M. Stigler (1977)
+Do robust estimators work with real data?
+<em>Annals of Statistics</em> <b>5</b>, 1055&ndash;1098. (See Table 6.)
+</p>
+<p>A. A. Michelson (1882)
+Experimental determination of the velocity of light made at the United
+States Naval Academy, Annapolis.
+<em>Astronomic Papers</em> <b>1</b> 135&ndash;8.
+U.S. Nautical Almanac Office.  (See Table 24.)
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>require(stats); require(graphics)
+michelson &lt;- transform(morley,
+                       Expt = factor(Expt), Run = factor(Run))
+xtabs(~ Expt + Run, data = michelson)  # 5 x 20 balanced (two-way)
+plot(Speed ~ Expt, data = michelson,
+     main = "Speed of Light Data", xlab = "Experiment No.")
+fm &lt;- aov(Speed ~ Run + Expt, data = michelson)
+summary(fm)
+fm0 &lt;- update(fm, . ~ . - Run)
+anova(fm0, fm)
+</code></pre>
+
+
+</div>
+</body></html>

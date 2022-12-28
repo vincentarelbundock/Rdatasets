@@ -1,0 +1,289 @@
+"","maptools","maps","gapminder"
+"1","Afghanistan","Afghanistan","Afghanistan"
+"2","Åland Islands",NA,NA
+"3","Albania","Albania","Albania"
+"4","Algeria","Algeria","Algeria"
+"5","American Samoa","American Samoa","Samoa"
+"6",NA,"Andaman Islands",NA
+"7","Andorra","Andorra","Andorra"
+"8","Angola","Angola","Angola"
+"9","Anguilla","Anguilla",NA
+"10","Antarctica","Antarctica",NA
+"11","Antigua and Barbuda","Antigua","Antigua and Barbuda"
+"12",NA,"Aral Sea",NA
+"13","Argentina","Argentina","Argentina"
+"14","Armenia",NA,"Armenia"
+"15","Aruba","Aruba",NA
+"16","Australia","Australia","Australia"
+"17","Austria","Austria","Austria"
+"18","Azerbaijan",NA,"Azerbaijan"
+"19",NA,"Azores",NA
+"20","Bahamas","Bahamas","Bahamas"
+"21","Bahrain","Bahrain","Bahrain"
+"22","Bangladesh","Bangladesh","Bangladesh"
+"23","Barbados","Barbados","Barbados"
+"24","Antigua and Barbuda","Barbuda","Antigua and Barbuda"
+"25","Belarus"," ","Belarus"
+"26","Belgium","Belgium","Belgium"
+"27","Belize","Belize","Belize"
+"28","Benin","Benin","Benin"
+"29","Bhutan","Bhutan","Bhutan"
+"30",NA,"Black Sea",NA
+"31","Bolivia","Bolivia","Bolivia"
+"32",NA,"Bonaire",NA
+"33","Bosnia and Herzegovina","Yugoslavia","Bosnia and Herzegovina"
+"34","Botswana","Botswana","Botswana"
+"35","Bouvet Island",NA,NA
+"36","Brazil","Brazil","Brazil"
+"37","British Indian Ocean Territory",NA,NA
+"38","Brunei Darussalam","Brunei","Brunei"
+"39","Bulgaria","Bulgaria","Bulgaria"
+"40","Burkina Faso","Burkina Faso","Burkina Faso"
+"41","Bermuda",NA,NA
+"42","Burundi","Burundi","Burundi"
+"43","United States","California","United States"
+"44","Cambodia","Cambodia","Cambodia"
+"45","Cameroon","Cameroon","Cameroon"
+"46","Canada","Canada","Canada"
+"47",NA,"Canary Islands",NA
+"48","Cape Verde","Cape Verde","Cape Verde"
+"49",NA,"Caspian Sea",NA
+"50","Cayman Islands","Cayman Islands",NA
+"51","Central African Republic","Central African Republic","Central African Republic"
+"52","Chad","Chad","Chad"
+"53",NA,"Chagos Archipelago",NA
+"54","Chile","Chile","Chile"
+"55","China","China","China"
+"56","Christmas Island",NA,NA
+"57","Cocos (Keeling) Islands",NA,NA
+"58","Colombia","Colombia","Colombia"
+"59","Comoros","Comoros","Comoros"
+"60","Congo","Congo","Congo [Republic]"
+"61","Democratic Republic of the Congo","Zaire","Congo [DRC]"
+"62","Cook Islands","Cook Islands","Cook Islands"
+"63","Costa Rica","Costa Rica","Costa Rica"
+"64","Croatia","Yugoslavia","Croatia"
+"65","Cuba","Cuba","Cuba"
+"66",NA,"Curacao",NA
+"67","Cyprus","Cyprus","Cyprus"
+"68","Czech Republic","Czechoslovakia","Czech Republic"
+"69","Denmark","Denmark","Denmark"
+"70","Djibouti","Djibouti","Djibouti"
+"71","Dominica","Dominica","Dominica"
+"72","Dominican Republic","Dominican Republic","Dominican Republic"
+"73","Ecuador","Ecuador","Ecuador"
+"74","Egypt","Egypt","Egypt"
+"75","El Salvador","El Salvador","El Salvador"
+"76","Eritrea",NA,"Eritrea"
+"77","Equatorial Guinea","Equatorial Guinea","Equatorial Guinea"
+"78","Estonia",NA,"Estonia"
+"79","Ethiopia","Ethiopia","Ethiopia"
+"80","Falkland Islands (Malvinas)","Falkland Islands",NA
+"81","Faroe Islands",NA,NA
+"82","Fiji","Fiji","Fiji"
+"83","Finland","Finland","Finland"
+"84","France","France","France"
+"85","French Guiana","French Guiana",NA
+"86","French Polynesia","French Polynesia",NA
+"87","French Southern and Antarctic Lands",NA,NA
+"88","Gabon","Gabon","Gabon"
+"89","Gambia","Gambia","Gambia"
+"90",NA,"Gaza Strip",NA
+"91","Georgia",NA,"Georgia"
+"92","South Georgia South Sandwich Islands",NA,NA
+"93","Germany","Germany","Germany"
+"94","Ghana","Ghana","Ghana"
+"95","Gibraltar",NA,NA
+"96",NA,"Great Bitter Lake",NA
+"97",NA,"Great Lakes",NA
+"98","Greece","Greece","Greece"
+"99","Greenland","Greenland",NA
+"100","Grenada","Grenada","Grenada"
+"101","Guadeloupe","Guadeloupe",NA
+"102","Guam",NA,NA
+"103","Guatemala","Guatemala","Guatemala"
+"104","Guinea","Guinea","Guinea"
+"105","Guinea-Bissau","Guinea-Bissau","Guinea-Bissau"
+"106","Guyana","Guyana","Guyana"
+"107","Haiti","Haiti","Haiti"
+"108","United States","Hawaii","United States"
+"109","Heard Island and McDonald Islands",NA,NA
+"110","Honduras","Honduras","Honduras"
+"111","Holy See (Vatican City)",NA,NA
+"112","Hong Kong",NA,NA
+"113","Hungary","Hungary","Hungary"
+"114","Iceland","Iceland","Iceland"
+"115","India","India","India"
+"116","Indonesia","Indonesia","Indonesia"
+"117","Iran (Islamic Republic of)","Iran","Iran"
+"118","Iraq","Iraq","Iraq"
+"119","Ireland","Ireland","Ireland"
+"120",NA,"Irian Jaya",NA
+"121","Isle of Man","Isle of Man",NA
+"122",NA,"Isle of Wight",NA
+"123","Israel","Israel","Israel"
+"124","Italy","Italy","Italy"
+"125","Cote d'Ivoire","Ivory Coast","Côte d'Ivoire"
+"126","Jamaica","Jamaica","Jamaica"
+"127","Japan","Japan","Japan"
+"128","Jordan","Jordan","Jordan"
+"129","Kazakhstan",NA,"Kazakhstan"
+"130","Kenya","Kenya","Kenya"
+"131","Kiribati","Kiribati","Kiribati"
+"132","Kyrgyzstan",NA,"Kyrgyzstan"
+"133","Kuwait","Kuwait","Kuwait"
+"134",NA,"Lacul Greaca",NA
+"135",NA,"Lake Albert",NA
+"136",NA,"Lake Fjerritslev",NA
+"137",NA,"Lake Kariba",NA
+"138",NA,"Lake Malawi",NA
+"139",NA,"Lake Pasvikelv",NA
+"140",NA,"Lake Tanganyika",NA
+"141",NA,"Lake Titicaca",NA
+"142",NA,"Lake Victoria",NA
+"143","Lao People's Democratic Republic","Laos","Laos"
+"144","Latvia",NA,"Latvia"
+"145","Lebanon","Lebanon","Lebanon"
+"146","Lesotho","Lesotho","Lesotho"
+"147","Libyan Arab Jamahiriya","Liberia","Liberia"
+"148","Libya","Libya","Libya"
+"149","Liechtenstein","Liechtenstein",NA
+"150","Lithuania",NA,"Lithuania"
+"151","Luxembourg","Luxembourg","Luxembourg"
+"152","The former Yugoslav Republic of Macedonia","Yogoslavia","Macedonia [FYROM]"
+"153","Macau",NA,NA
+"154","Madagascar","Madagascar","Madagascar"
+"155",NA,"Madeira Islands",NA
+"156","Malawi","Malawi","Malawi"
+"157","Malaysia","Malaysia","Malaysia"
+"158","Maldives","Maldives",NA
+"159","Republic of Moldova",NA,"Moldova"
+"160","Mali","Mali","Mali"
+"161","Malta","Malta","Malta"
+"162","Marshall Islands","Marshall Islands",NA
+"163","Martinique","Martinique",NA
+"164",NA,"Maug Island",NA
+"165","Mauritania","Mauritania","Mauritania"
+"166","Mauritius","Mauritius","Mauritius"
+"167","Mayotte",NA,NA
+"168","Mexico","Mexico","Mexico"
+"169","Micronesia"," Federated States of","Micronesia"
+"170","Micronesia","",""
+"171","Monaco","Monaco",NA
+"172","Mongolia","Mongolia","Mongolia"
+"173","Montenegro",NA,NA
+"174","Montserrat","Montserrat",NA
+"175","Morocco","Morocco","Morocco"
+"176","Mozambique","Mozambique","Mozambique"
+"177","Burma","Myanmar","Myanmar [Burma]"
+"178","Namibia","Namibia","Namibia"
+"179","Nauru","Nauru","Nauru"
+"180","Nepal","Nepal","Nepal"
+"181","Netherlands","Netherlands","Netherlands"
+"182","Netherlands Antilles",NA,NA
+"183",NA,"Neutral Zone",NA
+"184",NA,"Nevis",NA
+"185","New Caledonia","New Caledonia",NA
+"186","New Zealand","New Zealand","New Zealand"
+"187","Nicaragua","Nicaragua","Nicaragua"
+"188","Niger","Niger","Niger"
+"189","Nigeria","Nigeria","Nigeria"
+"190","Niue",NA,"Niue"
+"191","Korea"," Democratic People's Republic of","North Korea"
+"192","North Korea","",""
+"193","Norfolk Island",NA,NA
+"194","Northern Mariana Islands","Northern Mariana Islands",NA
+"195","Norway","Norway","Norway"
+"196","Oman","Oman","Oman"
+"197","Pakistan","Pakistan","Pakistan"
+"198","Panama","Panama","Panama"
+"199","Palau",NA,"Palau"
+"200","Palestine",NA,NA
+"201","Papua New Guinea","Papua New Guinea","Papua New Guinea"
+"202",NA,"Paracel Islands",NA
+"203","Paraguay","Paraguay","Paraguay"
+"204","Peru","Peru","Peru"
+"205","Philippines","Philippines","Philippines"
+"206","Pitcairn Islands","Pitcairn Islands",NA
+"207","Poland","Poland","Poland"
+"208","Portugal","Portugal","Portugal"
+"209","Puerto Rico","Puerto Rico","Puerto Rico"
+"210","Qatar","Qatar","Qatar"
+"211","Reunion",NA,NA
+"212","Romania","Romania","Romania"
+"213","Rwanda","Rwanda","Rwanda"
+"214",NA,"Saint Eustatius",NA
+"215","Saint Helena",NA,NA
+"216","Saint Kitts and Nevis","Saint Kitts","Saint Kitts and Nevis"
+"217","Saint Lucia","Saint Lucia","Saint Lucia"
+"218","Saint Vincent and the Grenadines","Saint Vincent","Saint Vincent and the Grenadines"
+"219","Saint Barthelemy","Saint-Barthelemy",NA
+"220","Saint Pierre and Miquelon",NA,NA
+"221","Saint Martin","Saint-Martin",NA
+"222","San Marino","San Marino","San Marino"
+"223","Sao Tome and Principe","Sao Tome and Principe","São Tomé and Príncipe"
+"224",NA,"Sardinia",NA
+"225","Saudi Arabia","Saudi Arabia","Saudi Arabia"
+"226","Senegal","Senegal","Senegal"
+"227","Serbia","Yugoslavia","Serbia"
+"228","Seychelles","Seychelles","Seychelles"
+"229",NA,"Sicily",NA
+"230","Sierra Leone","Sierra Leone","Sierra Leone"
+"231",NA,"Sin Cowe Island",NA
+"232","Singapore",NA,"Singapore"
+"233","Slovakia","Czechoslovakia","Slovakia"
+"234","Slovenia","Yugoslavia","Slovenia"
+"235","Solomon Islands","Solomon Islands","Solomon Islands"
+"236","Somalia","Somalia","Somalia"
+"237",NA,"Sonsorol Island",NA
+"238","South Africa","South Africa","South Africa"
+"239","Korea"," Republic of","South Korea"
+"240","South Korea","",""
+"241",NA,"South Sandwich Islands",NA
+"242","Spain","Spain","Spain"
+"243",NA,"Spratly Island",NA
+"244","Sri Lanka","Sri Lanka","Sri Lanka"
+"245","Sudan","Sudan","Sudan"
+"246","Suriname","Suriname","Suriname"
+"247","Svalbard",NA,NA
+"248","Swaziland","Swaziland","Swaziland"
+"249","Sweden","Sweden","Sweden"
+"250","Switzerland","Switzerland","Switzerland"
+"251","Syrian Arab Republic","Syria","Syria"
+"252","Taiwan",NA,NA
+"253","Tajikistan",NA,"Tajikistan"
+"254","United Republic of Tanzania","Tanzania","Tanzania"
+"255","Thailand","Thailand","Thailand"
+"256","Timor-Leste",NA,"Timor-Leste"
+"257","Trinidad and Tobago","Tobago","Trinidad and Tobago"
+"258","Togo","Togo","Togo"
+"259","Tokelau","Tokelau",NA
+"260","Tonga","Tonga","Tonga"
+"261","Trinidad and Tobago","Trinidad","Trinidad and Tobago"
+"262","Tunisia","Tunisia","Tunisia"
+"263","Turkey","Turkey","Turkey"
+"264","Turkmenistan",NA,"Turkmenistan"
+"265","Turks and Caicos Islands","Turks and Caicos",NA
+"266","Tuvalu","Tuvalu","Tuvalu"
+"267","Uganda","Uganda","Uganda"
+"268","United Kingdom","UK","United Kingdom"
+"269","Ukraine",NA,"Ukraine"
+"270","Untied Arab Emirates","United Arab Emirates","United Arab Emirates"
+"271","Uruguay","Uruguay","Uruguay"
+"272","United States","USA","United States"
+"273","United States Minor Outlying Islands",NA,NA
+"274","Uzbekistan",NA,"Uzbekistan"
+"275","Russia","USSR","Russia"
+"276","Vanuatu","Vanuatu","Vanuatu"
+"277","Venezuela","Venezuela","Venezuela"
+"278","Viet Nam","Vietnam","Vietnam"
+"279","British Virgin Islands","Virgin Islands",NA
+"280","United States Virgin Islands","Virgin Islands",NA
+"281",NA,"Vislinskiy Zaliv",NA
+"282","United Kingdom","Wales","United Kingdom"
+"283","Wallis and Futuna Islands",NA,NA
+"284",NA,"West Bank","West Bank"
+"285","Western Sahara","Western Sahara",NA
+"286","Yemen","Yemen","Yemen"
+"287","Zambia","Zambia","Zambia"
+"288","Zimbabwe","Zimbabwe","Zimbabwe"

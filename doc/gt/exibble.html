@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><title>R: A toy example tibble for testing with gt: exibble</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>exibble</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>A toy example tibble for testing with gt: exibble</h2>
+
+<h3>Description</h3>
+
+<p>This tibble contains data of a few different classes, which makes it
+well-suited for quick experimentation with the functions in this package. It
+contains only eight rows with numeric, character, and factor columns. The
+last 4 rows contain <code>NA</code> values in the majority of this tibble's columns (1
+missing value per column). The <code>date</code>, <code>time</code>, and <code>datetime</code> columns are
+character-based dates/times in the familiar ISO 8601 format. The <code>row</code> and
+<code>group</code> columns provide for unique rownames and two groups (<code>grp_a</code> and
+<code>grp_b</code>) for experimenting with the <code>gt()</code> function's <code>rowname_col</code> and
+<code>groupname_col</code> arguments.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>exibble
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 8 rows and 9 variables:
+</p>
+
+<dl>
+<dt>num</dt><dd><p>a numeric column ordered with increasingly larger values</p>
+</dd>
+<dt>char</dt><dd><p>a character column composed of names of fruits from <code>a</code> to
+<code>h</code></p>
+</dd>
+<dt>fctr</dt><dd><p>a factor column with numbers from 1 to 8, written out</p>
+</dd>
+<dt>date, time, datetime</dt><dd><p>character columns with dates, times, and
+datetimes</p>
+</dd>
+<dt>currency</dt><dd><p>a numeric column that is useful for testing currency-based
+formatting</p>
+</dd>
+<dt>row</dt><dd><p>a character column in the format <code>row_X</code> which can be
+useful for testing with row captions in a table stub</p>
+</dd>
+<dt>group</dt><dd><p>a character column with four <code>grp_a</code> values and four
+<code>grp_b</code> values which can be useful for testing tables that contain
+row groups</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<p>Here is the <code>exibble</code>.
+</p>
+<div class="sourceCode r"><pre>exibble
+#&gt; # A tibble: 8 x 9
+#&gt;           num char       fctr  date       time  datetime    currency row   group
+#&gt;         &lt;dbl&gt; &lt;chr&gt;      &lt;fct&gt; &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;
+#&gt; 1       0.111 apricot    one   2015-01-15 13:35 2018-01-01~    50.0  row_1 grp_a
+#&gt; 2       2.22  banana     two   2015-02-15 14:40 2018-02-02~    18.0  row_2 grp_a
+#&gt; 3      33.3   coconut    three 2015-03-15 15:45 2018-03-03~     1.39 row_3 grp_a
+#&gt; 4     444.    durian     four  2015-04-15 16:50 2018-04-04~ 65100    row_4 grp_a
+#&gt; 5    5550     &lt;NA&gt;       five  2015-05-15 17:55 2018-05-05~  1326.   row_5 grp_b
+#&gt; 6      NA     fig        six   2015-06-15 &lt;NA&gt;  2018-06-06~    13.3  row_6 grp_b
+#&gt; 7  777000     grapefruit seven &lt;NA&gt;       19:10 2018-07-07~    NA    row_7 grp_b
+#&gt; 8 8880000     honeydew   eight 2015-08-15 20:20 &lt;NA&gt;            0.44 row_8 grp_b
+</pre></div>
+
+
+<h3>Function ID</h3>
+
+<p>11-6
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other datasets: 
+<code>countrypops</code>,
+<code>gtcars</code>,
+<code>pizzaplace</code>,
+<code>sp500</code>,
+<code>sza</code>
+</p>
+
+
+</div>
+</body></html>

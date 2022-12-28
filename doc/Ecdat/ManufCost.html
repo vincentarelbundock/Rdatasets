@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><title>R: Manufacturing Costs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ManufCost</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Manufacturing Costs </h2>
+
+<h3>Description</h3>
+
+<p>annual observations from 1947 to 1971
+</p>
+<p><em>number of observations</em> :  25
+</p>
+<p><em>observation</em> :  country
+</p>
+<p><em>country</em> :  United States
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(ManufCost)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A time series containing :
+</p>
+
+<dl>
+<dt>cost</dt><dd><p>cost index</p>
+</dd>
+<dt>sk</dt><dd><p>capital cost share</p>
+</dd>
+<dt>sl</dt><dd><p>labor cost share</p>
+</dd>
+<dt>se</dt><dd><p>energy cost share</p>
+</dd>
+<dt>sm</dt><dd><p>materials cost share</p>
+</dd>
+<dt>pk</dt><dd><p>capital price</p>
+</dd>
+<dt>pl</dt><dd><p>labor price</p>
+</dd>
+<dt>pe</dt><dd><p>energy price</p>
+</dd>
+<dt>pm</dt><dd><p>materials price</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Berndt, E. and D. Wood (1975) &ldquo;Technology, prices and the derived demand for energy&rdquo;, <em>Journal of Economics and Statistics</em>, <b>57</b>, 376-384.
+</p>
+
+
+<h3>References</h3>
+
+<p>Greene, W.H. (2003) <em>Econometric Analysis</em>, Prentice Hall, <a href="https://archive.org/details/econometricanaly0000gree_f4x3">https://archive.org/details/econometricanaly0000gree_f4x3</a>, Table F14.1.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Index.Source</code>, <code>Index.Economics</code>, <code>Index.Econometrics</code>, <code>Index.Observations</code>,
+</p>
+<p><code>Index.Time.Series</code></p>
+
+
+</div>
+</body></html>

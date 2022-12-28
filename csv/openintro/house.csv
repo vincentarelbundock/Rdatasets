@@ -1,0 +1,117 @@
+"","congress","year_start","year_end","seats","p1","np1","p2","np2","other","vac","del","res"
+"1",1,1789,1791,65,"Pro-Administration",37,"Anti-Administration",28,0,0,0,0
+"2",2,1791,1793,69,"Pro-Administration",39,"Anti-Administration",30,0,0,0,0
+"3",3,1793,1795,106,"Pro-Administration",51,"Anti-Administration",54,1,0,1,0
+"4",4,1795,1797,106,"Federalists",47,"Jeffersonian Republicans",59,0,0,1,0
+"5",5,1797,1799,106,"Federalists",57,"Jeffersonian Republicans",49,0,0,0,0
+"6",6,1799,1801,106,"Federalists",60,"Jeffersonian Republicans",46,0,0,1,0
+"7",7,1801,1803,107,"Federalists",38,"Jeffersonian Republicans",68,0,1,2,0
+"8",8,1803,1805,142,"Federalists",39,"Jeffersonian Republicans",103,0,0,1,0
+"9",9,1805,1807,142,"Federalists",28,"Jeffersonian Republicans",114,0,0,3,0
+"10",10,1807,1809,142,"Federalists",26,"Jeffersonian Republicans",116,0,0,3,0
+"11",11,1809,1811,142,"Federalists",50,"Jeffersonian Republicans",92,0,0,3,0
+"12",12,1811,1813,143,"Federalists",36,"Jeffersonian Republicans",107,0,0,5,0
+"13",13,1813,1815,182,"Federalists",68,"Jeffersonian Republicans",114,0,0,4,0
+"14",14,1815,1817,183,"Federalists",64,"Jeffersonian Republicans",119,0,0,4,0
+"15",15,1817,1819,185,"Federalists",39,"Jeffersonian Republicans",146,0,0,4,0
+"16",16,1819,1821,186,"Federalists",26,"Jeffersonian Republicans",160,0,0,4,0
+"17",17,1821,1823,187,"Federalists",32,"Jeffersonian Republicans",155,0,0,4,0
+"18",18,1823,1825,213,"Adams-Clay Republicans",72,"Jackson Republicans",64,77,0,3,0
+"19",19,1825,1827,213,"Adams",109,"Jacksons",104,0,0,3,0
+"20",20,1827,1829,213,"Adams",100,"Jacksons",113,0,0,3,0
+"21",21,1829,1831,213,"Anti-Jacksons",72,"Jacksons",136,5,0,3,0
+"22",22,1831,1833,213,"Anti-Jacksons",66,"Jacksons",126,21,0,3,0
+"23",23,1833,1835,240,"Anti-Jacksons",63,"Jacksons",143,34,0,3,0
+"24",24,1835,1837,242,"Anti-Jacksons",75,"Jacksons",143,24,0,4,0
+"25",25,1837,1839,242,"Democrats",128,"Whigs",100,14,0,3,0
+"26",26,1839,1841,242,"Democrats",125,"Whigs",109,8,0,3,0
+"27",27,1841,1843,242,"Democrats",98,"Whigs",142,2,0,3,0
+"28",28,1843,1845,223,"Democrats",147,"Whigs",72,4,0,3,0
+"29",29,1845,1847,228,"Democrats",142,"Whigs",79,6,1,2,0
+"30",30,1847,1849,230,"Democrats",110,"Whigs",116,4,0,1,0
+"31",31,1849,1851,233,"Democrats",113,"Whigs",108,11,1,2,0
+"32",32,1851,1853,233,"Democrats",127,"Whigs",85,21,0,4,0
+"33",33,1853,1855,234,"Democrats",157,"Whigs",71,6,0,7,0
+"34",34,1855,1857,234,"Democrats",83,"Oppositions",100,51,0,7,0
+"35",35,1857,1859,237,"Democrats",132,"Republicans",90,15,0,7,0
+"36",36,1859,1861,238,"Democrats",83,"Republicans",116,39,0,5,0
+"37",37,1861,1863,183,"Democrats",44,"Republicans",108,31,0,7,0
+"38",38,1863,1865,184,"Democrats",72,"Republicans",85,27,0,10,0
+"39",39,1865,1867,193,"Democrats",38,"Republicans",136,19,0,9,0
+"40",40,1867,1869,226,"Democrats",47,"Republicans",173,4,2,8,0
+"41",41,1869,1871,243,"Democrats",67,"Republicans",171,5,0,9,0
+"42",42,1871,1873,243,"Democrats",104,"Republicans",136,3,0,10,0
+"43",43,1873,1875,292,"Democrats",88,"Republicans",199,5,0,10,0
+"44",44,1875,1877,293,"Democrats",182,"Republicans",103,8,0,9,0
+"45",45,1877,1879,293,"Democrats",155,"Republicans",136,2,0,8,0
+"46",46,1879,1881,293,"Democrats",141,"Republicans",132,20,0,8,0
+"47",47,1881,1883,293,"Democrats",128,"Republicans",151,14,0,8,0
+"48",48,1883,1885,325,"Democrats",196,"Republicans",117,12,0,8,0
+"49",49,1885,1887,325,"Democrats",182,"Republicans",141,2,0,8,0
+"50",50,1887,1889,325,"Democrats",167,"Republicans",152,6,0,8,0
+"51",51,1889,1891,332,"Democrats",152,"Republicans",179,1,0,9,0
+"52",52,1891,1893,332,"Democrats",238,"Republicans",86,8,0,4,0
+"53",53,1893,1895,356,"Democrats",218,"Republicans",124,14,0,4,0
+"54",54,1895,1897,357,"Democrats",93,"Republicans",254,10,0,4,0
+"55",55,1897,1899,357,"Democrats",124,"Republicans",206,27,0,3,0
+"56",56,1899,1901,357,"Democrats",161,"Republicans",187,9,0,4,0
+"57",57,1901,1903,357,"Democrats",151,"Republicans",200,6,0,4,1
+"58",58,1903,1905,386,"Democrats",176,"Republicans",207,3,0,4,1
+"59",59,1905,1907,386,"Democrats",135,"Republicans",251,0,0,5,1
+"60",60,1907,1909,391,"Democrats",167,"Republicans",223,1,0,5,1
+"61",61,1909,1911,391,"Democrats",172,"Republicans",219,0,0,4,3
+"62",62,1911,1913,394,"Democrats",230,"Republicans",162,2,0,4,3
+"63",63,1913,1915,435,"Democrats",291,"Republicans",134,10,0,2,3
+"64",64,1915,1917,435,"Democrats",230,"Republicans",196,9,0,2,3
+"65",65,1917,1919,435,"Democrats",214,"Republicans",215,6,0,2,3
+"66",66,1919,1921,435,"Democrats",192,"Republicans",240,2,1,2,3
+"67",67,1921,1923,435,"Democrats",131,"Republicans",302,2,0,2,3
+"68",68,1923,1925,435,"Democrats",207,"Republicans",225,3,0,2,3
+"69",69,1925,1927,435,"Democrats",183,"Republicans",247,5,0,2,3
+"70",70,1927,1929,435,"Democrats",194,"Republicans",238,3,0,2,3
+"71",71,1929,1931,435,"Democrats",164,"Republicans",270,1,0,2,3
+"72",72,1931,1933,435,"Democrats",216,"Republicans",218,1,0,2,3
+"73",73,1933,1935,435,"Democrats",313,"Republicans",117,5,0,2,3
+"74",74,1935,1937,435,"Democrats",322,"Republicans",103,10,0,2,3
+"75",75,1937,1939,435,"Democrats",334,"Republicans",88,13,0,2,2
+"76",76,1939,1941,435,"Democrats",262,"Republicans",169,4,0,2,2
+"77",77,1941,1943,435,"Democrats",267,"Republicans",162,6,0,2,2
+"78",78,1943,1945,435,"Democrats",222,"Republicans",209,4,0,2,2
+"79",79,1945,1947,435,"Democrats",242,"Republicans",191,2,0,2,2
+"80",80,1947,1949,435,"Democrats",188,"Republicans",246,1,0,2,1
+"81",81,1949,1951,435,"Democrats",263,"Republicans",171,1,0,2,1
+"82",82,1951,1953,435,"Democrats",235,"Republicans",199,1,0,2,1
+"83",83,1953,1955,435,"Democrats",213,"Republicans",221,1,0,2,1
+"84",84,1955,1957,435,"Democrats",232,"Republicans",203,0,0,2,1
+"85",85,1957,1959,435,"Democrats",234,"Republicans",201,0,0,2,1
+"86",86,1959,1961,437,"Democrats",283,"Republicans",153,1,0,0,1
+"87",87,1961,1963,437,"Democrats",263,"Republicans",174,0,0,0,1
+"88",88,1963,1965,435,"Democrats",259,"Republicans",176,0,0,0,1
+"89",89,1965,1967,435,"Democrats",295,"Republicans",140,0,0,0,1
+"90",90,1967,1969,435,"Democrats",247,"Republicans",187,0,1,0,1
+"91",91,1969,1971,435,"Democrats",243,"Republicans",192,0,0,0,1
+"92",92,1971,1973,435,"Democrats",255,"Republicans",180,0,0,1,1
+"93",93,1973,1975,435,"Democrats",242,"Republicans",192,1,0,3,1
+"94",94,1975,1977,435,"Democrats",291,"Republicans",144,0,0,3,1
+"95",95,1977,1979,435,"Democrats",292,"Republicans",143,0,0,3,1
+"96",96,1979,1981,435,"Democrats",277,"Republicans",158,0,0,3,1
+"97",97,1981,1983,435,"Democrats",242,"Republicans",192,1,0,4,1
+"98",98,1983,1985,435,"Democrats",269,"Republicans",166,0,0,4,1
+"99",99,1985,1987,435,"Democrats",253,"Republicans",182,0,0,4,1
+"100",100,1987,1989,435,"Democrats",258,"Republicans",177,0,0,4,1
+"101",101,1989,1991,435,"Democrats",260,"Republicans",175,0,0,4,1
+"102",102,1991,1993,435,"Democrats",267,"Republicans",167,1,0,4,1
+"103",103,1993,1995,435,"Democrats",258,"Republicans",176,1,0,4,1
+"104",104,1995,1997,435,"Democrats",204,"Republicans",230,1,0,4,1
+"105",105,1997,1999,435,"Democrats",206,"Republicans",228,1,0,4,1
+"106",106,1999,2001,435,"Democrats",211,"Republicans",223,1,0,4,1
+"107",107,2001,2003,435,"Democrats",212,"Republicans",221,2,0,4,1
+"108",108,2003,2005,435,"Democrats",205,"Republicans",229,1,0,4,1
+"109",109,2005,2007,435,"Democrats",202,"Republicans",232,1,0,4,1
+"110",110,2007,2009,435,"Democrats",233,"Republicans",202,0,0,4,1
+"111",111,2009,2011,435,"Democrats",257,"Republicans",178,0,0,5,1
+"112",112,2011,2013,435,"Democrats",193,"Republicans",242,0,0,5,1
+"113",113,2013,2015,435,"Democrats",201,"Republicans",234,0,0,5,1
+"114",114,2015,2017,435,"Democrats",188,"Republicans",247,0,0,5,1
+"115",115,2017,2019,435,"Democrats",194,"Republicans",241,0,0,5,1
+"116",116,2019,2021,435,"Democrats",235,"Republicans",199,0,0,5,1

@@ -1,0 +1,132 @@
+<!DOCTYPE html><html><head><title>R: athlet1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>athlet1</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>athlet1</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Sources: Peterson's Guide to Four Year Colleges, 1994 and 1995 (24th and 25th editions). Princeton University Press. Princeton, NJ. The Official 1995 College Basketball Records Book, 1994, NCAA. 1995 Information Please Sports Almanac (6th edition). Houghton Mifflin. New York, NY. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('athlet1')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 118 observations on 23 variables:
+</p>
+
+<ul>
+<li> <p><strong>year:</strong> 1992 or 1993
+</p>
+</li>
+<li> <p><strong>apps:</strong> # applics for admission
+</p>
+</li>
+<li> <p><strong>top25:</strong> perc frsh class in 25 hs perc
+</p>
+</li>
+<li> <p><strong>ver500:</strong> perc frsh &gt;= 500 on verbal SAT
+</p>
+</li>
+<li> <p><strong>mth500:</strong> perc frsh &gt;= 500 on math SAT
+</p>
+</li>
+<li> <p><strong>stufac:</strong> student-faculty ratio
+</p>
+</li>
+<li> <p><strong>bowl:</strong> = 1 if bowl game in prev yr
+</p>
+</li>
+<li> <p><strong>btitle:</strong> = 1 if men's cnf chmps prv yr
+</p>
+</li>
+<li> <p><strong>finfour:</strong> = 1 if men's final 4 prv yr
+</p>
+</li>
+<li> <p><strong>lapps:</strong> log(apps)
+</p>
+</li>
+<li> <p><strong>d93:</strong> =1 if year = 1993
+</p>
+</li>
+<li> <p><strong>avg500:</strong> (ver500+mth500)/2
+</p>
+</li>
+<li> <p><strong>cfinfour:</strong> change in finfour
+</p>
+</li>
+<li> <p><strong>clapps:</strong> change in lapps
+</p>
+</li>
+<li> <p><strong>cstufac:</strong> change in stufac
+</p>
+</li>
+<li> <p><strong>cbowl:</strong> change in bowl
+</p>
+</li>
+<li> <p><strong>cavg500:</strong> change in avg500
+</p>
+</li>
+<li> <p><strong>cbtitle:</strong> change in btitle
+</p>
+</li>
+<li> <p><strong>lapps_1:</strong> lapps lagged
+</p>
+</li>
+<li> <p><strong>school:</strong> name of university
+</p>
+</li>
+<li> <p><strong>ctop25:</strong> change in top25
+</p>
+</li>
+<li> <p><strong>bball:</strong> =1 if btitle or finfour
+</p>
+</li>
+<li> <p><strong>cbball:</strong> change in bball
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>These data were collected by Patrick Tulloch, an MSU economics major, for a term project. The “athletic success” variables are for the year prior to the enrollment and academic data. Updating these data to get a longer stretch of years, and including appearances in the “Sweet 16” NCAA basketball tournaments, would make for a more convincing analysis. With the growing popularity of women’s sports, especially basketball, an analysis that includes success in women’s athletics would be interesting.
+</p>
+<p>Used in Text: page 697
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(athlet1)
+</code></pre>
+
+
+</div>
+</body></html>

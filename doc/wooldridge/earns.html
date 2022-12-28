@@ -1,0 +1,105 @@
+<!DOCTYPE html><html><head><title>R: earns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>earns</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>earns</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Economic Report of the President, 1989, Table B-47. The data are for the non-farm business sector. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('earns')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 41 observations on 14 variables:
+</p>
+
+<ul>
+<li> <p><strong>year:</strong> 1947 to 1987
+</p>
+</li>
+<li> <p><strong>wkearns:</strong> avg. real weekly earnings
+</p>
+</li>
+<li> <p><strong>wkhours:</strong> avg. weekly hours
+</p>
+</li>
+<li> <p><strong>outphr:</strong> output per labor hour
+</p>
+</li>
+<li> <p><strong>hrwage:</strong> wkearns/wkhours
+</p>
+</li>
+<li> <p><strong>lhrwage:</strong> log(hrwage)
+</p>
+</li>
+<li> <p><strong>loutphr:</strong> log(outphr)
+</p>
+</li>
+<li> <p><strong>t:</strong> time trend:  t=1 to 47
+</p>
+</li>
+<li> <p><strong>ghrwage:</strong> lhrwage - lhrwage[_n-1]
+</p>
+</li>
+<li> <p><strong>goutphr:</strong> loutphr - loutphr[_n-1]
+</p>
+</li>
+<li> <p><strong>ghrwge_1:</strong> ghrwage[_n-1]
+</p>
+</li>
+<li> <p><strong>goutph_1:</strong> goutphr[_n-1]
+</p>
+</li>
+<li> <p><strong>goutph_2:</strong> goutphr[_n-2]
+</p>
+</li>
+<li> <p><strong>lwkhours:</strong> log(wkhours)
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>These data could be usefully updated, but changes in reporting conventions in more recent ERPs may make that difficult.
+</p>
+<p>Used in Text: pages 363-364, 398, 407
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(earns)
+</code></pre>
+
+
+</div>
+</body></html>

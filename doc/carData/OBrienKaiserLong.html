@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><title>R: O'Brien and Kaiser's Repeated-Measures Data in &quot;Long&quot; Format</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>OBrienKaiserLong</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>O'Brien and Kaiser's Repeated-Measures Data in &quot;Long&quot; Format</h2>
+
+<h3>Description</h3>
+
+<p>Contrived repeated-measures data from O'Brien and Kaiser (1985). For details see <code>OBrienKaiser</code>, which is for the &quot;wide&quot; form of the same data.</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>OBrienKaiserLong</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 240 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>treatment</code></dt><dd><p>a between-subjects factor with levels <code>control</code>, <code>A</code>, <code>B</code>.</p>
+</dd>
+<dt><code>gender</code></dt><dd><p>a between-subjects factor with levels <code>F</code>, <code>M.</code></p>
+</dd>
+<dt><code>score</code></dt><dd><p>the numeric response variable.</p>
+</dd>
+<dt><code>id</code></dt><dd><p>the subject id number.</p>
+</dd>
+<dt><code>phase</code></dt><dd><p>a within-subjects factor with levels <code>pre</code>, <code>post</code>, <code>fup</code>.</p>
+</dd>
+<dt><code>hour</code></dt><dd><p>a within-subjects factor with levels <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>5</code>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>O'Brien, R. G., and Kaiser, M. K. (1985)
+MANOVA method for analyzing repeated measures designs: An extensive primer.
+<em>Psychological Bulletin</em> <b>97</b>, 316&ndash;333, Table 7.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>OBrienKaiser</code>.</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>head(OBrienKaiserLong, 15) # first subject
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html><html><head><title>R: Language Scores of 8-Graders in The Netherlands</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>bdf</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Language Scores of 8-Graders in The Netherlands</h2>
+
+<h3>Description</h3>
+
+<p>The <code>bdf</code> data frame has 2287 rows and 25 columns of language
+scores from grade 8 pupils in elementary schools in The Netherlands.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(bdf)</code></pre>
+
+
+<h3>Format</h3>
+
+
+<dl>
+<dt>schoolNR</dt><dd><p>a factor denoting the school.</p>
+</dd>
+<dt>pupilNR</dt><dd><p>a factor denoting the pupil.</p>
+</dd>
+<dt>IQ.verb</dt><dd><p>a numeric vector of verbal IQ scores</p>
+</dd>
+<dt>IQ.perf</dt><dd><p>a numeric vector of IQ scores.</p>
+</dd>
+<dt>sex</dt><dd><p>Sex of the student.</p>
+</dd>
+<dt>Minority</dt><dd><p>a factor indicating if the student is a member of a
+minority group.</p>
+</dd>
+<dt>repeatgr</dt><dd><p>an ordered factor indicating if one or more grades
+have been repeated.</p>
+</dd>
+<dt>aritPRET</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>classNR</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>aritPOST</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>langPRET</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>langPOST</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>ses</dt><dd><p>a numeric vector of socioeconomic status indicators.</p>
+</dd>
+<dt>denomina</dt><dd><p>a factor indicating of the school is a public
+school, a Protestant private school, a Catholic private school, or
+a non-denominational private school.</p>
+</dd>
+<dt>schoolSES</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>satiprin</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>natitest</dt><dd><p>a factor with levels <code>0</code> and <code>1</code></p>
+</dd>
+<dt>meetings</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>currmeet</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>mixedgra</dt><dd><p>a factor indicating if the class is a mixed-grade class.</p>
+</dd>
+<dt>percmino</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>aritdiff</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>homework</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>classsiz</dt><dd><p>a numeric vector</p>
+</dd>
+<dt>groupsiz</dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>References</h3>
+
+<p>Snijders, Tom and Bosker, Roel (1999)
+<em>Multilevel Analysis: An Introduction to Basic and Advanced
+Multilevel Modeling</em>, Sage.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>summary(bdf)
+</code></pre>
+
+
+</div>
+</body></html>

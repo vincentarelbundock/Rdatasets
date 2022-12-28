@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: Do Bee Stings Depend on Previous Stings?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>BeeStings</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Do Bee Stings Depend on Previous Stings?</h2>
+
+<h3>Description</h3>
+
+<p>Data from an experiment to see it the number of bee stings depends on previous stings.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 18 observations on the following 3 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>Occasion</code> </td><td style="text-align: left;"> Trial: I to IX</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Treatment</code> </td><td style="text-align: left;"> <code>Fresh</code> or <code>Stung</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Stingers</code> </td><td style="text-align: left;"> Number of stingers</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>If you are stung by a bee, does that make you more likely to get stung again? Might bees leave
+behind a chemical message that tells other bees to attack you? To test this hypothesis, scientists
+dangled a 4x4 array of 16 muslin-wrapped cotton balls over a beehive.
+Eight of 16 balls had been previously stung; the other eight were
+fresh. The response was the total number of new stingers left behind by the bees.
+The process was repeated for a total of nine trials.
+</p>
+<p>Used in first edition, but not second edition.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Free, J.B. (1961) &quot;The stinging response of honeybees,&quot; Animal Behavior, Vol. 9, pp 193-196.
+</p>
+
+
+</div>
+</body></html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html><html><head><title>R: driving</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>driving</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>driving</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Freeman, D.G. (2007), “Drunk Driving Legislation and Traffic Fatalities: New Evidence on BAC 08 Laws,” Contemporary Economic Policy 25, 293&ndash;308. Professor Freeman kindly provided the data. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('driving')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 1200 observations on 56 variables:
+</p>
+
+<ul>
+<li> <p><strong>year:</strong> 1980 through 2004
+</p>
+</li>
+<li> <p><strong>state:</strong> 48 continental states, alphabetical
+</p>
+</li>
+<li> <p><strong>sl55:</strong> speed limit == 55
+</p>
+</li>
+<li> <p><strong>sl65:</strong> speed limit == 65
+</p>
+</li>
+<li> <p><strong>sl70:</strong> speed limit == 70
+</p>
+</li>
+<li> <p><strong>sl75:</strong> speed limit == 75
+</p>
+</li>
+<li> <p><strong>slnone:</strong> no speed limit
+</p>
+</li>
+<li> <p><strong>seatbelt:</strong> =0 if none, =1 if primary, =2 if secondary
+</p>
+</li>
+<li> <p><strong>minage:</strong> minimum drinking age
+</p>
+</li>
+<li> <p><strong>zerotol:</strong> zero tolerance law
+</p>
+</li>
+<li> <p><strong>gdl:</strong> graduated drivers license law
+</p>
+</li>
+<li> <p><strong>bac10:</strong> blood alcohol limit .10
+</p>
+</li>
+<li> <p><strong>bac08:</strong> blood alcohol limit .08
+</p>
+</li>
+<li> <p><strong>perse:</strong> administrative license revocation (per se law)
+</p>
+</li>
+<li> <p><strong>totfat:</strong> total traffic fatalities
+</p>
+</li>
+<li> <p><strong>nghtfat:</strong> total nighttime fatalities
+</p>
+</li>
+<li> <p><strong>wkndfat:</strong> total weekend fatalities
+</p>
+</li>
+<li> <p><strong>totfatpvm:</strong> total fatalities per 100 million miles
+</p>
+</li>
+<li> <p><strong>nghtfatpvm:</strong> nighttime fatalities per 100 million miles
+</p>
+</li>
+<li> <p><strong>wkndfatpvm:</strong> weekend fatalities per 100 million miles
+</p>
+</li>
+<li> <p><strong>statepop:</strong> state population
+</p>
+</li>
+<li> <p><strong>totfatrte:</strong> total fatalities per 100,000 population
+</p>
+</li>
+<li> <p><strong>nghtfatrte:</strong> nighttime fatalities per 100,000 population
+</p>
+</li>
+<li> <p><strong>wkndfatrte:</strong> weekend accidents per 100,000 population
+</p>
+</li>
+<li> <p><strong>vehicmiles:</strong> vehicle miles traveled, billions
+</p>
+</li>
+<li> <p><strong>unem:</strong> unemployment rate, percent
+</p>
+</li>
+<li> <p><strong>perc14_24:</strong> percent population aged 14 through 24
+</p>
+</li>
+<li> <p><strong>sl70plus:</strong> sl70 + sl75 + slnone
+</p>
+</li>
+<li> <p><strong>sbprim:</strong> =1 if primary seatbelt law
+</p>
+</li>
+<li> <p><strong>sbsecon:</strong> =1 if secondary seatbelt law
+</p>
+</li>
+<li> <p><strong>d80:</strong> =1 if year == 1980
+</p>
+</li>
+<li> <p><strong>d81:</strong> 
+</p>
+</li>
+<li> <p><strong>d82:</strong> 
+</p>
+</li>
+<li> <p><strong>d83:</strong> 
+</p>
+</li>
+<li> <p><strong>d84:</strong> 
+</p>
+</li>
+<li> <p><strong>d85:</strong> 
+</p>
+</li>
+<li> <p><strong>d86:</strong> 
+</p>
+</li>
+<li> <p><strong>d87:</strong> 
+</p>
+</li>
+<li> <p><strong>d88:</strong> 
+</p>
+</li>
+<li> <p><strong>d89:</strong> 
+</p>
+</li>
+<li> <p><strong>d90:</strong> 
+</p>
+</li>
+<li> <p><strong>d91:</strong> 
+</p>
+</li>
+<li> <p><strong>d92:</strong> 
+</p>
+</li>
+<li> <p><strong>d93:</strong> 
+</p>
+</li>
+<li> <p><strong>d94:</strong> 
+</p>
+</li>
+<li> <p><strong>d95:</strong> 
+</p>
+</li>
+<li> <p><strong>d96:</strong> 
+</p>
+</li>
+<li> <p><strong>d97:</strong> 
+</p>
+</li>
+<li> <p><strong>d98:</strong> 
+</p>
+</li>
+<li> <p><strong>d99:</strong> 
+</p>
+</li>
+<li> <p><strong>d00:</strong> 
+</p>
+</li>
+<li> <p><strong>d01:</strong> 
+</p>
+</li>
+<li> <p><strong>d02:</strong> 
+</p>
+</li>
+<li> <p><strong>d03:</strong> 
+</p>
+</li>
+<li> <p><strong>d04:</strong> =1 if year == 2004
+</p>
+</li>
+<li> <p><strong>vehicmilespc:</strong> 
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>Several more years of data are available and may further shed light on the effectiveness of several traffic laws.
+</p>
+<p>Used in Text: not used, but see page 695
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(driving)
+</code></pre>
+
+
+</div>
+</body></html>

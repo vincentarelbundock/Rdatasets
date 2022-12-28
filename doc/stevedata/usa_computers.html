@@ -1,0 +1,66 @@
+<!DOCTYPE html><html><head><title>R: Percentage of U.S. Households with Computer Access, by Year</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>usa_computers</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Percentage of U.S. Households with Computer Access, by Year</h2>
+
+<h3>Description</h3>
+
+<p>This is a simple and regrettably incomplete time-series on the percentage
+of U.S. households with access to a computer, by year.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>usa_computers
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 19 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>year</code></dt><dd><p>the year</p>
+</dd>
+<dt><code>value</code></dt><dd><p>the estimated percentage of households with access to a computer</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data are spotty and regrettably this is not a perfect time-series.
+However, it is useful for an in-class exercise to show that the proliferation of
+household computers (over time) in the United States comes in part because of
+globalization. Use it for that purpose. The data are reasonably faithful, but don't
+treat it as gospel. Exact sourcing available upon request.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Various: U.S. Census Bureau, Current Population Survey, and
+American Community Survey
+</p>
+
+
+</div>
+</body></html>

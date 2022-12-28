@@ -1,0 +1,238 @@
+<!DOCTYPE html><html><head><title>R: US Traffic Fatalities</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Fatalities</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US Traffic Fatalities</h2>
+
+<h3>Description</h3>
+
+<p>US traffic fatalities panel data for the &ldquo;lower 48&rdquo; US states 
+(i.e., excluding Alaska and Hawaii), annually for 1982 through 1988.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Fatalities")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 336 observations on 34 variables.
+</p>
+
+<dl>
+<dt>state</dt><dd><p>factor indicating state.</p>
+</dd>
+<dt>year</dt><dd><p>factor indicating year.</p>
+</dd>
+<dt>spirits</dt><dd><p>numeric. Spirits consumption.</p>
+</dd>
+<dt>unemp</dt><dd><p>numeric. Unemployment rate.</p>
+</dd>
+<dt>income</dt><dd><p>numeric. Per capita personal income in 1987 dollars.</p>
+</dd>  
+<dt>emppop</dt><dd><p>numeric. Employment/population ratio.</p>
+</dd>
+<dt>beertax</dt><dd><p>numeric. Tax on case of beer.</p>
+</dd>
+<dt>baptist</dt><dd><p>numeric. Percent of southern baptist.</p>
+</dd>
+<dt>mormon</dt><dd><p>numeric. Percent of mormon.</p>
+</dd>
+<dt>drinkage</dt><dd><p>numeric. Minimum legal drinking age.</p>
+</dd>   
+<dt>dry</dt><dd><p>numeric. Percent residing in &ldquo;dry&rdquo; countries.</p>
+</dd>
+<dt>youngdrivers</dt><dd><p>numeric. Percent of drivers aged 15&ndash;24.</p>
+</dd>
+<dt>miles</dt><dd><p>numeric. Average miles per driver.</p>
+</dd>
+<dt>breath</dt><dd><p>factor. Preliminary breath test law?</p>
+</dd>
+<dt>jail</dt><dd><p>factor. Mandatory jail sentence?</p>
+</dd>
+<dt>service</dt><dd><p>factor. Mandatory community service?</p>
+</dd>
+<dt>fatal</dt><dd><p>numeric. Number of vehicle fatalities.</p>
+</dd>
+<dt>nfatal</dt><dd><p>numeric. Number of night-time vehicle fatalities.</p>
+</dd>  
+<dt>sfatal</dt><dd><p>numeric. Number of single vehicle fatalities.</p>
+</dd>    
+<dt>fatal1517</dt><dd><p>numeric. Number of vehicle fatalities, 15&ndash;17 year olds.</p>
+</dd>    
+<dt>nfatal1517</dt><dd><p>numeric. Number of night-time vehicle fatalities, 15&ndash;17 year olds.</p>
+</dd>  
+<dt>fatal1820</dt><dd><p>numeric. Number of vehicle fatalities, 18&ndash;20 year olds.</p>
+</dd>    
+<dt>nfatal1820</dt><dd><p>numeric. Number of night-time vehicle fatalities, 18&ndash;20 year olds.</p>
+</dd>  
+<dt>fatal2124</dt><dd><p>numeric. Number of vehicle fatalities, 21&ndash;24 year olds.</p>
+</dd>    
+<dt>nfatal2124</dt><dd><p>numeric. Number of night-time vehicle fatalities, 21&ndash;24 year olds.</p>
+</dd>  
+<dt>afatal</dt><dd><p>numeric. Number of alcohol-involved vehicle fatalities.</p>
+</dd>    
+<dt>pop</dt><dd><p>numeric. Population.</p>
+</dd>  
+<dt>pop1517</dt><dd><p>numeric. Population, 15&ndash;17 year olds.</p>
+</dd>  
+<dt>pop1820</dt><dd><p>numeric. Population, 18&ndash;20 year olds.</p>
+</dd>    
+<dt>pop2124</dt><dd><p>numeric. Population, 21&ndash;24 year olds.</p>
+</dd>      
+<dt>milestot</dt><dd><p>numeric. Total vehicle miles (millions).</p>
+</dd>      
+<dt>unempus</dt><dd><p>numeric. US unemployment rate.</p>
+</dd>        
+<dt>emppopus</dt><dd><p>numeric. US employment/population ratio.</p>
+</dd>          
+<dt>gsp</dt><dd><p>numeric. GSP rate of change.</p>
+</dd>          
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Traffic fatalities are from the US Department of 
+Transportation Fatal Accident Reporting System.  The beer tax is the 
+tax on a case of beer, which is an available measure of state 
+alcohol taxes more generally. The drinking age variable is a factor 
+indicating whether the legal drinking age is 18, 19, or 20.  
+The two binary punishment variables  describe the state's minimum 
+sentencing requirements for an initial drunk driving conviction. 
+</p>
+<p>Total vehicle miles traveled annually by state was obtained from 
+the Department of Transportation. Personal income was obtained 
+from the US Bureau of Economic Analysis, and the unemployment 
+rate was obtained from the US Bureau of Labor Statistics.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Stock and Watson (2007). 
+</p>
+
+
+<h3>References</h3>
+
+<p>Ruhm, C. J. (1996). Alcohol Policies and Highway Vehicle Fatalities. 
+<em>Journal of Health Economics</em>, <b>15</b>, 435&ndash;454.
+</p>
+<p>Stock, J. H. and Watson, M. W. (2007). <em>Introduction to Econometrics</em>, 2nd ed. Boston: Addison Wesley.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>StockWatson2007</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+## data from Stock and Watson (2007)
+data("Fatalities", package = "AER")
+## add fatality rate (number of traffic deaths
+## per 10,000 people living in that state in that year)
+Fatalities$frate &lt;- with(Fatalities, fatal/pop * 10000)
+## add discretized version of minimum legal drinking age
+Fatalities$drinkagec &lt;- cut(Fatalities$drinkage,
+  breaks = 18:22, include.lowest = TRUE, right = FALSE)
+Fatalities$drinkagec &lt;- relevel(Fatalities$drinkagec, ref = 4)
+## any punishment?
+Fatalities$punish &lt;- with(Fatalities,
+  factor(jail == "yes" | service == "yes", labels = c("no", "yes")))
+## plm package
+library("plm")
+
+## for comparability with Stata we use HC1 below
+## p. 351, Eq. (10.2)
+f1982 &lt;- subset(Fatalities, year == "1982")
+fm_1982 &lt;- lm(frate ~ beertax, data = f1982)
+coeftest(fm_1982, vcov = vcovHC(fm_1982, type = "HC1"))
+
+## p. 353, Eq. (10.3)
+f1988 &lt;- subset(Fatalities, year == "1988")
+fm_1988 &lt;- lm(frate ~ beertax, data = f1988)
+coeftest(fm_1988, vcov = vcovHC(fm_1988, type = "HC1"))
+
+## pp. 355, Eq. (10.8)
+fm_diff &lt;- lm(I(f1988$frate - f1982$frate) ~ I(f1988$beertax - f1982$beertax))
+coeftest(fm_diff, vcov = vcovHC(fm_diff, type = "HC1"))
+
+## pp. 360, Eq. (10.15)
+##   (1) via formula
+fm_sfe &lt;- lm(frate ~ beertax + state - 1, data = Fatalities)
+##   (2) by hand
+fat &lt;- with(Fatalities,
+  data.frame(frates = frate - ave(frate, state),
+  beertaxs = beertax - ave(beertax, state)))
+fm_sfe2 &lt;- lm(frates ~ beertaxs - 1, data = fat)
+##   (3) via plm()
+fm_sfe3 &lt;- plm(frate ~ beertax, data = Fatalities,
+  index = c("state", "year"), model = "within")
+
+coeftest(fm_sfe, vcov = vcovHC(fm_sfe, type = "HC1"))[1,]
+## uses different df in sd and p-value
+coeftest(fm_sfe2, vcov = vcovHC(fm_sfe2, type = "HC1"))[1,]
+## uses different df in p-value
+coeftest(fm_sfe3, vcov = vcovHC(fm_sfe3, type = "HC1", method = "white1"))[1,]
+
+
+## pp. 363, Eq. (10.21)
+## via lm()
+fm_stfe &lt;- lm(frate ~ beertax + state + year - 1, data = Fatalities)
+coeftest(fm_stfe, vcov = vcovHC(fm_stfe, type = "HC1"))[1,]
+## via plm()
+fm_stfe2 &lt;- plm(frate ~ beertax, data = Fatalities,
+  index = c("state", "year"), model = "within", effect = "twoways")
+coeftest(fm_stfe2, vcov = vcovHC) ## different
+
+
+## p. 368, Table 10.1, numbers refer to cols.
+fm1 &lt;- plm(frate ~ beertax, data = Fatalities, index = c("state", "year"), model = "pooling")
+fm2 &lt;- plm(frate ~ beertax, data = Fatalities, index = c("state", "year"), model = "within")
+fm3 &lt;- plm(frate ~ beertax, data = Fatalities, index = c("state", "year"), model = "within",
+  effect = "twoways")
+fm4 &lt;- plm(frate ~ beertax + drinkagec + jail + service + miles + unemp + log(income),
+  data = Fatalities, index = c("state", "year"), model = "within", effect = "twoways")
+fm5 &lt;- plm(frate ~ beertax + drinkagec + jail + service + miles,
+  data = Fatalities, index = c("state", "year"), model = "within", effect = "twoways")
+fm6 &lt;- plm(frate ~ beertax + drinkage + punish + miles + unemp + log(income),
+  data = Fatalities, index = c("state", "year"), model = "within", effect = "twoways")
+fm7 &lt;- plm(frate ~ beertax + drinkagec + jail + service + miles + unemp + log(income),
+  data = Fatalities, index = c("state", "year"), model = "within", effect = "twoways")
+## summaries not too close, s.e.s generally too small
+coeftest(fm1, vcov = vcovHC)
+coeftest(fm2, vcov = vcovHC)
+coeftest(fm3, vcov = vcovHC)
+coeftest(fm4, vcov = vcovHC)
+coeftest(fm5, vcov = vcovHC)
+coeftest(fm6, vcov = vcovHC)
+coeftest(fm7, vcov = vcovHC)
+
+## TODO: Testing exclusion restrictions
+
+</code></pre>
+
+
+</div>
+</body></html>

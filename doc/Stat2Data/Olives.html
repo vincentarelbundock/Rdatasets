@@ -1,0 +1,90 @@
+<!DOCTYPE html><html><head><title>R: Fenthion in Olive Oil</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Olives</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Fenthion in Olive Oil</h2>
+
+<h3>Description</h3>
+
+<p>Measurements of the pesticide fenthion in olive oil over time
+</p>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 18 observations on the following 7 variables.
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    <code>SampleNumber</code> </td><td style="text-align: left;"> Code (1-6) for sample of olive oil</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Group</code> </td><td style="text-align: left;"> Code for group: <code>1</code> or <code>2</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Day</code> </td><td style="text-align: left;"> Time (in days) when sample was measured: <code>0</code>, <code>281</code>, or <code>365</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Fenthion</code> </td><td style="text-align: left;"> Amount of fenthion (pesticide)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>FenthionSulphoxide</code> </td><td style="text-align: left;"> Amount of fenthion sulfide</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>FenthionSulphone</code> </td><td style="text-align: left;"> Amount of fenthion sulphone</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    <code>Time</code> </td><td style="text-align: left;"> Code (0, 3, or 4) for the number of days</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>Fenthion is a pesticide used against the olive fruit fly in olive groves. It is toxic
+to humans so it is important that there be no residue left on the fruit or in olive oil that will be
+consumed. One theory was that if there is residue of the pesticide left in the olive oil, it would
+dissipate over time. Chemists set out to test that theory by taking a random sample of small
+amounts of olive oil with fenthion residue and measuring the amount of fenthion in the oil at three
+different times over the year - day 0, day 281 and day 365.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data provided by Rosemary Roberts and discussed in &quot;Persistence of fenthion residues in olive oil&quot; by Chaido
+Lentza-Rizos, Elizabeth J. Avramides, and Rosemary A. Roberts in Pest Management Science, Vol. 40, Issue 1, Jan.
+1994, pp. 63-69.
+</p>
+
+
+</div>
+</body></html>

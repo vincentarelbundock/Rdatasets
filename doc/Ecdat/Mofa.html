@@ -1,0 +1,90 @@
+<!DOCTYPE html><html><head><title>R: International Expansion of U.S. MOFAs (majority-owned Foreign...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Mofa</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+International Expansion of U.S. MOFAs 
+(majority&ndash;owned Foreign Affiliates in Fire 
+(finance, Insurance and Real Estate) </h2>
+
+<h3>Description</h3>
+
+<p>a cross-section from 1982
+</p>
+<p><em>number of observations</em> :  50
+</p>
+<p><em>observation</em> :  country
+</p>
+<p><em>country</em> :  United States
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Mofa)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataframe containing :
+</p>
+
+<dl>
+<dt>capexp</dt><dd>
+<p>capital expenditures made by the MOFAs of 
+nonbank U.S. corporations in finance, 
+insurance and real estate. Source: 
+&quot;U.S. Direct Investment Abroad: 1982 
+Benchmark Survey data.&quot; Table III.C 6.
+</p>
+</dd>
+<dt>gdp</dt><dd>
+<p>gross domestic product. Source: &quot;World 
+Bank, World Development Report 1984.&quot; Table 
+3. (This variable is  scaled by a factor of 
+1/100,000)
+</p>
+</dd>
+<dt>sales</dt><dd><p>sales made by the majority owned foreign affiliates of nonbank U.S. parents in finance, insurance and real estate. Source: &quot;U.S. Direct Investment Abroad: 1982 Benchmark Survey Data.&quot; Table III.D 3. (This variable is scaled by a factor of 1/100)</p>
+</dd>
+<dt>nbaf</dt><dd><p>the number of U.S. affiliates in the host country. Source: &quot;U.S. Direct Investment Abroad: 1982 Benchmark Survey Data.&quot; Table 5. (This variable is scaled by a factor of 1/100)</p>
+</dd>
+<dt>netinc</dt><dd><p>net income earned by MOFAs of nonbank U.S. corporations operating in the nonbanking financial sector of the host country. Source: &quot;U.S. Direct Investment Abroad: 1982 Benchmark Survey Data.&quot; Table III.D 6.(This variable is scaled by a factor of 1/10)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Ioannatos, Petros E. (1995) &ldquo;Censored regression estimation under unobserved heterogeneity : a stochastic parameter approach&rdquo;, <em>Journal of Business and Economics Statistics</em>, <b>13(3)</b>, July, 327&ndash;335.
+</p>
+
+
+<h3>References</h3>
+
+<p>Journal of Business Economics and Statistics web site : <a href="https://amstat.tandfonline.com/loi/ubes20">https://amstat.tandfonline.com/loi/ubes20</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Index.Source</code>, <code>Index.Economics</code>, <code>Index.Econometrics</code>, <code>Index.Observations</code></p>
+
+
+</div>
+</body></html>

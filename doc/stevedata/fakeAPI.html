@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: Hypothetical (Fake) Data on Academic Performance</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>fakeAPI</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Hypothetical (Fake) Data on Academic Performance</h2>
+
+<h3>Description</h3>
+
+<p>This is a hypothetical universe of schools in a given territorial unit,
+patterned off the <code>apipop</code> data available in the <code>survey</code> package.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>fakeAPI
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 10000 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>uid</code></dt><dd><p>a numeric vector as a unique identifier for schools</p>
+</dd>
+<dt><code>schooltype</code></dt><dd><p>a character vector for school type. E = elementary school. M = middle school. H = high school</p>
+</dd>
+<dt><code>county</code></dt><dd><p>a character vector for the county, named after an Ohio State All-American. &ldquo;County&rdquo; incidence is weighted by how many All-American honors the Ohio State player had. It's my fake data. You make your own if you have a problem with it.</p>
+</dd>
+<dt><code>community</code></dt><dd><p>a character vector for the school's community, either rural, suburban, or urban.</p>
+</dd>
+<dt><code>api</code></dt><dd><p>a numeric vector vector an academic performance index for the school</p>
+</dd>
+<dt><code>meals</code></dt><dd><p>a numeric vector for the percentage of school students eligible for subsidized meals</p>
+</dd>
+<dt><code>colgrad</code></dt><dd><p>a numeric vector for the percentage of school parents with college degrees</p>
+</dd>
+<dt><code>fullqual</code></dt><dd><p>a numeric vector for the percentage of the school with teachers that are fully qualified</p>
+</dd>
+<dt><code>sbase</code></dt><dd><p>a numeric vector for some base differences between schools, patterned off the school type means for <code>api00</code> in the <code>apipop</code> data.</p>
+</dd>
+<dt><code>cbase</code></dt><dd><p>a numeric vector for some base differences between counties, randomly drawn from a uniform distribution</p>
+</dd>
+<dt><code>e</code></dt><dd><p>a numeric vector for random errors</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>These data were generated for a blog post on my website.
+</p>
+
+
+<h3>References</h3>
+
+<p>Miller, Steven V. 2020. &quot;Some Parlor Tricks with Survey-Type Analyses in R.&quot; URL: <a href="http://svmiller.com/blog/2020/08/some-parlor-tricks-with-survey-type-analyses-in-r/">http://svmiller.com/blog/2020/08/some-parlor-tricks-with-survey-type-analyses-in-r/</a>
+</p>
+
+
+</div>
+</body></html>

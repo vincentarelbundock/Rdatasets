@@ -1,0 +1,107 @@
+<!DOCTYPE html><html><head><title>R: Benderly and Zwick Data: Inflation, Growth and Stock Returns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>BenderlyZwick</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Benderly and Zwick Data: Inflation, Growth and Stock Returns</h2>
+
+<h3>Description</h3>
+
+<p>Time series data, 1952&ndash;1982.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("BenderlyZwick")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An annual multiple time series from 1952 to 1982 with 5 variables.
+</p>
+
+<dl>
+<dt>returns</dt><dd><p>real annual returns on stocks, measured using
+the Ibbotson-Sinquefeld data base.</p>
+</dd>
+<dt>growth</dt><dd><p>annual growth rate of output, measured by real GNP
+(from the given year to the next year).</p>
+</dd>
+<dt>inflation</dt><dd><p>inflation rate, measured as growth of price
+rate (from December of the previous year to December of the present year).</p>
+</dd>
+<dt>growth2</dt><dd><p>annual growth rate of real GNP as given by Baltagi.</p>
+</dd>
+<dt>inflation2</dt><dd><p>inflation rate as given by Baltagi</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>The first three columns of the data are from Table 1 in Benderly and Zwick (1985).
+The remaining columns are taken from the online complements of Baltagi (2002).
+The first column is identical in both sources, the other two variables differ
+in their numeric values and additionally the growth series seems to be lagged
+differently. Baltagi (2002) states Lott and Ray (1992) as the source for his
+version of the data set.
+</p>
+
+
+<h3>References</h3>
+
+<p>Baltagi, B.H. (2002). <em>Econometrics</em>, 3rd ed. Berlin, Springer. 
+</p>
+<p>Benderly, J., and Zwick, B. (1985). Inflation, Real Balances, Output and Real Stock
+Returns. <em>American Economic Review</em>, <b>75</b>, 1115&ndash;1123.
+</p>
+<p>Lott, W.F., and Ray, S.C. (1992). <em>Applied Econometrics: Problems with Data Sets</em>.
+New York: The Dryden Press.
+</p>
+<p>Zaman, A., Rousseeuw, P.J., and  Orhan, M. (2001). Econometric Applications of
+High-Breakdown Robust Regression Techniques. <em>Economics Letters</em>, <b>71</b>, 1&ndash;8.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Baltagi2002</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+data("BenderlyZwick")
+plot(BenderlyZwick)
+
+## Benderly and Zwick (1985), p. 1116
+library("dynlm")
+bz_ols &lt;- dynlm(returns ~ growth + inflation,
+  data = BenderlyZwick/100, start = 1956, end = 1981)
+summary(bz_ols)
+
+## Zaman, Rousseeuw and Orhan (2001)
+## use larger period, without scaling
+bz_ols2 &lt;- dynlm(returns ~ growth + inflation,
+  data = BenderlyZwick, start = 1954, end = 1981)
+summary(bz_ols2)
+</code></pre>
+
+
+</div>
+</body></html>

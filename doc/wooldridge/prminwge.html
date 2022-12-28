@@ -1,0 +1,138 @@
+<!DOCTYPE html><html><head><title>R: prminwge</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>prminwge</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>prminwge</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: A.J. Castillo-Freeman and R.B. Freeman (1992), “When the Minimum Wage Really Bites: The Effect of the U.S.-Level Minimum Wage on Puerto Rico,” in Immigration and the Work Force, edited by G.J. Borjas and R.B. Freeman, 177-211. Chicago: University of Chicago Press. The data are reported in the article. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('prminwge')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 38 observations on 25 variables:
+</p>
+
+<ul>
+<li> <p><strong>year:</strong> 1950-1987
+</p>
+</li>
+<li> <p><strong>avgmin:</strong> weighted avg min wge, 44 indust
+</p>
+</li>
+<li> <p><strong>avgwage:</strong> wghted avg hrly wge, 44 indust
+</p>
+</li>
+<li> <p><strong>kaitz:</strong> Kaitz min wage index
+</p>
+</li>
+<li> <p><strong>avgcov:</strong> wghted avg coverage, 8 indust
+</p>
+</li>
+<li> <p><strong>covt:</strong> economy-wide coverage of min wg
+</p>
+</li>
+<li> <p><strong>mfgwage:</strong> avg manuf. wage
+</p>
+</li>
+<li> <p><strong>prdef:</strong> Puerto Rican price deflator
+</p>
+</li>
+<li> <p><strong>prepop:</strong> PR employ/popul ratio
+</p>
+</li>
+<li> <p><strong>prepopf:</strong> PR employ/popul ratio, alter.
+</p>
+</li>
+<li> <p><strong>prgnp:</strong> PR GNP
+</p>
+</li>
+<li> <p><strong>prunemp:</strong> PR unemployment rate
+</p>
+</li>
+<li> <p><strong>usgnp:</strong> US GNP
+</p>
+</li>
+<li> <p><strong>t:</strong> time trend:  1 to 38
+</p>
+</li>
+<li> <p><strong>post74:</strong> time trend:  starts in 1974
+</p>
+</li>
+<li> <p><strong>lprunemp:</strong> log(prunemp)
+</p>
+</li>
+<li> <p><strong>lprgnp:</strong> log(prgnp)
+</p>
+</li>
+<li> <p><strong>lusgnp:</strong> log(usgnp)
+</p>
+</li>
+<li> <p><strong>lkaitz:</strong> log(kaitz)
+</p>
+</li>
+<li> <p><strong>lprun_1:</strong> lprunemp[_n-1]
+</p>
+</li>
+<li> <p><strong>lprepop:</strong> log(prepop)
+</p>
+</li>
+<li> <p><strong>lprep_1:</strong> lprepop[_n-1]
+</p>
+</li>
+<li> <p><strong>mincov:</strong> (avgmin/avgwage)*avgcov
+</p>
+</li>
+<li> <p><strong>lmincov:</strong> log(mincov)
+</p>
+</li>
+<li> <p><strong>lavgmin:</strong> log(avgmin)
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>Given the ongoing debate on the employment effects of the minimum wage, this would be a great data set to try to update. The coverage rates are the most difficult variables to construct.
+</p>
+<p>Used in Text: pages 356-357, 369-370, 420-421, 434
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(prminwge)
+</code></pre>
+
+
+</div>
+</body></html>

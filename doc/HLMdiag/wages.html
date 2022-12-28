@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Wages for male high school dropouts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>wages</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Wages for male high school dropouts</h2>
+
+<h3>Description</h3>
+
+<p>Data on the labor-market experience of male high school
+dropouts.
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 6402 observations on the following 15 variables.
+</p>
+ <dl>
+<dt>id</dt><dd><p>respondent id - a factor with 888 levels.</p>
+</dd>
+<dt>lnw</dt><dd><p>natural log of wages expressed in 1990 dollars.</p>
+</dd>
+<dt>exper</dt><dd><p>years of experience in the work force</p>
+</dd> <dt>ged</dt><dd><p>equals 1 if
+respondent has obtained a GED as of the time of survey, 0 otherwise</p>
+</dd>
+<dt>postexp</dt><dd><p>labor force participation since obtaining a GED (in years) -
+before a GED is earned postexp = 0, and on the day a GED is earned postexp =
+0</p>
+</dd> <dt>black</dt><dd><p>factor - equals 1 if subject is black, 0 otherwise</p>
+</dd>
+<dt>hispanic</dt><dd><p>factor - equals 1 if subject is hispanic, 0 otherwise</p>
+</dd>
+<dt>hgc</dt><dd><p>highest grade completed - takes integers 6 through 12</p>
+</dd>
+<dt>hgc.9</dt><dd><p>hgc - 9, a centered version of hgc</p>
+</dd> <dt>uerate</dt><dd><p>local area
+unemployment rate for that year</p>
+</dd> <dt>ue.7</dt><dd></dd> <dt>ue.centert1</dt><dd></dd>
+<dt>ue.mean</dt><dd></dd> <dt>ue.person.cen</dt><dd></dd> <dt>ue1</dt><dd></dd> </dl>
+
+
+<h3>Source</h3>
+
+<p>These data are originally from the 1979 National
+Longitudinal Survey on Youth (NLSY79).
+</p>
+<p>Singer and Willett (2003) used these data for examples in
+chapter (insert info. here) and the data sets used can be
+found on the UCLA Statistical Computing website:
+<a href="https://stats.idre.ucla.edu/other/examples/alda/">https://stats.idre.ucla.edu/other/examples/alda/</a>
+</p>
+<p>Additionally the data were discussed by Cook and Swayne
+(2003) and the data can be found on the GGobi website:
+<a href="http://ggobi.org/book.html">http://ggobi.org/book.html</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Singer, J. D. and Willett, J. B. (2003), <em>Applied
+Longitudinal Data Analysis: Modeling Change and Event
+Occurrence</em>, New York: Oxford University Press.
+</p>
+<p>Cook, D. and Swayne, D. F. (2007), <em>Interactive and
+Dynamic Graphics for Data Analysis with R and GGobi</em>,
+Springer.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>str(wages)
+summary(wages)
+
+## Not run: 
+library(lme4)
+lmer(lnw ~ exper + (exper | id), data = wages)
+
+## End(Not run)
+</code></pre>
+
+
+</div>
+</body></html>

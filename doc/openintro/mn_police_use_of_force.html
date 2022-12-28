@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Minneapolis police use of force data.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>mn_police_use_of_force</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Minneapolis police use of force data.</h2>
+
+<h3>Description</h3>
+
+<p>From Minneapolis, data from 2016 through August 2021
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>mn_police_use_of_force
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 12925 rows and 13 variables.
+</p>
+
+<dl>
+<dt>response_datetime</dt><dd><p>DateTime of police response.</p>
+</dd>
+<dt>problem</dt><dd><p>Problem that required police response.</p>
+</dd>
+<dt>is_911_call</dt><dd><p>Whether response was iniated by call to 911.</p>
+</dd>
+<dt>primary_offense</dt><dd><p>Offense of subject.</p>
+</dd>
+<dt>subject_injury</dt><dd><p>Whether subject was injured Yes/No/null.</p>
+</dd>
+<dt>force_type</dt><dd><p>Type of police force used.</p>
+</dd>
+<dt>force_type_action</dt><dd><p>Detail of police force used.</p>
+</dd>
+<dt>race</dt><dd><p>Race of subject.</p>
+</dd>
+<dt>sex</dt><dd><p>Gender of subject.</p>
+</dd>
+<dt>age</dt><dd><p>Age of subject.</p>
+</dd>
+<dt>type_resistance</dt><dd><p>Resistance to police by subject.</p>
+</dd>
+<dt>precinct</dt><dd><p>Precinct where response occurred.</p>
+</dd>
+<dt>neighborhood</dt><dd><p>Neighborhood where response occurred.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://opendata.minneapolismn.gov/search?groupIds=79606f50581f4a33b14a19e61c4891f7">Minneapolis</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+library(ggplot2)
+
+# List percent of total for each race
+mn_police_use_of_force %&gt;%
+  count (race) %&gt;% 
+  mutate (percent= round(n/sum(n)*100,2)) %&gt;%
+  arrange(desc(percent)) 
+
+# Display use of force count by three races
+race_sub = c("Asian","White","Black")
+ggplot(mn_police_use_of_force %&gt;% filter(race %in% race_sub),
+  aes(force_type, ..count.. ) ) +
+  geom_point(stat = "count", size = 4) + 
+  coord_flip()+
+  facet_grid( race ~ . )+
+  labs(x = "Force Type",
+  y = "Number of Incidents")
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html><html><head><title>R: recid</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>recid</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>recid</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: C.-F. Chung, P. Schmidt, and A.D. Witte (1991), “Survival Analysis: A Survey,” Journal of Quantitative Criminology 7, 59-98. Professor Chung kindly provided the data. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('recid')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 1445 observations on 18 variables:
+</p>
+
+<ul>
+<li> <p><strong>black:</strong> =1 if black
+</p>
+</li>
+<li> <p><strong>alcohol:</strong> =1 if alcohol problems
+</p>
+</li>
+<li> <p><strong>drugs:</strong> =1 if drug history
+</p>
+</li>
+<li> <p><strong>super:</strong> =1 if release supervised
+</p>
+</li>
+<li> <p><strong>married:</strong> =1 if married when incarc.
+</p>
+</li>
+<li> <p><strong>felon:</strong> =1 if felony sentence
+</p>
+</li>
+<li> <p><strong>workprg:</strong> =1 if in N.C. pris. work prg.
+</p>
+</li>
+<li> <p><strong>property:</strong> =1 if property crime
+</p>
+</li>
+<li> <p><strong>person:</strong> =1 if crime against person
+</p>
+</li>
+<li> <p><strong>priors:</strong> # prior convictions
+</p>
+</li>
+<li> <p><strong>educ:</strong> years of schooling
+</p>
+</li>
+<li> <p><strong>rules:</strong> # rules violations in prison
+</p>
+</li>
+<li> <p><strong>age:</strong> in months
+</p>
+</li>
+<li> <p><strong>tserved:</strong> time served, rounded to months
+</p>
+</li>
+<li> <p><strong>follow:</strong> length follow period, months
+</p>
+</li>
+<li> <p><strong>durat:</strong> min(time until return, follow)
+</p>
+</li>
+<li> <p><strong>cens:</strong> =1 if duration right censored
+</p>
+</li>
+<li> <p><strong>ldurat:</strong> log(durat)
+</p>
+</li></ul>
+
+
+
+<h3>Used in Text</h3>
+
+<p>pages 611-612, 625
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(recid)
+</code></pre>
+
+
+</div>
+</body></html>

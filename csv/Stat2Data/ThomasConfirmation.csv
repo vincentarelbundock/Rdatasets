@@ -1,0 +1,101 @@
+"","State","Senator","Party","ConfVote","StateOpinion","Vote"
+"1","Alabama","Howell Heflin","D","Nay",70,0
+"2","Alabama","Richard Shelby","D","Yea",70,1
+"3","Alaska","Ted Stevens","R","Yea",68,1
+"4","Alaska","Frank Murkowski","R","Yea",68,1
+"5","Arizona","Dennis DeConcini","D","Yea",67,1
+"6","Arizona","John McCain","R","Yea",67,1
+"7","Arkansas","Dale Bumpers","D","Nay",69,0
+"8","Arkansas","David Pryor","D","Nay",69,0
+"9","California","Alan Cranston","D","Nay",60,0
+"10","California","John F. Seymour","R","Yea",60,1
+"11","Colorado","Hank Brown","R","Yea",62,1
+"12","Colorado","Tim Wirth","D","Nay",62,0
+"13","Connecticut","Chris Dodd","D","Nay",69,0
+"14","Connecticut","Joe Lieberman","D","Nay",69,0
+"15","Delaware","Joe Biden","D","Nay",69,0
+"16","Delaware","William V. Roth Jr.","R","Yea",69,1
+"17","Florida","Bob Graham","D","Nay",71,0
+"18","Florida","Connie Mack III","R","Yea",71,1
+"19","Georgia","Sam Nunn","D","Yea",72,1
+"20","Georgia","Wyche Fowler","D","Yea",72,1
+"21","Hawaii","Daniel Inouye","D","Nay",59,0
+"22","Hawaii","Daniel Akaka","D","Nay",59,0
+"23","Idaho","Steve Symms","R","Yea",68,1
+"24","Idaho","Larry Craig","R","Yea",68,1
+"25","Illinois","Paul Simon","D","Nay",69,0
+"26","Illinois","Alan J. Dixon","D","Yea",69,1
+"27","Indiana","Richard Lugar","R","Yea",74,1
+"28","Indiana","Dan Coats","R","Yea",74,1
+"29","Iowa","Chuck Grassley","R","Yea",65,1
+"30","Iowa","Tom Harkin","D","Nay",65,0
+"31","Kansas","Bob Dole","R","Yea",72,1
+"32","Kansas","Nancy Landon Kassebaum","R","Yea",72,1
+"33","Kentucky","Wendell H. Ford","D","Nay",69,0
+"34","Kentucky","Mitch McConnell","R","Yea",69,1
+"35","Louisiana","J. Bennett Johnston","D","Yea",71,1
+"36","Louisiana","John Breaux","D","Yea",71,1
+"37","Maine","William Cohen","R","Yea",71,1
+"38","Maine","George J. Mitchell","D","Nay",71,0
+"39","Maryland","Paul Sarbanes","D","Nay",67,0
+"40","Maryland","Barbara Mikulski","D","Nay",67,0
+"41","Massachusetts","Ted Kennedy","D","Nay",65,0
+"42","Massachusetts","John Kerry","D","Nay",65,0
+"43","Michigan","Carl Levin","D","Nay",71,0
+"44","Michigan","Donald W. Riegle Jr.","D","Nay",71,0
+"45","Minnesota","David Durenberger","R","Yea",71,1
+"46","Minnesota","Paul Wellstone","D","Nay",71,0
+"47","Mississippi","Thad Cochran","R","Yea",73,1
+"48","Mississippi","Trent Lott","R","Yea",73,1
+"49","Missouri","John Danforth","R","Yea",67,1
+"50","Missouri","Kit Bond","R","Yea",67,1
+"51","Montana","Max Baucus","D","Nay",63,0
+"52","Montana","Conrad Burns","R","Yea",63,1
+"53","Nebraska","J. James Exon","D","Yea",73,1
+"54","Nebraska","Bob Kerrey","D","Nay",73,0
+"55","Nevada","Harry Reid","D","Nay",66,0
+"56","Nevada","Richard Bryan","D","Nay",66,0
+"57","New Hampshire","Warren Rudman","R","Yea",73,1
+"58","New Hampshire","Bob Smith","R","Yea",73,1
+"59","New Jersey","Frank Lautenberg","D","Nay",70,0
+"60","New Jersey","Bill Bradley","D","Nay",70,0
+"61","New Mexico","Peter Domenici","R","Yea",62,1
+"62","New Mexico","Jeff Bingaman","D","Nay",62,0
+"63","New York","Daniel Patrick Moynihan","D","Nay",68,0
+"64","New York","Al D'Amato","R","Yea",68,1
+"65","North Carolina","Jesse Helms","R","Yea",70,1
+"66","North Carolina","Terry Sanford","D","Nay",70,0
+"67","North Dakota","Kent Conrad","D","Nay",71,0
+"68","North Dakota","Quentin N. Burdick","D","Nay",71,0
+"69","Ohio","John Glenn","D","Nay",72,0
+"70","Ohio","Howard Metzenbaum","D","Nay",72,0
+"71","Oklahoma","Don Nickles","R","Yea",69,1
+"72","Oklahoma","David L. Boren","D","Yea",69,1
+"73","Oregon","Bob Packwood","R","Nay",61,0
+"74","Oregon","Mark Hatfield","R","Yea",61,1
+"75","Pennsylvania","Arlen Specter","R","Yea",70,1
+"76","Pennsylvania","Harris Wofford","D","Nay",70,0
+"77","Rhode Island","John Chafee","R","Yea",65,1
+"78","Rhode Island","Claiborne Pell","D","Nay",65,0
+"79","South Carolina","Strom Thurmond","R","Yea",74,1
+"80","South Carolina","Ernest Hollings","D","Yea",74,1
+"81","South Dakota","Tom Daschle","D","Nay",70,0
+"82","South Dakota","Larry Pressler","R","Yea",70,1
+"83","Tennessee","Al Gore","D","Nay",70,0
+"84","Tennessee","Jim Sasser","D","Nay",70,0
+"85","Texas","Lloyd Bentsen","D","Nay",69,0
+"86","Texas","Phil Gramm","R","Yea",69,1
+"87","Utah","Orrin Hatch","R","Yea",72,1
+"88","Utah","Jake Garn","R","Yea",72,1
+"89","Vermont","Patrick Leahy","D","Nay",68,0
+"90","Vermont","Jim Jeffords","R","Nay",68,0
+"91","Virginia","John Warner","R","Yea",70,1
+"92","Virginia","Chuck Robb","D","Yea",70,1
+"93","Washington","Brock Adams","D","Nay",61,0
+"94","Washington","Slade Gorton","R","Yea",61,1
+"95","West Virginia","Robert Byrd","D","Nay",66,0
+"96","West Virginia","Jay Rockefeller","D","Nay",66,0
+"97","Wisconsin","Herb Kohl","D","Nay",69,0
+"98","Wisconsin","Bob Kasten","R","Yea",69,1
+"99","Wyoming","Malcolm Wallop","R","Yea",67,1
+"100","Wyoming","Alan K. Simpson","R","Yea",67,1

@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: Dollar Sterling Exchange Rate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>LT</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Dollar Sterling Exchange Rate </h2>
+
+<h3>Description</h3>
+
+<p>annual observations from 1791 to 1990
+</p>
+<p><em>number of observations</em> :  200
+</p>
+<p><em>observation</em> :  country
+</p>
+<p><em>country</em> :  United Kingdom
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(LT)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A time series containing :
+</p>
+
+<dl>
+<dt>s</dt><dd><p>US *Dollar / *Pound exchange rate</p>
+</dd>
+<dt>uswpi</dt><dd><p>US wholesale price index, normalized to 100 for 1914</p>
+</dd>
+<dt>ukwpi</dt><dd><p>US wholesale price index, normalized to 100 for 1914</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Lothian, J.  and  M.  Taylor (1996) &ldquo;Real exchange rate behavior: the recent float from the perspective of the past two centuries&rdquo;, <em>Journal of Political Economy</em>, <b>104</b>, 488-509.
+</p>
+
+
+<h3>References</h3>
+
+<p>Hayashi, F. (2000) <em>Econometrics</em>, Princeton University Press, <a href="http://fhayashi.fc2web.com/hayashi_econometrics.htm">http://fhayashi.fc2web.com/hayashi_econometrics.htm</a>, chapter 9, 613-621.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Index.Source</code>, <code>Index.Economics</code>, <code>Index.Econometrics</code>, <code>Index.Observations</code>,
+</p>
+<p><code>Index.Time.Series</code></p>
+
+
+</div>
+</body></html>

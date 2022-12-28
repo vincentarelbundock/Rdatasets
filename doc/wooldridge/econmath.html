@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: econmath</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>econmath</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>econmath</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Compiled by Professor Charles Ballard, Michigan State University Department of Economics. Professor Ballard kindly provided the data. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('econmath')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 856 observations on 17 variables:
+</p>
+
+<ul>
+<li> <p><strong>age: </strong>age in years
+</p>
+</li>
+<li> <p><strong>work: </strong>hours worked per week
+</p>
+</li>
+<li> <p><strong>study: </strong>hours studying per week
+</p>
+</li>
+<li> <p><strong>econhs: </strong>=1 if economics in high school
+</p>
+</li>
+<li> <p><strong>colgpa: </strong>college GPA, beginning semester
+</p>
+</li>
+<li> <p><strong>hsgpa: </strong>high school GPA
+</p>
+</li>
+<li> <p><strong>acteng: </strong>ACT English score
+</p>
+</li>
+<li> <p><strong>actmth: </strong>ACT math score
+</p>
+</li>
+<li> <p><strong>act: </strong>ACT composite
+</p>
+</li>
+<li> <p><strong>mathscr: </strong>math quiz score, 0-10
+</p>
+</li>
+<li> <p><strong>male: </strong>=1 if male
+</p>
+</li>
+<li> <p><strong>calculus: </strong>=1 if taken calculus course
+</p>
+</li>
+<li> <p><strong>attexc: </strong>=1 if past attndce 'excellent'
+</p>
+</li>
+<li> <p><strong>attgood: </strong>=1 if past attndce 'good'
+</p>
+</li>
+<li> <p><strong>fathcoll: </strong>=1 if father has BA
+</p>
+</li>
+<li> <p><strong>mothcoll: </strong>=1 if mother has BA
+</p>
+</li>
+<li> <p><strong>score: </strong>course score, in percent
+</p>
+</li></ul>
+
+
+
+<h3>Used in Text</h3>
+
+<p>167, 185
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge">http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(econmath)
+</code></pre>
+
+
+</div>
+</body></html>

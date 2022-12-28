@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Precipitation Observations and Forecasts for Innsbruck</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>RainIbk</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Precipitation Observations and Forecasts for Innsbruck</h2>
+
+<h3>Description</h3>
+
+<p>Accumulated 5-8 days precipitation amount for Innsbruck. Data includes GEFS
+reforecasts (Hamill et al. 2013) and observations from SYNOP station Innsbruck
+Airport (11120) from 2000-01-01 to 2013-09-17.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("RainIbk")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 4977 rows. The first column (<code>rain</code>) are 3 days
+accumulated precipitation amount observations, Columns 2-12 (<code>rainfc</code>)
+are 5-8 days accumulated precipitation amount forecasts from the individual
+ensemble members.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Observations: http://www.ogimet.com/synops.phtml.en
+</p>
+<p>Reforecasts: http://www.esrl.noaa.gov/psd/forecasts/reforecast2/
+</p>
+
+
+<h3>References</h3>
+
+<p>Hamill TM, Bates GT, Whitaker JS, Murray DR, Fiorino M, Galarneau Jr TJ,
+Zhu Y, Lapenta W (2013). NOAA's Second-Generation Global Medium-Range
+Ensemble Reforecast Data Set. <em>Bulletin of the American Meteorological
+Society</em>, 94(10), 1553-1565.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Spread skill relationship ##
+
+## load and prepare data
+data(RainIbk)
+
+## mean and standard deviation of square root transformed ensemble forecasts
+RainIbk$sqrtensmean &lt;- 
+  apply(sqrt(RainIbk[,grep('^rainfc',names(RainIbk))]), 1, mean)
+RainIbk$sqrtenssd &lt;- 
+  apply(sqrt(RainIbk[,grep('^rainfc',names(RainIbk))]),  1, sd)
+
+## quintiles of sqrtenssd
+sdcat &lt;- cut(RainIbk$sqrtenssd, c(-Inf, quantile(RainIbk$sqrtenssd, 
+  seq(0.2,0.8,0.2)), Inf), labels = c(1:5))
+
+## mean forecast errors for each quintile
+m &lt;- NULL
+for(i in levels(sdcat)) {
+  m &lt;- c(m, mean((sqrt(RainIbk$rain)[sdcat == i] -
+  RainIbk$sqrtensmean[sdcat == i])^2, na.rm = TRUE))
+}
+
+## plot
+boxplot((sqrt(rain) - sqrtensmean)^2~sdcat, RainIbk, 
+  xlab = "Quintile of ensemble standard deviation", 
+  ylab = "mean squared error", main = "Spread skill relationship")
+
+</code></pre>
+
+
+</div>
+</body></html>

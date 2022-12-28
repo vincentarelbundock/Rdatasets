@@ -1,0 +1,129 @@
+<!DOCTYPE html><html><head><title>R: Holizinger and Swineford's Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>HS.data</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Holizinger and Swineford's Data
+</h2>
+
+<h3>Description</h3>
+
+<p>This data set, for scores on a variety of tests, was originally in the MBESS package. A new version of the data set in that package doesn't appear to be identical to this one.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>HS.data</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 301 observations on the following 32 variables.
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>Gender</code></dt><dd><p>a factor with levels <code>Female</code> <code>Male</code></p>
+</dd>
+<dt><code>grade</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>agey</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>agem</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>school</code></dt><dd><p>a factor with levels <code>Grant-White</code> <code>Pasteur</code></p>
+</dd>
+<dt><code>visual</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>cubes</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>paper</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>flags</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>general</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>paragrap</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>sentence</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>wordc</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>wordm</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>addition</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>code</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>counting</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>straight</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>wordr</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>numberr</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>figurer</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>object</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>numberf</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>figurew</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>deduct</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>numeric</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>problemr</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>series</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>arithmet</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>paperrev</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>flagssub</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Originally from Holzinger and Swineford (1939). This copy is originally from version 4.6.0 of the MBESS package.
+</p>
+
+
+<h3>References</h3>
+
+<p>Holzinger, K. J. and Swineford, F. A. (1939). 
+A study in factor analysis: The stability of a bi-factor solution. 
+Supplementary Education Monographs, 48. University of Chicago.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>summary(HS.data)
+</code></pre>
+
+
+</div>
+</body></html>

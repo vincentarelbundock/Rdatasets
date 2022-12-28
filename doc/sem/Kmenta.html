@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><title>R: Partly Artificial Data on the U. S. Economy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Kmenta</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Partly Artificial Data on the U. S. Economy</h2>
+
+<h3>Description</h3>
+
+<p>These are partly contrived data from Kmenta (1986), constructed
+to illustrate estimation of a simultaneous-equation model.
+</p>
+<p>The <code>Kmenta</code> data frame has 20 rows and 5 columns.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Kmenta</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Q</dt><dd>
+<p>food consumption per capita.
+</p>
+</dd>
+<dt>P</dt><dd>
+<p>ratio of food prices to general consumer prices.
+</p>
+</dd>
+<dt>D</dt><dd>
+<p>disposable income in constant dollars.
+</p>
+</dd>
+<dt>F</dt><dd>
+<p>ratio of preceding year's prices received by farmers
+to general consumer prices.
+</p>
+</dd>
+<dt>A</dt><dd>
+<p>time in years.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The exogenous variables <code>D</code>, <code>F</code>, and <code>A</code> are based on
+real data; the endogenous variables <code>P</code> and <code>Q</code> were generated
+by simulation.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Kmenta, J. (1986)
+<em>Elements of Econometrics, Second Edition</em>, Macmillan.
+</p>
+
+
+</div>
+</body></html>

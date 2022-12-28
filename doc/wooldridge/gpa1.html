@@ -1,0 +1,150 @@
+<!DOCTYPE html><html><head><title>R: gpa1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>gpa1</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>gpa1</h2>
+
+<h3>Description</h3>
+
+<p>Wooldridge Source: Christopher Lemmon, a former MSU undergraduate, collected these data from a survey he took of MSU students in Fall 1994. Data loads lazily.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data('gpa1')
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 141 observations on 29 variables:
+</p>
+
+<ul>
+<li> <p><strong>age:</strong> in years
+</p>
+</li>
+<li> <p><strong>soph:</strong> =1 if sophomore
+</p>
+</li>
+<li> <p><strong>junior:</strong> =1 if junior
+</p>
+</li>
+<li> <p><strong>senior:</strong> =1 if senior
+</p>
+</li>
+<li> <p><strong>senior5:</strong> =1 if fifth year senior
+</p>
+</li>
+<li> <p><strong>male:</strong> =1 if male
+</p>
+</li>
+<li> <p><strong>campus:</strong> =1 if live on campus
+</p>
+</li>
+<li> <p><strong>business:</strong> =1 if business major
+</p>
+</li>
+<li> <p><strong>engineer:</strong> =1 if engineering major
+</p>
+</li>
+<li> <p><strong>colGPA:</strong> MSU GPA
+</p>
+</li>
+<li> <p><strong>hsGPA:</strong> high school GPA
+</p>
+</li>
+<li> <p><strong>ACT:</strong> 'achievement' score
+</p>
+</li>
+<li> <p><strong>job19:</strong> =1 if job &lt;= 19 hours
+</p>
+</li>
+<li> <p><strong>job20:</strong> =1 if job &gt;= 20 hours
+</p>
+</li>
+<li> <p><strong>drive:</strong> =1 if drive to campus
+</p>
+</li>
+<li> <p><strong>bike:</strong> =1 if bicycle to campus
+</p>
+</li>
+<li> <p><strong>walk:</strong> =1 if walk to campus
+</p>
+</li>
+<li> <p><strong>voluntr:</strong> =1 if do volunteer work
+</p>
+</li>
+<li> <p><strong>PC:</strong> =1 of pers computer at sch
+</p>
+</li>
+<li> <p><strong>greek:</strong> =1 if fraternity or sorority
+</p>
+</li>
+<li> <p><strong>car:</strong> =1 if own car
+</p>
+</li>
+<li> <p><strong>siblings:</strong> =1 if have siblings
+</p>
+</li>
+<li> <p><strong>bgfriend:</strong> =1 if boy- or girlfriend
+</p>
+</li>
+<li> <p><strong>clubs:</strong> =1 if belong to MSU club
+</p>
+</li>
+<li> <p><strong>skipped:</strong> avg lectures missed per week
+</p>
+</li>
+<li> <p><strong>alcohol:</strong> avg # days per week drink alc.
+</p>
+</li>
+<li> <p><strong>gradMI:</strong> =1 if Michigan high school
+</p>
+</li>
+<li> <p><strong>fathcoll:</strong> =1 if father college grad
+</p>
+</li>
+<li> <p><strong>mothcoll:</strong> =1 if mother college grad
+</p>
+</li></ul>
+
+
+
+<h3>Notes</h3>
+
+<p>This is a nice example of how students can obtain an original data set by focusing locally and carefully composing a survey.
+</p>
+<p>Used in Text: pages 75, 77, 81, 129-130, 160, 232, 262, 295-296, 300-301
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> str(gpa1)
+</code></pre>
+
+
+</div>
+</body></html>

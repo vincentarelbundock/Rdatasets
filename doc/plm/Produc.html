@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>R: US States Production</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Produc</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>US States Production</h2>
+
+<h3>Description</h3>
+
+<p>A panel of 48 observations from 1970 to 1986
+</p>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing :
+</p>
+
+<dl>
+<dt>state</dt><dd><p>the state</p>
+</dd>
+<dt>year</dt><dd><p>the year</p>
+</dd>
+<dt>region</dt><dd><p>the region</p>
+</dd>
+<dt>pcap</dt><dd><p>public capital stock</p>
+</dd>
+<dt>hwy</dt><dd><p>highway and streets</p>
+</dd>
+<dt>water</dt><dd><p>water and sewer facilities</p>
+</dd>
+<dt>util</dt><dd><p>other public buildings and structures</p>
+</dd>
+<dt>pc</dt><dd><p>private capital stock</p>
+</dd>
+<dt>gsp</dt><dd><p>gross state product</p>
+</dd>
+<dt>emp</dt><dd><p>labor input measured by the employment in non&ndash;agricultural payrolls</p>
+</dd>
+<dt>unemp</dt><dd><p>state unemployment rate</p>
+</dd> </dl>
+
+
+
+<h3>Details</h3>
+
+<p><em>total number of observations</em> : 816
+</p>
+<p><em>observation</em> : regional
+</p>
+<p><em>country</em> : United States
+</p>
+
+
+<h3>Source</h3>
+
+<p>Online complements to Baltagi (2001):
+</p>
+<p><a href="https://www.wiley.com/legacy/wileychi/baltagi/">https://www.wiley.com/legacy/wileychi/baltagi/</a>
+</p>
+<p>Online complements to Baltagi (2013):
+</p>
+<p><a href="https://bcs.wiley.com/he-bcs/Books?action=resource&amp;bcsId=4338&amp;itemId=1118672321&amp;resourceId=13452">https://bcs.wiley.com/he-bcs/Books?action=resource&amp;bcsId=4338&amp;itemId=1118672321&amp;resourceId=13452</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Baltagi BH (2001).
+<em>Econometric Analysis of Panel Data</em>, 3rd edition.
+John Wiley and Sons ltd.
+</p>
+<p>Baltagi BH (2013).
+<em>Econometric Analysis of Panel Data</em>, 5th edition.
+John Wiley and Sons ltd.
+</p>
+<p>Baltagi BH, Pinnoi N (1995).
+&ldquo;Public capital stock and state productivity growth: further evidence from an error components model.&rdquo;
+<em>Empirical Economics</em>, <b>20</b>, 351-359.
+</p>
+<p>Munnell A (1990).
+&ldquo;Why Has Productivity Growth Declined? Productivity and Public Investment.&rdquo;
+<em>New England Economic Review</em>, 3&ndash;22.
+</p>
+
+
+</div>
+</body></html>

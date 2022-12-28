@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>R: Visits to Lake Somerville</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Somerville</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Visits to Lake Somerville </h2>
+
+<h3>Description</h3>
+
+<p>a cross-section from 1980
+</p>
+<p><em>number of observations</em> :  659
+</p>
+<p><em>observation</em> :  individuals
+</p>
+<p><em>country</em> :  United States
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Somerville)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataframe containing :
+</p>
+
+<dl>
+<dt>visits</dt><dd>
+<p>annual number of visits to lake Somerville
+</p>
+</dd>
+<dt>quality</dt><dd>
+<p>quality ranking score for lake Somerville
+</p>
+</dd>
+<dt>ski</dt><dd>
+<p>engaged in water&ndash;skiing at the lake ?
+</p>
+</dd>
+<dt>income</dt><dd><p>annual household income</p>
+</dd>
+<dt>feeSom</dt><dd>
+<p>annual user fee paid at lake Somerville ?
+</p>
+</dd>
+<dt>costCon</dt><dd>
+<p>expenditures when visiting lake Conroe
+</p>
+</dd>
+<dt>costSom</dt><dd>
+<p>expenditures when visiting lake Somerville
+</p>
+</dd>
+<dt>costHoust</dt><dd>
+<p>expenditures when visiting lake Houston
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Seller, Christine, John R. Stoll and Jean&ndash;Paul Chavas (1985) &ldquo;Valuation of empirical measures of welfare change : a comparison of nonmarket techniques&rdquo;, <em>Land Economics</em>, <b>61(2)</b>, May, 156&ndash;175.
+</p>
+<p>Gurmu, Shiferaw  and  Pravin K.  Trivedi (1996) &ldquo; Excess zeros in count models for recreational trips&rdquo;, <em>Journal of Business and Economics Statistics</em>, <b>14(4)</b>, October, 469&ndash;477.
+</p>
+<p>Santos Silva, Jao M. C. (2001) &ldquo;A score test for non&ndash;nested hypotheses with applications to discrete data models&rdquo;, <em>Journal of Applied Econometrics</em>, <b>16(5)</b>, 577&ndash;597.
+</p>
+
+
+<h3>References</h3>
+
+<p>Journal of Business Economics and Statistics web site : <a href="https://amstat.tandfonline.com/loi/ubes20">https://amstat.tandfonline.com/loi/ubes20</a>.
+Cameron, A.C.  and   Trivedi P.K. (1998) <em>Regression analysis of count data</em>, Cambridge University Press, <a href="http://cameron.econ.ucdavis.edu/racd/racddata.html">http://cameron.econ.ucdavis.edu/racd/racddata.html</a>, chapter 6.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Index.Source</code>, <code>Index.Economics</code>, <code>Index.Econometrics</code>, <code>Index.Observations</code></p>
+
+
+</div>
+</body></html>

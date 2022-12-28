@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head><title>R: EPICA Dome C Ice Core 800KYr Temperature Estimates</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>edcT</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>EPICA Dome C Ice Core 800KYr Temperature Estimates</h2>
+
+<h3>Description</h3>
+
+<p>Temperature record, using Deuterium as a proxy, from the EPICA
+(European Project for Ice Coring in Antarctica) Dome C ice core
+covering 0 to 800 kyr BP.    
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(edcT)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 5788 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>Bag</code></dt><dd><p>Bag number</p>
+</dd>
+<dt><code>ztop</code></dt><dd><p>Top depth (m)</p>
+</dd>
+<dt><code>Age</code></dt><dd><p>Years before 1950</p>
+</dd>
+<dt><code>Deuterium</code></dt><dd><p>Deuterium dD data</p>
+</dd>
+<dt><code>dT</code></dt><dd><p>Temperature difference from the average of the last
+1000 years ~ -54.5degC</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Temperature was estimated from the deuterium data, after making various
+corrections.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.ncei.noaa.gov/products/paleoclimatology/ice-core">https://www.ncei.noaa.gov/products/paleoclimatology/ice-core</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Jouzel, J., et al.  2007.
+EPICA Dome C Ice Core 800KYr Deuterium Data and Temperature Estimates. 
+IGBP PAGES/World Data Center for Paleoclimatology 
+Data Contribution Series No. 2007-091.
+NOAA/NCDC Paleoclimatology Program, Boulder CO, USA.
+</p>
+<p>Jouzel, J., et al.  2007.  Orbital and Millennial Antarctic Climate
+Variability over the Past 800,000 Years.  Science, Vol. 317, No. 5839,
+pp.793-797, 10 August 2007.  </p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> data(edcT) </code></pre>
+
+
+</div>
+</body></html>

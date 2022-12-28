@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Hypothetical student-level data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>student</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Hypothetical student-level data</h2>
+
+<h3>Description</h3>
+
+<p>The original data source is the Education Longitudinal Study of 2002. To deal
+with the issue on individually identifiable information, we generated 
+hypothetical student-level data using a multiple imputation method. The 
+Education Longitudinal Study of 2002 used a two-stage sample selection 
+process. First, a national sample of schools was selected using stratified 
+probability proportional to size (PPS), and school contacting resulted in 
+1,221 eligible public, Catholic, and other private schools from a population 
+of approximately 27,000 schools containing 10th grade students. Of the 
+eligible schools, 752 participated in the study. In the second stage of 
+sample selection, a sample of approximately 26 sophomores, from within each 
+of the participating public and private schools was selected. Each school was
+asked to provide a list of 10th grade students, and quality assurance (QA) 
+checks were performed on each list that was received.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>student
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data matrix with 9,679 rows and 17 columns, containing no missing 
+values. The data are provided only for illustrative purposes and not for 
+inference about education effectiveness, for which the original data source
+should be consulted. </p>
+ <dl>
+<dt>SCH_ID:</dt><dd><p> School indicator.</p>
+</dd> 
+<dt>fight:</dt><dd><p> Indicator variable for fight at school. 1 = fight.</p>
+</dd> 
+<dt>attachment:</dt><dd><p> Indicator variable for attachment to school. 1 = like.</p>
+</dd>
+<dt>work:</dt><dd><p> Indicator variable for part-time job. 1 = work.</p>
+</dd> 
+<dt>score:</dt><dd><p> Measure of math score.</p>
+</dd> <dt>late:</dt><dd><p> Frequency in which the
+student was late for school. 5 levels.</p>
+</dd> <dt>coed:</dt><dd><p> Indicator variable 
+for coeducation. 1 = coeducation.</p>
+</dd> <dt>smorale:</dt><dd><p> Measure of student 
+morale in the school. 4 levels.</p>
+</dd> <dt>gender:</dt><dd><p> Indicator variable for 
+gender. 1 = female.</p>
+</dd> <dt>income:</dt><dd><p> Total family income. 13 levels.</p>
+</dd> 
+<dt>free:</dt><dd><p> Percent of 10th grade students receiving free lunch. 1 to 7 
+levels.</p>
+</dd> <dt>pared:</dt><dd><p> Parents highest level of education. 8 levels</p>
+</dd> 
+<dt>catholic:</dt><dd><p> Indicator variable for catholic school. 1 = catholic 
+school.</p>
+</dd> </dl>
+
+
+<h3>Source</h3>
+
+<p>The complete student-level data is available from the data archives 
+at www.icpsr.umich.edu/
+</p>
+
+
+<h3>References</h3>
+
+<p>United States Department of Education. National Center for
+Education Statistics
+</p>
+
+
+</div>
+</body></html>
