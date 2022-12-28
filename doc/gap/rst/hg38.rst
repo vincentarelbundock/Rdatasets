@@ -14,8 +14,6 @@
 
    a2g gives allele-to-genotype conversion.
 
-   chr_pos_a1_a2 produces SNPID format.
-
    g2a returns two alleles according to a genotype identifier.
 
    g2a.c is the C version of g2c.
@@ -23,9 +21,6 @@
    gc.control is used by gc.em().
 
    gcode is as a2g.
-
-   grid2d is used to optional draw a 2-d grid according to chromosomal
-   lengths.
 
    grec2g is undocumented.
 
@@ -44,8 +39,6 @@
    hap.score.glm, hap.score.podds are used by hap.score().
 
    invlogit, inverse logit transformation.
-
-   inv_chr_pos_a1_a2 is the inverse function of chr_pos_a1_a2.
 
    is.miss is undocumented.
 

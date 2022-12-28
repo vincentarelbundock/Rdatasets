@@ -55,18 +55,13 @@
       ::
 
          dplyr::glimpse(countrypops)
-
-   .. container:: sourceCode
-
-      ::
-
-         ## Rows: 12,470
-         ## Columns: 5
-         ## $ country_name   <chr> "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "…
-         ## $ country_code_2 <chr> "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "…
-         ## $ country_code_3 <chr> "ABW", "ABW", "ABW", "ABW", "ABW", "ABW", "ABW", "ABW",…
-         ## $ year           <int> 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1…
-         ## $ population     <int> 54211, 55438, 56225, 56695, 57032, 57360, 57715, 58055,…
+         #> Rows: 12,470
+         #> Columns: 5
+         #> $ country_name   <chr> "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "~
+         #> $ country_code_2 <chr> "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "~
+         #> $ country_code_3 <chr> "ABW", "ABW", "ABW", "ABW", "ABW", "ABW", "ABW", "ABW",~
+         #> $ year           <int> 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1~
+         #> $ population     <int> 54211, 55438, 56225, 56695, 57032, 57360, 57715, 58055,~
 
    .. rubric:: Function ID
       :name: function-id
@@ -81,5 +76,5 @@
    .. rubric:: See Also
       :name: see-also
 
-   Other Datasets: ``exibble``, ``gtcars``, ``pizzaplace``, ``sp500``,
+   Other datasets: ``exibble``, ``gtcars``, ``pizzaplace``, ``sp500``,
    ``sza``

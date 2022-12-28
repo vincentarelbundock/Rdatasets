@@ -57,14 +57,21 @@ function processMathHTML() {
 
 
 
+<h3>See Also</h3>
+
+<p><code>Births</code>, <code>Births78</code>, <code>Births2015</code>, <code>BirthsSSA</code>, <code>BirthsCDC</code> for data sets that are
+aggregated at the level of the entire country.
+</p>
+
+
 <h3>Examples</h3>
 
 <pre><code class='language-R'>data(Birthdays)
 if (require(mosaic)) {
   MI &lt;- Birthdays %&gt;% filter(state == "MI")
-  gf_point(births ~ date, Birthdays, data = MI) 
+  gf_point(births ~ date, Birthdays, data = MI)
   gf_line(births ~ date, Birthdays, data = MI, color = ~ wday)
-  gf_line(births ~ date, 
+  gf_line(births ~ date,
     data = Birthdays %&gt;% group_by(date) %&gt;% summarise(births = sum(births)))
   }
 </code></pre>

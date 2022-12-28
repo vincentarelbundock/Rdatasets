@@ -205,45 +205,48 @@
    ``firstTest`` from `Wikipedia, "List of states with nuclear
    weapons" <https://en.wikipedia.org/wiki/List_of_states_with_nuclear_weapons>`__
 
-   US from `Hans M. Kristensen & Robert S. Norris (2018) United States
+   US from Hans M. Kristensen & Robert S. Norris (2018) United States
    nuclear forces,2018, Bulletin of the Atomic Scientists, 74:2,
-   120-131, DOI:
-   10.1080/00963402.2018.143821 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1438219>`__
+   120-131,
+   `doi:10.1080/00963402.2018.1438219 <https://doi.org/10.1080/00963402.2018.1438219>`__
 
-   Russia from `Hans M. Kristensen & Matt Korda (2019) Russian nuclear
-   forces, 2019, Bulletin of the Atomic Scientists, 75:2, 73-84, DOI:
-   10.1080/00963402.2019.1580891 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2019.1580891>`__
+   Russia from Hans M. Kristensen & Matt Korda (2019) Russian nuclear
+   forces, 2019, Bulletin of the Atomic Scientists, 75:2, 73-84,
+   `doi:10.1080/00963402.2019.1580891 <https://doi.org/10.1080/00963402.2019.1580891>`__
 
-   UK from `Robert S. Norris and Hans M. Kristensen (2013) The British
+   UK from Robert S. Norris and Hans M. Kristensen (2013) The British
    nuclear stockpile, 1953-2013, Bulletin of the Atomic Scientists,
-   69:4,
-   69-75s <https://journals.sagepub.com/doi/pdf/10.1177/0096340213493260>`__
+   69:4, 69-75s,
+   `doi:10.1177/0096340213493260 <https://doi.org/10.1177/0096340213493260>`__
 
-   France from `Robert S. Norris & Hans M. Kristensen (2008) French
+   France from Robert S. Norris & Hans M. Kristensen (2008) French
    nuclear forces, 2008, Bulletin of the Atomic Scientists, 64:4, 52-54,
-   57 <https://journals.sagepub.com/doi/pdf/10.2968/064004012>`__
+   57, `doi:10.2968/064004012 <https://doi.org/10.2968/064004012>`__
 
-   China from `Hans M. Kristensen & Robert S. Norris (2018) Chinese
+   China from Hans M. Kristensen & Robert S. Norris (2018) Chinese
    nuclear forces, 2018,Bulletin of the Atomic Scientists, 74:4,
-   289-295 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1486620>`__
+   289-295,
+   `doi:10.1080/00963402.2018.1486620 <https://doi.org/10.1080/00963402.2018.1486620>`__
 
-   India from `Hans M. Kristensen & Robert S. Norris (2017) Indian
+   India from Hans M. Kristensen & Robert S. Norris (2017) Indian
    nuclear forces, 2017,Bulletin of the Atomic Scientists, 73:4,
-   205-209 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2017.1337998>`__
+   205-209,
+   `doi:10.1080/00963402.2017.1337998 <https://doi.org/10.1080/00963402.2017.1337998>`__
 
-   Israel from `Hans M. Kristensen and Robert S. Norris (2014) Israeli
+   Israel from Hans M. Kristensen and Robert S. Norris (2014) Israeli
    nuclear weapons, 2014, Bulletin of the Atomic Scientists, 70:6,
-   97-115 <https://journals.sagepub.com/doi/pdf/10.1177/0096340214555409>`__
+   97-115,
+   `doi:10.1177/0096340214555409 <https://doi.org/10.1177/0096340214555409>`__
 
-   Pakistan from `Hans M. Kristensen, Robert S. Norris & Julia Diamond
+   Pakistan from Hans M. Kristensen, Robert S. Norris & Julia Diamond
    (2018)Pakistani nuclear forces, 2018, Bulletin of the Atomic
-   Scientists, 74:5,
-   348-358 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2018.1507796>`__
+   Scientists, 74:5, 348-358,
+   `doi:10.1080/00963402.2018.1507796 <https://doi.org/10.1080/00963402.2018.1507796>`__
 
-   North Korea from `Hans M. Kristensen & Robert S. Norris (2018) North
+   North Korea from Hans M. Kristensen & Robert S. Norris (2018) North
    Korean nuclear capabilities, 2018, Bulletin of the Atomic Scientists,
-   74:1,
-   41-51 <https://www.tandfonline.com/doi/pdf/10.1080/00963402.2017.1413062>`__
+   74:1, 41-51,
+   `doi:10.1080/00963402.2017.1413062 <https://doi.org/10.1080/00963402.2017.1413062>`__
 
    Derek Bolton (2012) North Korea's Nuclear Program (2012-08, American
    Security Program, accessed 2020-07-15)

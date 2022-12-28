@@ -254,8 +254,8 @@
    .. rubric:: Source
       :name: source
 
-   `Reddit Official 2020 FI Survey
-   Results <https://www.reddit.com/r/financialindependence/comments/m1q8ia/official_2020_fi_survey_results/>`__.
+   Reddit Official 2020 FI Survey Results,
+   https://www.reddit.com/r/financialindependence/comments/m1q8ia/official_2020_fi_survey_results.
 
    .. rubric:: Examples
       :name: examples

@@ -270,8 +270,8 @@
    Experiment on Labor Market Discrimination. Nashville, TN: American
    Economic Association [publisher], 2004. Ann Arbor, MI:
    Inter-university Consortium for Political and Social Research
-   [distributor], 2019-12-06. doi:
-   `10.3886/E116023V1 <https://doi.org/10.3886/E116023V1>`__.
+   [distributor], 2019-12-06.
+   `doi:10.3886/E116023V1 <https://doi.org/10.3886/E116023V1>`__.
 
    `NBER Working
    Papers <https://www.nber.org/system/files/working_papers/w9873/w9873.pdf>`__

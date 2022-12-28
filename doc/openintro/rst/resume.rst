@@ -166,8 +166,8 @@
 
    Bertrand M, Mullainathan S. 2004. "Are Emily and Greg More Employable
    than Lakisha and Jamal? A Field Experiment on Labor Market
-   Discrimination". The American Economic Review 94:4 (991-1013). doi:
-   `10.3386/w9873 <https://doi.org/10.3386/w9873>`__.
+   Discrimination". The American Economic Review 94:4 (991-1013).
+   `doi:10.3386/w9873 <https://doi.org/10.3386/w9873>`__.
 
    .. rubric:: See Also
       :name: see-also

@@ -54,8 +54,7 @@
 
    Anja Struyf, Mia Hubert & Peter J. Rousseeuw (1996) Clustering in an
    Object-Oriented Environment. *Journal of Statistical Software* **1**.
-   doi:
-   `10.18637/jss.v001.i04 <https://doi.org/10.18637/jss.v001.i04>`__
+   `doi:10.18637/jss.v001.i04 <https://doi.org/10.18637/jss.v001.i04>`__
 
    .. rubric:: Examples
       :name: examples

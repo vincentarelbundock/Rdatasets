@@ -4,7 +4,7 @@
    sp500_1950_2018 R Documentation
    =============== ===============
 
-   .. rubric:: Daily observations for the S\&P 500
+   .. rubric:: Daily observations for the S&P 500
       :name: daily-observations-for-the-sp-500
 
    .. rubric:: Description

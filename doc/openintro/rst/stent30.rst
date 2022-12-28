@@ -38,9 +38,9 @@
 
    Chimowitz MI, Lynn MJ, Derdeyn CP, et al. 2011. Stenting versus
    Aggressive Med- ical Therapy for Intracranial Arterial Stenosis. New
-   England Journal of Medicine 365:993- 1003. doi:
-   `10.1056/NEJMoa1105335 <https://doi.org/10.1056/NEJMoa1105335>`__. NY
-   Times article reporting on the study:
+   England Journal of Medicine 365:993- 1003.
+   `doi:10.1056/NEJMoa1105335 <https://doi.org/10.1056/NEJMoa1105335>`__.
+   NY Times article reporting on the study:
    https://www.nytimes.com/2011/09/08/health/research/08stent.html.
 
    .. rubric:: Examples

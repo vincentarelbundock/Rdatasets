@@ -31,7 +31,7 @@
    .. rubric:: Note
       :name: note
 
-   The name ``Animals`` avoids conflicts with a system dataset
+   The name ``Animals`` avoided conflicts with a system dataset
    ``animals`` in S-PLUS 4.5 and later.
 
    .. rubric:: Source
@@ -43,5 +43,5 @@
    .. rubric:: References
       :name: references
 
-   Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics
-   with S-PLUS.* Third Edition. Springer.
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S-PLUS.* Fourth Edition. Springer.

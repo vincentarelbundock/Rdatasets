@@ -114,8 +114,8 @@
 
    Daniel S. Hamermesh, Amy Parker, Beauty in the classroom:
    instructors’ pulchritude and putative pedagogical productivity,
-   Economics of Education Review, Volume 24, Issue 4, 2005. doi:
-   `10.1016/j.econedurev.2004.07.013 <https://doi.org/10.1016/j.econedurev.2004.07.013>`__.
+   Economics of Education Review, Volume 24, Issue 4, 2005.
+   `doi:10.1016/j.econedurev.2004.07.013 <https://doi.org/10.1016/j.econedurev.2004.07.013>`__.
 
    .. rubric:: Examples
       :name: examples

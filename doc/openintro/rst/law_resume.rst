@@ -54,8 +54,8 @@
    For the academic paper, see Tilcsik A, Rivera LA. 2016. Class
    Advantage, Commitment Penalty. The Gendered Effect of Social Class
    Signals in an Elite Labor Market. American Sociological Review 81:6
-   p1097-1131. doi:
-   `10.1177/0003122416668154 <https://doi.org/10.1177/0003122416668154>`__.
+   p1097-1131.
+   `doi:10.1177/0003122416668154 <https://doi.org/10.1177/0003122416668154>`__.
 
    .. rubric:: Examples
       :name: examples

@@ -55,7 +55,7 @@
    .. rubric:: Source
       :name: source
 
-   http://factfinder.census.gov
+   https://data.census.gov/cedsci
 
    .. rubric:: Examples
       :name: examples

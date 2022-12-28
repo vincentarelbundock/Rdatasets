@@ -4,14 +4,15 @@
    presidential R Documentation
    ============ ===============
 
-   .. rubric:: Terms of 11 presidents from Eisenhower to Obama
-      :name: terms-of-11-presidents-from-eisenhower-to-obama
+   .. rubric:: Terms of 12 presidents from Eisenhower to Trump
+      :name: terms-of-12-presidents-from-eisenhower-to-trump
 
    .. rubric:: Description
       :name: description
 
    The names of each president, the start and end date of their term,
-   and their party of 11 US presidents from Eisenhower to Obama.
+   and their party of 12 US presidents from Eisenhower to Trump. This
+   data is in the public domain.
 
    .. rubric:: Usage
       :name: usage
@@ -23,7 +24,7 @@
    .. rubric:: Format
       :name: format
 
-   A data frame with 11 rows and 4 variables:
+   A data frame with 12 rows and 4 variables:
 
    name
       Last name of president

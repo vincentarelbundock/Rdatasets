@@ -36,6 +36,13 @@
 
    -  ``births`` number of births
 
+   .. rubric:: See Also
+      :name: see-also
+
+   ``Births``, ``Births78``, ``Births2015``, ``BirthsSSA``,
+   ``BirthsCDC`` for data sets that are aggregated at the level of the
+   entire country.
+
    .. rubric:: Examples
       :name: examples
 
@@ -44,8 +51,8 @@
       data(Birthdays)
       if (require(mosaic)) {
         MI <- Birthdays %>% filter(state == "MI")
-        gf_point(births ~ date, Birthdays, data = MI) 
+        gf_point(births ~ date, Birthdays, data = MI)
         gf_line(births ~ date, Birthdays, data = MI, color = ~ wday)
-        gf_line(births ~ date, 
+        gf_line(births ~ date,
           data = Birthdays %>% group_by(date) %>% summarise(births = sum(births)))
         }

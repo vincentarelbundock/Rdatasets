@@ -54,8 +54,8 @@
    .. rubric:: Source
       :name: source
 
-   Data available from the UC Berkeley BEAR Center (web page at
-   https://bearcenter.berkeley.edu/page/materials-explanatory-item-response-models).
+   Data available from the UC Berkeley BEAR Center at
+   https://old.bear.berkeley.edu/page/materials-explanatory-item-response-models
 
    .. rubric:: References
       :name: references

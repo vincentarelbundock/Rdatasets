@@ -76,8 +76,8 @@
       :name: references
 
    Garson, J.G. (1900). The metric system of identification of
-   criminals, as used in in Great Britain and Ireland. *The Journal of
-   the Anthropological Institute of Great Britain and Ireland*, **30**,
+   criminals, as used in Great Britain and Ireland. *The Journal of the
+   Anthropological Institute of Great Britain and Ireland*, **30**,
    161–198. `doi:10.2307/2842627 <https://doi.org/10.2307/2842627>`__.
 
    MacDonell, W.R. (1902). On criminal anthropometry and the

@@ -25,6 +25,7 @@
 
       data(Thurstone)
       data(Thurstone.33)
+      data(Thurstone.33G)
       data(Thurstone.9)
       data(Holzinger)
       data(Holzinger.9)
@@ -79,13 +80,19 @@
    size is 213.
 
    Another set of 9 cognitive variables attributed to Thurstone (1933)
-   is the data set of 4,175 students reported by Professor Brigham of
-   Princeton to the College Entrance Examination Board. This set does
-   not show a clear bifactor solution but is included as a demonstration
-   of the differences between a maximimum likelihood factor analysis
-   solution versus a principal axis factor solution.
+   is the data set of 4,175 male students reported by Carl Brigham of
+   Princeton to the College Entrance Examination Board. (Brigham, 1932,
+   Table VIII p 352.) This set does not show a clear bifactor solution
+   but is included as a demonstration of the differences between a
+   maximimum likelihood factor analysis solution versus a principal axis
+   factor solution. On page 352, we are given reliability estimates of
+   .86, .73, .83, .97,.94, .85, .92, .92, and .90. These are based upon
+   sampling 743 boys.
 
-   Tucker (1958) uses 9 variables from Thurstone and Thburstone (1941)
+   A parallel set (also from Brigham) is the correlation matrix of the
+   same 9 variables for 2899 girls. (Thurstone.33G)
+
+   Tucker (1958) uses 9 variables from Thurstone and Thurstone (1941)
    for his example of ``interbattery`` factor analysis.
 
    More recent applications of the bifactor model are to the measurement
@@ -157,13 +164,16 @@
 
    | Holzinger: Holzinger and Swineford (1937)
    | Reise: Steve Reise (personal communication)
-   | sem help page (for Thurstone)
+   | sem help page (for Thurstone) Brigham (for Thurstone.33)
 
    .. rubric:: References
       :name: references
 
    Bechtoldt, Harold, (1961). An empirical study of the factor analysis
    stability hypothesis. Psychometrika, 26, 405-432.
+
+   Brigham, Carl C. (1932) A study of errors. College Entrance
+   Examination Board.
 
    Holzinger, Karl and Swineford, Frances (1937) The Bi-factor method.
    Psychometrika, 2, 41-54
@@ -185,7 +195,7 @@
    outcomes measures. Quality of Life Research. 16, 19-31.
 
    Thurstone, Louis Leon (1933) The theory of multiple factors. Edwards
-   Brothers, Inc. Ann Arbor
+   Brothers, Inc. Ann Arbor.
 
    Thurstone, Louis Leon and Thurstone, Thelma (Gwinn). (1941) Factorial
    studies of intelligence. The University of Chicago Press. Chicago,

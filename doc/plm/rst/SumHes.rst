@@ -61,5 +61,5 @@
 
    Summers R, Heston A (1991). “The Penn World Table (Mark 5): An
    Expanded Set of International Comparisons, 1950–1988.” *The Quarterly
-   Journal of Economics*, **106**, 327-68. doi:
-   `10.2307/2937941 <https://doi.org/10.2307/2937941>`__.
+   Journal of Economics*, **106**, 327-68.
+   `doi:10.2307/2937941 <https://doi.org/10.2307/2937941>`__.

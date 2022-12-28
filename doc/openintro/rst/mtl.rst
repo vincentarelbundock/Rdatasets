@@ -109,8 +109,7 @@
    Siddarth P, Burggren AC, Eyre HA, Small GW, Merrill DA. 2018.
    Sedentary behavior associated with reduced medial temporal lobe
    thickness in middle-aged and older adults. PLoS ONE 13(4): e0195549.
-   doi:
-   `10.1371/journal.pone.0195549 <https://doi.org/10.1371/journal.pone.0195549>`__.
+   `doi:10.1371/journal.pone.0195549 <https://doi.org/10.1371/journal.pone.0195549>`__.
 
    Thank you to Professor Silas Bergen of Winona State University for
    pointing us to this data set!

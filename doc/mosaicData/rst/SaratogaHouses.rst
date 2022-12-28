@@ -38,7 +38,7 @@
 
    -  ``bedrooms`` number of bedrooms
 
-   -  ``firplaces`` number of fireplaces
+   -  ``fireplaces`` number of fireplaces
 
    -  ``bathrooms`` number of bathrooms (half bathrooms have no shower
       or tub)

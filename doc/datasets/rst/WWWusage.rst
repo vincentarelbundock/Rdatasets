@@ -28,15 +28,14 @@
    .. rubric:: Source
       :name: source
 
-   Durbin, J. and Koopman, S. J. (2001) *Time Series Analysis by State
-   Space Methods.* Oxford University Press.
-   http://www.ssfpack.com/dkbook/
+   Durbin, J. and Koopman, S. J. (2001). *Time Series Analysis by State
+   Space Methods*. Oxford University Press.
 
    .. rubric:: References
       :name: references
 
-   Makridakis, S., Wheelwright, S. C. and Hyndman, R. J. (1998)
-   *Forecasting: Methods and Applications.* Wiley.
+   Makridakis, S., Wheelwright, S. C. and Hyndman, R. J. (1998).
+   *Forecasting: Methods and Applications*. Wiley.
 
    .. rubric:: Examples
       :name: examples

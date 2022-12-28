@@ -132,10 +132,12 @@
    .. rubric:: Note
       :name: note
 
-   ::
+   .. container:: sourceCode
 
-      The \code{HELPrct} data set was originally named \code{HELP} but has 
-      been renamed to avoid confusion with the \code{help} function.
+      ::
+
+         The \code{HELPrct} data set was originally named \code{HELP} but has 
+         been renamed to avoid confusion with the \code{help} function.
 
    .. rubric:: Source
       :name: source

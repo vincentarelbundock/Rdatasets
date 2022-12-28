@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><title>R: US Births in 2015</title>
+<!DOCTYPE html><html><head><title>R: US Births</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
@@ -14,25 +14,34 @@ function processMathHTML() {
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table style="width: 100%;"><tr><td>Births2015</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>Births</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>US Births in 2015</h2>
+<h2>US Births</h2>
 
 <h3>Description</h3>
 
-<p>A day by day record of the number of births in the United States in 2015.
+<p>Number of births in the United States.
+There are several data sets covering different date ranges and obtaining data from different sources.
 </p>
 
 
 <h3>Usage</h3>
 
-<pre><code class='language-R'>data(Births2015)
+<pre><code class='language-R'>data(Births)
+
+data(Births78)
+
+data(Births2015)
+
+data(BirthsSSA)
+
+data(BirthsCDC)
 </code></pre>
 
 
 <h3>Format</h3>
 
-<p>A data.frame with 365 observations on the following 8 variables.
+<p>A data.frame with the following 8 variables.
 </p>
 
 <ul>
@@ -63,35 +72,104 @@ function processMathHTML() {
 
 
 
+<h3>Details</h3>
+
+<p>There are some overlapping dates in the various data sets, but the number of births does <strong>not</strong> always agree
+due to the different sources of the data.
+See the examples.
+</p>
+
+
 <h3>Source</h3>
 
-<p>Obtained from the National Center for Health Statistics,
-National Vital Statistics System,
-Natality, 2015 data.
+
+<ul>
+<li><p> Data source for <code>Births</code>: National Vital Statistics System natality data, as provided by
+Google BigQuery and exported to csv by
+Robert Kern <a href="http://www.mechanicalkern.com/static/birthdates-1968-1988.csv">http://www.mechanicalkern.com/static/birthdates-1968-1988.csv</a>.
 </p>
+</li>
+<li><p> Data source for <code>BirthsSSA</code>  US Social Security Administration, as curated at <a href="https://github.com/fivethirtyeight/data/tree/master/births">https://github.com/fivethirtyeight/data/tree/master/births</a>
+</p>
+</li>
+<li><p> Data source for <code>BirthsCDC</code>  US Centers for Disease Control, as curated at <a href="https://github.com/fivethirtyeight/data/tree/master/births">https://github.com/fivethirtyeight/data/tree/master/births</a>
+</p>
+</li>
+<li><p> Data source for <code>Births2015</code>: Obtained from the National Center for Health Statistics,
+National Vital Statistics System,  Natality, 2015 data.
+</p>
+</li></ul>
+
 
 
 <h3>See Also</h3>
 
-<p><code>Births78</code>, <code>Births</code>
+<p><code>Birthdays</code> for a data set aggregated at the state level.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Births2015)
-if (require(ggformula)) {
-  gf_point(births ~ date, data = Births2015)
-  gf_point(births ~ date, data = Births2015, color = ~ wday)
+<pre><code class='language-R'>data(Births78)
+data(Births2015)
+data(Births)
+data(BirthsSSA)
+data(BirthsCDC)
+# date ranges for the different data sets
+lapply(
+  list(Births = Births, Births78 = Births78, Biths2015 = Births2015, BirthsSSA = BirthsSSA,
+       BirthsCDC = BirthsCDC),
+       function(x) range(x$date))
+range(Births78$date)
+range(Births2015$date)
+range(Births$date)
+range(BirthsSSA$date)
+range(BirthsCDC$date)
+
+# Births and Births78 have slightly different numbers of births
+
+if(require(ggplot2)) {
+  ggplot(data = Births, aes(x = date, y = births, colour = ~ wday)) +
+    stat_smooth(se = FALSE, alpha = 0.8, geom = "line")
+  ggplot(data = Births, aes(x = day_of_year, y = births, colour = ~ wday)) +
+    geom_point(size = 0.4, alpha = 0.5) +
+    stat_smooth(se = FALSE, geom = "line", alpha = 0.6, size = 1.5)
+  if (require(dplyr)) {
+    ggplot(
+     data =  bind_cols(Births %&gt;% filter(year == 1978),
+                       Births78 %&gt;% rename(births78 = births)),
+     aes(x = births - births78)
+     ) +
+     geom_histogram(binwidth = 1)
+  }
 }
-if (require(dplyr)) {
-  Births78 %&gt;% 
-    group_by(wday) %&gt;% summarise(births = sum(births)) %&gt;% 
-    ungroup() %&gt;% mutate(frac = births / sum(births))
-  Births2015 %&gt;% 
-    group_by(wday) %&gt;% summarise(births = sum(births)) %&gt;% 
-    ungroup() %&gt;% mutate(frac = births / sum(births))
+
+if(require(ggplot2)) {
+  ggplot(data = Births, aes(x = date, y = births, colour = ~ wday)) +
+    stat_smooth(se = FALSE, alpha = 0.8, geom = "line")
+  ggplot(data = Births, aes(x = day_of_year, y = births, colour = ~ wday)) +
+    geom_point(size = 0.4, alpha = 0.5) +
+    stat_smooth(se = FALSE, geom = "line", alpha = 0.6, size = 1.5)
+  if (require(dplyr)) {
+    ggplot(
+     data =  bind_cols(Births %&gt;% filter(year == 1978),
+                       Births78 %&gt;% rename(births78 = births)),
+     aes(x = births - births78)
+     ) +
+     geom_histogram(binwidth = 1)
+
+    # SSA records more births than CDC
+    ggplot(
+     data =  bind_cols(BirthsSSA %&gt;% filter(year &lt;= 2003) %&gt;% rename(SSA = births),
+                       BirthsCDC %&gt;% filter(year &gt;= 2000) %&gt;% rename(CDC = births)),
+     aes(x = SSA - CDC)
+     ) +
+     geom_histogram(binwidth = 10)
+  }
 }
+
+
+
 </code></pre>
 
 

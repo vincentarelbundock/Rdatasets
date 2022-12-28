@@ -13,7 +13,7 @@
    The `Global Terrorism Database
    (GTD) <https://en.wikipedia.org/wiki/Global_Terrorism_Database>`__
    "is a database of incidents of terrorism from 1970 onward". Through
-   2015, this database contains information on 141,966 incidents.
+   2020, this database contains information on 209,706 incidents.
 
    ``terrorism`` provides a few summary statistics along with an
    ``ordered`` factor ``methodology``, which `Pape et
@@ -39,8 +39,8 @@
 
    ``incidents.byCountryYr`` and ``nkill.byCountryYr`` are matrices
    giving the numbers of incidents and numbers of deaths by year and by
-   location of the event for 206 countries (rows) and for all years
-   between 1970 and 2016 (columns) except for 1993, for which the
+   location of the event for 204 countries (rows) and for all years
+   between 1970 and 2060 (columns) except for 1993, for which the
    entries are all NA, because the raw data previously collected was
    lost (though the total for that year is available in the
    ``data.frame`` ``terrorism``).
@@ -59,7 +59,7 @@
    ``terrorism`` is a ``data.frame`` containing the following:
 
    year
-      integer year, 1970:2016.
+      integer year, 1970:2020.
 
    methodology
       an ``ordered`` factor giving the methodology / organization
@@ -73,7 +73,7 @@
       Responses to Terrorism (``START``) has managed data collection
       since 2011-11-01. For this variable, partial years are ignored, so
       ``methodology`` = ``CEDIS`` for 1998:2007, ``ISVG`` for 2008:2011,
-      and ``START`` for 2012:2014.
+      and ``START`` for more recent data.
 
    method
       a character vector consisting of the first character of the levels
@@ -84,7 +84,7 @@
    incidents
       integer number of incidents identified each year.
 
-      NOTE: ``sum(terrorism[["incidents"]])`` = 146920 = 141966 in the
+      NOTE: ``sum(terrorism[["incidents"]])`` = 214660 = 209706 in the
       GTD database plus 4954 for 1993, for which the incident-level data
       were lost.
 
@@ -164,19 +164,10 @@
       rate <https://en.wikipedia.org/wiki/Mortality_rate>`__ (deaths per
       1,000 population) worldwide and in the US, according to the World
       Bank; see "Sources" below. This World Bank data set includes
-      ``USdeathRate`` for each year from 1900 to 2014.
+      ``USdeathRate`` for each year from 1900 to 2020.
 
-      The ``worldDeathRate`` numbers here were read manually from a plot
-      on `that web
-      page, <https://data.worldbank.org/indicator/SP.DYN.CDRT.IN?end=2014&start=1960&view=chart>`__
-      except for the the number for 2015, which was estimated as a
-      reduction of 0.73 percent from 2014, which was the average rate of
-      decline (ratio of two successive years) for 1990 to 2014. The same
-      method was used to estimate the ``USdeathRate`` for 2015 as the
-      same as for 2014.
-
-      NOTE: ``USdeathRate`` is to two significant digits only, unlike
-      ``worldDeathRate``, which has four significant digits.
+      NOTE: ``USdeathRate`` to 2009 is to two significant digits only.
+      Other death rates carry more significant digits.
 
    worldDeaths, USdeaths
       number of deaths by year in the world and US
@@ -191,7 +182,9 @@
    kill.pmp, kill.pmp.us
       terrorism deaths per million population worldwide and in the US =
 
-      ``0.001 * nkill / worldPopulation``
+      ``nkill / (0.001*worldPopulation)``
+
+      ``nkill.us / (0.001*USpopulation)``
 
    pkill, pkill.us
       terrorism deaths as a proportion of total deaths worldwide and in
@@ -231,7 +224,7 @@
 
    National Consortium for the Study of Terrorism and Responses to
    Terrorism (START). (2017). Global Terrorism Database [Data file].
-   Retrieved from https://start.umd.edu/gtd [accessed 2018-04-08].
+   Retrieved from https://start.umd.edu/gtd [accessed 2022-10-08].
 
    See also the `Global Terrorism
    Database <https://en.wikipedia.org/wiki/Global_Terrorism_Database>`__
@@ -241,18 +234,14 @@
    (START, 2015), https://www.start.umd.edu/gtd.
 
    The world and US population figures came from "Total Population -
-   Both Sexes", World Population Prospects 2015, published by the
-   Population Division of the Department of Economic and Social Affairs
-   of the United Nations accessed 2016-09-05 (at a web link that has
-   since changed: No longer at
-   ``https://esa.un.org/unpd/wpp/Download/Standard/Population``, as it
-   was when the data current used here was downloaded, 2016-09-05.
-   Fortunately, as of 2020-02-09, such data seem to be available at
-   https://population.un.org/wpp/Download/Standard/Population/.
+   Both Sexes", `World Population Prospects
+   2022 <https://population.un.org/wpp/Download/Standard/Population/>`__,
+   published by the Population Division, World Population Prospects, of
+   the United Nations, accessed 2022-10-09.
 
    `Human Mortality Database. University of California, Berkeley (USA),
    and Max Planck Institute for Demographic Research
-   (Germany). <https://www.mortality.org>`__
+   (Germany) <https://www.mortality.org>`__, accessed 2022-10-11.
 
    .. rubric:: References
       :name: references

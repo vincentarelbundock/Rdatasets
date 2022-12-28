@@ -309,7 +309,7 @@
 
    Sarkees, Meredith Reid; Wayman, Frank (2010). `"The Correlates of War
    Project: COW War Data, 1816 - 2007
-   (v4.0)" <https://correlatesofwar.org/data-sets/COW-war>`__, accessed
+   (v4.0)" <https://correlatesofwar.org/data-sets/COW-war/>`__, accessed
    2015-09-02.
 
    The White House (2022). `Historical

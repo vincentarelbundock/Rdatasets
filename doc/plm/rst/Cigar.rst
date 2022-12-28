@@ -81,6 +81,6 @@
    Baltagi BH, Griffin JM, Xiong W (2000). “To Pool or Not to Pool:
    Homogeneous Versus Heterogeneous Estimators Applied to Cigarette
    Demand.” *The Review of Economics and Statistics*, **82**\ (1),
-   117-126. doi:
-   `10.1162/003465300558551 <https://doi.org/10.1162/003465300558551>`__,
+   117-126.
+   `doi:10.1162/003465300558551 <https://doi.org/10.1162/003465300558551>`__,
    https://doi.org/10.1162/003465300558551.

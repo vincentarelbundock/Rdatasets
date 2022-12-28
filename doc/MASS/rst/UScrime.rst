@@ -89,5 +89,5 @@
    .. rubric:: References
       :name: references
 
-   Venables, W. N. and Ripley, B. D. (1999) *Modern Applied Statistics
-   with S-PLUS.* Third Edition. Springer.
+   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
+   with S-PLUS.* Fourth Edition. Springer.

@@ -53,6 +53,7 @@ Imports:
     lme4,
     lmec,
     MASS,
+    MatchIt,
     mediation,
     mi,
     mlmRev,

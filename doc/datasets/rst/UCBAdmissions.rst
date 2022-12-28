@@ -60,7 +60,6 @@
    in graduate admissions: Data from Berkeley. *Science*, **187**,
    398–403.
    `doi:10.1126/science.187.4175.398 <https://doi.org/10.1126/science.187.4175.398>`__.
-   https://www.jstor.org/stable/1739581.
 
    .. rubric:: Examples
       :name: examples

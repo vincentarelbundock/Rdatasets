@@ -31,7 +31,6 @@
 
    Durbin, J. and Koopman, S. J. (2001). *Time Series Analysis by State
    Space Methods*. Oxford University Press.
-   http://www.ssfpack.com/DKbook.html
 
    .. rubric:: References
       :name: references

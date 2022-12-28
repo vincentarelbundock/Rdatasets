@@ -55,8 +55,8 @@
       :name: references
 
    Colin Cameron A, K. Trivedi P (2005). *Microeconometrics: Methods and
-   Applications*. Cambridge University Press. ISBN 0521848059, doi:
-   `10.1017/CBO9780511811241 <https://doi.org/10.1017/CBO9780511811241>`__.
+   Applications*. Cambridge University Press. ISBN 0521848059,
+   `doi:10.1017/CBO9780511811241 <https://doi.org/10.1017/CBO9780511811241>`__.
 
    Ziliak JP (1997). “Efficient Estimation with Panel Data When
    Instruments Are Predetermined: An Empirical Comparison of

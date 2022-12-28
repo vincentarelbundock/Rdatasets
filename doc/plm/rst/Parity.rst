@@ -57,14 +57,14 @@
       :name: source
 
    Coakley J, Fuertes A, Smith R (2006). “Unobserved heterogeneity in
-   panel time series models.” *Computational Statistics \\& Data
+   panel time series models.” *Computational Statistics & Data
    Analysis*, **50**\ (9), 2361–2380.
 
    .. rubric:: References
       :name: references
 
    Coakley J, Fuertes A, Smith R (2006). “Unobserved heterogeneity in
-   panel time series models.” *Computational Statistics \\& Data
+   panel time series models.” *Computational Statistics & Data
    Analysis*, **50**\ (9), 2361–2380.
 
    Driscoll JC, Kraay AC (1998). “Consistent covariance matrix

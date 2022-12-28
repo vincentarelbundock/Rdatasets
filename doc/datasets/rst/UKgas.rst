@@ -28,9 +28,8 @@
    .. rubric:: Source
       :name: source
 
-   Durbin, J. and Koopman, S. J. (2001) *Time Series Analysis by State
-   Space Methods.* Oxford University Press.
-   http://www.ssfpack.com/dkbook/
+   Durbin, J. and Koopman, S. J. (2001). *Time Series Analysis by State
+   Space Methods*. Oxford University Press.
 
    .. rubric:: Examples
       :name: examples

@@ -26,8 +26,8 @@ Global Terrorism Database yearly summaries
 <a href="https://en.wikipedia.org/wiki/Global_Terrorism_Database">Global 
 Terrorism Database (GTD)</a> 
 &quot;is a database of incidents of terrorism 
-from 1970 onward&quot;.  Through 2015, this 
-database contains information on 141,966 
+from 1970 onward&quot;.  Through 2020, this 
+database contains information on 209,706
 incidents.  
 </p>
 <p><code>terrorism</code> provides a few summary
@@ -58,9 +58,9 @@ the same period.
 <p><code>incidents.byCountryYr</code> and 
 <code>nkill.byCountryYr</code> are matrices giving 
 the numbers of incidents and numbers of deaths 
-by year and by location of the event for 206
+by year and by location of the event for 204
 countries (rows) and for all years between 
-1970 and 2016 (columns) except for 1993, for 
+1970 and 2060 (columns) except for 1993, for 
 which the entries are all NA, because the raw
 data previously collected was lost (though 
 the total for that year is available in 
@@ -86,7 +86,7 @@ containing the following:
 </p>
 
 <dl>
-<dt>year</dt><dd><p>integer year, 1970:2016.</p>
+<dt>year</dt><dd><p>integer year, 1970:2020.</p>
 </dd>
 <dt>methodology</dt><dd>
 <p>an <code>ordered</code> factor giving the 
@@ -108,7 +108,7 @@ managed data collection since
 partial years are ignored, so 
 <code>methodology</code> = <code>CEDIS</code> for 
 1998:2007, <code>ISVG</code> for 2008:2011, and 
-<code>START</code> for 2012:2014. 
+<code>START</code> for more recent data.  
 </p>
 </dd>
 <dt>method</dt><dd>
@@ -125,7 +125,7 @@ each year.
 </p>
 <p>NOTE:  
 <code>sum(terrorism[["incidents"]])</code> =
-146920 = 141966 in the GTD database
+214660 = 209706 in the GTD database
 plus 4954 for 1993, for which the
 incident-level data were lost.  
 </p>
@@ -247,23 +247,11 @@ United Nations;  see &quot;Sources&quot; below.
 and in the US, according to the World 
 Bank;  see &quot;Sources&quot; below.  This World
 Bank data set includes <code>USdeathRate</code> 
-for each year from 1900 to 2014.  
+for each year from 1900 to 2020.  
 </p>
-<p>The <code>worldDeathRate</code> numbers here were 
-read manually from a plot on  
-<a href="https://data.worldbank.org/indicator/SP.DYN.CDRT.IN?end=2014&amp;start=1960&amp;view=chart">that web page,</a> 
-except for the the number for 2015, which was 
-estimated as a reduction of 0.73 percent from 
-2014, which was the average rate of decline 
-(ratio of two successive years) for 1990 to 
-2014.  The same method was used to estimate 
-the <code>USdeathRate</code> for 2015 as the same 
-as for 2014.  
-</p>
-<p>NOTE:  <code>USdeathRate</code> is to two 
-significant digits only, unlike 
-<code>worldDeathRate</code>, which has four 
-significant digits. 
+<p>NOTE:  <code>USdeathRate</code> to 2009 is to 
+two significant digits only. Other death
+rates carry more significant digits. 
 </p>
 </dd>
 <dt>worldDeaths, USdeaths</dt><dd>
@@ -284,7 +272,9 @@ from the Human Mortality Database;  see sources below.
 <p>terrorism deaths per million 
 population worldwide and in the US = 
 </p>
-<p><code>0.001 * nkill / worldPopulation</code>
+<p><code>nkill / (0.001*worldPopulation)</code>
+</p>
+<p><code>nkill.us / (0.001*USpopulation)</code>
 </p>
 </dd>
 <dt>pkill, pkill.us</dt><dd>
@@ -333,31 +323,22 @@ it suggests larger problems.
 
 <h3>Source</h3>
 
-<p>National Consortium for the Study of Terrorism and Responses to Terrorism (START). (2017). Global Terrorism Database [Data file]. Retrieved from <a href="https://start.umd.edu/gtd">https://start.umd.edu/gtd</a> [accessed 2018-04-08]. 
+<p>National Consortium for the Study of Terrorism and Responses to Terrorism (START). (2017). Global Terrorism Database [Data file]. Retrieved from <a href="https://start.umd.edu/gtd">https://start.umd.edu/gtd</a> [accessed 2022-10-08]. 
 </p>
 <p>See also the <a href="https://en.wikipedia.org/wiki/Global_Terrorism_Database">Global Terrorism Database</a> maintained by the <a href="https://en.wikipedia.org/wiki/National_Consortium_for_the_Study_of_Terrorism_and_Responses_to_Terrorism">National Consortium for the Study of Terrorism and Responses to Terrorism</a> (START, 2015), <a href="https://www.start.umd.edu/gtd">https://www.start.umd.edu/gtd</a>. 
 </p>
 <p>The world and US population figures came from 
-&quot;Total Population - Both Sexes&quot;, World Population 
-Prospects 2015, published by the Population Division 
-of the Department of Economic and Social Affairs of 
-the United Nations accessed 2016-09-05 (at a web link 
-that has since changed:  No longer at 
-<code>https://esa.un.org/unpd/wpp/Download/Standard/Population</code>, as it was when the data current used here was 
-downloaded, 2016-09-05.  Fortunately, as of 
-2020-02-09, such data seem to be available at 
-<a href="https://population.un.org/wpp/Download/Standard/Population/">https://population.un.org/wpp/Download/Standard/Population/</a>.   
+&quot;Total Population - Both Sexes&quot;, <a href="https://population.un.org/wpp/Download/Standard/Population/">World Population Prospects 2022</a>, published by the Population Division, World Population Prospects, of 
+the United Nations, accessed 2022-10-09.   
 </p>
-<p><a href="https://www.mortality.org">Human Mortality Database.  University of California, Berkeley (USA), and Max Planck Institute for Demographic Research (Germany).</a>
+<p><a href="https://www.mortality.org">Human Mortality Database.  University of California, Berkeley (USA), and Max Planck Institute for Demographic Research (Germany)</a>, accessed 2022-10-11.  
 </p>
 
 
 <h3>References</h3>
 
 <p>Robert Pape, Keven Ruby, Vincent Bauer and 
-Gentry Jenkins, <a href="https://www.washingtonpost.com/news/monkey-cage/wp/2014/08/11/how-to-fix-the-flaws-in-the-global-terrorism-database-and-why-it-matters/">&quot;How to fix
-the flaws in the Global Terrorism Database
-and why it matters&quot;</a>, 
+Gentry Jenkins, <a href="https://www.washingtonpost.com/news/monkey-cage/wp/2014/08/11/how-to-fix-the-flaws-in-the-global-terrorism-database-and-why-it-matters/">&quot;How to fix the flaws in the Global Terrorism Database and why it matters&quot;</a>, 
 <em>The Washington Post</em>, August 11, 
 2014 (accessed 2016-01-09).  
 </p>
