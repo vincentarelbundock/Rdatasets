@@ -1,0 +1,103 @@
+<!DOCTYPE html><html><head><title>R: Income distribution (percentages) in the Northeast US</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>income</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Income distribution (percentages) in the Northeast US
+</h2>
+
+<h3>Description</h3>
+
+<p>Income distribution (percentages) in the Northeast US in 1960 and 1970
+adopted from McCullagh (1980).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>income
+</code></pre>
+
+
+<h3>Format</h3>
+
+
+<dl>
+<dt><code>year</code></dt><dd>
+<p>year.
+</p>
+</dd>
+<dt><code>pct</code></dt><dd>
+<p>percentage of population in income class per year.
+</p>
+</dd>
+<dt><code>income</code></dt><dd>
+<p>income groups. The unit is thousands of constant (1973) US dollars.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data are adopted from McCullagh (1980).
+</p>
+
+
+<h3>References</h3>
+
+<p>McCullagh, P. (1980) Regression Models for Ordinal Data. <em>Journal
+of the Royal Statistical Society. Series B (Methodological)</em>,
+Vol. 42, No. 2., pp. 109-142.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+print(income)
+
+## Convenient table:
+(tab &lt;- xtabs(pct ~ year + income, income))
+
+## small rounding error in 1970:
+rowSums(tab)
+
+## compare link functions via the log-likelihood:
+links &lt;- c("logit", "probit", "cloglog", "loglog", "cauchit")
+sapply(links, function(link) {
+  clm(income ~ year, data=income, weights=pct, link=link)$logLik })
+## a heavy tailed (cauchy) or left skew (cloglog) latent distribution
+## is fitting best.
+
+## The data are defined as:
+income.levels &lt;- c(0, 3, 5, 7, 10, 12, 15)
+income &lt;- paste(income.levels, c(rep("-", 6), "+"),
+                c(income.levels[-1], ""), sep = "")
+income &lt;-
+  data.frame(year=factor(rep(c("1960", "1970"), each = 7)),
+             pct = c(6.5, 8.2, 11.3, 23.5, 15.6, 12.7, 22.2,
+               4.3, 6, 7.7, 13.2, 10.5, 16.3, 42.1),
+             income=factor(rep(income, 2), ordered=TRUE,
+               levels=income))
+
+</code></pre>
+
+
+</div>
+</body></html>

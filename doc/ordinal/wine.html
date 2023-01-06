@@ -1,0 +1,129 @@
+<!DOCTYPE html><html><head><title>R: Bitterness of wine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>wine</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Bitterness of wine
+</h2>
+
+<h3>Description</h3>
+
+<p>The <code>wine</code> data set is adopted from Randall(1989) and from a
+factorial experiment on factors determining the bitterness of
+wine. Two treatment factors (temperature and contact) each have two
+levels. Temperature and contact between juice and skins can be
+controlled when cruching grapes during wine production. Nine judges
+each assessed wine from two bottles from each of the four treatment
+conditions, hence there are 72 observations in all.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>wine
+</code></pre>
+
+
+<h3>Format</h3>
+
+
+<dl>
+<dt><code>response</code></dt><dd>
+<p>scorings of wine bitterness on a 0&mdash;100 continuous scale.
+</p>
+</dd>
+<dt><code>rating</code></dt><dd>
+<p>ordered factor with 5 levels; a grouped version of <code>response</code>.
+</p>
+</dd>
+<dt><code>temp</code></dt><dd>
+<p>temperature: factor with two levels.
+</p>
+</dd>
+<dt><code>contact</code></dt><dd>
+<p>factor with two levels (<code>"no"</code> and <code>"yes"</code>).
+</p>
+</dd>
+<dt><code>bottle</code></dt><dd>
+<p>factor with eight levels.
+</p>
+</dd>
+<dt><code>judge</code></dt><dd>
+<p>factor with nine levels.
+</p>
+</dd>
+</dl>
+
+
+<h3>Source</h3>
+
+<p>Data are adopted from Randall (1989).
+</p>
+
+
+<h3>References</h3>
+
+<p>Randall, J (1989). The analysis of sensory data by generalised linear
+model. <em>Biometrical journal 7</em>, pp. 781&ndash;793.
+</p>
+<p>Tutz, G. and W. Hennevogl (1996). Random effects in ordinal regression
+models. <em>Computational Statistics &amp; Data Analysis 22</em>,
+pp. 537&ndash;557.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+head(wine)
+str(wine)
+
+## Variables 'rating' and 'response' are related in the following way:
+(intervals &lt;- seq(0,100, by = 20))
+all(wine$rating == findInterval(wine$response, intervals)) ## ok
+
+## A few illustrative tabulations:
+## Table matching Table 5 in Randall (1989):
+temp.contact.bottle &lt;- with(wine, temp:contact:bottle)[drop=TRUE]
+xtabs(response ~ temp.contact.bottle + judge, data = wine)
+
+## Table matching Table 6 in Randall (1989):
+with(wine, {
+  tcb &lt;- temp:contact:bottle
+  tcb &lt;- tcb[drop=TRUE]
+  table(tcb, rating)
+})
+## or simply: with(wine, table(bottle, rating))
+
+## Table matching Table 1 in Tutz &amp; Hennevogl (1996):
+tab &lt;- xtabs(as.numeric(rating) ~ judge + temp.contact.bottle,
+             data = wine)
+colnames(tab) &lt;-
+  paste(rep(c("c","w"), each = 4), rep(c("n", "n", "y", "y"), 2),
+        1:8, sep=".")
+tab
+
+
+## A simple model:
+m1 &lt;- clm(rating ~ temp * contact, data = wine)
+summary(m1)
+
+</code></pre>
+
+
+</div>
+</body></html>

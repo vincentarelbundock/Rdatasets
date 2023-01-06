@@ -1,7 +1,7 @@
 
 # What is this?
 
-`Rdatasets` is a collection of 1937 datasets which were originally
+`Rdatasets` is a collection of 1941 datasets which were originally
 distributed alongside the statistical software environment `R` and some
 of its add-on packages. The goal is to make these data more broadly
 accessible for teaching and statistical software development.
@@ -76,13 +76,12 @@ Rscript scrape.R
 cd doc
 ../documentation.sh
 cd ..
-Rscript -e "rmarkdown::render("README.Rmd")"
+Rscript -e "rmarkdown::render('README.Rmd')"
 ```
 
 Second, commit to master.
 
 ``` bash
-cd ..
 git add .
 git commit
 ```

@@ -63,6 +63,7 @@ Imports:
     nlme,
     nycflights13,
     openintro,
+    ordinal,
     palmerpenguins,
     plm,
     plyr,
