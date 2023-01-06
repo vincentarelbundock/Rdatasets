@@ -1,0 +1,116 @@
+<!DOCTYPE html><html><head><title>R: U.S. Women's Labor Force Participation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Mroz87</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>U.S. Women's Labor Force Participation</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Mroz87</code> data frame contains data about 753 married women.
+These data are collected within the &quot;Panel Study of Income Dynamics&quot; (PSID).
+Of the 753 observations, the first 428 are for women with positive hours
+worked in 1975, while the remaining 325 observations are for women who
+did not work for pay in 1975.  A more complete discussion of the data is
+found in Mroz (1987), Appendix 1.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Mroz87)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>lfp</dt><dd><p>Dummy variable for labor-force participation.</p>
+</dd>
+<dt>hours</dt><dd><p>Wife's hours of work in 1975.</p>
+</dd>
+<dt>kids5</dt><dd><p>Number of children 5 years old or younger.</p>
+</dd>
+<dt>kids618</dt><dd><p>Number of children 6 to 18 years old.</p>
+</dd>
+<dt>age</dt><dd><p>Wife's age.</p>
+</dd>
+<dt>educ</dt><dd><p>Wife's educational attainment, in years.</p>
+</dd>
+<dt>wage</dt><dd><p>Wife's average hourly earnings, in 1975 dollars.</p>
+</dd>
+<dt>repwage</dt><dd><p>Wife's wage reported at the time of the 1976 interview.</p>
+</dd>
+<dt>hushrs</dt><dd><p>Husband's hours worked in 1975.</p>
+</dd>
+<dt>husage</dt><dd><p>Husband's age.</p>
+</dd>
+<dt>huseduc</dt><dd><p>Husband's educational attainment, in years.</p>
+</dd>
+<dt>huswage</dt><dd><p>Husband's wage, in 1975 dollars.</p>
+</dd>
+<dt>faminc</dt><dd><p>Family income, in 1975 dollars.</p>
+</dd>
+<dt>mtr</dt><dd><p>Marginal tax rate facing the wife.</p>
+</dd>
+<dt>motheduc</dt><dd><p>Wife's mother's educational attainment, in years.</p>
+</dd>
+<dt>fatheduc</dt><dd><p>Wife's father's educational attainment, in years.</p>
+</dd>
+<dt>unem</dt><dd><p>Unemployment rate in county of residence, in percentage points.</p>
+</dd>
+<dt>city</dt><dd><p>Dummy variable = 1 if live in large city, else 0.</p>
+</dd>
+<dt>exper</dt><dd><p>Actual years of wife's previous labor market experience.</p>
+</dd>
+<dt>nwifeinc</dt><dd><p>Non-wife income.</p>
+</dd>
+<dt>wifecoll</dt><dd><p>Dummy variable for wife's college attendance.</p>
+</dd>
+<dt>huscoll</dt><dd><p>Dummy variable for husband's college attendance.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Mroz, T. A. (1987)
+The sensitivity of an empirical model of married women's hours of work to
+economic and statistical assumptions.
+<em>Econometrica</em> <b>55</b>, 765&ndash;799.
+</p>
+<p>PSID Staff, The Panel Study of Income Dynamics,
+Institute for Social ResearchPanel Study of Income Dynamics,
+University of Michigan, <a href="https://psidonline.isr.umich.edu">https://psidonline.isr.umich.edu</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Wooldridge( 2003 ): example 17.5, page 590
+data( Mroz87 )
+# Two-step estimation
+summary( heckit( lfp ~ nwifeinc + educ + exper + I( exper^2 ) + age +
+   kids5 + kids618, log( wage ) ~ educ + exper + I( exper^2 ), Mroz87,
+   method = "2step" ) )
+</code></pre>
+
+
+</div>
+</body></html>

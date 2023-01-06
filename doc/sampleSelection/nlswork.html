@@ -1,0 +1,136 @@
+<!DOCTYPE html><html><head><title>R: National Longitudinal Survey of Young Working Women</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>nlswork</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>National Longitudinal Survey of Young Working Women</h2>
+
+<h3>Description</h3>
+
+<p>The <code>nlswork</code> data frame contains data about 4711 young working women
+who had an age of 14&ndash;26 years in 1968.
+These data are collected within the &quot;National Longitudinal Survey&quot;
+over the years 1968-1988 (with gaps).
+There are 28534 observations in total.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(nlswork)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>idcode</dt><dd><p>NLS ID.</p>
+</dd>
+<dt>year</dt><dd><p>interview year.</p>
+</dd>
+<dt>birth_yr</dt><dd><p>birth year.</p>
+</dd>
+<dt>age</dt><dd><p>age in current year.</p>
+</dd>
+<dt>race</dt><dd><p>1=white, 2=black, 3=other.</p>
+</dd>
+<dt>msp</dt><dd><p>1 if married, spouse present.</p>
+</dd>
+<dt>nev_mar</dt><dd><p>1 if never married.</p>
+</dd>
+<dt>grade</dt><dd><p>current grade completed.</p>
+</dd>
+<dt>collgrad</dt><dd><p>1 if college graduate.</p>
+</dd>
+<dt>not_smsa</dt><dd><p>1 if not SMSA.</p>
+</dd>
+<dt>c_city</dt><dd><p>1 if central city.</p>
+</dd>
+<dt>south</dt><dd><p>1 if south.</p>
+</dd>
+<dt>ind_code</dt><dd><p>industry of employment.</p>
+</dd>
+<dt>occ_code</dt><dd><p>occupation.</p>
+</dd>
+<dt>union</dt><dd><p>1 if union.</p>
+</dd>
+<dt>wks_ue</dt><dd><p>weeks unemployed last year.</p>
+</dd>
+<dt>ttl_exp</dt><dd><p>total work experience.</p>
+</dd>
+<dt>tenure</dt><dd><p>job tenure, in years.</p>
+</dd>
+<dt>hours</dt><dd><p>usual hours worked.</p>
+</dd>
+<dt>wks_work</dt><dd><p>weeks worked last year.</p>
+</dd>
+<dt>ln_wage</dt><dd><p>ln(wage/GNP deflator).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Two different versions of this data set are available on the internet.
+They are slighly different:
+The variable <code>wks_work</code> (weeks worked last year)
+is <code>101</code> in this version (from Stata),
+but <code>NA</code> in the version provided by the Boston College
+for the observation with <code>idcode = 1</code> and <code>year = 83</code>.
+Moreover, this variable
+is <code>NA</code> in this version (from Stata),
+but <code>104</code> in the version provided by the Boston College
+for the observation with <code>idcode = 2</code> and <code>year = 87</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Datasets for Stata Longitudinal/Panel-Data Reference Manual, Release 10:
+National Longitudinal Survey. Young Women 14-26 years of age in 1968,
+<a href="https://www.stata-press.com/data/r10/nlswork.dta">https://www.stata-press.com/data/r10/nlswork.dta</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Boston College,
+National Longitudinal Survey. Young Women 14-26 years of age in 1968,
+<a href="https://fmwww.bc.edu/ec-p/data/stata/nlswork.dta">https://fmwww.bc.edu/ec-p/data/stata/nlswork.dta</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data( "nlswork" )
+summary( nlswork )
+
+## Not run: 
+library( "plm" )
+nlswork &lt;- plm.data( nlswork, c( "idcode", "year" ) )
+plmResult &lt;- plm( ln_wage ~ union + age + grade + not_smsa + south + occ_code,
+   data = nlswork, model = "random" )
+summary( plmResult )
+
+## End(Not run)
+</code></pre>
+
+
+</div>
+</body></html>

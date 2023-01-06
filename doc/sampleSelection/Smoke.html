@@ -1,0 +1,127 @@
+<!DOCTYPE html><html><head><title>R: Survey Responses on Smoking Behaviour</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Smoke</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Survey Responses on Smoking Behaviour</h2>
+
+<h3>Description</h3>
+
+<p>'Instructional dataset, N=807, cross-sectional individual data on smoking 
+accompanying Introductory Econometrics: A Modern Approach, 
+Jeffrey M. Wooldridge, South-Western College Publishing, (c) 2000 and Jeffrey 
+M. Wooldridge, Econometric Analysis of Cross Section and Panel Data, MIT Press,
+(c) 2001.'
+(<a href="https://ideas.repec.org/p/boc/bocins/smoke.html#biblio">https://ideas.repec.org/p/boc/bocins/smoke.html#biblio</a>, accessed 
+February 27, 2017).
+This dataset is a subset of data used in Mullahy (1997).
+Data was collected in 1979 and 1980 through the Smoking Supplement to the
+US National Health Interview Survey.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Smoke)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>educ</dt><dd><p>Years of schooling.</p>
+</dd>
+<dt>age</dt><dd><p>Respondents age in years.</p>
+</dd>
+<dt>cigpric</dt><dd><p>State cigarette price, cents per pack.</p>
+</dd>
+<dt>income</dt><dd><p>Annual income in USD.</p>
+</dd>
+<dt>restaurn</dt><dd><p>Dummy variable indicating if state restaurant smoking 
+restrictions are in place.</p>
+</dd>
+<dt>smoker</dt><dd><p>Dummy variable indicating if person has smoked at least
+one cigarette.</p>
+</dd>
+<dt>cigs_intervals</dt><dd><p>Number of cigarettes smoked per day, coded in 
+intervals with intervals boundaries: (0,5,10,20,50)</p>
+</dd>
+<dt>cigs</dt><dd><p>Number of cigarettes smoked per day.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Wooldridge(2009)'s dataset also available in other formats at
+<a href="https://ideas.repec.org/p/boc/bocins/smoke.html#biblio">https://ideas.repec.org/p/boc/bocins/smoke.html#biblio</a>.
+</p>
+<p>Original data used in
+Mullahy (1985) and Mullahy (1997).
+</p>
+
+
+<h3>References</h3>
+
+<p>Jeffrey, M. Wooldridge (2009), <em>Introductory Econometrics: A modern 
+approach</em>, Canada: South-Western Cengage Learning.
+</p>
+<p>Mullahy, John (1997), <em>Instrumental-Variable Estimation of Count Data Models:  
+Applications to Models of Cigarette Smoking Behavior</em>, Review of Economics 
+and Statistics 79, 596-593.
+</p>
+<p>Mullahy, John (1985) <em>Cigarette Smoking: Habits, Health Concerns, and 
+Heterogeneous Unobservables in a Microeconometric Analysis of Consumer 
+Demand</em>, Ph.D. dissertation, University of Virginia.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data( Smoke )
+# boundaries of the intervals
+bounds &lt;- c(0,5,10,20,50,Inf)
+## Not run: 
+# estimation with starting values obtained by a ML estimation 
+# of a standard tobit-2 model with the dependent variable 
+# of the outcome equation equal to the mid-points of the intervals
+res &lt;- selection( smoker ~ educ + age, cigs_intervals ~ educ, 
+  data = Smoke, boundaries = bounds )
+summary( res )
+
+# estimation with starting values obtained by a two-step estimation 
+# of a standard tobit-2 model with the dependent variable 
+# of the outcome equation equal to the mid-points of the intervals
+res2 &lt;- selection( smoker ~ educ + age, cigs_intervals ~ educ, 
+  data = Smoke, boundaries = bounds, start = "2step" )
+summary( res2 )
+
+## End(Not run)
+
+# estimation with starting values that are very close to the estimates
+# (in order to reduce the execution time of running this example) 
+resS &lt;- selection( smoker ~ educ + age, cigs_intervals ~ educ, 
+  data = Smoke, boundaries = bounds, 
+  start = c( 0.527, -0.0482, -0.0057, 4.23, -0.319, 2.97, 2.245 ) )
+summary( resS )
+</code></pre>
+
+
+</div>
+</body></html>
