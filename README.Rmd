@@ -61,13 +61,13 @@ First add new package to DESCRIPTION Imports and scrape the data:
 Rscript scrape.R
 cd doc
 ../documentation.sh
-Rscript -e "rmarkdown::render("README.Rmd")"
+cd ..
+Rscript -e "rmarkdown::render('README.Rmd')"
 ```
 
 Second, commit to master.
 
 ```bash
-cd ..
 git add .
 git commit
 ```

@@ -75,6 +75,7 @@ Imports:
     robustbase,
     rpart,
     R2HTML,
+    sampleSelection,
     sandwich,
     sem,
     Stat2Data,

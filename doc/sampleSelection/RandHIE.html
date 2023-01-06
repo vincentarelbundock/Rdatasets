@@ -1,0 +1,223 @@
+<!DOCTYPE html><html><head><title>R: RAND Health Insurance Experiment</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>RandHIE</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>RAND Health Insurance Experiment</h2>
+
+<h3>Description</h3>
+
+<p>'The RAND Health Insurance Experiment (RAND HIE) was a comprehensive study
+of health care cost, utilization and outcome in the United States.
+It is the only randomized study of health insurance,
+and the only study which can give definitive evidence as to the causal effects
+of different health insurance plans.
+[...]
+Although the fieldwork of the study was conducted between 1974 and 1982,
+the results are still highly relevant,
+since RAND HIE is the only study which can make causal statements.'
+(Wikipedia, RAND Health Insurance Experiment, <a href="https://en.wikipedia.org/w/index.php?title=RAND_Health_Insurance_Experiment&amp;oldid=110166949">https://en.wikipedia.org/w/index.php?title=RAND_Health_Insurance_Experiment&amp;oldid=110166949</a>, accessed April 8, 2007).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(RandHIE)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>plan</dt><dd><p>HIE plan number.</p>
+</dd>
+<dt>site</dt><dd><p>Participant's  place of residence
+when the participant was initially enrolled.</p>
+</dd>
+<dt>coins</dt><dd><p>Coinsurance rate.</p>
+</dd>
+<dt>tookphys</dt><dd><p>Took baseline physical.</p>
+</dd>
+<dt>year</dt><dd><p>Study year.</p>
+</dd>
+<dt>zper</dt><dd><p>Person identifier.</p>
+</dd>
+<dt>black</dt><dd><p>1 if race of household head is black.</p>
+</dd>
+<dt>income</dt><dd><p>Family income.</p>
+</dd>
+<dt>xage</dt><dd><p>Age in years.</p>
+</dd>
+<dt>female</dt><dd><p>1 if person is female.</p>
+</dd>
+<dt>educdec</dt><dd><p>Education of household head in years.</p>
+</dd>
+<dt>time</dt><dd><p>Time eligible during the year.</p>
+</dd>
+<dt>outpdol</dt><dd><p>Outpatient expenses:
+all covered outpatient medical services
+excluding dental care, outpatient psychotherapy,
+outpatient drugs or supplies.</p>
+</dd>
+<dt>drugdol</dt><dd><p>Drug expenses:
+all covered outpatient and dental drugs.</p>
+</dd>
+<dt>suppdol</dt><dd><p>Supply expenses:
+all covered outpatient supplies including dental.</p>
+</dd>
+<dt>mentdol</dt><dd><p>Psychotherapy expenses:
+all covered outpatient psychotherapy services including injections
+excluding charges for visits in excess of 52 per year,
+prescription drugs, and inpatient care.</p>
+</dd>
+<dt>inpdol</dt><dd><p>Inpatient expenses:
+all covered inpatient expenses in a hospital, mental hospital,
+or nursing home,
+excluding outpatient care and renal dialysis.</p>
+</dd>
+<dt>meddol</dt><dd><p>Medical expenses:
+all covered inpatient and outpatient services,
+including drugs, supplies, and inpatient costs of newborns
+excluding dental care and outpatient psychotherapy.</p>
+</dd>
+<dt>totadm</dt><dd><p>Hospital admissions:
+annual number of covered hospitalizations.</p>
+</dd>
+<dt>inpmis</dt><dd><p>Incomplete Hospital Records:
+missing inpatient records.</p>
+</dd>
+<dt>mentvis</dt><dd><p>Psychotherapy visits:
+indicates the annual number of outpatient visits for psychotherapy.
+It includes billed visits only.
+The limit was 52 covered visits per person per year.
+The count includes an initial visit to a psychiatrist or psychologist.</p>
+</dd>
+<dt>mdvis</dt><dd><p>Face-to-Face visits to physicians:
+annual covered outpatient visits with physician providers
+(excludes dental, psychotherapy, and
+radiology/anesthesiology/pathology-only visits).</p>
+</dd>
+<dt>notmdvis</dt><dd><p>Face-to-Face visits to nonphysicians:
+annual covered outpatient visits with nonphysician providers
+such as speech and physical therapists, chiropractors,
+podiatrists, acupuncturists, Christian Science etc.
+(excludes dental, healers, psychotherapy,
+and radiology/anesthesiology/pathology-only visits).</p>
+</dd>
+<dt>num</dt><dd><p>Family size.</p>
+</dd>
+<dt>mhi</dt><dd><p>Mental health index.</p>
+</dd>
+<dt>disea</dt><dd><p>Number of chronic diseases.</p>
+</dd>
+<dt>physlm</dt><dd><p>Physical limitations.</p>
+</dd>
+<dt>ghindx</dt><dd><p>General health index.</p>
+</dd>
+<dt>mdeoff</dt><dd><p>Maximum expenditure offer.</p>
+</dd>
+<dt>pioff</dt><dd><p>Participation incentive payment.</p>
+</dd>
+<dt>child</dt><dd><p>1 if age is less than 18 years.</p>
+</dd>
+<dt>fchild</dt><dd><p><code>female * child</code>.</p>
+</dd>
+<dt>lfam</dt><dd><p>log of <code>num</code> (family size).</p>
+</dd>
+<dt>lpi</dt><dd><p>log of <code>pioff</code> (participation incentive payment).</p>
+</dd>
+<dt>idp</dt><dd><p>1 if individual deductible plan.</p>
+</dd>
+<dt>logc</dt><dd><p><code>log(coins+1)</code>.</p>
+</dd>
+<dt>fmde</dt><dd><p>0 if <code>idp=1</code>,
+<code>ln(max(1,mdeoff/(0.01*coins)))</code> otherwise.</p>
+</dd>
+<dt>hlthg</dt><dd><p>1 if self-rated health is good
+&ndash; baseline is excellent self-rated health.</p>
+</dd>
+<dt>hlthf</dt><dd><p>1 if self-rated health is fair
+&ndash; baseline is excellent self-rated health.</p>
+</dd>
+<dt>hlthp</dt><dd><p>1 if self-rated health is poor
+&ndash; baseline is excellent self-rated health.</p>
+</dd>
+<dt>xghindx</dt><dd><p><code>ghindx</code> (general healt index)
+with imputations of missing values.</p>
+</dd>
+<dt>linc</dt><dd><p>log of <code>income</code> (family income).</p>
+</dd>
+<dt>lnum</dt><dd><p>log of <code>num</code> (family size).</p>
+</dd>
+<dt>lnmeddol</dt><dd><p>log of <code>meddol</code> (medical expenses).</p>
+</dd>
+<dt>binexp</dt><dd><p>1 if <code>meddol</code> &gt; 0.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Data sets of Cameron and Trivedi (2005),
+<a href="http://cameron.econ.ucdavis.edu/mmabook/mmadata.html">http://cameron.econ.ucdavis.edu/mmabook/mmadata.html</a>.
+</p>
+<p>Additional information of variables
+from Table 20.4 of Cameron and Trivedi (2005)
+and from Newhouse (1999).
+</p>
+
+
+<h3>References</h3>
+
+<p>Cameron, A. C. and Trivedi, P. K. (2005)
+<em>Microeconometrics: Methods and Applications</em>,
+Cambridge University Press.
+</p>
+<p>Newhouse, J. P. (1999)
+<em>RAND Health Insurance Experiment [in Metropolitan and Non-Metropolitan
+Areas of the United States], 1974&ndash;1982</em>,
+ICPSR Inter-university Consortium for Political and Social Research,
+Aggregated Claims Series,
+Volume 1: Codebook for Fee-for-Service Annual Expenditures and Visit Counts,
+ICPSR 6439.
+</p>
+<p>Wikipedia, <em>RAND Health Insurance Experiment</em>,
+<a href="https://en.wikipedia.org/wiki/RAND_Health_Insurance_Experiment">https://en.wikipedia.org/wiki/RAND_Health_Insurance_Experiment</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Cameron and Trivedi (2005): Section 16.6, page 553ff
+data( RandHIE )
+subsample &lt;- RandHIE$year == 2 &amp; !is.na( RandHIE$educdec )
+selectEq &lt;- binexp ~ logc + idp + lpi + fmde + physlm + disea +
+   hlthg + hlthf + hlthp + linc + lfam + educdec + xage + female +
+   child + fchild + black
+outcomeEq &lt;- lnmeddol ~ logc + idp + lpi + fmde + physlm + disea +
+   hlthg + hlthf + hlthp + linc + lfam + educdec + xage + female +
+   child + fchild + black
+# ML estimation
+cameron &lt;- selection( selectEq, outcomeEq, data = RandHIE[ subsample, ] )
+summary( cameron )
+</code></pre>
+
+
+</div>
+</body></html>
