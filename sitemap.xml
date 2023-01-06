@@ -10,6 +10,9 @@
     <loc>/LICENSE.html</loc>
   </url>
   <url>
+    <loc>/README.html</loc>
+  </url>
+  <url>
     <loc>/articles/data.html</loc>
   </url>
   <url>
@@ -3920,6 +3923,129 @@
   </url>
   <url>
     <loc>/doc/multgee/housing.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Alfalfa.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Assay.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/BodyWeight.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Cefamandole.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Dialyzer.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Earthquake.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Fatigue.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Gasoline.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Glucose.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Glucose2.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Gun.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/IGF.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Machines.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/MathAchSchool.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/MathAchieve.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Meat.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Milk.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Muscle.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Nitrendipene.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Oats.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Orthodont.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Ovary.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Oxboys.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Oxide.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/PBG.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Phenobarb.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Pixel.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Quinidine.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Rail.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/RatPupWeight.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Relaxin.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Remifentanil.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Soybean.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Spruce.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Tetracycline1.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Tetracycline2.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Wafer.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Wheat.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/Wheat2.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/bdf.html</loc>
+  </url>
+  <url>
+    <loc>/doc/nlme/ergoStool.html</loc>
   </url>
   <url>
     <loc>/doc/nycflights13/airlines.html</loc>
