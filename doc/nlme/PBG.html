@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head><title>R: Effect of Phenylbiguanide on Blood Pressure</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>PBG</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Effect of Phenylbiguanide on Blood Pressure</h2>
+
+<h3>Description</h3>
+
+<p>The <code>PBG</code> data frame has 60 rows and 5 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>deltaBP</dt><dd>
+<p>a numeric vector
+</p>
+</dd>
+<dt>dose</dt><dd>
+<p>a numeric vector
+</p>
+</dd>
+<dt>Run</dt><dd>
+<p>an ordered factor with levels
+<code>T5</code> &lt; <code>T4</code> &lt; <code>T3</code> &lt; <code>T2</code> &lt; <code>T1</code> &lt; <code>P5</code> &lt; <code>P3</code> &lt; <code>P2</code> &lt; <code>P4</code> &lt; <code>P1</code>
+</p>
+</dd>
+<dt>Treatment</dt><dd>
+<p>a factor with levels
+<code>MDL 72222</code> 
+<code>Placebo</code> 
+</p>
+</dd>
+<dt>Rabbit</dt><dd>
+<p>an ordered factor with levels
+<code>5</code> &lt; <code>3</code> &lt; <code>2</code> &lt; <code>4</code> &lt; <code>1</code>
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data on an experiment to examine the effect of a antagonist MDL 72222
+on the change in blood pressure experienced with increasing dosage of
+phenylbiguanide are described in Ludbrook (1994) and analyzed
+in Venables and Ripley (2002, section 10.3).  Each of five rabbits was exposed to
+increasing doses of phenylbiguanide after having either a placebo or
+the HD5-antagonist MDL 72222 administered.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.  (Appendix A.21)
+</p>
+<p>Venables, W. N. and Ripley, B. D. (2002) <em>Modern Applied
+Statistics with S (4th ed)</em>, Springer, New York.
+</p>
+<p>Ludbrook, J. (1994), Repeated measurements and multiple comparisons
+in cardiovascular research, <em>Cardiovascular Research</em>,
+<b>28</b>, 303-311.
+</p>
+
+
+</div>
+</body></html>

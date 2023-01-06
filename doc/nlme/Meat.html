@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: Tenderness of meat</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Meat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Tenderness of meat</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Meat</code> data frame has 30 rows and 4 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Storage</dt><dd>
+<p>an ordered factor specifying the storage treatment - 1 (0
+days), 2 (1 day),  3 (2 days), 4 (4 days), 5 (9 days), and 6
+(18 days)
+</p>
+</dd>
+<dt>score</dt><dd>
+<p>a numeric vector giving the tenderness score of beef roast.
+</p>
+</dd>
+<dt>Block</dt><dd>
+<p>an ordered factor identifying the muscle from which the
+roast was extracted with levels 
+<code>II</code> &lt; <code>V</code> &lt; <code>I</code> &lt; <code>III</code> &lt; <code>IV</code>
+</p>
+</dd>
+<dt>Pair</dt><dd>
+<p>an ordered factor giving the unique identifier for each pair
+of beef roasts with levels <code>II-1</code> &lt; ... &lt; <code>IV-1</code>
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Cochran and Cox (section 11.51, 1957) describe data from an
+experiment conducted at Iowa State College (Paul, 1943) to
+compare the effects of length of cold storage on the tenderness of
+beef roasts.  Six storage periods ranging from 0 to 18 days were used.
+Thirty roasts were scored by four judges on a scale from 0 to 10, with
+the score increasing with tenderness. The response was the sum of all
+four scores. Left and right roasts from the same animal were grouped
+into pairs, which were further grouped into five blocks, according to
+the muscle from which they were extracted. Different storage periods
+were applied to each roast within a pair according to a balanced
+incomplete block design.</p>
+
+
+<h3>Source</h3>
+
+<p>Cochran, W. G. and Cox, G. M. (1957), <em>Experimental Designs</em>,
+Wiley, New York.
+</p>
+
+
+</div>
+</body></html>

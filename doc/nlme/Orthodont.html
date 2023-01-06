@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><title>R: Growth curve data on an orthdontic measurement</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Orthodont</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Growth curve data on an orthdontic measurement</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Orthodont</code> data frame has 108 rows and 4 columns of the
+change in an orthdontic measurement over time for several young subjects.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>distance</dt><dd>
+<p>a numeric vector of distances from the pituitary to the
+pterygomaxillary fissure (mm).  These distances are measured
+on x-ray images of the skull.
+</p>
+</dd>
+<dt>age</dt><dd>
+<p>a numeric vector of ages of the subject (yr).
+</p>
+</dd>
+<dt>Subject</dt><dd>
+<p>an ordered factor indicating the subject on which the
+measurement was made.  The levels are labelled <code>M01</code>
+to <code>M16</code> for the males and <code>F01</code> to <code>F13</code> for
+the females.  The ordering is by increasing average distance
+within sex.
+</p>
+</dd>
+<dt>Sex</dt><dd>
+<p>a factor with levels
+<code>Male</code> and
+<code>Female</code> 
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Investigators at the University of North Carolina Dental School
+followed the growth of 27 children (16 males, 11 females) from age 8
+until age 14.  Every two years they measured the distance between the
+pituitary and the pterygomaxillary fissure, two points that are easily
+identified on x-ray exposures of the side of the head.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.  (Appendix A.17)
+</p>
+<p>Potthoff, R. F. and Roy,  S. N. (1964), &ldquo;A generalized multivariate
+analysis of variance model useful especially for growth curve
+problems&rdquo;, <em>Biometrika</em>, <b>51</b>, 313&ndash;326.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>formula(Orthodont)
+plot(Orthodont)
+</code></pre>
+
+
+</div>
+</body></html>

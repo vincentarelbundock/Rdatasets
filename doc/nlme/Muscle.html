@@ -1,0 +1,66 @@
+<!DOCTYPE html><html><head><title>R: Contraction of heart muscle sections</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Muscle</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Contraction of heart muscle sections</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Muscle</code> data frame has 60 rows and 3 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Strip</dt><dd>
+<p>an ordered factor indicating the strip of muscle being measured.
+</p>
+</dd>
+<dt>conc</dt><dd>
+<p>a numeric vector giving the concentration of CaCl2
+</p>
+</dd>
+<dt>length</dt><dd>
+<p>a numeric vector giving the shortening of the heart muscle strip.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Baumann and Waldvogel (1963) describe data on the shortening of heart
+muscle strips dipped in a <code class="reqn">\mbox{CaCl}{}_2</code> solution.
+The muscle strips are taken from the left auricle of a rat's heart.</p>
+
+
+<h3>Source</h3>
+
+<p>Baumann, F. and Waldvogel, F. (1963), La restitution pastsystolique
+de la contraction de l'oreillette gauche du rat. Effets de divers
+ions et de l'acetylcholine, <em>Helvetica Physiologica Acta</em>,
+<b>21</b>.
+</p>
+
+
+</div>
+</body></html>

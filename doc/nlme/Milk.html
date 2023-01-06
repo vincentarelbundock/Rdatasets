@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: Protein content of cows' milk</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Milk</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Protein content of cows' milk</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Milk</code> data frame has 1337 rows and 4 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>protein</dt><dd>
+<p>a numeric vector giving the protein content of the milk.
+</p>
+</dd>
+<dt>Time</dt><dd>
+<p>a numeric vector giving the time since calving (weeks).
+</p>
+</dd>
+<dt>Cow</dt><dd>
+<p>an ordered factor giving a unique identifier for each cow.
+</p>
+</dd>
+<dt>Diet</dt><dd>
+<p>a factor with levels
+<code>barley</code>, 
+<code>barley+lupins</code>, and 
+<code>lupins</code> identifying the diet for each cow.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Diggle, Liang, and Zeger (1994) describe data on the protein content
+of cows' milk in the weeks following calving.  The cattle are grouped
+according to whether they are fed a diet with barley alone, with
+barley and lupins, or with lupins alone. 
+</p>
+
+
+<h3>Source</h3>
+
+<p>Diggle, Peter J., Liang, Kung-Yee and Zeger, Scott L. (1994),
+<em>Analysis of longitudinal data</em>, Oxford University Press,
+Oxford.
+</p>
+
+
+</div>
+</body></html>

@@ -60,6 +60,7 @@ Imports:
     mosaicData,
     mstate,
     multgee,
+    nlme,
     nycflights13,
     openintro,
     palmerpenguins,

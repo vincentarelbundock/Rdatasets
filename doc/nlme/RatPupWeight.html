@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><title>R: The weight of rat pups</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>RatPupWeight</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The weight of rat pups</h2>
+
+<h3>Description</h3>
+
+<p>The <code>RatPupWeight</code> data frame has 322 rows and 5 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>weight</dt><dd>
+<p>a numeric vector
+</p>
+</dd>
+<dt>sex</dt><dd>
+<p>a factor with levels
+<code>Male</code> 
+<code>Female</code> 
+</p>
+</dd>
+<dt>Litter</dt><dd>
+<p>an ordered factor with levels
+<code>9</code> &lt; <code>8</code> &lt; <code>7</code> &lt; <code>4</code> &lt; <code>2</code> &lt; <code>10</code> &lt; <code>1</code> &lt; <code>3</code> &lt; <code>5</code> &lt; <code>6</code> &lt; <code>21</code> &lt; <code>22</code> &lt; <code>24</code> &lt; <code>27</code> &lt; <code>26</code> &lt; <code>25</code> &lt; <code>23</code> &lt; <code>17</code> &lt; <code>11</code> &lt; <code>14</code> &lt; <code>13</code> &lt; <code>15</code> &lt; <code>16</code> &lt; <code>20</code> &lt; <code>19</code> &lt; <code>18</code> &lt; <code>12</code>
+</p>
+</dd>
+<dt>Lsize</dt><dd>
+<p>a numeric vector
+</p>
+</dd>
+<dt>Treatment</dt><dd>
+<p>an ordered factor with levels
+<code>Control</code> &lt; <code>Low</code> &lt; <code>High</code>
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.
+</p>
+
+
+</div>
+</body></html>

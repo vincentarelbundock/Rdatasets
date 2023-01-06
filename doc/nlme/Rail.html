@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><title>R: Evaluation of Stress in Railway Rails</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Rail</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Evaluation of Stress in Railway Rails</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Rail</code> data frame has 18 rows and 2 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Rail</dt><dd>
+<p>an ordered factor identifying the rail on which the
+measurement was made.
+</p>
+</dd>
+<dt>travel</dt><dd>
+<p>a numeric vector giving the travel time for ultrasonic
+head-waves in the rail (nanoseconds).  The value given is the
+original travel time minus 36,100 nanoseconds.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Devore (2000, Example 10.10, p. 427) cites data from an article in
+<em>Materials Evaluation</em> on &ldquo;a study of travel time for a certain
+type of wave that results from longitudinal stress of rails used for
+railroad track.&rdquo;
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.  (Appendix A.26)
+</p>
+<p>Devore, J. L. (2000), <em>Probability and Statistics for
+Engineering and the Sciences (5th ed)</em>, Duxbury, Boston, MA.
+</p>
+
+
+</div>
+</body></html>

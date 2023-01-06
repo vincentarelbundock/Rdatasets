@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><title>R: Pharmacokinetics of tetracycline</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Tetracycline1</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Pharmacokinetics of tetracycline</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Tetracycline1</code> data frame has 40 rows and 4 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>conc</dt><dd>
+<p>a numeric vector
+</p>
+</dd>
+<dt>Time</dt><dd>
+<p>a numeric vector
+</p>
+</dd>
+<dt>Subject</dt><dd>
+<p>an ordered factor with levels
+<code>5</code> &lt; <code>3</code> &lt; <code>2</code> &lt; <code>4</code> &lt; <code>1</code>
+</p>
+</dd>
+<dt>Formulation</dt><dd>
+<p>a factor with levels
+<code>tetrachel</code> 
+<code>tetracyn</code> 
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.
+</p>
+
+
+</div>
+</body></html>

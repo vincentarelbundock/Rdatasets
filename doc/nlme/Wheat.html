@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head><title>R: Yields by growing conditions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Wheat</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Yields by growing conditions</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Wheat</code> data frame has 48 rows and 4 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Tray</dt><dd>
+<p>an ordered factor with levels
+<code>3</code> &lt; <code>1</code> &lt; <code>2</code> &lt; <code>4</code> &lt; <code>5</code> &lt; <code>6</code> &lt; <code>8</code> &lt; <code>9</code> &lt; <code>7</code> &lt; <code>12</code> &lt; <code>11</code> &lt; <code>10</code>
+</p>
+</dd>
+<dt>Moisture</dt><dd>
+<p>a numeric vector
+</p>
+</dd>
+<dt>fertilizer</dt><dd>
+<p>a numeric vector
+</p>
+</dd>
+<dt>DryMatter</dt><dd>
+<p>a numeric vector
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.
+</p>
+
+
+</div>
+</body></html>

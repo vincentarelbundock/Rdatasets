@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: X-ray pixel intensities over time</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Pixel</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>X-ray pixel intensities over time</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Pixel</code> data frame has 102 rows and 4 columns of data on the
+pixel intensities of CT scans of dogs over time
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Dog</dt><dd>
+<p>a factor with levels <code>1</code> to <code>10</code> designating the dog
+on which the scan was made
+</p>
+</dd>
+<dt>Side</dt><dd>
+<p>a factor with levels <code>L</code> and <code>R</code> designating the side
+of the dog being scanned
+</p>
+</dd>
+<dt>day</dt><dd>
+<p>a numeric vector giving the day post injection of the contrast
+on which the scan was made
+</p>
+</dd>
+<dt>pixel</dt><dd>
+<p>a numeric vector of pixel intensities
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000) <em>Mixed-effects Models in
+S and S-PLUS</em>, Springer.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>fm1 &lt;- lme(pixel ~ day + I(day^2), data = Pixel,
+           random = list(Dog = ~ day, Side = ~ 1))
+summary(fm1)
+VarCorr(fm1)
+</code></pre>
+
+
+</div>
+</body></html>

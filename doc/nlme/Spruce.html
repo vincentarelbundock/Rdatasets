@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>R: Growth of Spruce Trees</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Spruce</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Growth of Spruce Trees</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Spruce</code> data frame has 1027 rows and 4 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Tree</dt><dd>
+<p>a factor giving a unique identifier for each tree.
+</p>
+</dd>
+<dt>days</dt><dd>
+<p>a numeric vector giving the number of days since the
+beginning of the experiment.
+</p>
+</dd>
+<dt>logSize</dt><dd>
+<p>a numeric vector giving the logarithm of an estimate of the
+volume of the tree trunk.
+</p>
+</dd>
+<dt>plot</dt><dd>
+<p>a factor identifying the plot in which the tree was grown.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Diggle, Liang, and Zeger (1994, Example 1.3, page 5)
+describe data on the growth of spruce trees that have been exposed to
+an ozone-rich atmosphere or to a normal atmosphere.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.  (Appendix A.28)
+</p>
+<p>Diggle, Peter J., Liang, Kung-Yee and Zeger, Scott L. (1994),
+<em>Analysis of longitudinal data</em>, Oxford University Press,
+Oxford.
+</p>
+
+
+</div>
+</body></html>
