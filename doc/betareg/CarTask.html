@@ -1,0 +1,106 @@
+<!DOCTYPE html><html><head><title>R: Partition-primed Probability Judgement Task for Car...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>CarTask</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Partition-primed Probability Judgement Task for Car Dealership
+</h2>
+
+<h3>Description</h3>
+
+<p>In this study participants were asked to judge how likely it is that a
+customer trades in a coupe or that a customer buys a car form a
+specific salesperson out of four possible salespersons.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(CarTask)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 155 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>task</code></dt><dd><p>a factor with levels <code>Car</code> and
+<code>Salesperson</code> indicating the condition.</p>
+</dd>
+<dt><code>probability</code></dt><dd><p>a numeric vector of the estimated probability.</p>
+</dd>
+<dt><code>NFCCscale</code></dt><dd><p>a numeric vector of the NFCC scale.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>All participants in the study were undergraduate students at The
+Australian National University, some of whom obtained course credit in
+first-year Psychology for their participation in the study.
+</p>
+<p>The NFCC scale is a combined scale of the Need for Closure and Need
+for Certainty scales which are strongly correlated.
+</p>
+<p>For <code>task</code> the questions were:
+</p>
+
+<dl>
+<dt>Car</dt><dd><p>What is the probability that a customer trades in a coupe?</p>
+</dd>
+<dt>Salesperson</dt><dd><p>What is the probability that a customer buys a
+car from Carlos?</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Taken from Smithson et al. (2011) supplements.
+</p>
+
+
+<h3>References</h3>
+
+<p>Smithson, M., Merkle, E.C., and Verkuilen, J. (2011). Beta
+Regression Finite Mixture Models of Polarization and Priming.
+<em>Journal of Educational and Behavioral Statistics</em>, <b>36</b>(6), 804&ndash;831.
+doi: <a href="https://doi.org/10.3102/1076998610396893">10.3102/1076998610396893</a>
+</p>
+<p>Smithson, M., and Segale, C. (2009). Partition Priming in Judgments of
+Imprecise Probabilities. <em>Journal of Statistical Theory and
+Practice</em>, <b>3</b>(1), 169&ndash;181.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("CarTask", package = "betareg")
+library("flexmix")
+car_betamix &lt;- betamix(probability ~ 1, data = CarTask, k = 3,
+  extra_components = list(extraComponent(type = "uniform", coef = 1/2,
+  delta = 0.01), extraComponent(type = "uniform", coef = 1/4, delta = 0.01)),
+  FLXconcomitant = FLXPmultinom(~ task))
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>R: Imprecise Probabilities for Sunday Weather and Boeing Stock...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ImpreciseTask</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Imprecise Probabilities for Sunday Weather and Boeing Stock Task
+</h2>
+
+<h3>Description</h3>
+
+<p>In this study participants were asked to estimate upper and lower
+probabilities for event to occur and not to occur.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(ImpreciseTask)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 242 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>task</code></dt><dd><p>a factor with levels <code>Boeing stock</code> and <code>Sunday weather</code>.</p>
+</dd>
+<dt><code>location</code></dt><dd><p>a numeric vector of the average of the lower
+estimate for the event not to occur and the upper estimate for the
+event to occur.</p>
+</dd>
+<dt><code>difference</code></dt><dd><p>a numeric vector of the differences of the
+lower and upper estimate for the event to occur.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>All participants in the study were either first- or second-year
+undergraduate students in psychology, none of whom had a strong
+background in probability or were familiar with imprecise probability
+theories. 
+</p>
+<p>For the sunday weather task see <code>WeatherTask</code>. For the Boeing
+stock task participants were asked to estimate the probability that
+Boeing's stock would rise more than those in a list of 30 companies.
+</p>
+<p>For each task participants were asked to provide lower and upper
+estimates for the event to occur and not to occur.  
+</p>
+
+
+<h3>Source</h3>
+
+<p>Taken from Smithson et al. (2011) supplements.
+</p>
+
+
+<h3>References</h3>
+
+<p>Smithson, M., Merkle, E.C., and Verkuilen, J. (2011). Beta
+Regression Finite Mixture Models of Polarization and Priming.
+<em>Journal of Educational and Behavioral Statistics</em>, <b>36</b>(6), 804&ndash;831.
+doi: <a href="https://doi.org/10.3102/1076998610396893">10.3102/1076998610396893</a>
+</p>
+<p>Smithson, M., and Segale, C. (2009). Partition Priming in Judgments of
+Imprecise Probabilities. <em>Journal of Statistical Theory and
+Practice</em>, <b>3</b>(1), 169&ndash;181.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("ImpreciseTask", package = "betareg")
+library("flexmix")
+wt_betamix &lt;- betamix(location ~ difference * task, data = ImpreciseTask, k = 2,
+  extra_components = extraComponent(type = "betareg", coef =
+    list(mean = 0, precision = 8)),
+  FLXconcomitant = FLXPmultinom(~ task))
+</code></pre>
+
+
+</div>
+</body></html>

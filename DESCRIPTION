@@ -19,6 +19,7 @@ Remotes:
 Imports: 
     AER,
     asaur,
+    betareg,
     boot,
     car,
     carData,

@@ -1,0 +1,127 @@
+<!DOCTYPE html><html><head><title>R: Dyslexia and IQ Predicting Reading Accuracy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ReadingSkills</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Dyslexia and IQ Predicting Reading Accuracy</h2>
+
+<h3>Description</h3>
+
+<p>Data for assessing the contribution of non-verbal IQ to
+children's reading skills in dyslexic and non-dyslexic children.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("ReadingSkills")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 44 observations on 3 variables.
+</p>
+
+<dl>
+<dt>accuracy</dt><dd><p>reading score scaled to the open unit interval (see below).</p>
+</dd>
+<dt>dyslexia</dt><dd><p>factor. Is the child dyslexic? (A sum contrast rather
+than treatment contrast is employed.)</p>
+</dd>
+<dt>iq</dt><dd><p>non-verbal intelligence quotient transformed to z-scores.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data were collected by Pammer and Kevan (2004) and employed by
+Smithson and Verkuilen (2006). The original reading accuracy score was transformed
+by Smithson and Verkuilen (2006) so that <code>accuracy</code> is in the open unit
+interval (0, 1) and beta regression can be employed. First, the original accuracy
+was scaled using the minimal and maximal score (<code>a</code> and <code>b</code>, respectively)
+that can be obtained in the test: <code>(original_accuracy - a) / (b - a)</code>
+(<code>a</code> and <code>b</code> are not provided). Subsequently, the scaled score is transformed
+to the unit interval using a continuity correction: <code>(scaled_accuracy * (n-1) - 0.5) / n</code>
+(either with some rounding or using <code>n = 50</code> rather than 44).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Example 3 from Smithson and Verkuilen (2006) supplements.
+</p>
+
+
+<h3>References</h3>
+
+<p>Cribari-Neto, F., and Zeileis, A. (2010). Beta Regression in R.
+<em>Journal of Statistical Software</em>, <b>34</b>(2), 1&ndash;24.
+doi: <a href="https://doi.org/10.18637/jss.v034.i02">10.18637/jss.v034.i02</a>
+</p>
+<p>Grün, B., Kosmidis, I., and Zeileis, A. (2012).
+Extended Beta Regression in R: Shaken, Stirred, Mixed, and Partitioned.
+<em>Journal of Statistical Software</em>, <b>48</b>(11), 1&ndash;25.
+doi: <a href="https://doi.org/10.18637/jss.v048.i11">10.18637/jss.v048.i11</a>
+</p>
+<p>Pammer, K., and Kevan, A. (2004).
+The Contribution of Visual Sensitivity, Phonological Processing
+and Non-Verbal IQ to Children's Reading.
+<em>Unpublished manuscript</em>, The Australian National University, Canberra.
+</p>
+<p>Smithson, M., and Verkuilen, J. (2006).
+A Better Lemon Squeezer? Maximum-Likelihood Regression with
+Beta-Distributed Dependent Variables.
+<em>Psychological Methods</em>, <b>11</b>(7), 54&ndash;71.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>betareg</code>, <code>MockJurors</code>, <code>StressAnxiety</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("ReadingSkills", package = "betareg")
+
+## Smithson &amp; Verkuilen (2006, Table 5)
+## OLS regression
+## (Note: typo in iq coefficient: 0.3954 instead of 0.3594)
+rs_ols &lt;- lm(qlogis(accuracy) ~ dyslexia * iq, data = ReadingSkills)
+summary(rs_ols)
+## Beta regression (with numerical rather than analytic standard errors)
+## (Note: Smithson &amp; Verkuilen erroneously compute one-sided p-values)
+rs_beta &lt;- betareg(accuracy ~ dyslexia * iq | dyslexia + iq,
+  data = ReadingSkills, hessian = TRUE)
+summary(rs_beta)
+
+## visualization
+plot(accuracy ~ iq, data = ReadingSkills, col = as.numeric(dyslexia), pch = 19)
+nd &lt;- data.frame(dyslexia = "no", iq = -30:30/10)
+lines(nd$iq, predict(rs_beta, nd))
+lines(nd$iq, plogis(predict(rs_ols, nd)), lty = 2)
+nd &lt;- data.frame(dyslexia = "yes", iq = -30:30/10)
+lines(nd$iq, predict(rs_beta, nd), col = 2)
+lines(nd$iq, plogis(predict(rs_ols, nd)), col = 2, lty = 2)
+
+## see demo("SmithsonVerkuilen2006", package = "betareg") for more details
+</code></pre>
+
+
+</div>
+</body></html>
