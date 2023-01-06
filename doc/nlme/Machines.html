@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><title>R: Productivity Scores for Machines and Workers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Machines</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Productivity Scores for Machines and Workers</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Machines</code> data frame has 54 rows and 3 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Worker</dt><dd>
+<p>an ordered factor giving the unique identifier for the worker.
+</p>
+</dd>
+<dt>Machine</dt><dd>
+<p>a factor with levels
+<code>A</code>, 
+<code>B</code>, and 
+<code>C</code> identifying the machine brand.
+</p>
+</dd>
+<dt>score</dt><dd>
+<p>a productivity score.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data on an experiment to compare three brands of machines used in an
+industrial process are presented in Milliken and Johnson (p. 285,
+1992). Six workers were chosen randomly among the
+employees of a factory to operate each machine three times. The
+response is an overall productivity score taking into account the
+number and quality of components produced.</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models
+in S and S-PLUS</em>, Springer, New York.  (Appendix A.14)
+</p>
+<p>Milliken, G. A. and Johnson, D. E. (1992), <em>Analysis of Messy Data,
+Volume I: Designed Experiments</em>, Chapman and Hall, London.
+</p>
+
+
+</div>
+</body></html>

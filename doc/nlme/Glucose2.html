@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: Glucose Levels Following Alcohol Ingestion</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Glucose2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Glucose Levels Following Alcohol Ingestion</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Glucose2</code> data frame has 196 rows and 4 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Subject</dt><dd>
+<p>a factor with levels
+<code>1</code> to <code>7</code> identifying the subject whose glucose
+level is measured. 
+</p>
+</dd>
+<dt>Date</dt><dd>
+<p>a factor with levels
+<code>1</code> 
+<code>2</code>
+indicating the occasion in which the experiment was conducted.
+</p>
+</dd>
+<dt>Time</dt><dd>
+<p>a numeric vector giving the time since alcohol ingestion (in min/10).
+</p>
+</dd>
+<dt>glucose</dt><dd>
+<p>a numeric vector giving the blood glucose level (in mg/dl).
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Hand and Crowder (Table A.14, pp. 180-181, 1996) describe data on
+the blood glucose levels measured at 14 time points over 5 hours for 7
+volunteers who took alcohol at time 0. The same experiment was
+repeated on a second date with the same subjects but with a dietary
+additive used for all subjects.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.  (Appendix A.10)
+</p>
+<p>Hand, D. and Crowder, M. (1996), <em>Practical Longitudinal Data
+Analysis</em>, Chapman and Hall, London.
+</p>
+
+
+</div>
+</body></html>

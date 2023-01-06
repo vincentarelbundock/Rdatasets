@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><title>R: Counts of Ovarian Follicles</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Ovary</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Counts of Ovarian Follicles</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Ovary</code> data frame has 308 rows and 3 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Mare</dt><dd>
+<p>an ordered factor indicating the mare on which the
+measurement is made.
+</p>
+</dd>
+<dt>Time</dt><dd>
+<p>time in the estrus cycle.  The data were recorded daily from 3
+days before ovulation until 3 days after the next ovulation. The
+measurement times for each mare are scaled so that the ovulations for
+each mare occur at times 0 and 1.
+</p>
+</dd>
+<dt>follicles</dt><dd>
+<p>the number of ovarian follicles greater than 10 mm in diameter.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Pierson and Ginther (1987) report on a study of the number of large
+ovarian follicles detected in different mares at several times in
+their estrus cycles.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.  (Appendix A.18)
+</p>
+<p>Pierson, R. A. and Ginther, O. J. (1987), Follicular population
+dynamics during the estrus cycle of the mare, <em>Animal
+Reproduction Science</em>, <b>14</b>, 219-231.
+</p>
+
+
+</div>
+</body></html>

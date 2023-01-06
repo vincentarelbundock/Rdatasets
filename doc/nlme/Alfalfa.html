@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: Split-Plot Experiment on Varieties of Alfalfa</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Alfalfa</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Split-Plot Experiment on Varieties of Alfalfa</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Alfalfa</code> data frame has 72 rows and 4 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Variety</dt><dd>
+<p>a factor with levels
+<code>Cossack</code>,
+<code>Ladak</code>, and 
+<code>Ranger</code> 
+</p>
+</dd>
+<dt>Date</dt><dd>
+<p>a factor with levels
+<code>None</code> 
+<code>S1</code> 
+<code>S20</code> 
+<code>O7</code> 
+</p>
+</dd>
+<dt>Block</dt><dd>
+<p>a factor with levels
+<code>1</code> 
+<code>2</code> 
+<code>3</code> 
+<code>4</code> 
+<code>5</code> 
+<code>6</code> 
+</p>
+</dd>
+<dt>Yield</dt><dd>
+<p>a numeric vector
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>These data are described in Snedecor and Cochran (1980) as
+an example of a split-plot design. The treatment structure used in the
+experiment was a 3<code class="reqn"> x </code>4 full factorial, with three varieties of
+alfalfa and four dates of third cutting in 1943. The experimental
+units were arranged into six blocks, each subdivided into four plots.
+The varieties of alfalfa (<em>Cossac</em>, <em>Ladak</em>, and
+<em>Ranger</em>) were assigned randomly to the blocks and the dates of
+third cutting (<em>None</em>, <em>S1</em>&mdash;September 1,
+<em>S20</em>&mdash;September 20, and <em>O7</em>&mdash;October 7) were randomly
+assigned to the plots.  All four dates were used on each block.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.  (Appendix A.1)
+</p>
+<p>Snedecor, G. W. and Cochran, W. G. (1980), <em>Statistical Methods (7th
+ed)</em>, Iowa State University Press, Ames, IA
+</p>
+
+
+</div>
+</body></html>

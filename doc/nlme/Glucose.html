@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><title>R: Glucose levels over time</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Glucose</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Glucose levels over time</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Glucose</code> data frame has 378 rows and 4 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Subject</dt><dd>
+<p>an ordered factor with levels
+<code>6</code> &lt; <code>2</code> &lt; <code>3</code> &lt; <code>5</code> &lt; <code>1</code> &lt; <code>4</code>
+</p>
+</dd>
+<dt>Time</dt><dd>
+<p>a numeric vector
+</p>
+</dd>
+<dt>conc</dt><dd>
+<p>a numeric vector of glucose levels
+</p>
+</dd>
+<dt>Meal</dt><dd>
+<p>an ordered factor with levels
+<code>2am</code> &lt; <code>6am</code> &lt; <code>10am</code> &lt; <code>2pm</code> &lt; <code>6pm</code> &lt; <code>10pm</code>
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Hand, D. and Crowder, M. (1996), <em>Practical Longitudinal Data
+Analysis</em>, Chapman and Hall, London.
+</p>
+
+
+</div>
+</body></html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html><html><head><title>R: Pharmacokinetics of Remifentanil</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Remifentanil</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Pharmacokinetics of Remifentanil</h2>
+
+<h3>Description</h3>
+
+<p>Intravenous infusion of remifentanil (a strong analgesic) in different
+rates over varying time periods was applied to a total of 65 patients.
+Concentration measurements of remifentanil were taken along with several
+covariates resulting in the <code>Remifentanil</code> data frame with 2107 rows
+and 12 columns.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Remifentanil", package = "nlme")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame (of class <code>"groupedData"</code>, specifically
+<code>"nfnGroupedData"</code>) contains the following columns:
+</p>
+
+<dl>
+<dt><code>ID</code>:</dt><dd><p>numerical (patient) IDs.</p>
+</dd>
+<dt><code>Subject</code>:</dt><dd><p>an <code>ordered</code> factor with 65 levels (of the
+<code>ID</code>s): <code>30</code> &lt; <code>21</code> &lt; <code>25</code> &lt; <code>23</code> &lt;
+<code>29</code> &lt; ... ... &lt; <code>36</code> &lt; <code>6</code> &lt; <code>5</code> &lt; <code>10</code> &lt; <code>9</code>.</p>
+</dd>
+<dt><code>Time</code>:</dt><dd><p>time from beginning of infusion in minutes (<code>numeric</code>).</p>
+</dd>
+<dt><code>conc</code>:</dt><dd><p>remifentanil concentration in [ng / ml] (numeric).</p>
+</dd>
+<dt><code>Rate</code>:</dt><dd><p>infusion rate in [µg / min].</p>
+</dd>
+<dt><code>Amt</code>:</dt><dd><p>amount of remifentanil given in the current time interval in [µg].</p>
+</dd>
+<dt><code>Age</code>:</dt><dd><p>age of the patient in years.</p>
+</dd>
+<dt><code>Sex</code>:</dt><dd><p>gender of the patient, a <code>factor</code> with levels
+<code>Female</code> and <code>Male</code>.</p>
+</dd>
+<dt><code>Ht</code>:</dt><dd><p>height of the patient in cm.</p>
+</dd>
+<dt><code>Wt</code>:</dt><dd><p>weight of the patient in kg.</p>
+</dd>
+<dt><code>BSA</code>:</dt><dd><p>body surface area (DuBois and DuBois 1916): <code class="reqn">%
+	BSA := Wt^{0.425} \cdot Ht^{0.725} \cdot 0.007184</code>.</p>
+</dd>
+<dt><code>LBM</code>:</dt><dd><p>lean body mass (James 1976), with slightly different
+formula for
+men <code class="reqn">LBM_m := 1.1  Wt - 128 (Wt/Ht)^2</code>, and
+women <code class="reqn">LBM_f := 1.07 Wt - 148 (Wt/Ht)^2</code>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Author(s)</h3>
+
+<p>of this help page: Niels Hagenbuch and Martin Maechler, SfS ETH Zurich.</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000).
+<em>Mixed-Effects Models in S and S-PLUS</em>, Springer, New York.
+</p>
+
+
+<h3>References</h3>
+
+<p>Minto CF, Schnider TW, Egan TD, Youngs E, Lemmens HJM, Gambus PL, Billard
+V, Hoke JF, Moore KHP, Hermann DJ, Muir KT, Mandema JW, Shafer SL (1997).
+Influence of age and gender on the pharmacokinetics and pharmacodynamics
+of remifentanil: I. Model development.
+<em>Anesthesiology</em> <b>86</b> 1, 10&ndash;23.
+<a href="https://pubs.asahq.org/anesthesiology/article/86/1/10/35947/Influence-of-Age-and-Gender-on-the">https://pubs.asahq.org/anesthesiology/article/86/1/10/35947/Influence-of-Age-and-Gender-on-the</a>
+</p>
+<p>Charles F. Minto, Thomas W. Schnider and Steven L. Shafer (1997).
+Pharmacokinetics and Pharmacodynamics of Remifentanil: II. Model Application.
+<em>Anesthesiology</em> <b>86</b> 1, 24&ndash;33.
+<a href="https://pubs.asahq.org/anesthesiology/article/86/1/24/35925/Pharmacokinetics-and-Pharmacodynamics-of">https://pubs.asahq.org/anesthesiology/article/86/1/24/35925/Pharmacokinetics-and-Pharmacodynamics-of</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>plot(Remifentanil, type = "l", lwd = 2) # shows the 65 patients' remi profiles
+
+## The same on  log-log  scale  (*more* sensible for modeling ?):
+plot(Remifentanil, type = "l", lwd = 2, scales = list(log=TRUE))
+
+str(Remifentanil)
+summary(Remifentanil)
+
+plot(xtabs(~Subject, Remifentanil))
+summary(unclass(table(Remifentanil$Subject)))
+## between 20 and 54 measurements per patient (median: 24; mean: 32.42)
+
+## Only first measurement of each patient :
+dim(Remi.1 &lt;- Remifentanil[!duplicated(Remifentanil[,"ID"]),]) #  65 x 12
+
+LBMfn &lt;- function(Wt, Ht, Sex) ifelse(Sex == "Female",
+                                        1.07 * Wt - 148*(Wt/Ht)^2,
+                                        1.1  * Wt - 128*(Wt/Ht)^2)
+with(Remi.1,
+    stopifnot(all.equal(BSA, Wt^{0.425} * Ht^{0.725} * 0.007184, tol = 1.5e-5),
+              all.equal(LBM, LBMfn(Wt, Ht, Sex),                 tol = 7e-7)
+))
+
+## Rate: typically  3 µg / kg body weight, but :
+sunflowerplot(Rate ~ Wt, Remifentanil)
+abline(0,3, lty=2, col=adjustcolor("black", 0.5))
+</code></pre>
+
+
+</div>
+</body></html>

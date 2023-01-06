@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: Methods for firing naval guns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Gun</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Methods for firing naval guns</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Gun</code> data frame has 36 rows and 4 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>rounds</dt><dd>
+<p>a numeric vector
+</p>
+</dd>
+<dt>Method</dt><dd>
+<p>a factor with levels
+<code>M1</code> 
+<code>M2</code> 
+</p>
+</dd>
+<dt>Team</dt><dd>
+<p>an ordered factor with levels
+<code>T1S</code> &lt; <code>T3S</code> &lt; <code>T2S</code> &lt; <code>T1A</code> &lt;
+<code>T2A</code> &lt; <code>T3A</code> &lt; <code>T1H</code> &lt; <code>T3H</code> &lt;
+<code>T2H</code>
+</p>
+</dd>
+<dt>Physique</dt><dd>
+<p>an ordered factor with levels
+<code>Slight</code> &lt; <code>Average</code> &lt; <code>Heavy</code>
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Hicks (p.180, 1993) reports data from an experiment on
+methods for firing naval guns. Gunners of three different physiques
+(slight, average, and heavy) tested two firing methods. Both methods
+were tested twice by each of nine teams of three gunners with
+identical physique. The response was the number of rounds fired per
+minute.</p>
+
+
+<h3>Source</h3>
+
+<p>Hicks, C. R. (1993), <em>Fundamental Concepts in the Design of
+Experiments (4th ed)</em>, Harcourt Brace, New York.
+</p>
+
+
+</div>
+</body></html>

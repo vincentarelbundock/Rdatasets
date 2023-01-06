@@ -1,0 +1,82 @@
+<!DOCTYPE html><html><head><title>R: Ergometrics experiment with stool types</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ergoStool</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Ergometrics experiment with stool types</h2>
+
+<h3>Description</h3>
+
+<p>The <code>ergoStool</code> data frame has 36 rows and 3 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>effort</dt><dd>
+<p>a numeric vector giving the effort (Borg scale) required to
+arise from a stool.
+</p>
+</dd>
+<dt>Type</dt><dd>
+<p>a factor with levels
+<code>T1</code>, 
+<code>T2</code>, 
+<code>T3</code>, and 
+<code>T4</code> giving the stool type.
+</p>
+</dd>
+<dt>Subject</dt><dd>
+<p>an ordered factor giving a unique identifier for the subject
+in the experiment.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Devore (2000) cites data from an article in <em>Ergometrics</em> (1993,
+pp. 519-535) on &ldquo;The Effects of a Pneumatic Stool and a One-Legged
+Stool on Lower Limb Joint Load and Muscular Activity.&rdquo;
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.  (Appendix A.9)
+</p>
+<p>Devore, J. L. (2000), <em>Probability and Statistics for
+Engineering and the Sciences (5th ed)</em>, Duxbury, Boston, MA.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>fm1 &lt;-
+   lme(effort ~ Type, data = ergoStool, random = ~ 1 | Subject)
+anova( fm1 )
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><title>R: Rat weight over time for different diets</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>BodyWeight</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Rat weight over time for different diets</h2>
+
+<h3>Description</h3>
+
+<p>The <code>BodyWeight</code> data frame has 176 rows and 4 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>weight</dt><dd>
+<p>a numeric vector giving the body weight of the rat (grams).
+</p>
+</dd>
+<dt>Time</dt><dd>
+<p>a numeric vector giving the time at which the measurement is
+made (days).
+</p>
+</dd>
+<dt>Rat</dt><dd>
+<p>an ordered factor with levels <code>2</code> &lt; <code>3</code> &lt; <code>4</code>
+&lt; <code>1</code> &lt; <code>8</code> &lt; <code>5</code> &lt; <code>6</code> &lt; <code>7</code> &lt;
+<code>11</code> &lt; <code>9</code> &lt; <code>10</code> &lt; <code>12</code> &lt; <code>13</code> &lt;
+<code>15</code> &lt; <code>14</code> &lt; <code>16</code> identifying the rat whose
+weight is measured.
+</p>
+</dd>
+<dt>Diet</dt><dd>
+<p>a factor with levels
+<code>1</code> to <code>3</code> indicating the diet that the rat receives.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Hand and Crowder (1996) describe data on the body weights of rats
+measured over 64 days.  These data also appear in Table 2.4 of
+Crowder and Hand (1990).  The body weights of the rats (in grams)
+are measured on day 1 and every seven days thereafter until day 64,
+with an extra measurement on day 44. The experiment started several
+weeks before &ldquo;day 1.&rdquo;  There are three groups of rats, each on a
+different diet.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York. (Appendix A.3)
+</p>
+<p>Crowder, M. and Hand, D. (1990), <em>Analysis of Repeated
+Measures</em>, Chapman and Hall, London.
+</p>
+<p>Hand, D. and Crowder, M. (1996), <em>Practical Longitudinal Data
+Analysis</em>, Chapman and Hall, London.
+</p>
+
+
+</div>
+</body></html>

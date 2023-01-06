@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: Radioimmunoassay of IGF-I Protein</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>IGF</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Radioimmunoassay of IGF-I Protein</h2>
+
+<h3>Description</h3>
+
+<p>The <code>IGF</code> data frame has 237 rows and 3 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Lot</dt><dd>
+<p>an ordered factor giving the radioactive tracer lot.
+</p>
+</dd>
+<dt>age</dt><dd>
+<p>a numeric vector giving the age (in days) of the radioactive
+tracer.
+</p>
+</dd>
+<dt>conc</dt><dd>
+<p>a numeric vector giving the estimated concentration of IGF-I
+protein (ng/ml)
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Davidian and Giltinan (1995) describe data obtained during quality
+control radioimmunoassays for ten different lots of radioactive
+tracer used to calibrate the Insulin-like Growth Factor (IGF-I)
+protein concentration measurements. 
+</p>
+
+
+<h3>Source</h3>
+
+<p>Davidian, M. and Giltinan, D. M. (1995), <em>Nonlinear Models for
+Repeated Measurement Data</em>,  Chapman and Hall, London.
+</p>
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.  (Appendix A.11)
+</p>
+
+
+</div>
+</body></html>

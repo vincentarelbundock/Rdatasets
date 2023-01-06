@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: High-Flux Hemodialyzer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Dialyzer</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>High-Flux Hemodialyzer</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Dialyzer</code> data frame has 140 rows and 5 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Subject</dt><dd>
+<p>an ordered factor with levels
+<code>10</code> &lt; <code>8</code> &lt; <code>2</code> &lt; <code>6</code> &lt; <code>3</code> &lt;
+<code>5</code> &lt; <code>9</code> &lt; <code>7</code> &lt; <code>1</code> &lt; <code>4</code> &lt;
+<code>17</code> &lt; <code>20</code> &lt; <code>11</code> &lt; <code>12</code> &lt; <code>16</code> &lt;
+<code>13</code> &lt; <code>14</code> &lt; <code>18</code> &lt; <code>15</code> &lt; <code>19</code>
+giving the unique identifier for each subject
+</p>
+</dd>
+<dt>QB</dt><dd>
+<p>a factor with levels
+<code>200</code> and 
+<code>300</code> giving the bovine blood flow rate (dL/min).
+</p>
+</dd>
+<dt>pressure</dt><dd>
+<p>a numeric vector giving the transmembrane pressure (dmHg).
+</p>
+</dd>
+<dt>rate</dt><dd>
+<p>the hemodialyzer ultrafiltration rate (mL/hr).
+</p>
+</dd>
+<dt>index</dt><dd>
+<p>index of observation within subject&mdash;1 through 7.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Vonesh and Carter (1992) describe data measured on high-flux
+hemodialyzers to assess their <em>in vivo</em> ultrafiltration
+characteristics. The ultrafiltration rates (in mL/hr) of 20 high-flux
+dialyzers were measured at seven different transmembrane pressures (in
+dmHg). The <em>in vitro</em> evaluation of the dialyzers used bovine
+blood at flow rates of either 200~dl/min or 300~dl/min. The data,
+are also analyzed in Littell, Milliken, Stroup, and Wolfinger (1996).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York. (Appendix A.6)
+</p>
+<p>Vonesh, E. F. and Carter, R. L. (1992), Mixed-effects nonlinear
+regression for unbalanced repeated measures, <em>Biometrics</em>,
+<b>48</b>, 1-18.
+</p>
+<p>Littell, R. C., Milliken, G. A., Stroup, W. W. and Wolfinger,
+R. D. (1996), <em>SAS System for Mixed Models</em>, SAS Institute,
+Cary, NC.
+</p>
+
+
+</div>
+</body></html>

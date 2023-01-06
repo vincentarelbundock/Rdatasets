@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><title>R: Phenobarbitol Kinetics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Phenobarb</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Phenobarbitol Kinetics</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Phenobarb</code> data frame has 744 rows and 7 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Subject</dt><dd>
+<p>an ordered factor identifying the infant.
+</p>
+</dd>
+<dt>Wt</dt><dd>
+<p>a numeric vector giving the birth weight of the infant (kg).
+</p>
+</dd>
+<dt>Apgar</dt><dd>
+<p>an ordered factor giving the 5-minute Apgar score for
+the infant.  This is an indication of health of the newborn
+infant.
+</p>
+</dd>
+<dt>ApgarInd</dt><dd>
+<p>a factor indicating whether the 5-minute Apgar score is <code>&lt; 5</code>
+or <code>&gt;= 5</code>. 
+</p>
+</dd>
+<dt>time</dt><dd>
+<p>a numeric vector giving the time when the sample is drawn or
+drug administered (hr).
+</p>
+</dd>
+<dt>dose</dt><dd>
+<p>a numeric vector giving the dose of drug administered
+(<code class="reqn">u</code>g/kg).
+</p>
+</dd>
+<dt>conc</dt><dd>
+<p>a numeric vector giving the phenobarbital concentration in
+the serum (<code class="reqn">u</code>g/L).
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data from a pharmacokinetics study of phenobarbital in neonatal
+infants.  During the first few days of life the infants receive
+multiple doses of phenobarbital for prevention of seizures.  At
+irregular intervals blood samples are drawn and serum phenobarbital
+concentrations are determined.  The data
+were originally given in Grasela and Donn(1985) and are analyzed
+in Boeckmann, Sheiner and Beal (1994), in
+Davidian and Giltinan (1995), and in Littell et al. (1996).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.  (Appendix A.23)
+</p>
+<p>Davidian, M. and Giltinan, D. M. (1995), <em>Nonlinear Models for
+Repeated Measurement Data</em>,  Chapman and Hall, London.  (section 6.6)
+</p>
+<p>Grasela and Donn (1985), Neonatal population pharmacokinetics of
+phenobarbital derived from routine clinical data,
+<em>Developmental Pharmacology and Therapeutics</em>, <b>8</b>,
+374-383.
+</p>
+<p>Boeckmann, A. J., Sheiner, L. B., and Beal, S. L. (1994),
+<em>NONMEM Users Guide: Part V</em>, University of California, San
+Francisco.
+</p>
+<p>Littell, R. C., Milliken, G. A., Stroup, W. W. and Wolfinger,
+R. D. (1996), <em>SAS System for Mixed Models</em>, SAS Institute,
+Cary, NC.
+</p>
+
+
+</div>
+</body></html>

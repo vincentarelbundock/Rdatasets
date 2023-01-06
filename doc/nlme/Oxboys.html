@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><title>R: Heights of Boys in Oxford</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Oxboys</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Heights of Boys in Oxford</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Oxboys</code> data frame has 234 rows and 4 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Subject</dt><dd>
+<p>an ordered factor giving a unique identifier for each boy in
+the experiment
+</p>
+</dd>
+<dt>age</dt><dd>
+<p>a numeric vector giving the standardized age (dimensionless)
+</p>
+</dd>
+<dt>height</dt><dd>
+<p>a numeric vector giving the height of the boy (cm)
+</p>
+</dd>
+<dt>Occasion</dt><dd>
+<p>an ordered factor - the result of converting <code>age</code> from a
+continuous variable to a count so these slightly unbalanced
+data can be analyzed as balanced.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>These data are described in Goldstein (1987) as data on the
+height of a selection of boys from Oxford, England versus a
+standardized age.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in
+S and S-PLUS</em>, Springer, New York.  (Appendix A.19)
+</p>
+
+
+</div>
+</body></html>

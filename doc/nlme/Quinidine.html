@@ -1,0 +1,147 @@
+<!DOCTYPE html><html><head><title>R: Quinidine Kinetics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Quinidine</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Quinidine Kinetics</h2>
+
+<h3>Description</h3>
+
+<p>The <code>Quinidine</code> data frame has 1471 rows and 14 columns.
+</p>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt>Subject</dt><dd>
+<p>a factor identifying the patient on whom the data were collected.
+</p>
+</dd>
+<dt>time</dt><dd>
+<p>a numeric vector giving the time (hr) at which the drug was
+administered or the blood sample drawn.  This is measured
+from the time the patient entered the study.
+</p>
+</dd>
+<dt>conc</dt><dd>
+<p>a numeric vector giving the serum quinidine concentration (mg/L).
+</p>
+</dd>
+<dt>dose</dt><dd>
+<p>a numeric vector giving the dose of drug administered (mg).
+Although there were two different forms of quinidine
+administered, the doses were adjusted for differences in
+salt content by conversion to milligrams of quinidine base.
+</p>
+</dd>
+<dt>interval</dt><dd>
+<p>a numeric vector giving the when the drug has been given at
+regular intervals for a sufficiently long period of time to
+assume steady state behavior, the interval is recorded.
+</p>
+</dd>
+<dt>Age</dt><dd>
+<p>a numeric vector giving the age of the subject on entry to
+the study (yr).
+</p>
+</dd>
+<dt>Height</dt><dd>
+<p>a numeric vector giving the height of the subject on entry
+to the study (in.).
+</p>
+</dd>
+<dt>Weight</dt><dd>
+<p>a numeric vector giving the body weight of the subject (kg).
+</p>
+</dd>
+<dt>Race</dt><dd>
+<p>a factor with levels
+<code>Caucasian</code>, 
+<code>Latin</code>, and
+<code>Black</code> identifying the race of the subject.
+</p>
+</dd>
+<dt>Smoke</dt><dd>
+<p>a factor with levels
+<code>no</code> and
+<code>yes</code> giving smoking status at the time of the
+measurement.
+</p>
+</dd>
+<dt>Ethanol</dt><dd>
+<p>a factor with levels
+<code>none</code>, 
+<code>current</code>,
+<code>former</code> giving ethanol (alcohol) abuse status at the
+time of the measurement.
+</p>
+</dd>
+<dt>Heart</dt><dd>
+<p>a factor with levels
+<code>No/Mild</code>, 
+<code>Moderate</code>, and 
+<code>Severe</code> indicating congestive heart failure for the subject.
+</p>
+</dd>
+<dt>Creatinine</dt><dd>
+<p>an ordered factor with levels
+<code>&lt; 50</code> &lt; <code>&gt;= 50</code> indicating the creatinine clearance (mg/min).
+</p>
+</dd>
+<dt>glyco</dt><dd>
+<p>a numeric vector giving the alpha-1 acid glycoprotein
+concentration (mg/dL).  Often measured at the same time as
+the quinidine concentration.
+</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Verme et al. (1992) analyze routine clinical data on
+patients receiving the drug quinidine as a treatment for cardiac
+arrhythmia (atrial fibrillation or ventricular arrhythmias).  All
+patients were receiving oral quinidine doses.  At irregular intervals
+blood samples were drawn and serum concentrations of quinidine were
+determined.  These data are
+analyzed in several publications, including Davidian and Giltinan (1995,
+section 9.3).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Pinheiro, J. C. and Bates, D. M. (2000), <em>Mixed-Effects Models in S
+and S-PLUS</em>, Springer, New York.  (Appendix A.25)
+</p>
+<p>Davidian, M. and Giltinan, D. M. (1995), <em>Nonlinear Models for
+Repeated Measurement Data</em>,  Chapman and Hall, London.
+</p>
+<p>Verme, C. N., Ludden,  T. M., Clementi, W. A. and Harris,
+S. C. (1992), Pharmacokinetics of quinidine in male patients: A
+population analysis, <em>Clinical Pharmacokinetics</em>, <b>22</b>,
+468-480.
+</p>
+
+
+</div>
+</body></html>
