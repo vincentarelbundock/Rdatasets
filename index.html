@@ -66,7 +66,7 @@
 <div class="section level1">
 <div class="page-header"><h1 id="what-is-this">What is this?<a class="anchor" aria-label="anchor" href="#what-is-this"></a>
 </h1></div>
-<p><code>Rdatasets</code> is a collection of 1896 datasets which were originally distributed alongside the statistical software environment <code>R</code> and some of its add-on packages. The goal is to make these data more broadly accessible for teaching and statistical software development.</p>
+<p><code>Rdatasets</code> is a collection of 1937 datasets which were originally distributed alongside the statistical software environment <code>R</code> and some of its add-on packages. The goal is to make these data more broadly accessible for teaching and statistical software development.</p>
 </div>
 <div class="section level1">
 <h1 id="what-is-included">What is included?<a class="anchor" aria-label="anchor" href="#what-is-included"></a>
@@ -121,7 +121,8 @@
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">Rscript</span> scrape.R</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="bu">cd</span> doc</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="ex">../documentation.sh</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="ex">Rscript</span> -e <span class="st">"rmarkdown::render("</span>README.Rmd<span class="st">")"</span></span></code></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="bu">cd</span> ..</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="ex">Rscript</span> -e <span class="st">"rmarkdown::render("</span>README.Rmd<span class="st">")"</span></span></code></pre></div>
 <p>Second, commit to master.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="bu">cd</span> ..</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="fu">git</span> add .</span>
