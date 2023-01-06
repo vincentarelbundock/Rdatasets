@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: Proportion of Household Income Spent on Food</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>FoodExpenditure</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Proportion of Household Income Spent on Food</h2>
+
+<h3>Description</h3>
+
+<p>Data on proportion of income spent on food for a random sample of 38 households in a large US city.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("FoodExpenditure")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame containing 38 observations on 3 variables.
+</p>
+
+<dl>
+<dt>food</dt><dd><p>household expenditures for food.</p>
+</dd>
+<dt>income</dt><dd><p>household income.</p>
+</dd>
+<dt>persons</dt><dd><p>number of persons living in household.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Taken from Griffiths et al. (1993, Table 15.4).
+</p>
+
+
+<h3>References</h3>
+
+<p>Cribari-Neto, F., and Zeileis, A. (2010). Beta Regression in R.
+<em>Journal of Statistical Software</em>, <b>34</b>(2), 1&ndash;24.
+doi: <a href="https://doi.org/10.18637/jss.v034.i02">10.18637/jss.v034.i02</a>
+</p>
+<p>Ferrari, S.L.P., and Cribari-Neto, F. (2004).
+Beta Regression for Modeling Rates and Proportions.
+<em>Journal of Applied Statistics</em>, <b>31</b>(7), 799&ndash;815.
+</p>
+<p>Griffiths, W.E., Hill, R.C., and Judge, G.G. (1993).
+<em>Learning and Practicing Econometrics</em>
+New York: John Wiley and Sons.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>betareg</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("FoodExpenditure", package = "betareg")
+
+## Ferrari and Cribari-Neto (2004)
+## Section 4
+fe_lin &lt;- lm(I(food/income) ~ income + persons, data = FoodExpenditure)
+library("lmtest")
+bptest(fe_lin)
+
+## Table 2
+fe_beta &lt;- betareg(I(food/income) ~ income + persons, data = FoodExpenditure)
+summary(fe_beta)
+</code></pre>
+
+
+</div>
+</body></html>
