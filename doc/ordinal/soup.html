@@ -1,0 +1,124 @@
+<!DOCTYPE html><html><head><title>R: Discrimination study of packet soup</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>soup</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Discrimination study of packet soup
+</h2>
+
+<h3>Description</h3>
+
+<p>The <code>soup</code> data frame has 1847 rows and 13 variables. 185
+respondents participated in an A-not A discrimination test with
+sureness. Before experimentation the respondents were familiarized
+with the reference product and during experimentation, the respondents
+were asked to rate samples on an ordered scale with six categories
+given by combinations of (reference, not reference) and (sure, not
+sure, guess) from 'referene, sure' = 1 to 'not reference, sure' = 6.
+
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>soup
+</code></pre>
+
+
+<h3>Format</h3>
+
+
+<dl>
+<dt><code>RESP</code></dt><dd>
+<p>factor with 185 levels: the respondents in the study.
+</p>
+</dd>
+<dt><code>PROD</code></dt><dd>
+<p>factor with 2 levels: index reference and test products.
+</p>
+</dd>
+<dt><code>PRODID</code></dt><dd>
+<p>factor with 6 levels: index reference and the five test product
+variants.
+</p>
+</dd>
+<dt><code>SURENESS</code></dt><dd>
+<p>ordered factor with 6 levels: the respondents ratings of soup
+samples.
+</p>
+</dd>
+<dt><code>DAY</code></dt><dd>
+<p>factor with two levels: experimentation was split over two days.
+</p>
+</dd>
+<dt><code>SOUPTYPE</code></dt><dd>
+<p>factor with three levels: the type of soup regularly consumed by the
+respondent.
+</p>
+</dd>
+<dt><code>SOUPFREQ</code></dt><dd>
+<p>factor with 3 levels: the frequency with which the respondent
+consumes soup.
+</p>
+</dd>
+<dt><code>COLD</code></dt><dd>
+<p>factor with two levels: does the respondent have a cold?
+</p>
+</dd>
+<dt><code>EASY</code></dt><dd>
+<p>factor with ten levels: How easy did the respondent find the
+discrimation test? 1 = difficult, 10 = easy.
+</p>
+</dd>
+<dt><code>GENDER</code></dt><dd>
+<p>factor with two levels: gender of the respondent.
+</p>
+</dd>
+<dt><code>AGEGROUP</code></dt><dd>
+<p>factor with four levels: the age of the respondent.
+</p>
+</dd>
+<dt><code>LOCATION</code></dt><dd>
+<p>factor with three levels: three different locations where
+experimentation took place. 
+</p>
+</dd>
+</dl>
+
+
+
+
+
+
+<h3>Source</h3>
+
+<p>Data are produced by Unilever Research. Permission to publish
+the data is granted. 
+</p>
+
+
+<h3>References</h3>
+
+<p>Christensen, R. H. B., Cleaver, G. and Brockhoff, P. B.(2011)
+Statistical and Thurstonian models for the A-not A protocol with and
+without sureness. <em>Food Quality and Preference, 22</em>,
+pp. 542-549. 
+</p>
+
+
+</div>
+</body></html>
