@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><title>R: Germination Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>orob1</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2> Germination Data </h2>
+
+<h3>Description</h3>
+
+<p>[Data describing the germination] &ldquo;for seed <em>Orobanche cernua</em> cultivated in three dilutions of a bean 
+root extract. The mean proportions of the three sets are 0.142, 0.872 and 0.842, and the overall mean is 0.614.&rdquo;
+(Crowder, 1978, Table 1). 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(orob1)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 16 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt>dilution</dt><dd><p>a factor with 3 levels: <code>1/1</code>, <code>1/25</code> and <code>1/625</code></p>
+</dd></dl>
+<p>.
+</p>
+<dl>
+<dt>n</dt><dd><p>a numeric vector: the number of seeds exposed to germination.</p>
+</dd>
+<dt>y</dt><dd><p>a numeric vector: the number of seeds which actually germinated.</p>
+</dd>
+</dl>
+
+
+
+<h3>References</h3>
+
+<p>Crowder, M.J., 1978. <em>Beta-binomial anova for proportions</em>. Appl. Statist. 27, 34-37.
+</p>
+
+
+</div>
+</body></html>

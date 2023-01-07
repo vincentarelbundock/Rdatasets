@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: A Comparison of Site Preferences of Two Species of Lizard</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>lizards</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>A Comparison of Site Preferences of Two Species of Lizard</h2>
+
+<h3>Description</h3>
+
+<p>&ldquo;These data describe the daytime habits of two species of lizards, <em>grahami</em> and <em>opalinus</em>. 
+They were collected by observing occupied sites or perches and recording the appropriate description, namely 
+species involved, time of the day, height and diameter of the perch and whether the site was sunny or shaded. 
+Time of the day is recorded as early, mid-day or late.&rdquo; (McCullagh and Nelder, 1989, p.129).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(lizards)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 24 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt>Site</dt><dd><p>A factor with levels <code>Sun</code> and <code>Shade</code>.</p>
+</dd>
+<dt>Diameter</dt><dd><p>A factor with levels <code>D &lt;= 2</code> and <code>D &gt; 2</code> (inches). </p>
+</dd>
+<dt>Height</dt><dd><p>A factor with levels <code>H &lt; 5</code> and <code>H &gt;= 5</code> (feet).</p>
+</dd>
+<dt>Time</dt><dd><p>A factor with levels <code>Early</code>, <code>Mid-day</code> and <code>Late</code>.</p>
+</dd>
+<dt>grahami</dt><dd><p>A numeric vector giving the observed sample size for <em>grahami</em> lizards.</p>
+</dd>
+<dt>opalinus</dt><dd><p>A numeric vector giving the observed sample size for <em>opalinus</em> lizards.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data were originally published in Fienberg (1970).</p>
+
+
+<h3>Source</h3>
+
+<p>McCullagh, P., Nelder, J.A., 1989. <em>Generalized linear models</em>. London, Chapman &amp; Hall, 511 p.</p>
+
+
+<h3>References</h3>
+
+<p>Fienberg, S.E., 1970. <em>The analysis of multidimensional contingency tables</em>. Ecology 51: 419-433.</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(lizards)</code></pre>
+
+
+</div>
+</body></html>

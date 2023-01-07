@@ -17,13 +17,6 @@
    previously analyzed extensively by Lalonde (1986) and Dehejia and
    Wahba (1999).
 
-   .. rubric:: Usage
-      :name: usage
-
-   ::
-
-      data(lalonde)
-
    .. rubric:: Format
       :name: format
 
@@ -59,9 +52,9 @@
       :name: references
 
    Lalonde, R. (1986). Evaluating the econometric evaluations of
-   training programs with experimental data. American Economic Review
+   training programs with experimental data. *American Economic Review*
    76: 604-620.
 
    Dehejia, R.H. and Wahba, S. (1999). Causal Effects in Nonexperimental
-   Studies: Re-Evaluating the Evaluation of Training Programs. Journal
-   of the American Statistical Association 94: 1053-1062.
+   Studies: Re-Evaluating the Evaluation of Training Programs. *Journal
+   of the American Statistical Association* 94: 1053-1062.

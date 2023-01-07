@@ -18,6 +18,7 @@ Remotes:
     allisonhorst/palmerpenguins  
 Imports: 
     AER,
+    aod,
     asaur,
     betareg,
     boot,

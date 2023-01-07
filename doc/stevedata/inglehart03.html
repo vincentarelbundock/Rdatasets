@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><title>R: &quot;How Solid is Mass Support for Democracy-And How Can We...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>inglehart03</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>&quot;How Solid is Mass Support for Democracy&mdash;And How Can We Measure It?&quot;</h2>
+
+<h3>Description</h3>
+
+<p>A data set based on summary information provided in Inglehart's (2003)
+article in *PS: Political Science &amp; Politics*. These data would be from
+the article itself and only indirectly from the raw World or European
+Values Survey.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>inglehart03
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 77 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>state_year</code></dt><dd><p>the state year and survey year, as provided in the article</p>
+</dd>
+<dt><code>havedem</code></dt><dd><p>the percentage of respondents saying having a democratic political system is &quot;very good&quot; or &quot;good&quot;</p>
+</dd>
+<dt><code>strongleader</code></dt><dd><p>the percentage of respondents saying having a strong leader unencumbered by elections or parliaments is &quot;very good&quot; or &quot;good&quot;</p>
+</dd>
+<dt><code>muslim</code></dt><dd><p>a dummy variable that equals 1 if Inglehart codes the state as being a &quot;predominently Islamic society&quot;</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data manually entered based on Table 1 and Table 2 in Inglehart's (2003) article.
+</p>
+
+
+<h3>References</h3>
+
+<p>Inglehart, Ronald. 2003. &quot;How Solid is Mass Support for Democracy&mdash;And How Can We Measure It?&quot; *PS: Political Science &amp; Politics* 36(1): 51&ndash;57.
+</p>
+
+
+</div>
+</body></html>

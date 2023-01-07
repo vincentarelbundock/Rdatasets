@@ -4,9 +4,9 @@
    pwt_sample R Documentation
    ========== ===============
 
-   .. rubric:: Penn World Table (9.1) Macroeconomic Data for Select
-      Countries, 1950-2017
-      :name: penn-world-table-9.1-macroeconomic-data-for-select-countries-1950-2017
+   .. rubric:: Penn World Table (10.0) Macroeconomic Data for Select
+      Countries, 1950-2019
+      :name: penn-world-table-10.0-macroeconomic-data-for-select-countries-1950-2019
 
    .. rubric:: Description
       :name: description
@@ -25,7 +25,7 @@
    .. rubric:: Format
       :name: format
 
-   A data frame with 1428 observations on the following 7 variables.
+   A data frame with 1470 observations on the following 11 variables.
 
    ``country``
       the country name
@@ -44,12 +44,28 @@
       returns to education
 
    ``rgdpna``
-      Real GDP at constant 2011 national prices (in million 2011 USD)
+      Real GDP at constant 2011 national prices (in million 2017 USD)
+
+   ``rgdpo``
+      Output-side real GDP at chained PPPs (in million 2017 USD)
+
+   ``rgdpe``
+      Expenditure-side real GDP at chained PPPs (in million 2017 USD)
 
    ``labsh``
       Share of labor compensation in GDP at current national prices
 
+   ``avh``
+      Average annual hours worked by persons engaged.
+
+   ``emp``
+      Number of persons engaged (in millions)
+
+   ``rnna``
+      Capital stock at constant 2017 national prices (in million 2017
+      USD)
+
    .. rubric:: Source
       :name: source
 
-   Taken from the ``pwt9`` package. See: http://www.ggdc.net/pwt/
+   Taken from the ``pwt10`` package. See: https://www.rug.nl/ggdc/

@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><title>R: Germination Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>orob2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2> Germination Data </h2>
+
+<h3>Description</h3>
+
+<p>&ldquo;A 2 x 2 factorial experiment comparing 2 types of seed and 2 root extracts. There are 5 or 6 replicates in each 
+of the 4 treatment groups, and each replicate comprises a number of seeds varying between 4 and 81. The response 
+variable is the proportion of seeds germinating in each replicate.&rdquo; (Crowder, 1978, Table 3).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(orob2)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 21 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt>seed</dt><dd><p>a factor with 2 levels: <code>O73</code> and <code>O75</code>.</p>
+</dd>
+<dt>root</dt><dd><p>a factor with 2 levels <code>BEAN</code> and <code>CUCUMBER</code>.</p>
+</dd>
+<dt>n</dt><dd><p>a numeric vector: the number of seeds exposed to germination.</p>
+</dd>
+<dt>y</dt><dd><p>a numeric vector: the number of seeds which actually germinated.</p>
+</dd>
+</dl>
+
+
+
+<h3>References</h3>
+
+<p>Crowder, M.J., 1978. <em>Beta-binomial anova for proportions</em>. Appl. Statist. 27, 34-37.
+</p>
+
+
+</div>
+</body></html>
