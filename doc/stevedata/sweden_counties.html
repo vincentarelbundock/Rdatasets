@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head><title>R: The Counties of Sweden</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>sweden_counties</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Counties of Sweden</h2>
+
+<h3>Description</h3>
+
+<p>A simple data set on Sweden's counties.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>sweden_counties
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 21 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>iso</code></dt><dd><p>the ISO 3166-2 code for the county</p>
+</dd>
+<dt><code>nuts</code></dt><dd><p>the Nomenclature of Territorial Units for Statistics (NUTS) code for the county</p>
+</dd>
+<dt><code>county</code></dt><dd><p>the name of the county, in Swedish</p>
+</dd>
+<dt><code>centre</code></dt><dd><p>the administrative centre, or centres, of the county</p>
+</dd>
+<dt><code>area</code></dt><dd><p>the size of the county in square kilometers</p>
+</dd>
+<dt><code>pop2019</code></dt><dd><p>the size of the county in 2019</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This is a simple Wikipedia scrape job from 7 November 2022.
+</p>
+
+
+</div>
+</body></html>

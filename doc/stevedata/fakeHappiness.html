@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><title>R: Fake Data on Happiness</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>fakeHappiness</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Fake Data on Happiness</h2>
+
+<h3>Description</h3>
+
+<p>This is a toy (&quot;fake&quot;) data set I might use to illustrate the so-called
+curvilinear effect of age on happiness.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>fakeHappiness
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1000 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>age</code></dt><dd><p>a numeric vector for age.</p>
+</dd>
+<dt><code>female</code></dt><dd><p>a numeric that equals 1 if the respondent is a woman</p>
+</dd>
+<dt><code>collegeed</code></dt><dd><p>a numeric vector that equals 1 if the respondent says s/he has a college degree</p>
+</dd>
+<dt><code>famincr</code></dt><dd><p>a numeric vector for the respondent's household income. Ranges from 1 to 12.</p>
+</dd>
+<dt><code>bornagain</code></dt><dd><p>a numeric vector for whether the respondent self-identifies as a born-again Christian.</p>
+</dd>
+<dt><code>e</code></dt><dd><p>random noise, generated from a normal distribution with a mean of 0 and a standard deviation of 3</p>
+</dd>
+<dt><code>happy</code></dt><dd><p>an arbitrary happiness variable. See details for its construction</p>
+</dd>
+<dt><code>z_happy</code></dt><dd><p>the same arbitrary happiness variable, scaled to have a mean of 0 and a standard deviation of 1. This makes it seem more &quot;latent&quot;.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data are randomly sampled from the <code>TV16</code> data set in the same package
+for the age, female, college education, family income, and born-again variables.
+Thereafter, I created an arbitrary &quot;happiness&quot; variable that is equal to
+<code>100 -  .95*age + .01*(age^2) + .25*female + .05*famincr + .1*bornagain + e</code>. The
+data are not supposed to be realistic, per se. They're supposed to be functional for this
+purpose.
+</p>
+
+
+</div>
+</body></html>

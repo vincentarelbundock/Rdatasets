@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head><title>R: Salmonella Reverse Mutagenicity Assay</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>salmonella</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Salmonella Reverse Mutagenicity Assay</h2>
+
+<h3>Description</h3>
+
+<p>&ldquo;Data for our third example were compiled by Margolin et al. (1981) from an Ames <em>Salmonella</em>
+reverse mutagenicity assay. Table 1 shows the number of revertant colonies observed on each of 3 replicate 
+plates tested at each of 6 dose levels of quinoline.&rdquo; (Breslow, 1984, Table 1).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(salmonella)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 18 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt>dose</dt><dd><p>a numeric vector: the dose level of quinoline (microgram per plate).</p>
+</dd>
+<dt>y</dt><dd><p>a numeric vector: the number of revertant colonies of TA98 <em>Salmonella</em>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Breslow, N.E., 1984. <em>Extra-Poisson variation in log-linear models</em>. Applied Statistics 33(1), 38-44.
+</p>
+
+
+<h3>References</h3>
+
+<p>Margolin, B.H., Kaplan, N., Zeiger, E., 1981. <em>Statistical analysis of the Ames Salmonella/microsome test</em>.
+Proc. Natl Acad. Sci. USA 76, 3779-3783.
+</p>
+
+
+</div>
+</body></html>

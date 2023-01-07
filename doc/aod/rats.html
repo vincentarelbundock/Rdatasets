@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><title>R: Rats Diet Experiment</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>rats</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2> Rats Diet Experiment </h2>
+
+<h3>Description</h3>
+
+<p>&ldquo;Weil (1970) in Table 1 gives the results from an experiment comprising two treatments. One group of 
+16 pregnant female rats was fed a control diet during pregnancy and lactation, the diet of a second group of 16 pregnant 
+females was treated with a chemical. For each litter the number <code class="reqn">n</code> of pups alive at 4 days and the number <code class="reqn">x</code> 
+of pups that survived the 21 day lactation period were recorded.&rdquo; (Williams, 1975, p. 951).</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(rats)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 32 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt>group</dt><dd><p>A factor with levels <code>CTRL</code> and <code>TREAT</code></p>
+</dd>
+<dt>n</dt><dd><p>A numeric vector: the number of pups alive at 4 days.</p>
+</dd>
+<dt>y</dt><dd><p>A numeric vector: the number of pups that survived the 21 day lactation.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Williams, D.A., 1975. <em>The analysis of binary responses from toxicological experiments
+involving reproduction and teratogenicity</em>. Biometrics 31, 949-952.
+</p>
+
+
+<h3>References</h3>
+
+<p>Weil, C.S., 1970. <em>Selection of the valid number of sampling units and a consideration of their combination 
+in toxicological studies involving reproduction, teratogenesis or carcinogenesis</em>. Fd. Cosmet. Toxicol. 8, 177-182.
+</p>
+
+
+</div>
+</body></html>
