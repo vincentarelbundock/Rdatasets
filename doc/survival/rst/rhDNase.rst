@@ -86,7 +86,7 @@
    immediately after cessation then from a medical standpoint this would
    not be a new infection.)
 
-   This data set reproduces the data in Therneau and Grambsch, is does
+   This data set reproduces the data in Therneau and Grambsch, it does
    not exactly reproduce those in Therneau and Hamilton due to data set
    updates.
 
@@ -105,7 +105,7 @@
    ::
 
       # Build the start-stop data set for analysis, and
-      #  replicate line 2 of table 8.13
+      #  replicate line 2 of table 8.13 in the book
       first <- subset(rhDNase, !duplicated(id)) #first row for each subject
       dnase <- tmerge(first, first, id=id, tstop=as.numeric(end.dt -entry.dt))
 

@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><title>R: Soldering of Components on Printed-Circuit Boards</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>solder.balance</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Soldering of Components on Printed-Circuit Boards</h2>
+
+<h3>Description</h3>
+
+<p>The <code>solder.balance</code> data frame has 720 rows and 6 columns, representing
+a balanced subset of a designed experiment varying 5 factors on the
+soldering of components on printed-circuit boards.
+</p>
+<p>The <code>solder</code> data frame is the full version of the data with 900
+rows.  It is located in both the rpart and the survival packages.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>solder
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data frame contains the following columns:
+</p>
+
+<dl>
+<dt><code>Opening</code></dt><dd>
+<p>a factor with levels
+&lsquo;<span class="samp">&#8288;L&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;M&#8288;</span>&rsquo; and &lsquo;<span class="samp">&#8288;S&#8288;</span>&rsquo;
+indicating the amount of clearance around the mounting pad.
+</p>
+</dd>
+<dt><code>Solder</code></dt><dd>
+<p>a factor with levels
+&lsquo;<span class="samp">&#8288;Thick&#8288;</span>&rsquo; and &lsquo;<span class="samp">&#8288;Thin&#8288;</span>&rsquo;
+giving the thickness of the solder used.
+</p>
+</dd>
+<dt><code>Mask</code></dt><dd>
+<p>a factor with levels
+&lsquo;<span class="samp">&#8288;A1.5&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;A3&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;B3&#8288;</span>&rsquo; and &lsquo;<span class="samp">&#8288;B6&#8288;</span>&rsquo;
+indicating the type and thickness of mask used.
+</p>
+</dd>
+<dt><code>PadType</code></dt><dd>
+<p>a factor with levels &lsquo;<span class="samp">&#8288;D4&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;D6&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;D7&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;L4&#8288;</span>&rsquo;,
+&lsquo;<span class="samp">&#8288;L6&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;L7&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;L8&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;L9&#8288;</span>&rsquo;, &lsquo;<span class="samp">&#8288;W4&#8288;</span>&rsquo; and &lsquo;<span class="samp">&#8288;W9&#8288;</span>&rsquo;
+giving the size and geometry of the mounting pad.
+</p>
+</dd>
+<dt><code>Panel</code></dt><dd>
+<p><code>1:3</code> indicating the panel on a board being tested.
+</p>
+</dd>
+<dt><code>skips</code></dt><dd>
+<p>a numeric vector giving the number of visible solder skips.
+</p>
+</dd>
+</dl>
+
+
+<h3>Source</h3>
+
+<p>John M. Chambers and Trevor J. Hastie eds. (1992)
+<em>Statistical Models in S</em>, Wadsworth and Brooks/Cole,
+Pacific Grove, CA.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>fit &lt;- rpart(skips ~ Opening + Solder + Mask + PadType + Panel,
+             data = solder.balance, method = "anova")
+summary(residuals(fit))
+plot(predict(fit), residuals(fit))
+</code></pre>
+
+
+</div>
+</body></html>

@@ -45,6 +45,6 @@
       :name: details
 
    Data come from various sources (see, especially:
-   http://econdataus.com/tradeall.html). Post-1989 data come from the
+   https://econdataus.com/tradeall.html). Post-1989 data come from the
    U.S. Census Bureau. 2018 GDP comes from the IMF. 2018 population
    estimate comes from the U.S. Census Bureau.

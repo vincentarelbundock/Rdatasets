@@ -22,10 +22,6 @@ function processMathHTML() {
 
 <p>These are internal functions.
 </p>
-<p>a2g gives allele-to-genotype conversion.
-</p>
-<p>g2a returns two alleles according to a genotype identifier.
-</p>
 <p>g2a.c is the C version of g2c.
 </p>
 <p>gc.control is used by gc.em().
@@ -33,8 +29,6 @@ function processMathHTML() {
 <p>gcode is as a2g.
 </p>
 <p>grec2g is undocumented.
-</p>
-<p>hap.control is used by hap.em().
 </p>
 <p>HapDesign and HapFreqSE both accept a <code>haplo.em</code> object to derieve a design/dosage
 matrix and standard error of haplotype frequency estimates. The former is appropriate for haplotype trend 
@@ -49,10 +43,6 @@ included as courtesy of Prof Andrea Foulkes from the useR!2008 tutorial.
 </p>
 <p>is.miss is undocumented.
 </p>
-<p>KCC calculates disease prevalences in cases and controls for a given genotype relative risk, 
-allele frequency and prevalencen of the disease in the whole population. It is used by tscc
-and pbsize2.
-</p>
 <p>k obtains 1st and 2nd order culumants for correlation coefficient.
 </p>
 <p>m2plem is an experimental function for PLEM format.
@@ -65,13 +55,9 @@ and pbsize2.
 </p>
 <p>plem2m is also experimental for PLEM format.
 </p>
-<p>ReadGRM is a function to read GCTA grm.gz and grm.id file
-</p>
 <p>ReadGRMPLINK is a function to read PLINK PI_HAT as a genomic relationship matrix.
 </p>
 <p>ReadGRMPCA is a function to read .eigenval and .eigenvec files from gcta &ndash;pca.
-</p>
-<p>ReadGRMBin is a function to read GCTA grm.bin files, modified from GCTA documentation.
 </p>
 <p>revhap recovers the allele indices for a given haplotype ID in a multiallelic system.
 </p>
@@ -87,10 +73,6 @@ and pbsize2.
 </p>
 <p>weighted.median is a function for obtaining weighted median with interpolation.
 </p>
-<p>WriteGRM is a utility function to write GCTA grm.gz and grm.id files.
-</p>
-<p>WriteGRMBin is a utility function to write GCTA grm.bin files.
-</p>
 <p>WriteGRMSAS is a utility function to write a GRM object to SAS PROCs MIXED/GLIMMIX ldata.
 </p>
 <p>x2 is a simple chi-squared test of two proportions.
@@ -101,26 +83,16 @@ and pbsize2.
 
 <h3>Usage</h3>
 
-<pre><code class='language-R'>a2g(a1,a2)
-chr_pos_a1_a2(chr,pos,a1,a2,prefix="chr",seps=c(":","_","_"),uppercase=TRUE)
-g2a(g)
-g2a.c(g)
-inv_chr_pos_a1_a2(chr_pos_a1_a2,prefix="chr",seps=c(":","_","_"))
-KCC(model,GRR,p1,K)
-sun3d(xyz="INF1.merge.cis.vs.trans",
+<pre><code class='language-R'>sun3d(xyz="INF1.merge.cis.vs.trans",
       cols=c("id","chr1","pos1","chr2","pos2","gene","target","log10p","x","y","col"),
       xy.scale=c(1.3e8,1.3e8),marker.size=4,log10p.max=400,
       prefix=c("Sentinel","CHR","POS","CHR","POS","Gene","Target","-log10(p)"),
       postfix="\u003c/br&gt;",
       json.file="d3.json",pretty=TRUE)
-ReadGRM(prefix=51)
-ReadGRMBin(prefix, AllN=FALSE, size=4)
 ReadGRMPLINK(prefix, diag=1)
 ReadGRMPCA(prefix)
 revhap(loci,hapid)
 VR(v1,vv1,v2,vv2,c12)
-WriteGRM(prefix=51,id,N,GRM)
-WriteGRMBin(prefix, grm, N, id, size=4)
 WriteGRMSAS(grmlist, outfile="gwas")
 </code></pre>
 
@@ -139,14 +111,6 @@ WriteGRMSAS(grmlist, outfile="gwas")
 <tr style="vertical-align: top;"><td><code>g</code></td>
 <td>
 <p>A genotype identifier</p>
-</td></tr>
-<tr style="vertical-align: top;"><td><code>model</code></td>
-<td>
-<p>One of &quot;multiplicative&quot;, &quot;additive&quot;, &quot;recessive&quot;, &quot;dominant&quot;, &quot;overdominant&quot;</p>
-</td></tr>
-<tr style="vertical-align: top;"><td><code>GRR</code></td>
-<td>
-<p>Genotype relative risk</p>
 </td></tr>
 <tr style="vertical-align: top;"><td><code>p1</code></td>
 <td>

@@ -1,42 +1,44 @@
-========= ===============
-stanford2 R Documentation
-========= ===============
+.. container::
 
-More Stanford Heart Transplant data
------------------------------------
+   ========= ===============
+   stanford2 R Documentation
+   ========= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: More Stanford Heart Transplant data
+      :name: more-stanford-heart-transplant-data
 
-This contains the Stanford Heart Transplant data in a different format.
-The main data set is in ``heart``.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   This contains the Stanford Heart Transplant data in a different
+   format. The main data set is in ``heart``.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   stanford2
+   ::
 
-Format
-~~~~~~
+      stanford2
 
-======= ==========================
-id:     ID number
-time:   survival or censoring time
-status: censoring status
-age:    in years
-t5:     T5 mismatch score
-\       
-======= ==========================
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   ======= ==========================
+   id:     ID number
+   time:   survival or censoring time
+   status: censoring status
+   age:    in years
+   t5:     T5 mismatch score
+   \       
+   ======= ==========================
 
-LA Escobar and WQ Meeker Jr (1992), Assessing influence in regression
-analysis with censored data. *Biometrics* **48**, 507–528. Page 519.
+   .. rubric:: Source
+      :name: source
 
-See Also
-~~~~~~~~
+   LA Escobar and WQ Meeker Jr (1992), Assessing influence in regression
+   analysis with censored data. *Biometrics* **48**, 507–528. Page 519.
 
-``predict.survreg``, ``heart``
+   .. rubric:: See Also
+      :name: see-also
+
+   ``predict.survreg``, ``heart``

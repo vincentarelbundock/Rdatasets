@@ -1,46 +1,49 @@
-======= ===============
-ovarian R Documentation
-======= ===============
+.. container::
 
-Ovarian Cancer Survival Data
-----------------------------
+   ======= ===============
+   ovarian R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Ovarian Cancer Survival Data
+      :name: ovarian-cancer-survival-data
 
-Survival in a randomised trial comparing two treatments for ovarian
-cancer
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Survival in a randomised trial comparing two treatments for ovarian
+   cancer
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   ovarian
+   ::
 
-Format
-~~~~~~
+      ovarian
+      data(cancer, package="survival")
 
-========= ====================================================
-futime:   survival or censoring time
-fustat:   censoring status
-age:      in years
-resid.ds: residual disease present (1=no,2=yes)
-rx:       treatment group
-ecog.ps:  ECOG performance status (1 is better, see reference)
-\         
-========= ====================================================
+   .. rubric:: Format
+      :name: format
 
-Source
-~~~~~~
+   ========= ====================================================
+   futime:   survival or censoring time
+   fustat:   censoring status
+   age:      in years
+   resid.ds: residual disease present (1=no,2=yes)
+   rx:       treatment group
+   ecog.ps:  ECOG performance status (1 is better, see reference)
+   \         
+   ========= ====================================================
 
-Terry Therneau
+   .. rubric:: Source
+      :name: source
 
-References
-~~~~~~~~~~
+   Terry Therneau
 
-Edmunson, J.H., Fleming, T.R., Decker, D.G., Malkasian, G.D., Jefferies,
-J.A., Webb, M.J., and Kvols, L.K., Different Chemotherapeutic
-Sensitivities and Host Factors Affecting Prognosis in Advanced Ovarian
-Carcinoma vs. Minimal Residual Disease. Cancer Treatment Reports,
-63:241-47, 1979.
+   .. rubric:: References
+      :name: references
+
+   Edmunson, J.H., Fleming, T.R., Decker, D.G., Malkasian, G.D.,
+   Jefferies, J.A., Webb, M.J., and Kvols, L.K., Different
+   Chemotherapeutic Sensitivities and Host Factors Affecting Prognosis
+   in Advanced Ovarian Carcinoma vs. Minimal Residual Disease. Cancer
+   Treatment Reports, 63:241-47, 1979.

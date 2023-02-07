@@ -1,0 +1,203 @@
+<!DOCTYPE html><html><head><title>R: Mayo Clinic Primary Biliary Cirrhosis, sequential data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>pbcseq</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Mayo Clinic Primary Biliary Cirrhosis, sequential data</h2>
+
+<h3>Description</h3>
+
+<p>This data is a continuation of the PBC data set,
+and contains the follow-up laboratory data for each study patient.
+An analysis based on the data can be found in Murtagh, et. al.
+</p>
+<p>The primary PBC data set contains only baseline measurements 
+of the laboratory 
+parameters.  This data set contains multiple laboratory results, but
+only on the 312 randomized patients.  Some baseline data values in this file
+differ from the original PBC file, for instance, the data errors in
+prothrombin time and age which were discovered after the original analysis
+(see Fleming and Harrington, figure 4.6.7).
+</p>
+<p>One &quot;feature&quot; of the data deserves special comment.  The last
+observation before death or liver transplant often has many more
+missing covariates than other data rows.  The original clinical
+protocol for these patients specified visits at 6 months, 1 year, and
+annually thereafter.  At these protocol visits lab values were
+obtained for a large pre-specified battery of tests.  &quot;Extra&quot; visits,
+often undertaken because of worsening medical condition, did not
+necessarily have all this lab work. 
+The missing values are thus potentially informative.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>pbcseq
+data(pbc, package="survival")
+</code></pre>
+
+
+<h3>Format</h3>
+
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    id:</td><td style="text-align: left;"> case number</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    age:</td><td style="text-align: left;"> in years</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    sex:</td><td style="text-align: left;"> m/f</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    trt:</td><td style="text-align: left;"> 1/2/NA for D-penicillmain, placebo, not randomised</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    time:</td><td style="text-align: left;"> number of days between registration and the earlier of death,</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+       </td><td style="text-align: left;"> transplantion, or study analysis in July, 1986</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    status:</td><td style="text-align: left;"> status at endpoint, 0/1/2 for censored, transplant, dead</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    day:</td><td style="text-align: left;"> number of days between enrollment and this visit date</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+       </td><td style="text-align: left;"> all measurements below refer to this date</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    albumin:</td><td style="text-align: left;"> serum albumin (mg/dl)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    alk.phos:</td><td style="text-align: left;"> alkaline phosphotase (U/liter)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    ascites:</td><td style="text-align: left;"> presence of ascites </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    ast:</td><td style="text-align: left;"> aspartate aminotransferase, once called SGOT (U/ml)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    bili:</td><td style="text-align: left;"> serum bilirunbin (mg/dl)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    chol:</td><td style="text-align: left;"> serum cholesterol (mg/dl)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    copper:</td><td style="text-align: left;"> urine copper (ug/day)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    edema:</td><td style="text-align: left;"> 0 no edema, 0.5 untreated or successfully treated</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    </td><td style="text-align: left;"> 1 edema despite diuretic therapy</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    hepato:</td><td style="text-align: left;"> presence of hepatomegaly or enlarged liver</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    platelet:</td><td style="text-align: left;"> platelet count</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    protime:</td><td style="text-align: left;"> standardised blood clotting time</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    spiders:</td><td style="text-align: left;"> blood vessel malformations in the skin</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    stage:</td><td style="text-align: left;"> histologic stage of disease (needs biopsy)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    trig:</td><td style="text-align: left;"> triglycerides (mg/dl)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>T Therneau and P Grambsch,
+&quot;Modeling Survival Data: Extending the Cox Model&quot;,
+Springer-Verlag, New York, 2000.
+ISBN: 0-387-98784-3.
+</p>
+
+
+<h3>References</h3>
+
+<p>Murtaugh PA. Dickson ER. Van Dam GM. Malinchoc M. Grambsch PM.
+Langworthy AL. Gips CH.  &quot;Primary biliary cirrhosis: prediction of short-term
+survival based on repeated patient visits.&quot; Hepatology. 20(1.1):126-34, 1994.
+</p>
+<p>Fleming T and Harrington D., &quot;Counting Processes and Survival Analysis&quot;,
+Wiley, New York, 1991.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>pbc</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># Create the start-stop-event triplet needed for coxph
+first &lt;- with(pbcseq, c(TRUE, diff(id) !=0)) #first id for each subject
+last  &lt;- c(first[-1], TRUE)  #last id
+
+time1 &lt;- with(pbcseq, ifelse(first, 0, day))
+time2 &lt;- with(pbcseq, ifelse(last,  futime, c(day[-1], 0)))
+event &lt;- with(pbcseq, ifelse(last,  status, 0))
+
+fit1 &lt;- coxph(Surv(time1, time2, event) ~ age + sex + log(bili), pbcseq)
+</code></pre>
+
+
+</div>
+</body></html>

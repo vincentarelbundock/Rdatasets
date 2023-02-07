@@ -1,0 +1,144 @@
+<!DOCTYPE html><html><head><title>R: Non-alcohol fatty liver disease</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>nafld</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Non-alcohol fatty liver disease</h2>
+
+<h3>Description</h3>
+
+<p>Data sets containing the data from a population study of non-alcoholic
+fatty liver disease (NAFLD).  Subjects with the condition and a set of
+matched control subjects were followed forward for metabolic
+conditions, cardiac endpoints, and death.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>nafld1
+       nafld2
+       nafld3
+data(nafld, package="survival")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p><code>nafld1</code> is a data frame with 17549 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p>subject identifier</p>
+</dd>
+<dt><code>age</code></dt><dd><p>age at entry to the study</p>
+</dd>
+<dt><code>male</code></dt><dd><p>0=female, 1=male</p>
+</dd>
+<dt><code>weight</code></dt><dd><p>weight in kg</p>
+</dd>
+<dt><code>height</code></dt><dd><p>height in cm</p>
+</dd>
+<dt><code>bmi</code></dt><dd><p>body mass index</p>
+</dd>
+<dt><code>case.id</code></dt><dd><p>the id of the NAFLD case to whom this subject
+is matched</p>
+</dd>
+<dt><code>futime</code></dt><dd><p>time to death or last follow-up</p>
+</dd>
+<dt><code>status</code></dt><dd><p>0= alive at last follow-up, 1=dead</p>
+</dd>
+</dl>
+
+<p><code>nafld2</code> is a data frame with 400123 observations and 4 variables
+containing laboratory data
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p>subject identifier</p>
+</dd>
+<dt><code>days</code></dt><dd><p>days since index date</p>
+</dd>
+<dt><code>test</code></dt><dd><p>the type of value recorded</p>
+</dd>
+<dt><code>value</code></dt><dd><p>the numeric value</p>
+</dd>
+</dl>
+
+<p><code>nafld3</code> is a data frame with 34340 observations and 3 variables
+containing outcomes
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p>subject identifier</p>
+</dd>
+<dt><code>days</code></dt><dd><p>days since index date</p>
+</dd>
+<dt><code>event</code></dt><dd><p>the endpoint that occurred</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The primary reference for the NAFLD study is Allen (2018).
+The incidence of non-alcoholic fatty liver disease (NAFLD) has been rising
+rapidly in the last decade and it is now one of the main drivers of
+hepatology practice <cite>Tapper2018</cite>.
+It is essentially the presence of excess fat in the
+liver, and parallels the ongoing obesity epidemic.
+Approximately 20-25% of NAFLD patients will develop the inflammatory state
+of non-alcoholic steatohepatitis (NASH), leading to fibrosis 
+and eventual end-stage liver disease.
+NAFLD can be accurately diagnosed by MRI methods, 
+but NASH diagnosis currently requires a biopsy.
+</p>
+<p>The current study constructed a population cohort of
+all adult NAFLD subjects from 1997 to 2014  along with 4 potential
+controls for each case.
+To protect patient confidentiality all time intervals are in days since
+the index date; none of the dates from the original data were retained.
+Subject age is their integer age at the index date, and the subject
+identifier is an arbitrary integer. 
+As a final protection, we include only a 90% random sample of the data.
+As a consequence analyses results will not exactly match the
+original paper.
+</p>
+<p>There are 3 data sets: <code>nafld1</code> contains baseline data and has
+one observation per subject, <code>nafld2</code> has one observation for
+each (time dependent) continuous measurement,
+and <code>nafld3</code> has one observation for
+each yes/no outcome that occured.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Data obtained from the author.</p>
+
+
+<h3>References</h3>
+
+<p>AM Allen, TM Therneau, JJ Larson, A Coward, VK Somers and PS Kamath,
+Nonalcoholic Fatty Liver Disease Incidence and Impact on Metabolic
+Burden and Death: A 20 Year Community Study,
+Hepatology 67:1726-1736, 2018.
+</p>
+
+
+</div>
+</body></html>
