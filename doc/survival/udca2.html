@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Data from a trial of usrodeoxycholic acid</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>udca</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Data from a trial of usrodeoxycholic acid
+</h2>
+
+<h3>Description</h3>
+
+<p>Data from a trial of ursodeoxycholic acid (UDCA) in patients with primary
+biliary cirrohosis (PBC).  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>udca
+udca2
+data(udca, package="survival")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 170 observations on the following 15 variables.
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p>subject identifier</p>
+</dd>
+<dt><code>trt</code></dt><dd><p>treatment of 0=placebo, 1=UDCA</p>
+</dd>
+<dt><code>entry.dt</code></dt><dd><p>date of entry into the study</p>
+</dd>
+<dt><code>last.dt</code></dt><dd><p>date of last on-study visit</p>
+</dd>
+<dt><code>stage</code></dt><dd><p>stage of disease</p>
+</dd>
+<dt><code>bili</code></dt><dd><p>bilirubin value at entry</p>
+</dd>
+<dt><code>riskscore</code></dt><dd><p>the Mayo PBC risk score at entry</p>
+</dd>
+<dt><code>death.dt</code></dt><dd><p>date of death</p>
+</dd>
+<dt><code>tx.dt</code></dt><dd><p>date of liver transplant</p>
+</dd>
+<dt><code>hprogress.dt</code></dt><dd><p>date of histologic progression</p>
+</dd>
+<dt><code>varices.dt</code></dt><dd><p>appearance of esphogeal varices</p>
+</dd>
+<dt><code>ascites.dt</code></dt><dd><p>appearance of ascites</p>
+</dd>
+<dt><code>enceph.dt</code></dt><dd><p>appearance of encephalopathy</p>
+</dd>
+<dt><code>double.dt</code></dt><dd><p>doubling of initial bilirubin</p>
+</dd>
+<dt><code>worsen.dt</code></dt><dd><p>worsening of symptoms by two stages</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This data set is used in the Therneau and Grambsh.  The <code>udca1</code>
+data set contains the baseline variables along with the time until the
+first endpoint (any of death, transplant, ..., worsening).
+The <code>udca2</code> data set treats all of the endpoints as parallel
+events and has a stratum for each.
+</p>
+
+
+<h3>References</h3>
+
+<p>T. M. Therneau and P. M. Grambsch, Modeling survival data: extending the Cox
+model.  Springer, 2000.
+</p>
+<p>K. D. Lindor, E. R. Dickson, W. P Baldus, R.A. Jorgensen, J. Ludwig,
+P. A. Murtaugh, J. M. Harrison, R. H. Weisner, M. L. Anderson,
+S. M. Lange, G. LeSage, S. S. Rossi and A. F. Hofman.
+Ursodeoxycholic acid in the treatment of primary biliary cirrhosis.
+Gastroenterology, 106:1284-1290, 1994.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># values found in table 8.3 of the book
+fit1 &lt;- coxph(Surv(futime, status) ~ trt + log(bili) + stage,
+          cluster =id , data=udca1)
+fit2 &lt;- coxph(Surv(futime, status) ~ trt + log(bili) + stage +
+          strata(endpoint), cluster=id,  data=udca2)
+
+</code></pre>
+
+
+</div>
+</body></html>

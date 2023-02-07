@@ -43,7 +43,7 @@
       :name: details
 
    If you must know, I do most of my clothes shopping at major retailers
-   in the U.S. Thi is mostly Belk, J.C. Penney, and Kohl's. If that's
+   in the U.S. This is mostly Belk, J.C. Penney, and Kohl's. If that's
    you as well, the odds are good the distribution of my clothes will
    closely resemble yours. A recent move I made resulted in me donating
    a fair bit of my short-sleeved polo shirts. I did not buy any new

@@ -20,10 +20,11 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>This data is a subset of the NOAA Atlantic hurricane database best track
-data, <a href="https://www.nhc.noaa.gov/data/#hurdat">https://www.nhc.noaa.gov/data/#hurdat</a>. The data includes the
-positions and attributes of storms from 1975-2020, measured every six hours
-during the lifetime of a storm.
+<p>This dataset is the NOAA Atlantic hurricane database best track data,
+<a href="https://www.nhc.noaa.gov/data/#hurdat">https://www.nhc.noaa.gov/data/#hurdat</a>. The data includes the positions and
+attributes of storms from 1975-2021. Storms
+from 1979 onward are measured every six hours during the lifetime of the
+storm. Storms in earlier years have some missing data.
 </p>
 
 
@@ -35,7 +36,8 @@ during the lifetime of a storm.
 
 <h3>Format</h3>
 
-<p>A tibble with 11,859 observations and 13 variables:
+<p>A tibble with 19,066 observations
+and 13 variables:
 </p>
 
 <dl>
@@ -50,16 +52,41 @@ during the lifetime of a storm.
 <dt>status</dt><dd><p>Storm classification (Tropical Depression, Tropical Storm,
 or Hurricane)</p>
 </dd>
-<dt>category</dt><dd><p>Saffir-Simpson storm category (estimated from wind speed.
--1 = Tropical Depression, 0 = Tropical Storm)</p>
+<dt>category</dt><dd><p>Saffir-Simpson hurricane category calculated from wind speed.
+</p>
+
+<ul>
+<li> <p><code>NA</code>: Not a hurricane
+</p>
+</li>
+<li><p> 1: 64+ knots
+</p>
+</li>
+<li><p> 2: 83+ knots
+</p>
+</li>
+<li><p> 3: 96+ knots
+</p>
+</li>
+<li><p> 4: 113+ knots
+</p>
+</li>
+<li><p> 5: 137+ knots
+</p>
+</li></ul>
+
 </dd>
 <dt>wind</dt><dd><p>storm's maximum sustained wind speed (in knots)</p>
 </dd>
 <dt>pressure</dt><dd><p>Air pressure at the storm's center (in millibars)</p>
 </dd>
-<dt>tropicalstorm_force_diameter</dt><dd><p>Diameter (in nautical miles) of the area experiencing tropical storm strength winds (34 knots or above)</p>
+<dt>tropicalstorm_force_diameter</dt><dd><p>Diameter (in nautical miles) of the
+area experiencing tropical storm strength winds (34 knots or above).
+Only available starting in 2004.</p>
 </dd>
-<dt>hurricane_force_diameter</dt><dd><p>Diameter (in nautical miles) of the area experiencing hurricane strength winds (64 knots or above)</p>
+<dt>hurricane_force_diameter</dt><dd><p>Diameter (in nautical miles) of the area
+experiencing hurricane strength winds (64 knots or above). Only available
+starting in 2004.</p>
 </dd>
 </dl>
 
@@ -67,20 +94,22 @@ or Hurricane)</p>
 
 <h3>See Also</h3>
 
-<p>The script to create the storms data set: <a href="https://github.com/tidyverse/dplyr/blob/main/data-raw/storms.R">https://github.com/tidyverse/dplyr/blob/main/data-raw/storms.R</a>
+<p>The script to create the storms data set:
+<a href="https://github.com/tidyverse/dplyr/blob/main/data-raw/storms.R">https://github.com/tidyverse/dplyr/blob/main/data-raw/storms.R</a>
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>
-# show a plot of the storm paths
+<pre><code class='language-R'>storms
+
+# Show a few recent storm paths
 if (requireNamespace("ggplot2", quietly = TRUE)) {
   library(ggplot2)
-  ggplot(storms) +
-    aes(x=long, y=lat, color=paste(year, name)) +
-    geom_path() +
-    guides(color='none') +
+  storms %&gt;%
+    filter(year &gt;= 2000) %&gt;%
+    ggplot(aes(long, lat, color = paste(year, name))) +
+    geom_path(show.legend = FALSE) +
     facet_wrap(~year)
 }
 

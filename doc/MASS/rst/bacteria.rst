@@ -65,7 +65,7 @@
       :name: references
 
    Menzies School of Health Research 1999–2000 Annual Report. p.20.
-   http://www.menzies.edu.au/icms_docs/172302_2000_Annual_report.pdf.
+   https://www.menzies.edu.au/icms_docs/172302_2000_Annual_report.pdf.
 
    Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
    with S.* Fourth edition. Springer.

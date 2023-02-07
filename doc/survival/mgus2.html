@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: Monoclonal gammopathy data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>mgus2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Monoclonal gammopathy data</h2>
+
+<h3>Description</h3>
+
+<p>Natural history of 1341 sequential patients with monoclonal
+gammopathy of undetermined significance (MGUS).  This is a superset of
+the <code>mgus</code> data, at a later point in the accrual process
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>mgus2
+data(cancer, package="survival")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1384 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p>subject identifier</p>
+</dd>
+<dt><code>age</code></dt><dd><p>age at diagnosis, in years</p>
+</dd>
+<dt><code>sex</code></dt><dd><p>a factor with levels <code>F</code> <code>M</code></p>
+</dd>
+<dt><code>dxyr</code></dt><dd><p>year of diagnosis</p>
+</dd>
+<dt><code>hgb</code></dt><dd><p>hemoglobin</p>
+</dd>
+<dt><code>creat</code></dt><dd><p>creatinine</p>
+</dd>
+<dt><code>mspike</code></dt><dd><p>size of the monoclonal serum splike</p>
+</dd>
+<dt><code>ptime</code></dt><dd><p>time until progression to a plasma cell
+malignancy (PCM) or last contact, in months</p>
+</dd>
+<dt><code>pstat</code></dt><dd><p>occurrence of PCM: 0=no, 1=yes </p>
+</dd>
+<dt><code>futime</code></dt><dd><p>time until death or last contact, in months</p>
+</dd>
+<dt><code>death</code></dt><dd><p>occurrence of death: 0=no, 1=yes</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This is an extension of the study found in the <code>mgus</code> data set,
+containing enrollment through 1994 and follow-up through 1999.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Mayo Clinic data courtesy of Dr. Robert Kyle.  All patient
+identifiers have been removed, age rounded to the nearest year, and
+follow-up times rounded to the nearest month.</p>
+
+
+<h3>References</h3>
+
+<p>R. Kyle, T. Therneau, V. Rajkumar, J. Offord, D. Larson, M. Plevak,
+and L. J. Melton III, A long-terms study of prognosis in monoclonal
+gammopathy of undertermined significance. New Engl J Med, 346:564-569 (2002).
+</p>
+
+
+</div>
+</body></html>

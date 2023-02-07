@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Select World Bank Commodity Price Data (Monthly)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>commodity_prices</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Select World Bank Commodity Price Data (Monthly)</h2>
+
+<h3>Description</h3>
+
+<p>A data set on select, monthly commodity prices made available by the
+World Bank in its so-called &quot;pink sheet.&quot; These data are potentially
+useful for applications on data gathering, inflation adjustments,
+indexing, cointegration, general economic riff-raff, and more.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>commodity_prices
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with the following 11 variables.
+</p>
+
+<dl>
+<dt><code>date</code></dt><dd><p>a date</p>
+</dd>
+<dt><code>oil_brent</code></dt><dd><p>crude oil, UK Brent 38' API ($/bbl)</p>
+</dd>
+<dt><code>oil_dubai</code></dt><dd><p>crude oil, Dubai Fateh 32 API for years 1985-present; 1960-84 refer to Saudi Arabian Light, 34' API ($/bbl).</p>
+</dd>
+<dt><code>coffee_arabica</code></dt><dd><p>coffee (ICO), International Coffee Organization indicator price, other mild Arabicas, average New York and Bremen/Hamburg markets, ex-dock ($/kg)</p>
+</dd>
+<dt><code>coffee_robustas</code></dt><dd><p>coffee (ICO), International Coffee Organization indicator price, Robustas, average New York and Le Havre/Marseilles markets, ex-dock ($/kg)</p>
+</dd>
+<dt><code>tea_columbo</code></dt><dd><p>tea (Colombo auctions), Sri Lankan origin, all tea, arithmetic average of weekly quotes ($/kg).</p>
+</dd>
+<dt><code>tea_kolkata</code></dt><dd><p>tea (Kolkata auctions), leaf, include excise duty, arithmetic average of weekly quotes ($/kg).</p>
+</dd>
+<dt><code>tea_mombasa</code></dt><dd><p>tea (Mombasa/Nairobi auctions), African origin, all tea, arithmetic average of weekly quotes ($/kg).</p>
+</dd>
+<dt><code>sugar_eu</code></dt><dd><p>sugar (EU), European Union negotiated import price for raw unpackaged sugar from African, Caribbean and Pacific (ACP) under Lome Conventions, c.I.f. European ports ($/kg)</p>
+</dd>
+<dt><code>sugar_us</code></dt><dd><p>sugar (United States), nearby futures contract, c.i.f. ($/kg)</p>
+</dd>
+<dt><code>sugar_world</code></dt><dd><p>sugar (World), International Sugar Agreement (ISA) daily price, raw,  f.o.b. and stowed at greater Caribbean ports ($/kg).</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>All data are in nominal USD. Adjust (to taste) accordingly.
+</p>
+<p>Data compiled by the World Bank for its historical data on commodity prices.
+The oil price data come from a combination of sources, supposedly Bloomberg,
+Energy Intelligence Group (EIG), Organization of Petroleum Exporting Countries
+(OPEC), and the World Bank. Data on coffee prices come from Bloomberg, Complete
+Coffee Coverage, the International Coffee Organization, Thomson Reuters Datastream,
+and the World Bank. Data on tea prices for Colombo auctions come the from
+International Tea Committee, Tea Broker's Association of London, Tea Exporters
+Association Sri Lanka, and the World Bank. Data on tea prices for Kolkata
+auctions come from the International Tea Committee, Tea Board India, Tea
+Broker's Association of London, and the World Bank. Tea prices
+for Mombasa/Nairobi auctions come from African Tea Brokers Limited, International
+Tea Committee, Tea Broker's Association of London, and the World Bank. EU sugar
+price data come from International Monetary Fund,  World Bank. Sugar price
+data for the United States come from Bloomberg and World Bank. Global sugar
+price data come from Bloomberg, International Sugar Organization, Thomson Reuters
+Datastream, and the World Bank.
+</p>
+<p>This data set effectively deprecates the <code>sugar_price</code> and <code>coffee_price</code>
+data sets in this package. Both may be removed at a later point.
+</p>
+
+
+</div>
+</body></html>

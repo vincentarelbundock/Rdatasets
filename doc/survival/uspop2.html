@@ -1,20 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Projected US Population</title>
+<!DOCTYPE html><html><head><title>R: Projected US Population</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body>
+</head><body><div class="container">
 
-<table width="100%" summary="page for uspop2"><tr><td>uspop2</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>uspop2</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Projected US Population</h2>
 
 <h3>Description</h3>
 
 <p>US population by age and sex, for 2000 through 2020</p>
-
-
-<h3>Usage</h3>
-
-<pre>data(uspop2)</pre>
 
 
 <h3>Format</h3>
@@ -46,15 +52,15 @@ www.census.gov/population/projections.
 
 <h3>Examples</h3>
 
-<pre>
-us50 &lt;- uspop2[51:101,, "2000"]  #US 2000 population, 50 and over
+<pre><code class='language-R'>us50 &lt;- uspop2[51:101,, "2000"]  #US 2000 population, 50 and over
 age &lt;- as.integer(dimnames(us50)[[1]])
 smat &lt;- model.matrix( ~ factor(floor(age/5)) -1)
 ustot &lt;- t(smat) %*% us50  #totals by 5 year age groups
 temp &lt;- c(50,55, 60, 65, 70, 75, 80, 85, 90, 95)
 dimnames(ustot) &lt;- list(c(paste(temp, temp+4, sep="-"), "100+"),
                          c("male", "female"))
-</pre>
+</code></pre>
 
 
+</div>
 </body></html>

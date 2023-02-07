@@ -65,7 +65,9 @@
 
    ``sunempr12md``
       the state-level unemployment rate (12-month difference) entering
-      Nov. 2016
+      Nov. 2016. Higher values indicate the unemployment rate is
+      increasing entering Nov. 2016 relative to what it was entering
+      Nov. 2015.
 
    ``gdp``
       an estimate of the state's GDP

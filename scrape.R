@@ -8,21 +8,8 @@ packages <- desc_get_deps()$package
 # load packages
 sapply(packages, function(x) suppressPackageStartupMessages(require(x, character.only = TRUE, warn.conflicts = FALSE, quietly = TRUE)))
 
-# Functions
-get_doc = function(package = 'mi', dataset = 'nlsyV') {
-    help.ref = try(help(eval(dataset), package=eval(package)), silent = TRUE)
-    out = try(utils:::.getHelpFile(help.ref), silent = TRUE)
-    return(out)
-}
 
-get_data = function(package = 'mi', dataset = 'nlsyV') {
-    e = new.env(hash = TRUE, parent = parent.frame(), size = 29L)
-    data(list = dataset, package = package, envir = e)
-    out = e[[dataset]]
-    return(out)
-}
-
-tidy_data = function(dat) {
+clean_data = function(dat) {
     if(class(dat)[1]=='ts'){
         dat = try(data.frame('time' = time(dat), 'value' = dat), silent = TRUE)
     } else {
@@ -35,22 +22,51 @@ tidy_data = function(dat) {
         idx <- sapply(out, function(x) class(x)[1]) != "list"
         out <- out[, idx, drop = FALSE]
     } else {
-        out = NA
-        class(out) = 'try-error'
+        out = suppressWarnings(tryCatch(as.data.frame(dat), error = function(e) NULL))
     }
     return(out)
 }
 
+# Functions
+get_doc = function(package = 'mi', dataset = 'nlsyV') {
+    help.ref = try(help(eval(dataset), package=eval(package)), silent = TRUE)
+    out = try(utils:::.getHelpFile(help.ref), silent = TRUE)
+    return(out)
+}
+
+get_data = function(package = 'mi', dataset = 'nlsyV') {
+    e = new.env(hash = TRUE, parent = parent.frame(), size = 29L)
+    data(list = dataset, package = package, envir = e, overwrite = TRUE)
+    out = e[[dataset]]
+    out = clean_data(out)
+    return(out)
+}
+
+get_both <- function(i) {
+    package = index$Package[i]
+    dataset = index$ItemClean[i]
+    a = suppressWarnings(tryCatch(get_data(package, dataset), error = function(e) NULL))
+    b = suppressWarnings(tryCatch(get_doc(package, dataset), error = function(e) NULL))
+    if (is.null(a) || is.null(b)) {
+        out <- NULL
+    } else {
+        out <- list(data = a, doc = b)
+    }
+    return(out)
+}
+
+
 write_data = function(i) {
     package = index$Package[i]
-    dataset = index$Item[i]
+    dataset = index$ItemClean[i]
     dat = data[[i]]
     doc = docs[[i]]
+
     cat(package, ' -- ', dataset, '\n')
-    try(dir.create('csv'), silent = TRUE)
-    try(dir.create('doc'), silent = TRUE)
-    try(dir.create(paste0('csv/', package)), silent = TRUE)
-    try(dir.create(paste0('doc/', package)), silent = TRUE)
+    if (!dir.exists("csv")) dir.create('csv')
+    if (!dir.exists("doc")) dir.create('doc')
+    if (!dir.exists(paste0('csv/', package))) dir.create(paste0('csv/', package))
+    if (!dir.exists(paste0('doc/', package))) dir.create(paste0('doc/', package))
     fn_csv = paste0('csv/', package, '/', dataset, '.csv')
     fn_doc = paste0('doc/', package, '/', dataset, '.html')
     write.csv(data[[i]], file = fn_csv)
@@ -60,17 +76,15 @@ write_data = function(i) {
 # Index
 index = data(package=packages)$results[,c(1,3,4)]
 index = data.frame(index, stringsAsFactors=FALSE)
+index$ItemClean = gsub(" .*", "", index$Item)
 
 # Extract Data and Docs and exclude non-data.frames and errors
-data = lapply(1:nrow(index), function(i) get_data(index$Package[i], index$Item[i]))
-docs = lapply(1:nrow(index), function(i) get_doc(index$Package[i], index$Item[i]))
-data = lapply(data, tidy_data)
-idx1 = sapply(docs, class) != 'try-error'
-idx2 = sapply(data, class) != 'try-error'
-idx = as.logical(pmin(idx1, idx2))
-data = data[idx]
-docs = docs[idx]
-index = index[idx,]
+data = lapply(seq_len(nrow(index)), get_both)
+idx = sapply(data, is.null)
+data = data[!idx]
+index = index[!idx,]
+docs = lapply(data, function(x) x$doc)
+data = lapply(data, function(x) x$data)
 
 # Write to file
 for (i in 1:nrow(index)) {
@@ -82,13 +96,13 @@ is.binary <- function(x) {
     tryCatch(length(unique(na.omit(x))) == 2, 
              error = function(e) FALSE, silent = TRUE)
 }
-index$Rows = sapply(data, nrow)
-index$Cols = sapply(data, ncol)
-index$n_binary <- sapply(data, function(x) sum(sapply(x, is.binary)))
-index$n_character <- sapply(data, function(x) sum(sapply(x, is.character)))
-index$n_factor <- sapply(data, function(x) sum(sapply(x, is.factor)))
-index$n_logical <- sapply(data, function(x) sum(sapply(x, is.logical)))
-index$n_numeric <- sapply(data, function(x) sum(sapply(x, is.numeric)))
+index$Rows = vapply(data, nrow, FUN.VALUE = numeric(1))
+index$Cols = vapply(data, ncol, FUN.VALUE = numeric(1))
+index$n_binary <- sapply(data, function(x) sum(vapply(x, is.binary, FUN.VALUE = logical(1))))
+index$n_character <- sapply(data, function(x) sum(vapply(x, is.character, FUN.VALUE = logical(1))))
+index$n_factor <- sapply(data, function(x) sum(vapply(x, is.factor, FUN.VALUE = logical(1))))
+index$n_logical <- sapply(data, function(x) sum(vapply(x, is.logical, FUN.VALUE = logical(1))))
+index$n_numeric <- sapply(data, function(x) sum(vapply(x, is.numeric, FUN.VALUE = logical(1))))
 
 index$CSV = paste('https://vincentarelbundock.github.io/Rdatasets/csv/',
                   index$Package, '/', index$Item, '.csv', sep='')
@@ -100,6 +114,7 @@ index = index[order(tolower(index$Package),
                     tolower(index$Item)),]
 
 # Index CSV
+index$ItemClean = NULL
 write.csv(index, file = 'datasets.csv', row.names = FALSE)
 
 # Index HTML

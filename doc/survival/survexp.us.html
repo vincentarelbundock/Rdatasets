@@ -1,0 +1,90 @@
+<!DOCTYPE html><html><head><title>R: Census Data Sets for the Expected Survival and Person Years...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ratetables</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+Census Data Sets for the Expected Survival and Person Years Functions
+</h2>
+
+<h3>Description</h3>
+
+<p>Census data sets for the expected survival and person years functions.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(survexp, package="survival")
+</code></pre>
+
+
+<h3>Details</h3>
+
+
+<dl>
+<dt>survexp.us</dt><dd>
+<p>total United States population, by age and sex, 1940 to 2012.
+</p>
+</dd>
+<dt>survexp.usr</dt><dd>
+<p>United States population, by age, sex and race, 1940 to 2014.
+Race is white or black.  For 1960 and 1970 the black
+population values were not reported separately, so the nonwhite
+values were used.  (Over the years, the reported tables have
+differed wrt reporting non-white and/or black.)
+</p>
+</dd>
+<dt>survexp.mn</dt><dd>
+<p>total Minnesota population, by age and sex, 1970 to 2013.
+</p>
+</dd>
+</dl>
+
+<p>Each of these tables contains the daily hazard rate for a matched
+subject from the population, defined as <code class="reqn">-\log(1-q)/365.25</code> where
+<code class="reqn">q</code> is the 1 year probability of death as reported in the original
+tables from the US Census.  For age 25 in 1970, for instance,
+<code class="reqn">p = 1-q</code> is is the
+probability that a subject who becomes 25 years of age in 1970 will
+achieve his/her 26th birthday.  The tables are recast in terms of
+hazard per day for computational convenience.
+</p>
+<p>Each table is stored as an array, with additional attributes, and
+can be subset and manipulated as standard R arrays.
+See the help page for <code>ratetable</code> for details.
+</p>
+<p>All numeric dimensions of a rate table must be in the same units.
+The <code>survexp.us</code> rate table contains daily hazard rates, the age
+cutpoints are in days, and the calendar year cutpoints are a Date.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>ratetable</code>, <code>survexp</code>,
+<code>pyears</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>survexp.uswhite &lt;- survexp.usr[,,"white",]
+</code></pre>
+
+
+</div>
+</body></html>

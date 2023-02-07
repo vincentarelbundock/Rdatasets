@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Norwegian Attitudes toward European Integration (2021-2022)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ESS10NO</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Norwegian Attitudes toward European Integration (2021-2022)</h2>
+
+<h3>Description</h3>
+
+<p>This is a simple data set to illustrate the use of sampling weights from
+the European Social Survey.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ESS10NO
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1,411 observations on the following 24 variables.
+</p>
+
+<dl>
+<dt><code>cntry</code></dt><dd><p>a character vector with Norway's two-character ISO code</p>
+</dd>
+<dt><code>idno</code></dt><dd><p>a numeric identifier for the individual respondent</p>
+</dd>
+<dt><code>region</code></dt><dd><p>a character for one of six regions recorded by the European Social Survey</p>
+</dd>
+<dt><code>inwds</code></dt><dd><p>a date-time vector for the start of the interview</p>
+</dd>
+<dt><code>inwde</code></dt><dd><p>a date-time vector for the end of the interview</p>
+</dd>
+<dt><code>dweight</code></dt><dd><p>a design weight</p>
+</dd>
+<dt><code>pspwght</code></dt><dd><p>a post-stratification weight, including the design weight</p>
+</dd>
+<dt><code>pweight</code></dt><dd><p>a population size weight</p>
+</dd>
+<dt><code>anweight</code></dt><dd><p>an analaysis weight</p>
+</dd>
+<dt><code>prob</code></dt><dd><p>the sampling probability</p>
+</dd>
+<dt><code>stratum</code></dt><dd><p>the sampling stratum</p>
+</dd>
+<dt><code>psu</code></dt><dd><p>the primary sampling unit</p>
+</dd>
+<dt><code>eu_vote</code></dt><dd><p>a character vector indicating how a respondent would vote if given a vote on joining the European Union</p>
+</dd>
+<dt><code>brnnorge</code></dt><dd><p>a dummy variable indicating whether respondent was born in Norway or not</p>
+</dd>
+<dt><code>agea</code></dt><dd><p>a numeric vector for the respondent's age in years</p>
+</dd>
+<dt><code>imbgeco</code></dt><dd><p>a numeric vector for if respondent thinks immigrants are generally good or bad for Norway's economy. Higher values = good</p>
+</dd>
+<dt><code>imueclt</code></dt><dd><p>a numeric vector for if respondent thinks immigrants enrich or undermine Norway's culture. Higher values = enrich more than undermine</p>
+</dd>
+<dt><code>imwbcnt</code></dt><dd><p>a numeric vector for if respondent thinks immigrants make Norway a better place to live. Higher values = better place to live</p>
+</dd>
+<dt><code>female</code></dt><dd><p>a numeric vector for whether the respondent is a woman</p>
+</dd>
+<dt><code>eduyrs</code></dt><dd><p>a numeric vector for total years of education for the respondent</p>
+</dd>
+<dt><code>uempla</code></dt><dd><p>a numeric vector for whether the respondent is currently unemployed but seeking work</p>
+</dd>
+<dt><code>polint</code></dt><dd><p>a dummy variable indicating political interest. 1 = very or quite interested. 0 = hardly or not at all interested.</p>
+</dd>
+<dt><code>hinctnta</code></dt><dd><p>a numeric vector for household income in deciles</p>
+</dd>
+<dt><code>lrscale</code></dt><dd><p>a numeric vector for the ideology of the respondent on an 11-point [0:10] scale</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>You'll want to convert the <code>eu_vote</code> variable into something usable.
+Possible values include &quot;Remain Outside&quot;, &quot;Join EU&quot;, &quot;Don't Know&quot;, &quot;Not Eligible&quot;,
+&quot;Blank Ballot&quot;, &quot;Refuse to Answer&quot;, &quot;Wouldn't Vote&quot;. Perhaps it's reasonable
+to make this a dummy variable comparing those who want to join versus those
+who want Norway to remain outside the European Union.
+</p>
+<p>The data are edition 2.2 of the 10th round of European Social Survey, which
+was released for public consumption on 21 December 2022.
+</p>
+
+
+<h3>Source</h3>
+
+<p>European Social Survey, Round 10
+</p>
+
+
+</div>
+</body></html>

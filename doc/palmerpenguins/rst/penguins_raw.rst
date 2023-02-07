@@ -1,111 +1,119 @@
-============ ===============
-penguins_raw R Documentation
-============ ===============
+.. container::
 
-Penguin size, clutch and blood isotope data for foraging adults near Palmer Station, Antarctica
------------------------------------------------------------------------------------------------
+   ============ ===============
+   penguins_raw R Documentation
+   ============ ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Penguin size, clutch, and blood isotope data for foraging
+      adults near Palmer Station, Antarctica
+      :name: penguin-size-clutch-and-blood-isotope-data-for-foraging-adults-near-palmer-station-antarctica
 
-Includes nesting observations, penguin size data, and isotope
-measurements from blood samples for adult Adélie, Chinstrap, and Gentoo
-penguins.
+   .. rubric:: Description
+      :name: description
 
-Usage
-~~~~~
+   Includes nesting observations, penguin size data, and isotope
+   measurements from blood samples for adult Adélie, Chinstrap, and
+   Gentoo penguins.
 
-::
+   .. rubric:: Usage
+      :name: usage
 
-   penguins_raw
+   ::
 
-Format
-~~~~~~
+      penguins_raw
 
-A tibble with 344 rows and 17 variables:
+   .. rubric:: Format
+      :name: format
 
-studyName
-   Sampling expedition from which data were collected, generated, etc.
+   A tibble with 344 rows and 17 variables:
 
-Sample Number
-   an integer denoting the continuous numbering sequence for each sample
+   studyName
+      Sampling expedition from which data were collected, generated,
+      etc.
 
-Species
-   a character string denoting the penguin species
+   Sample Number
+      an integer denoting the continuous numbering sequence for each
+      sample
 
-Region
-   a character string denoting the region of Palmer LTER sampling grid
+   Species
+      a character string denoting the penguin species
 
-Island
-   a character string denoting the island near Palmer Station where
-   samples were collected
+   Region
+      a character string denoting the region of Palmer LTER sampling
+      grid
 
-Stage
-   a character string denoting reproductive stage at sampling
+   Island
+      a character string denoting the island near Palmer Station where
+      samples were collected
 
-Individual ID
-   a character string denoting the unique ID for each individual in
-   dataset
+   Stage
+      a character string denoting reproductive stage at sampling
 
-Clutch Completion
-   a character string denoting if the study nest observed with a full
-   clutch, i.e., 2 eggs
+   Individual ID
+      a character string denoting the unique ID for each individual in
+      dataset
 
-Date Egg
-   a date denoting the date study nest observed with 1 egg (sampled)
+   Clutch Completion
+      a character string denoting if the study nest observed with a full
+      clutch, i.e., 2 eggs
 
-Culmen Length
-   a number denoting the length of the dorsal ridge of a bird's bill
-   (millimeters)
+   Date Egg
+      a date denoting the date study nest observed with 1 egg (sampled)
 
-Culmen Depth
-   a number denoting the depth of the dorsal ridge of a bird's bill
-   (millimeters)
+   Culmen Length
+      a number denoting the length of the dorsal ridge of a bird's bill
+      (millimeters)
 
-Flipper Length
-   an integer denoting the length penguin flipper (millimeters)
+   Culmen Depth
+      a number denoting the depth of the dorsal ridge of a bird's bill
+      (millimeters)
 
-Body Mass
-   an integer denoting the penguin body mass (grams)
+   Flipper Length
+      an integer denoting the length penguin flipper (millimeters)
 
-Sex
-   a character string denoting the sex of an animal
+   Body Mass
+      an integer denoting the penguin body mass (grams)
 
-Delta 15 N
-   a number denoting the measure of the ratio of stable isotopes 15N:14N
+   Sex
+      a character string denoting the sex of an animal
 
-Delta 13 C
-   a number denoting the measure of the ratio of stable isotopes 13C:12C
+   Delta 15 N
+      a number denoting the measure of the ratio of stable isotopes
+      15N:14N
 
-Comments
-   a character string with text providing additional relevant
-   information for data
+   Delta 13 C
+      a number denoting the measure of the ratio of stable isotopes
+      13C:12C
 
-Source
-~~~~~~
+   Comments
+      a character string with text providing additional relevant
+      information for data
 
-Adélie penguins: Palmer Station Antarctica LTER and K. Gorman. 2020.
-Structural size measurements and isotopic signatures of foraging among
-adult male and female Adélie penguins (Pygoscelis adeliae) nesting along
-the Palmer Archipelago near Palmer Station, 2007-2009 ver 5.
-Environmental Data Initiative
-https://doi.org/10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f
+   .. rubric:: Source
+      :name: source
 
-Gentoo penguins: Palmer Station Antarctica LTER and K. Gorman. 2020.
-Structural size measurements and isotopic signatures of foraging among
-adult male and female Gentoo penguin (Pygoscelis papua) nesting along
-the Palmer Archipelago near Palmer Station, 2007-2009 ver 5.
-Environmental Data Initiative
-https://doi.org/10.6073/pasta/7fca67fb28d56ee2ffa3d9370ebda689
+   Adélie penguins: Palmer Station Antarctica LTER and K. Gorman. 2020.
+   Structural size measurements and isotopic signatures of foraging
+   among adult male and female Adélie penguins (Pygoscelis adeliae)
+   nesting along the Palmer Archipelago near Palmer Station, 2007-2009
+   ver 5. Environmental Data Initiative
+   https://doi.org/10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f
 
-Chinstrap penguins: Palmer Station Antarctica LTER and K. Gorman. 2020.
-Structural size measurements and isotopic signatures of foraging among
-adult male and female Chinstrap penguin (Pygoscelis antarcticus) nesting
-along the Palmer Archipelago near Palmer Station, 2007-2009 ver 6.
-Environmental Data Initiative
-https://doi.org/10.6073/pasta/c14dfcfada8ea13a17536e73eb6fbe9e
+   Gentoo penguins: Palmer Station Antarctica LTER and K. Gorman. 2020.
+   Structural size measurements and isotopic signatures of foraging
+   among adult male and female Gentoo penguin (Pygoscelis papua) nesting
+   along the Palmer Archipelago near Palmer Station, 2007-2009 ver 5.
+   Environmental Data Initiative
+   https://doi.org/10.6073/pasta/7fca67fb28d56ee2ffa3d9370ebda689
 
-Originally published in: Gorman KB, Williams TD, Fraser WR (2014)
-Ecological Sexual Dimorphism and Environmental Variability within a
-Community of Antarctic Penguins (Genus Pygoscelis). PLoS ONE 9(3):
-e90081. doi:10.1371/journal.pone.0090081
+   Chinstrap penguins: Palmer Station Antarctica LTER and K. Gorman.
+   2020. Structural size measurements and isotopic signatures of
+   foraging among adult male and female Chinstrap penguin (Pygoscelis
+   antarcticus) nesting along the Palmer Archipelago near Palmer
+   Station, 2007-2009 ver 6. Environmental Data Initiative
+   https://doi.org/10.6073/pasta/c14dfcfada8ea13a17536e73eb6fbe9e
+
+   Originally published in: Gorman KB, Williams TD, Fraser WR (2014)
+   Ecological Sexual Dimorphism and Environmental Variability within a
+   Community of Antarctic Penguins (Genus Pygoscelis). PLoS ONE 9(3):
+   e90081. doi:10.1371/journal.pone.0090081

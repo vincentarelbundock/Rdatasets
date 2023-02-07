@@ -1,63 +1,74 @@
-======= ===============
-myeloid R Documentation
-======= ===============
+.. container::
 
-Acute myeloid leukemia
-----------------------
+   ======= ===============
+   myeloid R Documentation
+   ======= ===============
 
-Description
-~~~~~~~~~~~
+   .. rubric:: Acute myeloid leukemia
+      :name: acute-myeloid-leukemia
 
-This simulated data set is based on a trial in acute myeloid leukemia.
+   .. rubric:: Description
+      :name: description
 
-Format
-~~~~~~
+   This simulated data set is based on a trial in acute myeloid
+   leukemia.
 
-A data frame with 646 observations on the following 9 variables.
+   .. rubric:: Usage
+      :name: usage
 
-``id``
-   subject identifier, 1-646
+   ::
 
-``trt``
-   treatment arm A or B
+      myeloid
+      data(cancer, package="survival")
 
-``sex``
-   f=female, m=male
+   .. rubric:: Format
+      :name: format
 
-``futime``
-   time to death or last follow-up
+   A data frame with 646 observations on the following 9 variables.
 
-``death``
-   1 if ``futime`` is a death, 0 for censoring
+   ``id``
+      subject identifier, 1-646
 
-``txtime``
-   time to hematropetic stem cell transplant
+   ``trt``
+      treatment arm A or B
 
-``crtime``
-   time to complete response
+   ``sex``
+      f=female, m=male
 
-``rltime``
-   time to relapse of disease
+   ``futime``
+      time to death or last follow-up
 
-Details
-~~~~~~~
+   ``death``
+      1 if ``futime`` is a death, 0 for censoring
 
-This data set is used to illustrate multi-state survival curves. The
-correlation between within-subject event times strongly resembles that
-from an actual trial, but none of the actual data values are from that
-source.
+   ``txtime``
+      time to hematropetic stem cell transplant
 
-References
-~~~~~~~~~~
+   ``crtime``
+      time to complete response
 
-Le-Rademacher JG, Peterson RA, Therneau TM, Sanford BL, Stone RM,
-Mandrekar SJ. Application of multi-state models in cancer clinical
-trials. Clin Trials. 2018 Oct; 15 (5):489-498
+   ``rltime``
+      time to relapse of disease
 
-Examples
-~~~~~~~~
+   .. rubric:: Details
+      :name: details
 
-::
+   This data set is used to illustrate multi-state survival curves. The
+   correlation between within-subject event times strongly resembles
+   that from an actual trial, but none of the actual data values are
+   from that source.
 
-   coxph(Surv(futime, death) ~ trt, data=myeloid)
-   # See the mstate vignette for a more complete analysis
+   .. rubric:: References
+      :name: references
+
+   Le-Rademacher JG, Peterson RA, Therneau TM, Sanford BL, Stone RM,
+   Mandrekar SJ. Application of multi-state models in cancer clinical
+   trials. Clin Trials. 2018 Oct; 15 (5):489-498
+
+   .. rubric:: Examples
+      :name: examples
+
+   ::
+
+      coxph(Surv(futime, death) ~ trt, data=myeloid)
+      # See the mstate vignette for a more complete analysis

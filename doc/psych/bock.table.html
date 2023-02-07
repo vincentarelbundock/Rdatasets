@@ -1,0 +1,98 @@
+<!DOCTYPE html><html><head><title>R: Bock and Liberman (1970) data set of 1000 observations of the...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>bock</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Bock and Liberman (1970) data set of 1000 observations of the LSAT
+</h2>
+
+<h3>Description</h3>
+
+<p>An example data set used by McDonald (1999) as well as other discussions of Item Response Theory makes use of a data table on 10 items (two sets of 5) from the Law School Admissions Test (LSAT).  Included in this data set is the original table as well as the reponses for 1000 subjects on the first set (Figure Classification) and second set (Debate). 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(bock)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 32 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>index</code></dt><dd><p>32 response patterns</p>
+</dd>
+<dt><code>Q1</code></dt><dd><p>Responses to item 1</p>
+</dd>
+<dt><code>Q2</code></dt><dd><p>Responses to item 2</p>
+</dd>
+<dt><code>Q3</code></dt><dd><p>Responses to item 3</p>
+</dd>
+<dt><code>Q4</code></dt><dd><p>Responses to item 4</p>
+</dd>
+<dt><code>Q5</code></dt><dd><p>Responses to item 5</p>
+</dd>
+<dt><code>Ob6</code></dt><dd><p>count of observations for the section 6 test</p>
+</dd>
+<dt><code>Ob7</code></dt><dd><p>count of observations for the section 7 test</p>
+</dd>
+</dl>
+
+<p>Two other data sets are derived from the bock dataset. These are converted using the <code>table2df</code> function.
+</p>
+
+<dl>
+<dt>lsat6</dt><dd><p>reponses to 5 items for 1000 subjects on section 6</p>
+</dd>
+<dt>lsat7</dt><dd><p>reponses to 5 items for 1000 subjects on section 7</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The lsat6 data set is analyzed in the ltm package as well as by McDonald (1999). lsat7 is another 1000 subjects on part 7 of the LSAT. Both sets are described by Bock and Lieberman (1970). Both sets are useful examples of testing out IRT procedures and showing the use of <code>tetrachoric</code> correlations and item factor analysis using the <code>irt.fa</code> function.
+</p>
+
+
+<h3>Source</h3>
+
+<p>R. Darrell Bock and M. Lieberman (1970). Fitting a response model for dichotomously scored items. Psychometrika, 35(2):179-197.
+</p>
+
+
+<h3>References</h3>
+
+<p>R.P. McDonald. Test theory: A unified treatment. L. Erlbaum Associates, Mahwah, N.J., 1999.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(bock)
+responses &lt;- table2df(bock.table[,2:6],count=bock.table[,7],
+        labs= paste("lsat6.",1:5,sep=""))
+describe(responses)
+## maybe str(bock.table) ; plot(bock.table) ...
+</code></pre>
+
+
+</div>
+</body></html>

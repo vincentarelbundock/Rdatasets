@@ -100,7 +100,7 @@ event during the course of antibiotics, nor for an additional 6 days
 after they end.  (If the symptoms reappear immediately after cessation
 then from a medical standpoint this would not be a new infection.)
 </p>
-<p>This data set reproduces the data in Therneau and Grambsch, is does not
+<p>This data set reproduces the data in Therneau and Grambsch, it does not
 exactly reproduce those in Therneau and Hamilton due to data set updates.
 </p>
 
@@ -119,7 +119,7 @@ in Medicine, 16:2029-2047, 1997.
 <h3>Examples</h3>
 
 <pre><code class='language-R'># Build the start-stop data set for analysis, and
-#  replicate line 2 of table 8.13
+#  replicate line 2 of table 8.13 in the book
 first &lt;- subset(rhDNase, !duplicated(id)) #first row for each subject
 dnase &lt;- tmerge(first, first, id=id, tstop=as.numeric(end.dt -entry.dt))
 

@@ -10,10 +10,11 @@
    .. rubric:: Description
       :name: description
 
-   This data is a subset of the NOAA Atlantic hurricane database best
-   track data, https://www.nhc.noaa.gov/data/#hurdat. The data includes
-   the positions and attributes of storms from 1975-2020, measured every
-   six hours during the lifetime of a storm.
+   This dataset is the NOAA Atlantic hurricane database best track data,
+   https://www.nhc.noaa.gov/data/#hurdat. The data includes the
+   positions and attributes of storms from 1975-2021. Storms from 1979
+   onward are measured every six hours during the lifetime of the storm.
+   Storms in earlier years have some missing data.
 
    .. rubric:: Usage
       :name: usage
@@ -25,7 +26,7 @@
    .. rubric:: Format
       :name: format
 
-   A tibble with 11,859 observations and 13 variables:
+   A tibble with 19,066 observations and 13 variables:
 
    name
       Storm Name
@@ -44,8 +45,19 @@
       Hurricane)
 
    category
-      Saffir-Simpson storm category (estimated from wind speed. -1 =
-      Tropical Depression, 0 = Tropical Storm)
+      Saffir-Simpson hurricane category calculated from wind speed.
+
+      -  ``NA``: Not a hurricane
+
+      -  1: 64+ knots
+
+      -  2: 83+ knots
+
+      -  3: 96+ knots
+
+      -  4: 113+ knots
+
+      -  5: 137+ knots
 
    wind
       storm's maximum sustained wind speed (in knots)
@@ -55,11 +67,13 @@
 
    tropicalstorm_force_diameter
       Diameter (in nautical miles) of the area experiencing tropical
-      storm strength winds (34 knots or above)
+      storm strength winds (34 knots or above). Only available starting
+      in 2004.
 
    hurricane_force_diameter
       Diameter (in nautical miles) of the area experiencing hurricane
-      strength winds (64 knots or above)
+      strength winds (64 knots or above). Only available starting in
+      2004.
 
    .. rubric:: See Also
       :name: see-also
@@ -72,13 +86,15 @@
 
    ::
 
-      # show a plot of the storm paths
+      storms
+
+      # Show a few recent storm paths
       if (requireNamespace("ggplot2", quietly = TRUE)) {
         library(ggplot2)
-        ggplot(storms) +
-          aes(x=long, y=lat, color=paste(year, name)) +
-          geom_path() +
-          guides(color='none') +
+        storms %>%
+          filter(year >= 2000) %>%
+          ggplot(aes(long, lat, color = paste(year, name))) +
+          geom_path(show.legend = FALSE) +
           facet_wrap(~year)
       }
 

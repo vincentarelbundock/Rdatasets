@@ -1,0 +1,83 @@
+<!DOCTYPE html><html><head><title>R: Rat data from Gail et al.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>rats2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Rat data from Gail et al.</h2>
+
+<h3>Description</h3>
+
+<p>48 rats were injected with a carcinogen, and then
+randomized to either drug or placebo.  The number of tumors ranges
+from 0 to 13; all rats were  censored at 6 months after randomization.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>rats2
+data(cancer, package="survival")
+</code></pre>
+
+
+<h3>Format</h3>
+
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    rat:</td><td style="text-align: left;"> id</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    trt:</td><td style="text-align: left;"> treatment,(1=drug, 0=control) </td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    observation:</td><td style="text-align: left;"> within rat</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    start:</td><td style="text-align: left;"> entry time</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    stop:</td><td style="text-align: left;"> exit time</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    status:</td><td style="text-align: left;"> event status, 1=tumor, 0=censored</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>MH Gail, TJ Santner, and CC Brown (1980),
+An analysis of comparative carcinogenesis experiments based on
+multiple times to tumor.
+<em>Biometrics</em> <b>36</b>, 255&ndash;266.
+</p>
+
+
+</div>
+</body></html>

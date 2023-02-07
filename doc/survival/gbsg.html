@@ -1,9 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Breast cancer data sets used in Royston and Altman (2013)</title>
+<!DOCTYPE html><html><head><title>R: Breast cancer data sets used in Royston and Altman (2013)</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body>
+</head><body><div class="container">
 
-<table width="100%" summary="page for gbsg"><tr><td>gbsg</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>gbsg</td><td style="text-align: right;">R Documentation</td></tr></table>
 
 <h2>Breast cancer data sets used in Royston and Altman (2013)</h2>
 
@@ -18,7 +29,9 @@ complete data for the prognostic variables.
 
 <h3>Usage</h3>
 
-<pre>data("gbsg")</pre>
+<pre><code class='language-R'>gbsg
+data(cancer, package="survival")
+</code></pre>
 
 
 <h3>Format</h3>
@@ -29,11 +42,11 @@ complete data for the prognostic variables.
 <dl>
 <dt><code>pid</code></dt><dd><p>patient identifier</p>
 </dd>
-<dt><code>age</code></dt><dd><p>age</p>
+<dt><code>age</code></dt><dd><p>age, years</p>
 </dd>
 <dt><code>meno</code></dt><dd><p>menopausal status (0= premenopausal, 1= postmenopausal)</p>
 </dd>
-<dt><code>size</code></dt><dd><p>tumor size</p>
+<dt><code>size</code></dt><dd><p>tumor size, mm</p>
 </dd>
 <dt><code>grade</code></dt><dd><p>tumor grade</p>
 </dd>
@@ -45,7 +58,7 @@ complete data for the prognostic variables.
 </dd>
 <dt><code>hormon</code></dt><dd><p>hormonal therapy, 0= no, 1= yes</p>
 </dd>
-<dt><code>rfstime</code></dt><dd><p>recurrnece free survival time; days to first of reccurence, death or last follow-up</p>
+<dt><code>rfstime</code></dt><dd><p>recurrence free survival time; days to first of reccurence, death or last follow-up</p>
 </dd>
 <dt><code>status</code></dt><dd><p>0= alive without recurrence, 1= recurrence or
 death</p>
@@ -74,4 +87,5 @@ model: principles and methods.  BMC Medical Research Methodology 2013, 13:33
 </p>
 
 
+</div>
 </body></html>
