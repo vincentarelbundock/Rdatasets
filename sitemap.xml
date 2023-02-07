@@ -2488,6 +2488,36 @@
     <loc>/doc/Stat2Data/Zimmerman.html</loc>
   </url>
   <url>
+    <loc>/doc/aod/antibio.html</loc>
+  </url>
+  <url>
+    <loc>/doc/aod/cohorts.html</loc>
+  </url>
+  <url>
+    <loc>/doc/aod/dja.html</loc>
+  </url>
+  <url>
+    <loc>/doc/aod/lizards.html</loc>
+  </url>
+  <url>
+    <loc>/doc/aod/mice.html</loc>
+  </url>
+  <url>
+    <loc>/doc/aod/orob1.html</loc>
+  </url>
+  <url>
+    <loc>/doc/aod/orob2.html</loc>
+  </url>
+  <url>
+    <loc>/doc/aod/rabbits.html</loc>
+  </url>
+  <url>
+    <loc>/doc/aod/rats.html</loc>
+  </url>
+  <url>
+    <loc>/doc/aod/salmonella.html</loc>
+  </url>
+  <url>
     <loc>/doc/asaur/ChanningHouse.html</loc>
   </url>
   <url>
@@ -3007,6 +3037,9 @@
     <loc>/doc/datasets/BJsales.html</loc>
   </url>
   <url>
+    <loc>/doc/datasets/BJsales.lead.html</loc>
+  </url>
+  <url>
     <loc>/doc/datasets/BOD.html</loc>
   </url>
   <url>
@@ -3130,6 +3163,12 @@
     <loc>/doc/datasets/austres.html</loc>
   </url>
   <url>
+    <loc>/doc/datasets/beaver1.html</loc>
+  </url>
+  <url>
+    <loc>/doc/datasets/beaver2.html</loc>
+  </url>
+  <url>
     <loc>/doc/datasets/cars.html</loc>
   </url>
   <url>
@@ -3148,13 +3187,25 @@
     <loc>/doc/datasets/esoph.html</loc>
   </url>
   <url>
+    <loc>/doc/datasets/euro.cross.html</loc>
+  </url>
+  <url>
     <loc>/doc/datasets/euro.html</loc>
   </url>
   <url>
     <loc>/doc/datasets/faithful.html</loc>
   </url>
   <url>
+    <loc>/doc/datasets/fdeaths.html</loc>
+  </url>
+  <url>
     <loc>/doc/datasets/freeny.html</loc>
+  </url>
+  <url>
+    <loc>/doc/datasets/freeny.x.html</loc>
+  </url>
+  <url>
+    <loc>/doc/datasets/freeny.y.html</loc>
   </url>
   <url>
     <loc>/doc/datasets/infert.html</loc>
@@ -3169,6 +3220,9 @@
     <loc>/doc/datasets/islands.html</loc>
   </url>
   <url>
+    <loc>/doc/datasets/ldeaths.html</loc>
+  </url>
+  <url>
     <loc>/doc/datasets/lh.html</loc>
   </url>
   <url>
@@ -3176,6 +3230,9 @@
   </url>
   <url>
     <loc>/doc/datasets/lynx.html</loc>
+  </url>
+  <url>
+    <loc>/doc/datasets/mdeaths.html</loc>
   </url>
   <url>
     <loc>/doc/datasets/morley.html</loc>
@@ -3220,7 +3277,34 @@
     <loc>/doc/datasets/sleep.html</loc>
   </url>
   <url>
+    <loc>/doc/datasets/stack.loss.html</loc>
+  </url>
+  <url>
+    <loc>/doc/datasets/stack.x.html</loc>
+  </url>
+  <url>
     <loc>/doc/datasets/stackloss.html</loc>
+  </url>
+  <url>
+    <loc>/doc/datasets/state.abb.html</loc>
+  </url>
+  <url>
+    <loc>/doc/datasets/state.area.html</loc>
+  </url>
+  <url>
+    <loc>/doc/datasets/state.center.html</loc>
+  </url>
+  <url>
+    <loc>/doc/datasets/state.division.html</loc>
+  </url>
+  <url>
+    <loc>/doc/datasets/state.name.html</loc>
+  </url>
+  <url>
+    <loc>/doc/datasets/state.region.html</loc>
+  </url>
+  <url>
+    <loc>/doc/datasets/state.x77.html</loc>
   </url>
   <url>
     <loc>/doc/datasets/sunspot.month.html</loc>
@@ -3737,6 +3821,9 @@
   </url>
   <url>
     <loc>/doc/lme4/grouseticks.html</loc>
+  </url>
+  <url>
+    <loc>/doc/lme4/grouseticks_agg.html</loc>
   </url>
   <url>
     <loc>/doc/lme4/sleepstudy.html</loc>
@@ -4870,10 +4957,16 @@
     <loc>/doc/psych/Bechtoldt.html</loc>
   </url>
   <url>
+    <loc>/doc/psych/Chen.html</loc>
+  </url>
+  <url>
     <loc>/doc/psych/Damian.html</loc>
   </url>
   <url>
     <loc>/doc/psych/Dwyer.html</loc>
+  </url>
+  <url>
+    <loc>/doc/psych/Garcia.html</loc>
   </url>
   <url>
     <loc>/doc/psych/Gleser.html</loc>
@@ -4886,6 +4979,12 @@
   </url>
   <url>
     <loc>/doc/psych/Harman.8.html</loc>
+  </url>
+  <url>
+    <loc>/doc/psych/Harman.Burt.html</loc>
+  </url>
+  <url>
+    <loc>/doc/psych/Harman.Holzinger.html</loc>
   </url>
   <url>
     <loc>/doc/psych/Harman.political.html</loc>
@@ -4906,6 +5005,9 @@
     <loc>/doc/psych/Tal.Or.html</loc>
   </url>
   <url>
+    <loc>/doc/psych/Tal_Or.html</loc>
+  </url>
+  <url>
     <loc>/doc/psych/Thurstone.33.html</loc>
   </url>
   <url>
@@ -4921,13 +5023,31 @@
     <loc>/doc/psych/Tucker.html</loc>
   </url>
   <url>
+    <loc>/doc/psych/West.html</loc>
+  </url>
+  <url>
     <loc>/doc/psych/bfi.html</loc>
+  </url>
+  <url>
+    <loc>/doc/psych/bfi.keys.html</loc>
+  </url>
+  <url>
+    <loc>/doc/psych/bock.table.html</loc>
   </url>
   <url>
     <loc>/doc/psych/cattell.html</loc>
   </url>
   <url>
+    <loc>/doc/psych/lsat6.html</loc>
+  </url>
+  <url>
+    <loc>/doc/psych/lsat7.html</loc>
+  </url>
+  <url>
     <loc>/doc/psych/sat.act.html</loc>
+  </url>
+  <url>
+    <loc>/doc/psych/schmid.leiman.html</loc>
   </url>
   <url>
     <loc>/doc/psych/withinBetween.html</loc>
@@ -5068,6 +5188,9 @@
     <loc>/doc/robustbase/pilot.html</loc>
   </url>
   <url>
+    <loc>/doc/robustbase/possum.mat.html</loc>
+  </url>
+  <url>
     <loc>/doc/robustbase/possumDiv.html</loc>
   </url>
   <url>
@@ -5114,6 +5237,9 @@
   </url>
   <url>
     <loc>/doc/rpart/kyphosis.html</loc>
+  </url>
+  <url>
+    <loc>/doc/rpart/solder.balance.html</loc>
   </url>
   <url>
     <loc>/doc/rpart/solder.html</loc>
@@ -5185,6 +5311,9 @@
     <loc>/doc/stevedata/Dee04.html</loc>
   </url>
   <url>
+    <loc>/doc/stevedata/ESS10NO.html</loc>
+  </url>
+  <url>
     <loc>/doc/stevedata/ESS9GB.html</loc>
   </url>
   <url>
@@ -5207,6 +5336,9 @@
   </url>
   <url>
     <loc>/doc/stevedata/ODGI.html</loc>
+  </url>
+  <url>
+    <loc>/doc/stevedata/PPGE.html</loc>
   </url>
   <url>
     <loc>/doc/stevedata/Presidents.html</loc>
@@ -5257,6 +5389,9 @@
     <loc>/doc/stevedata/coffee_price.html</loc>
   </url>
   <url>
+    <loc>/doc/stevedata/commodity_prices.html</loc>
+  </url>
+  <url>
     <loc>/doc/stevedata/eight_schools.html</loc>
   </url>
   <url>
@@ -5270,6 +5405,9 @@
   </url>
   <url>
     <loc>/doc/stevedata/fakeAPI.html</loc>
+  </url>
+  <url>
+    <loc>/doc/stevedata/fakeHappiness.html</loc>
   </url>
   <url>
     <loc>/doc/stevedata/fakeLogit.html</loc>
@@ -5294,6 +5432,9 @@
   </url>
   <url>
     <loc>/doc/stevedata/illiteracy30.html</loc>
+  </url>
+  <url>
+    <loc>/doc/stevedata/inglehart03.html</loc>
   </url>
   <url>
     <loc>/doc/stevedata/min_wage.html</loc>
@@ -5330,6 +5471,9 @@
   </url>
   <url>
     <loc>/doc/stevedata/sugar_price.html</loc>
+  </url>
+  <url>
+    <loc>/doc/stevedata/sweden_counties.html</loc>
   </url>
   <url>
     <loc>/doc/stevedata/thatcher_approval.html</loc>
@@ -5386,16 +5530,34 @@
     <loc>/doc/stevedata/yugo_sales.html</loc>
   </url>
   <url>
+    <loc>/doc/survival/aml.html</loc>
+  </url>
+  <url>
     <loc>/doc/survival/bladder.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/bladder1.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/bladder2.html</loc>
   </url>
   <url>
     <loc>/doc/survival/cancer.html</loc>
   </url>
   <url>
+    <loc>/doc/survival/capacitor.html</loc>
+  </url>
+  <url>
     <loc>/doc/survival/cgd.html</loc>
   </url>
   <url>
+    <loc>/doc/survival/cgd0.html</loc>
+  </url>
+  <url>
     <loc>/doc/survival/colon.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/cracks.html</loc>
   </url>
   <url>
     <loc>/doc/survival/diabetic.html</loc>
@@ -5407,7 +5569,22 @@
     <loc>/doc/survival/gbsg.html</loc>
   </url>
   <url>
+    <loc>/doc/survival/genfan.html</loc>
+  </url>
+  <url>
     <loc>/doc/survival/heart.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/ifluid.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/imotor.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/jasa.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/jasa1.html</loc>
   </url>
   <url>
     <loc>/doc/survival/kidney.html</loc>
@@ -5425,7 +5602,25 @@
     <loc>/doc/survival/mgus.html</loc>
   </url>
   <url>
+    <loc>/doc/survival/mgus1.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/mgus2.html</loc>
+  </url>
+  <url>
     <loc>/doc/survival/myeloid.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/myeloma.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/nafld1.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/nafld2.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/nafld3.html</loc>
   </url>
   <url>
     <loc>/doc/survival/nwtco.html</loc>
@@ -5437,7 +5632,13 @@
     <loc>/doc/survival/pbc.html</loc>
   </url>
   <url>
+    <loc>/doc/survival/pbcseq.html</loc>
+  </url>
+  <url>
     <loc>/doc/survival/rats.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/rats2.html</loc>
   </url>
   <url>
     <loc>/doc/survival/retinopathy.html</loc>
@@ -5455,16 +5656,37 @@
     <loc>/doc/survival/stanford2.html</loc>
   </url>
   <url>
+    <loc>/doc/survival/survexp.mn.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/survexp.us.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/survexp.usr.html</loc>
+  </url>
+  <url>
     <loc>/doc/survival/tobin.html</loc>
   </url>
   <url>
     <loc>/doc/survival/transplant.html</loc>
   </url>
   <url>
+    <loc>/doc/survival/turbine.html</loc>
+  </url>
+  <url>
     <loc>/doc/survival/udca.html</loc>
   </url>
   <url>
+    <loc>/doc/survival/udca1.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/udca2.html</loc>
+  </url>
+  <url>
     <loc>/doc/survival/uspop2.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/valveSeat.html</loc>
   </url>
   <url>
     <loc>/doc/survival/veteran.html</loc>
@@ -5494,10 +5716,19 @@
     <loc>/doc/tidyr/billboard.html</loc>
   </url>
   <url>
+    <loc>/doc/tidyr/cms_patient_care.html</loc>
+  </url>
+  <url>
+    <loc>/doc/tidyr/cms_patient_experience.html</loc>
+  </url>
+  <url>
     <loc>/doc/tidyr/construction.html</loc>
   </url>
   <url>
     <loc>/doc/tidyr/fish_encounters.html</loc>
+  </url>
+  <url>
+    <loc>/doc/tidyr/household.html</loc>
   </url>
   <url>
     <loc>/doc/tidyr/population.html</loc>
@@ -5531,6 +5762,9 @@
   </url>
   <url>
     <loc>/doc/tidyr/who.html</loc>
+  </url>
+  <url>
+    <loc>/doc/tidyr/who2.html</loc>
   </url>
   <url>
     <loc>/doc/tidyr/world_bank_pop.html</loc>
