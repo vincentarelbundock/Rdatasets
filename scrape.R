@@ -24,6 +24,9 @@ clean_data = function(dat) {
     } else {
         out = suppressWarnings(tryCatch(as.data.frame(dat), error = function(e) NULL))
     }
+    if (isTRUE(nrow(out) == 0)) {
+        out = NULL
+    }
     return(out)
 }
 
@@ -38,6 +41,9 @@ get_data = function(package = 'mi', dataset = 'nlsyV') {
     e = new.env(hash = TRUE, parent = parent.frame(), size = 29L)
     data(list = dataset, package = package, envir = e, overwrite = TRUE)
     out = e[[dataset]]
+    if (is.null(out)) {
+        out = get(dataset)
+    }
     out = clean_data(out)
     return(out)
 }
