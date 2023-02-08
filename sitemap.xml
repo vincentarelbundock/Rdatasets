@@ -2542,6 +2542,42 @@
     <loc>/doc/asaur/prostateSurvival.html</loc>
   </url>
   <url>
+    <loc>/doc/bakeoff/bakers.html</loc>
+  </url>
+  <url>
+    <loc>/doc/bakeoff/bakers_raw.html</loc>
+  </url>
+  <url>
+    <loc>/doc/bakeoff/bakes_raw.html</loc>
+  </url>
+  <url>
+    <loc>/doc/bakeoff/challenges.html</loc>
+  </url>
+  <url>
+    <loc>/doc/bakeoff/episodes.html</loc>
+  </url>
+  <url>
+    <loc>/doc/bakeoff/episodes_raw.html</loc>
+  </url>
+  <url>
+    <loc>/doc/bakeoff/ratings.html</loc>
+  </url>
+  <url>
+    <loc>/doc/bakeoff/ratings_raw.html</loc>
+  </url>
+  <url>
+    <loc>/doc/bakeoff/results_raw.html</loc>
+  </url>
+  <url>
+    <loc>/doc/bakeoff/seasons_raw.html</loc>
+  </url>
+  <url>
+    <loc>/doc/bakeoff/series_raw.html</loc>
+  </url>
+  <url>
+    <loc>/doc/bakeoff/spice_test_wide.html</loc>
+  </url>
+  <url>
     <loc>/doc/betareg/CarTask.html</loc>
   </url>
   <url>
@@ -3466,6 +3502,90 @@
     <loc>/doc/drc/vinclozolin.html</loc>
   </url>
   <url>
+    <loc>/doc/dslabs/admissions.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/brca.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/brexit_polls.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/death_prob.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/divorce_margarine.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/gapminder.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/greenhouse_gases.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/heights.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/historic_co2.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/movielens.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/murders.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/na_example.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/nyc_regents_scores.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/oecd.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/olive.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/opec.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/outlier_example.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/polls_2008.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/polls_us_election_2016.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/raw_data_research_funding_rates.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/reported_heights.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/research_funding_rates.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/results_us_election_2016.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/stars.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/temp_carbon.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/tissue_gene_expression.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/trump_tweets.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/us_contagious_diseases.html</loc>
+  </url>
+  <url>
     <loc>/doc/evir/bmw.html</loc>
   </url>
   <url>
@@ -3677,6 +3797,21 @@
   </url>
   <url>
     <loc>/doc/gap/nep499.html</loc>
+  </url>
+  <url>
+    <loc>/doc/gapminder/continent_colors.html</loc>
+  </url>
+  <url>
+    <loc>/doc/gapminder/country_codes.html</loc>
+  </url>
+  <url>
+    <loc>/doc/gapminder/country_colors.html</loc>
+  </url>
+  <url>
+    <loc>/doc/gapminder/gapminder.html</loc>
+  </url>
+  <url>
+    <loc>/doc/gapminder/gapminder_unfiltered.html</loc>
   </url>
   <url>
     <loc>/doc/geepack/dietox.html</loc>
