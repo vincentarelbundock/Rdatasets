@@ -76,35 +76,12 @@
 <li><a href="https://vincentarelbundock.github.io/Rdatasets/articles/data.html" class="external-link">HTML index</a></li>
 <li><a href="https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv" class="external-link">CSV index</a></li>
 </ul>
-<p>On the github repository you will also find:</p>
-<ul><li>
-<code>Rdatasets.R</code>: <code>R</code> script to download CSV copies and HTML docs for all datasets distributed in <code>Base R</code> and a list of R packages.</li></ul>
+<p>On the github repository you will also find the scripts I use to scrape data and update the website.</p>
 </div>
 <div class="section level1">
 <h1 id="adding-data">Adding data<a class="anchor" aria-label="anchor" href="#adding-data"></a>
 </h1>
-<p>Many <code>R</code> packages ship with associated datasets, but the script included here only downloads data from packages that are installed locally on the machine where it is run. If you spot interesting data in a package distributed on CRAN, let me know. I will try to install that package on my computer and I will re-run the download script to see if the data can be added to this repository. Requests should be filed on the Github issue tracker.</p>
-</div>
-<div class="section level1">
-<h1 id="omitted-packages">Omitted packages<a class="anchor" aria-label="anchor" href="#omitted-packages"></a>
-</h1>
-<p>Here are some packages that contain data but were not include in Rdatasets for one reason or another:</p>
-<ul>
-<li>CASdatasets: <code>install.packages("CASdatasets", repos =     "http://cas.uqam.ca/pub/R/")</code><ul>
-<li>Some of the included datasets exceed the Github size limit.</li>
-<li>Not on CRAN.</li>
-</ul>
-</li>
-<li>Zelig<ul><li>Not on CRAN.</li></ul>
-</li>
-<li>gamclass<ul><li>Not on CRAN.</li></ul>
-</li>
-<li>Data4Ecologists<ul>
-<li>Not on CRAN. (check out <a href="https://github.com/jfieberg/Data4Ecologists" class="external-link">this link</a>).</li>
-<li><code>devtools::install_github("jfieberg/Data4Ecologists")</code></li>
-</ul>
-</li>
-</ul>
+<p>Rdatasets only includes data from packages published on the CRAN repository. Please open an issue on the Github repository if you would like me to add data from a new package.</p>
 </div>
 <div class="section level1">
 <h1 id="license">License<a class="anchor" aria-label="anchor" href="#license"></a>
@@ -112,31 +89,6 @@
 <p>The code in this repository is licensed under GPL-3.</p>
 <p>I believe that the R documentation which I copied to the Rdatasets html folder is licensed under GPL. You will find a copy of the GPL in the Rdatasets github repository.</p>
 <p>I made a good faith effort to determine the license under which the actual data (i.e. rows/columns of numbers) were distributed, but I was unable to find a definitive answer. My understanding is that these datasets are free to re-distribute. However, if you own the rights to data that are included here and you object to their inclusion in Rdatasets, send me an email at <a href="mailto:vincent.arel-bundock@umontreal.ca" class="email">vincent.arel-bundock@umontreal.ca</a>. I will promptly remove the data in question and will make sure that all traces are erased from the git revision history.</p>
-</div>
-<div class="section level1">
-<h1 id="github-instructions">Github instructions<a class="anchor" aria-label="anchor" href="#github-instructions"></a>
-</h1>
-<p>These are mostly intended as a reminder for Vincent.</p>
-<p>First add new package to DESCRIPTION Imports and scrape the data:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">Rscript</span> scrape.R</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="bu">cd</span> doc</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="ex">../documentation.sh</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="bu">cd</span> ..</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="ex">Rscript</span> -e <span class="st">"rmarkdown::render('README.Rmd')"</span></span></code></pre></div>
-<p>Second, commit to master.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="fu">git</span> add .</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="fu">git</span> commit</span></code></pre></div>
-<p>Third, checkout gh-pages and import the new data there.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="fu">git</span> checkout gh-pages</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a><span class="fu">git</span> checkout master -- csv</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a><span class="fu">git</span> checkout master -- doc</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a><span class="fu">git</span> checkout master -- datasets.csv</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a><span class="fu">git</span> checkout master -- datasets.html</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true"></a><span class="fu">git</span> add .</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true"></a><span class="fu">git</span> commit</span></code></pre></div>
-<p>Finally, move back to master and build the gh-pages website:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="fu">git</span> checkout master</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true"></a><span class="ex">Rscript</span> -e <span class="st">"pkgdown::deploy_to_branch(clean = FALSE)"</span></span></code></pre></div>
 </div>
 
   </div>
