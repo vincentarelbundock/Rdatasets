@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: Each episode's ratings (raw)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ratings_raw</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Each episode's ratings (raw)</h2>
+
+<h3>Description</h3>
+
+<p>Ratings for all episodes across all 10 GBBO series.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ratings_raw
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 94 rows representing individual episodes and 9
+variables:
+</p>
+
+<dl>
+<dt>series</dt><dd><p>a factor denoting UK series (<code>1</code>-<code>10</code>).</p>
+</dd>
+<dt>episode</dt><dd><p>a factor denoting episode number within a series.</p>
+</dd>
+<dt>uk_airdate</dt><dd><p>a date denoting original airdate of episode in the UK.</p>
+</dd>
+<dt>viewers_7day</dt><dd><p>number of viewers in millions within a 7-day window
+from airdate.</p>
+</dd>
+<dt>viewers_28day</dt><dd><p>number of viewers in millions within a 28-day window
+from airdate.</p>
+</dd>
+<dt>network_rank</dt><dd><p>an integer denoting the episode's weekly ranking within
+network (note that the networks changed for series 8 and later).</p>
+</dd>
+<dt>channels_rank</dt><dd><p>an integer denoting the episode's weekly ranking
+across all channels.</p>
+</dd>
+<dt>bbc_iplayer_requests</dt><dd><p>number of BBC iPlayer requests (note: not
+available for all series, and only for series that aired on the BBC).</p>
+</dd>
+<dt>episode_count</dt><dd><p>continuous episode count.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>All official episode viewer number are from BARB, as entered on
+Wikipedia <a href="https://en.wikipedia.org/wiki/The_Great_British_Bake_Off">https://en.wikipedia.org/wiki/The_Great_British_Bake_Off</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>if (require('tibble')) {
+  ratings_raw
+ }
+head(ratings_raw)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Gender bias in research funding in the Netherlands</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>research_funding_rates</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Gender bias in research funding in the Netherlands</h2>
+
+<h3>Description</h3>
+
+<p>Table S1 from paper title &quot;Gender contributes to personal research funding success in The Netherlands&quot;
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(research_funding_rates)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>"data.frame"</code>.
+</p>
+
+
+<h3>Details</h3>
+
+
+<ul>
+<li><p> discipline. Research area discipline.
+</p>
+</li>
+<li><p> applications_total. Total applications.
+</p>
+</li>
+<li><p> applications_men. Total applications by men.
+</p>
+</li>
+<li><p> applications_women. Total applications by women.
+</p>
+</li>
+<li><p> awards_total. Total awards.
+</p>
+</li>
+<li><p> awards_men. Total awards received by men.
+</p>
+</li>
+<li><p> awards_women. Total awards received by women.
+</p>
+</li>
+<li><p> success_rates_total. Overall success rate.
+</p>
+</li>
+<li><p> success_rates_men. Success rate for men.
+</p>
+</li>
+<li><p> success_rates_women. Success rate for women.
+</p>
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p>van der Lee and Ellemers (2015) PNAS <a href="https://www.pnas.org/content/112/40/12349.abstract/">https://www.pnas.org/content/112/40/12349.abstract/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(research_funding_rates)
+research_funding_rates
+# The raw data for this table is available from
+data(raw_data_research_funding_rates)
+
+</code></pre>
+
+
+</div>
+</body></html>

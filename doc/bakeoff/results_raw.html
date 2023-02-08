@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: Each baker's results by episode (raw)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>results_raw</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Each baker's results by episode (raw)</h2>
+
+<h3>Description</h3>
+
+<p>This data has one row per baker for every episode,
+including episodes they did not appear in.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>results_raw
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1,136 rows representing individual bakers per
+episode and 4 variables:
+</p>
+
+<dl>
+<dt>series</dt><dd><p>A factor denoting UK series (1-10)</p>
+</dd>
+<dt>episode</dt><dd><p>A factor denoting episode number within a series</p>
+</dd>
+<dt>baker</dt><dd><p>A character string giving given or nickname only (note: see
+<code>bakers</code> for full baker names)</p>
+</dd>
+<dt>result</dt><dd><p>A factor denoting if the baker was <code>"IN"</code>, <code>"OUT"</code>,
+<code>"STAR BAKER"</code>, or <code>"SICK"</code> for a given episode. For finale episodes,
+values are either <code>"WINNER"</code> or <code>"RUNNER-UP"</code>. If <code>NA</code>, baker did not
+appear in episode.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See
+<a href="https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#Results_summary">https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#Results_summary</a>,
+for example, for series 1 results summary.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>if (require('tibble')) {
+  results_raw
+ }
+</code></pre>
+
+
+</div>
+</body></html>

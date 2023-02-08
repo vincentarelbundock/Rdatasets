@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><title>R: Trump Tweets from2009 to 2017</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>trump_tweets</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Trump Tweets from2009 to 2017</h2>
+
+<h3>Description</h3>
+
+<p>All tweets from Donald Trump's twitter account from 2009 to 2017
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(trump_tweets)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>"data.frame"</code>.
+</p>
+
+
+<h3>Details</h3>
+
+
+<ul>
+<li><p> source. Device or service used to compose tweet.
+</p>
+</li>
+<li><p> id_str. Tweet ID.
+</p>
+</li>
+<li><p> text. Tweet.
+</p>
+</li>
+<li><p> created_at. Data and time tweet was tweeted.
+</p>
+</li>
+<li><p> retweet_count. How many times tweet had been retweeted at time dataset was created.
+</p>
+</li>
+<li><p> in_reply_to_user_id_str. If a reply, the user id of person being replied to.
+</p>
+</li>
+<li><p> favorite_count. Number of times tweet had been favored at time dataset was created.
+</p>
+</li>
+<li><p> is_retweet. A logical telling us if it is a retweet or not.
+</p>
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p>The Trump Twitter Archive: <a href="https://www.thetrumparchive.com/">https://www.thetrumparchive.com/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(trump_tweets)
+head(trump_tweets)
+
+</code></pre>
+
+
+</div>
+</body></html>

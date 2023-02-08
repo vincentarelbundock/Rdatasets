@@ -1,0 +1,107 @@
+<!DOCTYPE html><html><head><title>R: Breast Cancer Wisconsin Diagnostic Dataset from UCI Machine...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>brca</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Breast Cancer Wisconsin Diagnostic Dataset from UCI Machine Learning Repository</h2>
+
+<h3>Description</h3>
+
+<p>Biopsy features for classification of 569 malignant (cancer) and benign (not cancer) breast masses.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(brca)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>list</code>.
+</p>
+
+
+<h3>Details</h3>
+
+<p>Features were computationally extracted from digital images of fine needle aspirate
+biopsy slides. Features correspond to properties of cell nuclei, such as size, shape and regularity.
+The mean, standard error, and worst value of each of 10 nuclear parameters is reported for a total of 30 features.
+</p>
+<p>This is a classic dataset for training and benchmarking machine learning algorithms.
+</p>
+
+<ul>
+<li><p> y. The outcomes. A factor with two levels denoting whether a mass is malignant (&quot;M&quot;) or benign (&quot;B&quot;).
+</p>
+</li>
+<li><p> x. The predictors. A matrix with the mean, standard error and worst value of each of 10 nuclear measurements on the slide, for 30 total features per biopsy:
+</p>
+
+<ul>
+<li><p> radius. Nucleus radius (mean of distances from center to points on perimeter).
+</p>
+</li>
+<li><p> texture. Nucleus texture (standard deviation of grayscale values).
+</p>
+</li>
+<li><p> perimeter. Nucleus perimeter.
+</p>
+</li>
+<li><p> area. Nucleus area.
+</p>
+</li>
+<li><p> smoothness. Nucleus smoothness (local variation in radius lengths).
+</p>
+</li>
+<li><p> compactness. Nucleus compactness (perimeter^2/area - 1).
+</p>
+</li>
+<li><p> concavity, Nucleus concavity (severity of concave portions of the contour).
+</p>
+</li>
+<li><p> concave_pts. Number of concave portions of the nucleus contour.
+</p>
+</li>
+<li><p> symmetry. Nucleus symmetry.
+</p>
+</li>
+<li><p> fractal_dim. Nucleus fractal dimension (&quot;coastline approximation&quot; -1).
+</p>
+</li></ul>
+
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://archive.ics.uci.edu/ml/datasets/">UCI Machine Learning Repository</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(brca)
+table(brca$y)
+dim(brca$x)
+head(brca$x)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: Contagious disease data for US states</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>us_contagious_diseases</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Contagious disease data for US states</h2>
+
+<h3>Description</h3>
+
+<p>Yearly counts for Hepatitis A, Measles, Mumps, Pertussis, Polio,  Rubella, and Smallpox for US states. Original data courtesy of Tycho Project (http://www.tycho.pitt.edu/).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(us_contagious_diseases)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>"data.frame"</code>.
+</p>
+
+
+<h3>Details</h3>
+
+
+<ul>
+<li><p> disease. A factor containing disease names.
+</p>
+</li>
+<li><p> state. A factor containing state names.
+</p>
+</li>
+<li><p> year. 
+</p>
+</li>
+<li><p> weeks_reporting. Number of weeks counts were reported that year.
+</p>
+</li>
+<li><p> count. Total number of reported cases. 
+</p>
+</li>
+<li><p> population. State population, interpolated for non-census years.
+</p>
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.tycho.pitt.edu/">Tycho Project</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Willem G. van Panhuis, John Grefenstette, Su Yon Jung, Nian Shong Chok, Anne Cross, Heather Eng, Bruce Y Lee, Vladimir Zadorozhny, Shawn Brown, Derek Cummings, Donald S. Burke. Contagious Diseases in the United States from 1888 to the present. NEJM 2013; 369(22): 2152-2158.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(us_contagious_diseases)
+head(us_contagious_diseases)
+</code></pre>
+
+
+</div>
+</body></html>

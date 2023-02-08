@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><title>R: Country codes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>country_codes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Country codes</h2>
+
+<h3>Description</h3>
+
+<p>Data frame of Gapminder country names and ISO 3166-1 country codes:
+</p>
+
+<dl>
+<dt>iso_alpha</dt><dd><p>The 3-letter <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3">ISO 3166-1 alpha-3</a> code.</p>
+</dd>
+<dt>iso_num</dt><dd><p>The 3-digit <a href="https://en.wikipedia.org/wiki/ISO_3166-1_numeric">ISO 3166-1 numeric-3</a> code.</p>
+</dd>
+</dl>
+
+<p>Also includes the countries covered by the supplemental data frame
+<code>gapminder_unfiltered</code>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>country_codes
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>tbl_df</code> (inherits from <code>tbl</code>, <code>data.frame</code>) with 187 rows and 3 columns.</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>if (require("dplyr")) {
+gapminder %&gt;%
+  filter(year == 2007, country %in% c("Kenya", "Peru", "Syria")) %&gt;%
+  select(country, continent) %&gt;% 
+  left_join(country_codes)
+}
+</code></pre>
+
+
+</div>
+</body></html>

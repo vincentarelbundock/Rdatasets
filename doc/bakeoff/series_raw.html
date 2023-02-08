@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Data about each series aired in the UK (raw)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>series_raw</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Data about each series aired in the UK (raw)</h2>
+
+<h3>Description</h3>
+
+<p>This dataset has one row per series aired in the UK as 'The Great British
+Bake Off'. When did a series premiere in the UK? When was the finale episode?
+How many viewers on average  did a series have?
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>series_raw
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 10 rows representing individual series and 11 variables:
+</p>
+
+<dl>
+<dt>series</dt><dd><p>A factor denoting UK series (<code>1</code>-<code>10</code>).</p>
+</dd>
+<dt>episodes</dt><dd><p>An integer denoting total number of episodes within
+series.</p>
+</dd>
+<dt>premiere</dt><dd><p>A date denoting original airdate of series premiere episode
+in the UK.</p>
+</dd>
+<dt>finale</dt><dd><p>A date denoting original airdate of series finale episode in
+the UK.</p>
+</dd>
+<dt>winner</dt><dd><p>A character string denoting name of series winner.</p>
+</dd>
+<dt>avg_uk_viewers</dt><dd><p>Average UK viewers in millions. Also see
+<code>ratings</code>.</p>
+</dd>
+<dt>day_of_week</dt><dd><p>A character string denoting weekday that series'
+episodes aired in UK.</p>
+</dd>
+<dt>timeslot</dt><dd><p>time of day that series' episodes aired in UK (24-hour
+clock).</p>
+</dd>
+<dt>channel</dt><dd><p>A character string denoting channel that series aired on:
+one of <code style="white-space: pre;">&#8288;BBC One&#8288;</code>, <code style="white-space: pre;">&#8288;BBC Two&#8288;</code>, or <code style="white-space: pre;">&#8288;Channel 4&#8288;</code>.</p>
+</dd>
+<dt>runner_up_1</dt><dd><p>A character string denoting the name of one of the
+bakers who was a series runner-up. The number is not meaningful.</p>
+</dd>
+<dt>runner_up_2</dt><dd><p>A character string denoting the name of one of the
+bakers who was a series runner-up. The number is not meaningful.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See
+<a href="https://en.wikipedia.org/wiki/The_Great_British_Bake_Off#Series_overview">https://en.wikipedia.org/wiki/The_Great_British_Bake_Off#Series_overview</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>if (require('tibble')) {
+  series_raw
+ }
+head(series_raw)
+</code></pre>
+
+
+</div>
+</body></html>

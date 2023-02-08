@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><title>R: Poll data for popular vote in 2008 presidential election</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>polls_2008</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Poll data for popular vote in 2008 presidential election</h2>
+
+<h3>Description</h3>
+
+<p>Data from different pollsters for the popular vote between Obama and McCain 
+in the 2008 presidential election.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(polls_2008)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>data.frame</code>.
+</p>
+
+
+<h3>Details</h3>
+
+
+<ul>
+<li><p> day. Days until election day. Negative numbers are reported so that days can increase up to 0, which is election day.
+</p>
+</li>
+<li><p> margin. Average difference between Obama and McCain for that day.
+</p>
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://web.archive.org/web/20161108190914/http://www.pollster.com/08USPresGEMvO-2.html">https://web.archive.org/web/20161108190914/http://www.pollster.com/08USPresGEMvO-2.html</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(polls_2008)
+with(polls_2008, plot(day, margin))
+
+</code></pre>
+
+
+</div>
+</body></html>

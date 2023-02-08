@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><title>R: Gender bias among graduate school admissions to UC Berkeley.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>admissions</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Gender bias among graduate school admissions to UC Berkeley.</h2>
+
+<h3>Description</h3>
+
+<p>The admission data for six majors for the fall of 1973; often used as an example of Simpson's paradox
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(admissions)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>"data.frame"</code>.
+</p>
+
+
+<h3>Details</h3>
+
+
+<ul>
+<li><p> major. The major or university department.
+</p>
+</li>
+<li><p> gender. Men or women.
+</p>
+</li>
+<li><p> admitted. Percent of students admitted.
+</p>
+</li>
+<li><p> applicants. Total number of applicants.
+</p>
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p>PJ Bickel, EA Hammel, and JW O'Connell. Science (1975)
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(admissions)
+admissions
+</code></pre>
+
+
+</div>
+</body></html>

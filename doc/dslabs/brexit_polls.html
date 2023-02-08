@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head><title>R: Brexit Poll Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>brexit_polls</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Brexit Poll Data</h2>
+
+<h3>Description</h3>
+
+<p>Brexit (EU referendum) poll outcomes for 127 polls from January 2016 to the referendum date on June 23, 2016.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(brexit_polls)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>"data.frame"</code>.
+</p>
+
+
+<h3>Details</h3>
+
+
+<ul>
+<li><p> startdate. Start date of poll.
+</p>
+</li>
+<li><p> enddate. End date of poll.
+</p>
+</li>
+<li><p> pollster. Pollster conducting the poll.
+</p>
+</li>
+<li><p> poll_type. Online or telephone poll.
+</p>
+</li>
+<li><p> samplesize. Sample size of poll.
+</p>
+</li>
+<li><p> remain. Proportion voting Remain.
+</p>
+</li>
+<li><p> leave. Proportion voting Leave.
+</p>
+</li>
+<li><p> undecided. Proportion of undecided voters.
+</p>
+</li>
+<li><p> spread. Spread calculated as remain - leave.
+</p>
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://en.wikipedia.org/w/index.php?title=Opinion_polling_for_the_United_Kingdom_European_Union_membership_referendum&amp;oldid=896735054">Wikipedia</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(brexit_polls)
+head(brexit_polls)
+</code></pre>
+
+
+</div>
+</body></html>
