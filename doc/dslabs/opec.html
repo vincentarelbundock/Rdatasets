@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: Gapminder Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>gapminder</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Gapminder Data</h2>
+
+<h3>Description</h3>
+
+<p>Health and income outcomes for 184 countries from 1960 to 2016. Also includes two character vectors, <code>oecd</code> 
+and <code>opec</code>, with the names of OECD and OPEC countries from 2016.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(gapminder)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>"data.frame"</code>.
+</p>
+
+
+<h3>Details</h3>
+
+
+<ul>
+<li><p> country.  
+</p>
+</li>
+<li><p> year.
+</p>
+</li>
+<li><p> infant_mortality. Infant deaths per 1000.
+</p>
+</li>
+<li><p> life_expectancy. Life expectancy in years.
+</p>
+</li>
+<li><p> fertility. Average number of children per woman. 
+</p>
+</li>
+<li><p> population. Country population.
+</p>
+</li>
+<li><p> gpd. GDP according to World Bankdev.
+</p>
+</li>
+<li><p> continent. 
+</p>
+</li>
+<li><p> region. Geographical region.
+</p>
+</li></ul>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(gapminder)
+head(gapminder)
+print(oecd)
+print(opec)
+</code></pre>
+
+
+</div>
+</body></html>

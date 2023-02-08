@@ -1,0 +1,109 @@
+<!DOCTYPE html><html><head><title>R: Fivethirtyeight 2016 Poll Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>polls_us_election_2016</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Fivethirtyeight 2016 Poll Data</h2>
+
+<h3>Description</h3>
+
+<p>Poll results from US 2016 presidential elections aggregated from HuffPost Pollster, RealClearPolitics, polling firms, and news reports. 
+The dataset also includes election results (popular vote) and electoral college votes in <code>results_us_election_2016</code>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(polls_us_election_2016)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>"data.frame"</code>.
+</p>
+
+
+<h3>Details</h3>
+
+
+<ul>
+<li><p> state. State in which poll was taken. 'U.S' is for national polls.
+</p>
+</li>
+<li><p> startdate. Poll's start date.
+</p>
+</li>
+<li><p> enddate. Poll's end date.
+</p>
+</li>
+<li><p> pollster. Pollster conducting the poll.
+</p>
+</li>
+<li><p> grade. Grade assigned by fivethirtyeight to pollster.
+</p>
+</li>
+<li><p> samplesize. Sample size. 
+</p>
+</li>
+<li><p> population. Type of population being polled.
+</p>
+</li>
+<li><p> rawpoll_clinton. Percentage for Hillary Clinton.
+</p>
+</li>
+<li><p> rawpoll_trump. Percentage for Donald Trump
+</p>
+</li>
+<li><p> rawpoll_johnson. Percentage for Gary Johnson
+</p>
+</li>
+<li><p> rawpoll_mcmullin. Percentage for Evan McMullin.
+</p>
+</li>
+<li><p> adjpoll_clinton. Fivethirtyeight adjusted percentage for Hillary Clinton.
+</p>
+</li>
+<li><p> ajdpoll_trump. Fivethirtyeight adjusted percentage for Donald Trump
+</p>
+</li>
+<li><p> adjpoll_johnson. Fivethirtyeight adjusted percentage for Gary Johnson
+</p>
+</li>
+<li><p> adjpoll_mcmullin. Fivethirtyeight adjusted percentage for Evan McMullin.
+</p>
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p>The original csv file used to create <code>polls_us_election_2016</code> is here: <a href="https://projects.fivethirtyeight.com/general-model/president_general_polls_2016.csv">https://projects.fivethirtyeight.com/general-model/president_general_polls_2016.csv</a> 
+</p>
+<p>The data for <code>results_us_election_2016</code> is from Ballotpedia and can be found here:
+<a href="https://docs.google.com/spreadsheets/d/1zxyOQDjNOJS_UkzerorUCf2OAdcMcIQEwRciKuYBIZ4/pubhtml?widget=true&amp;headers=false#gid=658726802/">https://docs.google.com/spreadsheets/d/1zxyOQDjNOJS_UkzerorUCf2OAdcMcIQEwRciKuYBIZ4/pubhtml?widget=true&amp;headers=false#gid=658726802/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(polls_us_election_2016)
+head(polls_us_election_2016)
+</code></pre>
+
+
+</div>
+</body></html>

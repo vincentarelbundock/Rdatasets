@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Ratings</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ratings</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Ratings</h2>
+
+<h3>Description</h3>
+
+<p>This dataset has one row per episode and includes ratings plus
+original airdates in the UK (by series) and US
+(by season). This dataset is made by joining the <code>ratings_raw</code>
+and <code>seasons_raw</code> datasets by both <code>series</code> and <code>episode</code>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ratings
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 94 rows representing individual episodes and 11
+variables:
+</p>
+
+<dl>
+<dt>series</dt><dd><p>An integer denoting UK series (<code>1</code>-<code>10</code>).</p>
+</dd>
+<dt>episode</dt><dd><p>An integer denoting episode number within a series.</p>
+</dd>
+<dt>episode_count</dt><dd><p>An integer denoting continuous episode number across series (<code>1</code>-<code>94</code>)</p>
+</dd>
+<dt>uk_airdate</dt><dd><p>A date denoting original airdate of episode in the UK.</p>
+</dd>
+<dt>viewers_7day</dt><dd><p>The number of viewers in millions within a 7-day window
+from airdate.</p>
+</dd>
+<dt>viewers_28day</dt><dd><p>The number of viewers in millions within a 28-day
+window from airdate.</p>
+</dd>
+<dt>network_rank</dt><dd><p>An integer denoting the episode's weekly ranking within
+network (note that the networks changed for series 8 and later).</p>
+</dd>
+<dt>channels_rank</dt><dd><p>An integer denoting the episode's weekly ranking
+across all channels.</p>
+</dd>
+<dt>bbc_iplayer_requests</dt><dd><p>Number of BBC iPlayer requests (note: not
+available for all series, and only for series that aired on the BBC).</p>
+</dd>
+<dt>us_season</dt><dd><p>An integer denoting US season (<code>1</code>-<code>5</code>).</p>
+</dd>
+<dt>us_airdate</dt><dd><p>A date denoting original airdate of episode in the US,
+according to
+<a href="https://www.pbs.org/food/shows/great-british-baking-show/">pbs.org</a>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See
+<a href="https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#Ratings">https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#Ratings</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>if (require('tibble')) {
+  ratings
+ }
+head(ratings)
+</code></pre>
+
+
+</div>
+</body></html>

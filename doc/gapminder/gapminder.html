@@ -1,0 +1,106 @@
+<!DOCTYPE html><html><head><title>R: Gapminder data.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>gapminder</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Gapminder data.</h2>
+
+<h3>Description</h3>
+
+<p>Excerpt of the Gapminder data on life expectancy, GDP per capita, and
+population by country.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>gapminder
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The main data frame <code>gapminder</code> has 1704 rows and 6 variables:
+</p>
+ 
+<dl>
+<dt>country</dt><dd><p>factor with 142 levels</p>
+</dd>
+<dt>continent</dt><dd><p>factor with 5 levels</p>
+</dd>
+<dt>year</dt><dd><p>ranges from 1952 to 2007 in increments of 5 years</p>
+</dd>
+<dt>lifeExp</dt><dd><p>life expectancy at birth, in years</p>
+</dd>
+<dt>pop</dt><dd><p>population</p>
+</dd>
+<dt>gdpPercap</dt><dd><p>GDP per capita (US$, inflation-adjusted)</p>
+</dd>
+</dl>
+
+<p>The supplemental data frame <code>gapminder_unfiltered</code> was not
+filtered on <code>year</code> or for complete data and has 3313 rows.</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.gapminder.org/data/">http://www.gapminder.org/data/</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>country_colors</code> for a nice color scheme for the countries
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>str(gapminder)
+head(gapminder)
+summary(gapminder)
+table(gapminder$continent)
+aggregate(lifeExp ~ continent, gapminder, median)
+plot(lifeExp ~ year, gapminder, subset = country == "Cambodia", type = "b")
+plot(lifeExp ~ gdpPercap, gapminder, subset = year == 2007, log = "x")
+
+if (require("dplyr")) {
+gapminder %&gt;%
+  filter(year == 2007) %&gt;%
+  group_by(continent) %&gt;%
+  summarise(lifeExp = median(lifeExp))
+
+# how many unique countries does the data contain, by continent?
+gapminder %&gt;%
+  group_by(continent) %&gt;%
+  summarize(n_obs = n(), n_countries = n_distinct(country))
+
+# by continent, which country experienced the sharpest 5-year drop in
+# life expectancy and what was the drop?
+gapminder %&gt;%
+  group_by(continent, country) %&gt;%
+  select(country, year, continent, lifeExp) %&gt;%
+  mutate(le_delta = lifeExp - lag(lifeExp)) %&gt;%
+  summarize(worst_le_delta = min(le_delta, na.rm = TRUE)) %&gt;%
+  filter(min_rank(worst_le_delta) &lt; 2) %&gt;%
+  arrange(worst_le_delta)
+}
+
+</code></pre>
+
+
+</div>
+</body></html>

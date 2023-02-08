@@ -96,22 +96,22 @@
    Structural size measurements and isotopic signatures of foraging
    among adult male and female Adélie penguins (Pygoscelis adeliae)
    nesting along the Palmer Archipelago near Palmer Station, 2007-2009
-   ver 5. Environmental Data Initiative
-   https://doi.org/10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f
+   ver 5. Environmental Data Initiative.
+   `doi:10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f <https://doi.org/10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f>`__
 
    Gentoo penguins: Palmer Station Antarctica LTER and K. Gorman. 2020.
    Structural size measurements and isotopic signatures of foraging
    among adult male and female Gentoo penguin (Pygoscelis papua) nesting
    along the Palmer Archipelago near Palmer Station, 2007-2009 ver 5.
-   Environmental Data Initiative
-   https://doi.org/10.6073/pasta/7fca67fb28d56ee2ffa3d9370ebda689
+   Environmental Data Initiative.
+   `doi:10.6073/pasta/7fca67fb28d56ee2ffa3d9370ebda689 <https://doi.org/10.6073/pasta/7fca67fb28d56ee2ffa3d9370ebda689>`__
 
    Chinstrap penguins: Palmer Station Antarctica LTER and K. Gorman.
    2020. Structural size measurements and isotopic signatures of
    foraging among adult male and female Chinstrap penguin (Pygoscelis
    antarcticus) nesting along the Palmer Archipelago near Palmer
-   Station, 2007-2009 ver 6. Environmental Data Initiative
-   https://doi.org/10.6073/pasta/c14dfcfada8ea13a17536e73eb6fbe9e
+   Station, 2007-2009 ver 6. Environmental Data Initiative.
+   `doi:10.6073/pasta/c14dfcfada8ea13a17536e73eb6fbe9e <https://doi.org/10.6073/pasta/c14dfcfada8ea13a17536e73eb6fbe9e>`__
 
    Originally published in: Gorman KB, Williams TD, Fraser WR (2014)
    Ecological Sexual Dimorphism and Environmental Variability within a

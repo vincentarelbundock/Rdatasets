@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><title>R: Bakes (raw)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>bakes_raw</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Bakes (raw)</h2>
+
+<h3>Description</h3>
+
+<p>Bakes for both the signature and showstopper challenges for each baker
+across all 10 GBBO series.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>bakes_raw
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 548 rows representing individual signatures and
+showstoppers for each baker and 6 variables:
+</p>
+
+<dl>
+<dt>series</dt><dd><p>An integer denoting UK series (<code>1</code>-<code>10</code>).</p>
+</dd>
+<dt>episode</dt><dd><p>An integer denoting episode number within a series.</p>
+</dd>
+<dt>baker</dt><dd><p>A character string with a given name or nickname.</p>
+</dd>
+<dt>signature</dt><dd><p>A character string containing the bake for the signature
+challenge for that baker/episode.</p>
+</dd>
+<dt>technical</dt><dd><p>An integer denoting the rank on the technical challenge
+for that baker/episode. A value of <code>1</code> means the baker was the winner of
+the technical challenge. If <code>NA</code>, the baker did not appear in the
+episode.</p>
+</dd>
+<dt>showstopper</dt><dd><p>A character string containing the bake for the
+showstopper challenge for that baker/episode.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>if (require('tibble')) {
+  bakes_raw
+ }
+head(bakes_raw)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html><html><head><title>R: Italian olive</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>olive</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Italian olive</h2>
+
+<h3>Description</h3>
+
+<p>Composition in percentage of eight fatty acids found in the lipid fraction of 572 Italian olive oils
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(olive)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>"data.frame"</code>.
+</p>
+
+
+<h3>Details</h3>
+
+
+<ul>
+<li><p> region. General region of Italy.
+</p>
+</li>
+<li><p> area. Area of Italy. 
+</p>
+</li>
+<li><p> palmitic. Percent palmitic acid of sample. 
+</p>
+</li>
+<li><p> palmitoleic. Percent palmitoleic of sample. 
+</p>
+</li>
+<li><p> stearic. Percent stearic acid of sample.  
+</p>
+</li>
+<li><p> oleic. Percent oleic acid of sample.  
+</p>
+</li>
+<li><p> linoleic. Percent linoleic acid of sample.  
+</p>
+</li>
+<li><p> linolenic. Percent linolenic acid of sample.  
+</p>
+</li>
+<li><p> arachidic. Percent arachidic acid of sample.  
+</p>
+</li>
+<li><p> eicosenoic. Percent eicosenoic acid of sample.  
+</p>
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p>J. Zupan, and J. Gasteiger.  Neural Networks in Chemistry and Drug Design.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(olive)
+head(olive)
+</code></pre>
+
+
+</div>
+</body></html>

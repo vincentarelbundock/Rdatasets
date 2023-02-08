@@ -1,0 +1,131 @@
+<!DOCTYPE html><html><head><title>R: Bakers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>bakers</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Bakers</h2>
+
+<h3>Description</h3>
+
+<p>Information about each baker and their performance during the series they
+appeared on.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>bakers
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 120 rows representing individual bakers and 24
+variables:
+</p>
+
+<dl>
+<dt>series</dt><dd><p>An integer denoting UK series (<code>1</code>-<code>10</code>).</p>
+</dd>
+<dt>baker_full</dt><dd><p>A character string giving full name.</p>
+</dd>
+<dt>baker</dt><dd><p>A character string giving given or nickname.</p>
+</dd>
+<dt>age</dt><dd><p>An integer denoting age in years at first episode appeared.</p>
+</dd>
+<dt>occupation</dt><dd><p>A character string giving occupation.</p>
+</dd>
+<dt>hometown</dt><dd><p>A character string giving hometown.</p>
+</dd>
+<dt>baker_last</dt><dd><p>A character string giving family name.</p>
+</dd>
+<dt>baker_first</dt><dd><p>A character string giving given name.</p>
+</dd>
+<dt>star_baker</dt><dd><p>An integer denoting the number of times a given baker
+won Star Baker.</p>
+</dd>
+<dt>technical_winner</dt><dd><p>An integer denoting the number of times a given
+baker won first place in the technical challenge.</p>
+</dd>
+<dt>technical_top3</dt><dd><p>An integer denoting the number of times a given baker
+was in the top 3 (1st, 2nd, or 3rd) on the technical challenge.</p>
+</dd>
+<dt>technical_bottom</dt><dd><p>An integer denoting the number of times a given
+baker was in the bottom 3 on the technical challenge.</p>
+</dd>
+<dt>technical_highest</dt><dd><p>An integer denoting the best technical rank earned
+by a given baker across all episodes appeared (higher is better).</p>
+</dd>
+<dt>technical_lowest</dt><dd><p>An integer denoting the worst technical rank earned
+by a given baker across all episodes appeared (higher is better).</p>
+</dd>
+<dt>technical_median</dt><dd><p>An integer denoting the median technical rank
+earned by a given baker across all episodes appeared (higher is better).</p>
+</dd>
+<dt>series_winner</dt><dd><p>An integer. Is <code>0</code> if not the series winner, <code>1</code> if
+series winner.</p>
+</dd>
+<dt>series_runner_up</dt><dd><p>An integer. Is <code>0</code> if not a runner-up, <code>1</code> if a
+runner-up.</p>
+</dd>
+<dt>total_episodes_appeared</dt><dd><p>An integer denoting the total number of
+episodes in which a given baker appeared.</p>
+</dd>
+<dt>first_date_appeared</dt><dd><p>A date denoting original airdate of the first
+episode in which a given baker appeared (equivalent to the series premiere
+episode in the UK.)</p>
+</dd>
+<dt>last_date_appeared</dt><dd><p>A date denoting original airdate of the last
+episode in which a given baker appeared (in the UK).</p>
+</dd>
+<dt>first_date_us</dt><dd><p>A date denoting original airdate of the first episode
+in which a given baker appeared (equivalent to the series premiere episode
+in the US).</p>
+</dd>
+<dt>last_date_us</dt><dd><p>A date denoting original airdate of the last episode in
+which a given baker appeared (in the US).</p>
+</dd>
+<dt>percent_episodes_appeared</dt><dd><p>A percentage denoting the number of
+episodes in a given series/season in which a given baker appeared out of
+all episodes aired in that series/season.</p>
+</dd>
+<dt>percent_technical_top3</dt><dd><p>A percentage denoting the number of episodes
+in which a given baker placed in the top 3 for the technical challenge, out
+of the number of total episodes that the baker appeared in.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See
+<a href="https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#The_Bakers">https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#The_Bakers</a>,
+for example, for Series 1 bakers.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>if (require('tibble')) {
+  bakers
+ }
+head(bakers)
+</code></pre>
+
+
+</div>
+</body></html>

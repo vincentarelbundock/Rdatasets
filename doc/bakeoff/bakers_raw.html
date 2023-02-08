@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: Bakers (raw)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>bakers_raw</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Bakers (raw)</h2>
+
+<h3>Description</h3>
+
+<p>Information about each baker who has appeared on the show.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>bakers_raw
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 120 rows representing individual bakers and 8
+variables:
+</p>
+
+<dl>
+<dt>series</dt><dd><p>A factor denoting UK series (<code>1</code>-<code>10</code>).</p>
+</dd>
+<dt>baker_full</dt><dd><p>A character string giving full name.</p>
+</dd>
+<dt>baker</dt><dd><p>A character string with a given name or nickname.</p>
+</dd>
+<dt>age</dt><dd><p>An integer denoting age in years at first episode appeared.</p>
+</dd>
+<dt>occupation</dt><dd><p>A character string giving occupation.</p>
+</dd>
+<dt>hometown</dt><dd><p>A character string giving hometown.</p>
+</dd>
+<dt>baker_last</dt><dd><p>A character string giving family name.</p>
+</dd>
+<dt>baker_first</dt><dd><p>A character string giving given name.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See
+<a href="https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#The_Bakers">https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#The_Bakers</a>,
+for example, for series 1 bakers.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>if (require('tibble')) {
+  bakers_raw
+ }
+head(bakers_raw)
+</code></pre>
+
+
+</div>
+</body></html>
