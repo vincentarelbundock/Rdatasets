@@ -15,38 +15,14 @@ The list of available datasets (csv and docs) is available here:
   - [CSV
     index](https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv)
 
-On the github repository you will also find:
-
-  - `Rdatasets.R`: `R` script to download CSV copies and HTML docs for
-    all datasets distributed in `Base R` and a list of R packages.
+On the github repository you will also find the scripts I use to scrape
+data and update the website.
 
 # Adding data
 
-Many `R` packages ship with associated datasets, but the script included
-here only downloads data from packages that are installed locally on the
-machine where it is run. If you spot interesting data in a package
-distributed on CRAN, let me know. I will try to install that package on
-my computer and I will re-run the download script to see if the data can
-be added to this repository. Requests should be filed on the Github
-issue tracker.
-
-# Omitted packages
-
-Here are some packages that contain data but were not include in
-Rdatasets for one reason or another:
-
-  - CASdatasets: `install.packages("CASdatasets", repos =
-    "http://cas.uqam.ca/pub/R/")`
-      - Some of the included datasets exceed the Github size limit.
-      - Not on CRAN.
-  - Zelig
-      - Not on CRAN.
-  - gamclass
-      - Not on CRAN.
-  - Data4Ecologists
-      - Not on CRAN. (check out [this
-        link](https://github.com/jfieberg/Data4Ecologists)).
-      - `devtools::install_github("jfieberg/Data4Ecologists")`
+Rdatasets only includes data from packages published on the CRAN
+repository. Please open an issue on the Github repository if you would
+like me to add data from a new package.
 
 # License
 
@@ -64,43 +40,3 @@ data that are included here and you object to their inclusion in
 Rdatasets, send me an email at <vincent.arel-bundock@umontreal.ca>. I
 will promptly remove the data in question and will make sure that all
 traces are erased from the git revision history.
-
-# Github instructions
-
-These are mostly intended as a reminder for Vincent.
-
-First add new package to DESCRIPTION Imports and scrape the data:
-
-``` bash
-Rscript scrape.R
-cd doc
-../documentation.sh
-cd ..
-Rscript -e "rmarkdown::render('README.Rmd')"
-```
-
-Second, commit to master.
-
-``` bash
-git add .
-git commit
-```
-
-Third, checkout gh-pages and import the new data there.
-
-``` bash
-git checkout gh-pages
-git checkout master -- csv
-git checkout master -- doc
-git checkout master -- datasets.csv
-git checkout master -- datasets.html
-git add .
-git commit
-```
-
-Finally, move back to master and build the gh-pages website:
-
-``` bash
-git checkout master
-Rscript -e "pkgdown::deploy_to_branch(clean = FALSE)"
-```
