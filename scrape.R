@@ -111,9 +111,9 @@ index$n_logical <- sapply(data, function(x) sum(vapply(x, is.logical, FUN.VALUE 
 index$n_numeric <- sapply(data, function(x) sum(vapply(x, is.numeric, FUN.VALUE = logical(1))))
 
 index$CSV = paste('https://vincentarelbundock.github.io/Rdatasets/csv/',
-                  index$Package, '/', index$Item, '.csv', sep='')
+                  index$Package, '/', index$ItemClean, '.csv', sep='')
 index$Doc = paste('https://vincentarelbundock.github.io/Rdatasets/doc/',
-                  index$Package, '/', index$Item, '.html', sep='')
+                  index$Package, '/', index$ItemClean, '.html', sep='')
 
 # case insensitive sorting
 index = index[order(tolower(index$Package), 
