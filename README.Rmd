@@ -6,7 +6,8 @@ output: github_document
 
 ```{r}
 #| echo = FALSE
-url <- "https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv"
+# url <- "https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv"
+url <- "datasets.csv"
 dat <- read.csv(url)
 ```
 

@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: Ames Housing Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ames</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Ames Housing Data</h2>
+
+<h3>Description</h3>
+
+<p>A data set from De Cock (2011) has 82 fields were recorded for 2,930
+properties in Ames IA. This version is copies from the <code>AmesHousing</code> package
+but does not include a few quality columns that appear to be outcomes
+rather than predictors.
+</p>
+
+
+<h3>Details</h3>
+
+<p>See this links for the sources below for more information as well as
+<code>?AmesHousing::make_ames</code>.
+</p>
+<p>For these data, the training materials typically use:
+</p>
+<div class="sourceCode r"><pre>library(tidymodels)
+
+set.seed(4595)
+data_split &lt;- initial_split(ames, strata = "Sale_Price")
+ames_train &lt;- training(data_split)
+ames_test  &lt;- testing(data_split)
+
+set.seed(2453)
+ames_folds&lt;- vfold_cv(ames_train)
+</pre></div>
+
+
+<h3>Value</h3>
+
+<table>
+<tr style="vertical-align: top;"><td><code>ames</code></td>
+<td>
+<p>a tibble</p>
+</td></tr>
+</table>
+
+
+<h3>Source</h3>
+
+<p>De Cock, D. (2011). &quot;Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project,&quot; <em>Journal of Statistics Education</em>,  Volume 19, Number 3.
+</p>
+<p><a href="http://jse.amstat.org/v19n3/decock/DataDocumentation.txt">http://jse.amstat.org/v19n3/decock/DataDocumentation.txt</a>
+</p>
+<p><a href="http://jse.amstat.org/v19n3/decock.pdf">http://jse.amstat.org/v19n3/decock.pdf</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(ames)
+str(ames)
+</code></pre>
+
+
+</div>
+</body></html>

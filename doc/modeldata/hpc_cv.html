@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><title>R: Class probability predictions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>hpc_cv</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Class probability predictions</h2>
+
+<h3>Description</h3>
+
+<p>Class probability predictions
+</p>
+
+
+<h3>Details</h3>
+
+<p>This data frame contains the predicted classes and
+class probabilities for a linear discriminant analysis model fit
+to the HPC data set from Kuhn and Johnson (2013). These data are
+the assessment sets from a 10-fold cross-validation scheme. The
+data column columns for the true class (<code>obs</code>), the class
+prediction (<code>pred</code>) and columns for each class probability
+(columns <code>VF</code>, <code>F</code>, <code>M</code>, and <code>L</code>). Additionally, a column for
+the resample indicator is included.
+</p>
+
+
+<h3>Value</h3>
+
+<table>
+<tr style="vertical-align: top;"><td><code>hpc_cv</code></td>
+<td>
+<p>a data frame</p>
+</td></tr>
+</table>
+
+
+<h3>Source</h3>
+
+<p>Kuhn, M., Johnson, K. (2013) <em>Applied Predictive
+Modeling</em>, Springer
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(hpc_cv)
+str(hpc_cv)
+</code></pre>
+
+
+</div>
+</body></html>

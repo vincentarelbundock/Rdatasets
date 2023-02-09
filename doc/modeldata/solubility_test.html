@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><title>R: Solubility predictions from MARS model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>solubility_test</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Solubility predictions from MARS model</h2>
+
+<h3>Description</h3>
+
+<p>Solubility predictions from MARS model
+</p>
+
+
+<h3>Details</h3>
+
+<p>For the solubility data in Kuhn and Johnson (2013),
+these data are the test set results for the MARS model. The
+observed solubility (in column <code>solubility</code>) and the model
+results (<code>prediction</code>) are contained in the data.
+</p>
+
+
+<h3>Value</h3>
+
+<table>
+<tr style="vertical-align: top;"><td><code>solubility_test</code></td>
+<td>
+<p>a data frame</p>
+</td></tr>
+</table>
+
+
+<h3>Source</h3>
+
+<p>Kuhn, M., Johnson, K. (2013) <em>Applied Predictive
+Modeling</em>, Springer
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(solubility_test)
+str(solubility_test)
+</code></pre>
+
+
+</div>
+</body></html>

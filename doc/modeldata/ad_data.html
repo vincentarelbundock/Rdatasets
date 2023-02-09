@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><title>R: Alzheimer's disease data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ad_data</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Alzheimer's disease data</h2>
+
+<h3>Description</h3>
+
+<p>Alzheimer's disease data
+</p>
+
+
+<h3>Details</h3>
+
+<p>Craig-Schapiro et al. (2011) describe a clinical study of 333 patients,
+including some with mild (but well-characterized) cognitive impairment as
+well as healthy individuals. CSF samples were taken from all subjects. The
+goal of the study was to determine if subjects in the early states of
+impairment could be differentiated from cognitively healthy individuals.
+Data collected on each subject included:
+</p>
+
+<ul>
+<li><p> Demographic characteristics such as age and gender
+</p>
+</li>
+<li><p> Apolipoprotein E genotype
+</p>
+</li>
+<li><p> Protein measurements of Abeta, Tau, and a phosphorylated version of Tau (called pTau)
+</p>
+</li>
+<li><p> Proteinmeasurements of 124 exploratory biomarkers, and
+</p>
+</li>
+<li><p> Clinical dementia scores
+</p>
+</li></ul>
+
+<p>For these analyses, we have converted the scores to two classes: impaired
+and healthy. The goal of this analysis is to create classification models
+using the demographic and assay data to predict which patients have early
+stages of disease.
+</p>
+
+
+<h3>Value</h3>
+
+<table>
+<tr style="vertical-align: top;"><td><code>ad_data</code></td>
+<td>
+<p>a tibble</p>
+</td></tr>
+</table>
+
+
+<h3>Source</h3>
+
+<p>Kuhn, M., Johnson, K. (2013) <em>Applied Predictive Modeling</em>, Springer.
+</p>
+<p>Craig-Schapiro R, Kuhn M, Xiong C, Pickering EH, Liu J, Misko TP, et al.
+(2011) Multiplexed Immunoassay Panel Identifies Novel CSF Biomarkers for
+Alzheimer's Disease Diagnosis and Prognosis. PLoS ONE 6(4): e18850.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(ad_data)
+str(ad_data)
+</code></pre>
+
+
+</div>
+</body></html>

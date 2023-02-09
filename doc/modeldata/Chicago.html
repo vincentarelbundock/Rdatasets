@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: Chicago ridership data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Chicago</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Chicago ridership data</h2>
+
+<h3>Description</h3>
+
+<p>Chicago ridership data
+</p>
+
+
+<h3>Details</h3>
+
+<p>These data are from Kuhn and Johnson (2020) and contain an
+<em>abbreviated</em> training set for modeling the number of people (in thousands)
+who enter the Clark and Lake L station.
+</p>
+<p>The <code>date</code> column corresponds to the current date. The columns with station
+names (<code>Austin</code> through <code>California</code>) are a <em>sample</em> of the columns used in
+the original analysis (for file size reasons). These are 14 day lag
+variables (i.e. <code style="white-space: pre;">&#8288;date - 14 days&#8288;</code>). There are columns related to weather and
+sports team schedules.
+</p>
+<p>The station at 35th and Archer is contained in the column <code>Archer_35th</code> to
+make it a valid R column name.
+</p>
+
+
+<h3>Value</h3>
+
+<table>
+<tr style="vertical-align: top;"><td><code>Chicago</code></td>
+<td>
+<p>a tibble</p>
+</td></tr> <tr style="vertical-align: top;"><td><code>stations</code></td>
+<td>
+<p>a vector of station names</p>
+</td></tr>
+</table>
+
+
+<h3>Source</h3>
+
+<p>Kuhn and Johnson (2020), <em>Feature Engineering and Selection</em>,
+Chapman and Hall/CRC . <a href="https://bookdown.org/max/FES/">https://bookdown.org/max/FES/</a> and
+<a href="https://github.com/topepo/FES">https://github.com/topepo/FES</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Chicago)
+str(Chicago)
+stations
+</code></pre>
+
+
+</div>
+</body></html>
