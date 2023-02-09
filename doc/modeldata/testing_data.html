@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><title>R: Fine foods example data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>small_fine_foods</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Fine foods example data</h2>
+
+<h3>Description</h3>
+
+<p>Fine foods example data
+</p>
+
+
+<h3>Details</h3>
+
+<p>These data are from Amazon, who describe it as &quot;This dataset consists of
+reviews of fine foods from amazon. The data span a period of more than 10
+years, including all ~500,000 reviews up to October 2012. Reviews include
+product and user information, ratings, and a plaintext review.&quot;
+</p>
+<p>A subset of the data are contained here and are split into a training and
+test set. The training set sampled 10 products and retained all of their
+individual reviews. Since the reviews within these products are correlated,
+we recommend resampling the data using a leave-one-product-out approach. The
+test set sampled 500 products that were not included in the training set
+and selected a single review at random for each.
+</p>
+<p>There is a column for the product, a column for the text of the review, and
+a factor column for a class variable. The outcome is whether the reviewer
+gave the product a 5-star rating or not.
+</p>
+
+
+<h3>Value</h3>
+
+<table>
+<tr style="vertical-align: top;"><td><code>training_data,testing_data</code></td>
+<td>
+<p>tibbles</p>
+</td></tr>
+</table>
+
+
+<h3>Source</h3>
+
+<p>https://snap.stanford.edu/data/web-FineFoods.html
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(small_fine_foods)
+str(training_data)
+str(testing_data)
+</code></pre>
+
+
+</div>
+</body></html>

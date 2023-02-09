@@ -1,0 +1,71 @@
+<!DOCTYPE html><html><head><title>R: Parkinson's disease speech classification data set</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>pd_speech</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Parkinson's disease speech classification data set</h2>
+
+<h3>Description</h3>
+
+<p>Parkinson's disease speech classification data set
+</p>
+
+
+<h3>Details</h3>
+
+<p>From the UCI ML archive, the description is &quot;The data used in this
+study were gathered from 188 patients with PD (107 men and 81 women) with
+ages ranging from 33 to 87 (65.1 p/m 10.9) at the Department of Neurology
+in Cerrahpaşa Faculty of Medicine, Istanbul University. The control group
+consists of 64 healthy individuals (23 men and 41 women) with ages varying
+between 41 and 82 (61.1 p/m 8.9). During the data collection process,
+the microphone is set to 44.1 KHz and following the physician's examination,
+the sustained phonation of the vowel <code style="white-space: pre;">&#8288;/a/&#8288;</code> was collected from each subject
+with three repetitions.&quot;
+</p>
+<p>The data here are averaged over the replicates.
+</p>
+
+
+<h3>Value</h3>
+
+<table>
+<tr style="vertical-align: top;"><td><code>pd_speech</code></td>
+<td>
+<p>a data frame</p>
+</td></tr>
+</table>
+
+
+<h3>Source</h3>
+
+<p>UCI ML repository (data) https://archive.ics.uci.edu/ml/datasets/Parkinson%27s+Disease+Classification#,
+</p>
+<p>Sakar et al (2019), &quot;A comparative analysis of speech signal processing
+algorithms for Parkinson’s disease classification and the use of the tunable
+Q-factor wavelet transform&quot;, <em>Applied Soft Computing</em>, V74, pg 255-263.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(pd_speech)
+str(pd_speech)
+</code></pre>
+
+
+</div>
+</body></html>

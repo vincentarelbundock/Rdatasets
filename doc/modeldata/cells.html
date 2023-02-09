@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: Cell body segmentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>cells</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cell body segmentation</h2>
+
+<h3>Description</h3>
+
+<p>Hill, LaPan, Li and Haney (2007) develop models to predict which cells in a
+high content screen were well segmented.  The data consists of 119 imaging
+measurements on 2019. The original analysis used 1009 for training and 1010
+as a test set (see the column called <code>case</code>).
+</p>
+
+
+<h3>Details</h3>
+
+<p>The outcome class is contained in a factor variable called <code>class</code> with
+levels &quot;PS&quot; for poorly segmented and &quot;WS&quot; for well segmented.
+</p>
+<p>The raw data used in the paper can be found at the Biomedcentral website.
+The version
+contained in <code>cells</code> is modified. First, several discrete
+versions of some of the predictors (with the suffix &quot;Status&quot;) were removed.
+Second, there are several skewed predictors with minimum values of zero
+(that would benefit from some transformation, such as the log). A constant
+value of 1 was added to these fields: <code>avg_inten_ch_2</code>,
+<code>fiber_align_2_ch_3</code>, <code>fiber_align_2_ch_4</code>, <code>spot_fiber_count_ch_4</code> and
+<code>total_inten_ch_2</code>.
+</p>
+
+
+<h3>Value</h3>
+
+<table>
+<tr style="vertical-align: top;"><td><code>cells</code></td>
+<td>
+<p>a tibble</p>
+</td></tr>
+</table>
+
+
+<h3>Source</h3>
+
+<p>Hill, LaPan, Li and Haney (2007). Impact of image segmentation on
+high-content screening data quality for SK-BR-3 cells, <em>BMC
+Bioinformatics</em>, Vol. 8, pg. 340,
+<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-8-340">https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-8-340</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(cells)
+str(cells)
+</code></pre>
+
+
+</div>
+</body></html>

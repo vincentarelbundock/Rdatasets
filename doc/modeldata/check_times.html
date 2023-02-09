@@ -1,0 +1,147 @@
+<!DOCTYPE html><html><head><title>R: Execution time data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>check_times</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Execution time data</h2>
+
+<h3>Description</h3>
+
+<p>These data were collected from the CRAN web page for 13,626 R
+packages. The time to complete the standard package checking
+routine was collected In some cases, the package checking
+process is stopped due to errors and these data are treated as
+censored. It is less than 1 percent.
+</p>
+
+
+<h3>Details</h3>
+
+<p>As predictors, the associated package source code were
+downloaded and parsed to create predictors, including
+</p>
+
+<ul>
+<li> <p><code>authors</code>: The number of authors in the author field.
+</p>
+</li>
+<li> <p><code>imports</code>: The number of imported packages.
+</p>
+</li>
+<li> <p><code>suggests</code>: The number of packages suggested.
+</p>
+</li>
+<li> <p><code>depends</code>: The number of hard dependencies.
+</p>
+</li>
+<li> <p><code>Roxygen</code>: a binary indicator for whether Roxygen was used
+for documentation.
+</p>
+</li>
+<li> <p><code>gh</code>: a binary indicator for whether the URL field contained
+a GitHub link.
+</p>
+</li>
+<li> <p><code>rforge</code>: a binary indicator for whether the URL field
+contained a link to R-forge.
+</p>
+</li>
+<li> <p><code>descr</code>: The number of characters (or, in some cases, bytes)
+in the description field.
+</p>
+</li>
+<li> <p><code>r_count</code>: The number of R files in the R directory.
+</p>
+</li>
+<li> <p><code>r_size</code>: The total disk size of the R files.
+</p>
+</li>
+<li> <p><code>ns_import</code>: Estimated number of imported functions or methods.
+</p>
+</li>
+<li> <p><code>ns_export</code>: Estimated number of exported functions or methods.
+</p>
+</li>
+<li> <p><code>s3_methods</code>: Estimated number of S3 methods.
+</p>
+</li>
+<li> <p><code>s4_methods</code>: Estimated number of S4 methods.
+</p>
+</li>
+<li> <p><code>doc_count</code>: How many Rmd or Rnw files in the vignettes
+directory.
+</p>
+</li>
+<li> <p><code>doc_size</code>: The disk size of the Rmd or Rnw files.
+</p>
+</li>
+<li> <p><code>src_count</code>: The number of files in the <code>src</code> directory.
+</p>
+</li>
+<li> <p><code>src_size</code>: The size on disk of files in the <code>src</code> directory.
+</p>
+</li>
+<li> <p><code>data_count</code>  The number of files in the <code>data</code> directory.
+</p>
+</li>
+<li> <p><code>data_size</code>: The size on disk of files in the <code>data</code> directory.
+</p>
+</li>
+<li> <p><code>testthat_count</code>: The number of files in the <code>testthat</code>
+directory.
+</p>
+</li>
+<li> <p><code>testthat_size</code>: The size on disk of files in the <code>testthat</code>
+directory.
+</p>
+</li>
+<li> <p><code>check_time</code>: The time (in seconds) to run <code style="white-space: pre;">&#8288;R CMD check&#8288;</code>
+using the &quot;r-devel-windows-ix86+x86_64' flavor.
+</p>
+</li>
+<li> <p><code>status</code>: An indicator for whether the tests completed.
+</p>
+</li></ul>
+
+<p>Data were collected on 2019-01-20.
+</p>
+
+
+<h3>Value</h3>
+
+<table>
+<tr style="vertical-align: top;"><td><code>check_times</code></td>
+<td>
+<p>a data frame</p>
+</td></tr>
+</table>
+
+
+<h3>Source</h3>
+
+<p>CRAN
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(check_times)
+str(check_times)
+</code></pre>
+
+
+</div>
+</body></html>
