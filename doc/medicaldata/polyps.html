@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>R: RCT of Sulindac for Polyp Prevention in Familial Adenomatous...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>polyps</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>RCT of Sulindac for Polyp Prevention in Familial Adenomatous Polyposis</h2>
+
+<h3>Description</h3>
+
+<p>Results of a randomized, placebo-controlled trial of sulindac in the reduction of colonic polyps in Familial Adenomatous Polyposis  (FAP) (<strong>more details</strong> available below the variable definitions). <br />
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>polyps
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 22 observations and 7 variables
+</p>
+
+<dl>
+<dt>participant_id</dt><dd><p>id number for each participant; type: character</p>
+</dd>
+<dt>sex</dt><dd><p>participant sex, levels: female, male; type: factor</p>
+</dd>
+<dt>age</dt><dd><p>age in years; type: numeric</p>
+</dd>
+<dt>baseline</dt><dd><p>number of colonic polyps at baseline; type: numeric</p>
+</dd>
+<dt>treatment</dt><dd><p>treatment assignment, levels: sulindac, placebo; type: factor</p>
+</dd>
+<dt>number3m</dt><dd><p>number of colonic polyps at 3 months; type: numeric</p>
+</dd>
+<dt>number12m</dt><dd><p>number of colonic polyps at 12 months; type: numeric</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>FAP is an inherited condition caused by mutations in the APC  (Adenomatous Polyposis Coli) gene that leads to early and frequent formation of precancerous polyps of the colon at a young age, and invariably leads to the development of colon cancer at a young age.  <br />
+Early, frequent surveillance colonoscopy and polyp removal is helpful, but this study examined whether there is a beneficial effect of preventive medical therapy with the nonsteroidal pain reliever, sulindac, versus placebo in a RCT vs placebo in 22 participants, with polyp number measured (via colonoscopy) at baseline, 3 months, and 12 months after starting the study drug. Note that one subject did not return for the 12 month colonoscopy.
+</p>
+
+
+<h3>Source</h3>
+
+<p>This data set is from a study published in 1993 in the New England Journal of Medicine,
+</p>
+<p>F. M. Giardiello, S. R. Hamilton, A. J. Krush, S. Piantadosi, L. M. Hylind, P. Celano, S. V. Booker, C. R. Robinson and G. J. A. Offerhaus (1993), Treatment of colonic and rectal adenomas with sulindac in familial adenomatous polyposis. New England Journal of Medicine, 328(18), 1313-1316.
+</p>
+<p>This dataset is derived from and improved upon from the HSAUR package.
+</p>
+
+
+</div>
+</body></html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><title>R: RCT of Streptomycin Therapy for Tuberculosis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>strep_tb</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>RCT of Streptomycin Therapy for Tuberculosis</h2>
+
+<h3>Description</h3>
+
+<p>Results of a randomized, placebo-controlled, prospective 2-arm trial of streptomycin 2 grams daily (arm A2) vs. placebo (arm A1) to treat tuberculosis in 107 young patients, as reported by the Streptomycin in Tuberculosis Trials Committee in 1948 in the British Medical Journal (<strong>more details</strong> available below the variable definitions). <br />
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>strep_tb
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 107 observations and 13 variables
+</p>
+
+<dl>
+<dt>patient_id</dt><dd><p>invented id number for each participant; type: character</p>
+</dd>
+<dt>arm</dt><dd><p>assigned treatment arm, Streptomycin or Control; type: factor</p>
+</dd>
+<dt>dose_strep_g</dt><dd><p>grams, dose of Streptomycin: numeric, 0, 1, or 2 grams</p>
+</dd>
+<dt>dose_PAS_g</dt><dd><p>grams, dose of PAS (Para-Amino-Salicylate): numeric, 5, 10, or 20 grams. Note that no one in this intial study (study A) received PAS. This was added for combination therapy in studies B and C, as reported in 1952.</p>
+</dd>
+<dt>gender</dt><dd><p>gender, dichotomous (this was in 1948); type: factor, with levels: M = Male, F= Female</p>
+</dd>
+<dt>baseline_condition</dt><dd><p>Condition of the Patient at Baseline, 3 levels, 1_Good, 2_Fair, 3_Poor; type: factor</p>
+</dd>
+<dt>baseline_temp</dt><dd><p>temperature at baseline in degrees fahrenheit or celsius, but categorized into 4 levels (afebrile level apparently were cases not measured with a thermometer): factor, with levels: 1_afebrile, 2_&lt;99F/&lt;37.2C, 3_99-99.9F/37.2-37.75C, 4_100F+/37.7C+</p>
+</dd>
+<dt>baseline_esr</dt><dd><p>Erythrocyte Sedimentation Rate in mm per hour, categorized into 4 levels, from 0-51+ mm per hour; type: factor, with levels: 1_0-10, 2_11-20, 3_21-50, 4_51+</p>
+</dd>
+<dt>baseline_cavitation</dt><dd><p>dichotomous presence of cavitation on the baseline chest x-ray; type: factor: 0_no, 1_yes</p>
+</dd>
+<dt>strep_resistance</dt><dd><p>streptomycin resistance after 6 months of therapy, measured on a 0-100+ scale, categorized into 3 levels - sensitive, moderate, and resistant; type: factor: 1_sens_0-8, 2_mod_8-99, 3_resist_100+</p>
+</dd>
+<dt>radiologic_6m</dt><dd><p>Likert score rating of radiologic response on chest x-ray at 6 months; type: factor: 1_Death, 2_Considerable_deterioration, 3_Moderate_deterioration, 4_No_change, 5_Moderate_improvement, 6_Considerable_improvement</p>
+</dd>
+<dt>rad_num</dt><dd><p>Likert score numeric rating of radiologic response on chest x-ray at 6 months; type: numeric: 1-6, from Death to Considerable Improvement</p>
+</dd>
+<dt>improved</dt><dd><p>Dichotomous outcome of improvement (equal to rad_num of 5-6); type: logical, TRUE or FALSE. 55 of the 107 participants were improved.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The Streptomycin for Tuberculosis trial in 1948 was considered the first modern randomized, placebo-controlled clinical trial, which could be done in part because there were very limited supplies of streptomycin in the UK after World War II. <br />
+This publication seems a bit primitive today, without standard features like a proper Table 1, and some creative use of graphs to display baseline characteristics of the study sample <br />
+More strikingly, there is no ethics committee approval, or consent. <br />
+You can read the pdf of the original journal article at <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2091872/pdf/brmedj03701-0007.pdf">Streptomycin in TB Study</a>. <br />
+This was the first of a series of 3 trials, in which the initial effectiveness of Streptomycin was established, but rapid resistance developed, and significant side effects occurred at a dose of 2 grams of streptomycin. This type of resistance also occurred with another new anti-tubercular therapy at the time, PAS (Para-Amino-Salicylate). Subsequent trials B and C evaluated different doses and combinations of Streptomycin and PAS, and were published together in 1952 in the BMJ, with the pdf available here <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2023677/pdf/brmedj03496-0024.pdf">1952 Three Streptomycin in TB Studies Summarized</a>. <br />
+Commentary on the conduct of these trials from one of the MD investigators can be found at <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1592068/">MD Clinical Trialist Commentary</a>. <br />
+Commentary on the design and analysis of these trials from statistician A. Bradford Hill can be found at <a href="https://www.sciencedirect.com/science/article/abs/pii/019724569090001I">Statistican Commentary</a>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>This data set is reconstructed to the best of my ability from the paper in the British Medical Journal from 1948, entitled, Streptomycin Treatment of Pulmonary Tuberculosis, pages 769-782 in the October 30, 1948 edition, authored by the Streptomycin in Tuberculosis Trials Committee.
+You can find the pdf at <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2091872/pdf/brmedj03701-0007.pdf">Streptomycin in TB</a>.
+</p>
+
+
+</div>
+</body></html>

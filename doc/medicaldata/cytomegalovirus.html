@@ -1,0 +1,139 @@
+<!DOCTYPE html><html><head><title>R: Retrospective Cohort Study of the Effects of Donor KIR...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>cytomegalovirus</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Retrospective Cohort Study of the Effects of Donor KIR genotype on the reactivation of cytomegalovirus (CMV) after myeloablative allogeneic hematopoietic stem cell transplant.
+<br /></h2>
+
+<h3>Description</h3>
+
+<p>This data set contains 64 consecutive patients who underwent T-cell replete, matched sibling donor reduced-intensity conditioning allogeneic hematopoietic stem cell transplant. The primary risk factor of interest was the number of activating killer immunoglobulin-like receptors (aKIRs: 1-4 vs. 5-6). (more details after variable information). <br />
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>cytomegalovirus
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 64 observations and 26 variables
+</p>
+
+<dl>
+<dt><code>ID</code></dt><dd><p>Patient ID, numeric, range:  1-64</p>
+</dd>
+<dt><code>age</code></dt><dd><p>Recipient age at transplant, numeric, range: 29-67</p>
+</dd>
+<dt><code>sex</code></dt><dd><p>Recipient sex, numeric, range:  0 (male) - 1(female)</p>
+</dd>
+<dt><code>race</code></dt><dd><p>Recipient race, numeric, range:  0 (white) - 1 (african-american)</p>
+</dd>
+<dt><code>diagnosis</code></dt><dd><p>type: character, levels: 13</p>
+</dd>
+<dt><code>diagnosis.type</code></dt><dd><p>Category of cancer diagnosis, numeric, range:  0 (myeloid) - 1 (lymphoid)</p>
+</dd>
+<dt><code>time.to.transplant</code></dt><dd><p>Time from cancer diagnosis to transplant (months), numeric, range:  1.84-173.8</p>
+</dd>
+<dt><code>prior.radiation</code></dt><dd><p>Prior radiation therapy, numeric, range:  0 (no) - 1 (yes)</p>
+</dd>
+<dt><code>prior.chemo</code></dt><dd><p>Number of prior chemotherapy regimens, numeric, range:  0-8</p>
+</dd>
+<dt><code>prior.transplant</code></dt><dd><p>Prior stem cell transplant, numeric, range:  0 (no) - 1 (yes)</p>
+</dd>
+<dt><code>recipient.cmv</code></dt><dd><p>Recipient cytomegalovirus seropositive status, numeric, range:  0 (negative) - 1 (positive)</p>
+</dd>
+<dt><code>donor.cmv</code></dt><dd><p>Donor cytomegalovirus seropositive status, numeric, range:  0 (negative) - 1 (positive)</p>
+</dd>
+<dt><code>donor.sex</code></dt><dd><p>Donor sex, numeric, range:  0 (female) - 1 (male)</p>
+</dd>
+<dt><code>TNC.dose</code></dt><dd><p>Total nucleated cell dose (x 10^8/kg), numeric, range:  2.06- 21.0</p>
+</dd>
+<dt><code>CD34.dose</code></dt><dd><p>Total CD34+ (stem) cell dose (x 10^8/kg), numeric, range:  2.04- 12.5</p>
+</dd>
+<dt><code>CD3.dose</code></dt><dd><p>Total CD3+ (T) cell dose (x 10^8/kg), numeric, range:  1.08-  8.2</p>
+</dd>
+<dt><code>CD8.dose</code></dt><dd><p>Total CD8+ cell dose (x 10^8/kg), numeric, range:  0.16-  3.2</p>
+</dd>
+<dt><code>TBI.dose</code></dt><dd><p>Total body irradiation dosage (centiGrays), numeric, range:200.00-400.0</p>
+</dd>
+<dt><code>C1/C2</code></dt><dd><p>HLA-Cw group, numeric, range:  0 (heterozygous) - 1 (homozygous)</p>
+</dd>
+<dt><code>aKIRs</code></dt><dd><p>Number of donor activating killer immunoglobulin-like receptors (hypothesized Predictor), numeric, range:  1.00-  6.0</p>
+</dd>
+<dt><code>cmv</code></dt><dd><p>cytomegalovirus reactivation posttransplant (hypothesized Outcome), numeric, range:  0 (No) - 1 (Yes)</p>
+</dd>
+<dt><code>time.to.cmv</code></dt><dd><p>Time to cytomegalovirus reactivation (months), numeric, range:  0.43- 84.5</p>
+</dd>
+<dt><code>agvhd</code></dt><dd><p>Acute level 2-4 graft versus host disease, numeric, range:  0 (no) - 1 (yes)</p>
+</dd>
+<dt><code>time.to.agvhd</code></dt><dd><p>Time to acute level 2-4 graft versus host disease (months), numeric, range:  0.66- 85.2</p>
+</dd>
+<dt><code>cgvhd</code></dt><dd><p>Chronic graft versus host disease, numeric, range:  0 (no) - 1 (yes)</p>
+</dd>
+<dt><code>time.to.cgvhd</code></dt><dd><p>Time to chronic graft versus host disease (months), numeric, range:  0.82- 65.1</p>
+</dd></dl>
+
+
+
+<h3>Details</h3>
+
+<p>A number of demographic, baseline and transplant characteristics were also collected. The primary outcome is presence of and time to cytomegalovirus reactivation. The dataset is cleaned and relatively complete. There are no outliers or data problems.
+<br />
+<br />
+</p>
+
+
+<h4>Background<br /></h4>
+
+<p>Hematopoietic stem cell transplantation (HSCT) is the transplantation of multipotent hematopoietic stem cells, from bone marrow, peripheral blood, or umbilical cord blood. It is a medical procedure most often performed for patients with certain cancers of the blood or bone marrow, such as multiple myeloma or leukemia. Allogeneic HSCT involves two people: the (healthy) donor and the (patient) recipient. Allogeneic HSC donors must have a tissue (HLA) type that matches the recipient. <br />
+In myeloablative allogeneic HSCT, chemotherapy or irradiation is given immediately prior to a transplant (the conditioning regimen) with the purpose of eradicating the patient's disease prior to the infusion of HSC and to suppress immune reactions. The bone marrow can be ablated (destroyed) with dose- levels that cause minimal injury to other tissues. For many patients who are at high risk for transplant-related mortality with myeloablative allogeneic HSCT, reduced- intensity conditioning allogeneic hematopoietic stem cell transplant has proven effective. Although the reduced-intensity conditioning allogeneic HSCT may avoid many of the organ toxicities associated with myeloablative conditioning, the risk for developing graft-versus-host disease and infection including cytomegalovirus remains significant.<br />
+Cytomegalovirus (CMV) is a common virus that can infect almost anyone. Once infected, your body retains the virus for life. Most people don't know they have CMV because it rarely causes problems in healthy people. But if pregnant or having a weakened immune system, CMV is cause for concern. For people with compromised immunity, such as after allogeneic HSCT, CMV infection can be fatal. Natural killer (NK) and T cells provide protection against CMV reactivation. The reactivity of NK cells and some T-cell subsets are regulated by the interaction of killer immunoglobulin-like receptors (KIRs) with target cell HLA class 1 molecules. The donor activating KIR genotype has been implicated as a contributing factor for CMV reactivation after myeloablative allogeneic HSCT.<br />
+<br />
+</p>
+
+
+
+<h4>Study Objective</h4>
+
+<p>This study investigates whether donor KIR genotype influences reactivation of CMV after T-cell replete, matched sibling donor reduced-intensity conditioning allogeneic HSCT.<br />
+<br />
+</p>
+
+
+
+<h4>Subjects and Variables</h4>
+
+<p>The study included 64 consecutive patients who underwent T-cell replete, matched sibling donor reduced-intensity conditioning allogeneic hematopoietic stem cell transplant between January 16, 2000 and April 24, 2007 at the Cleveland Clinic.
+Human leucocyte antigen (HLA) typing on donors and recipients was performed to allow assessment of killer immunoglobulin-like receptor ligands (KIRs). To allow for comparison with previous studies, donors were categorized as having 1-4 or 5-6 activating killer immunoglobulin-like receptor genes (aKIRs).<br />
+CMV reactivation was defined as any detection of cytomegalovirus DNA in the blood; the lower detection limit for this assay was 600 copies/mL.<br />
+<br />
+The initial population consisted of 865 men who had undergone radical prostatectomy and received transfusion during or within 30 days of the surgical procedure at Cleveland Clinic and had available PSA follow-up data. Of these patients, 110 were excluded from the analysis because they received a combination of allogeneic and autologous blood products. Of the remaining 755 patients, 405 (54%) received solely allogeneic and 350 patients (46%) received solely autologous RBC units. Of the 405 patients who received allogeneic RBC transfusion, 89 were excluded because their transfused RBC age distribution included more than one of the terciles. Thus, this dataset consists of the 316 patients who received solely allogeneic blood products and could be classified into an RBC age exposure group.<br />
+</p>
+
+
+
+<h3>Source</h3>
+
+<p>Sobecks et al. 'Cytomegalovirus Reactivation After Matched Sibling Donor Reduced-Intensity Conditioning Allogeneic Hematopoietic Stem Cell Transplant Correlates With Donor Killer Immunoglobulin-like Receptor Genotype'. Exp Clin Transplant 2011; 1: 7-13.
+</p>
+
+
+</div>
+</body></html>

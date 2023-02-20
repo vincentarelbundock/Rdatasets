@@ -61,6 +61,7 @@ Imports:
     MASS,
     MatchIt,
     mediation,
+    medicaldata,
     mi,
     mlmRev,
     modeldata,

@@ -1,0 +1,104 @@
+<!DOCTYPE html><html><head><title>R: Randomized, Comparison Trial of Video vs. Standard...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>laryngoscope</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Randomized, Comparison Trial of Video vs. Standard Laryngoscope</h2>
+
+<h3>Description</h3>
+
+<p>This data set contains 99 adult patients with a body mass index between 30 and 50 kg/m2 who required orotracheal intubation for elective surgery. Patient demographics, airway assessment data, intubation success rate, time to intubation, ease of intubation, and occurrence of complications were recorded. The dataset is cleaned and complete. There are no outliers or data problems (<strong>more details</strong> available below the variable definitions). <br />
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>laryngoscope
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 99 observations and 22 variables
+</p>
+
+<dl>
+<dt><code>age</code></dt><dd><p>Age (years), numeric, range: 20-77</p>
+</dd>
+<dt><code>gender</code></dt><dd><p>Gender, numeric, 0 = female; 1 = male</p>
+</dd>
+<dt><code>asa</code></dt><dd><p>American Society of Anesthesiologists physical status(1-4), range:  2-4</p>
+</dd>
+<dt><code>BMI</code></dt><dd><p>Body Mass Index (kg/m^2), numeric, range: 31-61</p>
+</dd>
+<dt><code>Mallampati</code></dt><dd><p>Mallampati score predicting ease of intubation 1 = Full visibility of tonsils, uvula and soft palate (easy intubation); 2 = Visibility of hard and soft palate, upper portion of tonsils and uvula; 3 = Soft and hard palate and base of the uvula are visible; 4 = Only Hard Palate visible (difficult intubation), numeric, range:  1-4</p>
+</dd>
+<dt><code>Randomization</code></dt><dd><p>Laryngoscope randomized, numeric, range:  0 = Standard Macintosh #4, 1 = AWS Pentaz Video</p>
+</dd>
+<dt><code>attempt1_time</code></dt><dd><p>First intubation attempt time (seconds), numeric, range:  9-113</p>
+</dd>
+<dt><code>attempt1_S_F</code></dt><dd><p>Successful intubation first attempt, numeric, 0 = no, 1 = yes</p>
+</dd>
+<dt><code>attempt2_time</code></dt><dd><p>Second intubation attempt time (seconds), numeric, range: 11- 60</p>
+</dd>
+<dt><code>attempt2_assigned_method</code></dt><dd><p>Second intubation attempt made with assigned laryngoscope, numeric, 0 = no, 1 = yes</p>
+</dd>
+<dt><code>attempt2_S_F</code></dt><dd><p>Successful intubation second attempt, numeric, 0 = no, 1 = yes, numeric, range:  0 = no, 1 = yes</p>
+</dd>
+<dt><code>attempt3_time</code></dt><dd><p>Third intubation attempt time (seconds), numeric, range: 15- 30</p>
+</dd>
+<dt><code>attempt3_assigned_method</code></dt><dd><p>Third intubation attempt made with assigned laryngoscope, numeric, 0 = no, 1 = yes</p>
+</dd>
+<dt><code>attempt3_S_F</code></dt><dd><p>Successful intubation third attempt, numeric, 0 = no, 1 = yes, numeric, range:  1-1</p>
+</dd>
+<dt><code>attempts</code></dt><dd><p>Number of intubation attempts, numeric, range:  1-3</p>
+</dd>
+<dt><code>failures</code></dt><dd><p>Number of intubation failures, numeric, range:  0-2</p>
+</dd>
+<dt><code>total_intubation_time</code></dt><dd><p> Total Intubation time (second), numeric, range:  9-100</p>
+</dd>
+<dt><code>intubation_overall_S_F</code></dt><dd><p>Overall successful intubation, numeric, 0 = no, 1 = yes</p>
+</dd>
+<dt><code>bleeding</code></dt><dd><p>Bleeding (trace), numeric, 0 = no, 1 = yes</p>
+</dd>
+<dt><code>ease</code></dt><dd><p>Ease of tracheal intubation, 0 = extremely easy to 100 = extremely difficult, numeric, range:  0-100</p>
+</dd>
+<dt><code>sore_throat</code></dt><dd><p>Severity of postoperative sore throat, 0 = none; 1 = mild; 2 = moderate; 3 = severe, numeric, range:  0-  3</p>
+</dd>
+<dt><code>view</code></dt><dd><p>Cormack-Lehane grade of glottic view 0 = &quot;not good&quot; Cormack- Lehane grade 1 or 2; 1 = &quot;good&quot; Cormack-Lehane grade 3 or 4,  numeric, range:  0-  1</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The Laryngoscope dataset was contributed by Dr. Amy Nowacki, Associate Professor, Cleveland Clinic. Please refer to this resource as: Amy S. Nowacki, 'Laryngoscope Dataset', TSHS Resources Portal (2017). Available at https://www.causeweb.org/tshs/laryngoscope/. <br />
+Difficult and failed tracheal intubations are among the principal causes of anesthetic-related mortality and morbidity. Because a good laryngeal view facilitates successful tracheal intubation, new technologies have been introduced to improve visualization. Video laryngoscopes, for example, often use miniature cameras to facilitate visualization of the laryngeal inlet with no need to align the oral, pharyngeal, and tracheal axes.<br />
+The Pentax AWS is a novel video laryngoscope, available in Japan since 2006, which is designed to facilitate intubation by providing a video image of the glottis. It incorporates a miniature video camera and a battery-powered, built-in LCD monitor. A disposable blade is attached to the base system. Incorporation of an LCD display makes it possible to view the glottis simultaneously with insertion of the endotracheal tube (ETT). In this regard, it differs from some other video laryngoscope designs that use external monitors. The Pentax AWS also differs in having a side channel that positions and guides the ETT. Reports suggest that the Pentax AWS can help intubate, but randomized data remain sparse.cr
+This study tested the hypothesis that intubation with the Pentax AWS would be easier and faster than with a standard Macintosh laryngoscope with a #4 blade.<br />
+<br />
+</p>
+
+
+<h3>Source</h3>
+
+<p>These are data from a study by Abdallah et al. A Randomized Comparison between the Pentax AWS Video Laryngoscope and the Macintosh Laryngoscope in Morbidly Obese Patients. Anesthesia Analgesia 2011; 113: 1082-7.
+</p>
+
+
+</div>
+</body></html>

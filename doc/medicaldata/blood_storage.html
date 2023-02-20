@@ -1,0 +1,122 @@
+<!DOCTYPE html><html><head><title>R: Retrospective Cohort Study of the Effects of Blood Storage on...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>blood_storage</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Retrospective Cohort Study of the Effects of Blood Storage on Prostate Cancer</h2>
+
+<h3>Description</h3>
+
+<p>This data set contains data on 316 men who had undergone radical prostatectomy and received transfusion during or within 30 days of the surgical procedure and had available prostate serum antigen (PSA) follow-up data. The main exposure of interest was RBC storage duration group. A number of demographic, baseline and prognostic factors were also collected. The outcome was time to biochemical (PSA) cancer recurrence. The dataset is cleaned and complete. There are no outliers or data problems (more details after variable information).
+<br />
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>blood_storage
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 316 observations and 20 variables
+</p>
+
+<dl>
+<dt><code>RBC.Age.Group</code></dt><dd><p>NA, numeric, range: 1.00-  3</p>
+</dd>
+<dt><code>Median.RBC.Age</code></dt><dd><p>NA, numeric, range:10.00- 25</p>
+</dd>
+<dt><code>Age</code></dt><dd><p>NA, numeric, range:38.40- 79</p>
+</dd>
+<dt><code>AA</code></dt><dd><p>NA, numeric, range: 0.00-  1</p>
+</dd>
+<dt><code>FamHx</code></dt><dd><p>NA, numeric, range: 0.00-  1</p>
+</dd>
+<dt><code>PVol</code></dt><dd><p>NA, numeric, range:19.40-274</p>
+</dd>
+<dt><code>TVol</code></dt><dd><p>NA, numeric, range: 1.00-  3</p>
+</dd>
+<dt><code>T.Stage</code></dt><dd><p>NA, numeric, range: 1.00-  2</p>
+</dd>
+<dt><code>bGS</code></dt><dd><p>NA, numeric, range: 1.00-  3</p>
+</dd>
+<dt><code>BN+</code></dt><dd><p>NA, numeric, range: 0.00-  1</p>
+</dd>
+<dt><code>OrganConfined</code></dt><dd><p>NA, numeric, range: 0.00-  1</p>
+</dd>
+<dt><code>PreopPSA</code></dt><dd><p>NA, numeric, range: 1.30- 40</p>
+</dd>
+<dt><code>PreopTherapy</code></dt><dd><p>NA, numeric, range: 0.00-  1</p>
+</dd>
+<dt><code>Units</code></dt><dd><p>NA, numeric, range: 1.00- 19</p>
+</dd>
+<dt><code>sGS</code></dt><dd><p>NA, numeric, range: 1.00-  4</p>
+</dd>
+<dt><code>AnyAdjTherapy</code></dt><dd><p>NA, numeric, range: 0.00-  1</p>
+</dd>
+<dt><code>AdjRadTherapy</code></dt><dd><p>NA, numeric, range: 0.00-  1</p>
+</dd>
+<dt><code>Recurrence</code></dt><dd><p>NA, numeric, range: 0.00-  1</p>
+</dd>
+<dt><code>Censor</code></dt><dd><p>NA, numeric, range: 0.00-  1</p>
+</dd>
+<dt><code>TimeToRecurrence</code></dt><dd><p>NA, numeric, range: 0.27-104</p>
+</dd></dl>
+
+
+
+<h3>Details</h3>
+
+
+
+<h4>Background</h4>
+
+<p>Prostate cancer is the most common malignant neoplasm in men, and radical prostatectomy is among the primary therapies for localized prostate cancer. The biochemical recurrence-free survival rate 5 years after prostatectomy ranges from 70% to 90%. Improvements in the surgical technique have decreased the amount of intraoperative blood loss occurring during radical prostatectomy; however, substantial numbers of patients still require perioperative blood transfusions.<br />
+Blood transfusions are associated with adverse reactions, including postoperative infections and transfusion-related immune perturbations. Allogeneic leukocytes present in the transfused blood are thought to suppress host cellular immune responses. Furthermore, the immunodepressant effect is secondary to an imbalance of accumulated cytokines and proinflammatory mediators in the transfused blood against decreased production of lymphocyte stimulating cell-mediated cytokines, such as interleukin 2 and increased release of immunosuppressive prostaglandins in the patient undergoing transfusion.<br />
+In cancer patients, perioperative blood transfusion has long been suspected of reducing long-term survival, but available evidence is inconsistent. It is also unclear which components of transfused blood underlie the cancer-promoting effects reported by some studies. An important factor associated with the deleterious effects of blood transfusion is the storage age of the transfused blood units. It is suspected that cancer recurrence may be worsened after the transfusion of older blood.<br />
+<br />
+</p>
+
+
+
+<h4>Study Objective</h4>
+
+<p>This study evaluated the association between red blood cells (RBC) storage duration and biochemical prostate cancer recurrence after radical prostatectomy. Specifically, tested was the hypothesis that perioperative transfusion of allogeneic RBCs stored for a prolonged period is associated with earlier biochemical recurrence of prostate cancer after prostatectomy.<br />
+<br />
+</p>
+
+
+
+<h4>Subjects and Variables</h4>
+
+<p>Patients were assigned to 1 of 3 RBC age exposure groups on the basis of the terciles (ie, the 33rd and 66th percentiles) of the overall distribution of RBC storage duration if all their transfused units could be loosely characterized as of 'younger,' 'middle,' or 'older' age. Although this approach resulted in the removal of certain patients with wide RBC age distributions, it has the advantage of defining an essentially random and clearly separable exposure.<br />
+Prostate-specific antigen (PSA) was used as a biochemical marker of prostate cancer recurrence after prostatectomy. A PSA value of at least 0.4 ng/mL (to convert to microg/L, multiply by 1.0) followed by another increase was considered biochemical cancer recurrence.<br />
+<br />
+The initial population consisted of 865 men who had undergone radical prostatectomy and received transfusion during or within 30 days of the surgical procedure at Cleveland Clinic and had available PSA follow-up data. Of these patients, 110 were excluded from the analysis because they received a combination of allogeneic and autologous blood products. Of the remaining 755 patients, 405 (54%) received solely allogeneic and 350 patients (46%) received solely autologous RBC units. Of the 405 patients who received allogeneic RBC transfusion, 89 were excluded because their transfused RBC age distribution included more than one of the terciles. Thus, this dataset consists of the 316 patients who received solely allogeneic blood products and could be classified into an RBC age exposure group.<br />
+</p>
+
+
+
+<h3>Source</h3>
+
+<p>Cata et al. 'Blood Storage Duration and Biochemical Recurrence of Cancer after Radical Prostatectomy'. Mayo Clin Proc 2011; 86(2): 120-127.
+</p>
+
+
+</div>
+</body></html>
