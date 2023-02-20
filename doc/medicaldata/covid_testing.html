@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: Deidentified Results of COVID-19 testing at the Children's...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>covid_testing</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Deidentified Results of COVID-19 testing at the Children's Hospital of Pennsylvania (CHOP) in 2020</h2>
+
+<h3>Description</h3>
+
+<p>A dataset containing details of SARS-CoV-2 testing in 2020 at CHOP
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>covid_testing
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 15524 observations and 17 variables
+</p>
+
+<dl>
+<dt>subject_id</dt><dd><p>id number for each subject; type: numeric</p>
+</dd>
+<dt>fake_first_name</dt><dd><p>an auto-generated fake first name; type: character</p>
+</dd>
+<dt>fake_last_name</dt><dd><p>an auto-generated fake last name; character</p>
+</dd>
+<dt>gender</dt><dd><p>anonymized Gender, levels: female, male; type: character</p>
+</dd>
+<dt>pan_day</dt><dd><p>day after start of pandemic; type: numeric</p>
+</dd>
+<dt>test_id</dt><dd><p>test that was performed, levels: covid, xcvd1; type: character</p>
+</dd>
+<dt>clinic_name</dt><dd><p>Clinic or ward where the specimen was collected, 88 levels; type: character</p>
+</dd>
+<dt>result</dt><dd><p>result of test, levels: positive, negative, invalid; type: character</p>
+</dd>
+<dt>demo_group</dt><dd><p>patient group, levels: patient, misc_adult, client, other adult, unidentified; type: character</p>
+</dd>
+<dt>age</dt><dd><p>Age of subject at time of specimen collection (Anonymized), units = years; type: numeric</p>
+</dd>
+<dt>drive_thru_ind</dt><dd><p>Whether the specimen was collected via a drive-thru site, levels: 1: Collected at drive-thru site; 0: Not collected at drive-thru site; type: numeric</p>
+</dd>
+<dt>ct_result</dt><dd><p>Cycle at which threshold reached during PCR, range: 14.05-45; type: numeric</p>
+</dd>
+<dt>orderset</dt><dd><p>Whether an order set was used for test order, levels: 1: Collected via orderset; 0: Not collected via orderset; numeric</p>
+</dd>
+<dt>payor_group</dt><dd><p>Payor associated with order, levels: commercial, government, unassigned, medical assistance, self pay, charity care, other; type: character</p>
+</dd>
+<dt>patient_class</dt><dd><p>Disposition of subject at time of collection, levels: inpatient, emergency, observation, recurring outpatient, outpatient, not applicable, day surgery, admit after surgery-obs, admit after surgery-ip; type: character</p>
+</dd>
+<dt>col_rec_tat</dt><dd><p>Time elapsed between collect time and receive time, range: 0 - 61370.2, units = hours; type: numeric</p>
+</dd>
+<dt>rec_ver_tat</dt><dd><p>Time elapsed between receive time and verification time, range: -18.6 - 218.2, units = hours; type: numeric</p>
+</dd>
+</dl>
+<p>...
+
+</p>
+
+
+<h3>Details</h3>
+
+<p>Data on testing for SARS-CoV2 from days 4-107 of the COVID pandemic in 2020. CHOP is a pediatric hospital in Philadelphia, Pennsylvania, USA. These data have been anonymized, time-shifted, and permuted.
+</p>
+
+
+<h3>Source</h3>
+
+<p>This data set is from Amrom E. Obstfeld, who de-identified data on COVID-19 testing during 2020 at CHOP (Children's Hospital of Pennsylvania). This data set contains data concerning testing for SARS-CoV2 via PCR as well as associated metadata. These data have been anonymized, time-shifted, and permuted.
+</p>
+
+
+</div>
+</body></html>

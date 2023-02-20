@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><title>R: esoph_ca: Esophageal Cancer dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>esoph_ca</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>esoph_ca: Esophageal Cancer dataset</h2>
+
+<h3>Description</h3>
+
+<p>Data from a case-control study of esophageal cancer in Ille-et-Vilaine, France, evaluating the effects of smoking and alcohol on the incidence of esophageal cancer. Smoking and alcohol are associated risk factors for squamous cell cancer of the esophagus, rather than adenocarcinoma of the esophagus, which is associated with obesity and esophageal reflux (more details available below the variable definitions).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>esoph_ca
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 88 rows and 5 variables, with 200 cases and 975 controls.
+</p>
+
+<dl>
+<dt>agegp</dt><dd><p>6 levels of age: &quot;25-34&quot;, &quot;35-44&quot;, &quot;45-54&quot;, &quot;55-64&quot;, &quot;65-74&quot;, &quot;75+&quot;; type: ordinal factor</p>
+</dd>
+<dt>alcgp</dt><dd><p>4 levels of alcohol consumption: &quot;0-39g/day&quot;, &quot;40-79&quot;, &quot;80-119&quot;, &quot;120+&quot;; type: ordinal factor</p>
+</dd>
+<dt>tobgp</dt><dd><p>4 levels of tobacco consumption: &quot;0-9g/day&quot;, &quot;10-19&quot;, '20-29&quot;, &quot;30+&quot;; type: ordinal factor</p>
+</dd>
+<dt>ncases</dt><dd><p>Number of cases; type: integer</p>
+</dd>
+<dt>ncontrols</dt><dd><p>Number of controls; type: integer</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>An original base R dataset, though of somewhat unclear origin. The statistical textbook source is clear, though it is not clear which of the original epidemiological papers on esophageal cancer in Ille-et-Vilaine is referred to by this dataset. The original authors of the medical study were <strong>not</strong> credited in the base R dataset. There are several possible papers in PubMed, none of which quite match up with this dataset. This could be from Tuyns, AJ, et al., Bull Cancer, 1977;64(1):45-60, but this paper reports 778 controls, rather than the 975 found here. A 1975 paper from the same group reported 718 cases (Int J Epidemiol, 1975 Mar;4(1):55-9.  doi: 10.1093/ije/4.1.55.). There is also another possible source - a 1975 paper from the same group, <em>Usefulness of population controls in retrospective studies of alcohol consumption. Experience from a case&ndash;control study of esophageal cancer in Ille-et-Vilaine, France</em>, Journal of Studies on Alcohol, 39(1): 175-182 (1978), which is behind a publisher paywall.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Breslow, N. E. and Day, N. E. (1980) Statistical Methods in Cancer Research. Volume 1: The Analysis of Case-Control Studies. IARC Lyon / Oxford University Press.
+Originally in base R datasets.
+</p>
+
+
+</div>
+</body></html>

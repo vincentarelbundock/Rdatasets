@@ -23,7 +23,7 @@
    .. rubric:: Source
       :name: source
 
-   https://goo.gl/5KBjL5
+   https://finance.yahoo.com/quote/GOOG/history
 
    .. rubric:: Examples
       :name: examples

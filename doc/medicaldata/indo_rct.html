@@ -1,0 +1,127 @@
+<!DOCTYPE html><html><head><title>R: RCT of Indomethacin for Prevention of Post-ERCP Pancreatitis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>indo_rct</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>RCT of Indomethacin for Prevention of Post-ERCP Pancreatitis</h2>
+
+<h3>Description</h3>
+
+<p>Results of a randomized, placebo-controlled, prospective 2-arm trial of rectal indomethacin (100 mg) vs. placebo prevent post-ERCP pancreatitis in 602 participants, as reported by Elmunzer, Higgins, et al. in 2012 in the New England Journal of Medicine (more details available below the variable definitions).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>indo_rct
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 602 observations and 33 variables
+</p>
+
+<dl>
+<dt>id</dt><dd><p>subject id, first integer indicates center, integer, range:1001-4003</p>
+</dd>
+<dt>site</dt><dd><p>study site (center), factor, 1 = University of Michigan, 2= Indiana University, 3 = University of Kentucky, 4 = Case Western</p>
+</dd>
+<dt>age</dt><dd><p>age in years, numeric, range:  19-90</p>
+</dd>
+<dt>risk</dt><dd><p>risk score, numeric, range:   1-5.5</p>
+</dd>
+<dt>gender</dt><dd><p>male or female, factor, levels: 1_female, 2_male</p>
+</dd>
+<dt>sod</dt><dd><p>sphincter of oddi dysfunction was present, a risk factor favoring post-ERCP pancreatitis, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>pep</dt><dd><p>previous post-ERCP pancreatitis (PEP), a risk factor for future PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>recpanc</dt><dd><p>Recurrent Pancreatitis, a risk factor for future PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>psphinc</dt><dd><p>a Pancreatic Sphincterotomy was performed, a risk factor for PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>precut</dt><dd><p>a sphincter pre-cut was needed to enter the papilla, a risk factor for PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>difcan</dt><dd><p>Cannulation of the papilla was difficult, a risk factor for PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>pneudil</dt><dd><p>Pneumatic dilation of the papilla was performed, a risk factor for PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>amp</dt><dd><p>An Ampullectomy was performed for dysplasia or cancer, which could be a risk factor for PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>paninj</dt><dd><p>Contrast was injected into the pancreas during the procedure, a risk factor for PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>acinar</dt><dd><p>The pancreas appeared to have acinarization on imaging, which could be a risk factor for PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>brush</dt><dd><p>Brushings were taken from the pancreatic duct, a possible risk factor favoring post-ERCP pancreatitis. factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>asa81</dt><dd><p>Aspirin was used at a dose of 81 mg per day, which may increase the risk of bleeding. factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>asa325</dt><dd><p>Aspirin was used at a dose of 325 mg per day, which may increase the risk of bleeding. factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>asa</dt><dd><p>Aspirin was used (at a dose of 325 mg per day(at any dose), which may increase the risk of bleeding. factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>prophystent</dt><dd><p>A pancreatic duct stent was placed at the end of the procedure per the judgement of the endoscopist (more often in high-risk cases), a potential protective effect against PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>therastent</dt><dd><p>A pancreatic duct stent was placed in order to treat a clinically significant narrowing of the pancreatic duct, a potential protective effect against PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>pdstent</dt><dd><p>A pancreatic duct stent was placed at the end of the procedure for any reason, a potential protective effect against PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>sodsom</dt><dd><p>Sphincter of oddi manometry was performed during the procedure for SOD, a risk factor for PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>bsphinc</dt><dd><p>A biliary sphincterotomy was performed, which could be a risk factor for PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>bstent</dt><dd><p>A biliary stent was placed to relieve significant biliary obstruction, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>chole</dt><dd><p>Choledocholithiasis (gallstones blocking the biliary duct) was present, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>pbmal</dt><dd><p>Malignancy of the biliary duct or pancreas was found, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>train</dt><dd><p>A trainee participated in the ERCP, which could be a risk factor for PEP, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>outcome</dt><dd><p>outcome of post-ercp pancreatitis, factor, levels: 0_no, 1_yes</p>
+</dd>
+<dt>status</dt><dd><p>outpatient status, factor, levels: 0_inpatient, 1_outpatient</p>
+</dd>
+<dt>type</dt><dd><p>Sphincter of Oddi dysfunction type/level - higher numbers are more severe with greater association with PEP, factor, levels: 0_no SOC, 1_type 1, 2_type 2, 3_type 3</p>
+</dd>
+<dt>rx</dt><dd><p>treatment arm, factor, levels: 0_placebo, 1_indomethacin</p>
+</dd>
+<dt>bleed</dt><dd><p>A gastrointestinal bleed occurred (which could be a complication of indomethacin therapy), factor, levels: 1. no, 2. yes</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>ERCP, or endoscopic retrograde cholangio-pancreatogram, is a procedure performed by threading an endoscope through the mouth to the opening in the duodenum where bile and pancreatic digestive juices are released into the intestine. ERCP is helpful for treating blockages of flow of bile (gallstones, cancer), or diagnosing cancers of the pancreas, but has a high rate of complications (15-25%). <br />
+The occurrence of post-ERCP pancreatitis is a common and feared complication, as pancreatitis can result in multisystem organ failure and death, and can occur in ~ 16% of ERCP procedures. <br />
+The inflammatory cytokine storm that can result from this procedural complication can be quite severe. Several small randomized trials suggested that anti-inflammatory NSAID therapies at the time of ERCP could reduce the rate of this complication, but all were rather small single-center studies, and were not sufficiently convincing to change practice. <br />
+Elmunzer, Higgins, and colleagues performed a <a href="https://pubmed.ncbi.nlm.nih.gov/18375470/">meta-analysis</a> of these small trials, which suggested that this was a significant effect, and that indomethacin could result in a 64% reduction in post-ERCP pancreatitis. <br />
+The investigators took this as a possible over-estimate of the effect (due to publication bias), and designed a multicenter RCT of a planned 948 patients to see a reduction of 50% from a placebo rate of 10% to an indomethacin rate of 5%. Two interim analyses were performed, after 400 and 600 patients were enrolled, using an alpha spending function. The Data and Safety Monitoring Board stopped the study after 602 participants were enrolled because of the significantly positive effect of indomethacin, which reduced post-ERCP pancreatitis from 16% in the placebo group to 9% in the indomethacin group. <br />
+You can find the manuscript at <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1111103">Indomethacin to Prevent Post-ERCP Pancreatitis</a>. <br />
+</p>
+
+
+<h3>Source</h3>
+
+<p>This data set is sourced from the authors of the 2012 manuscript in the New England Journal of Medicine, entitled, A Randomized Trial of Rectal Indomethacin to Prevent Post-ERCP Pancreatitis, pages 1414-1422 volume 366, in the April 12, 2012 edition, authored by the Elmunzer, BJ, Higgins PDR, et al. You can find the manuscript at <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1111103">Indomethacin to Prevent Post-ERCP Pancreatitis</a>.
+</p>
+
+
+</div>
+</body></html>
