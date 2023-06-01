@@ -415,6 +415,9 @@
     <loc>/doc/DAAG/Cars93.summary.html</loc>
   </url>
   <url>
+    <loc>/doc/DAAG/DAAGxdb.html</loc>
+  </url>
+  <url>
     <loc>/doc/DAAG/Lottario.html</loc>
   </url>
   <url>
@@ -443,6 +446,9 @@
   </url>
   <url>
     <loc>/doc/DAAG/appletaste.html</loc>
+  </url>
+  <url>
+    <loc>/doc/DAAG/audists.html</loc>
   </url>
   <url>
     <loc>/doc/DAAG/aulatlong.html</loc>
@@ -772,6 +778,9 @@
     <loc>/doc/DAAG/toycars.html</loc>
   </url>
   <url>
+    <loc>/doc/DAAG/two65.html</loc>
+  </url>
+  <url>
     <loc>/doc/DAAG/vince111b.html</loc>
   </url>
   <url>
@@ -785,6 +794,9 @@
   </url>
   <url>
     <loc>/doc/DAAG/worldRecords.html</loc>
+  </url>
+  <url>
+    <loc>/doc/DAAG/zzDAAGxdb.html</loc>
   </url>
   <url>
     <loc>/doc/Ecdat/Accident.html</loc>
@@ -887,6 +899,9 @@
   </url>
   <url>
     <loc>/doc/Ecdat/Fatality.html</loc>
+  </url>
+  <url>
+    <loc>/doc/Ecdat/FinancialCrisisFiles.html</loc>
   </url>
   <url>
     <loc>/doc/Ecdat/Fishing.html</loc>
@@ -1249,6 +1264,9 @@
     <loc>/doc/HSAUR/foster.html</loc>
   </url>
   <url>
+    <loc>/doc/HSAUR/gardenflowers.html</loc>
+  </url>
+  <url>
     <loc>/doc/HSAUR/heptathlon.html</loc>
   </url>
   <url>
@@ -1444,6 +1462,9 @@
     <loc>/doc/HistData/Snow.deaths2.html</loc>
   </url>
   <url>
+    <loc>/doc/HistData/Snow.polygons.html</loc>
+  </url>
+  <url>
     <loc>/doc/HistData/Snow.pumps.html</loc>
   </url>
   <url>
@@ -1490,6 +1511,9 @@
   </url>
   <url>
     <loc>/doc/ISLR/Hitters.html</loc>
+  </url>
+  <url>
+    <loc>/doc/ISLR/Khan.html</loc>
   </url>
   <url>
     <loc>/doc/ISLR/NCI60.html</loc>
@@ -2650,6 +2674,9 @@
     <loc>/doc/boot/cd4.html</loc>
   </url>
   <url>
+    <loc>/doc/boot/cd4.nested.html</loc>
+  </url>
+  <url>
     <loc>/doc/boot/channing.html</loc>
   </url>
   <url>
@@ -3169,6 +3196,9 @@
     <loc>/doc/datasets/USPersonalExpenditure.html</loc>
   </url>
   <url>
+    <loc>/doc/datasets/UScitiesD.html</loc>
+  </url>
+  <url>
     <loc>/doc/datasets/VADeaths.html</loc>
   </url>
   <url>
@@ -3227,6 +3257,9 @@
   </url>
   <url>
     <loc>/doc/datasets/euro.html</loc>
+  </url>
+  <url>
+    <loc>/doc/datasets/eurodist.html</loc>
   </url>
   <url>
     <loc>/doc/datasets/faithful.html</loc>
@@ -3527,6 +3560,12 @@
   </url>
   <url>
     <loc>/doc/dslabs/historic_co2.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/mice_weights.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/mnist_27.html</loc>
   </url>
   <url>
     <loc>/doc/dslabs/movielens.html</loc>
@@ -3893,6 +3932,96 @@
   </url>
   <url>
     <loc>/doc/gt/sza.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/AddHealth.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Adopted.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Bees.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Diabetes.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/FootHead.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Headache.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Hernior.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Iwasaki_Big_Five.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/MockJury.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/NLSY.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/NeuroCog.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Oslo.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Parenting.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Plastic.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Pottery2.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Probe1.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Probe2.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/RatWeight.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/ReactTime.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Rohwer.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/RootStock.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Sake.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/Skulls.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/SocGrades.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/SocialCog.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/TIPI.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/VocabGrowth.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/WeightLoss.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/mathscore.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/schooldata.html</loc>
   </url>
   <url>
     <loc>/doc/hwde/IndianIrish.html</loc>
@@ -4573,6 +4702,9 @@
     <loc>/doc/openintro/cherry.html</loc>
   </url>
   <url>
+    <loc>/doc/openintro/children_gender_stereo.html</loc>
+  </url>
+  <url>
     <loc>/doc/openintro/china.html</loc>
   </url>
   <url>
@@ -4777,6 +4909,9 @@
     <loc>/doc/openintro/infmortrate.html</loc>
   </url>
   <url>
+    <loc>/doc/openintro/ipo.html</loc>
+  </url>
+  <url>
     <loc>/doc/openintro/ipod.html</loc>
   </url>
   <url>
@@ -4897,6 +5032,9 @@
     <loc>/doc/openintro/openintro_colors.html</loc>
   </url>
   <url>
+    <loc>/doc/openintro/openintro_palettes.html</loc>
+  </url>
+  <url>
     <loc>/doc/openintro/opportunity_cost.html</loc>
   </url>
   <url>
@@ -4997,6 +5135,9 @@
   </url>
   <url>
     <loc>/doc/openintro/simpsons_paradox_covid.html</loc>
+  </url>
+  <url>
+    <loc>/doc/openintro/simulated_dist.html</loc>
   </url>
   <url>
     <loc>/doc/openintro/simulated_normal.html</loc>
@@ -5230,6 +5371,9 @@
     <loc>/doc/pscl/iraqVote.html</loc>
   </url>
   <url>
+    <loc>/doc/pscl/nj07.html</loc>
+  </url>
+  <url>
     <loc>/doc/pscl/partycodes.html</loc>
   </url>
   <url>
@@ -5240,6 +5384,12 @@
   </url>
   <url>
     <loc>/doc/pscl/prussian.html</loc>
+  </url>
+  <url>
+    <loc>/doc/pscl/s109.html</loc>
+  </url>
+  <url>
+    <loc>/doc/pscl/sc9497.html</loc>
   </url>
   <url>
     <loc>/doc/pscl/state.info.html</loc>
@@ -5366,6 +5516,9 @@
   </url>
   <url>
     <loc>/doc/quantreg/MelTemp.html</loc>
+  </url>
+  <url>
+    <loc>/doc/quantreg/Peirce.html</loc>
   </url>
   <url>
     <loc>/doc/quantreg/barro.html</loc>
@@ -5641,7 +5794,13 @@
     <loc>/doc/stevedata/ODGI.html</loc>
   </url>
   <url>
+    <loc>/doc/stevedata/OODTPT.html</loc>
+  </url>
+  <url>
     <loc>/doc/stevedata/PPGE.html</loc>
+  </url>
+  <url>
+    <loc>/doc/stevedata/PRDEG.html</loc>
   </url>
   <url>
     <loc>/doc/stevedata/Presidents.html</loc>
@@ -5704,6 +5863,9 @@
     <loc>/doc/stevedata/eq_passengercars.html</loc>
   </url>
   <url>
+    <loc>/doc/stevedata/eurostat_codes.html</loc>
+  </url>
+  <url>
     <loc>/doc/stevedata/eustates.html</loc>
   </url>
   <url>
@@ -5747,6 +5909,9 @@
   </url>
   <url>
     <loc>/doc/stevedata/mm_nhis.html</loc>
+  </url>
+  <url>
+    <loc>/doc/stevedata/mm_randhie.html</loc>
   </url>
   <url>
     <loc>/doc/stevedata/mvprod.html</loc>
@@ -5810,6 +5975,9 @@
   </url>
   <url>
     <loc>/doc/stevedata/voteincome.html</loc>
+  </url>
+  <url>
+    <loc>/doc/stevedata/wbd_example.html</loc>
   </url>
   <url>
     <loc>/doc/stevedata/wvs_ccodes.html</loc>
@@ -6182,6 +6350,141 @@
   </url>
   <url>
     <loc>/doc/vcd/WomenQueue.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Abortion.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Accident.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/AirCrash.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Alligator.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Asbestos.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Bartlett.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Burt.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Caesar.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Cancer.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Cormorants.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/CyclingDeaths.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/DaytonSurvey.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Depends.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Detergent.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Donner.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Draft1970.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Draft1970table.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Dyke.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Fungicide.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/GSS.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Geissler.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Gilby.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Glass.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/HairEyePlace.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Hauser79.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Heart.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Heckman.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/HospVisits.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/HouseTasks.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Hoyt.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/ICU.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/JobSat.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Mammograms.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Mental.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Mice.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Mobility.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/PhdPubs.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/ShakeWords.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/TV.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Titanicp.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Toxaemia.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Vietnam.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Vote1980.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/WorkerSat.html</loc>
+  </url>
+  <url>
+    <loc>/doc/vcdExtra/Yamaguchi87.html</loc>
   </url>
   <url>
     <loc>/doc/wooldridge/admnrev.html</loc>
