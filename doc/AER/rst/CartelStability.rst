@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: CartelStability
-      :name: cartelstability
+      :name: CartelStability
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Data from the National Wilm's Tumor Study
-      :name: data-from-the-national-wilms-tumor-study
+      :name: nwtco
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Male and female births in London
-      :name: male-and-female-births-in-london
+      :name: arbuthnot
 
    .. rubric:: Description
       :name: description

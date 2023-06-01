@@ -16,7 +16,7 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>beav2</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
+<h2 id='beav2'>
 Body Temperature Series of Beaver 2
 </h2>
 
@@ -107,7 +107,7 @@ arima(temp, order = c(1,0,0), xreg = cbind(active=activ, dreg))
 
 ## IGNORE_RDIFF_BEGIN
 library(nlme) # for gls and corAR1
-beav2.gls &lt;- gls(temp ~ activ, data = beav2, corr = corAR1(0.8),
+beav2.gls &lt;- gls(temp ~ activ, data = beav2, correlation = corAR1(0.8),
                  method = "ML")
 summary(beav2.gls)
 summary(update(beav2.gls, subset = 6:100))

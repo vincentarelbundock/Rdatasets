@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Liver pathology data
-      :name: liver-pathology-data
+      :name: pathology
 
    .. rubric:: Description
       :name: description

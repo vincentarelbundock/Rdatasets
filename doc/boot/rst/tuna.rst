@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Tuna Sighting Data
-      :name: tuna-sighting-data
+      :name: tuna
 
    .. rubric:: Description
       :name: description

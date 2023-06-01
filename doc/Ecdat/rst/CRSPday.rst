@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Daily Returns from the CRSP Database
-      :name: daily-returns-from-the-crsp-database
+      :name: CRSPday
 
    .. rubric:: Description
       :name: description

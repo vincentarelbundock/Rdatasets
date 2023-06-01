@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Suicide Attempts in Shandong, China
-      :name: suicide-attempts-in-shandong-china
+      :name: SuicideChina
 
    .. rubric:: Description
       :name: description

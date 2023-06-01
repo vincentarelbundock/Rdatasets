@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Leaf and Air Temperature Data
-      :name: leaf-and-air-temperature-data
+      :name: leaftemp
 
    .. rubric:: Description
       :name: description

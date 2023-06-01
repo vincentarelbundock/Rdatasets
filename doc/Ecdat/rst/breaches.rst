@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Cyber Security Breaches
-      :name: cyber-security-breaches
+      :name: breaches
 
    .. rubric:: Description
       :name: description

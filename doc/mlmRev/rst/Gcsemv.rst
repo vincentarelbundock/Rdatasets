@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: GCSE exam score
-      :name: gcse-exam-score
+      :name: Gcsemv
 
    .. rubric:: Description
       :name: description

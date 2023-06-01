@@ -6,7 +6,7 @@
 
    .. rubric:: Yearly batting records for all major league baseball
       players
-      :name: yearly-batting-records-for-all-major-league-baseball-players
+      :name: baseball
 
    .. rubric:: Description
       :name: description

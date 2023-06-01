@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Tasting experiment that compared four apple varieties
-      :name: tasting-experiment-that-compared-four-apple-varieties
+      :name: appletaste
 
    .. rubric:: Description
       :name: description

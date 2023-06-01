@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Embryonic stem cells to treat heart attack (in sheep)
-      :name: embryonic-stem-cells-to-treat-heart-attack-in-sheep
+      :name: stem_cell
 
    .. rubric:: Description
       :name: description

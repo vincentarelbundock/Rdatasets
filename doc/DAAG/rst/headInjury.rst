@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Minor Head Injury (Simulated) Data
-      :name: minor-head-injury-simulated-data
+      :name: headInjury
 
    .. rubric:: Description
       :name: description

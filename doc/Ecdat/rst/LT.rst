@@ -5,7 +5,7 @@
    == ===============
 
    .. rubric:: Dollar Sterling Exchange Rate
-      :name: dollar-sterling-exchange-rate
+      :name: LT
 
    .. rubric:: Description
       :name: description

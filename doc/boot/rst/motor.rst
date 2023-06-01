@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Data from a Simulated Motorcycle Accident
-      :name: data-from-a-simulated-motorcycle-accident
+      :name: motor
 
    .. rubric:: Description
       :name: description

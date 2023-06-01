@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Cloud Seeding Data
-      :name: cloud-seeding-data
+      :name: clouds
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Quarterly Australian Electricity production
-      :name: quarterly-australian-electricity-production
+      :name: qauselec
 
    .. rubric:: Description
       :name: description

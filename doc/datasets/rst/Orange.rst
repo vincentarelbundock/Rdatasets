@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Growth of Orange Trees
-      :name: growth-of-orange-trees
+      :name: Orange
 
    .. rubric:: Description
       :name: description

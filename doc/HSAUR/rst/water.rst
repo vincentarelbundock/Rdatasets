@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Mortality and Water Hardness
-      :name: mortality-and-water-hardness
+      :name: water
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Characteristics of a Sample of Diamonds
-      :name: characteristics-of-a-sample-of-diamonds
+      :name: Diamonds
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Fish encounters
-      :name: fish-encounters
+      :name: fish_encounters
 
    .. rubric:: Description
       :name: description

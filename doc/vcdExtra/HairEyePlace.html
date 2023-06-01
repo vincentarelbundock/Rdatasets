@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: Hair Color and Eye Color in Caithness and Aberdeen</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>HairEyePlace</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='HairEyePlace'>
+Hair Color and Eye Color in Caithness and Aberdeen
+</h2>
+
+<h3>Description</h3>
+
+<p>A three-way frequency table crossing eye color and hair color in two places, Caithness and Aberdeen,
+Scotland.
+These data were of interest to Fisher (1940) and others because
+there are mixtures of people of Nordic, Celtic and Anglo-Saxon origin.
+</p>
+<p>One or both tables have been widely analyzed in conjunction with
+RC and canonical correlation models for categorical data, e.g.,
+Becker and Clogg (1989).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(HairEyePlace)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The format is:
+num [1:4, 1:5, 1:2] 326 688 343 98 38 116 84 48 241 584 ...
+- attr(*, &quot;dimnames&quot;)=List of 3
+..$ Eye  : chr [1:4] &quot;Blue&quot; &quot;Light&quot; &quot;Medium&quot; &quot;Dark&quot;
+..$ Hair : chr [1:5] &quot;Fair&quot; &quot;Red&quot; &quot;Medium&quot; &quot;Dark&quot; ...
+..$ Place: chr [1:2] &quot;Caithness&quot; &quot;Aberdeen&quot;
+</p>
+
+
+<h3>Details</h3>
+
+<p>The hair and eye colors are ordered as in the original source,
+suggesting that they form ordered categories.
+</p>
+
+
+<h3>Source</h3>
+
+<p>This data was taken from the <code>colors</code> data in <span class="pkg">logmult</span>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Becker, M. P., and Clogg, C. C. (1989). 
+Analysis of Sets of Two-Way Contingency Tables Using Association Models. 
+<em>Journal of the American Statistical Association</em>, 84(405), 142-151. 
+</p>
+<p>Fisher, R.A. (1940) The precision of discriminant functions. 
+<em>Annals of Eugenics</em>, 10, 422-429.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(HairEyePlace)
+
+# separate mosaics
+mosaic(HairEyePlace[,,1], shade=TRUE, main="Caithness")
+mosaic(HairEyePlace[,,2], shade=TRUE, main="Aberdeen")
+
+# condition on Place
+mosaic(~Hair + Eye |Place, data=HairEyePlace, shade=TRUE, legend=FALSE)
+
+cotabplot(~Hair+Eye|Place, data=HairEyePlace, shade=TRUE, legend=FALSE)
+</code></pre>
+
+
+</div>
+</body></html>

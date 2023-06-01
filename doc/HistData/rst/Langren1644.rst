@@ -6,7 +6,7 @@
 
    .. rubric:: van Langren's Data on Longitude Distance between Toledo
       and Rome
-      :name: van-langrens-data-on-longitude-distance-between-toledo-and-rome
+      :name: Langren
 
    .. rubric:: Description
       :name: description

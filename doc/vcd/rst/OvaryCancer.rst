@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Ovary Cancer Data
-      :name: ovary-cancer-data
+      :name: OvaryCancer
 
    .. rubric:: Description
       :name: description

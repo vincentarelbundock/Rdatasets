@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: UCLA courses in Fall 2018
-      :name: ucla-courses-in-fall-2018
+      :name: ucla_f18
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Danish Fire Insurance Claims
-      :name: danish-fire-insurance-claims
+      :name: danish
 
    .. rubric:: Description
       :name: description

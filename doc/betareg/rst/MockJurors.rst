@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Confidence of Mock Jurors in Their Verdicts
-      :name: confidence-of-mock-jurors-in-their-verdicts
+      :name: MockJurors
 
    .. rubric:: Description
       :name: description

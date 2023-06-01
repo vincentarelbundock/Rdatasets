@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: US Expenditures for Public Schools
-      :name: us-expenditures-for-public-schools
+      :name: PublicSchools
 
    .. rubric:: Description
       :name: description

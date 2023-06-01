@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Galton's dataset of parent and child heights
-      :name: galtons-dataset-of-parent-and-child-heights
+      :name: Galton
 
    .. rubric:: Description
       :name: description

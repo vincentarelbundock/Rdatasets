@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Italian olive
-      :name: italian-olive
+      :name: olive
 
    .. rubric:: Description
       :name: description
@@ -18,7 +18,7 @@
 
    ::
 
-      data(olive)
+      olive
 
    .. rubric:: Format
       :name: format
@@ -59,5 +59,4 @@
 
    ::
 
-      data(olive)
       head(olive)

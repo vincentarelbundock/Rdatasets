@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Arrests for Marijuana Possession
-      :name: arrests-for-marijuana-possession
+      :name: Arrests
 
    .. rubric:: Description
       :name: description

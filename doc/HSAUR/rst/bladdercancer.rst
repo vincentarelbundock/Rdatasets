@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Bladder Cancer Data
-      :name: bladder-cancer-data
+      :name: bladdercancer
 
    .. rubric:: Description
       :name: description

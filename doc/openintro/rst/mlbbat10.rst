@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Major League Baseball Player Hitting Statistics for 2010
-      :name: major-league-baseball-player-hitting-statistics-for-2010
+      :name: mlbbat10
 
    .. rubric:: Description
       :name: description

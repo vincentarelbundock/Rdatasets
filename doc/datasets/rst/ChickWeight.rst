@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Weight versus age of chicks on different diets
-      :name: weight-versus-age-of-chicks-on-different-diets
+      :name: ChickWeight
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Weldon's Dice Data
-      :name: weldons-dice-data
+      :name: WeldonDice
 
    .. rubric:: Description
       :name: description

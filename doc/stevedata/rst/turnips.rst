@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Turnip prices in Animal Crossing (New Horizons)
-      :name: turnip-prices-in-animal-crossing-new-horizons
+      :name: turnips
 
    .. rubric:: Description
       :name: description

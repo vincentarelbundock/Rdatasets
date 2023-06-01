@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: British Election Panel Study
-      :name: british-election-panel-study
+      :name: BEPS
 
    .. rubric:: Description
       :name: description

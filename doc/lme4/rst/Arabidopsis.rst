@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Arabidopsis clipping/fertilization data
-      :name: arabidopsis-clippingfertilization-data
+      :name: Arabidopsis
 
    .. rubric:: Description
       :name: description

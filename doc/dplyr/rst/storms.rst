@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Storm tracks data
-      :name: storm-tracks-data
+      :name: storms
 
    .. rubric:: Description
       :name: description

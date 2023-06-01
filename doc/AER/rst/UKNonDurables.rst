@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Consumption of Non-Durables in the UK
-      :name: consumption-of-non-durables-in-the-uk
+      :name: UKNonDurables
 
    .. rubric:: Description
       :name: description

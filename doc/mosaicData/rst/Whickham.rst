@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Data from the Whickham survey
-      :name: data-from-the-whickham-survey
+      :name: Whickham
 
    .. rubric:: Description
       :name: description

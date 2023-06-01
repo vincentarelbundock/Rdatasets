@@ -6,7 +6,7 @@
 
    .. rubric:: Gene expression profiles for 189 biological samples taken
       from seven different tissue types.
-      :name: gene-expression-profiles-for-189-biological-samples-taken-from-seven-different-tissue-types.
+      :name: tissue_gene_expression
 
    .. rubric:: Description
       :name: description
@@ -22,7 +22,7 @@
 
    ::
 
-      data(tissue_gene_expression)
+      tissue_gene_expression
 
    .. rubric:: Format
       :name: format
@@ -52,6 +52,5 @@
 
    ::
 
-      data(tissue_gene_expression)
       table(tissue_gene_expression$y)
       dim(tissue_gene_expression$x)

@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Illiteracy in the Population 10 Years Old and Over, 1930
-      :name: illiteracy-in-the-population-10-years-old-and-over-1930
+      :name: illiteracy30
 
    .. rubric:: Description
       :name: description

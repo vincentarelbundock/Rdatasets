@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Manufacturing Costs
-      :name: manufacturing-costs
+      :name: ManufCost
 
    .. rubric:: Description
       :name: description

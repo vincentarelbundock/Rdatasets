@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Determination of Formaldehyde
-      :name: determination-of-formaldehyde
+      :name: Formaldehyde
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Fat, water and protein content of meat samples
-      :name: fat-water-and-protein-content-of-meat-samples
+      :name: meats
 
    .. rubric:: Description
       :name: description

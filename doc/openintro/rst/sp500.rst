@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Financial information for 50 S&P 500 companies
-      :name: financial-information-for-50-sp-500-companies
+      :name: sp500
 
    .. rubric:: Description
       :name: description

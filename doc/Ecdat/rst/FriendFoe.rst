@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Data from the Television Game Show Friend Or Foe ?
-      :name: data-from-the-television-game-show-friend-or-foe
+      :name: FriendFoe
 
    .. rubric:: Description
       :name: description

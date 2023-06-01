@@ -6,7 +6,7 @@
 
    .. rubric:: Percentage of U.S. Households with Computer Access, by
       Year
-      :name: percentage-of-u.s.-households-with-computer-access-by-year
+      :name: usa_computers
 
    .. rubric:: Description
       :name: description

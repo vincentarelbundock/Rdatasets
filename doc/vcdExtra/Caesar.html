@@ -1,0 +1,139 @@
+<!DOCTYPE html><html><head><title>R: Risk Factors for Infection in Caesarian Births</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Caesar</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Caesar'>Risk Factors for Infection in Caesarian Births</h2>
+
+<h3>Description</h3>
+
+<p>Data from infection from birth by Caesarian section, classified by <code>Risk</code> (two levels), 
+whether <code>Antibiotics</code> were used (two levels) and whether the Caesarian section was <code>Planned</code> or not.  
+The outcome is <code>Infection</code> (three levels).</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Caesar)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A 4-dimensional array resulting from cross-tabulating 4 variables for   251 observations. The variable names and their levels are:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1</td><td style="text-align: left;"> <code>Infection</code></td><td style="text-align: left;"> <code>"Type 1", "Type 2", "None"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2</td><td style="text-align: left;"> <code>Risk</code></td><td style="text-align: left;"> <code>"Yes", "No"</code> (presence of risk factors)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    3</td><td style="text-align: left;"> <code>Antibiotics</code></td><td style="text-align: left;"> <code>"Yes", "No"</code> (were antibiotics given?)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    4</td><td style="text-align: left;"> <code>Planned</code></td><td style="text-align: left;"> <code>"Yes", "No"</code> (was the C section planned?)</td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p><code>Infection</code> is regarded as the response variable here. 
+There are quite a few 0 cells here, particularly when  <code>Risk</code>
+is absent and the Caesarian section was unplanned.
+Should these be treated as structural or sampling zeros?
+</p>
+
+
+<h3>Source</h3>
+
+
+<p>Fahrmeir, L. &amp; Tutz, G. (1994).
+Multivariate Statistical Modelling Based on Generalized Linear Models 
+New York: Springer Verlag, Table 1.1.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>caesar</code> for the same data recorded as a frequency data frame
+with other variables.</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Caesar)
+#display table;  note that there are quite a few 0 cells
+structable(Caesar)
+require(MASS)
+
+# baseline model, Infection as response
+Caesar.mod0 &lt;- loglm(~Infection + (Risk*Antibiotics*Planned), 
+                     data=Caesar)
+
+# NB: Pearson chisq cannot be computed due to the 0 cells
+Caesar.mod0
+
+mosaic(Caesar.mod0, main="Baseline model")
+
+# Illustrate handling structural zeros
+zeros &lt;- 0+ (Caesar &gt;0)
+zeros[1,,1,1] &lt;- 1
+structable(zeros)
+
+# fit model excluding possible structural zeros
+Caesar.mod0s &lt;- loglm(~Infection + (Risk*Antibiotics*Planned), 
+                      data=Caesar, 
+	                    start=zeros)
+Caesar.mod0s
+
+anova(Caesar.mod0, Caesar.mod0s, test="Chisq")
+
+mosaic (Caesar.mod0s)
+
+# what terms to add?
+add1(Caesar.mod0, ~.^2, test="Chisq")
+
+# add Association of Infection:Antibiotics
+Caesar.mod1 &lt;- update(Caesar.mod0, ~ . + Infection:Antibiotics)
+anova(Caesar.mod0, Caesar.mod1, test="Chisq")
+
+mosaic(Caesar.mod1, 
+       gp=shading_Friendly, 
+       main="Adding Infection:Antibiotics")
+
+</code></pre>
+
+
+</div>
+</body></html>

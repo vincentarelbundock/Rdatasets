@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Guess Author's Sex from Handwriting?
-      :name: guess-authors-sex-from-handwriting
+      :name: Handwriting
 
    .. rubric:: Description
       :name: description

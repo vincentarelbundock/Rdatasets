@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Intercountry Life-Cycle Savings Data
-      :name: intercountry-life-cycle-savings-data
+      :name: LifeCycleSavings
 
    .. rubric:: Description
       :name: description

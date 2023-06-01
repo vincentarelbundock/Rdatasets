@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Cost Function for Electricity Producers, 1955
-      :name: cost-function-for-electricity-producers-1955
+      :name: Nerlove
 
    .. rubric:: Description
       :name: description

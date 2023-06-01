@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Prenatal care in Guatemala
-      :name: prenatal-care-in-guatemala
+      :name: guPrenat
 
    .. rubric:: Description
       :name: description

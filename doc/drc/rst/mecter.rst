@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Mechlorprop and terbythylazine tested on Lemna minor
-      :name: mechlorprop-and-terbythylazine-tested-on-lemna-minor
+      :name: mecter
 
    .. rubric:: Description
       :name: description

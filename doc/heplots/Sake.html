@@ -1,0 +1,115 @@
+<!DOCTYPE html><html><head><title>R: Taste Ratings of Japanese Rice Wine (Sake)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Sake</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Sake'>
+Taste Ratings of Japanese Rice Wine (Sake)
+</h2>
+
+<h3>Description</h3>
+
+<p>Siotani et al. (1985) describe a study of Japanese rice wine (sake)
+used to investigate the relationship between two subjective ratings
+(<code>taste</code> and <code>smell</code>) and a number of physical measurements
+on 30 brands of sake.
+</p>
+<p>These data provide one example of a case where a multivariate regression
+doesn't benefit from having multiple outcome measures, using the standard
+tests.  Barrett (2003) uses this data to illustrate influence measures for
+multivariate regression models.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Sake)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 30 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt><code>taste</code></dt><dd><p>mean taste rating</p>
+</dd>
+<dt><code>smell</code></dt><dd><p>mean smell rating</p>
+</dd>
+<dt><code>pH</code></dt><dd><p>pH measurement</p>
+</dd>
+<dt><code>acidity1</code></dt><dd><p>one measure of acidity</p>
+</dd>
+<dt><code>acidity2</code></dt><dd><p>another measure of acidity</p>
+</dd>
+<dt><code>sake</code></dt><dd><p>Sake-meter score</p>
+</dd>
+<dt><code>rsugar</code></dt><dd><p>direct reducing sugar content</p>
+</dd>
+<dt><code>tsugar</code></dt><dd><p>total sugar content</p>
+</dd>
+<dt><code>alcohol</code></dt><dd><p>alcohol content</p>
+</dd>
+<dt><code>nitrogen</code></dt><dd><p>formol-nitrogen content</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The <code>taste</code> and <code>smell</code> values are the mean ratings of 10 experts
+on some unknown scale.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Siotani, M. Hayakawa, T. &amp; Fujikoshi, Y. (1985).
+<em>Modern Multivariate Statistical Analysis: A Graduate Course and Handbook</em>.
+American Sciences Press, p. 217.
+</p>
+
+
+<h3>References</h3>
+
+<p>Barrett, B. E. (2003). Understanding Influence in Multivariate Regression.
+<em>Communications in Statistics - Theory and Methods</em>
+32 (3), 667-680.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Sake)
+# quick look at the data
+boxplot(scale(Sake))
+
+Sake.mod &lt;- lm(cbind(taste,smell) ~ ., data=Sake)
+
+library(car)
+Anova(Sake.mod)
+
+predictors &lt;- colnames(Sake)[-(1:2)]                 
+# overall multivariate regression test
+linearHypothesis(Sake.mod, predictors)
+
+heplot(Sake.mod, hypotheses=list("Regr" = predictors))
+</code></pre>
+
+
+</div>
+</body></html>

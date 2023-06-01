@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Labor Supply Data
-      :name: labor-supply-data
+      :name: Mroz
 
    .. rubric:: Description
       :name: description

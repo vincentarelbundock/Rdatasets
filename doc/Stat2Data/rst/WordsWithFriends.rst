@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Words with Friends Scores
-      :name: words-with-friends-scores
+      :name: WordsWithFriends
 
    .. rubric:: Description
       :name: description

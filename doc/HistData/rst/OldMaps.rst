@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Latitudes and Longitudes of 39 Points in 11 Old Maps
-      :name: latitudes-and-longitudes-of-39-points-in-11-old-maps
+      :name: OldMaps
 
    .. rubric:: Description
       :name: description

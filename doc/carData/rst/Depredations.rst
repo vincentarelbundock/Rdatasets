@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Minnesota Wolf Depredation Data
-      :name: minnesota-wolf-depredation-data
+      :name: Depredations
 
    .. rubric:: Description
       :name: description

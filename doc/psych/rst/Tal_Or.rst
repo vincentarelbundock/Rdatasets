@@ -6,7 +6,7 @@
 
    .. rubric:: Data set testing causal direction in presumed media
       influence
-      :name: data-set-testing-causal-direction-in-presumed-media-influence
+      :name: Tal_Or
 
    .. rubric:: Description
       :name: description

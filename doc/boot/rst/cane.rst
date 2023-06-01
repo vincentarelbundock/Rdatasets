@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Sugar-cane Disease Data
-      :name: sugar-cane-disease-data
+      :name: cane
 
    .. rubric:: Description
       :name: description

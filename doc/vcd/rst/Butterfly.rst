@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Butterfly Species in Malaya
-      :name: butterfly-species-in-malaya
+      :name: Butterfly
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Attitudes about the Justifiability of Bribe-Taking in the
       World Values Survey
-      :name: attitudes-about-the-justifiability-of-bribe-taking-in-the-world-values-survey
+      :name: wvs_justifbribe
 
    .. rubric:: Description
       :name: description

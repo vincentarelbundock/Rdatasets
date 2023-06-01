@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Average Yearly Temperatures in New Haven
-      :name: average-yearly-temperatures-in-new-haven
+      :name: nhtemp
 
    .. rubric:: Description
       :name: description

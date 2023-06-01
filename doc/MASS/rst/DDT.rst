@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: DDT in Kale
-      :name: ddt-in-kale
+      :name: DDT
 
    .. rubric:: Description
       :name: description

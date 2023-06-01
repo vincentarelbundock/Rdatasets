@@ -5,7 +5,7 @@
    ====================== ===============
 
    .. rubric:: Simpson's Paradox: Covid
-      :name: simpsons-paradox-covid
+      :name: simpsons_paradox_covid
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Ethics and a Milgram Experiment
-      :name: ethics-and-a-milgram-experiment
+      :name: Milgram
 
    .. rubric:: Description
       :name: description

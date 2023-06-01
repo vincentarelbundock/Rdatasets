@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Lifespan of ball bearings
-      :name: lifespan-of-ball-bearings
+      :name: ball_bearing
 
    .. rubric:: Description
       :name: description

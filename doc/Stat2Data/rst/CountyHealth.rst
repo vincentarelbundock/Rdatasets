@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: County Health Resources
-      :name: county-health-resources
+      :name: CountyHealth
 
    .. rubric:: Description
       :name: description

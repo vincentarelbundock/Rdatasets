@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Adult male heights in feet with outliers
-      :name: adult-male-heights-in-feet-with-outliers
+      :name: outlier_example
 
    .. rubric:: Description
       :name: description
@@ -20,7 +20,7 @@
 
    ::
 
-      data(outlier_example)
+      outlier_example
 
    .. rubric:: Format
       :name: format
@@ -32,6 +32,5 @@
 
    ::
 
-      data(outlier_example)
       mean(outlier_example)
       median(outlier_example)

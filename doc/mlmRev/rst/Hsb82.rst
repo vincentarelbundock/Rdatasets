@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: High School and Beyond - 1982
-      :name: high-school-and-beyond---1982
+      :name: Hsb82
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Economic data on Samplonia
-      :name: economic-data-on-samplonia
+      :name: samplonomy
 
    .. rubric:: Description
       :name: description

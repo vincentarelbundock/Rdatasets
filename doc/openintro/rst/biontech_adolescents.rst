@@ -6,7 +6,7 @@
 
    .. rubric:: Efficacy of Pfizer-BioNTech COVID-19 vaccine on
       adolescents
-      :name: efficacy-of-pfizer-biontech-covid-19-vaccine-on-adolescents
+      :name: biontech_adolescents
 
    .. rubric:: Description
       :name: description

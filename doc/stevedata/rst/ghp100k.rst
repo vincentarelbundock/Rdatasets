@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Gun Homicide Rate per 100,000 People, by Country
-      :name: gun-homicide-rate-per-100000-people-by-country
+      :name: ghp100k
 
    .. rubric:: Description
       :name: description

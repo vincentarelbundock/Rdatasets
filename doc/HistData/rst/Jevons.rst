@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: W. Stanley Jevons' data on numerical discrimination
-      :name: w.-stanley-jevons-data-on-numerical-discrimination
+      :name: Jevons
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Broken Marriage Data
-      :name: broken-marriage-data
+      :name: BrokenMarriage
 
    .. rubric:: Description
       :name: description

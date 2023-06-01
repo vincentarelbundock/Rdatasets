@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Daily Change in Dow Jones and Nikkei Stock Market Indices
-      :name: daily-change-in-dow-jones-and-nikkei-stock-market-indices
+      :name: Markets
 
    .. rubric:: Description
       :name: description

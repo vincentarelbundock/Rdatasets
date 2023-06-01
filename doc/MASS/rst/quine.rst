@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Absenteeism from School in Rural New South Wales
-      :name: absenteeism-from-school-in-rural-new-south-wales
+      :name: quine
 
    .. rubric:: Description
       :name: description

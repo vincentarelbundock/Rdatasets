@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Effect of an effluent on the growth of mysid shrimp
-      :name: effect-of-an-effluent-on-the-growth-of-mysid-shrimp
+      :name: M.bahia
 
    .. rubric:: Description
       :name: description

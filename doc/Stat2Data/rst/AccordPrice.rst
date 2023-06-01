@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Prices of Used Honda Accords (in 2017)
-      :name: prices-of-used-honda-accords-in-2017
+      :name: AccordPrice
 
    .. rubric:: Description
       :name: description

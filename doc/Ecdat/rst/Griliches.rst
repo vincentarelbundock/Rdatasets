@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Wage Data
-      :name: wage-data
+      :name: Griliches
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Wife Working Hours
-      :name: wife-working-hours
+      :name: Workinghours
 
    .. rubric:: Description
       :name: description

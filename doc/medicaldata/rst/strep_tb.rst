@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: RCT of Streptomycin Therapy for Tuberculosis
-      :name: rct-of-streptomycin-therapy-for-tuberculosis
+      :name: strep_tb
 
    .. rubric:: Description
       :name: description

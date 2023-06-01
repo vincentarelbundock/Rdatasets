@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Family Medical Expenses
-      :name: family-medical-expenses
+      :name: medExpenses
 
    .. rubric:: Description
       :name: description

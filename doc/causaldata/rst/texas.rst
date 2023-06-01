@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Data on prison capacity expansion in Texas
-      :name: data-on-prison-capacity-expansion-in-texas
+      :name: texas
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Number of Words in US Tax Law
-      :name: number-of-words-in-us-tax-law
+      :name: UStaxWords
 
    .. rubric:: Description
       :name: description

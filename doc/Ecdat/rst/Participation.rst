@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Labor Force Participation
-      :name: labor-force-participation
+      :name: Participation
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Monoclonal gammopathy data
-      :name: monoclonal-gammopathy-data
+      :name: mgus2
 
    .. rubric:: Description
       :name: description

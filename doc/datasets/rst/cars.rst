@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Speed and Stopping Distances of Cars
-      :name: speed-and-stopping-distances-of-cars
+      :name: cars
 
    .. rubric:: Description
       :name: description

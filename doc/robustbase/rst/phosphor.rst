@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Phosphorus Content Data
-      :name: phosphorus-content-data
+      :name: phosphor
 
    .. rubric:: Description
       :name: description

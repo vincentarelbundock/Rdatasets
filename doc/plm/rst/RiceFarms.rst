@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Production of Rice in Indonesia
-      :name: production-of-rice-in-indonesia
+      :name: RiceFarms
 
    .. rubric:: Description
       :name: description

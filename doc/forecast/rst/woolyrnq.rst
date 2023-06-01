@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Quarterly production of woollen yarn in Australia
-      :name: quarterly-production-of-woollen-yarn-in-australia
+      :name: woolyrnq
 
    .. rubric:: Description
       :name: description

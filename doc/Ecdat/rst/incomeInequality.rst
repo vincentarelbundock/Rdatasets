@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Income Inequality in the US
-      :name: income-inequality-in-the-us
+      :name: incomeInequality
 
    .. rubric:: Description
       :name: description

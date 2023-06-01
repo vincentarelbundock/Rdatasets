@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Passengers on the Titanic
-      :name: passengers-on-the-titanic
+      :name: Titanic
 
    .. rubric:: Description
       :name: description

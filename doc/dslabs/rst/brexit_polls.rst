@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Brexit Poll Data
-      :name: brexit-poll-data
+      :name: brexit_polls
 
    .. rubric:: Description
       :name: description
@@ -18,7 +18,7 @@
 
    ::
 
-      data(brexit_polls)
+      brexit_polls
 
    .. rubric:: Format
       :name: format
@@ -49,12 +49,11 @@
    .. rubric:: Source
       :name: source
 
-   `Wikipedia <https://en.wikipedia.org/w/index.php?title=Opinion_polling_for_the_United_Kingdom_European_Union_membership_referendum&oldid=896735054>`__
+   `Wikipedia <https://en.wikipedia.org/w/index.php?title=Opinion_polling_for_the_United_Kingdom_European_Union_membership_referendum&oldid=896735054/>`__
 
    .. rubric:: Examples
       :name: examples
 
    ::
 
-      data(brexit_polls)
       head(brexit_polls)

@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Study of Supraclavicular Anesthesia
-      :name: study-of-supraclavicular-anesthesia
+      :name: supraclavicular
 
    .. rubric:: Description
       :name: description

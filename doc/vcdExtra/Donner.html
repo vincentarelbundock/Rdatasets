@@ -1,0 +1,167 @@
+<!DOCTYPE html><html><head><title>R: Survival in the Donner Party</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Donner</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Donner'>
+Survival in the Donner Party
+</h2>
+
+<h3>Description</h3>
+
+<p>This data frame contains information on the members of the Donner Party,
+a group of people who attempted to migrate to California in 1846.
+They were trapped by an early blizzard on the eastern side of the
+Sierra Nevada mountains, and before they could be rescued, 
+nearly half of the party had died.
+</p>
+<p>What factors affected who lived and who died?
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Donner)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 90 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>family</code></dt><dd><p>family name, a factor with 10 levels </p>
+</dd>
+<dt><code>age</code></dt><dd><p>age of person, a numeric vector</p>
+</dd>
+<dt><code>sex</code></dt><dd><p>a factor with levels <code>Female</code> <code>Male</code></p>
+</dd>
+<dt><code>survived</code></dt><dd><p>a numeric vector, 0 or 1</p>
+</dd>
+<dt><code>death</code></dt><dd><p>date of death for those who died before rescue, a POSIXct</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This data frame uses the person's name as row labels.
+<code>family</code> reflects a recoding of the last names of individuals
+to reduce the number of factor levels.
+The main families in the Donner party were: Donner, Graves, Breen and Reed.
+The families of Murphy, Foster and Pike are grouped as <code>'MurFosPik'</code>,
+those of Fosdick and Wolfinger are coded as <code>'FosdWolf'</code>, and
+all others as <code>'Other'</code>.
+</p>
+<p><code>survived</code> is the response variable. What kind of models should be used here?
+</p>
+
+
+<h3>Source</h3>
+
+<p>D. K. Grayson, 1990, &quot;Donner party deaths: A demographic
+assessment&quot;, <em>J. Anthropological Research</em>, <b>46</b>, 223-242.
+</p>
+<p>Johnson, K. (1996). <em>Unfortunate Emigrants: Narratives of the Donner Party</em>. 
+Logan, UT: Utah State University Press. 
+Additions, and dates of death from <a href="http://user.xmission.com/~octa/DonnerParty/Roster.htm">http://user.xmission.com/~octa/DonnerParty/Roster.htm</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Ramsey, F.L. and Schafer, D.W. (2002). 
+<em>The Statistical Sleuth: A Course in Methods of Data Analysis</em>, (2nd ed), Duxbury.
+</p>
+<p>Friendly, M. and Meyer, D. (2016). 
+<em>Discrete Data Analysis with R: Visualization and Modeling Techniques for Categorical and Count Data</em>. 
+Boca Raton, FL: Chapman &amp; Hall/CRC. <a href="http://ddar.datavis.ca">http://ddar.datavis.ca</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>donner</code> in <span class="pkg">alr3</span>,
+<code>case2001</code> in <span class="pkg">Sleuth2</span>(adults only) provide similar data sets.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># conditional density plots
+op &lt;- par(mfrow=c(1,2), cex.lab=1.5)
+cdplot(factor(survived) ~ age, 
+       subset=sex=='Male', 
+       data=Donner, 
+       main="Donner party: Males", 
+       ylevels=2:1, 
+       ylab="Survived", 
+       yaxlabels=c("yes", "no"))
+with(Donner, rug(jitter(age[sex=="Male"]), 
+                 col="white", quiet=TRUE))
+
+cdplot(factor(survived) ~ age, 
+       subset=sex=='Female', 
+       data=Donner, 
+       main="Donner party: Females", 
+       ylevels=2:1, 
+       ylab="Survived", 
+       yaxlabels=c("yes", "no"))
+with(Donner, rug(jitter(age[sex=="Female"]), 
+                 col="white", quiet=TRUE))
+par(op)
+
+
+# fit some models
+(mod1 &lt;- glm(survived ~ age + sex, data=Donner, family=binomial))
+(mod2 &lt;- glm(survived ~ age * sex, data=Donner, family=binomial))
+anova(mod2, test="Chisq")
+
+(mod3 &lt;- glm(survived ~ poly(age,2) * sex, data=Donner, family=binomial))
+anova(mod3, test="Chisq")
+LRstats(glmlist(mod1, mod2, mod3))
+
+# plot fitted probabilities from mod2 and mod3
+# idea from: http://www.ling.upenn.edu/~joseff/rstudy/summer2010_ggplot2_intro.html
+library(ggplot2)
+
+# separate linear fits on age for M/F
+ggplot(Donner, aes(age, survived, color = sex)) +
+  geom_point(position = position_jitter(height = 0.02, width = 0)) +
+  stat_smooth(method = "glm", 
+              method.args = list(family = binomial), 
+              formula = y ~ x,
+              alpha = 0.2, 
+              size=2, 
+              aes(fill = sex))
+
+# separate quadratics
+ggplot(Donner, aes(age, survived, color = sex)) +
+  geom_point(position = position_jitter(height = 0.02, width = 0)) +
+  stat_smooth(method = "glm", 
+              method.args = list(family = binomial), 
+              formula = y ~ poly(x,2),
+              alpha = 0.2, 
+              size=2, 
+              aes(fill = sex))
+
+
+</code></pre>
+
+
+</div>
+</body></html>

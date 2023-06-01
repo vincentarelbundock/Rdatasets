@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: pharmacoSmoking
-      :name: pharmacosmoking
+      :name: pharmacoSmoking
 
    .. rubric:: Description
       :name: description

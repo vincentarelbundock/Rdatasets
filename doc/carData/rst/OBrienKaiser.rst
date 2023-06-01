@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: O'Brien and Kaiser's Repeated-Measures Data
-      :name: obrien-and-kaisers-repeated-measures-data
+      :name: OBrienKaiser
 
    .. rubric:: Description
       :name: description

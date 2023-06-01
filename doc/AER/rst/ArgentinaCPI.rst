@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Consumer Price Index in Argentina
-      :name: consumer-price-index-in-argentina
+      :name: ArgentinaCPI
 
    .. rubric:: Description
       :name: description

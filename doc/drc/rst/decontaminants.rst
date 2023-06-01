@@ -6,7 +6,7 @@
 
    .. rubric:: Performance of decontaminants used in the culturing of a
       micro-organism
-      :name: performance-of-decontaminants-used-in-the-culturing-of-a-micro-organism
+      :name: decontaminants
 
    .. rubric:: Description
       :name: description

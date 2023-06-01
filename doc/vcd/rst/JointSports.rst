@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Opinions About Joint Sports
-      :name: opinions-about-joint-sports
+      :name: JointSports
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Palmer Station penguin data
-      :name: palmer-station-penguin-data
+      :name: penguins
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: data from Section 1.18
-      :name: data-from-section-1.18
+      :name: bcdeter
 
    .. rubric:: Description
       :name: description

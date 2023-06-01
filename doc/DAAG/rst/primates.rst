@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Primate Body and Brain Weights
-      :name: primate-body-and-brain-weights
+      :name: primates
 
    .. rubric:: Description
       :name: description

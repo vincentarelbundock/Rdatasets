@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Professor evaluations and beauty
-      :name: professor-evaluations-and-beauty
+      :name: evals
 
    .. rubric:: Description
       :name: description

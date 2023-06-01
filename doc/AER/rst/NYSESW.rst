@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Daily NYSE Composite Index
-      :name: daily-nyse-composite-index
+      :name: NYSESW
 
    .. rubric:: Description
       :name: description

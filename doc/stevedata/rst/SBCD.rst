@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Systemic Banking Crises Database II
-      :name: systemic-banking-crises-database-ii
+      :name: SBCD
 
    .. rubric:: Description
       :name: description

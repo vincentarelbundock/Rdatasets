@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Table of Playing Cards in 52-Card Deck
-      :name: table-of-playing-cards-in-52-card-deck
+      :name: playing_cards
 
    .. rubric:: Description
       :name: description

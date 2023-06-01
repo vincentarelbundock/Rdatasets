@@ -1,0 +1,4 @@
+"","x"
+"1","Error in as.data.frame.default(dat) : 
+  cannot coerce class ‘""rollcall""’ to a data.frame
+"

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Vocabulary and Education
-      :name: vocabulary-and-education
+      :name: Vocab
 
    .. rubric:: Description
       :name: description

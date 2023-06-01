@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Cost Data for US Airlines
-      :name: cost-data-for-us-airlines
+      :name: USAirlines
 
    .. rubric:: Description
       :name: description

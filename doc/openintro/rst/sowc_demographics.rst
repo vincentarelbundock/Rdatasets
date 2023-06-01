@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: SOWC Demographics Data.
-      :name: sowc-demographics-data.
+      :name: sowc_demographics
 
    .. rubric:: Description
       :name: description

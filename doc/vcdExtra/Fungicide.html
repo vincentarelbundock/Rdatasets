@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Carcinogenic Effects of a Fungicide</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Fungicide</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Fungicide'>
+Carcinogenic Effects of a Fungicide
+</h2>
+
+<h3>Description</h3>
+
+<p>Data from Gart (1971) on the carcinogenic effects of a certain fungicide
+in two strains of mice.
+Of interest is how the association between <code>group</code> (Control, Treated)
+and <code>outcome</code> (Tumor, No Tumor) varies with <code>sex</code> and
+<code>strain</code> of the mice.
+</p>
+<p>Breslow (1976) used this data to illustrate the application of linear models
+to log odds ratios.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Fungicide)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The data comprise a set of four 2 x 2 tables classifying 403 mice, either
+Control or Treated and whether or not a tumor was later observed.  
+The four groups represent the combinations of sex and strain of mice.
+The format is:
+num [1:2, 1:2, 1:2, 1:2] 5 4 74 12 3 2 84 14 10 4 ...
+- attr(*, &quot;dimnames&quot;)=List of 4
+..$ group  : chr [1:2] &quot;Control&quot; &quot;Treated&quot;
+..$ outcome: chr [1:2] &quot;Tumor&quot; &quot;NoTumor&quot;
+..$ sex    : chr [1:2] &quot;M&quot; &quot;F&quot;
+..$ strain : chr [1:2] &quot;1&quot; &quot;2&quot;
+</p>
+
+
+<h3>Details</h3>
+
+<p>All tables have some small cells, so a continuity correction is recommended.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Gart, J. J. (1971). The comparison of proportions: a review of significance tests,
+confidence intervals and adjustments for stratification. 
+<em>International Statistical Review</em>,
+39, 148-169.
+</p>
+
+
+<h3>References</h3>
+
+<p>Breslow, N. (1976), Regression analysis of the log odds ratio:
+A method for retrospective studies, <em>Biometrics</em>, 32(3), 409-416.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Fungicide)
+# loddsratio was moved to vcd; requires vcd_1.3-3+
+## Not run: 
+fung.lor &lt;- loddsratio(Fungicide, correct=TRUE)
+fung.lor
+confint(fung.lor)
+
+## End(Not run)
+
+# visualize odds ratios in fourfold plots
+cotabplot(Fungicide, panel=cotab_fourfold)
+#  -- fourfold() requires vcd &gt;= 1.2-10
+fourfold(Fungicide, p_adjust_method="none")
+
+
+</code></pre>
+
+
+</div>
+</body></html>

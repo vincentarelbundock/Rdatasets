@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Aspirin Data
-      :name: aspirin-data
+      :name: aspirin
 
    .. rubric:: Description
       :name: description

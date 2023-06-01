@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Evaluating Treatment Effect of Training on Earnings
-      :name: evaluating-treatment-effect-of-training-on-earnings
+      :name: Treatment
 
    .. rubric:: Description
       :name: description

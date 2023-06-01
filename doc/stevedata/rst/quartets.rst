@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Anscombe's (1973) Quartets
-      :name: anscombes-1973-quartets
+      :name: quartets
 
    .. rubric:: Description
       :name: description

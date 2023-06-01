@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Daily observations for the S&P 500
-      :name: daily-observations-for-the-sp-500
+      :name: sp500_1950_2018
 
    .. rubric:: Description
       :name: description

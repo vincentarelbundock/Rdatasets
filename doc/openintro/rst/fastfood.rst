@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Nutrition in fast food
-      :name: nutrition-in-fast-food
+      :name: fastfood
 
    .. rubric:: Description
       :name: description

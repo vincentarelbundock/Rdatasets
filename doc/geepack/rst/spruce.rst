@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Log-size of 79 Sitka spruce trees
-      :name: log-size-of-79-sitka-spruce-trees
+      :name: spruce
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Noise Levels of Filters to Reduce Automobile Pollution
-      :name: noise-levels-of-filters-to-reduce-automobile-pollution
+      :name: AutoPollution
 
    .. rubric:: Description
       :name: description

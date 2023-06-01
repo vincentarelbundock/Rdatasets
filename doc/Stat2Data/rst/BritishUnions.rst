@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Attitudes Towards British Trade Unions
-      :name: attitudes-towards-british-trade-unions
+      :name: BritishUnions
 
    .. rubric:: Description
       :name: description

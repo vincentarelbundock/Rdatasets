@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Natural Gas Data
-      :name: natural-gas-data
+      :name: NaturalGas
 
    .. rubric:: Description
       :name: description

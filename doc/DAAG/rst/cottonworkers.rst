@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Occupation and wage profiles of British cotton workers
-      :name: occupation-and-wage-profiles-of-british-cotton-workers
+      :name: cottonworkers
 
    .. rubric:: Description
       :name: description

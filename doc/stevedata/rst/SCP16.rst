@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: South Carolina County GOP/Democratic Primary Data, 2016
-      :name: south-carolina-county-gopdemocratic-primary-data-2016
+      :name: SCP16
 
    .. rubric:: Description
       :name: description

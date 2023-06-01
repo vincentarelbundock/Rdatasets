@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: gasticXelox
-      :name: gasticxelox
+      :name: gastricXelox
 
    .. rubric:: Description
       :name: description

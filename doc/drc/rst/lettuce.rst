@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Hormesis in lettuce plants
-      :name: hormesis-in-lettuce-plants
+      :name: lettuce
 
    .. rubric:: Description
       :name: description

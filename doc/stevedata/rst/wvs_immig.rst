@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Attitudes about Immigration in the World Values Survey
-      :name: attitudes-about-immigration-in-the-world-values-survey
+      :name: wvs_immig
 
    .. rubric:: Description
       :name: description

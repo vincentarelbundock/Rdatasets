@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Macroeconomic Series for the United States
-      :name: macroeconomic-series-for-the-united-states
+      :name: MoneyUS
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Growth of CRAN
-      :name: growth-of-cran
+      :name: CRANpackages
 
    .. rubric:: Description
       :name: description

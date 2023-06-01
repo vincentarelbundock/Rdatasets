@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Biopsy Data on Breast Cancer Patients
-      :name: biopsy-data-on-breast-cancer-patients
+      :name: biopsy
 
    .. rubric:: Description
       :name: description

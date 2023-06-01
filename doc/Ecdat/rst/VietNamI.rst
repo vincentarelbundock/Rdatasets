@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Medical Expenses in Vietnam (individual Level)
-      :name: medical-expenses-in-vietnam-individual-level
+      :name: VietNamI
 
    .. rubric:: Description
       :name: description

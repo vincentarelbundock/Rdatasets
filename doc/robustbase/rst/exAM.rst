@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Example Data of Antille and May - for Simple Regression
-      :name: example-data-of-antille-and-may---for-simple-regression
+      :name: exAM
 
    .. rubric:: Description
       :name: description

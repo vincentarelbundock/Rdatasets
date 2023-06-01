@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Determinants of Murder Rates in the United States
-      :name: determinants-of-murder-rates-in-the-united-states
+      :name: MurderRates
 
    .. rubric:: Description
       :name: description

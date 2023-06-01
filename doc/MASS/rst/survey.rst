@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Student Survey Data
-      :name: student-survey-data
+      :name: survey
 
    .. rubric:: Description
       :name: description

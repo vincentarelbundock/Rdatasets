@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: SP Return Data to October 1987
-      :name: sp-return-data-to-october-1987
+      :name: spto87
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Heating System Choice in California Houses
-      :name: heating-system-choice-in-california-houses
+      :name: Heating
 
    .. rubric:: Description
       :name: description

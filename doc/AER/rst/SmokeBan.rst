@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Do Workplace Smoking Bans Reduce Smoking?
-      :name: do-workplace-smoking-bans-reduce-smoking
+      :name: SmokeBan
 
    .. rubric:: Description
       :name: description

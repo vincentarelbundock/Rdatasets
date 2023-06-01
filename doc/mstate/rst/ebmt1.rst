@@ -6,7 +6,7 @@
 
    .. rubric:: Data from the European Society for Blood and Marrow
       Transplantation (EBMT)
-      :name: data-from-the-european-society-for-blood-and-marrow-transplantation-ebmt
+      :name: EBMT+20year+20of+20relapse+20data
 
    .. rubric:: Description
       :name: description

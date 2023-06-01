@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Canadian Labour Force Summary Data (1995-96)
-      :name: canadian-labour-force-summary-data-1995-96
+      :name: jobs
 
    .. rubric:: Description
       :name: description

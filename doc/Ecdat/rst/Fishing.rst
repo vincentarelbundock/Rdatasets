@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Choice of Fishing Mode
-      :name: choice-of-fishing-mode
+      :name: Fishing
 
    .. rubric:: Description
       :name: description

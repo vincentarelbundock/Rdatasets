@@ -6,7 +6,7 @@
 
    .. rubric:: Imprecise Probabilities for Sunday Weather and Boeing
       Stock Task
-      :name: imprecise-probabilities-for-sunday-weather-and-boeing-stock-task
+      :name: ImpreciseTask
 
    .. rubric:: Description
       :name: description

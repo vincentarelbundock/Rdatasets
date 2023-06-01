@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Yahoo! News Race and Justice poll results
-      :name: yahoo-news-race-and-justice-poll-results
+      :name: race_justice
 
    .. rubric:: Description
       :name: description

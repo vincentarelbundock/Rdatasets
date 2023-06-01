@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Each episode's ratings (raw)
-      :name: each-episodes-ratings-raw
+      :name: ratings_raw
 
    .. rubric:: Description
       :name: description

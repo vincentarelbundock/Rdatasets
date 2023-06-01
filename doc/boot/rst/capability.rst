@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Simulated Manufacturing Process Data
-      :name: simulated-manufacturing-process-data
+      :name: capability
 
    .. rubric:: Description
       :name: description

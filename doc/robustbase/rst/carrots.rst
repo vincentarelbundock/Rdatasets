@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Insect Damages on Carrots
-      :name: insect-damages-on-carrots
+      :name: carrots
 
    .. rubric:: Description
       :name: description

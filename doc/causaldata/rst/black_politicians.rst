@@ -6,7 +6,7 @@
 
    .. rubric:: Data from "Black Politicians are More Intrinsically
       Motivated to Advance Blacks' Interests"
-      :name: data-from-black-politicians-are-more-intrinsically-motivated-to-advance-blacks-interests
+      :name: black_politicians
 
    .. rubric:: Description
       :name: description

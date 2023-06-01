@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Cobar Ore data
-      :name: cobar-ore-data
+      :name: CobarOre
 
    .. rubric:: Description
       :name: description

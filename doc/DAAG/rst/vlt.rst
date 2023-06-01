@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Video Lottery Terminal Data
-      :name: video-lottery-terminal-data
+      :name: vlt
 
    .. rubric:: Description
       :name: description

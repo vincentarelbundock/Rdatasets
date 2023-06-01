@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Infant Mortality Rates, 2012
-      :name: infant-mortality-rates-2012
+      :name: infmortrate
 
    .. rubric:: Description
       :name: description

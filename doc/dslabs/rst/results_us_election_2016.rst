@@ -5,7 +5,7 @@
    ====================== ===============
 
    .. rubric:: Fivethirtyeight 2016 Poll Data
-      :name: fivethirtyeight-2016-poll-data
+      :name: polls_us_election_2016
 
    .. rubric:: Description
       :name: description
@@ -20,7 +20,7 @@
 
    ::
 
-      data(polls_us_election_2016)
+      polls_us_election_2016
 
    .. rubric:: Format
       :name: format
@@ -80,5 +80,4 @@
 
    ::
 
-      data(polls_us_election_2016)
       head(polls_us_election_2016)

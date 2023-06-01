@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Pew Survey on Energy Sources in 2018
-      :name: pew-survey-on-energy-sources-in-2018
+      :name: pew_energy_2018
 
    .. rubric:: Description
       :name: description

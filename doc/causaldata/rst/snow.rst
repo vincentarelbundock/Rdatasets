@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Data from John Snow's 1855 study of the cause of cholera
-      :name: data-from-john-snows-1855-study-of-the-cause-of-cholera
+      :name: snow
 
    .. rubric:: Description
       :name: description

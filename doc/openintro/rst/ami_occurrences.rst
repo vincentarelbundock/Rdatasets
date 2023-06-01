@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Acute Myocardial Infarction (Heart Attack) Events
-      :name: acute-myocardial-infarction-heart-attack-events
+      :name: ami_occurrences
 
    .. rubric:: Description
       :name: description

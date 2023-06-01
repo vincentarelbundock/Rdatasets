@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Frogs Data
-      :name: frogs-data
+      :name: frogs
 
    .. rubric:: Description
       :name: description

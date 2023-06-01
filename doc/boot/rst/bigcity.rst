@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Population of U.S. Cities
-      :name: population-of-u.s.-cities
+      :name: bigcity
 
    .. rubric:: Description
       :name: description

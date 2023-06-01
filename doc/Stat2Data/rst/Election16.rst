@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: 2016 U.S. Presidential Election
-      :name: u.s.-presidential-election
+      :name: Election16
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: 2010 General Social Survey
-      :name: general-social-survey
+      :name: gss2010
 
    .. rubric:: Description
       :name: description

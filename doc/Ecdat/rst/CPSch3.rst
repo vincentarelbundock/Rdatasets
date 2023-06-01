@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Earnings from the Current Population Survey
-      :name: earnings-from-the-current-population-survey
+      :name: CPSch3
 
    .. rubric:: Description
       :name: description

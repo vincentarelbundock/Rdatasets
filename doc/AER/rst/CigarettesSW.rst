@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Cigarette Consumption Panel Data
-      :name: cigarette-consumption-panel-data
+      :name: CigarettesSW
 
    .. rubric:: Description
       :name: description

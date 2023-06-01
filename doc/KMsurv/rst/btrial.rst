@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: data from Section 1.5
-      :name: data-from-section-1.5
+      :name: btrial
 
    .. rubric:: Description
       :name: description

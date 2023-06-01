@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Ames Housing Data
-      :name: ames-housing-data
+      :name: ames
 
    .. rubric:: Description
       :name: description

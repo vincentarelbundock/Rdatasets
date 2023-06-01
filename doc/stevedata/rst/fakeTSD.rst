@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Fake Data for a Time-Series
-      :name: fake-data-for-a-time-series
+      :name: fakeTSD
 
    .. rubric:: Description
       :name: description

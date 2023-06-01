@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: Plastic Film Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Plastic</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Plastic'>Plastic Film Data</h2>
+
+<h3>Description</h3>
+
+<p>An experiment was conducted to determine the optimum conditions for
+extruding plastic film.  Three responses were measured in relation
+to two factors, rate of extrusion and amount of an additive.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Plastic)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 20 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>tear</code></dt><dd><p>a numeric vector: tear resistance</p>
+</dd>
+<dt><code>gloss</code></dt><dd><p>a numeric vector: film gloss</p>
+</dd>
+<dt><code>opacity</code></dt><dd><p>a numeric vector: film opacity</p>
+</dd>
+<dt><code>rate</code></dt><dd><p>a factor representing change in the rate of extrusion 
+with levels <code>Low</code> (-10%),  <code>High</code> (10%)</p>
+</dd>
+<dt><code>additive</code></dt><dd><p>a factor with levels <code>Low</code> (1.0%), <code>High</code> (1.5%)</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Johnson, R.A. &amp; Wichern, D.W. (1992).
+<em>Applied Multivariate Statistical Analysis</em>, 3rd ed., Prentice-Hall.
+Example 6.12 (p. 266).
+</p>
+
+
+<h3>References</h3>
+
+<p>Krzanowski, W. J. (1988). <em>Principles of Multivariate Analysis. A User's Perspective</em>. Oxford. 
+(p. 381)
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>str(Plastic)
+plastic.mod &lt;- lm(cbind(tear, gloss, opacity) ~ rate*additive, data=Plastic)
+Anova(plastic.mod)
+
+pairs(plastic.mod)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: RuPaul's Drag Race Episode-Contestant Data
-      :name: rupauls-drag-race-episode-contestant-data
+      :name: rpdr_contep
 
    .. rubric:: Description
       :name: description

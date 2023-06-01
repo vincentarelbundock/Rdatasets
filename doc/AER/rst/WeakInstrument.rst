@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Artificial Weak Instrument Data
-      :name: artificial-weak-instrument-data
+      :name: WeakInstrument
 
    .. rubric:: Description
       :name: description

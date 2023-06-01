@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Raw cover type data
-      :name: raw-cover-type-data
+      :name: covers
 
    .. rubric:: Description
       :name: description

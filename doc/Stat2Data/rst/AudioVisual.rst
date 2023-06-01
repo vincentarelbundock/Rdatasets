@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Reaction Times to Audio and Visual Stimuli
-      :name: reaction-times-to-audio-and-visual-stimuli
+      :name: AudioVisual
 
    .. rubric:: Description
       :name: description

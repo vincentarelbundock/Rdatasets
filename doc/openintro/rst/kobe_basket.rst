@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Kobe Bryant basketball performance
-      :name: kobe-bryant-basketball-performance
+      :name: kobe_basket
 
    .. rubric:: Description
       :name: description

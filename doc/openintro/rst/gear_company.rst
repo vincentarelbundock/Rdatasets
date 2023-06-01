@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Fake data for a gear company example
-      :name: fake-data-for-a-gear-company-example
+      :name: gear_company
 
    .. rubric:: Description
       :name: description

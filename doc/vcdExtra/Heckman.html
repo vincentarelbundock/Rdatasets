@@ -1,0 +1,133 @@
+<!DOCTYPE html><html><head><title>R: Labour Force Participation of Married Women 1967-1971</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Heckman</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Heckman'>Labour Force Participation of Married Women 1967-1971</h2>
+
+<h3>Description</h3>
+
+<p>1583 married women were surveyed over the years 1967-1971, 
+recording whether or not they were employed in the labor force.
+</p>
+<p>The data, originally from Heckman &amp; Willis (1977) provide an example
+of modeling longitudinal categorical data, e.g., with markov chain
+models for dependence over time.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Heckman)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A 5-dimensional <code class="reqn">2^5</code> array resulting from cross-tabulating 5 binary variables for 1583 observations. The variable names and their levels are:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1</td><td style="text-align: left;"> <code>e1971</code></td><td style="text-align: left;"> <code>"71Yes", "No"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2</td><td style="text-align: left;"> <code>e1970</code></td><td style="text-align: left;"> <code>"70Yes", "No"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    3</td><td style="text-align: left;"> <code>e1969</code></td><td style="text-align: left;"> <code>"69Yes", "No"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    4</td><td style="text-align: left;"> <code>e1968</code></td><td style="text-align: left;"> <code>"68Yes", "No"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    5</td><td style="text-align: left;"> <code>e1967</code></td><td style="text-align: left;"> <code>"67Yes", "No"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>Lindsey (1993) fits an initial set of logistic regression models examining the dependence of
+employment in 1971 (<code>e1971</code>) on successive subsets of the previous years,
+<code>e1970</code>, <code>e1969</code>, ... <code>e1967</code>.
+</p>
+<p>Alternatively, one can examine markov chain models of first-order (dependence on previous
+year), second-order (dependence on previous two years), etc.
+</p>
+
+
+<h3>Source</h3>
+
+
+<p>Lindsey, J. K. (1993). 
+<em>Models for Repeated Measurements</em>
+Oxford, UK: Oxford University Press, p. 185.
+</p>
+
+
+<h3>References</h3>
+
+
+<p>Heckman, J.J. &amp; Willis, R.J. (1977). 
+&quot;A beta-logistic model for the analysis of sequential labor force participation by married women.&quot; 
+<em>Journal of Political Economy</em>, 85: 27-58
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Heckman)
+
+# independence model
+mosaic(Heckman, shade=TRUE)
+# same, as a loglm()
+require(MASS)
+(heckman.mod0 &lt;- loglm(~ e1971+e1970+e1969+e1968+e1967, data=Heckman))
+mosaic(heckman.mod0, main="Independence model")
+
+# first-order markov chain: bad fit
+(heckman.mod1 &lt;- loglm(~ e1971*e1970 + e1970*e1969 +e1969*e1968 + e1968*e1967, data=Heckman))
+mosaic(heckman.mod1, main="1st order markov chain model")
+
+# second-order markov chain: bad fit
+(heckman.mod2 &lt;- loglm(~ e1971*e1970*e1969 + e1970*e1969*e1968 +e1969*e1968*e1967, data=Heckman))
+mosaic(heckman.mod2, main="2nd order markov chain model")
+
+# third-order markov chain: fits OK
+(heckman.mod3 &lt;- loglm(~ e1971*e1970*e1969*e1968 + e1970*e1969*e1968*e1967, data=Heckman))
+mosaic(heckman.mod2, main="3rd order markov chain model")
+
+</code></pre>
+
+
+</div>
+</body></html>

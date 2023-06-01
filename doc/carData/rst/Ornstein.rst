@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Interlocking Directorates Among Major Canadian Firms
-      :name: interlocking-directorates-among-major-canadian-firms
+      :name: Ornstein
 
    .. rubric:: Description
       :name: description

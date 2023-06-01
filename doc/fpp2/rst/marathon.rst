@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Boston marathon winning times since 1897
-      :name: boston-marathon-winning-times-since-1897
+      :name: marathon
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: New York Air Quality Measurements
-      :name: new-york-air-quality-measurements
+      :name: airquality
 
    .. rubric:: Description
       :name: description

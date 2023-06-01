@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Experiment on Word Memory
-      :name: experiment-on-word-memory
+      :name: WordMemory
 
    .. rubric:: Description
       :name: description

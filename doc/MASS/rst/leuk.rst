@@ -6,7 +6,7 @@
 
    .. rubric:: Survival Times and White Blood Counts for Leukaemia
       Patients
-      :name: survival-times-and-white-blood-counts-for-leukaemia-patients
+      :name: leuk
 
    .. rubric:: Description
       :name: description

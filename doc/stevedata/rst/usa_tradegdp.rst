@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: U.S. Trade and GDP, 1790-2018
-      :name: u.s.-trade-and-gdp-1790-2018
+      :name: usa_tradegdp
 
    .. rubric:: Description
       :name: description

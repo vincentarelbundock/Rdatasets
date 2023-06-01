@@ -16,7 +16,7 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>InstEval</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>University Lecture/Instructor Evaluations by Students at ETH</h2>
+<h2 id='InstEval'>University Lecture/Instructor Evaluations by Students at ETH</h2>
 
 <h3>Description</h3>
 
@@ -38,9 +38,7 @@ individual students.</p>
 </dd>
 <dt><code>d</code></dt><dd><p>a factor with 1128 levels from <code>1:2160</code>, denoting
 individual professors or lecturers.</p>
-</dd></dl>
-
-<dl>
+</dd>
 <dt><code>studage</code></dt><dd><p>an ordered factor with levels <code>2</code> &lt;
 <code>4</code> &lt; <code>6</code> &lt; <code>8</code>, denoting student's &ldquo;age&rdquo;
 measured in the <em>semester</em> number the student has been enrolled.</p>
@@ -80,7 +78,8 @@ simplified on purpose.
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>str(InstEval)
+<pre><code class='language-R'>
+str(InstEval)
 
 head(InstEval, 16)
 xtabs(~ service + dept, InstEval)

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Malaria Vaccine Trial
-      :name: malaria-vaccine-trial
+      :name: malaria
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Daudin's Milk Composition Data
-      :name: daudins-milk-composition-data
+      :name: milk
 
    .. rubric:: Description
       :name: description

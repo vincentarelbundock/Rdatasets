@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Piracy and PIPA/SOPA
-      :name: piracy-and-pipasopa
+      :name: piracy
 
    .. rubric:: Description
       :name: description

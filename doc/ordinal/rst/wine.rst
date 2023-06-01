@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Bitterness of wine
-      :name: bitterness-of-wine
+      :name: wine
 
    .. rubric:: Description
       :name: description

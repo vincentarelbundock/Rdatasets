@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Impact of Beauty on Instructor's Teaching Ratings
-      :name: impact-of-beauty-on-instructors-teaching-ratings
+      :name: TeachingRatings
 
    .. rubric:: Description
       :name: description

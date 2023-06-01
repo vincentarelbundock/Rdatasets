@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Racial Animus and City Demgraphics
-      :name: racial-animus-and-city-demgraphics
+      :name: RacialAnimus
 
    .. rubric:: Description
       :name: description

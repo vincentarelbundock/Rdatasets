@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: The Painter's Data of de Piles
-      :name: the-painters-data-of-de-piles
+      :name: painters
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Highway Fatality Rates (Yearly)
-      :name: highway-fatality-rates-yearly
+      :name: Speed
 
    .. rubric:: Description
       :name: description

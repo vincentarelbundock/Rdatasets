@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Cowles and Davis's Data on Volunteering
-      :name: cowles-and-daviss-data-on-volunteering
+      :name: Cowles
 
    .. rubric:: Description
       :name: description

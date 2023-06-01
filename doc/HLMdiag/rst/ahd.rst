@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Methylprednisolone data
-      :name: methylprednisolone-data
+      :name: ahd
 
    .. rubric:: Description
       :name: description

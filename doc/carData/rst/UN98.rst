@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: United Nations Social Indicators Data 1998]
-      :name: united-nations-social-indicators-data-1998
+      :name: UN98
 
    .. rubric:: Description
       :name: description

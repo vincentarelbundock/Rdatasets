@@ -5,7 +5,7 @@
    ================== ===============
 
    .. rubric:: Pew survey on global warming
-      :name: pew-survey-on-global-warming
+      :name: global_warming_pew
 
    .. rubric:: Description
       :name: description

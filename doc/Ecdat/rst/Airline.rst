@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Cost for U.S. Airlines
-      :name: cost-for-u.s.-airlines
+      :name: Airline
 
    .. rubric:: Description
       :name: description

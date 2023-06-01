@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: High School and Beyond survey
-      :name: high-school-and-beyond-survey
+      :name: hsb2
 
    .. rubric:: Description
       :name: description

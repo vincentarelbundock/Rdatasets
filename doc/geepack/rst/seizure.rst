@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Epiliptic Seizures
-      :name: epiliptic-seizures
+      :name: seizure
 
    .. rubric:: Description
       :name: description

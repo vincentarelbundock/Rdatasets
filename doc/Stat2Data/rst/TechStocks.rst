@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Daily Prices of Three Tech Stocks
-      :name: daily-prices-of-three-tech-stocks
+      :name: TechStocks
 
    .. rubric:: Description
       :name: description

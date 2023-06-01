@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Data from an Oats Field Trial
-      :name: data-from-an-oats-field-trial
+      :name: oats
 
    .. rubric:: Description
       :name: description

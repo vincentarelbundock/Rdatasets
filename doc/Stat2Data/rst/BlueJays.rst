@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Blue Jay Measurements
-      :name: blue-jay-measurements
+      :name: BlueJays
 
    .. rubric:: Description
       :name: description

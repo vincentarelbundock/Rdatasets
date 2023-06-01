@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Sensory data from a french fries experiment.
-      :name: sensory-data-from-a-french-fries-experiment.
+      :name: french_fries
 
    .. rubric:: Description
       :name: description

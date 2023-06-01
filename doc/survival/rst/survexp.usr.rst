@@ -6,7 +6,7 @@
 
    .. rubric:: Census Data Sets for the Expected Survival and Person
       Years Functions
-      :name: census-data-sets-for-the-expected-survival-and-person-years-functions
+      :name: ratetables
 
    .. rubric:: Description
       :name: description

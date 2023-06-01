@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Pilot-Plant Data
-      :name: pilot-plant-data
+      :name: pilot
 
    .. rubric:: Description
       :name: description

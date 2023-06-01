@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: EPICA Dome C Ice Core 800KYr Temperature Estimates
-      :name: epica-dome-c-ice-core-800kyr-temperature-estimates
+      :name: edcT
 
    .. rubric:: Description
       :name: description

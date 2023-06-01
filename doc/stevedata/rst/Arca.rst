@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: NYSE Arca Steel Index data, 2017–present
-      :name: nyse-arca-steel-index-data-2017present
+      :name: Arca
 
    .. rubric:: Description
       :name: description

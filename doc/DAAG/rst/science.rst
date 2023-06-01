@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: School Science Survey Data
-      :name: school-science-survey-data
+      :name: science
 
    .. rubric:: Description
       :name: description

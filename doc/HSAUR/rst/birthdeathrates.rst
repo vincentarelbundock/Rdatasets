@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Birth and Death Rates Data
-      :name: birth-and-death-rates-data
+      :name: birthdeathrates
 
    .. rubric:: Description
       :name: description

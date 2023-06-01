@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Hawaian island chain hotspot Argon-Argon ages
-      :name: hawaian-island-chain-hotspot-argon-argon-ages
+      :name: hotspots2006
 
    .. rubric:: Description
       :name: description

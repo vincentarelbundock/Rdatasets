@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Choice of Brand for Catsup
-      :name: choice-of-brand-for-catsup
+      :name: Catsup
 
    .. rubric:: Description
       :name: description

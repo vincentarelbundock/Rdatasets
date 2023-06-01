@@ -1,0 +1,118 @@
+<!DOCTYPE html><html><head><title>R: Facebook, Google, and LinkedIn IPO filings</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ipo</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='ipo'>Facebook, Google, and LinkedIn IPO filings</h2>
+
+<h3>Description</h3>
+
+<p>On Feb 1st, 2011, Facebook Inc. filed an S-1 form with the Securities and
+Exchange Commission as part of their initial public offering (IPO).  This
+dataset includes the text of that document as well as text from the IPOs of
+two competing companies: Google and LinkedIn.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ipo
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The format is a list of three character vectors.  Each vector
+contains the line-by-line text of the IPO Prospectus of Facebook, Google,
+and LinkedIn, respectively.
+</p>
+
+
+<h3>Details</h3>
+
+<p>Each of the three prospectuses is encoded in UTF-8 format and contains some
+non-word characters related to the layout of the original documents.  For
+analysis on the words, it is recommended that the data be processed with
+packages such as <a href="https://juliasilge.github.io/tidytext/">tidytext</a>.
+See examples below.
+</p>
+
+
+<h3>Source</h3>
+
+<p>All IPO prospectuses are available from the U.S. Securities and Exchange Commission:
+<a href="https://www.sec.gov/Archives/edgar/data/1326801/000119312512034517/d287954ds1.htm">Facebook</a>,
+<a href="https://www.sec.gov/Archives/edgar/data/1288776/000119312504073639/ds1.htm">Google</a>,
+<a href="https://www.sec.gov/Archives/edgar/data/1271024/000119312511016022/ds1.htm">LinkedIn</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Zweig, J., 2020. Mark Zuckerberg: CEO For Life?. WSJ.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(tidytext)
+library(tibble)
+library(dplyr)
+library(ggplot2)
+library(forcats)
+
+# Analyzing Facebook IPO text
+
+facebook &lt;- tibble(text = ipo$facebook, company = "Facebook")
+
+facebook %&gt;%
+  unnest_tokens(word, text) %&gt;%
+  anti_join(stop_words) %&gt;%
+  count(word, sort = TRUE) %&gt;%
+  slice_head(n = 20) %&gt;%
+  ggplot(aes(y = fct_reorder(word, n), x = n, fill = n)) +
+  geom_col() +
+  labs(
+    title = "Top 20 most common words in Facebook IPO",
+    x = "Frequency",
+    y = "Word"
+  )
+
+# Comparisons to Google and LinkedIn IPO texts
+
+google &lt;- tibble(text = ipo$google, company = "Google")
+linkedin &lt;- tibble(text = ipo$linkedin, company = "LinkedIn")
+
+ipo_texts &lt;- bind_rows(facebook, google, linkedin)
+
+ipo_texts %&gt;%
+  unnest_tokens(word, text) %&gt;%
+  count(company, word, sort = TRUE) %&gt;%
+  bind_tf_idf(word, company, n) %&gt;%
+  arrange(desc(tf_idf)) %&gt;%
+  group_by(company) %&gt;%
+  slice_max(tf_idf, n = 15) %&gt;%
+  ungroup() %&gt;%
+  ggplot(aes(tf_idf, fct_reorder(word, tf_idf), fill = company)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~company, ncol = 3, scales = "free") +
+  labs(x = "tf-idf", y = NULL)
+</code></pre>
+
+
+</div>
+</body></html>

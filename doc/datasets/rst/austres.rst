@@ -6,7 +6,7 @@
 
    .. rubric:: Quarterly Time Series of the Number of Australian
       Residents
-      :name: quarterly-time-series-of-the-number-of-australian-residents
+      :name: austres
 
    .. rubric:: Description
       :name: description

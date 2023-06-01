@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Porsche and Jaguar Prices
-      :name: porsche-and-jaguar-prices
+      :name: PorscheJaguar
 
    .. rubric:: Description
       :name: description

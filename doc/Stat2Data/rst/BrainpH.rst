@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Brain pH Measurements
-      :name: brain-ph-measurements
+      :name: BrainpH
 
    .. rubric:: Description
       :name: description

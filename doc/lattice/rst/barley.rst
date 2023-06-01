@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Yield data from a Minnesota barley trial
-      :name: yield-data-from-a-minnesota-barley-trial
+      :name: H_barley
 
    .. rubric:: Description
       :name: description

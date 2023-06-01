@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: La Felicisima Armada
-      :name: la-felicisima-armada
+      :name: Armada
 
    .. rubric:: Description
       :name: description

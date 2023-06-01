@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Stated Preferences for Car Choice
-      :name: stated-preferences-for-car-choice
+      :name: Car
 
    .. rubric:: Description
       :name: description

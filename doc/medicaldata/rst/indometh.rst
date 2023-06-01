@@ -6,7 +6,7 @@
 
    .. rubric:: Cohort Study of the Pharmacokinetics of Intravenous
       Indomethacin
-      :name: cohort-study-of-the-pharmacokinetics-of-intravenous-indomethacin
+      :name: indometh
 
    .. rubric:: Description
       :name: description

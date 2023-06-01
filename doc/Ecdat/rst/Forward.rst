@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Exchange Rates of US Dollar Against Other Currencies
-      :name: exchange-rates-of-us-dollar-against-other-currencies
+      :name: Forward
 
    .. rubric:: Description
       :name: description

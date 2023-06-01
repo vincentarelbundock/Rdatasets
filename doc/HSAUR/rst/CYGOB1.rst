@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: CYG OB1 Star Cluster Data
-      :name: cyg-ob1-star-cluster-data
+      :name: CYGOB1
 
    .. rubric:: Description
       :name: description

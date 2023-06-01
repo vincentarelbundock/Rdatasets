@@ -16,7 +16,7 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>H_USMortality</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2> Mortality Rates in US by Cause and Gender </h2>
+<h2 id='H_USMortality'> Mortality Rates in US by Cause and Gender </h2>
 
 <h3>Description</h3>
 
@@ -120,11 +120,11 @@ Mortality Differences_, August 2015 Bethesda, MD.
 <h3>Examples</h3>
 
 <pre><code class='language-R'>dotplot(reorder(Cause, Rate) ~ Rate | Status,
-        data = USMortality, groups = Sex,
+        data = USMortality, groups = Sex, grid = FALSE,
         par.settings = simpleTheme(pch = 16), auto.key = list(columns = 2),
         scales = list(x = list(log = TRUE, equispaced.log = FALSE)))
 dotplot(reorder(Cause, Rate):Sex ~ Rate | Status,
-        data = USRegionalMortality, groups = Sex,
+        data = USRegionalMortality, groups = Sex, auto.key = FALSE,
         scales = list(x = list(log = TRUE, equispaced.log = FALSE)))
 </code></pre>
 

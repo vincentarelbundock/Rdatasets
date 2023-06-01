@@ -5,7 +5,7 @@
    ====================== ===============
 
    .. rubric:: Data on Restaurant Inspections
-      :name: data-on-restaurant-inspections
+      :name: restaurant_inspections
 
    .. rubric:: Description
       :name: description

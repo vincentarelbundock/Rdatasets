@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Do Calcium Supplements Lower Blood Pressure?
-      :name: do-calcium-supplements-lower-blood-pressure
+      :name: CalciumBP
 
    .. rubric:: Description
       :name: description

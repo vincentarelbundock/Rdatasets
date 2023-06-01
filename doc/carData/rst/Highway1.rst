@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Highway Accidents
-      :name: highway-accidents
+      :name: Highway1
 
    .. rubric:: Description
       :name: description

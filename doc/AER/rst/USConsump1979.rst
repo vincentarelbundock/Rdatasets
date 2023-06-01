@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: US Consumption Data (1970–1979)
-      :name: us-consumption-data-19701979
+      :name: USConsump1979
 
    .. rubric:: Description
       :name: description

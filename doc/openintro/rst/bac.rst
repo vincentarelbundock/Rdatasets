@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Beer and blood alcohol content
-      :name: beer-and-blood-alcohol-content
+      :name: bac
 
    .. rubric:: Description
       :name: description

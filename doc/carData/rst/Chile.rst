@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Voting Intentions in the 1988 Chilean Plebiscite
-      :name: voting-intentions-in-the-1988-chilean-plebiscite
+      :name: Chile
 
    .. rubric:: Description
       :name: description

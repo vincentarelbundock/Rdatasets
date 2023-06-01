@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Nuclear Power Station Construction Data
-      :name: nuclear-power-station-construction-data
+      :name: nuclear
 
    .. rubric:: Description
       :name: description

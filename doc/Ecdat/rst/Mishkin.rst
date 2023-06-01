@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Inflation and Interest Rates
-      :name: inflation-and-interest-rates
+      :name: Mishkin
 
    .. rubric:: Description
       :name: description

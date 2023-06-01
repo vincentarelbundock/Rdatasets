@@ -5,7 +5,7 @@
    ==================== ===============
 
    .. rubric:: Gapminder data, unfiltered.
-      :name: gapminder-data-unfiltered.
+      :name: gapminder_unfiltered
 
    .. rubric:: Description
       :name: description

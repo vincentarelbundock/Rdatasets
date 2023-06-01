@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Level of GAG in Urine of Children
-      :name: level-of-gag-in-urine-of-children
+      :name: GAGurine
 
    .. rubric:: Description
       :name: description

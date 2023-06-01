@@ -5,7 +5,7 @@
    ====================== ===============
 
    .. rubric:: Data from the Centers for Medicare & Medicaid Services
-      :name: data-from-the-centers-for-medicare-medicaid-services
+      :name: cms_patient_experience
 
    .. rubric:: Description
       :name: description

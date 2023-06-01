@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Parkinson's disease speech classification data set
-      :name: parkinsons-disease-speech-classification-data-set
+      :name: pd_speech
 
    .. rubric:: Description
       :name: description

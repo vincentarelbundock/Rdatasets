@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Age of Menarche in Warsaw
-      :name: age-of-menarche-in-warsaw
+      :name: menarche
 
    .. rubric:: Description
       :name: description

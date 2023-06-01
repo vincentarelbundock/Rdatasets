@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Strikes Duration
-      :name: strikes-duration
+      :name: StrikeDur
 
    .. rubric:: Description
       :name: description

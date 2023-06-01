@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Salinity Data
-      :name: salinity-data
+      :name: salinity
 
    .. rubric:: Description
       :name: description

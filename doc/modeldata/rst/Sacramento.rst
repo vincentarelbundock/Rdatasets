@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Sacramento CA home prices
-      :name: sacramento-ca-home-prices
+      :name: Sacramento
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: NCAA Final Four by Seed (Long Version through 2017)
-      :name: ncaa-final-four-by-seed-long-version-through-2017
+      :name: FinalFourLong17
 
    .. rubric:: Description
       :name: description

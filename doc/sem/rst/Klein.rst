@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Klein's Data on the U. S. Economy
-      :name: kleins-data-on-the-u.-s.-economy
+      :name: Klein
 
    .. rubric:: Description
       :name: description

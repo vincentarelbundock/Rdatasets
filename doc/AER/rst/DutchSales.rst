@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Dutch Retail Sales Index Data
-      :name: dutch-retail-sales-index-data
+      :name: DutchSales
 
    .. rubric:: Description
       :name: description

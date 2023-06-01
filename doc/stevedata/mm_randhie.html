@@ -1,0 +1,105 @@
+<!DOCTYPE html><html><head><title>R: Data from the RAND Health Insurance Experiment (HIE)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>mm_randhie</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='mm_randhie'>Data from the RAND Health Insurance Experiment (HIE)</h2>
+
+<h3>Description</h3>
+
+<p>These are data from the RAND Health Insurance Experiment (HIE).
+People who have read <em>Mastering 'Metrics</em> should recognize these data. They're
+featured prominently in that book and the authors' discussion of
+random assignment and experiments.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>mm_randhie
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The data are a list of two data frames (or &quot;tibbles&quot;). The first is the baseline data.
+</p>
+
+<dl>
+<dt><code>plantype</code></dt><dd><p>the plan coverage of the respondent, as a factor</p>
+</dd>
+<dt><code>age</code></dt><dd><p>the age of the respondent</p>
+</dd>
+<dt><code>blackhisp</code></dt><dd><p>whether the respondent is not white</p>
+</dd>
+<dt><code>cholest</code></dt><dd><p>the cholesterol level of the respondent (in <code>mg/dl</code>)</p>
+</dd>
+<dt><code>educper</code></dt><dd><p>the education-level of the respondent</p>
+</dd>
+<dt><code>female</code></dt><dd><p>whether the respondent is a woman</p>
+</dd>
+<dt><code>ghindx</code></dt><dd><p>a general health index</p>
+</dd>
+<dt><code>hosp</code></dt><dd><p>was the respondent hospitalized last year?</p>
+</dd>
+<dt><code>income1cpi</code></dt><dd><p>the family/household income of the respondent, adjusted for inflation</p>
+</dd>
+<dt><code>mhi</code></dt><dd><p>a mental health index</p>
+</dd>
+<dt><code>systol</code></dt><dd><p>the systolic blood pressure level of the respondent (in <code>mm HG</code>)</p>
+</dd>
+</dl>
+
+<p>The second is the outcome data.
+</p>
+
+<dl>
+<dt><code>plantype</code></dt><dd><p>the plan coverage of the respondent, as a factor</p>
+</dd>
+<dt><code>ftf</code></dt><dd><p>the number of face-to-face visits for the respondent</p>
+</dd>
+<dt><code>out_inf</code></dt><dd><p>the total of out-patient expenses for the respondent</p>
+</dd>
+<dt><code>totadm</code></dt><dd><p>the number of hospital admissions for the respondent</p>
+</dd>
+<dt><code>tot_inf</code></dt><dd><p>the total health expenses for the respondent</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data are already cleaned in a way that facilitates an easy
+replication of Table 1.3 and a partial replication of
+Table 1.4 in <em>Mastering 'Metrics</em>. Check
+<a href="http://www.masteringmetrics.com">http://www.masteringmetrics.com</a> for more information. I want to note
+that my treatment of the data leans heavily on Jeff Arnold's
+treatment of it. Check <a href="https://jrnold.github.io/masteringmetrics/">https://jrnold.github.io/masteringmetrics/</a> for
+more information. Future updates to the data may pursue a more exhaustive
+replication. I will only note these data are a mess and the authors of
+<em>Mastering 'Metrics</em> do not do a great job annotating code.
+</p>
+
+
+<h3>Source</h3>
+
+<p>RAND Health Insurance Experiment.
+</p>
+
+
+</div>
+</body></html>

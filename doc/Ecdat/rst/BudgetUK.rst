@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Budget Shares of British Households
-      :name: budget-shares-of-british-households
+      :name: BudgetUK
 
    .. rubric:: Description
       :name: description

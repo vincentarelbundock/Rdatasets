@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Rare and Endangered Plant Species
-      :name: rare-and-endangered-plant-species
+      :name: rareplants
 
    .. rubric:: Description
       :name: description

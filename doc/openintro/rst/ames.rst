@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Housing prices in Ames, Iowa
-      :name: housing-prices-in-ames-iowa
+      :name: ames
 
    .. rubric:: Description
       :name: description

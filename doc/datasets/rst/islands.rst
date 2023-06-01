@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Areas of the World's Major Landmasses
-      :name: areas-of-the-worlds-major-landmasses
+      :name: islands
 
    .. rubric:: Description
       :name: description

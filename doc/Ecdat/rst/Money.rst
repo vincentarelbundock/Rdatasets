@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Money, GDP and Interest Rate in Canada
-      :name: money-gdp-and-interest-rate-in-canada
+      :name: Money
 
    .. rubric:: Description
       :name: description

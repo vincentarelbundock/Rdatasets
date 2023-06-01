@@ -5,7 +5,7 @@
    ================== ===============
 
    .. rubric:: Thanksgiving spending, simulated based on Gallup poll.
-      :name: thanksgiving-spending-simulated-based-on-gallup-poll.
+      :name: thanksgiving_spend
 
    .. rubric:: Description
       :name: description

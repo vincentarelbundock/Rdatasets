@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Crowd Baiting Behaviour and Suicides
-      :name: crowd-baiting-behaviour-and-suicides
+      :name: suicides
 
    .. rubric:: Description
       :name: description

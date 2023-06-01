@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Leaf length of barley
-      :name: leaf-length-of-barley
+      :name: leaflength
 
    .. rubric:: Description
       :name: description

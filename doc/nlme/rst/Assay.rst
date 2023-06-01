@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Bioassay on Cell Culture Plate
-      :name: bioassay-on-cell-culture-plate
+      :name: Assay
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Tobin's Tobit data
-      :name: tobins-tobit-data
+      :name: tobin
 
    .. rubric:: Description
       :name: description

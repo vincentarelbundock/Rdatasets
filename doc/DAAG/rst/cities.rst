@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Populations of Major Canadian Cities (1992-96)
-      :name: populations-of-major-canadian-cities-1992-96
+      :name: cities
 
    .. rubric:: Description
       :name: description

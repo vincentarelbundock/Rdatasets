@@ -6,7 +6,7 @@
 
    .. rubric:: Long-Term Price Trends for Computers, TVs, and Related
       Items
-      :name: long-term-price-trends-for-computers-tvs-and-related-items
+      :name: LTPT
 
    .. rubric:: Description
       :name: description

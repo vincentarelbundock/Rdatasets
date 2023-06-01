@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Socioeconomic status and reduced-fee school lunches
-      :name: socioeconomic-status-and-reduced-fee-school-lunches
+      :name: helmet
 
    .. rubric:: Description
       :name: description

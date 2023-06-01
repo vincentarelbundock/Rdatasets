@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: A Comparison of Site Preferences of Two Species of Lizard
-      :name: a-comparison-of-site-preferences-of-two-species-of-lizard
+      :name: lizards
 
    .. rubric:: Description
       :name: description

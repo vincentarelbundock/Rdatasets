@@ -5,7 +5,7 @@
    == ===============
 
    .. rubric:: Luteinizing Hormone in Blood Samples
-      :name: luteinizing-hormone-in-blood-samples
+      :name: lh
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Australian Relative Wool Prices
-      :name: australian-relative-wool-prices
+      :name: wool
 
    .. rubric:: Description
       :name: description

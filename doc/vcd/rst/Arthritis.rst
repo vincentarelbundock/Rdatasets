@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Arthritis Treatment Data
-      :name: arthritis-treatment-data
+      :name: Arthritis
 
    .. rubric:: Description
       :name: description

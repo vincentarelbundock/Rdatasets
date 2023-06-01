@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Plots data.
-      :name: plots-data.
+      :name: plots
 
    .. rubric:: Description
       :name: description

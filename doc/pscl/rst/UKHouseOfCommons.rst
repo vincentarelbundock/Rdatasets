@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: 1992 United Kingdom electoral returns
-      :name: united-kingdom-electoral-returns
+      :name: UKHouseOfCommons
 
    .. rubric:: Description
       :name: description

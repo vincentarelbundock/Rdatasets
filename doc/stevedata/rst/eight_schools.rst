@@ -6,7 +6,7 @@
 
    .. rubric:: The Effect of Special Preparation on SAT-V Scores in
       Eight Randomized Experiments
-      :name: the-effect-of-special-preparation-on-sat-v-scores-in-eight-randomized-experiments
+      :name: eight_schools
 
    .. rubric:: Description
       :name: description

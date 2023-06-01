@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: London Borough Boundaries
-      :name: london-borough-boundaries
+      :name: london_boroughs
 
    .. rubric:: Description
       :name: description

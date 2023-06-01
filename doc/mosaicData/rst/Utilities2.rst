@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Utility bills
-      :name: utility-bills
+      :name: Utilities2
 
    .. rubric:: Description
       :name: description

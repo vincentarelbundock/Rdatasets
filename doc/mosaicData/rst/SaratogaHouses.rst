@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Houses in Saratoga County (2006)
-      :name: houses-in-saratoga-county-2006
+      :name: SaratogaHouses
 
    .. rubric:: Description
       :name: description

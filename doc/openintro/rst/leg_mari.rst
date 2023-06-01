@@ -6,7 +6,7 @@
 
    .. rubric:: Legalization of Marijuana Support in 2010 California
       Survey
-      :name: legalization-of-marijuana-support-in-2010-california-survey
+      :name: leg_mari
 
    .. rubric:: Description
       :name: description

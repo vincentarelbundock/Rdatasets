@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Which resume attributes drive job callbacks?
-      :name: which-resume-attributes-drive-job-callbacks
+      :name: resume
 
    .. rubric:: Description
       :name: description

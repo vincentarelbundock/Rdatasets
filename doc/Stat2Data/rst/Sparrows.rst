@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Sparrow Measurements
-      :name: sparrow-measurements
+      :name: Sparrows
 
    .. rubric:: Description
       :name: description

@@ -16,7 +16,7 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>housing</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
+<h2 id='housing'>
 Frequency Table from a Copenhagen Housing Conditions Survey
 </h2>
 
@@ -89,13 +89,15 @@ Chapman &amp; Hall.
 house.glm0 &lt;- glm(Freq ~ Infl*Type*Cont + Sat, family = poisson,
                   data = housing)
 ## IGNORE_RDIFF_BEGIN
-summary(house.glm0, cor = FALSE)
+summary(house.glm0, correlation = FALSE)
 ## IGNORE_RDIFF_END
 
 addterm(house.glm0, ~. + Sat:(Infl+Type+Cont), test = "Chisq")
 
 house.glm1 &lt;- update(house.glm0, . ~ . + Sat*(Infl+Type+Cont))
-summary(house.glm1, cor = FALSE)
+## IGNORE_RDIFF_BEGIN
+summary(house.glm1, correlation = FALSE)
+## IGNORE_RDIFF_END
 
 1 - pchisq(deviance(house.glm1), house.glm1$df.residual)
 

@@ -5,7 +5,7 @@
    ================== ===============
 
    .. rubric:: Unemployment in Germany Data
-      :name: unemployment-in-germany-data
+      :name: GermanUnemployment
 
    .. rubric:: Description
       :name: description

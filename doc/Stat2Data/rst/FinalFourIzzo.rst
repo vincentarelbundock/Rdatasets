@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: NCAA Final Four by Seed and Tom Izzo (through 2010)
-      :name: ncaa-final-four-by-seed-and-tom-izzo-through-2010
+      :name: FinalFourIzzo
 
    .. rubric:: Description
       :name: description

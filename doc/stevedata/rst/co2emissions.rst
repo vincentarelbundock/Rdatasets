@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Carbon Dioxide Emissions Data
-      :name: carbon-dioxide-emissions-data
+      :name: co2emissions
 
    .. rubric:: Description
       :name: description

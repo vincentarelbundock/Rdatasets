@@ -1,0 +1,111 @@
+<!DOCTYPE html><html><head><title>R: Social Cognitive Measures in Psychiatric Groups</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>SocialCog</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='SocialCog'>
+Social Cognitive Measures in Psychiatric Groups
+</h2>
+
+<h3>Description</h3>
+
+<p>The general purpose of the study (Hartman, 2016, Heinrichs et al. (2015)) was to evaluate patterns and levels 
+of performance on neurocognitive measures among individuals with schizophrenia and schizoaffective disorder 
+using a well-validated, comprehensive neurocognitive battery specifically designed for individuals with psychosis 
+(Heinrichs et al. (2008)) 
+</p>
+<p>The data here are for a subset of the observations in <code>NeuroCog</code> for which
+measures on various scales of social cognition were also available.
+Interest here is on whether the schizophrenia group can be distinguished from the
+schizoaffective group on these measures.
+</p>
+<p>The Social Cognitive measures were designed to tap various aspects of the perception and cognitive
+procession of emotions of others.  Emotion perception was assessed using a Managing Emotions (<code>MgeEmotions</code>)
+score from the MCCB.  A &quot;theory of mind&quot; (<code>ToM</code>) score assessed ability to read the emotions of
+others from photographs of the eye region of male and female faces. Two other measures,
+externalizing bias (<code>ExtBias</code>) and personalizing bias (<code>PersBias</code>) were
+calculated from a scale measuring the degree to which individuals attribute internal, personal
+or situational causal attributions to positive and negative social events.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("SocialCog")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 139 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>Dx</code></dt><dd><p>Diagnostic group, a factor with levels <code>Schizophrenia</code>, <code>Schizoaffective</code>, <code>Control</code></p>
+</dd>
+<dt><code>MgeEmotions</code></dt><dd><p>Score on the Managing emotions test, a numeric vector</p>
+</dd>
+<dt><code>ToM</code></dt><dd><p>Score on the The Reading the Mind in the Eyes test (theory of mind), a numeric vector</p>
+</dd>
+<dt><code>ExtBias</code></dt><dd><p>Externalizing Bias score, a numeric vector</p>
+</dd>
+<dt><code>PersBias</code></dt><dd><p>Personal Bias score, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>See <code>NeuroCog</code> for a description of the sample.
+Only those with complete data on all the social cognitive measures are included in this data set.
+</p>
+<p>There is one extreme outlier in the schizophrenia group and other possible
+outliers in the control group, left in here for tutorial purposes.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Hartman, L. I. (2016). Schizophrenia and Schizoaffective Disorder: One Condition or Two? Unpublished PhD dissertation, York University.
+</p>
+<p>Heinrichs, R.W., Pinnock, F., Muharib, E., Hartman, L.I., Goldberg, J.O., &amp; McDermid Vaz, S. (2015). 
+Neurocognitive normality in schizophrenia revisited. 
+<em>Schizophrenia Research: Cognition</em>, <b>2</b> (4), 227-232. doi: 10.1016/j.scog.2015.09.001 </p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(SocialCog)
+SC.mod &lt;- lm(cbind(MgeEmotions, ToM, ExtBias, PersBias) ~ Dx, data=SocialCog)
+SC.mod
+Anova(SC.mod)
+
+# test hypotheses of interest in terms of contrasts
+print(linearHypothesis(SC.mod, "Dx1"), SSP=FALSE)
+print(linearHypothesis(SC.mod, "Dx2"), SSP=FALSE)
+
+#' ## HE plots
+
+heplot(SC.mod, hypotheses=list("Dx1"="Dx1", "Dx2"="Dx2"),
+	fill=TRUE, fill.alpha=.1)
+	
+pairs(SC.mod, fill=c(TRUE,FALSE), fill.alpha=.1) 
+
+</code></pre>
+
+
+</div>
+</body></html>

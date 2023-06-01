@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Michelson's Speed of Light Data
-      :name: michelsons-speed-of-light-data
+      :name: michelson
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Productivity Scores for Machines and Workers
-      :name: productivity-scores-for-machines-and-workers
+      :name: Machines
 
    .. rubric:: Description
       :name: description

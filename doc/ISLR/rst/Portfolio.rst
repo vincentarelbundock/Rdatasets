@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Portfolio Data
-      :name: portfolio-data
+      :name: Portfolio
 
    .. rubric:: Description
       :name: description

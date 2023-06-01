@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Child care hours
-      :name: child-care-hours
+      :name: china
 
    .. rubric:: Description
       :name: description

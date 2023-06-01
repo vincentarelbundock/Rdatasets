@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Length of Stay Data
-      :name: length-of-stay-data
+      :name: los
 
    .. rubric:: Description
       :name: description

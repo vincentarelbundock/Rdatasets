@@ -5,7 +5,7 @@
    ==================== ===============
 
    .. rubric:: SOWC Child Mortality Data.
-      :name: sowc-child-mortality-data.
+      :name: sowc_child_mortality
 
    .. rubric:: Description
       :name: description

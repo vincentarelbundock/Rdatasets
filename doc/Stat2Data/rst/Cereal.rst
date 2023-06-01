@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Nutrition Content of Breakfast Cereals
-      :name: nutrition-content-of-breakfast-cereals
+      :name: Cereal
 
    .. rubric:: Description
       :name: description

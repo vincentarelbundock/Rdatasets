@@ -6,7 +6,7 @@
 
    .. rubric:: Darwin's Heights of Cross- and Self-fertilized Zea May
       Pairs
-      :name: darwins-heights-of-cross--and-self-fertilized-zea-may-pairs
+      :name: ZeaMays
 
    .. rubric:: Description
       :name: description

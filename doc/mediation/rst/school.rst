@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: School-level data
-      :name: school-level-data
+      :name: school
 
    .. rubric:: Description
       :name: description

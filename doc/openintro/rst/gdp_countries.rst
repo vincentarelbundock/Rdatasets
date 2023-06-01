@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: GDP Countries Data.
-      :name: gdp-countries-data.
+      :name: gdp_countries
 
    .. rubric:: Description
       :name: description

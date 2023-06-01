@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Responses simulated by Rodriguez and Goldman
-      :name: responses-simulated-by-rodriguez-and-goldman
+      :name: s3bby
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Daily morning gold prices
-      :name: daily-morning-gold-prices
+      :name: gold
 
    .. rubric:: Description
       :name: description

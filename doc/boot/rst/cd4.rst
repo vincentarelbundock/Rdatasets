@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: CD4 Counts for HIV-Positive Patients
-      :name: cd4-counts-for-hiv-positive-patients
+      :name: cd4
 
    .. rubric:: Description
       :name: description

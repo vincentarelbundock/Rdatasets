@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: U.S. Presidents and Their Terms in Office
-      :name: u.s.-presidents-and-their-terms-in-office
+      :name: Presidents
 
    .. rubric:: Description
       :name: description

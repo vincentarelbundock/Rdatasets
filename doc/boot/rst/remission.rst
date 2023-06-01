@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Cancer Remission and Cell Activity
-      :name: cancer-remission-and-cell-activity
+      :name: remission
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: data from Section 1.9
-      :name: data-from-section-1.9
+      :name: alloauto
 
    .. rubric:: Description
       :name: description

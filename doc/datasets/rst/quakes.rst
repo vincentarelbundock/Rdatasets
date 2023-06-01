@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Locations of Earthquakes off Fiji
-      :name: locations-of-earthquakes-off-fiji
+      :name: quakes
 
    .. rubric:: Description
       :name: description

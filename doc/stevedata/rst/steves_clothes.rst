@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Steve's (Professional) Clothes, as of March 20, 2022
-      :name: steves-professional-clothes-as-of-march-20-2022
+      :name: steves_clothes
 
    .. rubric:: Description
       :name: description

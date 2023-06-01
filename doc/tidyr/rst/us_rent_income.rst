@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: US rent and income data
-      :name: us-rent-and-income-data
+      :name: us_rent_income
 
    .. rubric:: Description
       :name: description

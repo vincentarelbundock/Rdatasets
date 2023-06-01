@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Food Stamp Program Participation
-      :name: food-stamp-program-participation
+      :name: foodstamp
 
    .. rubric:: Description
       :name: description

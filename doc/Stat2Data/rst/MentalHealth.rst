@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Mental Health Admissions
-      :name: mental-health-admissions
+      :name: MentalHealth
 
    .. rubric:: Description
       :name: description

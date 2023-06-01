@@ -6,7 +6,7 @@
 
    .. rubric:: Data from A.-M. Guerry, "Essay on the Moral Statistics of
       France"
-      :name: data-from-a.-m.-guerry-essay-on-the-moral-statistics-of-france
+      :name: Guerry
 
    .. rubric:: Description
       :name: description

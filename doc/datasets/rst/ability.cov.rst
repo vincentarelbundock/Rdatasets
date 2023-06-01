@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Ability and Intelligence Tests
-      :name: ability-and-intelligence-tests
+      :name: ability.cov
 
    .. rubric:: Description
       :name: description

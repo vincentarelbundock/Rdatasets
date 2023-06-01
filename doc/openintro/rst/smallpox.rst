@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Smallpox vaccine results
-      :name: smallpox-vaccine-results
+      :name: smallpox
 
    .. rubric:: Description
       :name: description

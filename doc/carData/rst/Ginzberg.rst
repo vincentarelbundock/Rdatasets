@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Data on Depression
-      :name: data-on-depression
+      :name: Ginzberg
 
    .. rubric:: Description
       :name: description

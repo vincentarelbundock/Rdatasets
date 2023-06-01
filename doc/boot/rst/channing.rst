@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Channing House Data
-      :name: channing-house-data
+      :name: channing
 
    .. rubric:: Description
       :name: description

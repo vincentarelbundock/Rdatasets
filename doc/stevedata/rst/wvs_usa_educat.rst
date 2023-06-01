@@ -6,7 +6,7 @@
 
    .. rubric:: Education Categories for the United States in the World
       Values Survey
-      :name: education-categories-for-the-united-states-in-the-world-values-survey
+      :name: wvs_usa_educat
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Monthly Deaths from Lung Diseases in the UK
-      :name: monthly-deaths-from-lung-diseases-in-the-uk
+      :name: deaths
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Atmospheric carbon dioxide concentration over 800,000
       years
-      :name: atmospheric-carbon-dioxide-concentration-over-800000-years
+      :name: historic_co2
 
    .. rubric:: Description
       :name: description
@@ -20,7 +20,7 @@
 
    ::
 
-      data(historic_co2)
+      historic_co2
 
    .. rubric:: Format
       :name: format
@@ -42,14 +42,13 @@
       :name: source
 
    Mauna Loa data from
-   `NOAA <https://www.esrl.noaa.gov/gmd/ccgg/trends/data.html>`__. Ice
-   core data from Bereiter et al. 2015 via
-   `NOAA <https://www.ncdc.noaa.gov/paleo-search/study/17975>`__.
+   `NOAA <https://gml.noaa.gov/ccgg/trends/data.html>`__. Ice core data
+   from Bereiter et al. 2015 via
+   `NOAA <https://gml.noaa.gov/ccgg/trends/data.html>`__.
 
    .. rubric:: Examples
       :name: examples
 
    ::
 
-      data(historic_co2)
       head(historic_co2)

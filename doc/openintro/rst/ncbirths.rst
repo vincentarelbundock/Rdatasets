@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: North Carolina births, 1000 cases
-      :name: north-carolina-births-1000-cases
+      :name: ncbirths
 
    .. rubric:: Description
       :name: description

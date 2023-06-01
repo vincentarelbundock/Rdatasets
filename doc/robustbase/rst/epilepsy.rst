@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Epilepsy Attacks Data Set
-      :name: epilepsy-attacks-data-set
+      :name: epilepsy
 
    .. rubric:: Description
       :name: description

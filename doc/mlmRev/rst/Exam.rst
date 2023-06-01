@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Exam scores from inner London
-      :name: exam-scores-from-inner-london
+      :name: Exam
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Prices of Horses
-      :name: prices-of-horses
+      :name: HorsePrices
 
    .. rubric:: Description
       :name: description

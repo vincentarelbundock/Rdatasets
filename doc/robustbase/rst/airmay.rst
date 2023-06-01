@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Air Quality Data
-      :name: air-quality-data
+      :name: airmay
 
    .. rubric:: Description
       :name: description

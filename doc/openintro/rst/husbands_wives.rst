@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Great Britain: husband and wife pairs
-      :name: great-britain-husband-and-wife-pairs
+      :name: husbands_wives
 
    .. rubric:: Description
       :name: description

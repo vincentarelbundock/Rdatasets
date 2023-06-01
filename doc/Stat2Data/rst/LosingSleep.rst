@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Sleep Hours for Teenagers
-      :name: sleep-hours-for-teenagers
+      :name: LosingSleep
 
    .. rubric:: Description
       :name: description

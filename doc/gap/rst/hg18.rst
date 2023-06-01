@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Internal functions for gap
-      :name: internal-functions-for-gap
+      :name: gap-internal
 
    .. rubric:: Description
       :name: description

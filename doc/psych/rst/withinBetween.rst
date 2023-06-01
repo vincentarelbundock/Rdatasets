@@ -6,7 +6,7 @@
 
    .. rubric:: An example of the distinction between within group and
       between group correlations
-      :name: an-example-of-the-distinction-between-within-group-and-between-group-correlations
+      :name: withinBetween
 
    .. rubric:: Description
       :name: description

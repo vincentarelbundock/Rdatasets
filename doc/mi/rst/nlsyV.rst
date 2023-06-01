@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: National Longitudinal Survey of Youth Extract
-      :name: national-longitudinal-survey-of-youth-extract
+      :name: nlsyV
 
    .. rubric:: Description
       :name: description

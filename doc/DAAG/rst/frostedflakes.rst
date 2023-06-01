@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Frosted Flakes data
-      :name: frosted-flakes-data
+      :name: frostedflakes
 
    .. rubric:: Description
       :name: description

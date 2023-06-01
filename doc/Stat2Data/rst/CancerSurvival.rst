@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Survival Times for Different Cancers
-      :name: survival-times-for-different-cancers
+      :name: CancerSurvival
 
    .. rubric:: Description
       :name: description

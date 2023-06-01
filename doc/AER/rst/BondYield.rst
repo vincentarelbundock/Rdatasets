@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Bond Yield Data
-      :name: bond-yield-data
+      :name: BondYield
 
    .. rubric:: Description
       :name: description

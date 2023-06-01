@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Energy Output From Two Solar Arrays in San Francisco
-      :name: energy-output-from-two-solar-arrays-in-san-francisco
+      :name: solar
 
    .. rubric:: Description
       :name: description

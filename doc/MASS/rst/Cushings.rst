@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Diagnostic Tests on Patients with Cushing's Syndrome
-      :name: diagnostic-tests-on-patients-with-cushings-syndrome
+      :name: Cushings
 
    .. rubric:: Description
       :name: description

@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head><title>R: London Cycling Deaths</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>CyclingDeaths</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='CyclingDeaths'>
+London Cycling Deaths
+</h2>
+
+<h3>Description</h3>
+
+<p>A data frame containing the number of deaths of cyclists in London from 2005 through
+2012 in each fortnightly period.  Aberdein &amp; Spiegelhalter (2013)
+discuss these data in relation to the observation that six cyclists
+died in London between Nov. 5 and Nov. 13, 2013. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(CyclingDeaths)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 208 observations on the following 2 variables.
+</p>
+
+<dl>
+<dt><code>date</code></dt><dd><p>a Date</p>
+</dd>
+<dt><code>deaths</code></dt><dd><p>number of deaths, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data">https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data</a>,
+STATS 19 data, 2005-2012, using the files
+<code>Casualty0512.csv</code> and 
+<code>Accidents0512.csv</code>
+</p>
+
+
+<h3>References</h3>
+
+<p>Aberdein, Jody and Spiegelhalter, David (2013).
+Have London's roads become more dangerous for cyclists?
+<em>Significance</em>, 10(6), 46&ndash;48.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(CyclingDeaths)
+
+plot(deaths ~ date, data=CyclingDeaths, 
+  type="h", 
+	lwd=3, 
+	ylab="Number of deaths", 
+	axes=FALSE)
+axis(1, at=seq(as.Date('2005-01-01'), 
+               by='years', 
+               length.out=9), 
+     labels=2005:2013)
+axis(2, at=0:3)
+
+# make a one-way frequency table
+CyclingDeaths.tab &lt;- table(CyclingDeaths$deaths)
+
+gf &lt;- goodfit(CyclingDeaths.tab)
+gf
+summary(gf)
+
+rootogram(gf, xlab="Number of Deaths")
+distplot(CyclingDeaths.tab)
+
+# prob of 6 or more deaths in one fortnight
+lambda &lt;- gf$par$lambda
+ppois(5, lambda, lower.tail=FALSE)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Enrollments in Math Courses
-      :name: enrollments-in-math-courses
+      :name: MathEnrollment
 
    .. rubric:: Description
       :name: description

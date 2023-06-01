@@ -5,7 +5,7 @@
    == ===============
 
    .. rubric:: A simple simulated data set for calculating p-values
-      :name: a-simple-simulated-data-set-for-calculating-p-values
+      :name: ri
 
    .. rubric:: Description
       :name: description

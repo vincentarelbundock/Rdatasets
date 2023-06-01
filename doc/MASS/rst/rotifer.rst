@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Numbers of Rotifers by Fluid Density
-      :name: numbers-of-rotifers-by-fluid-density
+      :name: rotifer
 
    .. rubric:: Description
       :name: description

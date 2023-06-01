@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Tate Gallery modern artwork metadata
-      :name: tate-gallery-modern-artwork-metadata
+      :name: tate_text
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Defense of Undoing OCD Symptoms in Psychotherapy
-      :name: defense-of-undoing-ocd-symptoms-in-psychotherapy
+      :name: Undoing
 
    .. rubric:: Description
       :name: description

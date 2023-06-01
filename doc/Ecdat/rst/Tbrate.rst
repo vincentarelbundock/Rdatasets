@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Interest Rate, GDP and Inflation
-      :name: interest-rate-gdp-and-inflation
+      :name: Tbrate
 
    .. rubric:: Description
       :name: description

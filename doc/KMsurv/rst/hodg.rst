@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: data from Section 1.10
-      :name: data-from-section-1.10
+      :name: hodg
 
    .. rubric:: Description
       :name: description

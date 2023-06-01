@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: CO2 Readings in Hawaii
-      :name: co2-readings-in-hawaii
+      :name: CO2Hawaii
 
    .. rubric:: Description
       :name: description

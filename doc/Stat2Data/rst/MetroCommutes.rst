@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Commute Times
-      :name: commute-times
+      :name: MetroCommutes
 
    .. rubric:: Description
       :name: description

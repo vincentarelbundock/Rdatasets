@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: The Datasaurus Dozen
-      :name: the-datasaurus-dozen
+      :name: Datasaurus
 
    .. rubric:: Description
       :name: description
@@ -59,5 +59,4 @@
    Matejka, Justin and George Fitzmaurice. 2017. “Same Stats, Different
    Graphs: Generating Datasets with Varied Appearance and Identical
    Statistics through Simulated Annealing.” *ACM SIGCHI Conference on
-   Human Factors in Computing Systems*. *URL:*
-   https://www.autodesk.com/research/publications/same-stats-different-graphs
+   Human Factors in Computing Systems*.

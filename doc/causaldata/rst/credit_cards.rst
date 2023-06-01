@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Data on Taiwanese Credit Card Holders
-      :name: data-on-taiwanese-credit-card-holders
+      :name: credit_cards
 
    .. rubric:: Description
       :name: description

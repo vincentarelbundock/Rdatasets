@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Data from "Social Networks and the Decision to Insure"
-      :name: data-from-social-networks-and-the-decision-to-insure
+      :name: social_insure
 
    .. rubric:: Description
       :name: description

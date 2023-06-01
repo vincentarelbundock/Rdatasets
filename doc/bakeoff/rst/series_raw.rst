@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Data about each series aired in the UK (raw)
-      :name: data-about-each-series-aired-in-the-uk-raw
+      :name: series_raw
 
    .. rubric:: Description
       :name: description

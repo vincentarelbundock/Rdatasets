@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Root length measurements
-      :name: root-length-measurements
+      :name: secalonic
 
    .. rubric:: Description
       :name: description

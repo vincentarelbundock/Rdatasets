@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: US Macroeconomic Data (1959–1995, Baltagi)
-      :name: us-macroeconomic-data-19591995-baltagi
+      :name: USMacroB
 
    .. rubric:: Description
       :name: description

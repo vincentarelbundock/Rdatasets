@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: US finished motor gasoline product supplied.
-      :name: us-finished-motor-gasoline-product-supplied.
+      :name: gasoline
 
    .. rubric:: Description
       :name: description

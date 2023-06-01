@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Oscar winners, 1929 to 2018
-      :name: oscar-winners-1929-to-2018
+      :name: oscars
 
    .. rubric:: Description
       :name: description

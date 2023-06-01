@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Vehicle info from the EPA for 2012
-      :name: vehicle-info-from-the-epa-for-2012
+      :name: epa2012
 
    .. rubric:: Description
       :name: description

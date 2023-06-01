@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Pension Funds Data
-      :name: pension-funds-data
+      :name: pension
 
    .. rubric:: Description
       :name: description

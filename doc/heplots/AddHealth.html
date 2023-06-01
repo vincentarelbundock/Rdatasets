@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><title>R: Adolescent Health Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>AddHealth</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='AddHealth'>
+Adolescent Health Data
+</h2>
+
+<h3>Description</h3>
+
+<p>This data was taken from the National Longitudinal Study
+of Adolescent Health.  It is a cross-sectional sample
+of participants from grades 7&ndash;12,
+described and analyzed by Warne (2014).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("AddHealth")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 4344 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>grade</code></dt><dd><p>an ordered factor with levels <code>7</code> &lt; <code>8</code> &lt; <code>9</code> &lt; <code>10</code> &lt; <code>11</code> &lt; <code>12</code></p>
+</dd>
+<dt><code>depression</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>anxiety</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p><code>depression</code> is the response to the question
+&quot;In the last month, how often did you feel depressed or blue?&quot;
+</p>
+<p><code>anxiety</code> is the response to the question
+&quot;In the last month, how often did you have trouble relaxing?&quot;
+</p>
+<p>The responses for <code>depression</code> and <code>anxiety</code> were recorded on a
+5-point Likert scale, with
+categories 
+<code>0="Never", 1="Rarely", 2="Occasionally", 3="Often", 4="Every day"</code>
+</p>
+
+
+<h3>Source</h3>
+
+<p>Warne, R. T. (2014). A primer on Multivariate Analysis of Variance (MANOVA)
+for Behavioral Scientists.  <em>Practical Assessment, Research &amp; Evaluation</em>,
+19 (1).
+<a href="https://scholarworks.umass.edu/pare/vol19/iss1/17/">https://scholarworks.umass.edu/pare/vol19/iss1/17/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(AddHealth)
+# fit mlm
+AH.mod &lt;- lm(cbind(depression, anxiety) ~ grade, data=AddHealth)
+
+Anova(AH.mod)
+summary(Anova(AH.mod))
+
+heplot(AH.mod, hypotheses="grade.L", fill=c(TRUE, FALSE))
+</code></pre>
+
+
+</div>
+</body></html>

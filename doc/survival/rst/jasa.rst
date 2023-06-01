@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Stanford Heart Transplant data
-      :name: stanford-heart-transplant-data
+      :name: heart
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Simple Data for a Simple Model of Individual Voter
       Turnout (ANES, 1984)
-      :name: simple-data-for-a-simple-model-of-individual-voter-turnout-anes-1984
+      :name: anes_vote84
 
    .. rubric:: Description
       :name: description

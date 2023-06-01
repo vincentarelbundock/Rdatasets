@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Improve Chances of Getting a Tip?
-      :name: improve-chances-of-getting-a-tip
+      :name: TipJoke
 
    .. rubric:: Description
       :name: description

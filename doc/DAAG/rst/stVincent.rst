@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Averages by block of yields for the St. Vincent Corn data
-      :name: averages-by-block-of-yields-for-the-st.-vincent-corn-data
+      :name: stVincent
 
    .. rubric:: Description
       :name: description

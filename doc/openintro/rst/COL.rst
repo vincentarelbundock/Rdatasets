@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: OpenIntro Statistics colors
-      :name: openintro-statistics-colors
+      :name: COL
 
    .. rubric:: Description
       :name: description

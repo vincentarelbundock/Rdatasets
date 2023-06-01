@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Contraction of heart muscle sections
-      :name: contraction-of-heart-muscle-sections
+      :name: Muscle
 
    .. rubric:: Description
       :name: description

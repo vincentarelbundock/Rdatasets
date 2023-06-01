@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Drunk Driving Laws and Traffic Deaths
-      :name: drunk-driving-laws-and-traffic-deaths
+      :name: Fatality
 
    .. rubric:: Description
       :name: description

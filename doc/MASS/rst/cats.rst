@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Anatomical Data from Domestic Cats
-      :name: anatomical-data-from-domestic-cats
+      :name: cats
 
    .. rubric:: Description
       :name: description

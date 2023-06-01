@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: The Child Health and Development Studies
-      :name: the-child-health-and-development-studies
+      :name: babies
 
    .. rubric:: Description
       :name: description

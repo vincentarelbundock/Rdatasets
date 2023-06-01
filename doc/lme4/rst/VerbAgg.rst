@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Verbal Aggression item responses
-      :name: verbal-aggression-item-responses
+      :name: VerbAgg
 
    .. rubric:: Description
       :name: description
@@ -54,8 +54,10 @@
    .. rubric:: Source
       :name: source
 
-   Data available from the UC Berkeley BEAR Center at
-   https://old.bear.berkeley.edu/page/materials-explanatory-item-response-models
+   Data originally from the UC Berkeley BEAR Center; original link is
+   available at
+   https://web.archive.org/web/20221128003829/https://old.bear.berkeley.edu/page/materials-explanatory-item-response-models,
+   but the data are no longer accessible there.
 
    .. rubric:: References
       :name: references

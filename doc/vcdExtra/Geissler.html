@@ -1,0 +1,119 @@
+<!DOCTYPE html><html><head><title>R: Geissler's Data on the Human Sex Ratio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Geissler</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Geissler'>Geissler's Data on the Human Sex Ratio</h2>
+
+<h3>Description</h3>
+
+<p>Geissler (1889) published data on the distributions of boys and girls in families in 
+Saxony, collected for the period 1876-1885. The <code>Geissler</code> data tabulates 
+the family composition of 991,958 families by the number of boys and girls
+listed in the table supplied by Edwards (1958, Table 1).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Geissler)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 90 observations on the following 4 variables.  The rows represent the
+non-NA entries in Edwards' table.
+</p>
+
+<dl>
+<dt><code>boys</code></dt><dd><p>number of boys in the family, <code>0:12</code></p>
+</dd>
+<dt><code>girls</code></dt><dd><p>number of girls in the family, <code>0:12</code></p>
+</dd>
+<dt><code>size</code></dt><dd><p>family size: <code>boys+girls</code></p>
+</dd>
+<dt><code>Freq</code></dt><dd><p>number of families with this sex composition</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data on family composition was available because, on the birth of a child,
+the parents had to state the sex of all their children on the birth certificate.
+These family records are not necessarily independent, because a given family
+may have had several children during this 10 year period, included as 
+multiple records.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Edwards, A. W. F. (1958).
+An Analysis Of Geissler's Data On The Human Sex Ratio.
+<em>Annals of Human Genetics</em>, 
+23, 6-15.
+</p>
+
+
+<h3>References</h3>
+
+<p>Friendly, M. and Meyer, D. (2016). 
+<em>Discrete Data Analysis with R: Visualization and Modeling Techniques for Categorical and Count Data</em>. 
+Boca Raton, FL: Chapman &amp; Hall/CRC. <a href="http://ddar.datavis.ca">http://ddar.datavis.ca</a>.
+</p>
+<p>Geissler, A. (1889).
+<em>Beitrage zur Frage des Geschlechts verhaltnisses der Geborenen</em>
+Z. K. Sachsischen Statistischen Bureaus, 35, n.p.
+</p>
+<p>Lindsey, J. K. &amp; Altham, P. M. E. (1998). 
+Analysis of the human sex ratio by using overdispersion models.
+<em>Journal of the Royal Statistical Society: Series C (Applied Statistics)</em>, 
+47, 149-157. 
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Saxony</code>, containing the data for families of size 12.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Geissler)
+str(Geissler)
+
+# reproduce Saxony data, families of size 12
+Saxony12 &lt;- subset(Geissler, size==12, select=c(boys, Freq))
+rownames(Saxony12)&lt;-NULL
+
+# make a 1-way table
+xtabs(Freq~boys, Saxony12)
+
+# extract data for other family sizes
+Saxony11 &lt;- subset(Geissler, size==11, select=c(boys, Freq))
+rownames(Saxony11)&lt;-NULL
+
+Saxony10 &lt;- subset(Geissler, size==10, select=c(boys, Freq))
+rownames(Saxony10)&lt;-NULL
+
+</code></pre>
+
+
+</div>
+</body></html>

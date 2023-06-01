@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Weight gain for different methionine sources
-      :name: weight-gain-for-different-methionine-sources
+      :name: methionine
 
    .. rubric:: Description
       :name: description

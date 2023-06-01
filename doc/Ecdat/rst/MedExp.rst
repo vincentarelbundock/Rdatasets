@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Structure of Demand for Medical Care
-      :name: structure-of-demand-for-medical-care
+      :name: MedExp
 
    .. rubric:: Description
       :name: description

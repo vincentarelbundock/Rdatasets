@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Daycare fines
-      :name: daycare-fines
+      :name: daycare_fines
 
    .. rubric:: Description
       :name: description

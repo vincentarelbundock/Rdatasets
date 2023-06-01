@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Simulated data sets, drawn from a normal distribution.
-      :name: simulated-data-sets-drawn-from-a-normal-distribution.
+      :name: simulated_normal
 
    .. rubric:: Description
       :name: description

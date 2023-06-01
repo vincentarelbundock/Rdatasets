@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Land Area and Mammal Species
-      :name: land-area-and-mammal-species
+      :name: SpeciesArea
 
    .. rubric:: Description
       :name: description

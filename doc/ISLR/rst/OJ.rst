@@ -5,7 +5,7 @@
    == ===============
 
    .. rubric:: Orange Juice Data
-      :name: orange-juice-data
+      :name: OJ
 
    .. rubric:: Description
       :name: description

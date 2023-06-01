@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Complete survey data from 1977 to 1989.
-      :name: complete-survey-data-from-1977-to-1989.
+      :name: complete_old
 
    .. rubric:: Description
       :name: description

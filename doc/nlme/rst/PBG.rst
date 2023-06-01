@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Effect of Phenylbiguanide on Blood Pressure
-      :name: effect-of-phenylbiguanide-on-blood-pressure
+      :name: PBG
 
    .. rubric:: Description
       :name: description

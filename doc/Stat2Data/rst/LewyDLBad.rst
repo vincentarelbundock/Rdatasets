@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Lewy Bodies and Dimentia with Alzheimer's
-      :name: lewy-bodies-and-dimentia-with-alzheimers
+      :name: LewyDLBad
 
    .. rubric:: Description
       :name: description

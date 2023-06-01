@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: German Socio-Economic Panel 1994–2002
-      :name: german-socio-economic-panel-19942002
+      :name: GSOEP9402
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Response of Migratory Geese to Helicopter Overflights
-      :name: response-of-migratory-geese-to-helicopter-overflights
+      :name: FlightResponse
 
    .. rubric:: Description
       :name: description

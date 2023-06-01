@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Population figures for Australian States and Territories
-      :name: population-figures-for-australian-states-and-territories
+      :name: austpop
 
    .. rubric:: Description
       :name: description

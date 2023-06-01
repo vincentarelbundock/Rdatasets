@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Human Freedom Index
-      :name: human-freedom-index
+      :name: hfi
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: UK Manufacturing Inflation Data
-      :name: uk-manufacturing-inflation-data
+      :name: UKInflation
 
    .. rubric:: Description
       :name: description

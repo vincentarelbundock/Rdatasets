@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Ethanol Treatment for Tumors Experiment
-      :name: ethanol-treatment-for-tumors-experiment
+      :name: ethanol
 
    .. rubric:: Description
       :name: description

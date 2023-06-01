@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Film Data from Leonard Maltin's Guide
-      :name: film-data-from-leonard-maltins-guide
+      :name: Film
 
    .. rubric:: Description
       :name: description

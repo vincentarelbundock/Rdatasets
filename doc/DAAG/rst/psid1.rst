@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Labour Training Evaluation Data
-      :name: labour-training-evaluation-data
+      :name: nswpsid1
 
    .. rubric:: Description
       :name: description

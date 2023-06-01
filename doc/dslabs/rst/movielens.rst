@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Movie ratings
-      :name: movie-ratings
+      :name: movielens
 
    .. rubric:: Description
       :name: description
@@ -17,7 +17,7 @@
 
    ::
 
-      data(movielens)
+      movielens
 
    .. rubric:: Format
       :name: format
@@ -44,7 +44,7 @@
    .. rubric:: Source
       :name: source
 
-   http://files.grouplens.org/datasets/movielens/ml-latest-small.zip
+   https://files.grouplens.org/datasets/movielens/ml-latest-small.zip
 
    .. rubric:: References
       :name: references
@@ -52,12 +52,11 @@
    F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens
    Datasets: History and Context. ACM Transactions on Interactive
    Intelligent Systems (TiiS) 5, 4, Article 19 (December 2015), 19
-   pages. DOI=http://dx.doi.org/10.1145/2827872
+   pages. DOI=https://dx.doi.org/10.1145/2827872
 
    .. rubric:: Examples
       :name: examples
 
    ::
 
-      data(movielens)
       head(movielens)

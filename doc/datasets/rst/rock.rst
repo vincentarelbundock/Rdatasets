@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Measurements on Petroleum Rock Samples
-      :name: measurements-on-petroleum-rock-samples
+      :name: rock
 
    .. rubric:: Description
       :name: description

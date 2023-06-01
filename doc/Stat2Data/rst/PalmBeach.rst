@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Palm Beach Butterfly Ballot
-      :name: palm-beach-butterfly-ballot
+      :name: PalmBeach
 
    .. rubric:: Description
       :name: description

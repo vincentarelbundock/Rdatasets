@@ -6,7 +6,7 @@
 
    .. rubric:: Sample Turnout and Demographic Data from the 2000 Current
       Population Survey
-      :name: sample-turnout-and-demographic-data-from-the-2000-current-population-survey
+      :name: voteincome
 
    .. rubric:: Description
       :name: description

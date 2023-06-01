@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: NFL Standings for 2007 Regular Season
-      :name: nfl-standings-for-2007-regular-season
+      :name: NFL2007Standings
 
    .. rubric:: Description
       :name: description

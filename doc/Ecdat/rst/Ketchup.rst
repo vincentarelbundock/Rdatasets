@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Choice of Brand for Ketchup
-      :name: choice-of-brand-for-ketchup
+      :name: Ketchup
 
    .. rubric:: Description
       :name: description

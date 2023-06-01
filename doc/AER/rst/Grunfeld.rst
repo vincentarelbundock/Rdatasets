@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Grunfeld's Investment Data
-      :name: grunfelds-investment-data
+      :name: Grunfeld
 
    .. rubric:: Description
       :name: description

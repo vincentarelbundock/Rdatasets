@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: BCG Vaccine Data
-      :name: bcg-vaccine-data
+      :name: BCG
 
    .. rubric:: Description
       :name: description

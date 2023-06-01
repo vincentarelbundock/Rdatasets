@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: CO2 Readings at the South Pole
-      :name: co2-readings-at-the-south-pole
+      :name: CO2SouthPole
 
    .. rubric:: Description
       :name: description

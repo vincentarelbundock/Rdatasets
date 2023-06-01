@@ -5,7 +5,7 @@
    ==================== ===============
 
    .. rubric:: Abnormal prothrombin levels in liver cirrhosis
-      :name: abnormal-prothrombin-levels-in-liver-cirrhosis
+      :name: Liver+20cirrhosis+20data
 
    .. rubric:: Description
       :name: description

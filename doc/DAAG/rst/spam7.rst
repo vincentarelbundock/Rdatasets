@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Spam E-mail Data
-      :name: spam-e-mail-data
+      :name: spam7
 
    .. rubric:: Description
       :name: description

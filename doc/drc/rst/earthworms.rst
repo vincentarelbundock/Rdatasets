@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Earthworm toxicity test
-      :name: earthworm-toxicity-test
+      :name: earthworms
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Soldering of Components on Printed-Circuit Boards
-      :name: soldering-of-components-on-printed-circuit-boards
+      :name: solder.balance
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Major League Baseball Teams Data.
-      :name: major-league-baseball-teams-data.
+      :name: mlb_teams
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Breakage Angle of Chocolate Cakes
-      :name: breakage-angle-of-chocolate-cakes
+      :name: cake
 
    .. rubric:: Description
       :name: description

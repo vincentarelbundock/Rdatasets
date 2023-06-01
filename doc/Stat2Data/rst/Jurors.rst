@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Reporting Rates for Jurors
-      :name: reporting-rates-for-jurors
+      :name: Jurors
 
    .. rubric:: Description
       :name: description

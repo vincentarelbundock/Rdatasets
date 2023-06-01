@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Visits to Lake Somerville
-      :name: visits-to-lake-somerville
+      :name: Somerville
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Pharmacokinetics of tetracycline
-      :name: pharmacokinetics-of-tetracycline
+      :name: Tetracycline2
 
    .. rubric:: Description
       :name: description

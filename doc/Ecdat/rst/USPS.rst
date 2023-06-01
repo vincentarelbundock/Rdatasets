@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: US Postal Service
-      :name: us-postal-service
+      :name: USPS
 
    .. rubric:: Description
       :name: description

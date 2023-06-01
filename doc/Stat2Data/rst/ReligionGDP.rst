@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Religion and GDP for Countries
-      :name: religion-and-gdp-for-countries
+      :name: ReligionGDP
 
    .. rubric:: Description
       :name: description

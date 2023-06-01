@@ -5,7 +5,7 @@
    ===================== ===============
 
    .. rubric:: Global cooling from a nuclear war
-      :name: global-cooling-from-a-nuclear-war
+      :name: coolingFromNuclearWar
 
    .. rubric:: Description
       :name: description

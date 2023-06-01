@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: The Individual Correlates of the Trump Vote in 2016
-      :name: the-individual-correlates-of-the-trump-vote-in-2016
+      :name: TV16
 
    .. rubric:: Description
       :name: description

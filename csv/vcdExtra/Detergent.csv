@@ -1,0 +1,25 @@
+"","Temperature","M_User","Preference","Water_softness","Freq"
+"1","High","Yes","Brand X","Soft",19
+"2","Low","Yes","Brand X","Soft",57
+"3","High","No","Brand X","Soft",29
+"4","Low","No","Brand X","Soft",63
+"5","High","Yes","Brand M","Soft",29
+"6","Low","Yes","Brand M","Soft",49
+"7","High","No","Brand M","Soft",27
+"8","Low","No","Brand M","Soft",53
+"9","High","Yes","Brand X","Medium",23
+"10","Low","Yes","Brand X","Medium",47
+"11","High","No","Brand X","Medium",33
+"12","Low","No","Brand X","Medium",66
+"13","High","Yes","Brand M","Medium",47
+"14","Low","Yes","Brand M","Medium",55
+"15","High","No","Brand M","Medium",23
+"16","Low","No","Brand M","Medium",50
+"17","High","Yes","Brand X","Hard",24
+"18","Low","Yes","Brand X","Hard",37
+"19","High","No","Brand X","Hard",42
+"20","Low","No","Brand X","Hard",68
+"21","High","Yes","Brand M","Hard",43
+"22","Low","Yes","Brand M","Hard",52
+"23","High","No","Brand M","Hard",30
+"24","Low","No","Brand M","Hard",42

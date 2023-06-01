@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: NCI 60 Data
-      :name: nci-60-data
+      :name: NCI60
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Completed construction in the US in 2018
-      :name: completed-construction-in-the-us-in-2018
+      :name: construction
 
    .. rubric:: Description
       :name: description

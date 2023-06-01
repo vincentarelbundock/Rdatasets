@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Survival of Passengers on the Titanic
-      :name: survival-of-passengers-on-the-titanic
+      :name: TitanicSurvival
 
    .. rubric:: Description
       :name: description

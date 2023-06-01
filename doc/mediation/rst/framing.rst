@@ -6,7 +6,7 @@
 
    .. rubric:: Brader, Valentino and Suhay (2008) Framing Experiment
       Data
-      :name: brader-valentino-and-suhay-2008-framing-experiment-data
+      :name: framing
 
    .. rubric:: Description
       :name: description

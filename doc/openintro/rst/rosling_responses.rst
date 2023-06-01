@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: Sample Responses to Two Public Health Questions
-      :name: sample-responses-to-two-public-health-questions
+      :name: rosling_responses
 
    .. rubric:: Description
       :name: description

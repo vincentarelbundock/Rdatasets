@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Kidney catheter data
-      :name: kidney-catheter-data
+      :name: kidney
 
    .. rubric:: Description
       :name: description

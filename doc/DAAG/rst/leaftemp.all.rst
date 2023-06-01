@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Full Leaf and Air Temperature Data Set
-      :name: full-leaf-and-air-temperature-data-set
+      :name: leaftemp.all
 
    .. rubric:: Description
       :name: description

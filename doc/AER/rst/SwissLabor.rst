@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Swiss Labor Market Participation Data
-      :name: swiss-labor-market-participation-data
+      :name: SwissLabor
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: data from Exercise 7.7, p223
-      :name: data-from-exercise-7.7-p223
+      :name: bnct
 
    .. rubric:: Description
       :name: description

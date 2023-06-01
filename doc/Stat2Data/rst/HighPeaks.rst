@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Characteristics of Adirondack Hiking Trails
-      :name: characteristics-of-adirondack-hiking-trails
+      :name: HighPeaks
 
    .. rubric:: Description
       :name: description

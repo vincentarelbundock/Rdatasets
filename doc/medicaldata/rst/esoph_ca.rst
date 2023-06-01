@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: esoph_ca: Esophageal Cancer dataset
-      :name: esoph_ca-esophageal-cancer-dataset
+      :name: esoph_ca
 
    .. rubric:: Description
       :name: description

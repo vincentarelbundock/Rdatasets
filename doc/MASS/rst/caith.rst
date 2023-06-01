@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Colours of Eyes and Hair of People in Caithness
-      :name: colours-of-eyes-and-hair-of-people-in-caithness
+      :name: caith
 
    .. rubric:: Description
       :name: description

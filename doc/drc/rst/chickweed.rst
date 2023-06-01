@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Germination of common chickweed (*Stellaria media*)
-      :name: germination-of-common-chickweed-stellaria-media
+      :name: chickweed
 
    .. rubric:: Description
       :name: description

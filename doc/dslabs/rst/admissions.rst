@@ -6,7 +6,7 @@
 
    .. rubric:: Gender bias among graduate school admissions to UC
       Berkeley.
-      :name: gender-bias-among-graduate-school-admissions-to-uc-berkeley.
+      :name: admissions
 
    .. rubric:: Description
       :name: description
@@ -19,7 +19,7 @@
 
    ::
 
-      data(admissions)
+      admissions
 
    .. rubric:: Format
       :name: format
@@ -47,5 +47,4 @@
 
    ::
 
-      data(admissions)
       admissions

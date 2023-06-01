@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Contraceptive use in Bangladesh
-      :name: contraceptive-use-in-bangladesh
+      :name: Contraception
 
    .. rubric:: Description
       :name: description

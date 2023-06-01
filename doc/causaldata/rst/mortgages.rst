@@ -6,7 +6,7 @@
 
    .. rubric:: Data from "How do Mortgage Subsidies Affect Home
       Ownership? Evidence from the Mid-Century GI Bills"
-      :name: data-from-how-do-mortgage-subsidies-affect-home-ownership-evidence-from-the-mid-century-gi-bills
+      :name: mortgages
 
    .. rubric:: Description
       :name: description

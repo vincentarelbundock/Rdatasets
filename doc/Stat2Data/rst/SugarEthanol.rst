@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Effects of Oxygen on Sugar Metabolism
-      :name: effects-of-oxygen-on-sugar-metabolism
+      :name: SugarEthanol
 
    .. rubric:: Description
       :name: description

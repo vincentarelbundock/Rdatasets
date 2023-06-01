@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Simulated data sets for different types of outliers
-      :name: simulated-data-sets-for-different-types-of-outliers
+      :name: outliers
 
    .. rubric:: Description
       :name: description

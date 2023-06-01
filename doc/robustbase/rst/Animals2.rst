@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Brain and Body Weights for 65 Species of Land Animals
-      :name: brain-and-body-weights-for-65-species-of-land-animals
+      :name: Animals2
 
    .. rubric:: Description
       :name: description

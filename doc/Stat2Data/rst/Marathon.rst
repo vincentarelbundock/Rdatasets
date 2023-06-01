@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Daily Training for a Marathon Runner
-      :name: daily-training-for-a-marathon-runner
+      :name: Marathon
 
    .. rubric:: Description
       :name: description

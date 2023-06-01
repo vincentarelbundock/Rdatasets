@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Hypothetical (Fake) Data on Academic Performance
-      :name: hypothetical-fake-data-on-academic-performance
+      :name: fakeAPI
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Repeat Victimization Data
-      :name: repeat-victimization-data
+      :name: RepVict
 
    .. rubric:: Description
       :name: description

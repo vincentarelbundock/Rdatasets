@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Nodal Involvement in Prostate Cancer
-      :name: nodal-involvement-in-prostate-cancer
+      :name: nodal
 
    .. rubric:: Description
       :name: description

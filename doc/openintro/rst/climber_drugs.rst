@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Climber Drugs Data.
-      :name: climber-drugs-data.
+      :name: climber_drugs
 
    .. rubric:: Description
       :name: description

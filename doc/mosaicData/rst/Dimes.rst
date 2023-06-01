@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Weight of dimes
-      :name: weight-of-dimes
+      :name: Dimes
 
    .. rubric:: Description
       :name: description

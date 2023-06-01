@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Sales Data with Leading Indicator
-      :name: sales-data-with-leading-indicator
+      :name: BJsales
 
    .. rubric:: Description
       :name: description

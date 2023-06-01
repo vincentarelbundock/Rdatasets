@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Davis's Data on Drive for Thinness
-      :name: daviss-data-on-drive-for-thinness
+      :name: DavisThin
 
    .. rubric:: Description
       :name: description

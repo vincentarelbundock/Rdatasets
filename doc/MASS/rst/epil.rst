@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Seizure Counts for Epileptics
-      :name: seizure-counts-for-epileptics
+      :name: epil
 
    .. rubric:: Description
       :name: description
@@ -74,8 +74,10 @@
 
    ::
 
+      ## IGNORE_RDIFF_BEGIN
       summary(glm(y ~ lbase*trt + lage + V4, family = poisson,
-                  data = epil), cor = FALSE)
+                  data = epil), correlation = FALSE)
+      ## IGNORE_RDIFF_END
       epil2 <- epil[epil$period == 1, ]
       epil2["period"] <- rep(0, 59); epil2["y"] <- epil2["base"]
       epil["time"] <- 1; epil2["time"] <- 4
@@ -91,7 +93,7 @@
           dimnames = list(NULL, c("placebo-base", "drug-placebo")))
       ## IGNORE_RDIFF_BEGIN
       summary(glm(y ~ pred + factor(subject) + offset(log(time)),
-                  family = poisson, data = epil3), cor = FALSE)
+                  family = poisson, data = epil3), correlation = FALSE)
       ## IGNORE_RDIFF_END
 
       summary(glmmPQL(y ~ lbase*trt + lage + V4,

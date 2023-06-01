@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Assay of serum free light chain for 7874 subjects.
-      :name: assay-of-serum-free-light-chain-for-7874-subjects.
+      :name: flchain
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Bollen's Data on Industrialization and Political
       Democracy
-      :name: bollens-data-on-industrialization-and-political-democracy
+      :name: Bollen
 
    .. rubric:: Description
       :name: description

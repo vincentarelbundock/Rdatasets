@@ -7,7 +7,7 @@
    .. rubric:: Mendel's F2 trifactorial data for seed shape (A: round or
       wrinkled), cotyledon color (B: albumen yellow or green), and seed
       coat color (C: grey-brown or white)
-      :name: mendels-f2-trifactorial-data-for-seed-shape-a-round-or-wrinkled-cotyledon-color-b-albumen-yellow-or-green-and-seed-coat-color-c-grey-brown-or-white
+      :name: mendelABC
 
    .. rubric:: Description
       :name: description

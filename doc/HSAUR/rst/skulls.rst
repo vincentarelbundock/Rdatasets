@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Egyptian Skulls
-      :name: egyptian-skulls
+      :name: skulls
 
    .. rubric:: Description
       :name: description

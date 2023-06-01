@@ -6,7 +6,7 @@
 
    .. rubric:: Example data from Gleser, Cronbach and Rajaratnam (1965)
       to show basic principles of generalizability theory.
-      :name: example-data-from-gleser-cronbach-and-rajaratnam-1965-to-show-basic-principles-of-generalizability-theory.
+      :name: Gleser
 
    .. rubric:: Description
       :name: description

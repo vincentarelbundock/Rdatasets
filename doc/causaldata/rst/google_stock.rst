@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Google Stock Data
-      :name: google-stock-data
+      :name: google_stock
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Southern Oscillation Index Data
-      :name: southern-oscillation-index-data
+      :name: bomsoi
 
    .. rubric:: Description
       :name: description

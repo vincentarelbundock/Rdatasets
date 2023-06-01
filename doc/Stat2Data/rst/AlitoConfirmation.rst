@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: US Senate Votes on Samuel Alito for the Supreme Court
-      :name: us-senate-votes-on-samuel-alito-for-the-supreme-court
+      :name: AlitoConfirmation
 
    .. rubric:: Description
       :name: description

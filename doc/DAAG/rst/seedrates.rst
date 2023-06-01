@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Barley Seeding Rate Data
-      :name: barley-seeding-rate-data
+      :name: seedrates
 
    .. rubric:: Description
       :name: description

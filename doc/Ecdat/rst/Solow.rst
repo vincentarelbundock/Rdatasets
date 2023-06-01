@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Solow's Technological Change Data
-      :name: solows-technological-change-data
+      :name: Solow
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Ecological Factors in Farm Management
-      :name: ecological-factors-in-farm-management
+      :name: farms
 
    .. rubric:: Description
       :name: description

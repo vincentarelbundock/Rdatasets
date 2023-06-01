@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Kershaw Pitch Data
-      :name: kershaw-pitch-data
+      :name: Kershaw
 
    .. rubric:: Description
       :name: description

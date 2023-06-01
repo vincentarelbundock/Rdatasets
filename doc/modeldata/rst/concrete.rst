@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Compressive strength of concrete mixtures
-      :name: compressive-strength-of-concrete-mixtures
+      :name: concrete
 
    .. rubric:: Description
       :name: description

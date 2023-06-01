@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Student Teacher Achievement Ratio (STAR) project data
-      :name: student-teacher-achievement-ratio-star-project-data
+      :name: star
 
    .. rubric:: Description
       :name: description

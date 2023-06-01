@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Space Shuttle Autolander Problem
-      :name: space-shuttle-autolander-problem
+      :name: shuttle
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Monthly Interest Rates
-      :name: monthly-interest-rates
+      :name: Irates
 
    .. rubric:: Description
       :name: description

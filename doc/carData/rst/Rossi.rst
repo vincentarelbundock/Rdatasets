@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Rossi et al.'s Criminal Recidivism Data
-      :name: rossi-et-al.s-criminal-recidivism-data
+      :name: Rossi
 
    .. rubric:: Description
       :name: description

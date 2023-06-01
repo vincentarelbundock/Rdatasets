@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Fake Data on Happiness
-      :name: fake-data-on-happiness
+      :name: fakeHappiness
 
    .. rubric:: Description
       :name: description

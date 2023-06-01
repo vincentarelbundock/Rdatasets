@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Recreation Demand Data
-      :name: recreation-demand-data
+      :name: RecreationDemand
 
    .. rubric:: Description
       :name: description

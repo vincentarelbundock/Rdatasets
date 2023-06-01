@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: RAND Health Insurance Experiment
-      :name: rand-health-insurance-experiment
+      :name: RandHIE
 
    .. rubric:: Description
       :name: description

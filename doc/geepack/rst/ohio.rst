@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Ohio Children Wheeze Status
-      :name: ohio-children-wheeze-status
+      :name: ohio
 
    .. rubric:: Description
       :name: description

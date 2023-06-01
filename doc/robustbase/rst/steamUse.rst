@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Steam Usage Data (Excerpt)
-      :name: steam-usage-data-excerpt
+      :name: steamUse
 
    .. rubric:: Description
       :name: description

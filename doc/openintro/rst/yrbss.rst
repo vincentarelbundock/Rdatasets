@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Youth Risk Behavior Surveillance System (YRBSS)
-      :name: youth-risk-behavior-surveillance-system-yrbss
+      :name: yrbss
 
    .. rubric:: Description
       :name: description

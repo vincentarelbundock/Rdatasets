@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Chemical Composition of Pottery
-      :name: chemical-composition-of-pottery
+      :name: Pottery
 
    .. rubric:: Description
       :name: description

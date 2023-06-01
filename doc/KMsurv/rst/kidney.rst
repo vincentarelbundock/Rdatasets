@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: data from Section 1.4
-      :name: data-from-section-1.4
+      :name: kidney
 
    .. rubric:: Description
       :name: description

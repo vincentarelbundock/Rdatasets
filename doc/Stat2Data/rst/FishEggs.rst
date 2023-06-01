@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Fertility of Fish Eggs
-      :name: fertility-of-fish-eggs
+      :name: FishEggs
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Prevention of Gastointestinal Damages
-      :name: prevention-of-gastointestinal-damages
+      :name: Lanza
 
    .. rubric:: Description
       :name: description

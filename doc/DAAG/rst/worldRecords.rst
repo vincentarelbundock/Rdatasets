@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Record times for track and road races, at August 9th 2006
-      :name: record-times-for-track-and-road-races-at-august-9th-2006
+      :name: worldRecords
 
    .. rubric:: Description
       :name: description

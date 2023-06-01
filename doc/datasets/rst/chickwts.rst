@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Chicken Weights by Feed Type
-      :name: chicken-weights-by-feed-type
+      :name: chickwts
 
    .. rubric:: Description
       :name: description

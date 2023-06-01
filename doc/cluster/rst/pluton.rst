@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Isotopic Composition Plutonium Batches
-      :name: isotopic-composition-plutonium-batches
+      :name: pluton
 
    .. rubric:: Description
       :name: description

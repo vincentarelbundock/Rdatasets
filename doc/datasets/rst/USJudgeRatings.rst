@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Lawyers' Ratings of State Judges in the US Superior Court
-      :name: lawyers-ratings-of-state-judges-in-the-us-superior-court
+      :name: USJudgeRatings
 
    .. rubric:: Description
       :name: description

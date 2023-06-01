@@ -6,7 +6,7 @@
 
    .. rubric:: Cost Function of Electricity Producers (1955, Nerlove
       Data)
-      :name: cost-function-of-electricity-producers-1955-nerlove-data
+      :name: Electricity1955
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Bakers (raw)
-      :name: bakers-raw
+      :name: bakers_raw
 
    .. rubric:: Description
       :name: description

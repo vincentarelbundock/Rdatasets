@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Housing Values in Suburbs of Boston
-      :name: housing-values-in-suburbs-of-boston
+      :name: Boston
 
    .. rubric:: Description
       :name: description

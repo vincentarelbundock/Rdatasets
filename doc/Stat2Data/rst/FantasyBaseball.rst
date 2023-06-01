@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Selection Times in a Fantasy Baseball Draft
-      :name: selection-times-in-a-fantasy-baseball-draft
+      :name: FantasyBaseball
 
    .. rubric:: Description
       :name: description

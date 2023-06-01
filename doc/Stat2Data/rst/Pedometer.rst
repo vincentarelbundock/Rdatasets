@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Pedometer Walking Data
-      :name: pedometer-walking-data
+      :name: Pedometer
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Education Expenditure Data
-      :name: education-expenditure-data
+      :name: education
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Price of US Stamps
-      :name: price-of-us-stamps
+      :name: USstamps
 
    .. rubric:: Description
       :name: description

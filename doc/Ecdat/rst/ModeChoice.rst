@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Data to Study Travel Mode Choice
-      :name: data-to-study-travel-mode-choice
+      :name: ModeChoice
 
    .. rubric:: Description
       :name: description

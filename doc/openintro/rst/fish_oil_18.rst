@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Findings on n-3 Fatty Acid Supplement Health Benefits
-      :name: findings-on-n-3-fatty-acid-supplement-health-benefits
+      :name: fish_oil_18
 
    .. rubric:: Description
       :name: description

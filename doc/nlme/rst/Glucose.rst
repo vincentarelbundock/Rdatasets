@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Glucose levels over time
-      :name: glucose-levels-over-time
+      :name: Glucose
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Panel Survey of Income Dynamics
-      :name: panel-survey-of-income-dynamics
+      :name: PSID
 
    .. rubric:: Description
       :name: description

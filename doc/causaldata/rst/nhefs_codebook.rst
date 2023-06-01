@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: NHEFS Codebook
-      :name: nhefs-codebook
+      :name: nhefs_codebook
 
    .. rubric:: Description
       :name: description

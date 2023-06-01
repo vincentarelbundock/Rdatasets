@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Customer churn data
-      :name: customer-churn-data
+      :name: mlc_churn
 
    .. rubric:: Description
       :name: description

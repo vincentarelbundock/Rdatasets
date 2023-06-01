@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Body Temperature Series of Two Beavers
-      :name: body-temperature-series-of-two-beavers
+      :name: beavers
 
    .. rubric:: Description
       :name: description

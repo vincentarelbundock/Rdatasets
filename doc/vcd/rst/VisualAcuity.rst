@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Visual Acuity in Left and Right Eyes
-      :name: visual-acuity-in-left-and-right-eyes
+      :name: VisualAcuity
 
    .. rubric:: Description
       :name: description

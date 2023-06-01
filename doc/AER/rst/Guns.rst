@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: More Guns, Less Crime?
-      :name: more-guns-less-crime
+      :name: Guns
 
    .. rubric:: Description
       :name: description

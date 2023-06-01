@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: X-ray pixel intensities over time
-      :name: x-ray-pixel-intensities-over-time
+      :name: Pixel
 
    .. rubric:: Description
       :name: description

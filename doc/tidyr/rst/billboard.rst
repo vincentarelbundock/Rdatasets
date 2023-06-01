@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Song rankings for Billboard top 100 in the year 2000
-      :name: song-rankings-for-billboard-top-100-in-the-year-2000
+      :name: billboard
 
    .. rubric:: Description
       :name: description

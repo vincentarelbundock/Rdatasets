@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Random Numbers from Congruential Generator RANDU
-      :name: random-numbers-from-congruential-generator-randu
+      :name: randu
 
    .. rubric:: Description
       :name: description

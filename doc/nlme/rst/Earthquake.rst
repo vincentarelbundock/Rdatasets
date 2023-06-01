@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Earthquake Intensity
-      :name: earthquake-intensity
+      :name: Earthquake
 
    .. rubric:: Description
       :name: description

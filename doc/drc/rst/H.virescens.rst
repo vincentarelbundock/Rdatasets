@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Mortality of tobacco budworms
-      :name: mortality-of-tobacco-budworms
+      :name: H.virescens
 
    .. rubric:: Description
       :name: description

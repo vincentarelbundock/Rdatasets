@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Data from the Child Health and Development Studies
-      :name: data-from-the-child-health-and-development-studies
+      :name: Gestation
 
    .. rubric:: Description
       :name: description

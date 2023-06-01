@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: AFM Compositions of Aphyric Skye Lavas
-      :name: afm-compositions-of-aphyric-skye-lavas
+      :name: Skye
 
    .. rubric:: Description
       :name: description

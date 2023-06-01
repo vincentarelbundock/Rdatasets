@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: US Car Price Data
-      :name: us-car-price-data
+      :name: carprice
 
    .. rubric:: Description
       :name: description

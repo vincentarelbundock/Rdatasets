@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Daily Price and Volume of Apple Stock
-      :name: daily-price-and-volume-of-apple-stock
+      :name: AppleStock
 
    .. rubric:: Description
       :name: description

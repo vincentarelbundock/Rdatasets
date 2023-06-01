@@ -5,7 +5,7 @@
    ===================== ===============
 
    .. rubric:: SOWC Maternal and Newborn Health Data.
-      :name: sowc-maternal-and-newborn-health-data.
+      :name: sowc_maternal_newborn
 
    .. rubric:: Description
       :name: description

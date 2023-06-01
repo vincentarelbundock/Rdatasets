@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Sea Slug Larvae
-      :name: sea-slug-larvae
+      :name: SeaSlugs
 
    .. rubric:: Description
       :name: description

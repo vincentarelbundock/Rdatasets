@@ -6,7 +6,7 @@
 
    .. rubric:: Volume of algae as function of increasing concentrations
       of a herbicide
-      :name: volume-of-algae-as-function-of-increasing-concentrations-of-a-herbicide
+      :name: algae
 
    .. rubric:: Description
       :name: description

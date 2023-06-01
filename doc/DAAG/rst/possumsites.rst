@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Possum Sites
-      :name: possum-sites
+      :name: possumsites
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Number of Doctor Visits
-      :name: number-of-doctor-visits
+      :name: Doctor
 
    .. rubric:: Description
       :name: description

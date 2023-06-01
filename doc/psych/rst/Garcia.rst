@@ -6,7 +6,7 @@
 
    .. rubric:: Data from the sexism (protest) study of Garcia, Schmitt,
       Branscome, and Ellemers (2010)
-      :name: data-from-the-sexism-protest-study-of-garcia-schmitt-branscome-and-ellemers-2010
+      :name: Garcia
 
    .. rubric:: Description
       :name: description

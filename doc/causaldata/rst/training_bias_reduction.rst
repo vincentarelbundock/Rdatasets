@@ -6,7 +6,7 @@
 
    .. rubric:: Simulated data from a job training program for a bias
       reduction method
-      :name: simulated-data-from-a-job-training-program-for-a-bias-reduction-method
+      :name: training_bias_reduction
 
    .. rubric:: Description
       :name: description

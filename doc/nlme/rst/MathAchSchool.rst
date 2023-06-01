@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: School demographic data for MathAchieve
-      :name: school-demographic-data-for-mathachieve
+      :name: MathAchSchool
 
    .. rubric:: Description
       :name: description

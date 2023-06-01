@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Wages in Belgium
-      :name: wages-in-belgium
+      :name: Bwages
 
    .. rubric:: Description
       :name: description

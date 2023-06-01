@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Risk Factors Associated with Low Infant Birth Weight
-      :name: risk-factors-associated-with-low-infant-birth-weight
+      :name: birthwt
 
    .. rubric:: Description
       :name: description

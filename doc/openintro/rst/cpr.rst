@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: CPR data set
-      :name: cpr-data-set
+      :name: cpr
 
    .. rubric:: Description
       :name: description

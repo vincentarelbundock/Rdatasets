@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Heights of Boys in Oxford
-      :name: heights-of-boys-in-oxford
+      :name: Oxboys
 
    .. rubric:: Description
       :name: description

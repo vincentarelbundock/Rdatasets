@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Deaths from whooping cough, in London
-      :name: deaths-from-whooping-cough-in-london
+      :name: whoops
 
    .. rubric:: Description
       :name: description

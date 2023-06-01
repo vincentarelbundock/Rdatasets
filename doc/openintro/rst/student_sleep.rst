@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Sleep for 110 students (simulated)
-      :name: sleep-for-110-students-simulated
+      :name: student_sleep
 
    .. rubric:: Description
       :name: description

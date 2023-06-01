@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Each episodes' challenges (raw)
-      :name: each-episodes-challenges-raw
+      :name: episodes_raw
 
    .. rubric:: Description
       :name: description

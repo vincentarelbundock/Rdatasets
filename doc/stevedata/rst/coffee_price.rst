@@ -6,7 +6,7 @@
 
    .. rubric:: The Primary Commodity Price for Coffee (Arabica,
       Robustas)
-      :name: the-primary-commodity-price-for-coffee-arabica-robustas
+      :name: coffee_price
 
    .. rubric:: Description
       :name: description

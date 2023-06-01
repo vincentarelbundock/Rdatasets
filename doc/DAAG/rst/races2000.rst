@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Scottish Hill Races Data - 2000
-      :name: scottish-hill-races-data---2000
+      :name: races2000
 
    .. rubric:: Description
       :name: description

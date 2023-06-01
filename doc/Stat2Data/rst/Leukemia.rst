@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Responses to Treatment for Leukemia
-      :name: responses-to-treatment-for-leukemia
+      :name: Leukemia
 
    .. rubric:: Description
       :name: description

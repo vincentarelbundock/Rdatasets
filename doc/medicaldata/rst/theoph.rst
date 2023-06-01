@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Cohort Study of the Pharmacokinetics of Oral Theophylline
-      :name: cohort-study-of-the-pharmacokinetics-of-oral-theophylline
+      :name: theoph
 
    .. rubric:: Description
       :name: description

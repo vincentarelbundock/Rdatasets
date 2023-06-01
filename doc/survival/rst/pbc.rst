@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Mayo Clinic Primary Biliary Cholangitis Data
-      :name: mayo-clinic-primary-biliary-cholangitis-data
+      :name: pbc
 
    .. rubric:: Description
       :name: description

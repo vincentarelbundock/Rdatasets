@@ -6,7 +6,7 @@
 
    .. rubric:: Weather Task With Priming and Precise and Imprecise
       Probabilities
-      :name: weather-task-with-priming-and-precise-and-imprecise-probabilities
+      :name: WeatherTask
 
    .. rubric:: Description
       :name: description

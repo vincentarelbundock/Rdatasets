@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Epilepsy Data
-      :name: epilepsy-data
+      :name: epilepsy
 
    .. rubric:: Description
       :name: description

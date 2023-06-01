@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Suicide Rates in Germany
-      :name: suicide-rates-in-germany
+      :name: Suicide
 
    .. rubric:: Description
       :name: description

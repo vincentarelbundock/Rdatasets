@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: River flow data
-      :name: river-flow-data
+      :name: flow_rates
 
    .. rubric:: Description
       :name: description

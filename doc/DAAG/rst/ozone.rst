@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Ozone Data
-      :name: ozone-data
+      :name: ozone
 
    .. rubric:: Description
       :name: description

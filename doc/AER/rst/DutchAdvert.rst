@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: TV and Radio Advertising Expenditures Data
-      :name: tv-and-radio-advertising-expenditures-data
+      :name: DutchAdvert
 
    .. rubric:: Description
       :name: description

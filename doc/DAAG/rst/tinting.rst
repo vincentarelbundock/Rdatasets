@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Car Window Tinting Experiment Data
-      :name: car-window-tinting-experiment-data
+      :name: tinting
 
    .. rubric:: Description
       :name: description

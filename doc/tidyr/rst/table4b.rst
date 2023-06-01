@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Example tabular representations
-      :name: example-tabular-representations
+      :name: table1
 
    .. rubric:: Description
       :name: description

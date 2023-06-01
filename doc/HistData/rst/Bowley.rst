@@ -6,7 +6,7 @@
 
    .. rubric:: Bowley's data on values of British and Irish trade,
       1855-1899
-      :name: bowleys-data-on-values-of-british-and-irish-trade-1855-1899
+      :name: Bowley
 
    .. rubric:: Description
       :name: description

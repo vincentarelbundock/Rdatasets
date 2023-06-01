@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Properties of a Fast-Moving Consumer Good
-      :name: properties-of-a-fast-moving-consumer-good
+      :name: ConsumerGood
 
    .. rubric:: Description
       :name: description

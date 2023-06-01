@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Plant Species Traits Data
-      :name: plant-species-traits-data
+      :name: plantTraits
 
    .. rubric:: Description
       :name: description

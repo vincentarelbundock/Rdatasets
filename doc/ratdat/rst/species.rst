@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Species data.
-      :name: species-data.
+      :name: species
 
    .. rubric:: Description
       :name: description

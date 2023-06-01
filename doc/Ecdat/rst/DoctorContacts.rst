@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Contacts With Medical Doctor
-      :name: contacts-with-medical-doctor
+      :name: DoctorContacts
 
    .. rubric:: Description
       :name: description

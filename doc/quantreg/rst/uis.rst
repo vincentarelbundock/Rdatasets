@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: UIS Drug Treatment study data
-      :name: uis-drug-treatment-study-data
+      :name: uis
 
    .. rubric:: Description
       :name: description

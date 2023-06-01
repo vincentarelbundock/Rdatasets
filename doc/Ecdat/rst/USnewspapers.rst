@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: US newspaper revenue 1956 - 2020
-      :name: us-newspaper-revenue-1956---2020
+      :name: USnewspapers
 
    .. rubric:: Description
       :name: description

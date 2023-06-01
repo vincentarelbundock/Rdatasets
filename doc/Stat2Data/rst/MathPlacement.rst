@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Math Placement Exam Results
-      :name: math-placement-exam-results
+      :name: MathPlacement
 
    .. rubric:: Description
       :name: description

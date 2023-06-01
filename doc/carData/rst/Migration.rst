@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Canadian Interprovincial Migration Data
-      :name: canadian-interprovincial-migration-data
+      :name: Migration
 
    .. rubric:: Description
       :name: description

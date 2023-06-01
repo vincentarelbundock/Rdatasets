@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Data from the sinking of the Titanic
-      :name: data-from-the-sinking-of-the-titanic
+      :name: titanic
 
    .. rubric:: Description
       :name: description

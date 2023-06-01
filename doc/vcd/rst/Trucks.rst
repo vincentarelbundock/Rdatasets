@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Truck Accidents Data
-      :name: truck-accidents-data
+      :name: Trucks
 
    .. rubric:: Description
       :name: description

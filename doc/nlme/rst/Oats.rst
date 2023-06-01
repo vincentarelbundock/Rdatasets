@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Split-plot Experiment on Varieties of Oats
-      :name: split-plot-experiment-on-varieties-of-oats
+      :name: Oats
 
    .. rubric:: Description
       :name: description

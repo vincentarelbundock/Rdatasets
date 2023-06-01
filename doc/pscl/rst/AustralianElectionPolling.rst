@@ -5,7 +5,7 @@
    ========================= ===============
 
    .. rubric:: Political opinion polls in Australia, 2004-07
-      :name: political-opinion-polls-in-australia-2004-07
+      :name: AustralianElectionPolling
 
    .. rubric:: Description
       :name: description

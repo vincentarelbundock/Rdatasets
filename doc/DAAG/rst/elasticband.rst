@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Elastic Band Data
-      :name: elastic-band-data
+      :name: elasticband
 
    .. rubric:: Description
       :name: description

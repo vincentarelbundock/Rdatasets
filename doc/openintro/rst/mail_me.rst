@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Influence of a Good Mood on Helpfulness
-      :name: influence-of-a-good-mood-on-helpfulness
+      :name: mail_me
 
    .. rubric:: Description
       :name: description

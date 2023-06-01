@@ -6,7 +6,7 @@
 
    .. rubric:: Trust in the Police in Belgium (European Social Survey,
       Round 5)
-      :name: trust-in-the-police-in-belgium-european-social-survey-round-5
+      :name: ESSBE5
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: American Math Society Survey Data
-      :name: american-math-society-survey-data
+      :name: AMSsurvey
 
    .. rubric:: Description
       :name: description

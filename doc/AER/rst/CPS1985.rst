@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Determinants of Wages Data (CPS 1985)
-      :name: determinants-of-wages-data-cps-1985
+      :name: CPS1985
 
    .. rubric:: Description
       :name: description

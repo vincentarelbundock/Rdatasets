@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Analytical skills of young gifted children
-      :name: analytical-skills-of-young-gifted-children
+      :name: gifted
 
    .. rubric:: Description
       :name: description

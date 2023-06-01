@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Rats Diet Experiment
-      :name: rats-diet-experiment
+      :name: rats
 
    .. rubric:: Description
       :name: description

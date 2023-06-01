@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Data from a cabbage field trial
-      :name: data-from-a-cabbage-field-trial
+      :name: cabbages
 
    .. rubric:: Description
       :name: description

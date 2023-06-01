@@ -6,7 +6,7 @@
 
    .. rubric:: A close-elections regression discontinuity study from
       Lee, Moretti, and Butler (2004)
-      :name: a-close-elections-regression-discontinuity-study-from-lee-moretti-and-butler-2004
+      :name: close_elections_lmb
 
    .. rubric:: Description
       :name: description

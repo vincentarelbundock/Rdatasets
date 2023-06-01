@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Measurements of Forensic Glass Fragments
-      :name: measurements-of-forensic-glass-fragments
+      :name: fgl
 
    .. rubric:: Description
       :name: description

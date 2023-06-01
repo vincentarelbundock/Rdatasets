@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Ovarian Cancer Survival Data
-      :name: ovarian-cancer-survival-data
+      :name: ovarian
 
    .. rubric:: Description
       :name: description

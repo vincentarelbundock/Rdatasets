@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Death Rates in Virginia (1940)
-      :name: death-rates-in-virginia-1940
+      :name: VADeaths
 
    .. rubric:: Description
       :name: description

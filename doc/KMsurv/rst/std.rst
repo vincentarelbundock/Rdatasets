@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: data from Section 1.12
-      :name: data-from-section-1.12
+      :name: std
 
    .. rubric:: Description
       :name: description

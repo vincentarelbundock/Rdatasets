@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Fenthion in Olive Oil
-      :name: fenthion-in-olive-oil
+      :name: Olives
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Massachusetts Test Score Data
-      :name: massachusetts-test-score-data
+      :name: MASchools
 
    .. rubric:: Description
       :name: description

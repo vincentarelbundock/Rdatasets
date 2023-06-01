@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Reddit Survey on Financial Independence.
-      :name: reddit-survey-on-financial-independence.
+      :name: reddit_finance
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: US Gasoline Market Data (1950–1987, Baltagi)
-      :name: us-gasoline-market-data-19501987-baltagi
+      :name: USGasB
 
    .. rubric:: Description
       :name: description

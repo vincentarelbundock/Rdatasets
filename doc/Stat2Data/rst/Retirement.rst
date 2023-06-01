@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Yearly Contributions to a Supplemental Retirement Account
-      :name: yearly-contributions-to-a-supplemental-retirement-account
+      :name: Retirement
 
    .. rubric:: Description
       :name: description

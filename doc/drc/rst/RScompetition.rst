@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Competition between two biotypes
-      :name: competition-between-two-biotypes
+      :name: RScompetition
 
    .. rubric:: Description
       :name: description

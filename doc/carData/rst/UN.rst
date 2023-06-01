@@ -6,7 +6,7 @@
 
    .. rubric:: National Statistics from the United Nations, Mostly From
       2009–2011
-      :name: national-statistics-from-the-united-nations-mostly-from-20092011
+      :name: UN
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====================== ===============
 
    .. rubric:: Contagious disease data for US states
-      :name: contagious-disease-data-for-us-states
+      :name: us_contagious_diseases
 
    .. rubric:: Description
       :name: description
@@ -19,7 +19,7 @@
 
    ::
 
-      data(us_contagious_diseases)
+      us_contagious_diseases
 
    .. rubric:: Format
       :name: format
@@ -60,5 +60,4 @@
 
    ::
 
-      data(us_contagious_diseases)
       head(us_contagious_diseases)

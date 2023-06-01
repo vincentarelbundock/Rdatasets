@@ -47,6 +47,7 @@ Imports:
     gt,
     ggplot2,
     ggplot2movies,
+    heplots,
     HistData,
     HLMdiag,
     hockeystick,
@@ -95,6 +96,7 @@ Imports:
     tidyverse,
     validate,
     vcd,
+    vcdExtra,
     wooldridge
 Suggests: 
     knitr,

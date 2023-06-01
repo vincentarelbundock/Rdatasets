@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Weight Loss Data
-      :name: weight-loss-data
+      :name: WeightLoss
 
    .. rubric:: Description
       :name: description

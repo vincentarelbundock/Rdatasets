@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: The Cigarette Consumption Panel Data Set
-      :name: the-cigarette-consumption-panel-data-set
+      :name: Cigarette
 
    .. rubric:: Description
       :name: description

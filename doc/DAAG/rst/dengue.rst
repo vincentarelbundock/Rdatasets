@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Dengue prevalence, by administrative region
-      :name: dengue-prevalence-by-administrative-region
+      :name: dengue
 
    .. rubric:: Description
       :name: description

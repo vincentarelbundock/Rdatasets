@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Names with Character Set Problems
-      :name: names-with-character-set-problems
+      :name: nonEnglishNames
 
    .. rubric:: Description
       :name: description

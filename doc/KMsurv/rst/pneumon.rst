@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: data from Section 1.13
-      :name: data-from-section-1.13
+      :name: pneumon
 
    .. rubric:: Description
       :name: description

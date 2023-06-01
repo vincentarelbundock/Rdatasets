@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Meniscus Repair Methods
-      :name: meniscus-repair-methods
+      :name: Meniscus
 
    .. rubric:: Description
       :name: description

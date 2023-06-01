@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Model Car Data
-      :name: model-car-data
+      :name: modelcars
 
    .. rubric:: Description
       :name: description

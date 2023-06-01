@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Student Admissions at UC Berkeley
-      :name: student-admissions-at-uc-berkeley
+      :name: UCBAdmissions
 
    .. rubric:: Description
       :name: description

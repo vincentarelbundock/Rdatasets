@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Count data with some missing values
-      :name: count-data-with-some-missing-values
+      :name: na_example
 
    .. rubric:: Description
       :name: description
@@ -17,7 +17,7 @@
 
    ::
 
-      data(na_example)
+      na_example
 
    .. rubric:: Format
       :name: format
@@ -29,5 +29,4 @@
 
    ::
 
-      data(na_example)
       print(sum(is.na(na_example)))

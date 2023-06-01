@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Diet and Weight of Rats
-      :name: diet-and-weight-of-rats
+      :name: FatRats
 
    .. rubric:: Description
       :name: description

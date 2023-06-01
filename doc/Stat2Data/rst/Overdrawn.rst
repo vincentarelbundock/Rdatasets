@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Overdrawn Checking Account?
-      :name: overdrawn-checking-account
+      :name: Overdrawn
 
    .. rubric:: Description
       :name: description

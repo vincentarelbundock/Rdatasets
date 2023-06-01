@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: House Prices, Sizes, and Lot Areas
-      :name: house-prices-sizes-and-lot-areas
+      :name: Houses
 
    .. rubric:: Description
       :name: description

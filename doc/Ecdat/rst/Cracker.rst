@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Choice of Brand for Crackers
-      :name: choice-of-brand-for-crackers
+      :name: Cracker
 
    .. rubric:: Description
       :name: description

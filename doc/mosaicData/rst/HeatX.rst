@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Data from a heat exchanger laboratory
-      :name: data-from-a-heat-exchanger-laboratory
+      :name: HeatX
 
    .. rubric:: Description
       :name: description

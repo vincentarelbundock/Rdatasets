@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Medical Expenses in Vietnam (household Level)
-      :name: medical-expenses-in-vietnam-household-level
+      :name: VietNamH
 
    .. rubric:: Description
       :name: description

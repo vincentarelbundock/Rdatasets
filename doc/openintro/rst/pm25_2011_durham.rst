@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Air quality for Durham, NC
-      :name: air-quality-for-durham-nc
+      :name: pm25_2011_durham
 
    .. rubric:: Description
       :name: description

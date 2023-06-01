@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: data from Exercise 7.14, p225
-      :name: data-from-exercise-7.14-p225
+      :name: twins
 
    .. rubric:: Description
       :name: description

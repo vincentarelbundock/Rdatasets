@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Macroeconomic Time Series for the United States
-      :name: macroeconomic-time-series-for-the-united-states
+      :name: Macrodat
 
    .. rubric:: Description
       :name: description

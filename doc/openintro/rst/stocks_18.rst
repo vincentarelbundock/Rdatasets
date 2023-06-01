@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Monthly Returns for a few stocks
-      :name: monthly-returns-for-a-few-stocks
+      :name: stocks_18
 
    .. rubric:: Description
       :name: description

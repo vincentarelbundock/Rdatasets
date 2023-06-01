@@ -6,7 +6,7 @@
 
    .. rubric:: Daily Observations on Exchange Rates of the US Dollar
       Against Other Currencies
-      :name: daily-observations-on-exchange-rates-of-the-us-dollar-against-other-currencies
+      :name: Garch
 
    .. rubric:: Description
       :name: description

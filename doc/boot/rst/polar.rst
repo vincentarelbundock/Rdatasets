@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Pole Positions of New Caledonian Laterites
-      :name: pole-positions-of-new-caledonian-laterites
+      :name: polar
 
    .. rubric:: Description
       :name: description

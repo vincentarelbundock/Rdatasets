@@ -5,7 +5,7 @@
    =================== ===============
 
    .. rubric:: Speed, gender, and height of 1325 students
-      :name: speed-gender-and-height-of-1325-students
+      :name: speed_gender_height
 
    .. rubric:: Description
       :name: description

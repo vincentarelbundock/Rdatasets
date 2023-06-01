@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Daily Clemson Temperature Data
-      :name: daily-clemson-temperature-data
+      :name: clemson_temps
 
    .. rubric:: Description
       :name: description

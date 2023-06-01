@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: US Military Demographics
-      :name: us-military-demographics
+      :name: military
 
    .. rubric:: Description
       :name: description

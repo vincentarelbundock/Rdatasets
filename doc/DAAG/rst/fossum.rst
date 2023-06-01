@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Possum Measurements
-      :name: possum-measurements
+      :name: possum
 
    .. rubric:: Description
       :name: description

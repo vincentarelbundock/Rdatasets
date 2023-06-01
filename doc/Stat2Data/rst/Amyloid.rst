@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Amyloid-beta and Cognitive Impairment
-      :name: amyloid-beta-and-cognitive-impairment
+      :name: Amyloid
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Maximum annual temperatures at Moorabbin Airport,
       Melbourne
-      :name: maximum-annual-temperatures-at-moorabbin-airport-melbourne
+      :name: maxtemp
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Acute Myelogenous Leukemia survival data
-      :name: acute-myelogenous-leukemia-survival-data
+      :name: aml
 
    .. rubric:: Description
       :name: description

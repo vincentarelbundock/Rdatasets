@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Measurements on a Selection of Paperback Books
-      :name: measurements-on-a-selection-of-paperback-books
+      :name: softbacks
 
    .. rubric:: Description
       :name: description

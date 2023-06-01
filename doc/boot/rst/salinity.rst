@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Water Salinity and River Discharge
-      :name: water-salinity-and-river-discharge
+      :name: salinity
 
    .. rubric:: Description
       :name: description

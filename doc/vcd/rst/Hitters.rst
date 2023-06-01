@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Hitters Data
-      :name: hitters-data
+      :name: Hitters
 
    .. rubric:: Description
       :name: description

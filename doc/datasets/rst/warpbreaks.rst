@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: The Number of Breaks in Yarn during Weaving
-      :name: the-number-of-breaks-in-yarn-during-weaving
+      :name: warpbreaks
 
    .. rubric:: Description
       :name: description

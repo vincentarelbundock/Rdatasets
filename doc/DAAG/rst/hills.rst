@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Scottish Hill Races Data
-      :name: scottish-hill-races-data
+      :name: hills
 
    .. rubric:: Description
       :name: description

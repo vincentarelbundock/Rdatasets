@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: The Gender Pay Gap in the General Social Survey
-      :name: the-gender-pay-gap-in-the-general-social-survey
+      :name: gss_wages
 
    .. rubric:: Description
       :name: description

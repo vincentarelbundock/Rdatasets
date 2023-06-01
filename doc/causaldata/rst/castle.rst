@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Data on castle-doctrine statutes and violent crime
-      :name: data-on-castle-doctrine-statutes-and-violent-crime
+      :name: castle
 
    .. rubric:: Description
       :name: description

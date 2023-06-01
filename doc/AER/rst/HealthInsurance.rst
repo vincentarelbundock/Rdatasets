@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Medical Expenditure Panel Survey Data
-      :name: medical-expenditure-panel-survey-data
+      :name: HealthInsurance
 
    .. rubric:: Description
       :name: description

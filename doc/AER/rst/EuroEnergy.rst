@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: European Energy Consumption Data
-      :name: european-energy-consumption-data
+      :name: EuroEnergy
 
    .. rubric:: Description
       :name: description

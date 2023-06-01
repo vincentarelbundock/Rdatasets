@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: BMT data from Klein and Moeschberger
-      :name: bmt-data-from-klein-and-moeschberger
+      :name: bmt
 
    .. rubric:: Description
       :name: description

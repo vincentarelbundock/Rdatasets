@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Nest Characteristics for Different Bird Species
-      :name: nest-characteristics-for-different-bird-species
+      :name: BirdNest
 
    .. rubric:: Description
       :name: description

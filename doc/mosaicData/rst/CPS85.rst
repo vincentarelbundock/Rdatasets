@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Data from the 1985 Current Population Survey (CPS85)
-      :name: data-from-the-1985-current-population-survey-cps85
+      :name: CPS85
 
    .. rubric:: Description
       :name: description

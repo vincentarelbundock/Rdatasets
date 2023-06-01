@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: U. S. State Public-School Expenditures
-      :name: u.-s.-state-public-school-expenditures
+      :name: Anscombe
 
    .. rubric:: Description
       :name: description

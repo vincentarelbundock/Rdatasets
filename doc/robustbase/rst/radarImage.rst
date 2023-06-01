@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Satellite Radar Image Data from near Munich
-      :name: satellite-radar-image-data-from-near-munich
+      :name: radarImage
 
    .. rubric:: Description
       :name: description

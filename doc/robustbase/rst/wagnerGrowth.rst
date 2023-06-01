@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Wagner's Hannover Employment Growth Data
-      :name: wagners-hannover-employment-growth-data
+      :name: wagnerGrowth
 
    .. rubric:: Description
       :name: description

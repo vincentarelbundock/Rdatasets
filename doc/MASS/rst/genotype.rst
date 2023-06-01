@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Rat Genotype Data
-      :name: rat-genotype-data
+      :name: genotype
 
    .. rubric:: Description
       :name: description

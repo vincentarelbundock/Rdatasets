@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Each baker's results by episode (raw)
-      :name: each-bakers-results-by-episode-raw
+      :name: results_raw
 
    .. rubric:: Description
       :name: description

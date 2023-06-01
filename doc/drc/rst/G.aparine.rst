@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Herbicide applied to Galium aparine
-      :name: herbicide-applied-to-galium-aparine
+      :name: G.aparine
 
    .. rubric:: Description
       :name: description

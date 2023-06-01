@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Quarterly Australian Beer production
-      :name: quarterly-australian-beer-production
+      :name: ausbeer
 
    .. rubric:: Description
       :name: description

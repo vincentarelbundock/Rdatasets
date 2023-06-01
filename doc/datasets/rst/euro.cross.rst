@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Conversion Rates of Euro Currencies
-      :name: conversion-rates-of-euro-currencies
+      :name: euro
 
    .. rubric:: Description
       :name: description

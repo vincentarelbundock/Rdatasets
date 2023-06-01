@@ -6,7 +6,7 @@
 
    .. rubric:: information about the American states needed for U.S.
       Congress
-      :name: information-about-the-american-states-needed-for-u.s.-congress
+      :name: state.info
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Effects of Mandatory Seat Belt Laws in the US
-      :name: effects-of-mandatory-seat-belt-laws-in-the-us
+      :name: USSeatBelts
 
    .. rubric:: Description
       :name: description

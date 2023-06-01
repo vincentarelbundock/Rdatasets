@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Nuclear Arms Reduction Survey
-      :name: nuclear-arms-reduction-survey
+      :name: nuclear_survey
 
    .. rubric:: Description
       :name: description

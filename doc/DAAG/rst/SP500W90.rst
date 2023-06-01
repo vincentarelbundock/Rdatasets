@@ -6,7 +6,7 @@
 
    .. rubric:: Closing Numbers for S and P 500 Index - First 100 Days of
       1990
-      :name: closing-numbers-for-s-and-p-500-index---first-100-days-of-1990
+      :name: SP500W90
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Air Transport Passengers Australia
-      :name: air-transport-passengers-australia
+      :name: ausair
 
    .. rubric:: Description
       :name: description

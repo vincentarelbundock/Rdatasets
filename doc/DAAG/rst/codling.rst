@@ -6,7 +6,7 @@
 
    .. rubric:: Dose-mortality data, for fumigation of codling moth with
       methyl bromide
-      :name: dose-mortality-data-for-fumigation-of-codling-moth-with-methyl-bromide
+      :name: codling
 
    .. rubric:: Description
       :name: description

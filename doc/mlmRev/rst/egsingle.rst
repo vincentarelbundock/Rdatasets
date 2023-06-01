@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: US Sustaining Effects study
-      :name: us-sustaining-effects-study
+      :name: egsingle
 
    .. rubric:: Description
       :name: description

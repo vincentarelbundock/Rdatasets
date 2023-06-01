@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Flights data
-      :name: flights-data
+      :name: flights
 
    .. rubric:: Description
       :name: description

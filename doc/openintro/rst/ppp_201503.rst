@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: US Poll on who it is better to raise taxes on
-      :name: us-poll-on-who-it-is-better-to-raise-taxes-on
+      :name: ppp_201503
 
    .. rubric:: Description
       :name: description

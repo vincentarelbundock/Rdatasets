@@ -5,7 +5,7 @@
    =================== ===============
 
    .. rubric:: Infant Mortality Rates
-      :name: infant-mortality-rates
+      :name: InfantMortality2010
 
    .. rubric:: Description
       :name: description

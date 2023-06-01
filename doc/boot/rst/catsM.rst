@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Weight Data for Domestic Cats
-      :name: weight-data-for-domestic-cats
+      :name: catsM
 
    .. rubric:: Description
       :name: description

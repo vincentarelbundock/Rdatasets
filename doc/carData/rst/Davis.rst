@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Self-Reports of Height and Weight
-      :name: self-reports-of-height-and-weight
+      :name: Davis
 
    .. rubric:: Description
       :name: description

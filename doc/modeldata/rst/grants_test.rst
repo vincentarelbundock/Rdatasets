@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Grant acceptance data
-      :name: grant-acceptance-data
+      :name: grants
 
    .. rubric:: Description
       :name: description
@@ -51,8 +51,8 @@
       :name: value
 
    +----------------------------------+----------------------------------+
-   | ``grants                         | two tibbles and an integer       |
-   | _other,grants_test,grants_2008`` | vector of data points used for   |
+   | ``grants_other``,                | two tibbles and an integer       |
+   | ``grants_test``, ``grants_2008`` | vector of data points used for   |
    |                                  | training                         |
    +----------------------------------+----------------------------------+
 

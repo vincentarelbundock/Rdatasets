@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Correctly Identified Words in a Hearing Test
-      :name: correctly-identified-words-in-a-hearing-test
+      :name: HearingTest
 
    .. rubric:: Description
       :name: description

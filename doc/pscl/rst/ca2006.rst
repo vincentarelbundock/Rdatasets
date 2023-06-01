@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: California Congressional Districts in 2006
-      :name: california-congressional-districts-in-2006
+      :name: ca2006
 
    .. rubric:: Description
       :name: description

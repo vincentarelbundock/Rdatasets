@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: SP Data to June 1993
-      :name: sp-data-to-june-1993
+      :name: sp.raw
 
    .. rubric:: Description
       :name: description

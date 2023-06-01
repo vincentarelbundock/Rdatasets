@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Cleveland Cavalier's Shooting (2016-2017)
-      :name: cleveland-cavaliers-shooting-2016-2017
+      :name: CavsShooting
 
    .. rubric:: Description
       :name: description

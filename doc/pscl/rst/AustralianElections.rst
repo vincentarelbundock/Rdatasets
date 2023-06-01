@@ -6,7 +6,7 @@
 
    .. rubric:: elections to Australian House of Representatives,
       1949-2016
-      :name: elections-to-australian-house-of-representatives-1949-2016
+      :name: AustralianElections
 
    .. rubric:: Description
       :name: description

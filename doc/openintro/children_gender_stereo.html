@@ -1,0 +1,120 @@
+<!DOCTYPE html><html><head><title>R: Gender Stereotypes in 5-7 year old Children</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>children_gender_stereo</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='children_gender_stereo'>Gender Stereotypes in 5-7 year old Children</h2>
+
+<h3>Description</h3>
+
+<p>Stereotypes are common, but at what age do they start? This study
+investigates stereotypes in young children aged 5-7 years old. There are
+four studies reported in the paper, and all four data sets are provided here.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>children_gender_stereo
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>This data object is more unusual than most. It is a list of 4 data
+frames. The four data frames correspond to the data used in Studies 1-4 of
+the referenced paper, and these data frames each have variables (columns)
+that are among the following:
+</p>
+
+<dl>
+<dt>subject</dt><dd><p>Subject ID. Note that Subject 1 in the first data frame
+(data set) does <b>not</b> correspond to Subject 1 in the second data frame.</p>
+</dd>
+<dt>gender</dt><dd><p>Gender of the subject.</p>
+</dd>
+<dt>age</dt><dd><p>Age of the subject, in years.</p>
+</dd>
+<dt>trait</dt><dd><p>The trait that the children were making a judgement about,
+which was either <code>nice</code> or <code>smart</code>.</p>
+</dd>
+<dt>target</dt><dd><p>The age group of the people the children were making judgements
+about (as being either nice or smart): <code>children</code> or <code>adults</code>.</p>
+</dd>
+<dt>stereotype</dt><dd><p>The proportion of trials where the child picked a gender
+target that matched the trait that was the same as the gender of the child.
+For example, suppose we had 18 pictures, where each picture showed 2 men and
+2 women (and a different set of people in each photo). Then if we asked a
+boy to pick the person in each picture who they believed to be really smart,
+this <code>stereotype</code> variable would report the fraction of pictures where
+the boy picked a man. When a girl reviews the photos, then this
+<code>stereotype</code> variable reports the fraction of photos where she picked
+a woman. That is, this variable differs in meaning depending on the gender
+of the child. (This variable design is a little confusing, but it is useful
+when analyzing the data.)</p>
+</dd>
+<dt>high_achieve_caution</dt><dd><p>The proportion of trials where the child said
+that children of their own gender were high-achieving in school.</p>
+</dd>
+<dt>interest</dt><dd><p>Average score that measured the interest of the child in
+the game.</p>
+</dd>
+<dt>difference</dt><dd><p>A difference score between the interest of the child in
+the &ldquo;smart&rdquo; game and their interest in the &ldquo;try-hard&rdquo; game.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The structure of the data object is a little unusual, so we recommend
+reviewing the Examples section before starting your analysis.
+</p>
+<p>Thank you to Nicholas Horton for pointing us to this study and the data!
+</p>
+<p>Most of the results in the paper can be reproduced using the data provided
+here.
+</p>
+<p>% TODO(David) - Add short descriptions of each study.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Bian L, Leslie SJ, Cimpian A. 2017. &quot;Gender stereotypes about intellectual
+ability emerge early and influence children's interests&quot;. Science 355:6323
+(389-391). https://www.science.org/doi/10.1126/science.aah6524.
+</p>
+<p>The original data may be found <a href="https://osf.io/yund6/?view_only=9a8505d4e87b456a89f255b43e21234e">here</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+# This data set is a little funny to work with.
+# If wanting to review the data for a study, we
+# recommend first assigning the corresponding
+# data frame to a new variable. For instance,
+# below we assign the second study's data to an
+# object called `d` (d is for data!).
+d &lt;- children_gender_stereo[[2]]
+</code></pre>
+
+
+</div>
+</body></html>

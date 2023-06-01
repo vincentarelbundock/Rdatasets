@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Characteristics of a Subset of the Diamond Sample
-      :name: characteristics-of-a-subset-of-the-diamond-sample
+      :name: Diamonds2
 
    .. rubric:: Description
       :name: description

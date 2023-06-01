@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: sorption data set
-      :name: sorption-data-set
+      :name: sorption
 
    .. rubric:: Description
       :name: description

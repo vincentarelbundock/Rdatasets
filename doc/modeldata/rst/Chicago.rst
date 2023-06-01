@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Chicago ridership data
-      :name: chicago-ridership-data
+      :name: Chicago
 
    .. rubric:: Description
       :name: description

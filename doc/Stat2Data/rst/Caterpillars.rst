@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Measurements of Manduca Sexta Caterpillars
-      :name: measurements-of-manduca-sexta-caterpillars
+      :name: Caterpillars
 
    .. rubric:: Description
       :name: description

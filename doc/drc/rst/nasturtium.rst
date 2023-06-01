@@ -6,7 +6,7 @@
 
    .. rubric:: Dose-response profile of degradation of agrochemical
       using nasturtium
-      :name: dose-response-profile-of-degradation-of-agrochemical-using-nasturtium
+      :name: nasturtium
 
    .. rubric:: Description
       :name: description

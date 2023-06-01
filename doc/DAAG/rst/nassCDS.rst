@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Airbag and other influences on accident fatalities
-      :name: airbag-and-other-influences-on-accident-fatalities
+      :name: nassCDS
 
    .. rubric:: Description
       :name: description

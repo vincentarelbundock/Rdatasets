@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Marriage records
-      :name: marriage-records
+      :name: Marriage
 
    .. rubric:: Description
       :name: description

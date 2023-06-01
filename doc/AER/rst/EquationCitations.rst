@@ -6,7 +6,7 @@
 
    .. rubric:: Number of Equations and Citations for Evolutionary
       Biology Publications
-      :name: number-of-equations-and-citations-for-evolutionary-biology-publications
+      :name: EquationCitations
 
    .. rubric:: Description
       :name: description

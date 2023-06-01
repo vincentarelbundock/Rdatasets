@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Harman Example 7.4
-      :name: harman-example-7.4
+      :name: Harman74.cor
 
    .. rubric:: Description
       :name: description

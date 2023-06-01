@@ -6,7 +6,7 @@
 
    .. rubric:: Monthly corticosteroid drug subsidy in Australia from
       1991 to 2008.
-      :name: monthly-corticosteroid-drug-subsidy-in-australia-from-1991-to-2008.
+      :name: h02
 
    .. rubric:: Description
       :name: description

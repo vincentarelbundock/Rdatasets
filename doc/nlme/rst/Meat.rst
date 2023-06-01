@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Tenderness of meat
-      :name: tenderness-of-meat
+      :name: Meat
 
    .. rubric:: Description
       :name: description

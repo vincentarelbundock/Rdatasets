@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Agricultural Production in Mazulu Village
-      :name: agricultural-production-in-mazulu-village
+      :name: Sahlins
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Tipping data
-      :name: tipping-data
+      :name: tips
 
    .. rubric:: Description
       :name: description

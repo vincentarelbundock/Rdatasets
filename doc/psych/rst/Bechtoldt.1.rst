@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Seven data sets showing a bifactor solution.
-      :name: seven-data-sets-showing-a-bifactor-solution.
+      :name: Bechtoldt
 
    .. rubric:: Description
       :name: description

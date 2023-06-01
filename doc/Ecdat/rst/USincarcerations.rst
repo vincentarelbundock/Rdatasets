@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: US incarcerations 1925 onward
-      :name: us-incarcerations-1925-onward
+      :name: USincarcerations
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Athletic Participation, Race, and Graduation
-      :name: athletic-participation-race-and-graduation
+      :name: AthleteGrad
 
    .. rubric:: Description
       :name: description

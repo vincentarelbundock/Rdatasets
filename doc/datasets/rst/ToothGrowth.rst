@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: The Effect of Vitamin C on Tooth Growth in Guinea Pigs
-      :name: the-effect-of-vitamin-c-on-tooth-growth-in-guinea-pigs
+      :name: ToothGrowth
 
    .. rubric:: Description
       :name: description

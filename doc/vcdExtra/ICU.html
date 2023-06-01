@@ -1,0 +1,174 @@
+<!DOCTYPE html><html><head><title>R: ICU data set</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ICU</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='ICU'>ICU data set</h2>
+
+<h3>Description</h3>
+
+<p>The ICU data set consists of a sample of 200 subjects who were part of
+a much larger study on survival of patients following admission to an adult
+intensive care unit (ICU), derived from  
+Hosmer, Lemeshow and Sturdivant (2013) and Friendly (2000).
+</p>
+<p>The major goal of this study was to develop a
+logistic regression model to predict the probability of survival to hospital
+discharge of these patients and to study the risk factors associated with 
+ICU mortality. The clinical details of the study are described in 
+Lemeshow, Teres, Avrunin, and Pastides (1988).
+</p>
+<p>This data set is often used to illustrate model selection methods for
+logistic regression.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(ICU)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 200 observations on the following 22 variables.
+</p>
+
+
+<dl>
+<dt><code>died</code></dt><dd><p>Died before discharge?, a factor with levels <code>No</code> <code>Yes</code></p>
+</dd>
+<dt><code>age</code></dt><dd><p>Patient age, a numeric vector</p>
+</dd>
+<dt><code>sex</code></dt><dd><p>Patient sex, a factor with levels <code>Female</code> <code>Male</code></p>
+</dd>
+<dt><code>race</code></dt><dd><p>Patient race, a factor with levels <code>Black</code> <code>Other</code> <code>White</code>.  Also represented here as <code>white</code>.</p>
+</dd>
+<dt><code>service</code></dt><dd><p>Service at ICU Admission, a factor with levels <code>Medical</code> <code>Surgical</code></p>
+</dd>
+<dt><code>cancer</code></dt><dd><p>Cancer part of present problem?, a factor with levels <code>No</code> <code>Yes</code></p>
+</dd>
+<dt><code>renal</code></dt><dd><p>History of chronic renal failure?, a factor with levels <code>No</code> <code>Yes</code></p>
+</dd>
+<dt><code>infect</code></dt><dd><p>Infection probable at ICU admission?, a factor with levels <code>No</code> <code>Yes</code></p>
+</dd>
+<dt><code>cpr</code></dt><dd><p>Patient received CPR prior to ICU admission?, a factor with levels <code>No</code> <code>Yes</code></p>
+</dd>
+<dt><code>systolic</code></dt><dd><p>Systolic blood pressure at admission (mm Hg), a numeric vector</p>
+</dd>
+<dt><code>hrtrate</code></dt><dd><p>Heart rate at ICU Admission (beats/min), a numeric vector</p>
+</dd>
+<dt><code>previcu</code></dt><dd><p>Previous admission to an ICU within 6 Months?, a factor with levels <code>No</code> <code>Yes</code></p>
+</dd>
+<dt><code>admit</code></dt><dd><p>Type of admission, a factor with levels <code>Elective</code> <code>Emergency</code></p>
+</dd>
+<dt><code>fracture</code></dt><dd><p>Admission with a long bone, multiple, neck, single area, or hip fracture?
+a factor with levels <code>No</code> <code>Yes</code></p>
+</dd>
+<dt><code>po2</code></dt><dd><p>PO2 from initial blood gases, a factor with levels <code>&gt;60</code> <code>&lt;=60</code></p>
+</dd>
+<dt><code>ph</code></dt><dd><p>pH from initial blood gases, a factor with levels <code>&gt;=7.25</code> <code>&lt;7.25</code></p>
+</dd>
+<dt><code>pco</code></dt><dd><p>PCO2 from initial blood gases, a factor with levels <code>&lt;=45</code> <code>&gt;45</code></p>
+</dd>
+<dt><code>bic</code></dt><dd><p>Bicarbonate (HCO3) level from initial blood gases, a factor with levels <code>&gt;=18</code> <code>&lt;18</code></p>
+</dd>
+<dt><code>creatin</code></dt><dd><p>Creatinine, from initial blood gases, a factor with levels <code>&lt;=2</code> <code>&gt;2</code></p>
+</dd>
+<dt><code>coma</code></dt><dd><p>Level of unconsciousness at admission to ICU,	a factor with levels <code>None</code> <code>Stupor</code> <code>Coma</code></p>
+</dd>
+<dt><code>white</code></dt><dd><p>a recoding of <code>race</code>,  a factor with levels <code>White</code> <code>Non-white</code></p>
+</dd>
+<dt><code>uncons</code></dt><dd><p>a recoding of <code>coma</code> a factor with levels <code>No</code> <code>Yes</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Patient ID numbers are the rownames of the data frame.
+</p>
+<p>Note that the last two variables <code>white</code> and <code>uncons</code> are a recoding of
+respectively <code>race</code> and <code>coma</code> to binary variables.
+</p>
+
+
+<h3>Source</h3>
+
+<p>M. Friendly (2000), <em>Visualizing Categorical Data</em>, Appendix B.4. SAS Institute, Cary, NC. 
+</p>
+<p>Hosmer, D. W. Jr., Lemeshow, S. and Sturdivant, R. X. (2013) 
+<em>Applied Logistic Regression</em>, NY: Wiley,
+Third Edition.	
+</p>
+
+
+<h3>References</h3>
+
+<p>Lemeshow, S., Teres, D., Avrunin, J. S., Pastides, H. (1988). Predicting
+the Outcome of Intensive Care Unit Patients. <em>Journal of the American
+Statistical Association</em>, 83, 348-356.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(ICU)
+# remove redundant variables (race, coma)
+ICU1 &lt;- ICU[,-c(4,20)]
+
+# fit full model
+icu.full &lt;- glm(died ~ ., data=ICU1, family=binomial)
+summary(icu.full)
+
+# simpler model (found from a "best" subsets procedure)
+icu.mod1 &lt;- glm(died ~ age + sex + cancer + systolic + admit + uncons, 
+  data=ICU1, 
+  family=binomial)
+summary(icu.mod1)
+
+# even simpler model
+icu.mod2 &lt;- glm(died ~ age + cancer  + admit + uncons, 
+  data=ICU1, 
+  family=binomial)
+summary(icu.mod2)
+
+anova(icu.mod2, icu.mod1, icu.full, test="Chisq")
+
+## Reproduce Fig 6.12 from VCD
+
+icu.fit &lt;- data.frame(ICU, prob=predict(icu.mod2, type="response"))
+
+# combine categorical risk factors to a single string
+risks &lt;- ICU[, c("cancer", "admit", "uncons")]
+risks[,1] &lt;- ifelse(risks[,1]=="Yes", "Cancer", "")
+risks[,2] &lt;- ifelse(risks[,2]=="Emergency", "Emerg", "")
+risks[,3] &lt;- ifelse(risks[,3]=="Yes", "Uncons", "")
+risks &lt;- apply(risks, 1, paste, collapse="")
+risks[risks==""] &lt;- "(none)"
+icu.fit$risks &lt;- risks
+
+library(ggplot2)
+ggplot(icu.fit, aes(x=age, y=prob, color=risks)) +
+	geom_point(size=2) +
+	geom_line(size=1.25, alpha=0.5) +
+	theme_bw() + ylab("Probability of death")
+
+</code></pre>
+
+
+</div>
+</body></html>

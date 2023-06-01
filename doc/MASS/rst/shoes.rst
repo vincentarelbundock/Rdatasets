@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Shoe wear data of Box, Hunter and Hunter
-      :name: shoe-wear-data-of-box-hunter-and-hunter
+      :name: shoes
 
    .. rubric:: Description
       :name: description

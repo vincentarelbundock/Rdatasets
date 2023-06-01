@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: data from Exercise 7.13, p225
-      :name: data-from-exercise-7.13-p225
+      :name: rats
 
    .. rubric:: Description
       :name: description

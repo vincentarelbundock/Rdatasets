@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: GPA and Medical School Admission
-      :name: gpa-and-medical-school-admission
+      :name: MedGPA
 
    .. rubric:: Description
       :name: description

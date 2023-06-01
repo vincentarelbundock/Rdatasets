@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Demo data describing the Smiths.
-      :name: demo-data-describing-the-smiths.
+      :name: smiths
 
    .. rubric:: Description
       :name: description

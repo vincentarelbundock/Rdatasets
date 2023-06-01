@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Data on avocado sales
-      :name: data-on-avocado-sales
+      :name: avocado
 
    .. rubric:: Description
       :name: description

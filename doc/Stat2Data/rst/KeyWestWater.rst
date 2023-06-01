@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Key West Water Temperatures
-      :name: key-west-water-temperatures
+      :name: KeyWestWater
 
    .. rubric:: Description
       :name: description

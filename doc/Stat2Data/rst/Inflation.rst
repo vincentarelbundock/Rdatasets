@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Monthly Consumer Price Index (2009-2016)
-      :name: monthly-consumer-price-index-2009-2016
+      :name: Inflation
 
    .. rubric:: Description
       :name: description

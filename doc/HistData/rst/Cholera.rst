@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: William Farr's Data on Cholera in London, 1849
-      :name: william-farrs-data-on-cholera-in-london-1849
+      :name: Cholera
 
    .. rubric:: Description
       :name: description

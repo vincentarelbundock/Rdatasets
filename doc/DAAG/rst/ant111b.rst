@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Averages by block of yields for the Antigua Corn data
-      :name: averages-by-block-of-yields-for-the-antigua-corn-data
+      :name: antigua
 
    .. rubric:: Description
       :name: description

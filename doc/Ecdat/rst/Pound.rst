@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Pound-dollar Exchange Rate
-      :name: pound-dollar-exchange-rate
+      :name: Pound
 
    .. rubric:: Description
       :name: description

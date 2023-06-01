@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Fine foods example data
-      :name: fine-foods-example-data
+      :name: small_fine_foods
 
    .. rubric:: Description
       :name: description
@@ -36,9 +36,9 @@
    .. rubric:: Value
       :name: value
 
-   ============================== =======
-   ``training_data,testing_data`` tibbles
-   ============================== =======
+   =================================== =======
+   ``training_data``, ``testing_data`` tibbles
+   =================================== =======
 
    .. rubric:: Source
       :name: source

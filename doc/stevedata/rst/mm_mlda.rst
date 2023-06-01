@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Minimum Legal Drinking Age Fatalities Data
-      :name: minimum-legal-drinking-age-fatalities-data
+      :name: mm_mlda
 
    .. rubric:: Description
       :name: description

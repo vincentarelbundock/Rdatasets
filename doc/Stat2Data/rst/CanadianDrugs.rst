@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Canadian Drugs Senate Vote
-      :name: canadian-drugs-senate-vote
+      :name: CanadianDrugs
 
    .. rubric:: Description
       :name: description

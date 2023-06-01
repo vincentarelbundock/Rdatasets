@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Strike Duration Data
-      :name: strike-duration-data
+      :name: Strike
 
    .. rubric:: Description
       :name: description

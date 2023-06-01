@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Transplant consultant success rate (fake data)
-      :name: transplant-consultant-success-rate-fake-data
+      :name: transplant
 
    .. rubric:: Description
       :name: description

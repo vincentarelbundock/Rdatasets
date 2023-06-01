@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Radon data
-      :name: radon-data
+      :name: radon
 
    .. rubric:: Description
       :name: description

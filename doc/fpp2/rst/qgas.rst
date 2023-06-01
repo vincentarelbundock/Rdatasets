@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Quarterly Australian Gas Production
-      :name: quarterly-australian-gas-production
+      :name: qgas
 
    .. rubric:: Description
       :name: description

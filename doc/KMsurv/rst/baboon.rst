@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: data from Exercise 5.8, p147
-      :name: data-from-exercise-5.8-p147
+      :name: baboon
 
    .. rubric:: Description
       :name: description

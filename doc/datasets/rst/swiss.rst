@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Swiss Fertility and Socioeconomic Indicators (1888) Data
-      :name: swiss-fertility-and-socioeconomic-indicators-1888-data
+      :name: swiss
 
    .. rubric:: Description
       :name: description

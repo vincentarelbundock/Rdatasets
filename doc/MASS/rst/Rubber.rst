@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Accelerated Testing of Tyre Rubber
-      :name: accelerated-testing-of-tyre-rubber
+      :name: Rubber
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Return to Schooling
-      :name: return-to-schooling
+      :name: RetSchool
 
    .. rubric:: Description
       :name: description

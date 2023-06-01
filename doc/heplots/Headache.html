@@ -1,0 +1,145 @@
+<!DOCTYPE html><html><head><title>R: Treatment of Headache Sufferers for Sensitivity to Noise</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Headache</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Headache'>
+Treatment of Headache Sufferers for Sensitivity to Noise
+</h2>
+
+<h3>Description</h3>
+
+<p>A study was conducted investigating the effectiveness of different
+kinds of psychological treatment on the sensitivity of
+headache sufferers to noise, described in Hand and Taylor (1987),
+Study E.
+</p>
+<p>In a pre-post design, 98 patients were first assessed for the volume
+of noise which they found uncomfortable (U) and definitely uncomfortable (DU).
+They were then given relaxation training, where they listened to the noise
+at the DU level and given instruction breathing techniques and the use of
+visual imagery to distract them from discomfort.  One of four treatments
+was then applied, and all patients were reassessed for the noise volume
+they considered uncomfortable (U) and definitely uncomfortable (DU).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Headache)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 98 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>type</code></dt><dd><p>Type of headache, a factor with levels <code>Migrane</code> <code>Tension</code></p>
+</dd>
+<dt><code>treatment</code></dt><dd><p>Treatment group, a factor with levels <code>T1</code> <code>T2</code> <code>T3</code> <code>Control</code>.  See Details</p>
+</dd>
+<dt><code>u1</code></dt><dd><p>Noise level rated as Uncomfortable, initial measure</p>
+</dd>
+<dt><code>du1</code></dt><dd><p>Noise level rated as Definitely Uncomfortable, initial measure</p>
+</dd>
+<dt><code>u2</code></dt><dd><p>Noise level rated as Uncomfortable, final measure</p>
+</dd>
+<dt><code>du2</code></dt><dd><p>Noise level rated as Definitely Uncomfortable, final measure</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The treatments are described as follows:
+</p>
+
+<dl>
+<dt><code>T1</code></dt><dd><p>Listened again to the tone at their initial DU level, for
+the same amount of time they were able to tolerate it before.</p>
+</dd>
+<dt><code>T2</code></dt><dd><p>Same as T1, with one additional minute exposure</p>
+</dd>
+<dt><code>T3</code></dt><dd><p>Same as T2, but were explicitly instructed to use the relaxation techniques</p>
+</dd>
+<dt><code>Control</code></dt><dd><p>These subject experienced no further exposure to the noise tone
+until the final sensitivity measures were taken</p>
+</dd>
+</dl>
+
+<p>Hand and Taylor described several substantive hypotheses related to the differences
+among treatments. In the <code>Headache</code> data frame, these have been included as
+<code>contrasts(Headache$treatment)</code>
+</p>
+
+
+<h3>Source</h3>
+
+<p>D. J. Hand and C. C. Taylor (1987).
+<em>Multivariate analysis of variance and repeated measures: 
+a practical approach for behavioural scientists</em>
+London: Chapman and Hall.
+ISBN: 0412258005. Table E.1.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Headache)
+str(Headache)
+
+# basic MLM, specifying between-S effects
+headache.mod &lt;- lm(cbind(u1, du1, u2, du2) ~ type * treatment, data=Headache)
+
+##############################
+## between-S tests
+##############################
+Anova(headache.mod, test="Roy")
+
+# test each contrast separately
+print(linearHypothesis(headache.mod, hypothesis="treatment1", test="Roy"), SSP=FALSE)
+print(linearHypothesis(headache.mod, hypothesis="treatment2", test="Roy"), SSP=FALSE)
+print(linearHypothesis(headache.mod, hypothesis="treatment3", test="Roy"), SSP=FALSE)
+
+
+heplot(headache.mod, variables=c(1,3),
+	hypotheses=paste("treatment", 1:3, sep=""),
+	hyp.labels=c("extra.exp", "no.inst", "explicit.inst"),
+	xlab="u1: Initial sensitivity", ylab="u2: Final sensitivity",
+	main="Headache data: Unpleasant levels")
+abline(0, 1, lty=5, col="gray")
+
+heplot(headache.mod, variables=c(2,4),
+	hypotheses=paste("treatment", 1:3, sep=""),
+	xlab="du1: Initial sensitivity", ylab="du2: Final sensitivity",
+	main="Headache data: Definitely Unpleasant levels")
+abline(0, 1, lty=5, col="gray")
+
+pairs(headache.mod)
+
+##############################
+# between-S and within-S tests
+##############################
+idata = expand.grid(level=factor(c("U", "DU")), phase=factor(1:2))
+Anova(headache.mod, idata=idata, idesign=~level*phase)
+
+</code></pre>
+
+
+</div>
+</body></html>

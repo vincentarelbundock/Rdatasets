@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: 8 cognitive variables used by Dwyer for an example.
-      :name: cognitive-variables-used-by-dwyer-for-an-example.
+      :name: Dwyer
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Death by Horse Kicks
-      :name: death-by-horse-kicks
+      :name: HorseKicks
 
    .. rubric:: Description
       :name: description

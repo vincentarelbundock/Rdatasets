@@ -6,7 +6,7 @@
 
    .. rubric:: Data from "Government Transfers and Political Support"
       for Density Tests
-      :name: data-from-government-transfers-and-political-support-for-density-tests
+      :name: gov_transfers_density
 
    .. rubric:: Description
       :name: description

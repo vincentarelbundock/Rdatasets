@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: LaDainian Tomlinson Rushing Yards
-      :name: ladainian-tomlinson-rushing-yards
+      :name: TomlinsonRush
 
    .. rubric:: Description
       :name: description

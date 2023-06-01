@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Unemployment Duration
-      :name: unemployment-duration
+      :name: UnempDur
 
    .. rubric:: Description
       :name: description

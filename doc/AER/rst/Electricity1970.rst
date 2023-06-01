@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Cost Function of Electricity Producers 1970
-      :name: cost-function-of-electricity-producers-1970
+      :name: Electricity1970
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Total monthly departures from Australia
-      :name: total-monthly-departures-from-australia
+      :name: departures
 
    .. rubric:: Description
       :name: description

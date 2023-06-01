@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><title>R: rollcall object, 109th U.S. Senate (2005-06).</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>s109</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='s109'>rollcall object, 109th U.S. Senate (2005-06).</h2>
+
+<h3>Description</h3>
+
+<p>A sample rollcall object, generated using a
+collection of the rollcalls of the 109th U.S. Senate (2005-2006).</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(s109)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>rollcall</code> object containing the recorded votes of the 109th
+U.S. Senate, plus information identifying the legislators and the
+rollcalls.
+</p>
+
+
+<h3>Details</h3>
+
+<p>Note the coding scheme used by Poole and Rosenthal; Yea (1),
+Nay (6) etc.</p>
+
+
+<h3>Source</h3>
+
+<p>Keith Poole's web site:
+<a href="https://legacy.voteview.com/senate109.htm">https://legacy.voteview.com/senate109.htm</a>
+</p>
+<p>Originally scraped from the Senate's web site by Jeff Lewis (UCLA).
+</p>
+<p>Information identifying the votes is available at
+<a href="https://voteview.com/static/data/out/rollcalls/S109_rollcalls.csv">https://voteview.com/static/data/out/rollcalls/S109_rollcalls.csv</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>require(pscl)
+data(s109)
+is(s109,"rollcall")    ## TRUE
+s109                   ## print method for class rollcall
+summary(s109)          ## summary method
+summary(s109,verbose=TRUE)
+## Not run: 
+## how s109 was created
+require(pscl)
+s109 &lt;- readKH("https://voteview.com/static/data/out/votes/S109_votes.ord",
+               desc="109th U.S. Senate",
+               debug=TRUE)
+url &lt;- "https://voteview.com/static/data/out/rollcalls/S109_rollcalls.csv"
+
+s109$vote.data &lt;- data.frame(read.csv(file=url,header=TRUE))
+s109$vote.data$date &lt;- as.Date(s109$vote.data$date,
+                               format="
+dimnames(s109$votes)[[2]] &lt;- paste(s109$vote.data$session,
+                                   s109$vote.data$number,sep="-")
+
+## End(Not run)
+</code></pre>
+
+
+</div>
+</body></html>

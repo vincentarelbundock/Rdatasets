@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Heating Oil Consumption
-      :name: heating-oil-consumption
+      :name: HeatingOil
 
    .. rubric:: Description
       :name: description

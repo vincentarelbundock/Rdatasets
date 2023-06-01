@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Quarterly Approval Ratings of US Presidents
-      :name: quarterly-approval-ratings-of-us-presidents
+      :name: presidents
 
    .. rubric:: Description
       :name: description

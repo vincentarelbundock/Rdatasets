@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: California poll on drilling off the California coast
-      :name: california-poll-on-drilling-off-the-california-coast
+      :name: offshore_drilling
 
    .. rubric:: Description
       :name: description

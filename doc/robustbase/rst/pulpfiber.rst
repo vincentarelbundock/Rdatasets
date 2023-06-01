@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Pulp Fiber and Paper Data
-      :name: pulp-fiber-and-paper-data
+      :name: pulpfiber
 
    .. rubric:: Description
       :name: description

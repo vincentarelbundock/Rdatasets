@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Sample of students and their GPA and IQ
-      :name: sample-of-students-and-their-gpa-and-iq
+      :name: gpa_iq
 
    .. rubric:: Description
       :name: description

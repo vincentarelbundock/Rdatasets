@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Ordinal Data from Koch
-      :name: ordinal-data-from-koch
+      :name: koch
 
    .. rubric:: Description
       :name: description

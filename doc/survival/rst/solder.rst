@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Data from a soldering experiment
-      :name: data-from-a-soldering-experiment
+      :name: solder
 
    .. rubric:: Description
       :name: description

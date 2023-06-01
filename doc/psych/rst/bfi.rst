@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: 25 Personality items representing 5 factors
-      :name: personality-items-representing-5-factors
+      :name: bfi
 
    .. rubric:: Description
       :name: description

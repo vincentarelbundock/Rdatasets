@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Data from a survey of internet-mediated sex workers
-      :name: data-from-a-survey-of-internet-mediated-sex-workers
+      :name: adult_services
 
    .. rubric:: Description
       :name: description

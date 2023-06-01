@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Darwin's Wild Mignonette Data
-      :name: darwins-wild-mignonette-data
+      :name: mignonette
 
    .. rubric:: Description
       :name: description

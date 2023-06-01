@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: P-values from biological expression array data
-      :name: p-values-from-biological-expression-array-data
+      :name: coralPval
 
    .. rubric:: Description
       :name: description

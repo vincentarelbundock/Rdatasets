@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Simulated data set on student housing
-      :name: simulated-data-set-on-student-housing
+      :name: housing
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Latitudes and longitudes for ten Australian cities
-      :name: latitudes-and-longitudes-for-ten-australian-cities
+      :name: aulatlong
 
    .. rubric:: Description
       :name: description

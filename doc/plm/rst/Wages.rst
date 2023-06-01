@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Panel Data of Individual Wages
-      :name: panel-data-of-individual-wages
+      :name: Wages
 
    .. rubric:: Description
       :name: description

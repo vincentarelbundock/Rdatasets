@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Moral Integration of American Cities
-      :name: moral-integration-of-american-cities
+      :name: Angell
 
    .. rubric:: Description
       :name: description

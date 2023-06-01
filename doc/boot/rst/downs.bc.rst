@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Incidence of Down's Syndrome in British Columbia
-      :name: incidence-of-downs-syndrome-in-british-columbia
+      :name: downs.bc
 
    .. rubric:: Description
       :name: description

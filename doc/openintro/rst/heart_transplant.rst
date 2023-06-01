@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Heart Transplant Data
-      :name: heart-transplant-data
+      :name: heart_transplant
 
    .. rubric:: Description
       :name: description

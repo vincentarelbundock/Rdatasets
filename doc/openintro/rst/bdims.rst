@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Body measurements of 507 physically active individuals.
-      :name: body-measurements-of-507-physically-active-individuals.
+      :name: bdims
 
    .. rubric:: Description
       :name: description

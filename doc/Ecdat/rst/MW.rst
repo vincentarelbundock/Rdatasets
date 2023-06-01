@@ -5,7 +5,7 @@
    == ===============
 
    .. rubric:: Growth of Disposable Income and Treasury Bill Rate
-      :name: growth-of-disposable-income-and-treasury-bill-rate
+      :name: MW
 
    .. rubric:: Description
       :name: description

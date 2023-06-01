@@ -4,8 +4,8 @@
    ODGI R Documentation
    ==== ===============
 
-   .. rubric:: Ozone Depleting Gas Index Data, 1992-2019
-      :name: ozone-depleting-gas-index-data-1992-2019
+   .. rubric:: Ozone Depleting Gas Index Data, 1992-2022
+      :name: ODGI
 
    .. rubric:: Description
       :name: description
@@ -28,7 +28,7 @@
    .. rubric:: Format
       :name: format
 
-   A data frame with 56 observations on the following 16 variables.
+   A data frame with 62 observations on the following 16 variables.
 
    ``year``
       the year

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Exam scores
-      :name: exam-scores
+      :name: exams
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Foraging Ecology of Bald Eagles
-      :name: foraging-ecology-of-bald-eagles
+      :name: eagles
 
    .. rubric:: Description
       :name: description

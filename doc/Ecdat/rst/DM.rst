@@ -5,7 +5,7 @@
    == ===============
 
    .. rubric:: DM Dollar Exchange Rate
-      :name: dm-dollar-exchange-rate
+      :name: DM
 
    .. rubric:: Description
       :name: description

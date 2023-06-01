@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Loan data
-      :name: loan-data
+      :name: lending_club
 
    .. rubric:: Description
       :name: description

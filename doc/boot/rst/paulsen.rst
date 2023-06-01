@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Neurotransmission in Guinea Pig Brains
-      :name: neurotransmission-in-guinea-pig-brains
+      :name: paulsen
 
    .. rubric:: Description
       :name: description

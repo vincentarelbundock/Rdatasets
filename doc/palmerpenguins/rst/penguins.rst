@@ -6,7 +6,7 @@
 
    .. rubric:: Size measurements for adult foraging penguins near Palmer
       Station, Antarctica
-      :name: size-measurements-for-adult-foraging-penguins-near-palmer-station-antarctica
+      :name: penguins
 
    .. rubric:: Description
       :name: description

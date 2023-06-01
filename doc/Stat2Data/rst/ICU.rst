@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Intensive Care Unit Patients
-      :name: intensive-care-unit-patients
+      :name: ICU
 
    .. rubric:: Description
       :name: description

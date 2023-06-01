@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Survey Responses on Smoking Behaviour
-      :name: survey-responses-on-smoking-behaviour
+      :name: Smoke
 
    .. rubric:: Description
       :name: description

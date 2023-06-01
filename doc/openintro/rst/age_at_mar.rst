@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Age at first marriage of 5,534 US women.
-      :name: age-at-first-marriage-of-5534-us-women.
+      :name: age_at_mar
 
    .. rubric:: Description
       :name: description

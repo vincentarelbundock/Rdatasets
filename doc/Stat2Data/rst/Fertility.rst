@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Fertility Data for Women Having Trouble Getting Pregnant
-      :name: fertility-data-for-women-having-trouble-getting-pregnant
+      :name: Fertility
 
    .. rubric:: Description
       :name: description

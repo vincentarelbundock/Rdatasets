@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Anonymity and Cooperation
-      :name: anonymity-and-cooperation
+      :name: Guyer
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Statewide Data on Transportation Equipment Manufacturing
-      :name: statewide-data-on-transportation-equipment-manufacturing
+      :name: TranspEq
 
    .. rubric:: Description
       :name: description

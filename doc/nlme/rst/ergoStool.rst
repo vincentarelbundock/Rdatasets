@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Ergometrics experiment with stool types
-      :name: ergometrics-experiment-with-stool-types
+      :name: ergoStool
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Space Shuttle O-ring Failures
-      :name: space-shuttle-o-ring-failures
+      :name: SpaceShuttle
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Statistics of Deadly Quarrels
-      :name: statistics-of-deadly-quarrels
+      :name: Quarrels
 
    .. rubric:: Description
       :name: description

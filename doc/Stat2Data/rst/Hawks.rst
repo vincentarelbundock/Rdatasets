@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Measurements on Three Hawk Species
-      :name: measurements-on-three-hawk-species
+      :name: Hawks
 
    .. rubric:: Description
       :name: description

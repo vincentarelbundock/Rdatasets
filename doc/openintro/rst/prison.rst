@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Prison isolation experiment
-      :name: prison-isolation-experiment
+      :name: prison
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Mouse Litters
-      :name: mouse-litters
+      :name: litters
 
    .. rubric:: Description
       :name: description

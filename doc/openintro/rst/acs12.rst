@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: American Community Survey, 2012
-      :name: american-community-survey-2012
+      :name: acs12
 
    .. rubric:: Description
       :name: description

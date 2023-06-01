@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Effects of Exercise on First Walking
-      :name: effects-of-exercise-on-first-walking
+      :name: WalkingBabies
 
    .. rubric:: Description
       :name: description

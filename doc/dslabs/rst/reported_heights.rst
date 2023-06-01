@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Self-reported Heights
-      :name: self-reported-heights
+      :name: reported_heights
 
    .. rubric:: Description
       :name: description
@@ -18,7 +18,7 @@
 
    ::
 
-      data(reported_heights)
+      reported_heights
 
    .. rubric:: Format
       :name: format
@@ -40,5 +40,4 @@
 
    ::
 
-      data(reported_heights)
       head(reported_heights)

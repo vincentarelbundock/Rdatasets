@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Effects on Learning of Small Class Sizes
-      :name: effects-on-learning-of-small-class-sizes
+      :name: Star
 
    .. rubric:: Description
       :name: description

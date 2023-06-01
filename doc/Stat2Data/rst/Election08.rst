@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: 2008 U.S. Presidential Election
-      :name: u.s.-presidential-election
+      :name: Election08
 
    .. rubric:: Description
       :name: description

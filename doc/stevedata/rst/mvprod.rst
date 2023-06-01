@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Motor Vehicle Production by Country, 1950-2019
-      :name: motor-vehicle-production-by-country-1950-2019
+      :name: mvprod
 
    .. rubric:: Description
       :name: description

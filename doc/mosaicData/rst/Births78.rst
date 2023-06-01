@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: US Births
-      :name: us-births
+      :name: Births
 
    .. rubric:: Description
       :name: description

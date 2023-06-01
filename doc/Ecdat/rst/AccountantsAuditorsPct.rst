@@ -5,7 +5,7 @@
    ====================== ===============
 
    .. rubric:: Accountants and Auditors in the US 1850-2016
-      :name: accountants-and-auditors-in-the-us-1850-2016
+      :name: AccountantsAuditorsPct
 
    .. rubric:: Description
       :name: description

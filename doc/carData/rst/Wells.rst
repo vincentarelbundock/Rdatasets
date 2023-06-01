@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Well Switching in Bangladesh
-      :name: well-switching-in-bangladesh
+      :name: Wells
 
    .. rubric:: Description
       :name: description

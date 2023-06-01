@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: First Day Survey of Statistics Students
-      :name: first-day-survey-of-statistics-students
+      :name: Day1Survey
 
    .. rubric:: Description
       :name: description

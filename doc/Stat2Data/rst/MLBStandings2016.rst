@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: MLB Standings in 2016
-      :name: mlb-standings-in-2016
+      :name: MLBStandings2016
 
    .. rubric:: Description
       :name: description

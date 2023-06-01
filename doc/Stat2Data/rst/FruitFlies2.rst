@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Fruit Fly Sexual Activity and Male Competition
-      :name: fruit-fly-sexual-activity-and-male-competition
+      :name: FruitFlies2
 
    .. rubric:: Description
       :name: description

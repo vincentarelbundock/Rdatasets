@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Fruit Fly Sexual Activity and Longevity
-      :name: fruit-fly-sexual-activity-and-longevity
+      :name: FruitFlies
 
    .. rubric:: Description
       :name: description

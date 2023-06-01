@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Prestige of Canadian Occupations
-      :name: prestige-of-canadian-occupations
+      :name: Prestige
 
    .. rubric:: Description
       :name: description

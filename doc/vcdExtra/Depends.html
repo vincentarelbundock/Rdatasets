@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><title>R: Dependencies of R Packages</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Depends</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Depends'>
+Dependencies of R Packages
+</h2>
+
+<h3>Description</h3>
+
+<p>This one-way table gives the type-token distribution of the number of
+dependencies declared in 4983 packages listed on CRAN on January 17, 2014.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Depends)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The format is a one-way frequency table of counts of packages with 0, 1, 2, ... dependencies.
+</p>
+<p>'table' int [1:15(1d)] 986 1347 993 685 375 298 155 65 32 19 ...
+- attr(*, &quot;dimnames&quot;)=List of 1
+..$ Depends: chr [1:15] &quot;0&quot; &quot;1&quot; &quot;2&quot; &quot;3&quot; ...
+</p>
+
+
+<h3>Source</h3>
+
+<p>Using code from
+<a href="https://blog.revolutionanalytics.com/2013/12/a-look-at-the-distribution-of-r-package-dependencies.html">https://blog.revolutionanalytics.com/2013/12/a-look-at-the-distribution-of-r-package-dependencies.html</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Depends)
+plot(Depends, 
+     xlab="Number of Dependencies", 
+     ylab="Number of R Packages", 
+     lwd=8)
+
+# what type of distribution?
+# Ord_plot can't classify this!
+Ord_plot(Depends)
+
+## Not run: 
+# The code below, from Joseph Rickert, downloads and tabulates the data
+p &lt;- as.data.frame(available.packages(),stringsAsFactors=FALSE)
+names(p)
+
+pkgs &lt;- data.frame(p[,c(1,4)])                  # Pick out Package names and Depends
+row.names(pkgs) &lt;- NULL                         # Get rid of row names
+pkgs &lt;- pkgs[complete.cases(pkgs[,2]),]         # Remove NAs
+
+pkgs$Depends2 &lt;-strsplit(pkgs$Depends,",")      # split list of Depends
+pkgs$numDepends &lt;- as.numeric(lapply(pkgs$Depends2,length)) # Count number of dependencies in list
+zeros &lt;- c(rep(0,dim(p)[1] - dim(pkgs)[1]))     # Account for packages with no dependencies
+Deps &lt;- as.vector(c(zeros,pkgs$numDepends))     # Set up to tablate
+Depends &lt;- table(Deps)
+
+
+## End(Not run)
+</code></pre>
+
+
+</div>
+</body></html>

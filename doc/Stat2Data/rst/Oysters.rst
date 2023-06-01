@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Size of Oysters
-      :name: size-of-oysters
+      :name: Oysters
 
    .. rubric:: Description
       :name: description

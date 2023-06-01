@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: The weight of rat pups
-      :name: the-weight-of-rat-pups
+      :name: RatPupWeight
 
    .. rubric:: Description
       :name: description

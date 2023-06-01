@@ -6,7 +6,7 @@
 
    .. rubric:: Deidentified Results of COVID-19 testing at the
       Children's Hospital of Pennsylvania (CHOP) in 2020
-      :name: deidentified-results-of-covid-19-testing-at-the-childrens-hospital-of-pennsylvania-chop-in-2020
+      :name: covid_testing
 
    .. rubric:: Description
       :name: description

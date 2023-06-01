@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Income distribution (percentages) in the Northeast US
-      :name: income-distribution-percentages-in-the-northeast-us
+      :name: income
 
    .. rubric:: Description
       :name: description

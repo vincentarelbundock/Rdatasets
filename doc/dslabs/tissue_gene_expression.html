@@ -16,7 +16,7 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>tissue_gene_expression</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>Gene expression profiles for 189 biological samples taken from seven different tissue types.</h2>
+<h2 id='tissue_gene_expression'>Gene expression profiles for 189 biological samples taken from seven different tissue types.</h2>
 
 <h3>Description</h3>
 
@@ -29,7 +29,7 @@ are a random subset of the original 22,215.
 
 <h3>Usage</h3>
 
-<pre><code class='language-R'>data(tissue_gene_expression)
+<pre><code class='language-R'>tissue_gene_expression
 </code></pre>
 
 
@@ -63,8 +63,7 @@ clustering and machine learning techniques.
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(tissue_gene_expression)
-table(tissue_gene_expression$y)
+<pre><code class='language-R'>table(tissue_gene_expression$y)
 dim(tissue_gene_expression$x)
 </code></pre>
 

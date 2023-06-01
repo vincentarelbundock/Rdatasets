@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Dewpoint Data
-      :name: dewpoint-data
+      :name: dewpoint
 
    .. rubric:: Description
       :name: description

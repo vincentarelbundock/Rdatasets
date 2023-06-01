@@ -6,7 +6,7 @@
 
    .. rubric:: Florence Nightingale's data on deaths from various causes
       in the Crimean War
-      :name: florence-nightingales-data-on-deaths-from-various-causes-in-the-crimean-war
+      :name: Nightingale
 
    .. rubric:: Description
       :name: description

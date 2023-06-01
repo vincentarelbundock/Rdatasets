@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: data from Exercise 7.6, p222
-      :name: data-from-exercise-7.6-p222
+      :name: drughiv
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Pharmacokinetics of Theophylline
-      :name: pharmacokinetics-of-theophylline
+      :name: Theoph
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: THC for Antinausea Treatment in Chemotherapy
-      :name: thc-for-antinausea-treatment-in-chemotherapy
+      :name: ChemoTHC
 
    .. rubric:: Description
       :name: description

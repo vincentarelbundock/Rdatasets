@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: DEM/USD Exchange Rate Returns
-      :name: demusd-exchange-rate-returns
+      :name: MarkDollar
 
    .. rubric:: Description
       :name: description

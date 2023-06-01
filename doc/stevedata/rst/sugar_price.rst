@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: IMF Primary Commodity Price Data for Sugar
-      :name: imf-primary-commodity-price-data-for-sugar
+      :name: sugar_price
 
    .. rubric:: Description
       :name: description

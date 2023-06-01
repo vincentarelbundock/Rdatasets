@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Clustered Ordinal Respiratory Disorder
-      :name: clustered-ordinal-respiratory-disorder
+      :name: respdis
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Partly Artificial Data on the U. S. Economy
-      :name: partly-artificial-data-on-the-u.-s.-economy
+      :name: Kmenta
 
    .. rubric:: Description
       :name: description

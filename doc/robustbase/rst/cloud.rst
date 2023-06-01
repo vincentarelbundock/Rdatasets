@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Cloud point of a Liquid
-      :name: cloud-point-of-a-liquid
+      :name: cloud
 
    .. rubric:: Description
       :name: description

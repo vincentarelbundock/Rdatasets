@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head><title>R: Advertising Behavior by Males Cormorants</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Cormorants</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Cormorants'>
+Advertising Behavior by Males Cormorants
+</h2>
+
+<h3>Description</h3>
+
+<p>Male double-crested cormorants use advertising behavior to attract females for breeding.
+In this study by Meagan McRae (2015), cormorants were observed two or three times a week
+at six stations in a tree-nesting colony
+for an entire season, April 10, 2014-July 10, 2014.
+The number of advertising birds was counted and these observations were classified
+by characteristics of the trees and nests.
+</p>
+<p>The goal is to determine how this behavior varies temporally over the season and spatially,
+as well as with characteristics of nesting sites.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Cormorants")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 343 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt><code>category</code></dt><dd><p>Time of season, divided into 3 categories based on breeding chronology, an ordered factor with levels <code>Pre</code> &lt; <code>Incubation</code> &lt; <code>Chicks Present</code></p>
+</dd>
+<dt><code>week</code></dt><dd><p>Week of the season</p>
+</dd>
+<dt><code>station</code></dt><dd><p>Station of observations on two different peninsulas in a park, a factor with levels <code>B1</code> <code>B2</code> <code>C1</code> <code>C2</code> <code>C3</code> <code>C4</code></p>
+</dd>
+<dt><code>nest</code></dt><dd><p>Type of nest, an ordered factor with levels <code>no</code> &lt; <code>partial</code> &lt; <code>full</code></p>
+</dd>
+<dt><code>height</code></dt><dd><p>Relative height of bird in the tree, an ordered factor with levels <code>low</code> &lt; <code>mid</code> &lt; <code>high</code></p>
+</dd>
+<dt><code>density</code></dt><dd><p>Number of other nests in the tree, an ordered factor with levels <code>zero</code> &lt; <code>few</code> &lt; <code>moderate</code> &lt; <code>high</code></p>
+</dd>
+<dt><code>tree_health</code></dt><dd><p>Health of the tree the bird is advertising in, a factor with levels <code>dead</code> <code>healthy</code></p>
+</dd>
+<dt><code>count</code></dt><dd><p>Number of birds advertising, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Observations were made on only 2 days in weeks 3 and 4, but 3 days in all other weeks.
+One should use log(days) as an offset, so that the response measures rate.
+</p>
+<p><code>Cormorants$days &lt;- ifelse(Cormorants$week %in% 3:4, 2, 3)</code>
+</p>
+
+
+<h3>Source</h3>
+
+<p>McRae, M. (2015).
+Spatial, Habitat and Frequency Changes in Double-crested Cormorant Advertising Display in a  Tree-nesting Colony.
+Unpublished MA project, Environmental Studies, York University.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Cormorants)
+str(Cormorants)
+
+if (require("ggplot2")) {
+  print(ggplot(Cormorants, aes(count)) + 
+    geom_histogram(binwidth=0.5) + 
+	  labs(x="Number of birds advertising"))
+
+# Quick look at the data, on the log scale, for plots of `count ~ week`, 
+#   stratified by something else.
+
+  print(ggplot(Cormorants, aes(week, count, color=height)) + 
+    geom_jitter() +
+	  stat_smooth(method="loess", size=2) + 
+	  scale_y_log10(breaks=c(1,2,5,10)) +
+	  geom_vline(xintercept=c(4.5, 9.5)))
+}
+
+# ### models using week 
+fit1 &lt;-glm(count ~ week + station + nest + height + density + tree_health, 
+           data=Cormorants,
+           family =  poisson)
+
+if (requireNamespace("car"))
+  car::Anova(fit1)
+  
+# plot fitted effects
+if (requireNamespace("effects"))
+  plot(effects::allEffects(fit1))
+
+</code></pre>
+
+
+</div>
+</body></html>

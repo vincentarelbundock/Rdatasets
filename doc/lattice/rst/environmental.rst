@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Atmospheric environmental conditions in New York City
-      :name: atmospheric-environmental-conditions-in-new-york-city
+      :name: H_environmental
 
    .. rubric:: Description
       :name: description

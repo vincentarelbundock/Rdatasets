@@ -6,7 +6,7 @@
 
    .. rubric:: 12 variables created by Schmid and Leiman to show the
       Schmid-Leiman Transformation
-      :name: variables-created-by-schmid-and-leiman-to-show-the-schmid-leiman-transformation
+      :name: Schmid
 
    .. rubric:: Description
       :name: description

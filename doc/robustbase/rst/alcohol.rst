@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Alcohol Solubility in Water Data
-      :name: alcohol-solubility-in-water-data
+      :name: alcohol
 
    .. rubric:: Description
       :name: description

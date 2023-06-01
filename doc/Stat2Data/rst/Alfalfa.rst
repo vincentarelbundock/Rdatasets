@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Alfalfa Growth
-      :name: alfalfa-growth
+      :name: Alfalfa
 
    .. rubric:: Description
       :name: description

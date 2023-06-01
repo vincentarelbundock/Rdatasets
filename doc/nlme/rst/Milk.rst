@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Protein content of cows' milk
-      :name: protein-content-of-cows-milk
+      :name: Milk
 
    .. rubric:: Description
       :name: description

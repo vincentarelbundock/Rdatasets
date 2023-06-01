@@ -16,12 +16,12 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>state</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>US State Facts and Figures</h2>
+<h2 id='state'>US State Facts and Figures</h2>
 
 <h3>Description</h3>
 
-<p>Data sets related to the 50 states of the United States of
-America.</p>
+<p>Data sets related to the 50 states of the United States of America.
+</p>
 
 
 <h3>Usage</h3>
@@ -38,7 +38,7 @@ state.x77
 
 <h3>Details</h3>
 
-<p><span style="font-family: Courier New, Courier; color: #666666;"><b>R</b></span> currently contains the following &ldquo;state&rdquo; data sets.  Note
+<p><span class="rlang"><b>R</b></span> currently contains the following &ldquo;state&rdquo; data sets.  Note
 that all data are arranged according to alphabetical order of the
 state names.
 </p>
@@ -53,9 +53,9 @@ miles).</p>
 <dt><code>state.center</code>:</dt><dd><p> list with components named <code>x</code> and
 <code>y</code> giving the approximate geographic center of each state in
 negative longitude and latitude.  Alaska and Hawaii are placed
-just off the West Coast.</p>
+just off the West Coast.  See &lsquo;Examples&rsquo; on how to &ldquo;correct&rdquo;.</p>
 </dd>
-<dt><code>state.division</code>:</dt><dd><p>factor giving state divisions (New
+<dt><code>state.division</code>:</dt><dd><p><code>factor</code> giving state divisions (New
 England, Middle Atlantic, South Atlantic, East South Central, West
 South Central, East North Central, West North Central, Mountain,
 and Pacific).</p>
@@ -63,7 +63,7 @@ and Pacific).</p>
 <dt><code>state.name</code>:</dt><dd><p>character vector giving the full state
 names.</p>
 </dd>
-<dt><code>state.region</code>:</dt><dd><p>factor giving the region (Northeast,
+<dt><code>state.region</code>:</dt><dd><p><code>factor</code> giving the region (Northeast,
 South, North Central, West) that each state belongs to.</p>
 </dd>
 <dt><code>state.x77</code>:</dt><dd><p>matrix with 50 rows and 8 columns giving
@@ -96,6 +96,10 @@ city</p>
 </dd>
 </dl>
 
+<p>Note that a square mile is by definition exactly
+<code>(cm(1760 * 3 * 12) / 100 / 1000)^2</code> <code class="reqn">km^2</code>, i.e.,
+<code class="reqn">2.589988110336 km^2</code>.
+</p>
 
 
 <h3>Source</h3>
@@ -114,6 +118,32 @@ city</p>
 <em>The New S Language</em>.
 Wadsworth &amp; Brooks/Cole.
 </p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>(dst &lt;- dxy &lt;- data.frame(state.center, row.names=state.abb))
+## Alaska and Hawaii are placed just off the West Coast (for compact map drawing):
+dst[c("AK", "HI"),]
+## state.center2 := version of state.center with "correct" coordinates for AK &amp; HI:
+## From https://pubs.usgs.gov/gip/Elevations-Distances/elvadist.html#Geographic%20Centers
+##   Alaska   63°50' N., 152°00' W., 60 miles northwest of Mount McKinley
+##   Hawaii   20°15' N., 156°20' W., off Maui Island
+dxy["AK",] &lt;- c(-152.  , 63.83) # or  c(-152.11, 65.17)
+dxy["HI",] &lt;- c(-156.33, 20.25) # or  c(-156.69, 20.89)
+state.center2 &lt;- as.list(dxy)
+
+plot(dxy, asp=1.2, pch=3, col=2)
+text(state.center2, state.abb, cex=1/2, pos=4, offset=1/4)
+i &lt;- c("AK","HI")
+do.call(arrows, c(setNames(c(dst[i,], dxy[i,]), c("x0","y0", "x1","y1")),
+                  col=adjustcolor(4, .7), length=1/8))
+points(dst[i,], col=2)
+if(FALSE) { # if(require("maps")) {
+   map("state", interior = FALSE,          add = TRUE)
+   map("state", boundary = FALSE, lty = 2, add = TRUE)
+}
+</code></pre>
 
 
 </div>

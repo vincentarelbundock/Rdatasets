@@ -6,7 +6,7 @@
 
    .. rubric:: Attitudes on the Justifiability of Abortion in the United
       States (World Values Survey, 1982-2011)
-      :name: attitudes-on-the-justifiability-of-abortion-in-the-united-states-world-values-survey-1982-2011
+      :name: wvs_usa_abortion
 
    .. rubric:: Description
       :name: description

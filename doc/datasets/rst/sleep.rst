@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Student's Sleep Data
-      :name: students-sleep-data
+      :name: sleep
 
    .. rubric:: Description
       :name: description

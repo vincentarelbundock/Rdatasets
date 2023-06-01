@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Cherry Blossom Race
-      :name: cherry-blossom-race
+      :name: TenMileRace
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Dow Jones Index Data (Franses)
-      :name: dow-jones-index-data-franses
+      :name: DJFranses
 
    .. rubric:: Description
       :name: description

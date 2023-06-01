@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Failure Time of PET Film
-      :name: failure-time-of-pet-film
+      :name: hirose
 
    .. rubric:: Description
       :name: description

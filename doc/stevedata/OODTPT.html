@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: Data for &quot;Optimal Obfuscation: Democracy and Trade Policy...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>OODTPT</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='OODTPT'>Data for &quot;Optimal Obfuscation: Democracy and Trade Policy Transparency&quot;</h2>
+
+<h3>Description</h3>
+
+<p>A data set for replicating an argument about the relationship between democracy
+and tariffs/non-tariff trade barriers.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>OODTPT
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 75 observations on the following 16 variables.
+</p>
+
+<dl>
+<dt><code>country</code></dt><dd><p>a character vector for the country</p>
+</dd>
+<dt><code>isocode</code></dt><dd><p>a character vector for the three-character ISO code of the country</p>
+</dd>
+<dt><code>tariff</code></dt><dd><p>the mean statutory most favored nation tariff rate</p>
+</dd>
+<dt><code>corecov</code></dt><dd><p>the core non-tariff barrier coverage ratio</p>
+</dd>
+<dt><code>qualcov</code></dt><dd><p>the quality non-tariff barrier coverate ratio</p>
+</dd>
+<dt><code>polity</code></dt><dd><p>the familiar [-10,10] Polity measure of democracy</p>
+</dd>
+<dt><code>iec</code></dt><dd><p>the index of electorcal competitiveness from the World Bank</p>
+</dd>
+<dt><code>lngdppc</code></dt><dd><p>real GDP per capita in 1995 dollars</p>
+</dd>
+<dt><code>lngdp</code></dt><dd><p>real GDP in 1995 dollars</p>
+</dd>
+<dt><code>lnexpgdp</code></dt><dd><p>export dependence (i.e. export/GDP ratio)</p>
+</dd>
+<dt><code>reer</code></dt><dd><p>real effective exchange rate</p>
+</dd>
+<dt><code>growth</code></dt><dd><p>GDP per capita growth rate</p>
+</dd>
+<dt><code>dimpgdp</code></dt><dd><p>the change in the import/GDP ratio over the past three years</p>
+</dd>
+<dt><code>lngovcons</code></dt><dd><p>the log of country's government consumption spending as a percentage of GDP</p>
+</dd>
+<dt><code>gatt</code></dt><dd><p>a dummy variable for GATT membership</p>
+</dd>
+<dt><code>avgtar</code></dt><dd><p>the country's average most favored nation tariff rate</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data downloaded Joshua Alley's Github repository on simple cross-sectional
+OLS models. These were originally two separate Stata files that I merged into one.
+Please read the Kono (2006) article for more information.
+</p>
+
+
+<h3>References</h3>
+
+<p>Kono, Daniel. 2006. &quot;Optimal Obfuscation: Democracy and Trade Policy Transparency&quot;
+*American Political Science Review* 100(3): 369-384.
+</p>
+
+
+</div>
+</body></html>

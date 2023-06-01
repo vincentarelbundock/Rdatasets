@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Klein Model I
-      :name: klein-model-i
+      :name: KleinI
 
    .. rubric:: Description
       :name: description

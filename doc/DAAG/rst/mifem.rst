@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: WHO Monica Data
-      :name: who-monica-data
+      :name: monica
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Subset of C-horizon of Kola Data
-      :name: subset-of-c-horizon-of-kola-data
+      :name: chorSub
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: JOBS II data
-      :name: jobs-ii-data
+      :name: jobs
 
    .. rubric:: Description
       :name: description

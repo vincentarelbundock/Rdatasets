@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Tests of Auditory Perception in Children with OME
-      :name: tests-of-auditory-perception-in-children-with-ome
+      :name: OME
 
    .. rubric:: Description
       :name: description
@@ -137,7 +137,7 @@
       summary(lm(L75 ~ Noise/Age, data = OMEif, na.action = na.omit))
       summary(lm(L75 ~ Noise/(Age + OME), data = OMEif,
                  subset = (Age >= 30 & Age <= 60),
-                 na.action = na.omit), cor = FALSE)
+                 na.action = na.omit), correlation = FALSE)
 
       # Or fit by weighted least squares
       fpl75 <- deriv(~ sqrt(n)*(r/n - 0.5 - 0.5/(1 + exp(-(x-L75)/scal))),

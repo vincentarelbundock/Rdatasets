@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Water Voles Data
-      :name: water-voles-data
+      :name: watervoles
 
    .. rubric:: Description
       :name: description

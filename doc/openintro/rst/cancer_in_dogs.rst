@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Cancer in dogs
-      :name: cancer-in-dogs
+      :name: cancer_in_dogs
 
    .. rubric:: Description
       :name: description

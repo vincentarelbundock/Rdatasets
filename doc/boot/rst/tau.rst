@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Tau Particle Decay Modes
-      :name: tau-particle-decay-modes
+      :name: tau
 
    .. rubric:: Description
       :name: description

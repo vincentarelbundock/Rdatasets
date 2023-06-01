@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: The effect of terbuthylazin on growth rate
-      :name: the-effect-of-terbuthylazin-on-growth-rate
+      :name: terbuthylazin
 
    .. rubric:: Description
       :name: description

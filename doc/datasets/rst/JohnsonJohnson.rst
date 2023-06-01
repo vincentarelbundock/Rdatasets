@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Quarterly Earnings per Johnson & Johnson Share
-      :name: quarterly-earnings-per-johnson-johnson-share
+      :name: JohnsonJohnson
 
    .. rubric:: Description
       :name: description

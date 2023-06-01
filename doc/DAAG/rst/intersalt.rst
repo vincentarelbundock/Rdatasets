@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Blood pressure versus Salt; inter-population data
-      :name: blood-pressure-versus-salt-inter-population-data
+      :name: intersalt
 
    .. rubric:: Description
       :name: description

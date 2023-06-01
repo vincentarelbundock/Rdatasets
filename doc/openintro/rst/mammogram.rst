@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Experiment with Mammogram Randomized
-      :name: experiment-with-mammogram-randomized
+      :name: mammogram
 
    .. rubric:: Description
       :name: description

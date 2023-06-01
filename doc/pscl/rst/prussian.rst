@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Prussian army horse kick data
-      :name: prussian-army-horse-kick-data
+      :name: prussian
 
    .. rubric:: Description
       :name: description

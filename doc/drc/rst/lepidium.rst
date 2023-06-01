@@ -6,7 +6,7 @@
 
    .. rubric:: Dose-response profile of degradation of agrochemical
       using lepidium
-      :name: dose-response-profile-of-degradation-of-agrochemical-using-lepidium
+      :name: lepidium
 
    .. rubric:: Description
       :name: description

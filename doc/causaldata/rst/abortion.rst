@@ -6,7 +6,7 @@
 
    .. rubric:: Data on abortion legalization and sexually transmitted
       infections
-      :name: data-on-abortion-legalization-and-sexually-transmitted-infections
+      :name: abortion
 
    .. rubric:: Description
       :name: description

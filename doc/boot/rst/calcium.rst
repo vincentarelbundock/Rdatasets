@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Calcium Uptake Data
-      :name: calcium-uptake-data
+      :name: calcium
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: State Teen Pregnancy Rates
-      :name: state-teen-pregnancy-rates
+      :name: TeenPregnancy
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Aberrant Crypt Foci in Rat Colons
-      :name: aberrant-crypt-foci-in-rat-colons
+      :name: ACF1
 
    .. rubric:: Description
       :name: description

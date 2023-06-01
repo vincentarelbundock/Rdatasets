@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Carbon Monoxide Transfer
-      :name: carbon-monoxide-transfer
+      :name: co.transfer
 
    .. rubric:: Description
       :name: description

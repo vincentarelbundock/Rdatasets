@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Leaf Measurements
-      :name: leaf-measurements
+      :name: LeafWidth
 
    .. rubric:: Description
       :name: description

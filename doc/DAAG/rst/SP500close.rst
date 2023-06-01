@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Closing Numbers for S and P 500 Index
-      :name: closing-numbers-for-s-and-p-500-index
+      :name: SP500close
 
    .. rubric:: Description
       :name: description

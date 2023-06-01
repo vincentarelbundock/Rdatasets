@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Split-Plot Experiment on Varieties of Alfalfa
-      :name: split-plot-experiment-on-varieties-of-alfalfa
+      :name: Alfalfa
 
    .. rubric:: Description
       :name: description

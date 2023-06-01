@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Migraines and acupuncture
-      :name: migraines-and-acupuncture
+      :name: migraine
 
    .. rubric:: Description
       :name: description

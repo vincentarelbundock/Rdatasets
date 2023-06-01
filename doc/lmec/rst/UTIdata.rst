@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Data set for Unstructured Treatment Interruption Study
-      :name: data-set-for-unstructured-treatment-interruption-study
+      :name: UTIdata
 
    .. rubric:: Description
       :name: description

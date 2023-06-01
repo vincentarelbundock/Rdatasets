@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Sales Prices of Houses in the City of Windsor
-      :name: sales-prices-of-houses-in-the-city-of-windsor
+      :name: Housing
 
    .. rubric:: Description
       :name: description

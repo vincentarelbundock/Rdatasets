@@ -6,7 +6,7 @@
 
    .. rubric:: Penguin size, clutch, and blood isotope data for foraging
       adults near Palmer Station, Antarctica
-      :name: penguin-size-clutch-and-blood-isotope-data-for-foraging-adults-near-palmer-station-antarctica
+      :name: penguins_raw
 
    .. rubric:: Description
       :name: description

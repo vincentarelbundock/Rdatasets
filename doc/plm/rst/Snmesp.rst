@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Employment and Wages in Spain
-      :name: employment-and-wages-in-spain
+      :name: Snmesp
 
    .. rubric:: Description
       :name: description

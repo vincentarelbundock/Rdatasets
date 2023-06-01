@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Simulated Google search experiment
-      :name: simulated-google-search-experiment
+      :name: gsearch
 
    .. rubric:: Description
       :name: description

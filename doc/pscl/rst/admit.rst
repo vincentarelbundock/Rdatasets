@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Applications to a Political Science PhD Program
-      :name: applications-to-a-political-science-phd-program
+      :name: admit
 
    .. rubric:: Description
       :name: description

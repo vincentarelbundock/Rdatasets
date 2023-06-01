@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Minneapolis Demographic Data 2015, by Neighborhood
-      :name: minneapolis-demographic-data-2015-by-neighborhood
+      :name: MplsDemo
 
    .. rubric:: Description
       :name: description

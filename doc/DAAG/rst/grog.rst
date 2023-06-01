@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Alcohol consumption in Australia and New Zealand
-      :name: alcohol-consumption-in-australia-and-new-zealand
+      :name: grog
 
    .. rubric:: Description
       :name: description

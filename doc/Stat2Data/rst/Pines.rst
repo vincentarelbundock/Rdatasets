@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Measurements of Pine Tree Seedlings
-      :name: measurements-of-pine-tree-seedlings
+      :name: Pines
 
    .. rubric:: Description
       :name: description

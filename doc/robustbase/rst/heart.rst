@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Heart Catherization Data
-      :name: heart-catherization-data
+      :name: heart
 
    .. rubric:: Description
       :name: description

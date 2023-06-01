@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: General Health Questionnaire
-      :name: general-health-questionnaire
+      :name: GHQ
 
    .. rubric:: Description
       :name: description

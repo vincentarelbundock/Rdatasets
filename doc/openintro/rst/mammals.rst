@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Sleep in Mammals
-      :name: sleep-in-mammals
+      :name: mammals
 
    .. rubric:: Description
       :name: description

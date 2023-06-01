@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Oral Lesions in Rural India
-      :name: oral-lesions-in-rural-india
+      :name: orallesions
 
    .. rubric:: Description
       :name: description

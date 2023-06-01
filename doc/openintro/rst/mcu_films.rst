@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Marvel Cinematic Universe films
-      :name: marvel-cinematic-universe-films
+      :name: mcu_films
 
    .. rubric:: Description
       :name: description

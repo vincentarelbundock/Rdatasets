@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: United States Presidental History
-      :name: united-states-presidental-history
+      :name: president
 
    .. rubric:: Description
       :name: description

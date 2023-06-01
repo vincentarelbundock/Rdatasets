@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Credit Card Balance Data
-      :name: credit-card-balance-data
+      :name: Credit
 
    .. rubric:: Description
       :name: description

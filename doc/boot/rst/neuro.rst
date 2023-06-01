@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Neurophysiological Point Process Data
-      :name: neurophysiological-point-process-data
+      :name: neuro
 
    .. rubric:: Description
       :name: description

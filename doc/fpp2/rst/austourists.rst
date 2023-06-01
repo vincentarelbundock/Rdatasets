@@ -6,7 +6,7 @@
 
    .. rubric:: International Tourists to Australia: Total visitor
       nights.
-      :name: international-tourists-to-australia-total-visitor-nights.
+      :name: austourists
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Index of US Industrial Production
-      :name: index-of-us-industrial-production
+      :name: USProdIndex
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Mauna Loa Atmospheric CO2 Concentration
-      :name: mauna-loa-atmospheric-co2-concentration
+      :name: co2
 
    .. rubric:: Description
       :name: description

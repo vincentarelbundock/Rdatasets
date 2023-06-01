@@ -6,7 +6,7 @@
 
    .. rubric:: Iridium Levels in Rock Layers to Investigate Dinosaur
       Extinction
-      :name: iridium-levels-in-rock-layers-to-investigate-dinosaur-extinction
+      :name: Dinosaurs
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Genetically Modified and Wild Type Rice Data
-      :name: genetically-modified-and-wild-type-rice-data
+      :name: rice
 
    .. rubric:: Description
       :name: description

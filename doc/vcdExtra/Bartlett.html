@@ -1,0 +1,113 @@
+<!DOCTYPE html><html><head><title>R: Bartlett Data on Plum Root Cuttings</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Bartlett</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Bartlett'>Bartlett Data on Plum Root Cuttings</h2>
+
+<h3>Description</h3>
+
+<p>In an experiment to investigate the effect of cutting length (two levels) and planting time (two levels) 
+on the survival of plum root cuttings, 240 cuttings were planted for each of the 2 x 2 combinations of these factors, 
+and their survival was later recorded. 
+</p>
+<p>Bartlett (1935) used these data to illustrate a method for testing for no three-way interaction in a contingency table.</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Bartlett)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A 3-dimensional array resulting from cross-tabulating 3 variables for   960 observations. The variable names and their levels are:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name          </td><td style="text-align: left;"> Levels                </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1  </td><td style="text-align: left;"> <code>Alive</code>  </td><td style="text-align: left;"> <code>"Alive", "Dead"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2  </td><td style="text-align: left;"> <code>Time</code>   </td><td style="text-align: left;"> <code>"Now", "Spring"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    3  </td><td style="text-align: left;"> <code>Length</code> </td><td style="text-align: left;"> <code>"Long", "Short"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+
+<p>Hand, D. and Daly, F. and Lunn, A. D.and McConway, K. J. and Ostrowski, E. (1994).
+<em>A Handbook of Small Data Sets</em>.  London: Chapman &amp; Hall, p. 15, # 19.
+</p>
+
+
+<h3>References</h3>
+
+
+<p>Bartlett, M. S. (1935).
+Contingency Table Interactions 
+<em>Journal of the Royal Statistical Society</em>, Supplement, 1935, 2, 248-252.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Bartlett)
+
+# measures of association
+assocstats(Bartlett)
+oddsratio(Bartlett)
+
+# Test models
+
+## Independence
+MASS::loglm(formula = ~Alive + Time + Length, data = Bartlett)
+
+## No three-way association
+MASS::loglm(formula = ~(Alive + Time + Length)^2, data = Bartlett)
+
+# Use woolf_test() for a formal test of homogeneity of odds ratios
+vcd::woolf_test(Bartlett)
+
+
+# Plots
+fourfold(Bartlett, mfrow=c(1,2))
+
+mosaic(Bartlett, shade=TRUE)
+pairs(Bartlett, gp=shading_Friendly)
+</code></pre>
+
+
+</div>
+</body></html>

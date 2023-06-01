@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Drew Brees Passing Statistics (2016)
-      :name: drew-brees-passing-statistics-2016
+      :name: BreesPass
 
    .. rubric:: Description
       :name: description

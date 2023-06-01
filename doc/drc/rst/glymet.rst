@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Glyphosate and metsulfuron-methyl tested on algae.
-      :name: glyphosate-and-metsulfuron-methyl-tested-on-algae.
+      :name: glymet
 
    .. rubric:: Description
       :name: description

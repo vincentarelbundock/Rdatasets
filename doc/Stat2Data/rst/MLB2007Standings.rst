@@ -6,7 +6,7 @@
 
    .. rubric:: Standings and Team Statistics from the 2007 Baseball
       Season
-      :name: standings-and-team-statistics-from-the-2007-baseball-season
+      :name: MLB2007Standings
 
    .. rubric:: Description
       :name: description

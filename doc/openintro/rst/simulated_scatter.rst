@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: Simulated data for sample scatterplots
-      :name: simulated-data-for-sample-scatterplots
+      :name: simulated_scatter
 
    .. rubric:: Description
       :name: description

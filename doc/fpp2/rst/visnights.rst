@@ -6,7 +6,7 @@
 
    .. rubric:: Quarterly visitor nights for various regions of
       Australia.
-      :name: quarterly-visitor-nights-for-various-regions-of-australia.
+      :name: visnights
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Photo classifications: fashion or not
-      :name: photo-classifications-fashion-or-not
+      :name: photo_classify
 
    .. rubric:: Description
       :name: description

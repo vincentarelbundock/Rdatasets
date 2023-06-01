@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Post-Coma Recovery of IQ
-      :name: post-coma-recovery-of-iq
+      :name: Wong
 
    .. rubric:: Description
       :name: description

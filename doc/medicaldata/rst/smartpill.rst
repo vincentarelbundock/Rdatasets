@@ -6,7 +6,7 @@
 
    .. rubric:: Prospective Cohort Study of Intestinal Transit using a
       SmartPill to Compare Trauma Patients to Healthy Volunteers
-      :name: prospective-cohort-study-of-intestinal-transit-using-a-smartpill-to-compare-trauma-patients-to-healthy-volunteers
+      :name: smartpill
 
    .. rubric:: Description
       :name: description

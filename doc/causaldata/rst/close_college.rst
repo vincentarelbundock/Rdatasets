@@ -6,7 +6,7 @@
 
    .. rubric:: Data from Card (1995) to estimate the effect of college
       education on earnings
-      :name: data-from-card-1995-to-estimate-the-effect-of-college-education-on-earnings
+      :name: close_college
 
    .. rubric:: Description
       :name: description

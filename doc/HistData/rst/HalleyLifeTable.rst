@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Halley's Life Table
-      :name: halleys-life-table
+      :name: HalleyLifeTable
 
    .. rubric:: Description
       :name: description

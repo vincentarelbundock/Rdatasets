@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Beat the Blues Data
-      :name: beat-the-blues-data
+      :name: BtheB
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Diabetes in Pima Indian Women
-      :name: diabetes-in-pima-indian-women
+      :name: Pima.tr
 
    .. rubric:: Description
       :name: description

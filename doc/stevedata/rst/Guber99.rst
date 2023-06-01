@@ -6,7 +6,7 @@
 
    .. rubric:: School Expenditures and Test Scores for 50 States,
       1994-95
-      :name: school-expenditures-and-test-scores-for-50-states-1994-95
+      :name: Guber99
 
    .. rubric:: Description
       :name: description

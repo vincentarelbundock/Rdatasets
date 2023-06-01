@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Snowfall data for Grand Rapids, MI
-      :name: snowfall-data-for-grand-rapids-mi
+      :name: SnowGR
 
    .. rubric:: Description
       :name: description

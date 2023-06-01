@@ -6,7 +6,7 @@
 
    .. rubric:: Data from the Amsterdam Cohort Studies on HIV infection
       and AIDS
-      :name: data-from-the-amsterdam-cohort-studies-on-hiv-infection-and-aids
+      :name: aidssi
 
    .. rubric:: Description
       :name: description

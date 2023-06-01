@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Measurements of African Elephants
-      :name: measurements-of-african-elephants
+      :name: ElephantsMF
 
    .. rubric:: Description
       :name: description

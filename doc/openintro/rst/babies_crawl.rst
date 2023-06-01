@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Crawling age
-      :name: crawling-age
+      :name: babies_crawl
 
    .. rubric:: Description
       :name: description

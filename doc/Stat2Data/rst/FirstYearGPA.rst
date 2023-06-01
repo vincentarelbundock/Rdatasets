@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: First Year GPA for College Students
-      :name: first-year-gpa-for-college-students
+      :name: FirstYearGPA
 
    .. rubric:: Description
       :name: description

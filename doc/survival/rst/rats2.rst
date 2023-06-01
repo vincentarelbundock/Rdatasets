@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Rat data from Gail et al.
-      :name: rat-data-from-gail-et-al.
+      :name: rats2
 
    .. rubric:: Description
       :name: description

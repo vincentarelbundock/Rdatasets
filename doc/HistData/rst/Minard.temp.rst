@@ -6,7 +6,7 @@
 
    .. rubric:: Data from Minard's famous graphic map of Napoleon's march
       on Moscow
-      :name: data-from-minards-famous-graphic-map-of-napoleons-march-on-moscow
+      :name: Minard
 
    .. rubric:: Description
       :name: description

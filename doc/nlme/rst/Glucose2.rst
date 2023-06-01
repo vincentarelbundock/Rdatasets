@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Glucose Levels Following Alcohol Ingestion
-      :name: glucose-levels-following-alcohol-ingestion
+      :name: Glucose2
 
    .. rubric:: Description
       :name: description

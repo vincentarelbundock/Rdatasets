@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Familial Andenomatous Polyposis
-      :name: familial-andenomatous-polyposis
+      :name: polyps3
 
    .. rubric:: Description
       :name: description

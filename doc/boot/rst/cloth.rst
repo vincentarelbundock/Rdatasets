@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Number of Flaws in Cloth
-      :name: number-of-flaws-in-cloth
+      :name: cloth
 
    .. rubric:: Description
       :name: description

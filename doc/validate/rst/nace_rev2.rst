@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: NACE classification code table
-      :name: nace-classification-code-table
+      :name: nace_rev2
 
    .. rubric:: Description
       :name: description

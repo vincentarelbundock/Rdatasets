@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Counts of Waders at 15 Sites in South Africa
-      :name: counts-of-waders-at-15-sites-in-south-africa
+      :name: waders
 
    .. rubric:: Description
       :name: description

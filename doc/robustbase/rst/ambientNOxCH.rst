@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Daily Means of NOx (mono-nitrogen oxides) in air
-      :name: daily-means-of-nox-mono-nitrogen-oxides-in-air
+      :name: ambientNOxCH
 
    .. rubric:: Description
       :name: description

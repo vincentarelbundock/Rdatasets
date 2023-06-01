@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Pupil Dilation and Sexual Orientation
-      :name: pupil-dilation-and-sexual-orientation
+      :name: Eyes
 
    .. rubric:: Description
       :name: description

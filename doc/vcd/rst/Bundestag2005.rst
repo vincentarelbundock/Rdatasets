@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Votes in German Bundestag Election 2005
-      :name: votes-in-german-bundestag-election-2005
+      :name: Bundestag2005
 
    .. rubric:: Description
       :name: description

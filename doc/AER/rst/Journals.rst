@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Economics Journal Subscription Data
-      :name: economics-journal-subscription-data
+      :name: Journals
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Example data set from Gorsuch (1997) for an example
       factor extension.
-      :name: example-data-set-from-gorsuch-1997-for-an-example-factor-extension.
+      :name: Gorsuch
 
    .. rubric:: Description
       :name: description

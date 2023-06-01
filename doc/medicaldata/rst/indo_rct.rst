@@ -6,7 +6,7 @@
 
    .. rubric:: RCT of Indomethacin for Prevention of Post-ERCP
       Pancreatitis
-      :name: rct-of-indomethacin-for-prevention-of-post-ercp-pancreatitis
+      :name: indo_rct
 
    .. rubric:: Description
       :name: description

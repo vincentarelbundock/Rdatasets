@@ -6,7 +6,7 @@
 
    .. rubric:: Data from the 2009 National Health Interview Survey
       (NHIS)
-      :name: data-from-the-2009-national-health-interview-survey-nhis
+      :name: mm_nhis
 
    .. rubric:: Description
       :name: description

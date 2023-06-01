@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Crime in North Carolina
-      :name: crime-in-north-carolina
+      :name: Crime
 
    .. rubric:: Description
       :name: description

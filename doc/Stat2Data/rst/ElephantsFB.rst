@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Measurements of Male African Elephants
-      :name: measurements-of-male-african-elephants
+      :name: ElephantsFB
 
    .. rubric:: Description
       :name: description

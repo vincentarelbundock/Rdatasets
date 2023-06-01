@@ -6,7 +6,7 @@
 
    .. rubric:: Observed genotype frequencies at MN and S loci, for 2
       populations
-      :name: observed-genotype-frequencies-at-mn-and-s-loci-for-2-populations
+      :name: IndianIrish
 
    .. rubric:: Description
       :name: description

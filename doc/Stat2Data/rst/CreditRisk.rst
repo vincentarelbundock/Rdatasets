@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Overdrawn Checking Account?
-      :name: overdrawn-checking-account
+      :name: CreditRisk
 
    .. rubric:: Description
       :name: description

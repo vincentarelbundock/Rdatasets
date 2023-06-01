@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Failures of Air-conditioning Equipment
-      :name: failures-of-air-conditioning-equipment
+      :name: aircondit
 
    .. rubric:: Description
       :name: description

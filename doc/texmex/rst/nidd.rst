@@ -5,7 +5,7 @@
    ============================= ===============
 
    .. rubric:: Rain, wavesurge, portpirie and nidd datasets.
-      :name: rain-wavesurge-portpirie-and-nidd-datasets.
+      :name: rain+2C+20wavesurge+20and+20portpirie
 
    .. rubric:: Description
       :name: description

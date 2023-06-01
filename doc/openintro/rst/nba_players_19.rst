@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: NBA Players for the 2018-2019 season
-      :name: nba-players-for-the-2018-2019-season
+      :name: nba_players_19
 
    .. rubric:: Description
       :name: description

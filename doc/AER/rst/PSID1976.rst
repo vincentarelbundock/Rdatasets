@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Labor Force Participation Data
-      :name: labor-force-participation-data
+      :name: PSID1976
 
    .. rubric:: Description
       :name: description

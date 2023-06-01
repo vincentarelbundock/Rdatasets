@@ -6,7 +6,7 @@
 
    .. rubric:: Patents, R&D and Technological Spillovers for a Panel of
       Firms
-      :name: patents-rd-and-technological-spillovers-for-a-panel-of-firms
+      :name: PatentsRD
 
    .. rubric:: Description
       :name: description

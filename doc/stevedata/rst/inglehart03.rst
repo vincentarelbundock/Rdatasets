@@ -6,7 +6,7 @@
 
    .. rubric:: "How Solid is Mass Support for Democracy—And How Can We
       Measure It?"
-      :name: how-solid-is-mass-support-for-democracyand-how-can-we-measure-it
+      :name: inglehart03
 
    .. rubric:: Description
       :name: description

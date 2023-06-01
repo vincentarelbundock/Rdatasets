@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Documentation of names of columns in nass9702cor
-      :name: documentation-of-names-of-columns-in-nass9702cor
+      :name: nasshead
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Phenobarbitol Kinetics
-      :name: phenobarbitol-kinetics
+      :name: Phenobarb
 
    .. rubric:: Description
       :name: description

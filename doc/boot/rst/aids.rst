@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Delay in AIDS Reporting in England and Wales
-      :name: delay-in-aids-reporting-in-england-and-wales
+      :name: aids
 
    .. rubric:: Description
       :name: description

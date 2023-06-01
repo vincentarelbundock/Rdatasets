@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Stated Preferences for Train Traveling
-      :name: stated-preferences-for-train-traveling
+      :name: Train
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Can Americans categorize facts and opinions?
-      :name: can-americans-categorize-facts-and-opinions
+      :name: fact_opinion
 
    .. rubric:: Description
       :name: description

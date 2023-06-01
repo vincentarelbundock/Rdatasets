@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Breathlessness and Wheeze in Coal Miners
-      :name: breathlessness-and-wheeze-in-coal-miners
+      :name: CoalMiners
 
    .. rubric:: Description
       :name: description

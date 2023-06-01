@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Darwin's Plant Height Differences
-      :name: darwins-plant-height-differences
+      :name: darwin
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Cushny-Peebles Data: Soporific Effects of Scopolamine
       Derivatives
-      :name: cushny-peebles-data-soporific-effects-of-scopolamine-derivatives
+      :name: CushnyPeebles
 
    .. rubric:: Description
       :name: description

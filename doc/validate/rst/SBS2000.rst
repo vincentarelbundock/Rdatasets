@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: data on Dutch supermarkets
-      :name: data-on-dutch-supermarkets
+      :name: retailers
 
    .. rubric:: Description
       :name: description

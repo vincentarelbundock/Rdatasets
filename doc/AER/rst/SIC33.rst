@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: SIC33 Production Data
-      :name: sic33-production-data
+      :name: SIC33
 
    .. rubric:: Description
       :name: description

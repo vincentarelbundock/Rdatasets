@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Health Evaluation and Linkage to Primary Care
-      :name: health-evaluation-and-linkage-to-primary-care
+      :name: HELPfull
 
    .. rubric:: Description
       :name: description

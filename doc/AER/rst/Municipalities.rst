@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Municipal Expenditure Data
-      :name: municipal-expenditure-data
+      :name: Municipalities
 
    .. rubric:: Description
       :name: description

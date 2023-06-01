@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Fake Data for a Logistic Regression
-      :name: fake-data-for-a-logistic-regression
+      :name: fakeLogit
 
    .. rubric:: Description
       :name: description

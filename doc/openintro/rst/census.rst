@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Random sample of 2000 U.S. Census Data
-      :name: random-sample-of-2000-u.s.-census-data
+      :name: census
 
    .. rubric:: Description
       :name: description

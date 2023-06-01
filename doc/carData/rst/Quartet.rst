@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Four Regression Datasets
-      :name: four-regression-datasets
+      :name: Quartet
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Votes for Republican Candidate in Presidential Elections
-      :name: votes-for-republican-candidate-in-presidential-elections
+      :name: votes.repub
 
    .. rubric:: Description
       :name: description

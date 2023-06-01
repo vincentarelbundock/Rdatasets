@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Precipitation Observations and Forecasts for Innsbruck
-      :name: precipitation-observations-and-forecasts-for-innsbruck
+      :name: RainIbk
 
    .. rubric:: Description
       :name: description

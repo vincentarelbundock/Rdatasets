@@ -6,7 +6,7 @@
 
    .. rubric:: Pearson and Lee's data on the heights of parents and
       children classified by gender
-      :name: pearson-and-lees-data-on-the-heights-of-parents-and-children-classified-by-gender
+      :name: PearsonLee
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Summary of male heights from USDA Food Commodity Intake
       Database
-      :name: summary-of-male-heights-from-usda-food-commodity-intake-database
+      :name: fcid
 
    .. rubric:: Description
       :name: description

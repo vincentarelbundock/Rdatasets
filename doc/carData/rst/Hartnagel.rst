@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Canadian Crime-Rates Time Series
-      :name: canadian-crime-rates-time-series
+      :name: Hartnagel
 
    .. rubric:: Description
       :name: description

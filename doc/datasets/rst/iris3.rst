@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Edgar Anderson's Iris Data
-      :name: edgar-andersons-iris-data
+      :name: iris
 
    .. rubric:: Description
       :name: description

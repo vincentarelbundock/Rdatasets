@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: The Penn World Table, v. 5
-      :name: the-penn-world-table-v.-5
+      :name: SumHes
 
    .. rubric:: Description
       :name: description

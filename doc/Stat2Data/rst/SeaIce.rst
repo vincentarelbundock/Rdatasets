@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Arctic Sea Ice (1979-2015)
-      :name: arctic-sea-ice-1979-2015
+      :name: SeaIce
 
    .. rubric:: Description
       :name: description

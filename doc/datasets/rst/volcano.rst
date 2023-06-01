@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Topographic Information on Auckland's Maunga Whau Volcano
-      :name: topographic-information-on-aucklands-maunga-whau-volcano
+      :name: volcano
 
    .. rubric:: Description
       :name: description

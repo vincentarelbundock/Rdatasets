@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Proportion of Household Income Spent on Food
-      :name: proportion-of-household-income-spent-on-food
+      :name: FoodExpenditure
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Galton's data on the heights of parents and their
       children
-      :name: galtons-data-on-the-heights-of-parents-and-their-children
+      :name: Galton
 
    .. rubric:: Description
       :name: description

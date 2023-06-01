@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Names of pets in Seattle
-      :name: names-of-pets-in-seattle
+      :name: seattlepets
 
    .. rubric:: Description
       :name: description

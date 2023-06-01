@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: User reported fuel efficiency for 2017 Toyota Prius Prime
-      :name: user-reported-fuel-efficiency-for-2017-toyota-prius-prime
+      :name: prius_mpg
 
    .. rubric:: Description
       :name: description

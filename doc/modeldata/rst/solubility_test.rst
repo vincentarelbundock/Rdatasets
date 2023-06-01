@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Solubility predictions from MARS model
-      :name: solubility-predictions-from-mars-model
+      :name: solubility_test
 
    .. rubric:: Description
       :name: description

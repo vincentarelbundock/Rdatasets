@@ -6,7 +6,7 @@
 
    .. rubric:: Seasonally Unadjusted Quarterly Data on Disposable Income
       and Expenditure
-      :name: seasonally-unadjusted-quarterly-data-on-disposable-income-and-expenditure
+      :name: IncomeUK
 
    .. rubric:: Description
       :name: description

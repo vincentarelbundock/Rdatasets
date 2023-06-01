@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Average Monthly Temperatures at Nottingham, 1920–1939
-      :name: average-monthly-temperatures-at-nottingham-19201939
+      :name: nottem
 
    .. rubric:: Description
       :name: description

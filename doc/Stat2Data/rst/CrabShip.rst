@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Crab Oxygen Intake
-      :name: crab-oxygen-intake
+      :name: CrabShip
 
    .. rubric:: Description
       :name: description

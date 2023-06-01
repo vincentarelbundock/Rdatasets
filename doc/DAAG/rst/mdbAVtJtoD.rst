@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Murray-Darling basin monthly temperatures
-      :name: murray-darling-basin-monthly-temperatures
+      :name: mdbAVtJtoD
 
    .. rubric:: Description
       :name: description

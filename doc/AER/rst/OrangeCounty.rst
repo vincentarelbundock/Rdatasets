@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Orange County Employment
-      :name: orange-county-employment
+      :name: OrangeCounty
 
    .. rubric:: Description
       :name: description

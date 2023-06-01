@@ -1,0 +1,76 @@
+<!DOCTYPE html><html><head><title>R: General Social Survey- Sex and Party affiliation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>GSS</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='GSS'>General Social Survey&ndash; Sex and Party affiliation</h2>
+
+<h3>Description</h3>
+
+<p>Data from the General Social Survey, 1991, on the relation between 
+sex and party affiliation.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(GSS)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame in frequency form with 6 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>sex</code></dt><dd><p>a factor with levels <code>female</code> <code>male</code></p>
+</dd>
+<dt><code>party</code></dt><dd><p>a factor with levels <code>dem</code> <code>indep</code> <code>rep</code></p>
+</dd>
+<dt><code>count</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Agresti, A. <em>Categorical Data Analysis</em>, 2nd E., John Wiley &amp; Sons, 2002,
+Table 3.11, p. 106.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(GSS)
+str(GSS)
+
+# use xtabs to show the table in a compact form
+(GSStab &lt;- xtabs(count ~ sex + party, data=GSS))
+
+# fit the independence model
+(mod.glm &lt;- glm(count ~ sex + party, family = poisson, data = GSS))
+
+# display all the residuals in a mosaic plot
+mosaic(mod.glm, 
+  formula = ~ sex + party, 
+  labeling = labeling_residuals, 
+  suppress=0)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: US Traffic Fatalities
-      :name: us-traffic-fatalities
+      :name: Fatalities
 
    .. rubric:: Description
       :name: description

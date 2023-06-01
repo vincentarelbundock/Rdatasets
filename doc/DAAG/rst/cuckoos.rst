@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Cuckoo Eggs Data
-      :name: cuckoo-eggs-data
+      :name: cuckoos
 
    .. rubric:: Description
       :name: description

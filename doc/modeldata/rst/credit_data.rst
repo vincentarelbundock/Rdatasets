@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Credit data
-      :name: credit-data
+      :name: credit_data
 
    .. rubric:: Description
       :name: description

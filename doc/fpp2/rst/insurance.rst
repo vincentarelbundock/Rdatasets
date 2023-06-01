@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Insurance quotations and advertising expenditure.
-      :name: insurance-quotations-and-advertising-expenditure.
+      :name: insurance
 
    .. rubric:: Description
       :name: description

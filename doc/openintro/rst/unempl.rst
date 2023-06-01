@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Annual unemployment since 1890
-      :name: annual-unemployment-since-1890
+      :name: unempl
 
    .. rubric:: Description
       :name: description

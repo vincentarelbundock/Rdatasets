@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Percentage of Shrimp in Shrimp Cocktail
-      :name: percentage-of-shrimp-in-shrimp-cocktail
+      :name: shrimp
 
    .. rubric:: Description
       :name: description

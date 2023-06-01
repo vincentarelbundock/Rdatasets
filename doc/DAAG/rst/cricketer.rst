@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Lifespans of UK 1st class cricketers born 1840-1960
-      :name: lifespans-of-uk-1st-class-cricketers-born-1840-1960
+      :name: cricketer
 
    .. rubric:: Description
       :name: description

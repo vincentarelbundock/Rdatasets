@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Yearly Treering Data, -6000–1979
-      :name: yearly-treering-data--60001979
+      :name: treering
 
    .. rubric:: Description
       :name: description

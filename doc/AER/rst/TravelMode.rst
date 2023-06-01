@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Travel Mode Choice Data
-      :name: travel-mode-choice-data
+      :name: TravelMode
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: CoolingWater
-      :name: coolingwater
+      :name: CoolingWater
 
    .. rubric:: Description
       :name: description

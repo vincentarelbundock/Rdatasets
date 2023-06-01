@@ -6,7 +6,7 @@
 
    .. rubric:: Complete-Data National Health and Nutrition Examination
       Survey Data I Epidemiologic Follow-up Study
-      :name: complete-data-national-health-and-nutrition-examination-survey-data-i-epidemiologic-follow-up-study
+      :name: nhefs_complete
 
    .. rubric:: Description
       :name: description

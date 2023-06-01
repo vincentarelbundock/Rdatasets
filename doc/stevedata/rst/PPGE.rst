@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Partisan Politics in the Global Economy
-      :name: partisan-politics-in-the-global-economy
+      :name: PPGE
 
    .. rubric:: Description
       :name: description

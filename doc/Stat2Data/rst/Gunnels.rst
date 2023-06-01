@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Are Gunnels Present at Shoreline?
-      :name: are-gunnels-present-at-shoreline
+      :name: Gunnels
 
    .. rubric:: Description
       :name: description

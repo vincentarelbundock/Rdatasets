@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Data for 20 metropolitan areas
-      :name: data-for-20-metropolitan-areas
+      :name: murders
 
    .. rubric:: Description
       :name: description

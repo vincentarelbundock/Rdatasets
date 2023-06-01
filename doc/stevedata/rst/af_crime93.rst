@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Statewide Crime Data (1993)
-      :name: statewide-crime-data-1993
+      :name: af_crime93
 
    .. rubric:: Description
       :name: description

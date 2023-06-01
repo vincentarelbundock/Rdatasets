@@ -6,7 +6,7 @@
 
    .. rubric:: Growth rates of personal consumption and personal income
       in the USA.
-      :name: growth-rates-of-personal-consumption-and-personal-income-in-the-usa.
+      :name: uschange
 
    .. rubric:: Description
       :name: description

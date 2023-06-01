@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Innovation and Institutional Ownership
-      :name: innovation-and-institutional-ownership
+      :name: InstInnovation
 
    .. rubric:: Description
       :name: description

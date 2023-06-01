@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Pulse Rates and Exercise
-      :name: pulse-rates-and-exercise
+      :name: Pulse
 
    .. rubric:: Description
       :name: description

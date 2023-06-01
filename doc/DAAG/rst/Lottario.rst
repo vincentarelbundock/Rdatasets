@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Ontario Lottery Data
-      :name: ontario-lottery-data
+      :name: Lottario
 
    .. rubric:: Description
       :name: description

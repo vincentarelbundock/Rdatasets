@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Belgian Firms
-      :name: belgian-firms
+      :name: Labour
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: The World's Telephones
-      :name: the-worlds-telephones
+      :name: WorldPhones
 
    .. rubric:: Description
       :name: description

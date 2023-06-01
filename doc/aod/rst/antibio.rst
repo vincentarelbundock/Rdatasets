@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Antibiotics against Shipping Fever in Calves
-      :name: antibiotics-against-shipping-fever-in-calves
+      :name: antibio
 
    .. rubric:: Description
       :name: description

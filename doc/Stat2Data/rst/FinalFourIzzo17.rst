@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: NCAA Final Four by Seed and Tom Izzo (through 2017)
-      :name: ncaa-final-four-by-seed-and-tom-izzo-through-2017
+      :name: FinalFourIzzo17
 
    .. rubric:: Description
       :name: description

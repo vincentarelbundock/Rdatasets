@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Corporal Punishment Data
-      :name: corporal-punishment-data
+      :name: Punishment
 
    .. rubric:: Description
       :name: description

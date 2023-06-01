@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: US Senate Votes on Corporate Average Fuel Economy Bill
-      :name: us-senate-votes-on-corporate-average-fuel-economy-bill
+      :name: CAFE
 
    .. rubric:: Description
       :name: description

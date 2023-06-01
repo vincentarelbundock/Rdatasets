@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Measurements of Rectangles
-      :name: measurements-of-rectangles
+      :name: Rectangles
 
    .. rubric:: Description
       :name: description

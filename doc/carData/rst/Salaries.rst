@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Salaries for Professors
-      :name: salaries-for-professors
+      :name: Salaries
 
    .. rubric:: Description
       :name: description

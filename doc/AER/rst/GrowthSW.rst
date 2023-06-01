@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Determinants of Economic Growth
-      :name: determinants-of-economic-growth
+      :name: GrowthSW
 
    .. rubric:: Description
       :name: description

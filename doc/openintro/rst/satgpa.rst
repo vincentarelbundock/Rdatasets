@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: SAT and GPA data
-      :name: sat-and-gpa-data
+      :name: satgpa
 
    .. rubric:: Description
       :name: description

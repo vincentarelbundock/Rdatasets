@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Endowment Effect for Sports Cards
-      :name: endowment-effect-for-sports-cards
+      :name: SportsCards
 
    .. rubric:: Description
       :name: description
