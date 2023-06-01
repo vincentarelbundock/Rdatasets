@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Weights of College Student Backpacks
-      :name: weights-of-college-student-backpacks
+      :name: Backpack
 
    .. rubric:: Description
       :name: description

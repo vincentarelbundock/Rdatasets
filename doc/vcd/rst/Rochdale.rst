@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Rochdale Data
-      :name: rochdale-data
+      :name: Rochdale
 
    .. rubric:: Description
       :name: description

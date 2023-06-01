@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Snowfall at Paradise, Mt. Rainier National Park
-      :name: snowfall-at-paradise-mt.-rainier-national-park
+      :name: snowfall
 
    .. rubric:: Description
       :name: description

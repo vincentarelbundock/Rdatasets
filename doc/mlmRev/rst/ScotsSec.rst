@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Scottish secondary school scores
-      :name: scottish-secondary-school-scores
+      :name: ScotsSec
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: The Nine Largest Lakes in Manitoba
-      :name: the-nine-largest-lakes-in-manitoba
+      :name: Manitoba.lakes
 
    .. rubric:: Description
       :name: description

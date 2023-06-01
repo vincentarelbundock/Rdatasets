@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Summary information for 31 cherry trees
-      :name: summary-information-for-31-cherry-trees
+      :name: cherry
 
    .. rubric:: Description
       :name: description

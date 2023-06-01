@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Position of Muscle Caveolae
-      :name: position-of-muscle-caveolae
+      :name: cav
 
    .. rubric:: Description
       :name: description

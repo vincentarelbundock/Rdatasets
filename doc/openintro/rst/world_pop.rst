@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: World Population Data.
-      :name: world-population-data.
+      :name: world_pop
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: International Arrivals to Australia
-      :name: international-arrivals-to-australia
+      :name: arrivals
 
    .. rubric:: Description
       :name: description

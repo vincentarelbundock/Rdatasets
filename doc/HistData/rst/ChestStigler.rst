@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Chest measurements of Scottish Militiamen
-      :name: chest-measurements-of-scottish-militiamen
+      :name: ChestSizes
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: World Health Organization TB data
-      :name: world-health-organization-tb-data
+      :name: who
 
    .. rubric:: Description
       :name: description
@@ -46,7 +46,7 @@
       :name: format
 
    .. rubric:: ``who``
-      :name: who
+      :name: who-1
 
    A data frame with 7,240 rows and 60 columns:
 

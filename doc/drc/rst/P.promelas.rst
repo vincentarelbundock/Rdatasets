@@ -6,7 +6,7 @@
 
    .. rubric:: Effect of sodium pentachlorophenate on growth of fathead
       minnow
-      :name: effect-of-sodium-pentachlorophenate-on-growth-of-fathead-minnow
+      :name: P.promelas
 
    .. rubric:: Description
       :name: description

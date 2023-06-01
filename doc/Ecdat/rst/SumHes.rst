@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: The Penn Table
-      :name: the-penn-table
+      :name: SumHes
 
    .. rubric:: Description
       :name: description

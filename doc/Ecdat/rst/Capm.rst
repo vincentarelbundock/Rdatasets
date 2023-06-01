@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Stock Market Data
-      :name: stock-market-data
+      :name: Capm
 
    .. rubric:: Description
       :name: description

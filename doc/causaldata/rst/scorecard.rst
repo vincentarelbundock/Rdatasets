@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Earnings and Loan Repayment in US Four-Year Colleges
-      :name: earnings-and-loan-repayment-in-us-four-year-colleges
+      :name: scorecard
 
    .. rubric:: Description
       :name: description

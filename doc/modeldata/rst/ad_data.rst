@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Alzheimer's disease data
-      :name: alzheimers-disease-data
+      :name: ad_data
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Textbook data for UCLA Bookstore and Amazon
-      :name: textbook-data-for-ucla-bookstore-and-amazon
+      :name: textbooks
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Survey of Duke students on GPA, studying, and more
-      :name: survey-of-duke-students-on-gpa-studying-and-more
+      :name: gpa
 
    .. rubric:: Description
       :name: description

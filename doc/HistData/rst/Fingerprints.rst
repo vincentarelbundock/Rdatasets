@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Waite's data on Patterns in Fingerprints
-      :name: waites-data-on-patterns-in-fingerprints
+      :name: Fingerprints
 
    .. rubric:: Description
       :name: description

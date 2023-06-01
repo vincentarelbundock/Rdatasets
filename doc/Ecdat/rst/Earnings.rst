@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Earnings for Three Age Groups
-      :name: earnings-for-three-age-groups
+      :name: Earnings
 
    .. rubric:: Description
       :name: description

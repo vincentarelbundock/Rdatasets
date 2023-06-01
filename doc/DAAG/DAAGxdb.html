@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><title>R: List, each of whose elements hold rows of a file, in...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>DAAGxdb</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='DAAGxdb'>List, each of whose elements hold rows of a file, in character format</h2>
+
+<h3>Description</h3>
+
+<p>This is the default database for use with the function
+<code>datafile</code>, which uses elements of this list to place files
+in the working directory. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(DAAGxdb)</code></pre>
+
+
+<h3>Format</h3>
+
+  
+<p>Successive elements in this list hold character vectors from which the
+corresponding files can be generated.  The names of the list elements
+are fuel, fuel.csv, oneBadRow, scan-demo, molclock1, molclock2, and
+travelbooks. 
+</p>
+
+
+<h3>Details</h3>
+
+<p>The files fuel.txt and fuel.csv are used in Chapter 1 of DAAGUR, while
+the files oneBadRow.txt and scan-demo.txt are used in Chapter 14 of
+DAAGUR.</p>
+
+
+<h3>References</h3>
+
+<p>Maindonald, J.H. and Braun, W.J. 2007. Data Analysis and Graphics
+Using R: An Example-Based Approach.  2nd edn, Cambridge University
+Press (DAAGUR).
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(DAAGxdb)
+names(DAAGxdb)
+</code></pre>
+
+
+</div>
+</body></html>

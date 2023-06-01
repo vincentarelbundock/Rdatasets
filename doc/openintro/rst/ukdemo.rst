@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: United Kingdom Demographic Data
-      :name: united-kingdom-demographic-data
+      :name: ukdemo
 
    .. rubric:: Description
       :name: description

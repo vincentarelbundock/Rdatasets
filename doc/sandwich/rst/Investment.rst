@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: US Investment Data
-      :name: us-investment-data
+      :name: Investment
 
    .. rubric:: Description
       :name: description

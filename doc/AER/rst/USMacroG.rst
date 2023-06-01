@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: US Macroeconomic Data (1950–2000, Greene)
-      :name: us-macroeconomic-data-19502000-greene
+      :name: USMacroG
 
    .. rubric:: Description
       :name: description

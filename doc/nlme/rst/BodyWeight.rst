@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Rat weight over time for different diets
-      :name: rat-weight-over-time-for-different-diets
+      :name: BodyWeight
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Did the Author Walk the Dogs Today?
-      :name: did-the-author-walk-the-dogs-today
+      :name: WalkTheDogs
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Hedonic Prices of Census Tracts in Boston
-      :name: hedonic-prices-of-census-tracts-in-boston
+      :name: Hedonic
 
    .. rubric:: Description
       :name: description

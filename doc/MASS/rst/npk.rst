@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Classical N, P, K Factorial Experiment
-      :name: classical-n-p-k-factorial-experiment
+      :name: npk
 
    .. rubric:: Description
       :name: description

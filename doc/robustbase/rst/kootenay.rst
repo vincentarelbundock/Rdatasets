@@ -6,7 +6,7 @@
 
    .. rubric:: Waterflow Measurements of Kootenay River in Libby and
       Newgate
-      :name: waterflow-measurements-of-kootenay-river-in-libby-and-newgate
+      :name: kootenay
 
    .. rubric:: Description
       :name: description

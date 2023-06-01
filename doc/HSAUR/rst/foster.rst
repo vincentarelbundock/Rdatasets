@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Foster Feeding Experiment
-      :name: foster-feeding-experiment
+      :name: foster
 
    .. rubric:: Description
       :name: description

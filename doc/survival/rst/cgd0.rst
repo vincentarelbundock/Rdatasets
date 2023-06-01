@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Chronic Granulotomous Disease data
-      :name: chronic-granulotomous-disease-data
+      :name: cgd0
 
    .. rubric:: Description
       :name: description

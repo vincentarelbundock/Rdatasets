@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Prices of Personal Computers
-      :name: prices-of-personal-computers
+      :name: Computers
 
    .. rubric:: Description
       :name: description

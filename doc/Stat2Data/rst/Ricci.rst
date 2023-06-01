@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Firefighter Promotion Exam Scores
-      :name: firefighter-promotion-exam-scores
+      :name: Ricci
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Type 2 Diabetes Clinical Trial for Patients 10-17 Years
       Old
-      :name: type-2-diabetes-clinical-trial-for-patients-10-17-years-old
+      :name: diabetes2
 
    .. rubric:: Description
       :name: description

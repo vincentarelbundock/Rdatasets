@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: US Naval Petroleum Reserve No. 1 data
-      :name: us-naval-petroleum-reserve-no.-1-data
+      :name: npr1
 
    .. rubric:: Description
       :name: description

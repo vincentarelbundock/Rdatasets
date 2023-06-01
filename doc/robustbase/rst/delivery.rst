@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Delivery Time Data
-      :name: delivery-time-data
+      :name: delivery
 
    .. rubric:: Description
       :name: description

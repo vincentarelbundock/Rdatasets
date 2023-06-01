@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Twice hourly solar zenith angles by month & latitude
-      :name: twice-hourly-solar-zenith-angles-by-month-latitude
+      :name: sza
 
    .. rubric:: Description
       :name: description

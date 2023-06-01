@@ -6,7 +6,7 @@
 
    .. rubric:: Penn World Table (10.0) Macroeconomic Data for Select
       Countries, 1950-2019
-      :name: penn-world-table-10.0-macroeconomic-data-for-select-countries-1950-2019
+      :name: pwt_sample
 
    .. rubric:: Description
       :name: description

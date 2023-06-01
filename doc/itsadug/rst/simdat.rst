@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Simulated time series data.
-      :name: simulated-time-series-data.
+      :name: simdat
 
    .. rubric:: Description
       :name: description

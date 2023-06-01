@@ -1,0 +1,98 @@
+<!DOCTYPE html><html><head><title>R: Publications of PhD Candidates</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>PhdPubs</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='PhdPubs'>
+Publications of PhD Candidates
+</h2>
+
+<h3>Description</h3>
+
+<p>A data set giving the number of publications by doctoral candidates in biochemistry
+in relation to various predictors, originally from Long (1997).
+</p>
+<p>There is a large number of zero counts. Is there evidence for
+a separate group of non-publishers?
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(PhdPubs)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 915 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>articles</code></dt><dd><p>number of articles published in the final three years of PhD studies</p>
+</dd>
+<dt><code>female</code></dt><dd><p>dummy variable for gender, coded <code>1</code> for female</p>
+</dd>
+<dt><code>married</code></dt><dd><p>dummy variable for marital status, coded <code>1</code> for married</p>
+</dd>
+<dt><code>kid5</code></dt><dd><p>number of young children, age 5 and under</p>
+</dd>
+<dt><code>phdprestige</code></dt><dd><p>prestige of the PhD department.  The higher the number the more prestigious the program. </p>
+</dd>
+<dt><code>mentor</code></dt><dd><p>number of publications by the mentor in the preceeding three years</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In this version of the data set, <code>phdprestige</code> had been rounded to the nearest integer.
+A Stata version with the continuous values was subsequently found at
+<a href="https://www.stata-press.com/data/lf2/couart2.dta">https://www.stata-press.com/data/lf2/couart2.dta</a>
+</p>
+
+
+<h3>Source</h3>
+
+<p>Long, J. S. (1997). <em>Regression Models for Categorical and Limited Dependent Variables</em>,
+Sage.
+</p>
+<p>Long, J. S. &amp; Freese, J. (2006). <em>Regression Models for Categorical Dependent Variables Using Stata</em>, 2nd Ed.,
+Stata Press.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(PhdPubs)
+# very uninformative
+hist(PhdPubs$articles, 
+     breaks=0:19, col="pink", xlim=c(0,20),
+     xlab="Number of Articles")
+
+library(vcd)
+rootogram(goodfit(PhdPubs$articles), xlab="Number of Articles")
+
+# compare with negative binomial
+rootogram(goodfit(PhdPubs$articles, type="nbinomial"), 
+	xlab="Number of Articles", main="Negative binomial")
+
+
+</code></pre>
+
+
+</div>
+</body></html>

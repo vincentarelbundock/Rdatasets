@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Dow Jones Industrial Average (DJIA) index
-      :name: dow-jones-industrial-average-djia-index
+      :name: DJIA8012
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Monthly Airline Passenger Numbers 1949-1960
-      :name: monthly-airline-passenger-numbers-1949-1960
+      :name: AirPassengers
 
    .. rubric:: Description
       :name: description

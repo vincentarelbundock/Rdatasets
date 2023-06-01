@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Urine Analysis Data
-      :name: urine-analysis-data
+      :name: urine
 
    .. rubric:: Description
       :name: description

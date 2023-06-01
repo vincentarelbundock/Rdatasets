@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Blood Screening Data
-      :name: blood-screening-data
+      :name: plasma
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Pacific Rock Art features
-      :name: pacific-rock-art-features
+      :name: rockArt
 
    .. rubric:: Description
       :name: description

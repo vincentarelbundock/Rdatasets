@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Countries
-      :name: countries
+      :name: Countries
 
    .. rubric:: Description
       :name: description

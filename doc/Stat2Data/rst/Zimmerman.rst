@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Stand Your Ground Simpson's Paradox
-      :name: stand-your-ground-simpsons-paradox
+      :name: Zimmerman
 
    .. rubric:: Description
       :name: description

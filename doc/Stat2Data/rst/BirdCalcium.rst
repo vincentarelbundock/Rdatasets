@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Effect of a Hormone on Bird Calcium Levels
-      :name: effect-of-a-hormone-on-bird-calcium-levels
+      :name: BirdCalcium
 
    .. rubric:: Description
       :name: description

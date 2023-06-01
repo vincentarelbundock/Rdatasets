@@ -6,7 +6,7 @@
 
    .. rubric:: Monthly anti-diabetic drug subsidy in Australia from 1991
       to 2008.
-      :name: monthly-anti-diabetic-drug-subsidy-in-australia-from-1991-to-2008.
+      :name: a10
 
    .. rubric:: Description
       :name: description

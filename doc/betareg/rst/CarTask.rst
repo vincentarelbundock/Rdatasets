@@ -6,7 +6,7 @@
 
    .. rubric:: Partition-primed Probability Judgement Task for Car
       Dealership
-      :name: partition-primed-probability-judgement-task-for-car-dealership
+      :name: CarTask
 
    .. rubric:: Description
       :name: description

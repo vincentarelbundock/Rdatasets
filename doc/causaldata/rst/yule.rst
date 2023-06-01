@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Data on 19th century English Poverty from Yule (1899)
-      :name: data-on-19th-century-english-poverty-from-yule-1899
+      :name: yule
 
    .. rubric:: Description
       :name: description

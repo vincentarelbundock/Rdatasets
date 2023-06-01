@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: political parties appearing in the U.S. Congress
-      :name: political-parties-appearing-in-the-u.s.-congress
+      :name: partycodes
 
    .. rubric:: Description
       :name: description

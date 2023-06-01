@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Monthly Peace Bridge Traffic ( 2012-2015)
-      :name: monthly-peace-bridge-traffic-2012-2015
+      :name: PeaceBridge2012
 
    .. rubric:: Description
       :name: description

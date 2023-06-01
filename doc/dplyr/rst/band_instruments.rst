@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Band membership
-      :name: band-membership
+      :name: band_members
 
    .. rubric:: Description
       :name: description

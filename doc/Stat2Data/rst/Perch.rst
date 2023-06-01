@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Perch Sizes
-      :name: perch-sizes
+      :name: Perch
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Salary data for Major League Baseball (2010)
-      :name: salary-data-for-major-league-baseball-2010
+      :name: mlb
 
    .. rubric:: Description
       :name: description

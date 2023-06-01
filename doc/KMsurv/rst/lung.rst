@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: data from Exercise 4.4, p120
-      :name: data-from-exercise-4.4-p120
+      :name: lung
 
    .. rubric:: Description
       :name: description

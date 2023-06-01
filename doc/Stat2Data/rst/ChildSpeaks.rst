@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Age at First Speaking
-      :name: age-at-first-speaking
+      :name: ChildSpeaks
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Car Speeding and Warning Signs
-      :name: car-speeding-and-warning-signs
+      :name: amis
 
    .. rubric:: Description
       :name: description

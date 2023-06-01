@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: US Finance Industry Profits
-      :name: us-finance-industry-profits
+      :name: USFinanceIndustry
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Yugo Sales in the United States, 1985-1992
-      :name: yugo-sales-in-the-united-states-1985-1992
+      :name: yugo_sales
 
    .. rubric:: Description
       :name: description

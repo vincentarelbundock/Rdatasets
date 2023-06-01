@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Growth of Loblolly pine trees
-      :name: growth-of-loblolly-pine-trees
+      :name: Loblolly
 
    .. rubric:: Description
       :name: description

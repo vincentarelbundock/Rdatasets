@@ -1,0 +1,131 @@
+<!DOCTYPE html><html><head><title>R: USA 1970 Draft Lottery Table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Draft1970table</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Draft1970table'>
+USA 1970 Draft Lottery Table
+</h2>
+
+<h3>Description</h3>
+
+<p>This data set gives the results of the 1970 US draft lottery, in the form of
+a frequency table.
+The rows are months of the year, Jan&ndash;Dec and columns 
+give the number of days in that month which fall into each of three
+draft risk categories High, Medium, and Low, corresponding to
+the chances of being called to serve in the US army.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Draft1970table)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The format is:
+'table' int [1:12, 1:3] 9 7 5 8 9 11 12 13 10 9 ...
+- attr(*, &quot;dimnames&quot;)=List of 2
+..$ Month: chr [1:12] &quot;Jan&quot; &quot;Feb&quot; &quot;Mar&quot; &quot;Apr&quot; ...
+..$ Risk : chr [1:3] &quot;High&quot; &quot;Med&quot; &quot;Low&quot;
+</p>
+
+
+<h3>Details</h3>
+
+<p>The lottery numbers are divided into three categories 
+of risk of being called for the draft &ndash; High, Medium, and Low &ndash;
+each representing roughly one third of the days in a year.
+Those birthdays having the highest risk have lottery numbers
+1-122, medium risk have numbers 123-244, and the lowest risk
+category contains lottery numbers 245-366.
+</p>
+
+
+<h3>Source</h3>
+
+<p>This data is available in several forms, but the table version was obtained from
+</p>
+<p><a href="https://sas.uwaterloo.ca/~rwoldfor/software/eikosograms/data/draft-70">https://sas.uwaterloo.ca/~rwoldfor/software/eikosograms/data/draft-70</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Fienberg, S. E. (1971), 
+&quot;Randomization and Social Affairs: The 1970 Draft Lottery,&quot; <em>Science</em>, 171, 255-261.
+</p>
+<p>Starr, N. (1997).
+Nonrandom Risk: The 1970 Draft Lottery,
+<em>Journal of Statistics Education</em>, v.5, n.2
+<a href="https://jse.amstat.org/v5n2/datasets.starr.html">https://jse.amstat.org/v5n2/datasets.starr.html</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Draft1970</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Draft1970table)
+chisq.test(Draft1970table)
+
+# plot.table -&gt; graphics:::mosaicplot
+plot(Draft1970table, shade=TRUE)
+mosaic(Draft1970table, gp=shading_Friendly)
+
+# correspondence analysis
+if(require(ca)) {
+  ca(Draft1970table)
+  plot(ca(Draft1970table))
+}
+
+# convert to a frequency data frame with ordered factors
+Draft1970df &lt;- as.data.frame(Draft1970table)
+
+Draft1970df &lt;- within(Draft1970df, {
+  Month &lt;- ordered(Month)
+  Risk &lt;- ordered(Risk, levels=rev(levels(Risk)))
+  })
+str(Draft1970df)
+
+# similar model, as a Poisson GLM  
+indep &lt;- glm(Freq ~ Month + Risk, family = poisson, data = Draft1970df)
+
+mosaic(indep, residuals_type="rstandard", gp=shading_Friendly)
+
+# numeric scores for tests of ordinal factors
+Cscore &lt;- as.numeric(Draft1970df$Risk)
+Rscore &lt;- as.numeric(Draft1970df$Month)
+
+# linear x linear association between Month and Risk
+linlin &lt;- glm(Freq ~ Month + Risk + Rscore:Cscore, family = poisson, data = Draft1970df)
+
+# compare models
+anova(indep, linlin, test="Chisq")
+mosaic(linlin, residuals_type="rstandard", gp=shading_Friendly)
+
+
+</code></pre>
+
+
+</div>
+</body></html>

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Age, Period and Cohort Effects for Vital Rates
-      :name: age-period-and-cohort-effects-for-vital-rates
+      :name: cohorts
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Danish Welfare Study Data
-      :name: danish-welfare-study-data
+      :name: DanishWelfare
 
    .. rubric:: Description
       :name: description

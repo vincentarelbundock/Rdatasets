@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Time Series of US Gasoline Prices
-      :name: time-series-of-us-gasoline-prices
+      :name: gasprice
 
    .. rubric:: Description
       :name: description

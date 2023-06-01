@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Potency of two herbicides
-      :name: potency-of-two-herbicides
+      :name: S.alba
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Wages and Education of Young Males
-      :name: wages-and-education-of-young-males
+      :name: Males
 
    .. rubric:: Description
       :name: description

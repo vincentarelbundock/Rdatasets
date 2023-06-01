@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: North Carolina Birth Records
-      :name: north-carolina-birth-records
+      :name: NCbirths
 
    .. rubric:: Description
       :name: description

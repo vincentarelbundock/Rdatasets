@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Toothpaste Data
-      :name: toothpaste-data
+      :name: toothpaste
 
    .. rubric:: Description
       :name: description

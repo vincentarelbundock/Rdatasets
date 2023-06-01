@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Mathematics achievement scores
-      :name: mathematics-achievement-scores
+      :name: MathAchieve
 
    .. rubric:: Description
       :name: description

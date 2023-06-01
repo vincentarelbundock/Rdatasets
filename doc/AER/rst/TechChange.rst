@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Technological Change Data
-      :name: technological-change-data
+      :name: TechChange
 
    .. rubric:: Description
       :name: description

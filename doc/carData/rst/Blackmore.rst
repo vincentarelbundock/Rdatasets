@@ -6,7 +6,7 @@
 
    .. rubric:: Exercise Histories of Eating-Disordered and Control
       Subjects
-      :name: exercise-histories-of-eating-disordered-and-control-subjects
+      :name: Blackmore
 
    .. rubric:: Description
       :name: description

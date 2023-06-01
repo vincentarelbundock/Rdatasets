@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Example from Finney (1971)
-      :name: example-from-finney-1971
+      :name: finney71
 
    .. rubric:: Description
       :name: description

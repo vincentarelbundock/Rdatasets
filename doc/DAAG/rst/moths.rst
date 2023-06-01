@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Moths Data
-      :name: moths-data
+      :name: moths
 
    .. rubric:: Description
       :name: description

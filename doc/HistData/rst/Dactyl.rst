@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Edgeworth's counts of dactyls in Virgil's Aeneid
-      :name: edgeworths-counts-of-dactyls-in-virgils-aeneid
+      :name: Dactyl
 
    .. rubric:: Description
       :name: description

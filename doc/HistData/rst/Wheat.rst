@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Playfair's Data on Wages and the Price of Wheat
-      :name: playfairs-data-on-wages-and-the-price-of-wheat
+      :name: Wheat
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Cigarette Consumption Data
-      :name: cigarette-consumption-data
+      :name: CigarettesB
 
    .. rubric:: Description
       :name: description

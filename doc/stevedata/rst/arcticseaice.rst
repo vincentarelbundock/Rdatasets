@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Arctic Sea Ice Extent Data, 1901-2015
-      :name: arctic-sea-ice-extent-data-1901-2015
+      :name: arcticseaice
 
    .. rubric:: Description
       :name: description

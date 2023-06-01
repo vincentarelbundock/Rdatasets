@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Measuring Calcium Binding to Proteins
-      :name: measuring-calcium-binding-to-proteins
+      :name: Fluorescence
 
    .. rubric:: Description
       :name: description

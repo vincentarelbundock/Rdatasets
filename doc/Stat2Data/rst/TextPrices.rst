@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Textbook Prices
-      :name: textbook-prices
+      :name: TextPrices
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Production for SIC 33
-      :name: production-for-sic-33
+      :name: Metal
 
    .. rubric:: Description
       :name: description

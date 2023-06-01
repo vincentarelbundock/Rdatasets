@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Passenger Miles on Commercial US Airlines, 1937–1960
-      :name: passenger-miles-on-commercial-us-airlines-19371960
+      :name: airmiles
 
    .. rubric:: Description
       :name: description

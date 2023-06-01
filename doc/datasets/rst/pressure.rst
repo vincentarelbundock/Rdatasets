@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Vapor Pressure of Mercury as a Function of Temperature
-      :name: vapor-pressure-of-mercury-as-a-function-of-temperature
+      :name: pressure
 
    .. rubric:: Description
       :name: description

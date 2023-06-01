@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Riding with a Driver Who Has Been Drinking
-      :name: riding-with-a-driver-who-has-been-drinking
+      :name: YouthRisk2007
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Exchange Rates and Price Indices for France and Italy
-      :name: exchange-rates-and-price-indices-for-france-and-italy
+      :name: PPP
 
    .. rubric:: Description
       :name: description

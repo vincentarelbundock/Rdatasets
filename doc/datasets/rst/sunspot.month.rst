@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Monthly Sunspot Data, from 1749 to "Present"
-      :name: monthly-sunspot-data-from-1749-to-present
+      :name: sunspot.month
 
    .. rubric:: Description
       :name: description

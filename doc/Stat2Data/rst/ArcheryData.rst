@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Scores in an Archery Class
-      :name: scores-in-an-archery-class
+      :name: ArcheryData
 
    .. rubric:: Description
       :name: description

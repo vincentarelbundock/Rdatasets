@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Salmonella Reverse Mutagenicity Assay
-      :name: salmonella-reverse-mutagenicity-assay
+      :name: salmonella
 
    .. rubric:: Description
       :name: description

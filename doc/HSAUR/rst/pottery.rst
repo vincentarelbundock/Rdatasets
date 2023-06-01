@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Romano-British Pottery Data
-      :name: romano-british-pottery-data
+      :name: pottery
 
    .. rubric:: Description
       :name: description

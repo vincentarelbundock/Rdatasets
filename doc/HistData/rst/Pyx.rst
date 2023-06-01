@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Trial of the Pyx
-      :name: trial-of-the-pyx
+      :name: Pyx
 
    .. rubric:: Description
       :name: description

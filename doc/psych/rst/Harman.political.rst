@@ -6,7 +6,7 @@
 
    .. rubric:: Five data sets from Harman (1967). 9 cognitive variables
       from Holzinger and 8 emotional variables from Burt
-      :name: five-data-sets-from-harman-1967.-9-cognitive-variables-from-holzinger-and-8-emotional-variables-from-burt
+      :name: Harman
 
    .. rubric:: Description
       :name: description

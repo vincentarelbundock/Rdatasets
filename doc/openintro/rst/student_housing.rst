@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Community college housing (simulated data, 2015)
-      :name: community-college-housing-simulated-data-2015
+      :name: student_housing
 
    .. rubric:: Description
       :name: description

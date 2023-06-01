@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><head><title>R: Nested Bootstrap of cd4 data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>cd4.nested</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='cd4.nested'>
+Nested Bootstrap of cd4 data
+</h2>
+
+<h3>Description</h3>
+
+<p>This is an example of a nested bootstrap for the correlation 
+coefficient of the <code>cd4</code> data frame.  It is used in a practical
+in Chapter 5 of Davison and Hinkley (1997).
+</p>
+
+
+<h3>References</h3>
+
+<p>Davison, A.C. and Hinkley, D.V. (1997) 
+<em>Bootstrap Methods and Their Application</em>. Cambridge University Press.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>cd4</code>
+</p>
+
+
+</div>
+</body></html>

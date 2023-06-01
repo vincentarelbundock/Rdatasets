@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Newcomb's Measurements of the Passage Time of Light
-      :name: newcombs-measurements-of-the-passage-time-of-light
+      :name: newcomb
 
    .. rubric:: Description
       :name: description

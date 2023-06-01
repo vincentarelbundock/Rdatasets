@@ -1,0 +1,106 @@
+<!DOCTYPE html><html><head><title>R: Clothing and Intelligence Rating of Children</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Gilby</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Gilby'>Clothing and Intelligence Rating of Children</h2>
+
+<h3>Description</h3>
+
+<p>Schoolboys were classified according to their clothing and to their teachers rating of &quot;dullness&quot;
+(lack of intelligence), in a 5 x 7 table originally from 
+Gilby (1911).
+Anscombe (1981) presents a slightly collapsed 4 x 6 table, used here, where 
+the last two categories of clothing were pooled as were the first two categories of dullness due to small counts.
+</p>
+<p>Both <code>Dullness</code> and <code>Clothing</code> are ordered categories, so models and methods
+that examine their association in terms of ordinal categories are profitable.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Gilby)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A 2-dimensional array resulting from cross-tabulating 2 variables for  1725 observations. The variable names and their levels are:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1</td><td style="text-align: left;"> <code>Dullness</code></td><td style="text-align: left;"> <code>"Ment. defective", "Slow", "Slow Intell", "Fairly Intell", "Capable", "V.Able"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2</td><td style="text-align: left;"> <code>Clothing</code></td><td style="text-align: left;"> <code>"V.Well clad", "Well clad", "Passable", "Insufficient"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Anscombe, F. J. (1981).
+<em>Computing in Statistical Science Through APL</em>.
+New York: Springer-Verlag, p. 302
+</p>
+
+
+<h3>References</h3>
+
+
+<p>Gilby, W. H. (1911).
+On the significance of the teacher's appreciation of
+general intelligence.  <em>Biometrika</em>, 8, 93-108 (esp. p. 94).
+[Quoted by Kendall (1943,..., 1953) Table 13.1, p 320.]
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Gilby)
+
+# CMH tests treating row/column variables as ordinal
+CMHtest(Gilby)
+
+mosaic(Gilby, shade=TRUE)
+
+# correspondence analysis to see relations among categories
+if(require(ca)){
+	ca(Gilby)
+	plot(ca(Gilby), lines=TRUE)
+
+}
+
+
+</code></pre>
+
+
+</div>
+</body></html>

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Rabbits Foetuses Survival Experiment
-      :name: rabbits-foetuses-survival-experiment
+      :name: rabbits
 
    .. rubric:: Description
       :name: description

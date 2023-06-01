@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: The 1907 Romanian Peasant Rebellion
-      :name: the-1907-romanian-peasant-rebellion
+      :name: Chirot
 
    .. rubric:: Description
       :name: description

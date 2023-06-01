@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Forbes' Data on Boiling Points in the Alps
-      :name: forbes-data-on-boiling-points-in-the-alps
+      :name: forbes
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Anscombe's Quartet of ‘Identical’ Simple Linear
       Regressions
-      :name: anscombes-quartet-of-identical-simple-linear-regressions
+      :name: anscombe
 
    .. rubric:: Description
       :name: description

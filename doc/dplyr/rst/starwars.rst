@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Starwars characters
-      :name: starwars-characters
+      :name: starwars
 
    .. rubric:: Description
       :name: description

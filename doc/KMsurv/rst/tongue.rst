@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: data from Section 1.11
-      :name: data-from-section-1.11
+      :name: tongue
 
    .. rubric:: Description
       :name: description

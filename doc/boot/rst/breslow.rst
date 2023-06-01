@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Smoking Deaths Among Doctors
-      :name: smoking-deaths-among-doctors
+      :name: breslow
 
    .. rubric:: Description
       :name: description

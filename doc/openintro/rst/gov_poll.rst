@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Pew Research poll on government approval ratings
-      :name: pew-research-poll-on-government-approval-ratings
+      :name: gov_poll
 
    .. rubric:: Description
       :name: description

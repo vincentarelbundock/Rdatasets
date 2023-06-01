@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Burger preferences
-      :name: burger-preferences
+      :name: burger
 
    .. rubric:: Description
       :name: description

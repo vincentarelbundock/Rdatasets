@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Refugee Appeals
-      :name: refugee-appeals
+      :name: Greene
 
    .. rubric:: Description
       :name: description

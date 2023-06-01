@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Student Risk Taking
-      :name: student-risk-taking
+      :name: students
 
    .. rubric:: Description
       :name: description

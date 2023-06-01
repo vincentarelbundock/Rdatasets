@@ -1,0 +1,137 @@
+<!DOCTYPE html><html><head><title>R: Sources of Knowledge of Cancer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Dyke</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Dyke'>Sources of Knowledge of Cancer</h2>
+
+<h3>Description</h3>
+
+<p>Observational data on a sample of 1729 individuals, cross-classified in a 2^5 table according to their sources of 
+information (read newspapers, listen to the radio, do 'solid' reading, attend lectures) and whether they have
+good or poor knowledge regarding cancer.  Knowledge of cancer is often treated as the response.</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Dyke)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A 5-dimensional array resulting from cross-tabulating 5 variables for  1729 observations. The variable names and their levels are:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1</td><td style="text-align: left;"> <code>Knowledge</code></td><td style="text-align: left;"> <code>"Good", "Poor"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2</td><td style="text-align: left;"> <code>Reading</code></td><td style="text-align: left;"> <code>"No", "Yes"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    3</td><td style="text-align: left;"> <code>Radio</code></td><td style="text-align: left;"> <code>"No", "Yes"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    4</td><td style="text-align: left;"> <code>Lectures</code></td><td style="text-align: left;"> <code>"No", "Yes"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    5</td><td style="text-align: left;"> <code>Newspaper</code></td><td style="text-align: left;"> <code>"No", "Yes"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Fienberg, S. E. (1980).
+<em>The Analysis of Cross-Classified Categorical Data</em>
+Cambridge, MA: MIT Press, p. 85, Table 5-6.
+</p>
+
+
+<h3>References</h3>
+
+<p>Dyke, G. V. and Patterson, H. D. (1952).
+Analysis of factorial arrangements when the data are proportions.
+<em>Biometrics</em>, 8, 1-12.
+</p>
+<p>Lindsey, J. K. (1993). 
+<em>Models for Repeated Measurements</em>
+Oxford, UK: Oxford University Press, p. 57.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Dyke)
+
+# independence model
+mosaic(Dyke, shade=TRUE)
+
+# null model, Knowledge as response, independent of others
+require(MASS)
+dyke.mod0 &lt;- loglm(~ Knowledge + (Reading * Radio * Lectures * Newspaper), data=Dyke)
+dyke.mod0
+mosaic(dyke.mod0)
+
+# view as doubledecker plot
+Dyke &lt;- Dyke[2:1,,,,]    # make Good the highlighted value of Knowledge
+doubledecker(Knowledge ~ ., data=Dyke)
+
+# better version, with some options
+doubledecker(Knowledge ~ Lectures + Reading + Newspaper + Radio, 
+  data=Dyke,
+	margins = c(1,6, length(dim(Dyke)) + 1, 1), 
+	fill_boxes=list(rep(c("white", gray(.90)),4))
+	)
+
+# separate (conditional) plots for those who attend lectures and those who do not
+doubledecker(Knowledge ~ Reading + Newspaper + Radio, 
+  data=Dyke[,,,1,],
+	main="Do not attend lectures",
+	margins = c(1,6, length(dim(Dyke)) + 1, 1), 
+	fill_boxes=list(rep(c("white", gray(.90)),3))
+	)
+doubledecker(Knowledge ~ Reading + Newspaper + Radio, 
+  data=Dyke[,,,2,],
+	main="Attend lectures",
+	margins = c(1,6, length(dim(Dyke)) + 1, 1), 
+	fill_boxes=list(rep(c("white", gray(.90)),3))
+	)
+
+
+drop1(dyke.mod0, test="Chisq")
+
+</code></pre>
+
+
+</div>
+</body></html>

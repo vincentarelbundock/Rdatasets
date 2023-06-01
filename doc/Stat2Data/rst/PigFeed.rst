@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Additives in Pig Feed
-      :name: additives-in-pig-feed
+      :name: PigFeed
 
    .. rubric:: Description
       :name: description

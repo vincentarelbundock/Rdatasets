@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Malignant melanoma deaths in Europe
-      :name: malignant-melanoma-deaths-in-europe
+      :name: Mmmec
 
    .. rubric:: Description
       :name: description

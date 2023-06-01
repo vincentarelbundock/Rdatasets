@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Salinity in Bimini Lagoon, Bahamas
-      :name: salinity-in-bimini-lagoon-bahamas
+      :name: salinity
 
    .. rubric:: Description
       :name: description

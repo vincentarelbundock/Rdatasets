@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Progression of Record times for track races, 1912 - 2008
-      :name: progression-of-record-times-for-track-races-1912---2008
+      :name: progression
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Export Quality Data for Passenger Cars, 1963-2014
-      :name: export-quality-data-for-passenger-cars-1963-2014
+      :name: eq_passengercars
 
    .. rubric:: Description
       :name: description

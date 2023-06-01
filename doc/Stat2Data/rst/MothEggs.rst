@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Moth Eggs
-      :name: moth-eggs
+      :name: MothEggs
 
    .. rubric:: Description
       :name: description

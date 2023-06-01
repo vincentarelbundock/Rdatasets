@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Doctor Visits in Australia
-      :name: doctor-visits-in-australia
+      :name: DoctorAUS
 
    .. rubric:: Description
       :name: description

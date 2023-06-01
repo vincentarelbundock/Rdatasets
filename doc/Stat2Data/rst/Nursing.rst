@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Nursing Homes
-      :name: nursing-homes
+      :name: Nursing
 
    .. rubric:: Description
       :name: description

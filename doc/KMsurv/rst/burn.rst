@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: data from Section 1.6
-      :name: data-from-section-1.6
+      :name: burn
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: S&P 500 stock data
-      :name: sp-500-stock-data
+      :name: sp500_seq
 
    .. rubric:: Description
       :name: description

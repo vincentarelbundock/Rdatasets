@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Length of songs on an iPod
-      :name: length-of-songs-on-an-ipod
+      :name: ipod
 
    .. rubric:: Description
       :name: description

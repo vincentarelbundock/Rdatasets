@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: Survey on sleep deprivation and transportation workers
-      :name: survey-on-sleep-deprivation-and-transportation-workers
+      :name: sleep_deprivation
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Organ Donation Data
-      :name: organ-donation-data
+      :name: organ_donations
 
    .. rubric:: Description
       :name: description

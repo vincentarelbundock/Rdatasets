@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: The Joyner–Boore Attenuation Data
-      :name: the-joynerboore-attenuation-data
+      :name: attenu
 
    .. rubric:: Description
       :name: description

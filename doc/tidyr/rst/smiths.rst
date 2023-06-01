@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Some data about the Smith family
-      :name: some-data-about-the-smith-family
+      :name: smiths
 
    .. rubric:: Description
       :name: description

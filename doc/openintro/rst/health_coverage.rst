@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Health Coverage and Health Status
-      :name: health-coverage-and-health-status
+      :name: health_coverage
 
    .. rubric:: Description
       :name: description

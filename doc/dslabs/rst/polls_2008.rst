@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Poll data for popular vote in 2008 presidential election
-      :name: poll-data-for-popular-vote-in-2008-presidential-election
+      :name: polls_2008
 
    .. rubric:: Description
       :name: description
@@ -18,7 +18,7 @@
 
    ::
 
-      data(polls_2008)
+      polls_2008
 
    .. rubric:: Format
       :name: format
@@ -43,5 +43,4 @@
 
    ::
 
-      data(polls_2008)
       with(polls_2008, plot(day, margin))

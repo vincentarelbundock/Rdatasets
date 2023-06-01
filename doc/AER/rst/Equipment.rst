@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Transportation Equipment Manufacturing Data
-      :name: transportation-equipment-manufacturing-data
+      :name: Equipment
 
    .. rubric:: Description
       :name: description

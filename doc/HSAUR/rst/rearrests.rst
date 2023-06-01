@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Rearrests of Juvenile Felons
-      :name: rearrests-of-juvenile-felons
+      :name: rearrests
 
    .. rubric:: Description
       :name: description

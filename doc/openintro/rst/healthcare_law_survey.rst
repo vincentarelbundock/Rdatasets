@@ -6,7 +6,7 @@
 
    .. rubric:: Pew Research Center poll on health care, including
       question variants
-      :name: pew-research-center-poll-on-health-care-including-question-variants
+      :name: healthcare_law_survey
 
    .. rubric:: Description
       :name: description

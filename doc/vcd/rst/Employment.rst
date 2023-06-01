@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Employment Status
-      :name: employment-status
+      :name: Employment
 
    .. rubric:: Description
       :name: description

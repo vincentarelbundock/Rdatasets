@@ -6,7 +6,7 @@
 
    .. rubric:: John F. W. Herschel's Data on the Orbit of the Twin Stars
       ``\gamma`` *Virginis*
-      :name: john-f.-w.-herschels-data-on-the-orbit-of-the-twin-stars-gamma-virginis
+      :name: Virginis
 
    .. rubric:: Description
       :name: description

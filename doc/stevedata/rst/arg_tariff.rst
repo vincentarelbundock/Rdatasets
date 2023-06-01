@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Simple Mean Tariff Rate for Argentina
-      :name: simple-mean-tariff-rate-for-argentina
+      :name: arg_tariff
 
    .. rubric:: Description
       :name: description

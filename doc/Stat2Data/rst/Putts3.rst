@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Hypothetical Putting Data (Short Form)
-      :name: hypothetical-putting-data-short-form
+      :name: Putts3
 
    .. rubric:: Description
       :name: description

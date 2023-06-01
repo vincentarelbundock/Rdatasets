@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Comparing Twins Ability to Clear Radioactive Particles
-      :name: comparing-twins-ability-to-clear-radioactive-particles
+      :name: TwinsLungs
 
    .. rubric:: Description
       :name: description

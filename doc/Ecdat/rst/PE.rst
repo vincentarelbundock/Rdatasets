@@ -5,7 +5,7 @@
    == ===============
 
    .. rubric:: Price and Earnings Index
-      :name: price-and-earnings-index
+      :name: PE
 
    .. rubric:: Description
       :name: description

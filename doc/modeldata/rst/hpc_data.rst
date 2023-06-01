@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: High-performance computing system data
-      :name: high-performance-computing-system-data
+      :name: hpc_data
 
    .. rubric:: Description
       :name: description

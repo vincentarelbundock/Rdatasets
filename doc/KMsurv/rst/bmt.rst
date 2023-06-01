@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: data from Section 1.3
-      :name: data-from-section-1.3
+      :name: bmt
 
    .. rubric:: Description
       :name: description

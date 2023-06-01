@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Numbers of Car Insurance claims
-      :name: numbers-of-car-insurance-claims
+      :name: Insurance
 
    .. rubric:: Description
       :name: description

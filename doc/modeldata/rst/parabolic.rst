@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Parabolic class boundary data
-      :name: parabolic-class-boundary-data
+      :name: parabolic
 
    .. rubric:: Description
       :name: description

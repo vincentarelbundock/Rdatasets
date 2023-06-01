@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Seismic Timing Data
-      :name: seismic-timing-data
+      :name: geophones
 
    .. rubric:: Description
       :name: description

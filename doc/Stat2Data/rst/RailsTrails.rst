@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Homes in Northampton MA Near Rail Trails
-      :name: homes-in-northampton-ma-near-rail-trails
+      :name: RailsTrails
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Spatial Topographic Data
-      :name: spatial-topographic-data
+      :name: topo
 
    .. rubric:: Description
       :name: description

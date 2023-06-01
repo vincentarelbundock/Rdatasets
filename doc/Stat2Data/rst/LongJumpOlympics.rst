@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Olympic Men's Long Jump Gold Medal Distance (1900 - 2008)
-      :name: olympic-mens-long-jump-gold-medal-distance-1900---2008
+      :name: LongJumpOlympics
 
    .. rubric:: Description
       :name: description

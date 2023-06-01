@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Money, National Product and Interest Rate
-      :name: money-national-product-and-interest-rate
+      :name: Mpyr
 
    .. rubric:: Description
       :name: description

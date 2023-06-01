@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Anorexia Data on Weight Change
-      :name: anorexia-data-on-weight-change
+      :name: anorexia
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Florida Death Penalty Cases
-      :name: florida-death-penalty-cases
+      :name: FloridaDP
 
    .. rubric:: Description
       :name: description

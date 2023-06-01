@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Community college housing (simulated data)
-      :name: community-college-housing-simulated-data
+      :name: cchousing
 
    .. rubric:: Description
       :name: description

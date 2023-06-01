@@ -5,7 +5,7 @@
    ===================== ===============
 
    .. rubric:: Official Secrecy of the United States Government
-      :name: official-secrecy-of-the-united-states-government
+      :name: USclassifiedDocuments
 
    .. rubric:: Description
       :name: description

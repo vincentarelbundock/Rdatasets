@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Labour Training Evaluation Data
-      :name: labour-training-evaluation-data
+      :name: nswdemo
 
    .. rubric:: Description
       :name: description

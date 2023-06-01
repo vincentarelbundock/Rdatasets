@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Effect of ferulic acid on growth of ryegrass
-      :name: effect-of-ferulic-acid-on-growth-of-ryegrass
+      :name: ryegrass
 
    .. rubric:: Description
       :name: description

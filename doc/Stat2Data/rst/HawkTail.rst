@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Tail Lengths of Hawks
-      :name: tail-lengths-of-hawks
+      :name: HawkTail
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Level of Lake Huron 1875–1972
-      :name: level-of-lake-huron-18751972
+      :name: LakeHuron
 
    .. rubric:: Description
       :name: description

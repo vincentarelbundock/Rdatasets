@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Exxon Mobile stock data
-      :name: exxon-mobile-stock-data
+      :name: xom
 
    .. rubric:: Description
       :name: description

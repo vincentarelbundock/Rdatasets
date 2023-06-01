@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Field Goal Attempts in the NFL
-      :name: field-goal-attempts-in-the-nfl
+      :name: SampleFG
 
    .. rubric:: Description
       :name: description

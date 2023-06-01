@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Data from toxicology experiments with selenium
-      :name: data-from-toxicology-experiments-with-selenium
+      :name: selenium
 
    .. rubric:: Description
       :name: description

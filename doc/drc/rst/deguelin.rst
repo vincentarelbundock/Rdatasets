@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Deguelin applied to chrysanthemum aphis
-      :name: deguelin-applied-to-chrysanthemum-aphis
+      :name: deguelin
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: data from Section 1.14
-      :name: data-from-section-1.14
+      :name: bfeed
 
    .. rubric:: Description
       :name: description

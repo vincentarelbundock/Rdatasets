@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Kelly Blue Book resale data for 2005 model year GM cars
-      :name: kelly-blue-book-resale-data-for-2005-model-year-gm-cars
+      :name: car_prices
 
    .. rubric:: Description
       :name: description

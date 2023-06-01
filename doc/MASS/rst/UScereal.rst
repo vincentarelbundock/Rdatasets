@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Nutritional and Marketing Information on US Cereals
-      :name: nutritional-and-marketing-information-on-us-cereals
+      :name: UScereal
 
    .. rubric:: Description
       :name: description

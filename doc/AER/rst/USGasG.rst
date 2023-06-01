@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: US Gasoline Market Data (1960–1995, Greene)
-      :name: us-gasoline-market-data-19601995-greene
+      :name: USGasG
 
    .. rubric:: Description
       :name: description

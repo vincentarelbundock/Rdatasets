@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Gold and Silver Prices
-      :name: gold-and-silver-prices
+      :name: GoldSilver
 
    .. rubric:: Description
       :name: description

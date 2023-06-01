@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Deck of cards
-      :name: deck-of-cards
+      :name: cards
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Cape Fur Seal Lung Measurements
-      :name: cape-fur-seal-lung-measurements
+      :name: lung
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Putting Success by Length (Long Form)
-      :name: putting-success-by-length-long-form
+      :name: Putts1
 
    .. rubric:: Description
       :name: description

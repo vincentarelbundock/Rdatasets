@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Stents for the treatment of stroke
-      :name: stents-for-the-treatment-of-stroke
+      :name: stent30
 
    .. rubric:: Description
       :name: description

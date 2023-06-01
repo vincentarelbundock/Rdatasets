@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Manufacturing Costs Data
-      :name: manufacturing-costs-data
+      :name: ManufactCosts
 
    .. rubric:: Description
       :name: description

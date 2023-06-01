@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Scores on A-level Chemistry in 1997
-      :name: scores-on-a-level-chemistry-in-1997
+      :name: Chem97
 
    .. rubric:: Description
       :name: description

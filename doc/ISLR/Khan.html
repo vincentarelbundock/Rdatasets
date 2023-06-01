@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: Khan Gene Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Khan</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Khan'>Khan Gene Data
+
+</h2>
+
+<h3>Description</h3>
+
+<p>The data consists of a
+number of tissue samples corresponding to four distinct types of small
+round blue cell tumors. For each tissue sample, 2308 gene expression measurements are available.
+
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Khan</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The format is a list containing four components: <code>xtrain</code>,
+<code>xtest</code>, <code>ytrain</code>, and <code>ytest</code>. <code>xtrain</code> contains
+the 2308 gene expression values for 63 subjects and <code>ytrain</code>
+records the corresponding tumor type. <code>ytrain</code> and <code>ytest</code>
+contain the corresponding testing sample information for a further 20 subjects.
+</p>
+
+
+<h3>Source</h3>
+
+<p>This data were originally reported in:
+</p>
+<p>Khan J, Wei J, Ringner M, Saal L, Ladanyi M, Westermann F, Berthold
+F, Schwab M, Antonescu C, Peterson C, and Meltzer P. Classification
+and diagnostic prediction of cancers using gene expression profiling
+and artificial neural networks. Nature Medicine, v.7, pp.673-679, 2001.
+</p>
+<p>The data were also used in:
+</p>
+<p>Tibshirani RJ, Hastie T, Narasimhan B, and G. Chu. Diagnosis of Multiple Cancer Types by
+Shrunken Centroids of Gene Expression. Proceedings of the National Academy of
+Sciences of the United States of America, v.99(10), pp.6567-6572, May
+14, 2002.
+</p>
+
+
+
+
+<h3>References</h3>
+
+<p>James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013)
+<em>An Introduction to Statistical Learning with applications in R</em>,
+<a href="https://www.statlearning.com">https://www.statlearning.com</a>,
+Springer-Verlag, New York
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>table(Khan$ytrain)
+table(Khan$ytest)
+</code></pre>
+
+
+</div>
+</body></html>

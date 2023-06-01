@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Belgium Phone Calls 1950-1973
-      :name: belgium-phone-calls-1950-1973
+      :name: Belgian-phones
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Quadcopter Drone Blades
-      :name: quadcopter-drone-blades
+      :name: drone_blades
 
    .. rubric:: Description
       :name: description

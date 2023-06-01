@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: hepatoCellular
-      :name: hepatocellular
+      :name: hepatoCellular
 
    .. rubric:: Description
       :name: description

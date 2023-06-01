@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Mites and Wilt Disease
-      :name: mites-and-wilt-disease
+      :name: Mites
 
    .. rubric:: Description
       :name: description

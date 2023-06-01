@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: PSID Earnings Data 1982
-      :name: psid-earnings-data-1982
+      :name: PSID1982
 
    .. rubric:: Description
       :name: description

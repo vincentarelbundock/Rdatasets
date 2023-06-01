@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Survey on views of the DREAM Act
-      :name: survey-on-views-of-the-dream-act
+      :name: dream
 
    .. rubric:: Description
       :name: description

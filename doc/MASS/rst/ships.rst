@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Ships Damage Data
-      :name: ships-damage-data
+      :name: ships
 
    .. rubric:: Description
       :name: description

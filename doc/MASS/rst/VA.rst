@@ -5,7 +5,7 @@
    == ===============
 
    .. rubric:: Veteran's Administration Lung Cancer Trial
-      :name: veterans-administration-lung-cancer-trial
+      :name: VA
 
    .. rubric:: Description
       :name: description

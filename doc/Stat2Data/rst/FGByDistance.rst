@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Results of NFL Field Goal Attempts
-      :name: results-of-nfl-field-goal-attempts
+      :name: FGByDistance
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Paste strength by batch and cask
-      :name: paste-strength-by-batch-and-cask
+      :name: Pastes
 
    .. rubric:: Description
       :name: description

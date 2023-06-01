@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Heart rate baroreflexes for rabbits
-      :name: heart-rate-baroreflexes-for-rabbits
+      :name: heartrate
 
    .. rubric:: Description
       :name: description

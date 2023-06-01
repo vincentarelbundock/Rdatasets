@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Spatial Location of Bramble Canes
-      :name: spatial-location-of-bramble-canes
+      :name: brambles
 
    .. rubric:: Description
       :name: description

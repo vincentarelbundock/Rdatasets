@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Acifluorfen and diquat tested on Lemna minor.
-      :name: acifluorfen-and-diquat-tested-on-lemna-minor.
+      :name: acidiq
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Major Party (Democrat, Republican) Thermometer Index Data
       (1978-2012)
-      :name: major-party-democrat-republican-thermometer-index-data-1978-2012
+      :name: anes_partytherms
 
    .. rubric:: Description
       :name: description

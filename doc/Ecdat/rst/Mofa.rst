@@ -6,7 +6,7 @@
 
    .. rubric:: International Expansion of U.S. MOFAs (majority–owned
       Foreign Affiliates in Fire (finance, Insurance and Real Estate)
-      :name: international-expansion-of-u.s.-mofas-majorityowned-foreign-affiliates-in-fire-finance-insurance-and-real-estate
+      :name: Mofa
 
    .. rubric:: Description
       :name: description

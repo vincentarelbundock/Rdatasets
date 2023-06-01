@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Pre-existing conditions in 92 children
-      :name: pre-existing-conditions-in-92-children
+      :name: antibiotics
 
    .. rubric:: Description
       :name: description

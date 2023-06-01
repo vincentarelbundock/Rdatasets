@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Liver transplant waiting list
-      :name: liver-transplant-waiting-list
+      :name: transplant
 
    .. rubric:: Description
       :name: description

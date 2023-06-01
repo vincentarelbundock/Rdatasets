@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Voltage Drop for a Discharging Capacitor
-      :name: voltage-drop-for-a-discharging-capacitor
+      :name: Volts
 
    .. rubric:: Description
       :name: description

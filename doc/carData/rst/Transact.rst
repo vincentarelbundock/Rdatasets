@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Transaction data
-      :name: transaction-data
+      :name: Transact
 
    .. rubric:: Description
       :name: description

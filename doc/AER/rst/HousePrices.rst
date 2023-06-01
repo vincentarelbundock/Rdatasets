@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: House Prices in the City of Windsor, Canada
-      :name: house-prices-in-the-city-of-windsor-canada
+      :name: HousePrices
 
    .. rubric:: Description
       :name: description

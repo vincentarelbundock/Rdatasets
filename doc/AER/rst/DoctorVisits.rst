@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Australian Health Service Utilization Data
-      :name: australian-health-service-utilization-data
+      :name: DoctorVisits
 
    .. rubric:: Description
       :name: description

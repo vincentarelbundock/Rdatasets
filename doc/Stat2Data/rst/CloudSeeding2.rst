@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Cloud Seeding Experiment (Four Seasons)
-      :name: cloud-seeding-experiment-four-seasons
+      :name: CloudSeeding2
 
    .. rubric:: Description
       :name: description

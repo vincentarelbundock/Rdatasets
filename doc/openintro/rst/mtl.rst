@@ -6,7 +6,7 @@
 
    .. rubric:: Medial temporal lobe (MTL) and other data for 26
       participants
-      :name: medial-temporal-lobe-mtl-and-other-data-for-26-participants
+      :name: mtl
 
    .. rubric:: Description
       :name: description

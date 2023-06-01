@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Rates of Cricket Chirps
-      :name: rates-of-cricket-chirps
+      :name: crickets
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Wii Mario Kart auctions from Ebay
-      :name: wii-mario-kart-auctions-from-ebay
+      :name: mariokart
 
    .. rubric:: Description
       :name: description

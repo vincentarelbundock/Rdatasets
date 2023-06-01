@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Wages of Lancashire Cotton Factory Workers in 1833
-      :name: wages-of-lancashire-cotton-factory-workers-in-1833
+      :name: wages1833
 
    .. rubric:: Description
       :name: description

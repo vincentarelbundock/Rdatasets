@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Household data
-      :name: household-data
+      :name: household
 
    .. rubric:: Description
       :name: description

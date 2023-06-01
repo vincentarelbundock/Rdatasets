@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Elisa assay of DNase
-      :name: elisa-assay-of-dnase
+      :name: DNase
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Copper in Wholemeal Flour
-      :name: copper-in-wholemeal-flour
+      :name: chem
 
    .. rubric:: Description
       :name: description

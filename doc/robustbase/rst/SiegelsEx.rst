@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Siegel's Exact Fit Example Data
-      :name: siegels-exact-fit-example-data
+      :name: SiegelsEx
 
    .. rubric:: Description
       :name: description

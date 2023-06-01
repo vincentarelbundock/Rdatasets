@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: A year of pizza sales from a pizza place
-      :name: a-year-of-pizza-sales-from-a-pizza-place
+      :name: pizzaplace
 
    .. rubric:: Description
       :name: description

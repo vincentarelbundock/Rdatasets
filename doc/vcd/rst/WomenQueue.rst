@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Women in Queues
-      :name: women-in-queues
+      :name: WomenQueue
 
    .. rubric:: Description
       :name: description

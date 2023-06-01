@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Melanoma skin cancer incidence
-      :name: melanoma-skin-cancer-incidence
+      :name: H_melanoma
 
    .. rubric:: Description
       :name: description

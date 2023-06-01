@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Visual versus Verbal Performance
-      :name: visual-versus-verbal-performance
+      :name: VisualVerbal
 
    .. rubric:: Description
       :name: description

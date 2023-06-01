@@ -6,7 +6,7 @@
 
    .. rubric:: University Lecture/Instructor Evaluations by Students at
       ETH
-      :name: university-lectureinstructor-evaluations-by-students-at-eth
+      :name: InstEval
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Levee Failures along the Mississippi River
-      :name: levee-failures-along-the-mississippi-river
+      :name: LeveeFailures
 
    .. rubric:: Description
       :name: description

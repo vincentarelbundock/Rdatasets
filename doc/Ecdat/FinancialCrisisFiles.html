@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Files containing financial crisis data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>FinancialCrisisFiles</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='FinancialCrisisFiles'> Files containing financial crisis data </h2>
+
+<h3>Description</h3>
+
+<p><code>FinancialCrisisFiles</code> is an object of class
+<code>financialCrisisFiles</code> created by the 
+<code>financialCrisisFiles</code> function in 
+<code>Ecfun</code>.  It describes files containing data 
+on financial crises downloadable from
+<a href="https://web.archive.org/web/20150419090824/http://www.reinhartandrogoff.com/data/browse-by-topic/topics/7">https://web.archive.org/web/20150419090824/http://www.reinhartandrogoff.com/data/browse-by-topic/topics/7</a>.
+</p>
+<p>NOTE:  When this dataset was created it was 
+downloaded from <code>http://www.reinhartandrogoff.com/data/browse-by-topic/topics/7</code>.  However, it was &quot;Not Found&quot; in testing on 2020-02-09.  Fortunately the data are still available on the Internet Archive.  
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(FinancialCrisisFiles)
+</code></pre>
+
+
+<h3>Details</h3>
+
+<p>Reinhart and Rogoff (<a href="http://www.reinhartandrogoff.com">http://www.reinhartandrogoff.com</a>) provide
+numerous data sets analyzed in their book, &quot;This Time Is Different:
+Eight Centuries of Financial Folly&quot;.  Of interest here are data on
+financial crises of various types for 70 countries spanning the years
+1800 - 2010, downloadable from
+<a href="http://www.reinhartandrogoff.com/data/browse-by-topic/topics/7/">http://www.reinhartandrogoff.com/data/browse-by-topic/topics/7/</a>.
+</p>
+<p>Version 0.2-3 of the <code>Ecfun</code> package 
+included a function <code>financialCrisisFiles</code> 
+that produced a list of class
+<code>financialCrisisFiles</code> describing four
+different Excel files in very similar formats 
+with one sheet per Country and a few extra
+descriptor sheets.  This data object
+<code>FinancialCrisisFiles</code> was produced by 
+that function.  That function required the 
+<code>gdata</code> package, and users of that package
+were advised to terminate use of it, because 
+it was scheduled to be removed from CRAN along 
+with all packages that used it. Since   Reinhart 
+and Rogoff seemed not to be actively maintaining
+that dataset, there seemed little need to do the 
+work required to make the 
+<code>Ecfun::financialCrisisFiles</code> work without 
+<code>gdata</code>, so it was removed from <code>Ecfun</code>
+version 2.0-4.  
+</p>
+
+
+<h3>Value</h3>
+
+<p><code>FinancialCrisisFiles</code> is a list with
+components carrying the names of files to be read. 
+Each component is a list of optional arguments to
+pass to <code>do.call(read.xls, ...)</code> to read the
+sheet with name = name of that component.  (This
+<code>read.xls</code> was part of the <code>gdata</code>
+package, which may no longer be available on 
+CRAN.) 
+</p>
+<p>This corresponds to the files downloaded from
+<a href="http://www.reinhartandrogoff.com/data/browse-by-topic/topics/7/">http://www.reinhartandrogoff.com/data/browse-by-topic/topics/7/</a>
+in January 2013 (except for the fourth, which was
+not available there because of an error with the 
+web site but instead was obtained directly from 
+Prof. Reinhart).
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Spencer Graves</p>
+
+
+<h3>Source</h3>
+
+<p><a href="http://www.reinhartandrogoff.com">http://www.reinhartandrogoff.com</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Carmen M. Reinhart and Kenneth S. Rogoff (2009) 
+This Time Is Different:  Eight Centuries of
+Financial Folly, Princeton U. Pr.
+</p>
+
+
+</div>
+</body></html>

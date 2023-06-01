@@ -6,7 +6,7 @@
 
    .. rubric:: Cybersecurity breaches reported to the US Department of
       Health and Human Services
-      :name: cybersecurity-breaches-reported-to-the-us-department-of-health-and-human-services
+      :name: HHSCyberSecurityBreaches
 
    .. rubric:: Description
       :name: description

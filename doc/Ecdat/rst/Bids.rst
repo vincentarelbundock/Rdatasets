@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Bids Received By U.S. Firms
-      :name: bids-received-by-u.s.-firms
+      :name: Bids
 
    .. rubric:: Description
       :name: description

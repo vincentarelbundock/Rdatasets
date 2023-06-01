@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Social Support Data
-      :name: social-support-data
+      :name: socsupport
 
    .. rubric:: Description
       :name: description

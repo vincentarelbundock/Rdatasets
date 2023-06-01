@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Porsche Prices
-      :name: porsche-prices
+      :name: PorschePrice
 
    .. rubric:: Description
       :name: description

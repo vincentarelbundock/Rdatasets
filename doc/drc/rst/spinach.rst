@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Inhibition of photosynthesis
-      :name: inhibition-of-photosynthesis
+      :name: spinach
 
    .. rubric:: Description
       :name: description

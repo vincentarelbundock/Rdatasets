@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Data about each season aired in the US (raw)
-      :name: data-about-each-season-aired-in-the-us-raw
+      :name: seasons_raw
 
    .. rubric:: Description
       :name: description

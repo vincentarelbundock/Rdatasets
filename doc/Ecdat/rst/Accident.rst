@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Ship Accidents
-      :name: ship-accidents
+      :name: Accident
 
    .. rubric:: Description
       :name: description

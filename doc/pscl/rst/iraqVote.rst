@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: U.S. Senate vote on the use of force against Iraq, 2002.
-      :name: u.s.-senate-vote-on-the-use-of-force-against-iraq-2002.
+      :name: iraqVote
 
    .. rubric:: Description
       :name: description

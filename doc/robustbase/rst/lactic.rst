@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Lactic Acid Concentration Measurement Data
-      :name: lactic-acid-concentration-measurement-data
+      :name: lactic
 
    .. rubric:: Description
       :name: description

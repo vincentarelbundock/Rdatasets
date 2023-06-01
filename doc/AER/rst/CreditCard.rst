@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Expenditure and Default Data
-      :name: expenditure-and-default-data
+      :name: CreditCard
 
    .. rubric:: Description
       :name: description

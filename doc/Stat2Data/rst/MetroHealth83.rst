@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Health Services in Metropolitan Areas
-      :name: health-services-in-metropolitan-areas
+      :name: MetroHealth83
 
    .. rubric:: Description
       :name: description

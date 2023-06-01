@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: rollcall object, National Journal key votes of 2007</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>nj07</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='nj07'>rollcall object, National Journal key votes of 2007</h2>
+
+<h3>Description</h3>
+
+<p>A rollcall object containing 99 rollcalls from the 2nd session of the 110th U.S. Senate,  
+designated by <em>National Journal</em> as the &quot;key votes&quot; of 2007.  These data were used to by <em>National Journal</em> to rate (then Senator) Barack Obama was the &quot;most liberal senator&quot; in 2007.</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(nj07)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>rollcall</code> object containing the recorded votes,
+plus information identifying the legislators and the
+rollcalls.
+</p>
+
+
+<h3>Details</h3>
+
+<p>Note the coding scheme used by Poole and Rosenthal; Yea (1,2,3),
+Nay (4,5,6) etc.</p>
+
+
+<h3>Source</h3>
+
+<p>Keith Poole's web site:
+<a href="http://legacy.voteview.com/senate110.htm">http://legacy.voteview.com/senate110.htm</a>
+</p>
+<p>Originally scraped from the Senate's web site by Jeff Lewis.
+</p>
+<p>Josh Clinton compiled the list of <em>National Journal</em> key votes.  
+</p>
+
+
+<h3>References</h3>
+
+<p>Clinton, Joshua and Simon Jackman.  2009. To Simulate or NOMINATE?  
+<em>Legislative Studies Quarterly</em>. V34(4):593-621.
+</p>
+<p>Jackman, Simon.  2009. <em>Bayesian Analysis for the Social Sciences</em>. Wiley: Hoboken, New Jersey. Example 9.2. 
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>require(pscl)
+data(nj07)
+is(nj07,"rollcall")    ## TRUE
+nj07                   ## print method for class rollcall
+names(nj07)
+names(nj07$vote.data)
+table(nj07$vote.data$policyArea)
+summary(nj07)          ## summary method
+summary(nj07,verbose=TRUE)
+</code></pre>
+
+
+</div>
+</body></html>

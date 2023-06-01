@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Velocities for 82 Galaxies
-      :name: velocities-for-82-galaxies
+      :name: galaxies
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Sex is Fun
-      :name: sex-is-fun
+      :name: SexualFun
 
    .. rubric:: Description
       :name: description

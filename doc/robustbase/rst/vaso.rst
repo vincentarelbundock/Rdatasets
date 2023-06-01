@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Vaso Constriction Skin Data Set
-      :name: vaso-constriction-skin-data-set
+      :name: vaso
 
    .. rubric:: Description
       :name: description

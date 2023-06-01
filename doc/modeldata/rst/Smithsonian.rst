@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Smithsonian museums
-      :name: smithsonian-museums
+      :name: Smithsonian
 
    .. rubric:: Description
       :name: description

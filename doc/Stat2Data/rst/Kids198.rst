@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Body Measurements of Children
-      :name: body-measurements-of-children
+      :name: Kids198
 
    .. rubric:: Description
       :name: description

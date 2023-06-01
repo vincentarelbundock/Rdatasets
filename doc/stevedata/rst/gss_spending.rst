@@ -6,7 +6,7 @@
 
    .. rubric:: Attitudes Toward National Spending in the General Social
       Survey (2018)
-      :name: attitudes-toward-national-spending-in-the-general-social-survey-2018
+      :name: gss_spending
 
    .. rubric:: Description
       :name: description

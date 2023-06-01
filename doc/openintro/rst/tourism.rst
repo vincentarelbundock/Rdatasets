@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Turkey tourism
-      :name: turkey-tourism
+      :name: tourism
 
    .. rubric:: Description
       :name: description

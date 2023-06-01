@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Funnel Drop Times
-      :name: funnel-drop-times
+      :name: FunnelDrop
 
    .. rubric:: Description
       :name: description

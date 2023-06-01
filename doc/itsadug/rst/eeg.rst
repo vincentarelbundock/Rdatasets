@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Raw EEG data, single trial, 50Hz.
-      :name: raw-eeg-data-single-trial-50hz.
+      :name: eeg
 
    .. rubric:: Description
       :name: description

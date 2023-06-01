@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Annual oil production in Saudi Arabia
-      :name: annual-oil-production-in-saudi-arabia
+      :name: oil
 
    .. rubric:: Description
       :name: description

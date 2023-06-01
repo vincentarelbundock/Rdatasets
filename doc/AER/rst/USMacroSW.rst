@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: US Macroeconomic Data (1957–2005, Stock & Watson)
-      :name: us-macroeconomic-data-19572005-stock-watson
+      :name: USMacroSW
 
    .. rubric:: Description
       :name: description

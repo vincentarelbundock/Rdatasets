@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Yearly averages of Great Lake heights: 1918 - 2009
-      :name: yearly-averages-of-great-lake-heights-1918---2009
+      :name: greatLakes
 
    .. rubric:: Description
       :name: description

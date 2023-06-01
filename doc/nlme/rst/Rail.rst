@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Evaluation of Stress in Railway Rails
-      :name: evaluation-of-stress-in-railway-rails
+      :name: Rail
 
    .. rubric:: Description
       :name: description

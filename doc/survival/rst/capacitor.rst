@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Reliability data sets
-      :name: reliability-data-sets
+      :name: reliability
 
    .. rubric:: Description
       :name: description

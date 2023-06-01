@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Budget Share of Food for Spanish Households
-      :name: budget-share-of-food-for-spanish-households
+      :name: BudgetFood
 
    .. rubric:: Description
       :name: description

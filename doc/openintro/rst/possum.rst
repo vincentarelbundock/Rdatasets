@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Possums in Australia and New Guinea
-      :name: possums-in-australia-and-new-guinea
+      :name: possum
 
    .. rubric:: Description
       :name: description

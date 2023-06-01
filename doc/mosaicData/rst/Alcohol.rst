@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Alcohol Consumption per Capita
-      :name: alcohol-consumption-per-capita
+      :name: Alcohol
 
    .. rubric:: Description
       :name: description

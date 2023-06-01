@@ -6,7 +6,7 @@
 
    .. rubric:: Willingness to Pay for the Preservation of the Alentejo
       Natural Park
-      :name: willingness-to-pay-for-the-preservation-of-the-alentejo-natural-park
+      :name: NaturalPark
 
    .. rubric:: Description
       :name: description

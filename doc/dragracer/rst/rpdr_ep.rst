@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: RuPaul's Drag Race Episode Data
-      :name: rupauls-drag-race-episode-data
+      :name: rpdr_ep
 
    .. rubric:: Description
       :name: description

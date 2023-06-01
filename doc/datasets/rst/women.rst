@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Average Heights and Weights for American Women
-      :name: average-heights-and-weights-for-american-women
+      :name: women
 
    .. rubric:: Description
       :name: description

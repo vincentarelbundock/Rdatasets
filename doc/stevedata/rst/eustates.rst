@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: EU Member States (Current as of 2019)
-      :name: eu-member-states-current-as-of-2019
+      :name: eustates
 
    .. rubric:: Description
       :name: description

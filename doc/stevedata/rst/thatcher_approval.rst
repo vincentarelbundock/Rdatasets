@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: Margaret Thatcher Satisfaction Ratings, 1980-1990
-      :name: margaret-thatcher-satisfaction-ratings-1980-1990
+      :name: thatcher_approval
 
    .. rubric:: Description
       :name: description
@@ -23,10 +23,7 @@
    .. rubric:: Format
       :name: format
 
-   A data frame with 125 observations on the following 9 variables.
-
-   ``year``
-      the year of the poll
+   A data frame with 125 observations on the following 8 variables.
 
    ``poll_date``
       the effective "date" of the public opinion poll

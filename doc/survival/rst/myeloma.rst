@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Survival times of patients with multiple myeloma
-      :name: survival-times-of-patients-with-multiple-myeloma
+      :name: myeloma
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Example Data for the Design Functions
-      :name: example-data-for-the-design-functions
+      :name: boundsdata
 
    .. rubric:: Description
       :name: description

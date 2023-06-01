@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Physical Properties of Stars
-      :name: physical-properties-of-stars
+      :name: stars
 
    .. rubric:: Description
       :name: description
@@ -18,7 +18,7 @@
 
    ::
 
-      data(stars)
+      stars
 
    .. rubric:: Format
       :name: format
@@ -48,5 +48,4 @@
 
    ::
 
-      data(stars)
       head(stars)

@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Rice production (Guinea)
-      :name: rice-production-guinea
+      :name: guinearice
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Call volume for a large North American bank
-      :name: call-volume-for-a-large-north-american-bank
+      :name: calls
 
    .. rubric:: Description
       :name: description

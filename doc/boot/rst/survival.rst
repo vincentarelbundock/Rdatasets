@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Survival of Rats after Radiation Doses
-      :name: survival-of-rats-after-radiation-doses
+      :name: survival
 
    .. rubric:: Description
       :name: description

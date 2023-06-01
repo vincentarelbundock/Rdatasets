@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Coleman Data Set
-      :name: coleman-data-set
+      :name: coleman
 
    .. rubric:: Description
       :name: description

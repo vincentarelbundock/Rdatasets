@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Contagiousness of yawning
-      :name: contagiousness-of-yawning
+      :name: yawn
 
    .. rubric:: Description
       :name: description

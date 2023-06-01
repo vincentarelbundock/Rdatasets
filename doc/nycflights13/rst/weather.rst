@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Hourly weather data
-      :name: hourly-weather-data
+      :name: weather
 
    .. rubric:: Description
       :name: description

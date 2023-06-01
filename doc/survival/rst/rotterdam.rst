@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Breast cancer data set used in Royston and Altman (2013)
-      :name: breast-cancer-data-set-used-in-royston-and-altman-2013
+      :name: rotterdam
 
    .. rubric:: Description
       :name: description

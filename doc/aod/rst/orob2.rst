@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Germination Data
-      :name: germination-data
+      :name: orob2
 
    .. rubric:: Description
       :name: description

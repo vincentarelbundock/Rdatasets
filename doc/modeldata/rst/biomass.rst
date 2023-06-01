@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Biomass data
-      :name: biomass-data
+      :name: biomass
 
    .. rubric:: Description
       :name: description

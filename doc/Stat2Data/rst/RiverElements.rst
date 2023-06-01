@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Elements in River Water Samples
-      :name: elements-in-river-water-samples
+      :name: RiverElements
 
    .. rubric:: Description
       :name: description

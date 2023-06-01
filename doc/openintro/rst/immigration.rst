@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Poll on illegal workers in the US
-      :name: poll-on-illegal-workers-in-the-us
+      :name: immigration
 
    .. rubric:: Description
       :name: description

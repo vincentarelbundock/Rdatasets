@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Brownlee's Stack Loss Plant Data
-      :name: brownlees-stack-loss-plant-data
+      :name: stackloss
 
    .. rubric:: Description
       :name: description

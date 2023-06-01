@@ -6,7 +6,7 @@
 
    .. rubric:: United Kingdom Effective Exchange Rate Index Data,
       1990-2022
-      :name: united-kingdom-effective-exchange-rate-index-data-1990-2022
+      :name: ukg_eeri
 
    .. rubric:: Description
       :name: description

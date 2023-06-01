@@ -6,7 +6,7 @@
 
    .. rubric:: Public Opinion with SCOTUS ruling on American Healthcare
       Act
-      :name: public-opinion-with-scotus-ruling-on-american-healthcare-act
+      :name: scotus_healthcare
 
    .. rubric:: Description
       :name: description

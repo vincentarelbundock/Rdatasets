@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: The Counties of Sweden
-      :name: the-counties-of-sweden
+      :name: sweden_counties
 
    .. rubric:: Description
       :name: description

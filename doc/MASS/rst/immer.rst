@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Yields from a Barley Field Trial
-      :name: yields-from-a-barley-field-trial
+      :name: immer
 
    .. rubric:: Description
       :name: description

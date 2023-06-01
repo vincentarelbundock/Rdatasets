@@ -6,7 +6,7 @@
 
    .. rubric:: Benderly and Zwick Data: Inflation, Growth and Stock
       Returns
-      :name: benderly-and-zwick-data-inflation-growth-and-stock-returns
+      :name: BenderlyZwick
 
    .. rubric:: Description
       :name: description

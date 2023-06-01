@@ -5,7 +5,7 @@
    ===================================== ===============
 
    .. rubric:: Russians' Opinions on US Election Influence in 2016
-      :name: russians-opinions-on-us-election-influence-in-2016
+      :name: russian_influence_on_us_election_2016
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Hypothetical student-level data
-      :name: hypothetical-student-level-data
+      :name: student
 
    .. rubric:: Description
       :name: description

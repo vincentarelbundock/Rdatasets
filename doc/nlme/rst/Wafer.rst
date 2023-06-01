@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Modeling of Analog MOS Circuits
-      :name: modeling-of-analog-mos-circuits
+      :name: Wafer
 
    .. rubric:: Description
       :name: description

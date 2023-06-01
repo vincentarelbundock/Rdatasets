@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Internet Usage per Minute
-      :name: internet-usage-per-minute
+      :name: WWWusage
 
    .. rubric:: Description
       :name: description

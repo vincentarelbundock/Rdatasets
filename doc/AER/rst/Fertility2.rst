@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Fertility and Women's Labor Supply
-      :name: fertility-and-womens-labor-supply
+      :name: Fertility
 
    .. rubric:: Description
       :name: description

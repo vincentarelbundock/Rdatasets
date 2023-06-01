@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Boston Housing Data – Corrected
-      :name: boston-housing-data-corrected
+      :name: bostonc
 
    .. rubric:: Description
       :name: description

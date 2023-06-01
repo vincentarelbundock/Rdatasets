@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Effect of cadmium on growth of green alga
-      :name: effect-of-cadmium-on-growth-of-green-alga
+      :name: S.capricornutum
 
    .. rubric:: Description
       :name: description

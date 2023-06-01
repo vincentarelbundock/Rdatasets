@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Harman Example 2.3
-      :name: harman-example-2.3
+      :name: Harman23.cor
 
    .. rubric:: Description
       :name: description

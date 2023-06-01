@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Autism data
-      :name: autism-data
+      :name: autism
 
    .. rubric:: Description
       :name: description

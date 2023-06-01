@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: Property Rights, Democracy, and Economic Growth</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>PRDEG</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='PRDEG'>Property Rights, Democracy, and Economic Growth</h2>
+
+<h3>Description</h3>
+
+<p>A data set for replicating David Leblang's (1996) analysis on property rights,
+democracy, and economic growth.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>PRDEG
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 147 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt><code>levine</code></dt><dd><p>a numeric vector that servies as a cross-section identifier</p>
+</dd>
+<dt><code>country</code></dt><dd><p>a character vector for the country</p>
+</dd>
+<dt><code>decade</code></dt><dd><p>a numeric vector for a decade</p>
+</dd>
+<dt><code>private</code></dt><dd><p>a numeric vector for credit allocated to private enterprise</p>
+</dd>
+<dt><code>rgdp</code></dt><dd><p>a numeric vector for the initial level of real per capita GDP</p>
+</dd>
+<dt><code>democ</code></dt><dd><p>a numeric vector for the level of democracy</p>
+</dd>
+<dt><code>pri</code></dt><dd><p>a numeric vector for primary school attainment</p>
+</dd>
+<dt><code>sec</code></dt><dd><p>a numeric vector for secondary school attainment</p>
+</dd>
+<dt><code>grow</code></dt><dd><p>a numeric vector for per capita growth rate</p>
+</dd>
+<dt><code>xcontrol</code></dt><dd><p>a numeric vector for exchange controls</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data come Joshua Alley's Github repository on cross-sectional OLS
+regressions. Please read David Leblang's (1996) article for some more detail
+about the variables included in the model.
+</p>
+
+
+<h3>References</h3>
+
+<p>Leblang, David. 1996. &quot;Property Rights, Democracy, and Economic Growth.&quot; 49(1): 5-26.
+</p>
+
+
+</div>
+</body></html>

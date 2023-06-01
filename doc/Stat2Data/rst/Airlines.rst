@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Ontime Records for Two Airlines at Two Airports
-      :name: ontime-records-for-two-airlines-at-two-airports
+      :name: Airlines
 
    .. rubric:: Description
       :name: description

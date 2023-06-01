@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Facial Attractiveness of Men
-      :name: facial-attractiveness-of-men
+      :name: Faces
 
    .. rubric:: Description
       :name: description

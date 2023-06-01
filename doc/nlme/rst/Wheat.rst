@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Yields by growing conditions
-      :name: yields-by-growing-conditions
+      :name: Wheat
 
    .. rubric:: Description
       :name: description

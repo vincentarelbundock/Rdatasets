@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Reports of voting in the 1992 U.S. Presidential election.
-      :name: reports-of-voting-in-the-1992-u.s.-presidential-election.
+      :name: vote92
 
    .. rubric:: Description
       :name: description

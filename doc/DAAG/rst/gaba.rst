@@ -6,7 +6,7 @@
 
    .. rubric:: Effect of pentazocine on post-operative pain (average VAS
       scores)
-      :name: effect-of-pentazocine-on-post-operative-pain-average-vas-scores
+      :name: gaba
 
    .. rubric:: Description
       :name: description

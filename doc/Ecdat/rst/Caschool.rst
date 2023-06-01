@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: The California Test Score Data Set
-      :name: the-california-test-score-data-set
+      :name: Caschool
 
    .. rubric:: Description
       :name: description

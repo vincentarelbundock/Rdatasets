@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Annual survey of health-risk youth behaviors
-      :name: annual-survey-of-health-risk-youth-behaviors
+      :name: YouthRisk
 
    .. rubric:: Description
       :name: description

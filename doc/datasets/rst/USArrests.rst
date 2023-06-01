@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Violent Crime Rates by US State
-      :name: violent-crime-rates-by-us-state
+      :name: USArrests
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Abortion Attitudes (ANES, 2012)
-      :name: abortion-attitudes-anes-2012
+      :name: anes_prochoice
 
    .. rubric:: Description
       :name: description

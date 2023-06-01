@@ -6,7 +6,7 @@
 
    .. rubric:: Effect of technical grade and commercially formulated
       auxin herbicides
-      :name: effect-of-technical-grade-and-commercially-formulated-auxin-herbicides
+      :name: auxins
 
    .. rubric:: Description
       :name: description

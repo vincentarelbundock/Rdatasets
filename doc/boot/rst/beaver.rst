@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Beaver Body Temperature Data
-      :name: beaver-body-temperature-data
+      :name: beaver
 
    .. rubric:: Description
       :name: description

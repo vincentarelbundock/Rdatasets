@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Data from 93 Cars on Sale in the USA in 1993
-      :name: data-from-93-cars-on-sale-in-the-usa-in-1993
+      :name: Cars93
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: The Chatterjee–Price Attitude Data
-      :name: the-chatterjeeprice-attitude-data
+      :name: attitude
 
    .. rubric:: Description
       :name: description

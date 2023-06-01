@@ -6,7 +6,7 @@
 
    .. rubric:: Randomized, Controlled Trial of Licorice Gargle before
       Intubation for Elective Thoracic Surgery
-      :name: randomized-controlled-trial-of-licorice-gargle-before-intubation-for-elective-thoracic-surgery
+      :name: licorice_gargle
 
    .. rubric:: Description
       :name: description

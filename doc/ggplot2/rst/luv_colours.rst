@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: ``colors()`` in Luv space
-      :name: colors-in-luv-space
+      :name: luv_colours
 
    .. rubric:: Description
       :name: description

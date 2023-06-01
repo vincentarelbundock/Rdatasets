@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Assay for Relaxin
-      :name: assay-for-relaxin
+      :name: Relaxin
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: House Prices in Rural NY
-      :name: house-prices-in-rural-ny
+      :name: HousesNY
 
    .. rubric:: Description
       :name: description

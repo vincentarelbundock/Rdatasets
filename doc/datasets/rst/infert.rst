@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Infertility after Spontaneous and Induced Abortion
-      :name: infertility-after-spontaneous-and-induced-abortion
+      :name: infert
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Canadian Women's Labour-Force Participation
-      :name: canadian-womens-labour-force-participation
+      :name: Bfox
 
    .. rubric:: Description
       :name: description

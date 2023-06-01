@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Polio Field Trials Data
-      :name: polio-field-trials-data
+      :name: PolioTrials
 
    .. rubric:: Description
       :name: description

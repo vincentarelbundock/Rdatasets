@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Electricity from Wave Power at Sea
-      :name: electricity-from-wave-power-at-sea
+      :name: waves
 
    .. rubric:: Description
       :name: description

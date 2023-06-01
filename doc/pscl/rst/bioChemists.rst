@@ -6,7 +6,7 @@
 
    .. rubric:: article production by graduate students in biochemistry
       Ph.D. programs
-      :name: article-production-by-graduate-students-in-biochemistry-ph.d.-programs
+      :name: bioChemists
 
    .. rubric:: Description
       :name: description

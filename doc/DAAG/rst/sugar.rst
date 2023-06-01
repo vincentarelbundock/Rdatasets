@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Sugar Data
-      :name: sugar-data
+      :name: sugar
 
    .. rubric:: Description
       :name: description

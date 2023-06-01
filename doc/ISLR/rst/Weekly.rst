@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Weekly S&P Stock Market Data
-      :name: weekly-sp-stock-market-data
+      :name: Weekly
 
    .. rubric:: Description
       :name: description

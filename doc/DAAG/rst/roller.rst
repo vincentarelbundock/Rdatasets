@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Lawn Roller Data
-      :name: lawn-roller-data
+      :name: roller
 
    .. rubric:: Description
       :name: description

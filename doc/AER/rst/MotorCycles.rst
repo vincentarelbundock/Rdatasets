@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Motor Cycles in The Netherlands
-      :name: motor-cycles-in-the-netherlands
+      :name: MotorCycles
 
    .. rubric:: Description
       :name: description

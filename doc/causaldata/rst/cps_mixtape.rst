@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Observational counterpart to nsw_mixtape data
-      :name: observational-counterpart-to-nsw_mixtape-data
+      :name: cps_mixtape
 
    .. rubric:: Description
       :name: description

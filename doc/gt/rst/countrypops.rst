@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Yearly populations of countries from 1960 to 2017
-      :name: yearly-populations-of-countries-from-1960-to-2017
+      :name: countrypops
 
    .. rubric:: Description
       :name: description

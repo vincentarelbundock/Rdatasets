@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: The Effect of Punishment Regimes on Crime Rates
-      :name: the-effect-of-punishment-regimes-on-crime-rates
+      :name: UScrime
 
    .. rubric:: Description
       :name: description

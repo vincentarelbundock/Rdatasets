@@ -6,7 +6,7 @@
 
    .. rubric:: Willingness to Pay for the Preservation of the Kakadu
       National Park
-      :name: willingness-to-pay-for-the-preservation-of-the-kakadu-national-park
+      :name: Kakadu
 
    .. rubric:: Description
       :name: description

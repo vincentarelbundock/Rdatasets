@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Do Bee Stings Depend on Previous Stings?
-      :name: do-bee-stings-depend-on-previous-stings
+      :name: BeeStings
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Wages for male high school dropouts
-      :name: wages-for-male-high-school-dropouts
+      :name: wages
 
    .. rubric:: Description
       :name: description

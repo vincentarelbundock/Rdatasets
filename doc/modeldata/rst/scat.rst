@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Morphometric data on scat
-      :name: morphometric-data-on-scat
+      :name: scat
 
    .. rubric:: Description
       :name: description

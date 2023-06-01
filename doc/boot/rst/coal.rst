@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Dates of Coal Mining Disasters
-      :name: dates-of-coal-mining-disasters
+      :name: coal
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Price of Frozen Orange Juice
-      :name: price-of-frozen-orange-juice
+      :name: FrozenJuice
 
    .. rubric:: Description
       :name: description

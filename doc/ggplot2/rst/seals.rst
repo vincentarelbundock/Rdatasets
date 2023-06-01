@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Vector field of seal movements
-      :name: vector-field-of-seal-movements
+      :name: seals
 
    .. rubric:: Description
       :name: description

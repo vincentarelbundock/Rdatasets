@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Effect of Swedish Speed Limits on Accidents
-      :name: effect-of-swedish-speed-limits-on-accidents
+      :name: Traffic
 
    .. rubric:: Description
       :name: description

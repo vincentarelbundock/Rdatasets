@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Data from a fictional randomized heart transplant study
-      :name: data-from-a-fictional-randomized-heart-transplant-study
+      :name: greek_data
 
    .. rubric:: Description
       :name: description

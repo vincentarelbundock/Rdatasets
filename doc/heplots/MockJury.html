@@ -1,0 +1,146 @@
+<!DOCTYPE html><html><head><title>R: Effects Of Physical Attractiveness Upon Mock Jury Decisions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>MockJury</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='MockJury'>
+Effects Of Physical Attractiveness Upon Mock Jury Decisions
+</h2>
+
+<h3>Description</h3>
+
+<p>Male participants were shown a picture of one of three young women.  Pilot  work
+had indicated  that the  one woman  was beautiful,  another of  average physical
+attractiveness, and the third  unattractive.  Participants rated the  woman they
+saw on each  of twelve attributes.  These measures were used to check on the
+manipulation by the photo.
+</p>
+<p>Then the participants were told that the person in the photo had committed a
+Crime, and asked to rate the seriousness of the crime and recommend a
+prison sentence, in Years.
+</p>
+<p>Does attractiveness of the &quot;defendant&quot; influence the sentence or perceived
+seriousness of the crime?  Does attractiveness interact with the nature of the
+crime?
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(MockJury)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 114 observations on the following 17 variables.
+</p>
+
+<dl>
+<dt><code>Attr</code></dt><dd><p>Attractiveness of the photo, a factor with levels <code>Beautiful</code> <code>Average</code> <code>Unattractive</code></p>
+</dd>
+<dt><code>Crime</code></dt><dd><p>Type of crime, a factor with levels <code>Burglary</code> (theft of items from victim's room)
+<code>Swindle</code> (conned a male victim)</p>
+</dd>
+<dt><code>Years</code></dt><dd><p>length  of sentence given the defendant by the  mock juror subject</p>
+</dd>
+<dt><code>Serious</code></dt><dd><p>a  rating of  how  serious  the  subject  thought the defendant's  crime  was</p>
+</dd>
+<dt><code>exciting</code></dt><dd><p>rating of the photo for 'exciting'</p>
+</dd>
+<dt><code>calm</code></dt><dd><p>rating of the photo for 'calm'</p>
+</dd>
+<dt><code>independent</code></dt><dd><p>rating of the photo for 'independent'</p>
+</dd>
+<dt><code>sincere</code></dt><dd><p>rating of the photo for 'sincere'</p>
+</dd>
+<dt><code>warm</code></dt><dd><p>rating of the photo for 'warm'</p>
+</dd>
+<dt><code>phyattr</code></dt><dd><p>rating of the photo for 'physical attractiveness'</p>
+</dd>
+<dt><code>sociable</code></dt><dd><p>rating of the photo for 'exciting'</p>
+</dd>
+<dt><code>kind</code></dt><dd><p>rating of the photo for 'kind'</p>
+</dd>
+<dt><code>intelligent</code></dt><dd><p>rating of the photo for 'intelligent'</p>
+</dd>
+<dt><code>strong</code></dt><dd><p>rating of the photo for 'strong'</p>
+</dd>
+<dt><code>sophisticated</code></dt><dd><p>rating of the photo for 'sophisticated'</p>
+</dd>
+<dt><code>happy</code></dt><dd><p>rating of the photo for 'happy'</p>
+</dd>
+<dt><code>ownPA</code></dt><dd><p>self-rating of the subject for 'physical attractiveness'</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>From Dr. Wuensch's StatData Page,
+<a href="http://core.ecu.edu/psyc/wuenschk/StatData/PLASTER.dat">http://core.ecu.edu/psyc/wuenschk/StatData/PLASTER.dat</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Data from the thesis by Plaster, M. E. (1989).
+<em>Inmates as mock jurors: The effects of physical attractiveness upon juridic decisions.</em>
+M.A. thesis,
+Greenville, NC: East Carolina University. 
+</p>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># manipulation check:  test ratings of the photos classified by Attractiveness
+jury.mod1 &lt;- lm( cbind(phyattr, happy, independent, sophisticated) ~ Attr, data=MockJury)
+Anova(jury.mod1, test="Roy")
+## 
+## Type II MANOVA Tests: Roy test statistic
+##      Df test stat approx F num Df den Df    Pr(&gt;F)    
+## Attr  2    1.7672   48.156      4    109 &lt; 2.2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+
+heplot(jury.mod1, main="HE plot for manipulation check")
+pairs(jury.mod1)
+
+if (require(candisc)) {
+	jury.can &lt;- candisc(jury.mod1)
+	jury.can
+	heplot(jury.can, main="Canonical HE plot")
+}
+
+# influence of Attr of photo and nature of crime on Serious and Years
+jury.mod2 &lt;- lm( cbind(Serious, Years) ~ Attr * Crime, data=MockJury)
+Anova(jury.mod2, test="Roy")
+heplot(jury.mod2)
+
+# stepdown test (ANCOVA), controlling for Serious
+jury.mod3 &lt;- lm( Years ~ Serious + Attr * Crime, data=MockJury)
+Anova(jury.mod3)
+
+# need to consider heterogeneous slopes?
+jury.mod4 &lt;- lm( Years ~ Serious * Attr * Crime, data=MockJury)
+anova(jury.mod3, jury.mod4)
+
+</code></pre>
+
+
+</div>
+</body></html>

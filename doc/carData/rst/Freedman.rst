@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Crowding and Crime in U. S. Metropolitan Areas
-      :name: crowding-and-crime-in-u.-s.-metropolitan-areas
+      :name: Freedman
 
    .. rubric:: Description
       :name: description

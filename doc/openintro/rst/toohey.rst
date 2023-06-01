@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Simulated polling data set
-      :name: simulated-polling-data-set
+      :name: toohey
 
    .. rubric:: Description
       :name: description

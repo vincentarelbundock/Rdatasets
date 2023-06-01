@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: 2008 U.S. Presidential Election Polls
-      :name: u.s.-presidential-election-polls
+      :name: Pollster08
 
    .. rubric:: Description
       :name: description

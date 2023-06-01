@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Florida County Voting
-      :name: florida-county-voting
+      :name: Florida
 
    .. rubric:: Description
       :name: description

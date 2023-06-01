@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: US Births in 1969 - 1988
-      :name: us-births-in-1969---1988
+      :name: Birthdays
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Choice of Brand for Tuna
-      :name: choice-of-brand-for-tuna
+      :name: Tuna
 
    .. rubric:: Description
       :name: description

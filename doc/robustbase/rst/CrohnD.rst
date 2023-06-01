@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Crohn's Disease Adverse Events Data
-      :name: crohns-disease-adverse-events-data
+      :name: CrohnD
 
    .. rubric:: Description
       :name: description

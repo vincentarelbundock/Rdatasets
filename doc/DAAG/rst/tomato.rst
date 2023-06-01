@@ -6,7 +6,7 @@
 
    .. rubric:: Root weights of tomato plants exposed to 4 different
       treatments
-      :name: root-weights-of-tomato-plants-exposed-to-4-different-treatments
+      :name: tomato
 
    .. rubric:: Description
       :name: description

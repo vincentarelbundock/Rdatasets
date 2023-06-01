@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Movie information and user ratings from IMDB.com.
-      :name: movie-information-and-user-ratings-from-imdb.com.
+      :name: movies
 
    .. rubric:: Description
       :name: description

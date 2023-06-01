@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: House Insulation: Whiteside's Data
-      :name: house-insulation-whitesides-data
+      :name: whiteside
 
    .. rubric:: Description
       :name: description

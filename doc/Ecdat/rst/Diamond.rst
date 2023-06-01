@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Pricing the C's of Diamond Stones
-      :name: pricing-the-cs-of-diamond-stones
+      :name: Diamond
 
    .. rubric:: Description
       :name: description

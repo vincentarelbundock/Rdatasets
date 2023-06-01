@@ -6,7 +6,7 @@
 
    .. rubric:: Region Categories for the United States in the World
       Values Survey
-      :name: region-categories-for-the-united-states-in-the-world-values-survey
+      :name: wvs_usa_regions
 
    .. rubric:: Description
       :name: description

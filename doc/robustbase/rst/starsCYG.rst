@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Hertzsprung-Russell Diagram Data of Star Cluster CYG OB1
-      :name: hertzsprung-russell-diagram-data-of-star-cluster-cyg-ob1
+      :name: starsCYG
 
    .. rubric:: Description
       :name: description

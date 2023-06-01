@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Countries in Banking Crises
-      :name: countries-in-banking-crises
+      :name: bankingCrises
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Language scores
-      :name: language-scores
+      :name: bdf
 
    .. rubric:: Description
       :name: description

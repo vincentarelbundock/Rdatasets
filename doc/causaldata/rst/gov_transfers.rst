@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Data from "Government Transfers and Political Support"
-      :name: data-from-government-transfers-and-political-support
+      :name: gov_transfers
 
    .. rubric:: Description
       :name: description

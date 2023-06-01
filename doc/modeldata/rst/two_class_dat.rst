@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Two class data
-      :name: two-class-data
+      :name: two_class_dat
 
    .. rubric:: Description
       :name: description

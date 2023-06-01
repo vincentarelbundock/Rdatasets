@@ -6,7 +6,7 @@
 
    .. rubric:: Are Emily and Greg More Employable Than Lakisha and
       Jamal?
-      :name: are-emily-and-greg-more-employable-than-lakisha-and-jamal
+      :name: ResumeNames
 
    .. rubric:: Description
       :name: description

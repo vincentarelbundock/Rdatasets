@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Estimating Time with Different Music Playing
-      :name: estimating-time-with-different-music-playing
+      :name: MusicTime
 
    .. rubric:: Description
       :name: description

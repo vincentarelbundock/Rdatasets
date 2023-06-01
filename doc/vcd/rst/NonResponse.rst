@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Non-Response Survey Data
-      :name: non-response-survey-data
+      :name: NonResponse
 
    .. rubric:: Description
       :name: description

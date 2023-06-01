@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Syncing Word Values Survey Country Codes with CoW Codes
-      :name: syncing-word-values-survey-country-codes-with-cow-codes
+      :name: wvs_ccodes
 
    .. rubric:: Description
       :name: description

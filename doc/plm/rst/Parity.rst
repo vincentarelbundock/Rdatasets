@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Purchasing Power Parity and other parity relationships
-      :name: purchasing-power-parity-and-other-parity-relationships
+      :name: Parity
 
    .. rubric:: Description
       :name: description

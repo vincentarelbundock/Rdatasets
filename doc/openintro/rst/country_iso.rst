@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Country ISO information
-      :name: country-iso-information
+      :name: country_iso
 
    .. rubric:: Description
       :name: description

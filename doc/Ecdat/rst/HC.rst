@@ -6,7 +6,7 @@
 
    .. rubric:: Heating and Cooling System Choice in Newly Built Houses
       in California
-      :name: heating-and-cooling-system-choice-in-newly-built-houses-in-california
+      :name: HC
 
    .. rubric:: Description
       :name: description

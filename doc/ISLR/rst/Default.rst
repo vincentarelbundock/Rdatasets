@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Credit Card Default Data
-      :name: credit-card-default-data
+      :name: Default
 
    .. rubric:: Description
       :name: description

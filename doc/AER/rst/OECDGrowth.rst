@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: OECD Macroeconomic Data
-      :name: oecd-macroeconomic-data
+      :name: OECDGrowth
 
    .. rubric:: Description
       :name: description

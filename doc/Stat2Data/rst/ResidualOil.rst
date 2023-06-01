@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: US Residual Oil Production (Quarterly 1983-2016)
-      :name: us-residual-oil-production-quarterly-1983-2016
+      :name: ResidualOil
 
    .. rubric:: Description
       :name: description

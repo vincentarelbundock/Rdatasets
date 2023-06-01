@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Space Shuttle O-Rings
-      :name: space-shuttle-o-rings
+      :name: Orings
 
    .. rubric:: Description
       :name: description

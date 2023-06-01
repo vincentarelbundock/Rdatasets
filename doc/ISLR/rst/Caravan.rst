@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: The Insurance Company (TIC) Benchmark
-      :name: the-insurance-company-tic-benchmark
+      :name: Caravan
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Goldenrod Galls
-      :name: goldenrod-galls
+      :name: Goldenrod
 
    .. rubric:: Description
       :name: description

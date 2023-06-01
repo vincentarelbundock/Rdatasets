@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: House Sales in Grinnell, Iowa
-      :name: house-sales-in-grinnell-iowa
+      :name: GrinnellHouses
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Faithfulness from a Photo?
-      :name: faithfulness-from-a-photo
+      :name: FaithfulFaces
 
    .. rubric:: Description
       :name: description

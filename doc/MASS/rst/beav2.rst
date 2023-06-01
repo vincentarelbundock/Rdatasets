@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Body Temperature Series of Beaver 2
-      :name: body-temperature-series-of-beaver-2
+      :name: beav2
 
    .. rubric:: Description
       :name: description
@@ -84,7 +84,7 @@
 
       ## IGNORE_RDIFF_BEGIN
       library(nlme) # for gls and corAR1
-      beav2.gls <- gls(temp ~ activ, data = beav2, corr = corAR1(0.8),
+      beav2.gls <- gls(temp ~ activ, data = beav2, correlation = corAR1(0.8),
                        method = "ML")
       summary(beav2.gls)
       summary(update(beav2.gls, subset = 6:100))

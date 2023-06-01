@@ -5,7 +5,7 @@
    =================== ===============
 
    .. rubric:: Do Financial Incentives Improve Weight Loss?
-      :name: do-financial-incentives-improve-weight-loss
+      :name: WeightLossIncentive
 
    .. rubric:: Description
       :name: description

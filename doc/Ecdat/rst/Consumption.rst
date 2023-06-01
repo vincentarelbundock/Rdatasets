@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Quarterly Data on Consumption and Expenditure
-      :name: quarterly-data-on-consumption-and-expenditure
+      :name: Consumption
 
    .. rubric:: Description
       :name: description

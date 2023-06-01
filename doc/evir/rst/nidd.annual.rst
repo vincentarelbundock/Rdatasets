@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: The River Nidd Data
-      :name: the-river-nidd-data
+      :name: nidd.annual
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: data from Exercise 4.7, p122
-      :name: data-from-exercise-4.7-p122
+      :name: azt
 
    .. rubric:: Description
       :name: description

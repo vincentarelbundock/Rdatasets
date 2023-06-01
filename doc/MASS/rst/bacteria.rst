@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Presence of Bacteria after Drug Treatments
-      :name: presence-of-bacteria-after-drug-treatments
+      :name: bacteria
 
    .. rubric:: Description
       :name: description
@@ -65,7 +65,7 @@
       :name: references
 
    Menzies School of Health Research 1999–2000 Annual Report. p.20.
-   http://www.menzies.edu.au/icms_docs/172302_2000_Annual_report.pdf.
+   https://www.menzies.edu.au/icms_docs/172302_2000_Annual_report.pdf.
 
    Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
    with S.* Fourth edition. Springer.
@@ -78,9 +78,11 @@
       contrasts(bacteria$trt) <- structure(contr.sdif(3),
            dimnames = list(NULL, c("drug", "encourage")))
       ## fixed effects analyses
+      ## IGNORE_RDIFF_BEGIN
       summary(glm(y ~ trt * week, binomial, data = bacteria))
       summary(glm(y ~ trt + week, binomial, data = bacteria))
       summary(glm(y ~ trt + I(week > 2), binomial, data = bacteria))
+      ## IGNORE_RDIFF_END
 
       # conditional random-effects analysis
       library(survival)
@@ -94,5 +96,7 @@
 
       # PQL glmm analysis
       library(nlme)
+      ## IGNORE_RDIFF_BEGIN
       summary(glmmPQL(y ~ trt + I(week > 2), random = ~ 1 | ID,
                       family = binomial, data = bacteria))
+      ## IGNORE_RDIFF_END

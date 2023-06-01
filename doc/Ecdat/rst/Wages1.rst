@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Wages, Experience and Schooling
-      :name: wages-experience-and-schooling
+      :name: Wages1
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Named US Atlantic Hurricanes
-      :name: named-us-atlantic-hurricanes
+      :name: hurricNamed
 
    .. rubric:: Description
       :name: description

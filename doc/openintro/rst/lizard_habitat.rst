@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Field data on lizards observed in their natural habitat
-      :name: field-data-on-lizards-observed-in-their-natural-habitat
+      :name: lizard_habitat
 
    .. rubric:: Description
       :name: description

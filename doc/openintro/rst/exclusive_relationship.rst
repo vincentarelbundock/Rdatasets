@@ -5,7 +5,7 @@
    ====================== ===============
 
    .. rubric:: Number of Exclusive Relationships
-      :name: number-of-exclusive-relationships
+      :name: exclusive_relationship
 
    .. rubric:: Description
       :name: description

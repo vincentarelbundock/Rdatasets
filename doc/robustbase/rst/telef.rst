@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Number of International Calls from Belgium
-      :name: number-of-international-calls-from-belgium
+      :name: telef
 
    .. rubric:: Description
       :name: description

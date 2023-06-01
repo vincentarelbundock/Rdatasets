@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: data from Section 1.2
-      :name: data-from-section-1.2
+      :name: drug6mp
 
    .. rubric:: Description
       :name: description

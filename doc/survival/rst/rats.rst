@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Rat treatment data from Mantel et al
-      :name: rat-treatment-data-from-mantel-et-al
+      :name: rats
 
    .. rubric:: Description
       :name: description

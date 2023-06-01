@@ -6,7 +6,7 @@
 
    .. rubric:: Cardiovascular problems for two types of Diabetes
       medicines
-      :name: cardiovascular-problems-for-two-types-of-diabetes-medicines
+      :name: avandia
 
    .. rubric:: Description
       :name: description

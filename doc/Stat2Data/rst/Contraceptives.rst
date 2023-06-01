@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Drug Interaction with Contraceptives
-      :name: drug-interaction-with-contraceptives
+      :name: Contraceptives
 
    .. rubric:: Description
       :name: description

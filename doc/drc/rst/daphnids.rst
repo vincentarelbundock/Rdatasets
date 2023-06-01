@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Daphnia test
-      :name: daphnia-test
+      :name: daphnids
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: UK Soccer Scores
-      :name: uk-soccer-scores
+      :name: UKSoccer
 
    .. rubric:: Description
       :name: description

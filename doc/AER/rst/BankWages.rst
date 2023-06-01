@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Bank Wages
-      :name: bank-wages
+      :name: BankWages
 
    .. rubric:: Description
       :name: description

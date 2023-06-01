@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Deluxe automobiles from the 2014-2017 period
-      :name: deluxe-automobiles-from-the-2014-2017-period
+      :name: gtcars
 
    .. rubric:: Description
       :name: description

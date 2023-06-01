@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Chinese Real National Income Data
-      :name: chinese-real-national-income-data
+      :name: ChinaIncome
 
    .. rubric:: Description
       :name: description

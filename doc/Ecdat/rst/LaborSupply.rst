@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Wages and Hours Worked
-      :name: wages-and-hours-worked
+      :name: LaborSupply
 
    .. rubric:: Description
       :name: description

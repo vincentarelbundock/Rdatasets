@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Australian AIDS Survival Data
-      :name: australian-aids-survival-data
+      :name: Aids2
 
    .. rubric:: Description
       :name: description

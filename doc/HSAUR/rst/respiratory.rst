@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Respiratory Illness Data
-      :name: respiratory-illness-data
+      :name: respiratory
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Electricity sales to residential customers in South
       Australia.
-      :name: electricity-sales-to-residential-customers-in-south-australia.
+      :name: elecsales
 
    .. rubric:: Description
       :name: description

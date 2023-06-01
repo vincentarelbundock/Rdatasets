@@ -6,7 +6,7 @@
 
    .. rubric:: Bock and Liberman (1970) data set of 1000 observations of
       the LSAT
-      :name: bock-and-liberman-1970-data-set-of-1000-observations-of-the-lsat
+      :name: bock
 
    .. rubric:: Description
       :name: description

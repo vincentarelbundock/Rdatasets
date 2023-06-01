@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Yen-dollar Exchange Rate
-      :name: yen-dollar-exchange-rate
+      :name: Yen
 
    .. rubric:: Description
       :name: description

@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><title>R: Race and Politics in the 1980 Presidential Vote</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Vote1980</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Vote1980'>
+Race and Politics in the 1980 Presidential Vote
+</h2>
+
+<h3>Description</h3>
+
+<p>Data from the 1982 General Social Survey on votes in the 1980 U.S.
+presidential election in relation to race and political 
+conservatism.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Vote1980)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A frequency data frame representing a 2 x 7 x 2 table, with 28 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>race</code></dt><dd><p>a factor with levels <code>NonWhite</code> <code>White</code></p>
+</dd>
+<dt><code>conservatism</code></dt><dd>
+<p>a factor with levels <code>1</code> <code>2</code> <code>3</code> <code>4</code> <code>5</code> <code>6</code> <code>7</code>,
+<code>1</code>=most liberal, <code>7</code>=most conservative</p>
+</dd>
+<dt><code>votefor</code></dt><dd><p>a factor with levels <code>Carter</code> <code>Reagan</code>; <code>Carter</code> 
+represents Jimmy Carter or other.</p>
+</dd>
+<dt><code>Freq</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data contains a number of sampling zeros in the frequencies of
+NonWhites voting for Ronald Reagan.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Clogg, C. &amp; Shockey, J. W. (1988).
+In Nesselroade, J. R. &amp; Cattell, R. B. (ed.) 
+Multivariate Analysis of Discrete Data,
+<em>Handbook of Multivariate Experimental Psychology</em>, 
+New York: Plenum Press.
+</p>
+
+
+<h3>References</h3>
+
+<p>Agresti, A. (1990)
+<em>Categorical Data Analysis</em>, Table 4.12
+New York: Wiley-Interscience.
+</p>
+<p>Friendly, M. (2000)
+<em>Visualizing Categorical Data</em>, Example 7.5
+Cary, NC: SAS Institute.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Vote1980)
+fourfold(xtabs(Freq ~ race + votefor + conservatism, 
+  data=Vote1980), 
+  mfrow=c(2,4))
+
+</code></pre>
+
+
+</div>
+</body></html>

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Projected US Population
-      :name: projected-us-population
+      :name: uspop2
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Modified Data on Wood Specific Gravity
-      :name: modified-data-on-wood-specific-gravity
+      :name: wood
 
    .. rubric:: Description
       :name: description

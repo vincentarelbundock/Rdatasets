@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Simulated sample of parent / teen college attendance
-      :name: simulated-sample-of-parent-teen-college-attendance
+      :name: family_college
 
    .. rubric:: Description
       :name: description

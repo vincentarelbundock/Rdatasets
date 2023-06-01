@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Challenger O-rings Data
-      :name: challenger-o-rings-data
+      :name: orings
 
    .. rubric:: Description
       :name: description

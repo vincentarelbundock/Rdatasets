@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Grinnell College Basketball Games
-      :name: grinnell-college-basketball-games
+      :name: Hoops
 
    .. rubric:: Description
       :name: description

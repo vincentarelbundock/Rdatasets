@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: U.S. News and World Report's College Data
-      :name: u.s.-news-and-world-reports-college-data
+      :name: College
 
    .. rubric:: Description
       :name: description

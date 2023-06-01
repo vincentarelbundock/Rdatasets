@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Monthly expenditure on eating out in Australia
-      :name: monthly-expenditure-on-eating-out-in-australia
+      :name: auscafe
 
    .. rubric:: Description
       :name: description

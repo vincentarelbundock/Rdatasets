@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Cloud Seeding Experiment (Winter Only)
-      :name: cloud-seeding-experiment-winter-only
+      :name: CloudSeeding
 
    .. rubric:: Description
       :name: description

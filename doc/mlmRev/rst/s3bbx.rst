@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Covariates in the Rodriguez and Goldman simulation
-      :name: covariates-in-the-rodriguez-and-goldman-simulation
+      :name: s3bbx
 
    .. rubric:: Description
       :name: description

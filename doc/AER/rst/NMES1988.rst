@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Demand for Medical Care in NMES 1988
-      :name: demand-for-medical-care-in-nmes-1988
+      :name: NMES1988
 
    .. rubric:: Description
       :name: description

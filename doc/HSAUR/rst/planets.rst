@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Exoplanets Data
-      :name: exoplanets-data
+      :name: planets
 
    .. rubric:: Description
       :name: description

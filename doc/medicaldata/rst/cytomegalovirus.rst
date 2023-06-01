@@ -7,7 +7,7 @@
    .. rubric:: Retrospective Cohort Study of the Effects of Donor KIR
       genotype on the reactivation of cytomegalovirus (CMV) after
       myeloablative allogeneic hematopoietic stem cell transplant.
-      :name: retrospective-cohort-study-of-the-effects-of-donor-kir-genotype-on-the-reactivation-of-cytomegalovirus-cmv-after-myeloablative-allogeneic-hematopoietic-stem-cell-transplant.
+      :name: cytomegalovirus
 
    .. rubric:: Description
       :name: description

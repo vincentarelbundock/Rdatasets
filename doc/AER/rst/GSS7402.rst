@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: US General Social Survey 1974–2002
-      :name: us-general-social-survey-19742002
+      :name: GSS7402
 
    .. rubric:: Description
       :name: description

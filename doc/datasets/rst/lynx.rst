@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Annual Canadian Lynx trappings 1821–1934
-      :name: annual-canadian-lynx-trappings-18211934
+      :name: lynx
 
    .. rubric:: Description
       :name: description
@@ -36,5 +36,5 @@
    Campbell, M. J. and Walker, A. M. (1977). A Survey of statistical
    work on the Mackenzie River series of annual Canadian lynx trappings
    for the years 1821–1934 and a new analysis. *Journal of the Royal
-   Statistical Society series A*, **140**, 411–431.
+   Statistical Society Series A*, **140**, 411–431.
    `doi:10.2307/2345277 <https://doi.org/10.2307/2345277>`__.

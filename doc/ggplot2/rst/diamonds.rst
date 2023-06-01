@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Prices of over 50,000 round cut diamonds
-      :name: prices-of-over-50000-round-cut-diamonds
+      :name: diamonds
 
    .. rubric:: Description
       :name: description

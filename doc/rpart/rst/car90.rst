@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Automobile Data from 'Consumer Reports' 1990
-      :name: automobile-data-from-consumer-reports-1990
+      :name: car90
 
    .. rubric:: Description
       :name: description

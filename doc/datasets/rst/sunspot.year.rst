@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Yearly Sunspot Data, 1700–1988
-      :name: yearly-sunspot-data-17001988
+      :name: sunspot.year
 
    .. rubric:: Description
       :name: description

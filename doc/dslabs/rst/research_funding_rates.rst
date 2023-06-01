@@ -5,7 +5,7 @@
    ====================== ===============
 
    .. rubric:: Gender bias in research funding in the Netherlands
-      :name: gender-bias-in-research-funding-in-the-netherlands
+      :name: research_funding_rates
 
    .. rubric:: Description
       :name: description
@@ -18,7 +18,7 @@
 
    ::
 
-      data(research_funding_rates)
+      research_funding_rates
 
    .. rubric:: Format
       :name: format
@@ -52,14 +52,13 @@
       :name: source
 
    van der Lee and Ellemers (2015) PNAS
-   https://www.pnas.org/content/112/40/12349.abstract/
+   https://www.pnas.org/doi/abs/10.1073/pnas.1510159112
 
    .. rubric:: Examples
       :name: examples
 
    ::
 
-      data(research_funding_rates)
       research_funding_rates
       # The raw data for this table is available from
-      data(raw_data_research_funding_rates)
+      invisible(raw_data_research_funding_rates)

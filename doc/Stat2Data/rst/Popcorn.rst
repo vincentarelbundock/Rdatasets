@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Popcorn Popping Success
-      :name: popcorn-popping-success
+      :name: Popcorn
 
    .. rubric:: Description
       :name: description

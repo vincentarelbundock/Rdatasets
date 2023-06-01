@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Test data from a 21 day fish test
-      :name: test-data-from-a-21-day-fish-test
+      :name: O.mykiss
 
    .. rubric:: Description
       :name: description

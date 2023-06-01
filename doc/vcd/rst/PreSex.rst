@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Pre-marital Sex and Divorce
-      :name: pre-marital-sex-and-divorce
+      :name: PreSex
 
    .. rubric:: Description
       :name: description

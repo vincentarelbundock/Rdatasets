@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Average Heights of the Rio Negro river at Manaus
-      :name: average-heights-of-the-rio-negro-river-at-manaus
+      :name: manaus
 
    .. rubric:: Description
       :name: description

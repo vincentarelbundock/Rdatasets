@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Liver related laboratory data
-      :name: liver-related-laboratory-data
+      :name: liver
 
    .. rubric:: Description
       :name: description

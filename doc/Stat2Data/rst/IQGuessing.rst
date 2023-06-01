@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Guess IQ from a Photo?
-      :name: guess-iq-from-a-photo
+      :name: IQGuessing
 
    .. rubric:: Description
       :name: description

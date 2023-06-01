@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Provision of University Teaching and Research
-      :name: provision-of-university-teaching-and-research
+      :name: University
 
    .. rubric:: Description
       :name: description

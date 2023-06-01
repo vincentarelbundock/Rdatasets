@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Select World Bank Commodity Price Data (Monthly)
-      :name: select-world-bank-commodity-price-data-monthly
+      :name: commodity_prices
 
    .. rubric:: Description
       :name: description

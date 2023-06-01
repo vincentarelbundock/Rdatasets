@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Data on Infant-Mortality
-      :name: data-on-infant-mortality
+      :name: Leinhardt
 
    .. rubric:: Description
       :name: description

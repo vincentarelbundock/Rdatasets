@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Accelerated Life Testing of Motorettes
-      :name: accelerated-life-testing-of-motorettes
+      :name: motors
 
    .. rubric:: Description
       :name: description

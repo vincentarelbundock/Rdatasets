@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Effects of Serotonin in Mice
-      :name: effects-of-serotonin-in-mice
+      :name: MouseBrain
 
    .. rubric:: Description
       :name: description

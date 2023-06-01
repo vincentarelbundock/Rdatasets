@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Yearly Numbers of Important Discoveries
-      :name: yearly-numbers-of-important-discoveries
+      :name: discoveries
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Retrospective Cohort Study of the Effects of Blood
       Storage on Prostate Cancer
-      :name: retrospective-cohort-study-of-the-effects-of-blood-storage-on-prostate-cancer
+      :name: blood_storage
 
    .. rubric:: Description
       :name: description

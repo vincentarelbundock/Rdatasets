@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Blizzard Employee Voluntary Salary Info.
-      :name: blizzard-employee-voluntary-salary-info.
+      :name: blizzard_salary
 
    .. rubric:: Description
       :name: description

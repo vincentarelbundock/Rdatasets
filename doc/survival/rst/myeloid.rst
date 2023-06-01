@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Acute myeloid leukemia
-      :name: acute-myeloid-leukemia
+      :name: myeloid
 
    .. rubric:: Description
       :name: description

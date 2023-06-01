@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Barro Data
-      :name: barro-data
+      :name: barro
 
    .. rubric:: Description
       :name: description

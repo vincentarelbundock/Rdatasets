@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Duncan's Occupational Prestige Data
-      :name: duncans-occupational-prestige-data
+      :name: Duncan
 
    .. rubric:: Description
       :name: description

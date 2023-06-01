@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Pharmacokinetics of Indomethacin
-      :name: pharmacokinetics-of-indomethacin
+      :name: Indometh
 
    .. rubric:: Description
       :name: description

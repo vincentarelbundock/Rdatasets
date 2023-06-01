@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Condroz Data
-      :name: condroz-data
+      :name: condroz
 
    .. rubric:: Description
       :name: description

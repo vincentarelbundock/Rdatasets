@@ -5,7 +5,7 @@
    ================== ===============
 
    .. rubric:: Sample of UCLA course textbooks for Fall 2018
-      :name: sample-of-ucla-course-textbooks-for-fall-2018
+      :name: ucla_textbooks_f18
 
    .. rubric:: Description
       :name: description

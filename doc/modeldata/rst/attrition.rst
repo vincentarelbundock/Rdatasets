@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Job attrition
-      :name: job-attrition
+      :name: attrition
 
    .. rubric:: Description
       :name: description

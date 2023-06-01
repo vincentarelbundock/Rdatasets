@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Possum Diversity Data
-      :name: possum-diversity-data
+      :name: possumDiv
 
    .. rubric:: Description
       :name: description

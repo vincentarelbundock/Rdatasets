@@ -6,7 +6,7 @@
 
    .. rubric:: Cancer drug data use to provide an example of the use of
       the skew power distributions.
-      :name: cancer-drug-data-use-to-provide-an-example-of-the-use-of-the-skew-power-distributions.
+      :name: LoBD
 
    .. rubric:: Description
       :name: description

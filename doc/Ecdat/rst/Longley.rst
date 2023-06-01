@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: The Longley Data
-      :name: the-longley-data
+      :name: Longley
 
    .. rubric:: Description
       :name: description

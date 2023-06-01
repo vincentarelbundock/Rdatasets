@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Dyslexia and IQ Predicting Reading Accuracy
-      :name: dyslexia-and-iq-predicting-reading-accuracy
+      :name: ReadingSkills
 
    .. rubric:: Description
       :name: description

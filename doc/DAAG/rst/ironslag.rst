@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Iron Content Measurements
-      :name: iron-content-measurements
+      :name: ironslag
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: EPICA Dome C Ice Core 800KYr Carbon Dioxide Data
-      :name: epica-dome-c-ice-core-800kyr-carbon-dioxide-data
+      :name: edcCO2
 
    .. rubric:: Description
       :name: description

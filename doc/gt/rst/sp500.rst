@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Daily S&P 500 Index data from 1950 to 2015
-      :name: daily-sp-500-index-data-from-1950-to-2015
+      :name: sp500
 
    .. rubric:: Description
       :name: description

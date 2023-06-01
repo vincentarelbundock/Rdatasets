@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Daily maximum temperatures in Melbourne, Australia
-      :name: daily-maximum-temperatures-in-melbourne-australia
+      :name: MelTemp
 
    .. rubric:: Description
       :name: description

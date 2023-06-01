@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Are There Civics Returns to Education?
-      :name: are-there-civics-returns-to-education
+      :name: Dee04
 
    .. rubric:: Description
       :name: description

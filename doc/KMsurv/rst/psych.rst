@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: data from Section 1.15
-      :name: data-from-section-1.15
+      :name: psych
 
    .. rubric:: Description
       :name: description

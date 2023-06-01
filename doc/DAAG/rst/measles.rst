@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Deaths in London from measles
-      :name: deaths-in-london-from-measles
+      :name: measles
 
    .. rubric:: Description
       :name: description

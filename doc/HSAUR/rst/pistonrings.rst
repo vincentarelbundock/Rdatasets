@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Piston Rings Failures
-      :name: piston-rings-failures
+      :name: pistonrings
 
    .. rubric:: Description
       :name: description

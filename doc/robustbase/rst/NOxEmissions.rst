@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: NOx Air Pollution Data
-      :name: nox-air-pollution-data
+      :name: NOxEmissions
 
    .. rubric:: Description
       :name: description

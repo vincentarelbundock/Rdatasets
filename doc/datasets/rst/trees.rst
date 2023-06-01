@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Diameter, Height and Volume for Black Cherry Trees
-      :name: diameter-height-and-volume-for-black-cherry-trees
+      :name: trees
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: John Snow's Map and Data on the 1854 London Cholera
       Outbreak
-      :name: john-snows-map-and-data-on-the-1854-london-cholera-outbreak
+      :name: Snow
 
    .. rubric:: Description
       :name: description

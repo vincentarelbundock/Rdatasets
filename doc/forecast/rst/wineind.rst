@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Australian total wine sales
-      :name: australian-total-wine-sales
+      :name: wineind
 
    .. rubric:: Description
       :name: description

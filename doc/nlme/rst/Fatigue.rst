@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Cracks caused by metal fatigue
-      :name: cracks-caused-by-metal-fatigue
+      :name: Fatigue
 
    .. rubric:: Description
       :name: description

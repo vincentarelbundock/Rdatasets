@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Supreme Court approval rating
-      :name: supreme-court-approval-rating
+      :name: supreme_court
 
    .. rubric:: Description
       :name: description

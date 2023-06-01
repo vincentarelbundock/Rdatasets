@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Aranda House Prices
-      :name: aranda-house-prices
+      :name: houseprices
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Prices of Three Used Car Models (2007)
-      :name: prices-of-three-used-car-models-2007
+      :name: ThreeCars
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Clinton/Sanders Primary Results (2016)
-      :name: clintonsanders-primary-results-2016
+      :name: ClintonSanders
 
    .. rubric:: Description
       :name: description

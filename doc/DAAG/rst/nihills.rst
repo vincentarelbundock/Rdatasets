@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Record times for Northern Ireland mountain running events
-      :name: record-times-for-northern-ireland-mountain-running-events
+      :name: nihills
 
    .. rubric:: Description
       :name: description

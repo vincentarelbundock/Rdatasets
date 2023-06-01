@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Opportunity cost of purchases
-      :name: opportunity-cost-of-purchases
+      :name: opportunity_cost
 
    .. rubric:: Description
       :name: description

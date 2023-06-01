@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Air Quality for Californian Metropolitan Areas
-      :name: air-quality-for-californian-metropolitan-areas
+      :name: Airq
 
    .. rubric:: Description
       :name: description

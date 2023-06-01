@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: NCCTG Lung Cancer Data
-      :name: ncctg-lung-cancer-data
+      :name: lung
 
    .. rubric:: Description
       :name: description

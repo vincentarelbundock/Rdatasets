@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Pharmacokinetics of Cefamandole
-      :name: pharmacokinetics-of-cefamandole
+      :name: Cefamandole
 
    .. rubric:: Description
       :name: description

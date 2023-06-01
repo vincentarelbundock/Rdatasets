@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Budget Shares for Italian Households
-      :name: budget-shares-for-italian-households
+      :name: BudgetItaly
 
    .. rubric:: Description
       :name: description

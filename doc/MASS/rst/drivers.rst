@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Deaths of Car Drivers in Great Britain 1969-84
-      :name: deaths-of-car-drivers-in-great-britain-1969-84
+      :name: drivers
 
    .. rubric:: Description
       :name: description

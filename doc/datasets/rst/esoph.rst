@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Smoking, Alcohol and (O)esophageal Cancer
-      :name: smoking-alcohol-and-oesophageal-cancer
+      :name: esoph
 
    .. rubric:: Description
       :name: description

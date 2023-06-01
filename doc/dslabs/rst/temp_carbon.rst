@@ -6,7 +6,7 @@
 
    .. rubric:: Global temperature anomaly and carbon emissions,
       1751-2018
-      :name: global-temperature-anomaly-and-carbon-emissions-1751-2018
+      :name: temp_carbon
 
    .. rubric:: Description
       :name: description
@@ -19,7 +19,7 @@
 
    ::
 
-      data(temp_carbon)
+      temp_carbon
 
    .. rubric:: Format
       :name: format
@@ -47,8 +47,8 @@
    .. rubric:: Source
       :name: source
 
-   `NOAA <https://www.ncdc.noaa.gov/cag/global/time-series>`__ and
-   Boden, T.A., G. Marland, and R.J. Andres (2017) via
+   `NOAA <https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series/>`__
+   and Boden, T.A., G. Marland, and R.J. Andres (2017) via
    `CDIAC <https://cdiac.ess-dive.lbl.gov/trends/emis/tre_glob_2014.html>`__
 
    .. rubric:: Examples
@@ -56,5 +56,4 @@
 
    ::
 
-      data(temp_carbon)
       head(temp_carbon)

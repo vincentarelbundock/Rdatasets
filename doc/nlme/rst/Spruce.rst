@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Growth of Spruce Trees
-      :name: growth-of-spruce-trees
+      :name: Spruce
 
    .. rubric:: Description
       :name: description

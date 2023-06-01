@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Minnesota High School Graduates of 1938
-      :name: minnesota-high-school-graduates-of-1938
+      :name: minn38
 
    .. rubric:: Description
       :name: description

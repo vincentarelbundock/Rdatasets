@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: A toy example tibble for testing with gt: exibble
-      :name: a-toy-example-tibble-for-testing-with-gt-exibble
+      :name: exibble
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: US GDP per capita with presidents and wars
-      :name: us-gdp-per-capita-with-presidents-and-wars
+      :name: USGDPpresidents
 
    .. rubric:: Description
       :name: description

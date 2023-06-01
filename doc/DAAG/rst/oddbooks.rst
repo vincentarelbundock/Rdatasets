@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Measurements on 12 books
-      :name: measurements-on-12-books
+      :name: oddbooks
 
    .. rubric:: Description
       :name: description

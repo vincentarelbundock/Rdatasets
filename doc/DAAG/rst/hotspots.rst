@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Hawaian island chain hotspot Potassium-Argon ages
-      :name: hawaian-island-chain-hotspot-potassium-argon-ages
+      :name: hotspots
 
    .. rubric:: Description
       :name: description

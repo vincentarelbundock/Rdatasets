@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Bivariate Data Set with 3 Clusters
-      :name: bivariate-data-set-with-3-clusters
+      :name: xclara
 
    .. rubric:: Description
       :name: description

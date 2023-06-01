@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Flow of the River Nile
-      :name: flow-of-the-river-nile
+      :name: Nile
 
    .. rubric:: Description
       :name: description

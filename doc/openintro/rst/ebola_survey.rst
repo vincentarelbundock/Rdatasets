@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Survey on Ebola quarantine
-      :name: survey-on-ebola-quarantine
+      :name: ebola_survey
 
    .. rubric:: Description
       :name: description

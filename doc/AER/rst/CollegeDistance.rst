@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: College Distance Data
-      :name: college-distance-data
+      :name: CollegeDistance
 
    .. rubric:: Description
       :name: description

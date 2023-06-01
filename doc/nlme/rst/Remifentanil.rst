@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Pharmacokinetics of Remifentanil
-      :name: pharmacokinetics-of-remifentanil
+      :name: Remifentanil
 
    .. rubric:: Description
       :name: description

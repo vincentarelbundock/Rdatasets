@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Vinclozolin from AR in vitro assay
-      :name: vinclozolin-from-ar-in-vitro-assay
+      :name: vinclozolin
 
    .. rubric:: Description
       :name: description

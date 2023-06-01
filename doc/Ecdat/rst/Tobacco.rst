@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Households Tobacco Budget Share
-      :name: households-tobacco-budget-share
+      :name: Tobacco
 
    .. rubric:: Description
       :name: description

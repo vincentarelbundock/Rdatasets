@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head><title>R: Sex, Occupation and Heart Disease</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Heart</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Heart'>Sex, Occupation and Heart Disease</h2>
+
+<h3>Description</h3>
+
+<p>Classification of individuals by gender, occupational category and occurrence of heart disease</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Heart)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A 3-dimensional array resulting from cross-tabulating 3 variables for 21522 observations. The variable names and their levels are:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1</td><td style="text-align: left;"> <code>Disease</code></td><td style="text-align: left;"> <code>"Disease", "None"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2</td><td style="text-align: left;"> <code>Gender</code></td><td style="text-align: left;"> <code>"Male", "Female"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    3</td><td style="text-align: left;"> <code>Occup</code></td><td style="text-align: left;"> <code>"Unempl", "WhiteCol", "BlueCol"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+
+<p>Karger, (1980).
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Heart)
+str(Heart)
+
+# Display the frequencies for occupational categories.
+# Each row is a 2 x 2 table
+vcd::structable(Disease + Gender ~ Occup, data=Heart)
+
+# display as fourfold plots
+vcd::cotabplot(~ Disease + Gender | Occup, data=Heart, panel = cotab_fourfold)
+</code></pre>
+
+
+</div>
+</body></html>

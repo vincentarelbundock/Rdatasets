@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Class probability predictions
-      :name: class-probability-predictions
+      :name: hpc_cv
 
    .. rubric:: Description
       :name: description

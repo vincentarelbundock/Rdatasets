@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Grocery Sales and Discounts
-      :name: grocery-sales-and-discounts
+      :name: Grocery
 
    .. rubric:: Description
       :name: description

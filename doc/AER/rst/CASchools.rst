@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: California Test Score Data
-      :name: california-test-score-data
+      :name: CASchools
 
    .. rubric:: Description
       :name: description

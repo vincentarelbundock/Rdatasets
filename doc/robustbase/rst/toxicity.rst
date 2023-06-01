@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Toxicity of Carboxylic Acids Data
-      :name: toxicity-of-carboxylic-acids-data
+      :name: toxicity
 
    .. rubric:: Description
       :name: description

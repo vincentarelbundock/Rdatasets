@@ -6,7 +6,7 @@
 
    .. rubric:: History of Federal Minimum Wage Rates Under the Fair
       Labor Standards Act, 1938-2009
-      :name: history-of-federal-minimum-wage-rates-under-the-fair-labor-standards-act-1938-2009
+      :name: min_wage
 
    .. rubric:: Description
       :name: description

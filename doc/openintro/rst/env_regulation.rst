@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: American Adults on Regulation and Renewable Energy
-      :name: american-adults-on-regulation-and-renewable-energy
+      :name: env_regulation
 
    .. rubric:: Description
       :name: description

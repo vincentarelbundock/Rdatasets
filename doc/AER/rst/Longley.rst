@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Longley's Regression Data
-      :name: longleys-regression-data
+      :name: Longley
 
    .. rubric:: Description
       :name: description

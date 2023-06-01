@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Measurements on a Selection of Books
-      :name: measurements-on-a-selection-of-books
+      :name: allbacks
 
    .. rubric:: Description
       :name: description

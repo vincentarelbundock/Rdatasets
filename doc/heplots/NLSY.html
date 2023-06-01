@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: National Longitudinal Survey of Youth Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>NLSY</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='NLSY'>
+National Longitudinal Survey of Youth Data
+</h2>
+
+<h3>Description</h3>
+
+<p>The dataset come from a small random sample of 
+the U.S. National Longitudinal Survey of Youth.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(NLSY)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 243 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>math</code></dt><dd><p>Math achievement test score</p>
+</dd>
+<dt><code>read</code></dt><dd><p>Reading achievement test score</p>
+</dd>
+<dt><code>antisoc</code></dt><dd><p>score on a measure of child's antisocial behavior, <code>0:6</code></p>
+</dd>
+<dt><code>hyperact</code></dt><dd><p>score on a measure of child's hyperactive behavior, <code>0:5</code></p>
+</dd>
+<dt><code>income</code></dt><dd><p>yearly income of child's father</p>
+</dd>
+<dt><code>educ</code></dt><dd><p>years of education of child's father</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In this dataset, <code>math</code> and <code>read</code> scores are taken at the outcome
+variables.
+Among the remaining predictors, <code>income</code> and <code>educ</code> might be
+considered as background variables necessary to control for.
+Interest might then be focused on whether 
+the behavioural variables <code>antisoc</code> and <code>hyperact</code> contribute beyond that.
+</p>
+
+
+<h3>Source</h3>
+
+<p>This dataset was derived from a larger one used by Patrick Curran
+at the 1997 meeting of the Society for Research on Child Development (SRCD).
+A description now only exists on the WayBack Machine,
+<a href="http://web.archive.org/web/20050404145001/http://www.unc.edu/~curran/example.html">http://web.archive.org/web/20050404145001/http://www.unc.edu/~curran/example.html</a>.
+</p>
+<p>More details are available at
+<a href="http://web.archive.org/web/20060830061414/http://www.unc.edu/~curran/srcd-docs/srcdmeth.pdf">http://web.archive.org/web/20060830061414/http://www.unc.edu/~curran/srcd-docs/srcdmeth.pdf</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(NLSY)
+
+#examine the data
+scatterplotMatrix(NLSY, smooth=FALSE)
+
+# test control variables by themselves
+# -------------------------------------
+mod1 &lt;- lm(cbind(read,math) ~ income+educ, data=NLSY)
+Anova(mod1)
+heplot(mod1, fill=TRUE)
+
+# test of overall regression
+coefs &lt;- rownames(coef(mod1))[-1]
+linearHypothesis(mod1, coefs)
+heplot(mod1, fill=TRUE, hypotheses=list("Overall"=coefs))
+
+ 
+# additional contribution of antisoc + hyperact over income + educ
+# ----------------------------------------------------------------
+mod2 &lt;- lm(cbind(read,math) ~ antisoc + hyperact + income + educ, data=NLSY)
+Anova(mod2)
+
+coefs &lt;- rownames(coef(mod2))[-1]
+heplot(mod2, fill=TRUE, hypotheses=list("Overall"=coefs, "mod2|mod1"=coefs[1:2]))
+linearHypothesis(mod2, coefs[1:2])
+
+heplot(mod2, fill=TRUE, hypotheses=list("mod2|mod1"=coefs[1:2]))
+
+</code></pre>
+
+
+</div>
+</body></html>

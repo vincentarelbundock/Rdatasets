@@ -5,7 +5,7 @@
    ===================== ===============
 
    .. rubric:: Bank manager recommendations based on gender
-      :name: bank-manager-recommendations-based-on-gender
+      :name: gender_discrimination
 
    .. rubric:: Description
       :name: description

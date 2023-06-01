@@ -6,7 +6,7 @@
 
    .. rubric:: Fuel economy data from 1999 to 2008 for 38 popular models
       of cars
-      :name: fuel-economy-data-from-1999-to-2008-for-38-popular-models-of-cars
+      :name: mpg
 
    .. rubric:: Description
       :name: description

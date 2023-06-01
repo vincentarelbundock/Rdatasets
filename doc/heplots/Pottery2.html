@@ -1,0 +1,153 @@
+<!DOCTYPE html><html><head><title>R: Chemical Analysis of Romano-British Pottery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Pottery2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Pottery2'>
+Chemical Analysis of Romano-British Pottery
+</h2>
+
+<h3>Description</h3>
+
+<p>Results of chemical analyses of 48 specimens of Romano-British pottery published by Tubb et al. (1980). 
+The numbers are the percentage of various metal oxides found in each sample
+for elements of concentrations greater than 0.01%.
+This is the original data set from Tubb et al. (1980), in contrast to <code>Pottery</code>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Pottery2)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 48 observations on the following 12 variables.
+</p>
+
+<dl>
+<dt><code>Region</code></dt><dd><p>a factor with levels <code>Gl</code> <code>NF</code> <code>Wales</code></p>
+</dd>
+<dt><code>Site</code></dt><dd><p>a factor with levels <code>AshleyRails</code> <code>Caldicot</code> <code>Gloucester</code> <code>IsleThorns</code> <code>Llanedryn</code></p>
+</dd>
+<dt><code>Kiln</code></dt><dd><p>a factor with levels <code>1</code> <code>2</code> <code>3</code> <code>4</code> <code>5</code></p>
+</dd>
+<dt><code>Al</code></dt><dd><p>amount of aluminum oxide, <code class="reqn">Al_2O_3</code></p>
+</dd>
+<dt><code>Fe</code></dt><dd><p>amount of iron oxide, <code class="reqn">Fe_2O_3</code></p>
+</dd>
+<dt><code>Mg</code></dt><dd><p>amount of magnesium oxide, MgO</p>
+</dd>
+<dt><code>Ca</code></dt><dd><p>amount of calcium oxide, CaO</p>
+</dd>
+<dt><code>Na</code></dt><dd><p>amount of sodium oxide, <code class="reqn">Na_2O</code></p>
+</dd>
+<dt><code>K</code></dt><dd><p>amount of potassium oxide, <code class="reqn">K_2O</code></p>
+</dd>
+<dt><code>Ti</code></dt><dd><p>amount of titanium oxide, <code class="reqn">TiO_2</code> </p>
+</dd>
+<dt><code>Mn</code></dt><dd><p>amount of manganese oxide, MnO</p>
+</dd>
+<dt><code>Ba</code></dt><dd><p>amount of BaO</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The specimens are identified by their <code>rownames</code> in the data frame.
+<code>Kiln</code> indicates at which kiln site the pottery was found;
+<code>Site</code> gives the location names of those sites.
+The kiln sites come from three <code>Region</code>s,  <code>("Gl"=1, "Wales"=(2, 3), "NF"=(4, 5))</code>,
+where the full names are &quot;Gloucester&quot;, &quot;Wales&quot;, and &quot;New Forrest&quot;.
+</p>
+<p>The variable <code>Kiln</code> comes pre-supplied with contrasts to test interesting
+hypotheses related to <code>Site</code> and <code>Region</code>. 
+</p>
+
+
+<h3>Source</h3>
+
+<p>Originally slightly modified from files by David Carlson,
+now at <code>RBPottery</code>.
+
+</p>
+
+
+<h3>References</h3>
+
+<p>Baxter, M. J. 2003. <em>Statistics in Archaeology</em>. Arnold, London.
+</p>
+<p>Carlson, David L. 2017. <em>Quantitative Methods in Archaeology Using R</em>. Cambridge University
+Press, pp 247-255, 335-342.
+</p>
+<p>Tubb, A., A. J. Parker, and G. Nickless. 1980. 
+The Analysis of Romano-British Pottery by Atomic Absorption Spectrophotometry. 
+<em>Archaeometry</em>, <b>22</b>, 153-171.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Pottery</code> for the related (subset) data set;
+<code>RBPottery</code> for a newer version with more variables.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Pottery2)
+# contrasts for Kiln correspond to between Region [,1:2] and within Region [,3:4]
+contrasts(Pottery2$Kiln)
+
+pmod &lt;-lm(cbind(Al,Fe,Mg,Ca,Na,K,Ti,Mn,Ba)~Kiln, data=Pottery2)
+Anova(pmod)
+
+# extract coefficient names for linearHypotheses
+coefs &lt;- rownames(coef(pmod))[-1]
+
+# test differences among regions
+linearHypothesis(pmod, coefs[1:2])
+# test differences within regions B, C
+linearHypothesis(pmod, coefs[3:4])
+
+heplot(pmod, fill=c(TRUE,FALSE), hypotheses=list("Region" =coefs[1:2], "WithinBC"=coefs[3:4]))
+
+# all pairwise views;  note that Ba shows no effect
+pairs(pmod, fill=c(TRUE,FALSE))
+
+# canonical view, via candisc::heplot
+
+if (require(candisc)) {
+
+# canonical analysis: how many dimensions?
+(pcan &lt;- candisc(pmod))
+
+heplot(pcan, scale=18, fill=c(TRUE,FALSE), var.col="darkgreen", var.lwd=2, var.cex=1.5)
+
+## Not run: 
+heplot3d(pcan, scale=8)
+
+## End(Not run)
+}
+
+</code></pre>
+
+
+</div>
+</body></html>

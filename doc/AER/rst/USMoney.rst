@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: USMoney
-      :name: usmoney
+      :name: USMoney
 
    .. rubric:: Description
       :name: description

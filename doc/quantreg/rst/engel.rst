@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Engel Data
-      :name: engel-data
+      :name: engel
 
    .. rubric:: Description
       :name: description

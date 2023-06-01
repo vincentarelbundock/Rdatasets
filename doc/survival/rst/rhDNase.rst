@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: rhDNASE data set
-      :name: rhdnase-data-set
+      :name: rhDNase
 
    .. rubric:: Description
       :name: description

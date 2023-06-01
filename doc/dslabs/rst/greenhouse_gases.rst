@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Greenhouse gas concentrations over 2000 years
-      :name: greenhouse-gas-concentrations-over-2000-years
+      :name: greenhouse_gases
 
    .. rubric:: Description
       :name: description
@@ -20,7 +20,7 @@
 
    ::
 
-      data(greenhouse_gases)
+      greenhouse_gases
 
    .. rubric:: Format
       :name: format
@@ -42,12 +42,11 @@
       :name: source
 
    MacFarling Meure et al. 2006 via
-   `NOAA <https://www.ncdc.noaa.gov/paleo-search/study/9959>`__.
+   `NOAA <https://www.ncei.noaa.gov/access/paleo-search/study/9959/>`__.
 
    .. rubric:: Examples
       :name: examples
 
    ::
 
-      data(greenhouse_gases)
       head(greenhouse_gases)

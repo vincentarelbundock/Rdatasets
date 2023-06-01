@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: US Crudes Data
-      :name: us-crudes-data
+      :name: USCrudes
 
    .. rubric:: Description
       :name: description

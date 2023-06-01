@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Format Effects on Recall
-      :name: format-effects-on-recall
+      :name: Friendly
 
    .. rubric:: Description
       :name: description

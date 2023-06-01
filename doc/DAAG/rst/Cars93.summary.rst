@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: A Summary of the Cars93 Data set
-      :name: a-summary-of-the-cars93-data-set
+      :name: Cars93.summary
 
    .. rubric:: Description
       :name: description

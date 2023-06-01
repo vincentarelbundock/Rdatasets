@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Goose Permit Study
-      :name: goose-permit-study
+      :name: GoosePermits
 
    .. rubric:: Description
       :name: description

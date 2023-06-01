@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Milk Sweetness Study
-      :name: milk-sweetness-study
+      :name: milk
 
    .. rubric:: Description
       :name: description

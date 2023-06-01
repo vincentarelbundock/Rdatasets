@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Gasoline Consumption
-      :name: gasoline-consumption
+      :name: Gasoline
 
    .. rubric:: Description
       :name: description

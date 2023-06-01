@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Refinery yield of gasoline
-      :name: refinery-yield-of-gasoline
+      :name: Gasoline
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Heat Evolved by Setting Cements
-      :name: heat-evolved-by-setting-cements
+      :name: cement
 
    .. rubric:: Description
       :name: description

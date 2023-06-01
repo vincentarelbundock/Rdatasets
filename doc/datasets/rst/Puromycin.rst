@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Reaction Velocity of an Enzymatic Reaction
-      :name: reaction-velocity-of-an-enzymatic-reaction
+      :name: Puromycin
 
    .. rubric:: Description
       :name: description

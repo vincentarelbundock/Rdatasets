@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Toxicity of Nitrofen in Aquatic Systems
-      :name: toxicity-of-nitrofen-in-aquatic-systems
+      :name: nitrofen
 
    .. rubric:: Description
       :name: description

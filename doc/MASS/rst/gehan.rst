@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Remission Times of Leukaemia Patients
-      :name: remission-times-of-leukaemia-patients
+      :name: gehan
 
    .. rubric:: Description
       :name: description

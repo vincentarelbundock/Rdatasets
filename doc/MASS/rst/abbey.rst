@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Determinations of Nickel Content
-      :name: determinations-of-nickel-content
+      :name: abbey
 
    .. rubric:: Description
       :name: description

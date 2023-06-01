@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: NBA Player heights from 2008-9
-      :name: nba-player-heights-from-2008-9
+      :name: nba_heights
 
    .. rubric:: Description
       :name: description

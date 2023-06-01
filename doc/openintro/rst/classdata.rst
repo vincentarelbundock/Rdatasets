@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Simulated class data
-      :name: simulated-class-data
+      :name: classdata
 
    .. rubric:: Description
       :name: description

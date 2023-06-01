@@ -6,7 +6,7 @@
 
    .. rubric:: Macdonell's Data on Height and Finger Length of
       Criminals, used by Gosset (1908)
-      :name: macdonells-data-on-height-and-finger-length-of-criminals-used-by-gosset-1908
+      :name: Macdonell
 
    .. rubric:: Description
       :name: description

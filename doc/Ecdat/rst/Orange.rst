@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: The Orange Juice Data Set
-      :name: the-orange-juice-data-set
+      :name: Orange
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Weather
-      :name: weather
+      :name: Weather
 
    .. rubric:: Description
       :name: description

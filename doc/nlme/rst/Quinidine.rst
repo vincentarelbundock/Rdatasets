@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Quinidine Kinetics
-      :name: quinidine-kinetics
+      :name: Quinidine
 
    .. rubric:: Description
       :name: description

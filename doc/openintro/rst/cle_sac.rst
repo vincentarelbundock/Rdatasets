@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Cleveland and Sacramento
-      :name: cleveland-and-sacramento
+      :name: cle_sac
 
    .. rubric:: Description
       :name: description

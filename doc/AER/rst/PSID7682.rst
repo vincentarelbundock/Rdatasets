@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: PSID Earnings Panel Data (1976–1982)
-      :name: psid-earnings-panel-data-19761982
+      :name: PSID7682
 
    .. rubric:: Description
       :name: description

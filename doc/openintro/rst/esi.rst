@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Environmental Sustainability Index 2005
-      :name: environmental-sustainability-index-2005
+      :name: esi
 
    .. rubric:: Description
       :name: description

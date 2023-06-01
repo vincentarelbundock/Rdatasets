@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Anesthetic Effectiveness
-      :name: anesthetic-effectiveness
+      :name: anesthetic
 
    .. rubric:: Description
       :name: description

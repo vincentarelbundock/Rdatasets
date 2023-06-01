@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Helium football
-      :name: helium-football
+      :name: helium
 
    .. rubric:: Description
       :name: description

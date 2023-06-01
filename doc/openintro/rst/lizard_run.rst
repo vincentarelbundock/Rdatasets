@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Lizard speeds
-      :name: lizard-speeds
+      :name: lizard_run
 
    .. rubric:: Description
       :name: description

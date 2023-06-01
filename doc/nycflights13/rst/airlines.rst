@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Airline names.
-      :name: airline-names.
+      :name: airlines
 
    .. rubric:: Description
       :name: description

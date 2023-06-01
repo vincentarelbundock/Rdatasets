@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Plane metadata.
-      :name: plane-metadata.
+      :name: planes
 
    .. rubric:: Description
       :name: description

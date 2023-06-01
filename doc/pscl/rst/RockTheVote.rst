@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Voter turnout experiment, using Rock The Vote ads
-      :name: voter-turnout-experiment-using-rock-the-vote-ads
+      :name: RockTheVote
 
    .. rubric:: Description
       :name: description

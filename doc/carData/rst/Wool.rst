@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Wool data
-      :name: wool-data
+      :name: Wool
 
    .. rubric:: Description
       :name: description

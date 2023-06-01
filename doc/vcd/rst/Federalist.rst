@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: ‘May’ in Federalist Papers
-      :name: may-in-federalist-papers
+      :name: Federalist
 
    .. rubric:: Description
       :name: description

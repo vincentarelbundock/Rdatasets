@@ -1,0 +1,179 @@
+<!DOCTYPE html><html><head><title>R: Minnesota High School Graduates</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Hoyt</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Hoyt'>Minnesota High School Graduates</h2>
+
+<h3>Description</h3>
+
+<p>Minnesota high school graduates of June 1930 were classified with respect to 
+(a) <code>Rank</code> by thirds in their graduating class, (b) post-high school <code>Status</code> in April 1939 (4 levels), (c) <code>Sex</code>, 
+(d) father's <code>Occupation</code>al status (7 levels, from 1=High to 7=Low).
+</p>
+<p>The data were first presented by Hoyt et al. (1959) and have been analyzed by Fienberg(1980), Plackett(1974)
+and others.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Hoyt)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A     4-dimensional array resulting from cross-tabulating    4 variables for 13968 observations. The variable names and their levels are:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1</td><td style="text-align: left;"> <code>Status</code></td><td style="text-align: left;"> <code>"College", "School", "Job", "Other"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2</td><td style="text-align: left;"> <code>Rank</code></td><td style="text-align: left;"> <code>"Low", "Middle", "High"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    3</td><td style="text-align: left;"> <code>Occupation</code></td><td style="text-align: left;"> <code>"1", "2", "3", "4", "5", "6", "7"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    4</td><td style="text-align: left;"> <code>Sex</code></td><td style="text-align: left;"> <code>"Male", "Female"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p>Post high-school <code>Status</code> is natural to consider as the response.
+<code>Rank</code> and father's <code>Occupation</code> are ordinal variables.</p>
+
+
+<h3>Source</h3>
+
+
+
+
+
+<p>Fienberg, S. E. (1980).
+<em>The Analysis of Cross-Classified Categorical Data</em>.
+Cambridge, MA: MIT Press, p. 91-92.
+</p>
+<p>R. L. Plackett, (1974).
+<em>The Analysis of Categorical Data</em>. London: Griffin.
+</p>
+
+
+<h3>References</h3>
+
+<p>Hoyt, C. J., Krishnaiah, P. R. and Torrance, E. P. (1959) 
+Analysis of complex contingency tables, 
+<em>Journal of Experimental Education</em> 27, 187-194. 
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>minn38</code> provides the same data as a data frame.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Hoyt)
+
+# display the table
+structable(Status + Sex ~ Rank + Occupation, data=Hoyt)
+
+# mosaic for independence model
+plot(Hoyt, shade=TRUE)
+
+# examine all pairwise mosaics
+pairs(Hoyt, shade=TRUE)
+
+# collapse Status to College vs. Non-College
+Hoyt1 &lt;- collapse.table(Hoyt, Status=c("College", rep("Non-College",3)))
+plot(Hoyt1, shade=TRUE)
+
+#################################################
+# fitting models with loglm, plotting with mosaic
+#################################################
+
+# fit baseline log-linear model for Status as response
+require(MASS)
+hoyt.mod0 &lt;- loglm(~ Status + (Sex*Rank*Occupation), 
+  data=Hoyt1)
+hoyt.mod0
+
+mosaic(hoyt.mod0, 
+  gp=shading_Friendly, 
+  main="Baseline model: Status + (Sex*Rank*Occ)")
+
+# add one-way association of Status with factors
+hoyt.mod1 &lt;- loglm(~ Status * (Sex + Rank + Occupation) + (Sex*Rank*Occupation), 
+  data=Hoyt1)
+hoyt.mod1
+
+mosaic(hoyt.mod1, 
+  gp=shading_Friendly, 
+  main="Status * (Sex + Rank + Occ)")
+
+# can we drop any terms?
+drop1(hoyt.mod1, test="Chisq")
+
+# assess model fit
+anova(hoyt.mod0, hoyt.mod1)
+
+# what terms to add?
+add1(hoyt.mod1, ~.^2, test="Chisq")
+
+# add interaction of Sex:Occupation on Status
+hoyt.mod2 &lt;- update(hoyt.mod1, ~ . + Status:Sex:Occupation)
+
+mosaic(hoyt.mod2, 
+  gp=shading_Friendly, 
+  main="Adding Status:Sex:Occupation")
+
+# compare model fits
+anova(hoyt.mod0, hoyt.mod1, hoyt.mod2)
+
+# Alternatively, try stepwise analysis, heading toward the saturated model
+steps &lt;- step(hoyt.mod0, 
+  direction="forward", 
+  scope=~Status*Sex*Rank*Occupation)
+
+# display anova
+steps$anova
+
+</code></pre>
+
+
+</div>
+</body></html>

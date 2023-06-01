@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Cape Fur Seal Data
-      :name: cape-fur-seal-data
+      :name: cfseal
 
    .. rubric:: Description
       :name: description

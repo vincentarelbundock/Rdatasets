@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Age of Onset of Schizophrenia Data
-      :name: age-of-onset-of-schizophrenia-data
+      :name: schizophrenia
 
    .. rubric:: Description
       :name: description

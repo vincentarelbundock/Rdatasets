@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Blood Pressure, Weight, and Smoking Status
-      :name: blood-pressure-weight-and-smoking-status
+      :name: Blood1
 
    .. rubric:: Description
       :name: description

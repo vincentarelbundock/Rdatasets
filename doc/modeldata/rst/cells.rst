@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Cell body segmentation
-      :name: cell-body-segmentation
+      :name: cells
 
    .. rubric:: Description
       :name: description

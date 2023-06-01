@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Student's (1906) Yeast Cell Counts
-      :name: students-1906-yeast-cell-counts
+      :name: Yeast
 
    .. rubric:: Description
       :name: description

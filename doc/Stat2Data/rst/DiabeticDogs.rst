@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Lactic Acid Turnover in Dogs
-      :name: lactic-acid-turnover-in-dogs
+      :name: DiabeticDogs
 
    .. rubric:: Description
       :name: description

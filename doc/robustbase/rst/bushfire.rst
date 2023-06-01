@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Campbell Bushfire Data
-      :name: campbell-bushfire-data
+      :name: bushfire
 
    .. rubric:: Description
       :name: description

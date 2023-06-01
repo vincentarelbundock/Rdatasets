@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Simulated data for association plots
-      :name: simulated-data-for-association-plots
+      :name: association
 
    .. rubric:: Description
       :name: description

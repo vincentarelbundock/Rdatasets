@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Michelson's Determinations of the Velocity of Light
-      :name: michelsons-determinations-of-the-velocity-of-light
+      :name: Michelson
 
    .. rubric:: Description
       :name: description

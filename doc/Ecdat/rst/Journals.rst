@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Economic Journals Data Set
-      :name: economic-journals-data-set
+      :name: Journals
 
    .. rubric:: Description
       :name: description

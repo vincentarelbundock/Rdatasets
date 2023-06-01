@@ -1,0 +1,141 @@
+<!DOCTYPE html><html><head><title>R: Adopted Children</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Adopted</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Adopted'>Adopted Children</h2>
+
+<h3>Description</h3>
+
+<p>Data are a subset from an observational, longitudinal, study on
+adopted children.  Is child's intelligence related to intelligence of
+the biological mother and the intelligence of the adoptive mother?
+</p>
+<p>The child's intelligence was measured at age 2, 4, 8, and 13 for
+this sample.  How does intelligence change over time, and how are
+these changes related to intelligence of the birth and adoptive mother?
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Adopted</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 62 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>AMED</code></dt><dd><p>adoptive mother's years of education (proxy for her IQ)</p>
+</dd>
+<dt><code>BMIQ</code></dt><dd><p>biological mother's score on IQ test</p>
+</dd>
+<dt><code>Age2IQ</code></dt><dd><p>IQ of child at age 2</p>
+</dd>
+<dt><code>Age4IQ</code></dt><dd><p>IQ of child at age 4</p>
+</dd>
+<dt><code>Age8IQ</code></dt><dd><p>IQ of child at age 8</p>
+</dd>
+<dt><code>Age13IQ</code></dt><dd><p>IQ of child at age 13</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Ramsey, F.L. and Schafer, D.W. (2002). <em>The Statistical Sleuth: A
+Course in Methods of Data Analysis (2nd ed)</em>, Duxbury.
+</p>
+<p>This data set is identical to  <code>ex1605</code> in the <code>Sleuth2</code>
+package. 
+</p>
+
+
+<h3>References</h3>
+
+<p>Friendly, M.  (2010). HE Plots for Repeated Measures Designs. <em>Journal of Statistical Software</em>,
+37(4), 1-40. 
+doi: <a href="https://doi.org/10.18637/jss.v037.i04">10.18637/jss.v037.i04</a>.
+
+</p>
+<p>Skodak, M. and Skeels, H.M. (1949). A Final Follow-up Study of One
+Hundred Adopted Children, <em>Journal of Genetic Psychology</em>
+<b>75</b>: 85&ndash;125.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>ex1605</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># Treat as multivariate regression problem
+Adopted.mod &lt;- lm(cbind(Age2IQ, Age4IQ, Age8IQ, Age13IQ) ~ AMED + BMIQ, 
+                  data=Adopted)
+Adopted.mod
+
+
+require(car)
+# test overall multivariate regression
+print(linearHypothesis(Adopted.mod, c("AMED","BMIQ")), SSP=FALSE)
+
+# show separate linear regressions
+op &lt;- par(mfcol=c(2,4), mar=c(4,4,1,1)+.1)
+for (i in 3:6) {
+	dataEllipse(as.matrix(Adopted[,c(1,i)]),
+	            col="black", levels=0.68, ylim=c(70,140))
+	abline(lm(Adopted[,i] ~ Adopted[,1]), col="red", lwd=2)
+
+	dataEllipse(as.matrix(Adopted[,c(2,i)]),
+	            col="black", levels=0.68, ylim=c(70,140))
+	abline(lm(Adopted[,i] ~ Adopted[,2]), col="red", lwd=2)
+	abline(a=0,b=1, lty=1, col="blue")
+}
+par(op)
+
+# between-S (MMReg) plots
+heplot(Adopted.mod, hypotheses=list("Reg"=c("AMED", "BMIQ")),
+	main="IQ scores of adopted children: MMReg")
+
+pairs(Adopted.mod, hypotheses=list("Reg"=c("AMED", "BMIQ")))
+
+if(requireNamespace("rgl")){
+heplot3d(Adopted.mod, hypotheses=list("Reg"=c("AMED", "BMIQ")),
+	col = c("red", "blue", "black", "gray"), wire=FALSE)
+}
+
+# Treat IQ at different ages as a repeated measure factor
+# within-S models &amp; plots
+Age &lt;- data.frame(Age=ordered(c(2,4,8,13)))
+Anova(Adopted.mod, idata=Age, idesign=~Age, test="Roy")
+
+# within-S plots
+heplot(Adopted.mod, idata=Age, idesign=~Age, iterm="Age",
+	cex=1.25, cex.lab=1.4, fill=c(FALSE, TRUE),
+	hypotheses=list("Reg"=c("AMED", "BMIQ"))
+	)
+
+</code></pre>
+
+
+</div>
+</body></html>

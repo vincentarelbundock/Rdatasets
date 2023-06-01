@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: "Let Them Watch TV"
-      :name: let-them-watch-tv
+      :name: LTWT
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Boscovich Data
-      :name: boscovich-data
+      :name: Bosco
 
    .. rubric:: Description
       :name: description

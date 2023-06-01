@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Full Leaf Shape Data Set
-      :name: full-leaf-shape-data-set
+      :name: leafshape
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Sales Data of Men's Fashion Stores
-      :name: sales-data-of-mens-fashion-stores
+      :name: Clothing
 
    .. rubric:: Description
       :name: description

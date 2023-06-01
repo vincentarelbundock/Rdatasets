@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Longley's Economic Regression Data
-      :name: longleys-economic-regression-data
+      :name: longley
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Gain in Weight of Rats
-      :name: gain-in-weight-of-rats
+      :name: weightgain
 
    .. rubric:: Description
       :name: description

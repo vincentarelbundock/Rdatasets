@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Time Between Gondola Cars at Sterling Winery
-      :name: time-between-gondola-cars-at-sterling-winery
+      :name: winery_cars
 
    .. rubric:: Description
       :name: description

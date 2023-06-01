@@ -6,7 +6,7 @@
 
    .. rubric:: Air pollution data, separately for summer and winter
       months
-      :name: air-pollution-data-separately-for-summer-and-winter-months
+      :name: summer+20and+20winter+20data
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Doctoral Publications
-      :name: doctoral-publications
+      :name: PhDPublications
 
    .. rubric:: Description
       :name: description

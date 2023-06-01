@@ -5,7 +5,7 @@
    ================== ===============
 
    .. rubric:: Occupational Status of Fathers and their Sons
-      :name: occupational-status-of-fathers-and-their-sons
+      :name: occupationalStatus
 
    .. rubric:: Description
       :name: description

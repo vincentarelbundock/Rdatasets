@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Lifeboats on the Titanic
-      :name: lifeboats-on-the-titanic
+      :name: Lifeboats
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Example Data for the Crossover Encouragement Design
-      :name: example-data-for-the-crossover-encouragement-design
+      :name: CEDdata
 
    .. rubric:: Description
       :name: description

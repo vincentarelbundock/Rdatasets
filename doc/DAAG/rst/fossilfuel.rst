@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Fossil Fuel Data
-      :name: fossil-fuel-data
+      :name: fossilfuel
 
    .. rubric:: Description
       :name: description

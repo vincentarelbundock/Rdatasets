@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Contagious bovine pleuropneumonia
-      :name: contagious-bovine-pleuropneumonia
+      :name: cbpp
 
    .. rubric:: Description
       :name: description

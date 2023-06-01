@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Volume of Users of a Massachusetts Rail Trail
-      :name: volume-of-users-of-a-massachusetts-rail-trail
+      :name: Riders
 
    .. rubric:: Description
       :name: description

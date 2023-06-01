@@ -6,7 +6,7 @@
 
    .. rubric:: Soil Compositions of Physical and Chemical
       Characteristics
-      :name: soil-compositions-of-physical-and-chemical-characteristics
+      :name: Soils
 
    .. rubric:: Description
       :name: description

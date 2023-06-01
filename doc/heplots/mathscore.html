@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: Math scores for basic math and word problems</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>mathscore</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='mathscore'>
+Math scores for basic math and word problems
+</h2>
+
+<h3>Description</h3>
+
+<p>Scores for two groups of school children taught by different math teachers and tested
+for both basic math (BM) problems and solving word problems (WP).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("mathscore")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 12 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>group</code></dt><dd><p>a factor with levels <code>1</code> <code>2</code></p>
+</dd>
+<dt><code>BM</code></dt><dd><p>Basic Math score, a numeric vector</p>
+</dd>
+<dt><code>WP</code></dt><dd><p>Word Problems score, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Fictitious data
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(mathscore)
+str(mathscore)
+
+math.mod &lt;- lm(cbind(BM, WP) ~ group, data=mathscore)
+car::Anova(math.mod)
+
+# scatterplot with data ellipses
+car::scatterplot(WP ~ BM | group, data=mathscore, 
+	ellipse=list(levels=0.68), smooth=FALSE, pch=c(15,16), 
+	legend=list(coords = "topright"))
+
+# HE plot
+heplot(math.mod, fill=TRUE, 
+  cex=2, cex.lab=1.8,
+	xlab="Basic math", ylab="Word problems")
+
+
+
+</code></pre>
+
+
+</div>
+</body></html>

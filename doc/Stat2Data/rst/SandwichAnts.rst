@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Ants on Sandwiches
-      :name: ants-on-sandwiches
+      :name: SandwichAnts
 
    .. rubric:: Description
       :name: description

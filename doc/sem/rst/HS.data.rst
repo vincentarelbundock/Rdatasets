@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Holizinger and Swineford's Data
-      :name: holizinger-and-swinefords-data
+      :name: HS.data
 
    .. rubric:: Description
       :name: description

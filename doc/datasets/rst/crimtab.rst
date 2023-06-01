@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Student's 3000 Criminals Data
-      :name: students-3000-criminals-data
+      :name: crimtab
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Midwest demographics
-      :name: midwest-demographics
+      :name: midwest
 
    .. rubric:: Description
       :name: description

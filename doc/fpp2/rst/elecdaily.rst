@@ -6,7 +6,7 @@
 
    .. rubric:: Half-hourly and daily electricity demand for Victoria,
       Australia, in 2014
-      :name: half-hourly-and-daily-electricity-demand-for-victoria-australia-in-2014
+      :name: elecdemand
 
    .. rubric:: Description
       :name: description

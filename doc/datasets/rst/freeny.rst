@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Freeny's Revenue Data
-      :name: freenys-revenue-data
+      :name: freeny
 
    .. rubric:: Description
       :name: description

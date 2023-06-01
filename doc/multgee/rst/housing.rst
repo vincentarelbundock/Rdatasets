@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Homeless Data
-      :name: homeless-data
+      :name: housing
 
    .. rubric:: Description
       :name: description

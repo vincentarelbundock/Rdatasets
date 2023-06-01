@@ -6,7 +6,7 @@
 
    .. rubric:: Data frame representing information about a collection of
       emails
-      :name: data-frame-representing-information-about-a-collection-of-emails
+      :name: email
 
    .. rubric:: Description
       :name: description

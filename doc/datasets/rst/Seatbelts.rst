@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Road Casualties in Great Britain 1969–84
-      :name: road-casualties-in-great-britain-196984
+      :name: UKDriverDeaths
 
    .. rubric:: Description
       :name: description

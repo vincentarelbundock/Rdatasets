@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Schizophrenia Data
-      :name: schizophrenia-data
+      :name: schizophrenia2
 
    .. rubric:: Description
       :name: description

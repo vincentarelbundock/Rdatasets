@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Parade Magazine 2005 Earnings Data
-      :name: parade-magazine-2005-earnings-data
+      :name: Parade2005
 
    .. rubric:: Description
       :name: description

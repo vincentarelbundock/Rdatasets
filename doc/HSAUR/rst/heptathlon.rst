@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Olympic Heptathlon Seoul 1988
-      :name: olympic-heptathlon-seoul-1988
+      :name: heptathlon
 
    .. rubric:: Description
       :name: description

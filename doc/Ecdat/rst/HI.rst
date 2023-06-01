@@ -5,7 +5,7 @@
    == ===============
 
    .. rubric:: Health Insurance and Hours Worked By Wives
-      :name: health-insurance-and-hours-worked-by-wives
+      :name: HI
 
    .. rubric:: Description
       :name: description

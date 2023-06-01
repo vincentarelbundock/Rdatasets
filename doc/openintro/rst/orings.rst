@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: 1986 Challenger disaster and O-rings
-      :name: challenger-disaster-and-o-rings
+      :name: orings
 
    .. rubric:: Description
       :name: description

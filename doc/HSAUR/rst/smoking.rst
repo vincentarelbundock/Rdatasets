@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Nicotine Gum and Smoking Cessation
-      :name: nicotine-gum-and-smoking-cessation
+      :name: smoking
 
    .. rubric:: Description
       :name: description

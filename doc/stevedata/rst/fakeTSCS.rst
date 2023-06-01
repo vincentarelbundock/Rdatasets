@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Fake Data for a Time-Series Cross-Section
-      :name: fake-data-for-a-time-series-cross-section
+      :name: fakeTSCS
 
    .. rubric:: Description
       :name: description

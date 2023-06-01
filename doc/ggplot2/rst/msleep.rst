@@ -6,7 +6,7 @@
 
    .. rubric:: An updated and expanded version of the mammals sleep
       dataset
-      :name: an-updated-and-expanded-version-of-the-mammals-sleep-dataset
+      :name: msleep
 
    .. rubric:: Description
       :name: description

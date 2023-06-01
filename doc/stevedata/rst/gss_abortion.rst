@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Abortion Opinions in the General Social Survey
-      :name: abortion-opinions-in-the-general-social-survey
+      :name: gss_abortion
 
    .. rubric:: Description
       :name: description

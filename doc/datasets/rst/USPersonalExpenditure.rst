@@ -5,7 +5,7 @@
    ===================== ===============
 
    .. rubric:: Personal Expenditure Data
-      :name: personal-expenditure-data
+      :name: USPersonalExpenditure
 
    .. rubric:: Description
       :name: description

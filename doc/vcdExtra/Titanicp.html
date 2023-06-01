@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: Passengers on the Titanic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Titanicp</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Titanicp'>Passengers on the Titanic</h2>
+
+<h3>Description</h3>
+
+<p>Data on passengers on the RMS Titanic, excluding the Crew and some
+individual identifier variables. 
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Titanicp)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1309 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>pclass</code></dt><dd><p>a factor with levels <code>1st</code> <code>2nd</code> <code>3rd</code></p>
+</dd>
+<dt><code>survived</code></dt><dd><p>a factor with levels <code>died</code> <code>survived</code></p>
+</dd>
+<dt><code>sex</code></dt><dd><p>a factor with levels <code>female</code> <code>male</code></p>
+</dd>
+<dt><code>age</code></dt><dd><p>passenger age in years (or fractions of a year, for children), a numeric vector; age is missing for 263 of the passengers</p>
+</dd>
+<dt><code>sibsp</code></dt><dd><p>number of siblings or spouses aboard, integer: <code>0:8</code></p>
+</dd>
+<dt><code>parch</code></dt><dd><p>number of parents or children aboard, integer: <code>0:6</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>There are a number of related versions of the Titanic data, in various formats.
+This version was derived from <code>ptitanic</code> in the <span class="pkg">rpart.plot</span> package,
+modifying it to remove the <code>Class 'labelled'</code> attributes for some variables
+(inherited from Frank Harrell's <code>titanic3</code> version)
+which caused problems with some applications, notably <code>ggplot2</code>.
+</p>
+<p>Other versions:
+</p>
+<p><code>Titanic</code> is the 4-way frequency table of all 2201 people
+aboard the Titanic, including passengers and crew.
+</p>
+
+
+<h3>Source</h3>
+
+<p>The original R source for this
+dataset was compiled by Frank Harrell and Robert Dawson:
+<a href="https://biostat.app.vumc.org/wiki/pub/Main/DataSets/titanic.html">https://biostat.app.vumc.org/wiki/pub/Main/DataSets/titanic.html</a>,
+described in more detail in
+<a href="https://biostat.app.vumc.org/wiki/pub/Main/DataSets/titanic3info.txt">https://biostat.app.vumc.org/wiki/pub/Main/DataSets/titanic3info.txt</a>
+</p>
+<p>For this version of the Titanic data, passenger details were deleted, 
+survived was cast as a factor, and the name changed to <code>Titanicp</code> to minimize confusion 
+with other versions.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Titanicp)
+## maybe str(Titanicp) ; plot(Titanicp) ...
+</code></pre>
+
+
+</div>
+</body></html>

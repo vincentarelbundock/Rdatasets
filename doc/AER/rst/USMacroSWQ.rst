@@ -6,7 +6,7 @@
 
    .. rubric:: Quarterly US Macroeconomic Data (1947–2004, Stock &
       Watson)
-      :name: quarterly-us-macroeconomic-data-19472004-stock-watson
+      :name: USMacroSWQ
 
    .. rubric:: Description
       :name: description

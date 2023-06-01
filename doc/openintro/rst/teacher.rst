@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Teacher Salaries in St. Louis, Michigan
-      :name: teacher-salaries-in-st.-louis-michigan
+      :name: teacher
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Phosphate Level Data
-      :name: phosphate-level-data
+      :name: phosphate
 
    .. rubric:: Description
       :name: description

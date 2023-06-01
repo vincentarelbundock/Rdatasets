@@ -6,7 +6,7 @@
 
    .. rubric:: Total weekly air passenger numbers on Ansett airline
       flights between Melbourne and Sydney, 1987–1992.
-      :name: total-weekly-air-passenger-numbers-on-ansett-airline-flights-between-melbourne-and-sydney-19871992.
+      :name: melsyd
 
    .. rubric:: Description
       :name: description

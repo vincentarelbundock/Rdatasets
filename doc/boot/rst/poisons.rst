@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Animal Survival Times
-      :name: animal-survival-times
+      :name: poisons
 
    .. rubric:: Description
       :name: description

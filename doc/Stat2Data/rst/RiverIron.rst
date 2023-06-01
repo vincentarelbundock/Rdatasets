@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Iron in River Water Samples
-      :name: iron-in-river-water-samples
+      :name: RiverIron
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: US economic time series
-      :name: us-economic-time-series
+      :name: economics
 
    .. rubric:: Description
       :name: description

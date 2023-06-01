@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: DEM/GBP Exchange Rate Returns
-      :name: demgbp-exchange-rate-returns
+      :name: MarkPound
 
    .. rubric:: Description
       :name: description

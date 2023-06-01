@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Counts of Ovarian Follicles
-      :name: counts-of-ovarian-follicles
+      :name: Ovary
 
    .. rubric:: Description
       :name: description

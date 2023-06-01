@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Monthly Excess Returns
-      :name: monthly-excess-returns
+      :name: acme
 
    .. rubric:: Description
       :name: description

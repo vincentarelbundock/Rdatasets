@@ -1,0 +1,139 @@
+<!DOCTYPE html><html><head><title>R: C.S. Peirce's Auditory Response Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Peirce</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Peirce'>C.S. Peirce's Auditory Response Data</h2>
+
+<h3>Description</h3>
+
+<p>Data from sequence experiments conducted by C.S. Pierce in 1872 to
+determine the distribution of response times to an auditory stimulus.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Peirce)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A <code>link{list}</code> of 24 objects each representing one day of the
+experiment.  Each element of the list consists of three components:
+the date the measurements were made, an <code>x</code> component
+recording the response time in milliseconds, and an associated  <code>y</code>
+component recording a count of the number of times that the response
+was recorded to be equal to be equal to the  corresponding <code>x</code> entry.
+There  are roughly 500 observations (counts) on each of the 24 days.
+</p>
+
+
+<h3>Details</h3>
+
+<p>A detailed description of the experiment can be found in Peirce (1873).  A
+young man of about 18 with no prior experience was  employed to respond to
+a signal  &ldquo;consisting of a sharp sound like a rap, the answer being made
+upon a telegraph-operator's key nicely adjusted.&rdquo;  The response times,
+made with the aid of a Hipp cronoscope were recorded to the nearest 
+millisecond.  The data was analyzed by Peirce who concluded that after
+the first day, when the the observer was entirely inexperienced, the
+curves representing the densities of the response times &ldquo;differed very
+little from that derived from the theory of least squares,&rdquo; i.e. from
+the Gaussian density.
+</p>
+<p>The data was subsequently analysed by Samama, in a diploma thesis supervised
+by Maurice Frechet, who reported briefly the findings in Frechet (1924),
+and by Wilson and Hilferty (1929).  In both instances the reanalysis showed
+that Laplace's first law of error, the double exponential distribution, was
+a better representation for the data than was the Gaussian law.  Koenker (2009)
+constains further discussion and an attempt to reproduce the Wilson and
+Hilferty analysis.
+</p>
+<p>The data is available in two formats:  The first in a &quot;raw&quot; form as 24 text
+files as scanned from the reprinted Peirce source, the second as an R
+dataset <code>Peirce.rda</code> containing the list.  Only the latter
+is provided here, for the raw data and how to read see the more complete
+archive at:  <a href="http://www.econ.uiuc.edu/~roger/research/frechet/frechet.html">http://www.econ.uiuc.edu/~roger/research/frechet/frechet.html</a>
+See the examples section below for some details on 
+provisional  attempt to reproduce part of the Wilson and Hilferty
+analysis.  An open question regarding the dataset is:  How did Wilson
+and Hilferty compute standard deviations for the median as they appear
+in their table?  The standard textbook suggestion of Yule (1917) yields
+far too small a bandwidth.  The methods employed in the example section
+below, which rely on relatively recent proposals, are somewhat closer, 
+but still deviate somewhat from the results reported by Wilson and Hilferty.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Peirce, C.~S.  (1873): &ldquo;On the Theory of Errors of Observation,&rdquo;
+<em>Report of the Superintendent of the U.S. Coast Survey</em>, pp. 200&ndash;224,
+Reprinted in <em>The New Elements of Mathematics</em>, (1976) collected papers
+of C.S. Peirce, ed. by C. Eisele, Humanities Press: Atlantic Highlands, N.J.,
+vol. 3, part 1, 639&ndash;676.
+</p>
+
+
+<h3>References</h3>
+
+<p>Fr\'echet, M.  (1924): &ldquo;Sur la loi des erreurs d'observation,&rdquo;
+<em>Matematichiskii Sbornik</em>, 32, 5&ndash;8.
+Koenker, R. (2009): &ldquo;The Median is the Message:  Wilson and Hilferty's 
+Reanalysis of C.S. Peirce's Experiments on the Law of Errors,&rdquo; 
+<em>American Statistician</em>, 63, 20-25.
+Wilson, E.~B.,  and M.~M. Hilferty  (1929): &ldquo;Note on C.S.
+Peirces Experimental Discussion of the Law of Errors,&rdquo; <em>Proceedings
+of the National Academy of Sciences of the U.S.A.</em>, 15, 120&ndash;125.
+Yule, G.~U.  (1917): <em>An Introduction to the Theory of
+Statistics</em>. Charles Griffen: London, 4 edn.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+# Make table like Wilson and Hilferty
+
+data("Peirce")
+set.seed(10) #Dither the counts
+tab &lt;- matrix(0,24,11)
+for(i in 1:24){
+	y &lt;- rep(Peirce[[i]]$x, Peirce[[i]]$y) + runif(sum(Peirce[[i]]$y), -.5, .5)
+	f1 &lt;- summary(rq(y~1),se="iid")$coef[1:2]
+	n &lt;- length(y)
+	f0 &lt;- 1/(2 * sum(abs(y-f1[1])/n)) #Laplace proposal
+	f0 &lt;- (1/(2 * f0))/ sqrt(n)
+	f2 &lt;- summary(lm(y~1))$coef[1:2]
+	outm &lt;- sum(y &lt; (f1[1] - 3.1 * sqrt(n) * f2[2]))
+	outp &lt;- sum(y &gt; (f1[1] + 3.1 * sqrt(n) * f2[2]))
+	outt &lt;- outm + outp
+	inm &lt;- y &gt; (f1[1] - 0.25 * sqrt(n) * f2[2])
+	inp &lt;- y &lt; (f1[1] + 0.25 * sqrt(n) * f2[2])
+	int &lt;- sum(inm * inp)
+	Eint &lt;- round(n * (pnorm(.25) - pnorm(-.25)))
+	excess &lt;- round(100*(int - Eint)/Eint)
+	tab[i,] &lt;- c(f1, f0, f2, outm, outp, outt,int,Eint,excess)
+	cnames &lt;- c("med","sdmed1","sdmed0","mean","sdmean","below","above","outliers",
+		"inliers","Einliers","ExcessIns")
+	dimnames(tab) &lt;- list(paste("Day",1:24),cnames)
+	}
+</code></pre>
+
+
+</div>
+</body></html>

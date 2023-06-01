@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Growth curves of pigs in a 3x3 factorial experiment
-      :name: growth-curves-of-pigs-in-a-3x3-factorial-experiment
+      :name: dietox
 
    .. rubric:: Description
       :name: description

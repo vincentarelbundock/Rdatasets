@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Annual Precipitation in US Cities
-      :name: annual-precipitation-in-us-cities
+      :name: precip
 
    .. rubric:: Description
       :name: description

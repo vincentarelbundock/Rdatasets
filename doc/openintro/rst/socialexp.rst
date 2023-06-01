@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Social experiment
-      :name: social-experiment
+      :name: socialexp
 
    .. rubric:: Description
       :name: description

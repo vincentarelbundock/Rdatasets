@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: Two class predictions
-      :name: two-class-predictions
+      :name: two_class_example
 
    .. rubric:: Description
       :name: description

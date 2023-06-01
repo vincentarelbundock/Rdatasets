@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Monthly Returns from the CRSP Database
-      :name: monthly-returns-from-the-crsp-database
+      :name: CRSPmon
 
    .. rubric:: Description
       :name: description

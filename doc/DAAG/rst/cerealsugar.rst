@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Percentage of Sugar in Breakfast Cereal
-      :name: percentage-of-sugar-in-breakfast-cereal
+      :name: cerealsugar
 
    .. rubric:: Description
       :name: description

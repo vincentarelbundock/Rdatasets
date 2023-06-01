@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Head Dimensions in Brothers
-      :name: head-dimensions-in-brothers
+      :name: frets
 
    .. rubric:: Description
       :name: description

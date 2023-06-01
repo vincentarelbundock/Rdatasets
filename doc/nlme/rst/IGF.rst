@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Radioimmunoassay of IGF-I Protein
-      :name: radioimmunoassay-of-igf-i-protein
+      :name: IGF
 
    .. rubric:: Description
       :name: description

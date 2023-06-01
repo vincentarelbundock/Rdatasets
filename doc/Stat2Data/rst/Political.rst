@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Political Behavior of College Students
-      :name: political-behavior-of-college-students
+      :name: Political
 
    .. rubric:: Description
       :name: description

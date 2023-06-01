@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Airport metadata
-      :name: airport-metadata
+      :name: airports
 
    .. rubric:: Description
       :name: description

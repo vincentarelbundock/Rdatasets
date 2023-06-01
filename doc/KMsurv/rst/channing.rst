@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: data from Section 1.16
-      :name: data-from-section-1.16
+      :name: channing
 
    .. rubric:: Description
       :name: description

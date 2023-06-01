@@ -1,0 +1,9 @@
+"","Manage","Super","Worker","Freq"
+"1","bad","low","low",103
+"2","bad","low","high",87
+"3","bad","high","low",32
+"4","bad","high","high",42
+"5","good","low","low",59
+"6","good","low","high",109
+"7","good","high","low",78
+"8","good","high","high",205

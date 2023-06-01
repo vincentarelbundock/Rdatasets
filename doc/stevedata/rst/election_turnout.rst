@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: State-Level Education and Voter Turnout in 2016
-      :name: state-level-education-and-voter-turnout-in-2016
+      :name: election_turnout
 
    .. rubric:: Description
       :name: description

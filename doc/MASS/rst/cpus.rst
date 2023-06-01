@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Performance of Computer CPUs
-      :name: performance-of-computer-cpus
+      :name: cpus
 
    .. rubric:: Description
       :name: description

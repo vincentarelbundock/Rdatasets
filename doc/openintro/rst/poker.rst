@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Poker winnings during 50 sessions
-      :name: poker-winnings-during-50-sessions
+      :name: poker
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Accidental Deaths in the US 1973-1978
-      :name: accidental-deaths-in-the-us-1973-1978
+      :name: accdeaths
 
    .. rubric:: Description
       :name: description

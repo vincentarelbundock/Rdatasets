@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Effects of Cracker Fiber on Digested Calories
-      :name: effects-of-cracker-fiber-on-digested-calories
+      :name: CrackerFiber
 
    .. rubric:: Description
       :name: description

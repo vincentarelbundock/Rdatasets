@@ -6,7 +6,7 @@
 
    .. rubric:: Daily Closing Prices of Major European Stock Indices,
       1991–1998
-      :name: daily-closing-prices-of-major-european-stock-indices-19911998
+      :name: EuStockMarkets
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Survival Times after Mastectomy of Breast Cancer Patients
-      :name: survival-times-after-mastectomy-of-breast-cancer-patients
+      :name: mastectomy
 
    .. rubric:: Description
       :name: description

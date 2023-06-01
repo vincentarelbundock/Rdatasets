@@ -5,7 +5,7 @@
    ================== ===============
 
    .. rubric:: NYC Regents exams scores 2010
-      :name: nyc-regents-exams-scores-2010
+      :name: nyc_regents_scores
 
    .. rubric:: Description
       :name: description
@@ -20,7 +20,7 @@
 
    ::
 
-      data(nyc_regents_scores)
+      nyc_regents_scores
 
    .. rubric:: Format
       :name: format
@@ -52,5 +52,4 @@
 
    ::
 
-      data(nyc_regents_scores)
       print(nyc_regents_scores)

@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: cross national rates of trade union density
-      :name: cross-national-rates-of-trade-union-density
+      :name: unionDensity
 
    .. rubric:: Description
       :name: description

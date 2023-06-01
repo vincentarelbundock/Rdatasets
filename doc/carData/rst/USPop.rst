@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Population of the United States
-      :name: population-of-the-united-states
+      :name: USPop
 
    .. rubric:: Description
       :name: description

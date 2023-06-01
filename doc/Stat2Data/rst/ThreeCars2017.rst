@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Price, Age, and Mileage of Three Used Car Models
-      :name: price-age-and-mileage-of-three-used-car-models
+      :name: ThreeCars2017
 
    .. rubric:: Description
       :name: description

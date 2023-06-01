@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Discrimination study of packet soup
-      :name: discrimination-study-of-packet-soup
+      :name: soup
 
    .. rubric:: Description
       :name: description

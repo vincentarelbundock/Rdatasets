@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Trump Tweets from2009 to 2017
-      :name: trump-tweets-from2009-to-2017
+      :name: trump_tweets
 
    .. rubric:: Description
       :name: description
@@ -17,7 +17,7 @@
 
    ::
 
-      data(trump_tweets)
+      trump_tweets
 
    .. rubric:: Format
       :name: format
@@ -56,5 +56,4 @@
 
    ::
 
-      data(trump_tweets)
       head(trump_tweets)

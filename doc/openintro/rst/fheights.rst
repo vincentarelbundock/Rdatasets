@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Female college student heights, in inches
-      :name: female-college-student-heights-in-inches
+      :name: fheights
 
    .. rubric:: Description
       :name: description

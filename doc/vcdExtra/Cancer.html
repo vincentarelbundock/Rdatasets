@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><title>R: Survival of Breast Cancer Patients</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Cancer</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Cancer'>Survival of Breast Cancer Patients</h2>
+
+<h3>Description</h3>
+
+<p>Three year survival of 474 breast cancer patients according to nuclear grade and diagnostic center.</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Cancer)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A 3-dimensional array resulting from cross-tabulating 3 variables for   474 observations. The variable names and their levels are:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1</td><td style="text-align: left;"> <code>Survival</code></td><td style="text-align: left;"> <code>"Died", "Surv"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2</td><td style="text-align: left;"> <code>Grade</code></td><td style="text-align: left;"> <code>"Malignant", "Benign"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    3</td><td style="text-align: left;"> <code>Center</code></td><td style="text-align: left;"> <code>"Boston", "Glamorgan"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+
+
+<p>Lindsey, J. K. (1995). 
+Analysis of Frequency and Count Data 
+Oxford, UK: Oxford University Press. p. 38, Table 2.5.
+</p>
+<p>Whittaker, J. (1990)
+Graphical Models in Applied Multivariate Statistics
+New York: John Wiley and Sons, p. 220.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Cancer)
+
+MASS::loglm(~Survival + Grade + Center, data = Cancer)
+
+vcd::mosaic(Cancer, shade=TRUE)
+</code></pre>
+
+
+</div>
+</body></html>

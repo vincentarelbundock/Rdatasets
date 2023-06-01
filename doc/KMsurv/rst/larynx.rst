@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: data from Section 1.8
-      :name: data-from-section-1.8
+      :name: larynx
 
    .. rubric:: Description
       :name: description

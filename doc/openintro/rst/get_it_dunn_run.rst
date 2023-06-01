@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Get it Dunn Run, Race Times
-      :name: get-it-dunn-run-race-times
+      :name: get_it_dunn_run
 
    .. rubric:: Description
       :name: description

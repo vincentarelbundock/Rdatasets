@@ -6,7 +6,7 @@
 
    .. rubric:: Australian and Related Historical Annual Climate Data, by
       Region
-      :name: australian-and-related-historical-annual-climate-data-by-region
+      :name: bomregions2021
 
    .. rubric:: Description
       :name: description

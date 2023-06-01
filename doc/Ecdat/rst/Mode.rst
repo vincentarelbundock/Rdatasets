@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Mode Choice
-      :name: mode-choice
+      :name: Mode
 
    .. rubric:: Description
       :name: description

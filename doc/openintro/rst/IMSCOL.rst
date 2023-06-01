@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Introduction to Modern Statistics (IMS) Colors
-      :name: introduction-to-modern-statistics-ims-colors
+      :name: IMSCOL
 
    .. rubric:: Description
       :name: description

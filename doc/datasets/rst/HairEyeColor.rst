@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Hair and Eye Color of Statistics Students
-      :name: hair-and-eye-color-of-statistics-students
+      :name: HairEyeColor
 
    .. rubric:: Description
       :name: description

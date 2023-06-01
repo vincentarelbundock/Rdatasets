@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Unemployment of Blue Collar Workers
-      :name: unemployment-of-blue-collar-workers
+      :name: Benefits
 
    .. rubric:: Description
       :name: description

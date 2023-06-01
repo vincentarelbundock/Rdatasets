@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Behavioral and Plumage Characteristics of Hybrid Ducks
-      :name: behavioral-and-plumage-characteristics-of-hybrid-ducks
+      :name: ducks
 
    .. rubric:: Description
       :name: description

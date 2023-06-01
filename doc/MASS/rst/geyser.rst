@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Old Faithful Geyser Data
-      :name: old-faithful-geyser-data
+      :name: geyser
 
    .. rubric:: Description
       :name: description

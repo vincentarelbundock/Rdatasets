@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Aviation Safety Network Statistics, 1942-2019
-      :name: aviation-safety-network-statistics-1942-2019
+      :name: asn_stats
 
    .. rubric:: Description
       :name: description

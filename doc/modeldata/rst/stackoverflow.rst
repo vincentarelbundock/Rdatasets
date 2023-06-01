@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Annual Stack Overflow Developer Survey Data
-      :name: annual-stack-overflow-developer-survey-data
+      :name: stackoverflow
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Eye color of couples
-      :name: eye-color-of-couples
+      :name: assortive_mating
 
    .. rubric:: Description
       :name: description

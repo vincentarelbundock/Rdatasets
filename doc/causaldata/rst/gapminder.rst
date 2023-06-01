@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Gapminder data
-      :name: gapminder-data
+      :name: gapminder
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Averages by block of corn yields, for treatment 111 only
-      :name: averages-by-block-of-corn-yields-for-treatment-111-only
+      :name: vince111b
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Annual average sunspot area (1875-2015)
-      :name: annual-average-sunspot-area-1875-2015
+      :name: sunspotarea
 
    .. rubric:: Description
       :name: description

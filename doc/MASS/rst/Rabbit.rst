@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Blood Pressure in Rabbits
-      :name: blood-pressure-in-rabbits
+      :name: Rabbit
 
    .. rubric:: Description
       :name: description

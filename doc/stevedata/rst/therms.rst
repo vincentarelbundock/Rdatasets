@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Thermometer Ratings for Donald Trump and Barack Obama
-      :name: thermometer-ratings-for-donald-trump-and-barack-obama
+      :name: therms
 
    .. rubric:: Description
       :name: description

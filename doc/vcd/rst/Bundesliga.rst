@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Ergebnisse der Fussball-Bundesliga
-      :name: ergebnisse-der-fussball-bundesliga
+      :name: Bundesliga
 
    .. rubric:: Description
       :name: description

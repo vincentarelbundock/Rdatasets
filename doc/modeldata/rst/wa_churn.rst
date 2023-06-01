@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Watson churn data
-      :name: watson-churn-data
+      :name: wa_churn
 
    .. rubric:: Description
       :name: description

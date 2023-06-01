@@ -6,7 +6,7 @@
 
    .. rubric:: Data from a clinical trial comparing two treatments for a
       respiratory illness
-      :name: data-from-a-clinical-trial-comparing-two-treatments-for-a-respiratory-illness
+      :name: respiratory
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Chemotherapy for Stage B/C colon cancer
-      :name: chemotherapy-for-stage-bc-colon-cancer
+      :name: colon
 
    .. rubric:: Description
       :name: description

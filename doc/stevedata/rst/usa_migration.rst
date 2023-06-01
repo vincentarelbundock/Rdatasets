@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: U.S. Inbound/Outbound Migration Data, 1990-2017
-      :name: u.s.-inboundoutbound-migration-data-1990-2017
+      :name: usa_migration
 
    .. rubric:: Description
       :name: description

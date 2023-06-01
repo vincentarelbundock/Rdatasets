@@ -6,7 +6,7 @@
 
    .. rubric:: Interviewer ratings of respondent levels of political
       information
-      :name: interviewer-ratings-of-respondent-levels-of-political-information
+      :name: politicalInformation
 
    .. rubric:: Description
       :name: description

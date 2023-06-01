@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Edgeworth's Data on Death Rates in British Counties
-      :name: edgeworths-data-on-death-rates-in-british-counties
+      :name: EdgeworthDeaths
 
    .. rubric:: Description
       :name: description

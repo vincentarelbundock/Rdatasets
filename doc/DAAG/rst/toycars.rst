@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Toy Cars Data
-      :name: toy-cars-data
+      :name: toycars
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Dow Jones Industrial Average, 1885-Present
-      :name: dow-jones-industrial-average-1885-present
+      :name: DJIA
 
    .. rubric:: Description
       :name: description

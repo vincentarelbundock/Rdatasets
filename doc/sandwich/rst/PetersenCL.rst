@@ -6,7 +6,7 @@
 
    .. rubric:: Petersen's Simulated Data for Assessing Clustered
       Standard Errors
-      :name: petersens-simulated-data-for-assessing-clustered-standard-errors
+      :name: PetersenCL
 
    .. rubric:: Description
       :name: description

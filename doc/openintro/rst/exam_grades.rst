@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Exam and course grades for statistics students
-      :name: exam-and-course-grades-for-statistics-students
+      :name: exam_grades
 
    .. rubric:: Description
       :name: description

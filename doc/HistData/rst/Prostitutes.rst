@@ -6,7 +6,7 @@
 
    .. rubric:: Parent-Duchatelet's time-series data on the number of
       prostitutes in Paris
-      :name: parent-duchatelets-time-series-data-on-the-number-of-prostitutes-in-paris
+      :name: Prostitutes
 
    .. rubric:: Description
       :name: description

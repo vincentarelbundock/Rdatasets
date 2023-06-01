@@ -1,0 +1,83 @@
+<!DOCTYPE html><html><head><title>R: Mice Depletion Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Mice</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Mice'>Mice Depletion Data</h2>
+
+<h3>Description</h3>
+
+<p>Data from Kastenbaum and Lamphiear (1959).
+The table gives the number of depletions (deaths) in 657 litters of mice, classified by
+litter size and treatment.  This data set has become a classic in the analysis of
+contingency tables, yet unfortunately little information on the details of the
+experiment has been published.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Mice")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A frequency data frame with 30 observations on the following 4 variables, representing a 5 x 2 x 3 contingency table.
+</p>
+
+<dl>
+<dt><code>litter</code></dt><dd><p>litter size, a numeric vector</p>
+</dd>
+<dt><code>treatment</code></dt><dd><p>treatment, a factor with levels <code>A</code> <code>B</code></p>
+</dd>
+<dt><code>deaths</code></dt><dd><p>number of depletions, a factor with levels <code>0</code> <code>1</code> <code>2+</code></p>
+</dd>
+<dt><code>Freq</code></dt><dd><p>cell frequency, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Goodman, L. A. (1983)
+The analysis of dependence in cross-classifications having ordered categories, using log-linear models for frequencies and log-linear models for odds.
+<em>Biometrics</em>, 39, 149-160.
+</p>
+
+
+<h3>References</h3>
+
+<p>Kastenbaum, M. A. &amp; Lamphiear, D. E. (1959)
+Calculation of chi-square to calculate the no three-factor interaction hypothesis. <em>Biometrics</em>, 15, 107-115.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'> 
+data(Mice)
+# make a table
+ftable(mice.tab &lt;- xtabs(Freq ~ litter + treatment + deaths, data=Mice))
+
+#library(vcd)
+vcd::mosaic(mice.tab, shade=TRUE)
+
+</code></pre>
+
+
+</div>
+</body></html>

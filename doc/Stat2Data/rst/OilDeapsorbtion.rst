@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Effect of Ultrasound on Oil Deapsorbtion
-      :name: effect-of-ultrasound-on-oil-deapsorbtion
+      :name: OilDeapsorbtion
 
    .. rubric:: Description
       :name: description

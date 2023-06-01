@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Social Attitudes Survey
-      :name: social-attitudes-survey
+      :name: Socatt
 
    .. rubric:: Description
       :name: description

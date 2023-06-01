@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Penny Ages
-      :name: penny-ages
+      :name: penny_ages
 
    .. rubric:: Description
       :name: description

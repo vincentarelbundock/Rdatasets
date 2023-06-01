@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Extramarital Affairs Data
-      :name: extramarital-affairs-data
+      :name: Fair
 
    .. rubric:: Description
       :name: description

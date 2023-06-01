@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Remission Times for Acute Myelogenous Leukaemia
-      :name: remission-times-for-acute-myelogenous-leukaemia
+      :name: aml
 
    .. rubric:: Description
       :name: description

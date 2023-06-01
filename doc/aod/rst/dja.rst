@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Mortality of Djallonke Lambs in Senegal
-      :name: mortality-of-djallonke-lambs-in-senegal
+      :name: dja
 
    .. rubric:: Description
       :name: description

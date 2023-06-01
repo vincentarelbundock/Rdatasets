@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: Simulated data from a job training program
-      :name: simulated-data-from-a-job-training-program
+      :name: training_example
 
    .. rubric:: Description
       :name: description

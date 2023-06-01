@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Shrew Heart Rates at Stages of Sleep
-      :name: shrew-heart-rates-at-stages-of-sleep
+      :name: SleepingShrews
 
    .. rubric:: Description
       :name: description

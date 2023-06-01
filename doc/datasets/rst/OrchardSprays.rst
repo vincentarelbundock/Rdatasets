@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Potency of Orchard Sprays
-      :name: potency-of-orchard-sprays
+      :name: OrchardSprays
 
    .. rubric:: Description
       :name: description

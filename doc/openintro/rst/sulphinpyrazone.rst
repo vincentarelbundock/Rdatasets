@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Treating heart attacks
-      :name: treating-heart-attacks
+      :name: sulphinpyrazone
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Growth curve data on an orthdontic measurement
-      :name: growth-curve-data-on-an-orthdontic-measurement
+      :name: Orthodont
 
    .. rubric:: Description
       :name: description

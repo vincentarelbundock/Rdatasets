@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Number of Strikes in Us Manufacturing
-      :name: number-of-strikes-in-us-manufacturing
+      :name: StrikeNb
 
    .. rubric:: Description
       :name: description

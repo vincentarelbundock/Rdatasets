@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Absenteeism from school in New South Wales
-      :name: absenteeism-from-school-in-new-south-wales
+      :name: absenteeism
 
    .. rubric:: Description
       :name: description

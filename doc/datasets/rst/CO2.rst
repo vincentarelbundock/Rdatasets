@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Carbon Dioxide Uptake in Grass Plants
-      :name: carbon-dioxide-uptake-in-grass-plants
+      :name: CO2
 
    .. rubric:: Description
       :name: description

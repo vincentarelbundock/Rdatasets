@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Data from HIV information experiment in Thornton (2008)
-      :name: data-from-hiv-information-experiment-in-thornton-2008
+      :name: thornton_hiv
 
    .. rubric:: Description
       :name: description

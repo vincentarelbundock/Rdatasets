@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Results from an Experiment on Plant Growth
-      :name: results-from-an-experiment-on-plant-growth
+      :name: PlantGrowth
 
    .. rubric:: Description
       :name: description

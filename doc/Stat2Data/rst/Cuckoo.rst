@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Measurements of Cuckoo Eggs
-      :name: measurements-of-cuckoo-eggs
+      :name: Cuckoo
 
    .. rubric:: Description
       :name: description

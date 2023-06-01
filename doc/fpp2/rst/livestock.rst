@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Livestock (sheep) in Asia, 1961-2007.
-      :name: livestock-sheep-in-asia-1961-2007.
+      :name: livestock
 
    .. rubric:: Description
       :name: description

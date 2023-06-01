@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Assay of nitrendipene
-      :name: assay-of-nitrendipene
+      :name: Nitrendipene
 
    .. rubric:: Description
       :name: description

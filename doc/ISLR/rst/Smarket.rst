@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: S&P Stock Market Data
-      :name: sp-stock-market-data
+      :name: Smarket
 
    .. rubric:: Description
       :name: description

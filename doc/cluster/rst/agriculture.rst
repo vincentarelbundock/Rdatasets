@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: European Union Agricultural Workforces
-      :name: european-union-agricultural-workforces
+      :name: agriculture
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Attitudes Towards Swahili in Kenyan Schools
-      :name: attitudes-towards-swahili-in-kenyan-schools
+      :name: Swahili
 
    .. rubric:: Description
       :name: description

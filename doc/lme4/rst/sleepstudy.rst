@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Reaction times in a sleep deprivation study
-      :name: reaction-times-in-a-sleep-deprivation-study
+      :name: sleepstudy
 
    .. rubric:: Description
       :name: description

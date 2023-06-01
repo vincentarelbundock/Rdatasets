@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Choice of Brand for Yogurts
-      :name: choice-of-brand-for-yogurts
+      :name: Yogurt
 
    .. rubric:: Description
       :name: description

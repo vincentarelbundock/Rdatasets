@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Television Rights for Olympic Games
-      :name: television-rights-for-olympic-games
+      :name: OlympicTV
 
    .. rubric:: Description
       :name: description

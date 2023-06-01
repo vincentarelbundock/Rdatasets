@@ -6,7 +6,7 @@
 
    .. rubric:: Data from National Supported Work Demonstration and PSID,
       as analyzed by Dehejia and Wahba (1999).
-      :name: data-from-national-supported-work-demonstration-and-psid-as-analyzed-by-dehejia-and-wahba-1999.
+      :name: lalonde
 
    .. rubric:: Description
       :name: description

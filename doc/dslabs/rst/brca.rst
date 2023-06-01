@@ -6,7 +6,7 @@
 
    .. rubric:: Breast Cancer Wisconsin Diagnostic Dataset from UCI
       Machine Learning Repository
-      :name: breast-cancer-wisconsin-diagnostic-dataset-from-uci-machine-learning-repository
+      :name: brca
 
    .. rubric:: Description
       :name: description
@@ -19,7 +19,7 @@
 
    ::
 
-      data(brca)
+      brca
 
    .. rubric:: Format
       :name: format
@@ -81,7 +81,6 @@
 
    ::
 
-      data(brca)
       table(brca$y)
       dim(brca$x)
       head(brca$x)

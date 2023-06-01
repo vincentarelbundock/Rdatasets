@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: The Stormer Viscometer Data
-      :name: the-stormer-viscometer-data
+      :name: stormer
 
    .. rubric:: Description
       :name: description

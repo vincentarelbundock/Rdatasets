@@ -4,8 +4,8 @@
    LOTI R Documentation
    ==== ===============
 
-   .. rubric:: Land-Ocean Temperature Index, 1880-2020
-      :name: land-ocean-temperature-index-1880-2020
+   .. rubric:: Land-Ocean Temperature Index, 1880-2022
+      :name: LOTI
 
    .. rubric:: Description
       :name: description
@@ -24,7 +24,7 @@
    .. rubric:: Format
       :name: format
 
-   A data frame with 1,692 observations on the following 2 variables.
+   A data frame with 1,716 observations on the following 2 variables.
 
    ``date``
       a date, mostly to contain information for the year and month

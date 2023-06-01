@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Household Tasks Performed by Husbands and Wives</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>HouseTasks</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='HouseTasks'>
+Household Tasks Performed by Husbands and Wives
+</h2>
+
+<h3>Description</h3>
+
+<p>A 13 x 4 table of frequencies of household tasks performed by couples,
+either by the 'Husband', 'Wife', 'Alternating' or 'Jointly'.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("HouseTasks")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>The format is:
+'table' int [1:13, 1:4] 36 11 24 51 13 1 1 14 20 46 ...
+- attr(*, &quot;dimnames&quot;)=List of 2
+..$ Task: chr [1:13] &quot;Breakfast&quot; &quot;Dinner&quot; &quot;Dishes&quot; &quot;Driving&quot; ...
+..$ Who : chr [1:4] &quot;Alternating&quot; &quot;Husband&quot; &quot;Jointly&quot; &quot;Wife&quot;
+</p>
+
+
+<h3>Source</h3>
+
+<p>This data set was taken from <code>housetasks</code>, a 
+13 x 4 data.frame.
+In this table version, the rows and columns were sorted alphabetically
+(and a typo was corrected).
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(HouseTasks)
+## maybe str(HouseTasks) 
+
+chisq.test(HouseTasks)
+
+# mosaic plot, illustrating some tweaks to handle overlapping labels
+require(vcd)
+mosaic(HouseTasks, shade = TRUE,
+       labeling = labeling_border(rot_labels = c(45,0, 0, 0), 
+                                  offset_label =c(.5,5,0, 0),
+                                  varnames = c(FALSE, TRUE),
+                                  just_labels=c("center","right"),
+                                  tl_varnames = FALSE),
+       legend = FALSE)
+
+# use seriation package to permute rows &amp; cols using correspondence analysis
+if(require(seriation)) {
+order &lt;- seriate(HouseTasks, method = "CA")
+# the permuted row and column labels
+rownames(HouseTasks)[order[[1]]]
+colnames(HouseTasks)[order[[2]]]
+
+# do the permutation
+HT_perm &lt;- permute(HouseTasks, order, margin=1)
+
+mosaic(HT_perm, shade = TRUE,
+       labeling = labeling_border(rot_labels = c(45,0, 0, 0), 
+                                  offset_label =c(.5,5,0, 0),
+                                  varnames = c(FALSE, TRUE),
+                                  just_labels=c("center","right"),
+                                  tl_varnames = FALSE),
+       legend = FALSE)
+}
+</code></pre>
+
+
+</div>
+</body></html>

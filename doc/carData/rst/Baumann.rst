@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Methods of Teaching Reading Comprehension
-      :name: methods-of-teaching-reading-comprehension
+      :name: Baumann
 
    .. rubric:: Description
       :name: description

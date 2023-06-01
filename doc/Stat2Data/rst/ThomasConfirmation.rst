@@ -5,7 +5,7 @@
    ================== ===============
 
    .. rubric:: US Senate Votes on Clarence Thomas Confirmation
-      :name: us-senate-votes-on-clarence-thomas-confirmation
+      :name: ThomasConfirmation
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Norwegian Attitudes toward European Integration
       (2021-2022)
-      :name: norwegian-attitudes-toward-european-integration-2021-2022
+      :name: ESS10NO
 
    .. rubric:: Description
       :name: description
@@ -52,7 +52,7 @@
       a population size weight
 
    ``anweight``
-      an analaysis weight
+      an analysis weight
 
    ``prob``
       the sampling probability

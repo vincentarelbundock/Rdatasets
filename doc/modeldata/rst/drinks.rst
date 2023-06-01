@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Sample time series data
-      :name: sample-time-series-data
+      :name: drinks
 
    .. rubric:: Description
       :name: description

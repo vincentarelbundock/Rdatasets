@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Stock and Watson CPS Data Sets
-      :name: stock-and-watson-cps-data-sets
+      :name: CPSSW
 
    .. rubric:: Description
       :name: description

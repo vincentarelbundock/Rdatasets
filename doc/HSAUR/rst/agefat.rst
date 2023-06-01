@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Total Body Composision Data
-      :name: total-body-composision-data
+      :name: agefat
 
    .. rubric:: Description
       :name: description

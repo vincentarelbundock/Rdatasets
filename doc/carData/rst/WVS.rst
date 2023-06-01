@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: World Values Surveys
-      :name: world-values-surveys
+      :name: WVS
 
    .. rubric:: Description
       :name: description

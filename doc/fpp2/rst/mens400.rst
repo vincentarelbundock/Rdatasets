@@ -6,7 +6,7 @@
 
    .. rubric:: Winning times in Olympic men's 400m track final.
       1896-2016.
-      :name: winning-times-in-olympic-mens-400m-track-final.-1896-2016.
+      :name: mens400
 
    .. rubric:: Description
       :name: description

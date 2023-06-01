@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Estimation of Gasoline Yields from Crude Oil
-      :name: estimation-of-gasoline-yields-from-crude-oil
+      :name: GasolineYield
 
    .. rubric:: Description
       :name: description

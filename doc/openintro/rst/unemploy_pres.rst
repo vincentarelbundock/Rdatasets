@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: President's party performance and unemployment rate
-      :name: presidents-party-performance-and-unemployment-rate
+      :name: unemploy_pres
 
    .. rubric:: Description
       :name: description

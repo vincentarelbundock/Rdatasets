@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Kiwi Shading Data
-      :name: kiwi-shading-data
+      :name: kiwishade
 
    .. rubric:: Description
       :name: description

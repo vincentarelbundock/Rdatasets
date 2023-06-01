@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: How important is it to ask pointed questions?
-      :name: how-important-is-it-to-ask-pointed-questions
+      :name: ask
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Pew religion and income survey
-      :name: pew-religion-and-income-survey
+      :name: relig_income
 
    .. rubric:: Description
       :name: description

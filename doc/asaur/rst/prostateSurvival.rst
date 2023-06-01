@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: prostateSurvival
-      :name: prostatesurvival
+      :name: prostateSurvival
 
    .. rubric:: Description
       :name: description

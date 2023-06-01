@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: data from Exercise 5.6, p146
-      :name: data-from-exercise-5.6-p146
+      :name: stddiag
 
    .. rubric:: Description
       :name: description

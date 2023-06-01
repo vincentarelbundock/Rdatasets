@@ -1,0 +1,73 @@
+.. container::
+
+   ======== ===============
+   Vote1980 R Documentation
+   ======== ===============
+
+   .. rubric:: Race and Politics in the 1980 Presidential Vote
+      :name: Vote1980
+
+   .. rubric:: Description
+      :name: description
+
+   Data from the 1982 General Social Survey on votes in the 1980 U.S.
+   presidential election in relation to race and political conservatism.
+
+   .. rubric:: Usage
+      :name: usage
+
+   ::
+
+      data(Vote1980)
+
+   .. rubric:: Format
+      :name: format
+
+   A frequency data frame representing a 2 x 7 x 2 table, with 28
+   observations on the following 4 variables.
+
+   ``race``
+      a factor with levels ``NonWhite`` ``White``
+
+   ``conservatism``
+      a factor with levels ``1`` ``2`` ``3`` ``4`` ``5`` ``6`` ``7``,
+      ``1``\ =most liberal, ``7``\ =most conservative
+
+   ``votefor``
+      a factor with levels ``Carter`` ``Reagan``; ``Carter`` represents
+      Jimmy Carter or other.
+
+   ``Freq``
+      a numeric vector
+
+   .. rubric:: Details
+      :name: details
+
+   The data contains a number of sampling zeros in the frequencies of
+   NonWhites voting for Ronald Reagan.
+
+   .. rubric:: Source
+      :name: source
+
+   Clogg, C. & Shockey, J. W. (1988). In Nesselroade, J. R. & Cattell,
+   R. B. (ed.) Multivariate Analysis of Discrete Data, *Handbook of
+   Multivariate Experimental Psychology*, New York: Plenum Press.
+
+   .. rubric:: References
+      :name: references
+
+   Agresti, A. (1990) *Categorical Data Analysis*, Table 4.12 New York:
+   Wiley-Interscience.
+
+   Friendly, M. (2000) *Visualizing Categorical Data*, Example 7.5 Cary,
+   NC: SAS Institute.
+
+   .. rubric:: Examples
+      :name: examples
+
+   ::
+
+      data(Vote1980)
+      fourfold(xtabs(Freq ~ race + votefor + conservatism, 
+        data=Vote1980), 
+        mfrow=c(2,4))

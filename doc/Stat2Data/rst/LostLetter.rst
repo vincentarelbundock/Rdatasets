@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Return Rates for "Lost" Letters
-      :name: return-rates-for-lost-letters
+      :name: LostLetter
 
    .. rubric:: Description
       :name: description

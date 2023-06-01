@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Tail Lengths of Hawks (Unstacked)
-      :name: tail-lengths-of-hawks-unstacked
+      :name: HawkTail2
 
    .. rubric:: Description
       :name: description

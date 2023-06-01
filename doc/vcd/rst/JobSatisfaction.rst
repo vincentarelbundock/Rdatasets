@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Job Satisfaction Data
-      :name: job-satisfaction-data
+      :name: JobSatisfaction
 
    .. rubric:: Description
       :name: description

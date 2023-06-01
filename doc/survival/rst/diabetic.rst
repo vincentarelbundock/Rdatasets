@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Ddiabetic retinopathy
-      :name: ddiabetic-retinopathy
+      :name: diabetic
 
    .. rubric:: Description
       :name: description

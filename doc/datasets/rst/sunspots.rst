@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Monthly Sunspot Numbers, 1749–1983
-      :name: monthly-sunspot-numbers-17491983
+      :name: sunspots
 
    .. rubric:: Description
       :name: description

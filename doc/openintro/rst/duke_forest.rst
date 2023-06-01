@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Sale prices of houses in Duke Forest, Durham, NC
-      :name: sale-prices-of-houses-in-duke-forest-durham-nc
+      :name: duke_forest
 
    .. rubric:: Description
       :name: description

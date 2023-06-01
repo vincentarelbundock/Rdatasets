@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Randomized Trial of Six Therapies for Scurvy
-      :name: randomized-trial-of-six-therapies-for-scurvy
+      :name: scurvy
 
    .. rubric:: Description
       :name: description

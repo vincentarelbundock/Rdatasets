@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: International visitors to Australia
-      :name: international-visitors-to-australia
+      :name: austa
 
    .. rubric:: Description
       :name: description

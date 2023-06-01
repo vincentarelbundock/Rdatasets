@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Oxygen uptake versus mechanical power, for humans
-      :name: oxygen-uptake-versus-mechanical-power-for-humans
+      :name: humanpower
 
    .. rubric:: Description
       :name: description

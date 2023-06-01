@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Gasoline Consumption Data
-      :name: gasoline-consumption-data
+      :name: OECDGas
 
    .. rubric:: Description
       :name: description

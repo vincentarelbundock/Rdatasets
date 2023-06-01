@@ -1,0 +1,154 @@
+<!DOCTYPE html><html><head><title>R: Occupational Mobility in Three Countries</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Yamaguchi87</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Yamaguchi87'>Occupational Mobility in Three Countries</h2>
+
+<h3>Description</h3>
+
+<p>Yamaguchi (1987) presented this three-way frequency table,
+cross-classifying occupational categories of sons and fathers
+in the United States, United Kingdom and Japan.  This data set has
+become a classic for models comparing two-way mobility tables across
+layers corresponding to countries, groups or time (e.g.,
+Goodman and Hout, 1998; Xie, 1992).
+</p>
+<p>The US data were derived from the 1973 OCG-II survey; those
+for the UK from the 1972 Oxford Social Mobility Survey; those
+for Japan came from the 1975 Social Stratification and Mobility
+survey. They pertain to men aged 20-64.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Yamaguchi87)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A frequency data frame with 75 observations on the following 4 variables. The total sample size is 28887.
+</p>
+
+<dl>
+<dt><code>Son</code></dt><dd><p>a factor with levels <code>UpNM</code> <code>LoNM</code> <code>UpM</code> <code>LoM</code> <code>Farm</code></p>
+</dd>
+<dt><code>Father</code></dt><dd><p>a factor with levels <code>UpNM</code> <code>LoNM</code> <code>UpM</code> <code>LoM</code> <code>Farm</code></p>
+</dd>
+<dt><code>Country</code></dt><dd><p>a factor with levels <code>US</code> <code>UK</code> <code>Japan</code></p>
+</dd>
+<dt><code>Freq</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Five status categories &ndash; upper and lower
+nonmanuals (<code>UpNM</code>, <code>LoNM</code>), 
+upper and lower manuals (<code>UpM</code>, <code>LoM</code>), 
+and <code>Farm</code>) are used for both fathers' occupations and
+sons' occupations. 
+</p>
+<p>Upper nonmanuals are professionals,
+managers, and officials; lower
+nonmanuals are proprietors, sales workers, and
+clerical workers; upper manuals are skilled
+workers; lower manuals are semi-skilled and
+unskilled nonfarm workers; and farm workers
+are farmers and farm laborers.
+</p>
+<p>Some of the models from Xie (1992), Table 1, are fit in <code>demo(yamaguchi-xie)</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Yamaguchi, K. (1987). 
+Models for comparing mobility tables: toward parsimony and substance, 
+<em>American Sociological Review</em>, vol. 52 (Aug.), 482-494, Table 1
+</p>
+
+
+<h3>References</h3>
+
+<p>Goodman, L. A. and Hout, M. (1998).
+Statistical Methods and Graphical Displays for Analyzing How the Association Between Two Qualitative Variables Differs Among Countries, Among Groups, Or Over Time: 
+A Modified Regression-Type Approach.
+<em>Sociological Methodology</em>, 28 (1), 175-230.
+</p>
+<p>Xie, Yu (1992).
+The log-multiplicative layer effect model for comparing mobility tables.
+<em>American Sociological Review</em>, 57 (June), 380-395.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Yamaguchi87)
+# reproduce Table 1
+structable(~ Father + Son + Country, Yamaguchi87)
+# create table form
+Yama.tab &lt;- xtabs(Freq ~ Son + Father + Country, data=Yamaguchi87)
+
+# define mosaic labeling_args for convenient reuse in 3-way displays
+largs &lt;- list(rot_labels=c(right=0), offset_varnames = c(right = 0.6), 
+              offset_labels = c(right = 0.2),
+              set_varnames = c(Son="Son's status", Father="Father's status") 
+             )
+
+###################################
+# Fit some models &amp; display mosaics
+  
+# Mutual independence
+yama.indep &lt;- glm(Freq ~ Son + Father + Country, 
+  data=Yamaguchi87, 
+  family=poisson)
+anova(yama.indep)
+
+mosaic(yama.indep, ~Son+Father, main="[S][F] ignoring country")
+
+mosaic(yama.indep, ~Country + Son + Father, condvars="Country",
+       labeling_args=largs, 
+       main='[S][F][C] Mutual independence') 
+
+# no association between S and F given country ('perfect mobility')
+# asserts same associations for all countries
+yama.noRC &lt;- glm(Freq ~ (Son + Father) * Country, 
+  data=Yamaguchi87, 
+  family=poisson)
+anova(yama.noRC)
+
+mosaic(yama.noRC, ~~Country + Son + Father, condvars="Country", 
+       labeling_args=largs, 
+       main="[SC][FC] No [SF] (perfect mobility)")
+
+# ignore diagonal cells
+yama.quasi &lt;- update(yama.noRC, ~ . + Diag(Son,Father):Country)
+anova(yama.quasi)
+
+mosaic(yama.quasi, ~Son + Father, main="Quasi [S][F]")
+
+## see also:
+# demo(yamaguchi-xie)
+##
+</code></pre>
+
+
+</div>
+</body></html>

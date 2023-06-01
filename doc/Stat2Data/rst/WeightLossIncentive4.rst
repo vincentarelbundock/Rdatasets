@@ -5,7 +5,7 @@
    ==================== ===============
 
    .. rubric:: Do Financial Incentives Improve Weight Loss? (4 Months)
-      :name: do-financial-incentives-improve-weight-loss-4-months
+      :name: WeightLossIncentive4
 
    .. rubric:: Description
       :name: description

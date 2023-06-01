@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Cavendish's Determinations of the Density of the Earth
-      :name: cavendishs-determinations-of-the-density-of-the-earth
+      :name: Cavendish
 
    .. rubric:: Description
       :name: description

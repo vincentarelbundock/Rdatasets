@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: Random sample of adult male heights
-      :name: random-sample-of-adult-male-heights
+      :name: male_heights_fcid
 
    .. rubric:: Description
       :name: description

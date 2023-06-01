@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Daily Log Returns on Siemens Share Price
-      :name: daily-log-returns-on-siemens-share-price
+      :name: siemens
 
    .. rubric:: Description
       :name: description

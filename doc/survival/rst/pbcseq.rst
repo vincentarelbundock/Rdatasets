@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Mayo Clinic Primary Biliary Cirrhosis, sequential data
-      :name: mayo-clinic-primary-biliary-cirrhosis-sequential-data
+      :name: pbcseq
 
    .. rubric:: Description
       :name: description

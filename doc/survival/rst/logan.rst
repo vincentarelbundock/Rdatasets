@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Data from the 1972-78 GSS data used by Logan
-      :name: data-from-the-1972-78-gss-data-used-by-logan
+      :name: logan
 
    .. rubric:: Description
       :name: description

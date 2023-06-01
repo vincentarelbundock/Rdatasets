@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Acceleration Due to Gravity
-      :name: acceleration-due-to-gravity
+      :name: gravity
 
    .. rubric:: Description
       :name: description

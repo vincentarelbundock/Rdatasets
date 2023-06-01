@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Moving Wet Objects with Wrinkled Fingers
-      :name: moving-wet-objects-with-wrinkled-fingers
+      :name: Wrinkle
 
    .. rubric:: Description
       :name: description

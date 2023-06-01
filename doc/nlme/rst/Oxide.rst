@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Variability in Semiconductor Manufacturing
-      :name: variability-in-semiconductor-manufacturing
+      :name: Oxide
 
    .. rubric:: Description
       :name: description

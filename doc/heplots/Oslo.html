@@ -1,0 +1,133 @@
+<!DOCTYPE html><html><head><title>R: Oslo Transect Subset Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Oslo</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Oslo'>
+Oslo Transect Subset Data
+</h2>
+
+<h3>Description</h3>
+
+<p>The Oslo  data set contains chemical concentrations of
+332 samples of different plant species collected along a 120 km transect running through the city of Oslo, Norway.
+It is a subset of the <code>OsloTransect</code> data provided by the
+<code>rrcov</code> package.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Oslo)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 332 observations on the following 14 variables.
+</p>
+
+<dl>
+<dt><code>site</code></dt><dd><p>transect site ID, a factor with levels <code>102</code> <code>103</code> <code>104</code> <code>105</code> <code>106</code> <code>107</code> <code>108</code> <code>109</code> <code>111</code> <code>112</code> <code>113</code> <code>114</code> <code>115</code> <code>116</code> <code>117</code> <code>118</code> <code>119</code> <code>121</code> <code>122</code> <code>123</code> <code>124</code> <code>125</code> <code>126</code> <code>127</code> <code>128</code> <code>129</code> <code>131</code> <code>132</code> <code>133</code> <code>134</code> <code>135</code> <code>136</code> <code>138</code> <code>139</code> <code>141</code> <code>142</code> <code>143</code> <code>144</code></p>
+</dd>
+<dt><code>XC</code></dt><dd><p>X coordinate, a numeric vector</p>
+</dd>
+<dt><code>YC</code></dt><dd><p>Y coordinate, a numeric vector</p>
+</dd>
+<dt><code>forest</code></dt><dd><p>forest type, a factor with levels <code>birspr</code> <code>mixdec</code> <code>pine</code> <code>sprbir</code> <code>sprpin</code> <code>spruce</code></p>
+</dd>
+<dt><code>weather</code></dt><dd><p>weather type, a factor with levels <code>cloud</code> <code>moist</code> <code>nice</code> <code>rain</code></p>
+</dd>
+<dt><code>litho</code></dt><dd><p>lithological type, a factor with levels <code>camsed</code> (Cambro-Silurian sedimentary), 
+<code>gneis_o</code> (Precambrian gneisses - Oslo), <code>gneis_r</code> (- Randsfjord), 
+<code>magm</code> (Magmatic rocks)</p>
+</dd>
+<dt><code>altitude</code></dt><dd><p>altitude, a numeric vector</p>
+</dd>
+<dt><code>Cu</code></dt><dd><p>Copper, a numeric vector</p>
+</dd>
+<dt><code>Fe</code></dt><dd><p>Iron, a numeric vector</p>
+</dd>
+<dt><code>K</code></dt><dd><p>Potassium, a numeric vector</p>
+</dd>
+<dt><code>Mg</code></dt><dd><p>Magnesium, a numeric vector</p>
+</dd>
+<dt><code>Mn</code></dt><dd><p>Manganese, a numeric vector</p>
+</dd>
+<dt><code>P</code></dt><dd><p>Lead, a numeric vector</p>
+</dd>
+<dt><code>Zn</code></dt><dd><p>Zinc, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The <code>OsloTransect</code> contains 360 observations, with 9 observations per site.
+Only 7 chemical elements were retained from the 25 contained in the 
+<code>OsloTransect</code> data,
+and these were all log-transformed, following Todorov and Filzmoser (2009).
+</p>
+<p>Only complete cases on these variables were retained, and two lithological types of
+low frequency were removed,
+leaving 332 observations. 
+</p>
+
+
+<h3>Source</h3>
+
+<p>Reimann, C., Arnoldussen, A., Boyd, R., Finne, T.E., Koller, F., Nordgulen, Oe., And Englmaier, P. (2007) 
+Element contents in leaves of four plant species (birch, mountain ash, fern and spruce) along anthropogenic and 
+geogenic concentration gradients, 
+<em>The Science of the Total Environment</em>, 377, 416-433.
+</p>
+
+
+<h3>References</h3>
+
+<p>Todorov V. and Filzmoser P. (2009) 
+Robust statistic for the one-way MANOVA, submitted to the <em>Journal of Environmetrics</em>. 
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Oslo)
+table(Oslo$litho)
+
+Oslo.mod &lt;- lm(cbind(Cu, K, Mg, Mn, P, Zn) ~ litho, data=Oslo)
+Anova(Oslo.mod)
+
+heplot(Oslo.mod, var=c("Cu", "Mn"))
+pairs(Oslo.mod)
+
+## Not run: 
+if(require(candisc)) {
+  Oslo.can &lt;- candisc(Oslo.mod)
+  Oslo.can
+  heplot(Oslo.can)
+  if(requireNamespace("rgl")){
+    heplot3d(Oslo.can, shade=TRUE, wire=FALSE, alpha=0.5, var.col="red")
+  }
+}
+
+## End(Not run)
+
+</code></pre>
+
+
+</div>
+</body></html>

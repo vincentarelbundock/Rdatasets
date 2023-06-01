@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: UK Quarterly Gas Consumption
-      :name: uk-quarterly-gas-consumption
+      :name: UKgas
 
    .. rubric:: Description
       :name: description

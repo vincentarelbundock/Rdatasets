@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Half-hourly electricity demand
-      :name: half-hourly-electricity-demand
+      :name: taylor
 
    .. rubric:: Description
       :name: description

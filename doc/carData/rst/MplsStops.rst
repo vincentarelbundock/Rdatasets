@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Minneapolis Police Department 2017 Stop Data
-      :name: minneapolis-police-department-2017-stop-data
+      :name: MplsStops
 
    .. rubric:: Description
       :name: description

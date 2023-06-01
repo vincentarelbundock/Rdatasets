@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Electrical equipment manufactured in the Euro area.
-      :name: electrical-equipment-manufactured-in-the-euro-area.
+      :name: elecequip
 
    .. rubric:: Description
       :name: description

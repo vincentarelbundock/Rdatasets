@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Simulated juror data set
-      :name: simulated-juror-data-set
+      :name: jury
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Extreme Data examples
-      :name: extreme-data-examples
+      :name: xtrData
 
    .. rubric:: Description
       :name: description

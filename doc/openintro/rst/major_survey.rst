@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Survey of Duke students and the area of their major
-      :name: survey-of-duke-students-and-the-area-of-their-major
+      :name: major_survey
 
    .. rubric:: Description
       :name: description

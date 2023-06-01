@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: Sulfur Dioxide Emissions, 1980-2020
-      :name: sulfur-dioxide-emissions-1980-2020
+      :name: so2concentrations
 
    .. rubric:: Description
       :name: description

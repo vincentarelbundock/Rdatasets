@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: National Longitudinal Survey of Young Working Women
-      :name: national-longitudinal-survey-of-young-working-women
+      :name: nlswork
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Quarterly Australian Portland Cement production
-      :name: quarterly-australian-portland-cement-production
+      :name: qcement
 
    .. rubric:: Description
       :name: description

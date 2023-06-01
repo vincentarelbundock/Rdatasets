@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: House of Representatives Voting Data
-      :name: house-of-representatives-voting-data
+      :name: voting
 
    .. rubric:: Description
       :name: description

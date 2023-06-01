@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Breast cancer data sets used in Royston and Altman (2013)
-      :name: breast-cancer-data-sets-used-in-royston-and-altman-2013
+      :name: gbsg
 
    .. rubric:: Description
       :name: description

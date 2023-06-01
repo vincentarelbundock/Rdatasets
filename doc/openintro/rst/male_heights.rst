@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Sample of 100 male heights
-      :name: sample-of-100-male-heights
+      :name: male_heights
 
    .. rubric:: Description
       :name: description

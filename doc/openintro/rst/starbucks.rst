@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Starbucks nutrition
-      :name: starbucks-nutrition
+      :name: starbucks
 
    .. rubric:: Description
       :name: description

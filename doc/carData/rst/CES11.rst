@@ -6,7 +6,7 @@
 
    .. rubric:: 2011 Canadian National Election Study, With Attitude
       Toward Abortion
-      :name: canadian-national-election-study-with-attitude-toward-abortion
+      :name: CES11
 
    .. rubric:: Description
       :name: description

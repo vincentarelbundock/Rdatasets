@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Oil Investment
-      :name: oil-investment
+      :name: Oil
 
    .. rubric:: Description
       :name: description

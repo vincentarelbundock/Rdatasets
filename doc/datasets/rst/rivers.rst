@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Lengths of Major North American Rivers
-      :name: lengths-of-major-north-american-rivers
+      :name: rivers
 
    .. rubric:: Description
       :name: description

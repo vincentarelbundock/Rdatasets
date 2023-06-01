@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Diagnosis of Multiple Sclerosis
-      :name: diagnosis-of-multiple-sclerosis
+      :name: MSPatients
 
    .. rubric:: Description
       :name: description

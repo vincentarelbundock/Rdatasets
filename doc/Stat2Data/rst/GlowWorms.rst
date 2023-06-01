@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Female Glow-worms
-      :name: female-glow-worms
+      :name: GlowWorms
 
    .. rubric:: Description
       :name: description

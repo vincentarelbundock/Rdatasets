@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Auto Data Set
-      :name: auto-data-set
+      :name: Auto
 
    .. rubric:: Description
       :name: description

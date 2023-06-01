@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: CAA Final Four by Seed (Short Version through 2010)
-      :name: caa-final-four-by-seed-short-version-through-2010
+      :name: FinalFourShort
 
    .. rubric:: Description
       :name: description

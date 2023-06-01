@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Daily CO2 Measurements in Germany
-      :name: daily-co2-measurements-in-germany
+      :name: CO2Germany
 
    .. rubric:: Description
       :name: description

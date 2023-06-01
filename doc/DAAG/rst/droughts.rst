@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Periods Between Rain Events
-      :name: periods-between-rain-events
+      :name: droughts
 
    .. rubric:: Description
       :name: description

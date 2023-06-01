@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Rheumatoid Arthritis Clinical Trial
-      :name: rheumatoid-arthritis-clinical-trial
+      :name: arthritis
 
    .. rubric:: Description
       :name: description

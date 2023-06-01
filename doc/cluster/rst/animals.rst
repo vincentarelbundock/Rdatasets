@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Attributes of Animals
-      :name: attributes-of-animals
+      :name: animals
 
    .. rubric:: Description
       :name: description

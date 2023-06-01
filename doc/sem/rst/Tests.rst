@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Six Mental Tests
-      :name: six-mental-tests
+      :name: Tests
 
    .. rubric:: Description
       :name: description

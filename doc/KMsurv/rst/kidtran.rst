@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: data from Section 1.7
-      :name: data-from-section-1.7
+      :name: kidtran
 
    .. rubric:: Description
       :name: description

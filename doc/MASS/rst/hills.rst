@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Record Times in Scottish Hill Races
-      :name: record-times-in-scottish-hill-races
+      :name: hills
 
    .. rubric:: Description
       :name: description

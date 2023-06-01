@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: United States Recessions, 1855-present
-      :name: united-states-recessions-1855-present
+      :name: recessions
 
    .. rubric:: Description
       :name: description

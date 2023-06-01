@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Survey of Labour and Income Dynamics
-      :name: survey-of-labour-and-income-dynamics
+      :name: SLID
 
    .. rubric:: Description
       :name: description

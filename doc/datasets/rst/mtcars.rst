@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Motor Trend Car Road Tests
-      :name: motor-trend-car-road-tests
+      :name: mtcars
 
    .. rubric:: Description
       :name: description

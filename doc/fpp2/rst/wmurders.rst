@@ -6,7 +6,7 @@
 
    .. rubric:: Annual female murder rate (per 100,000 standard
       population) in the USA. 1950-2004.
-      :name: annual-female-murder-rate-per-100000-standard-population-in-the-usa.-1950-2004.
+      :name: wmurders
 
    .. rubric:: Description
       :name: description

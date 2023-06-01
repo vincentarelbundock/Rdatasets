@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: Baseball Game Times of One Day in 2017
-      :name: baseball-game-times-of-one-day-in-2017
+      :name: BaseballTimes2017
 
    .. rubric:: Description
       :name: description

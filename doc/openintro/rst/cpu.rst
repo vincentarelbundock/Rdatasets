@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: CPU's Released between 2010 and 2020.
-      :name: cpus-released-between-2010-and-2020.
+      :name: cpu
 
    .. rubric:: Description
       :name: description

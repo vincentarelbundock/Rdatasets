@@ -5,7 +5,7 @@
    ==================== ===============
 
    .. rubric:: Standard abbreviations for states of the United States
-      :name: standard-abbreviations-for-states-of-the-united-states
+      :name: USstateAbbreviations
 
    .. rubric:: Description
       :name: description

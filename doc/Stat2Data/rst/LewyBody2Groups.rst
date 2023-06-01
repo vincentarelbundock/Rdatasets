@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Lewy Bodies and Dimentia
-      :name: lewy-bodies-and-dimentia
+      :name: LewyBody2Groups
 
    .. rubric:: Description
       :name: description

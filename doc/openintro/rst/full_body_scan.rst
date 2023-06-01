@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Poll about use of full-body airport scanners
-      :name: poll-about-use-of-full-body-airport-scanners
+      :name: full_body_scan
 
    .. rubric:: Description
       :name: description

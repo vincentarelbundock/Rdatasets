@@ -1,0 +1,111 @@
+<!DOCTYPE html><html><head><title>R: British Social Mobility from Glass(1954)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Glass</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Glass'>British Social Mobility from Glass(1954)</h2>
+
+<h3>Description</h3>
+
+<p>Glass(1954) gave this 5 x 5 table on the occupations of 3500 British fathers and their sons.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Glass")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A frequency data frame with 25 observations on the following 3 variables representing a 5 x 5 table with 3500 cases.
+</p>
+
+<dl>
+<dt><code>father</code></dt><dd><p>a factor with levels <code>Managerial</code> <code>Professional</code> <code>Skilled</code> <code>Supervisory</code> <code>Unskilled</code></p>
+</dd>
+<dt><code>son</code></dt><dd><p>a factor with levels <code>Managerial</code> <code>Professional</code> <code>Skilled</code> <code>Supervisory</code> <code>Unskilled</code></p>
+</dd>
+<dt><code>Freq</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The occupational categories in order of status are:
+(1) Professional &amp; High Administrative
+(2) Managerial, Executive &amp; High Supervisory
+(3) Low Inspectional &amp; Supervisory
+(4) Routine Nonmanual &amp; Skilled Manual
+(5) Semi- &amp; Unskilled Manual
+</p>
+<p>However, to make the point that factors are ordered alphabetically by default,
+Friendly &amp; Meyer (2016) introduce this data set in the form given here. 
+</p>
+
+
+<h3>Source</h3>
+
+<p>Glass, D. V. (1954), <em>Social Mobility in Britain</em>. The Free Press.
+</p>
+
+
+<h3>References</h3>
+
+<p>Bishop, Y. M. M. and Fienberg, S. E. and Holland, P. W. (1975).
+<em>Discrete Multivariate Analysis: Theory and Practice</em>, MIT Press.
+</p>
+<p>Friendly, M. and Meyer, D. (2016). 
+<em>Discrete Data Analysis with R: Visualization and Modeling Techniques for Categorical and Count Data</em>. 
+Boca Raton, FL: Chapman &amp; Hall/CRC. <a href="http://ddar.datavis.ca">http://ddar.datavis.ca</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Glass)
+glass.tab &lt;- xtabs(Freq ~ father + son, data=Glass)
+
+largs &lt;- list(set_varnames=list(father="Father's Occupation", 
+                                son="Son's Occupation"),
+              abbreviate=10)
+gargs &lt;- list(interpolate=c(1,2,4,8))
+
+mosaic(glass.tab, 
+  shade=TRUE, 
+  labeling_args=largs, 
+  gp_args=gargs,
+  main="Alphabetic order", 
+  legend=FALSE, 
+  rot_labels=c(20,90,0,70))
+
+# reorder by status
+ord &lt;- c(2, 1, 4, 3, 5) 
+mosaic(glass.tab[ord, ord], 
+  shade=TRUE, 
+  labeling_args=largs,  
+  gp_args=gargs,
+  main="Effect order", 
+  legend=FALSE, 
+  rot_labels=c(20,90,0,70))
+
+</code></pre>
+
+
+</div>
+</body></html>

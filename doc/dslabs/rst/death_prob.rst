@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: 2015 US Period Life Table
-      :name: us-period-life-table
+      :name: death_prob
 
    .. rubric:: Description
       :name: description
@@ -18,7 +18,7 @@
 
    ::
 
-      data(death_prob)
+      death_prob
 
    .. rubric:: Format
       :name: format
@@ -45,5 +45,4 @@
 
    ::
 
-      data(death_prob)
       head(death_prob)

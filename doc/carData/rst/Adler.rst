@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Experimenter Expectations
-      :name: experimenter-expectations
+      :name: Adler
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Black and White Pepper Prices
-      :name: black-and-white-pepper-prices
+      :name: PepperPrice
 
    .. rubric:: Description
       :name: description

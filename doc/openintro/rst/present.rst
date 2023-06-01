@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Birth counts
-      :name: birth-counts
+      :name: present
 
    .. rubric:: Description
       :name: description

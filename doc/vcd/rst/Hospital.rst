@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Hospital data
-      :name: hospital-data
+      :name: Hospital
 
    .. rubric:: Description
       :name: description

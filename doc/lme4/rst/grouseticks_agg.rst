@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Data on red grouse ticks from Elston et al. 2001
-      :name: data-on-red-grouse-ticks-from-elston-et-al.-2001
+      :name: grouseticks
 
    .. rubric:: Description
       :name: description

@@ -6,7 +6,7 @@
 
    .. rubric:: Batter Statistics for 2018 Major League Baseball (MLB)
       Season
-      :name: batter-statistics-for-2018-major-league-baseball-mlb-season
+      :name: mlb_players_18
 
    .. rubric:: Description
       :name: description

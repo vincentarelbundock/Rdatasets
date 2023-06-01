@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Population data from the world bank
-      :name: population-data-from-the-world-bank
+      :name: world_bank_pop
 
    .. rubric:: Description
       :name: description

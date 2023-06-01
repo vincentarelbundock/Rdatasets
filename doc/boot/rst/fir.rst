@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Counts of Balsam-fir Seedlings
-      :name: counts-of-balsam-fir-seedlings
+      :name: fir
 
    .. rubric:: Description
       :name: description

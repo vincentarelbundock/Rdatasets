@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Ruspini Data
-      :name: ruspini-data
+      :name: ruspini
 
    .. rubric:: Description
       :name: description

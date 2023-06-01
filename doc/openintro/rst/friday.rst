@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Friday the 13th
-      :name: friday-the-13th
+      :name: friday
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Employment and Wages in the United Kingdom
-      :name: employment-and-wages-in-the-united-kingdom
+      :name: EmplUK
 
    .. rubric:: Description
       :name: description

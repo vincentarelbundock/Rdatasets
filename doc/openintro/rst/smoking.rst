@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: UK Smoking Data
-      :name: uk-smoking-data
+      :name: smoking
 
    .. rubric:: Description
       :name: description

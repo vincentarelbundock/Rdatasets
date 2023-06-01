@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Contrived Collinear Data
-      :name: contrived-collinear-data
+      :name: Mandel
 
    .. rubric:: Description
       :name: description

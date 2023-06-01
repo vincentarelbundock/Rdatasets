@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Dopamine levels with PKU in diets
-      :name: dopamine-levels-with-pku-in-diets
+      :name: PKU
 
    .. rubric:: Description
       :name: description

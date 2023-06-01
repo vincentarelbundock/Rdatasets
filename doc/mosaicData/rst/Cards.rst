@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Standard Deck of Cards
-      :name: standard-deck-of-cards
+      :name: Cards
 
    .. rubric:: Description
       :name: description

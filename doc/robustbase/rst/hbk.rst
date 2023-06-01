@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Hawkins, Bradu, Kass's Artificial Data
-      :name: hawkins-bradu-kasss-artificial-data
+      :name: hbk
 
    .. rubric:: Description
       :name: description

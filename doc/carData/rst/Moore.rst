@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Status, Authoritarianism, and Conformity
-      :name: status-authoritarianism-and-conformity
+      :name: Moore
 
    .. rubric:: Description
       :name: description

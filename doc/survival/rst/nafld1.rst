@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Non-alcohol fatty liver disease
-      :name: non-alcohol-fatty-liver-disease
+      :name: nafld
 
    .. rubric:: Description
       :name: description

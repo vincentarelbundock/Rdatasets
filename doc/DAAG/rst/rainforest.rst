@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Rainforest Data
-      :name: rainforest-data
+      :name: rainforest
 
    .. rubric:: Description
       :name: description

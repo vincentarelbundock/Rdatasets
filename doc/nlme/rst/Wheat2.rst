@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Wheat Yield Trials
-      :name: wheat-yield-trials
+      :name: Wheat2
 
    .. rubric:: Description
       :name: description

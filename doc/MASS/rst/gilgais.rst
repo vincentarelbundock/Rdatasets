@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Line Transect of Soil in Gilgai Territory
-      :name: line-transect-of-soil-in-gilgai-territory
+      :name: gilgais
 
    .. rubric:: Description
       :name: description

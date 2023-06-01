@@ -6,7 +6,7 @@
 
    .. rubric:: Simulated data for analyzing the relationship between
       watching TV and grades
-      :name: simulated-data-for-analyzing-the-relationship-between-watching-tv-and-grades
+      :name: gradestv
 
    .. rubric:: Description
       :name: description

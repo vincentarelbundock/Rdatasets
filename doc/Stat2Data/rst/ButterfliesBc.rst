@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Butterfly (Boloria chariclea) Measurements
-      :name: butterfly-boloria-chariclea-measurements
+      :name: ButterfliesBc
 
    .. rubric:: Description
       :name: description

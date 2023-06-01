@@ -1,0 +1,98 @@
+<!DOCTYPE html><html><head><title>R: Growth of Apple Trees from Different Root Stocks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>RootStock</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='RootStock'>
+Growth of Apple Trees from Different Root Stocks
+</h2>
+
+<h3>Description</h3>
+
+<p>In a classic experiment carried out from 1918 to 1934, growth
+of apple trees of six different rootstocks were compared on 
+four measures of size.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(RootStock)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 48 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>rootstock</code></dt><dd><p>a factor with levels <code>1</code> <code>2</code> <code>3</code> <code>4</code> <code>5</code> <code>6</code></p>
+</dd>
+<dt><code>girth4</code></dt><dd><p>a numeric vector: trunk girth at 4 years (mm x 100)</p>
+</dd>
+<dt><code>ext4</code></dt><dd><p>a numeric vector: extension growth at 4 years (m)</p>
+</dd>
+<dt><code>girth15</code></dt><dd><p>a numeric vector: trunk girth at 15 years (mm x 100)</p>
+</dd>
+<dt><code>weight15</code></dt><dd><p>a numeric vector: weight of tree above ground at 15 years (lb x 1000)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This is a balanced, one-way MANOVA design, with n=8 trees for each rootstock.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Andrews, D. and Herzberg, A. (1985). <em>Data: A Collection of Problems from Many Fields for the Student and Research Worker</em>
+Springer-Verlag,
+pp. 357&ndash;360.
+</p>
+
+
+<h3>References</h3>
+
+<p>Rencher, A. C. (1995). <em>Methods of Multivariate Analysis</em>.
+New York: Wiley, Table 6.2
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+data(RootStock)
+## maybe str(RootStock) ; plot(RootStock) ...
+root.mod &lt;- lm(cbind(girth4, ext4, girth15, weight15) ~ rootstock, data=RootStock)
+Anova(root.mod)
+
+pairs(root.mod)
+
+# test two orthogonal contrasts among the rootstocks
+hyp &lt;- matrix(c(2,-1,-1,-1,-1,2,  1, 0,0,0,0,-1), 2, 6, byrow=TRUE)
+linearHypothesis(root.mod, hyp)
+heplot(root.mod, hypotheses=list(Contrasts=hyp, C1=hyp[1,], C2=hyp[2,]))
+
+heplot1d(root.mod, hypotheses=list(Contrasts=hyp, C1=hyp[1,], C2=hyp[2,]))
+
+</code></pre>
+
+
+</div>
+</body></html>

@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Sample of books on a shelf
-      :name: sample-of-books-on-a-shelf
+      :name: books
 
    .. rubric:: Description
       :name: description

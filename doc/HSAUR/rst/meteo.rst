@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Meteorological Measurements for 11 Years
-      :name: meteorological-measurements-for-11-years
+      :name: meteo
 
    .. rubric:: Description
       :name: description

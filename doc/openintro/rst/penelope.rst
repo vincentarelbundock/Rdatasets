@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Guesses at the weight of Penelope (a cow)
-      :name: guesses-at-the-weight-of-penelope-a-cow
+      :name: penelope
 
    .. rubric:: Description
       :name: description

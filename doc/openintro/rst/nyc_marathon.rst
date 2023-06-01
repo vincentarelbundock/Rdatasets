@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: New York City Marathon Times
-      :name: new-york-city-marathon-times
+      :name: nyc_marathon
 
    .. rubric:: Description
       :name: description

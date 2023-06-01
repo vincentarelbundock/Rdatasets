@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Canadian Population Data
-      :name: canadian-population-data
+      :name: CanPop
 
    .. rubric:: Description
       :name: description

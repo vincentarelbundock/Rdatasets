@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Terms of 12 presidents from Eisenhower to Trump
-      :name: terms-of-12-presidents-from-eisenhower-to-trump
+      :name: presidential
 
    .. rubric:: Description
       :name: description

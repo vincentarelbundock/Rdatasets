@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: 3 Measures of ability: SATV, SATQ, ACT
-      :name: measures-of-ability-satv-satq-act
+      :name: sat.act
 
    .. rubric:: Description
       :name: description

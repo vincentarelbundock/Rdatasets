@@ -5,7 +5,7 @@
    ===================== ===============
 
    .. rubric:: United States-China GDP and GDP Forecasts, 1960-2050
-      :name: united-states-china-gdp-and-gdp-forecasts-1960-2050
+      :name: usa_chn_gdp_forecasts
 
    .. rubric:: Description
       :name: description

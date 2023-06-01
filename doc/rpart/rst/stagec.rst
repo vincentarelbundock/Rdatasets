@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Stage C Prostate Cancer
-      :name: stage-c-prostate-cancer
+      :name: stagec
 
    .. rubric:: Description
       :name: description

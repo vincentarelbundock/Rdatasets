@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: US Consumption Data (1950–1993)
-      :name: us-consumption-data-19501993
+      :name: USConsump1993
 
    .. rubric:: Description
       :name: description

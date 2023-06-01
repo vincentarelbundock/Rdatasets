@@ -1,0 +1,122 @@
+<!DOCTYPE html><html><head><title>R: Personality Traits of Cultural Groups</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Iwasaki_Big_Five</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Iwasaki_Big_Five'>
+Personality Traits of Cultural Groups
+</h2>
+
+<h3>Description</h3>
+
+<p>This dataset, from Grice &amp; Iwasaki (2007), gives scores on the five personality scales of the NEO PI-r (Costa &amp; McCrae, 1992),
+called the &quot;Big Five&quot; personality traits: Neuroticism, Extraversion, Openness-to-Experience, Agreeableness, and Conscientiousness.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Iwasaki_Big_Five")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 203 observations on the following 7 variables.
+</p>
+
+<dl>
+<dt><code>ID</code></dt><dd><p>ID number</p>
+</dd>
+<dt><code>Group</code></dt><dd><p>a factor with levels <code>Eur</code> <code>Asian_Amer</code> <code>Asian_Intl</code></p>
+</dd>
+<dt><code>N</code></dt><dd><p>Neuroticism score</p>
+</dd>
+<dt><code>E</code></dt><dd><p>Extraversion score</p>
+</dd>
+<dt><code>O</code></dt><dd><p>Openness score</p>
+</dd>
+<dt><code>A</code></dt><dd><p>Agreeableness score</p>
+</dd>
+<dt><code>C</code></dt><dd><p>Conscientiousness score</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The groups are:
+</p>
+
+<dl>
+<dt>Eur</dt><dd><p>European Americans (Caucasians living in the United States their entire lives)</p>
+</dd>
+<dt>Asian_Amer</dt><dd><p>Asian Americans (Asians living in the United States since before the age of 6 years)</p>
+</dd>
+<dt>Asian_Intl</dt><dd><p>Asian Internationals (Asians who moved to the United States after their 6th birthday)</p>
+</dd>
+</dl>
+
+<p>The factor <code>Group</code> is set up to compare E vs. Asian and the two Asian groups
+</p>
+
+
+<h3>Source</h3>
+
+<p>Grice, J., &amp; Iwasaki, M. (2007). A truly multivariate approach to MANOVA. 
+<em>Applied Multivariate Research</em>, <b>12</b>, 199-226. https://doi.org/10.22329/amr.v12i3.660.
+</p>
+
+
+<h3>References</h3>
+
+<p>Costa Jr, P. T., &amp; McCrae, R. R. (1992). 
+<em>Revised NEO Personality Inventory (NEO PI-R) and NEO Five-Factor Inventory (NEOFFI) professional manual</em>. 
+Psychological Assessment Resources.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Iwasaki_Big_Five)
+str(Iwasaki_Big_Five)
+
+mod &lt;- lm(cbind(N, E, O, A, C) ~ Group, data=Iwasaki_Big_Five)
+
+Anova(mod)
+
+# heplots
+labs &lt;- c("Neuroticism", "Extraversion", "Openness", "Agreeableness", "Consientiousness" )
+
+heplot(mod,
+       fill = TRUE, fill.alpha = 0.2, 
+       cex.lab = 1.5,
+       xlab = labs[1], ylab = labs[2])
+
+heplot(mod, variables = c(2,5),
+       fill = TRUE, fill.alpha = 0.2,
+       cex.lab = 1.5,
+       xlab = labs[2], ylab = labs[5])
+
+pairs(mod, 
+      fill = TRUE, fill.alpha = 0.2, var.labels = labs)
+
+
+</code></pre>
+
+
+</div>
+</body></html>

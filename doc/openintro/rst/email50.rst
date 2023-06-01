@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Sample of 50 emails
-      :name: sample-of-50-emails
+      :name: email50
 
    .. rubric:: Description
       :name: description

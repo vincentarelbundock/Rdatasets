@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: OpenIntro colors
-      :name: openintro-colors
+      :name: openintro_colors
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Flower Characteristics
-      :name: flower-characteristics
+      :name: flower
 
    .. rubric:: Description
       :name: description

@@ -1,0 +1,111 @@
+<!DOCTYPE html><html><head><title>R: Abortion Opinion Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Abortion</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Abortion'>Abortion Opinion Data</h2>
+
+<h3>Description</h3>
+
+<p>Opinions about abortion classified by gender and SES</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Abortion)
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A 3-dimensional array resulting from cross-tabulating 3 variables for  1100 observations. The variable names and their levels are:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: right;">
+    No </td><td style="text-align: left;"> Name                    </td><td style="text-align: left;"> Levels </td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    1  </td><td style="text-align: left;"> <code>Sex</code>              </td><td style="text-align: left;"> <code>"Female", "Male"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    2  </td><td style="text-align: left;"> <code>Status</code>           </td><td style="text-align: left;"> <code>"Lo", "Hi"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+    3  </td><td style="text-align: left;"> <code>Support_Abortion</code> </td><td style="text-align: left;"> <code>"Yes", "No"</code></td>
+</tr>
+<tr>
+ <td style="text-align: right;">
+  </td>
+</tr>
+
+</table>
+
+
+
+<h3>Details</h3>
+
+<p><code>Support_Abortion</code> is a natural response variable. 
+</p>
+<p>The combinations of <code>Sex</code> and <code>Status</code> represent four independent samples, having
+fixed <code>Sex</code>-<code>Status</code> marginal totals. 
+There were 500 females and 600 males. Within the female group, 250 of low status and 250
+of high status were sampled. Similarly for the males, with 300 in each of the low and hgh
+status sub-groups.
+</p>
+<p>This is an example of a product-multinomial sampling scheme.
+the <code>Sex:Status</code> association must be included in any loglinear model
+where the goal is to determine how attitude toward abortion depends on the others.
+</p>
+<p>Alternatively, a logit model for abortion support may provide a simpler analysis.
+</p>
+
+
+<h3>Source</h3>
+
+
+<p>Christensen, R. (1990).
+<em>Log-Linear Models</em>,
+New York, NY: Springer-Verlag, p. 92, Example 3.5.2.
+</p>
+<p>Christensen, R. (1997).
+<em>Log-Linear Models and Logistic Regression</em>,  
+New York, NY: Springer, p. 100, Example 3.5.2.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Abortion)
+
+
+ftable(Abortion)
+mosaic(Abortion, shade=TRUE)
+
+# stratified by Sex
+fourfold(aperm(Abortion, 3:1))
+# stratified by Status
+fourfold(aperm(Abortion, c(3,1,2)))
+
+</code></pre>
+
+
+</div>
+</body></html>

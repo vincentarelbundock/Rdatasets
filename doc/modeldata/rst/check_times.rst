@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Execution time data
-      :name: execution-time-data
+      :name: check_times
 
    .. rubric:: Description
       :name: description

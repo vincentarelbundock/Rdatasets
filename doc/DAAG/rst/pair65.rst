@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Heated Elastic Bands
-      :name: heated-elastic-bands
+      :name: pair65
 
    .. rubric:: Description
       :name: description

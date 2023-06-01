@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Congressional Votes on American Health Care Act (in 2017)
-      :name: congressional-votes-on-american-health-care-act-in-2017
+      :name: AHCAvote2017
 
    .. rubric:: Description
       :name: description

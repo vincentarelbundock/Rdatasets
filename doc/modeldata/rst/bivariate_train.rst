@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Example bivariate classification data
-      :name: example-bivariate-classification-data
+      :name: bivariate
 
    .. rubric:: Description
       :name: description
@@ -24,9 +24,9 @@
    .. rubric:: Value
       :name: value
 
-   ================================================== =======
-   ``bivariate_train, bivariate_test, bivariate_val`` tibbles
-   ================================================== =======
+   ========================================================== =======
+   ``bivariate_train``, ``bivariate_test``, ``bivariate_val`` tibbles
+   ========================================================== =======
 
    .. rubric:: Examples
       :name: examples

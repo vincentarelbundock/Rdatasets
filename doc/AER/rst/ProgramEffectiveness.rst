@@ -5,7 +5,7 @@
    ==================== ===============
 
    .. rubric:: Program Effectiveness Data
-      :name: program-effectiveness-data
+      :name: ProgramEffectiveness
 
    .. rubric:: Description
       :name: description

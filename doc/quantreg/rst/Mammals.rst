@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Garland(1983) Data on Running Speed of Mammals
-      :name: garland1983-data-on-running-speed-of-mammals
+      :name: Mammals
 
    .. rubric:: Description
       :name: description

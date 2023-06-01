@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Snail Mortality Data
-      :name: snail-mortality-data
+      :name: snails
 
    .. rubric:: Description
       :name: description

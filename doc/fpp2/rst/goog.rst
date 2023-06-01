@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Daily closing stock prices of Google Inc
-      :name: daily-closing-stock-prices-of-google-inc
+      :name: goog
 
    .. rubric:: Description
       :name: description

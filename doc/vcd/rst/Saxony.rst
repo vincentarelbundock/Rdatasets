@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Families in Saxony
-      :name: families-in-saxony
+      :name: Saxony
 
    .. rubric:: Description
       :name: description

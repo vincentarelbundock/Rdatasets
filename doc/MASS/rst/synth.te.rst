@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Synthetic Classification Problem
-      :name: synthetic-classification-problem
+      :name: synth.tr
 
    .. rubric:: Description
       :name: description

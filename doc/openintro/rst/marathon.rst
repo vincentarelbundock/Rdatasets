@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: New York City Marathon Times (outdated)
-      :name: new-york-city-marathon-times-outdated
+      :name: marathon
 
    .. rubric:: Description
       :name: description

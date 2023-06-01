@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: US States Production
-      :name: us-states-production
+      :name: Produc
 
    .. rubric:: Description
       :name: description

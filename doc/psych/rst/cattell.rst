@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: 12 cognitive variables from Cattell (1963)
-      :name: cognitive-variables-from-cattell-1963
+      :name: cattell
 
    .. rubric:: Description
       :name: description

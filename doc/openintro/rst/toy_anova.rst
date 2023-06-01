@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Simulated data set for ANOVA
-      :name: simulated-data-set-for-anova
+      :name: toy_anova
 
    .. rubric:: Description
       :name: description

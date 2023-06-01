@@ -6,7 +6,7 @@
 
    .. rubric:: Casualties/Fatalities in the U.S. for Drunk-Driving,
       Suicide, and Terrorism
-      :name: casualtiesfatalities-in-the-u.s.-for-drunk-driving-suicide-and-terrorism
+      :name: DST
 
    .. rubric:: Description
       :name: description

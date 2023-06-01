@@ -6,7 +6,7 @@
 
    .. rubric:: 9 Cognitive variables discussed by Tucker and Lewis
       (1973)
-      :name: cognitive-variables-discussed-by-tucker-and-lewis-1973
+      :name: Tucker
 
    .. rubric:: Description
       :name: description

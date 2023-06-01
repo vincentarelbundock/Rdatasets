@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Weight Loss Data from an Obese Patient
-      :name: weight-loss-data-from-an-obese-patient
+      :name: wtloss
 
    .. rubric:: Description
       :name: description

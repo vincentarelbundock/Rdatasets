@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Wages and Schooling
-      :name: wages-and-schooling
+      :name: Schooling
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Gapminder Data
-      :name: gapminder-data
+      :name: gapminder
 
    .. rubric:: Description
       :name: description
@@ -19,7 +19,7 @@
 
    ::
 
-      data(gapminder)
+      gapminder
 
    .. rubric:: Format
       :name: format
@@ -52,7 +52,6 @@
 
    ::
 
-      data(gapminder)
       head(gapminder)
       print(oecd)
       print(opec)

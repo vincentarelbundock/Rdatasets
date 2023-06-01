@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Eighth-Grade Pupils in the Netherlands
-      :name: eighth-grade-pupils-in-the-netherlands
+      :name: nlschools
 
    .. rubric:: Description
       :name: description

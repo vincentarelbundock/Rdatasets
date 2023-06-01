@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Subset of variables from the CHAIN project
-      :name: subset-of-variables-from-the-chain-project
+      :name: CHAIN
 
    .. rubric:: Description
       :name: description

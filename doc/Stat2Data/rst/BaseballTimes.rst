@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Baseball Game Times of One Day in 2008
-      :name: baseball-game-times-of-one-day-in-2008
+      :name: BaseballTimes
 
    .. rubric:: Description
       :name: description

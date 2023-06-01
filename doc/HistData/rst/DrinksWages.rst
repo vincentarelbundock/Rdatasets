@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Elderton and Pearson's (1910) data on drinking and wages
-      :name: elderton-and-pearsons-1910-data-on-drinking-and-wages
+      :name: DrinksWages
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: What's the best way to loosen a rusty bolt?
-      :name: whats-the-best-way-to-loosen-a-rusty-bolt
+      :name: penetrating_oil
 
    .. rubric:: Description
       :name: description

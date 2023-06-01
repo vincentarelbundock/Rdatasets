@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Genetic Links to Left-handedness
-      :name: genetic-links-to-left-handedness
+      :name: claridge
 
    .. rubric:: Description
       :name: description

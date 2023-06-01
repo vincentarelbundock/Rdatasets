@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: Finger Tap Rates
-      :name: finger-tap-rates
+      :name: FranticFingers
 
    .. rubric:: Description
       :name: description

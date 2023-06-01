@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Data on Children who have had Corrective Spinal Surgery
-      :name: data-on-children-who-have-had-corrective-spinal-surgery
+      :name: kyphosis
 
    .. rubric:: Description
       :name: description

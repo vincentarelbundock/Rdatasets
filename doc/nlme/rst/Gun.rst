@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Methods for firing naval guns
-      :name: methods-for-firing-naval-guns
+      :name: Gun
 
    .. rubric:: Description
       :name: description

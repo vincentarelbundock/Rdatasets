@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Determinants of Economic Growth
-      :name: determinants-of-economic-growth
+      :name: GrowthDJ
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Growth of Sitka Spruce Trees
-      :name: growth-of-sitka-spruce-trees
+      :name: sitka89
 
    .. rubric:: Description
       :name: description

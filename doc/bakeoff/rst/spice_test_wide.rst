@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Spice Test
-      :name: spice-test
+      :name: spice_test_wide
 
    .. rubric:: Description
       :name: description

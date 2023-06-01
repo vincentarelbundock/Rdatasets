@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Elmhurst College gift aid
-      :name: elmhurst-college-gift-aid
+      :name: elmhurst
 
    .. rubric:: Description
       :name: description

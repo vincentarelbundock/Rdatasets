@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: Coast Starlight Amtrak train
-      :name: coast-starlight-amtrak-train
+      :name: coast_starlight
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: Divorce rate and margarine consumption data
-      :name: divorce-rate-and-margarine-consumption-data
+      :name: divorce_margarine
 
    .. rubric:: Description
       :name: description
@@ -18,7 +18,7 @@
 
    ::
 
-      data(divorce_margarine)
+      divorce_margarine
 
    .. rubric:: Format
       :name: format
@@ -39,12 +39,11 @@
       :name: source
 
    `Spurious
-   Correlations <http://www.tylervigen.com/spurious-correlations>`__
+   Correlations <https://www.tylervigen.com/spurious-correlations>`__
 
    .. rubric:: Examples
       :name: examples
 
    ::
 
-      data(divorce_margarine)
       with(divorce_margarine, plot(margarine_consumption_per_capita, divorce_rate_maine))

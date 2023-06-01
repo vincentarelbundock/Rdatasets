@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Biochemical Oxygen Demand
-      :name: biochemical-oxygen-demand
+      :name: BOD
 
    .. rubric:: Description
       :name: description

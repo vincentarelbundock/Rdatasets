@@ -6,7 +6,7 @@
 
    .. rubric:: The Usual Daily Drinking Habits of Americans (NESARC,
       2001-2)
-      :name: the-usual-daily-drinking-habits-of-americans-nesarc-2001-2
+      :name: nesarc_drinkspd
 
    .. rubric:: Description
       :name: description

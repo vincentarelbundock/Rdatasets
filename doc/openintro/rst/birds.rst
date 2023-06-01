@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Aircraft-Wildlife Collisions
-      :name: aircraft-wildlife-collisions
+      :name: birds
 
    .. rubric:: Description
       :name: description

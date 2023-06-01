@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: data from Exercise 13.1, p418
-      :name: data-from-exercise-13.1-p418
+      :name: allograft
 
    .. rubric:: Description
       :name: description

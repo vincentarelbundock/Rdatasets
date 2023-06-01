@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Retail debit card usage in Iceland.
-      :name: retail-debit-card-usage-in-iceland.
+      :name: debitcards
 
    .. rubric:: Description
       :name: description

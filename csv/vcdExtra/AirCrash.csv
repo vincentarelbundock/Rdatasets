@@ -1,0 +1,440 @@
+"","Phase","Cause","date","Fatalities","Year"
+"1","landing","criminal",1993-09-21,27,1993
+"2","landing","criminal",1993-09-22,108,1993
+"3","landing","criminal",1996-11-23,125,1996
+"4","landing","criminal",2002-05-07,112,2002
+"5","landing","unknown",1993-07-01,41,1993
+"6","landing","unknown",1993-07-31,19,1993
+"7","landing","unknown",1994-05-07,8,1994
+"8","landing","unknown",2000-01-13,22,2000
+"9","landing","unknown",2002-05-07,14,2002
+"10","landing","unknown",2004-02-10,43,2004
+"11","landing","unknown",2004-05-14,33,2004
+"12","landing","unknown",2006-09-01,28,2006
+"13","landing","unknown",2007-06-28,6,2007
+"14","landing","unknown",2007-07-17,199,2007
+"15","landing","unknown",2008-04-16,13,2008
+"16","landing","unknown",2009-08-04,1,2009
+"17","landing","unknown",2010-09-13,17,2010
+"18","landing","unknown",2011-09-06,8,2011
+"19","landing","unknown",2012-05-14,15,2012
+"20","landing","unknown",2012-12-22,1,2012
+"21","landing","unknown",2012-12-25,2,2012
+"22","landing","unknown",2013-11-17,50,2013
+"23","landing","mechanical",1993-06-09,9,1993
+"24","landing","mechanical",1993-11-13,12,1993
+"25","landing","mechanical",1994-09-08,132,1994
+"26","landing","mechanical",1995-09-20,6,1995
+"27","landing","mechanical",1995-12-03,71,1995
+"28","landing","mechanical",1996-12-07,18,1996
+"29","landing","mechanical",1998-03-28,22,1998
+"30","landing","mechanical",1999-02-24,61,1999
+"31","landing","mechanical",2000-01-05,2,2000
+"32","landing","mechanical",2001-08-29,4,2001
+"33","landing","mechanical",2002-11-28,1,2002
+"34","landing","mechanical",2003-07-08,116,2003
+"35","landing","mechanical",2005-04-20,3,2005
+"36","landing","mechanical",2006-10-10,4,2006
+"37","landing","mechanical",2006-11-09,1,2006
+"38","landing","mechanical",2009-02-25,9,2009
+"39","landing","mechanical",2010-12-04,2,2010
+"40","landing","mechanical",2011-10-13,28,2011
+"41","landing","mechanical",2012-06-03,163,2012
+"42","landing","weather",1993-02-28,6,1993
+"43","landing","weather",1993-03-19,3,1993
+"44","landing","weather",1993-07-26,68,1993
+"45","landing","weather",1993-10-26,2,1993
+"46","landing","weather",1993-12-13,18,1993
+"47","landing","weather",1994-06-13,9,1994
+"48","landing","weather",1994-06-18,12,1994
+"49","landing","weather",1994-07-01,80,1994
+"50","landing","weather",1994-09-18,5,1994
+"51","landing","weather",1994-10-31,68,1994
+"52","landing","weather",1994-12-29,57,1994
+"53","landing","weather",1995-06-24,16,1995
+"54","landing","weather",1995-09-09,22,1995
+"55","landing","weather",1996-05-03,53,1996
+"56","landing","weather",1996-05-10,16,1996
+"57","landing","weather",1996-07-24,8,1996
+"58","landing","weather",1996-11-01,14,1996
+"59","landing","weather",1997-01-09,29,1997
+"60","landing","weather",1997-02-14,1,1997
+"61","landing","weather",1997-05-08,35,1997
+"62","landing","weather",1997-07-29,1,1997
+"63","landing","weather",1997-08-10,16,1997
+"64","landing","weather",1997-12-09,4,1997
+"65","landing","weather",1998-05-05,75,1998
+"66","landing","weather",1998-11-01,11,1998
+"67","landing","weather",1998-12-11,101,1998
+"68","landing","weather",1999-02-25,4,1999
+"69","landing","weather",1999-12-21,18,1999
+"70","landing","weather",2000-05-17,3,2000
+"71","landing","weather",2000-06-22,49,2000
+"72","landing","weather",2000-10-19,8,2000
+"73","landing","weather",2001-03-17,16,2001
+"74","landing","weather",2001-03-29,18,2001
+"75","landing","weather",2002-01-16,1,2002
+"76","landing","weather",2002-02-12,119,2002
+"77","landing","weather",2002-04-15,129,2002
+"78","landing","weather",2002-08-22,18,2002
+"79","landing","weather",2002-08-29,16,2002
+"80","landing","weather",2002-08-30,23,2002
+"81","landing","weather",2002-12-27,1,2002
+"82","landing","weather",2003-01-08,75,2003
+"83","landing","weather",2004-01-13,37,2004
+"84","landing","weather",2004-11-18,4,2004
+"85","landing","weather",2004-11-30,25,2004
+"86","landing","weather",2005-02-22,2,2005
+"87","landing","weather",2005-09-05,11,2005
+"88","landing","weather",2006-04-16,1,2006
+"89","landing","weather",2010-05-12,103,2010
+"90","landing","weather",2011-01-09,77,2011
+"91","landing","weather",2011-02-10,6,2011
+"92","landing","weather",2011-04-04,32,2011
+"93","landing","weather",2011-07-08,77,2011
+"94","landing","weather",2012-08-19,32,2012
+"95","landing","weather",2013-01-29,21,2013
+"96","landing","weather",2013-10-16,49,2013
+"97","landing","human error",1993-01-06,4,1993
+"98","landing","human error",1993-08-26,24,1993
+"99","landing","human error",1993-09-14,2,1993
+"100","landing","human error",1993-10-27,6,1993
+"101","landing","human error",1993-11-20,116,1993
+"102","landing","human error",1993-12-01,18,1993
+"103","landing","human error",1993-12-09,3,1993
+"104","landing","human error",1993-12-26,35,1993
+"105","landing","human error",1994-01-07,5,1994
+"106","landing","human error",1994-04-04,3,1994
+"107","landing","human error",1994-04-26,264,1994
+"108","landing","human error",1994-06-26,17,1994
+"109","landing","human error",1994-07-02,37,1994
+"110","landing","human error",1994-07-17,6,1994
+"111","landing","human error",1994-09-13,2,1994
+"112","landing","human error",1994-11-05,6,1994
+"113","landing","human error",1994-12-13,15,1994
+"114","landing","human error",1995-01-10,51,1995
+"115","landing","human error",1995-05-01,3,1995
+"116","landing","human error",1995-06-09,4,1995
+"117","landing","human error",1995-07-18,36,1995
+"118","landing","human error",1995-08-09,65,1995
+"119","landing","human error",1995-09-11,3,1995
+"120","landing","human error",1995-09-15,34,1995
+"121","landing","human error",1995-09-21,42,1995
+"122","landing","human error",1995-11-13,11,1995
+"123","landing","human error",1995-12-20,159,1995
+"124","landing","human error",1996-02-29,123,1996
+"125","landing","human error",1996-03-02,9,1996
+"126","landing","human error",1996-04-05,6,1996
+"127","landing","human error",1996-06-21,2,1996
+"128","landing","human error",1996-07-11,9,1996
+"129","landing","human error",1996-08-29,141,1996
+"130","landing","human error",1996-10-26,5,1996
+"131","landing","human error",1996-11-07,144,1996
+"132","landing","human error",1996-11-19,14,1996
+"133","landing","human error",1997-01-31,5,1997
+"134","landing","human error",1997-04-19,15,1997
+"135","landing","human error",1997-06-10,7,1997
+"136","landing","human error",1997-07-30,1,1997
+"137","landing","human error",1997-08-06,228,1997
+"138","landing","human error",1997-09-03,65,1997
+"139","landing","human error",1997-09-06,10,1997
+"140","landing","human error",1997-09-26,234,1997
+"141","landing","human error",1997-12-15,85,1997
+"142","landing","human error",1998-02-16,202,1998
+"143","landing","human error",1998-03-22,3,1998
+"144","landing","human error",1998-06-18,11,1998
+"145","landing","human error",1998-07-27,2,1998
+"146","landing","human error",1998-07-30,14,1998
+"147","landing","human error",1998-08-24,36,1998
+"148","landing","human error",1998-09-25,38,1998
+"149","landing","human error",1999-06-01,11,1999
+"150","landing","human error",1999-07-04,4,1999
+"151","landing","human error",1999-08-12,1,1999
+"152","landing","human error",1999-08-22,3,1999
+"153","landing","human error",1999-08-24,1,1999
+"154","landing","human error",1999-08-26,2,1999
+"155","landing","human error",1999-09-05,15,1999
+"156","landing","human error",1999-12-25,22,1999
+"157","landing","human error",2000-04-19,131,2000
+"158","landing","human error",2000-05-21,19,2000
+"159","landing","human error",2000-06-05,7,2000
+"160","landing","human error",2000-07-17,60,2000
+"161","landing","human error",2000-08-23,143,2000
+"162","landing","human error",2001-02-10,10,2001
+"163","landing","human error",2001-03-24,20,2001
+"164","landing","human error",2001-07-04,145,2001
+"165","landing","human error",2001-11-24,24,2001
+"166","landing","human error",2002-01-28,94,2002
+"167","landing","human error",2002-09-28,3,2002
+"168","landing","human error",2002-10-25,8,2002
+"169","landing","human error",2002-11-06,20,2002
+"170","landing","human error",2003-01-09,46,2003
+"171","landing","human error",2003-05-26,75,2003
+"172","landing","human error",2003-06-22,1,2003
+"173","landing","human error",2004-01-28,1,2004
+"174","landing","human error",2004-10-19,13,2004
+"175","landing","human error",2005-03-16,28,2005
+"176","landing","human error",2005-05-05,10,2005
+"177","landing","human error",2005-05-07,15,2005
+"178","landing","human error",2005-08-23,40,2005
+"179","landing","human error",2005-12-08,1,2005
+"180","landing","human error",2005-12-10,108,2005
+"181","landing","human error",2006-04-24,5,2006
+"182","landing","human error",2006-05-03,113,2006
+"183","landing","human error",2006-06-21,9,2006
+"184","landing","human error",2006-07-09,125,2006
+"185","landing","human error",2007-03-07,21,2007
+"186","landing","human error",2007-03-17,6,2007
+"187","landing","human error",2007-09-16,90,2007
+"188","landing","human error",2007-11-30,57,2007
+"189","landing","human error",2008-01-19,13,2008
+"190","landing","human error",2008-05-30,5,2008
+"191","landing","human error",2008-06-10,30,2008
+"192","landing","human error",2008-07-10,9,2008
+"193","landing","human error",2008-08-24,65,2008
+"194","landing","human error",2008-09-14,88,2008
+"195","landing","human error",2008-10-08,18,2008
+"196","landing","human error",2009-02-12,50,2009
+"197","landing","human error",2009-06-30,152,2009
+"198","landing","human error",2009-07-24,16,2009
+"199","landing","human error",2010-05-22,158,2010
+"200","landing","human error",2010-07-28,152,2010
+"201","landing","human error",2010-08-16,2,2010
+"202","landing","human error",2010-08-24,44,2010
+"203","landing","human error",2011-05-07,25,2011
+"204","landing","human error",2011-06-20,47,2011
+"205","landing","human error",2011-08-20,12,2011
+"206","landing","human error",2011-09-25,19,2011
+"207","landing","human error",2012-04-20,127,2012
+"208","landing","human error",2012-09-12,10,2012
+"209","landing","human error",2013-02-13,5,2013
+"210","landing","human error",2013-07-06,2,2013
+"211","en route","criminal",1994-07-19,21,1994
+"212","en route","criminal",1994-12-10,1,1994
+"213","en route","criminal",1997-07-09,1,1997
+"214","en route","criminal",1997-12-19,104,1997
+"215","en route","criminal",1998-09-29,55,1998
+"216","en route","criminal",1998-10-10,41,1998
+"217","en route","criminal",1999-12-24,1,1999
+"218","en route","criminal",2000-09-27,1,2000
+"219","en route","criminal",2001-09-11,44,2001
+"220","en route","criminal",2001-09-11,189,2001
+"221","en route","criminal",2001-09-11,965,2001
+"222","en route","criminal",2001-09-11,1692,2001
+"223","en route","criminal",2004-08-24,44,2004
+"224","en route","criminal",2004-08-24,46,2004
+"225","en route","criminal",2012-06-29,2,2012
+"226","en route","criminal",2014-07-17,298,2014
+"227","en route","unknown",1997-06-06,23,1997
+"228","en route","unknown",1998-08-21,18,1998
+"229","en route","unknown",1999-12-07,17,1999
+"230","en route","unknown",1999-12-25,10,1999
+"231","en route","unknown",2000-03-17,10,2000
+"232","en route","unknown",2003-03-27,4,2003
+"233","en route","unknown",2003-07-13,4,2003
+"234","en route","unknown",2003-07-19,14,2003
+"235","en route","unknown",2004-01-03,148,2004
+"236","en route","unknown",2005-04-12,17,2005
+"237","en route","unknown",2005-05-25,27,2005
+"238","en route","unknown",2005-07-16,60,2005
+"239","en route","unknown",2005-09-09,13,2005
+"240","en route","unknown",2006-08-03,17,2006
+"241","en route","unknown",2006-11-17,12,2006
+"242","en route","unknown",2007-06-21,1,2007
+"243","en route","unknown",2007-06-25,22,2007
+"244","en route","unknown",2008-04-03,19,2008
+"245","en route","unknown",2009-07-15,168,2009
+"246","en route","unknown",2011-02-14,14,2011
+"247","en route","unknown",2011-09-20,3,2011
+"248","en route","unknown",2011-09-29,18,2011
+"249","en route","unknown",2013-11-29,33,2013
+"250","en route","unknown",2014-03-08,239,2014
+"251","en route","unknown",2015-03-24,150,2015
+"252","en route","mechanical",1993-04-06,2,1993
+"253","en route","mechanical",1993-12-03,7,1993
+"254","en route","mechanical",1994-06-06,160,1994
+"255","en route","mechanical",1994-10-12,66,1994
+"256","en route","mechanical",1995-05-24,12,1995
+"257","en route","mechanical",1995-07-12,15,1995
+"258","en route","mechanical",1995-08-21,9,1995
+"259","en route","mechanical",1995-12-07,98,1995
+"260","en route","mechanical",1996-05-11,110,1996
+"261","en route","mechanical",1996-07-17,230,1996
+"262","en route","mechanical",1997-07-11,44,1997
+"263","en route","mechanical",1997-07-17,28,1997
+"264","en route","mechanical",1998-09-02,24,1998
+"265","en route","mechanical",1998-09-02,229,1998
+"266","en route","mechanical",2000-09-04,8,2000
+"267","en route","mechanical",2001-01-25,24,2001
+"268","en route","mechanical",2001-09-15,1,2001
+"269","en route","mechanical",2002-03-14,16,2002
+"270","en route","mechanical",2002-05-04,149,2002
+"271","en route","mechanical",2002-05-25,225,2002
+"272","en route","mechanical",2002-11-11,19,2002
+"273","en route","mechanical",2003-08-24,21,2003
+"274","en route","mechanical",2004-06-08,19,2004
+"275","en route","mechanical",2004-06-26,2,2004
+"276","en route","mechanical",2005-12-23,23,2005
+"277","en route","mechanical",2008-01-04,14,2008
+"278","en route","mechanical",2008-05-02,21,2008
+"279","en route","mechanical",2009-02-07,24,2009
+"280","en route","mechanical",2011-05-18,22,2011
+"281","en route","weather",1993-01-31,14,1993
+"282","en route","weather",1993-03-23,6,1993
+"283","en route","weather",1993-06-17,41,1993
+"284","en route","weather",1994-06-23,7,1994
+"285","en route","weather",1994-11-22,7,1994
+"286","en route","weather",1995-01-10,14,1995
+"287","en route","weather",1995-06-16,13,1995
+"288","en route","weather",1995-11-08,53,1995
+"289","en route","weather",1998-03-19,45,1998
+"290","en route","weather",1999-04-08,5,1999
+"291","en route","weather",1999-04-07,6,1999
+"292","en route","weather",1999-05-08,7,1999
+"293","en route","weather",1999-08-07,18,1999
+"294","en route","weather",1999-12-11,35,1999
+"295","en route","weather",2000-07-08,19,2000
+"296","en route","weather",2001-05-17,30,2001
+"297","en route","weather",2002-05-25,6,2002
+"298","en route","weather",2002-07-17,4,2002
+"299","en route","weather",2005-02-03,104,2005
+"300","en route","weather",2010-05-17,44,2010
+"301","en route","weather",2014-02-16,18,2014
+"302","en route","weather",2014-07-23,48,2014
+"303","en route","weather",2014-07-24,116,2014
+"304","en route","weather",2014-12-28,162,2014
+"305","en route","human error",1993-02-08,131,1993
+"306","en route","human error",1993-04-23,32,1993
+"307","en route","human error",1993-05-19,132,1993
+"308","en route","human error",1994-01-03,125,1994
+"309","en route","human error",1994-02-25,31,1994
+"310","en route","human error",1994-03-23,75,1994
+"311","en route","human error",1994-04-25,10,1994
+"312","en route","human error",1994-08-21,44,1994
+"313","en route","human error",1994-09-26,28,1994
+"314","en route","human error",1994-12-17,28,1994
+"315","en route","human error",1995-03-31,60,1995
+"316","en route","human error",1995-08-09,10,1995
+"317","en route","human error",1995-08-14,8,1995
+"318","en route","human error",1995-12-07,20,1995
+"319","en route","human error",1996-02-06,189,1996
+"320","en route","human error",1996-10-02,70,1996
+"321","en route","human error",1996-11-12,37,1996
+"322","en route","human error",1996-11-12,312,1996
+"323","en route","human error",1996-11-30,14,1996
+"324","en route","human error",1997-01-07,3,1997
+"325","en route","human error",1997-03-18,50,1997
+"326","en route","human error",1997-09-12,19,1997
+"327","en route","human error",1997-10-10,74,1997
+"328","en route","human error",1997-12-17,70,1997
+"329","en route","human error",1997-12-28,1,1997
+"330","en route","human error",1998-02-02,104,1998
+"331","en route","human error",1998-03-18,13,1998
+"332","en route","human error",1998-04-20,53,1998
+"333","en route","human error",1998-05-26,28,1998
+"334","en route","human error",1998-07-29,12,1998
+"335","en route","human error",1999-06-17,17,1999
+"336","en route","human error",1999-07-24,17,1999
+"337","en route","human error",1999-10-31,217,1999
+"338","en route","human error",1999-11-09,18,1999
+"339","en route","human error",1999-11-12,24,1999
+"340","en route","human error",2000-01-10,10,2000
+"341","en route","human error",2000-01-15,5,2000
+"342","en route","human error",2000-01-31,88,2000
+"343","en route","human error",2000-07-27,25,2000
+"344","en route","human error",2001-08-23,4,2001
+"345","en route","human error",2001-10-04,78,2001
+"346","en route","human error",2001-11-12,265,2001
+"347","en route","human error",2001-11-19,27,2001
+"348","en route","human error",2001-12-16,16,2001
+"349","en route","human error",2002-01-17,26,2002
+"350","en route","human error",2002-07-01,69,2002
+"351","en route","human error",2002-12-23,44,2002
+"352","en route","human error",2004-11-30,2,2004
+"353","en route","human error",2005-08-06,16,2005
+"354","en route","human error",2005-08-14,121,2005
+"355","en route","human error",2005-08-16,160,2005
+"356","en route","human error",2005-10-22,117,2005
+"357","en route","human error",2006-03-31,19,2006
+"358","en route","human error",2006-08-22,170,2006
+"359","en route","human error",2006-09-29,154,2006
+"360","en route","human error",2007-01-01,102,2007
+"361","en route","human error",2007-05-05,114,2007
+"362","en route","human error",2007-10-08,17,2007
+"363","en route","human error",2008-02-21,46,2008
+"364","en route","human error",2009-06-01,228,2009
+"365","en route","human error",2009-08-02,15,2009
+"366","en route","human error",2010-11-04,68,2010
+"367","en route","human error",2011-07-11,7,2011
+"368","take-off","criminal",1995-01-28,2,1995
+"369","take-off","unknown",1993-06-28,3,1993
+"370","take-off","unknown",1996-09-18,5,1996
+"371","take-off","unknown",2000-02-08,1,2000
+"372","take-off","unknown",2008-04-15,40,2008
+"373","take-off","unknown",2012-08-22,4,2012
+"374","take-off","unknown",2013-07-07,10,2013
+"375","take-off","unknown",2014-08-10,39,2014
+"376","take-off","unknown",2015-02-04,43,2015
+"377","take-off","mechanical",1993-01-09,15,1993
+"378","take-off","mechanical",1993-07-23,55,1993
+"379","take-off","mechanical",1994-05-28,7,1994
+"380","take-off","mechanical",1994-09-26,1,1994
+"381","take-off","mechanical",1995-01-17,2,1995
+"382","take-off","mechanical",1995-01-20,3,1995
+"383","take-off","mechanical",1995-12-05,52,1995
+"384","take-off","mechanical",1996-02-12,10,1996
+"385","take-off","mechanical",1996-10-31,103,1996
+"386","take-off","mechanical",1997-12-13,10,1997
+"387","take-off","mechanical",1998-01-27,16,1998
+"388","take-off","mechanical",1998-07-30,9,1998
+"389","take-off","mechanical",2000-03-25,3,2000
+"390","take-off","mechanical",2000-07-25,113,2000
+"391","take-off","mechanical",2000-11-07,2,2000
+"392","take-off","mechanical",2000-11-15,57,2000
+"393","take-off","mechanical",2001-09-12,19,2001
+"394","take-off","mechanical",2003-03-06,102,2003
+"395","take-off","mechanical",2003-11-08,2,2003
+"396","take-off","mechanical",2005-03-26,9,2005
+"397","take-off","mechanical",2005-06-02,7,2005
+"398","take-off","mechanical",2007-08-09,20,2007
+"399","take-off","mechanical",2011-07-13,16,2011
+"400","take-off","mechanical",2012-09-28,19,2012
+"401","take-off","weather",1995-07-17,1,1995
+"402","take-off","weather",2000-03-09,9,2000
+"403","take-off","weather",2004-11-21,55,2004
+"404","take-off","human error",1993-03-05,83,1993
+"405","take-off","human error",1993-04-26,55,1993
+"406","take-off","human error",1993-08-28,82,1993
+"407","take-off","human error",1993-11-10,7,1993
+"408","take-off","human error",1994-09-29,8,1994
+"409","take-off","human error",1995-12-13,49,1995
+"410","take-off","human error",1996-01-08,237,1996
+"411","take-off","human error",1996-06-13,3,1996
+"412","take-off","human error",1996-07-06,2,1996
+"413","take-off","human error",1996-11-14,14,1996
+"414","take-off","human error",1998-08-29,80,1998
+"415","take-off","human error",1999-08-31,65,1999
+"416","take-off","human error",2000-01-30,169,2000
+"417","take-off","human error",2000-10-31,83,2000
+"418","take-off","human error",2001-09-18,8,2001
+"419","take-off","human error",2001-10-08,114,2001
+"420","take-off","human error",2003-01-08,21,2003
+"421","take-off","human error",2003-12-16,2,2003
+"422","take-off","human error",2003-12-25,141,2003
+"423","take-off","human error",2004-11-28,3,2004
+"424","take-off","human error",2005-09-05,149,2005
+"425","take-off","human error",2005-12-19,20,2005
+"426","take-off","human error",2006-07-10,45,2006
+"427","take-off","human error",2006-08-27,49,2006
+"428","take-off","human error",2006-10-29,96,2006
+"429","take-off","human error",2008-08-20,154,2008
+"430","take-off","human error",2010-01-25,90,2010
+"431","take-off","human error",2011-09-07,44,2011
+"432","take-off","human error",2012-04-02,33,2012
+"433","standing","criminal",1993-09-23,1,1993
+"434","standing","criminal",1994-12-26,7,1994
+"435","standing","mechanical",2009-11-12,1,2009
+"436","standing","mechanical",2011-01-01,3,2011
+"437","unknown","unknown",2000-08-12,27,2000
+"438","unknown","weather",2004-05-11,1,2004
+"439","unknown","human error",1995-12-18,141,1995

@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: CIA Factbook Details on Countries
-      :name: cia-factbook-details-on-countries
+      :name: cia_factbook
 
    .. rubric:: Description
       :name: description

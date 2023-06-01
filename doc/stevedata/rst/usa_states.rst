@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: State Abbreviations, Names, and Regions/Divisions
-      :name: state-abbreviations-names-and-regionsdivisions
+      :name: usa_states
 
    .. rubric:: Description
       :name: description

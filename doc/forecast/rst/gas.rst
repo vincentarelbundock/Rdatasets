@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Australian monthly gas production
-      :name: australian-monthly-gas-production
+      :name: gas
 
    .. rubric:: Description
       :name: description

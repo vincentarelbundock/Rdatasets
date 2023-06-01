@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Variables from the 1997 Canadian National Election Study
-      :name: variables-from-the-1997-canadian-national-election-study
+      :name: CNES
 
    .. rubric:: Description
       :name: description

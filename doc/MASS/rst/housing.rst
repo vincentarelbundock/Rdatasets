@@ -6,7 +6,7 @@
 
    .. rubric:: Frequency Table from a Copenhagen Housing Conditions
       Survey
-      :name: frequency-table-from-a-copenhagen-housing-conditions-survey
+      :name: housing
 
    .. rubric:: Description
       :name: description
@@ -66,13 +66,15 @@
       house.glm0 <- glm(Freq ~ Infl*Type*Cont + Sat, family = poisson,
                         data = housing)
       ## IGNORE_RDIFF_BEGIN
-      summary(house.glm0, cor = FALSE)
+      summary(house.glm0, correlation = FALSE)
       ## IGNORE_RDIFF_END
 
       addterm(house.glm0, ~. + Sat:(Infl+Type+Cont), test = "Chisq")
 
       house.glm1 <- update(house.glm0, . ~ . + Sat*(Infl+Type+Cont))
-      summary(house.glm1, cor = FALSE)
+      ## IGNORE_RDIFF_BEGIN
+      summary(house.glm1, correlation = FALSE)
+      ## IGNORE_RDIFF_END
 
       1 - pchisq(deviance(house.glm1), house.glm1$df.residual)
 

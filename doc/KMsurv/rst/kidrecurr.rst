@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Data on 38 individuals using a kidney dialysis machine
-      :name: data-on-38-individuals-using-a-kidney-dialysis-machine
+      :name: kidrecurr
 
    .. rubric:: Description
       :name: description

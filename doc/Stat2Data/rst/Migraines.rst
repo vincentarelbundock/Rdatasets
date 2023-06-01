@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Migraines and TMS
-      :name: migraines-and-tms
+      :name: Migraines
 
    .. rubric:: Description
       :name: description

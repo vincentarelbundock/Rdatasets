@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Variation in penicillin testing
-      :name: variation-in-penicillin-testing
+      :name: Penicillin
 
    .. rubric:: Description
       :name: description

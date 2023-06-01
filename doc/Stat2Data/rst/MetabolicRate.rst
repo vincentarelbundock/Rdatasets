@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Metabolic Rate of Caterpillars
-      :name: metabolic-rate-of-caterpillars
+      :name: MetabolicRate
 
    .. rubric:: Description
       :name: description

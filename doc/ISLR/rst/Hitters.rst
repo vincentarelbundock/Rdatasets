@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Baseball Data
-      :name: baseball-data
+      :name: Hitters
 
    .. rubric:: Description
       :name: description

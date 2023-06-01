@@ -1,0 +1,98 @@
+<!DOCTYPE html><html><head><title>R: Student Opinion about the Vietnam War</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Vietnam</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Vietnam'>Student Opinion about the Vietnam War</h2>
+
+<h3>Description</h3>
+
+<p>A survey of student opinion on the Vietnam War was taken at the
+University of North Carolina at Chapel Hill in May 1967 and published
+in the student newspaper. Students were asked to fill in ballot
+papers stating which policy out of A,B,C or D they supported.
+Responses were cross-classified by gender/year.
+</p>
+<p>The response categories were:
+</p>
+
+<dl>
+<dt><code>A</code></dt><dd><p>Defeat North Vietnam by widespread bombing and land invasion</p>
+</dd>
+<dt><code>B</code></dt><dd><p>Maintain the present policy</p>
+</dd>
+<dt><code>C</code></dt><dd><p>De-escalate military activity, stop bombing and begin negotiations</p>
+</dd>
+<dt><code>D</code></dt><dd><p>Withdraw military forces Immediately</p>
+</dd>
+</dl>
+
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Vietnam)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A frequency data frame with 40 observations representing a 2 x 5 x 4 contingency table
+on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>sex</code></dt><dd><p>a factor with levels <code>Female</code> <code>Male</code></p>
+</dd>
+<dt><code>year</code></dt><dd><p>year of study, an ordered factor with levels
+<code>Freshmen</code>, <code>Sophomore</code>, <code>Junior</code>, <code>Senior</code>, <code>Grad student</code></p>
+</dd>
+<dt><code>response</code></dt><dd><p>a factor with levels <code>A</code> <code>B</code> <code>C</code> <code>D</code></p>
+</dd>
+<dt><code>Freq</code></dt><dd><p>cell frequency, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>For some analyses, it is useful to treat <code>year</code> as numeric,
+and possibly assign grad students a value <code>year=7</code>.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Aitken, M. etal, 1989,  <em>Statistical Modelling in GLIM</em>
+</p>
+
+
+<h3>References</h3>
+
+<p>Friendly, M.  (2000), <em>Visualizing Categorical Data</em>, SAS Institute, Cary, NC,
+Example 7.9.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Vietnam)
+## maybe str(Vietnam) ; plot(Vietnam) ...
+</code></pre>
+
+
+</div>
+</body></html>

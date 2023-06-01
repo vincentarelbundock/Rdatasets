@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Ice Cream Consumption
-      :name: ice-cream-consumption
+      :name: Icecream
 
    .. rubric:: Description
       :name: description

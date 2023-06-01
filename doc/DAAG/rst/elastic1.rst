@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Elastic Band Data Replicated
-      :name: elastic-band-data-replicated
+      :name: elastic1
 
    .. rubric:: Description
       :name: description

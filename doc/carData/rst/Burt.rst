@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Fraudulent Data on IQs of Twins Raised Apart
-      :name: fraudulent-data-on-iqs-of-twins-raised-apart
+      :name: Burt
 
    .. rubric:: Description
       :name: description

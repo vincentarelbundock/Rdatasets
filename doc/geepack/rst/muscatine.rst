@@ -6,7 +6,7 @@
 
    .. rubric:: Data on Obesity from the Muscatine Coronary Risk Factor
       Study.
-      :name: data-on-obesity-from-the-muscatine-coronary-risk-factor-study.
+      :name: muscatine
 
    .. rubric:: Description
       :name: description

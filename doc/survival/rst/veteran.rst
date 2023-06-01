@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Veterans' Administration Lung Cancer study
-      :name: veterans-administration-lung-cancer-study
+      :name: veteran
 
    .. rubric:: Description
       :name: description

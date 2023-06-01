@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Data from heavy metal mixture experiments
-      :name: data-from-heavy-metal-mixture-experiments
+      :name: metals
 
    .. rubric:: Description
       :name: description

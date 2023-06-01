@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: US gun murders by state for 2010
-      :name: us-gun-murders-by-state-for-2010
+      :name: murders
 
    .. rubric:: Description
       :name: description
@@ -18,7 +18,7 @@
 
    ::
 
-      data(murders)
+      murders
 
    .. rubric:: Format
       :name: format
@@ -41,12 +41,11 @@
    .. rubric:: Source
       :name: source
 
-   `Wikipedia <https://en.wikipedia.org/wiki/Murder_in_the_United_States_by_state>`__
+   `Wikipedia <https://en.wikipedia.org/wiki/Gun_violence_in_the_United_States_by_state>`__
 
    .. rubric:: Examples
       :name: examples
 
    ::
 
-      data(murders)
       print(murders)

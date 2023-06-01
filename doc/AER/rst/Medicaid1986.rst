@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Medicaid Utilization Data
-      :name: medicaid-utilization-data
+      :name: Medicaid1986
 
    .. rubric:: Description
       :name: description

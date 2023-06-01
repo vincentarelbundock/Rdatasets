@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Daily Log Returns on BMW Share Price
-      :name: daily-log-returns-on-bmw-share-price
+      :name: bmw
 
    .. rubric:: Description
       :name: description

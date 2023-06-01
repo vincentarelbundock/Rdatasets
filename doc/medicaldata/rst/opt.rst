@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Obstetrics and Periodontal Therapy Dataset
-      :name: obstetrics-and-periodontal-therapy-dataset
+      :name: opt
 
    .. rubric:: Description
       :name: description

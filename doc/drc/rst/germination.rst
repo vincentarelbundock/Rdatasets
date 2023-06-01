@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Germination of three crops
-      :name: germination-of-three-crops
+      :name: germination
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Data from a trial of usrodeoxycholic acid
-      :name: data-from-a-trial-of-usrodeoxycholic-acid
+      :name: udca
 
    .. rubric:: Description
       :name: description

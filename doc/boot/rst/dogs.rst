@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Cardiac Data for Domestic Dogs
-      :name: cardiac-data-for-domestic-dogs
+      :name: dogs
 
    .. rubric:: Description
       :name: description

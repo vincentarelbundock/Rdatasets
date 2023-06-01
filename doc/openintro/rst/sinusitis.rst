@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Sinusitis and antibiotic experiment
-      :name: sinusitis-and-antibiotic-experiment
+      :name: sinusitis
 
    .. rubric:: Description
       :name: description

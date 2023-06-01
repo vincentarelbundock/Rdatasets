@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Effects of a Fungus on Tadpoles
-      :name: effects-of-a-fungus-on-tadpoles
+      :name: Tadpoles
 
    .. rubric:: Description
       :name: description

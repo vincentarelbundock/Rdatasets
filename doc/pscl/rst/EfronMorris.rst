@@ -6,7 +6,7 @@
 
    .. rubric:: Batting Averages for 18 major league baseball players,
       1970
-      :name: batting-averages-for-18-major-league-baseball-players-1970
+      :name: EfronMorris
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Effect of erythromycin on mixed sewage microorganisms
-      :name: effect-of-erythromycin-on-mixed-sewage-microorganisms
+      :name: etmotc
 
    .. rubric:: Description
       :name: description

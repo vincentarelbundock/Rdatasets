@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Australian athletes data set
-      :name: australian-athletes-data-set
+      :name: ais
 
    .. rubric:: Description
       :name: description

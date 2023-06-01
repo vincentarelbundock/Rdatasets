@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: United States House of Representatives historical make-up
-      :name: united-states-house-of-representatives-historical-make-up
+      :name: house
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: Visits to Physician Office
-      :name: visits-to-physician-office
+      :name: OFP
 
    .. rubric:: Description
       :name: description

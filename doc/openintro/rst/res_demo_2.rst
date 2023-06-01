@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Simulated data for regression
-      :name: simulated-data-for-regression
+      :name: res_demo_2
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Returns of Size-based Portfolios
-      :name: returns-of-size-based-portfolios
+      :name: Pricing
 
    .. rubric:: Description
       :name: description

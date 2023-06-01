@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Youth Risk Survey
-      :name: youth-risk-survey
+      :name: YouthRisk2009
 
    .. rubric:: Description
       :name: description

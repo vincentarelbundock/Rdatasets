@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Temperature Summary Data, Geography Limited
-      :name: temperature-summary-data-geography-limited
+      :name: climate70
 
    .. rubric:: Description
       :name: description

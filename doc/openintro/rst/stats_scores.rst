@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Final exam scores for twenty students
-      :name: final-exam-scores-for-twenty-students
+      :name: stats_scores
 
    .. rubric:: Description
       :name: description

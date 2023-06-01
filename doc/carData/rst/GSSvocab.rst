@@ -6,7 +6,7 @@
 
    .. rubric:: Data from the General Social Survey (GSS) from the
       National Opinion Research Center of the University of Chicago.
-      :name: data-from-the-general-social-survey-gss-from-the-national-opinion-research-center-of-the-university-of-chicago.
+      :name: GSSvocab
 
    .. rubric:: Description
       :name: description

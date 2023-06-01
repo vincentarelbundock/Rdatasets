@@ -16,7 +16,7 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>petrol</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
+<h2 id='petrol'>
 N. L. Prater's Petrol Refinery Data
 </h2>
 
@@ -97,7 +97,7 @@ Petrol[, 2:5] &lt;- scale(as.matrix(Petrol[, 2:5]), scale = FALSE)
 pet3.lme &lt;- lme(Y ~ SG + VP + V10 + EP,
                 random = ~ 1 | No, data = Petrol)
 pet3.lme &lt;- update(pet3.lme, method = "ML")
-pet4.lme &lt;- update(pet3.lme, fixed = Y ~ V10 + EP)
+pet4.lme &lt;- update(pet3.lme, fixed. = Y ~ V10 + EP)
 anova(pet4.lme, pet3.lme)
 </code></pre>
 

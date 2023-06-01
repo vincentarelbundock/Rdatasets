@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: U.S. Women's Labor Force Participation
-      :name: u.s.-womens-labor-force-participation
+      :name: Mroz87
 
    .. rubric:: Description
       :name: description

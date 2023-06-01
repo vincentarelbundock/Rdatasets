@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Morphological Measurements on Leptograpsus Crabs
-      :name: morphological-measurements-on-leptograpsus-crabs
+      :name: crabs
 
    .. rubric:: Description
       :name: description

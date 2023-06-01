@@ -6,7 +6,7 @@
 
    .. rubric:: RCT of Sulindac for Polyp Prevention in Familial
       Adenomatous Polyposis
-      :name: rct-of-sulindac-for-polyp-prevention-in-familial-adenomatous-polyposis
+      :name: polyps
 
    .. rubric:: Description
       :name: description

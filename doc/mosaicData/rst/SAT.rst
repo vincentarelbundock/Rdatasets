@@ -5,7 +5,7 @@
    === ===============
 
    .. rubric:: State by State SAT data
-      :name: state-by-state-sat-data
+      :name: SAT
 
    .. rubric:: Description
       :name: description

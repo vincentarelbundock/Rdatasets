@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: High-Flux Hemodialyzer
-      :name: high-flux-hemodialyzer
+      :name: Dialyzer
 
    .. rubric:: Description
       :name: description

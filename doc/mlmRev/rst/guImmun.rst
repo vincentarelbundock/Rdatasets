@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Immunization in Guatemala
-      :name: immunization-in-guatemala
+      :name: guImmun
 
    .. rubric:: Description
       :name: description

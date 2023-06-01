@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: 2d density estimate of Old Faithful data
-      :name: d-density-estimate-of-old-faithful-data
+      :name: faithfuld
 
    .. rubric:: Description
       :name: description

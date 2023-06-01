@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Fixed versus Adjustable Mortgages
-      :name: fixed-versus-adjustable-mortgages
+      :name: Mortgage
 
    .. rubric:: Description
       :name: description

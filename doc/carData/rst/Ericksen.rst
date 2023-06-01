@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: The 1980 U.S. Census Undercount
-      :name: the-1980-u.s.-census-undercount
+      :name: Ericksen
 
    .. rubric:: Description
       :name: description

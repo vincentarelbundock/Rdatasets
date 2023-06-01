@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Bladder Cancer Recurrences
-      :name: bladder-cancer-recurrences
+      :name: bladder
 
    .. rubric:: Description
       :name: description

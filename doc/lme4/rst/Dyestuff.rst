@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Yield of dyestuff by batch
-      :name: yield-of-dyestuff-by-batch
+      :name: Dyestuff
 
    .. rubric:: Description
       :name: description

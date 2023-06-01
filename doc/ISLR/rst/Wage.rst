@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Mid-Atlantic Wage Data
-      :name: mid-atlantic-wage-data
+      :name: Wage
 
    .. rubric:: Description
       :name: description

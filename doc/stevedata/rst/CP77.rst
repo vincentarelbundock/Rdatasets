@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Education Expenditure Data (Chatterjee and Price, 1977)
-      :name: education-expenditure-data-chatterjee-and-price-1977
+      :name: CP77
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Global Terrorism Database yearly summaries
-      :name: global-terrorism-database-yearly-summaries
+      :name: terrorism
 
    .. rubric:: Description
       :name: description

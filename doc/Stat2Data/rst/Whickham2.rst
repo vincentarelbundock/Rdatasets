@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Whickham Health Study
-      :name: whickham-health-study
+      :name: Whickham2
 
    .. rubric:: Description
       :name: description

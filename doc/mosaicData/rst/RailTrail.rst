@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Volume of Users of a Rail Trail
-      :name: volume-of-users-of-a-rail-trail
+      :name: RailTrail
 
    .. rubric:: Description
       :name: description

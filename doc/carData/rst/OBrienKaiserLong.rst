@@ -6,7 +6,7 @@
 
    .. rubric:: O'Brien and Kaiser's Repeated-Measures Data in "Long"
       Format
-      :name: obrien-and-kaisers-repeated-measures-data-in-long-format
+      :name: OBrienKaiserLong
 
    .. rubric:: Description
       :name: description

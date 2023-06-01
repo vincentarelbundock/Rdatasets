@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head><title>R: Alligator Food Choice</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Alligator</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Alligator'>
+Alligator Food Choice
+</h2>
+
+<h3>Description</h3>
+
+<p>The Alligator data, from Agresti (2002), comes from a study of the primary food choices of alligators 
+in four Florida lakes. Researchers classified the stomach contents of 219 captured alligators into five categories: 
+Fish (the most common primary food choice), Invertebrate (snails, insects, crayfish, etc.), 
+Reptile (turtles, alligators), Bird, and Other (amphibians, plants, household pets, stones, and other debris).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Alligator)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A frequency data frame with 80 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>lake</code></dt><dd><p>a factor with levels <code>George</code> <code>Hancock</code> <code>Oklawaha</code> <code>Trafford</code></p>
+</dd>
+<dt><code>sex</code></dt><dd><p>a factor with levels <code>female</code> <code>male</code></p>
+</dd>
+<dt><code>size</code></dt><dd><p>alligator size, a factor with levels <code>large</code> (&gt;2.3m) <code>small</code> (&lt;=2.3m)</p>
+</dd>
+<dt><code>food</code></dt><dd><p>primary food choice, a factor with levels <code>bird</code> <code>fish</code> <code>invert</code> <code>other</code> <code>reptile</code></p>
+</dd>
+<dt><code>count</code></dt><dd><p>cell frequency, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The table contains a fair number of 0 counts.
+</p>
+<p><code>food</code> is the response variable.  <code>fish</code> is the most frequent choice, and often
+taken as a baseline category in multinomial response models.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Agresti, A. (2002). <em>Categorical Data Analysis</em>, New York: Wiley, 2nd Ed., Table 7.1
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Alligator)
+
+# change from frequency data.frame to table
+allitable &lt;- xtabs(count ~ lake + sex + size + food, data=Alligator)
+# Agresti's Table 7.1
+structable(food ~ lake + sex + size, allitable)
+
+
+plot(allitable, shade=TRUE)
+
+# mutual independence model
+mosaic(~ food + lake + size, allitable, shade=TRUE)
+
+# food jointly independent of lake and size
+mosaic(~ food + lake + size, allitable, shade=TRUE, 
+       expected = ~lake:size + food)
+
+if (require(nnet)) {
+	# multinomial logit model
+	mod1 &lt;- multinom(food ~ lake + size + sex, data=Alligator, weights=count)
+}
+
+</code></pre>
+
+
+</div>
+</body></html>

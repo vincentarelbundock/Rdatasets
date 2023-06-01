@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Sample data sets for correlation problems
-      :name: sample-data-sets-for-correlation-problems
+      :name: corr_match
 
    .. rubric:: Description
       :name: description

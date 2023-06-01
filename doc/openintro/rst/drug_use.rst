@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Drug use of students and parents
-      :name: drug-use-of-students-and-parents
+      :name: drug_use
 
    .. rubric:: Description
       :name: description

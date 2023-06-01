@@ -16,7 +16,7 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>beav1</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2>
+<h2 id='beav1'>
 Body Temperature Series of Beaver 1
 </h2>
 
@@ -116,7 +116,7 @@ alpha &lt;- 0.80
 stemp &lt;- as.vector(temp - alpha*lag(temp, -1))
 sX &lt;- X[-1, ] - alpha * X[-115,]
 beav1.ls &lt;- lm(stemp ~ -1 + sX, na.action = na.omit)
-summary(beav1.ls, cor = FALSE)
+summary(beav1.ls, correlation = FALSE)
 rm(temp, activ)
 </code></pre>
 

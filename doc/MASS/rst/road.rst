@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Road Accident Deaths in US States
-      :name: road-accident-deaths-in-us-states
+      :name: road
 
    .. rubric:: Description
       :name: description

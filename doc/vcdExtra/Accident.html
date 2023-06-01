@@ -1,0 +1,162 @@
+<!DOCTYPE html><html><head><title>R: Traffic Accident Victims in France in 1958</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Accident</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Accident'>
+Traffic Accident Victims in France in 1958
+</h2>
+
+<h3>Description</h3>
+
+<p>Bertin (1983) used these data to illustrate the cross-classification of 
+data by numerous variables, each of which could have various types
+and could be assigned to various visual attributes.  
+</p>
+<p>For modeling and visualization purposes, the data can be treated as a
+4-way table using loglinear models and mosaic displays, or as a 
+frequency-weighted data frame using a binomial response for
+<code>result</code> (<code>"Died"</code> vs. <code>"Injured"</code>) and plots of
+predicted probabilities.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data(Accident)</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame in frequency form (comprising a 5 x 2 x 4 x 2 table)
+with 80 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>age</code></dt><dd><p>an ordered factor with levels <code>0-9</code> &lt; <code>10-19</code> &lt; <code>20-29</code> &lt; <code>30-49</code> &lt; <code>50+</code></p>
+</dd>
+<dt><code>result</code></dt><dd><p>a factor with levels <code>Died</code> <code>Injured</code></p>
+</dd>
+<dt><code>mode</code></dt><dd><p>mode of transportation,
+a factor with levels <code>4-Wheeled</code> <code>Bicycle</code> <code>Motorcycle</code> <code>Pedestrian</code></p>
+</dd>
+<dt><code>gender</code></dt><dd><p>a factor with levels <code>Female</code> <code>Male</code></p>
+</dd>
+<dt><code>Freq</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p><code>age</code> is an ordered factor, but arguably, <code>mode</code> should be treated as ordered, with levels
+<code>Pedestrian</code> &lt; <code>Bicycle</code> &lt; <code>Motorcycle</code> &lt; <code>4-Wheeled</code> 
+as Bertin does.  This affects the parameterization in models, so we don't do this directly in the
+data frame.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Bertin (1983), p. 30; original data from the Ministere des Travaux Publics
+</p>
+
+
+<h3>References</h3>
+
+<p>Bertin, J. (1983),  <em>Semiology of Graphics</em>, University of Wisconsin Press.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># examples
+data(Accident)
+head(Accident)
+
+# for graphs, reorder mode
+Accident$mode &lt;- ordered(Accident$mode,
+   levels=levels(Accident$mode)[c(4,2,3,1)])
+
+# Bertin's table
+accident_tab &lt;- xtabs(Freq ~ gender + mode + age + result, data=Accident)
+structable(mode + gender ~ age + result, data=accident_tab)
+
+## Loglinear models
+## ----------------
+
+# mutual independence
+acc.mod0 &lt;- glm(Freq ~ age + result + mode + gender, 
+                data=Accident, 
+                family=poisson)
+LRstats(acc.mod0)
+
+mosaic(acc.mod0, ~mode + age + gender + result)
+
+# result as a response
+acc.mod1 &lt;- glm(Freq ~ age*mode*gender + result, 
+                data=Accident, 
+                family=poisson)
+LRstats(acc.mod1)
+
+mosaic(acc.mod1, ~mode + age + gender + result, 
+    labeling_args = list(abbreviate = c(gender=1, result=4)))
+
+# allow two-way association of result with each explanatory variable
+acc.mod2 &lt;- glm(Freq ~ age*mode*gender + result*(age+mode+gender), 
+                data=Accident, 
+                family=poisson)
+LRstats(acc.mod2)
+mosaic(acc.mod2, ~mode + age + gender + result, 
+    labeling_args = list(abbreviate = c(gender=1, result=4)))
+
+acc.mods &lt;- glmlist(acc.mod0, acc.mod1, acc.mod2)
+LRstats(acc.mods)
+
+## Binomial (logistic regression) models for result
+## ------------------------------------------------
+library(car)  # for Anova()
+acc.bin1 &lt;- glm(result=='Died' ~ age + mode + gender, 
+    weights=Freq, data=Accident, family=binomial)
+Anova(acc.bin1)
+
+acc.bin2 &lt;- glm(result=='Died' ~ (age + mode + gender)^2, 
+    weights=Freq, data=Accident, family=binomial)
+Anova(acc.bin2)
+
+acc.bin3 &lt;- glm(result=='Died' ~ (age + mode + gender)^3, 
+    weights=Freq, data=Accident, family=binomial)
+Anova(acc.bin3)
+
+# compare models
+anova(acc.bin1, acc.bin2, acc.bin3, test="Chisq")
+
+# visualize probability of death with effect plots
+## Not run: 
+library(effects)
+plot(allEffects(acc.bin1), ylab='Pr (Died)')
+
+plot(allEffects(acc.bin2), ylab='Pr (Died)')
+
+## End(Not run)
+
+
+#</code></pre>
+
+
+</div>
+</body></html>

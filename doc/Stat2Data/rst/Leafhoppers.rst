@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Leafhopper Diet and Longevity
-      :name: leafhopper-diet-and-longevity
+      :name: Leafhoppers
 
    .. rubric:: Description
       :name: description

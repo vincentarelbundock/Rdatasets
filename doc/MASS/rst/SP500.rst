@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Returns of the Standard and Poors 500
-      :name: returns-of-the-standard-and-poors-500
+      :name: SP500
 
    .. rubric:: Description
       :name: description

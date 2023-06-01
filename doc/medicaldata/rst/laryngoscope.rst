@@ -6,7 +6,7 @@
 
    .. rubric:: Randomized, Comparison Trial of Video vs. Standard
       Laryngoscope
-      :name: randomized-comparison-trial-of-video-vs.-standard-laryngoscope
+      :name: laryngoscope
 
    .. rubric:: Description
       :name: description

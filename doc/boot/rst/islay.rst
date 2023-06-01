@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Jura Quartzite Azimuths on Islay
-      :name: jura-quartzite-azimuths-on-islay
+      :name: islay
 
    .. rubric:: Description
       :name: description

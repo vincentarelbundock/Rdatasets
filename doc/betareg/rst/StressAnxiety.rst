@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Dependency of Anxiety on Stress
-      :name: dependency-of-anxiety-on-stress
+      :name: StressAnxiety
 
    .. rubric:: Description
       :name: description

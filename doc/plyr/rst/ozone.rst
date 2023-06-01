@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Monthly ozone measurements over Central America.
-      :name: monthly-ozone-measurements-over-central-america.
+      :name: ozone
 
    .. rubric:: Description
       :name: description

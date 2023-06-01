@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Simulated data for SAT score improvement
-      :name: simulated-data-for-sat-score-improvement
+      :name: sat_improve
 
    .. rubric:: Description
       :name: description

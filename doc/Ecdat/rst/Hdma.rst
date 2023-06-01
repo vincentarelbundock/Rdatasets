@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: The Boston HMDA Data Set
-      :name: the-boston-hmda-data-set
+      :name: Hmda
 
    .. rubric:: Description
       :name: description

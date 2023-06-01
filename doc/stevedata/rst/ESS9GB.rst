@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: British Attitudes Toward Immigration (2018-19)
-      :name: british-attitudes-toward-immigration-2018-19
+      :name: ESS9GB
 
    .. rubric:: Description
       :name: description

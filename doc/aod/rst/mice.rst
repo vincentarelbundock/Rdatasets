@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Pregnant Female Mice Experiment
-      :name: pregnant-female-mice-experiment
+      :name: mice
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Students Estimates of Lecture Room Width
-      :name: students-estimates-of-lecture-room-width
+      :name: roomwidth
 
    .. rubric:: Description
       :name: description

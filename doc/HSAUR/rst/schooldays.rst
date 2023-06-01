@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Days not Spent at School
-      :name: days-not-spent-at-school
+      :name: schooldays
 
    .. rubric:: Description
       :name: description

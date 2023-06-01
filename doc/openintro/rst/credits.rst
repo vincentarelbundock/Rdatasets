@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: College credits.
-      :name: college-credits.
+      :name: credits
 
    .. rubric:: Description
       :name: description

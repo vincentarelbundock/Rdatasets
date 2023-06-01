@@ -5,7 +5,7 @@
    ========== ===============
 
    .. rubric:: Gender, Socioeconomic Class, and Interview Invites
-      :name: gender-socioeconomic-class-and-interview-invites
+      :name: law_resume
 
    .. rubric:: Description
       :name: description

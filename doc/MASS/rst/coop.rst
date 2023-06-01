@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Co-operative Trial in Analytical Chemistry
-      :name: co-operative-trial-in-analytical-chemistry
+      :name: coop
 
    .. rubric:: Description
       :name: description

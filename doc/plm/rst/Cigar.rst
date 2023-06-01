@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Cigarette Consumption
-      :name: cigarette-consumption
+      :name: Cigar
 
    .. rubric:: Description
       :name: description

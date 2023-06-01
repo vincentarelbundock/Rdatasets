@@ -5,7 +5,7 @@
    ====================== ===============
 
    .. rubric:: Minneapolis police use of force data.
-      :name: minneapolis-police-use-of-force-data.
+      :name: mn_police_use_of_force
 
    .. rubric:: Description
       :name: description

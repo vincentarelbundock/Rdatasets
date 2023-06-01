@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Electrical Resistance of Kiwi Fruit
-      :name: electrical-resistance-of-kiwi-fruit
+      :name: fruitohms
 
    .. rubric:: Description
       :name: description

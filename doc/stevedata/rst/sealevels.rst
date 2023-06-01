@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Global Average Absolute Sea Level Change, 1880–2015
-      :name: global-average-absolute-sea-level-change-18802015
+      :name: sealevels
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Education and Related Statistics for the U.S. States
-      :name: education-and-related-statistics-for-the-u.s.-states
+      :name: States
 
    .. rubric:: Description
       :name: description

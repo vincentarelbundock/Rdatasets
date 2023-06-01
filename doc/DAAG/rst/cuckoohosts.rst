@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Comparison of cuckoo eggs with host eggs
-      :name: comparison-of-cuckoo-eggs-with-host-eggs
+      :name: cuckoohosts
 
    .. rubric:: Description
       :name: description

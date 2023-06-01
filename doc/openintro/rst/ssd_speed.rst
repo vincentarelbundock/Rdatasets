@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: SSD read and write speeds
-      :name: ssd-read-and-write-speeds
+      :name: ssd_speed
 
    .. rubric:: Description
       :name: description

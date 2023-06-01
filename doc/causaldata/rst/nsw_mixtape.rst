@@ -6,7 +6,7 @@
 
    .. rubric:: Data from the National Supported Work Demonstration (NSW)
       job-training program
-      :name: data-from-the-national-supported-work-demonstration-nsw-job-training-program
+      :name: nsw_mixtape
 
    .. rubric:: Description
       :name: description

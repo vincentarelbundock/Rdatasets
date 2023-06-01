@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: 100 m Swimming World Records
-      :name: m-swimming-world-records
+      :name: SwimRecords
 
    .. rubric:: Description
       :name: description

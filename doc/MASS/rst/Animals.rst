@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Brain and Body Weights for 28 Species
-      :name: brain-and-body-weights-for-28-species
+      :name: Animals
 
    .. rubric:: Description
       :name: description

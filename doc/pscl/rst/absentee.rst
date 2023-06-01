@@ -6,7 +6,7 @@
 
    .. rubric:: Absentee and Machine Ballots in Pennsylvania State Senate
       Races
-      :name: absentee-and-machine-ballots-in-pennsylvania-state-senate-races
+      :name: absentee
 
    .. rubric:: Description
       :name: description

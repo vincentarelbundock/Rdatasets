@@ -6,7 +6,7 @@
 
    .. rubric:: Medical-Care Expenditure: A Cross-National Survey
       (Newhouse, 1977)
-      :name: medical-care-expenditure-a-cross-national-survey-newhouse-1977
+      :name: Newhouse77
 
    .. rubric:: Description
       :name: description

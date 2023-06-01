@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Populations Recorded by the US Census
-      :name: populations-recorded-by-the-us-census
+      :name: uspop
 
    .. rubric:: Description
       :name: description

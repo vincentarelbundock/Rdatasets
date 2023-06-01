@@ -5,7 +5,7 @@
    ========= ===============
 
    .. rubric:: Housing sales in TX
-      :name: housing-sales-in-tx
+      :name: txhousing
 
    .. rubric:: Description
       :name: description

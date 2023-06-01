@@ -6,7 +6,7 @@
 
    .. rubric:: Deaths from various causes, in London from 1629 till
       1881, with gaps
-      :name: deaths-from-various-causes-in-london-from-1629-till-1881-with-gaps
+      :name: poxetc
 
    .. rubric:: Description
       :name: description

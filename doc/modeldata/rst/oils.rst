@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Fatty acid composition of commercial oils
-      :name: fatty-acid-composition-of-commercial-oils
+      :name: oils
 
    .. rubric:: Description
       :name: description

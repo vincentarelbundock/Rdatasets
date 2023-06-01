@@ -1,0 +1,13 @@
+"","Disease","Gender","Occup","Freq"
+"1","Disease","Male","Unempl",254
+"2","None","Male","Unempl",759
+"3","Disease","Female","Unempl",431
+"4","None","Female","Unempl",10283
+"5","Disease","Male","WhiteCol",158
+"6","None","Male","WhiteCol",3155
+"7","Disease","Female","WhiteCol",52
+"8","None","Female","WhiteCol",3082
+"9","Disease","Male","BlueCol",87
+"10","None","Male","BlueCol",2829
+"11","Disease","Female","BlueCol",16
+"12","None","Female","BlueCol",416

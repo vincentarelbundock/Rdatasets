@@ -6,7 +6,7 @@
 
    .. rubric:: Effect of Calcium Chloride on Muscle Contraction in Rat
       Hearts
-      :name: effect-of-calcium-chloride-on-muscle-contraction-in-rat-hearts
+      :name: muscle
 
    .. rubric:: Description
       :name: description

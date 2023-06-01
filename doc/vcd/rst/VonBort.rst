@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Von Bortkiewicz Horse Kicks Data
-      :name: von-bortkiewicz-horse-kicks-data
+      :name: VonBort
 
    .. rubric:: Description
       :name: description

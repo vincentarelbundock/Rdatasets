@@ -5,7 +5,7 @@
    ============ ===============
 
    .. rubric:: Effectiveness of Insect Sprays
-      :name: effectiveness-of-insect-sprays
+      :name: InsectSprays
 
    .. rubric:: Description
       :name: description

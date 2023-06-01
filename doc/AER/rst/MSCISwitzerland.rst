@@ -5,7 +5,7 @@
    =============== ===============
 
    .. rubric:: MSCI Switzerland Index
-      :name: msci-switzerland-index
+      :name: MSCISwitzerland
 
    .. rubric:: Description
       :name: description

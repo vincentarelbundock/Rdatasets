@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Sales for a Clothing Retailer
-      :name: sales-for-a-clothing-retailer
+      :name: Clothing
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ===================== ===============
 
    .. rubric:: elections for U.S. President, 1932-2016, by state
-      :name: elections-for-u.s.-president-1932-2016-by-state
+      :name: presidentialElections
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ================== ===============
 
    .. rubric:: Political knowledge in the US and Europe
-      :name: political-knowledge-in-the-us-and-europe
+      :name: politicalKnowledge
 
    .. rubric:: Description
       :name: description

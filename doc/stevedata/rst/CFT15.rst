@@ -6,7 +6,7 @@
 
    .. rubric:: Randomization Inference in the Regression Discontinuity
       Design: An Application to Party Advantages in the U.S. Senate
-      :name: randomization-inference-in-the-regression-discontinuity-design-an-application-to-party-advantages-in-the-u.s.-senate
+      :name: CFT15
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ================= ===============
 
    .. rubric:: LME Aluminum Premiums Data
-      :name: lme-aluminum-premiums-data
+      :name: aluminum_premiums
 
    .. rubric:: Description
       :name: description

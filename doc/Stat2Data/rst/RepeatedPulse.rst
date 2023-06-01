@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Pulse Rates at Various Times of Day
-      :name: pulse-rates-at-various-times-of-day
+      :name: RepeatedPulse
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Foot measurements in children
-      :name: foot-measurements-in-children
+      :name: KidsFeet
 
    .. rubric:: Description
       :name: description

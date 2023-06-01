@@ -6,7 +6,7 @@
 
    .. rubric:: Level of Calculus Attained for Students Taking Advanced
       Micro–economics
-      :name: level-of-calculus-attained-for-students-taking-advanced-microeconomics
+      :name: Mathlevel
 
    .. rubric:: Description
       :name: description

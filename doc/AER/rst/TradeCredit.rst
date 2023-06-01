@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Trade Credit and the Money Market
-      :name: trade-credit-and-the-money-market
+      :name: TradeCredit
 
    .. rubric:: Description
       :name: description

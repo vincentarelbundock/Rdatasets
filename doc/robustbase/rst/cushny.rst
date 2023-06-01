@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: Cushny and Peebles Prolongation of Sleep Data
-      :name: cushny-and-peebles-prolongation-of-sleep-data
+      :name: cushny
 
    .. rubric:: Description
       :name: description

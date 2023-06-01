@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Sustainability and Economic Indicators for South Africa.
-      :name: sustainability-and-economic-indicators-for-south-africa.
+      :name: sa_gdp_elec
 
    .. rubric:: Description
       :name: description

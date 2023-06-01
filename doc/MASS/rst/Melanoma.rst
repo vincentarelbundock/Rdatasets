@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Survival from Malignant Melanoma
-      :name: survival-from-malignant-melanoma
+      :name: Melanoma
 
    .. rubric:: Description
       :name: description

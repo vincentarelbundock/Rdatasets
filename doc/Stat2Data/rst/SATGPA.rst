@@ -5,7 +5,7 @@
    ====== ===============
 
    .. rubric:: SAT Scores and GPA
-      :name: sat-scores-and-gpa
+      :name: SATGPA
 
    .. rubric:: Description
       :name: description

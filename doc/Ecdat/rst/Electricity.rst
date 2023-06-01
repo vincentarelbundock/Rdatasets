@@ -5,7 +5,7 @@
    =========== ===============
 
    .. rubric:: Cost Function for Electricity Producers
-      :name: cost-function-for-electricity-producers
+      :name: Electricity
 
    .. rubric:: Description
       :name: description

@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><title>R: Air Crash Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>AirCrash</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='AirCrash'>
+Air Crash Data
+</h2>
+
+<h3>Description</h3>
+
+<p>Data on all fatal commercial airplane crashes from 1993&ndash;2015.
+Excludes small planes (less than 6 passengers) and non-commercial (cargo, military, private) aircraft.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("AirCrash")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 439 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>Phase</code></dt><dd><p>phase of the flight, a factor with levels <code>en route</code> <code>landing</code> <code>standing</code> <code>take-off</code> <code>unknown</code></p>
+</dd>
+<dt><code>Cause</code></dt><dd><p>a factor with levels <code>criminal</code> <code>human error</code> <code>mechanical</code> <code>unknown</code> <code>weather</code></p>
+</dd>
+<dt><code>date</code></dt><dd><p>date of crash, a Date</p>
+</dd>
+<dt><code>Fatalities</code></dt><dd><p>number of fatalities, a numeric vector</p>
+</dd>
+<dt><code>Year</code></dt><dd><p>year, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p><code>Phase</code> of the flight was cleaned by combining related variants, spelling, etc.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Originally from David McCandless,
+<a href="http://www.informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/">http://www.informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/</a>,
+with the data at
+<a href="https://docs.google.com/spreadsheets/d/1OvDq4_BtbR6nSnnHnjD5hVC3HQ-ulZPGbo0RDGbzM3Q/edit?usp=drive_web">https://docs.google.com/spreadsheets/d/1OvDq4_BtbR6nSnnHnjD5hVC3HQ-ulZPGbo0RDGbzM3Q/edit?usp=drive_web</a>,
+downloaded April 14, 2015.
+</p>
+
+
+<h3>References</h3>
+
+<p>Rick Wicklin,
+<a href="http://blogs.sas.com/content/iml/2015/03/30/visualizing-airline-crashes.html">http://blogs.sas.com/content/iml/2015/03/30/visualizing-airline-crashes.html</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(AirCrash)
+aircrash.tab &lt;- xtabs(~Phase + Cause, data=AirCrash)
+mosaic(aircrash.tab, shade=TRUE)
+
+# fix label overlap
+mosaic(aircrash.tab, shade=TRUE, 
+       labeling_args=list(rot_labels=c(30, 30, 30, 30)))
+
+# reorder by Phase
+phase.ord &lt;- rev(c(3,4,1,2,5))
+mosaic(aircrash.tab[phase.ord,], shade=TRUE, 
+       labeling_args=list(rot_labels=c(30, 30, 30, 30)), 
+       offset_varnames=0.5)
+
+# reorder by frequency
+phase.ord &lt;- order(rowSums(aircrash.tab), decreasing=TRUE)
+cause.ord &lt;- order(colSums(aircrash.tab), decreasing=TRUE)
+mosaic(aircrash.tab[phase.ord,cause.ord], shade=TRUE, 
+       labeling_args=list(rot_labels=c(30, 30, 30, 30)))
+
+
+library(ca)
+aircrash.ca &lt;- ca(aircrash.tab)
+plot(aircrash.ca)
+</code></pre>
+
+
+</div>
+</body></html>

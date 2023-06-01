@@ -5,7 +5,7 @@
    =================== ===============
 
    .. rubric:: Nations with nuclear weapons
-      :name: nations-with-nuclear-weapons
+      :name: nuclearWeaponStates
 
    .. rubric:: Description
       :name: description

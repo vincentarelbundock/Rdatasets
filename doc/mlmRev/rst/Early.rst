@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Early childhood intervention study
-      :name: early-childhood-intervention-study
+      :name: Early
 
    .. rubric:: Description
       :name: description

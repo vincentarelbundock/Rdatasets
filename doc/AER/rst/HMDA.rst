@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Home Mortgage Disclosure Act Data
-      :name: home-mortgage-disclosure-act-data
+      :name: HMDA
 
    .. rubric:: Description
       :name: description

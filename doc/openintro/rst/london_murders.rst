@@ -5,7 +5,7 @@
    ============== ===============
 
    .. rubric:: London Murders, 2006-2011
-      :name: london-murders-2006-2011
+      :name: london_murders
 
    .. rubric:: Description
       :name: description

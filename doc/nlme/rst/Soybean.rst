@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Growth of soybean plants
-      :name: growth-of-soybean-plants
+      :name: Soybean
 
    .. rubric:: Description
       :name: description

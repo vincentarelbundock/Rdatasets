@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Quarterly retail trade: Euro area.
-      :name: quarterly-retail-trade-euro-area.
+      :name: euretail
 
    .. rubric:: Description
       :name: description

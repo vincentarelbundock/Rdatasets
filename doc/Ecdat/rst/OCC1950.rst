@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Evolution of occupational distribution in the US
-      :name: evolution-of-occupational-distribution-in-the-us
+      :name: OCC1950
 
    .. rubric:: Description
       :name: description

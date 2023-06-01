@@ -5,7 +5,7 @@
    ======= ===============
 
    .. rubric:: Growth Curves for Sitka Spruce Trees in 1989
-      :name: growth-curves-for-sitka-spruce-trees-in-1989
+      :name: Sitka89
 
    .. rubric:: Description
       :name: description

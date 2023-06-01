@@ -6,7 +6,7 @@
 
    .. rubric:: The Forbes 2000 Ranking of the World's Biggest Companies
       (Year 2004)
-      :name: the-forbes-2000-ranking-of-the-worlds-biggest-companies-year-2004
+      :name: Forbes2000
 
    .. rubric:: Description
       :name: description

@@ -5,7 +5,7 @@
    ======== ===============
 
    .. rubric:: Sales of Child Car Seats
-      :name: sales-of-child-car-seats
+      :name: Carseats
 
    .. rubric:: Description
       :name: description

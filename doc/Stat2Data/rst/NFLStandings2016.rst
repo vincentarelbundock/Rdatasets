@@ -5,7 +5,7 @@
    ================ ===============
 
    .. rubric:: NFL Standings for 2016 Regular Season
-      :name: nfl-standings-for-2016-regular-season
+      :name: NFLStandings2016
 
    .. rubric:: Description
       :name: description

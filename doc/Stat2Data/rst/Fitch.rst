@@ -5,7 +5,7 @@
    ===== ===============
 
    .. rubric:: Body Measurements of Mammal Species
-      :name: body-measurements-of-mammal-species
+      :name: Fitch
 
    .. rubric:: Description
       :name: description

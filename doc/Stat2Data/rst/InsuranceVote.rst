@@ -5,7 +5,7 @@
    ============= ===============
 
    .. rubric:: Congressional Votes on a Health Insurance Bill
-      :name: congressional-votes-on-a-health-insurance-bill
+      :name: InsuranceVote
 
    .. rubric:: Description
       :name: description
