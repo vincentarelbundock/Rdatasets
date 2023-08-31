@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("GermanUnemployment")
 
@@ -50,7 +50,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data("GermanUnemployment")
       plot(GermanUnemployment, plot.type = "single", col = 1:2)

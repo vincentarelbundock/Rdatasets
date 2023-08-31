@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(lizards)
 
@@ -69,6 +69,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(lizards)

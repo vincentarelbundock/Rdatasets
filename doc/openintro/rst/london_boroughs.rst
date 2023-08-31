@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       london_boroughs
 
@@ -70,7 +70,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       library(dplyr)
       library(ggplot2)

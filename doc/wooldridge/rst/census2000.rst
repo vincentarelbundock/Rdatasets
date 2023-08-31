@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('census2000')
 
@@ -51,6 +51,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(census2000)

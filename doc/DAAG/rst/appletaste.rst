@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(appletaste)
 
@@ -44,7 +44,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(appletaste)
       appletaste.aov <- aov(aftertaste ~ panelist + product, data=appletaste)

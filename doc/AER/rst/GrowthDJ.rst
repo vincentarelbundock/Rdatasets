@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("GrowthDJ")
 
@@ -99,7 +99,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## data for non-oil-producing countries
       data("GrowthDJ")

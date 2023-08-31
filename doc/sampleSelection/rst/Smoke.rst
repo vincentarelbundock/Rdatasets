@@ -23,7 +23,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Smoke)
 
@@ -84,7 +84,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data( Smoke )
       # boundaries of the intervals

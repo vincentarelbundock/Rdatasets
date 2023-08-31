@@ -22,7 +22,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(withinBetween)
 
@@ -110,7 +110,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(withinBetween)
       pairs.panels(withinBetween,bg=c("red","blue","white","black")[withinBetween[,1]],

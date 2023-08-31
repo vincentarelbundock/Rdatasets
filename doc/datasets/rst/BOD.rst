@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       BOD
 
@@ -45,7 +45,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       require(stats)
       # simplest form of fitting a first-order model to these data

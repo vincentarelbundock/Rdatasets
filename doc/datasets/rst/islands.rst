@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       islands
 
@@ -38,7 +38,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       require(graphics)
       dotchart(log(islands, 10),

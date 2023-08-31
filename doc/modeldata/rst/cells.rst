@@ -49,7 +49,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(cells)
       str(cells)

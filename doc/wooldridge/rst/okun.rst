@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('okun')
 
@@ -31,7 +31,7 @@
 
    -  **unem:** civilian unemployment rate
 
-   -  **cunem:** unem - unem[_n-1]
+   -  **cunem:** unem - unem[\_n-1]
 
    .. rubric:: Used in Text
       :name: used-in-text
@@ -46,6 +46,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(okun)

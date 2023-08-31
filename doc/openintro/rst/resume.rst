@@ -28,7 +28,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       resume
 
@@ -177,7 +177,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       head(resume, 5)
 

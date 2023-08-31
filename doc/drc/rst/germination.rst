@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(germination)
 
@@ -74,7 +74,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## Fitting two-parameter log-logistic curves to each combination of species and temperature 
       ##  (upper limit fixed at 1)

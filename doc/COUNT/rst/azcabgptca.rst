@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(azcabgptca)
 
@@ -63,7 +63,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(azcabgptca); attach(azcabgptca)
       table(los); table(procedure, type); table(los, procedure)

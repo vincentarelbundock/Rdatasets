@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(wagnerGrowth, package="robustbase")
 
@@ -70,7 +70,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(wagnerGrowth)
       ## maybe

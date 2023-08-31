@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('labsup')
 
@@ -88,6 +88,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(labsup)

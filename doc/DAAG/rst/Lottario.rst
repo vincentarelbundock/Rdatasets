@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       Lottario
 
@@ -47,7 +47,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        
       order(Lottario$Frequency)[33:39]  # the 7 most frequently chosen numbers

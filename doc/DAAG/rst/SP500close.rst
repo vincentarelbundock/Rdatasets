@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       SP500close
 
@@ -28,6 +28,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ts.plot(SP500close)

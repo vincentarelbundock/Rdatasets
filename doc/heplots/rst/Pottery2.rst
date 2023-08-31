@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Pottery2)
 
@@ -104,7 +104,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Pottery2)
       # contrasts for Kiln correspond to between Region [,1:2] and within Region [,3:4]

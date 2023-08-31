@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('crime3')
 
@@ -67,6 +67,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(crime3)

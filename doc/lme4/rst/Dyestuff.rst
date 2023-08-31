@@ -62,7 +62,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       require(lattice)
       str(Dyestuff)

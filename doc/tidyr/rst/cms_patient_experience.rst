@@ -25,7 +25,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       cms_patient_experience
 
@@ -65,7 +65,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       cms_patient_experience %>%
         dplyr::distinct(measure_cd, measure_title)

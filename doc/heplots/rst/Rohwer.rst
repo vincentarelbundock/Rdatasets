@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Rohwer)
 
@@ -81,7 +81,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       str(Rohwer)
 

@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       toycars
 
@@ -39,7 +39,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       toycars.lm <- lm(distance ~ angle + factor(car), data=toycars)
       summary(toycars.lm)

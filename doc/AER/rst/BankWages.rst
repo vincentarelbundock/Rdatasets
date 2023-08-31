@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("BankWages")
 
@@ -55,7 +55,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data("BankWages")
 

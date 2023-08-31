@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       leuk
 
@@ -67,7 +67,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       library(survival)
       plot(survfit(Surv(time) ~ ag, data = leuk), lty = 2:3, col = 2:3)

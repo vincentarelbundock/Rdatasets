@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(SiegelsEx, package="robustbase")
 
@@ -46,7 +46,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(SiegelsEx)
       plot(SiegelsEx, main = "Siegel's example for 'exact fit'")

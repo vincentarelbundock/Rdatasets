@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       mcu_films
 
@@ -61,7 +61,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       library(ggplot2)
       library(scales)

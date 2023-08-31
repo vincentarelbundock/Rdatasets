@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       nba_heights
 
@@ -45,6 +45,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       qqnorm(nba_heights$h_meters)

@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("heptathlon")
 
@@ -77,7 +77,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         data("heptathlon", package = "HSAUR")
         plot(heptathlon)

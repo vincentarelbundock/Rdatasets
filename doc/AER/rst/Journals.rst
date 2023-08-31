@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("Journals")
 
@@ -91,7 +91,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## data and transformed variables
       data("Journals")

@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Exam)
 
@@ -43,7 +43,7 @@
 
    intake
       Band of student's intake score - a factor. Levels are
-      ``bottom 25%``, ``mid 50%`` and ``top     25%``./
+      ``bottom 25%``, ``mid 50%`` and ``top 25%``./
 
    standLRT
       Standardised LR test score.
@@ -71,7 +71,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       str(Exam)
       summary(Exam)

@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Mobility)
 
@@ -29,10 +29,10 @@
    +----+-------------------------------+-------------------------------+
    | No | Name                          | Levels                        |
    +----+-------------------------------+-------------------------------+
-   | 1  | ``Son's_Oc                    | ``"UpNonMan", "LoNonMan", "Up |
-   |    | cupation}\tab \code{"UpNonMan | Manual", "LoManual", "Farm"`` |
-   |    | ", "LoNonMan", "UpManual", "L |                               |
-   |    | oManual", "Farm"}\cr     2\ta |                               |
+   | 1  | ``Son'                        | ``"UpNonMan", "LoNonMan", "Up |
+   |    | s_Occupation}\tab \code{"UpNo | Manual", "LoManual", "Farm"`` |
+   |    | nMan", "LoNonMan", "UpManual" |                               |
+   |    | , "LoManual", "Farm"}\cr 2\ta |                               |
    |    | b \code{Father's_Occupation`` |                               |
    +----+-------------------------------+-------------------------------+
    |    |                               |                               |
@@ -57,7 +57,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Mobility)
       Mobility

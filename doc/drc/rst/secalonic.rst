@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(secalonic)
 
@@ -51,7 +51,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## Fitting a four-parameter log-logistic model
       secalonic.m1 <- drm(rootl ~ dose, data = secalonic, fct = LL.4())

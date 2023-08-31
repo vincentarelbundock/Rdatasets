@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("steamUse", package="robustbase")
 
@@ -85,7 +85,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## Not run: 
       if(require("aprean3")) { # show how  'steamUse'  is related to 'dsa01a'

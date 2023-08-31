@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Marriage)
 
@@ -84,6 +84,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Marriage)

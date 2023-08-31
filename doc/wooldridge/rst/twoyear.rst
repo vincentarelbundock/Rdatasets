@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('twoyear')
 
@@ -92,6 +92,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(twoyear)

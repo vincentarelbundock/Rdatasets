@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("Iwasaki_Big_Five")
 
@@ -85,7 +85,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Iwasaki_Big_Five)
       str(Iwasaki_Big_Five)

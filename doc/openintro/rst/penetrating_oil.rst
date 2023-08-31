@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       penetrating_oil
 
@@ -44,7 +44,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       m <- lm(torque ~ treatment, data = penetrating_oil)
       anova(m)

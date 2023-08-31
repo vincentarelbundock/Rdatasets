@@ -25,7 +25,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       biontech_adolescents
 
@@ -52,7 +52,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       library(dplyr)
       library(ggplot2)

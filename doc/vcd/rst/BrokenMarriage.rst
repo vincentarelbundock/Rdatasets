@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("BrokenMarriage")
 
@@ -53,7 +53,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data("BrokenMarriage")
       structable(~ ., data = BrokenMarriage)

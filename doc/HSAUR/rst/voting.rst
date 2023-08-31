@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("voting")
 
@@ -41,7 +41,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         data("voting", package = "HSAUR")
         require("MASS")

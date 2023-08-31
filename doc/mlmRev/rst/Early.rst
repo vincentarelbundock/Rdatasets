@@ -21,7 +21,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Early)
 
@@ -52,6 +52,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       str(Early)

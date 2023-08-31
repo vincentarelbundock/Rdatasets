@@ -21,7 +21,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       Adopted
 
@@ -75,7 +75,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       # Treat as multivariate regression problem
       Adopted.mod <- lm(cbind(Age2IQ, Age4IQ, Age8IQ, Age13IQ) ~ AMED + BMIQ, 

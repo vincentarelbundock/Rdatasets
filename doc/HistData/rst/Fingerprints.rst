@@ -26,7 +26,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Fingerprints)
 
@@ -74,7 +74,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Fingerprints)
       xtabs(count ~ Whorls + Loops, data=Fingerprints)

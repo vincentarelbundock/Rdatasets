@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       divorce_margarine
 
@@ -44,6 +44,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       with(divorce_margarine, plot(margarine_consumption_per_capita, divorce_rate_maine))

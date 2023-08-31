@@ -30,7 +30,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       claridge
 

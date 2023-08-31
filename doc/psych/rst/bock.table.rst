@@ -21,7 +21,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(bock)
 
@@ -88,7 +88,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(bock)
       responses <- table2df(bock.table[,2:6],count=bock.table[,7],

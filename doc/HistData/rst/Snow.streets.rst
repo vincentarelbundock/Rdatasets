@@ -33,7 +33,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
         data(Snow.deaths)
           data(Snow.pumps)
@@ -176,7 +176,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Snow.deaths)
       data(Snow.pumps)

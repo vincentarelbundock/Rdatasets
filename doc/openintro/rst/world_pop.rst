@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       world_pop
 
@@ -218,7 +218,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       library(dplyr)
       library(ggplot2)

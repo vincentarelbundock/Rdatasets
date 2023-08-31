@@ -12,14 +12,14 @@
       :name: description
 
    A data set based on summary information provided in Inglehart's
-   (2003) article in \*PS: Political Science & Politics*. These data
+   (2003) article in \*PS: Political Science & Politics\*. These data
    would be from the article itself and only indirectly from the raw
    World or European Values Survey.
 
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       inglehart03
 

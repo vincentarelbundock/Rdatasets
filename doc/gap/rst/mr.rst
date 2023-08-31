@@ -99,7 +99,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       a2g(a1,a2)
       chr_pos_a1_a2(chr,pos,a1,a2,prefix="chr",seps=c(":","_","_"),uppercase=TRUE)

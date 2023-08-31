@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       Credit
 
@@ -82,7 +82,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       summary(Credit)
       lm(Balance ~ Student + Limit, data=Credit)

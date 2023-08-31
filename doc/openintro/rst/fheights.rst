@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       fheights
 
@@ -30,6 +30,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       hist(fheights$heights)

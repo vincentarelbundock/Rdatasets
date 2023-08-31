@@ -22,7 +22,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       Manitoba.lakes
 
@@ -47,7 +47,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       plot(Manitoba.lakes)
       plot(Manitoba.lakes[-1,])

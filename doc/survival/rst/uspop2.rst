@@ -40,7 +40,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       us50 <- uspop2[51:101,, "2000"]  #US 2000 population, 50 and over
       age <- as.integer(dimnames(us50)[[1]])

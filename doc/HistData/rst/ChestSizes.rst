@@ -24,7 +24,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(ChestSizes)
 
@@ -66,7 +66,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(ChestSizes)
 

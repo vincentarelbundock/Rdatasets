@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       litters
 
@@ -45,7 +45,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       print("Multiple Regression - Example 6.2")
 

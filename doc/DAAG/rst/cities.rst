@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       cities
 
@@ -55,7 +55,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       cities$have <- factor((cities$REGION=="ON")|(cities$REGION=="WEST"))
       plot(POP1996~POP1992, data=cities, col=as.integer(cities$have))

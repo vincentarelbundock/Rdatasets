@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       CO2
 
@@ -72,7 +72,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       require(stats); require(graphics)
 

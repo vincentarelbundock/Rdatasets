@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       Klein
 
@@ -72,7 +72,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       Klein$P.lag <- c(NA, Klein$P[-22])
       Klein$X.lag <- c(NA, Klein$X[-22])

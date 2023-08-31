@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       pair65
 
@@ -43,6 +43,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       twot.permutation(two65$ambient,two65$heated) # two sample permutation test

@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       intersalt
 
@@ -61,7 +61,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(intersalt)
       plot(bp ~ na, data=intersalt, xlab="Median sodium excretion (mmol/24h)",

@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("clouds")
 
@@ -84,7 +84,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         data("clouds", package = "HSAUR")
         layout(matrix(1:2, nrow = 2))

@@ -24,7 +24,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Cavendish)
 
@@ -83,7 +83,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Cavendish)
       summary(Cavendish)

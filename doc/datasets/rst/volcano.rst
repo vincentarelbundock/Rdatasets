@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       volcano
 
@@ -42,7 +42,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       require(grDevices); require(graphics)
       filled.contour(volcano, color.palette = terrain.colors, asp = 1)

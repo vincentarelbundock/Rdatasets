@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       ACF1
 
@@ -49,7 +49,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       sapply(split(ACF1$count,ACF1$endtime),var)
       plot(count ~ endtime, data=ACF1, pch=16)

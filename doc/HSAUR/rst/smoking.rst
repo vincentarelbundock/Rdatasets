@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("smoking")
 
@@ -66,7 +66,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         data("smoking", package = "HSAUR")
         boxplot(smoking$qt/smoking$tt,

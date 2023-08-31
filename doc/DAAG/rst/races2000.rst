@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       races2000
 
@@ -51,6 +51,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
           pairs(races2000[,-5])

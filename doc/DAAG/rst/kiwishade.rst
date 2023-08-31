@@ -21,7 +21,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       kiwishade
 
@@ -74,7 +74,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       print("Data Summary - Example 2.2.1")
       attach(kiwishade)

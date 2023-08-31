@@ -26,7 +26,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(salinity, package="robustbase")
 
@@ -71,7 +71,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(salinity)
       summary(lm.sali  <-        lm(Y ~ . , data = salinity))

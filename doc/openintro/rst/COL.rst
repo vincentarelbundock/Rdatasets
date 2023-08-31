@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       COL
 
@@ -36,7 +36,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       plot(1:7, 7:1,
         col = COL, pch = 19, cex = 6, xlab = "", ylab = "",

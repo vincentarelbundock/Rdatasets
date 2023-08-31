@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('prminwge')
 
@@ -67,11 +67,11 @@
 
    -  **lkaitz:** log(kaitz)
 
-   -  **lprun_1:** lprunemp[_n-1]
+   -  **lprun_1:** lprunemp[\_n-1]
 
    -  **lprepop:** log(prepop)
 
-   -  **lprep_1:** lprepop[_n-1]
+   -  **lprep_1:** lprepop[\_n-1]
 
    -  **mincov:** (avgmin/avgwage)*avgcov
 
@@ -96,6 +96,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(prminwge)

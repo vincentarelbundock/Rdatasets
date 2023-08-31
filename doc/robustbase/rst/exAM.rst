@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(exAM, package="robustbase")
 
@@ -29,7 +29,7 @@
       :name: details
 
    Because the points are not in general position, both LMS and LTS
-   typically *fail*; however, e.g., ``rlm(*,     method="MM")`` “works”.
+   typically *fail*; however, e.g., ``rlm(*, method="MM")`` “works”.
 
    .. rubric:: Source
       :name: source
@@ -43,7 +43,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(exAM)
       plot(exAM)

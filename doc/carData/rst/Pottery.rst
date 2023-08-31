@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       Pottery
 
@@ -55,6 +55,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       Pottery

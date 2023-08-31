@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("polyps3")
 
@@ -62,7 +62,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         data("polyps3", package = "HSAUR")
         plot(number3m ~ age, data = polyps3, pch = as.numeric(polyps3$treatment))

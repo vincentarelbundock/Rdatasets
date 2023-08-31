@@ -29,7 +29,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       autoplot(a10)
       ggseasonplot(a10)

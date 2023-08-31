@@ -25,7 +25,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
         data(nsw74demo)
         data(nsw74psid1)

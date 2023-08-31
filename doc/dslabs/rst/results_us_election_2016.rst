@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       polls_us_election_2016
 
@@ -78,6 +78,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       head(polls_us_election_2016)

@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(s3bbx)
 
@@ -59,6 +59,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       str(s3bbx)

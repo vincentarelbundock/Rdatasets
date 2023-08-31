@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       beav2
 
@@ -64,7 +64,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       attach(beav2)
       beav2$hours <- 24*(day-307) + trunc(time/100) + (time%%100)/60

@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('cement')
 
@@ -47,21 +47,21 @@
 
    -  **milemp:** military employment
 
-   -  **gprc:** log(prccem) - log(prccem[_n-1])
+   -  **gprc:** log(prccem) - log(prccem[\_n-1])
 
-   -  **gcem:** log(ipcem) - log(ipcem[_n-1])
+   -  **gcem:** log(ipcem) - log(ipcem[\_n-1])
 
-   -  **gprcpet:** log(prcpet) - log(prcpet[_n-1])
+   -  **gprcpet:** log(prcpet) - log(prcpet[\_n-1])
 
-   -  **gres:** log(rresc) - log(rresc[_n-1])
+   -  **gres:** log(rresc) - log(rresc[\_n-1])
 
-   -  **gnon:** log(rnonc) - log(rnonc[_n-1])
+   -  **gnon:** log(rnonc) - log(rnonc[\_n-1])
 
-   -  **gip:** log(ip) - log(ip[_n-1])
+   -  **gip:** log(ip) - log(ip[\_n-1])
 
-   -  **gdefs:** log(rdefs) - log(rdefs[_n-1])
+   -  **gdefs:** log(rdefs) - log(rdefs[\_n-1])
 
-   -  **gmilemp:** log(milemp) - log(milemp[_n-1])
+   -  **gmilemp:** log(milemp) - log(milemp[\_n-1])
 
    -  **jan:** =1 if month == 1
 
@@ -104,6 +104,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(cement)

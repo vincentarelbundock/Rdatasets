@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       gaba
 
@@ -67,7 +67,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(gaba)
       mr <- range(gaba$min)

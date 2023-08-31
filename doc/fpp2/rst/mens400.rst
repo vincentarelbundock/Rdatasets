@@ -23,6 +23,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       autoplot(mens400)

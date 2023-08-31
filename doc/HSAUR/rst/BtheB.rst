@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("BtheB")
 
@@ -76,7 +76,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         data("BtheB", package = "HSAUR")
         layout(matrix(1:2, nrow = 1))   

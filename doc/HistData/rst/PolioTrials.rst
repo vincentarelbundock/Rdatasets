@@ -22,7 +22,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(PolioTrials)
 
@@ -101,7 +101,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(PolioTrials)
       ## maybe str(PolioTrials) ; plot(PolioTrials) ...

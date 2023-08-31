@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       Wong
 
@@ -71,6 +71,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       summary(Wong)

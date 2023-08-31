@@ -21,7 +21,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(spinach)
 
@@ -59,7 +59,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## Displaying the first rows in the dataset
       head(spinach)  # displaying first 6 rows in the data set

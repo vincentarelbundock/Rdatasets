@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       outliers
 
@@ -42,6 +42,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       outliers

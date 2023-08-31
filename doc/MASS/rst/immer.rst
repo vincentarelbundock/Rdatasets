@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       immer
 
@@ -57,7 +57,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       immer.aov <- aov(cbind(Y1,Y2) ~ Loc + Var, data = immer)
       summary(immer.aov)

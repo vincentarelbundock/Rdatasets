@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("AirCrash")
 
@@ -67,7 +67,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(AirCrash)
       aircrash.tab <- xtabs(~Phase + Cause, data=AirCrash)

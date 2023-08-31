@@ -68,7 +68,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       str(VerbAgg)
       ## Show how  r2 := h(resp) is defined:

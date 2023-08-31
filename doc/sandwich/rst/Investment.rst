@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Investment)
 
@@ -64,7 +64,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## Willam H. Greene, Econometric Analysis, 2nd Ed.
       ## Chapter 15

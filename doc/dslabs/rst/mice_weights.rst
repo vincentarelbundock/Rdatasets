@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       mice_weights
 
@@ -43,7 +43,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       mice_weights |> head()
       with(mice_weights, table(sex, diet))

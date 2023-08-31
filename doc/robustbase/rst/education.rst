@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(education, package="robustbase")
 
@@ -55,7 +55,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(education)
       education.x <- data.matrix(education[, 3:5])

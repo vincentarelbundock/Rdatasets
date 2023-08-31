@@ -22,7 +22,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Minard.troops)
       data(Minard.cities)
@@ -102,7 +102,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Minard.troops)
       data(Minard.cities)

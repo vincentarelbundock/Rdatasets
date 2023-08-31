@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       sunspots
 
@@ -43,7 +43,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       require(graphics)
       plot(sunspots, main = "sunspots data", xlab = "Year",

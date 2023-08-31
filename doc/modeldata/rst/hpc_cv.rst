@@ -39,7 +39,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(hpc_cv)
       str(hpc_cv)

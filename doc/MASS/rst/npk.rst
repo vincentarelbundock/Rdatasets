@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       npk
 
@@ -45,7 +45,7 @@
    .. rubric:: Note
       :name: note
 
-   This dataset is also contained in R 3.0.2 and later.
+   This dataset is also contained in **R** 3.0.2 and later.
 
    .. rubric:: Source
       :name: source
@@ -61,7 +61,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       options(contrasts = c("contr.sum", "contr.poly"))
       npk.aov <- aov(yield ~ block + N*P*K, npk)

@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       cards
 
@@ -40,7 +40,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       table(cards$value)
       table(cards$color)

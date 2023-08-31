@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       TitanicSurvival
 
@@ -61,6 +61,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       summary(TitanicSurvival)

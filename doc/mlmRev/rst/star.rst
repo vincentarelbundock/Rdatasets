@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(star)
 
@@ -109,6 +109,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       str(star)

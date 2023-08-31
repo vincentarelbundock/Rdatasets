@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       health_coverage
 
@@ -40,7 +40,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
 
       table(health_coverage)

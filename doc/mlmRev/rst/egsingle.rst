@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(egsingle)
 
@@ -84,7 +84,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       str(egsingle)
       (fm1 <- lmer(math~year*size+female+(1|childid)+(1|schoolid), egsingle))

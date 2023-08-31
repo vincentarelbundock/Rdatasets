@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       spruce
 
@@ -57,7 +57,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(spruce)
       spruce$contr <- ifelse(spruce$ozone=="enriched", 0, 1)

@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       geophones
 
@@ -34,7 +34,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       plot(geophones)
       lines(lowess(geophones, f=.25))

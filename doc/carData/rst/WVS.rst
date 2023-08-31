@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       WVS
 
@@ -58,6 +58,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       summary(WVS)

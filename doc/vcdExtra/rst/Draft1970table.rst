@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Draft1970table)
 
@@ -27,8 +27,8 @@
       :name: format
 
    The format is: 'table' int [1:12, 1:3] 9 7 5 8 9 11 12 13 10 9 ... -
-   attr(*, "dimnames")=List of 2 ..$ Month: chr [1:12] "Jan" "Feb" "Mar"
-   "Apr" ... ..$ Risk : chr [1:3] "High" "Med" "Low"
+   attr(\*, "dimnames")=List of 2 ..$ Month: chr [1:12] "Jan" "Feb"
+   "Mar" "Apr" ... ..$ Risk : chr [1:3] "High" "Med" "Low"
 
    .. rubric:: Details
       :name: details
@@ -66,7 +66,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Draft1970table)
       chisq.test(Draft1970table)

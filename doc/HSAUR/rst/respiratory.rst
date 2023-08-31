@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("respiratory")
 
@@ -74,7 +74,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         data("respiratory", package = "HSAUR")
         mosaicplot(xtabs( ~ treatment + month + status, data = respiratory))

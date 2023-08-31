@@ -23,7 +23,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(kootenay, package="robustbase")
 
@@ -64,7 +64,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(kootenay)
       plot(kootenay, main = "'kootenay' data")

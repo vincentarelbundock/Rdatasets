@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("Suicide")
 
@@ -62,7 +62,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data("Suicide")
       structable(~ sex + method2 + age.group, data = Suicide)

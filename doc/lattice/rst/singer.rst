@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       singer
 
@@ -56,7 +56,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       # Separate histogram for each voice part (Figure 1.2 from Cleveland)
       histogram(~ height | voice.part,

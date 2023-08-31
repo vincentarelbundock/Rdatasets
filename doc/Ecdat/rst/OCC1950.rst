@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("OCC1950")
 
@@ -87,6 +87,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(OCC1950)

@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       gov_poll
 
@@ -41,6 +41,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       gov_poll

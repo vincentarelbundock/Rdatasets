@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       pew_energy_2018
 
@@ -45,7 +45,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(pew_energy_2018)
       lapply(pew_energy_2018, head)

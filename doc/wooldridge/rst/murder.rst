@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('murder')
 
@@ -43,15 +43,15 @@
 
    -  **d93:** =1 if year == 93
 
-   -  **cmrdrte:** mrdrte - mrdrte[_n-1]
+   -  **cmrdrte:** mrdrte - mrdrte[\_n-1]
 
-   -  **cexec:** exec - exec[_n-1]
+   -  **cexec:** exec - exec[\_n-1]
 
-   -  **cunem:** unem - unem[_n-1]
+   -  **cunem:** unem - unem[\_n-1]
 
-   -  **cexec_1:** cexec[_n-1]
+   -  **cexec_1:** cexec[\_n-1]
 
-   -  **cunem_1:** cunem[_n-1]
+   -  **cunem_1:** cunem[\_n-1]
 
    .. rubric:: Notes
       :name: notes
@@ -72,6 +72,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(murder)

@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       birthwt
 
@@ -70,7 +70,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       bwt <- with(birthwt, {
       race <- factor(race, labels = c("white", "black", "other"))

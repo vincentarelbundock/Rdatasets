@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       rosling_responses
 
@@ -51,7 +51,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       frac_correct <- tapply(
         rosling_responses$response == "correct",

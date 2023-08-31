@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       stats_scores
 
@@ -30,6 +30,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       stats_scores

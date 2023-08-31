@@ -11,14 +11,14 @@
       :name: description
 
    These data are in Table 9.1 of the 3rd edition of Agresti and
-   Finlay's \*Statistical Methods for the Social Sciences*. The data are
-   from \*Statistical Abstract of the United States\* and most variables
-   were measured in 1993.
+   Finlay's \*Statistical Methods for the Social Sciences\*. The data
+   are from \*Statistical Abstract of the United States\* and most
+   variables were measured in 1993.
 
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       af_crime93
 

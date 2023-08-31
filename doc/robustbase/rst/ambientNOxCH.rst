@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(ambientNOxCH, package="robustbase")
 
@@ -119,7 +119,7 @@
       :name: source
 
    | http://www.in-luft.ch/
-   | http://www.empa.ch/plugin/template/empa/*/6794
+   | http://www.empa.ch/plugin/template/empa/\*/6794
    | http://www.bafu.admin.ch/umweltbeobachtung/02272/02280
 
    .. rubric:: See Also
@@ -130,7 +130,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(ambientNOxCH)
       str (ambientNOxCH)

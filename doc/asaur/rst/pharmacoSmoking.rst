@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("pharmacoSmoking")
 
@@ -85,6 +85,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(pharmacoSmoking)

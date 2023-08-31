@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       burger
 
@@ -39,6 +39,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       table(burger)

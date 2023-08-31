@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       death_prob
 
@@ -43,6 +43,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       head(death_prob)

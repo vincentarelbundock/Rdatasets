@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       country_codes
 
@@ -43,7 +43,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       if (require("dplyr")) {
         gapminder %>%

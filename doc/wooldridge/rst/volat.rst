@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('volat')
 
@@ -44,23 +44,23 @@
 
    -  **pcip:** pct chg, IP, ann rate
 
-   -  **ci3:** i3 - i3[_n-1]
+   -  **ci3:** i3 - i3[\_n-1]
 
-   -  **ci3_1:** ci3[_n-1]
+   -  **ci3_1:** ci3[\_n-1]
 
-   -  **ci3_2:** ci3[_n-2]
+   -  **ci3_2:** ci3[\_n-2]
 
-   -  **pcip_1:** pcip[_n-1]
+   -  **pcip_1:** pcip[\_n-1]
 
-   -  **pcip_2:** pcip[_n-2]
+   -  **pcip_2:** pcip[\_n-2]
 
-   -  **pcip_3:** pcip[_n-3]
+   -  **pcip_3:** pcip[\_n-3]
 
-   -  **pcsp_1:** pcip[_n-1]
+   -  **pcsp_1:** pcip[\_n-1]
 
-   -  **pcsp_2:** pcip[_n-2]
+   -  **pcsp_2:** pcip[\_n-2]
 
-   -  **pcsp_3:** pcip[_n-3]
+   -  **pcsp_3:** pcip[\_n-3]
 
    .. rubric:: Used in Text
       :name: used-in-text
@@ -75,6 +75,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(volat)

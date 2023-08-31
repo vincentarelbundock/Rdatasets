@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("womensrole")
 
@@ -56,7 +56,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         data("womensrole", package = "HSAUR")
         summary(subset(womensrole, sex == "Female"))

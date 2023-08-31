@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("VisualAcuity")
 
@@ -56,7 +56,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data("VisualAcuity")
       structable(~ gender + left + right, data = VisualAcuity)

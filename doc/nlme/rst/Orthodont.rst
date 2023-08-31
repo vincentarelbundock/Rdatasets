@@ -57,7 +57,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       formula(Orthodont)
       plot(Orthodont)

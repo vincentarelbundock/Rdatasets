@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(loomis)
 
@@ -83,7 +83,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(loomis)
       glmlmp <- glm(anvisits ~ gender + factor(income) + factor(travel), family=poisson, data=loomis)

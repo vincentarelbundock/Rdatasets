@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       Rossi
 
@@ -238,6 +238,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       summary(Rossi)

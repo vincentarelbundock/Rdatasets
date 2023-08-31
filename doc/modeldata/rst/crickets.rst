@@ -35,7 +35,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(crickets)
       str(crickets)

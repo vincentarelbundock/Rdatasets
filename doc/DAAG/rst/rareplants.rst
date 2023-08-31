@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       rareplants
 
@@ -38,6 +38,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       chisq.test(rareplants)

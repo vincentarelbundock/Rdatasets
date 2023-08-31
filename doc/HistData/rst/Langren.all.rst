@@ -35,7 +35,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
         data(Langren1644)
           data(Langren.all)
@@ -108,7 +108,7 @@
    located relatively at the value of ``Longitude`` To judge
    correspondence with an actual map, the positions in (lat, long) are
 
-   ``toledo <- c(39.86, -4.03);     rome   <- c(41.89, 12.5)``
+   ``toledo <- c(39.86, -4.03); rome <- c(41.89, 12.5)``
 
    .. rubric:: Source
       :name: source
@@ -134,7 +134,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Langren1644)
 

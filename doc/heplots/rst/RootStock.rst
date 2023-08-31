@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(RootStock)
 
@@ -64,7 +64,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(RootStock)
       ## maybe str(RootStock) ; plot(RootStock) ...

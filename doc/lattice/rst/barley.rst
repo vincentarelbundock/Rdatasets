@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       barley
 
@@ -95,7 +95,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       # Graphic suggesting the Morris data switched the years 1931 and 1932
       # Figure 1.1 from Cleveland

@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       yawn
 
@@ -43,6 +43,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       yawn

@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("students")
 
@@ -52,7 +52,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         data("students", package = "HSAUR")
         layout(matrix(1:2, ncol = 2))

@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       mgus
       mgus1
@@ -115,7 +115,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       # Create the competing risk curves for time to first of death or PCM
       sfit <- survfit(Surv(start, stop, event) ~ sex, mgus1, id=id,

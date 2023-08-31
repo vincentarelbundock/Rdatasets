@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("Glass")
 
@@ -67,7 +67,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Glass)
       glass.tab <- xtabs(Freq ~ father + son, data=Glass)

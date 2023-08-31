@@ -31,7 +31,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(bivariate)
       str(bivariate_train)

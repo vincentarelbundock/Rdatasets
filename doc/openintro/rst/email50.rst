@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       email50
 
@@ -109,7 +109,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       index <- c(
         101, 105, 116, 162, 194, 211, 263, 308, 361, 374,

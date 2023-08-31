@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       band_members
 
@@ -42,7 +42,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       band_members
       band_instruments

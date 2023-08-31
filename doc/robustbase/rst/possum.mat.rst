@@ -25,7 +25,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(possumDiv, package="robustbase")
 
@@ -132,7 +132,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(possumDiv)
       head(possum.mat)

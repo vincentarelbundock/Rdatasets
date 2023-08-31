@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('traffic2')
 
@@ -121,7 +121,7 @@
 
    -  **beltt:** beltlaw*t
 
-   -  **prcfat_1:** prcfat[_n-1]
+   -  **prcfat_1:** prcfat[\_n-1]
 
    .. rubric:: Notes
       :name: notes
@@ -142,6 +142,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(traffic2)

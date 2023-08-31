@@ -33,7 +33,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Vietnam)
 
@@ -76,7 +76,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Vietnam)
       ## maybe str(Vietnam) ; plot(Vietnam) ...

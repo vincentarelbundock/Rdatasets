@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("PublicSchools")
 
@@ -52,7 +52,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## Willam H. Greene, Econometric Analysis, 2nd Ed.
       ## Chapter 14

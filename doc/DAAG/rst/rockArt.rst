@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       rockArt
 
@@ -1967,7 +1967,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(rockArt)
       rockart.dist <- dist(x = as.matrix(rockArt[, 28:641]), method = "binary")

@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       kyphosis
 
@@ -47,7 +47,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       fit <- rpart(Kyphosis ~ Age + Number + Start, data = kyphosis)
       fit2 <- rpart(Kyphosis ~ Age + Number + Start, data = kyphosis,

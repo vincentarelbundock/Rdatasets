@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       seedrates
 
@@ -46,7 +46,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       plot(grain~rate,data=seedrates,xlim=c(50,180),ylim=c(15.5,22),axes=FALSE)
       new.df<-data.frame(rate=(2:8)*25)

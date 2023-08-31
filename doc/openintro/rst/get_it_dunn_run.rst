@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       get_it_dunn_run
 
@@ -68,7 +68,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       d <- subset(
         get_it_dunn_run,

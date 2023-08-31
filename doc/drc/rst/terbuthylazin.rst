@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(terbuthylazin)
 
@@ -48,7 +48,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## displaying first 6 rows of the data set
       head(terbuthylazin)

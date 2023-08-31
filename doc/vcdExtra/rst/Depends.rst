@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Depends)
 
@@ -28,8 +28,8 @@
    1, 2, ... dependencies.
 
    'table' int [1:15(1d)] 986 1347 993 685 375 298 155 65 32 19 ... -
-   attr(*, "dimnames")=List of 1 ..$ Depends: chr [1:15] "0" "1" "2" "3"
-   ...
+   attr(\*, "dimnames")=List of 1 ..$ Depends: chr [1:15] "0" "1" "2"
+   "3" ...
 
    .. rubric:: Source
       :name: source
@@ -40,7 +40,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Depends)
       plot(Depends, 

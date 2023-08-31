@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       trump_tweets
 
@@ -54,6 +54,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       head(trump_tweets)

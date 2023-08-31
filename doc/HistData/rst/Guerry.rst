@@ -23,7 +23,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Guerry)
 
@@ -189,7 +189,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Guerry)
       ## maybe str(Guerry) ; plot(Guerry) ...

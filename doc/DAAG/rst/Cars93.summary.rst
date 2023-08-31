@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       Cars93.summary
 
@@ -54,7 +54,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       type <- Cars93.summary$abbrev
       type <- Cars93.summary[,4]

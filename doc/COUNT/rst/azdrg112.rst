@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(azdrg112)
 
@@ -61,7 +61,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(azdrg112)
       glmazp <- glm(los ~ type1 + gender + age75, family=poisson, data=azdrg112)

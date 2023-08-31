@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       pressure
 
@@ -44,7 +44,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       require(graphics)
       plot(pressure, xlab = "Temperature (deg C)",

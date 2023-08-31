@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(lactic, package="robustbase")
 
@@ -41,7 +41,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(lactic)
       summary(lm.lactic <- lm(Y ~., data=lactic))

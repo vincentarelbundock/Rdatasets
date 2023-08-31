@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       OBrienKaiserLong
 
@@ -61,6 +61,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       head(OBrienKaiserLong, 15) # first subject

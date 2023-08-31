@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       exams
 
@@ -30,6 +30,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       hist(exams$scores)

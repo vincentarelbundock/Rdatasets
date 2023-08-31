@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       motors
 
@@ -57,7 +57,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       library(survival)
       plot(survfit(Surv(time, cens) ~ factor(temp), motors), conf.int = FALSE)

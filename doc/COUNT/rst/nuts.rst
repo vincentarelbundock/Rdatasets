@@ -24,7 +24,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(nuts)
 
@@ -80,7 +80,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(nuts)
       nut <- subset(nuts, dbh < 0.6)

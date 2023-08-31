@@ -25,7 +25,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("Cormorants")
 
@@ -85,7 +85,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Cormorants)
       str(Cormorants)

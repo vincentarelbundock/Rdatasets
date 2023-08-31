@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       nba_players_19
 
@@ -53,7 +53,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       hist(nba_players_19$height, 20)
       table(nba_players_19$team)

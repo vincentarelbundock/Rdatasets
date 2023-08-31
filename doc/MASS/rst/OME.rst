@@ -25,7 +25,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       OME
 
@@ -93,7 +93,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       # Fit logistic curve from p = 0.5 to p = 1.0
       fp1 <- deriv(~ 0.5 + 0.5/(1 + exp(-(x-L75)/scal)),

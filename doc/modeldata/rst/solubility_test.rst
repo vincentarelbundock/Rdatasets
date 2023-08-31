@@ -35,7 +35,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(solubility_test)
       str(solubility_test)

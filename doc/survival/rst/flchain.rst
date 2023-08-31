@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       flchain
       data(flchain, package="survival")
@@ -113,7 +113,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(flchain)
       age.grp <-  cut(flchain$age, c(49,54, 59,64, 69,74,79, 89, 110),

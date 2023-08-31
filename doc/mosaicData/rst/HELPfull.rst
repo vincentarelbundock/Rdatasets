@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(HELPfull)
 
@@ -464,7 +464,7 @@
 
    -  ``C3F_T`` a factor with levels ``7`` ``CRABS``
       ``CRABS - TRICHONOMIS`` ``CRABS, HEP B`` ``DOESNT KNOW NAME``
-      ``HAS HAD ALL 3  ABC`` ``HEP B`` ``HEP B, TRICAMONAS`` ``HEP. B``
+      ``HAS HAD ALL 3 ABC`` ``HEP B`` ``HEP B, TRICAMONAS`` ``HEP. B``
       ``HEPATITIS B`` ``HEPATITS B`` ``TRICHAMONAS VAGINALA``
       ``TRICHAMONIS`` ``TRICHOMONAS`` ``TRICHOMONIASIS`` ``TRICHOMONIS``
       ``TRICHOMONIS VAGINITI`` ``TRICHOMORAS`` ``TRICHONOMIS``
@@ -2043,6 +2043,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(HELPfull)

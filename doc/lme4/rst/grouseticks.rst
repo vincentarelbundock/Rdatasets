@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(grouseticks)
 
@@ -73,7 +73,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       if (interactive()) {
       data(grouseticks)

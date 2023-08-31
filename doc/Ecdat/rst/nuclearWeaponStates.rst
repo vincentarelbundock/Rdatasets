@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(nuclearWeaponStates)
 
@@ -255,7 +255,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(nuclearWeaponStates)
       plot(yearsSinceLastFirstTest~firstTest, 

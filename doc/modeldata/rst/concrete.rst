@@ -33,7 +33,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(concrete)
       str(concrete)

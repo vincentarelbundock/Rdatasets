@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("orallesions")
 
@@ -35,7 +35,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         data("orallesions", package = "HSAUR")
         mosaicplot(orallesions)

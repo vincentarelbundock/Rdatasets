@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       male_heights_fcid
 
@@ -36,7 +36,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(male_heights_fcid)
       histPlot(male_heights_fcid$height_inch)

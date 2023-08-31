@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Gcsemv)
 
@@ -55,6 +55,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       str(Gcsemv)

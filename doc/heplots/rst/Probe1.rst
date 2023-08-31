@@ -34,7 +34,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
         data(Probe1)
         data(Probe2)
@@ -98,7 +98,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Probe1)
       boxplot(Probe1)

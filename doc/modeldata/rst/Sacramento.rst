@@ -34,7 +34,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Sacramento)
       str(Sacramento)

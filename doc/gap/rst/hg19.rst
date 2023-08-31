@@ -80,7 +80,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       sun3d(xyz="INF1.merge.cis.vs.trans",
             cols=c("id","chr1","pos1","chr2","pos2","gene","target","log10p","x","y","col"),

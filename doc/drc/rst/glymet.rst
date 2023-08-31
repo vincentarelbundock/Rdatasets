@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(glymet)
 
@@ -60,7 +60,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
 
       ## Fitting the model with freely varying ED50 values

@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       frogs
 
@@ -66,7 +66,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       print("Multiple Logistic Regression - Example 8.2")
 

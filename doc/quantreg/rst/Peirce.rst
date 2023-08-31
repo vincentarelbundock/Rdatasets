@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Peirce)
 
@@ -81,7 +81,7 @@
    .. rubric:: References
       :name: references
 
-   Fr\'echet, M. (1924): “Sur la loi des erreurs d'observation,”
+   Fr\\'echet, M. (1924): “Sur la loi des erreurs d'observation,”
    *Matematichiskii Sbornik*, 32, 5–8. Koenker, R. (2009): “The Median
    is the Message: Wilson and Hilferty's Reanalysis of C.S. Peirce's
    Experiments on the Law of Errors,” *American Statistician*, 63,
@@ -94,7 +94,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       # Make table like Wilson and Hilferty
 

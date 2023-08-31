@@ -28,7 +28,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("Diabetes")
 
@@ -97,7 +97,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Diabetes)
       col <- c("blue", "red", "darkgreen")[Diabetes$group]

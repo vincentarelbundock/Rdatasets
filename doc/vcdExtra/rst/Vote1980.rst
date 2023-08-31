@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Vote1980)
 
@@ -65,7 +65,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Vote1980)
       fourfold(xtabs(Freq ~ race + votefor + conservatism, 

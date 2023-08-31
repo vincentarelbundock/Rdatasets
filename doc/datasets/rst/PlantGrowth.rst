@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       PlantGrowth
 
@@ -42,7 +42,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## One factor ANOVA example from Dobson's book, cf. Table 7.4:
       require(stats); require(graphics)

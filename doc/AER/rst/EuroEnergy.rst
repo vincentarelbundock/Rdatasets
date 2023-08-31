@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("EuroEnergy")
 
@@ -51,7 +51,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data("EuroEnergy")
       energy_lm <- lm(log(energy) ~ log(gdp), data = EuroEnergy)

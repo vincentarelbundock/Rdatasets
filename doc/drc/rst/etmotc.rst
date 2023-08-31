@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(etmotc)
 
@@ -66,7 +66,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       etmotc.m1<-drm(rgr1~dose1, data=etmotc[1:15,], fct=LL.4())
       plot(etmotc.m1)

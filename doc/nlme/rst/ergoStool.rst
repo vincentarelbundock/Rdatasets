@@ -48,7 +48,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       fm1 <-
          lme(effort ~ Type, data = ergoStool, random = ~ 1 | Subject)

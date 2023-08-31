@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(UStaxWords)
 
@@ -129,7 +129,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(UStaxWords)
       plot(EntireTaxCodeAndRegs/1000 ~ year, UStaxWords, 

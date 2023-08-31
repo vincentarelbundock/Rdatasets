@@ -57,7 +57,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(USGDPpresidents)
 
@@ -344,7 +344,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ##
       ## GDP, Presidents and Wars 

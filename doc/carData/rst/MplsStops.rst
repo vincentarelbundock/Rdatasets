@@ -94,6 +94,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       summary(MplsStops)

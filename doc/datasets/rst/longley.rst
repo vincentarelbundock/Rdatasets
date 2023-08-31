@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       longley
 
@@ -65,7 +65,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       require(stats); require(graphics)
       ## give the data set in the form it is used in S-PLUS:

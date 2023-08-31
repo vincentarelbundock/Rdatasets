@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       Arrests
 
@@ -62,6 +62,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         summary(Arrests)

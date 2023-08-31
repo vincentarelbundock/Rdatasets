@@ -21,7 +21,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Mroz)
 
@@ -125,7 +125,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       head(Mroz)
 

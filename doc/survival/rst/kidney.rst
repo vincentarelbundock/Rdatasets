@@ -25,7 +25,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       kidney
       data(cancer, package="survival")
@@ -59,7 +59,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       kfit <- coxph(Surv(time, status)~ age + sex + disease + frailty(id), kidney)
       kfit0 <- coxph(Surv(time, status)~ age + sex + disease, kidney)

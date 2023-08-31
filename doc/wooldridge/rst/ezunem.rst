@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('ezunem')
 
@@ -92,9 +92,9 @@
 
    -  **luclms:** log(uclms)
 
-   -  **guclms:** luclms - luclms[_n-1]
+   -  **guclms:** luclms - luclms[\_n-1]
 
-   -  **cez:** ez - ez[_n-1]
+   -  **cez:** ez - ez[\_n-1]
 
    -  **city:** city identifier, 1 through 22
 
@@ -117,6 +117,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(ezunem)

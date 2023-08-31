@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       sulphinpyrazone
 
@@ -41,6 +41,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       sulphinpyrazone

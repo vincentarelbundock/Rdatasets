@@ -35,7 +35,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       pbcseq
       data(pbc, package="survival")
@@ -96,7 +96,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       # Create the start-stop-event triplet needed for coxph
       first <- with(pbcseq, c(TRUE, diff(id) !=0)) #first id for each subject

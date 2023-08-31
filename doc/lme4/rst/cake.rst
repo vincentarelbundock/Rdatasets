@@ -66,7 +66,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       str(cake)
       ## 'temp' is continuous, 'temperature' an ordered factor with 6 levels

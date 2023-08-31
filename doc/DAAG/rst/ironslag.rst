@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       ironslag
 
@@ -44,7 +44,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       iron.lm <- lm(chemical ~ magnetic, data = ironslag)
       oldpar <- par(mfrow = c(2,2))

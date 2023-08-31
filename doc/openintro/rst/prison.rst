@@ -21,7 +21,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       prison
 
@@ -56,7 +56,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
 
       prison

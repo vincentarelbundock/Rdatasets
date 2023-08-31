@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       fossilfuel
 
@@ -48,6 +48,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       plot(fossilfuel)
