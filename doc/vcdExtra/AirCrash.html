@@ -61,7 +61,7 @@ Excludes small planes (less than 6 passengers) and non-commercial (cargo, milita
 <h3>Source</h3>
 
 <p>Originally from David McCandless,
-<a href="http://www.informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/">http://www.informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/</a>,
+<a href="https://informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/">https://informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/</a>,
 with the data at
 <a href="https://docs.google.com/spreadsheets/d/1OvDq4_BtbR6nSnnHnjD5hVC3HQ-ulZPGbo0RDGbzM3Q/edit?usp=drive_web">https://docs.google.com/spreadsheets/d/1OvDq4_BtbR6nSnnHnjD5hVC3HQ-ulZPGbo0RDGbzM3Q/edit?usp=drive_web</a>,
 downloaded April 14, 2015.
@@ -82,19 +82,19 @@ aircrash.tab &lt;- xtabs(~Phase + Cause, data=AirCrash)
 mosaic(aircrash.tab, shade=TRUE)
 
 # fix label overlap
-mosaic(aircrash.tab, shade=TRUE, 
+mosaic(aircrash.tab, shade=TRUE,
        labeling_args=list(rot_labels=c(30, 30, 30, 30)))
 
 # reorder by Phase
 phase.ord &lt;- rev(c(3,4,1,2,5))
-mosaic(aircrash.tab[phase.ord,], shade=TRUE, 
-       labeling_args=list(rot_labels=c(30, 30, 30, 30)), 
+mosaic(aircrash.tab[phase.ord,], shade=TRUE,
+       labeling_args=list(rot_labels=c(30, 30, 30, 30)),
        offset_varnames=0.5)
 
 # reorder by frequency
 phase.ord &lt;- order(rowSums(aircrash.tab), decreasing=TRUE)
 cause.ord &lt;- order(colSums(aircrash.tab), decreasing=TRUE)
-mosaic(aircrash.tab[phase.ord,cause.ord], shade=TRUE, 
+mosaic(aircrash.tab[phase.ord,cause.ord], shade=TRUE,
        labeling_args=list(rot_labels=c(30, 30, 30, 30)))
 
 

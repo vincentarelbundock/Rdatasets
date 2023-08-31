@@ -83,13 +83,15 @@
    death time is greater than the censoring time for recurrence. A
    common way that this happens is that a death date is updated in the
    health record sometime after the research study ended, and said value
-   is then picked up when a study data set is created. But it raises
-   serious questions about censoring. For instance subject 40 is
-   censored for recurrence at 4.2 years and died at 6.6 years; when
-   creating the endpoint of recurrence free survival (earlier of
-   recurrence or death), treating them as a death at 6.6 years
-   implicitly assumes that they were recurrence free just before death.
-   For this to be true we would have to assume that if they had
+   is then picked up when a study data set is created. Vital status
+   information can come from many sources: a patient visit for another
+   condition, correspondence, financial transactions, or social media.
+   But this raises serious questions about censoring. For instance
+   subject 40 is censored for recurrence at 4.2 years and died at 6.6
+   years; when creating the endpoint of recurrence free survival
+   (earlier of recurrence or death), treating them as a death at 6.6
+   years implicitly assumes that they were recurrence free just before
+   death. For this to be true we would have to assume that if they had
    progressed in the 2.4 year interval before death (while off study),
    that this information would also have been noted in their general
    medical record, and would also be captured in the study data set.
@@ -115,9 +117,19 @@
 
    .. code:: R
 
-      status  <- pmax(rotterdam$recur, rotterdam$death)
+      # liberal definition of rfs (count later deaths)
+      rfs  <- pmax(rotterdam$recur, rotterdam$death)
       rfstime <- with(rotterdam, ifelse(recur==1, rtime, dtime))
-      fit1 <- coxph(Surv(rfstime, status) ~ pspline(age) + meno + size + 
-              pspline(nodes) + er,
-           data=rotterdam, subset = (nodes > 0))
+      fit1 <- coxph(Surv(rfstime, rfs) ~ pspline(age) + meno + size + 
+              pspline(nodes) + er,  data = rotterdam)
+
+      # conservative (no deaths after last fu for recurrence)
+      ignore <- with(rotterdam, recur ==0 & death==1 & rtime < dtime)
+      table(ignore)
+      rfs2 <- with(rotterdam, ifelse(recur==1 | ignore, recur, death))
+      rfstime2 <- with(rotterdam, ifelse(recur==1 | ignore, rtime, dtime))
+      fit2 <- coxph(Surv(rfstime2, rfs2) ~ pspline(age) + meno + size + 
+              pspline(nodes) + er,  data = rotterdam)
+
+      # Note: Both age and nodes show non-linear effects.
       # Royston and Altman used fractional polynomials for the nonlinear terms

@@ -1,0 +1,122 @@
+<!DOCTYPE html><html><head><title>R: Halley's Breslau Life Table</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>Breslau</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='Breslau'>
+Halley's Breslau Life Table
+</h2>
+
+<h3>Description</h3>
+
+<p>Edmond Halley published his Breslau life table in 1693, which was arguably the first
+in the world based on population data. David Bellhouse (2011) resurrected the original
+sources of these data, collected by Caspar Neumann in the city of Breslau (now called Wroclaw),
+and then reconstructed in the 1880s by Jonas Graetzer, the medical officer
+in Breslau at that time.  
+</p>
+<p>The dataset here follows Graetzer, and gives the number of deaths
+at ages <code>1:100</code> recorded in each of the years <code>1687:1691</code>. Halley's analysis was based on the total
+over those years.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("Breslau")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 100 observations on the following 8 variables. The <code>yearXXXX</code> variables give the number of deaths for persons of a given <code>age</code> recorded in that year.
+</p>
+
+<dl>
+<dt><code>age</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>year1687</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>year1688</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>year1689</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>year1690</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>year1691</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>total</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>average</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>This dataset was kindly provided by David Bellhouse.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Bellhouse, D.R. (2011), A new look at Halley's life table. 
+<em>Journal of the Royal Statistical Society</em>: Series A, <b>174</b>, 823-832. 
+<a href="https://doi.org/10.1111/j.1467-985X.2010.00684.x">doi:10.1111/j.1467-985X.2010.00684.x</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Halley, E. (1693). An estimate of the degrees of mortality of mankind, drawn from the curious tables of births and
+funerals in the City of Breslaw; with an attempt to ascertain the price of annuities upon lives. 
+<em>Phil. Trans.</em>, <b>17</b>, 596-610.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Arbuthnot</code>, <code>HalleyLifeTable</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(Breslau)
+
+# Reproduce Figure 1 in Bellhouse (2011)
+# He excluded age &lt; 5 and made a point of the over-representation of deaths in quinquennial years.
+library(ggplot2)
+library(dplyr, warn.conflicts = FALSE)
+Breslau5 &lt;- Breslau |&gt;
+  filter(age &gt;= 5) |&gt;
+  mutate(div5 = factor(age %% 5 == 0))
+
+ggplot(Breslau5, aes(x=age, y=total), size=1.5) +
+  geom_point(aes(color=div5)) +
+  scale_color_manual(labels = c(FALSE, TRUE), 
+                     values = c("blue", "red")) +
+  guides(color=guide_legend("Age divisible by 5")) +
+  theme(legend.position = "top") +
+  labs(x = "Age current at death",
+       y = "Total number of deaths") +
+  theme_bw()
+
+</code></pre>
+
+
+</div>
+</body></html>

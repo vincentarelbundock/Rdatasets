@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><title>R: Internal functions for gap</title>
+<!DOCTYPE html><html><head><title>R: Chromosomal lengths for build 36</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
@@ -14,126 +14,32 @@ function processMathHTML() {
 <link rel="stylesheet" type="text/css" href="R.css" />
 </head><body><div class="container">
 
-<table style="width: 100%;"><tr><td>gap-internal</td><td style="text-align: right;">R Documentation</td></tr></table>
+<table style="width: 100%;"><tr><td>hg18</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='gap-internal'>Internal functions for gap</h2>
+<h2 id='hg18'>Chromosomal lengths for build 36</h2>
 
 <h3>Description</h3>
 
-<p>These are internal functions.
-</p>
-<p>g2a.c is the C version of g2c.
-</p>
-<p>gc.control is used by gc.em().
-</p>
-<p>gcode is as a2g.
-</p>
-<p>grec2g is undocumented.
-</p>
-<p>HapDesign and HapFreqSE both accept a <code>haplo.em</code> object to derieve a design/dosage
-matrix and standard error of haplotype frequency estimates. The former is appropriate for haplotype trend 
-regression (HTR), e.g., within the generalized linear model (GLM) framework to be equivllant to a formal 
-approach as implemented in the package haplo.stats and hap.score. However, they are expected to be compatible 
-with objects from gc.em() <code>gc.em</code> and <code>hap.em</code>. The two functions are 
-included as courtesy of Prof Andrea Foulkes from the useR!2008 tutorial.
-</p>
-<p>hap.score.glm, hap.score.podds are used by hap.score().
-</p>
-<p>invlogit, inverse logit transformation.
-</p>
-<p>is.miss is undocumented.
-</p>
-<p>k obtains 1st and 2nd order culumants for correlation coefficient.
-</p>
-<p>m2plem is an experimental function for PLEM format.
-</p>
-<p>makeRLEplot for RLE plot.
-</p>
-<p>sun3d is for 3D Manhattan plot according to Sun, et al. (2018).
-</p>
-<p>micombine is used to combine imputation results.
-</p>
-<p>plem2m is also experimental for PLEM format.
-</p>
-<p>ReadGRMPLINK is a function to read PLINK PI_HAT as a genomic relationship matrix.
-</p>
-<p>ReadGRMPCA is a function to read .eigenval and .eigenvec files from gcta &ndash;pca.
-</p>
-<p>revhap recovers the allele indices for a given haplotype ID in a multiallelic system.
-</p>
-<p>revhap.i is similar to revhap.
-</p>
-<p>solve.skol is a function used by tscc.
-</p>
-<p>toETDT a function used to experiment with ETDT.
-</p>
-<p>ungcode recovers alleles from genotype(s).
-</p>
-<p>VR is a utility function for calculating variance of a ratio.
-</p>
-<p>weighted.median is a function for obtaining weighted median with interpolation.
-</p>
-<p>WriteGRMSAS is a utility function to write a GRM object to SAS PROCs MIXED/GLIMMIX ldata.
-</p>
-<p>x2 is a simple chi-squared test of two proportions.
-</p>
-<p>z is a normal z-test of two proportions used by tscc.
+<p>Data are used in other functions.
 </p>
 
 
 <h3>Usage</h3>
 
-<pre><code class='language-R'>sun3d(xyz="INF1.merge.cis.vs.trans",
-      cols=c("id","chr1","pos1","chr2","pos2","gene","target","log10p","x","y","col"),
-      xy.scale=c(1.3e8,1.3e8),marker.size=4,log10p.max=400,
-      prefix=c("Sentinel","CHR","POS","CHR","POS","Gene","Target","-log10(p)"),
-      postfix="\u003c/br&gt;",
-      json.file="d3.json",pretty=TRUE)
-ReadGRMPLINK(prefix, diag=1)
-ReadGRMPCA(prefix)
-revhap(loci,hapid)
-VR(v1,vv1,v2,vv2,c12)
-WriteGRMSAS(grmlist, outfile="gwas")
+<pre><code class='language-R'>hg18
 </code></pre>
 
 
-<h3>Arguments</h3>
+<h3>Format</h3>
 
-<table>
-<tr><td><code id="gap-internal_:_a1">a1</code></td>
-<td>
-<p>Allele 1</p>
-</td></tr>
-<tr><td><code id="gap-internal_:_a2">a2</code></td>
-<td>
-<p>Allele 2</p>
-</td></tr>
-<tr><td><code id="gap-internal_:_g">g</code></td>
-<td>
-<p>A genotype identifier</p>
-</td></tr>
-<tr><td><code id="gap-internal_:_p1">p1</code></td>
-<td>
-<p>Frequency of the risk allele</p>
-</td></tr>
-<tr><td><code id="gap-internal_:_K">K</code></td>
-<td>
-<p>Prevalence of disease in the population</p>
-</td></tr>
-<tr><td><code id="gap-internal_:_loci">loci</code></td>
-<td>
-<p>A vector of number of alleles at all loci</p>
-</td></tr>
-<tr><td><code id="gap-internal_:_hapid">hapid</code></td>
-<td>
-<p>Haplotype identifier</p>
-</td></tr>
-</table>
+<p>A vector containing lengths of chromosomes.
+</p>
 
 
 <h3>Details</h3>
 
-<p>These functions are not so frequently called by users</p>
+<p>generated from GRCh.R.
+</p>
 
 
 </div>

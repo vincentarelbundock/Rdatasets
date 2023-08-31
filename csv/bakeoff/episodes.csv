@@ -1,95 +1,95 @@
-"","series","episode","bakers_appeared","bakers_out","bakers_remaining","star_bakers","technical_winners","sb_name","winner_name","eliminated"
-"1",1,1,10,2,8,0,1,NA,NA,"Lea, Mark"
-"2",1,2,8,2,6,0,1,NA,NA,"Annetha, Louise"
-"3",1,3,6,1,5,0,1,NA,NA,"Jonathan"
-"4",1,4,5,1,4,0,1,NA,NA,"David"
-"5",1,5,4,1,3,0,1,NA,NA,"Jasminder"
-"6",1,6,3,0,3,0,0,NA,"Edd",NA
-"7",2,1,12,1,11,1,1,"Holly",NA,"Keith"
-"8",2,2,11,1,10,1,1,"Jason",NA,"Simon"
-"9",2,3,10,2,8,1,1,"Yasmin",NA,"Ian, Urvashi"
-"10",2,4,8,1,7,2,1,"Holly, Jason",NA,"Ben"
-"11",2,5,7,2,5,1,1,"Janet",NA,"Jason, Robert"
-"12",2,6,5,1,4,1,1,"Joanne",NA,"Yasmin"
-"13",2,7,4,1,3,0,1,NA,NA,"Janet"
-"14",2,8,3,0,3,0,1,NA,"Joanne",NA
-"15",3,1,12,1,11,1,1,"Victoria",NA,"Natasha"
-"16",3,2,11,1,10,1,1,"John",NA,"Peter"
-"17",3,3,10,1,9,1,1,"James",NA,"Victoria"
-"18",3,4,9,1,8,1,1,"Brendan",NA,"Stuart"
-"19",3,5,8,1,7,1,1,"Ryan",NA,"Manisha"
-"20",3,6,7,0,7,1,1,"Brendan",NA,NA
-"21",3,7,7,2,5,1,1,"Danny",NA,"Ryan, Sarah-Jane"
-"22",3,8,5,1,4,1,1,"James",NA,"Cathryn"
-"23",3,9,4,1,3,1,1,"James",NA,"Danny"
-"24",3,10,3,0,3,0,1,NA,"John",NA
-"25",4,1,13,1,12,1,1,"Robert",NA,"Toby"
-"26",4,2,12,1,11,1,1,"Ruby",NA,"Lucy"
-"27",4,3,11,2,9,1,1,"Christine",NA,"Deborah, Mark"
-"28",4,4,9,1,8,1,1,"Kimberley",NA,"Ali"
-"29",4,5,8,1,7,1,1,"Christine",NA,"Robert"
-"30",4,6,7,1,6,1,1,"Ruby",NA,"Howard"
-"31",4,7,6,1,5,1,1,"Frances",NA,"Glenn"
-"32",4,8,5,1,4,1,1,"Ruby",NA,"Christine"
-"33",4,9,4,1,3,1,1,"Kimberley",NA,"Beca"
-"34",4,10,3,0,3,0,1,NA,"Frances",NA
-"35",5,1,12,1,11,1,1,"Nancy",NA,"Claire"
-"36",5,2,11,1,10,1,1,"Richard",NA,"Enwezor"
-"37",5,3,10,1,9,1,1,"Luis",NA,"Jordan"
-"38",5,4,9,1,8,1,1,"Richard",NA,"Iain"
-"39",5,5,8,1,7,1,1,"Kate",NA,"Norman"
-"40",5,6,7,0,7,1,1,"Chetna",NA,NA
-"41",5,7,7,1,6,1,1,"Richard",NA,"Kate"
-"42",5,8,6,1,5,1,1,"Richard",NA,"Martha"
-"43",5,9,5,1,4,1,1,"Richard",NA,"Chetna"
-"44",5,10,4,0,4,0,1,NA,"Nancy",NA
-"45",6,1,12,1,11,1,1,"Marie",NA,"Stu"
-"46",6,2,11,1,10,1,1,"Ian",NA,"Marie"
-"47",6,3,10,1,9,1,1,"Ian",NA,"Dorret"
-"48",6,4,9,1,8,1,1,"Ian",NA,"Sandy"
-"49",6,5,8,1,7,1,1,"Nadiya",NA,"Ugnė"
-"50",6,6,7,1,6,1,1,"Mat",NA,"Alvin"
-"51",6,7,6,1,5,1,1,"Tamal",NA,"Mat"
-"52",6,8,5,1,4,1,1,"Nadiya",NA,"Paul"
-"53",6,9,4,1,3,1,1,"Nadiya",NA,"Flora"
-"54",6,10,3,0,3,0,1,NA,"Nadiya",NA
-"55",7,1,12,1,11,1,1,"Jane",NA,"Lee"
-"56",7,2,11,1,10,1,1,"Candice",NA,"Louise"
-"57",7,3,10,1,9,1,1,"Tom",NA,"Michael"
-"58",7,4,9,1,8,1,1,"Benjamina",NA,"Kate"
-"59",7,5,8,1,7,1,1,"Candice",NA,"Val"
-"60",7,6,7,1,6,1,1,"Tom",NA,"Rav"
-"61",7,7,6,1,5,1,1,"Andrew",NA,"Tom"
-"62",7,8,5,1,4,1,1,"Candice",NA,"Benjamina"
-"63",7,9,4,1,3,1,1,"Andrew",NA,"Selasi"
-"64",7,10,3,0,3,0,1,NA,"Candice",NA
-"65",8,1,12,1,11,1,1,"Steven",NA,"Peter"
-"66",8,2,11,1,10,1,1,"Steven",NA,"Chris"
-"67",8,3,10,1,9,1,1,"Julia",NA,"Flo"
-"68",8,4,9,1,8,1,1,"Kate",NA,"Tom"
-"69",8,5,8,1,7,1,1,"Sophie",NA,"James"
-"70",8,6,7,1,6,1,1,"Liam",NA,"Julia"
-"71",8,7,6,1,5,1,1,"Steven",NA,"Yan"
-"72",8,8,5,1,4,1,1,"Stacey",NA,"Liam"
-"73",8,9,4,1,3,1,1,"Sophie",NA,"Stacey"
-"74",8,10,3,0,3,0,1,NA,"Sophie",NA
-"75",9,1,12,1,11,1,1,"Manon",NA,"Imelda"
-"76",9,2,11,1,10,1,1,"Rahul",NA,"Luke"
-"77",9,3,10,1,9,1,1,"Rahul",NA,"Antony"
-"78",9,4,9,0,9,1,1,"Dan",NA,NA
-"79",9,5,9,2,7,1,1,"Kim-Joy",NA,"Karen, Terry"
-"80",9,6,7,1,6,1,1,"Briony",NA,"Dan"
-"81",9,7,6,1,5,1,1,"Kim-Joy",NA,"Jon"
-"82",9,8,5,1,4,1,1,"Ruby",NA,"Manon"
-"83",9,9,4,1,3,1,1,"Ruby",NA,"Briony"
-"84",9,10,3,0,3,0,1,NA,"Rahul",NA
-"85",10,1,13,1,12,1,1,"Michelle",NA,"Dan"
-"86",10,2,12,1,11,1,1,"Alice",NA,"Jamie"
-"87",10,3,11,1,10,1,1,"Michael",NA,"Amelia"
-"88",10,4,10,1,9,1,1,"Steph",NA,"Phil"
-"89",10,5,9,2,7,1,1,"Steph",NA,"Helena, Michelle"
-"90",10,6,7,1,6,1,1,"Steph",NA,"Priya"
-"91",10,7,6,1,5,1,1,"Henry",NA,"Michael"
-"92",10,8,5,1,4,1,1,"Steph",NA,"Henry"
-"93",10,9,4,1,3,1,1,"Alice",NA,"Rosie"
-"94",10,10,3,0,3,0,1,NA,"David",NA
+rownames,series,episode,bakers_appeared,bakers_out,bakers_remaining,star_bakers,technical_winners,sb_name,winner_name,eliminated
+1,1,1,10,2,8,0,1,,,"Lea, Mark"
+2,1,2,8,2,6,0,1,,,"Annetha, Louise"
+3,1,3,6,1,5,0,1,,,Jonathan
+4,1,4,5,1,4,0,1,,,David
+5,1,5,4,1,3,0,1,,,Jasminder
+6,1,6,3,0,3,0,0,,Edd,
+7,2,1,12,1,11,1,1,Holly,,Keith
+8,2,2,11,1,10,1,1,Jason,,Simon
+9,2,3,10,2,8,1,1,Yasmin,,"Ian, Urvashi"
+10,2,4,8,1,7,2,1,"Holly, Jason",,Ben
+11,2,5,7,2,5,1,1,Janet,,"Jason, Robert"
+12,2,6,5,1,4,1,1,Joanne,,Yasmin
+13,2,7,4,1,3,0,1,,,Janet
+14,2,8,3,0,3,0,1,,Joanne,
+15,3,1,12,1,11,1,1,Victoria,,Natasha
+16,3,2,11,1,10,1,1,John,,Peter
+17,3,3,10,1,9,1,1,James,,Victoria
+18,3,4,9,1,8,1,1,Brendan,,Stuart
+19,3,5,8,1,7,1,1,Ryan,,Manisha
+20,3,6,7,0,7,1,1,Brendan,,
+21,3,7,7,2,5,1,1,Danny,,"Ryan, Sarah-Jane"
+22,3,8,5,1,4,1,1,James,,Cathryn
+23,3,9,4,1,3,1,1,James,,Danny
+24,3,10,3,0,3,0,1,,John,
+25,4,1,13,1,12,1,1,Robert,,Toby
+26,4,2,12,1,11,1,1,Ruby,,Lucy
+27,4,3,11,2,9,1,1,Christine,,"Deborah, Mark"
+28,4,4,9,1,8,1,1,Kimberley,,Ali
+29,4,5,8,1,7,1,1,Christine,,Robert
+30,4,6,7,1,6,1,1,Ruby,,Howard
+31,4,7,6,1,5,1,1,Frances,,Glenn
+32,4,8,5,1,4,1,1,Ruby,,Christine
+33,4,9,4,1,3,1,1,Kimberley,,Beca
+34,4,10,3,0,3,0,1,,Frances,
+35,5,1,12,1,11,1,1,Nancy,,Claire
+36,5,2,11,1,10,1,1,Richard,,Enwezor
+37,5,3,10,1,9,1,1,Luis,,Jordan
+38,5,4,9,1,8,1,1,Richard,,Iain
+39,5,5,8,1,7,1,1,Kate,,Norman
+40,5,6,7,0,7,1,1,Chetna,,
+41,5,7,7,1,6,1,1,Richard,,Kate
+42,5,8,6,1,5,1,1,Richard,,Martha
+43,5,9,5,1,4,1,1,Richard,,Chetna
+44,5,10,4,0,4,0,1,,Nancy,
+45,6,1,12,1,11,1,1,Marie,,Stu
+46,6,2,11,1,10,1,1,Ian,,Marie
+47,6,3,10,1,9,1,1,Ian,,Dorret
+48,6,4,9,1,8,1,1,Ian,,Sandy
+49,6,5,8,1,7,1,1,Nadiya,,Ugnė
+50,6,6,7,1,6,1,1,Mat,,Alvin
+51,6,7,6,1,5,1,1,Tamal,,Mat
+52,6,8,5,1,4,1,1,Nadiya,,Paul
+53,6,9,4,1,3,1,1,Nadiya,,Flora
+54,6,10,3,0,3,0,1,,Nadiya,
+55,7,1,12,1,11,1,1,Jane,,Lee
+56,7,2,11,1,10,1,1,Candice,,Louise
+57,7,3,10,1,9,1,1,Tom,,Michael
+58,7,4,9,1,8,1,1,Benjamina,,Kate
+59,7,5,8,1,7,1,1,Candice,,Val
+60,7,6,7,1,6,1,1,Tom,,Rav
+61,7,7,6,1,5,1,1,Andrew,,Tom
+62,7,8,5,1,4,1,1,Candice,,Benjamina
+63,7,9,4,1,3,1,1,Andrew,,Selasi
+64,7,10,3,0,3,0,1,,Candice,
+65,8,1,12,1,11,1,1,Steven,,Peter
+66,8,2,11,1,10,1,1,Steven,,Chris
+67,8,3,10,1,9,1,1,Julia,,Flo
+68,8,4,9,1,8,1,1,Kate,,Tom
+69,8,5,8,1,7,1,1,Sophie,,James
+70,8,6,7,1,6,1,1,Liam,,Julia
+71,8,7,6,1,5,1,1,Steven,,Yan
+72,8,8,5,1,4,1,1,Stacey,,Liam
+73,8,9,4,1,3,1,1,Sophie,,Stacey
+74,8,10,3,0,3,0,1,,Sophie,
+75,9,1,12,1,11,1,1,Manon,,Imelda
+76,9,2,11,1,10,1,1,Rahul,,Luke
+77,9,3,10,1,9,1,1,Rahul,,Antony
+78,9,4,9,0,9,1,1,Dan,,
+79,9,5,9,2,7,1,1,Kim-Joy,,"Karen, Terry"
+80,9,6,7,1,6,1,1,Briony,,Dan
+81,9,7,6,1,5,1,1,Kim-Joy,,Jon
+82,9,8,5,1,4,1,1,Ruby,,Manon
+83,9,9,4,1,3,1,1,Ruby,,Briony
+84,9,10,3,0,3,0,1,,Rahul,
+85,10,1,13,1,12,1,1,Michelle,,Dan
+86,10,2,12,1,11,1,1,Alice,,Jamie
+87,10,3,11,1,10,1,1,Michael,,Amelia
+88,10,4,10,1,9,1,1,Steph,,Phil
+89,10,5,9,2,7,1,1,Steph,,"Helena, Michelle"
+90,10,6,7,1,6,1,1,Steph,,Priya
+91,10,7,6,1,5,1,1,Henry,,Michael
+92,10,8,5,1,4,1,1,Steph,,Henry
+93,10,9,4,1,3,1,1,Alice,,Rosie
+94,10,10,3,0,3,0,1,,David,

@@ -30,19 +30,19 @@
    A tibble with 816 rows and 4 variables:
 
    latitude
-      The latitude in decimal degrees for the observations
+      The latitude in decimal degrees for the observations.
 
    month
-      The measurement month; all calculations where conducted for the
-      first day of each month
+      The measurement month. All calculations where conducted for the
+      first day of each month.
 
    tst
       The true solar time at the given ``latitude`` and date (first of
-      ``month``) for which the solar zenith angle is calculated
+      ``month``) for which the solar zenith angle is calculated.
 
    sza
       The solar zenith angle in degrees, where ``NA``\ s indicate that
-      sunrise hadn't yet occurred by the ``tst`` value
+      sunrise hadn't yet occurred by the ``tst`` value.
 
    .. rubric:: Details
       :name: details
@@ -77,10 +77,19 @@
          #> $ tst      <chr> "0400", "0430", "0500", "0530", "0600", "0630", "0700", "0730~
          #> $ sza      <dbl> NA, NA, NA, NA, NA, NA, 84.9, 78.7, 72.7, 66.1, 61.5, 56.5, 5~
 
-   .. rubric:: Function ID
-      :name: function-id
+   .. rubric:: Dataset ID and Badge
+      :name: dataset-id-and-badge
 
-   11-2
+   DATA-2
+
+   .. container::
+
+      |This image of that of a dataset badge.|
+
+   .. rubric:: Dataset Introduced
+      :name: dataset-introduced
+
+   ``v0.2.0.5`` (March 31, 2020)
 
    .. rubric:: Source
       :name: source
@@ -92,5 +101,7 @@
    .. rubric:: See Also
       :name: see-also
 
-   Other datasets: ``countrypops``, ``exibble``, ``gtcars``,
-   ``pizzaplace``, ``sp500``
+   Other datasets: ``countrypops``, ``exibble``, ``gtcars``, ``metro``,
+   ``pizzaplace``, ``rx_addv``, ``rx_adsl``, ``sp500``, ``towny``
+
+.. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_sza.png

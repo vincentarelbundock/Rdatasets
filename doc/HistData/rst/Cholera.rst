@@ -117,7 +117,7 @@
    .. rubric:: See Also
       :name: see-also
 
-   ``Snow.deaths``
+   ``CholeraDeaths1849``, ``Snow.deaths``
 
    .. rubric:: Examples
       :name: examples

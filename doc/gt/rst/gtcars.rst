@@ -29,47 +29,47 @@
    A tibble with 47 rows and 15 variables:
 
    mfr
-      The name of the car manufacturer
+      The name of the car manufacturer.
 
    model
-      The car's model name
+      The car's model name.
 
    year
-      The car's model year
+      The car's model year.
 
    trim
-      A short description of the car model's trim
+      A short description of the car model's trim.
 
    bdy_style
-      An identifier of the car's body style, which is either ``coupe``,
-      ``convertible``, ``sedan``, or ``hatchback``
+      An identifier of the car's body style, which is either
+      ``"coupe"``, ``"convertible"``, ``"sedan"``, or ``"hatchback"``.
 
    hp, hp_rpm
-      The car's horsepower and the associated RPM level
+      The car's horsepower and the associated RPM level.
 
    trq, trq_rpm
-      The car's torque and the associated RPM level
+      The car's torque and the associated RPM level.
 
    mpg_c, mpg_h
       The miles per gallon fuel efficiency rating for city and highway
-      driving
+      driving.
 
    drivetrain
-      The car's drivetrain which, for this dataset is either ``rwd``
-      (Rear Wheel Drive) or ``awd`` (All Wheel Drive)
+      The car's drivetrain which, for this dataset, is either ``"rwd"``
+      (Rear Wheel Drive) or ``"awd"`` (All Wheel Drive).
 
    trsmn
-      The codified transmission type, where the number part is the
-      number of gears; the car could have automatic transmission
-      (``a``), manual transmission (``m``), an option to switch between
-      both types (``am``), or, direct drive (``dd``)
+      An encoding of the transmission type, where the number part is the
+      number of gears. The car could have automatic transmission
+      (``"a"``), manual transmission (``"m"``), an option to switch
+      between both types (``"am"``), or, direct drive (``"dd"``)
 
    ctry_origin
       The country name for where the vehicle manufacturer is
-      headquartered
+      headquartered.
 
    msrp
-      Manufacturer's suggested retail price in U.S. dollars (USD)
+      Manufacturer's suggested retail price in U.S. dollars (USD).
 
    .. rubric:: Details
       :name: details
@@ -111,13 +111,25 @@
          #> $ ctry_origin <chr> "United States", "Italy", "Italy", "Italy", "Italy", "Ital~
          #> $ msrp        <dbl> 447000, 291744, 263553, 233509, 245400, 198973, 298000, 29~
 
-   .. rubric:: Function ID
-      :name: function-id
+   .. rubric:: Dataset ID and Badge
+      :name: dataset-id-and-badge
 
-   11-3
+   DATA-3
+
+   .. container::
+
+      |This image of that of a dataset badge.|
+
+   .. rubric:: Dataset Introduced
+      :name: dataset-introduced
+
+   ``v0.2.0.5`` (March 31, 2020)
 
    .. rubric:: See Also
       :name: see-also
 
-   Other datasets: ``countrypops``, ``exibble``, ``pizzaplace``,
-   ``sp500``, ``sza``
+   Other datasets: ``countrypops``, ``exibble``, ``metro``,
+   ``pizzaplace``, ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``,
+   ``towny``
+
+.. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_gtcars.png

@@ -1,0 +1,80 @@
+<!DOCTYPE html><html><head><title>R: Chicago taxi data set</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>taxi</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='taxi'>Chicago taxi data set</h2>
+
+<h3>Description</h3>
+
+<p>A data set containing information on a subset of taxi trips in the city
+of Chicago in 2022.
+</p>
+
+
+<h3>Details</h3>
+
+<p>The source data are originally described on the linked City of Chicago
+data portal. The data exported here are a pre-processed subset motivated by
+the modeling problem of predicting whether a rider will tip or not.
+</p>
+
+<dl>
+<dt>tip</dt><dd><p>Whether the rider left a tip. A factor with levels
+&quot;yes&quot; and &quot;no&quot;.</p>
+</dd>
+<dt>distance</dt><dd><p>The trip distance, in odometer miles.</p>
+</dd>
+<dt>company</dt><dd><p>The taxi company, as a factor. Companies that occurred
+few times were binned as &quot;other&quot;.</p>
+</dd>
+<dt>local</dt><dd><p>Whether the trip started in the same community
+area as it began. See the source data for community area values.</p>
+</dd>
+<dt>dow</dt><dd><p>The day of the week in which the trip began, as a
+factor.</p>
+</dd>
+<dt>month</dt><dd><p>The month in which the trip began, as a factor.</p>
+</dd>
+<dt>hour</dt><dd><p>The hour of the day in which the trip began, as a
+numeric.</p>
+</dd>
+</dl>
+
+
+
+<h3>Value</h3>
+
+<p>tibble
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew">https://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+taxi
+
+</code></pre>
+
+
+</div>
+</body></html>

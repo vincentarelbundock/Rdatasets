@@ -1,0 +1,292 @@
+rownames,STUDYID,STUDYIDN,USUBJID,TRTA,TRTAN,ITTFL,AGE,AAGEGR1,SEX,ETHNIC,BLBMI,DVTERM,PARAMCD,PARAM,PARCAT1,DVCAT,ACAT1,AVAL,CRIT1,CRIT1FL
+1,GT01,4001,GT1001,Placebo,1,Y,41,>=40,Male,Not Hispanic or Latino,33.35073200636543,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+2,GT01,4001,GT1002,Placebo,1,Y,39,<40,Female,Not Hispanic or Latino,30.458616281161085,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+3,GT01,4001,GT1002,Placebo,1,Y,39,<40,Female,Not Hispanic or Latino,30.458616281161085,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+4,GT01,4001,GT1003,Placebo,1,Y,38,<40,Male,Not Hispanic or Latino,22.859855459770188,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+5,GT01,4001,GT1003,Placebo,1,Y,38,<40,Male,Not Hispanic or Latino,22.859855459770188,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+6,GT01,4001,GT1003,Placebo,1,Y,38,<40,Male,Not Hispanic or Latino,22.859855459770188,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+7,GT01,4001,GT1004,Placebo,1,Y,45,>=40,Male,Not Hispanic or Latino,23.897127968259156,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+8,GT01,4001,GT1004,Placebo,1,Y,45,>=40,Male,Not Hispanic or Latino,23.897127968259156,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+9,GT01,4001,GT1005,Placebo,1,Y,35,<40,Female,Hispanic or Latino,29.09855688433163,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+10,GT01,4001,GT1005,Placebo,1,Y,35,<40,Female,Hispanic or Latino,29.09855688433163,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+11,GT01,4001,GT1005,Placebo,1,Y,35,<40,Female,Hispanic or Latino,29.09855688433163,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+12,GT01,4001,GT1005,Placebo,1,Y,35,<40,Female,Hispanic or Latino,29.09855688433163,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+13,GT01,4001,GT1005,Placebo,1,Y,35,<40,Female,Hispanic or Latino,29.09855688433163,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+14,GT01,4001,GT1006,Placebo,1,Y,42,>=40,Female,Not Hispanic or Latino,28.84763437602669,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+15,GT01,4001,GT1007,Placebo,1,Y,35,<40,Male,Not Hispanic or Latino,32.553408357314765,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+16,GT01,4001,GT1007,Placebo,1,Y,35,<40,Male,Not Hispanic or Latino,32.553408357314765,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+17,GT01,4001,GT1008,Placebo,1,Y,42,>=40,Male,Not Hispanic or Latino,32.62040519854054,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+18,GT01,4001,GT1008,Placebo,1,Y,42,>=40,Male,Not Hispanic or Latino,32.62040519854054,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+19,GT01,4001,GT1009,Placebo,1,Y,38,<40,Female,Hispanic or Latino,34.48886313615367,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+20,GT01,4001,GT1010,Placebo,1,Y,48,>=40,Undifferentiated,Not Hispanic or Latino,24.766166526824236,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+21,GT01,4001,GT1010,Placebo,1,Y,48,>=40,Undifferentiated,Not Hispanic or Latino,24.766166526824236,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+22,GT01,4001,GT1011,Placebo,1,Y,36,<40,Male,Hispanic or Latino,19.192916340660304,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+23,GT01,4001,GT1012,Placebo,1,Y,46,>=40,Female,Not Hispanic or Latino,19.488987024873495,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+24,GT01,4001,GT1012,Placebo,1,Y,46,>=40,Female,Not Hispanic or Latino,19.488987024873495,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+25,GT01,4001,GT1013,Placebo,1,Y,34,<40,Male,Missing,18.796173411188647,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+26,GT01,4001,GT1014,Placebo,1,Y,44,>=40,Male,Hispanic or Latino,32.85837743175216,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+27,GT01,4001,GT1015,Placebo,1,Y,42,>=40,Male,Not Hispanic or Latino,24.312377048656344,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+28,GT01,4001,GT1016,Placebo,1,Y,38,<40,Male,Hispanic or Latino,30.393632876686752,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+29,GT01,4001,GT1017,Placebo,1,Y,36,<40,Female,Missing,19.63564668642357,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+30,GT01,4001,GT1017,Placebo,1,Y,36,<40,Female,Missing,19.63564668642357,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+31,GT01,4001,GT1018,Placebo,1,Y,43,>=40,Male,Hispanic or Latino,34.420741262380034,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+32,GT01,4001,GT1019,Placebo,1,Y,32,<40,Male,Hispanic or Latino,21.904480966040865,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+33,GT01,4001,GT1019,Placebo,1,Y,32,<40,Male,Hispanic or Latino,21.904480966040865,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+34,GT01,4001,GT1019,Placebo,1,Y,32,<40,Male,Hispanic or Latino,21.904480966040865,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+35,GT01,4001,GT1019,Placebo,1,Y,32,<40,Male,Hispanic or Latino,21.904480966040865,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+36,GT01,4001,GT1020,Placebo,1,Y,45,>=40,Undifferentiated,Not Hispanic or Latino,18.489033897174522,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+37,GT01,4001,GT1021,Placebo,1,Y,33,<40,Male,Hispanic or Latino,18.933538862504065,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+38,GT01,4001,GT1021,Placebo,1,Y,33,<40,Male,Hispanic or Latino,18.933538862504065,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+39,GT01,4001,GT1022,Placebo,1,Y,40,>=40,Male,Not Hispanic or Latino,29.42292630067095,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+40,GT01,4001,GT1022,Placebo,1,Y,40,>=40,Male,Not Hispanic or Latino,29.42292630067095,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+41,GT01,4001,GT1022,Placebo,1,Y,40,>=40,Male,Not Hispanic or Latino,29.42292630067095,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+42,GT01,4001,GT1022,Placebo,1,Y,40,>=40,Male,Not Hispanic or Latino,29.42292630067095,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+43,GT01,4001,GT1023,Placebo,1,Y,52,>=40,Female,Not Hispanic or Latino,24.521370936417952,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+44,GT01,4001,GT1024,Placebo,1,Y,29,<40,Male,Hispanic or Latino,32.40230497671291,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+45,GT01,4001,GT1024,Placebo,1,Y,29,<40,Male,Hispanic or Latino,32.40230497671291,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+46,GT01,4001,GT1025,Placebo,1,Y,33,<40,Male,Not Hispanic or Latino,18.823255777126178,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+47,GT01,4001,GT1026,Placebo,1,Y,46,>=40,Male,Not Hispanic or Latino,21.13808612548746,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+48,GT01,4001,GT1027,Placebo,1,Y,27,<40,Undifferentiated,Not Hispanic or Latino,21.24623486935161,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+49,GT01,4001,GT1027,Placebo,1,Y,27,<40,Undifferentiated,Not Hispanic or Latino,21.24623486935161,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+50,GT01,4001,GT1027,Placebo,1,Y,27,<40,Undifferentiated,Not Hispanic or Latino,21.24623486935161,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,Y
+51,GT01,4001,GT1027,Placebo,1,Y,27,<40,Undifferentiated,Not Hispanic or Latino,21.24623486935161,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+52,GT01,4001,GT1028,Placebo,1,Y,48,>=40,Female,Not Hispanic or Latino,27.349449845729396,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+53,GT01,4001,GT1029,Placebo,1,Y,40,>=40,Male,Missing,25.50985466851853,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+54,GT01,4001,GT1029,Placebo,1,Y,40,>=40,Male,Missing,25.50985466851853,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+55,GT01,4001,GT1029,Placebo,1,Y,40,>=40,Male,Missing,25.50985466851853,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+56,GT01,4001,GT1029,Placebo,1,Y,40,>=40,Male,Missing,25.50985466851853,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+57,GT01,4001,GT1030,Placebo,1,Y,45,>=40,Male,Hispanic or Latino,22.941492824349552,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+58,GT01,4001,GT1031,Placebo,1,Y,46,>=40,Female,Hispanic or Latino,23.053933521034196,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+59,GT01,4001,GT1031,Placebo,1,Y,46,>=40,Female,Hispanic or Latino,23.053933521034196,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+60,GT01,4001,GT1031,Placebo,1,Y,46,>=40,Female,Hispanic or Latino,23.053933521034196,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+61,GT01,4001,GT1032,Placebo,1,Y,47,>=40,Male,Not Hispanic or Latino,28.1998059428297,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+62,GT01,4001,GT1033,Placebo,1,Y,45,>=40,Male,Hispanic or Latino,26.124425382353365,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+63,GT01,4001,GT1033,Placebo,1,Y,45,>=40,Male,Hispanic or Latino,26.124425382353365,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+64,GT01,4001,GT1034,Placebo,1,Y,40,>=40,Male,Not Hispanic or Latino,20.485749071929604,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+65,GT01,4001,GT1035,Placebo,1,Y,34,<40,Male,Hispanic or Latino,29.86632857704535,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+66,GT01,4001,GT1036,Placebo,1,Y,39,<40,Female,Hispanic or Latino,28.499085099669173,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+67,GT01,4001,GT1036,Placebo,1,Y,39,<40,Female,Hispanic or Latino,28.499085099669173,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+68,GT01,4001,GT1037,Placebo,1,Y,46,>=40,Male,Not Hispanic or Latino,26.08359008585103,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+69,GT01,4001,GT1038,Placebo,1,Y,35,<40,Male,Hispanic or Latino,31.089691235218197,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+70,GT01,4001,GT1038,Placebo,1,Y,35,<40,Male,Hispanic or Latino,31.089691235218197,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+71,GT01,4001,GT1039,Placebo,1,Y,49,>=40,Male,Not Hispanic or Latino,29.429577396484092,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+72,GT01,4001,GT1040,Placebo,1,Y,36,<40,Male,Not Hispanic or Latino,25.38858536328189,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+73,GT01,4001,GT1040,Placebo,1,Y,36,<40,Male,Not Hispanic or Latino,25.38858536328189,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+74,GT01,4001,GT1041,Placebo,1,Y,35,<40,Male,Not Hispanic or Latino,29.10249394015409,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+75,GT01,4001,GT1042,Placebo,1,Y,55,>=40,Male,Missing,23.515249267220497,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+76,GT01,4001,GT1042,Placebo,1,Y,55,>=40,Male,Missing,23.515249267220497,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+77,GT01,4001,GT1043,Placebo,1,Y,50,>=40,Female,Not Hispanic or Latino,30.473219285486266,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+78,GT01,4001,GT1043,Placebo,1,Y,50,>=40,Female,Not Hispanic or Latino,30.473219285486266,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,Y
+79,GT01,4001,GT1044,Placebo,1,Y,40,>=40,Male,Hispanic or Latino,33.17406538268551,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+80,GT01,4001,GT1045,Placebo,1,Y,45,>=40,Male,Not Hispanic or Latino,28.82220724481158,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+81,GT01,4001,GT1046,Placebo,1,Y,36,<40,Female,Not Hispanic or Latino,25.956163769122213,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+82,GT01,4001,GT1046,Placebo,1,Y,36,<40,Female,Not Hispanic or Latino,25.956163769122213,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+83,GT01,4001,GT1047,Placebo,1,Y,47,>=40,Female,Not Hispanic or Latino,30.302895131055266,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+84,GT01,4001,GT1048,Placebo,1,Y,31,<40,Male,Not Hispanic or Latino,21.150497656781226,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+85,GT01,4001,GT1048,Placebo,1,Y,31,<40,Male,Not Hispanic or Latino,21.150497656781226,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+86,GT01,4001,GT1049,Placebo,1,Y,41,>=40,Female,Hispanic or Latino,32.811172624118626,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+87,GT01,4001,GT1049,Placebo,1,Y,41,>=40,Female,Hispanic or Latino,32.811172624118626,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+88,GT01,4001,GT1049,Placebo,1,Y,41,>=40,Female,Hispanic or Latino,32.811172624118626,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+89,GT01,4001,GT1050,Placebo,1,Y,35,<40,Male,Not Hispanic or Latino,27.050994575722143,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+90,GT01,4001,GT1051,Placebo,1,Y,46,>=40,Male,Hispanic or Latino,20.069796178257093,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+91,GT01,4001,GT1052,Placebo,1,Y,35,<40,Male,Not Hispanic or Latino,19.213148263981566,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+92,GT01,4001,GT1053,Placebo,1,Y,43,>=40,Female,Hispanic or Latino,18.988665730459616,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+93,GT01,4001,GT1054,Placebo,1,Y,35,<40,Male,Not Hispanic or Latino,20.89045705087483,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+94,GT01,4001,GT1055,Placebo,1,Y,31,<40,Female,Missing,34.22501303674653,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+95,GT01,4001,GT1056,Placebo,1,Y,40,>=40,Male,Not Hispanic or Latino,20.37796170846559,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+96,GT01,4001,GT1057,Placebo,1,Y,32,<40,Male,Not Hispanic or Latino,23.59420043323189,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+97,GT01,4001,GT1057,Placebo,1,Y,32,<40,Male,Not Hispanic or Latino,23.59420043323189,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+98,GT01,4001,GT1057,Placebo,1,Y,32,<40,Male,Not Hispanic or Latino,23.59420043323189,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+99,GT01,4001,GT1057,Placebo,1,Y,32,<40,Male,Not Hispanic or Latino,23.59420043323189,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+100,GT01,4001,GT1057,Placebo,1,Y,32,<40,Male,Not Hispanic or Latino,23.59420043323189,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+101,GT01,4001,GT1058,Placebo,1,Y,40,>=40,Undifferentiated,Not Hispanic or Latino,32.74818712868728,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+102,GT01,4001,GT1058,Placebo,1,Y,40,>=40,Undifferentiated,Not Hispanic or Latino,32.74818712868728,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+103,GT01,4001,GT1059,Placebo,1,Y,48,>=40,Female,Hispanic or Latino,33.086699861101806,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+104,GT01,4001,GT1060,Placebo,1,Y,38,<40,Male,Not Hispanic or Latino,32.80658245063387,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+105,GT01,4001,GT1061,Placebo,1,Y,43,>=40,Male,Not Hispanic or Latino,29.001441992353648,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+106,GT01,4001,GT1062,Placebo,1,Y,43,>=40,Male,Not Hispanic or Latino,25.972108093556017,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+107,GT01,4001,GT1063,Placebo,1,Y,52,>=40,Female,Hispanic or Latino,26.002119476906955,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+108,GT01,4001,GT1064,Placebo,1,Y,42,>=40,Male,Hispanic or Latino,23.01467194966972,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+109,GT01,4001,GT1064,Placebo,1,Y,42,>=40,Male,Hispanic or Latino,23.01467194966972,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+110,GT01,4001,GT1064,Placebo,1,Y,42,>=40,Male,Hispanic or Latino,23.01467194966972,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+111,GT01,4001,GT1065,Placebo,1,Y,39,<40,Male,Hispanic or Latino,27.618125468492508,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+112,GT01,4001,GT1065,Placebo,1,Y,39,<40,Male,Hispanic or Latino,27.618125468492508,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+113,GT01,4001,GT1066,Placebo,1,Y,40,>=40,Male,Missing,24.022018926450983,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+114,GT01,4001,GT1066,Placebo,1,Y,40,>=40,Male,Missing,24.022018926450983,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+115,GT01,4001,GT1066,Placebo,1,Y,40,>=40,Male,Missing,24.022018926450983,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+116,GT01,4001,GT1067,Placebo,1,Y,41,>=40,Male,Hispanic or Latino,18.088612210936844,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+117,GT01,4001,GT1068,Placebo,1,Y,43,>=40,Male,Hispanic or Latino,33.87885166704655,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+118,GT01,4001,GT1068,Placebo,1,Y,43,>=40,Male,Hispanic or Latino,33.87885166704655,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,Y
+119,GT01,4001,GT1069,Placebo,1,Y,37,<40,Female,Not Hispanic or Latino,19.92238554242067,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+120,GT01,4001,GT1069,Placebo,1,Y,37,<40,Female,Not Hispanic or Latino,19.92238554242067,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+121,GT01,4001,GT1070,Placebo,1,Y,36,<40,Female,Not Hispanic or Latino,24.37328666402027,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+122,GT01,4001,GT1070,Placebo,1,Y,36,<40,Female,Not Hispanic or Latino,24.37328666402027,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+123,GT01,4001,GT1071,Placebo,1,Y,40,>=40,Female,Not Hispanic or Latino,26.575365053024143,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+124,GT01,4001,GT1071,Placebo,1,Y,40,>=40,Female,Not Hispanic or Latino,26.575365053024143,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+125,GT01,4001,GT1072,Placebo,1,Y,39,<40,Male,Hispanic or Latino,25.180946922162548,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+126,GT01,4001,GT1072,Placebo,1,Y,39,<40,Male,Hispanic or Latino,25.180946922162548,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+127,GT01,4001,GT1073,Placebo,1,Y,37,<40,Male,Hispanic or Latino,24.70786605332978,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+128,GT01,4001,GT1073,Placebo,1,Y,37,<40,Male,Hispanic or Latino,24.70786605332978,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,Y
+129,GT01,4001,GT1074,Placebo,1,Y,46,>=40,Male,Hispanic or Latino,30.52053642855026,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+130,GT01,4001,GT1074,Placebo,1,Y,46,>=40,Male,Hispanic or Latino,30.52053642855026,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+131,GT01,4001,GT1075,Placebo,1,Y,48,>=40,Male,Hispanic or Latino,32.406210945453495,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+132,GT01,4001,GT1076,Placebo,1,Y,35,<40,Female,Hispanic or Latino,19.52806364116259,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+133,GT01,4001,GT1076,Placebo,1,Y,35,<40,Female,Hispanic or Latino,19.52806364116259,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+134,GT01,4001,GT1077,Placebo,1,Y,56,>=40,Male,Not Hispanic or Latino,29.098101106705144,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+135,GT01,4001,GT1078,Placebo,1,Y,47,>=40,Male,Hispanic or Latino,31.12438975018449,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+136,GT01,4001,GT1079,Placebo,1,Y,52,>=40,Male,Hispanic or Latino,20.170549968723208,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+137,GT01,4001,GT1080,Placebo,1,Y,47,>=40,Male,Hispanic or Latino,29.77605304098688,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+138,GT01,4001,GT1080,Placebo,1,Y,47,>=40,Male,Hispanic or Latino,29.77605304098688,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+139,GT01,4001,GT1081,Placebo,1,Y,43,>=40,Male,Not Hispanic or Latino,21.170475104590878,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+140,GT01,4001,GT1082,Placebo,1,Y,37,<40,Undifferentiated,Hispanic or Latino,22.498639630386606,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+141,GT01,4001,GT1083,Placebo,1,Y,45,>=40,Male,Not Hispanic or Latino,30.24091801047325,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+142,GT01,4001,GT1084,Placebo,1,Y,48,>=40,Female,Hispanic or Latino,21.447240172652528,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+143,GT01,4001,GT1084,Placebo,1,Y,48,>=40,Female,Hispanic or Latino,21.447240172652528,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+144,GT01,4001,GT1085,Placebo,1,Y,44,>=40,Female,Hispanic or Latino,19.925387994851917,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+145,GT01,4001,GT1086,Placebo,1,Y,45,>=40,Female,Hispanic or Latino,29.684860182693228,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+146,GT01,4001,GT1086,Placebo,1,Y,45,>=40,Female,Hispanic or Latino,29.684860182693228,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+147,GT01,4001,GT1086,Placebo,1,Y,45,>=40,Female,Hispanic or Latino,29.684860182693228,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+148,GT01,4001,GT1086,Placebo,1,Y,45,>=40,Female,Hispanic or Latino,29.684860182693228,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+149,GT01,4001,GT1087,Placebo,1,Y,51,>=40,Male,Hispanic or Latino,21.23783934651874,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+150,GT01,4001,GT1087,Placebo,1,Y,51,>=40,Male,Hispanic or Latino,21.23783934651874,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+151,GT01,4001,GT1088,Placebo,1,Y,49,>=40,Male,Not Hispanic or Latino,26.948972389567643,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+152,GT01,4001,GT1088,Placebo,1,Y,49,>=40,Male,Not Hispanic or Latino,26.948972389567643,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+153,GT01,4001,GT1089,Placebo,1,Y,37,<40,Undifferentiated,Not Hispanic or Latino,30.580567048164085,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,Y
+154,GT01,4001,GT1089,Placebo,1,Y,37,<40,Undifferentiated,Not Hispanic or Latino,30.580567048164085,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,Y
+155,GT01,4001,GT1089,Placebo,1,Y,37,<40,Undifferentiated,Not Hispanic or Latino,30.580567048164085,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+156,GT01,4001,GT1090,Placebo,1,Y,31,<40,Male,Not Hispanic or Latino,29.425769288325682,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+157,GT01,4001,GT1091,Drug 1,2,Y,35,<40,Male,Missing,31.24266710388474,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+158,GT01,4001,GT1092,Drug 1,2,Y,52,>=40,Male,Hispanic or Latino,24.19246087456122,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+159,GT01,4001,GT1093,Drug 1,2,Y,46,>=40,Female,Not Hispanic or Latino,18.766140590654686,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+160,GT01,4001,GT1093,Drug 1,2,Y,46,>=40,Female,Not Hispanic or Latino,18.766140590654686,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+161,GT01,4001,GT1093,Drug 1,2,Y,46,>=40,Female,Not Hispanic or Latino,18.766140590654686,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+162,GT01,4001,GT1093,Drug 1,2,Y,46,>=40,Female,Not Hispanic or Latino,18.766140590654686,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+163,GT01,4001,GT1094,Drug 1,2,Y,34,<40,Male,Not Hispanic or Latino,34.26888849865645,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+164,GT01,4001,GT1095,Drug 1,2,Y,42,>=40,Male,Not Hispanic or Latino,19.39661523234099,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+165,GT01,4001,GT1096,Drug 1,2,Y,47,>=40,Female,Hispanic or Latino,23.730819549178705,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+166,GT01,4001,GT1097,Drug 1,2,Y,40,>=40,Male,Not Hispanic or Latino,27.73193965689279,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+167,GT01,4001,GT1098,Drug 1,2,Y,40,>=40,Female,Not Hispanic or Latino,27.3150247419253,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+168,GT01,4001,GT1099,Drug 1,2,Y,39,<40,Male,Not Hispanic or Latino,20.96473428956233,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+169,GT01,4001,GT1100,Drug 1,2,Y,35,<40,Female,Hispanic or Latino,29.96993721765466,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+170,GT01,4001,GT1100,Drug 1,2,Y,35,<40,Female,Hispanic or Latino,29.96993721765466,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+171,GT01,4001,GT1101,Drug 1,2,Y,38,<40,Male,Not Hispanic or Latino,32.82149203121662,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+172,GT01,4001,GT1102,Drug 1,2,Y,39,<40,Male,Not Hispanic or Latino,25.05295527097769,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+173,GT01,4001,GT1103,Drug 1,2,Y,40,>=40,Female,Not Hispanic or Latino,22.353125124471262,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+174,GT01,4001,GT1103,Drug 1,2,Y,40,>=40,Female,Not Hispanic or Latino,22.353125124471262,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+175,GT01,4001,GT1104,Drug 1,2,Y,47,>=40,Female,Missing,29.479342174250633,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+176,GT01,4001,GT1104,Drug 1,2,Y,47,>=40,Female,Missing,29.479342174250633,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+177,GT01,4001,GT1104,Drug 1,2,Y,47,>=40,Female,Missing,29.479342174250633,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+178,GT01,4001,GT1104,Drug 1,2,Y,47,>=40,Female,Missing,29.479342174250633,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+179,GT01,4001,GT1105,Drug 1,2,Y,43,>=40,Female,Hispanic or Latino,34.07822738820687,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+180,GT01,4001,GT1106,Drug 1,2,Y,41,>=40,Male,Not Hispanic or Latino,19.773690595291555,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+181,GT01,4001,GT1107,Drug 1,2,Y,36,<40,Male,Not Hispanic or Latino,25.27153260074556,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+182,GT01,4001,GT1108,Drug 1,2,Y,51,>=40,Male,Hispanic or Latino,33.0538144109305,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+183,GT01,4001,GT1108,Drug 1,2,Y,51,>=40,Male,Hispanic or Latino,33.0538144109305,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+184,GT01,4001,GT1109,Drug 1,2,Y,38,<40,Undifferentiated,Not Hispanic or Latino,22.85006254608743,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+185,GT01,4001,GT1110,Drug 1,2,Y,36,<40,Female,Not Hispanic or Latino,26.40098763233982,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+186,GT01,4001,GT1110,Drug 1,2,Y,36,<40,Female,Not Hispanic or Latino,26.40098763233982,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+187,GT01,4001,GT1111,Drug 1,2,Y,36,<40,Male,Hispanic or Latino,20.800376262282953,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+188,GT01,4001,GT1111,Drug 1,2,Y,36,<40,Male,Hispanic or Latino,20.800376262282953,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+189,GT01,4001,GT1112,Drug 1,2,Y,35,<40,Male,Missing,31.815776777919382,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+190,GT01,4001,GT1113,Drug 1,2,Y,44,>=40,Female,Hispanic or Latino,33.67323106015101,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+191,GT01,4001,GT1113,Drug 1,2,Y,44,>=40,Female,Hispanic or Latino,33.67323106015101,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+192,GT01,4001,GT1114,Drug 1,2,Y,47,>=40,Female,Not Hispanic or Latino,33.78724450431764,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+193,GT01,4001,GT1114,Drug 1,2,Y,47,>=40,Female,Not Hispanic or Latino,33.78724450431764,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+194,GT01,4001,GT1114,Drug 1,2,Y,47,>=40,Female,Not Hispanic or Latino,33.78724450431764,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+195,GT01,4001,GT1115,Drug 1,2,Y,43,>=40,Male,Hispanic or Latino,22.05563490372151,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+196,GT01,4001,GT1116,Drug 1,2,Y,41,>=40,Female,Hispanic or Latino,27.211454851320013,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+197,GT01,4001,GT1116,Drug 1,2,Y,41,>=40,Female,Hispanic or Latino,27.211454851320013,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+198,GT01,4001,GT1117,Drug 1,2,Y,40,>=40,Male,Missing,31.37518055201508,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+199,GT01,4001,GT1118,Drug 1,2,Y,37,<40,Male,Not Hispanic or Latino,34.6546474089846,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+200,GT01,4001,GT1118,Drug 1,2,Y,37,<40,Male,Not Hispanic or Latino,34.6546474089846,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+201,GT01,4001,GT1119,Drug 1,2,Y,50,>=40,Male,Not Hispanic or Latino,28.307290925644338,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+202,GT01,4001,GT1120,Drug 1,2,Y,41,>=40,Female,Not Hispanic or Latino,24.103959791827947,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+203,GT01,4001,GT1121,Drug 1,2,Y,36,<40,Female,Not Hispanic or Latino,23.102781645487994,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+204,GT01,4001,GT1122,Drug 1,2,Y,32,<40,Male,Not Hispanic or Latino,28.66538097942248,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+205,GT01,4001,GT1123,Drug 1,2,Y,45,>=40,Female,Hispanic or Latino,34.75215067178942,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+206,GT01,4001,GT1123,Drug 1,2,Y,45,>=40,Female,Hispanic or Latino,34.75215067178942,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+207,GT01,4001,GT1123,Drug 1,2,Y,45,>=40,Female,Hispanic or Latino,34.75215067178942,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+208,GT01,4001,GT1123,Drug 1,2,Y,45,>=40,Female,Hispanic or Latino,34.75215067178942,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+209,GT01,4001,GT1124,Drug 1,2,Y,49,>=40,Male,Hispanic or Latino,25.96773466281593,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+210,GT01,4001,GT1125,Drug 1,2,Y,32,<40,Female,Missing,32.8073036915157,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+211,GT01,4001,GT1126,Drug 1,2,Y,35,<40,Male,Not Hispanic or Latino,31.711675572907552,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+212,GT01,4001,GT1127,Drug 1,2,Y,33,<40,Female,Hispanic or Latino,23.03165432298556,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+213,GT01,4001,GT1127,Drug 1,2,Y,33,<40,Female,Hispanic or Latino,23.03165432298556,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+214,GT01,4001,GT1127,Drug 1,2,Y,33,<40,Female,Hispanic or Latino,23.03165432298556,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+215,GT01,4001,GT1128,Drug 1,2,Y,31,<40,Male,Hispanic or Latino,30.806253982475027,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+216,GT01,4001,GT1129,Drug 1,2,Y,33,<40,Male,Hispanic or Latino,22.86097922967747,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+217,GT01,4001,GT1130,Drug 1,2,Y,36,<40,Male,Not Hispanic or Latino,19.20741538098082,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+218,GT01,4001,GT1131,Drug 1,2,Y,45,>=40,Female,Not Hispanic or Latino,25.465839789714664,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+219,GT01,4001,GT1131,Drug 1,2,Y,45,>=40,Female,Not Hispanic or Latino,25.465839789714664,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+220,GT01,4001,GT1132,Drug 1,2,Y,41,>=40,Male,Not Hispanic or Latino,25.674703696742654,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+221,GT01,4001,GT1133,Drug 1,2,Y,33,<40,Female,Hispanic or Latino,24.459742462961003,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+222,GT01,4001,GT1134,Drug 1,2,Y,43,>=40,Male,Hispanic or Latino,31.85556439938955,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+223,GT01,4001,GT1135,Drug 1,2,Y,46,>=40,Male,Not Hispanic or Latino,25.263489085482433,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+224,GT01,4001,GT1136,Drug 1,2,Y,39,<40,Female,Hispanic or Latino,30.08362858556211,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+225,GT01,4001,GT1137,Drug 1,2,Y,35,<40,Male,Not Hispanic or Latino,22.918170724762604,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+226,GT01,4001,GT1138,Drug 1,2,Y,36,<40,Male,Missing,21.40095393010415,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+227,GT01,4001,GT1139,Drug 1,2,Y,51,>=40,Male,Hispanic or Latino,34.08182278298773,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+228,GT01,4001,GT1139,Drug 1,2,Y,51,>=40,Male,Hispanic or Latino,34.08182278298773,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+229,GT01,4001,GT1140,Drug 1,2,Y,55,>=40,Female,Not Hispanic or Latino,20.156447029439732,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+230,GT01,4001,GT1141,Drug 1,2,Y,42,>=40,Male,Missing,26.46188394841738,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+231,GT01,4001,GT1142,Drug 1,2,Y,35,<40,Male,Hispanic or Latino,33.0182559506502,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+232,GT01,4001,GT1143,Drug 1,2,Y,34,<40,Male,Hispanic or Latino,32.23918441636488,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+233,GT01,4001,GT1143,Drug 1,2,Y,34,<40,Male,Hispanic or Latino,32.23918441636488,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+234,GT01,4001,GT1144,Drug 1,2,Y,36,<40,Male,Not Hispanic or Latino,34.80552755948156,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+235,GT01,4001,GT1145,Drug 1,2,Y,36,<40,Male,Not Hispanic or Latino,26.533028924139217,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+236,GT01,4001,GT1146,Drug 1,2,Y,29,<40,Male,Missing,23.358656950527802,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+237,GT01,4001,GT1146,Drug 1,2,Y,29,<40,Male,Missing,23.358656950527802,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+238,GT01,4001,GT1147,Drug 1,2,Y,31,<40,Female,Not Hispanic or Latino,27.317194540286437,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+239,GT01,4001,GT1148,Drug 1,2,Y,37,<40,Male,Not Hispanic or Latino,18.62253822130151,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+240,GT01,4001,GT1149,Drug 1,2,Y,42,>=40,Male,Hispanic or Latino,20.399978190194815,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+241,GT01,4001,GT1150,Drug 1,2,Y,43,>=40,Male,Not Hispanic or Latino,33.47293244767934,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+242,GT01,4001,GT1150,Drug 1,2,Y,43,>=40,Male,Not Hispanic or Latino,33.47293244767934,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,Y
+243,GT01,4001,GT1151,Drug 1,2,Y,40,>=40,Male,Not Hispanic or Latino,30.281005875207484,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+244,GT01,4001,GT1152,Drug 1,2,Y,48,>=40,Male,Not Hispanic or Latino,24.81643446884118,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+245,GT01,4001,GT1153,Drug 1,2,Y,36,<40,Female,Hispanic or Latino,29.702947600046173,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+246,GT01,4001,GT1154,Drug 1,2,Y,36,<40,Male,Not Hispanic or Latino,32.77154739247635,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+247,GT01,4001,GT1155,Drug 1,2,Y,34,<40,Female,Hispanic or Latino,26.00070642773062,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+248,GT01,4001,GT1155,Drug 1,2,Y,34,<40,Female,Hispanic or Latino,26.00070642773062,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+249,GT01,4001,GT1156,Drug 1,2,Y,42,>=40,Male,Missing,29.102539450628683,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+250,GT01,4001,GT1156,Drug 1,2,Y,42,>=40,Male,Missing,29.102539450628683,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+251,GT01,4001,GT1156,Drug 1,2,Y,42,>=40,Male,Missing,29.102539450628683,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+252,GT01,4001,GT1157,Drug 1,2,Y,38,<40,Male,Missing,28.64327775943093,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+253,GT01,4001,GT1157,Drug 1,2,Y,38,<40,Male,Missing,28.64327775943093,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+254,GT01,4001,GT1158,Drug 1,2,Y,34,<40,Female,Not Hispanic or Latino,21.149938968010247,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+255,GT01,4001,GT1158,Drug 1,2,Y,34,<40,Female,Not Hispanic or Latino,21.149938968010247,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+256,GT01,4001,GT1158,Drug 1,2,Y,34,<40,Female,Not Hispanic or Latino,21.149938968010247,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+257,GT01,4001,GT1159,Drug 1,2,Y,50,>=40,Male,Not Hispanic or Latino,22.567523212870583,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+258,GT01,4001,GT1159,Drug 1,2,Y,50,>=40,Male,Not Hispanic or Latino,22.567523212870583,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+259,GT01,4001,GT1160,Drug 1,2,Y,31,<40,Male,Not Hispanic or Latino,29.938170886598527,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+260,GT01,4001,GT1160,Drug 1,2,Y,31,<40,Male,Not Hispanic or Latino,29.938170886598527,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+261,GT01,4001,GT1161,Drug 1,2,Y,38,<40,Female,Hispanic or Latino,26.9839669323992,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+262,GT01,4001,GT1162,Drug 1,2,Y,33,<40,Male,Not Hispanic or Latino,21.29550842451863,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+263,GT01,4001,GT1163,Drug 1,2,Y,42,>=40,Male,Not Hispanic or Latino,28.769891462055966,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+264,GT01,4001,GT1164,Drug 1,2,Y,47,>=40,Male,Not Hispanic or Latino,28.15352276386693,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+265,GT01,4001,GT1164,Drug 1,2,Y,47,>=40,Male,Not Hispanic or Latino,28.15352276386693,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+266,GT01,4001,GT1165,Drug 1,2,Y,33,<40,Female,Hispanic or Latino,33.94462034688331,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+267,GT01,4001,GT1165,Drug 1,2,Y,33,<40,Female,Hispanic or Latino,33.94462034688331,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+268,GT01,4001,GT1166,Drug 1,2,Y,44,>=40,Male,Hispanic or Latino,21.779316869797185,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+269,GT01,4001,GT1166,Drug 1,2,Y,44,>=40,Male,Hispanic or Latino,21.779316869797185,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+270,GT01,4001,GT1167,Drug 1,2,Y,32,<40,Female,Hispanic or Latino,19.313716082135215,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+271,GT01,4001,GT1168,Drug 1,2,Y,35,<40,Male,Not Hispanic or Latino,34.07467929297127,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+272,GT01,4001,GT1169,Drug 1,2,Y,40,>=40,Female,Not Hispanic or Latino,20.672302717575803,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+273,GT01,4001,GT1170,Drug 1,2,Y,31,<40,Male,Not Hispanic or Latino,25.11344603006728,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+274,GT01,4001,GT1170,Drug 1,2,Y,31,<40,Male,Not Hispanic or Latino,25.11344603006728,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+275,GT01,4001,GT1171,Drug 1,2,Y,40,>=40,Male,Hispanic or Latino,18.027483529411256,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+276,GT01,4001,GT1172,Drug 1,2,Y,38,<40,Female,Not Hispanic or Latino,34.19865837134421,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+277,GT01,4001,GT1172,Drug 1,2,Y,38,<40,Female,Not Hispanic or Latino,34.19865837134421,{gt} Questionnaire (GTQ v1.0) not completed at month 3,PDEV01,GTQ not completed month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+278,GT01,4001,GT1172,Drug 1,2,Y,38,<40,Female,Not Hispanic or Latino,34.19865837134421,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+279,GT01,4001,GT1173,Drug 1,2,Y,35,<40,Male,Not Hispanic or Latino,34.38011485966854,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+280,GT01,4001,GT1173,Drug 1,2,Y,35,<40,Male,Not Hispanic or Latino,34.38011485966854,Lab values not taken at month 3,PDEV02,Lab values not taken month 3.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,N
+281,GT01,4001,GT1173,Drug 1,2,Y,35,<40,Male,Not Hispanic or Latino,34.38011485966854,Month 3 Visit is not done,PDEV04,Month 3 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+282,GT01,4001,GT1174,Drug 1,2,Y,40,>=40,Female,Missing,23.65800212486647,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+283,GT01,4001,GT1175,Drug 1,2,Y,39,<40,Male,Hispanic or Latino,34.75563183519989,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,Y
+284,GT01,4001,GT1175,Drug 1,2,Y,39,<40,Male,Hispanic or Latino,34.75563183519989,{gt} Questionnaire (GTQ v1.0) not completed at month 6,PDEV03,GTQ not completed month 6.,PROTOCOL DEVIATION,Major,Study Procedures Criteria Deviations,1,COVID-19 Related,Y
+285,GT01,4001,GT1176,Drug 1,2,Y,35,<40,Female,Not Hispanic or Latino,22.41685244697146,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+286,GT01,4001,GT1176,Drug 1,2,Y,35,<40,Female,Not Hispanic or Latino,22.41685244697146,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+287,GT01,4001,GT1177,Drug 1,2,Y,40,>=40,Male,Not Hispanic or Latino,25.333523582667112,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+288,GT01,4001,GT1178,Drug 1,2,Y,36,<40,Male,Not Hispanic or Latino,33.45436458173208,,PDANYM,At least one major Protocol Deviation,OVERALL,,,1,COVID-19 Related,N
+289,GT01,4001,GT1178,Drug 1,2,Y,36,<40,Male,Not Hispanic or Latino,33.45436458173208,Month 6 Visit is not done,PDEV05,Month 6 Visit not done.,PROTOCOL DEVIATION,Major,Study Visit Schedule Deviations,1,COVID-19 Related,N
+290,GT01,4001,GT1179,Drug 1,2,Y,41,>=40,Male,Not Hispanic or Latino,30.09534011525102,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N
+291,GT01,4001,GT1180,Drug 1,2,Y,34,<40,Female,Not Hispanic or Latino,26.81013040873222,,PDANYM,At least one major Protocol Deviation,OVERALL,,,0,COVID-19 Related,N

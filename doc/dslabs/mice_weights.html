@@ -20,7 +20,7 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>Weights for mice under two diets: chow and high fat. Data provided by Karen Svenson from Jackson Laboratories. Funding to generate these data came from NIH grant P50 GM070683 awarded to Gary Churchill.
+<p>Body weights, bone density, and percent fat for mice under two diets: chow and high fat. Data provided by Karen Svenson from Jackson Laboratories. Funding to generate these data came from NIH grant P50 GM070683 awarded to Gary Churchill.
 </p>
 
 
@@ -40,13 +40,25 @@ function processMathHTML() {
 
 
 <ul>
+<li><p> body_weight. Body weight in grams at 19 weeks.
+</p>
+</li>
+<li><p> bone_density. Body density.
+</p>
+</li>
+<li><p> percent_fat. Percent fat.
+</p>
+</li>
 <li><p> sex. The sex of the mice.
 </p>
 </li>
 <li><p> diet. The diet of the mice: chow or high fat.
 </p>
 </li>
-<li><p> body_weight. Body weight in grams at 12 weeks.
+<li><p> gen. These are outbread mice. This variable denotes the generation.
+</p>
+</li>
+<li><p> litter. Which of two litters mice belong to.
 </p>
 </li></ul>
 
@@ -54,7 +66,13 @@ function processMathHTML() {
 
 <h3>Source</h3>
 
-<p>Karen Svenson from Jackson Laboratories
+<p>Karen Svenson, Daniel M. Gatti, and Gary Churchill from Jackson Laboratories.
+</p>
+
+
+<h3>References</h3>
+
+<p>Daniel M. Gatti, Petr Simecek, Lisa Somes, Clifton T. Jeffrey, Matthew J. Vincent, Kwangbom Choi, Xingyao Chen, Gary A. Churchill, and Karen L. Svenson. &quot;The Effects of Sex and Diet on Physiology and Liver Gene Expression in Diversity Outbred Mice&quot;. bioRxiv 098657; <a href="https://doi.org/10.1101/098657">doi:10.1101/098657</a>
 </p>
 
 
@@ -62,7 +80,6 @@ function processMathHTML() {
 
 <pre><code class='language-R'>mice_weights |&gt; head()
 with(mice_weights, table(sex, diet))
-
 </code></pre>
 
 

@@ -70,10 +70,11 @@ with(Bowley,plot(Year, Value, type='b', lwd=2,
 	ylab="Value of British and Irish Exports",
 	main="Bowley's example of the method of smoothing curves"))
 
-# find moving averages-- use center alignment (requires width=ODD)
-#require(gtools, warn.conflicts=FALSE)
+# find moving averages
 # simpler version using stats::filter
-running &lt;- function(x, width = 5){as.vector(stats::filter(x, rep(1 / width, width), sides = 2))}
+running &lt;- function(x, width = 5){
+  as.vector(stats::filter(x, rep(1 / width, width), sides = 2))
+  }
 
 mav3&lt;-running(Bowley$Value, width=3)
 mav5&lt;-running(Bowley$Value, width=5)
@@ -85,11 +86,11 @@ lines(Bowley$Year, mav9, col='brown', lty=4)
 # add lowess smooth
 lines(lowess(Bowley), col='red', lwd=2)
 
-if(require("ggplot2", quietly=TRUE)) {
-  ggplot(aes(x=Year, y=Value), data=Bowley) +
-    geom_point() +
-    geom_smooth(method="loess", formula=y~x)
-  }
+# Initial version, using ggplot
+library(ggplot2)
+ggplot(aes(x=Year, y=Value), data=Bowley) +
+  geom_point() +
+  geom_smooth(method="loess", formula=y~x)
 </code></pre>
 
 

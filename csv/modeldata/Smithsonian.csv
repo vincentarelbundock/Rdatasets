@@ -1,21 +1,21 @@
-"","name","latitude","longitude"
-"1","Anacostia Community Museum",38.856562,-76.9766774
-"2","Arthur M. Sackler Gallery",38.8879405,-77.0263539
-"3","Arts and Industries Building",38.8881846,-77.0267889
-"4","Cooper Hewitt, Smithsonian Design Museum",40.7843998,-73.9600619
-"5","Freer Gallery of Art",38.8879447,-77.0285426
-"6","Hirshhorn Museum and Sculpture Garden",38.888165,-77.0251569
-"7","National Air and Space Museum",38.8881643,-77.0220566
-"8","Steven F. Udvar-Hazy Center",38.9109231,-77.4463962
-"9","National Museum of African American History and Culture",38.8910686,-77.0348027
-"10","National Museum of African Art",38.8879922,-77.0277017
-"11","National Museum of American History",38.8912835,-77.0322396
-"12","National Museum of the American Indian",38.8883526,-77.0186921
-"13","George Gustav Heye Center",40.7043926,-74.016172
-"14","National Museum of Natural History",38.8912704,-77.0282541
-"15","National Portrait Gallery",38.8978734,-77.0252416
-"16","National Postal Museum",38.8981014,-77.0104265
-"17","Renwick Gallery",38.8981219,-77.0169926
-"18","Smithsonian American Art Museum",38.8978651,-77.0251306
-"19","Smithsonian Institution Building",38.8887903,-77.0282116
-"20","National Zoological Park",38.9296198,-77.0519731
+rownames,name,latitude,longitude
+1,Anacostia Community Museum,38.856562,-76.9766774
+2,Arthur M. Sackler Gallery,38.8879405,-77.0263539
+3,Arts and Industries Building,38.8881846,-77.0267889
+4,"Cooper Hewitt, Smithsonian Design Museum",40.7843998,-73.9600619
+5,Freer Gallery of Art,38.8879447,-77.0285426
+6,Hirshhorn Museum and Sculpture Garden,38.888165,-77.0251569
+7,National Air and Space Museum,38.8881643,-77.0220566
+8,Steven F. Udvar-Hazy Center,38.9109231,-77.4463962
+9,National Museum of African American History and Culture,38.8910686,-77.0348027
+10,National Museum of African Art,38.8879922,-77.0277017
+11,National Museum of American History,38.8912835,-77.0322396
+12,National Museum of the American Indian,38.8883526,-77.0186921
+13,George Gustav Heye Center,40.7043926,-74.016172
+14,National Museum of Natural History,38.8912704,-77.0282541
+15,National Portrait Gallery,38.8978734,-77.0252416
+16,National Postal Museum,38.8981014,-77.0104265
+17,Renwick Gallery,38.8981219,-77.0169926
+18,Smithsonian American Art Museum,38.8978651,-77.0251306
+19,Smithsonian Institution Building,38.8887903,-77.0282116
+20,National Zoological Park,38.9296198,-77.0519731

@@ -105,7 +105,8 @@
    ``Lottery``
       Per capita wager on Royal Lottery. Ranked ratio of the proceeds
       bet on the royal lottery to population— Average for the years
-      1822-1826. Source: A1 (Compte rendus par le ministre des finances)
+      1822-1826. Source: A1 (Compte rendus par le ministere des
+      finances)
 
    ``Desertion``
       Military desertion, ratio of the number of young soldiers accused

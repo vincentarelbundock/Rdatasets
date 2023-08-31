@@ -53,7 +53,7 @@
       :name: source
 
    Originally from David McCandless,
-   http://www.informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/,
+   https://informationisbeautiful.net/visualizations/plane-truth-every-single-commercial-plane-crash-visualized/,
    with the data at
    https://docs.google.com/spreadsheets/d/1OvDq4_BtbR6nSnnHnjD5hVC3HQ-ulZPGbo0RDGbzM3Q/edit?usp=drive_web,
    downloaded April 14, 2015.
@@ -74,19 +74,19 @@
       mosaic(aircrash.tab, shade=TRUE)
 
       # fix label overlap
-      mosaic(aircrash.tab, shade=TRUE, 
+      mosaic(aircrash.tab, shade=TRUE,
              labeling_args=list(rot_labels=c(30, 30, 30, 30)))
 
       # reorder by Phase
       phase.ord <- rev(c(3,4,1,2,5))
-      mosaic(aircrash.tab[phase.ord,], shade=TRUE, 
-             labeling_args=list(rot_labels=c(30, 30, 30, 30)), 
+      mosaic(aircrash.tab[phase.ord,], shade=TRUE,
+             labeling_args=list(rot_labels=c(30, 30, 30, 30)),
              offset_varnames=0.5)
 
       # reorder by frequency
       phase.ord <- order(rowSums(aircrash.tab), decreasing=TRUE)
       cause.ord <- order(colSums(aircrash.tab), decreasing=TRUE)
-      mosaic(aircrash.tab[phase.ord,cause.ord], shade=TRUE, 
+      mosaic(aircrash.tab[phase.ord,cause.ord], shade=TRUE,
              labeling_args=list(rot_labels=c(30, 30, 30, 30)))
 
 

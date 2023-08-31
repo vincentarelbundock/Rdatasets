@@ -1,11 +1,11 @@
-"","series","episodes","premiere","finale","winner","avg_uk_viewers","day_of_week","timeslot","channel","runner_up_1","runner_up_2"
-"1","1",6,2010-08-17,2010-09-21,"Edd Kimber",2.77,"Tuesday","8:00pm","BBC Two","Miranda Gore Browne","Ruth Clemens"
-"2","2",8,2011-08-14,2011-10-04,"Joanne Wheatley",4,"Tuesday","8:00pm","BBC Two","Holly Bell","Mary-Anne Boermans"
-"3","3",10,2012-08-14,2012-10-16,"John Whaite",5,"Tuesday","8:00pm","BBC Two","Brendan Lynch","James Morton"
-"4","4",10,2013-08-20,2013-10-22,"Frances Quinn",7.35,"Tuesday","8:00pm","BBC Two","Kimberley Wilson","Ruby Tandoh"
-"5","5",10,2014-08-06,2014-10-08,"Nancy Birtwhistle",10.04,"Wednesday","8:00pm","BBC One","Luis Troyano","Richard Burr"
-"6","6",10,2015-08-05,2015-10-07,"Nadiya Hussain",12.5,"Wednesday","8:00pm","BBC One","Ian Cumming","Tamal Ray"
-"7","7",10,2016-08-24,2016-10-26,"Candice Brown",13.85,"Wednesday","8:00pm","BBC One","Andrew Smyth","Jane Beedle"
-"8","8",10,2017-08-29,2017-10-31,"Sophie Faldo",9.29,"Tuesday","8:00pm","Channel 4","Kate Lyon","Steven Carter-Bailey"
-"9","9",10,2018-08-28,2018-10-30,"Rahul Mandal",9.3,"Tuesday","8:00pm","Channel 4","Kim-Joy Hewlett","Ruby Bhogal"
-"10","10",10,2019-08-27,2019-10-29,"David Atherton",9.24,"Tuesday","8:00pm","Channel 4","Alice Fevronia","Steph Blackwell"
+rownames,series,episodes,premiere,finale,winner,avg_uk_viewers,day_of_week,timeslot,channel,runner_up_1,runner_up_2
+1,1,6,2010-08-17,2010-09-21,Edd Kimber,2.77,Tuesday,8:00pm,BBC Two,Miranda Gore Browne,Ruth Clemens
+2,2,8,2011-08-14,2011-10-04,Joanne Wheatley,4,Tuesday,8:00pm,BBC Two,Holly Bell,Mary-Anne Boermans
+3,3,10,2012-08-14,2012-10-16,John Whaite,5,Tuesday,8:00pm,BBC Two,Brendan Lynch,James Morton
+4,4,10,2013-08-20,2013-10-22,Frances Quinn,7.35,Tuesday,8:00pm,BBC Two,Kimberley Wilson,Ruby Tandoh
+5,5,10,2014-08-06,2014-10-08,Nancy Birtwhistle,10.04,Wednesday,8:00pm,BBC One,Luis Troyano,Richard Burr
+6,6,10,2015-08-05,2015-10-07,Nadiya Hussain,12.5,Wednesday,8:00pm,BBC One,Ian Cumming,Tamal Ray
+7,7,10,2016-08-24,2016-10-26,Candice Brown,13.85,Wednesday,8:00pm,BBC One,Andrew Smyth,Jane Beedle
+8,8,10,2017-08-29,2017-10-31,Sophie Faldo,9.29,Tuesday,8:00pm,Channel 4,Kate Lyon,Steven Carter-Bailey
+9,9,10,2018-08-28,2018-10-30,Rahul Mandal,9.3,Tuesday,8:00pm,Channel 4,Kim-Joy Hewlett,Ruby Bhogal
+10,10,10,2019-08-27,2019-10-29,David Atherton,9.24,Tuesday,8:00pm,Channel 4,Alice Fevronia,Steph Blackwell

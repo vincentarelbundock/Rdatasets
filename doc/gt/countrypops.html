@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><title>R: Yearly populations of countries from 1960 to 2017</title>
+<!DOCTYPE html><html><head><title>R: Yearly populations of countries from 1960 to 2021</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
@@ -16,7 +16,7 @@ function processMathHTML() {
 
 <table style="width: 100%;"><tr><td>countrypops</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='countrypops'>Yearly populations of countries from 1960 to 2017</h2>
+<h2 id='countrypops'>Yearly populations of countries from 1960 to 2021</h2>
 
 <h3>Description</h3>
 
@@ -24,8 +24,8 @@ function processMathHTML() {
 population is based on counts of all residents regardless of legal status or
 citizenship. Country identifiers include the English-language country names,
 and the 2- and 3-letter ISO 3166-1 country codes. Each row contains a
-<code>population</code> value for a given <code>year</code> (from 1960 to 2017). Any <code>NA</code> values
-for <code>populations</code> indicate the non-existence of the country during that year.
+<code>population</code> value for a given <code>year</code> (from 1960 to 2021). Any <code>NA</code> values
+for <code>populations</code> indicate the non-existence of the entity during that year.
 </p>
 
 
@@ -37,19 +37,18 @@ for <code>populations</code> indicate the non-existence of the country during th
 
 <h3>Format</h3>
 
-<p>A tibble with 12470 rows and 5 variables:
+<p>A tibble with 13,330 rows and 5 variables:
 </p>
 
 <dl>
-<dt>country_name</dt><dd><p>Name of the country</p>
+<dt>country_name</dt><dd><p>The name of the country.</p>
 </dd>
-<dt>country_code_2</dt><dd><p>The 2-letter ISO 3166-1 country code</p>
+<dt>country_code_2, country_code_3</dt><dd><p>The 2- and 3-letter ISO 3166-1 country
+codes.</p>
 </dd>
-<dt>country_code_3</dt><dd><p>The 3-letter ISO 3166-1 country code</p>
+<dt>year</dt><dd><p>The year for the population estimate.</p>
 </dd>
-<dt>year</dt><dd><p>The year for the population estimate</p>
-</dd>
-<dt>population</dt><dd><p>The population estimate, midway through the year</p>
+<dt>population</dt><dd><p>The population estimate, midway through the year.</p>
 </dd>
 </dl>
 
@@ -60,19 +59,28 @@ for <code>populations</code> indicate the non-existence of the country during th
 <p>Here is a glimpse at the data available in <code>countrypops</code>.
 </p>
 <div class="sourceCode r"><pre>dplyr::glimpse(countrypops)
-#&gt; Rows: 12,470
+#&gt; Rows: 13,330
 #&gt; Columns: 5
 #&gt; $ country_name   &lt;chr&gt; "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "~
 #&gt; $ country_code_2 &lt;chr&gt; "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "~
 #&gt; $ country_code_3 &lt;chr&gt; "ABW", "ABW", "ABW", "ABW", "ABW", "ABW", "ABW", "ABW",~
 #&gt; $ year           &lt;int&gt; 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1~
-#&gt; $ population     &lt;int&gt; 54211, 55438, 56225, 56695, 57032, 57360, 57715, 58055,~
+#&gt; $ population     &lt;int&gt; 54608, 55811, 56682, 57475, 58178, 58782, 59291, 59522,~
 </pre></div>
 
 
-<h3>Function ID</h3>
+<h3>Dataset ID and Badge</h3>
 
-<p>11-1
+<p>DATA-1
+</p>
+
+<div style="text-align:center;"><img src="https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_countrypops.png" alt="This image of that of a dataset badge." style="width:50%;padding-bottom:20px;"></div>
+
+
+
+<h3>Dataset Introduced</h3>
+
+<p><code>v0.2.0.5</code> (March 31, 2020)
 </p>
 
 
@@ -87,9 +95,13 @@ for <code>populations</code> indicate the non-existence of the country during th
 <p>Other datasets: 
 <code>exibble</code>,
 <code>gtcars</code>,
+<code>metro</code>,
 <code>pizzaplace</code>,
+<code>rx_addv</code>,
+<code>rx_adsl</code>,
 <code>sp500</code>,
-<code>sza</code>
+<code>sza</code>,
+<code>towny</code>
 </p>
 
 

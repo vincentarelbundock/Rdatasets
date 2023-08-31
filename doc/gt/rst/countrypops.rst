@@ -4,7 +4,7 @@
    countrypops R Documentation
    =========== ===============
 
-   .. rubric:: Yearly populations of countries from 1960 to 2017
+   .. rubric:: Yearly populations of countries from 1960 to 2021
       :name: countrypops
 
    .. rubric:: Description
@@ -15,8 +15,8 @@
    status or citizenship. Country identifiers include the
    English-language country names, and the 2- and 3-letter ISO 3166-1
    country codes. Each row contains a ``population`` value for a given
-   ``year`` (from 1960 to 2017). Any ``NA`` values for ``populations``
-   indicate the non-existence of the country during that year.
+   ``year`` (from 1960 to 2021). Any ``NA`` values for ``populations``
+   indicate the non-existence of the entity during that year.
 
    .. rubric:: Usage
       :name: usage
@@ -28,22 +28,19 @@
    .. rubric:: Format
       :name: format
 
-   A tibble with 12470 rows and 5 variables:
+   A tibble with 13,330 rows and 5 variables:
 
    country_name
-      Name of the country
+      The name of the country.
 
-   country_code_2
-      The 2-letter ISO 3166-1 country code
-
-   country_code_3
-      The 3-letter ISO 3166-1 country code
+   country_code_2, country_code_3
+      The 2- and 3-letter ISO 3166-1 country codes.
 
    year
-      The year for the population estimate
+      The year for the population estimate.
 
    population
-      The population estimate, midway through the year
+      The population estimate, midway through the year.
 
    .. rubric:: Examples
       :name: examples
@@ -55,18 +52,27 @@
       ::
 
          dplyr::glimpse(countrypops)
-         #> Rows: 12,470
+         #> Rows: 13,330
          #> Columns: 5
          #> $ country_name   <chr> "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "~
          #> $ country_code_2 <chr> "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "~
          #> $ country_code_3 <chr> "ABW", "ABW", "ABW", "ABW", "ABW", "ABW", "ABW", "ABW",~
          #> $ year           <int> 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1~
-         #> $ population     <int> 54211, 55438, 56225, 56695, 57032, 57360, 57715, 58055,~
+         #> $ population     <int> 54608, 55811, 56682, 57475, 58178, 58782, 59291, 59522,~
 
-   .. rubric:: Function ID
-      :name: function-id
+   .. rubric:: Dataset ID and Badge
+      :name: dataset-id-and-badge
 
-   11-1
+   DATA-1
+
+   .. container::
+
+      |This image of that of a dataset badge.|
+
+   .. rubric:: Dataset Introduced
+      :name: dataset-introduced
+
+   ``v0.2.0.5`` (March 31, 2020)
 
    .. rubric:: Source
       :name: source
@@ -76,5 +82,7 @@
    .. rubric:: See Also
       :name: see-also
 
-   Other datasets: ``exibble``, ``gtcars``, ``pizzaplace``, ``sp500``,
-   ``sza``
+   Other datasets: ``exibble``, ``gtcars``, ``metro``, ``pizzaplace``,
+   ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``, ``towny``
+
+.. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_countrypops.png
