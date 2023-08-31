@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: Daily Hotel Rate Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>hotel_rates</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='hotel_rates'>Daily Hotel Rate Data</h2>
+
+<h3>Description</h3>
+
+<p>A data set to predict the average daily rate for a hotel in Lisbon Portugal.
+</p>
+
+
+<h3>Details</h3>
+
+<p>Data are originally described in Antonio, de Almeida, and Nunes (2019).
+This version of the data is filtered for one hotel (the &quot;Resort Hotel&quot;) and
+is intended as regression data set for predicting the average daily rate for
+a room. The data are post-2016; the 2016 data were used to have a predictor
+for the historical daily rates. See the <code>hotel_rates.R</code> file in the
+<code>data-raw</code> directory of the package to understand other filters used when
+creating this version of the data.
+</p>
+<p>The <code>agent</code> and <code>company</code> fields were changed from random characters to use
+a set of random names.
+</p>
+<p>The outcome column is <code>avg_price_per_room</code>.
+</p>
+
+
+<h4>License</h4>
+
+<p>No license was given for the data; See the reference below for source.
+</p>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-02-11">https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-02-11</a>
+</p>
+
+
+<h3>References</h3>
+
+<p>Antonio, N., de Almeida, A., and Nunes, L. (2019). Hotel booking demand
+datasets. <em>Data in Brief</em>, 22, 41-49.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>## Not run: 
+str(hotel_rates)
+
+## End(Not run)
+</code></pre>
+
+
+</div>
+</body></html>

@@ -1,25 +1,25 @@
-"","Dullness","Clothing","Freq"
-"1","Ment. defective","V.Well clad",33
-"2","Slow","V.Well clad",48
-"3","Slow Intell","V.Well clad",113
-"4","Fairly Intell","V.Well clad",209
-"5","Capable","V.Well clad",194
-"6","V.Able","V.Well clad",39
-"7","Ment. defective","Well clad",41
-"8","Slow","Well clad",100
-"9","Slow Intell","Well clad",202
-"10","Fairly Intell","Well clad",255
-"11","Capable","Well clad",138
-"12","V.Able","Well clad",15
-"13","Ment. defective","Passable",39
-"14","Slow","Passable",58
-"15","Slow Intell","Passable",70
-"16","Fairly Intell","Passable",61
-"17","Capable","Passable",33
-"18","V.Able","Passable",4
-"19","Ment. defective","Insufficient",17
-"20","Slow","Insufficient",13
-"21","Slow Intell","Insufficient",22
-"22","Fairly Intell","Insufficient",10
-"23","Capable","Insufficient",10
-"24","V.Able","Insufficient",1
+rownames,Dullness,Clothing,Freq
+1,Ment. defective,V.Well clad,33
+2,Slow,V.Well clad,48
+3,Slow Intell,V.Well clad,113
+4,Fairly Intell,V.Well clad,209
+5,Capable,V.Well clad,194
+6,V.Able,V.Well clad,39
+7,Ment. defective,Well clad,41
+8,Slow,Well clad,100
+9,Slow Intell,Well clad,202
+10,Fairly Intell,Well clad,255
+11,Capable,Well clad,138
+12,V.Able,Well clad,15
+13,Ment. defective,Passable,39
+14,Slow,Passable,58
+15,Slow Intell,Passable,70
+16,Fairly Intell,Passable,61
+17,Capable,Passable,33
+18,V.Able,Passable,4
+19,Ment. defective,Insufficient,17
+20,Slow,Insufficient,13
+21,Slow Intell,Insufficient,22
+22,Fairly Intell,Insufficient,10
+23,Capable,Insufficient,10
+24,V.Able,Insufficient,1

@@ -1,13 +1,13 @@
-"","study_id","treatment","dosing_regimen_for_scurvy","gum_rot_d6","skin_sores_d6","weakness_of_the_knees_d6","lassitude_d6","fit_for_duty_d6"
-"1","001","cider","1 quart per day","2_moderate","2_moderate","2_moderate","2_moderate","0_no"
-"2","002","cider","1 quart per day","2_moderate","1_mild","2_moderate","3_severe","0_no"
-"3","003","dilute_sulfuric_acid","25 drops of elixir of vitriol, three times a day","1_mild","3_severe","3_severe","3_severe","0_no"
-"4","004","dilute_sulfuric_acid","25 drops of elixir of vitriol, three times a day","2_moderate","3_severe","3_severe","3_severe","0_no"
-"5","005","vinegar","two spoonfuls, three times daily","3_severe","3_severe","3_severe","3_severe","0_no"
-"6","006","vinegar","two spoonfuls, three times daily","3_severe","3_severe","3_severe","3_severe","0_no"
-"7","007","sea_water","half pint daily","3_severe","3_severe","3_severe","3_severe","0_no"
-"8","008","sea_water","half pint daily","3_severe","3_severe","3_severe","3_severe","0_no"
-"9","009","citrus","two lemons and an orange daily","1_mild","1_mild","0_none","1_mild","0_no"
-"10","010","citrus","two lemons and an orange daily","0_none","0_none","0_none","0_none","1_yes"
-"11","011","purgative_mixture","a nutmeg-sized paste of garlic, mustard seed, horseradish, balsam of Peru, and gum myrrh three times a day","3_severe","3_severe","3_severe","3_severe","0_no"
-"12","012","purgative_mixture","a nutmeg-sized paste of garlic, mustard seed, horseradish, balsam of Peru, and gum myrrh three times a day","3_severe","3_severe","3_severe","3_severe","0_no"
+rownames,study_id,treatment,dosing_regimen_for_scurvy,gum_rot_d6,skin_sores_d6,weakness_of_the_knees_d6,lassitude_d6,fit_for_duty_d6
+1,001,cider,1 quart per day,2_moderate,2_moderate,2_moderate,2_moderate,0_no
+2,002,cider,1 quart per day,2_moderate,1_mild,2_moderate,3_severe,0_no
+3,003,dilute_sulfuric_acid,"25 drops of elixir of vitriol, three times a day",1_mild,3_severe,3_severe,3_severe,0_no
+4,004,dilute_sulfuric_acid,"25 drops of elixir of vitriol, three times a day",2_moderate,3_severe,3_severe,3_severe,0_no
+5,005,vinegar,"two spoonfuls, three times daily",3_severe,3_severe,3_severe,3_severe,0_no
+6,006,vinegar,"two spoonfuls, three times daily",3_severe,3_severe,3_severe,3_severe,0_no
+7,007,sea_water,half pint daily,3_severe,3_severe,3_severe,3_severe,0_no
+8,008,sea_water,half pint daily,3_severe,3_severe,3_severe,3_severe,0_no
+9,009,citrus,two lemons and an orange daily,1_mild,1_mild,0_none,1_mild,0_no
+10,010,citrus,two lemons and an orange daily,0_none,0_none,0_none,0_none,1_yes
+11,011,purgative_mixture,"a nutmeg-sized paste of garlic, mustard seed, horseradish, balsam of Peru, and gum myrrh three times a day",3_severe,3_severe,3_severe,3_severe,0_no
+12,012,purgative_mixture,"a nutmeg-sized paste of garlic, mustard seed, horseradish, balsam of Peru, and gum myrrh three times a day",3_severe,3_severe,3_severe,3_severe,0_no

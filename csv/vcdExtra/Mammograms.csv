@@ -1,5 +1,5 @@
-"","Absent","Minimal","Moderate","Severe"
-"Absent",34,10,2,0
-"Minimal",6,8,8,2
-"Moderate",2,5,4,12
-"Severe",0,1,2,14
+rownames,Absent,Minimal,Moderate,Severe
+Absent,34,10,2,0
+Minimal,6,8,8,2
+Moderate,2,5,4,12
+Severe,0,1,2,14

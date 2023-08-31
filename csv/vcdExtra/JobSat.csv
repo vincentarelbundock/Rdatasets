@@ -1,17 +1,17 @@
-"","income","satisfaction","Freq"
-"1","< 15k","VeryD",1
-"2","15-25k","VeryD",2
-"3","25-40k","VeryD",1
-"4","> 40k","VeryD",0
-"5","< 15k","LittleD",3
-"6","15-25k","LittleD",3
-"7","25-40k","LittleD",6
-"8","> 40k","LittleD",1
-"9","< 15k","ModerateS",10
-"10","15-25k","ModerateS",10
-"11","25-40k","ModerateS",14
-"12","> 40k","ModerateS",9
-"13","< 15k","VeryS",6
-"14","15-25k","VeryS",7
-"15","25-40k","VeryS",12
-"16","> 40k","VeryS",11
+rownames,income,satisfaction,Freq
+1,< 15k,VeryD,1
+2,15-25k,VeryD,2
+3,25-40k,VeryD,1
+4,> 40k,VeryD,0
+5,< 15k,LittleD,3
+6,15-25k,LittleD,3
+7,25-40k,LittleD,6
+8,> 40k,LittleD,1
+9,< 15k,ModerateS,10
+10,15-25k,ModerateS,10
+11,25-40k,ModerateS,14
+12,> 40k,ModerateS,9
+13,< 15k,VeryS,6
+14,15-25k,VeryS,7
+15,25-40k,VeryS,12
+16,> 40k,VeryS,11

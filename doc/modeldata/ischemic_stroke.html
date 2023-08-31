@@ -1,0 +1,171 @@
+<!DOCTYPE html><html><head><title>R: Clinical data used to predict ischemic stroke</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>ischemic_stroke</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='ischemic_stroke'>Clinical data used to predict ischemic stroke</h2>
+
+<h3>Description</h3>
+
+<p>A data set to predict a binary outcome using imaging and patient data.
+</p>
+
+
+<h3>Details</h3>
+
+<p>These data were gathered to predict patient risk for ischemic stroke. A
+historical set of patients with a range of carotid artery blockages were
+selected. The data consisted of 126 patients, 44 of which had blockages
+greater than 70%. All patients had undergone Computed Tomography Angiography
+(CTA) to generate a detailed three-dimensional visualization and
+characterization of the blockage. These images were then analyzed in order to
+compute several features related to the disease, including: percent stenosis,
+arterial wall thickness, and tissue characteristics such as lipid-rich
+necrotic core and calcification.
+</p>
+<p>The group of patients in this study also had follow-up information on
+whether or not a stroke occurred at a subsequent point in time. The data for
+each patient also included commonly collected clinical characteristics for
+risk of stroke such as whether or not the patient had atrial fibrillation,
+coronary artery disease, and a history of smoking. Demographics of gender and
+age were included as well. These readily available risk factors can be
+thought of as another potentially useful predictor set that can be evaluated.
+In fact, this set of predictors should be evaluated first to assess their
+ability to predict stroke since these predictors are easy to collect, are
+acquired at patient presentation, and do not require an expensive imaging
+technique.
+</p>
+<p>Columns:
+</p>
+
+<ul>
+<li> <p><code>stroke</code>:  factor (levels: 'yes' and 'no')
+</p>
+</li>
+<li> <p><code>nascet_scale</code>:  numeric
+</p>
+</li>
+<li> <p><code>calc_vol</code>:  numeric
+</p>
+</li>
+<li> <p><code>calc_vol_prop</code>:  numeric
+</p>
+</li>
+<li> <p><code>matx_vol</code>:  numeric
+</p>
+</li>
+<li> <p><code>matx_vol_prop</code>:  numeric
+</p>
+</li>
+<li> <p><code>lrnc_vol</code>:  numeric
+</p>
+</li>
+<li> <p><code>lrnc_vol_prop</code>:  numeric
+</p>
+</li>
+<li> <p><code>max_calc_area</code>:  numeric
+</p>
+</li>
+<li> <p><code>max_calc_area_prop</code>:  numeric
+</p>
+</li>
+<li> <p><code>max_dilation_by_area</code>:  numeric
+</p>
+</li>
+<li> <p><code>max_matx_area</code>:  numeric
+</p>
+</li>
+<li> <p><code>max_matx_area_prop</code>:  numeric
+</p>
+</li>
+<li> <p><code>max_lrnc_area</code>:  numeric
+</p>
+</li>
+<li> <p><code>max_lrnc_area_prop</code>:  numeric
+</p>
+</li>
+<li> <p><code>max_max_wall_thickness</code>:  numeric
+</p>
+</li>
+<li> <p><code>max_remodeling_ratio</code>:  numeric
+</p>
+</li>
+<li> <p><code>max_stenosis_by_area</code>:  numeric
+</p>
+</li>
+<li> <p><code>max_wall_area</code>:  numeric
+</p>
+</li>
+<li> <p><code>wall_vol</code>:  numeric
+</p>
+</li>
+<li> <p><code>max_stenosis_by_diameter</code>:  numeric
+</p>
+</li>
+<li> <p><code>age</code>:  integer
+</p>
+</li>
+<li> <p><code>male</code>:  integer
+</p>
+</li>
+<li> <p><code>smoking_history</code>:  integer
+</p>
+</li>
+<li> <p><code>atrial_fibrillation</code>:  integer
+</p>
+</li>
+<li> <p><code>coronary_artery_disease</code>:  integer
+</p>
+</li>
+<li> <p><code>diabetes_history</code>:  integer
+</p>
+</li>
+<li> <p><code>hypercholesterolemia_history</code>:  integer
+</p>
+</li>
+<li> <p><code>hypertension_history</code>:  integer
+</p>
+</li></ul>
+
+
+
+<h3>Value</h3>
+
+<table>
+<tr><td><code>ischemic_stroke</code></td>
+<td>
+<p>a tibble</p>
+</td></tr>
+</table>
+
+
+<h3>Source</h3>
+
+<p>Kuhn, Max, and Kjell Johnson. <em>Feature Engineering and Selection: A Practical
+Approach for Predictive Models</em>. Chapman and Hall/CRC, 2019.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(ischemic_stroke)
+str(ischemic_stroke)
+
+</code></pre>
+
+
+</div>
+</body></html>

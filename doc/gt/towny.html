@@ -1,0 +1,162 @@
+<!DOCTYPE html><html><head><title>R: Populations of all municipalities in Ontario from 1996 to...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>towny</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='towny'>Populations of all municipalities in Ontario from 1996 to 2021</h2>
+
+<h3>Description</h3>
+
+<p>A dataset containing census population data from six census years (1996 to
+2021) for all 414 of Ontario's local municipalities. The Municipal Act of
+Ontario (2001) defines a local municipality as &quot;a single-tier municipality or
+a lower-tier municipality&quot;. There are 173 single-tier municipalities and 241
+lower-tier municipalities representing 99 percent of Ontario's population
+and 17 percent of its land use.
+</p>
+<p>In the <code>towny</code> dataset we include information specific to each municipality
+such as location (in the <code>latitude</code> and <code>longitude</code> columns), their website
+URLs, their classifications, and land area sizes according to 2021
+boundaries. Additionally, there are computed columns containing population
+density values for each census year and population change values from
+adjacent census years.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>towny
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 414 rows and 25 variables:
+</p>
+
+<dl>
+<dt>name</dt><dd><p>The name of the municipality.</p>
+</dd>
+<dt>website</dt><dd><p>The website for the municipality. This is <code>NA</code> if there isn't
+an official site.</p>
+</dd>
+<dt>status</dt><dd><p>The status of the municipality. This is either <code>"lower-tier"</code>
+or <code>"single-tier"</code>. A single-tier municipality, which takes on all municipal
+duties outlined in the Municipal Act and other Provincial laws, is
+independent of an upper-tier municipality. Part of an upper-tier municipality
+is a lower-tier municipality. The upper-tier and lower-tier municipalities
+are responsible for carrying out the duties laid out in the Municipal Act and
+other provincial laws.</p>
+</dd>
+<dt>csd_type</dt><dd><p>The Census Subdivision Type. This can be one of <code>"village"</code>,
+<code>"town"</code>, <code>"township"</code>, <code>"municipality"</code>, or <code>"city"</code>.</p>
+</dd>
+<dt>census_div</dt><dd><p>The Census division, of which there are 49. This is made up
+of single-tier municipalities, regional municipalities, counties, and
+districts.</p>
+</dd>
+<dt>latitude, longitude</dt><dd><p>The location of the municipality, given as
+latitude and longitude values in decimal degrees.</p>
+</dd>
+<dt>land_area_km2</dt><dd><p>The total area of the local municipality in square
+kilometers.</p>
+</dd>
+<dt>population_1996, population_2001, population_2006, population_2011,
+population_2016, population_2021</dt><dd>
+<p>Population values for each municipality from the 1996 to 2021 census years.</p>
+</dd>
+<dt>density_1996, density_2001, density_2006, density_2011, density_2016,
+density_2021</dt><dd>
+<p>Population density values, calculated as persons per square kilometer, for
+each municipality from the 1996 to 2021 census years.</p>
+</dd>
+<dt>pop_change_1996_2001_pct, pop_change_2001_2006_pct,
+pop_change_2006_2011_pct, pop_change_2011_2016_pct,
+pop_change_2016_2021_pct</dt><dd>
+<p>Population changes between adjacent pairs of census years, from 1996 to
+2021.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<p>Here is a glimpse at the data available in <code>towny</code>.
+</p>
+<div class="sourceCode r"><pre>dplyr::glimpse(towny)
+#&gt; Rows: 414
+#&gt; Columns: 25
+#&gt; $ name                     &lt;chr&gt; "Addington Highlands", "Adelaide Metcalfe", "~
+#&gt; $ website                  &lt;chr&gt; "https://addingtonhighlands.ca", "https://ade~
+#&gt; $ status                   &lt;chr&gt; "lower-tier", "lower-tier", "lower-tier", "lo~
+#&gt; $ csd_type                 &lt;chr&gt; "township", "township", "township", "township~
+#&gt; $ census_div               &lt;chr&gt; "Lennox and Addington", "Middlesex", "Simcoe"~
+#&gt; $ latitude                 &lt;dbl&gt; 45.00000, 42.95000, 44.13333, 45.52917, 43.85~
+#&gt; $ longitude                &lt;dbl&gt; -77.25000, -81.70000, -79.93333, -76.89694, -~
+#&gt; $ land_area_km2            &lt;dbl&gt; 1293.99, 331.11, 371.53, 519.59, 66.64, 116.6~
+#&gt; $ population_1996          &lt;int&gt; 2429, 3128, 9359, 2837, 64430, 1027, 8315, 16~
+#&gt; $ population_2001          &lt;int&gt; 2402, 3149, 10082, 2824, 73753, 956, 8593, 18~
+#&gt; $ population_2006          &lt;int&gt; 2512, 3135, 10695, 2716, 90167, 958, 8654, 19~
+#&gt; $ population_2011          &lt;int&gt; 2517, 3028, 10603, 2844, 109600, 864, 9196, 2~
+#&gt; $ population_2016          &lt;int&gt; 2318, 2990, 10975, 2935, 119677, 969, 9680, 2~
+#&gt; $ population_2021          &lt;int&gt; 2534, 3011, 10989, 2995, 126666, 954, 9949, 2~
+#&gt; $ density_1996             &lt;dbl&gt; 1.88, 9.45, 25.19, 5.46, 966.84, 8.81, 21.22,~
+#&gt; $ density_2001             &lt;dbl&gt; 1.86, 9.51, 27.14, 5.44, 1106.74, 8.20, 21.93~
+#&gt; $ density_2006             &lt;dbl&gt; 1.94, 9.47, 28.79, 5.23, 1353.05, 8.22, 22.09~
+#&gt; $ density_2011             &lt;dbl&gt; 1.95, 9.14, 28.54, 5.47, 1644.66, 7.41, 23.47~
+#&gt; $ density_2016             &lt;dbl&gt; 1.79, 9.03, 29.54, 5.65, 1795.87, 8.31, 24.71~
+#&gt; $ density_2021             &lt;dbl&gt; 1.96, 9.09, 29.58, 5.76, 1900.75, 8.18, 25.39~
+#&gt; $ pop_change_1996_2001_pct &lt;dbl&gt; -0.0111, 0.0067, 0.0773, -0.0046, 0.1447, -0.~
+#&gt; $ pop_change_2001_2006_pct &lt;dbl&gt; 0.0458, -0.0044, 0.0608, -0.0382, 0.2226, 0.0~
+#&gt; $ pop_change_2006_2011_pct &lt;dbl&gt; 0.0020, -0.0341, -0.0086, 0.0471, 0.2155, -0.~
+#&gt; $ pop_change_2011_2016_pct &lt;dbl&gt; -0.0791, -0.0125, 0.0351, 0.0320, 0.0919, 0.1~
+#&gt; $ pop_change_2016_2021_pct &lt;dbl&gt; 0.0932, 0.0070, 0.0013, 0.0204, 0.0584, -0.01~
+</pre></div>
+
+
+<h3>Dataset ID and Badge</h3>
+
+<p>DATA-7
+</p>
+
+<div style="text-align:center;"><img src="https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_towny.png" alt="This image of that of a dataset badge." style="width:50%;padding-bottom:20px;"></div>
+
+
+
+<h3>Dataset Introduced</h3>
+
+<p><em>In Development</em>
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other datasets: 
+<code>countrypops</code>,
+<code>exibble</code>,
+<code>gtcars</code>,
+<code>metro</code>,
+<code>pizzaplace</code>,
+<code>rx_addv</code>,
+<code>rx_adsl</code>,
+<code>sp500</code>,
+<code>sza</code>
+</p>
+
+
+</div>
+</body></html>

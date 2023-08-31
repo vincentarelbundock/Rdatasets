@@ -28,7 +28,7 @@
 
    The firestorm that this report set off is well described by Stigler
    (1999), Chapter 1. The data set ``DrinksWages`` is just one of
-   Pearsons many tables, that he published in a letter to *The Times*,
+   Pearson's many tables, that he published in a letter to *The Times*,
    August 10, 1910.
 
    .. rubric:: Usage

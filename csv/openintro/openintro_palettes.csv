@@ -1,4 +1,4 @@
-"","x"
-"1","Error in (function (..., row.names = NULL, check.rows = FALSE, check.names = TRUE,  : 
+rownames,x
+1,"Error in (function (..., row.names = NULL, check.rows = FALSE, check.names = TRUE,  : 
   arguments imply differing number of rows: 5, 2, 3, 4, 6
 "

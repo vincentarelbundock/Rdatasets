@@ -42,7 +42,7 @@
    samples, having fixed ``Sex``-``Status`` marginal totals. There were
    500 females and 600 males. Within the female group, 250 of low status
    and 250 of high status were sampled. Similarly for the males, with
-   300 in each of the low and hgh status sub-groups.
+   300 in each of the low and high status sub-groups.
 
    This is an example of a product-multinomial sampling scheme. the
    ``Sex:Status`` association must be included in any loglinear model

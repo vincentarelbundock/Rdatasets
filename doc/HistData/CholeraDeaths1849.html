@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Daily Deaths from Cholera and Diarrhaea in England, 1849</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>CholeraDeaths1849</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='CholeraDeaths1849'>
+Daily Deaths from Cholera and Diarrhaea in England, 1849
+</h2>
+
+<h3>Description</h3>
+
+<p>Deaths from Cholera and Diarrhaea, for each day of the month of each of the 12 months of 1849.
+</p>
+<p>This was used by William Farr (GRO &amp; Farr, 1852, Plate 2) to produce a time series chart of these deaths,
+in which he also recorded various meteorological phenomena (barometer, wind, rain),
+to see if he could find any patterns. This chart is available on the web site
+for Friendly &amp; Wainer (2021) as Fig 4.1, <a href="https://friendly.github.io/HistDataVis/figs-web/04_1-cholera-diarrhea.png">https://friendly.github.io/HistDataVis/figs-web/04_1-cholera-diarrhea.png</a>.
+</p>
+<p>James Riley (2023) notes, &quot;Cholera 1849 has special significance &mdash; it is likely to be one of few modern pandemics that was completely unmitigated.&quot;
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("CholeraDeaths1849")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 730 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt><code>month</code></dt><dd><p>a character vector</p>
+</dd>
+<dt><code>cause_of_death</code></dt><dd><p>a factor with levels <code>Cholera</code> <code>Diarrhaea</code></p>
+</dd>
+<dt><code>day_of_month</code></dt><dd><p>a character vector</p>
+</dd>
+<dt><code>deaths</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>date</code></dt><dd><p>a Date</p>
+</dd>
+<dt><code>day_of_week</code></dt><dd><p>an ordered factor with levels <code>Mon</code> &lt; <code>Tue</code> &lt; <code>Wed</code> &lt; <code>Thu</code> &lt; <code>Fri</code> &lt; <code>Sat</code> &lt; <code>Sun</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data set was transcribed by James Riley to a spreadsheet, <a href="https://github.com/jimr1603/1849-cholera">https://github.com/jimr1603/1849-cholera</a>.
+He notes, &quot;the scan at Internet Archive has a fold on day 11. I have derived this column from the row totals.&quot;
+</p>
+
+
+<h3>Source</h3>
+
+<p>The original source is:
+General Register Office, William Farr (1852), <em>Report on the Mortality of Cholera in England, 1848-49</em>. London: Printed by W. Clowes, for HMSO; scanned by the Internet Archive from the collection of King's College London
+and available at <a href="https://archive.org/details/b21308251/page/20/mode/2up">https://archive.org/details/b21308251/page/20/mode/2up</a>.
+</p>
+
+
+<h3>References</h3>
+
+<p>Friendly, M. &amp; Wainer, H. (2021). 
+<em>A History of Data Visualization and Graphic Communication</em>,
+Harvard University Press.
+<a href="https://www.hup.harvard.edu/catalog.php?isbn=9780674975231">https://www.hup.harvard.edu/catalog.php?isbn=9780674975231</a>.
+</p>
+<p>Riley, J. (2023). &quot;Cholera in Victorian England&quot;, blog post,
+<a href="https://openor.blog/2023/07/27/cholera-in-victorian-england/">https://openor.blog/2023/07/27/cholera-in-victorian-england/</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>Cholera</code>, <code>Snow.deaths</code></p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(CholeraDeaths1849)
+str(CholeraDeaths1849)
+
+# Reproduce Farr's (1852) plate 2
+library(ggplot2)
+CholeraDeaths1849  |&gt;
+  ggplot(aes(x = date, y = deaths, colour = cause_of_death)) +
+  geom_line(linewidth = 1.2) +
+  theme_bw(base_size = 14) +
+  theme(legend.position = "top")
+
+</code></pre>
+
+
+</div>
+</body></html>

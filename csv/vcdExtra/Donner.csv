@@ -1,91 +1,91 @@
-"","family","age","sex","survived","death"
-"Antoine","Other",23,"Male",0,1846-12-29
-"Breen, Edward","Breen",13,"Male",1,NA
-"Breen, Margaret I.","Breen",1,"Female",1,NA
-"Breen, James","Breen",5,"Male",1,NA
-"Breen, John","Breen",14,"Male",1,NA
-"Breen, Mary","Breen",40,"Female",1,NA
-"Breen, Patrick","Breen",51,"Male",1,NA
-"Breen, Patrick Jr.","Breen",9,"Male",1,NA
-"Breen, Peter","Breen",3,"Male",1,NA
-"Breen, Simon","Breen",8,"Male",1,NA
-"Burger, Charles","Other",30,"Male",0,1846-12-27
-"Denton, John","Other",28,"Male",0,1847-02-26
-"Dolan, Patrick","Other",40,"Male",0,1846-12-27
-"Donner, Elitha Cumi","Donner",13,"Female",1,NA
-"Donner, Eliza Poor","Donner",3,"Female",1,NA
-"Donner, Elizabeth","Donner",45,"Female",0,1847-03-14
-"Donner, Francis E.","Donner",6,"Female",1,NA
-"Donner, George","Donner",62,"Male",0,1847-03-18
-"Donner, George Jr.","Donner",9,"Male",1,NA
-"Donner, Georgia Ann","Donner",4,"Female",1,NA
-"Donner, Isaac","Donner",5,"Male",0,1847-03-06
-"Donner, Jacob","Donner",65,"Male",0,1846-12-21
-"Donner, Leanna","Donner",11,"Female",1,NA
-"Donner, Lewis","Donner",3,"Male",0,1847-02-14
-"Donner, Mary","Donner",7,"Female",1,NA
-"Donner, Samuel","Donner",4,"Male",0,1846-12-21
-"Donner, Tamsen","Donner",44,"Female",0,1847-03-28
-"Eddy, Eleanor","Eddy",25,"Female",0,1847-02-07
-"Eddy, James","Eddy",3,"Male",0,1847-03-13
-"Eddy, Margaret","Eddy",1,"Female",0,1847-02-04
-"Eddy, William","Eddy",28,"Male",1,NA
-"Elliot, Milton","Other",28,"Male",0,1847-02-09
-"Fosdick, Jay","FosdWolf",23,"Male",0,1847-01-18
-"Fosdick, Sarah","FosdWolf",22,"Female",1,NA
-"Foster, Sarah","MurFosPik",23,"Female",1,NA
-"Foster, William","MurFosPik",28,"Male",1,NA
-"Foster, Jeremiah","MurFosPik",1,"Male",0,1847-03-13
-"Graves, Eleanor","Graves",15,"Female",1,NA
-"Graves, Elizabeth","Graves",1,"Female",1,NA
-"Graves, Elizabeth C.","Graves",47,"Female",0,1847-03-12
-"Graves, Franklin W","Graves",57,"Male",0,1846-12-27
-"Graves, Franklin W J","Graves",5,"Male",0,1847-03-12
-"Graves, Jonathan","Graves",7,"Male",1,NA
-"Graves, Lovina","Graves",12,"Female",1,NA
-"Graves, Mary Ann","Graves",20,"Female",1,NA
-"Graves, Nancy","Graves",9,"Female",1,NA
-"Graves, William","Graves",18,"Male",1,NA
-"Halloran, Luke","Other",25,"Male",0,1846-08-25
-"Hardkoop, Mr.","Other",60,"Male",0,1846-10-10
-"Herron, William","Other",25,"Male",1,NA
-"Hook, William","Other",12,"Male",0,1847-02-28
-"Hook, Solomon","Other",14,"Male",1,NA
-"James, Noah","Other",20,"Male",1,NA
-"Keseberg, Ada","Keseberg",3,"Female",0,1847-02-25
-"Keseberg, Lewis","Keseberg",32,"Male",1,NA
-"Keseberg, Lewis Jr.","Keseberg",1,"Male",0,1847-01-24
-"Keseberg, Phillipine","Keseberg",32,"Female",1,NA
-"Keyes, Sarah","Reed",70,"Female",0,1846-05-29
-"Luis","Other",27,"Male",0,1847-01-18
-"McCutchen, Almanda","McCutchen",24,"Female",1,NA
-"McCutchen, William","McCutchen",30,"Male",1,NA
-"McCutchen, Harriet","McCutchen",1,"Female",0,1847-02-02
-"Miller, Hiram O.","Other",30,"Male",1,NA
-"Murphy, John Landrum","MurFosPik",15,"Male",0,1847-01-31
-"Murphy, Lavina","MurFosPik",36,"Female",0,1847-03-12
-"Murphy, Lemuel","MurFosPik",12,"Male",0,1846-12-27
-"Murphy, Mary M.","MurFosPik",14,"Female",1,NA
-"Murphy, Simon Peter","MurFosPik",8,"Male",1,NA
-"Pike, Catherine","MurFosPik",1,"Female",0,1847-02-20
-"Pike, Harriet","MurFosPik",21,"Female",1,NA
-"Pike, Naomi","MurFosPik",2,"Female",1,NA
-"Pike, William","MurFosPik",25,"Male",0,1846-10-20
-"Reed, James","Reed",46,"Male",1,NA
-"Reed, James Jr.","Reed",6,"Male",1,NA
-"Reed, Margaret","Reed",32,"Female",1,NA
-"Reed, Martha Jane","Reed",9,"Female",1,NA
-"Reed, Thomas Keyes","Reed",4,"Male",1,NA
-"Reed, Virginia E.","Reed",13,"Female",1,NA
-"Reinhardt, Joseph","Other",30,"Male",0,1846-12-21
-"Salvador","Other",23,"Male",0,1847-01-18
-"Shoemaker, Samuel","Other",25,"Male",0,1846-12-21
-"Smith, James","Other",25,"Male",0,1846-12-21
-"Snyder, John","Other",25,"Male",0,1846-10-05
-"Spitzer, Augustus","Other",30,"Male",0,1847-02-08
-"Stanton, Charles","Other",35,"Male",0,1846-12-23
-"Trubode, Jean B.","Other",23,"Male",1,NA
-"Williams, Baylis","Other",24,"Male",0,1846-12-15
-"Williams, Eliza","Other",25,"Female",1,NA
-"Wolfinger, Doris","FosdWolf",20,"Female",1,NA
-"Wolfinger, Mr.","FosdWolf",24,"Male",0,1846-10-08
+rownames,family,age,sex,survived,death
+Antoine,Other,23,Male,0,1846-12-29T00:00:00Z
+"Breen, Edward",Breen,13,Male,1,
+"Breen, Margaret I.",Breen,1,Female,1,
+"Breen, James",Breen,5,Male,1,
+"Breen, John",Breen,14,Male,1,
+"Breen, Mary",Breen,40,Female,1,
+"Breen, Patrick",Breen,51,Male,1,
+"Breen, Patrick Jr.",Breen,9,Male,1,
+"Breen, Peter",Breen,3,Male,1,
+"Breen, Simon",Breen,8,Male,1,
+"Burger, Charles",Other,30,Male,0,1846-12-27T00:00:00Z
+"Denton, John",Other,28,Male,0,1847-02-26T00:00:00Z
+"Dolan, Patrick",Other,40,Male,0,1846-12-27T00:00:00Z
+"Donner, Elitha Cumi",Donner,13,Female,1,
+"Donner, Eliza Poor",Donner,3,Female,1,
+"Donner, Elizabeth",Donner,45,Female,0,1847-03-14T00:00:00Z
+"Donner, Francis E.",Donner,6,Female,1,
+"Donner, George",Donner,62,Male,0,1847-03-18T00:00:00Z
+"Donner, George Jr.",Donner,9,Male,1,
+"Donner, Georgia Ann",Donner,4,Female,1,
+"Donner, Isaac",Donner,5,Male,0,1847-03-06T00:00:00Z
+"Donner, Jacob",Donner,65,Male,0,1846-12-21T00:00:00Z
+"Donner, Leanna",Donner,11,Female,1,
+"Donner, Lewis",Donner,3,Male,0,1847-02-14T00:00:00Z
+"Donner, Mary",Donner,7,Female,1,
+"Donner, Samuel",Donner,4,Male,0,1846-12-21T00:00:00Z
+"Donner, Tamsen",Donner,44,Female,0,1847-03-28T00:00:00Z
+"Eddy, Eleanor",Eddy,25,Female,0,1847-02-07T00:00:00Z
+"Eddy, James",Eddy,3,Male,0,1847-03-13T00:00:00Z
+"Eddy, Margaret",Eddy,1,Female,0,1847-02-04T00:00:00Z
+"Eddy, William",Eddy,28,Male,1,
+"Elliot, Milton",Other,28,Male,0,1847-02-09T00:00:00Z
+"Fosdick, Jay",FosdWolf,23,Male,0,1847-01-18T00:00:00Z
+"Fosdick, Sarah",FosdWolf,22,Female,1,
+"Foster, Sarah",MurFosPik,23,Female,1,
+"Foster, William",MurFosPik,28,Male,1,
+"Foster, Jeremiah",MurFosPik,1,Male,0,1847-03-13T00:00:00Z
+"Graves, Eleanor",Graves,15,Female,1,
+"Graves, Elizabeth",Graves,1,Female,1,
+"Graves, Elizabeth C.",Graves,47,Female,0,1847-03-12T00:00:00Z
+"Graves, Franklin W",Graves,57,Male,0,1846-12-27T00:00:00Z
+"Graves, Franklin W J",Graves,5,Male,0,1847-03-12T00:00:00Z
+"Graves, Jonathan",Graves,7,Male,1,
+"Graves, Lovina",Graves,12,Female,1,
+"Graves, Mary Ann",Graves,20,Female,1,
+"Graves, Nancy",Graves,9,Female,1,
+"Graves, William",Graves,18,Male,1,
+"Halloran, Luke",Other,25,Male,0,1846-08-25T00:00:00Z
+"Hardkoop, Mr.",Other,60,Male,0,1846-10-10T00:00:00Z
+"Herron, William",Other,25,Male,1,
+"Hook, William",Other,12,Male,0,1847-02-28T00:00:00Z
+"Hook, Solomon",Other,14,Male,1,
+"James, Noah",Other,20,Male,1,
+"Keseberg, Ada",Keseberg,3,Female,0,1847-02-25T00:00:00Z
+"Keseberg, Lewis",Keseberg,32,Male,1,
+"Keseberg, Lewis Jr.",Keseberg,1,Male,0,1847-01-24T00:00:00Z
+"Keseberg, Phillipine",Keseberg,32,Female,1,
+"Keyes, Sarah",Reed,70,Female,0,1846-05-29T00:00:00Z
+Luis,Other,27,Male,0,1847-01-18T00:00:00Z
+"McCutchen, Almanda",McCutchen,24,Female,1,
+"McCutchen, William",McCutchen,30,Male,1,
+"McCutchen, Harriet",McCutchen,1,Female,0,1847-02-02T00:00:00Z
+"Miller, Hiram O.",Other,30,Male,1,
+"Murphy, John Landrum",MurFosPik,15,Male,0,1847-01-31T00:00:00Z
+"Murphy, Lavina",MurFosPik,36,Female,0,1847-03-12T00:00:00Z
+"Murphy, Lemuel",MurFosPik,12,Male,0,1846-12-27T00:00:00Z
+"Murphy, Mary M.",MurFosPik,14,Female,1,
+"Murphy, Simon Peter",MurFosPik,8,Male,1,
+"Pike, Catherine",MurFosPik,1,Female,0,1847-02-20T00:00:00Z
+"Pike, Harriet",MurFosPik,21,Female,1,
+"Pike, Naomi",MurFosPik,2,Female,1,
+"Pike, William",MurFosPik,25,Male,0,1846-10-20T00:00:00Z
+"Reed, James",Reed,46,Male,1,
+"Reed, James Jr.",Reed,6,Male,1,
+"Reed, Margaret",Reed,32,Female,1,
+"Reed, Martha Jane",Reed,9,Female,1,
+"Reed, Thomas Keyes",Reed,4,Male,1,
+"Reed, Virginia E.",Reed,13,Female,1,
+"Reinhardt, Joseph",Other,30,Male,0,1846-12-21T00:00:00Z
+Salvador,Other,23,Male,0,1847-01-18T00:00:00Z
+"Shoemaker, Samuel",Other,25,Male,0,1846-12-21T00:00:00Z
+"Smith, James",Other,25,Male,0,1846-12-21T00:00:00Z
+"Snyder, John",Other,25,Male,0,1846-10-05T00:00:00Z
+"Spitzer, Augustus",Other,30,Male,0,1847-02-08T00:00:00Z
+"Stanton, Charles",Other,35,Male,0,1846-12-23T00:00:00Z
+"Trubode, Jean B.",Other,23,Male,1,
+"Williams, Baylis",Other,24,Male,0,1846-12-15T00:00:00Z
+"Williams, Eliza",Other,25,Female,1,
+"Wolfinger, Doris",FosdWolf,20,Female,1,
+"Wolfinger, Mr.",FosdWolf,24,Male,0,1846-10-08T00:00:00Z

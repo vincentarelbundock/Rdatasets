@@ -1,0 +1,146 @@
+<!DOCTYPE html><html><head><title>R: Predicting steroidogenic toxicity with assay data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>steroidogenic_toxicity</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='steroidogenic_toxicity'>Predicting steroidogenic toxicity with assay data</h2>
+
+<h3>Description</h3>
+
+<p>A set of <em>in vitro</em> assays are used to quantify the risk of reproductive
+toxicity via the disruption of steroidogenic pathways.
+</p>
+
+
+<h3>Details</h3>
+
+<p>H295R cells were used to measure the effect with two sets of assay results.
+The first includes a set of protein measurements on: cytochrome P450 enzymes
+(&quot;cyp&quot;s), STAR, and 3BHSD2. The second include hormone measurements for
+DHEA, progesterone, testosterone, and cortisol.
+</p>
+<p>Columns:
+</p>
+
+<ul>
+<li> <p><code>class</code>: factor (levels: 'toxic' and 'nontoxic')
+</p>
+</li>
+<li> <p><code>cyp_11a1</code>: numeric
+</p>
+</li>
+<li> <p><code>cyp_11b1</code>: numeric
+</p>
+</li>
+<li> <p><code>cyp_11b2</code>: numeric
+</p>
+</li>
+<li> <p><code>cyp_17a1</code>: numeric
+</p>
+</li>
+<li> <p><code>cyp_19a1</code>: numeric
+</p>
+</li>
+<li> <p><code>cyp_21a1</code>: numeric
+</p>
+</li>
+<li> <p><code>hsd3b2</code>: numeric
+</p>
+</li>
+<li> <p><code>star</code>: numeric
+</p>
+</li>
+<li> <p><code>progesterone</code>: numeric
+</p>
+</li>
+<li> <p><code>testosterone</code>: numeric
+</p>
+</li>
+<li> <p><code>dhea</code>: numeric
+</p>
+</li>
+<li> <p><code>cortisol</code>: numeric
+</p>
+</li></ul>
+
+
+
+<h3>Value</h3>
+
+<p>A tibble with columns
+</p>
+
+<ul>
+<li> <p><code>class</code>: factor(levels: toxic and nontoxic)
+</p>
+</li>
+<li> <p><code>cyp_11a1</code>: numeric
+</p>
+</li>
+<li> <p><code>cyp_11b1</code>: numeric
+</p>
+</li>
+<li> <p><code>cyp_11b2</code>: numeric
+</p>
+</li>
+<li> <p><code>cyp_17a1</code>: numeric
+</p>
+</li>
+<li> <p><code>cyp_19a1</code>: numeric
+</p>
+</li>
+<li> <p><code>cyp_21a1</code>: numeric
+</p>
+</li>
+<li> <p><code>hsd3b2</code>: numeric
+</p>
+</li>
+<li> <p><code>star</code>: numeric
+</p>
+</li>
+<li> <p><code>progesterone</code>: numeric
+</p>
+</li>
+<li> <p><code>testosterone</code>: numeric
+</p>
+</li>
+<li> <p><code>dhea</code>: numeric
+</p>
+</li>
+<li> <p><code>cortisol</code>: numeric
+</p>
+</li></ul>
+
+
+
+<h3>Source</h3>
+
+<p>Maglich, J. M., Kuhn, M., Chapin, R. E., &amp; Pletcher, M. T. (2014). More than
+just hormones: H295R cells as predictors of reproductive toxicity.
+<em>Reproductive Toxicology</em>, 45, 77-86.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(steroidogenic_toxicity)
+str(steroidogenic_toxicity)
+
+</code></pre>
+
+
+</div>
+</body></html>

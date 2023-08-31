@@ -48,11 +48,13 @@
 
    -  success_rates_women. Success rate for women.
 
-   .. rubric:: Source
-      :name: source
+   .. rubric:: References
+      :name: references
 
-   van der Lee and Ellemers (2015) PNAS
-   https://www.pnas.org/doi/abs/10.1073/pnas.1510159112
+   van der Lee R, Ellemers N. Gender contributes to personal research
+   funding success in The Netherlands. Proc Natl Acad Sci U S A. 2015
+   Oct 6;112(40):12349-53. doi: 10.1073/pnas.1510159112. Epub 2015 Sep
+   21. PMID: 26392544; PMCID: PMC4603485.
 
    .. rubric:: Examples
       :name: examples

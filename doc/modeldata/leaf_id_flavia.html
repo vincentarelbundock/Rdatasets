@@ -1,0 +1,253 @@
+<!DOCTYPE html><html><head><title>R: Leaf identification data (Flavia)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>leaf_id_flavia</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='leaf_id_flavia'>Leaf identification data (Flavia)</h2>
+
+<h3>Description</h3>
+
+<p>Image analysis of leaves to predict species.
+</p>
+
+
+<h3>Details</h3>
+
+<p>From the original manuscript: &quot;The Flavia dataset contains 1907 leaf images.
+There are 32 different species and each has 50-77 images. Scanners and
+digital cameras are used to acquire the leaf images on a plain background.
+The isolated leaf images contain blades only, without a petiole. These leaf
+images are collected from the most common plants in Yangtze, Delta,
+China. Those leaves were sampled on the campus of the Nanjing University and
+the Sun Yat-Sen arboretum, Nanking, China.&quot;
+</p>
+<p>The reference below has details information on the features used for
+prediction.
+</p>
+<p>Columns:
+</p>
+
+<ul>
+<li> <p><code>species</code>:  factor (32 levels)
+</p>
+</li>
+<li> <p><code>apex</code>:  factor (9 levels)
+</p>
+</li>
+<li> <p><code>base</code>:  factor (6 levels)
+</p>
+</li>
+<li> <p><code>shape</code>:  factor (5 levels)
+</p>
+</li>
+<li> <p><code>denate_edge</code>:  factor (levels: 'no' and 'yes')
+</p>
+</li>
+<li> <p><code>lobed_edge</code>:  factor (levels: 'no' and 'yes')
+</p>
+</li>
+<li> <p><code>smooth_edge</code>:  factor (levels: 'no' and 'yes')
+</p>
+</li>
+<li> <p><code>toothed_edge</code>:  factor (levels: 'no' and 'yes')
+</p>
+</li>
+<li> <p><code>undulate_edge</code>:  factor (levels: 'no' and 'yes')
+</p>
+</li>
+<li> <p><code>outlying_polar</code>:  numeric
+</p>
+</li>
+<li> <p><code>skewed_polar</code>:  numeric
+</p>
+</li>
+<li> <p><code>clumpy_polar</code>:  numeric
+</p>
+</li>
+<li> <p><code>sparse_polar</code>:  numeric
+</p>
+</li>
+<li> <p><code>striated_polar</code>:  numeric
+</p>
+</li>
+<li> <p><code>convex_polar</code>:  numeric
+</p>
+</li>
+<li> <p><code>skinny_polar</code>:  numeric
+</p>
+</li>
+<li> <p><code>stringy_polar</code>:  numeric
+</p>
+</li>
+<li> <p><code>monotonic_polar</code>:  numeric
+</p>
+</li>
+<li> <p><code>outlying_contour</code>:  numeric
+</p>
+</li>
+<li> <p><code>skewed_contour</code>:  numeric
+</p>
+</li>
+<li> <p><code>clumpy_contour</code>:  numeric
+</p>
+</li>
+<li> <p><code>sparse_contour</code>:  numeric
+</p>
+</li>
+<li> <p><code>striated_contour</code>:  numeric
+</p>
+</li>
+<li> <p><code>convex_contour</code>:  numeric
+</p>
+</li>
+<li> <p><code>skinny_contour</code>:  numeric
+</p>
+</li>
+<li> <p><code>stringy_contour</code>:  numeric
+</p>
+</li>
+<li> <p><code>monotonic_contour</code>:  numeric
+</p>
+</li>
+<li> <p><code>num_max_ponits</code>:  numeric
+</p>
+</li>
+<li> <p><code>num_min_points</code>:  numeric
+</p>
+</li>
+<li> <p><code>diameter</code>:  numeric
+</p>
+</li>
+<li> <p><code>area</code>:  numeric
+</p>
+</li>
+<li> <p><code>perimeter</code>:  numeric
+</p>
+</li>
+<li> <p><code>physiological_length</code>:  numeric
+</p>
+</li>
+<li> <p><code>physiological_width</code>:  numeric
+</p>
+</li>
+<li> <p><code>aspect_ratio</code>:  numeric
+</p>
+</li>
+<li> <p><code>rectangularity</code>:  numeric
+</p>
+</li>
+<li> <p><code>circularity</code>:  numeric
+</p>
+</li>
+<li> <p><code>compactness</code>:  numeric
+</p>
+</li>
+<li> <p><code>narrow_factor</code>:  numeric
+</p>
+</li>
+<li> <p><code>perimeter_ratio_diameter</code>:  numeric
+</p>
+</li>
+<li> <p><code>perimeter_ratio_length</code>:  numeric
+</p>
+</li>
+<li> <p><code>perimeter_ratio_lw</code>:  numeric
+</p>
+</li>
+<li> <p><code>num_convex_points</code>:  numeric
+</p>
+</li>
+<li> <p><code>perimeter_convexity</code>:  numeric
+</p>
+</li>
+<li> <p><code>area_convexity</code>:  numeric
+</p>
+</li>
+<li> <p><code>area_ratio_convexity</code>:  numeric
+</p>
+</li>
+<li> <p><code>equivalent_diameter</code>:  numeric
+</p>
+</li>
+<li> <p><code>eccentriciry</code>:  numeric
+</p>
+</li>
+<li> <p><code>contrast</code>:  numeric
+</p>
+</li>
+<li> <p><code>correlation_texture</code>:  numeric
+</p>
+</li>
+<li> <p><code>inverse_difference_moments</code>:  numeric
+</p>
+</li>
+<li> <p><code>entropy</code>:  numeric
+</p>
+</li>
+<li> <p><code>mean_red_val</code>:  numeric
+</p>
+</li>
+<li> <p><code>mean_green_val</code>:  numeric
+</p>
+</li>
+<li> <p><code>mean_blue_val</code>:  numeric
+</p>
+</li>
+<li> <p><code>std_red_val</code>:  numeric
+</p>
+</li>
+<li> <p><code>std_green_val</code>:  numeric
+</p>
+</li>
+<li> <p><code>std_blue_val</code>:  numeric
+</p>
+</li>
+<li> <p><code>correlation</code>:  numeric
+</p>
+</li></ul>
+
+
+
+<h3>Value</h3>
+
+<table>
+<tr><td><code>leaf_id_flavia</code></td>
+<td>
+<p>a data frame</p>
+</td></tr>
+</table>
+
+
+<h3>Source</h3>
+
+<p>Lakshika, Jayani PG, and Thiyanga S. Talagala. &quot;Computer-aided interpretable
+features for leaf image classification.&quot; <em>arXiv preprint</em> arXiv:2106.08077
+(2021).
+</p>
+<p><a href="https://github.com/SMART-Research/leaffeatures_paper">https://github.com/SMART-Research/leaffeatures_paper</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(leaf_id_flavia)
+str(leaf_id_flavia)
+
+</code></pre>
+
+
+</div>
+</body></html>

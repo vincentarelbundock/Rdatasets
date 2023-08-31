@@ -79,8 +79,8 @@
       :name: source
 
    Macdonell, W. R. (1902). On Criminal Anthropometry and the
-   Identification of Criminals. *Biometrika*, 1(2), 177-227. doi:
-   `10.1093/biomet/1.2.177 <https://doi.org/10.1093/biomet/1.2.177>`__
+   Identification of Criminals. *Biometrika*, 1(2), 177-227.
+   `doi:10.1093/biomet/1.2.177 <https://doi.org/10.1093/biomet/1.2.177>`__
 
    The data used here were obtained from:
 

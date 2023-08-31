@@ -1,0 +1,98 @@
+<!DOCTYPE html><html><head><title>R: Predicting permeability from chemical information</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>permeability_qsar</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='permeability_qsar'>Predicting permeability from chemical information</h2>
+
+<h3>Description</h3>
+
+<p>A quantitative structure-activity relationship (QSAR) data set to predict
+when a molecule can permeate cells.
+</p>
+
+
+<h3>Details</h3>
+
+<p>This pharmaceutical data set was used to develop a model for predicting
+compounds' permeability. In short, permeability is the measure of a
+molecule's ability to cross a membrane. The body, for example, has notable
+membranes between the body and brain, known as the blood-brain barrier, and
+between the gut and body in the intestines. These membranes help the body
+guard critical regions from receiving undesirable or detrimental substances.
+For an orally taken drug to be effective in the brain, it first must pass
+through the intestinal wall and then must pass through the blood-brain
+barrier in order to be present for the desired neurological target.
+Therefore, a compound's ability to permeate relevant biological membranes
+is critically important to understand early in the drug discovery process.
+Compounds that appear to be effective for a particular disease in research
+screening experiments, but appear to be poorly permeable may need to be
+altered in order improve permeability, and thus the compound's ability to
+reach the desired target. Identifying permeability problems can help guide
+chemists towards better molecules.
+</p>
+<p>Permeability assays such as PAMPA and Caco-2 have been developed to help
+measure compounds' permeability (Kansy et al, 1998). These screens are
+effective at quantifying a compound's permeability, but the assay is
+expensive labor intensive. Given a sufficient number of compounds that have
+been screened, we could develop a predictive model for permeability in an
+attempt to potentially reduce the need for the assay. In this project there
+were 165 unique compounds; 1107 molecular fingerprints were determined for
+each. A molecular fingerprint is a binary sequence of numbers that
+represents the presence or absence of a specific molecular sub-structure.
+The response is highly skewed, the predictors are sparse (15.5% are present),
+and many predictors are strongly associated.
+</p>
+<p>Columns:
+</p>
+
+<ul>
+<li> <p><code>permeability</code>: numeric
+</p>
+</li>
+<li> <p><code>chem_fp_0001</code> - <code>chem_fp_1107</code>: numeric
+</p>
+</li></ul>
+
+
+
+<h3>Value</h3>
+
+<table>
+<tr><td><code>permeability_qsar</code></td>
+<td>
+<p>a data frame</p>
+</td></tr>
+</table>
+
+
+<h3>Source</h3>
+
+<p>Kuhn, Max, and Kjell Johnson. <em>Applied predictive modeling</em>. New York:
+Springer, 2013.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(permeability_qsar)
+str(permeability_qsar)
+
+</code></pre>
+
+
+</div>
+</body></html>

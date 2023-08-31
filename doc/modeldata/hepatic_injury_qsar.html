@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><title>R: Predicting hepatic injury from chemical information</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>hepatic_injury_qsar</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='hepatic_injury_qsar'>Predicting hepatic injury from chemical information</h2>
+
+<h3>Description</h3>
+
+<p>A quantitative structure-activity relationship (QSAR) data set to predict
+when a molecule has risk associated with liver function.
+</p>
+
+
+<h3>Details</h3>
+
+<p>This  data set was used to develop a model for predicting compounds'
+probability of causing hepatic injury (i.e. liver damage). This data set
+consisted of 281 unique compounds; 376 predictors were measured or computed
+for each. The response was categorical (either &quot;none&quot;, &quot;mild&quot;, or &quot;severe&quot;),
+and was highly unbalanced.
+</p>
+<p>This kind of response often occurs in pharmaceutical data because companies
+steer away from creating molecules that have undesirable characteristics.
+Therefore, well-behaved molecules often greatly outnumber undesirable
+molecules. The predictors consisted of measurements from 184 biological
+screens and 192 chemical feature predictors. The biological predictors
+represent activity for each screen and take values between 0 and 10 with a
+mode of 4. The chemical feature predictors represent counts of important
+sub-structures as well as measures of physical properties that are thought to
+be associated with hepatic injury.
+</p>
+<p>Columns:
+</p>
+
+<ul>
+<li> <p><code>class</code>:  ordered and factor (levels: 'none', 'mild', and 'severe')
+</p>
+</li>
+<li> <p><code>bio_assay_001</code> - <code>bio_assay_184</code>:  numeric
+</p>
+</li>
+<li> <p><code>chem_fp_001</code> - <code>chem_fp_192</code>:  numeric
+</p>
+</li></ul>
+
+
+
+<h3>Value</h3>
+
+<table>
+<tr><td><code>hepatic_injury_qsar</code></td>
+<td>
+<p>a tibble</p>
+</td></tr>
+</table>
+
+
+<h3>Source</h3>
+
+<p>Kuhn, Max, and Kjell Johnson. <em>Applied predictive modeling</em>. New York:
+Springer, 2013.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(hepatic_injury_qsar)
+str(hepatic_injury_qsar)
+
+</code></pre>
+
+
+</div>
+</body></html>

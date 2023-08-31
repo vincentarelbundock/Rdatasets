@@ -1,0 +1,162 @@
+<!DOCTYPE html><html><head><title>R: An ADDV-flavored clinical trial toy dataset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table style="width: 100%;"><tr><td>rx_addv</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2 id='rx_addv'>An ADDV-flavored clinical trial toy dataset</h2>
+
+<h3>Description</h3>
+
+<p>This tibble contains artificial protocol deviation data for 180 subjects
+in the Intent-to-Treat (ITT) population of the <code>GT01</code> study. The dataset
+contains the usual parameters (<code>PARAM</code>, <code>PARAMCD</code>) for an addv. There is
+summary parameter (<code>PARCAT1 == "OVERALL"</code>) for each subject of the <code>GT01</code>
+ITT-population, indicating whether or not at least one major protocol
+deviation (PD) occurred throughout the course of the study for the respective
+subject. Individual records for protocol deviations per subject exist,
+indicating which specific type of PD occurred. The additional flag <code>CRIT1FL</code>,
+shows whether a PD was related to COVID-19 or not.
+</p>
+<p>Although the data was intentionally created to mimic a typical clinical
+trial dataset following the CDISC format, it might not strictly comply
+with CDISC ADaM rules. The intent is to showcase the workflow for clinical
+table creation rather than creating a fully CDISC-compliant ADaM dataset.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>rx_addv
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 291 rows and 20 variables:
+</p>
+
+<dl>
+<dt>STUDYID, STUDYIDN</dt><dd><p>The unique study identifier and its numeric
+version.</p>
+</dd>
+<dt>USUBJID</dt><dd><p>The unique subject identifier.</p>
+</dd>
+<dt>TRTA, TRTAN</dt><dd><p>The study intervention and its numeric version, which is
+either <code>"Placebo"</code> (<code>1</code>), <code>"Drug 1"</code> (<code>2</code>), or <code>NA</code> (<code>3</code>), missing for
+screen failures).</p>
+</dd>
+<dt>ITTFL</dt><dd><p>Intent-to-Treat (ITT) population flag, where <code>"Y"</code> indicates
+a subject belongs to the ITT population and <code>"N"</code> indicates a subject is not
+in the ITT population.</p>
+</dd>
+<dt>AGE</dt><dd><p>The age of a subject at baseline in years.</p>
+</dd>
+<dt>AAGEGR1</dt><dd><p>The analysis age group, indicating if a subject was strictly
+younger than 40 years at baseline or older.</p>
+</dd>
+<dt>SEX</dt><dd><p>Sex of a subject. Can be either <code>"Male"</code>, <code>"Female"</code> or
+<code>"Undifferentiated"</code>.</p>
+</dd>
+<dt>ETHNIC</dt><dd><p>Ethnicity of a subject. Can be either <code>"Hispanic or Latino"</code>,
+<code>"Not Hispanic or Latino"</code> or missing (<code>""</code>).</p>
+</dd>
+<dt>BLBMI</dt><dd><p>Body Mass Index (BMI) of a subject at baseline in kg/m2.</p>
+</dd>
+<dt>DVTERM</dt><dd><p>The Protocol Deviation Term.</p>
+</dd>
+<dt>PARAMCD, PARAM</dt><dd><p>The Parameter Code and decoded parameter description
+for the protocol deviation.</p>
+</dd>
+<dt>PARCAT1</dt><dd><p>Parameter category. Can be <code>"OVERALL"</code> for derived PD
+summaries or <code>"PROTOCOL DEVIATION"</code> for individual PDs.</p>
+</dd>
+<dt>DVCAT</dt><dd><p>Category for PD, indicating whether the PD is a major one or
+not.</p>
+</dd>
+<dt>ACAT1</dt><dd><p>Analysis category 1. Only populated for individual PDs, not for
+summary scores. High level category for PDs.</p>
+</dd>
+<dt>AVAL</dt><dd><p>Analysis Value. Either <code>0</code> or <code>1</code>.</p>
+</dd>
+<dt>CRIT1, CRIT1FL</dt><dd><p>Analysis Criterion 1 and analysis criterion 1 flag,
+indicating whether PD is related to COVID-19 or not.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<p>Here is a glimpse at the data available in <code>rx_addv</code>.
+</p>
+<div class="sourceCode r"><pre>dplyr::glimpse(rx_addv)
+#&gt; Rows: 291
+#&gt; Columns: 20
+#&gt; $ STUDYID  &lt;chr&gt; "GT01", "GT01", "GT01", "GT01", "GT01", "GT01", "GT01", "GT01~
+#&gt; $ STUDYIDN &lt;chr&gt; "4001", "4001", "4001", "4001", "4001", "4001", "4001", "4001~
+#&gt; $ USUBJID  &lt;chr&gt; "GT1001", "GT1002", "GT1002", "GT1003", "GT1003", "GT1003", "~
+#&gt; $ TRTA     &lt;fct&gt; Placebo, Placebo, Placebo, Placebo, Placebo, Placebo, Placebo~
+#&gt; $ TRTAN    &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1~
+#&gt; $ ITTFL    &lt;chr&gt; "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "~
+#&gt; $ AGE      &lt;int&gt; 41, 39, 39, 38, 38, 38, 45, 45, 35, 35, 35, 35, 35, 42, 35, 3~
+#&gt; $ AAGEGR1  &lt;fct&gt; &gt;=40, &lt;40, &lt;40, &lt;40, &lt;40, &lt;40, &gt;=40, &gt;=40, &lt;40, &lt;40, &lt;40, &lt;40~
+#&gt; $ SEX      &lt;fct&gt; Male, Female, Female, Male, Male, Male, Male, Male, Female, F~
+#&gt; $ ETHNIC   &lt;fct&gt; Not Hispanic or Latino, Not Hispanic or Latino, Not Hispanic ~
+#&gt; $ BLBMI    &lt;dbl&gt; 33.35073, 30.45862, 30.45862, 22.85986, 22.85986, 22.85986, 2~
+#&gt; $ DVTERM   &lt;chr&gt; "", "", "Lab values not taken at month 3", "", "{gt} Question~
+#&gt; $ PARAMCD  &lt;fct&gt; PDANYM, PDANYM, PDEV02, PDANYM, PDEV01, PDEV02, PDANYM, PDEV0~
+#&gt; $ PARAM    &lt;fct&gt; At least one major Protocol Deviation, At least one major Pro~
+#&gt; $ PARCAT1  &lt;chr&gt; "OVERALL", "OVERALL", "PROTOCOL DEVIATION", "OVERALL", "PROTO~
+#&gt; $ DVCAT    &lt;chr&gt; "", "", "Major", "", "Major", "Major", "", "Major", "", "", "~
+#&gt; $ ACAT1    &lt;chr&gt; "", "", "Study Procedures Criteria Deviations", "", "Study Pr~
+#&gt; $ AVAL     &lt;dbl&gt; 0, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1~
+#&gt; $ CRIT1    &lt;chr&gt; "COVID-19 Related", "COVID-19 Related", "COVID-19 Related", "~
+#&gt; $ CRIT1FL  &lt;chr&gt; "N", "N", "N", "N", "N", "N", "N", "N", "N", "Y", "N", "N", "~
+</pre></div>
+
+
+<h3>Dataset ID and Badge</h3>
+
+<p>DATA-10
+</p>
+
+<div style="text-align:center;"><img src="https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_rx_addv.png" alt="This image of that of a dataset badge." style="width:50%;padding-bottom:20px;"></div>
+
+
+
+<h3>Dataset Introduced</h3>
+
+<p><em>In Development</em>
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other datasets: 
+<code>countrypops</code>,
+<code>exibble</code>,
+<code>gtcars</code>,
+<code>metro</code>,
+<code>pizzaplace</code>,
+<code>rx_adsl</code>,
+<code>sp500</code>,
+<code>sza</code>,
+<code>towny</code>
+</p>
+
+
+</div>
+</body></html>

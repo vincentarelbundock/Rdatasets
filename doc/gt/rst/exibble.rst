@@ -34,34 +34,35 @@
    A tibble with 8 rows and 9 variables:
 
    num
-      a numeric column ordered with increasingly larger values
+      A numeric column ordered with increasingly larger values.
 
    char
-      a character column composed of names of fruits from ``a`` to ``h``
+      A character column composed of names of fruits from ``a`` to
+      ``h``.
 
    fctr
-      a factor column with numbers from 1 to 8, written out
+      A factor column with numbers from ``1`` to ``8``, written out.
 
    date, time, datetime
-      character columns with dates, times, and datetimes
+      Character columns with dates, times, and datetimes.
 
    currency
-      a numeric column that is useful for testing currency-based
-      formatting
+      A numeric column that is useful for testing currency-based
+      formatting.
 
    row
-      a character column in the format ``row_X`` which can be useful for
-      testing with row captions in a table stub
+      A character column in the format ``row_X`` which can be useful for
+      testing with row captions in a table stub.
 
    group
-      a character column with four ``grp_a`` values and four ``grp_b``
+      A character column with four ``grp_a`` values and four ``grp_b``
       values which can be useful for testing tables that contain row
-      groups
+      groups.
 
    .. rubric:: Examples
       :name: examples
 
-   Here is the ``exibble``.
+   Here is the entirety of the ``exibble`` table.
 
    .. container:: sourceCode r
 
@@ -80,13 +81,25 @@
          #> 7  777000     grapefruit seven <NA>       19:10 2018-07-07~    NA    row_7 grp_b
          #> 8 8880000     honeydew   eight 2015-08-15 20:20 <NA>            0.44 row_8 grp_b
 
-   .. rubric:: Function ID
-      :name: function-id
+   .. rubric:: Dataset ID and Badge
+      :name: dataset-id-and-badge
 
-   11-6
+   DATA-6
+
+   .. container::
+
+      |This image of that of a dataset badge.|
+
+   .. rubric:: Dataset Introduced
+      :name: dataset-introduced
+
+   ``v0.2.0.5`` (March 31, 2020)
 
    .. rubric:: See Also
       :name: see-also
 
-   Other datasets: ``countrypops``, ``gtcars``, ``pizzaplace``,
-   ``sp500``, ``sza``
+   Other datasets: ``countrypops``, ``gtcars``, ``metro``,
+   ``pizzaplace``, ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``,
+   ``towny``
+
+.. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_exibble.png

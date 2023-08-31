@@ -74,10 +74,13 @@
          1518:1521, 1525:1526, 1543:1544, 1546:1555, 1557:1558, 1561:1562, 1564:1566,
          1569:1571, 1573))
       length(iiO) # 73 -- other seeds sometimes give 72, rarely 71 "outliers"
-      isO <- cc.ri$mcd.wt == 0
-      stopifnot(identical(iiO, which(isO)),
-                identical(ii8, which(cc.ri$mah > 100)),
-                length(intersect(cc.ri$best, iiO)) == 0)
+      table(isO <- cc.ri$mcd.wt == 0) # 2023-05: 118
+      stopifnot(exprs = {
+          ## identical(iiO, which(isO)) -- TRUE before 2023-05  covMcd() change
+          ii8 %in% which(isO) # ii8 is subset of isO
+          identical(ii8, which(cc.ri$mah > 200))
+          length(intersect(cc.ri$best, iiO)) == 0
+      })
 
       cc <- c(adjustcolor("black", 0.4), adjustcolor("tomato", 0.8))
       pairs(radarImage, main = "radarImage (n = 1573) + Outliers", gap=0,

@@ -5,7 +5,7 @@
    ==== ===============
 
    .. rubric:: Automobile data from Stata
-      :name: automobile-data-from-stata
+      :name: auto
 
    .. rubric:: Description
       :name: description

@@ -1,22 +1,22 @@
-"","iso","nuts","county","centre","area","pop2019"
-"1","SE-AB","SE110","Stockholm","Stockholm",6519.3,2377081
-"2","SE-AC","SE331","Västerbotten","Umeå",55186.2,271736
-"3","SE-BD","SE332","Norrbotten","Luleå",98244.8,250093
-"4","SE-C","SE121","Uppsala","Uppsala",8207.2,383713
-"5","SE-D","SE122","Södermanland","Nyköping",6102.3,297540
-"6","SE-E","SE123","Östergötland","Linköping",10602,465495
-"7","SE-F","SE211","Jönköping","Jönköping",10495.1,363599
-"8","SE-G","SE212","Kronoberg","Växjö",8466,201469
-"9","SE-H","SE213","Kalmar","Kalmar",11217.8,245446
-"10","SE-I","SE214","Gotland","Visby",3151.4,59686
-"11","SE-K","SE221","Blekinge","Karlskrona",2946.4,159606
-"12","SE-M","SE224","Skåne","Malmö, Kristianstad",11034.5,1377827
-"13","SE-N","SE231","Halland","Halmstad",5460.7,333848
-"14","SE-O","SE232","Västra Götaland","Gothenburg, Vänersborg",23948.8,1725881
-"15","SE-S","SE311","Värmland","Karlstad",17591,282414
-"16","SE-T","SE124","Örebro","Örebro",8545.6,304805
-"17","SE-U","SE125","Västmanland","Västerås",5145.8,275845
-"18","SE-W","SE312","Dalarna","Falun",28188.8,287966
-"19","SE-X","SE313","Gävleborg","Gävle",18198.9,287382
-"20","SE-Y","SE321","Västernorrland","Härnösand",21683.8,245347
-"21","SE-Z","SE322","Jämtland","Östersund",49341.2,130810
+rownames,iso,nuts,county,centre,area,pop2019
+1,SE-AB,SE110,Stockholm,Stockholm,6519.3,2377081
+2,SE-AC,SE331,Västerbotten,Umeå,55186.2,271736
+3,SE-BD,SE332,Norrbotten,Luleå,98244.8,250093
+4,SE-C,SE121,Uppsala,Uppsala,8207.2,383713
+5,SE-D,SE122,Södermanland,Nyköping,6102.3,297540
+6,SE-E,SE123,Östergötland,Linköping,10602,465495
+7,SE-F,SE211,Jönköping,Jönköping,10495.1,363599
+8,SE-G,SE212,Kronoberg,Växjö,8466,201469
+9,SE-H,SE213,Kalmar,Kalmar,11217.8,245446
+10,SE-I,SE214,Gotland,Visby,3151.4,59686
+11,SE-K,SE221,Blekinge,Karlskrona,2946.4,159606
+12,SE-M,SE224,Skåne,"Malmö, Kristianstad",11034.5,1377827
+13,SE-N,SE231,Halland,Halmstad,5460.7,333848
+14,SE-O,SE232,Västra Götaland,"Gothenburg, Vänersborg",23948.8,1725881
+15,SE-S,SE311,Värmland,Karlstad,17591,282414
+16,SE-T,SE124,Örebro,Örebro,8545.6,304805
+17,SE-U,SE125,Västmanland,Västerås,5145.8,275845
+18,SE-W,SE312,Dalarna,Falun,28188.8,287966
+19,SE-X,SE313,Gävleborg,Gävle,18198.9,287382
+20,SE-Y,SE321,Västernorrland,Härnösand,21683.8,245347
+21,SE-Z,SE322,Jämtland,Östersund,49341.2,130810
