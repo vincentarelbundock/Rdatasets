@@ -1360,6 +1360,9 @@
     <loc>/doc/HistData/Bowley.html</loc>
   </url>
   <url>
+    <loc>/doc/HistData/Breslau.html</loc>
+  </url>
+  <url>
     <loc>/doc/HistData/Cavendish.html</loc>
   </url>
   <url>
@@ -1370,6 +1373,9 @@
   </url>
   <url>
     <loc>/doc/HistData/Cholera.html</loc>
+  </url>
+  <url>
+    <loc>/doc/HistData/CholeraDeaths1849.html</loc>
   </url>
   <url>
     <loc>/doc/HistData/CushnyPeebles.html</loc>
@@ -1417,6 +1423,9 @@
     <loc>/doc/HistData/MacdonellDF.html</loc>
   </url>
   <url>
+    <loc>/doc/HistData/Mayer.html</loc>
+  </url>
+  <url>
     <loc>/doc/HistData/Michelson.html</loc>
   </url>
   <url>
@@ -1444,6 +1453,9 @@
     <loc>/doc/HistData/PolioTrials.html</loc>
   </url>
   <url>
+    <loc>/doc/HistData/Pollen.html</loc>
+  </url>
+  <url>
     <loc>/doc/HistData/Prostitutes.html</loc>
   </url>
   <url>
@@ -1451,6 +1463,9 @@
   </url>
   <url>
     <loc>/doc/HistData/Quarrels.html</loc>
+  </url>
+  <url>
+    <loc>/doc/HistData/Saturn.html</loc>
   </url>
   <url>
     <loc>/doc/HistData/Snow.dates.html</loc>
@@ -3925,13 +3940,25 @@
     <loc>/doc/gt/gtcars.html</loc>
   </url>
   <url>
+    <loc>/doc/gt/metro.html</loc>
+  </url>
+  <url>
     <loc>/doc/gt/pizzaplace.html</loc>
+  </url>
+  <url>
+    <loc>/doc/gt/rx_addv.html</loc>
+  </url>
+  <url>
+    <loc>/doc/gt/rx_adsl.html</loc>
   </url>
   <url>
     <loc>/doc/gt/sp500.html</loc>
   </url>
   <url>
     <loc>/doc/gt/sza.html</loc>
+  </url>
+  <url>
+    <loc>/doc/gt/towny.html</loc>
   </url>
   <url>
     <loc>/doc/heplots/AddHealth.html</loc>
@@ -4255,6 +4282,9 @@
     <loc>/doc/modeldata/check_times.html</loc>
   </url>
   <url>
+    <loc>/doc/modeldata/chem_proc_yield.html</loc>
+  </url>
+  <url>
     <loc>/doc/modeldata/concrete.html</loc>
   </url>
   <url>
@@ -4279,10 +4309,22 @@
     <loc>/doc/modeldata/grants_test.html</loc>
   </url>
   <url>
+    <loc>/doc/modeldata/hepatic_injury_qsar.html</loc>
+  </url>
+  <url>
+    <loc>/doc/modeldata/hotel_rates.html</loc>
+  </url>
+  <url>
     <loc>/doc/modeldata/hpc_cv.html</loc>
   </url>
   <url>
     <loc>/doc/modeldata/hpc_data.html</loc>
+  </url>
+  <url>
+    <loc>/doc/modeldata/ischemic_stroke.html</loc>
+  </url>
+  <url>
+    <loc>/doc/modeldata/leaf_id_flavia.html</loc>
   </url>
   <url>
     <loc>/doc/modeldata/lending_club.html</loc>
@@ -4309,6 +4351,9 @@
     <loc>/doc/modeldata/penguins.html</loc>
   </url>
   <url>
+    <loc>/doc/modeldata/permeability_qsar.html</loc>
+  </url>
+  <url>
     <loc>/doc/modeldata/scat.html</loc>
   </url>
   <url>
@@ -4321,7 +4366,13 @@
     <loc>/doc/modeldata/stations.html</loc>
   </url>
   <url>
+    <loc>/doc/modeldata/steroidogenic_toxicity.html</loc>
+  </url>
+  <url>
     <loc>/doc/modeldata/tate_text.html</loc>
+  </url>
+  <url>
+    <loc>/doc/modeldata/taxi.html</loc>
   </url>
   <url>
     <loc>/doc/modeldata/testing_data.html</loc>
@@ -6044,6 +6095,9 @@
   </url>
   <url>
     <loc>/doc/survival/heart.html</loc>
+  </url>
+  <url>
+    <loc>/doc/survival/hoel.html</loc>
   </url>
   <url>
     <loc>/doc/survival/ifluid.html</loc>
