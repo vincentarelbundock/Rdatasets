@@ -78,7 +78,7 @@ write_data = function(i) {
     fn_csv = paste0('csv/', package, '/', dataset, '.csv')
     fn_doc = paste0('doc/', package, '/', dataset, '.html')
 
-    if (is.data.frame(x) && !tibble::is_tibble(x) && !inherits(x, "data.table"))  {
+    if (is.data.frame(data[[i]]) && !tibble::is_tibble(data[[i]]) && !inherits(data[[i]], "data.table"))  {
         data[[i]] <- tibble::as_tibble(tibble::rownames_to_column(data[[i]], var = "rownames"))
     }
 
