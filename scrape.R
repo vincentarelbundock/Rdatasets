@@ -1,5 +1,7 @@
 library(R2HTML) 
 library(desc)
+library(readr)
+library(tibble)
 suppressMessages(library(tidyverse))
 
 # parse DESCRIPTION to get list of Imports
@@ -75,7 +77,12 @@ write_data = function(i) {
     if (!dir.exists(paste0('doc/', package))) dir.create(paste0('doc/', package))
     fn_csv = paste0('csv/', package, '/', dataset, '.csv')
     fn_doc = paste0('doc/', package, '/', dataset, '.html')
-    write.csv(data[[i]], file = fn_csv)
+
+    if (is.data.frame(x) && !tibble::is_tibble(x) && !inherits(x, "data.table"))  {
+        data[[i]] <- tibble::as_tibble(tibble::rownames_to_column(data[[i]], var = "rownames"))
+    }
+
+    readr::write_csv(data[[i]], file = fn_csv, na = "")
     tools::Rd2HTML(docs[[i]], out = fn_doc)
 }
 
