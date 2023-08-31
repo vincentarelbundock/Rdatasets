@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(lbw)
 
@@ -78,7 +78,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(lbw)
       glmbwp <- glm(ftv ~ low + smoke + factor(race), family=poisson, data=lbw)

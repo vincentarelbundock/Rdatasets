@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       npk
 
@@ -56,7 +56,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       options(contrasts = c("contr.sum", "contr.poly"))
       npk.aov <- aov(yield ~ block + N*P*K, npk)

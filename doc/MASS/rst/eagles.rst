@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       eagles
 
@@ -57,7 +57,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       eagles.glm <- glm(cbind(y, n - y) ~ P*A + V, data = eagles,
                         family = binomial)

@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       evals
 
@@ -120,6 +120,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       evals

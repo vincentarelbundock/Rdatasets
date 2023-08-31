@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(cloud, package="robustbase")
 
@@ -41,7 +41,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(cloud)
       summary(lm.cloud <- lm(CloudPoint ~., data=cloud))

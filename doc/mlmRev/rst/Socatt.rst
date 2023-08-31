@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Socatt)
 
@@ -55,7 +55,7 @@
       Age in years
 
    religion
-      Religion - a factor. Levels are ``Roman     Catholic``,
+      Religion - a factor. Levels are ``Roman Catholic``,
       ``Protestant/Church of England``, ``others``, and ``none``.
 
    .. rubric:: Details
@@ -79,7 +79,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       str(Socatt)
       summary(Socatt)

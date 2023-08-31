@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       diabetic
       data(diabetic, package="survival")
@@ -75,7 +75,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       # juvenile diabetes is defined as and age less than 20
       juvenile <- 1*(diabetic$age < 20)

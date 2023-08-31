@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       leaftemp
 
@@ -46,7 +46,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       print("Fitting Multiple Lines - Example 7.3")
 

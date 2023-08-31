@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('fish')
 
@@ -62,11 +62,11 @@
 
    -  **t:** time trend
 
-   -  **lavgp_1:** lavgprc[_n-1]
+   -  **lavgp_1:** lavgprc[\_n-1]
 
    -  **gavgprc:** lavgprc - lavgp_1
 
-   -  **gavgp_1:** gavgprc[_n-1]
+   -  **gavgp_1:** gavgprc[\_n-1]
 
    .. rubric:: Notes
       :name: notes
@@ -89,6 +89,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(fish)

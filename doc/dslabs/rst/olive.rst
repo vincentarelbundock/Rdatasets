@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       olive
 
@@ -57,6 +57,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       head(olive)

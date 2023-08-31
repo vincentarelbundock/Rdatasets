@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       nlschools
 
@@ -65,7 +65,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       nl1 <- within(nlschools, {
       IQave <- tapply(IQ, class, mean)[as.character(class)]

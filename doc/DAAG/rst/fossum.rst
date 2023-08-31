@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
         data(possum)
         data(fossum)
@@ -86,7 +86,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       boxplot(earconch~sex, data=possum)
       pause()

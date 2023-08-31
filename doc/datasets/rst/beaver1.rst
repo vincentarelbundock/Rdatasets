@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       beaver1
       beaver2
@@ -64,7 +64,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       require(graphics)
       (yl <- range(beaver1$temp, beaver2$temp))

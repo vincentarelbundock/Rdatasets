@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       myeloma
       data("cancer", package="survival")
@@ -57,7 +57,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       # Incorrect survival curve, which ignores left truncation
       fit1 <- survfit(Surv(futime, death) ~ 1, myeloma)

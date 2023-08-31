@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       cars
 
@@ -43,7 +43,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       require(stats); require(graphics)
       plot(cars, xlab = "Speed (mph)", ylab = "Stopping distance (ft)",

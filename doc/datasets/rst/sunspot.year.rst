@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       sunspot.year
 
@@ -47,7 +47,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       utils::str(sm <- sunspots)# the monthly version we keep unchanged
       utils::str(sy <- sunspot.year)

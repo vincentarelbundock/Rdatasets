@@ -10,10 +10,10 @@ accessible for teaching and statistical software development.
 
 The list of available datasets (csv and docs) is available here:
 
-  - [HTML
-    index](https://vincentarelbundock.github.io/Rdatasets/articles/data.html)
-  - [CSV
-    index](https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv)
+- [HTML
+  index](https://vincentarelbundock.github.io/Rdatasets/articles/data.html)
+- [CSV
+  index](https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv)
 
 On the github repository you will also find the scripts I use to scrape
 data and update the website.

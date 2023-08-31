@@ -42,7 +42,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(CushnyPeebles)
       data(CushnyPeeblesN)
@@ -113,7 +113,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(CushnyPeebles)
       # quick looks at the data

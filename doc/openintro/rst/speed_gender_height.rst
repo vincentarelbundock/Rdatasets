@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       speed_gender_height
 
@@ -38,6 +38,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       speed_gender_height

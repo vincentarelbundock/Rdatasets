@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("Arthritis")
 
@@ -59,7 +59,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data("Arthritis")
       art <- xtabs(~ Treatment + Improved, data = Arthritis, subset = Sex == "Female")

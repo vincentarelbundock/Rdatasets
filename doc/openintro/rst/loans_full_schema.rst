@@ -24,7 +24,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       loans_full_schema
 
@@ -223,6 +223,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       loans_full_schema

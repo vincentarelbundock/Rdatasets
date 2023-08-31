@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       OJ
 
@@ -98,7 +98,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       summary(OJ)
       plot(OJ$Purchase,OJ$PriceCH)

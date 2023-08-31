@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       penny_ages
 
@@ -33,6 +33,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       hist(penny_ages$year)

@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("schooldays")
 
@@ -68,7 +68,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         data("schooldays", package = "HSAUR")
         plot.design(schooldays)

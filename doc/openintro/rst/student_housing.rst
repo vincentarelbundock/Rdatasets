@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       student_housing
 
@@ -31,7 +31,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       set.seed(5)
       generate_student_housing <- data.frame(

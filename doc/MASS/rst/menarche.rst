@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       menarche
 
@@ -54,7 +54,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       mprob <- glm(cbind(Menarche, Total - Menarche) ~ Age,
                    binomial(link = probit), data = menarche)

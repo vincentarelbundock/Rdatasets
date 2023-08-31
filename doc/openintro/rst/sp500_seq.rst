@@ -21,7 +21,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       sp500_seq
 
@@ -42,6 +42,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       sp500_seq

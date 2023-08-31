@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       toy_anova
 
@@ -34,6 +34,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       toy_anova

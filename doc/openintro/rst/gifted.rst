@@ -25,7 +25,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       gifted
 
@@ -77,6 +77,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       gifted

@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       woolyrnq
 
@@ -33,6 +33,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       tsdisplay(woolyrnq)

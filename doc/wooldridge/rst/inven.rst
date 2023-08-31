@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('inven')
 
@@ -37,19 +37,19 @@
 
    -  **r3:** real interest: i3 - inf
 
-   -  **cinven:** inven - inven[_n-1]
+   -  **cinven:** inven - inven[\_n-1]
 
-   -  **cgdp:** gdp - gdp[_n-1]
+   -  **cgdp:** gdp - gdp[\_n-1]
 
-   -  **cr3:** r3 - r3[_n-1]
+   -  **cr3:** r3 - r3[\_n-1]
 
-   -  **ci3:** i3 - i3[_n-1]
+   -  **ci3:** i3 - i3[\_n-1]
 
-   -  **cinf:** inf - inf[_n-1]
+   -  **cinf:** inf - inf[\_n-1]
 
-   -  **ginven:** log(inven) - log(inven[_n-1])
+   -  **ginven:** log(inven) - log(inven[\_n-1])
 
-   -  **ggdp:** log(gdp) - log(gdp[_n-1])
+   -  **ggdp:** log(gdp) - log(gdp[\_n-1])
 
    .. rubric:: Used in Text
       :name: used-in-text
@@ -64,6 +64,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(inven)

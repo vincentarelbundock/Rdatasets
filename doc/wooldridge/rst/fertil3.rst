@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('fertil3')
 
@@ -37,13 +37,13 @@
 
    -  **tsq:** t^2
 
-   -  **pe_1:** pe[_n-1]
+   -  **pe_1:** pe[\_n-1]
 
-   -  **pe_2:** pe[_n-2]
+   -  **pe_2:** pe[\_n-2]
 
-   -  **pe_3:** pe[_n-3]
+   -  **pe_3:** pe[\_n-3]
 
-   -  **pe_4:** pe[_n-4]
+   -  **pe_4:** pe[\_n-4]
 
    -  **pill:** =1 if year >= 1963
 
@@ -55,25 +55,25 @@
 
    -  **cpe:** pe - pe_1
 
-   -  **cpe_1:** cpe[_n-1]
+   -  **cpe_1:** cpe[\_n-1]
 
-   -  **cpe_2:** cpe[_n-2]
+   -  **cpe_2:** cpe[\_n-2]
 
-   -  **cpe_3:** cpe[_n-3]
+   -  **cpe_3:** cpe[\_n-3]
 
-   -  **cpe_4:** cpe[_n-4]
+   -  **cpe_4:** cpe[\_n-4]
 
-   -  **gfr_1:** gfr[_n-1]
+   -  **gfr_1:** gfr[\_n-1]
 
-   -  **cgfr_1:** cgfr[_n-1]
+   -  **cgfr_1:** cgfr[\_n-1]
 
-   -  **cgfr_2:** cgfr[_n-2]
+   -  **cgfr_2:** cgfr[\_n-2]
 
-   -  **cgfr_3:** cgfr[_n-3]
+   -  **cgfr_3:** cgfr[\_n-3]
 
-   -  **cgfr_4:** cgfr[_n-4]
+   -  **cgfr_4:** cgfr[\_n-4]
 
-   -  **gfr_2:** gfr[_n-2]
+   -  **gfr_2:** gfr[\_n-2]
 
    .. rubric:: Used in Text
       :name: used-in-text
@@ -88,6 +88,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(fertil3)

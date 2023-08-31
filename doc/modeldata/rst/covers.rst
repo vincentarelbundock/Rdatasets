@@ -30,7 +30,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(covers)
       str(covers)

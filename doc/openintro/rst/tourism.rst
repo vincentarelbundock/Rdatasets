@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       tourism
 
@@ -43,6 +43,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       tourism

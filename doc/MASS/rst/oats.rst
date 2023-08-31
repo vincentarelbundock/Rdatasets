@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       oats
 
@@ -59,7 +59,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       oats$Nf <- ordered(oats$N, levels = sort(levels(oats$N)))
       oats.aov <- aov(Y ~ Nf*V + Error(B/V), data = oats, qr = TRUE)

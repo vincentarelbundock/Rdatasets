@@ -27,7 +27,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(ICU)
 
@@ -144,7 +144,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(ICU)
       # remove redundant variables (race, coma)

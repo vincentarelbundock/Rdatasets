@@ -22,7 +22,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(HairEyePlace)
 
@@ -30,7 +30,7 @@
       :name: format
 
    The format is: num [1:4, 1:5, 1:2] 326 688 343 98 38 116 84 48 241
-   584 ... - attr(*, "dimnames")=List of 3 ..$ Eye : chr [1:4] "Blue"
+   584 ... - attr(\*, "dimnames")=List of 3 ..$ Eye : chr [1:4] "Blue"
    "Light" "Medium" "Dark" ..$ Hair : chr [1:5] "Fair" "Red" "Medium"
    "Dark" ... ..$ Place: chr [1:2] "Caithness" "Aberdeen"
 
@@ -58,7 +58,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(HairEyePlace)
 

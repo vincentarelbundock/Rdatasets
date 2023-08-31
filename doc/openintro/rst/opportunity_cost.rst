@@ -29,7 +29,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       opportunity_cost
 
@@ -53,7 +53,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       library(ggplot2)
 

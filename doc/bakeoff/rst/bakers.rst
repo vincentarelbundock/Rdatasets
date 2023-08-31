@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       bakers
 
@@ -127,7 +127,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       if (require('tibble')) {
         bakers

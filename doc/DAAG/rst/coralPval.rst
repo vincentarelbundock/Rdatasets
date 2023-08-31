@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("coralPval")
 
@@ -50,7 +50,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## From p-values, calculate Benjamini-Hochberg false discrimination rates
       fdr <- p.adjust(DAAG::coralPval, method='BH')

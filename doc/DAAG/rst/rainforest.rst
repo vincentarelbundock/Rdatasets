@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       rainforest
 
@@ -61,6 +61,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       table(rainforest$species)

@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       books
 
@@ -33,6 +33,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       table(books)

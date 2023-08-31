@@ -57,7 +57,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## response as a matrix
       (m1 <- glmer(cbind(incidence, size - incidence) ~ period + (1 | herd),

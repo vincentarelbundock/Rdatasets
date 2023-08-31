@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(MelTemp)
 
@@ -30,12 +30,12 @@
 
    Hyndman, R.J., Bashtannyk, D.M. and Grunwald, G.K. (1996) "Estimating
    and visualizing conditional densities". \_Journal of Computational
-   and Graphical Statistics_, \*5*, 315-336.
+   and Graphical Statistics\_, \*5\*, 315-336.
 
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(MelTemp)
       demo(Mel)

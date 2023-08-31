@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Mroz87)
 
@@ -109,7 +109,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## Wooldridge( 2003 ): example 17.5, page 590
       data( Mroz87 )

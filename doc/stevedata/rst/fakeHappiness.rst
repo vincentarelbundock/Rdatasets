@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       fakeHappiness
 
@@ -61,6 +61,6 @@
    package for the age, female, college education, family income, and
    born-again variables. Thereafter, I created an arbitrary "happiness"
    variable that is equal to
-   ``100 -  .95*age + .01*(age^2) + .25*female + .05*famincr + .1*bornagain + e``.
+   ``100 - .95*age + .01*(age^2) + .25*female + .05*famincr + .1*bornagain + e``.
    The data are not supposed to be realistic, per se. They're supposed
    to be functional for this purpose.

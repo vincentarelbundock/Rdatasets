@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       USMortality
       USRegionalMortality
@@ -102,13 +102,13 @@
       :name: references
 
    Rural Health Reform Policy Research Center. \_Exploring Rural and
-   Urban Mortality Differences_, August 2015 Bethesda, MD.
+   Urban Mortality Differences\_, August 2015 Bethesda, MD.
    https://ruralhealth.und.edu/projects/health-reform-policy-research-center/rural-urban-mortality
 
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       dotplot(reorder(Cause, Rate) ~ Rate | Status,
               data = USMortality, groups = Sex, grid = FALSE,

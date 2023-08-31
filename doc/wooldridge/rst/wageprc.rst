@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('wageprc')
 
@@ -35,13 +35,13 @@
 
    -  **lwage:** log(wage)
 
-   -  **gprice:** lprice - lprice[_n-1]
+   -  **gprice:** lprice - lprice[\_n-1]
 
-   -  **gwage:** lwage - lwage[_n-1]
+   -  **gwage:** lwage - lwage[\_n-1]
 
-   -  **gwage_1:** gwage[_n-1]
+   -  **gwage_1:** gwage[\_n-1]
 
-   -  **gwage_2:** gwage[_n-2]
+   -  **gwage_2:** gwage[\_n-2]
 
    -  **gwage_3:**
 
@@ -63,7 +63,7 @@
 
    -  **gwage_12:**
 
-   -  **gprice_1:** gprice[_n-1]
+   -  **gprice_1:** gprice[\_n-1]
 
    .. rubric:: Notes
       :name: notes
@@ -81,6 +81,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(wageprc)

@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       tinting
 
@@ -77,7 +77,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       library(lattice)
       levels(tinting$agegp) <- capstring(levels(tinting$agegp))

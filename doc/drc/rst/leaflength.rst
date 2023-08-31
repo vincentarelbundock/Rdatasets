@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(leaflength)
 
@@ -45,7 +45,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## Fitting a hormesis model
       leaflength.crs4c1 <- drm(DW ~ Dose, data = leaflength, fct = CRS.4c())

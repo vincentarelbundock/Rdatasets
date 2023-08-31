@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("OvaryCancer")
 
@@ -61,7 +61,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data("OvaryCancer")
       tab <- xtabs(Freq ~ xray + survival + stage + operation, data = OvaryCancer)

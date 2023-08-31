@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('intqrt')
 
@@ -37,39 +37,39 @@
 
    -  **p6:** price of 6 mo. T-bill
 
-   -  **hy6:** 100*(p3 - p6[_n-1])/p6[_n-1])
+   -  **hy6:** 100*(p3 - p6[\_n-1])/p6[\_n-1])
 
    -  **hy3:** r3*(91/365)
 
    -  **spr63:** r6 - r3
 
-   -  **hy3_1:** hy3[_n-1]
+   -  **hy3_1:** hy3[\_n-1]
 
-   -  **hy6_1:** hy6[_n-1]
+   -  **hy6_1:** hy6[\_n-1]
 
-   -  **spr63_1:** spr63[_n-1]
+   -  **spr63_1:** spr63[\_n-1]
 
    -  **hy6hy3_1:** hy6 - hy3_1
 
    -  **cr3:** r3 - r3_1
 
-   -  **r3_1:** r3[_n-1]
+   -  **r3_1:** r3[\_n-1]
 
    -  **chy6:** hy6 - hy6_1
 
    -  **chy3:** hy3 - hy3_1
 
-   -  **chy6_1:** chy6[_n-1]
+   -  **chy6_1:** chy6[\_n-1]
 
-   -  **chy3_1:** chy3[_n-1]
+   -  **chy3_1:** chy3[\_n-1]
 
    -  **cr6:** r6 - r6_1
 
-   -  **cr6_1:** cr6[_n-1]
+   -  **cr6_1:** cr6[\_n-1]
 
-   -  **cr3_1:** cr3[_n-1]
+   -  **cr3_1:** cr3[\_n-1]
 
-   -  **r6_1:** r6[_n-1]
+   -  **r6_1:** r6[\_n-1]
 
    -  **cspr63:** spr63 - spr63_1
 
@@ -94,6 +94,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(intqrt)

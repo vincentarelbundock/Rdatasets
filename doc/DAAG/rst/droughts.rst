@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       droughts
 
@@ -35,7 +35,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         boxplot(length ~ year, data=droughts)
         boxplot(log(length) ~ year, data=droughts)

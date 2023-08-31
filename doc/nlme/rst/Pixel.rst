@@ -42,7 +42,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       fm1 <- lme(pixel ~ day + I(day^2), data = Pixel,
                  random = list(Dog = ~ day, Side = ~ 1))

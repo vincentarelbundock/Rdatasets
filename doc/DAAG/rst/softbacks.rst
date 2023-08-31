@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       softbacks
 
@@ -39,7 +39,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       print("Outliers in Simple Regression - Example 5.2")
       paperback.lm <- lm(weight ~ volume, data=softbacks)

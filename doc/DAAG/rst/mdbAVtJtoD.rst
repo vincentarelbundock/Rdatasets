@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("mdbAVtJtoD")
 
@@ -42,7 +42,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(mdbAVtJtoD)
       plot(window(mdbAVtJtoD, start=c(2000,1)), ylab="Mean monthly data")

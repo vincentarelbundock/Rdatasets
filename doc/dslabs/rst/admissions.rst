@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       admissions
 
@@ -45,6 +45,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       admissions

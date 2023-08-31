@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Hernior)
 
@@ -96,7 +96,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       str(Hernior)
       Hern.mod <- lm(cbind(leave, nurse, los) ~ 

@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(ReactTime)
 
@@ -68,7 +68,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(ReactTime)
       (RT.mod <- lm(as.matrix(ReactTime)~1))

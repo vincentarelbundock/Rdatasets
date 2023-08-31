@@ -39,7 +39,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(attrition)
       str(attrition)

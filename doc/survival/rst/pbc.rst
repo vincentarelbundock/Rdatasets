@@ -37,7 +37,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       pbc
       data(pbc, package="survival")

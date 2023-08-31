@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("Lanza")
 
@@ -73,7 +73,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         data("Lanza", package = "HSAUR")
         layout(matrix(1:4, nrow = 2))

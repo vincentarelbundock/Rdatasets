@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(humanpower1)
 
@@ -44,7 +44,7 @@
    player, a male amateur tri-athlete, a female amateur triathlete, a
    male wrestler and a male cyclist – who were selected from volunteers
    who were recruited through the news media, Data in
-   ``humanpower2) are for four out of the 25 applicants who     were selected for further testing, in the lead-up to the eventual     selection of a pilot for the Daedalus project (Nadel and Bussolari 1988).``
+   ``humanpower2) are for four out of the 25 applicants who were selected for further testing, in the lead-up to the eventual selection of a pilot for the Daedalus project (Nadel and Bussolari 1988).``
 
    .. rubric:: Source
       :name: source
@@ -65,7 +65,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       str(humanpower1)
       plot(humanpower1)

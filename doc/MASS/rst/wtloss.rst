@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       wtloss
 
@@ -46,7 +46,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## IGNORE_RDIFF_BEGIN
       wtloss.fm <- nls(Weight ~ b0 + b1*2^(-Days/th),

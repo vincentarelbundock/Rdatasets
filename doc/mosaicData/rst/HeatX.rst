@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(HeatX)
 
@@ -48,7 +48,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       # We can test for heat exchange with the environment by checking to see if the 
       # heat gained by the cold water matches the heat lost by the hot water.

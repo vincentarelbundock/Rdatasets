@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       Harman23.cor
 
@@ -29,7 +29,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       require(stats)
       (Harman23.FA <- factanal(factors = 1, covmat = Harman23.cor))

@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(bdf)
 
@@ -105,8 +105,8 @@
    .. rubric:: Source
       :name: source
 
-   ‘⁠http://stat.gamma.rug.nl/snijders/multilevel.htm⁠’, the first
-   edition of http://www.stats.ox.ac.uk/~snijders/mlbook.htm.
+   ‘⁠http://stat.gamma.rug.nl/snijders/multilevel.htm⁠’, the first edition
+   of http://www.stats.ox.ac.uk/~snijders/mlbook.htm.
 
    .. rubric:: References
       :name: references
@@ -117,7 +117,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       summary(bdf)
 

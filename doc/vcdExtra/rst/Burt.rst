@@ -22,7 +22,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("Burt")
 
@@ -69,7 +69,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Burt)
       mosaic(Freq ~ Hair + Eyes + Head + Stature, data=Burt, shade=TRUE)

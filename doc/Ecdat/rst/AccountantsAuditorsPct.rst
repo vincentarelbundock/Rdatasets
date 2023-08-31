@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(AccountantsAuditorsPct)
 
@@ -95,7 +95,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(AccountantsAuditorsPct)
       plot(names(AccountantsAuditorsPct), AccountantsAuditorsPct, 

@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       NCI60
 
@@ -44,6 +44,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       table(NCI60$labs)

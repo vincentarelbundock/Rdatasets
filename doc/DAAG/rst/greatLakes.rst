@@ -16,17 +16,17 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(greatLakes)
 
    .. rubric:: Format
       :name: format
 
-   The format is: mts [1:92, 1:4] 174 174 174 174 174 ... - attr(*,
+   The format is: mts [1:92, 1:4] 174 174 174 174 174 ... - attr(\*,
    "dimnames")=List of 2 ..$ : NULL ..$ : chr [1:4] "Erie" "michHuron"
-   "Ontario" "StClair" - attr(*, "tsp")= num [1:3] 1918 2009 1 - attr(*,
-   "class")= chr [1:2] "mts" "ts"
+   "Ontario" "StClair" - attr(\*, "tsp")= num [1:3] 1918 2009 1 -
+   attr(\*, "class")= chr [1:2] "mts" "ts"
 
    .. rubric:: Details
       :name: details
@@ -41,7 +41,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(greatLakes)
       plot(greatLakes)

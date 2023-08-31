@@ -74,8 +74,8 @@
    -  ``testthat_size``: The size on disk of files in the ``testthat``
       directory.
 
-   -  ``check_time``: The time (in seconds) to run ``⁠R CMD check⁠``
-      using the "r-devel-windows-ix86+x86_64' flavor.
+   -  ``check_time``: The time (in seconds) to run ``⁠R CMD check⁠`` using
+      the "r-devel-windows-ix86+x86_64' flavor.
 
    -  ``status``: An indicator for whether the tests completed.
 
@@ -96,7 +96,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(check_times)
       str(check_times)

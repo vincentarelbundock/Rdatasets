@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(S.capricornutum)
 
@@ -48,7 +48,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## Fitting 3-parameter log-normal model
       s.cap.m1 <- drm(count ~ conc, data = S.capricornutum, fct = LN.3())

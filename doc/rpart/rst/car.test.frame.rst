@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       car.test.frame
 
@@ -32,8 +32,8 @@
       model
 
    ``Country``
-      of origin, a factor with levels ‘⁠France⁠’, ‘⁠Germany⁠’, ‘⁠Japan⁠’
-      , ‘⁠Japan/USA⁠’, ‘⁠Korea⁠’, ‘⁠Mexico⁠’, ‘⁠Sweden⁠’ and ‘⁠USA⁠’
+      of origin, a factor with levels ‘⁠France⁠’, ‘⁠Germany⁠’, ‘⁠Japan⁠’ ,
+      ‘⁠Japan/USA⁠’, ‘⁠Korea⁠’, ‘⁠Mexico⁠’, ‘⁠Sweden⁠’ and ‘⁠USA⁠’
 
    ``Reliability``
       a numeric vector coded ``1`` to ``5``.
@@ -70,7 +70,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       z.auto <- rpart(Mileage ~ Weight, car.test.frame)
       summary(z.auto)

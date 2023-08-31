@@ -18,7 +18,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data('jtrain')
 
@@ -73,19 +73,19 @@
 
    -  **cgrant:** grant - grant_1
 
-   -  **clemploy:** lemploy - lemploy[_n-1]
+   -  **clemploy:** lemploy - lemploy[\_n-1]
 
-   -  **clsales:** lavgsal - lavgsal[_n-1]
+   -  **clsales:** lavgsal - lavgsal[\_n-1]
 
    -  **lavgsal:** log(avgsal)
 
-   -  **clavgsal:** lavgsal - lavgsal[_n-1]
+   -  **clavgsal:** lavgsal - lavgsal[\_n-1]
 
-   -  **cgrant_1:** cgrant[_n-1]
+   -  **cgrant_1:** cgrant[\_n-1]
 
-   -  **chrsemp:** hrsemp - hrsemp[_n-1]
+   -  **chrsemp:** hrsemp - hrsemp[\_n-1]
 
-   -  **clhrsemp:** lhrsemp - lhrsemp[_n-1]
+   -  **clhrsemp:** lhrsemp - lhrsemp[\_n-1]
 
    .. rubric:: Used in Text
       :name: used-in-text
@@ -101,6 +101,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        str(jtrain)

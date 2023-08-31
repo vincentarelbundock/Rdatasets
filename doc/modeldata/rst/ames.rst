@@ -58,7 +58,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(ames)
       str(ames)

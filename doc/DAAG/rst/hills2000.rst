@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
         data(hills)
         data(hills2000)
@@ -59,7 +59,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       print("Transformation - Example 6.4.3")
       pairs(hills, labels=c("dist\n\n(miles)", "climb\n\n(feet)", 

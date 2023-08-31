@@ -20,7 +20,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       bomsoi
 
@@ -112,7 +112,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
        
       plot(ts(bomsoi[, 15:14], start=1900),

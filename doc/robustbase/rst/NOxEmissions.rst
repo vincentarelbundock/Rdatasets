@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(NOxEmissions, package="robustbase")
 
@@ -61,7 +61,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(NOxEmissions)
       plot(LNOx ~ LNOxEm, data = NOxEmissions, cex = 0.25, col = "gray30")

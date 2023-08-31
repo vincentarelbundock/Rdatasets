@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       rotterdam
       data(cancer, package="survival")
@@ -113,7 +113,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       status  <- pmax(rotterdam$recur, rotterdam$death)
       rfstime <- with(rotterdam, ifelse(recur==1, rtime, dtime))

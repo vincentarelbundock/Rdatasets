@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(xclara)
 
@@ -59,7 +59,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ## Visualization: Assuming groups are defined as {1:1000}, {1001:2000}, {2001:3000}
       plot(xclara, cex = 3/4, col = rep(1:3, each=1000))

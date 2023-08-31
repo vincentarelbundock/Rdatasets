@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(UKHouseOfCommons)
 
@@ -97,7 +97,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(UKHouseOfCommons)
       tmp <- UKHouseOfCommons[,c("v1","v2","v3")] 

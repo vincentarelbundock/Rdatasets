@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data("schizophrenia2")
 
@@ -59,7 +59,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
         data("schizophrenia2", package = "HSAUR")
         mosaicplot(xtabs( ~ onset + month + disorder, data = schizophrenia2))

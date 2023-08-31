@@ -19,7 +19,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       iris
       iris3
@@ -61,7 +61,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       dni3 <- dimnames(iris3)
       ii <- data.frame(matrix(aperm(iris3, c(1,3,2)), ncol = 4,

@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       full_body_scan
 
@@ -41,6 +41,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       full_body_scan

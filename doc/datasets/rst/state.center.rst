@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       state.abb
       state.area
@@ -28,8 +28,9 @@
    .. rubric:: Details
       :name: details
 
-   R currently contains the following “state” data sets. Note that all
-   data are arranged according to alphabetical order of the state names.
+   **R** currently contains the following “state” data sets. Note that
+   all data are arranged according to alphabetical order of the state
+   names.
 
    ``state.abb``:
       character vector of 2-letter abbreviations for the state names.
@@ -107,7 +108,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       (dst <- dxy <- data.frame(state.center, row.names=state.abb))
       ## Alaska and Hawaii are placed just off the West Coast (for compact map drawing):

@@ -23,7 +23,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(HHSCyberSecurityBreaches)
 
@@ -130,7 +130,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       ##
       ## 1.  mean(Individuals.Affected)

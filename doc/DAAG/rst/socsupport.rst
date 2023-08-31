@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       socsupport
 
@@ -101,7 +101,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       attach(socsupport)
 

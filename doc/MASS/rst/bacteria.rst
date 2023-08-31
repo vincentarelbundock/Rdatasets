@@ -16,7 +16,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       bacteria
 
@@ -73,7 +73,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       contrasts(bacteria$trt) <- structure(contr.sdif(3),
            dimnames = list(NULL, c("drug", "encourage")))

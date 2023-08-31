@@ -15,7 +15,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       USJudgeRatings
 
@@ -47,7 +47,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       require(graphics)
       pairs(USJudgeRatings, main = "USJudgeRatings data")

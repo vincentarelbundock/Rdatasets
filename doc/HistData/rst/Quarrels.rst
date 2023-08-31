@@ -32,7 +32,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(Quarrels)
 
@@ -327,7 +327,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       data(Quarrels)
       str(Quarrels)

@@ -25,7 +25,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       OBrienKaiser
 
@@ -95,7 +95,7 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       OBrienKaiser
       contrasts(OBrienKaiser$treatment)
