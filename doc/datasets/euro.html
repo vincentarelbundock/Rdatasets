@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>euro</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='euro'>Conversion Rates of Euro Currencies</h2>
+<h2>Conversion Rates of Euro Currencies</h2>
 
 <h3>Description</h3>
 
@@ -41,10 +41,12 @@ matrix of size 11 by 11, with dimnames.
 
 <p>The data set <code>euro</code> contains the value of 1 Euro in all
 currencies participating in the European monetary union (Austrian
-Schilling ATS, Belgian Franc BEF, German Mark DEM, Spanish Peseta ESP,
-Finnish Markka FIM, French Franc FRF, Irish Punt IEP, Italian Lira
-ITL, Luxembourg Franc LUF, Dutch Guilder NLG and Portuguese Escudo
-PTE).  These conversion rates were fixed by the European Union on
+Schilling <abbr>ATS</abbr>, Belgian Franc <abbr>BEF</abbr>, German Mark
+<abbr>DEM</abbr>, Spanish Peseta <abbr>ESP</abbr>, Finnish Markka <abbr>FIM</abbr>,
+French Franc <abbr>FRF</abbr>, Irish Punt <abbr>IEP</abbr>, Italian Lira
+<abbr>ITL</abbr>, Luxembourg Franc <abbr>LUF</abbr>, Dutch Guilder <abbr>NLG</abbr> and
+Portuguese Escudo <abbr>PTE</abbr>).
+These conversion rates were fixed by the European Union on
 December 31, 1998.  To convert old prices to Euro prices, divide by
 the respective rate and round to 2 digits.
 </p>
@@ -78,6 +80,7 @@ dotchart(log(euro, 10),
          main = "euro data: log10(1 Euro in currency unit)")
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

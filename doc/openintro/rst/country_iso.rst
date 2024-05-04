@@ -1,51 +1,53 @@
 .. container::
 
-   =========== ===============
-   country_iso R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Country ISO information
-      :name: country_iso
+      =========== ===============
+      country_iso R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Country ISO information
+         :name: country-iso-information
 
-   Country International Organization for Standardization (ISO)
-   information.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Country International Organization for Standardization (ISO)
+      information.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      country_iso
+      ::
 
-   .. rubric:: Format
-      :name: format
+         country_iso
 
-   A data frame with 249 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   country_code
-      Two-letter ISO country code.
+      A data frame with 249 observations on the following 4 variables.
 
-   country_name
-      Country name.
+      country_code
+         Two-letter ISO country code.
 
-   year
-      Year the two-letter ISO country code was assigned.
+      country_name
+         Country name.
 
-   top_level_domain
-      op-level domain name.
+      year
+         Year the two-letter ISO country code was assigned.
 
-   .. rubric:: Source
-      :name: source
+      top_level_domain
+         op-level domain name.
 
-   Wikipedia, retrieved 2018-11-18.
-   https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Wikipedia, retrieved 2018-11-18.
+      https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      country_iso
+      ::
+
+         country_iso

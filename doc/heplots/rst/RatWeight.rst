@@ -1,104 +1,99 @@
 .. container::
 
-   ========= ===============
-   RatWeight R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Weight Gain in Rats Exposed to Thiouracil and Thyroxin
-      :name: RatWeight
+      ========= ===============
+      RatWeight R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Weight Gain in Rats Exposed to Thiouracil and Thyroxin
+         :name: weight-gain-in-rats-exposed-to-thiouracil-and-thyroxin
 
-   The data are from a study of weight gain, where investigators
-   randomly assigned 30 rats to three treatment groups: treatment 1 was
-   a control (no additive); treatments 2 and 3 consisted of two
-   different additives (thiouracil and thyroxin respectively) to the
-   rats drinking water. Weight was measured at baseline (week 0) and at
-   weeks 1, 2, 3, and 4. Due to an accident at the beginning of the
-   study, data on 3 rats from the thyroxin group are unavailable.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The data are from a study of weight gain, where investigators
+      randomly assigned 30 rats to three treatment groups: treatment 1
+      was a control (no additive); treatments 2 and 3 consisted of two
+      different additives (thiouracil and thyroxin respectively) to the
+      rats drinking water. Weight was measured at baseline (week 0) and
+      at weeks 1, 2, 3, and 4. Due to an accident at the beginning of
+      the study, data on 3 rats from the thyroxin group are unavailable.
 
-   .. code:: R
+      .. rubric:: Format
+         :name: format
 
-      data(RatWeight)
+      A data frame with 27 observations on the following 6 variables.
 
-   .. rubric:: Format
-      :name: format
+      ``trt``
+         a factor with levels ``Control`` ``Thiouracil`` ``Thyroxin``
 
-   A data frame with 27 observations on the following 6 variables.
+      ``wt0``
+         Weight at Week 0 (baseline weight)
 
-   ``trt``
-      a factor with levels ``Control`` ``Thiouracil`` ``Thyroxin``
+      ``wt1``
+         Weight at Week 1
 
-   ``wt0``
-      Weight at Week 0 (baseline weight)
+      ``wt2``
+         Weight at Week 2
 
-   ``wt1``
-      Weight at Week 1
+      ``wt3``
+         Weight at Week 3
 
-   ``wt2``
-      Weight at Week 2
+      ``wt4``
+         Weight at Week 4
 
-   ``wt3``
-      Weight at Week 3
+      .. rubric:: Details
+         :name: details
 
-   ``wt4``
-      Weight at Week 4
+      The ``trt`` factor comes supplied with contrasts comparing
+      ``Control`` to each of ``Thiouracil`` and ``Thyroxin``.
 
-   .. rubric:: Details
-      :name: details
+      .. rubric:: Source
+         :name: source
 
-   The ``trt`` factor comes supplied with contrasts comparing
-   ``Control`` to each of ``Thiouracil`` and ``Thyroxin``.
+      Originally from Box (1950), Table D (page 389), where the values
+      for weeks 1-4 were recorded as the gain in weight for that week.
 
-   .. rubric:: Source
-      :name: source
+      Fitzmaurice, G. M. and Laird, N. M. and Ware, J. H (2004).
+      *Applied Longitudinal Analysis*, New York, NY: Wiley-Interscience.
+      https://rdrr.io/rforge/ALA/.
 
-   Originally from Box (1950), Table D (page 389), where the values for
-   weeks 1-4 were recorded as the gain in weight for that week.
+      .. rubric:: References
+         :name: references
 
-   Fitzmaurice, G. M. and Laird, N. M. and Ware, J. H (2004). *Applied
-   Longitudinal Analysis*, New York, NY: Wiley-Interscience.
-   https://rdrr.io/rforge/ALA/.
+      Box, G.E.P. (1950). Problems in the analysis of growth and wear
+      curves. *Biometrics*, 6, 362-389.
 
-   .. rubric:: References
-      :name: references
+      Friendly, Michael (2010). HE Plots for Repeated Measures Designs.
+      *Journal of Statistical Software*, 37(4), 1-40.
+      `doi:10.18637/jss.v037.i04 <https://doi.org/10.18637/jss.v037.i04>`__.
 
-   Box, G.E.P. (1950). Problems in the analysis of growth and wear
-   curves. *Biometrics*, 6, 362-389.
+      .. rubric:: Examples
+         :name: examples
 
-   Friendly, Michael (2010). HE Plots for Repeated Measures Designs.
-   *Journal of Statistical Software*, 37(4), 1-40. doi:
-   `10.18637/jss.v037.i04 <https://doi.org/10.18637/jss.v037.i04>`__.
+      ::
 
-   .. rubric:: Examples
-      :name: examples
+         data(RatWeight)
+         contrasts(RatWeight$trt)
 
-   .. code:: R
+         rat.mod <- lm(cbind(wt0, wt1, wt2, wt3, wt4) ~ trt, data=RatWeight)
+         rat.mod
 
-      data(RatWeight)
-      contrasts(RatWeight$trt)
+         idata <- data.frame(week = ordered(0:4))
+         car::Anova(rat.mod, idata=idata, idesign=~week, test="Roy")
 
-      rat.mod <- lm(cbind(wt0, wt1, wt2, wt3, wt4) ~ trt, data=RatWeight)
-      rat.mod
+         # quick look at between group effects
+         pairs(rat.mod)
 
-      idata <- data.frame(week = ordered(0:4))
-      Anova(rat.mod, idata=idata, idesign=~week, test="Roy")
+         # between-S, baseline & week 4
+         heplot(rat.mod, col=c("red", "blue", "green3", "green3"),
+             variables=c(1,5),
+             hypotheses=c("trt1", "trt2"),
+             main="Rat weight data, Between-S effects") 
 
-      # quick look at between group effects
-      pairs(rat.mod)
-
-      # between-S, baseline & week 4
-      heplot(rat.mod, col=c("red", "blue", "green3", "green3"),
-          variables=c(1,5),
-          hypotheses=c("trt1", "trt2"),
-          main="Rat weight data, Between-S effects") 
-
-      # within-S
-      heplot(rat.mod, idata=idata, idesign=~week, iterm="week",
-          col=c("red", "blue", "green3"),
-      #   hypotheses=c("trt1", "trt2"),
-          main="Rat weight data, Within-S effects")
+         # within-S
+         heplot(rat.mod, idata=idata, idesign=~week, iterm="week",
+             col=c("red", "blue", "green3"),
+         #   hypotheses=c("trt1", "trt2"),
+             main="Rat weight data, Within-S effects")

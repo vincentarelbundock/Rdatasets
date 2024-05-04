@@ -12,36 +12,28 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>TIPI</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='TIPI'>
-Data on the Ten Item Personality Inventory 
-</h2>
+<h2>Data on the Ten Item Personality Inventory</h2>
 
 <h3>Description</h3>
 
-<p>The Ten Item Personality Inventory (Gosling et al. 2003) is a brief inventory of the Big Five personality
-domains (Extraversion, Neuroticism, Conscientiousness, Agreeableness, and Openness to experience).
-This dataset, originally from the Open Source Psychometrics Project (https://openpsychometrics.org/),
-was used by Jones et al. (2020), from which we obtained this version.
+<p>The Ten Item Personality Inventory (Gosling et al. 2003) is a brief
+inventory of the Big Five personality domains (Extraversion, Neuroticism,
+Conscientiousness, Agreeableness, and Openness to experience). This dataset,
+originally from the Open Source Psychometrics Project
+(https://openpsychometrics.org/), was used by Jones et al. (2020), from
+which we obtained this version.
 </p>
-<p>In addition to scores on the Big Five scales, the dataset contains 11 demographic variables on the participants,
-potentially useful in multivariate analyses.
-</p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data("TIPI")</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A data frame with 1799 observations on the following 16 variables.
 </p>
-
+ 
 <dl>
 <dt><code>Extraversion</code></dt><dd><p>a numeric vector</p>
 </dd>
@@ -50,11 +42,12 @@ potentially useful in multivariate analyses.
 <dt><code>Conscientiousness</code></dt><dd><p>a numeric vector</p>
 </dd>
 <dt><code>Agreeableness</code></dt><dd><p>a numeric vector</p>
-</dd>
+</dd> 
 <dt><code>Openness</code></dt><dd><p>a numeric vector</p>
-</dd>
-<dt><code>education</code></dt><dd><p>an ordered factor with levels <code>&lt;HS</code> &lt; <code>HS</code> &lt; <code>Univ</code> &lt; <code>Grad</code></p>
-</dd>
+</dd> 
+<dt><code>education</code></dt><dd><p>an ordered factor with levels
+<code>&lt;HS</code> &lt; <code>HS</code> &lt; <code>Univ</code> &lt; <code>Grad</code></p>
+</dd> 
 <dt><code>urban</code></dt><dd><p>an ordered factor with levels <code>Rural</code> &lt; <code>Suburban</code> &lt; <code>Urban</code></p>
 </dd>
 <dt><code>gender</code></dt><dd><p>a factor with levels <code>M</code> <code>F</code></p>
@@ -62,64 +55,78 @@ potentially useful in multivariate analyses.
 <dt><code>engnat</code></dt><dd><p>a factor with levels <code>Native</code> <code>Non-native</code></p>
 </dd>
 <dt><code>age</code></dt><dd><p>a numeric vector</p>
-</dd>
-<dt><code>religion</code></dt><dd><p>a factor with levels <code>Agnostic</code> <code>Atheist</code> <code>Buddhist</code> <code>Christian (Catholic)</code> <code>Christian (Mormon)</code> <code>Christian (Protestant)</code> <code>Christian (Other)</code> <code>Hindu</code> <code>Jewish</code> <code>Muslim</code> <code>Sikh</code> <code>Other</code></p>
-</dd>
-<dt><code>orientation</code></dt><dd><p>a factor with levels <code>Heterosexual</code> <code>Bisexual</code> <code>Homosexual</code> <code>Asexual</code> <code>Other</code></p>
-</dd>
-<dt><code>race</code></dt><dd><p>a factor with levels <code>Asian</code> <code>Arab</code> <code>Black</code> <code>Indig-White</code> <code>Other</code></p>
+</dd> 
+<dt><code>religion</code></dt><dd><p>a factor with levels <code>Agnostic</code> <code>Atheist</code> <code>Buddhist</code> <code>Christian
+      (Catholic)</code> <code>Christian (Mormon)</code> <code>Christian (Protestant)</code>
+<code>Christian (Other)</code> <code>Hindu</code> <code>Jewish</code> <code>Muslim</code>
+<code>Sikh</code> <code>Other</code></p>
+</dd> 
+<dt><code>orientation</code></dt><dd><p>a factor with levels <code>Heterosexual</code> <code>Bisexual</code> <code>Homosexual</code> 
+<code>Asexual</code> <code>Other</code></p>
+</dd> 
+<dt><code>race</code></dt><dd><p>a factor with levels <code>Asian</code>
+<code>Arab</code> <code>Black</code> <code>Indig-White</code> <code>Other</code></p>
 </dd>
 <dt><code>voted</code></dt><dd><p>a factor with levels <code>Yes</code> <code>No</code></p>
 </dd>
-<dt><code>married</code></dt><dd><p>a factor with levels <code>Never married</code> <code>Currently married</code> <code>Previously married</code></p>
+<dt><code>married</code></dt><dd><p>a factor with levels <code>Never married</code>
+<code>Currently married</code> <code>Previously married</code></p>
 </dd>
 <dt><code>familysize</code></dt><dd><p>a numeric vector</p>
-</dd>
+</dd> 
 </dl>
 
 
 
 <h3>Details</h3>
 
-<p>Scores on each personality domain were calculated by averaging items assigned to
-each domain (after reverse scoring specific items). In this version, total scores for each
-scale were calculated by averaging the positively and negatively coded items, for example,
-<code>TIPI$Extraversion &lt;- (TIPI$E + (8-TIPI$E_r))/2</code>.
+<p>In addition to scores on the Big Five scales, the dataset contains 11
+demographic variables on the participants, potentially useful in
+multivariate analyses.
 </p>
-<p>Then, for the present purposes, some tidying was done:
+<p>Scores on each personality domain were calculated by averaging items
+assigned to each domain (after reverse scoring specific items). In this
+version, total scores for each scale were calculated by averaging the
+positively and negatively coded items, for example, <code>TIPI$Extraversion
+&lt;- (TIPI$E + (8-TIPI$E_r))/2</code>.
 </p>
-
-<ul>
-<li><p> 100 cases with 'gender==&quot;Other&quot; were deleted;
-</p>
+<p>Then, for the present purposes, some tidying was done: </p>
+ <ul>
+<li><p> 100
+cases with 'gender==&quot;Other&quot; were deleted; </p>
 </li>
-<li><p> codes for levels of 'education', 'engnat' and 'race' were abbreviated for ease of use in graphics.
-</p>
+<li><p> codes for levels of
+'education', 'engnat' and 'race' were abbreviated for ease of use in
+graphics. </p>
 </li></ul>
 
 
 
 <h3>Source</h3>
 
-<p>Jones, P.J., Mair, P., Simon, T. et al. (2020). Network Trees: A Method for Recursively Partitioning Covariance Structures. 
-<em>Psychometrika</em>, <b>85</b>, 926?945. https://doi.org/10.1007/s11336-020-09731-4
+<p>Jones, P.J., Mair, P., Simon, T. et al. (2020). Network Trees: A
+Method for Recursively Partitioning Covariance Structures.
+<em>Psychometrika</em>, <b>85</b>, 926?945.
+https://doi.org/10.1007/s11336-020-09731-4
 </p>
 
 
 <h3>References</h3>
 
-<p>Gosling, S. D., Rentfrow, P. J., &amp; Swann, W. B, Jr. (2003). A very brief measure of the Big-Five personality domains.
-<em>Journal of Research in Personality</em>, <b>37</b>, 504?528.
+<p>Gosling, S. D., Rentfrow, P. J., &amp; Swann, W. B, Jr. (2003). A
+very brief measure of the Big-Five personality domains. <em>Journal of
+Research in Personality</em>, <b>37</b>, 504?528.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(TIPI)
+<pre><code class='language-R'>
+data(TIPI)
 # fit an mlm
 tipi.mlm &lt;- lm(cbind(Extraversion, Neuroticism, Conscientiousness, Agreeableness, Openness) 
                ~ engnat + gender + education, data = TIPI )
-Anova(tipi.mlm)
+car::Anova(tipi.mlm)
 
 heplot(tipi.mlm, fill=TRUE, fill.alpha=0.1)
 
@@ -132,8 +139,10 @@ tipi.can
 
 heplot(tipi.can, fill=TRUE, fill.alpha=0.1, 
        var.col = "darkred", var.cex = 1.5, var.lwd = 3)
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

@@ -1,54 +1,56 @@
 .. container::
 
-   ======== ===============
-   Salaries R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Salaries for Professors
-      :name: Salaries
+      ======== ===============
+      Salaries R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Salaries for Professors
+         :name: salaries-for-professors
 
-   The 2008-09 nine-month academic salary for Assistant Professors,
-   Associate Professors and Professors in a college in the U.S. The data
-   were collected as part of the on-going effort of the college's
-   administration to monitor salary differences between male and female
-   faculty members.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The 2008-09 nine-month academic salary for Assistant Professors,
+      Associate Professors and Professors in a college in the U.S. The
+      data were collected as part of the on-going effort of the
+      college's administration to monitor salary differences between
+      male and female faculty members.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Salaries
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Salaries
 
-   A data frame with 397 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``rank``
-      a factor with levels ``AssocProf`` ``AsstProf`` ``Prof``
+      A data frame with 397 observations on the following 6 variables.
 
-   ``discipline``
-      a factor with levels ``A`` (“theoretical” departments) or ``B``
-      (“applied” departments).
+      ``rank``
+         a factor with levels ``AssocProf`` ``AsstProf`` ``Prof``
 
-   ``yrs.since.phd``
-      years since PhD.
+      ``discipline``
+         a factor with levels ``A`` (“theoretical” departments) or ``B``
+         (“applied” departments).
 
-   ``yrs.service``
-      years of service.
+      ``yrs.since.phd``
+         years since PhD.
 
-   ``sex``
-      a factor with levels ``Female`` ``Male``
+      ``yrs.service``
+         years of service.
 
-   ``salary``
-      nine-month salary, in dollars.
+      ``sex``
+         a factor with levels ``Female`` ``Male``
 
-   .. rubric:: References
-      :name: references
+      ``salary``
+         nine-month salary, in dollars.
 
-   Fox J. and Weisberg, S. (2019) *An R Companion to Applied
-   Regression*, Third Edition, Sage.
+      .. rubric:: References
+         :name: references
+
+      Fox J. and Weisberg, S. (2019) *An R Companion to Applied
+      Regression*, Third Edition, Sage.

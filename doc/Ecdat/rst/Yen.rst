@@ -1,66 +1,69 @@
 .. container::
 
-   === ===============
-   Yen R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Yen-dollar Exchange Rate
-      :name: Yen
+      === ===============
+      Yen R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Yen-dollar Exchange Rate
+         :name: yen-dollar-exchange-rate
 
-   weekly observations from 1975 to 1989
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 778
+      weekly observations from 1975 to 1989
 
-   *observation* : country
+      *number of observations* : 778
 
-   *country* : Japan
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Japan
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Yen)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Yen)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   date
-      the date of the observation (19850104 is January, 4, 1985)
+      A dataframe containing :
 
-   s
-      the ask price of the dollar in units of Yen in the spot market on
-      Friday of the current week
+      date
+         the date of the observation (19850104 is January, 4, 1985)
 
-   f
-      the ask price of the dollar in units of Yen in the 30-day forward
-      market on Friday of the current week
+      s
+         the ask price of the dollar in units of Yen in the spot market
+         on Friday of the current week
 
-   s30
-      the bid price of the dollar in units of Yen in the spot market on
-      the delivery date on a current forward contract
+      f
+         the ask price of the dollar in units of Yen in the 30-day
+         forward market on Friday of the current week
 
-   .. rubric:: Source
-      :name: source
+      s30
+         the bid price of the dollar in units of Yen in the spot market
+         on the delivery date on a current forward contract
 
-   Bekaert, G. and R. Hodrick (1993) “On biases in the measurement of
-   foreign exchange risk premiums”, *Journal of International Money and
-   Finance*, **12**, 115-138.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Bekaert, G. and R. Hodrick (1993) “On biases in the measurement of
+      foreign exchange risk premiums”, *Journal of International Money
+      and Finance*, **12**, 115-138.
 
-   Hayashi, F. (2000) *Econometrics*, Princeton University Press,
-   http://fhayashi.fc2web.com/hayashi_econometrics.htm, chapter 6,
-   438-443.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Hayashi, F. (2000) *Econometrics*, Princeton University Press,
+      http://fhayashi.fc2web.com/hayashi_econometrics.htm, chapter 6,
+      438-443.
 
-   ``DM``, ``Pound``, ``Index.Source``, ``Index.Economics``,
-   ``Index.Econometrics``, ``Index.Observations``, ``Index.Time.Series``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``DM``, ``Pound``, ``Index.Source``, ``Index.Economics``,
+      ``Index.Econometrics``, ``Index.Observations``,
+      ``Index.Time.Series``

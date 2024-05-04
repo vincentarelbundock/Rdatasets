@@ -1,133 +1,136 @@
 .. container::
 
-   ======= ===============
-   nlswork R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: National Longitudinal Survey of Young Working Women
-      :name: nlswork
+      ======= ===============
+      nlswork R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: National Longitudinal Survey of Young Working Women
+         :name: national-longitudinal-survey-of-young-working-women
 
-   The ``nlswork`` data frame contains data about 4711 young working
-   women who had an age of 14–26 years in 1968. These data are collected
-   within the "National Longitudinal Survey" over the years 1968-1988
-   (with gaps). There are 28534 observations in total.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``nlswork`` data frame contains data about 4711 young working
+      women who had an age of 14–26 years in 1968. These data are
+      collected within the "National Longitudinal Survey" over the years
+      1968-1988 (with gaps). There are 28534 observations in total.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(nlswork)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(nlswork)
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   idcode
-      NLS ID.
+      This data frame contains the following columns:
 
-   year
-      interview year.
+      idcode
+         NLS ID.
 
-   birth_yr
-      birth year.
+      year
+         interview year.
 
-   age
-      age in current year.
+      birth_yr
+         birth year.
 
-   race
-      1=white, 2=black, 3=other.
+      age
+         age in current year.
 
-   msp
-      1 if married, spouse present.
+      race
+         1=white, 2=black, 3=other.
 
-   nev_mar
-      1 if never married.
+      msp
+         1 if married, spouse present.
 
-   grade
-      current grade completed.
+      nev_mar
+         1 if never married.
 
-   collgrad
-      1 if college graduate.
+      grade
+         current grade completed.
 
-   not_smsa
-      1 if not SMSA.
+      collgrad
+         1 if college graduate.
 
-   c_city
-      1 if central city.
+      not_smsa
+         1 if not SMSA.
 
-   south
-      1 if south.
+      c_city
+         1 if central city.
 
-   ind_code
-      industry of employment.
+      south
+         1 if south.
 
-   occ_code
-      occupation.
+      ind_code
+         industry of employment.
 
-   union
-      1 if union.
+      occ_code
+         occupation.
 
-   wks_ue
-      weeks unemployed last year.
+      union
+         1 if union.
 
-   ttl_exp
-      total work experience.
+      wks_ue
+         weeks unemployed last year.
 
-   tenure
-      job tenure, in years.
+      ttl_exp
+         total work experience.
 
-   hours
-      usual hours worked.
+      tenure
+         job tenure, in years.
 
-   wks_work
-      weeks worked last year.
+      hours
+         usual hours worked.
 
-   ln_wage
-      ln(wage/GNP deflator).
+      wks_work
+         weeks worked last year.
 
-   .. rubric:: Details
-      :name: details
+      ln_wage
+         ln(wage/GNP deflator).
 
-   Two different versions of this data set are available on the
-   internet. They are slighly different: The variable ``wks_work``
-   (weeks worked last year) is ``101`` in this version (from Stata), but
-   ``NA`` in the version provided by the Boston College for the
-   observation with ``idcode = 1`` and ``year = 83``. Moreover, this
-   variable is ``NA`` in this version (from Stata), but ``104`` in the
-   version provided by the Boston College for the observation with
-   ``idcode = 2`` and ``year = 87``.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Two different versions of this data set are available on the
+      internet. They are slighly different: The variable ``wks_work``
+      (weeks worked last year) is ``101`` in this version (from Stata),
+      but ``NA`` in the version provided by the Boston College for the
+      observation with ``idcode = 1`` and ``year = 83``. Moreover, this
+      variable is ``NA`` in this version (from Stata), but ``104`` in
+      the version provided by the Boston College for the observation
+      with ``idcode = 2`` and ``year = 87``.
 
-   Datasets for Stata Longitudinal/Panel-Data Reference Manual, Release
-   10: National Longitudinal Survey. Young Women 14-26 years of age in
-   1968, https://www.stata-press.com/data/r10/nlswork.dta.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Datasets for Stata Longitudinal/Panel-Data Reference Manual,
+      Release 10: National Longitudinal Survey. Young Women 14-26 years
+      of age in 1968, https://www.stata-press.com/data/r10/nlswork.dta.
 
-   Boston College, National Longitudinal Survey. Young Women 14-26 years
-   of age in 1968, https://fmwww.bc.edu/ec-p/data/stata/nlswork.dta.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Boston College, National Longitudinal Survey. Young Women 14-26
+      years of age in 1968,
+      https://fmwww.bc.edu/ec-p/data/stata/nlswork.dta.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data( "nlswork" )
-      summary( nlswork )
+      ::
 
-      ## Not run: 
-      library( "plm" )
-      nlswork <- plm.data( nlswork, c( "idcode", "year" ) )
-      plmResult <- plm( ln_wage ~ union + age + grade + not_smsa + south + occ_code,
-         data = nlswork, model = "random" )
-      summary( plmResult )
+         data( "nlswork" )
+         summary( nlswork )
 
-      ## End(Not run)
+         ## Not run: 
+         library( "plm" )
+         nlswork <- plm.data( nlswork, c( "idcode", "year" ) )
+         plmResult <- plm( ln_wage ~ union + age + grade + not_smsa + south + occ_code,
+            data = nlswork, model = "random" )
+         summary( plmResult )
+
+         ## End(Not run)

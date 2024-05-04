@@ -1,45 +1,47 @@
 .. container::
 
-   ============== ===============
-   SleepingShrews R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Shrew Heart Rates at Stages of Sleep
-      :name: SleepingShrews
+      ============== ===============
+      SleepingShrews R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Shrew Heart Rates at Stages of Sleep
+         :name: shrew-heart-rates-at-stages-of-sleep
 
-   Heart rates for a sample of six tree shrews at each of three stages
-   of sleep.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Heart rates for a sample of six tree shrews at each of three
+      stages of sleep.
 
-   A data frame with 18 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``ID``
-      Row ID
+      A data frame with 18 observations on the following 4 variables.
 
-   ``Shrew``
-      Shrew ID (``A`` through ``F``)
+      ``ID``
+         Row ID
 
-   ``Phase``
-      Phase of sleep (``DSW``\ =deep wave, ``LSW``\ =light wave, or
-      ``REM``\ =dreaming)
+      ``Shrew``
+         Shrew ID (``A`` through ``F``)
 
-   ``Rate``
-      Heart rate (beats per minute)
+      ``Phase``
+         Phase of sleep (``DSW``\ =deep wave, ``LSW``\ =light wave, or
+         ``REM``\ =dreaming)
 
-   .. rubric:: Details
-      :name: details
+      ``Rate``
+         Heart rate (beats per minute)
 
-   Heart rates were recorded for a sample of six tree shrews at each of
-   three stages of sleep.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Heart rates were recorded for a sample of six tree shrews at each
+      of three stages of sleep.
 
-   Berger, R. J. and Walker, J. M. (1972) "The Polygraphic Study of
-   Sleep in the Tree Shrew," Brain, Behavior, and Evolution, v. 5, pp.
-   62
+      .. rubric:: Source
+         :name: source
+
+      Berger, R. J. and Walker, J. M. (1972) "The Polygraphic Study of
+      Sleep in the Tree Shrew," Brain, Behavior, and Evolution, v. 5,
+      pp. 62

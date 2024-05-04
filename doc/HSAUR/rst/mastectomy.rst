@@ -1,51 +1,54 @@
 .. container::
 
-   ========== ===============
-   mastectomy R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Survival Times after Mastectomy of Breast Cancer Patients
-      :name: mastectomy
+      ========== ===============
+      mastectomy R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Survival Times after Mastectomy of Breast Cancer
+         Patients
+         :name: survival-times-after-mastectomy-of-breast-cancer-patients
 
-   Survival times in months after mastectomy of women with breast
-   cancer. The cancers are classified as having metastized or not based
-   on a histochemical marker.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Survival times in months after mastectomy of women with breast
+      cancer. The cancers are classified as having metastized or not
+      based on a histochemical marker.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("mastectomy")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("mastectomy")
 
-   A data frame with 42 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   time
-      survival times in months.
+      A data frame with 42 observations on the following 3 variables.
 
-   event
-      a logical indicating if the event was observed (``TRUE``) or if
-      the survival time was censored (``FALSE``).
+      time
+         survival times in months.
 
-   metastized
-      a factor at levels ``yes`` and ``no``.
+      event
+         a logical indicating if the event was observed (``TRUE``) or if
+         the survival time was censored (``FALSE``).
 
-   .. rubric:: Source
-      :name: source
+      metastized
+         a factor at levels ``yes`` and ``no``.
 
-   B. S. Everitt and S. Rabe-Hesketh (2001), *Analysing Medical Data
-   using S-PLUS*, Springer, New York, USA.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      B. S. Everitt and S. Rabe-Hesketh (2001), *Analysing Medical Data
+      using S-PLUS*, Springer, New York, USA.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("mastectomy", package = "HSAUR")
-        table(mastectomy$metastized)
+      ::
+
+           data("mastectomy", package = "HSAUR")
+           table(mastectomy$metastized)

@@ -1,160 +1,162 @@
 .. container::
 
-   ======= ===============
-   driving R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: driving
-      :name: driving
+      ======= ===============
+      driving R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: driving
+         :name: driving
 
-   Wooldridge Source: Freeman, D.G. (2007), “Drunk Driving Legislation
-   and Traffic Fatalities: New Evidence on BAC 08 Laws,” Contemporary
-   Economic Policy 25, 293–308. Professor Freeman kindly provided the
-   data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Freeman, D.G. (2007), “Drunk Driving
+      Legislation and Traffic Fatalities: New Evidence on BAC 08 Laws,”
+      Contemporary Economic Policy 25, 293–308. Professor Freeman kindly
+      provided the data. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('driving')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('driving')
 
-   A data.frame with 1200 observations on 56 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1980 through 2004
+      A data.frame with 1200 observations on 56 variables:
 
-   -  **state:** 48 continental states, alphabetical
+      -  **year:** 1980 through 2004
 
-   -  **sl55:** speed limit == 55
+      -  **state:** 48 continental states, alphabetical
 
-   -  **sl65:** speed limit == 65
+      -  **sl55:** speed limit == 55
 
-   -  **sl70:** speed limit == 70
+      -  **sl65:** speed limit == 65
 
-   -  **sl75:** speed limit == 75
+      -  **sl70:** speed limit == 70
 
-   -  **slnone:** no speed limit
+      -  **sl75:** speed limit == 75
 
-   -  **seatbelt:** =0 if none, =1 if primary, =2 if secondary
+      -  **slnone:** no speed limit
 
-   -  **minage:** minimum drinking age
+      -  **seatbelt:** =0 if none, =1 if primary, =2 if secondary
 
-   -  **zerotol:** zero tolerance law
+      -  **minage:** minimum drinking age
 
-   -  **gdl:** graduated drivers license law
+      -  **zerotol:** zero tolerance law
 
-   -  **bac10:** blood alcohol limit .10
+      -  **gdl:** graduated drivers license law
 
-   -  **bac08:** blood alcohol limit .08
+      -  **bac10:** blood alcohol limit .10
 
-   -  **perse:** administrative license revocation (per se law)
+      -  **bac08:** blood alcohol limit .08
 
-   -  **totfat:** total traffic fatalities
+      -  **perse:** administrative license revocation (per se law)
 
-   -  **nghtfat:** total nighttime fatalities
+      -  **totfat:** total traffic fatalities
 
-   -  **wkndfat:** total weekend fatalities
+      -  **nghtfat:** total nighttime fatalities
 
-   -  **totfatpvm:** total fatalities per 100 million miles
+      -  **wkndfat:** total weekend fatalities
 
-   -  **nghtfatpvm:** nighttime fatalities per 100 million miles
+      -  **totfatpvm:** total fatalities per 100 million miles
 
-   -  **wkndfatpvm:** weekend fatalities per 100 million miles
+      -  **nghtfatpvm:** nighttime fatalities per 100 million miles
 
-   -  **statepop:** state population
+      -  **wkndfatpvm:** weekend fatalities per 100 million miles
 
-   -  **totfatrte:** total fatalities per 100,000 population
+      -  **statepop:** state population
 
-   -  **nghtfatrte:** nighttime fatalities per 100,000 population
+      -  **totfatrte:** total fatalities per 100,000 population
 
-   -  **wkndfatrte:** weekend accidents per 100,000 population
+      -  **nghtfatrte:** nighttime fatalities per 100,000 population
 
-   -  **vehicmiles:** vehicle miles traveled, billions
+      -  **wkndfatrte:** weekend accidents per 100,000 population
 
-   -  **unem:** unemployment rate, percent
+      -  **vehicmiles:** vehicle miles traveled, billions
 
-   -  **perc14_24:** percent population aged 14 through 24
+      -  **unem:** unemployment rate, percent
 
-   -  **sl70plus:** sl70 + sl75 + slnone
+      -  **perc14_24:** percent population aged 14 through 24
 
-   -  **sbprim:** =1 if primary seatbelt law
+      -  **sl70plus:** sl70 + sl75 + slnone
 
-   -  **sbsecon:** =1 if secondary seatbelt law
+      -  **sbprim:** =1 if primary seatbelt law
 
-   -  **d80:** =1 if year == 1980
+      -  **sbsecon:** =1 if secondary seatbelt law
 
-   -  **d81:**
+      -  **d80:** =1 if year == 1980
 
-   -  **d82:**
+      -  **d81:**
 
-   -  **d83:**
+      -  **d82:**
 
-   -  **d84:**
+      -  **d83:**
 
-   -  **d85:**
+      -  **d84:**
 
-   -  **d86:**
+      -  **d85:**
 
-   -  **d87:**
+      -  **d86:**
 
-   -  **d88:**
+      -  **d87:**
 
-   -  **d89:**
+      -  **d88:**
 
-   -  **d90:**
+      -  **d89:**
 
-   -  **d91:**
+      -  **d90:**
 
-   -  **d92:**
+      -  **d91:**
 
-   -  **d93:**
+      -  **d92:**
 
-   -  **d94:**
+      -  **d93:**
 
-   -  **d95:**
+      -  **d94:**
 
-   -  **d96:**
+      -  **d95:**
 
-   -  **d97:**
+      -  **d96:**
 
-   -  **d98:**
+      -  **d97:**
 
-   -  **d99:**
+      -  **d98:**
 
-   -  **d00:**
+      -  **d99:**
 
-   -  **d01:**
+      -  **d00:**
 
-   -  **d02:**
+      -  **d01:**
 
-   -  **d03:**
+      -  **d02:**
 
-   -  **d04:** =1 if year == 2004
+      -  **d03:**
 
-   -  **vehicmilespc:**
+      -  **d04:** =1 if year == 2004
 
-   .. rubric:: Notes
-      :name: notes
+      -  **vehicmilespc:**
 
-   Several more years of data are available and may further shed light
-   on the effectiveness of several traffic laws.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: not used, but see page 695
+      Several more years of data are available and may further shed
+      light on the effectiveness of several traffic laws.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: not used, but see page 695
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(driving)
+      ::
+
+          str(driving)

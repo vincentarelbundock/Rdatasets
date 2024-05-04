@@ -1,74 +1,76 @@
 .. container::
 
-   ======= ===============
-   OECDGas R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Gasoline Consumption Data
-      :name: OECDGas
+      ======= ===============
+      OECDGas R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Gasoline Consumption Data
+         :name: gasoline-consumption-data
 
-   Panel data on gasoline consumption in 18 OECD countries over 19
-   years, 1960–1978.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Panel data on gasoline consumption in 18 OECD countries over 19
+      years, 1960–1978.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("OECDGas")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("OECDGas")
 
-   A data frame containing 342 observations on 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   country
-      Factor indicating country.
+      A data frame containing 342 observations on 6 variables.
 
-   year
-      Year.
+      country
+         Factor indicating country.
 
-   gas
-      Logarithm of motor gasoline consumption per car.
+      year
+         Year.
 
-   income
-      Logarithm of real per-capita income.
+      gas
+         Logarithm of motor gasoline consumption per car.
 
-   price
-      Logarithm of real motor gasoline price.
+      income
+         Logarithm of real per-capita income.
 
-   cars
-      Logarithm of the stock of cars per-capita.
+      price
+         Logarithm of real motor gasoline price.
 
-   .. rubric:: Source
-      :name: source
+      cars
+         Logarithm of the stock of cars per-capita.
 
-   The data is from Baltagi (2002).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The data is from Baltagi (2002).
 
-   Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+      .. rubric:: References
+         :name: references
 
-   Baltagi, B.H. and Griffin, J.M. (1983). Gasoline Demand in the OECD:
-   An Application of Pooling and Testing Procedures. *European Economic
-   Review*, **22**, 117–137.
+      Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
 
-   .. rubric:: See Also
-      :name: see-also
+      Baltagi, B.H. and Griffin, J.M. (1983). Gasoline Demand in the
+      OECD: An Application of Pooling and Testing Procedures. *European
+      Economic Review*, **22**, 117–137.
 
-   ``Baltagi2002``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Baltagi2002``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("OECDGas")
+      ::
 
-      library("lattice")
-      xyplot(exp(cars) ~ year | country, data = OECDGas, type = "l")
-      xyplot(exp(gas) ~ year | country, data = OECDGas, type = "l")
+         data("OECDGas")
+
+         library("lattice")
+         xyplot(exp(cars) ~ year | country, data = OECDGas, type = "l")
+         xyplot(exp(gas) ~ year | country, data = OECDGas, type = "l")

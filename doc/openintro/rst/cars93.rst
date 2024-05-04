@@ -1,82 +1,85 @@
 .. container::
 
-   ====== ===============
-   cars93 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: cars93
-      :name: cars93
+      ====== ===============
+      cars93 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: cars93
+         :name: cars93
 
-   A data frame with 54 rows and 6 columns. This data is a subset of the
-   ``Cars93`` data set from the ``MASS`` package.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data frame with 54 rows and 6 columns. This data is a subset of
+      the ``Cars93`` data set from the ``MASS`` package.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      cars93
+      ::
 
-   .. rubric:: Format
-      :name: format
+         cars93
 
-   A data frame with 54 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   type
-      The vehicle type with levels ``large``, ``midsize``, and
-      ``small``.
+      A data frame with 54 observations on the following 6 variables.
 
-   price
-      Vehicle price (USD).
+      type
+         The vehicle type with levels ``large``, ``midsize``, and
+         ``small``.
 
-   mpg_city
-      Vehicle mileage in city (miles per gallon).
+      price
+         Vehicle price (USD).
 
-   drive_train
-      Vehicle drive train with levels ``4WD``, ``front``, and ``rear``.
+      mpg_city
+         Vehicle mileage in city (miles per gallon).
 
-   passengers
-      The vehicle passenger capacity.
+      drive_train
+         Vehicle drive train with levels ``4WD``, ``front``, and
+         ``rear``.
 
-   weight
-      Vehicle weight (lbs).
+      passengers
+         The vehicle passenger capacity.
 
-   .. rubric:: Details
-      :name: details
+      weight
+         Vehicle weight (lbs).
 
-   These cars represent a random sample for 1993 models that were in
-   both *Consumer Reports* and *PACE Buying Guide*. Only vehicles of
-   type ``small``, ``midsize``, and ``large`` were include.
+      .. rubric:: Details
+         :name: details
 
-   Further description can be found in Lock (1993). Use the URL
-   http://jse.amstat.org/v1n1/datasets.lock.html.
+      These cars represent a random sample for 1993 models that were in
+      both *Consumer Reports* and *PACE Buying Guide*. Only vehicles of
+      type ``small``, ``midsize``, and ``large`` were include.
 
-   .. rubric:: Source
-      :name: source
+      Further description can be found in Lock (1993). Use the URL
+      http://jse.amstat.org/v1n1/datasets.lock.html.
 
-   Lock, R. H. (1993) 1993 New Car Data. *Journal of Statistics
-   Education* 1(1).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Lock, R. H. (1993) 1993 New Car Data. *Journal of Statistics
+      Education* 1(1).
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      # Vehicle price by type
-      ggplot(cars93, aes(x = price)) +
-        geom_histogram(binwidth = 5) +
-        facet_wrap(~type)
+         library(ggplot2)
 
-      # Vehicle price vs. weight
-      ggplot(cars93, aes(x = weight, y = price)) +
-        geom_point()
+         # Vehicle price by type
+         ggplot(cars93, aes(x = price)) +
+           geom_histogram(binwidth = 5) +
+           facet_wrap(~type)
 
-      # Milleage vs. weight
-      ggplot(cars93, aes(x = weight, y = mpg_city)) +
-        geom_point() +
-        geom_smooth()
+         # Vehicle price vs. weight
+         ggplot(cars93, aes(x = weight, y = price)) +
+           geom_point()
+
+         # Milleage vs. weight
+         ggplot(cars93, aes(x = weight, y = mpg_city)) +
+           geom_point() +
+           geom_smooth()

@@ -1,84 +1,86 @@
 .. container::
 
-   ======== ===============
-   VietNamI R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Medical Expenses in Vietnam (individual Level)
-      :name: VietNamI
+      ======== ===============
+      VietNamI R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Medical Expenses in Vietnam (individual Level)
+         :name: medical-expenses-in-vietnam-individual-level
 
-   a cross-section from 1997
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 27765
+      a cross-section from 1997
 
-   *observation* : individuals
+      *number of observations* : 27765
 
-   *country* : Vietnam
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Vietnam
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(VietNamI)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(VietNamI)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   pharvis
-      number of direct pharmacy visits
+      A dataframe containing :
 
-   lnhhexp
-      log of total medical expenditure
+      pharvis
+         number of direct pharmacy visits
 
-   age
-      age of household head
+      lnhhexp
+         log of total medical expenditure
 
-   sex
-      gender (male,female)
+      age
+         age of household head
 
-   married
-      married ?
+      sex
+         gender (male,female)
 
-   educ
-      completed diploma level ?
+      married
+         married ?
 
-   illness
-      number of of illnesses experiences in past 12 months
+      educ
+         completed diploma level ?
 
-   injury
-      injured during survey period ?
+      illness
+         number of of illnesses experiences in past 12 months
 
-   illdays
-      number of illness days
+      injury
+         injured during survey period ?
 
-   actdays
-      number of days of limited activity
+      illdays
+         number of illness days
 
-   insurance
-      respondent has health insurance coverage ?
+      actdays
+         number of days of limited activity
 
-   commune
+      insurance
+         respondent has health insurance coverage ?
+
       commune
+         commune
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: Source
+         :name: source
 
-   Vietnam World Bank Livings Standards Survey.
+      Vietnam World Bank Livings Standards Survey.
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: References
+         :name: references
 
-   Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
-   and applications*, Cambridge, pp.848–853.
+      Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
+      and applications*, Cambridge, pp.848–853.
 
-   .. rubric:: See Also
-      :name: see-also
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

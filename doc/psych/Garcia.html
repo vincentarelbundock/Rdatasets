@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Garcia</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Garcia'>Data from the sexism (protest) study of Garcia, Schmitt, Branscome, and Ellemers (2010)
+<h2>Data from the sexism (protest) study of Garcia, Schmitt, Branscome, and Ellemers (2010)
 </h2>
 
 <h3>Description</h3>
@@ -85,8 +85,8 @@ function processMathHTML() {
 <pre><code class='language-R'>data(GSBE)  #alias to Garcia data set
 
 ## Just do regressions with interactions
-setCor(respappr ~ prot2 * sexism,std=FALSE,data=Garcia,main="Moderated (mean centered )")
-setCor(respappr ~ prot2 * sexism,std=FALSE,data=Garcia,main="Moderated (don't center)", zero=FALSE)
+lmCor(respappr ~ prot2 * sexism,std=FALSE,data=Garcia,main="Moderated (mean centered )")
+lmCor(respappr ~ prot2 * sexism,std=FALSE,data=Garcia,main="Moderated (don't center)", zero=FALSE)
 #demonstrate interaction plots
 plot(respappr ~ sexism, pch = 23- protest, bg = c("black","red", "blue")[protest], 
 data=Garcia, main = "Response to sexism varies as type of protest")
@@ -111,6 +111,7 @@ summary(mod2)
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

@@ -1,86 +1,88 @@
 .. container::
 
-   ======= ===============
-   wageprc R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: wageprc
-      :name: wageprc
+      ======= ===============
+      wageprc R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: wageprc
+         :name: wageprc
 
-   Wooldridge Source: Economic Report of the President, various years.
-   Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Economic Report of the President, various
+      years. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('wageprc')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('wageprc')
 
-   A data.frame with 286 observations on 20 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **price:** consumer price index
+      A data.frame with 286 observations on 20 variables:
 
-   -  **wage:** nominal hourly wage
+      -  **price:** consumer price index
 
-   -  **t:** time trend = 1, 2 , 3, ...
+      -  **wage:** nominal hourly wage
 
-   -  **lprice:** log(price)
+      -  **t:** time trend = 1, 2 , 3, ...
 
-   -  **lwage:** log(wage)
+      -  **lprice:** log(price)
 
-   -  **gprice:** lprice - lprice[\_n-1]
+      -  **lwage:** log(wage)
 
-   -  **gwage:** lwage - lwage[\_n-1]
+      -  **gprice:** lprice - lprice[_n-1]
 
-   -  **gwage_1:** gwage[\_n-1]
+      -  **gwage:** lwage - lwage[_n-1]
 
-   -  **gwage_2:** gwage[\_n-2]
+      -  **gwage_1:** gwage[_n-1]
 
-   -  **gwage_3:**
+      -  **gwage_2:** gwage[_n-2]
 
-   -  **gwage_4:**
+      -  **gwage_3:**
 
-   -  **gwage_5:**
+      -  **gwage_4:**
 
-   -  **gwage_6:**
+      -  **gwage_5:**
 
-   -  **gwage_7:**
+      -  **gwage_6:**
 
-   -  **gwage_8:**
+      -  **gwage_7:**
 
-   -  **gwage_9:**
+      -  **gwage_8:**
 
-   -  **gwage_10:**
+      -  **gwage_9:**
 
-   -  **gwage_11:**
+      -  **gwage_10:**
 
-   -  **gwage_12:**
+      -  **gwage_11:**
 
-   -  **gprice_1:** gprice[\_n-1]
+      -  **gwage_12:**
 
-   .. rubric:: Notes
-      :name: notes
+      -  **gprice_1:** gprice[_n-1]
 
-   These monthly data run from January 1964 through October 1987. The
-   consumer price index averages to 100 in 1967.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 405, 444-445, 671.
+      These monthly data run from January 1964 through October 1987. The
+      consumer price index averages to 100 in 1967.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 405, 444-445, 671.
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(wageprc)
+      ::
+
+          str(wageprc)

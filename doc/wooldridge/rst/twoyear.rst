@@ -1,97 +1,100 @@
 .. container::
 
-   ======= ===============
-   twoyear R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: twoyear
-      :name: twoyear
+      ======= ===============
+      twoyear R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: twoyear
+         :name: twoyear
 
-   Wooldridge Source: T.J. Kane and C.E. Rouse (1995), Labor-Market
-   Returns to Two- and Four-Year Colleges, American Economic Review 85,
-   600-614. With Professor Rouse’s kind assistance, I obtained the data
-   from her web site at Princeton University. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: T.J. Kane and C.E. Rouse (1995), Labor-Market
+      Returns to Two- and Four-Year Colleges, American Economic Review
+      85, 600-614. With Professor Rouse’s kind assistance, I obtained
+      the data from her web site at Princeton University. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('twoyear')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('twoyear')
 
-   A data.frame with 6763 observations on 23 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **female:** =1 if female
+      A data.frame with 6763 observations on 23 variables:
 
-   -  **phsrank:** percent high school rank; 100 = best
+      -  **female:** =1 if female
 
-   -  **BA:** =1 if Bachelor's degree
+      -  **phsrank:** percent high school rank; 100 = best
 
-   -  **AA:** =1 if Associate's degree
+      -  **BA:** =1 if Bachelor's degree
 
-   -  **black:** =1 if African-American
+      -  **AA:** =1 if Associate's degree
 
-   -  **hispanic:** =1 if Hispanic
+      -  **black:** =1 if African-American
 
-   -  **id:** ID Number
+      -  **hispanic:** =1 if Hispanic
 
-   -  **exper:** total (actual) work experience
+      -  **id:** ID Number
 
-   -  **jc:** total 2-year credits
+      -  **exper:** total (actual) work experience
 
-   -  **univ:** total 4-year credits
+      -  **jc:** total 2-year credits
 
-   -  **lwage:** log hourly wage
+      -  **univ:** total 4-year credits
 
-   -  **stotal:** total standardized test score
+      -  **lwage:** log hourly wage
 
-   -  **smcity:** =1 if small city, 1972
+      -  **stotal:** total standardized test score
 
-   -  **medcity:** =1 if med. city, 1972
+      -  **smcity:** =1 if small city, 1972
 
-   -  **submed:** =1 if suburb med. city, 1972
+      -  **medcity:** =1 if med. city, 1972
 
-   -  **lgcity:** =1 if large city, 1972
+      -  **submed:** =1 if suburb med. city, 1972
 
-   -  **sublg:** =1 if suburb large city, 1972
+      -  **lgcity:** =1 if large city, 1972
 
-   -  **vlgcity:** =1 if very large city, 1972
+      -  **sublg:** =1 if suburb large city, 1972
 
-   -  **subvlg:** =1 if sub. very lge. city, 1972
+      -  **vlgcity:** =1 if very large city, 1972
 
-   -  **ne:** =1 if northeast
+      -  **subvlg:** =1 if sub. very lge. city, 1972
 
-   -  **nc:** =1 if north central
+      -  **ne:** =1 if northeast
 
-   -  **south:** =1 if south
+      -  **nc:** =1 if north central
 
-   -  **totcoll:** jc + univ
+      -  **south:** =1 if south
 
-   .. rubric:: Notes
-      :name: notes
+      -  **totcoll:** jc + univ
 
-   As possible extensions, students can explore whether the returns to
-   two-year or four-year colleges depend on race or gender. This is
-   partly done in Problem 7.9 but where college is aggregated into one
-   number. Also, should experience appear as a quadratic in the wage
-   specification?
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 140-143, 165, 261, 340
+      As possible extensions, students can explore whether the returns
+      to two-year or four-year colleges depend on race or gender. This
+      is partly done in Problem 7.9 but where college is aggregated into
+      one number. Also, should experience appear as a quadratic in the
+      wage specification?
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 140-143, 165, 261, 340
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(twoyear)
+      ::
+
+          str(twoyear)

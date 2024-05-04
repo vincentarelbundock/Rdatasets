@@ -1,35 +1,38 @@
 .. container::
 
-   ========= ===============
-   LakeHuron R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Level of Lake Huron 1875–1972
-      :name: LakeHuron
+      ========= ===============
+      LakeHuron R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Level of Lake Huron 1875–1972
+         :name: level-of-lake-huron-18751972
 
-   Annual measurements of the level, in feet, of Lake Huron 1875–1972.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Annual measurements of the level, in feet, of Lake Huron
+      1875–1972.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      LakeHuron
+      ::
 
-   .. rubric:: Format
-      :name: format
+         LakeHuron
 
-   A time series of length 98.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A time series of length 98.
 
-   Brockwell, P. J. and Davis, R. A. (1991). *Time Series and
-   Forecasting Methods*. Second edition. Springer, New York. Series A,
-   page 555.
+      .. rubric:: Source
+         :name: source
 
-   Brockwell, P. J. and Davis, R. A. (1996). *Introduction to Time
-   Series and Forecasting*. Springer, New York. Sections 5.1 and 7.6.
+      Brockwell, P. J. and Davis, R. A. (1991). *Time Series and
+      Forecasting Methods*. Second edition. Springer, New York. Series
+      A, page 555.
+
+      Brockwell, P. J. and Davis, R. A. (1996). *Introduction to Time
+      Series and Forecasting*. Springer, New York. Sections 5.1 and 7.6.

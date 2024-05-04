@@ -1,66 +1,70 @@
 .. container::
 
-   ====== ===============
-   campus R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: campus
-      :name: campus
+      ====== ===============
+      campus R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: campus
+         :name: campus
 
-   Wooldridge Source: These data were collected by Daniel Martin, a
-   former MSU undergraduate, for a final project. They come from the FBI
-   Uniform Crime Reports and are for the year 1992. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: These data were collected by Daniel Martin, a
+      former MSU undergraduate, for a final project. They come from the
+      FBI Uniform Crime Reports and are for the year 1992. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('campus')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('campus')
 
-   A data.frame with 97 observations on 7 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **enroll:** total enrollment
+      A data.frame with 97 observations on 7 variables:
 
-   -  **priv:** =1 if private college
+      -  **enroll:** total enrollment
 
-   -  **police:** employed officers
+      -  **priv:** =1 if private college
 
-   -  **crime:** total campus crimes
+      -  **police:** employed officers
 
-   -  **lcrime:** log(crime)
+      -  **crime:** total campus crimes
 
-   -  **lenroll:** log(enroll)
+      -  **lcrime:** log(crime)
 
-   -  **lpolice:** log(police)
+      -  **lenroll:** log(enroll)
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lpolice:** log(police)
 
-   Colleges and universities are now required to provide much better,
-   more detailed crime data. A very rich data set can now be obtained,
-   even a panel data set for colleges across different years. Statistics
-   on male/female ratios, fraction of men/women in fraternities or
-   sororities, policy variables – such as a “safe house” for women on
-   campus, as was started at MSU in 1994 – could be added as explanatory
-   variables. The crime rate in the host town would be a good control.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 131-132
+      Colleges and universities are now required to provide much better,
+      more detailed crime data. A very rich data set can now be
+      obtained, even a panel data set for colleges across different
+      years. Statistics on male/female ratios, fraction of men/women in
+      fraternities or sororities, policy variables – such as a “safe
+      house” for women on campus, as was started at MSU in 1994 – could
+      be added as explanatory variables. The crime rate in the host town
+      would be a good control.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 131-132
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(campus)
+      ::
+
+          str(campus)

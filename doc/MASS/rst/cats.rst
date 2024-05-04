@@ -1,48 +1,50 @@
 .. container::
 
-   ==== ===============
-   cats R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Anatomical Data from Domestic Cats
-      :name: cats
+      ==== ===============
+      cats R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Anatomical Data from Domestic Cats
+         :name: anatomical-data-from-domestic-cats
 
-   The heart and body weights of samples of male and female cats used
-   for *digitalis* experiments. The cats were all adult, over 2 kg body
-   weight.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The heart and body weights of samples of male and female cats used
+      for *digitalis* experiments. The cats were all adult, over 2 kg
+      body weight.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      cats
+      ::
 
-   .. rubric:: Format
-      :name: format
+         cats
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``Sex``
-      sex: Factor with levels ``"F"`` and ``"M"``.
+      This data frame contains the following columns:
 
-   ``Bwt``
-      body weight in kg.
+      ``Sex``
+         sex: Factor with levels ``"F"`` and ``"M"``.
 
-   ``Hwt``
-      heart weight in g.
+      ``Bwt``
+         body weight in kg.
 
-   .. rubric:: Source
-      :name: source
+      ``Hwt``
+         heart weight in g.
 
-   R. A. Fisher (1947) The analysis of covariance method for the
-   relation between a part and the whole, *Biometrics* **3**, 65–68.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      R. A. Fisher (1947) The analysis of covariance method for the
+      relation between a part and the whole, *Biometrics* **3**, 65–68.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

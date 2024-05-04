@@ -12,19 +12,17 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Weekly</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Weekly'>Weekly S&amp;P Stock Market Data
-
+<h2>Weekly S&amp;P Stock Market Data
 </h2>
 
 <h3>Description</h3>
 
 <p>Weekly percentage returns for the S&amp;P 500 stock index
 between 1990 and 2010. 
-
 </p>
 
 
@@ -68,7 +66,6 @@ return on a given week</p>
 
 <p>Raw values of the S&amp;P 500 were obtained from Yahoo Finance and
 then converted to percentages and lagged.
-
 </p>
 
 
@@ -87,6 +84,7 @@ Springer-Verlag, New York
 lm(Today~Lag1+Lag2,data=Weekly)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

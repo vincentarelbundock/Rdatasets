@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><title>R: Food Delivery Time Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>deliveries</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Food Delivery Time Data</h2>
+
+<h3>Description</h3>
+
+<p>Food Delivery Time Data
+</p>
+
+
+<h3>Details</h3>
+
+<p>These data are from a study of food delivery times (i.e., the time from the
+initial order to receiving the food) for a single resturant. The data
+contains 10,012 orders from a specific restaurant. The predictors include:
+</p>
+
+<ul>
+<li><p> The time, in decimal hours, of the order.
+</p>
+</li>
+<li><p> The day of the week for the order.
+</p>
+</li>
+<li><p> The approximate distance between the restaurant and the delivery
+location.
+</p>
+</li>
+<li><p> A set of 27 predictors that count the number of distinct menu items
+in the order.
+</p>
+</li></ul>
+
+<p>No times are censored.
+</p>
+
+
+<h3>Value</h3>
+
+<table>
+<tr><td><code>deliveries</code></td>
+<td>
+<p>a tibble</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(deliveries)
+str(deliveries)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

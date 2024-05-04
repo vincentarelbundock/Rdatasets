@@ -1,53 +1,56 @@
 .. container::
 
-   ======== ===============
-   Lottario R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Ontario Lottery Data
-      :name: Lottario
+      ======== ===============
+      Lottario R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Ontario Lottery Data
+         :name: ontario-lottery-data
 
-   The data frame ``Lottario`` is a summary of 122 weekly draws of an
-   Ontario lottery, beginning in November, 1978. Each draw consists of 7
-   numbered balls, drawn without replacement from an urn consisting of
-   balls numbered from 1 through 39.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The data frame ``Lottario`` is a summary of 122 weekly draws of an
+      Ontario lottery, beginning in November, 1978. Each draw consists
+      of 7 numbered balls, drawn without replacement from an urn
+      consisting of balls numbered from 1 through 39.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Lottario
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Lottario
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Number
-      the integers from 1 to 39, representing the numbered balls
+      This data frame contains the following columns:
 
-   Frequency
-      the number of occurrences of each numbered ball
+      Number
+         the integers from 1 to 39, representing the numbered balls
 
-   .. rubric:: Source
-      :name: source
+      Frequency
+         the number of occurrences of each numbered ball
 
-   The Ontario Lottery Corporation
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The Ontario Lottery Corporation
 
-   Bellhouse, D.R. (1982). Fair is fair: new rules for Canadian
-   lotteries. Canadian Public Policy - Analyse de Politiques 8: 311-320.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Bellhouse, D.R. (1982). Fair is fair: new rules for Canadian
+      lotteries. Canadian Public Policy - Analyse de Politiques 8:
+      311-320.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       
-      order(Lottario$Frequency)[33:39]  # the 7 most frequently chosen numbers
+      ::
+
+          
+         order(Lottario$Frequency)[33:39]  # the 7 most frequently chosen numbers

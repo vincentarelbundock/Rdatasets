@@ -1,124 +1,127 @@
 .. container::
 
-   ======= ===============
-   CPS1985 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Determinants of Wages Data (CPS 1985)
-      :name: CPS1985
+      ======= ===============
+      CPS1985 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Determinants of Wages Data (CPS 1985)
+         :name: determinants-of-wages-data-cps-1985
 
-   Cross-section data originating from the May 1985 Current Population
-   Survey by the US Census Bureau (random sample drawn for Berndt 1991).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-section data originating from the May 1985 Current
+      Population Survey by the US Census Bureau (random sample drawn for
+      Berndt 1991).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("CPS1985")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("CPS1985")
 
-   A data frame containing 534 observations on 11 variables.
+      .. rubric:: Format
+         :name: format
 
-   wage
-      Wage (in dollars per hour).
+      A data frame containing 534 observations on 11 variables.
 
-   education
-      Number of years of education.
+      wage
+         Wage (in dollars per hour).
 
-   experience
-      Number of years of potential work experience
-      (``age - education - 6``).
+      education
+         Number of years of education.
 
-   age
-      Age in years.
+      experience
+         Number of years of potential work experience
+         (``age - education - 6``).
 
-   ethnicity
-      Factor with levels ``"cauc"``, ``"hispanic"``, ``"other"``.
+      age
+         Age in years.
 
-   region
-      Factor. Does the individual live in the South?
+      ethnicity
+         Factor with levels ``"cauc"``, ``"hispanic"``, ``"other"``.
 
-   gender
-      Factor indicating gender.
+      region
+         Factor. Does the individual live in the South?
 
-   occupation
-      Factor with levels ``"worker"`` (tradesperson or assembly line
-      worker), ``"technical"`` (technical or professional worker),
-      ``"services"`` (service worker), ``"office"`` (office and clerical
-      worker), ``"sales"`` (sales worker), ``"management"`` (management
-      and administration).
+      gender
+         Factor indicating gender.
 
-   sector
-      Factor with levels ``"manufacturing"`` (manufacturing or mining),
-      ``"construction"``, ``"other"``.
+      occupation
+         Factor with levels ``"worker"`` (tradesperson or assembly line
+         worker), ``"technical"`` (technical or professional worker),
+         ``"services"`` (service worker), ``"office"`` (office and
+         clerical worker), ``"sales"`` (sales worker), ``"management"``
+         (management and administration).
 
-   union
-      Factor. Does the individual work on a union job?
+      sector
+         Factor with levels ``"manufacturing"`` (manufacturing or
+         mining), ``"construction"``, ``"other"``.
 
-   married
-      Factor. Is the individual married?
+      union
+         Factor. Does the individual work on a union job?
 
-   .. rubric:: Source
-      :name: source
+      married
+         Factor. Is the individual married?
 
-   StatLib.
+      .. rubric:: Source
+         :name: source
 
-   http://lib.stat.cmu.edu/datasets/CPS_85_Wages
+      StatLib.
 
-   .. rubric:: References
-      :name: references
+      http://lib.stat.cmu.edu/datasets/CPS_85_Wages
 
-   Berndt, E.R. (1991). *The Practice of Econometrics*. New York:
-   Addison-Wesley.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Berndt, E.R. (1991). *The Practice of Econometrics*. New York:
+      Addison-Wesley.
 
-   ``CPS1988``, ``CPSSW``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``CPS1988``, ``CPSSW``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("CPS1985")
+      ::
 
-      ## Berndt (1991)
-      ## Exercise 2, p. 196
-      cps_2b <- lm(log(wage) ~ union + education, data = CPS1985)
-      cps_2c <- lm(log(wage) ~ -1 + union + education, data = CPS1985)
+         data("CPS1985")
 
-      ## Exercise 3, p. 198/199
-      cps_3a <- lm(log(wage) ~ education + experience + I(experience^2),
-        data = CPS1985)
-      cps_3b <- lm(log(wage) ~ gender + education + experience + I(experience^2),
-        data = CPS1985)
-      cps_3c <- lm(log(wage) ~ gender + married + education + experience + I(experience^2),
-        data = CPS1985)
-      cps_3e <- lm(log(wage) ~ gender*married + education + experience + I(experience^2),
-        data = CPS1985)
+         ## Berndt (1991)
+         ## Exercise 2, p. 196
+         cps_2b <- lm(log(wage) ~ union + education, data = CPS1985)
+         cps_2c <- lm(log(wage) ~ -1 + union + education, data = CPS1985)
 
-      ## Exercise 4, p. 199/200
-      cps_4a <- lm(log(wage) ~ gender + union + ethnicity + education + experience + I(experience^2),
-        data = CPS1985)
-      cps_4c <- lm(log(wage) ~ gender + union + ethnicity + education * experience + I(experience^2),
-        data = CPS1985)
+         ## Exercise 3, p. 198/199
+         cps_3a <- lm(log(wage) ~ education + experience + I(experience^2),
+           data = CPS1985)
+         cps_3b <- lm(log(wage) ~ gender + education + experience + I(experience^2),
+           data = CPS1985)
+         cps_3c <- lm(log(wage) ~ gender + married + education + experience + I(experience^2),
+           data = CPS1985)
+         cps_3e <- lm(log(wage) ~ gender*married + education + experience + I(experience^2),
+           data = CPS1985)
 
-      ## Exercise 6, p. 203
-      cps_6a <- lm(log(wage) ~ gender + union + ethnicity + education + experience + I(experience^2),
-        data = CPS1985)
-      cps_6a_noeth <- lm(log(wage) ~ gender + union + education + experience + I(experience^2),
-        data = CPS1985)
-      anova(cps_6a_noeth, cps_6a)
+         ## Exercise 4, p. 199/200
+         cps_4a <- lm(log(wage) ~ gender + union + ethnicity + education + experience + I(experience^2),
+           data = CPS1985)
+         cps_4c <- lm(log(wage) ~ gender + union + ethnicity + education * experience + I(experience^2),
+           data = CPS1985)
 
-      ## Exercise 8, p. 208
-      cps_8a <- lm(log(wage) ~ gender + union + ethnicity + education + experience + I(experience^2),
-        data = CPS1985)
-      summary(cps_8a)
-      coeftest(cps_8a, vcov = vcovHC(cps_8a, type = "HC0"))
+         ## Exercise 6, p. 203
+         cps_6a <- lm(log(wage) ~ gender + union + ethnicity + education + experience + I(experience^2),
+           data = CPS1985)
+         cps_6a_noeth <- lm(log(wage) ~ gender + union + education + experience + I(experience^2),
+           data = CPS1985)
+         anova(cps_6a_noeth, cps_6a)
+
+         ## Exercise 8, p. 208
+         cps_8a <- lm(log(wage) ~ gender + union + ethnicity + education + experience + I(experience^2),
+           data = CPS1985)
+         summary(cps_8a)
+         coeftest(cps_8a, vcov = vcovHC(cps_8a, type = "HC0"))

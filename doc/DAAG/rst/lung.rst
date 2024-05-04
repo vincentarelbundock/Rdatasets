@@ -1,22 +1,24 @@
 .. container::
 
-   ==== ===============
-   lung R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Cape Fur Seal Lung Measurements
-      :name: lung
+      ==== ===============
+      lung R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cape Fur Seal Lung Measurements
+         :name: cape-fur-seal-lung-measurements
 
-   The ``lung`` vector consists of weight measurements of lungs taken
-   from 30 Cape Fur Seals that died as an unintended consequence of
-   commercial fishing.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``lung`` vector consists of weight measurements of lungs taken
+      from 30 Cape Fur Seals that died as an unintended consequence of
+      commercial fishing.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      lung
+      ::
+
+         lung

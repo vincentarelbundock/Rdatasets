@@ -1,32 +1,34 @@
 .. container::
 
-   ======= ===============
-   maxtemp R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Maximum annual temperatures at Moorabbin Airport,
-      Melbourne
-      :name: maxtemp
+      ======= ===============
+      maxtemp R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Maximum annual temperatures at Moorabbin Airport,
+         Melbourne
+         :name: maximum-annual-temperatures-at-moorabbin-airport-melbourne
 
-   Maximum annual temperatures (degrees Celsius) for Moorabbin Airport,
-   Melbourne. 1971-2016.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Maximum annual temperatures (degrees Celsius) for Moorabbin
+      Airport, Melbourne. 1971-2016.
 
-   Annual time series of class ``ts``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Annual time series of class ``ts``.
 
-   Australian Bureau of Meteorology.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Australian Bureau of Meteorology.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      autoplot(maxtemp)
+      ::
+
+         autoplot(maxtemp)

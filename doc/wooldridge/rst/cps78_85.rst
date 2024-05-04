@@ -1,80 +1,82 @@
 .. container::
 
-   ======== ===============
-   cps78_85 R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: cps78_85
-      :name: cps78_85
+      ======== ===============
+      cps78_85 R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: cps78_85
+         :name: cps78_85
 
-   Wooldridge Source: Professor Henry Farber, now at Princeton
-   University, compiled these data from the 1978 and 1985 Current
-   Population Surveys. Professor Farber kindly provided these data when
-   we were colleagues at MIT. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Professor Henry Farber, now at Princeton
+      University, compiled these data from the 1978 and 1985 Current
+      Population Surveys. Professor Farber kindly provided these data
+      when we were colleagues at MIT. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('cps78_85')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('cps78_85')
 
-   A data.frame with 1084 observations on 15 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **educ:** years of schooling
+      A data.frame with 1084 observations on 15 variables:
 
-   -  **south:** =1 if live in south
+      -  **educ:** years of schooling
 
-   -  **nonwhite:** =1 if nonwhite
+      -  **south:** =1 if live in south
 
-   -  **female:** =1 if female
+      -  **nonwhite:** =1 if nonwhite
 
-   -  **married:** =1 if married
+      -  **female:** =1 if female
 
-   -  **exper:** age - educ - 6
+      -  **married:** =1 if married
 
-   -  **expersq:** exper^2
+      -  **exper:** age - educ - 6
 
-   -  **union:** =1 if belong to union
+      -  **expersq:** exper^2
 
-   -  **lwage:** log hourly wage
+      -  **union:** =1 if belong to union
 
-   -  **age:** in years
+      -  **lwage:** log hourly wage
 
-   -  **year:** 78 or 85
+      -  **age:** in years
 
-   -  **y85:** =1 if year == 85
+      -  **year:** 78 or 85
 
-   -  **y85fem:** y85*female
+      -  **y85:** =1 if year == 85
 
-   -  **y85educ:** y85*educ
+      -  **y85fem:** y85*female
 
-   -  **y85union:** y85*union
+      -  **y85educ:** y85*educ
 
-   .. rubric:: Notes
-      :name: notes
+      -  **y85union:** y85*union
 
-   Obtaining more recent data from the CPS allows one to track, over a
-   long period of time, the changes in the return to education, the
-   gender gap, black-white wage differentials, and the union wage
-   premium.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 451, 476
+      Obtaining more recent data from the CPS allows one to track, over
+      a long period of time, the changes in the return to education, the
+      gender gap, black-white wage differentials, and the union wage
+      premium.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 451, 476
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(cps78_85)
+      ::
+
+          str(cps78_85)

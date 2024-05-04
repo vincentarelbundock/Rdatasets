@@ -1,38 +1,40 @@
 .. container::
 
-   ===== ===============
-   Cards R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Standard Deck of Cards
-      :name: Cards
+      ===== ===============
+      Cards R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Standard Deck of Cards
+         :name: standard-deck-of-cards
 
-   A character vector with two or three character representations of
-   each card in a standard 52-card deck.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A character vector with two or three character representations of
+      each card in a standard 52-card deck.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Cards
+      ::
 
-   .. rubric:: Details
-      :name: details
+         Cards
 
-   The 2 of clubs is represented as "2C", while the 10 of diamonds is
-   "10D".
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Examples
-      :name: examples
+      The 2 of clubs is represented as "2C", while the 10 of diamonds is
+      "10D".
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      if (require(mosaic)) {
-        deal(Cards, 13)        # bridge hand
-        deal(Cards, 5)         # poker hand
-        shuffle(Cards)         # shuffled deck
-      }
+      ::
+
+         if (require(mosaic)) {
+           deal(Cards, 13)        # bridge hand
+           deal(Cards, 5)         # poker hand
+           shuffle(Cards)         # shuffled deck
+         }

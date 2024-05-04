@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>BOD</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='BOD'> Biochemical Oxygen Demand </h2>
+<h2> Biochemical Oxygen Demand </h2>
 
 <h3>Description</h3>
 
@@ -70,17 +70,18 @@ fm1 &lt;- nls(demand ~ A*(1-exp(-exp(lrc)*Time)), data = BOD,
            start = c(A = 20, lrc = log(.35)))
 coef(fm1)
 fm1
+
 # using the plinear algorithm  (trace o/p differs by platform)
-## IGNORE_RDIFF_BEGIN
 fm2 &lt;- nls(demand ~ (1-exp(-exp(lrc)*Time)), data = BOD,
            start = c(lrc = log(.35)), algorithm = "plinear", trace = TRUE)
-## IGNORE_RDIFF_END
+
 # using a self-starting model
 fm3 &lt;- nls(demand ~ SSasympOrig(Time, A, lrc), data = BOD)
 summary(fm3)
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

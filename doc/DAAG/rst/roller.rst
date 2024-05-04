@@ -1,49 +1,51 @@
 .. container::
 
-   ====== ===============
-   roller R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Lawn Roller Data
-      :name: roller
+      ====== ===============
+      roller R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Lawn Roller Data
+         :name: lawn-roller-data
 
-   The ``roller`` data frame has 10 rows and 2 columns. Different
-   weights of roller were rolled over different parts of a lawn, and the
-   depression was recorded.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``roller`` data frame has 10 rows and 2 columns. Different
+      weights of roller were rolled over different parts of a lawn, and
+      the depression was recorded.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      roller
+      ::
 
-   .. rubric:: Format
-      :name: format
+         roller
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   weight
-      a numeric vector consisting of the roller weights
+      This data frame contains the following columns:
 
-   depression
-      the depth of the depression made in the grass under the roller
+      weight
+         a numeric vector consisting of the roller weights
 
-   .. rubric:: Source
-      :name: source
+      depression
+         the depth of the depression made in the grass under the roller
 
-   Stewart, K.M., Van Toor, R.F., Crosbie, S.F. 1988. Control of grass
-   grub (Coleoptera: Scarabaeidae) with rollers of different design.
-   N.Z. Journal of Experimental Agriculture 16: 141-150.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Stewart, K.M., Van Toor, R.F., Crosbie, S.F. 1988. Control of
+      grass grub (Coleoptera: Scarabaeidae) with rollers of different
+      design. N.Z. Journal of Experimental Agriculture 16: 141-150.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      plot(roller)
-      roller.lm <- lm(depression ~ weight, data = roller)
-      plot(roller.lm, which = 4)
+      ::
+
+         plot(roller)
+         roller.lm <- lm(depression ~ weight, data = roller)
+         plot(roller.lm, which = 4)

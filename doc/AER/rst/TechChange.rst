@@ -1,75 +1,77 @@
 .. container::
 
-   ========== ===============
-   TechChange R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Technological Change Data
-      :name: TechChange
+      ========== ===============
+      TechChange R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Technological Change Data
+         :name: technological-change-data
 
-   US time series data, 1909–1949.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      US time series data, 1909–1949.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("TechChange")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("TechChange")
 
-   An annual multiple time series from 1909 to 1949 with 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   output
-      Output.
+      An annual multiple time series from 1909 to 1949 with 3 variables.
 
-   clr
-      Capital/labor ratio.
+      output
+         Output.
 
-   technology
-      Index of technology.
+      clr
+         Capital/labor ratio.
 
-   .. rubric:: Source
-      :name: source
+      technology
+         Index of technology.
 
-   Online complements to Greene (2003), Table F7.2.
+      .. rubric:: Source
+         :name: source
 
-   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+      Online complements to Greene (2003), Table F7.2.
 
-   .. rubric:: References
-      :name: references
+      https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
-   Saddle River, NJ: Prentice Hall.
+      .. rubric:: References
+         :name: references
 
-   Solow, R. (1957). Technical Change and the Aggregate Production
-   Function. *Review of Economics and Statistics*, **39**, 312–320.
+      Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+      Saddle River, NJ: Prentice Hall.
 
-   .. rubric:: See Also
-      :name: see-also
+      Solow, R. (1957). Technical Change and the Aggregate Production
+      Function. *Review of Economics and Statistics*, **39**, 312–320.
 
-   ``Greene2003``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Greene2003``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("TechChange")
+      ::
 
-      ## Greene (2003)
-      ## Exercise 7.1
-      fm1 <- lm(I(output/technology) ~ log(clr), data = TechChange)
-      fm2 <- lm(I(output/technology) ~ I(1/clr), data = TechChange)
-      fm3 <- lm(log(output/technology) ~ log(clr), data = TechChange)
-      fm4 <- lm(log(output/technology) ~ I(1/clr), data = TechChange)
+         data("TechChange")
 
-      ## Exercise 7.2 (a) and (c)
-      plot(I(output/technology) ~ clr, data = TechChange)
+         ## Greene (2003)
+         ## Exercise 7.1
+         fm1 <- lm(I(output/technology) ~ log(clr), data = TechChange)
+         fm2 <- lm(I(output/technology) ~ I(1/clr), data = TechChange)
+         fm3 <- lm(log(output/technology) ~ log(clr), data = TechChange)
+         fm4 <- lm(log(output/technology) ~ I(1/clr), data = TechChange)
 
-      library("strucchange")
-      sctest(I(output/technology) ~ log(clr), data = TechChange, type = "Chow", point = c(1942, 1))
+         ## Exercise 7.2 (a) and (c)
+         plot(I(output/technology) ~ clr, data = TechChange)
+
+         library("strucchange")
+         sctest(I(output/technology) ~ log(clr), data = TechChange, type = "Chow", point = c(1942, 1))

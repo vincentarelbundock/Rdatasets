@@ -1,103 +1,105 @@
 .. container::
 
-   === ===============
-   std R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: data from Section 1.12
-      :name: std
+      === ===============
+      std R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Section 1.12
+         :name: data-from-section-1.12
 
-   The ``std`` data frame has 877 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``std`` data frame has 877 rows and 3 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   obs
-      Observation number
+      This data frame contains the following columns:
 
-   race
-      Race (W=white, B=black)
+      obs
+         Observation number
 
-   marital
-      Marital status (D=divorced / separated, M=married, S=single)
+      race
+         Race (W=white, B=black)
 
-   age
-      AGE
+      marital
+         Marital status (D=divorced / separated, M=married, S=single)
 
-   yschool
-      Years of schooling
+      age
+         AGE
 
-   iinfct
-      Initial infection (1= gonorrhea, 2=chlamydia, 3=both)
+      yschool
+         Years of schooling
 
-   npartner
-      Number of partners
+      iinfct
+         Initial infection (1= gonorrhea, 2=chlamydia, 3=both)
 
-   os12m
-      Oral sex within 12 months (1=yes, 0=no)
+      npartner
+         Number of partners
 
-   os30d
-      Oral sex within 30 days (1=yes, 0=no)
+      os12m
+         Oral sex within 12 months (1=yes, 0=no)
 
-   rs12m
-      Rectal sex within 12 months (1=yes, 0=no)
+      os30d
+         Oral sex within 30 days (1=yes, 0=no)
 
-   rs30d
-      Rectal sex within 30 days (1=yes, 0=no)
+      rs12m
+         Rectal sex within 12 months (1=yes, 0=no)
 
-   abdpain
-      Presence of abdominal pain (1=yes, 0=no)
+      rs30d
+         Rectal sex within 30 days (1=yes, 0=no)
 
-   discharge
-      Sign of discharge (1=yes, 0=no)
+      abdpain
+         Presence of abdominal pain (1=yes, 0=no)
 
-   dysuria
-      Sign of dysuria (1=yes, 0=no)
+      discharge
+         Sign of discharge (1=yes, 0=no)
 
-   condom
-      Condom use (1=always, 2=sometime, 3=never)
+      dysuria
+         Sign of dysuria (1=yes, 0=no)
 
-   itch
-      Sign of itch (1=yes, 0=no)
+      condom
+         Condom use (1=always, 2=sometime, 3=never)
 
-   lesion
-      Sign of lesion (1=yes, 0=no)
+      itch
+         Sign of itch (1=yes, 0=no)
 
-   rash
-      Sign of rash (1=yes, 0=no)
+      lesion
+         Sign of lesion (1=yes, 0=no)
 
-   lymph
-      Sign of lymph (1=yes, 0=no)
+      rash
+         Sign of rash (1=yes, 0=no)
 
-   vagina
-      Involvement vagina at exam (1=yes, 0=no)
+      lymph
+         Sign of lymph (1=yes, 0=no)
 
-   dchexam
-      Discharge at exam (1=yes, 0=no)
+      vagina
+         Involvement vagina at exam (1=yes, 0=no)
 
-   abnode
-      Abnormal node at exam (1=yes, 0=no)
+      dchexam
+         Discharge at exam (1=yes, 0=no)
 
-   rinfct
-      Reinfection (1=yes, 0=no)
+      abnode
+         Abnormal node at exam (1=yes, 0=no)
 
-   time
-      Time to reinfection
+      rinfct
+         Reinfection (1=yes, 0=no)
 
-   .. rubric:: Source
-      :name: source
+      time
+         Time to reinfection
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(std)
+      ::
+
+         data(std)

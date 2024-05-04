@@ -1,63 +1,66 @@
 .. container::
 
-   ========= ===============
-   Orthodont R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Growth curve data on an orthdontic measurement
-      :name: Orthodont
+      ========= ===============
+      Orthodont R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Growth curve data on an orthdontic measurement
+         :name: growth-curve-data-on-an-orthdontic-measurement
 
-   The ``Orthodont`` data frame has 108 rows and 4 columns of the change
-   in an orthdontic measurement over time for several young subjects.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``Orthodont`` data frame has 108 rows and 4 columns of the
+      change in an orthdontic measurement over time for several young
+      subjects.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   distance
-      a numeric vector of distances from the pituitary to the
-      pterygomaxillary fissure (mm). These distances are measured on
-      x-ray images of the skull.
+      This data frame contains the following columns:
 
-   age
-      a numeric vector of ages of the subject (yr).
+      distance
+         a numeric vector of distances from the pituitary to the
+         pterygomaxillary fissure (mm). These distances are measured on
+         x-ray images of the skull.
 
-   Subject
-      an ordered factor indicating the subject on which the measurement
-      was made. The levels are labelled ``M01`` to ``M16`` for the males
-      and ``F01`` to ``F13`` for the females. The ordering is by
-      increasing average distance within sex.
+      age
+         a numeric vector of ages of the subject (yr).
 
-   Sex
-      a factor with levels ``Male`` and ``Female``
+      Subject
+         an ordered factor indicating the subject on which the
+         measurement was made. The levels are labelled ``M01`` to
+         ``M16`` for the males and ``F01`` to ``F13`` for the females.
+         The ordering is by increasing average distance within sex.
 
-   .. rubric:: Details
-      :name: details
+      Sex
+         a factor with levels ``Male`` and ``Female``
 
-   Investigators at the University of North Carolina Dental School
-   followed the growth of 27 children (16 males, 11 females) from age 8
-   until age 14. Every two years they measured the distance between the
-   pituitary and the pterygomaxillary fissure, two points that are
-   easily identified on x-ray exposures of the side of the head.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Investigators at the University of North Carolina Dental School
+      followed the growth of 27 children (16 males, 11 females) from age
+      8 until age 14. Every two years they measured the distance between
+      the pituitary and the pterygomaxillary fissure, two points that
+      are easily identified on x-ray exposures of the side of the head.
 
-   Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S
-   and S-PLUS*, Springer, New York. (Appendix A.17)
+      .. rubric:: Source
+         :name: source
 
-   Potthoff, R. F. and Roy, S. N. (1964), “A generalized multivariate
-   analysis of variance model useful especially for growth curve
-   problems”, *Biometrika*, **51**, 313–326.
+      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
+      S and S-PLUS*, Springer, New York. (Appendix A.17)
 
-   .. rubric:: Examples
-      :name: examples
+      Potthoff, R. F. and Roy, S. N. (1964), “A generalized multivariate
+      analysis of variance model useful especially for growth curve
+      problems”, *Biometrika*, **51**, 313–326.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      formula(Orthodont)
-      plot(Orthodont)
+      ::
+
+         formula(Orthodont)
+         plot(Orthodont)

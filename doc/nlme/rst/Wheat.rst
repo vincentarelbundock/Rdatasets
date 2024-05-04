@@ -1,37 +1,40 @@
 .. container::
 
-   ===== ===============
-   Wheat R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Yields by growing conditions
-      :name: Wheat
+      ===== ===============
+      Wheat R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Yields by growing conditions
+         :name: yields-by-growing-conditions
 
-   The ``Wheat`` data frame has 48 rows and 4 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``Wheat`` data frame has 48 rows and 4 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Tray
-      an ordered factor with levels ``3`` < ``1`` < ``2`` < ``4`` <
-      ``5`` < ``6`` < ``8`` < ``9`` < ``7`` < ``12`` < ``11`` < ``10``
+      This data frame contains the following columns:
 
-   Moisture
-      a numeric vector
+      Tray
+         an ordered factor with levels ``3`` < ``1`` < ``2`` < ``4`` <
+         ``5`` < ``6`` < ``8`` < ``9`` < ``7`` < ``12`` < ``11`` <
+         ``10``
 
-   fertilizer
-      a numeric vector
+      Moisture
+         a numeric vector
 
-   DryMatter
-      a numeric vector
+      fertilizer
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      DryMatter
+         a numeric vector
 
-   Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S
-   and S-PLUS*, Springer, New York.
+      .. rubric:: Source
+         :name: source
+
+      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
+      S and S-PLUS*, Springer, New York.

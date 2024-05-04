@@ -1,101 +1,103 @@
 .. container::
 
-   ======== ===============
-   prminwge R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: prminwge
-      :name: prminwge
+      ======== ===============
+      prminwge R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: prminwge
+         :name: prminwge
 
-   Wooldridge Source: A.J. Castillo-Freeman and R.B. Freeman (1992),
-   “When the Minimum Wage Really Bites: The Effect of the U.S.-Level
-   Minimum Wage on Puerto Rico,” in Immigration and the Work Force,
-   edited by G.J. Borjas and R.B. Freeman, 177-211. Chicago: University
-   of Chicago Press. The data are reported in the article. Data loads
-   lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: A.J. Castillo-Freeman and R.B. Freeman (1992),
+      “When the Minimum Wage Really Bites: The Effect of the U.S.-Level
+      Minimum Wage on Puerto Rico,” in Immigration and the Work Force,
+      edited by G.J. Borjas and R.B. Freeman, 177-211. Chicago:
+      University of Chicago Press. The data are reported in the article.
+      Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('prminwge')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('prminwge')
 
-   A data.frame with 38 observations on 25 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1950-1987
+      A data.frame with 38 observations on 25 variables:
 
-   -  **avgmin:** weighted avg min wge, 44 indust
+      -  **year:** 1950-1987
 
-   -  **avgwage:** wghted avg hrly wge, 44 indust
+      -  **avgmin:** weighted avg min wge, 44 indust
 
-   -  **kaitz:** Kaitz min wage index
+      -  **avgwage:** wghted avg hrly wge, 44 indust
 
-   -  **avgcov:** wghted avg coverage, 8 indust
+      -  **kaitz:** Kaitz min wage index
 
-   -  **covt:** economy-wide coverage of min wg
+      -  **avgcov:** wghted avg coverage, 8 indust
 
-   -  **mfgwage:** avg manuf. wage
+      -  **covt:** economy-wide coverage of min wg
 
-   -  **prdef:** Puerto Rican price deflator
+      -  **mfgwage:** avg manuf. wage
 
-   -  **prepop:** PR employ/popul ratio
+      -  **prdef:** Puerto Rican price deflator
 
-   -  **prepopf:** PR employ/popul ratio, alter.
+      -  **prepop:** PR employ/popul ratio
 
-   -  **prgnp:** PR GNP
+      -  **prepopf:** PR employ/popul ratio, alter.
 
-   -  **prunemp:** PR unemployment rate
+      -  **prgnp:** PR GNP
 
-   -  **usgnp:** US GNP
+      -  **prunemp:** PR unemployment rate
 
-   -  **t:** time trend: 1 to 38
+      -  **usgnp:** US GNP
 
-   -  **post74:** time trend: starts in 1974
+      -  **t:** time trend: 1 to 38
 
-   -  **lprunemp:** log(prunemp)
+      -  **post74:** time trend: starts in 1974
 
-   -  **lprgnp:** log(prgnp)
+      -  **lprunemp:** log(prunemp)
 
-   -  **lusgnp:** log(usgnp)
+      -  **lprgnp:** log(prgnp)
 
-   -  **lkaitz:** log(kaitz)
+      -  **lusgnp:** log(usgnp)
 
-   -  **lprun_1:** lprunemp[\_n-1]
+      -  **lkaitz:** log(kaitz)
 
-   -  **lprepop:** log(prepop)
+      -  **lprun_1:** lprunemp[_n-1]
 
-   -  **lprep_1:** lprepop[\_n-1]
+      -  **lprepop:** log(prepop)
 
-   -  **mincov:** (avgmin/avgwage)*avgcov
+      -  **lprep_1:** lprepop[_n-1]
 
-   -  **lmincov:** log(mincov)
+      -  **mincov:** (avgmin/avgwage)*avgcov
 
-   -  **lavgmin:** log(avgmin)
+      -  **lmincov:** log(mincov)
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lavgmin:** log(avgmin)
 
-   Given the ongoing debate on the employment effects of the minimum
-   wage, this would be a great data set to try to update. The coverage
-   rates are the most difficult variables to construct.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 356-357, 369-370, 420-421, 434
+      Given the ongoing debate on the employment effects of the minimum
+      wage, this would be a great data set to try to update. The
+      coverage rates are the most difficult variables to construct.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 356-357, 369-370, 420-421, 434
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(prminwge)
+      ::
+
+          str(prminwge)

@@ -1,36 +1,38 @@
 .. container::
 
-   ===== ===============
-   Volts R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Voltage Drop for a Discharging Capacitor
-      :name: Volts
+      ===== ===============
+      Volts R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Voltage Drop for a Discharging Capacitor
+         :name: voltage-drop-for-a-discharging-capacitor
 
-   Voltage drop over time as a capacitor discharges
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Voltage drop over time as a capacitor discharges
 
-   A dataset with 50 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   =========== ================================
-   ``Voltage`` Voltage (in volts)
-   ``Time``    Time after charging (in seconds)
-   \           
-   =========== ================================
+      A dataset with 50 observations on the following 2 variables.
 
-   .. rubric:: Details
-      :name: details
+      =========== ================================
+      ``Voltage`` Voltage (in volts)
+      ``Time``    Time after charging (in seconds)
+      \           
+      =========== ================================
 
-   A capacitor was charged with a nine-volt battery and then a voltmeter
-   recorded the voltage as the capacitor was discharged. Measurements
-   were taken every 0.02 seconds.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      A capacitor was charged with a nine-volt battery and then a
+      voltmeter recorded the voltage as the capacitor was discharged.
+      Measurements were taken every 0.02 seconds.
 
-   Measurements recorded by one of the authors.
+      .. rubric:: Source
+         :name: source
+
+      Measurements recorded by one of the authors.

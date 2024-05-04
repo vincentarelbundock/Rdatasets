@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Weather</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Weather'>Weather</h2>
+<h2>Weather</h2>
 
 <h3>Description</h3>
 
@@ -75,8 +75,8 @@ function processMathHTML() {
 <h3>Examples</h3>
 
 <pre><code class='language-R'>if (require(dplyr)) {
-  Weather %&gt;%
-    group_by(city, year) %&gt;%
+  Weather |&gt;
+    group_by(city, year) |&gt;
     summarise(
       min_temp = min(low_temp),
       max_temp = max(high_temp)
@@ -84,14 +84,15 @@ function processMathHTML() {
 }
 
 if (require(ggformula)) {
-  Weather %&gt;%
+  Weather |&gt;
     gf_linerange(low_temp + high_temp ~ date | city ~ ., 
-    color = ~ (high_temp + low_temp) / 2, show.legend = FALSE) %&gt;%
+    color = ~ (high_temp + low_temp) / 2, show.legend = FALSE) |&gt;
     gf_refine(scale_color_gradientn(colors = rev(rainbow(5))))
 }
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

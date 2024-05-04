@@ -1,50 +1,52 @@
 .. container::
 
-   ============= ===============
-   MetabolicRate R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Metabolic Rate of Caterpillars
-      :name: MetabolicRate
+      ============= ===============
+      MetabolicRate R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Metabolic Rate of Caterpillars
+         :name: metabolic-rate-of-caterpillars
 
-   Body size and metabolic rate of Manduca Sexta caterpillars
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Body size and metabolic rate of Manduca Sexta caterpillars
 
-   A dataset with 305 observations on the following 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   +-----------------+---------------------------------------------------+
-   | ``Computer``    | ID number of the computer used to measure         |
-   |                 | metabolic rate                                    |
-   +-----------------+---------------------------------------------------+
-   | ``BodySize``    | Size of the caterpillar (in grams)                |
-   +-----------------+---------------------------------------------------+
-   | ``LogBodySize`` | Log (base 10) of BodySize                         |
-   +-----------------+---------------------------------------------------+
-   | ``Instar``      | Number from 1 (smallest) to 5 (largest)           |
-   |                 | indicating stage of the caterpillar's life        |
-   +-----------------+---------------------------------------------------+
-   | ``CO2ppm``      | Carbon dioxide concentration (in ppm)             |
-   +-----------------+---------------------------------------------------+
-   | ``Mrate``       | Metabolic rate                                    |
-   +-----------------+---------------------------------------------------+
-   | ``LogMrate``    | Log (base 10) of metabolic rate                   |
-   +-----------------+---------------------------------------------------+
-   |                 |                                                   |
-   +-----------------+---------------------------------------------------+
+      A dataset with 305 observations on the following 7 variables.
 
-   .. rubric:: Details
-      :name: details
+      +-----------------+---------------------------------------------------+
+      | ``Computer``    | ID number of the computer used to measure         |
+      |                 | metabolic rate                                    |
+      +-----------------+---------------------------------------------------+
+      | ``BodySize``    | Size of the caterpillar (in grams)                |
+      +-----------------+---------------------------------------------------+
+      | ``LogBodySize`` | Log (base 10) of BodySize                         |
+      +-----------------+---------------------------------------------------+
+      | ``Instar``      | Number from 1 (smallest) to 5 (largest)           |
+      |                 | indicating stage of the caterpillar's life        |
+      +-----------------+---------------------------------------------------+
+      | ``CO2ppm``      | Carbon dioxide concentration (in ppm)             |
+      +-----------------+---------------------------------------------------+
+      | ``Mrate``       | Metabolic rate                                    |
+      +-----------------+---------------------------------------------------+
+      | ``LogMrate``    | Log (base 10) of metabolic rate                   |
+      +-----------------+---------------------------------------------------+
+      |                 |                                                   |
+      +-----------------+---------------------------------------------------+
 
-   Marisa Stearns collected and analyzed body size and metabolic rates
-   for Manduca Sexta caterpillars.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Marisa Stearns collected and analyzed body size and metabolic
+      rates for Manduca Sexta caterpillars.
 
-   We thank Professor Itagaki and his research students for sharing
-   these data.
+      .. rubric:: Source
+         :name: source
+
+      We thank Professor Itagaki and his research students for sharing
+      these data.

@@ -1,109 +1,111 @@
 .. container::
 
-   ======== ===============
-   carprice R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: US Car Price Data
-      :name: carprice
+      ======== ===============
+      carprice R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: US Car Price Data
+         :name: us-car-price-data
 
-   U.S. data extracted from ``Cars93``, a data frame in the MASS
-   package.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      U.S. data extracted from ``Cars93``, a data frame in the MASS
+      package.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      carprice
+      ::
 
-   .. rubric:: Format
-      :name: format
+         carprice
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Type
-      Type of car, e.g. Sporty, Van, Compact
+      This data frame contains the following columns:
 
-   Min.Price
-      Price for a basic model
+      Type
+         Type of car, e.g. Sporty, Van, Compact
 
-   Price
-      Price for a mid-range model
+      Min.Price
+         Price for a basic model
 
-   Max.Price
-      Price for a ‘premium’ model
+      Price
+         Price for a mid-range model
 
-   Range.Price
-      Difference between Max.Price and Min.Price
+      Max.Price
+         Price for a ‘premium’ model
 
-   RoughRange
-      Rough.Range plus some N(0,.0001) noise
+      Range.Price
+         Difference between Max.Price and Min.Price
 
-   gpm100
-      The number of gallons required to travel 100 miles
+      RoughRange
+         Rough.Range plus some N(0,.0001) noise
 
-   MPG.city
-      Average number of miles per gallon for city driving
+      gpm100
+         The number of gallons required to travel 100 miles
 
-   MPG.highway
-      Average number of miles per gallon for highway driving
+      MPG.city
+         Average number of miles per gallon for city driving
 
-   .. rubric:: Source
-      :name: source
+      MPG.highway
+         Average number of miles per gallon for highway driving
 
-   MASS package
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      MASS package
 
-   Venables, W.N.\\ and Ripley, B.D., 4th edn 2002. Modern Applied
-   Statistics with S. Springer, New York.
+      .. rubric:: References
+         :name: references
 
-   See also ‘R’ Complements to Modern Applied Statistics with S-Plus,
-   available from http://www.stats.ox.ac.uk/pub/MASS3/
+      Venables, W.N.\\ and Ripley, B.D., 4th edn 2002. Modern Applied
+      Statistics with S. Springer, New York.
 
-   .. rubric:: Examples
-      :name: examples
+      See also ‘R’ Complements to Modern Applied Statistics with S-Plus,
+      available from http://www.stats.ox.ac.uk/pub/MASS3/
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       
-      print("Multicollinearity - Example 6.8")
-      pairs(carprice[,-c(1,8,9)])
+      ::
 
-      carprice1.lm <- lm(gpm100 ~ Type+Min.Price+Price+Max.Price+Range.Price,
-          data=carprice)
-      round(summary(carprice1.lm)$coef,3)
-      pause()
+          
+         print("Multicollinearity - Example 6.8")
+         pairs(carprice[,-c(1,8,9)])
 
-      alias(carprice1.lm)
-      pause()
+         carprice1.lm <- lm(gpm100 ~ Type+Min.Price+Price+Max.Price+Range.Price,
+             data=carprice)
+         round(summary(carprice1.lm)$coef,3)
+         pause()
 
-      carprice2.lm <- lm(gpm100 ~ Type+Min.Price+Price+Max.Price+RoughRange, data=carprice)
-      round(summary(carprice2.lm)$coef, 2)
-      pause()
+         alias(carprice1.lm)
+         pause()
 
-      carprice.lm <- lm(gpm100 ~ Type + Price, data = carprice)
-      round(summary(carprice.lm)$coef,4)  
-      pause()
+         carprice2.lm <- lm(gpm100 ~ Type+Min.Price+Price+Max.Price+RoughRange, data=carprice)
+         round(summary(carprice2.lm)$coef, 2)
+         pause()
 
-      summary(carprice1.lm)$sigma   # residual standard error when fitting all 3 price variables
-      pause()
+         carprice.lm <- lm(gpm100 ~ Type + Price, data = carprice)
+         round(summary(carprice.lm)$coef,4)  
+         pause()
 
-      summary(carprice.lm)$sigma    # residual standard error when only price is used
-      pause()
+         summary(carprice1.lm)$sigma   # residual standard error when fitting all 3 price variables
+         pause()
 
-      vif(lm(gpm100 ~ Price, data=carprice)) # Baseline Price
-      pause()
+         summary(carprice.lm)$sigma    # residual standard error when only price is used
+         pause()
 
-      vif(carprice1.lm)    # includes Min.Price, Price & Max.Price
-      pause()
+         vif(lm(gpm100 ~ Price, data=carprice)) # Baseline Price
+         pause()
 
-      vif(carprice2.lm)    # includes Min.Price, Price, Max.Price & RoughRange
-      pause()
+         vif(carprice1.lm)    # includes Min.Price, Price & Max.Price
+         pause()
 
-      vif(carprice.lm)     # Price alone
+         vif(carprice2.lm)    # includes Min.Price, Price, Max.Price & RoughRange
+         pause()
+
+         vif(carprice.lm)     # Price alone

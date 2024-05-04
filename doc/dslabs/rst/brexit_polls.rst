@@ -1,59 +1,61 @@
 .. container::
 
-   ============ ===============
-   brexit_polls R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Brexit Poll Data
-      :name: brexit_polls
+      ============ ===============
+      brexit_polls R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Brexit Poll Data
+         :name: brexit-poll-data
 
-   Brexit (EU referendum) poll outcomes for 127 polls from January 2016
-   to the referendum date on June 23, 2016.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Brexit (EU referendum) poll outcomes for 127 polls from January
+      2016 to the referendum date on June 23, 2016.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      brexit_polls
+      ::
 
-   .. rubric:: Format
-      :name: format
+         brexit_polls
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  startdate. Start date of poll.
+      .. rubric:: Details
+         :name: details
 
-   -  enddate. End date of poll.
+      -  startdate. Start date of poll.
 
-   -  pollster. Pollster conducting the poll.
+      -  enddate. End date of poll.
 
-   -  poll_type. Online or telephone poll.
+      -  pollster. Pollster conducting the poll.
 
-   -  samplesize. Sample size of poll.
+      -  poll_type. Online or telephone poll.
 
-   -  remain. Proportion voting Remain.
+      -  samplesize. Sample size of poll.
 
-   -  leave. Proportion voting Leave.
+      -  remain. Proportion voting Remain.
 
-   -  undecided. Proportion of undecided voters.
+      -  leave. Proportion voting Leave.
 
-   -  spread. Spread calculated as remain - leave.
+      -  undecided. Proportion of undecided voters.
 
-   .. rubric:: Source
-      :name: source
+      -  spread. Spread calculated as remain - leave.
 
-   `Wikipedia <https://en.wikipedia.org/w/index.php?title=Opinion_polling_for_the_United_Kingdom_European_Union_membership_referendum&oldid=896735054/>`__
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      `Wikipedia <https://en.wikipedia.org/w/index.php?title=Opinion_polling_for_the_United_Kingdom_European_Union_membership_referendum&oldid=896735054/>`__
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      head(brexit_polls)
+      ::
+
+         head(brexit_polls)

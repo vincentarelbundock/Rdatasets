@@ -1,57 +1,60 @@
 .. container::
 
-   ====== ===============
-   cement R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Heat Evolved by Setting Cements
-      :name: cement
+      ====== ===============
+      cement R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Heat Evolved by Setting Cements
+         :name: heat-evolved-by-setting-cements
 
-   Experiment on the heat evolved in the setting of each of 13 cements.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Experiment on the heat evolved in the setting of each of 13
+      cements.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      cement
+      ::
 
-   .. rubric:: Format
-      :name: format
+         cement
 
-   ``x1, x2, x3, x4``
-      Proportions (%) of active ingredients.
+      .. rubric:: Format
+         :name: format
 
-   ``y``
-      heat evolved in cals/gm.
+      ``x1, x2, x3, x4``
+         Proportions (%) of active ingredients.
 
-   .. rubric:: Details
-      :name: details
+      ``y``
+         heat evolved in cals/gm.
 
-   Thirteen samples of Portland cement were set. For each sample, the
-   percentages of the four main chemical ingredients was accurately
-   measured. While the cement was setting the amount of heat evolved was
-   also measured.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Thirteen samples of Portland cement were set. For each sample, the
+      percentages of the four main chemical ingredients was accurately
+      measured. While the cement was setting the amount of heat evolved
+      was also measured.
 
-   Woods, H., Steinour, H.H. and Starke, H.R. (1932) Effect of
-   composition of Portland cement on heat evolved during hardening.
-   *Industrial Engineering and Chemistry*, **24**, 1207–1214.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Woods, H., Steinour, H.H. and Starke, H.R. (1932) Effect of
+      composition of Portland cement on heat evolved during hardening.
+      *Industrial Engineering and Chemistry*, **24**, 1207–1214.
 
-   Hald, A. (1957) *Statistical Theory with Engineering Applications.*
-   Wiley, New York.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Hald, A. (1957) *Statistical Theory with Engineering
+      Applications.* Wiley, New York.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      lm(y ~ x1 + x2 + x3 + x4, cement)
+      ::
+
+         lm(y ~ x1 + x2 + x3 + x4, cement)

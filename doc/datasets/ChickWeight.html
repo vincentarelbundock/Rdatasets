@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>ChickWeight</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='ChickWeight'>Weight versus age of chicks on different diets</h2>
+<h2>Weight versus age of chicks on different diets</h2>
 
 <h3>Description</h3>
 
@@ -98,12 +98,12 @@ S and S-PLUS</em>, Springer.
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>
-require(graphics)
+<pre><code class='language-R'>require(graphics)
 coplot(weight ~ Time | Chick, data = ChickWeight,
        type = "b", show.given = FALSE)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

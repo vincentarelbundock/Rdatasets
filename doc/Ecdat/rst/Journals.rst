@@ -1,77 +1,79 @@
 .. container::
 
-   ======== ===============
-   Journals R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Economic Journals Data Set
-      :name: Journals
+      ======== ===============
+      Journals R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Economic Journals Data Set
+         :name: economic-journals-data-set
 
-   a cross-section from 2000
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 180
+      a cross-section from 2000
 
-   *observation* : goods
+      *number of observations* : 180
 
-   .. rubric:: Usage
-      :name: usage
+      *observation* : goods
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Journals)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Journals)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   title
-      journal title
+      A dataframe containing :
 
-   pub
-      publisher
+      title
+         journal title
 
-   society
-      scholarly society ?
+      pub
+         publisher
 
-   libprice
-      library subscription price
+      society
+         scholarly society ?
 
-   pages
-      number of pages
+      libprice
+         library subscription price
 
-   charpp
-      characters per page
+      pages
+         number of pages
 
-   citestot
-      total number of citations
+      charpp
+         characters per page
 
-   date1
-      year journal was founded
+      citestot
+         total number of citations
 
-   oclc
-      number of library subscriptions
+      date1
+         year journal was founded
 
-   field
-      field description
+      oclc
+         number of library subscriptions
 
-   .. rubric:: Source
-      :name: source
+      field
+         field description
 
-   Professor Theodore Bergstrom of the Department of Economics at the
-   University of California, San Diego.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Professor Theodore Bergstrom of the Department of Economics at the
+      University of California, San Diego.
 
-   Stock, James H. and Mark W. Watson (2003) *Introduction to
-   Econometrics*, Addison-Wesley Educational Publishers, chapter 6.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, James H. and Mark W. Watson (2003) *Introduction to
+      Econometrics*, Addison-Wesley Educational Publishers, chapter 6.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

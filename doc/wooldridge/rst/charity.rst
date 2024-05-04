@@ -1,63 +1,66 @@
 .. container::
 
-   ======= ===============
-   charity R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: charity
-      :name: charity
+      ======= ===============
+      charity R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: charity
+         :name: charity
 
-   Wooldridge Source: P.H. Franses and R. Paap (2001), Quantitative
-   Models in Marketing Research. Cambridge: Cambridge University Press.
-   Professor Franses kindly provided the data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: P.H. Franses and R. Paap (2001), Quantitative
+      Models in Marketing Research. Cambridge: Cambridge University
+      Press. Professor Franses kindly provided the data. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('charity')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('charity')
 
-   A data.frame with 4268 observations on 8 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **respond:** =1 if responded with gift
+      A data.frame with 4268 observations on 8 variables:
 
-   -  **gift:** amount of gift, Dutch guilders
+      -  **respond:** =1 if responded with gift
 
-   -  **resplast:** =1 if responded to most recent mailing
+      -  **gift:** amount of gift, Dutch guilders
 
-   -  **weekslast:** number of weeks since last response
+      -  **resplast:** =1 if responded to most recent mailing
 
-   -  **propresp:** response rate to mailings
+      -  **weekslast:** number of weeks since last response
 
-   -  **mailsyear:** number of mailings per year
+      -  **propresp:** response rate to mailings
 
-   -  **giftlast:** amount of most recent gift
+      -  **mailsyear:** number of mailings per year
 
-   -  **avggift:** average of past gifts
+      -  **giftlast:** amount of most recent gift
 
-   .. rubric:: Notes
-      :name: notes
+      -  **avggift:** average of past gifts
 
-   This data set can be used to illustrate probit and Tobit models, and
-   to study the linear approximations to them.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 65, 112-113, 266-267, 628
+      This data set can be used to illustrate probit and Tobit models,
+      and to study the linear approximations to them.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 65, 112-113, 266-267, 628
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(charity)
+      ::
+
+          str(charity)

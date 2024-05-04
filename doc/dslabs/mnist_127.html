@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: Useful example for illustrating generative models based on...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mnist_127</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Useful example for illustrating generative models based on MNIST data</h2>
+
+<h3>Description</h3>
+
+<p>We only include a randomly selected set of 1s, 2s and 7s along with the two predictors based on the 
+proportion of dark pixels in the upper left and lower right quadrants respectively. The dataset is divided into 
+training and test sets.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>mnist_127
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>list</code>.
+</p>
+
+
+<h3>Details</h3>
+
+
+<ul>
+<li><p> train. A data frame containing  training data: labels and predictors.
+</p>
+</li>
+<li><p> test. A data frame containing  test data: labels and predictors.
+</p>
+</li>
+<li><p> index_train. The index of the original mnist training data used for the training set.
+</p>
+</li>
+<li><p> index_test. The index of the original mnist test data used for the test set.
+</p>
+</li></ul>
+
+
+
+<h3>References</h3>
+
+<p>Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner. &quot;Gradient-based learning applied to document recognition.&quot; Proceedings of the IEEE, 86(11):2278-2324, November 1998.
+</p>
+
+
+<h3>See Also</h3>
+
+<p>[read_mnist(), mnist_27]
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>with(mnist_127$train, plot(x_1, x_2, col = as.numeric(y)))
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

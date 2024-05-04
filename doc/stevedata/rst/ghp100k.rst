@@ -1,69 +1,73 @@
 .. container::
 
-   ======= ===============
-   ghp100k R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Gun Homicide Rate per 100,000 People, by Country
-      :name: ghp100k
+      ======= ===============
+      ghp100k R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Gun Homicide Rate per 100,000 People, by Country
+         :name: gun-homicide-rate-per-100000-people-by-country
 
-   This is the yearly rate of gun homicides per 100,000 people in the
-   population, selecting on "Western" countries of interest.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This is the yearly rate of gun homicides per 100,000 people in the
+      population, selecting on "Western" countries of interest.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      ghp100k
+      ::
 
-   .. rubric:: Format
-      :name: format
+         ghp100k
 
-   A data frame with 561 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``country``
-      the country
+      A data frame with 561 observations on the following 3 variables.
 
-   ``year``
-      the year
+      ``country``
+         the country
 
-   ``value``
-      a numeric vector for the estimated rate of gun homicide per
-      100,000 people
+      ``year``
+         the year
 
-   .. rubric:: Details
-      :name: details
+      ``value``
+         a numeric vector for the estimated rate of gun homicide per
+         100,000 people
 
-   The reported, or calculated annual crude rate of completed,
-   intentional homicide committed with a firearm, per 100,000
-   population, in years descending.
+      .. rubric:: Details
+         :name: details
 
-   Where a jurisdiction's published count of 'annual homicide' includes
-   cases of attempted (uncompleted) homicide, these figures have been
-   disaggregated wherever possible.
+      The reported, or calculated annual crude rate of completed,
+      intentional homicide committed with a firearm, per 100,000
+      population, in years descending.
 
-   In the United States, this category is confused by inaccurate and
-   conflicting data published, suppressed or labeled as unreliable by
-   the Centers for Disease Control and Prevention (CDC) and the Federal
-   Bureau of Investigation (FBI). Suppression can result in zero values
-   where in fact homicides did occur.
+      Where a jurisdiction's published count of 'annual homicide'
+      includes cases of attempted (uncompleted) homicide, these figures
+      have been disaggregated wherever possible.
 
-   Incomplete classification by local agencies can also result in a
-   significant proportion of events being categorized as 'unknown cause'
-   or similar.
+      In the United States, this category is confused by inaccurate and
+      conflicting data published, suppressed or labeled as unreliable by
+      the Centers for Disease Control and Prevention (CDC) and the
+      Federal Bureau of Investigation (FBI). Suppression can result in
+      zero values where in fact homicides did occur.
 
-   Before quoting these datasets, please follow the citation links for a
-   description of the considerable differences between them and the
-   reasons for data suppression.
+      Incomplete classification by local agencies can also result in a
+      significant proportion of events being categorized as 'unknown
+      cause' or similar.
 
-   Where a rate is calculated by ``GunPolicy.org``, a matched population
-   estimate is also cited.
+      Before quoting these datasets, please follow the citation links
+      for a description of the considerable differences between them and
+      the reasons for data suppression.
 
-   .. rubric:: Source
-      :name: source
+      Where a rate is calculated by ``GunPolicy.org``, a matched
+      population estimate is also cited.
 
-   https://www.gunpolicy.org
+      The aforementioned details come, copied and pasted, from
+      ``GunPolicy.org``. As of my most recent check of these data (April
+      2024), this agency appeared to close due to lack of funding. This
+      is unfortunate, but it is worth noting for matters of
+      reproducibility and the use of these data in applied research
+      questions.

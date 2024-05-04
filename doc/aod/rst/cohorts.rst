@@ -1,46 +1,49 @@
 .. container::
 
-   ======= ===============
-   cohorts R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Age, Period and Cohort Effects for Vital Rates
-      :name: cohorts
+      ======= ===============
+      cohorts R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Age, Period and Cohort Effects for Vital Rates
+         :name: age-period-and-cohort-effects-for-vital-rates
 
-   Number of prostate cancer deaths and midperiod population for
-   nonwhites in the USA by age and period. The cohort index ``k`` is
-   related to age and period indices (``i`` and ``j``, respectively) by
-   ``k = j + I - i``, where ``I = max(i)`` (Holford, 1983, Table 2).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Number of prostate cancer deaths and midperiod population for
+      nonwhites in the USA by age and period. The cohort index ``k`` is
+      related to age and period indices (``i`` and ``j``, respectively)
+      by ``k = j + I - i``, where ``I = max(i)`` (Holford, 1983, Table
+      2).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(cohorts)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(cohorts)
 
-   A data frame with 49 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   period
-      A factor with levels ``1935-``, ``1940-``, ..., ``1965-``.
+      A data frame with 49 observations on the following 4 variables.
 
-   age
-      A factor with levels ``50-``, ``55-``, ..., ``80-``.
+      period
+         A factor with levels ``1935-``, ``1940-``, ..., ``1965-``.
 
-   y
-      Numeric: the number of prostate cancer deaths.
+      age
+         A factor with levels ``50-``, ``55-``, ..., ``80-``.
 
-   n
-      Numeric: the midperiod population size.
+      y
+         Numeric: the number of prostate cancer deaths.
 
-   .. rubric:: References
-      :name: references
+      n
+         Numeric: the midperiod population size.
 
-   Holford, T.R., 1983. *The estimation of age, period and cohort
-   effects for vital rates*. Biometrics 39, 311-324.
+      .. rubric:: References
+         :name: references
+
+      Holford, T.R., 1983. *The estimation of age, period and cohort
+      effects for vital rates*. Biometrics 39, 311-324.

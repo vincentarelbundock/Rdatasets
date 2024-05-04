@@ -1,127 +1,134 @@
 .. container::
 
-   ======= ===============
-   ESS10NO R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Norwegian Attitudes toward European Integration
-      (2021-2022)
-      :name: ESS10NO
+      ======= ===============
+      ESS10NO R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Norwegian Attitudes toward European Integration
+         (2021-2022)
+         :name: norwegian-attitudes-toward-european-integration-2021-2022
 
-   This is a simple data set to illustrate the use of sampling weights
-   from the European Social Survey.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This is a simple data set to illustrate the use of sampling
+      weights from the European Social Survey.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      ESS10NO
+      ::
 
-   .. rubric:: Format
-      :name: format
+         ESS10NO
 
-   A data frame with 1,411 observations on the following 24 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``cntry``
-      a character vector with Norway's two-character ISO code
+      A data frame with 1,411 observations on the following 24
+      variables.
 
-   ``idno``
-      a numeric identifier for the individual respondent
+      ``cntry``
+         a character vector with Norway's two-character ISO code
 
-   ``region``
-      a character for one of six regions recorded by the European Social
-      Survey
+      ``idno``
+         a numeric identifier for the individual respondent
 
-   ``inwds``
-      a date-time vector for the start of the interview
+      ``region``
+         a character for one of six regions recorded by the European
+         Social Survey
 
-   ``inwde``
-      a date-time vector for the end of the interview
+      ``inwds``
+         a date-time vector for the start of the interview
 
-   ``dweight``
-      a design weight
+      ``inwde``
+         a date-time vector for the end of the interview
 
-   ``pspwght``
-      a post-stratification weight, including the design weight
+      ``dweight``
+         a design weight
 
-   ``pweight``
-      a population size weight
+      ``pspwght``
+         a post-stratification weight, including the design weight
 
-   ``anweight``
-      an analysis weight
+      ``pweight``
+         a population size weight
 
-   ``prob``
-      the sampling probability
+      ``anweight``
+         an analysis weight
 
-   ``stratum``
-      the sampling stratum
+      ``prob``
+         the sampling probability
 
-   ``psu``
-      the primary sampling unit
+      ``stratum``
+         the sampling stratum
 
-   ``eu_vote``
-      a character vector indicating how a respondent would vote if given
-      a vote on joining the European Union
+      ``psu``
+         the primary sampling unit
 
-   ``brnnorge``
-      a dummy variable indicating whether respondent was born in Norway
-      or not
+      ``eu_vote``
+         a character vector indicating how a respondent would vote if
+         given a vote on joining the European Union
 
-   ``agea``
-      a numeric vector for the respondent's age in years
+      ``brnnorge``
+         a dummy variable indicating whether respondent was born in
+         Norway or not
 
-   ``imbgeco``
-      a numeric vector for if respondent thinks immigrants are generally
-      good or bad for Norway's economy. Higher values = good
+      ``agea``
+         a numeric vector for the respondent's age in years
 
-   ``imueclt``
-      a numeric vector for if respondent thinks immigrants enrich or
-      undermine Norway's culture. Higher values = enrich more than
-      undermine
+      ``imbgeco``
+         a numeric vector for if respondent thinks immigrants are
+         generally good or bad for Norway's economy. Higher values =
+         good
 
-   ``imwbcnt``
-      a numeric vector for if respondent thinks immigrants make Norway a
-      better place to live. Higher values = better place to live
+      ``imueclt``
+         a numeric vector for if respondent thinks immigrants enrich or
+         undermine Norway's culture. Higher values = enrich more than
+         undermine
 
-   ``female``
-      a numeric vector for whether the respondent is a woman
+      ``imwbcnt``
+         a numeric vector for if respondent thinks immigrants make
+         Norway a better place to live. Higher values = better place to
+         live
 
-   ``eduyrs``
-      a numeric vector for total years of education for the respondent
+      ``female``
+         a numeric vector for whether the respondent is a woman
 
-   ``uempla``
-      a numeric vector for whether the respondent is currently
-      unemployed but seeking work
+      ``eduyrs``
+         a numeric vector for total years of education for the
+         respondent
 
-   ``polint``
-      a dummy variable indicating political interest. 1 = very or quite
-      interested. 0 = hardly or not at all interested.
+      ``uempla``
+         a numeric vector for whether the respondent is currently
+         unemployed but seeking work
 
-   ``hinctnta``
-      a numeric vector for household income in deciles
+      ``polint``
+         a dummy variable indicating political interest. 1 = very or
+         quite interested. 0 = hardly or not at all interested.
 
-   ``lrscale``
-      a numeric vector for the ideology of the respondent on an 11-point
-      [0:10] scale
+      ``hinctnta``
+         a numeric vector for household income in deciles
 
-   .. rubric:: Details
-      :name: details
+      ``lrscale``
+         a numeric vector for the ideology of the respondent on an
+         11-point scale, from 0 to 10
 
-   You'll want to convert the ``eu_vote`` variable into something
-   usable. Possible values include "Remain Outside", "Join EU", "Don't
-   Know", "Not Eligible", "Blank Ballot", "Refuse to Answer", "Wouldn't
-   Vote". Perhaps it's reasonable to make this a dummy variable
-   comparing those who want to join versus those who want Norway to
-   remain outside the European Union.
+      .. rubric:: Details
+         :name: details
 
-   The data are edition 2.2 of the 10th round of European Social Survey,
-   which was released for public consumption on 21 December 2022.
+      You'll want to convert the ``eu_vote`` variable into something
+      usable. Possible values include "Remain Outside", "Join EU",
+      "Don't Know", "Not Eligible", "Blank Ballot", "Refuse to Answer",
+      "Wouldn't Vote". Perhaps it's reasonable to make this a dummy
+      variable comparing those who want to join versus those who want
+      Norway to remain outside the European Union.
 
-   .. rubric:: Source
-      :name: source
+      The data are edition 2.2 of the 10th round of European Social
+      Survey, which was released for public consumption on 21 December
+      2022.
 
-   European Social Survey, Round 10
+      .. rubric:: Source
+         :name: source
+
+      European Social Survey, Round 10

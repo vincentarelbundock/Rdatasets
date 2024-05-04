@@ -1,48 +1,51 @@
 .. container::
 
-   ========== ===============
-   greatLakes R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Yearly averages of Great Lake heights: 1918 - 2009
-      :name: greatLakes
+      ========== ===============
+      greatLakes R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Yearly averages of Great Lake heights: 1918 - 2009
+         :name: yearly-averages-of-great-lake-heights-1918---2009
 
-   Heights, stored as a multivariate time series, are for the lakes
-   Erie, Michigan/Huron, Ontario and St Clair
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Heights, stored as a multivariate time series, are for the lakes
+      Erie, Michigan/Huron, Ontario and St Clair
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(greatLakes)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(greatLakes)
 
-   The format is: mts [1:92, 1:4] 174 174 174 174 174 ... - attr(\*,
-   "dimnames")=List of 2 ..$ : NULL ..$ : chr [1:4] "Erie" "michHuron"
-   "Ontario" "StClair" - attr(\*, "tsp")= num [1:3] 1918 2009 1 -
-   attr(\*, "class")= chr [1:2] "mts" "ts"
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      The format is: mts [1:92, 1:4] 174 174 174 174 174 ... - attr(*,
+      "dimnames")=List of 2 ..$ : NULL ..$ : chr [1:4] "Erie"
+      "michHuron" "Ontario" "StClair" - attr(*, "tsp")= num [1:3] 1918
+      2009 1 - attr(*, "class")= chr [1:2] "mts" "ts"
 
-   For more details, go to the website that is the source of the data.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      For more details, go to the website that is the source of the
+      data.
 
-   https://www.lre.usace.army.mil/Missions/Great-Lakes-Information/Great-Lakes-Information-2/Water-Level-Data/
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.lre.usace.army.mil/Missions/Great-Lakes-Information/Great-Lakes-Information-2/Water-Level-Data/
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(greatLakes)
-      plot(greatLakes)
-      ## maybe str(greatLakes)
+      ::
+
+         data(greatLakes)
+         plot(greatLakes)
+         ## maybe str(greatLakes)

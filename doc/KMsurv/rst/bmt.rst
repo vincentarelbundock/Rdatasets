@@ -1,103 +1,105 @@
 .. container::
 
-   === ===============
-   bmt R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: data from Section 1.3
-      :name: bmt
+      === ===============
+      bmt R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Section 1.3
+         :name: data-from-section-1.3
 
-   The ``bmt`` data frame has 137 rows and 22 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``bmt`` data frame has 137 rows and 22 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   group
-      Disease Group 1-ALL, 2-AML Low Risk, 3-AML High Risk
+      This data frame contains the following columns:
 
-   t1
-      Time To Death Or On Study Time
+      group
+         Disease Group 1-ALL, 2-AML Low Risk, 3-AML High Risk
 
-   t2
-      Disease Free Survival Time (Time To Relapse, Death Or End Of
-      Study)
+      t1
+         Time To Death Or On Study Time
 
-   d1
-      Death Indicator 1-Dead 0-Alive
+      t2
+         Disease Free Survival Time (Time To Relapse, Death Or End Of
+         Study)
 
-   d2
-      Relapse Indicator 1-Relapsed, 0-Disease Free
+      d1
+         Death Indicator 1-Dead 0-Alive
 
-   d3
-      Disease Free Survival Indicator 1-Dead Or Relapsed, 0-Alive
-      Disease Free)
+      d2
+         Relapse Indicator 1-Relapsed, 0-Disease Free
 
-   ta
-      Time To Acute Graft-Versus-Host Disease
+      d3
+         Disease Free Survival Indicator 1-Dead Or Relapsed, 0-Alive
+         Disease Free)
 
-   da
-      Acute GVHD Indicator 1-Developed Acute GVHD 0-Never Developed
-      Acute GVHD)
+      ta
+         Time To Acute Graft-Versus-Host Disease
 
-   tc
-      Time To Chronic Graft-Versus-Host Disease
+      da
+         Acute GVHD Indicator 1-Developed Acute GVHD 0-Never Developed
+         Acute GVHD)
 
-   dc
-      Chronic GVHD Indicator 1-Developed Chronic GVHD 0-Never Developed
-      Chronic GVHD
+      tc
+         Time To Chronic Graft-Versus-Host Disease
 
-   tp
-      Time To Chronic Graft-Versus-Host Disease
+      dc
+         Chronic GVHD Indicator 1-Developed Chronic GVHD 0-Never
+         Developed Chronic GVHD
 
-   dp
-      Platelet Recovery Indicator 1-Platelets Returned To Normal,
-      0-Platelets Never Returned to Normal
+      tp
+         Time To Chronic Graft-Versus-Host Disease
 
-   z1
-      Patient Age In Years
+      dp
+         Platelet Recovery Indicator 1-Platelets Returned To Normal,
+         0-Platelets Never Returned to Normal
 
-   z2
-      Donor Age In Years
+      z1
+         Patient Age In Years
 
-   z3
-      Patient Sex: 1-Male, 0-Female
+      z2
+         Donor Age In Years
 
-   z4
-      Donor Sex: 1-Male, 0-Female
+      z3
+         Patient Sex: 1-Male, 0-Female
 
-   z5
-      Patient CMV Status: 1-CMV Positive, 0-CMV Negative
+      z4
+         Donor Sex: 1-Male, 0-Female
 
-   z6
-      Donor CMV Status: 1-CMV Positive, 0-CMV Negative
+      z5
+         Patient CMV Status: 1-CMV Positive, 0-CMV Negative
 
-   z7
-      Waiting Time to Transplant In Days
+      z6
+         Donor CMV Status: 1-CMV Positive, 0-CMV Negative
 
-   z8
-      FAB: 1-FAB Grade 4 Or 5 and AML, 0-Otherwise
+      z7
+         Waiting Time to Transplant In Days
 
-   z9
-      Hospital: 1-The Ohio State University, 2-Alferd , 3-St. Vincent,
-      4-Hahnemann
+      z8
+         FAB: 1-FAB Grade 4 Or 5 and AML, 0-Otherwise
 
-   z10
-      MTX Used as a Graft-Versus-Host- Prophylactic: 1-Yes 0-No
+      z9
+         Hospital: 1-The Ohio State University, 2-Alferd , 3-St.
+         Vincent, 4-Hahnemann
 
-   .. rubric:: Source
-      :name: source
+      z10
+         MTX Used as a Graft-Versus-Host- Prophylactic: 1-Yes 0-No
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(bmt)
+      ::
+
+         data(bmt)

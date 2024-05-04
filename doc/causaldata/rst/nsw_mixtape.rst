@@ -1,85 +1,88 @@
 .. container::
 
-   =========== ===============
-   nsw_mixtape R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Data from the National Supported Work Demonstration (NSW)
-      job-training program
-      :name: nsw_mixtape
+      =========== ===============
+      nsw_mixtape R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data from the National Supported Work Demonstration
+         (NSW) job-training program
+         :name: data-from-the-national-supported-work-demonstration-nsw-job-training-program
 
-   Data from the National Supported Work Demonstration (NSW)
-   job-training program experiment, where those treated were guaranteed
-   a job for 9-18 months.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from the National Supported Work Demonstration (NSW)
+      job-training program experiment, where those treated were
+      guaranteed a job for 9-18 months.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      nsw_mixtape
+      ::
 
-   .. rubric:: Format
-      :name: format
+         nsw_mixtape
 
-   A data frame with 445 rows and 11 variables
+      .. rubric:: Format
+         :name: format
 
-   data_id
-      Individual ID
+      A data frame with 445 rows and 11 variables
 
-   treat
-      In the National Supported Work Demonstration Job Training Program
+      data_id
+         Individual ID
 
-   age
-      Age in years
+      treat
+         In the National Supported Work Demonstration Job Training
+         Program
 
-   educ
-      Years of education
+      age
+         Age in years
 
-   black
-      Race: Black
+      educ
+         Years of education
 
-   hisp
-      Ethnicity: Hispanic
+      black
+         Race: Black
 
-   marr
-      Married
+      hisp
+         Ethnicity: Hispanic
 
-   nodegree
-      Has no degree
+      marr
+         Married
 
-   re74
-      Real earnings 1974
+      nodegree
+         Has no degree
 
-   re75
-      Real earnings 1975
+      re74
+         Real earnings 1974
 
-   re78
-      Real earnings 1978
+      re75
+         Real earnings 1975
 
-   .. rubric:: Details
-      :name: details
+      re78
+         Real earnings 1978
 
-   This data is used in the *Matching and Subclassification* chapter of
-   *Causal Inference: The Mixtape* by Cunningham.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This data is used in the *Matching and Subclassification* chapter
+      of *Causal Inference: The Mixtape* by Cunningham.
 
-   Lalonde, Robert. 1986. “Evaluating the Econometric Evaluations of
-   Training Programs with Experimental Data.” American Economic Review
-   76 (4): 604–20.
+      .. rubric:: Source
+         :name: source
 
-   Dehejia, Rajeev H., and Sadek Wahba. 1999. “Causal Effects in
-   Nonexperimental Studies: Reevaluating the Evaluation of Training
-   Programs.” Journal of the American Statistical Association 94 (448):
-   1053–62.".
+      Lalonde, Robert. 1986. “Evaluating the Econometric Evaluations of
+      Training Programs with Experimental Data.” American Economic
+      Review 76 (4): 604–20.
 
-   .. rubric:: References
-      :name: references
+      Dehejia, Rajeev H., and Sadek Wahba. 1999. “Causal Effects in
+      Nonexperimental Studies: Reevaluating the Evaluation of Training
+      Programs.” Journal of the American Statistical Association 94
+      (448): 1053–62.".
 
-   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-   https://mixtape.scunning.com/index.html.
+      .. rubric:: References
+         :name: references
+
+      Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+      https://mixtape.scunning.com/index.html.

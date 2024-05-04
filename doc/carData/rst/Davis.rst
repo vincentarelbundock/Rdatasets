@@ -1,61 +1,63 @@
 .. container::
 
-   ===== ===============
-   Davis R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Self-Reports of Height and Weight
-      :name: Davis
+      ===== ===============
+      Davis R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Self-Reports of Height and Weight
+         :name: self-reports-of-height-and-weight
 
-   The ``Davis`` data frame has 200 rows and 5 columns. The subjects
-   were men and women engaged in regular exercise. There are some
-   missing data.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Davis`` data frame has 200 rows and 5 columns. The subjects
+      were men and women engaged in regular exercise. There are some
+      missing data.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Davis
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Davis
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   sex
-      A factor with levels: ``F``, female; ``M``, male.
+      This data frame contains the following columns:
 
-   weight
-      Measured weight in kg.
+      sex
+         A factor with levels: ``F``, female; ``M``, male.
 
-   height
-      Measured height in cm.
+      weight
+         Measured weight in kg.
 
-   repwt
-      Reported weight in kg.
+      height
+         Measured height in cm.
 
-   repht
-      Reported height in cm.
+      repwt
+         Reported weight in kg.
 
-   .. rubric:: Source
-      :name: source
+      repht
+         Reported height in cm.
 
-   Personal communication from C. Davis, Departments of Physical
-   Education and Psychology, York University.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Personal communication from C. Davis, Departments of Physical
+      Education and Psychology, York University.
 
-   Davis, C. (1990) Body image and weight preoccupation: A comparison
-   between exercising and non-exercising women. *Appetite*, **15**,
-   13–21.
+      .. rubric:: References
+         :name: references
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      Davis, C. (1990) Body image and weight preoccupation: A comparison
+      between exercising and non-exercising women. *Appetite*, **15**,
+      13–21.
 
-   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
-   Regression*, Third Edition, Sage.
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.
+
+      Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+      Regression*, Third Edition, Sage.

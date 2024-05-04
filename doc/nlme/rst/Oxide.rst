@@ -1,53 +1,57 @@
 .. container::
 
-   ===== ===============
-   Oxide R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Variability in Semiconductor Manufacturing
-      :name: Oxide
+      ===== ===============
+      Oxide R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Variability in Semiconductor Manufacturing
+         :name: variability-in-semiconductor-manufacturing
 
-   The ``Oxide`` data frame has 72 rows and 5 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``Oxide`` data frame has 72 rows and 5 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Source
-      a factor with levels ``1`` and ``2``
+      This data frame contains the following columns:
 
-   Lot
-      a factor giving a unique identifier for each lot.
+      Source
+         a factor with levels ``1`` and ``2``
 
-   Wafer
-      a factor giving a unique identifier for each wafer within a lot.
+      Lot
+         a factor giving a unique identifier for each lot.
 
-   Site
-      a factor with levels ``1``, ``2``, and ``3``
+      Wafer
+         a factor giving a unique identifier for each wafer within a
+         lot.
 
-   Thickness
-      a numeric vector giving the thickness of the oxide layer.
+      Site
+         a factor with levels ``1``, ``2``, and ``3``
 
-   .. rubric:: Details
-      :name: details
+      Thickness
+         a numeric vector giving the thickness of the oxide layer.
 
-   These data are described in Littell et al. (1996, p. 155) as coming
-   “from a passive data collection study in the semiconductor industry
-   where the objective is to estimate the variance components to
-   determine the assignable causes of the observed variability.” The
-   observed response is the thickness of the oxide layer on silicon
-   wafers, measured at three different sites of each of three wafers
-   selected from each of eight lots sampled from the population of lots.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      These data are described in Littell et al. (1996, p. 155) as
+      coming “from a passive data collection study in the semiconductor
+      industry where the objective is to estimate the variance
+      components to determine the assignable causes of the observed
+      variability.” The observed response is the thickness of the oxide
+      layer on silicon wafers, measured at three different sites of each
+      of three wafers selected from each of eight lots sampled from the
+      population of lots.
 
-   Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S
-   and S-PLUS*, Springer, New York. (Appendix A.20)
+      .. rubric:: Source
+         :name: source
 
-   Littell, R. C., Milliken, G. A., Stroup, W. W. and Wolfinger, R. D.
-   (1996), *SAS System for Mixed Models*, SAS Institute, Cary, NC.
+      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
+      S and S-PLUS*, Springer, New York. (Appendix A.20)
+
+      Littell, R. C., Milliken, G. A., Stroup, W. W. and Wolfinger, R.
+      D. (1996), *SAS System for Mixed Models*, SAS Institute, Cary, NC.

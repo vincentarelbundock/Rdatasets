@@ -1,69 +1,72 @@
 .. container::
 
-   ========== ===============
-   samplonomy R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Economic data on Samplonia
-      :name: samplonomy
+      ========== ===============
+      samplonomy R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Economic data on Samplonia
+         :name: economic-data-on-samplonia
 
-   Simulated economic time series representing GDP, Import, Export and
-   Balance of Trade (BOT) of Samplonia. Samplonia is a fictional Island
-   invented by Jelke Bethelehem (2009). The country has 10 000
-   inhabitants. It consists of two provinces: Agria and Induston. Agria
-   is a rural province consisting of the mostly fruit and vegetable
-   producing district of Wheaton and the mostly cattle producing
-   Greenham. Induston has four districts. Two districts with heavy
-   industry named Smokeley and Mudwater. Newbay is a young, developing
-   district while Crowdon is where the rich Samplonians retire. The
-   current data set contains several time series from Samplonia's
-   national accounts system in long format.
+      .. rubric:: Description
+         :name: description
 
-   There are annual and quarterly time series on GDP, Import, Export and
-   Balance of Trade, for Samplonia as a whole, for each province and
-   each district. BOT is defined as Export-Import for each region and
-   period; quarterly figures are expected to add up to annual figures
-   for each region and measure, and subregions are expected to add up to
-   their super-regions.
+      Simulated economic time series representing GDP, Import, Export
+      and Balance of Trade (BOT) of Samplonia. Samplonia is a fictional
+      Island invented by Jelke Bethelehem (2009). The country has 10 000
+      inhabitants. It consists of two provinces: Agria and Induston.
+      Agria is a rural province consisting of the mostly fruit and
+      vegetable producing district of Wheaton and the mostly cattle
+      producing Greenham. Induston has four districts. Two districts
+      with heavy industry named Smokeley and Mudwater. Newbay is a
+      young, developing district while Crowdon is where the rich
+      Samplonians retire. The current data set contains several time
+      series from Samplonia's national accounts system in long format.
 
-   -  region: Region (Samplonia, one if its 2 provinces, or one of its 6
-      districts)
+      There are annual and quarterly time series on GDP, Import, Export
+      and Balance of Trade, for Samplonia as a whole, for each province
+      and each district. BOT is defined as Export-Import for each region
+      and period; quarterly figures are expected to add up to annual
+      figures for each region and measure, and subregions are expected
+      to add up to their super-regions.
 
-   -  freq: Frequency of the time series
+      -  region: Region (Samplonia, one if its 2 provinces, or one of
+         its 6 districts)
 
-   -  period: Period (year or quarter)
+      -  freq: Frequency of the time series
 
-   -  measure: The economic variable (gdp, import, export, balance)
+      -  period: Period (year or quarter)
 
-   -  value: The value
+      -  measure: The economic variable (gdp, import, export, balance)
 
-   The data set has been endowed with the following errors.
+      -  value: The value
 
-   -  For Agria, the 2015 GDP record is not present.
+      The data set has been endowed with the following errors.
 
-   -  For Induston, the 2018Q3 export value is missing (``NA``)
+      -  For Agria, the 2015 GDP record is not present.
 
-   -  For Induston, there are two different values for the 2018Q2 Export
+      -  For Induston, the 2018Q3 export value is missing (``NA``)
 
-   -  For Crowdon, the 2015Q1 balance value is missing (``NA``).
+      -  For Induston, there are two different values for the 2018Q2
+         Export
 
-   -  For Wheaton, the 2019Q2 import is missing (``NA``).
+      -  For Crowdon, the 2015Q1 balance value is missing (``NA``).
 
-   .. rubric:: Format
-      :name: format
+      -  For Wheaton, the 2019Q2 import is missing (``NA``).
 
-   An RData file.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: References
-      :name: references
+      An RData file.
 
-   J. Bethlehem (2009), Applied Survey Methods: A Statistical
-   Perspective. John Wiley & Sons, Hoboken, NJ.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      J. Bethlehem (2009), Applied Survey Methods: A Statistical
+      Perspective. John Wiley & Sons, Hoboken, NJ.
 
-   Other datasets: ``nace_rev2``, ``retailers``
+      .. rubric:: See Also
+         :name: see-also
+
+      Other datasets: ``nace_rev2``, ``retailers``

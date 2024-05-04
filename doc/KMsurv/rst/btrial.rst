@@ -1,41 +1,43 @@
 .. container::
 
-   ====== ===============
-   btrial R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: data from Section 1.5
-      :name: btrial
+      ====== ===============
+      btrial R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Section 1.5
+         :name: data-from-section-1.5
 
-   The ``btrial`` data frame has 45 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``btrial`` data frame has 45 rows and 3 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   time
-      Time to death or on-study time, months
+      This data frame contains the following columns:
 
-   death
-      Death indicator (0=alive, 1=dead)
+      time
+         Time to death or on-study time, months
 
-   im
-      Immunohistochemical response (1=negative, 2=positive)
+      death
+         Death indicator (0=alive, 1=dead)
 
-   .. rubric:: Source
-      :name: source
+      im
+         Immunohistochemical response (1=negative, 2=positive)
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer. Sedmak el al. Modern
-   Pathology 2 (1989): 516-520.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer. Sedmak el al. Modern
+      Pathology 2 (1989): 516-520.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(btrial)
+      ::
+
+         data(btrial)

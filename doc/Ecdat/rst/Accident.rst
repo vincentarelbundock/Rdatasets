@@ -1,61 +1,64 @@
 .. container::
 
-   ======== ===============
-   Accident R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Ship Accidents
-      :name: Accident
+      ======== ===============
+      Accident R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Ship Accidents
+         :name: ship-accidents
 
-   a cross-section
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 40
+      a cross-section
 
-   .. rubric:: Usage
-      :name: usage
+      *number of observations* : 40
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Accident)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Accident)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   type
-      ship type, a factor with levels (A,B,C,D,E)
+      A dataframe containing :
 
-   constr
-      year constructed, a factor with levels (C6064,C6569,C7074,C7579)
+      type
+         ship type, a factor with levels (A,B,C,D,E)
 
-   operate
-      year operated, a factor with levels (O6074,O7579)
+      constr
+         year constructed, a factor with levels
+         (C6064,C6569,C7074,C7579)
 
-   months
-      measure of service amount
+      operate
+         year operated, a factor with levels (O6074,O7579)
 
-   acc
-      accidents
+      months
+         measure of service amount
 
-   .. rubric:: Source
-      :name: source
+      acc
+         accidents
 
-   McCullagh, P. and J. Nelder (1983) *Generalized Linear Models*, New
-   York:Chapman and Hall.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      McCullagh, P. and J. Nelder (1983) *Generalized Linear Models*,
+      New York:Chapman and Hall.
 
-   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   https://archive.org/details/econometricanaly0000gree_f4x3, Table
-   F21.3.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+      https://archive.org/details/econometricanaly0000gree_f4x3, Table
+      F21.3.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

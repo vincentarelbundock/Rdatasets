@@ -1,53 +1,56 @@
 .. container::
 
-   ====== ===============
-   darwin R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Darwin's Plant Height Differences
-      :name: darwin
+      ====== ===============
+      darwin R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Darwin's Plant Height Differences
+         :name: darwins-plant-height-differences
 
-   The ``darwin`` data frame has 15 rows and 1 columns.
+      .. rubric:: Description
+         :name: description
 
-   Charles Darwin conducted an experiment to examine the superiority of
-   cross-fertilized plants over self-fertilized plants. 15 pairs of
-   plants were used. Each pair consisted of one cross-fertilized plant
-   and one self-fertilized plant which germinated at the same time and
-   grew in the same pot. The plants were measured at a fixed time after
-   planting and the difference in heights between the cross- and
-   self-fertilized plants are recorded in eighths of an inch.
+      The ``darwin`` data frame has 15 rows and 1 columns.
 
-   .. rubric:: Usage
-      :name: usage
+      Charles Darwin conducted an experiment to examine the superiority
+      of cross-fertilized plants over self-fertilized plants. 15 pairs
+      of plants were used. Each pair consisted of one cross-fertilized
+      plant and one self-fertilized plant which germinated at the same
+      time and grew in the same pot. The plants were measured at a fixed
+      time after planting and the difference in heights between the
+      cross- and self-fertilized plants are recorded in eighths of an
+      inch.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      darwin
+      ::
 
-   .. rubric:: Format
-      :name: format
+         darwin
 
-   This data frame contains the following column:
+      .. rubric:: Format
+         :name: format
 
-   ``y``
-      The difference in heights for the pairs of plants (in units of
-      0.125 inches).
+      This data frame contains the following column:
 
-   .. rubric:: Source
-      :name: source
+      ``y``
+         The difference in heights for the pairs of plants (in units of
+         0.125 inches).
 
-   The data were obtained from
+      .. rubric:: Source
+         :name: source
 
-   Fisher, R.A. (1935) *Design of Experiments*. Oliver and Boyd.
+      The data were obtained from
 
-   .. rubric:: References
-      :name: references
+      Fisher, R.A. (1935) *Design of Experiments*. Oliver and Boyd.
 
-   Darwin, C. (1876) *The Effects of Cross- and Self-fertilisation in
-   the Vegetable Kingdom*. John Murray.
+      .. rubric:: References
+         :name: references
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      Darwin, C. (1876) *The Effects of Cross- and Self-fertilisation in
+      the Vegetable Kingdom*. John Murray.
+
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.

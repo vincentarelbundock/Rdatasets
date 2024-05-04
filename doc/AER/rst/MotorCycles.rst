@@ -1,56 +1,58 @@
 .. container::
 
-   =========== ===============
-   MotorCycles R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Motor Cycles in The Netherlands
-      :name: MotorCycles
+      =========== ===============
+      MotorCycles R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Motor Cycles in The Netherlands
+         :name: motor-cycles-in-the-netherlands
 
-   Time series of stock of motor cycles (two wheels) in The Netherlands
-   (in thousands).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Time series of stock of motor cycles (two wheels) in The
+      Netherlands (in thousands).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("MotorCycles")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("MotorCycles")
 
-   An annual univariate time series from 1946 to 1993.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An annual univariate time series from 1946 to 1993.
 
-   An updated version is available under the name ``MotorCycles2``.
-   However, the values for the years 1992 and 1993 differ there.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      An updated version is available under the name ``MotorCycles2``.
+      However, the values for the years 1992 and 1993 differ there.
 
-   Online complements to Franses (1998).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Franses (1998).
 
-   Franses, P.H. (1998). *Time Series Models for Business and Economic
-   Forecasting*. Cambridge, UK: Cambridge University Press.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Franses, P.H. (1998). *Time Series Models for Business and
+      Economic Forecasting*. Cambridge, UK: Cambridge University Press.
 
-   ``Franses1998``, ``MotorCycles2``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Franses1998``, ``MotorCycles2``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("MotorCycles")
-      plot(MotorCycles)
+      ::
+
+         data("MotorCycles")
+         plot(MotorCycles)

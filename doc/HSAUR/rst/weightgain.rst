@@ -1,59 +1,62 @@
 .. container::
 
-   ========== ===============
-   weightgain R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Gain in Weight of Rats
-      :name: weightgain
+      ========== ===============
+      weightgain R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Gain in Weight of Rats
+         :name: gain-in-weight-of-rats
 
-   The data arise from an experiment to study the gain in weight of rats
-   fed on four different diets, distinguished by amount of protein (low
-   and high) and by source of protein (beef and cereal).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The data arise from an experiment to study the gain in weight of
+      rats fed on four different diets, distinguished by amount of
+      protein (low and high) and by source of protein (beef and cereal).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("weightgain")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("weightgain")
 
-   A data frame with 40 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``source``
-      source of protein given, a factor with levels ``Beef`` and
-      ``Cereal``.
+      A data frame with 40 observations on the following 3 variables.
 
-   ``type``
-      amount of protein given, a factor with levels ``High`` and
-      ``Low``.
+      ``source``
+         source of protein given, a factor with levels ``Beef`` and
+         ``Cereal``.
 
-   ``weightgain``
-      weigt gain in grams.
+      ``type``
+         amount of protein given, a factor with levels ``High`` and
+         ``Low``.
 
-   .. rubric:: Details
-      :name: details
+      ``weightgain``
+         weigt gain in grams.
 
-   Ten rats are randomized to each of the four treatments. The question
-   of interest is how diet affects weight gain.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Ten rats are randomized to each of the four treatments. The
+      question of interest is how diet affects weight gain.
 
-   D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
-   (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC, London.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
+      (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC,
+      London.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("weightgain", package = "HSAUR")
-        interaction.plot(weightgain$type, weightgain$source, 
-                         weightgain$weightgain)
+      ::
+
+           data("weightgain", package = "HSAUR")
+           interaction.plot(weightgain$type, weightgain$source, 
+                            weightgain$weightgain)

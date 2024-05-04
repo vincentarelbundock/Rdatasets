@@ -1,45 +1,47 @@
 .. container::
 
-   ===== ===============
-   USPop R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Population of the United States
-      :name: USPop
+      ===== ===============
+      USPop R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Population of the United States
+         :name: population-of-the-united-states
 
-   The ``USPop`` data frame has 22 rows and 1 columns. This is a
-   decennial time-series, from 1790 to 2000.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``USPop`` data frame has 22 rows and 1 columns. This is a
+      decennial time-series, from 1790 to 2000.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      USPop
+      ::
 
-   .. rubric:: Format
-      :name: format
+         USPop
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   year
-      census year.
+      This data frame contains the following columns:
 
-   population
-      Population in millions.
+      year
+         census year.
 
-   .. rubric:: Source
-      :name: source
+      population
+         Population in millions.
 
-   U.S.~Census Bureau:
-   https://www.census-charts.com/Population/pop-us-1790-2000.html,
-   downloaded 1 May 2008.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      U.S.~Census Bureau:
+      https://www.census-charts.com/Population/pop-us-1790-2000.html,
+      downloaded 1 May 2008.
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
+
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.

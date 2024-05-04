@@ -1,69 +1,71 @@
 .. container::
 
-   ======= ===============
-   polyps3 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Familial Andenomatous Polyposis
-      :name: polyps3
+      ======= ===============
+      polyps3 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Familial Andenomatous Polyposis
+         :name: familial-andenomatous-polyposis
 
-   Data from a placebo-controlled trial of a non-steroidal
-   anti-inflammatory drug in the treatment of familial andenomatous
-   polyposis (FAP).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from a placebo-controlled trial of a non-steroidal
+      anti-inflammatory drug in the treatment of familial andenomatous
+      polyposis (FAP).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("polyps3")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("polyps3")
 
-   A data frame with 22 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``sex``
-      a factor with levels ``female`` and ``male``.
+      A data frame with 22 observations on the following 5 variables.
 
-   ``treatment``
-      a factor with levels ``placebo`` and ``active``.
+      ``sex``
+         a factor with levels ``female`` and ``male``.
 
-   ``baseline``
-      the baseline number of polyps.
+      ``treatment``
+         a factor with levels ``placebo`` and ``active``.
 
-   ``age``
-      the age of the patient.
+      ``baseline``
+         the baseline number of polyps.
 
-   ``number3m``
-      the number of polyps after three month.
+      ``age``
+         the age of the patient.
 
-   .. rubric:: Details
-      :name: details
+      ``number3m``
+         the number of polyps after three month.
 
-   The data arise from the same study as the ``polyps`` data. Here, the
-   number of polyps after three months are given.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The data arise from the same study as the ``polyps`` data. Here,
+      the number of polyps after three months are given.
 
-   F. M. Giardiello, S. R. Hamilton, A. J. Krush, S. Piantadosi, L. M.
-   Hylind, P. Celano, S. V. Booker, C. R. Robinson and G. J. A.
-   Offerhaus (1993), Treatment of colonic and rectal adenomas with
-   sulindac in familial adenomatous polyposis. *New England Journal of
-   Medicine*, **328**\ (18), 1313–1316.
+      .. rubric:: Source
+         :name: source
 
-   S. Piantadosi (1997), *Clinical Trials: A Methodologic Perspective*.
-   John Wiley & Sons, New York.
+      F. M. Giardiello, S. R. Hamilton, A. J. Krush, S. Piantadosi, L.
+      M. Hylind, P. Celano, S. V. Booker, C. R. Robinson and G. J. A.
+      Offerhaus (1993), Treatment of colonic and rectal adenomas with
+      sulindac in familial adenomatous polyposis. *New England Journal
+      of Medicine*, **328**\ (18), 1313–1316.
 
-   .. rubric:: Examples
-      :name: examples
+      S. Piantadosi (1997), *Clinical Trials: A Methodologic
+      Perspective*. John Wiley & Sons, New York.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("polyps3", package = "HSAUR")
-        plot(number3m ~ age, data = polyps3, pch = as.numeric(polyps3$treatment))
-        legend("topright", legend = levels(polyps3$treatment), pch = 1:2, bty = "n")
+      ::
+
+           data("polyps3", package = "HSAUR")
+           plot(number3m ~ age, data = polyps3, pch = as.numeric(polyps3$treatment))
+           legend("topright", legend = levels(polyps3$treatment), pch = 1:2, bty = "n")

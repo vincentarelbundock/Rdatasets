@@ -1,99 +1,101 @@
 .. container::
 
-   ======== ===============
-   ezanders R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: ezanders
-      :name: ezanders
+      ======== ===============
+      ezanders R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: ezanders
+         :name: ezanders
 
-   Wooldridge Source: L.E. Papke (1994), “Tax Policy and Urban
-   Development: Evidence from the Indiana Enterprise Zone Program,”
-   Journal of Public Economics 54, 37-49. Professor Papke kindly
-   provided these data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: L.E. Papke (1994), “Tax Policy and Urban
+      Development: Evidence from the Indiana Enterprise Zone Program,”
+      Journal of Public Economics 54, 37-49. Professor Papke kindly
+      provided these data. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('ezanders')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('ezanders')
 
-   A data.frame with 108 observations on 25 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **month:** name of month
+      A data.frame with 108 observations on 25 variables:
 
-   -  **uclms:** unemployment claims
+      -  **month:** name of month
 
-   -  **ez:** =1 if enterprise zone
+      -  **uclms:** unemployment claims
 
-   -  **year:** 1980 through 1988
+      -  **ez:** =1 if enterprise zone
 
-   -  **y81:** =1 if year == 1981
+      -  **year:** 1980 through 1988
 
-   -  **y82:**
+      -  **y81:** =1 if year == 1981
 
-   -  **y83:**
+      -  **y82:**
 
-   -  **y84:**
+      -  **y83:**
 
-   -  **y85:**
+      -  **y84:**
 
-   -  **y86:**
+      -  **y85:**
 
-   -  **y87:**
+      -  **y86:**
 
-   -  **y88:**
+      -  **y87:**
 
-   -  **luclms:** log(uclms)
+      -  **y88:**
 
-   -  **jan:** =1 if month == JAN
+      -  **luclms:** log(uclms)
 
-   -  **feb:**
+      -  **jan:** =1 if month == JAN
 
-   -  **mar:**
+      -  **feb:**
 
-   -  **apr:**
+      -  **mar:**
 
-   -  **may:**
+      -  **apr:**
 
-   -  **jun:**
+      -  **may:**
 
-   -  **jul:**
+      -  **jun:**
 
-   -  **aug:**
+      -  **jul:**
 
-   -  **sep:**
+      -  **aug:**
 
-   -  **oct:**
+      -  **sep:**
 
-   -  **nov:**
+      -  **oct:**
 
-   -  **dec:**
+      -  **nov:**
 
-   .. rubric:: Notes
-      :name: notes
+      -  **dec:**
 
-   These are actually monthly unemployment claims for the Anderson
-   enterprise zone. Papke used annualized data, across many zones and
-   non-zones, in her original analysis.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: page 377
+      These are actually monthly unemployment claims for the Anderson
+      enterprise zone. Papke used annualized data, across many zones and
+      non-zones, in her original analysis.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: page 377
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(ezanders)
+      ::
+
+          str(ezanders)

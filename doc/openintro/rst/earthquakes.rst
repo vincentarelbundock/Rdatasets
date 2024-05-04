@@ -1,64 +1,66 @@
 .. container::
 
-   =========== ===============
-   earthquakes R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Earthquakes
-      :name: earthquakes
+      =========== ===============
+      earthquakes R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Earthquakes
+         :name: earthquakes
 
-   Select set of notable earthquakes from 1900 to 1999.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Select set of notable earthquakes from 1900 to 1999.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      earthquakes
+      ::
 
-   .. rubric:: Format
-      :name: format
+         earthquakes
 
-   A data frame with 123 rows and 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   year
-      Year the earthquake took place.
+      A data frame with 123 rows and 7 variables.
 
-   month
-      Month the earthquake took place.
+      year
+         Year the earthquake took place.
 
-   day
-      Day the earthquake took place
+      month
+         Month the earthquake took place.
 
-   richter
-      Magnitude of earthquake using the Richter Scale.
+      day
+         Day the earthquake took place
 
-   area
-      City or geographic location of earthquakes.
+      richter
+         Magnitude of earthquake using the Richter Scale.
 
-   region
-      Country or countries if the earthquake occurred on a border.
+      area
+         City or geographic location of earthquakes.
 
-   deaths
-      Approximate number of deaths caused by earthquake
+      region
+         Country or countries if the earthquake occurred on a border.
 
-   .. rubric:: Source
-      :name: source
+      deaths
+         Approximate number of deaths caused by earthquake
 
-   World Almanac and Book of Facts: 2011.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      World Almanac and Book of Facts: 2011.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(earthquakes, aes(x = richter, y = deaths)) +
-        geom_point()
+         library(ggplot2)
 
-      ggplot(earthquakes, aes(x = log(deaths))) +
-        geom_histogram()
+         ggplot(earthquakes, aes(x = richter, y = deaths)) +
+           geom_point()
+
+         ggplot(earthquakes, aes(x = log(deaths))) +
+           geom_histogram()

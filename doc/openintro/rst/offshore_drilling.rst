@@ -1,45 +1,47 @@
 .. container::
 
-   ================= ===============
-   offshore_drilling R Documentation
-   ================= ===============
+   .. container::
 
-   .. rubric:: California poll on drilling off the California coast
-      :name: offshore_drilling
+      ================= ===============
+      offshore_drilling R Documentation
+      ================= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: California poll on drilling off the California coast
+         :name: california-poll-on-drilling-off-the-california-coast
 
-   A 2010 survey asking a randomly sample of registered voters in
-   California for their position on drilling for oil and natural gas off
-   the Coast of California.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A 2010 survey asking a randomly sample of registered voters in
+      California for their position on drilling for oil and natural gas
+      off the Coast of California.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      offshore_drilling
+      ::
 
-   .. rubric:: Format
-      :name: format
+         offshore_drilling
 
-   A data frame with 827 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   position
-      a factor with levels ``do not know`` ``oppose`` ``support``
+      A data frame with 827 observations on the following 2 variables.
 
-   college_grad
-      a factor with levels ``no`` ``yes``
+      position
+         a factor with levels ``do not know`` ``oppose`` ``support``
 
-   .. rubric:: Source
-      :name: source
+      college_grad
+         a factor with levels ``no`` ``yes``
 
-   Survey USA, Election Poll #16804, data collected July 8-11, 2010.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Survey USA, Election Poll #16804, data collected July 8-11, 2010.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      offshore_drilling
+      ::
+
+         offshore_drilling

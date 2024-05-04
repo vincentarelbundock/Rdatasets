@@ -1,72 +1,74 @@
 .. container::
 
-   ======= ===============
-   hprice1 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: hprice1
-      :name: hprice1
+      ======= ===============
+      hprice1 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: hprice1
+         :name: hprice1
 
-   Wooldridge Source: Collected from the real estate pages of the Boston
-   Globe during 1990. These are homes that sold in the Boston, MA area.
-   Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Collected from the real estate pages of the
+      Boston Globe during 1990. These are homes that sold in the Boston,
+      MA area. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('hprice1')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('hprice1')
 
-   A data.frame with 88 observations on 10 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **price:** house price, $1000s
+      A data.frame with 88 observations on 10 variables:
 
-   -  **assess:** assessed value, $1000s
+      -  **price:** house price, $1000s
 
-   -  **bdrms:** number of bdrms
+      -  **assess:** assessed value, $1000s
 
-   -  **lotsize:** size of lot in square feet
+      -  **bdrms:** number of bdrms
 
-   -  **sqrft:** size of house in square feet
+      -  **lotsize:** size of lot in square feet
 
-   -  **colonial:** =1 if home is colonial style
+      -  **sqrft:** size of house in square feet
 
-   -  **lprice:** log(price)
+      -  **colonial:** =1 if home is colonial style
 
-   -  **lassess:** log(assess
+      -  **lprice:** log(price)
 
-   -  **llotsize:** log(lotsize)
+      -  **lassess:** log(assess
 
-   -  **lsqrft:** log(sqrft)
+      -  **llotsize:** log(lotsize)
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lsqrft:** log(sqrft)
 
-   Typically, it is very easy to obtain data on selling prices and
-   characteristics of homes, using publicly available data bases. It is
-   interesting to match the information on houses with other information
-   – such as local crime rates, quality of the local schools, pollution
-   levels, and so on – and estimate the effects of such variables on
-   housing prices.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 110, 153-154, 160-161, 165, 211-212, 221, 222,
-   234, 278, 280, 299, 307
+      Typically, it is very easy to obtain data on selling prices and
+      characteristics of homes, using publicly available data bases. It
+      is interesting to match the information on houses with other
+      information – such as local crime rates, quality of the local
+      schools, pollution levels, and so on – and estimate the effects of
+      such variables on housing prices.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 110, 153-154, 160-161, 165, 211-212, 221, 222,
+      234, 278, 280, 299, 307
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(hprice1)
+      ::
+
+          str(hprice1)

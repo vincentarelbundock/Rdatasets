@@ -1,29 +1,31 @@
 .. container::
 
-   ====== ===============
-   prison R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: prison
-      :name: prison
+      ====== ===============
+      prison R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: prison
+         :name: prison
 
-   prison
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      prison
 
-   Quarterly time series of prisoner numbers in Australia from 2005 to
-   2016, split by sex, state and legal status. ``prisonLF`` is a
-   long-form version of the data of class ``data.frame``, while
-   ``prison`` is in wide form and of class ``mts``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Examples
-      :name: examples
+      Quarterly time series of prisoner numbers in Australia from 2005
+      to 2016, split by sex, state and legal status. ``prisonLF`` is a
+      long-form version of the data of class ``data.frame``, while
+      ``prison`` is in wide form and of class ``mts``.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      autoplot(prison)
-      head(prisonLF)
+      ::
+
+         autoplot(prison)
+         head(prisonLF)

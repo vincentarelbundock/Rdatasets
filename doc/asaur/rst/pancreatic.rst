@@ -1,61 +1,64 @@
 .. container::
 
-   ========== ===============
-   pancreatic R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: pancreatic
-      :name: pancreatic
+      ========== ===============
+      pancreatic R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: pancreatic
+         :name: pancreatic
 
-   Data from a Phase II clinical trial of patients with locally advanced
-   or metastatic pancreatic cancer.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from a Phase II clinical trial of patients with locally
+      advanced or metastatic pancreatic cancer.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("pancreatic")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("pancreatic")
 
-   A data frame with 41 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``stage``
-      a factor with levels ``LA`` (locally advanced) or ``M``
-      (metastatic)
+      A data frame with 41 observations on the following 4 variables.
 
-   ``onstudy``
-      date of enrollment into the clinical trial, in month/day/year
-      format
+      ``stage``
+         a factor with levels ``LA`` (locally advanced) or ``M``
+         (metastatic)
 
-   ``progression``
-      date of progression, in month/day/year format
+      ``onstudy``
+         date of enrollment into the clinical trial, in month/day/year
+         format
 
-   ``death``
-      date of death, in month/day/year format
+      ``progression``
+         date of progression, in month/day/year format
 
-   .. rubric:: Details
-      :name: details
+      ``death``
+         date of death, in month/day/year format
 
-   Since all patients in this study have known death dates, there is no
-   censoring.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: References
-      :name: references
+      Since all patients in this study have known death dates, there is
+      no censoring.
 
-   Moss RA, Moore D, Mulcahy MF, Nahum K, Saraiya B, Eddy S, Kleber M,
-   and Poplin EA (2012) A multi-institutional phase 2 study of imatinib
-   mesylate and gemcitabine for first-line treatment of advanced
-   pancreatic cancer. Gastrointestinal Cancer Research 5, 77 - 83.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Moss RA, Moore D, Mulcahy MF, Nahum K, Saraiya B, Eddy S, Kleber
+      M, and Poplin EA (2012) A multi-institutional phase 2 study of
+      imatinib mesylate and gemcitabine for first-line treatment of
+      advanced pancreatic cancer. Gastrointestinal Cancer Research 5, 77
+      - 83.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(pancreatic)
+      ::
+
+         data(pancreatic)

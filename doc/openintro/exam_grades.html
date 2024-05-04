@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>exam_grades</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='exam_grades'>Exam and course grades for statistics students</h2>
+<h2>Exam and course grades for statistics students</h2>
 
 <h3>Description</h3>
 
@@ -75,6 +75,7 @@ exam_grades %&gt;%
   summarise(across(exam1:course_grade, mean, na.rm = TRUE))
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

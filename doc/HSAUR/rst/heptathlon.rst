@@ -1,83 +1,87 @@
 .. container::
 
-   ========== ===============
-   heptathlon R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Olympic Heptathlon Seoul 1988
-      :name: heptathlon
+      ========== ===============
+      heptathlon R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Olympic Heptathlon Seoul 1988
+         :name: olympic-heptathlon-seoul-1988
 
-   Results of the olympic heptathlon competition, Seoul, 1988.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Results of the olympic heptathlon competition, Seoul, 1988.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("heptathlon")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("heptathlon")
 
-   A data frame with 25 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``hurdles``
-      results 100m hurdles.
+      A data frame with 25 observations on the following 8 variables.
 
-   ``highjump``
-      results high jump.
+      ``hurdles``
+         results 100m hurdles.
 
-   ``shot``
-      results shot.
+      ``highjump``
+         results high jump.
 
-   ``run200m``
-      results 200m race.
+      ``shot``
+         results shot.
 
-   ``longjump``
-      results long jump.
+      ``run200m``
+         results 200m race.
 
-   ``javelin``
-      results javelin.
+      ``longjump``
+         results long jump.
 
-   ``run800m``
-      results 800m race.
+      ``javelin``
+         results javelin.
 
-   ``score``
-      total score.
+      ``run800m``
+         results 800m race.
 
-   .. rubric:: Details
-      :name: details
+      ``score``
+         total score.
 
-   The first combined Olympic event for women was the pentathlon, first
-   held in Germany in 1928. Initially this consisted of the shot putt,
-   long jump, 100m, high jump and javelin events held over two days. The
-   pentathlon was first introduced into the Olympic Games in 1964, when
-   it consisted of the 80m hurdles, shot, high jump, long jump and 200m.
-   In 1977 the 200m was replaced by the 800m and from 1981 the IAAF
-   brought in the seven-event heptathlon in place of the pentathlon,
-   with day one containing the events-100m hurdles, shot, high jump,
-   200m and day two, the long jump, javelin and 800m. A scoring system
-   is used to assign points to the results from each event and the
-   winner is the woman who accumulates the most points over the two
-   days. The event made its first Olympic appearance in 1984.
+      .. rubric:: Details
+         :name: details
 
-   In the 1988 Olympics held in Seoul, the heptathlon was won by one of
-   the stars of women's athletics in the USA, Jackie Joyner-Kersee. The
-   results for all 25 competitors are given here.
+      The first combined Olympic event for women was the pentathlon,
+      first held in Germany in 1928. Initially this consisted of the
+      shot putt, long jump, 100m, high jump and javelin events held over
+      two days. The pentathlon was first introduced into the Olympic
+      Games in 1964, when it consisted of the 80m hurdles, shot, high
+      jump, long jump and 200m. In 1977 the 200m was replaced by the
+      800m and from 1981 the IAAF brought in the seven-event heptathlon
+      in place of the pentathlon, with day one containing the
+      events-100m hurdles, shot, high jump, 200m and day two, the long
+      jump, javelin and 800m. A scoring system is used to assign points
+      to the results from each event and the winner is the woman who
+      accumulates the most points over the two days. The event made its
+      first Olympic appearance in 1984.
 
-   .. rubric:: Source
-      :name: source
+      In the 1988 Olympics held in Seoul, the heptathlon was won by one
+      of the stars of women's athletics in the USA, Jackie
+      Joyner-Kersee. The results for all 25 competitors are given here.
 
-   D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
-   (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC, London.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
+      (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC,
+      London.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("heptathlon", package = "HSAUR")
-        plot(heptathlon)
+      ::
+
+           data("heptathlon", package = "HSAUR")
+           plot(heptathlon)

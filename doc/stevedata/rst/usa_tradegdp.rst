@@ -1,50 +1,52 @@
 .. container::
 
-   ============ ===============
-   usa_tradegdp R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: U.S. Trade and GDP, 1790-2018
-      :name: usa_tradegdp
+      ============ ===============
+      usa_tradegdp R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: U.S. Trade and GDP, 1790-2018
+         :name: u.s.-trade-and-gdp-1790-2018
 
-   A yearly data set on U.S. trade and GDP from 1790 to 2018. Data also
-   include a population variable to facilitate per capita adjustments,
-   if the user sees it useful.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A yearly data set on U.S. trade and GDP from 1790 to 2018. Data
+      also include a population variable to facilitate per capita
+      adjustments, if the user sees it useful.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      usa_tradegdp
+      ::
 
-   .. rubric:: Format
-      :name: format
+         usa_tradegdp
 
-   A data frame with 229 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``year``
-      the year
+      A data frame with 229 observations on the following 5 variables.
 
-   ``gdpb``
-      U.S. GDP (nominal, in billions)
+      ``year``
+         the year
 
-   ``pop``
-      Population of the U.S. (in thousands)
+      ``gdpb``
+         U.S. GDP (nominal, in billions)
 
-   ``impo``
-      The value of U.S. imports (in billions)
+      ``pop``
+         Population of the U.S. (in thousands)
 
-   ``expo``
-      The value of U.S. exports (in billions)
+      ``impo``
+         The value of U.S. imports (in billions)
 
-   .. rubric:: Details
-      :name: details
+      ``expo``
+         The value of U.S. exports (in billions)
 
-   Data come from various sources (see, especially:
-   https://econdataus.com/tradeall.html). Post-1989 data come from the
-   U.S. Census Bureau. 2018 GDP comes from the IMF. 2018 population
-   estimate comes from the U.S. Census Bureau.
+      .. rubric:: Details
+         :name: details
+
+      Data come from various sources (see, especially:
+      https://econdataus.com/tradeall.html). Post-1989 data come from
+      the U.S. Census Bureau. 2018 GDP comes from the IMF. 2018
+      population estimate comes from the U.S. Census Bureau.

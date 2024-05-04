@@ -1,46 +1,48 @@
 .. container::
 
-   ================ ===============
-   assortive_mating R Documentation
-   ================ ===============
+   .. container::
 
-   .. rubric:: Eye color of couples
-      :name: assortive_mating
+      ================ ===============
+      assortive_mating R Documentation
+      ================ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Eye color of couples
+         :name: eye-color-of-couples
 
-   Colors of the eye colors of male and female partners.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Colors of the eye colors of male and female partners.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      assortative_mating
+      ::
 
-   .. rubric:: Format
-      :name: format
+         assortative_mating
 
-   A data frame with 204 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   self_male
-      a factor with levels ``blue``, ``brown``, and ``green``
+      A data frame with 204 observations on the following 2 variables.
 
-   partner_female
-      a factor with ``blue``, ``brown``, and ``green``
+      self_male
+         a factor with levels ``blue``, ``brown``, and ``green``
 
-   .. rubric:: Source
-      :name: source
+      partner_female
+         a factor with ``blue``, ``brown``, and ``green``
 
-   B. Laeng et al. Why do blue-eyed men prefer women with the same eye
-   color? In: Behavioral Ecology and Sociobiology 61.3 (2007), pp.
-   371-384.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      B. Laeng et al. Why do blue-eyed men prefer women with the same
+      eye color? In: Behavioral Ecology and Sociobiology 61.3 (2007),
+      pp. 371-384.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(assortive_mating)
-      table(assortive_mating)
+      ::
+
+         data(assortive_mating)
+         table(assortive_mating)

@@ -1,56 +1,59 @@
 .. container::
 
-   ========= ===============
-   stVincent R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Averages by block of yields for the St. Vincent Corn data
-      :name: stVincent
+      ========= ===============
+      stVincent R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Averages by block of yields for the St. Vincent Corn
+         data
+         :name: averages-by-block-of-yields-for-the-st.-vincent-corn-data
 
-   These data frames have yield averages by blocks (parcels).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These data frames have yield averages by blocks (parcels).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      stVincent
+      ::
 
-   .. rubric:: Format
-      :name: format
+         stVincent
 
-   A data frame with 324 observations on 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   code
-      a numeric vector
+      A data frame with 324 observations on 8 variables.
 
-   island
-      a numeric vector
+      code
+         a numeric vector
 
-   id
-      a numeric vector
+      island
+         a numeric vector
 
-   site
-      a factor with 8 levels.
+      id
+         a numeric vector
 
-   block
-      a factor with levels ``I`` ``II`` ``III`` ``IV``
+      site
+         a factor with 8 levels.
 
-   plot
-      a numeric vector
+      block
+         a factor with levels ``I`` ``II`` ``III`` ``IV``
 
-   trt
-      a factor consisting of 12 levels
+      plot
+         a numeric vector
 
-   harvwt
-      a numeric vector; the average yield
+      trt
+         a factor consisting of 12 levels
 
-   .. rubric:: Source
-      :name: source
+      harvwt
+         a numeric vector; the average yield
 
-   Andrews DF; Herzberg AM, 1985. Data. A Collection of Problems from
-   Many Fields for the Student and Research Worker. Springer-Verlag.
-   (pp. 339-353)
+      .. rubric:: Source
+         :name: source
+
+      Andrews DF; Herzberg AM, 1985. Data. A Collection of Problems from
+      Many Fields for the Student and Research Worker. Springer-Verlag.
+      (pp. 339-353)

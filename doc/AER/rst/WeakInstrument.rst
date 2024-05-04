@@ -1,59 +1,61 @@
 .. container::
 
-   ============== ===============
-   WeakInstrument R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Artificial Weak Instrument Data
-      :name: WeakInstrument
+      ============== ===============
+      WeakInstrument R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Artificial Weak Instrument Data
+         :name: artificial-weak-instrument-data
 
-   Artificial data set to illustrate the problem of weak instruments.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Artificial data set to illustrate the problem of weak instruments.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("WeakInstrument")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("WeakInstrument")
 
-   A data frame containing 200 observations on 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   y
-      dependent variable.
+      A data frame containing 200 observations on 3 variables.
 
-   x
-      regressor variable.
+      y
+         dependent variable.
 
-   z
-      instrument variable.
+      x
+         regressor variable.
 
-   .. rubric:: Source
-      :name: source
+      z
+         instrument variable.
 
-   Online complements to Stock and Watson (2007).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Stock and Watson (2007).
 
-   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
-   2nd ed. Boston: Addison Wesley.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, J.H. and Watson, M.W. (2007). *Introduction to
+      Econometrics*, 2nd ed. Boston: Addison Wesley.
 
-   ``StockWatson2007``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``StockWatson2007``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("WeakInstrument")
-      fm <- ivreg(y ~ x | z, data = WeakInstrument)
-      summary(fm)
+      ::
+
+         data("WeakInstrument")
+         fm <- ivreg(y ~ x | z, data = WeakInstrument)
+         summary(fm)

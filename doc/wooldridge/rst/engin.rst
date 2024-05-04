@@ -1,89 +1,91 @@
 .. container::
 
-   ===== ===============
-   engin R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: engin
-      :name: engin
+      ===== ===============
+      engin R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: engin
+         :name: engin
 
-   Wooldridge Source: Thada Chaisawangwong, a former graduate student at
-   MSU, obtained these data for a term project in applied econometrics.
-   They come from the Material Requirement Planning Survey carried out
-   in Thailand during 1998. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Thada Chaisawangwong, a former graduate student
+      at MSU, obtained these data for a term project in applied
+      econometrics. They come from the Material Requirement Planning
+      Survey carried out in Thailand during 1998. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('engin')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('engin')
 
-   A data.frame with 403 observations on 17 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **male:** =1 if male
+      A data.frame with 403 observations on 17 variables:
 
-   -  **educ:** highest grade completed
+      -  **male:** =1 if male
 
-   -  **wage:** monthly salary, Thai baht
+      -  **educ:** highest grade completed
 
-   -  **swage:** starting wage
+      -  **wage:** monthly salary, Thai baht
 
-   -  **exper:** years on current job
+      -  **swage:** starting wage
 
-   -  **pexper:** previous experience
+      -  **exper:** years on current job
 
-   -  **lwage:** log(wage)
+      -  **pexper:** previous experience
 
-   -  **expersq:** exper^2
+      -  **lwage:** log(wage)
 
-   -  **highgrad:** =1 if high school graduate
+      -  **expersq:** exper^2
 
-   -  **college:** =1 if college graduate
+      -  **highgrad:** =1 if high school graduate
 
-   -  **grad:** =1 if some graduate school
+      -  **college:** =1 if college graduate
 
-   -  **polytech:** =1 if a polytech
+      -  **grad:** =1 if some graduate school
 
-   -  **highdrop:** =1 if no high school degree
+      -  **polytech:** =1 if a polytech
 
-   -  **lswage:** log(swage)
+      -  **highdrop:** =1 if no high school degree
 
-   -  **pexpersq:** pexper^2
+      -  **lswage:** log(swage)
 
-   -  **mleeduc:** male*educ
+      -  **pexpersq:** pexper^2
 
-   -  **mleeduc0:** male*(educ - 14)
+      -  **mleeduc:** male*educ
 
-   .. rubric:: Notes
-      :name: notes
+      -  **mleeduc0:** male*(educ - 14)
 
-   This is a nice change of pace from wage data sets for the United
-   States. These data are for engineers in Thailand, and represents a
-   more homogeneous group than data sets that consist of people across a
-   variety of occupations. Plus, the starting salary is also provided in
-   the data set, so factors affecting wage growth – and not just wage
-   levels at a given point in time – can be studied. This is a good data
-   set for a common term project that tests basic understanding of
-   multiple regression and the interpretation of models with a logarithm
-   for a dependent variable.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: not used
+      This is a nice change of pace from wage data sets for the United
+      States. These data are for engineers in Thailand, and represents a
+      more homogeneous group than data sets that consist of people
+      across a variety of occupations. Plus, the starting salary is also
+      provided in the data set, so factors affecting wage growth – and
+      not just wage levels at a given point in time – can be studied.
+      This is a good data set for a common term project that tests basic
+      understanding of multiple regression and the interpretation of
+      models with a logarithm for a dependent variable.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: not used
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(engin)
+      ::
+
+          str(engin)

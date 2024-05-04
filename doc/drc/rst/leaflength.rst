@@ -1,61 +1,63 @@
 .. container::
 
-   ========== ===============
-   leaflength R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Leaf length of barley
-      :name: leaflength
+      ========== ===============
+      leaflength R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Leaf length of barley
+         :name: leaf-length-of-barley
 
-   In an experiment barley was grown in a hydroponic solution with a
-   herbicide.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      In an experiment barley was grown in a hydroponic solution with a
+      herbicide.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(leaflength)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(leaflength)
 
-   A data frame with 42 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Dose``
-      a numeric vector
+      A data frame with 42 observations on the following 2 variables.
 
-   ``DW``
-      a numeric vector
+      ``Dose``
+         a numeric vector
 
-   .. rubric:: Details
-      :name: details
+      ``DW``
+         a numeric vector
 
-   The dataset exhibits a large hormetical effect.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The dataset exhibits a large hormetical effect.
 
-   Nina Cedergreen, Royal Veterinary and Agricultural University,
-   Denmark.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Nina Cedergreen, Royal Veterinary and Agricultural University,
+      Denmark.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## Fitting a hormesis model
-      leaflength.crs4c1 <- drm(DW ~ Dose, data = leaflength, fct = CRS.4c())
-      plot(fitted(leaflength.crs4c1), residuals(leaflength.crs4c1))
+      ::
 
-      leaflength.crs4c2 <- boxcox(drm(DW ~ Dose, data = leaflength, fct = CRS.4c()), 
-      method = "anova", plotit = FALSE)
-      summary(leaflength.crs4c2)
+         ## Fitting a hormesis model
+         leaflength.crs4c1 <- drm(DW ~ Dose, data = leaflength, fct = CRS.4c())
+         plot(fitted(leaflength.crs4c1), residuals(leaflength.crs4c1))
 
-      ## Plottinf fitted curve and original data
-      plot(leaflength.crs4c2, broken = TRUE, conLevel = 0.001, type = "all", legend = FALSE, 
-      ylab = "Produced leaf length (cm)", xlab = "Metsulfuron-methyl (mg/l)",
-      main = "Hormesis: leaf length of barley")
+         leaflength.crs4c2 <- boxcox(drm(DW ~ Dose, data = leaflength, fct = CRS.4c()), 
+         method = "anova", plotit = FALSE)
+         summary(leaflength.crs4c2)
+
+         ## Plottinf fitted curve and original data
+         plot(leaflength.crs4c2, broken = TRUE, conLevel = 0.001, type = "all", legend = FALSE, 
+         ylab = "Produced leaf length (cm)", xlab = "Metsulfuron-methyl (mg/l)",
+         main = "Hormesis: leaf length of barley")

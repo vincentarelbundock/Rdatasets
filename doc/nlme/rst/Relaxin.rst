@@ -1,34 +1,36 @@
 .. container::
 
-   ======= ===============
-   Relaxin R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Assay for Relaxin
-      :name: Relaxin
+      ======= ===============
+      Relaxin R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Assay for Relaxin
+         :name: assay-for-relaxin
 
-   The ``Relaxin`` data frame has 198 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``Relaxin`` data frame has 198 rows and 3 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Run
-      an ordered factor with levels ``5`` < ``8`` < ``9`` < ``3`` <
-      ``4`` < ``2`` < ``7`` < ``1`` < ``6``
+      This data frame contains the following columns:
 
-   conc
-      a numeric vector
+      Run
+         an ordered factor with levels ``5`` < ``8`` < ``9`` < ``3`` <
+         ``4`` < ``2`` < ``7`` < ``1`` < ``6``
 
-   cAMP
-      a numeric vector
+      conc
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      cAMP
+         a numeric vector
 
-   Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S
-   and S-PLUS*, Springer, New York.
+      .. rubric:: Source
+         :name: source
+
+      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
+      S and S-PLUS*, Springer, New York.

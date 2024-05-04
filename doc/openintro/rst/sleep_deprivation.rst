@@ -1,48 +1,50 @@
 .. container::
 
-   ================= ===============
-   sleep_deprivation R Documentation
-   ================= ===============
+   .. container::
 
-   .. rubric:: Survey on sleep deprivation and transportation workers
-      :name: sleep_deprivation
+      ================= ===============
+      sleep_deprivation R Documentation
+      ================= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Survey on sleep deprivation and transportation workers
+         :name: survey-on-sleep-deprivation-and-transportation-workers
 
-   The National Sleep Foundation conducted a survey on the sleep habits
-   of randomly sampled transportation workers and a control sample of
-   non-transportation workers.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The National Sleep Foundation conducted a survey on the sleep
+      habits of randomly sampled transportation workers and a control
+      sample of non-transportation workers.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      sleep_deprivation
+      ::
 
-   .. rubric:: Format
-      :name: format
+         sleep_deprivation
 
-   A data frame with 1087 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   sleep
-      a factor with levels ``<6``, ``6-8``, and ``>8``
+      A data frame with 1087 observations on the following 2 variables.
 
-   profession
-      a factor with levels ``bus / taxi / limo drivers``, ``control``,
-      ``pilots``, ``train operators``, ``truck drivers``
+      sleep
+         a factor with levels ``<6``, ``6-8``, and ``>8``
 
-   .. rubric:: Source
-      :name: source
+      profession
+         a factor with levels ``bus / taxi / limo drivers``,
+         ``control``, ``pilots``, ``train operators``, ``truck drivers``
 
-   National Sleep Foundation, 2012 Sleep in America Poll: Transportation
-   Workers' Sleep, 2012.
-   https://www.sleepfoundation.org/professionals/sleep-americar-polls/2012-sleep-america-poll-transportation-workers-sleep
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      National Sleep Foundation, 2012 Sleep in America Poll:
+      Transportation Workers' Sleep, 2012.
+      https://www.sleepfoundation.org/professionals/sleep-americar-polls/2012-sleep-america-poll-transportation-workers-sleep
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      sleep_deprivation
+      ::
+
+         sleep_deprivation

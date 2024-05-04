@@ -1,48 +1,51 @@
 .. container::
 
-   ======= ===============
-   avandia R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Cardiovascular problems for two types of Diabetes
-      medicines
-      :name: avandia
+      ======= ===============
+      avandia R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cardiovascular problems for two types of Diabetes
+         medicines
+         :name: cardiovascular-problems-for-two-types-of-diabetes-medicines
 
-   A comparison of cardiovascular problems for Rosiglitazone and
-   Pioglitazone.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A comparison of cardiovascular problems for Rosiglitazone and
+      Pioglitazone.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      avandia
+      ::
 
-   .. rubric:: Format
-      :name: format
+         avandia
 
-   A data frame with 227571 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   treatment
-      a factor with levels ``Pioglitazone`` and ``Rosiglitazone``
+      A data frame with 227571 observations on the following 2
+      variables.
 
-   cardiovascular_problems
-      a factor with levels ``no`` and ``yes``
+      treatment
+         a factor with levels ``Pioglitazone`` and ``Rosiglitazone``
 
-   .. rubric:: Source
-      :name: source
+      cardiovascular_problems
+         a factor with levels ``no`` and ``yes``
 
-   D.J. Graham et al. Risk of acute myocardial infarction, stroke, heart
-   failure, and death in elderly Medicare patients treated with
-   rosiglitazone or pioglitazone. In: JAMA 304.4 (2010), p. 411. issn:
-   0098-7484.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      D.J. Graham et al. Risk of acute myocardial infarction, stroke,
+      heart failure, and death in elderly Medicare patients treated with
+      rosiglitazone or pioglitazone. In: JAMA 304.4 (2010), p. 411.
+      issn: 0098-7484.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      table(avandia)
+      ::
+
+         table(avandia)

@@ -1,60 +1,63 @@
 .. container::
 
-   ========== ===============
-   WeightLoss R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Weight Loss Data
-      :name: WeightLoss
+      ========== ===============
+      WeightLoss R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Weight Loss Data
+         :name: weight-loss-data
 
-   Contrived data on weight loss and self esteem over three months, for
-   three groups of individuals: Control, Diet and Diet + Exercise. The
-   data constitute a double-multivariate design.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Contrived data on weight loss and self esteem over three months,
+      for three groups of individuals: Control, Diet and Diet +
+      Exercise. The data constitute a double-multivariate design.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      WeightLoss
+      ::
 
-   .. rubric:: Format
-      :name: format
+         WeightLoss
 
-   A data frame with 34 observations on the following 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``group``
-      a factor with levels ``Control`` ``Diet`` ``DietEx``.
+      A data frame with 34 observations on the following 7 variables.
 
-   ``wl1``
-      Weight loss at 1 month
+      ``group``
+         a factor with levels ``Control`` ``Diet`` ``DietEx``.
 
-   ``wl2``
-      Weight loss at 2 months
+      ``wl1``
+         Weight loss at 1 month
 
-   ``wl3``
-      Weight loss at 3 months
+      ``wl2``
+         Weight loss at 2 months
 
-   ``se1``
-      Self esteem at 1 month
+      ``wl3``
+         Weight loss at 3 months
 
-   ``se2``
-      Self esteem at 2 months
+      ``se1``
+         Self esteem at 1 month
 
-   ``se3``
-      Self esteem at 3 months
+      ``se2``
+         Self esteem at 2 months
 
-   .. rubric:: Details
-      :name: details
+      ``se3``
+         Self esteem at 3 months
 
-   Helmert contrasts are assigned to ``group``, comparing ``Control``
-   vs. (``Diet`` ``DietEx``) and ``Diet`` vs. ``DietEx``.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Helmert contrasts are assigned to ``group``, comparing ``Control``
+      vs. (``Diet`` ``DietEx``) and ``Diet`` vs. ``DietEx``.
 
-   Originally taken from http://www.csun.edu/~ata20315/psy524/main.htm,
-   but modified slightly. Courtesy of Michael Friendly.
+      .. rubric:: Source
+         :name: source
+
+      Originally taken from
+      http://www.csun.edu/~ata20315/psy524/main.htm, but modified
+      slightly. Courtesy of Michael Friendly.

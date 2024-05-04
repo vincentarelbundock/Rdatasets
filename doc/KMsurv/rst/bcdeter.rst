@@ -1,42 +1,44 @@
 .. container::
 
-   ======= ===============
-   bcdeter R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: data from Section 1.18
-      :name: bcdeter
+      ======= ===============
+      bcdeter R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Section 1.18
+         :name: data-from-section-1.18
 
-   The ``bcdeter`` data frame has 92 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``bcdeter`` data frame has 92 rows and 3 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   lower
-      Lower limit of interval, months
+      This data frame contains the following columns:
 
-   upper
-      Upper limit of interval, months
+      lower
+         Lower limit of interval, months
 
-   treat
-      Treatment regimen (1=radiotherapy only, 2=radiotherapy +
-      chemotherapy)
+      upper
+         Upper limit of interval, months
 
-   .. rubric:: Source
-      :name: source
+      treat
+         Treatment regimen (1=radiotherapy only, 2=radiotherapy +
+         chemotherapy)
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer. Beadle et al Cancer 54
-   (1984):2911-2918.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer. Beadle et al Cancer 54
+      (1984):2911-2918.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(bcdeter)
+      ::
+
+         data(bcdeter)

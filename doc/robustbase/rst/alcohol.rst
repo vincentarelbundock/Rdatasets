@@ -1,73 +1,76 @@
 .. container::
 
-   ======= ===============
-   alcohol R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Alcohol Solubility in Water Data
-      :name: alcohol
+      ======= ===============
+      alcohol R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Alcohol Solubility in Water Data
+         :name: alcohol-solubility-in-water-data
 
-   The solubility of alcohols in water is important in understanding
-   alcohol transport in living organisms. This dataset from (Romanelli
-   et al., 2001) contains physicochemical characteristics of 44
-   aliphatic alcohols. The aim of the experiment was the prediction of
-   the solubility on the basis of molecular descriptors.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The solubility of alcohols in water is important in understanding
+      alcohol transport in living organisms. This dataset from
+      (Romanelli et al., 2001) contains physicochemical characteristics
+      of 44 aliphatic alcohols. The aim of the experiment was the
+      prediction of the solubility on the basis of molecular
+      descriptors.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(alcohol, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(alcohol, package="robustbase")
 
-   A data frame with 44 observations on the following 7 numeric
-   variables.
+      .. rubric:: Format
+         :name: format
 
-   ``SAG``
-      solvent accessible surface-bounded molecular volume.
+      A data frame with 44 observations on the following 7 numeric
+      variables.
 
-   ``V``
-      volume
+      ``SAG``
+         solvent accessible surface-bounded molecular volume.
 
-   ``logPC``
-      Log(PC); PC = octanol-water partitions coefficient
+      ``V``
+         volume
 
-   ``P``
-      polarizability
+      ``logPC``
+         Log(PC); PC = octanol-water partitions coefficient
 
-   ``RM``
-      molar refractivity
+      ``P``
+         polarizability
 
-   ``Mass``
-      the mass
+      ``RM``
+         molar refractivity
 
-   ``logSolubility``
-      ln(Solubility), the response.
+      ``Mass``
+         the mass
 
-   .. rubric:: Source
-      :name: source
+      ``logSolubility``
+         ln(Solubility), the response.
 
-   The website accompanying the MMY-book:
-   https://www.wiley.com/legacy/wileychi/robust_statistics/
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The website accompanying the MMY-book:
+      https://www.wiley.com/legacy/wileychi/robust_statistics/
 
-   Maronna, R.A., Martin, R.D. and Yohai, V.J. (2006) *Robust
-   Statistics, Theory and Methods*, Wiley.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Maronna, R.A., Martin, R.D. and Yohai, V.J. (2006) *Robust
+      Statistics, Theory and Methods*, Wiley.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(alcohol)
-      ## version of data set with trivial names, as
-      s.alcohol <- alcohol
-      names(s.alcohol) <- paste("Col", 1:7, sep='')
+      ::
+
+         data(alcohol)
+         ## version of data set with trivial names, as
+         s.alcohol <- alcohol
+         names(s.alcohol) <- paste("Col", 1:7, sep='')

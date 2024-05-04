@@ -1,34 +1,36 @@
 .. container::
 
-   ========= ===============
-   hyndsight R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Daily pageviews for the Hyndsight blog. 30 April 2014 to
-      29 April 2015.
-      :name: hyndsight
+      ========= ===============
+      hyndsight R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Daily pageviews for the Hyndsight blog. 30 April 2014
+         to 29 April 2015.
+         :name: daily-pageviews-for-the-hyndsight-blog.-30-april-2014-to-29-april-2015.
 
-   Hyndsight is Rob Hyndman's personal blog at
-   https://robjhyndman.com/hyndsight/. This series contains the daily
-   pageviews for one year, beginning 30 April 2014. The frequency is set
-   to 7, to allow the weekly pattern to be modelled.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Hyndsight is Rob Hyndman's personal blog at
+      https://robjhyndman.com/hyndsight/. This series contains the daily
+      pageviews for one year, beginning 30 April 2014. The frequency is
+      set to 7, to allow the weekly pattern to be modelled.
 
-   Time series object of class ``ts``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Time series object of class ``ts``.
 
-   Rob Hyndman
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Rob Hyndman
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      autoplot(hyndsight, xlab="Weeks")
+      ::
+
+         autoplot(hyndsight, xlab="Weeks")

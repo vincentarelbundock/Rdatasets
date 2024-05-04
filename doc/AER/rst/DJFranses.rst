@@ -1,50 +1,52 @@
 .. container::
 
-   ========= ===============
-   DJFranses R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Dow Jones Index Data (Franses)
-      :name: DJFranses
+      ========= ===============
+      DJFranses R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Dow Jones Index Data (Franses)
+         :name: dow-jones-index-data-franses
 
-   Dow Jones index time series computed at the end of the week where
-   week is assumed to run from Thursday to Wednesday.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Dow Jones index time series computed at the end of the week where
+      week is assumed to run from Thursday to Wednesday.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("DJFranses")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("DJFranses")
 
-   A weekly univariate time series from 1980(1) to 1994(42).
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A weekly univariate time series from 1980(1) to 1994(42).
 
-   Online complements to Franses (1998).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Franses (1998).
 
-   Franses, P.H. (1998). *Time Series Models for Business and Economic
-   Forecasting*. Cambridge, UK: Cambridge University Press.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Franses, P.H. (1998). *Time Series Models for Business and
+      Economic Forecasting*. Cambridge, UK: Cambridge University Press.
 
-   ``Franses1998``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Franses1998``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("DJFranses")
-      plot(DJFranses)
+      ::
+
+         data("DJFranses")
+         plot(DJFranses)

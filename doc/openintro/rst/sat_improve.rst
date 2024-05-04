@@ -1,36 +1,38 @@
 .. container::
 
-   =========== ===============
-   sat_improve R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Simulated data for SAT score improvement
-      :name: sat_improve
+      =========== ===============
+      sat_improve R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Simulated data for SAT score improvement
+         :name: simulated-data-for-sat-score-improvement
 
-   Fake data for score improvements from students who took a course from
-   an SAT score improvement company.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Fake data for score improvements from students who took a course
+      from an SAT score improvement company.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      sat_improve
+      ::
 
-   .. rubric:: Format
-      :name: format
+         sat_improve
 
-   A data frame with 30 observations on the following variable.
+      .. rubric:: Format
+         :name: format
 
-   sat_improve
-      a numeric vector
-
-   .. rubric:: Examples
-      :name: examples
-
-   .. code:: R
+      A data frame with 30 observations on the following variable.
 
       sat_improve
+         a numeric vector
+
+      .. rubric:: Examples
+         :name: examples
+
+      ::
+
+         sat_improve

@@ -1,74 +1,77 @@
 .. container::
 
-   ===== ===============
-   bwght R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: bwght
-      :name: bwght
+      ===== ===============
+      bwght R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: bwght
+         :name: bwght
 
-   Wooldridge Source: J. Mullahy (1997), “Instrumental-Variable
-   Estimation of Count Data Models: Applications to Models of Cigarette
-   Smoking Behavior,” Review of Economics and Statistics 79, 596-593.
-   Professor Mullahy kindly provided the data. He obtained them from the
-   1988 National Health Interview Survey. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: J. Mullahy (1997), “Instrumental-Variable
+      Estimation of Count Data Models: Applications to Models of
+      Cigarette Smoking Behavior,” Review of Economics and Statistics
+      79, 596-593. Professor Mullahy kindly provided the data. He
+      obtained them from the 1988 National Health Interview Survey. Data
+      loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('bwght')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('bwght')
 
-   A data.frame with 1388 observations on 14 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **faminc:** 1988 family income, $1000s
+      A data.frame with 1388 observations on 14 variables:
 
-   -  **cigtax:** cig. tax in home state, 1988
+      -  **faminc:** 1988 family income, $1000s
 
-   -  **cigprice:** cig. price in home state, 1988
+      -  **cigtax:** cig. tax in home state, 1988
 
-   -  **bwght:** birth weight, ounces
+      -  **cigprice:** cig. price in home state, 1988
 
-   -  **fatheduc:** father's yrs of educ
+      -  **bwght:** birth weight, ounces
 
-   -  **motheduc:** mother's yrs of educ
+      -  **fatheduc:** father's yrs of educ
 
-   -  **parity:** birth order of child
+      -  **motheduc:** mother's yrs of educ
 
-   -  **male:** =1 if male child
+      -  **parity:** birth order of child
 
-   -  **white:** =1 if white
+      -  **male:** =1 if male child
 
-   -  **cigs:** cigs smked per day while preg
+      -  **white:** =1 if white
 
-   -  **lbwght:** log of bwght
+      -  **cigs:** cigs smked per day while preg
 
-   -  **bwghtlbs:** birth weight, pounds
+      -  **lbwght:** log of bwght
 
-   -  **packs:** packs smked per day while preg
+      -  **bwghtlbs:** birth weight, pounds
 
-   -  **lfaminc:** log(faminc)
+      -  **packs:** packs smked per day while preg
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **lfaminc:** log(faminc)
 
-   pages 18, 61, 110, 151, 165, 178, 184, 187-188, 258-259, 522-523
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 18, 61, 110, 151, 165, 178, 184, 187-188, 258-259, 522-523
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(bwght)
+      ::
+
+          str(bwght)

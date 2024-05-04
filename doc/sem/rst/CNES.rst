@@ -1,57 +1,60 @@
 .. container::
 
-   ==== ===============
-   CNES R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Variables from the 1997 Canadian National Election Study
-      :name: CNES
+      ==== ===============
+      CNES R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Variables from the 1997 Canadian National Election
+         Study
+         :name: variables-from-the-1997-canadian-national-election-study
 
-   These variables are from the mailback questionnaire to the 1997
-   Canadian National Election Study, and are intended to tap attitude
-   towards “traditional values.”
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These variables are from the mailback questionnaire to the 1997
+      Canadian National Election Study, and are intended to tap attitude
+      towards “traditional values.”
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      CNES
+      ::
 
-   .. rubric:: Format
-      :name: format
+         CNES
 
-   A data frame with 1529 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``MBSA2``
-      an ordered factor with levels ``StronglyDisagree``, ``Disagree``,
-      ``Agree``, and ``StronglyAgree``, in response to the statement,
-      “We should be more tolerant of people who choose to live according
-      to their own standards, even if they are very different from our
-      own.”
+      A data frame with 1529 observations on the following 4 variables.
 
-   ``MBSA7``
-      an ordered factor with levels ``StronglyDisagree``, ``Disagree``,
-      ``Agree``, and ``StronglyAgree``, in response to the statement,
-      “Newer lifestyles are contributing to the breakdown of our
-      society.”
+      ``MBSA2``
+         an ordered factor with levels ``StronglyDisagree``,
+         ``Disagree``, ``Agree``, and ``StronglyAgree``, in response to
+         the statement, “We should be more tolerant of people who choose
+         to live according to their own standards, even if they are very
+         different from our own.”
 
-   ``MBSA8``
-      an ordered factor with levels ``StronglyDisagree``, ``Disagree``,
-      ``Agree``, and ``StronglyAgree``, in response to the statement,
-      “The world is always changing and we should adapt our view of
-      moral behaviour to these changes.”
+      ``MBSA7``
+         an ordered factor with levels ``StronglyDisagree``,
+         ``Disagree``, ``Agree``, and ``StronglyAgree``, in response to
+         the statement, “Newer lifestyles are contributing to the
+         breakdown of our society.”
 
-   ``MBSA9``
-      an ordered factor with levels ``StronglyDisagree``, ``Disagree``,
-      ``Agree``, and ``StronglyAgree``, in response to the statement,
-      “This country would have many fewer problems if there were more
-      emphasis on traditional family values.”
+      ``MBSA8``
+         an ordered factor with levels ``StronglyDisagree``,
+         ``Disagree``, ``Agree``, and ``StronglyAgree``, in response to
+         the statement, “The world is always changing and we should
+         adapt our view of moral behaviour to these changes.”
 
-   .. rubric:: Source
-      :name: source
+      ``MBSA9``
+         an ordered factor with levels ``StronglyDisagree``,
+         ``Disagree``, ``Agree``, and ``StronglyAgree``, in response to
+         the statement, “This country would have many fewer problems if
+         there were more emphasis on traditional family values.”
 
-   York University Institute for Social Research.
+      .. rubric:: Source
+         :name: source
+
+      York University Institute for Social Research.

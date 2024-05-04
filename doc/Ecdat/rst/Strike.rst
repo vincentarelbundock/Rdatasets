@@ -1,53 +1,55 @@
 .. container::
 
-   ====== ===============
-   Strike R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Strike Duration Data
-      :name: Strike
+      ====== ===============
+      Strike R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Strike Duration Data
+         :name: strike-duration-data
 
-   a cross-section from 1968 to 1976
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 62
+      a cross-section from 1968 to 1976
 
-   *country* : United States
+      *number of observations* : 62
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Strike)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Strike)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   duration
-      strike duration in days
+      A dataframe containing :
 
-   prod
-      unanticipated output
+      duration
+         strike duration in days
 
-   .. rubric:: Source
-      :name: source
+      prod
+         unanticipated output
 
-   Kennan, J. (1985) “The duration of contract strikes in U.S.
-   manufacturing”, *Journal of Econometrics*, **28**, 5-28.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Kennan, J. (1985) “The duration of contract strikes in U.S.
+      manufacturing”, *Journal of Econometrics*, **28**, 5-28.
 
-   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   https://archive.org/details/econometrics0000haya, Table F22.1.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+      https://archive.org/details/econometrics0000haya, Table F22.1.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

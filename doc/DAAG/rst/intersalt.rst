@@ -1,68 +1,70 @@
 .. container::
 
-   ========= ===============
-   intersalt R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Blood pressure versus Salt; inter-population data
-      :name: intersalt
+      ========= ===============
+      intersalt R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Blood pressure versus Salt; inter-population data
+         :name: blood-pressure-versus-salt-inter-population-data
 
-   Median blood pressure, as a fuction of salt intake, for each of 52
-   human populations.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Median blood pressure, as a fuction of salt intake, for each of 52
+      human populations.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      intersalt
+      ::
 
-   .. rubric:: Format
-      :name: format
+         intersalt
 
-   A data frame with 52 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``b``
-      a numeric vector
+      A data frame with 52 observations on the following 4 variables.
 
-   ``bp``
-      mean diastolic blood pressure (mm Hg)
+      ``b``
+         a numeric vector
 
-   ``na``
-      mean sodium excretion (mmol/24h)
+      ``bp``
+         mean diastolic blood pressure (mm Hg)
 
-   ``country``
-      a character vector
+      ``na``
+         mean sodium excretion (mmol/24h)
 
-   .. rubric:: Details
-      :name: details
+      ``country``
+         a character vector
 
-   For each population took a sample of 25 males and 25 females from
-   each decade in the age range 20 - 50, i.e. 200 individuals in all.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      For each population took a sample of 25 males and 25 females from
+      each decade in the age range 20 - 50, i.e. 200 individuals in all.
 
-   Intersalt Cooperative Research Group. 1988. Intersalt: an
-   international study of electrolyte excretion and blood pressure:
-   results for 24 hour urinary sodium and potassium excretion. *British
-   Medical Journal* 297: 319-328.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Intersalt Cooperative Research Group. 1988. Intersalt: an
+      international study of electrolyte excretion and blood pressure:
+      results for 24 hour urinary sodium and potassium excretion.
+      *British Medical Journal* 297: 319-328.
 
-   Maindonald, J.H. *The Design of Research Studies ? A Statistical
-   Perspective*, viii + 109pp. Graduate School Occasional Paper 00/2,
-   Australian National University 2000.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Maindonald, J.H. *The Design of Research Studies ? A Statistical
+      Perspective*, viii + 109pp. Graduate School Occasional Paper 00/2,
+      Australian National University 2000.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(intersalt)
-      plot(bp ~ na, data=intersalt, xlab="Median sodium excretion (mmol/24h)",
-           ylab="Median diatoluc blood pressure (mm Hg)")
+      ::
+
+         data(intersalt)
+         plot(bp ~ na, data=intersalt, xlab="Median sodium excretion (mmol/24h)",
+              ylab="Median diatoluc blood pressure (mm Hg)")

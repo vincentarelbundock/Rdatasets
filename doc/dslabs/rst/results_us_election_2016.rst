@@ -1,83 +1,86 @@
 .. container::
 
-   ====================== ===============
-   polls_us_election_2016 R Documentation
-   ====================== ===============
+   .. container::
 
-   .. rubric:: Fivethirtyeight 2016 Poll Data
-      :name: polls_us_election_2016
+      ====================== ===============
+      polls_us_election_2016 R Documentation
+      ====================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Fivethirtyeight 2016 Poll Data
+         :name: fivethirtyeight-2016-poll-data
 
-   Poll results from US 2016 presidential elections aggregated from
-   HuffPost Pollster, RealClearPolitics, polling firms, and news
-   reports. The dataset also includes election results (popular vote)
-   and electoral college votes in ``results_us_election_2016``.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Poll results from US 2016 presidential elections aggregated from
+      HuffPost Pollster, RealClearPolitics, polling firms, and news
+      reports. The dataset also includes election results (popular vote)
+      and electoral college votes in ``results_us_election_2016``.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      polls_us_election_2016
+      ::
 
-   .. rubric:: Format
-      :name: format
+         polls_us_election_2016
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  state. State in which poll was taken. 'U.S' is for national polls.
+      .. rubric:: Details
+         :name: details
 
-   -  startdate. Poll's start date.
+      -  state. State in which poll was taken. 'U.S' is for national
+         polls.
 
-   -  enddate. Poll's end date.
+      -  startdate. Poll's start date.
 
-   -  pollster. Pollster conducting the poll.
+      -  enddate. Poll's end date.
 
-   -  grade. Grade assigned by fivethirtyeight to pollster.
+      -  pollster. Pollster conducting the poll.
 
-   -  samplesize. Sample size.
+      -  grade. Grade assigned by fivethirtyeight to pollster.
 
-   -  population. Type of population being polled.
+      -  samplesize. Sample size.
 
-   -  rawpoll_clinton. Percentage for Hillary Clinton.
+      -  population. Type of population being polled.
 
-   -  rawpoll_trump. Percentage for Donald Trump
+      -  rawpoll_clinton. Percentage for Hillary Clinton.
 
-   -  rawpoll_johnson. Percentage for Gary Johnson
+      -  rawpoll_trump. Percentage for Donald Trump
 
-   -  rawpoll_mcmullin. Percentage for Evan McMullin.
+      -  rawpoll_johnson. Percentage for Gary Johnson
 
-   -  adjpoll_clinton. Fivethirtyeight adjusted percentage for Hillary
-      Clinton.
+      -  rawpoll_mcmullin. Percentage for Evan McMullin.
 
-   -  ajdpoll_trump. Fivethirtyeight adjusted percentage for Donald
-      Trump
+      -  adjpoll_clinton. Fivethirtyeight adjusted percentage for
+         Hillary Clinton.
 
-   -  adjpoll_johnson. Fivethirtyeight adjusted percentage for Gary
-      Johnson
+      -  ajdpoll_trump. Fivethirtyeight adjusted percentage for Donald
+         Trump
 
-   -  adjpoll_mcmullin. Fivethirtyeight adjusted percentage for Evan
-      McMullin.
+      -  adjpoll_johnson. Fivethirtyeight adjusted percentage for Gary
+         Johnson
 
-   .. rubric:: Source
-      :name: source
+      -  adjpoll_mcmullin. Fivethirtyeight adjusted percentage for Evan
+         McMullin.
 
-   The original csv file used to create ``polls_us_election_2016`` is
-   here:
-   https://projects.fivethirtyeight.com/general-model/president_general_polls_2016.csv
+      .. rubric:: Source
+         :name: source
 
-   The data for ``results_us_election_2016`` is from Ballotpedia and can
-   be found here:
-   https://docs.google.com/spreadsheets/d/1zxyOQDjNOJS_UkzerorUCf2OAdcMcIQEwRciKuYBIZ4/pubhtml?widget=true&headers=false#gid=658726802/
+      The original csv file used to create ``polls_us_election_2016`` is
+      here:
+      https://projects.fivethirtyeight.com/general-model/president_general_polls_2016.csv
 
-   .. rubric:: Examples
-      :name: examples
+      The data for ``results_us_election_2016`` is from Ballotpedia and
+      can be found here:
+      https://docs.google.com/spreadsheets/d/1zxyOQDjNOJS_UkzerorUCf2OAdcMcIQEwRciKuYBIZ4/pubhtml?widget=true&headers=false#gid=658726802/
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      head(polls_us_election_2016)
+      ::
+
+         head(polls_us_election_2016)

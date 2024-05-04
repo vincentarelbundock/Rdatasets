@@ -1,39 +1,47 @@
 .. container::
 
-   ======= ===============
-   heights R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Self-Reported Heights
-      :name: heights
+      ======= ===============
+      heights R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Self-reported Heights in Inches
+         :name: self-reported-heights-in-inches
 
-   Self-reported heights in inches for males and females.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Self-reported heights and sex. The heights were converted to
+      inches from the original data included in ``reported_heights``.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      heights
+      ::
 
-   .. rubric:: Format
-      :name: format
+         heights
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  sex. Male or Female.
+      .. rubric:: Details
+         :name: details
 
-   -  height. Height in inches.
+      -  sex. A factor with the self-reported sex.
 
-   .. rubric:: Examples
-      :name: examples
+      -  height. A numeric vector with self-reported heights in inches.
 
-   .. code:: R
+      .. rubric:: See Also
+         :name: see-also
 
-      head(heights)
+      ``reported_heights`` for the original data source.
+
+      .. rubric:: Examples
+         :name: examples
+
+      ::
+
+         head(heights)

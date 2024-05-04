@@ -1,35 +1,37 @@
 .. container::
 
-   =========== ===============
-   credit_data R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Credit data
-      :name: credit_data
+      =========== ===============
+      credit_data R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Credit data
+         :name: credit-data
 
-   These data are from the website of Dr. Lluís A. Belanche Muñoz by way
-   of a github repository of Dr. Gaston Sanchez. One data point is a
-   missing outcome was removed from the original data.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Value
-      :name: value
+      These data are from the website of Dr. Lluís A. Belanche Muñoz by
+      way of a github repository of Dr. Gaston Sanchez. One data point
+      is a missing outcome was removed from the original data.
 
-   =============== ============
-   ``credit_data`` a data frame
-   =============== ============
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      =============== ============
+      ``credit_data`` a data frame
+      =============== ============
 
-   https://github.com/gastonstat/CreditScoring, http://bit.ly/2kkBFrk
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://github.com/gastonstat/CreditScoring, http://bit.ly/2kkBFrk
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(credit_data)
-      str(credit_data)
+      ::
+
+         data(credit_data)
+         str(credit_data)

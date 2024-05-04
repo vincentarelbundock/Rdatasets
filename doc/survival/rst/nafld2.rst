@@ -1,128 +1,130 @@
 .. container::
 
-   ===== ===============
-   nafld R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Non-alcohol fatty liver disease
-      :name: nafld
+      ===== ===============
+      nafld R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Non-alcohol fatty liver disease
+         :name: non-alcohol-fatty-liver-disease
 
-   Data sets containing the data from a population study of
-   non-alcoholic fatty liver disease (NAFLD). Subjects with the
-   condition and a set of matched control subjects were followed forward
-   for metabolic conditions, cardiac endpoints, and death.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data sets containing the data from a population study of
+      non-alcoholic fatty liver disease (NAFLD). Subjects with the
+      condition and a set of matched control subjects were followed
+      forward for metabolic conditions, cardiac endpoints, and death.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      nafld1
-             nafld2
-             nafld3
-      data(nafld, package="survival")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         nafld1
+                nafld2
+                nafld3
+         data(nafld, package="survival")
 
-   ``nafld1`` is a data frame with 17549 observations on the following
-   10 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``id``
-      subject identifier
+      ``nafld1`` is a data frame with 17549 observations on the
+      following 10 variables.
 
-   ``age``
-      age at entry to the study
+      ``id``
+         subject identifier
 
-   ``male``
-      0=female, 1=male
+      ``age``
+         age at entry to the study
 
-   ``weight``
-      weight in kg
+      ``male``
+         0=female, 1=male
 
-   ``height``
-      height in cm
+      ``weight``
+         weight in kg
 
-   ``bmi``
-      body mass index
+      ``height``
+         height in cm
 
-   ``case.id``
-      the id of the NAFLD case to whom this subject is matched
+      ``bmi``
+         body mass index
 
-   ``futime``
-      time to death or last follow-up
+      ``case.id``
+         the id of the NAFLD case to whom this subject is matched
 
-   ``status``
-      0= alive at last follow-up, 1=dead
+      ``futime``
+         time to death or last follow-up
 
-   ``nafld2`` is a data frame with 400123 observations and 4 variables
-   containing laboratory data
+      ``status``
+         0= alive at last follow-up, 1=dead
 
-   ``id``
-      subject identifier
+      ``nafld2`` is a data frame with 400123 observations and 4
+      variables containing laboratory data
 
-   ``days``
-      days since index date
+      ``id``
+         subject identifier
 
-   ``test``
-      the type of value recorded
+      ``days``
+         days since index date
 
-   ``value``
-      the numeric value
+      ``test``
+         the type of value recorded
 
-   ``nafld3`` is a data frame with 34340 observations and 3 variables
-   containing outcomes
+      ``value``
+         the numeric value
 
-   ``id``
-      subject identifier
+      ``nafld3`` is a data frame with 34340 observations and 3 variables
+      containing outcomes
 
-   ``days``
-      days since index date
+      ``id``
+         subject identifier
 
-   ``event``
-      the endpoint that occurred
+      ``days``
+         days since index date
 
-   .. rubric:: Details
-      :name: details
+      ``event``
+         the endpoint that occurred
 
-   The primary reference for the NAFLD study is Allen (2018). The
-   incidence of non-alcoholic fatty liver disease (NAFLD) has been
-   rising rapidly in the last decade and it is now one of the main
-   drivers of hepatology practice Tapper2018. It is essentially the
-   presence of excess fat in the liver, and parallels the ongoing
-   obesity epidemic. Approximately 20-25% of NAFLD patients will develop
-   the inflammatory state of non-alcoholic steatohepatitis (NASH),
-   leading to fibrosis and eventual end-stage liver disease. NAFLD can
-   be accurately diagnosed by MRI methods, but NASH diagnosis currently
-   requires a biopsy.
+      .. rubric:: Details
+         :name: details
 
-   The current study constructed a population cohort of all adult NAFLD
-   subjects from 1997 to 2014 along with 4 potential controls for each
-   case. To protect patient confidentiality all time intervals are in
-   days since the index date; none of the dates from the original data
-   were retained. Subject age is their integer age at the index date,
-   and the subject identifier is an arbitrary integer. As a final
-   protection, we include only a 90% random sample of the data. As a
-   consequence analyses results will not exactly match the original
-   paper.
+      The primary reference for the NAFLD study is Allen (2018). The
+      incidence of non-alcoholic fatty liver disease (NAFLD) has been
+      rising rapidly in the last decade and it is now one of the main
+      drivers of hepatology practice Tapper2018. It is essentially the
+      presence of excess fat in the liver, and parallels the ongoing
+      obesity epidemic. Approximately 20-25% of NAFLD patients will
+      develop the inflammatory state of non-alcoholic steatohepatitis
+      (NASH), leading to fibrosis and eventual end-stage liver disease.
+      NAFLD can be accurately diagnosed by MRI methods, but NASH
+      diagnosis currently requires a biopsy.
 
-   There are 3 data sets: ``nafld1`` contains baseline data and has one
-   observation per subject, ``nafld2`` has one observation for each
-   (time dependent) continuous measurement, and ``nafld3`` has one
-   observation for each yes/no outcome that occured.
+      The current study constructed a population cohort of all adult
+      NAFLD subjects from 1997 to 2014 along with 4 potential controls
+      for each case. To protect patient confidentiality all time
+      intervals are in days since the index date; none of the dates from
+      the original data were retained. Subject age is their integer age
+      at the index date, and the subject identifier is an arbitrary
+      integer. As a final protection, we include only a 90% random
+      sample of the data. As a consequence analyses results will not
+      exactly match the original paper.
 
-   .. rubric:: Source
-      :name: source
+      There are 3 data sets: ``nafld1`` contains baseline data and has
+      one observation per subject, ``nafld2`` has one observation for
+      each (time dependent) continuous measurement, and ``nafld3`` has
+      one observation for each yes/no outcome that occured.
 
-   Data obtained from the author.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Data obtained from the author.
 
-   AM Allen, TM Therneau, JJ Larson, A Coward, VK Somers and PS Kamath,
-   Nonalcoholic Fatty Liver Disease Incidence and Impact on Metabolic
-   Burden and Death: A 20 Year Community Study, Hepatology 67:1726-1736,
-   2018.
+      .. rubric:: References
+         :name: references
+
+      AM Allen, TM Therneau, JJ Larson, A Coward, VK Somers and PS
+      Kamath, Nonalcoholic Fatty Liver Disease Incidence and Impact on
+      Metabolic Burden and Death: A 20 Year Community Study, Hepatology
+      67:1726-1736, 2018.

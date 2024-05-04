@@ -1,49 +1,51 @@
 .. container::
 
-   ==== ===============
-   Mode R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Mode Choice
-      :name: Mode
+      ==== ===============
+      Mode R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Mode Choice
+         :name: mode-choice
 
-   a cross-section
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 453
+      a cross-section
 
-   *observation* : individuals
+      *number of observations* : 453
 
-   .. rubric:: Usage
-      :name: usage
+      *observation* : individuals
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Mode)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Mode)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   choice
-      one of car, carpool, bus or rail
+      A dataframe containing :
 
-   cost.z
-      cost of mode z
+      choice
+         one of car, carpool, bus or rail
 
-   time.z
-      time of mode z
+      cost.z
+         cost of mode z
 
-   .. rubric:: References
-      :name: references
+      time.z
+         time of mode z
 
-   Kenneth Train's home page : https://eml.berkeley.edu/~train/.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Kenneth Train's home page : https://eml.berkeley.edu/~train/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

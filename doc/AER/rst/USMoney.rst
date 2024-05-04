@@ -1,60 +1,63 @@
 .. container::
 
-   ======= ===============
-   USMoney R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: USMoney
-      :name: USMoney
+      ======= ===============
+      USMoney R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: USMoney
+         :name: usmoney
 
-   Money, output and price deflator time series data, 1950–1983.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Money, output and price deflator time series data, 1950–1983.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("USMoney")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("USMoney")
 
-   A quarterly multiple time series from 1950 to 1983 with 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   gnp
-      nominal GNP.
+      A quarterly multiple time series from 1950 to 1983 with 3
+      variables.
 
-   m1
-      M1 measure of money stock.
+      gnp
+         nominal GNP.
 
-   deflator
-      implicit price deflator for GNP.
+      m1
+         M1 measure of money stock.
 
-   .. rubric:: Source
-      :name: source
+      deflator
+         implicit price deflator for GNP.
 
-   Online complements to Greene (2003), Table F20.2.
+      .. rubric:: Source
+         :name: source
 
-   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+      Online complements to Greene (2003), Table F20.2.
 
-   .. rubric:: References
-      :name: references
+      https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
-   Saddle River, NJ: Prentice Hall.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+      Saddle River, NJ: Prentice Hall.
 
-   ``Greene2003``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Greene2003``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("USMoney")
-      plot(USMoney)
+      ::
+
+         data("USMoney")
+         plot(USMoney)

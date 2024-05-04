@@ -1,94 +1,97 @@
 .. container::
 
-   ======== ===============
-   ucla_f18 R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: UCLA courses in Fall 2018
-      :name: ucla_f18
+      ======== ===============
+      ucla_f18 R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: UCLA courses in Fall 2018
+         :name: ucla-courses-in-fall-2018
 
-   List of all courses at UCLA during Fall 2018.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      List of all courses at UCLA during Fall 2018.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      ucla_f18
+      ::
 
-   .. rubric:: Format
-      :name: format
+         ucla_f18
 
-   A data frame with 3950 observations on the following 14 variables.
+      .. rubric:: Format
+         :name: format
 
-   year
-      Year the course was offered
+      A data frame with 3950 observations on the following 14 variables.
 
-   term
-      Term the course was offered
+      year
+         Year the course was offered
 
-   subject
-      Subject
+      term
+         Term the course was offered
 
-   subject_abbr
-      Subject abbreviation, if any
+      subject
+         Subject
 
-   course
-      Course name
+      subject_abbr
+         Subject abbreviation, if any
 
-   course_num
-      Course number, complete
+      course
+         Course name
 
-   course_numeric
-      Course number, numeric only
+      course_num
+         Course number, complete
 
-   seminar
-      Boolean for if this is a seminar course
+      course_numeric
+         Course number, numeric only
 
-   ind_study
-      Boolean for if this is some form of independent study
+      seminar
+         Boolean for if this is a seminar course
 
-   apprenticeship
-      Boolean for if this is an apprenticeship
+      ind_study
+         Boolean for if this is some form of independent study
 
-   internship
-      Boolean for if this is an internship
+      apprenticeship
+         Boolean for if this is an apprenticeship
 
-   honors_contracts
-      Boolean for if this is an honors contracts course
+      internship
+         Boolean for if this is an internship
 
-   laboratory
-      Boolean for if this is a lab
+      honors_contracts
+         Boolean for if this is an honors contracts course
 
-   special_topic
-      Boolean for if this is any of the special types of courses listed
+      laboratory
+         Boolean for if this is a lab
 
-   .. rubric:: Source
-      :name: source
+      special_topic
+         Boolean for if this is any of the special types of courses
+         listed
 
-   https://sa.ucla.edu/ro/public/soc, retrieved 2018-11-22.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://sa.ucla.edu/ro/public/soc, retrieved 2018-11-22.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      nrow(ucla_f18)
-      table(ucla_f18$special_topic)
-      subset(ucla_f18, is.na(course_numeric))
-      table(subset(ucla_f18, !special_topic)$course_numeric < 100)
-      elig_courses <-
-        subset(ucla_f18, !special_topic & course_numeric < 100)
-      set.seed(1)
-      ucla_textbooks_f18 <-
-        elig_courses[sample(nrow(elig_courses), 100), ]
-      tmp <- order(
-        ucla_textbooks_f18$subject,
-        ucla_textbooks_f18$course_numeric
-      )
-      ucla_textbooks_f18 <- ucla_textbooks_f18[tmp, ]
-      rownames(ucla_textbooks_f18) <- NULL
-      head(ucla_textbooks_f18)
+      ::
+
+         nrow(ucla_f18)
+         table(ucla_f18$special_topic)
+         subset(ucla_f18, is.na(course_numeric))
+         table(subset(ucla_f18, !special_topic)$course_numeric < 100)
+         elig_courses <-
+           subset(ucla_f18, !special_topic & course_numeric < 100)
+         set.seed(1)
+         ucla_textbooks_f18 <-
+           elig_courses[sample(nrow(elig_courses), 100), ]
+         tmp <- order(
+           ucla_textbooks_f18$subject,
+           ucla_textbooks_f18$course_numeric
+         )
+         ucla_textbooks_f18 <- ucla_textbooks_f18[tmp, ]
+         rownames(ucla_textbooks_f18) <- NULL
+         head(ucla_textbooks_f18)

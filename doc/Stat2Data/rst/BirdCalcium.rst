@@ -1,48 +1,50 @@
 .. container::
 
-   =========== ===============
-   BirdCalcium R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Effect of a Hormone on Bird Calcium Levels
-      :name: BirdCalcium
+      =========== ===============
+      BirdCalcium R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Effect of a Hormone on Bird Calcium Levels
+         :name: effect-of-a-hormone-on-bird-calcium-levels
 
-   An experiment on the effects of a hormone on blood calcium levels in
-   robins
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      An experiment on the effects of a hormone on blood calcium levels
+      in robins
 
-   A data frame with 20 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Bird``
-      ID number for each bird (1 to 20)
+      A data frame with 20 observations on the following 5 variables.
 
-   ``Sex``
-      ``female`` or ``male``
+      ``Bird``
+         ID number for each bird (1 to 20)
 
-   ``Hormone``
-      Treated with hormone (``no`` or ``yes``)
+      ``Sex``
+         ``female`` or ``male``
 
-   ``Group``
-      Combined Sex and Hormone (``F No``, ``F Yes``, ``M No``, or
-      ``M Yes``)
+      ``Hormone``
+         Treated with hormone (``no`` or ``yes``)
 
-   ``Ca``
-      Blood calcium level (mg per 100 ml)
+      ``Group``
+         Combined Sex and Hormone (``F No``, ``F Yes``, ``M No``, or
+         ``M Yes``)
 
-   .. rubric:: Details
-      :name: details
+      ``Ca``
+         Blood calcium level (mg per 100 ml)
 
-   An experiment looked at the effects of treatment with a hormone for
-   increasing the concentration of calcium in birds. Twenty birds
-   (robins) were used in the study, ten male and ten female, equally
-   divided between the hormone and no hormone treatments.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      An experiment looked at the effects of treatment with a hormone
+      for increasing the concentration of calcium in birds. Twenty birds
+      (robins) were used in the study, ten male and ten female, equally
+      divided between the hormone and no hormone treatments.
 
-   Bliss, Chester (1970), Statistics in Biology, McGraw-Hill
+      .. rubric:: Source
+         :name: source
+
+      Bliss, Chester (1970), Statistics in Biology, McGraw-Hill

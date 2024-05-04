@@ -1,68 +1,70 @@
 .. container::
 
-   ==== ===============
-   cane R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Sugar-cane Disease Data
-      :name: cane
+      ==== ===============
+      cane R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sugar-cane Disease Data
+         :name: sugar-cane-disease-data
 
-   The ``cane`` data frame has 180 rows and 5 columns. The data frame
-   represents a randomized block design with 45 varieties of sugar-cane
-   and 4 blocks.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``cane`` data frame has 180 rows and 5 columns. The data frame
+      represents a randomized block design with 45 varieties of
+      sugar-cane and 4 blocks.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      cane
+      ::
 
-   .. rubric:: Format
-      :name: format
+         cane
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``n``
-      The total number of shoots in each plot.
+      This data frame contains the following columns:
 
-   ``r``
-      The number of diseased shoots.
+      ``n``
+         The total number of shoots in each plot.
 
-   ``x``
-      The number of pieces of the stems, out of 50, planted in each
-      plot.
+      ``r``
+         The number of diseased shoots.
 
-   ``var``
-      A factor indicating the variety of sugar-cane in each plot.
+      ``x``
+         The number of pieces of the stems, out of 50, planted in each
+         plot.
 
-   ``block``
-      A factor for the blocks.
+      ``var``
+         A factor indicating the variety of sugar-cane in each plot.
 
-   .. rubric:: Details
-      :name: details
+      ``block``
+         A factor for the blocks.
 
-   The aim of the experiment was to classify the varieties into
-   resistant, intermediate and susceptible to a disease called "coal of
-   sugar-cane" (carvao da cana-de-acucar). This is a disease that is
-   common in sugar-cane plantations in certain areas of Brazil.
+      .. rubric:: Details
+         :name: details
 
-   For each plot, fifty pieces of sugar-cane stem were put in a solution
-   containing the disease agent and then some were planted in the plot.
-   After a fixed period of time, the total number of shoots and the
-   number of diseased shoots were recorded.
+      The aim of the experiment was to classify the varieties into
+      resistant, intermediate and susceptible to a disease called "coal
+      of sugar-cane" (carvao da cana-de-acucar). This is a disease that
+      is common in sugar-cane plantations in certain areas of Brazil.
 
-   .. rubric:: Source
-      :name: source
+      For each plot, fifty pieces of sugar-cane stem were put in a
+      solution containing the disease agent and then some were planted
+      in the plot. After a fixed period of time, the total number of
+      shoots and the number of diseased shoots were recorded.
 
-   The data were kindly supplied by Dr. C.G.B. Demetrio of Escola
-   Superior de Agricultura, Universidade de Sao Paolo, Brazil.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The data were kindly supplied by Dr. C.G.B. Demetrio of Escola
+      Superior de Agricultura, Universidade de Sao Paolo, Brazil.
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
+
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.

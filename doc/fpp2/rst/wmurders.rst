@@ -1,31 +1,33 @@
 .. container::
 
-   ======== ===============
-   wmurders R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Annual female murder rate (per 100,000 standard
-      population) in the USA. 1950-2004.
-      :name: wmurders
+      ======== ===============
+      wmurders R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Annual female murder rate (per 100,000 standard
+         population) in the USA. 1950-2004.
+         :name: annual-female-murder-rate-per-100000-standard-population-in-the-usa.-1950-2004.
 
-   Total Murdered women, per 100 000 standard population.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Total Murdered women, per 100 000 standard population.
 
-   Annual time series of class ``ts``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Annual time series of class ``ts``.
 
-   Gapminder Foundation.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Gapminder Foundation.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      autoplot(wmurders)
+      ::
+
+         autoplot(wmurders)

@@ -1,43 +1,45 @@
 .. container::
 
-   ======== ===============
-   min_wage R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: History of Federal Minimum Wage Rates Under the Fair
-      Labor Standards Act, 1938-2009
-      :name: min_wage
+      ======== ===============
+      min_wage R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: History of Federal Minimum Wage Rates Under the Fair
+         Labor Standards Act, 1938-2009
+         :name: history-of-federal-minimum-wage-rates-under-the-fair-labor-standards-act-1938-2009
 
-   A data set on the various federal minimum wage rates.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data set on the various federal minimum wage rates.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      min_wage
+      ::
 
-   .. rubric:: Format
-      :name: format
+         min_wage
 
-   A data frame with 23 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``date``
-      a date for when a new minimum wage was introduced
+      A data frame with 23 observations on the following 5 variables.
 
-   ``wage``
-      the (nominal) value of the wage
+      ``date``
+         a date for when a new minimum wage was introduced
 
-   .. rubric:: Details
-      :name: details
+      ``wage``
+         the (nominal) value of the wage
 
-   Data come from the Department of Labor. Wages are taken from wage
-   adjustments from the 1938 act.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Data come from the Department of Labor. Wages are taken from wage
+      adjustments from the 1938 act.
 
-   Department of Labor
+      .. rubric:: Source
+         :name: source
+
+      Department of Labor

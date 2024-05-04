@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Snow</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Snow'>
+<h2>
 John Snow's Map and Data on the 1854 London Cholera Outbreak
 </h2>
 
@@ -102,19 +102,6 @@ The map is created by drawing lines connecting the <code>n</code> points in each
 <dt><code>y</code></dt><dd><p>y coordinate</p>
 </dd>
 </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <p><code>Snow.polygons</code>: A list of 13 data frames, giving the vertices of
 Thiessen  (Voronoi) polygons  containing each  pump. Their
@@ -228,7 +215,6 @@ SnowMap(xlim=c(7.5,16.5), ylim=c(7,16), polygons=TRUE, density=TRUE,
 
 
 ## re-do this the sp way... [thx: Stephane Dray]
-
 library(sp)
 
 # streets
@@ -248,9 +234,9 @@ spp &lt;- SpatialPoints(Snow.pumps[,c("x","y")])
 Snow.pumps.sp &lt;- SpatialPointsDataFrame(spp,Snow.pumps[,c("x","y")])
 plot(Snow.pumps.sp, add=TRUE, col='blue', pch=17, cex=1.5)
 text(Snow.pumps[,c("x","y")], labels=Snow.pumps$label, pos=1, cex=0.8)
-
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

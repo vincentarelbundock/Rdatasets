@@ -1,60 +1,62 @@
 .. container::
 
-   ========== ===============
-   nasturtium R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Dose-response profile of degradation of agrochemical
-      using nasturtium
-      :name: nasturtium
+      ========== ===============
+      nasturtium R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Dose-response profile of degradation of agrochemical
+         using nasturtium
+         :name: dose-response-profile-of-degradation-of-agrochemical-using-nasturtium
 
-   Estimation of the degradation profile of an agrochemical based on
-   soil samples at depth 0-10cm from a calibration experiment.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Estimation of the degradation profile of an agrochemical based on
+      soil samples at depth 0-10cm from a calibration experiment.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(nasturtium)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(nasturtium)
 
-   A data frame with 42 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``conc``
-      a numeric vector of concentrations (g/ha)
+      A data frame with 42 observations on the following 2 variables.
 
-   ``weight``
-      a numeric vector of plant weight (mg) after 3 weeks' growth
+      ``conc``
+         a numeric vector of concentrations (g/ha)
 
-   .. rubric:: Details
-      :name: details
+      ``weight``
+         a numeric vector of plant weight (mg) after 3 weeks' growth
 
-   It is an experiment with seven concentrations and six replicates per
-   concentration. *Nasturtium* is sensitive and its weight reduces
-   noticeable at low concentrations.
+      .. rubric:: Details
+         :name: details
 
-   Racine-Poon (1988) suggests using a three-parameter log-logistic
-   model.
+      It is an experiment with seven concentrations and six replicates
+      per concentration. *Nasturtium* is sensitive and its weight
+      reduces noticeable at low concentrations.
 
-   .. rubric:: Source
-      :name: source
+      Racine-Poon (1988) suggests using a three-parameter log-logistic
+      model.
 
-   Racine-Poon, A. (1988) A Bayesian Approach to Nonlinear Calibration
-   Problems, *J. Am. Statist. Ass.*, **83**, 650–656.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Racine-Poon, A. (1988) A Bayesian Approach to Nonlinear
+      Calibration Problems, *J. Am. Statist. Ass.*, **83**, 650–656.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      nasturtium.m1 <- drm(weight~conc, data=nasturtium, fct = LL.3())
+      ::
 
-      modelFit(nasturtium.m1)
+         nasturtium.m1 <- drm(weight~conc, data=nasturtium, fct = LL.3())
 
-      plot(nasturtium.m1, type = "all", log = "", xlab = "Concentration (g/ha)", ylab = "Weight (mg)")
+         modelFit(nasturtium.m1)
+
+         plot(nasturtium.m1, type = "all", log = "", xlab = "Concentration (g/ha)", ylab = "Weight (mg)")

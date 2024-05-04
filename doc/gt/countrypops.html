@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><title>R: Yearly populations of countries from 1960 to 2021</title>
+<!DOCTYPE html><html><head><title>R: Yearly populations of countries from 1960 to 2022</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>countrypops</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='countrypops'>Yearly populations of countries from 1960 to 2021</h2>
+<h2>Yearly populations of countries from 1960 to 2022</h2>
 
 <h3>Description</h3>
 
@@ -24,7 +24,7 @@ function processMathHTML() {
 population is based on counts of all residents regardless of legal status or
 citizenship. Country identifiers include the English-language country names,
 and the 2- and 3-letter ISO 3166-1 country codes. Each row contains a
-<code>population</code> value for a given <code>year</code> (from 1960 to 2021). Any <code>NA</code> values
+<code>population</code> value for a given <code>year</code> (from 1960 to 2022). Any <code>NA</code> values
 for <code>populations</code> indicate the non-existence of the entity during that year.
 </p>
 
@@ -37,7 +37,7 @@ for <code>populations</code> indicate the non-existence of the entity during tha
 
 <h3>Format</h3>
 
-<p>A tibble with 13,330 rows and 5 variables:
+<p>A tibble with 13,545 rows and 5 variables:
 </p>
 
 <dl>
@@ -59,7 +59,7 @@ codes.</p>
 <p>Here is a glimpse at the data available in <code>countrypops</code>.
 </p>
 <div class="sourceCode r"><pre>dplyr::glimpse(countrypops)
-#&gt; Rows: 13,330
+#&gt; Rows: 13,545
 #&gt; Columns: 5
 #&gt; $ country_name   &lt;chr&gt; "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "~
 #&gt; $ country_code_2 &lt;chr&gt; "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "~
@@ -93,8 +93,10 @@ codes.</p>
 <h3>See Also</h3>
 
 <p>Other datasets: 
+<code>constants</code>,
 <code>exibble</code>,
 <code>gtcars</code>,
+<code>illness</code>,
 <code>metro</code>,
 <code>pizzaplace</code>,
 <code>rx_addv</code>,
@@ -104,6 +106,7 @@ codes.</p>
 <code>towny</code>
 </p>
 
+</main>
 
 </div>
 </body></html>

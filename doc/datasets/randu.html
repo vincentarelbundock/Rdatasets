@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>randu</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='randu'>Random Numbers from Congruential Generator RANDU</h2>
+<h2>Random Numbers from Congruential Generator RANDU</h2>
 
 <h3>Description</h3>
 
@@ -66,12 +66,15 @@ RANDU &lt;- function() {
     seed &lt;&lt;- ((2^16 + 3) * seed) %% (2^31)
     seed/(2^31)
 }
+myrandu &lt;- matrix(NA_real_, 400, 3, dimnames = list(NULL, c("x","y","z")))
 for(i in 1:400) {
     U &lt;- c(RANDU(), RANDU(), RANDU(), RANDU(), RANDU())
-    print(round(U[1:3], 6))
+    myrandu[i,] &lt;- round(U[1:3], 6)
 }
+stopifnot(all.equal(randu, as.data.frame(myrandu), tolerance = 1e-5))
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

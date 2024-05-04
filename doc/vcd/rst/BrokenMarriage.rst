@@ -1,59 +1,61 @@
 .. container::
 
-   ============== ===============
-   BrokenMarriage R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Broken Marriage Data
-      :name: BrokenMarriage
+      ============== ===============
+      BrokenMarriage R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Broken Marriage Data
+         :name: broken-marriage-data
 
-   Data from the Danish Welfare Study about broken marriages or
-   permanent relationships depending on gender and social rank.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from the Danish Welfare Study about broken marriages or
+      permanent relationships depending on gender and social rank.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("BrokenMarriage")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("BrokenMarriage")
 
-   A data frame with 20 observations and 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   Freq
-      frequency.
+      A data frame with 20 observations and 4 variables.
 
-   gender
-      factor indicating gender (male, female).
+      Freq
+         frequency.
 
-   rank
-      factor indicating social rank (I, II, III, IV, V).
+      gender
+         factor indicating gender (male, female).
 
-   broken
-      factor indicating whether the marriage or permanent relationship
-      was broken (yes, no).
+      rank
+         factor indicating social rank (I, II, III, IV, V).
 
-   .. rubric:: Source
-      :name: source
+      broken
+         factor indicating whether the marriage or permanent
+         relationship was broken (yes, no).
 
-   E. B. Andersen (1991), The Statistical Analysis of Categorical Data,
-   page 177.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      E. B. Andersen (1991), The Statistical Analysis of Categorical
+      Data, page 177.
 
-   E. B. Andersen (1991), *The Statistical Analysis of Categorical
-   Data*. 2nd edition. Springer-Verlag, Berlin.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      E. B. Andersen (1991), *The Statistical Analysis of Categorical
+      Data*. 2nd edition. Springer-Verlag, Berlin.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("BrokenMarriage")
-      structable(~ ., data = BrokenMarriage)
+      ::
+
+         data("BrokenMarriage")
+         structable(~ ., data = BrokenMarriage)

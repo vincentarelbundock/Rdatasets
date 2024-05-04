@@ -1,71 +1,76 @@
 .. container::
 
-   ====== ===============
-   Greene R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Refugee Appeals
-      :name: Greene
+      ====== ===============
+      Greene R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Refugee Appeals
+         :name: refugee-appeals
 
-   The ``Greene`` data frame has 384 rows and 7 columns. These are cases
-   filed in 1990, in which refugee claimants rejected by the Canadian
-   Immigration and Refugee Board asked the Federal Court of Appeal for
-   leave to appeal the negative ruling of the Board.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Greene`` data frame has 384 rows and 7 columns. These are
+      cases filed in 1990, in which refugee claimants rejected by the
+      Canadian Immigration and Refugee Board asked the Federal Court of
+      Appeal for leave to appeal the negative ruling of the Board.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Greene
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Greene
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   judge
-      Name of judge hearing case. A factor with levels: ``Desjardins``,
-      ``Heald``, ``Hugessen``, ``Iacobucci``, ``MacGuigan``,
-      ``Mahoney``, ``Marceau``, ``Pratte``, ``Stone``, ``Urie``.
+      This data frame contains the following columns:
 
-   nation
-      Nation of origin of claimant. A factor with levels: ``Argentina``,
-      ``Bulgaria``, ``China``, ``Czechoslovakia``, ``El.Salvador``,
-      ``Fiji``, ``Ghana``, ``Guatemala``, ``India``, ``Iran``,
-      ``Lebanon``, ``Nicaragua``, ``Nigeria``, ``Pakistan``, ``Poland``,
-      ``Somalia``, ``Sri.Lanka``.
+      judge
+         Name of judge hearing case. A factor with levels:
+         ``Desjardins``, ``Heald``, ``Hugessen``, ``Iacobucci``,
+         ``MacGuigan``, ``Mahoney``, ``Marceau``, ``Pratte``, ``Stone``,
+         ``Urie``.
 
-   rater
-      Judgment of independent rater. A factor with levels: ``no``, case
-      has no merit; ``yes``, case has some merit (leave to appeal should
-      be granted).
+      nation
+         Nation of origin of claimant. A factor with levels:
+         ``Argentina``, ``Bulgaria``, ``China``, ``Czechoslovakia``,
+         ``El.Salvador``, ``Fiji``, ``Ghana``, ``Guatemala``, ``India``,
+         ``Iran``, ``Lebanon``, ``Nicaragua``, ``Nigeria``,
+         ``Pakistan``, ``Poland``, ``Somalia``, ``Sri.Lanka``.
 
-   decision
-      Judge's decision. A factor with levels: ``no``, leave to appeal
-      not granted; ``yes``, leave to appeal granted.
+      rater
+         Judgment of independent rater. A factor with levels: ``no``,
+         case has no merit; ``yes``, case has some merit (leave to
+         appeal should be granted).
 
-   language
-      Language of case. A factor with levels: ``English``, ``French``.
+      decision
+         Judge's decision. A factor with levels: ``no``, leave to appeal
+         not granted; ``yes``, leave to appeal granted.
 
-   location
-      Location of original refugee claim. A factor with levels:
-      ``Montreal``, ``other``, ``Toronto``.
+      language
+         Language of case. A factor with levels: ``English``,
+         ``French``.
 
-   success
-      Logit of success rate, for all cases from the applicant's nation.
+      location
+         Location of original refugee claim. A factor with levels:
+         ``Montreal``, ``other``, ``Toronto``.
 
-   .. rubric:: Source
-      :name: source
+      success
+         Logit of success rate, for all cases from the applicant's
+         nation.
 
-   Personal communication from Ian Greene, Department of Political
-   Science, York University.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Personal communication from Ian Greene, Department of Political
+      Science, York University.
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
+
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.

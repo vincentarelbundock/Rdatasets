@@ -1,43 +1,46 @@
 .. container::
 
-   ========== ===============
-   rareplants R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Rare and Endangered Plant Species
-      :name: rareplants
+      ========== ===============
+      rareplants R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Rare and Endangered Plant Species
+         :name: rare-and-endangered-plant-species
 
-   These data were taken from species lists for South Australia,
-   Victoria and Tasmania. Species were classified as CC, CR, RC and RR,
-   with C denoting common and R denoting rare. The first code relates to
-   South Australia and Victoria, and the second to Tasmania. They were
-   further classified by habitat according to the Victorian register,
-   where D = dry only, W = wet only, and WD = wet or dry.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These data were taken from species lists for South Australia,
+      Victoria and Tasmania. Species were classified as CC, CR, RC and
+      RR, with C denoting common and R denoting rare. The first code
+      relates to South Australia and Victoria, and the second to
+      Tasmania. They were further classified by habitat according to the
+      Victorian register, where D = dry only, W = wet only, and WD = wet
+      or dry.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      rareplants
+      ::
 
-   .. rubric:: Format
-      :name: format
+         rareplants
 
-   The format is: chr "rareplants"
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      The format is: chr "rareplants"
 
-   Jasmyn Lynch, Department of Botany and Zoology at Australian National
-   University
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Jasmyn Lynch, Department of Botany and Zoology at Australian
+      National University
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      chisq.test(rareplants)
+      ::
+
+         chisq.test(rareplants)

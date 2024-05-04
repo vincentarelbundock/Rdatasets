@@ -1,30 +1,33 @@
 .. container::
 
-   === ===============
-   oil R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Annual oil production in Saudi Arabia
-      :name: oil
+      === ===============
+      oil R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Annual oil production in Saudi Arabia
+         :name: annual-oil-production-in-saudi-arabia
 
-   Annual oil production (millions of tonnes), Saudi Arabia, 1965-2013.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Annual oil production (millions of tonnes), Saudi Arabia,
+      1965-2013.
 
-   Annual time series of class ``ts``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Annual time series of class ``ts``.
 
-   BP.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      BP.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      autoplot(oil)
+      ::
+
+         autoplot(oil)

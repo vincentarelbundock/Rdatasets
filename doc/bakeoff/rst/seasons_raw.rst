@@ -1,57 +1,59 @@
 .. container::
 
-   =========== ===============
-   seasons_raw R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Data about each season aired in the US (raw)
-      :name: seasons_raw
+      =========== ===============
+      seasons_raw R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data about each season aired in the US (raw)
+         :name: data-about-each-season-aired-in-the-us-raw
 
-   This data has one row per season aired in the US as 'The Great
-   British Baking Show'.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data has one row per season aired in the US as 'The Great
+      British Baking Show'.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      seasons_raw
+      ::
 
-   .. rubric:: Format
-      :name: format
+         seasons_raw
 
-   A data frame with 8 rows representing individual series and 11
-   variables:
+      .. rubric:: Format
+         :name: format
 
-   series
-      an integer denoting UK series (``1``-``8``)
+      A data frame with 8 rows representing individual series and 11
+      variables:
 
-   episode
-      an integer denoting total number of episodes within series
+      series
+         an integer denoting UK series (``1``-``8``)
 
-   us_season
-      an integer denoting US season (``1``-``5``)
+      episode
+         an integer denoting total number of episodes within series
 
-   us_airdate
-      a date denoting original airdate of episode in the US, according
-      to
-      `pbs.org <https://www.pbs.org/food/shows/great-british-baking-show/>`__
+      us_season
+         an integer denoting US season (``1``-``5``)
 
-   .. rubric:: Source
-      :name: source
+      us_airdate
+         a date denoting original airdate of episode in the US,
+         according to
+         `pbs.org <https://www.pbs.org/food/shows/great-british-baking-show/>`__
 
-   US airdates manually recorded from
-   https://www.pbs.org/food/shows/great-british-baking-show/
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      US airdates manually recorded from
+      https://www.pbs.org/food/shows/great-british-baking-show/
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      if (require('tibble')) {
-        seasons_raw
-       }
-      head(seasons_raw)
+      ::
+
+         if (require('tibble')) {
+           seasons_raw
+          }
+         head(seasons_raw)

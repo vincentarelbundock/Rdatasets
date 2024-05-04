@@ -1,58 +1,61 @@
 .. container::
 
-   ================== ===============
-   occupationalStatus R Documentation
-   ================== ===============
+   .. container::
 
-   .. rubric:: Occupational Status of Fathers and their Sons
-      :name: occupationalStatus
+      ================== ===============
+      occupationalStatus R Documentation
+      ================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Occupational Status of Fathers and their Sons
+         :name: occupational-status-of-fathers-and-their-sons
 
-   Cross-classification of a sample of British males according to each
-   subject's occupational status and his father's occupational status.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-classification of a sample of British males according to
+      each subject's occupational status and his father's occupational
+      status.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      occupationalStatus
+      ::
 
-   .. rubric:: Format
-      :name: format
+         occupationalStatus
 
-   A ``table`` of counts, with classifying factors ``origin`` (father's
-   occupational status; levels ``1:8``) and ``destination`` (son's
-   occupational status; levels ``1:8``).
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A ``table`` of counts, with classifying factors ``origin``
+      (father's occupational status; levels ``1:8``) and ``destination``
+      (son's occupational status; levels ``1:8``).
 
-   Goodman, L. A. (1979) Simple Models for the Analysis of Association
-   in Cross-Classifications having Ordered Categories. *J. Am. Stat.
-   Assoc.*, **74** (367), 537–552.
+      .. rubric:: Source
+         :name: source
 
-   The data set has been in package
-   `gnm <https://CRAN.R-project.org/package=gnm>`__ and been provided by
-   the package authors.
+      Goodman, L. A. (1979) Simple Models for the Analysis of
+      Association in Cross-Classifications having Ordered Categories.
+      *J. Am. Stat. Assoc.*, **74** (367), 537–552.
 
-   .. rubric:: Examples
-      :name: examples
+      The data set has been in package
+      `gnm <https://CRAN.R-project.org/package=gnm>`__ and been provided
+      by the package authors.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(stats); require(graphics)
+      ::
 
-      plot(occupationalStatus)
+         require(stats); require(graphics)
 
-      ##  Fit a uniform association model separating diagonal effects
-      Diag <- as.factor(diag(1:8))
-      Rscore <- scale(as.numeric(row(occupationalStatus)), scale = FALSE)
-      Cscore <- scale(as.numeric(col(occupationalStatus)), scale = FALSE)
-      modUnif <- glm(Freq ~ origin + destination + Diag + Rscore:Cscore,
-                     family = poisson, data = occupationalStatus)
+         plot(occupationalStatus)
 
-      summary(modUnif)
-      plot(modUnif) # 4 plots, with warning about  h_ii ~= 1
+         ##  Fit a uniform association model separating diagonal effects
+         Diag <- as.factor(diag(1:8))
+         Rscore <- scale(as.numeric(row(occupationalStatus)), scale = FALSE)
+         Cscore <- scale(as.numeric(col(occupationalStatus)), scale = FALSE)
+         modUnif <- glm(Freq ~ origin + destination + Diag + Rscore:Cscore,
+                        family = poisson, data = occupationalStatus)
+
+         summary(modUnif)
+         plot(modUnif) # 4 plots, with warning about  h_ii ~= 1

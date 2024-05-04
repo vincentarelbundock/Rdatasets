@@ -1,59 +1,61 @@
 .. container::
 
-   ====== ===============
-   precip R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Annual Precipitation in US Cities
-      :name: precip
+      ====== ===============
+      precip R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Annual Precipitation in US Cities
+         :name: annual-precipitation-in-us-cities
 
-   The average amount of precipitation (rainfall) in inches for each of
-   70 United States (and Puerto Rico) cities.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The average amount of precipitation (rainfall) in inches for each
+      of 70 United States (and Puerto Rico) cities.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      precip
+      ::
 
-   .. rubric:: Format
-      :name: format
+         precip
 
-   A named vector of length 70.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Note
-      :name: note
+      A named vector of length 70.
 
-   The dataset version up to Nov.16, 2016 had a typo in
-   ``"Cincinnati"``'s name. The examples show how to recreate that
-   version.
+      .. rubric:: Note
+         :name: note
 
-   .. rubric:: Source
-      :name: source
+      The dataset version up to Nov.16, 2016 had a typo in
+      ``"Cincinnati"``'s name. The examples show how to recreate that
+      version.
 
-   Statistical Abstracts of the United States, 1975.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Statistical Abstracts of the United States, 1975.
 
-   McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(graphics)
-      dotchart(precip[order(precip)], main = "precip data")
-      title(sub = "Average annual precipitation (in.)")
+      ::
 
-      ## Old ("wrong") version of dataset (just name change):
-      precip.O <- local({
-         p <- precip; names(p)[names(p) == "Cincinnati"] <- "Cincinati" ; p })
-      stopifnot(all(precip == precip.O),
-            match("Cincinnati", names(precip)) == 46,
-            identical(names(precip)[-46], names(precip.O)[-46]))
+         require(graphics)
+         dotchart(precip[order(precip)], main = "precip data")
+         title(sub = "Average annual precipitation (in.)")
+
+         ## Old ("wrong") version of dataset (just name change):
+         precip.O <- local({
+            p <- precip; names(p)[names(p) == "Cincinnati"] <- "Cincinati" ; p })
+         stopifnot(all(precip == precip.O),
+               match("Cincinnati", names(precip)) == 46,
+               identical(names(precip)[-46], names(precip.O)[-46]))

@@ -1,74 +1,76 @@
 .. container::
 
-   ======== ===============
-   nasshead R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Documentation of names of columns in nass9702cor
-      :name: nasshead
+      ======== ===============
+      nasshead R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Documentation of names of columns in nass9702cor
+         :name: documentation-of-names-of-columns-in-nass9702cor
 
-   ``SASname`` and ``longname`` are from the SAS XPT file
-   nass9702cor.XPT that is available from the website noted below. The
-   name ``shortname`` is the name used in the data frame
-   ``nass9702cor``, not included in this package, but available from my
-   website that is noted below. It is also used in ``nassCDS``, for
-   columns that ``nassCDS`` includes.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      ``SASname`` and ``longname`` are from the SAS XPT file
+      nass9702cor.XPT that is available from the website noted below.
+      The name ``shortname`` is the name used in the data frame
+      ``nass9702cor``, not included in this package, but available from
+      my website that is noted below. It is also used in ``nassCDS``,
+      for columns that ``nassCDS`` includes.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(nasshead)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(nasshead)
 
-   A data frame with 56 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   shortname
-      a character vector
+      A data frame with 56 observations on the following 3 variables.
 
-   SASname
-      a character vector
+      shortname
+         a character vector
 
-   longname
-      a character vector
+      SASname
+         a character vector
 
-   .. rubric:: Details
-      :name: details
+      longname
+         a character vector
 
-   For full details of the coding of values in columns of
-   ``nass9702cor``, consult one of the SAS format files that can be
-   obtained by following the instructions on Dr Meyer's web site that is
-   noted below.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      For full details of the coding of values in columns of
+      ``nass9702cor``, consult one of the SAS format files that can be
+      obtained by following the instructions on Dr Meyer's web site that
+      is noted below.
 
-   https://www.stat.colostate.edu/~meyer/airbags.htm\\
-   https://www.nhtsa.gov/file-downloads\\
+      .. rubric:: Source
+         :name: source
 
-   See also https://maths-people.anu.edu.au/~johnm/datasets/airbags/
+      https://www.stat.colostate.edu/~meyer/airbags.htm\\
+      https://www.nhtsa.gov/file-downloads\\
 
-   .. rubric:: References
-      :name: references
+      See also https://maths-people.anu.edu.au/~johnm/datasets/airbags/
 
-   Meyer, M.C. and Finney, T. (2005): *Who wants airbags?*. Chance
-   18:3-16.
+      .. rubric:: References
+         :name: references
 
-   Farmer, C.H. 2006. *Another look at Meyer and Finney's 'Who wants
-   airbags?'*. Chance 19:15-22.
+      Meyer, M.C. and Finney, T. (2005): *Who wants airbags?*. Chance
+      18:3-16.
 
-   Meyer, M.C. 2006. *Commentary on "Another look at Meyer and Finney's
-   ‘Who wants airbags?’"*. Chance 19:23-24.
+      Farmer, C.H. 2006. *Another look at Meyer and Finney's 'Who wants
+      airbags?'*. Chance 19:15-22.
 
-   .. rubric:: Examples
-      :name: examples
+      Meyer, M.C. 2006. *Commentary on "Another look at Meyer and
+      Finney's ‘Who wants airbags?’"*. Chance 19:23-24.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(nasshead)
+      ::
+
+         data(nasshead)

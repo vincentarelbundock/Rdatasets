@@ -1,82 +1,87 @@
 .. container::
 
-   ============= ===============
-   ImpreciseTask R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Imprecise Probabilities for Sunday Weather and Boeing
-      Stock Task
-      :name: ImpreciseTask
+      ============= ===============
+      ImpreciseTask R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Imprecise Probabilities for Sunday Weather and Boeing
+         Stock Task
+         :name: imprecise-probabilities-for-sunday-weather-and-boeing-stock-task
 
-   In this study participants were asked to estimate upper and lower
-   probabilities for event to occur and not to occur.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      In this study participants were asked to estimate upper and lower
+      probabilities for event to occur and not to occur.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(ImpreciseTask)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(ImpreciseTask)
 
-   A data frame with 242 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``task``
-      a factor with levels ``Boeing stock`` and ``Sunday weather``.
+      A data frame with 242 observations on the following 3 variables.
 
-   ``location``
-      a numeric vector of the average of the lower estimate for the
-      event not to occur and the upper estimate for the event to occur.
+      ``task``
+         a factor with levels ``Boeing stock`` and ``Sunday weather``.
 
-   ``difference``
-      a numeric vector of the differences of the lower and upper
-      estimate for the event to occur.
+      ``location``
+         a numeric vector of the average of the lower estimate for the
+         event not to occur and the upper estimate for the event to
+         occur.
 
-   .. rubric:: Details
-      :name: details
+      ``difference``
+         a numeric vector of the differences of the lower and upper
+         estimate for the event to occur.
 
-   All participants in the study were either first- or second-year
-   undergraduate students in psychology, none of whom had a strong
-   background in probability or were familiar with imprecise probability
-   theories.
+      .. rubric:: Details
+         :name: details
 
-   For the sunday weather task see ``WeatherTask``. For the Boeing stock
-   task participants were asked to estimate the probability that
-   Boeing's stock would rise more than those in a list of 30 companies.
+      All participants in the study were either first- or second-year
+      undergraduate students in psychology, none of whom had a strong
+      background in probability or were familiar with imprecise
+      probability theories.
 
-   For each task participants were asked to provide lower and upper
-   estimates for the event to occur and not to occur.
+      For the sunday weather task see ``WeatherTask``. For the Boeing
+      stock task participants were asked to estimate the probability
+      that Boeing's stock would rise more than those in a list of 30
+      companies.
 
-   .. rubric:: Source
-      :name: source
+      For each task participants were asked to provide lower and upper
+      estimates for the event to occur and not to occur.
 
-   Taken from Smithson et al. (2011) supplements.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Taken from Smithson et al. (2011) supplements.
 
-   Smithson, M., Merkle, E.C., and Verkuilen, J. (2011). Beta Regression
-   Finite Mixture Models of Polarization and Priming. *Journal of
-   Educational and Behavioral Statistics*, **36**\ (6), 804–831. doi:
-   `10.3102/1076998610396893 <https://doi.org/10.3102/1076998610396893>`__
+      .. rubric:: References
+         :name: references
 
-   Smithson, M., and Segale, C. (2009). Partition Priming in Judgments
-   of Imprecise Probabilities. *Journal of Statistical Theory and
-   Practice*, **3**\ (1), 169–181.
+      Smithson, M., Merkle, E.C., and Verkuilen, J. (2011). Beta
+      Regression Finite Mixture Models of Polarization and Priming.
+      *Journal of Educational and Behavioral Statistics*, **36**\ (6),
+      804–831. doi:
+      `10.3102/1076998610396893 <https://doi.org/10.3102/1076998610396893>`__
 
-   .. rubric:: Examples
-      :name: examples
+      Smithson, M., and Segale, C. (2009). Partition Priming in
+      Judgments of Imprecise Probabilities. *Journal of Statistical
+      Theory and Practice*, **3**\ (1), 169–181.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("ImpreciseTask", package = "betareg")
-      library("flexmix")
-      wt_betamix <- betamix(location ~ difference * task, data = ImpreciseTask, k = 2,
-        extra_components = extraComponent(type = "betareg", coef =
-          list(mean = 0, precision = 8)),
-        FLXconcomitant = FLXPmultinom(~ task))
+      ::
+
+         data("ImpreciseTask", package = "betareg")
+         library("flexmix")
+         wt_betamix <- betamix(location ~ difference * task, data = ImpreciseTask, k = 2,
+           extra_components = extraComponent(type = "betareg", coef =
+             list(mean = 0, precision = 8)),
+           FLXconcomitant = FLXPmultinom(~ task))

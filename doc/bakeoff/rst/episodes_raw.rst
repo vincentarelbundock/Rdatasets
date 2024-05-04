@@ -1,64 +1,67 @@
 .. container::
 
-   ============ ===============
-   episodes_raw R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Each episodes' challenges (raw)
-      :name: episodes_raw
+      ============ ===============
+      episodes_raw R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Each episodes' challenges (raw)
+         :name: each-episodes-challenges-raw
 
-   Details about the three challenges (signature, technical, and
-   showstopper) for each baker/episode across all 10 GBBO series.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Details about the three challenges (signature, technical, and
+      showstopper) for each baker/episode across all 10 GBBO series.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      episodes_raw
+      ::
 
-   .. rubric:: Format
-      :name: format
+         episodes_raw
 
-   A data frame with 704 rows representing individual bakers per episode
-   and 6 variables:
+      .. rubric:: Format
+         :name: format
 
-   series
-      A factor denoting UK series (``1``-``10``).
+      A data frame with 704 rows representing individual bakers per
+      episode and 6 variables:
 
-   episode
-      A factor denoting episode number within a series.
+      series
+         A factor denoting UK series (``1``-``10``).
 
-   baker
-      A character string giving given or nickname.
+      episode
+         A factor denoting episode number within a series.
 
-   signature
-      A character string containing the bake for the signature challenge
-      for that baker/episode.
+      baker
+         A character string giving given or nickname.
 
-   technical
-      An integer denoting the rank on the technical challenge for that
-      baker/episode. A rank of ``1`` is winner of the technical
-      challenge.
+      signature
+         A character string containing the bake for the signature
+         challenge for that baker/episode.
 
-   showstopper
-      A character string containing the bake for the showstopper
-      challenge for that baker/episode.
+      technical
+         An integer denoting the rank on the technical challenge for
+         that baker/episode. A rank of ``1`` is winner of the technical
+         challenge.
 
-   .. rubric:: Source
-      :name: source
+      showstopper
+         A character string containing the bake for the showstopper
+         challenge for that baker/episode.
 
-   See https://en.wikipedia.org/wiki/The_Great_British_Bake_Off#Format
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      See
+      https://en.wikipedia.org/wiki/The_Great_British_Bake_Off#Format
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      if (require('tibble')) {
-        episodes_raw
-       }
-      head(episodes_raw)
+      ::
+
+         if (require('tibble')) {
+           episodes_raw
+          }
+         head(episodes_raw)

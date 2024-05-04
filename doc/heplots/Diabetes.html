@@ -12,100 +12,95 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Diabetes</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Diabetes'>
-Diabetes Dataset
-</h2>
+<h2>Diabetes Dataset</h2>
 
 <h3>Description</h3>
 
-<p>Reaven and Miller (1979) examined the relationship among blood chemistry measures of
-glucose tolerance and insulin in 145 nonobese adults.
-They used the PRIM9 system at the Stanford Linear Accelerator Center to
-visualize the data in 3D, and discovered a peculiar pattern that looked like a large
-blob with two wings in different directions.
+<p>Reaven and Miller (1979) examined the relationship among blood chemistry
+measures of glucose tolerance and insulin in 145 nonobese adults. They used
+the PRIM9 system at the Stanford Linear Accelerator Center to visualize the
+data in 3D, and discovered a peculiar pattern that looked like a large blob
+with two wings in different directions.
 </p>
-<p>After further analysis,
-the subjects were classified as subclinical (chemical) diabetics, overt diabetics and
-normals. 
-This study was influential in defining the stages of development of Type 2 diabetes.
-Overt diabetes is the most advanced stage, characterized by elevated
-fasting blood glucose concentration and classical symptoms.
-Preceding overt diabetes
-is the latent or chemical diabetic stage, with no symptoms of diabetes
-but demonstrable abnormality of oral or intravenous glucose tolerance.
-</p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data("Diabetes")</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A data frame with 145 observations on the following 6 variables.
 </p>
-
+ 
 <dl>
-<dt><code>relwt</code></dt><dd><p>relative weight, expressed as the ratio of actual weight to expected weight, given
-the person's height, a numeric vector</p>
-</dd>
+<dt><code>relwt</code></dt><dd><p>relative weight, expressed as the ratio of actual weight to expected weight, given the person's height, a numeric vector</p>
+</dd> 
 <dt><code>glufast</code></dt><dd><p>fasting plasma glucose level, a numeric vector</p>
-</dd>
+</dd> 
 <dt><code>glutest</code></dt><dd><p>test plasma glucose level, a measure of glucose intolerance, a numeric vector</p>
-</dd>
+</dd> 
 <dt><code>instest</code></dt><dd><p>plasma insulin during test, a measure of insulin response to oral glucose, a numeric vector</p>
-</dd>
+</dd> 
 <dt><code>sspg</code></dt><dd><p>steady state plasma glucose, a measure of insulin resistance, a numeric vector</p>
-</dd>
-<dt><code>group</code></dt><dd><p>diagnostic group, a factor with levels <code>Normal</code> <code>Chemical_Diabetic</code> <code>Overt_Diabetic</code></p>
-</dd>
+</dd> 
+<dt><code>group</code></dt><dd><p>diagnostic group, a factor with levels <code>Normal</code> <code>Chemical_Diabetic</code>
+<code>Overt_Diabetic</code></p>
+</dd> 
 </dl>
 
 
 
 <h3>Details</h3>
 
-<p><code>glutest</code> was defined as the &quot;area under the plasma glucose curve for the three hour
-oral glucose tolerance test.&quot;  Reaven &amp; Miller refer to this variable as &quot;Glucose area&quot;.
+<p>After further analysis, the subjects were classified as subclinical
+(chemical) diabetics, overt diabetics and normals.  This study was
+influential in defining the stages of development of Type 2 diabetes. Overt
+diabetes is the most advanced stage, characterized by elevated fasting blood
+glucose concentration and classical symptoms. Preceding overt diabetes is
+the latent or chemical diabetic stage, with no symptoms of diabetes but
+demonstrable abnormality of oral or intravenous glucose tolerance.
 </p>
-<p><code>instest</code> was defined as the &quot;area under the plasma insulin curve&quot;, and is referred
-to in the paper as &quot;Insulin area&quot;.
+<p><code>glutest</code> was defined as the &quot;area under the plasma glucose curve for
+the three hour oral glucose tolerance test.&quot;  Reaven &amp; Miller refer to this
+variable as &quot;Glucose area&quot;.
 </p>
-<p>This study was influential in defining the stages of development of Type 2 diabetes.
-Overt diabetes is the most advanced stage, characterized by elevated
-fasting blood glucose concentration and classical symptoms.
-Preceding overt diabetes
-is the latent or chemical diabetic stage, with no symptoms of diabetes
-but demonstrable abnormality of oral or intravenous glucose tolerance.
+<p><code>instest</code> was defined as the &quot;area under the plasma insulin curve&quot;, and
+is referred to in the paper as &quot;Insulin area&quot;.
+</p>
+<p>This study was influential in defining the stages of development of Type 2
+diabetes. Overt diabetes is the most advanced stage, characterized by
+elevated fasting blood glucose concentration and classical symptoms.
+Preceding overt diabetes is the latent or chemical diabetic stage, with no
+symptoms of diabetes but demonstrable abnormality of oral or intravenous
+glucose tolerance.
 </p>
 
 
 <h3>Source</h3>
 
-<p>Andrews, D. F. &amp; Herzberg, A. M. (1985). 
-<em>Data: A Collection of Problems from Many Fields for the Student and Research Worker</em>,
+<p>Andrews, D. F. &amp; Herzberg, A. M. (1985).  
+<em>Data: A Collection
+of Problems from Many Fields for the Student and Research Worker</em>,
 Springer-Verlag, Ch. 36.
 </p>
-<p>Friendly, M. (1991). <em>SAS System for Statistical Graphics</em>, Cary, NC: SAS Institute.
+<p>Friendly, M. (1991). <em>SAS System for Statistical Graphics</em>, Cary, NC:
+SAS Institute.
 </p>
 
 
 <h3>References</h3>
 
-<p>Reaven, G. M. and Miller, R. G. (1979). 
-An attempt to define the nature of chemical diabetes using a multidimensional analysis. 
-<em>Diabetologia</em>, 16, 17-24. 
+<p>Reaven, G. M. and Miller, R. G. (1979).  An attempt to define
+the nature of chemical diabetes using a multidimensional analysis.
+<em>Diabetologia</em>, 16, 17-24.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Diabetes)
+<pre><code class='language-R'>
+data(Diabetes)
 col &lt;- c("blue", "red", "darkgreen")[Diabetes$group]
 pch &lt;- c(16,15,17)[Diabetes$group]
 
@@ -138,8 +133,10 @@ heplot(diab.mlm)
 pairs(diab.mlm, fill=TRUE, fill.alpha=0.1)
 
 
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

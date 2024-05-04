@@ -1,61 +1,63 @@
 .. container::
 
-   ====== ===============
-   saving R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: saving
-      :name: saving
+      ====== ===============
+      saving R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: saving
+         :name: saving
 
-   Wooldridge Source: Unknown Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Unknown Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('saving')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('saving')
 
-   A data.frame with 100 observations on 7 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **sav:** annual savings, $
+      A data.frame with 100 observations on 7 variables:
 
-   -  **inc:** annual income, $
+      -  **sav:** annual savings, $
 
-   -  **size:** family size
+      -  **inc:** annual income, $
 
-   -  **educ:** years educ, household head
+      -  **size:** family size
 
-   -  **age:** age of household head
+      -  **educ:** years educ, household head
 
-   -  **black:** =1 if household head is black
+      -  **age:** age of household head
 
-   -  **cons:** annual consumption, $
+      -  **black:** =1 if household head is black
 
-   .. rubric:: Notes
-      :name: notes
+      -  **cons:** annual consumption, $
 
-   I remember entering this data set in the late 1980s, and I am pretty
-   sure it came directly from an introductory econometrics text. But so
-   far my search has been fruitless. If anyone runs across this data
-   set, I would appreciate knowing about it.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: not used
+      I remember entering this data set in the late 1980s, and I am
+      pretty sure it came directly from an introductory econometrics
+      text. But so far my search has been fruitless. If anyone runs
+      across this data set, I would appreciate knowing about it.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: not used
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(saving)
+      ::
+
+          str(saving)

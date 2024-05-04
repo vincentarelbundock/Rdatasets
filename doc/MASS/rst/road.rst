@@ -1,52 +1,54 @@
 .. container::
 
-   ==== ===============
-   road R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Road Accident Deaths in US States
-      :name: road
+      ==== ===============
+      road R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Road Accident Deaths in US States
+         :name: road-accident-deaths-in-us-states
 
-   A data frame with the annual deaths in road accidents for half the US
-   states.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data frame with the annual deaths in road accidents for half the
+      US states.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      road
+      ::
 
-   .. rubric:: Format
-      :name: format
+         road
 
-   Columns are:
+      .. rubric:: Format
+         :name: format
 
-   ``state``
-      name.
+      Columns are:
 
-   ``deaths``
-      number of deaths.
+      ``state``
+         name.
 
-   ``drivers``
-      number of drivers (in 10,000s).
+      ``deaths``
+         number of deaths.
 
-   ``popden``
-      population density in people per square mile.
+      ``drivers``
+         number of drivers (in 10,000s).
 
-   ``rural``
-      length of rural roads, in 1000s of miles.
+      ``popden``
+         population density in people per square mile.
 
-   ``temp``
-      average daily maximum temperature in January.
+      ``rural``
+         length of rural roads, in 1000s of miles.
 
-   ``fuel``
-      fuel consumption in 10,000,000 US gallons per year.
+      ``temp``
+         average daily maximum temperature in January.
 
-   .. rubric:: Source
-      :name: source
+      ``fuel``
+         fuel consumption in 10,000,000 US gallons per year.
 
-   Imperial College, London M.Sc. exercise
+      .. rubric:: Source
+         :name: source
+
+      Imperial College, London M.Sc. exercise

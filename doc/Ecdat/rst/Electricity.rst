@@ -1,78 +1,81 @@
 .. container::
 
-   =========== ===============
-   Electricity R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Cost Function for Electricity Producers
-      :name: Electricity
+      =========== ===============
+      Electricity R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cost Function for Electricity Producers
+         :name: cost-function-for-electricity-producers
 
-   a cross-section from 1970 to 1970
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 158
+      a cross-section from 1970 to 1970
 
-   *observation* : production units
+      *number of observations* : 158
 
-   *country* : United States
+      *observation* : production units
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Electricity)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Electricity)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   cost
-      total cost
+      A dataframe containing :
 
-   q
-      total output
+      cost
+         total cost
 
-   pl
-      wage rate
+      q
+         total output
 
-   sl
-      cost share for labor
+      pl
+         wage rate
 
-   pk
-      capital price index
+      sl
+         cost share for labor
 
-   sk
-      cost share for capital
+      pk
+         capital price index
 
-   pf
-      fuel price
+      sk
+         cost share for capital
 
-   sf
-      cost share for fuel
+      pf
+         fuel price
 
-   .. rubric:: Source
-      :name: source
+      sf
+         cost share for fuel
 
-   Christensen, L. and W. H. Greene (1976) “Economies of scale in U.S.
-   electric power generation”, *Journal of Political Economy*, **84**,
-   655-676.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Christensen, L. and W. H. Greene (1976) “Economies of scale in
+      U.S. electric power generation”, *Journal of Political Economy*,
+      **84**, 655-676.
 
-   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   https://archive.org/details/econometricanaly0000gree_f4x3, chapter 4,
-   317-320.
+      .. rubric:: References
+         :name: references
 
-   Hayashi, F. (2000) *Econometrics*, Princeton University Press,
-   https://archive.org/details/econometrics0000haya, chapter 1, 76-84.
+      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+      https://archive.org/details/econometricanaly0000gree_f4x3, chapter
+      4, 317-320.
 
-   .. rubric:: See Also
-      :name: see-also
+      Hayashi, F. (2000) *Econometrics*, Princeton University Press,
+      https://archive.org/details/econometrics0000haya, chapter 1,
+      76-84.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

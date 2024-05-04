@@ -1,92 +1,95 @@
 .. container::
 
-   ===== ===============
-   CES11 R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: 2011 Canadian National Election Study, With Attitude
-      Toward Abortion
-      :name: CES11
+      ===== ===============
+      CES11 R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: 2011 Canadian National Election Study, With Attitude
+         Toward Abortion
+         :name: canadian-national-election-study-with-attitude-toward-abortion
 
-   Data are drawn from the 2011 Canadian National Election Study,
-   including a question on banning abortion and variables related to the
-   sampling design.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data are drawn from the 2011 Canadian National Election Study,
+      including a question on banning abortion and variables related to
+      the sampling design.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("CES11")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("CES11")
 
-   A data frame with 2231 observations on the following 9 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``id``
-      Household ID number.
+      A data frame with 2231 observations on the following 9 variables.
 
-   ``province``
-      a factor with (alphabetical) levels ``AB``, ``BC``, ``MB``,
-      ``NB``, ``NL``, ``NS``, ``ON``, ``PE``, ``QC``, ``SK``; the sample
-      was stratified by province.
+      ``id``
+         Household ID number.
 
-   ``population``
-      population of the respondent's province, number over age 17.
+      ``province``
+         a factor with (alphabetical) levels ``AB``, ``BC``, ``MB``,
+         ``NB``, ``NL``, ``NS``, ``ON``, ``PE``, ``QC``, ``SK``; the
+         sample was stratified by province.
 
-   ``weight``
-      weight sample to size of population, taking into account unequal
-      sampling probabilities by province and household size.
+      ``population``
+         population of the respondent's province, number over age 17.
 
-   ``gender``
-      a factor with levels ``Female``, ``Male``.
+      ``weight``
+         weight sample to size of population, taking into account
+         unequal sampling probabilities by province and household size.
 
-   ``abortion``
-      attitude toward abortion, a factor with levels ``No``, ``Yes``;
-      answer to the question "Should abortion be banned?"
+      ``gender``
+         a factor with levels ``Female``, ``Male``.
 
-   ``importance``
-      importance of religion, a factor with (alphabetical) levels
-      ``not``, ``notvery``, ``somewhat``, ``very``; answer to the
-      question, "In your life, would you say that religion is very
-      important, somewhat important, not very important, or not
-      important at all?"
+      ``abortion``
+         attitude toward abortion, a factor with levels ``No``, ``Yes``;
+         answer to the question "Should abortion be banned?"
 
-   ``education``
-      a factor with (alphabetical) levels ``bachelors`` (Bachelors
-      degree), ``college`` (community college or technical school),
-      ``higher`` (graduate degree), ``HS`` (high-school graduate),
-      ``lessHS`` (less than high-school graduate), ``somePS`` (some
-      post-secondary).
+      ``importance``
+         importance of religion, a factor with (alphabetical) levels
+         ``not``, ``notvery``, ``somewhat``, ``very``; answer to the
+         question, "In your life, would you say that religion is very
+         important, somewhat important, not very important, or not
+         important at all?"
 
-   ``urban``
-      place of residence, a factor with levels ``rural``, ``urban``.
+      ``education``
+         a factor with (alphabetical) levels ``bachelors`` (Bachelors
+         degree), ``college`` (community college or technical school),
+         ``higher`` (graduate degree), ``HS`` (high-school graduate),
+         ``lessHS`` (less than high-school graduate), ``somePS`` (some
+         post-secondary).
 
-   .. rubric:: Details
-      :name: details
+      ``urban``
+         place of residence, a factor with levels ``rural``, ``urban``.
 
-   This is an extract from the data set for the 2011 Canadian National
-   Election Study distributed by the Institute for Social Research, York
-   University.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: References
-      :name: references
+      This is an extract from the data set for the 2011 Canadian
+      National Election Study distributed by the Institute for Social
+      Research, York University.
 
-   Fournier, P., Cutler, F., Soroka, S., and Stolle, D. (2013). Canadian
-   Election Study 2011: Study documentation. Technical report, Canadian
-   Opinion Research Archive, Queen's University, Kingson,Ontario.
+      .. rubric:: References
+         :name: references
 
-   Northrup, D. (2012). The 2011 Canadian Election Survey: Technical
-   documention. Technical report, Institute for Social Research, York
-   University, Toronto, Ontario.
+      Fournier, P., Cutler, F., Soroka, S., and Stolle, D. (2013).
+      Canadian Election Study 2011: Study documentation. Technical
+      report, Canadian Opinion Research Archive, Queen's University,
+      Kingson,Ontario.
 
-   .. rubric:: Examples
-      :name: examples
+      Northrup, D. (2012). The 2011 Canadian Election Survey: Technical
+      documention. Technical report, Institute for Social Research, York
+      University, Toronto, Ontario.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(CES11)
+      ::
+
+         summary(CES11)

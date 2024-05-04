@@ -1,132 +1,134 @@
 .. container::
 
-   ============== ===============
-   mlb_players_18 R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Batter Statistics for 2018 Major League Baseball (MLB)
-      Season
-      :name: mlb_players_18
+      ============== ===============
+      mlb_players_18 R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Batter Statistics for 2018 Major League Baseball (MLB)
+         Season
+         :name: batter-statistics-for-2018-major-league-baseball-mlb-season
 
-   Batter statistics for 2018 Major League Baseball season.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Batter statistics for 2018 Major League Baseball season.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      mlb_players_18
+      ::
 
-   .. rubric:: Format
-      :name: format
+         mlb_players_18
 
-   A data frame with 1270 observations on the following 19 variables.
+      .. rubric:: Format
+         :name: format
 
-   name
-      Player name
+      A data frame with 1270 observations on the following 19 variables.
 
-   team
-      Team abbreviation
+      name
+         Player name
 
-   position
-      Position abbreviation: ``1B`` = first base, ``2B`` = second base,
-      ``3B`` = third base, ``C`` = catcher, ``CF`` = center field
-      (outfield), ``DH`` = designated hitter, ``LF`` = left field
-      (outfield), ``P`` = pitcher, ``RF`` = right field (outfield),
-      ``SS`` = shortstop.
+      team
+         Team abbreviation
 
-   games
-      Number of games played.
+      position
+         Position abbreviation: ``1B`` = first base, ``2B`` = second
+         base, ``3B`` = third base, ``C`` = catcher, ``CF`` = center
+         field (outfield), ``DH`` = designated hitter, ``LF`` = left
+         field (outfield), ``P`` = pitcher, ``RF`` = right field
+         (outfield), ``SS`` = shortstop.
 
-   AB
-      At bats.
+      games
+         Number of games played.
 
-   R
-      Runs.
+      AB
+         At bats.
 
-   H
-      Hits.
+      R
+         Runs.
 
-   doubles
-      Doubles.
+      H
+         Hits.
 
-   triples
-      Triples.
+      doubles
+         Doubles.
 
-   HR
-      Home runs.
+      triples
+         Triples.
 
-   RBI
-      Runs batted in.
+      HR
+         Home runs.
 
-   walks
-      Walks.
+      RBI
+         Runs batted in.
 
-   strike_outs
-      Strike outs.
+      walks
+         Walks.
 
-   stolen_bases
-      Stolen bases.
+      strike_outs
+         Strike outs.
 
-   caught_stealing_base
-      Number of times caught stealing a base.
+      stolen_bases
+         Stolen bases.
 
-   AVG
-      Batting average.
+      caught_stealing_base
+         Number of times caught stealing a base.
 
-   OBP
-      On-base percentage.
+      AVG
+         Batting average.
 
-   SLG
-      Slugging percentage.
+      OBP
+         On-base percentage.
 
-   OPS
-      On-base percentage plus slugging percentage.
+      SLG
+         Slugging percentage.
 
-   .. rubric:: Source
-      :name: source
+      OPS
+         On-base percentage plus slugging percentage.
 
-   https://www.mlb.com/stats
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: See Also
-      :name: see-also
+      https://www.mlb.com/stats
 
-   ``mlbbat10``, ``mlb``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``mlbbat10``, ``mlb``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      d <- subset(mlb_players_18, !position %in% c("P", "DH") & AB >= 100)
-      dim(d)
+      ::
 
-      # _____ Per Position, No Further Grouping _____ #
-      plot(d$OBP ~ as.factor(d$position))
-      model <- lm(OBP ~ as.factor(position), d)
-      summary(model)
-      anova(model)
+         d <- subset(mlb_players_18, !position %in% c("P", "DH") & AB >= 100)
+         dim(d)
 
-      # _____ Simplified Analysis, Fewer Positions _____ #
-      pos <- list(
-        c("LF", "CF", "RF"),
-        c("1B", "2B", "3B", "SS"),
-        "C"
-      )
-      POS <- c("OF", "IF", "C")
-      table(d$position)
+         # _____ Per Position, No Further Grouping _____ #
+         plot(d$OBP ~ as.factor(d$position))
+         model <- lm(OBP ~ as.factor(position), d)
+         summary(model)
+         anova(model)
 
-      # _____ On-Base Percentage Across Positions _____ #
-      out <- c()
-      gp <- c()
-      for (i in 1:length(pos)) {
-        these <- which(d$position %in% pos[[i]])
-        out <- c(out, d$OBP[these])
-        gp <- c(gp, rep(POS[i], length(these)))
-      }
-      plot(out ~ as.factor(gp))
-      summary(lm(out ~ as.factor(gp)))
-      anova(lm(out ~ as.factor(gp)))
+         # _____ Simplified Analysis, Fewer Positions _____ #
+         pos <- list(
+           c("LF", "CF", "RF"),
+           c("1B", "2B", "3B", "SS"),
+           "C"
+         )
+         POS <- c("OF", "IF", "C")
+         table(d$position)
+
+         # _____ On-Base Percentage Across Positions _____ #
+         out <- c()
+         gp <- c()
+         for (i in 1:length(pos)) {
+           these <- which(d$position %in% pos[[i]])
+           out <- c(out, d$OBP[these])
+           gp <- c(gp, rep(POS[i], length(these)))
+         }
+         plot(out ~ as.factor(gp))
+         summary(lm(out ~ as.factor(gp)))
+         anova(lm(out ~ as.factor(gp)))

@@ -1,96 +1,99 @@
 .. container::
 
-   === ===============
-   Oil R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Oil Investment
-      :name: Oil
+      === ===============
+      Oil R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Oil Investment
+         :name: oil-investment
 
-   a cross-section from 1969 to 1992
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 53
+      a cross-section from 1969 to 1992
 
-   *observation* : production units
+      *number of observations* : 53
 
-   *country* : United Kingdom
+      *observation* : production units
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United Kingdom
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Oil)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Oil)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   dur
-      duration of the appraisal lag in months (time span between
-      discovery of an oil field and beginning of development, i.e.
-      approval of annex B).
+      A dataframe containing :
 
-   size
-      size of recoverable reserves in millions of barrels
+      dur
+         duration of the appraisal lag in months (time span between
+         discovery of an oil field and beginning of development, i.e.
+         approval of annex B).
 
-   waterd
-      depth of the sea in metres
+      size
+         size of recoverable reserves in millions of barrels
 
-   gasres
-      size of recoverable gas reserves in billions of cubic feet
+      waterd
+         depth of the sea in metres
 
-   operator
-      equity market value (in 1991 million pounds) of the company
-      operating the oil field
+      gasres
+         size of recoverable gas reserves in billions of cubic feet
 
-   p
-      real after–tax oil price measured at time of annex B approval
+      operator
+         equity market value (in 1991 million pounds) of the company
+         operating the oil field
 
-   vardp
-      volatility of the real oil price process measured as the squared
-      recursive standard errors of the regression of codept-pt-1 on a
-      constant
+      p
+         real after–tax oil price measured at time of annex B approval
 
-   p97
-      adaptive expectations (with parameter theta=0.97) for the real
-      after–tax oil prices formed at the time of annex B approval
+      vardp
+         volatility of the real oil price process measured as the
+         squared recursive standard errors of the regression of
+         codept-pt-1 on a constant
 
-   varp97
-      volatility of the adaptive expectations (with parameter
-      theta=0.97) for real after tax oil prices measured as the squared
-      recursive standard errors of the regression of ``pt`` on
-      ``pte(theta)``
+      p97
+         adaptive expectations (with parameter theta=0.97) for the real
+         after–tax oil prices formed at the time of annex B approval
 
-   p98
-      adaptive expectations (with parameter theta=0.98) for the real
-      after–tax oil prices formed at the time of annex B approval
+      varp97
+         volatility of the adaptive expectations (with parameter
+         theta=0.97) for real after tax oil prices measured as the
+         squared recursive standard errors of the regression of ``pt``
+         on ``pte(theta)``
 
-   varp98
-      volatility of the adaptive expectations (with parameter
-      theta=0.98) for real after tax oil prices measured as the squared
-      recursive standard errors of the regression of ``pt`` on
-      ``pte(theta)``
+      p98
+         adaptive expectations (with parameter theta=0.98) for the real
+         after–tax oil prices formed at the time of annex B approval
 
-   .. rubric:: Source
-      :name: source
+      varp98
+         volatility of the adaptive expectations (with parameter
+         theta=0.98) for real after tax oil prices measured as the
+         squared recursive standard errors of the regression of ``pt``
+         on ``pte(theta)``
 
-   Favero, Carlo A., M. Hashem Pesaran and Sunil Sharma (1994) “A
-   duration model of irreversible oil investment : theory and empirical
-   evidence”, *Journal of Applied Econometrics*, **9(S)**, S95–S112.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Favero, Carlo A., M. Hashem Pesaran and Sunil Sharma (1994) “A
+      duration model of irreversible oil investment : theory and
+      empirical evidence”, *Journal of Applied Econometrics*, **9(S)**,
+      S95–S112.
 
-   Journal of Applied Econometrics data archive :
-   http://qed.econ.queensu.ca/jae/.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Journal of Applied Econometrics data archive :
+      http://qed.econ.queensu.ca/jae/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

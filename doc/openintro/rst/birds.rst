@@ -1,136 +1,140 @@
 .. container::
 
-   ===== ===============
-   birds R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Aircraft-Wildlife Collisions
-      :name: birds
+      ===== ===============
+      birds R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Aircraft-Wildlife Collisions
+         :name: aircraft-wildlife-collisions
 
-   A collection of all collisions between aircraft in wildlife that were
-   reported to the US Federal Aviation Administration between 1990 and
-   1997, with details on the circumstances of the collision.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A collection of all collisions between aircraft in wildlife that
+      were reported to the US Federal Aviation Administration between
+      1990 and 1997, with details on the circumstances of the collision.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      birds
+      ::
 
-   .. rubric:: Format
-      :name: format
+         birds
 
-   A data frame with 19302 observations on the following 17 variables.
+      .. rubric:: Format
+         :name: format
 
-   opid
-      Three letter identification code for the operator (carrier) of the
-      aircraft.
+      A data frame with 19302 observations on the following 17
+      variables.
 
-   operator
-      Name of the aircraft operator.
+      opid
+         Three letter identification code for the operator (carrier) of
+         the aircraft.
 
-   atype
-      Make and model of aircraft.
+      operator
+         Name of the aircraft operator.
 
-   remarks
-      Verbal remarks regarding the collision.
+      atype
+         Make and model of aircraft.
 
-   phase_of_flt
-      Phase of the flight during which the collision occurred:
-      ``Approach``, ``Climb``, ``Descent``, ``En Route``,
-      ``Landing Roll``, ``Parked``, ``Take-off run``, ``Taxi``.
+      remarks
+         Verbal remarks regarding the collision.
 
-   ac_mass
-      Mass of the aircraft classified as 2250 kg or less (1), 2251-5700
-      kg (2), 5701-27000 kg (3), 27001-272000 kg (4), above 272000 kg
-      (5).
+      phase_of_flt
+         Phase of the flight during which the collision occurred:
+         ``Approach``, ``Climb``, ``Descent``, ``En Route``,
+         ``Landing Roll``, ``Parked``, ``Take-off run``, ``Taxi``.
 
-   num_engs
-      Number of engines on the aircraft.
+      ac_mass
+         Mass of the aircraft classified as 2250 kg or less (1),
+         2251-5700 kg (2), 5701-27000 kg (3), 27001-272000 kg (4), above
+         272000 kg (5).
 
-   date
-      Date of the collision (MM/DD/YYYY).
+      num_engs
+         Number of engines on the aircraft.
 
-   time_of_day
-      Light conditions: ``Dawn``, ``Day``, ``Dusk``, ``Night``.
+      date
+         Date of the collision (MM/DD/YYYY).
 
-   state
-      Two letter abbreviation of the US state in which the collision
-      occurred.
+      time_of_day
+         Light conditions: ``Dawn``, ``Day``, ``Dusk``, ``Night``.
 
-   height
-      Feet above ground level.
+      state
+         Two letter abbreviation of the US state in which the collision
+         occurred.
 
-   speed
-      Knots (indicated air speed).
+      height
+         Feet above ground level.
 
-   effect
-      Effect on flight: ``Aborted Take-off``, ``Engine Shut Down``,
-      ``None``, ``Other``, ``Precautionary Landing``.
+      speed
+         Knots (indicated air speed).
 
-   sky
-      Type of cloud cover, if any: ``No Cloud``, ``Overcast``,
-      ``Some Cloud``.
+      effect
+         Effect on flight: ``Aborted Take-off``, ``Engine Shut Down``,
+         ``None``, ``Other``, ``Precautionary Landing``.
 
-   species
-      Common name for bird or other wildlife.
+      sky
+         Type of cloud cover, if any: ``No Cloud``, ``Overcast``,
+         ``Some Cloud``.
 
-   birds_seen
-      Number of birds/wildlife seen by pilot: ``1``, ``2-10``,
-      ``11-100``, ``Over 100``.
+      species
+         Common name for bird or other wildlife.
 
-   birds_struck
-      Number of birds/wildlife struck: ``0``, ``1``, ``2-10``,
-      ``11-100``, ``Over 100``.
+      birds_seen
+         Number of birds/wildlife seen by pilot: ``1``, ``2-10``,
+         ``11-100``, ``Over 100``.
 
-   .. rubric:: Details
-      :name: details
+      birds_struck
+         Number of birds/wildlife struck: ``0``, ``1``, ``2-10``,
+         ``11-100``, ``Over 100``.
 
-   The FAA National Wildlife Strike Database contains strike reports
-   that are voluntarily reported to the FAA by pilots, airlines,
-   airports and others. Current research indicates that only about 20\\
-   Wildlife strike reporting is not uniform as some organizations have
-   more robust voluntary reporting procedures. Because of variations in
-   reporting, users are cautioned that the comparisons between
-   individual airports or airlines may be misleading.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The FAA National Wildlife Strike Database contains strike reports
+      that are voluntarily reported to the FAA by pilots, airlines,
+      airports and others. Current research indicates that only about
+      20\\ Wildlife strike reporting is not uniform as some
+      organizations have more robust voluntary reporting procedures.
+      Because of variations in reporting, users are cautioned that the
+      comparisons between individual airports or airlines may be
+      misleading.
 
-   Aircraft Wildlife Strike Data: Search Tool - FAA Wildlife Strike
-   Database. Available at
-   https://datahub.transportation.gov/Aviation/Aircraft-Wildlife-Strike-Data-Search-Tool-FAA-Wild/jhay-dgxy.
-   Retrieval date: Feb 4, 2012.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Aircraft Wildlife Strike Data: Search Tool - FAA Wildlife Strike
+      Database. Available at
+      https://datahub.transportation.gov/Aviation/Aircraft-Wildlife-Strike-Data-Search-Tool-FAA-Wild/jhay-dgxy.
+      Retrieval date: Feb 4, 2012.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(dplyr)
-      library(ggplot2)
-      library(forcats)
-      library(tidyr)
+      ::
 
-      # Phase of the flight during which the collision occurred, tabular
-      birds %>%
-        count(phase_of_flt, sort = TRUE)
+         library(dplyr)
+         library(ggplot2)
+         library(forcats)
+         library(tidyr)
 
-      # Phase of the flight during which the collision occurred, barplot
-      ggplot(birds, aes(y = fct_infreq(phase_of_flt))) +
-        geom_bar() +
-        labs(x = "Phase of flight")
+         # Phase of the flight during which the collision occurred, tabular
+         birds %>%
+           count(phase_of_flt, sort = TRUE)
 
-      # Height summary statistics
-      summary(birds$height)
+         # Phase of the flight during which the collision occurred, barplot
+         ggplot(birds, aes(y = fct_infreq(phase_of_flt))) +
+           geom_bar() +
+           labs(x = "Phase of flight")
 
-      # Phase of flight vs. effect of crash
-      birds %>%
-        drop_na(phase_of_flt, effect) %>%
-        ggplot(aes(y = phase_of_flt, fill = effect)) +
-        geom_bar(position = "fill") +
-        labs(x = "Proportion", y = "Phase of flight", fill = "Effect")
+         # Height summary statistics
+         summary(birds$height)
+
+         # Phase of flight vs. effect of crash
+         birds %>%
+           drop_na(phase_of_flt, effect) %>%
+           ggplot(aes(y = phase_of_flt, fill = effect)) +
+           geom_bar(position = "fill") +
+           labs(x = "Proportion", y = "Phase of flight", fill = "Effect")

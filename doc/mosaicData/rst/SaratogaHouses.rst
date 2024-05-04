@@ -1,65 +1,82 @@
 .. container::
 
-   ============== ===============
-   SaratogaHouses R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Houses in Saratoga County (2006)
-      :name: SaratogaHouses
+      ============== ===============
+      SaratogaHouses R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Houses in Saratoga County (2006)
+         :name: houses-in-saratoga-county-2006
 
-   Data on houses in Saratoga County, New York, USA in 2006
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on houses in Saratoga County, New York, USA in 2006
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(SaratogaHouses)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(SaratogaHouses)
 
-   A data frame with 1728 observations on the following 16 variables.
+      .. rubric:: Format
+         :name: format
 
-   -  ``price`` price (US dollars)
+      A data frame with 1728 observations on the following 16 variables.
 
-   -  ``lotSize`` size of lot (acres)
+      ``price``
+         price (US dollars)
 
-   -  ``age`` age of house (years)
+      ``lotSize``
+         size of lot (acres)
 
-   -  ``landValue`` value of land (US dollars)
+      ``age``
+         age of house (years)
 
-   -  ``livingArea`` living are (square feet)
+      ``landValue``
+         value of land (US dollars)
 
-   -  ``pctCollege`` percent of neighborhood that graduated college
+      ``livingArea``
+         living are (square feet)
 
-   -  ``bedrooms`` number of bedrooms
+      ``pctCollege``
+         percent of neighborhood that graduated college
 
-   -  ``fireplaces`` number of fireplaces
+      ``bedrooms``
+         number of bedrooms
 
-   -  ``bathrooms`` number of bathrooms (half bathrooms have no shower
-      or tub)
+      ``fireplaces``
+         number of fireplaces
 
-   -  ``rooms`` number of rooms
+      ``bathrooms``
+         number of bathrooms (half bathrooms have no shower or tub)
 
-   -  ``heating`` type of heating system
+      ``rooms``
+         number of rooms
 
-   -  ``fuel`` fuel used for heating
+      ``heating``
+         type of heating system
 
-   -  ``sewer`` type of sewer system
+      ``fuel``
+         fuel used for heating
 
-   -  ``waterfront`` whether property includes waterfront
+      ``sewer``
+         type of sewer system
 
-   -  ``newConstruction`` whether the property is a new construction
+      ``waterfront``
+         whether property includes waterfront
 
-   -  ``centralAir`` whether the house has central air
+      ``newConstruction``
+         whether the property is a new construction
 
-   .. rubric:: Source
-      :name: source
+      ``centralAir``
+         whether the house has central air
 
-   Data collected by Candice Corvetti and used in the "Stat 101" case
-   study "How much is a Fireplace Worth". See also
-   https://www.saratogacountyny.gov/departments/real-property-tax-service-agency/
+      .. rubric:: Source
+         :name: source
+
+      Data collected by Candice Corvetti and used in the "Stat 101" case
+      study "How much is a Fireplace Worth". See also
+      https://www.saratogacountyny.gov/departments/real-property-tax-service-agency/

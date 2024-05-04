@@ -1,98 +1,101 @@
 .. container::
 
-   ====== ===============
-   nbasal R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: nbasal
-      :name: nbasal
+      ====== ===============
+      nbasal R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: nbasal
+         :name: nbasal
 
-   Wooldridge Source: Collected by Christopher Torrente, a former MSU
-   undergraduate, for a term project. He obtained the salary data and
-   the career statistics from The Complete Handbook of Pro Basketball,
-   1995, edited by Zander Hollander. New York: Signet. The demographic
-   information (marital status, number of children, and so on) was
-   obtained from the teams’ 1994-1995 media guides. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Collected by Christopher Torrente, a former MSU
+      undergraduate, for a term project. He obtained the salary data and
+      the career statistics from The Complete Handbook of Pro
+      Basketball, 1995, edited by Zander Hollander. New York: Signet.
+      The demographic information (marital status, number of children,
+      and so on) was obtained from the teams’ 1994-1995 media guides.
+      Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('nbasal')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('nbasal')
 
-   A data.frame with 269 observations on 22 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **marr:** =1 if married
+      A data.frame with 269 observations on 22 variables:
 
-   -  **wage:** annual salary, thousands $
+      -  **marr:** =1 if married
 
-   -  **exper:** years as professional player
+      -  **wage:** annual salary, thousands $
 
-   -  **age:** age in years
+      -  **exper:** years as professional player
 
-   -  **coll:** years played in college
+      -  **age:** age in years
 
-   -  **games:** average games per year
+      -  **coll:** years played in college
 
-   -  **minutes:** average minutes per year
+      -  **games:** average games per year
 
-   -  **guard:** =1 if guard
+      -  **minutes:** average minutes per year
 
-   -  **forward:** =1 if forward
+      -  **guard:** =1 if guard
 
-   -  **center:** =1 if center
+      -  **forward:** =1 if forward
 
-   -  **points:** points per game
+      -  **center:** =1 if center
 
-   -  **rebounds:** rebounds per game
+      -  **points:** points per game
 
-   -  **assists:** assists per game
+      -  **rebounds:** rebounds per game
 
-   -  **draft:** draft number
+      -  **assists:** assists per game
 
-   -  **allstar:** =1 if ever all star
+      -  **draft:** draft number
 
-   -  **avgmin:** minutes per game
+      -  **allstar:** =1 if ever all star
 
-   -  **lwage:** log(wage)
+      -  **avgmin:** minutes per game
 
-   -  **black:** =1 if black
+      -  **lwage:** log(wage)
 
-   -  **children:** =1 if has children
+      -  **black:** =1 if black
 
-   -  **expersq:** exper^2
+      -  **children:** =1 if has children
 
-   -  **agesq:** age^2
+      -  **expersq:** exper^2
 
-   -  **marrblck:** marr*black
+      -  **agesq:** age^2
 
-   .. rubric:: Notes
-      :name: notes
+      -  **marrblck:** marr*black
 
-   A panel version of this data set could be useful for further
-   isolating productivity effects of marital status. One would need to
-   obtain information on enough different players in at least two years,
-   where some players who were not married in the initial year are
-   married in later years. Fixed effects (or first differencing, for two
-   years) is the natural estimation method.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 222-223, 264-265
+      A panel version of this data set could be useful for further
+      isolating productivity effects of marital status. One would need
+      to obtain information on enough different players in at least two
+      years, where some players who were not married in the initial year
+      are married in later years. Fixed effects (or first differencing,
+      for two years) is the natural estimation method.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 222-223, 264-265
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(nbasal)
+      ::
+
+          str(nbasal)

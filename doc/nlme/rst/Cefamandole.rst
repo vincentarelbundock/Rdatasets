@@ -1,56 +1,58 @@
 .. container::
 
-   =========== ===============
-   Cefamandole R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Pharmacokinetics of Cefamandole
-      :name: Cefamandole
+      =========== ===============
+      Cefamandole R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Pharmacokinetics of Cefamandole
+         :name: pharmacokinetics-of-cefamandole
 
-   The ``Cefamandole`` data frame has 84 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``Cefamandole`` data frame has 84 rows and 3 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Subject
-      a factor giving the subject from which the sample was drawn.
+      This data frame contains the following columns:
 
-   Time
-      a numeric vector giving the time at which the sample was drawn
-      (minutes post-injection).
+      Subject
+         a factor giving the subject from which the sample was drawn.
 
-   conc
-      a numeric vector giving the observed plasma concentration of
-      cefamandole (mcg/ml).
+      Time
+         a numeric vector giving the time at which the sample was drawn
+         (minutes post-injection).
 
-   .. rubric:: Details
-      :name: details
+      conc
+         a numeric vector giving the observed plasma concentration of
+         cefamandole (mcg/ml).
 
-   Davidian and Giltinan (1995, 1.1, p. 2) describe data obtained during
-   a pilot study to investigate the pharmacokinetics of the drug
-   cefamandole. Plasma concentrations of the drug were measured on six
-   healthy volunteers at 14 time points following an intraveneous dose
-   of 15 mg/kg body weight of cefamandole.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Davidian and Giltinan (1995, 1.1, p. 2) describe data obtained
+      during a pilot study to investigate the pharmacokinetics of the
+      drug cefamandole. Plasma concentrations of the drug were measured
+      on six healthy volunteers at 14 time points following an
+      intraveneous dose of 15 mg/kg body weight of cefamandole.
 
-   Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S
-   and S-PLUS*, Springer, New York. (Appendix A.4)
+      .. rubric:: Source
+         :name: source
 
-   Davidian, M. and Giltinan, D. M. (1995), *Nonlinear Models for
-   Repeated Measurement Data*, Chapman and Hall, London.
+      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
+      S and S-PLUS*, Springer, New York. (Appendix A.4)
 
-   .. rubric:: Examples
-      :name: examples
+      Davidian, M. and Giltinan, D. M. (1995), *Nonlinear Models for
+      Repeated Measurement Data*, Chapman and Hall, London.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      plot(Cefamandole)
-      fm1 <- nlsList(SSbiexp, data = Cefamandole)
-      summary(fm1)
+      ::
+
+         plot(Cefamandole)
+         fm1 <- nlsList(SSbiexp, data = Cefamandole)
+         summary(fm1)

@@ -1,155 +1,158 @@
 .. container::
 
-   ============= ===============
-   CushnyPeebles R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Cushny-Peebles Data: Soporific Effects of Scopolamine
-      Derivatives
-      :name: CushnyPeebles
+      ============= ===============
+      CushnyPeebles R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cushny-Peebles Data: Soporific Effects of Scopolamine
+         Derivatives
+         :name: cushny-peebles-data-soporific-effects-of-scopolamine-derivatives
 
-   Cushny and Peebles (1905) studied the effects of hydrobromides
-   related to scopolamine and atropine in producing sleep. The sleep of
-   mental patients was measured without hypnotic (``Control``) and after
-   treatment with one of three drugs: L. hyoscyamine hydrobromide
-   (``L_hyoscyamine``), L. hyoscine hydrobromide (``L_hyoscyine``), and
-   a mixture (racemic) form, ``DL_hyoscine``, called atropine. The L
-   (levo) and D (detro) form of a given molecule are optical isomers
-   (mirror images).
+      .. rubric:: Description
+         :name: description
 
-   The drugs were given on alternate evenings, and the hours of sleep
-   were compared with the intervening control night. Each of the drugs
-   was tested in this manner a varying number of times in each subject.
-   The average number of hours of sleep for each treatment is the
-   response.
+      Cushny and Peebles (1905) studied the effects of hydrobromides
+      related to scopolamine and atropine in producing sleep. The sleep
+      of mental patients was measured without hypnotic (``Control``) and
+      after treatment with one of three drugs: L. hyoscyamine
+      hydrobromide (``L_hyoscyamine``), L. hyoscine hydrobromide
+      (``L_hyoscyine``), and a mixture (racemic) form, ``DL_hyoscine``,
+      called atropine. The L (levo) and D (detro) form of a given
+      molecule are optical isomers (mirror images).
 
-   Student (1908) used these data to illustrate the paired-sample t-test
-   in small samples, testing the hypothesis that the mean difference
-   between a given drug and the control condition was zero. This data
-   set became well known when used by Fisher (1925). Both Student and
-   Fisher had problems labeling the drugs correctly (see Senn &
-   Richardson (1994)), and consequently came to wrong conclusions.
+      The drugs were given on alternate evenings, and the hours of sleep
+      were compared with the intervening control night. Each of the
+      drugs was tested in this manner a varying number of times in each
+      subject. The average number of hours of sleep for each treatment
+      is the response.
 
-   But as well, the sample sizes (number of nights) for each mean
-   differed widely, ranging from 3-9, and this was not taken into
-   account in their analyses. To allow weighted analyses, the number of
-   observations for each mean is contained in the data frame
-   ``CushnyPeeblesN``.
+      Student (1908) used these data to illustrate the paired-sample
+      t-test in small samples, testing the hypothesis that the mean
+      difference between a given drug and the control condition was
+      zero. This data set became well known when used by Fisher (1925).
+      Both Student and Fisher had problems labeling the drugs correctly
+      (see Senn & Richardson (1994)), and consequently came to wrong
+      conclusions.
 
-   .. rubric:: Usage
-      :name: usage
+      But as well, the sample sizes (number of nights) for each mean
+      differed widely, ranging from 3-9, and this was not taken into
+      account in their analyses. To allow weighted analyses, the number
+      of observations for each mean is contained in the data frame
+      ``CushnyPeeblesN``.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(CushnyPeebles)
-      data(CushnyPeeblesN)
-          
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(CushnyPeebles)
+         data(CushnyPeeblesN)
+             
 
-   ``CushnyPeebles``: A data frame with 11 observations on the following
-   4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Control``
-      a numeric vector: mean hours of sleep
+      ``CushnyPeebles``: A data frame with 11 observations on the
+      following 4 variables.
 
-   ``L_hyoscyamine``
-      a numeric vector: mean hours of sleep
+      ``Control``
+         a numeric vector: mean hours of sleep
 
-   ``L_hyoscine``
-      a numeric vector: mean hours of sleep
+      ``L_hyoscyamine``
+         a numeric vector: mean hours of sleep
 
-   ``D_hyoscine``
-      a numeric vector: mean hours of sleep
+      ``L_hyoscine``
+         a numeric vector: mean hours of sleep
 
-   ``CushnyPeeblesN``: A data frame with 11 observations on the
-   following 4 variables.
+      ``D_hyoscine``
+         a numeric vector: mean hours of sleep
 
-   ``Control``
-      a numeric vector: number of observations
+      ``CushnyPeeblesN``: A data frame with 11 observations on the
+      following 4 variables.
 
-   ``L_hyoscyamine``
-      a numeric vector: number of observations
+      ``Control``
+         a numeric vector: number of observations
 
-   ``L_hyoscine``
-      a numeric vector: number of observations
+      ``L_hyoscyamine``
+         a numeric vector: number of observations
 
-   ``DL_hyoscine``
-      a numeric vector: number of observations
+      ``L_hyoscine``
+         a numeric vector: number of observations
 
-   .. rubric:: Details
-      :name: details
+      ``DL_hyoscine``
+         a numeric vector: number of observations
 
-   The last patient (11) has no ``Control`` observations, and so is
-   often excluded in analyses or other versions of this data set.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The last patient (11) has no ``Control`` observations, and so is
+      often excluded in analyses or other versions of this data set.
 
-   Cushny, A. R., and Peebles, A. R. (1905), "The Action of Optical
-   Isomers. II: Hyoscines," *Journal of Physiology*, 32, 501-510.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Cushny, A. R., and Peebles, A. R. (1905), "The Action of Optical
+      Isomers. II: Hyoscines," *Journal of Physiology*, 32, 501-510.
 
-   Fisher, R. A. (1925), *Statistical Methods for Research Workers*,
-   Edinburgh and London: Oliver & Boyd.
+      .. rubric:: References
+         :name: references
 
-   Student (1908), "The Probable Error of a Mean," *Biometrika*, 6,
-   1-25.
+      Fisher, R. A. (1925), *Statistical Methods for Research Workers*,
+      Edinburgh and London: Oliver & Boyd.
 
-   Senn, S.J. and Richardson, W. (1994), "The first t-test", *Statistics
-   in Medicine*, 13, 785-803.
+      Student (1908), "The Probable Error of a Mean," *Biometrika*, 6,
+      1-25.
 
-   .. rubric:: See Also
-      :name: see-also
+      Senn, S.J. and Richardson, W. (1994), "The first t-test",
+      *Statistics in Medicine*, 13, 785-803.
 
-   ``sleep`` for an alternative form of this data set.
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``sleep`` for an alternative form of this data set.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(CushnyPeebles)
-      # quick looks at the data
-      plot(CushnyPeebles)
-      boxplot(CushnyPeebles, ylab="Hours of Sleep", xlab="Treatment")
+      ::
 
-      ##########################
-      # Repeated measures MANOVA
+         data(CushnyPeebles)
+         # quick looks at the data
+         plot(CushnyPeebles)
+         boxplot(CushnyPeebles, ylab="Hours of Sleep", xlab="Treatment")
 
-      CPmod <- lm(cbind(Control, L_hyoscyamine, L_hyoscine, DL_hyoscine) ~ 1, data=CushnyPeebles)
+         ##########################
+         # Repeated measures MANOVA
 
-      # Assign within-S factor and contrasts
-      Treatment <- factor(colnames(CushnyPeebles), levels=colnames(CushnyPeebles))
-      contrasts(Treatment) <- matrix(
-          c(-3, 1, 1, 1,
-             0,-2, 1, 1,
-             0, 0,-1, 1), ncol=3)
-      colnames(contrasts(Treatment)) <- c("Control.Drug", "L.DL", "L_hy.DL_hy")
+         CPmod <- lm(cbind(Control, L_hyoscyamine, L_hyoscine, DL_hyoscine) ~ 1, data=CushnyPeebles)
 
-      Treats <- data.frame(Treatment)
-      if (require(car)) {
-      (CPaov <- Anova(CPmod, idata=Treats, idesign= ~Treatment))
-      }
-      summary(CPaov, univariate=FALSE)
+         # Assign within-S factor and contrasts
+         Treatment <- factor(colnames(CushnyPeebles), levels=colnames(CushnyPeebles))
+         contrasts(Treatment) <- matrix(
+             c(-3, 1, 1, 1,
+                0,-2, 1, 1,
+                0, 0,-1, 1), ncol=3)
+         colnames(contrasts(Treatment)) <- c("Control.Drug", "L.DL", "L_hy.DL_hy")
 
-      if (require(heplots)) {
-        heplot(CPmod, idata=Treats, idesign= ~Treatment, iterm="Treatment", 
-          xlab="Control vs Drugs", ylab="L vs DL drug")
-        pairs(CPmod, idata=Treats, idesign= ~Treatment, iterm="Treatment")
-      }
+         Treats <- data.frame(Treatment)
+         if (require(car)) {
+         (CPaov <- Anova(CPmod, idata=Treats, idesign= ~Treatment))
+         }
+         summary(CPaov, univariate=FALSE)
 
-      ################################
-      # reshape to long format, add Ns
+         if (require(heplots)) {
+           heplot(CPmod, idata=Treats, idesign= ~Treatment, iterm="Treatment", 
+             xlab="Control vs Drugs", ylab="L vs DL drug")
+           pairs(CPmod, idata=Treats, idesign= ~Treatment, iterm="Treatment")
+         }
 
-      CPlong <- stack(CushnyPeebles)[,2:1]
-      colnames(CPlong) <- c("treatment", "sleep")
-      CPN <- stack(CushnyPeeblesN)
-      CPlong <- data.frame(patient=rep(1:11,4), CPlong, n=CPN$values)
-      str(CPlong)
+         ################################
+         # reshape to long format, add Ns
+
+         CPlong <- stack(CushnyPeebles)[,2:1]
+         colnames(CPlong) <- c("treatment", "sleep")
+         CPN <- stack(CushnyPeeblesN)
+         CPlong <- data.frame(patient=rep(1:11,4), CPlong, n=CPN$values)
+         str(CPlong)

@@ -1,56 +1,59 @@
 .. container::
 
-   ========== ===============
-   census2000 R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: census2000
-      :name: census2000
+      ========== ===============
+      census2000 R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: census2000
+         :name: census2000
 
-   Wooldridge Source: Obtained from the United States Census Bureau by
-   Professor Alberto Abadie of the Harvard Kennedy School of Government.
-   Professor Abadie kindly provided the data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Obtained from the United States Census Bureau
+      by Professor Alberto Abadie of the Harvard Kennedy School of
+      Government. Professor Abadie kindly provided the data. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('census2000')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('census2000')
 
-   A data.frame with 29501 observations on 6 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **state:** State (ICPSR code)
+      A data.frame with 29501 observations on 6 variables:
 
-   -  **puma:** Public Use Microdata Area
+      -  **state:** State (ICPSR code)
 
-   -  **educ:** educational attainment
+      -  **puma:** Public Use Microdata Area
 
-   -  **lweekinc:** log(weekly income)
+      -  **educ:** educational attainment
 
-   -  **exper:** years workforce experience
+      -  **lweekinc:** log(weekly income)
 
-   -  **expersq:** exper^2
+      -  **exper:** years workforce experience
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **expersq:** exper^2
 
-   pages 452-453
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 452-453
 
-   http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(census2000)
+      ::
+
+          str(census2000)

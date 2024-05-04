@@ -1,41 +1,43 @@
 .. container::
 
-   =========== ===============
-   HorsePrices R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Prices of Horses
-      :name: HorsePrices
+      =========== ===============
+      HorsePrices R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Prices of Horses
+         :name: prices-of-horses
 
-   Price and related characteristics of horses listed for sale on the
-   internet
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Price and related characteristics of horses listed for sale on the
+      internet
 
-   A data frame with 50 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   =========== ==============================
-   ``HorseID`` ID code for each horse
-   ``Price``   Price (in dollars)
-   ``Age``     Age of the horse (in years)
-   ``Height``  Height of the horse (in hands)
-   ``Sex``     ``f``\ =female ``m``\ =male
-   \           
-   =========== ==============================
+      A data frame with 50 observations on the following 5 variables.
 
-   .. rubric:: Details
-      :name: details
+      =========== ==============================
+      ``HorseID`` ID code for each horse
+      ``Price``   Price (in dollars)
+      ``Age``     Age of the horse (in years)
+      ``Height``  Height of the horse (in hands)
+      ``Sex``     ``f``\ =female ``m``\ =male
+      \           
+      =========== ==============================
 
-   Undergraduate students at Cal Poly collected data on prices of 50
-   horses advertised for sale on the internet. Predictor variables of
-   price include the age and height of the horse (in hands), as well as
-   its sex.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Undergraduate students at Cal Poly collected data on prices of 50
+      horses advertised for sale on the internet. Predictor variables of
+      price include the age and height of the horse (in hands), as well
+      as its sex.
 
-   Cal Poly students using a horse sale website.
+      .. rubric:: Source
+         :name: source
+
+      Cal Poly students using a horse sale website.

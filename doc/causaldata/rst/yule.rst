@@ -1,60 +1,62 @@
 .. container::
 
-   ==== ===============
-   yule R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Data on 19th century English Poverty from Yule (1899)
-      :name: yule
+      ==== ===============
+      yule R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data on 19th century English Poverty from Yule (1899)
+         :name: data-on-19th-century-english-poverty-from-yule-1899
 
-   ``yule`` allows for a look at the correlation between poverty relief
-   and poverty rates in England in the 19th century.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      ``yule`` allows for a look at the correlation between poverty
+      relief and poverty rates in England in the 19th century.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      yule
+      ::
 
-   .. rubric:: Format
-      :name: format
+         yule
 
-   A data frame with 32 rows and 5 variables
+      .. rubric:: Format
+         :name: format
 
-   location
-      Location in England
+      A data frame with 32 rows and 5 variables
 
-   paup
-      Pauperism Growth
+      location
+         Location in England
 
-   outrelief
-      Poverty Relief Growth
+      paup
+         Pauperism Growth
 
-   old
-      Annual growth in aged population
+      outrelief
+         Poverty Relief Growth
 
-   pop
-      Annual growth in population
+      old
+         Annual growth in aged population
 
-   .. rubric:: Details
-      :name: details
+      pop
+         Annual growth in population
 
-   This data is used in the Potential Outcomes Causal Model chapter of
-   Causal Inference: The Mixtape by Cunningham.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This data is used in the Potential Outcomes Causal Model chapter
+      of Causal Inference: The Mixtape by Cunningham.
 
-   Yule, G. Udny. 1899. 'An Investigation into the Causes of Changes in
-   Pauperism in England, Chiefly During the Last Two Interensal
-   Decades.' Journal of Royal Statistical Society 62: 249–95.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Yule, G. Udny. 1899. 'An Investigation into the Causes of Changes
+      in Pauperism in England, Chiefly During the Last Two Interensal
+      Decades.' Journal of Royal Statistical Society 62: 249–95.
 
-   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-   https://mixtape.scunning.com/index.html.
+      .. rubric:: References
+         :name: references
+
+      Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+      https://mixtape.scunning.com/index.html.

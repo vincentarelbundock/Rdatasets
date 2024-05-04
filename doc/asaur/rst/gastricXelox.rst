@@ -1,54 +1,57 @@
 .. container::
 
-   ============ ===============
-   gastricXelox R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: gasticXelox
-      :name: gastricXelox
+      ============ ===============
+      gastricXelox R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: gasticXelox
+         :name: gasticxelox
 
-   Data from a Phase II clinical trial of Xeloda and exaliplatin given
-   before surgery to advanced gastric cancer patients with para-aortic
-   lymph node metastasis.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from a Phase II clinical trial of Xeloda and exaliplatin
+      given before surgery to advanced gastric cancer patients with
+      para-aortic lymph node metastasis.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("gastricXelox")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("gastricXelox")
 
-   A data frame with 48 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``timeWeeks``
-      survival time in weeks
+      A data frame with 48 observations on the following 2 variables.
 
-   ``delta``
-      1 for death, 0 for censored
+      ``timeWeeks``
+         survival time in weeks
 
-   .. rubric:: Details
-      :name: details
+      ``delta``
+         1 for death, 0 for censored
 
-   The data were extracted from the Kaplan-Meier survival plot.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: References
-      :name: references
+      The data were extracted from the Kaplan-Meier survival plot.
 
-   Wang Y, Yu Y-Y, Li W, Feng Y, Hou J, Ji Y, Sun Y-H, Shen K-T, Shen
-   Z-B, Qin X-Y, and Liu T-S. (2014) A phase II trial of xeloda and
-   oxaliplatin (XELOX) neo-adjuvant chemotherapy followed by surgery for
-   advanced gastric cancer patients with para-aortic lymph node
-   metastasis. Cancer Chemotherapy and Pharmacology 73(6), 1155-1161.))
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Wang Y, Yu Y-Y, Li W, Feng Y, Hou J, Ji Y, Sun Y-H, Shen K-T, Shen
+      Z-B, Qin X-Y, and Liu T-S. (2014) A phase II trial of xeloda and
+      oxaliplatin (XELOX) neo-adjuvant chemotherapy followed by surgery
+      for advanced gastric cancer patients with para-aortic lymph node
+      metastasis. Cancer Chemotherapy and Pharmacology 73(6),
+      1155-1161.))
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(gastricXelox)
+      ::
+
+         data(gastricXelox)

@@ -1,116 +1,118 @@
 .. container::
 
-   ============ ===============
-   DoctorVisits R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Australian Health Service Utilization Data
-      :name: DoctorVisits
+      ============ ===============
+      DoctorVisits R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Australian Health Service Utilization Data
+         :name: australian-health-service-utilization-data
 
-   Cross-section data originating from the 1977–1978 Australian Health
-   Survey.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-section data originating from the 1977–1978 Australian
+      Health Survey.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("DoctorVisits")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("DoctorVisits")
 
-   A data frame containing 5,190 observations on 12 variables.
+      .. rubric:: Format
+         :name: format
 
-   visits
-      Number of doctor visits in past 2 weeks.
+      A data frame containing 5,190 observations on 12 variables.
 
-   gender
-      Factor indicating gender.
+      visits
+         Number of doctor visits in past 2 weeks.
 
-   age
-      Age in years divided by 100.
+      gender
+         Factor indicating gender.
 
-   income
-      Annual income in tens of thousands of dollars.
+      age
+         Age in years divided by 100.
 
-   illness
-      Number of illnesses in past 2 weeks.
+      income
+         Annual income in tens of thousands of dollars.
 
-   reduced
-      Number of days of reduced activity in past 2 weeks due to illness
-      or injury.
+      illness
+         Number of illnesses in past 2 weeks.
 
-   health
-      General health questionnaire score using Goldberg's method.
+      reduced
+         Number of days of reduced activity in past 2 weeks due to
+         illness or injury.
 
-   private
-      Factor. Does the individual have private health insurance?
+      health
+         General health questionnaire score using Goldberg's method.
 
-   freepoor
-      Factor. Does the individual have free government health insurance
-      due to low income?
+      private
+         Factor. Does the individual have private health insurance?
 
-   freerepat
-      Factor. Does the individual have free government health insurance
-      due to old age, disability or veteran status?
+      freepoor
+         Factor. Does the individual have free government health
+         insurance due to low income?
 
-   nchronic
-      Factor. Is there a chronic condition not limiting activity?
+      freerepat
+         Factor. Does the individual have free government health
+         insurance due to old age, disability or veteran status?
 
-   lchronic
-      Factor. Is there a chronic condition limiting activity?
+      nchronic
+         Factor. Is there a chronic condition not limiting activity?
 
-   .. rubric:: Source
-      :name: source
+      lchronic
+         Factor. Is there a chronic condition limiting activity?
 
-   Journal of Applied Econometrics Data Archive.
+      .. rubric:: Source
+         :name: source
 
-   http://qed.econ.queensu.ca/jae/1997-v12.3/mullahy/
+      Journal of Applied Econometrics Data Archive.
 
-   .. rubric:: References
-      :name: references
+      http://qed.econ.queensu.ca/jae/1997-v12.3/mullahy/
 
-   Cameron, A.C. and Trivedi, P.K. (1986). Econometric Models Based on
-   Count Data: Comparisons and Applications of Some Estimators and
-   Tests. *Journal of Applied Econometrics*, **1**, 29–53.
+      .. rubric:: References
+         :name: references
 
-   Cameron, A.C. and Trivedi, P.K. (1998). *Regression Analysis of Count
-   Data*. Cambridge: Cambridge University Press.
+      Cameron, A.C. and Trivedi, P.K. (1986). Econometric Models Based
+      on Count Data: Comparisons and Applications of Some Estimators and
+      Tests. *Journal of Applied Econometrics*, **1**, 29–53.
 
-   Mullahy, J. (1997). Heterogeneity, Excess Zeros, and the Structure of
-   Count Data Models. *Journal of Applied Econometrics*, **12**,
-   337–350.
+      Cameron, A.C. and Trivedi, P.K. (1998). *Regression Analysis of
+      Count Data*. Cambridge: Cambridge University Press.
 
-   .. rubric:: See Also
-      :name: see-also
+      Mullahy, J. (1997). Heterogeneity, Excess Zeros, and the Structure
+      of Count Data Models. *Journal of Applied Econometrics*, **12**,
+      337–350.
 
-   ``CameronTrivedi1998``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``CameronTrivedi1998``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("DoctorVisits", package = "AER")
-      library("MASS")
+      ::
 
-      ## Cameron and Trivedi (1986), Table III, col. (1)
-      dv_lm <- lm(visits ~ . + I(age^2), data = DoctorVisits)
-      summary(dv_lm)
+         data("DoctorVisits", package = "AER")
+         library("MASS")
 
-      ## Cameron and Trivedi (1998), Table 3.3 
-      dv_pois <- glm(visits ~ . + I(age^2), data = DoctorVisits, family = poisson)
-      summary(dv_pois)                  ## MLH standard errors
-      coeftest(dv_pois, vcov = vcovOPG) ## MLOP standard errors
-      logLik(dv_pois)
-      ## standard errors denoted RS ("unspecified omega robust sandwich estimate")
-      coeftest(dv_pois, vcov = sandwich)
+         ## Cameron and Trivedi (1986), Table III, col. (1)
+         dv_lm <- lm(visits ~ . + I(age^2), data = DoctorVisits)
+         summary(dv_lm)
 
-      ## Cameron and Trivedi (1986), Table III, col. (4)
-      dv_nb <- glm.nb(visits ~ . + I(age^2), data = DoctorVisits)
-      summary(dv_nb)
-      logLik(dv_nb)
+         ## Cameron and Trivedi (1998), Table 3.3 
+         dv_pois <- glm(visits ~ . + I(age^2), data = DoctorVisits, family = poisson)
+         summary(dv_pois)                  ## MLH standard errors
+         coeftest(dv_pois, vcov = vcovOPG) ## MLOP standard errors
+         logLik(dv_pois)
+         ## standard errors denoted RS ("unspecified omega robust sandwich estimate")
+         coeftest(dv_pois, vcov = sandwich)
+
+         ## Cameron and Trivedi (1986), Table III, col. (4)
+         dv_nb <- glm.nb(visits ~ . + I(age^2), data = DoctorVisits)
+         summary(dv_nb)
+         logLik(dv_nb)

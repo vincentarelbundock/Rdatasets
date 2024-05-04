@@ -1,45 +1,47 @@
 .. container::
 
-   ========= ===============
-   attrition R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Job attrition
-      :name: attrition
+      ========= ===============
+      attrition R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Job attrition
+         :name: job-attrition
 
-   Job attrition
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      Job attrition
 
-   These data are from the IBM Watson Analytics Lab. The website
-   describes the data with “Uncover the factors that lead to employee
-   attrition and explore important questions such as ‘show me a
-   breakdown of distance from home by job role and attrition’ or
-   ‘compare average monthly income by education and attrition’. This is
-   a fictional data set created by IBM data scientists.”. There are 1470
-   rows.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Value
-      :name: value
+      These data are from the IBM Watson Analytics Lab. The website
+      describes the data with “Uncover the factors that lead to employee
+      attrition and explore important questions such as ‘show me a
+      breakdown of distance from home by job role and attrition’ or
+      ‘compare average monthly income by education and attrition’. This
+      is a fictional data set created by IBM data scientists.”. There
+      are 1470 rows.
 
-   ============= ============
-   ``attrition`` a data frame
-   ============= ============
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      ============= ============
+      ``attrition`` a data frame
+      ============= ============
 
-   The IBM Watson Analytics Lab website
-   https://www.ibm.com/communities/analytics/watson-analytics-blog/hr-employee-attrition/
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      The IBM Watson Analytics Lab website
+      https://www.ibm.com/communities/analytics/watson-analytics-blog/hr-employee-attrition/
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(attrition)
-      str(attrition)
+      ::
+
+         data(attrition)
+         str(attrition)

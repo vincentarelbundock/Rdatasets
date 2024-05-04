@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>USProdIndex</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='USProdIndex'>Index of US Industrial Production</h2>
+<h2>Index of US Industrial Production</h2>
 
 <h3>Description</h3>
 
@@ -88,6 +88,7 @@ round(eacf(log(USProdIndex[,1])), digits = 3)
 arima(log(USProdIndex[,1]), c(0, 1, 5), c(0, 1, 0), fixed = c(NA, 0, 0, NA, NA))
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

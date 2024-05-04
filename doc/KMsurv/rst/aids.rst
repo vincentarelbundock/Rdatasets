@@ -1,41 +1,43 @@
 .. container::
 
-   ==== ===============
-   aids R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: data from Section 1.19
-      :name: aids
+      ==== ===============
+      aids R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Section 1.19
+         :name: data-from-section-1.19
 
-   The ``aids`` data frame has 295 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``aids`` data frame has 295 rows and 3 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   infect
-      Infection time for AIDS, years
+      This data frame contains the following columns:
 
-   induct
-      Induction time for AIDS, years
+      infect
+         Infection time for AIDS, years
 
-   adult
-      Indicator of adult (1=adult, 0=child)
+      induct
+         Induction time for AIDS, years
 
-   .. rubric:: Source
-      :name: source
+      adult
+         Indicator of adult (1=adult, 0=child)
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer. Lagakos et al. Biometrika 68
-   (1981): 515-523.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer. Lagakos et al. Biometrika
+      68 (1981): 515-523.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(aids)
+      ::
+
+         data(aids)

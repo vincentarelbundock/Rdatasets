@@ -1,95 +1,97 @@
 .. container::
 
-   ================= ===============
-   black_politicians R Documentation
-   ================= ===============
+   .. container::
 
-   .. rubric:: Data from "Black Politicians are More Intrinsically
-      Motivated to Advance Blacks' Interests"
-      :name: black_politicians
+      ================= ===============
+      black_politicians R Documentation
+      ================= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data from "Black Politicians are More Intrinsically
+         Motivated to Advance Blacks' Interests"
+         :name: data-from-black-politicians-are-more-intrinsically-motivated-to-advance-blacks-interests
 
-   The ``black_politicians`` data contains data from Broockman (2013) on
-   a field experiment where the author sent fictional emails purportedly
-   sent by Black people to legislators in the United States. The
-   experiment sought to determine whether the effect of the email being
-   from "out-of-district" (someone who can't vote for you and so
-   provides no extrinsic motivation to reply) would have a smaller
-   effect on response rates for Black legislators than for non-Black
-   ones, providing evidence of additional intrinsic motivation on the
-   part of Black legislators to help Black people.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``black_politicians`` data contains data from Broockman (2013)
+      on a field experiment where the author sent fictional emails
+      purportedly sent by Black people to legislators in the United
+      States. The experiment sought to determine whether the effect of
+      the email being from "out-of-district" (someone who can't vote for
+      you and so provides no extrinsic motivation to reply) would have a
+      smaller effect on response rates for Black legislators than for
+      non-Black ones, providing evidence of additional intrinsic
+      motivation on the part of Black legislators to help Black people.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      black_politicians
+      ::
 
-   .. rubric:: Format
-      :name: format
+         black_politicians
 
-   A data frame with 5593 rows and 14 variables
+      .. rubric:: Format
+         :name: format
 
-   leg_black
-      Legislator receiving email is Black
+      A data frame with 5593 rows and 14 variables
 
-   treat_out
-      Email is from out-of-district
+      leg_black
+         Legislator receiving email is Black
 
-   responded
-      Legislator responded to email
+      treat_out
+         Email is from out-of-district
 
-   totalpop
-      District population
+      responded
+         Legislator responded to email
 
-   medianhhincom
-      District median household income
+      totalpop
+         District population
 
-   black_medianhh
-      District median household income among Black people
+      medianhhincom
+         District median household income
 
-   white_medianhh
-      District median household income among White people
+      black_medianhh
+         District median household income among Black people
 
-   blackpercent
-      Percentage of district that is Black
+      white_medianhh
+         District median household income among White people
 
-   statessquireindex
-      State's Squire index
+      blackpercent
+         Percentage of district that is Black
 
-   nonblacknonwhite
-      Legislator receiving email is neither Black nor White
+      statessquireindex
+         State's Squire index
 
-   urbanpercent
-      Percentage of district that is urban
+      nonblacknonwhite
+         Legislator receiving email is neither Black nor White
 
-   leg_senator
-      Legislator receiving email is a senator
+      urbanpercent
+         Percentage of district that is urban
 
-   leg_democrat
-      Legislator receiving email is in the Democratic party
+      leg_senator
+         Legislator receiving email is a senator
 
-   south
-      Legislator receiving email is in the Southern United States
+      leg_democrat
+         Legislator receiving email is in the Democratic party
 
-   .. rubric:: Details
-      :name: details
+      south
+         Legislator receiving email is in the Southern United States
 
-   This data is used in the *Matching* chapter of *The Effect*.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This data is used in the *Matching* chapter of *The Effect*.
 
-   Broockman, D.E., 2013. Black politicians are more intrinsically
-   motivated to advance blacks’ interests: A field experiment
-   manipulating political incentives. *American Journal of Political
-   Science*, 57(3), pp.521-536.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Broockman, D.E., 2013. Black politicians are more intrinsically
+      motivated to advance blacks’ interests: A field experiment
+      manipulating political incentives. *American Journal of Political
+      Science*, 57(3), pp.521-536.
 
-   Huntington-Klein. 2021. The Effect: An Introduction to Research
-   Design and Causality. https://theeffectbook.net.
+      .. rubric:: References
+         :name: references
+
+      Huntington-Klein. 2021. The Effect: An Introduction to Research
+      Design and Causality. https://theeffectbook.net.

@@ -1,77 +1,79 @@
 .. container::
 
-   ========= ===============
-   ssd_speed R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: SSD read and write speeds
-      :name: ssd_speed
+      ========= ===============
+      ssd_speed R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: SSD read and write speeds
+         :name: ssd-read-and-write-speeds
 
-   User submitted data on 1TB solid state drives (SSD).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      User submitted data on 1TB solid state drives (SSD).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      ssd_speed
+      ::
 
-   .. rubric:: Format
-      :name: format
+         ssd_speed
 
-   A data frame with 54 rows and 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   brand
-      Brand name of the drive.
+      A data frame with 54 rows and 7 variables.
 
-   model
-      Model name of the drive.
+      brand
+         Brand name of the drive.
 
-   samples
-      Number of user submitted benchmarks.
+      model
+         Model name of the drive.
 
-   form_factor
-      Physical form of the drive with levels ``2.5``, ``m.2``, and
-      ``mSATA``.
+      samples
+         Number of user submitted benchmarks.
 
-   nvme
-      If a drive uses the *nvme* protocol this value is 1, 0 if it does
-      not.
+      form_factor
+         Physical form of the drive with levels ``2.5``, ``m.2``, and
+         ``mSATA``.
 
-   read
-      Average read speed from user benchmarks in MB/s.
+      nvme
+         If a drive uses the *nvme* protocol this value is 1, 0 if it
+         does not.
 
-   write
-      Average write speed from user benchmarks in MB/s.
+      read
+         Average read speed from user benchmarks in MB/s.
 
-   .. rubric:: Source
-      :name: source
+      write
+         Average write speed from user benchmarks in MB/s.
 
-   `UserBenchmark <https://ssd.userbenchmark.com/>`__, retrieved
-   September 1, 2020.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      `UserBenchmark <https://ssd.userbenchmark.com/>`__, retrieved
+      September 1, 2020.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
-      library(dplyr)
+      ::
 
-      ssd_speed %>%
-        count(form_factor)
+         library(ggplot2)
+         library(dplyr)
 
-      ssd_speed %>%
-        filter(form_factor != "mSATA") %>%
-        ggplot(aes(x = read, y = write, color = form_factor)) +
-        geom_point() +
-        labs(
-          title = "Average read vs. write speed of SSDs",
-          x = "Read speed (MB/s)",
-          y = "Write speed (MB/s)"
-        ) +
-        facet_wrap(~form_factor, ncol = 1, scales = "free") +
-        guides(color = FALSE)
+         ssd_speed %>%
+           count(form_factor)
+
+         ssd_speed %>%
+           filter(form_factor != "mSATA") %>%
+           ggplot(aes(x = read, y = write, color = form_factor)) +
+           geom_point() +
+           labs(
+             title = "Average read vs. write speed of SSDs",
+             x = "Read speed (MB/s)",
+             y = "Write speed (MB/s)"
+           ) +
+           facet_wrap(~form_factor, ncol = 1, scales = "free") +
+           guides(color = FALSE)

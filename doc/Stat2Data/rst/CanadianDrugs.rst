@@ -1,60 +1,62 @@
 .. container::
 
-   ============= ===============
-   CanadianDrugs R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Canadian Drugs Senate Vote
-      :name: CanadianDrugs
+      ============= ===============
+      CanadianDrugs R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Canadian Drugs Senate Vote
+         :name: canadian-drugs-senate-vote
 
-   US Senate vote on Klobuchar amendment to lower drug prices
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      US Senate vote on Klobuchar amendment to lower drug prices
 
-   A data frame with 94 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Senator``
-      Name of the Senator
+      A data frame with 94 observations on the following 6 variables.
 
-   ``Contributions``
-      Amount of money received from the pharmaceutical industry over 6
-      years
+      ``Senator``
+         Name of the Senator
 
-   ``Party``
-      ``D``\ =Democrat or ``R``\ =Republican
+      ``Contributions``
+         Amount of money received from the pharmaceutical industry over
+         6 years
 
-   ``State``
-      Abbreviation for Senator's state
+      ``Party``
+         ``D``\ =Democrat or ``R``\ =Republican
 
-   ``RollCall``
-      ``Nay`` or ``Yea``
+      ``State``
+         Abbreviation for Senator's state
 
-   ``Vote``
-      ``Against`` or ``With`` what drug makers wanted
+      ``RollCall``
+         ``Nay`` or ``Yea``
 
-   .. rubric:: Details
-      :name: details
+      ``Vote``
+         ``Against`` or ``With`` what drug makers wanted
 
-   January 2017 vote in the U.S. Senate related to repeal part of
-   ObamaCare. The "Klobuchar amendment" to a bill was introduced with
-   the purpose of lowering drug prices by allowing prescription drugs to
-   be imported from Canada.
+      .. rubric:: Details
+         :name: details
 
-   The data exclude two senators who did not vote on the amendment and
-   four senators who were new to Congress and thus had received no money
-   from the drug industry. The remaining 94 senators represent 49 states
-   (every state except California) and each of these senators had
-   received at least $3,000.
+      January 2017 vote in the U.S. Senate related to repeal part of
+      ObamaCare. The "Klobuchar amendment" to a bill was introduced with
+      the purpose of lowering drug prices by allowing prescription drugs
+      to be imported from Canada.
 
-   .. rubric:: Source
-      :name: source
+      The data exclude two senators who did not vote on the amendment
+      and four senators who were new to Congress and thus had received
+      no money from the drug industry. The remaining 94 senators
+      represent 49 states (every state except California) and each of
+      these senators had received at least $3,000.
 
-   Data obtained from:
+      .. rubric:: Source
+         :name: source
 
-   http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=115&session=1&vote=00020
+      Data obtained from:
 
-   http://maplight.org/us-congress/interest/H4300/view/all
+      http://www.senate.gov/legislative/LIS/roll_call_lists/roll_call_vote_cfm.cfm?congress=115&session=1&vote=00020
+
+      http://maplight.org/us-congress/interest/H4300/view/all

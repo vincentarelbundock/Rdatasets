@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>plantTraits</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='plantTraits'>Plant Species Traits Data</h2>
+<h2>Plant Species Traits Data</h2>
 
 <h3>Description</h3>
 
@@ -46,10 +46,8 @@ according to biological attributes (morphological or reproductive)
 <dt><code>height</code></dt><dd><p>Plant height, an ordered factor with levels
 <code>1</code> &lt; <code>2</code> &lt; ... &lt; <code>8</code>.</p>
 </dd>
-
 <dt><code>begflow</code></dt><dd><p>Time of first flowering, an ordered factor with levels <code>1</code> &lt; <code>2</code> &lt; <code>3</code> &lt; <code>4</code> &lt; <code>5</code> &lt; <code>6</code> &lt; <code>7</code> &lt; <code>8</code> &lt; <code>9</code></p>
 </dd>
-
 <dt><code>mycor</code></dt><dd><p>Mycorrhizas, an ordered factor with levels <code>0</code>never &lt; <code>1</code> sometimes&lt; <code>2</code>always</p>
 </dd>
 <dt><code>vegaer</code></dt><dd><p>aerial vegetative propagation, an ordered
@@ -149,6 +147,7 @@ cmdsdai.b &lt;- cmdscale(dai.b, k=6)
 plot(cmdsdai.b[, 1:2], asp = 1, col = cutree6)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

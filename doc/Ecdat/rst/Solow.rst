@@ -1,60 +1,62 @@
 .. container::
 
-   ===== ===============
-   Solow R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Solow's Technological Change Data
-      :name: Solow
+      ===== ===============
+      Solow R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Solow's Technological Change Data
+         :name: solows-technological-change-data
 
-   annual observations from 1909 to 1949
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 41
+      annual observations from 1909 to 1949
 
-   *observation* : country
+      *number of observations* : 41
 
-   *country* : United States
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Solow)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Solow)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   q
-      output
+      A time series containing :
 
-   k
-      capital/labor ratio
+      q
+         output
 
-   A
-      index of technology
+      k
+         capital/labor ratio
 
-   .. rubric:: Source
-      :name: source
+      A
+         index of technology
 
-   Solow, R. (1957) “Technical change and the aggregate production
-   function”, *Review of Economics and Statistics*, **39**, 312-320.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Solow, R. (1957) “Technical change and the aggregate production
+      function”, *Review of Economics and Statistics*, **39**, 312-320.
 
-   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   https://archive.org/details/econometrics0000haya, Table F7.2.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+      https://archive.org/details/econometrics0000haya, Table F7.2.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

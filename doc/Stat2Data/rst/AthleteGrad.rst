@@ -1,46 +1,49 @@
 .. container::
 
-   =========== ===============
-   AthleteGrad R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Athletic Participation, Race, and Graduation
-      :name: AthleteGrad
+      =========== ===============
+      AthleteGrad R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Athletic Participation, Race, and Graduation
+         :name: athletic-participation-race-and-graduation
 
-   Six-year graduation data for 214,555 students in 2004
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Six-year graduation data for 214,555 students in 2004
 
-   A data frame with 214555 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Student``
-      ``Athlete`` or ``NonAthlete``
+      A data frame with 214555 observations on the following 3
+      variables.
 
-   ``Race``
-      ``Black`` or ``White``
+      ``Student``
+         ``Athlete`` or ``NonAthlete``
 
-   ``Grad``
-      ``1``\ =graduated within 6 years, otherwise ``0``
+      ``Race``
+         ``Black`` or ``White``
 
-   .. rubric:: Details
-      :name: details
+      ``Grad``
+         ``1``\ =graduated within 6 years, otherwise ``0``
 
-   Six-year graduation data from 2004 for male non-athletes and for male
-   athletes, where "Athlete"" means football or basketball player. These
-   data show Simpson's Paradox.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Six-year graduation data from 2004 for male non-athletes and for
+      male athletes, where "Athlete"" means football or basketball
+      player. These data show Simpson's Paradox.
 
-   Victor Matheson, College of the Holy Cross, collected the summary
-   statistics.
+      .. rubric:: Source
+         :name: source
 
-   Data are derived from the summary tables in:
+      Victor Matheson, College of the Holy Cross, collected the summary
+      statistics.
 
-   Matheson, V., "Research Note: Athletic Graduation Rates and Simpson's
-   Paradox," Economics of Education Review, Vol. 26:4 (August 2007),
-   516-520.
+      Data are derived from the summary tables in:
+
+      Matheson, V., "Research Note: Athletic Graduation Rates and
+      Simpson's Paradox," Economics of Education Review, Vol. 26:4
+      (August 2007), 516-520.

@@ -1,56 +1,58 @@
 .. container::
 
-   ========= ===============
-   Portfolio R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Portfolio Data
-      :name: Portfolio
+      ========= ===============
+      Portfolio R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Portfolio Data
+         :name: portfolio-data
 
-   A simple simulated data set containing 100 returns for each of two
-   assets, X and Y. The data is used to estimate the optimal fraction to
-   invest in each asset to minimize investment risk of the combined
-   portfolio. One can then use the Bootstrap to estimate the standard
-   error of this estimate.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A simple simulated data set containing 100 returns for each of two
+      assets, X and Y. The data is used to estimate the optimal fraction
+      to invest in each asset to minimize investment risk of the
+      combined portfolio. One can then use the Bootstrap to estimate the
+      standard error of this estimate.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Portfolio
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Portfolio
 
-   A data frame with 100 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``X``
-      Returns for Asset X
+      A data frame with 100 observations on the following 2 variables.
 
-   ``Y``
-      Returns for Asset Y
+      ``X``
+         Returns for Asset X
 
-   .. rubric:: Source
-      :name: source
+      ``Y``
+         Returns for Asset Y
 
-   Simulated data
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Simulated data
 
-   James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
-   Introduction to Statistical Learning with applications in R*,
-   https://www.statlearning.com, Springer-Verlag, New York
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
+      Introduction to Statistical Learning with applications in R*,
+      https://www.statlearning.com, Springer-Verlag, New York
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(Portfolio)
-      attach(Portfolio)
-      plot(X,Y)
+      ::
+
+         summary(Portfolio)
+         attach(Portfolio)
+         plot(X,Y)

@@ -1,51 +1,54 @@
 .. container::
 
-   ====== ===============
-   tomato R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Root weights of tomato plants exposed to 4 different
-      treatments
-      :name: tomato
+      ====== ===============
+      tomato R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Root weights of tomato plants exposed to 4 different
+         treatments
+         :name: root-weights-of-tomato-plants-exposed-to-4-different-treatments
 
-   The ``tomato`` data frame has 24 rows and 2 columns. They are from an
-   experiment that exposed tomato plants to four different 'nutrients'.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``tomato`` data frame has 24 rows and 2 columns. They are from
+      an experiment that exposed tomato plants to four different
+      'nutrients'.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(tomato)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(tomato)
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   weight
-      weight, in g
+      This data frame contains the following columns:
 
-   trt
-      a factor with levels ``water only``, ``conc nutrient``,
-      ``2-4-D + conc nutrient``, ``3x conc nutrient``
+      weight
+         weight, in g
 
-   .. rubric:: Source
-      :name: source
+      trt
+         a factor with levels ``water only``, ``conc nutrient``,
+         ``2-4-D + conc nutrient``, ``3x conc nutrient``
 
-   Dr Ron Balham, Victoria University of Wellington NZ, sometime in 1971
-   - 1976.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Dr Ron Balham, Victoria University of Wellington NZ, sometime in
+      1971 - 1976.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      tomato.aov <- aov(log(weight) ~ trt, data=tomato)
-      fitted.values(tomato.aov)
-      summary.lm(tomato.aov)
-      tomato.aov <- aov(formula = weight ~ trt, data = tomato)
-      summary.lm(tomato.aov)
+      ::
+
+         tomato.aov <- aov(log(weight) ~ trt, data=tomato)
+         fitted.values(tomato.aov)
+         summary.lm(tomato.aov)
+         tomato.aov <- aov(formula = weight ~ trt, data = tomato)
+         summary.lm(tomato.aov)

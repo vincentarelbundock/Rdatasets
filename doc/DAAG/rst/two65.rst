@@ -1,48 +1,52 @@
 .. container::
 
-   ===== ===============
-   two65 R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Unpaired Heated Elastic Bands
-      :name: two65
+      ===== ===============
+      two65 R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Unpaired Heated Elastic Bands
+         :name: unpaired-heated-elastic-bands
 
-   Twenty-one elastic bands were divided into two groups.
+      .. rubric:: Description
+         :name: description
 
-   One of the sets was placed in hot water (60-65 degrees C) for four
-   minutes, while the other was left at ambient temperature. After a
-   wait of about ten minutes, the amounts of stretch, under a 1.35 kg
-   weight, were recorded.
+      Twenty-one elastic bands were divided into two groups.
 
-   .. rubric:: Usage
-      :name: usage
+      One of the sets was placed in hot water (60-65 degrees C) for four
+      minutes, while the other was left at ambient temperature. After a
+      wait of about ten minutes, the amounts of stretch, under a 1.35 kg
+      weight, were recorded.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      pair65
+      ::
 
-   .. rubric:: Format
-      :name: format
+         pair65
 
-   This list contains the following elements:
+      .. rubric:: Format
+         :name: format
 
-   heated
-      a numeric vector giving the stretch lengths for the heated bands
+      This list contains the following elements:
 
-   ambient
-      a numeric vector giving the stretch lengths for the unheated bands
+      heated
+         a numeric vector giving the stretch lengths for the heated
+         bands
 
-   .. rubric:: Source
-      :name: source
+      ambient
+         a numeric vector giving the stretch lengths for the unheated
+         bands
 
-   J.H. Maindonald
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      J.H. Maindonald
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      twot.permutation(two65$ambient,two65$heated) # two sample permutation test
+      ::
+
+         twot.permutation(two65$ambient,two65$heated) # two sample permutation test

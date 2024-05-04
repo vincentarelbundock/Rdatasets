@@ -1,61 +1,63 @@
 .. container::
 
-   ========== ===============
-   recessions R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: United States Recessions, 1855-present
-      :name: recessions
+      ========== ===============
+      recessions R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: United States Recessions, 1855-present
+         :name: united-states-recessions-1855-present
 
-   Data on U.S. recessions, past to present. Data include information on
-   contraction, expansion, and cycle.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on U.S. recessions, past to present. Data include information
+      on contraction, expansion, and cycle.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      recessions
+      ::
 
-   .. rubric:: Format
-      :name: format
+         recessions
 
-   A data frame with 35 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``peak``
-      the year-month of the peak, as a date
+      A data frame with 35 observations on the following 8 variables.
 
-   ``trough``
-      the year-month of the trough, as a date
+      ``peak``
+         the year-month of the peak, as a date
 
-   ``peakq``
-      the peak quarter
+      ``trough``
+         the year-month of the trough, as a date
 
-   ``troughq``
-      the trough quarter
+      ``peakq``
+         the peak quarter
 
-   ``p2t``
-      peak to trough (in months)
+      ``troughq``
+         the trough quarter
 
-   ``prev_t2p``
-      previous trough to this peak (in months)
+      ``p2t``
+         peak to trough (in months)
 
-   ``tfpt``
-      trough from previous trough (in months)
+      ``prev_t2p``
+         previous trough to this peak (in months)
 
-   ``pfpp``
-      peak from previous peak (in months)
+      ``tfpt``
+         trough from previous trough (in months)
 
-   .. rubric:: Details
-      :name: details
+      ``pfpp``
+         peak from previous peak (in months)
 
-   Data come from via scraping job of
-   https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Data come from via scraping job of
+      https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions
 
-   National Bureau of Economic Research (NBER)
+      .. rubric:: Source
+         :name: source
+
+      National Bureau of Economic Research (NBER)

@@ -1,38 +1,40 @@
 .. container::
 
-   ===== ===============
-   Wafer R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Modeling of Analog MOS Circuits
-      :name: Wafer
+      ===== ===============
+      Wafer R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Modeling of Analog MOS Circuits
+         :name: modeling-of-analog-mos-circuits
 
-   The ``Wafer`` data frame has 400 rows and 4 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``Wafer`` data frame has 400 rows and 4 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Wafer
-      a factor with levels ``1`` ``2`` ``3`` ``4`` ``5`` ``6`` ``7``
-      ``8`` ``9`` ``10``
+      This data frame contains the following columns:
 
-   Site
-      a factor with levels ``1`` ``2`` ``3`` ``4`` ``5`` ``6`` ``7``
-      ``8``
+      Wafer
+         a factor with levels ``1`` ``2`` ``3`` ``4`` ``5`` ``6`` ``7``
+         ``8`` ``9`` ``10``
 
-   voltage
-      a numeric vector
+      Site
+         a factor with levels ``1`` ``2`` ``3`` ``4`` ``5`` ``6`` ``7``
+         ``8``
 
-   current
-      a numeric vector
+      voltage
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      current
+         a numeric vector
 
-   Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S
-   and S-PLUS*, Springer, New York.
+      .. rubric:: Source
+         :name: source
+
+      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
+      S and S-PLUS*, Springer, New York.

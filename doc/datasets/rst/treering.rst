@@ -1,46 +1,48 @@
 .. container::
 
-   ======== ===============
-   treering R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Yearly Treering Data, -6000–1979
-      :name: treering
+      ======== ===============
+      treering R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Yearly Tree-Ring Data, -6000–1979
+         :name: yearly-tree-ring-data--60001979
 
-   Contains normalized tree-ring widths in dimensionless units.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Contains normalized tree-ring widths in dimensionless units.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      treering
+      ::
 
-   .. rubric:: Format
-      :name: format
+         treering
 
-   A univariate time series with 7981 observations. The object is of
-   class ``"ts"``.
+      .. rubric:: Format
+         :name: format
 
-   Each tree ring corresponds to one year.
+      A univariate time series with 7981 observations. The object is of
+      class ``"ts"``.
 
-   .. rubric:: Details
-      :name: details
+      Each tree ring corresponds to one year.
 
-   The data were recorded by Donald A. Graybill, 1980, from Gt Basin
-   Bristlecone Pine 2805M, 3726-11810 in Methuselah Walk, California.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The data were recorded by Donald A. Graybill, 1980, from Gt Basin
+      Bristlecone Pine 2805M, 3726-11810 in Methuselah Walk, California.
 
-   Time Series Data Library: https://robjhyndman.com/TSDL/, series
-   ‘CA535.DAT’
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Time Series Data Library: https://robjhyndman.com/TSDL/, series
+      ‘CA535.DAT’
 
-   For some photos of Methuselah Walk see
-   https://web.archive.org/web/20110523225828/http://www.ltrr.arizona.edu/~hallman/sitephotos/meth.html
+      .. rubric:: References
+         :name: references
+
+      For some photos of Methuselah Walk see
+      https://web.archive.org/web/20110523225828/http://www.ltrr.arizona.edu/~hallman/sitephotos/meth.html

@@ -1,67 +1,69 @@
 .. container::
 
-   =========== ===============
-   EfronMorris R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Batting Averages for 18 major league baseball players,
-      1970
-      :name: EfronMorris
+      =========== ===============
+      EfronMorris R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Batting Averages for 18 major league baseball players,
+         1970
+         :name: batting-averages-for-18-major-league-baseball-players-1970
 
-   Batting averages for 18 major league baseball players, first 45 at
-   bats of the 1970 season.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Batting averages for 18 major league baseball players, first 45 at
+      bats of the 1970 season.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(EfronMorris)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(EfronMorris)
 
-   ``name``
-      character, name of player
+      .. rubric:: Format
+         :name: format
 
-   ``team``
-      character, team of player, abbreviated
+      ``name``
+         character, name of player
 
-   ``league``
-      character, National League or American League
+      ``team``
+         character, team of player, abbreviated
 
-   ``r``
-      numeric, hits in 1st 45 at bats
+      ``league``
+         character, National League or American League
 
-   ``y``
-      numeric, ``r``/45, batting average over 1st 45 at bats
+      ``r``
+         numeric, hits in 1st 45 at bats
 
-   ``n``
-      numeric, number of at bats, remainder of 1970 season
+      ``y``
+         numeric, ``r``/45, batting average over 1st 45 at bats
 
-   ``p``
-      numeric, batting average over remainder of 1970 season
+      ``n``
+         numeric, number of at bats, remainder of 1970 season
 
-   .. rubric:: Source
-      :name: source
+      ``p``
+         numeric, batting average over remainder of 1970 season
 
-   Efron, Bradley and Carl Morris. 1975. Data Analysis Using Stein's
-   Estimator and Its Generalizations. *Journal of the American
-   Statistical Association*. 70:311-319.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Efron, Bradley and Carl Morris. 1975. Data Analysis Using Stein's
+      Estimator and Its Generalizations. *Journal of the American
+      Statistical Association*. 70:311-319.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(EfronMorris)
-      attach(EfronMorris)
-      plot(p~y,
-           xlim=range(p,y),
-           ylim=range(p,y),
-           xlab="Batting Average, 1st 45 at bats",
-           ylab="Batting Average, Remainder of Season")
-      abline(0,1)
+      ::
+
+         data(EfronMorris)
+         attach(EfronMorris)
+         plot(p~y,
+              xlim=range(p,y),
+              ylim=range(p,y),
+              xlab="Batting Average, 1st 45 at bats",
+              ylab="Batting Average, Remainder of Season")
+         abline(0,1)

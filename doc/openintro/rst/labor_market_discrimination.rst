@@ -1,296 +1,299 @@
 .. container::
 
-   ============================ ===============
-   labor_market_discriminiation R Documentation
-   ============================ ===============
+   .. container::
 
-   .. rubric:: Are Emily and Greg More Employable Than Lakisha and
-      Jamal?
-      :name: labor_market_discriminiation
+      ============================ ===============
+      labor_market_discriminiation R Documentation
+      ============================ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Are Emily and Greg More Employable Than Lakisha and
+         Jamal?
+         :name: are-emily-and-greg-more-employable-than-lakisha-and-jamal
 
-   Original data from the experiment run by Bertrand and Mullainathan
-   (2004).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Original data from the experiment run by Bertrand and Mullainathan
+      (2004).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      labor_market_discrimination
+      ::
 
-   .. rubric:: Format
-      :name: format
+         labor_market_discrimination
 
-   A tibble with 4870 observations of 63 variables.
+      .. rubric:: Format
+         :name: format
 
-   education
-      Highest education, with levels of 0 = not reported; 1 = high
-      school diploma; 2 = high school graduate; 3 = some college; 4 =
-      college or more.
+      A tibble with 4870 observations of 63 variables.
 
-   n_jobs
-      Number of jobs listed on resume.
+      education
+         Highest education, with levels of 0 = not reported; 1 = high
+         school diploma; 2 = high school graduate; 3 = some college; 4 =
+         college or more.
 
-   years_exp
-      Number of years of work experience on the resume.
+      n_jobs
+         Number of jobs listed on resume.
 
-   honors
-      Indicator variable for which 1 = resume mentions some honors.
+      years_exp
+         Number of years of work experience on the resume.
 
-   volunteer
-      Indicator variable for which 1 = resume mentions some volunteering
-      experience.
+      honors
+         Indicator variable for which 1 = resume mentions some honors.
 
-   military
-      Indicator variable for which 1 = resume mentions some military
-      experience.
+      volunteer
+         Indicator variable for which 1 = resume mentions some
+         volunteering experience.
 
-   emp_holes
-      Indicator variable for which 1 = resume mentions some employment
-      holes.
+      military
+         Indicator variable for which 1 = resume mentions some military
+         experience.
 
-   occup_specific
-      1990 Census Occupation Code. See sources for a key.
+      emp_holes
+         Indicator variable for which 1 = resume mentions some
+         employment holes.
 
-   occup_broad
-      Occupation broad with levels 1 = executives and managerial
-      occupations, 2 = administrative supervisors, 3 = sales
-      representatives, 4 = sales workers, 5 = secretaries and legal
-      assistants, 6 = clerical occupations
+      occup_specific
+         1990 Census Occupation Code. See sources for a key.
 
-   work_in_school
-      Indicator variable for which 1 = resume mentions some work
-      experience while at school
+      occup_broad
+         Occupation broad with levels 1 = executives and managerial
+         occupations, 2 = administrative supervisors, 3 = sales
+         representatives, 4 = sales workers, 5 = secretaries and legal
+         assistants, 6 = clerical occupations
 
-   email
-      Indicator variable for which 1 = email address on applicant's
-      resume.
+      work_in_school
+         Indicator variable for which 1 = resume mentions some work
+         experience while at school
 
-   computer_skills
-      Indicator variable for which 1 = resume mentions some computer
-      skills.
+      email
+         Indicator variable for which 1 = email address on applicant's
+         resume.
 
-   special_skills
-      Indicator variable for which 1 = resume mentions some special
-      skills.
+      computer_skills
+         Indicator variable for which 1 = resume mentions some computer
+         skills.
 
-   first_name
-      Applicant's first name.
+      special_skills
+         Indicator variable for which 1 = resume mentions some special
+         skills.
 
-   sex
-      Sex, with levels of 'f' = female; 'm' = male.
+      first_name
+         Applicant's first name.
 
-   race
-      Race, with levels of 'b' = black; 'w' = white.
+      sex
+         Sex, with levels of 'f' = female; 'm' = male.
 
-   h
-      Indicator variable for which 1 = high quality resume.
+      race
+         Race, with levels of 'b' = black; 'w' = white.
 
-   l
-      Indicator variable for which 1 = low quality resume.
+      h
+         Indicator variable for which 1 = high quality resume.
 
-   call
-      Indicator variable for which 1 = applicant was called back.
+      l
+         Indicator variable for which 1 = low quality resume.
 
-   city
-      City, with levels of 'c' = chicago; 'b' = boston.
+      call
+         Indicator variable for which 1 = applicant was called back.
 
-   kind
-      Kind, with levels of 'a' = administrative; 's' = sales.
+      city
+         City, with levels of 'c' = chicago; 'b' = boston.
 
-   ad_id
-      Employment ad identifier.
+      kind
+         Kind, with levels of 'a' = administrative; 's' = sales.
 
-   frac_black
-      Fraction of blacks in applicant's zip.
+      ad_id
+         Employment ad identifier.
 
-   frac_white
-      Fraction of whites in applicant's zip.
+      frac_black
+         Fraction of blacks in applicant's zip.
 
-   l_med_hh_inc
-      Log median household income in applicant's zip.
+      frac_white
+         Fraction of whites in applicant's zip.
 
-   frac_dropout
-      Fraction of high-school dropouts in applicant's zip.
+      l_med_hh_inc
+         Log median household income in applicant's zip.
 
-   frac_colp
-      Fraction of college degree or more in applicant's zip
+      frac_dropout
+         Fraction of high-school dropouts in applicant's zip.
 
-   l_inc
-      Log per capita income in applicant's zip.
+      frac_colp
+         Fraction of college degree or more in applicant's zip
 
-   col
-      Indicator variable for which 1 = applicant has college degree or
-      more.
+      l_inc
+         Log per capita income in applicant's zip.
 
-   expminreq
-      Minimum experience required, if any (in years when numeric).
+      col
+         Indicator variable for which 1 = applicant has college degree
+         or more.
 
-   school_req
-      Specific education requirement, if any. 'hsg' = high school
-      graduate, 'somcol' = some college, 'colp' = four year degree or
-      higher
+      expminreq
+         Minimum experience required, if any (in years when numeric).
 
-   eoe
-      Indicator variable for which 1 = ad mentions employer is 'Equal
-      Opportunity Employer'.
+      school_req
+         Specific education requirement, if any. 'hsg' = high school
+         graduate, 'somcol' = some college, 'colp' = four year degree or
+         higher
 
-   parent_sales
-      Sales of parent company (in millions of US $).
+      eoe
+         Indicator variable for which 1 = ad mentions employer is 'Equal
+         Opportunity Employer'.
 
-   parent_emp
-      Number of parent company employees.
+      parent_sales
+         Sales of parent company (in millions of US $).
 
-   branch_sales
-      Sales of branch (in millions of US $).
+      parent_emp
+         Number of parent company employees.
 
-   branch_emp
-      Number of branch employees.
+      branch_sales
+         Sales of branch (in millions of US $).
 
-   fed
-      Indicator variable for which 1 = employer is a federal contractor.
+      branch_emp
+         Number of branch employees.
 
-   frac_black_emp_zip
-      Fraction of blacks in employers's zipcode.
+      fed
+         Indicator variable for which 1 = employer is a federal
+         contractor.
 
-   frac_white_emp_zip
-      Fraction of whites in employer's zipcode.
+      frac_black_emp_zip
+         Fraction of blacks in employers's zipcode.
 
-   l_med_hh_inc_emp_zip
-      Log median household income in employer's zipcode.
+      frac_white_emp_zip
+         Fraction of whites in employer's zipcode.
 
-   frac_dropout_emp_zip
-      Fraction of high-school dropouts in employer's zipcode.
+      l_med_hh_inc_emp_zip
+         Log median household income in employer's zipcode.
 
-   frac_colp_emp_zip
-      Fraction of college degree or more in employer's zipcode.
+      frac_dropout_emp_zip
+         Fraction of high-school dropouts in employer's zipcode.
 
-   l_inc_emp_zip
-      Log per capita income in employer's zipcode.
+      frac_colp_emp_zip
+         Fraction of college degree or more in employer's zipcode.
 
-   manager
-      Indicator variable for which 1 = executives or managers wanted.
+      l_inc_emp_zip
+         Log per capita income in employer's zipcode.
 
-   supervisor
-      Indicator variable for which 1 = administrative supervisors
-      wanted.
+      manager
+         Indicator variable for which 1 = executives or managers wanted.
 
-   secretary
-      Indicator variable for which 1 = secretaries or legal assistants
-      wanted.
+      supervisor
+         Indicator variable for which 1 = administrative supervisors
+         wanted.
 
-   off_support
-      Indicator variable for which 1 = clerical workers wanted.
+      secretary
+         Indicator variable for which 1 = secretaries or legal
+         assistants wanted.
 
-   sales_rep
-      Indicator variable for which 1 = sales representative wanted.
+      off_support
+         Indicator variable for which 1 = clerical workers wanted.
 
-   retail_sales
-      Indicator variable for which 1 = retail sales worker wanted.
+      sales_rep
+         Indicator variable for which 1 = sales representative wanted.
 
-   req
-      Indicator variable for which 1 = ad mentions any requirement for
-      job.
+      retail_sales
+         Indicator variable for which 1 = retail sales worker wanted.
 
-   exp_req
-      Indicator variable for which 1 = ad mentions some experience
-      requirement.
+      req
+         Indicator variable for which 1 = ad mentions any requirement
+         for job.
 
-   com_req
-      Indicator variable for which 1 = ad mentions some communication
-      skills requirement.
+      exp_req
+         Indicator variable for which 1 = ad mentions some experience
+         requirement.
 
-   educ_req
-      Indicator variable for which 1 = ad mentions some educational
-      requirement.
+      com_req
+         Indicator variable for which 1 = ad mentions some communication
+         skills requirement.
 
-   comp_req
-      Indicator variable for which 1 = ad mentions some computer skill
-      requirement.
+      educ_req
+         Indicator variable for which 1 = ad mentions some educational
+         requirement.
 
-   org_req
-      Indicator variable for which 1 = ad mentions some organizational
-      skills requirement.
+      comp_req
+         Indicator variable for which 1 = ad mentions some computer
+         skill requirement.
 
-   manuf
-      Indicator variable for which 1 = employer industry is
-      manufacturing.
+      org_req
+         Indicator variable for which 1 = ad mentions some
+         organizational skills requirement.
 
-   trans_com
-      Indicator variable for which 1 = employer industry is transport or
-      communication.
+      manuf
+         Indicator variable for which 1 = employer industry is
+         manufacturing.
 
-   bank_real
-      Indicator variable for which 1 = employer industry is finance,
-      insurance or real estate.
+      trans_com
+         Indicator variable for which 1 = employer industry is transport
+         or communication.
 
-   trade
-      Indicator variable for which 1 = employer industry is wholesale or
-      retail trade.
+      bank_real
+         Indicator variable for which 1 = employer industry is finance,
+         insurance or real estate.
 
-   bus_service
-      Indicator variable for which 1 = employer industry is business or
-      personal services.
+      trade
+         Indicator variable for which 1 = employer industry is wholesale
+         or retail trade.
 
-   oth_service
-      Indicator variable for which 1 = employer industry is health,
-      education or social services.
+      bus_service
+         Indicator variable for which 1 = employer industry is business
+         or personal services.
 
-   miss_ind
-      Indicator variable for which 1 = employer industry is other or
-      unknown.
+      oth_service
+         Indicator variable for which 1 = employer industry is health,
+         education or social services.
 
-   ownership
-      Ownership status of employer, with levels of 'non-profit';
-      'private'; 'public'
+      miss_ind
+         Indicator variable for which 1 = employer industry is other or
+         unknown.
 
-   .. rubric:: Details
-      :name: details
+      ownership
+         Ownership status of employer, with levels of 'non-profit';
+         'private'; 'public'
 
-   From the summary: "We study race in the labor market by sending
-   fictitious resumes to help-wanted ads in Boston and Chicago
-   newspapers. To manipulate perceived race, resumes are randomly
-   assigned African-American- or White-sounding names. White names
-   receive 50 percent more callbacks for interviews. Callbacks are also
-   more responsive to resume quality for White names than for
-   African-American ones. The racial gap is uniform across occupation,
-   industry, and employer size. We also find little evidence that
-   employers are inferring social class from the names. Differential
-   treatment by race still appears to be prominent in the U. S. labor
-   market."
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      From the summary: "We study race in the labor market by sending
+      fictitious resumes to help-wanted ads in Boston and Chicago
+      newspapers. To manipulate perceived race, resumes are randomly
+      assigned African-American- or White-sounding names. White names
+      receive 50 percent more callbacks for interviews. Callbacks are
+      also more responsive to resume quality for White names than for
+      African-American ones. The racial gap is uniform across
+      occupation, industry, and employer size. We also find little
+      evidence that employers are inferring social class from the names.
+      Differential treatment by race still appears to be prominent in
+      the U. S. labor market."
 
-   Bertrand, Marianne, and Mullainathan, Sendhil. Replication data for:
-   Are Emily and Greg More Employable Than Lakisha and Jamal? A Field
-   Experiment on Labor Market Discrimination. Nashville, TN: American
-   Economic Association [publisher], 2004. Ann Arbor, MI:
-   Inter-university Consortium for Political and Social Research
-   [distributor], 2019-12-06.
-   `doi:10.3886/E116023V1 <https://doi.org/10.3886/E116023V1>`__.
+      .. rubric:: Source
+         :name: source
 
-   `NBER Working
-   Papers <https://www.nber.org/system/files/working_papers/w9873/w9873.pdf>`__
+      Bertrand, Marianne, and Mullainathan, Sendhil. Replication data
+      for: Are Emily and Greg More Employable Than Lakisha and Jamal? A
+      Field Experiment on Labor Market Discrimination. Nashville, TN:
+      American Economic Association [publisher], 2004. Ann Arbor, MI:
+      Inter-university Consortium for Political and Social Research
+      [distributor], 2019-12-06.
+      `doi:10.3886/E116023V1 <https://doi.org/10.3886/E116023V1>`__.
 
-   `1990 Census Occupation
-   Codes <https://usa.ipums.org/usa/volii/occ1990.shtml>`__
+      `NBER Working
+      Papers <https://www.nber.org/system/files/working_papers/w9873/w9873.pdf>`__
 
-   Note: The description of the variables follows closely the labels
-   provided in the original dataset, with small edits for clarity.
+      `1990 Census Occupation
+      Codes <https://usa.ipums.org/usa/volii/occ1990.shtml>`__
 
-   .. rubric:: Examples
-      :name: examples
+      Note: The description of the variables follows closely the labels
+      provided in the original dataset, with small edits for clarity.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(dplyr)
+      ::
 
-      # Percent callback for typical White names and typical African-American names (table 1, p. 997)
+         library(dplyr)
 
-      labor_market_discrimination %>%
-        group_by(race) %>%
-        summarise(call_back = mean(call))
+         # Percent callback for typical White names and typical African-American names (table 1, p. 997)
+
+         labor_market_discrimination %>%
+           group_by(race) %>%
+           summarise(call_back = mean(call))

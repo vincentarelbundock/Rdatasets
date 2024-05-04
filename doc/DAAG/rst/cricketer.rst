@@ -1,105 +1,107 @@
 .. container::
 
-   ========= ===============
-   cricketer R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Lifespans of UK 1st class cricketers born 1840-1960
-      :name: cricketer
+      ========= ===============
+      cricketer R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Lifespans of UK 1st class cricketers born 1840-1960
+         :name: lifespans-of-uk-1st-class-cricketers-born-1840-1960
 
-   Year and birth, lifespan, etc, of British first class cricketers,
-   born 1840-1960, whose handedness could be determined from information
-   in the Who's who of cricketers. The status (alive=0, dead =1), and
-   lifetime or lifespan, is for 1992.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Year and birth, lifespan, etc, of British first class cricketers,
+      born 1840-1960, whose handedness could be determined from
+      information in the Who's who of cricketers. The status (alive=0,
+      dead =1), and lifetime or lifespan, is for 1992.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(cricketer)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(cricketer)
 
-   A data frame with 5960 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``left``
-      a factor with levels ``right`` ``left``
+      A data frame with 5960 observations on the following 8 variables.
 
-   ``year``
-      numeric, year of birth
+      ``left``
+         a factor with levels ``right`` ``left``
 
-   ``life``
-      numeric, lifetime or lifespan to 1992
+      ``year``
+         numeric, year of birth
 
-   ``dead``
-      numeric (0 = alive (censored), 1 = dead, in 1992)
+      ``life``
+         numeric, lifetime or lifespan to 1992
 
-   ``acd``
-      numeric (0 = not accidental or not dead, 1 = accidental death)
+      ``dead``
+         numeric (0 = alive (censored), 1 = dead, in 1992)
 
-   ``kia``
-      numeric (0 = not killed in action, 1 = killed in action)
+      ``acd``
+         numeric (0 = not accidental or not dead, 1 = accidental death)
 
-   ``inbed``
-      numeric (0 = did not die in bed, 1 = died in bed)
+      ``kia``
+         numeric (0 = not killed in action, 1 = killed in action)
 
-   ``cause``
-      a factor with levels ``alive`` ``acd`` (accidental death)
-      ``inbed`` (died in bed)
+      ``inbed``
+         numeric (0 = did not die in bed, 1 = died in bed)
 
-   .. rubric:: Details
-      :name: details
+      ``cause``
+         a factor with levels ``alive`` ``acd`` (accidental death)
+         ``inbed`` (died in bed)
 
-   Note that those 'killed in action' (mostly during World Wars I and
-   II) form a subset of those who died by accident.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Note that those 'killed in action' (mostly during World Wars I and
+      II) form a subset of those who died by accident.
 
-   John Aggleton, Martin Bland. Data were collated as described in
-   Aggleton et al.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      John Aggleton, Martin Bland. Data were collated as described in
+      Aggleton et al.
 
-   Aggleton JP, Bland JM, Kentridge RW, Neave NJ 1994. Handedness and
-   longevity: an archival study of cricketers. British Medical Journal
-   309, 1681-1684.
+      .. rubric:: References
+         :name: references
 
-   Bailey P, Thorne P, Wynne-Thomas P. 1993. Who's Who of Cricketers.
-   2nd ed, London, Hamlyn.
+      Aggleton JP, Bland JM, Kentridge RW, Neave NJ 1994. Handedness and
+      longevity: an archival study of cricketers. British Medical
+      Journal 309, 1681-1684.
 
-   Bland M and Altman D. 2005. Do the left-handed die young?
-   Significance 2, 166-170.
+      Bailey P, Thorne P, Wynne-Thomas P. 1993. Who's Who of Cricketers.
+      2nd ed, London, Hamlyn.
 
-   .. rubric:: See Also
-      :name: see-also
+      Bland M and Altman D. 2005. Do the left-handed die young?
+      Significance 2, 166-170.
 
-   ``earlycrcktr``.
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``earlycrcktr``.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(cricketer)
-      numLH <- xtabs(~ left+year, data=cricketer)
-      propLH <- prop.table(numLH, margin=2)[2,]
-      yr <- as.numeric(colnames(numLH))
-      plot(propLH ~ yr)
-      cricketer$lh <- unclass(cricketer$left)-1
-      left2.hat <- fitted(lm(lh ~ poly(year,2), data=cricketer))
-      ord <- order(cricketer$year)
-      lines(left2.hat[ord] ~ cricketer$year[ord])
-      library(splines)
-      ns3.hat <- fitted(lm(lh ~ ns(year,3), data=cricketer))
-      lines(ns3.hat[ord] ~ cricketer$year[ord], col="red")
-      require(survival)
-      summary(coxph(Surv(life, kia) ~ bs(year,3) +left, data=cricketer))
-      cricketer$notacdDead <- with(cricketer, {dead[acd==1]<-0; dead})
-      summary(coxph(Surv(life, notacdDead) ~ ns(year,2) +left, data=cricketer))
+      ::
+
+         data(cricketer)
+         numLH <- xtabs(~ left+year, data=cricketer)
+         propLH <- prop.table(numLH, margin=2)[2,]
+         yr <- as.numeric(colnames(numLH))
+         plot(propLH ~ yr)
+         cricketer$lh <- unclass(cricketer$left)-1
+         left2.hat <- fitted(lm(lh ~ poly(year,2), data=cricketer))
+         ord <- order(cricketer$year)
+         lines(left2.hat[ord] ~ cricketer$year[ord])
+         library(splines)
+         ns3.hat <- fitted(lm(lh ~ ns(year,3), data=cricketer))
+         lines(ns3.hat[ord] ~ cricketer$year[ord], col="red")
+         require(survival)
+         summary(coxph(Surv(life, kia) ~ bs(year,3) +left, data=cricketer))
+         cricketer$notacdDead <- with(cricketer, {dead[acd==1]<-0; dead})
+         summary(coxph(Surv(life, notacdDead) ~ ns(year,2) +left, data=cricketer))

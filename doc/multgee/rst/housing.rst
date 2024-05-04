@@ -1,55 +1,57 @@
 .. container::
 
-   ======= ===============
-   housing R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Homeless Data
-      :name: housing
+      ======= ===============
+      housing R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Homeless Data
+         :name: homeless-data
 
-   Housing status for 362 severely mentally ill homeless subjects
-   measured at baseline and at three follow-up times.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Housing status for 362 severely mentally ill homeless subjects
+      measured at baseline and at three follow-up times.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      housing
+      ::
 
-   .. rubric:: Format
-      :name: format
+         housing
 
-   A data frame with 1448 observations on the following 4 variables:
+      .. rubric:: Format
+         :name: format
 
-   id
-      Subject identifier variable.
+      A data frame with 1448 observations on the following 4 variables:
 
-   y
-      Housing status response, coded as (1) for street living, (2) for
-      community living and (3) for independent housing.
+      id
+         Subject identifier variable.
 
-   time
-      Time recorded in months.
+      y
+         Housing status response, coded as (1) for street living, (2)
+         for community living and (3) for independent housing.
 
-   sec
-      Section 8 rent certificate indicator.
+      time
+         Time recorded in months.
 
-   .. rubric:: Source
-      :name: source
+      sec
+         Section 8 rent certificate indicator.
 
-   Hulrburt M.S., Wood, P.A. and Hough, R.L. (1996) Providing
-   independent housing for the homeless mentally ill: a novel approach
-   to evaluating longitudinal housing patterns. *Journal of Community
-   Psychology*, **24**, 291–310.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Hulrburt M.S., Wood, P.A. and Hough, R.L. (1996) Providing
+      independent housing for the homeless mentally ill: a novel
+      approach to evaluating longitudinal housing patterns. *Journal of
+      Community Psychology*, **24**, 291–310.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(housing)
-      str(housing)
+      ::
+
+         data(housing)
+         str(housing)

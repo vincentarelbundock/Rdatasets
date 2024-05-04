@@ -1,50 +1,52 @@
 .. container::
 
-   ========= ===============
-   Zimmerman R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Stand Your Ground Simpson's Paradox
-      :name: Zimmerman
+      ========= ===============
+      Zimmerman R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Stand Your Ground Simpson's Paradox
+         :name: stand-your-ground-simpsons-paradox
 
-   Data from 220 cases in Florida where a "Stand your ground" defense
-   was used.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Data from 220 cases in Florida where a "Stand your ground" defense
+      was used.
 
-   A data frame with 220 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Convicted``
-      Was the defendant Convicted? (``No`` or ``Yes``)
+      A data frame with 220 observations on the following 5 variables.
 
-   ``IndWhiteVictim``
-      Was the victim white? (``1``\ =yes or ``0``\ =no)
+      ``Convicted``
+         Was the defendant Convicted? (``No`` or ``Yes``)
 
-   ``IndWhiteDefendant``
-      Was the defendant white? (``1``\ =yes or ``0``\ =no)
+      ``IndWhiteVictim``
+         Was the victim white? (``1``\ =yes or ``0``\ =no)
 
-   ``VictimRace``
-      Race of the victim (``Minority`` or ``White``)
+      ``IndWhiteDefendant``
+         Was the defendant white? (``1``\ =yes or ``0``\ =no)
 
-   ``DefendantRace``
-      Race of the defendant (``Minority`` or ``White``)
+      ``VictimRace``
+         Race of the victim (``Minority`` or ``White``)
 
-   .. rubric:: Details
-      :name: details
+      ``DefendantRace``
+         Race of the defendant (``Minority`` or ``White``)
 
-   Inspired by the Travon Martin case, combined fatal and non-fatal
-   cases of assault in Florida for which the defendant used the Stand
-   Your Ground law in defense. These data show Simpson's Paradox. Race
-   of the victim is more important than race of the defendant.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Inspired by the Travon Martin case, combined fatal and non-fatal
+      cases of assault in Florida for which the defendant used the Stand
+      Your Ground law in defense. These data show Simpson's Paradox.
+      Race of the victim is more important than race of the defendant.
 
-   Data from Tampa Bay Times, male plus female cases, as of 2/8/15 –
-   final posted data
-   http://www.tampabay.com/stand-your-ground-law/nonfatal-cases
-   http://www.tampabay.com/stand-your-ground-law/fatal-cases
+      .. rubric:: Source
+         :name: source
+
+      Data from Tampa Bay Times, male plus female cases, as of 2/8/15 –
+      final posted data
+      http://www.tampabay.com/stand-your-ground-law/nonfatal-cases
+      http://www.tampabay.com/stand-your-ground-law/fatal-cases

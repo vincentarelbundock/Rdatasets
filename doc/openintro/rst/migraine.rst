@@ -1,48 +1,50 @@
 .. container::
 
-   ======== ===============
-   migraine R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Migraines and acupuncture
-      :name: migraine
+      ======== ===============
+      migraine R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Migraines and acupuncture
+         :name: migraines-and-acupuncture
 
-   Experiment involving acupuncture and sham acupuncture (as placebo) in
-   the treatment of migraines.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Experiment involving acupuncture and sham acupuncture (as placebo)
+      in the treatment of migraines.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      migraine
+      ::
 
-   .. rubric:: Format
-      :name: format
+         migraine
 
-   A data frame with 89 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   group
-      a factor with levels ``control`` ``treatment``
+      A data frame with 89 observations on the following 2 variables.
 
-   pain_free
-      a factor with levels ``no`` ``yes``
+      group
+         a factor with levels ``control`` ``treatment``
 
-   .. rubric:: Source
-      :name: source
+      pain_free
+         a factor with levels ``no`` ``yes``
 
-   G. Allais et al. Ear acupuncture in the treatment of migraine
-   attacks: a randomized trial on the efficacy of appropriate versus
-   inappropriate acupoints. In: Neurological Sci. 32.1 (2011), pp.
-   173-175.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      G. Allais et al. Ear acupuncture in the treatment of migraine
+      attacks: a randomized trial on the efficacy of appropriate versus
+      inappropriate acupoints. In: Neurological Sci. 32.1 (2011), pp.
+      173-175.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
+
+      ::
 
 
-      migraine
+         migraine

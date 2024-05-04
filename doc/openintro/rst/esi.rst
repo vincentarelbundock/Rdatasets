@@ -1,172 +1,174 @@
 .. container::
 
-   === ===============
-   esi R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Environmental Sustainability Index 2005
-      :name: esi
+      === ===============
+      esi R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Environmental Sustainability Index 2005
+         :name: environmental-sustainability-index-2005
 
-   This data set comes from the 2005 Environmental Sustainability Index:
-   Benchmarking National Environmental Stewardship. Countries are given
-   an overall sustainability score as well as scores in each of several
-   different environmental areas.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set comes from the 2005 Environmental Sustainability
+      Index: Benchmarking National Environmental Stewardship. Countries
+      are given an overall sustainability score as well as scores in
+      each of several different environmental areas.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
+
+      ::
+
+         esi
+
+      .. rubric:: Format
+         :name: format
+
+      A data frame with 146 observations on the following 29 variables.
+
+      code
+         ISO3 country code.
+
+      country
+         Country.
 
       esi
+         Environmental Sustainability Index.
 
-   .. rubric:: Format
-      :name: format
+      system
+         ESI core component: systems
 
-   A data frame with 146 observations on the following 29 variables.
+      stress
+         ESI core component: stresses
 
-   code
-      ISO3 country code.
+      vulner
+         ESI core component: vulnerability
 
-   country
-      Country.
+      cap
+         ESI core component: capacity
 
-   esi
-      Environmental Sustainability Index.
+      global
+         ESI core component: global stewardship
 
-   system
-      ESI core component: systems
+      sys_air
+         Air quality.
 
-   stress
-      ESI core component: stresses
+      sys_bio
+         Biodiversity.
 
-   vulner
-      ESI core component: vulnerability
+      sys_lan
+         Land.
 
-   cap
-      ESI core component: capacity
+      sys_wql
+         Water quality.
 
-   global
-      ESI core component: global stewardship
+      sys_wqn
+         Water quantity.
 
-   sys_air
-      Air quality.
+      str_air
+         Reducing air pollution.
 
-   sys_bio
-      Biodiversity.
+      str_eco
+         Reducing ecosystem stress.
 
-   sys_lan
-      Land.
+      str_pop
+         Reducing population pressure.
 
-   sys_wql
-      Water quality.
+      str_was
+         Reducing waste and consumption pressures.
 
-   sys_wqn
-      Water quantity.
+      str_wat
+         Reducing water stress.
 
-   str_air
-      Reducing air pollution.
+      str_nrm
+         Natural resource management.
 
-   str_eco
-      Reducing ecosystem stress.
+      vul_hea
+         Environmental health.
 
-   str_pop
-      Reducing population pressure.
+      vul_sus
+         Basic human sustenance.
 
-   str_was
-      Reducing waste and consumption pressures.
+      vul_dis
+         Exposure to natural disasters.
 
-   str_wat
-      Reducing water stress.
+      cap_gov
+         Environmental governance.
 
-   str_nrm
-      Natural resource management.
+      cap_eff
+         Eco-efficiency.
 
-   vul_hea
-      Environmental health.
+      cap_pri
+         Private sector responsiveness.
 
-   vul_sus
-      Basic human sustenance.
+      cap_st
+         Science and technology.
 
-   vul_dis
-      Exposure to natural disasters.
+      glo_col
+         Participation in international collaboration efforts.
 
-   cap_gov
-      Environmental governance.
+      glo_ghg
+         Greenhouse gas emissions.
 
-   cap_eff
-      Eco-efficiency.
+      glo_tbp
+         Reducing transboundary environmental pressures.
 
-   cap_pri
-      Private sector responsiveness.
+      .. rubric:: Details
+         :name: details
 
-   cap_st
-      Science and technology.
+      ESI and Component scores are presented as standard normal
+      percentiles. Indicator scores are in the form of z-scores. See
+      Appendix A of the report for information on the methodology and
+      Appendix C for more detail on original data sources.
 
-   glo_col
-      Participation in international collaboration efforts.
+      For more information on how each of the indices were calculated,
+      see the documentation linked below.
 
-   glo_ghg
-      Greenhouse gas emissions.
+      .. rubric:: Source
+         :name: source
 
-   glo_tbp
-      Reducing transboundary environmental pressures.
+      ESI Component Indicators. *2005 Environmental Sustainability
+      Index: Benchmarking National Environmental Stewardship*, Yale
+      Center for Environmental Law and Policy, Yale University & Center
+      for International Earth Science Information Network (CIESIN),
+      Columbia University
 
-   .. rubric:: Details
-      :name: details
+      In collaboration with: World Economic Forum, Geneva, Switzerland
+      Joint Research Centre of the European Commission, Ispra, Italy.
 
-   ESI and Component scores are presented as standard normal
-   percentiles. Indicator scores are in the form of z-scores. See
-   Appendix A of the report for information on the methodology and
-   Appendix C for more detail on original data sources.
+      Available at
+      https://www.earth.columbia.edu/news/2005/images/ESI2005_policysummary.pdf.
 
-   For more information on how each of the indices were calculated, see
-   the documentation linked below.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Source
-      :name: source
+      Esty, Daniel C., Marc Levy, Tanja Srebotnjak, and Alexander de
+      Sherbinin (2005). *2005 Environmental Sustainability Index:
+      Benchmarking National Environmental Stewardship.* New Haven: Yale
+      Center for Environmental Law and Policy
 
-   ESI Component Indicators. *2005 Environmental Sustainability Index:
-   Benchmarking National Environmental Stewardship*, Yale Center for
-   Environmental Law and Policy, Yale University & Center for
-   International Earth Science Information Network (CIESIN), Columbia
-   University
+      .. rubric:: Examples
+         :name: examples
 
-   In collaboration with: World Economic Forum, Geneva, Switzerland
-   Joint Research Centre of the European Commission, Ispra, Italy.
+      ::
 
-   Available at
-   https://www.earth.columbia.edu/news/2005/images/ESI2005_policysummary.pdf.
+         library(ggplot2)
 
-   .. rubric:: References
-      :name: references
+         ggplot(esi, aes(x = cap_st, y = glo_col)) +
+           geom_point(color = ifelse(esi$code == "USA", "red", "black")) +
+           geom_text(
+           aes(label = ifelse(code == "USA", as.character(code), "")),
+             hjust = 1.2, color = "red"
+             ) +
+           labs(x = "Science and technology", y = "Participation in international collaboration efforts")
 
-   Esty, Daniel C., Marc Levy, Tanja Srebotnjak, and Alexander de
-   Sherbinin (2005). *2005 Environmental Sustainability Index:
-   Benchmarking National Environmental Stewardship.* New Haven: Yale
-   Center for Environmental Law and Policy
-
-   .. rubric:: Examples
-      :name: examples
-
-   .. code:: R
-
-      library(ggplot2)
-
-      ggplot(esi, aes(x = cap_st, y = glo_col)) +
-        geom_point(color = ifelse(esi$code == "USA", "red", "black")) +
-        geom_text(
-        aes(label = ifelse(code == "USA", as.character(code), "")),
-          hjust = 1.2, color = "red"
-          ) +
-        labs(x = "Science and technology", y = "Participation in international collaboration efforts")
-
-      ggplot(esi, aes(x = vulner, y = cap)) +
-        geom_point(color = ifelse(esi$code == "USA", "red", "black")) +
-        geom_text(
-          aes(label = ifelse(code == "USA", as.character(code), "")),
-          hjust = 1.2, color = "red"
-          ) +
-        labs(x = "Vulnerability", y = "Capacity")
+         ggplot(esi, aes(x = vulner, y = cap)) +
+           geom_point(color = ifelse(esi$code == "USA", "red", "black")) +
+           geom_text(
+             aes(label = ifelse(code == "USA", as.character(code), "")),
+             hjust = 1.2, color = "red"
+             ) +
+           labs(x = "Vulnerability", y = "Capacity")

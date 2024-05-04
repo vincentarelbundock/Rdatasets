@@ -1,47 +1,49 @@
 .. container::
 
-   ===== ===============
-   cloud R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Cloud point of a Liquid
-      :name: cloud
+      ===== ===============
+      cloud R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cloud point of a Liquid
+         :name: cloud-point-of-a-liquid
 
-   This data set contains the measurements concerning the cloud point of
-   a Liquid, from Draper and Smith (1969). The cloud point is a measure
-   of the degree of crystallization in a stock.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set contains the measurements concerning the cloud point
+      of a Liquid, from Draper and Smith (1969). The cloud point is a
+      measure of the degree of crystallization in a stock.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(cloud, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(cloud, package="robustbase")
 
-   A data frame with 19 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Percentage``
-      Percentage of I-8
+      A data frame with 19 observations on the following 2 variables.
 
-   ``CloudPoint``
-      Cloud point
+      ``Percentage``
+         Percentage of I-8
 
-   .. rubric:: Source
-      :name: source
+      ``CloudPoint``
+         Cloud point
 
-   P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
-   Detection*; Wiley, p.96, table 10.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and
+      Outlier Detection*; Wiley, p.96, table 10.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(cloud)
-      summary(lm.cloud <- lm(CloudPoint ~., data=cloud))
+      ::
+
+         data(cloud)
+         summary(lm.cloud <- lm(CloudPoint ~., data=cloud))

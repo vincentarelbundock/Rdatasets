@@ -1,50 +1,52 @@
 .. container::
 
-   ======== ===============
-   smallpox R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Smallpox vaccine results
-      :name: smallpox
+      ======== ===============
+      smallpox R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Smallpox vaccine results
+         :name: smallpox-vaccine-results
 
-   A sample of 6,224 individuals from the year 1721 who were exposed to
-   smallpox in Boston. Some of them had received a vaccine (inoculated)
-   while others had not. Doctors at the time believed that inoculation,
-   which involves exposing a person to the disease in a controlled form,
-   could reduce the likelihood of death.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A sample of 6,224 individuals from the year 1721 who were exposed
+      to smallpox in Boston. Some of them had received a vaccine
+      (inoculated) while others had not. Doctors at the time believed
+      that inoculation, which involves exposing a person to the disease
+      in a controlled form, could reduce the likelihood of death.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      smallpox
+      ::
 
-   .. rubric:: Format
-      :name: format
+         smallpox
 
-   A data frame with 6224 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   result
-      Whether the person ``died`` or ``lived``.
+      A data frame with 6224 observations on the following 2 variables.
 
-   inoculated
-      Whether the person received inoculated.
+      result
+         Whether the person ``died`` or ``lived``.
 
-   .. rubric:: Source
-      :name: source
+      inoculated
+         Whether the person received inoculated.
 
-   Fenner F. 1988. Smallpox and Its Eradication (History of
-   International Public Health, No. 6). Geneva: World Health
-   Organization. ISBN 92-4-156110-6.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Fenner F. 1988. Smallpox and Its Eradication (History of
+      International Public Health, No. 6). Geneva: World Health
+      Organization. ISBN 92-4-156110-6.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(smallpox)
-      table(smallpox)
+      ::
+
+         data(smallpox)
+         table(smallpox)

@@ -1,77 +1,80 @@
 .. container::
 
-   ==================== ===============
-   ProgramEffectiveness R Documentation
-   ==================== ===============
+   .. container::
 
-   .. rubric:: Program Effectiveness Data
-      :name: ProgramEffectiveness
+      ==================== ===============
+      ProgramEffectiveness R Documentation
+      ==================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Program Effectiveness Data
+         :name: program-effectiveness-data
 
-   Data used to study the effectiveness of a program.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data used to study the effectiveness of a program.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("ProgramEffectiveness")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("ProgramEffectiveness")
 
-   A data frame containing 32 cross-section observations on 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   grade
-      Factor with levels ``"increase"`` and ``"decrease"``.
+      A data frame containing 32 cross-section observations on 4
+      variables.
 
-   average
-      Grade-point average.
+      grade
+         Factor with levels ``"increase"`` and ``"decrease"``.
 
-   testscore
-      Test score on economics test.
+      average
+         Grade-point average.
 
-   participation
-      Factor. Did the individual participate in the program?
+      testscore
+         Test score on economics test.
 
-   .. rubric:: Details
-      :name: details
+      participation
+         Factor. Did the individual participate in the program?
 
-   The data are taken form Spencer and Mazzeo (1980) who examined
-   whether a new method of teaching economics significantly influenced
-   performance in later economics courses.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The data are taken form Spencer and Mazzeo (1980) who examined
+      whether a new method of teaching economics significantly
+      influenced performance in later economics courses.
 
-   Online complements to Greene (2003).
+      .. rubric:: Source
+         :name: source
 
-   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+      Online complements to Greene (2003).
 
-   .. rubric:: References
-      :name: references
+      https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
-   Saddle River, NJ: Prentice Hall.
+      .. rubric:: References
+         :name: references
 
-   Spector, L. and Mazzeo, M. (1980). Probit Analysis and Economic
-   Education. *Journal of Economic Education*, **11**, 37–44.
+      Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+      Saddle River, NJ: Prentice Hall.
 
-   .. rubric:: See Also
-      :name: see-also
+      Spector, L. and Mazzeo, M. (1980). Probit Analysis and Economic
+      Education. *Journal of Economic Education*, **11**, 37–44.
 
-   ``Greene2003``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Greene2003``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("ProgramEffectiveness")
+      ::
 
-      ## Greene (2003), Table 21.1, col. "Probit"
-      fm_probit <- glm(grade ~ average + testscore + participation,
-        data = ProgramEffectiveness, family = binomial(link = "probit"))
-      summary(fm_probit)
+         data("ProgramEffectiveness")
+
+         ## Greene (2003), Table 21.1, col. "Probit"
+         fm_probit <- glm(grade ~ average + testscore + participation,
+           data = ProgramEffectiveness, family = binomial(link = "probit"))
+         summary(fm_probit)

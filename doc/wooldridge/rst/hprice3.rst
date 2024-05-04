@@ -1,80 +1,82 @@
 .. container::
 
-   ======= ===============
-   hprice3 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: hprice3
-      :name: hprice3
+      ======= ===============
+      hprice3 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: hprice3
+         :name: hprice3
 
-   Wooldridge Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('hprice3')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('hprice3')
 
-   A data.frame with 321 observations on 19 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1978, 1981
+      A data.frame with 321 observations on 19 variables:
 
-   -  **age:** age of house
+      -  **year:** 1978, 1981
 
-   -  **agesq:** age^2
+      -  **age:** age of house
 
-   -  **nbh:** neighborhood, 1-6
+      -  **agesq:** age^2
 
-   -  **cbd:** dist. to cent. bus. dstrct, ft.
+      -  **nbh:** neighborhood, 1-6
 
-   -  **inst:** dist. to interstate, ft.
+      -  **cbd:** dist. to cent. bus. dstrct, ft.
 
-   -  **linst:** log(inst)
+      -  **inst:** dist. to interstate, ft.
 
-   -  **price:** selling price
+      -  **linst:** log(inst)
 
-   -  **rooms:** # rooms in house
+      -  **price:** selling price
 
-   -  **area:** square footage of house
+      -  **rooms:** # rooms in house
 
-   -  **land:** square footage lot
+      -  **area:** square footage of house
 
-   -  **baths:** # bathrooms
+      -  **land:** square footage lot
 
-   -  **dist:** dist. from house to incin., ft.
+      -  **baths:** # bathrooms
 
-   -  **ldist:** log(dist)
+      -  **dist:** dist. from house to incin., ft.
 
-   -  **lprice:** log(price)
+      -  **ldist:** log(dist)
 
-   -  **y81:** =1 if year = 1981
+      -  **lprice:** log(price)
 
-   -  **larea:** log(area)
+      -  **y81:** =1 if year = 1981
 
-   -  **lland:** log(land)
+      -  **larea:** log(area)
 
-   -  **linstsq:** linst^2
+      -  **lland:** log(land)
 
-   .. rubric:: 
-      :name: section
+      -  **linstsq:** linst^2
 
-   NA
+      .. rubric:: 
+         :name: section
 
-   .. rubric:: Source
-      :name: source
+      NA
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(hprice3)
+      ::
+
+          str(hprice3)

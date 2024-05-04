@@ -1,168 +1,171 @@
 .. container::
 
-   ======= ===============
-   loanapp R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: loanapp
-      :name: loanapp
+      ======= ===============
+      loanapp R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: loanapp
+         :name: loanapp
 
-   Wooldridge Source: W.C. Hunter and M.B. Walker (1996), “The Cultural
-   Affinity Hypothesis and Mortgage Lending Decisions,” Journal of Real
-   Estate Finance and Economics 13, 57-70. Professor Walker kindly
-   provided the data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: W.C. Hunter and M.B. Walker (1996), “The
+      Cultural Affinity Hypothesis and Mortgage Lending Decisions,”
+      Journal of Real Estate Finance and Economics 13, 57-70. Professor
+      Walker kindly provided the data. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('loanapp')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('loanapp')
 
-   A data.frame with 1989 observations on 59 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **occ:** occupancy
+      A data.frame with 1989 observations on 59 variables:
 
-   -  **loanamt:** loan amt in thousands
+      -  **occ:** occupancy
 
-   -  **action:** type of action taken
+      -  **loanamt:** loan amt in thousands
 
-   -  **msa:** msa number of property
+      -  **action:** type of action taken
 
-   -  **suffolk:** =1 if property in suffolk co.
+      -  **msa:** msa number of property
 
-   -  **appinc:** applicant income, $1000s
+      -  **suffolk:** =1 if property in suffolk co.
 
-   -  **typur:** type of purchaser of loan
+      -  **appinc:** applicant income, $1000s
 
-   -  **unit:** number of units in property
+      -  **typur:** type of purchaser of loan
 
-   -  **married:** =1 if applicant married
+      -  **unit:** number of units in property
 
-   -  **dep:** number of dependents
+      -  **married:** =1 if applicant married
 
-   -  **emp:** years employed in line of work
+      -  **dep:** number of dependents
 
-   -  **yjob:** years at this job
+      -  **emp:** years employed in line of work
 
-   -  **self:** =1 if self employed
+      -  **yjob:** years at this job
 
-   -  **atotinc:** total monthly income
+      -  **self:** =1 if self employed
 
-   -  **cototinc:** coapp total monthly income
+      -  **atotinc:** total monthly income
 
-   -  **hexp:** propose housing expense
+      -  **cototinc:** coapp total monthly income
 
-   -  **price:** purchase price
+      -  **hexp:** propose housing expense
 
-   -  **other:** other financing, $1000s
+      -  **price:** purchase price
 
-   -  **liq:** liquid assets
+      -  **other:** other financing, $1000s
 
-   -  **rep:** no. of credit reports
+      -  **liq:** liquid assets
 
-   -  **gdlin:** credit history meets guidelines
+      -  **rep:** no. of credit reports
 
-   -  **lines:** no. of credit lines on reports
+      -  **gdlin:** credit history meets guidelines
 
-   -  **mortg:** credit history on mortgage paym
+      -  **lines:** no. of credit lines on reports
 
-   -  **cons:** credit history on consumer stuf
+      -  **mortg:** credit history on mortgage paym
 
-   -  **pubrec:** =1 if filed bankruptcy
+      -  **cons:** credit history on consumer stuf
 
-   -  **hrat:** housing exp, percent total inc
+      -  **pubrec:** =1 if filed bankruptcy
 
-   -  **obrat:** other oblgs, percent total inc
+      -  **hrat:** housing exp, percent total inc
 
-   -  **fixadj:** fixed or adjustable rate?
+      -  **obrat:** other oblgs, percent total inc
 
-   -  **term:** term of loan in months
+      -  **fixadj:** fixed or adjustable rate?
 
-   -  **apr:** appraised value
+      -  **term:** term of loan in months
 
-   -  **prop:** type of property
+      -  **apr:** appraised value
 
-   -  **inss:** PMI sought
+      -  **prop:** type of property
 
-   -  **inson:** PMI approved
+      -  **inss:** PMI sought
 
-   -  **gift:** gift as down payment
+      -  **inson:** PMI approved
 
-   -  **cosign:** is there a cosigner
+      -  **gift:** gift as down payment
 
-   -  **unver:** unverifiable info
+      -  **cosign:** is there a cosigner
 
-   -  **review:** number of times reviewed
+      -  **unver:** unverifiable info
 
-   -  **netw:** net worth
+      -  **review:** number of times reviewed
 
-   -  **unem:** unemployment rate by industry
+      -  **netw:** net worth
 
-   -  **min30:** =1 if minority pop. > 30percent
+      -  **unem:** unemployment rate by industry
 
-   -  **bd:** =1 if boarded-up val > MSA med
+      -  **min30:** =1 if minority pop. > 30percent
 
-   -  **mi:** =1 if tract inc > MSA median
+      -  **bd:** =1 if boarded-up val > MSA med
 
-   -  **old:** =1 if applic age > MSA median
+      -  **mi:** =1 if tract inc > MSA median
 
-   -  **vr:** =1 if tract vac rte > MSA med
+      -  **old:** =1 if applic age > MSA median
 
-   -  **sch:** =1 if > 12 years schooling
+      -  **vr:** =1 if tract vac rte > MSA med
 
-   -  **black:** =1 if applicant black
+      -  **sch:** =1 if > 12 years schooling
 
-   -  **hispan:** =1 if applicant Hispanic
+      -  **black:** =1 if applicant black
 
-   -  **male:** =1 if applicant male
+      -  **hispan:** =1 if applicant Hispanic
 
-   -  **reject:** =1 if action == 3
+      -  **male:** =1 if applicant male
 
-   -  **approve:** =1 if action == 1 or 2
+      -  **reject:** =1 if action == 3
 
-   -  **mortno:** no mortgage history
+      -  **approve:** =1 if action == 1 or 2
 
-   -  **mortperf:** no late mort. payments
+      -  **mortno:** no mortgage history
 
-   -  **mortlat1:** one or two late payments
+      -  **mortperf:** no late mort. payments
 
-   -  **mortlat2:** > 2 late payments
+      -  **mortlat1:** one or two late payments
 
-   -  **chist:** =0 if accnts deliq. >= 60 days
+      -  **mortlat2:** > 2 late payments
 
-   -  **multi:** =1 if two or more units
+      -  **chist:** =0 if accnts deliq. >= 60 days
 
-   -  **loanprc:** amt/price
+      -  **multi:** =1 if two or more units
 
-   -  **thick:** =1 if rep > 2
+      -  **loanprc:** amt/price
 
-   -  **white:** =1 if applicant white
+      -  **thick:** =1 if rep > 2
 
-   .. rubric:: Notes
-      :name: notes
+      -  **white:** =1 if applicant white
 
-   These data were originally used in a famous study by researchers at
-   the Boston Federal Reserve Bank. See A. Munnell, G.M.B. Tootell, L.E.
-   Browne, and J. McEneaney (1996), “Mortgage Lending in Boston:
-   Interpreting HMDA Data,” American Economic Review 86, 25-53.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 263-264, 300, 339-340, 624
+      These data were originally used in a famous study by researchers
+      at the Boston Federal Reserve Bank. See A. Munnell, G.M.B.
+      Tootell, L.E. Browne, and J. McEneaney (1996), “Mortgage Lending
+      in Boston: Interpreting HMDA Data,” American Economic Review 86,
+      25-53.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 263-264, 300, 339-340, 624
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(loanapp)
+      ::
+
+          str(loanapp)

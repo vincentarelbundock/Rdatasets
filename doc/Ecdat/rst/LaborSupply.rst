@@ -1,73 +1,75 @@
 .. container::
 
-   =========== ===============
-   LaborSupply R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Wages and Hours Worked
-      :name: LaborSupply
+      =========== ===============
+      LaborSupply R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Wages and Hours Worked
+         :name: wages-and-hours-worked
 
-   a panel of 532 observations from 1979 to 1988
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 5320
+      a panel of 532 observations from 1979 to 1988
 
-   .. rubric:: Usage
-      :name: usage
+      *number of observations* : 5320
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(LaborSupply)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(LaborSupply)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   lnhr
-      log of annual hours worked
+      A dataframe containing :
 
-   lnwg
-      log of hourly wage
+      lnhr
+         log of annual hours worked
 
-   kids
-      number of children
+      lnwg
+         log of hourly wage
 
-   age
+      kids
+         number of children
+
       age
+         age
 
-   disab
-      bad health
+      disab
+         bad health
 
-   id
       id
+         id
 
-   year
       year
+         year
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: Source
+         :name: source
 
-   Ziliak, Jim (1997) “Efficient Estimation With Panel Data when
-   Instruments are Predetermined: An Empirical Comparison of
-   Moment-Condition Estimators”, *Journal of Business and Economic
-   Statistics*, **419–431**.
+      Ziliak, Jim (1997) “Efficient Estimation With Panel Data when
+      Instruments are Predetermined: An Empirical Comparison of
+      Moment-Condition Estimators”, *Journal of Business and Economic
+      Statistics*, **419–431**.
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: References
+         :name: references
 
-   Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
-   and applications*, Cambridge, pp. 708–15, 754–6.
+      Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
+      and applications*, Cambridge, pp. 708–15, 754–6.
 
-   Journal of Business Economics and Statistics web site :
-   https://amstat.tandfonline.com/loi/ubes20.
+      Journal of Business Economics and Statistics web site :
+      https://amstat.tandfonline.com/loi/ubes20.
 
-   .. rubric:: See Also
-      :name: see-also
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
 
-   ``Index.Time.Series``
+      ``Index.Time.Series``

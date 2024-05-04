@@ -1,47 +1,49 @@
 .. container::
 
-   ======= ===============
-   Animals R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Brain and Body Weights for 28 Species
-      :name: Animals
+      ======= ===============
+      Animals R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Brain and Body Weights for 28 Species
+         :name: brain-and-body-weights-for-28-species
 
-   Average brain and body weights for 28 species of land animals.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Average brain and body weights for 28 species of land animals.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Animals
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Animals
 
-   ``body``
-      body weight in kg.
+      .. rubric:: Format
+         :name: format
 
-   ``brain``
-      brain weight in g.
+      ``body``
+         body weight in kg.
 
-   .. rubric:: Note
-      :name: note
+      ``brain``
+         brain weight in g.
 
-   The name ``Animals`` avoided conflicts with a system dataset
-   ``animals`` in S-PLUS 4.5 and later.
+      .. rubric:: Note
+         :name: note
 
-   .. rubric:: Source
-      :name: source
+      The name ``Animals`` avoided conflicts with a system dataset
+      ``animals`` in S-PLUS 4.5 and later.
 
-   P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
-   Detection.* Wiley, p. 57.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and
+      Outlier Detection.* Wiley, p. 57.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S-PLUS.* Fourth Edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S-PLUS.* Fourth Edition. Springer.

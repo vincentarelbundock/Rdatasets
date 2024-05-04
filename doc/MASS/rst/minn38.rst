@@ -1,57 +1,59 @@
 .. container::
 
-   ====== ===============
-   minn38 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Minnesota High School Graduates of 1938
-      :name: minn38
+      ====== ===============
+      minn38 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Minnesota High School Graduates of 1938
+         :name: minnesota-high-school-graduates-of-1938
 
-   The Minnesota high school graduates of 1938 were classified according
-   to four factors, described below. The ``minn38`` data frame has 168
-   rows and 5 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The Minnesota high school graduates of 1938 were classified
+      according to four factors, described below. The ``minn38`` data
+      frame has 168 rows and 5 columns.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      minn38
+      ::
 
-   .. rubric:: Format
-      :name: format
+         minn38
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``hs``
-      high school rank: ``"L"``, ``"M"`` and ``"U"`` for lower, middle
-      and upper third.
+      This data frame contains the following columns:
 
-   ``phs``
-      post high school status: Enrolled in college, (``"C"``), enrolled
-      in non-collegiate school, (``"N"``), employed full-time, (``"E"``)
-      and other, (``"O"``).
+      ``hs``
+         high school rank: ``"L"``, ``"M"`` and ``"U"`` for lower,
+         middle and upper third.
 
-   ``fol``
-      father's occupational level, (seven levels, ``"F1"``, ``"F2"``,
-      ..., ``"F7"``).
+      ``phs``
+         post high school status: Enrolled in college, (``"C"``),
+         enrolled in non-collegiate school, (``"N"``), employed
+         full-time, (``"E"``) and other, (``"O"``).
 
-   ``sex``
-      sex: factor with levels\ ``"F"`` or ``"M"``.
+      ``fol``
+         father's occupational level, (seven levels, ``"F1"``, ``"F2"``,
+         ..., ``"F7"``).
 
-   ``f``
-      frequency.
+      ``sex``
+         sex: factor with levels\ ``"F"`` or ``"M"``.
 
-   .. rubric:: Source
-      :name: source
+      ``f``
+         frequency.
 
-   From R. L. Plackett, (1974) *The Analysis of Categorical Data.*
-   London: Griffin
+      .. rubric:: Source
+         :name: source
 
-   who quotes the data from
+      From R. L. Plackett, (1974) *The Analysis of Categorical Data.*
+      London: Griffin
 
-   Hoyt, C. J., Krishnaiah, P. R. and Torrance, E. P. (1959) Analysis of
-   complex contingency tables, *J. Exp. Ed.* **27**, 187–194.
+      who quotes the data from
+
+      Hoyt, C. J., Krishnaiah, P. R. and Torrance, E. P. (1959) Analysis
+      of complex contingency tables, *J. Exp. Ed.* **27**, 187–194.

@@ -1,54 +1,56 @@
 .. container::
 
-   ============ ===============
-   historic_co2 R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Atmospheric carbon dioxide concentration over 800,000
-      years
-      :name: historic_co2
+      ============ ===============
+      historic_co2 R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Atmospheric carbon dioxide concentration over 800,000
+         years
+         :name: atmospheric-carbon-dioxide-concentration-over-800000-years
 
-   Concentration of carbon dioxide in ppm by volume from direct
-   measurements at Mauna Loa (1959-2018 CE) and indirect measurements
-   from a series of Antarctic ice cores (approx. -800,000-2001 CE).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Concentration of carbon dioxide in ppm by volume from direct
+      measurements at Mauna Loa (1959-2018 CE) and indirect measurements
+      from a series of Antarctic ice cores (approx. -800,000-2001 CE).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      historic_co2
+      ::
 
-   .. rubric:: Format
-      :name: format
+         historic_co2
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  year. Year (CE).
+      .. rubric:: Details
+         :name: details
 
-   -  co2. Carbon dioxide concentration in ppm by volume.
+      -  year. Year (CE).
 
-   -  source. Source of carbon dioxide measurement: direct CO2 annual
-      mean concentrations from Mauna Loa ('Mauna Loa') or indirect CO2
-      concentrations from air trapped in ice cores ('Ice Cores').
+      -  co2. Carbon dioxide concentration in ppm by volume.
 
-   .. rubric:: Source
-      :name: source
+      -  source. Source of carbon dioxide measurement: direct CO2 annual
+         mean concentrations from Mauna Loa ('Mauna Loa') or indirect
+         CO2 concentrations from air trapped in ice cores ('Ice Cores').
 
-   Mauna Loa data from
-   `NOAA <https://gml.noaa.gov/ccgg/trends/data.html>`__. Ice core data
-   from Bereiter et al. 2015 via
-   `NOAA <https://gml.noaa.gov/ccgg/trends/data.html>`__.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Mauna Loa data from
+      `NOAA <https://gml.noaa.gov/ccgg/trends/data.html>`__. Ice core
+      data from Bereiter et al. 2015 via
+      `NOAA <https://gml.noaa.gov/ccgg/trends/data.html>`__.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      head(historic_co2)
+      ::
+
+         head(historic_co2)

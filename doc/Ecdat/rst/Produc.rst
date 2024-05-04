@@ -1,87 +1,89 @@
 .. container::
 
-   ====== ===============
-   Produc R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Us States Production
-      :name: Produc
+      ====== ===============
+      Produc R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Us States Production
+         :name: us-states-production
 
-   a panel of 48 observations from 1970 to 1986
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 816
+      a panel of 48 observations from 1970 to 1986
 
-   *observation* : regional
+      *number of observations* : 816
 
-   *country* : United States
+      *observation* : regional
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Produc)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Produc)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   state
-      the state
+      A dataframe containing :
 
-   year
-      the year
+      state
+         the state
 
-   pcap
-      private capital stock
+      year
+         the year
 
-   hwy
-      highway and streets
+      pcap
+         private capital stock
 
-   water
-      water and sewer facilities
+      hwy
+         highway and streets
 
-   util
-      other public buildings and structures
+      water
+         water and sewer facilities
 
-   pc
-      public capital
+      util
+         other public buildings and structures
 
-   gsp
-      gross state products
+      pc
+         public capital
 
-   emp
-      labor input measured by the employment in non–agricultural
-      payrolls
+      gsp
+         gross state products
 
-   unemp
-      state unemployment rate
+      emp
+         labor input measured by the employment in non–agricultural
+         payrolls
 
-   .. rubric:: Source
-      :name: source
+      unemp
+         state unemployment rate
 
-   Munnell, A. (1990) “Why has productivity growth declined?
-   Productivity and public investment”, *New England Economic Review*,
-   3–22.
+      .. rubric:: Source
+         :name: source
 
-   Baltagi, B. H. and N. Pinnoi (1995) “Public capital stock and state
-   productivity growth: further evidence”, *Empirical Economics*,
-   **20**, 351–359.
+      Munnell, A. (1990) “Why has productivity growth declined?
+      Productivity and public investment”, *New England Economic
+      Review*, 3–22.
 
-   .. rubric:: References
-      :name: references
+      Baltagi, B. H. and N. Pinnoi (1995) “Public capital stock and
+      state productivity growth: further evidence”, *Empirical
+      Economics*, **20**, 351–359.
 
-   Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John
-   Wiley and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John
+      Wiley and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

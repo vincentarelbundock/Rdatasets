@@ -1,91 +1,93 @@
 .. container::
 
-   ============== ===============
-   KosteckiDillon R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Treatment of Migraine Headaches
-      :name: KosteckiDillon
+      ============== ===============
+      KosteckiDillon R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Treatment of Migraine Headaches
+         :name: treatment-of-migraine-headaches
 
-   Subset of data on migraine treatments collected by Tammy
-   Kostecki-Dillon.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Subset of data on migraine treatments collected by Tammy
+      Kostecki-Dillon.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      KosteckiDillon
+      ::
 
-   .. rubric:: Format
-      :name: format
+         KosteckiDillon
 
-   A data frame with 4152 observations on 133 subjects for the following
-   9 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``id``
-      Patient id.
+      A data frame with 4152 observations on 133 subjects for the
+      following 9 variables.
 
-   ``time``
-      time in days relative to the onset of treatment, which occurs at
-      time 0.
+      ``id``
+         Patient id.
 
-   ``dos``
-      time in days from the start of the study, January 1 of the first
-      year of the study.
+      ``time``
+         time in days relative to the onset of treatment, which occurs
+         at time 0.
 
-   ``hatype``
-      a factor with levels ``Aura`` ``Mixed`` ``No Aura``, the type of
-      migraine experienced by a subject.
+      ``dos``
+         time in days from the start of the study, January 1 of the
+         first year of the study.
 
-   ``age``
-      at onset of treatment, in years.
+      ``hatype``
+         a factor with levels ``Aura`` ``Mixed`` ``No Aura``, the type
+         of migraine experienced by a subject.
 
-   ``airq``
-      a measure of air quality.
+      ``age``
+         at onset of treatment, in years.
 
-   ``medication``
-      a factor with levels ``none`` ``reduced`` ``continuing``,
-      representing subjects who discontinued their medication, who
-      continued but at a reduced dose, or who continued at the previous
-      dose.
+      ``airq``
+         a measure of air quality.
 
-   ``headache``
-      a factor with levels ``no`` ``yes``.
+      ``medication``
+         a factor with levels ``none`` ``reduced`` ``continuing``,
+         representing subjects who discontinued their medication, who
+         continued but at a reduced dose, or who continued at the
+         previous dose.
 
-   ``sex``
-      a factor with levels ``female`` ``male``.
+      ``headache``
+         a factor with levels ``no`` ``yes``.
 
-   .. rubric:: Details
-      :name: details
+      ``sex``
+         a factor with levels ``female`` ``male``.
 
-   The data consist of headache logs kept by 133 patients in a treatment
-   program in which bio-feedback was used to attempt to reduce migraine
-   frequency and severity. Patients entered the program at different
-   times over a period of about 3 years. Patients were encouraged to
-   begin their logs four weeks before the onset of treatment and to
-   continue for one month afterwards, but only 55 patients have data
-   preceding the onset of treatment.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The data consist of headache logs kept by 133 patients in a
+      treatment program in which bio-feedback was used to attempt to
+      reduce migraine frequency and severity. Patients entered the
+      program at different times over a period of about 3 years.
+      Patients were encouraged to begin their logs four weeks before the
+      onset of treatment and to continue for one month afterwards, but
+      only 55 patients have data preceding the onset of treatment.
 
-   Personal communication from Georges Monette (and adapted from his
-   description of the data).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Personal communication from Georges Monette (and adapted from his
+      description of the data).
 
-   Kostecki-Dillon, T., Monette, G., and Wong, P. (1999). Pine trees,
-   comas, and migraines. *York University Institute for Social Research
-   Newsletter*, 14:2.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Kostecki-Dillon, T., Monette, G., and Wong, P. (1999). Pine trees,
+      comas, and migraines. *York University Institute for Social
+      Research Newsletter*, 14:2.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(KosteckiDillon)
+      ::
+
+         summary(KosteckiDillon)

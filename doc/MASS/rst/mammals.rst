@@ -1,50 +1,52 @@
 .. container::
 
-   ======= ===============
-   mammals R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Brain and Body Weights for 62 Species of Land Mammals
-      :name: mammals
+      ======= ===============
+      mammals R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Brain and Body Weights for 62 Species of Land Mammals
+         :name: brain-and-body-weights-for-62-species-of-land-mammals
 
-   A data frame with average brain and body weights for 62 species of
-   land mammals.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data frame with average brain and body weights for 62 species of
+      land mammals.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      mammals
+      ::
 
-   .. rubric:: Format
-      :name: format
+         mammals
 
-   ``body``
-      body weight in kg.
+      .. rubric:: Format
+         :name: format
 
-   ``brain``
-      brain weight in g.
+      ``body``
+         body weight in kg.
 
-   ``name``
-      Common name of species. (Rock hyrax-a = *Heterohyrax brucci*, Rock
-      hyrax-b = *Procavia habessinic.*.)
+      ``brain``
+         brain weight in g.
 
-   .. rubric:: Source
-      :name: source
+      ``name``
+         Common name of species. (Rock hyrax-a = *Heterohyrax brucci*,
+         Rock hyrax-b = *Procavia habessinic.*.)
 
-   Weisberg, S. (1985) *Applied Linear Regression.* 2nd edition. Wiley,
-   pp. 144–5.
+      .. rubric:: Source
+         :name: source
 
-   Selected from: Allison, T. and Cicchetti, D. V. (1976) Sleep in
-   mammals: ecological and constitutional correlates. *Science* **194**,
-   732–734.
+      Weisberg, S. (1985) *Applied Linear Regression.* 2nd edition.
+      Wiley, pp. 144–5.
 
-   .. rubric:: References
-      :name: references
+      Selected from: Allison, T. and Cicchetti, D. V. (1976) Sleep in
+      mammals: ecological and constitutional correlates. *Science*
+      **194**, 732–734.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S-PLUS.* Fourth Edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S-PLUS.* Fourth Edition. Springer.

@@ -1,35 +1,37 @@
 .. container::
 
-   ================ ===============
-   openintro_colors R Documentation
-   ================ ===============
+   .. container::
 
-   .. rubric:: OpenIntro colors
-      :name: openintro_colors
+      ================ ===============
+      openintro_colors R Documentation
+      ================ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: OpenIntro colors
+         :name: openintro-colors
 
-   A character string of full colors from ``IMSCOL[,1]``
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A character string of full colors from ``IMSCOL[,1]``
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      openintro_colors
+      ::
 
-   .. rubric:: Format
-      :name: format
+         openintro_colors
 
-   A named character string with 9 elements: "blue", "green", "pink",
-   "yellow", "red", "black", "gray", "lgray
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Examples
-      :name: examples
+      A named character string with 9 elements: "blue", "green", "pink",
+      "yellow", "red", "black", "gray", "lgray
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      openintro_colors
+      ::
 
-      openintro_colors["blue"]
+         openintro_colors
+
+         openintro_colors["blue"]

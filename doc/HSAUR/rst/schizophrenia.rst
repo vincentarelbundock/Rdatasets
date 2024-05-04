@@ -1,59 +1,61 @@
 .. container::
 
-   ============= ===============
-   schizophrenia R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Age of Onset of Schizophrenia Data
-      :name: schizophrenia
+      ============= ===============
+      schizophrenia R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Age of Onset of Schizophrenia Data
+         :name: age-of-onset-of-schizophrenia-data
 
-   Data on sex differences in the age of onset of schizophrenia.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on sex differences in the age of onset of schizophrenia.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("schizophrenia")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("schizophrenia")
 
-   A data frame with 251 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``age``
-      age at the time of diagnosis.
+      A data frame with 251 observations on the following 2 variables.
 
-   ``gender``
-      a factor with levels ``female`` and ``male``
+      ``age``
+         age at the time of diagnosis.
 
-   .. rubric:: Details
-      :name: details
+      ``gender``
+         a factor with levels ``female`` and ``male``
 
-   A sex difference in the age of onset of schizophrenia was noted by
-   Kraepelin (1919). Subsequently epidemiological studies of the
-   disorder have consistently shown an earlier onset in men than in
-   women. One model that has been suggested to explain this observed
-   difference is know as the subtype model which postulates two type of
-   schizophrenia, one characterised by early onset, typical symptoms and
-   poor premorbid competence, and the other by late onset, atypical
-   symptoms, and good premorbid competence. The early onset type is
-   assumed to be largely a disorder of men and the late onset largely a
-   disorder of women.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      A sex difference in the age of onset of schizophrenia was noted by
+      Kraepelin (1919). Subsequently epidemiological studies of the
+      disorder have consistently shown an earlier onset in men than in
+      women. One model that has been suggested to explain this observed
+      difference is know as the subtype model which postulates two type
+      of schizophrenia, one characterised by early onset, typical
+      symptoms and poor premorbid competence, and the other by late
+      onset, atypical symptoms, and good premorbid competence. The early
+      onset type is assumed to be largely a disorder of men and the late
+      onset largely a disorder of women.
 
-   E. Kraepelin (1919), *Dementia Praecox and Paraphrenia*. Livingstone,
-   Edinburgh.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      E. Kraepelin (1919), *Dementia Praecox and Paraphrenia*.
+      Livingstone, Edinburgh.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("schizophrenia", package = "HSAUR")
-        boxplot(age ~ gender, data = schizophrenia)
+      ::
+
+           data("schizophrenia", package = "HSAUR")
+           boxplot(age ~ gender, data = schizophrenia)

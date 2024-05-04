@@ -12,70 +12,72 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>schooldata</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='schooldata'>School Data</h2>
+<h2>School Data</h2>
 
 <h3>Description</h3>
 
-<p>School Data, from Charnes et al. (1981). The aim is to explain scores on 3 
+<p>School Data, from Charnes et al. (1981). The aim is to explain scores on 3
 different tests, <code>reading</code>, <code>mathematics</code> and <code>selfesteem</code>
-from 70 school sites by means of 5 explanatory variables related to parents and teachers.
+from 70 school sites by means of 5 explanatory variables related to parents
+and teachers.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(schooldata)</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A data frame with 70 observations on the following 8 variables.
 </p>
-
+ 
 <dl>
-<dt><code>education</code></dt><dd><p>Education level of mother as measured in terms of percentage of high school graduates among female parents</p>
+<dt><code>education</code></dt><dd><p>Education level of mother as measured in
+terms of percentage of high school graduates among female parents</p>
 </dd>
-<dt><code>occupation</code></dt><dd><p> Highest occupation of a family member according to a pre-arranged rating scale</p>
+<dt><code>occupation</code></dt><dd><p> Highest occupation of a family member according
+to a pre-arranged rating scale</p>
+</dd> 
+<dt><code>visit</code></dt><dd><p> Parental visits index
+representing the number of visits to the school site</p>
 </dd>
-<dt><code>visit</code></dt><dd><p> Parental visits index representing the number of visits to the school site</p>
-</dd>
-<dt><code>counseling</code></dt><dd><p> Parent counseling index calculated from data on time spent with child on 
-school-related topics such as reading together, etc.</p>
-</dd>
+<dt><code>counseling</code></dt><dd><p> Parent counseling index calculated from data on
+time spent with child on school-related topics such as reading together, etc.</p>
+</dd> 
 <dt><code>teacher</code></dt><dd><p> Number of teachers at a given site</p>
 </dd>
 <dt><code>reading</code></dt><dd><p> Reading score as measured by the Metropolitan Achievement Test</p>
-</dd>
+</dd> 
 <dt><code>mathematics</code></dt><dd><p>Mathematics score as measured by the Metropolitan Achievement Test</p>
-</dd>
+</dd> 
 <dt><code>selfesteem</code></dt><dd><p>Coopersmith Self-Esteem Inventory, intended as a measure of self-esteem</p>
-</dd>
+</dd> 
 </dl>
- 
+
 
 
 <h3>Details</h3>
 
 <p>This dataset was shamelessly borrowed from the <code>FRB</code> package.
 </p>
-<p>The relationships among these variables are unusual, a fact only revealed by plotting.
+<p>The relationships among these variables are unusual, a fact only revealed by
+plotting.
 </p>
 
 
 <h3>Source</h3>
 
-<p>A. Charnes, W.W. Cooper and E. Rhodes (1981). Evaluating Program and Managerial Efficiency: An Application of Data
-Envelopment Analysis to Program Follow Through. <em>Management Science</em>, <b>27</b>, 668-697.
+<p>A. Charnes, W.W. Cooper and E. Rhodes (1981). Evaluating Program and
+Managerial Efficiency: An Application of Data Envelopment Analysis to
+Program Follow Through. <em>Management Science</em>, <b>27</b>, 668-697.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(schooldata)
+<pre><code class='language-R'>
+data(schooldata)
 # initial screening
 plot(schooldata)
 
@@ -116,19 +118,6 @@ text(notable, wts[notable],
      col = "red")
 
 
-# Index plot of the weights
-wts &lt;- school.rmod$weights
-notable &lt;- which(wts &lt; 0.8)
-plot(wts, type = "h", col="gray", ylab = "Observation weight")
-points(1:length(wts), wts, 
-       pch=16,
-       col = ifelse(wts &lt; 0.8, "red", "black"))
-
-text(notable, wts[notable],
-     labels = notable,
-     pos = 3,
-     col = "red")
-
 
 # compare classical HE plot with that based on the robust model
 heplot(school.mod, cex=1.4, lty=1, fill=TRUE, fill.alpha=0.1)
@@ -139,8 +128,10 @@ heplot(school.rmod,
 	     term.labels=FALSE, err.label="", 
 	     fill=TRUE)
 
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

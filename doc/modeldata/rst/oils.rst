@@ -1,40 +1,42 @@
 .. container::
 
-   ==== ===============
-   oils R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Fatty acid composition of commercial oils
-      :name: oils
+      ==== ===============
+      oils R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Fatty acid composition of commercial oils
+         :name: fatty-acid-composition-of-commercial-oils
 
-   Fatty acid concentrations of commercial oils were measured using gas
-   chromatography. The data is used to predict the type of oil. Note
-   that only the known oils are in the data set. Also, the authors state
-   that there are 95 samples of known oils. However, we count 96 in
-   Table 1 (pgs. 33-35).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Value
-      :name: value
+      Fatty acid concentrations of commercial oils were measured using
+      gas chromatography. The data is used to predict the type of oil.
+      Note that only the known oils are in the data set. Also, the
+      authors state that there are 95 samples of known oils. However, we
+      count 96 in Table 1 (pgs. 33-35).
 
-   ======== ========
-   ``oils`` a tibble
-   ======== ========
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      ======== ========
+      ``oils`` a tibble
+      ======== ========
 
-   Brodnjak-Voncina et al. (2005). Multivariate data analysis in
-   classification of vegetable oils characterized by the content of
-   fatty acids, *Chemometrics and Intelligent Laboratory Systems*, Vol.
-   75:31-45.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Brodnjak-Voncina et al. (2005). Multivariate data analysis in
+      classification of vegetable oils characterized by the content of
+      fatty acids, *Chemometrics and Intelligent Laboratory Systems*,
+      Vol. 75:31-45.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(oils)
-      str(oils)
+      ::
+
+         data(oils)
+         str(oils)

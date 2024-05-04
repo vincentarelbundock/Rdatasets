@@ -1,99 +1,102 @@
 .. container::
 
-   ==== ===============
-   Dyke R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Sources of Knowledge of Cancer
-      :name: Dyke
+      ==== ===============
+      Dyke R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sources of Knowledge of Cancer
+         :name: sources-of-knowledge-of-cancer
 
-   Observational data on a sample of 1729 individuals, cross-classified
-   in a 2^5 table according to their sources of information (read
-   newspapers, listen to the radio, do 'solid' reading, attend lectures)
-   and whether they have good or poor knowledge regarding cancer.
-   Knowledge of cancer is often treated as the response.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Observational data on a sample of 1729 individuals,
+      cross-classified in a 2^5 table according to their sources of
+      information (read newspapers, listen to the radio, do 'solid'
+      reading, attend lectures) and whether they have good or poor
+      knowledge regarding cancer. Knowledge of cancer is often treated
+      as the response.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Dyke)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Dyke)
 
-   A 5-dimensional array resulting from cross-tabulating 5 variables for
-   1729 observations. The variable names and their levels are:
+      .. rubric:: Format
+         :name: format
 
-   == ============= ==================
-   No Name          Levels
-   1  ``Knowledge`` ``"Good", "Poor"``
-   2  ``Reading``   ``"No", "Yes"``
-   3  ``Radio``     ``"No", "Yes"``
-   4  ``Lectures``  ``"No", "Yes"``
-   5  ``Newspaper`` ``"No", "Yes"``
-   \                
-   == ============= ==================
+      A 5-dimensional array resulting from cross-tabulating 5 variables
+      for 1729 observations. The variable names and their levels are:
 
-   .. rubric:: Source
-      :name: source
+      == ============= ==================
+      No Name          Levels
+      1  ``Knowledge`` ``"Good", "Poor"``
+      2  ``Reading``   ``"No", "Yes"``
+      3  ``Radio``     ``"No", "Yes"``
+      4  ``Lectures``  ``"No", "Yes"``
+      5  ``Newspaper`` ``"No", "Yes"``
+      \                
+      == ============= ==================
 
-   Fienberg, S. E. (1980). *The Analysis of Cross-Classified Categorical
-   Data* Cambridge, MA: MIT Press, p. 85, Table 5-6.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Fienberg, S. E. (1980). *The Analysis of Cross-Classified
+      Categorical Data* Cambridge, MA: MIT Press, p. 85, Table 5-6.
 
-   Dyke, G. V. and Patterson, H. D. (1952). Analysis of factorial
-   arrangements when the data are proportions. *Biometrics*, 8, 1-12.
+      .. rubric:: References
+         :name: references
 
-   Lindsey, J. K. (1993). *Models for Repeated Measurements* Oxford, UK:
-   Oxford University Press, p. 57.
+      Dyke, G. V. and Patterson, H. D. (1952). Analysis of factorial
+      arrangements when the data are proportions. *Biometrics*, 8, 1-12.
 
-   .. rubric:: Examples
-      :name: examples
+      Lindsey, J. K. (1993). *Models for Repeated Measurements* Oxford,
+      UK: Oxford University Press, p. 57.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Dyke)
+      ::
 
-      # independence model
-      mosaic(Dyke, shade=TRUE)
+         data(Dyke)
 
-      # null model, Knowledge as response, independent of others
-      require(MASS)
-      dyke.mod0 <- loglm(~ Knowledge + (Reading * Radio * Lectures * Newspaper), data=Dyke)
-      dyke.mod0
-      mosaic(dyke.mod0)
+         # independence model
+         mosaic(Dyke, shade=TRUE)
 
-      # view as doubledecker plot
-      Dyke <- Dyke[2:1,,,,]    # make Good the highlighted value of Knowledge
-      doubledecker(Knowledge ~ ., data=Dyke)
+         # null model, Knowledge as response, independent of others
+         require(MASS)
+         dyke.mod0 <- loglm(~ Knowledge + (Reading * Radio * Lectures * Newspaper), data=Dyke)
+         dyke.mod0
+         mosaic(dyke.mod0)
 
-      # better version, with some options
-      doubledecker(Knowledge ~ Lectures + Reading + Newspaper + Radio, 
-        data=Dyke,
-          margins = c(1,6, length(dim(Dyke)) + 1, 1), 
-          fill_boxes=list(rep(c("white", gray(.90)),4))
-          )
+         # view as doubledecker plot
+         Dyke <- Dyke[2:1,,,,]    # make Good the highlighted value of Knowledge
+         doubledecker(Knowledge ~ ., data=Dyke)
 
-      # separate (conditional) plots for those who attend lectures and those who do not
-      doubledecker(Knowledge ~ Reading + Newspaper + Radio, 
-        data=Dyke[,,,1,],
-          main="Do not attend lectures",
-          margins = c(1,6, length(dim(Dyke)) + 1, 1), 
-          fill_boxes=list(rep(c("white", gray(.90)),3))
-          )
-      doubledecker(Knowledge ~ Reading + Newspaper + Radio, 
-        data=Dyke[,,,2,],
-          main="Attend lectures",
-          margins = c(1,6, length(dim(Dyke)) + 1, 1), 
-          fill_boxes=list(rep(c("white", gray(.90)),3))
-          )
+         # better version, with some options
+         doubledecker(Knowledge ~ Lectures + Reading + Newspaper + Radio, 
+           data=Dyke,
+             margins = c(1,6, length(dim(Dyke)) + 1, 1), 
+             fill_boxes=list(rep(c("white", gray(.90)),4))
+             )
+
+         # separate (conditional) plots for those who attend lectures and those who do not
+         doubledecker(Knowledge ~ Reading + Newspaper + Radio, 
+           data=Dyke[,,,1,],
+             main="Do not attend lectures",
+             margins = c(1,6, length(dim(Dyke)) + 1, 1), 
+             fill_boxes=list(rep(c("white", gray(.90)),3))
+             )
+         doubledecker(Knowledge ~ Reading + Newspaper + Radio, 
+           data=Dyke[,,,2,],
+             main="Attend lectures",
+             margins = c(1,6, length(dim(Dyke)) + 1, 1), 
+             fill_boxes=list(rep(c("white", gray(.90)),3))
+             )
 
 
-      drop1(dyke.mod0, test="Chisq")
+         drop1(dyke.mod0, test="Chisq")

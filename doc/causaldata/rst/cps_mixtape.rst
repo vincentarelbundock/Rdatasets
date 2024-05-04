@@ -1,81 +1,84 @@
 .. container::
 
-   =========== ===============
-   cps_mixtape R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Observational counterpart to nsw_mixtape data
-      :name: cps_mixtape
+      =========== ===============
+      cps_mixtape R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Observational counterpart to nsw_mixtape data
+         :name: observational-counterpart-to-nsw_mixtape-data
 
-   Data from the Current Population Survey on participation in the
-   National Supported Work Demonstration (NSW) job-training program
-   experiment. This is used as an observational comparison to the NSW
-   experimental data from the nsw_mixtape data.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from the Current Population Survey on participation in the
+      National Supported Work Demonstration (NSW) job-training program
+      experiment. This is used as an observational comparison to the NSW
+      experimental data from the nsw_mixtape data.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      cps_mixtape
+      ::
 
-   .. rubric:: Format
-      :name: format
+         cps_mixtape
 
-   A data frame with 15992 rows and 11 variables
+      .. rubric:: Format
+         :name: format
 
-   data_id
-      Individual ID
+      A data frame with 15992 rows and 11 variables
 
-   treat
-      In the National Supported Work Demonstration Job Training Program
+      data_id
+         Individual ID
 
-   age
-      Age in years
+      treat
+         In the National Supported Work Demonstration Job Training
+         Program
 
-   educ
-      Years of education
+      age
+         Age in years
 
-   black
-      Race: Black
+      educ
+         Years of education
 
-   hisp
-      Ethnicity: Hispanic
+      black
+         Race: Black
 
-   marr
-      Married
+      hisp
+         Ethnicity: Hispanic
 
-   nodegree
-      Has no degree
+      marr
+         Married
 
-   re74
-      Real earnings 1974
+      nodegree
+         Has no degree
 
-   re75
-      Real earnings 1975
+      re74
+         Real earnings 1974
 
-   re78
-      Real earnings 1978
+      re75
+         Real earnings 1975
 
-   .. rubric:: Details
-      :name: details
+      re78
+         Real earnings 1978
 
-   This data is used in the *Matching and Subclassification* chapter of
-   *Causal Inference: The Mixtape* by Cunningham.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This data is used in the *Matching and Subclassification* chapter
+      of *Causal Inference: The Mixtape* by Cunningham.
 
-   Dehejia, Rajeev H., and Sadek Wahba. 1999. “Causal Effects in
-   Nonexperimental Studies: Reevaluating the Evaluation of Training
-   Programs.” Journal of the American Statistical Association 94 (448):
-   1053–62.".
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Dehejia, Rajeev H., and Sadek Wahba. 1999. “Causal Effects in
+      Nonexperimental Studies: Reevaluating the Evaluation of Training
+      Programs.” Journal of the American Statistical Association 94
+      (448): 1053–62.".
 
-   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-   https://mixtape.scunning.com/index.html.
+      .. rubric:: References
+         :name: references
+
+      Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+      https://mixtape.scunning.com/index.html.

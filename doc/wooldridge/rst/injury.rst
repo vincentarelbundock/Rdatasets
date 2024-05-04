@@ -1,114 +1,117 @@
 .. container::
 
-   ====== ===============
-   injury R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: injury
-      :name: injury
+      ====== ===============
+      injury R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: injury
+         :name: injury
 
-   Wooldridge Source: B.D. Meyer, W.K. Viscusi, and D.L. Durbin (1995),
-   “Workers’ Compensation and Injury Duration: Evidence from a Natural
-   Experiment,” American Economic Review 85, 322-340. Professor Meyer
-   kindly provided the data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: B.D. Meyer, W.K. Viscusi, and D.L. Durbin
+      (1995), “Workers’ Compensation and Injury Duration: Evidence from
+      a Natural Experiment,” American Economic Review 85, 322-340.
+      Professor Meyer kindly provided the data. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('injury')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('injury')
 
-   A data.frame with 7150 observations on 30 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **durat:** duration of benefits
+      A data.frame with 7150 observations on 30 variables:
 
-   -  **afchnge:** =1 if after change in benefits
+      -  **durat:** duration of benefits
 
-   -  **highearn:** =1 if high earner
+      -  **afchnge:** =1 if after change in benefits
 
-   -  **male:** =1 if male
+      -  **highearn:** =1 if high earner
 
-   -  **married:** =1 if married
+      -  **male:** =1 if male
 
-   -  **hosp:** =1 if inj. required hosp. stay
+      -  **married:** =1 if married
 
-   -  **indust:** industry
+      -  **hosp:** =1 if inj. required hosp. stay
 
-   -  **injtype:** type of injury
+      -  **indust:** industry
 
-   -  **age:** age at time of injury
+      -  **injtype:** type of injury
 
-   -  **prewage:** previous weekly wage, 1982 $
+      -  **age:** age at time of injury
 
-   -  **totmed:** total med. costs, 1982 $
+      -  **prewage:** previous weekly wage, 1982 $
 
-   -  **injdes:** 4 digit injury description
+      -  **totmed:** total med. costs, 1982 $
 
-   -  **benefit:** real dollar value of benefit
+      -  **injdes:** 4 digit injury description
 
-   -  **ky:** =1 for kentucky
+      -  **benefit:** real dollar value of benefit
 
-   -  **mi:** =1 for michigan
+      -  **ky:** =1 for kentucky
 
-   -  **ldurat:** log(durat)
+      -  **mi:** =1 for michigan
 
-   -  **afhigh:** afchnge*highearn
+      -  **ldurat:** log(durat)
 
-   -  **lprewage:** log(wage)
+      -  **afhigh:** afchnge*highearn
 
-   -  **lage:** log(age)
+      -  **lprewage:** log(wage)
 
-   -  **ltotmed:** log(totmed); = 0 if totmed < 1
+      -  **lage:** log(age)
 
-   -  **head:** =1 if head injury
+      -  **ltotmed:** log(totmed); = 0 if totmed < 1
 
-   -  **neck:** =1 if neck injury
+      -  **head:** =1 if head injury
 
-   -  **upextr:** =1 if upper extremities injury
+      -  **neck:** =1 if neck injury
 
-   -  **trunk:** =1 if trunk injury
+      -  **upextr:** =1 if upper extremities injury
 
-   -  **lowback:** =1 if lower back injury
+      -  **trunk:** =1 if trunk injury
 
-   -  **lowextr:** =1 if lower extremities injury
+      -  **lowback:** =1 if lower back injury
 
-   -  **occdis:** =1 if occupational disease
+      -  **lowextr:** =1 if lower extremities injury
 
-   -  **manuf:** =1 if manufacturing industry
+      -  **occdis:** =1 if occupational disease
 
-   -  **construc:** =1 if construction industry
+      -  **manuf:** =1 if manufacturing industry
 
-   -  **highlpre:** highearn*lprewage
+      -  **construc:** =1 if construction industry
 
-   .. rubric:: Notes
-      :name: notes
+      -  **highlpre:** highearn*lprewage
 
-   This data set also can be used to illustrate the Chow test in Chapter
-   7. In particular, students can test whether the regression functions
-   differ between Kentucky and Michigan. Or, allowing for different
-   intercepts for the two states, do the slopes differ? A good lesson
-   from this example is that a small R-squared is compatible with the
-   ability to estimate the effects of a policy. Of course, for the
-   Michigan data, which has a smaller sample size, the estimated effect
-   is much less precise (but of virtually identical magnitude).
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 458-459, 475-476
+      This data set also can be used to illustrate the Chow test in
+      Chapter 7. In particular, students can test whether the regression
+      functions differ between Kentucky and Michigan. Or, allowing for
+      different intercepts for the two states, do the slopes differ? A
+      good lesson from this example is that a small R-squared is
+      compatible with the ability to estimate the effects of a policy.
+      Of course, for the Michigan data, which has a smaller sample size,
+      the estimated effect is much less precise (but of virtually
+      identical magnitude).
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 458-459, 475-476
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(injury)
+      ::
+
+          str(injury)

@@ -1,94 +1,98 @@
 .. container::
 
-   =========== ===============
-   WeatherTask R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Weather Task With Priming and Precise and Imprecise
-      Probabilities
-      :name: WeatherTask
+      =========== ===============
+      WeatherTask R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Weather Task With Priming and Precise and Imprecise
+         Probabilities
+         :name: weather-task-with-priming-and-precise-and-imprecise-probabilities
 
-   In this study participants were asked to judge how likely Sunday is
-   to be the hottest day of the week.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      In this study participants were asked to judge how likely Sunday
+      is to be the hottest day of the week.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(WeatherTask)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(WeatherTask)
 
-   A data frame with 345 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``priming``
-      a factor with levels ``two-fold`` (case prime) and ``seven-fold``
-      (class prime).
+      A data frame with 345 observations on the following 3 variables.
 
-   ``eliciting``
-      a factor with levels ``precise`` and ``imprecise`` (lower and
-      upper limit).
+      ``priming``
+         a factor with levels ``two-fold`` (case prime) and
+         ``seven-fold`` (class prime).
 
-   ``agreement``
-      a numeric vector, probability indicated by participants or the
-      average between minimum and maximum probability indicated.
+      ``eliciting``
+         a factor with levels ``precise`` and ``imprecise`` (lower and
+         upper limit).
 
-   .. rubric:: Details
-      :name: details
+      ``agreement``
+         a numeric vector, probability indicated by participants or the
+         average between minimum and maximum probability indicated.
 
-   All participants in the study were either first- or second-year
-   undergraduate students in psychology, none of whom had a strong
-   background in probability or were familiar with imprecise probability
-   theories.
+      .. rubric:: Details
+         :name: details
 
-   For ``priming`` the questions were:
+      All participants in the study were either first- or second-year
+      undergraduate students in psychology, none of whom had a strong
+      background in probability or were familiar with imprecise
+      probability theories.
 
-   two-fold
-      [What is the probability that] the temperature at Canberra airport
-      on Sunday will be higher than every other day next week?
+      For ``priming`` the questions were:
 
-   seven-fold
-      [What is the probability that] the highest temperature of the week
-      at Canberra airport will occur on Sunday?
+      two-fold
+         [What is the probability that] the temperature at Canberra
+         airport on Sunday will be higher than every other day next
+         week?
 
-   For ``eliciting`` the instructions were if
+      seven-fold
+         [What is the probability that] the highest temperature of the
+         week at Canberra airport will occur on Sunday?
 
-   precise
-      to assign a probability estimate,
+      For ``eliciting`` the instructions were if
 
-   imprecise
-      to assign a lower and upper probability estimate.
+      precise
+         to assign a probability estimate,
 
-   .. rubric:: Source
-      :name: source
+      imprecise
+         to assign a lower and upper probability estimate.
 
-   Taken from Smithson et al. (2011) supplements.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Taken from Smithson et al. (2011) supplements.
 
-   Smithson, M., Merkle, E.C., and Verkuilen, J. (2011). Beta Regression
-   Finite Mixture Models of Polarization and Priming. *Journal of
-   Educational and Behavioral Statistics*, **36**\ (6), 804–831. doi:
-   `10.3102/1076998610396893 <https://doi.org/10.3102/1076998610396893>`__
+      .. rubric:: References
+         :name: references
 
-   Smithson, M., and Segale, C. (2009). Partition Priming in Judgments
-   of Imprecise Probabilities. *Journal of Statistical Theory and
-   Practice*, **3**\ (1), 169–181.
+      Smithson, M., Merkle, E.C., and Verkuilen, J. (2011). Beta
+      Regression Finite Mixture Models of Polarization and Priming.
+      *Journal of Educational and Behavioral Statistics*, **36**\ (6),
+      804–831. doi:
+      `10.3102/1076998610396893 <https://doi.org/10.3102/1076998610396893>`__
 
-   .. rubric:: Examples
-      :name: examples
+      Smithson, M., and Segale, C. (2009). Partition Priming in
+      Judgments of Imprecise Probabilities. *Journal of Statistical
+      Theory and Practice*, **3**\ (1), 169–181.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("WeatherTask", package = "betareg")
-      library("flexmix")
-      wt_betamix <- betamix(agreement ~ 1, data = WeatherTask, k = 2,
-        extra_components = extraComponent(type = "betareg", coef =
-          list(mean = 0, precision = 2)),
-        FLXconcomitant = FLXPmultinom(~ priming + eliciting))
+      ::
+
+         data("WeatherTask", package = "betareg")
+         library("flexmix")
+         wt_betamix <- betamix(agreement ~ 1, data = WeatherTask, k = 2,
+           extra_components = extraComponent(type = "betareg", coef =
+             list(mean = 0, precision = 2)),
+           FLXconcomitant = FLXPmultinom(~ priming + eliciting))

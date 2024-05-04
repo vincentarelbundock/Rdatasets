@@ -1,68 +1,70 @@
 .. container::
 
-   ======= ===============
-   Suicide R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Suicide Rates in Germany
-      :name: Suicide
+      ======= ===============
+      Suicide R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Suicide Rates in Germany
+         :name: suicide-rates-in-germany
 
-   Data from Heuer (1979) on suicide rates in West Germany classified by
-   age, sex, and method of suicide.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from Heuer (1979) on suicide rates in West Germany classified
+      by age, sex, and method of suicide.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Suicide")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Suicide")
 
-   A data frame with 306 observations and 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   Freq
-      frequency of suicides.
+      A data frame with 306 observations and 6 variables.
 
-   sex
-      factor indicating sex (male, female).
+      Freq
+         frequency of suicides.
 
-   method
-      factor indicating method used.
+      sex
+         factor indicating sex (male, female).
 
-   age
-      age (rounded).
+      method
+         factor indicating method used.
 
-   age.group
-      factor. Age classified into 5 groups.
+      age
+         age (rounded).
 
-   method2
-      factor indicating method used (same as ``method`` but some levels
-      are merged).
+      age.group
+         factor. Age classified into 5 groups.
 
-   .. rubric:: Source
-      :name: source
+      method2
+         factor indicating method used (same as ``method`` but some
+         levels are merged).
 
-   Michael Friendly (2000), Visualizing Categorical Data:
-   http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/suicide.sas
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Michael Friendly (2000), Visualizing Categorical Data:
+      http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/suicide.sas
 
-   J. Heuer (1979), *Selbstmord bei Kindern und Jugendlichen*. Ernst
-   Klett Verlag, Stuttgart.
+      .. rubric:: References
+         :name: references
 
-   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
-   Cary, NC.
+      J. Heuer (1979), *Selbstmord bei Kindern und Jugendlichen*. Ernst
+      Klett Verlag, Stuttgart.
 
-   .. rubric:: Examples
-      :name: examples
+      M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+      Cary, NC.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("Suicide")
-      structable(~ sex + method2 + age.group, data = Suicide)
+      ::
+
+         data("Suicide")
+         structable(~ sex + method2 + age.group, data = Suicide)

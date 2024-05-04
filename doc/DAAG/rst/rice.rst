@@ -1,89 +1,91 @@
 .. container::
 
-   ==== ===============
-   rice R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Genetically Modified and Wild Type Rice Data
-      :name: rice
+      ==== ===============
+      rice R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Genetically Modified and Wild Type Rice Data
+         :name: genetically-modified-and-wild-type-rice-data
 
-   The ``rice`` data frame has 72 rows and 7 columns. The data are from
-   an experiment that compared wild type (wt) and genetically modified
-   rice plants (ANU843), each with three different chemical treatments
-   (F10, NH4Cl, and NH4NO3).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``rice`` data frame has 72 rows and 7 columns. The data are
+      from an experiment that compared wild type (wt) and genetically
+      modified rice plants (ANU843), each with three different chemical
+      treatments (F10, NH4Cl, and NH4NO3).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      rice
+      ::
 
-   .. rubric:: Format
-      :name: format
+         rice
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   PlantNo
-      a numeric vector
+      This data frame contains the following columns:
 
-   Block
-      a numeric vector
+      PlantNo
+         a numeric vector
 
-   RootDryMass
-      a numeric vector
+      Block
+         a numeric vector
 
-   ShootDryMass
-      a numeric vector
+      RootDryMass
+         a numeric vector
 
-   trt
-      a factor with levels ``F10``, ``NH4Cl``, ``NH4NO3``,
-      ``F10 +ANU843``, ``NH4Cl +ANU843``, ``NH4NO3 +ANU843``
+      ShootDryMass
+         a numeric vector
 
-   fert
-      a factor with levels ``F10`` ``NH4Cl`` ``NH4NO3``
+      trt
+         a factor with levels ``F10``, ``NH4Cl``, ``NH4NO3``,
+         ``F10 +ANU843``, ``NH4Cl +ANU843``, ``NH4NO3 +ANU843``
 
-   variety
-      a factor with levels ``wt`` ``ANU843``
+      fert
+         a factor with levels ``F10`` ``NH4Cl`` ``NH4NO3``
 
-   .. rubric:: Source
-      :name: source
+      variety
+         a factor with levels ``wt`` ``ANU843``
 
-   Perrine, F.M., Prayitno, J., Weinman, J.J., Dazzo, F.B. and Rolfe, B.
-   2001. Rhizobium plasmids are involved in the inhibition or
-   stimulation of rice growth and development. Australian Journal of
-   Plant Physiology 28: 923-927.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Perrine, F.M., Prayitno, J., Weinman, J.J., Dazzo, F.B. and Rolfe,
+      B. 2001. Rhizobium plasmids are involved in the inhibition or
+      stimulation of rice growth and development. Australian Journal of
+      Plant Physiology 28: 923-927.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      print("One and Two-Way Comparisons - Example 4.5")
-      attach(rice)
-      oldpar <- par(las = 2)
-      stripchart(ShootDryMass ~ trt, pch=1, cex=1, xlab="Level of factor 1")
-      detach(rice)
-      pause()
+      ::
 
-      rice.aov <- aov(ShootDryMass ~ trt, data=rice); anova(rice.aov)
-      anova(rice.aov)
-      pause()
+         print("One and Two-Way Comparisons - Example 4.5")
+         attach(rice)
+         oldpar <- par(las = 2)
+         stripchart(ShootDryMass ~ trt, pch=1, cex=1, xlab="Level of factor 1")
+         detach(rice)
+         pause()
 
-      summary.lm(rice.aov)$coef
-      pause()
+         rice.aov <- aov(ShootDryMass ~ trt, data=rice); anova(rice.aov)
+         anova(rice.aov)
+         pause()
 
-      rice$trt <- relevel(rice$trt, ref="NH4Cl")
-        # Set NH4Cl as the baseline
+         summary.lm(rice.aov)$coef
+         pause()
 
-      fac1 <- factor(sapply(strsplit(as.character(rice$trt)," \\+"), function(x)x[1]))
-      anu843 <- sapply(strsplit(as.character(rice$trt), "\\+"), 
-      function(x)c("wt","ANU843")[length(x)])
-      anu843 <- factor(anu843, levels=c("wt", "ANU843"))
-      attach(rice)
-      interaction.plot(fac1, anu843, ShootDryMass)
-      detach(rice)
-      par(oldpar)
+         rice$trt <- relevel(rice$trt, ref="NH4Cl")
+           # Set NH4Cl as the baseline
+
+         fac1 <- factor(sapply(strsplit(as.character(rice$trt)," \\+"), function(x)x[1]))
+         anu843 <- sapply(strsplit(as.character(rice$trt), "\\+"), 
+         function(x)c("wt","ANU843")[length(x)])
+         anu843 <- factor(anu843, levels=c("wt", "ANU843"))
+         attach(rice)
+         interaction.plot(fac1, anu843, ShootDryMass)
+         detach(rice)
+         par(oldpar)

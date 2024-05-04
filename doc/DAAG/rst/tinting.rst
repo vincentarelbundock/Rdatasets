@@ -1,99 +1,101 @@
 .. container::
 
-   ======= ===============
-   tinting R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Car Window Tinting Experiment Data
-      :name: tinting
+      ======= ===============
+      tinting R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Car Window Tinting Experiment Data
+         :name: car-window-tinting-experiment-data
 
-   These data are from an experiment that aimed to model the effects of
-   the tinting of car windows on visual performance. The authors were
-   mainly interested in effects on side window vision, and hence in
-   visual recognition tasks that would be performed when looking through
-   side windows.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These data are from an experiment that aimed to model the effects
+      of the tinting of car windows on visual performance. The authors
+      were mainly interested in effects on side window vision, and hence
+      in visual recognition tasks that would be performed when looking
+      through side windows.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      tinting
+      ::
 
-   .. rubric:: Format
-      :name: format
+         tinting
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   case
-      observation number
+      This data frame contains the following columns:
 
-   id
-      subject identifier code (1-26)
+      case
+         observation number
 
-   age
-      age (in years)
+      id
+         subject identifier code (1-26)
 
-   sex
-      a factor with levels ``f`` female, ``m`` male
+      age
+         age (in years)
 
-   tint
-      an ordered factor with levels representing degree of tinting:
-      ``no`` < ``lo`` < ``hi``
+      sex
+         a factor with levels ``f`` female, ``m`` male
 
-   target
-      a factor with levels ``locon``: low contrast, ``hicon``: high
-      contrast
+      tint
+         an ordered factor with levels representing degree of tinting:
+         ``no`` < ``lo`` < ``hi``
 
-   it
-      the inspection time, the time required to perform a simple
-      discrimination task (in milliseconds)
+      target
+         a factor with levels ``locon``: low contrast, ``hicon``: high
+         contrast
 
-   csoa
-      critical stimulus onset asynchrony, the time to recognize an
-      alphanumeric target (in milliseconds)
+      it
+         the inspection time, the time required to perform a simple
+         discrimination task (in milliseconds)
 
-   agegp
-      a factor with levels ``younger``, 21-27, ``older``, 70-78
+      csoa
+         critical stimulus onset asynchrony, the time to recognize an
+         alphanumeric target (in milliseconds)
 
-   .. rubric:: Details
-      :name: details
+      agegp
+         a factor with levels ``younger``, 21-27, ``older``, 70-78
 
-   Visual light transmittance (VLT) levels were 100% (tint=none), 81.3%
-   (tint=lo), and 35.1% (tint=hi). Based on these and other data, Burns
-   et al. argue that road safety may be compromised if the front side
-   windows of cars are tinted to 35
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Visual light transmittance (VLT) levels were 100% (tint=none),
+      81.3% (tint=lo), and 35.1% (tint=hi). Based on these and other
+      data, Burns et al. argue that road safety may be compromised if
+      the front side windows of cars are tinted to 35
 
-   Burns, N.R., Nettlebeck, T., White, M. and Willson, J., 1999. Effects
-   of car window tinting on visual performance: a comparison of younger
-   and older drivers. Ergonomics 42: 428-443.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Burns, N.R., Nettlebeck, T., White, M. and Willson, J., 1999.
+      Effects of car window tinting on visual performance: a comparison
+      of younger and older drivers. Ergonomics 42: 428-443.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(lattice)
-      levels(tinting$agegp) <- capstring(levels(tinting$agegp))
-      xyplot(csoa ~ it | sex * agegp, data=tinting) # Simple use of xyplot()
-      pause()
+      ::
 
-      xyplot(csoa ~ it|sex*agegp, data=tinting, panel=panel.superpose, groups=target)
-      pause()
+         library(lattice)
+         levels(tinting$agegp) <- capstring(levels(tinting$agegp))
+         xyplot(csoa ~ it | sex * agegp, data=tinting) # Simple use of xyplot()
+         pause()
 
-      xyplot(csoa ~ it|sex*agegp, data=tinting, panel=panel.superpose, col=1:2,
-        groups=target, key=list(x=0.14, y=0.84, points=list(pch=rep(1,2),
-        col=1:2), text=list(levels(tinting$target), col=1:2), border=TRUE))
-      ## Not run: 
-      xyplot(csoa ~ it|sex*agegp, data=tinting, panel=panel.superpose,
-        groups=tint, type=c("p","smooth"), span=0.8, col=1:3,
-        key=list(x=0.14, y=0.84, points=list(pch=rep(1,2), col=1:3),
-        text=list(levels(tinting$tint), col=1:3), border=TRUE))
-        
-      ## End(Not run)
+         xyplot(csoa ~ it|sex*agegp, data=tinting, panel=panel.superpose, groups=target)
+         pause()
+
+         xyplot(csoa ~ it|sex*agegp, data=tinting, panel=panel.superpose, col=1:2,
+           groups=target, key=list(x=0.14, y=0.84, points=list(pch=rep(1,2),
+           col=1:2), text=list(levels(tinting$target), col=1:2), border=TRUE))
+         ## Not run: 
+         xyplot(csoa ~ it|sex*agegp, data=tinting, panel=panel.superpose,
+           groups=tint, type=c("p","smooth"), span=0.8, col=1:3,
+           key=list(x=0.14, y=0.84, points=list(pch=rep(1,2), col=1:3),
+           text=list(levels(tinting$tint), col=1:3), border=TRUE))
+           
+         ## End(Not run)

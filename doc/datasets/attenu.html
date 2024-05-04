@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>attenu</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='attenu'>The Joyner&ndash;Boore Attenuation Data</h2>
+<h2>The Joyner&ndash;Boore Attenuation Data</h2>
 
 <h3>Description</h3>
 
@@ -40,23 +40,23 @@ on ground acceleration.
 <table>
 <tr>
  <td style="text-align: right;">
-    [,1] </td><td style="text-align: left;"> event   </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Event Number</td>
+    [,1] </td><td style="text-align: left;"> <code>event</code>   </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Event Number</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,2] </td><td style="text-align: left;"> mag     </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Moment Magnitude</td>
+    [,2] </td><td style="text-align: left;"> <code>mag</code>     </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Moment Magnitude</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,3] </td><td style="text-align: left;"> station </td><td style="text-align: left;"> factor  </td><td style="text-align: left;"> Station Number</td>
+    [,3] </td><td style="text-align: left;"> <code>station</code> </td><td style="text-align: left;"> factor  </td><td style="text-align: left;"> Station Number</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,4] </td><td style="text-align: left;"> dist    </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Station-hypocenter distance (km)</td>
+    [,4] </td><td style="text-align: left;"> <code>dist</code>    </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Station-hypocenter distance (km)</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,5] </td><td style="text-align: left;"> accel   </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Peak acceleration (g)</td>
+    [,5] </td><td style="text-align: left;"> <code>accel</code>   </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Peak acceleration (g)</td>
 </tr>
 
 </table>
@@ -67,7 +67,7 @@ on ground acceleration.
 
 <p>Joyner, W.B., D.M. Boore and R.D. Porcella (1981).  Peak horizontal
 acceleration and velocity from strong-motion records including
-records from the 1979 Imperial Valley, California earthquake.  USGS
+records from the 1979 Imperial Valley, California earthquake.  <abbr>USGS</abbr>
 Open File report 81-365. Menlo Park, Ca.
 </p>
 
@@ -115,6 +115,7 @@ coplot(log(accel) ~ log(dist) | as.factor(event),
        data = attenu, panel = panel.smooth, show.given = FALSE)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

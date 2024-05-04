@@ -1,74 +1,76 @@
 .. container::
 
-   ============= ===============
-   Participation R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Labor Force Participation
-      :name: Participation
+      ============= ===============
+      Participation R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Labor Force Participation
+         :name: labor-force-participation
 
-   a cross-section
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 872
+      a cross-section
 
-   *observation* : individuals
+      *number of observations* : 872
 
-   *country* : Switzerland
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Switzerland
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Participation)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Participation)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   lfp
-      labour force participation ?
+      A dataframe containing :
 
-   lnnlinc
-      the log of nonlabour income
+      lfp
+         labour force participation ?
 
-   age
-      age in years divided by 10
+      lnnlinc
+         the log of nonlabour income
 
-   educ
-      years of formal education
+      age
+         age in years divided by 10
 
-   nyc
-      the number of young children (younger than 7)
+      educ
+         years of formal education
 
-   noc
-      number of older children
+      nyc
+         the number of young children (younger than 7)
 
-   foreign
-      foreigner ?
+      noc
+         number of older children
 
-   .. rubric:: Source
-      :name: source
+      foreign
+         foreigner ?
 
-   Gerfin, Michael (1996) “Parametric and semiparametric estimation of
-   the binary response”, *Journal of Applied Econometrics*, **11(3)**,
-   321-340.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Gerfin, Michael (1996) “Parametric and semiparametric estimation
+      of the binary response”, *Journal of Applied Econometrics*,
+      **11(3)**, 321-340.
 
-   Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
-   Methods*, New York, Oxford University Press, chapter 11.
+      .. rubric:: References
+         :name: references
 
-   Journal of Applied Econometrics data archive :
-   http://qed.econ.queensu.ca/jae/.
+      Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
+      Methods*, New York, Oxford University Press, chapter 11.
 
-   .. rubric:: See Also
-      :name: see-also
+      Journal of Applied Econometrics data archive :
+      http://qed.econ.queensu.ca/jae/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

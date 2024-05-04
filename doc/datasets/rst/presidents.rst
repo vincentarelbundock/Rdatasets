@@ -1,52 +1,54 @@
 .. container::
 
-   ========== ===============
-   presidents R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Quarterly Approval Ratings of US Presidents
-      :name: presidents
+      ========== ===============
+      presidents R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Quarterly Approval Ratings of US Presidents
+         :name: quarterly-approval-ratings-of-us-presidents
 
-   The (approximately) quarterly approval rating for the President of
-   the United States from the first quarter of 1945 to the last quarter
-   of 1974.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The (approximately) quarterly approval rating for the President of
+      the United States from the first quarter of 1945 to the last
+      quarter of 1974.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      presidents
+      ::
 
-   .. rubric:: Format
-      :name: format
+         presidents
 
-   A time series of 120 values.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      A time series of 120 values.
 
-   The data are actually a fudged version of the approval ratings. See
-   McNeil's book for details.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The data are actually a fudged version of the approval ratings.
+      See McNeil's book for details.
 
-   The Gallup Organisation.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The Gallup Organisation.
 
-   McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(stats); require(graphics)
-      plot(presidents, las = 1, ylab = "Approval rating (%)",
-           main = "presidents data")
+      ::
+
+         require(stats); require(graphics)
+         plot(presidents, las = 1, ylab = "Approval rating (%)",
+              main = "presidents data")

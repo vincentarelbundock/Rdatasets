@@ -1,76 +1,78 @@
 .. container::
 
-   ========== ===============
-   H_melanoma R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Melanoma skin cancer incidence
-      :name: H_melanoma
+      ========== ===============
+      H_melanoma R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Melanoma skin cancer incidence
+         :name: melanoma-skin-cancer-incidence
 
-   These data from the Connecticut Tumor Registry present age-adjusted
-   numbers of melanoma skin-cancer incidences per 100,000 people in
-   Connectict for the years from 1936 to 1972.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These data from the Connecticut Tumor Registry present
+      age-adjusted numbers of melanoma skin-cancer incidences per
+      100,000 people in Connectict for the years from 1936 to 1972.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      melanoma
+      ::
 
-   .. rubric:: Format
-      :name: format
+         melanoma
 
-   A data frame with 37 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   year
-      Years 1936 to 1972.
+      A data frame with 37 observations on the following 2 variables.
 
-   incidence
-      Rate of melanoma cancer per 100,000 population.
+      year
+         Years 1936 to 1972.
 
-   .. rubric:: Note
-      :name: note
+      incidence
+         Rate of melanoma cancer per 100,000 population.
 
-   This dataset is not related to the ``melanoma`` dataset in the
-   **boot** package with the same name.
+      .. rubric:: Note
+         :name: note
 
-   The S-PLUS 6.2 help for the melanoma data says that the incidence
-   rate is per *million*, but this is not consistent with data found at
-   the National Cancer Institute (https://www.cancer.gov/).
+      This dataset is not related to the ``melanoma`` dataset in the
+      **boot** package with the same name.
 
-   .. rubric:: Author(s)
-      :name: authors
+      The S-PLUS 6.2 help for the melanoma data says that the incidence
+      rate is per *million*, but this is not consistent with data found
+      at the National Cancer Institute (https://www.cancer.gov/).
 
-   Documentation contributed by Kevin Wright.
+      .. rubric:: Author(s)
+         :name: authors
 
-   .. rubric:: Source
-      :name: source
+      Documentation contributed by Kevin Wright.
 
-   Houghton, A., E. W. Munster, and M. V. Viola. (1978). Increased
-   Incidence of Malignant Melanoma After Peaks of Sunspot Activity. *The
-   Lancet*, **8**, 759–760.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Houghton, A., E. W. Munster, and M. V. Viola. (1978). Increased
+      Incidence of Malignant Melanoma After Peaks of Sunspot Activity.
+      *The Lancet*, **8**, 759–760.
 
-   Cleveland, William S. (1993) *Visualizing Data*. Hobart Press,
-   Summit, New Jersey.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Cleveland, William S. (1993) *Visualizing Data*. Hobart Press,
+      Summit, New Jersey.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      # Time-series plot.  Figure 3.64 from Cleveland.
-      xyplot(incidence ~ year,
-        data = melanoma,
-          aspect = "xy",
-          panel = function(x, y)
-              panel.xyplot(x, y, type="o", pch = 16),
-          ylim = c(0, 6),
-          xlab = "Year",
-          ylab = "Incidence")
+      ::
+
+         # Time-series plot.  Figure 3.64 from Cleveland.
+         xyplot(incidence ~ year,
+           data = melanoma,
+             aspect = "xy",
+             panel = function(x, y)
+                 panel.xyplot(x, y, type="o", pch = 16),
+             ylim = c(0, 6),
+             xlab = "Year",
+             ylab = "Incidence")

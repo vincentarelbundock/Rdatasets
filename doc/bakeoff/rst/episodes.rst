@@ -1,80 +1,84 @@
 .. container::
 
-   ======== ===============
-   episodes R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Episodes
-      :name: episodes
+      ======== ===============
+      episodes R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Episodes
+         :name: episodes
 
-   Each episodes' statistics. This dataset is made by collapsing
-   ``challenges`` by ``series`` and ``episode``.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Each episodes' statistics. This dataset is made by collapsing
+      ``challenges`` by ``series`` and ``episode``.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      episodes
+      ::
 
-   .. rubric:: Format
-      :name: format
+         episodes
 
-   A data frame with 94 rows representing individual episodes per series
-   and 10 variables:
+      .. rubric:: Format
+         :name: format
 
-   series
-      An integer denoting UK series (``1``-``10``).
+      A data frame with 94 rows representing individual episodes per
+      series and 10 variables:
 
-   episode
-      An integer denoting episode number within a series.
+      series
+         An integer denoting UK series (``1``-``10``).
 
-   bakers_appeared
-      an integer denoting the number of bakers who appeared in a given
-      episode.
+      episode
+         An integer denoting episode number within a series.
 
-   bakers_out
-      An integer denoting the number of bakers were either eliminated,
-      left at will, or left due to illness in that episode.
+      bakers_appeared
+         an integer denoting the number of bakers who appeared in a
+         given episode.
 
-   bakers_remaining
-      An integer denoting the number of bakers who remained at the end
-      of a given episode.
+      bakers_out
+         An integer denoting the number of bakers were either
+         eliminated, left at will, or left due to illness in that
+         episode.
 
-   star_bakers
-      An integer denoting the number of bakers crowned Star Baker in a
-      given episode.
+      bakers_remaining
+         An integer denoting the number of bakers who remained at the
+         end of a given episode.
 
-   technical_winners
-      An integer denoting the number of bakers who placed first in the
-      technical challenge.
+      star_bakers
+         An integer denoting the number of bakers crowned Star Baker in
+         a given episode.
 
-   sb_name
-      A character string with the names of the bakers who won Star Baker
-      in a given episode, separated by commas.
+      technical_winners
+         An integer denoting the number of bakers who placed first in
+         the technical challenge.
 
-   winner_name
-      A character string with the name of the series winner. Only
-      present for final episodes within each series.
+      sb_name
+         A character string with the names of the bakers who won Star
+         Baker in a given episode, separated by commas.
 
-   eliminated
-      A character string with the name of the bakers who left a given
-      episode, separated by commas.
+      winner_name
+         A character string with the name of the series winner. Only
+         present for final episodes within each series.
 
-   .. rubric:: Source
-      :name: source
+      eliminated
+         A character string with the name of the bakers who left a given
+         episode, separated by commas.
 
-   See https://en.wikipedia.org/wiki/The_Great_British_Bake_Off#Format
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      See
+      https://en.wikipedia.org/wiki/The_Great_British_Bake_Off#Format
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      if (require('tibble')) {
-        episodes
-       }
-      head(episodes)
+      ::
+
+         if (require('tibble')) {
+           episodes
+          }
+         head(episodes)

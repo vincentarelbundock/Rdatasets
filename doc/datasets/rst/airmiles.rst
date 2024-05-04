@@ -1,46 +1,48 @@
 .. container::
 
-   ======== ===============
-   airmiles R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Passenger Miles on Commercial US Airlines, 1937–1960
-      :name: airmiles
+      ======== ===============
+      airmiles R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Passenger Miles on Commercial US Airlines, 1937–1960
+         :name: passenger-miles-on-commercial-us-airlines-19371960
 
-   The revenue passenger miles flown by commercial airlines in the
-   United States for each year from 1937 to 1960.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The revenue passenger miles flown by commercial airlines in the
+      United States for each year from 1937 to 1960.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      airmiles
+      ::
 
-   .. rubric:: Format
-      :name: format
+         airmiles
 
-   A time series of 24 observations; yearly, 1937–1960.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A time series of 24 observations; yearly, 1937–1960.
 
-   F.A.A. Statistical Handbook of Aviation.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      F.A.A. Statistical Handbook of Aviation.
 
-   Brown, R. G. (1963) *Smoothing, Forecasting and Prediction of
-   Discrete Time Series*. Prentice-Hall.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Brown, R. G. (1963) *Smoothing, Forecasting and Prediction of
+      Discrete Time Series*. Prentice-Hall.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(graphics)
-      plot(airmiles, main = "airmiles data",
-           xlab = "Passenger-miles flown by U.S. commercial airlines", col = 4)
+      ::
+
+         require(graphics)
+         plot(airmiles, main = "airmiles data",
+              xlab = "Passenger-miles flown by U.S. commercial airlines", col = 4)

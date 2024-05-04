@@ -1,108 +1,111 @@
 .. container::
 
-   ======= ===============
-   rpdr_ep R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: RuPaul's Drag Race Episode Data
-      :name: rpdr_ep
+      ======= ===============
+      rpdr_ep R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: RuPaul's Drag Race Episode Data
+         :name: rupauls-drag-race-episode-data
 
-   These are episode-level data for RuPaul's Drag Race for all available
-   seasons (currently through Season 14). Data include all sorts of
-   information.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These are episode-level data for RuPaul's Drag Race for all
+      available seasons (currently through Season 14). Data include all
+      sorts of information.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      rpdr_ep
+      ::
 
-   .. rubric:: Format
-      :name: format
+         rpdr_ep
 
-   A data frame with the following 22 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``season``
-      a character vector for season
+      A data frame with the following 22 variables.
 
-   ``episode``
-      a numeric vector for the episode number
+      ``season``
+         a character vector for season
 
-   ``airdate``
-      a date for the episode air date
+      ``episode``
+         a numeric vector for the episode number
 
-   ``special``
-      Is the episode a special (e.g. a reunited or clip show)
+      ``airdate``
+         a date for the episode air date
 
-   ``finale``
-      Is the episode the finale
+      ``special``
+         Is the episode a special (e.g. a reunited or clip show)
 
-   ``nickname``
-      Name of the episode
+      ``finale``
+         Is the episode the finale
 
-   ``runwaytheme``
-      a character vector for runway theme, where applicable/available
+      ``nickname``
+         Name of the episode
 
-   ``numqueens``
-      a numeric vector for number of queens at the start of the episode
+      ``runwaytheme``
+         a character vector for runway theme, where applicable/available
 
-   ``minic``
-      a character vector describing the mini-challenge
+      ``numqueens``
+         a numeric vector for number of queens at the start of the
+         episode
 
-   ``minicw1``
-      a character vector for a mini-challenge winner
+      ``minic``
+         a character vector describing the mini-challenge
 
-   ``minicw2``
-      a character vector for a second mini-challenge winner, where
-      applicable
+      ``minicw1``
+         a character vector for a mini-challenge winner
 
-   ``minicw3``
-      a character vector for a third mini-challenge winner, where
-      applicable
+      ``minicw2``
+         a character vector for a second mini-challenge winner, where
+         applicable
 
-   ``minicw4``
-      a character vector for a fourth mini-challenge winner, where
-      applicable
+      ``minicw3``
+         a character vector for a third mini-challenge winner, where
+         applicable
 
-   ``bottom1``
-      a character vector for queen in the bottom 2 of that episode
+      ``minicw4``
+         a character vector for a fourth mini-challenge winner, where
+         applicable
 
-   ``bottom2``
-      a character vector for queen in the bottom 2 of that episode
+      ``bottom1``
+         a character vector for queen in the bottom 2 of that episode
 
-   ``bottom3``
-      a character vector for the third queen in the bottom of that
-      episode. Thanks, Season 11.
+      ``bottom2``
+         a character vector for queen in the bottom 2 of that episode
 
-   ``bottom4``
-      a character vector for the fourth queen in the bottom of that
-      episode. Thanks, Season 11.
+      ``bottom3``
+         a character vector for the third queen in the bottom of that
+         episode. Thanks, Season 11.
 
-   ``bottom5``
-      a character vector for the fifth queen in the bottom of that
-      episode. Thanks, Season 11.
+      ``bottom4``
+         a character vector for the fourth queen in the bottom of that
+         episode. Thanks, Season 11.
 
-   ``bottom6``
-      a character vector for the sixth queen in the bottom of that
-      episode. Thanks, Season 11.
+      ``bottom5``
+         a character vector for the fifth queen in the bottom of that
+         episode. Thanks, Season 11.
 
-   ``bottom7``
-      a character vector for the seventh queen in the bottom of that
-      episode. Thanks, Season 14.
+      ``bottom6``
+         a character vector for the sixth queen in the bottom of that
+         episode. Thanks, Season 11.
 
-   ``lipsyncartist``
-      a character vector for the lip-sync artist
+      ``bottom7``
+         a character vector for the seventh queen in the bottom of that
+         episode. Thanks, Season 14.
 
-   ``lipsyncsong``
-      a character vector for the lip-sync artist's song
+      ``lipsyncartist``
+         a character vector for the lip-sync artist
 
-   ``eliminated1``
-      a character vector for the queen eliminated after the lip-sync
+      ``lipsyncsong``
+         a character vector for the lip-sync artist's song
 
-   ``eliminated2``
-      a character vector for the queen eliminated after the lip-sync, if
-      there was a double-sashay that episode.
+      ``eliminated1``
+         a character vector for the queen eliminated after the lip-sync
+
+      ``eliminated2``
+         a character vector for the queen eliminated after the lip-sync,
+         if there was a double-sashay that episode.

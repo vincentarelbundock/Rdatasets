@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Alcohol</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Alcohol'>Alcohol Consumption per Capita</h2>
+<h2>Alcohol Consumption per Capita</h2>
 
 <h3>Description</h3>
 
@@ -37,17 +37,15 @@ countries for which there are data in other years.
 <p>A data frame with 411 observations on the following variables.
 </p>
 
-<ul>
-<li><p><code>country</code> country name
-</p>
-</li>
-<li><p><code>year</code> year
-</p>
-</li>
-<li><p><code>alcohol</code> estimated per capita alcohol consumption for adults (15+)
-in litres pure alcohol
-</p>
-</li></ul>
+<dl>
+<dt><code>country</code></dt><dd><p>country name</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year</p>
+</dd>
+<dt><code>alcohol</code></dt><dd><p>estimated per capita alcohol consumption for adults (15+)
+in litres pure alcohol</p>
+</dd>
+</dl>
 
 
 
@@ -64,6 +62,7 @@ in litres pure alcohol
 subset(Alcohol, ! year %in% c(2005,2008))
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

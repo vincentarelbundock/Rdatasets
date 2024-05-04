@@ -1,67 +1,69 @@
 .. container::
 
-   ======= ===============
-   animals R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Attributes of Animals
-      :name: animals
+      ======= ===============
+      animals R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Attributes of Animals
+         :name: attributes-of-animals
 
-   This data set considers 6 binary attributes for 20 animals.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set considers 6 binary attributes for 20 animals.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(animals)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(animals)
 
-   A data frame with 20 observations on 6 variables:
+      .. rubric:: Format
+         :name: format
 
-   ====== === ==============
-   [ , 1] war warm-blooded
-   [ , 2] fly can fly
-   [ , 3] ver vertebrate
-   [ , 4] end endangered
-   [ , 5] gro live in groups
-   [ , 6] hai have hair
-   \          
-   ====== === ==============
+      A data frame with 20 observations on 6 variables:
 
-   All variables are encoded as 1 = 'no', 2 = 'yes'.
+      ====== === ==============
+      [ , 1] war warm-blooded
+      [ , 2] fly can fly
+      [ , 3] ver vertebrate
+      [ , 4] end endangered
+      [ , 5] gro live in groups
+      [ , 6] hai have hair
+      \          
+      ====== === ==============
 
-   .. rubric:: Details
-      :name: details
+      All variables are encoded as 1 = 'no', 2 = 'yes'.
 
-   This dataset is useful for illustrating monothetic (only a single
-   variable is used for each split) hierarchical clustering.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This dataset is useful for illustrating monothetic (only a single
+      variable is used for each split) hierarchical clustering.
 
-   Leonard Kaufman and Peter J. Rousseeuw (1990): *Finding Groups in
-   Data* (pp 297ff). New York: Wiley.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Leonard Kaufman and Peter J. Rousseeuw (1990): *Finding Groups in
+      Data* (pp 297ff). New York: Wiley.
 
-   see Struyf, Hubert & Rousseeuw (1996), in ``agnes``.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      see Struyf, Hubert & Rousseeuw (1996), in ``agnes``.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(animals)
-      apply(animals,2, table) # simple overview
+      ::
 
-      ma <- mona(animals)
-      ma
-      ## Plot similar to Figure 10 in Struyf et al (1996)
-      plot(ma)
+         data(animals)
+         apply(animals,2, table) # simple overview
+
+         ma <- mona(animals)
+         ma
+         ## Plot similar to Figure 10 in Struyf et al (1996)
+         plot(ma)

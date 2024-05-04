@@ -1,55 +1,57 @@
 .. container::
 
-   ============== ===============
-   FranticFingers R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Finger Tap Rates
-      :name: FranticFingers
+      ============== ===============
+      FranticFingers R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Finger Tap Rates
+         :name: finger-tap-rates
 
-   Finger tap rates after drug administration
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Finger tap rates after drug administration
 
-   A data frame with 12 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``ID``
-      Case ID
+      A data frame with 12 observations on the following 4 variables.
 
-   ``Rate``
-      Finger taps in a fixed time interval
+      ``ID``
+         Case ID
 
-   ``Subj``
-      Subject code (``A``, ``B``, ``C``, or ``D``)
+      ``Rate``
+         Finger taps in a fixed time interval
 
-   ``Drug``
-      Drug administered (``Ca``\ =caffeine, ``Pl``\ =placebo, or
-      ``Th``\ =theobromine)
+      ``Subj``
+         Subject code (``A``, ``B``, ``C``, or ``D``)
 
-   .. rubric:: Details
-      :name: details
+      ``Drug``
+         Drug administered (``Ca``\ =caffeine, ``Pl``\ =placebo, or
+         ``Th``\ =theobromine)
 
-   Scientists Scott and Chen published research that compared the
-   effects of caffeine with those of theobromine (a similar chemical
-   found in chocolate) and with those of a placebo. Their experiment
-   used four human subjects and took place over several days. Each day
-   each subject swallowed a tablet containing one of caffeine,
-   theobromine, or the placebo. Two hours later they were timed while
-   tapping a finger in a specified manner (that they had practiced
-   earlier, to control for learning effects). The response is the number
-   of taps in a fixed time interval.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Scientists Scott and Chen published research that compared the
+      effects of caffeine with those of theobromine (a similar chemical
+      found in chocolate) and with those of a placebo. Their experiment
+      used four human subjects and took place over several days. Each
+      day each subject swallowed a tablet containing one of caffeine,
+      theobromine, or the placebo. Two hours later they were timed while
+      tapping a finger in a specified manner (that they had practiced
+      earlier, to control for learning effects). The response is the
+      number of taps in a fixed time interval.
 
-   The data was found in Statistics in Biology, Vol. 1, by C. I. Bliss
-   (1967), New York: McGraw Hill.
+      .. rubric:: Source
+         :name: source
 
-   The original article is Scott, C.C. and Chen, K. K. (1944),
-   "Comparison of the action of 1-ethyl theobromine and caffeine in
-   animals and man," Journal of Pharmacological Experimental Therapy, v.
-   82, pp 89-97.
+      The data was found in Statistics in Biology, Vol. 1, by C. I.
+      Bliss (1967), New York: McGraw Hill.
+
+      The original article is Scott, C.C. and Chen, K. K. (1944),
+      "Comparison of the action of 1-ethyl theobromine and caffeine in
+      animals and man," Journal of Pharmacological Experimental Therapy,
+      v. 82, pp 89-97.

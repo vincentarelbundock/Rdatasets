@@ -1,67 +1,69 @@
 .. container::
 
-   ===== ===============
-   urine R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Urine Analysis Data
-      :name: urine
+      ===== ===============
+      urine R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Urine Analysis Data
+         :name: urine-analysis-data
 
-   The ``urine`` data frame has 79 rows and 7 columns.
+      .. rubric:: Description
+         :name: description
 
-   79 urine specimens were analyzed in an effort to determine if certain
-   physical characteristics of the urine might be related to the
-   formation of calcium oxalate crystals.
+      The ``urine`` data frame has 79 rows and 7 columns.
 
-   .. rubric:: Usage
-      :name: usage
+      79 urine specimens were analyzed in an effort to determine if
+      certain physical characteristics of the urine might be related to
+      the formation of calcium oxalate crystals.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      urine
+      ::
 
-   .. rubric:: Format
-      :name: format
+         urine
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``r``
-      Indicator of the presence of calcium oxalate crystals.
+      This data frame contains the following columns:
 
-   ``gravity``
-      The specific gravity of the urine.
+      ``r``
+         Indicator of the presence of calcium oxalate crystals.
 
-   ``ph``
-      The pH reading of the urine.
+      ``gravity``
+         The specific gravity of the urine.
 
-   ``osmo``
-      The osmolarity of the urine. Osmolarity is proportional to the
-      concentration of molecules in solution.
+      ``ph``
+         The pH reading of the urine.
 
-   ``cond``
-      The conductivity of the urine. Conductivity is proportional to the
-      concentration of charged ions in solution.
+      ``osmo``
+         The osmolarity of the urine. Osmolarity is proportional to the
+         concentration of molecules in solution.
 
-   ``urea``
-      The urea concentration in millimoles per litre.
+      ``cond``
+         The conductivity of the urine. Conductivity is proportional to
+         the concentration of charged ions in solution.
 
-   ``calc``
-      The calcium concentration in millimoles per litre.
+      ``urea``
+         The urea concentration in millimoles per litre.
 
-   .. rubric:: Source
-      :name: source
+      ``calc``
+         The calcium concentration in millimoles per litre.
 
-   The data were obtained from
+      .. rubric:: Source
+         :name: source
 
-   Andrews, D.F. and Herzberg, A.M. (1985) *Data: A Collection of
-   Problems from Many Fields for the Student and Research Worker*.
-   Springer-Verlag.
+      The data were obtained from
 
-   .. rubric:: References
-      :name: references
+      Andrews, D.F. and Herzberg, A.M. (1985) *Data: A Collection of
+      Problems from Many Fields for the Student and Research Worker*.
+      Springer-Verlag.
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
+
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.

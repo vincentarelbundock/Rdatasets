@@ -1,76 +1,78 @@
 .. container::
 
-   ======= ===============
-   Tobacco R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Households Tobacco Budget Share
-      :name: Tobacco
+      ======= ===============
+      Tobacco R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Households Tobacco Budget Share
+         :name: households-tobacco-budget-share
 
-   a cross-section from 1995-96
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 2724
+      a cross-section from 1995-96
 
-   *observation* : individuals
+      *number of observations* : 2724
 
-   *country* : Belgium
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Belgium
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Tobacco)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Tobacco)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   occupation
-      a factor with levels (``bluecol``, ``whitecol``, ``inactself``),
-      the last level being inactive and self-employed
+      A dataframe containing :
 
-   region
-      a factor with levels (``flanders``, ``wallon``, ``brussels``)
+      occupation
+         a factor with levels (``bluecol``, ``whitecol``,
+         ``inactself``), the last level being inactive and self-employed
 
-   nkids
-      number of kids of more than two years old
+      region
+         a factor with levels (``flanders``, ``wallon``, ``brussels``)
 
-   nkids2
-      number of kids of less than two years old
+      nkids
+         number of kids of more than two years old
 
-   nadults
-      number of adults in household
+      nkids2
+         number of kids of less than two years old
 
-   lnx
-      log of total expenditures
+      nadults
+         number of adults in household
 
-   stobacco
-      budget share of tobacco
+      lnx
+         log of total expenditures
 
-   salcohol
-      budget share of alcohol
+      stobacco
+         budget share of tobacco
 
-   age
-      age in brackets (0-4)
+      salcohol
+         budget share of alcohol
 
-   .. rubric:: Source
-      :name: source
+      age
+         age in brackets (0-4)
 
-   National Institute of Statistics (NIS), Belgium.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      National Institute of Statistics (NIS), Belgium.
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons, chapter 7.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons, chapter 7.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

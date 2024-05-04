@@ -1,62 +1,64 @@
 .. container::
 
-   ================ ===============
-   WordsWithFriends R Documentation
-   ================ ===============
+   .. container::
 
-   .. rubric:: Words with Friends Scores
-      :name: WordsWithFriends
+      ================ ===============
+      WordsWithFriends R Documentation
+      ================ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Words with Friends Scores
+         :name: words-with-friends-scores
 
-   Results from the online game Words with Friends (solo play)
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Results from the online game Words with Friends (solo play)
 
-   A data frame with 444 observations on the following 11 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Points``
-      Number of points scored by the author
+      A data frame with 444 observations on the following 11 variables.
 
-   ``OppPoints``
-      Number of points scored by opponent ("solo")
+      ``Points``
+         Number of points scored by the author
 
-   ``WinMargin``
-      Points minus OppPoints, so margin of victory (or loss)
+      ``OppPoints``
+         Number of points scored by opponent ("solo")
 
-   ``Start``
-      Did the author go first or pass? (``first`` or ``pass``)
+      ``WinMargin``
+         Points minus OppPoints, so margin of victory (or loss)
 
-   ``Ss``
-      Number of S tiles (0 to 5)
+      ``Start``
+         Did the author go first or pass? (``first`` or ``pass``)
 
-   ``BlanksNumber``
-      Number of Blank tiles (0 to 2)
+      ``Ss``
+         Number of S tiles (0 to 5)
 
-   ``J``
-      Did the author get the J tile? (``1``\ =yes, ``0``\ =no)
+      ``BlanksNumber``
+         Number of Blank tiles (0 to 2)
 
-   ``Q``
-      Did the author get the Q tile? (``1``\ =yes, ``0``\ =no)
+      ``J``
+         Did the author get the J tile? (``1``\ =yes, ``0``\ =no)
 
-   ``X``
-      Did the author get the X tile? (``1``\ =yes, ``0``\ =no)
+      ``Q``
+         Did the author get the Q tile? (``1``\ =yes, ``0``\ =no)
 
-   ``Z``
-      Did the author get the Z tile? (``1``\ =yes, ``0``\ =no)
+      ``X``
+         Did the author get the X tile? (``1``\ =yes, ``0``\ =no)
 
-   ``Blanks``
-      Number of Blank tiles (``0blanks``, ``1blank``, or ``2blanks``)
+      ``Z``
+         Did the author get the Z tile? (``1``\ =yes, ``0``\ =no)
 
-   .. rubric:: Details
-      :name: details
+      ``Blanks``
+         Number of Blank tiles (``0blanks``, ``1blank``, or ``2blanks``)
 
-   Results collected from one of the authors playing the "solo" mode of
-   Words with Friends.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Results collected from one of the authors playing the "solo" mode
+      of Words with Friends.
 
-   Author's iPhone
+      .. rubric:: Source
+         :name: source
+
+      Author's iPhone

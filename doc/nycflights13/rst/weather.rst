@@ -1,59 +1,61 @@
 .. container::
 
-   ======= ===============
-   weather R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Hourly weather data
-      :name: weather
+      ======= ===============
+      weather R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Hourly weather data
+         :name: hourly-weather-data
 
-   Hourly meterological data for LGA, JFK and EWR.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Hourly meterological data for LGA, JFK and EWR.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      weather
+      ::
 
-   .. rubric:: Format
-      :name: format
+         weather
 
-   A data frame with columns:
+      .. rubric:: Format
+         :name: format
 
-   origin
-      Weather station. Named ``origin`` to facilitate merging with
-      ``flights`` data.
+      A data frame with columns:
 
-   year, month, day, hour
-      Time of recording.
+      origin
+         Weather station. Named ``origin`` to facilitate merging with
+         ``flights`` data.
 
-   temp, dewp
-      Temperature and dewpoint in F.
+      year, month, day, hour
+         Time of recording.
 
-   humid
-      Relative humidity.
+      temp, dewp
+         Temperature and dewpoint in F.
 
-   wind_dir, wind_speed, wind_gust
-      Wind direction (in degrees), speed and gust speed (in mph).
+      humid
+         Relative humidity.
 
-   precip
-      Precipitation, in inches.
+      wind_dir, wind_speed, wind_gust
+         Wind direction (in degrees), speed and gust speed (in mph).
 
-   pressure
-      Sea level pressure in millibars.
+      precip
+         Precipitation, in inches.
 
-   visib
-      Visibility in miles.
+      pressure
+         Sea level pressure in millibars.
 
-   time_hour
-      Date and hour of the recording as a ``POSIXct`` date.
+      visib
+         Visibility in miles.
 
-   .. rubric:: Source
-      :name: source
+      time_hour
+         Date and hour of the recording as a ``POSIXct`` date.
 
-   ASOS download from Iowa Environmental Mesonet,
-   https://mesonet.agron.iastate.edu/request/download.phtml.
+      .. rubric:: Source
+         :name: source
+
+      ASOS download from Iowa Environmental Mesonet,
+      https://mesonet.agron.iastate.edu/request/download.phtml.

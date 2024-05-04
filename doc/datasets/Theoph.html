@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Theoph</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Theoph'>Pharmacokinetics of Theophylline</h2>
+<h2>Pharmacokinetics of Theophylline</h2>
 
 <h3>Description</h3>
 
@@ -72,8 +72,8 @@ theophylline.  Twelve subjects were given oral doses of theophylline
 then serum concentrations were measured at 11 time points over the
 next 25 hours.
 </p>
-<p>These data are analyzed in Davidian and Giltinan (1995) and Pinheiro
-and Bates (2000) using a two-compartment open pharmacokinetic model,
+<p>These data are analyzed in Davidian and Giltinan (1995) and
+Pinheiro and Bates (2000) using a two-compartment open pharmacokinetic model,
 for which a self-starting model function, <code>SSfol</code>, is available.
 </p>
 <p>This dataset was originally part of package <code>nlme</code>, and that has
@@ -123,6 +123,7 @@ lines(xvals, predict(fm1, newdata = list(Time = xvals)),
       col = 4)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

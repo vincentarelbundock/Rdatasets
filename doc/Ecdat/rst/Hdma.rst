@@ -1,92 +1,97 @@
 .. container::
 
-   ==== ===============
-   Hmda R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: The Boston HMDA Data Set
-      :name: Hmda
+      ==== ===============
+      Hmda R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: The Boston HMDA Data Set
+         :name: the-boston-hmda-data-set
 
-   a cross-section from 1997-1998
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 2381 *observation* : individuals *country*
-   : United States
+      a cross-section from 1997-1998
 
-   In package version 0.2-9 and earlier this dataset was called
-   ``Hdma``.
+      *number of observations* : 2381 *observation* : individuals
+      *country* : United States
 
-   .. rubric:: Usage
-      :name: usage
+      In package version 0.2-9 and earlier this dataset was called
+      ``Hdma``.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Hmda)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Hmda)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   dir
-      debt payments to total income ratio
+      A dataframe containing :
 
-   hir
-      housing expenses to income ratio
+      dir
+         debt payments to total income ratio
 
-   lvr
-      ratio of size of loan to assessed value of property
+      hir
+         housing expenses to income ratio
 
-   ccs
-      consumer credit score from 1 to 6 (a low value being a good score)
+      lvr
+         ratio of size of loan to assessed value of property
 
-   mcs
-      mortgage credit score from 1 to 4 (a low value being a good score)
+      ccs
+         consumer credit score from 1 to 6 (a low value being a good
+         score)
 
-   pbcr
-      public bad credit record ?
+      mcs
+         mortgage credit score from 1 to 4 (a low value being a good
+         score)
 
-   dmi
-      denied mortgage insurance ?
+      pbcr
+         public bad credit record ?
 
-   self
-      self employed ?
+      dmi
+         denied mortgage insurance ?
 
-   single
-      is the applicant single ?
+      self
+         self employed ?
 
-   uria
-      1989 Massachusetts unemployment rate in the applicant's industry
+      single
+         is the applicant single ?
 
-   condominium
-      is unit a condominium ? (was called ``comdominiom`` in version
-      0.2-9 and earlier versions of the package)
+      uria
+         1989 Massachusetts unemployment rate in the applicant's
+         industry
 
-   black
-      is the applicant black ?
+      condominium
+         is unit a condominium ? (was called ``comdominiom`` in version
+         0.2-9 and earlier versions of the package)
 
-   deny
-      mortgage application denied ?
+      black
+         is the applicant black ?
 
-   .. rubric:: Source
-      :name: source
+      deny
+         mortgage application denied ?
 
-   Federal Reserve Bank of Boston.
+      .. rubric:: Source
+         :name: source
 
-   Munnell, Alicia H., Geoffrey M.B. Tootell, Lynne E. Browne and James
-   McEneaney (1996) “Mortgage lending in Boston: Interpreting HMDA
-   data”, *American Economic Review*, 25-53.
+      Federal Reserve Bank of Boston.
 
-   .. rubric:: References
-      :name: references
+      Munnell, Alicia H., Geoffrey M.B. Tootell, Lynne E. Browne and
+      James McEneaney (1996) “Mortgage lending in Boston: Interpreting
+      HMDA data”, *American Economic Review*, 25-53.
 
-   Stock, James H. and Mark W. Watson (2003) *Introduction to
-   Econometrics*, Addison-Wesley Educational Publishers, chapter 9.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, James H. and Mark W. Watson (2003) *Introduction to
+      Econometrics*, Addison-Wesley Educational Publishers, chapter 9.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

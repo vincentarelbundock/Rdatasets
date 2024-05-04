@@ -1,52 +1,54 @@
 .. container::
 
-   ============= ===============
-   unemploy_pres R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: President's party performance and unemployment rate
-      :name: unemploy_pres
+      ============= ===============
+      unemploy_pres R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: President's party performance and unemployment rate
+         :name: presidents-party-performance-and-unemployment-rate
 
-   Covers midterm elections.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Covers midterm elections.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      unemploy_pres
+      ::
 
-   .. rubric:: Format
-      :name: format
+         unemploy_pres
 
-   A data frame with 29 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   year
-      Year.
+      A data frame with 29 observations on the following 5 variables.
 
-   potus
-      The president in office.
+      year
+         Year.
 
-   party
-      President's party.
+      potus
+         The president in office.
 
-   unemp
-      Unemployment rate.
+      party
+         President's party.
 
-   change
-      Change in House seats for the president's party.
+      unemp
+         Unemployment rate.
 
-   .. rubric:: Source
-      :name: source
+      change
+         Change in House seats for the president's party.
 
-   Wikipedia.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Wikipedia.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      unemploy_pres
+      ::
+
+         unemploy_pres

@@ -1,51 +1,53 @@
 .. container::
 
-   ===== ===============
-   stars R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Physical Properties of Stars
-      :name: stars
+      ===== ===============
+      stars R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Physical Properties of Stars
+         :name: physical-properties-of-stars
 
-   Physical properties of selected stars, including luminosity,
-   temperature, and spectral class.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Physical properties of selected stars, including luminosity,
+      temperature, and spectral class.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      stars
+      ::
 
-   .. rubric:: Format
-      :name: format
+         stars
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  star. Name of star.
+      .. rubric:: Details
+         :name: details
 
-   -  magnitude. Absolute magnitude of the star, which is a function of
-      the star's luminosity and distance to the star.
+      -  star. Name of star.
 
-   -  temp. Surface temperature in degrees Kelvin (K).
+      -  magnitude. Absolute magnitude of the star, which is a function
+         of the star's luminosity and distance to the star.
 
-   -  type. Spectral class of star in the OBAFGKM system.
+      -  temp. Surface temperature in degrees Kelvin (K).
 
-   .. rubric:: Source
-      :name: source
+      -  type. Spectral class of star in the OBAFGKM system.
 
-   Compiled from multiple open-access references on
-   `VizieR <http://vizier.u-strasbg.fr/viz-bin/VizieR>`__.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Compiled from multiple open-access references on
+      `VizieR <http://vizier.u-strasbg.fr/viz-bin/VizieR>`__.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      head(stars)
+      ::
+
+         head(stars)

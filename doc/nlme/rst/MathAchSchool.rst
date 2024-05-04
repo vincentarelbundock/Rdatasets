@@ -1,46 +1,48 @@
 .. container::
 
-   ============= ===============
-   MathAchSchool R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: School demographic data for MathAchieve
-      :name: MathAchSchool
+      ============= ===============
+      MathAchSchool R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: School demographic data for MathAchieve
+         :name: school-demographic-data-for-mathachieve
 
-   The ``MathAchSchool`` data frame has 160 rows and 7 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``MathAchSchool`` data frame has 160 rows and 7 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   School
-      a factor giving the school on which the measurement is made.
+      This data frame contains the following columns:
 
-   Size
-      a numeric vector giving the number of students in the school
+      School
+         a factor giving the school on which the measurement is made.
 
-   Sector
-      a factor with levels ``Public`` ``Catholic``
+      Size
+         a numeric vector giving the number of students in the school
 
-   PRACAD
-      a numeric vector giving the percentage of students on the academic
-      track
+      Sector
+         a factor with levels ``Public`` ``Catholic``
 
-   DISCLIM
-      a numeric vector measuring the discrimination climate
+      PRACAD
+         a numeric vector giving the percentage of students on the
+         academic track
 
-   HIMINTY
-      a factor with levels ``0`` ``1``
+      DISCLIM
+         a numeric vector measuring the discrimination climate
 
-   MEANSES
-      a numeric vector giving the mean SES score.
+      HIMINTY
+         a factor with levels ``0`` ``1``
 
-   .. rubric:: Details
-      :name: details
+      MEANSES
+         a numeric vector giving the mean SES score.
 
-   These variables give the school-level demographic data to accompany
-   the ``MathAchieve`` data.
+      .. rubric:: Details
+         :name: details
+
+      These variables give the school-level demographic data to
+      accompany the ``MathAchieve`` data.

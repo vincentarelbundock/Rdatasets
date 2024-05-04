@@ -1,73 +1,76 @@
 .. container::
 
-   ====== ===============
-   hseinv R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: hseinv
-      :name: hseinv
+      ====== ===============
+      hseinv R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: hseinv
+         :name: hseinv
 
-   Wooldridge Source: D. McFadden (1994), “Demographics, the Housing
-   Market, and the Welfare of the Elderly,” in D.A. Wise (ed.), Studies
-   in the Economics of Aging. Chicago: University of Chicago Press,
-   225-285. The data are contained in the article. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: D. McFadden (1994), “Demographics, the Housing
+      Market, and the Welfare of the Elderly,” in D.A. Wise (ed.),
+      Studies in the Economics of Aging. Chicago: University of Chicago
+      Press, 225-285. The data are contained in the article. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('hseinv')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('hseinv')
 
-   A data.frame with 42 observations on 14 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1947-1988
+      A data.frame with 42 observations on 14 variables:
 
-   -  **inv:** real housing inv, millions $
+      -  **year:** 1947-1988
 
-   -  **pop:** population, 1000s
+      -  **inv:** real housing inv, millions $
 
-   -  **price:** housing price index; 1982 = 1
+      -  **pop:** population, 1000s
 
-   -  **linv:** log(inv)
+      -  **price:** housing price index; 1982 = 1
 
-   -  **lpop:** log(pop)
+      -  **linv:** log(inv)
 
-   -  **lprice:** log(price)
+      -  **lpop:** log(pop)
 
-   -  **t:** time trend: t=1,...,42
+      -  **lprice:** log(price)
 
-   -  **invpc:** per capita inv: inv/pop
+      -  **t:** time trend: t=1,...,42
 
-   -  **linvpc:** log(invpc)
+      -  **invpc:** per capita inv: inv/pop
 
-   -  **lprice_1:** lprice[\_n-1]
+      -  **linvpc:** log(invpc)
 
-   -  **linvpc_1:** linvpc[\_n-1]
+      -  **lprice_1:** lprice[_n-1]
 
-   -  **gprice:** lprice - lprice_1
+      -  **linvpc_1:** linvpc[_n-1]
 
-   -  **ginvpc:** linvpc - linvpc_1
+      -  **gprice:** lprice - lprice_1
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **ginvpc:** linvpc - linvpc_1
 
-   pages 367, 370, 407, 638-639, 822?
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 367, 370, 407, 638-639, 822?
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(hseinv)
+      ::
+
+          str(hseinv)

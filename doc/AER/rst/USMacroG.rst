@@ -1,128 +1,131 @@
 .. container::
 
-   ======== ===============
-   USMacroG R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: US Macroeconomic Data (1950–2000, Greene)
-      :name: USMacroG
+      ======== ===============
+      USMacroG R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: US Macroeconomic Data (1950–2000, Greene)
+         :name: us-macroeconomic-data-19502000-greene
 
-   Time series data on 12 US macroeconomic variables for 1950–2000.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Time series data on 12 US macroeconomic variables for 1950–2000.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("USMacroG")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("USMacroG")
 
-   A quarterly multiple time series from 1950(1) to 2000(4) with 12
-   variables.
+      .. rubric:: Format
+         :name: format
 
-   gdp
-      Real gross domestic product (in billion USD),
+      A quarterly multiple time series from 1950(1) to 2000(4) with 12
+      variables.
 
-   consumption
-      Real consumption expenditures,
+      gdp
+         Real gross domestic product (in billion USD),
 
-   invest
-      Real investment by private sector,
+      consumption
+         Real consumption expenditures,
 
-   government
-      Real government expenditures,
+      invest
+         Real investment by private sector,
 
-   dpi
-      Real disposable personal income,
+      government
+         Real government expenditures,
 
-   cpi
-      Consumer price index,
+      dpi
+         Real disposable personal income,
 
-   m1
-      Nominal money stock,
+      cpi
+         Consumer price index,
 
-   tbill
-      Quarterly average of month end 90 day treasury bill rate,
+      m1
+         Nominal money stock,
 
-   unemp
-      Unemployment rate,
+      tbill
+         Quarterly average of month end 90 day treasury bill rate,
 
-   population
-      Population (in million), interpolation of year end figures using
-      constant growth rate per quarter,
+      unemp
+         Unemployment rate,
 
-   inflation
-      Inflation rate,
+      population
+         Population (in million), interpolation of year end figures
+         using constant growth rate per quarter,
 
-   interest
-      Ex post real interest rate (essentially, ``tbill - inflation``).
+      inflation
+         Inflation rate,
 
-   .. rubric:: Source
-      :name: source
+      interest
+         Ex post real interest rate (essentially,
+         ``tbill - inflation``).
 
-   Online complements to Greene (2003). Table F5.1.
+      .. rubric:: Source
+         :name: source
 
-   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+      Online complements to Greene (2003). Table F5.1.
 
-   .. rubric:: References
-      :name: references
+      https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
-   Saddle River, NJ: Prentice Hall.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+      Saddle River, NJ: Prentice Hall.
 
-   ``Greene2003``, ``USMacroSW``, ``USMacroSWQ``, ``USMacroSWM``,
-   ``USMacroB``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Greene2003``, ``USMacroSW``, ``USMacroSWQ``, ``USMacroSWM``,
+      ``USMacroB``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## data and trend as used by Greene (2003)
-      data("USMacroG")
-      ltrend <- 1:nrow(USMacroG) - 1
+      ::
 
-      ## Example 6.1
-      ## Table 6.1
-      library("dynlm")
-      fm6.1 <- dynlm(log(invest) ~ tbill + inflation + log(gdp) + ltrend, data = USMacroG)
-      fm6.3 <- dynlm(log(invest) ~ I(tbill - inflation) + log(gdp) + ltrend, data = USMacroG)
-      summary(fm6.1)
-      summary(fm6.3)
-      deviance(fm6.1)
-      deviance(fm6.3)
-      vcov(fm6.1)[2,3] 
+         ## data and trend as used by Greene (2003)
+         data("USMacroG")
+         ltrend <- 1:nrow(USMacroG) - 1
 
-      ## F test
-      linearHypothesis(fm6.1, "tbill + inflation = 0")
-      ## alternatively
-      anova(fm6.1, fm6.3)
-      ## t statistic
-      sqrt(anova(fm6.1, fm6.3)[2,5])
-       
-      ## Example 8.2
-      ## Ct = b0 + b1*Yt + b2*Y(t-1) + v
-      fm1 <- dynlm(consumption ~ dpi + L(dpi), data = USMacroG)
-      ## Ct = a0 + a1*Yt + a2*C(t-1) + u
-      fm2 <- dynlm(consumption ~ dpi + L(consumption), data = USMacroG)
+         ## Example 6.1
+         ## Table 6.1
+         library("dynlm")
+         fm6.1 <- dynlm(log(invest) ~ tbill + inflation + log(gdp) + ltrend, data = USMacroG)
+         fm6.3 <- dynlm(log(invest) ~ I(tbill - inflation) + log(gdp) + ltrend, data = USMacroG)
+         summary(fm6.1)
+         summary(fm6.3)
+         deviance(fm6.1)
+         deviance(fm6.3)
+         vcov(fm6.1)[2,3] 
 
-      ## Cox test in both directions:
-      coxtest(fm1, fm2)
-      ## ...and do the same for jtest() and encomptest().
-      ## Notice that in this particular case two of them are coincident.
-      jtest(fm1, fm2)
-      encomptest(fm1, fm2)
-      ## encomptest could also be performed `by hand' via
-      fmE <- dynlm(consumption ~ dpi + L(dpi) + L(consumption), data = USMacroG)
-      waldtest(fm1, fmE, fm2)
+         ## F test
+         linearHypothesis(fm6.1, "tbill + inflation = 0")
+         ## alternatively
+         anova(fm6.1, fm6.3)
+         ## t statistic
+         sqrt(anova(fm6.1, fm6.3)[2,5])
+          
+         ## Example 8.2
+         ## Ct = b0 + b1*Yt + b2*Y(t-1) + v
+         fm1 <- dynlm(consumption ~ dpi + L(dpi), data = USMacroG)
+         ## Ct = a0 + a1*Yt + a2*C(t-1) + u
+         fm2 <- dynlm(consumption ~ dpi + L(consumption), data = USMacroG)
 
-      ## More examples can be found in:
-      ## help("Greene2003")
+         ## Cox test in both directions:
+         coxtest(fm1, fm2)
+         ## ...and do the same for jtest() and encomptest().
+         ## Notice that in this particular case two of them are coincident.
+         jtest(fm1, fm2)
+         encomptest(fm1, fm2)
+         ## encomptest could also be performed `by hand' via
+         fmE <- dynlm(consumption ~ dpi + L(dpi) + L(consumption), data = USMacroG)
+         waldtest(fm1, fmE, fm2)
+
+         ## More examples can be found in:
+         ## help("Greene2003")

@@ -1,48 +1,50 @@
 .. container::
 
-   ========= ===============
-   txhousing R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Housing sales in TX
-      :name: txhousing
+      ========= ===============
+      txhousing R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Housing sales in TX
+         :name: housing-sales-in-tx
 
-   Information about the housing market in Texas provided by the TAMU
-   real estate center, https://www.recenter.tamu.edu/.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Information about the housing market in Texas provided by the TAMU
+      real estate center, https://trerc.tamu.edu/.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      txhousing
+      ::
 
-   .. rubric:: Format
-      :name: format
+         txhousing
 
-   A data frame with 8602 observations and 9 variables:
+      .. rubric:: Format
+         :name: format
 
-   city
-      Name of multiple listing service (MLS) area
+      A data frame with 8602 observations and 9 variables:
 
-   year,month,date
-      Date
+      city
+         Name of multiple listing service (MLS) area
 
-   sales
-      Number of sales
+      year,month,date
+         Date
 
-   volume
-      Total value of sales
+      sales
+         Number of sales
 
-   median
-      Median sale price
+      volume
+         Total value of sales
 
-   listings
-      Total active listings
+      median
+         Median sale price
 
-   inventory
-      "Months inventory": amount of time it would take to sell all
-      current listings at current pace of sales.
+      listings
+         Total active listings
+
+      inventory
+         "Months inventory": amount of time it would take to sell all
+         current listings at current pace of sales.

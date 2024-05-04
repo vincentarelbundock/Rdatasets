@@ -1,42 +1,44 @@
 .. container::
 
-   ======= ===============
-   drughiv R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: data from Exercise 7.6, p222
-      :name: drughiv
+      ======= ===============
+      drughiv R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Exercise 7.6, p222
+         :name: data-from-exercise-7.6-p222
 
-   The ``drughiv`` data frame has 34 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``drughiv`` data frame has 34 rows and 3 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   drug
-      Drug combination (1=AZT + zalcitabine, 2=AZT + zalcitabine +
-      saquinavir)
+      This data frame contains the following columns:
 
-   time
-      Time after drug administration to CD4 count at a specified level,
-      days
+      drug
+         Drug combination (1=AZT + zalcitabine, 2=AZT + zalcitabine +
+         saquinavir)
 
-   delta
-      Indicator of CD4 count reaching specified level (1=yes, 0=no)
+      time
+         Time after drug administration to CD4 count at a specified
+         level, days
 
-   .. rubric:: Source
-      :name: source
+      delta
+         Indicator of CD4 count reaching specified level (1=yes, 0=no)
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(drughiv)
+      ::
+
+         data(drughiv)

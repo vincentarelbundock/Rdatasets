@@ -1,82 +1,84 @@
 .. container::
 
-   ======== ===============
-   slp75_81 R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: slp75_81
-      :name: slp75_81
+      ======== ===============
+      slp75_81 R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: slp75_81
+         :name: slp75_81
 
-   Wooldridge Source: See SLEEP75.RAW Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: See SLEEP75.RAW Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('slp75_81')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('slp75_81')
 
-   A data.frame with 239 observations on 20 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **age75:** age in 1975
+      A data.frame with 239 observations on 20 variables:
 
-   -  **educ75:** years educ in '75
+      -  **age75:** age in 1975
 
-   -  **educ81:** years educ in '81
+      -  **educ75:** years educ in '75
 
-   -  **gdhlth75:** = 1 if good hlth in '75
+      -  **educ81:** years educ in '81
 
-   -  **gdhlth81:** =1 if good hlth in '81
+      -  **gdhlth75:** = 1 if good hlth in '75
 
-   -  **male:** =1 if male
+      -  **gdhlth81:** =1 if good hlth in '81
 
-   -  **marr75:** = 1 if married in '75
+      -  **male:** =1 if male
 
-   -  **marr81:** =1 if married in '81
+      -  **marr75:** = 1 if married in '75
 
-   -  **slpnap75:** mins slp wk, inc naps, '75
+      -  **marr81:** =1 if married in '81
 
-   -  **slpnap81:** mins slp wk, inc naps, '81
+      -  **slpnap75:** mins slp wk, inc naps, '75
 
-   -  **totwrk75:** minutes worked per week, '75
+      -  **slpnap81:** mins slp wk, inc naps, '81
 
-   -  **totwrk81:** minutes worked per week, '81
+      -  **totwrk75:** minutes worked per week, '75
 
-   -  **yngkid75:** = 1 if child < 3, '75
+      -  **totwrk81:** minutes worked per week, '81
 
-   -  **yngkid81:** =1 if child < 3, '81
+      -  **yngkid75:** = 1 if child < 3, '75
 
-   -  **ceduc:** change in educ
+      -  **yngkid81:** =1 if child < 3, '81
 
-   -  **cgdhlth:** change in gdhlth
+      -  **ceduc:** change in educ
 
-   -  **cmarr:** change in marr
+      -  **cgdhlth:** change in gdhlth
 
-   -  **cslpnap:** change in slpnap
+      -  **cmarr:** change in marr
 
-   -  **ctotwrk:** change in totwrk
+      -  **cslpnap:** change in slpnap
 
-   -  **cyngkid:** change in yngkid
+      -  **ctotwrk:** change in totwrk
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **cyngkid:** change in yngkid
 
-   pages 463-464
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 463-464
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(slp75_81)
+      ::
+
+          str(slp75_81)

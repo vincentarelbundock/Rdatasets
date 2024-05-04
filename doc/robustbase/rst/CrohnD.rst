@@ -1,77 +1,79 @@
 .. container::
 
-   ====== ===============
-   CrohnD R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Crohn's Disease Adverse Events Data
-      :name: CrohnD
+      ====== ===============
+      CrohnD R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Crohn's Disease Adverse Events Data
+         :name: crohns-disease-adverse-events-data
 
-   Data set issued from a study of the adverse events of a drug on 117
-   patients affected by Crohn's disease (a chronic inflammatory disease
-   of the intestines).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data set issued from a study of the adverse events of a drug on
+      117 patients affected by Crohn's disease (a chronic inflammatory
+      disease of the intestines).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(CrohnD, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(CrohnD, package="robustbase")
 
-   A data frame with 117 observations on the following 9 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``ID``
-      the numeric patient IDs
+      A data frame with 117 observations on the following 9 variables.
 
-   ``nrAdvE``
-      the number of adverse events
+      ``ID``
+         the numeric patient IDs
 
-   ``BMI``
-      Body MASS Index, i.e., ``weight[kg] / (height[m])^2``.
+      ``nrAdvE``
+         the number of adverse events
 
-   ``height``
-      in cm
+      ``BMI``
+         Body MASS Index, i.e., ``weight[kg] / (height[m])^2``.
 
-   ``country``
-      a factor with levels ``0`` and ``1``
+      ``height``
+         in cm
 
-   ``sex``
-      the person's gender, a binary factor with levels ``M`` ``F``
+      ``country``
+         a factor with levels ``0`` and ``1``
 
-   ``age``
-      in years, a numeric vector
+      ``sex``
+         the person's gender, a binary factor with levels ``M`` ``F``
 
-   ``weight``
-      in kilograms, a numeric vector
+      ``age``
+         in years, a numeric vector
 
-   ``treat``
-      how CD was treated: a factor with levels ``0``, ``1`` and ``2``,
-      meaning placebo, drug 1 and drug 2.
+      ``weight``
+         in kilograms, a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      ``treat``
+         how CD was treated: a factor with levels ``0``, ``1`` and
+         ``2``, meaning placebo, drug 1 and drug 2.
 
-   form the authors of the reference, with permission by the original
-   data collecting agency.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      form the authors of the reference, with permission by the original
+      data collecting agency.
 
-   Serigne N. Lô and Elvezio Ronchetti (2006). Robust Second Order
-   Accurate Inference for Generalized Linear Models. Technical report,
-   University of Geneva, Switzerland.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Serigne N. Lô and Elvezio Ronchetti (2006). Robust Second Order
+      Accurate Inference for Generalized Linear Models. Technical
+      report, University of Geneva, Switzerland.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(CrohnD)
-      str(CrohnD)
-      with(CrohnD, ftable(table(sex,country, treat)))
+      ::
+
+         data(CrohnD)
+         str(CrohnD)
+         with(CrohnD, ftable(table(sex,country, treat)))

@@ -1,57 +1,60 @@
 .. container::
 
-   ============ ===============
-   leaftemp.all R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Full Leaf and Air Temperature Data Set
-      :name: leaftemp.all
+      ============ ===============
+      leaftemp.all R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Full Leaf and Air Temperature Data Set
+         :name: full-leaf-and-air-temperature-data-set
 
-   The ``leaftemp.all`` data frame has 62 rows and 9 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``leaftemp.all`` data frame has 62 rows and 9 columns.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      leaftemp.all
+      ::
 
-   .. rubric:: Format
-      :name: format
+         leaftemp.all
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   glasshouse
-      a factor with levels ``A``, ``B``, ``C``
+      This data frame contains the following columns:
 
-   CO2level
-      a factor with Carbon Dioxide Levels: ``high``, ``low``, ``medium``
+      glasshouse
+         a factor with levels ``A``, ``B``, ``C``
 
-   day
-      a factor
+      CO2level
+         a factor with Carbon Dioxide Levels: ``high``, ``low``,
+         ``medium``
 
-   light
-      a numeric vector
+      day
+         a factor
 
-   CO2
-      a numeric vector
+      light
+         a numeric vector
 
-   tempDiff
-      Difference between Leaf and Air Temperature
+      CO2
+         a numeric vector
 
-   BtempDiff
-      a numeric vector
+      tempDiff
+         Difference between Leaf and Air Temperature
 
-   airTemp
-      Air Temperature
+      BtempDiff
+         a numeric vector
 
-   vapPress
-      Vapour Pressure
+      airTemp
+         Air Temperature
 
-   .. rubric:: Source
-      :name: source
+      vapPress
+         Vapour Pressure
 
-   J.H. Maindonald
+      .. rubric:: Source
+         :name: source
+
+      J.H. Maindonald

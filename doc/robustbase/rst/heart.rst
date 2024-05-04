@@ -1,72 +1,74 @@
 .. container::
 
-   ===== ===============
-   heart R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Heart Catherization Data
-      :name: heart
+      ===== ===============
+      heart R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Heart Catherization Data
+         :name: heart-catherization-data
 
-   This data set was analyzed by Weisberg (1980) and Chambers et al.
-   (1983). A catheter is passed into a major vein or artery at the
-   femoral region and moved into the heart. The proper length of the
-   introduced catheter has to be guessed by the physician. The aim of
-   the data set is to describe the relation between the catheter length
-   and the patient's height (X1) and weight (X2).
+      .. rubric:: Description
+         :name: description
 
-   This data sets is used to demonstrate the effects caused by
-   collinearity. The correlation between height and weight is so high
-   that either variable almost completely determines the other.
+      This data set was analyzed by Weisberg (1980) and Chambers et al.
+      (1983). A catheter is passed into a major vein or artery at the
+      femoral region and moved into the heart. The proper length of the
+      introduced catheter has to be guessed by the physician. The aim of
+      the data set is to describe the relation between the catheter
+      length and the patient's height (X1) and weight (X2).
 
-   .. rubric:: Usage
-      :name: usage
+      This data sets is used to demonstrate the effects caused by
+      collinearity. The correlation between height and weight is so high
+      that either variable almost completely determines the other.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(heart)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(heart)
 
-   A data frame with 12 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``height``
-      Patient's height in inches
+      A data frame with 12 observations on the following 3 variables.
 
-   ``weight``
-      Patient's weights in pounds
+      ``height``
+         Patient's height in inches
 
-   ``clength``
-      Y: Catheter Length (in centimeters)
+      ``weight``
+         Patient's weights in pounds
 
-   .. rubric:: Note
-      :name: note
+      ``clength``
+         Y: Catheter Length (in centimeters)
 
-   There are other ``heart`` datasets in other **R** packages, notably
-   `survival <https://CRAN.R-project.org/package=survival>`__, hence
-   considering using ``package = "robustbase"``, see examples.
+      .. rubric:: Note
+         :name: note
 
-   .. rubric:: Source
-      :name: source
+      There are other ``heart`` datasets in other R packages, notably
+      `survival <https://CRAN.R-project.org/package=survival>`__, hence
+      considering using ``package = "robustbase"``, see examples.
 
-   Weisberg (1980)
+      .. rubric:: Source
+         :name: source
 
-   Chambers et al. (1983)
+      Weisberg (1980)
 
-   P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
-   Detection*; Wiley, p.103, table 13.
+      Chambers et al. (1983)
 
-   .. rubric:: Examples
-      :name: examples
+      P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and
+      Outlier Detection*; Wiley, p.103, table 13.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(heart, package="robustbase")
-      heart.x <- data.matrix(heart[, 1:2]) # the X-variables
-      plot(heart.x)
-      covMcd(heart.x)
-      summary( lm.heart <-     lm(clength ~ . , data = heart))
-      summary(lts.heart <- ltsReg(clength ~ . , data = heart))
+      ::
+
+         data(heart, package="robustbase")
+         heart.x <- data.matrix(heart[, 1:2]) # the X-variables
+         plot(heart.x)
+         covMcd(heart.x)
+         summary( lm.heart <-     lm(clength ~ . , data = heart))
+         summary(lts.heart <- ltsReg(clength ~ . , data = heart))

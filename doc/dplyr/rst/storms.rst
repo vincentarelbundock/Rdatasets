@@ -1,101 +1,103 @@
 .. container::
 
-   ====== ===============
-   storms R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Storm tracks data
-      :name: storms
+      ====== ===============
+      storms R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Storm tracks data
+         :name: storm-tracks-data
 
-   This dataset is the NOAA Atlantic hurricane database best track data,
-   https://www.nhc.noaa.gov/data/#hurdat. The data includes the
-   positions and attributes of storms from 1975-2021. Storms from 1979
-   onward are measured every six hours during the lifetime of the storm.
-   Storms in earlier years have some missing data.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This dataset is the NOAA Atlantic hurricane database best track
+      data, https://www.nhc.noaa.gov/data/#hurdat. The data includes the
+      positions and attributes of storms from 1975-2022. Storms from
+      1979 onward are measured every six hours during the lifetime of
+      the storm. Storms in earlier years have some missing data.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      storms
+      ::
 
-   .. rubric:: Format
-      :name: format
+         storms
 
-   A tibble with 19,066 observations and 13 variables:
+      .. rubric:: Format
+         :name: format
 
-   name
-      Storm Name
+      A tibble with 19,537 observations and 13 variables:
 
-   year,month,day
-      Date of report
+      name
+         Storm Name
 
-   hour
-      Hour of report (in UTC)
+      year,month,day
+         Date of report
 
-   lat,long
-      Location of storm center
+      hour
+         Hour of report (in UTC)
 
-   status
-      Storm classification (Tropical Depression, Tropical Storm, or
-      Hurricane)
+      lat,long
+         Location of storm center
 
-   category
-      Saffir-Simpson hurricane category calculated from wind speed.
+      status
+         Storm classification (Tropical Depression, Tropical Storm, or
+         Hurricane)
 
-      -  ``NA``: Not a hurricane
+      category
+         Saffir-Simpson hurricane category calculated from wind speed.
 
-      -  1: 64+ knots
+         -  ``NA``: Not a hurricane
 
-      -  2: 83+ knots
+         -  1: 64+ knots
 
-      -  3: 96+ knots
+         -  2: 83+ knots
 
-      -  4: 113+ knots
+         -  3: 96+ knots
 
-      -  5: 137+ knots
+         -  4: 113+ knots
 
-   wind
-      storm's maximum sustained wind speed (in knots)
+         -  5: 137+ knots
 
-   pressure
-      Air pressure at the storm's center (in millibars)
+      wind
+         storm's maximum sustained wind speed (in knots)
 
-   tropicalstorm_force_diameter
-      Diameter (in nautical miles) of the area experiencing tropical
-      storm strength winds (34 knots or above). Only available starting
-      in 2004.
+      pressure
+         Air pressure at the storm's center (in millibars)
 
-   hurricane_force_diameter
-      Diameter (in nautical miles) of the area experiencing hurricane
-      strength winds (64 knots or above). Only available starting in
-      2004.
+      tropicalstorm_force_diameter
+         Diameter (in nautical miles) of the area experiencing tropical
+         storm strength winds (34 knots or above). Only available
+         starting in 2004.
 
-   .. rubric:: See Also
-      :name: see-also
+      hurricane_force_diameter
+         Diameter (in nautical miles) of the area experiencing hurricane
+         strength winds (64 knots or above). Only available starting in
+         2004.
 
-   The script to create the storms data set:
-   https://github.com/tidyverse/dplyr/blob/main/data-raw/storms.R
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      The script to create the storms data set:
+      https://github.com/tidyverse/dplyr/blob/main/data-raw/storms.R
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      storms
+      ::
 
-      # Show a few recent storm paths
-      if (requireNamespace("ggplot2", quietly = TRUE)) {
-        library(ggplot2)
-        storms %>%
-          filter(year >= 2000) %>%
-          ggplot(aes(long, lat, color = paste(year, name))) +
-          geom_path(show.legend = FALSE) +
-          facet_wrap(~year)
-      }
+         storms
 
-      storms
+         # Show a few recent storm paths
+         if (requireNamespace("ggplot2", quietly = TRUE)) {
+           library(ggplot2)
+           storms %>%
+             filter(year >= 2000) %>%
+             ggplot(aes(long, lat, color = paste(year, name))) +
+             geom_path(show.legend = FALSE) +
+             facet_wrap(~year)
+         }
+
+         storms

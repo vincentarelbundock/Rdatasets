@@ -1,143 +1,145 @@
 .. container::
 
-   ======= ===============
-   HS.data R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Holizinger and Swineford's Data
-      :name: HS.data
+      ======= ===============
+      HS.data R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Holizinger and Swineford's Data
+         :name: holizinger-and-swinefords-data
 
-   This data set, for scores on a variety of tests, was originally in
-   the MBESS package. A new version of the data set in that package
-   doesn't appear to be identical to this one.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set, for scores on a variety of tests, was originally in
+      the MBESS package. A new version of the data set in that package
+      doesn't appear to be identical to this one.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      HS.data
+      ::
 
-   .. rubric:: Format
-      :name: format
+         HS.data
 
-   A data frame with 301 observations on the following 32 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``id``
-      a numeric vector
+      A data frame with 301 observations on the following 32 variables.
 
-   ``Gender``
-      a factor with levels ``Female`` ``Male``
+      ``id``
+         a numeric vector
 
-   ``grade``
-      a numeric vector
+      ``Gender``
+         a factor with levels ``Female`` ``Male``
 
-   ``agey``
-      a numeric vector
+      ``grade``
+         a numeric vector
 
-   ``agem``
-      a numeric vector
+      ``agey``
+         a numeric vector
 
-   ``school``
-      a factor with levels ``Grant-White`` ``Pasteur``
+      ``agem``
+         a numeric vector
 
-   ``visual``
-      a numeric vector
+      ``school``
+         a factor with levels ``Grant-White`` ``Pasteur``
 
-   ``cubes``
-      a numeric vector
+      ``visual``
+         a numeric vector
 
-   ``paper``
-      a numeric vector
+      ``cubes``
+         a numeric vector
 
-   ``flags``
-      a numeric vector
+      ``paper``
+         a numeric vector
 
-   ``general``
-      a numeric vector
+      ``flags``
+         a numeric vector
 
-   ``paragrap``
-      a numeric vector
+      ``general``
+         a numeric vector
 
-   ``sentence``
-      a numeric vector
+      ``paragrap``
+         a numeric vector
 
-   ``wordc``
-      a numeric vector
+      ``sentence``
+         a numeric vector
 
-   ``wordm``
-      a numeric vector
+      ``wordc``
+         a numeric vector
 
-   ``addition``
-      a numeric vector
+      ``wordm``
+         a numeric vector
 
-   ``code``
-      a numeric vector
+      ``addition``
+         a numeric vector
 
-   ``counting``
-      a numeric vector
+      ``code``
+         a numeric vector
 
-   ``straight``
-      a numeric vector
+      ``counting``
+         a numeric vector
 
-   ``wordr``
-      a numeric vector
+      ``straight``
+         a numeric vector
 
-   ``numberr``
-      a numeric vector
+      ``wordr``
+         a numeric vector
 
-   ``figurer``
-      a numeric vector
+      ``numberr``
+         a numeric vector
 
-   ``object``
-      a numeric vector
+      ``figurer``
+         a numeric vector
 
-   ``numberf``
-      a numeric vector
+      ``object``
+         a numeric vector
 
-   ``figurew``
-      a numeric vector
+      ``numberf``
+         a numeric vector
 
-   ``deduct``
-      a numeric vector
+      ``figurew``
+         a numeric vector
 
-   ``numeric``
-      a numeric vector
+      ``deduct``
+         a numeric vector
 
-   ``problemr``
-      a numeric vector
+      ``numeric``
+         a numeric vector
 
-   ``series``
-      a numeric vector
+      ``problemr``
+         a numeric vector
 
-   ``arithmet``
-      a numeric vector
+      ``series``
+         a numeric vector
 
-   ``paperrev``
-      a numeric vector
+      ``arithmet``
+         a numeric vector
 
-   ``flagssub``
-      a numeric vector
+      ``paperrev``
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      ``flagssub``
+         a numeric vector
 
-   Originally from Holzinger and Swineford (1939). This copy is
-   originally from version 4.6.0 of the MBESS package.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Originally from Holzinger and Swineford (1939). This copy is
+      originally from version 4.6.0 of the MBESS package.
 
-   Holzinger, K. J. and Swineford, F. A. (1939). A study in factor
-   analysis: The stability of a bi-factor solution. Supplementary
-   Education Monographs, 48. University of Chicago.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Holzinger, K. J. and Swineford, F. A. (1939). A study in factor
+      analysis: The stability of a bi-factor solution. Supplementary
+      Education Monographs, 48. University of Chicago.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(HS.data)
+      ::
+
+         summary(HS.data)

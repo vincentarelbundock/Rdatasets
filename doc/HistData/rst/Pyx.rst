@@ -1,94 +1,96 @@
 .. container::
 
-   === ===============
-   Pyx R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Trial of the Pyx
-      :name: Pyx
+      === ===============
+      Pyx R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Trial of the Pyx
+         :name: trial-of-the-pyx
 
-   Stigler (1997, 1999) recounts the history of one of the oldest
-   continuous schemes of sampling inspection carried out by the Royal
-   Mint in London for about eight centuries. The Trial of the Pyx was
-   the final, ceremonial stage in a process designed to ensure that the
-   weight and quality of gold and silver coins from the mint met the
-   standards for coinage.
+      .. rubric:: Description
+         :name: description
 
-   At regular intervals, coins would be taken from production and
-   deposited into a box called the Pyx. When a Trial of the Pyx was
-   called, the contents of the Pyx would be counted, weighed and assayed
-   for content, and the results would be compared with the standard set
-   for the Royal Mint.
+      Stigler (1997, 1999) recounts the history of one of the oldest
+      continuous schemes of sampling inspection carried out by the Royal
+      Mint in London for about eight centuries. The Trial of the Pyx was
+      the final, ceremonial stage in a process designed to ensure that
+      the weight and quality of gold and silver coins from the mint met
+      the standards for coinage.
 
-   The data frame ``Pyx`` gives the results for the year 1848 (Great
-   Britain, 1848) in which 10,000 gold sovereigns were assayed. The
-   coins in each bag were classified according to the deviation from the
-   standard content of gold for each coin, called the Remedy, R = 123 \*
-   (12/5760) = .25625, in grains, for a single sovereign.
+      At regular intervals, coins would be taken from production and
+      deposited into a box called the Pyx. When a Trial of the Pyx was
+      called, the contents of the Pyx would be counted, weighed and
+      assayed for content, and the results would be compared with the
+      standard set for the Royal Mint.
 
-   .. rubric:: Usage
-      :name: usage
+      The data frame ``Pyx`` gives the results for the year 1848 (Great
+      Britain, 1848) in which 10,000 gold sovereigns were assayed. The
+      coins in each bag were classified according to the deviation from
+      the standard content of gold for each coin, called the Remedy, R =
+      123 \* (12/5760) = .25625, in grains, for a single sovereign.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Pyx)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Pyx)
 
-   A frequency data frame with 72 observations on the following 4
-   variables giving the distribution of 10,000 sovereigns, classified
-   according to the ``Bags`` in which they were collected and the
-   ``Deviation`` from the standard weight.
+      .. rubric:: Format
+         :name: format
 
-   ``Bags``
-      an ordered factor with levels ``1 and 2`` < ``3`` < ``4`` < ``5``
-      < ``6`` < ``7`` < ``8`` < ``9`` < ``10``
+      A frequency data frame with 72 observations on the following 4
+      variables giving the distribution of 10,000 sovereigns, classified
+      according to the ``Bags`` in which they were collected and the
+      ``Deviation`` from the standard weight.
 
-   ``Group``
-      an ordered factor with levels ``below std`` < ``near std`` <
-      ``above std``
+      ``Bags``
+         an ordered factor with levels ``1 and 2`` < ``3`` < ``4`` <
+         ``5`` < ``6`` < ``7`` < ``8`` < ``9`` < ``10``
 
-   ``Deviation``
-      an ordered factor with levels ``Below -R`` < ``(-R to -.2)`` <
-      ``(-.2 to -.l)`` < ``(-.1 to 0)`` < ``(0 to .l)`` < ``(.1 to .2)``
-      < ``(.2 to R)`` < ``Above R``
+      ``Group``
+         an ordered factor with levels ``below std`` < ``near std`` <
+         ``above std``
 
-   ``count``
-      number of sovereigns
+      ``Deviation``
+         an ordered factor with levels ``Below -R`` < ``(-R to -.2)`` <
+         ``(-.2 to -.l)`` < ``(-.1 to 0)`` < ``(0 to .l)`` <
+         ``(.1 to .2)`` < ``(.2 to R)`` < ``Above R``
 
-   .. rubric:: Details
-      :name: details
+      ``count``
+         number of sovereigns
 
-   ``Bags`` 1-4 were selected as "near to standard", bags 5-7 as below
-   standard, bags 8-10 as above standard. This classification is
-   reflected in ``Group``.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      ``Bags`` 1-4 were selected as "near to standard", bags 5-7 as
+      below standard, bags 8-10 as above standard. This classification
+      is reflected in ``Group``.
 
-   Stigler, S. M. (1999). *Statistics on the Table*. Cambridge, MA:
-   Harvard University Press, table 21.1.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Stigler, S. M. (1999). *Statistics on the Table*. Cambridge, MA:
+      Harvard University Press, table 21.1.
 
-   Great Britain (1848). "Report of the Commissioners Appointed to
-   Inquire into the Constitution, Management and Expense of the Royal
-   Mint." In Vol 28 of *House Documents for 1849*.
+      .. rubric:: References
+         :name: references
 
-   Stigler, S. M. (1997). Eight Centuries of Sampling Inspection: The
-   Trial of the Pyx *Journal of the American Statistical Association*,
-   72(359), 493-500
+      Great Britain (1848). "Report of the Commissioners Appointed to
+      Inquire into the Constitution, Management and Expense of the Royal
+      Mint." In Vol 28 of *House Documents for 1849*.
 
-   .. rubric:: Examples
-      :name: examples
+      Stigler, S. M. (1997). Eight Centuries of Sampling Inspection: The
+      Trial of the Pyx *Journal of the American Statistical
+      Association*, 72(359), 493-500
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Pyx)
-      # display as table
-      xtabs(count ~ Bags+Deviation, data=Pyx)
+      ::
+
+         data(Pyx)
+         # display as table
+         xtabs(count ~ Bags+Deviation, data=Pyx)

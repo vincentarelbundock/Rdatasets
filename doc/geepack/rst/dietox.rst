@@ -1,84 +1,86 @@
 .. container::
 
-   ====== ===============
-   dietox R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Growth curves of pigs in a 3x3 factorial experiment
-      :name: dietox
+      ====== ===============
+      dietox R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Growth curves of pigs in a 3x3 factorial experiment
+         :name: growth-curves-of-pigs-in-a-3x3-factorial-experiment
 
-   The ``dietox`` data frame has 861 rows and 7 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``dietox`` data frame has 861 rows and 7 columns.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      dietox
+      ::
 
-   .. rubric:: Format
-      :name: format
+         dietox
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Weight
-      Weight in Kg
+      This data frame contains the following columns:
 
-   Feed
-      Cumulated feed intake in Kg
+      Weight
+         Weight in Kg
 
-   Time
-      Time (in weeks) in the experiment
+      Feed
+         Cumulated feed intake in Kg
 
-   Pig
-      Factor; id of each pig
+      Time
+         Time (in weeks) in the experiment
 
-   Evit
-      Factor; vitamin E dose; see 'details'.
+      Pig
+         Factor; id of each pig
 
-   Cu
-      Factor, copper dose; see 'details'
+      Evit
+         Factor; vitamin E dose; see 'details'.
 
-   Start
-      Start weight in experiment, i.e. weight at week 1.
+      Cu
+         Factor, copper dose; see 'details'
 
-   Litter
-      Factor, id of litter of each pig
+      Start
+         Start weight in experiment, i.e. weight at week 1.
 
-   .. rubric:: Details
-      :name: details
+      Litter
+         Factor, id of litter of each pig
 
-   Data contains weight of slaughter pigs measured weekly for 12 weeks.
-   Data also contains the startweight (i.e. the weight at week 1). The
-   treatments are 3 different levels of Evit = vitamin E (dose: 0, 100,
-   200 mg dl-alpha-tocopheryl acetat /kg feed) in combination with 3
-   different levels of Cu=copper (dose: 0, 35, 175 mg/kg feed) in the
-   feed. The cumulated feed intake is also recorded. The pigs are
-   littermates.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Data contains weight of slaughter pigs measured weekly for 12
+      weeks. Data also contains the startweight (i.e. the weight at week
+      1). The treatments are 3 different levels of Evit = vitamin E
+      (dose: 0, 100, 200 mg dl-alpha-tocopheryl acetat /kg feed) in
+      combination with 3 different levels of Cu=copper (dose: 0, 35, 175
+      mg/kg feed) in the feed. The cumulated feed intake is also
+      recorded. The pigs are littermates.
 
-   Lauridsen, C., Højsgaard, S.,Sørensen, M.T. C. (1999) Influence of
-   Dietary Rapeseed Oli, Vitamin E, and Copper on Performance and
-   Antioxidant and Oxidative Status of Pigs. J. Anim. Sci.77:906-916
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Lauridsen, C., Højsgaard, S.,Sørensen, M.T. C. (1999) Influence of
+      Dietary Rapeseed Oli, Vitamin E, and Copper on Performance and
+      Antioxidant and Oxidative Status of Pigs. J. Anim. Sci.77:906-916
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(dietox)
-      head(dietox)
-      ## Not run: 
-      if (require(ggplot2)){
-        qplot(Time, Weight, data=dietox, col=Pig) + geom_line() +
-              theme(legend.position = "none") + facet_grid(Evit~Cu)
-      } else {
-        coplot(Weight ~ Time | Evit * Cu, data=dietox)
-      }
+      ::
 
-      ## End(Not run)
+         data(dietox)
+         head(dietox)
+         ## Not run: 
+         if (require(ggplot2)){
+           qplot(Time, Weight, data=dietox, col=Pig) + geom_line() +
+                 theme(legend.position = "none") + facet_grid(Evit~Cu)
+         } else {
+           coplot(Weight ~ Time | Evit * Cu, data=dietox)
+         }
+
+         ## End(Not run)

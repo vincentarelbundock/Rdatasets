@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>TenMileRace</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='TenMileRace'>Cherry Blossom Race</h2>
+<h2>Cherry Blossom Race</h2>
 
 <h3>Description</h3>
 
@@ -38,26 +38,22 @@ are published.  This data frame  contains the results from the 2005 race.
 <p>A data frame with 8636 observations on the following variables.
 </p>
 
-<ul>
-<li><p><code>state</code> State of residence of runner.
-</p>
-</li>
-<li><p><code>time</code> Official time from starting gun to finish line.
-</p>
-</li>
-<li><p><code>net</code> The recorded time (in seconds) from when the runner crossed the starting
+<dl>
+<dt><code>state</code></dt><dd><p>State of residence of runner.</p>
+</dd>
+<dt><code>time</code></dt><dd><p>Official time from starting gun to finish line.</p>
+</dd>
+<dt><code>net</code></dt><dd><p>The recorded time (in seconds) from when the runner crossed the starting
 line to when the runner crossed the finish line.  This is generally
 less than the official time because of the large number of runners in
 the race: it takes time to reach the starting line after the gun has
-gone off.
-</p>
-</li>
-<li><p><code>age</code> Age of runner in years.
-</p>
-</li>
-<li><p><code>sex</code> A factor with levels <code>F</code> <code>M</code>.
-</p>
-</li></ul>
+gone off.</p>
+</dd>
+<dt><code>age</code></dt><dd><p>Age of runner in years.</p>
+</dd>
+<dt><code>sex</code></dt><dd><p>A factor with levels <code>F</code> <code>M</code>.</p>
+</dd>
+</dl>
 
 
 
@@ -65,13 +61,14 @@ gone off.
 
 <pre><code class='language-R'>data(TenMileRace)
 if (require(ggformula)) {
-  gf_point(net ~ age | sex, data = TenMileRace, color = ~sex, alpha = 0.1) %&gt;%
+  gf_point(net ~ age | sex, data = TenMileRace, color = ~sex, alpha = 0.1) |&gt;
   gf_density2d(color = "gray40")
   lm(net ~ age + sex, data = TenMileRace)
 }
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

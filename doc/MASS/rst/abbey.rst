@@ -1,32 +1,34 @@
 .. container::
 
-   ===== ===============
-   abbey R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Determinations of Nickel Content
-      :name: abbey
+      ===== ===============
+      abbey R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Determinations of Nickel Content
+         :name: determinations-of-nickel-content
 
-   A numeric vector of 31 determinations of nickel content (ppm) in a
-   Canadian syenite rock.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A numeric vector of 31 determinations of nickel content (ppm) in a
+      Canadian syenite rock.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      abbey
+      ::
 
-   .. rubric:: Source
-      :name: source
+         abbey
 
-   S. Abbey (1988) *Geostandards Newsletter* **12**, 241.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      S. Abbey (1988) *Geostandards Newsletter* **12**, 241.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

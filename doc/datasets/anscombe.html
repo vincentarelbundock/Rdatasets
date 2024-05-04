@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>anscombe</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='anscombe'>Anscombe's Quartet of &lsquo;Identical&rsquo; Simple Linear Regressions</h2>
+<h2>Anscombe's Quartet of &lsquo;Identical&rsquo; Simple Linear Regressions</h2>
 
 <h3>Description</h3>
 
@@ -39,15 +39,16 @@ etc.), yet are quite different.
 <table>
 <tr>
  <td style="text-align: right;">
-    x1 == x2 == x3 </td><td style="text-align: left;"> the integers 4:14, specially arranged </td>
+    <code>x1</code> == <code>x2</code> == <code>x3</code> </td><td style="text-align: left;"> the integers 4:14, specially arranged </td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    x4             </td><td style="text-align: left;"> values 8 and 19 </td>
+    <code>x4</code>             </td><td style="text-align: left;"> values 8 and 19 </td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    y1, y2, y3, y4 </td><td style="text-align: left;"> numbers in (3, 12.5) with mean 7.5 and sdev 2.03</td>
+    <code>y1</code>, <code>y2</code>, <code>y3</code>, <code>y4</code> </td><td style="text-align: left;"> numbers in (3, 12.5)
+    with mean 7.5 and standard deviation 2.03</td>
 </tr>
 
 </table>
@@ -103,6 +104,7 @@ mtext("Anscombe's 4 Regression data sets", outer = TRUE, cex = 1.5)
 par(op)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

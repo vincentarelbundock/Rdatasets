@@ -1,119 +1,122 @@
 .. container::
 
-   ====== ===============
-   Mroz87 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: U.S. Women's Labor Force Participation
-      :name: Mroz87
+      ====== ===============
+      Mroz87 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: U.S. Women's Labor Force Participation
+         :name: u.s.-womens-labor-force-participation
 
-   The ``Mroz87`` data frame contains data about 753 married women.
-   These data are collected within the "Panel Study of Income Dynamics"
-   (PSID). Of the 753 observations, the first 428 are for women with
-   positive hours worked in 1975, while the remaining 325 observations
-   are for women who did not work for pay in 1975. A more complete
-   discussion of the data is found in Mroz (1987), Appendix 1.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Mroz87`` data frame contains data about 753 married women.
+      These data are collected within the "Panel Study of Income
+      Dynamics" (PSID). Of the 753 observations, the first 428 are for
+      women with positive hours worked in 1975, while the remaining 325
+      observations are for women who did not work for pay in 1975. A
+      more complete discussion of the data is found in Mroz (1987),
+      Appendix 1.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Mroz87)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Mroz87)
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   lfp
-      Dummy variable for labor-force participation.
+      This data frame contains the following columns:
 
-   hours
-      Wife's hours of work in 1975.
+      lfp
+         Dummy variable for labor-force participation.
 
-   kids5
-      Number of children 5 years old or younger.
+      hours
+         Wife's hours of work in 1975.
 
-   kids618
-      Number of children 6 to 18 years old.
+      kids5
+         Number of children 5 years old or younger.
 
-   age
-      Wife's age.
+      kids618
+         Number of children 6 to 18 years old.
 
-   educ
-      Wife's educational attainment, in years.
+      age
+         Wife's age.
 
-   wage
-      Wife's average hourly earnings, in 1975 dollars.
+      educ
+         Wife's educational attainment, in years.
 
-   repwage
-      Wife's wage reported at the time of the 1976 interview.
+      wage
+         Wife's average hourly earnings, in 1975 dollars.
 
-   hushrs
-      Husband's hours worked in 1975.
+      repwage
+         Wife's wage reported at the time of the 1976 interview.
 
-   husage
-      Husband's age.
+      hushrs
+         Husband's hours worked in 1975.
 
-   huseduc
-      Husband's educational attainment, in years.
+      husage
+         Husband's age.
 
-   huswage
-      Husband's wage, in 1975 dollars.
+      huseduc
+         Husband's educational attainment, in years.
 
-   faminc
-      Family income, in 1975 dollars.
+      huswage
+         Husband's wage, in 1975 dollars.
 
-   mtr
-      Marginal tax rate facing the wife.
+      faminc
+         Family income, in 1975 dollars.
 
-   motheduc
-      Wife's mother's educational attainment, in years.
+      mtr
+         Marginal tax rate facing the wife.
 
-   fatheduc
-      Wife's father's educational attainment, in years.
+      motheduc
+         Wife's mother's educational attainment, in years.
 
-   unem
-      Unemployment rate in county of residence, in percentage points.
+      fatheduc
+         Wife's father's educational attainment, in years.
 
-   city
-      Dummy variable = 1 if live in large city, else 0.
+      unem
+         Unemployment rate in county of residence, in percentage points.
 
-   exper
-      Actual years of wife's previous labor market experience.
+      city
+         Dummy variable = 1 if live in large city, else 0.
 
-   nwifeinc
-      Non-wife income.
+      exper
+         Actual years of wife's previous labor market experience.
 
-   wifecoll
-      Dummy variable for wife's college attendance.
+      nwifeinc
+         Non-wife income.
 
-   huscoll
-      Dummy variable for husband's college attendance.
+      wifecoll
+         Dummy variable for wife's college attendance.
 
-   .. rubric:: Source
-      :name: source
+      huscoll
+         Dummy variable for husband's college attendance.
 
-   Mroz, T. A. (1987) The sensitivity of an empirical model of married
-   women's hours of work to economic and statistical assumptions.
-   *Econometrica* **55**, 765–799.
+      .. rubric:: Source
+         :name: source
 
-   PSID Staff, The Panel Study of Income Dynamics, Institute for Social
-   ResearchPanel Study of Income Dynamics, University of Michigan,
-   https://psidonline.isr.umich.edu.
+      Mroz, T. A. (1987) The sensitivity of an empirical model of
+      married women's hours of work to economic and statistical
+      assumptions. *Econometrica* **55**, 765–799.
 
-   .. rubric:: Examples
-      :name: examples
+      PSID Staff, The Panel Study of Income Dynamics, Institute for
+      Social ResearchPanel Study of Income Dynamics, University of
+      Michigan, https://psidonline.isr.umich.edu.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## Wooldridge( 2003 ): example 17.5, page 590
-      data( Mroz87 )
-      # Two-step estimation
-      summary( heckit( lfp ~ nwifeinc + educ + exper + I( exper^2 ) + age +
-         kids5 + kids618, log( wage ) ~ educ + exper + I( exper^2 ), Mroz87,
-         method = "2step" ) )
+      ::
+
+         ## Wooldridge( 2003 ): example 17.5, page 590
+         data( Mroz87 )
+         # Two-step estimation
+         summary( heckit( lfp ~ nwifeinc + educ + exper + I( exper^2 ) + age +
+            kids5 + kids618, log( wage ) ~ educ + exper + I( exper^2 ), Mroz87,
+            method = "2step" ) )

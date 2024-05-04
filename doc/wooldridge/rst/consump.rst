@@ -1,96 +1,98 @@
 .. container::
 
-   ======= ===============
-   consump R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: consump
-      :name: consump
+      ======= ===============
+      consump R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: consump
+         :name: consump
 
-   Wooldridge Source: I collected these data from the 1997 Economic
-   Report of the President. Specifically, the data come from Tables
-   B-71, 15, 29, and 32. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: I collected these data from the 1997 Economic
+      Report of the President. Specifically, the data come from Tables
+      B-71, 15, 29, and 32. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('consump')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('consump')
 
-   A data.frame with 37 observations on 24 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1959-1995
+      A data.frame with 37 observations on 24 variables:
 
-   -  **i3:** 3 mo. T-bill rate
+      -  **year:** 1959-1995
 
-   -  **inf:** inflation rate; CPI
+      -  **i3:** 3 mo. T-bill rate
 
-   -  **rdisp:** disp. inc., 1992 $, bils.
+      -  **inf:** inflation rate; CPI
 
-   -  **rnondc:** nondur. cons., 1992 $, bils.
+      -  **rdisp:** disp. inc., 1992 $, bils.
 
-   -  **rserv:** services, 1992 $, bils.
+      -  **rnondc:** nondur. cons., 1992 $, bils.
 
-   -  **pop:** population, 1000s
+      -  **rserv:** services, 1992 $, bils.
 
-   -  **y:** per capita real disp. inc.
+      -  **pop:** population, 1000s
 
-   -  **rcons:** rnondc + rserv
+      -  **y:** per capita real disp. inc.
 
-   -  **c:** per capita real cons.
+      -  **rcons:** rnondc + rserv
 
-   -  **r3:** i3 - inf; real ex post int.
+      -  **c:** per capita real cons.
 
-   -  **lc:** log(c)
+      -  **r3:** i3 - inf; real ex post int.
 
-   -  **ly:** log(y)
+      -  **lc:** log(c)
 
-   -  **gc:** lc - lc[\_n-1]
+      -  **ly:** log(y)
 
-   -  **gy:** ly - ly[\_n-1]
+      -  **gc:** lc - lc[_n-1]
 
-   -  **gc_1:** gc[\_n-1]
+      -  **gy:** ly - ly[_n-1]
 
-   -  **gy_1:** gy[\_n-1]
+      -  **gc_1:** gc[_n-1]
 
-   -  **r3_1:** r3[\_n-1]
+      -  **gy_1:** gy[_n-1]
 
-   -  **lc_ly:** lc - ly
+      -  **r3_1:** r3[_n-1]
 
-   -  **lc_ly_1:** lc_ly[\_n-1]
+      -  **lc_ly:** lc - ly
 
-   -  **gc_2:** gc[\_n-2]
+      -  **lc_ly_1:** lc_ly[_n-1]
 
-   -  **gy_2:** gy[\_n-2]
+      -  **gc_2:** gc[_n-2]
 
-   -  **r3_2:** r3[\_n-2]
+      -  **gy_2:** gy[_n-2]
 
-   -  **lc_ly_2:** lc_ly[\_n-2]
+      -  **r3_2:** r3[_n-2]
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lc_ly_2:** lc_ly[_n-2]
 
-   For a student interested in time series methods, updating this data
-   set and using it in a manner similar to that in the text could be
-   acceptable as a final project.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 377-378, 408-409, 442, 570-571, 579, 673
+      For a student interested in time series methods, updating this
+      data set and using it in a manner similar to that in the text
+      could be acceptable as a final project.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 377-378, 408-409, 442, 570-571, 579, 673
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(consump)
+      ::
+
+          str(consump)

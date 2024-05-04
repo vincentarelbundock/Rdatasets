@@ -1,59 +1,61 @@
 .. container::
 
-   == ===============
-   MW R Documentation
-   == ===============
+   .. container::
 
-   .. rubric:: Growth of Disposable Income and Treasury Bill Rate
-      :name: MW
+      == ===============
+      MW R Documentation
+      == ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Growth of Disposable Income and Treasury Bill Rate
+         :name: growth-of-disposable-income-and-treasury-bill-rate
 
-   quarterly observations from 1963-3 to 1975-4
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 50
+      quarterly observations from 1963-3 to 1975-4
 
-   *observation* : country
+      *number of observations* : 50
 
-   *country* : United States
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(MW)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(MW)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   rdi
-      the rate of growth of real U.S. disposable income, seasonally
-      adjusted
+      A time series containing :
 
-   trate
-      the U.S. treasury bill rate
+      rdi
+         the rate of growth of real U.S. disposable income, seasonally
+         adjusted
 
-   .. rubric:: Source
-      :name: source
+      trate
+         the U.S. treasury bill rate
 
-   MacKinnon, J. G. and H. T. White (1985) “Some heteroskedasticity
-   consistent covariance matrix estimators with improved finite sample
-   properties”, *Journal of Econometrics*, **29**, 305-325.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      MacKinnon, J. G. and H. T. White (1985) “Some heteroskedasticity
+      consistent covariance matrix estimators with improved finite
+      sample properties”, *Journal of Econometrics*, **29**, 305-325.
 
-   Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
-   Methods*, New York, Oxford University Press, chapter 5.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
+      Methods*, New York, Oxford University Press, chapter 5.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

@@ -1,62 +1,64 @@
 .. container::
 
-   ===== ===============
-   Money R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Money, GDP and Interest Rate in Canada
-      :name: Money
+      ===== ===============
+      Money R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Money, GDP and Interest Rate in Canada
+         :name: money-gdp-and-interest-rate-in-canada
 
-   quarterly observations from 1967-1 to 1998-4
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 128
+      quarterly observations from 1967-1 to 1998-4
 
-   *observation* : country
+      *number of observations* : 128
 
-   *country* : Canada
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Canada
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Money)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Money)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   m
-      log of the real money supply
+      A time series containing :
 
-   y
-      the log of GDP, in 1992 dollars, seasonally adjusted
+      m
+         log of the real money supply
 
-   p
-      the log of the price level
+      y
+         the log of GDP, in 1992 dollars, seasonally adjusted
 
-   r
-      the 3-month treasury till rate
+      p
+         the log of the price level
 
-   .. rubric:: Source
-      :name: source
+      r
+         the 3-month treasury till rate
 
-   CANSIM Database of Statistics Canada.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      CANSIM Database of Statistics Canada.
 
-   Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
-   Methods*, New York, Oxford University Press, chapter 7 and 8.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
+      Methods*, New York, Oxford University Press, chapter 7 and 8.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

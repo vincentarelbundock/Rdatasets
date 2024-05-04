@@ -1,91 +1,94 @@
 .. container::
 
-   =============== ===============
-   Electricity1970 R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: Cost Function of Electricity Producers 1970
-      :name: Electricity1970
+      =============== ===============
+      Electricity1970 R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cost Function of Electricity Producers 1970
+         :name: cost-function-of-electricity-producers-1970
 
-   Cross-section data, at the firm level, on electric power generation.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-section data, at the firm level, on electric power
+      generation.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Electricity1970")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Electricity1970")
 
-   A data frame containing 158 cross-section observations on 9
-   variables.
+      .. rubric:: Format
+         :name: format
 
-   cost
-      total cost.
+      A data frame containing 158 cross-section observations on 9
+      variables.
 
-   output
-      total output.
+      cost
+         total cost.
 
-   labor
-      wage rate.
+      output
+         total output.
 
-   laborshare
-      cost share for labor.
+      labor
+         wage rate.
 
-   capital
-      capital price index.
+      laborshare
+         cost share for labor.
 
-   capitalshare
-      cost share for capital.
+      capital
+         capital price index.
 
-   fuel
-      fuel price.
+      capitalshare
+         cost share for capital.
 
-   fuelshare
-      cost share for fuel.
+      fuel
+         fuel price.
 
-   .. rubric:: Details
-      :name: details
+      fuelshare
+         cost share for fuel.
 
-   The data are from Christensen and Greene (1976) and pertain to the
-   year 1970. However, the file contains some extra observations, the
-   holding companies. Only the first 123 observations are needed to
-   replicate Christensen and Greene (1976).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The data are from Christensen and Greene (1976) and pertain to the
+      year 1970. However, the file contains some extra observations, the
+      holding companies. Only the first 123 observations are needed to
+      replicate Christensen and Greene (1976).
 
-   Online complements to Greene (2003), Table F5.2.
+      .. rubric:: Source
+         :name: source
 
-   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+      Online complements to Greene (2003), Table F5.2.
 
-   .. rubric:: References
-      :name: references
+      https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-   Christensen, L. and Greene, W.H. (1976). Economies of Scale in U.S.
-   Electric Power Generation. *Journal of Political Economy*, **84**,
-   655–676.
+      .. rubric:: References
+         :name: references
 
-   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
-   Saddle River, NJ: Prentice Hall.
+      Christensen, L. and Greene, W.H. (1976). Economies of Scale in
+      U.S. Electric Power Generation. *Journal of Political Economy*,
+      **84**, 655–676.
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+      Saddle River, NJ: Prentice Hall.
 
-   ``Greene2003``, ``Electricity1955``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Greene2003``, ``Electricity1955``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("Electricity1970")
+      ::
 
-      ## Greene (2003), Ex. 5.6: a generalized Cobb-Douglas cost function
-      fm <- lm(log(cost/fuel) ~ log(output) + I(log(output)^2/2) + 
-        log(capital/fuel) + log(labor/fuel), data=Electricity1970[1:123,])
+         data("Electricity1970")
+
+         ## Greene (2003), Ex. 5.6: a generalized Cobb-Douglas cost function
+         fm <- lm(log(cost/fuel) ~ log(output) + I(log(output)^2/2) + 
+           log(capital/fuel) + log(labor/fuel), data=Electricity1970[1:123,])

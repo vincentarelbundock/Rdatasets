@@ -1,68 +1,70 @@
 .. container::
 
-   ====== ===============
-   ukdemo R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: United Kingdom Demographic Data
-      :name: ukdemo
+      ====== ===============
+      ukdemo R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: United Kingdom Demographic Data
+         :name: united-kingdom-demographic-data
 
-   This data set comes from the Guardian's Data Blog and includes five
-   financial demographic variables.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set comes from the Guardian's Data Blog and includes
+      five financial demographic variables.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      ukdemo
+      ::
 
-   .. rubric:: Format
-      :name: format
+         ukdemo
 
-   A data frame with 12 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   region
-      Region in the United Kingdom
+      A data frame with 12 observations on the following 6 variables.
 
-   debt
-      Average regional debt, not including mortgages, in pounds
+      region
+         Region in the United Kingdom
 
-   unemployment
-      Percent unemployment
+      debt
+         Average regional debt, not including mortgages, in pounds
 
-   house
-      Average house price, in pounds
+      unemployment
+         Percent unemployment
 
-   pay
-      Average hourly pay, in pounds
+      house
+         Average house price, in pounds
 
-   rpi
-      Retail price index, which is standardized to 100 for the entire
-      UK, and lower index scores correspond to lower prices
+      pay
+         Average hourly pay, in pounds
 
-   .. rubric:: Source
-      :name: source
+      rpi
+         Retail price index, which is standardized to 100 for the entire
+         UK, and lower index scores correspond to lower prices
 
-   The data was described in the Guardian Data Blog:
-   https://www.theguardian.com/news/datablog/interactive/2011/oct/27/debt-money-expert-facts,
-   retrieved 2011-11-01.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The data was described in the Guardian Data Blog:
+      https://www.theguardian.com/news/datablog/interactive/2011/oct/27/debt-money-expert-facts,
+      retrieved 2011-11-01.
 
-   Guardian Data Blog
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Guardian Data Blog
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(ukdemo, aes(x = pay, y = rpi)) +
-        geom_point() +
-        labs(x = "Average hourly pay", y = "Retail price index")
+         library(ggplot2)
+
+         ggplot(ukdemo, aes(x = pay, y = rpi)) +
+           geom_point() +
+           labs(x = "Average hourly pay", y = "Retail price index")

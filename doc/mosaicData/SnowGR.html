@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>SnowGR</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='SnowGR'>Snowfall data for Grand Rapids, MI</h2>
+<h2>Snowfall data for Grand Rapids, MI</h2>
 
 <h3>Description</h3>
 
@@ -35,52 +35,38 @@ function processMathHTML() {
 <p>A data frame with 119 observations of the following variables.
 </p>
 
-<ul>
-<li> <p><code>SeasonStart</code> Year in which season started (July is start of season)
-</p>
-</li>
-<li> <p><code>SeasonEnd</code> Year in which season ended (June is end of season)
-</p>
-</li>
-<li> <p><code>Jul</code> Inches of snow in July
-</p>
-</li>
-<li> <p><code>Aug</code> Inches of snow in August
-</p>
-</li>
-<li> <p><code>Sep</code> Inches of snow in September
-</p>
-</li>
-<li> <p><code>Oct</code> Inches of snow in October
-</p>
-</li>
-<li> <p><code>Nov</code> Inches of snow in November
-</p>
-</li>
-<li> <p><code>Dec</code> Inches of snow in December
-</p>
-</li>
-<li> <p><code>Jan</code> Inches of snow in January
-</p>
-</li>
-<li> <p><code>Feb</code> Inches of snow in February
-</p>
-</li>
-<li> <p><code>Mar</code> Inches of snow in March
-</p>
-</li>
-<li> <p><code>Apr</code> Inches of snow in April
-</p>
-</li>
-<li> <p><code>May</code> Inches of snow in May
-</p>
-</li>
-<li> <p><code>Jun</code> Inches of snow in June
-</p>
-</li>
-<li> <p><code>Total</code> Inches of snow for entire season (July-June)
-</p>
-</li></ul>
+<dl>
+<dt><code>SeasonStart</code></dt><dd><p>Year in which season started (July is start of season)</p>
+</dd>
+<dt><code>SeasonEnd</code></dt><dd><p>Year in which season ended (June is end of season)</p>
+</dd>
+<dt><code>Jul</code></dt><dd><p>Inches of snow in July</p>
+</dd>
+<dt><code>Aug</code></dt><dd><p>Inches of snow in August</p>
+</dd>
+<dt><code>Sep</code></dt><dd><p>Inches of snow in September</p>
+</dd>
+<dt><code>Oct</code></dt><dd><p>Inches of snow in October</p>
+</dd>
+<dt><code>Nov</code></dt><dd><p>Inches of snow in November</p>
+</dd>
+<dt><code>Dec</code></dt><dd><p>Inches of snow in December</p>
+</dd>
+<dt><code>Jan</code></dt><dd><p>Inches of snow in January</p>
+</dd>
+<dt><code>Feb</code></dt><dd><p>Inches of snow in February</p>
+</dd>
+<dt><code>Mar</code></dt><dd><p>Inches of snow in March</p>
+</dd>
+<dt><code>Apr</code></dt><dd><p>Inches of snow in April</p>
+</dd>
+<dt><code>May</code></dt><dd><p>Inches of snow in May</p>
+</dd>
+<dt><code>Jun</code></dt><dd><p>Inches of snow in June</p>
+</dd>
+<dt><code>Total</code></dt><dd><p>Inches of snow for entire season (July-June)</p>
+</dd>
+</dl>
 
 
 
@@ -99,14 +85,14 @@ is no longer in service.
 if (require(ggformula)) {
   df_stats(~ Total, data = SnowGR)
   gf_histogram( ~ Total, data = SnowGR)
-  gf_point(Total ~ SeasonStart, data = SnowGR) %&gt;%
+  gf_point(Total ~ SeasonStart, data = SnowGR) |&gt;
     gf_smooth()
-    
+
   if (require(tidyr) &amp;&amp; require(dplyr)) {
-    Snow2 &lt;- 
-      SnowGR %&gt;%
-      pivot_longer(Jul:Total, names_to = "month", values_to = "snowfall") %&gt;%
-      filter(month != "Total") %&gt;%
+    Snow2 &lt;-
+      SnowGR |&gt;
+      pivot_longer(Jul:Total, names_to = "month", values_to = "snowfall") |&gt;
+      filter(month != "Total") |&gt;
       mutate(month = factor(month, levels = unique(month)))
     gf_violin(snowfall ~ month, data = Snow2, scale = "width")
   }
@@ -114,6 +100,7 @@ if (require(ggformula)) {
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

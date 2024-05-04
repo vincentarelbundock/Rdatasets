@@ -1,88 +1,91 @@
 .. container::
 
-   ======= ===============
-   jtrain3 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: jtrain3
-      :name: jtrain3
+      ======= ===============
+      jtrain3 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: jtrain3
+         :name: jtrain3
 
-   Wooldridge Source: R.H. Dehejia and S. Wahba (1999), “Causal Effects
-   in Nonexperimental Studies: Reevaluating the Evaluation of Training
-   Programs,” Journal of the American Statistical Association 94,
-   1053-1062. Professor Sergio Firpo, at the University of British
-   Columbia, has used this data set in his recent work, and he kindly
-   provided it to me. This data set is a subset of that originally used
-   by Lalonde in the study cited for JTRAIN2.RAW. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: R.H. Dehejia and S. Wahba (1999), “Causal
+      Effects in Nonexperimental Studies: Reevaluating the Evaluation of
+      Training Programs,” Journal of the American Statistical
+      Association 94, 1053-1062. Professor Sergio Firpo, at the
+      University of British Columbia, has used this data set in his
+      recent work, and he kindly provided it to me. This data set is a
+      subset of that originally used by Lalonde in the study cited for
+      JTRAIN2.RAW. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('jtrain3')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('jtrain3')
 
-   A data.frame with 2675 observations on 20 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **train:** =1 if in job training
+      A data.frame with 2675 observations on 20 variables:
 
-   -  **age:** in years, 1977
+      -  **train:** =1 if in job training
 
-   -  **educ:** years of schooling
+      -  **age:** in years, 1977
 
-   -  **black:** =1 if black
+      -  **educ:** years of schooling
 
-   -  **hisp:** =1 if Hispanic
+      -  **black:** =1 if black
 
-   -  **married:** =1 if married
+      -  **hisp:** =1 if Hispanic
 
-   -  **re74:** '74 earnings, $1000s '82
+      -  **married:** =1 if married
 
-   -  **re75:** '75 earnings, $1000s '82
+      -  **re74:** '74 earnings, $1000s '82
 
-   -  **unem75:** =1 if unem. all of '75
+      -  **re75:** '75 earnings, $1000s '82
 
-   -  **unem74:** =1 if unem. all of '74
+      -  **unem75:** =1 if unem. all of '75
 
-   -  **re78:** '78 earnings, $1000s '82
+      -  **unem74:** =1 if unem. all of '74
 
-   -  **agesq:** age^2
+      -  **re78:** '78 earnings, $1000s '82
 
-   -  **trre74:** train*re74
+      -  **agesq:** age^2
 
-   -  **trre75:** train*re75
+      -  **trre74:** train*re74
 
-   -  **trun74:** train*unem74
+      -  **trre75:** train*re75
 
-   -  **trun75:** train*unem75
+      -  **trun74:** train*unem74
 
-   -  **avgre:** (re74 + re75)/2
+      -  **trun75:** train*unem75
 
-   -  **travgre:** train*avgre
+      -  **avgre:** (re74 + re75)/2
 
-   -  **unem78:** =1 if unem. all of '78
+      -  **travgre:** train*avgre
 
-   -  **em78:** 1 - unem78
+      -  **unem78:** =1 if unem. all of '78
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **em78:** 1 - unem78
 
-   pages 340-341, 480-481
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 340-341, 480-481
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(jtrain3)
+      ::
+
+          str(jtrain3)

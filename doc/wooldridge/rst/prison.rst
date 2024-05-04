@@ -1,136 +1,138 @@
 .. container::
 
-   ====== ===============
-   prison R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: prison
-      :name: prison
+      ====== ===============
+      prison R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: prison
+         :name: prison
 
-   Wooldridge Source: S.D. Levitt (1996), “The Effect of Prison
-   Population Size on Crime Rates: Evidence from Prison Overcrowding
-   Legislation,” Quarterly Journal of Economics 111, 319-351. Professor
-   Levitt kindly provided me with the data, of which I used a subset.
-   Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: S.D. Levitt (1996), “The Effect of Prison
+      Population Size on Crime Rates: Evidence from Prison Overcrowding
+      Legislation,” Quarterly Journal of Economics 111, 319-351.
+      Professor Levitt kindly provided me with the data, of which I used
+      a subset. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('prison')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('prison')
 
-   A data.frame with 714 observations on 45 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **state:** alphabetical; DC = 9
+      A data.frame with 714 observations on 45 variables:
 
-   -  **year:** 80 to 93
+      -  **state:** alphabetical; DC = 9
 
-   -  **govelec:** =1 if gubernatorial election
+      -  **year:** 80 to 93
 
-   -  **black:** proportion black
+      -  **govelec:** =1 if gubernatorial election
 
-   -  **metro:** proportion in metro. areas
+      -  **black:** proportion black
 
-   -  **unem:** proportion unemployed
+      -  **metro:** proportion in metro. areas
 
-   -  **criv:** viol. crimes per 100,000
+      -  **unem:** proportion unemployed
 
-   -  **crip:** prop. crimes per 100,000
+      -  **criv:** viol. crimes per 100,000
 
-   -  **lcriv:** log(criv)
+      -  **crip:** prop. crimes per 100,000
 
-   -  **lcrip:** log(crip)
+      -  **lcriv:** log(criv)
 
-   -  **gcriv:** lcriv - lcriv_1
+      -  **lcrip:** log(crip)
 
-   -  **gcrip:** lcrip - lcrip_1
+      -  **gcriv:** lcriv - lcriv_1
 
-   -  **y81:** =1 if year == 81
+      -  **gcrip:** lcrip - lcrip_1
 
-   -  **y82:**
+      -  **y81:** =1 if year == 81
 
-   -  **y83:**
+      -  **y82:**
 
-   -  **y84:**
+      -  **y83:**
 
-   -  **y85:**
+      -  **y84:**
 
-   -  **y86:**
+      -  **y85:**
 
-   -  **y87:**
+      -  **y86:**
 
-   -  **y88:**
+      -  **y87:**
 
-   -  **y89:**
+      -  **y88:**
 
-   -  **y90:**
+      -  **y89:**
 
-   -  **y91:**
+      -  **y90:**
 
-   -  **y92:**
+      -  **y91:**
 
-   -  **y93:**
+      -  **y92:**
 
-   -  **ag0_14:** prop. pop. 0 to 14 yrs
+      -  **y93:**
 
-   -  **ag15_17:** prop. pop. 15 to 17 yrs
+      -  **ag0_14:** prop. pop. 0 to 14 yrs
 
-   -  **ag18_24:** prop. pop. 18 to 24 yrs
+      -  **ag15_17:** prop. pop. 15 to 17 yrs
 
-   -  **ag25_34:** prop. pop. 25 to 34 yrs
+      -  **ag18_24:** prop. pop. 18 to 24 yrs
 
-   -  **incpc:** per capita income, nominal
+      -  **ag25_34:** prop. pop. 25 to 34 yrs
 
-   -  **polpc:** police per 100,000 residents
+      -  **incpc:** per capita income, nominal
 
-   -  **gincpc:** log(incpc) - log(incpc_1)
+      -  **polpc:** police per 100,000 residents
 
-   -  **gpolpc:** lpolpc - lpolpc_1
+      -  **gincpc:** log(incpc) - log(incpc_1)
 
-   -  **cag0_14:** change in ag0_14
+      -  **gpolpc:** lpolpc - lpolpc_1
 
-   -  **cag15_17:** change in ag15_17
+      -  **cag0_14:** change in ag0_14
 
-   -  **cag18_24:** change in ag18_24
+      -  **cag15_17:** change in ag15_17
 
-   -  **cag25_34:** change in ag25_34
+      -  **cag18_24:** change in ag18_24
 
-   -  **cunem:** change in unem
+      -  **cag25_34:** change in ag25_34
 
-   -  **cblack:** change in black
+      -  **cunem:** change in unem
 
-   -  **cmetro:** change in metro
+      -  **cblack:** change in black
 
-   -  **pris:** prison pop. per 100,000
+      -  **cmetro:** change in metro
 
-   -  **lpris:** log(pris)
+      -  **pris:** prison pop. per 100,000
 
-   -  **gpris:** lpris - lpris[\_n-1]
+      -  **lpris:** log(pris)
 
-   -  **final1:** =1 if fnl dec on litig, curr yr
+      -  **gpris:** lpris - lpris[_n-1]
 
-   -  **final2:** =1 if dec on litig, prev 2 yrs
+      -  **final1:** =1 if fnl dec on litig, curr yr
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **final2:** =1 if dec on litig, prev 2 yrs
 
-   pages 573-574
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 573-574
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(prison)
+      ::
+
+          str(prison)

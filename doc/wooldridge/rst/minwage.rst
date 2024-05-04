@@ -1,164 +1,166 @@
 .. container::
 
-   ======= ===============
-   minwage R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: minwage
-      :name: minwage
+      ======= ===============
+      minwage R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: minwage
+         :name: minwage
 
-   Wooldridge Source: P. Wolfson and D. Belman (2004), “The Minimum
-   Wage: Consequences for Prices and Quantities in Low-Wage Labor
-   Markets,” Journal of Business & Economic Statistics 22, 296-311.
-   Professor Belman kindly provided the data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: P. Wolfson and D. Belman (2004), “The Minimum
+      Wage: Consequences for Prices and Quantities in Low-Wage Labor
+      Markets,” Journal of Business & Economic Statistics 22, 296-311.
+      Professor Belman kindly provided the data. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('minwage')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('minwage')
 
-   A data.frame with 612 observations on 58 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **emp232:** employment, sector 232, 1000s
+      A data.frame with 612 observations on 58 variables:
 
-   -  **wage232:** hourly wage, sector 232, $
+      -  **emp232:** employment, sector 232, 1000s
 
-   -  **emp236:**
+      -  **wage232:** hourly wage, sector 232, $
 
-   -  **wage236:**
+      -  **emp236:**
 
-   -  **emp234:**
+      -  **wage236:**
 
-   -  **wage234:**
+      -  **emp234:**
 
-   -  **emp314:**
+      -  **wage234:**
 
-   -  **wage314:**
+      -  **emp314:**
 
-   -  **emp228:**
+      -  **wage314:**
 
-   -  **wage228:**
+      -  **emp228:**
 
-   -  **emp233:**
+      -  **wage228:**
 
-   -  **wage233:**
+      -  **emp233:**
 
-   -  **emp394:**
+      -  **wage233:**
 
-   -  **wage394:**
+      -  **emp394:**
 
-   -  **emp231:**
+      -  **wage394:**
 
-   -  **wage231:**
+      -  **emp231:**
 
-   -  **emp226:**
+      -  **wage231:**
 
-   -  **wage226:**
+      -  **emp226:**
 
-   -  **emp387:**
+      -  **wage226:**
 
-   -  **wage387:**
+      -  **emp387:**
 
-   -  **emp056:**
+      -  **wage387:**
 
-   -  **wage056:**
+      -  **emp056:**
 
-   -  **unem:** civilian unemployment rate, percent
+      -  **wage056:**
 
-   -  **cpi:** Consumer Price Index (urban), 1982-1984 = 100
+      -  **unem:** civilian unemployment rate, percent
 
-   -  **minwage:** Federal minimum wage, $/hour
+      -  **cpi:** Consumer Price Index (urban), 1982-1984 = 100
 
-   -  **lemp232:** log(emp232)
+      -  **minwage:** Federal minimum wage, $/hour
 
-   -  **lwage232:** log(wage232)
+      -  **lemp232:** log(emp232)
 
-   -  **gemp232:** lemp232 - lemp232[\_n-1]
+      -  **lwage232:** log(wage232)
 
-   -  **gwage232:** lwage232 - lwage232[\_n-1]
+      -  **gemp232:** lemp232 - lemp232[_n-1]
 
-   -  **lminwage:** log(minwage)
+      -  **gwage232:** lwage232 - lwage232[_n-1]
 
-   -  **gmwage:** lminwage - lminwage[\_n-1]
+      -  **lminwage:** log(minwage)
 
-   -  **gmwage_1:** gmwage[\_n-1]
+      -  **gmwage:** lminwage - lminwage[_n-1]
 
-   -  **gmwage_2:**
+      -  **gmwage_1:** gmwage[_n-1]
 
-   -  **gmwage_3:**
+      -  **gmwage_2:**
 
-   -  **gmwage_4:**
+      -  **gmwage_3:**
 
-   -  **gmwage_5:**
+      -  **gmwage_4:**
 
-   -  **gmwage_6:**
+      -  **gmwage_5:**
 
-   -  **gmwage_7:**
+      -  **gmwage_6:**
 
-   -  **gmwage_8:**
+      -  **gmwage_7:**
 
-   -  **gmwage_9:**
+      -  **gmwage_8:**
 
-   -  **gmwage_10:**
+      -  **gmwage_9:**
 
-   -  **gmwage_11:**
+      -  **gmwage_10:**
 
-   -  **gmwage_12:**
+      -  **gmwage_11:**
 
-   -  **lemp236:**
+      -  **gmwage_12:**
 
-   -  **gcpi:** lcpi - lcpi[\_n-1]
+      -  **lemp236:**
 
-   -  **lcpi:** log(cpi)
+      -  **gcpi:** lcpi - lcpi[_n-1]
 
-   -  **lwage236:**
+      -  **lcpi:** log(cpi)
 
-   -  **gemp236:**
+      -  **lwage236:**
 
-   -  **gwage236:**
+      -  **gemp236:**
 
-   -  **lemp234:**
+      -  **gwage236:**
 
-   -  **lwage234:**
+      -  **lemp234:**
 
-   -  **gemp234:**
+      -  **lwage234:**
 
-   -  **gwage234:**
+      -  **gemp234:**
 
-   -  **lemp314:**
+      -  **gwage234:**
 
-   -  **lwage314:**
+      -  **lemp314:**
 
-   -  **gemp314:**
+      -  **lwage314:**
 
-   -  **gwage314:**
+      -  **gemp314:**
 
-   -  **t:** linear time trend, 1 to 612
+      -  **gwage314:**
 
-   .. rubric:: Notes
-      :name: notes
+      -  **t:** linear time trend, 1 to 612
 
-   The sectors corresponding to the different numbers in the data file
-   are provided in the Wolfson and Bellman and article.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 379, 410, 444-445, 674-675
+      The sectors corresponding to the different numbers in the data
+      file are provided in the Wolfson and Bellman and article.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 379, 410, 444-445, 674-675
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(minwage)
+      ::
+
+          str(minwage)

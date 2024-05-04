@@ -1,52 +1,54 @@
 .. container::
 
-   ======= ===============
-   ruspini R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Ruspini Data
-      :name: ruspini
+      ======= ===============
+      ruspini R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Ruspini Data
+         :name: ruspini-data
 
-   The Ruspini data set, consisting of 75 points in four groups that is
-   popular for illustrating clustering techniques.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The Ruspini data set, consisting of 75 points in four groups that
+      is popular for illustrating clustering techniques.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(ruspini)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(ruspini)
 
-   A data frame with 75 observations on 2 variables giving the x and y
-   coordinates of the points, respectively.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A data frame with 75 observations on 2 variables giving the x and
+      y coordinates of the points, respectively.
 
-   E. H. Ruspini (1970) Numerical methods for fuzzy clustering. *Inform.
-   Sci.* **2**, 319–350.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      E. H. Ruspini (1970) Numerical methods for fuzzy clustering.
+      *Inform. Sci.* **2**, 319–350.
 
-   see those in ``agnes``.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      see those in ``agnes``.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(ruspini)
+      ::
 
-      ## Plot similar to Figure 4 in Stryuf et al (1996)
-      ## Not run: plot(pam(ruspini, 4), ask = TRUE)
+         data(ruspini)
+
+         ## Plot similar to Figure 4 in Stryuf et al (1996)
+         ## Not run: plot(pam(ruspini, 4), ask = TRUE)
 
 
-      ## Plot similar to Figure 6 in Stryuf et al (1996)
-      plot(fanny(ruspini, 5))
+         ## Plot similar to Figure 6 in Stryuf et al (1996)
+         plot(fanny(ruspini, 5))

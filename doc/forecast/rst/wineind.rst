@@ -1,38 +1,40 @@
 .. container::
 
-   ======= ===============
-   wineind R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Australian total wine sales
-      :name: wineind
+      ======= ===============
+      wineind R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Australian total wine sales
+         :name: australian-total-wine-sales
 
-   Australian total wine sales by wine makers in bottles <= 1 litre. Jan
-   1980 – Aug 1994.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Australian total wine sales by wine makers in bottles <= 1 litre.
+      Jan 1980 – Aug 1994.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      wineind
+      ::
 
-   .. rubric:: Format
-      :name: format
+         wineind
 
-   Time series data
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Time series data
 
-   Time Series Data Library. https://pkg.yangzhuoranyang.com/tsdl/
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Time Series Data Library. https://pkg.yangzhuoranyang.com/tsdl/
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      tsdisplay(wineind)
+      ::
+
+         tsdisplay(wineind)

@@ -1,71 +1,74 @@
 .. container::
 
-   === ===============
-   mlb R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Salary data for Major League Baseball (2010)
-      :name: mlb
+      === ===============
+      mlb R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Salary data for Major League Baseball (2010)
+         :name: salary-data-for-major-league-baseball-2010
 
-   Salary data for Major League Baseball players in the year 2010.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Salary data for Major League Baseball players in the year 2010.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      mlb
+      ::
 
-   .. rubric:: Format
-      :name: format
+         mlb
 
-   A data frame with 828 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   player
-      Player name
+      A data frame with 828 observations on the following 4 variables.
 
-   team
-      Team
+      player
+         Player name
 
-   position
-      Field position
+      team
+         Team
 
-   salary
-      Salary (in $1000s)
+      position
+         Field position
 
-   .. rubric:: Source
-      :name: source
+      salary
+         Salary (in $1000s)
 
-   https://databases.usatoday.com/mlb-salaries/, retrieved 2011-02-23.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://databases.usatoday.com/mlb-salaries/, retrieved
+      2011-02-23.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
+
+      ::
 
 
-      # _____ Basic Histogram _____ #
-      hist(mlb$salary / 1000,
-        breaks = 15,
-        main = "", xlab = "Salary (millions of dollars)", ylab = "",
-        axes = FALSE,
-        col = "#22558844"
-      )
-      axis(1, seq(0, 40, 10))
-      axis(2, c(0, 500))
-      axis(2, seq(100, 400, 100), rep("", 4), tcl = -0.2)
+         # _____ Basic Histogram _____ #
+         hist(mlb$salary / 1000,
+           breaks = 15,
+           main = "", xlab = "Salary (millions of dollars)", ylab = "",
+           axes = FALSE,
+           col = "#22558844"
+         )
+         axis(1, seq(0, 40, 10))
+         axis(2, c(0, 500))
+         axis(2, seq(100, 400, 100), rep("", 4), tcl = -0.2)
 
-      # _____ Histogram on Log Scale _____ #
-      hist(log(mlb$salary / 1000),
-        breaks = 15,
-        main = "", xlab = "log(Salary)", ylab = "",
-        axes = FALSE, col = "#22558844"
-      )
-      axis(1) # , seq(0, 40, 10))
-      axis(2, seq(0, 300, 100))
+         # _____ Histogram on Log Scale _____ #
+         hist(log(mlb$salary / 1000),
+           breaks = 15,
+           main = "", xlab = "log(Salary)", ylab = "",
+           axes = FALSE, col = "#22558844"
+         )
+         axis(1) # , seq(0, 40, 10))
+         axis(2, seq(0, 300, 100))
 
-      # _____ Box plot of log(salary) against position _____ #
-      boxPlot(log(mlb$salary / 1000), mlb$position, horiz = TRUE, ylab = "")
+         # _____ Box plot of log(salary) against position _____ #
+         boxPlot(log(mlb$salary / 1000), mlb$position, horiz = TRUE, ylab = "")

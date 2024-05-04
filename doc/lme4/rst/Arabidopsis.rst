@@ -1,87 +1,89 @@
 .. container::
 
-   =========== ===============
-   Arabidopsis R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Arabidopsis clipping/fertilization data
-      :name: Arabidopsis
+      =========== ===============
+      Arabidopsis R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Arabidopsis clipping/fertilization data
+         :name: arabidopsis-clippingfertilization-data
 
-   Data on genetic variation in responses to fertilization and simulated
-   herbivory in *Arabidopsis*
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on genetic variation in responses to fertilization and
+      simulated herbivory in *Arabidopsis*
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Arabidopsis")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Arabidopsis")
 
-   A data frame with 625 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``reg``
-      region: a factor with 3 levels ``NL`` (Netherlands), ``SP``
-      (Spain), ``SW`` (Sweden)
+      A data frame with 625 observations on the following 8 variables.
 
-   ``popu``
-      population: a factor with the form ``n.R`` representing a
-      population in region ``R``
+      ``reg``
+         region: a factor with 3 levels ``NL`` (Netherlands), ``SP``
+         (Spain), ``SW`` (Sweden)
 
-   ``gen``
-      genotype: a factor with 24 (numeric-valued) levels
+      ``popu``
+         population: a factor with the form ``n.R`` representing a
+         population in region ``R``
 
-   ``rack``
-      a nuisance factor with 2 levels, one for each of two greenhouse
-      racks
+      ``gen``
+         genotype: a factor with 24 (numeric-valued) levels
 
-   ``nutrient``
-      fertilization treatment/nutrient level (1, minimal nutrients or 8,
-      added nutrients)
+      ``rack``
+         a nuisance factor with 2 levels, one for each of two greenhouse
+         racks
 
-   ``amd``
-      simulated herbivory or "clipping" (apical meristem damage):
-      ``unclipped`` (baseline) or ``clipped``
+      ``nutrient``
+         fertilization treatment/nutrient level (1, minimal nutrients or
+         8, added nutrients)
 
-   ``status``
-      a nuisance factor for germination method (``Normal``,
-      ``Petri.Plate``, or ``Transplant``)
+      ``amd``
+         simulated herbivory or "clipping" (apical meristem damage):
+         ``unclipped`` (baseline) or ``clipped``
 
-   ``total.fruits``
-      total fruit set per plant (integer)
+      ``status``
+         a nuisance factor for germination method (``Normal``,
+         ``Petri.Plate``, or ``Transplant``)
 
-   .. rubric:: Source
-      :name: source
+      ``total.fruits``
+         total fruit set per plant (integer)
 
-   From Josh Banta
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      From Josh Banta
 
-   Joshua A. Banta, Martin H. H Stevens, and Massimo Pigliucci (2010) A
-   comprehensive test of the 'limiting resources' framework applied to
-   plant tolerance to apical meristem damage. *Oikos* **119**\ (2),
-   359–369;
-   `doi:10.1111/j.1600-0706.2009.17726.x <https://doi.org/10.1111/j.1600-0706.2009.17726.x>`__
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Joshua A. Banta, Martin H. H Stevens, and Massimo Pigliucci (2010)
+      A comprehensive test of the 'limiting resources' framework applied
+      to plant tolerance to apical meristem damage. *Oikos*
+      **119**\ (2), 359–369;
+      `doi:10.1111/j.1600-0706.2009.17726.x <https://doi.org/10.1111/j.1600-0706.2009.17726.x>`__
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Arabidopsis)
-      summary(Arabidopsis[,"total.fruits"])
-      table(gsub("[0-9].","",levels(Arabidopsis[,"popu"])))
-      library(lattice)
-      stripplot(log(total.fruits+1) ~ amd|nutrient, data = Arabidopsis,
-                groups = gen,
-                strip=strip.custom(strip.names=c(TRUE,TRUE)),
-                type=c('p','a'), ## points and panel-average value --
-                ## see ?panel.xyplot
-                scales=list(x=list(rot=90)),
-                main="Panel: nutrient, Color: genotype")
+      ::
+
+         data(Arabidopsis)
+         summary(Arabidopsis[,"total.fruits"])
+         table(gsub("[0-9].","",levels(Arabidopsis[,"popu"])))
+         library(lattice)
+         stripplot(log(total.fruits+1) ~ amd|nutrient, data = Arabidopsis,
+                   groups = gen,
+                   strip=strip.custom(strip.names=c(TRUE,TRUE)),
+                   type=c('p','a'), ## points and panel-average value --
+                   ## see ?panel.xyplot
+                   scales=list(x=list(rot=90)),
+                   main="Panel: nutrient, Color: genotype")

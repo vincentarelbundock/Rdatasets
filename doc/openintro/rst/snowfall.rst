@@ -1,70 +1,72 @@
 .. container::
 
-   ======== ===============
-   snowfall R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Snowfall at Paradise, Mt. Rainier National Park
-      :name: snowfall
+      ======== ===============
+      snowfall R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Snowfall at Paradise, Mt. Rainier National Park
+         :name: snowfall-at-paradise-mt.-rainier-national-park
 
-   Annual snowfall data for Paradise, Mt. Rainier National Park. To
-   include a full winter season, snowfall is recorded from July 1 to
-   June 30. Data from 1943-1946 not available due to road closure during
-   World War II. Records also unavailable from 1948-1954.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Annual snowfall data for Paradise, Mt. Rainier National Park. To
+      include a full winter season, snowfall is recorded from July 1 to
+      June 30. Data from 1943-1946 not available due to road closure
+      during World War II. Records also unavailable from 1948-1954.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      snowfall
+      ::
 
-   .. rubric:: Format
-      :name: format
+         snowfall
 
-   A data frame with 100 rows and 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   year_start
-      The year snowfall measurement began on July 1.
+      A data frame with 100 rows and 3 variables.
 
-   year_end
-      The year snowfall measurement ended on June 30.
+      year_start
+         The year snowfall measurement began on July 1.
 
-   total_snow
-      Snowfall measured in inches.
+      year_end
+         The year snowfall measurement ended on June 30.
 
-   .. rubric:: Source
-      :name: source
+      total_snow
+         Snowfall measured in inches.
 
-   `National Parks
-   Services <https://www.nps.gov/mora/planyourvisit/annual-snowfall-totals.htm>`__.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      `National Parks
+      Services <https://www.nps.gov/mora/planyourvisit/annual-snowfall-totals.htm>`__.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(snowfall, aes(x = total_snow)) +
-        geom_histogram(binwidth = 50) +
-        labs(
-          title = "Annual Snowfall",
-          subtitle = "Paradise, Mt. Rainier National Park",
-          x = "Snowfall (in.)",
-          y = "Number of Years",
-          caption = "Source: National Parks Services"
-        )
+         library(ggplot2)
 
-      ggplot(snowfall, aes(x = year_start, y = total_snow, group = 1)) +
-        geom_line() +
-        labs(
-          title = "Annual Snowfall",
-          subtitle = "Paradise, Mt. Rainier National Park",
-          y = "Snowfall (in.)",
-          x = "Year",
-          caption = "Source: National Parks Services"
-        )
+         ggplot(snowfall, aes(x = total_snow)) +
+           geom_histogram(binwidth = 50) +
+           labs(
+             title = "Annual Snowfall",
+             subtitle = "Paradise, Mt. Rainier National Park",
+             x = "Snowfall (in.)",
+             y = "Number of Years",
+             caption = "Source: National Parks Services"
+           )
+
+         ggplot(snowfall, aes(x = year_start, y = total_snow, group = 1)) +
+           geom_line() +
+           labs(
+             title = "Annual Snowfall",
+             subtitle = "Paradise, Mt. Rainier National Park",
+             y = "Snowfall (in.)",
+             x = "Year",
+             caption = "Source: National Parks Services"
+           )

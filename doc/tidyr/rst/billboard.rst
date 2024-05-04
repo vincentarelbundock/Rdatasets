@@ -1,44 +1,46 @@
 .. container::
 
-   ========= ===============
-   billboard R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Song rankings for Billboard top 100 in the year 2000
-      :name: billboard
+      ========= ===============
+      billboard R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Song rankings for Billboard top 100 in the year 2000
+         :name: song-rankings-for-billboard-top-100-in-the-year-2000
 
-   Song rankings for Billboard top 100 in the year 2000
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Song rankings for Billboard top 100 in the year 2000
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      billboard
+      ::
 
-   .. rubric:: Format
-      :name: format
+         billboard
 
-   A dataset with variables:
+      .. rubric:: Format
+         :name: format
 
-   artist
-      Artist name
+      A dataset with variables:
 
-   track
-      Song name
+      artist
+         Artist name
 
-   date.enter
-      Date the song entered the top 100
+      track
+         Song name
 
-   wk1 – wk76
-      Rank of the song in each week after it entered
+      date.enter
+         Date the song entered the top 100
 
-   .. rubric:: Source
-      :name: source
+      wk1 – wk76
+         Rank of the song in each week after it entered
 
-   The "Whitburn" project,
-   https://waxy.org/2008/05/the_whitburn_project/, (downloaded April
-   2008)
+      .. rubric:: Source
+         :name: source
+
+      The "Whitburn" project,
+      https://waxy.org/2008/05/the_whitburn_project/, (downloaded April
+      2008)

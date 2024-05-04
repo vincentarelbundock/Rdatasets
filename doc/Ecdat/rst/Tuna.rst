@@ -1,65 +1,67 @@
 .. container::
 
-   ==== ===============
-   Tuna R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Choice of Brand for Tuna
-      :name: Tuna
+      ==== ===============
+      Tuna R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Choice of Brand for Tuna
+         :name: choice-of-brand-for-tuna
 
-   a cross-section
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 13705
+      a cross-section
 
-   *observation* : individuals
+      *number of observations* : 13705
 
-   *country* : United States
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Tuna)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Tuna)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   hid
-      individuals identifiers
+      A dataframe containing :
 
-   id
-      purchase identifiers
+      hid
+         individuals identifiers
 
-   choice
-      one of ``skw`` (Starkist water), ``cosw`` (Chicken of the sea
-      water), ``pw`` (store–specific private label water), ``sko``
-      (Starkist oil), ``coso`` (Chicken of the sea oil)
+      id
+         purchase identifiers
 
-   price.z
-      price of brand z
+      choice
+         one of ``skw`` (Starkist water), ``cosw`` (Chicken of the sea
+         water), ``pw`` (store–specific private label water), ``sko``
+         (Starkist oil), ``coso`` (Chicken of the sea oil)
 
-   .. rubric:: Source
-      :name: source
+      price.z
+         price of brand z
 
-   Kim, Byong–Do, Robert C. Blattberg and Peter E. Rossi (1995)
-   “Modeling the distribution of price sensitivity and implications for
-   optimal retail pricing”, *Journal of Business Economics and
-   Statistics*, **13(3)**, 291.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Kim, Byong–Do, Robert C. Blattberg and Peter E. Rossi (1995)
+      “Modeling the distribution of price sensitivity and implications
+      for optimal retail pricing”, *Journal of Business Economics and
+      Statistics*, **13(3)**, 291.
 
-   Journal of Business Economics and Statistics web site :
-   https://amstat.tandfonline.com/loi/ubes20.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Journal of Business Economics and Statistics web site :
+      https://amstat.tandfonline.com/loi/ubes20.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

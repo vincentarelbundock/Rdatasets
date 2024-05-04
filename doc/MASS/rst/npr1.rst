@@ -1,52 +1,54 @@
 .. container::
 
-   ==== ===============
-   npr1 R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: US Naval Petroleum Reserve No. 1 data
-      :name: npr1
+      ==== ===============
+      npr1 R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: US Naval Petroleum Reserve No. 1 data
+         :name: us-naval-petroleum-reserve-no.-1-data
 
-   Data on the locations, porosity and permeability (a measure of oil
-   flow) on 104 oil wells in the US Naval Petroleum Reserve No. 1 in
-   California.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on the locations, porosity and permeability (a measure of oil
+      flow) on 104 oil wells in the US Naval Petroleum Reserve No. 1 in
+      California.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      npr1
+      ::
 
-   .. rubric:: Format
-      :name: format
+         npr1
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``x``
-      x coordinates, in miles (origin unspecified)..
+      This data frame contains the following columns:
 
-   ``y``
-      y coordinates, in miles.
+      ``x``
+         x coordinates, in miles (origin unspecified)..
 
-   ``perm``
-      permeability in milli-Darcies.
+      ``y``
+         y coordinates, in miles.
 
-   ``por``
-      porosity (%).
+      ``perm``
+         permeability in milli-Darcies.
 
-   .. rubric:: Source
-      :name: source
+      ``por``
+         porosity (%).
 
-   Maher, J.C., Carter, R.D. and Lantz, R.J. (1975) Petroleum geology of
-   Naval Petroleum Reserve No. 1, Elk Hills, Kern County, California.
-   *USGS Professional Paper* **912**.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Maher, J.C., Carter, R.D. and Lantz, R.J. (1975) Petroleum geology
+      of Naval Petroleum Reserve No. 1, Elk Hills, Kern County,
+      California. *USGS Professional Paper* **912**.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

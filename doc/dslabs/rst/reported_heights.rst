@@ -1,43 +1,46 @@
 .. container::
 
-   ================ ===============
-   reported_heights R Documentation
-   ================ ===============
+   .. container::
 
-   .. rubric:: Self-reported Heights
-      :name: reported_heights
+      ================ ===============
+      reported_heights R Documentation
+      ================ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Self-reported Heights
+         :name: self-reported-heights
 
-   Students were asked to report their height (in inches) and sex in an
-   online form. This table includes the results from four courses.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Students were asked to report their height (in inches) and sex in
+      an anonymous online form. This table includes the results from
+      combining data from four courses.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      reported_heights
+      ::
 
-   .. rubric:: Format
-      :name: format
+         reported_heights
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  time_stamp. Time and date of the entry.
+      .. rubric:: Details
+         :name: details
 
-   -  sex. Sex of the student.
+      -  time_stamp. Time and date of the entry.
 
-   -  height. Height as reported by student by filling in a text free
-      box.
+      -  sex. Sex as reported by the students.
 
-   .. rubric:: Examples
-      :name: examples
+      -  height. Height as reported by student by filling in a text free
+         box.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      head(reported_heights)
+      ::
+
+         head(reported_heights)

@@ -1,59 +1,61 @@
 .. container::
 
-   =========== ===============
-   temp_carbon R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Global temperature anomaly and carbon emissions,
-      1751-2018
-      :name: temp_carbon
+      =========== ===============
+      temp_carbon R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Global temperature anomaly and carbon emissions,
+         1751-2018
+         :name: global-temperature-anomaly-and-carbon-emissions-1751-2018
 
-   Annual mean global temperature anomaly on land, sea and combined,
-   1880-2018. Annual global carbon emissions, 1751-2014.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Annual mean global temperature anomaly on land, sea and combined,
+      1880-2018. Annual global carbon emissions, 1751-2014.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      temp_carbon
+      ::
 
-   .. rubric:: Format
-      :name: format
+         temp_carbon
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  year. Year (CE).
+      .. rubric:: Details
+         :name: details
 
-   -  temp_anomaly. Global annual mean temperature anomaly in degrees
-      Celsius relative to the 20th century mean temperature. 1880-2018.
+      -  year. Year (CE).
 
-   -  land_anomaly. Annual mean temperature anomaly on land in degrees
-      Celsius relative to the 20th century mean temperature. 1880-2018.
+      -  temp_anomaly. Global annual mean temperature anomaly in degrees
+         Celsius relative to the 20th century mean temperature.
+         1880-2018.
 
-   -  ocean_anomaly. Annual mean temperature anomaly over ocean in
-      degrees Celsius relative to the 20th century mean temperature.
-      1880-2018.
+      -  land_anomaly. Annual mean temperature anomaly on land in
+         degrees Celsius relative to the 20th century mean temperature.
+         1880-2018.
 
-   -  carbon_emissions. Annual carbon emissions in millions of metric
-      tons of carbon. 1751-2014.
+      -  ocean_anomaly. Annual mean temperature anomaly over ocean in
+         degrees Celsius relative to the 20th century mean temperature.
+         1880-2018.
 
-   .. rubric:: Source
-      :name: source
+      -  carbon_emissions. Annual carbon emissions in millions of metric
+         tons of carbon. 1751-2014.
 
-   `NOAA <https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series/>`__
-   and Boden, T.A., G. Marland, and R.J. Andres (2017) via
-   `CDIAC <https://cdiac.ess-dive.lbl.gov/trends/emis/tre_glob_2014.html>`__
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      NOAA and Boden, T.A., G. Marland, and R.J. Andres (2017) via CDIAC
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      head(temp_carbon)
+      ::
+
+         head(temp_carbon)

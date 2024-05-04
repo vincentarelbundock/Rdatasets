@@ -12,77 +12,70 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>WeightLoss</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='WeightLoss'>
-Weight Loss Data
-</h2>
+<h2>Weight Loss Data</h2>
 
 <h3>Description</h3>
 
-<p>Contrived data on weight loss and self esteem over three months,
-for three groups of individuals: Control, Diet and Diet + Exercise.
-The data constitute a double-multivariate design.
+<p>Contrived data on weight loss and self esteem over three months, for three
+groups of individuals: Control, Diet and Diet + Exercise. The data
+constitute a double-multivariate design.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(WeightLoss)</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A data frame with 34 observations on the following 7 variables.
 </p>
-
+ 
 <dl>
-<dt><code>group</code></dt><dd><p>a factor with levels <code>Control</code> <code>Diet</code> <code>DietEx</code>.</p>
-</dd>
-<dt><code>wl1</code></dt><dd><p>Weight loss at 1 month</p>
+<dt><code>group</code></dt><dd><p>a factor with levels <code>Control</code>
+<code>Diet</code> <code>DietEx</code>.</p>
+</dd> <dt><code>wl1</code></dt><dd><p>Weight loss at 1 month</p>
 </dd>
 <dt><code>wl2</code></dt><dd><p>Weight loss at 2 months</p>
-</dd>
+</dd> 
 <dt><code>wl3</code></dt><dd><p>Weight loss at 3 months</p>
-</dd>
+</dd> 
 <dt><code>se1</code></dt><dd><p>Self esteem at 1 month</p>
 </dd>
 <dt><code>se2</code></dt><dd><p>Self esteem at 2 months</p>
-</dd>
+</dd> 
 <dt><code>se3</code></dt><dd><p>Self esteem at 3 months</p>
-</dd>
+</dd> 
 </dl>
 
 
 
 <h3>Details</h3>
 
-<p>Helmert contrasts are assigned to <code>group</code>, comparing <code>Control</code> vs. (<code>Diet</code> <code>DietEx</code>)
-and <code>Diet</code> vs. <code>DietEx</code>.
+<p>Helmert contrasts are assigned to <code>group</code>, comparing <code>Control</code> vs.
+(<code>Diet</code> <code>DietEx</code>) and <code>Diet</code> vs. <code>DietEx</code>.
 </p>
 
 
 <h3>Source</h3>
 
-<p>Originally taken from <a href="http://www.csun.edu/~ata20315/psy524/main.htm">http://www.csun.edu/~ata20315/psy524/main.htm</a>,
-but modified slightly
+<p>Originally taken from
+<a href="http://www.csun.edu/~ata20315/psy524/main.htm">http://www.csun.edu/~ata20315/psy524/main.htm</a>, but modified slightly
 </p>
 
 
 <h3>References</h3>
 
-<p>Friendly, Michael  (2010). HE Plots for Repeated Measures Designs. <em>Journal of Statistical Software</em>,
-37(4), 1-40.
-
-doi: <a href="https://doi.org/10.18637/jss.v037.i04">10.18637/jss.v037.i04</a>.
+<p>Friendly, Michael (2010). HE Plots for Repeated Measures
+Designs. <em>Journal of Statistical Software</em>, 37(4), 1-40.
+<a href="https://doi.org/10.18637/jss.v037.i04">doi:10.18637/jss.v037.i04</a>.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(WeightLoss)
+<pre><code class='language-R'>
+data(WeightLoss)
 str(WeightLoss)
 table(WeightLoss$group)
 
@@ -98,7 +91,6 @@ within &lt;- data.frame(measure=rep(c("Weight loss", "Self esteem"),each=3), mon
 
 # doubly-multivariate analysis: requires car 2.0+
 ## Not run: 
-if (packageDescription("car")[["Version"]] &gt;= 2) {
 imatrix &lt;- matrix(c(
 	1,0,-1, 1, 0, 0,
 	1,0, 0,-2, 0, 0,
@@ -115,10 +107,9 @@ contrasts(WeightLoss$group) &lt;- matrix(c(-2,1,1,
                                         0,-1,1), ncol=2) 
 
 (wl.mod&lt;-lm(cbind(wl1, wl2, wl3, se1, se2, se3)~group, data=WeightLoss))
-(wl.aov &lt;- Anova(wl.mod, imatrix=imatrix, test="Roy"))
+(wl.aov &lt;- car::Anova(wl.mod, imatrix=imatrix, test="Roy"))
 
 heplot(wl.mod, imatrix=imatrix, iterm="group:measure")
-}
 
 ## End(Not run)
 
@@ -132,10 +123,10 @@ unit &lt;- function(n, prefix="") {
 measure &lt;- kronecker(diag(2), unit(3, 'M')/3, make.dimnames=TRUE)
 colnames(measure)&lt;- c('WL', 'SE')
 
-between &lt;- as.matrix(WeightLoss[,-1]) 
+between &lt;- as.matrix(WeightLoss[,-1]) %*% measure
 
 between.mod &lt;- lm(between ~ group, data=WeightLoss)
-Anova(between.mod)
+car::Anova(between.mod)
 
 heplot(between.mod, hypotheses=c("group1", "group2"), 
 	xlab="Weight Loss", ylab="Self Esteem",
@@ -144,9 +135,9 @@ heplot(between.mod, hypotheses=c("group1", "group2"),
 
 month &lt;- kronecker(diag(2), poly(1:3), make.dimnames=TRUE)
 colnames(month)&lt;- c('WL', 'SE')
-trends &lt;- as.matrix(WeightLoss[,-1]) 
+trends &lt;- as.matrix(WeightLoss[,-1]) %*% month
 within.mod &lt;- lm(trends ~ group, data=WeightLoss)
-Anova(within.mod)
+car::Anova(within.mod)
 
 heplot(within.mod)
 heplot(within.mod, hypotheses=c("group1", "group2"), 
@@ -155,8 +146,10 @@ heplot(within.mod, hypotheses=c("group1", "group2"),
 	term.labels=c("month", "group:month"),
 	main="Weight Loss &amp; Self Esteem: Within-S Effects")
 mark.H0()
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

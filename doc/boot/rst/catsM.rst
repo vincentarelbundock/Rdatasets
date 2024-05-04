@@ -1,63 +1,65 @@
 .. container::
 
-   ===== ===============
-   catsM R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Weight Data for Domestic Cats
-      :name: catsM
+      ===== ===============
+      catsM R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Weight Data for Domestic Cats
+         :name: weight-data-for-domestic-cats
 
-   The ``catsM`` data frame has 97 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   144 adult (over 2kg in weight) cats used for experiments with the
-   drug digitalis had their heart and body weight recorded. 47 of the
-   cats were female and 97 were male. The ``catsM`` data frame consists
-   of the data for the male cats. The full data are in dataset ``cats``
-   in package ``MASS``.
+      The ``catsM`` data frame has 97 rows and 3 columns.
 
-   .. rubric:: Usage
-      :name: usage
+      144 adult (over 2kg in weight) cats used for experiments with the
+      drug digitalis had their heart and body weight recorded. 47 of the
+      cats were female and 97 were male. The ``catsM`` data frame
+      consists of the data for the male cats. The full data are in
+      dataset ``cats`` in package ``MASS``.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      catsM
+      ::
 
-   .. rubric:: Format
-      :name: format
+         catsM
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``Sex``
-      A factor for the sex of the cat (levels are ``F`` and ``M``: all
-      cases are ``M`` in this subset).
+      This data frame contains the following columns:
 
-   ``Bwt``
-      Body weight in kg.
+      ``Sex``
+         A factor for the sex of the cat (levels are ``F`` and ``M``:
+         all cases are ``M`` in this subset).
 
-   ``Hwt``
-      Heart weight in g.
+      ``Bwt``
+         Body weight in kg.
 
-   .. rubric:: Source
-      :name: source
+      ``Hwt``
+         Heart weight in g.
 
-   The data were obtained from
+      .. rubric:: Source
+         :name: source
 
-   Fisher, R.A. (1947) The analysis of covariance method for the
-   relation between a part and the whole. *Biometrics*, **3**, 65–68.
+      The data were obtained from
 
-   .. rubric:: References
-      :name: references
+      Fisher, R.A. (1947) The analysis of covariance method for the
+      relation between a part and the whole. *Biometrics*, **3**, 65–68.
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
 
-   Venables, W.N. and Ripley, B.D. (1994) *Modern Applied Statistics
-   with S-Plus*. Springer-Verlag.
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.
 
-   .. rubric:: See Also
-      :name: see-also
+      Venables, W.N. and Ripley, B.D. (1994) *Modern Applied Statistics
+      with S-Plus*. Springer-Verlag.
 
-   ``cats``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``cats``

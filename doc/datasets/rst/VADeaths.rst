@@ -1,68 +1,71 @@
 .. container::
 
-   ======== ===============
-   VADeaths R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Death Rates in Virginia (1940)
-      :name: VADeaths
+      ======== ===============
+      VADeaths R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Death Rates in Virginia (1940)
+         :name: death-rates-in-virginia-1940
 
-   Death rates per 1000 in Virginia in 1940.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Death rates per 1000 in Virginia in 1940.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      VADeaths
+      ::
 
-   .. rubric:: Format
-      :name: format
+         VADeaths
 
-   A matrix with 5 rows and 4 columns.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      A matrix with 5 rows and 4 columns.
 
-   The death rates are measured per 1000 population per year. They are
-   cross-classified by age group (rows) and population group (columns).
-   The age groups are: 50–54, 55–59, 60–64, 65–69, 70–74 and the
-   population groups are Rural/Male, Rural/Female, Urban/Male and
-   Urban/Female.
+      .. rubric:: Details
+         :name: details
 
-   This provides a rather nice 3-way analysis of variance example.
+      The death rates are measured per 1000 population per year. They
+      are cross-classified by age group (rows) and population group
+      (columns). The age groups are: 50–54, 55–59, 60–64, 65–69, 70–74
+      and the population groups are Rural/Male, Rural/Female, Urban/Male
+      and Urban/Female.
 
-   .. rubric:: Source
-      :name: source
+      This provides a rather nice 3-way analysis of variance example.
 
-   Molyneaux, L., Gilliam, S. K., and Florant, L. C.(1947) Differences
-   in Virginia death rates by color, sex, age, and rural or urban
-   residence. *American Sociological Review*, **12**, 525–535.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Molyneaux, L., Gilliam, S. K., and Florant, L. C.(1947)
+      Differences in Virginia death rates by color, sex, age, and rural
+      or urban residence. *American Sociological Review*, **12**,
+      525–535.
 
-   McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(stats); require(graphics)
-      n <- length(dr <- c(VADeaths))
-      nam <- names(VADeaths)
-      d.VAD <- data.frame(
-       Drate = dr,
-       age = rep(ordered(rownames(VADeaths)), length.out = n),
-       gender = gl(2, 5, n, labels = c("M", "F")),
-       site =  gl(2, 10, labels = c("rural", "urban")))
-      coplot(Drate ~ as.numeric(age) | gender * site, data = d.VAD,
-             panel = panel.smooth, xlab = "VADeaths data - Given: gender")
-      summary(aov.VAD <- aov(Drate ~ .^2, data = d.VAD))
-      opar <- par(mfrow = c(2, 2), oma = c(0, 0, 1.1, 0))
-      plot(aov.VAD)
-      par(opar)
+      ::
+
+         require(stats); require(graphics)
+         n <- length(dr <- c(VADeaths))
+         nam <- names(VADeaths)
+         d.VAD <- data.frame(
+          Drate = dr,
+          age = rep(ordered(rownames(VADeaths)), length.out = n),
+          gender = gl(2, 5, n, labels = c("M", "F")),
+          site =  gl(2, 10, labels = c("rural", "urban")))
+         coplot(Drate ~ as.numeric(age) | gender * site, data = d.VAD,
+                panel = panel.smooth, xlab = "VADeaths data - Given: gender")
+         summary(aov.VAD <- aov(Drate ~ .^2, data = d.VAD))
+         opar <- par(mfrow = c(2, 2), oma = c(0, 0, 1.1, 0))
+         plot(aov.VAD)
+         par(opar)

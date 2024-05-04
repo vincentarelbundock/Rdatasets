@@ -1,43 +1,45 @@
 .. container::
 
-   ============== ===============
-   nuclear_survey R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Nuclear Arms Reduction Survey
-      :name: nuclear_survey
+      ============== ===============
+      nuclear_survey R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Nuclear Arms Reduction Survey
+         :name: nuclear-arms-reduction-survey
 
-   A simple random sample of 1,028 US adults in March 2013 found that
-   56\\ support nuclear arms reduction.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A simple random sample of 1,028 US adults in March 2013 found that
+      56\\ support nuclear arms reduction.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      nuclear_survey
+      ::
 
-   .. rubric:: Format
-      :name: format
+         nuclear_survey
 
-   A data frame with 1028 observations on the following variable.
+      .. rubric:: Format
+         :name: format
 
-   arms_reduction
-      Responses of ``favor`` or ``against``.
+      A data frame with 1028 observations on the following variable.
 
-   .. rubric:: Source
-      :name: source
+      arms_reduction
+         Responses of ``favor`` or ``against``.
 
-   Gallup report: In U.S., 56 percent Favor U.S.-Russian Nuclear Arms
-   Reductions. Available at
-   https://news.gallup.com/poll/161198/favor-russian-nuclear-arms-reductions.aspx.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Gallup report: In U.S., 56 percent Favor U.S.-Russian Nuclear Arms
+      Reductions. Available at
+      https://news.gallup.com/poll/161198/favor-russian-nuclear-arms-reductions.aspx.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      table(nuclear_survey)
+      ::
+
+         table(nuclear_survey)

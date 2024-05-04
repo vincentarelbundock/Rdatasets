@@ -1,40 +1,43 @@
 .. container::
 
-   ========= ===============
-   geophones R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Seismic Timing Data
-      :name: geophones
+      ========= ===============
+      geophones R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Seismic Timing Data
+         :name: seismic-timing-data
 
-   The ``geophones`` data frame has 56 rows and 2 columns. Thickness of
-   a layer of Alberta substratum as measured by a line of geophones.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``geophones`` data frame has 56 rows and 2 columns. Thickness
+      of a layer of Alberta substratum as measured by a line of
+      geophones.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      geophones
+      ::
 
-   .. rubric:: Format
-      :name: format
+         geophones
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   distance
-      location of geophone.
+      This data frame contains the following columns:
 
-   thickness
-      time for signal to pass through substratum.
+      distance
+         location of geophone.
 
-   .. rubric:: Examples
-      :name: examples
+      thickness
+         time for signal to pass through substratum.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      plot(geophones)
-      lines(lowess(geophones, f=.25))
+      ::
+
+         plot(geophones)
+         lines(lowess(geophones, f=.25))

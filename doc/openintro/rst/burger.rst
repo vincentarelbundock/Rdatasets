@@ -1,44 +1,46 @@
 .. container::
 
-   ====== ===============
-   burger R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Burger preferences
-      :name: burger
+      ====== ===============
+      burger R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Burger preferences
+         :name: burger-preferences
 
-   Sample burger place preferences versus gender.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Sample burger place preferences versus gender.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      burger
+      ::
 
-   .. rubric:: Format
-      :name: format
+         burger
 
-   A data frame with 500 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   best_burger_place
-      Burger place.
+      A data frame with 500 observations on the following 2 variables.
 
-   gender
-      a factor with levels ``Female`` and ``Male``
+      best_burger_place
+         Burger place.
 
-   .. rubric:: Source
-      :name: source
+      gender
+         a factor with levels ``Female`` and ``Male``
 
-   SurveyUSA, Results of SurveyUSA News Poll #17718, data collected on
-   December 2, 2010.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      SurveyUSA, Results of SurveyUSA News Poll #17718, data collected
+      on December 2, 2010.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      table(burger)
+      ::
+
+         table(burger)

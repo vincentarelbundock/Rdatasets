@@ -1,58 +1,60 @@
 .. container::
 
-   ====== ===============
-   CPSch3 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Earnings from the Current Population Survey
-      :name: CPSch3
+      ====== ===============
+      CPSch3 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Earnings from the Current Population Survey
+         :name: earnings-from-the-current-population-survey
 
-   a cross-section from 1998
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 11130
+      a cross-section from 1998
 
-   *observation* : individuals
+      *number of observations* : 11130
 
-   *country* : United States
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(CPSch3)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(CPSch3)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   year
-      survey year
+      A dataframe containing :
 
-   ahe
-      average hourly earnings
+      year
+         survey year
 
-   sex
-      a factor with levels (male,female)
+      ahe
+         average hourly earnings
 
-   .. rubric:: Source
-      :name: source
+      sex
+         a factor with levels (male,female)
 
-   Bureau of labor statistics, U.S. Department of Labor
-   https://www.bls.gov.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Bureau of labor statistics, U.S. Department of Labor
+      https://www.bls.gov.
 
-   Stock, James H. and Mark W. Watson (2003) *Introduction to
-   Econometrics*, Addison-Wesley Educational Publishers, chapter 3.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, James H. and Mark W. Watson (2003) *Introduction to
+      Econometrics*, Addison-Wesley Educational Publishers, chapter 3.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

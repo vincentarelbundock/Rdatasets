@@ -1,85 +1,91 @@
 .. container::
 
-   ============== ===============
-   decontaminants R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Performance of decontaminants used in the culturing of a
-      micro-organism
-      :name: decontaminants
+      ============== ===============
+      decontaminants R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Performance of decontaminants used in the culturing of
+         a micro-organism
+         :name: performance-of-decontaminants-used-in-the-culturing-of-a-micro-organism
 
-   The two decontaminants 1-hexadecylpyridium chloride and oxalic acid
-   were used. Additionally there was a control group (coded as
-   concentration 0 and only included under oxalic acid).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The two decontaminants 1-hexadecylpyridium chloride and oxalic
+      acid were used. Additionally there was a control group (coded as
+      concentration 0 and only included under oxalic acid).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("decontaminants")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("decontaminants")
 
-   A data frame with 128 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``conc``
-      a numeric vector of percentage weight per volume
+      A data frame with 128 observations on the following 3 variables.
 
-   ``count``
-      a numeric vector of numbers of M. bovis colonies at stationarity
+      ``conc``
+         a numeric vector of percentage weight per volume
 
-   ``group``
-      a factor with levels ``hpc`` and ``oxalic`` of the decontaminants
-      used
+      ``count``
+         a numeric vector of numbers of M. bovis colonies at
+         stationarity
 
-   .. rubric:: Details
-      :name: details
+      ``group``
+         a factor with levels ``hpc`` and ``oxalic`` of the
+         decontaminants used
 
-   These data examplify Wadley's problem: counts where the maximum
-   number is not known. The data were analyzed by Trajstman (1989) using
-   a three-parameter logistic model and then re-analyzed by Morgan and
-   Smith (1992) using a three-parameter Weibull type II model. In both
-   cases the authors adjusted for overdispersion (in different ways).
+      .. rubric:: Details
+         :name: details
 
-   It seems that Morgan and Smith (1992) fitted separate models for the
-   two decontaminants and using the control group for both model fits.
-   In the example below a joint model is fitted where the control group
-   is used once to determine a shared upper limit at concentration 0.
+      These data examplify Wadley's problem: counts where the maximum
+      number is not known. The data were analyzed by Trajstman (1989)
+      using a three-parameter logistic model and then re-analyzed by
+      Morgan and Smith (1992) using a three-parameter Weibull type II
+      model. In both cases the authors adjusted for overdispersion (in
+      different ways).
 
-   .. rubric:: Source
-      :name: source
+      It seems that Morgan and Smith (1992) fitted separate models for
+      the two decontaminants and using the control group for both model
+      fits. In the example below a joint model is fitted where the
+      control group is used once to determine a shared upper limit at
+      concentration 0.
 
-   Trajstman, A. C. (1989) Indices for Comparing Decontaminants when
-   Data Come from Dose-Response Survival and Contamination Experiments,
-   *Applied Statistics*, **38**, 481–494.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Trajstman, A. C. (1989) Indices for Comparing Decontaminants when
+      Data Come from Dose-Response Survival and Contamination
+      Experiments, *Applied Statistics*, **38**, 481–494.
 
-   Morgan, B. J. T. and Smith, D. M. (1992) A Note on Wadley's Problem
-   with Overdispersion, *Applied Statistics*, **41**, 349–354.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Morgan, B. J. T. and Smith, D. M. (1992) A Note on Wadley's
+      Problem with Overdispersion, *Applied Statistics*, **41**,
+      349–354.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## Wadley's problem using a three-parameter log-logistic model
-      decon.LL.3.1 <- drm(count~conc, group, data = decontaminants, fct = LL.3(), 
-      type = "Poisson", pmodels = list(~group, ~1, ~group))
+      ::
 
-      summary(decon.LL.3.1)
+         ## Wadley's problem using a three-parameter log-logistic model
+         decon.LL.3.1 <- drm(count~conc, group, data = decontaminants, fct = LL.3(), 
+         type = "Poisson", pmodels = list(~group, ~1, ~group))
 
-      plot(decon.LL.3.1)
+         summary(decon.LL.3.1)
+
+         plot(decon.LL.3.1)
 
 
-      ## Same model fit in another parameterization (no intercepts)
-      decon.LL.3.2 <- drm(count~conc, group, data = decontaminants, fct=LL.3(), 
-      type = "Poisson", pmodels = list(~group-1, ~1, ~group-1))
+         ## Same model fit in another parameterization (no intercepts)
+         decon.LL.3.2 <- drm(count~conc, group, data = decontaminants, fct=LL.3(), 
+         type = "Poisson", pmodels = list(~group-1, ~1, ~group-1))
 
-      summary(decon.LL.3.2)
+         summary(decon.LL.3.2)

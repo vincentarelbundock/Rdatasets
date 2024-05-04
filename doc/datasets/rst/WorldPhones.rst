@@ -1,54 +1,57 @@
 .. container::
 
-   =========== ===============
-   WorldPhones R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: The World's Telephones
-      :name: WorldPhones
+      =========== ===============
+      WorldPhones R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: The World's Telephones
+         :name: the-worlds-telephones
 
-   The number of telephones in various regions of the world (in
-   thousands).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The number of telephones in various regions of the world (in
+      thousands).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      WorldPhones
+      ::
 
-   .. rubric:: Format
-      :name: format
+         WorldPhones
 
-   A matrix with 7 rows and 8 columns. The columns of the matrix give
-   the figures for a given region, and the rows the figures for a year.
+      .. rubric:: Format
+         :name: format
 
-   The regions are: North America, Europe, Asia, South America, Oceania,
-   Africa, Central America.
+      A matrix with 7 rows and 8 columns. The columns of the matrix give
+      the figures for a given region, and the rows the figures for a
+      year.
 
-   The years are: 1951, 1956, 1957, 1958, 1959, 1960, 1961.
+      The regions are: North America, Europe, Asia, South America,
+      Oceania, Africa, Central America.
 
-   .. rubric:: Source
-      :name: source
+      The years are: 1951, 1956, 1957, 1958, 1959, 1960, 1961.
 
-   AT&T (1961) *The World's Telephones*.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      AT&T (1961) *The World's Telephones*.
 
-   McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(graphics)
-      matplot(rownames(WorldPhones), WorldPhones, type = "b", log = "y",
-              xlab = "Year", ylab = "Number of telephones (1000's)")
-      legend(1951.5, 80000, colnames(WorldPhones), col = 1:6, lty = 1:5,
-             pch = rep(21, 7))
-      title(main = "World phones data: log scale for response")
+      ::
+
+         require(graphics)
+         matplot(rownames(WorldPhones), WorldPhones, type = "b", log = "y",
+                 xlab = "Year", ylab = "Number of telephones (1000's)")
+         legend(1951.5, 80000, colnames(WorldPhones), col = 1:6, lty = 1:5,
+                pch = rep(21, 7))
+         title(main = "World phones data: log scale for response")

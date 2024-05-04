@@ -1,49 +1,51 @@
 .. container::
 
-   ================= ===============
-   divorce_margarine R Documentation
-   ================= ===============
+   .. container::
 
-   .. rubric:: Divorce rate and margarine consumption data
-      :name: divorce_margarine
+      ================= ===============
+      divorce_margarine R Documentation
+      ================= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Divorce rate and margarine consumption data
+         :name: divorce-rate-and-margarine-consumption-data
 
-   Divorce rates in Maine and per capita consumption of margarine in US
-   data
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Divorce rates in Maine and per capita consumption of margarine in
+      US data
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      divorce_margarine
+      ::
 
-   .. rubric:: Format
-      :name: format
+         divorce_margarine
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  divorce_rate_maine. Divorce per 1000 in Maine.
+      .. rubric:: Details
+         :name: details
 
-   -  margarine_consumption_per_capita. US per capita consumption of
-      margarine in pounds.
+      -  divorce_rate_maine. Divorce per 1000 in Maine.
 
-   -  year. Year.
+      -  margarine_consumption_per_capita. US per capita consumption of
+         margarine in pounds.
 
-   .. rubric:: Source
-      :name: source
+      -  year. Year.
 
-   `Spurious
-   Correlations <https://www.tylervigen.com/spurious-correlations>`__
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      `Spurious
+      Correlations <https://www.tylervigen.com/spurious-correlations>`__
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      with(divorce_margarine, plot(margarine_consumption_per_capita, divorce_rate_maine))
+      ::
+
+         with(divorce_margarine, plot(margarine_consumption_per_capita, divorce_rate_maine))

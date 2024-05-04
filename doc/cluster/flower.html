@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>flower</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='flower'>Flower Characteristics</h2>
+<h2>Flower Characteristics</h2>
 
 <h3>Description</h3>
 
@@ -108,11 +108,22 @@ should be left between the plants.</p>
 <h3>Examples</h3>
 
 <pre><code class='language-R'>data(flower)
-## Example 2 in ref
-daisy(flower, type = list(asymm = 3))
-daisy(flower, type = list(asymm = c(1, 3), ordratio = 7))
+str(flower) # factors, ordered, numeric
+
+## "Nicer" version (less numeric more self explainable) of 'flower':
+flowerN &lt;- flower
+colnames(flowerN) &lt;- c("winters", "shadow", "tubers", "color",
+                       "soil", "preference", "height", "distance")
+for(j in 1:3) flowerN[,j] &lt;- (flowerN[,j] == "1")
+levels(flowerN$color) &lt;- c("1" = "white", "2" = "yellow", "3" = "pink",
+                           "4" = "red", "5" = "blue")[levels(flowerN$color)]
+levels(flowerN$soil)  &lt;- c("1" = "dry", "2" = "normal", "3" = "wet")[levels(flowerN$soil)]
+flowerN
+
+## ==&gt; example(daisy)  on how it is used
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

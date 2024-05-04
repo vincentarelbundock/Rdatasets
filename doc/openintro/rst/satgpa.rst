@@ -1,85 +1,87 @@
 .. container::
 
-   ====== ===============
-   satgpa R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: SAT and GPA data
-      :name: satgpa
+      ====== ===============
+      satgpa R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: SAT and GPA data
+         :name: sat-and-gpa-data
 
-   SAT and GPA data for 1000 students at an unnamed college.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      SAT and GPA data for 1000 students at an unnamed college.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      satgpa
+      ::
 
-   .. rubric:: Format
-      :name: format
+         satgpa
 
-   A data frame with 1000 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   sex
-      Gender of the student.
+      A data frame with 1000 observations on the following 6 variables.
 
-   sat_v
-      Verbal SAT percentile.
+      sex
+         Gender of the student.
 
-   sat_m
-      Math SAT percentile.
+      sat_v
+         Verbal SAT percentile.
 
-   sat_sum
-      Total of verbal and math SAT percentiles.
+      sat_m
+         Math SAT percentile.
 
-   hs_gpa
-      High school grade point average.
+      sat_sum
+         Total of verbal and math SAT percentiles.
 
-   fy_gpa
-      First year (college) grade point average.
+      hs_gpa
+         High school grade point average.
 
-   .. rubric:: Source
-      :name: source
+      fy_gpa
+         First year (college) grade point average.
 
-   Educational Testing Service originally collected the data.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Educational Testing Service originally collected the data.
 
-   https://chance.dartmouth.edu/course/Syllabi/Princeton96/ETSValidation.html
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      https://chance.dartmouth.edu/course/Syllabi/Princeton96/ETSValidation.html
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
-      library(broom)
+      ::
 
-      # Verbal scores
-      ggplot(satgpa, aes(x = sat_v, fy_gpa)) +
-        geom_point() +
-        geom_smooth(method = "lm") +
-        labs(
-          x = "Verbal SAT percentile",
-          y = "First year (college) grade point average"
-        )
+         library(ggplot2)
+         library(broom)
 
-      mod <- lm(fy_gpa ~ sat_v, data = satgpa)
-      tidy(mod)
+         # Verbal scores
+         ggplot(satgpa, aes(x = sat_v, fy_gpa)) +
+           geom_point() +
+           geom_smooth(method = "lm") +
+           labs(
+             x = "Verbal SAT percentile",
+             y = "First year (college) grade point average"
+           )
 
-      # Math scores
-      ggplot(satgpa, aes(x = sat_m, fy_gpa)) +
-        geom_point() +
-        geom_smooth(method = "lm") +
-        labs(
-          x = "Math SAT percentile",
-          y = "First year (college) grade point average"
-        )
+         mod <- lm(fy_gpa ~ sat_v, data = satgpa)
+         tidy(mod)
 
-      mod <- lm(fy_gpa ~ sat_m, data = satgpa)
-      tidy(mod)
+         # Math scores
+         ggplot(satgpa, aes(x = sat_m, fy_gpa)) +
+           geom_point() +
+           geom_smooth(method = "lm") +
+           labs(
+             x = "Math SAT percentile",
+             y = "First year (college) grade point average"
+           )
+
+         mod <- lm(fy_gpa ~ sat_m, data = satgpa)
+         tidy(mod)

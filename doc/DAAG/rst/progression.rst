@@ -1,66 +1,69 @@
 .. container::
 
-   =========== ===============
-   progression R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Progression of Record times for track races, 1912 - 2008
-      :name: progression
+      =========== ===============
+      progression R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Progression of Record times for track races, 1912 -
+         2008
+         :name: progression-of-record-times-for-track-races-1912---2008
 
-   Progression in world record times for track and road races.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Progression in world record times for track and road races.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(progression)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(progression)
 
-   A data frame with 227 observations on the following 4 columns.
+      .. rubric:: Format
+         :name: format
 
-   ``year``
-      Year that time was first recorded
+      A data frame with 227 observations on the following 4 columns.
 
-   ``Distance``
-      distance in kilometers
+      ``year``
+         Year that time was first recorded
 
-   ``Time``
-      time in minutes
+      ``Distance``
+         distance in kilometers
 
-   ``race``
-      character; descriptor for event (100m, mile, ...)
+      ``Time``
+         time in minutes
 
-   .. rubric:: Details
-      :name: details
+      ``race``
+         character; descriptor for event (100m, mile, ...)
 
-   Record times for men's track events, from 1912 onwards. The series
-   starts with times that were recognized as record times in 1912, where
-   available.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Record times for men's track events, from 1912 onwards. The series
+      starts with times that were recognized as record times in 1912,
+      where available.
 
-   Links to sources for the data are at
+      .. rubric:: Source
+         :name: source
 
-   https://en.wikipedia.org/wiki/Athletics_world_record
+      Links to sources for the data are at
 
-   .. rubric:: Examples
-      :name: examples
+      https://en.wikipedia.org/wiki/Athletics_world_record
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(progression)
-      plot(log(Time) ~ log(Distance), data=progression)
-      res <- resid(lm(log(Time) ~ log(Distance), data=progression))
-      plot(res ~ log(Distance), data=progression,
-           ylab="Residuals from regression line on log scales")
-      library(lattice)
-      xyplot(log(Time) ~ log(Distance), data=progression, type=c("p","r"))
-      xyplot(log(Time) ~ log(Distance), data=progression,
-             type=c("p","smooth"))
+      ::
+
+         data(progression)
+         plot(log(Time) ~ log(Distance), data=progression)
+         res <- resid(lm(log(Time) ~ log(Distance), data=progression))
+         plot(res ~ log(Distance), data=progression,
+              ylab="Residuals from regression line on log scales")
+         library(lattice)
+         xyplot(log(Time) ~ log(Distance), data=progression, type=c("p","r"))
+         xyplot(log(Time) ~ log(Distance), data=progression,
+                type=c("p","smooth"))

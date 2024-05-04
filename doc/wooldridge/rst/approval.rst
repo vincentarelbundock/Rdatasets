@@ -1,79 +1,81 @@
 .. container::
 
-   ======== ===============
-   approval R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: approval
-      :name: approval
+      ======== ===============
+      approval R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: approval
+         :name: approval
 
-   Wooldridge Source: Harbridge, L., J. Krosnick, and J.M. Wooldridge
-   (forthcoming), “Presidential Approval and Gas Prices: Sociotropic or
-   Pocketbook Influence?” in New Explorations in Political Psychology,
-   ed. J. Krosnick. New York: Psychology Press (Taylor and Francis
-   Group). Professor Harbridge kindly provided the data, of which I have
-   used a subset. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Harbridge, L., J. Krosnick, and J.M. Wooldridge
+      (forthcoming), “Presidential Approval and Gas Prices: Sociotropic
+      or Pocketbook Influence?” in New Explorations in Political
+      Psychology, ed. J. Krosnick. New York: Psychology Press (Taylor
+      and Francis Group). Professor Harbridge kindly provided the data,
+      of which I have used a subset. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('approval')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('approval')
 
-   A data.frame with 78 observations on 16 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **id:** id
+      A data.frame with 78 observations on 16 variables:
 
-   -  **month:** month
+      -  **id:** id
 
-   -  **year:** year
+      -  **month:** month
 
-   -  **sp500:** S&P 500 index
+      -  **year:** year
 
-   -  **cpi:** Consumer Price Index
+      -  **sp500:** S&P 500 index
 
-   -  **cpifood:** CPI for food
+      -  **cpi:** Consumer Price Index
 
-   -  **approve:** Gallup approval rate, percent
+      -  **cpifood:** CPI for food
 
-   -  **gasprice:** average gas price, cents
+      -  **approve:** Gallup approval rate, percent
 
-   -  **unemploy:** unemployment rate, percent
+      -  **gasprice:** average gas price, cents
 
-   -  **katrina:** =1 for three months after Hurricane Katrina
+      -  **unemploy:** unemployment rate, percent
 
-   -  **rgasprice:** real gas price, 100*(gasprice/cpi)
+      -  **katrina:** =1 for three months after Hurricane Katrina
 
-   -  **lrgasprice:** log(rgasprice)
+      -  **rgasprice:** real gas price, 100*(gasprice/cpi)
 
-   -  **sep11:** =1 for 09/2001 and two months following
+      -  **lrgasprice:** log(rgasprice)
 
-   -  **iraqinvade:** =1 for three months after Iraq invasion
+      -  **sep11:** =1 for 09/2001 and two months following
 
-   -  **lsp500:** log(sp500)
+      -  **iraqinvade:** =1 for three months after Iraq invasion
 
-   -  **lcpifood:** log(cpifood)
+      -  **lsp500:** log(sp500)
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **lcpifood:** log(cpifood)
 
-   343, 371, 400
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      343, 371, 400
 
-   http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(approval)
+      ::
+
+          str(approval)

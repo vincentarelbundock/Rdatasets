@@ -1,92 +1,94 @@
 .. container::
 
-   ========= ===============
-   Alligator R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Alligator Food Choice
-      :name: Alligator
+      ========= ===============
+      Alligator R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Alligator Food Choice
+         :name: alligator-food-choice
 
-   The Alligator data, from Agresti (2002), comes from a study of the
-   primary food choices of alligators in four Florida lakes. Researchers
-   classified the stomach contents of 219 captured alligators into five
-   categories: Fish (the most common primary food choice), Invertebrate
-   (snails, insects, crayfish, etc.), Reptile (turtles, alligators),
-   Bird, and Other (amphibians, plants, household pets, stones, and
-   other debris).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The Alligator data, from Agresti (2002), comes from a study of the
+      primary food choices of alligators in four Florida lakes.
+      Researchers classified the stomach contents of 219 captured
+      alligators into five categories: Fish (the most common primary
+      food choice), Invertebrate (snails, insects, crayfish, etc.),
+      Reptile (turtles, alligators), Bird, and Other (amphibians,
+      plants, household pets, stones, and other debris).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Alligator)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Alligator)
 
-   A frequency data frame with 80 observations on the following 5
-   variables.
+      .. rubric:: Format
+         :name: format
 
-   ``lake``
-      a factor with levels ``George`` ``Hancock`` ``Oklawaha``
-      ``Trafford``
+      A frequency data frame with 80 observations on the following 5
+      variables.
 
-   ``sex``
-      a factor with levels ``female`` ``male``
+      ``lake``
+         a factor with levels ``George`` ``Hancock`` ``Oklawaha``
+         ``Trafford``
 
-   ``size``
-      alligator size, a factor with levels ``large`` (>2.3m) ``small``
-      (<=2.3m)
+      ``sex``
+         a factor with levels ``female`` ``male``
 
-   ``food``
-      primary food choice, a factor with levels ``bird`` ``fish``
-      ``invert`` ``other`` ``reptile``
+      ``size``
+         alligator size, a factor with levels ``large`` (>2.3m)
+         ``small`` (<=2.3m)
 
-   ``count``
-      cell frequency, a numeric vector
+      ``food``
+         primary food choice, a factor with levels ``bird`` ``fish``
+         ``invert`` ``other`` ``reptile``
 
-   .. rubric:: Details
-      :name: details
+      ``count``
+         cell frequency, a numeric vector
 
-   The table contains a fair number of 0 counts.
+      .. rubric:: Details
+         :name: details
 
-   ``food`` is the response variable. ``fish`` is the most frequent
-   choice, and often taken as a baseline category in multinomial
-   response models.
+      The table contains a fair number of 0 counts.
 
-   .. rubric:: Source
-      :name: source
+      ``food`` is the response variable. ``fish`` is the most frequent
+      choice, and often taken as a baseline category in multinomial
+      response models.
 
-   Agresti, A. (2002). *Categorical Data Analysis*, New York: Wiley, 2nd
-   Ed., Table 7.1
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Agresti, A. (2002). *Categorical Data Analysis*, New York: Wiley,
+      2nd Ed., Table 7.1
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Alligator)
+      ::
 
-      # change from frequency data.frame to table
-      allitable <- xtabs(count ~ lake + sex + size + food, data=Alligator)
-      # Agresti's Table 7.1
-      structable(food ~ lake + sex + size, allitable)
+         data(Alligator)
+
+         # change from frequency data.frame to table
+         allitable <- xtabs(count ~ lake + sex + size + food, data=Alligator)
+         # Agresti's Table 7.1
+         structable(food ~ lake + sex + size, allitable)
 
 
-      plot(allitable, shade=TRUE)
+         plot(allitable, shade=TRUE)
 
-      # mutual independence model
-      mosaic(~ food + lake + size, allitable, shade=TRUE)
+         # mutual independence model
+         mosaic(~ food + lake + size, allitable, shade=TRUE)
 
-      # food jointly independent of lake and size
-      mosaic(~ food + lake + size, allitable, shade=TRUE, 
-             expected = ~lake:size + food)
+         # food jointly independent of lake and size
+         mosaic(~ food + lake + size, allitable, shade=TRUE, 
+                expected = ~lake:size + food)
 
-      if (require(nnet)) {
-          # multinomial logit model
-          mod1 <- multinom(food ~ lake + size + sex, data=Alligator, weights=count)
-      }
+         if (require(nnet)) {
+             # multinomial logit model
+             mod1 <- multinom(food ~ lake + size + sex, data=Alligator, weights=count)
+         }

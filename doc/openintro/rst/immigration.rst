@@ -1,50 +1,52 @@
 .. container::
 
-   =========== ===============
-   immigration R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Poll on illegal workers in the US
-      :name: immigration
+      =========== ===============
+      immigration R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Poll on illegal workers in the US
+         :name: poll-on-illegal-workers-in-the-us
 
-   910 randomly sampled registered voters in Tampa, FL were asked if
-   they thought workers who have illegally entered the US should be (i)
-   allowed to keep their jobs and apply for US citizenship, (ii) allowed
-   to keep their jobs as temporary guest workers but not allowed to
-   apply for US citizenship, or (iii) lose their jobs and have to leave
-   the country as well as their political ideology.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      910 randomly sampled registered voters in Tampa, FL were asked if
+      they thought workers who have illegally entered the US should be
+      (i) allowed to keep their jobs and apply for US citizenship, (ii)
+      allowed to keep their jobs as temporary guest workers but not
+      allowed to apply for US citizenship, or (iii) lose their jobs and
+      have to leave the country as well as their political ideology.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      immigration
+      ::
 
-   .. rubric:: Format
-      :name: format
+         immigration
 
-   A data frame with 910 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   response
-      a factor with levels ``Apply for citizenship`` ``Guest worker``
-      ``Leave the country`` ``Not sure``
+      A data frame with 910 observations on the following 2 variables.
 
-   political
-      a factor with levels ``conservative`` ``liberal`` ``moderate``
+      response
+         a factor with levels ``Apply for citizenship`` ``Guest worker``
+         ``Leave the country`` ``Not sure``
 
-   .. rubric:: Source
-      :name: source
+      political
+         a factor with levels ``conservative`` ``liberal`` ``moderate``
 
-   SurveyUSA, News Poll #18927, data collected Jan 27-29, 2012.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      SurveyUSA, News Poll #18927, data collected Jan 27-29, 2012.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
+
+      ::
 
 
-      immigration
+         immigration

@@ -1,44 +1,46 @@
 .. container::
 
-   ===== ===============
-   poker R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Poker winnings during 50 sessions
-      :name: poker
+      ===== ===============
+      poker R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Poker winnings during 50 sessions
+         :name: poker-winnings-during-50-sessions
 
-   Poker winnings (and losses) for 50 days by a professional poker
-   player.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Poker winnings (and losses) for 50 days by a professional poker
+      player.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      poker
+      ::
 
-   .. rubric:: Format
-      :name: format
+         poker
 
-   A data frame with 49 observations on the following variable.
+      .. rubric:: Format
+         :name: format
 
-   winnings
-      Poker winnings and losses, in US dollars.
+      A data frame with 49 observations on the following variable.
 
-   .. rubric:: Source
-      :name: source
+      winnings
+         Poker winnings and losses, in US dollars.
 
-   Anonymity has been requested by the player.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Anonymity has been requested by the player.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(poker, aes(x = winnings)) +
-        geom_histogram(binwidth = 250)
+         library(ggplot2)
+
+         ggplot(poker, aes(x = winnings)) +
+           geom_histogram(binwidth = 250)

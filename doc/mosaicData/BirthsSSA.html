@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Births</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Births'>US Births</h2>
+<h2>US Births</h2>
 
 <h3>Description</h3>
 
@@ -44,31 +44,24 @@ data(BirthsCDC)
 <p>A data.frame with the following 8 variables.
 </p>
 
-<ul>
-<li> <p><code>date</code>   Date
-</p>
-</li>
-<li> <p><code>births</code> Number of births on <code>date</code> (integer)
-</p>
-</li>
-<li> <p><code>wday</code>   Day of week (ordered factor)
-</p>
-</li>
-<li> <p><code>year</code>   Year (integer)
-</p>
-</li>
-<li> <p><code>month</code>  Month (integer)
-</p>
-</li>
-<li> <p><code>day_of_year</code>  Day of year (integer)
-</p>
-</li>
-<li> <p><code>day_of_month</code> Day of month (integer)
-</p>
-</li>
-<li> <p><code>day_of_week</code>  Day of week (integer)
-</p>
-</li></ul>
+<dl>
+<dt><code>date</code></dt><dd><p>Date</p>
+</dd>
+<dt><code>births</code></dt><dd><p>Number of births on <code>date</code> (integer)</p>
+</dd>
+<dt><code>wday</code></dt><dd><p>Day of week (ordered factor)</p>
+</dd>
+<dt><code>year</code></dt><dd><p>Year (integer)</p>
+</dd>
+<dt><code>month</code></dt><dd><p>Month (integer)</p>
+</dd>
+<dt><code>day_of_year</code></dt><dd><p>Day of year (integer)</p>
+</dd>
+<dt><code>day_of_month</code></dt><dd><p>Day of month (integer)</p>
+</dd>
+<dt><code>day_of_week</code></dt><dd><p>Day of week (integer)</p>
+</dd>
+</dl>
 
 
 
@@ -86,7 +79,7 @@ See the examples.
 <ul>
 <li><p> Data source for <code>Births</code>: National Vital Statistics System natality data, as provided by
 Google BigQuery and exported to csv by
-Robert Kern <a href="http://www.mechanicalkern.com/static/birthdates-1968-1988.csv">http://www.mechanicalkern.com/static/birthdates-1968-1988.csv</a>.
+Robert Kern <a href="https://www.mechanicalkern.com:443/static/birthdates-1968-1988.csv">https://www.mechanicalkern.com:443/static/birthdates-1968-1988.csv</a>.
 </p>
 </li>
 <li><p> Data source for <code>BirthsSSA</code>  US Social Security Administration, as curated at <a href="https://github.com/fivethirtyeight/data/tree/master/births">https://github.com/fivethirtyeight/data/tree/master/births</a>
@@ -136,8 +129,8 @@ if(require(ggplot2)) {
     stat_smooth(se = FALSE, geom = "line", alpha = 0.6, size = 1.5)
   if (require(dplyr)) {
     ggplot(
-     data =  bind_cols(Births %&gt;% filter(year == 1978),
-                       Births78 %&gt;% rename(births78 = births)),
+     data =  bind_cols(Births |&gt; filter(year == 1978),
+                       Births78 |&gt; rename(births78 = births)),
      aes(x = births - births78)
      ) +
      geom_histogram(binwidth = 1)
@@ -152,16 +145,16 @@ if(require(ggplot2)) {
     stat_smooth(se = FALSE, geom = "line", alpha = 0.6, size = 1.5)
   if (require(dplyr)) {
     ggplot(
-     data =  bind_cols(Births %&gt;% filter(year == 1978),
-                       Births78 %&gt;% rename(births78 = births)),
+     data =  bind_cols(Births |&gt; filter(year == 1978),
+                       Births78 |&gt; rename(births78 = births)),
      aes(x = births - births78)
      ) +
      geom_histogram(binwidth = 1)
 
     # SSA records more births than CDC
     ggplot(
-     data =  bind_cols(BirthsSSA %&gt;% filter(year &lt;= 2003) %&gt;% rename(SSA = births),
-                       BirthsCDC %&gt;% filter(year &gt;= 2000) %&gt;% rename(CDC = births)),
+     data =  bind_cols(BirthsSSA |&gt; filter(year &lt;= 2003) |&gt; rename(SSA = births),
+                       BirthsCDC |&gt; filter(year &gt;= 2000) |&gt; rename(CDC = births)),
      aes(x = SSA - CDC)
      ) +
      geom_histogram(binwidth = 10)
@@ -172,6 +165,7 @@ if(require(ggplot2)) {
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

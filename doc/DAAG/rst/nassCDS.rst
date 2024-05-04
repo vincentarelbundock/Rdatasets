@@ -1,145 +1,151 @@
 .. container::
 
-   ======= ===============
-   nassCDS R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Airbag and other influences on accident fatalities
-      :name: nassCDS
+      ======= ===============
+      nassCDS R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Airbag and other influences on accident fatalities
+         :name: airbag-and-other-influences-on-accident-fatalities
 
-   US data, for 1997-2002, from police-reported car crashes in which
-   there is a harmful event (people or property), and from which at
-   least one vehicle was towed. Data are restricted to front-seat
-   occupants, include only a subset of the variables recorded, and are
-   restricted in other ways also.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      US data, for 1997-2002, from police-reported car crashes in which
+      there is a harmful event (people or property), and from which at
+      least one vehicle was towed. Data are restricted to front-seat
+      occupants, include only a subset of the variables recorded, and
+      are restricted in other ways also.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      nassCDS
+      ::
 
-   .. rubric:: Format
-      :name: format
+         nassCDS
 
-   A data frame with 26217 observations on the following 15 variables.
+      .. rubric:: Format
+         :name: format
 
-   dvcat
-      ordered factor with levels (estimated impact speeds) ``1-9km/h``,
-      ``10-24``, ``25-39``, ``40-54``, ``55+``
+      A data frame with 26217 observations on the following 15
+      variables.
 
-   weight
-      Observation weights, albeit of uncertain accuracy, designed to
-      account for varying sampling probabilities.
+      dvcat
+         ordered factor with levels (estimated impact speeds)
+         ``1-9km/h``, ``10-24``, ``25-39``, ``40-54``, ``55+``
 
-   dead
-      factor with levels ``alive`` ``dead``
+      weight
+         Observation weights, albeit of uncertain accuracy, designed to
+         account for varying sampling probabilities.
 
-   airbag
-      a factor with levels ``none`` ``airbag``
+      dead
+         factor with levels ``alive`` ``dead``
 
-   seatbelt
-      a factor with levels ``none`` ``belted``
+      airbag
+         a factor with levels ``none`` ``airbag``
 
-   frontal
-      a numeric vector; 0 = non-frontal, 1=frontal impact
+      seatbelt
+         a factor with levels ``none`` ``belted``
 
-   sex
-      a factor with levels ``f`` ``m``
+      frontal
+         a numeric vector; 0 = non-frontal, 1=frontal impact
 
-   ageOFocc
-      age of occupant in years
+      sex
+         a factor with levels ``f`` ``m``
 
-   yearacc
-      year of accident
+      ageOFocc
+         age of occupant in years
 
-   yearVeh
-      Year of model of vehicle; a numeric vector
+      yearacc
+         year of accident
 
-   abcat
-      Did one or more (driver or passenger) airbag(s) deploy? This
-      factor has levels ``deploy`` ``nodeploy`` ``unavail``
+      yearVeh
+         Year of model of vehicle; a numeric vector
 
-   occRole
-      a factor with levels ``driver`` ``pass``
+      abcat
+         Did one or more (driver or passenger) airbag(s) deploy? This
+         factor has levels ``deploy`` ``nodeploy`` ``unavail``
 
-   deploy
-      a numeric vector: 0 if an airbag was unavailable or did not
-      deploy; 1 if one or more bags deployed.
+      occRole
+         a factor with levels ``driver`` ``pass``
 
-   injSeverity
-      a numeric vector; 0:none, 1:possible injury, 2:no incapacity,
-      3:incapacity, 4:killed; 5:unknown, 6:prior death
+      deploy
+         a numeric vector: 0 if an airbag was unavailable or did not
+         deploy; 1 if one or more bags deployed.
 
-   caseid
-      character, created by pasting together the populations sampling
-      unit, the case number, and the vehicle number. Within each year,
-      use this to uniquely identify the vehicle.
+      injSeverity
+         a numeric vector; 0:none, 1:possible injury, 2:no incapacity,
+         3:incapacity, 4:killed; 5:unknown, 6:prior death
 
-   .. rubric:: Details
-      :name: details
+      caseid
+         character, created by pasting together the populations sampling
+         unit, the case number, and the vehicle number. Within each
+         year, use this to uniquely identify the vehicle.
 
-   Data collection used a multi-stage probabilistic sampling scheme. The
-   observation weight, called national inflation factor (``national``)
-   in the data from NASS, is the inverse of an estimate of the selection
-   probability. These data include a subset of the variables from the
-   NASS dataset. Variables that are coded here as factors are coded as
-   numeric values in that dataset.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Data collection used a multi-stage probabilistic sampling scheme.
+      The observation weight, called national inflation factor
+      (``national``) in the data from NASS, is the inverse of an
+      estimate of the selection probability. These data include a subset
+      of the variables from the NASS dataset. Variables that are coded
+      here as factors are coded as numeric values in that dataset.
 
-   https://www.stat.colostate.edu/~meyer/airbags.htm\\
-   https://www.nhtsa.gov/file-downloads
+      .. rubric:: Source
+         :name: source
 
-   See also\\ https://maths-people.anu.edu.au/~johnm/datasets/airbags/
+      https://www.stat.colostate.edu/~meyer/airbags.htm\\
+      https://www.nhtsa.gov/file-downloads
 
-   .. rubric:: References
-      :name: references
+      See also\\
+      https://maths-people.anu.edu.au/~johnm/datasets/airbags/
 
-   Meyer, M.C. and Finney, T. (2005): *Who wants airbags?*. Chance
-   18:3-16.
+      .. rubric:: References
+         :name: references
 
-   Farmer, C.H. 2006. *Another look at Meyer and Finney's ‘Who wants
-   airbags?’*. Chance 19:15-22.
+      Meyer, M.C. and Finney, T. (2005): *Who wants airbags?*. Chance
+      18:3-16.
 
-   Meyer, M.C. 2006. *Commentary on "Another look at Meyer and Finney's
-   ‘Who wants airbags?’*. Chance 19:23-24.
+      Farmer, C.H. 2006. *Another look at Meyer and Finney's ‘Who wants
+      airbags?’*. Chance 19:15-22.
 
-   For analyses based on the alternative FARS (Fatal Accident Recording
-   System) data, and associated commentary, see:
+      Meyer, M.C. 2006. *Commentary on "Another look at Meyer and
+      Finney's ‘Who wants airbags?’*. Chance 19:23-24.
 
-   Cummings, P; McKnight, B, 2010. *Accounting for vehicle, crash, and
-   occupant characteristics in traffic crash studies.* Injury Prevention
-   16: 363-366. [The relatively definitive analyses in this paper use a
-   matched cohort design,
+      For analyses based on the alternative FARS (Fatal Accident
+      Recording System) data, and associated commentary, see:
 
-   Olson, CM; Cummings, P, Rivara, FP, 2006. *Association of first- and
-   second-generation air bags with front occupant death in car crashes:
-   a matched cohort study.* Am J Epidemiol 164:161-169. [The relatively
-   definitive analyses in this paper use a matched cohort design, using
-   data taken from the FARS (Fatal Accident Recording System) database.]
+      Cummings, P; McKnight, B, 2010. *Accounting for vehicle, crash,
+      and occupant characteristics in traffic crash studies.* Injury
+      Prevention 16: 363-366. [The relatively definitive analyses in
+      this paper use a matched cohort design,
 
-   Braver, ER; Shardell, M; Teoh, ER, 2010. *How have changes in air bag
-   designs affected frontal crash mortality?* Ann Epidemiol 20:499-510.
+      Olson, CM; Cummings, P, Rivara, FP, 2006. *Association of first-
+      and second-generation air bags with front occupant death in car
+      crashes: a matched cohort study.* Am J Epidemiol 164:161-169. [The
+      relatively definitive analyses in this paper use a matched cohort
+      design, using data taken from the FARS (Fatal Accident Recording
+      System) database.]
 
-   The web page http://www-fars.nhtsa.dot.gov/Main/index.aspx has a
-   menu-based interface into the FARS (Fatality Analysis Recording
-   System) data. The FARS database aims to include every accident in
-   which there was at least one fatality.
+      Braver, ER; Shardell, M; Teoh, ER, 2010. *How have changes in air
+      bag designs affected frontal crash mortality?* Ann Epidemiol
+      20:499-510.
 
-   .. rubric:: Examples
-      :name: examples
+      The web page http://www-fars.nhtsa.dot.gov/Main/index.aspx has a
+      menu-based interface into the FARS (Fatality Analysis Recording
+      System) data. The FARS database aims to include every accident in
+      which there was at least one fatality.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(nassCDS)
-      xtabs(weight ~ dead + airbag, data=nassCDS)
-      xtabs(weight ~ dead + airbag + seatbelt + dvcat, data=nassCDS)
-      tab <- xtabs(weight ~ dead + abcat, data=nassCDS,
-                   subset=dvcat=="25-39"&frontal==0)[, c(3,1,2)]
-      round(tab[2, ]/apply(tab,2,sum)*100,2)
+      ::
+
+         data(nassCDS)
+         xtabs(weight ~ dead + airbag, data=nassCDS)
+         xtabs(weight ~ dead + airbag + seatbelt + dvcat, data=nassCDS)
+         tab <- xtabs(weight ~ dead + abcat, data=nassCDS,
+                      subset=dvcat=="25-39"&frontal==0)[, c(3,1,2)]
+         round(tab[2, ]/apply(tab,2,sum)*100,2)

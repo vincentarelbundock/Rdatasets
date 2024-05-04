@@ -1,56 +1,58 @@
 .. container::
 
-   ======= ===============
-   ethanol R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Ethanol Treatment for Tumors Experiment
-      :name: ethanol
+      ======= ===============
+      ethanol R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Ethanol Treatment for Tumors Experiment
+         :name: ethanol-treatment-for-tumors-experiment
 
-   Experiment where 3 different treatments of ethanol were tested on the
-   treatment of oral cancer tumors in hamsters.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Experiment where 3 different treatments of ethanol were tested on
+      the treatment of oral cancer tumors in hamsters.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      ethanol
+      ::
 
-   .. rubric:: Format
-      :name: format
+         ethanol
 
-   A data frame with 24 observations, each representing one hamster, on
-   the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   treatment
-      Treatment the hamster received.
+      A data frame with 24 observations, each representing one hamster,
+      on the following 2 variables.
 
-   regress
-      a factor with levels ``no`` ``yes``
+      treatment
+         Treatment the hamster received.
 
-   .. rubric:: Details
-      :name: details
+      regress
+         a factor with levels ``no`` ``yes``
 
-   The ``ethyl_cellulose`` and ``pure_ethanol`` treatments consisted of
-   about a quarter of the volume of the tumors, while the
-   ``pure_ethanol_16x`` treatment was 16x that, so about 4 times the
-   size of the tumors.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The ``ethyl_cellulose`` and ``pure_ethanol`` treatments consisted
+      of about a quarter of the volume of the tumors, while the
+      ``pure_ethanol_16x`` treatment was 16x that, so about 4 times the
+      size of the tumors.
 
-   Morhard R, et al. 2017. Development of enhanced ethanol ablation as
-   an alternative to surgery in treatment of superficial solid tumors.
-   Scientific Reports 7:8750.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Morhard R, et al. 2017. Development of enhanced ethanol ablation
+      as an alternative to surgery in treatment of superficial solid
+      tumors. Scientific Reports 7:8750.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      table(ethanol)
-      fisher.test(table(ethanol))
+      ::
+
+         table(ethanol)
+         fisher.test(table(ethanol))

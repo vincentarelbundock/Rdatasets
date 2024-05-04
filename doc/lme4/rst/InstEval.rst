@@ -1,75 +1,78 @@
 .. container::
 
-   ======== ===============
-   InstEval R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: University Lecture/Instructor Evaluations by Students at
-      ETH
-      :name: InstEval
+      ======== ===============
+      InstEval R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: University Lecture/Instructor Evaluations by Students
+         at ETH
+         :name: university-lectureinstructor-evaluations-by-students-at-eth
 
-   University lecture evaluations by students at ETH Zurich, anonymized
-   for privacy protection. This is an interesting “medium” sized example
-   of a *partially* nested mixed effect model.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      University lecture evaluations by students at ETH Zurich,
+      anonymized for privacy protection. This is an interesting “medium”
+      sized example of a *partially* nested mixed effect model.
 
-   A data frame with 73421 observations on the following 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``s``
-      a factor with levels ``1:2972`` denoting individual students.
+      A data frame with 73421 observations on the following 7 variables.
 
-   ``d``
-      a factor with 1128 levels from ``1:2160``, denoting individual
-      professors or lecturers.
+      ``s``
+         a factor with levels ``1:2972`` denoting individual students.
 
-   ``studage``
-      an ordered factor with levels ``2`` < ``4`` < ``6`` < ``8``,
-      denoting student's “age” measured in the *semester* number the
-      student has been enrolled.
+      ``d``
+         a factor with 1128 levels from ``1:2160``, denoting individual
+         professors or lecturers.
 
-   ``lectage``
-      an ordered factor with 6 levels, ``1`` < ``2`` < ... < ``6``,
-      measuring how many semesters back the lecture rated had taken
-      place.
+      ``studage``
+         an ordered factor with levels ``2`` < ``4`` < ``6`` < ``8``,
+         denoting student's “age” measured in the *semester* number the
+         student has been enrolled.
 
-   ``service``
-      a binary factor with levels ``0`` and ``1``; a lecture is a
-      “service”, if held for a different department than the lecturer's
-      main one.
+      ``lectage``
+         an ordered factor with 6 levels, ``1`` < ``2`` < ... < ``6``,
+         measuring how many semesters back the lecture rated had taken
+         place.
 
-   ``dept``
-      a factor with 14 levels from ``1:15``, using a random code for the
-      department of the lecture.
+      ``service``
+         a binary factor with levels ``0`` and ``1``; a lecture is a
+         “service”, if held for a different department than the
+         lecturer's main one.
 
-   ``y``
-      a numeric vector of *ratings* of lectures by the students, using
-      the discrete scale ``1:5``, with meanings of ‘poor’ to ‘very
-      good’.
+      ``dept``
+         a factor with 14 levels from ``1:15``, using a random code for
+         the department of the lecture.
 
-   Each observation is one student's rating for a specific lecture (of
-   one lecturer, during one semester in the past).
+      ``y``
+         a numeric vector of *ratings* of lectures by the students,
+         using the discrete scale ``1:5``, with meanings of ‘poor’ to
+         ‘very good’.
 
-   .. rubric:: Details
-      :name: details
+      Each observation is one student's rating for a specific lecture
+      (of one lecturer, during one semester in the past).
 
-   The main goal of the survey is to find “the best liked prof”,
-   according to the lectures given. Statistical analysis of such data
-   has been the basis for a (student) jury selecting the final winners.
+      .. rubric:: Details
+         :name: details
 
-   The present data set has been anonymized and slightly simplified on
-   purpose.
+      The main goal of the survey is to find “the best liked prof”,
+      according to the lectures given. Statistical analysis of such data
+      has been the basis for a (student) jury selecting the final
+      winners.
 
-   .. rubric:: Examples
-      :name: examples
+      The present data set has been anonymized and slightly simplified
+      on purpose.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      str(InstEval)
+      ::
 
-      head(InstEval, 16)
-      xtabs(~ service + dept, InstEval)
+         str(InstEval)
+
+         head(InstEval, 16)
+         xtabs(~ service + dept, InstEval)

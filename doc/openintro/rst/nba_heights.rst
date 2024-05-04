@@ -1,50 +1,52 @@
 .. container::
 
-   =========== ===============
-   nba_heights R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: NBA Player heights from 2008-9
-      :name: nba_heights
+      =========== ===============
+      nba_heights R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: NBA Player heights from 2008-9
+         :name: nba-player-heights-from-2008-9
 
-   Heights of all NBA players from the 2008-9 season.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Heights of all NBA players from the 2008-9 season.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      nba_heights
+      ::
 
-   .. rubric:: Format
-      :name: format
+         nba_heights
 
-   A data frame with 435 observations (players) on the following 4
-   variables.
+      .. rubric:: Format
+         :name: format
 
-   last_name
-      Last name.
+      A data frame with 435 observations (players) on the following 4
+      variables.
 
-   first_name
-      First name.
+      last_name
+         Last name.
 
-   h_meters
-      Height, in meters.
+      first_name
+         First name.
 
-   h_in
-      Height, in inches.
+      h_meters
+         Height, in meters.
 
-   .. rubric:: Source
-      :name: source
+      h_in
+         Height, in inches.
 
-   Collected from `NBA <https://www.nba.com/>`__.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Collected from `NBA <https://www.nba.com/>`__.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      qqnorm(nba_heights$h_meters)
+      ::
+
+         qqnorm(nba_heights$h_meters)

@@ -1,47 +1,49 @@
 .. container::
 
-   ============== ===============
-   family_college R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Simulated sample of parent / teen college attendance
-      :name: family_college
+      ============== ===============
+      family_college R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Simulated sample of parent / teen college attendance
+         :name: simulated-sample-of-parent-teen-college-attendance
 
-   A simulated data set based on real population summaries.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A simulated data set based on real population summaries.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      family_college
+      ::
 
-   .. rubric:: Format
-      :name: format
+         family_college
 
-   A data frame with 792 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   teen
-      Whether the teen goes to ``college`` or ``not``.
+      A data frame with 792 observations on the following 2 variables.
 
-   parents
-      Whether the parent holds a college ``degree`` or ``not``.
+      teen
+         Whether the teen goes to ``college`` or ``not``.
 
-   .. rubric:: Source
-      :name: source
+      parents
+         Whether the parent holds a college ``degree`` or ``not``.
 
-   Simulation based off of summary information provided at
-   https://eric.ed.gov/?id=ED460660.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Simulation based off of summary information provided at
+      https://eric.ed.gov/?id=ED460660.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(dplyr)
+      ::
 
-      family_college %>%
-        count(teen, parents)
+         library(dplyr)
+
+         family_college %>%
+           count(teen, parents)

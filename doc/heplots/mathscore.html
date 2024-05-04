@@ -12,38 +12,31 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>mathscore</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='mathscore'>
-Math scores for basic math and word problems
-</h2>
+<h2>Math scores for basic math and word problems</h2>
 
 <h3>Description</h3>
 
-<p>Scores for two groups of school children taught by different math teachers and tested
-for both basic math (BM) problems and solving word problems (WP).
+<p>Scores for two groups of school children taught by different math teachers
+and tested for both basic math (BM) problems and solving word problems (WP).
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data("mathscore")</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A data frame with 12 observations on the following 3 variables.
 </p>
-
+ 
 <dl>
 <dt><code>group</code></dt><dd><p>a factor with levels <code>1</code> <code>2</code></p>
 </dd>
 <dt><code>BM</code></dt><dd><p>Basic Math score, a numeric vector</p>
-</dd>
+</dd> 
 <dt><code>WP</code></dt><dd><p>Word Problems score, a numeric vector</p>
-</dd>
+</dd> 
 </dl>
 
 
@@ -56,7 +49,8 @@ for both basic math (BM) problems and solving word problems (WP).
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(mathscore)
+<pre><code class='language-R'>
+data(mathscore)
 str(mathscore)
 
 math.mod &lt;- lm(cbind(BM, WP) ~ group, data=mathscore)
@@ -74,8 +68,10 @@ heplot(math.mod, fill=TRUE,
 
 
 
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

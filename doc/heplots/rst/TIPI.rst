@@ -1,143 +1,139 @@
 .. container::
 
-   ==== ===============
-   TIPI R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Data on the Ten Item Personality Inventory
-      :name: TIPI
+      ==== ===============
+      TIPI R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data on the Ten Item Personality Inventory
+         :name: data-on-the-ten-item-personality-inventory
 
-   The Ten Item Personality Inventory (Gosling et al. 2003) is a brief
-   inventory of the Big Five personality domains (Extraversion,
-   Neuroticism, Conscientiousness, Agreeableness, and Openness to
-   experience). This dataset, originally from the Open Source
-   Psychometrics Project (https://openpsychometrics.org/), was used by
-   Jones et al. (2020), from which we obtained this version.
+      .. rubric:: Description
+         :name: description
 
-   In addition to scores on the Big Five scales, the dataset contains 11
-   demographic variables on the participants, potentially useful in
-   multivariate analyses.
+      The Ten Item Personality Inventory (Gosling et al. 2003) is a
+      brief inventory of the Big Five personality domains (Extraversion,
+      Neuroticism, Conscientiousness, Agreeableness, and Openness to
+      experience). This dataset, originally from the Open Source
+      Psychometrics Project (https://openpsychometrics.org/), was used
+      by Jones et al. (2020), from which we obtained this version.
 
-   .. rubric:: Usage
-      :name: usage
+      .. rubric:: Format
+         :name: format
 
-   .. code:: R
+      A data frame with 1799 observations on the following 16 variables.
 
-      data("TIPI")
+      ``Extraversion``
+         a numeric vector
 
-   .. rubric:: Format
-      :name: format
+      ``Neuroticism``
+         a numeric vector
 
-   A data frame with 1799 observations on the following 16 variables.
+      ``Conscientiousness``
+         a numeric vector
 
-   ``Extraversion``
-      a numeric vector
+      ``Agreeableness``
+         a numeric vector
 
-   ``Neuroticism``
-      a numeric vector
+      ``Openness``
+         a numeric vector
 
-   ``Conscientiousness``
-      a numeric vector
+      ``education``
+         an ordered factor with levels ``<HS`` < ``HS`` < ``Univ`` <
+         ``Grad``
 
-   ``Agreeableness``
-      a numeric vector
+      ``urban``
+         an ordered factor with levels ``Rural`` < ``Suburban`` <
+         ``Urban``
 
-   ``Openness``
-      a numeric vector
+      ``gender``
+         a factor with levels ``M`` ``F``
 
-   ``education``
-      an ordered factor with levels ``<HS`` < ``HS`` < ``Univ`` <
-      ``Grad``
+      ``engnat``
+         a factor with levels ``Native`` ``Non-native``
 
-   ``urban``
-      an ordered factor with levels ``Rural`` < ``Suburban`` < ``Urban``
+      ``age``
+         a numeric vector
 
-   ``gender``
-      a factor with levels ``M`` ``F``
+      ``religion``
+         a factor with levels ``Agnostic`` ``Atheist`` ``Buddhist``
+         ``Christian       (Catholic)`` ``Christian (Mormon)``
+         ``Christian (Protestant)`` ``Christian (Other)`` ``Hindu``
+         ``Jewish`` ``Muslim`` ``Sikh`` ``Other``
 
-   ``engnat``
-      a factor with levels ``Native`` ``Non-native``
+      ``orientation``
+         a factor with levels ``Heterosexual`` ``Bisexual``
+         ``Homosexual`` ``Asexual`` ``Other``
 
-   ``age``
-      a numeric vector
+      ``race``
+         a factor with levels ``Asian`` ``Arab`` ``Black``
+         ``Indig-White`` ``Other``
 
-   ``religion``
-      a factor with levels ``Agnostic`` ``Atheist`` ``Buddhist``
-      ``Christian (Catholic)`` ``Christian (Mormon)``
-      ``Christian (Protestant)`` ``Christian (Other)`` ``Hindu``
-      ``Jewish`` ``Muslim`` ``Sikh`` ``Other``
+      ``voted``
+         a factor with levels ``Yes`` ``No``
 
-   ``orientation``
-      a factor with levels ``Heterosexual`` ``Bisexual`` ``Homosexual``
-      ``Asexual`` ``Other``
+      ``married``
+         a factor with levels ``Never married`` ``Currently married``
+         ``Previously married``
 
-   ``race``
-      a factor with levels ``Asian`` ``Arab`` ``Black`` ``Indig-White``
-      ``Other``
+      ``familysize``
+         a numeric vector
 
-   ``voted``
-      a factor with levels ``Yes`` ``No``
+      .. rubric:: Details
+         :name: details
 
-   ``married``
-      a factor with levels ``Never married`` ``Currently married``
-      ``Previously married``
+      In addition to scores on the Big Five scales, the dataset contains
+      11 demographic variables on the participants, potentially useful
+      in multivariate analyses.
 
-   ``familysize``
-      a numeric vector
+      Scores on each personality domain were calculated by averaging
+      items assigned to each domain (after reverse scoring specific
+      items). In this version, total scores for each scale were
+      calculated by averaging the positively and negatively coded items,
+      for example, ``TIPI$Extraversion <- (TIPI$E + (8-TIPI$E_r))/2``.
 
-   .. rubric:: Details
-      :name: details
+      Then, for the present purposes, some tidying was done:
 
-   Scores on each personality domain were calculated by averaging items
-   assigned to each domain (after reverse scoring specific items). In
-   this version, total scores for each scale were calculated by
-   averaging the positively and negatively coded items, for example,
-   ``TIPI$Extraversion <- (TIPI$E + (8-TIPI$E_r))/2``.
+      -  100 cases with 'gender=="Other" were deleted;
 
-   Then, for the present purposes, some tidying was done:
+      -  codes for levels of 'education', 'engnat' and 'race' were
+         abbreviated for ease of use in graphics.
 
-   -  100 cases with 'gender=="Other" were deleted;
+      .. rubric:: Source
+         :name: source
 
-   -  codes for levels of 'education', 'engnat' and 'race' were
-      abbreviated for ease of use in graphics.
+      Jones, P.J., Mair, P., Simon, T. et al. (2020). Network Trees: A
+      Method for Recursively Partitioning Covariance Structures.
+      *Psychometrika*, **85**, 926?945.
+      https://doi.org/10.1007/s11336-020-09731-4
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: References
+         :name: references
 
-   Jones, P.J., Mair, P., Simon, T. et al. (2020). Network Trees: A
-   Method for Recursively Partitioning Covariance Structures.
-   *Psychometrika*, **85**, 926?945.
-   https://doi.org/10.1007/s11336-020-09731-4
+      Gosling, S. D., Rentfrow, P. J., & Swann, W. B, Jr. (2003). A very
+      brief measure of the Big-Five personality domains. *Journal of
+      Research in Personality*, **37**, 504?528.
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: Examples
+         :name: examples
 
-   Gosling, S. D., Rentfrow, P. J., & Swann, W. B, Jr. (2003). A very
-   brief measure of the Big-Five personality domains. *Journal of
-   Research in Personality*, **37**, 504?528.
+      ::
 
-   .. rubric:: Examples
-      :name: examples
+         data(TIPI)
+         # fit an mlm
+         tipi.mlm <- lm(cbind(Extraversion, Neuroticism, Conscientiousness, Agreeableness, Openness) 
+                        ~ engnat + gender + education, data = TIPI )
+         car::Anova(tipi.mlm)
 
-   .. code:: R
+         heplot(tipi.mlm, fill=TRUE, fill.alpha=0.1)
 
-      data(TIPI)
-      # fit an mlm
-      tipi.mlm <- lm(cbind(Extraversion, Neuroticism, Conscientiousness, Agreeableness, Openness) 
-                     ~ engnat + gender + education, data = TIPI )
-      Anova(tipi.mlm)
+         pairs(tipi.mlm, fill=TRUE, fill.alpha=0.1)
 
-      heplot(tipi.mlm, fill=TRUE, fill.alpha=0.1)
+         # candisc works best for factors with >2 levels
+         library(candisc)
+         tipi.can <- candisc(tipi.mlm, term="education")
+         tipi.can
 
-      pairs(tipi.mlm, fill=TRUE, fill.alpha=0.1)
-
-      # candisc works best for factors with >2 levels
-      library(candisc)
-      tipi.can <- candisc(tipi.mlm, term="education")
-      tipi.can
-
-      heplot(tipi.can, fill=TRUE, fill.alpha=0.1, 
-             var.col = "darkred", var.cex = 1.5, var.lwd = 3)
+         heplot(tipi.can, fill=TRUE, fill.alpha=0.1, 
+                var.col = "darkred", var.cex = 1.5, var.lwd = 3)

@@ -1,82 +1,85 @@
 .. container::
 
-   ====== ===============
-   PreSex R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Pre-marital Sex and Divorce
-      :name: PreSex
+      ====== ===============
+      PreSex R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Pre-marital Sex and Divorce
+         :name: pre-marital-sex-and-divorce
 
-   Data from Thornes & Collard (1979), reported in Gilbert (1981), on
-   pre- and extra-marital sex and divorce.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from Thornes & Collard (1979), reported in Gilbert (1981), on
+      pre- and extra-marital sex and divorce.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("PreSex")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("PreSex")
 
-   A 4-dimensional array resulting from cross-tabulating 1036
-   observations on 4 variables. The variables and their levels are as
-   follows:
+      .. rubric:: Format
+         :name: format
 
-   == =============== =================
-   No Name            Levels
-   1  MaritalStatus   Divorced, Married
-   2  ExtramaritalSex Yes, No
-   3  PremaritalSex   Yes, No
-   4  Gender          Women, Men
-   == =============== =================
+      A 4-dimensional array resulting from cross-tabulating 1036
+      observations on 4 variables. The variables and their levels are as
+      follows:
 
-   .. rubric:: Source
-      :name: source
+      == =============== =================
+      No Name            Levels
+      1  MaritalStatus   Divorced, Married
+      2  ExtramaritalSex Yes, No
+      3  PremaritalSex   Yes, No
+      4  Gender          Women, Men
+      == =============== =================
 
-   Michael Friendly (2000), Visualizing Categorical Data:
-   http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/marital.sas
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Michael Friendly (2000), Visualizing Categorical Data:
+      http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/marital.sas
 
-   G. N. Gilbert (1981), *Modelling Society: An Introduction to
-   Loglinear Analysis for Social Researchers*. Allen and Unwin, London.
+      .. rubric:: References
+         :name: references
 
-   B. Thornes & J. Collard (1979), *Who Divorces?*. Routledge & Kegan,
-   London.
+      G. N. Gilbert (1981), *Modelling Society: An Introduction to
+      Loglinear Analysis for Social Researchers*. Allen and Unwin,
+      London.
 
-   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
-   Cary, NC.
+      B. Thornes & J. Collard (1979), *Who Divorces?*. Routledge &
+      Kegan, London.
 
-   .. rubric:: Examples
-      :name: examples
+      M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+      Cary, NC.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("PreSex")
+      ::
 
-      ## Mosaic display for Gender and Premarital Sexual Experience
-      ## (Gender Pre)
-      mosaic(margin.table(PreSex, c(3,4)), 
-                      main = "Gender and Premarital Sex")
+         data("PreSex")
 
-      ## (Gender Pre)(Extra)
-      mosaic(margin.table(PreSex, c(2,3,4)), 
-             expected = ~Gender * PremaritalSex + ExtramaritalSex ,
-             main = "PreMaritalSex*Gender +Sex")
+         ## Mosaic display for Gender and Premarital Sexual Experience
+         ## (Gender Pre)
+         mosaic(margin.table(PreSex, c(3,4)), 
+                         main = "Gender and Premarital Sex")
 
-      ## (Gender Pre Extra)(Marital)
-      mosaic(PreSex,
-             expected = ~Gender*PremaritalSex*ExtramaritalSex + MaritalStatus,
-             main = "PreMarital*ExtraMarital + MaritalStatus")
+         ## (Gender Pre)(Extra)
+         mosaic(margin.table(PreSex, c(2,3,4)), 
+                expected = ~Gender * PremaritalSex + ExtramaritalSex ,
+                main = "PreMaritalSex*Gender +Sex")
 
-      ## (GPE)(PEM)
-      mosaic(PreSex, 
-             expected = ~ Gender * PremaritalSex * ExtramaritalSex
-                          + MaritalStatus * PremaritalSex * ExtramaritalSex,
-             main = "G*P*E + P*E*M")
+         ## (Gender Pre Extra)(Marital)
+         mosaic(PreSex,
+                expected = ~Gender*PremaritalSex*ExtramaritalSex + MaritalStatus,
+                main = "PreMarital*ExtraMarital + MaritalStatus")
+
+         ## (GPE)(PEM)
+         mosaic(PreSex, 
+                expected = ~ Gender * PremaritalSex * ExtramaritalSex
+                             + MaritalStatus * PremaritalSex * ExtramaritalSex,
+                main = "G*P*E + P*E*M")

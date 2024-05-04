@@ -1,51 +1,54 @@
 .. container::
 
-   =============== ===============
-   FinalFourIzzo17 R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: NCAA Final Four by Seed and Tom Izzo (through 2017)
-      :name: FinalFourIzzo17
+      =============== ===============
+      FinalFourIzzo17 R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: NCAA Final Four by Seed and Tom Izzo (through 2017)
+         :name: ncaa-final-four-by-seed-and-tom-izzo-through-2017
 
-   NCAA Final Four by seed with indicator for Tom Izzo's teams for 1985
-   - 2017
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      NCAA Final Four by seed with indicator for Tom Izzo's teams for
+      1985 - 2017
 
-   A data frame with 2112 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Year``
-      Year 1985 - 2017
+      A data frame with 2112 observations on the following 4 variables.
 
-   ``Seed``
-      Seed in NCAA men's basketball tournament: 1 to 16
+      ``Year``
+         Year 1985 - 2017
 
-   ``Final4``
-      ``1``\ =made Final Four or ``0``\ =did not make Final Four
+      ``Seed``
+         Seed in NCAA men's basketball tournament: 1 to 16
 
-   ``Izzo``
-      ``1``\ =team coached by Tom Izzo or ``0``\ =not an Izzo team
+      ``Final4``
+         ``1``\ =made Final Four or ``0``\ =did not make Final Four
 
-   .. rubric:: Details
-      :name: details
+      ``Izzo``
+         ``1``\ =team coached by Tom Izzo or ``0``\ =not an Izzo team
 
-   Each year 64 college teams are selected for the NCAA Division I Men's
-   Basketball tournament, with 16 teams placed in each of four regions.
-   Within each region the teams are seeded from 1 to 16, with the
-   (presumed) best team as the 1 seed and the (presumed) weakest team as
-   the 16 seed; this practice of seeding teams began in 1979 for the
-   NCAA tournament. Only one team from each region (so four teams each
-   year) advances to the Final Four. This dataset is an extention of
-   FinalFourIzzo (that ended in 2017) and the same as FinalFourLong2017,
-   except the data starts in 1985 and we have an extra column that is an
-   indicator for Michigan State teams coached by Tom Izzo.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Each year 64 college teams are selected for the NCAA Division I
+      Men's Basketball tournament, with 16 teams placed in each of four
+      regions. Within each region the teams are seeded from 1 to 16,
+      with the (presumed) best team as the 1 seed and the (presumed)
+      weakest team as the 16 seed; this practice of seeding teams began
+      in 1979 for the NCAA tournament. Only one team from each region
+      (so four teams each year) advances to the Final Four. This dataset
+      is an extention of FinalFourIzzo (that ended in 2017) and the same
+      as FinalFourLong2017, except the data starts in 1985 and we have
+      an extra column that is an indicator for Michigan State teams
+      coached by Tom Izzo.
 
-   Final Four teams and their seed can be found at
-   http://www.championshiphistory.com/ncaahoops.php
+      .. rubric:: Source
+         :name: source
+
+      Final Four teams and their seed can be found at
+      http://www.championshiphistory.com/ncaahoops.php

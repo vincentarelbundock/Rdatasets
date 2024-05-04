@@ -1,44 +1,46 @@
 .. container::
 
-   =============== ===============
-   fish_encounters R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: Fish encounters
-      :name: fish_encounters
+      =============== ===============
+      fish_encounters R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Fish encounters
+         :name: fish-encounters
 
-   Information about fish swimming down a river: each station represents
-   an autonomous monitor that records if a tagged fish was seen at that
-   location. Fish travel in one direction (migrating downstream).
-   Information about misses is just as important as hits, but is not
-   directly recorded in this form of the data.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Information about fish swimming down a river: each station
+      represents an autonomous monitor that records if a tagged fish was
+      seen at that location. Fish travel in one direction (migrating
+      downstream). Information about misses is just as important as
+      hits, but is not directly recorded in this form of the data.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      fish_encounters
+      ::
 
-   .. rubric:: Format
-      :name: format
+         fish_encounters
 
-   A dataset with variables:
+      .. rubric:: Format
+         :name: format
 
-   fish
-      Fish identifier
+      A dataset with variables:
 
-   station
-      Measurement station
+      fish
+         Fish identifier
 
-   seen
-      Was the fish seen? (1 if yes, and true for all rows)
+      station
+         Measurement station
 
-   .. rubric:: Source
-      :name: source
+      seen
+         Was the fish seen? (1 if yes, and true for all rows)
 
-   Dataset provided by Myfanwy Johnston; more details at
-   https://fishsciences.github.io/post/visualizing-fish-encounter-histories/
+      .. rubric:: Source
+         :name: source
+
+      Dataset provided by Myfanwy Johnston; more details at
+      https://fishsciences.github.io/post/visualizing-fish-encounter-histories/

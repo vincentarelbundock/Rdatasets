@@ -1,71 +1,73 @@
 .. container::
 
-   ====== ===============
-   MunExp R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Municipal Expenditure Data
-      :name: MunExp
+      ====== ===============
+      MunExp R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Municipal Expenditure Data
+         :name: municipal-expenditure-data
 
-   a panel of 265 observations from 1979 to 1987
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 2385
+      a panel of 265 observations from 1979 to 1987
 
-   *observation* : regional
+      *number of observations* : 2385
 
-   *country* : Sweden
+      *observation* : regional
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Sweden
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(MunExp)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(MunExp)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   id
-      identification
+      A dataframe containing :
 
-   year
-      date
+      id
+         identification
 
-   expend
-      expenditure
+      year
+         date
 
-   revenue
-      revenue from taxes and fees
+      expend
+         expenditure
 
-   grants
-      grants from Central Government
+      revenue
+         revenue from taxes and fees
 
-   .. rubric:: Source
-      :name: source
+      grants
+         grants from Central Government
 
-   Dahlberg, M. and E. Johansson (2000) “An examination of the dynamic
-   behavior of local government using ``GMM`` boot-strapping methods”,
-   *Journal of Applied Econometrics*, **21**, 333-355.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Dahlberg, M. and E. Johansson (2000) “An examination of the
+      dynamic behavior of local government using ``GMM`` boot-strapping
+      methods”, *Journal of Applied Econometrics*, **21**, 333-355.
 
-   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   https://archive.org/details/econometricanaly0000gree_f4x3, Table
-   F18.1.
+      .. rubric:: References
+         :name: references
 
-   Journal of Applied Econometrics data archive :
-   http://qed.econ.queensu.ca/jae/.
+      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+      https://archive.org/details/econometricanaly0000gree_f4x3, Table
+      F18.1.
 
-   .. rubric:: See Also
-      :name: see-also
+      Journal of Applied Econometrics data archive :
+      http://qed.econ.queensu.ca/jae/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

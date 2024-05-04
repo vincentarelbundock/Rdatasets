@@ -1,71 +1,73 @@
 .. container::
 
-   ================ ===============
-   training_example R Documentation
-   ================ ===============
+   .. container::
 
-   .. rubric:: Simulated data from a job training program
-      :name: training_example
+      ================ ===============
+      training_example R Documentation
+      ================ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Simulated data from a job training program
+         :name: simulated-data-from-a-job-training-program
 
-   This simulated data, which is presented in the form of a full
-   results, table, is used to demonstrate a matching procedure.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This simulated data, which is presented in the form of a full
+      results, table, is used to demonstrate a matching procedure.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      training_example
+      ::
 
-   .. rubric:: Format
-      :name: format
+         training_example
 
-   A data frame with 25 rows and 9 variables
+      .. rubric:: Format
+         :name: format
 
-   unit_treat
-      Unit ID for treated observations
+      A data frame with 25 rows and 9 variables
 
-   age_treat
-      age for treated observations
+      unit_treat
+         Unit ID for treated observations
 
-   earnings_treat
-      earnings for treated observations
+      age_treat
+         age for treated observations
 
-   unit_control
-      Unit ID for control observations
+      earnings_treat
+         earnings for treated observations
 
-   age_control
-      age for control observations
+      unit_control
+         Unit ID for control observations
 
-   earnings_control
-      earnings for control observations
+      age_control
+         age for control observations
 
-   unit_matched
-      Unit ID for matched controls
+      earnings_control
+         earnings for control observations
 
-   age_matched
-      age for matched controls
+      unit_matched
+         Unit ID for matched controls
 
-   earnings_matched
-      earnings for matched controls
+      age_matched
+         age for matched controls
 
-   .. rubric:: Details
-      :name: details
+      earnings_matched
+         earnings for matched controls
 
-   This data is used in the *Matching and Subclassification* chapter of
-   *Causal Inference: The Mixtape* by Cunningham.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This data is used in the *Matching and Subclassification* chapter
+      of *Causal Inference: The Mixtape* by Cunningham.
 
-   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-   https://mixtape.scunning.com/index.html.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+      https://mixtape.scunning.com/index.html.
 
-   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-   https://mixtape.scunning.com/index.html.
+      .. rubric:: References
+         :name: references
+
+      Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+      https://mixtape.scunning.com/index.html.

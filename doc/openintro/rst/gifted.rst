@@ -1,82 +1,85 @@
 .. container::
 
-   ====== ===============
-   gifted R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Analytical skills of young gifted children
-      :name: gifted
+      ====== ===============
+      gifted R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Analytical skills of young gifted children
+         :name: analytical-skills-of-young-gifted-children
 
-   An investigator is interested in understanding the relationship, if
-   any, between the analytical skills of young gifted children and the
-   following variables: father's IQ, mother's IQ, age in month when the
-   child first said "mummy" or "daddy", age in month when the child
-   first counted to 10 successfully, average number of hours per week
-   the child's mother or father reads to the child, average number of
-   hours per week the child watched an educational program on TV during
-   the past three months, average number of hours per week the child
-   watched cartoons on TV during the past three months. The analytical
-   skills are evaluated using a standard testing procedure, and the
-   score on this test is used as the response variable.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      An investigator is interested in understanding the relationship,
+      if any, between the analytical skills of young gifted children and
+      the following variables: father's IQ, mother's IQ, age in month
+      when the child first said "mummy" or "daddy", age in month when
+      the child first counted to 10 successfully, average number of
+      hours per week the child's mother or father reads to the child,
+      average number of hours per week the child watched an educational
+      program on TV during the past three months, average number of
+      hours per week the child watched cartoons on TV during the past
+      three months. The analytical skills are evaluated using a standard
+      testing procedure, and the score on this test is used as the
+      response variable.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      gifted
+      ::
 
-   .. rubric:: Format
-      :name: format
+         gifted
 
-   A data frame with 36 observations and 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   score
-      Score in test of analytical skills.
+      A data frame with 36 observations and 8 variables.
 
-   fatheriq
-      Father's IQ.
+      score
+         Score in test of analytical skills.
 
-   motheriq
-      Mother's IQ.
+      fatheriq
+         Father's IQ.
 
-   speak
-      Age in months when the child first said "mummy" or "daddy".
+      motheriq
+         Mother's IQ.
 
-   count
-      Age in months when the child first counted to 10 successfully.
+      speak
+         Age in months when the child first said "mummy" or "daddy".
 
-   read
-      Average number of hours per week the child's mother or father
-      reads to the child.
+      count
+         Age in months when the child first counted to 10 successfully.
 
-   edutv
-      Average number of hours per week the child watched an educational
-      program on TV during the past three months.
+      read
+         Average number of hours per week the child's mother or father
+         reads to the child.
 
-   cartoons
-      Average number of hours per week the child watched cartoons on TV
-      during the past three months.
+      edutv
+         Average number of hours per week the child watched an
+         educational program on TV during the past three months.
 
-   .. rubric:: Details
-      :name: details
+      cartoons
+         Average number of hours per week the child watched cartoons on
+         TV during the past three months.
 
-   Data were collected from schools in a large city on a set of
-   thirty-six children who were identified as gifted children soon after
-   they reached the age of four.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Data were collected from schools in a large city on a set of
+      thirty-six children who were identified as gifted children soon
+      after they reached the age of four.
 
-   Graybill, F.A. & Iyer, H.K., (1994) Regression Analysis: Concepts and
-   Applications, Duxbury, p. 511-6.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Graybill, F.A. & Iyer, H.K., (1994) Regression Analysis: Concepts
+      and Applications, Duxbury, p. 511-6.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      gifted
+      ::
+
+         gifted

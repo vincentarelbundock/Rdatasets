@@ -1,48 +1,50 @@
 .. container::
 
-   ============= ===============
-   student_sleep R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Sleep for 110 students (simulated)
-      :name: student_sleep
+      ============= ===============
+      student_sleep R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sleep for 110 students (simulated)
+         :name: sleep-for-110-students-simulated
 
-   A simulated data set for how much 110 college students each slept in
-   a single night.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A simulated data set for how much 110 college students each slept
+      in a single night.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      student_sleep
+      ::
 
-   .. rubric:: Format
-      :name: format
+         student_sleep
 
-   A data frame with 110 observations on the following variable.
+      .. rubric:: Format
+         :name: format
 
-   hours
-      Number of hours slept by this student (simulated).
+      A data frame with 110 observations on the following variable.
 
-   .. rubric:: Source
-      :name: source
+      hours
+         Number of hours slept by this student (simulated).
 
-   Simulated data.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Simulated data.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      set.seed(2)
-      x <- exp(c(
-        rnorm(100, log(7.5), 0.15),
-        rnorm(10, log(10), 0.196)
-      ))
-      x <- round(x - mean(x) + 7.42, 2)
+      ::
 
-      identical(x, student_sleep$hours)
+         set.seed(2)
+         x <- exp(c(
+           rnorm(100, log(7.5), 0.15),
+           rnorm(10, log(10), 0.196)
+         ))
+         x <- round(x - mean(x) + 7.42, 2)
+
+         identical(x, student_sleep$hours)

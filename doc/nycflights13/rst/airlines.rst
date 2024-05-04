@@ -1,43 +1,45 @@
 .. container::
 
-   ======== ===============
-   airlines R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Airline names.
-      :name: airlines
+      ======== ===============
+      airlines R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Airline names.
+         :name: airline-names.
 
-   Look up airline names from their carrier codes.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Look up airline names from their carrier codes.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      airlines
+      ::
 
-   .. rubric:: Format
-      :name: format
+         airlines
 
-   Data frame with columns
+      .. rubric:: Format
+         :name: format
 
-   carrier
-      Two letter abbreviation.
+      Data frame with columns
 
-   name
-      Full name.
+      carrier
+         Two letter abbreviation.
 
-   .. rubric:: Source
-      :name: source
+      name
+         Full name.
 
-   https://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        airlines
+      ::
+
+           airlines

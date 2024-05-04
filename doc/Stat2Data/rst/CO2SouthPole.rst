@@ -1,44 +1,46 @@
 .. container::
 
-   ============ ===============
-   CO2SouthPole R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: CO2 Readings at the South Pole
-      :name: CO2SouthPole
+      ============ ===============
+      CO2SouthPole R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: CO2 Readings at the South Pole
+         :name: co2-readings-at-the-south-pole
 
-   Monthly carbon dioxide readings at the South Pole
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Monthly carbon dioxide readings at the South Pole
 
-   A data frame with 348 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Year``
-      Year (1988 - 2016)
+      A data frame with 348 observations on the following 4 variables.
 
-   ``Month``
-      Month (1=Jan. to 12=Dec.)
+      ``Year``
+         Year (1988 - 2016)
 
-   ``CO2``
-      Atmospheric carbon dioxide level (ppm)
+      ``Month``
+         Month (1=Jan. to 12=Dec.)
 
-   ``t``
-      Time interval (t=1 to 348)
+      ``CO2``
+         Atmospheric carbon dioxide level (ppm)
 
-   .. rubric:: Details
-      :name: details
+      ``t``
+         Time interval (t=1 to 348)
 
-   Monthly average carbon dioxide readings (1988 - 2016) at the South
-   Pole. Data collected and disseminated by ERSL (Earth System Research
-   Laboratory) of the U.S. NOAA (National Oceanic and Atmospheric
-   Administration.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Monthly average carbon dioxide readings (1988 - 2016) at the South
+      Pole. Data collected and disseminated by ERSL (Earth System
+      Research Laboratory) of the U.S. NOAA (National Oceanic and
+      Atmospheric Administration.
 
-   Data downloaded for SPO (South Pole) from the ESRL/GMD data page at
-   https://www.esrl.noaa.gov/gmd/dv/data/
+      .. rubric:: Source
+         :name: source
+
+      Data downloaded for SPO (South Pole) from the ESRL/GMD data page
+      at https://www.esrl.noaa.gov/gmd/dv/data/

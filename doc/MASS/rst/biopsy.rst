@@ -1,93 +1,98 @@
 .. container::
 
-   ====== ===============
-   biopsy R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Biopsy Data on Breast Cancer Patients
-      :name: biopsy
+      ====== ===============
+      biopsy R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Biopsy Data on Breast Cancer Patients
+         :name: biopsy-data-on-breast-cancer-patients
 
-   This breast cancer database was obtained from the University of
-   Wisconsin Hospitals, Madison from Dr. William H. Wolberg. He assessed
-   biopsies of breast tumours for 699 patients up to 15 July 1992; each
-   of nine attributes has been scored on a scale of 1 to 10, and the
-   outcome is also known. There are 699 rows and 11 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This breast cancer database was obtained from the University of
+      Wisconsin Hospitals, Madison from Dr. William H. Wolberg. He
+      assessed biopsies of breast tumours for 699 patients up to 15 July
+      1992; each of nine attributes has been scored on a scale of 1 to
+      10, and the outcome is also known. There are 699 rows and 11
+      columns.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      biopsy
+      ::
 
-   .. rubric:: Format
-      :name: format
+         biopsy
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``ID``
-      sample code number (not unique).
+      This data frame contains the following columns:
 
-   ``V1``
-      clump thickness.
+      ``ID``
+         sample code number (not unique).
 
-   ``V2``
-      uniformity of cell size.
+      ``V1``
+         clump thickness.
 
-   ``V3``
-      uniformity of cell shape.
+      ``V2``
+         uniformity of cell size.
 
-   ``V4``
-      marginal adhesion.
+      ``V3``
+         uniformity of cell shape.
 
-   ``V5``
-      single epithelial cell size.
+      ``V4``
+         marginal adhesion.
 
-   ``V6``
-      bare nuclei (16 values are missing).
+      ``V5``
+         single epithelial cell size.
 
-   ``V7``
-      bland chromatin.
+      ``V6``
+         bare nuclei (16 values are missing).
 
-   ``V8``
-      normal nucleoli.
+      ``V7``
+         bland chromatin.
 
-   ``V9``
-      mitoses.
+      ``V8``
+         normal nucleoli.
 
-   ``class``
-      ``"benign"`` or ``"malignant"``.
+      ``V9``
+         mitoses.
 
-   .. rubric:: Source
-      :name: source
+      ``class``
+         ``"benign"`` or ``"malignant"``.
 
-   P. M. Murphy and D. W. Aha (1992). UCI Repository of machine learning
-   databases. [Machine-readable data repository]. Irvine, CA: University
-   of California, Department of Information and Computer Science.
+      .. rubric:: Source
+         :name: source
 
-   O. L. Mangasarian and W. H. Wolberg (1990) Cancer diagnosis via
-   linear programming. *SIAM News* **23**, pp 1 & 18.
+      P. M. Murphy and D. W. Aha (1992). UCI Repository of machine
+      learning databases. [Machine-readable data repository]. Irvine,
+      CA: University of California, Department of Information and
+      Computer Science.
 
-   William H. Wolberg and O.L. Mangasarian (1990) Multisurface method of
-   pattern separation for medical diagnosis applied to breast cytology.
-   *Proceedings of the National Academy of Sciences, U.S.A.* **87**, pp.
-   9193–9196.
+      O. L. Mangasarian and W. H. Wolberg (1990) Cancer diagnosis via
+      linear programming. *SIAM News* **23**, pp 1 & 18.
 
-   O. L. Mangasarian, R. Setiono and W.H. Wolberg (1990) Pattern
-   recognition via linear programming: Theory and application to medical
-   diagnosis. In *Large-scale Numerical Optimization* eds Thomas F.
-   Coleman and Yuying Li, SIAM Publications, Philadelphia, pp 22–30.
+      William H. Wolberg and O.L. Mangasarian (1990) Multisurface method
+      of pattern separation for medical diagnosis applied to breast
+      cytology. *Proceedings of the National Academy of Sciences,
+      U.S.A.* **87**, pp. 9193–9196.
 
-   K. P. Bennett and O. L. Mangasarian (1992) Robust linear programming
-   discrimination of two linearly inseparable sets. *Optimization
-   Methods and Software* **1**, pp. 23–34 (Gordon & Breach Science
-   Publishers).
+      O. L. Mangasarian, R. Setiono and W.H. Wolberg (1990) Pattern
+      recognition via linear programming: Theory and application to
+      medical diagnosis. In *Large-scale Numerical Optimization* eds
+      Thomas F. Coleman and Yuying Li, SIAM Publications, Philadelphia,
+      pp 22–30.
 
-   .. rubric:: References
-      :name: references
+      K. P. Bennett and O. L. Mangasarian (1992) Robust linear
+      programming discrimination of two linearly inseparable sets.
+      *Optimization Methods and Software* **1**, pp. 23–34 (Gordon &
+      Breach Science Publishers).
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S-PLUS.* Fourth Edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S-PLUS.* Fourth Edition. Springer.

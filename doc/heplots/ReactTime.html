@@ -12,79 +12,74 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>ReactTime</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='ReactTime'>
-Reaction Time Data 
-</h2>
+<h2>Reaction Time Data</h2>
 
 <h3>Description</h3>
 
-<p>Data from Maxwell and Delaney (1990, p. 497) representing the reaction times of 10 subjects
-in some task where visual stimuli are tilted at 0, 4, and 8 degrees; with noise absent or present. 
-Each subject responded to 3 tilt x 2 noise = 6 conditions.  The data thus comprise a
-repeated measure design with two within-S factors.
+<p>Data from Maxwell and Delaney (1990, p. 497) representing the reaction times
+of 10 subjects in some task where visual stimuli are tilted at 0, 4, and 8
+degrees; with noise absent or present.  Each subject responded to 3 tilt x 2
+noise = 6 conditions.  The data thus comprise a repeated measure design with
+two within-S factors.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(ReactTime)</code></pre>
 
 
 <h3>Format</h3>
 
-<p>A data frame with 10 observations giving the reaction time for the 6 conditions.
+<p>A data frame with 10 observations giving the reaction time for the 6
+conditions.  
 </p>
-
+ 
 <dl>
 <dt><code>deg0NA</code></dt><dd><p>a numeric vector</p>
 </dd>
 <dt><code>deg4NA</code></dt><dd><p>a numeric vector</p>
-</dd>
+</dd> 
 <dt><code>deg8NA</code></dt><dd><p>a numeric vector</p>
-</dd>
+</dd> 
 <dt><code>deg0NP</code></dt><dd><p>a numeric vector</p>
-</dd>
+</dd> 
 <dt><code>deg4NP</code></dt><dd><p>a numeric vector</p>
-</dd>
+</dd> 
 <dt><code>deg8NP</code></dt><dd><p>a numeric vector</p>
-</dd>
+</dd> 
 </dl>
 
 
 
 <h3>Source</h3>
 
-<p>Baron, J. and Li, Y. (2003).
-<em>Notes on the use of R for psychology experiments and questionnaires</em>,
+<p>Baron, J. and Li, Y. (2003).  <em>Notes on the use of R for
+psychology experiments and questionnaires</em>,
 <a href="https://cran.r-project.org/doc/contrib/Baron-rpsych.pdf">https://cran.r-project.org/doc/contrib/Baron-rpsych.pdf</a>
 </p>
 
 
 <h3>References</h3>
 
-<p>Michael Friendly (2010). HE Plots for Repeated Measures Designs. <em>Journal of Statistical Software</em>,
-37(4), 1-40.
-
-doi: <a href="https://doi.org/10.18637/jss.v037.i04">10.18637/jss.v037.i04</a>.
+<p>Michael Friendly (2010). HE Plots for Repeated Measures Designs.
+<em>Journal of Statistical Software</em>, 37(4), 1-40. 
+<a href="https://doi.org/10.18637/jss.v037.i04">doi:10.18637/jss.v037.i04</a>.
 </p>
-<p>Maxwell, S. E. &amp; Delaney, H. D. (1990). 
-<em>Designing Experiments and Analyzing Data: A model comparison perspective</em>.
-Pacific Grove, CA: Brooks/Cole.
+<p>Maxwell, S. E. &amp; Delaney, H. D. (1990).  <em>Designing Experiments and
+Analyzing Data: A model comparison perspective</em>. Pacific Grove, CA:
+Brooks/Cole.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(ReactTime)
+<pre><code class='language-R'>
+data(ReactTime)
 (RT.mod &lt;- lm(as.matrix(ReactTime)~1))
 
 # within-S factors
 within &lt;- expand.grid(tilt=ordered(c(0,4,8)), noise=c("NA", "NP"))
-Anova(RT.mod, idata=within, idesign=~tilt * noise)
+car::Anova(RT.mod, idata=within, idesign=~tilt * noise)
 
 heplot(RT.mod, idata=within, idesign=~tilt * noise, iterm="tilt")
 
@@ -108,8 +103,10 @@ with(means.df, {
 	text(Tilt[6], mean[6]-10, labels="NP", col="blue", pos=1)
 	}
 	)
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

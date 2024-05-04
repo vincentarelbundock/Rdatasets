@@ -1,25 +1,27 @@
 .. container::
 
-   ==== ===============
-   hg38 R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Chromosomal lengths for build 38
-      :name: hg38
+      ==== ===============
+      hg38 R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Chromosomal lengths for build 38
+         :name: chromosomal-lengths-for-build-38
 
-   Data are used in other functions.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data are used in other functions.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      hg38
+      ::
 
-   .. rubric:: Format
-      :name: format
+         hg38
 
-   A vector containing lengths of chromosomes.
+      .. rubric:: Format
+         :name: format
+
+      A vector containing lengths of chromosomes.

@@ -1,97 +1,99 @@
 .. container::
 
-   =========== ===============
-   houseprices R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Aranda House Prices
-      :name: houseprices
+      =========== ===============
+      houseprices R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Aranda House Prices
+         :name: aranda-house-prices
 
-   The ``houseprices`` data frame consists of the floor area, price, and
-   the number of bedrooms for a sample of houses sold in Aranda in 1999.
-   Aranda is a suburb of Canberra, Australia.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``houseprices`` data frame consists of the floor area, price,
+      and the number of bedrooms for a sample of houses sold in Aranda
+      in 1999. Aranda is a suburb of Canberra, Australia.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      houseprices
+      ::
 
-   .. rubric:: Format
-      :name: format
+         houseprices
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   area
-      a numeric vector giving the floor area
+      This data frame contains the following columns:
 
-   bedrooms
-      a numeric vector giving the number of bedrooms
+      area
+         a numeric vector giving the floor area
 
-   sale.price
-      a numeric vector giving the sale price in thousands of Australian
-      dollars
+      bedrooms
+         a numeric vector giving the number of bedrooms
 
-   .. rubric:: Source
-      :name: source
+      sale.price
+         a numeric vector giving the sale price in thousands of
+         Australian dollars
 
-   J.H. Maindonald
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      J.H. Maindonald
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      plot(sale.price~area, data=houseprices)
-      pause()
+      ::
 
-      coplot(sale.price~area|bedrooms, data=houseprices)
-      pause()
+         plot(sale.price~area, data=houseprices)
+         pause()
 
-      print("Cross-Validation - Example 5.5.2")
+         coplot(sale.price~area|bedrooms, data=houseprices)
+         pause()
 
-      houseprices.lm <- lm(sale.price ~ area, data=houseprices)
-      summary(houseprices.lm)$sigma^2
-      pause()
+         print("Cross-Validation - Example 5.5.2")
 
-      CVlm()
-      pause()
+         houseprices.lm <- lm(sale.price ~ area, data=houseprices)
+         summary(houseprices.lm)$sigma^2
+         pause()
 
-      print("Bootstrapping - Example 5.5.3")
-      houseprices.fn <- function (houseprices, index){
-      house.resample <- houseprices[index,]
-      house.lm <- lm(sale.price ~ area, data=house.resample)
-      coef(house.lm)[2]    # slope estimate for resampled data
-      }
-      require(boot)       # ensure that the boot package is loaded
-      houseprices.boot <- boot(houseprices, R=999, statistic=houseprices.fn)
+         CVlm()
+         pause()
 
-      houseprices1.fn <- function (houseprices, index){
-      house.resample <- houseprices[index,]
-      house.lm <- lm(sale.price ~ area, data=house.resample)
-      predict(house.lm, newdata=data.frame(area=1200))
-      }
+         print("Bootstrapping - Example 5.5.3")
+         houseprices.fn <- function (houseprices, index){
+         house.resample <- houseprices[index,]
+         house.lm <- lm(sale.price ~ area, data=house.resample)
+         coef(house.lm)[2]    # slope estimate for resampled data
+         }
+         require(boot)       # ensure that the boot package is loaded
+         houseprices.boot <- boot(houseprices, R=999, statistic=houseprices.fn)
 
-      houseprices1.boot <- boot(houseprices, R=999, statistic=houseprices1.fn)
-      boot.ci(houseprices1.boot, type="perc") # "basic" is an alternative to "perc"
-      houseprices2.fn <- function (houseprices, index){
-      house.resample <- houseprices[index,]
-      house.lm <- lm(sale.price ~ area, data=house.resample)
-      houseprices$sale.price-predict(house.lm, houseprices)  # resampled prediction errors
-      }
+         houseprices1.fn <- function (houseprices, index){
+         house.resample <- houseprices[index,]
+         house.lm <- lm(sale.price ~ area, data=house.resample)
+         predict(house.lm, newdata=data.frame(area=1200))
+         }
 
-      n <- length(houseprices$area)
-      R <- 200   
-      houseprices2.boot <- boot(houseprices, R=R, statistic=houseprices2.fn)
-      house.fac <- factor(rep(1:n, rep(R, n)))
-      plot(house.fac, as.vector(houseprices2.boot$t), ylab="Prediction Errors", 
-      xlab="House")
-      pause()
+         houseprices1.boot <- boot(houseprices, R=999, statistic=houseprices1.fn)
+         boot.ci(houseprices1.boot, type="perc") # "basic" is an alternative to "perc"
+         houseprices2.fn <- function (houseprices, index){
+         house.resample <- houseprices[index,]
+         house.lm <- lm(sale.price ~ area, data=house.resample)
+         houseprices$sale.price-predict(house.lm, houseprices)  # resampled prediction errors
+         }
 
-      plot(apply(houseprices2.boot$t,2, sd)/predict.lm(houseprices.lm, se.fit=TRUE)$se.fit,
-           ylab="Ratio of Bootstrap SE's to Model-Based SE's", xlab="House", pch=16)
-      abline(1,0)
+         n <- length(houseprices$area)
+         R <- 200   
+         houseprices2.boot <- boot(houseprices, R=R, statistic=houseprices2.fn)
+         house.fac <- factor(rep(1:n, rep(R, n)))
+         plot(house.fac, as.vector(houseprices2.boot$t), ylab="Prediction Errors", 
+         xlab="House")
+         pause()
+
+         plot(apply(houseprices2.boot$t,2, sd)/predict.lm(houseprices.lm, se.fit=TRUE)$se.fit,
+              ylab="Ratio of Bootstrap SE's to Model-Based SE's", xlab="House", pch=16)
+         abline(1,0)

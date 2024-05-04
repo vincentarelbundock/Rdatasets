@@ -1,107 +1,109 @@
 .. container::
 
-   ========== ===============
-   Investment R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: US Investment Data
-      :name: Investment
+      ========== ===============
+      Investment R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: US Investment Data
+         :name: us-investment-data
 
-   US data for fitting an investment equation.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      US data for fitting an investment equation.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Investment)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Investment)
 
-   An annual time series from 1963 to 1982 with 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   GNP
-      nominal gross national product (in billion USD),
+      An annual time series from 1963 to 1982 with 7 variables.
 
-   Investment
-      nominal gross private domestic investment (in billion USD),
+      GNP
+         nominal gross national product (in billion USD),
 
-   Price
-      price index, implicit price deflator for GNP,
+      Investment
+         nominal gross private domestic investment (in billion USD),
 
-   Interest
-      interest rate, average yearly discount rate charged by the New
-      York Federal Reserve Bank,
+      Price
+         price index, implicit price deflator for GNP,
 
-   RealGNP
-      real GNP (= GNP/Price),
+      Interest
+         interest rate, average yearly discount rate charged by the New
+         York Federal Reserve Bank,
 
-   RealInv
-      real investment (= Investment/Price),
+      RealGNP
+         real GNP (= GNP/Price),
 
-   RealInt
-      approximation to the real interest rate (= Interest - 100 \*
-      diff(Price)/Price).
+      RealInv
+         real investment (= Investment/Price),
 
-   .. rubric:: Source
-      :name: source
+      RealInt
+         approximation to the real interest rate (= Interest - 100 \*
+         diff(Price)/Price).
 
-   Table 15.1 in Greene (1993)
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Table 15.1 in Greene (1993)
 
-   Greene W.H. (1993). *Econometric Analysis*, 2nd edition. Macmillan
-   Publishing Company, New York.
+      .. rubric:: References
+         :name: references
 
-   Executive Office of the President (1984). *Economic Report of the
-   President*. US Government Printing Office, Washington, DC.
+      Greene W.H. (1993). *Econometric Analysis*, 2nd edition. Macmillan
+      Publishing Company, New York.
 
-   .. rubric:: Examples
-      :name: examples
+      Executive Office of the President (1984). *Economic Report of the
+      President*. US Government Printing Office, Washington, DC.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## Willam H. Greene, Econometric Analysis, 2nd Ed.
-      ## Chapter 15
-      ## load data set, p. 411, Table 15.1
-      data(Investment)
+      ::
 
-      ## fit linear model, p. 412, Table 15.2
-      fm <- lm(RealInv ~ RealGNP + RealInt, data = Investment)
-      summary(fm)
+         ## Willam H. Greene, Econometric Analysis, 2nd Ed.
+         ## Chapter 15
+         ## load data set, p. 411, Table 15.1
+         data(Investment)
 
-      ## visualize residuals, p. 412, Figure 15.1
-      plot(ts(residuals(fm), start = 1964),
-        type = "b", pch = 19, ylim = c(-35, 35), ylab = "Residuals")
-      sigma <- sqrt(sum(residuals(fm)^2)/fm$df.residual) ## maybe used df = 26 instead of 16 ??
-      abline(h = c(-2, 0, 2) * sigma, lty = 2)
+         ## fit linear model, p. 412, Table 15.2
+         fm <- lm(RealInv ~ RealGNP + RealInt, data = Investment)
+         summary(fm)
 
-      if(require(lmtest)) {
-      ## Newey-West covariances, Example 15.3
-      coeftest(fm, vcov = NeweyWest(fm, lag = 4))
-      ## Note, that the following is equivalent:
-      coeftest(fm, vcov = kernHAC(fm, kernel = "Bartlett", bw = 5, prewhite = FALSE, adjust = FALSE))
+         ## visualize residuals, p. 412, Figure 15.1
+         plot(ts(residuals(fm), start = 1964),
+           type = "b", pch = 19, ylim = c(-35, 35), ylab = "Residuals")
+         sigma <- sqrt(sum(residuals(fm)^2)/fm$df.residual) ## maybe used df = 26 instead of 16 ??
+         abline(h = c(-2, 0, 2) * sigma, lty = 2)
 
-      ## Durbin-Watson test, p. 424, Example 15.4
-      dwtest(fm)
+         if(require(lmtest)) {
+         ## Newey-West covariances, Example 15.3
+         coeftest(fm, vcov = NeweyWest(fm, lag = 4))
+         ## Note, that the following is equivalent:
+         coeftest(fm, vcov = kernHAC(fm, kernel = "Bartlett", bw = 5, prewhite = FALSE, adjust = FALSE))
 
-      ## Breusch-Godfrey test, p. 427, Example 15.6
-      bgtest(fm, order = 4)
-      }
+         ## Durbin-Watson test, p. 424, Example 15.4
+         dwtest(fm)
 
-      ## visualize fitted series
-      plot(Investment[, "RealInv"], type = "b", pch = 19, ylab = "Real investment")
-      lines(ts(fitted(fm), start = 1964), col = 4)
+         ## Breusch-Godfrey test, p. 427, Example 15.6
+         bgtest(fm, order = 4)
+         }
+
+         ## visualize fitted series
+         plot(Investment[, "RealInv"], type = "b", pch = 19, ylab = "Real investment")
+         lines(ts(fitted(fm), start = 1964), col = 4)
 
 
-      ## 3-d visualization of fitted model
-      if(require(scatterplot3d)) {
-      s3d <- scatterplot3d(Investment[,c(5,7,6)],
-        type = "b", angle = 65, scale.y = 1, pch = 16)
-      s3d$plane3d(fm, lty.box = "solid", col = 4)
-      }
+         ## 3-d visualization of fitted model
+         if(require(scatterplot3d)) {
+         s3d <- scatterplot3d(Investment[,c(5,7,6)],
+           type = "b", angle = 65, scale.y = 1, pch = 16)
+         s3d$plane3d(fm, lty.box = "solid", col = 4)
+         }

@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>reliability</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='reliability'>Reliability data sets</h2>
+<h2>Reliability data sets</h2>
 
 <h3>Description</h3>
 
@@ -128,7 +128,8 @@ once to determine whether a crack had developed in the wheel or not.
 </p>
 </li></ul>
 
-<p>Data set <code>valveSeat</code>:
+</li>
+<li><p> Data set <code>valveSeat</code>:
 Time to replacement of valve seats for 41 diesel engines.  More than
 one seat may be replaced at a particular service, leading to duplicate
 times in the data set.  The final inspection time for each engine will
@@ -159,8 +160,27 @@ have status=0.
 <h3>Examples</h3>
 
 <pre><code class='language-R'>survreg(Surv(time, status) ~ temperature + voltage, capacitor)
+
+# Replacement of valve seats.  In this case the cumulative hazard is the 
+#  natural target, an estimate of the number of replacements by a given time
+#  (known as the cumulative mean function = CMF in relability).
+# When two valve seats failed at the same inspection, we need to jitter one
+#  of the times, to avoid a (time1, time2) interval of length 0
+ties &lt;- which(with(valveSeat, diff(id)==0 &amp; diff(time)==0))  #first of a tie
+temp &lt;- valveSeat$time
+temp[ties] &lt;- temp[ties] - .1 # jittered time
+vdata &lt;- valveSeat
+vdata$time1 &lt;- ifelse(!duplicated(vdata$id), 0, c(0, temp[-length(temp)]))
+vdata$time2 &lt;- temp
+fit2 &lt;- survfit(Surv(time1, time2, status) ~1, vdata, id=id)
+## Not run: 
+plot(fit2, cumhaz= TRUE, xscale= 365.25, 
+      xlab="Years in service", ylab = "Expected number of repairs")
+
+## End(Not run)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

@@ -1,36 +1,38 @@
 .. container::
 
-   ================ ===============
-   simulated_normal R Documentation
-   ================ ===============
+   .. container::
 
-   .. rubric:: Simulated data sets, drawn from a normal distribution.
-      :name: simulated_normal
+      ================ ===============
+      simulated_normal R Documentation
+      ================ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Simulated data sets, drawn from a normal distribution.
+         :name: simulated-data-sets-drawn-from-a-normal-distribution.
 
-   Data were simulated using ``rnorm``.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data were simulated using ``rnorm``.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      simulated_normal
+      ::
 
-   .. rubric:: Format
-      :name: format
+         simulated_normal
 
-   The format is: List of 3 $ n40 : 40 observations from a standard
-   normal distribution. $ n100: 100 observations from a standard normal
-   distribution. $ n400: 400 observations from a standard normal
-   distribution.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Examples
-      :name: examples
+      The format is: List of 3 $ n40 : 40 observations from a standard
+      normal distribution. $ n100: 100 observations from a standard
+      normal distribution. $ n400: 400 observations from a standard
+      normal distribution.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(simulated_normal)
-      lapply(simulated_normal, qqnorm)
+      ::
+
+         data(simulated_normal)
+         lapply(simulated_normal, qqnorm)

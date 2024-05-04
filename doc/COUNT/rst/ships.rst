@@ -1,93 +1,96 @@
 .. container::
 
-   ===== ===============
-   ships R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: ships
-      :name: ships
+      ===== ===============
+      ships R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: ships
+         :name: ships
 
-   Data set used in McCullagh & Nelder (1989), Hardin & Hilbe (2003),
-   and other sources. The data contains values on the number of reported
-   accidents for ships belonging to a company over a given time period.
-   When a ship was constructed is also recorded.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data set used in McCullagh & Nelder (1989), Hardin & Hilbe (2003),
+      and other sources. The data contains values on the number of
+      reported accidents for ships belonging to a company over a given
+      time period. When a ship was constructed is also recorded.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(ships)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(ships)
 
-   A data frame with 40 observations on the following 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``accident``
-      number of shipping accidents
+      A data frame with 40 observations on the following 7 variables.
 
-   ``op``
-      1=ship operated 1975-1979;0=1965-74
+      ``accident``
+         number of shipping accidents
 
-   ``co.65.69``
-      ship was in construction 1965-1969 (1/0)
+      ``op``
+         1=ship operated 1975-1979;0=1965-74
 
-   ``co.70.74``
-      ship was in construction 1970-1974 (1/0)
+      ``co.65.69``
+         ship was in construction 1965-1969 (1/0)
 
-   ``co.75.79``
-      ship was in construction 1975-1979 (1/0)
+      ``co.70.74``
+         ship was in construction 1970-1974 (1/0)
 
-   ``service``
-      months in service
+      ``co.75.79``
+         ship was in construction 1975-1979 (1/0)
 
-   ``ship``
-      ship identification : 1-5
+      ``service``
+         months in service
 
-   .. rubric:: Details
-      :name: details
+      ``ship``
+         ship identification : 1-5
 
-   ships is saved as a data frame. Count models use accident as the
-   response variable, with log(service) as the offset. ship can be used
-   as a panel identifier.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      ships is saved as a data frame. Count models use accident as the
+      response variable, with log(service) as the offset. ship can be
+      used as a panel identifier.
 
-   McCullagh and Nelder, 1989.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      McCullagh and Nelder, 1989.
 
-   Hilbe, Joseph M (2007, 2011), Negative Binomial Regression, Cambridge
-   University Press Hilbe, Joseph M (2009), Logistic Regression Models,
-   Chapman & Hall/CRC Hardin, JW and JM Hilbe (2001, 2007), Generalized
-   Linear Models and Extensions, Stata Press McCullagh, P.A, and J.
-   Nelder (1989), Generalized Linear Models, Chapman & Hall
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Hilbe, Joseph M (2007, 2011), Negative Binomial Regression,
+      Cambridge University Press Hilbe, Joseph M (2009), Logistic
+      Regression Models, Chapman & Hall/CRC Hardin, JW and JM Hilbe
+      (2001, 2007), Generalized Linear Models and Extensions, Stata
+      Press McCullagh, P.A, and J. Nelder (1989), Generalized Linear
+      Models, Chapman & Hall
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(ships)
-      glmshp <- glm(accident ~ op + co.70.74 + co.75.79 + offset(log(service)),
-                    family=poisson, data=ships)
-      summary(glmshp)
-      exp(coef(glmshp))
-      library(MASS)
-      glmshnb <- glm.nb(accident ~ op + co.70.74 + co.75.79 + offset(log(service)),
-                         data=ships)
-      summary(glmshnb)
-      exp(coef(glmshnb))
-      ## Not run: 
-      library(gee)
-      shipgee <- gee(accident ~ op + co.70.74 + co.75.79 + offset(log(service)),
-                    data=ships, family=poisson, corstr="exchangeable", id=ship)
-      summary(shipgee)
+      ::
 
-      ## End(Not run)
+         data(ships)
+         glmshp <- glm(accident ~ op + co.70.74 + co.75.79 + offset(log(service)),
+                       family=poisson, data=ships)
+         summary(glmshp)
+         exp(coef(glmshp))
+         library(MASS)
+         glmshnb <- glm.nb(accident ~ op + co.70.74 + co.75.79 + offset(log(service)),
+                            data=ships)
+         summary(glmshnb)
+         exp(coef(glmshnb))
+         ## Not run: 
+         library(gee)
+         shipgee <- gee(accident ~ op + co.70.74 + co.75.79 + offset(log(service)),
+                       data=ships, family=poisson, corstr="exchangeable", id=ship)
+         summary(shipgee)
+
+         ## End(Not run)

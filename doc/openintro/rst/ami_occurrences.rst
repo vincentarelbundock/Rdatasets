@@ -1,44 +1,46 @@
 .. container::
 
-   =============== ===============
-   ami_occurrences R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: Acute Myocardial Infarction (Heart Attack) Events
-      :name: ami_occurrences
+      =============== ===============
+      ami_occurrences R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Acute Myocardial Infarction (Heart Attack) Events
+         :name: acute-myocardial-infarction-heart-attack-events
 
-   This data set is simulated but contains realistic occurrences of AMI
-   in NY City.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set is simulated but contains realistic occurrences of
+      AMI in NY City.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      ami_occurrences
+      ::
 
-   .. rubric:: Format
-      :name: format
+         ami_occurrences
 
-   A data frame with 365 observations on the following variable.
+      .. rubric:: Format
+         :name: format
 
-   ami
-      Number of daily occurrences of heart attacks in NY City.
+      A data frame with 365 observations on the following variable.
 
-   .. rubric:: Examples
-      :name: examples
+      ami
+         Number of daily occurrences of heart attacks in NY City.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(ami_occurrences, mapping = aes(x = ami)) +
-        geom_bar() +
-        labs(
-          x = "Acute Myocardial Infarction events",
-          y = "Count",
-          title = "Acute Myocardial Infarction events in NYC"
-        )
+         library(ggplot2)
+
+         ggplot(ami_occurrences, mapping = aes(x = ami)) +
+           geom_bar() +
+           labs(
+             x = "Acute Myocardial Infarction events",
+             y = "Count",
+             title = "Acute Myocardial Infarction events in NYC"
+           )

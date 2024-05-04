@@ -1,99 +1,101 @@
 .. container::
 
-   ===== ===============
-   Wages R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Panel Data of Individual Wages
-      :name: Wages
+      ===== ===============
+      Wages R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Panel Data of Individual Wages
+         :name: panel-data-of-individual-wages
 
-   | A panel of 595 individuals from 1976 to 1982, taken from the Panel
-     Study of Income Dynamics (PSID).
-   | The data are organized as a stacked time series/balanced panel, see
-     **Examples** on how to convert to a ``pdata.frame``.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      | A panel of 595 individuals from 1976 to 1982, taken from the
+        Panel Study of Income Dynamics (PSID).
+      | The data are organized as a stacked time series/balanced panel,
+        see **Examples** on how to convert to a ``pdata.frame``.
 
-   A data frame containing:
+      .. rubric:: Format
+         :name: format
 
-   exp
-      years of full-time work experience.
+      A data frame containing:
 
-   wks
-      weeks worked.
+      exp
+         years of full-time work experience.
 
-   bluecol
-      blue collar?
+      wks
+         weeks worked.
 
-   ind
-      works in a manufacturing industry?
+      bluecol
+         blue collar?
 
-   south
-      resides in the south?
+      ind
+         works in a manufacturing industry?
 
-   smsa
-      resides in a standard metropolitan statistical area?
+      south
+         resides in the south?
 
-   married
-      married?
+      smsa
+         resides in a standard metropolitan statistical area?
 
-   sex
-      a factor with levels ``"male"`` and ``"female"``
+      married
+         married?
 
-   union
-      individual's wage set by a union contract?
+      sex
+         a factor with levels ``"male"`` and ``"female"``
 
-   ed
-      years of education.
+      union
+         individual's wage set by a union contract?
 
-   black
-      is the individual black?
+      ed
+         years of education.
 
-   lwage
-      logarithm of wage.
+      black
+         is the individual black?
 
-   .. rubric:: Details
-      :name: details
+      lwage
+         logarithm of wage.
 
-   *total number of observations* : 4165
+      .. rubric:: Details
+         :name: details
 
-   *observation* : individuals
+      *total number of observations* : 4165
 
-   *country* : United States
+      *observation* : individuals
 
-   .. rubric:: Source
-      :name: source
+      *country* : United States
 
-   Online complements to Baltagi (2001):
+      .. rubric:: Source
+         :name: source
 
-   https://www.wiley.com/legacy/wileychi/baltagi/
+      Online complements to Baltagi (2001):
 
-   Online complements to Baltagi (2013):
+      https://www.wiley.com/legacy/wileychi/baltagi/
 
-   https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
+      Online complements to Baltagi (2013):
 
-   .. rubric:: References
-      :name: references
+      https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
 
-   Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
-   John Wiley and Sons ltd.
+      .. rubric:: References
+         :name: references
 
-   Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
-   John Wiley and Sons ltd.
+      Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd
+      edition. John Wiley and Sons ltd.
 
-   Cornwell C, Rupert P (1988). “Efficient Estimation With Panel Data:
-   an Empirical Comparison of Instrumental Variables Estimators.”
-   *Journal of Applied Econometrics*, **3**, 149–155.
+      Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th
+      edition. John Wiley and Sons ltd.
 
-   .. rubric:: Examples
-      :name: examples
+      Cornwell C, Rupert P (1988). “Efficient Estimation With Panel
+      Data: an Empirical Comparison of Instrumental Variables
+      Estimators.” *Journal of Applied Econometrics*, **3**, 149–155.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      # data set 'Wages' is organized as a stacked time series/balanced panel
-      data("Wages", package = "plm")
-      Wag <- pdata.frame(Wages, index=595)
+      ::
+
+         # data set 'Wages' is organized as a stacked time series/balanced panel
+         data("Wages", package = "plm")
+         Wag <- pdata.frame(Wages, index=595)

@@ -1,169 +1,171 @@
 .. container::
 
-   ====== ===============
-   crime4 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: crime4
-      :name: crime4
+      ====== ===============
+      crime4 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: crime4
+         :name: crime4
 
-   Wooldridge Source: From C. Cornwell and W. Trumball (1994),
-   “Estimating the Economic Model of Crime with Panel Data,” Review of
-   Economics and Statistics 76, 360-366. Professor Cornwell kindly
-   provided the data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: From C. Cornwell and W. Trumball (1994),
+      “Estimating the Economic Model of Crime with Panel Data,” Review
+      of Economics and Statistics 76, 360-366. Professor Cornwell kindly
+      provided the data. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('crime4')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('crime4')
 
-   A data.frame with 630 observations on 59 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **county:** county identifier
+      A data.frame with 630 observations on 59 variables:
 
-   -  **year:** 81 to 87
+      -  **county:** county identifier
 
-   -  **crmrte:** crimes committed per person
+      -  **year:** 81 to 87
 
-   -  **prbarr:** 'probability' of arrest
+      -  **crmrte:** crimes committed per person
 
-   -  **prbconv:** 'probability' of conviction
+      -  **prbarr:** 'probability' of arrest
 
-   -  **prbpris:** 'probability' of prison sentenc
+      -  **prbconv:** 'probability' of conviction
 
-   -  **avgsen:** avg. sentence, days
+      -  **prbpris:** 'probability' of prison sentenc
 
-   -  **polpc:** police per capita
+      -  **avgsen:** avg. sentence, days
 
-   -  **density:** people per sq. mile
+      -  **polpc:** police per capita
 
-   -  **taxpc:** tax revenue per capita
+      -  **density:** people per sq. mile
 
-   -  **west:** =1 if in western N.C.
+      -  **taxpc:** tax revenue per capita
 
-   -  **central:** =1 if in central N.C.
+      -  **west:** =1 if in western N.C.
 
-   -  **urban:** =1 if in SMSA
+      -  **central:** =1 if in central N.C.
 
-   -  **pctmin80:** perc. minority, 1980
+      -  **urban:** =1 if in SMSA
 
-   -  **wcon:** weekly wage, construction
+      -  **pctmin80:** perc. minority, 1980
 
-   -  **wtuc:** wkly wge, trns, util, commun
+      -  **wcon:** weekly wage, construction
 
-   -  **wtrd:** wkly wge, whlesle, retail trade
+      -  **wtuc:** wkly wge, trns, util, commun
 
-   -  **wfir:** wkly wge, fin, ins, real est
+      -  **wtrd:** wkly wge, whlesle, retail trade
 
-   -  **wser:** wkly wge, service industry
+      -  **wfir:** wkly wge, fin, ins, real est
 
-   -  **wmfg:** wkly wge, manufacturing
+      -  **wser:** wkly wge, service industry
 
-   -  **wfed:** wkly wge, fed employees
+      -  **wmfg:** wkly wge, manufacturing
 
-   -  **wsta:** wkly wge, state employees
+      -  **wfed:** wkly wge, fed employees
 
-   -  **wloc:** wkly wge, local gov emps
+      -  **wsta:** wkly wge, state employees
 
-   -  **mix:** offense mix: face-to-face/other
+      -  **wloc:** wkly wge, local gov emps
 
-   -  **pctymle:** percent young male
+      -  **mix:** offense mix: face-to-face/other
 
-   -  **d82:** =1 if year == 82
+      -  **pctymle:** percent young male
 
-   -  **d83:** =1 if year == 83
+      -  **d82:** =1 if year == 82
 
-   -  **d84:** =1 if year == 84
+      -  **d83:** =1 if year == 83
 
-   -  **d85:** =1 if year == 85
+      -  **d84:** =1 if year == 84
 
-   -  **d86:** =1 if year == 86
+      -  **d85:** =1 if year == 85
 
-   -  **d87:** =1 if year == 87
+      -  **d86:** =1 if year == 86
 
-   -  **lcrmrte:** log(crmrte)
+      -  **d87:** =1 if year == 87
 
-   -  **lprbarr:** log(prbarr)
+      -  **lcrmrte:** log(crmrte)
 
-   -  **lprbconv:** log(prbconv)
+      -  **lprbarr:** log(prbarr)
 
-   -  **lprbpris:** log(prbpris)
+      -  **lprbconv:** log(prbconv)
 
-   -  **lavgsen:** log(avgsen)
+      -  **lprbpris:** log(prbpris)
 
-   -  **lpolpc:** log(polpc)
+      -  **lavgsen:** log(avgsen)
 
-   -  **ldensity:** log(density)
+      -  **lpolpc:** log(polpc)
 
-   -  **ltaxpc:** log(taxpc)
+      -  **ldensity:** log(density)
 
-   -  **lwcon:** log(wcon)
+      -  **ltaxpc:** log(taxpc)
 
-   -  **lwtuc:** log(wtuc)
+      -  **lwcon:** log(wcon)
 
-   -  **lwtrd:** log(wtrd)
+      -  **lwtuc:** log(wtuc)
 
-   -  **lwfir:** log(wfir)
+      -  **lwtrd:** log(wtrd)
 
-   -  **lwser:** log(wser)
+      -  **lwfir:** log(wfir)
 
-   -  **lwmfg:** log(wmfg)
+      -  **lwser:** log(wser)
 
-   -  **lwfed:** log(wfed)
+      -  **lwmfg:** log(wmfg)
 
-   -  **lwsta:** log(wsta)
+      -  **lwfed:** log(wfed)
 
-   -  **lwloc:** log(wloc)
+      -  **lwsta:** log(wsta)
 
-   -  **lmix:** log(mix)
+      -  **lwloc:** log(wloc)
 
-   -  **lpctymle:** log(pctymle)
+      -  **lmix:** log(mix)
 
-   -  **lpctmin:** log(pctmin)
+      -  **lpctymle:** log(pctymle)
 
-   -  **clcrmrte:** lcrmrte - lcrmrte[\_n-1]
+      -  **lpctmin:** log(pctmin)
 
-   -  **clprbarr:** lprbarr - lprbarr[\_n-1]
+      -  **clcrmrte:** lcrmrte - lcrmrte[_n-1]
 
-   -  **clprbcon:** lprbconv - lprbconv[\_n-1]
+      -  **clprbarr:** lprbarr - lprbarr[_n-1]
 
-   -  **clprbpri:** lprbpri - lprbpri[t-1]
+      -  **clprbcon:** lprbconv - lprbconv[_n-1]
 
-   -  **clavgsen:** lavgsen - lavgsen[t-1]
+      -  **clprbpri:** lprbpri - lprbpri[t-1]
 
-   -  **clpolpc:** lpolpc - lpolpc[t-1]
+      -  **clavgsen:** lavgsen - lavgsen[t-1]
 
-   -  **cltaxpc:** ltaxpc - ltaxpc[t-1]
+      -  **clpolpc:** lpolpc - lpolpc[t-1]
 
-   -  **clmix:** lmix - lmix[t-1]
+      -  **cltaxpc:** ltaxpc - ltaxpc[t-1]
 
-   .. rubric:: Notes
-      :name: notes
+      -  **clmix:** lmix - lmix[t-1]
 
-   Computer Exercise C16.7 shows that variables that might seem to be
-   good instrumental variable candidates are not always so good,
-   especially after applying a transformation such as differencing
-   across time. You could have the students do an IV analysis for just,
-   say, 1987.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 471-472, 479, 504, 580
+      Computer Exercise C16.7 shows that variables that might seem to be
+      good instrumental variable candidates are not always so good,
+      especially after applying a transformation such as differencing
+      across time. You could have the students do an IV analysis for
+      just, say, 1987.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 471-472, 479, 504, 580
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(crime4)
+      ::
+
+          str(crime4)

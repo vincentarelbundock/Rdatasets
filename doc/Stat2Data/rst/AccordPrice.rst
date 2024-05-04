@@ -1,37 +1,39 @@
 .. container::
 
-   =========== ===============
-   AccordPrice R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Prices of Used Honda Accords (in 2017)
-      :name: AccordPrice
+      =========== ===============
+      AccordPrice R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Prices of Used Honda Accords (in 2017)
+         :name: prices-of-used-honda-accords-in-2017
 
-   Age, price, and mileage of used Honda Accords in 2017
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Age, price, and mileage of used Honda Accords in 2017
 
-   A data frame with 30 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Age``
-      Age of used Honda Accord car
+      A data frame with 30 observations on the following 3 variables.
 
-   ``Price``
-      Price (in $1,000's)
+      ``Age``
+         Age of used Honda Accord car
 
-   ``Mileage``
-      Mileage (in 1,000's of miles)
+      ``Price``
+         Price (in $1,000's)
 
-   .. rubric:: Details
-      :name: details
+      ``Mileage``
+         Mileage (in 1,000's of miles)
 
-   Information on used Honda Accords obtained from cars.com.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Information on used Honda Accords obtained from cars.com.
 
-   Cars.com, February 2017 using zip code 44107, Lakewood, Ohio
+      .. rubric:: Source
+         :name: source
+
+      Cars.com, February 2017 using zip code 44107, Lakewood, Ohio

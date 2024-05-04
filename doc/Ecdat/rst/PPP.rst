@@ -1,65 +1,67 @@
 .. container::
 
-   === ===============
-   PPP R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Exchange Rates and Price Indices for France and Italy
-      :name: PPP
+      === ===============
+      PPP R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Exchange Rates and Price Indices for France and Italy
+         :name: exchange-rates-and-price-indices-for-france-and-italy
 
-   monthly observations from 1981–01 to 1996–06
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 186
+      monthly observations from 1981–01 to 1996–06
 
-   *observation* : country
+      *number of observations* : 186
 
-   *country* : France and Italy
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : France and Italy
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(PPP)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(PPP)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   lnit
-      log price index Italy
+      A time series containing :
 
-   lnfr
-      log price index France
+      lnit
+         log price index Italy
 
-   lnx
-      log exchange rate France/Italy
+      lnfr
+         log price index France
 
-   cpiit
-      consumer price index Italy
+      lnx
+         log exchange rate France/Italy
 
-   cpifr
-      consumer price index France
+      cpiit
+         consumer price index Italy
 
-   .. rubric:: Source
-      :name: source
+      cpifr
+         consumer price index France
 
-   ``Datastream``.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      ``Datastream``.
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons, chapters 8 and 9.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons, chapters 8 and 9.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

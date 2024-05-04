@@ -1,58 +1,60 @@
 .. container::
 
-   ====== ===============
-   MedGPA R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: GPA and Medical School Admission
-      :name: MedGPA
+      ====== ===============
+      MedGPA R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: GPA and Medical School Admission
+         :name: gpa-and-medical-school-admission
 
-   Medical school admission status and information on GPA and
-   standardized test scores
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Medical school admission status and information on GPA and
+      standardized test scores
 
-   A dataset with 55 observations on the following 11 variables.
+      .. rubric:: Format
+         :name: format
 
-   +----------------+----------------------------------------------------+
-   | ``Accept``     | Status: ``A``\ =accepted to medical school or      |
-   |                | ``D``\ =denied admission                           |
-   +----------------+----------------------------------------------------+
-   | ``Acceptance`` | Indicator for Accept: ``1``\ =accepted or          |
-   |                | ``0``\ =denied                                     |
-   +----------------+----------------------------------------------------+
-   | ``Sex``        | ``F``\ =female or ``M``\ =male                     |
-   +----------------+----------------------------------------------------+
-   | ``BCPM``       | Bio/Chem/Physics/Math grade point average          |
-   +----------------+----------------------------------------------------+
-   | ``GPA``        | College grade point average                        |
-   +----------------+----------------------------------------------------+
-   | ``VR``         | Verbal reasoning (subscore)                        |
-   +----------------+----------------------------------------------------+
-   | ``PS``         | Physical sciences (subscore)                       |
-   +----------------+----------------------------------------------------+
-   | ``WS``         | Writing sample (subcore)                           |
-   +----------------+----------------------------------------------------+
-   | ``BS``         | Biological sciences (subscore)                     |
-   +----------------+----------------------------------------------------+
-   | ``MCAT``       | Score on the MCAT exam (sum of CR+PS+WS+BS)        |
-   +----------------+----------------------------------------------------+
-   | ``Apps``       | Number of medical schools applied to               |
-   +----------------+----------------------------------------------------+
-   |                |                                                    |
-   +----------------+----------------------------------------------------+
+      A dataset with 55 observations on the following 11 variables.
 
-   .. rubric:: Details
-      :name: details
+      +----------------+----------------------------------------------------+
+      | ``Accept``     | Status: ``A``\ =accepted to medical school or      |
+      |                | ``D``\ =denied admission                           |
+      +----------------+----------------------------------------------------+
+      | ``Acceptance`` | Indicator for Accept: ``1``\ =accepted or          |
+      |                | ``0``\ =denied                                     |
+      +----------------+----------------------------------------------------+
+      | ``Sex``        | ``F``\ =female or ``M``\ =male                     |
+      +----------------+----------------------------------------------------+
+      | ``BCPM``       | Bio/Chem/Physics/Math grade point average          |
+      +----------------+----------------------------------------------------+
+      | ``GPA``        | College grade point average                        |
+      +----------------+----------------------------------------------------+
+      | ``VR``         | Verbal reasoning (subscore)                        |
+      +----------------+----------------------------------------------------+
+      | ``PS``         | Physical sciences (subscore)                       |
+      +----------------+----------------------------------------------------+
+      | ``WS``         | Writing sample (subcore)                           |
+      +----------------+----------------------------------------------------+
+      | ``BS``         | Biological sciences (subscore)                     |
+      +----------------+----------------------------------------------------+
+      | ``MCAT``       | Score on the MCAT exam (sum of CR+PS+WS+BS)        |
+      +----------------+----------------------------------------------------+
+      | ``Apps``       | Number of medical schools applied to               |
+      +----------------+----------------------------------------------------+
+      |                |                                                    |
+      +----------------+----------------------------------------------------+
 
-   This dataset has information gathered on 55 medical school applicants
-   from a liberal arts college in the Midwest.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This dataset has information gathered on 55 medical school
+      applicants from a liberal arts college in the Midwest.
 
-   Data collected at a midwestern liberal arts college.
+      .. rubric:: Source
+         :name: source
+
+      Data collected at a midwestern liberal arts college.

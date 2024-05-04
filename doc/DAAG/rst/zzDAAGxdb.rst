@@ -1,58 +1,61 @@
 .. container::
 
-   ========= ===============
-   zzDAAGxdb R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: List, each of whose elements hold rows of a file, in
-      character format
-      :name: zzDAAGxdb
+      ========= ===============
+      zzDAAGxdb R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: List, each of whose elements hold rows of a file, in
+         character format
+         :name: list-each-of-whose-elements-hold-rows-of-a-file-in-character-format
 
-   This is the default alternative database for use with the function
-   ``datafile``, which uses elements of this list to place files in the
-   working directory. The names of the list elements are bestTimes and
-   bostonc.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This is the default alternative database for use with the function
+      ``datafile``, which uses elements of this list to place files in
+      the working directory. The names of the list elements are
+      bestTimes and bostonc.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(zzDAAGxdb)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(zzDAAGxdb)
 
-   Successive elements in this list hold character vectors from which
-   the corresponding files can be readily generated.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      Successive elements in this list hold character vectors from which
+      the corresponding files can be readily generated.
 
-   The web site given as the source of the data has additional
-   information on the bestTimes data. Records are as at August 7 2006.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The web site given as the source of the data has additional
+      information on the bestTimes data. Records are as at August 7
+      2006.
 
-   http://www.gbrathletics.com/wrec.htm (bestTimes)
+      .. rubric:: Source
+         :name: source
 
-   http://lib.stat.cmu.edu/datasets/ (bostonc)
+      http://www.gbrathletics.com/wrec.htm (bestTimes)
 
-   .. rubric:: References
-      :name: references
+      http://lib.stat.cmu.edu/datasets/ (bostonc)
 
-   Harrison, D. and Rubinfeld, D.L. 'Hedonic prices and the demand for
-   clean air', J. Environ. Economics & Management, vol.5, 81-102, 1978.
-   corrected by Kelley Pace (kpace@unix1.sncc.lsu.edu)
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Harrison, D. and Rubinfeld, D.L. 'Hedonic prices and the demand
+      for clean air', J. Environ. Economics & Management, vol.5, 81-102,
+      1978. corrected by Kelley Pace (kpace@unix1.sncc.lsu.edu)
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(zzDAAGxdb)
-      names(zzDAAGxdb)
+      ::
+
+         data(zzDAAGxdb)
+         names(zzDAAGxdb)

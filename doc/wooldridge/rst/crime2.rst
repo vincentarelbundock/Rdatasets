@@ -1,122 +1,124 @@
 .. container::
 
-   ====== ===============
-   crime2 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: crime2
-      :name: crime2
+      ====== ===============
+      crime2 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: crime2
+         :name: crime2
 
-   Wooldridge Source: These data were collected by David Dicicco, a
-   former MSU undergraduate, for a final project. They came from various
-   issues of the County and City Data Book, and are for the years 1982
-   and 1985. Unfortunately, I do not have the list of cities. Data loads
-   lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: These data were collected by David Dicicco, a
+      former MSU undergraduate, for a final project. They came from
+      various issues of the County and City Data Book, and are for the
+      years 1982 and 1985. Unfortunately, I do not have the list of
+      cities. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('crime2')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('crime2')
 
-   A data.frame with 92 observations on 34 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **pop:** population
+      A data.frame with 92 observations on 34 variables:
 
-   -  **crimes:** total number index crimes
+      -  **pop:** population
 
-   -  **unem:** unemployment rate
+      -  **crimes:** total number index crimes
 
-   -  **officers:** number police officers
+      -  **unem:** unemployment rate
 
-   -  **pcinc:** per capita income
+      -  **officers:** number police officers
 
-   -  **west:** =1 if city in west
+      -  **pcinc:** per capita income
 
-   -  **nrtheast:** =1 if city in NE
+      -  **west:** =1 if city in west
 
-   -  **south:** =1 if city in south
+      -  **nrtheast:** =1 if city in NE
 
-   -  **year:** 82 or 87
+      -  **south:** =1 if city in south
 
-   -  **area:** land area, square miles
+      -  **year:** 82 or 87
 
-   -  **d87:** =1 if year = 87
+      -  **area:** land area, square miles
 
-   -  **popden:** people per sq mile
+      -  **d87:** =1 if year = 87
 
-   -  **crmrte:** crimes per 1000 people
+      -  **popden:** people per sq mile
 
-   -  **offarea:** officers per sq mile
+      -  **crmrte:** crimes per 1000 people
 
-   -  **lawexpc:** law enforce. expend. pc, $
+      -  **offarea:** officers per sq mile
 
-   -  **polpc:** police per 1000 people
+      -  **lawexpc:** law enforce. expend. pc, $
 
-   -  **lpop:** log(pop)
+      -  **polpc:** police per 1000 people
 
-   -  **loffic:** log(officers)
+      -  **lpop:** log(pop)
 
-   -  **lpcinc:** log(pcinc)
+      -  **loffic:** log(officers)
 
-   -  **llawexpc:** log(lawexpc)
+      -  **lpcinc:** log(pcinc)
 
-   -  **lpopden:** log(popden)
+      -  **llawexpc:** log(lawexpc)
 
-   -  **lcrimes:** log(crimes)
+      -  **lpopden:** log(popden)
 
-   -  **larea:** log(area)
+      -  **lcrimes:** log(crimes)
 
-   -  **lcrmrte:** log(crmrte)
+      -  **larea:** log(area)
 
-   -  **clcrimes:** change in lcrimes
+      -  **lcrmrte:** log(crmrte)
 
-   -  **clpop:** change in lpop
+      -  **clcrimes:** change in lcrimes
 
-   -  **clcrmrte:** change in lcrmrte
+      -  **clpop:** change in lpop
 
-   -  **lpolpc:** log(polpc)
+      -  **clcrmrte:** change in lcrmrte
 
-   -  **clpolpc:** change in lpolpc
+      -  **lpolpc:** log(polpc)
 
-   -  **cllawexp:** change in llawexp
+      -  **clpolpc:** change in lpolpc
 
-   -  **cunem:** change in unem
+      -  **cllawexp:** change in llawexp
 
-   -  **clpopden:** change in lpopden
+      -  **cunem:** change in unem
 
-   -  **lcrmrt_1:** lcrmrte lagged
+      -  **clpopden:** change in lpopden
 
-   -  **ccrmrte:** change in crmrte
+      -  **lcrmrt_1:** lcrmrte lagged
 
-   .. rubric:: Notes
-      :name: notes
+      -  **ccrmrte:** change in crmrte
 
-   Very rich crime data sets, at the county, or even city, level, can be
-   collected using the FBI’s Uniform Crime Reports. These data can be
-   matched up with demographic and economic data, at least for census
-   years. The County and City Data Book contains a variety of
-   statistics, but the years do not always match up. These data sets can
-   be used investigate issues such as the effects of casinos on city or
-   county crime rates.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 313-314, 459-460
+      Very rich crime data sets, at the county, or even city, level, can
+      be collected using the FBI’s Uniform Crime Reports. These data can
+      be matched up with demographic and economic data, at least for
+      census years. The County and City Data Book contains a variety of
+      statistics, but the years do not always match up. These data sets
+      can be used investigate issues such as the effects of casinos on
+      city or county crime rates.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 313-314, 459-460
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(crime2)
+      ::
+
+          str(crime2)

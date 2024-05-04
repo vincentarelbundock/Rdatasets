@@ -1,54 +1,56 @@
 .. container::
 
-   ====== ===============
-   Angell R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Moral Integration of American Cities
-      :name: Angell
+      ====== ===============
+      Angell R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Moral Integration of American Cities
+         :name: moral-integration-of-american-cities
 
-   The ``Angell`` data frame has 43 rows and 4 columns. The observations
-   are 43 U. S. cities around 1950.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Angell`` data frame has 43 rows and 4 columns. The
+      observations are 43 U. S. cities around 1950.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Angell
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Angell
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   moral
-      Moral Integration: Composite of crime rate and welfare
-      expenditures.
+      This data frame contains the following columns:
 
-   hetero
-      Ethnic Heterogenity: From percentages of nonwhite and foreign-born
-      white residents.
+      moral
+         Moral Integration: Composite of crime rate and welfare
+         expenditures.
 
-   mobility
-      Geographic Mobility: From percentages of residents moving into and
-      out of the city.
+      hetero
+         Ethnic Heterogenity: From percentages of nonwhite and
+         foreign-born white residents.
 
-   region
-      A factor with levels: ``E`` Northeast; ``MW`` Midwest; ``S``
-      Southeast; ``W`` West.
+      mobility
+         Geographic Mobility: From percentages of residents moving into
+         and out of the city.
 
-   .. rubric:: Source
-      :name: source
+      region
+         A factor with levels: ``E`` Northeast; ``MW`` Midwest; ``S``
+         Southeast; ``W`` West.
 
-   Angell, R. C. (1951) The moral integration of American Cities.
-   *American Journal of Sociology* **57** (part 2), 1–140.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Angell, R. C. (1951) The moral integration of American Cities.
+      *American Journal of Sociology* **57** (part 2), 1–140.
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
+
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.

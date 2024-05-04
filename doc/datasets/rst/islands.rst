@@ -1,47 +1,49 @@
 .. container::
 
-   ======= ===============
-   islands R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Areas of the World's Major Landmasses
-      :name: islands
+      ======= ===============
+      islands R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Areas of the World's Major Landmasses
+         :name: areas-of-the-worlds-major-landmasses
 
-   The areas in thousands of square miles of the landmasses which exceed
-   10,000 square miles.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The areas in thousands of square miles of the landmasses which
+      exceed 10,000 square miles.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      islands
+      ::
 
-   .. rubric:: Format
-      :name: format
+         islands
 
-   A named vector of length 48.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A named vector of length 48.
 
-   The World Almanac and Book of Facts, 1975, page 406.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The World Almanac and Book of Facts, 1975, page 406.
 
-   McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(graphics)
-      dotchart(log(islands, 10),
-         main = "islands data: log10(area) (log10(sq. miles))")
-      dotchart(log(islands[order(islands)], 10),
-         main = "islands data: log10(area) (log10(sq. miles))")
+      ::
+
+         require(graphics)
+         dotchart(log(islands, 10),
+            main = "islands data: log10(area) (log10(sq. miles))")
+         dotchart(log(islands[order(islands)], 10),
+            main = "islands data: log10(area) (log10(sq. miles))")

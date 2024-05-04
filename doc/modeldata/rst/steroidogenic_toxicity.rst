@@ -1,97 +1,100 @@
 .. container::
 
-   ====================== ===============
-   steroidogenic_toxicity R Documentation
-   ====================== ===============
+   .. container::
 
-   .. rubric:: Predicting steroidogenic toxicity with assay data
-      :name: steroidogenic_toxicity
+      ====================== ===============
+      steroidogenic_toxicity R Documentation
+      ====================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Predicting steroidogenic toxicity with assay data
+         :name: predicting-steroidogenic-toxicity-with-assay-data
 
-   A set of *in vitro* assays are used to quantify the risk of
-   reproductive toxicity via the disruption of steroidogenic pathways.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      A set of *in vitro* assays are used to quantify the risk of
+      reproductive toxicity via the disruption of steroidogenic
+      pathways.
 
-   H295R cells were used to measure the effect with two sets of assay
-   results. The first includes a set of protein measurements on:
-   cytochrome P450 enzymes ("cyp"s), STAR, and 3BHSD2. The second
-   include hormone measurements for DHEA, progesterone, testosterone,
-   and cortisol.
+      .. rubric:: Details
+         :name: details
 
-   Columns:
+      H295R cells were used to measure the effect with two sets of assay
+      results. The first includes a set of protein measurements on:
+      cytochrome P450 enzymes ("cyp"s), STAR, and 3BHSD2. The second
+      include hormone measurements for DHEA, progesterone, testosterone,
+      and cortisol.
 
-   -  ``class``: factor (levels: 'toxic' and 'nontoxic')
+      Columns:
 
-   -  ``cyp_11a1``: numeric
+      -  ``class``: factor (levels: 'toxic' and 'nontoxic')
 
-   -  ``cyp_11b1``: numeric
+      -  ``cyp_11a1``: numeric
 
-   -  ``cyp_11b2``: numeric
+      -  ``cyp_11b1``: numeric
 
-   -  ``cyp_17a1``: numeric
+      -  ``cyp_11b2``: numeric
 
-   -  ``cyp_19a1``: numeric
+      -  ``cyp_17a1``: numeric
 
-   -  ``cyp_21a1``: numeric
+      -  ``cyp_19a1``: numeric
 
-   -  ``hsd3b2``: numeric
+      -  ``cyp_21a1``: numeric
 
-   -  ``star``: numeric
+      -  ``hsd3b2``: numeric
 
-   -  ``progesterone``: numeric
+      -  ``star``: numeric
 
-   -  ``testosterone``: numeric
+      -  ``progesterone``: numeric
 
-   -  ``dhea``: numeric
+      -  ``testosterone``: numeric
 
-   -  ``cortisol``: numeric
+      -  ``dhea``: numeric
 
-   .. rubric:: Value
-      :name: value
+      -  ``cortisol``: numeric
 
-   A tibble with columns
+      .. rubric:: Value
+         :name: value
 
-   -  ``class``: factor(levels: toxic and nontoxic)
+      A tibble with columns
 
-   -  ``cyp_11a1``: numeric
+      -  ``class``: factor(levels: toxic and nontoxic)
 
-   -  ``cyp_11b1``: numeric
+      -  ``cyp_11a1``: numeric
 
-   -  ``cyp_11b2``: numeric
+      -  ``cyp_11b1``: numeric
 
-   -  ``cyp_17a1``: numeric
+      -  ``cyp_11b2``: numeric
 
-   -  ``cyp_19a1``: numeric
+      -  ``cyp_17a1``: numeric
 
-   -  ``cyp_21a1``: numeric
+      -  ``cyp_19a1``: numeric
 
-   -  ``hsd3b2``: numeric
+      -  ``cyp_21a1``: numeric
 
-   -  ``star``: numeric
+      -  ``hsd3b2``: numeric
 
-   -  ``progesterone``: numeric
+      -  ``star``: numeric
 
-   -  ``testosterone``: numeric
+      -  ``progesterone``: numeric
 
-   -  ``dhea``: numeric
+      -  ``testosterone``: numeric
 
-   -  ``cortisol``: numeric
+      -  ``dhea``: numeric
 
-   .. rubric:: Source
-      :name: source
+      -  ``cortisol``: numeric
 
-   Maglich, J. M., Kuhn, M., Chapin, R. E., & Pletcher, M. T. (2014).
-   More than just hormones: H295R cells as predictors of reproductive
-   toxicity. *Reproductive Toxicology*, 45, 77-86.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Maglich, J. M., Kuhn, M., Chapin, R. E., & Pletcher, M. T. (2014).
+      More than just hormones: H295R cells as predictors of reproductive
+      toxicity. *Reproductive Toxicology*, 45, 77-86.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(steroidogenic_toxicity)
-      str(steroidogenic_toxicity)
+      ::
+
+         data(steroidogenic_toxicity)
+         str(steroidogenic_toxicity)

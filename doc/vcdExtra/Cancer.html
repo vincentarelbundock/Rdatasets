@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Cancer</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Cancer'>Survival of Breast Cancer Patients</h2>
+<h2>Survival of Breast Cancer Patients</h2>
 
 <h3>Description</h3>
 
@@ -62,8 +62,6 @@ function processMathHTML() {
 
 <h3>Source</h3>
 
-
-
 <p>Lindsey, J. K. (1995). 
 Analysis of Frequency and Count Data 
 Oxford, UK: Oxford University Press. p. 38, Table 2.5.
@@ -83,6 +81,7 @@ MASS::loglm(~Survival + Grade + Center, data = Cancer)
 vcd::mosaic(Cancer, shade=TRUE)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

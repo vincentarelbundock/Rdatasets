@@ -1,71 +1,73 @@
 .. container::
 
-   ============= ===============
-   close_college R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Data from Card (1995) to estimate the effect of college
-      education on earnings
-      :name: close_college
+      ============= ===============
+      close_college R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data from Card (1995) to estimate the effect of
+         college education on earnings
+         :name: data-from-card-1995-to-estimate-the-effect-of-college-education-on-earnings
 
-   Data from the National Longitudinal Survey Young Men Cohort. This
-   data is used to estimate the effect of college education on earnings,
-   using the presence of a nearby (in-county) college as an instrument
-   for college attendance.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from the National Longitudinal Survey Young Men Cohort. This
+      data is used to estimate the effect of college education on
+      earnings, using the presence of a nearby (in-county) college as an
+      instrument for college attendance.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      close_college
+      ::
 
-   .. rubric:: Format
-      :name: format
+         close_college
 
-   A data frame with 3010 rows and 8 variables
+      .. rubric:: Format
+         :name: format
 
-   lwage
-      Log wages
+      A data frame with 3010 rows and 8 variables
 
-   educ
-      Years of education
+      lwage
+         Log wages
 
-   exper
-      Years of work experience
+      educ
+         Years of education
 
-   black
-      Race: Black
+      exper
+         Years of work experience
 
-   south
-      In the southern United States
+      black
+         Race: Black
 
-   married
-      Is married
+      south
+         In the southern United States
 
-   smsa
-      In a Standard Metropolitan Statistical Area (urban)
+      married
+         Is married
 
-   nearc4
-      There is a four-year college in the county
+      smsa
+         In a Standard Metropolitan Statistical Area (urban)
 
-   .. rubric:: Details
-      :name: details
+      nearc4
+         There is a four-year college in the county
 
-   This data is used in the *Instrumental Variables* chapter of *Causal
-   Inference: The Mixtape* by Cunningham.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This data is used in the *Instrumental Variables* chapter of
+      *Causal Inference: The Mixtape* by Cunningham.
 
-   Card, David. 1995. “Aspects of Labour Economics: Essays in Honour of
-   John Vanderkamp.” In. University of Toronto Press.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Card, David. 1995. “Aspects of Labour Economics: Essays in Honour
+      of John Vanderkamp.” In. University of Toronto Press.
 
-   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-   https://mixtape.scunning.com/index.html.
+      .. rubric:: References
+         :name: references
+
+      Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+      https://mixtape.scunning.com/index.html.

@@ -1,52 +1,54 @@
 .. container::
 
-   =========== ===============
-   Consumption R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Quarterly Data on Consumption and Expenditure
-      :name: Consumption
+      =========== ===============
+      Consumption R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Quarterly Data on Consumption and Expenditure
+         :name: quarterly-data-on-consumption-and-expenditure
 
-   quarterly observations from 1947-1 to 1996-4
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 200
+      quarterly observations from 1947-1 to 1996-4
 
-   *observation* : country
+      *number of observations* : 200
 
-   *country* : Canada
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Canada
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Consumption)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Consumption)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   yd
-      personal disposable income, 1986 dollars
+      A time series containing :
 
-   ce
-      personal consumption expenditure, 1986 dollars
+      yd
+         personal disposable income, 1986 dollars
 
-   .. rubric:: References
-      :name: references
+      ce
+         personal consumption expenditure, 1986 dollars
 
-   Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
-   Methods*, New York, Oxford University Press, chapter 1, 3, 4, 6, 9,
-   10, 14 and 15.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
+      Methods*, New York, Oxford University Press, chapter 1, 3, 4, 6,
+      9, 10, 14 and 15.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

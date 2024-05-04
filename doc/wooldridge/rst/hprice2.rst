@@ -1,79 +1,82 @@
 .. container::
 
-   ======= ===============
-   hprice2 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: hprice2
-      :name: hprice2
+      ======= ===============
+      hprice2 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: hprice2
+         :name: hprice2
 
-   Wooldridge Source: D. Harrison and D.L. Rubinfeld (1978), “Hedonic
-   Housing Prices and the Demand for Clean Air,” by Harrison, D. and
-   D.L.Rubinfeld, Journal of Environmental Economics and Management 5,
-   81-102. Diego Garcia, a former Ph.D. student in economics at MIT,
-   kindly provided these data, which he obtained from the book
-   Regression Diagnostics: Identifying Influential Data and Sources of
-   Collinearity, by D.A. Belsey, E. Kuh, and R. Welsch, 1990. New York:
-   Wiley. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: D. Harrison and D.L. Rubinfeld (1978), “Hedonic
+      Housing Prices and the Demand for Clean Air,” by Harrison, D. and
+      D.L.Rubinfeld, Journal of Environmental Economics and Management
+      5, 81-102. Diego Garcia, a former Ph.D. student in economics at
+      MIT, kindly provided these data, which he obtained from the book
+      Regression Diagnostics: Identifying Influential Data and Sources
+      of Collinearity, by D.A. Belsey, E. Kuh, and R. Welsch, 1990. New
+      York: Wiley. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('hprice2')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('hprice2')
 
-   A data.frame with 506 observations on 12 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **price:** median housing price, $
+      A data.frame with 506 observations on 12 variables:
 
-   -  **crime:** crimes committed per capita
+      -  **price:** median housing price, $
 
-   -  **nox:** nit ox concen; parts per 100m
+      -  **crime:** crimes committed per capita
 
-   -  **rooms:** avg number of rooms
+      -  **nox:** nit ox concen; parts per 100m
 
-   -  **dist:** wght dist to 5 employ centers
+      -  **rooms:** avg number of rooms
 
-   -  **radial:** access. index to rad. hghwys
+      -  **dist:** wght dist to 5 employ centers
 
-   -  **proptax:** property tax per $1000
+      -  **radial:** access. index to rad. hghwys
 
-   -  **stratio:** average student-teacher ratio
+      -  **proptax:** property tax per $1000
 
-   -  **lowstat:** perc of people 'lower status'
+      -  **stratio:** average student-teacher ratio
 
-   -  **lprice:** log(price)
+      -  **lowstat:** perc of people 'lower status'
 
-   -  **lnox:** log(nox)
+      -  **lprice:** log(price)
 
-   -  **lproptax:** log(proptax)
+      -  **lnox:** log(nox)
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lproptax:** log(proptax)
 
-   The census contains rich information on variables such as median
-   housing prices, median income levels, average family size, and so on,
-   for fairly small geographical areas. If such data can be merged with
-   pollution data, one can update the Harrison and Rubinfeld study.
-   Presumably, this has been done in academic journals.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 108, 132-133, 190-191, 196-197.
+      The census contains rich information on variables such as median
+      housing prices, median income levels, average family size, and so
+      on, for fairly small geographical areas. If such data can be
+      merged with pollution data, one can update the Harrison and
+      Rubinfeld study. Presumably, this has been done in academic
+      journals.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 108, 132-133, 190-191, 196-197.
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(hprice2)
+      ::
+
+          str(hprice2)

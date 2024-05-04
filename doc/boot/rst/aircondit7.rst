@@ -1,53 +1,55 @@
 .. container::
 
-   ========= ===============
-   aircondit R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Failures of Air-conditioning Equipment
-      :name: aircondit
+      ========= ===============
+      aircondit R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Failures of Air-conditioning Equipment
+         :name: failures-of-air-conditioning-equipment
 
-   Proschan (1963) reported on the times between failures of the
-   air-conditioning equipment in 10 Boeing 720 aircraft. The
-   ``aircondit`` data frame contains the intervals for the ninth
-   aircraft while ``aircondit7`` contains those for the seventh
-   aircraft.
+      .. rubric:: Description
+         :name: description
 
-   Both data frames have just one column. Note that the data have been
-   sorted into increasing order.
+      Proschan (1963) reported on the times between failures of the
+      air-conditioning equipment in 10 Boeing 720 aircraft. The
+      ``aircondit`` data frame contains the intervals for the ninth
+      aircraft while ``aircondit7`` contains those for the seventh
+      aircraft.
 
-   .. rubric:: Usage
-      :name: usage
+      Both data frames have just one column. Note that the data have
+      been sorted into increasing order.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      aircondit
+      ::
 
-   .. rubric:: Format
-      :name: format
+         aircondit
 
-   The data frames contain the following column:
+      .. rubric:: Format
+         :name: format
 
-   ``hours``
-      The time interval in hours between successive failures of the
-      air-conditioning equipment
+      The data frames contain the following column:
 
-   .. rubric:: Source
-      :name: source
+      ``hours``
+         The time interval in hours between successive failures of the
+         air-conditioning equipment
 
-   The data were taken from
+      .. rubric:: Source
+         :name: source
 
-   Cox, D.R. and Snell, E.J. (1981) *Applied Statistics: Principles and
-   Examples*. Chapman and Hall.
+      The data were taken from
 
-   .. rubric:: References
-      :name: references
+      Cox, D.R. and Snell, E.J. (1981) *Applied Statistics: Principles
+      and Examples*. Chapman and Hall.
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
 
-   Proschan, F. (1963) Theoretical explanation of observed decreasing
-   failure rate. *Technometrics*, **5**, 375-383.
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.
+
+      Proschan, F. (1963) Theoretical explanation of observed decreasing
+      failure rate. *Technometrics*, **5**, 375-383.

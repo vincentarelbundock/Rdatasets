@@ -1,28 +1,30 @@
 .. container::
 
-   =========== ===============
-   USAccDeaths R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Accidental Deaths in the US 1973–1978
-      :name: USAccDeaths
+      =========== ===============
+      USAccDeaths R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Accidental Deaths in the US 1973–1978
+         :name: accidental-deaths-in-the-us-19731978
 
-   A time series giving the monthly totals of accidental deaths in the
-   USA. The values for the first six months of 1979 are 7798 7406 8363
-   8460 9217 9316.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A time series giving the monthly totals of accidental deaths in
+      the USA. The values for the first six months of 1979 are 7798 7406
+      8363 8460 9217 9316.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      USAccDeaths
+      ::
 
-   .. rubric:: Source
-      :name: source
+         USAccDeaths
 
-   P. J. Brockwell and R. A. Davis (1991) *Time Series: Theory and
-   Methods.* Springer, New York.
+      .. rubric:: Source
+         :name: source
+
+      P. J. Brockwell and R. A. Davis (1991) *Time Series: Theory and
+      Methods.* Springer, New York.

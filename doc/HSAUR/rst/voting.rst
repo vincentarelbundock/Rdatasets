@@ -1,54 +1,56 @@
 .. container::
 
-   ====== ===============
-   voting R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: House of Representatives Voting Data
-      :name: voting
+      ====== ===============
+      voting R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: House of Representatives Voting Data
+         :name: house-of-representatives-voting-data
 
-   Voting results for 15 congressmen from New Jersey.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Voting results for 15 congressmen from New Jersey.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("voting")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("voting")
 
-   A 15 times 15 matrix.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      A 15 times 15 matrix.
 
-   Romesburg (1984) gives a set of data that shows the number of times
-   15 congressmen from New Jersey voted differently in the House of
-   Representatives on 19 environmental bills. Abstentions are not
-   recorded.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Romesburg (1984) gives a set of data that shows the number of
+      times 15 congressmen from New Jersey voted differently in the
+      House of Representatives on 19 environmental bills. Abstentions
+      are not recorded.
 
-   H. C. Romesburg (1984), *Cluster Analysis for Researchers*. Lifetime
-   Learning Publications, Belmont, Canada.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      H. C. Romesburg (1984), *Cluster Analysis for Researchers*.
+      Lifetime Learning Publications, Belmont, Canada.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("voting", package = "HSAUR")
-        require("MASS")
-        voting_mds <- isoMDS(voting)
-        plot(voting_mds$points[,1], voting_mds$points[,2],
-             type = "n", xlab = "Coordinate 1", ylab = "Coordinate 2",
-             xlim = range(voting_mds$points[,1])*1.2)
-        text(voting_mds$points[,1], voting_mds$points[,2], 
-             labels = colnames(voting))
-        voting_sh <- Shepard(voting[lower.tri(voting)], voting_mds$points)
+      ::
+
+           data("voting", package = "HSAUR")
+           require("MASS")
+           voting_mds <- isoMDS(voting)
+           plot(voting_mds$points[,1], voting_mds$points[,2],
+                type = "n", xlab = "Coordinate 1", ylab = "Coordinate 2",
+                xlim = range(voting_mds$points[,1])*1.2)
+           text(voting_mds$points[,1], voting_mds$points[,2], 
+                labels = colnames(voting))
+           voting_sh <- Shepard(voting[lower.tri(voting)], voting_mds$points)

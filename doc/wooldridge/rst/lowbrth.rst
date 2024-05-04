@@ -1,126 +1,128 @@
 .. container::
 
-   ======= ===============
-   lowbrth R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: lowbrth
-      :name: lowbrth
+      ======= ===============
+      lowbrth R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: lowbrth
+         :name: lowbrth
 
-   Wooldridge Source: Source: Statistical Abstract of the United States,
-   1990, 1993, and 1994. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Source: Statistical Abstract of the United
+      States, 1990, 1993, and 1994. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('lowbrth')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('lowbrth')
 
-   A data.frame with 100 observations on 36 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1987 or 1990
+      A data.frame with 100 observations on 36 variables:
 
-   -  **lowbrth:** perc births low weight
+      -  **year:** 1987 or 1990
 
-   -  **infmort:** infant mortality rate
+      -  **lowbrth:** perc births low weight
 
-   -  **afdcprt:** # participants in AFDC, 1000s
+      -  **infmort:** infant mortality rate
 
-   -  **popul:** population, 1000s
+      -  **afdcprt:** # participants in AFDC, 1000s
 
-   -  **pcinc:** per capita income
+      -  **popul:** population, 1000s
 
-   -  **physic:** # physicians, 1000s
+      -  **pcinc:** per capita income
 
-   -  **afdcprc:** percent of pop in AFDC
+      -  **physic:** # physicians, 1000s
 
-   -  **d90:** =1 if year == 1990
+      -  **afdcprc:** percent of pop in AFDC
 
-   -  **lpcinc:** log of pcinc
+      -  **d90:** =1 if year == 1990
 
-   -  **cafdcprc:** change in afdcprc
+      -  **lpcinc:** log of pcinc
 
-   -  **clpcinc:** change in lpcinc
+      -  **cafdcprc:** change in afdcprc
 
-   -  **lphysic:** log of physic
+      -  **clpcinc:** change in lpcinc
 
-   -  **clphysic:** change in lphysic
+      -  **lphysic:** log of physic
 
-   -  **clowbrth:** change in lowbrth
+      -  **clphysic:** change in lphysic
 
-   -  **cinfmort:** change in infmort
+      -  **clowbrth:** change in lowbrth
 
-   -  **afdcpay:** avg monthly AFDC payment
+      -  **cinfmort:** change in infmort
 
-   -  **afdcinc:** afdcpay as percent pcinc
+      -  **afdcpay:** avg monthly AFDC payment
 
-   -  **lafdcpay:** log of afdcpay
+      -  **afdcinc:** afdcpay as percent pcinc
 
-   -  **clafdcpy:** change in lafdcpay
+      -  **lafdcpay:** log of afdcpay
 
-   -  **cafdcinc:** change in afdcinc
+      -  **clafdcpy:** change in lafdcpay
 
-   -  **stateabb:** state postal code
+      -  **cafdcinc:** change in afdcinc
 
-   -  **state:** name of state
+      -  **stateabb:** state postal code
 
-   -  **beds:** # hospital beds, 1000s
+      -  **state:** name of state
 
-   -  **bedspc:** beds per capita
+      -  **beds:** # hospital beds, 1000s
 
-   -  **lbedspc:** log(bedspc)
+      -  **bedspc:** beds per capita
 
-   -  **clbedspc:** change in lbedspc
+      -  **lbedspc:** log(bedspc)
 
-   -  **povrate:** percent people below poverty line
+      -  **clbedspc:** change in lbedspc
 
-   -  **cpovrate:** change in povrate
+      -  **povrate:** percent people below poverty line
 
-   -  **afdcpsq:** afdcper^2
+      -  **cpovrate:** change in povrate
 
-   -  **cafdcpsq:** change in afdcpsq
+      -  **afdcpsq:** afdcper^2
 
-   -  **physicpc:** physicians per capita
+      -  **cafdcpsq:** change in afdcpsq
 
-   -  **lphypc:** log(physicpc)
+      -  **physicpc:** physicians per capita
 
-   -  **clphypc:** change in lphypc
+      -  **lphypc:** log(physicpc)
 
-   -  **lpopul:** log(popul)
+      -  **clphypc:** change in lphypc
 
-   -  **clpopul:** change in lpopul
+      -  **lpopul:** log(popul)
 
-   .. rubric:: Notes
-      :name: notes
+      -  **clpopul:** change in lpopul
 
-   This data set can be used very much like INFMRT.RAW. It contains two
-   years of state-level panel data. In fact, it is a superset of
-   INFMRT.RAW. The key is that it contains information on low birth
-   weights, as well as infant mortality. It also contains state
-   identifies, so that several years of more recent data could be added
-   for a term project. Putting in the variable afcdprc and its square
-   leads to some interesting findings for pooled OLS and fixed effects
-   (first differencing). After differencing, you can even try using the
-   change in the AFDC payments variable as an instrumental variable for
-   the change in afdcprc.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: not used
+      This data set can be used very much like INFMRT.RAW. It contains
+      two years of state-level panel data. In fact, it is a superset of
+      INFMRT.RAW. The key is that it contains information on low birth
+      weights, as well as infant mortality. It also contains state
+      identifies, so that several years of more recent data could be
+      added for a term project. Putting in the variable afcdprc and its
+      square leads to some interesting findings for pooled OLS and fixed
+      effects (first differencing). After differencing, you can even try
+      using the change in the AFDC payments variable as an instrumental
+      variable for the change in afdcprc.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: not used
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(lowbrth)
+      ::
+
+          str(lowbrth)

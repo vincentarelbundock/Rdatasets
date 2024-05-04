@@ -1,50 +1,52 @@
 .. container::
 
-   ============== ===============
-   cancer_in_dogs R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Cancer in dogs
-      :name: cancer_in_dogs
+      ============== ===============
+      cancer_in_dogs R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cancer in dogs
+         :name: cancer-in-dogs
 
-   A study in 1994 examined 491 dogs that had developed cancer and 945
-   dogs as a control group to determine whether there is an increased
-   risk of cancer in dogs that are exposed to the herbicide
-   2,4-Dichlorophenoxyacetic acid (2,4-D).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A study in 1994 examined 491 dogs that had developed cancer and
+      945 dogs as a control group to determine whether there is an
+      increased risk of cancer in dogs that are exposed to the herbicide
+      2,4-Dichlorophenoxyacetic acid (2,4-D).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      cancer_in_dogs
+      ::
 
-   .. rubric:: Format
-      :name: format
+         cancer_in_dogs
 
-   A data frame with 1436 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   order
-      a factor with levels ``2,4-D`` and ``no 2,4-D``
+      A data frame with 1436 observations on the following 2 variables.
 
-   response
-      a factor with levels ``cancer`` and ``no cancer``
+      order
+         a factor with levels ``2,4-D`` and ``no 2,4-D``
 
-   .. rubric:: Source
-      :name: source
+      response
+         a factor with levels ``cancer`` and ``no cancer``
 
-   Hayes HM, Tarone RE, Cantor KP, Jessen CR, McCurnin DM, and
-   Richardson RC. 1991. Case- Control Study of Canine Malignant
-   Lymphoma: Positive Association With Dog Owner's Use of 2, 4-
-   Dichlorophenoxyacetic Acid Herbicides. Journal of the National Cancer
-   Institute 83(17):1226-1231.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Hayes HM, Tarone RE, Cantor KP, Jessen CR, McCurnin DM, and
+      Richardson RC. 1991. Case- Control Study of Canine Malignant
+      Lymphoma: Positive Association With Dog Owner's Use of 2, 4-
+      Dichlorophenoxyacetic Acid Herbicides. Journal of the National
+      Cancer Institute 83(17):1226-1231.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      table(cancer_in_dogs)
+      ::
+
+         table(cancer_in_dogs)

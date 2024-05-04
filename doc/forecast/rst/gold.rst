@@ -1,33 +1,35 @@
 .. container::
 
-   ==== ===============
-   gold R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Daily morning gold prices
-      :name: gold
+      ==== ===============
+      gold R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Daily morning gold prices
+         :name: daily-morning-gold-prices
 
-   Daily morning gold prices in US dollars. 1 January 1985 – 31 March
-   1989.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Daily morning gold prices in US dollars. 1 January 1985 – 31 March
+      1989.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      gold
+      ::
 
-   .. rubric:: Format
-      :name: format
+         gold
 
-   Time series data
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Examples
-      :name: examples
+      Time series data
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      tsdisplay(gold)
+      ::
+
+         tsdisplay(gold)

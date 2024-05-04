@@ -1,42 +1,45 @@
 .. container::
 
-   ========== ===============
-   wvs_ccodes R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Syncing Word Values Survey Country Codes with CoW Codes
-      :name: wvs_ccodes
+      ========== ===============
+      wvs_ccodes R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Syncing Word Values Survey Country Codes with CoW
+         Codes
+         :name: syncing-word-values-survey-country-codes-with-cow-codes
 
-   A simple data set that syncs World Values Survey country codes
-   (``s003``) with corresponding country codes from the Correlates of
-   War state system membership data.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A simple data set that syncs World Values Survey country codes
+      (``s003``) with corresponding country codes from the Correlates of
+      War state system membership data.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      wvs_ccodes
+      ::
 
-   .. rubric:: Format
-      :name: format
+         wvs_ccodes
 
-   A data frame with 112 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``s003``
-      the World Values Survey country code
+      A data frame with 112 observations on the following 3 variables.
 
-   ``country``
-      a character vector for the corresponding country name
+      ``s003``
+         the World Values Survey country code
 
-   ``ccode``
-      the equivalent country code from the Correlates of War state
-      system membership data
+      ``country``
+         a character vector for the corresponding country name
 
-   .. rubric:: Details
-      :name: details
+      ``ccode``
+         the equivalent country code from the Correlates of War state
+         system membership data
 
-   http://svmiller.com/blog/2015/06/syncing-word-values-survey-country-codes-with-cow-codes/
+      .. rubric:: Details
+         :name: details
+
+      http://svmiller.com/blog/2015/06/syncing-word-values-survey-country-codes-with-cow-codes/

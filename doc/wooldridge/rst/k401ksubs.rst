@@ -1,74 +1,76 @@
 .. container::
 
-   ========= ===============
-   k401ksubs R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: k401ksubs
-      :name: k401ksubs
+      ========= ===============
+      k401ksubs R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: k401ksubs
+         :name: k401ksubs
 
-   Wooldridge Source: A. Abadie (2003), “Semiparametric Instrumental
-   Variable Estimation of Treatment Response Models,” Journal of
-   Econometrics 113, 231-263. Professor Abadie kindly provided these
-   data. He obtained them from the 1991 Survey of Income and Program
-   Participation (SIPP). Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: A. Abadie (2003), “Semiparametric Instrumental
+      Variable Estimation of Treatment Response Models,” Journal of
+      Econometrics 113, 231-263. Professor Abadie kindly provided these
+      data. He obtained them from the 1991 Survey of Income and Program
+      Participation (SIPP). Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('k401ksubs')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('k401ksubs')
 
-   A data.frame with 9275 observations on 11 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **e401k:** =1 if eligble for 401(k)
+      A data.frame with 9275 observations on 11 variables:
 
-   -  **inc:** annual income, $1000s
+      -  **e401k:** =1 if eligble for 401(k)
 
-   -  **marr:** =1 if married
+      -  **inc:** annual income, $1000s
 
-   -  **male:** =1 if male respondent
+      -  **marr:** =1 if married
 
-   -  **age:** in years
+      -  **male:** =1 if male respondent
 
-   -  **fsize:** family size
+      -  **age:** in years
 
-   -  **nettfa:** net total fin. assets, $1000
+      -  **fsize:** family size
 
-   -  **p401k:** =1 if participate in 401(k)
+      -  **nettfa:** net total fin. assets, $1000
 
-   -  **pira:** =1 if have IRA
+      -  **p401k:** =1 if participate in 401(k)
 
-   -  **incsq:** inc^2
+      -  **pira:** =1 if have IRA
 
-   -  **agesq:** age^2
+      -  **incsq:** inc^2
 
-   .. rubric:: Notes
-      :name: notes
+      -  **agesq:** age^2
 
-   This data set can also be used to illustrate the binary response
-   models, probit and logit, in Chapter 17, where, say, pira (an
-   indicator for having an individual retirement account) is the
-   dependent variable, and e401k [the 401(k) eligibility indicator] is
-   the key explanatory variable.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 166, 174, 223, 264, 283, 301-302, 340, 549
+      This data set can also be used to illustrate the binary response
+      models, probit and logit, in Chapter 17, where, say, pira (an
+      indicator for having an individual retirement account) is the
+      dependent variable, and e401k [the 401(k) eligibility indicator]
+      is the key explanatory variable.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 166, 174, 223, 264, 283, 301-302, 340, 549
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(k401ksubs)
+      ::
+
+          str(k401ksubs)

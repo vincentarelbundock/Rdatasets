@@ -1,49 +1,52 @@
 .. container::
 
-   =========== ===============
-   MathAchieve R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Mathematics achievement scores
-      :name: MathAchieve
+      =========== ===============
+      MathAchieve R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Mathematics achievement scores
+         :name: mathematics-achievement-scores
 
-   The ``MathAchieve`` data frame has 7185 rows and 6 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``MathAchieve`` data frame has 7185 rows and 6 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   School
-      an ordered factor identifying the school that the student attends
+      This data frame contains the following columns:
 
-   Minority
-      a factor with levels ``No`` ``Yes`` indicating if the student is a
-      member of a minority racial group.
+      School
+         an ordered factor identifying the school that the student
+         attends
 
-   Sex
-      a factor with levels ``Male`` ``Female``
+      Minority
+         a factor with levels ``No`` ``Yes`` indicating if the student
+         is a member of a minority racial group.
 
-   SES
-      a numeric vector of socio-economic status.
+      Sex
+         a factor with levels ``Male`` ``Female``
 
-   MathAch
-      a numeric vector of mathematics achievement scores.
+      SES
+         a numeric vector of socio-economic status.
 
-   MEANSES
-      a numeric vector of the mean SES for the school.
+      MathAch
+         a numeric vector of mathematics achievement scores.
 
-   .. rubric:: Details
-      :name: details
+      MEANSES
+         a numeric vector of the mean SES for the school.
 
-   Each row in this data frame contains the data for one student.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Examples
-      :name: examples
+      Each row in this data frame contains the data for one student.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(MathAchieve)
+      ::
+
+         summary(MathAchieve)

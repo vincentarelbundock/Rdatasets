@@ -1,57 +1,59 @@
 .. container::
 
-   ====== ===============
-   wtloss R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Weight Loss Data from an Obese Patient
-      :name: wtloss
+      ====== ===============
+      wtloss R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Weight Loss Data from an Obese Patient
+         :name: weight-loss-data-from-an-obese-patient
 
-   The data frame gives the weight, in kilograms, of an obese patient at
-   52 time points over an 8 month period of a weight rehabilitation
-   programme.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The data frame gives the weight, in kilograms, of an obese patient
+      at 52 time points over an 8 month period of a weight
+      rehabilitation programme.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      wtloss
+      ::
 
-   .. rubric:: Format
-      :name: format
+         wtloss
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``Days``
-      time in days since the start of the programme.
+      This data frame contains the following columns:
 
-   ``Weight``
-      weight in kilograms of the patient.
+      ``Days``
+         time in days since the start of the programme.
 
-   .. rubric:: Source
-      :name: source
+      ``Weight``
+         weight in kilograms of the patient.
 
-   Dr T. Davies, Adelaide.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Dr T. Davies, Adelaide.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## IGNORE_RDIFF_BEGIN
-      wtloss.fm <- nls(Weight ~ b0 + b1*2^(-Days/th),
-          data = wtloss, start = list(b0=90, b1=95, th=120))
-      wtloss.fm
-      ## IGNORE_RDIFF_END
-      plot(wtloss)
-      with(wtloss, lines(Days, fitted(wtloss.fm)))
+      ::
+
+         ## IGNORE_RDIFF_BEGIN
+         wtloss.fm <- nls(Weight ~ b0 + b1*2^(-Days/th),
+             data = wtloss, start = list(b0=90, b1=95, th=120))
+         wtloss.fm
+         ## IGNORE_RDIFF_END
+         plot(wtloss)
+         with(wtloss, lines(Days, fitted(wtloss.fm)))

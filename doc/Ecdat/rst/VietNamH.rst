@@ -1,81 +1,83 @@
 .. container::
 
-   ======== ===============
-   VietNamH R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Medical Expenses in Vietnam (household Level)
-      :name: VietNamH
+      ======== ===============
+      VietNamH R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Medical Expenses in Vietnam (household Level)
+         :name: medical-expenses-in-vietnam-household-level
 
-   a cross-section from 1997
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 5999
+      a cross-section from 1997
 
-   *observation* : households
+      *number of observations* : 5999
 
-   *country* : Vietnam
+      *observation* : households
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Vietnam
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(VietNamH)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(VietNamH)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   sex
-      gender of household head (male,female)
+      A dataframe containing :
 
-   age
-      age of household head
+      sex
+         gender of household head (male,female)
 
-   educyr
-      schooling year of household head
+      age
+         age of household head
 
-   farm
-      farm household ?
+      educyr
+         schooling year of household head
 
-   urban
-      urban household ?
+      farm
+         farm household ?
 
-   hhsize
-      household size
+      urban
+         urban household ?
 
-   lntotal
-      log household total expenditure
+      hhsize
+         household size
 
-   lnmed
-      log household medical expenditure
+      lntotal
+         log household total expenditure
 
-   lnrlfood
-      log household food expenditure
+      lnmed
+         log household medical expenditure
 
-   lnexp12m
-      log of total household health care expenditure for 12 months
+      lnrlfood
+         log household food expenditure
 
-   commune
+      lnexp12m
+         log of total household health care expenditure for 12 months
+
       commune
+         commune
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: Source
+         :name: source
 
-   Vietnam World Bank Livings Standards Survey.
+      Vietnam World Bank Livings Standards Survey.
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: References
+         :name: references
 
-   Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
-   and applications*, Cambridge, pp.88–90.
+      Cameron, A.C. and P.K. Trivedi (2005) *Microeconometrics : methods
+      and applications*, Cambridge, pp.88–90.
 
-   .. rubric:: See Also
-      :name: see-also
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

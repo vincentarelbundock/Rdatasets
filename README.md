@@ -1,7 +1,7 @@
 
 # What is this?
 
-`Rdatasets` is a collection of 2264 datasets which were originally
+`Rdatasets` is a collection of 2279 datasets which were originally
 distributed alongside the statistical software environment `R` and some
 of its add-on packages. The goal is to make these data more broadly
 accessible for teaching and statistical software development.
@@ -10,10 +10,10 @@ accessible for teaching and statistical software development.
 
 The list of available datasets (csv and docs) is available here:
 
-- [HTML
-  index](https://vincentarelbundock.github.io/Rdatasets/articles/data.html)
-- [CSV
-  index](https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv)
+  - [HTML
+    index](https://vincentarelbundock.github.io/Rdatasets/articles/data.html)
+  - [CSV
+    index](https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/datasets.csv)
 
 On the github repository you will also find the scripts I use to scrape
 data and update the website.

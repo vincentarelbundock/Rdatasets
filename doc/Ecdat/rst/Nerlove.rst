@@ -1,83 +1,86 @@
 .. container::
 
-   ======= ===============
-   Nerlove R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Cost Function for Electricity Producers, 1955
-      :name: Nerlove
+      ======= ===============
+      Nerlove R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cost Function for Electricity Producers, 1955
+         :name: cost-function-for-electricity-producers-1955
 
-   a cross-section from 1955 to 1955
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 159
+      a cross-section from 1955 to 1955
 
-   *observation* : production units
+      *number of observations* : 159
 
-   *country* : United States
+      *observation* : production units
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Nerlove)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Nerlove)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   cost
-      total cost
+      A dataframe containing :
 
-   output
-      total output
+      cost
+         total cost
 
-   pl
-      wage rate
+      output
+         total output
 
-   sl
-      cost share for labor
+      pl
+         wage rate
 
-   pk
-      capital price index
+      sl
+         cost share for labor
 
-   sk
-      cost share for capital
+      pk
+         capital price index
 
-   pf
-      fuel price
+      sk
+         cost share for capital
 
-   sf
-      cost share for fuel
+      pf
+         fuel price
 
-   .. rubric:: Source
-      :name: source
+      sf
+         cost share for fuel
 
-   Nerlove, M. (1963) *Returns to scale in electricity industry* *in*
-   Christ, C. ed. (1963) *Measurement in Economics: Studies in
-   Mathematical Economics and Econometrics in Memory of Yehuda Grunfeld*
-   , Stanford, California, Stanford University Press .
+      .. rubric:: Source
+         :name: source
 
-   Christensen, L. and W. H. Greene (1976) “Economies of scale in U.S.
-   electric power generation”, *Journal of Political Economy*, **84**,
-   655-676.
+      Nerlove, M. (1963) *Returns to scale in electricity industry* *in*
+      Christ, C. ed. (1963) *Measurement in Economics: Studies in
+      Mathematical Economics and Econometrics in Memory of Yehuda
+      Grunfeld* , Stanford, California, Stanford University Press .
 
-   .. rubric:: References
-      :name: references
+      Christensen, L. and W. H. Greene (1976) “Economies of scale in
+      U.S. electric power generation”, *Journal of Political Economy*,
+      **84**, 655-676.
 
-   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   https://archive.org/details/econometricanaly0000gree_f4x3, Table
-   F14.2.
+      .. rubric:: References
+         :name: references
 
-   Hayashi, F. (2000) *Econometrics*, Princeton University Press,
-   https://archive.org/details/econometrics0000haya, chapter 1, 76-84.
+      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+      https://archive.org/details/econometricanaly0000gree_f4x3, Table
+      F14.2.
 
-   .. rubric:: See Also
-      :name: see-also
+      Hayashi, F. (2000) *Econometrics*, Princeton University Press,
+      https://archive.org/details/econometrics0000haya, chapter 1,
+      76-84.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

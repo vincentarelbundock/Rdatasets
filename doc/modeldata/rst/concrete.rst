@@ -1,39 +1,42 @@
 .. container::
 
-   ======== ===============
-   concrete R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Compressive strength of concrete mixtures
-      :name: concrete
+      ======== ===============
+      concrete R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Compressive strength of concrete mixtures
+         :name: compressive-strength-of-concrete-mixtures
 
-   Yeh (2006) describes an aggregated data set for experimental designs
-   used to test the compressive strength of concrete mixtures. The data
-   are used by Kuhn and Johnson (2013).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Value
-      :name: value
+      Yeh (2006) describes an aggregated data set for experimental
+      designs used to test the compressive strength of concrete
+      mixtures. The data are used by Kuhn and Johnson (2013).
 
-   ============ ========
-   ``concrete`` a tibble
-   ============ ========
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      ============ ========
+      ``concrete`` a tibble
+      ============ ========
 
-   Yeh I (2006). "Analysis of Strength of Concrete Using Design of
-   Experiments and Neural Networks." *Journal of Materials in Civil
-   Engineering*, 18, 597-604.
+      .. rubric:: Source
+         :name: source
 
-   Kuhn, M., Johnson, K. (2013) *Applied Predictive Modeling*, Springer.
+      Yeh I (2006). "Analysis of Strength of Concrete Using Design of
+      Experiments and Neural Networks." *Journal of Materials in Civil
+      Engineering*, 18, 597-604.
 
-   .. rubric:: Examples
-      :name: examples
+      Kuhn, M., Johnson, K. (2013) *Applied Predictive Modeling*,
+      Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(concrete)
-      str(concrete)
+      ::
+
+         data(concrete)
+         str(concrete)

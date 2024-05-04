@@ -1,88 +1,90 @@
 .. container::
 
-   ====== ===============
-   Credit R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Credit Card Balance Data
-      :name: Credit
+      ====== ===============
+      Credit R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Credit Card Balance Data
+         :name: credit-card-balance-data
 
-   A simulated data set containing information on ten thousand
-   customers. The aim here is to predict which customers will default on
-   their credit card debt.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A simulated data set containing information on ten thousand
+      customers. The aim here is to predict which customers will default
+      on their credit card debt.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Credit
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Credit
 
-   A data frame with 10000 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``ID``
-      Identification
+      A data frame with 10000 observations on the following 4 variables.
 
-   ``Income``
-      Income in $1,000's
+      ``ID``
+         Identification
 
-   ``Limit``
-      Credit limit
+      ``Income``
+         Income in $1,000's
 
-   ``Rating``
-      Credit rating
+      ``Limit``
+         Credit limit
 
-   ``Cards``
-      Number of credit cards
+      ``Rating``
+         Credit rating
 
-   ``Age``
-      Age in years
+      ``Cards``
+         Number of credit cards
 
-   ``Education``
-      Number of years of education
+      ``Age``
+         Age in years
 
-   ``Gender``
-      A factor with levels ``Male`` and ``Female``
+      ``Education``
+         Number of years of education
 
-   ``Student``
-      A factor with levels ``No`` and ``Yes`` indicating whether the
-      individual was a student
+      ``Gender``
+         A factor with levels ``Male`` and ``Female``
 
-   ``Married``
-      A factor with levels ``No`` and ``Yes`` indicating whether the
-      individual was married
+      ``Student``
+         A factor with levels ``No`` and ``Yes`` indicating whether the
+         individual was a student
 
-   ``Ethnicity``
-      A factor with levels ``African American``, ``Asian``, and
-      ``Caucasian`` indicating the individual's ethnicity
+      ``Married``
+         A factor with levels ``No`` and ``Yes`` indicating whether the
+         individual was married
 
-   ``Balance``
-      Average credit card balance in $.
+      ``Ethnicity``
+         A factor with levels ``African American``, ``Asian``, and
+         ``Caucasian`` indicating the individual's ethnicity
 
-   .. rubric:: Source
-      :name: source
+      ``Balance``
+         Average credit card balance in $.
 
-   Simulated data, with thanks to Albert Kim for pointing out that this
-   was omitted, and supplying the data and man documentation page on Oct
-   19, 2017
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Simulated data, with thanks to Albert Kim for pointing out that
+      this was omitted, and supplying the data and man documentation
+      page on Oct 19, 2017
 
-   James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
-   Introduction to Statistical Learning with applications in R*,
-   https://www.statlearning.com, Springer-Verlag, New York
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
+      Introduction to Statistical Learning with applications in R*,
+      https://www.statlearning.com, Springer-Verlag, New York
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(Credit)
-      lm(Balance ~ Student + Limit, data=Credit)
+      ::
+
+         summary(Credit)
+         lm(Balance ~ Student + Limit, data=Credit)

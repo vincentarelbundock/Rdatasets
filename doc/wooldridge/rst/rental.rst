@@ -1,104 +1,107 @@
 .. container::
 
-   ====== ===============
-   rental R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: rental
-      :name: rental
+      ====== ===============
+      rental R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: rental
+         :name: rental
 
-   Wooldridge Source: David Harvey, a former MSU undergraduate,
-   collected the data for 64 “college towns” from the 1980 and 1990
-   United States censuses. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: David Harvey, a former MSU undergraduate,
+      collected the data for 64 “college towns” from the 1980 and 1990
+      United States censuses. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('rental')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('rental')
 
-   A data.frame with 128 observations on 23 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **city:** city label, 1 to 64
+      A data.frame with 128 observations on 23 variables:
 
-   -  **year:** 80 or 90
+      -  **city:** city label, 1 to 64
 
-   -  **pop:** city population
+      -  **year:** 80 or 90
 
-   -  **enroll:** # college students enrolled
+      -  **pop:** city population
 
-   -  **rent:** average rent
+      -  **enroll:** # college students enrolled
 
-   -  **rnthsg:** renter occupied units
+      -  **rent:** average rent
 
-   -  **tothsg:** occupied housing units
+      -  **rnthsg:** renter occupied units
 
-   -  **avginc:** per capita income
+      -  **tothsg:** occupied housing units
 
-   -  **lenroll:** log(enroll)
+      -  **avginc:** per capita income
 
-   -  **lpop:** log(pop)
+      -  **lenroll:** log(enroll)
 
-   -  **lrent:** log(rent)
+      -  **lpop:** log(pop)
 
-   -  **ltothsg:** log(tothsg)
+      -  **lrent:** log(rent)
 
-   -  **lrnthsg:** log(rnthsg)
+      -  **ltothsg:** log(tothsg)
 
-   -  **lavginc:** log(avginc)
+      -  **lrnthsg:** log(rnthsg)
 
-   -  **clenroll:** change in lrent from 80 to 90
+      -  **lavginc:** log(avginc)
 
-   -  **clpop:** change in lpop
+      -  **clenroll:** change in lrent from 80 to 90
 
-   -  **clrent:** change in lrent
+      -  **clpop:** change in lpop
 
-   -  **cltothsg:** change in ltothsg
+      -  **clrent:** change in lrent
 
-   -  **clrnthsg:** change in lrnthsg
+      -  **cltothsg:** change in ltothsg
 
-   -  **clavginc:** change in lavginc
+      -  **clrnthsg:** change in lrnthsg
 
-   -  **pctstu:** percent of population students
+      -  **clavginc:** change in lavginc
 
-   -  **cpctstu:** change in pctstu
+      -  **pctstu:** percent of population students
 
-   -  **y90:** =1 if year == 90
+      -  **cpctstu:** change in pctstu
 
-   .. rubric:: Notes
-      :name: notes
+      -  **y90:** =1 if year == 90
 
-   These data can be used in a somewhat crude simultaneous equations
-   analysis, either focusing on one year or pooling the two years. (In
-   the latter case, in an advanced class, you might have students
-   compute the standard errors robust to serial correlation across the
-   two time periods.) The demand equation would have ltothsg as a
-   function of lrent, lavginc, and lpop. The supply equation would have
-   ltothsg as a function of lrent, pctst, and lpop. Thus, in estimating
-   the demand function, pctstu is used as an IV for lrent. Clearly one
-   can quibble with excluding pctstu from the demand equation, but the
-   estimated demand function gives a negative price effect. Getting
-   information for 2000, and adding many more college towns, would make
-   for a much better analysis. Information on number of spaces in
-   on-campus dormitories would be a big improvement, too.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 160, 477, 503-504
+      These data can be used in a somewhat crude simultaneous equations
+      analysis, either focusing on one year or pooling the two years.
+      (In the latter case, in an advanced class, you might have students
+      compute the standard errors robust to serial correlation across
+      the two time periods.) The demand equation would have ltothsg as a
+      function of lrent, lavginc, and lpop. The supply equation would
+      have ltothsg as a function of lrent, pctst, and lpop. Thus, in
+      estimating the demand function, pctstu is used as an IV for lrent.
+      Clearly one can quibble with excluding pctstu from the demand
+      equation, but the estimated demand function gives a negative price
+      effect. Getting information for 2000, and adding many more college
+      towns, would make for a much better analysis. Information on
+      number of spaces in on-campus dormitories would be a big
+      improvement, too.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 160, 477, 503-504
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(rental)
+      ::
+
+          str(rental)

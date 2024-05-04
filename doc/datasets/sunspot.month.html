@@ -12,15 +12,15 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>sunspot.month</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='sunspot.month'>Monthly Sunspot Data, from 1749 to &quot;Present&quot;</h2>
+<h2>Monthly Sunspot Data, from 1749 to &quot;Present&quot;</h2>
 
 <h3>Description</h3>
 
-<p>Monthly numbers of sunspots, as from the World Data Center, aka SIDC.
+<p>Monthly numbers of sunspots, as from the World Data Center, aka <abbr>SIDC</abbr>.
 This is the version of the data that will occasionally be updated when
 new counts become available.
 </p>
@@ -48,7 +48,7 @@ The objects are of class <code>"ts"</code>.
 
 <h3>Source</h3>
 
-<p>WDC-SILSO, Solar Influences Data Analysis Center (SIDC),
+<p>WDC-SILSO, Solar Influences Data Analysis Center (<abbr>SIDC</abbr>),
 Royal Observatory of Belgium, Av. Circulaire, 3, B-1180 BRUSSELS
 Currently at <a href="http://www.sidc.be/silso/datafiles">http://www.sidc.be/silso/datafiles</a>
 </p>
@@ -92,6 +92,7 @@ with(as.data.frame(.sunspot.diff), ssm0[i] &lt;&lt;- ssm0[i] - res10/10)
 sunspot.month.0 &lt;- ts(ssm0, start = 1749, frequency = 12)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

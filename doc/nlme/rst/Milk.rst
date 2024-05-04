@@ -1,45 +1,47 @@
 .. container::
 
-   ==== ===============
-   Milk R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Protein content of cows' milk
-      :name: Milk
+      ==== ===============
+      Milk R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Protein content of cows' milk
+         :name: protein-content-of-cows-milk
 
-   The ``Milk`` data frame has 1337 rows and 4 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``Milk`` data frame has 1337 rows and 4 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   protein
-      a numeric vector giving the protein content of the milk.
+      This data frame contains the following columns:
 
-   Time
-      a numeric vector giving the time since calving (weeks).
+      protein
+         a numeric vector giving the protein content of the milk.
 
-   Cow
-      an ordered factor giving a unique identifier for each cow.
+      Time
+         a numeric vector giving the time since calving (weeks).
 
-   Diet
-      a factor with levels ``barley``, ``barley+lupins``, and ``lupins``
-      identifying the diet for each cow.
+      Cow
+         an ordered factor giving a unique identifier for each cow.
 
-   .. rubric:: Details
-      :name: details
+      Diet
+         a factor with levels ``barley``, ``barley+lupins``, and
+         ``lupins`` identifying the diet for each cow.
 
-   Diggle, Liang, and Zeger (1994) describe data on the protein content
-   of cows' milk in the weeks following calving. The cattle are grouped
-   according to whether they are fed a diet with barley alone, with
-   barley and lupins, or with lupins alone.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Diggle, Liang, and Zeger (1994) describe data on the protein
+      content of cows' milk in the weeks following calving. The cattle
+      are grouped according to whether they are fed a diet with barley
+      alone, with barley and lupins, or with lupins alone.
 
-   Diggle, Peter J., Liang, Kung-Yee and Zeger, Scott L. (1994),
-   *Analysis of longitudinal data*, Oxford University Press, Oxford.
+      .. rubric:: Source
+         :name: source
+
+      Diggle, Peter J., Liang, Kung-Yee and Zeger, Scott L. (1994),
+      *Analysis of longitudinal data*, Oxford University Press, Oxford.

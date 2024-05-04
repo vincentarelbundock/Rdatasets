@@ -1,41 +1,44 @@
 .. container::
 
-   ======== ===============
-   suicides R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Crowd Baiting Behaviour and Suicides
-      :name: suicides
+      ======== ===============
+      suicides R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Crowd Baiting Behaviour and Suicides
+         :name: crowd-baiting-behaviour-and-suicides
 
-   Data from a study carried out to investigate the causes of jeering or
-   baiting behaviour by a crowd when a person is threatening to commit
-   suicide by jumping from a high building.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from a study carried out to investigate the causes of jeering
+      or baiting behaviour by a crowd when a person is threatening to
+      commit suicide by jumping from a high building.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("suicides")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("suicides")
 
-   A two-way classification, see ``table``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A two-way classification, see ``table``.
 
-   L. Mann (1981), The baiting crowd in episodes of threatened suicide.
-   *Journal of Personality and Social Psychology*, **41**, 703–709.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      L. Mann (1981), The baiting crowd in episodes of threatened
+      suicide. *Journal of Personality and Social Psychology*, **41**,
+      703–709.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("suicides", package = "HSAUR")
-        mosaicplot(suicides)
+      ::
+
+           data("suicides", package = "HSAUR")
+           mosaicplot(suicides)

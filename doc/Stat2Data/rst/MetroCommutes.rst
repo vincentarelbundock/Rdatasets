@@ -1,42 +1,44 @@
 .. container::
 
-   ============= ===============
-   MetroCommutes R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Commute Times
-      :name: MetroCommutes
+      ============= ===============
+      MetroCommutes R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Commute Times
+         :name: commute-times
 
-   Commute times for four cities
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Commute times for four cities
 
-   A data frame with 2000 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``City``
-      ``Boston``, ``Houston``, ``Minneapolis``, or ``Washington``
+      A data frame with 2000 observations on the following 3 variables.
 
-   ``Distance``
-      Distance of commute (in miles)
+      ``City``
+         ``Boston``, ``Houston``, ``Minneapolis``, or ``Washington``
 
-   ``Time``
-      Time of commute (in minutes)
+      ``Distance``
+         Distance of commute (in miles)
 
-   .. rubric:: Details
-      :name: details
+      ``Time``
+         Time of commute (in minutes)
 
-   The data are distances (miles) and times (minutes) of daily commute
-   (one-way) for random samples of 500 commuters in each of four cities
-   (Boston, Houston, Minneapolis, Washington) in 2007. The random
-   samples were taken from the Metropolitan Public Use File of the 2007
-   American Housing Survey
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The data are distances (miles) and times (minutes) of daily
+      commute (one-way) for random samples of 500 commuters in each of
+      four cities (Boston, Houston, Minneapolis, Washington) in 2007.
+      The random samples were taken from the Metropolitan Public Use
+      File of the 2007 American Housing Survey
 
-   2007 American Housing Survey
-   https://www.census.gov/programs-surveys/ahs/data/2007/ahs-2007-public-use-file–puf-.html
+      .. rubric:: Source
+         :name: source
+
+      2007 American Housing Survey
+      https://www.census.gov/programs-surveys/ahs/data/2007/ahs-2007-public-use-file–puf-.html

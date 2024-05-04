@@ -1,41 +1,43 @@
 .. container::
 
-   ============= ===============
-   frostedflakes R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Frosted Flakes data
-      :name: frostedflakes
+      ============= ===============
+      frostedflakes R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Frosted Flakes data
+         :name: frosted-flakes-data
 
-   The ``frosted flakes`` data frame has 101 rows and 2 columns giving
-   the sugar concentration (in percent) for 25 g samples of a cereal as
-   measured by 2 methods – high performance liquid chromatography (a
-   slow accurate lab method) and a quick method using the infra-analyzer
-   400.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``frosted flakes`` data frame has 101 rows and 2 columns
+      giving the sugar concentration (in percent) for 25 g samples of a
+      cereal as measured by 2 methods – high performance liquid
+      chromatography (a slow accurate lab method) and a quick method
+      using the infra-analyzer 400.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      elastic1
+      ::
 
-   .. rubric:: Format
-      :name: format
+         elastic1
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Lab
-      careful laboratory analysis measurements using high performance
-      liquid chromatography
+      This data frame contains the following columns:
 
-   IA400
-      measurements based on the infra-analyzer 400
+      Lab
+         careful laboratory analysis measurements using high performance
+         liquid chromatography
 
-   .. rubric:: Source
-      :name: source
+      IA400
+         measurements based on the infra-analyzer 400
 
-   W. J. Braun
+      .. rubric:: Source
+         :name: source
+
+      W. J. Braun

@@ -1,78 +1,81 @@
 .. container::
 
-   ======== ===============
-   traffic1 R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: traffic1
-      :name: traffic1
+      ======== ===============
+      traffic1 R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: traffic1
+         :name: traffic1
 
-   Wooldridge Source: I collected these data from two sources, the 1992
-   Statistical Abstract of the United States (Tables 1009, 1012) and A
-   Digest of State Alcohol-Highway Safety Related Legislation, 1985 and
-   1990, published by the U.S. National Highway Traffic Safety
-   Administration. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: I collected these data from two sources, the
+      1992 Statistical Abstract of the United States (Tables 1009, 1012)
+      and A Digest of State Alcohol-Highway Safety Related Legislation,
+      1985 and 1990, published by the U.S. National Highway Traffic
+      Safety Administration. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('traffic1')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('traffic1')
 
-   A data.frame with 51 observations on 13 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **state:**
+      A data.frame with 51 observations on 13 variables:
 
-   -  **admn90:** =1 if admin. revoc., '90
+      -  **state:**
 
-   -  **admn85:** =1 if admin. revoc., '85
+      -  **admn90:** =1 if admin. revoc., '90
 
-   -  **open90:** =1 if open cont. law, '90
+      -  **admn85:** =1 if admin. revoc., '85
 
-   -  **open85:** =1 if open cont. law, '85
+      -  **open90:** =1 if open cont. law, '90
 
-   -  **dthrte90:** deaths per 100 mill. miles, '90
+      -  **open85:** =1 if open cont. law, '85
 
-   -  **dthrte85:** deaths per 100 mill. miles, '85
+      -  **dthrte90:** deaths per 100 mill. miles, '90
 
-   -  **speed90:** =1 if 65 mph, 1990
+      -  **dthrte85:** deaths per 100 mill. miles, '85
 
-   -  **speed85:** =0 always
+      -  **speed90:** =1 if 65 mph, 1990
 
-   -  **cdthrte:** dthrte90 - dthrte85
+      -  **speed85:** =0 always
 
-   -  **cadmn:** admn90 - admn85
+      -  **cdthrte:** dthrte90 - dthrte85
 
-   -  **copen:** open90 - open85
+      -  **cadmn:** admn90 - admn85
 
-   -  **cspeed:** speed90 - speed85
+      -  **copen:** open90 - open85
 
-   .. rubric:: Notes
-      :name: notes
+      -  **cspeed:** speed90 - speed85
 
-   In addition to adding recent years, this data set could really use
-   state-level tax rates on alcohol. Other important law changes include
-   defining driving under the influence as having a blood alcohol level
-   of .08 or more, which many states have adopted since the 1980s. The
-   trend really picked up in the 1990s and continued through the 2000s.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 467-468, 688?
+      In addition to adding recent years, this data set could really use
+      state-level tax rates on alcohol. Other important law changes
+      include defining driving under the influence as having a blood
+      alcohol level of .08 or more, which many states have adopted since
+      the 1980s. The trend really picked up in the 1990s and continued
+      through the 2000s.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 467-468, 688?
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(traffic1)
+      ::
+
+          str(traffic1)

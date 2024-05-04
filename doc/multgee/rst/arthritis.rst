@@ -1,64 +1,66 @@
 .. container::
 
-   ========= ===============
-   arthritis R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Rheumatoid Arthritis Clinical Trial
-      :name: arthritis
+      ========= ===============
+      arthritis R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Rheumatoid Arthritis Clinical Trial
+         :name: rheumatoid-arthritis-clinical-trial
 
-   Rheumatoid self-assessment scores for 302 patients, measured on a
-   five-level ordinal response scale at three follow-up times.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Rheumatoid self-assessment scores for 302 patients, measured on a
+      five-level ordinal response scale at three follow-up times.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      arthritis
+      ::
 
-   .. rubric:: Format
-      :name: format
+         arthritis
 
-   A data frame with 906 observations on the following 7 variables:
+      .. rubric:: Format
+         :name: format
 
-   id
-      Patient identifier variable.
+      A data frame with 906 observations on the following 7 variables:
 
-   y
-      Self-assessment score of rheumatoid arthritis measured on a
-      five-level ordinal response scale.
+      id
+         Patient identifier variable.
 
-   sex
-      Coded as (1) for female and (2) for male.
+      y
+         Self-assessment score of rheumatoid arthritis measured on a
+         five-level ordinal response scale.
 
-   age
-      Recorded at the baseline.
+      sex
+         Coded as (1) for female and (2) for male.
 
-   trt
-      Treatment group variable, coded as (1) for the placebo group and
-      (2) for the drug group.
+      age
+         Recorded at the baseline.
 
-   baseline
-      Self-assessment score of rheumatoid arthritis at the baseline.
+      trt
+         Treatment group variable, coded as (1) for the placebo group
+         and (2) for the drug group.
 
-   time
-      Follow-up time recorded in months.
+      baseline
+         Self-assessment score of rheumatoid arthritis at the baseline.
 
-   .. rubric:: Source
-      :name: source
+      time
+         Follow-up time recorded in months.
 
-   Lipsitz, S.R. and Kim, K. and Zhao, L. (1994) Analysis of repeated
-   categorical data using generalized estimating equations. *Statistics
-   in Medicine*, **13**, 1149–1163.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Lipsitz, S.R. and Kim, K. and Zhao, L. (1994) Analysis of repeated
+      categorical data using generalized estimating equations.
+      *Statistics in Medicine*, **13**, 1149–1163.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(arthritis)
-      str(arthritis)
+      ::
+
+         data(arthritis)
+         str(arthritis)

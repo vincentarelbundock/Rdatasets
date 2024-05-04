@@ -1,78 +1,80 @@
 .. container::
 
-   ======== ===============
-   benefits R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: benefits
-      :name: benefits
+      ======== ===============
+      benefits R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: benefits
+         :name: benefits
 
-   Wooldridge Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('benefits')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('benefits')
 
-   A data.frame with 1848 observations on 18 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **distid:** district identifier
+      A data.frame with 1848 observations on 18 variables:
 
-   -  **schid:** school identifier
+      -  **distid:** district identifier
 
-   -  **lunch:** percent eligible, free lunch
+      -  **schid:** school identifier
 
-   -  **enroll:** school enrollment
+      -  **lunch:** percent eligible, free lunch
 
-   -  **staff:** staff per 1000 students
+      -  **enroll:** school enrollment
 
-   -  **exppp:** expenditures per pupil
+      -  **staff:** staff per 1000 students
 
-   -  **avgsal:** average teacher salary, $
+      -  **exppp:** expenditures per pupil
 
-   -  **avgben:** average teacher non-salary benefits, $
+      -  **avgsal:** average teacher salary, $
 
-   -  **math4:** percent passing 4th grade math test
+      -  **avgben:** average teacher non-salary benefits, $
 
-   -  **story4:** percent passing 4th grade reading test
+      -  **math4:** percent passing 4th grade math test
 
-   -  **bs:** avgben/avgsal
+      -  **story4:** percent passing 4th grade reading test
 
-   -  **lavgsal:** log(avgsal)
+      -  **bs:** avgben/avgsal
 
-   -  **lenroll:** log(enroll)
+      -  **lavgsal:** log(avgsal)
 
-   -  **lstaff:** log(staff)
+      -  **lenroll:** log(enroll)
 
-   -  **bsbar:** within-district avg of bs
+      -  **lstaff:** log(staff)
 
-   -  **lunchbar:** within-district avg of lunch
+      -  **bsbar:** within-district avg of bs
 
-   -  **lenrollbar:** within-district avg of lenroll
+      -  **lunchbar:** within-district avg of lunch
 
-   -  **lstaffbar:** within-district avg of lstaff
+      -  **lenrollbar:** within-district avg of lenroll
 
-   .. rubric:: 
-      :name: section
+      -  **lstaffbar:** within-district avg of lstaff
 
-   NA
+      .. rubric:: 
+         :name: section
 
-   .. rubric:: Source
-      :name: source
+      NA
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(benefits)
+      ::
+
+          str(benefits)

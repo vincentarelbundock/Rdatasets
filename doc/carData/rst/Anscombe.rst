@@ -1,50 +1,52 @@
 .. container::
 
-   ======== ===============
-   Anscombe R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: U. S. State Public-School Expenditures
-      :name: Anscombe
+      ======== ===============
+      Anscombe R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: U. S. State Public-School Expenditures
+         :name: u.-s.-state-public-school-expenditures
 
-   The ``Anscombe`` data frame has 51 rows and 4 columns. The
-   observations are the U. S. states plus Washington, D. C. in 1970.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Anscombe`` data frame has 51 rows and 4 columns. The
+      observations are the U. S. states plus Washington, D. C. in 1970.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Anscombe
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Anscombe
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   education
-      Per-capita education expenditures, dollars.
+      This data frame contains the following columns:
 
-   income
-      Per-capita income, dollars.
+      education
+         Per-capita education expenditures, dollars.
 
-   young
-      Proportion under 18, per 1000.
+      income
+         Per-capita income, dollars.
 
-   urban
-      Proportion urban, per 1000.
+      young
+         Proportion under 18, per 1000.
 
-   .. rubric:: Source
-      :name: source
+      urban
+         Proportion urban, per 1000.
 
-   Anscombe, F. J. (1981) *Computing in Statistical Science Through
-   APL*. Springer-Verlag.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Anscombe, F. J. (1981) *Computing in Statistical Science Through
+      APL*. Springer-Verlag.
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
+
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.

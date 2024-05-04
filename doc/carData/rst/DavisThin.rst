@@ -1,64 +1,66 @@
 .. container::
 
-   ========= ===============
-   DavisThin R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Davis's Data on Drive for Thinness
-      :name: DavisThin
+      ========= ===============
+      DavisThin R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Davis's Data on Drive for Thinness
+         :name: daviss-data-on-drive-for-thinness
 
-   The ``DavisThin`` data frame has 191 rows and 7 columns. This is part
-   of a larger dataset for a study of eating disorders. The seven
-   variables in the data frame comprise a "drive for thinness" scale, to
-   be formed by summing the items.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``DavisThin`` data frame has 191 rows and 7 columns. This is
+      part of a larger dataset for a study of eating disorders. The
+      seven variables in the data frame comprise a "drive for thinness"
+      scale, to be formed by summing the items.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      DavisThin
+      ::
 
-   .. rubric:: Format
-      :name: format
+         DavisThin
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   DT1
-      a numeric vector
+      This data frame contains the following columns:
 
-   DT2
-      a numeric vector
+      DT1
+         a numeric vector
 
-   DT3
-      a numeric vector
+      DT2
+         a numeric vector
 
-   DT4
-      a numeric vector
+      DT3
+         a numeric vector
 
-   DT5
-      a numeric vector
+      DT4
+         a numeric vector
 
-   DT6
-      a numeric vector
+      DT5
+         a numeric vector
 
-   DT7
-      a numeric vector
+      DT6
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      DT7
+         a numeric vector
 
-   Davis, C., G. Claridge, and D. Cerullo (1997) Personality factors
-   predisposing to weight preoccupation: A continuum approach to the
-   association between eating disorders and personality disorders.
-   *Journal of Psychiatric Research* **31**, 467–480. [personal
-   communication from the authors.]
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Davis, C., G. Claridge, and D. Cerullo (1997) Personality factors
+      predisposing to weight preoccupation: A continuum approach to the
+      association between eating disorders and personality disorders.
+      *Journal of Psychiatric Research* **31**, 467–480. [personal
+      communication from the authors.]
 
-   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
-   Regression*, Third Edition, Sage.
+      .. rubric:: References
+         :name: references
+
+      Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+      Regression*, Third Edition, Sage.

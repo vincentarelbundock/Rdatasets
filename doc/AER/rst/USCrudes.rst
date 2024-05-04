@@ -1,64 +1,66 @@
 .. container::
 
-   ======== ===============
-   USCrudes R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: US Crudes Data
-      :name: USCrudes
+      ======== ===============
+      USCrudes R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: US Crudes Data
+         :name: us-crudes-data
 
-   Cross-section data originating from 99 US oil field postings.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-section data originating from 99 US oil field postings.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("USCrudes")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("USCrudes")
 
-   A data frame containing 99 observations on 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   price
-      Crude prices (USD/barrel).
+      A data frame containing 99 observations on 3 variables.
 
-   gravity
-      Gravity (degree API).
+      price
+         Crude prices (USD/barrel).
 
-   sulphur
-      Sulphur (in %).
+      gravity
+         Gravity (degree API).
 
-   .. rubric:: Source
-      :name: source
+      sulphur
+         Sulphur (in %).
 
-   The data is from Baltagi (2002).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The data is from Baltagi (2002).
 
-   Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
 
-   ``Baltagi2002``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Baltagi2002``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("USCrudes")
-      plot(price ~ gravity, data = USCrudes)
-      plot(price ~ sulphur, data = USCrudes)
-      fm <- lm(price ~ sulphur + gravity, data = USCrudes)
+      ::
 
-      ## 3D Visualization
-      library("scatterplot3d")
-      s3d <- scatterplot3d(USCrudes[, 3:1], pch = 16)
-      s3d$plane3d(fm, lty.box = "solid", col = 4)
+         data("USCrudes")
+         plot(price ~ gravity, data = USCrudes)
+         plot(price ~ sulphur, data = USCrudes)
+         fm <- lm(price ~ sulphur + gravity, data = USCrudes)
+
+         ## 3D Visualization
+         library("scatterplot3d")
+         s3d <- scatterplot3d(USCrudes[, 3:1], pch = 16)
+         s3d$plane3d(fm, lty.box = "solid", col = 4)

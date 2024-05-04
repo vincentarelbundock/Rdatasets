@@ -1,61 +1,63 @@
 .. container::
 
-   ==== ===============
-   Airq R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Air Quality for Californian Metropolitan Areas
-      :name: Airq
+      ==== ===============
+      Airq R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Air Quality for Californian Metropolitan Areas
+         :name: air-quality-for-californian-metropolitan-areas
 
-   a cross-section from 1972
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 30
+      a cross-section from 1972
 
-   *observation* : regional
+      *number of observations* : 30
 
-   *country* : United States
+      *observation* : regional
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Airq)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Airq)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   airq
-      indicator of air quality (the lower the better)
+      A dataframe containing :
 
-   vala
-      value added of companies (in thousands of dollars)
+      airq
+         indicator of air quality (the lower the better)
 
-   rain
-      amount of rain (in inches)
+      vala
+         value added of companies (in thousands of dollars)
 
-   coas
-      is it a coastal area ?
+      rain
+         amount of rain (in inches)
 
-   dens
-      population density (per square mile)
+      coas
+         is it a coastal area ?
 
-   medi
-      average income per head (in US dollars)
+      dens
+         population density (per square mile)
 
-   .. rubric:: References
-      :name: references
+      medi
+         average income per head (in US dollars)
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons, chapter 4.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons, chapter 4.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

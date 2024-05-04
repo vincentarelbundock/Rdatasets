@@ -12,16 +12,16 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>reported_heights</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='reported_heights'>Self-reported Heights</h2>
+<h2>Self-reported Heights</h2>
 
 <h3>Description</h3>
 
-<p>Students were asked to report their height (in inches) and sex in an online form. 
-This table includes the results from four courses.
+<p>Students were asked to report their height (in inches) and sex in an anonymous online form. 
+This table includes the results from combining data from four courses.
 </p>
 
 
@@ -44,7 +44,7 @@ This table includes the results from four courses.
 <li><p> time_stamp. Time and date of the entry.
 </p>
 </li>
-<li><p> sex. Sex of the student.
+<li><p> sex. Sex as reported by the students. 
 </p>
 </li>
 <li><p> height. Height as reported by student by filling in a text free box. 
@@ -58,6 +58,7 @@ This table includes the results from four courses.
 <pre><code class='language-R'>head(reported_heights)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

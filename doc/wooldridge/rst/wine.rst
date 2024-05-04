@@ -1,60 +1,62 @@
 .. container::
 
-   ==== ===============
-   wine R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: wine
-      :name: wine
+      ==== ===============
+      wine R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: wine
+         :name: wine
 
-   Wooldridge Source: These data were reported in a New York Times
-   article, December 28, 1994. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: These data were reported in a New York Times
+      article, December 28, 1994. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('wine')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('wine')
 
-   A data.frame with 21 observations on 5 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **country:**
+      A data.frame with 21 observations on 5 variables:
 
-   -  **alcohol:** liters alcohol from wine, per capita
+      -  **country:**
 
-   -  **deaths:** deaths per 100,000
+      -  **alcohol:** liters alcohol from wine, per capita
 
-   -  **heart:** heart disease dths per 100,000
+      -  **deaths:** deaths per 100,000
 
-   -  **liver:** liver disease dths per 100,000
+      -  **heart:** heart disease dths per 100,000
 
-   .. rubric:: Notes
-      :name: notes
+      -  **liver:** liver disease dths per 100,000
 
-   The dependent variables deaths, heart, and liver can be each
-   regressed against alcohol as nice simple regression examples. The
-   conventional wisdom is that wine is good for the heart but not for
-   the liver, something that is apparent in the regressions. Because the
-   number of observations is small, this can be a good data set to
-   illustrate calculation of the OLS estimates and statistics.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: not used
+      The dependent variables deaths, heart, and liver can be each
+      regressed against alcohol as nice simple regression examples. The
+      conventional wisdom is that wine is good for the heart but not for
+      the liver, something that is apparent in the regressions. Because
+      the number of observations is small, this can be a good data set
+      to illustrate calculation of the OLS estimates and statistics.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: not used
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(wine)
+      ::
+
+          str(wine)

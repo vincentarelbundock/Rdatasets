@@ -1,172 +1,174 @@
 .. container::
 
-   ============== ===============
-   leaf_id_flavia R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Leaf identification data (Flavia)
-      :name: leaf_id_flavia
+      ============== ===============
+      leaf_id_flavia R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Leaf identification data (Flavia)
+         :name: leaf-identification-data-flavia
 
-   Image analysis of leaves to predict species.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      Image analysis of leaves to predict species.
 
-   From the original manuscript: "The Flavia dataset contains 1907 leaf
-   images. There are 32 different species and each has 50-77 images.
-   Scanners and digital cameras are used to acquire the leaf images on a
-   plain background. The isolated leaf images contain blades only,
-   without a petiole. These leaf images are collected from the most
-   common plants in Yangtze, Delta, China. Those leaves were sampled on
-   the campus of the Nanjing University and the Sun Yat-Sen arboretum,
-   Nanking, China."
+      .. rubric:: Details
+         :name: details
 
-   The reference below has details information on the features used for
-   prediction.
+      From the original manuscript: "The Flavia dataset contains 1907
+      leaf images. There are 32 different species and each has 50-77
+      images. Scanners and digital cameras are used to acquire the leaf
+      images on a plain background. The isolated leaf images contain
+      blades only, without a petiole. These leaf images are collected
+      from the most common plants in Yangtze, Delta, China. Those leaves
+      were sampled on the campus of the Nanjing University and the Sun
+      Yat-Sen arboretum, Nanking, China."
 
-   Columns:
+      The reference below has details information on the features used
+      for prediction.
 
-   -  ``species``: factor (32 levels)
+      Columns:
 
-   -  ``apex``: factor (9 levels)
+      -  ``species``: factor (32 levels)
 
-   -  ``base``: factor (6 levels)
+      -  ``apex``: factor (9 levels)
 
-   -  ``shape``: factor (5 levels)
+      -  ``base``: factor (6 levels)
 
-   -  ``denate_edge``: factor (levels: 'no' and 'yes')
+      -  ``shape``: factor (5 levels)
 
-   -  ``lobed_edge``: factor (levels: 'no' and 'yes')
+      -  ``denate_edge``: factor (levels: 'no' and 'yes')
 
-   -  ``smooth_edge``: factor (levels: 'no' and 'yes')
+      -  ``lobed_edge``: factor (levels: 'no' and 'yes')
 
-   -  ``toothed_edge``: factor (levels: 'no' and 'yes')
+      -  ``smooth_edge``: factor (levels: 'no' and 'yes')
 
-   -  ``undulate_edge``: factor (levels: 'no' and 'yes')
+      -  ``toothed_edge``: factor (levels: 'no' and 'yes')
 
-   -  ``outlying_polar``: numeric
+      -  ``undulate_edge``: factor (levels: 'no' and 'yes')
 
-   -  ``skewed_polar``: numeric
+      -  ``outlying_polar``: numeric
 
-   -  ``clumpy_polar``: numeric
+      -  ``skewed_polar``: numeric
 
-   -  ``sparse_polar``: numeric
+      -  ``clumpy_polar``: numeric
 
-   -  ``striated_polar``: numeric
+      -  ``sparse_polar``: numeric
 
-   -  ``convex_polar``: numeric
+      -  ``striated_polar``: numeric
 
-   -  ``skinny_polar``: numeric
+      -  ``convex_polar``: numeric
 
-   -  ``stringy_polar``: numeric
+      -  ``skinny_polar``: numeric
 
-   -  ``monotonic_polar``: numeric
+      -  ``stringy_polar``: numeric
 
-   -  ``outlying_contour``: numeric
+      -  ``monotonic_polar``: numeric
 
-   -  ``skewed_contour``: numeric
+      -  ``outlying_contour``: numeric
 
-   -  ``clumpy_contour``: numeric
+      -  ``skewed_contour``: numeric
 
-   -  ``sparse_contour``: numeric
+      -  ``clumpy_contour``: numeric
 
-   -  ``striated_contour``: numeric
+      -  ``sparse_contour``: numeric
 
-   -  ``convex_contour``: numeric
+      -  ``striated_contour``: numeric
 
-   -  ``skinny_contour``: numeric
+      -  ``convex_contour``: numeric
 
-   -  ``stringy_contour``: numeric
+      -  ``skinny_contour``: numeric
 
-   -  ``monotonic_contour``: numeric
+      -  ``stringy_contour``: numeric
 
-   -  ``num_max_ponits``: numeric
+      -  ``monotonic_contour``: numeric
 
-   -  ``num_min_points``: numeric
+      -  ``num_max_ponits``: numeric
 
-   -  ``diameter``: numeric
+      -  ``num_min_points``: numeric
 
-   -  ``area``: numeric
+      -  ``diameter``: numeric
 
-   -  ``perimeter``: numeric
+      -  ``area``: numeric
 
-   -  ``physiological_length``: numeric
+      -  ``perimeter``: numeric
 
-   -  ``physiological_width``: numeric
+      -  ``physiological_length``: numeric
 
-   -  ``aspect_ratio``: numeric
+      -  ``physiological_width``: numeric
 
-   -  ``rectangularity``: numeric
+      -  ``aspect_ratio``: numeric
 
-   -  ``circularity``: numeric
+      -  ``rectangularity``: numeric
 
-   -  ``compactness``: numeric
+      -  ``circularity``: numeric
 
-   -  ``narrow_factor``: numeric
+      -  ``compactness``: numeric
 
-   -  ``perimeter_ratio_diameter``: numeric
+      -  ``narrow_factor``: numeric
 
-   -  ``perimeter_ratio_length``: numeric
+      -  ``perimeter_ratio_diameter``: numeric
 
-   -  ``perimeter_ratio_lw``: numeric
+      -  ``perimeter_ratio_length``: numeric
 
-   -  ``num_convex_points``: numeric
+      -  ``perimeter_ratio_lw``: numeric
 
-   -  ``perimeter_convexity``: numeric
+      -  ``num_convex_points``: numeric
 
-   -  ``area_convexity``: numeric
+      -  ``perimeter_convexity``: numeric
 
-   -  ``area_ratio_convexity``: numeric
+      -  ``area_convexity``: numeric
 
-   -  ``equivalent_diameter``: numeric
+      -  ``area_ratio_convexity``: numeric
 
-   -  ``eccentriciry``: numeric
+      -  ``equivalent_diameter``: numeric
 
-   -  ``contrast``: numeric
+      -  ``eccentriciry``: numeric
 
-   -  ``correlation_texture``: numeric
+      -  ``contrast``: numeric
 
-   -  ``inverse_difference_moments``: numeric
+      -  ``correlation_texture``: numeric
 
-   -  ``entropy``: numeric
+      -  ``inverse_difference_moments``: numeric
 
-   -  ``mean_red_val``: numeric
+      -  ``entropy``: numeric
 
-   -  ``mean_green_val``: numeric
+      -  ``mean_red_val``: numeric
 
-   -  ``mean_blue_val``: numeric
+      -  ``mean_green_val``: numeric
 
-   -  ``std_red_val``: numeric
+      -  ``mean_blue_val``: numeric
 
-   -  ``std_green_val``: numeric
+      -  ``std_red_val``: numeric
 
-   -  ``std_blue_val``: numeric
+      -  ``std_green_val``: numeric
 
-   -  ``correlation``: numeric
+      -  ``std_blue_val``: numeric
 
-   .. rubric:: Value
-      :name: value
+      -  ``correlation``: numeric
 
-   ================== ============
-   ``leaf_id_flavia`` a data frame
-   ================== ============
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      ================== ============
+      ``leaf_id_flavia`` a data frame
+      ================== ============
 
-   Lakshika, Jayani PG, and Thiyanga S. Talagala. "Computer-aided
-   interpretable features for leaf image classification." *arXiv
-   preprint* arXiv:2106.08077 (2021).
+      .. rubric:: Source
+         :name: source
 
-   https://github.com/SMART-Research/leaffeatures_paper
+      Lakshika, Jayani PG, and Thiyanga S. Talagala. "Computer-aided
+      interpretable features for leaf image classification." *arXiv
+      preprint* arXiv:2106.08077 (2021).
 
-   .. rubric:: Examples
-      :name: examples
+      https://github.com/SMART-Research/leaffeatures_paper
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(leaf_id_flavia)
-      str(leaf_id_flavia)
+      ::
+
+         data(leaf_id_flavia)
+         str(leaf_id_flavia)

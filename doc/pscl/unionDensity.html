@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>unionDensity</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='unionDensity'>cross national rates of trade union density</h2>
+<h2>cross national rates of trade union density</h2>
 
 <h3>Description</h3>
 
@@ -36,30 +36,27 @@ Wallerstein (1991), later reviewed by Western and Jackman (1994).
 <h3>Format</h3>
 
 
-<ul>
-<li><p><code>union</code>numeric, percentage of the total number of wage
+<dl>
+<dt><code>union</code></dt><dd><p>numeric, percentage of the total number of wage
 and salary earners plus the unemployed who are union members,
-measured between 1975 and 1980, with most of the data drawn from 1979
-</p>
-</li>
-<li><p><code>left</code>numeric, an index tapping the extent to which
+measured between 1975 and 1980, with most of the data drawn from 1979</p>
+</dd>
+<dt><code>left</code></dt><dd><p>numeric, an index tapping the extent to which
 parties of the left have controlled governments since 1919, due to
-Wilensky (1981).
-</p>
-</li>
-<li><p><code>size</code>numeric, log of labor force size, defined as the
-number of wage and salary earners, plus the unemployed
-</p>
-</li>
-<li><p><code>concen</code>numeric, percentage of employment, shipments, or
+Wilensky (1981).</p>
+</dd>
+<dt><code>size</code></dt><dd><p>numeric, log of labor force size, defined as the
+number of wage and salary earners, plus the unemployed</p>
+</dd>
+<dt><code>concen</code></dt><dd><p>numeric, percentage of employment, shipments, or
 production accounted for by the four largest enterprises in a
 particular industry, averaged over industries (with weights
 proportional to the size of the industry) and the resulting measure
 is normalized such that the United States scores a 1.0, and is due
 to Pryor (1973). Some of the scores on this variable are imputed
-using procedures described in Stephens and Wallerstein (1991, 945).
-</p>
-</li></ul>
+using procedures described in Stephens and Wallerstein (1991, 945).</p>
+</dd>
+</dl>
 
 
 
@@ -112,6 +109,7 @@ ols &lt;- lm(union ~ left + size + concen,
 summary(ols)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

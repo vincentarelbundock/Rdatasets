@@ -1,90 +1,94 @@
 .. container::
 
-   ====== ===============
-   OODTPT R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Data for "Optimal Obfuscation: Democracy and Trade Policy
-      Transparency"
-      :name: OODTPT
+      ====== ===============
+      OODTPT R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data for "Optimal Obfuscation: Democracy and Trade
+         Policy Transparency"
+         :name: data-for-optimal-obfuscation-democracy-and-trade-policy-transparency
 
-   A data set for replicating an argument about the relationship between
-   democracy and tariffs/non-tariff trade barriers.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data set for replicating an argument about the relationship
+      between democracy and tariffs/non-tariff trade barriers.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      OODTPT
+      ::
 
-   .. rubric:: Format
-      :name: format
+         OODTPT
 
-   A data frame with 75 observations on the following 16 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``country``
-      a character vector for the country
+      A data frame with 75 observations on the following 16 variables.
 
-   ``isocode``
-      a character vector for the three-character ISO code of the country
+      ``country``
+         a character vector for the country
 
-   ``tariff``
-      the mean statutory most favored nation tariff rate
+      ``isocode``
+         a character vector for the three-character ISO code of the
+         country
 
-   ``corecov``
-      the core non-tariff barrier coverage ratio
+      ``tariff``
+         the mean statutory most favored nation tariff rate
 
-   ``qualcov``
-      the quality non-tariff barrier coverate ratio
+      ``corecov``
+         the core non-tariff barrier coverage ratio
 
-   ``polity``
-      the familiar [-10,10] Polity measure of democracy
+      ``qualcov``
+         the quality non-tariff barrier coverate ratio
 
-   ``iec``
-      the index of electorcal competitiveness from the World Bank
+      ``polity``
+         the familiar Polity measure of democracy, from -10 to 10
 
-   ``lngdppc``
-      real GDP per capita in 1995 dollars
+      ``iec``
+         the index of electoral competitiveness from the World Bank
 
-   ``lngdp``
-      real GDP in 1995 dollars
+      ``lngdppc``
+         real GDP per capita in 1995 dollars
 
-   ``lnexpgdp``
-      export dependence (i.e. export/GDP ratio)
+      ``lngdp``
+         real GDP in 1995 dollars
 
-   ``reer``
-      real effective exchange rate
+      ``lnexpgdp``
+         export dependence (i.e. export/GDP ratio)
 
-   ``growth``
-      GDP per capita growth rate
+      ``reer``
+         real effective exchange rate
 
-   ``dimpgdp``
-      the change in the import/GDP ratio over the past three years
+      ``growth``
+         GDP per capita growth rate
 
-   ``lngovcons``
-      the log of country's government consumption spending as a
-      percentage of GDP
+      ``dimpgdp``
+         the change in the import/GDP ratio over the past three years
 
-   ``gatt``
-      a dummy variable for GATT membership
+      ``lngovcons``
+         the log of country's government consumption spending as a
+         percentage of GDP
 
-   ``avgtar``
-      the country's average most favored nation tariff rate
+      ``gatt``
+         a dummy variable for GATT membership
 
-   .. rubric:: Details
-      :name: details
+      ``avgtar``
+         the country's average most favored nation tariff rate
 
-   Data downloaded Joshua Alley's Github repository on simple
-   cross-sectional OLS models. These were originally two separate Stata
-   files that I merged into one. Please read the Kono (2006) article for
-   more information.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: References
-      :name: references
+      Data downloaded Joshua Alley's Github repository on simple
+      cross-sectional OLS models. These were originally two separate
+      Stata files that I merged into one. Please read the Kono (2006)
+      article for more information.
 
-   Kono, Daniel. 2006. "Optimal Obfuscation: Democracy and Trade Policy
-   Transparency" \*American Political Science Review\* 100(3): 369-384.
+      .. rubric:: References
+         :name: references
+
+      Kono, Daniel. 2006. "Optimal Obfuscation: Democracy and Trade
+      Policy Transparency" *American Political Science Review* 100(3):
+      369-384.

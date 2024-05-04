@@ -1,64 +1,66 @@
 .. container::
 
-   ====== ===============
-   Yogurt R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Choice of Brand for Yogurts
-      :name: Yogurt
+      ====== ===============
+      Yogurt R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Choice of Brand for Yogurts
+         :name: choice-of-brand-for-yogurts
 
-   a cross-section
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 2412
+      a cross-section
 
-   *observation* : individuals
+      *number of observations* : 2412
 
-   *country* : United States
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Yogurt)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Yogurt)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   id
-      individuals identifiers
+      A dataframe containing :
 
-   choice
-      one of ``yoplait``, ``dannon``, ``hiland``, ``weight`` (weight
-      watcher)
+      id
+         individuals identifiers
 
-   feat.z
-      is there a newspaper feature advertisement for brand z?
+      choice
+         one of ``yoplait``, ``dannon``, ``hiland``, ``weight`` (weight
+         watcher)
 
-   price.z
-      price of brand z
+      feat.z
+         is there a newspaper feature advertisement for brand z?
 
-   .. rubric:: Source
-      :name: source
+      price.z
+         price of brand z
 
-   Jain, Dipak C., Naufel J. Vilcassim and Pradeep K. Chintagunta (1994)
-   “A random–coefficients logit brand–choice model applied to panel
-   data”, *Journal of Business and Economics Statistics*, **12(3)**,
-   317.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Jain, Dipak C., Naufel J. Vilcassim and Pradeep K. Chintagunta
+      (1994) “A random–coefficients logit brand–choice model applied to
+      panel data”, *Journal of Business and Economics Statistics*,
+      **12(3)**, 317.
 
-   Journal of Business Economics and Statistics web site :
-   https://amstat.tandfonline.com/loi/ubes20.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Journal of Business Economics and Statistics web site :
+      https://amstat.tandfonline.com/loi/ubes20.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

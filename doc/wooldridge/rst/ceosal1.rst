@@ -1,78 +1,80 @@
 .. container::
 
-   ======= ===============
-   ceosal1 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: ceosal1
-      :name: ceosal1
+      ======= ===============
+      ceosal1 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: ceosal1
+         :name: ceosal1
 
-   Wooldridge Source: I took a random sample of data reported in the May
-   6, 1991 issue of Businessweek. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: I took a random sample of data reported in the
+      May 6, 1991 issue of Businessweek. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('ceosal1')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('ceosal1')
 
-   A data.frame with 209 observations on 12 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **salary:** 1990 salary, thousands $
+      A data.frame with 209 observations on 12 variables:
 
-   -  **pcsalary:** percent change salary, 89-90
+      -  **salary:** 1990 salary, thousands $
 
-   -  **sales:** 1990 firm sales, millions $
+      -  **pcsalary:** percent change salary, 89-90
 
-   -  **roe:** return on equity, 88-90 avg
+      -  **sales:** 1990 firm sales, millions $
 
-   -  **pcroe:** percent change roe, 88-90
+      -  **roe:** return on equity, 88-90 avg
 
-   -  **ros:** return on firm's stock, 88-90
+      -  **pcroe:** percent change roe, 88-90
 
-   -  **indus:** =1 if industrial firm
+      -  **ros:** return on firm's stock, 88-90
 
-   -  **finance:** =1 if financial firm
+      -  **indus:** =1 if industrial firm
 
-   -  **consprod:** =1 if consumer product firm
+      -  **finance:** =1 if financial firm
 
-   -  **utility:** =1 if transport. or utilties
+      -  **consprod:** =1 if consumer product firm
 
-   -  **lsalary:** natural log of salary
+      -  **utility:** =1 if transport. or utilties
 
-   -  **lsales:** natural log of sales
+      -  **lsalary:** natural log of salary
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lsales:** natural log of sales
 
-   This kind of data collection is relatively easy for students just
-   learning data analysis, and the findings can be interesting. A good
-   term project is to have students collect a similar data set using a
-   more recent issue of Businessweek, and to find additional variables
-   that might explain differences in CEO compensation. My impression is
-   that the public is still interested in CEO compensation. An
-   interesting question is whether the list of explanatory variables
-   included in this data set now explain less of the variation in
-   log(salary) than they used to.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 32, 35-36, 39, 159-160, 218-219, 260-261, 263,
-   685, 692-693
+      This kind of data collection is relatively easy for students just
+      learning data analysis, and the findings can be interesting. A
+      good term project is to have students collect a similar data set
+      using a more recent issue of Businessweek, and to find additional
+      variables that might explain differences in CEO compensation. My
+      impression is that the public is still interested in CEO
+      compensation. An interesting question is whether the list of
+      explanatory variables included in this data set now explain less
+      of the variation in log(salary) than they used to.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 32, 35-36, 39, 159-160, 218-219, 260-261, 263,
+      685, 692-693
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(ceosal1)
+      ::
+
+          str(ceosal1)

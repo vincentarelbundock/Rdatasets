@@ -1,44 +1,47 @@
 .. container::
 
-   ========= ===============
-   stanford2 R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: More Stanford Heart Transplant data
-      :name: stanford2
+      ========= ===============
+      stanford2 R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: More Stanford Heart Transplant data
+         :name: more-stanford-heart-transplant-data
 
-   This contains the Stanford Heart Transplant data in a different
-   format. The main data set is in ``heart``.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This contains the Stanford Heart Transplant data in a different
+      format. The main data set is in ``heart``.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      stanford2
+      ::
 
-   .. rubric:: Format
-      :name: format
+         stanford2
 
-   ======= ==========================
-   id:     ID number
-   time:   survival or censoring time
-   status: censoring status
-   age:    in years
-   t5:     T5 mismatch score
-   \       
-   ======= ==========================
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      ======= ==========================
+      id:     ID number
+      time:   survival or censoring time
+      status: censoring status
+      age:    in years
+      t5:     T5 mismatch score
+      \       
+      ======= ==========================
 
-   LA Escobar and WQ Meeker Jr (1992), Assessing influence in regression
-   analysis with censored data. *Biometrics* **48**, 507–528. Page 519.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: See Also
-      :name: see-also
+      LA Escobar and WQ Meeker Jr (1992), Assessing influence in
+      regression analysis with censored data. *Biometrics* **48**,
+      507–528. Page 519.
 
-   ``predict.survreg``, ``heart``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``predict.survreg``, ``heart``

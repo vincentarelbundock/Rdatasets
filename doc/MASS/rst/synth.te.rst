@@ -1,47 +1,50 @@
 .. container::
 
-   ======== ===============
-   synth.tr R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Synthetic Classification Problem
-      :name: synth.tr
+      ======== ===============
+      synth.tr R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Synthetic Classification Problem
+         :name: synthetic-classification-problem
 
-   The ``synth.tr`` data frame has 250 rows and 3 columns. The
-   ``synth.te`` data frame has 100 rows and 3 columns. It is intended
-   that ``synth.tr`` be used from training and ``synth.te`` for testing.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``synth.tr`` data frame has 250 rows and 3 columns. The
+      ``synth.te`` data frame has 100 rows and 3 columns. It is intended
+      that ``synth.tr`` be used from training and ``synth.te`` for
+      testing.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      synth.tr
-      synth.te
+      ::
 
-   .. rubric:: Format
-      :name: format
+         synth.tr
+         synth.te
 
-   These data frames contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``xs``
-      x-coordinate
+      These data frames contains the following columns:
 
-   ``ys``
-      y-coordinate
+      ``xs``
+         x-coordinate
 
-   ``yc``
-      class, coded as 0 or 1.
+      ``ys``
+         y-coordinate
 
-   .. rubric:: Source
-      :name: source
+      ``yc``
+         class, coded as 0 or 1.
 
-   Ripley, B.D. (1994) Neural networks and related methods for
-   classification (with discussion). *Journal of the Royal Statistical
-   Society series B* **56**, 409–456.
+      .. rubric:: Source
+         :name: source
 
-   Ripley, B.D. (1996) *Pattern Recognition and Neural Networks.*
-   Cambridge: Cambridge University Press.
+      Ripley, B.D. (1994) Neural networks and related methods for
+      classification (with discussion). *Journal of the Royal
+      Statistical Society series B* **56**, 409–456.
+
+      Ripley, B.D. (1996) *Pattern Recognition and Neural Networks.*
+      Cambridge: Cambridge University Press.

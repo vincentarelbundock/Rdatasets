@@ -1,111 +1,126 @@
 .. container::
 
-   ================ ===============
-   Iwasaki_Big_Five R Documentation
-   ================ ===============
+   .. container::
 
-   .. rubric:: Personality Traits of Cultural Groups
-      :name: Iwasaki_Big_Five
+      ================ ===============
+      Iwasaki_Big_Five R Documentation
+      ================ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Personality Traits of Cultural Groups
+         :name: personality-traits-of-cultural-groups
 
-   This dataset, from Grice & Iwasaki (2007), gives scores on the five
-   personality scales of the NEO PI-r (Costa & McCrae, 1992), called the
-   "Big Five" personality traits: Neuroticism, Extraversion,
-   Openness-to-Experience, Agreeableness, and Conscientiousness.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This dataset, from Grice & Iwasaki (2007), gives scores on the
+      five personality scales of the NEO PI-r (Costa & McCrae, 1992),
+      called the "Big Five" personality traits: Neuroticism,
+      Extraversion, Openness-to-Experience, Agreeableness, and
+      Conscientiousness.
 
-   .. code:: R
+      .. rubric:: Format
+         :name: format
 
-      data("Iwasaki_Big_Five")
+      A data frame with 203 observations on the following 7 variables.
 
-   .. rubric:: Format
-      :name: format
+      ``ID``
+         ID number
 
-   A data frame with 203 observations on the following 7 variables.
+      ``Group``
+         a factor with levels ``Eur`` ``Asian_Amer`` ``Asian_Intl``
 
-   ``ID``
-      ID number
+      ``N``
+         Neuroticism score
 
-   ``Group``
-      a factor with levels ``Eur`` ``Asian_Amer`` ``Asian_Intl``
+      ``E``
+         Extraversion score
 
-   ``N``
-      Neuroticism score
+      ``O``
+         Openness score
 
-   ``E``
-      Extraversion score
+      ``A``
+         Agreeableness score
 
-   ``O``
-      Openness score
+      ``C``
+         Conscientiousness score
 
-   ``A``
-      Agreeableness score
+      .. rubric:: Details
+         :name: details
 
-   ``C``
-      Conscientiousness score
+      The groups are:
 
-   .. rubric:: Details
-      :name: details
+      Eur
+         European Americans (Caucasians living in the United States
+         their entire lives)
 
-   The groups are:
+      Asian_Amer
+         Asian Americans (Asians living in the United States since
+         before the age of 6 years)
 
-   Eur
-      European Americans (Caucasians living in the United States their
-      entire lives)
+      Asian_Intl
+         Asian Internationals (Asians who moved to the United States
+         after their 6th birthday)
 
-   Asian_Amer
-      Asian Americans (Asians living in the United States since before
-      the age of 6 years)
+      The factor ``Group`` is set up to compare E vs. Asian and the two
+      Asian groups
 
-   Asian_Intl
-      Asian Internationals (Asians who moved to the United States after
-      their 6th birthday)
+      .. rubric:: Source
+         :name: source
 
-   The factor ``Group`` is set up to compare E vs. Asian and the two
-   Asian groups
+      Grice, J., & Iwasaki, M. (2007). A truly multivariate approach to
+      MANOVA. *Applied Multivariate Research*, **12**, 199-226.
+      https://doi.org/10.22329/amr.v12i3.660.
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: References
+         :name: references
 
-   Grice, J., & Iwasaki, M. (2007). A truly multivariate approach to
-   MANOVA. *Applied Multivariate Research*, **12**, 199-226.
-   https://doi.org/10.22329/amr.v12i3.660.
+      Costa Jr, P. T., & McCrae, R. R. (1992). *Revised NEO Personality
+      Inventory (NEO PI-R) and NEO Five-Factor Inventory (NEOFFI)
+      professional manual*. Psychological Assessment Resources.
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: Examples
+         :name: examples
 
-   Costa Jr, P. T., & McCrae, R. R. (1992). *Revised NEO Personality
-   Inventory (NEO PI-R) and NEO Five-Factor Inventory (NEOFFI)
-   professional manual*. Psychological Assessment Resources.
+      ::
 
-   .. rubric:: Examples
-      :name: examples
+         data(Iwasaki_Big_Five)
+         # use Helmert contrasts for groups
+         contrasts(Iwasaki_Big_Five$Group) <- 
+            matrix(c(2, -1, -1,
+                     0, -1,  1), ncol=2)
 
-   .. code:: R
+         str(Iwasaki_Big_Five)
 
-      data(Iwasaki_Big_Five)
-      str(Iwasaki_Big_Five)
+         Big5.mod <- lm(cbind(N, E, O, A, C) ~ Group, data=Iwasaki_Big_Five)
+         coef(Big5.mod)
 
-      mod <- lm(cbind(N, E, O, A, C) ~ Group, data=Iwasaki_Big_Five)
+         car::Anova(Big5.mod)
 
-      Anova(mod)
+         # test contrasts
+         car::linearHypothesis(Big5.mod, "Group1", title = "Eur vs Asian")
+         car::linearHypothesis(Big5.mod, "Group2", title = "Asian: Amer vs Inter")
 
-      # heplots
-      labs <- c("Neuroticism", "Extraversion", "Openness", "Agreeableness", "Consientiousness" )
+         # heplots
+         labs <- c("Neuroticism", "Extraversion", "Openness", "Agreeableness", "Conscientiousness" )
 
-      heplot(mod,
-             fill = TRUE, fill.alpha = 0.2, 
-             cex.lab = 1.5,
-             xlab = labs[1], ylab = labs[2])
+         heplot(Big5.mod,
+                fill = TRUE, fill.alpha = 0.2, 
+                cex.lab = 1.5,
+                xlab = labs[1], ylab = labs[2])
 
-      heplot(mod, variables = c(2,5),
-             fill = TRUE, fill.alpha = 0.2,
-             cex.lab = 1.5,
-             xlab = labs[2], ylab = labs[5])
+         heplot(Big5.mod, variables = c(2,5),
+                fill = TRUE, fill.alpha = 0.2,
+                cex.lab = 1.5,
+                xlab = labs[2], ylab = labs[5])
 
-      pairs(mod, 
-            fill = TRUE, fill.alpha = 0.2, var.labels = labs)
+         pairs(Big5.mod, 
+               fill = TRUE, fill.alpha = 0.2, var.labels = labs)
+
+
+         # canonical discriminant analysis
+         if (require(candisc)) { 
+         library(candisc)
+         Big5.can <- candisc(Big5.mod)
+         Big5.can
+         heplot(Big5.can, fill = TRUE, fill.alpha = 0.1)
+         }

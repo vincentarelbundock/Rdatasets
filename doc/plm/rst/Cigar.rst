@@ -1,86 +1,88 @@
 .. container::
 
-   ===== ===============
-   Cigar R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Cigarette Consumption
-      :name: Cigar
+      ===== ===============
+      Cigar R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cigarette Consumption
+         :name: cigarette-consumption
 
-   a panel of 46 observations from 1963 to 1992
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      a panel of 46 observations from 1963 to 1992
 
-   A data frame containing :
+      .. rubric:: Format
+         :name: format
 
-   state
-      state abbreviation
+      A data frame containing :
 
-   year
-      the year
+      state
+         state abbreviation
 
-   price
-      price per pack of cigarettes
+      year
+         the year
 
-   pop
-      population
+      price
+         price per pack of cigarettes
 
-   pop16
-      population above the age of 16
+      pop
+         population
 
-   cpi
-      consumer price index (1983=100)
+      pop16
+         population above the age of 16
 
-   ndi
-      per capita disposable income
+      cpi
+         consumer price index (1983=100)
 
-   sales
-      cigarette sales in packs per capita
+      ndi
+         per capita disposable income
 
-   pimin
-      minimum price in adjoining states per pack of cigarettes
+      sales
+         cigarette sales in packs per capita
 
-   .. rubric:: Details
-      :name: details
+      pimin
+         minimum price in adjoining states per pack of cigarettes
 
-   *total number of observations* : 1380
+      .. rubric:: Details
+         :name: details
 
-   *observation* : regional
+      *total number of observations* : 1380
 
-   *country* : United States
+      *observation* : regional
 
-   .. rubric:: Source
-      :name: source
+      *country* : United States
 
-   Online complements to Baltagi (2001):
+      .. rubric:: Source
+         :name: source
 
-   https://www.wiley.com/legacy/wileychi/baltagi/
+      Online complements to Baltagi (2001):
 
-   Online complements to Baltagi (2013):
+      https://www.wiley.com/legacy/wileychi/baltagi/
 
-   https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
+      Online complements to Baltagi (2013):
 
-   .. rubric:: References
-      :name: references
+      https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
 
-   Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
-   John Wiley and Sons ltd.
+      .. rubric:: References
+         :name: references
 
-   Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
-   John Wiley and Sons ltd.
+      Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd
+      edition. John Wiley and Sons ltd.
 
-   Baltagi B, Levin D (1992). “Cigarette taxation: Raising revenues and
-   reducing consumption.” *Structural Change and Economic Dynamics*,
-   **3**\ (2), 321-335.
-   https://EconPapers.repec.org/RePEc:eee:streco:v:3:y:1992:i:2:p:321-335.
+      Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th
+      edition. John Wiley and Sons ltd.
 
-   Baltagi BH, Griffin JM, Xiong W (2000). “To Pool or Not to Pool:
-   Homogeneous Versus Heterogeneous Estimators Applied to Cigarette
-   Demand.” *The Review of Economics and Statistics*, **82**\ (1),
-   117-126.
-   `doi:10.1162/003465300558551 <https://doi.org/10.1162/003465300558551>`__,
-   https://doi.org/10.1162/003465300558551.
+      Baltagi B, Levin D (1992). “Cigarette taxation: Raising revenues
+      and reducing consumption.” *Structural Change and Economic
+      Dynamics*, **3**\ (2), 321-335.
+      https://EconPapers.repec.org/RePEc:eee:streco:v:3:y:1992:i:2:p:321-335.
+
+      Baltagi BH, Griffin JM, Xiong W (2000). “To Pool or Not to Pool:
+      Homogeneous Versus Heterogeneous Estimators Applied to Cigarette
+      Demand.” *The Review of Economics and Statistics*, **82**\ (1),
+      117-126.
+      `doi:10.1162/003465300558551 <https://doi.org/10.1162/003465300558551>`__,
+      https://doi.org/10.1162/003465300558551.

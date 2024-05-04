@@ -1,74 +1,88 @@
 .. container::
 
-   ======= ===============
-   myeloid R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Acute myeloid leukemia
-      :name: myeloid
+      ======= ===============
+      myeloid R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Acute myeloid leukemia
+         :name: acute-myeloid-leukemia
 
-   This simulated data set is based on a trial in acute myeloid
-   leukemia.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This simulated data set is based on a trial in acute myeloid
+      leukemia.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      myeloid
-      data(cancer, package="survival")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         myeloid
+         data(cancer, package="survival")
 
-   A data frame with 646 observations on the following 9 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``id``
-      subject identifier, 1-646
+      A data frame with 646 observations on the following 9 variables.
 
-   ``trt``
-      treatment arm A or B
+      ``id``
+         subject identifier, 1-646
 
-   ``sex``
-      f=female, m=male
+      ``trt``
+         treatment arm A or B
 
-   ``futime``
-      time to death or last follow-up
+      ``sex``
+         f=female, m=male
 
-   ``death``
-      1 if ``futime`` is a death, 0 for censoring
+      ``flt3``
+         mutations of the FLT3 gene, a factor with levels of A, B, C
 
-   ``txtime``
-      time to hematropetic stem cell transplant
+      ``futime``
+         time to death or last follow-up
 
-   ``crtime``
-      time to complete response
+      ``death``
+         1 if ``futime`` is a death, 0 for censoring
 
-   ``rltime``
-      time to relapse of disease
+      ``txtime``
+         time to hematropetic stem cell transplant
 
-   .. rubric:: Details
-      :name: details
+      ``crtime``
+         time to complete response
 
-   This data set is used to illustrate multi-state survival curves. The
-   correlation between within-subject event times strongly resembles
-   that from an actual trial, but none of the actual data values are
-   from that source.
+      ``rltime``
+         time to relapse of disease
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: Details
+         :name: details
 
-   Le-Rademacher JG, Peterson RA, Therneau TM, Sanford BL, Stone RM,
-   Mandrekar SJ. Application of multi-state models in cancer clinical
-   trials. Clin Trials. 2018 Oct; 15 (5):489-498
+      This data set is used to illustrate multi-state survival curves.
+      It is based on the actual study in the reference below. A subset
+      of subjects was de-identifed, reordered, and then all of the time
+      values randomly perturbed.
 
-   .. rubric:: Examples
-      :name: examples
+      Mutations in the FLT3 domain occur in about 1/3 of AML patients,
+      the additional agent in treatment arm B was presumed to target
+      this anomaly. All subjects had a FLT mutation, either internal
+      tandem duplications (ITD) (divided into low vs high) +- mutations
+      in the TKD domain, or TKD mutations only. This was a
+      stratification factor for treatment assignment in the study. The
+      levels of A, B, C correspond to increasing severity of the
+      mutation burden.
 
-   .. code:: R
+      .. rubric:: References
+         :name: references
 
-      coxph(Surv(futime, death) ~ trt, data=myeloid)
-      # See the mstate vignette for a more complete analysis
+      Le-Rademacher JG, Peterson RA, Therneau TM, Sanford BL, Stone RM,
+      Mandrekar SJ. Application of multi-state models in cancer clinical
+      trials. Clin Trials. 2018 Oct; 15 (5):489-498
+
+      .. rubric:: Examples
+         :name: examples
+
+      ::
+
+         coxph(Surv(futime, death) ~ trt + flt3, data=myeloid)
+         # See the mstate vignette for a more complete analysis

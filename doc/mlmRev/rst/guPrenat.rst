@@ -1,99 +1,101 @@
 .. container::
 
-   ======== ===============
-   guPrenat R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Prenatal care in Guatemala
-      :name: guPrenat
+      ======== ===============
+      guPrenat R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Prenatal care in Guatemala
+         :name: prenatal-care-in-guatemala
 
-   Data on the prenatal care received by mothers in Guatemala.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on the prenatal care received by mothers in Guatemala.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(guPrenat)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(guPrenat)
 
-   A data frame with 2449 observations on the following 15 variables.
+      .. rubric:: Format
+         :name: format
 
-   kid
-      a factor identifying the birth
+      A data frame with 2449 observations on the following 15 variables.
 
-   mom
-      a factor identifying the mother or family
+      kid
+         a factor identifying the birth
 
-   cluster
-      a factor identifying the community
+      mom
+         a factor identifying the mother or family
 
-   prenat
-      a factor indicating if traditional or modern prenatal care was
-      provided for the birth.
+      cluster
+         a factor identifying the community
 
-   childAge
-      an ordered factor of the child's age at the time of the survey.
+      prenat
+         a factor indicating if traditional or modern prenatal care was
+         provided for the birth.
 
-   motherAge
-      a factor indicating if the mother was older or younger. The
-      cut-off age is 25 years.
+      childAge
+         an ordered factor of the child's age at the time of the survey.
 
-   birthOrd
-      an ordered factor for the birth's order within the family.
+      motherAge
+         a factor indicating if the mother was older or younger. The
+         cut-off age is 25 years.
 
-   indig
-      a factor indicating if the mother is Ladino, or indigenous not
-      speaking Spanish, or indigenous speaking Spanish.
+      birthOrd
+         an ordered factor for the birth's order within the family.
 
-   momEd
-      a factor describing the mother's level of eduation.
+      indig
+         a factor indicating if the mother is Ladino, or indigenous not
+         speaking Spanish, or indigenous speaking Spanish.
 
-   husEd
-      a factor describing the husband's level of education.
+      momEd
+         a factor describing the mother's level of eduation.
 
-   husEmpl
-      a factor describing the husband's employment status.
+      husEd
+         a factor describing the husband's level of education.
 
-   toilet
-      a factor indicating if there is a modern toilet in the house.
+      husEmpl
+         a factor describing the husband's employment status.
 
-   TV
-      a factor indicating if there is a TV in the house and, if so, the
-      frequency with which it is used.
+      toilet
+         a factor indicating if there is a modern toilet in the house.
 
-   pcInd81
-      the percentage of indigenous population in the community at the
-      1981 census.
+      TV
+         a factor indicating if there is a TV in the house and, if so,
+         the frequency with which it is used.
 
-   ssDist
-      distance from the community to the nearest clinic.
+      pcInd81
+         the percentage of indigenous population in the community at the
+         1981 census.
 
-   .. rubric:: Source
-      :name: source
+      ssDist
+         distance from the community to the nearest clinic.
 
-   These data are available at
-   http://data.princeton.edu/multilevel/guPrenat.dat. Multiple indicator
-   columns in the original data table have been collapsed to factors for
-   this data frame.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      These data are available at
+      http://data.princeton.edu/multilevel/guPrenat.dat. Multiple
+      indicator columns in the original data table have been collapsed
+      to factors for this data frame.
 
-   Rodriguez, Germán and Goldman, Noreen (1995), "Improved estimation
-   procedures for multilevel models with binary response: a case-study",
-   *Journal of the Royal Statistical Society, Series A*, **164**,
-   339-355.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Rodriguez, Germán and Goldman, Noreen (1995), "Improved estimation
+      procedures for multilevel models with binary response: a
+      case-study", *Journal of the Royal Statistical Society, Series A*,
+      **164**, 339-355.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(guPrenat)
-      summary(guPrenat)
+      ::
+
+         data(guPrenat)
+         summary(guPrenat)

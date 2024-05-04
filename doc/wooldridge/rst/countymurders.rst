@@ -1,86 +1,88 @@
 .. container::
 
-   ============= ===============
-   countymurders R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: countymurders
-      :name: countymurders
+      ============= ===============
+      countymurders R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: countymurders
+         :name: countymurders
 
-   Wooldridge Source: Compiled by J. Monroe Gamble for a Summer Research
-   Opportunities Program (SROP) at Michigan State University, Summer
-   2014. Monroe obtained data from the U.S. Census Bureau, the FBI
-   Uniform Crime Reports, and the Death Penalty Information Center. Data
-   loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Compiled by J. Monroe Gamble for a Summer
+      Research Opportunities Program (SROP) at Michigan State
+      University, Summer 2014. Monroe obtained data from the U.S. Census
+      Bureau, the FBI Uniform Crime Reports, and the Death Penalty
+      Information Center. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('countymurders')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('countymurders')
 
-   A data.frame with 37349 observations on 20 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **arrests:** # of murder arrests
+      A data.frame with 37349 observations on 20 variables:
 
-   -  **countyid:** county identifier: 1000*statefips + countyfips
+      -  **arrests:** # of murder arrests
 
-   -  **density:** population density; per square mile
+      -  **countyid:** county identifier: 1000*statefips + countyfips
 
-   -  **popul:** county population
+      -  **density:** population density; per square mile
 
-   -  **perc1019:** percent pop. age 10-19
+      -  **popul:** county population
 
-   -  **perc2029:** percent pop. age 20-29
+      -  **perc1019:** percent pop. age 10-19
 
-   -  **percblack:** percent population black
+      -  **perc2029:** percent pop. age 20-29
 
-   -  **percmale:** percent population male
+      -  **percblack:** percent population black
 
-   -  **rpcincmaint:** real per capita income maintenance
+      -  **percmale:** percent population male
 
-   -  **rpcpersinc:** real per capita personal income
+      -  **rpcincmaint:** real per capita income maintenance
 
-   -  **rpcunemins:** real per capita unem insurance payments
+      -  **rpcpersinc:** real per capita personal income
 
-   -  **year:** 1980-1996
+      -  **rpcunemins:** real per capita unem insurance payments
 
-   -  **murders:** # of murders
+      -  **year:** 1980-1996
 
-   -  **murdrate:** murders per 10,000 people
+      -  **murders:** # of murders
 
-   -  **arrestrate:** murder arrests per 10,000
+      -  **murdrate:** murders per 10,000 people
 
-   -  **statefips:** state FIPS code
+      -  **arrestrate:** murder arrests per 10,000
 
-   -  **countyfips:** county FIPS code
+      -  **statefips:** state FIPS code
 
-   -  **execs:** # of executions
+      -  **countyfips:** county FIPS code
 
-   -  **lpopul:** log(popul)
+      -  **execs:** # of executions
 
-   -  **execrate:** executions per 10,000
+      -  **lpopul:** log(popul)
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **execrate:** executions per 10,000
 
-   pages 16, 58, 431, 457
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 16, 58, 431, 457
 
-   http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(countymurders)
+      ::
+
+          str(countymurders)

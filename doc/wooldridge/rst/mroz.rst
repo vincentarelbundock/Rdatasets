@@ -1,91 +1,93 @@
 .. container::
 
-   ==== ===============
-   mroz R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: mroz
-      :name: mroz
+      ==== ===============
+      mroz R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: mroz
+         :name: mroz
 
-   Wooldridge Source: T.A. Mroz (1987), “The Sensitivity of an Empirical
-   Model of Married Women’s Hours of Work to Economic and Statistical
-   Assumptions,” Econometrica 55, 765-799. Professor Ernst R. Berndt, of
-   MIT, kindly provided the data, which he obtained from Professor Mroz.
-   Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: T.A. Mroz (1987), “The Sensitivity of an
+      Empirical Model of Married Women’s Hours of Work to Economic and
+      Statistical Assumptions,” Econometrica 55, 765-799. Professor
+      Ernst R. Berndt, of MIT, kindly provided the data, which he
+      obtained from Professor Mroz. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('mroz')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('mroz')
 
-   A data.frame with 753 observations on 22 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **inlf:** =1 if in lab frce, 1975
+      A data.frame with 753 observations on 22 variables:
 
-   -  **hours:** hours worked, 1975
+      -  **inlf:** =1 if in lab frce, 1975
 
-   -  **kidslt6:** # kids < 6 years
+      -  **hours:** hours worked, 1975
 
-   -  **kidsge6:** # kids 6-18
+      -  **kidslt6:** # kids < 6 years
 
-   -  **age:** woman's age in yrs
+      -  **kidsge6:** # kids 6-18
 
-   -  **educ:** years of schooling
+      -  **age:** woman's age in yrs
 
-   -  **wage:** est. wage from earn, hrs
+      -  **educ:** years of schooling
 
-   -  **repwage:** rep. wage at interview in 1976
+      -  **wage:** est. wage from earn, hrs
 
-   -  **hushrs:** hours worked by husband, 1975
+      -  **repwage:** rep. wage at interview in 1976
 
-   -  **husage:** husband's age
+      -  **hushrs:** hours worked by husband, 1975
 
-   -  **huseduc:** husband's years of schooling
+      -  **husage:** husband's age
 
-   -  **huswage:** husband's hourly wage, 1975
+      -  **huseduc:** husband's years of schooling
 
-   -  **faminc:** family income, 1975
+      -  **huswage:** husband's hourly wage, 1975
 
-   -  **mtr:** fed. marg. tax rte facing woman
+      -  **faminc:** family income, 1975
 
-   -  **motheduc:** mother's years of schooling
+      -  **mtr:** fed. marg. tax rte facing woman
 
-   -  **fatheduc:** father's years of schooling
+      -  **motheduc:** mother's years of schooling
 
-   -  **unem:** unem. rate in county of resid.
+      -  **fatheduc:** father's years of schooling
 
-   -  **city:** =1 if live in SMSA
+      -  **unem:** unem. rate in county of resid.
 
-   -  **exper:** actual labor mkt exper
+      -  **city:** =1 if live in SMSA
 
-   -  **nwifeinc:** (faminc - wage*hours)/1000
+      -  **exper:** actual labor mkt exper
 
-   -  **lwage:** log(wage)
+      -  **nwifeinc:** (faminc - wage*hours)/1000
 
-   -  **expersq:** exper^2
+      -  **lwage:** log(wage)
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **expersq:** exper^2
 
-   pages 249-251, 260, 294, 519-520, 530, 535, 535-536, 565-566,
-   578-579, 593- 595, 601-603, 619-620, 625
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 249-251, 260, 294, 519-520, 530, 535, 535-536, 565-566,
+      578-579, 593- 595, 601-603, 619-620, 625
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(mroz)
+      ::
+
+          str(mroz)

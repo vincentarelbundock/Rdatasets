@@ -1,32 +1,34 @@
 .. container::
 
-   ======== ===============
-   marathon R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Boston marathon winning times since 1897
-      :name: marathon
+      ======== ===============
+      marathon R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Boston marathon winning times since 1897
+         :name: boston-marathon-winning-times-since-1897
 
-   Winning times (in minutes) for the Boston Marathon Men's Open
-   Division. 1897-2016.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Winning times (in minutes) for the Boston Marathon Men's Open
+      Division. 1897-2016.
 
-   Annual time series of class ``ts``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Annual time series of class ``ts``.
 
-   Boston Athletic Association.
-   https://www.baa.org/races/boston-marathon/results/champions
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Boston Athletic Association.
+      https://www.baa.org/races/boston-marathon/results/champions
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      autoplot(marathon)
+      ::
+
+         autoplot(marathon)

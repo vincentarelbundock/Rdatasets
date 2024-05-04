@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>LifeCycleSavings</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='LifeCycleSavings'>Intercountry Life-Cycle Savings Data</h2>
+<h2>Intercountry Life-Cycle Savings Data</h2>
 
 <h3>Description</h3>
 
@@ -37,24 +37,24 @@ function processMathHTML() {
 <table>
 <tr>
  <td style="text-align: right;">
-    [,1]  </td><td style="text-align: left;"> sr    </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> aggregate personal savings </td>
+    [,1]  </td><td style="text-align: left;"> <code>sr</code>    </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> aggregate personal savings </td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,2]  </td><td style="text-align: left;"> pop15 </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> % of population under 15 </td>
+    [,2]  </td><td style="text-align: left;"> <code>pop15</code> </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> % of population under 15 </td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,3]  </td><td style="text-align: left;"> pop75 </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> % of population over 75 </td>
+    [,3]  </td><td style="text-align: left;"> <code>pop75</code> </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> % of population over 75 </td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,4]  </td><td style="text-align: left;"> dpi   </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> real per-capita disposable
+    [,4]  </td><td style="text-align: left;"> <code>dpi</code>   </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> real per-capita disposable
     income </td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,5]  </td><td style="text-align: left;"> ddpi  </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> % growth rate of dpi
+    [,5]  </td><td style="text-align: left;"> <code>ddpi</code>  </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> % growth rate of dpi
   </td>
 </tr>
 
@@ -102,6 +102,7 @@ fm1 &lt;- lm(sr ~ pop15 + pop75 + dpi + ddpi, data = LifeCycleSavings)
 summary(fm1)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

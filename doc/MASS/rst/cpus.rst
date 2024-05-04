@@ -1,66 +1,68 @@
 .. container::
 
-   ==== ===============
-   cpus R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Performance of Computer CPUs
-      :name: cpus
+      ==== ===============
+      cpus R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Performance of Computer CPUs
+         :name: performance-of-computer-cpus
 
-   A relative performance measure and characteristics of 209 CPUs.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A relative performance measure and characteristics of 209 CPUs.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      cpus
+      ::
 
-   .. rubric:: Format
-      :name: format
+         cpus
 
-   The components are:
+      .. rubric:: Format
+         :name: format
 
-   ``name``
-      manufacturer and model.
+      The components are:
 
-   ``syct``
-      cycle time in nanoseconds.
+      ``name``
+         manufacturer and model.
 
-   ``mmin``
-      minimum main memory in kilobytes.
+      ``syct``
+         cycle time in nanoseconds.
 
-   ``mmax``
-      maximum main memory in kilobytes.
+      ``mmin``
+         minimum main memory in kilobytes.
 
-   ``cach``
-      cache size in kilobytes.
+      ``mmax``
+         maximum main memory in kilobytes.
 
-   ``chmin``
-      minimum number of channels.
+      ``cach``
+         cache size in kilobytes.
 
-   ``chmax``
-      maximum number of channels.
+      ``chmin``
+         minimum number of channels.
 
-   ``perf``
-      published performance on a benchmark mix relative to an IBM
-      370/158-3.
+      ``chmax``
+         maximum number of channels.
 
-   ``estperf``
-      estimated performance (by Ein-Dor & Feldmesser).
+      ``perf``
+         published performance on a benchmark mix relative to an IBM
+         370/158-3.
 
-   .. rubric:: Source
-      :name: source
+      ``estperf``
+         estimated performance (by Ein-Dor & Feldmesser).
 
-   P. Ein-Dor and J. Feldmesser (1987) Attributes of the performance of
-   central processing units: a relative performance prediction model.
-   *Comm. ACM.* **30**, 308–317.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      P. Ein-Dor and J. Feldmesser (1987) Attributes of the performance
+      of central processing units: a relative performance prediction
+      model. *Comm. ACM.* **30**, 308–317.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

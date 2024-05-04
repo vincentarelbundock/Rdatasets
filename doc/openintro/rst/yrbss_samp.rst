@@ -1,79 +1,83 @@
 .. container::
 
-   ========== ===============
-   yrbss_samp R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Sample of Youth Risk Behavior Surveillance System (YRBSS)
-      :name: yrbss_samp
+      ========== ===============
+      yrbss_samp R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sample of Youth Risk Behavior Surveillance System
+         (YRBSS)
+         :name: sample-of-youth-risk-behavior-surveillance-system-yrbss
 
-   A sample of the ``yrbss`` data set.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A sample of the ``yrbss`` data set.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      yrbss_samp
+      ::
 
-   .. rubric:: Format
-      :name: format
+         yrbss_samp
 
-   A data frame with 100 observations on the following 13 variables.
+      .. rubric:: Format
+         :name: format
 
-   age
-      Age, in years.
+      A data frame with 100 observations on the following 13 variables.
 
-   gender
-      Gender.
+      age
+         Age, in years.
 
-   grade
-      School grade.
+      gender
+         Gender.
 
-   hispanic
-      Hispanic or not.
+      grade
+         School grade.
 
-   race
-      Race / ethnicity.
+      hispanic
+         Hispanic or not.
 
-   height
-      Height, in meters (3.28 feet per meter).
+      race
+         Race / ethnicity.
 
-   weight
-      Weight, in kilograms (2.2 pounds per kilogram).
+      height
+         Height, in meters (3.28 feet per meter).
 
-   helmet_12m
-      How often did you wear a helmet when biking in the last 12 months?
+      weight
+         Weight, in kilograms (2.2 pounds per kilogram).
 
-   text_while_driving_30d
-      How many days did you text while driving in the last 30 days?
+      helmet_12m
+         How often did you wear a helmet when biking in the last 12
+         months?
 
-   physically_active_7d
-      How many days were you physically active for 60+ minutes in the
-      last 7 days?
+      text_while_driving_30d
+         How many days did you text while driving in the last 30 days?
 
-   hours_tv_per_school_day
-      How many hours of TV do you typically watch on a school night?
+      physically_active_7d
+         How many days were you physically active for 60+ minutes in the
+         last 7 days?
 
-   strength_training_7d
-      How many days did you do strength training (e.g. lift weights) in
-      the last 7 days?
+      hours_tv_per_school_day
+         How many hours of TV do you typically watch on a school night?
 
-   school_night_hours_sleep
-      How many hours of sleep do you typically get on a school night?
+      strength_training_7d
+         How many days did you do strength training (e.g. lift weights)
+         in the last 7 days?
 
-   .. rubric:: Source
-      :name: source
+      school_night_hours_sleep
+         How many hours of sleep do you typically get on a school night?
 
-   `CDC's Youth Risk Behavior Surveillance System
-   (YRBSS) <https://www.cdc.gov/healthyyouth/data/yrbs/data.htm>`__
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      `CDC's Youth Risk Behavior Surveillance System
+      (YRBSS) <https://www.cdc.gov/healthyyouth/data/yrbs/data.htm>`__
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      table(yrbss_samp$physically_active_7d)
+      ::
+
+         table(yrbss_samp$physically_active_7d)

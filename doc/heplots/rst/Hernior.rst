@@ -1,132 +1,129 @@
 .. container::
 
-   ======= ===============
-   Hernior R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Recovery from Elective Herniorrhaphy
-      :name: Hernior
+      ======= ===============
+      Hernior R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Recovery from Elective Herniorrhaphy
+         :name: recovery-from-elective-herniorrhaphy
 
-   A data set on measures of post-operative recovery of 32 patients
-   undergoing an elective herniorrhaphy operation, in relation to
-   pre-operative measures.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data set on measures of post-operative recovery of 32 patients
+      undergoing an elective herniorrhaphy operation, in relation to
+      pre-operative measures.
 
-   .. code:: R
+      .. rubric:: Format
+         :name: format
 
-      data(Hernior)
+      A data frame with 32 observations on the following 9 variables.
 
-   .. rubric:: Format
-      :name: format
+      ``age``
+         patient age
 
-   A data frame with 32 observations on the following 9 variables.
+      ``sex``
+         patient sex, a factor with levels ``f`` ``m``
 
-   ``age``
-      patient age
+      ``pstat``
+         physical status (ignoring that associated with the operation).
+         A 1-5 scale, with 1=perfect health, 5=very poor health.
 
-   ``sex``
-      patient sex, a factor with levels ``f`` ``m``
+      ``build``
+         body build, a 1-5 scale, with 1=emaciated, 2=thin, 3=average,
+         4=fat, 5=obese.
 
-   ``pstat``
-      physical status (ignoring that associated with the operation). A
-      1-5 scale, with 1=perfect health, 5=very poor health.
+      ``cardiac``
+         preoperative complications with heart, 1-4 scale, with 1=none,
+         2=mild, 3=moderate, 4=severe.
 
-   ``build``
-      body build, a 1-5 scale, with 1=emaciated, 2=thin, 3=average,
-      4=fat, 5=obese.
+      ``resp``
+         preoperative complications with respiration, 1-4 scale, with
+         1=none, 2=mild, 3=moderate, 4=severe.
 
-   ``cardiac``
-      preoperative complications with heart, 1-4 scale, with 1=none,
-      2=mild, 3=moderate, 4=severe.
+      ``leave``
+         condition upon leaving the recovery room, a 1-4 scale, with
+         1=routine recovery, 2=intensive care for observation overnight,
+         3=intensive care, with moderate care required, 4=intensive
+         care, with moderate care required.
 
-   ``resp``
-      preoperative complications with respiration, 1-4 scale, with
-      1=none, 2=mild, 3=moderate, 4=severe.
+      ``los``
+         length of stay in hospital after operation (days)
 
-   ``leave``
-      condition upon leaving the recovery room, a 1-4 scale, with
-      1=routine recovery, 2=intensive care for observation overnight,
-      3=intensive care, with moderate care required, 4=intensive care,
-      with moderate care required.
+      ``nurse``
+         level of nursing required one week after operation, a 1-5
+         scale, with 1=intense, 2=heavy, 3=moderate, 4=light, 5=none
+         (?); see Details
 
-   ``los``
-      length of stay in hospital after operation (days)
+      .. rubric:: Details
+         :name: details
 
-   ``nurse``
-      level of nursing required one week after operation, a 1-5 scale,
-      with 1=intense, 2=heavy, 3=moderate, 4=light, 5=none (?); see
-      Details
+      ``leave``, ``nurse`` and ``los`` are outcome measures; the
+      remaining variables are potential predictors of recovery status.
 
-   .. rubric:: Details
-      :name: details
+      The variable ``nurse`` is recorded as 1-4, with remaining (20)
+      entries entered as "-" in both sources. It is not clear whether
+      this means "none" or NA. The former interpretation was used in
+      constructing the R data frame, so ``nurse==5`` for these
+      observations. Using ``Hernior$nurse[Hernior$nurse==5] <- NA``
+      would change to the other interpretation, but render ``nurse``
+      useless in a multivariate analysis.
 
-   ``leave``, ``nurse`` and ``los`` are outcome measures; the remaining
-   variables are potential predictors of recovery status.
+      The ordinal predictors could instead be treated as factors, and
+      there are also potential interactions to be explored.
 
-   The variable ``nurse`` is recorded as 1-4, with remaining (20)
-   entries entered as "-" in both sources. It is not clear whether this
-   means "none" or NA. The former interpretation was used in
-   constructing the R data frame, so ``nurse==5`` for these
-   observations. Using ``Hernior$nurse[Hernior$nurse==5] <- NA`` would
-   change to the other interpretation, but render ``nurse`` useless in a
-   multivariate analysis.
+      .. rubric:: Source
+         :name: source
 
-   The ordinal predictors could instead be treated as factors, and there
-   are also potential interactions to be explored.
+      Mosteller, F. and Tukey, J. W. (1977), *Data analysis and
+      regression*, Reading, MA: Addison-Wesley. Data Exhibit 8, 567-568.
+      Their source: A study by B. McPeek and J. P. Gilbert of the
+      Harvard Anesthesia Center.
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: References
+         :name: references
 
-   Mosteller, F. and Tukey, J. W. (1977), *Data analysis and
-   regression*, Reading, MA: Addison-Wesley. Data Exhibit 8, 567-568.
-   Their source: A study by B. McPeek and J. P. Gilbert of the Harvard
-   Anesthesia Center.
+      Hand, D. J., Daly, F., Lunn, A. D., McConway, K. J. and Ostrowski,
+      E. (1994), *A Handbook of Small Data Sets*, Number 484, 390-391.
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: Examples
+         :name: examples
 
-   Hand, D. J., Daly, F., Lunn, A. D., McConway, K. J. and Ostrowski, E.
-   (1994), *A Handbook of Small Data Sets*, Number 484, 390-391.
+      ::
 
-   .. rubric:: Examples
-      :name: examples
+         library(car)
+         data(Hernior)
+         str(Hernior)
+         Hern.mod <- lm(cbind(leave, nurse, los) ~ 
+                        age + sex +  pstat +  build + cardiac + resp, data=Hernior)
+         car::Anova(Hern.mod, test="Roy") # actually, all tests are identical
 
-   .. code:: R
+         # test overall regression
+         print(linearHypothesis(Hern.mod, c("age", "sexm", "pstat", "build", "cardiac", "resp")), SSP=FALSE)
 
-      str(Hernior)
-      Hern.mod <- lm(cbind(leave, nurse, los) ~ 
-                     age + sex +  pstat +  build + cardiac + resp, data=Hernior)
-      Anova(Hern.mod, test="Roy") # actually, all tests are identical
+         # joint test of age, sex & caridac
+         print(linearHypothesis(Hern.mod, c("age", "sexm", "cardiac")), SSP=FALSE)
 
-      # test overall regression
-      print(linearHypothesis(Hern.mod, c("age", "sexm", "pstat", "build", "cardiac", "resp")), SSP=FALSE)
+         # HE plots
+         clr <- c("red", "darkgray", "blue", "darkgreen", "magenta", "brown", "black")
+         heplot(Hern.mod, col=clr)
+         pairs(Hern.mod, col=clr)
 
-      # joint test of age, sex & caridac
-      print(linearHypothesis(Hern.mod, c("age", "sexm", "cardiac")), SSP=FALSE)
+         ## Enhancing the pairs plot ...
+         # create better variable labels
+         vlab <- c("LeaveCondition\n(leave)", 
+                   "NursingCare\n(nurse)", 
+                   "LengthOfStay\n(los)")
+         # Add ellipse to test all 5 regressors simultaneously
+         hyp <- list("Regr" = c("age", "sexm", "pstat", "build", "cardiac", "resp"))
+         pairs(Hern.mod, hypotheses=hyp, col=clr, var.labels=vlab)
 
-      # HE plots
-      clr <- c("red", "darkgray", "blue", "darkgreen", "magenta", "brown", "black")
-      heplot(Hern.mod, col=clr)
-      pairs(Hern.mod, col=clr)
-
-      ## Enhancing the pairs plot ...
-      # create better variable labels
-      vlab <- c("LeaveCondition\n(leave)", 
-                "NursingCare\n(nurse)", 
-                "LengthOfStay\n(los)")
-      # Add ellipse to test all 5 regressors simultaneously
-      hyp <- list("Regr" = c("age", "sexm", "pstat", "build", "cardiac", "resp"))
-      pairs(Hern.mod, hypotheses=hyp, col=clr, var.labels=vlab)
-
-      ## Views in canonical space for the various predictors
-      if (require(candisc)) {
-          Hern.canL <- candiscList(Hern.mod)
-          plot(Hern.canL, term="age")
-          plot(Hern.canL, term="sex")
-          plot(Hern.canL, term="pstat")  # physical status
-      }
+         ## Views in canonical space for the various predictors
+         if (require(candisc)) {
+             Hern.canL <- candiscList(Hern.mod)
+             plot(Hern.canL, term="age")
+             plot(Hern.canL, term="sex")
+             plot(Hern.canL, term="pstat")  # physical status
+         }

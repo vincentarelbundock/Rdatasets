@@ -1,83 +1,85 @@
 .. container::
 
-   ============ ===============
-   SpaceShuttle R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Space Shuttle O-ring Failures
-      :name: SpaceShuttle
+      ============ ===============
+      SpaceShuttle R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Space Shuttle O-ring Failures
+         :name: space-shuttle-o-ring-failures
 
-   Data from Dalal et al. (1989) about O-ring failures in the NASA space
-   shuttle program. The damage index comes from a discussion of the data
-   by Tufte (1997).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from Dalal et al. (1989) about O-ring failures in the NASA
+      space shuttle program. The damage index comes from a discussion of
+      the data by Tufte (1997).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("SpaceShuttle")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("SpaceShuttle")
 
-   A data frame with 24 observations and 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   FlightNumber
-      Number of space shuttle flight.
+      A data frame with 24 observations and 6 variables.
 
-   Temperature
-      temperature during start (in degrees F).
+      FlightNumber
+         Number of space shuttle flight.
 
-   Pressure
-      pressure.
+      Temperature
+         temperature during start (in degrees F).
 
-   Fail
-      did any O-ring failures occur? (no, yes).
+      Pressure
+         pressure.
 
-   nFailures
-      how many (of six) 0-rings failed?.
+      Fail
+         did any O-ring failures occur? (no, yes).
 
-   Damage
-      damage index.
+      nFailures
+         how many (of six) 0-rings failed?.
 
-   .. rubric:: Source
-      :name: source
+      Damage
+         damage index.
 
-   Michael Friendly (2000), Visualizing Categorical Data:
-   http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/orings.sas
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Michael Friendly (2000), Visualizing Categorical Data:
+      http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/orings.sas
 
-   S. Dalal, E. B. Fowlkes, B. Hoadly (1989), Risk analysis of the space
-   shuttle: Pre-Challenger prediction of failure, *Journal of the
-   American Statistical Association*, **84**, 945–957.
+      .. rubric:: References
+         :name: references
 
-   E. R. Tufte (1997), *Visual Explanations: Images and Quantities,
-   Evidence and Narrative*. Graphics Press, Cheshire, CT.
+      S. Dalal, E. B. Fowlkes, B. Hoadly (1989), Risk analysis of the
+      space shuttle: Pre-Challenger prediction of failure, *Journal of
+      the American Statistical Association*, **84**, 945–957.
 
-   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
-   Cary, NC.
+      E. R. Tufte (1997), *Visual Explanations: Images and Quantities,
+      Evidence and Narrative*. Graphics Press, Cheshire, CT.
 
-   .. rubric:: Examples
-      :name: examples
+      M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+      Cary, NC.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("SpaceShuttle")
-      plot(nFailures/6 ~ Temperature, data = SpaceShuttle,
-           xlim = c(30, 81), ylim = c(0,1),
-           main = "NASA Space Shuttle O-Ring Failures",
-           ylab = "Estimated failure probability",
-           pch = 19, col = 4)
-      fm <- glm(cbind(nFailures, 6 - nFailures) ~ Temperature,
-                data = SpaceShuttle,
-                family = binomial)
-      lines(30 : 81,
-            predict(fm, data.frame(Temperature = 30 : 81), type = "re"),
-            lwd = 2)
-      abline(v = 31, lty = 3)
+      ::
+
+         data("SpaceShuttle")
+         plot(nFailures/6 ~ Temperature, data = SpaceShuttle,
+              xlim = c(30, 81), ylim = c(0,1),
+              main = "NASA Space Shuttle O-Ring Failures",
+              ylab = "Estimated failure probability",
+              pch = 19, col = 4)
+         fm <- glm(cbind(nFailures, 6 - nFailures) ~ Temperature,
+                   data = SpaceShuttle,
+                   family = binomial)
+         lines(30 : 81,
+               predict(fm, data.frame(Temperature = 30 : 81), type = "re"),
+               lwd = 2)
+         abline(v = 31, lty = 3)

@@ -1,40 +1,43 @@
 .. container::
 
-   ==== ===============
-   lynx R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Annual Canadian Lynx trappings 1821–1934
-      :name: lynx
+      ==== ===============
+      lynx R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Annual Canadian Lynx trappings 1821–1934
+         :name: annual-canadian-lynx-trappings-18211934
 
-   Annual numbers of lynx trappings for 1821–1934 in Canada. Taken from
-   Brockwell & Davis (1991), this appears to be the series considered by
-   Campbell & Walker (1977).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Annual numbers of lynx trappings for 1821–1934 in Canada. Taken
+      from Brockwell & Davis (1991), this appears to be the series
+      considered by Campbell & Walker (1977).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      lynx
+      ::
 
-   .. rubric:: Source
-      :name: source
+         lynx
 
-   Brockwell, P. J. and Davis, R. A. (1991). *Time Series and
-   Forecasting Methods*. Second edition. Springer. Series G (page 557).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Brockwell, P. J. and Davis, R. A. (1991). *Time Series and
+      Forecasting Methods*. Second edition. Springer. Series G (page
+      557).
 
-   Becker, R. A., Chambers, J. M. and Wilks, A. R. (1988). *The New S
-   Language*. Wadsworth & Brooks/Cole.
+      .. rubric:: References
+         :name: references
 
-   Campbell, M. J. and Walker, A. M. (1977). A Survey of statistical
-   work on the Mackenzie River series of annual Canadian lynx trappings
-   for the years 1821–1934 and a new analysis. *Journal of the Royal
-   Statistical Society Series A*, **140**, 411–431.
-   `doi:10.2307/2345277 <https://doi.org/10.2307/2345277>`__.
+      Becker, R. A., Chambers, J. M. and Wilks, A. R. (1988). *The New S
+      Language*. Wadsworth & Brooks/Cole.
+
+      Campbell, M. J. and Walker, A. M. (1977). A Survey of statistical
+      work on the Mackenzie River series of annual Canadian lynx
+      trappings for the years 1821–1934 and a new analysis. *Journal of
+      the Royal Statistical Society Series A*, **140**, 411–431.
+      `doi:10.2307/2345277 <https://doi.org/10.2307/2345277>`__.

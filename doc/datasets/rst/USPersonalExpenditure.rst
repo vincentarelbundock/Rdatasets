@@ -1,49 +1,51 @@
 .. container::
 
-   ===================== ===============
-   USPersonalExpenditure R Documentation
-   ===================== ===============
+   .. container::
 
-   .. rubric:: Personal Expenditure Data
-      :name: USPersonalExpenditure
+      ===================== ===============
+      USPersonalExpenditure R Documentation
+      ===================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Personal Expenditure Data
+         :name: personal-expenditure-data
 
-   This data set consists of United States personal expenditures (in
-   billions of dollars) in the categories; food and tobacco, household
-   operation, medical and health, personal care, and private education
-   for the years 1940, 1945, 1950, 1955 and 1960.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set consists of United States personal expenditures (in
+      billions of dollars) in the categories; food and tobacco,
+      household operation, medical and health, personal care, and
+      private education for the years 1940, 1945, 1950, 1955 and 1960.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      USPersonalExpenditure
+      ::
 
-   .. rubric:: Format
-      :name: format
+         USPersonalExpenditure
 
-   A matrix with 5 rows and 5 columns.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A matrix with 5 rows and 5 columns.
 
-   The World Almanac and Book of Facts, 1962, page 756.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The World Almanac and Book of Facts, 1962, page 756.
 
-   Tukey, J. W. (1977) *Exploratory Data Analysis*. Addison-Wesley.
+      .. rubric:: References
+         :name: references
 
-   McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
+      Tukey, J. W. (1977) *Exploratory Data Analysis*. Addison-Wesley.
 
-   .. rubric:: Examples
-      :name: examples
+      McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(stats) # for medpolish
-      USPersonalExpenditure
-      medpolish(log10(USPersonalExpenditure))
+      ::
+
+         require(stats) # for medpolish
+         USPersonalExpenditure
+         medpolish(log10(USPersonalExpenditure))

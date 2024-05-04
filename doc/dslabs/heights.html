@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><title>R: Self-Reported Heights</title>
+<!DOCTYPE html><html><head><title>R: Self-reported Heights in Inches</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
@@ -12,15 +12,15 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>heights</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='heights'>Self-Reported Heights</h2>
+<h2>Self-reported Heights in Inches</h2>
 
 <h3>Description</h3>
 
-<p>Self-reported heights in inches for males and females.
+<p>Self-reported heights and sex. The heights were converted to inches from the original data included in <code>reported_heights</code>.
 </p>
 
 
@@ -40,13 +40,19 @@ function processMathHTML() {
 
 
 <ul>
-<li><p> sex. Male or Female.
+<li><p> sex. A factor with the self-reported sex. 
 </p>
 </li>
-<li><p> height. Height in inches. 
+<li><p> height. A numeric vector with self-reported heights in inches. 
 </p>
 </li></ul>
 
+
+
+<h3>See Also</h3>
+
+<p><code>reported_heights</code> for the original data source.
+</p>
 
 
 <h3>Examples</h3>
@@ -54,6 +60,7 @@ function processMathHTML() {
 <pre><code class='language-R'>head(heights)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

@@ -1,80 +1,82 @@
 .. container::
 
-   =========== ===============
-   respiratory R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Respiratory Illness Data
-      :name: respiratory
+      =========== ===============
+      respiratory R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Respiratory Illness Data
+         :name: respiratory-illness-data
 
-   The respiratory status of patients recruited for a randomised
-   clinical multicenter trial.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The respiratory status of patients recruited for a randomised
+      clinical multicenter trial.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("respiratory")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("respiratory")
 
-   A data frame with 555 observations on the following 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``centre``
-      the study center, a factor with levels ``1`` and ``2``.
+      A data frame with 555 observations on the following 7 variables.
 
-   ``treatment``
-      the treatment arm, a factor with levels ``placebo`` and
-      ``treatment``.
+      ``centre``
+         the study center, a factor with levels ``1`` and ``2``.
 
-   ``sex``
-      a factor with levels ``female`` and ``male``.
+      ``treatment``
+         the treatment arm, a factor with levels ``placebo`` and
+         ``treatment``.
 
-   ``age``
-      the age of the patient.
+      ``sex``
+         a factor with levels ``female`` and ``male``.
 
-   ``status``
-      the respiratory status (response variable), a factor with levels
-      ``poor`` and ``good``.
+      ``age``
+         the age of the patient.
 
-   ``month``
-      the month, each patient was examined at months ``0``, ``1``,
-      ``2``, ``3`` and ``4``.
+      ``status``
+         the respiratory status (response variable), a factor with
+         levels ``poor`` and ``good``.
 
-   ``subject``
-      the patient ID, a factor with levels ``1`` to ``111``.
+      ``month``
+         the month, each patient was examined at months ``0``, ``1``,
+         ``2``, ``3`` and ``4``.
 
-   .. rubric:: Details
-      :name: details
+      ``subject``
+         the patient ID, a factor with levels ``1`` to ``111``.
 
-   In each of two centres, eligible patients were randomly assigned to
-   active treatment or placebo. During the treatment, the respiratory
-   status (categorised ``poor`` or ``good``) was determined at each of
-   four, monthly visits. The trial recruited 111 participants (54 in the
-   active group, 57 in the placebo group) and there were no missing data
-   for either the responses or the covariates. The question of interest
-   is to assess whether the treatment is effective and to estimate its
-   effect.
+      .. rubric:: Details
+         :name: details
 
-   Note that the data are in long form, i.e, repeated measurments are
-   stored as additional rows in the data frame.
+      In each of two centres, eligible patients were randomly assigned
+      to active treatment or placebo. During the treatment, the
+      respiratory status (categorised ``poor`` or ``good``) was
+      determined at each of four, monthly visits. The trial recruited
+      111 participants (54 in the active group, 57 in the placebo group)
+      and there were no missing data for either the responses or the
+      covariates. The question of interest is to assess whether the
+      treatment is effective and to estimate its effect.
 
-   .. rubric:: Source
-      :name: source
+      Note that the data are in long form, i.e, repeated measurments are
+      stored as additional rows in the data frame.
 
-   C. S. Davis (1991), Semi-parametric and non-parametric methods for
-   the analysis of repeated measurements with applications to clinical
-   trials. *Statistics in Medicine*, **10**, 1959–1980.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      C. S. Davis (1991), Semi-parametric and non-parametric methods for
+      the analysis of repeated measurements with applications to
+      clinical trials. *Statistics in Medicine*, **10**, 1959–1980.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("respiratory", package = "HSAUR")
-        mosaicplot(xtabs( ~ treatment + month + status, data = respiratory))
+      ::
+
+           data("respiratory", package = "HSAUR")
+           mosaicplot(xtabs( ~ treatment + month + status, data = respiratory))

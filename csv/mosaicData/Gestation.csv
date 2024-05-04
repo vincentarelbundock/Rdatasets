@@ -1,4 +1,4 @@
-rownames,id,pluralty,outcome,date,gestation,sex,wt,parity,race,age,ed,ht,wt.1,drace,dage,ded,dht,dwt,marital,inc,smoke,time,number
+rownames,id,plurality,outcome,date,gestation,sex,wt,parity,race,age,ed,ht,wt.1,drace,dage,ded,dht,dwt,marital,inc,smoke,time,number
 1,15,single fetus,live birth,1964-11-11,284,male,120,1,asian,27,College graduate,62,100,asian,31,College graduate,65,110,married,2500-5000,never,never smoked,never
 2,20,single fetus,live birth,1965-02-07,282,male,113,2,white,33,College graduate,64,135,white,38,College graduate,70,148,married,10000-12500,never,never smoked,never
 3,58,single fetus,live birth,1965-04-25,279,male,128,1,white,28,HS graduate--no other schooling,64,115,white,32,8th -12th grade - did not graduate,,,married,5000-7500,now,still smokes,1-4 per day

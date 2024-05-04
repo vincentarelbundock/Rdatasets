@@ -1,66 +1,68 @@
 .. container::
 
-   ===== ===============
-   Dee04 R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Are There Civics Returns to Education?
-      :name: Dee04
+      ===== ===============
+      Dee04 R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Are There Civics Returns to Education?
+         :name: are-there-civics-returns-to-education
 
-   This should be a data set for a (partial?) replication of Dee's
-   (2004) article on the purported civics returns to education. I use
-   these data for in-class illustration about instrumental variable
-   analyses.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This should be a data set for a (partial?) replication of Dee's
+      (2004) article on the purported civics returns to education. I use
+      these data for in-class illustration about instrumental variable
+      analyses.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Dee04
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Dee04
 
-   A data frame with 9227 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``schoolid``
-      a numeric vector that should be understood as categorical
+      A data frame with 9227 observations on the following 8 variables.
 
-   ``hispanic``
-      a numeric vector for if the person is Hispanic
+      ``schoolid``
+         a numeric vector that should be understood as categorical
 
-   ``college``
-      a numeric vector for if the person went to college
+      ``hispanic``
+         a numeric vector for if the person is Hispanic
 
-   ``black``
-      a numeric vector for if the person is black
+      ``college``
+         a numeric vector for if the person went to college
 
-   ``otherrace``
-      a numeric vector for if the person is another race
+      ``black``
+         a numeric vector for if the person is black
 
-   ``female``
-      a numeric vector for if the person is a woman
+      ``otherrace``
+         a numeric vector for if the person is another race
 
-   ``register``
-      a numeric vector for if the person is registered to vote
+      ``female``
+         a numeric vector for if the person is a woman
 
-   ``distance``
-      a numeric vector for the distance to college
+      ``register``
+         a numeric vector for if the person is registered to vote
 
-   .. rubric:: Details
-      :name: details
+      ``distance``
+         a numeric vector for the distance to college
 
-   I should note I acquired this data set in Mexico City sitting on a
-   two-week program at IPSA-FLACSO Mexico Summer School in 2019. The
-   sample size here (9,227) is about two thousand short of what Dee
-   reports in his article. It'll do, though.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: References
-      :name: references
+      I should note I acquired this data set in Mexico City sitting on a
+      two-week program at IPSA-FLACSO Mexico Summer School in 2019. The
+      sample size here (9,227) is about two thousand short of what Dee
+      reports in his article. It'll do, though.
 
-   Dee, Thomas S. 2004. "Are there civics returns to education?"
-   *Journal of Public Economics* 88: 1697–1720
+      .. rubric:: References
+         :name: references
+
+      Dee, Thomas S. 2004. "Are there civics returns to education?"
+      *Journal of Public Economics* 88: 1697–1720

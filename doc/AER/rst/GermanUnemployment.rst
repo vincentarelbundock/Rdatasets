@@ -1,56 +1,58 @@
 .. container::
 
-   ================== ===============
-   GermanUnemployment R Documentation
-   ================== ===============
+   .. container::
 
-   .. rubric:: Unemployment in Germany Data
-      :name: GermanUnemployment
+      ================== ===============
+      GermanUnemployment R Documentation
+      ================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Unemployment in Germany Data
+         :name: unemployment-in-germany-data
 
-   Time series of unemployment rate (in percent) in Germany.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Time series of unemployment rate (in percent) in Germany.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("GermanUnemployment")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("GermanUnemployment")
 
-   A quarterly multiple time series from 1962(1) to 1991(4) with 2
-   variables.
+      .. rubric:: Format
+         :name: format
 
-   unadjusted
-      Raw unemployment rate,
+      A quarterly multiple time series from 1962(1) to 1991(4) with 2
+      variables.
 
-   adjusted
-      Seasonally adjusted rate.
+      unadjusted
+         Raw unemployment rate,
 
-   .. rubric:: Source
-      :name: source
+      adjusted
+         Seasonally adjusted rate.
 
-   Online complements to Franses (1998).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Franses (1998).
 
-   Franses, P.H. (1998). *Time Series Models for Business and Economic
-   Forecasting*. Cambridge, UK: Cambridge University Press.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Franses, P.H. (1998). *Time Series Models for Business and
+      Economic Forecasting*. Cambridge, UK: Cambridge University Press.
 
-   ``Franses1998``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Franses1998``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("GermanUnemployment")
-      plot(GermanUnemployment, plot.type = "single", col = 1:2)
+      ::
+
+         data("GermanUnemployment")
+         plot(GermanUnemployment, plot.type = "single", col = 1:2)

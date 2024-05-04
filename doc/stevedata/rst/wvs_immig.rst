@@ -1,53 +1,56 @@
 .. container::
 
-   ========= ===============
-   wvs_immig R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Attitudes about Immigration in the World Values Survey
-      :name: wvs_immig
+      ========= ===============
+      wvs_immig R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Attitudes about Immigration in the World Values Survey
+         :name: attitudes-about-immigration-in-the-world-values-survey
 
-   A data set on attitudes about immigration for all observations in the
-   third to sixth wave of the World Values Survey. I use these data for
-   in-class illustration.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data set on attitudes about immigration for all observations in
+      the third to sixth wave of the World Values Survey. I use these
+      data for in-class illustration.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      wvs_immig
+      ::
 
-   .. rubric:: Format
-      :name: format
+         wvs_immig
 
-   A data frame with 310,388 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``s002``
-      the World Values Survey wave
+      A data frame with 310,388 observations on the following 6
+      variables.
 
-   ``s003``
-      the World Values Survey country code
+      ``s002``
+         the World Values Survey wave
 
-   ``country``
-      the country name
+      ``s003``
+         the World Values Survey country code
 
-   ``s020``
-      the survey year
+      ``country``
+         the country name
 
-   ``uid``
-      a unique identifier for the survey respondent
+      ``s020``
+         the survey year
 
-   ``e143``
-      an attitude about immigration policy in the World Values Survey
+      ``uid``
+         a unique identifier for the survey respondent
 
-   .. rubric:: Details
-      :name: details
+      ``e143``
+         an attitude about immigration policy in the World Values Survey
 
-   1 = "let anyone come". 2 = "as long as jobs are available". 3 =
-   "strict limits". 4 = "Prohibit people from coming" for the ``e143``
-   variable. See ``?wvs_ccodes`` for more information about
-   naming/identifying countries.
+      .. rubric:: Details
+         :name: details
+
+      1 = "let anyone come". 2 = "as long as jobs are available". 3 =
+      "strict limits". 4 = "Prohibit people from coming" for the
+      ``e143`` variable. See ``?wvs_ccodes`` for more information about
+      naming/identifying countries.

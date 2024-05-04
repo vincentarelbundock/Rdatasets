@@ -1,53 +1,55 @@
 .. container::
 
-   ======= ===============
-   Alfalfa R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Split-Plot Experiment on Varieties of Alfalfa
-      :name: Alfalfa
+      ======= ===============
+      Alfalfa R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Split-Plot Experiment on Varieties of Alfalfa
+         :name: split-plot-experiment-on-varieties-of-alfalfa
 
-   The ``Alfalfa`` data frame has 72 rows and 4 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``Alfalfa`` data frame has 72 rows and 4 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Variety
-      a factor with levels ``Cossack``, ``Ladak``, and ``Ranger``
+      This data frame contains the following columns:
 
-   Date
-      a factor with levels ``None`` ``S1`` ``S20`` ``O7``
+      Variety
+         a factor with levels ``Cossack``, ``Ladak``, and ``Ranger``
 
-   Block
-      a factor with levels ``1`` ``2`` ``3`` ``4`` ``5`` ``6``
+      Date
+         a factor with levels ``None`` ``S1`` ``S20`` ``O7``
 
-   Yield
-      a numeric vector
+      Block
+         a factor with levels ``1`` ``2`` ``3`` ``4`` ``5`` ``6``
 
-   .. rubric:: Details
-      :name: details
+      Yield
+         a numeric vector
 
-   These data are described in Snedecor and Cochran (1980) as an example
-   of a split-plot design. The treatment structure used in the
-   experiment was a 3\ ``x``\ 4 full factorial, with three varieties of
-   alfalfa and four dates of third cutting in 1943. The experimental
-   units were arranged into six blocks, each subdivided into four plots.
-   The varieties of alfalfa (*Cossac*, *Ladak*, and *Ranger*) were
-   assigned randomly to the blocks and the dates of third cutting
-   (*None*, *S1*—September 1, *S20*—September 20, and *O7*—October 7)
-   were randomly assigned to the plots. All four dates were used on each
-   block.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      These data are described in Snedecor and Cochran (1980) as an
+      example of a split-plot design. The treatment structure used in
+      the experiment was a 3\ ``x``\ 4 full factorial, with three
+      varieties of alfalfa and four dates of third cutting in 1943. The
+      experimental units were arranged into six blocks, each subdivided
+      into four plots. The varieties of alfalfa (*Cossac*, *Ladak*, and
+      *Ranger*) were assigned randomly to the blocks and the dates of
+      third cutting (*None*, *S1*—September 1, *S20*—September 20, and
+      *O7*—October 7) were randomly assigned to the plots. All four
+      dates were used on each block.
 
-   Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S
-   and S-PLUS*, Springer, New York. (Appendix A.1)
+      .. rubric:: Source
+         :name: source
 
-   Snedecor, G. W. and Cochran, W. G. (1980), *Statistical Methods (7th
-   ed)*, Iowa State University Press, Ames, IA
+      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
+      S and S-PLUS*, Springer, New York. (Appendix A.1)
+
+      Snedecor, G. W. and Cochran, W. G. (1980), *Statistical Methods
+      (7th ed)*, Iowa State University Press, Ames, IA

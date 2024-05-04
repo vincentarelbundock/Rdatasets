@@ -1,58 +1,60 @@
 .. container::
 
-   ========= ===============
-   wages1833 R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Wages of Lancashire Cotton Factory Workers in 1833
-      :name: wages1833
+      ========= ===============
+      wages1833 R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Wages of Lancashire Cotton Factory Workers in 1833
+         :name: wages-of-lancashire-cotton-factory-workers-in-1833
 
-   The ``wages1833`` data frame gives the wages of Lancashire cotton
-   factory workers in 1833.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``wages1833`` data frame gives the wages of Lancashire cotton
+      factory workers in 1833.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      wages1833
+      ::
 
-   .. rubric:: Format
-      :name: format
+         wages1833
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   age
-      age in years
+      This data frame contains the following columns:
 
-   mnum
-      number of male workers
+      age
+         age in years
 
-   mwage
-      average wage of male workers
+      mnum
+         number of male workers
 
-   fnum
-      number of female workers
+      mwage
+         average wage of male workers
 
-   fwage
-      average wage of female workers
+      fnum
+         number of female workers
 
-   .. rubric:: Source
-      :name: source
+      fwage
+         average wage of female workers
 
-   Boot, H.M. 1995. How Skilled Were the Lancashire Cotton Factory
-   Workers in 1833? Economic History Review 48: 283-303.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Boot, H.M. 1995. How Skilled Were the Lancashire Cotton Factory
+      Workers in 1833? Economic History Review 48: 283-303.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      attach(wages1833)
-      plot(mwage~age,ylim=range(c(mwage,fwage[fwage>0])))
-      points(fwage[fwage>0]~age[fwage>0],pch=15,col="red")
-      lines(lowess(age,mwage))
-      lines(lowess(age[fwage>0],fwage[fwage>0]),col="red")
+      ::
+
+         attach(wages1833)
+         plot(mwage~age,ylim=range(c(mwage,fwage[fwage>0])))
+         points(fwage[fwage>0]~age[fwage>0],pch=15,col="red")
+         lines(lowess(age,mwage))
+         lines(lowess(age[fwage>0],fwage[fwage>0]),col="red")

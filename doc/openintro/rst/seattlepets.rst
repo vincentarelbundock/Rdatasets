@@ -1,53 +1,55 @@
 .. container::
 
-   =========== ===============
-   seattlepets R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Names of pets in Seattle
-      :name: seattlepets
+      =========== ===============
+      seattlepets R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Names of pets in Seattle
+         :name: names-of-pets-in-seattle
 
-   Names of registered pets in Seattle, WA, between 2003 and 2018,
-   provided by the city's Open Data Portal.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Names of registered pets in Seattle, WA, between 2003 and 2018,
+      provided by the city's Open Data Portal.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      seattlepets
+      ::
 
-   .. rubric:: Format
-      :name: format
+         seattlepets
 
-   A data frame with 52,519 rows and 7 variables:
+      .. rubric:: Format
+         :name: format
 
-   license_issue_date
-      Date the animal was registered with Seattle
+      A data frame with 52,519 rows and 7 variables:
 
-   license_number
-      Unique license number
+      license_issue_date
+         Date the animal was registered with Seattle
 
-   animal_name
-      Animal's name
+      license_number
+         Unique license number
 
-   species
-      Animal's species (dog, cat, goat, etc.)
+      animal_name
+         Animal's name
 
-   primary_breed
-      Primary breed of the animal
+      species
+         Animal's species (dog, cat, goat, etc.)
 
-   secondary_breed
-      Secondary breed if mixed
+      primary_breed
+         Primary breed of the animal
 
-   zip_code
-      Zip code animal is registered in
+      secondary_breed
+         Secondary breed if mixed
 
-   .. rubric:: Source
-      :name: source
+      zip_code
+         Zip code animal is registered in
 
-   These data come from Seattle's Open Data Portal,
-   https://data.seattle.gov/Community/Seattle-Pet-Licenses/jguv-t9rb
+      .. rubric:: Source
+         :name: source
+
+      These data come from Seattle's Open Data Portal,
+      https://data.seattle.gov/Community/Seattle-Pet-Licenses/jguv-t9rb

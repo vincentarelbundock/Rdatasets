@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Skulls</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Skulls'> Egyptian Skulls </h2>
+<h2>Egyptian Skulls</h2>
 
 <h3>Description</h3>
 
@@ -24,23 +24,16 @@ function processMathHTML() {
 </p>
 
 
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data("Skulls")</code></pre>
-
-
 <h3>Format</h3>
 
 <p>A data frame with 150 observations on the following 5 variables.
 </p>
-
+ 
 <dl>
-<dt><code>epoch</code></dt><dd><p>the epoch the skull as assigned to, 
-an ordered factor with levels <code>c4000BC</code> <code>c3300BC</code>,
-<code>c1850BC</code>,  <code>c200BC</code>, and  <code>cAD150</code>,
-where the years are only given approximately, of
-course.</p>
-</dd>
+<dt><code>epoch</code></dt><dd><p>the epoch the skull as assigned to, an
+ordered factor with levels <code>c4000BC</code> <code>c3300BC</code>, <code>c1850BC</code>,
+<code>c200BC</code>, and <code>cAD150</code>, where the years are only given approximately, of course.</p>
+</dd> 
 <dt><code>mb</code></dt><dd><p>maximal breadth of the skull.</p>
 </dd>
 <dt><code>bh</code></dt><dd><p>basibregmatic height of the skull.</p>
@@ -48,7 +41,7 @@ course.</p>
 <dt><code>bl</code></dt><dd><p>basialiveolar length of the skull.</p>
 </dd>
 <dt><code>nh</code></dt><dd><p>nasal height of the skull.</p>
-</dd>
+</dd> 
 </dl>
 
 
@@ -57,30 +50,30 @@ course.</p>
 
 <p>The epochs correspond to the following periods of Egyptian history:
 </p>
-
+ 
 <ol>
-<li><p> the early predynastic period (circa 4000 BC);
+<li><p> the early predynastic period (circa 4000 BC); 
 </p>
 </li>
-<li><p> the late predynastic period (circa 3300 BC);
+<li><p> the late predynastic period (circa 3300 BC); 
 </p>
 </li>
-<li><p> the 12th and 13th dynasties (circa 1850 BC);
+<li><p> the 12th and 13th dynasties (circa 1850 BC); 
 </p>
 </li>
-<li><p> the Ptolemiac period (circa 200 BC);
+<li><p> the Ptolemiac period (circa 200 BC); 
 </p>
 </li>
-<li><p> the Roman period (circa 150 AD).
+<li><p> the Roman period (circa 150 AD). 
 </p>
 </li></ol>
 
-<p>The question is whether the measurements change over time.
-Non-constant measurements of the skulls over time would indicate
-interbreeding with immigrant populations.
+<p>The question is whether the measurements change over time.  Non-constant
+measurements of the skulls over time would indicate interbreeding with
+immigrant populations.
 </p>
-<p>Note that using polynomial contrasts for <code>epoch</code> essentially treats
-the time points as equally spaced.
+<p>Note that using polynomial contrasts for <code>epoch</code> essentially treats the
+time points as equally spaced.
 </p>
 
 
@@ -93,18 +86,18 @@ the time points as equally spaced.
 
 <h3>References</h3>
 
-<p>Thomson, A. and Randall-Maciver, R. (1905) <em>Ancient Races of the Thebaid</em>, Oxford: Oxford University Press. 
+<p>Thomson, A. and Randall-Maciver, R. (1905) <em>Ancient Races
+of the Thebaid</em>, Oxford: Oxford University Press.
 </p>
-<p>Hand, D. J.,  F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski (1994). 
-<em>A Handbook of Small Datasets</em>, Chapman and Hall/CRC, London. 
+<p>Hand, D. J., F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski (1994).
+<em>A Handbook of Small Datasets</em>, Chapman and Hall/CRC, London.
 </p>
-
-
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Skulls)
+<pre><code class='language-R'>
+data(Skulls)
 library(car)    # for Anova
 
 # make shorter labels for epochs
@@ -160,8 +153,10 @@ if (require(candisc)) {
 
 ## End(Not run)
 
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

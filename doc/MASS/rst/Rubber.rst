@@ -1,47 +1,49 @@
 .. container::
 
-   ====== ===============
-   Rubber R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Accelerated Testing of Tyre Rubber
-      :name: Rubber
+      ====== ===============
+      Rubber R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Accelerated Testing of Tyre Rubber
+         :name: accelerated-testing-of-tyre-rubber
 
-   Data frame from accelerated testing of tyre rubber.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data frame from accelerated testing of tyre rubber.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Rubber
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Rubber
 
-   ``loss``
-      the abrasion loss in gm/hr.
+      .. rubric:: Format
+         :name: format
 
-   ``hard``
-      the hardness in Shore units.
+      ``loss``
+         the abrasion loss in gm/hr.
 
-   ``tens``
-      tensile strength in kg/sq m.
+      ``hard``
+         the hardness in Shore units.
 
-   .. rubric:: Source
-      :name: source
+      ``tens``
+         tensile strength in kg/sq m.
 
-   O.L. Davies (1947) *Statistical Methods in Research and Production.*
-   Oliver and Boyd, Table 6.1 p. 119.
+      .. rubric:: Source
+         :name: source
 
-   O.L. Davies and P.L. Goldsmith (1972) *Statistical Methods in
-   Research and Production.* 4th edition, Longmans, Table 8.1 p. 239.
+      O.L. Davies (1947) *Statistical Methods in Research and
+      Production.* Oliver and Boyd, Table 6.1 p. 119.
 
-   .. rubric:: References
-      :name: references
+      O.L. Davies and P.L. Goldsmith (1972) *Statistical Methods in
+      Research and Production.* 4th edition, Longmans, Table 8.1 p. 239.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S-PLUS.* Fourth Edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S-PLUS.* Fourth Edition. Springer.

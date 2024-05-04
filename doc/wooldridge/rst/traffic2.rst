@@ -1,147 +1,150 @@
 .. container::
 
-   ======== ===============
-   traffic2 R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: traffic2
-      :name: traffic2
+      ======== ===============
+      traffic2 R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: traffic2
+         :name: traffic2
 
-   Wooldridge Source: P.S. McCarthy (1994), “Relaxed Speed Limits and
-   Highway Safety: New Evidence from California,” Economics Letters 46,
-   173-179. Professor McCarthy kindly provided the data. Data loads
-   lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: P.S. McCarthy (1994), “Relaxed Speed Limits and
+      Highway Safety: New Evidence from California,” Economics Letters
+      46, 173-179. Professor McCarthy kindly provided the data. Data
+      loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('traffic2')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('traffic2')
 
-   A data.frame with 108 observations on 48 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1981 to 1989
+      A data.frame with 108 observations on 48 variables:
 
-   -  **totacc:** statewide total accidents
+      -  **year:** 1981 to 1989
 
-   -  **fatacc:** statewide fatal accidents
+      -  **totacc:** statewide total accidents
 
-   -  **injacc:** statewide injury accidents
+      -  **fatacc:** statewide fatal accidents
 
-   -  **pdoacc:** property damage only accidents
+      -  **injacc:** statewide injury accidents
 
-   -  **ntotacc:** noninterstate total acc.
+      -  **pdoacc:** property damage only accidents
 
-   -  **nfatacc:** noninterstate fatal acc.
+      -  **ntotacc:** noninterstate total acc.
 
-   -  **ninjacc:** noninterstate injur acc.
+      -  **nfatacc:** noninterstate fatal acc.
 
-   -  **npdoacc:** noninterstate property acc.
+      -  **ninjacc:** noninterstate injur acc.
 
-   -  **rtotacc:** tot. acc. on rural 65 mph roads
+      -  **npdoacc:** noninterstate property acc.
 
-   -  **rfatacc:** fat. acc. on rural 65 mph roads
+      -  **rtotacc:** tot. acc. on rural 65 mph roads
 
-   -  **rinjacc:** inj. acc. on rural 65 mph roads
+      -  **rfatacc:** fat. acc. on rural 65 mph roads
 
-   -  **rpdoacc:** prp. acc. on rural 65 mph roads
+      -  **rinjacc:** inj. acc. on rural 65 mph roads
 
-   -  **ushigh:** acc. on U.S. highways
+      -  **rpdoacc:** prp. acc. on rural 65 mph roads
 
-   -  **cntyrds:** acc. on county roads
+      -  **ushigh:** acc. on U.S. highways
 
-   -  **strtes:** acc. on state routes
+      -  **cntyrds:** acc. on county roads
 
-   -  **t:** time trend
+      -  **strtes:** acc. on state routes
 
-   -  **tsq:** t^2
+      -  **t:** time trend
 
-   -  **unem:** state unemployment rate
+      -  **tsq:** t^2
 
-   -  **spdlaw:** =1 after 65 mph in effect
+      -  **unem:** state unemployment rate
 
-   -  **beltlaw:** =1 after seatbelt law
+      -  **spdlaw:** =1 after 65 mph in effect
 
-   -  **wkends:** # weekends in month
+      -  **beltlaw:** =1 after seatbelt law
 
-   -  **feb:** =1 if month is Feb.
+      -  **wkends:** # weekends in month
 
-   -  **mar:**
+      -  **feb:** =1 if month is Feb.
 
-   -  **apr:**
+      -  **mar:**
 
-   -  **may:**
+      -  **apr:**
 
-   -  **jun:**
+      -  **may:**
 
-   -  **jul:**
+      -  **jun:**
 
-   -  **aug:**
+      -  **jul:**
 
-   -  **sep:**
+      -  **aug:**
 
-   -  **oct:**
+      -  **sep:**
 
-   -  **nov:**
+      -  **oct:**
 
-   -  **dec:**
+      -  **nov:**
 
-   -  **ltotacc:** log(totacc)
+      -  **dec:**
 
-   -  **lfatacc:** log(fatacc)
+      -  **ltotacc:** log(totacc)
 
-   -  **prcfat:** 100*(fatacc/totacc)
+      -  **lfatacc:** log(fatacc)
 
-   -  **prcrfat:** 100*(rfatacc/rtotacc)
+      -  **prcfat:** 100*(fatacc/totacc)
 
-   -  **lrtotacc:** log(rtotacc)
+      -  **prcrfat:** 100*(rfatacc/rtotacc)
 
-   -  **lrfatacc:** log(rfatacc)
+      -  **lrtotacc:** log(rtotacc)
 
-   -  **lntotacc:** log(ntotacc)
+      -  **lrfatacc:** log(rfatacc)
 
-   -  **lnfatacc:** log(nfatacc)
+      -  **lntotacc:** log(ntotacc)
 
-   -  **prcnfat:** 100*(nfatacc/ntotacc)
+      -  **lnfatacc:** log(nfatacc)
 
-   -  **lushigh:** log(ushigh)
+      -  **prcnfat:** 100*(nfatacc/ntotacc)
 
-   -  **lcntyrds:** log(cntyrds)
+      -  **lushigh:** log(ushigh)
 
-   -  **lstrtes:** log(strtes)
+      -  **lcntyrds:** log(cntyrds)
 
-   -  **spdt:** spdlaw*t
+      -  **lstrtes:** log(strtes)
 
-   -  **beltt:** beltlaw*t
+      -  **spdt:** spdlaw*t
 
-   -  **prcfat_1:** prcfat[\_n-1]
+      -  **beltt:** beltlaw*t
 
-   .. rubric:: Notes
-      :name: notes
+      -  **prcfat_1:** prcfat[_n-1]
 
-   Many states have changed maximum speed limits and imposed seat belt
-   laws over the past 25 years. Data similar to those in TRAFFIC2.RAW
-   should be fairly easy to obtain for a particular state. One should
-   combine this information with changes in a state’s blood alcohol
-   limit and the passage of per se and open container laws.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 378-379, 409, 443, 674, 695-696
+      Many states have changed maximum speed limits and imposed seat
+      belt laws over the past 25 years. Data similar to those in
+      TRAFFIC2.RAW should be fairly easy to obtain for a particular
+      state. One should combine this information with changes in a
+      state’s blood alcohol limit and the passage of per se and open
+      container laws.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 378-379, 409, 443, 674, 695-696
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(traffic2)
+      ::
+
+          str(traffic2)

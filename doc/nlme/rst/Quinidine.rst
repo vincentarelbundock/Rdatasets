@@ -1,100 +1,104 @@
 .. container::
 
-   ========= ===============
-   Quinidine R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Quinidine Kinetics
-      :name: Quinidine
+      ========= ===============
+      Quinidine R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Quinidine Kinetics
+         :name: quinidine-kinetics
 
-   The ``Quinidine`` data frame has 1471 rows and 14 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``Quinidine`` data frame has 1471 rows and 14 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Subject
-      a factor identifying the patient on whom the data were collected.
+      This data frame contains the following columns:
 
-   time
-      a numeric vector giving the time (hr) at which the drug was
-      administered or the blood sample drawn. This is measured from the
-      time the patient entered the study.
+      Subject
+         a factor identifying the patient on whom the data were
+         collected.
 
-   conc
-      a numeric vector giving the serum quinidine concentration (mg/L).
+      time
+         a numeric vector giving the time (hr) at which the drug was
+         administered or the blood sample drawn. This is measured from
+         the time the patient entered the study.
 
-   dose
-      a numeric vector giving the dose of drug administered (mg).
-      Although there were two different forms of quinidine administered,
-      the doses were adjusted for differences in salt content by
-      conversion to milligrams of quinidine base.
+      conc
+         a numeric vector giving the serum quinidine concentration
+         (mg/L).
 
-   interval
-      a numeric vector giving the when the drug has been given at
-      regular intervals for a sufficiently long period of time to assume
-      steady state behavior, the interval is recorded.
+      dose
+         a numeric vector giving the dose of drug administered (mg).
+         Although there were two different forms of quinidine
+         administered, the doses were adjusted for differences in salt
+         content by conversion to milligrams of quinidine base.
 
-   Age
-      a numeric vector giving the age of the subject on entry to the
-      study (yr).
+      interval
+         a numeric vector giving the when the drug has been given at
+         regular intervals for a sufficiently long period of time to
+         assume steady state behavior, the interval is recorded.
 
-   Height
-      a numeric vector giving the height of the subject on entry to the
-      study (in.).
+      Age
+         a numeric vector giving the age of the subject on entry to the
+         study (yr).
 
-   Weight
-      a numeric vector giving the body weight of the subject (kg).
+      Height
+         a numeric vector giving the height of the subject on entry to
+         the study (in.).
 
-   Race
-      a factor with levels ``Caucasian``, ``Latin``, and ``Black``
-      identifying the race of the subject.
+      Weight
+         a numeric vector giving the body weight of the subject (kg).
 
-   Smoke
-      a factor with levels ``no`` and ``yes`` giving smoking status at
-      the time of the measurement.
+      Race
+         a factor with levels ``Caucasian``, ``Latin``, and ``Black``
+         identifying the race of the subject.
 
-   Ethanol
-      a factor with levels ``none``, ``current``, ``former`` giving
-      ethanol (alcohol) abuse status at the time of the measurement.
+      Smoke
+         a factor with levels ``no`` and ``yes`` giving smoking status
+         at the time of the measurement.
 
-   Heart
-      a factor with levels ``No/Mild``, ``Moderate``, and ``Severe``
-      indicating congestive heart failure for the subject.
+      Ethanol
+         a factor with levels ``none``, ``current``, ``former`` giving
+         ethanol (alcohol) abuse status at the time of the measurement.
 
-   Creatinine
-      an ordered factor with levels ``< 50`` < ``>= 50`` indicating the
-      creatinine clearance (mg/min).
+      Heart
+         a factor with levels ``No/Mild``, ``Moderate``, and ``Severe``
+         indicating congestive heart failure for the subject.
 
-   glyco
-      a numeric vector giving the alpha-1 acid glycoprotein
-      concentration (mg/dL). Often measured at the same time as the
-      quinidine concentration.
+      Creatinine
+         an ordered factor with levels ``< 50`` < ``>= 50`` indicating
+         the creatinine clearance (mg/min).
 
-   .. rubric:: Details
-      :name: details
+      glyco
+         a numeric vector giving the alpha-1 acid glycoprotein
+         concentration (mg/dL). Often measured at the same time as the
+         quinidine concentration.
 
-   Verme et al. (1992) analyze routine clinical data on patients
-   receiving the drug quinidine as a treatment for cardiac arrhythmia
-   (atrial fibrillation or ventricular arrhythmias). All patients were
-   receiving oral quinidine doses. At irregular intervals blood samples
-   were drawn and serum concentrations of quinidine were determined.
-   These data are analyzed in several publications, including Davidian
-   and Giltinan (1995, section 9.3).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Verme et al. (1992) analyze routine clinical data on patients
+      receiving the drug quinidine as a treatment for cardiac arrhythmia
+      (atrial fibrillation or ventricular arrhythmias). All patients
+      were receiving oral quinidine doses. At irregular intervals blood
+      samples were drawn and serum concentrations of quinidine were
+      determined. These data are analyzed in several publications,
+      including Davidian and Giltinan (1995, section 9.3).
 
-   Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S
-   and S-PLUS*, Springer, New York. (Appendix A.25)
+      .. rubric:: Source
+         :name: source
 
-   Davidian, M. and Giltinan, D. M. (1995), *Nonlinear Models for
-   Repeated Measurement Data*, Chapman and Hall, London.
+      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
+      S and S-PLUS*, Springer, New York. (Appendix A.25)
 
-   Verme, C. N., Ludden, T. M., Clementi, W. A. and Harris, S. C.
-   (1992), Pharmacokinetics of quinidine in male patients: A population
-   analysis, *Clinical Pharmacokinetics*, **22**, 468-480.
+      Davidian, M. and Giltinan, D. M. (1995), *Nonlinear Models for
+      Repeated Measurement Data*, Chapman and Hall, London.
+
+      Verme, C. N., Ludden, T. M., Clementi, W. A. and Harris, S. C.
+      (1992), Pharmacokinetics of quinidine in male patients: A
+      population analysis, *Clinical Pharmacokinetics*, **22**, 468-480.

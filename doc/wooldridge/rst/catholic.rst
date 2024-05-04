@@ -1,73 +1,75 @@
 .. container::
 
-   ======== ===============
-   catholic R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: catholic
-      :name: catholic
+      ======== ===============
+      catholic R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: catholic
+         :name: catholic
 
-   Wooldridge Source: Altonji, J.G., T.E. Elder, and C.R. Taber (2005),
-   “An Evaluation of Instrumental Variable Strategies for Estimating the
-   Effects of Catholic Schooling,” Journal of Human Resources 40,
-   791-821. Professor Elder kindly provided a subset of the data, with
-   some variables stripped away for confidentiality reasons. Data loads
-   lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Altonji, J.G., T.E. Elder, and C.R. Taber
+      (2005), “An Evaluation of Instrumental Variable Strategies for
+      Estimating the Effects of Catholic Schooling,” Journal of Human
+      Resources 40, 791-821. Professor Elder kindly provided a subset of
+      the data, with some variables stripped away for confidentiality
+      reasons. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('catholic')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('catholic')
 
-   A data.frame with 7430 observations on 13 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **id:** person identifier
+      A data.frame with 7430 observations on 13 variables:
 
-   -  **read12:** reading standardized score
+      -  **id:** person identifier
 
-   -  **math12:** mathematics standardized score
+      -  **read12:** reading standardized score
 
-   -  **female:** =1 if female
+      -  **math12:** mathematics standardized score
 
-   -  **asian:** =1 if Asian
+      -  **female:** =1 if female
 
-   -  **hispan:** =1 if Hispanic
+      -  **asian:** =1 if Asian
 
-   -  **black:** =1 if black
+      -  **hispan:** =1 if Hispanic
 
-   -  **motheduc:** mother's years of education
+      -  **black:** =1 if black
 
-   -  **fatheduc:** father's years of education
+      -  **motheduc:** mother's years of education
 
-   -  **lfaminc:** log of family income
+      -  **fatheduc:** father's years of education
 
-   -  **hsgrad:** =1 if graduated from high school by 1994
+      -  **lfaminc:** log of family income
 
-   -  **cathhs:** =1 if attended Catholic HS
+      -  **hsgrad:** =1 if graduated from high school by 1994
 
-   -  **parcath:** =1 if a parent reports being Catholic
+      -  **cathhs:** =1 if attended Catholic HS
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **parcath:** =1 if a parent reports being Catholic
 
-   pages 267, 551
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 267, 551
 
-   http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(catholic)
+      ::
+
+          str(catholic)

@@ -1,63 +1,66 @@
 .. container::
 
-   ======== ===============
-   Icecream R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Ice Cream Consumption
-      :name: Icecream
+      ======== ===============
+      Icecream R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Ice Cream Consumption
+         :name: ice-cream-consumption
 
-   four–weekly observations from 1951–03–18 to 1953–07–11
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 30
+      four–weekly observations from 1951–03–18 to 1953–07–11
 
-   *observation* : country
+      *number of observations* : 30
 
-   *country* : United States
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Icecream)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Icecream)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   cons
-      consumption of ice cream per head (in pints);
+      A time series containing :
 
-   income
-      average family income per week (in US Dollars);
+      cons
+         consumption of ice cream per head (in pints);
 
-   price
-      price of ice cream (per pint);
+      income
+         average family income per week (in US Dollars);
 
-   temp
-      average temperature (in Fahrenheit);
+      price
+         price of ice cream (per pint);
 
-   .. rubric:: Source
-      :name: source
+      temp
+         average temperature (in Fahrenheit);
 
-   Hildreth, C. and J. Lu (1960) *Demand relations with autocorrelated
-   disturbances*, Technical Bulletin No 2765, Michigan State University.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Hildreth, C. and J. Lu (1960) *Demand relations with
+      autocorrelated disturbances*, Technical Bulletin No 2765, Michigan
+      State University.
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons, chapter 4.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons, chapter 4.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

@@ -1,76 +1,78 @@
 .. container::
 
-   ======= ===============
-   Smarket R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: S&P Stock Market Data
-      :name: Smarket
+      ======= ===============
+      Smarket R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: S&P Stock Market Data
+         :name: sp-stock-market-data
 
-   Daily percentage returns for the S&P 500 stock index between 2001 and
-   2005.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Daily percentage returns for the S&P 500 stock index between 2001
+      and 2005.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Smarket
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Smarket
 
-   A data frame with 1250 observations on the following 9 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Year``
-      The year that the observation was recorded
+      A data frame with 1250 observations on the following 9 variables.
 
-   ``Lag1``
-      Percentage return for previous day
+      ``Year``
+         The year that the observation was recorded
 
-   ``Lag2``
-      Percentage return for 2 days previous
+      ``Lag1``
+         Percentage return for previous day
 
-   ``Lag3``
-      Percentage return for 3 days previous
+      ``Lag2``
+         Percentage return for 2 days previous
 
-   ``Lag4``
-      Percentage return for 4 days previous
+      ``Lag3``
+         Percentage return for 3 days previous
 
-   ``Lag5``
-      Percentage return for 5 days previous
+      ``Lag4``
+         Percentage return for 4 days previous
 
-   ``Volume``
-      Volume of shares traded (number of daily shares traded in
-      billions)
+      ``Lag5``
+         Percentage return for 5 days previous
 
-   ``Today``
-      Percentage return for today
+      ``Volume``
+         Volume of shares traded (number of daily shares traded in
+         billions)
 
-   ``Direction``
-      A factor with levels ``Down`` and ``Up`` indicating whether the
-      market had a positive or negative return on a given day
+      ``Today``
+         Percentage return for today
 
-   .. rubric:: Source
-      :name: source
+      ``Direction``
+         A factor with levels ``Down`` and ``Up`` indicating whether the
+         market had a positive or negative return on a given day
 
-   Raw values of the S&P 500 were obtained from Yahoo Finance and then
-   converted to percentages and lagged.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Raw values of the S&P 500 were obtained from Yahoo Finance and
+      then converted to percentages and lagged.
 
-   James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
-   Introduction to Statistical Learning with applications in R*,
-   https://www.statlearning.com, Springer-Verlag, New York
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
+      Introduction to Statistical Learning with applications in R*,
+      https://www.statlearning.com, Springer-Verlag, New York
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(Smarket)
-      lm(Today~Lag1+Lag2,data=Smarket)
+      ::
+
+         summary(Smarket)
+         lm(Today~Lag1+Lag2,data=Smarket)

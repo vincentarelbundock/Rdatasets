@@ -1,58 +1,61 @@
 .. container::
 
-   =========== ===============
-   possumsites R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Possum Sites
-      :name: possumsites
+      =========== ===============
+      possumsites R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Possum Sites
+         :name: possum-sites
 
-   The ``possumsites`` data frame consists of Longitudes, Latitudes, and
-   altitudes for the seven sites from Southern Victoria to central
-   Queensland where the ``possum`` observations were made.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``possumsites`` data frame consists of Longitudes, Latitudes,
+      and altitudes for the seven sites from Southern Victoria to
+      central Queensland where the ``possum`` observations were made.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      possumsites
+      ::
 
-   .. rubric:: Format
-      :name: format
+         possumsites
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Longitude
-      a numeric vector
+      This data frame contains the following columns:
 
-   Latitude
-      a numeric vector
+      Longitude
+         a numeric vector
 
-   altitude
-      in meters
+      Latitude
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      altitude
+         in meters
 
-   Lindenmayer, D. B., Viggers, K. L., Cunningham, R. B., and Donnelly,
-   C. F. 1995. Morphological variation among columns of the mountain
-   brushtail possum, Trichosurus caninus Ogilby (Phalangeridae:
-   Marsupiala). Australian Journal of Zoology 43: 449-458.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Lindenmayer, D. B., Viggers, K. L., Cunningham, R. B., and
+      Donnelly, C. F. 1995. Morphological variation among columns of the
+      mountain brushtail possum, Trichosurus caninus Ogilby
+      (Phalangeridae: Marsupiala). Australian Journal of Zoology 43:
+      449-458.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(oz)
-      oz(sections=c(3:5, 11:16))
-      attach(possumsites)
-      points(Longitude, Latitude, pch=16, col=2)
-      chw <- par()$cxy[1]
-      chh <- par()$cxy[2]
-      posval <- c(2,4,2,2,4,2,2)
-      text(Longitude+(3-posval)*chw/4, Latitude, row.names(possumsites), pos=posval)
+      ::
+
+         require(oz)
+         oz(sections=c(3:5, 11:16))
+         attach(possumsites)
+         points(Longitude, Latitude, pch=16, col=2)
+         chw <- par()$cxy[1]
+         chh <- par()$cxy[2]
+         posval <- c(2,4,2,2,4,2,2)
+         text(Longitude+(3-posval)*chw/4, Latitude, row.names(possumsites), pos=posval)

@@ -1,0 +1,110 @@
+<!DOCTYPE html><html><head><title>R: Domestic Conflict Events, 2012</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>DCE12</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Domestic Conflict Events, 2012</h2>
+
+<h3>Description</h3>
+
+<p>A data set on domestic conflict events in 2012 as recorded by the Cross-National
+Time Series Database. Data exist for teaching about count models.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>DCE12
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 198 observations on the following 19 variables.
+</p>
+
+<dl>
+<dt><code>iso2c</code></dt><dd><p>a two-character ISO code</p>
+</dd>
+<dt><code>country</code></dt><dd><p>a character name for the country corresponding with the ISO code</p>
+</dd>
+<dt><code>assassinations</code></dt><dd><p>the count of assassinations in 2012</p>
+</dd>
+<dt><code>strikes</code></dt><dd><p>the count of general strikes in 2012</p>
+</dd>
+<dt><code>guerwar</code></dt><dd><p>the count of guerilla warfare events in 2012</p>
+</dd>
+<dt><code>govtcrises</code></dt><dd><p>the count of government crises in 2012</p>
+</dd>
+<dt><code>purges</code></dt><dd><p>the count of purges in 2012</p>
+</dd>
+<dt><code>riots</code></dt><dd><p>the count of riots in 2012</p>
+</dd>
+<dt><code>revolutions</code></dt><dd><p>the count of revolutions in 2012</p>
+</dd>
+<dt><code>agd</code></dt><dd><p>the count of anti-government demonstrations in 2012</p>
+</dd>
+<dt><code>wci</code></dt><dd><p>the weighted conflict index in 2012</p>
+</dd>
+<dt><code>area</code></dt><dd><p>the land area in square kilometers</p>
+</dd>
+<dt><code>adultpop</code></dt><dd><p>the adult (15+) population (in 1000s)</p>
+</dd>
+<dt><code>youthpop</code></dt><dd><p>the youth (15-29) population (in 1000s)</p>
+</dd>
+<dt><code>gdppc</code></dt><dd><p>GDP per capita (in constant 2015 USD)</p>
+</dd>
+<dt><code>urbanshare</code></dt><dd><p>urban population over total population (as percentage)</p>
+</dd>
+<dt><code>tpop</code></dt><dd><p>total population (in 1000s)</p>
+</dd>
+<dt><code>polyarchy</code></dt><dd><p>electoral democracy index, an estimate of democracy</p>
+</dd>
+<dt><code>perctser</code></dt><dd><p>percentage of tertiary school-aged population enrolled in tertiary school</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Conflict events data come from the Cross-National Time Series Database. I've
+used these data before for published papers, but the relative opacity of a
+data set for yearly purchase comes with a bit of a caveat emptor for the
+important question of real-world inference.
+</p>
+<p>Data on the democracy estimate and tertiary school enrollment rate come from
+the Varieties of Democracy project. Democracy estimate for Palestine comes as
+a simple average of the two Palestinian territories collected by the
+Varieties of Democracy project. These are West Bank and Gaza. The tertiary
+school enrollment variable, which originally comes from a data project by
+Barro and Lee (2013), is &quot;filled&quot; to the referent year from the most recent
+year available in the data. That would be 2010. It's fine for this purpose.
+</p>
+<p>Population estimates come from the UN Population Division. GDP per capita
+comes from the World Bank. The estimate of land area (in square kilometers)
+comes from the CNTS. Country name comes from CNTS as well.
+</p>
+<p>In all but the case of the data from CNTS, and the &quot;filled&quot; case of the
+tertiary school enrollment variable, the referent year for the data is 2011.
+Not that anyone is going to care too much for a simple data set like this,
+but this would be the ol' endogeneity concern.
+</p>
+
+</main>
+
+</div>
+</body></html>

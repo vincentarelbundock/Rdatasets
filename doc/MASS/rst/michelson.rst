@@ -1,52 +1,54 @@
 .. container::
 
-   ========= ===============
-   michelson R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Michelson's Speed of Light Data
-      :name: michelson
+      ========= ===============
+      michelson R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Michelson's Speed of Light Data
+         :name: michelsons-speed-of-light-data
 
-   Measurements of the speed of light in air, made between 5th June and
-   2nd July, 1879. The data consists of five experiments, each
-   consisting of 20 consecutive runs. The response is the speed of light
-   in km/s, less 299000. The currently accepted value, on this scale of
-   measurement, is 734.5.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Measurements of the speed of light in air, made between 5th June
+      and 2nd July, 1879. The data consists of five experiments, each
+      consisting of 20 consecutive runs. The response is the speed of
+      light in km/s, less 299000. The currently accepted value, on this
+      scale of measurement, is 734.5.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      michelson
+      ::
 
-   .. rubric:: Format
-      :name: format
+         michelson
 
-   The data frame contains the following components:
+      .. rubric:: Format
+         :name: format
 
-   ``Expt``
-      The experiment number, from 1 to 5.
+      The data frame contains the following components:
 
-   ``Run``
-      The run number within each experiment.
+      ``Expt``
+         The experiment number, from 1 to 5.
 
-   ``Speed``
-      Speed-of-light measurement.
+      ``Run``
+         The run number within each experiment.
 
-   .. rubric:: Source
-      :name: source
+      ``Speed``
+         Speed-of-light measurement.
 
-   A.J. Weekes (1986) *A Genstat Primer.* Edward Arnold.
+      .. rubric:: Source
+         :name: source
 
-   S. M. Stigler (1977) Do robust estimators work with real data?
-   *Annals of Statistics* **5**, 1055–1098.
+      A.J. Weekes (1986) *A Genstat Primer.* Edward Arnold.
 
-   .. rubric:: References
-      :name: references
+      S. M. Stigler (1977) Do robust estimators work with real data?
+      *Annals of Statistics* **5**, 1055–1098.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

@@ -1,36 +1,38 @@
 .. container::
 
-   ============ ===============
-   Fluorescence R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Measuring Calcium Binding to Proteins
-      :name: Fluorescence
+      ============ ===============
+      Fluorescence R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Measuring Calcium Binding to Proteins
+         :name: measuring-calcium-binding-to-proteins
 
-   Data from an experiment on calcium binding to proteins
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Data from an experiment on calcium binding to proteins
 
-   A data frame with 51 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   =============== ======================================
-   ``Calcium``     Log of free calcium concentration
-   ``ProteinProp`` Proportion of protein bound to calcium
-   \               
-   =============== ======================================
+      A data frame with 51 observations on the following 2 variables.
 
-   .. rubric:: Details
-      :name: details
+      =============== ======================================
+      ``Calcium``     Log of free calcium concentration
+      ``ProteinProp`` Proportion of protein bound to calcium
+      \               
+      =============== ======================================
 
-   Suzanne Rohrback used a novel approach in a series of experiments to
-   examine calcium binding proteins.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Suzanne Rohrback used a novel approach in a series of experiments
+      to examine calcium binding proteins.
 
-   Thanks to Suzanne Rohrback for providing these data from her honors
-   experiments at Kenyon College.
+      .. rubric:: Source
+         :name: source
+
+      Thanks to Suzanne Rohrback for providing these data from her
+      honors experiments at Kenyon College.

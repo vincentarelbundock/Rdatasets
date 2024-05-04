@@ -1,52 +1,55 @@
 .. container::
 
-   ========== ===============
-   mignonette R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Darwin's Wild Mignonette Data
-      :name: mignonette
+      ========== ===============
+      mignonette R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Darwin's Wild Mignonette Data
+         :name: darwins-wild-mignonette-data
 
-   Data compare the heights of crossed plants with self-fertilized
-   plants of the wild mignonette *reseda lutea*. Plants were paired
-   within the pots in which they were grown, with one on one side and
-   one on the other.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data compare the heights of crossed plants with self-fertilized
+      plants of the wild mignonette *reseda lutea*. Plants were paired
+      within the pots in which they were grown, with one on one side and
+      one on the other.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      mignonette
+      ::
 
-   .. rubric:: Format
-      :name: format
+         mignonette
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   cross
-      heights of the crossed plants
+      This data frame contains the following columns:
 
-   self
-      heights of the self-fertilized plants
+      cross
+         heights of the crossed plants
 
-   .. rubric:: Source
-      :name: source
+      self
+         heights of the self-fertilized plants
 
-   Darwin, Charles. 1877. The Effects of Cross and Self Fertilisation in
-   the Vegetable Kingdom. Appleton and Company, New York, page 118.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Darwin, Charles. 1877. The Effects of Cross and Self Fertilisation
+      in the Vegetable Kingdom. Appleton and Company, New York, page
+      118.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      print("Is Pairing Helpful? - Example 4.3.1")
+      ::
 
-      attach(mignonette)
-      plot(cross ~ self, pch=rep(c(4,1), c(3,12))); abline(0,1) 
-      abline(mean(cross-self), 1, lty=2)
-      detach(mignonette)
+         print("Is Pairing Helpful? - Example 4.3.1")
+
+         attach(mignonette)
+         plot(cross ~ self, pch=rep(c(4,1), c(3,12))); abline(0,1) 
+         abline(mean(cross-self), 1, lty=2)
+         detach(mignonette)

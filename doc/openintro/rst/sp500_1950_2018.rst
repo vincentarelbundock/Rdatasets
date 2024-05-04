@@ -1,64 +1,67 @@
 .. container::
 
-   =============== ===============
-   sp500_1950_2018 R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: Daily observations for the S&P 500
-      :name: sp500_1950_2018
+      =============== ===============
+      sp500_1950_2018 R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Daily observations for the S&P 500
+         :name: daily-observations-for-the-sp-500
 
-   Data runs from 1950 to near the end of 2018.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data runs from 1950 to near the end of 2018.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      sp500_1950_2018
+      ::
 
-   .. rubric:: Format
-      :name: format
+         sp500_1950_2018
 
-   A data frame with 17346 observations on the following 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   Date
-      Date of the form ``"YYYY-MM-DD"``.
+      A data frame with 17346 observations on the following 7 variables.
 
-   Open
-      Opening price.
+      Date
+         Date of the form ``"YYYY-MM-DD"``.
 
-   High
-      Highest price of the day.
+      Open
+         Opening price.
 
-   Low
-      Lowest price of the day.
+      High
+         Highest price of the day.
 
-   Close
-      Closing price of the day.
+      Low
+         Lowest price of the day.
 
-   Adj.Close
-      Adjusted price at close after accounting for dividends paid out.
+      Close
+         Closing price of the day.
 
-   Volume
-      Trading volume.
+      Adj.Close
+         Adjusted price at close after accounting for dividends paid
+         out.
 
-   .. rubric:: Source
-      :name: source
+      Volume
+         Trading volume.
 
-   Yahoo! Finance
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Yahoo! Finance
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(sp500_1950_2018)
-      sp500.ten.years <- subset(
-        sp500_1950_2018,
-        "2009-01-01" <= as.Date(Date) & as.Date(Date) <= "2018-12-31"
-      )
-      d <- diff(sp500.ten.years$Adj.Close)
-      mean(d > 0)
+      ::
+
+         data(sp500_1950_2018)
+         sp500.ten.years <- subset(
+           sp500_1950_2018,
+           "2009-01-01" <= as.Date(Date) & as.Date(Date) <= "2018-12-31"
+         )
+         d <- diff(sp500.ten.years$Adj.Close)
+         mean(d > 0)

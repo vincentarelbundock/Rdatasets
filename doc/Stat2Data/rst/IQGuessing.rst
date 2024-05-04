@@ -1,44 +1,46 @@
 .. container::
 
-   ========== ===============
-   IQGuessing R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Guess IQ from a Photo?
-      :name: IQGuessing
+      ========== ===============
+      IQGuessing R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Guess IQ from a Photo?
+         :name: guess-iq-from-a-photo
 
-   True IQ and guessed IQ (from a photo) for 40 women
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      True IQ and guessed IQ (from a photo) for 40 women
 
-   A data frame with 40 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Age``
-      Age of woman
+      A data frame with 40 observations on the following 3 variables.
 
-   ``GuessIQ``
-      Guessed IQ
+      ``Age``
+         Age of woman
 
-   ``TrueIQ``
-      Actual IQ
+      ``GuessIQ``
+         Guessed IQ
 
-   .. rubric:: Details
-      :name: details
+      ``TrueIQ``
+         Actual IQ
 
-   One hundred sixty raters (75 men and 85 women) took part in judging
-   intelligence (on a 1=high to 7=low scale) based on photographs of
-   students. The ratings were converted to z-scores and then put on an
-   IQ scale to compare to actual measured IQ. There were photos of 80
-   students, 40 men and 40 women. This data set contains data for the 40
-   women.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      One hundred sixty raters (75 men and 85 women) took part in
+      judging intelligence (on a 1=high to 7=low scale) based on
+      photographs of students. The ratings were converted to z-scores
+      and then put on an IQ scale to compare to actual measured IQ.
+      There were photos of 80 students, 40 men and 40 women. This data
+      set contains data for the 40 women.
 
-   Kleisner K, Chvatalova V, Flegr J (2014), "Perceived Intelligence Is
-   Associated with Measured Intelligence in Men but Not Women," PLoS ONE
-   9(3): e81237. doi:10.1371/journal.pone.0081237.
+      .. rubric:: Source
+         :name: source
+
+      Kleisner K, Chvatalova V, Flegr J (2014), "Perceived Intelligence
+      Is Associated with Measured Intelligence in Men but Not Women,"
+      PLoS ONE 9(3): e81237. doi:10.1371/journal.pone.0081237.

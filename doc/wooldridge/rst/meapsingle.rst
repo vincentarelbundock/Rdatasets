@@ -1,81 +1,84 @@
 .. container::
 
-   ========== ===============
-   meapsingle R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: meapsingle
-      :name: meapsingle
+      ========== ===============
+      meapsingle R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: meapsingle
+         :name: meapsingle
 
-   Wooldridge Source: Collected by Professor Leslie Papke, an economics
-   professor at MSU, from the Michigan Department of Education web site,
-   www.michigan.gov/mde, and the U.S. Census Bureau. Professor Papke
-   kindly provided the data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Collected by Professor Leslie Papke, an
+      economics professor at MSU, from the Michigan Department of
+      Education web site, www.michigan.gov/mde, and the U.S. Census
+      Bureau. Professor Papke kindly provided the data. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('meapsingle')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('meapsingle')
 
-   A data.frame with 229 observations on 18 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **dcode:** district code
+      A data.frame with 229 observations on 18 variables:
 
-   -  **bcode:** building code
+      -  **dcode:** district code
 
-   -  **math4:** percent satisfactory, 4th grade math
+      -  **bcode:** building code
 
-   -  **read4:** percent satisfactory, 4th grade reading
+      -  **math4:** percent satisfactory, 4th grade math
 
-   -  **enroll:** school enrollment
+      -  **read4:** percent satisfactory, 4th grade reading
 
-   -  **exppp:** expenditures per pupil, $
+      -  **enroll:** school enrollment
 
-   -  **free:** percent eligible, free lunch
+      -  **exppp:** expenditures per pupil, $
 
-   -  **reduced:** percent eligible, reduced lunch
+      -  **free:** percent eligible, free lunch
 
-   -  **lunch:** free + reduced
+      -  **reduced:** percent eligible, reduced lunch
 
-   -  **medinc:** zipcode median family, $ (1999)
+      -  **lunch:** free + reduced
 
-   -  **totchild:** # of children (in zipcode)
+      -  **medinc:** zipcode median family, $ (1999)
 
-   -  **married:** # of children in married-couple families
+      -  **totchild:** # of children (in zipcode)
 
-   -  **single:** # of children not in married-couple families
+      -  **married:** # of children in married-couple families
 
-   -  **pctsgle:** percent of children not in married-couple families
+      -  **single:** # of children not in married-couple families
 
-   -  **zipcode:** school zipcode
+      -  **pctsgle:** percent of children not in married-couple families
 
-   -  **lenroll:** log(enroll)
+      -  **zipcode:** school zipcode
 
-   -  **lexppp:** log(exppp)
+      -  **lenroll:** log(enroll)
 
-   -  **lmedinc:** log(medinc)
+      -  **lexppp:** log(exppp)
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **lmedinc:** log(medinc)
 
-   100, 145-146, 198
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      100, 145-146, 198
 
-   http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(meapsingle)
+      ::
+
+          str(meapsingle)

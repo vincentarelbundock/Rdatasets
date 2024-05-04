@@ -1,43 +1,45 @@
 .. container::
 
-   =================== ===============
-   speed_gender_height R Documentation
-   =================== ===============
+   .. container::
 
-   .. rubric:: Speed, gender, and height of 1325 students
-      :name: speed_gender_height
+      =================== ===============
+      speed_gender_height R Documentation
+      =================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Speed, gender, and height of 1325 students
+         :name: speed-gender-and-height-of-1325-students
 
-   1,325 UCLA students were asked to fill out a survey where they were
-   asked about their height, fastest speed they have ever driven, and
-   gender.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      1,325 UCLA students were asked to fill out a survey where they
+      were asked about their height, fastest speed they have ever
+      driven, and gender.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      speed_gender_height
+      ::
 
-   .. rubric:: Format
-      :name: format
+         speed_gender_height
 
-   A data frame with 1325 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   speed
-      a numeric vector
+      A data frame with 1325 observations on the following 3 variables.
 
-   gender
-      a factor with levels ``female`` and ``male``
+      speed
+         a numeric vector
 
-   height
-      a numeric vector
+      gender
+         a factor with levels ``female`` and ``male``
 
-   .. rubric:: Examples
-      :name: examples
+      height
+         a numeric vector
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      speed_gender_height
+      ::
+
+         speed_gender_height

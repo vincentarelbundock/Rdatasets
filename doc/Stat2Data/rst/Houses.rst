@@ -1,41 +1,43 @@
 .. container::
 
-   ====== ===============
-   Houses R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: House Prices, Sizes, and Lot Areas
-      :name: Houses
+      ====== ===============
+      Houses R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: House Prices, Sizes, and Lot Areas
+         :name: house-prices-sizes-and-lot-areas
 
-   Selling price and characteristics for a sample of 20 houses in a
-   small town
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Selling price and characteristics for a sample of 20 houses in a
+      small town
 
-   A data frame with 20 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ========= ========================================
-   ``Price`` Selling price (in dollars)
-   ``Size``  Size of the house (in square feet)
-   ``Lot``   Area of the house's lot (in square feet)
-   \         
-   ========= ========================================
+      A data frame with 20 observations on the following 3 variables.
 
-   .. rubric:: Details
-      :name: details
+      ========= ========================================
+      ``Price`` Selling price (in dollars)
+      ``Size``  Size of the house (in square feet)
+      ``Lot``   Area of the house's lot (in square feet)
+      \         
+      ========= ========================================
 
-   This dataset contains selling prices for 20 houses that were sold in
-   2008 in a small midwestern town. The file also contains data on the
-   size of each house (in square feet) and the size of the lot (in
-   square feet) that the house is on.
+      .. rubric:: Details
+         :name: details
 
-   Updated to HousesNY in second edition.
+      This dataset contains selling prices for 20 houses that were sold
+      in 2008 in a small midwestern town. The file also contains data on
+      the size of each house (in square feet) and the size of the lot
+      (in square feet) that the house is on.
 
-   .. rubric:: Source
-      :name: source
+      Updated to HousesNY in second edition.
 
-   Data collected from zillow.com in June 2008.
+      .. rubric:: Source
+         :name: source
+
+      Data collected from zillow.com in June 2008.

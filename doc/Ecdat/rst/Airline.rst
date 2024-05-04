@@ -1,62 +1,64 @@
 .. container::
 
-   ======= ===============
-   Airline R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Cost for U.S. Airlines
-      :name: Airline
+      ======= ===============
+      Airline R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cost for U.S. Airlines
+         :name: cost-for-u.s.-airlines
 
-   a panel of 6 observations from 1970 to 1984
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 90
+      a panel of 6 observations from 1970 to 1984
 
-   *observation* : production units
+      *number of observations* : 90
 
-   *country* : United States
+      *observation* : production units
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Airline)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Airline)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   airline
+      A dataframe containing :
+
       airline
+         airline
 
-   year
       year
+         year
 
-   cost
-      total cost, in $1,000
+      cost
+         total cost, in $1,000
 
-   output
-      output, in revenue passenger miles, index number
+      output
+         output, in revenue passenger miles, index number
 
-   pf
-      fuel price
+      pf
+         fuel price
 
-   lf
-      load factor, the average capacity utilization of the fleet
+      lf
+         load factor, the average capacity utilization of the fleet
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: References
+         :name: references
 
-   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   https://archive.org/details/econometricanaly0000gree_f4x3, Table
-   F7.1.
+      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+      https://archive.org/details/econometricanaly0000gree_f4x3, Table
+      F7.1.
 
-   .. rubric:: See Also
-      :name: see-also
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``, ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``, ``Index.Time.Series``

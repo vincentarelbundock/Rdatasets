@@ -1,61 +1,63 @@
 .. container::
 
-   ======= ===============
-   rdtelec R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: rdtelec
-      :name: rdtelec
+      ======= ===============
+      rdtelec R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: rdtelec
+         :name: rdtelec
 
-   Wooldridge Source: See RDCHEM.RAW Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: See RDCHEM.RAW Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('rdtelec')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('rdtelec')
 
-   A data.frame with 29 observations on 6 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **rd:** R&D spending, millions $
+      A data.frame with 29 observations on 6 variables:
 
-   -  **sales:** firm sales, millions $
+      -  **rd:** R&D spending, millions $
 
-   -  **rdintens:** rd as percent of sales
+      -  **sales:** firm sales, millions $
 
-   -  **lrd:** log(rd)
+      -  **rdintens:** rd as percent of sales
 
-   -  **lsales:** log(sales)
+      -  **lrd:** log(rd)
 
-   -  **salessq:** sales^2
+      -  **lsales:** log(sales)
 
-   .. rubric:: Notes
-      :name: notes
+      -  **salessq:** sales^2
 
-   According to these data, the R&D/firm size relationship is different
-   in the telecommunications industry than in the chemical industry:
-   there is pretty strong evidence that R&D intensity decreases with
-   firm size in telecommunications. Of course, that was in 1991. The
-   data could easily be updated, and a panel data set could be
-   constructed.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: not used
+      According to these data, the R&D/firm size relationship is
+      different in the telecommunications industry than in the chemical
+      industry: there is pretty strong evidence that R&D intensity
+      decreases with firm size in telecommunications. Of course, that
+      was in 1991. The data could easily be updated, and a panel data
+      set could be constructed.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: not used
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(rdtelec)
+      ::
+
+          str(rdtelec)

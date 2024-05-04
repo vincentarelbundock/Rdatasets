@@ -1,78 +1,80 @@
 .. container::
 
-   ==================== ===============
-   USstateAbbreviations R Documentation
-   ==================== ===============
+   .. container::
 
-   .. rubric:: Standard abbreviations for states of the United States
-      :name: USstateAbbreviations
+      ==================== ===============
+      USstateAbbreviations R Documentation
+      ==================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Standard abbreviations for states of the United States
+         :name: standard-abbreviations-for-states-of-the-united-states
 
-   The object returned by ``readUSstateAbbreviations()`` on May 20,
-   2013.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The object returned by ``readUSstateAbbreviations()`` on May 20,
+      2013.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(USstateAbbreviations)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(USstateAbbreviations)
 
-   A ``data.frame`` containing 10 different character vectors of names
-   or codes for 76 different political entities including the United
-   States, the 50 states within the US, plus the District of Columbia,
-   US territories and other political designation, some of which are
-   obsolete but are included for historical reference.
+      .. rubric:: Format
+         :name: format
 
-   Name
-      The standard name of the entity.
+      A ``data.frame`` containing 10 different character vectors of
+      names or codes for 76 different political entities including the
+      United States, the 50 states within the US, plus the District of
+      Columbia, US territories and other political designation, some of
+      which are obsolete but are included for historical reference.
 
-   Status
-      description of status, e.g., state / commonwealth vs. island,
-      territory, military mail code, etc.
+      Name
+         The standard name of the entity.
 
-   ISO, ANSI.letters, ANSI.digits, USPS, USCG, Old.GPO, AP, Other
-      Alternative abbreviations used per different standards. The most
-      commonly used among these may be the 2-letter codes officially
-      used by the US Postal Service (``USPS``).
+      Status
+         description of status, e.g., state / commonwealth vs. island,
+         territory, military mail code, etc.
 
-   .. rubric:: Details
-      :name: details
+      ISO, ANSI.letters, ANSI.digits, USPS, USCG, Old.GPO, AP, Other
+         Alternative abbreviations used per different standards. The
+         most commonly used among these may be the 2-letter codes
+         officially used by the US Postal Service (``USPS``).
 
-   This was read from `the Wikipedia article on "List of U.S. state
-   abbreviations" <https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>`__
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This was read from `the Wikipedia article on "List of U.S. state
+      abbreviations" <https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>`__
 
-   `the Wikipedia article on "List of U.S. state
-   abbreviations" <https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>`__
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: See Also
-      :name: see-also
+      `the Wikipedia article on "List of U.S. state
+      abbreviations" <https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>`__
 
-   ``readUSstateAbbreviations`` ``showNonASCII``
-   ``grepNonStandardCharacters`` ``subNonStandardCharacters``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``readUSstateAbbreviations`` ``showNonASCII``
+      ``grepNonStandardCharacters`` ``subNonStandardCharacters``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ##
-      ## to use
-      ##
-      data(USstateAbbreviations)
+      ::
 
-      ##
-      ## to update
-      ##
-      ## Not run: 
-      USstateAbb2 <- readUSstateAbbreviations()
+         ##
+         ## to use
+         ##
+         data(USstateAbbreviations)
 
-      ## End(Not run)
+         ##
+         ## to update
+         ##
+         ## Not run: 
+         USstateAbb2 <- readUSstateAbbreviations()
+
+         ## End(Not run)

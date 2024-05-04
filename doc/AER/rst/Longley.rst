@@ -1,83 +1,85 @@
 .. container::
 
-   ======= ===============
-   Longley R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Longley's Regression Data
-      :name: Longley
+      ======= ===============
+      Longley R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Longley's Regression Data
+         :name: longleys-regression-data
 
-   US macroeconomic time series, 1947–1962.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      US macroeconomic time series, 1947–1962.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Longley")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Longley")
 
-   An annual multiple time series from 1947 to 1962 with 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   employment
-      Number of people employed (in 1000s).
+      An annual multiple time series from 1947 to 1962 with 4 variables.
 
-   price
-      GNP deflator.
+      employment
+         Number of people employed (in 1000s).
 
-   gnp
-      Gross national product.
+      price
+         GNP deflator.
 
-   armedforces
-      Number of people in the armed forces.
+      gnp
+         Gross national product.
 
-   .. rubric:: Details
-      :name: details
+      armedforces
+         Number of people in the armed forces.
 
-   An extended version of this data set, formatted as a ``"data.frame"``
-   is available as ``longley`` in base R.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      An extended version of this data set, formatted as a
+      ``"data.frame"`` is available as ``longley`` in base R.
 
-   Online complements to Greene (2003). Table F4.2.
+      .. rubric:: Source
+         :name: source
 
-   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+      Online complements to Greene (2003). Table F4.2.
 
-   .. rubric:: References
-      :name: references
+      https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
-   Saddle River, NJ: Prentice Hall.
+      .. rubric:: References
+         :name: references
 
-   Longley, J.W. (1967). An Appraisal of Least-Squares Programs from the
-   Point of View of the User. *Journal of the American Statistical
-   Association*, **62**, 819–841.
+      Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+      Saddle River, NJ: Prentice Hall.
 
-   .. rubric:: See Also
-      :name: see-also
+      Longley, J.W. (1967). An Appraisal of Least-Squares Programs from
+      the Point of View of the User. *Journal of the American
+      Statistical Association*, **62**, 819–841.
 
-   ``longley``, ``Greene2003``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``longley``, ``Greene2003``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("Longley")
-      library("dynlm")
+      ::
 
-      ## Example 4.6 in Greene (2003)
-      fm1 <- dynlm(employment ~ time(employment) + price + gnp + armedforces,
-        data = Longley)
-      fm2 <- update(fm1, end = 1961)
-      cbind(coef(fm2), coef(fm1))
+         data("Longley")
+         library("dynlm")
 
-      ## Figure 4.3 in Greene (2003)
-      plot(rstandard(fm2), type = "b", ylim = c(-3, 3))
-      abline(h = c(-2, 2), lty = 2)
+         ## Example 4.6 in Greene (2003)
+         fm1 <- dynlm(employment ~ time(employment) + price + gnp + armedforces,
+           data = Longley)
+         fm2 <- update(fm1, end = 1961)
+         cbind(coef(fm2), coef(fm1))
+
+         ## Figure 4.3 in Greene (2003)
+         plot(rstandard(fm2), type = "b", ylim = c(-3, 3))
+         abline(h = c(-2, 2), lty = 2)

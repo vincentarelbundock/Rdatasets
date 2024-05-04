@@ -1,56 +1,59 @@
 .. container::
 
-   ============== ===============
-   eurostat_codes R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Eurostat Country Codes
-      :name: eurostat_codes
+      ============== ===============
+      eurostat_codes R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Eurostat Country Codes
+         :name: eurostat-country-codes
 
-   A data set taken from Eurostat's glossary on codes and country
-   classifications.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data set taken from Eurostat's glossary on codes and country
+      classifications.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      eurostat_codes
+      ::
 
-   .. rubric:: Format
-      :name: format
+         eurostat_codes
 
-   A data frame on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``country``
-      an English country/territorial unit name
+      A data frame on the following 3 variables.
 
-   ``iso2c``
-      a two-character code for the country/territorial unit
+      ``country``
+         an English country/territorial unit name
 
-   ``cat``
-      a category indicator for the country/territorial unit. See Details
-      section for more.
+      ``iso2c``
+         a two-character code for the country/territorial unit
 
-   .. rubric:: Details
-      :name: details
+      ``cat``
+         a category indicator for the country/territorial unit. See
+         Details section for more.
 
-   The ISO two-character code for Kosovo is not "XK". XK is a "user
-   assigned" ISO 3166 code that is not used by the International
-   Organization for Standardization, but is nevertheless in wide use by
-   entities like the European Commission. To the best of my knowledge,
-   Kosovo's official ISO classification is still what it was when it was
-   a subdivision of Serbia/Yugoslavia.
+      .. rubric:: Details
+         :name: details
 
-   A glossary on Eurostat provides the following category entries
-   included in this data frame. "EU" is an European Union member. "EFTA"
-   are countries outside the European Union, but still included in the
-   free trade agreement. "UK" is the United Kingdom, because they left.
-   "EUCC" is a category for European Union candidate countries. "PC" are
-   potential candidates. European Union expansion led to the delineation
-   of neighboring states to "South" and "East" as part of the European
-   Neighbourhood Policy (ENP). "OEC" stands for "Other European
-   Countries", but is effectively a simple indicator for Russia.
+      The ISO two-character code for Kosovo is not "XK". XK is a "user
+      assigned" ISO 3166 code that is not used by the International
+      Organization for Standardization, but is nevertheless in wide use
+      by entities like the European Commission. To the best of my
+      knowledge, Kosovo's official ISO classification is still what it
+      was when it was a subdivision of Serbia/Yugoslavia.
+
+      A glossary on Eurostat provides the following category entries
+      included in this data frame. "EU" is an European Union member.
+      "EFTA" are countries outside the European Union, but still
+      included in the free trade agreement. "UK" is the United Kingdom,
+      because they left. "EUCC" is a category for European Union
+      candidate countries. "PC" are potential candidates. European Union
+      expansion led to the delineation of neighboring states to "South"
+      and "East" as part of the European Neighbourhood Policy (ENP).
+      "OEC" stands for "Other European Countries", but is effectively a
+      simple indicator for Russia.

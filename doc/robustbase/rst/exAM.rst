@@ -1,51 +1,55 @@
 .. container::
 
-   ==== ===============
-   exAM R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Example Data of Antille and May - for Simple Regression
-      :name: exAM
+      ==== ===============
+      exAM R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Example Data of Antille and May - for Simple
+         Regression
+         :name: example-data-of-antille-and-may---for-simple-regression
 
-   This is an artificial data set, cleverly construced and used by
-   Antille and May to demonstrate ‘problems’ with LMS and LTS.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This is an artificial data set, cleverly construced and used by
+      Antille and May to demonstrate ‘problems’ with LMS and LTS.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(exAM, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(exAM, package="robustbase")
 
-   A data frame with 12 observations on 2 variables, ``x`` and ``y``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      A data frame with 12 observations on 2 variables, ``x`` and ``y``.
 
-   Because the points are not in general position, both LMS and LTS
-   typically *fail*; however, e.g., ``rlm(*, method="MM")`` “works”.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Because the points are not in general position, both LMS and LTS
+      typically *fail*; however, e.g., ``rlm(*,     method="MM")``
+      “works”.
 
-   | Antille, G. and El May, H. (1992) The use of slices in the LMS and
-     the method of density slices: Foundation and comparison.
-   | In Yadolah Dodge and Joe Whittaker, editors, *COMPSTAT: Proc. 10th
-     Symp. Computat. Statist., Neuchatel*, **1**, 441–445;
-     Physica-Verlag.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      | Antille, G. and El May, H. (1992) The use of slices in the LMS
+        and the method of density slices: Foundation and comparison.
+      | In Yadolah Dodge and Joe Whittaker, editors, *COMPSTAT: Proc.
+        10th Symp. Computat. Statist., Neuchatel*, **1**, 441–445;
+        Physica-Verlag.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(exAM)
-      plot(exAM)
-      summary(ls <- lm(y ~ x, data=exAM))
-      abline(ls)
+      ::
+
+         data(exAM)
+         plot(exAM)
+         summary(ls <- lm(y ~ x, data=exAM))
+         abline(ls)

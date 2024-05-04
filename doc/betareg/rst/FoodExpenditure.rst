@@ -1,76 +1,78 @@
 .. container::
 
-   =============== ===============
-   FoodExpenditure R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: Proportion of Household Income Spent on Food
-      :name: FoodExpenditure
+      =============== ===============
+      FoodExpenditure R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Proportion of Household Income Spent on Food
+         :name: proportion-of-household-income-spent-on-food
 
-   Data on proportion of income spent on food for a random sample of 38
-   households in a large US city.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on proportion of income spent on food for a random sample of
+      38 households in a large US city.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("FoodExpenditure")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("FoodExpenditure")
 
-   A data frame containing 38 observations on 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   food
-      household expenditures for food.
+      A data frame containing 38 observations on 3 variables.
 
-   income
-      household income.
+      food
+         household expenditures for food.
 
-   persons
-      number of persons living in household.
+      income
+         household income.
 
-   .. rubric:: Source
-      :name: source
+      persons
+         number of persons living in household.
 
-   Taken from Griffiths et al. (1993, Table 15.4).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Taken from Griffiths et al. (1993, Table 15.4).
 
-   Cribari-Neto, F., and Zeileis, A. (2010). Beta Regression in R.
-   *Journal of Statistical Software*, **34**\ (2), 1–24. doi:
-   `10.18637/jss.v034.i02 <https://doi.org/10.18637/jss.v034.i02>`__
+      .. rubric:: References
+         :name: references
 
-   Ferrari, S.L.P., and Cribari-Neto, F. (2004). Beta Regression for
-   Modeling Rates and Proportions. *Journal of Applied Statistics*,
-   **31**\ (7), 799–815.
+      Cribari-Neto, F., and Zeileis, A. (2010). Beta Regression in R.
+      *Journal of Statistical Software*, **34**\ (2), 1–24. doi:
+      `10.18637/jss.v034.i02 <https://doi.org/10.18637/jss.v034.i02>`__
 
-   Griffiths, W.E., Hill, R.C., and Judge, G.G. (1993). *Learning and
-   Practicing Econometrics* New York: John Wiley and Sons.
+      Ferrari, S.L.P., and Cribari-Neto, F. (2004). Beta Regression for
+      Modeling Rates and Proportions. *Journal of Applied Statistics*,
+      **31**\ (7), 799–815.
 
-   .. rubric:: See Also
-      :name: see-also
+      Griffiths, W.E., Hill, R.C., and Judge, G.G. (1993). *Learning and
+      Practicing Econometrics* New York: John Wiley and Sons.
 
-   ``betareg``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``betareg``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("FoodExpenditure", package = "betareg")
+      ::
 
-      ## Ferrari and Cribari-Neto (2004)
-      ## Section 4
-      fe_lin <- lm(I(food/income) ~ income + persons, data = FoodExpenditure)
-      library("lmtest")
-      bptest(fe_lin)
+         data("FoodExpenditure", package = "betareg")
 
-      ## Table 2
-      fe_beta <- betareg(I(food/income) ~ income + persons, data = FoodExpenditure)
-      summary(fe_beta)
+         ## Ferrari and Cribari-Neto (2004)
+         ## Section 4
+         fe_lin <- lm(I(food/income) ~ income + persons, data = FoodExpenditure)
+         library("lmtest")
+         bptest(fe_lin)
+
+         ## Table 2
+         fe_beta <- betareg(I(food/income) ~ income + persons, data = FoodExpenditure)
+         summary(fe_beta)

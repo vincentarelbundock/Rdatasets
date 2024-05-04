@@ -1,46 +1,50 @@
 .. container::
 
-   ========== ===============
-   polls_2008 R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Poll data for popular vote in 2008 presidential election
-      :name: polls_2008
+      ========== ===============
+      polls_2008 R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Poll data for popular vote in 2008 presidential
+         election
+         :name: poll-data-for-popular-vote-in-2008-presidential-election
 
-   Data from different pollsters for the popular vote between Obama and
-   McCain in the 2008 presidential election.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from different pollsters for the popular vote between Obama
+      and McCain in the 2008 presidential election.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      polls_2008
+      ::
 
-   .. rubric:: Format
-      :name: format
+         polls_2008
 
-   An object of class ``data.frame``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``data.frame``.
 
-   -  day. Days until election day. Negative numbers are reported so
-      that days can increase up to 0, which is election day.
+      .. rubric:: Details
+         :name: details
 
-   -  margin. Average difference between Obama and McCain for that day.
+      -  day. Days until election day. Negative numbers are reported so
+         that days can increase up to 0, which is election day.
 
-   .. rubric:: Source
-      :name: source
+      -  margin. Average difference between Obama and McCain for that
+         day.
 
-   https://web.archive.org/web/20161108190914/http://www.pollster.com/08USPresGEMvO-2.html
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://web.archive.org/web/20161108190914/http://www.pollster.com/08USPresGEMvO-2.html
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      with(polls_2008, plot(day, margin))
+      ::
+
+         with(polls_2008, plot(day, margin))

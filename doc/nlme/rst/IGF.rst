@@ -1,46 +1,48 @@
 .. container::
 
-   === ===============
-   IGF R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Radioimmunoassay of IGF-I Protein
-      :name: IGF
+      === ===============
+      IGF R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Radioimmunoassay of IGF-I Protein
+         :name: radioimmunoassay-of-igf-i-protein
 
-   The ``IGF`` data frame has 237 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``IGF`` data frame has 237 rows and 3 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Lot
-      an ordered factor giving the radioactive tracer lot.
+      This data frame contains the following columns:
 
-   age
-      a numeric vector giving the age (in days) of the radioactive
-      tracer.
+      Lot
+         an ordered factor giving the radioactive tracer lot.
 
-   conc
-      a numeric vector giving the estimated concentration of IGF-I
-      protein (ng/ml)
+      age
+         a numeric vector giving the age (in days) of the radioactive
+         tracer.
 
-   .. rubric:: Details
-      :name: details
+      conc
+         a numeric vector giving the estimated concentration of IGF-I
+         protein (ng/ml)
 
-   Davidian and Giltinan (1995) describe data obtained during quality
-   control radioimmunoassays for ten different lots of radioactive
-   tracer used to calibrate the Insulin-like Growth Factor (IGF-I)
-   protein concentration measurements.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Davidian and Giltinan (1995) describe data obtained during quality
+      control radioimmunoassays for ten different lots of radioactive
+      tracer used to calibrate the Insulin-like Growth Factor (IGF-I)
+      protein concentration measurements.
 
-   Davidian, M. and Giltinan, D. M. (1995), *Nonlinear Models for
-   Repeated Measurement Data*, Chapman and Hall, London.
+      .. rubric:: Source
+         :name: source
 
-   Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S
-   and S-PLUS*, Springer, New York. (Appendix A.11)
+      Davidian, M. and Giltinan, D. M. (1995), *Nonlinear Models for
+      Repeated Measurement Data*, Chapman and Hall, London.
+
+      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
+      S and S-PLUS*, Springer, New York. (Appendix A.11)

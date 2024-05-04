@@ -1,40 +1,42 @@
 .. container::
 
-   === ===============
-   aml R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Acute Myelogenous Leukemia survival data
-      :name: aml
+      === ===============
+      aml R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Acute Myelogenous Leukemia survival data
+         :name: acute-myelogenous-leukemia-survival-data
 
-   Survival in patients with Acute Myelogenous Leukemia. The question at
-   the time was whether the standard course of chemotherapy should be
-   extended ('maintainance') for additional cycles.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Survival in patients with Acute Myelogenous Leukemia. The question
+      at the time was whether the standard course of chemotherapy should
+      be extended ('maintainance') for additional cycles.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      aml
-      leukemia
-      data(cancer, package="survival")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         aml
+         leukemia
+         data(cancer, package="survival")
 
-   ======= ========================================
-   time:   survival or censoring time
-   status: censoring status
-   x:      maintenance chemotherapy given? (factor)
-   \       
-   ======= ========================================
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      ======= ========================================
+      time:   survival or censoring time
+      status: censoring status
+      x:      maintenance chemotherapy given? (factor)
+      \       
+      ======= ========================================
 
-   Rupert G. Miller (1997), *Survival Analysis*. John Wiley & Sons.
-   ISBN: 0-471-25218-2.
+      .. rubric:: Source
+         :name: source
+
+      Rupert G. Miller (1997), *Survival Analysis*. John Wiley & Sons.
+      ISBN: 0-471-25218-2.

@@ -1,58 +1,61 @@
 .. container::
 
-   ========= ===============
-   roomwidth R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Students Estimates of Lecture Room Width
-      :name: roomwidth
+      ========= ===============
+      roomwidth R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Students Estimates of Lecture Room Width
+         :name: students-estimates-of-lecture-room-width
 
-   Lecture room width estimated by students in two different units.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Lecture room width estimated by students in two different units.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("roomwidth")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("roomwidth")
 
-   A data frame with 113 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   unit
-      a factor with levels ``feet`` and ``metres``.
+      A data frame with 113 observations on the following 2 variables.
 
-   width
-      the estimated width of the lecture room.
+      unit
+         a factor with levels ``feet`` and ``metres``.
 
-   .. rubric:: Details
-      :name: details
+      width
+         the estimated width of the lecture room.
 
-   Shortly after metric units of length were officially introduced in
-   Australia, each of a group of 44 students was asked to guess, to the
-   nearest metre, the width of the lecture hall in which they were
-   sitting. Another group of 69 students in the same room was asked to
-   guess the width in feet, to the nearest foot. The data were collected
-   by Professor T. Lewis and are taken from Hand et al (1994). The main
-   question is whether estimation in feet and in metres gives different
-   results.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Shortly after metric units of length were officially introduced in
+      Australia, each of a group of 44 students was asked to guess, to
+      the nearest metre, the width of the lecture hall in which they
+      were sitting. Another group of 69 students in the same room was
+      asked to guess the width in feet, to the nearest foot. The data
+      were collected by Professor T. Lewis and are taken from Hand et al
+      (1994). The main question is whether estimation in feet and in
+      metres gives different results.
 
-   D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
-   (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC, London.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
+      (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC,
+      London.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("roomwidth", package = "HSAUR")
-        convert <- ifelse(roomwidth$unit == "feet", 1, 3.28)
-        boxplot(I(width * convert) ~ unit, data = roomwidth)
+      ::
+
+           data("roomwidth", package = "HSAUR")
+           convert <- ifelse(roomwidth$unit == "feet", 1, 3.28)
+           boxplot(I(width * convert) ~ unit, data = roomwidth)

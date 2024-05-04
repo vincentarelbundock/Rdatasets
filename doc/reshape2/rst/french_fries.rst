@@ -1,51 +1,53 @@
 .. container::
 
-   ============ ===============
-   french_fries R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Sensory data from a french fries experiment.
-      :name: french_fries
+      ============ ===============
+      french_fries R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sensory data from a french fries experiment.
+         :name: sensory-data-from-a-french-fries-experiment.
 
-   This data was collected from a sensory experiment conducted at Iowa
-   State University in 2004. The investigators were interested in the
-   effect of using three different fryer oils had on the taste of the
-   fries.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data was collected from a sensory experiment conducted at
+      Iowa State University in 2004. The investigators were interested
+      in the effect of using three different fryer oils had on the taste
+      of the fries.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      french_fries
+      ::
 
-   .. rubric:: Format
-      :name: format
+         french_fries
 
-   A data frame with 696 rows and 9 variables
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      A data frame with 696 rows and 9 variables
 
-   Variables:
+      .. rubric:: Details
+         :name: details
 
-   -  time in weeks from start of study.
+      Variables:
 
-   -  treatment (type of oil),
+      -  time in weeks from start of study.
 
-   -  subject,
+      -  treatment (type of oil),
 
-   -  replicate,
+      -  subject,
 
-   -  potato-y flavour,
+      -  replicate,
 
-   -  buttery flavour,
+      -  potato-y flavour,
 
-   -  grassy flavour,
+      -  buttery flavour,
 
-   -  rancid flavour,
+      -  grassy flavour,
 
-   -  painty flavour
+      -  rancid flavour,
+
+      -  painty flavour

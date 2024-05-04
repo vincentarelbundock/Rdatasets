@@ -1,67 +1,69 @@
 .. container::
 
-   ========== ===============
-   bakers_raw R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Bakers (raw)
-      :name: bakers_raw
+      ========== ===============
+      bakers_raw R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Bakers (raw)
+         :name: bakers-raw
 
-   Information about each baker who has appeared on the show.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Information about each baker who has appeared on the show.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      bakers_raw
+      ::
 
-   .. rubric:: Format
-      :name: format
+         bakers_raw
 
-   A data frame with 120 rows representing individual bakers and 8
-   variables:
+      .. rubric:: Format
+         :name: format
 
-   series
-      A factor denoting UK series (``1``-``10``).
+      A data frame with 120 rows representing individual bakers and 8
+      variables:
 
-   baker_full
-      A character string giving full name.
+      series
+         A factor denoting UK series (``1``-``10``).
 
-   baker
-      A character string with a given name or nickname.
+      baker_full
+         A character string giving full name.
 
-   age
-      An integer denoting age in years at first episode appeared.
+      baker
+         A character string with a given name or nickname.
 
-   occupation
-      A character string giving occupation.
+      age
+         An integer denoting age in years at first episode appeared.
 
-   hometown
-      A character string giving hometown.
+      occupation
+         A character string giving occupation.
 
-   baker_last
-      A character string giving family name.
+      hometown
+         A character string giving hometown.
 
-   baker_first
-      A character string giving given name.
+      baker_last
+         A character string giving family name.
 
-   .. rubric:: Source
-      :name: source
+      baker_first
+         A character string giving given name.
 
-   See
-   https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#The_Bakers,
-   for example, for series 1 bakers.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      See
+      https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#The_Bakers,
+      for example, for series 1 bakers.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      if (require('tibble')) {
-        bakers_raw
-       }
-      head(bakers_raw)
+      ::
+
+         if (require('tibble')) {
+           bakers_raw
+          }
+         head(bakers_raw)

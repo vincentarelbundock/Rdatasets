@@ -1,49 +1,51 @@
 .. container::
 
-   ===== ===============
-   pilot R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Pilot-Plant Data
-      :name: pilot
+      ===== ===============
+      pilot R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Pilot-Plant Data
+         :name: pilot-plant-data
 
-   Pilot-Plant data from Daniel and Wood (1971). The response variable
-   corresponds to the acid content determined by titration and the
-   explanatory variable is the organic acid content determined by
-   extraction and weighing. This data set was analyzed also by Yale and
-   Forsythe (1976).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Pilot-Plant data from Daniel and Wood (1971). The response
+      variable corresponds to the acid content determined by titration
+      and the explanatory variable is the organic acid content
+      determined by extraction and weighing. This data set was analyzed
+      also by Yale and Forsythe (1976).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(pilot, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(pilot, package="robustbase")
 
-   A data frame with 20 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``X``
-      Organic acid content - extraction
+      A data frame with 20 observations on the following 2 variables.
 
-   ``Y``
-      Acid content - titration
+      ``X``
+         Organic acid content - extraction
 
-   .. rubric:: Source
-      :name: source
+      ``Y``
+         Acid content - titration
 
-   P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
-   Detection*; Wiley, page 21, table 1.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and
+      Outlier Detection*; Wiley, page 21, table 1.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(pilot)
-      summary(lm.pilot <- lm(Y ~.,data=pilot))
+      ::
+
+         data(pilot)
+         summary(lm.pilot <- lm(Y ~.,data=pilot))

@@ -1,65 +1,67 @@
 .. container::
 
-   ======= ===============
-   CEDdata R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Example Data for the Crossover Encouragement Design
-      :name: CEDdata
+      ======= ===============
+      CEDdata R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Example Data for the Crossover Encouragement Design
+         :name: example-data-for-the-crossover-encouragement-design
 
-   A randomly generated dataset containing 2000 rows and 7 columns with
-   no missing values.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A randomly generated dataset containing 2000 rows and 7 columns
+      with no missing values.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      CEDdata
+      ::
 
-   .. rubric:: Format
-      :name: format
+         CEDdata
 
-   A data frame containing the following variables, which are
-   interpreted as results from a hypothetical randomized trial employing
-   the crossover encouragement design.
+      .. rubric:: Format
+         :name: format
 
-   T1:
-      The binary treatment indicator in the first stage.
+      A data frame containing the following variables, which are
+      interpreted as results from a hypothetical randomized trial
+      employing the crossover encouragement design.
 
-   M1:
-      The binary mediator variable recorded in the first stage.
+      T1:
+         The binary treatment indicator in the first stage.
 
-   Y1:
-      The binary outcome variable recorded in the first stage.
+      M1:
+         The binary mediator variable recorded in the first stage.
 
-   T2:
-      The binary treatment in the second stage. Equal to 1 - T1 by
-      design.
+      Y1:
+         The binary outcome variable recorded in the first stage.
 
-   Z:
-      The binary encouragement indicator for the second stage.
+      T2:
+         The binary treatment in the second stage. Equal to 1 - T1 by
+         design.
 
-   M2:
-      The binary mediator recorded in the second stage.
+      Z:
+         The binary encouragement indicator for the second stage.
 
-   Y2:
-      The binary outcome recorded in the second stage.
+      M2:
+         The binary mediator recorded in the second stage.
 
-   .. rubric:: Details
-      :name: details
+      Y2:
+         The binary outcome recorded in the second stage.
 
-   Note that all the observed responses are generated from an underlying
-   distribution of potential outcomes and mediators (not shown in this
-   dataset) satisfying the assumptions described in Imai, Tingley and
-   Yamamoto (2012).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Note that all the observed responses are generated from an
+      underlying distribution of potential outcomes and mediators (not
+      shown in this dataset) satisfying the assumptions described in
+      Imai, Tingley and Yamamoto (2012).
 
-   Imai, K., Tingley, D. and Yamamoto, T. (2012) Experimental Designs
-   for Identifying Causal Mechanisms. Journal of the Royal Statistical
-   Society, Series A (Statistics in Society).
+      .. rubric:: Source
+         :name: source
+
+      Imai, K., Tingley, D. and Yamamoto, T. (2012) Experimental Designs
+      for Identifying Causal Mechanisms. Journal of the Royal
+      Statistical Society, Series A (Statistics in Society).

@@ -1,46 +1,48 @@
 .. container::
 
-   ======== ===============
-   HousesNY R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: House Prices in Rural NY
-      :name: HousesNY
+      ======== ===============
+      HousesNY R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: House Prices in Rural NY
+         :name: house-prices-in-rural-ny
 
-   House prices for a sample of houses in Canton NY
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      House prices for a sample of houses in Canton NY
 
-   A data frame with 53 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Price``
-      Estimated price (in $1,000's)
+      A data frame with 53 observations on the following 5 variables.
 
-   ``Beds``
-      Number of bedrooms
+      ``Price``
+         Estimated price (in $1,000's)
 
-   ``Baths``
-      Number of bathrooms
+      ``Beds``
+         Number of bedrooms
 
-   ``Size``
-      Floor area of the house (in 1,000 square feet)
+      ``Baths``
+         Number of bathrooms
 
-   ``Lot``
-      Size of the lot (in acres)
+      ``Size``
+         Floor area of the house (in 1,000 square feet)
 
-   .. rubric:: Details
-      :name: details
+      ``Lot``
+         Size of the lot (in acres)
 
-   Data scraped from Zillow.com for a sample of houses near the 13617
-   area code (Canton, NY a small town in upstate NY). Houses on lots
-   bigger than five acres (often farms) were excluded.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Data scraped from Zillow.com for a sample of houses near the 13617
+      area code (Canton, NY a small town in upstate NY). Houses on lots
+      bigger than five acres (often farms) were excluded.
 
-   Data scraped from the Zillow.com website using tools an app at
-   http://myslu.stlawu.edu/~clee/dataset/zillow/ (April 2017)
+      .. rubric:: Source
+         :name: source
+
+      Data scraped from the Zillow.com website using tools an app at
+      http://myslu.stlawu.edu/~clee/dataset/zillow/ (April 2017)

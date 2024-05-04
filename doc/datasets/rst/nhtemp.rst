@@ -1,45 +1,47 @@
 .. container::
 
-   ====== ===============
-   nhtemp R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Average Yearly Temperatures in New Haven
-      :name: nhtemp
+      ====== ===============
+      nhtemp R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Average Yearly Temperatures in New Haven
+         :name: average-yearly-temperatures-in-new-haven
 
-   The mean annual temperature in degrees Fahrenheit in New Haven,
-   Connecticut, from 1912 to 1971.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The mean annual temperature in degrees Fahrenheit in New Haven,
+      Connecticut, from 1912 to 1971.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      nhtemp
+      ::
 
-   .. rubric:: Format
-      :name: format
+         nhtemp
 
-   A time series of 60 observations.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A time series of 60 observations.
 
-   Vaux, J. E. and Brinker, N. B. (1972) *Cycles*, **1972**, 117–121.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Vaux, J. E. and Brinker, N. B. (1972) *Cycles*, **1972**, 117–121.
 
-   McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(stats); require(graphics)
-      plot(nhtemp, main = "nhtemp data",
-        ylab = "Mean annual temperature in New Haven, CT (deg. F)")
+      ::
+
+         require(stats); require(graphics)
+         plot(nhtemp, main = "nhtemp data",
+           ylab = "Mean annual temperature in New Haven, CT (deg. F)")

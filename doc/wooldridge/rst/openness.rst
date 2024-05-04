@@ -1,68 +1,70 @@
 .. container::
 
-   ======== ===============
-   openness R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: openness
-      :name: openness
+      ======== ===============
+      openness R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: openness
+         :name: openness
 
-   Wooldridge Source: D. Romer (1993), “Openness and Inflation: Theory
-   and Evidence,” Quarterly Journal of Economics 108, 869-903. The data
-   are included in the article. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: D. Romer (1993), “Openness and Inflation:
+      Theory and Evidence,” Quarterly Journal of Economics 108, 869-903.
+      The data are included in the article. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('openness')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('openness')
 
-   A data.frame with 114 observations on 12 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **open:** imports as percent GDP, '73-
+      A data.frame with 114 observations on 12 variables:
 
-   -  **inf:** avg. annual inflation, '73-
+      -  **open:** imports as percent GDP, '73-
 
-   -  **pcinc:** 1980 per capita inc., U.S. $
+      -  **inf:** avg. annual inflation, '73-
 
-   -  **land:** land area, square miles
+      -  **pcinc:** 1980 per capita inc., U.S. $
 
-   -  **oil:** =1 if major oil producer
+      -  **land:** land area, square miles
 
-   -  **good:** =1 if 'good' data
+      -  **oil:** =1 if major oil producer
 
-   -  **lpcinc:** log(pcinc)
+      -  **good:** =1 if 'good' data
 
-   -  **lland:** log(land)
+      -  **lpcinc:** log(pcinc)
 
-   -  **lopen:** log(open)
+      -  **lland:** log(land)
 
-   -  **linf:** log(inf)
+      -  **lopen:** log(open)
 
-   -  **opendec:** open/100
+      -  **linf:** log(inf)
 
-   -  **linfdec:** log(inf/100)
+      -  **opendec:** open/100
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **linfdec:** log(inf/100)
 
-   pages 566, 579
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 566, 579
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(openness)
+      ::
+
+          str(openness)

@@ -1,73 +1,75 @@
 .. container::
 
-   ======= ===============
-   RepVict R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Repeat Victimization Data
-      :name: RepVict
+      ======= ===============
+      RepVict R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Repeat Victimization Data
+         :name: repeat-victimization-data
 
-   Data from Reiss (1980) given by Fienberg (1980) about instances of
-   repeat victimization for households in the U.S. National Crime
-   Survey.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from Reiss (1980) given by Fienberg (1980) about instances of
+      repeat victimization for households in the U.S. National Crime
+      Survey.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("RepVict")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("RepVict")
 
-   A 2-dimensional array resulting from cross-tabulating victimization.
-   The variables and their levels are as follows:
+      .. rubric:: Format
+         :name: format
 
-   +----+----------------------+-------------------------------+
-   | No | Name                 | Levels                        |
-   +----+----------------------+-------------------------------+
-   | 1  | First Victimization  | Rape, Assault, Robbery,       |
-   |    |                      | Pickpocket, Personal Larceny, |
-   +----+----------------------+-------------------------------+
-   |    |                      | Burglary, Household Larceny,  |
-   |    |                      | Auto Theft                    |
-   +----+----------------------+-------------------------------+
-   | 2  | Second Victimization | Rape, Assault, Robbery,       |
-   |    |                      | Pickpocket, Personal Larceny, |
-   +----+----------------------+-------------------------------+
-   |    |                      | Burglary, Household Larceny,  |
-   |    |                      | Auto Theft                    |
-   +----+----------------------+-------------------------------+
+      A 2-dimensional array resulting from cross-tabulating
+      victimization. The variables and their levels are as follows:
 
-   .. rubric:: Source
-      :name: source
+      +----+----------------------+-------------------------------+
+      | No | Name                 | Levels                        |
+      +----+----------------------+-------------------------------+
+      | 1  | First Victimization  | Rape, Assault, Robbery,       |
+      |    |                      | Pickpocket, Personal Larceny, |
+      +----+----------------------+-------------------------------+
+      |    |                      | Burglary, Household Larceny,  |
+      |    |                      | Auto Theft                    |
+      +----+----------------------+-------------------------------+
+      | 2  | Second Victimization | Rape, Assault, Robbery,       |
+      |    |                      | Pickpocket, Personal Larceny, |
+      +----+----------------------+-------------------------------+
+      |    |                      | Burglary, Household Larceny,  |
+      |    |                      | Auto Theft                    |
+      +----+----------------------+-------------------------------+
 
-   Michael Friendly (2000), Visualizing Categorical Data, page 113.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Michael Friendly (2000), Visualizing Categorical Data, page 113.
 
-   S. E. Fienberg (1980), *The Analysis of Cross-Classified Categorical
-   Data*, MIT Press, Cambridge, 2nd edition.
+      .. rubric:: References
+         :name: references
 
-   A. J. J. Reiss (1980), Victim proneness by type of crime in repeat
-   victimization. In S. E. Fienberg & A. J. J. Reiss (eds.), *Indicators
-   of Crime and Criminal Justice*. U.S. Government Printing Office,
-   Washington, DC.
+      S. E. Fienberg (1980), *The Analysis of Cross-Classified
+      Categorical Data*, MIT Press, Cambridge, 2nd edition.
 
-   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
-   Cary, NC.
+      A. J. J. Reiss (1980), Victim proneness by type of crime in repeat
+      victimization. In S. E. Fienberg & A. J. J. Reiss (eds.),
+      *Indicators of Crime and Criminal Justice*. U.S. Government
+      Printing Office, Washington, DC.
 
-   .. rubric:: Examples
-      :name: examples
+      M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+      Cary, NC.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("RepVict")
+      ::
 
-      mosaic(RepVict[-c(4,7),-c(4,7)], gp = shading_max,
-             main = "Repeat Victimization Data")
+         data("RepVict")
+
+         mosaic(RepVict[-c(4,7),-c(4,7)], gp = shading_max,
+                main = "Repeat Victimization Data")

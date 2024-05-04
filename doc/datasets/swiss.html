@@ -12,15 +12,15 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>swiss</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='swiss'>Swiss Fertility and Socioeconomic Indicators (1888) Data</h2>
+<h2>Swiss Fertility and Socioeconomic Indicators (1888) Data</h2>
 
 <h3>Description</h3>
 
-<p>Standardized fertility measure and socio-economic indicators for each
+<p>Standardized fertility measure and socioeconomic indicators for each
 of 47 French-speaking provinces of Switzerland at about 1888.
 </p>
 
@@ -39,37 +39,37 @@ is in percent, i.e., in <code class="reqn">[0, 100]</code>.
 <table>
 <tr>
  <td style="text-align: right;">
-    [,1] </td><td style="text-align: left;"> Fertility </td><td style="text-align: left;"> <code class="reqn">I_g</code>,
+    [,1] </td><td style="text-align: left;"> <code>Fertility</code> </td><td style="text-align: left;"> <code class="reqn">I_g</code>,
     &lsquo;common standardized fertility measure&rsquo;</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,2] </td><td style="text-align: left;"> Agriculture</td><td style="text-align: left;"> % of males involved in agriculture
+    [,2] </td><td style="text-align: left;"> <code>Agriculture</code> </td><td style="text-align: left;"> % of males involved in agriculture
     as occupation</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,3] </td><td style="text-align: left;"> Examination</td><td style="text-align: left;"> % draftees receiving highest mark
+    [,3] </td><td style="text-align: left;"> <code>Examination</code> </td><td style="text-align: left;"> % draftees receiving highest mark
     on army examination</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,4] </td><td style="text-align: left;"> Education </td><td style="text-align: left;"> % education beyond primary school for draftees.</td>
+    [,4] </td><td style="text-align: left;"> <code>Education</code> </td><td style="text-align: left;"> % education beyond primary school for draftees.</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,5] </td><td style="text-align: left;"> Catholic </td><td style="text-align: left;"> % &lsquo;catholic&rsquo; (as opposed to &lsquo;protestant&rsquo;).</td>
+    [,5] </td><td style="text-align: left;"> <code>Catholic</code> </td><td style="text-align: left;"> % &lsquo;catholic&rsquo; (as opposed to &lsquo;protestant&rsquo;).</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,6] </td><td style="text-align: left;"> Infant.Mortality</td><td style="text-align: left;"> live births who live less than 1
+    [,6] </td><td style="text-align: left;"> <code>Infant.Mortality</code> </td><td style="text-align: left;"> live births who live less than 1
     year.
   </td>
 </tr>
 
 </table>
 
-<p>All variables but &lsquo;Fertility&rsquo; give proportions of the
+<p>All variables but <code>Fertility</code> give proportions of the
 population.
 </p>
 
@@ -86,14 +86,14 @@ fall from the high level typical of underdeveloped countries.
 about 1888.
 </p>
 <p>Here, all variables are scaled to <code class="reqn">[0, 100]</code>, where in the
-original, all but <code>"Catholic"</code> were scaled to <code class="reqn">[0, 1]</code>.
+original, all but <code>Catholic</code> were scaled to <code class="reqn">[0, 1]</code>.
 </p>
 
 
 <h3>Note</h3>
 
 <p>Files for all 182 districts in 1888 and other years have been available at
-<a href="https://opr.princeton.edu/archive/pefp/switz.aspx">https://opr.princeton.edu/archive/pefp/switz.aspx</a>.
+<a href="https://oprdata.princeton.edu/archive/pefp/switz.aspx">https://oprdata.princeton.edu/archive/pefp/switz.aspx</a>.
 </p>
 <p>They state that variables <code>Examination</code> and <code>Education</code>
 are averages for 1887, 1888 and 1889.
@@ -131,6 +131,7 @@ pairs(swiss, panel = panel.smooth, main = "swiss data",
 summary(lm(Fertility ~ . , data = swiss))
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

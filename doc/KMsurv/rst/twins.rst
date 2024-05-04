@@ -1,44 +1,46 @@
 .. container::
 
-   ===== ===============
-   twins R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: data from Exercise 7.14, p225
-      :name: twins
+      ===== ===============
+      twins R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Exercise 7.14, p225
+         :name: data-from-exercise-7.14-p225
 
-   The ``twins`` data frame has 24 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``twins`` data frame has 24 rows and 3 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   id
-      Twin number
+      This data frame contains the following columns:
 
-   age
-      Age of twin's death from CHD, months
+      id
+         Twin number
 
-   death
-      Death (male twin) from CHD indicator (1=dead from CHD, 0=alive or
-      other cause of death)
+      age
+         Age of twin's death from CHD, months
 
-   gender
-      1=male, 2=female
+      death
+         Death (male twin) from CHD indicator (1=dead from CHD, 0=alive
+         or other cause of death)
 
-   .. rubric:: Source
-      :name: source
+      gender
+         1=male, 2=female
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(twins)
+      ::
+
+         data(twins)

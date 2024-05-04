@@ -1,65 +1,67 @@
 .. container::
 
-   ====== ===============
-   SumHes R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: The Penn World Table, v. 5
-      :name: SumHes
+      ====== ===============
+      SumHes R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: The Penn World Table, v. 5
+         :name: the-penn-world-table-v.-5
 
-   A panel of 125 observations from 1960 to 1985
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      A panel of 125 observations from 1960 to 1985
 
-   A data frame containing :
+      .. rubric:: Format
+         :name: format
 
-   year
-      the year
+      A data frame containing :
 
-   country
-      the country name (factor)
+      year
+         the year
 
-   opec
-      OPEC member?
+      country
+         the country name (factor)
 
-   com
-      communist regime?
+      opec
+         OPEC member?
 
-   pop
-      country's population (in thousands)
+      com
+         communist regime?
 
-   gdp
-      real GDP per capita (in 1985 US dollars)
+      pop
+         country's population (in thousands)
 
-   sr
-      saving rate (in percent)
+      gdp
+         real GDP per capita (in 1985 US dollars)
 
-   .. rubric:: Details
-      :name: details
+      sr
+         saving rate (in percent)
 
-   *total number of observations* : 3250
+      .. rubric:: Details
+         :name: details
 
-   *observation* : country
+      *total number of observations* : 3250
 
-   *country* : World
+      *observation* : country
 
-   .. rubric:: Source
-      :name: source
+      *country* : World
 
-   Online supplements to Hayashi (2000).
+      .. rubric:: Source
+         :name: source
 
-   http://fhayashi.fc2web.com/datasets.htm
+      Online supplements to Hayashi (2000).
 
-   .. rubric:: References
-      :name: references
+      http://fhayashi.fc2web.com/datasets.htm
 
-   Hayashi F (2000). *Econometrics*. Princeton University Press.
+      .. rubric:: References
+         :name: references
 
-   Summers R, Heston A (1991). “The Penn World Table (Mark 5): An
-   Expanded Set of International Comparisons, 1950–1988.” *The Quarterly
-   Journal of Economics*, **106**, 327-68.
-   `doi:10.2307/2937941 <https://doi.org/10.2307/2937941>`__.
+      Hayashi F (2000). *Econometrics*. Princeton University Press.
+
+      Summers R, Heston A (1991). “The Penn World Table (Mark 5): An
+      Expanded Set of International Comparisons, 1950–1988.” *The
+      Quarterly Journal of Economics*, **106**, 327-68.
+      `doi:10.2307/2937941 <https://doi.org/10.2307/2937941>`__.

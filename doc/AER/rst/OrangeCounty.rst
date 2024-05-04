@@ -1,54 +1,58 @@
 .. container::
 
-   ============ ===============
-   OrangeCounty R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Orange County Employment
-      :name: OrangeCounty
+      ============ ===============
+      OrangeCounty R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Orange County Employment
+         :name: orange-county-employment
 
-   Quarterly time series data on employment in Orange county, 1965–1983.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Quarterly time series data on employment in Orange county,
+      1965–1983.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("OrangeCounty")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("OrangeCounty")
 
-   A quarterly multiple time series from 1965 to 1983 with 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   employment
-      Quarterly employment in Orange county.
+      A quarterly multiple time series from 1965 to 1983 with 2
+      variables.
 
-   gnp
-      Quarterly real GNP.
+      employment
+         Quarterly employment in Orange county.
 
-   .. rubric:: Source
-      :name: source
+      gnp
+         Quarterly real GNP.
 
-   The data is from Baltagi (2002).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The data is from Baltagi (2002).
 
-   Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
 
-   ``Baltagi2002``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Baltagi2002``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("OrangeCounty")
-      plot(OrangeCounty)
+      ::
+
+         data("OrangeCounty")
+         plot(OrangeCounty)

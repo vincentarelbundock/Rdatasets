@@ -1,50 +1,52 @@
 .. container::
 
-   ======= ===============
-   Quartet R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Four Regression Datasets
-      :name: Quartet
+      ======= ===============
+      Quartet R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Four Regression Datasets
+         :name: four-regression-datasets
 
-   The ``Quartet`` data frame has 11 rows and 5 columns. These are
-   contrived data.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Quartet`` data frame has 11 rows and 5 columns. These are
+      contrived data.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Quartet
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Quartet
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   x
-      X-values for datasets 1–3.
+      This data frame contains the following columns:
 
-   y1
-      Y-values for dataset 1.
+      x
+         X-values for datasets 1–3.
 
-   y2
-      Y-values for dataset 2.
+      y1
+         Y-values for dataset 1.
 
-   y3
-      Y-values for dataset 3.
+      y2
+         Y-values for dataset 2.
 
-   x4
-      X-values for dataset 4.
+      y3
+         Y-values for dataset 3.
 
-   y4
-      Y-values for dataset 4.
+      x4
+         X-values for dataset 4.
 
-   .. rubric:: Source
-      :name: source
+      y4
+         Y-values for dataset 4.
 
-   Anscombe, F. J. (1973) Graphs in statistical analysis. *American
-   Statistician* **27**, 17–21.
+      .. rubric:: Source
+         :name: source
+
+      Anscombe, F. J. (1973) Graphs in statistical analysis. *American
+      Statistician* **27**, 17–21.

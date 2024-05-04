@@ -1,45 +1,47 @@
 .. container::
 
-   ==== ===============
-   rock R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Measurements on Petroleum Rock Samples
-      :name: rock
+      ==== ===============
+      rock R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Measurements on Petroleum Rock Samples
+         :name: measurements-on-petroleum-rock-samples
 
-   Measurements on 48 rock samples from a petroleum reservoir.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Measurements on 48 rock samples from a petroleum reservoir.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      rock
+      ::
 
-   .. rubric:: Format
-      :name: format
+         rock
 
-   A data frame with 48 rows and 4 numeric columns.
+      .. rubric:: Format
+         :name: format
 
-   ==== ===== ================================================
-   [,1] area  area of pores space, in pixels out of 256 by 256
-   [,2] peri  perimeter in pixels
-   [,3] shape perimeter/sqrt(area)
-   [,4] perm  permeability in milli-Darcies
-   ==== ===== ================================================
+      A data frame with 48 rows and 4 numeric columns.
 
-   .. rubric:: Details
-      :name: details
+      ==== ========= ================================================
+      [,1] ``area``  area of pores space, in pixels out of 256 by 256
+      [,2] ``peri``  perimeter in pixels
+      [,3] ``shape`` perimeter/sqrt(area)
+      [,4] ``perm``  permeability in millidarcies
+      ==== ========= ================================================
 
-   Twelve core samples from petroleum reservoirs were sampled by 4
-   cross-sections. Each core sample was measured for permeability, and
-   each cross-section has total area of pores, total perimeter of pores,
-   and shape.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Twelve core samples from petroleum reservoirs were sampled by 4
+      cross-sections. Each core sample was measured for permeability,
+      and each cross-section has total area of pores, total perimeter of
+      pores, and shape.
 
-   Data from BP Research, image analysis by Ronit Katz, U. Oxford.
+      .. rubric:: Source
+         :name: source
+
+      Data from BP Research, image analysis by Ronit Katz, U. Oxford.

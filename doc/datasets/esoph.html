@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>esoph</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='esoph'>Smoking, Alcohol and (O)esophageal Cancer</h2>
+<h2>Smoking, Alcohol and (O)esophageal Cancer</h2>
 
 <h3>Description</h3>
 
@@ -38,7 +38,7 @@ Ille-et-Vilaine, France.
 <table>
 <tr>
  <td style="text-align: right;">
-    [,1] </td><td style="text-align: left;"> "agegp" </td><td style="text-align: left;"> Age group </td><td style="text-align: left;"> 1  25--34 years</td>
+    [,1] </td><td style="text-align: left;"> <code>agegp</code> </td><td style="text-align: left;"> Age group </td><td style="text-align: left;"> 1  25--34 years</td>
 </tr>
 <tr>
  <td style="text-align: right;">
@@ -62,7 +62,7 @@ Ille-et-Vilaine, France.
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,2] </td><td style="text-align: left;"> "alcgp" </td><td style="text-align: left;"> Alcohol consumption </td><td style="text-align: left;"> 1   0--39 gm/day</td>
+    [,2] </td><td style="text-align: left;"> <code>alcgp</code> </td><td style="text-align: left;"> Alcohol consumption </td><td style="text-align: left;"> 1   0--39 gm/day</td>
 </tr>
 <tr>
  <td style="text-align: right;">
@@ -78,7 +78,7 @@ Ille-et-Vilaine, France.
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,3] </td><td style="text-align: left;"> "tobgp" </td><td style="text-align: left;"> Tobacco consumption </td><td style="text-align: left;"> 1   0-- 9 gm/day</td>
+    [,3] </td><td style="text-align: left;"> <code>tobgp</code> </td><td style="text-align: left;"> Tobacco consumption </td><td style="text-align: left;"> 1   0-- 9 gm/day</td>
 </tr>
 <tr>
  <td style="text-align: right;">
@@ -94,11 +94,11 @@ Ille-et-Vilaine, France.
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,4] </td><td style="text-align: left;"> "ncases" </td><td style="text-align: left;"> Number of cases </td><td style="text-align: left;"> </td>
+    [,4] </td><td style="text-align: left;"> <code>ncases</code> </td><td style="text-align: left;"> Number of cases </td><td style="text-align: left;"> </td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,5] </td><td style="text-align: left;"> "ncontrols" </td><td style="text-align: left;"> Number of controls </td><td style="text-align: left;">
+    [,5] </td><td style="text-align: left;"> <code>ncontrols</code> </td><td style="text-align: left;"> Number of controls </td><td style="text-align: left;">
   </td>
 </tr>
 
@@ -146,6 +146,7 @@ tt &lt;- array(c(ttt, tt1), c(dim(ttt),2),
 mosaicplot(tt, main = "esoph data set", color = TRUE)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

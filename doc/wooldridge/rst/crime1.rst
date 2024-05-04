@@ -1,77 +1,80 @@
 .. container::
 
-   ====== ===============
-   crime1 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: crime1
-      :name: crime1
+      ====== ===============
+      crime1 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: crime1
+         :name: crime1
 
-   Wooldridge Source: J. Grogger (1991), “Certainty vs. Severity of
-   Punishment,” Economic Inquiry 29, 297-309. Professor Grogger kindly
-   provided a subset of the data he used in his article. Data loads
-   lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: J. Grogger (1991), “Certainty vs. Severity of
+      Punishment,” Economic Inquiry 29, 297-309. Professor Grogger
+      kindly provided a subset of the data he used in his article. Data
+      loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('crime1')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('crime1')
 
-   A data.frame with 2725 observations on 16 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **narr86:** # times arrested, 1986
+      A data.frame with 2725 observations on 16 variables:
 
-   -  **nfarr86:** # felony arrests, 1986
+      -  **narr86:** # times arrested, 1986
 
-   -  **nparr86:** # property crme arr., 1986
+      -  **nfarr86:** # felony arrests, 1986
 
-   -  **pcnv:** proportion of prior convictions
+      -  **nparr86:** # property crme arr., 1986
 
-   -  **avgsen:** avg sentence length, mos.
+      -  **pcnv:** proportion of prior convictions
 
-   -  **tottime:** time in prison since 18 (mos.)
+      -  **avgsen:** avg sentence length, mos.
 
-   -  **ptime86:** mos. in prison during 1986
+      -  **tottime:** time in prison since 18 (mos.)
 
-   -  **qemp86:** # quarters employed, 1986
+      -  **ptime86:** mos. in prison during 1986
 
-   -  **inc86:** legal income, 1986, $100s
+      -  **qemp86:** # quarters employed, 1986
 
-   -  **durat:** recent unemp duration
+      -  **inc86:** legal income, 1986, $100s
 
-   -  **black:** =1 if black
+      -  **durat:** recent unemp duration
 
-   -  **hispan:** =1 if Hispanic
+      -  **black:** =1 if black
 
-   -  **born60:** =1 if born in 1960
+      -  **hispan:** =1 if Hispanic
 
-   -  **pcnvsq:** pcnv^2
+      -  **born60:** =1 if born in 1960
 
-   -  **pt86sq:** ptime86^2
+      -  **pcnvsq:** pcnv^2
 
-   -  **inc86sq:** inc86^2
+      -  **pt86sq:** ptime86^2
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **inc86sq:** inc86^2
 
-   pages 82-83, 173-174, 180, 252-253, 275, 299, 305-306, 607-608, 625
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 82-83, 173-174, 180, 252-253, 275, 299, 305-306, 607-608,
+      625
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(crime1)
+      ::
+
+          str(crime1)

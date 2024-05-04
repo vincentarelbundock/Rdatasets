@@ -1,68 +1,70 @@
 .. container::
 
-   ========== ===============
-   Forbes2000 R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: The Forbes 2000 Ranking of the World's Biggest Companies
-      (Year 2004)
-      :name: Forbes2000
+      ========== ===============
+      Forbes2000 R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: The Forbes 2000 Ranking of the World's Biggest
+         Companies (Year 2004)
+         :name: the-forbes-2000-ranking-of-the-worlds-biggest-companies-year-2004
 
-   The Forbes 2000 list is a ranking of the world's biggest companies,
-   measured by sales, profits, assets and market value.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The Forbes 2000 list is a ranking of the world's biggest
+      companies, measured by sales, profits, assets and market value.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Forbes2000")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Forbes2000")
 
-   A data frame with 2000 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   rank
-      the ranking of the company.
+      A data frame with 2000 observations on the following 8 variables.
 
-   name
-      the name of the company.
+      rank
+         the ranking of the company.
 
-   country
-      a factor giving the country the company is situated in.
+      name
+         the name of the company.
 
-   category
-      a factor describing the products the company produces.
+      country
+         a factor giving the country the company is situated in.
 
-   sales
-      the amount of sales of the company in billion USD.
+      category
+         a factor describing the products the company produces.
 
-   profits
-      the profit of the company in billion USD.
+      sales
+         the amount of sales of the company in billion USD.
 
-   assets
-      the assets of the company in billion USD.
+      profits
+         the profit of the company in billion USD.
 
-   marketvalue
-      the market value of the company in billion USD.
+      assets
+         the assets of the company in billion USD.
 
-   .. rubric:: Source
-      :name: source
+      marketvalue
+         the market value of the company in billion USD.
 
-   https://www.forbes.com, assessed on November 26th, 2004.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.forbes.com, assessed on November 26th, 2004.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("Forbes2000", package = "HSAUR")
-      summary(Forbes2000)
-      ### number of countries
-      length(levels(Forbes2000$country))
-      ### number of industries
-      length(levels(Forbes2000$category))
+      ::
+
+         data("Forbes2000", package = "HSAUR")
+         summary(Forbes2000)
+         ### number of countries
+         length(levels(Forbes2000$country))
+         ### number of industries
+         length(levels(Forbes2000$category))

@@ -1,82 +1,85 @@
 .. container::
 
-   ======== ===============
-   Bartlett R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Bartlett Data on Plum Root Cuttings
-      :name: Bartlett
+      ======== ===============
+      Bartlett R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Bartlett Data on Plum Root Cuttings
+         :name: bartlett-data-on-plum-root-cuttings
 
-   In an experiment to investigate the effect of cutting length (two
-   levels) and planting time (two levels) on the survival of plum root
-   cuttings, 240 cuttings were planted for each of the 2 x 2
-   combinations of these factors, and their survival was later recorded.
+      .. rubric:: Description
+         :name: description
 
-   Bartlett (1935) used these data to illustrate a method for testing
-   for no three-way interaction in a contingency table.
+      In an experiment to investigate the effect of cutting length (two
+      levels) and planting time (two levels) on the survival of plum
+      root cuttings, 240 cuttings were planted for each of the 2 x 2
+      combinations of these factors, and their survival was later
+      recorded.
 
-   .. rubric:: Usage
-      :name: usage
+      Bartlett (1935) used these data to illustrate a method for testing
+      for no three-way interaction in a contingency table.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Bartlett)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Bartlett)
 
-   A 3-dimensional array resulting from cross-tabulating 3 variables for
-   960 observations. The variable names and their levels are:
+      .. rubric:: Format
+         :name: format
 
-   == ========== ===================
-   No Name       Levels
-   1  ``Alive``  ``"Alive", "Dead"``
-   2  ``Time``   ``"Now", "Spring"``
-   3  ``Length`` ``"Long", "Short"``
-   \             
-   == ========== ===================
+      A 3-dimensional array resulting from cross-tabulating 3 variables
+      for 960 observations. The variable names and their levels are:
 
-   .. rubric:: Source
-      :name: source
+      == ========== ===================
+      No Name       Levels
+      1  ``Alive``  ``"Alive", "Dead"``
+      2  ``Time``   ``"Now", "Spring"``
+      3  ``Length`` ``"Long", "Short"``
+      \             
+      == ========== ===================
 
-   Hand, D. and Daly, F. and Lunn, A. D.and McConway, K. J. and
-   Ostrowski, E. (1994). *A Handbook of Small Data Sets*. London:
-   Chapman & Hall, p. 15, # 19.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Hand, D. and Daly, F. and Lunn, A. D.and McConway, K. J. and
+      Ostrowski, E. (1994). *A Handbook of Small Data Sets*. London:
+      Chapman & Hall, p. 15, # 19.
 
-   Bartlett, M. S. (1935). Contingency Table Interactions *Journal of
-   the Royal Statistical Society*, Supplement, 1935, 2, 248-252.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Bartlett, M. S. (1935). Contingency Table Interactions *Journal of
+      the Royal Statistical Society*, Supplement, 1935, 2, 248-252.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Bartlett)
+      ::
 
-      # measures of association
-      assocstats(Bartlett)
-      oddsratio(Bartlett)
+         data(Bartlett)
 
-      # Test models
+         # measures of association
+         assocstats(Bartlett)
+         oddsratio(Bartlett)
 
-      ## Independence
-      MASS::loglm(formula = ~Alive + Time + Length, data = Bartlett)
+         # Test models
 
-      ## No three-way association
-      MASS::loglm(formula = ~(Alive + Time + Length)^2, data = Bartlett)
+         ## Independence
+         MASS::loglm(formula = ~Alive + Time + Length, data = Bartlett)
 
-      # Use woolf_test() for a formal test of homogeneity of odds ratios
-      vcd::woolf_test(Bartlett)
+         ## No three-way association
+         MASS::loglm(formula = ~(Alive + Time + Length)^2, data = Bartlett)
+
+         # Use woolf_test() for a formal test of homogeneity of odds ratios
+         vcd::woolf_test(Bartlett)
 
 
-      # Plots
-      fourfold(Bartlett, mfrow=c(1,2))
+         # Plots
+         fourfold(Bartlett, mfrow=c(1,2))
 
-      mosaic(Bartlett, shade=TRUE)
-      pairs(Bartlett, gp=shading_Friendly)
+         mosaic(Bartlett, shade=TRUE)
+         pairs(Bartlett, gp=shading_Friendly)

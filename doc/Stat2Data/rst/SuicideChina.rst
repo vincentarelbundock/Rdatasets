@@ -1,69 +1,72 @@
 .. container::
 
-   ============ ===============
-   SuicideChina R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Suicide Attempts in Shandong, China
-      :name: SuicideChina
+      ============ ===============
+      SuicideChina R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Suicide Attempts in Shandong, China
+         :name: suicide-attempts-in-shandong-china
 
-   Data on serious suicide attempts in Shandong, China
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Data on serious suicide attempts in Shandong, China
 
-   A data frame with 2571 observations on the following 11 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Person_ID``
-      ID number
+      A data frame with 2571 observations on the following 11 variables.
 
-   ``Hospitalised``
-      Hospitalised? (``no`` or ``yes``)
+      ``Person_ID``
+         ID number
 
-   ``Died``
-      Died? (``no`` or ``yes``)
+      ``Hospitalised``
+         Hospitalised? (``no`` or ``yes``)
 
-   ``Urban``
-      Urban area? (``no``, ``unknown``, or ``yes``)
+      ``Died``
+         Died? (``no`` or ``yes``)
 
-   ``Year``
-      Year (2009, 2010, or 2011)
+      ``Urban``
+         Urban area? (``no``, ``unknown``, or ``yes``)
 
-   ``Month``
-      Month (``1``\ =Jan through ``12``\ =December)
+      ``Year``
+         Year (2009, 2010, or 2011)
 
-   ``Sex``
-      Sex (``female`` or ``male``)
+      ``Month``
+         Month (``1``\ =Jan through ``12``\ =December)
 
-   ``Age``
-      Age (years)
+      ``Sex``
+         Sex (``female`` or ``male``)
 
-   ``Education``
-      Education level (``iliterate``, ``primary``, ``Secondary``,
-      ``Tertiary``, or ``unknown``)
+      ``Age``
+         Age (years)
 
-   ``Occupation``
-      One of ten occupation categories
+      ``Education``
+         Education level (``iliterate``, ``primary``, ``Secondary``,
+         ``Tertiary``, or ``unknown``)
 
-   ``method``
-      One of nine possible methods
+      ``Occupation``
+         One of ten occupation categories
 
-   .. rubric:: Details
-      :name: details
+      ``method``
+         One of nine possible methods
 
-   Data from a study of serious suicide attempts over three years in a
-   predominantly rural population in Shandong, China.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Data from a study of serious suicide attempts over three years in
+      a predominantly rural population in Shandong, China.
 
-   Sun J, Guo X, Zhang J, Wang M, Jia C, Xu A (2015) "Incidence and
-   fatality of serious suicide attempts in a predominantly rural
-   population in Shandong, China: a public health surveillance study,"
-   BMJ Open 5(2): e006762. https://doi.org/10.1136/bmjopen-2014-006762
+      .. rubric:: Source
+         :name: source
 
-   Data downloaded via Dryad Digital Repository.
-   https://doi.org/10.5061/dryad.r0v35
+      Sun J, Guo X, Zhang J, Wang M, Jia C, Xu A (2015) "Incidence and
+      fatality of serious suicide attempts in a predominantly rural
+      population in Shandong, China: a public health surveillance
+      study," BMJ Open 5(2): e006762.
+      https://doi.org/10.1136/bmjopen-2014-006762
+
+      Data downloaded via Dryad Digital Repository.
+      https://doi.org/10.5061/dryad.r0v35

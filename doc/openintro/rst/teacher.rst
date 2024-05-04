@@ -1,88 +1,91 @@
 .. container::
 
-   ======= ===============
-   teacher R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Teacher Salaries in St. Louis, Michigan
-      :name: teacher
+      ======= ===============
+      teacher R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Teacher Salaries in St. Louis, Michigan
+         :name: teacher-salaries-in-st.-louis-michigan
 
-   This data set contains teacher salaries from 2009-2010 for 71
-   teachers employed by the St. Louis Public School in Michigan, as well
-   as several covariates.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set contains teacher salaries from 2009-2010 for 71
+      teachers employed by the St. Louis Public School in Michigan, as
+      well as several covariates.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      teacher
+      ::
 
-   .. rubric:: Format
-      :name: format
+         teacher
 
-   A data frame with 71 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   id
-      Identification code for each teacher, assigned randomly.
+      A data frame with 71 observations on the following 8 variables.
 
-   degree
-      Highest educational degree attained: ``BA`` (bachelor's degree) or
-      ``MA`` (master's degree).
+      id
+         Identification code for each teacher, assigned randomly.
 
-   fte
-      Full-time enrollment status: full-time ``1`` or part-time ``0.5``.
+      degree
+         Highest educational degree attained: ``BA`` (bachelor's degree)
+         or ``MA`` (master's degree).
 
-   years
-      Number of years employed by the school district.
+      fte
+         Full-time enrollment status: full-time ``1`` or part-time
+         ``0.5``.
 
-   base
-      Base annual salary, in dollars.
+      years
+         Number of years employed by the school district.
 
-   fica
-      Amount paid into Social Security and Medicare per year through the
-      Federal Insurance Contribution Act (FICA), in dollars.
+      base
+         Base annual salary, in dollars.
 
-   retirement
-      Amount paid into the retirement fund of the teacher per year, in
-      dollars.
+      fica
+         Amount paid into Social Security and Medicare per year through
+         the Federal Insurance Contribution Act (FICA), in dollars.
 
-   total
-      Total annual salary of the teacher, resulting from the sum of base
-      salary + fica + retirement, in dollars.
+      retirement
+         Amount paid into the retirement fund of the teacher per year,
+         in dollars.
 
-   .. rubric:: Source
-      :name: source
+      total
+         Total annual salary of the teacher, resulting from the sum of
+         base salary + fica + retirement, in dollars.
 
-   Originally posted on SODA Developers (dev.socrata.com/data), removed
-   in 2020.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Originally posted on SODA Developers (dev.socrata.com/data),
+      removed in 2020.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      # Salary and education level
-      ggplot(teacher, aes(x = degree, y = base)) +
-        geom_boxplot() +
-        labs(
-          x = "Highest educational degree attained",
-          y = "Base annual salary, in $",
-          color = "Degree",
-          title = "Salary and education level"
-        )
+         library(ggplot2)
 
-      # Salary and years of employment
-      ggplot(teacher, aes(x = years, y = base, color = degree)) +
-        geom_point() +
-        labs(
-          x = "Number of years employed by the school district",
-          y = "Base annual salary, in $",
-          color = "Degree",
-          title = "Salary and years of employment"
-        )
+         # Salary and education level
+         ggplot(teacher, aes(x = degree, y = base)) +
+           geom_boxplot() +
+           labs(
+             x = "Highest educational degree attained",
+             y = "Base annual salary, in $",
+             color = "Degree",
+             title = "Salary and education level"
+           )
+
+         # Salary and years of employment
+         ggplot(teacher, aes(x = years, y = base, color = degree)) +
+           geom_point() +
+           labs(
+             x = "Number of years employed by the school district",
+             y = "Base annual salary, in $",
+             color = "Degree",
+             title = "Salary and years of employment"
+           )

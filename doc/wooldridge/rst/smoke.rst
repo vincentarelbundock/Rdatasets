@@ -1,71 +1,74 @@
 .. container::
 
-   ===== ===============
-   smoke R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: smoke
-      :name: smoke
+      ===== ===============
+      smoke R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: smoke
+         :name: smoke
 
-   Wooldridge Source: J. Mullahy (1997), “Instrumental-Variable
-   Estimation of Count Data Models: Applications to Models of Cigarette
-   Smoking Behavior,” Review of Economics and Statistics 79, 596-593.
-   Professor Mullahy kindly provided the data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: J. Mullahy (1997), “Instrumental-Variable
+      Estimation of Count Data Models: Applications to Models of
+      Cigarette Smoking Behavior,” Review of Economics and Statistics
+      79, 596-593. Professor Mullahy kindly provided the data. Data
+      loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('smoke')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('smoke')
 
-   A data.frame with 807 observations on 10 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **educ:** years of schooling
+      A data.frame with 807 observations on 10 variables:
 
-   -  **cigpric:** state cig. price, cents/pack
+      -  **educ:** years of schooling
 
-   -  **white:** =1 if white
+      -  **cigpric:** state cig. price, cents/pack
 
-   -  **age:** in years
+      -  **white:** =1 if white
 
-   -  **income:** annual income, $
+      -  **age:** in years
 
-   -  **cigs:** cigs. smoked per day
+      -  **income:** annual income, $
 
-   -  **restaurn:** =1 if rest. smk. restrictions
+      -  **cigs:** cigs. smoked per day
 
-   -  **lincome:** log(income)
+      -  **restaurn:** =1 if rest. smk. restrictions
 
-   -  **agesq:** age^2
+      -  **lincome:** log(income)
 
-   -  **lcigpric:** log(cigprice)
+      -  **agesq:** age^2
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lcigpric:** log(cigprice)
 
-   If you want to do a “fancy” IV version of Computer Exercise C16.1,
-   you could estimate a reduced form count model for cigs using the
-   Poisson regression methods in Section 17.3, and then use the fitted
-   values as an IV for cigs. Presumably, this would be for a fairly
-   advanced class.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 183, 288-289, 298, 301, 578, 627
+      If you want to do a “fancy” IV version of Computer Exercise C16.1,
+      you could estimate a reduced form count model for cigs using the
+      Poisson regression methods in Section 17.3, and then use the
+      fitted values as an IV for cigs. Presumably, this would be for a
+      fairly advanced class.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 183, 288-289, 298, 301, 578, 627
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(smoke)
+      ::
+
+          str(smoke)

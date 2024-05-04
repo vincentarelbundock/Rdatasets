@@ -1,35 +1,37 @@
 .. container::
 
-   ========= ===============
-   faithfuld R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: 2d density estimate of Old Faithful data
-      :name: faithfuld
+      ========= ===============
+      faithfuld R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: 2d density estimate of Old Faithful data
+         :name: d-density-estimate-of-old-faithful-data
 
-   A 2d density estimate of the waiting and eruptions variables data
-   faithful.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A 2d density estimate of the waiting and eruptions variables data
+      faithful.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      faithfuld
+      ::
 
-   .. rubric:: Format
-      :name: format
+         faithfuld
 
-   A data frame with 5,625 observations and 3 variables:
+      .. rubric:: Format
+         :name: format
 
-   eruptions
-      Eruption time in mins
+      A data frame with 5,625 observations and 3 variables:
 
-   waiting
-      Waiting time to next eruption in mins
+      eruptions
+         Eruption time in mins
 
-   density
-      2d density estimate
+      waiting
+         Waiting time to next eruption in mins
+
+      density
+         2d density estimate

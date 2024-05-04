@@ -1,37 +1,39 @@
 .. container::
 
-   =================== ===============
-   InfantMortality2010 R Documentation
-   =================== ===============
+   .. container::
 
-   .. rubric:: Infant Mortality Rates
-      :name: InfantMortality2010
+      =================== ===============
+      InfantMortality2010 R Documentation
+      =================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Infant Mortality Rates
+         :name: infant-mortality-rates
 
-   Infant mortality rates in the United States by decade (1920-2010)
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Infant mortality rates in the United States by decade (1920-2010)
 
-   A data frame with 10 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Mortality``
-      Deaths within one year of birth (per 1000 births)
+      A data frame with 10 observations on the following 2 variables.
 
-   ``Year``
-      Year (1920-2010 by decades)
+      ``Mortality``
+         Deaths within one year of birth (per 1000 births)
 
-   .. rubric:: Details
-      :name: details
+      ``Year``
+         Year (1920-2010 by decades)
 
-   Infant mortality (deaths within one year of birth per 1,000 births)
-   in the US from 1920 - 2010 (by decade).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Infant mortality (deaths within one year of birth per 1,000
+      births) in the US from 1920 - 2010 (by decade).
 
-   CDC National Vital Statistics Reports at
-   http://www.cdc.gov/nchs/data/nvsr/nvsr57/nvsr57_14.pdf and
-   https://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_09.pdf
+      .. rubric:: Source
+         :name: source
+
+      CDC National Vital Statistics Reports at
+      http://www.cdc.gov/nchs/data/nvsr/nvsr57/nvsr57_14.pdf and
+      https://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_09.pdf

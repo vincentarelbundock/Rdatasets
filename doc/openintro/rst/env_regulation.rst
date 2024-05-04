@@ -1,58 +1,61 @@
 .. container::
 
-   ============== ===============
-   env_regulation R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: American Adults on Regulation and Renewable Energy
-      :name: env_regulation
+      ============== ===============
+      env_regulation R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: American Adults on Regulation and Renewable Energy
+         :name: american-adults-on-regulation-and-renewable-energy
 
-   Pew Research conducted a poll to find whether American adults support
-   regulation or believe the private market will move the American
-   economy towards renewable energy.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Pew Research conducted a poll to find whether American adults
+      support regulation or believe the private market will move the
+      American economy towards renewable energy.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      env_regulation
+      ::
 
-   .. rubric:: Format
-      :name: format
+         env_regulation
 
-   A data frame with 705 observations on the following variable.
+      .. rubric:: Format
+         :name: format
 
-   statement
-      There were three possible outcomes for each person:
-      ``"Regulations necessary"``,
-      ``"Private marketplace will ensure"``, and ``"Don't know"``.
+      A data frame with 705 observations on the following variable.
 
-   .. rubric:: Details
-      :name: details
+      statement
+         There were three possible outcomes for each person:
+         ``"Regulations necessary"``,
+         ``"Private marketplace will ensure"``, and ``"Don't know"``.
 
-   The exact statements being selected were: (1) Government regulations
-   are necessary to encourage businesses and consumers to rely more on
-   renewable energy sources. (2) The private marketplace will ensure
-   that businesses and consumers rely more on renewable energy sources,
-   even without government regulations.
+      .. rubric:: Details
+         :name: details
 
-   The actual sample size was 1012. However, the original data were not
-   from a simple random sample; after accounting for the design, the
-   equivalent sample size was about 705, which was what was used for the
-   data set here to keep things simpler for intro stat analyses.
+      The exact statements being selected were: (1) Government
+      regulations are necessary to encourage businesses and consumers to
+      rely more on renewable energy sources. (2) The private marketplace
+      will ensure that businesses and consumers rely more on renewable
+      energy sources, even without government regulations.
 
-   .. rubric:: Source
-      :name: source
+      The actual sample size was 1012. However, the original data were
+      not from a simple random sample; after accounting for the design,
+      the equivalent sample size was about 705, which was what was used
+      for the data set here to keep things simpler for intro stat
+      analyses.
 
-   https://www.pewresearch.org/science/2017/05/16/public-divides-over-environmental-regulation-and-energy-policy/
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.pewresearch.org/science/2017/05/16/public-divides-over-environmental-regulation-and-energy-policy/
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      table(env_regulation)
+      ::
+
+         table(env_regulation)

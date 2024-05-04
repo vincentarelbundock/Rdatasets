@@ -1,56 +1,58 @@
 .. container::
 
-   ======== ===============
-   Leukemia R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Responses to Treatment for Leukemia
-      :name: Leukemia
+      ======== ===============
+      Leukemia R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Responses to Treatment for Leukemia
+         :name: responses-to-treatment-for-leukemia
 
-   Treatment results for leukemia patients
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Treatment results for leukemia patients
 
-   A data frame with 51 observations on the following 9 variables.
+      .. rubric:: Format
+         :name: format
 
-   +------------+--------------------------------------------------------+
-   | ``Age``    | Age at diagnosis (in years)                            |
-   +------------+--------------------------------------------------------+
-   | ``Smear``  | Differential percentage of blasts                      |
-   +------------+--------------------------------------------------------+
-   | ``Infil``  | Percentage of absolute marrow leukemia infiltrate      |
-   +------------+--------------------------------------------------------+
-   | ``Index``  | Percentage labeling index of the bone marrow leukemia  |
-   |            | cells                                                  |
-   +------------+--------------------------------------------------------+
-   | ``Blasts`` | Absolute number of blasts, in thousands                |
-   +------------+--------------------------------------------------------+
-   | ``Temp``   | Highest temperature of the patient prior to treatment, |
-   |            | in degrees Fahrenheit                                  |
-   +------------+--------------------------------------------------------+
-   | ``Resp``   | ``1``\ =responded to treatment or ``0``\ =failed to    |
-   |            | respond                                                |
-   +------------+--------------------------------------------------------+
-   | ``Time``   | Survival time from diagnosis (in months)               |
-   +------------+--------------------------------------------------------+
-   | ``Status`` | ``0``\ =dead or ``1``\ =alive                          |
-   +------------+--------------------------------------------------------+
-   |            |                                                        |
-   +------------+--------------------------------------------------------+
+      A data frame with 51 observations on the following 9 variables.
 
-   .. rubric:: Details
-      :name: details
+      +------------+--------------------------------------------------------+
+      | ``Age``    | Age at diagnosis (in years)                            |
+      +------------+--------------------------------------------------------+
+      | ``Smear``  | Differential percentage of blasts                      |
+      +------------+--------------------------------------------------------+
+      | ``Infil``  | Percentage of absolute marrow leukemia infiltrate      |
+      +------------+--------------------------------------------------------+
+      | ``Index``  | Percentage labeling index of the bone marrow leukemia  |
+      |            | cells                                                  |
+      +------------+--------------------------------------------------------+
+      | ``Blasts`` | Absolute number of blasts, in thousands                |
+      +------------+--------------------------------------------------------+
+      | ``Temp``   | Highest temperature of the patient prior to treatment, |
+      |            | in degrees Fahrenheit                                  |
+      +------------+--------------------------------------------------------+
+      | ``Resp``   | ``1``\ =responded to treatment or ``0``\ =failed to    |
+      |            | respond                                                |
+      +------------+--------------------------------------------------------+
+      | ``Time``   | Survival time from diagnosis (in months)               |
+      +------------+--------------------------------------------------------+
+      | ``Status`` | ``0``\ =dead or ``1``\ =alive                          |
+      +------------+--------------------------------------------------------+
+      |            |                                                        |
+      +------------+--------------------------------------------------------+
 
-   A study involved 51 untreated adult patients with acute myeloblastic
-   leukemia who were given a course of treatment, after which they were
-   assessed as to their response.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      A study involved 51 untreated adult patients with acute
+      myeloblastic leukemia who were given a course of treatment, after
+      which they were assessed as to their response.
 
-   Data come from Statistical Analysis Using S-Plus (Brian S. Everitt;
-   first edition 1994, Chapman & Hall).
+      .. rubric:: Source
+         :name: source
+
+      Data come from Statistical Analysis Using S-Plus (Brian S.
+      Everitt; first edition 1994, Chapman & Hall).

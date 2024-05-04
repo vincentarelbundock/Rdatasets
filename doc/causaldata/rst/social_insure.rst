@@ -1,87 +1,89 @@
 .. container::
 
-   ============= ===============
-   social_insure R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Data from "Social Networks and the Decision to Insure"
-      :name: social_insure
+      ============= ===============
+      social_insure R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data from "Social Networks and the Decision to Insure"
+         :name: data-from-social-networks-and-the-decision-to-insure
 
-   The ``social_insure`` data contains data from Jai, De Janvry, and
-   Saoudlet (2015) on a two-round social network-based experiment on
-   getting farmers to get insurance. See the paper for more details.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``social_insure`` data contains data from Jai, De Janvry, and
+      Saoudlet (2015) on a two-round social network-based experiment on
+      getting farmers to get insurance. See the paper for more details.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      social_insure
+      ::
 
-   .. rubric:: Format
-      :name: format
+         social_insure
 
-   A data frame with 1410 rows and 13 variables
+      .. rubric:: Format
+         :name: format
 
-   address
-      Natural village
+      A data frame with 1410 rows and 13 variables
 
-   village
-      Administrative village
+      address
+         Natural village
 
-   takeup_survey
-      Whether farmer ended up purchasing insurance. (1 = yes)
+      village
+         Administrative village
 
-   age
-      Household Characteristics - Age
+      takeup_survey
+         Whether farmer ended up purchasing insurance. (1 = yes)
 
-   agpop
-      Household Characteristics - Household Size
+      age
+         Household Characteristics - Age
 
-   ricearea_2010
-      Area of Rice Production
+      agpop
+         Household Characteristics - Household Size
 
-   disaster_prob
-      Perceived Probability of Disasters Next Year
+      ricearea_2010
+         Area of Rice Production
 
-   male
-      Household Caracteristics: Gender of Household Head (1 = male)
+      disaster_prob
+         Perceived Probability of Disasters Next Year
 
-   default
-      "Default option" in experimental format assigned to. (1 = default
-      is to buy, 0 = default is to not buy)
+      male
+         Household Caracteristics: Gender of Household Head (1 = male)
 
-   intensive
-      Whether or not was assigned to "intensive" experimental session (1
-      = yes)
+      default
+         "Default option" in experimental format assigned to. (1 =
+         default is to buy, 0 = default is to not buy)
 
-   risk_averse
-      Risk aversion measurement
+      intensive
+         Whether or not was assigned to "intensive" experimental session
+         (1 = yes)
 
-   literacy
-      1 = literate, 0 = illiterate
+      risk_averse
+         Risk aversion measurement
 
-   pre_takeup_rate
-      Takeup rate prior to experiment
+      literacy
+         1 = literate, 0 = illiterate
 
-   .. rubric:: Details
-      :name: details
+      pre_takeup_rate
+         Takeup rate prior to experiment
 
-   This data is used in the *Instrumental Variables* chapter of *The
-   Effect*.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This data is used in the *Instrumental Variables* chapter of *The
+      Effect*.
 
-   Cai, J., De Janvry, A. and Sadoulet, E., 2015. Social networks and
-   the decision to insure. *American Economic Journal: Applied
-   Economics*, 7(2), pp.81-108.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Cai, J., De Janvry, A. and Sadoulet, E., 2015. Social networks and
+      the decision to insure. *American Economic Journal: Applied
+      Economics*, 7(2), pp.81-108.
 
-   Huntington-Klein. 2021. The Effect: An Introduction to Research
-   Design and Causality. https://theeffectbook.net.
+      .. rubric:: References
+         :name: references
+
+      Huntington-Klein. 2021. The Effect: An Introduction to Research
+      Design and Causality. https://theeffectbook.net.

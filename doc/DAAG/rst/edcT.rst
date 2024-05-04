@@ -1,73 +1,75 @@
 .. container::
 
-   ==== ===============
-   edcT R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: EPICA Dome C Ice Core 800KYr Temperature Estimates
-      :name: edcT
+      ==== ===============
+      edcT R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: EPICA Dome C Ice Core 800KYr Temperature Estimates
+         :name: epica-dome-c-ice-core-800kyr-temperature-estimates
 
-   Temperature record, using Deuterium as a proxy, from the EPICA
-   (European Project for Ice Coring in Antarctica) Dome C ice core
-   covering 0 to 800 kyr BP.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Temperature record, using Deuterium as a proxy, from the EPICA
+      (European Project for Ice Coring in Antarctica) Dome C ice core
+      covering 0 to 800 kyr BP.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(edcT)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(edcT)
 
-   A data frame with 5788 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Bag``
-      Bag number
+      A data frame with 5788 observations on the following 5 variables.
 
-   ``ztop``
-      Top depth (m)
+      ``Bag``
+         Bag number
 
-   ``Age``
-      Years before 1950
+      ``ztop``
+         Top depth (m)
 
-   ``Deuterium``
-      Deuterium dD data
+      ``Age``
+         Years before 1950
 
-   ``dT``
-      Temperature difference from the average of the last 1000 years ~
-      -54.5degC
+      ``Deuterium``
+         Deuterium dD data
 
-   .. rubric:: Details
-      :name: details
+      ``dT``
+         Temperature difference from the average of the last 1000 years
+         ~ -54.5degC
 
-   Temperature was estimated from the deuterium data, after making
-   various corrections.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Temperature was estimated from the deuterium data, after making
+      various corrections.
 
-   https://www.ncei.noaa.gov/products/paleoclimatology/ice-core
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      https://www.ncei.noaa.gov/products/paleoclimatology/ice-core
 
-   Jouzel, J., et al. 2007. EPICA Dome C Ice Core 800KYr Deuterium Data
-   and Temperature Estimates. IGBP PAGES/World Data Center for
-   Paleoclimatology Data Contribution Series No. 2007-091. NOAA/NCDC
-   Paleoclimatology Program, Boulder CO, USA.
+      .. rubric:: References
+         :name: references
 
-   Jouzel, J., et al. 2007. Orbital and Millennial Antarctic Climate
-   Variability over the Past 800,000 Years. Science, Vol. 317, No. 5839,
-   pp.793-797, 10 August 2007.
+      Jouzel, J., et al. 2007. EPICA Dome C Ice Core 800KYr Deuterium
+      Data and Temperature Estimates. IGBP PAGES/World Data Center for
+      Paleoclimatology Data Contribution Series No. 2007-091. NOAA/NCDC
+      Paleoclimatology Program, Boulder CO, USA.
 
-   .. rubric:: Examples
-      :name: examples
+      Jouzel, J., et al. 2007. Orbital and Millennial Antarctic Climate
+      Variability over the Past 800,000 Years. Science, Vol. 317, No.
+      5839, pp.793-797, 10 August 2007.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       data(edcT) 
+      ::
+
+          data(edcT) 

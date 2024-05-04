@@ -1,35 +1,37 @@
 .. container::
 
-   ====== ===============
-   melsyd R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Total weekly air passenger numbers on Ansett airline
-      flights between Melbourne and Sydney, 1987–1992.
-      :name: melsyd
+      ====== ===============
+      melsyd R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Total weekly air passenger numbers on Ansett airline
+         flights between Melbourne and Sydney, 1987–1992.
+         :name: total-weekly-air-passenger-numbers-on-ansett-airline-flights-between-melbourne-and-sydney-19871992.
 
-   Air traffic numbers are in thousands, and divided into first class,
-   business class and economy class. There was a major pilots'
-   industrial dispute during the data period resulting in some weeks
-   with zero traffic. There was also at least two changes in the
-   definitions of passenger classes.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Air traffic numbers are in thousands, and divided into first
+      class, business class and economy class. There was a major pilots'
+      industrial dispute during the data period resulting in some weeks
+      with zero traffic. There was also at least two changes in the
+      definitions of passenger classes.
 
-   Multiple time series of class ``mts``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Multiple time series of class ``mts``.
 
-   Ansett Airlines (which no longer exists).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Ansett Airlines (which no longer exists).
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      autoplot(melsyd, facets=TRUE)
+      ::
+
+         autoplot(melsyd, facets=TRUE)

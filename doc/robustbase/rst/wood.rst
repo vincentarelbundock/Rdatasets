@@ -1,57 +1,60 @@
 .. container::
 
-   ==== ===============
-   wood R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Modified Data on Wood Specific Gravity
-      :name: wood
+      ==== ===============
+      wood R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Modified Data on Wood Specific Gravity
+         :name: modified-data-on-wood-specific-gravity
 
-   The original data are from Draper and Smith (1966) and were used to
-   determine the influence of anatomical factors on wood specific
-   gravity, with five explanatory variables and an intercept. These data
-   were contaminated by replacing a few observations with outliers.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The original data are from Draper and Smith (1966) and were used
+      to determine the influence of anatomical factors on wood specific
+      gravity, with five explanatory variables and an intercept. These
+      data were contaminated by replacing a few observations with
+      outliers.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(wood, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(wood, package="robustbase")
 
-   A data frame with 20 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   x1, x2, x3, x4, x5
-      explanatory “anatomical” wood variables.
+      A data frame with 20 observations on the following 6 variables.
 
-   y
-      wood specific gravity, the target variable.
+      x1, x2, x3, x4, x5
+         explanatory “anatomical” wood variables.
 
-   .. rubric:: Source
-      :name: source
+      y
+         wood specific gravity, the target variable.
 
-   Draper and Smith (1966, p.227)
+      .. rubric:: Source
+         :name: source
 
-   Peter J. Rousseeuw and Annick M. Leroy (1987) *Robust Regression and
-   Outlier Detection* Wiley, p.243, table 8.
+      Draper and Smith (1966, p.227)
 
-   .. rubric:: Examples
-      :name: examples
+      Peter J. Rousseeuw and Annick M. Leroy (1987) *Robust Regression
+      and Outlier Detection* Wiley, p.243, table 8.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(wood)
-      plot(wood)
-      summary( lm.wood <-        lm(y ~ ., data = wood))
-      summary(rlm.wood <- MASS::rlm(y ~ ., data = wood))
-      summary(lts.wood <-    ltsReg(y ~ ., data = wood))
+      ::
 
-      wood.x <- as.matrix(wood)[,1:5]
-      c_wood <- covMcd(wood.x)
-      c_wood
+         data(wood)
+         plot(wood)
+         summary( lm.wood <-        lm(y ~ ., data = wood))
+         summary(rlm.wood <- MASS::rlm(y ~ ., data = wood))
+         summary(lts.wood <-    ltsReg(y ~ ., data = wood))
+
+         wood.x <- as.matrix(wood)[,1:5]
+         c_wood <- covMcd(wood.x)
+         c_wood

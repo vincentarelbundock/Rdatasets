@@ -1,63 +1,65 @@
 .. container::
 
-   ======= ===============
-   Baumann R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Methods of Teaching Reading Comprehension
-      :name: Baumann
+      ======= ===============
+      Baumann R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Methods of Teaching Reading Comprehension
+         :name: methods-of-teaching-reading-comprehension
 
-   The ``Baumann`` data frame has 66 rows and 6 columns. The data are
-   from an experimental study conducted by Baumann and Jones, as
-   reported by Moore and McCabe (1993) Students were randomly assigned
-   to one of three experimental groups.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Baumann`` data frame has 66 rows and 6 columns. The data are
+      from an experimental study conducted by Baumann and Jones, as
+      reported by Moore and McCabe (1993) Students were randomly
+      assigned to one of three experimental groups.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Baumann
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Baumann
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   group
-      Experimental group; a factor with levels: ``Basal``, traditional
-      method of teaching; ``DRTA``, an innovative method; ``Strat``,
-      another innovative method.
+      This data frame contains the following columns:
 
-   pretest.1
-      First pretest.
+      group
+         Experimental group; a factor with levels: ``Basal``,
+         traditional method of teaching; ``DRTA``, an innovative method;
+         ``Strat``, another innovative method.
 
-   pretest.2
-      Second pretest.
+      pretest.1
+         First pretest.
 
-   post.test.1
-      First post-test.
+      pretest.2
+         Second pretest.
 
-   post.test.2
-      Second post-test.
+      post.test.1
+         First post-test.
 
-   post.test.3
-      Third post-test.
+      post.test.2
+         Second post-test.
 
-   .. rubric:: Source
-      :name: source
+      post.test.3
+         Third post-test.
 
-   Moore, D. S. and McCabe, G. P. (1993) *Introduction to the Practice
-   of Statistics, Second Edition.* Freeman, p. 794–795.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Moore, D. S. and McCabe, G. P. (1993) *Introduction to the
+      Practice of Statistics, Second Edition.* Freeman, p. 794–795.
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
 
-   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
-   Regression*, Third Edition, Sage.
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.
+
+      Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+      Regression*, Third Edition, Sage.

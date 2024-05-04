@@ -1,40 +1,42 @@
 .. container::
 
-   ========== ===============
-   Sacramento R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Sacramento CA home prices
-      :name: Sacramento
+      ========== ===============
+      Sacramento R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sacramento CA home prices
+         :name: sacramento-ca-home-prices
 
-   This data frame contains house and sale price data for 932 homes in
-   Sacramento CA. The original data were obtained from the website for
-   the SpatialKey software. From their website: "The Sacramento real
-   estate transactions file is a list of 985 real estate transactions in
-   the Sacramento area reported over a five-day period, as reported by
-   the Sacramento Bee." Google was used to fill in missing/incorrect
-   data.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Value
-      :name: value
+      This data frame contains house and sale price data for 932 homes
+      in Sacramento CA. The original data were obtained from the website
+      for the SpatialKey software. From their website: "The Sacramento
+      real estate transactions file is a list of 985 real estate
+      transactions in the Sacramento area reported over a five-day
+      period, as reported by the Sacramento Bee." Google was used to
+      fill in missing/incorrect data.
 
-   ============== ========
-   ``Sacramento`` a tibble
-   ============== ========
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      ============== ========
+      ``Sacramento`` a tibble
+      ============== ========
 
-   SpatialKey website:
-   https://support.spatialkey.com/spatialkey-sample-csv-data/
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      SpatialKey website:
+      https://support.spatialkey.com/spatialkey-sample-csv-data/
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Sacramento)
-      str(Sacramento)
+      ::
+
+         data(Sacramento)
+         str(Sacramento)

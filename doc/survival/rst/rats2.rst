@@ -1,43 +1,45 @@
 .. container::
 
-   ===== ===============
-   rats2 R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Rat data from Gail et al.
-      :name: rats2
+      ===== ===============
+      rats2 R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Rat data from Gail et al.
+         :name: rat-data-from-gail-et-al.
 
-   48 rats were injected with a carcinogen, and then randomized to
-   either drug or placebo. The number of tumors ranges from 0 to 13; all
-   rats were censored at 6 months after randomization.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      48 rats were injected with a carcinogen, and then randomized to
+      either drug or placebo. The number of tumors ranges from 0 to 13;
+      all rats were censored at 6 months after randomization.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      rats2
-      data(cancer, package="survival")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         rats2
+         data(cancer, package="survival")
 
-   ============ =================================
-   rat:         id
-   trt:         treatment,(1=drug, 0=control)
-   observation: within rat
-   start:       entry time
-   stop:        exit time
-   status:      event status, 1=tumor, 0=censored
-   \            
-   ============ =================================
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      ============ =================================
+      rat:         id
+      trt:         treatment,(1=drug, 0=control)
+      observation: within rat
+      start:       entry time
+      stop:        exit time
+      status:      event status, 1=tumor, 0=censored
+      \            
+      ============ =================================
 
-   MH Gail, TJ Santner, and CC Brown (1980), An analysis of comparative
-   carcinogenesis experiments based on multiple times to tumor.
-   *Biometrics* **36**, 255–266.
+      .. rubric:: Source
+         :name: source
+
+      MH Gail, TJ Santner, and CC Brown (1980), An analysis of
+      comparative carcinogenesis experiments based on multiple times to
+      tumor. *Biometrics* **36**, 255–266.

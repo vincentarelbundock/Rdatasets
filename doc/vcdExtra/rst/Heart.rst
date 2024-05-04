@@ -1,55 +1,57 @@
 .. container::
 
-   ===== ===============
-   Heart R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Sex, Occupation and Heart Disease
-      :name: Heart
+      ===== ===============
+      Heart R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sex, Occupation and Heart Disease
+         :name: sex-occupation-and-heart-disease
 
-   Classification of individuals by gender, occupational category and
-   occurrence of heart disease
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Classification of individuals by gender, occupational category and
+      occurrence of heart disease
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Heart)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Heart)
 
-   A 3-dimensional array resulting from cross-tabulating 3 variables for
-   21522 observations. The variable names and their levels are:
+      .. rubric:: Format
+         :name: format
 
-   == =========== ===================================
-   No Name        Levels
-   1  ``Disease`` ``"Disease", "None"``
-   2  ``Gender``  ``"Male", "Female"``
-   3  ``Occup``   ``"Unempl", "WhiteCol", "BlueCol"``
-   \              
-   == =========== ===================================
+      A 3-dimensional array resulting from cross-tabulating 3 variables
+      for 21522 observations. The variable names and their levels are:
 
-   .. rubric:: Source
-      :name: source
+      == =========== ===================================
+      No Name        Levels
+      1  ``Disease`` ``"Disease", "None"``
+      2  ``Gender``  ``"Male", "Female"``
+      3  ``Occup``   ``"Unempl", "WhiteCol", "BlueCol"``
+      \              
+      == =========== ===================================
 
-   Karger, (1980).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Karger, (1980).
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Heart)
-      str(Heart)
+      ::
 
-      # Display the frequencies for occupational categories.
-      # Each row is a 2 x 2 table
-      vcd::structable(Disease + Gender ~ Occup, data=Heart)
+         data(Heart)
+         str(Heart)
 
-      # display as fourfold plots
-      vcd::cotabplot(~ Disease + Gender | Occup, data=Heart, panel = cotab_fourfold)
+         # Display the frequencies for occupational categories.
+         # Each row is a 2 x 2 table
+         vcd::structable(Disease + Gender ~ Occup, data=Heart)
+
+         # display as fourfold plots
+         vcd::cotabplot(~ Disease + Gender | Occup, data=Heart, panel = cotab_fourfold)

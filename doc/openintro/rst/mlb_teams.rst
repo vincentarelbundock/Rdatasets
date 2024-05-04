@@ -1,178 +1,181 @@
 .. container::
 
-   ========= ===============
-   mlb_teams R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Major League Baseball Teams Data.
-      :name: mlb_teams
+      ========= ===============
+      mlb_teams R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Major League Baseball Teams Data.
+         :name: major-league-baseball-teams-data.
 
-   A subset of data on Major League Baseball teams from Lahman's
-   Baseball Database. The full data set is available in the `Lahman R
-   package <https://github.com/cdalzell/Lahman>`__.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A subset of data on Major League Baseball teams from Lahman's
+      Baseball Database. The full data set is available in the `Lahman R
+      package <https://github.com/cdalzell/Lahman>`__.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      mlb_teams
+      ::
 
-   .. rubric:: Format
-      :name: format
+         mlb_teams
 
-   A data frame with 2784 rows and 41 variables.
+      .. rubric:: Format
+         :name: format
 
-   year
-      Year of play.
+      A data frame with 2784 rows and 41 variables.
 
-   league_id
-      League the team plays in with levels AL (American League) and NL
-      (National League).
+      year
+         Year of play.
 
-   division_id
-      Division the team plays in with levels W (west), E (east) and C
-      (central).
+      league_id
+         League the team plays in with levels AL (American League) and
+         NL (National League).
 
-   rank
-      Team's rank in their division at the end of the regular season.
+      division_id
+         Division the team plays in with levels W (west), E (east) and C
+         (central).
 
-   games_played
-      Games played.
+      rank
+         Team's rank in their division at the end of the regular season.
 
-   home_games
-      Games played at home.
+      games_played
+         Games played.
 
-   wins
-      Number of games won.
+      home_games
+         Games played at home.
 
-   losses
-      Number of games lost.
+      wins
+         Number of games won.
 
-   division_winner
-      Did the team win their division? Levels of Y (yes) and N (no).
+      losses
+         Number of games lost.
 
-   wild_card_winner
-      Was the team a wild card winner. Levels of Y (yes) and N (no).
+      division_winner
+         Did the team win their division? Levels of Y (yes) and N (no).
 
-   league_winner
-      Did the team win their league? Levels of Y (yes) and N (no).
+      wild_card_winner
+         Was the team a wild card winner. Levels of Y (yes) and N (no).
 
-   world_series_winner
-      Did the team win the World Series? Levels of Y (yes) and N (no).
+      league_winner
+         Did the team win their league? Levels of Y (yes) and N (no).
 
-   runs_scored
-      Number of runs scored during the season.
+      world_series_winner
+         Did the team win the World Series? Levels of Y (yes) and N
+         (no).
 
-   at_bats
-      Number of at bats during the season.
+      runs_scored
+         Number of runs scored during the season.
 
-   hits
-      Number of hits during the season. Includes singles, doubles,
-      triples and homeruns.
+      at_bats
+         Number of at bats during the season.
 
-   doubles
-      Number of doubles hit.
+      hits
+         Number of hits during the season. Includes singles, doubles,
+         triples and homeruns.
 
-   triples
-      Number of triples hit.
+      doubles
+         Number of doubles hit.
 
-   homeruns
-      Homeruns by batters.
+      triples
+         Number of triples hit.
 
-   walks
-      Number of walks.
+      homeruns
+         Homeruns by batters.
 
-   strikeouts_by_batters
-      Number of batters struckout.
+      walks
+         Number of walks.
 
-   stolen_bases
-      Number of stolen bases.
+      strikeouts_by_batters
+         Number of batters struckout.
 
-   caught_stealing
-      Number of base runners caught stealing.
+      stolen_bases
+         Number of stolen bases.
 
-   batters_hit_by_pitch
-      Number of batters hit by a pitch.
+      caught_stealing
+         Number of base runners caught stealing.
 
-   sacrifice_flies
-      Number of sacrifice flies.
+      batters_hit_by_pitch
+         Number of batters hit by a pitch.
 
-   opponents_runs_scored
-      Number of runs scored by opponents.
+      sacrifice_flies
+         Number of sacrifice flies.
 
-   earned_runs_allowed
-      Number of earned runs allowed.
+      opponents_runs_scored
+         Number of runs scored by opponents.
 
-   earned_run_average
-      Earned run average.
+      earned_runs_allowed
+         Number of earned runs allowed.
 
-   complete_games
-      Number of games where a single pitcher played the entire game.
+      earned_run_average
+         Earned run average.
 
-   shutouts
-      Number of shutouts.
+      complete_games
+         Number of games where a single pitcher played the entire game.
 
-   saves
-      Number of saves.
+      shutouts
+         Number of shutouts.
 
-   outs_pitches
-      Number of outs pitched for the season (number of innings pitched
-      times 3).
+      saves
+         Number of saves.
 
-   hits_allowed
-      Number of hits made by opponents.
+      outs_pitches
+         Number of outs pitched for the season (number of innings
+         pitched times 3).
 
-   homeruns_allowed
-      Number of homeruns hit by opponents.
+      hits_allowed
+         Number of hits made by opponents.
 
-   walks_allowed
-      Number of opponents who were walked.
+      homeruns_allowed
+         Number of homeruns hit by opponents.
 
-   strikeouts_by_pitchers
-      Number of opponents who were struckout.
+      walks_allowed
+         Number of opponents who were walked.
 
-   errors
-      Number of errors.
+      strikeouts_by_pitchers
+         Number of opponents who were struckout.
 
-   double_plays
-      Number of double plays.
+      errors
+         Number of errors.
 
-   fielding_percentage
-      Teams fielding percentage.
+      double_plays
+         Number of double plays.
 
-   team_name
-      Full name of team.
+      fielding_percentage
+         Teams fielding percentage.
 
-   ball_park
-      Home ballpark name.
+      team_name
+         Full name of team.
 
-   home_attendance
-      Home attendance total.
+      ball_park
+         Home ballpark name.
 
-   .. rubric:: Source
-      :name: source
+      home_attendance
+         Home attendance total.
 
-   `Lahmans Baseball
-   Database <https://www.seanlahman.com/baseball-archive/statistics/>`__
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      `Lahmans Baseball
+      Database <https://www.seanlahman.com/baseball-archive/statistics/>`__
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(dplyr)
+      ::
 
-      # List the World Series winning teams for each year
-      mlb_teams %>%
-        filter(world_series_winner == "Y") %>%
-        select(year, team_name, ball_park)
+         library(dplyr)
 
-      # List the teams with their average number of wins and losses
-      mlb_teams %>%
-        group_by(team_name) %>%
-        summarize(mean_wins = mean(wins), mean_losses = mean(losses)) %>%
-        arrange((team_name))
+         # List the World Series winning teams for each year
+         mlb_teams %>%
+           filter(world_series_winner == "Y") %>%
+           select(year, team_name, ball_park)
+
+         # List the teams with their average number of wins and losses
+         mlb_teams %>%
+           group_by(team_name) %>%
+           summarize(mean_wins = mean(wins), mean_losses = mean(losses)) %>%
+           arrange((team_name))

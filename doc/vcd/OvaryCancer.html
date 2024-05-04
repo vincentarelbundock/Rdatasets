@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>OvaryCancer</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='OvaryCancer'>Ovary Cancer Data</h2>
+<h2>Ovary Cancer Data</h2>
 
 <h3>Description</h3>
 
@@ -89,13 +89,14 @@ ftable(tab, col.vars = "survival", row.vars = c("stage", "operation", "xray"))
 ##   the survival depends on stage, but not xray and operation.
 doubledecker(survival ~ stage + operation + xray, data = tab)
 mosaic(~ stage + operation + xray + survival,
-  split = c(FALSE, TRUE, TRUE, FALSE), data = tab, keep = FALSE,
+  split_vertical = c(FALSE, TRUE, TRUE, FALSE), data = tab, keep_aspect_ratio = FALSE,
   gp = gpar(fill = rev(grey.colors(2))))
 mosaic(~ stage + operation + xray + survival,
-  split = c(FALSE, TRUE, TRUE, FALSE), data = tab, keep = FALSE,
+  split_vertical = c(FALSE, TRUE, TRUE, FALSE), data = tab, keep_aspect_ratio = FALSE,
   expected = ~ xray * operation * stage + survival*stage)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

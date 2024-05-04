@@ -1,39 +1,41 @@
 .. container::
 
-   ============== ===============
-   Belgian-phones R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Belgium Phone Calls 1950-1973
-      :name: Belgian-phones
+      ============== ===============
+      Belgian-phones R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Belgium Phone Calls 1950-1973
+         :name: belgium-phone-calls-1950-1973
 
-   A list object with the annual numbers of telephone calls, in Belgium.
-   The components are:
+      .. rubric:: Description
+         :name: description
 
-   ``year``
-      last two digits of the year.
+      A list object with the annual numbers of telephone calls, in
+      Belgium. The components are:
 
-   ``calls``
-      number of telephone calls made (in millions of calls).
+      ``year``
+         last two digits of the year.
 
-   .. rubric:: Usage
-      :name: usage
+      ``calls``
+         number of telephone calls made (in millions of calls).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      phones
+      ::
 
-   .. rubric:: Source
-      :name: source
+         phones
 
-   P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression & Outlier
-   Detection.* Wiley.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression &
+      Outlier Detection.* Wiley.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

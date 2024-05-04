@@ -1,57 +1,60 @@
 .. container::
 
-   =========== ===============
-   pancreatic2 R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: pancreatic2
-      :name: pancreatic2
+      =========== ===============
+      pancreatic2 R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: pancreatic2
+         :name: pancreatic2
 
-   This is the same data as in 'pancreatic', with overall and
-   progression-free survival calculated. Dates have been removed.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This is the same data as in 'pancreatic', with overall and
+      progression-free survival calculated. Dates have been removed.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("pancreatic2")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("pancreatic2")
 
-   A data frame with 41 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``pfs``
-      Progression-free survival: Time from entry until disease
-      progression. If no progression was observed, before death, the
-      time to death is used.
+      A data frame with 41 observations on the following 4 variables.
 
-   ``os``
-      Overall survival: Time from entry until death
+      ``pfs``
+         Progression-free survival: Time from entry until disease
+         progression. If no progression was observed, before death, the
+         time to death is used.
 
-   ``status``
-      This censoring indicator is 1 for all patients, since all patients
-      died.
+      ``os``
+         Overall survival: Time from entry until death
 
-   ``stage``
-      a factor with levels ``LA`` (locally advanced) or ``M``
-      (metastatic)
+      ``status``
+         This censoring indicator is 1 for all patients, since all
+         patients died.
 
-   .. rubric:: References
-      :name: references
+      ``stage``
+         a factor with levels ``LA`` (locally advanced) or ``M``
+         (metastatic)
 
-   Moss RA, Moore D, Mulcahy MF, Nahum K, Saraiya B, Eddy S, Kleber M,
-   and Poplin EA (2012) A multi-institutional phase 2 study of imatinib
-   mesylate and gemcitabine for first-line treatment of advanced
-   pancreatic cancer. Gastrointestinal Cancer Research 5, 77 - 83.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Moss RA, Moore D, Mulcahy MF, Nahum K, Saraiya B, Eddy S, Kleber
+      M, and Poplin EA (2012) A multi-institutional phase 2 study of
+      imatinib mesylate and gemcitabine for first-line treatment of
+      advanced pancreatic cancer. Gastrointestinal Cancer Research 5, 77
+      - 83.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(pancreatic2)
+      ::
+
+         data(pancreatic2)

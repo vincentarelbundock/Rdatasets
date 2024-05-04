@@ -1,132 +1,129 @@
 .. container::
 
-   ======== ===============
-   Diabetes R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Diabetes Dataset
-      :name: Diabetes
+      ======== ===============
+      Diabetes R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Diabetes Dataset
+         :name: diabetes-dataset
 
-   Reaven and Miller (1979) examined the relationship among blood
-   chemistry measures of glucose tolerance and insulin in 145 nonobese
-   adults. They used the PRIM9 system at the Stanford Linear Accelerator
-   Center to visualize the data in 3D, and discovered a peculiar pattern
-   that looked like a large blob with two wings in different directions.
+      .. rubric:: Description
+         :name: description
 
-   After further analysis, the subjects were classified as subclinical
-   (chemical) diabetics, overt diabetics and normals. This study was
-   influential in defining the stages of development of Type 2 diabetes.
-   Overt diabetes is the most advanced stage, characterized by elevated
-   fasting blood glucose concentration and classical symptoms. Preceding
-   overt diabetes is the latent or chemical diabetic stage, with no
-   symptoms of diabetes but demonstrable abnormality of oral or
-   intravenous glucose tolerance.
+      Reaven and Miller (1979) examined the relationship among blood
+      chemistry measures of glucose tolerance and insulin in 145
+      nonobese adults. They used the PRIM9 system at the Stanford Linear
+      Accelerator Center to visualize the data in 3D, and discovered a
+      peculiar pattern that looked like a large blob with two wings in
+      different directions.
 
-   .. rubric:: Usage
-      :name: usage
+      .. rubric:: Format
+         :name: format
 
-   .. code:: R
+      A data frame with 145 observations on the following 6 variables.
 
-      data("Diabetes")
+      ``relwt``
+         relative weight, expressed as the ratio of actual weight to
+         expected weight, given the person's height, a numeric vector
 
-   .. rubric:: Format
-      :name: format
+      ``glufast``
+         fasting plasma glucose level, a numeric vector
 
-   A data frame with 145 observations on the following 6 variables.
+      ``glutest``
+         test plasma glucose level, a measure of glucose intolerance, a
+         numeric vector
 
-   ``relwt``
-      relative weight, expressed as the ratio of actual weight to
-      expected weight, given the person's height, a numeric vector
+      ``instest``
+         plasma insulin during test, a measure of insulin response to
+         oral glucose, a numeric vector
 
-   ``glufast``
-      fasting plasma glucose level, a numeric vector
+      ``sspg``
+         steady state plasma glucose, a measure of insulin resistance, a
+         numeric vector
 
-   ``glutest``
-      test plasma glucose level, a measure of glucose intolerance, a
-      numeric vector
+      ``group``
+         diagnostic group, a factor with levels ``Normal``
+         ``Chemical_Diabetic`` ``Overt_Diabetic``
 
-   ``instest``
-      plasma insulin during test, a measure of insulin response to oral
-      glucose, a numeric vector
+      .. rubric:: Details
+         :name: details
 
-   ``sspg``
-      steady state plasma glucose, a measure of insulin resistance, a
-      numeric vector
+      After further analysis, the subjects were classified as
+      subclinical (chemical) diabetics, overt diabetics and normals.
+      This study was influential in defining the stages of development
+      of Type 2 diabetes. Overt diabetes is the most advanced stage,
+      characterized by elevated fasting blood glucose concentration and
+      classical symptoms. Preceding overt diabetes is the latent or
+      chemical diabetic stage, with no symptoms of diabetes but
+      demonstrable abnormality of oral or intravenous glucose tolerance.
 
-   ``group``
-      diagnostic group, a factor with levels ``Normal``
-      ``Chemical_Diabetic`` ``Overt_Diabetic``
+      ``glutest`` was defined as the "area under the plasma glucose
+      curve for the three hour oral glucose tolerance test." Reaven &
+      Miller refer to this variable as "Glucose area".
 
-   .. rubric:: Details
-      :name: details
+      ``instest`` was defined as the "area under the plasma insulin
+      curve", and is referred to in the paper as "Insulin area".
 
-   ``glutest`` was defined as the "area under the plasma glucose curve
-   for the three hour oral glucose tolerance test." Reaven & Miller
-   refer to this variable as "Glucose area".
+      This study was influential in defining the stages of development
+      of Type 2 diabetes. Overt diabetes is the most advanced stage,
+      characterized by elevated fasting blood glucose concentration and
+      classical symptoms. Preceding overt diabetes is the latent or
+      chemical diabetic stage, with no symptoms of diabetes but
+      demonstrable abnormality of oral or intravenous glucose tolerance.
 
-   ``instest`` was defined as the "area under the plasma insulin curve",
-   and is referred to in the paper as "Insulin area".
+      .. rubric:: Source
+         :name: source
 
-   This study was influential in defining the stages of development of
-   Type 2 diabetes. Overt diabetes is the most advanced stage,
-   characterized by elevated fasting blood glucose concentration and
-   classical symptoms. Preceding overt diabetes is the latent or
-   chemical diabetic stage, with no symptoms of diabetes but
-   demonstrable abnormality of oral or intravenous glucose tolerance.
+      Andrews, D. F. & Herzberg, A. M. (1985). *Data: A Collection of
+      Problems from Many Fields for the Student and Research Worker*,
+      Springer-Verlag, Ch. 36.
 
-   .. rubric:: Source
-      :name: source
+      Friendly, M. (1991). *SAS System for Statistical Graphics*, Cary,
+      NC: SAS Institute.
 
-   Andrews, D. F. & Herzberg, A. M. (1985). *Data: A Collection of
-   Problems from Many Fields for the Student and Research Worker*,
-   Springer-Verlag, Ch. 36.
+      .. rubric:: References
+         :name: references
 
-   Friendly, M. (1991). *SAS System for Statistical Graphics*, Cary, NC:
-   SAS Institute.
+      Reaven, G. M. and Miller, R. G. (1979). An attempt to define the
+      nature of chemical diabetes using a multidimensional analysis.
+      *Diabetologia*, 16, 17-24.
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: Examples
+         :name: examples
 
-   Reaven, G. M. and Miller, R. G. (1979). An attempt to define the
-   nature of chemical diabetes using a multidimensional analysis.
-   *Diabetologia*, 16, 17-24.
+      ::
 
-   .. rubric:: Examples
-      :name: examples
+         data(Diabetes)
+         col <- c("blue", "red", "darkgreen")[Diabetes$group]
+         pch <- c(16,15,17)[Diabetes$group]
 
-   .. code:: R
+         # a perplexing plot, similar to Fig 2, but with a loess smooth 
+         plot(instest ~ glutest, data=Diabetes, pch=16,
+             cex.lab=1.25,
+             xlab="Glucose area (glutest)",
+             ylab="Insulin area (instest)")
+         lines( loess.smooth(Diabetes$glutest, Diabetes$instest), col="blue", lwd=2) 
 
-      data(Diabetes)
-      col <- c("blue", "red", "darkgreen")[Diabetes$group]
-      pch <- c(16,15,17)[Diabetes$group]
+         # scatterplot matrix, colored by group
+         plot(Diabetes[,1:5], col=col, pch=pch)
 
-      # a perplexing plot, similar to Fig 2, but with a loess smooth 
-      plot(instest ~ glutest, data=Diabetes, pch=16,
-          cex.lab=1.25,
-          xlab="Glucose area (glutest)",
-          ylab="Insulin area (instest)")
-      lines( loess.smooth(Diabetes$glutest, Diabetes$instest), col="blue", lwd=2) 
+         # covariance ellipses
+         covEllipses(Diabetes[,2:5], Diabetes$group, fill=TRUE, pooled=FALSE, 
+             col=col)
 
-      # scatterplot matrix, colored by group
-      plot(Diabetes[,1:5], col=col, pch=pch)
+         covEllipses(Diabetes[,2:5], Diabetes$group, fill=TRUE, pooled=FALSE, 
+             col=col, variables=1:4)
 
-      # covariance ellipses
-      covEllipses(Diabetes[,2:5], Diabetes$group, fill=TRUE, pooled=FALSE, 
-          col=col)
+         # Box's M test
+         diab.boxm <- boxM(Diabetes[,2:5], Diabetes$group)
+         diab.boxm
+         plot(diab.boxm)
 
-      covEllipses(Diabetes[,2:5], Diabetes$group, fill=TRUE, pooled=FALSE, 
-          col=col, variables=1:4)
+         # heplots
+         diab.mlm <- lm(cbind(glufast, glutest, instest, sspg) ~ group, data=Diabetes)
 
-      # Box's M test
-      diab.boxm <- boxM(Diabetes[,2:5], Diabetes$group)
-      diab.boxm
-      plot(diab.boxm)
+         heplot(diab.mlm)
+         pairs(diab.mlm, fill=TRUE, fill.alpha=0.1)
 
-      # heplots
-      diab.mlm <- lm(cbind(glufast, glutest, instest, sspg) ~ group, data=Diabetes)
-
-      heplot(diab.mlm)
-      pairs(diab.mlm, fill=TRUE, fill.alpha=0.1)

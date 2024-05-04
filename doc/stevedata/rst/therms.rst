@@ -1,45 +1,50 @@
 .. container::
 
-   ====== ===============
-   therms R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Thermometer Ratings for Donald Trump and Barack Obama
-      :name: therms
+      ====== ===============
+      therms R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Thermometer Ratings for Donald Trump and Barack Obama
+         :name: thermometer-ratings-for-donald-trump-and-barack-obama
 
-   A data set on thermometer ratings for Donald Trump and Barack Obama
-   in 2020. I use these data for in-class illustration of central limit
-   theorem. Basically: the sampling distribution of a population is
-   normal, even if the underlying population is decidedly not.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data set on thermometer ratings for Donald Trump and Barack
+      Obama in 2020. I use these data for in-class illustration of
+      central limit theorem. Basically: the sampling distribution of a
+      population is normal, even if the underlying population is
+      decidedly not.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      therms
+      ::
 
-   .. rubric:: Format
-      :name: format
+         therms
 
-   A data frame with 3080 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``fttrump1``
-      a thermometer rating for Donald Trump [0:100]
+      A data frame with 3080 observations on the following 2 variables.
 
-   ``ftobama1``
-      a thermometer rating for Barack Obama [0:100]
+      ``fttrump1``
+         a thermometer rating for Donald Trump
 
-   .. rubric:: Details
-      :name: details
+      ``ftobama1``
+         a thermometer rating for Barack Obama
 
-   The survey period was April 10-18, 2020 and was done entirely online.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The survey period was April 10-18, 2020 and was done entirely
+      online. Thermometer ratings are on a 0 to 100 scale, where higher
+      values indicate more "warmth".
 
-   American National Election Studies (ANES) Exploratory Testing Survey
-   (ETS)
+      .. rubric:: Source
+         :name: source
+
+      American National Election Studies (ANES) Exploratory Testing
+      Survey (ETS)

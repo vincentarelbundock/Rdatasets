@@ -1,40 +1,42 @@
 .. container::
 
-   ==== ===============
-   dogs R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Cardiac Data for Domestic Dogs
-      :name: dogs
+      ==== ===============
+      dogs R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cardiac Data for Domestic Dogs
+         :name: cardiac-data-for-domestic-dogs
 
-   The ``dogs`` data frame has 7 rows and 2 columns.
+      .. rubric:: Description
+         :name: description
 
-   Data on the cardiac oxygen consumption and left ventricular pressure
-   were gathered on 7 domestic dogs.
+      The ``dogs`` data frame has 7 rows and 2 columns.
 
-   .. rubric:: Usage
-      :name: usage
+      Data on the cardiac oxygen consumption and left ventricular
+      pressure were gathered on 7 domestic dogs.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      dogs
+      ::
 
-   .. rubric:: Format
-      :name: format
+         dogs
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   mvo
-      Cardiac Oxygen Consumption
+      This data frame contains the following columns:
 
-   lvp
-      Left Ventricular Pressure
+      mvo
+         Cardiac Oxygen Consumption
 
-   .. rubric:: References
-      :name: references
+      lvp
+         Left Ventricular Pressure
 
-   Davison, A. C. and Hinkley, D. V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
+
+      Davison, A. C. and Hinkley, D. V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.

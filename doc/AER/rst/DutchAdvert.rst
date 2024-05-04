@@ -1,82 +1,84 @@
 .. container::
 
-   =========== ===============
-   DutchAdvert R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: TV and Radio Advertising Expenditures Data
-      :name: DutchAdvert
+      =========== ===============
+      DutchAdvert R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: TV and Radio Advertising Expenditures Data
+         :name: tv-and-radio-advertising-expenditures-data
 
-   Time series of television and radio advertising expenditures (in real
-   terms) in The Netherlands.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Time series of television and radio advertising expenditures (in
+      real terms) in The Netherlands.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("DutchAdvert")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("DutchAdvert")
 
-   A four-weekly multiple time series from 1978(1) to 1994(13) with 2
-   variables.
+      .. rubric:: Format
+         :name: format
 
-   tv
-      Television advertising expenditures.
+      A four-weekly multiple time series from 1978(1) to 1994(13) with 2
+      variables.
 
-   radio
-      Radio advertising expenditures.
+      tv
+         Television advertising expenditures.
 
-   .. rubric:: Source
-      :name: source
+      radio
+         Radio advertising expenditures.
 
-   Originally available as an online supplement to Franses (1998). Now
-   available via online complements to Franses, van Dijk and Opschoor
-   (2014).
+      .. rubric:: Source
+         :name: source
 
-   https://www.cambridge.org/us/academic/subjects/economics/econometrics-statistics-and-mathematical-economics/time-series-models-business-and-economic-forecasting-2nd-edition
+      Originally available as an online supplement to Franses (1998).
+      Now available via online complements to Franses, van Dijk and
+      Opschoor (2014).
 
-   .. rubric:: References
-      :name: references
+      https://www.cambridge.org/us/academic/subjects/economics/econometrics-statistics-and-mathematical-economics/time-series-models-business-and-economic-forecasting-2nd-edition
 
-   Franses, P.H. (1998). *Time Series Models for Business and Economic
-   Forecasting*. Cambridge, UK: Cambridge University Press.
+      .. rubric:: References
+         :name: references
 
-   Franses, P.H., van Dijk, D. and Opschoor, A. (2014). *Time Series
-   Models for Business and Economic Forecasting*, 2nd ed. Cambridge, UK:
-   Cambridge University Press.
+      Franses, P.H. (1998). *Time Series Models for Business and
+      Economic Forecasting*. Cambridge, UK: Cambridge University Press.
 
-   .. rubric:: See Also
-      :name: see-also
+      Franses, P.H., van Dijk, D. and Opschoor, A. (2014). *Time Series
+      Models for Business and Economic Forecasting*, 2nd ed. Cambridge,
+      UK: Cambridge University Press.
 
-   ``Franses1998``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Franses1998``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("DutchAdvert")
-      plot(DutchAdvert)
+      ::
 
-      ## EACF tables (Franses 1998, Sec. 5.1, p. 99)
-      ctrafo <- function(x) residuals(lm(x ~ factor(cycle(x))))
-      ddiff <- function(x) diff(diff(x, frequency(x)), 1)
-      eacf <- function(y, lag = 12) {
-        stopifnot(all(lag > 0))
-        if(length(lag) < 2) lag <- 1:lag
-        rval <- sapply(
-          list(y = y, dy = diff(y), cdy = ctrafo(diff(y)),
-               Dy = diff(y, frequency(y)), dDy = ddiff(y)),
-          function(x) acf(x, plot = FALSE, lag.max = max(lag))$acf[lag + 1])
-        rownames(rval) <- lag
-        return(rval)
-      }
+         data("DutchAdvert")
+         plot(DutchAdvert)
 
-      ## Franses (1998, p. 103), Table 5.4
-      round(eacf(log(DutchAdvert[,"tv"]), lag = c(1:19, 26, 39)), digits = 3)
+         ## EACF tables (Franses 1998, Sec. 5.1, p. 99)
+         ctrafo <- function(x) residuals(lm(x ~ factor(cycle(x))))
+         ddiff <- function(x) diff(diff(x, frequency(x)), 1)
+         eacf <- function(y, lag = 12) {
+           stopifnot(all(lag > 0))
+           if(length(lag) < 2) lag <- 1:lag
+           rval <- sapply(
+             list(y = y, dy = diff(y), cdy = ctrafo(diff(y)),
+                  Dy = diff(y, frequency(y)), dDy = ddiff(y)),
+             function(x) acf(x, plot = FALSE, lag.max = max(lag))$acf[lag + 1])
+           rownames(rval) <- lag
+           return(rval)
+         }
+
+         ## Franses (1998, p. 103), Table 5.4
+         round(eacf(log(DutchAdvert[,"tv"]), lag = c(1:19, 26, 39)), digits = 3)

@@ -1,51 +1,53 @@
 .. container::
 
-   =========== ===============
-   pistonrings R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Piston Rings Failures
-      :name: pistonrings
+      =========== ===============
+      pistonrings R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Piston Rings Failures
+         :name: piston-rings-failures
 
-   Number of failures of piston rings in three legs of four steam-driven
-   compressors.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Number of failures of piston rings in three legs of four
+      steam-driven compressors.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("pistonrings")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("pistonrings")
 
-   A two-way classification, see ``table``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      A two-way classification, see ``table``.
 
-   The data are given in form of a ``table``. The table gives the number
-   of piston-ring failures in each of three legs of four steam-driven
-   compressors located in the same building. The compressors have
-   identical design and are oriented in the same way. The question of
-   interest is whether the two classification variables (compressor and
-   leg) are independent.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The data are given in form of a ``table``. The table gives the
+      number of piston-ring failures in each of three legs of four
+      steam-driven compressors located in the same building. The
+      compressors have identical design and are oriented in the same
+      way. The question of interest is whether the two classification
+      variables (compressor and leg) are independent.
 
-   S. J. Haberman (1973), The analysis of residuals in cross-classificed
-   tables. *Biometrics* **29**, 205–220.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      S. J. Haberman (1973), The analysis of residuals in
+      cross-classificed tables. *Biometrics* **29**, 205–220.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        
-        data("pistonrings", package = "HSAUR")
-        mosaicplot(pistonrings)
+      ::
+
+           
+           data("pistonrings", package = "HSAUR")
+           mosaicplot(pistonrings)

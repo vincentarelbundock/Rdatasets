@@ -1,104 +1,106 @@
 .. container::
 
-   ====== ===============
-   Caesar R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Risk Factors for Infection in Caesarian Births
-      :name: Caesar
+      ====== ===============
+      Caesar R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Risk Factors for Infection in Caesarian Births
+         :name: risk-factors-for-infection-in-caesarian-births
 
-   Data from infection from birth by Caesarian section, classified by
-   ``Risk`` (two levels), whether ``Antibiotics`` were used (two levels)
-   and whether the Caesarian section was ``Planned`` or not. The outcome
-   is ``Infection`` (three levels).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from infection from birth by Caesarian section, classified by
+      ``Risk`` (two levels), whether ``Antibiotics`` were used (two
+      levels) and whether the Caesarian section was ``Planned`` or not.
+      The outcome is ``Infection`` (three levels).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Caesar)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Caesar)
 
-   A 4-dimensional array resulting from cross-tabulating 4 variables for
-   251 observations. The variable names and their levels are:
+      .. rubric:: Format
+         :name: format
 
-   == =============== ============================================
-   No Name            Levels
-   1  ``Infection``   ``"Type 1", "Type 2", "None"``
-   2  ``Risk``        ``"Yes", "No"`` (presence of risk factors)
-   3  ``Antibiotics`` ``"Yes", "No"`` (were antibiotics given?)
-   4  ``Planned``     ``"Yes", "No"`` (was the C section planned?)
-   \                  
-   == =============== ============================================
+      A 4-dimensional array resulting from cross-tabulating 4 variables
+      for 251 observations. The variable names and their levels are:
 
-   .. rubric:: Details
-      :name: details
+      == =============== ============================================
+      No Name            Levels
+      1  ``Infection``   ``"Type 1", "Type 2", "None"``
+      2  ``Risk``        ``"Yes", "No"`` (presence of risk factors)
+      3  ``Antibiotics`` ``"Yes", "No"`` (were antibiotics given?)
+      4  ``Planned``     ``"Yes", "No"`` (was the C section planned?)
+      \                  
+      == =============== ============================================
 
-   ``Infection`` is regarded as the response variable here. There are
-   quite a few 0 cells here, particularly when ``Risk`` is absent and
-   the Caesarian section was unplanned. Should these be treated as
-   structural or sampling zeros?
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      ``Infection`` is regarded as the response variable here. There are
+      quite a few 0 cells here, particularly when ``Risk`` is absent and
+      the Caesarian section was unplanned. Should these be treated as
+      structural or sampling zeros?
 
-   Fahrmeir, L. & Tutz, G. (1994). Multivariate Statistical Modelling
-   Based on Generalized Linear Models New York: Springer Verlag, Table
-   1.1.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: See Also
-      :name: see-also
+      Fahrmeir, L. & Tutz, G. (1994). Multivariate Statistical Modelling
+      Based on Generalized Linear Models New York: Springer Verlag,
+      Table 1.1.
 
-   ``caesar`` for the same data recorded as a frequency data frame with
-   other variables.
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``caesar`` for the same data recorded as a frequency data frame
+      with other variables.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Caesar)
-      #display table;  note that there are quite a few 0 cells
-      structable(Caesar)
-      require(MASS)
+      ::
 
-      # baseline model, Infection as response
-      Caesar.mod0 <- loglm(~Infection + (Risk*Antibiotics*Planned), 
-                           data=Caesar)
+         data(Caesar)
+         #display table;  note that there are quite a few 0 cells
+         structable(Caesar)
+         require(MASS)
 
-      # NB: Pearson chisq cannot be computed due to the 0 cells
-      Caesar.mod0
+         # baseline model, Infection as response
+         Caesar.mod0 <- loglm(~Infection + (Risk*Antibiotics*Planned), 
+                              data=Caesar)
 
-      mosaic(Caesar.mod0, main="Baseline model")
+         # NB: Pearson chisq cannot be computed due to the 0 cells
+         Caesar.mod0
 
-      # Illustrate handling structural zeros
-      zeros <- 0+ (Caesar >0)
-      zeros[1,,1,1] <- 1
-      structable(zeros)
+         mosaic(Caesar.mod0, main="Baseline model")
 
-      # fit model excluding possible structural zeros
-      Caesar.mod0s <- loglm(~Infection + (Risk*Antibiotics*Planned), 
-                            data=Caesar, 
-                              start=zeros)
-      Caesar.mod0s
+         # Illustrate handling structural zeros
+         zeros <- 0+ (Caesar >0)
+         zeros[1,,1,1] <- 1
+         structable(zeros)
 
-      anova(Caesar.mod0, Caesar.mod0s, test="Chisq")
+         # fit model excluding possible structural zeros
+         Caesar.mod0s <- loglm(~Infection + (Risk*Antibiotics*Planned), 
+                               data=Caesar, 
+                                 start=zeros)
+         Caesar.mod0s
 
-      mosaic (Caesar.mod0s)
+         anova(Caesar.mod0, Caesar.mod0s, test="Chisq")
 
-      # what terms to add?
-      add1(Caesar.mod0, ~.^2, test="Chisq")
+         mosaic (Caesar.mod0s)
 
-      # add Association of Infection:Antibiotics
-      Caesar.mod1 <- update(Caesar.mod0, ~ . + Infection:Antibiotics)
-      anova(Caesar.mod0, Caesar.mod1, test="Chisq")
+         # what terms to add?
+         add1(Caesar.mod0, ~.^2, test="Chisq")
 
-      mosaic(Caesar.mod1, 
-             gp=shading_Friendly, 
-             main="Adding Infection:Antibiotics")
+         # add Association of Infection:Antibiotics
+         Caesar.mod1 <- update(Caesar.mod0, ~ . + Infection:Antibiotics)
+         anova(Caesar.mod0, Caesar.mod1, test="Chisq")
+
+         mosaic(Caesar.mod1, 
+                gp=shading_Friendly, 
+                main="Adding Infection:Antibiotics")

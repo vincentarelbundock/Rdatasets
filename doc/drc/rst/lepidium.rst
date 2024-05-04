@@ -1,57 +1,59 @@
 .. container::
 
-   ======== ===============
-   lepidium R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Dose-response profile of degradation of agrochemical
-      using lepidium
-      :name: lepidium
+      ======== ===============
+      lepidium R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Dose-response profile of degradation of agrochemical
+         using lepidium
+         :name: dose-response-profile-of-degradation-of-agrochemical-using-lepidium
 
-   Estimation of the degradation profile of an agrochemical based on
-   soil samples at depth 0-10cm from a calibration experiment.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Estimation of the degradation profile of an agrochemical based on
+      soil samples at depth 0-10cm from a calibration experiment.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(lepidium)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(lepidium)
 
-   A data frame with 42 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``conc``
-      a numeric vector of concentrations (g/ha)
+      A data frame with 42 observations on the following 2 variables.
 
-   ``weight``
-      a numeric vector of plant weight (g) after 3 weeks' growth
+      ``conc``
+         a numeric vector of concentrations (g/ha)
 
-   .. rubric:: Details
-      :name: details
+      ``weight``
+         a numeric vector of plant weight (g) after 3 weeks' growth
 
-   It is an experiment with seven concentrations and six replicates per
-   concentration. *Lepidium* is rather robust as it only responds to
-   high concentrations.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      It is an experiment with seven concentrations and six replicates
+      per concentration. *Lepidium* is rather robust as it only responds
+      to high concentrations.
 
-   Racine-Poon, A. (1988) A Bayesian Approach to Nonlinear Calibration
-   Problems, *J. Am. Statist. Ass.*, **83**, 650–656.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Racine-Poon, A. (1988) A Bayesian Approach to Nonlinear
+      Calibration Problems, *J. Am. Statist. Ass.*, **83**, 650–656.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      lepidium.m1 <- drm(weight~conc, data=lepidium, fct = LL.4())
+      ::
 
-      modelFit(lepidium.m1)
+         lepidium.m1 <- drm(weight~conc, data=lepidium, fct = LL.4())
 
-      plot(lepidium.m1, type = "all", log = "")
+         modelFit(lepidium.m1)
+
+         plot(lepidium.m1, type = "all", log = "")

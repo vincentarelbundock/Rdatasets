@@ -1,83 +1,85 @@
 .. container::
 
-   ==== ===============
-   hsb2 R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: High School and Beyond survey
-      :name: hsb2
+      ==== ===============
+      hsb2 R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: High School and Beyond survey
+         :name: high-school-and-beyond-survey
 
-   Two hundred observations were randomly sampled from the High School
-   and Beyond survey, a survey conducted on high school seniors by the
-   National Center of Education Statistics.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Two hundred observations were randomly sampled from the High
+      School and Beyond survey, a survey conducted on high school
+      seniors by the National Center of Education Statistics.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      hsb2
+      ::
 
-   .. rubric:: Format
-      :name: format
+         hsb2
 
-   A data frame with 200 observations and 11 variables.
+      .. rubric:: Format
+         :name: format
 
-   id
-      Student ID.
+      A data frame with 200 observations and 11 variables.
 
-   gender
-      Student's gender, with levels ``female`` and ``male``.
+      id
+         Student ID.
 
-   race
-      Student's race, with levels ``african american``, ``asian``,
-      ``hispanic``, and ``white``.
+      gender
+         Student's gender, with levels ``female`` and ``male``.
 
-   ses
-      Socio economic status of student's family, with levels ``low``,
-      ``middle``, and ``high``.
+      race
+         Student's race, with levels ``african american``, ``asian``,
+         ``hispanic``, and ``white``.
 
-   schtyp
-      Type of school, with levels ``public`` and ``private``.
+      ses
+         Socio economic status of student's family, with levels ``low``,
+         ``middle``, and ``high``.
 
-   prog
-      Type of program, with levels ``general``, ``academic``, and
-      ``vocational``.
+      schtyp
+         Type of school, with levels ``public`` and ``private``.
 
-   read
-      Standardized reading score.
+      prog
+         Type of program, with levels ``general``, ``academic``, and
+         ``vocational``.
 
-   write
-      Standardized writing score.
+      read
+         Standardized reading score.
 
-   math
-      Standardized math score.
+      write
+         Standardized writing score.
 
-   science
-      Standardized science score.
+      math
+         Standardized math score.
 
-   socst
-      Standardized social studies score.
+      science
+         Standardized science score.
 
-   .. rubric:: Source
-      :name: source
+      socst
+         Standardized social studies score.
 
-   UCLA Institute for Digital Research & Education - Statistical
-   Consulting.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      UCLA Institute for Digital Research & Education - Statistical
+      Consulting.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(hsb2, aes(x = read - write, y = ses)) +
-        geom_boxplot() +
-        labs(
-          x = "Difference between reading and writing scores",
-          y = "Socio-economic status"
-        )
+         library(ggplot2)
+
+         ggplot(hsb2, aes(x = read - write, y = ses)) +
+           geom_boxplot() +
+           labs(
+             x = "Difference between reading and writing scores",
+             y = "Socio-economic status"
+           )

@@ -1,112 +1,114 @@
 .. container::
 
-   === ===============
-   OFP R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Visits to Physician Office
-      :name: OFP
+      === ===============
+      OFP R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Visits to Physician Office
+         :name: visits-to-physician-office
 
-   a cross-section
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 4406
+      a cross-section
 
-   *observation* : individuals
+      *number of observations* : 4406
 
-   *country* : United States
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(OFP)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(OFP)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   ofp
-      number of physician office visits
+      A dataframe containing :
 
-   ofnp
-      number of nonphysician office visits
+      ofp
+         number of physician office visits
 
-   opp
-      number of physician outpatient visits
+      ofnp
+         number of nonphysician office visits
 
-   opnp
-      number of nonphysician outpatient visits
+      opp
+         number of physician outpatient visits
 
-   emr
-      number of emergency room visits
+      opnp
+         number of nonphysician outpatient visits
 
-   hosp
-      number of hospitalizations
+      emr
+         number of emergency room visits
 
-   numchron
-      number of chronic conditions
+      hosp
+         number of hospitalizations
 
-   adldiff
-      the person has a condition that limits activities of daily living
-      ?
+      numchron
+         number of chronic conditions
 
-   age
-      age in years (divided by 10)
+      adldiff
+         the person has a condition that limits activities of daily
+         living ?
 
-   black
-      is the person African–American ?
+      age
+         age in years (divided by 10)
 
-   sex
-      is the person male ?
+      black
+         is the person African–American ?
 
-   maried
-      is the person married ?
+      sex
+         is the person male ?
 
-   school
-      number of years of education
+      maried
+         is the person married ?
 
-   faminc
-      family income in 10000$
+      school
+         number of years of education
 
-   employed
-      is the person employed ?
+      faminc
+         family income in 10000$
 
-   privins
-      is the person covered by private health insurance?
+      employed
+         is the person employed ?
 
-   medicaid
-      is the person covered by medicaid ?
+      privins
+         is the person covered by private health insurance?
 
-   region
-      the region (``noreast``, ``midwest``, ``west``)
+      medicaid
+         is the person covered by medicaid ?
 
-   hlth
-      self-perceived health (excellent, poor, other)
+      region
+         the region (``noreast``, ``midwest``, ``west``)
 
-   .. rubric:: Source
-      :name: source
+      hlth
+         self-perceived health (excellent, poor, other)
 
-   Deb, P. and P.K. Trivedi (1997) “Demand for Medical Care by the
-   Elderly: A Finite Mixture Approach”, *Journal of Applied
-   Econometrics*, **12**, 313-326..
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Deb, P. and P.K. Trivedi (1997) “Demand for Medical Care by the
+      Elderly: A Finite Mixture Approach”, *Journal of Applied
+      Econometrics*, **12**, 313-326..
 
-   Cameron, A.C. and Trivedi P.K. (1998) *Regression analysis of count
-   data*, Cambridge University Press,
-   http://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 6.
+      .. rubric:: References
+         :name: references
 
-   Journal of Applied Econometrics data archive :
-   http://qed.econ.queensu.ca/jae/.
+      Cameron, A.C. and Trivedi P.K. (1998) *Regression analysis of
+      count data*, Cambridge University Press,
+      http://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 6.
 
-   .. rubric:: See Also
-      :name: see-also
+      Journal of Applied Econometrics data archive :
+      http://qed.econ.queensu.ca/jae/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

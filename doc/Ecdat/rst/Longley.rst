@@ -1,65 +1,67 @@
 .. container::
 
-   ======= ===============
-   Longley R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: The Longley Data
-      :name: Longley
+      ======= ===============
+      Longley R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: The Longley Data
+         :name: the-longley-data
 
-   annual observations from 1947 to 1962
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 16
+      annual observations from 1947 to 1962
 
-   *observation* : country
+      *number of observations* : 16
 
-   *country* : United States
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Longley)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Longley)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   employ
-      employment (1,000s)
+      A time series containing :
 
-   price
-      GNP deflator
+      employ
+         employment (1,000s)
 
-   gnp
-      nominal GNP (millions)
+      price
+         GNP deflator
 
-   armed
-      armed forces
+      gnp
+         nominal GNP (millions)
 
-   .. rubric:: Source
-      :name: source
+      armed
+         armed forces
 
-   Longley, J. (1967) “An appraisal of least squares programs from the
-   point of view of the user”, *Journal of the American Statistical
-   Association*, **62**, 819-841.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Longley, J. (1967) “An appraisal of least squares programs from
+      the point of view of the user”, *Journal of the American
+      Statistical Association*, **62**, 819-841.
 
-   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   https://archive.org/details/econometricanaly0000gree_f4x3, Table
-   F4.2.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+      https://archive.org/details/econometricanaly0000gree_f4x3, Table
+      F4.2.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

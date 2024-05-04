@@ -1,90 +1,94 @@
 .. container::
 
-   =============== ===============
-   pharmacoSmoking R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: pharmacoSmoking
-      :name: pharmacoSmoking
+      =============== ===============
+      pharmacoSmoking R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: pharmacoSmoking
+         :name: pharmacosmoking
 
-   Randomized trial of triple therapy vs. patch for smoking cessation.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Randomized trial of triple therapy vs. patch for smoking
+      cessation.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("pharmacoSmoking")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("pharmacoSmoking")
 
-   A data frame with 125 observations on the following 14 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``id``
-      patient ID number
+      A data frame with 125 observations on the following 14 variables.
 
-   ``ttr``
-      Time in days until relapse
+      ``id``
+         patient ID number
 
-   ``relapse``
-      Indicator of relapse (return to smoking)
+      ``ttr``
+         Time in days until relapse
 
-   ``grp``
-      Randomly assigned treatment group with levels ``combination`` or
-      ``patchOnly``
+      ``relapse``
+         Indicator of relapse (return to smoking)
 
-   ``age``
-      Age in years at time of randomization
+      ``grp``
+         Randomly assigned treatment group with levels ``combination``
+         or ``patchOnly``
 
-   ``gender``
-      ``Female`` or ``Male``
+      ``age``
+         Age in years at time of randomization
 
-   ``race``
-      ``black``, ``hispanic``, ``white``, or ``other``
+      ``gender``
+         ``Female`` or ``Male``
 
-   ``employment``
-      ``ft`` (full-time), ``pt`` (part-time), or ``other``
+      ``race``
+         ``black``, ``hispanic``, ``white``, or ``other``
 
-   ``yearsSmoking``
-      Number of years the patient had been a smoker
+      ``employment``
+         ``ft`` (full-time), ``pt`` (part-time), or ``other``
 
-   ``levelSmoking``
-      ``heavy`` or ``light``
+      ``yearsSmoking``
+         Number of years the patient had been a smoker
 
-   ``ageGroup2``
-      Age group with levels ``21-49`` or ``50+``
+      ``levelSmoking``
+         ``heavy`` or ``light``
 
-   ``ageGroup4``
-      Age group with levels ``21-34``, ``35-49``, ``50-64``, or ``65+``
+      ``ageGroup2``
+         Age group with levels ``21-49`` or ``50+``
 
-   ``priorAttempts``
-      The number of prior attempts to quit smoking
+      ``ageGroup4``
+         Age group with levels ``21-34``, ``35-49``, ``50-64``, or
+         ``65+``
 
-   ``longestNoSmoke``
-      The longest period of time, in days, that the patient has
-      previously gone without smoking
+      ``priorAttempts``
+         The number of prior attempts to quit smoking
 
-   .. rubric:: Source
-      :name: source
+      ``longestNoSmoke``
+         The longest period of time, in days, that the patient has
+         previously gone without smoking
 
-   This data is from a clinical trial described in Steinberg et al.
-   (2009)
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      This data is from a clinical trial described in Steinberg et al.
+      (2009)
 
-   Steinberg, M.B. Greenhaus, S. Schmelzer, A.C. Bover, M.T., Foulds,
-   J., Hoover, D.R., and Carson, J.L. (2009) Triple-combination
-   pharmacotherapy for medically ill smokers: A randomized trial. Annals
-   of Internal Medicine 150, 447-454.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Steinberg, M.B. Greenhaus, S. Schmelzer, A.C. Bover, M.T., Foulds,
+      J., Hoover, D.R., and Carson, J.L. (2009) Triple-combination
+      pharmacotherapy for medically ill smokers: A randomized trial.
+      Annals of Internal Medicine 150, 447-454.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(pharmacoSmoking)
+      ::
+
+         data(pharmacoSmoking)

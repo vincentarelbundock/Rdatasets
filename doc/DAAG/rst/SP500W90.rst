@@ -1,34 +1,36 @@
 .. container::
 
-   ======== ===============
-   SP500W90 R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Closing Numbers for S and P 500 Index - First 100 Days of
-      1990
-      :name: SP500W90
+      ======== ===============
+      SP500W90 R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Closing Numbers for S and P 500 Index - First 100 Days
+         of 1990
+         :name: closing-numbers-for-s-and-p-500-index---first-100-days-of-1990
 
-   Closing numbers for S and P 500 Index, Jan. 1, 1990 through early
-   2000.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Closing numbers for S and P 500 Index, Jan. 1, 1990 through early
+      2000.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      SP500W90
+      ::
 
-   .. rubric:: Source
-      :name: source
+         SP500W90
 
-   Derived from SP500 in the MASS library.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Derived from SP500 in the MASS library.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ts.plot(SP500W90)
+      ::
+
+         ts.plot(SP500W90)

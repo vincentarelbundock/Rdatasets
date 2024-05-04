@@ -1,61 +1,63 @@
 .. container::
 
-   ========== ===============
-   LostLetter R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Return Rates for "Lost" Letters
-      :name: LostLetter
+      ========== ===============
+      LostLetter R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Return Rates for "Lost" Letters
+         :name: return-rates-for-lost-letters
 
-   Which "lost" letters will be returned by the public?
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Which "lost" letters will be returned by the public?
 
-   A data frame with 140 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   +-------------------+-------------------------------------------------+
-   | ``Location``      | Where letter was "lost": ``DesMoines``,         |
-   |                   | ``GrinnellCampus``, or ``GrinnellTown``         |
-   +-------------------+-------------------------------------------------+
-   | ``Address``       | Address on the letter: ``Confederacy`` or       |
-   |                   | ``Peaceworks``                                  |
-   +-------------------+-------------------------------------------------+
-   | ``Returned``      | ``1``\ =letter was returned or ``0``\ =letter   |
-   |                   | was not returned                                |
-   +-------------------+-------------------------------------------------+
-   | ``DesMoines``     | Indicator for letters left in Des Moines        |
-   +-------------------+-------------------------------------------------+
-   | ``GrinnellTown``  | Indicator for letters left in the town of       |
-   |                   | Grinnell                                        |
-   +-------------------+-------------------------------------------------+
-   | ``GrinellCampus`` | Indicator for letters left on the Grinnell      |
-   |                   | campus                                          |
-   +-------------------+-------------------------------------------------+
-   | ``Peaceworks``    | Indicator for letters addressed to Iowa         |
-   |                   | Peaceworks                                      |
-   +-------------------+-------------------------------------------------+
-   | ``Confederacy``   | Indicator for letters addressed to Friends of   |
-   |                   | the Confederacy                                 |
-   +-------------------+-------------------------------------------------+
-   |                   |                                                 |
-   +-------------------+-------------------------------------------------+
+      A data frame with 140 observations on the following 8 variables.
 
-   .. rubric:: Details
-      :name: details
+      +-------------------+-------------------------------------------------+
+      | ``Location``      | Where letter was "lost": ``DesMoines``,         |
+      |                   | ``GrinnellCampus``, or ``GrinnellTown``         |
+      +-------------------+-------------------------------------------------+
+      | ``Address``       | Address on the letter: ``Confederacy`` or       |
+      |                   | ``Peaceworks``                                  |
+      +-------------------+-------------------------------------------------+
+      | ``Returned``      | ``1``\ =letter was returned or ``0``\ =letter   |
+      |                   | was not returned                                |
+      +-------------------+-------------------------------------------------+
+      | ``DesMoines``     | Indicator for letters left in Des Moines        |
+      +-------------------+-------------------------------------------------+
+      | ``GrinnellTown``  | Indicator for letters left in the town of       |
+      |                   | Grinnell                                        |
+      +-------------------+-------------------------------------------------+
+      | ``GrinellCampus`` | Indicator for letters left on the Grinnell      |
+      |                   | campus                                          |
+      +-------------------+-------------------------------------------------+
+      | ``Peaceworks``    | Indicator for letters addressed to Iowa         |
+      |                   | Peaceworks                                      |
+      +-------------------+-------------------------------------------------+
+      | ``Confederacy``   | Indicator for letters addressed to Friends of   |
+      |                   | the Confederacy                                 |
+      +-------------------+-------------------------------------------------+
+      |                   |                                                 |
+      +-------------------+-------------------------------------------------+
 
-   In 1999 Grinnell College students Laurelin Muir and Adam Gratch
-   conducted an experiment for an introductory statistics class. They
-   intentionally "lost" 140 letters in either the city of Des Moines,
-   the town of Grinnell, or on the Grinnell College campus. Half of each
-   sample were addressed to Friends of the Confederacy and the other
-   half to Iowa Peaceworks. The students kept track of which letters
-   were eventually returned.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      In 1999 Grinnell College students Laurelin Muir and Adam Gratch
+      conducted an experiment for an introductory statistics class. They
+      intentionally "lost" 140 letters in either the city of Des Moines,
+      the town of Grinnell, or on the Grinnell College campus. Half of
+      each sample were addressed to Friends of the Confederacy and the
+      other half to Iowa Peaceworks. The students kept track of which
+      letters were eventually returned.
 
-   Student project at Grinnell College
+      .. rubric:: Source
+         :name: source
+
+      Student project at Grinnell College

@@ -1,95 +1,97 @@
 .. container::
 
-   ====== ===============
-   acidiq R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Acifluorfen and diquat tested on Lemna minor.
-      :name: acidiq
+      ====== ===============
+      acidiq R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Acifluorfen and diquat tested on Lemna minor.
+         :name: acifluorfen-and-diquat-tested-on-lemna-minor.
 
-   Data from an experiment where the chemicals acifluorfen and diquat
-   tested on Lemna minor. The dataset has 7 mixtures used in 8 dilutions
-   with three replicates and 12 common controls, in total 180
-   observations.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from an experiment where the chemicals acifluorfen and diquat
+      tested on Lemna minor. The dataset has 7 mixtures used in 8
+      dilutions with three replicates and 12 common controls, in total
+      180 observations.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(acidiq)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(acidiq)
 
-   A data frame with 180 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``dose``
-      a numeric vector of dose values
+      A data frame with 180 observations on the following 3 variables.
 
-   ``pct``
-      a numeric vector denoting the grouping according to the mixtures
-      percentages
+      ``dose``
+         a numeric vector of dose values
 
-   ``rgr``
-      a numeric vector of response values (relative growth rates)
+      ``pct``
+         a numeric vector denoting the grouping according to the
+         mixtures percentages
 
-   .. rubric:: Details
-      :name: details
+      ``rgr``
+         a numeric vector of response values (relative growth rates)
 
-   The dataset is analysed in Soerensen et al (2007). Hewlett's
-   symmetric model seems appropriate for this dataset.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The dataset is analysed in Soerensen et al (2007). Hewlett's
+      symmetric model seems appropriate for this dataset.
 
-   The dataset is kindly provided by Nina Cedergreen, Department of
-   Agricultural Sciences, Royal Veterinary and Agricultural University,
-   Denmark.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The dataset is kindly provided by Nina Cedergreen, Department of
+      Agricultural Sciences, Royal Veterinary and Agricultural
+      University, Denmark.
 
-   Soerensen, H. and Cedergreen, N. and Skovgaard, I. M. and Streibig,
-   J. C. (2007) An isobole-based statistical model and test for
-   synergism/antagonism in binary mixture toxicity experiments,
-   *Environmental and Ecological Statistics*, **14**, 383–397.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Soerensen, H. and Cedergreen, N. and Skovgaard, I. M. and
+      Streibig, J. C. (2007) An isobole-based statistical model and test
+      for synergism/antagonism in binary mixture toxicity experiments,
+      *Environmental and Ecological Statistics*, **14**, 383–397.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## Fitting the model with freely varying ED50 values
-      ## Ooops: Box-Cox transformation is needed
-      acidiq.free <- drm(rgr ~ dose, pct, data = acidiq, fct = LL.4(),
-      pmodels = list(~factor(pct), ~1, ~1, ~factor(pct) - 1))
+      ::
 
-      ## Lack-of-fit test
-      modelFit(acidiq.free)
-      summary(acidiq.free)
+         ## Fitting the model with freely varying ED50 values
+         ## Ooops: Box-Cox transformation is needed
+         acidiq.free <- drm(rgr ~ dose, pct, data = acidiq, fct = LL.4(),
+         pmodels = list(~factor(pct), ~1, ~1, ~factor(pct) - 1))
 
-      ## Plotting isobole structure
-      isobole(acidiq.free, xlim = c(0, 400), ylim = c(0, 450))
+         ## Lack-of-fit test
+         modelFit(acidiq.free)
+         summary(acidiq.free)
 
-      ## Fitting the concentration addition model
-      acidiq.ca <- mixture(acidiq.free, model = "CA")
+         ## Plotting isobole structure
+         isobole(acidiq.free, xlim = c(0, 400), ylim = c(0, 450))
 
-      ## Comparing to model with freely varying e parameter
-      anova(acidiq.ca, acidiq.free)  # rejected
+         ## Fitting the concentration addition model
+         acidiq.ca <- mixture(acidiq.free, model = "CA")
 
-      ## Plotting isobole based on concentration addition -- poor fit
-      isobole(acidiq.free, acidiq.ca, xlim = c(0, 420), ylim = c(0, 450))  # poor fit
+         ## Comparing to model with freely varying e parameter
+         anova(acidiq.ca, acidiq.free)  # rejected
 
-      ## Fitting the Hewlett model
-      acidiq.hew <- mixture(acidiq.free, model = "Hewlett")
+         ## Plotting isobole based on concentration addition -- poor fit
+         isobole(acidiq.free, acidiq.ca, xlim = c(0, 420), ylim = c(0, 450))  # poor fit
 
-      ## Comparing to model with freely varying e parameter
-      anova(acidiq.free, acidiq.hew)  # accepted
-      summary(acidiq.hew)
+         ## Fitting the Hewlett model
+         acidiq.hew <- mixture(acidiq.free, model = "Hewlett")
 
-      ## Plotting isobole based on the Hewlett model
-      isobole(acidiq.free, acidiq.hew, xlim = c(0, 400), ylim = c(0, 450))  # good fit
+         ## Comparing to model with freely varying e parameter
+         anova(acidiq.free, acidiq.hew)  # accepted
+         summary(acidiq.hew)
+
+         ## Plotting isobole based on the Hewlett model
+         isobole(acidiq.free, acidiq.hew, xlim = c(0, 400), ylim = c(0, 450))  # good fit

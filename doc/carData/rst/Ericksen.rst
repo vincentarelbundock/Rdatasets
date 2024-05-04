@@ -1,72 +1,76 @@
 .. container::
 
-   ======== ===============
-   Ericksen R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: The 1980 U.S. Census Undercount
-      :name: Ericksen
+      ======== ===============
+      Ericksen R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: The 1980 U.S. Census Undercount
+         :name: the-1980-u.s.-census-undercount
 
-   The ``Ericksen`` data frame has 66 rows and 9 columns. The
-   observations are 16 large cities, the remaining parts of the states
-   in which these cities are located, and the other U. S. states.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Ericksen`` data frame has 66 rows and 9 columns. The
+      observations are 16 large cities, the remaining parts of the
+      states in which these cities are located, and the other U. S.
+      states.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Ericksen
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Ericksen
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   minority
-      Percentage black or Hispanic.
+      This data frame contains the following columns:
 
-   crime
-      Rate of serious crimes per 1000 population.
+      minority
+         Percentage black or Hispanic.
 
-   poverty
-      Percentage poor.
+      crime
+         Rate of serious crimes per 1000 population.
 
-   language
-      Percentage having difficulty speaking or writing English.
+      poverty
+         Percentage poor.
 
-   highschool
-      Percentage age 25 or older who had not finished highschool.
+      language
+         Percentage having difficulty speaking or writing English.
 
-   housing
-      Percentage of housing in small, multiunit buildings.
+      highschool
+         Percentage age 25 or older who had not finished highschool.
 
-   city
-      A factor with levels: ``city``, major city; ``state``, state or
-      state-remainder.
+      housing
+         Percentage of housing in small, multiunit buildings.
 
-   conventional
-      Percentage of households counted by conventional personal
-      enumeration.
+      city
+         A factor with levels: ``city``, major city; ``state``, state or
+         state-remainder.
 
-   undercount
-      Preliminary estimate of percentage undercount.
+      conventional
+         Percentage of households counted by conventional personal
+         enumeration.
 
-   .. rubric:: Source
-      :name: source
+      undercount
+         Preliminary estimate of percentage undercount.
 
-   Ericksen, E. P., Kadane, J. B. and Tukey, J. W. (1989) Adjusting the
-   1980 Census of Population and Housing. *Journal of the American
-   Statistical Association* **84**, 927–944 [Tables 7 and 8].
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Ericksen, E. P., Kadane, J. B. and Tukey, J. W. (1989) Adjusting
+      the 1980 Census of Population and Housing. *Journal of the
+      American Statistical Association* **84**, 927–944 [Tables 7 and
+      8].
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
 
-   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
-   Regression*, Third Edition, Sage.
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.
+
+      Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+      Regression*, Third Edition, Sage.

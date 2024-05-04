@@ -1,4 +1,4 @@
 rownames,x
 1,"Error in (function (..., row.names = NULL, check.rows = FALSE, check.names = TRUE,  : 
-  arguments imply differing number of rows: 800, 200, 22500
+  arguments imply differing number of rows: 800, 200, 15625
 "

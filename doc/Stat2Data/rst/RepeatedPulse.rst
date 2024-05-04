@@ -1,38 +1,40 @@
 .. container::
 
-   ============= ===============
-   RepeatedPulse R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Pulse Rates at Various Times of Day
-      :name: RepeatedPulse
+      ============= ===============
+      RepeatedPulse R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Pulse Rates at Various Times of Day
+         :name: pulse-rates-at-various-times-of-day
 
-   A student measured her pulse several times a day over 26 days.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      A student measured her pulse several times a day over 26 days.
 
-   A data frame with 104 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Pulse``
-      Pulse rate (beats per minute)
+      A data frame with 104 observations on the following 3 variables.
 
-   ``Time``
-      Time of day (``evening``, ``morning``, ``noon``, ``one``)
+      ``Pulse``
+         Pulse rate (beats per minute)
 
-   ``Day``
-      ``Day1`` to ``Day26``
+      ``Time``
+         Time of day (``evening``, ``morning``, ``noon``, ``one``)
 
-   .. rubric:: Details
-      :name: details
+      ``Day``
+         ``Day1`` to ``Day26``
 
-   A student measured her pulse in the morning, at noon, at 1:00, and in
-   the evening for each of 26 days.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      A student measured her pulse in the morning, at noon, at 1:00, and
+      in the evening for each of 26 days.
 
-   Data supplied by a student at Oberlin College.
+      .. rubric:: Source
+         :name: source
+
+      Data supplied by a student at Oberlin College.

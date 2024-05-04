@@ -1,40 +1,42 @@
 .. container::
 
-   ==== ===============
-   bnct R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: data from Exercise 7.7, p223
-      :name: bnct
+      ==== ===============
+      bnct R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Exercise 7.7, p223
+         :name: data-from-exercise-7.7-p223
 
-   The ``bnct`` data frame has 34 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``bnct`` data frame has 34 rows and 3 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   trt
-      Treatment (1=untreated, 2=radiated, 3=radiated + BPA)
+      This data frame contains the following columns:
 
-   time
-      Death time or on-study time, days
+      trt
+         Treatment (1=untreated, 2=radiated, 3=radiated + BPA)
 
-   death
-      Death indicator (1=dead, 0=alive)
+      time
+         Death time or on-study time, days
 
-   .. rubric:: Source
-      :name: source
+      death
+         Death indicator (1=dead, 0=alive)
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(bnct)
+      ::
+
+         data(bnct)

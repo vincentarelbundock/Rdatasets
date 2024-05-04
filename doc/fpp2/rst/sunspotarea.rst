@@ -1,36 +1,39 @@
 .. container::
 
-   =========== ===============
-   sunspotarea R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Annual average sunspot area (1875-2015)
-      :name: sunspotarea
+      =========== ===============
+      sunspotarea R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Annual average sunspot area (1875-2015)
+         :name: annual-average-sunspot-area-1875-2015
 
-   Annual averages of the daily sunspot areas (in units of millionths of
-   a hemisphere) for the full sun. Sunspots are magnetic regions that
-   appear as dark spots on the surface of the sun. The Royal Greenwich
-   Observatory compiled daily sunspot observations from May 1874 to
-   1976. Later data are from the US Air Force and the US National
-   Oceanic and Atmospheric Administration. The data have been calibrated
-   to be consistent across the whole history of observations.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Annual averages of the daily sunspot areas (in units of millionths
+      of a hemisphere) for the full sun. Sunspots are magnetic regions
+      that appear as dark spots on the surface of the sun. The Royal
+      Greenwich Observatory compiled daily sunspot observations from May
+      1874 to 1976. Later data are from the US Air Force and the US
+      National Oceanic and Atmospheric Administration. The data have
+      been calibrated to be consistent across the whole history of
+      observations.
 
-   Annual time series of class ``ts``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Annual time series of class ``ts``.
 
-   NASA
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      NASA
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      autoplot(sunspotarea)
+      ::
+
+         autoplot(sunspotarea)

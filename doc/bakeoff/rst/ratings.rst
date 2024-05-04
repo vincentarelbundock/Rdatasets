@@ -1,86 +1,88 @@
 .. container::
 
-   ======= ===============
-   ratings R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Ratings
-      :name: ratings
+      ======= ===============
+      ratings R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Ratings
+         :name: ratings
 
-   This dataset has one row per episode and includes ratings plus
-   original airdates in the UK (by series) and US (by season). This
-   dataset is made by joining the ``ratings_raw`` and ``seasons_raw``
-   datasets by both ``series`` and ``episode``.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This dataset has one row per episode and includes ratings plus
+      original airdates in the UK (by series) and US (by season). This
+      dataset is made by joining the ``ratings_raw`` and ``seasons_raw``
+      datasets by both ``series`` and ``episode``.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      ratings
+      ::
 
-   .. rubric:: Format
-      :name: format
+         ratings
 
-   A data frame with 94 rows representing individual episodes and 11
-   variables:
+      .. rubric:: Format
+         :name: format
 
-   series
-      An integer denoting UK series (``1``-``10``).
+      A data frame with 94 rows representing individual episodes and 11
+      variables:
 
-   episode
-      An integer denoting episode number within a series.
+      series
+         An integer denoting UK series (``1``-``10``).
 
-   episode_count
-      An integer denoting continuous episode number across series
-      (``1``-``94``)
+      episode
+         An integer denoting episode number within a series.
 
-   uk_airdate
-      A date denoting original airdate of episode in the UK.
+      episode_count
+         An integer denoting continuous episode number across series
+         (``1``-``94``)
 
-   viewers_7day
-      The number of viewers in millions within a 7-day window from
-      airdate.
+      uk_airdate
+         A date denoting original airdate of episode in the UK.
 
-   viewers_28day
-      The number of viewers in millions within a 28-day window from
-      airdate.
+      viewers_7day
+         The number of viewers in millions within a 7-day window from
+         airdate.
 
-   network_rank
-      An integer denoting the episode's weekly ranking within network
-      (note that the networks changed for series 8 and later).
+      viewers_28day
+         The number of viewers in millions within a 28-day window from
+         airdate.
 
-   channels_rank
-      An integer denoting the episode's weekly ranking across all
-      channels.
+      network_rank
+         An integer denoting the episode's weekly ranking within network
+         (note that the networks changed for series 8 and later).
 
-   bbc_iplayer_requests
-      Number of BBC iPlayer requests (note: not available for all
-      series, and only for series that aired on the BBC).
+      channels_rank
+         An integer denoting the episode's weekly ranking across all
+         channels.
 
-   us_season
-      An integer denoting US season (``1``-``5``).
+      bbc_iplayer_requests
+         Number of BBC iPlayer requests (note: not available for all
+         series, and only for series that aired on the BBC).
 
-   us_airdate
-      A date denoting original airdate of episode in the US, according
-      to
-      `pbs.org <https://www.pbs.org/food/shows/great-british-baking-show/>`__.
+      us_season
+         An integer denoting US season (``1``-``5``).
 
-   .. rubric:: Source
-      :name: source
+      us_airdate
+         A date denoting original airdate of episode in the US,
+         according to
+         `pbs.org <https://www.pbs.org/food/shows/great-british-baking-show/>`__.
 
-   See
-   https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#Ratings
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      See
+      https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#Ratings
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      if (require('tibble')) {
-        ratings
-       }
-      head(ratings)
+      ::
+
+         if (require('tibble')) {
+           ratings
+          }
+         head(ratings)

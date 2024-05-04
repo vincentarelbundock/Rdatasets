@@ -1,82 +1,84 @@
 .. container::
 
-   ===== ===============
-   texas R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Data on prison capacity expansion in Texas
-      :name: texas
+      ===== ===============
+      texas R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data on prison capacity expansion in Texas
+         :name: data-on-prison-capacity-expansion-in-texas
 
-   This data looks at the massive expansion in prison capacity in Texas
-   that occurred in 1993 under Governor Ann Richards, and the effect of
-   that expansion on the number of Black men in prison.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data looks at the massive expansion in prison capacity in
+      Texas that occurred in 1993 under Governor Ann Richards, and the
+      effect of that expansion on the number of Black men in prison.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      texas
+      ::
 
-   .. rubric:: Format
-      :name: format
+         texas
 
-   A data frame with 816 rows and 12 variables
+      .. rubric:: Format
+         :name: format
 
-   statefip
-      State FIPS code
+      A data frame with 816 rows and 12 variables
 
-   year
-      Year
+      statefip
+         State FIPS code
 
-   bmprison
-      Number of Black men in prison
+      year
+         Year
 
-   wmprison
-      Number of White men in prison
+      bmprison
+         Number of Black men in prison
 
-   alcohol
-      Alcohol consumption per capita
+      wmprison
+         Number of White men in prison
 
-   income
-      Median income
+      alcohol
+         Alcohol consumption per capita
 
-   ur
-      Unemployment rate
+      income
+         Median income
 
-   poverty
-      Poverty rate
+      ur
+         Unemployment rate
 
-   black
-      Percentage of the population that is Black
+      poverty
+         Poverty rate
 
-   perc1519
-      Percentage of the population that is age 15-19
+      black
+         Percentage of the population that is Black
 
-   aidscapita
-      AIDS mortality per 100,000 in t
+      perc1519
+         Percentage of the population that is age 15-19
 
-   state
-      State name
+      aidscapita
+         AIDS mortality per 100,000 in t
 
-   .. rubric:: Details
-      :name: details
+      state
+         State name
 
-   This data is used in the *Synthetic Control* chapter of *Causal
-   Inference: The Mixtape* by Cunningham.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This data is used in the *Synthetic Control* chapter of *Causal
+      Inference: The Mixtape* by Cunningham.
 
-   Cunningham and Kang. 2019. “Studying the Effect of Incarceration
-   Shocks to Drug Markets.” Unpublished manuscript.
-   http://www.scunning.com/files/mass_incarceration_and_drug_abuse.pdf
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Cunningham and Kang. 2019. “Studying the Effect of Incarceration
+      Shocks to Drug Markets.” Unpublished manuscript.
+      http://www.scunning.com/files/mass_incarceration_and_drug_abuse.pdf
 
-   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-   https://mixtape.scunning.com/index.html.
+      .. rubric:: References
+         :name: references
+
+      Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+      https://mixtape.scunning.com/index.html.

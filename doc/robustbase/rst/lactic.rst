@@ -1,47 +1,49 @@
 .. container::
 
-   ====== ===============
-   lactic R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Lactic Acid Concentration Measurement Data
-      :name: lactic
+      ====== ===============
+      lactic R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Lactic Acid Concentration Measurement Data
+         :name: lactic-acid-concentration-measurement-data
 
-   Data on the Calibration of an Instrument that Measures Lactic Acid
-   Concentration in Blood, from Afifi and Azen (1979) - comparing the
-   true concentration X with the measured value Y.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on the Calibration of an Instrument that Measures Lactic Acid
+      Concentration in Blood, from Afifi and Azen (1979) - comparing the
+      true concentration X with the measured value Y.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(lactic, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(lactic, package="robustbase")
 
-   A data frame with 20 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``X``
-      True Concentration
+      A data frame with 20 observations on the following 2 variables.
 
-   ``Y``
-      Instrument
+      ``X``
+         True Concentration
 
-   .. rubric:: Source
-      :name: source
+      ``Y``
+         Instrument
 
-   P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
-   Detection*; Wiley, p.62, table 10.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and
+      Outlier Detection*; Wiley, p.62, table 10.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(lactic)
-      summary(lm.lactic <- lm(Y ~., data=lactic))
+      ::
+
+         data(lactic)
+         summary(lm.lactic <- lm(Y ~., data=lactic))

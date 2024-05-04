@@ -1,56 +1,58 @@
 .. container::
 
-   ========= ===============
-   OlympicTV R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Television Rights for Olympic Games
-      :name: OlympicTV
+      ========= ===============
+      OlympicTV R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Television Rights for Olympic Games
+         :name: television-rights-for-olympic-games
 
-   Television rights for Olympic Games for US networks (in millions
-   USD).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Television rights for Olympic Games for US networks (in millions
+      USD).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("OlympicTV")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("OlympicTV")
 
-   A data frame with 10 observations and 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   rights
-      time series of television rights (in million USD),
+      A data frame with 10 observations and 2 variables.
 
-   network
-      factor coding television network.
+      rights
+         time series of television rights (in million USD),
 
-   .. rubric:: Source
-      :name: source
+      network
+         factor coding television network.
 
-   Online complements to Franses (1998).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Franses (1998).
 
-   Franses, P.H. (1998). *Time Series Models for Business and Economic
-   Forecasting*. Cambridge, UK: Cambridge University Press.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Franses, P.H. (1998). *Time Series Models for Business and
+      Economic Forecasting*. Cambridge, UK: Cambridge University Press.
 
-   ``Franses1998``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Franses1998``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("OlympicTV")
-      plot(OlympicTV$rights)
+      ::
+
+         data("OlympicTV")
+         plot(OlympicTV$rights)

@@ -1,48 +1,51 @@
 .. container::
 
-   ==== ===============
-   yawn R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Contagiousness of yawning
-      :name: yawn
+      ==== ===============
+      yawn R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Contagiousness of yawning
+         :name: contagiousness-of-yawning
 
-   An experiment conducted by the MythBusters, a science entertainment
-   TV program on the Discovery Channel, tested if a person can be
-   subconsciously influenced into yawning if another person near them
-   yawns. 50 people were randomly assigned to two groups: 34 to a group
-   where a person near them yawned (treatment) and 16 to a group where
-   there wasn't a person yawning near them (control).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      An experiment conducted by the MythBusters, a science
+      entertainment TV program on the Discovery Channel, tested if a
+      person can be subconsciously influenced into yawning if another
+      person near them yawns. 50 people were randomly assigned to two
+      groups: 34 to a group where a person near them yawned (treatment)
+      and 16 to a group where there wasn't a person yawning near them
+      (control).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      yawn
+      ::
 
-   .. rubric:: Format
-      :name: format
+         yawn
 
-   A data frame with 50 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   result
-      a factor with levels ``not yawn`` ``yawn``
+      A data frame with 50 observations on the following 2 variables.
 
-   group
-      a factor with levels ``ctrl`` ``trmt``
+      result
+         a factor with levels ``not yawn`` ``yawn``
 
-   .. rubric:: Source
-      :name: source
+      group
+         a factor with levels ``ctrl`` ``trmt``
 
-   MythBusters, Season 3, Episode 28.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      MythBusters, Season 3, Episode 28.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      yawn
+      ::
+
+         yawn

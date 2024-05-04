@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>presidentialElections</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='presidentialElections'>elections for U.S. President, 1932-2016, by state</h2>
+<h2>elections for U.S. President, 1932-2016, by state</h2>
 
 <h3>Description</h3>
 
@@ -32,21 +32,18 @@ presidential vote, 1932-2016, in each state and the District of Columbia.</p>
 <h3>Format</h3>
 
 
-<ul>
-<li><p><code>state</code>character, name of state
-</p>
-</li>
-<li><p>demVotenumeric, percent of the vote for president won by the
-Democratic candidate
-</p>
-</li>
-<li><p>yearnumeric, integer
-</p>
-</li>
-<li><p>southlogical, <code>TRUE</code> if state is one of the 11 states
-of the former Confederacy
-</p>
-</li></ul>
+<dl>
+<dt><code>state</code></dt><dd><p>character, name of state</p>
+</dd>
+<dt><code>demVote</code></dt><dd><p>numeric, percent of the vote for president won by the
+Democratic candidate</p>
+</dd>
+<dt><code>year</code></dt><dd><p>numeric, integer</p>
+</dd>
+<dt><code>south</code></dt><dd><p>logical, <code>TRUE</code> if state is one of the 11 states
+of the former Confederacy</p>
+</dd>
+</dl>
 
 
 
@@ -118,6 +115,7 @@ legend(x="bottomright",
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

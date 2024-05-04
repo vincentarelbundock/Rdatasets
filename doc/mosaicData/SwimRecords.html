@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>SwimRecords</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='SwimRecords'>100 m Swimming World Records</h2>
+<h2>100 m Swimming World Records</h2>
 
 <h3>Description</h3>
 
@@ -35,16 +35,14 @@ function processMathHTML() {
 <p>A data frame with 62 observations of the following variables.
 </p>
 
-<ul>
-<li> <p><code>time</code> time (in seconds) of the world record
-</p>
-</li>
-<li> <p><code>year</code> Year in which the record was set
-</p>
-</li>
-<li> <p><code>sex</code> a factor with levels <code>M</code> and <code>F</code>
-</p>
-</li></ul>
+<dl>
+<dt><code>time</code></dt><dd><p>time (in seconds) of the world record</p>
+</dd>
+<dt><code>year</code></dt><dd><p>Year in which the record was set</p>
+</dd>
+<dt><code>sex</code></dt><dd><p>a factor with levels <code>M</code> and <code>F</code></p>
+</dd>
+</dl>
 
 
 
@@ -52,11 +50,12 @@ function processMathHTML() {
 
 <pre><code class='language-R'>data(SwimRecords)
 if (require(ggformula)) {
-  gf_point(time ~ year, data = SwimRecords, color = ~ sex) 
+  gf_point(time ~ year, data = SwimRecords, color = ~ sex)
 }
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

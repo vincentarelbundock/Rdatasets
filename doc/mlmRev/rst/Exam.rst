@@ -1,80 +1,84 @@
 .. container::
 
-   ==== ===============
-   Exam R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Exam scores from inner London
-      :name: Exam
+      ==== ===============
+      Exam R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Exam scores from inner London
+         :name: exam-scores-from-inner-london
 
-   Exam scores of 4,059 students from 65 schools in Inner London.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Exam scores of 4,059 students from 65 schools in Inner London.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Exam)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Exam)
 
-   A data frame with 4059 observations on the following 9 variables.
+      .. rubric:: Format
+         :name: format
 
-   school
-      School ID - a factor.
+      A data frame with 4059 observations on the following 9 variables.
 
-   normexam
-      Normalized exam score.
+      school
+         School ID - a factor.
 
-   schgend
-      School gender - a factor. Levels are ``mixed``, ``boys``, and
-      ``girls``.
+      normexam
+         Normalized exam score.
 
-   schavg
-      School average of intake score.
+      schgend
+         School gender - a factor. Levels are ``mixed``, ``boys``, and
+         ``girls``.
 
-   vr
-      Student level Verbal Reasoning (VR) score band at intake - a
-      factor. Levels are ``bottom 25%``, ``mid 50%``, and ``top 25%``.
+      schavg
+         School average of intake score.
 
-   intake
-      Band of student's intake score - a factor. Levels are
-      ``bottom 25%``, ``mid 50%`` and ``top 25%``./
+      vr
+         Student level Verbal Reasoning (VR) score band at intake - a
+         factor. Levels are ``bottom 25%``, ``mid 50%``, and
+         ``top 25%``.
 
-   standLRT
-      Standardised LR test score.
+      intake
+         Band of student's intake score - a factor. Levels are
+         ``bottom 25%``, ``mid 50%`` and ``top     25%``./
 
-   sex
-      Sex of the student - levels are ``F`` and ``M``.
+      standLRT
+         Standardised LR test score.
 
-   type
-      School type - levels are ``Mxd`` and ``Sngl``.
+      sex
+         Sex of the student - levels are ``F`` and ``M``.
 
-   student
-      Student id (within school) - a factor
+      type
+         School type - levels are ``Mxd`` and ``Sngl``.
 
-   .. rubric:: Source
-      :name: source
+      student
+         Student id (within school) - a factor
 
-   http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html
 
-   Goldstein, H., Rasbash, J., et al (1993). A multilevel analysis of
-   school examination results. *Oxford Review of Education* 19: 425-433
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Goldstein, H., Rasbash, J., et al (1993). A multilevel analysis of
+      school examination results. *Oxford Review of Education* 19:
+      425-433
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      str(Exam)
-      summary(Exam)
-      (fm1 <- lmer(normexam ~ standLRT + sex + schgend + (1|school), Exam))
-      (fm2 <- lmer(normexam ~ standLRT*sex + schgend + (1|school), Exam))
-      (fm3 <- lmer(normexam ~ standLRT*sex + schgend + (1|school), Exam))
+      ::
+
+         str(Exam)
+         summary(Exam)
+         (fm1 <- lmer(normexam ~ standLRT + sex + schgend + (1|school), Exam))
+         (fm2 <- lmer(normexam ~ standLRT*sex + schgend + (1|school), Exam))
+         (fm3 <- lmer(normexam ~ standLRT*sex + schgend + (1|school), Exam))

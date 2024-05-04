@@ -1,93 +1,96 @@
 .. container::
 
-   ====== ===============
-   labsup R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: labsup
-      :name: labsup
+      ====== ===============
+      labsup R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: labsup
+         :name: labsup
 
-   Wooldridge Source: The subset of data for black or Hispanic women
-   used in J.A. Angrist and W.E. Evans (1998) Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: The subset of data for black or Hispanic women
+      used in J.A. Angrist and W.E. Evans (1998) Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('labsup')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('labsup')
 
-   A data.frame with 31857 observations on 20 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **kids:** number of kids
+      A data.frame with 31857 observations on 20 variables:
 
-   -  **morekids:** had more than 2 kids
+      -  **kids:** number of kids
 
-   -  **boys2:** first two births boys
+      -  **morekids:** had more than 2 kids
 
-   -  **girls2:** first two births girls
+      -  **boys2:** first two births boys
 
-   -  **boy1st:** first birth boy
+      -  **girls2:** first two births girls
 
-   -  **boy2nd:** second birth boy
+      -  **boy1st:** first birth boy
 
-   -  **samesex:** first two kids are of same sex
+      -  **boy2nd:** second birth boy
 
-   -  **multi2nd:** =1 if 2nd birth is twin
+      -  **samesex:** first two kids are of same sex
 
-   -  **age:** age of mom
+      -  **multi2nd:** =1 if 2nd birth is twin
 
-   -  **agefstm:** age of mom at first birth
+      -  **age:** age of mom
 
-   -  **black:** =1 of black
+      -  **agefstm:** age of mom at first birth
 
-   -  **hispan:** =1 if hispanic
+      -  **black:** =1 of black
 
-   -  **worked:** mom worked last year
+      -  **hispan:** =1 if hispanic
 
-   -  **weeks:** weeks worked mom
+      -  **worked:** mom worked last year
 
-   -  **hours:** hours of work per week, mom
+      -  **weeks:** weeks worked mom
 
-   -  **labinc:** mom's labor income, $1000s
+      -  **hours:** hours of work per week, mom
 
-   -  **faminc:** family income, $1000s
+      -  **labinc:** mom's labor income, $1000s
 
-   -  **nonmomi:** 'non-mom' income, $1000s
+      -  **faminc:** family income, $1000s
 
-   -  **educ:** mom's years of education
+      -  **nonmomi:** 'non-mom' income, $1000s
 
-   -  **agesq:**
+      -  **educ:** mom's years of education
 
-   .. rubric:: Notes
-      :name: notes
+      -  **agesq:**
 
-   This example can promote an interesting discussion of instrument
-   validity, and in particular, how a variable that is beyond our
-   control – for example, whether the first two children have the same
-   gender – can, nevertheless, affect subsequent economic choices.
-   Students are asked to think about such issues in Computer Exercise
-   C13 in Chapter 15. A more egregious version of this mistake would be
-   to treat a variable such as age as a suitable instrument because it
-   is beyond our control: clearly age has a direct effect on many
-   economic outcomes that would play the role of the dependent variable.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 530-531
+      This example can promote an interesting discussion of instrument
+      validity, and in particular, how a variable that is beyond our
+      control – for example, whether the first two children have the
+      same gender – can, nevertheless, affect subsequent economic
+      choices. Students are asked to think about such issues in Computer
+      Exercise C13 in Chapter 15. A more egregious version of this
+      mistake would be to treat a variable such as age as a suitable
+      instrument because it is beyond our control: clearly age has a
+      direct effect on many economic outcomes that would play the role
+      of the dependent variable.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 530-531
 
-   http://www.cengage.com/c/introductory-econometrics-a-modern-approach-7e-wooldridge
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      http://www.cengage.com/c/introductory-econometrics-a-modern-approach-7e-wooldridge
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(labsup)
+      ::
+
+          str(labsup)

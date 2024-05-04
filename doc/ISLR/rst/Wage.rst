@@ -1,92 +1,94 @@
 .. container::
 
-   ==== ===============
-   Wage R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Mid-Atlantic Wage Data
-      :name: Wage
+      ==== ===============
+      Wage R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Mid-Atlantic Wage Data
+         :name: mid-atlantic-wage-data
 
-   Wage and other data for a group of 3000 male workers in the
-   Mid-Atlantic region.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wage and other data for a group of 3000 male workers in the
+      Mid-Atlantic region.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Wage
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Wage
 
-   A data frame with 3000 observations on the following 11 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``year``
-      Year that wage information was recorded
+      A data frame with 3000 observations on the following 11 variables.
 
-   ``age``
-      Age of worker
+      ``year``
+         Year that wage information was recorded
 
-   ``maritl``
-      A factor with levels ``1. Never Married`` ``2. Married``
-      ``3. Widowed`` ``4. Divorced`` and ``5. Separated`` indicating
-      marital status
+      ``age``
+         Age of worker
 
-   ``race``
-      A factor with levels ``1. White`` ``2. Black`` ``3. Asian`` and
-      ``4. Other`` indicating race
+      ``maritl``
+         A factor with levels ``1. Never Married`` ``2. Married``
+         ``3. Widowed`` ``4. Divorced`` and ``5. Separated`` indicating
+         marital status
 
-   ``education``
-      A factor with levels ``1. < HS Grad`` ``2. HS Grad``
-      ``3. Some College`` ``4. College Grad`` and ``5. Advanced Degree``
-      indicating education level
+      ``race``
+         A factor with levels ``1. White`` ``2. Black`` ``3. Asian`` and
+         ``4. Other`` indicating race
 
-   ``region``
-      Region of the country (mid-atlantic only)
+      ``education``
+         A factor with levels ``1. < HS Grad`` ``2. HS Grad``
+         ``3. Some College`` ``4. College Grad`` and
+         ``5. Advanced Degree`` indicating education level
 
-   ``jobclass``
-      A factor with levels ``1. Industrial`` and ``2. Information``
-      indicating type of job
+      ``region``
+         Region of the country (mid-atlantic only)
 
-   ``health``
-      A factor with levels ``1. <=Good`` and ``2. >=Very Good``
-      indicating health level of worker
+      ``jobclass``
+         A factor with levels ``1. Industrial`` and ``2. Information``
+         indicating type of job
 
-   ``health_ins``
-      A factor with levels ``1. Yes`` and ``2. No`` indicating whether
-      worker has health insurance
+      ``health``
+         A factor with levels ``1. <=Good`` and ``2. >=Very Good``
+         indicating health level of worker
 
-   ``logwage``
-      Log of workers wage
+      ``health_ins``
+         A factor with levels ``1. Yes`` and ``2. No`` indicating
+         whether worker has health insurance
 
-   ``wage``
-      Workers raw wage
+      ``logwage``
+         Log of workers wage
 
-   .. rubric:: Source
-      :name: source
+      ``wage``
+         Workers raw wage
 
-   Data was manually assembled by Steve Miller, of Inquidia Consulting
-   (formerly Open BI). From the March 2011 Supplement to Current
-   Population Survey data.
+      .. rubric:: Source
+         :name: source
 
-   https://www.re3data.org/repository/r3d100011860
+      Data was manually assembled by Steve Miller, of Inquidia
+      Consulting (formerly Open BI). From the March 2011 Supplement to
+      Current Population Survey data.
 
-   .. rubric:: References
-      :name: references
+      https://www.re3data.org/repository/r3d100011860
 
-   James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
-   Introduction to Statistical Learning with applications in R*,
-   https://www.statlearning.com, Springer-Verlag, New York
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
+      Introduction to Statistical Learning with applications in R*,
+      https://www.statlearning.com, Springer-Verlag, New York
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(Wage)
-      lm(wage~year+age,data=Wage)
-      ## maybe str(Wage) ; plot(Wage) ...
+      ::
+
+         summary(Wage)
+         lm(wage~year+age,data=Wage)
+         ## maybe str(Wage) ; plot(Wage) ...

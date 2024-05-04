@@ -1,65 +1,67 @@
 .. container::
 
-   ===== ===============
-   crabs R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Morphological Measurements on Leptograpsus Crabs
-      :name: crabs
+      ===== ===============
+      crabs R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Morphological Measurements on Leptograpsus Crabs
+         :name: morphological-measurements-on-leptograpsus-crabs
 
-   The ``crabs`` data frame has 200 rows and 8 columns, describing 5
-   morphological measurements on 50 crabs each of two colour forms and
-   both sexes, of the species *Leptograpsus variegatus* collected at
-   Fremantle, W. Australia.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``crabs`` data frame has 200 rows and 8 columns, describing 5
+      morphological measurements on 50 crabs each of two colour forms
+      and both sexes, of the species *Leptograpsus variegatus* collected
+      at Fremantle, W. Australia.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      crabs
+      ::
 
-   .. rubric:: Format
-      :name: format
+         crabs
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``sp``
-      ``species`` - ``"B"`` or ``"O"`` for blue or orange.
+      This data frame contains the following columns:
 
-   ``sex``
-      as it says.
+      ``sp``
+         ``species`` - ``"B"`` or ``"O"`` for blue or orange.
 
-   ``index``
-      index ``1:50`` within each of the four groups.
+      ``sex``
+         as it says.
 
-   ``FL``
-      frontal lobe size (mm).
+      ``index``
+         index ``1:50`` within each of the four groups.
 
-   ``RW``
-      rear width (mm).
+      ``FL``
+         frontal lobe size (mm).
 
-   ``CL``
-      carapace length (mm).
+      ``RW``
+         rear width (mm).
 
-   ``CW``
-      carapace width (mm).
+      ``CL``
+         carapace length (mm).
 
-   ``BD``
-      body depth (mm).
+      ``CW``
+         carapace width (mm).
 
-   .. rubric:: Source
-      :name: source
+      ``BD``
+         body depth (mm).
 
-   Campbell, N.A. and Mahon, R.J. (1974) A multivariate study of
-   variation in two species of rock crab of genus *Leptograpsus.*
-   *Australian Journal of Zoology* **22**, 417–425.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Campbell, N.A. and Mahon, R.J. (1974) A multivariate study of
+      variation in two species of rock crab of genus *Leptograpsus.*
+      *Australian Journal of Zoology* **22**, 417–425.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

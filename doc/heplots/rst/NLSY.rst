@@ -1,98 +1,95 @@
 .. container::
 
-   ==== ===============
-   NLSY R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: National Longitudinal Survey of Youth Data
-      :name: NLSY
+      ==== ===============
+      NLSY R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: National Longitudinal Survey of Youth Data
+         :name: national-longitudinal-survey-of-youth-data
 
-   The dataset come from a small random sample of the U.S. National
-   Longitudinal Survey of Youth.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The dataset come from a small random sample of the U.S. National
+      Longitudinal Survey of Youth.
 
-   .. code:: R
+      .. rubric:: Format
+         :name: format
 
-      data(NLSY)
+      A data frame with 243 observations on the following 6 variables.
 
-   .. rubric:: Format
-      :name: format
+      ``math``
+         Math achievement test score
 
-   A data frame with 243 observations on the following 6 variables.
+      ``read``
+         Reading achievement test score
 
-   ``math``
-      Math achievement test score
+      ``antisoc``
+         score on a measure of child's antisocial behavior, ``0:6``
 
-   ``read``
-      Reading achievement test score
+      ``hyperact``
+         score on a measure of child's hyperactive behavior, ``0:5``
 
-   ``antisoc``
-      score on a measure of child's antisocial behavior, ``0:6``
+      ``income``
+         yearly income of child's father
 
-   ``hyperact``
-      score on a measure of child's hyperactive behavior, ``0:5``
+      ``educ``
+         years of education of child's father
 
-   ``income``
-      yearly income of child's father
+      .. rubric:: Details
+         :name: details
 
-   ``educ``
-      years of education of child's father
+      In this dataset, ``math`` and ``read`` scores are taken at the
+      outcome variables. Among the remaining predictors, ``income`` and
+      ``educ`` might be considered as background variables necessary to
+      control for. Interest might then be focused on whether the
+      behavioural variables ``antisoc`` and ``hyperact`` contribute
+      beyond that.
 
-   .. rubric:: Details
-      :name: details
+      .. rubric:: Source
+         :name: source
 
-   In this dataset, ``math`` and ``read`` scores are taken at the
-   outcome variables. Among the remaining predictors, ``income`` and
-   ``educ`` might be considered as background variables necessary to
-   control for. Interest might then be focused on whether the
-   behavioural variables ``antisoc`` and ``hyperact`` contribute beyond
-   that.
+      This dataset was derived from a larger one used by Patrick Curran
+      at the 1997 meeting of the Society for Research on Child
+      Development (SRCD). A description now only exists on the WayBack
+      Machine,
+      http://web.archive.org/web/20050404145001/http://www.unc.edu/~curran/example.html.
 
-   .. rubric:: Source
-      :name: source
+      More details are available at
+      http://web.archive.org/web/20060830061414/http://www.unc.edu/~curran/srcd-docs/srcdmeth.pdf.
 
-   This dataset was derived from a larger one used by Patrick Curran at
-   the 1997 meeting of the Society for Research on Child Development
-   (SRCD). A description now only exists on the WayBack Machine,
-   http://web.archive.org/web/20050404145001/http://www.unc.edu/~curran/example.html.
+      .. rubric:: Examples
+         :name: examples
 
-   More details are available at
-   http://web.archive.org/web/20060830061414/http://www.unc.edu/~curran/srcd-docs/srcdmeth.pdf.
+      ::
 
-   .. rubric:: Examples
-      :name: examples
+         library(car)
+         data(NLSY)
 
-   .. code:: R
+         #examine the data
+         scatterplotMatrix(NLSY, smooth=FALSE)
 
-      data(NLSY)
+         # test control variables by themselves
+         # -------------------------------------
+         mod1 <- lm(cbind(read,math) ~ income+educ, data=NLSY)
+         Anova(mod1)
+         heplot(mod1, fill=TRUE)
 
-      #examine the data
-      scatterplotMatrix(NLSY, smooth=FALSE)
+         # test of overall regression
+         coefs <- rownames(coef(mod1))[-1]
+         linearHypothesis(mod1, coefs)
+         heplot(mod1, fill=TRUE, hypotheses=list("Overall"=coefs))
 
-      # test control variables by themselves
-      # -------------------------------------
-      mod1 <- lm(cbind(read,math) ~ income+educ, data=NLSY)
-      Anova(mod1)
-      heplot(mod1, fill=TRUE)
+          
+         # additional contribution of antisoc + hyperact over income + educ
+         # ----------------------------------------------------------------
+         mod2 <- lm(cbind(read,math) ~ antisoc + hyperact + income + educ, data=NLSY)
+         Anova(mod2)
 
-      # test of overall regression
-      coefs <- rownames(coef(mod1))[-1]
-      linearHypothesis(mod1, coefs)
-      heplot(mod1, fill=TRUE, hypotheses=list("Overall"=coefs))
+         coefs <- rownames(coef(mod2))[-1]
+         heplot(mod2, fill=TRUE, hypotheses=list("Overall"=coefs, "mod2|mod1"=coefs[1:2]))
+         linearHypothesis(mod2, coefs[1:2])
 
-       
-      # additional contribution of antisoc + hyperact over income + educ
-      # ----------------------------------------------------------------
-      mod2 <- lm(cbind(read,math) ~ antisoc + hyperact + income + educ, data=NLSY)
-      Anova(mod2)
-
-      coefs <- rownames(coef(mod2))[-1]
-      heplot(mod2, fill=TRUE, hypotheses=list("Overall"=coefs, "mod2|mod1"=coefs[1:2]))
-      linearHypothesis(mod2, coefs[1:2])
-
-      heplot(mod2, fill=TRUE, hypotheses=list("mod2|mod1"=coefs[1:2]))
+         heplot(mod2, fill=TRUE, hypotheses=list("mod2|mod1"=coefs[1:2]))

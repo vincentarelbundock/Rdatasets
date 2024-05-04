@@ -1,50 +1,52 @@
 .. container::
 
-   ========= ===============
-   Whickham2 R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Whickham Health Study
-      :name: Whickham2
+      ========= ===============
+      Whickham2 R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Whickham Health Study
+         :name: whickham-health-study
 
-   Morality data over 20 years for 1314 women from Whickham, England
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Morality data over 20 years for 1314 women from Whickham, England
 
-   A data frame with 1314 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Outcome``
-      Status at 20-year follow-up (``Alive`` or ``Dead``)
+      A data frame with 1314 observations on the following 5 variables.
 
-   ``Smoker``
-      Smoker at baseline? (``No`` or ``Yes``)
+      ``Outcome``
+         Status at 20-year follow-up (``Alive`` or ``Dead``)
 
-   ``Age``
-      Age (in years at baseline)
+      ``Smoker``
+         Smoker at baseline? (``No`` or ``Yes``)
 
-   ``AgeGroup``
-      Age group (``18-64`` or ``65+``)
+      ``Age``
+         Age (in years at baseline)
 
-   ``Alive``
-      Numeric code for Outcome (``1``\ =alive or ``0``\ =dead)
+      ``AgeGroup``
+         Age group (``18-64`` or ``65+``)
 
-   .. rubric:: Details
-      :name: details
+      ``Alive``
+         Numeric code for Outcome (``1``\ =alive or ``0``\ =dead)
 
-   Twenty-year mortality, smoking status, and age for 1314 women in
-   Whickham, England. We have named this Whickham2 to distinguish it
-   from Whickham, which is a file in the mosaicData package.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Twenty-year mortality, smoking status, and age for 1314 women in
+      Whickham, England. We have named this Whickham2 to distinguish it
+      from Whickham, which is a file in the mosaicData package.
 
-   A version of these data are in the mosaicData package but originally
-   are from:
+      .. rubric:: Source
+         :name: source
 
-   Appleton, D. R., French, J. M., and Vanderpump, M.P. (1996),
-   "Ignoring a Covariate: An Example of Simpson's Paradox," The American
-   Statistician, 50, 340-341.
+      A version of these data are in the mosaicData package but
+      originally are from:
+
+      Appleton, D. R., French, J. M., and Vanderpump, M.P. (1996),
+      "Ignoring a Covariate: An Example of Simpson's Paradox," The
+      American Statistician, 50, 340-341.

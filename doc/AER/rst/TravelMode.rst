@@ -1,94 +1,96 @@
 .. container::
 
-   ========== ===============
-   TravelMode R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Travel Mode Choice Data
-      :name: TravelMode
+      ========== ===============
+      TravelMode R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Travel Mode Choice Data
+         :name: travel-mode-choice-data
 
-   Data on travel mode choice for travel between Sydney and Melbourne,
-   Australia.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on travel mode choice for travel between Sydney and
+      Melbourne, Australia.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("TravelMode")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("TravelMode")
 
-   A data frame containing 840 observations on 4 modes for 210
-   individuals.
+      .. rubric:: Format
+         :name: format
 
-   individual
-      Factor indicating individual with levels ``1`` to ``210``.
+      A data frame containing 840 observations on 4 modes for 210
+      individuals.
 
-   mode
-      Factor indicating travel mode with levels ``"car"``, ``"air"``,
-      ``"train"``, or ``"bus"``.
+      individual
+         Factor indicating individual with levels ``1`` to ``210``.
 
-   choice
-      Factor indicating choice with levels ``"no"`` and ``"yes"``.
+      mode
+         Factor indicating travel mode with levels ``"car"``, ``"air"``,
+         ``"train"``, or ``"bus"``.
 
-   wait
-      Terminal waiting time, 0 for car.
+      choice
+         Factor indicating choice with levels ``"no"`` and ``"yes"``.
 
-   vcost
-      Vehicle cost component.
+      wait
+         Terminal waiting time, 0 for car.
 
-   travel
-      Travel time in the vehicle.
+      vcost
+         Vehicle cost component.
 
-   gcost
-      Generalized cost measure.
+      travel
+         Travel time in the vehicle.
 
-   income
-      Household income.
+      gcost
+         Generalized cost measure.
 
-   size
-      Party size.
+      income
+         Household income.
 
-   .. rubric:: Source
-      :name: source
+      size
+         Party size.
 
-   Online complements to Greene (2003).
+      .. rubric:: Source
+         :name: source
 
-   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+      Online complements to Greene (2003).
 
-   .. rubric:: References
-      :name: references
+      https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
-   Saddle River, NJ: Prentice Hall.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+      Saddle River, NJ: Prentice Hall.
 
-   ``Greene2003``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Greene2003``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("TravelMode", package = "AER")
+      ::
 
-      ## overall proportions for chosen mode
-      with(TravelMode, prop.table(table(mode[choice == "yes"])))
+         data("TravelMode", package = "AER")
 
-      ## travel vs. waiting time for different travel modes
-      library("lattice")
-      xyplot(travel ~ wait | mode, data = TravelMode)
+         ## overall proportions for chosen mode
+         with(TravelMode, prop.table(table(mode[choice == "yes"])))
 
-      ## Greene (2003), Table 21.11, conditional logit model
-      library("mlogit")
-      TravelMode$incair <- with(TravelMode, income * (mode == "air"))
-      tm_cl <- mlogit(choice ~ gcost + wait + incair, data = TravelMode,
-        shape = "long", alt.var = "mode", reflevel = "car")
-      summary(tm_cl)
+         ## travel vs. waiting time for different travel modes
+         library("lattice")
+         xyplot(travel ~ wait | mode, data = TravelMode)
+
+         ## Greene (2003), Table 21.11, conditional logit model
+         library("mlogit")
+         TravelMode$incair <- with(TravelMode, income * (mode == "air"))
+         tm_cl <- mlogit(choice ~ gcost + wait + incair, data = TravelMode,
+           shape = "long", alt.var = "mode", reflevel = "car")
+         summary(tm_cl)

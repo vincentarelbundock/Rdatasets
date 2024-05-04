@@ -1,69 +1,72 @@
 .. container::
 
-   ============ ===============
-   mice_weights R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Mice weights
-      :name: mice_weights
+      ============ ===============
+      mice_weights R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Mice weights
+         :name: mice-weights
 
-   Body weights, bone density, and percent fat for mice under two diets:
-   chow and high fat. Data provided by Karen Svenson from Jackson
-   Laboratories. Funding to generate these data came from NIH grant P50
-   GM070683 awarded to Gary Churchill.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Body weights, bone density, and percent fat for mice under two
+      diets: chow and high fat. Data provided by Karen Svenson from
+      Jackson Laboratories. Funding to generate these data came from NIH
+      grant P50 GM070683 awarded to Gary Churchill.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      mice_weights
+      ::
 
-   .. rubric:: Format
-      :name: format
+         mice_weights
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  body_weight. Body weight in grams at 19 weeks.
+      .. rubric:: Details
+         :name: details
 
-   -  bone_density. Body density.
+      -  body_weight. Body weight in grams at 19 weeks.
 
-   -  percent_fat. Percent fat.
+      -  bone_density. Body density.
 
-   -  sex. The sex of the mice.
+      -  percent_fat. Percent fat.
 
-   -  diet. The diet of the mice: chow or high fat.
+      -  sex. The sex of the mice.
 
-   -  gen. These are outbread mice. This variable denotes the
-      generation.
+      -  diet. The diet of the mice: chow or high fat.
 
-   -  litter. Which of two litters mice belong to.
+      -  gen. These are outbread mice. This variable denotes the
+         generation.
 
-   .. rubric:: Source
-      :name: source
+      -  litter. Which of two litters mice belong to.
 
-   Karen Svenson, Daniel M. Gatti, and Gary Churchill from Jackson
-   Laboratories.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Karen Svenson, Daniel M. Gatti, and Gary Churchill from Jackson
+      Laboratories.
 
-   Daniel M. Gatti, Petr Simecek, Lisa Somes, Clifton T. Jeffrey,
-   Matthew J. Vincent, Kwangbom Choi, Xingyao Chen, Gary A. Churchill,
-   and Karen L. Svenson. "The Effects of Sex and Diet on Physiology and
-   Liver Gene Expression in Diversity Outbred Mice". bioRxiv 098657;
-   `doi:10.1101/098657 <https://doi.org/10.1101/098657>`__
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Daniel M. Gatti, Petr Simecek, Lisa Somes, Clifton T. Jeffrey,
+      Matthew J. Vincent, Kwangbom Choi, Xingyao Chen, Gary A.
+      Churchill, and Karen L. Svenson. "The Effects of Sex and Diet on
+      Physiology and Liver Gene Expression in Diversity Outbred Mice".
+      bioRxiv 098657;
+      `doi:10.1101/098657 <https://doi.org/10.1101/098657>`__
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      mice_weights |> head()
-      with(mice_weights, table(sex, diet))
+      ::
+
+         mice_weights |> head()
+         with(mice_weights, table(sex, diet))

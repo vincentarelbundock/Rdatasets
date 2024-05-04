@@ -1,67 +1,69 @@
 .. container::
 
-   ======== ===============
-   StrikeNb R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Number of Strikes in Us Manufacturing
-      :name: StrikeNb
+      ======== ===============
+      StrikeNb R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Number of Strikes in Us Manufacturing
+         :name: number-of-strikes-in-us-manufacturing
 
-   monthly observations from 1968(1) to 1976 (12)
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 108
+      monthly observations from 1968(1) to 1976 (12)
 
-   *observation* : country
+      *number of observations* : 108
 
-   *country* : United States
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(StrikeNb)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(StrikeNb)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   strikes
-      number of strikes (number of contract strikes in U.S.
-      manufacturing beginning each month)
+      A time series containing :
 
-   output
-      level of economic activity (measured as cyclical departure of
-      aggregate production from its trend level)
+      strikes
+         number of strikes (number of contract strikes in U.S.
+         manufacturing beginning each month)
 
-   time
-      a time trend from 1 to 108
+      output
+         level of economic activity (measured as cyclical departure of
+         aggregate production from its trend level)
 
-   .. rubric:: Source
-      :name: source
+      time
+         a time trend from 1 to 108
 
-   Kennan, J. (1985) “The Duration of Contract strikes in U.S.
-   Manufacturing”, *Journal of Econometrics*, **28**, 5-28.
+      .. rubric:: Source
+         :name: source
 
-   Cameron, A.C. and Trivedi P.K. (1990) “Regression Based Tests for
-   Overdispersion in the Poisson Model”, *Journal of Econometrics*,
-   December, 347-364.
+      Kennan, J. (1985) “The Duration of Contract strikes in U.S.
+      Manufacturing”, *Journal of Econometrics*, **28**, 5-28.
 
-   .. rubric:: References
-      :name: references
+      Cameron, A.C. and Trivedi P.K. (1990) “Regression Based Tests for
+      Overdispersion in the Poisson Model”, *Journal of Econometrics*,
+      December, 347-364.
 
-   Cameron, A.C. and Trivedi P.K. (1998) *Regression analysis of count
-   data*, Cambridge University Press,
-   http://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 7.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Cameron, A.C. and Trivedi P.K. (1998) *Regression analysis of
+      count data*, Cambridge University Press,
+      http://cameron.econ.ucdavis.edu/racd/racddata.html, chapter 7.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

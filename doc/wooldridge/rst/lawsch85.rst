@@ -1,97 +1,99 @@
 .. container::
 
-   ======== ===============
-   lawsch85 R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: lawsch85
-      :name: lawsch85
+      ======== ===============
+      lawsch85 R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: lawsch85
+         :name: lawsch85
 
-   Wooldridge Source: Collected by Kelly Barnett, an MSU economics
-   student, for use in a term project. The data come from two sources:
-   The Official Guide to U.S. Law Schools, 1986, Law School Admission
-   Services, and The Gourman Report: A Ranking of Graduate and
-   Professional Programs in American and International Universities,
-   1995, Washington, D.C. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Collected by Kelly Barnett, an MSU economics
+      student, for use in a term project. The data come from two
+      sources: The Official Guide to U.S. Law Schools, 1986, Law School
+      Admission Services, and The Gourman Report: A Ranking of Graduate
+      and Professional Programs in American and International
+      Universities, 1995, Washington, D.C. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('lawsch85')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('lawsch85')
 
-   A data.frame with 156 observations on 21 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **rank:** law school ranking
+      A data.frame with 156 observations on 21 variables:
 
-   -  **salary:** median starting salary
+      -  **rank:** law school ranking
 
-   -  **cost:** law school cost
+      -  **salary:** median starting salary
 
-   -  **LSAT:** median LSAT score
+      -  **cost:** law school cost
 
-   -  **GPA:** median college GPA
+      -  **LSAT:** median LSAT score
 
-   -  **libvol:** no. volumes in lib., 1000s
+      -  **GPA:** median college GPA
 
-   -  **faculty:** no. of faculty
+      -  **libvol:** no. volumes in lib., 1000s
 
-   -  **age:** age of law sch., years
+      -  **faculty:** no. of faculty
 
-   -  **clsize:** size of entering class
+      -  **age:** age of law sch., years
 
-   -  **north:** =1 if law sch in north
+      -  **clsize:** size of entering class
 
-   -  **south:** =1 if law sch in south
+      -  **north:** =1 if law sch in north
 
-   -  **east:** =1 if law sch in east
+      -  **south:** =1 if law sch in south
 
-   -  **west:** =1 if law sch in west
+      -  **east:** =1 if law sch in east
 
-   -  **lsalary:** log(salary)
+      -  **west:** =1 if law sch in west
 
-   -  **studfac:** student-faculty ratio
+      -  **lsalary:** log(salary)
 
-   -  **top10:** =1 if ranked in top 10
+      -  **studfac:** student-faculty ratio
 
-   -  **r11_25:** =1 if ranked 11-25
+      -  **top10:** =1 if ranked in top 10
 
-   -  **r26_40:** =1 if ranked 26-40
+      -  **r11_25:** =1 if ranked 11-25
 
-   -  **r41_60:** =1 if ranked 41-60
+      -  **r26_40:** =1 if ranked 26-40
 
-   -  **llibvol:** log(libvol)
+      -  **r41_60:** =1 if ranked 41-60
 
-   -  **lcost:** log(cost)
+      -  **llibvol:** log(libvol)
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lcost:** log(cost)
 
-   More recent versions of both cited documents are available. One could
-   try a similar analysis for, say, MBA programs or Ph.D. programs in
-   economics. Quality of placements may be a good dependent variable,
-   and measures of business school or graduate program quality could be
-   included among the explanatory variables. Of course, one would want
-   to control for factors describing the incoming class so as to isolate
-   the effect of the program itself.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 107, 164-165, 239
+      More recent versions of both cited documents are available. One
+      could try a similar analysis for, say, MBA programs or Ph.D.
+      programs in economics. Quality of placements may be a good
+      dependent variable, and measures of business school or graduate
+      program quality could be included among the explanatory variables.
+      Of course, one would want to control for factors describing the
+      incoming class so as to isolate the effect of the program itself.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 107, 164-165, 239
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(lawsch85)
+      ::
+
+          str(lawsch85)

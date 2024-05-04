@@ -1,78 +1,80 @@
 .. container::
 
-   ========= ===============
-   Mathlevel R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Level of Calculus Attained for Students Taking Advanced
-      Micro–economics
-      :name: Mathlevel
+      ========= ===============
+      Mathlevel R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Level of Calculus Attained for Students Taking
+         Advanced Micro–economics
+         :name: level-of-calculus-attained-for-students-taking-advanced-microeconomics
 
-   a cross-section from 1983 to 1986
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 609
+      a cross-section from 1983 to 1986
 
-   *observation* : individuals
+      *number of observations* : 609
 
-   *country* : United States
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Mathlevel)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Mathlevel)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   mathlevel
-      highest level of math attained , an ordered factor with levels
-      170, 171a, 172, 171b, 172b, 221a, 221b
+      A dataframe containing :
 
-   sat
-      sat Math score
+      mathlevel
+         highest level of math attained , an ordered factor with levels
+         170, 171a, 172, 171b, 172b, 221a, 221b
 
-   language
-      foreign language proficiency ?
+      sat
+         sat Math score
 
-   sex
-      male, female
+      language
+         foreign language proficiency ?
 
-   major
-      one of ``other``, ``eco``, ``oss`` (other social sciences), ``ns``
-      (natural sciences), ``hum`` (humanities)
+      sex
+         male, female
 
-   mathcourse
-      number of courses in advanced math (0 to 3)
+      major
+         one of ``other``, ``eco``, ``oss`` (other social sciences),
+         ``ns`` (natural sciences), ``hum`` (humanities)
 
-   physiccourse
-      number of courses in physics (0 to 2)
+      mathcourse
+         number of courses in advanced math (0 to 3)
 
-   chemistcourse
-      number of courses in chemistry (0 to 2)
+      physiccourse
+         number of courses in physics (0 to 2)
 
-   .. rubric:: Source
-      :name: source
+      chemistcourse
+         number of courses in chemistry (0 to 2)
 
-   Butler, J.S., T. Aldrich Finegan and John J. Siegfried (1998) “Does
-   more calculus improve student learning in intermediate micro and
-   macroeconomic theory ?”, *Journal of Applied Econometrics*,
-   **13(2)**, April, 185–202.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Butler, J.S., T. Aldrich Finegan and John J. Siegfried (1998)
+      “Does more calculus improve student learning in intermediate micro
+      and macroeconomic theory ?”, *Journal of Applied Econometrics*,
+      **13(2)**, April, 185–202.
 
-   Journal of Applied Econometrics data archive :
-   http://qed.econ.queensu.ca/jae/.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Journal of Applied Econometrics data archive :
+      http://qed.econ.queensu.ca/jae/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

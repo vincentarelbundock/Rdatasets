@@ -1,58 +1,62 @@
 .. container::
 
-   ===== ===============
-   Sitka R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Growth Curves for Sitka Spruce Trees in 1988
-      :name: Sitka
+      ===== ===============
+      Sitka R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Growth Curves for Sitka Spruce Trees in 1988
+         :name: growth-curves-for-sitka-spruce-trees-in-1988
 
-   The ``Sitka`` data frame has 395 rows and 4 columns. It gives
-   repeated measurements on the log-size of 79 Sitka spruce trees, 54 of
-   which were grown in ozone-enriched chambers and 25 were controls. The
-   size was measured five times in 1988, at roughly monthly intervals.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Sitka`` data frame has 395 rows and 4 columns. It gives
+      repeated measurements on the log-size of 79 Sitka spruce trees, 54
+      of which were grown in ozone-enriched chambers and 25 were
+      controls. The size was measured five times in 1988, at roughly
+      monthly intervals.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Sitka
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Sitka
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``size``
-      measured size (height times diameter squared) of tree, on log
-      scale.
+      This data frame contains the following columns:
 
-   ``Time``
-      time of measurement in days since 1 January 1988.
+      ``size``
+         measured size (height times diameter squared) of tree, on log
+         scale.
 
-   ``tree``
-      number of tree.
+      ``Time``
+         time of measurement in days since 1 January 1988.
 
-   ``treat``
-      either ``"ozone"`` for an ozone-enriched chamber or ``"control"``.
+      ``tree``
+         number of tree.
 
-   .. rubric:: Source
-      :name: source
+      ``treat``
+         either ``"ozone"`` for an ozone-enriched chamber or
+         ``"control"``.
 
-   P. J. Diggle, K.-Y. Liang and S. L. Zeger (1994) *Analysis of
-   Longitudinal Data.* Clarendon Press, Oxford
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      P. J. Diggle, K.-Y. Liang and S. L. Zeger (1994) *Analysis of
+      Longitudinal Data.* Clarendon Press, Oxford
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.
 
-   ``Sitka89``.
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Sitka89``.

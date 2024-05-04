@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>SAT</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='SAT'>State by State SAT data</h2>
+<h2>State by State SAT data</h2>
 
 <h3>Description</h3>
 
@@ -36,34 +36,27 @@ link between SAT scores and measures of educational expenditures
 <p>A data frame with 50 observations on the following variables.
 </p>
 
-<ul>
-<li><p><code>state</code> a factor with names of each state
-</p>
-</li>
-<li><p><code>expend</code> expenditure per pupil in average daily attendance in
-public elementary and secondary schools, 1994-95 (in thousands of US dollars)
-</p>
-</li>
-<li><p><code>ratio</code> average pupil/teacher ratio in public elementary and secondary
-schools, Fall 1994
-</p>
-</li>
-<li><p><code>salary</code> estimated average annual salary of teachers in public elementary
-and secondary schools, 1994-95 (in thousands of US dollars)
-</p>
-</li>
-<li><p><code>frac</code> percentage of all eligible students taking the SAT, 1994-95
-</p>
-</li>
-<li><p><code>verbal</code> average verbal SAT score, 1994-95
-</p>
-</li>
-<li><p><code>math</code> average math SAT score, 1994-95
-</p>
-</li>
-<li><p><code>sat</code> average total SAT score, 1994-95
-</p>
-</li></ul>
+<dl>
+<dt><code>state</code></dt><dd><p>a factor with names of each state</p>
+</dd>
+<dt><code>expend</code></dt><dd><p>expenditure per pupil in average daily attendance in
+public elementary and secondary schools, 1994-95 (in thousands of US dollars)</p>
+</dd>
+<dt><code>ratio</code></dt><dd><p>average pupil/teacher ratio in public elementary and secondary
+schools, Fall 1994</p>
+</dd>
+<dt><code>salary</code></dt><dd><p>estimated average annual salary of teachers in public elementary
+and secondary schools, 1994-95 (in thousands of US dollars)</p>
+</dd>
+<dt><code>frac</code></dt><dd><p>percentage of all eligible students taking the SAT, 1994-95</p>
+</dd>
+<dt><code>verbal</code></dt><dd><p>average verbal SAT score, 1994-95</p>
+</dd>
+<dt><code>math</code></dt><dd><p>average math SAT score, 1994-95</p>
+</dd>
+<dt><code>sat</code></dt><dd><p>average total SAT score, 1994-95</p>
+</dd>
+</dl>
 
 
 
@@ -84,13 +77,14 @@ public school expenditures&quot; (1999), <em>Journal of Statistics Education</em
 
 <pre><code class='language-R'>data(SAT)
 if (require(ggformula)) {
-  gf_point(sat ~ expend, data = SAT, color = "blue", alpha = 0.5) %&gt;%
+  gf_point(sat ~ expend, data = SAT, color = "blue", alpha = 0.5) |&gt;
     gf_lm()
   gf_text(sat ~ expend, data = SAT, label = ~ abbreviate(SAT$state, 3),
     inherit = FALSE)
-} 
+}
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

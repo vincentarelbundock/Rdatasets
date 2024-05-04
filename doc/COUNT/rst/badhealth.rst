@@ -1,68 +1,70 @@
 .. container::
 
-   ========= ===============
-   badhealth R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: badhealth
-      :name: badhealth
+      ========= ===============
+      badhealth R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: badhealth
+         :name: badhealth
 
-   From German health survey data for the year 1998 only.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      From German health survey data for the year 1998 only.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(badhealth)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(badhealth)
 
-   A data frame with 1,127 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``numvisit``
-      number of visits to doctor during 1998
+      A data frame with 1,127 observations on the following 3 variables.
 
-   ``badh``
-      1=patient claims to be in bad health; 0=not in bad health
+      ``numvisit``
+         number of visits to doctor during 1998
 
-   ``age``
-      age of patient: 20-60
+      ``badh``
+         1=patient claims to be in bad health; 0=not in bad health
 
-   .. rubric:: Details
-      :name: details
+      ``age``
+         age of patient: 20-60
 
-   badhealth is saved as a data frame. Count models use numvisit as the
-   response variable, 0 counts are included.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      badhealth is saved as a data frame. Count models use numvisit as
+      the response variable, 0 counts are included.
 
-   German Health Survey, amended in Hilbe and Greene (2008).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      German Health Survey, amended in Hilbe and Greene (2008).
 
-   Hilbe, Joseph M (2011), Negative Binomial Regression, Cambridge
-   University Press Hilbe, J. and W. Greene (2008). Count Response
-   Regression Models, in ed. C.R. Rao, J.P Miller, and D.C. Rao,
-   Epidemiology and Medical Statistics, Elsevier Handbook of Statistics
-   Series. London, UK: Elsevier.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Hilbe, Joseph M (2011), Negative Binomial Regression, Cambridge
+      University Press Hilbe, J. and W. Greene (2008). Count Response
+      Regression Models, in ed. C.R. Rao, J.P Miller, and D.C. Rao,
+      Epidemiology and Medical Statistics, Elsevier Handbook of
+      Statistics Series. London, UK: Elsevier.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(badhealth)
-      glmbadp <- glm(numvisit ~ badh + age, family=poisson, data=badhealth)
-      summary(glmbadp)
-      exp(coef(glmbadp))
-      library(MASS)
-      glmbadnb <- glm.nb(numvisit ~ badh + age, data=badhealth)
-      summary(glmbadnb)
-      exp(coef(glmbadnb))
+      ::
+
+         data(badhealth)
+         glmbadp <- glm(numvisit ~ badh + age, family=poisson, data=badhealth)
+         summary(glmbadp)
+         exp(coef(glmbadp))
+         library(MASS)
+         glmbadnb <- glm.nb(numvisit ~ badh + age, data=badhealth)
+         summary(glmbadnb)
+         exp(coef(glmbadnb))

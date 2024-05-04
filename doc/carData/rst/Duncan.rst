@@ -1,60 +1,64 @@
 .. container::
 
-   ====== ===============
-   Duncan R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Duncan's Occupational Prestige Data
-      :name: Duncan
+      ====== ===============
+      Duncan R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Duncan's Occupational Prestige Data
+         :name: duncans-occupational-prestige-data
 
-   The ``Duncan`` data frame has 45 rows and 4 columns. Data on the
-   prestige and other characteristics of 45 U. S. occupations in 1950.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Duncan`` data frame has 45 rows and 4 columns. Data on the
+      prestige and other characteristics of 45 U. S. occupations in
+      1950.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Duncan
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Duncan
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   type
-      Type of occupation. A factor with the following levels: ``prof``,
-      professional and managerial; ``wc``, white-collar; ``bc``,
-      blue-collar.
+      This data frame contains the following columns:
 
-   income
-      Percentage of occupational incumbents in the 1950 US Census who
-      earned $3,500 or more per year (about $36,000 in 2017 US dollars).
+      type
+         Type of occupation. A factor with the following levels:
+         ``prof``, professional and managerial; ``wc``, white-collar;
+         ``bc``, blue-collar.
 
-   education
-      Percentage of occupational incumbents in 1950 who were high school
-      graduates (which, were we cynical, we would say is roughly
-      equivalent to a PhD in 2017)
+      income
+         Percentage of occupational incumbents in the 1950 US Census who
+         earned $3,500 or more per year (about $36,000 in 2017 US
+         dollars).
 
-   prestige
-      Percentage of respondents in a social survey who rated the
-      occupation as “good” or better in prestige
+      education
+         Percentage of occupational incumbents in 1950 who were high
+         school graduates (which, were we cynical, we would say is
+         roughly equivalent to a PhD in 2017)
 
-   .. rubric:: Source
-      :name: source
+      prestige
+         Percentage of respondents in a social survey who rated the
+         occupation as “good” or better in prestige
 
-   Duncan, O. D. (1961) A socioeconomic index for all occupations. In
-   Reiss, A. J., Jr. (Ed.) *Occupations and Social Status.* Free Press
-   [Table VI-1].
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Duncan, O. D. (1961) A socioeconomic index for all occupations. In
+      Reiss, A. J., Jr. (Ed.) *Occupations and Social Status.* Free
+      Press [Table VI-1].
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
 
-   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
-   Regression*, Third Edition, Sage.
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.
+
+      Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+      Regression*, Third Edition, Sage.

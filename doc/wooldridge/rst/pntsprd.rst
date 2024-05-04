@@ -1,76 +1,78 @@
 .. container::
 
-   ======= ===============
-   pntsprd R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: pntsprd
-      :name: pntsprd
+      ======= ===============
+      pntsprd R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: pntsprd
+         :name: pntsprd
 
-   Wooldridge Source: Collected by Scott Resnick, a former MSU
-   undergraduate, from various newspaper sources. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Collected by Scott Resnick, a former MSU
+      undergraduate, from various newspaper sources. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('pntsprd')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('pntsprd')
 
-   A data.frame with 553 observations on 12 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **favscr:** favored team's score
+      A data.frame with 553 observations on 12 variables:
 
-   -  **undscr:** underdog's score
+      -  **favscr:** favored team's score
 
-   -  **spread:** las vegas spread
+      -  **undscr:** underdog's score
 
-   -  **favhome:** =1 if favored team at home
+      -  **spread:** las vegas spread
 
-   -  **neutral:** =1 if neutral site
+      -  **favhome:** =1 if favored team at home
 
-   -  **fav25:** =1 if favored team in top 25
+      -  **neutral:** =1 if neutral site
 
-   -  **und25:** =1 if underdog in top 25
+      -  **fav25:** =1 if favored team in top 25
 
-   -  **fregion:** favorite's region of country
+      -  **und25:** =1 if underdog in top 25
 
-   -  **uregion:** underdog's region of country
+      -  **fregion:** favorite's region of country
 
-   -  **scrdiff:** favscr - undscr
+      -  **uregion:** underdog's region of country
 
-   -  **sprdcvr:** =1 if spread covered
+      -  **scrdiff:** favscr - undscr
 
-   -  **favwin:** =1 if favored team wins
+      -  **sprdcvr:** =1 if spread covered
 
-   .. rubric:: Notes
-      :name: notes
+      -  **favwin:** =1 if favored team wins
 
-   The data are for the 1994-1995 men’s college basketball seasons. The
-   spread is for the day before the game was played. One might collect
-   more recent data and determine whether the spread has become a less
-   accurate predictor of the actual outcome in more recent years. In
-   other words, in the simple regression of the actual score
-   differential on the spread, is the variance larger in more recent
-   years. (We should fully expect the slope coefficient not to be
-   statistically different from one.)
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 300, 624, 697
+      The data are for the 1994-1995 men’s college basketball seasons.
+      The spread is for the day before the game was played. One might
+      collect more recent data and determine whether the spread has
+      become a less accurate predictor of the actual outcome in more
+      recent years. In other words, in the simple regression of the
+      actual score differential on the spread, is the variance larger in
+      more recent years. (We should fully expect the slope coefficient
+      not to be statistically different from one.)
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 300, 624, 697
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(pntsprd)
+      ::
+
+          str(pntsprd)

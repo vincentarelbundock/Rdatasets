@@ -1,100 +1,106 @@
 .. container::
 
-   ====== ===============
-   vote92 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Reports of voting in the 1992 U.S. Presidential election.
-      :name: vote92
+      ====== ===============
+      vote92 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Reports of voting in the 1992 U.S. Presidential
+         election.
+         :name: reports-of-voting-in-the-1992-u.s.-presidential-election.
 
-   Survey data containing self-reports of vote choice in the 1992 U.S.
-   Presidential election, with numerous covariates, from the 1992
-   American National Election Studies.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Survey data containing self-reports of vote choice in the 1992
+      U.S. Presidential election, with numerous covariates, from the
+      1992 American National Election Studies.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(vote92)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(vote92)
 
-   A data frame with 909 observations on the following 10 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``vote``
-      a factor with levels ``Perot`` ``Clinton`` ``Bush``
+      A data frame with 909 observations on the following 10 variables.
 
-   ``dem``
-      a numeric vector, 1 if the respondent reports identifying with the
-      Democratic party, 0 otherwise.
+      ``vote``
+         a factor with levels ``Perot`` ``Clinton`` ``Bush``
 
-   ``rep``
-      a numeric vector, 1 if the respondent reports identifying with the
-      Republican party, 0 otherwise
+      ``dem``
+         a numeric vector, 1 if the respondent reports identifying with
+         the Democratic party, 0 otherwise.
 
-   ``female``
-      a numeric vector, 1 if the respondent is female, 0 otherwise
+      ``rep``
+         a numeric vector, 1 if the respondent reports identifying with
+         the Republican party, 0 otherwise
 
-   ``persfinance``
-      a numeric vector, -1 if the respondent reports that their personal
-      financial situation has gotten worse over the last 12 months, 0
-      for no change, 1 if better
+      ``female``
+         a numeric vector, 1 if the respondent is female, 0 otherwise
 
-   ``natlecon``
-      a numeric vector, -1 if the respondent reports that national
-      economic conditions have gotten worse over the last 12 months, 0
-      for no change, 1 if better
+      ``persfinance``
+         a numeric vector, -1 if the respondent reports that their
+         personal financial situation has gotten worse over the last 12
+         months, 0 for no change, 1 if better
 
-   ``clintondis``
-      a numeric vector, squared difference between respondent's
-      self-placement on a scale measure of political ideology and the
-      respondent's placement of the Democratic candidate, Bill Clinton
+      ``natlecon``
+         a numeric vector, -1 if the respondent reports that national
+         economic conditions have gotten worse over the last 12 months,
+         0 for no change, 1 if better
 
-   ``bushdis``
-      a numeric vector, squared ideological distance of the respondent
-      from the Republican candidate, President George H.W. Bush
+      ``clintondis``
+         a numeric vector, squared difference between respondent's
+         self-placement on a scale measure of political ideology and the
+         respondent's placement of the Democratic candidate, Bill
+         Clinton
 
-   ``perotdis``
-      a numeric vector, squared ideological distance of the respondent
-      from the Reform Party candidate, Ross Perot
+      ``bushdis``
+         a numeric vector, squared ideological distance of the
+         respondent from the Republican candidate, President George H.W.
+         Bush
 
-   .. rubric:: Details
-      :name: details
+      ``perotdis``
+         a numeric vector, squared ideological distance of the
+         respondent from the Reform Party candidate, Ross Perot
 
-   These data are unweighted. Refer to the original data source for
-   weights that purport to correct for non-representativeness and
-   non-response.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      These data are unweighted. Refer to the original data source for
+      weights that purport to correct for non-representativeness and
+      non-response.
 
-   Alvarez, R. Michael and Jonathan Nagler. 1995. Economics, issues and
-   the Perot candidacy: Voter choice in the 1992 Presidential election.
-   *American Journal of Political Science*. 39:714-44.
+      .. rubric:: Source
+         :name: source
 
-   Miller, Warren E., Donald R. Kinder, Steven J. Rosenstone and the
-   National Election Studies. 1999. *National Election Studies, 1992:
-   Pre-/Post-Election Study*. Center for Political Studies, University
-   of Michigan: Ann Arbor, Michigan.
+      Alvarez, R. Michael and Jonathan Nagler. 1995. Economics, issues
+      and the Perot candidacy: Voter choice in the 1992 Presidential
+      election. *American Journal of Political Science*. 39:714-44.
 
-   Inter-University Consortium for Political and Social Research. Study
-   Number 1112. http://dx.doi.org/10.3886/ICPSR01112.
+      Miller, Warren E., Donald R. Kinder, Steven J. Rosenstone and the
+      National Election Studies. 1999. *National Election Studies, 1992:
+      Pre-/Post-Election Study*. Center for Political Studies,
+      University of Michigan: Ann Arbor, Michigan.
 
-   .. rubric:: References
-      :name: references
+      Inter-University Consortium for Political and Social Research.
+      Study Number 1112.
+      `doi:10.3886/ICPSR01112 <https://doi.org/10.3886/ICPSR01112>`__.
 
-   Jackman, Simon. 2009. *Bayesian Analysis for the Social Sciences*.
-   Wiley: Hoboken, New Jersey. Examples 8.7 and 8.8.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Jackman, Simon. 2009. *Bayesian Analysis for the Social Sciences*.
+      Wiley: Hoboken, New Jersey. Examples 8.7 and 8.8.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(vote92)
-      summary(vote92)
+      ::
+
+         data(vote92)
+         summary(vote92)

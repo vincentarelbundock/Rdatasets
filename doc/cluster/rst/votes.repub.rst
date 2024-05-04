@@ -1,31 +1,34 @@
 .. container::
 
-   =========== ===============
-   votes.repub R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Votes for Republican Candidate in Presidential Elections
-      :name: votes.repub
+      =========== ===============
+      votes.repub R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Votes for Republican Candidate in Presidential
+         Elections
+         :name: votes-for-republican-candidate-in-presidential-elections
 
-   A data frame with the percents of votes given to the republican
-   candidate in presidential elections from 1856 to 1976. Rows represent
-   the 50 states, and columns the 31 elections.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data frame with the percents of votes given to the republican
+      candidate in presidential elections from 1856 to 1976. Rows
+      represent the 50 states, and columns the 31 elections.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(votes.repub)
+      ::
 
-   .. rubric:: Source
-      :name: source
+         data(votes.repub)
 
-   S. Peterson (1973): *A Statistical History of the American
-   Presidential Elections*. New York: Frederick Ungar Publishing Co.
+      .. rubric:: Source
+         :name: source
 
-   Data from 1964 to 1976 is from R. M. Scammon, *American Votes 12*,
-   Congressional Quarterly.
+      S. Peterson (1973): *A Statistical History of the American
+      Presidential Elections*. New York: Frederick Ungar Publishing Co.
+
+      Data from 1964 to 1976 is from R. M. Scammon, *American Votes 12*,
+      Congressional Quarterly.

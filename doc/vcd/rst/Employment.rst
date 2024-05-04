@@ -1,82 +1,85 @@
 .. container::
 
-   ========== ===============
-   Employment R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Employment Status
-      :name: Employment
+      ========== ===============
+      Employment R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Employment Status
+         :name: employment-status
 
-   Data from a 1974 Danish study given by Andersen (1991) on the
-   employees who had been laid off. The workers are classified by their
-   employment status on 1975-01-01, the cause of their layoff and the
-   length of employment before they were laid off.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from a 1974 Danish study given by Andersen (1991) on the
+      employees who had been laid off. The workers are classified by
+      their employment status on 1975-01-01, the cause of their layoff
+      and the length of employment before they were laid off.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Employment")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Employment")
 
-   A 3-dimensional array resulting from cross-tabulating variables for
-   1314 employees. The variables and their levels are as follows:
+      .. rubric:: Format
+         :name: format
 
-   == ================ =======================================
-   No Name             Levels
-   1  EmploymentStatus NewJob, Unemployed
-   2  EmploymentLength <1Mo, 1-3Mo, 3-12Mo, 1-2Yr, 2-5Yr, >5Yr
-   3  LayoffCause      Closure, Replaced
-   == ================ =======================================
+      A 3-dimensional array resulting from cross-tabulating variables
+      for 1314 employees. The variables and their levels are as follows:
 
-   .. rubric:: Source
-      :name: source
+      == ================ =======================================
+      No Name             Levels
+      1  EmploymentStatus NewJob, Unemployed
+      2  EmploymentLength <1Mo, 1-3Mo, 3-12Mo, 1-2Yr, 2-5Yr, >5Yr
+      3  LayoffCause      Closure, Replaced
+      == ================ =======================================
 
-   Michael Friendly (2000), Visualizing Categorical Data, pages 126–129.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Michael Friendly (2000), Visualizing Categorical Data, pages
+      126–129.
 
-   E. B. Andersen (1991), *The Statistical Analysis of Categorical
-   Data*. Springer-Verlag, Berlin.
+      .. rubric:: References
+         :name: references
 
-   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
-   Cary, NC.
+      E. B. Andersen (1991), *The Statistical Analysis of Categorical
+      Data*. Springer-Verlag, Berlin.
 
-   .. rubric:: Examples
-      :name: examples
+      M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+      Cary, NC.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("Employment")
+      ::
 
-      ## Employment Status
-      mosaic(Employment,
-             expected = ~ LayoffCause * EmploymentLength + EmploymentStatus,
-             main = "Layoff*EmployLength + EmployStatus")
+         data("Employment")
 
-      mosaic(Employment,
-             expected = ~ LayoffCause * EmploymentLength + LayoffCause * EmploymentStatus,
-             main = "Layoff*EmployLength + Layoff*EmployStatus")
+         ## Employment Status
+         mosaic(Employment,
+                expected = ~ LayoffCause * EmploymentLength + EmploymentStatus,
+                main = "Layoff*EmployLength + EmployStatus")
 
-      ## Stratified view
+         mosaic(Employment,
+                expected = ~ LayoffCause * EmploymentLength + LayoffCause * EmploymentStatus,
+                main = "Layoff*EmployLength + Layoff*EmployStatus")
 
-      grid.newpage()
-      pushViewport(viewport(layout = grid.layout(ncol = 2)))
-      pushViewport(viewport(layout.pos.col = 1))
+         ## Stratified view
 
-      ## Closure
-      mosaic(Employment[,,1], main = "Layoff: Closure", newpage = FALSE)
+         grid.newpage()
+         pushViewport(viewport(layout = grid.layout(ncol = 2)))
+         pushViewport(viewport(layout.pos.col = 1))
 
-      popViewport(1)
-      pushViewport(viewport(layout.pos.col = 2))
+         ## Closure
+         mosaic(Employment[,,1], main = "Layoff: Closure", newpage = FALSE)
 
-      ## Replaced
-      mosaic(Employment[,,2], main = "Layoff: Replaced", newpage = FALSE)
-      popViewport(2)
+         popViewport(1)
+         pushViewport(viewport(layout.pos.col = 2))
+
+         ## Replaced
+         mosaic(Employment[,,2], main = "Layoff: Replaced", newpage = FALSE)
+         popViewport(2)

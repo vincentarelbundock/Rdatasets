@@ -1,56 +1,58 @@
 .. container::
 
-   == ===============
-   PE R Documentation
-   == ===============
+   .. container::
 
-   .. rubric:: Price and Earnings Index
-      :name: PE
+      == ===============
+      PE R Documentation
+      == ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Price and Earnings Index
+         :name: price-and-earnings-index
 
-   annual observations from 1800 to 1931
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 132
+      annual observations from 1800 to 1931
 
-   *observation* : country
+      *number of observations* : 132
 
-   *country* : United States
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(PE)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(PE)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   price
-      S&P composite stock price index
+      A time series containing :
 
-   earnings
-      S&P composite earnings index
+      price
+         S&P composite stock price index
 
-   .. rubric:: Source
-      :name: source
+      earnings
+         S&P composite earnings index
 
-   Robert Shiller.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Robert Shiller.
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons, chapter 8.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons, chapter 8.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

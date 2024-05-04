@@ -1,138 +1,140 @@
 .. container::
 
-   ===== ===============
-   Crime R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Crime in North Carolina
-      :name: Crime
+      ===== ===============
+      Crime R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Crime in North Carolina
+         :name: crime-in-north-carolina
 
-   a panel of 90 observations from 1981 to 1987
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 630
+      a panel of 90 observations from 1981 to 1987
 
-   *observation* : regional
+      *number of observations* : 630
 
-   *country* : United States
+      *observation* : regional
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Crime)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Crime)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   county
-      county identifier
+      A dataframe containing :
 
-   year
-      year from 1981 to 1987
+      county
+         county identifier
 
-   crmrte
-      crimes committed per person
+      year
+         year from 1981 to 1987
 
-   prbarr
-      'probability' of arrest
+      crmrte
+         crimes committed per person
 
-   prbconv
-      'probability' of conviction
+      prbarr
+         'probability' of arrest
 
-   prbpris
-      'probability' of prison sentence
+      prbconv
+         'probability' of conviction
 
-   avgsen
-      average sentence, days
+      prbpris
+         'probability' of prison sentence
 
-   polpc
-      police per capita
+      avgsen
+         average sentence, days
 
-   density
-      hundreds of people per square mile
+      polpc
+         police per capita
 
-   taxpc
-      tax revenue per capita
+      density
+         hundreds of people per square mile
 
-   region
-      one of 'other', 'west' or 'central'
+      taxpc
+         tax revenue per capita
 
-   smsa
-      'yes' or 'no' if in SMSA
+      region
+         one of 'other', 'west' or 'central'
 
-   pctmin
-      percentage minority in 1980
+      smsa
+         'yes' or 'no' if in SMSA
 
-   wcon
-      weekly wage in construction
+      pctmin
+         percentage minority in 1980
 
-   wtuc
-      weekly wage in ``trns, util, commun``
+      wcon
+         weekly wage in construction
 
-   wtrd
-      weekly wage in whole sales and retail trade
+      wtuc
+         weekly wage in ``trns, util, commun``
 
-   wfir
-      weekly wage in finance, insurance and real estate
+      wtrd
+         weekly wage in whole sales and retail trade
 
-   wser
-      weekly wage in service industry
+      wfir
+         weekly wage in finance, insurance and real estate
 
-   wmfg
-      weekly wage in manufacturing
+      wser
+         weekly wage in service industry
 
-   wfed
-      weekly wage of federal employees
+      wmfg
+         weekly wage in manufacturing
 
-   wsta
-      weekly wage of state employees
+      wfed
+         weekly wage of federal employees
 
-   wloc
-      weekly wage of local governments employees
+      wsta
+         weekly wage of state employees
 
-   mix
-      offense mix: face-to-face/other
+      wloc
+         weekly wage of local governments employees
 
-   pctymle
-      percentage of young males
+      mix
+         offense mix: face-to-face/other
 
-   .. rubric:: Note
-      :name: note
+      pctymle
+         percentage of young males
 
-   Thanks to Yungfong "Frank" Tang for identifying an error in the
-   description of "density", previously documented erroneously as only
-   "people per square mile".
+      .. rubric:: Note
+         :name: note
 
-   .. rubric:: Source
-      :name: source
+      Thanks to Yungfong "Frank" Tang for identifying an error in the
+      description of "density", previously documented erroneously as
+      only "people per square mile".
 
-   Cornwell, C. and W.N. Trumbull (1994) “Estimating the economic model
-   of crime with panel data”, *Review of Economics and Statistics*,
-   **76**, 360–366.
+      .. rubric:: Source
+         :name: source
 
-   Baltagi, B. H. (2006) “Estimating an economic model of crime using
-   panel data from North Carolina”, *Journal of Applied Econometrics*,
-   21(4), May/June 2006, pp. 543-547.
+      Cornwell, C. and W.N. Trumbull (1994) “Estimating the economic
+      model of crime with panel data”, *Review of Economics and
+      Statistics*, **76**, 360–366.
 
-   See also:
-   ```CRIME4.DES`` <http://fmwww.bc.edu/ec-p/data/wooldridge/crime4.des>`__
-   and Baltagi in `JAE Data
-   Archive <http://qed.econ.queensu.ca/jae/datasets/baltagi003/>`__.
+      Baltagi, B. H. (2006) “Estimating an economic model of crime using
+      panel data from North Carolina”, *Journal of Applied
+      Econometrics*, 21(4), May/June 2006, pp. 543-547.
 
-   .. rubric:: References
-      :name: references
+      See also:
+      ```CRIME4.DES`` <http://fmwww.bc.edu/ec-p/data/wooldridge/crime4.des>`__
+      and Baltagi in `JAE Data
+      Archive <http://qed.econ.queensu.ca/jae/datasets/baltagi003/>`__.
 
-   Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John
-   Wiley and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John
+      Wiley and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``, ``Index.Time.Series``, ``Crime``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``, ``Index.Time.Series``, ``Crime``

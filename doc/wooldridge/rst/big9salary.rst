@@ -1,122 +1,124 @@
 .. container::
 
-   ========== ===============
-   big9salary R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: big9salary
-      :name: big9salary
+      ========== ===============
+      big9salary R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: big9salary
+         :name: big9salary
 
-   Wooldridge Source: O. Baser and E. Pema (2003), “The Return of
-   Publications for Economics Faculty,” Economics Bulletin 1, 1-13.
-   Professors Baser and Pema kindly provided the data. Data loads
-   lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: O. Baser and E. Pema (2003), “The Return of
+      Publications for Economics Faculty,” Economics Bulletin 1, 1-13.
+      Professors Baser and Pema kindly provided the data. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('big9salary')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('big9salary')
 
-   A data.frame with 786 observations on 30 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **id:** person identifier
+      A data.frame with 786 observations on 30 variables:
 
-   -  **year:** 92, 95, or 99
+      -  **id:** person identifier
 
-   -  **salary:** annual salary, $
+      -  **year:** 92, 95, or 99
 
-   -  **pubindx:** publication index
+      -  **salary:** annual salary, $
 
-   -  **totpge:** standardized total article pages
+      -  **pubindx:** publication index
 
-   -  **assist:** =1 if assistant professor
+      -  **totpge:** standardized total article pages
 
-   -  **assoc:** =1 if associate professor
+      -  **assist:** =1 if assistant professor
 
-   -  **prof:** =1 if full professor
+      -  **assoc:** =1 if associate professor
 
-   -  **chair:** =1 if department chair
+      -  **prof:** =1 if full professor
 
-   -  **top20phd:** =1 if Ph.D. from top 20 dept.
+      -  **chair:** =1 if department chair
 
-   -  **yearphd:** year Ph.D. obtained
+      -  **top20phd:** =1 if Ph.D. from top 20 dept.
 
-   -  **female:** =1 if female
+      -  **yearphd:** year Ph.D. obtained
 
-   -  **osu:** =1 if Ohio State U.
+      -  **female:** =1 if female
 
-   -  **iowa:** =1 if U. Iowa
+      -  **osu:** =1 if Ohio State U.
 
-   -  **indiana:** =1 if Indiana U.
+      -  **iowa:** =1 if U. Iowa
 
-   -  **purdue:** =1 if Purdue U.
+      -  **indiana:** =1 if Indiana U.
 
-   -  **msu:** =1 if Michigan State U.
+      -  **purdue:** =1 if Purdue U.
 
-   -  **minn:** =1 if U. Minnesota
+      -  **msu:** =1 if Michigan State U.
 
-   -  **mich:** =1 if U. Michigan
+      -  **minn:** =1 if U. Minnesota
 
-   -  **wisc:** =1 if U. Wisconsin
+      -  **mich:** =1 if U. Michigan
 
-   -  **illinois:** =1 if U. Illinois
+      -  **wisc:** =1 if U. Wisconsin
 
-   -  **y92:** =1 if year == 92
+      -  **illinois:** =1 if U. Illinois
 
-   -  **y95:** =1 if year == 95
+      -  **y92:** =1 if year == 92
 
-   -  **y99:** =1 if year == 99
+      -  **y95:** =1 if year == 95
 
-   -  **lsalary:** log(salary)
+      -  **y99:** =1 if year == 99
 
-   -  **exper:** years since first teaching job
+      -  **lsalary:** log(salary)
 
-   -  **expersq:** exper^2
+      -  **exper:** years since first teaching job
 
-   -  **pubindxsq:** pubindx^2
+      -  **expersq:** exper^2
 
-   -  **pubindx0:** =1 if pubindx == 0
+      -  **pubindxsq:** pubindx^2
 
-   -  **lpubindx:** log(pubindx) if pubindx > 0
+      -  **pubindx0:** =1 if pubindx == 0
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lpubindx:** log(pubindx) if pubindx > 0
 
-   This is an unbalanced panel data set in the sense that as many as
-   three years of data are available for each faculty member but where
-   some have fewer than three years. It is not clear that something like
-   a fixed effects or first differencing analysis makes sense: in
-   effect, approaches that remove the heterogeneity control for too much
-   by controlling for unobserved heterogeneity which, in this case,
-   includes faculty intelligence, talent, and motivation. Presumably
-   these factors enter into the publication index. It is hard to think
-   we want to hold the main factors driving productivity fixed when
-   trying to measure the effect of productivity on salary. Pooled OLS
-   regression with “cluster robust” standard errors seems more natural.
-   On the other hand, if we want to measure the return to having a
-   degree from a top 20 Ph.D. program then we would want to control for
-   factors that cause selection into a top 20 program. Unfortunately,
-   this variable does not change over time, and so FD and FE are not
-   applicable.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: not used
+      This is an unbalanced panel data set in the sense that as many as
+      three years of data are available for each faculty member but
+      where some have fewer than three years. It is not clear that
+      something like a fixed effects or first differencing analysis
+      makes sense: in effect, approaches that remove the heterogeneity
+      control for too much by controlling for unobserved heterogeneity
+      which, in this case, includes faculty intelligence, talent, and
+      motivation. Presumably these factors enter into the publication
+      index. It is hard to think we want to hold the main factors
+      driving productivity fixed when trying to measure the effect of
+      productivity on salary. Pooled OLS regression with “cluster
+      robust” standard errors seems more natural. On the other hand, if
+      we want to measure the return to having a degree from a top 20
+      Ph.D. program then we would want to control for factors that cause
+      selection into a top 20 program. Unfortunately, this variable does
+      not change over time, and so FD and FE are not applicable.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: not used
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(big9salary)
+      ::
+
+          str(big9salary)

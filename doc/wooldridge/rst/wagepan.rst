@@ -1,136 +1,138 @@
 .. container::
 
-   ======= ===============
-   wagepan R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: wagepan
-      :name: wagepan
+      ======= ===============
+      wagepan R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: wagepan
+         :name: wagepan
 
-   Wooldridge Source: F. Vella and M. Verbeek (1998), “Whose Wages Do
-   Unions Raise? A Dynamic Model of Unionism and Wage Rate Determination
-   for Young Men,” Journal of Applied Econometrics 13, 163-183. I
-   obtained the data from the Journal of Applied Econometrics data
-   archive at http://qed.econ.queensu.ca/jae/. This is generally a nice
-   resource for undergraduates looking to replicate or extend a
-   published study. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: F. Vella and M. Verbeek (1998), “Whose Wages Do
+      Unions Raise? A Dynamic Model of Unionism and Wage Rate
+      Determination for Young Men,” Journal of Applied Econometrics 13,
+      163-183. I obtained the data from the Journal of Applied
+      Econometrics data archive at http://qed.econ.queensu.ca/jae/. This
+      is generally a nice resource for undergraduates looking to
+      replicate or extend a published study. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('wagepan')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('wagepan')
 
-   A data.frame with 4360 observations on 44 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **nr:** person identifier
+      A data.frame with 4360 observations on 44 variables:
 
-   -  **year:** 1980 to 1987
+      -  **nr:** person identifier
 
-   -  **agric:** =1 if in agriculture
+      -  **year:** 1980 to 1987
 
-   -  **black:** =1 if black
+      -  **agric:** =1 if in agriculture
 
-   -  **bus:**
+      -  **black:** =1 if black
 
-   -  **construc:** =1 if in construction
+      -  **bus:**
 
-   -  **ent:**
+      -  **construc:** =1 if in construction
 
-   -  **exper:** labor mkt experience
+      -  **ent:**
 
-   -  **fin:**
+      -  **exper:** labor mkt experience
 
-   -  **hisp:** =1 if Hispanic
+      -  **fin:**
 
-   -  **poorhlth:** =1 if in poor health
+      -  **hisp:** =1 if Hispanic
 
-   -  **hours:** annual hours worked
+      -  **poorhlth:** =1 if in poor health
 
-   -  **manuf:** =1 if in manufacturing
+      -  **hours:** annual hours worked
 
-   -  **married:** =1 if married
+      -  **manuf:** =1 if in manufacturing
 
-   -  **min:**
+      -  **married:** =1 if married
 
-   -  **nrthcen:** =1 if north central
+      -  **min:**
 
-   -  **nrtheast:** =1 if north east
+      -  **nrthcen:** =1 if north central
 
-   -  **occ1:**
+      -  **nrtheast:** =1 if north east
 
-   -  **occ2:**
+      -  **occ1:**
 
-   -  **occ3:**
+      -  **occ2:**
 
-   -  **occ4:**
+      -  **occ3:**
 
-   -  **occ5:**
+      -  **occ4:**
 
-   -  **occ6:**
+      -  **occ5:**
 
-   -  **occ7:**
+      -  **occ6:**
 
-   -  **occ8:**
+      -  **occ7:**
 
-   -  **occ9:**
+      -  **occ8:**
 
-   -  **per:**
+      -  **occ9:**
 
-   -  **pro:**
+      -  **per:**
 
-   -  **pub:**
+      -  **pro:**
 
-   -  **rur:**
+      -  **pub:**
 
-   -  **south:** =1 if south
+      -  **rur:**
 
-   -  **educ:** years of schooling
+      -  **south:** =1 if south
 
-   -  **tra:**
+      -  **educ:** years of schooling
 
-   -  **trad:**
+      -  **tra:**
 
-   -  **union:** =1 if in union
+      -  **trad:**
 
-   -  **lwage:** log(wage)
+      -  **union:** =1 if in union
 
-   -  **d81:** =1 if year == 1981
+      -  **lwage:** log(wage)
 
-   -  **d82:**
+      -  **d81:** =1 if year == 1981
 
-   -  **d83:**
+      -  **d82:**
 
-   -  **d84:**
+      -  **d83:**
 
-   -  **d85:**
+      -  **d84:**
 
-   -  **d86:**
+      -  **d85:**
 
-   -  **d87:**
+      -  **d86:**
 
-   -  **expersq:** exper^2
+      -  **d87:**
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **expersq:** exper^2
 
-   pages 480, 494-495, 505
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 480, 494-495, 505
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(wagepan)
+      ::
+
+          str(wagepan)

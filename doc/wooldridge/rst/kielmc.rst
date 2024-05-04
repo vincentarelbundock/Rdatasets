@@ -1,96 +1,98 @@
 .. container::
 
-   ====== ===============
-   kielmc R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: kielmc
-      :name: kielmc
+      ====== ===============
+      kielmc R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: kielmc
+         :name: kielmc
 
-   Wooldridge Source: K.A. Kiel and K.T. McClain (1995), “House Prices
-   During Siting Decision Stages: The Case of an Incinerator from Rumor
-   Through Operation,” Journal of Environmental Economics and Management
-   28, 241-255. Professor McClain kindly provided the data, of which I
-   used only a subset. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: K.A. Kiel and K.T. McClain (1995), “House
+      Prices During Siting Decision Stages: The Case of an Incinerator
+      from Rumor Through Operation,” Journal of Environmental Economics
+      and Management 28, 241-255. Professor McClain kindly provided the
+      data, of which I used only a subset. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('kielmc')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('kielmc')
 
-   A data.frame with 321 observations on 25 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1978 or 1981
+      A data.frame with 321 observations on 25 variables:
 
-   -  **age:** age of house
+      -  **year:** 1978 or 1981
 
-   -  **agesq:** age^2
+      -  **age:** age of house
 
-   -  **nbh:** neighborhood, 1-6
+      -  **agesq:** age^2
 
-   -  **cbd:** dist. to cent. bus. dstrct, ft.
+      -  **nbh:** neighborhood, 1-6
 
-   -  **intst:** dist. to interstate, ft.
+      -  **cbd:** dist. to cent. bus. dstrct, ft.
 
-   -  **lintst:** log(intst)
+      -  **intst:** dist. to interstate, ft.
 
-   -  **price:** selling price
+      -  **lintst:** log(intst)
 
-   -  **rooms:** # rooms in house
+      -  **price:** selling price
 
-   -  **area:** square footage of house
+      -  **rooms:** # rooms in house
 
-   -  **land:** square footage lot
+      -  **area:** square footage of house
 
-   -  **baths:** # bathrooms
+      -  **land:** square footage lot
 
-   -  **dist:** dist. from house to incin., ft.
+      -  **baths:** # bathrooms
 
-   -  **ldist:** log(dist)
+      -  **dist:** dist. from house to incin., ft.
 
-   -  **wind:** prc. time wind incin. to house
+      -  **ldist:** log(dist)
 
-   -  **lprice:** log(price)
+      -  **wind:** prc. time wind incin. to house
 
-   -  **y81:** =1 if year == 1981
+      -  **lprice:** log(price)
 
-   -  **larea:** log(area)
+      -  **y81:** =1 if year == 1981
 
-   -  **lland:** log(land)
+      -  **larea:** log(area)
 
-   -  **y81ldist:** y81*ldist
+      -  **lland:** log(land)
 
-   -  **lintstsq:** lintst^2
+      -  **y81ldist:** y81*ldist
 
-   -  **nearinc:** =1 if dist <= 15840
+      -  **lintstsq:** lintst^2
 
-   -  **y81nrinc:** y81*nearinc
+      -  **nearinc:** =1 if dist <= 15840
 
-   -  **rprice:** price, 1978 dollars
+      -  **y81nrinc:** y81*nearinc
 
-   -  **lrprice:** log(rprice)
+      -  **rprice:** price, 1978 dollars
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **lrprice:** log(rprice)
 
-   pages 220, 454-457, 475, 477
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 220, 454-457, 475, 477
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(kielmc)
+      ::
+
+          str(kielmc)

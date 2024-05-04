@@ -1,35 +1,37 @@
 .. container::
 
-   ================= ===============
-   two_class_example R Documentation
-   ================= ===============
+   .. container::
 
-   .. rubric:: Two class predictions
-      :name: two_class_example
+      ================= ===============
+      two_class_example R Documentation
+      ================= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Two class predictions
+         :name: two-class-predictions
 
-   Two class predictions
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      Two class predictions
 
-   These data are a test set form a model built for two classes
-   ("Class1" and "Class2"). There are columns for the true and predicted
-   classes and column for the probabilities for each class.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Value
-      :name: value
+      These data are a test set form a model built for two classes
+      ("Class1" and "Class2"). There are columns for the true and
+      predicted classes and column for the probabilities for each class.
 
-   ===================== ============
-   ``two_class_example`` a data frame
-   ===================== ============
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Examples
-      :name: examples
+      ===================== ============
+      ``two_class_example`` a data frame
+      ===================== ============
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(two_class_example)
-      str(two_class_example)
+      ::
+
+         data(two_class_example)
+         str(two_class_example)

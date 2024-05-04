@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>mlb</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='mlb'>Salary data for Major League Baseball (2010)</h2>
+<h2>Salary data for Major League Baseball (2010)</h2>
 
 <h3>Description</h3>
 
@@ -83,6 +83,7 @@ axis(2, seq(0, 300, 100))
 boxPlot(log(mlb$salary / 1000), mlb$position, horiz = TRUE, ylab = "")
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

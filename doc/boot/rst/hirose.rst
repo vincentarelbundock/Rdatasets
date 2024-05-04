@@ -1,52 +1,54 @@
 .. container::
 
-   ====== ===============
-   hirose R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Failure Time of PET Film
-      :name: hirose
+      ====== ===============
+      hirose R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Failure Time of PET Film
+         :name: failure-time-of-pet-film
 
-   The ``hirose`` data frame has 44 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   PET film is used in electrical insulation. In this accelerated life
-   test the failure times for 44 samples in gas insulated transformers.
-   4 different voltage levels were used.
+      The ``hirose`` data frame has 44 rows and 3 columns.
 
-   .. rubric:: Usage
-      :name: usage
+      PET film is used in electrical insulation. In this accelerated
+      life test the failure times for 44 samples in gas insulated
+      transformers. 4 different voltage levels were used.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      hirose
+      ::
 
-   .. rubric:: Format
-      :name: format
+         hirose
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``volt``
-      The voltage (in kV).
+      This data frame contains the following columns:
 
-   ``time``
-      The failure or censoring time in hours.
+      ``volt``
+         The voltage (in kV).
 
-   ``cens``
-      The censoring indicator; ``1`` means right-censored data.
+      ``time``
+         The failure or censoring time in hours.
 
-   .. rubric:: Source
-      :name: source
+      ``cens``
+         The censoring indicator; ``1`` means right-censored data.
 
-   The data were obtained from
+      .. rubric:: Source
+         :name: source
 
-   Hirose, H. (1993) Estimation of threshold stress in accelerated
-   life-testing. *IEEE Transactions on Reliability*, **42**, 650–657.
+      The data were obtained from
 
-   .. rubric:: References
-      :name: references
+      Hirose, H. (1993) Estimation of threshold stress in accelerated
+      life-testing. *IEEE Transactions on Reliability*, **42**, 650–657.
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
+
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.

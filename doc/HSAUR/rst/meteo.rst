@@ -1,66 +1,68 @@
 .. container::
 
-   ===== ===============
-   meteo R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Meteorological Measurements for 11 Years
-      :name: meteo
+      ===== ===============
+      meteo R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Meteorological Measurements for 11 Years
+         :name: meteorological-measurements-for-11-years
 
-   Several meteorological measurements for a period between 1920 and
-   1931.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Several meteorological measurements for a period between 1920 and
+      1931.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("meteo")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("meteo")
 
-   A data frame with 11 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``year``
-      the years.
+      A data frame with 11 observations on the following 6 variables.
 
-   ``rainNovDec``
-      rainfall in November and December (mm).
+      ``year``
+         the years.
 
-   ``temp``
-      average July temperature.
+      ``rainNovDec``
+         rainfall in November and December (mm).
 
-   ``rainJuly``
-      rainfall in July (mm).
+      ``temp``
+         average July temperature.
 
-   ``radiation``
-      radiation in July (millilitres of alcohol).
+      ``rainJuly``
+         rainfall in July (mm).
 
-   ``yield``
-      average harvest yield (quintals per hectare).
+      ``radiation``
+         radiation in July (millilitres of alcohol).
 
-   .. rubric:: Details
-      :name: details
+      ``yield``
+         average harvest yield (quintals per hectare).
 
-   Carry out a principal components analysis of both the covariance
-   matrix and the correlation matrix of the data and compare the
-   results. Which set of components leads to the most meaningful
-   interpretation?
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Carry out a principal components analysis of both the covariance
+      matrix and the correlation matrix of the data and compare the
+      results. Which set of components leads to the most meaningful
+      interpretation?
 
-   B. S. Everitt and G. Dunn (2001), *Applied Multivariate Data
-   Analysis*, 2nd edition, Arnold, London.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      B. S. Everitt and G. Dunn (2001), *Applied Multivariate Data
+      Analysis*, 2nd edition, Arnold, London.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("meteo", package = "HSAUR")
-        meteo
+      ::
+
+           data("meteo", package = "HSAUR")
+           meteo

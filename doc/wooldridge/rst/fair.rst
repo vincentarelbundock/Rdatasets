@@ -1,93 +1,96 @@
 .. container::
 
-   ==== ===============
-   fair R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: fair
-      :name: fair
+      ==== ===============
+      fair R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: fair
+         :name: fair
 
-   Wooldridge Source: R.C. Fair (1996), “Econometrics and Presidential
-   Elections,” Journal of Economic Perspectives 10, 89-102. The data set
-   is provided in the article. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: R.C. Fair (1996), “Econometrics and
+      Presidential Elections,” Journal of Economic Perspectives 10,
+      89-102. The data set is provided in the article. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('fair')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('fair')
 
-   A data.frame with 21 observations on 28 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1916 to 1992, by 4
+      A data.frame with 21 observations on 28 variables:
 
-   -  **V:** prop. dem. vote
+      -  **year:** 1916 to 1992, by 4
 
-   -  **I:** =1 if demwh, -1 if repwh
+      -  **V:** prop. dem. vote
 
-   -  **DPER:** incumbent running
+      -  **I:** =1 if demwh, -1 if repwh
 
-   -  **DUR:** duration
+      -  **DPER:** incumbent running
 
-   -  **g3:** avg ann grwth rte, prev 3 qrts
+      -  **DUR:** duration
 
-   -  **p15:** avg ann inf rate, prev 15 qtrs
+      -  **g3:** avg ann grwth rte, prev 3 qrts
 
-   -  **n:** quarters of good news
+      -  **p15:** avg ann inf rate, prev 15 qtrs
 
-   -  **g2:** avg ann grwth rte, prev 2 qrts
+      -  **n:** quarters of good news
 
-   -  **gYR:** ann grwth rte, prev year
+      -  **g2:** avg ann grwth rte, prev 2 qrts
 
-   -  **p8:** avg ann inf rate, prev 8 qtrs
+      -  **gYR:** ann grwth rte, prev year
 
-   -  **p2YR:** inf rte over 2 yr period
+      -  **p8:** avg ann inf rate, prev 8 qtrs
 
-   -  **Ig2:** I*g2
+      -  **p2YR:** inf rte over 2 yr period
 
-   -  **Ip8:** I*p8
+      -  **Ig2:** I*g2
 
-   -  **demwins:** =1 if V > .5
+      -  **Ip8:** I*p8
 
-   -  **In:** I*n
+      -  **demwins:** =1 if V > .5
 
-   -  **d:** =1 in 1920, 1944,1948
+      -  **In:** I*n
 
-   -  **Id:** I*d
+      -  **d:** =1 in 1920, 1944,1948
 
-   -  **Ig3:** I*g3
+      -  **Id:** I*d
 
-   -  **Ip151md:** I*p15*(1-d)
+      -  **Ig3:** I*g3
 
-   -  **In1md:** I*n*(1-d)
+      -  **Ip151md:** I*p15*(1-d)
 
-   .. rubric:: Notes
-      :name: notes
+      -  **In1md:** I*n*(1-d)
 
-   An updated version of this data set, through the 2004 election, is
-   available at Professor Fair’s web site at Yale University:
-   http://fairmodel.econ.yale.edu/rayfair/pdf/2001b.htm. Students might
-   want to try their own hands at predicting the most recent election
-   outcome, but they should be restricted to no more than a handful of
-   explanatory variables because of the small sample size.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 362-363, 440, 442
+      An updated version of this data set, through the 2004 election, is
+      available at Professor Fair’s web site at Yale University:
+      http://fairmodel.econ.yale.edu/rayfair/pdf/2001b.htm. Students
+      might want to try their own hands at predicting the most recent
+      election outcome, but they should be restricted to no more than a
+      handful of explanatory variables because of the small sample size.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 362-363, 440, 442
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(fair)
+      ::
+
+          str(fair)

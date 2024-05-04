@@ -1,52 +1,54 @@
 .. container::
 
-   ======== ===============
-   Friendly R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Format Effects on Recall
-      :name: Friendly
+      ======== ===============
+      Friendly R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Format Effects on Recall
+         :name: format-effects-on-recall
 
-   The ``Friendly`` data frame has 30 rows and 2 columns. The data are
-   from an experiment on subjects' ability to remember words based on
-   the presentation format.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Friendly`` data frame has 30 rows and 2 columns. The data
+      are from an experiment on subjects' ability to remember words
+      based on the presentation format.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Friendly
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Friendly
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   condition
-      A factor with levels: ``Before``, Recalled words presented before
-      others; ``Meshed``, Recalled words meshed with others; ``SFR``,
-      Standard free recall.
+      This data frame contains the following columns:
 
-   correct
-      Number of words correctly recalled, out of 40 on final trial of
-      the experiment.
+      condition
+         A factor with levels: ``Before``, Recalled words presented
+         before others; ``Meshed``, Recalled words meshed with others;
+         ``SFR``, Standard free recall.
 
-   .. rubric:: Source
-      :name: source
+      correct
+         Number of words correctly recalled, out of 40 on final trial of
+         the experiment.
 
-   Friendly, M. and Franklin, P. (1980) Interactive presentation in
-   multitrial free recall. *Memory and Cognition* **8** 265–270
-   [Personal communication from M. Friendly].
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Friendly, M. and Franklin, P. (1980) Interactive presentation in
+      multitrial free recall. *Memory and Cognition* **8** 265–270
+      [Personal communication from M. Friendly].
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
 
-   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
-   Regression*, Third Edition, Sage.
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.
+
+      Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+      Regression*, Third Edition, Sage.

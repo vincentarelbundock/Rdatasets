@@ -1,103 +1,107 @@
 .. container::
 
-   ====== ===============
-   Theoph R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Pharmacokinetics of Theophylline
-      :name: Theoph
+      ====== ===============
+      Theoph R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Pharmacokinetics of Theophylline
+         :name: pharmacokinetics-of-theophylline
 
-   The ``Theoph`` data frame has 132 rows and 5 columns of data from an
-   experiment on the pharmacokinetics of theophylline.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Theoph`` data frame has 132 rows and 5 columns of data from
+      an experiment on the pharmacokinetics of theophylline.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Theoph
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Theoph
 
-   An object of class
-   ``c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame")``
-   containing the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Subject
-      an ordered factor with levels ``1``, ..., ``12`` identifying the
-      subject on whom the observation was made. The ordering is by
-      increasing maximum concentration of theophylline observed.
+      An object of class
+      ``c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame")``
+      containing the following columns:
 
-   Wt
-      weight of the subject (kg).
+      Subject
+         an ordered factor with levels ``1``, ..., ``12`` identifying
+         the subject on whom the observation was made. The ordering is
+         by increasing maximum concentration of theophylline observed.
 
-   Dose
-      dose of theophylline administered orally to the subject (mg/kg).
+      Wt
+         weight of the subject (kg).
 
-   Time
-      time since drug administration when the sample was drawn (hr).
+      Dose
+         dose of theophylline administered orally to the subject
+         (mg/kg).
 
-   conc
-      theophylline concentration in the sample (mg/L).
+      Time
+         time since drug administration when the sample was drawn (hr).
 
-   .. rubric:: Details
-      :name: details
+      conc
+         theophylline concentration in the sample (mg/L).
 
-   Boeckmann, Sheiner and Beal (1994) report data from a study by Dr.
-   Robert Upton of the kinetics of the anti-asthmatic drug theophylline.
-   Twelve subjects were given oral doses of theophylline then serum
-   concentrations were measured at 11 time points over the next 25
-   hours.
+      .. rubric:: Details
+         :name: details
 
-   These data are analyzed in Davidian and Giltinan (1995) and Pinheiro
-   and Bates (2000) using a two-compartment open pharmacokinetic model,
-   for which a self-starting model function, ``SSfol``, is available.
+      Boeckmann, Sheiner and Beal (1994) report data from a study by Dr.
+      Robert Upton of the kinetics of the anti-asthmatic drug
+      theophylline. Twelve subjects were given oral doses of
+      theophylline then serum concentrations were measured at 11 time
+      points over the next 25 hours.
 
-   This dataset was originally part of package ``nlme``, and that has
-   methods (including for ``[``, ``as.data.frame``, ``plot`` and
-   ``print``) for its grouped-data classes.
+      These data are analyzed in Davidian and Giltinan (1995) and
+      Pinheiro and Bates (2000) using a two-compartment open
+      pharmacokinetic model, for which a self-starting model function,
+      ``SSfol``, is available.
 
-   .. rubric:: Source
-      :name: source
+      This dataset was originally part of package ``nlme``, and that has
+      methods (including for ``[``, ``as.data.frame``, ``plot`` and
+      ``print``) for its grouped-data classes.
 
-   Boeckmann, A. J., Sheiner, L. B. and Beal, S. L. (1994), *NONMEM
-   Users Guide: Part V*, NONMEM Project Group, University of California,
-   San Francisco.
+      .. rubric:: Source
+         :name: source
 
-   Davidian, M. and Giltinan, D. M. (1995) *Nonlinear Models for
-   Repeated Measurement Data*, Chapman & Hall (section 5.5, p. 145 and
-   section 6.6, p. 176)
+      Boeckmann, A. J., Sheiner, L. B. and Beal, S. L. (1994), *NONMEM
+      Users Guide: Part V*, NONMEM Project Group, University of
+      California, San Francisco.
 
-   Pinheiro, J. C. and Bates, D. M. (2000) *Mixed-effects Models in S
-   and S-PLUS*, Springer (Appendix A.29)
+      Davidian, M. and Giltinan, D. M. (1995) *Nonlinear Models for
+      Repeated Measurement Data*, Chapman & Hall (section 5.5, p. 145
+      and section 6.6, p. 176)
 
-   .. rubric:: See Also
-      :name: see-also
+      Pinheiro, J. C. and Bates, D. M. (2000) *Mixed-effects Models in S
+      and S-PLUS*, Springer (Appendix A.29)
 
-   ``SSfol``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``SSfol``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(stats); require(graphics)
+      ::
 
-      coplot(conc ~ Time | Subject, data = Theoph, show.given = FALSE)
-      Theoph.4 <- subset(Theoph, Subject == 4)
-      fm1 <- nls(conc ~ SSfol(Dose, Time, lKe, lKa, lCl),
-                 data = Theoph.4)
-      summary(fm1)
-      plot(conc ~ Time, data = Theoph.4,
-           xlab = "Time since drug administration (hr)",
-           ylab = "Theophylline concentration (mg/L)",
-           main = "Observed concentrations and fitted model",
-           sub  = "Theophylline data - Subject 4 only",
-           las = 1, col = 4)
-      xvals <- seq(0, par("usr")[2], length.out = 55)
-      lines(xvals, predict(fm1, newdata = list(Time = xvals)),
-            col = 4)
+         require(stats); require(graphics)
+
+         coplot(conc ~ Time | Subject, data = Theoph, show.given = FALSE)
+         Theoph.4 <- subset(Theoph, Subject == 4)
+         fm1 <- nls(conc ~ SSfol(Dose, Time, lKe, lKa, lCl),
+                    data = Theoph.4)
+         summary(fm1)
+         plot(conc ~ Time, data = Theoph.4,
+              xlab = "Time since drug administration (hr)",
+              ylab = "Theophylline concentration (mg/L)",
+              main = "Observed concentrations and fitted model",
+              sub  = "Theophylline data - Subject 4 only",
+              las = 1, col = 4)
+         xvals <- seq(0, par("usr")[2], length.out = 55)
+         lines(xvals, predict(fm1, newdata = list(Time = xvals)),
+               col = 4)

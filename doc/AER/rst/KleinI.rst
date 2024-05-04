@@ -1,95 +1,97 @@
 .. container::
 
-   ====== ===============
-   KleinI R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Klein Model I
-      :name: KleinI
+      ====== ===============
+      KleinI R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Klein Model I
+         :name: klein-model-i
 
-   Klein's Model I for the US economy.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Klein's Model I for the US economy.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("KleinI")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("KleinI")
 
-   An annual multiple time series from 1920 to 1941 with 9 variables.
+      .. rubric:: Format
+         :name: format
 
-   consumption
-      Consumption.
+      An annual multiple time series from 1920 to 1941 with 9 variables.
 
-   cprofits
-      Corporate profits.
+      consumption
+         Consumption.
 
-   pwage
-      Private wage bill.
+      cprofits
+         Corporate profits.
 
-   invest
-      Investment.
+      pwage
+         Private wage bill.
 
-   capital
-      Previous year's capital stock.
+      invest
+         Investment.
 
-   gnp
-      Gross national product.
+      capital
+         Previous year's capital stock.
 
-   gwage
-      Government wage bill.
+      gnp
+         Gross national product.
 
-   gexpenditure
-      Government spending.
+      gwage
+         Government wage bill.
 
-   taxes
-      Taxes.
+      gexpenditure
+         Government spending.
 
-   .. rubric:: Source
-      :name: source
+      taxes
+         Taxes.
 
-   Online complements to Greene (2003). Table F15.1.
+      .. rubric:: Source
+         :name: source
 
-   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+      Online complements to Greene (2003). Table F15.1.
 
-   .. rubric:: References
-      :name: references
+      https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
-   Saddle River, NJ: Prentice Hall.
+      .. rubric:: References
+         :name: references
 
-   Klein, L. (1950). *Economic Fluctuations in the United States,
-   1921–1941*. New York: John Wiley.
+      Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+      Saddle River, NJ: Prentice Hall.
 
-   Maddala, G.S. (1977). *Econometrics*. New York: McGraw-Hill.
+      Klein, L. (1950). *Economic Fluctuations in the United States,
+      1921–1941*. New York: John Wiley.
 
-   .. rubric:: See Also
-      :name: see-also
+      Maddala, G.S. (1977). *Econometrics*. New York: McGraw-Hill.
 
-   ``Greene2003``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Greene2003``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("KleinI", package = "AER")
-      plot(KleinI)
+      ::
 
-      ## Greene (2003), Tab. 15.3, OLS
-      library("dynlm")
-      fm_cons <- dynlm(consumption ~ cprofits + L(cprofits) + I(pwage + gwage), data = KleinI)
-      fm_inv <- dynlm(invest ~ cprofits + L(cprofits) + capital, data = KleinI)
-      fm_pwage <- dynlm(pwage ~ gnp + L(gnp) + I(time(gnp) - 1931), data = KleinI)
-      summary(fm_cons)
-      summary(fm_inv)
-      summary(fm_pwage)
+         data("KleinI", package = "AER")
+         plot(KleinI)
 
-      ## More examples can be found in:
-      ## help("Greene2003")
+         ## Greene (2003), Tab. 15.3, OLS
+         library("dynlm")
+         fm_cons <- dynlm(consumption ~ cprofits + L(cprofits) + I(pwage + gwage), data = KleinI)
+         fm_inv <- dynlm(invest ~ cprofits + L(cprofits) + capital, data = KleinI)
+         fm_pwage <- dynlm(pwage ~ gnp + L(gnp) + I(time(gnp) - 1931), data = KleinI)
+         summary(fm_cons)
+         summary(fm_inv)
+         summary(fm_pwage)
+
+         ## More examples can be found in:
+         ## help("Greene2003")

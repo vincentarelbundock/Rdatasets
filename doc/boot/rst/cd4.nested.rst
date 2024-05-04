@@ -1,26 +1,28 @@
 .. container::
 
-   ========== ===============
-   cd4.nested R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Nested Bootstrap of cd4 data
-      :name: cd4.nested
+      ========== ===============
+      cd4.nested R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Nested Bootstrap of cd4 data
+         :name: nested-bootstrap-of-cd4-data
 
-   This is an example of a nested bootstrap for the correlation
-   coefficient of the ``cd4`` data frame. It is used in a practical in
-   Chapter 5 of Davison and Hinkley (1997).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: References
-      :name: references
+      This is an example of a nested bootstrap for the correlation
+      coefficient of the ``cd4`` data frame. It is used in a practical
+      in Chapter 5 of Davison and Hinkley (1997).
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.
 
-   ``cd4``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``cd4``

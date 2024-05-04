@@ -1,82 +1,84 @@
 .. container::
 
-   ============ ===============
-   race_justice R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Yahoo! News Race and Justice poll results
-      :name: race_justice
+      ============ ===============
+      race_justice R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Yahoo! News Race and Justice poll results
+         :name: yahoo-news-race-and-justice-poll-results
 
-   Results from a Yahoo! News poll conducted by YouGov on May 29-31,
-   2020. In total 1060 U.S. adults were asked a series of questions
-   regarding race and justice in the wake of the killing of George Floyd
-   by a police officer. Results in this data set are percentages for the
-   question, "Do you think Blacks and Whites receive equal treatment
-   from the police?" For this particular question there were 1059
-   respondents.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Results from a Yahoo! News poll conducted by YouGov on May 29-31,
+      2020. In total 1060 U.S. adults were asked a series of questions
+      regarding race and justice in the wake of the killing of George
+      Floyd by a police officer. Results in this data set are
+      percentages for the question, "Do you think Blacks and Whites
+      receive equal treatment from the police?" For this particular
+      question there were 1059 respondents.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      race_justice
+      ::
 
-   .. rubric:: Format
-      :name: format
+         race_justice
 
-   A data frame with 1,059 rows and 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   race_eth
-      Race/ethnicity of respondent, with levels ``White``, ``Black``,
-      ``Hispanic``, and ``Other``.
+      A data frame with 1,059 rows and 2 variables.
 
-   response
-      Response to the question "Do you think Black and White people
-      receive equal treatment from the police?", with levels ``Yes``,
-      ``No``, and ``⁠Not sure⁠``.
+      race_eth
+         Race/ethnicity of respondent, with levels ``White``, ``Black``,
+         ``Hispanic``, and ``Other``.
 
-   .. rubric:: Source
-      :name: source
+      response
+         Response to the question "Do you think Black and White people
+         receive equal treatment from the police?", with levels ``Yes``,
+         ``No``, and ``⁠Not sure⁠``.
 
-   `Yahoo! News Race and Justice - May 31,
-   2020 <https://docs.cdn.yougov.com/s23agrrx47/20200531_yahoo_race_and_justice_crosstabs.pdf>`__.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      `Yahoo! News Race and Justice - May 31,
+      2020 <https://docs.cdn.yougov.com/s23agrrx47/20200531_yahoo_race_and_justice_crosstabs.pdf>`__.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
-      library(dplyr)
+      ::
 
-      # Conditional probabilities of response for each race/ethnicity
-      race_justice %>%
-        count(race_eth, response) %>%
-        group_by(race_eth) %>%
-        mutate(prop = n / sum(n))
+         library(ggplot2)
+         library(dplyr)
 
-      # Stacked bar plot of counts
-      ggplot(race_justice, aes(x = race_eth, fill = response)) +
-        geom_bar() +
-        labs(
-          x = "Race / ethnicity",
-          y = "Count",
-          title = "Do you think Black and White people receive
-      equal treatment from the police?",
-          fill = "Response"
-        )
+         # Conditional probabilities of response for each race/ethnicity
+         race_justice %>%
+           count(race_eth, response) %>%
+           group_by(race_eth) %>%
+           mutate(prop = n / sum(n))
 
-      # Stacked bar plot of proportions
-      ggplot(race_justice, aes(x = race_eth, fill = response)) +
-        geom_bar(position = "fill") +
-        labs(
-          x = "Race / ethnicity",
-          y = "Proportion",
-          title = "Do you think Black and White people receive
-      equal treatment from the police?",
-          fill = "Response"
-        )
+         # Stacked bar plot of counts
+         ggplot(race_justice, aes(x = race_eth, fill = response)) +
+           geom_bar() +
+           labs(
+             x = "Race / ethnicity",
+             y = "Count",
+             title = "Do you think Black and White people receive
+         equal treatment from the police?",
+             fill = "Response"
+           )
+
+         # Stacked bar plot of proportions
+         ggplot(race_justice, aes(x = race_eth, fill = response)) +
+           geom_bar(position = "fill") +
+           labs(
+             x = "Race / ethnicity",
+             y = "Proportion",
+             title = "Do you think Black and White people receive
+         equal treatment from the police?",
+             fill = "Response"
+           )

@@ -1,51 +1,53 @@
 .. container::
 
-   ===== ===============
-   logan R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Data from the 1972-78 GSS data used by Logan
-      :name: logan
+      ===== ===============
+      logan R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data from the 1972-78 GSS data used by Logan
+         :name: data-from-the-1972-78-gss-data-used-by-logan
 
-   Intergenerational occupational mobility data with covariates.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Intergenerational occupational mobility data with covariates.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      logan
-      data(logan, package="survival")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         logan
+         data(logan, package="survival")
 
-   A data frame with 838 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   occupation
-      subject's occupation, a factor with levels ``farm``,
-      ``operatives``, ``craftsmen``, ``sales``, and ``professional``
+      A data frame with 838 observations on the following 4 variables.
 
-   focc
-      father's occupation
+      occupation
+         subject's occupation, a factor with levels ``farm``,
+         ``operatives``, ``craftsmen``, ``sales``, and ``professional``
 
-   education
-      total years of schooling, 0 to 20
+      focc
+         father's occupation
 
-   race
-      levels of ``non-black`` and ``black``
+      education
+         total years of schooling, 0 to 20
 
-   .. rubric:: Source
-      :name: source
+      race
+         levels of ``non-black`` and ``black``
 
-   General Social Survey data, see the web site for detailed information
-   on the variables. https://gss.norc.org/.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      General Social Survey data, see the web site for detailed
+      information on the variables. https://gss.norc.org/.
 
-   Logan, John A. (1983). A Multivariate Model for Mobility Tables.
-   American Journal of Sociology 89: 324-349.
+      .. rubric:: References
+         :name: references
+
+      Logan, John A. (1983). A Multivariate Model for Mobility Tables.
+      American Journal of Sociology 89: 324-349.

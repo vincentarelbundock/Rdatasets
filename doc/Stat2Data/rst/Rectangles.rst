@@ -1,43 +1,46 @@
 .. container::
 
-   ========== ===============
-   Rectangles R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Measurements of Rectangles
-      :name: Rectangles
+      ========== ===============
+      Rectangles R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Measurements of Rectangles
+         :name: measurements-of-rectangles
 
-   Measurements for a hypothetical set of nine rectangles.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Measurements for a hypothetical set of nine rectangles.
 
-   A data frame with 9 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Case``
-      ID number for each rectangle
+      A data frame with 9 observations on the following 5 variables.
 
-   ``Width``
-      Width (1, 4, or 10)
+      ``Case``
+         ID number for each rectangle
 
-   ``Length``
-      Length (1, 4, or 10)
+      ``Width``
+         Width (1, 4, or 10)
 
-   ``Area``
-      Area
+      ``Length``
+         Length (1, 4, or 10)
 
-   ``logArea``
-      Log (base 10) of area
+      ``Area``
+         Area
 
-   .. rubric:: Details
-      :name: details
+      ``logArea``
+         Log (base 10) of area
 
-   Areas for rectangles of width 1, 4, or 10 and length of 1, 4, or 10.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Areas for rectangles of width 1, 4, or 10 and length of 1, 4, or
+      10.
 
-   Areas computed for a hypothetical set of rectangles.
+      .. rubric:: Source
+         :name: source
+
+      Areas computed for a hypothetical set of rectangles.

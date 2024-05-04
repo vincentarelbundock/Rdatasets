@@ -1,110 +1,113 @@
 .. container::
 
-   ======== ===============
-   Grunfeld R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Grunfeld's Investment Data
-      :name: Grunfeld
+      ======== ===============
+      Grunfeld R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Grunfeld's Investment Data
+         :name: grunfelds-investment-data
 
-   A balanced panel of 10 observational units (firms) from 1935 to 1954
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      A balanced panel of 10 observational units (firms) from 1935 to
+      1954
 
-   A data frame containing :
+      .. rubric:: Format
+         :name: format
 
-   firm
-      observation
+      A data frame containing :
 
-   year
-      date
+      firm
+         observation
 
-   inv
-      gross Investment
+      year
+         date
 
-   value
-      value of the firm
+      inv
+         gross Investment
 
-   capital
-      stock of plant and equipment
+      value
+         value of the firm
 
-   .. rubric:: Details
-      :name: details
+      capital
+         stock of plant and equipment
 
-   *total number of observations* : 200
+      .. rubric:: Details
+         :name: details
 
-   *observation* : production units
+      *total number of observations* : 200
 
-   *country* : United States
+      *observation* : production units
 
-   .. rubric:: Note
-      :name: note
+      *country* : United States
 
-   The Grunfeld data as provided in package ``plm`` is the same data as
-   used in Baltagi (2001), see **Examples** below.
+      .. rubric:: Note
+         :name: note
 
-   | NB:
-   | Various versions of the Grunfeld data circulate online. Also,
-     various text books (and also varying among editions) and papers use
-     different subsets of the original Grunfeld data, some of which
-     contain errors in a few data points compared to the original data
-     used by Grunfeld (1958) in his PhD thesis. See Kleiber/Zeileis
-     (2010) and its accompanying website for a comparison of various
-     Grunfeld data sets in use.
+      The Grunfeld data as provided in package ``plm`` is the same data
+      as used in Baltagi (2001), see **Examples** below.
 
-   .. rubric:: Source
-      :name: source
+      | NB:
+      | Various versions of the Grunfeld data circulate online. Also,
+        various text books (and also varying among editions) and papers
+        use different subsets of the original Grunfeld data, some of
+        which contain errors in a few data points compared to the
+        original data used by Grunfeld (1958) in his PhD thesis. See
+        Kleiber/Zeileis (2010) and its accompanying website for a
+        comparison of various Grunfeld data sets in use.
 
-   Online complements to Baltagi (2001):
+      .. rubric:: Source
+         :name: source
 
-   https://www.wiley.com/legacy/wileychi/baltagi/
+      Online complements to Baltagi (2001):
 
-   https://www.wiley.com/legacy/wileychi/baltagi/supp/Grunfeld.fil
+      https://www.wiley.com/legacy/wileychi/baltagi/
 
-   Online complements to Baltagi (2013):
+      https://www.wiley.com/legacy/wileychi/baltagi/supp/Grunfeld.fil
 
-   https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
+      Online complements to Baltagi (2013):
 
-   .. rubric:: References
-      :name: references
+      https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
 
-   Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
-   John Wiley and Sons ltd.
+      .. rubric:: References
+         :name: references
 
-   Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
-   John Wiley and Sons ltd.
+      Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd
+      edition. John Wiley and Sons ltd.
 
-   Grunfeld Y (1958). *The determinants of corporate investment*. Ph.D.
-   thesis, Department of Economics, University of Chicago.
+      Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th
+      edition. John Wiley and Sons ltd.
 
-   Kleiber C, Zeileis A (2010). “The Grunfeld Data at 50.” *German
-   Economic Review*, **11**, 404-417.
-   https://doi.org/10.1111/j.1468-0475.2010.00513.x.
+      Grunfeld Y (1958). *The determinants of corporate investment*.
+      Ph.D. thesis, Department of Economics, University of Chicago.
 
-   website accompanying the paper with various variants of the Grunfeld
-   data: https://www.zeileis.org/grunfeld/.
+      Kleiber C, Zeileis A (2010). “The Grunfeld Data at 50.” *German
+      Economic Review*, **11**, 404-417.
+      https://doi.org/10.1111/j.1468-0475.2010.00513.x.
 
-   .. rubric:: See Also
-      :name: see-also
+      website accompanying the paper with various variants of the
+      Grunfeld data: https://www.zeileis.org/grunfeld/.
 
-   For the complete Grunfeld data (11 firms), see AER::Grunfeld, in the
-   ``AER`` package.
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      For the complete Grunfeld data (11 firms), see AER::Grunfeld, in
+      the ``AER`` package.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## Not run: 
-      # Compare plm's Grunfeld data to Baltagi's (2001) Grunfeld data:
-        data("Grunfeld", package="plm")
-        Grunfeld_baltagi2001 <- read.csv("http://www.wiley.com/legacy/wileychi/
-          baltagi/supp/Grunfeld.fil", sep="", header = FALSE)
-        library(compare)
-        compare::compare(Grunfeld, Grunfeld_baltagi2001, allowAll = T) # same data set
-        
-      ## End(Not run)
+      ::
+
+         ## Not run: 
+         # Compare plm's Grunfeld data to Baltagi's (2001) Grunfeld data:
+           data("Grunfeld", package="plm")
+           Grunfeld_baltagi2001 <- read.csv("http://www.wiley.com/legacy/wileychi/
+             baltagi/supp/Grunfeld.fil", sep="", header = FALSE)
+           library(compare)
+           compare::compare(Grunfeld, Grunfeld_baltagi2001, allowAll = T) # same data set
+           
+         ## End(Not run)

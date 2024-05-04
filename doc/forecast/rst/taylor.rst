@@ -1,46 +1,48 @@
 .. container::
 
-   ====== ===============
-   taylor R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Half-hourly electricity demand
-      :name: taylor
+      ====== ===============
+      taylor R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Half-hourly electricity demand
+         :name: half-hourly-electricity-demand
 
-   Half-hourly electricity demand in England and Wales from Monday 5
-   June 2000 to Sunday 27 August 2000. Discussed in Taylor (2003), and
-   kindly provided by James W Taylor. Units: Megawatts
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Half-hourly electricity demand in England and Wales from Monday 5
+      June 2000 to Sunday 27 August 2000. Discussed in Taylor (2003),
+      and kindly provided by James W Taylor. Units: Megawatts
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      taylor
+      ::
 
-   .. rubric:: Format
-      :name: format
+         taylor
 
-   Time series data
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Time series data
 
-   James W Taylor
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      James W Taylor
 
-   Taylor, J.W. (2003) Short-term electricity demand forecasting using
-   double seasonal exponential smoothing. *Journal of the Operational
-   Research Society*, **54**, 799-805.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Taylor, J.W. (2003) Short-term electricity demand forecasting
+      using double seasonal exponential smoothing. *Journal of the
+      Operational Research Society*, **54**, 799-805.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      plot(taylor)
+      ::
+
+         plot(taylor)

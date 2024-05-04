@@ -1,58 +1,60 @@
 .. container::
 
-   ======== ===============
-   Ginzberg R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Data on Depression
-      :name: Ginzberg
+      ======== ===============
+      Ginzberg R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data on Depression
+         :name: data-on-depression
 
-   The ``Ginzberg`` data frame has 82 rows and 6 columns. The data are
-   for psychiatric patients hospitalized for depression.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Ginzberg`` data frame has 82 rows and 6 columns. The data
+      are for psychiatric patients hospitalized for depression.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Ginzberg
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Ginzberg
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   simplicity
-      Measures subject's need to see the world in black and white.
+      This data frame contains the following columns:
 
-   fatalism
-      Fatalism scale.
+      simplicity
+         Measures subject's need to see the world in black and white.
 
-   depression
-      Beck self-report depression scale.
+      fatalism
+         Fatalism scale.
 
-   adjsimp
-      Adjusted Simplicity: Simplicity adjusted (by regression) for other
-      variables thought to influence depression.
+      depression
+         Beck self-report depression scale.
 
-   adjfatal
-      Adjusted Fatalism.
+      adjsimp
+         Adjusted Simplicity: Simplicity adjusted (by regression) for
+         other variables thought to influence depression.
 
-   adjdep
-      Adjusted Depression.
+      adjfatal
+         Adjusted Fatalism.
 
-   .. rubric:: Source
-      :name: source
+      adjdep
+         Adjusted Depression.
 
-   Personal communication from Georges Monette, Department of
-   Mathematics and Statistics, York University, with the permission of
-   the original investigator.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Personal communication from Georges Monette, Department of
+      Mathematics and Statistics, York University, with the permission
+      of the original investigator.
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
+
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.

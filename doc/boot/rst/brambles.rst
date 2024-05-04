@@ -1,55 +1,57 @@
 .. container::
 
-   ======== ===============
-   brambles R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Spatial Location of Bramble Canes
-      :name: brambles
+      ======== ===============
+      brambles R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Spatial Location of Bramble Canes
+         :name: spatial-location-of-bramble-canes
 
-   The ``brambles`` data frame has 823 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   The location of living bramble canes in a 9m square plot was
-   recorded. We take 9m to be the unit of distance so that the plot can
-   be thought of as a unit square. The bramble canes were also
-   classified by their age.
+      The ``brambles`` data frame has 823 rows and 3 columns.
 
-   .. rubric:: Usage
-      :name: usage
+      The location of living bramble canes in a 9m square plot was
+      recorded. We take 9m to be the unit of distance so that the plot
+      can be thought of as a unit square. The bramble canes were also
+      classified by their age.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      brambles
+      ::
 
-   .. rubric:: Format
-      :name: format
+         brambles
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``x``
-      The x coordinate of the position of the cane in the plot.
+      This data frame contains the following columns:
 
-   ``y``
-      The y coordinate of the position of the cane in the plot.
+      ``x``
+         The x coordinate of the position of the cane in the plot.
 
-   ``age``
-      The age classification of the canes; ``0`` indicates a newly
-      emerged cane, ``1`` indicates a one year old cane and ``2``
-      indicates a two year old cane.
+      ``y``
+         The y coordinate of the position of the cane in the plot.
 
-   .. rubric:: Source
-      :name: source
+      ``age``
+         The age classification of the canes; ``0`` indicates a newly
+         emerged cane, ``1`` indicates a one year old cane and ``2``
+         indicates a two year old cane.
 
-   The data were obtained from
+      .. rubric:: Source
+         :name: source
 
-   Diggle, P.J. (1983) *Statistical Analysis of Spatial Point Patterns*.
-   Academic Press.
+      The data were obtained from
 
-   .. rubric:: References
-      :name: references
+      Diggle, P.J. (1983) *Statistical Analysis of Spatial Point
+      Patterns*. Academic Press.
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
+
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.

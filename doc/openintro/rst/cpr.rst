@@ -1,48 +1,50 @@
 .. container::
 
-   === ===============
-   cpr R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: CPR data set
-      :name: cpr
+      === ===============
+      cpr R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: CPR data set
+         :name: cpr-data-set
 
-   These patients were randomly divided into a treatment group where
-   they received a blood thinner or the control group where they did not
-   receive a blood thinner. The outcome variable of interest was whether
-   the patients survived for at least 24 hours.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These patients were randomly divided into a treatment group where
+      they received a blood thinner or the control group where they did
+      not receive a blood thinner. The outcome variable of interest was
+      whether the patients survived for at least 24 hours.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      cpr
+      ::
 
-   .. rubric:: Format
-      :name: format
+         cpr
 
-   A data frame with 90 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   group
-      a factor with levels ``control`` and ``treatment``
+      A data frame with 90 observations on the following 2 variables.
 
-   outcome
-      a factor with levels ``died`` and ``survived``
+      group
+         a factor with levels ``control`` and ``treatment``
 
-   .. rubric:: Source
-      :name: source
+      outcome
+         a factor with levels ``died`` and ``survived``
 
-   Efficacy and safety of thrombolytic therapy after initially
-   unsuccessful cardiopulmonary resuscitation: a prospective clinical
-   trial, by Bottiger et al., The Lancet, 2001.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Efficacy and safety of thrombolytic therapy after initially
+      unsuccessful cardiopulmonary resuscitation: a prospective clinical
+      trial, by Bottiger et al., The Lancet, 2001.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      table(cpr)
+      ::
+
+         table(cpr)

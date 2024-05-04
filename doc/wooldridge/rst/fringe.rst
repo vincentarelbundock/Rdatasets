@@ -1,139 +1,142 @@
 .. container::
 
-   ====== ===============
-   fringe R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: fringe
-      :name: fringe
+      ====== ===============
+      fringe R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: fringe
+         :name: fringe
 
-   Wooldridge Source: F. Vella (1993), “A Simple Estimator for
-   Simultaneous Models with Censored Endogenous Regressors,”
-   International Economic Review 34, 441-457. Professor Vella kindly
-   provided the data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: F. Vella (1993), “A Simple Estimator for
+      Simultaneous Models with Censored Endogenous Regressors,”
+      International Economic Review 34, 441-457. Professor Vella kindly
+      provided the data. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('fringe')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('fringe')
 
-   A data.frame with 616 observations on 39 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **annearn:** annual earnings, $
+      A data.frame with 616 observations on 39 variables:
 
-   -  **hrearn:** hourly earnings, $
+      -  **annearn:** annual earnings, $
 
-   -  **exper:** years work experience
+      -  **hrearn:** hourly earnings, $
 
-   -  **age:** age in years
+      -  **exper:** years work experience
 
-   -  **depends:** number of dependents
+      -  **age:** age in years
 
-   -  **married:** =1 if married
+      -  **depends:** number of dependents
 
-   -  **tenure:** years with current employer
+      -  **married:** =1 if married
 
-   -  **educ:** years schooling
+      -  **tenure:** years with current employer
 
-   -  **nrtheast:** =1 if live in northeast
+      -  **educ:** years schooling
 
-   -  **nrthcen:** =1 if live in north central
+      -  **nrtheast:** =1 if live in northeast
 
-   -  **south:** =1 if live in south
+      -  **nrthcen:** =1 if live in north central
 
-   -  **male:** =1 if male
+      -  **south:** =1 if live in south
 
-   -  **white:** =1 if white
+      -  **male:** =1 if male
 
-   -  **union:** =1 if union member
+      -  **white:** =1 if white
 
-   -  **office:**
+      -  **union:** =1 if union member
 
-   -  **annhrs:** annual hours worked
+      -  **office:**
 
-   -  **ind1:** industry dummy
+      -  **annhrs:** annual hours worked
 
-   -  **ind2:**
+      -  **ind1:** industry dummy
 
-   -  **ind3:**
+      -  **ind2:**
 
-   -  **ind4:**
+      -  **ind3:**
 
-   -  **ind5:**
+      -  **ind4:**
 
-   -  **ind6:**
+      -  **ind5:**
 
-   -  **ind7:**
+      -  **ind6:**
 
-   -  **ind8:**
+      -  **ind7:**
 
-   -  **ind9:**
+      -  **ind8:**
 
-   -  **vacdays:** $ value of vac. days
+      -  **ind9:**
 
-   -  **sicklve:** $ value of sick leave
+      -  **vacdays:** $ value of vac. days
 
-   -  **insur:** $ value of employee insur
+      -  **sicklve:** $ value of sick leave
 
-   -  **pension:** $ value of employee pension
+      -  **insur:** $ value of employee insur
 
-   -  **annbens:** vacdays+sicklve+insur+pension
+      -  **pension:** $ value of employee pension
 
-   -  **hrbens:** hourly benefits, $
+      -  **annbens:** vacdays+sicklve+insur+pension
 
-   -  **annhrssq:** annhrs^2
+      -  **hrbens:** hourly benefits, $
 
-   -  **beratio:** annbens/annearn
+      -  **annhrssq:** annhrs^2
 
-   -  **lannhrs:** log(annhrs)
+      -  **beratio:** annbens/annearn
 
-   -  **tenuresq:** tenure^2
+      -  **lannhrs:** log(annhrs)
 
-   -  **expersq:** exper^2
+      -  **tenuresq:** tenure^2
 
-   -  **lannearn:** log(annearn)
+      -  **expersq:** exper^2
 
-   -  **peratio:** pension/annearn
+      -  **lannearn:** log(annearn)
 
-   -  **vserat:** (vacdays+sicklve)/annearn
+      -  **peratio:** pension/annearn
 
-   .. rubric:: Notes
-      :name: notes
+      -  **vserat:** (vacdays+sicklve)/annearn
 
-   Currently, this data set is used in only one Computer Exercise – to
-   illustrate the Tobit model. It can be used much earlier. First, one
-   could just ignore the pileup at zero and use a linear model where any
-   of the hourly benefit measures is the dependent variable. Another
-   possibility is to use this data set for a problem set in Chapter 4,
-   after students have read Example 4.10. That example, which uses
-   teacher salary/benefit data at the school level, finds the expected
-   tradeoff, although it appears to less than one-to-one. By contrast,
-   if you do a similar analysis with FRINGE.RAW, you will not find a
-   tradeoff. A positive coefficient on the benefit/salary ratio is not
-   too surprising because we probably cannot control for enough factors,
-   especially when looking across different occupations. The Michigan
-   school-level data is more aggregated than one would like, but it does
-   restrict attention to a more homogeneous group: high school teachers
-   in Michigan.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: page 624-625
+      Currently, this data set is used in only one Computer Exercise –
+      to illustrate the Tobit model. It can be used much earlier. First,
+      one could just ignore the pileup at zero and use a linear model
+      where any of the hourly benefit measures is the dependent
+      variable. Another possibility is to use this data set for a
+      problem set in Chapter 4, after students have read Example 4.10.
+      That example, which uses teacher salary/benefit data at the school
+      level, finds the expected tradeoff, although it appears to less
+      than one-to-one. By contrast, if you do a similar analysis with
+      FRINGE.RAW, you will not find a tradeoff. A positive coefficient
+      on the benefit/salary ratio is not too surprising because we
+      probably cannot control for enough factors, especially when
+      looking across different occupations. The Michigan school-level
+      data is more aggregated than one would like, but it does restrict
+      attention to a more homogeneous group: high school teachers in
+      Michigan.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: page 624-625
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(fringe)
+      ::
+
+          str(fringe)

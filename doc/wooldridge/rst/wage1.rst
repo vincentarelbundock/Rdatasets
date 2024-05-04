@@ -1,101 +1,104 @@
 .. container::
 
-   ===== ===============
-   wage1 R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: wage1
-      :name: wage1
+      ===== ===============
+      wage1 R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: wage1
+         :name: wage1
 
-   Wooldridge Source: These are data from the 1976 Current Population
-   Survey, collected by Henry Farber when he and I were colleagues at
-   MIT in 1988. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: These are data from the 1976 Current Population
+      Survey, collected by Henry Farber when he and I were colleagues at
+      MIT in 1988. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('wage1')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('wage1')
 
-   A data.frame with 526 observations on 24 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **wage:** average hourly earnings
+      A data.frame with 526 observations on 24 variables:
 
-   -  **educ:** years of education
+      -  **wage:** average hourly earnings
 
-   -  **exper:** years potential experience
+      -  **educ:** years of education
 
-   -  **tenure:** years with current employer
+      -  **exper:** years potential experience
 
-   -  **nonwhite:** =1 if nonwhite
+      -  **tenure:** years with current employer
 
-   -  **female:** =1 if female
+      -  **nonwhite:** =1 if nonwhite
 
-   -  **married:** =1 if married
+      -  **female:** =1 if female
 
-   -  **numdep:** number of dependents
+      -  **married:** =1 if married
 
-   -  **smsa:** =1 if live in SMSA
+      -  **numdep:** number of dependents
 
-   -  **northcen:** =1 if live in north central U.S
+      -  **smsa:** =1 if live in SMSA
 
-   -  **south:** =1 if live in southern region
+      -  **northcen:** =1 if live in north central U.S
 
-   -  **west:** =1 if live in western region
+      -  **south:** =1 if live in southern region
 
-   -  **construc:** =1 if work in construc. indus.
+      -  **west:** =1 if live in western region
 
-   -  **ndurman:** =1 if in nondur. manuf. indus.
+      -  **construc:** =1 if work in construc. indus.
 
-   -  **trcommpu:** =1 if in trans, commun, pub ut
+      -  **ndurman:** =1 if in nondur. manuf. indus.
 
-   -  **trade:** =1 if in wholesale or retail
+      -  **trcommpu:** =1 if in trans, commun, pub ut
 
-   -  **services:** =1 if in services indus.
+      -  **trade:** =1 if in wholesale or retail
 
-   -  **profserv:** =1 if in prof. serv. indus.
+      -  **services:** =1 if in services indus.
 
-   -  **profocc:** =1 if in profess. occupation
+      -  **profserv:** =1 if in prof. serv. indus.
 
-   -  **clerocc:** =1 if in clerical occupation
+      -  **profocc:** =1 if in profess. occupation
 
-   -  **servocc:** =1 if in service occupation
+      -  **clerocc:** =1 if in clerical occupation
 
-   -  **lwage:** log(wage)
+      -  **servocc:** =1 if in service occupation
 
-   -  **expersq:** exper^2
+      -  **lwage:** log(wage)
 
-   -  **tenursq:** tenure^2
+      -  **expersq:** exper^2
 
-   .. rubric:: Notes
-      :name: notes
+      -  **tenursq:** tenure^2
 
-   Barry Murphy, of the University of Portsmouth in the UK, has pointed
-   out that for several observations the values for exper and tenure are
-   in logical conflict. In particular, for some workers the number of
-   years with current employer (tenure) is greater than overall work
-   experience (exper). At least some of these conflicts are due to the
-   definition of exper as “potential” work experience, but probably not
-   all. Nevertheless, I am using the data set as it was supplied to me.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 7, 17, 33-34, 37, 76, 91, 125, 183, 194-195, 220,
-   231, 234, 235-236, 240-241, 243-244, 263, 272, 326, 678
+      Barry Murphy, of the University of Portsmouth in the UK, has
+      pointed out that for several observations the values for exper and
+      tenure are in logical conflict. In particular, for some workers
+      the number of years with current employer (tenure) is greater than
+      overall work experience (exper). At least some of these conflicts
+      are due to the definition of exper as “potential” work experience,
+      but probably not all. Nevertheless, I am using the data set as it
+      was supplied to me.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 7, 17, 33-34, 37, 76, 91, 125, 183, 194-195,
+      220, 231, 234, 235-236, 240-241, 243-244, 263, 272, 326, 678
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(wage1)
+      ::
+
+          str(wage1)

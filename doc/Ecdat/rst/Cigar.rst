@@ -1,84 +1,86 @@
 .. container::
 
-   ===== ===============
-   Cigar R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Cigarette Consumption
-      :name: Cigar
+      ===== ===============
+      Cigar R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cigarette Consumption
+         :name: cigarette-consumption
 
-   a panel of 46 observations from 1963 to 1992
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 1380
+      a panel of 46 observations from 1963 to 1992
 
-   *observation* : regional
+      *number of observations* : 1380
 
-   *country* : United States
+      *observation* : regional
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Cigar)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Cigar)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   state
-      state abbreviation
+      A dataframe containing :
 
-   year
-      the year
+      state
+         state abbreviation
 
-   price
-      price per pack of cigarettes
+      year
+         the year
 
-   pop
-      population
+      price
+         price per pack of cigarettes
 
-   pop16
-      population above the age of 16
+      pop
+         population
 
-   cpi
-      consumer price index (1983=100)
+      pop16
+         population above the age of 16
 
-   ndi
-      per capita disposable income
+      cpi
+         consumer price index (1983=100)
 
-   sales
-      cigarette sales in packs per capita
+      ndi
+         per capita disposable income
 
-   pimin
-      minimum price in adjoining states per pack of cigarettes
+      sales
+         cigarette sales in packs per capita
 
-   .. rubric:: Source
-      :name: source
+      pimin
+         minimum price in adjoining states per pack of cigarettes
 
-   Baltagi, B.H. and D. Levin (1992) “Cigarette taxation: raising
-   revenues and reducing consumption”, *Structural Changes and Economic
-   Dynamics*, **3**, 321–335.
+      .. rubric:: Source
+         :name: source
 
-   Baltagi, B.H., J.M. Griffin and W. Xiong (2000) “To pool or not to
-   pool: homogeneous versus heterogeneous estimators applied to
-   cigarette demand”, *Review of Economics and Statistics*, **82**,
-   117–126.
+      Baltagi, B.H. and D. Levin (1992) “Cigarette taxation: raising
+      revenues and reducing consumption”, *Structural Changes and
+      Economic Dynamics*, **3**, 321–335.
 
-   .. rubric:: References
-      :name: references
+      Baltagi, B.H., J.M. Griffin and W. Xiong (2000) “To pool or not to
+      pool: homogeneous versus heterogeneous estimators applied to
+      cigarette demand”, *Review of Economics and Statistics*, **82**,
+      117–126.
 
-   Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John
-   Wiley and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John
+      Wiley and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

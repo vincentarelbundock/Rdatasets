@@ -1,85 +1,89 @@
 .. container::
 
-   ==== ===============
-   soup R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Discrimination study of packet soup
-      :name: soup
+      ==== ===============
+      soup R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Discrimination study of packet soup
+         :name: discrimination-study-of-packet-soup
 
-   The ``soup`` data frame has 1847 rows and 13 variables. 185
-   respondents participated in an A-not A discrimination test with
-   sureness. Before experimentation the respondents were familiarized
-   with the reference product and during experimentation, the
-   respondents were asked to rate samples on an ordered scale with six
-   categories given by combinations of (reference, not reference) and
-   (sure, not sure, guess) from 'referene, sure' = 1 to 'not reference,
-   sure' = 6.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``soup`` data frame has 1847 rows and 13 variables. 185
+      respondents participated in an A-not A discrimination test with
+      sureness. Before experimentation the respondents were familiarized
+      with the reference product and during experimentation, the
+      respondents were asked to rate samples on an ordered scale with
+      six categories given by combinations of (reference, not reference)
+      and (sure, not sure, guess) from 'referene, sure' = 1 to 'not
+      reference, sure' = 6.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      soup
+      ::
 
-   .. rubric:: Format
-      :name: format
+         soup
 
-   ``RESP``
-      factor with 185 levels: the respondents in the study.
+      .. rubric:: Format
+         :name: format
 
-   ``PROD``
-      factor with 2 levels: index reference and test products.
+      ``RESP``
+         factor with 185 levels: the respondents in the study.
 
-   ``PRODID``
-      factor with 6 levels: index reference and the five test product
-      variants.
+      ``PROD``
+         factor with 2 levels: index reference and test products.
 
-   ``SURENESS``
-      ordered factor with 6 levels: the respondents ratings of soup
-      samples.
+      ``PRODID``
+         factor with 6 levels: index reference and the five test product
+         variants.
 
-   ``DAY``
-      factor with two levels: experimentation was split over two days.
+      ``SURENESS``
+         ordered factor with 6 levels: the respondents ratings of soup
+         samples.
 
-   ``SOUPTYPE``
-      factor with three levels: the type of soup regularly consumed by
-      the respondent.
+      ``DAY``
+         factor with two levels: experimentation was split over two
+         days.
 
-   ``SOUPFREQ``
-      factor with 3 levels: the frequency with which the respondent
-      consumes soup.
+      ``SOUPTYPE``
+         factor with three levels: the type of soup regularly consumed
+         by the respondent.
 
-   ``COLD``
-      factor with two levels: does the respondent have a cold?
+      ``SOUPFREQ``
+         factor with 3 levels: the frequency with which the respondent
+         consumes soup.
 
-   ``EASY``
-      factor with ten levels: How easy did the respondent find the
-      discrimation test? 1 = difficult, 10 = easy.
+      ``COLD``
+         factor with two levels: does the respondent have a cold?
 
-   ``GENDER``
-      factor with two levels: gender of the respondent.
+      ``EASY``
+         factor with ten levels: How easy did the respondent find the
+         discrimation test? 1 = difficult, 10 = easy.
 
-   ``AGEGROUP``
-      factor with four levels: the age of the respondent.
+      ``GENDER``
+         factor with two levels: gender of the respondent.
 
-   ``LOCATION``
-      factor with three levels: three different locations where
-      experimentation took place.
+      ``AGEGROUP``
+         factor with four levels: the age of the respondent.
 
-   .. rubric:: Source
-      :name: source
+      ``LOCATION``
+         factor with three levels: three different locations where
+         experimentation took place.
 
-   Data are produced by Unilever Research. Permission to publish the
-   data is granted.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Data are produced by Unilever Research. Permission to publish the
+      data is granted.
 
-   Christensen, R. H. B., Cleaver, G. and Brockhoff, P. B.(2011)
-   Statistical and Thurstonian models for the A-not A protocol with and
-   without sureness. *Food Quality and Preference, 22*, pp. 542-549.
+      .. rubric:: References
+         :name: references
+
+      Christensen, R. H. B., Cleaver, G. and Brockhoff, P. B.(2011)
+      Statistical and Thurstonian models for the A-not A protocol with
+      and without sureness. *Food Quality and Preference, 22*, pp.
+      542-549.

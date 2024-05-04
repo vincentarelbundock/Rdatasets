@@ -1,38 +1,40 @@
 .. container::
 
-   ======== ===============
-   woolyrnq R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Quarterly production of woollen yarn in Australia
-      :name: woolyrnq
+      ======== ===============
+      woolyrnq R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Quarterly production of woollen yarn in Australia
+         :name: quarterly-production-of-woollen-yarn-in-australia
 
-   Quarterly production of woollen yarn in Australia: tonnes. Mar 1965 –
-   Sep 1994.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Quarterly production of woollen yarn in Australia: tonnes. Mar
+      1965 – Sep 1994.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      woolyrnq
+      ::
 
-   .. rubric:: Format
-      :name: format
+         woolyrnq
 
-   Time series data
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Time series data
 
-   Time Series Data Library. https://pkg.yangzhuoranyang.com/tsdl/
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Time Series Data Library. https://pkg.yangzhuoranyang.com/tsdl/
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      tsdisplay(woolyrnq)
+      ::
+
+         tsdisplay(woolyrnq)

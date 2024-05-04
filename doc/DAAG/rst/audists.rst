@@ -1,48 +1,51 @@
 .. container::
 
-   ======= ===============
-   audists R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Road distances between 10 Australian cities
-      :name: audists
+      ======= ===============
+      audists R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Road distances between 10 Australian cities
+         :name: road-distances-between-10-australian-cities
 
-   Distances between the Australian cities of Adelaide, Alice, Brisbane,
-   Broome, Cairns, Canberra, Darwin, Melbourne, Perth and Sydney
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Distances between the Australian cities of Adelaide, Alice,
+      Brisbane, Broome, Cairns, Canberra, Darwin, Melbourne, Perth and
+      Sydney
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      audists
+      ::
 
-   .. rubric:: Format
-      :name: format
+         audists
 
-   The format is: Class 'dist', i.e., a distance matrix.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      The format is: Class 'dist', i.e., a distance matrix.
 
-   Australian road map
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Australian road map
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(audists)
-      ## Not run: 
-      audists.cmd <- cmdscale(audists)
-      library(lattice)
-      xyplot(audists.cmd[,2] ~ audists.cmd[,1], 
-             groups=row.names(audists.cmd),
-             panel = function(x, y, subscripts, groups)  
-                              ltext(x = x, y = y, label = groups[subscripts],
-                              cex=1, fontfamily = "HersheySans"))
+      ::
 
-      ## End(Not run)
+         data(audists)
+         ## Not run: 
+         audists.cmd <- cmdscale(audists)
+         library(lattice)
+         xyplot(audists.cmd[,2] ~ audists.cmd[,1], 
+                groups=row.names(audists.cmd),
+                panel = function(x, y, subscripts, groups)  
+                                 ltext(x = x, y = y, label = groups[subscripts],
+                                 cex=1, fontfamily = "HersheySans"))
+
+         ## End(Not run)

@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>SiegelsEx</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='SiegelsEx'>Siegel's Exact Fit Example Data</h2>
+<h2>Siegel's Exact Fit Example Data</h2>
 
 <h3>Description</h3>
 
@@ -68,6 +68,7 @@ abline(MASS::lqs(y ~ x, data = SiegelsEx, method = "lms"), col = 2)
 legend("topright", leg = c("lm", "LMS"), col=1:2, lwd=1, inset = 1/20)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>
