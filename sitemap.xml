@@ -3580,6 +3580,9 @@
     <loc>/doc/dslabs/mice_weights.html</loc>
   </url>
   <url>
+    <loc>/doc/dslabs/mnist_127.html</loc>
+  </url>
+  <url>
     <loc>/doc/dslabs/mnist_27.html</loc>
   </url>
   <url>
@@ -3613,6 +3616,9 @@
     <loc>/doc/dslabs/polls_us_election_2016.html</loc>
   </url>
   <url>
+    <loc>/doc/dslabs/pr_death_counts.html</loc>
+  </url>
+  <url>
     <loc>/doc/dslabs/raw_data_research_funding_rates.html</loc>
   </url>
   <url>
@@ -3623,6 +3629,9 @@
   </url>
   <url>
     <loc>/doc/dslabs/results_us_election_2016.html</loc>
+  </url>
+  <url>
+    <loc>/doc/dslabs/sentiment_counts.html</loc>
   </url>
   <url>
     <loc>/doc/dslabs/stars.html</loc>
@@ -3931,6 +3940,9 @@
     <loc>/doc/ggplot2movies/movies.html</loc>
   </url>
   <url>
+    <loc>/doc/gt/constants.html</loc>
+  </url>
+  <url>
     <loc>/doc/gt/countrypops.html</loc>
   </url>
   <url>
@@ -3938,6 +3950,9 @@
   </url>
   <url>
     <loc>/doc/gt/gtcars.html</loc>
+  </url>
+  <url>
+    <loc>/doc/gt/illness.html</loc>
   </url>
   <url>
     <loc>/doc/gt/metro.html</loc>
@@ -3997,6 +4012,9 @@
     <loc>/doc/heplots/Oslo.html</loc>
   </url>
   <url>
+    <loc>/doc/heplots/Overdose.html</loc>
+  </url>
+  <url>
     <loc>/doc/heplots/Parenting.html</loc>
   </url>
   <url>
@@ -4046,6 +4064,9 @@
   </url>
   <url>
     <loc>/doc/heplots/mathscore.html</loc>
+  </url>
+  <url>
+    <loc>/doc/heplots/peng.html</loc>
   </url>
   <url>
     <loc>/doc/heplots/schooldata.html</loc>
@@ -4295,6 +4316,9 @@
   </url>
   <url>
     <loc>/doc/modeldata/crickets.html</loc>
+  </url>
+  <url>
+    <loc>/doc/modeldata/deliveries.html</loc>
   </url>
   <url>
     <loc>/doc/modeldata/drinks.html</loc>
@@ -5806,6 +5830,12 @@
     <loc>/doc/stevedata/CP77.html</loc>
   </url>
   <url>
+    <loc>/doc/stevedata/DAPO.html</loc>
+  </url>
+  <url>
+    <loc>/doc/stevedata/DCE12.html</loc>
+  </url>
+  <url>
     <loc>/doc/stevedata/DJIA.html</loc>
   </url>
   <url>
@@ -5818,6 +5848,9 @@
     <loc>/doc/stevedata/Dee04.html</loc>
   </url>
   <url>
+    <loc>/doc/stevedata/EBJ.html</loc>
+  </url>
+  <url>
     <loc>/doc/stevedata/ESS10NO.html</loc>
   </url>
   <url>
@@ -5825,6 +5858,9 @@
   </url>
   <url>
     <loc>/doc/stevedata/ESSBE5.html</loc>
+  </url>
+  <url>
+    <loc>/doc/stevedata/GHR04.html</loc>
   </url>
   <url>
     <loc>/doc/stevedata/Guber99.html</loc>
@@ -5837,6 +5873,9 @@
   </url>
   <url>
     <loc>/doc/stevedata/LTWT.html</loc>
+  </url>
+  <url>
+    <loc>/doc/stevedata/Lipset59.html</loc>
   </url>
   <url>
     <loc>/doc/stevedata/Newhouse77.html</loc>
@@ -5867,6 +5906,9 @@
   </url>
   <url>
     <loc>/doc/stevedata/af_crime93.html</loc>
+  </url>
+  <url>
+    <loc>/doc/stevedata/african_coups.html</loc>
   </url>
   <url>
     <loc>/doc/stevedata/aluminum_premiums.html</loc>
@@ -5980,10 +6022,16 @@
     <loc>/doc/stevedata/recessions.html</loc>
   </url>
   <url>
+    <loc>/doc/stevedata/scb_regions.html</loc>
+  </url>
+  <url>
     <loc>/doc/stevedata/sealevels.html</loc>
   </url>
   <url>
     <loc>/doc/stevedata/so2concentrations.html</loc>
+  </url>
+  <url>
+    <loc>/doc/stevedata/states_war.html</loc>
   </url>
   <url>
     <loc>/doc/stevedata/steves_clothes.html</loc>
