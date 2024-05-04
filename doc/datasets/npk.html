@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>npk</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='npk'>
+<h2>
 Classical N, P, K Factorial Experiment
 </h2>
 
@@ -24,7 +24,7 @@ Classical N, P, K Factorial Experiment
 
 <p>A classical N, P, K (nitrogen, phosphate, potassium) factorial
 experiment on the growth of peas conducted on 6 blocks. Each half of a
-fractional factorial design confounding the NPK interaction was used
+fractional factorial design confounding the <abbr>NPK</abbr> interaction was used
 on 3 of the plots.
 </p>
 
@@ -93,6 +93,7 @@ se.contrast(npk.aov1, list(N=="0", N=="1"), data = npk)
 model.tables(npk.aov1, type = "means", se = TRUE)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

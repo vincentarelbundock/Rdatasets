@@ -1,75 +1,77 @@
 .. container::
 
-   ======= ===============
-   ceosal2 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: ceosal2
-      :name: ceosal2
+      ======= ===============
+      ceosal2 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: ceosal2
+         :name: ceosal2
 
-   Wooldridge Source: See CEOSAL1.RAW Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: See CEOSAL1.RAW Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('ceosal2')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('ceosal2')
 
-   A data.frame with 177 observations on 15 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **salary:** 1990 compensation, $1000s
+      A data.frame with 177 observations on 15 variables:
 
-   -  **age:** in years
+      -  **salary:** 1990 compensation, $1000s
 
-   -  **college:** =1 if attended college
+      -  **age:** in years
 
-   -  **grad:** =1 if attended graduate school
+      -  **college:** =1 if attended college
 
-   -  **comten:** years with company
+      -  **grad:** =1 if attended graduate school
 
-   -  **ceoten:** years as ceo with company
+      -  **comten:** years with company
 
-   -  **sales:** 1990 firm sales, millions
+      -  **ceoten:** years as ceo with company
 
-   -  **profits:** 1990 profits, millions
+      -  **sales:** 1990 firm sales, millions
 
-   -  **mktval:** market value, end 1990, mills.
+      -  **profits:** 1990 profits, millions
 
-   -  **lsalary:** log(salary)
+      -  **mktval:** market value, end 1990, mills.
 
-   -  **lsales:** log(sales)
+      -  **lsalary:** log(salary)
 
-   -  **lmktval:** log(mktval)
+      -  **lsales:** log(sales)
 
-   -  **comtensq:** comten^2
+      -  **lmktval:** log(mktval)
 
-   -  **ceotensq:** ceoten^2
+      -  **comtensq:** comten^2
 
-   -  **profmarg:** profits as percent of sales
+      -  **ceotensq:** ceoten^2
 
-   .. rubric:: Notes
-      :name: notes
+      -  **profmarg:** profits as percent of sales
 
-   Compared with CEOSAL1.RAW, in this CEO data set more information
-   about the CEO, rather than about the company, is included.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 64, 111, 163, 214, 335, 699
+      Compared with CEOSAL1.RAW, in this CEO data set more information
+      about the CEO, rather than about the company, is included.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 64, 111, 163, 214, 335, 699
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(ceosal2)
+      ::
+
+          str(ceosal2)

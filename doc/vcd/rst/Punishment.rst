@@ -1,75 +1,80 @@
 .. container::
 
-   ========== ===============
-   Punishment R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Corporal Punishment Data
-      :name: Punishment
+      ========== ===============
+      Punishment R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Corporal Punishment Data
+         :name: corporal-punishment-data
 
-   Data from a study of the Gallup Institute in Denmark in 1979 about
-   the attitude of a random sample of 1,456 persons towards corporal
-   punishment of children.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from a study of the Gallup Institute in Denmark in 1979 about
+      the attitude of a random sample of 1,456 persons towards corporal
+      punishment of children.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Punishment")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Punishment")
 
-   A data frame with 36 observations and 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   Freq
-      frequency.
+      A data frame with 36 observations and 5 variables.
 
-   attitude
-      factor indicating attitude: (no, moderate) punishment of children.
+      Freq
+         frequency.
 
-   memory
-      factor indicating whether the person had memories of corporal
-      punishment as a child (yes, no).
+      attitude
+         factor indicating attitude: (no, moderate) punishment of
+         children.
 
-   education
-      factor indicating highest level of education (elementary,
-      secondary, high).
+      memory
+         factor indicating whether the person had memories of corporal
+         punishment as a child (yes, no).
 
-   age
-      factor indicating age group in years (15-24, 25-39, 40-).
+      education
+         factor indicating highest level of education (elementary,
+         secondary, high).
 
-   .. rubric:: Note
-      :name: note
+      age
+         factor indicating age group in years (15-24, 25-39, 40-).
 
-   Anderson (1991) erroneously indicates the total sum of respondents to
-   be 783.
+      .. rubric:: Note
+         :name: note
 
-   .. rubric:: Source
-      :name: source
+      Anderson (1991) erroneously indicates the total sum of respondents
+      to be 783.
 
-   E. B. Andersen (1991), The Statistical Analysis of Categorical Data,
-   pages 207–208.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      E. B. Andersen (1991), The Statistical Analysis of Categorical
+      Data, pages 207–208.
 
-   E. B. Andersen (1991), *The Statistical Analysis of Categorical
-   Data*. 2nd edition. Springer-Verlag, Berlin.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      E. B. Andersen (1991), *The Statistical Analysis of Categorical
+      Data*. 2nd edition. Springer-Verlag, Berlin.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("Punishment", package = "vcd")
-      pun <- xtabs(Freq ~ memory + attitude + age + education, data = Punishment)
+      ::
 
-      ## model: ~ (memory + attitude) * age * education
-      ## use maximum sum-of-squares test/shading
-      cotabplot(~ memory + attitude | age + education, data = pun, panel = cotab_coindep,
-        n = 5000, type = "assoc", test = "maxchisq", interpolate = 1:2)
+         data("Punishment", package = "vcd")
+         pun <- xtabs(Freq ~ memory + attitude + age + education, data = Punishment)
+
+         ## model: ~ (memory + attitude) * age * education
+         ## use maximum sum-of-squares test/shading
+
+         cotabplot(~ memory + attitude | age + education, data = pun,
+                   panel = cotab_coindep, panel_args = list( 
+           n = 5000, type = "assoc", test = "maxchisq", interpolate = 1:2))

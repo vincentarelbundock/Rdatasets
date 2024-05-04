@@ -1,89 +1,92 @@
 .. container::
 
-   ======= ===============
-   Housing R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Sales Prices of Houses in the City of Windsor
-      :name: Housing
+      ======= ===============
+      Housing R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sales Prices of Houses in the City of Windsor
+         :name: sales-prices-of-houses-in-the-city-of-windsor
 
-   a cross-section from 1987
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 546
+      a cross-section from 1987
 
-   *observation* : goods
+      *number of observations* : 546
 
-   *country* : Canada
+      *observation* : goods
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Canada
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Housing)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Housing)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   price
-      sale price of a house
+      A dataframe containing :
 
-   lotsize
-      the lot size of a property in square feet
+      price
+         sale price of a house
 
-   bedrooms
-      number of bedrooms
+      lotsize
+         the lot size of a property in square feet
 
-   bathrms
-      number of full bathrooms
+      bedrooms
+         number of bedrooms
 
-   stories
-      number of stories excluding basement
+      bathrms
+         number of full bathrooms
 
-   driveway
-      does the house has a driveway ?
+      stories
+         number of stories excluding basement
 
-   recroom
-      does the house has a recreational room ?
+      driveway
+         does the house has a driveway ?
 
-   fullbase
-      does the house has a full finished basement ?
+      recroom
+         does the house has a recreational room ?
 
-   gashw
-      does the house uses gas for hot water heating ?
+      fullbase
+         does the house has a full finished basement ?
 
-   airco
-      does the house has central air conditioning ?
+      gashw
+         does the house uses gas for hot water heating ?
 
-   garagepl
-      number of garage places
+      airco
+         does the house has central air conditioning ?
 
-   prefarea
-      is the house located in the preferred neighbourhood of the city ?
+      garagepl
+         number of garage places
 
-   .. rubric:: Source
-      :name: source
+      prefarea
+         is the house located in the preferred neighbourhood of the city
+         ?
 
-   Anglin, P.M. and R. Gencay (1996) “Semiparametric estimation of a
-   hedonic price function”, *Journal of Applied Econometrics*,
-   **11(6)**, 633-648.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Anglin, P.M. and R. Gencay (1996) “Semiparametric estimation of a
+      hedonic price function”, *Journal of Applied Econometrics*,
+      **11(6)**, 633-648.
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons, chapter 3.
+      .. rubric:: References
+         :name: references
 
-   Journal of Applied Econometrics data archive :
-   http://qed.econ.queensu.ca/jae/.
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons, chapter 3.
 
-   .. rubric:: See Also
-      :name: see-also
+      Journal of Applied Econometrics data archive :
+      http://qed.econ.queensu.ca/jae/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

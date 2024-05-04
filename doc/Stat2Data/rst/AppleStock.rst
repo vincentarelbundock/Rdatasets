@@ -1,44 +1,46 @@
 .. container::
 
-   ========== ===============
-   AppleStock R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Daily Price and Volume of Apple Stock
-      :name: AppleStock
+      ========== ===============
+      AppleStock R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Daily Price and Volume of Apple Stock
+         :name: daily-price-and-volume-of-apple-stock
 
-   Daily prices and trading volume of Apple stock from July 21st to
-   August 21st in 2016
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Daily prices and trading volume of Apple stock from July 21st to
+      August 21st in 2016
 
-   A data frame with 66 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Date``
-      Date as mm/dd/yyyy
+      A data frame with 66 observations on the following 4 variables.
 
-   ``Price``
-      Closing price of Apple stock
+      ``Date``
+         Date as mm/dd/yyyy
 
-   ``Change``
-      Change in price from previous day
+      ``Price``
+         Closing price of Apple stock
 
-   ``Volume``
-      Number of shares traded (in millions)
+      ``Change``
+         Change in price from previous day
 
-   .. rubric:: Details
-      :name: details
+      ``Volume``
+         Number of shares traded (in millions)
 
-   Closing price of Apple stock (AAPL) for each trading day in a three
-   month period from 7/21/2016 to 10/21/2016 as well as the change in
-   stock price and number of shares traded.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Closing price of Apple stock (AAPL) for each trading day in a
+      three month period from 7/21/2016 to 10/21/2016 as well as the
+      change in stock price and number of shares traded.
 
-   Data downloaded from Nasdaq historical prices at
-   http://www.nasdaq.com/symbol/aapl/historical
+      .. rubric:: Source
+         :name: source
+
+      Data downloaded from Nasdaq historical prices at
+      http://www.nasdaq.com/symbol/aapl/historical

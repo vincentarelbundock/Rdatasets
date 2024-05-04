@@ -1,70 +1,73 @@
 .. container::
 
-   ========== ===============
-   elecdemand R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Half-hourly and daily electricity demand for Victoria,
-      Australia, in 2014
-      :name: elecdemand
+      ========== ===============
+      elecdemand R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Half-hourly and daily electricity demand for Victoria,
+         Australia, in 2014
+         :name: half-hourly-and-daily-electricity-demand-for-victoria-australia-in-2014
 
-   ``elecdemand`` is a half-hourly time series matrix with three
-   columns:
+      .. rubric:: Description
+         :name: description
 
-   +--------------+------------------------------------------------------+
-   | Demand:      | Total electricity demand in GW for Victoria,         |
-   |              | Australia, every half-hour during 2014.              |
-   +--------------+------------------------------------------------------+
-   | WorkDay:     | taking value 1 on work days, and 0 otherwise.        |
-   +--------------+------------------------------------------------------+
-   | Temperature: | half-hourly temperatures for Melbourne (BOM site     |
-   |              | 086071).                                             |
-   +--------------+------------------------------------------------------+
+      ``elecdemand`` is a half-hourly time series matrix with three
+      columns:
 
-   ``elecdaily`` is a daily time series matrix with three columns:
+      +--------------+------------------------------------------------------+
+      | Demand:      | Total electricity demand in GW for Victoria,         |
+      |              | Australia, every half-hour during 2014.              |
+      +--------------+------------------------------------------------------+
+      | WorkDay:     | taking value 1 on work days, and 0 otherwise.        |
+      +--------------+------------------------------------------------------+
+      | Temperature: | half-hourly temperatures for Melbourne (BOM site     |
+      |              | 086071).                                             |
+      +--------------+------------------------------------------------------+
 
-   +--------------+------------------------------------------------------+
-   | Demand:      | Total electricity demand in GW for Victoria,         |
-   |              | Australia, every day during 2014.                    |
-   +--------------+------------------------------------------------------+
-   | WorkDay:     | taking value 1 on work days, and 0 otherwise.        |
-   +--------------+------------------------------------------------------+
-   | Temperature: | maximum daily temperatures for Melbourne (BOM site   |
-   |              | 086071).                                             |
-   +--------------+------------------------------------------------------+
+      ``elecdaily`` is a daily time series matrix with three columns:
 
-   .. rubric:: Format
-      :name: format
+      +--------------+------------------------------------------------------+
+      | Demand:      | Total electricity demand in GW for Victoria,         |
+      |              | Australia, every day during 2014.                    |
+      +--------------+------------------------------------------------------+
+      | WorkDay:     | taking value 1 on work days, and 0 otherwise.        |
+      +--------------+------------------------------------------------------+
+      | Temperature: | maximum daily temperatures for Melbourne (BOM site   |
+      |              | 086071).                                             |
+      +--------------+------------------------------------------------------+
 
-   Multiple time series of class ``mts``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      Multiple time series of class ``mts``.
 
-   This data is for operational demand, which is the demand met by local
-   scheduled generating units, semi-scheduled generating units, and
-   non-scheduled intermittent generating units of aggregate capacity
-   larger than 30 MW, and by generation imports to the region. The
-   operational demand excludes the demand met by non-scheduled
-   non-intermittent generating units, non-scheduled intermittent
-   generating units of aggregate capacity smaller than 30 MW, exempt
-   generation (e.g. rooftop solar, gas tri-generation, very small wind
-   farms, etc), and demand of local scheduled loads. It also excludes
-   some very large industrial users (such as mines or smelters).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This data is for operational demand, which is the demand met by
+      local scheduled generating units, semi-scheduled generating units,
+      and non-scheduled intermittent generating units of aggregate
+      capacity larger than 30 MW, and by generation imports to the
+      region. The operational demand excludes the demand met by
+      non-scheduled non-intermittent generating units, non-scheduled
+      intermittent generating units of aggregate capacity smaller than
+      30 MW, exempt generation (e.g. rooftop solar, gas tri-generation,
+      very small wind farms, etc), and demand of local scheduled loads.
+      It also excludes some very large industrial users (such as mines
+      or smelters).
 
-   Australian Energy Market Operator, and the Australian Bureau of
-   Meteorology.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Australian Energy Market Operator, and the Australian Bureau of
+      Meteorology.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(elecdemand)
-      summary(elecdaily)
+      ::
+
+         summary(elecdemand)
+         summary(elecdaily)

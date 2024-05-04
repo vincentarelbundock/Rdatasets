@@ -1,70 +1,73 @@
 .. container::
 
-   ======== ===============
-   Loblolly R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Growth of Loblolly pine trees
-      :name: Loblolly
+      ======== ===============
+      Loblolly R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Growth of Loblolly Pine Trees
+         :name: growth-of-loblolly-pine-trees
 
-   The ``Loblolly`` data frame has 84 rows and 3 columns of records of
-   the growth of Loblolly pine trees.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Loblolly`` data frame has 84 rows and 3 columns of records
+      of the growth of Loblolly pine trees.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Loblolly
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Loblolly
 
-   An object of class
-   ``c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame")``
-   containing the following columns:
+      .. rubric:: Format
+         :name: format
 
-   height
-      a numeric vector of tree heights (ft).
+      An object of class
+      ``c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame")``
+      containing the following columns:
 
-   age
-      a numeric vector of tree ages (yr).
+      height
+         a numeric vector of tree heights (ft).
 
-   Seed
-      an ordered factor indicating the seed source for the tree. The
-      ordering is according to increasing maximum height.
+      age
+         a numeric vector of tree ages (yr).
 
-   .. rubric:: Details
-      :name: details
+      Seed
+         an ordered factor indicating the seed source for the tree. The
+         ordering is according to increasing maximum height.
 
-   This dataset was originally part of package ``nlme``, and that has
-   methods (including for ``[``, ``as.data.frame``, ``plot`` and
-   ``print``) for its grouped-data classes.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This dataset was originally part of package ``nlme``, and that has
+      methods (including for ``[``, ``as.data.frame``, ``plot`` and
+      ``print``) for its grouped-data classes.
 
-   Kung, F. H. (1986), Fitting logistic growth curve with predetermined
-   carrying capacity, in *Proceedings of the Statistical Computing
-   Section, American Statistical Association*, 340–343.
+      .. rubric:: Source
+         :name: source
 
-   Pinheiro, J. C. and Bates, D. M. (2000) *Mixed-effects Models in S
-   and S-PLUS*, Springer.
+      Kung, F. H. (1986), Fitting logistic growth curve with
+      predetermined carrying capacity, in *Proceedings of the
+      Statistical Computing Section, American Statistical Association*,
+      340–343.
 
-   .. rubric:: Examples
-      :name: examples
+      Pinheiro, J. C. and Bates, D. M. (2000) *Mixed-effects Models in S
+      and S-PLUS*, Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(stats); require(graphics)
-      plot(height ~ age, data = Loblolly, subset = Seed == 329,
-           xlab = "Tree age (yr)", las = 1,
-           ylab = "Tree height (ft)",
-           main = "Loblolly data and fitted curve (Seed 329 only)")
-      fm1 <- nls(height ~ SSasymp(age, Asym, R0, lrc),
-                 data = Loblolly, subset = Seed == 329)
-      age <- seq(0, 30, length.out = 101)
-      lines(age, predict(fm1, list(age = age)))
+      ::
+
+         require(stats); require(graphics)
+         plot(height ~ age, data = Loblolly, subset = Seed == 329,
+              xlab = "Tree age (yr)", las = 1,
+              ylab = "Tree height (ft)",
+              main = "Loblolly data and fitted curve (Seed 329 only)")
+         fm1 <- nls(height ~ SSasymp(age, Asym, R0, lrc),
+                    data = Loblolly, subset = Seed == 329)
+         age <- seq(0, 30, length.out = 101)
+         lines(age, predict(fm1, list(age = age)))

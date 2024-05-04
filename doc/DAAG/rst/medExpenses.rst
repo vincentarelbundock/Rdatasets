@@ -1,39 +1,41 @@
 .. container::
 
-   =========== ===============
-   medExpenses R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Family Medical Expenses
-      :name: medExpenses
+      =========== ===============
+      medExpenses R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Family Medical Expenses
+         :name: family-medical-expenses
 
-   The ``medExpenses`` data frame contains average weekly medical
-   expenses including drugs for 33 families randomly sampled from a
-   community of 600 families which contained 2700 individuals. These
-   data were collected in the 1970's at an unknown location.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``medExpenses`` data frame contains average weekly medical
+      expenses including drugs for 33 families randomly sampled from a
+      community of 600 families which contained 2700 individuals. These
+      data were collected in the 1970's at an unknown location.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      medExpenses
+      ::
 
-   .. rubric:: Format
-      :name: format
+         medExpenses
 
-   familysize
-      number of individuals in a family
+      .. rubric:: Format
+         :name: format
 
-   expenses
-      average weekly cost for medical expenses per family member
+      familysize
+         number of individuals in a family
 
-   .. rubric:: Examples
-      :name: examples
+      expenses
+         average weekly cost for medical expenses per family member
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      with(medExpenses, weighted.mean(expenses, familysize))
+      ::
+
+         with(medExpenses, weighted.mean(expenses, familysize))

@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>faithful</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='faithful'>Old Faithful Geyser Data</h2>
+<h2>Old Faithful Geyser Data</h2>
 
 <h3>Description</h3>
 
@@ -38,12 +38,12 @@ the Old Faithful geyser in Yellowstone National Park, Wyoming, USA.
 <table>
 <tr>
  <td style="text-align: right;">
-    [,1]  </td><td style="text-align: left;"> eruptions  </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> Eruption time in mins </td>
+    [,1]  </td><td style="text-align: left;"> <code>eruptions</code>  </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> Eruption time in <abbr>min</abbr>s </td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,2]  </td><td style="text-align: left;"> waiting    </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> Waiting time to next
-    eruption (in mins)</td>
+    [,2]  </td><td style="text-align: left;"> <code>waiting</code>    </td><td style="text-align: left;"> numeric  </td><td style="text-align: left;"> Waiting time to next
+    eruption (in <abbr>min</abbr>s)</td>
 </tr>
 <tr>
  <td style="text-align: right;">
@@ -61,8 +61,8 @@ heavily rounded times originally in seconds, where multiples of 5 are
 more frequent than expected under non-human measurement.  For a
 better version of the eruption times, see the example below.
 </p>
-<p>There are many versions of this dataset around: Azzalini and Bowman
-(1990) use a more complete version.
+<p>There are many versions of this dataset around:
+Azzalini and Bowman (1990) use a more complete version.
 </p>
 
 
@@ -110,6 +110,7 @@ lines(lowess(faithful$eruptions, faithful$waiting, f = 2/3, iter = 3),
       col = "red")
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

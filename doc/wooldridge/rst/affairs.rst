@@ -1,99 +1,101 @@
 .. container::
 
-   ======= ===============
-   affairs R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: affairs
-      :name: affairs
+      ======= ===============
+      affairs R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: affairs
+         :name: affairs
 
-   Wooldridge Source: R.C. Fair (1978), “A Theory of Extramarital
-   Affairs,” Journal of Political Economy 86, 45-61, 1978. I collected
-   the data from Professor Fair’s web cite at the Yale University
-   Department of Economics. He originally obtained the data from a
-   survey by Psychology Today. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: R.C. Fair (1978), “A Theory of Extramarital
+      Affairs,” Journal of Political Economy 86, 45-61, 1978. I
+      collected the data from Professor Fair’s web cite at the Yale
+      University Department of Economics. He originally obtained the
+      data from a survey by Psychology Today. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('affairs')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('affairs')
 
-   A data.frame with 601 observations on 19 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **id:** identifier
+      A data.frame with 601 observations on 19 variables:
 
-   -  **male:** =1 if male
+      -  **id:** identifier
 
-   -  **age:** in years
+      -  **male:** =1 if male
 
-   -  **yrsmarr:** years married
+      -  **age:** in years
 
-   -  **kids:** =1 if have kids
+      -  **yrsmarr:** years married
 
-   -  **relig:** 5 = very relig., 4 = somewhat, 3 = slightly, 2 = not at
-      all, 1 = anti
+      -  **kids:** =1 if have kids
 
-   -  **educ:** years schooling
+      -  **relig:** 5 = very relig., 4 = somewhat, 3 = slightly, 2 = not
+         at all, 1 = anti
 
-   -  **occup:** occupation, reverse Hollingshead scale
+      -  **educ:** years schooling
 
-   -  **ratemarr:** 5 = vry hap marr, 4 = hap than avg, 3 = avg, 2 =
-      smewht unhap, 1 = vry unhap
+      -  **occup:** occupation, reverse Hollingshead scale
 
-   -  **naffairs:** number of affairs within last year
+      -  **ratemarr:** 5 = vry hap marr, 4 = hap than avg, 3 = avg, 2 =
+         smewht unhap, 1 = vry unhap
 
-   -  **affair:** =1 if had at least one affair
+      -  **naffairs:** number of affairs within last year
 
-   -  **vryhap:** ratemarr == 5
+      -  **affair:** =1 if had at least one affair
 
-   -  **hapavg:** ratemarr == 4
+      -  **vryhap:** ratemarr == 5
 
-   -  **avgmarr:** ratemarr == 3
+      -  **hapavg:** ratemarr == 4
 
-   -  **unhap:** ratemarr == 2
+      -  **avgmarr:** ratemarr == 3
 
-   -  **vryrel:** relig == 5
+      -  **unhap:** ratemarr == 2
 
-   -  **smerel:** relig == 4
+      -  **vryrel:** relig == 5
 
-   -  **slghtrel:** relig == 3
+      -  **smerel:** relig == 4
 
-   -  **notrel:** relig == 2
+      -  **slghtrel:** relig == 3
 
-   .. rubric:: Notes
-      :name: notes
+      -  **notrel:** relig == 2
 
-   This is an interesting data set for problem sets starting in Chapter
-   7. Even though naffairs (number of extramarital affairs a woman
-   reports) is a count variable, a linear model can be used to model its
-   conditional mean as an approximation. Or, you could ask the students
-   to estimate a linear probability model for the binary indicator
-   affair, equal to one of the woman reports having any extramarital
-   affairs. One possibility is to test whether putting the single
-   marriage rating variable, ratemarr, is enough, against the
-   alternative that a full set of dummy variables is needed; see pages
-   239-240 for a similar example. This is also a good data set to
-   illustrate Poisson regression (using naffairs) in Section 17.3 or
-   probit and logit (using affair) in Section 17.1.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: not used
+      This is an interesting data set for problem sets starting in
+      Chapter 7. Even though naffairs (number of extramarital affairs a
+      woman reports) is a count variable, a linear model can be used to
+      model its conditional mean as an approximation. Or, you could ask
+      the students to estimate a linear probability model for the binary
+      indicator affair, equal to one of the woman reports having any
+      extramarital affairs. One possibility is to test whether putting
+      the single marriage rating variable, ratemarr, is enough, against
+      the alternative that a full set of dummy variables is needed; see
+      pages 239-240 for a similar example. This is also a good data set
+      to illustrate Poisson regression (using naffairs) in Section 17.3
+      or probit and logit (using affair) in Section 17.1.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: not used
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(affairs)
+      ::
+
+          str(affairs)

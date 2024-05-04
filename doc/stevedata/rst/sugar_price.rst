@@ -1,50 +1,52 @@
 .. container::
 
-   =========== ===============
-   sugar_price R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: IMF Primary Commodity Price Data for Sugar
-      :name: sugar_price
+      =========== ===============
+      sugar_price R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: IMF Primary Commodity Price Data for Sugar
+         :name: imf-primary-commodity-price-data-for-sugar
 
-   This is primary commodity price data for sugar globally, in the
-   United States, and in Europe for every month from 1980 to (roughly)
-   the present. Prices are nominal U.S. cents per pound and are not
-   seasonally adjusted ("NSA").
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This is primary commodity price data for sugar globally, in the
+      United States, and in Europe for every month from 1980 to
+      (roughly) the present. Prices are nominal U.S. cents per pound and
+      are not seasonally adjusted ("NSA").
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      sugar_price
+      ::
 
-   .. rubric:: Format
-      :name: format
+         sugar_price
 
-   A data frame with 1,316 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``date``
-      a date
+      A data frame with 1,316 observations on the following 3 variables.
 
-   ``category``
-      the category (either the U.S., global, or Europe)
+      ``date``
+         a date
 
-   ``value``
-      the price of sugar in U.S. cents per pound (NSA, nominal)
+      ``category``
+         the category (either the U.S., global, or Europe)
 
-   .. rubric:: Details
-      :name: details
+      ``value``
+         the price of sugar in U.S. cents per pound (NSA, nominal)
 
-   The price data for Europe do not appear to be updated as regularly as
-   the global and U.S. prices. Thus, the last month in the data for
-   Europe are June 2017. For that reason, I elected to make a data set
-   of these data for posterity's sake.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The price data for Europe do not appear to be updated as regularly
+      as the global and U.S. prices. Thus, the last month in the data
+      for Europe are June 2017. For that reason, I elected to make a
+      data set of these data for posterity's sake.
 
-   International Monetary Fund
+      .. rubric:: Source
+         :name: source
+
+      International Monetary Fund

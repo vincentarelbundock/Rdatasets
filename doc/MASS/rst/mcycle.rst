@@ -1,43 +1,45 @@
 .. container::
 
-   ====== ===============
-   mcycle R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Data from a Simulated Motorcycle Accident
-      :name: mcycle
+      ====== ===============
+      mcycle R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data from a Simulated Motorcycle Accident
+         :name: data-from-a-simulated-motorcycle-accident
 
-   A data frame giving a series of measurements of head acceleration in
-   a simulated motorcycle accident, used to test crash helmets.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data frame giving a series of measurements of head acceleration
+      in a simulated motorcycle accident, used to test crash helmets.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      mcycle
+      ::
 
-   .. rubric:: Format
-      :name: format
+         mcycle
 
-   ``times``
-      in milliseconds after impact.
+      .. rubric:: Format
+         :name: format
 
-   ``accel``
-      in g.
+      ``times``
+         in milliseconds after impact.
 
-   .. rubric:: Source
-      :name: source
+      ``accel``
+         in g.
 
-   Silverman, B. W. (1985) Some aspects of the spline smoothing approach
-   to non-parametric curve fitting. *Journal of the Royal Statistical
-   Society series B* **47**, 1–52.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Silverman, B. W. (1985) Some aspects of the spline smoothing
+      approach to non-parametric curve fitting. *Journal of the Royal
+      Statistical Society series B* **47**, 1–52.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S-PLUS.* Fourth Edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S-PLUS.* Fourth Edition. Springer.

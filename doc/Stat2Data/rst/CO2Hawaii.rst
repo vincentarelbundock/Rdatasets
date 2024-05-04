@@ -1,44 +1,46 @@
 .. container::
 
-   ========= ===============
-   CO2Hawaii R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: CO2 Readings in Hawaii
-      :name: CO2Hawaii
+      ========= ===============
+      CO2Hawaii R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: CO2 Readings in Hawaii
+         :name: co2-readings-in-hawaii
 
-   Monthly carbon dioxide readings at Mauna Loa, Hawaii
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Monthly carbon dioxide readings at Mauna Loa, Hawaii
 
-   A data frame with 360 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Year``
-      Year (1988 - 2017)
+      A data frame with 360 observations on the following 4 variables.
 
-   ``Month``
-      Month (1=Jan. to 12=Dec.)
+      ``Year``
+         Year (1988 - 2017)
 
-   ``CO2``
-      Atmospheric carbon dioxide level (ppm)
+      ``Month``
+         Month (1=Jan. to 12=Dec.)
 
-   ``t``
-      Time interval (t=1 to 360)
+      ``CO2``
+         Atmospheric carbon dioxide level (ppm)
 
-   .. rubric:: Details
-      :name: details
+      ``t``
+         Time interval (t=1 to 360)
 
-   Monthly average carbon dioxide readings (1988 - 2017) at the Mauna
-   Loa Observatory in Hawaii. Data collected and disseminated by ERSL
-   (Earth System Research Laboratory) of the U.S. NOAA (National Oceanic
-   and Atmospheric Administration.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Monthly average carbon dioxide readings (1988 - 2017) at the Mauna
+      Loa Observatory in Hawaii. Data collected and disseminated by ERSL
+      (Earth System Research Laboratory) of the U.S. NOAA (National
+      Oceanic and Atmospheric Administration.
 
-   Data downloaded for MOL (Mauna Loa) from the ESRL/GMD data page at
-   https://www.esrl.noaa.gov/gmd/ccgg/trends/data.html
+      .. rubric:: Source
+         :name: source
+
+      Data downloaded for MOL (Mauna Loa) from the ESRL/GMD data page at
+      https://www.esrl.noaa.gov/gmd/ccgg/trends/data.html

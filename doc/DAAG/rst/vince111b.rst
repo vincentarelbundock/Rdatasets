@@ -1,58 +1,61 @@
 .. container::
 
-   ========= ===============
-   vince111b R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Averages by block of corn yields, for treatment 111 only
-      :name: vince111b
+      ========= ===============
+      vince111b R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Averages by block of corn yields, for treatment 111
+         only
+         :name: averages-by-block-of-corn-yields-for-treatment-111-only
 
-   These data frames have averages by blocks (parcels) for the treatment
-   ``111``.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These data frames have averages by blocks (parcels) for the
+      treatment ``111``.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      vince111b
+      ::
 
-   .. rubric:: Format
-      :name: format
+         vince111b
 
-   A data frame with 36 observations on 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   site
-      a factor with levels ``AGSV`` ``CASV`` ``CPSV`` ``LPSV`` ``MPSV``
-      ``OOSV`` ``OTSV`` ``SSSV`` ``UISV``
+      A data frame with 36 observations on 8 variables.
 
-   parcel
-      a factor with levels ``I`` ``II`` ``III`` ``IV``
+      site
+         a factor with levels ``AGSV`` ``CASV`` ``CPSV`` ``LPSV``
+         ``MPSV`` ``OOSV`` ``OTSV`` ``SSSV`` ``UISV``
 
-   code
-      a numeric vector
+      parcel
+         a factor with levels ``I`` ``II`` ``III`` ``IV``
 
-   island
-      a numeric vector
+      code
+         a numeric vector
 
-   id
-      a numeric vector
+      island
+         a numeric vector
 
-   plot
-      a numeric vector
+      id
+         a numeric vector
 
-   trt
-      a numeric vector
+      plot
+         a numeric vector
 
-   harvwt
-      a numeric vector
+      trt
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      harvwt
+         a numeric vector
 
-   Andrews DF; Herzberg AM, 1985. Data. A Collection of Problems from
-   Many Fields for the Student and Research Worker. Springer-Verlag.
-   (pp. 339-353)
+      .. rubric:: Source
+         :name: source
+
+      Andrews DF; Herzberg AM, 1985. Data. A Collection of Problems from
+      Many Fields for the Student and Research Worker. Springer-Verlag.
+      (pp. 339-353)

@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>coralPval</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='coralPval'>
+<h2>
 P-values from biological expression array data
 </h2>
 
@@ -70,6 +70,7 @@ fdr &lt;- p.adjust(DAAG::coralPval, method='BH')
 sum(fdr&lt;=0.01)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

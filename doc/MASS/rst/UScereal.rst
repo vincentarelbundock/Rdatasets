@@ -1,74 +1,77 @@
 .. container::
 
-   ======== ===============
-   UScereal R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Nutritional and Marketing Information on US Cereals
-      :name: UScereal
+      ======== ===============
+      UScereal R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Nutritional and Marketing Information on US Cereals
+         :name: nutritional-and-marketing-information-on-us-cereals
 
-   The ``UScereal`` data frame has 65 rows and 11 columns. The data come
-   from the 1993 ASA Statistical Graphics Exposition, and are taken from
-   the mandatory F&DA food label. The data have been normalized here to
-   a portion of one American cup.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``UScereal`` data frame has 65 rows and 11 columns. The data
+      come from the 1993 ASA Statistical Graphics Exposition, and are
+      taken from the mandatory F&DA food label. The data have been
+      normalized here to a portion of one American cup.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      UScereal
+      ::
 
-   .. rubric:: Format
-      :name: format
+         UScereal
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``mfr``
-      Manufacturer, represented by its first initial: G=General Mills,
-      K=Kelloggs, N=Nabisco, P=Post, Q=Quaker Oats, R=Ralston Purina.
+      This data frame contains the following columns:
 
-   ``calories``
-      number of calories in one portion.
+      ``mfr``
+         Manufacturer, represented by its first initial: G=General
+         Mills, K=Kelloggs, N=Nabisco, P=Post, Q=Quaker Oats, R=Ralston
+         Purina.
 
-   ``protein``
-      grams of protein in one portion.
+      ``calories``
+         number of calories in one portion.
 
-   ``fat``
-      grams of fat in one portion.
+      ``protein``
+         grams of protein in one portion.
 
-   ``sodium``
-      milligrams of sodium in one portion.
+      ``fat``
+         grams of fat in one portion.
 
-   ``fibre``
-      grams of dietary fibre in one portion.
+      ``sodium``
+         milligrams of sodium in one portion.
 
-   ``carbo``
-      grams of complex carbohydrates in one portion.
+      ``fibre``
+         grams of dietary fibre in one portion.
 
-   ``sugars``
-      grams of sugars in one portion.
+      ``carbo``
+         grams of complex carbohydrates in one portion.
 
-   ``shelf``
-      display shelf (1, 2, or 3, counting from the floor).
+      ``sugars``
+         grams of sugars in one portion.
 
-   ``potassium``
-      grams of potassium.
+      ``shelf``
+         display shelf (1, 2, or 3, counting from the floor).
 
-   ``vitamins``
-      vitamins and minerals (none, enriched, or 100%).
+      ``potassium``
+         grams of potassium.
 
-   .. rubric:: Source
-      :name: source
+      ``vitamins``
+         vitamins and minerals (none, enriched, or 100%).
 
-   The original data are available at
-   http://lib.stat.cmu.edu/datasets/1993.expo/.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The original data are available at
+      http://lib.stat.cmu.edu/datasets/1993.expo/.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S-PLUS.* Fourth Edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S-PLUS.* Fourth Edition. Springer.

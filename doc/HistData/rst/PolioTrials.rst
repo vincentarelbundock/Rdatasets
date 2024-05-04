@@ -1,107 +1,111 @@
 .. container::
 
-   =========== ===============
-   PolioTrials R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Polio Field Trials Data
-      :name: PolioTrials
+      =========== ===============
+      PolioTrials R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Polio Field Trials Data
+         :name: polio-field-trials-data
 
-   The data frame ``PolioTrials`` gives the results of the 1954 field
-   trials to test the Salk polio vaccine (named for the developer, Jonas
-   Salk), conducted by the National Foundation for Infantile Paralysis
-   (NFIP). It is adapted from data in the article by Francis et al.
-   (1955). There were actually two clinical trials, corresponding to two
-   statistical designs (``Experiment``), discussed by Brownlee (1955).
-   The comparison of designs and results represented a milestone in the
-   development of randomized clinical trials.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The data frame ``PolioTrials`` gives the results of the 1954 field
+      trials to test the Salk polio vaccine (named for the developer,
+      Jonas Salk), conducted by the National Foundation for Infantile
+      Paralysis (NFIP). It is adapted from data in the article by
+      Francis et al. (1955). There were actually two clinical trials,
+      corresponding to two statistical designs (``Experiment``),
+      discussed by Brownlee (1955). The comparison of designs and
+      results represented a milestone in the development of randomized
+      clinical trials.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(PolioTrials)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(PolioTrials)
 
-   A data frame with 8 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Experiment``
-      a factor with levels ``ObservedControl`` ``RandomizedControl``
+      A data frame with 8 observations on the following 6 variables.
 
-   ``Group``
-      a factor with levels ``Controls`` ``Grade2NotInoculated``
-      ``IncompleteVaccinations`` ``NotInoculated`` ``Placebo``
-      ``Vaccinated``
+      ``Experiment``
+         a factor with levels ``ObservedControl`` ``RandomizedControl``
 
-   ``Population``
-      the size of the population in each group in each experiment
+      ``Group``
+         a factor with levels ``Controls`` ``Grade2NotInoculated``
+         ``IncompleteVaccinations`` ``NotInoculated`` ``Placebo``
+         ``Vaccinated``
 
-   ``Paralytic``
-      the number of cases of paralytic polio observed in that group
+      ``Population``
+         the size of the population in each group in each experiment
 
-   ``NonParalytic``
-      the number of cases of paralytic polio observed in that group
+      ``Paralytic``
+         the number of cases of paralytic polio observed in that group
 
-   ``FalseReports``
-      the number of cases initially reported as polio, but later
-      determined not to be polio in that group
+      ``NonParalytic``
+         the number of cases of paralytic polio observed in that group
 
-   .. rubric:: Details
-      :name: details
+      ``FalseReports``
+         the number of cases initially reported as polio, but later
+         determined not to be polio in that group
 
-   The data frame is in the form of a single table, but actually
-   comprises the results of two separate field trials, given by
-   ``Experiment``. Each should be analyzed separately, because the
-   designs differ markedly.
+      .. rubric:: Details
+         :name: details
 
-   The original design (``Experiment == "ObservedControl"``) called for
-   vaccination of second-graders at selected schools in selected areas
-   of the country (with the consent of the children's parents, of
-   course). The ``Vaccinated`` second-graders formed the treatment
-   group. The first and third-graders at the schools were not given the
-   vaccination, and formed the ``Controls`` group.
+      The data frame is in the form of a single table, but actually
+      comprises the results of two separate field trials, given by
+      ``Experiment``. Each should be analyzed separately, because the
+      designs differ markedly.
 
-   In the second design (``Experiment == "RandomizedControl"``) children
-   were selected (again in various schools in various areas), all of
-   whose parents consented to vaccination. The sample was randomly
-   divided into treatment (``Group == "Vaccinated"``), given the real
-   polio vaccination, and control groups (``Group == "Placebo"``), a
-   placebo dose that looked just like the real vaccine. The experiment
-   was also double blind: neither the parents of a child in the study
-   nor the doctors treating the child knew which group the child
-   belonged to.
+      The original design (``Experiment == "ObservedControl"``) called
+      for vaccination of second-graders at selected schools in selected
+      areas of the country (with the consent of the children's parents,
+      of course). The ``Vaccinated`` second-graders formed the treatment
+      group. The first and third-graders at the schools were not given
+      the vaccination, and formed the ``Controls`` group.
 
-   In both experiments, ``NotInnoculated`` refers to children who did
-   not participate in the experiment. ``IncompleteVaccinations`` refers
-   to children who received one or two, but not all three
-   administrations of the vaccine.
+      In the second design (``Experiment == "RandomizedControl"``)
+      children were selected (again in various schools in various
+      areas), all of whose parents consented to vaccination. The sample
+      was randomly divided into treatment (``Group == "Vaccinated"``),
+      given the real polio vaccination, and control groups
+      (``Group == "Placebo"``), a placebo dose that looked just like the
+      real vaccine. The experiment was also double blind: neither the
+      parents of a child in the study nor the doctors treating the child
+      knew which group the child belonged to.
 
-   .. rubric:: Source
-      :name: source
+      In both experiments, ``NotInnoculated`` refers to children who did
+      not participate in the experiment. ``IncompleteVaccinations``
+      refers to children who received one or two, but not all three
+      administrations of the vaccine.
 
-   Kyle Siegrist, "Virtual Laboratories in Probability and Statistics",
-   http://www.math.uah.edu/stat/data/Polio.html
+      .. rubric:: Source
+         :name: source
 
-   Thomas Francis, Robert Korn, et al. (1955). "An Evaluation of the
-   1954 Poliomyelitis Vaccine Trials", *American Journal of Public
-   Health*, 45, (50 page supplement with a 63 page appendix).
+      Kyle Siegrist, "Virtual Laboratories in Probability and
+      Statistics", http://www.math.uah.edu/stat/data/Polio.html
 
-   .. rubric:: References
-      :name: references
+      Thomas Francis, Robert Korn, et al. (1955). "An Evaluation of the
+      1954 Poliomyelitis Vaccine Trials", *American Journal of Public
+      Health*, 45, (50 page supplement with a 63 page appendix).
 
-   K. A. Brownlee (1955). "Statistics of the 1954 Polio Vaccine Trials",
-   *Journal of the American Statistical Association*, 50, 1005-1013.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      K. A. Brownlee (1955). "Statistics of the 1954 Polio Vaccine
+      Trials", *Journal of the American Statistical Association*, 50,
+      1005-1013.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(PolioTrials)
-      ## maybe str(PolioTrials) ; plot(PolioTrials) ...
+      ::
+
+         data(PolioTrials)
+         ## maybe str(PolioTrials) ; plot(PolioTrials) ...

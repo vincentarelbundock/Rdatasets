@@ -1,70 +1,72 @@
 .. container::
 
-   ==== ===============
-   Mice R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Mice Depletion Data
-      :name: Mice
+      ==== ===============
+      Mice R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Mice Depletion Data
+         :name: mice-depletion-data
 
-   Data from Kastenbaum and Lamphiear (1959). The table gives the number
-   of depletions (deaths) in 657 litters of mice, classified by litter
-   size and treatment. This data set has become a classic in the
-   analysis of contingency tables, yet unfortunately little information
-   on the details of the experiment has been published.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from Kastenbaum and Lamphiear (1959). The table gives the
+      number of depletions (deaths) in 657 litters of mice, classified
+      by litter size and treatment. This data set has become a classic
+      in the analysis of contingency tables, yet unfortunately little
+      information on the details of the experiment has been published.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Mice")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Mice")
 
-   A frequency data frame with 30 observations on the following 4
-   variables, representing a 5 x 2 x 3 contingency table.
+      .. rubric:: Format
+         :name: format
 
-   ``litter``
-      litter size, a numeric vector
+      A frequency data frame with 30 observations on the following 4
+      variables, representing a 5 x 2 x 3 contingency table.
 
-   ``treatment``
-      treatment, a factor with levels ``A`` ``B``
+      ``litter``
+         litter size, a numeric vector
 
-   ``deaths``
-      number of depletions, a factor with levels ``0`` ``1`` ``2+``
+      ``treatment``
+         treatment, a factor with levels ``A`` ``B``
 
-   ``Freq``
-      cell frequency, a numeric vector
+      ``deaths``
+         number of depletions, a factor with levels ``0`` ``1`` ``2+``
 
-   .. rubric:: Source
-      :name: source
+      ``Freq``
+         cell frequency, a numeric vector
 
-   Goodman, L. A. (1983) The analysis of dependence in
-   cross-classifications having ordered categories, using log-linear
-   models for frequencies and log-linear models for odds. *Biometrics*,
-   39, 149-160.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Goodman, L. A. (1983) The analysis of dependence in
+      cross-classifications having ordered categories, using log-linear
+      models for frequencies and log-linear models for odds.
+      *Biometrics*, 39, 149-160.
 
-   Kastenbaum, M. A. & Lamphiear, D. E. (1959) Calculation of chi-square
-   to calculate the no three-factor interaction hypothesis.
-   *Biometrics*, 15, 107-115.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Kastenbaum, M. A. & Lamphiear, D. E. (1959) Calculation of
+      chi-square to calculate the no three-factor interaction
+      hypothesis. *Biometrics*, 15, 107-115.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       
-      data(Mice)
-      # make a table
-      ftable(mice.tab <- xtabs(Freq ~ litter + treatment + deaths, data=Mice))
+      ::
 
-      #library(vcd)
-      vcd::mosaic(mice.tab, shade=TRUE)
+          
+         data(Mice)
+         # make a table
+         ftable(mice.tab <- xtabs(Freq ~ litter + treatment + deaths, data=Mice))
+
+         #library(vcd)
+         vcd::mosaic(mice.tab, shade=TRUE)

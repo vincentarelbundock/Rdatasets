@@ -1,50 +1,52 @@
 .. container::
 
-   ===== ===============
-   polar R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Pole Positions of New Caledonian Laterites
-      :name: polar
+      ===== ===============
+      polar R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Pole Positions of New Caledonian Laterites
+         :name: pole-positions-of-new-caledonian-laterites
 
-   The ``polar`` data frame has 50 rows and 2 columns.
+      .. rubric:: Description
+         :name: description
 
-   The data are the pole positions from a paleomagnetic study of New
-   Caledonian laterites.
+      The ``polar`` data frame has 50 rows and 2 columns.
 
-   .. rubric:: Usage
-      :name: usage
+      The data are the pole positions from a paleomagnetic study of New
+      Caledonian laterites.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      polar
+      ::
 
-   .. rubric:: Format
-      :name: format
+         polar
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``lat``
-      The latitude (in degrees) of the pole position. Note that all
-      latitudes are negative as the axis is taken to be in the lower
-      hemisphere.
+      This data frame contains the following columns:
 
-   ``long``
-      The longitude (in degrees) of the pole position.
+      ``lat``
+         The latitude (in degrees) of the pole position. Note that all
+         latitudes are negative as the axis is taken to be in the lower
+         hemisphere.
 
-   .. rubric:: Source
-      :name: source
+      ``long``
+         The longitude (in degrees) of the pole position.
 
-   The data were obtained from
+      .. rubric:: Source
+         :name: source
 
-   Fisher, N.I., Lewis, T. and Embleton, B.J.J. (1987) *Statistical
-   Analysis of Spherical Data*. Cambridge University Press.
+      The data were obtained from
 
-   .. rubric:: References
-      :name: references
+      Fisher, N.I., Lewis, T. and Embleton, B.J.J. (1987) *Statistical
+      Analysis of Spherical Data*. Cambridge University Press.
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
+
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.

@@ -1,106 +1,108 @@
 .. container::
 
-   ==== ===============
-   gpa1 R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: gpa1
-      :name: gpa1
+      ==== ===============
+      gpa1 R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: gpa1
+         :name: gpa1
 
-   Wooldridge Source: Christopher Lemmon, a former MSU undergraduate,
-   collected these data from a survey he took of MSU students in Fall
-   1994. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Christopher Lemmon, a former MSU undergraduate,
+      collected these data from a survey he took of MSU students in Fall
+      1994. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('gpa1')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('gpa1')
 
-   A data.frame with 141 observations on 29 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **age:** in years
+      A data.frame with 141 observations on 29 variables:
 
-   -  **soph:** =1 if sophomore
+      -  **age:** in years
 
-   -  **junior:** =1 if junior
+      -  **soph:** =1 if sophomore
 
-   -  **senior:** =1 if senior
+      -  **junior:** =1 if junior
 
-   -  **senior5:** =1 if fifth year senior
+      -  **senior:** =1 if senior
 
-   -  **male:** =1 if male
+      -  **senior5:** =1 if fifth year senior
 
-   -  **campus:** =1 if live on campus
+      -  **male:** =1 if male
 
-   -  **business:** =1 if business major
+      -  **campus:** =1 if live on campus
 
-   -  **engineer:** =1 if engineering major
+      -  **business:** =1 if business major
 
-   -  **colGPA:** MSU GPA
+      -  **engineer:** =1 if engineering major
 
-   -  **hsGPA:** high school GPA
+      -  **colGPA:** MSU GPA
 
-   -  **ACT:** 'achievement' score
+      -  **hsGPA:** high school GPA
 
-   -  **job19:** =1 if job <= 19 hours
+      -  **ACT:** 'achievement' score
 
-   -  **job20:** =1 if job >= 20 hours
+      -  **job19:** =1 if job <= 19 hours
 
-   -  **drive:** =1 if drive to campus
+      -  **job20:** =1 if job >= 20 hours
 
-   -  **bike:** =1 if bicycle to campus
+      -  **drive:** =1 if drive to campus
 
-   -  **walk:** =1 if walk to campus
+      -  **bike:** =1 if bicycle to campus
 
-   -  **voluntr:** =1 if do volunteer work
+      -  **walk:** =1 if walk to campus
 
-   -  **PC:** =1 of pers computer at sch
+      -  **voluntr:** =1 if do volunteer work
 
-   -  **greek:** =1 if fraternity or sorority
+      -  **PC:** =1 of pers computer at sch
 
-   -  **car:** =1 if own car
+      -  **greek:** =1 if fraternity or sorority
 
-   -  **siblings:** =1 if have siblings
+      -  **car:** =1 if own car
 
-   -  **bgfriend:** =1 if boy- or girlfriend
+      -  **siblings:** =1 if have siblings
 
-   -  **clubs:** =1 if belong to MSU club
+      -  **bgfriend:** =1 if boy- or girlfriend
 
-   -  **skipped:** avg lectures missed per week
+      -  **clubs:** =1 if belong to MSU club
 
-   -  **alcohol:** avg # days per week drink alc.
+      -  **skipped:** avg lectures missed per week
 
-   -  **gradMI:** =1 if Michigan high school
+      -  **alcohol:** avg # days per week drink alc.
 
-   -  **fathcoll:** =1 if father college grad
+      -  **gradMI:** =1 if Michigan high school
 
-   -  **mothcoll:** =1 if mother college grad
+      -  **fathcoll:** =1 if father college grad
 
-   .. rubric:: Notes
-      :name: notes
+      -  **mothcoll:** =1 if mother college grad
 
-   This is a nice example of how students can obtain an original data
-   set by focusing locally and carefully composing a survey.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 75, 77, 81, 129-130, 160, 232, 262, 295-296,
-   300-301
+      This is a nice example of how students can obtain an original data
+      set by focusing locally and carefully composing a survey.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 75, 77, 81, 129-130, 160, 232, 262, 295-296,
+      300-301
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(gpa1)
+      ::
+
+          str(gpa1)

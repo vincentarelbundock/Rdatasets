@@ -1,46 +1,49 @@
 .. container::
 
-   === ===============
-   Gun R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Methods for firing naval guns
-      :name: Gun
+      === ===============
+      Gun R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Methods for firing naval guns
+         :name: methods-for-firing-naval-guns
 
-   The ``Gun`` data frame has 36 rows and 4 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``Gun`` data frame has 36 rows and 4 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   rounds
-      a numeric vector
+      This data frame contains the following columns:
 
-   Method
-      a factor with levels ``M1`` ``M2``
+      rounds
+         a numeric vector
 
-   Team
-      an ordered factor with levels ``T1S`` < ``T3S`` < ``T2S`` <
-      ``T1A`` < ``T2A`` < ``T3A`` < ``T1H`` < ``T3H`` < ``T2H``
+      Method
+         a factor with levels ``M1`` ``M2``
 
-   Physique
-      an ordered factor with levels ``Slight`` < ``Average`` < ``Heavy``
+      Team
+         an ordered factor with levels ``T1S`` < ``T3S`` < ``T2S`` <
+         ``T1A`` < ``T2A`` < ``T3A`` < ``T1H`` < ``T3H`` < ``T2H``
 
-   .. rubric:: Details
-      :name: details
+      Physique
+         an ordered factor with levels ``Slight`` < ``Average`` <
+         ``Heavy``
 
-   Hicks (p.180, 1993) reports data from an experiment on methods for
-   firing naval guns. Gunners of three different physiques (slight,
-   average, and heavy) tested two firing methods. Both methods were
-   tested twice by each of nine teams of three gunners with identical
-   physique. The response was the number of rounds fired per minute.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Hicks (p.180, 1993) reports data from an experiment on methods for
+      firing naval guns. Gunners of three different physiques (slight,
+      average, and heavy) tested two firing methods. Both methods were
+      tested twice by each of nine teams of three gunners with identical
+      physique. The response was the number of rounds fired per minute.
 
-   Hicks, C. R. (1993), *Fundamental Concepts in the Design of
-   Experiments (4th ed)*, Harcourt Brace, New York.
+      .. rubric:: Source
+         :name: source
+
+      Hicks, C. R. (1993), *Fundamental Concepts in the Design of
+      Experiments (4th ed)*, Harcourt Brace, New York.

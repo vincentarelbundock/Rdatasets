@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>airquality</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='airquality'>New York Air Quality Measurements</h2>
+<h2>New York Air Quality Measurements</h2>
 
 <h3>Description</h3>
 
@@ -37,11 +37,11 @@ function processMathHTML() {
 <table>
 <tr>
  <td style="text-align: right;">
-    <code>[,1]</code> </td><td style="text-align: left;"> <code>Ozone</code>   </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Ozone (ppb)</td>
+    <code>[,1]</code> </td><td style="text-align: left;"> <code>Ozone</code>   </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Ozone (<abbr>ppb</abbr>)</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    <code>[,2]</code> </td><td style="text-align: left;"> <code>Solar.R</code> </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Solar R (lang)</td>
+    <code>[,2]</code> </td><td style="text-align: left;"> <code>Solar.R</code> </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Solar R (<abbr>lang</abbr>)</td>
 </tr>
 <tr>
  <td style="text-align: right;">
@@ -86,7 +86,7 @@ per hour at 0700 and 1000 hours at LaGuardia Airport
 </p>
 </li>
 <li> <p><code>Temp</code>: Maximum daily
-temperature in degrees Fahrenheit at La Guardia Airport.
+temperature in degrees Fahrenheit at LaGuardia Airport.
 </p>
 </li></ul>
 
@@ -114,6 +114,7 @@ Belmont, CA: Wadsworth.
 pairs(airquality, panel = panel.smooth, main = "airquality data")
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

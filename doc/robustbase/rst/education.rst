@@ -1,67 +1,67 @@
 .. container::
 
-   ========= ===============
-   education R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Education Expenditure Data
-      :name: education
+      ========= ===============
+      education R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Education Expenditure Data
+         :name: education-expenditure-data
 
-   Education Expenditure Data, from Chatterjee and Price (1977, p.108).
-   This data set, representing the education expenditure variables in
-   the 50 US states, providing an interesting example of
-   heteroscedacity.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Education Expenditure Data, from Chatterjee and Price (1977,
+      p.108). This data set, representing the education expenditure
+      variables in the 50 US states, providing an interesting example of
+      heteroscedacity.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(education, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(education, package="robustbase")
 
-   A data frame with 50 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``State``
-      State
+      A data frame with 50 observations on the following 6 variables.
 
-   ``Region``
-      Region (1=Northeastern, 2=North central, 3=Southern, 4=Western)
+      ``State``
+         State
 
-   ``X1``
-      Number of residents per thousand residing in urban areas in 1970
+      ``Region``
+         Region (1=Northeastern, 2=North central, 3=Southern, 4=Western)
 
-   ``X2``
-      Per capita personal income in 1973
+      ``X1``
+         Number of residents per thousand residing in urban areas in
+         1970
 
-   ``X3``
-      Number of residents per thousand under 18 years of age in 1974
+      ``X2``
+         Per capita personal income in 1973
 
-   ``Y``
-      Per capita expenditure on public education in a state, projected
-      for 1975
+      ``X3``
+         Number of residents per thousand under 18 years of age in 1974
 
-   .. rubric:: Source
-      :name: source
+      ``Y``
+         Per capita expenditure on public education in a state,
+         projected for 1975
 
-   P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
-   Detection*; Wiley, p.110, table 16.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and
+      Outlier Detection*; Wiley, p.110, table 16.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(education)
-      education.x <- data.matrix(education[, 3:5])
+      ::
 
+         data(education)
+         education.x <- data.matrix(education[, 3:5])
+         summary(lm.education <- lm(Y ~ Region + X1+X2+X3, data=education))
 
-      summary(lm.education <- lm(Y ~ Region + X1+X2+X3, data=education))
-
-
-      ## See  example(lmrob.M.S) # for how robust regression is used
+         ## See  example(lmrob.M.S) # for how robust regression is used

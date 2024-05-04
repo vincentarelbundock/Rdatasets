@@ -1,82 +1,84 @@
 .. container::
 
-   ====== ===============
-   Irates R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Monthly Interest Rates
-      :name: Irates
+      ====== ===============
+      Irates R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Monthly Interest Rates
+         :name: monthly-interest-rates
 
-   monthly observations from 1946–12 to 1991–02
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 531
+      monthly observations from 1946–12 to 1991–02
 
-   *observation* : country
+      *number of observations* : 531
 
-   *country* : United–States
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United–States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Irates)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Irates)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   r1
-      interest rate for a maturity of 1 months (% per year).
+      A time series containing :
 
-   r2
-      interest rate for a maturity of 2 months (% per year).
+      r1
+         interest rate for a maturity of 1 months (% per year).
 
-   r3
-      interest rate for a maturity of 3 months (% per year).
+      r2
+         interest rate for a maturity of 2 months (% per year).
 
-   r5
-      interest rate for a maturity of 5 months (% per year).
+      r3
+         interest rate for a maturity of 3 months (% per year).
 
-   r6
-      interest rate for a maturity of 6 months (% per year).
+      r5
+         interest rate for a maturity of 5 months (% per year).
 
-   r11
-      interest rate for a maturity of 11 months (% per year).
+      r6
+         interest rate for a maturity of 6 months (% per year).
 
-   r12
-      interest rate for a maturity of 12 months (% per year).
+      r11
+         interest rate for a maturity of 11 months (% per year).
 
-   r36
-      interest rate for a maturity of 36 months (% per year).
+      r12
+         interest rate for a maturity of 12 months (% per year).
 
-   r60
-      interest rate for a maturity of 60 months (% per year).
+      r36
+         interest rate for a maturity of 36 months (% per year).
 
-   r120
-      interest rate for a maturity of 120 months (% per year).
+      r60
+         interest rate for a maturity of 60 months (% per year).
 
-   .. rubric:: Source
-      :name: source
+      r120
+         interest rate for a maturity of 120 months (% per year).
 
-   McCulloch, J.H. and H.C. Kwon (1993) *U.S. term structure data,
-   1947–1991*, Ohio State Working Paper 93-6, Ohio State University,
-   Columbus.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      McCulloch, J.H. and H.C. Kwon (1993) *U.S. term structure data,
+      1947–1991*, Ohio State Working Paper 93-6, Ohio State University,
+      Columbus.
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons, chapter 8.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons, chapter 8.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

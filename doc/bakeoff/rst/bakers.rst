@@ -1,135 +1,137 @@
 .. container::
 
-   ====== ===============
-   bakers R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Bakers
-      :name: bakers
+      ====== ===============
+      bakers R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Bakers
+         :name: bakers
 
-   Information about each baker and their performance during the series
-   they appeared on.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Information about each baker and their performance during the
+      series they appeared on.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      bakers
+      ::
 
-   .. rubric:: Format
-      :name: format
+         bakers
 
-   A data frame with 120 rows representing individual bakers and 24
-   variables:
+      .. rubric:: Format
+         :name: format
 
-   series
-      An integer denoting UK series (``1``-``10``).
+      A data frame with 120 rows representing individual bakers and 24
+      variables:
 
-   baker_full
-      A character string giving full name.
+      series
+         An integer denoting UK series (``1``-``10``).
 
-   baker
-      A character string giving given or nickname.
+      baker_full
+         A character string giving full name.
 
-   age
-      An integer denoting age in years at first episode appeared.
+      baker
+         A character string giving given or nickname.
 
-   occupation
-      A character string giving occupation.
+      age
+         An integer denoting age in years at first episode appeared.
 
-   hometown
-      A character string giving hometown.
+      occupation
+         A character string giving occupation.
 
-   baker_last
-      A character string giving family name.
+      hometown
+         A character string giving hometown.
 
-   baker_first
-      A character string giving given name.
+      baker_last
+         A character string giving family name.
 
-   star_baker
-      An integer denoting the number of times a given baker won Star
-      Baker.
+      baker_first
+         A character string giving given name.
 
-   technical_winner
-      An integer denoting the number of times a given baker won first
-      place in the technical challenge.
+      star_baker
+         An integer denoting the number of times a given baker won Star
+         Baker.
 
-   technical_top3
-      An integer denoting the number of times a given baker was in the
-      top 3 (1st, 2nd, or 3rd) on the technical challenge.
+      technical_winner
+         An integer denoting the number of times a given baker won first
+         place in the technical challenge.
 
-   technical_bottom
-      An integer denoting the number of times a given baker was in the
-      bottom 3 on the technical challenge.
+      technical_top3
+         An integer denoting the number of times a given baker was in
+         the top 3 (1st, 2nd, or 3rd) on the technical challenge.
 
-   technical_highest
-      An integer denoting the best technical rank earned by a given
-      baker across all episodes appeared (higher is better).
+      technical_bottom
+         An integer denoting the number of times a given baker was in
+         the bottom 3 on the technical challenge.
 
-   technical_lowest
-      An integer denoting the worst technical rank earned by a given
-      baker across all episodes appeared (higher is better).
+      technical_highest
+         An integer denoting the best technical rank earned by a given
+         baker across all episodes appeared (higher is better).
 
-   technical_median
-      An integer denoting the median technical rank earned by a given
-      baker across all episodes appeared (higher is better).
+      technical_lowest
+         An integer denoting the worst technical rank earned by a given
+         baker across all episodes appeared (higher is better).
 
-   series_winner
-      An integer. Is ``0`` if not the series winner, ``1`` if series
-      winner.
+      technical_median
+         An integer denoting the median technical rank earned by a given
+         baker across all episodes appeared (higher is better).
 
-   series_runner_up
-      An integer. Is ``0`` if not a runner-up, ``1`` if a runner-up.
+      series_winner
+         An integer. Is ``0`` if not the series winner, ``1`` if series
+         winner.
 
-   total_episodes_appeared
-      An integer denoting the total number of episodes in which a given
-      baker appeared.
+      series_runner_up
+         An integer. Is ``0`` if not a runner-up, ``1`` if a runner-up.
 
-   first_date_appeared
-      A date denoting original airdate of the first episode in which a
-      given baker appeared (equivalent to the series premiere episode in
-      the UK.)
+      total_episodes_appeared
+         An integer denoting the total number of episodes in which a
+         given baker appeared.
 
-   last_date_appeared
-      A date denoting original airdate of the last episode in which a
-      given baker appeared (in the UK).
+      first_date_appeared
+         A date denoting original airdate of the first episode in which
+         a given baker appeared (equivalent to the series premiere
+         episode in the UK.)
 
-   first_date_us
-      A date denoting original airdate of the first episode in which a
-      given baker appeared (equivalent to the series premiere episode in
-      the US).
+      last_date_appeared
+         A date denoting original airdate of the last episode in which a
+         given baker appeared (in the UK).
 
-   last_date_us
-      A date denoting original airdate of the last episode in which a
-      given baker appeared (in the US).
+      first_date_us
+         A date denoting original airdate of the first episode in which
+         a given baker appeared (equivalent to the series premiere
+         episode in the US).
 
-   percent_episodes_appeared
-      A percentage denoting the number of episodes in a given
-      series/season in which a given baker appeared out of all episodes
-      aired in that series/season.
+      last_date_us
+         A date denoting original airdate of the last episode in which a
+         given baker appeared (in the US).
 
-   percent_technical_top3
-      A percentage denoting the number of episodes in which a given
-      baker placed in the top 3 for the technical challenge, out of the
-      number of total episodes that the baker appeared in.
+      percent_episodes_appeared
+         A percentage denoting the number of episodes in a given
+         series/season in which a given baker appeared out of all
+         episodes aired in that series/season.
 
-   .. rubric:: Source
-      :name: source
+      percent_technical_top3
+         A percentage denoting the number of episodes in which a given
+         baker placed in the top 3 for the technical challenge, out of
+         the number of total episodes that the baker appeared in.
 
-   See
-   https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#The_Bakers,
-   for example, for Series 1 bakers.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      See
+      https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#The_Bakers,
+      for example, for Series 1 bakers.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      if (require('tibble')) {
-        bakers
-       }
-      head(bakers)
+      ::
+
+         if (require('tibble')) {
+           bakers
+          }
+         head(bakers)

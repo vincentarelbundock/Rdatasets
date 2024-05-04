@@ -1,56 +1,58 @@
 .. container::
 
-   ======= ===============
-   gss2010 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: 2010 General Social Survey
-      :name: gss2010
+      ======= ===============
+      gss2010 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: 2010 General Social Survey
+         :name: general-social-survey
 
-   Data from the 2010 General Social Survey.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from the 2010 General Social Survey.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      gss2010
+      ::
 
-   .. rubric:: Format
-      :name: format
+         gss2010
 
-   A data frame with 2044 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   hrsrelax
-      After an average work day, about how many hours do you have to
-      relax or pursue activities that you enjoy
+      A data frame with 2044 observations on the following 5 variables.
 
-   mntlhlth
-      For how many days during the past 30 days was your mental health,
-      which includes stress, depression, and problems with emotions, not
-      good?
+      hrsrelax
+         After an average work day, about how many hours do you have to
+         relax or pursue activities that you enjoy
 
-   hrs1
-      Hours worked each week.
+      mntlhlth
+         For how many days during the past 30 days was your mental
+         health, which includes stress, depression, and problems with
+         emotions, not good?
 
-   degree
-      Educational attainment or degree.
+      hrs1
+         Hours worked each week.
 
-   grass
-      Do you think the use of marijuana should be made legal, or not?
+      degree
+         Educational attainment or degree.
 
-   .. rubric:: Source
-      :name: source
+      grass
+         Do you think the use of marijuana should be made legal, or not?
 
-   US 2010 General Social Survey.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      US 2010 General Social Survey.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
+
+      ::
 
 
-      gss2010
+         gss2010

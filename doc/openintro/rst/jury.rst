@@ -1,37 +1,39 @@
 .. container::
 
-   ==== ===============
-   jury R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Simulated juror data set
-      :name: jury
+      ==== ===============
+      jury R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Simulated juror data set
+         :name: simulated-juror-data-set
 
-   Simulated data set of registered voters proportions and
-   representation on juries.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Simulated data set of registered voters proportions and
+      representation on juries.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      jury
+      ::
 
-   .. rubric:: Format
-      :name: format
+         jury
 
-   A data frame with 275 observations on the following variable.
+      .. rubric:: Format
+         :name: format
 
-   race
-      a factor with levels ``black`` ``hispanic`` ``other`` ``white``
+      A data frame with 275 observations on the following variable.
 
-   .. rubric:: Examples
-      :name: examples
+      race
+         a factor with levels ``black`` ``hispanic`` ``other`` ``white``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
+
+      ::
 
 
-      jury
+         jury

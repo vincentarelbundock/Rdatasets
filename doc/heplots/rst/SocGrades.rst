@@ -1,111 +1,110 @@
 .. container::
 
-   ========= ===============
-   SocGrades R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Grades in a Sociology Course
-      :name: SocGrades
+      ========= ===============
+      SocGrades R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Grades in a Sociology Course
+         :name: grades-in-a-sociology-course
 
-   The data set ``SocGrades`` contains four outcome measures on student
-   performance in an introductory sociology course together with six
-   potential predictors. These data were used by Marascuilo and Levin
-   (1983) for an example of canonical correlation analysis, but are also
-   suitable as examples of multivariate multiple regression, MANOVA,
-   MANCOVA and step-down analysis in multivariate linear models.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The data set ``SocGrades`` contains four outcome measures on
+      student performance in an introductory sociology course together
+      with six potential predictors. These data were used by Marascuilo
+      and Levin (1983) for an example of canonical correlation analysis,
+      but are also suitable as examples of multivariate multiple
+      regression, MANOVA, MANCOVA and step-down analysis in multivariate
+      linear models.
 
-   .. code:: R
+      .. rubric:: Format
+         :name: format
 
-      data(SocGrades)
+      A data frame with 40 observations on the following 10 variables.
 
-   .. rubric:: Format
-      :name: format
+      ``class``
+         Social class, an ordered factor with levels ``1`` > ``2`` >
+         ``3``
 
-   A data frame with 40 observations on the following 10 variables.
+      ``sex``
+         sex, a factor with levels ``F`` ``M``
 
-   ``class``
-      Social class, an ordered factor with levels ``1`` > ``2`` > ``3``
+      ``gpa``
+         grade point average
 
-   ``sex``
-      sex, a factor with levels ``F`` ``M``
+      ``boards``
+         College Board test scores
 
-   ``gpa``
-      grade point average
+      ``hssoc``
+         previous high school unit in sociology, a factor with 2 ``no``,
+         ``yes``
 
-   ``boards``
-      College Board test scores
+      ``pretest``
+         score on course pretest
 
-   ``hssoc``
-      previous high school unit in sociology, a factor with 2 ``no``,
-      ``yes``
+      ``midterm1``
+         score on first midterm exam
 
-   ``pretest``
-      score on course pretest
+      ``midterm2``
+         score on second midterm exam
 
-   ``midterm1``
-      score on first midterm exam
+      ``final``
+         score on final exam
 
-   ``midterm2``
-      score on second midterm exam
+      ``eval``
+         course evaluation
 
-   ``final``
-      score on final exam
+      .. rubric:: Details
+         :name: details
 
-   ``eval``
-      course evaluation
+      ``midterm1``, ``midterm2``, ``final``, and possibly ``eval`` are
+      the response variables. All other variables are potential
+      predictors.
 
-   .. rubric:: Details
-      :name: details
+      The factors ``class``, ``sex``, and ``hssoc`` can be used with
+      ``as.numeric`` in correlational analyses.
 
-   ``midterm1``, ``midterm2``, ``final``, and possibly ``eval`` are the
-   response variables. All other variables are potential predictors.
+      .. rubric:: Source
+         :name: source
 
-   The factors ``class``, ``sex``, and ``hssoc`` can be used with
-   ``as.numeric`` in correlational analyses.
+      Marascuilo, L. A. and Levin, J. R. (1983). *Multivariate
+      Statistics in the Social Sciences* Monterey, CA: Brooks/Cole,
+      Table 5-1, p. 192.
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: Examples
+         :name: examples
 
-   Marascuilo, L. A. and Levin, J. R. (1983). *Multivariate Statistics
-   in the Social Sciences* Monterey, CA: Brooks/Cole, Table 5-1, p. 192.
+      ::
 
-   .. rubric:: Examples
-      :name: examples
+         data(SocGrades)
+         # basic MLM
+         grades.mod <- lm(cbind(midterm1, midterm2, final, eval) ~ 
+             class + sex + gpa + boards + hssoc + pretest, data=SocGrades)
+             
+         car::Anova(grades.mod, test="Roy")
 
-   .. code:: R
+         clr <- c("red", "blue", "darkgreen", "magenta", "brown", "black", "darkgray")
+         heplot(grades.mod, col=clr)
+         pairs(grades.mod, col=clr)
 
-      data(SocGrades)
-      # basic MLM
-      grades.mod <- lm(cbind(midterm1, midterm2, final, eval) ~ 
-          class + sex + gpa + boards + hssoc + pretest, data=SocGrades)
-          
-      Anova(grades.mod, test="Roy")
+         ## Not run: 
+         heplot3d(grades.mod, col=clr, wire=FALSE)
 
-      clr <- c("red", "blue", "darkgreen", "magenta", "brown", "black", "darkgray")
-      heplot(grades.mod, col=clr)
-      pairs(grades.mod, col=clr)
+         ## End(Not run)
 
-      ## Not run: 
-      heplot3d(grades.mod, col=clr, wire=FALSE)
+         if (require(candisc)) {
+             # calculate canonical results for all terms
+             grades.can <- candiscList(grades.mod)
+             # extract canonical R^2s
+             unlist(lapply(grades.can, function(x) x$canrsq))
+             # plot class effect in canonical space
+             heplot(grades.can, term="class", scale=4)   
 
-      ## End(Not run)
-
-      if (require(candisc)) {
-          # calculate canonical results for all terms
-          grades.can <- candiscList(grades.mod)
-          # extract canonical R^2s
-          unlist(lapply(grades.can, function(x) x$canrsq))
-          # plot class effect in canonical space
-          heplot(grades.can, term="class", scale=4)   
-
-          # 1 df terms: show canonical scores and weights for responses
-          plot(grades.can, term="sex")
-          plot(grades.can, term="gpa")
-          plot(grades.can, term="boards")
-          }
+             # 1 df terms: show canonical scores and weights for responses
+             plot(grades.can, term="sex")
+             plot(grades.can, term="gpa")
+             plot(grades.can, term="boards")
+             }

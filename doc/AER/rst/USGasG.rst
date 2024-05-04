@@ -1,132 +1,135 @@
 .. container::
 
-   ====== ===============
-   USGasG R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: US Gasoline Market Data (1960–1995, Greene)
-      :name: USGasG
+      ====== ===============
+      USGasG R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: US Gasoline Market Data (1960–1995, Greene)
+         :name: us-gasoline-market-data-19601995-greene
 
-   Time series data on the US gasoline market.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Time series data on the US gasoline market.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("USGasG")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("USGasG")
 
-   An annual multiple time series from 1960 to 1995 with 10 variables.
+      .. rubric:: Format
+         :name: format
 
-   gas
-      Total US gasoline consumption (computed as total expenditure
-      divided by price index).
+      An annual multiple time series from 1960 to 1995 with 10
+      variables.
 
-   price
-      Price index for gasoline.
+      gas
+         Total US gasoline consumption (computed as total expenditure
+         divided by price index).
 
-   income
-      Per capita disposable income.
+      price
+         Price index for gasoline.
 
-   newcar
-      Price index for new cars.
+      income
+         Per capita disposable income.
 
-   usedcar
-      Price index for used cars.
+      newcar
+         Price index for new cars.
 
-   transport
-      Price index for public transportation.
+      usedcar
+         Price index for used cars.
 
-   durable
-      Aggregate price index for consumer durables.
+      transport
+         Price index for public transportation.
 
-   nondurable
-      Aggregate price index for consumer nondurables.
+      durable
+         Aggregate price index for consumer durables.
 
-   service
-      Aggregate price index for consumer services.
+      nondurable
+         Aggregate price index for consumer nondurables.
 
-   population
-      US total population in millions.
+      service
+         Aggregate price index for consumer services.
 
-   .. rubric:: Source
-      :name: source
+      population
+         US total population in millions.
 
-   Online complements to Greene (2003). Table F2.2.
+      .. rubric:: Source
+         :name: source
 
-   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+      Online complements to Greene (2003). Table F2.2.
 
-   .. rubric:: References
-      :name: references
+      https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
-   Saddle River, NJ: Prentice Hall.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+      Saddle River, NJ: Prentice Hall.
 
-   ``Greene2003``, ``USGasB``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Greene2003``, ``USGasB``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("USGasG", package = "AER")
-      plot(USGasG)
+      ::
 
-      ## Greene (2003)
-      ## Example 2.3
-      fm <- lm(log(gas/population) ~ log(price) + log(income) + log(newcar) + log(usedcar),
-        data = as.data.frame(USGasG))
-      summary(fm)
+         data("USGasG", package = "AER")
+         plot(USGasG)
 
-      ## Example 4.4
-      ## estimates and standard errors (note different offset for intercept)
-      coef(fm)
-      sqrt(diag(vcov(fm)))
-      ## confidence interval
-      confint(fm, parm = "log(income)")
-      ## test linear hypothesis
-      linearHypothesis(fm, "log(income) = 1")
+         ## Greene (2003)
+         ## Example 2.3
+         fm <- lm(log(gas/population) ~ log(price) + log(income) + log(newcar) + log(usedcar),
+           data = as.data.frame(USGasG))
+         summary(fm)
 
-      ## Example 7.6
-      ## re-used in Example 8.3
-      trend <- 1:nrow(USGasG)
-      shock <- factor(time(USGasG) > 1973, levels = c(FALSE, TRUE),
-        labels = c("before", "after"))
+         ## Example 4.4
+         ## estimates and standard errors (note different offset for intercept)
+         coef(fm)
+         sqrt(diag(vcov(fm)))
+         ## confidence interval
+         confint(fm, parm = "log(income)")
+         ## test linear hypothesis
+         linearHypothesis(fm, "log(income) = 1")
 
-      ## 1960-1995
-      fm1 <- lm(log(gas/population) ~ log(income) + log(price) + log(newcar) +
-        log(usedcar) + trend, data = as.data.frame(USGasG))
-      summary(fm1)
-      ## pooled
-      fm2 <- lm(log(gas/population) ~ shock + log(income) + log(price) + log(newcar) +
-        log(usedcar) + trend, data = as.data.frame(USGasG))
-      summary(fm2)
-      ## segmented
-      fm3 <- lm(log(gas/population) ~ shock/(log(income) + log(price) + log(newcar) +
-        log(usedcar) + trend), data = as.data.frame(USGasG))
-      summary(fm3)
+         ## Example 7.6
+         ## re-used in Example 8.3
+         trend <- 1:nrow(USGasG)
+         shock <- factor(time(USGasG) > 1973, levels = c(FALSE, TRUE),
+           labels = c("before", "after"))
 
-      ## Chow test
-      anova(fm3, fm1)
-      library("strucchange")
-      sctest(log(gas/population) ~ log(income) + log(price) + log(newcar) +
-        log(usedcar) + trend, data = USGasG, point = c(1973, 1), type = "Chow")
-      ## Recursive CUSUM test
-      rcus <- efp(log(gas/population) ~ log(income) + log(price) + log(newcar) +
-        log(usedcar) + trend, data = USGasG, type = "Rec-CUSUM")
-      plot(rcus)
-      sctest(rcus)
-      ## Note: Greene's remark that the break is in 1984 (where the process crosses its
-      ## boundary) is wrong. The break appears to be no later than 1976.
+         ## 1960-1995
+         fm1 <- lm(log(gas/population) ~ log(income) + log(price) + log(newcar) +
+           log(usedcar) + trend, data = as.data.frame(USGasG))
+         summary(fm1)
+         ## pooled
+         fm2 <- lm(log(gas/population) ~ shock + log(income) + log(price) + log(newcar) +
+           log(usedcar) + trend, data = as.data.frame(USGasG))
+         summary(fm2)
+         ## segmented
+         fm3 <- lm(log(gas/population) ~ shock/(log(income) + log(price) + log(newcar) +
+           log(usedcar) + trend), data = as.data.frame(USGasG))
+         summary(fm3)
 
-      ## More examples can be found in:
-      ## help("Greene2003")
+         ## Chow test
+         anova(fm3, fm1)
+         library("strucchange")
+         sctest(log(gas/population) ~ log(income) + log(price) + log(newcar) +
+           log(usedcar) + trend, data = USGasG, point = c(1973, 1), type = "Chow")
+         ## Recursive CUSUM test
+         rcus <- efp(log(gas/population) ~ log(income) + log(price) + log(newcar) +
+           log(usedcar) + trend, data = USGasG, type = "Rec-CUSUM")
+         plot(rcus)
+         sctest(rcus)
+         ## Note: Greene's remark that the break is in 1984 (where the process crosses its
+         ## boundary) is wrong. The break appears to be no later than 1976.
+
+         ## More examples can be found in:
+         ## help("Greene2003")

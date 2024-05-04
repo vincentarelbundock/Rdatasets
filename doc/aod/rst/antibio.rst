@@ -1,44 +1,46 @@
 .. container::
 
-   ======= ===============
-   antibio R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Antibiotics against Shipping Fever in Calves
-      :name: antibio
+      ======= ===============
+      antibio R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Antibiotics against Shipping Fever in Calves
+         :name: antibiotics-against-shipping-fever-in-calves
 
-   Hypothetical drug trial to compare the effect of four antibiotics
-   against Shipping fever in calves (Shoukri and Pause, 1999, Table
-   3.11).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Hypothetical drug trial to compare the effect of four antibiotics
+      against Shipping fever in calves (Shoukri and Pause, 1999, Table
+      3.11).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(antibio)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(antibio)
 
-   A data frame with 24 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   treatment
-      A factor with levels ``1``, ``2``, ``3`` and ``4``
+      A data frame with 24 observations on the following 3 variables.
 
-   n
-      A numeric vector: the number of treated animals within a two-week
-      period.
+      treatment
+         A factor with levels ``1``, ``2``, ``3`` and ``4``
 
-   y
-      A numeric vector: the number of deaths at the end of the two
-      weeks.
+      n
+         A numeric vector: the number of treated animals within a
+         two-week period.
 
-   .. rubric:: References
-      :name: references
+      y
+         A numeric vector: the number of deaths at the end of the two
+         weeks.
 
-   Shoukri, M.M., Pause, C.A., 1999, 2nd ed. *Statistical methods for
-   health sciences*. CRC Press, London.
+      .. rubric:: References
+         :name: references
+
+      Shoukri, M.M., Pause, C.A., 1999, 2nd ed. *Statistical methods for
+      health sciences*. CRC Press, London.

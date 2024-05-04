@@ -1,110 +1,113 @@
 .. container::
 
-   ======= ===============
-   fertil2 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: fertil2
-      :name: fertil2
+      ======= ===============
+      fertil2 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: fertil2
+         :name: fertil2
 
-   Wooldridge Source: These data were obtained by James Heakins, a
-   former MSU undergraduate, for a term project. They come from
-   Botswana’s 1988 Demographic and Health Survey. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: These data were obtained by James Heakins, a
+      former MSU undergraduate, for a term project. They come from
+      Botswana’s 1988 Demographic and Health Survey. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('fertil2')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('fertil2')
 
-   A data.frame with 4361 observations on 27 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **mnthborn:** month woman born
+      A data.frame with 4361 observations on 27 variables:
 
-   -  **yearborn:** year woman born
+      -  **mnthborn:** month woman born
 
-   -  **age:** age in years
+      -  **yearborn:** year woman born
 
-   -  **electric:** =1 if has electricity
+      -  **age:** age in years
 
-   -  **radio:** =1 if has radio
+      -  **electric:** =1 if has electricity
 
-   -  **tv:** =1 if has tv
+      -  **radio:** =1 if has radio
 
-   -  **bicycle:** =1 if has bicycle
+      -  **tv:** =1 if has tv
 
-   -  **educ:** years of education
+      -  **bicycle:** =1 if has bicycle
 
-   -  **ceb:** children ever born
+      -  **educ:** years of education
 
-   -  **agefbrth:** age at first birth
+      -  **ceb:** children ever born
 
-   -  **children:** number of living children
+      -  **agefbrth:** age at first birth
 
-   -  **knowmeth:** =1 if know about birth control
+      -  **children:** number of living children
 
-   -  **usemeth:** =1 if ever use birth control
+      -  **knowmeth:** =1 if know about birth control
 
-   -  **monthfm:** month of first marriage
+      -  **usemeth:** =1 if ever use birth control
 
-   -  **yearfm:** year of first marriage
+      -  **monthfm:** month of first marriage
 
-   -  **agefm:** age at first marriage
+      -  **yearfm:** year of first marriage
 
-   -  **idlnchld:** 'ideal' number of children
+      -  **agefm:** age at first marriage
 
-   -  **heduc:** husband's years of education
+      -  **idlnchld:** 'ideal' number of children
 
-   -  **agesq:** age^2
+      -  **heduc:** husband's years of education
 
-   -  **urban:** =1 if live in urban area
+      -  **agesq:** age^2
 
-   -  **urb_educ:** urban*educ
+      -  **urban:** =1 if live in urban area
 
-   -  **spirit:** =1 if religion == spirit
+      -  **urb_educ:** urban*educ
 
-   -  **protest:** =1 if religion == protestant
+      -  **spirit:** =1 if religion == spirit
 
-   -  **catholic:** =1 if religion == catholic
+      -  **protest:** =1 if religion == protestant
 
-   -  **frsthalf:** =1 if mnthborn <= 6
+      -  **catholic:** =1 if religion == catholic
 
-   -  **educ0:** =1 if educ == 0
+      -  **frsthalf:** =1 if mnthborn <= 6
 
-   -  **evermarr:** =1 if ever married
+      -  **educ0:** =1 if educ == 0
 
-   .. rubric:: Notes
-      :name: notes
+      -  **evermarr:** =1 if ever married
 
-   Currently, this data set is used only in one computer exercise. Since
-   the dependent variable of interest – number of living children or
-   number of children every born – is a count variable, the Poisson
-   regression model discussed in Chapter 17 can be used. However, some
-   care is required to combine Poisson regression with an endogenous
-   explanatory variable (educ). I refer you to Chapter 19 of my book
-   Econometric Analysis of Cross Section and Panel Data. Even in the
-   context of linear models, much can be done beyond Computer Exercise
-   C15.2. At a minimum, the binary indicators for various religions can
-   be added as controls. One might also interact the schooling variable,
-   educ, with some of the exogenous explanatory variables.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: page 547
+      Currently, this data set is used only in one computer exercise.
+      Since the dependent variable of interest – number of living
+      children or number of children every born – is a count variable,
+      the Poisson regression model discussed in Chapter 17 can be used.
+      However, some care is required to combine Poisson regression with
+      an endogenous explanatory variable (educ). I refer you to Chapter
+      19 of my book Econometric Analysis of Cross Section and Panel
+      Data. Even in the context of linear models, much can be done
+      beyond Computer Exercise C15.2. At a minimum, the binary
+      indicators for various religions can be added as controls. One
+      might also interact the schooling variable, educ, with some of the
+      exogenous explanatory variables.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: page 547
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(fertil2)
+      ::
+
+          str(fertil2)

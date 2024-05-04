@@ -1,101 +1,103 @@
 .. container::
 
-   ======= ===============
-   athlet1 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: athlet1
-      :name: athlet1
+      ======= ===============
+      athlet1 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: athlet1
+         :name: athlet1
 
-   Wooldridge Sources: Peterson's Guide to Four Year Colleges, 1994 and
-   1995 (24th and 25th editions). Princeton University Press. Princeton,
-   NJ. The Official 1995 College Basketball Records Book, 1994, NCAA.
-   1995 Information Please Sports Almanac (6th edition). Houghton
-   Mifflin. New York, NY. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Sources: Peterson's Guide to Four Year Colleges, 1994
+      and 1995 (24th and 25th editions). Princeton University Press.
+      Princeton, NJ. The Official 1995 College Basketball Records Book,
+      1994, NCAA. 1995 Information Please Sports Almanac (6th edition).
+      Houghton Mifflin. New York, NY. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('athlet1')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('athlet1')
 
-   A data.frame with 118 observations on 23 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1992 or 1993
+      A data.frame with 118 observations on 23 variables:
 
-   -  **apps:** # applics for admission
+      -  **year:** 1992 or 1993
 
-   -  **top25:** perc frsh class in 25 hs perc
+      -  **apps:** # applics for admission
 
-   -  **ver500:** perc frsh >= 500 on verbal SAT
+      -  **top25:** perc frsh class in 25 hs perc
 
-   -  **mth500:** perc frsh >= 500 on math SAT
+      -  **ver500:** perc frsh >= 500 on verbal SAT
 
-   -  **stufac:** student-faculty ratio
+      -  **mth500:** perc frsh >= 500 on math SAT
 
-   -  **bowl:** = 1 if bowl game in prev yr
+      -  **stufac:** student-faculty ratio
 
-   -  **btitle:** = 1 if men's cnf chmps prv yr
+      -  **bowl:** = 1 if bowl game in prev yr
 
-   -  **finfour:** = 1 if men's final 4 prv yr
+      -  **btitle:** = 1 if men's cnf chmps prv yr
 
-   -  **lapps:** log(apps)
+      -  **finfour:** = 1 if men's final 4 prv yr
 
-   -  **d93:** =1 if year = 1993
+      -  **lapps:** log(apps)
 
-   -  **avg500:** (ver500+mth500)/2
+      -  **d93:** =1 if year = 1993
 
-   -  **cfinfour:** change in finfour
+      -  **avg500:** (ver500+mth500)/2
 
-   -  **clapps:** change in lapps
+      -  **cfinfour:** change in finfour
 
-   -  **cstufac:** change in stufac
+      -  **clapps:** change in lapps
 
-   -  **cbowl:** change in bowl
+      -  **cstufac:** change in stufac
 
-   -  **cavg500:** change in avg500
+      -  **cbowl:** change in bowl
 
-   -  **cbtitle:** change in btitle
+      -  **cavg500:** change in avg500
 
-   -  **lapps_1:** lapps lagged
+      -  **cbtitle:** change in btitle
 
-   -  **school:** name of university
+      -  **lapps_1:** lapps lagged
 
-   -  **ctop25:** change in top25
+      -  **school:** name of university
 
-   -  **bball:** =1 if btitle or finfour
+      -  **ctop25:** change in top25
 
-   -  **cbball:** change in bball
+      -  **bball:** =1 if btitle or finfour
 
-   .. rubric:: Notes
-      :name: notes
+      -  **cbball:** change in bball
 
-   These data were collected by Patrick Tulloch, an MSU economics major,
-   for a term project. The “athletic success” variables are for the year
-   prior to the enrollment and academic data. Updating these data to get
-   a longer stretch of years, and including appearances in the “Sweet
-   16” NCAA basketball tournaments, would make for a more convincing
-   analysis. With the growing popularity of women’s sports, especially
-   basketball, an analysis that includes success in women’s athletics
-   would be interesting.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: page 697
+      These data were collected by Patrick Tulloch, an MSU economics
+      major, for a term project. The “athletic success” variables are
+      for the year prior to the enrollment and academic data. Updating
+      these data to get a longer stretch of years, and including
+      appearances in the “Sweet 16” NCAA basketball tournaments, would
+      make for a more convincing analysis. With the growing popularity
+      of women’s sports, especially basketball, an analysis that
+      includes success in women’s athletics would be interesting.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: page 697
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(athlet1)
+      ::
+
+          str(athlet1)

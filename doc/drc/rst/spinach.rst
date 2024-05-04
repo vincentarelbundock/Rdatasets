@@ -1,65 +1,68 @@
 .. container::
 
-   ======= ===============
-   spinach R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Inhibition of photosynthesis
-      :name: spinach
+      ======= ===============
+      spinach R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Inhibition of photosynthesis
+         :name: inhibition-of-photosynthesis
 
-   Data from an experiment investigating the inhibition of
-   photosynthesis in response to two synthetic photosystem II
-   inhibitors, the herbicides diuron and bentazon. More specifically,
-   the effect of oxygen consumption of thylakoid membranes
-   (chloroplasts) from spinach was measured after incubation with the
-   synthetic inhibitors in 5 assays, resulting in 5 dose-response
-   curves.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from an experiment investigating the inhibition of
+      photosynthesis in response to two synthetic photosystem II
+      inhibitors, the herbicides diuron and bentazon. More specifically,
+      the effect of oxygen consumption of thylakoid membranes
+      (chloroplasts) from spinach was measured after incubation with the
+      synthetic inhibitors in 5 assays, resulting in 5 dose-response
+      curves.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(spinach)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(spinach)
 
-   A data frame with 105 observations on the following four variables:
+      .. rubric:: Format
+         :name: format
 
-   CURVE
-      a numeric vector specifying the assay or curve (a total of 5
-      independent assays where used in this experiment).
+      A data frame with 105 observations on the following four
+      variables:
 
-   HERBICIDE
-      a character vector specifying the herbicide applied: bentazon or
-      diuron.
+      CURVE
+         a numeric vector specifying the assay or curve (a total of 5
+         independent assays where used in this experiment).
 
-   DOSE
-      a numeric vector giving the herbicide concentration in muMol.
+      HERBICIDE
+         a character vector specifying the herbicide applied: bentazon
+         or diuron.
 
-   SLOPE
-      a numeric vector with the measured response: oxygen consumption of
-      thylakoid membranes.
+      DOSE
+         a numeric vector giving the herbicide concentration in muMol.
 
-   .. rubric:: Details
-      :name: details
+      SLOPE
+         a numeric vector with the measured response: oxygen consumption
+         of thylakoid membranes.
 
-   The experiment is described in more details by Streibig (1998).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The experiment is described in more details by Streibig (1998).
 
-   Streibig, J. C. (1998) Joint action of natural and synthetic
-   photosystem II inhibitors, *Pesticide Science*, **55**, 137–146.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Streibig, J. C. (1998) Joint action of natural and synthetic
+      photosystem II inhibitors, *Pesticide Science*, **55**, 137–146.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## Displaying the first rows in the dataset
-      head(spinach)  # displaying first 6 rows in the data set
+      ::
+
+         ## Displaying the first rows in the dataset
+         head(spinach)  # displaying first 6 rows in the data set

@@ -1,62 +1,64 @@
 .. container::
 
-   ==== ===============
-   nyse R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: nyse
-      :name: nyse
+      ==== ===============
+      nyse R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: nyse
+         :name: nyse
 
-   Wooldridge Source: These are Wednesday closing prices of
-   value-weighted NYSE average, available in many publications. I do not
-   recall the particular source I used when I collected these data at
-   MIT. Probably the easiest way to get similar data is to go to the
-   NYSE web site, www.nyse.com. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: These are Wednesday closing prices of
+      value-weighted NYSE average, available in many publications. I do
+      not recall the particular source I used when I collected these
+      data at MIT. Probably the easiest way to get similar data is to go
+      to the NYSE web site, www.nyse.com. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('nyse')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('nyse')
 
-   A data.frame with 691 observations on 8 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **price:** NYSE stock price index
+      A data.frame with 691 observations on 8 variables:
 
-   -  **return:** 100*(p - p(-1))/p(-1))
+      -  **price:** NYSE stock price index
 
-   -  **return_1:** lagged return
+      -  **return:** 100*(p - p(-1))/p(-1))
 
-   -  **t:**
+      -  **return_1:** lagged return
 
-   -  **price_1:**
+      -  **t:**
 
-   -  **price_2:**
+      -  **price_1:**
 
-   -  **cprice:** price - price_1
+      -  **price_2:**
 
-   -  **cprice_1:** lagged cprice
+      -  **cprice:** price - price_1
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **cprice_1:** lagged cprice
 
-   pages 388-389, 407, 436, 438, 440-441, 442, 663-664
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 388-389, 407, 436, 438, 440-441, 442, 663-664
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(nyse)
+      ::
+
+          str(nyse)

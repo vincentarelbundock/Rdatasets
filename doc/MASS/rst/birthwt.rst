@@ -1,84 +1,87 @@
 .. container::
 
-   ======= ===============
-   birthwt R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Risk Factors Associated with Low Infant Birth Weight
-      :name: birthwt
+      ======= ===============
+      birthwt R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Risk Factors Associated with Low Infant Birth Weight
+         :name: risk-factors-associated-with-low-infant-birth-weight
 
-   The ``birthwt`` data frame has 189 rows and 10 columns. The data were
-   collected at Baystate Medical Center, Springfield, Mass during 1986.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``birthwt`` data frame has 189 rows and 10 columns. The data
+      were collected at Baystate Medical Center, Springfield, Mass
+      during 1986.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      birthwt
+      ::
 
-   .. rubric:: Format
-      :name: format
+         birthwt
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``low``
-      indicator of birth weight less than 2.5 kg.
+      This data frame contains the following columns:
 
-   ``age``
-      mother's age in years.
+      ``low``
+         indicator of birth weight less than 2.5 kg.
 
-   ``lwt``
-      mother's weight in pounds at last menstrual period.
+      ``age``
+         mother's age in years.
 
-   ``race``
-      mother's race (``1`` = white, ``2`` = black, ``3`` = other).
+      ``lwt``
+         mother's weight in pounds at last menstrual period.
 
-   ``smoke``
-      smoking status during pregnancy.
+      ``race``
+         mother's race (``1`` = white, ``2`` = black, ``3`` = other).
 
-   ``ptl``
-      number of previous premature labours.
+      ``smoke``
+         smoking status during pregnancy.
 
-   ``ht``
-      history of hypertension.
+      ``ptl``
+         number of previous premature labours.
 
-   ``ui``
-      presence of uterine irritability.
+      ``ht``
+         history of hypertension.
 
-   ``ftv``
-      number of physician visits during the first trimester.
+      ``ui``
+         presence of uterine irritability.
 
-   ``bwt``
-      birth weight in grams.
+      ``ftv``
+         number of physician visits during the first trimester.
 
-   .. rubric:: Source
-      :name: source
+      ``bwt``
+         birth weight in grams.
 
-   Hosmer, D.W. and Lemeshow, S. (1989) *Applied Logistic Regression.*
-   New York: Wiley
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Hosmer, D.W. and Lemeshow, S. (1989) *Applied Logistic
+      Regression.* New York: Wiley
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      bwt <- with(birthwt, {
-      race <- factor(race, labels = c("white", "black", "other"))
-      ptd <- factor(ptl > 0)
-      ftv <- factor(ftv)
-      levels(ftv)[-(1:2)] <- "2+"
-      data.frame(low = factor(low), age, lwt, race, smoke = (smoke > 0),
-                 ptd, ht = (ht > 0), ui = (ui > 0), ftv)
-      })
-      options(contrasts = c("contr.treatment", "contr.poly"))
-      glm(low ~ ., binomial, bwt)
+      ::
+
+         bwt <- with(birthwt, {
+         race <- factor(race, labels = c("white", "black", "other"))
+         ptd <- factor(ptl > 0)
+         ftv <- factor(ftv)
+         levels(ftv)[-(1:2)] <- "2+"
+         data.frame(low = factor(low), age, lwt, race, smoke = (smoke > 0),
+                    ptd, ht = (ht > 0), ui = (ui > 0), ftv)
+         })
+         options(contrasts = c("contr.treatment", "contr.poly"))
+         glm(low ~ ., binomial, bwt)

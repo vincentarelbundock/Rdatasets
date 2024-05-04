@@ -1,58 +1,60 @@
 .. container::
 
-   ========== ===============
-   EuroEnergy R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: European Energy Consumption Data
-      :name: EuroEnergy
+      ========== ===============
+      EuroEnergy R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: European Energy Consumption Data
+         :name: european-energy-consumption-data
 
-   Cross-section data on energy consumption for 20 European countries,
-   for the year 1980.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-section data on energy consumption for 20 European
+      countries, for the year 1980.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("EuroEnergy")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("EuroEnergy")
 
-   A data frame containing 20 observations on 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   gdp
-      Real gross domestic product for the year 1980 (in million 1975 US
-      dollars).
+      A data frame containing 20 observations on 2 variables.
 
-   energy
-      Aggregate energy consumption (in million kilograms coal
-      equivalence).
+      gdp
+         Real gross domestic product for the year 1980 (in million 1975
+         US dollars).
 
-   .. rubric:: Source
-      :name: source
+      energy
+         Aggregate energy consumption (in million kilograms coal
+         equivalence).
 
-   The data are from Baltagi (2002).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The data are from Baltagi (2002).
 
-   Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
 
-   ``Baltagi2002``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Baltagi2002``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("EuroEnergy")
-      energy_lm <- lm(log(energy) ~ log(gdp), data = EuroEnergy)
-      influence.measures(energy_lm)
+      ::
+
+         data("EuroEnergy")
+         energy_lm <- lm(log(energy) ~ log(gdp), data = EuroEnergy)
+         influence.measures(energy_lm)

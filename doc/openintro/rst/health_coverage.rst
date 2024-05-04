@@ -1,46 +1,49 @@
 .. container::
 
-   =============== ===============
-   health_coverage R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: Health Coverage and Health Status
-      :name: health_coverage
+      =============== ===============
+      health_coverage R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Health Coverage and Health Status
+         :name: health-coverage-and-health-status
 
-   Survey responses for 20,000 responses to the Behavioral Risk Factor
-   Surveillance System.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Survey responses for 20,000 responses to the Behavioral Risk
+      Factor Surveillance System.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      health_coverage
+      ::
 
-   .. rubric:: Format
-      :name: format
+         health_coverage
 
-   A data frame with 20000 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   coverage
-      Whether the person had health coverage or not.
+      A data frame with 20000 observations on the following 2 variables.
 
-   health_status
-      The person's health status.
+      coverage
+         Whether the person had health coverage or not.
 
-   .. rubric:: Source
-      :name: source
+      health_status
+         The person's health status.
 
-   Office of Surveillance, Epidemiology, and Laboratory Services
-   Behavioral Risk Factor Surveillance System, BRFSS 2010 Survey Data.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Office of Surveillance, Epidemiology, and Laboratory Services
+      Behavioral Risk Factor Surveillance System, BRFSS 2010 Survey
+      Data.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
+
+      ::
 
 
-      table(health_coverage)
+         table(health_coverage)

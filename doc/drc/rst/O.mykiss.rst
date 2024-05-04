@@ -1,72 +1,77 @@
 .. container::
 
-   ======== ===============
-   O.mykiss R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Test data from a 21 day fish test
-      :name: O.mykiss
+      ======== ===============
+      O.mykiss R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Test data from a 21 day fish test
+         :name: test-data-from-a-21-day-fish-test
 
-   Test data from a 21 day fish test following the guidelines OECD
-   GL204, using the test organism Rainbow trout *Oncorhynchus mykiss*.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Test data from a 21 day fish test following the guidelines OECD
+      GL204, using the test organism Rainbow trout *Oncorhynchus
+      mykiss*.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(O.mykiss)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(O.mykiss)
 
-   A data frame with 70 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``conc``
-      a numeric vector of concentrations (mg/l)
+      A data frame with 70 observations on the following 2 variables.
 
-   ``weight``
-      a numeric vector of wet weights (g)
+      ``conc``
+         a numeric vector of concentrations (mg/l)
 
-   .. rubric:: Details
-      :name: details
+      ``weight``
+         a numeric vector of wet weights (g)
 
-   Weights are measured after 28 days.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Weights are measured after 28 days.
 
-   Organisation for Economic Co-operation and Development (OECD) (2006)
-   *CURRENT APPROACHES IN THE STATISTICAL ANALYSIS OF ECOTOXICITY DATA:
-   A GUIDANCE TO APPLICATION - ANNEXES*, Paris (p. 65).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Organisation for Economic Co-operation and Development (OECD)
+      (2006) *CURRENT APPROACHES IN THE STATISTICAL ANALYSIS OF
+      ECOTOXICITY DATA: A GUIDANCE TO APPLICATION - ANNEXES*, Paris (p.
+      65).
 
-   Organisation for Economic Co-operation and Development (OECD) (2006)
-   *CURRENT APPROACHES IN THE STATISTICAL ANALYSIS OF ECOTOXICITY DATA:
-   A GUIDANCE TO APPLICATION - ANNEXES*, Paris (pp. 80–85).
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Organisation for Economic Co-operation and Development (OECD)
+      (2006) *CURRENT APPROACHES IN THE STATISTICAL ANALYSIS OF
+      ECOTOXICITY DATA: A GUIDANCE TO APPLICATION - ANNEXES*, Paris (pp.
+      80–85).
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      head(O.mykiss)
+      ::
 
-      ## Fitting exponential model
-      O.mykiss.m1 <- drm(weight ~ conc, data = O.mykiss, fct = EXD.2(), na.action = na.omit)
-      modelFit(O.mykiss.m1)
-      summary(O.mykiss.m1)
+         head(O.mykiss)
 
-      ## Fitting same model with transform-both-sides approach
-      O.mykiss.m2 <- boxcox(O.mykiss.m1 , method = "anova")
-      summary(O.mykiss.m2)
-      # no need for a transformation
+         ## Fitting exponential model
+         O.mykiss.m1 <- drm(weight ~ conc, data = O.mykiss, fct = EXD.2(), na.action = na.omit)
+         modelFit(O.mykiss.m1)
+         summary(O.mykiss.m1)
 
-      ## Plotting the fit
-      plot(O.mykiss.m1, type = "all", xlim = c(0, 500), ylim = c(0,4),
-      xlab = "Concentration (mg/l)", ylab = "Weight (g)", broken = TRUE)
+         ## Fitting same model with transform-both-sides approach
+         O.mykiss.m2 <- boxcox(O.mykiss.m1 , method = "anova")
+         summary(O.mykiss.m2)
+         # no need for a transformation
+
+         ## Plotting the fit
+         plot(O.mykiss.m1, type = "all", xlim = c(0, 500), ylim = c(0,4),
+         xlab = "Concentration (mg/l)", ylab = "Weight (g)", broken = TRUE)

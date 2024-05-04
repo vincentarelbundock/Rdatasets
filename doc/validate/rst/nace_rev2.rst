@@ -1,51 +1,53 @@
 .. container::
 
-   ========= ===============
-   nace_rev2 R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: NACE classification code table
-      :name: nace_rev2
+      ========= ===============
+      nace_rev2 R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: NACE classification code table
+         :name: nace-classification-code-table
 
-   Statistical Classification of Economic Activities.
+      .. rubric:: Description
+         :name: description
 
-   -  Order ``[integer]``
+      Statistical Classification of Economic Activities.
 
-   -  Level ``[integer]`` NACE level
+      -  Order ``[integer]``
 
-   -  Code ``[character]`` NACE code
+      -  Level ``[integer]`` NACE level
 
-   -  Parent ``[character]`` parent code of ``"Code"``
+      -  Code ``[character]`` NACE code
 
-   -  Description ``[character]``
+      -  Parent ``[character]`` parent code of ``"Code"``
 
-   -  This_item_includes ``[character]``
+      -  Description ``[character]``
 
-   -  This_item_also_includes ``[character]``
+      -  This_item_includes ``[character]``
 
-   -  Rulings ``[character]``
+      -  This_item_also_includes ``[character]``
 
-   -  This_item_excludes ``[character]``
+      -  Rulings ``[character]``
 
-   -  Reference_to_ISIC_Rev._4 ``[character]``
+      -  This_item_excludes ``[character]``
 
-   .. rubric:: Format
-      :name: format
+      -  Reference_to_ISIC_Rev._4 ``[character]``
 
-   A csv file, one NACE code per row.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: References
-      :name: references
+      A csv file, one NACE code per row.
 
-   This codelist was downloaded on 2020-10-21 from
-   `Eurostat <https://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&StrNom=NACE_REV2&StrLanguageCode=EN&StrLayoutCode=HIERARCHIC#>`__
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      This codelist was downloaded on 2020-10-21 from
+      `Eurostat <https://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_CLS_DLD&StrNom=NACE_REV2&StrLanguageCode=EN&StrLayoutCode=HIERARCHIC#>`__
 
-   ``hierarchy``
+      .. rubric:: See Also
+         :name: see-also
 
-   Other datasets: ``retailers``, ``samplonomy``
+      ``hierarchy``
+
+      Other datasets: ``retailers``, ``samplonomy``

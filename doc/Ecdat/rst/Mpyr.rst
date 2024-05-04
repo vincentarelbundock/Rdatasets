@@ -1,64 +1,67 @@
 .. container::
 
-   ==== ===============
-   Mpyr R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Money, National Product and Interest Rate
-      :name: Mpyr
+      ==== ===============
+      Mpyr R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Money, National Product and Interest Rate
+         :name: money-national-product-and-interest-rate
 
-   annual observations from 1900 to 1989
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 90
+      annual observations from 1900 to 1989
 
-   *observation* : country
+      *number of observations* : 90
 
-   *country* : United States
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Mpyr)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Mpyr)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   m
-      natural log of M1
+      A time series containing :
 
-   p
-      natural log of the net national product price deflator
+      m
+         natural log of M1
 
-   y
-      natural log of the net national product
+      p
+         natural log of the net national product price deflator
 
-   r
-      the commercial paper rate in percent at an annual rate
+      y
+         natural log of the net national product
 
-   .. rubric:: Source
-      :name: source
+      r
+         the commercial paper rate in percent at an annual rate
 
-   Stock, J. and M. Watson (1999) “Testing for common trends”, *Journal
-   of the American Statistical Association*, **83**, 1097-1107.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Stock, J. and M. Watson (1999) “Testing for common trends”,
+      *Journal of the American Statistical Association*, **83**,
+      1097-1107.
 
-   Hayashi, F. (2000) *Econometrics*, Princeton University Press,
-   http://fhayashi.fc2web.com/hayashi_econometrics.htm, chapter 10,
-   665-667.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Hayashi, F. (2000) *Econometrics*, Princeton University Press,
+      http://fhayashi.fc2web.com/hayashi_econometrics.htm, chapter 10,
+      665-667.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

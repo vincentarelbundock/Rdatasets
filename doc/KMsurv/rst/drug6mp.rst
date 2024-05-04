@@ -1,47 +1,49 @@
 .. container::
 
-   ======= ===============
-   drug6mp R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: data from Section 1.2
-      :name: drug6mp
+      ======= ===============
+      drug6mp R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Section 1.2
+         :name: data-from-section-1.2
 
-   The ``drug6mp`` data frame has 21 rows and 5 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``drug6mp`` data frame has 21 rows and 5 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   pair
-      pair number
+      This data frame contains the following columns:
 
-   remstat
-      Remission status at randomization (1=partial, 2=complete)
+      pair
+         pair number
 
-   t1
-      Time to relapse for placebo patients, months
+      remstat
+         Remission status at randomization (1=partial, 2=complete)
 
-   t2
-      Time to relapse for 6-MP patients, months
+      t1
+         Time to relapse for placebo patients, months
 
-   relapse
-      Relapse indicator (0=censored, 1=relapse) for 6-MP patients
+      t2
+         Time to relapse for 6-MP patients, months
 
-   .. rubric:: Source
-      :name: source
+      relapse
+         Relapse indicator (0=censored, 1=relapse) for 6-MP patients
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer. Freireich et al. (1963)
-   *Blood* 21: 699-716.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer. Freireich et al. (1963)
+      *Blood* 21: 699-716.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(drug6mp)
+      ::
+
+         data(drug6mp)

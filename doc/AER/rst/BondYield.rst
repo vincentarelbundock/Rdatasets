@@ -1,52 +1,54 @@
 .. container::
 
-   ========= ===============
-   BondYield R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Bond Yield Data
-      :name: BondYield
+      ========= ===============
+      BondYield R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Bond Yield Data
+         :name: bond-yield-data
 
-   Monthly averages of the yield on a Moody's Aaa rated corporate bond
-   (in percent/year).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Monthly averages of the yield on a Moody's Aaa rated corporate
+      bond (in percent/year).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("BondYield")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("BondYield")
 
-   A monthly univariate time series from 1990(1) to 1994(12).
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A monthly univariate time series from 1990(1) to 1994(12).
 
-   Online complements to Greene (2003), Table F20.1.
+      .. rubric:: Source
+         :name: source
 
-   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+      Online complements to Greene (2003), Table F20.1.
 
-   .. rubric:: References
-      :name: references
+      https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
-   Saddle River, NJ: Prentice Hall.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+      Saddle River, NJ: Prentice Hall.
 
-   ``Greene2003``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Greene2003``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("BondYield")
-      plot(BondYield)
+      ::
+
+         data("BondYield")
+         plot(BondYield)

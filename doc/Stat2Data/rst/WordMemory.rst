@@ -1,49 +1,51 @@
 .. container::
 
-   ========== ===============
-   WordMemory R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Experiment on Word Memory
-      :name: WordMemory
+      ========== ===============
+      WordMemory R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Experiment on Word Memory
+         :name: experiment-on-word-memory
 
-   Percentage of different types of words recalled
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Percentage of different types of words recalled
 
-   A dataset with 40 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ============ =============================================
-   ``Subject``  Code to identify each subject: ``A`` to ``J``
-   ``Abstract`` Words were abstract? ``No`` or ``Yes``
-   ``Frequent`` Words were common? ``No`` or ``Yes``
-   ``Percent``  Percentage of words recalled (out of 25)
-   \            
-   ============ =============================================
+      A dataset with 40 observations on the following 4 variables.
 
-   .. rubric:: Details
-      :name: details
+      ============ =============================================
+      ``Subject``  Code to identify each subject: ``A`` to ``J``
+      ``Abstract`` Words were abstract? ``No`` or ``Yes``
+      ``Frequent`` Words were common? ``No`` or ``Yes``
+      ``Percent``  Percentage of words recalled (out of 25)
+      \            
+      ============ =============================================
 
-   One hundred words were presented to each subject in a randomized
-   order. The goal of the experiment was to see whether some kinds of
-   words were easier to remember than others. In particular, are common
-   words like potato, love, diet, and magazine easier to remember than
-   less common words like manatee, hangnail, fillip, and apostasy? Are
-   concrete words like coffee, dog, kale, and tamborine easier than
-   abstract words like beauty, sympathy, fauna, and guile? There were 25
-   words each of four kinds, obtained by crossing the two factors of
-   interest, Abstraction (concrete or abstract) and Frequency (common or
-   rare).
+      .. rubric:: Details
+         :name: details
 
-   This dataset appears in the first edition, but is not used in the
-   second edition.
+      One hundred words were presented to each subject in a randomized
+      order. The goal of the experiment was to see whether some kinds of
+      words were easier to remember than others. In particular, are
+      common words like potato, love, diet, and magazine easier to
+      remember than less common words like manatee, hangnail, fillip,
+      and apostasy? Are concrete words like coffee, dog, kale, and
+      tamborine easier than abstract words like beauty, sympathy, fauna,
+      and guile? There were 25 words each of four kinds, obtained by
+      crossing the two factors of interest, Abstraction (concrete or
+      abstract) and Frequency (common or rare).
 
-   .. rubric:: Source
-      :name: source
+      This dataset appears in the first edition, but is not used in the
+      second edition.
 
-   Data from a student laboratory project, Department of Psychology and
-   Education, Mount Holyoke College.
+      .. rubric:: Source
+         :name: source
+
+      Data from a student laboratory project, Department of Psychology
+      and Education, Mount Holyoke College.

@@ -1,42 +1,45 @@
 .. container::
 
-   ========= ===============
-   FloridaDP R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Florida Death Penalty Cases
-      :name: FloridaDP
+      ========= ===============
+      FloridaDP R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Florida Death Penalty Cases
+         :name: florida-death-penalty-cases
 
-   Florida death penalty cases by race of defendant and victim
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Florida death penalty cases by race of defendant and victim
 
-   A data frame with 326 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Penalty``
-      Was death penalty given? (``No`` or ``Yes``)
+      A data frame with 326 observations on the following 4 variables.
 
-   ``Defendant``
-      Race of the defendant (``Black`` or ``White``)
+      ``Penalty``
+         Was death penalty given? (``No`` or ``Yes``)
 
-   ``White.Victim``
-      Was the victim white? (``1``\ =yes or ``0``\ =no)
+      ``Defendant``
+         Race of the defendant (``Black`` or ``White``)
 
-   ``Black.Victim``
-      Was the victim black? (``1``\ =yes or ``0``\ =no)
+      ``White.Victim``
+         Was the victim white? (``1``\ =yes or ``0``\ =no)
 
-   .. rubric:: Details
-      :name: details
+      ``Black.Victim``
+         Was the victim black? (``1``\ =yes or ``0``\ =no)
 
-   Mike Radelet's data on imposition of the death penalty for murderers
-   in Florida broken down by race of the victim and defendant.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Mike Radelet's data on imposition of the death penalty for
+      murderers in Florida broken down by race of the victim and
+      defendant.
 
-   Radelet, M. (1981), "Racial Characteristics and Imposition of the
-   Death Penalty," American Sociological Review, 46, 918-927.
+      .. rubric:: Source
+         :name: source
+
+      Radelet, M. (1981), "Racial Characteristics and Imposition of the
+      Death Penalty," American Sociological Review, 46, 918-927.

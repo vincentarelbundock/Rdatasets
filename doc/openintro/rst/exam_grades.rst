@@ -1,68 +1,70 @@
 .. container::
 
-   =========== ===============
-   exam_grades R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Exam and course grades for statistics students
-      :name: exam_grades
+      =========== ===============
+      exam_grades R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Exam and course grades for statistics students
+         :name: exam-and-course-grades-for-statistics-students
 
-   Grades on three exams and overall course grade for 233 students
-   during several years for a statistics course at a university.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Grades on three exams and overall course grade for 233 students
+      during several years for a statistics course at a university.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      exam_grades
+      ::
 
-   .. rubric:: Format
-      :name: format
+         exam_grades
 
-   A data frame with 233 observations, each representing a student.
+      .. rubric:: Format
+         :name: format
 
-   semester
-      Semester when grades were recorded.
+      A data frame with 233 observations, each representing a student.
 
-   sex
-      Sex of the student as recorded on the university registration
-      system: Man or Woman.
+      semester
+         Semester when grades were recorded.
 
-   exam1
-      Exam 1 grade.
+      sex
+         Sex of the student as recorded on the university registration
+         system: Man or Woman.
 
-   exam2
-      Exam 2 grade.
+      exam1
+         Exam 1 grade.
 
-   exam3
-      Exam 3 grade.
+      exam2
+         Exam 2 grade.
 
-   course_grade
-      Overall course grade.
+      exam3
+         Exam 3 grade.
 
-   .. rubric:: Examples
-      :name: examples
+      course_grade
+         Overall course grade.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
-      library(dplyr)
+      ::
 
-      # Course grade vs. each exam
-      ggplot(exam_grades, aes(x = exam1, y = course_grade)) +
-        geom_point()
+         library(ggplot2)
+         library(dplyr)
 
-      ggplot(exam_grades, aes(x = exam2, y = course_grade)) +
-        geom_point()
+         # Course grade vs. each exam
+         ggplot(exam_grades, aes(x = exam1, y = course_grade)) +
+           geom_point()
 
-      ggplot(exam_grades, aes(x = exam2, y = course_grade)) +
-        geom_point()
+         ggplot(exam_grades, aes(x = exam2, y = course_grade)) +
+           geom_point()
 
-      # Semester averages
-      exam_grades %>%
-        group_by(semester) %>%
-        summarise(across(exam1:course_grade, mean, na.rm = TRUE))
+         ggplot(exam_grades, aes(x = exam2, y = course_grade)) +
+           geom_point()
+
+         # Semester averages
+         exam_grades %>%
+           group_by(semester) %>%
+           summarise(across(exam1:course_grade, mean, na.rm = TRUE))

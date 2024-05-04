@@ -1,77 +1,79 @@
 .. container::
 
-   ====== ===============
-   births R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: North Carolina births, 100 cases
-      :name: births
+      ====== ===============
+      births R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: North Carolina births, 100 cases
+         :name: north-carolina-births-100-cases
 
-   Data on a random sample of 100 births for babies in North Carolina
-   where the mother was not a smoker and another 50 where the mother was
-   a smoker.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on a random sample of 100 births for babies in North Carolina
+      where the mother was not a smoker and another 50 where the mother
+      was a smoker.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      births
+      ::
 
-   .. rubric:: Format
-      :name: format
+         births
 
-   A data frame with 150 observations on the following 14 variables.
+      .. rubric:: Format
+         :name: format
 
-   f_age
-      Father's age.
+      A data frame with 150 observations on the following 14 variables.
 
-   m_age
-      Mother's age.
+      f_age
+         Father's age.
 
-   weeks
-      Weeks at which the mother gave birth.
+      m_age
+         Mother's age.
 
-   premature
-      Indicates whether the baby was premature or not.
+      weeks
+         Weeks at which the mother gave birth.
 
-   visits
-      Number of hospital visits.
+      premature
+         Indicates whether the baby was premature or not.
 
-   gained
-      Weight gained by mother.
+      visits
+         Number of hospital visits.
 
-   weight
-      Birth weight of the baby.
+      gained
+         Weight gained by mother.
 
-   sex_baby
-      Gender of the baby.
+      weight
+         Birth weight of the baby.
 
-   smoke
-      Whether or not the mother was a smoker.
+      sex_baby
+         Gender of the baby.
 
-   .. rubric:: Source
-      :name: source
+      smoke
+         Whether or not the mother was a smoker.
 
-   Birth records released by North Carolina in 2004.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: See Also
-      :name: see-also
+      Birth records released by North Carolina in 2004.
 
-   We do not have ideal provenance for these data. For a better
-   documented and more recent dataset on a similar topic with similar
-   variables, see births14. Additionally, ncbirths also contains similar
-   data.
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      We do not have ideal provenance for these data. For a better
+      documented and more recent dataset on a similar topic with similar
+      variables, see births14. Additionally, ncbirths also contains
+      similar data.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(births, aes(x = smoke, y = weight)) +
-        geom_boxplot()
+         library(ggplot2)
+
+         ggplot(births, aes(x = smoke, y = weight)) +
+           geom_boxplot()

@@ -1,36 +1,39 @@
 .. container::
 
-   ========= ===============
-   HawkTail2 R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Tail Lengths of Hawks (Unstacked)
-      :name: HawkTail2
+      ========= ===============
+      HawkTail2 R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Tail Lengths of Hawks (Unstacked)
+         :name: tail-lengths-of-hawks-unstacked
 
-   Tail lengths for two hawk species
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Tail lengths for two hawk species
 
-   A data frame with observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   =========== =======================================================
-   ``Tail_RT`` Tail length (in mm) for a sample of Red-tailed hawks
-   ``Tail_SS`` Tail length (in mm) for a sample of Sharp-shinned hawks
-   \           
-   =========== =======================================================
+      A data frame with observations on the following 2 variables.
 
-   .. rubric:: Details
-      :name: details
+      =========== =======================================================
+      ``Tail_RT`` Tail length (in mm) for a sample of Red-tailed hawks
+      ``Tail_SS`` Tail length (in mm) for a sample of Sharp-shinned hawks
+      \           
+      =========== =======================================================
 
-   Tail lengths measured for a sample of hawks observed in Mount Vernon,
-   Iowa. Note: HawkTail has similar data in stacked format. The Hawks
-   dataset has more variables and a third species (Cooper's hawk).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Tail lengths measured for a sample of hawks observed in Mount
+      Vernon, Iowa. Note: HawkTail has similar data in stacked format.
+      The Hawks dataset has more variables and a third species (Cooper's
+      hawk).
 
-   Observations by students and faculty at Cornell College.
+      .. rubric:: Source
+         :name: source
+
+      Observations by students and faculty at Cornell College.

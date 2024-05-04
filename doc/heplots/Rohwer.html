@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Rohwer</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Rohwer'>Rohwer Data Set</h2>
+<h2>Rohwer Data Set</h2>
 
 <h3>Description</h3>
 
@@ -26,37 +26,32 @@ tasks can predict performance on some measures of aptitude and achievement.
 </p>
 
 
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(Rohwer)</code></pre>
-
-
 <h3>Format</h3>
 
 <p>A data frame with 69 observations on the following 10 variables.
 </p>
-
+ 
 <dl>
 <dt><code>group</code></dt><dd><p>a numeric vector, corresponding to SES</p>
 </dd>
 <dt><code>SES</code></dt><dd><p>Socioeconomic status, a factor with levels <code>Hi</code> <code>Lo</code></p>
-</dd>
+</dd> 
 <dt><code>SAT</code></dt><dd><p>a numeric vector: score on a Student Achievement Test</p>
-</dd>
+</dd> 
 <dt><code>PPVT</code></dt><dd><p>a numeric vector: score on the Peabody Picture Vocabulary Test</p>
-</dd>
+</dd> 
 <dt><code>Raven</code></dt><dd><p>a numeric vector: score on the Raven Progressive Matrices Test</p>
-</dd>
+</dd> 
 <dt><code>n</code></dt><dd><p>a numeric vector: performance on a 'named' PA task</p>
-</dd>
+</dd> 
 <dt><code>s</code></dt><dd><p>a numeric vector: performance on a 'still' PA task</p>
-</dd>
+</dd> 
 <dt><code>ns</code></dt><dd><p>a numeric vector: performance on a 'named still' PA task</p>
-</dd>
+</dd> 
 <dt><code>na</code></dt><dd><p>a numeric vector: performance on a 'named action' PA task</p>
-</dd>
+</dd> 
 <dt><code>ss</code></dt><dd><p>a numeric vector: performance on a 'sentence still' PA task</p>
-</dd>
+</dd> 
 </dl>
 
 
@@ -64,34 +59,35 @@ tasks can predict performance on some measures of aptitude and achievement.
 <h3>Details</h3>
 
 <p>The variables <code>SAT</code>, <code>PPVT</code> and <code>Raven</code> are responses to be
-potentially explained by performance on the paired-associate (PA) learning task<code>n</code>, <code>s</code>, <code>ns</code>, <code>na</code>, and <code>ss</code>.
+potentially explained by performance on the paired-associate (PA) learning
+task<code>n</code>, <code>s</code>, <code>ns</code>, <code>na</code>, and <code>ss</code>.
 </p>
 
 
 <h3>Source</h3>
 
-<p>Timm, N.H. 1975). 
-<em>Multivariate Analysis with Applications in Education and Psychology</em>. 
-Wadsworth (Brooks/Cole), Examples 4.3 (p. 281), 4.7 (p. 313), 4.13 (p. 344).
+<p>Timm, N.H. 1975).  <em>Multivariate Analysis with Applications in
+Education and Psychology</em>.  Wadsworth (Brooks/Cole), Examples 4.3 (p. 281),
+4.7 (p. 313), 4.13 (p. 344).
 </p>
 
 
 <h3>References</h3>
 
-<p>Friendly, M. (2007).
-HE plots for Multivariate General Linear Models.
-<em>Journal of Computational and Graphical Statistics</em>, <b>16</b>(2) 421&ndash;444.
-<a href="http://datavis.ca/papers/jcgs-heplots.pdf">http://datavis.ca/papers/jcgs-heplots.pdf</a> 
+<p>Friendly, M. (2007).  HE plots for Multivariate General Linear
+Models.  <em>Journal of Computational and Graphical Statistics</em>,
+<b>16</b>(2) 421&ndash;444.  <a href="http://datavis.ca/papers/jcgs-heplots.pdf">http://datavis.ca/papers/jcgs-heplots.pdf</a>
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>str(Rohwer)
+<pre><code class='language-R'>
+str(Rohwer)
 
 ## ANCOVA, assuming equal slopes
 rohwer.mod &lt;- lm(cbind(SAT, PPVT, Raven) ~ SES + n + s + ns + na + ss, data=Rohwer)
-Anova(rohwer.mod)
+car::Anova(rohwer.mod)
 
 # Visualize the ANCOVA model
 heplot(rohwer.mod)
@@ -116,8 +112,10 @@ rohwer.ses2 &lt;- lm(cbind(SAT, PPVT, Raven) ~ n + s + ns + na + ss, data=Rohwer
 heplot(rohwer.ses1, ylim=c(40,110),col=c("red", "black"))
 heplot(rohwer.ses2, add=TRUE, col=c("blue", "black"), grand.mean=TRUE, error.ellipse=TRUE)
 
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

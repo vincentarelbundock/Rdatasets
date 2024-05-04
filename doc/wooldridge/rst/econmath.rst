@@ -1,78 +1,80 @@
 .. container::
 
-   ======== ===============
-   econmath R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: econmath
-      :name: econmath
+      ======== ===============
+      econmath R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: econmath
+         :name: econmath
 
-   Wooldridge Source: Compiled by Professor Charles Ballard, Michigan
-   State University Department of Economics. Professor Ballard kindly
-   provided the data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Compiled by Professor Charles Ballard, Michigan
+      State University Department of Economics. Professor Ballard kindly
+      provided the data. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('econmath')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('econmath')
 
-   A data.frame with 856 observations on 17 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **age:** age in years
+      A data.frame with 856 observations on 17 variables:
 
-   -  **work:** hours worked per week
+      -  **age:** age in years
 
-   -  **study:** hours studying per week
+      -  **work:** hours worked per week
 
-   -  **econhs:** =1 if economics in high school
+      -  **study:** hours studying per week
 
-   -  **colgpa:** college GPA, beginning semester
+      -  **econhs:** =1 if economics in high school
 
-   -  **hsgpa:** high school GPA
+      -  **colgpa:** college GPA, beginning semester
 
-   -  **acteng:** ACT English score
+      -  **hsgpa:** high school GPA
 
-   -  **actmth:** ACT math score
+      -  **acteng:** ACT English score
 
-   -  **act:** ACT composite
+      -  **actmth:** ACT math score
 
-   -  **mathscr:** math quiz score, 0-10
+      -  **act:** ACT composite
 
-   -  **male:** =1 if male
+      -  **mathscr:** math quiz score, 0-10
 
-   -  **calculus:** =1 if taken calculus course
+      -  **male:** =1 if male
 
-   -  **attexc:** =1 if past attndce 'excellent'
+      -  **calculus:** =1 if taken calculus course
 
-   -  **attgood:** =1 if past attndce 'good'
+      -  **attexc:** =1 if past attndce 'excellent'
 
-   -  **fathcoll:** =1 if father has BA
+      -  **attgood:** =1 if past attndce 'good'
 
-   -  **mothcoll:** =1 if mother has BA
+      -  **fathcoll:** =1 if father has BA
 
-   -  **score:** course score, in percent
+      -  **mothcoll:** =1 if mother has BA
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **score:** course score, in percent
 
-   167, 185
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      167, 185
 
-   http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      http://www.cengage.com/c/introductory-econometrics-a-modern-approach-6e-wooldridge
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(econmath)
+      ::
+
+          str(econmath)

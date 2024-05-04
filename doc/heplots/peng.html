@@ -1,0 +1,130 @@
+<!DOCTYPE html><html><head><title>R: Size measurements for penguins near Palmer Station,...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>peng</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Size measurements for penguins near Palmer Station, Antarctica</h2>
+
+<h3>Description</h3>
+
+<p>Data originally from <a href="https://allisonhorst.github.io/palmerpenguins/"><code>palmerpenguins</code></a>. Includes
+measurements for penguin species, island in Palmer Archipelago,
+size (flipper length, body mass, bill dimensions), and sex.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>peng
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 333 rows and 8 variables:
+</p>
+
+<dl>
+<dt>species</dt><dd><p>a factor denoting penguin species (<code>"Adélie", "Chinstrap" or "Gentoo"</code>)</p>
+</dd>
+<dt>island</dt><dd><p>a factor denoting island in Palmer Archipelago, Antarctica (<code>"Biscoe", "Dream" or "Torgersen"</code>)</p>
+</dd>
+<dt>bill_length</dt><dd><p>a number denoting bill length (millimeters)</p>
+</dd>
+<dt>bill_depth</dt><dd><p>a number denoting bill depth (millimeters)</p>
+</dd>
+<dt>flipper_length</dt><dd><p>an integer denoting flipper length (millimeters)</p>
+</dd>
+<dt>body_mass</dt><dd><p>an integer denoting body mass (grams)</p>
+</dd>
+<dt>sex</dt><dd><p>a factor denoting penguin sex (<code>"f", "m"</code>)</p>
+</dd>
+<dt>year</dt><dd><p>an integer denoting the study year (2007, 2008, or 2009)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In this version, variable names have been shortened (removing units) and observations with
+missing data have been removed.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Adélie penguins: Palmer Station Antarctica LTER and K. Gorman. 2020. 
+Structural size measurements and isotopic signatures of foraging among 
+adult male and female Adélie penguins (Pygoscelis adeliae) nesting along 
+the Palmer Archipelago near Palmer Station, 2007-2009 ver 5. Environmental 
+Data Initiative <a href="https://doi.org/10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f">doi:10.6073/pasta/98b16d7d563f265cb52372c8ca99e60f</a>
+</p>
+<p>Gentoo penguins: Palmer Station Antarctica LTER and K. Gorman. 2020. 
+Structural size measurements and isotopic signatures of foraging among 
+adult male and female Gentoo penguin (Pygoscelis papua) nesting along the 
+Palmer Archipelago near Palmer Station, 2007-2009 ver 5. Environmental 
+Data Initiative <a href="https://doi.org/10.6073/pasta/7fca67fb28d56ee2ffa3d9370ebda689">doi:10.6073/pasta/7fca67fb28d56ee2ffa3d9370ebda689</a>
+</p>
+<p>Chinstrap penguins: Palmer Station Antarctica LTER and K. Gorman. 
+2020. Structural size measurements and isotopic signatures of foraging 
+among adult male and female Chinstrap penguin (Pygoscelis antarcticus) 
+nesting along the Palmer Archipelago near Palmer Station, 2007-2009 ver 6. 
+Environmental Data Initiative <a href="https://doi.org/10.6073/pasta/c14dfcfada8ea13a17536e73eb6fbe9e">doi:10.6073/pasta/c14dfcfada8ea13a17536e73eb6fbe9e</a>
+</p>
+<p>Originally published in: Gorman K.B., Williams T.D., Fraser W.R. (2014) 
+Ecological Sexual Dimorphism and Environmental Variability within a 
+Community of Antarctic Penguins (Genus Pygoscelis). PLoS ONE 9(3): e90081. 
+<a href="https://doi.org/10.1371/journal.pone.0090081">doi:10.1371/journal.pone.0090081</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(peng)
+# Covariance ellipses, centered, first two variables
+covEllipses(cbind(bill_length, bill_depth) ~ species, data=peng,
+     center=TRUE, 
+     fill=c(rep(FALSE,3), TRUE), 
+     fill.alpha=.1, label.pos=c(1:3,0))
+
+# All pairs when more than two variables are specified. They look pretty similar
+covEllipses(peng[,3:6], peng$species, 
+            variables=1:4, 
+            fill=c(rep(FALSE,3), TRUE), 
+            fill.alpha=.1)
+            
+# Box's M test 	
+peng.boxm &lt;- boxM(cbind(bill_length, bill_depth, flipper_length, body_mass) ~ species, data=peng)
+peng.boxm
+plot(peng.boxm, gplabel="Species")
+
+# Fit MANOVA model, predicting species 
+peng.mod0 &lt;-lm(cbind(bill_length, bill_depth, flipper_length, body_mass) ~
+               species, data=peng)
+car::Anova(peng.mod0)
+
+# HE plot
+heplot(peng.mod0, fill=TRUE, fill.alpha=0.1, 
+       size="effect",
+       xlim=c(35,52), ylim=c(14,20))
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,52 +1,56 @@
 .. container::
 
-   ===== ===============
-   meats R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Fat, water and protein content of meat samples
-      :name: meats
+      ===== ===============
+      meats R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Fat, water and protein content of meat samples
+         :name: fat-water-and-protein-content-of-meat-samples
 
-   "These data are recorded on a Tecator Infratec Food and Feed Analyzer
-   working in the wavelength range 850 - 1050 nm by the Near Infrared
-   Transmission (NIT) principle. Each sample contains finely chopped
-   pure meat with different moisture, fat and protein contents.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      "These data are recorded on a Tecator Infratec Food and Feed
+      Analyzer working in the wavelength range 850 - 1050 nm by the Near
+      Infrared Transmission (NIT) principle. Each sample contains finely
+      chopped pure meat with different moisture, fat and protein
+      contents.
 
-   If results from these data are used in a publication we want you to
-   mention the instrument and company name (Tecator) in the publication.
-   In addition, please send a preprint of your article to
+      .. rubric:: Details
+         :name: details
 
-   Karin Thente, Tecator AB, Box 70, S-263 21 Hoganas, Sweden
+      If results from these data are used in a publication we want you
+      to mention the instrument and company name (Tecator) in the
+      publication. In addition, please send a preprint of your article
+      to
 
-   The data are available in the public domain with no responsibility
-   from the original data source. The data can be redistributed as long
-   as this permission note is attached."
+      Karin Thente, Tecator AB, Box 70, S-263 21 Hoganas, Sweden
 
-   "For each meat sample the data consists of a 100 channel spectrum of
-   absorbances and the contents of moisture (water), fat and protein.
-   The absorbance is -log10 of the transmittance measured by the
-   spectrometer. The three contents, measured in percent, are determined
-   by analytic chemistry."
+      The data are available in the public domain with no responsibility
+      from the original data source. The data can be redistributed as
+      long as this permission note is attached."
 
-   Included here are the training, monitoring and test sets.
+      "For each meat sample the data consists of a 100 channel spectrum
+      of absorbances and the contents of moisture (water), fat and
+      protein. The absorbance is -log10 of the transmittance measured by
+      the spectrometer. The three contents, measured in percent, are
+      determined by analytic chemistry."
 
-   .. rubric:: Value
-      :name: value
+      Included here are the training, monitoring and test sets.
 
-   ========= ========
-   ``meats`` a tibble
-   ========= ========
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Examples
-      :name: examples
+      ========= ========
+      ``meats`` a tibble
+      ========= ========
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(meats)
-      str(meats)
+      ::
+
+         data(meats)
+         str(meats)

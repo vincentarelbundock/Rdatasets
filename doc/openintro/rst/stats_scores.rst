@@ -1,35 +1,37 @@
 .. container::
 
-   ============ ===============
-   stats_scores R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Final exam scores for twenty students
-      :name: stats_scores
+      ============ ===============
+      stats_scores R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Final exam scores for twenty students
+         :name: final-exam-scores-for-twenty-students
 
-   Scores range from 57 to 94.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Scores range from 57 to 94.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      stats_scores
+      ::
 
-   .. rubric:: Format
-      :name: format
+         stats_scores
 
-   A data frame with 20 observations on the following variable.
+      .. rubric:: Format
+         :name: format
 
-   scores
-      a numeric vector
+      A data frame with 20 observations on the following variable.
 
-   .. rubric:: Examples
-      :name: examples
+      scores
+         a numeric vector
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      stats_scores
+      ::
+
+         stats_scores

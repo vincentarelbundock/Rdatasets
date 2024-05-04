@@ -1,78 +1,80 @@
 .. container::
 
-   ========== ===============
-   NaturalGas R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Natural Gas Data
-      :name: NaturalGas
+      ========== ===============
+      NaturalGas R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Natural Gas Data
+         :name: natural-gas-data
 
-   Panel data originating from 6 US states over the period 1967–1989.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Panel data originating from 6 US states over the period 1967–1989.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("NaturalGas")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("NaturalGas")
 
-   A data frame containing 138 observations on 10 variables.
+      .. rubric:: Format
+         :name: format
 
-   state
-      factor. State abbreviation.
+      A data frame containing 138 observations on 10 variables.
 
-   statecode
-      factor. State Code.
+      state
+         factor. State abbreviation.
 
-   year
-      factor coding year.
+      statecode
+         factor. State Code.
 
-   consumption
-      Consumption of natural gas by the residential sector.
+      year
+         factor coding year.
 
-   price
-      Price of natural gas
+      consumption
+         Consumption of natural gas by the residential sector.
 
-   eprice
-      Price of electricity.
+      price
+         Price of natural gas
 
-   oprice
-      Price of distillate fuel oil.
+      eprice
+         Price of electricity.
 
-   lprice
-      Price of liquefied petroleum gas.
+      oprice
+         Price of distillate fuel oil.
 
-   heating
-      Heating degree days.
+      lprice
+         Price of liquefied petroleum gas.
 
-   income
-      Real per-capita personal income.
+      heating
+         Heating degree days.
 
-   .. rubric:: Source
-      :name: source
+      income
+         Real per-capita personal income.
 
-   The data are from Baltagi (2002).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The data are from Baltagi (2002).
 
-   Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Baltagi, B.H. (2002). *Econometrics*, 3rd ed. Berlin, Springer.
 
-   ``Baltagi2002``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Baltagi2002``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("NaturalGas")
-      summary(NaturalGas)
+      ::
+
+         data("NaturalGas")
+         summary(NaturalGas)

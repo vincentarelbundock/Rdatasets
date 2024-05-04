@@ -1,62 +1,64 @@
 .. container::
 
-   ======= ===============
-   Default R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Credit Card Default Data
-      :name: Default
+      ======= ===============
+      Default R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Credit Card Default Data
+         :name: credit-card-default-data
 
-   A simulated data set containing information on ten thousand
-   customers. The aim here is to predict which customers will default on
-   their credit card debt.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A simulated data set containing information on ten thousand
+      customers. The aim here is to predict which customers will default
+      on their credit card debt.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Default
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Default
 
-   A data frame with 10000 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``default``
-      A factor with levels ``No`` and ``Yes`` indicating whether the
-      customer defaulted on their debt
+      A data frame with 10000 observations on the following 4 variables.
 
-   ``student``
-      A factor with levels ``No`` and ``Yes`` indicating whether the
-      customer is a student
+      ``default``
+         A factor with levels ``No`` and ``Yes`` indicating whether the
+         customer defaulted on their debt
 
-   ``balance``
-      The average balance that the customer has remaining on their
-      credit card after making their monthly payment
+      ``student``
+         A factor with levels ``No`` and ``Yes`` indicating whether the
+         customer is a student
 
-   ``income``
-      Income of customer
+      ``balance``
+         The average balance that the customer has remaining on their
+         credit card after making their monthly payment
 
-   .. rubric:: Source
-      :name: source
+      ``income``
+         Income of customer
 
-   Simulated data
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Simulated data
 
-   James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
-   Introduction to Statistical Learning with applications in R*,
-   https://www.statlearning.com, Springer-Verlag, New York
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
+      Introduction to Statistical Learning with applications in R*,
+      https://www.statlearning.com, Springer-Verlag, New York
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(Default)
-      glm(default~student+balance+income,family="binomial",data=Default)
+      ::
+
+         summary(Default)
+         glm(default~student+balance+income,family="binomial",data=Default)

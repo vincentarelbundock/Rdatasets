@@ -1,99 +1,101 @@
 .. container::
 
-   ===== ===============
-   apple R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: apple
-      :name: apple
+      ===== ===============
+      apple R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: apple
+         :name: apple
 
-   Wooldridge Source: These data were used in the doctoral dissertation
-   of Jeffrey Blend, Department of Agricultural Economics, Michigan
-   State University, 1998. The thesis was supervised by Professor Eileen
-   van Ravensway. Drs. Blend and van Ravensway kindly provided the data,
-   which were obtained from a telephone survey conducted by the
-   Institute for Public Policy and Social Research at MSU. Data loads
-   lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: These data were used in the doctoral
+      dissertation of Jeffrey Blend, Department of Agricultural
+      Economics, Michigan State University, 1998. The thesis was
+      supervised by Professor Eileen van Ravensway. Drs. Blend and van
+      Ravensway kindly provided the data, which were obtained from a
+      telephone survey conducted by the Institute for Public Policy and
+      Social Research at MSU. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('apple')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('apple')
 
-   A data.frame with 660 observations on 17 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **id:** respondent identifier
+      A data.frame with 660 observations on 17 variables:
 
-   -  **educ:** years schooling
+      -  **id:** respondent identifier
 
-   -  **date:** date: month/day/year
+      -  **educ:** years schooling
 
-   -  **state:** home state
+      -  **date:** date: month/day/year
 
-   -  **regprc:** price of regular apples
+      -  **state:** home state
 
-   -  **ecoprc:** price of ecolabeled apples
+      -  **regprc:** price of regular apples
 
-   -  **inseason:** =1 if interviewed in Nov.
+      -  **ecoprc:** price of ecolabeled apples
 
-   -  **hhsize:** household size
+      -  **inseason:** =1 if interviewed in Nov.
 
-   -  **male:** =1 if male
+      -  **hhsize:** household size
 
-   -  **faminc:** family income, thousands
+      -  **male:** =1 if male
 
-   -  **age:** in years
+      -  **faminc:** family income, thousands
 
-   -  **reglbs:** quantity regular apples, pounds
+      -  **age:** in years
 
-   -  **ecolbs:** quantity ecolabeled apples, lbs
+      -  **reglbs:** quantity regular apples, pounds
 
-   -  **numlt5:** # in household younger than 5
+      -  **ecolbs:** quantity ecolabeled apples, lbs
 
-   -  **num5_17:** # in household 5 to 17
+      -  **numlt5:** # in household younger than 5
 
-   -  **num18_64:** # in household 18 to 64
+      -  **num5_17:** # in household 5 to 17
 
-   -  **numgt64:** # in household older than 64
+      -  **num18_64:** # in household 18 to 64
 
-   .. rubric:: Notes
-      :name: notes
+      -  **numgt64:** # in household older than 64
 
-   This data set is close to a true experimental data set because the
-   price pairs facing a family were randomly determined. In other words,
-   the family head was presented with prices for the eco-labeled and
-   regular apples, and then asked how much of each kind of apple the
-   family would buy at the given prices. As predicted by basic
-   economics, the own price effect is negative (and strong) and the
-   cross price effect is positive (and strong). While the main dependent
-   variable, ecolbs, piles up at zero, estimating a linear model is
-   still worthwhile. Interestingly, because the survey design induces a
-   strong positive correlation between the prices of eco-labeled and
-   regular apples, there is an omitted variable problem if either of the
-   price variables is dropped from the demand equation. A good exam
-   question is to show a simple regression of ecolbs on ecoprc and then
-   a multiple regression on both prices, and ask students to decide
-   whether the price variables must be positively or negatively
-   correlated.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 201, 223, 266, 626-627
+      This data set is close to a true experimental data set because the
+      price pairs facing a family were randomly determined. In other
+      words, the family head was presented with prices for the
+      eco-labeled and regular apples, and then asked how much of each
+      kind of apple the family would buy at the given prices. As
+      predicted by basic economics, the own price effect is negative
+      (and strong) and the cross price effect is positive (and strong).
+      While the main dependent variable, ecolbs, piles up at zero,
+      estimating a linear model is still worthwhile. Interestingly,
+      because the survey design induces a strong positive correlation
+      between the prices of eco-labeled and regular apples, there is an
+      omitted variable problem if either of the price variables is
+      dropped from the demand equation. A good exam question is to show
+      a simple regression of ecolbs on ecoprc and then a multiple
+      regression on both prices, and ask students to decide whether the
+      price variables must be positively or negatively correlated.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 201, 223, 266, 626-627
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(apple)
+      ::
+
+          str(apple)

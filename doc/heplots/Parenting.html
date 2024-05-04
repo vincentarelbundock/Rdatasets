@@ -12,44 +12,37 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Parenting</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Parenting'>
-Father Parenting Competence
-</h2>
+<h2>Father Parenting Competence</h2>
 
 <h3>Description</h3>
 
-<p>The data, from an exercise given by Meyers et al. (2006)
-relates to 60 fathers assessed on three subscales of a Perceived Parenting Competence Scale.
-The fathers were selected from three groups:
-(a) fathers of a child with no disabilities;
-(b) fathers with a physically disabled child;
-(c) fathers with a mentally disabled child. 
+<p>The data, from an exercise given by Meyers et al. (2006) relates to 60
+fathers assessed on three subscales of a Perceived Parenting Competence
+Scale. The fathers were selected from three groups: (a) fathers of a child
+with no disabilities; (b) fathers with a physically disabled child; (c)
+fathers with a mentally disabled child.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data("Parenting")</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A data frame with 60 observations on the following 4 variables.
 </p>
-
+ 
 <dl>
-<dt><code>group</code></dt><dd><p>a factor with levels <code>Normal</code> <code>Physical Disability</code> <code>Mental Disability</code></p>
+<dt><code>group</code></dt><dd><p>a factor with levels <code>Normal</code>
+<code>Physical Disability</code> <code>Mental Disability</code></p>
 </dd>
 <dt><code>caring</code></dt><dd><p>caretaking responsibilities, a numeric vector</p>
 </dd>
 <dt><code>emotion</code></dt><dd><p>emotional support provided to the child, a numeric vector</p>
-</dd>
+</dd> 
 <dt><code>play</code></dt><dd><p>recreational time spent with the child, a numeric vector</p>
-</dd>
+</dd> 
 </dl>
 
 
@@ -62,28 +55,28 @@ The fathers were selected from three groups:
 
 <h3>Source</h3>
 
-<p>Meyers, L. S., Gamst, G, &amp; Guarino, A. J. (2006).
-<em>Applied Multivariate Research: Design and Interpretation</em>,
-Thousand Oaks, CA: Sage Publications,
-<a href="https://studysites.sagepub.com/amrStudy/">https://studysites.sagepub.com/amrStudy/</a>, Exercises 10B.
+<p>Meyers, L. S., Gamst, G, &amp; Guarino, A. J. (2006). <em>Applied
+Multivariate Research: Design and Interpretation</em>, Thousand Oaks, CA: Sage
+Publications, <a href="https://studysites.sagepub.com/amrStudy/">https://studysites.sagepub.com/amrStudy/</a>, Exercises 10B.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Parenting)
+<pre><code class='language-R'>
+data(Parenting)
 require(car)
 
 # fit the MLM
 parenting.mod &lt;- lm(cbind(caring, emotion, play) ~ group, data=Parenting)
-Anova(parenting.mod)
+car::Anova(parenting.mod)
 
 # Box's M test
 boxM(parenting.mod)
 plot(boxM(parenting.mod))
 
 parenting.mod &lt;- lm(cbind(caring, emotion, play) ~ group, data=Parenting)
-Anova(parenting.mod)
+car::Anova(parenting.mod)
 # test contrasts
 print(linearHypothesis(parenting.mod, "group1"), SSP=FALSE)
 print(linearHypothesis(parenting.mod, "group2"), SSP=FALSE)
@@ -109,8 +102,10 @@ heplot3d(parenting.mod, wire=FALSE)
 ## End(Not run)
 
 
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

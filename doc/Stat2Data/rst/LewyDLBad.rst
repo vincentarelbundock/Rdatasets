@@ -1,42 +1,44 @@
 .. container::
 
-   ========= ===============
-   LewyDLBad R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Lewy Bodies and Dimentia with Alzheimer's
-      :name: LewyDLBad
+      ========= ===============
+      LewyDLBad R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Lewy Bodies and Dimentia with Alzheimer's
+         :name: lewy-bodies-and-dimentia-with-alzheimers
 
-   Dementia Study with Lewy Bodies
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Dementia Study with Lewy Bodies
 
-   A data frame with 20 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``group``
-      ``DLB/AD``\ =DLB and Alzheimer's Disease
+      A data frame with 20 observations on the following 3 variables.
 
-   ``APC``
-      Annualized Percentage Change from baseline volume of the brain
+      ``group``
+         ``DLB/AD``\ =DLB and Alzheimer's Disease
 
-   ``MMSE``
-      Change in functional performance on the Mini Mental State
-      Examination
+      ``APC``
+         Annualized Percentage Change from baseline volume of the brain
 
-   .. rubric:: Details
-      :name: details
+      ``MMSE``
+         Change in functional performance on the Mini Mental State
+         Examination
 
-   Brain MRIs were used to study the brains of patients with Dementia
-   with Lewy Bodies. These are the cases that were also diagnosed with
-   Alzheimer's Disease. This is a subset of LewBody2Groups
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Brain MRIs were used to study the brains of patients with Dementia
+      with Lewy Bodies. These are the cases that were also diagnosed
+      with Alzheimer's Disease. This is a subset of LewBody2Groups
 
-   Z. Nedelksa et al. (2015), "Pattern of brain atrophy rates in
-   autopsy-confirmed dementia with Lewy bodies," Neurobiology of Aging,
-   36: 452-461.
+      .. rubric:: Source
+         :name: source
+
+      Z. Nedelksa et al. (2015), "Pattern of brain atrophy rates in
+      autopsy-confirmed dementia with Lewy bodies," Neurobiology of
+      Aging, 36: 452-461.

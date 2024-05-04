@@ -1,111 +1,114 @@
 .. container::
 
-   ======= ===============
-   alcohol R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: alcohol
-      :name: alcohol
+      ======= ===============
+      alcohol R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: alcohol
+         :name: alcohol
 
-   Wooldridge Source: Terza, J.V. (2002), “Alcohol Abuse and Employment:
-   A Second Look,” Journal of Applied Econometrics 17, 393-404. I
-   obtained these data from the Journal of Applied Econometrics data
-   archive at http://qed.econ.queensu.ca/jae/. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Terza, J.V. (2002), “Alcohol Abuse and
+      Employment: A Second Look,” Journal of Applied Econometrics 17,
+      393-404. I obtained these data from the Journal of Applied
+      Econometrics data archive at http://qed.econ.queensu.ca/jae/. Data
+      loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('alcohol')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('alcohol')
 
-   A data.frame with 9822 observations on 33 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **abuse:** =1 if abuse alcohol
+      A data.frame with 9822 observations on 33 variables:
 
-   -  **status:** out of workforce = 1; unemployed = 2, employed = 3
+      -  **abuse:** =1 if abuse alcohol
 
-   -  **unemrate:** state unemployment rate
+      -  **status:** out of workforce = 1; unemployed = 2, employed = 3
 
-   -  **age:** age in years
+      -  **unemrate:** state unemployment rate
 
-   -  **educ:** years of schooling
+      -  **age:** age in years
 
-   -  **married:** =1 if married
+      -  **educ:** years of schooling
 
-   -  **famsize:** family size
+      -  **married:** =1 if married
 
-   -  **white:** =1 if white
+      -  **famsize:** family size
 
-   -  **exhealth:** =1 if in excellent health
+      -  **white:** =1 if white
 
-   -  **vghealth:** =1 if in very good health
+      -  **exhealth:** =1 if in excellent health
 
-   -  **goodhealth:** =1 if in good health
+      -  **vghealth:** =1 if in very good health
 
-   -  **fairhealth:** =1 if in fair health
+      -  **goodhealth:** =1 if in good health
 
-   -  **northeast:** =1 if live in northeast
+      -  **fairhealth:** =1 if in fair health
 
-   -  **midwest:** =1 if live in midwest
+      -  **northeast:** =1 if live in northeast
 
-   -  **south:** =1 if live in south
+      -  **midwest:** =1 if live in midwest
 
-   -  **centcity:** =1 if live in central city of MSA
+      -  **south:** =1 if live in south
 
-   -  **outercity:** =1 if in outer city of MSA
+      -  **centcity:** =1 if live in central city of MSA
 
-   -  **qrt1:** =1 if interviewed in first quarter
+      -  **outercity:** =1 if in outer city of MSA
 
-   -  **qrt2:** =1 if interviewed in second quarter
+      -  **qrt1:** =1 if interviewed in first quarter
 
-   -  **qrt3:** =1 if interviewed in third quarter
+      -  **qrt2:** =1 if interviewed in second quarter
 
-   -  **beertax:** state excise tax, $ per gallon
+      -  **qrt3:** =1 if interviewed in third quarter
 
-   -  **cigtax:** state cigarette tax, cents per pack
+      -  **beertax:** state excise tax, $ per gallon
 
-   -  **ethanol:** state per-capita ethanol consumption
+      -  **cigtax:** state cigarette tax, cents per pack
 
-   -  **mothalc:** =1 if mother an alcoholic
+      -  **ethanol:** state per-capita ethanol consumption
 
-   -  **fathalc:** =1 if father an alcoholic
+      -  **mothalc:** =1 if mother an alcoholic
 
-   -  **livealc:** =1 if lived with alcoholic
+      -  **fathalc:** =1 if father an alcoholic
 
-   -  **inwf:** =1 if status > 1
+      -  **livealc:** =1 if lived with alcoholic
 
-   -  **employ:** =1 if employed
+      -  **inwf:** =1 if status > 1
 
-   -  **agesq:** age^2
+      -  **employ:** =1 if employed
 
-   -  **beertaxsq:** beertax^2
+      -  **agesq:** age^2
 
-   -  **cigtaxsq:** cigtax^2
+      -  **beertaxsq:** beertax^2
 
-   -  **ethanolsq:** ethanol^2
+      -  **cigtaxsq:** cigtax^2
 
-   -  **educsq:** educ^2
+      -  **ethanolsq:** ethanol^2
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **educsq:** educ^2
 
-   page 629
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      page 629
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(alcohol)
+      ::
+
+          str(alcohol)

@@ -1,103 +1,98 @@
 .. container::
 
-   ==== ===============
-   Sake R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Taste Ratings of Japanese Rice Wine (Sake)
-      :name: Sake
+      ==== ===============
+      Sake R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Taste Ratings of Japanese Rice Wine (Sake)
+         :name: taste-ratings-of-japanese-rice-wine-sake
 
-   Siotani et al. (1985) describe a study of Japanese rice wine (sake)
-   used to investigate the relationship between two subjective ratings
-   (``taste`` and ``smell``) and a number of physical measurements on 30
-   brands of sake.
+      .. rubric:: Description
+         :name: description
 
-   These data provide one example of a case where a multivariate
-   regression doesn't benefit from having multiple outcome measures,
-   using the standard tests. Barrett (2003) uses this data to illustrate
-   influence measures for multivariate regression models.
+      Siotani et al. (1985) describe a study of Japanese rice wine
+      (sake) used to investigate the relationship between two subjective
+      ratings (``taste`` and ``smell``) and a number of physical
+      measurements on 30 brands of sake.
 
-   .. rubric:: Usage
-      :name: usage
+      .. rubric:: Format
+         :name: format
 
-   .. code:: R
+      A data frame with 30 observations on the following 10 variables.
 
-      data(Sake)
+      ``taste``
+         mean taste rating
 
-   .. rubric:: Format
-      :name: format
+      ``smell``
+         mean smell rating
 
-   A data frame with 30 observations on the following 10 variables.
+      ``pH``
+         pH measurement
 
-   ``taste``
-      mean taste rating
+      ``acidity1``
+         one measure of acidity
 
-   ``smell``
-      mean smell rating
+      ``acidity2``
+         another measure of acidity
 
-   ``pH``
-      pH measurement
+      ``sake``
+         Sake-meter score
 
-   ``acidity1``
-      one measure of acidity
+      ``rsugar``
+         direct reducing sugar content
 
-   ``acidity2``
-      another measure of acidity
+      ``tsugar``
+         total sugar content
 
-   ``sake``
-      Sake-meter score
+      ``alcohol``
+         alcohol content
 
-   ``rsugar``
-      direct reducing sugar content
+      ``nitrogen``
+         formol-nitrogen content
 
-   ``tsugar``
-      total sugar content
+      .. rubric:: Details
+         :name: details
 
-   ``alcohol``
-      alcohol content
+      These data provide one example of a case where a multivariate
+      regression doesn't benefit from having multiple outcome measures,
+      using the standard tests. Barrett (2003) uses this data to
+      illustrate influence measures for multivariate regression models.
 
-   ``nitrogen``
-      formol-nitrogen content
+      The ``taste`` and ``smell`` values are the mean ratings of 10
+      experts on some unknown scale.
 
-   .. rubric:: Details
-      :name: details
+      .. rubric:: Source
+         :name: source
 
-   The ``taste`` and ``smell`` values are the mean ratings of 10 experts
-   on some unknown scale.
+      Siotani, M. Hayakawa, T. & Fujikoshi, Y. (1985). *Modern
+      Multivariate Statistical Analysis: A Graduate Course and
+      Handbook*. American Sciences Press, p. 217.
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: References
+         :name: references
 
-   Siotani, M. Hayakawa, T. & Fujikoshi, Y. (1985). *Modern Multivariate
-   Statistical Analysis: A Graduate Course and Handbook*. American
-   Sciences Press, p. 217.
+      Barrett, B. E. (2003). Understanding Influence in Multivariate
+      Regression. *Communications in Statistics - Theory and Methods* 32
+      (3), 667-680.
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: Examples
+         :name: examples
 
-   Barrett, B. E. (2003). Understanding Influence in Multivariate
-   Regression. *Communications in Statistics - Theory and Methods* 32
-   (3), 667-680.
+      ::
 
-   .. rubric:: Examples
-      :name: examples
+         data(Sake)
+         # quick look at the data
+         boxplot(scale(Sake))
 
-   .. code:: R
+         Sake.mod <- lm(cbind(taste,smell) ~ ., data=Sake)
 
-      data(Sake)
-      # quick look at the data
-      boxplot(scale(Sake))
+         library(car)
+         car::Anova(Sake.mod)
 
-      Sake.mod <- lm(cbind(taste,smell) ~ ., data=Sake)
+         predictors <- colnames(Sake)[-(1:2)]                 
+         # overall multivariate regression test
+         linearHypothesis(Sake.mod, predictors)
 
-      library(car)
-      Anova(Sake.mod)
-
-      predictors <- colnames(Sake)[-(1:2)]                 
-      # overall multivariate regression test
-      linearHypothesis(Sake.mod, predictors)
-
-      heplot(Sake.mod, hypotheses=list("Regr" = predictors))
+         heplot(Sake.mod, hypotheses=list("Regr" = predictors))

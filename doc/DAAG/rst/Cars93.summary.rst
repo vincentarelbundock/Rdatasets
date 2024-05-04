@@ -1,78 +1,80 @@
 .. container::
 
-   ============== ===============
-   Cars93.summary R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: A Summary of the Cars93 Data set
-      :name: Cars93.summary
+      ============== ===============
+      Cars93.summary R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: A Summary of the Cars93 Data set
+         :name: a-summary-of-the-cars93-data-set
 
-   The ``Cars93.summary`` data frame has 6 rows and 4 columns created
-   from information in the ``Cars93`` data set in the Venables and
-   Ripley MASS package. Each row corresponds to a different class of car
-   (e.g. Compact, Large, etc.).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Cars93.summary`` data frame has 6 rows and 4 columns created
+      from information in the ``Cars93`` data set in the Venables and
+      Ripley MASS package. Each row corresponds to a different class of
+      car (e.g. Compact, Large, etc.).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Cars93.summary
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Cars93.summary
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Min.passengers
-      minimum passenger capacity for each class of car
+      This data frame contains the following columns:
 
-   Max.passengers
-      maximum passenger capacity for each class of car
+      Min.passengers
+         minimum passenger capacity for each class of car
 
-   No.of.cars
-      number of cars in each class
+      Max.passengers
+         maximum passenger capacity for each class of car
 
-   abbrev
-      a factor with levels ``C`` Compact, ``L`` Large, ``M`` Mid-Size,
-      ``Sm`` Small, ``Sp`` Sporty, ``V`` Van
+      No.of.cars
+         number of cars in each class
 
-   .. rubric:: Source
-      :name: source
-
-   Lock, R. H. (1993) 1993 New Car Data. Journal of Statistics Education
-   1(1)
-
-   .. rubric:: References
-      :name: references
-
-   MASS library
-
-   .. rubric:: Examples
-      :name: examples
-
-   .. code:: R
-
-      type <- Cars93.summary$abbrev
-      type <- Cars93.summary[,4]
-      type <- Cars93.summary[,"abbrev"]
-      type <- Cars93.summary[[4]] # Take the object that is stored
-                                  # in the fourth list element.
-      type
-      pause()
-
-      attach(Cars93.summary)
-        # R can now access the columns of Cars93.summary directly
       abbrev
-      detach("Cars93.summary")
-      pause()
+         a factor with levels ``C`` Compact, ``L`` Large, ``M``
+         Mid-Size, ``Sm`` Small, ``Sp`` Sporty, ``V`` Van
 
-      #  To change the name of the \verb!abbrev! variable (the fourth column)
-      names(Cars93.summary)[4] <- "code"
-      pause()
+      .. rubric:: Source
+         :name: source
 
-      #  To change all of the names, try
-      names(Cars93.summary) <- c("minpass","maxpass","number","code")
+      Lock, R. H. (1993) 1993 New Car Data. Journal of Statistics
+      Education 1(1)
+
+      .. rubric:: References
+         :name: references
+
+      MASS library
+
+      .. rubric:: Examples
+         :name: examples
+
+      ::
+
+         type <- Cars93.summary$abbrev
+         type <- Cars93.summary[,4]
+         type <- Cars93.summary[,"abbrev"]
+         type <- Cars93.summary[[4]] # Take the object that is stored
+                                     # in the fourth list element.
+         type
+         pause()
+
+         attach(Cars93.summary)
+           # R can now access the columns of Cars93.summary directly
+         abbrev
+         detach("Cars93.summary")
+         pause()
+
+         #  To change the name of the \verb!abbrev! variable (the fourth column)
+         names(Cars93.summary)[4] <- "code"
+         pause()
+
+         #  To change all of the names, try
+         names(Cars93.summary) <- c("minpass","maxpass","number","code")

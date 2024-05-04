@@ -1,49 +1,51 @@
 .. container::
 
-   ====== ===============
-   CanPop R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Canadian Population Data
-      :name: CanPop
+      ====== ===============
+      CanPop R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Canadian Population Data
+         :name: canadian-population-data
 
-   The ``CanPop`` data frame has 16 rows and 2 columns. Decennial
-   time-series of Canadian population, 1851–2001.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``CanPop`` data frame has 16 rows and 2 columns. Decennial
+      time-series of Canadian population, 1851–2001.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      CanPop
+      ::
 
-   .. rubric:: Format
-      :name: format
+         CanPop
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   year
-      census year.
+      This data frame contains the following columns:
 
-   population
-      Population, in millions
+      year
+         census year.
 
-   .. rubric:: Source
-      :name: source
+      population
+         Population, in millions
 
-   Urquhart, M. C. and Buckley, K. A. H. (Eds.) (1965) *Historical
-   Statistics of Canada*. Macmillan, p. 1369.
+      .. rubric:: Source
+         :name: source
 
-   Canada (1994) *Canada Year Book*. Statistics Canada, Table 3.2.
+      Urquhart, M. C. and Buckley, K. A. H. (Eds.) (1965) *Historical
+      Statistics of Canada*. Macmillan, p. 1369.
 
-   Statistics Canada: from the now defunct
-   http://www12.statcan.ca/english/census01/products/standard/popdwell/Table-PR.cfm.
+      Canada (1994) *Canada Year Book*. Statistics Canada, Table 3.2.
 
-   .. rubric:: References
-      :name: references
+      Statistics Canada: from the now defunct
+      http://www12.statcan.ca/english/census01/products/standard/popdwell/Table-PR.cfm.
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
+
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.

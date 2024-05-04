@@ -1,35 +1,37 @@
 .. container::
 
-   ======== ===============
-   fheights R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Female college student heights, in inches
-      :name: fheights
+      ======== ===============
+      fheights R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Female college student heights, in inches
+         :name: female-college-student-heights-in-inches
 
-   24 sample observations.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      24 sample observations.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      fheights
+      ::
 
-   .. rubric:: Format
-      :name: format
+         fheights
 
-   A data frame with 24 observations on the following variable.
+      .. rubric:: Format
+         :name: format
 
-   heights
-      height, in inches
+      A data frame with 24 observations on the following variable.
 
-   .. rubric:: Examples
-      :name: examples
+      heights
+         height, in inches
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      hist(fheights$heights)
+      ::
+
+         hist(fheights$heights)

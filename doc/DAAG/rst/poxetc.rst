@@ -1,48 +1,50 @@
 .. container::
 
-   ====== ===============
-   poxetc R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Deaths from various causes, in London from 1629 till
-      1881, with gaps
-      :name: poxetc
+      ====== ===============
+      poxetc R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Deaths from various causes, in London from 1629 till
+         1881, with gaps
+         :name: deaths-from-various-causes-in-london-from-1629-till-1881-with-gaps
 
-   Deaths from "flux" or smallpox, measles, all causes, and ratios of
-   the the first two categories to total deaths.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Deaths from "flux" or smallpox, measles, all causes, and ratios of
+      the the first two categories to total deaths.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(poxetc)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(poxetc)
 
-   This is a multiple time series consisting of 5 series: ``fpox``,
-   ``measles``, ``all``, ``fpox2all``, ``measles2all``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      This is a multiple time series consisting of 5 series: ``fpox``,
+      ``measles``, ``all``, ``fpox2all``, ``measles2all``.
 
-   Guy, W. A. 1882. Two hundred and fifty years of small pox in London.
-   Journal of the Royal Statistical Society 399-443.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Guy, W. A. 1882. Two hundred and fifty years of small pox in
+      London. Journal of the Royal Statistical Society 399-443.
 
-   Lancaster, H. O. 1990. Expectations of Life. Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Lancaster, H. O. 1990. Expectations of Life. Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(poxetc)
-      str(poxetc)
-      plot(poxetc) 
+      ::
+
+         data(poxetc)
+         str(poxetc)
+         plot(poxetc) 

@@ -1,65 +1,67 @@
 .. container::
 
-   ============= ===============
-   DanishWelfare R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Danish Welfare Study Data
-      :name: DanishWelfare
+      ============= ===============
+      DanishWelfare R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Danish Welfare Study Data
+         :name: danish-welfare-study-data
 
-   Data from the Danish Welfare Study.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from the Danish Welfare Study.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("DanishWelfare")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("DanishWelfare")
 
-   A data frame with 180 observations and 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   Freq
-      frequency.
+      A data frame with 180 observations and 5 variables.
 
-   Alcohol
-      factor indicating daily alcohol consumption: less than 1 unit
-      (<1), 1-2 units (1-2) or more than 2 units (>2). 1 unit is
-      approximately 1 bottle of beer or 4cl 40% alcohol.
+      Freq
+         frequency.
 
-   Income
-      factor indicating income group in 1000 DKK (0-50, 50-100, 100-150,
-      >150).
+      Alcohol
+         factor indicating daily alcohol consumption: less than 1 unit
+         (<1), 1-2 units (1-2) or more than 2 units (>2). 1 unit is
+         approximately 1 bottle of beer or 4cl 40% alcohol.
 
-   Status
-      factor indicating marriage status (Widow, Married, Unmarried).
+      Income
+         factor indicating income group in 1000 DKK (0-50, 50-100,
+         100-150, >150).
 
-   Urban
-      factor indicating urbanization: Copenhagen (Copenhagen), Suburbian
-      Copenhagen (SubCopenhagen), three largest cities (LargeCity),
-      other cities (City), countryside (Country).
+      Status
+         factor indicating marriage status (Widow, Married, Unmarried).
 
-   .. rubric:: Source
-      :name: source
+      Urban
+         factor indicating urbanization: Copenhagen (Copenhagen),
+         Suburbian Copenhagen (SubCopenhagen), three largest cities
+         (LargeCity), other cities (City), countryside (Country).
 
-   E. B. Andersen (1991), The Statistical Analysis of Categorical Data,
-   page 205.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      E. B. Andersen (1991), The Statistical Analysis of Categorical
+      Data, page 205.
 
-   E. B. Andersen (1991), *The Statistical Analysis of Categorical
-   Data*. 2nd edition. Springer-Verlag, Berlin.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      E. B. Andersen (1991), *The Statistical Analysis of Categorical
+      Data*. 2nd edition. Springer-Verlag, Berlin.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("DanishWelfare")
-      ftable(xtabs(Freq ~ ., data = DanishWelfare))
+      ::
+
+         data("DanishWelfare")
+         ftable(xtabs(Freq ~ ., data = DanishWelfare))

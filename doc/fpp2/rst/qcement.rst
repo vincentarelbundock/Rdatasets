@@ -1,31 +1,33 @@
 .. container::
 
-   ======= ===============
-   qcement R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Quarterly Australian Portland Cement production
-      :name: qcement
+      ======= ===============
+      qcement R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Quarterly Australian Portland Cement production
+         :name: quarterly-australian-portland-cement-production
 
-   Total quarterly production of Portland cement in Australia (in
-   millions of tonnes) from 1956:Q1 to 2014:Q1.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Total quarterly production of Portland cement in Australia (in
+      millions of tonnes) from 1956:Q1 to 2014:Q1.
 
-   Quarterly time series of class ``ts``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Quarterly time series of class ``ts``.
 
-   Australian Bureau of Statistics. Cat. 8301.0.55.001.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Australian Bureau of Statistics. Cat. 8301.0.55.001.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      autoplot(qcement)
+      ::
+
+         autoplot(qcement)

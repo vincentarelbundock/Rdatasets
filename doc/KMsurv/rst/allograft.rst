@@ -1,44 +1,46 @@
 .. container::
 
-   ========= ===============
-   allograft R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: data from Exercise 13.1, p418
-      :name: allograft
+      ========= ===============
+      allograft R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Exercise 13.1, p418
+         :name: data-from-exercise-13.1-p418
 
-   The ``allograft`` data frame has 34 rows and 4 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``allograft`` data frame has 34 rows and 4 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   patient
-      Patient
+      This data frame contains the following columns:
 
-   time
-      Time to graft rejection, days
+      patient
+         Patient
 
-   rejection
-      Indicator of graft rejection (1=yes, 0=no)
+      time
+         Time to graft rejection, days
 
-   match
-      Good HLA skin match (1=yes, 0=no)
+      rejection
+         Indicator of graft rejection (1=yes, 0=no)
 
-   .. rubric:: Source
-      :name: source
+      match
+         Good HLA skin match (1=yes, 0=no)
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer. Batchelor and Hackett Lancet
-   2 (1970): 581-583.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer. Batchelor and Hackett
+      Lancet 2 (1970): 581-583.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(allograft)
+      ::
+
+         data(allograft)

@@ -1,51 +1,53 @@
 .. container::
 
-   ======= ===============
-   murders R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: US gun murders by state for 2010
-      :name: murders
+      ======= ===============
+      murders R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: US gun murders by state for 2010
+         :name: us-gun-murders-by-state-for-2010
 
-   Gun murder data from FBI reports. Also contains the population of
-   each state.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Gun murder data from FBI reports. Also contains the population of
+      each state.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      murders
+      ::
 
-   .. rubric:: Format
-      :name: format
+         murders
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  state. US state
+      .. rubric:: Details
+         :name: details
 
-   -  abb. Abbreviation of US state
+      -  state. US state
 
-   -  region. Geographical US region
+      -  abb. Abbreviation of US state
 
-   -  population. State population (2010)
+      -  region. Geographical US region
 
-   -  total. Number of gun murders in state (2010)
+      -  population. State population (2010)
 
-   .. rubric:: Source
-      :name: source
+      -  total. Number of gun murders in state (2010)
 
-   `Wikipedia <https://en.wikipedia.org/wiki/Gun_violence_in_the_United_States_by_state>`__
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      `Wikipedia <https://en.wikipedia.org/wiki/Gun_violence_in_the_United_States_by_state>`__
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      print(murders)
+      ::
+
+         print(murders)

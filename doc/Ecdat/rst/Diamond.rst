@@ -1,65 +1,67 @@
 .. container::
 
-   ======= ===============
-   Diamond R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Pricing the C's of Diamond Stones
-      :name: Diamond
+      ======= ===============
+      Diamond R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Pricing the C's of Diamond Stones
+         :name: pricing-the-cs-of-diamond-stones
 
-   a cross-section from 2000
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 308
+      a cross-section from 2000
 
-   *observation* : goods
+      *number of observations* : 308
 
-   *country* : Singapore
+      *observation* : goods
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Singapore
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Diamond)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Diamond)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   carat
-      weight of diamond stones in carat unit
+      A dataframe containing :
 
-   colour
-      a factor with levels (D,E,F,G,H,I)
+      carat
+         weight of diamond stones in carat unit
 
-   clarity
-      a factor with levels (``IF,VVS1,VVS2,VS1,VS2``)
+      colour
+         a factor with levels (D,E,F,G,H,I)
 
-   certification
-      certification body, a factor with levels ( ``GIA``, ``IGI``,
-      ``HRD``)
+      clarity
+         a factor with levels (``IF,VVS1,VVS2,VS1,VS2``)
 
-   price
-      price in Singapore $
+      certification
+         certification body, a factor with levels ( ``GIA``, ``IGI``,
+         ``HRD``)
 
-   .. rubric:: Source
-      :name: source
+      price
+         price in Singapore $
 
-   Chu, Singfat (2001) “Pricing the C's of Diamond Stones”, *Journal of
-   Statistics Education*, **9(2)**.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Chu, Singfat (2001) “Pricing the C's of Diamond Stones”, *Journal
+      of Statistics Education*, **9(2)**.
 
-   Journal of Statistics Education's data archive :
-   http://jse.amstat.org/jse_data_archive.htm.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Journal of Statistics Education's data archive :
+      http://jse.amstat.org/jse_data_archive.htm.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

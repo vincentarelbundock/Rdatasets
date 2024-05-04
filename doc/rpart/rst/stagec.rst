@@ -1,68 +1,70 @@
 .. container::
 
-   ====== ===============
-   stagec R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Stage C Prostate Cancer
-      :name: stagec
+      ====== ===============
+      stagec R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Stage C Prostate Cancer
+         :name: stage-c-prostate-cancer
 
-   A set of 146 patients with stage C prostate cancer, from a study
-   exploring the prognostic value of flow cytometry.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A set of 146 patients with stage C prostate cancer, from a study
+      exploring the prognostic value of flow cytometry.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(stagec)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(stagec)
 
-   A data frame with 146 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``pgtime``
-      Time to progression or last follow-up (years)
+      A data frame with 146 observations on the following 8 variables.
 
-   ``pgstat``
-      1 = progression observed, 0 = censored
+      ``pgtime``
+         Time to progression or last follow-up (years)
 
-   ``age``
-      age in years
+      ``pgstat``
+         1 = progression observed, 0 = censored
 
-   ``eet``
-      early endocrine therapy, 1 = no, 2 = yes
+      ``age``
+         age in years
 
-   ``g2``
-      percent of cells in G2 phase, as found by flow cytometry
+      ``eet``
+         early endocrine therapy, 1 = no, 2 = yes
 
-   ``grade``
-      grade of the tumor, Farrow system
+      ``g2``
+         percent of cells in G2 phase, as found by flow cytometry
 
-   ``gleason``
-      grade of the tumor, Gleason system
+      ``grade``
+         grade of the tumor, Farrow system
 
-   ``ploidy``
-      the ploidy status of the tumor, from flow cytometry. Values are
-      ‘⁠diploid⁠’, ‘⁠tetraploid⁠’, and ‘⁠aneuploid⁠’
+      ``gleason``
+         grade of the tumor, Gleason system
 
-   .. rubric:: Details
-      :name: details
+      ``ploidy``
+         the ploidy status of the tumor, from flow cytometry. Values are
+         ‘⁠diploid⁠’, ‘⁠tetraploid⁠’, and ‘⁠aneuploid⁠’
 
-   A tumor is called diploid (normal complement of dividing cells) if
-   the fraction of cells in G2 phase was determined to be 13% or less.
-   Aneuploid cells have a measurable fraction with a chromosome count
-   that is neither 24 nor 48, for these the G2 percent is difficult or
-   impossible to measure.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Examples
-      :name: examples
+      A tumor is called diploid (normal complement of dividing cells) if
+      the fraction of cells in G2 phase was determined to be 13% or
+      less. Aneuploid cells have a measurable fraction with a chromosome
+      count that is neither 24 nor 48, for these the G2 percent is
+      difficult or impossible to measure.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(survival)
-      rpart(Surv(pgtime, pgstat) ~ ., stagec)
+      ::
+
+         require(survival)
+         rpart(Surv(pgtime, pgstat) ~ ., stagec)

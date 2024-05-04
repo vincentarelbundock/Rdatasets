@@ -1,89 +1,92 @@
 .. container::
 
-   ========= ===============
-   scorecard R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Earnings and Loan Repayment in US Four-Year Colleges
-      :name: scorecard
+      ========= ===============
+      scorecard R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Earnings and Loan Repayment in US Four-Year Colleges
+         :name: earnings-and-loan-repayment-in-us-four-year-colleges
 
-   From the College Scorecard, this data set contains by-college-by-year
-   data on how students who attended those colleges are doing.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      From the College Scorecard, this data set contains
+      by-college-by-year data on how students who attended those
+      colleges are doing.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      scorecard
+      ::
 
-   .. rubric:: Format
-      :name: format
+         scorecard
 
-   A data frame with 48,445 rows and 8 variables:
+      .. rubric:: Format
+         :name: format
 
-   unitid
-      College identifiers
+      A data frame with 48,445 rows and 8 variables:
 
-   inst_name
-      Name of the college or university
+      unitid
+         College identifiers
 
-   state_abbr
-      Two-letter abbreviation for the state the college is in
+      inst_name
+         Name of the college or university
 
-   pred_degree_awarded_ipeds
-      Predominant degree awarded. 1 = less-than-two-year, 2 = two-year,
-      3 = four-year+
+      state_abbr
+         Two-letter abbreviation for the state the college is in
 
-   year
-      Year in which outcomes are measured
+      pred_degree_awarded_ipeds
+         Predominant degree awarded. 1 = less-than-two-year, 2 =
+         two-year, 3 = four-year+
 
-   earnings_med
-      Median earnings among students (a) who received federal financial
-      aid, (b) who began as undergraduates at the institution ten years
-      prior, (c) with positive yearly earnings
+      year
+         Year in which outcomes are measured
 
-   count_not_working
-      Number of students who are (a) not working (not necessarily
-      unemployed), (b) received federal financial aid, and (c) who began
-      as undergraduates at the institution ten years prior
+      earnings_med
+         Median earnings among students (a) who received federal
+         financial aid, (b) who began as undergraduates at the
+         institution ten years prior, (c) with positive yearly earnings
 
-   count_working
-      Number of students who are (a) working, (b) who received federal
-      financial aid, and (c) who began as undergraduates at the
-      institution ten years prior
+      count_not_working
+         Number of students who are (a) not working (not necessarily
+         unemployed), (b) received federal financial aid, and (c) who
+         began as undergraduates at the institution ten years prior
 
-   .. rubric:: Details
-      :name: details
+      count_working
+         Number of students who are (a) working, (b) who received
+         federal financial aid, and (c) who began as undergraduates at
+         the institution ten years prior
 
-   This data is not just limited to four-year colleges and includes a
-   very wide variety of institutions.
+      .. rubric:: Details
+         :name: details
 
-   Note that the labor market (earnings, working) and repayment rate
-   data do not refer to the same cohort of students, but rather are
-   matched on the year in which outcomes are recorded. Labor market data
-   refers to cohorts beginning college as undergraduates ten years
-   prior, repayment rate data refers to cohorts entering repayment seven
-   years prior.
+      This data is not just limited to four-year colleges and includes a
+      very wide variety of institutions.
 
-   Data was downloaded using the Urban Institute's ``educationdata``
-   package.
+      Note that the labor market (earnings, working) and repayment rate
+      data do not refer to the same cohort of students, but rather are
+      matched on the year in which outcomes are recorded. Labor market
+      data refers to cohorts beginning college as undergraduates ten
+      years prior, repayment rate data refers to cohorts entering
+      repayment seven years prior.
 
-   This data was used in the *Describing Variables* chapter of The
-   Effect by Huntington-Klein
+      Data was downloaded using the Urban Institute's ``educationdata``
+      package.
 
-   .. rubric:: Source
-      :name: source
+      This data was used in the *Describing Variables* chapter of The
+      Effect by Huntington-Klein
 
-   Education Data Portal (Version 0.4.0 - Beta), Urban Institute, Center
-   on Education Data and Policy, accessed June 28, 2019.
-   https://educationdata.urban.org/documentation/, Scorecard.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Education Data Portal (Version 0.4.0 - Beta), Urban Institute,
+      Center on Education Data and Policy, accessed June 28, 2019.
+      https://educationdata.urban.org/documentation/, Scorecard.
 
-   Huntington-Klein. 2021. The Effect: An Introduction to Research
-   Design and Causality. https://theeffectbook.net.
+      .. rubric:: References
+         :name: references
+
+      Huntington-Klein. 2021. The Effect: An Introduction to Research
+      Design and Causality. https://theeffectbook.net.

@@ -1,57 +1,60 @@
 .. container::
 
-   ======== ===============
-   diamonds R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Prices of over 50,000 round cut diamonds
-      :name: diamonds
+      ======== ===============
+      diamonds R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Prices of over 50,000 round cut diamonds
+         :name: prices-of-over-50000-round-cut-diamonds
 
-   A dataset containing the prices and other attributes of almost 54,000
-   diamonds. The variables are as follows:
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A dataset containing the prices and other attributes of almost
+      54,000 diamonds. The variables are as follows:
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      diamonds
+      ::
 
-   .. rubric:: Format
-      :name: format
+         diamonds
 
-   A data frame with 53940 rows and 10 variables:
+      .. rubric:: Format
+         :name: format
 
-   price
-      price in US dollars ($326–$18,823)
+      A data frame with 53940 rows and 10 variables:
 
-   carat
-      weight of the diamond (0.2–5.01)
+      price
+         price in US dollars ($326–$18,823)
 
-   cut
-      quality of the cut (Fair, Good, Very Good, Premium, Ideal)
+      carat
+         weight of the diamond (0.2–5.01)
 
-   color
-      diamond colour, from D (best) to J (worst)
+      cut
+         quality of the cut (Fair, Good, Very Good, Premium, Ideal)
 
-   clarity
-      a measurement of how clear the diamond is (I1 (worst), SI2, SI1,
-      VS2, VS1, VVS2, VVS1, IF (best))
+      color
+         diamond colour, from D (best) to J (worst)
 
-   x
-      length in mm (0–10.74)
+      clarity
+         a measurement of how clear the diamond is (I1 (worst), SI2,
+         SI1, VS2, VS1, VVS2, VVS1, IF (best))
 
-   y
-      width in mm (0–58.9)
+      x
+         length in mm (0–10.74)
 
-   z
-      depth in mm (0–31.8)
+      y
+         width in mm (0–58.9)
 
-   depth
-      total depth percentage = z / mean(x, y) = 2 \* z / (x + y) (43–79)
+      z
+         depth in mm (0–31.8)
 
-   table
-      width of top of diamond relative to widest point (43–95)
+      depth
+         total depth percentage = z / mean(x, y) = 2 \* z / (x + y)
+         (43–79)
+
+      table
+         width of top of diamond relative to widest point (43–95)

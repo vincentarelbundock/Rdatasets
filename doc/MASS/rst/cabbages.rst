@@ -1,53 +1,55 @@
 .. container::
 
-   ======== ===============
-   cabbages R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Data from a cabbage field trial
-      :name: cabbages
+      ======== ===============
+      cabbages R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data from a cabbage field trial
+         :name: data-from-a-cabbage-field-trial
 
-   The ``cabbages`` data set has 60 observations and 4 variables
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``cabbages`` data set has 60 observations and 4 variables
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      cabbages
+      ::
 
-   .. rubric:: Format
-      :name: format
+         cabbages
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``Cult``
-      Factor giving the cultivar of the cabbage, two levels: ``c39`` and
-      ``c52``.
+      This data frame contains the following columns:
 
-   ``Date``
-      Factor specifying one of three planting dates: ``d16``, ``d20`` or
-      ``d21``.
+      ``Cult``
+         Factor giving the cultivar of the cabbage, two levels: ``c39``
+         and ``c52``.
 
-   ``HeadWt``
-      Weight of the cabbage head, presumably in kg.
+      ``Date``
+         Factor specifying one of three planting dates: ``d16``, ``d20``
+         or ``d21``.
 
-   ``VitC``
-      Ascorbic acid content, in undefined units.
+      ``HeadWt``
+         Weight of the cabbage head, presumably in kg.
 
-   .. rubric:: Source
-      :name: source
+      ``VitC``
+         Ascorbic acid content, in undefined units.
 
-   Rawlings, J. O. (1988) *Applied Regression Analysis: A Research
-   Tool.* Wadsworth and Brooks/Cole. Example 8.4, page 219. (Rawlings
-   cites the original source as the files of the late Dr Gertrude M
-   Cox.)
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Rawlings, J. O. (1988) *Applied Regression Analysis: A Research
+      Tool.* Wadsworth and Brooks/Cole. Example 8.4, page 219. (Rawlings
+      cites the original source as the files of the late Dr Gertrude M
+      Cox.)
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S-PLUS.* Fourth Edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S-PLUS.* Fourth Edition. Springer.

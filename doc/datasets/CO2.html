@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>CO2</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='CO2'>Carbon Dioxide Uptake in Grass Plants</h2>
+<h2>Carbon Dioxide Uptake in Grass Plants</h2>
 
 <h3>Description</h3>
 
@@ -59,7 +59,7 @@ giving the origin of the plant
 </p>
 </dd>
 <dt>conc</dt><dd>
-<p>a numeric vector of ambient carbon dioxide concentrations (mL/L).
+<p>a numeric vector of ambient carbon dioxide concentrations (<abbr>mL</abbr>/L).
 </p>
 </dd>
 <dt>uptake</dt><dd>
@@ -115,6 +115,7 @@ for (pp in levels(CO2$Plant)) {
 print(sapply(fmlist, coef), digits = 3)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

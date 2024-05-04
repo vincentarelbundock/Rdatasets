@@ -1,42 +1,45 @@
 .. container::
 
-   ========== ===============
-   car_prices R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Kelly Blue Book resale data for 2005 model year GM cars
-      :name: car_prices
+      ========== ===============
+      car_prices R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Kelly Blue Book resale data for 2005 model year GM
+         cars
+         :name: kelly-blue-book-resale-data-for-2005-model-year-gm-cars
 
-   Kuiper (2008) collected data on Kelly Blue Book resale data for 804
-   GM cars (2005 model year).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Value
-      :name: value
+      Kuiper (2008) collected data on Kelly Blue Book resale data for
+      804 GM cars (2005 model year).
 
-   +----------------+----------------------------------------------------+
-   | ``car_prices`` | data frame of the suggested retail price (column   |
-   |                | ``Price``) and various characteristics of each car |
-   |                | (columns ``Mileage``, ``Cylinder``, ``Doors``,     |
-   |                | ``Cruise``, ``Sound``, ``Leather``, ``Buick``,     |
-   |                | ``Cadillac``, ``Chevy``, ``Pontiac``, ``Saab``,    |
-   |                | ``Saturn``, ``convertible``, ``coupe``,            |
-   |                | ``hatchback``, ``sedan`` and ``wagon``)            |
-   +----------------+----------------------------------------------------+
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      +----------------+----------------------------------------------------+
+      | ``car_prices`` | data frame of the suggested retail price (column   |
+      |                | ``Price``) and various characteristics of each car |
+      |                | (columns ``Mileage``, ``Cylinder``, ``Doors``,     |
+      |                | ``Cruise``, ``Sound``, ``Leather``, ``Buick``,     |
+      |                | ``Cadillac``, ``Chevy``, ``Pontiac``, ``Saab``,    |
+      |                | ``Saturn``, ``convertible``, ``coupe``,            |
+      |                | ``hatchback``, ``sedan`` and ``wagon``)            |
+      +----------------+----------------------------------------------------+
 
-   Kuiper, S. (2008). Introduction to Multiple Regression: How Much Is
-   Your Car Worth?, *Journal of Statistics Education*, Vol. 16
-   http://jse.amstat.org/jse_archive.htm#2008.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Kuiper, S. (2008). Introduction to Multiple Regression: How Much
+      Is Your Car Worth?, *Journal of Statistics Education*, Vol. 16
+      http://jse.amstat.org/jse_archive.htm#2008.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(car_prices)
-      str(car_prices)
+      ::
+
+         data(car_prices)
+         str(car_prices)

@@ -1,63 +1,65 @@
 .. container::
 
-   ============= ===============
-   terbuthylazin R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: The effect of terbuthylazin on growth rate
-      :name: terbuthylazin
+      ============= ===============
+      terbuthylazin R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: The effect of terbuthylazin on growth rate
+         :name: the-effect-of-terbuthylazin-on-growth-rate
 
-   Test on the effect of terbuthylazin on *Lemna minor*, performed on an
-   aseptic culture according to the OECD-guidelines.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Test on the effect of terbuthylazin on *Lemna minor*, performed on
+      an aseptic culture according to the OECD-guidelines.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(terbuthylazin)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(terbuthylazin)
 
-   A data frame with 30 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   dose
-      a numeric vector of dose values.
+      A data frame with 30 observations on the following 2 variables.
 
-   rgr
-      a numeric vector of relative growth rates.
+      dose
+         a numeric vector of dose values.
 
-   .. rubric:: Details
-      :name: details
+      rgr
+         a numeric vector of relative growth rates.
 
-   Dose is
+      .. rubric:: Details
+         :name: details
 
-   ``\mu l^{-1}``
+      Dose is
 
-   and rgr is the relative growth rate of *Lemna*.
+      ``\mu l^{-1}``
 
-   .. rubric:: Source
-      :name: source
+      and rgr is the relative growth rate of *Lemna*.
 
-   Cedergreen N. (2004). Unpublished bioassay data.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Cedergreen N. (2004). Unpublished bioassay data.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## displaying first 6 rows of the data set
-      head(terbuthylazin)
+      ::
 
-      ## Fitting log-logistic model
-      terbuthylazin.m1 <- drm(rgr~dose, data = terbuthylazin, fct = LL.4())
-      summary(terbuthylazin.m1)
+         ## displaying first 6 rows of the data set
+         head(terbuthylazin)
 
-      ## Fitting log-logistic model
-      ##  with Box-Cox transformation
-      terbuthylazin.m2 <- boxcox(terbuthylazin.m1, method = "anova")
-      summary(terbuthylazin.m2)
+         ## Fitting log-logistic model
+         terbuthylazin.m1 <- drm(rgr~dose, data = terbuthylazin, fct = LL.4())
+         summary(terbuthylazin.m1)
+
+         ## Fitting log-logistic model
+         ##  with Box-Cox transformation
+         terbuthylazin.m2 <- boxcox(terbuthylazin.m1, method = "anova")
+         summary(terbuthylazin.m2)

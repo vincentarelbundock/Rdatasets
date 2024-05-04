@@ -1,72 +1,76 @@
 .. container::
 
-   ======= ===============
-   flights R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Flights data
-      :name: flights
+      ======= ===============
+      flights R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Flights data
+         :name: flights-data
 
-   On-time data for all flights that departed NYC (i.e. JFK, LGA or EWR)
-   in 2013.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      On-time data for all flights that departed NYC (i.e. JFK, LGA or
+      EWR) in 2013.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      flights
+      ::
 
-   .. rubric:: Format
-      :name: format
+         flights
 
-   Data frame with columns
+      .. rubric:: Format
+         :name: format
 
-   year, month, day
-      Date of departure.
+      Data frame with columns
 
-   dep_time, arr_time
-      Actual departure and arrival times (format HHMM or HMM), local tz.
+      year, month, day
+         Date of departure.
 
-   sched_dep_time, sched_arr_time
-      Scheduled departure and arrival times (format HHMM or HMM), local
-      tz.
+      dep_time, arr_time
+         Actual departure and arrival times (format HHMM or HMM), local
+         tz.
 
-   dep_delay, arr_delay
-      Departure and arrival delays, in minutes. Negative times represent
-      early departures/arrivals.
+      sched_dep_time, sched_arr_time
+         Scheduled departure and arrival times (format HHMM or HMM),
+         local tz.
 
-   carrier
-      Two letter carrier abbreviation. See ``airlines`` to get name.
+      dep_delay, arr_delay
+         Departure and arrival delays, in minutes. Negative times
+         represent early departures/arrivals.
 
-   flight
-      Flight number.
+      carrier
+         Two letter carrier abbreviation. See ``airlines`` to get name.
 
-   tailnum
-      Plane tail number. See ``planes`` for additional metadata.
+      flight
+         Flight number.
 
-   origin, dest
-      Origin and destination. See ``airports`` for additional metadata.
+      tailnum
+         Plane tail number. See ``planes`` for additional metadata.
 
-   air_time
-      Amount of time spent in the air, in minutes.
+      origin, dest
+         Origin and destination. See ``airports`` for additional
+         metadata.
 
-   distance
-      Distance between airports, in miles.
+      air_time
+         Amount of time spent in the air, in minutes.
 
-   hour, minute
-      Time of scheduled departure broken into hour and minutes.
+      distance
+         Distance between airports, in miles.
 
-   time_hour
-      Scheduled date and hour of the flight as a ``POSIXct`` date. Along
-      with ``origin``, can be used to join flights data to ``weather``
-      data.
+      hour, minute
+         Time of scheduled departure broken into hour and minutes.
 
-   .. rubric:: Source
-      :name: source
+      time_hour
+         Scheduled date and hour of the flight as a ``POSIXct`` date.
+         Along with ``origin``, can be used to join flights data to
+         ``weather`` data.
 
-   RITA, Bureau of transportation statistics,
-   https://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236
+      .. rubric:: Source
+         :name: source
+
+      RITA, Bureau of transportation statistics,
+      https://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236

@@ -1,109 +1,111 @@
 .. container::
 
-   ====== ===============
-   cement R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: cement
-      :name: cement
+      ====== ===============
+      cement R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: cement
+         :name: cement
 
-   Wooldridge Source: J. Shea (1993), “The Input-Output Approach to
-   Instrument Selection,” Journal of Business and Economic Statistics
-   11, 145-156. Professor Shea kindly provided these data. Data loads
-   lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: J. Shea (1993), “The Input-Output Approach to
+      Instrument Selection,” Journal of Business and Economic Statistics
+      11, 145-156. Professor Shea kindly provided these data. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('cement')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('cement')
 
-   A data.frame with 312 observations on 30 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1964-1989
+      A data.frame with 312 observations on 30 variables:
 
-   -  **month:** 1-12
+      -  **year:** 1964-1989
 
-   -  **prccem:** BLS ppi for cement
+      -  **month:** 1-12
 
-   -  **ipcem:** industrial prod. index, cement
+      -  **prccem:** BLS ppi for cement
 
-   -  **prcpet:** ppi for crude petroleum
+      -  **ipcem:** industrial prod. index, cement
 
-   -  **rresc:** real residential construction
+      -  **prcpet:** ppi for crude petroleum
 
-   -  **rnonc:** real nonres. construction
+      -  **rresc:** real residential construction
 
-   -  **ip:** aggregate index of indus. prod.
+      -  **rnonc:** real nonres. construction
 
-   -  **rdefs:** real defense spending
+      -  **ip:** aggregate index of indus. prod.
 
-   -  **milemp:** military employment
+      -  **rdefs:** real defense spending
 
-   -  **gprc:** log(prccem) - log(prccem[\_n-1])
+      -  **milemp:** military employment
 
-   -  **gcem:** log(ipcem) - log(ipcem[\_n-1])
+      -  **gprc:** log(prccem) - log(prccem[_n-1])
 
-   -  **gprcpet:** log(prcpet) - log(prcpet[\_n-1])
+      -  **gcem:** log(ipcem) - log(ipcem[_n-1])
 
-   -  **gres:** log(rresc) - log(rresc[\_n-1])
+      -  **gprcpet:** log(prcpet) - log(prcpet[_n-1])
 
-   -  **gnon:** log(rnonc) - log(rnonc[\_n-1])
+      -  **gres:** log(rresc) - log(rresc[_n-1])
 
-   -  **gip:** log(ip) - log(ip[\_n-1])
+      -  **gnon:** log(rnonc) - log(rnonc[_n-1])
 
-   -  **gdefs:** log(rdefs) - log(rdefs[\_n-1])
+      -  **gip:** log(ip) - log(ip[_n-1])
 
-   -  **gmilemp:** log(milemp) - log(milemp[\_n-1])
+      -  **gdefs:** log(rdefs) - log(rdefs[_n-1])
 
-   -  **jan:** =1 if month == 1
+      -  **gmilemp:** log(milemp) - log(milemp[_n-1])
 
-   -  **feb:** =1 if month == 2
+      -  **jan:** =1 if month == 1
 
-   -  **mar:** =1 if month == 3
+      -  **feb:** =1 if month == 2
 
-   -  **apr:** =1 if month == 4
+      -  **mar:** =1 if month == 3
 
-   -  **may:** =1 if month == 5
+      -  **apr:** =1 if month == 4
 
-   -  **jun:** =1 if month == 6
+      -  **may:** =1 if month == 5
 
-   -  **jul:** =1 if month == 7
+      -  **jun:** =1 if month == 6
 
-   -  **aug:** =1 if month == 8
+      -  **jul:** =1 if month == 7
 
-   -  **sep:** =1 if month == 9
+      -  **aug:** =1 if month == 8
 
-   -  **oct:** =1 if month == 10
+      -  **sep:** =1 if month == 9
 
-   -  **nov:** =1 if month == 11
+      -  **oct:** =1 if month == 10
 
-   -  **dec:** =1 if month == 12
+      -  **nov:** =1 if month == 11
 
-   .. rubric:: Notes
-      :name: notes
+      -  **dec:** =1 if month == 12
 
-   Compared with Shea’s analysis, the producer price index (PPI) for
-   fuels and power has been replaced with the PPI for petroleum. The
-   data are monthly and have not been seasonally adjusted.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 579
+      Compared with Shea’s analysis, the producer price index (PPI) for
+      fuels and power has been replaced with the PPI for petroleum. The
+      data are monthly and have not been seasonally adjusted.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 579
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(cement)
+      ::
+
+          str(cement)

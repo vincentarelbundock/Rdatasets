@@ -1,48 +1,51 @@
 .. container::
 
-   ========== ===============
-   death_prob R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: 2015 US Period Life Table
-      :name: death_prob
+      ========== ===============
+      death_prob R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: 2015 US Period Life Table
+         :name: us-period-life-table
 
-   Probability of death within 1 year by age and sex in the United
-   States in 2015.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Probability of death within 1 year by age and sex in the United
+      States in 2015.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      death_prob
+      ::
 
-   .. rubric:: Format
-      :name: format
+         death_prob
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  age. Age strata, with each year a different stratum.
+      .. rubric:: Details
+         :name: details
 
-   -  sex. Male or Female.
+      -  age. Age strata, with each year a different stratum.
 
-   -  prob. Probability of death within 1 year given exact age and sex.
+      -  sex. Male or Female.
 
-   .. rubric:: Source
-      :name: source
+      -  prob. Probability of death within 1 year given exact age and
+         sex.
 
-   `Social Security
-   Administraton <https://www.ssa.gov/oact/STATS/table4c6.html>`__
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      `Social Security
+      Administraton <https://www.ssa.gov/oact/STATS/table4c6.html>`__
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      head(death_prob)
+      ::
+
+         head(death_prob)

@@ -1,140 +1,139 @@
 .. container::
 
-   ====== ===============
-   Skulls R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Egyptian Skulls
-      :name: Skulls
+      ====== ===============
+      Skulls R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Egyptian Skulls
+         :name: egyptian-skulls
 
-   Measurements made on Egyptian skulls from five epochs.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Measurements made on Egyptian skulls from five epochs.
 
-   .. code:: R
+      .. rubric:: Format
+         :name: format
 
-      data("Skulls")
+      A data frame with 150 observations on the following 5 variables.
 
-   .. rubric:: Format
-      :name: format
+      ``epoch``
+         the epoch the skull as assigned to, an ordered factor with
+         levels ``c4000BC`` ``c3300BC``, ``c1850BC``, ``c200BC``, and
+         ``cAD150``, where the years are only given approximately, of
+         course.
 
-   A data frame with 150 observations on the following 5 variables.
+      ``mb``
+         maximal breadth of the skull.
 
-   ``epoch``
-      the epoch the skull as assigned to, an ordered factor with levels
-      ``c4000BC`` ``c3300BC``, ``c1850BC``, ``c200BC``, and ``cAD150``,
-      where the years are only given approximately, of course.
+      ``bh``
+         basibregmatic height of the skull.
 
-   ``mb``
-      maximal breadth of the skull.
+      ``bl``
+         basialiveolar length of the skull.
 
-   ``bh``
-      basibregmatic height of the skull.
+      ``nh``
+         nasal height of the skull.
 
-   ``bl``
-      basialiveolar length of the skull.
+      .. rubric:: Details
+         :name: details
 
-   ``nh``
-      nasal height of the skull.
+      The epochs correspond to the following periods of Egyptian
+      history:
 
-   .. rubric:: Details
-      :name: details
+      #. the early predynastic period (circa 4000 BC);
 
-   The epochs correspond to the following periods of Egyptian history:
+      #. the late predynastic period (circa 3300 BC);
 
-   #. the early predynastic period (circa 4000 BC);
+      #. the 12th and 13th dynasties (circa 1850 BC);
 
-   #. the late predynastic period (circa 3300 BC);
+      #. the Ptolemiac period (circa 200 BC);
 
-   #. the 12th and 13th dynasties (circa 1850 BC);
+      #. the Roman period (circa 150 AD).
 
-   #. the Ptolemiac period (circa 200 BC);
+      The question is whether the measurements change over time.
+      Non-constant measurements of the skulls over time would indicate
+      interbreeding with immigrant populations.
 
-   #. the Roman period (circa 150 AD).
+      Note that using polynomial contrasts for ``epoch`` essentially
+      treats the time points as equally spaced.
 
-   The question is whether the measurements change over time.
-   Non-constant measurements of the skulls over time would indicate
-   interbreeding with immigrant populations.
+      .. rubric:: Source
+         :name: source
 
-   Note that using polynomial contrasts for ``epoch`` essentially treats
-   the time points as equally spaced.
+      D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
+      (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC,
+      London.
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: References
+         :name: references
 
-   D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
-   (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC, London.
+      Thomson, A. and Randall-Maciver, R. (1905) *Ancient Races of the
+      Thebaid*, Oxford: Oxford University Press.
 
-   .. rubric:: References
-      :name: references
+      Hand, D. J., F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
+      (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC,
+      London.
 
-   Thomson, A. and Randall-Maciver, R. (1905) *Ancient Races of the
-   Thebaid*, Oxford: Oxford University Press.
+      .. rubric:: Examples
+         :name: examples
 
-   Hand, D. J., F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
-   (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC, London.
+      ::
 
-   .. rubric:: Examples
-      :name: examples
+         data(Skulls)
+         library(car)    # for Anova
 
-   .. code:: R
+         # make shorter labels for epochs
+         Skulls$epoch <- factor(Skulls$epoch, labels=sub("c","",levels(Skulls$epoch)))
 
-      data(Skulls)
-      library(car)    # for Anova
+         # longer variable labels
+         vlab <- c("maxBreadth", "basibHeight", "basialLength", "nasalHeight")
 
-      # make shorter labels for epochs
-      Skulls$epoch <- factor(Skulls$epoch, labels=sub("c","",levels(Skulls$epoch)))
+         # fit manova model
+         sk.mod <- lm(cbind(mb, bh, bl, nh) ~ epoch, data=Skulls)
 
-      # longer variable labels
-      vlab <- c("maxBreadth", "basibHeight", "basialLength", "nasalHeight")
+         Anova(sk.mod)
+         summary(Anova(sk.mod))
 
-      # fit manova model
-      sk.mod <- lm(cbind(mb, bh, bl, nh) ~ epoch, data=Skulls)
+         # test trends over epochs
+         print(linearHypothesis(sk.mod, "epoch.L"), SSP=FALSE) # linear component
+         print(linearHypothesis(sk.mod, "epoch.Q"), SSP=FALSE) # quadratic component
 
-      Anova(sk.mod)
-      summary(Anova(sk.mod))
+         # typical scatterplots are not very informative
+         scatterplot(mb ~ bh|epoch, data=Skulls, 
+                     ellipse = list(levels=0.68), 
+                     smooth=FALSE, 
+                     legend = list(coords="topright"),
+                     xlab=vlab[2], ylab=vlab[1])
 
-      # test trends over epochs
-      print(linearHypothesis(sk.mod, "epoch.L"), SSP=FALSE) # linear component
-      print(linearHypothesis(sk.mod, "epoch.Q"), SSP=FALSE) # quadratic component
+         scatterplot(mb ~ bl|epoch, data=Skulls, 
+                     ellipse = list(levels=0.68), 
+                     smooth=FALSE, 
+                     legend = list(coords="topright"),
+                     xlab=vlab[3], ylab=vlab[1])
 
-      # typical scatterplots are not very informative
-      scatterplot(mb ~ bh|epoch, data=Skulls, 
-                  ellipse = list(levels=0.68), 
-                  smooth=FALSE, 
-                  legend = list(coords="topright"),
-                  xlab=vlab[2], ylab=vlab[1])
+         # HE plots
 
-      scatterplot(mb ~ bl|epoch, data=Skulls, 
-                  ellipse = list(levels=0.68), 
-                  smooth=FALSE, 
-                  legend = list(coords="topright"),
-                  xlab=vlab[3], ylab=vlab[1])
+         heplot(sk.mod, 
+                hypotheses=list(Lin="epoch.L", Quad="epoch.Q"), 
+                xlab=vlab[1], ylab=vlab[2])
 
-      # HE plots
+         pairs(sk.mod, 
+               hypotheses=list(Lin="epoch.L", Quad="epoch.Q"), 
+               var.labels=vlab)
 
-      heplot(sk.mod, 
-             hypotheses=list(Lin="epoch.L", Quad="epoch.Q"), 
-             xlab=vlab[1], ylab=vlab[2])
+         # 3D plot shows that nearly all of hypothesis variation is linear!
+         ## Not run: 
+         heplot3d(sk.mod, hypotheses=list(Lin="epoch.L", Quad="epoch.Q"), col=c("pink", "blue"))
 
-      pairs(sk.mod, 
-            hypotheses=list(Lin="epoch.L", Quad="epoch.Q"), 
-            var.labels=vlab)
+         # view in canonical space
+         if (require(candisc)) {
+             sk.can <- candisc(sk.mod)
+             sk.can
+             heplot(sk.can)
+             heplot3d(sk.can)
+         }
 
-      # 3D plot shows that nearly all of hypothesis variation is linear!
-      ## Not run: 
-      heplot3d(sk.mod, hypotheses=list(Lin="epoch.L", Quad="epoch.Q"), col=c("pink", "blue"))
-
-      # view in canonical space
-      if (require(candisc)) {
-          sk.can <- candisc(sk.mod)
-          sk.can
-          heplot(sk.can)
-          heplot3d(sk.can)
-      }
-
-      ## End(Not run)
+         ## End(Not run)

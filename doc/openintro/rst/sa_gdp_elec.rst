@@ -1,72 +1,75 @@
 .. container::
 
-   =========== ===============
-   sa_gdp_elec R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Sustainability and Economic Indicators for South Africa.
-      :name: sa_gdp_elec
+      =========== ===============
+      sa_gdp_elec R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sustainability and Economic Indicators for South
+         Africa.
+         :name: sustainability-and-economic-indicators-for-south-africa.
 
-   Includes yearly data on gdp, gni, co2 emissions, start up costs.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Includes yearly data on gdp, gni, co2 emissions, start up costs.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      sa_gdp_elec
+      ::
 
-   .. rubric:: Format
-      :name: format
+         sa_gdp_elec
 
-   A data frame with 16 rows and 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   year
-      Year data collected.
+      A data frame with 16 rows and 7 variables.
 
-   access_elec
-      Access to electricity as a percentage of the population.
+      year
+         Year data collected.
 
-   startup
-      cost of business startup procedures as a percent of GNI.
+      access_elec
+         Access to electricity as a percentage of the population.
 
-   co2
-      CO2 emission in kt (kiloton).
+      startup
+         cost of business startup procedures as a percent of GNI.
 
-   gdp
-      GDP per capita, PPP in constant 2017 international dollars.
+      co2
+         CO2 emission in kt (kiloton).
 
-   gni
-      GNI per capita, PPP in constant 2017 international dollars.
+      gdp
+         GDP per capita, PPP in constant 2017 international dollars.
 
-   co2_kg_ppp
-      kg per 2017 PPP dollars of GDP.
+      gni
+         GNI per capita, PPP in constant 2017 international dollars.
 
-   .. rubric:: Source
-      :name: source
+      co2_kg_ppp
+         kg per 2017 PPP dollars of GDP.
 
-   -  `World Bank
-      I <https://databank.worldbank.org/source/world-development-indicators>`__
+      .. rubric:: Source
+         :name: source
 
-   -  `World Bank
-      II <https://www.worldbank.org/en/programs/business-enabling-environment>`__
+      -  `World Bank
+         I <https://databank.worldbank.org/source/world-development-indicators>`__
 
-   -  `Carbon Dioxide Information Analysis Center, Environmental
-      Sciences Division, Oak Ridge National
-      Laboratory <https://www.climatewatchdata.org>`__
+      -  `World Bank
+         II <https://www.worldbank.org/en/programs/business-enabling-environment>`__
 
-   .. rubric:: Examples
-      :name: examples
+      -  `Carbon Dioxide Information Analysis Center, Environmental
+         Sciences Division, Oak Ridge National
+         Laboratory <https://www.climatewatchdata.org>`__
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(sa_gdp_elec, aes(year, access_elec))+
-       geom_point(alpha = 0.3) +
-       labs( x= "Year",
-             y = "Percent of Population",
-             title = "Access to Electricity in South Africa 2003 - 2018")
+         library(ggplot2)
+
+         ggplot(sa_gdp_elec, aes(year, access_elec))+
+          geom_point(alpha = 0.3) +
+          labs( x= "Year",
+                y = "Percent of Population",
+                title = "Access to Electricity in South Africa 2003 - 2018")

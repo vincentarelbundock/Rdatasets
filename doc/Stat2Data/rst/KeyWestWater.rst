@@ -1,46 +1,49 @@
 .. container::
 
-   ============ ===============
-   KeyWestWater R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Key West Water Temperatures
-      :name: KeyWestWater
+      ============ ===============
+      KeyWestWater R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Key West Water Temperatures
+         :name: key-west-water-temperatures
 
-   Hourly water temperatures from Gulf of Mexico near Key West, Florida
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Hourly water temperatures from Gulf of Mexico near Key West,
+      Florida
 
-   A data frame with 6572 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``DateTime``
-      Date and time of reading (format ``mm/dd/yyyy h:00``)
+      A data frame with 6572 observations on the following 3 variables.
 
-   ``WaterTemp``
-      Water temperature (in degrees Fahrenheit)
+      ``DateTime``
+         Date and time of reading (format ``mm/dd/yyyy h:00``)
 
-   ``t``
-      Time index (1 to 673)
+      ``WaterTemp``
+         Water temperature (in degrees Fahrenheit)
 
-   .. rubric:: Details
-      :name: details
+      ``t``
+         Time index (1 to 673)
 
-   Hourly readings of water temperatures from a measuring device in the
-   Gulf of Mexico near Key West, Florida. The hourly temperatures are
-   provided from October 3, 2016 to October 3, 2017 and were obtained
-   from station 8724580. A few missing values have been interpolated to
-   provide a complete series.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Hourly readings of water temperatures from a measuring device in
+      the Gulf of Mexico near Key West, Florida. The hourly temperatures
+      are provided from October 3, 2016 to October 3, 2017 and were
+      obtained from station 8724580. A few missing values have been
+      interpolated to provide a complete series.
 
-   National Oceanographic and Atmospheric Administration (2017), Key
-   West Ocean Temperature Data, October 3, 2016 to October 3, 2017,
-   https://www.nodc.noaa.gov, Accessed on October 4, 2017
+      .. rubric:: Source
+         :name: source
 
-   Data were obtained by Kyle Johnston for his Senior Exercise (a
-   capstone project).
+      National Oceanographic and Atmospheric Administration (2017), Key
+      West Ocean Temperature Data, October 3, 2016 to October 3, 2017,
+      https://www.nodc.noaa.gov, Accessed on October 4, 2017
+
+      Data were obtained by Kyle Johnston for his Senior Exercise (a
+      capstone project).

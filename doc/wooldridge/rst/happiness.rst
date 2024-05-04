@@ -1,108 +1,110 @@
 .. container::
 
-   ========= ===============
-   happiness R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: happiness
-      :name: happiness
+      ========= ===============
+      happiness R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: happiness
+         :name: happiness
 
-   Wooldridge Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('happiness')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('happiness')
 
-   A data.frame with 17137 observations on 33 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** gss year for this respondent
+      A data.frame with 17137 observations on 33 variables:
 
-   -  **workstat:** work force status
+      -  **year:** gss year for this respondent
 
-   -  **prestige:** occupational prestige score
+      -  **workstat:** work force status
 
-   -  **divorce:** ever been divorced or separated
+      -  **prestige:** occupational prestige score
 
-   -  **widowed:** ever been widowed
+      -  **divorce:** ever been divorced or separated
 
-   -  **educ:** highest year of school completed
+      -  **widowed:** ever been widowed
 
-   -  **reg16:** region of residence, age 16
+      -  **educ:** highest year of school completed
 
-   -  **babies:** household members less than 6 yrs old
+      -  **reg16:** region of residence, age 16
 
-   -  **preteen:** household members 6 thru 12 yrs old
+      -  **babies:** household members less than 6 yrs old
 
-   -  **teens:** household members 13 thru 17 yrs old
+      -  **preteen:** household members 6 thru 12 yrs old
 
-   -  **income:** total family income
+      -  **teens:** household members 13 thru 17 yrs old
 
-   -  **region:** region of interview
+      -  **income:** total family income
 
-   -  **attend:** how often r attends religious services
+      -  **region:** region of interview
 
-   -  **happy:** general happiness
+      -  **attend:** how often r attends religious services
 
-   -  **owngun:** =1 if own gun
+      -  **happy:** general happiness
 
-   -  **tvhours:** hours per day watching tv
+      -  **owngun:** =1 if own gun
 
-   -  **vhappy:** =1 if 'very happy'
+      -  **tvhours:** hours per day watching tv
 
-   -  **mothfath16:** =1 if live with mother and father at 16
+      -  **vhappy:** =1 if 'very happy'
 
-   -  **black:** =1 if black
+      -  **mothfath16:** =1 if live with mother and father at 16
 
-   -  **gwbush04:** =1 if voted for G.W. Bush in 2004
+      -  **black:** =1 if black
 
-   -  **female:** =1 if female
+      -  **gwbush04:** =1 if voted for G.W. Bush in 2004
 
-   -  **blackfemale:** black*female
+      -  **female:** =1 if female
 
-   -  **gwbush00:** =1 if voted for G.W. Bush in 2000
+      -  **blackfemale:** black*female
 
-   -  **occattend:** =1 if attend is 3, 4, or 5
+      -  **gwbush00:** =1 if voted for G.W. Bush in 2000
 
-   -  **regattend:** =1 if attend is 6, 7, or 8
+      -  **occattend:** =1 if attend is 3, 4, or 5
 
-   -  **y94:** =1 if year == 1994
+      -  **regattend:** =1 if attend is 6, 7, or 8
 
-   -  **y96:**
+      -  **y94:** =1 if year == 1994
 
-   -  **y98:**
+      -  **y96:**
 
-   -  **y00:**
+      -  **y98:**
 
-   -  **y02:**
+      -  **y00:**
 
-   -  **y04:**
+      -  **y02:**
 
-   -  **y06:** =1 if year == 2006
+      -  **y04:**
 
-   -  **unem10:** =1 if unemployed in last 10 years
+      -  **y06:** =1 if year == 2006
 
-   .. rubric:: 
-      :name: section
+      -  **unem10:** =1 if unemployed in last 10 years
 
-   NA
+      .. rubric:: 
+         :name: section
 
-   .. rubric:: Source
-      :name: source
+      NA
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(happiness)
+      ::
+
+          str(happiness)

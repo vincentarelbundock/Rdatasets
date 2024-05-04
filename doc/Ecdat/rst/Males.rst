@@ -1,94 +1,96 @@
 .. container::
 
-   ===== ===============
-   Males R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Wages and Education of Young Males
-      :name: Males
+      ===== ===============
+      Males R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Wages and Education of Young Males
+         :name: wages-and-education-of-young-males
 
-   a panel of 545 observations from 1980 to 1987
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 4360
+      a panel of 545 observations from 1980 to 1987
 
-   *observation* : individuals
+      *number of observations* : 4360
 
-   *country* : United States
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Males)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Males)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   nr
-      identifier
+      A dataframe containing :
 
-   year
+      nr
+         identifier
+
       year
+         year
 
-   school
-      years of schooling
+      school
+         years of schooling
 
-   exper
-      years of experience (=age-6-school)
+      exper
+         years of experience (=age-6-school)
 
-   union
-      wage set by collective bargaining ?
+      union
+         wage set by collective bargaining ?
 
-   ethn
-      a factor with levels (``black``, ``hisp``, ``other``)
+      ethn
+         a factor with levels (``black``, ``hisp``, ``other``)
 
-   maried
-      married ?
+      maried
+         married ?
 
-   health
-      health problem ?
+      health
+         health problem ?
 
-   wage
-      log of hourly wage
+      wage
+         log of hourly wage
 
-   industry
-      a factor with 12 levels
+      industry
+         a factor with 12 levels
 
-   occupation
-      a factor with 9 levels
+      occupation
+         a factor with 9 levels
 
-   residence
-      a factor with levels (``rural area``, ``north east``,
-      ``northern central``, ``south``)
+      residence
+         a factor with levels (``rural area``, ``north east``,
+         ``northern central``, ``south``)
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: Source
+         :name: source
 
-   National Longitudinal Survey (NLS Youth Sample).
+      National Longitudinal Survey (NLS Youth Sample).
 
-   Vella, F. and M. Verbeek (1998) “Whose wages do unions raise ? A
-   dynamic model of unionism and wage”, *Journal of Applied
-   Econometrics*, **13**, 163–183.
+      Vella, F. and M. Verbeek (1998) “Whose wages do unions raise ? A
+      dynamic model of unionism and wage”, *Journal of Applied
+      Econometrics*, **13**, 163–183.
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: References
+         :name: references
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons, chapter 10.
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons, chapter 10.
 
-   Journal of Applied Econometrics data archive :
-   http://qed.econ.queensu.ca/jae/.
+      Journal of Applied Econometrics data archive :
+      http://qed.econ.queensu.ca/jae/.
 
-   .. rubric:: See Also
-      :name: see-also
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
 
-   ``Index.Time.Series``
+      ``Index.Time.Series``

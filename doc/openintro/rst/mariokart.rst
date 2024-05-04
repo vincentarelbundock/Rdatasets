@@ -1,157 +1,160 @@
 .. container::
 
-   ========= ===============
-   mariokart R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Wii Mario Kart auctions from Ebay
-      :name: mariokart
+      ========= ===============
+      mariokart R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Wii Mario Kart auctions from Ebay
+         :name: wii-mario-kart-auctions-from-ebay
 
-   Auction data from Ebay for the game Mario Kart for the Nintendo Wii.
-   This data was collected in early October 2009.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Auction data from Ebay for the game Mario Kart for the Nintendo
+      Wii. This data was collected in early October 2009.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      mariokart
+      ::
 
-   .. rubric:: Format
-      :name: format
+         mariokart
 
-   A data frame with 143 observations on the following 12 variables. All
-   prices are in US dollars.
+      .. rubric:: Format
+         :name: format
 
-   id
-      Auction ID assigned by Ebay.
+      A data frame with 143 observations on the following 12 variables.
+      All prices are in US dollars.
 
-   duration
-      Auction length, in days.
+      id
+         Auction ID assigned by Ebay.
 
-   n_bids
-      Number of bids.
+      duration
+         Auction length, in days.
 
-   cond
-      Game condition, either ``new`` or ``used``.
+      n_bids
+         Number of bids.
 
-   start_pr
-      Start price of the auction.
+      cond
+         Game condition, either ``new`` or ``used``.
 
-   ship_pr
-      Shipping price.
+      start_pr
+         Start price of the auction.
 
-   total_pr
-      Total price, which equals the auction price plus the shipping
-      price.
+      ship_pr
+         Shipping price.
 
-   ship_sp
-      Shipping speed or method.
+      total_pr
+         Total price, which equals the auction price plus the shipping
+         price.
 
-   seller_rate
-      The seller's rating on Ebay. This is the number of positive
-      ratings minus the number of negative ratings for the seller.
+      ship_sp
+         Shipping speed or method.
 
-   stock_photo
-      Whether the auction feature photo was a stock photo or not. If the
-      picture was used in many auctions, then it was called a stock
-      photo.
+      seller_rate
+         The seller's rating on Ebay. This is the number of positive
+         ratings minus the number of negative ratings for the seller.
 
-   wheels
-      Number of Wii wheels included in the auction. These are steering
-      wheel attachments to make it seem as though you are actually
-      driving in the game. When used with the controller, turning the
-      wheel actually causes the character on screen to turn.
+      stock_photo
+         Whether the auction feature photo was a stock photo or not. If
+         the picture was used in many auctions, then it was called a
+         stock photo.
 
-   title
-      The title of the auctions.
+      wheels
+         Number of Wii wheels included in the auction. These are
+         steering wheel attachments to make it seem as though you are
+         actually driving in the game. When used with the controller,
+         turning the wheel actually causes the character on screen to
+         turn.
 
-   .. rubric:: Details
-      :name: details
+      title
+         The title of the auctions.
 
-   There are several interesting features in the data. First off, note
-   that there are two outliers in the data. These serve as a nice
-   example of what one should do when encountering an outlier: examine
-   the data point and remove it only if there is a good reason. In these
-   two cases, we can see from the auction titles that they included
-   other items in their auctions besides the game, which justifies
-   removing them from the data set.
+      .. rubric:: Details
+         :name: details
 
-   This data set includes all auctions for a full week in October 2009.
-   Auctions were included in the data set if they satisfied a number of
-   conditions. (1) They were included in a search for "wii mario kart"
-   on ebay.com, (2) items were in the Video Games > Games > Nintendo Wii
-   section of Ebay, (3) the listing was an auction and not exclusively a
-   "Buy it Now" listing (sellers sometimes offer an optional higher
-   price for a buyer to end bidding and win the auction immediately,
-   which is an *optional* Buy it Now auction), (4) the item listed was
-   the actual game, (5) the item was being sold from the US, (6) the
-   item had at least one bidder, (7) there were no other items included
-   in the auction with the exception of racing wheels, either generic or
-   brand-name being acceptable, and (8) the auction did not end with a
-   Buy It Now option.
+      There are several interesting features in the data. First off,
+      note that there are two outliers in the data. These serve as a
+      nice example of what one should do when encountering an outlier:
+      examine the data point and remove it only if there is a good
+      reason. In these two cases, we can see from the auction titles
+      that they included other items in their auctions besides the game,
+      which justifies removing them from the data set.
 
-   .. rubric:: Source
-      :name: source
+      This data set includes all auctions for a full week in October
+      2009. Auctions were included in the data set if they satisfied a
+      number of conditions. (1) They were included in a search for "wii
+      mario kart" on ebay.com, (2) items were in the Video Games > Games
+      > Nintendo Wii section of Ebay, (3) the listing was an auction and
+      not exclusively a "Buy it Now" listing (sellers sometimes offer an
+      optional higher price for a buyer to end bidding and win the
+      auction immediately, which is an *optional* Buy it Now auction),
+      (4) the item listed was the actual game, (5) the item was being
+      sold from the US, (6) the item had at least one bidder, (7) there
+      were no other items included in the auction with the exception of
+      racing wheels, either generic or brand-name being acceptable, and
+      (8) the auction did not end with a Buy It Now option.
 
-   Ebay.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Ebay.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
-      library(broom)
-      library(dplyr)
+      ::
 
-      # Identify outliers
-      ggplot(mariokart, aes(x = total_pr, y = cond)) +
-        geom_boxplot()
+         library(ggplot2)
+         library(broom)
+         library(dplyr)
 
-      # Replot without the outliers
-      mariokart %>%
-        filter(total_pr < 80) %>%
-        ggplot(aes(x = total_pr, y = cond)) +
-        geom_boxplot()
+         # Identify outliers
+         ggplot(mariokart, aes(x = total_pr, y = cond)) +
+           geom_boxplot()
 
-      # Fit a multiple regression models
-      mariokart_no <- mariokart %>% filter(total_pr < 80)
-      m1 <- lm(total_pr ~ cond + stock_photo + duration + wheels, data = mariokart_no)
-      tidy(m1)
-      m2 <- lm(total_pr ~ cond + stock_photo + wheels, data = mariokart_no)
-      tidy(m2)
-      m3 <- lm(total_pr ~ cond + wheels, data = mariokart_no)
-      tidy(m3)
+         # Replot without the outliers
+         mariokart %>%
+           filter(total_pr < 80) %>%
+           ggplot(aes(x = total_pr, y = cond)) +
+           geom_boxplot()
 
-      # Fit diagnostics
-      aug_m3 <- augment(m3)
+         # Fit a multiple regression models
+         mariokart_no <- mariokart %>% filter(total_pr < 80)
+         m1 <- lm(total_pr ~ cond + stock_photo + duration + wheels, data = mariokart_no)
+         tidy(m1)
+         m2 <- lm(total_pr ~ cond + stock_photo + wheels, data = mariokart_no)
+         tidy(m2)
+         m3 <- lm(total_pr ~ cond + wheels, data = mariokart_no)
+         tidy(m3)
 
-      ggplot(aug_m3, aes(x = .fitted, y = .resid)) +
-        geom_point() +
-        geom_hline(yintercept = 0, linetype = "dashed") +
-        labs(x = "Fitted values", y = "Residuals")
+         # Fit diagnostics
+         aug_m3 <- augment(m3)
 
-      ggplot(aug_m3, aes(x = .fitted, y = abs(.resid))) +
-        geom_point() +
-        geom_hline(yintercept = 0, linetype = "dashed") +
-        labs(x = "Fitted values", y = "Absolute value of residuals")
+         ggplot(aug_m3, aes(x = .fitted, y = .resid)) +
+           geom_point() +
+           geom_hline(yintercept = 0, linetype = "dashed") +
+           labs(x = "Fitted values", y = "Residuals")
 
-      ggplot(aug_m3, aes(x = 1:nrow(aug_m3), y = .resid)) +
-        geom_point() +
-        geom_hline(yintercept = 0, linetype = "dashed") +
-        labs(x = "Order of data collection", y = "Residuals")
+         ggplot(aug_m3, aes(x = .fitted, y = abs(.resid))) +
+           geom_point() +
+           geom_hline(yintercept = 0, linetype = "dashed") +
+           labs(x = "Fitted values", y = "Absolute value of residuals")
 
-      ggplot(aug_m3, aes(x = cond, y = .resid)) +
-        geom_boxplot() +
-        labs(x = "Condition", y = "Residuals")
+         ggplot(aug_m3, aes(x = 1:nrow(aug_m3), y = .resid)) +
+           geom_point() +
+           geom_hline(yintercept = 0, linetype = "dashed") +
+           labs(x = "Order of data collection", y = "Residuals")
 
-      ggplot(aug_m3, aes(x = wheels, y = .resid)) +
-        geom_point() +
-        labs(
-          x = "Number of wheels", y = "Residuals",
-          title = "Notice curvature"
-        )
+         ggplot(aug_m3, aes(x = cond, y = .resid)) +
+           geom_boxplot() +
+           labs(x = "Condition", y = "Residuals")
+
+         ggplot(aug_m3, aes(x = wheels, y = .resid)) +
+           geom_point() +
+           labs(
+             x = "Number of wheels", y = "Residuals",
+             title = "Notice curvature"
+           )

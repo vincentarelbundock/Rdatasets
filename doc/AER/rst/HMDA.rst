@@ -1,111 +1,113 @@
 .. container::
 
-   ==== ===============
-   HMDA R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Home Mortgage Disclosure Act Data
-      :name: HMDA
+      ==== ===============
+      HMDA R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Home Mortgage Disclosure Act Data
+         :name: home-mortgage-disclosure-act-data
 
-   Cross-section data on the Home Mortgage Disclosure Act (HMDA).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-section data on the Home Mortgage Disclosure Act (HMDA).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("HMDA")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("HMDA")
 
-   A data frame containing 2,380 observations on 14 variables.
+      .. rubric:: Format
+         :name: format
 
-   deny
-      Factor. Was the mortgage denied?
+      A data frame containing 2,380 observations on 14 variables.
 
-   pirat
-      Payments to income ratio.
+      deny
+         Factor. Was the mortgage denied?
 
-   hirat
-      Housing expense to income ratio.
+      pirat
+         Payments to income ratio.
 
-   lvrat
-      Loan to value ratio.
+      hirat
+         Housing expense to income ratio.
 
-   chist
-      Factor. Credit history: consumer payments.
+      lvrat
+         Loan to value ratio.
 
-   mhist
-      Factor. Credit history: mortgage payments.
+      chist
+         Factor. Credit history: consumer payments.
 
-   phist
-      Factor. Public bad credit record?
+      mhist
+         Factor. Credit history: mortgage payments.
 
-   unemp
-      1989 Massachusetts unemployment rate in applicant's industry.
+      phist
+         Factor. Public bad credit record?
 
-   selfemp
-      Factor. Is the individual self-employed?
+      unemp
+         1989 Massachusetts unemployment rate in applicant's industry.
 
-   insurance
-      Factor. Was the individual denied mortgage insurance?
+      selfemp
+         Factor. Is the individual self-employed?
 
-   condomin
-      Factor. Is the unit a condominium?
+      insurance
+         Factor. Was the individual denied mortgage insurance?
 
-   afam
-      Factor. Is the individual African-American?
+      condomin
+         Factor. Is the unit a condominium?
 
-   single
-      Factor. Is the individual single?
+      afam
+         Factor. Is the individual African-American?
 
-   hschool
-      Factor. Does the individual have a high-school diploma?
+      single
+         Factor. Is the individual single?
 
-   .. rubric:: Details
-      :name: details
+      hschool
+         Factor. Does the individual have a high-school diploma?
 
-   Only includes variables used by Stock and Watson (2007), some of
-   which had to be generated from the raw data.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Only includes variables used by Stock and Watson (2007), some of
+      which had to be generated from the raw data.
 
-   Online complements to Stock and Watson (2007).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Stock and Watson (2007).
 
-   Munnell, A. H., Tootell, G. M. B., Browne, L. E. and McEneaney, J.
-   (1996). Mortgage Lending in Boston: Interpreting HMDA Data. *American
-   Economic Review*, **86**, 25–53.
+      .. rubric:: References
+         :name: references
 
-   Stock, J. H. and Watson, M. W. (2007). *Introduction to
-   Econometrics*, 2nd ed. Boston: Addison Wesley.
+      Munnell, A. H., Tootell, G. M. B., Browne, L. E. and McEneaney, J.
+      (1996). Mortgage Lending in Boston: Interpreting HMDA Data.
+      *American Economic Review*, **86**, 25–53.
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, J. H. and Watson, M. W. (2007). *Introduction to
+      Econometrics*, 2nd ed. Boston: Addison Wesley.
 
-   ``StockWatson2007``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``StockWatson2007``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("HMDA")
+      ::
 
-      ## Stock and Watson (2007)
-      ## Equations 11.1, 11.3, 11.7, 11.8 and 11.10, pp. 387--395
-      fm1 <- lm(I(as.numeric(deny) - 1) ~ pirat, data = HMDA)
-      fm2 <- lm(I(as.numeric(deny) - 1) ~ pirat + afam, data = HMDA)
-      fm3 <- glm(deny ~ pirat, family = binomial(link = "probit"), data = HMDA)
-      fm4 <- glm(deny ~ pirat + afam, family = binomial(link = "probit"), data = HMDA)
-      fm5 <- glm(deny ~ pirat + afam, family = binomial(link = "logit"), data = HMDA)
+         data("HMDA")
 
-      ## More examples can be found in:
-      ## help("StockWatson2007")
+         ## Stock and Watson (2007)
+         ## Equations 11.1, 11.3, 11.7, 11.8 and 11.10, pp. 387--395
+         fm1 <- lm(I(as.numeric(deny) - 1) ~ pirat, data = HMDA)
+         fm2 <- lm(I(as.numeric(deny) - 1) ~ pirat + afam, data = HMDA)
+         fm3 <- glm(deny ~ pirat, family = binomial(link = "probit"), data = HMDA)
+         fm4 <- glm(deny ~ pirat + afam, family = binomial(link = "probit"), data = HMDA)
+         fm5 <- glm(deny ~ pirat + afam, family = binomial(link = "logit"), data = HMDA)
+
+         ## More examples can be found in:
+         ## help("StockWatson2007")

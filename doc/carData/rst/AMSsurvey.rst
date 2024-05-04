@@ -1,69 +1,73 @@
 .. container::
 
-   ========= ===============
-   AMSsurvey R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: American Math Society Survey Data
-      :name: AMSsurvey
+      ========= ===============
+      AMSsurvey R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: American Math Society Survey Data
+         :name: american-math-society-survey-data
 
-   Counts of new PhDs in the mathematical sciences for 2008-09 and
-   2011-12 categorized by type of institution, gender, and US
-   citizenship status.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Counts of new PhDs in the mathematical sciences for 2008-09 and
+      2011-12 categorized by type of institution, gender, and US
+      citizenship status.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      AMSsurvey
+      ::
 
-   .. rubric:: Format
-      :name: format
+         AMSsurvey
 
-   A data frame with 24 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   type
-      a factor with levels ``I(Pu)`` for group I public universities,
-      ``I(Pr)`` for group I private universities, ``II`` and ``III`` for
-      groups II and III, ``IV`` for statistics and biostatistics
-      programs, and ``Va`` for applied mathemeatics programs.
+      A data frame with 24 observations on the following 5 variables.
 
-   sex
-      a factor with levels ``Female``, ``Male`` of the recipient
+      type
+         a factor with levels ``I(Pu)`` for group I public universities,
+         ``I(Pr)`` for group I private universities, ``II`` and ``III``
+         for groups II and III, ``IV`` for statistics and biostatistics
+         programs, and ``Va`` for applied mathemeatics programs.
 
-   citizen
-      a factor with levels ``Non-US``, ``US`` giving citizenship status
+      sex
+         a factor with levels ``Female``, ``Male`` of the recipient
 
-   count
-      The number of individuals of each type in 2008-09
+      citizen
+         a factor with levels ``Non-US``, ``US`` giving citizenship
+         status
 
-   count11
-      The number of individuals of each type in 2011-12
+      count
+         The number of individuals of each type in 2008-09
 
-   .. rubric:: Details
-      :name: details
+      count11
+         The number of individuals of each type in 2011-12
 
-   These data are produced yearly by the American Math Society.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      These data are produced yearly by the American Math Society.
 
-   From the now defunct http://www.ams.org/employment/surveyreports.html
-   Supplementary Table 4 in the 2008-09 data. See
-   http://www.ams.org/profession/data/annual-survey/docsgrtd for more
-   recent data.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      From the now defunct
+      http://www.ams.org/employment/surveyreports.html Supplementary
+      Table 4 in the 2008-09 data. See
+      http://www.ams.org/profession/data/annual-survey/docsgrtd for more
+      recent data.
 
-   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
-   Regression*, Third Edition, Sage.
+      .. rubric:: References
+         :name: references
 
-   Phipps, Polly, Maxwell, James W. and Rose, Colleen (2009), *2009
-   Annual Survey of the Mathematical Sciences*, 57, 250–259,
-   Supplementary Table 4, orginally downloaded from
-   http://www.ams.org/employment/2009Survey-First-Report-Supp-Table4.pdf
+      Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+      Regression*, Third Edition, Sage.
+
+      Phipps, Polly, Maxwell, James W. and Rose, Colleen (2009), *2009
+      Annual Survey of the Mathematical Sciences*, 57, 250–259,
+      Supplementary Table 4, orginally downloaded from
+      http://www.ams.org/employment/2009Survey-First-Report-Supp-Table4.pdf

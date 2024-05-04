@@ -1,46 +1,48 @@
 .. container::
 
-   ======== ===============
-   gov_poll R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Pew Research poll on government approval ratings
-      :name: gov_poll
+      ======== ===============
+      gov_poll R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Pew Research poll on government approval ratings
+         :name: pew-research-poll-on-government-approval-ratings
 
-   The poll's focus is on Obama and then Democrats and Republicans in
-   Congress.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The poll's focus is on Obama and then Democrats and Republicans in
+      Congress.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      gov_poll
+      ::
 
-   .. rubric:: Format
-      :name: format
+         gov_poll
 
-   A data frame with 4223 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   poll
-      a factor with levels ``approve`` ``disapprove``
+      A data frame with 4223 observations on the following 2 variables.
 
-   eval
-      a factor with levels ``Democrats`` ``Obama`` ``Republicans``
+      poll
+         a factor with levels ``approve`` ``disapprove``
 
-   .. rubric:: Source
-      :name: source
+      eval
+         a factor with levels ``Democrats`` ``Obama`` ``Republicans``
 
-   See the Pew Research website:
-   www.people-press.org/2012/03/14/romney-leads-gop-contest-trails-in-
-   matchup-with-obama. The counts in Table 6.19 are approximate.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      See the Pew Research website:
+      www.people-press.org/2012/03/14/romney-leads-gop-contest-trails-in-
+      matchup-with-obama. The counts in Table 6.19 are approximate.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      gov_poll
+      ::
+
+         gov_poll

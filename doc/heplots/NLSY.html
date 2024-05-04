@@ -12,44 +12,37 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>NLSY</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='NLSY'>
-National Longitudinal Survey of Youth Data
-</h2>
+<h2>National Longitudinal Survey of Youth Data</h2>
 
 <h3>Description</h3>
 
-<p>The dataset come from a small random sample of 
-the U.S. National Longitudinal Survey of Youth.
+<p>The dataset come from a small random sample of the U.S. National
+Longitudinal Survey of Youth.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(NLSY)</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A data frame with 243 observations on the following 6 variables.
 </p>
-
+ 
 <dl>
 <dt><code>math</code></dt><dd><p>Math achievement test score</p>
 </dd>
 <dt><code>read</code></dt><dd><p>Reading achievement test score</p>
 </dd>
 <dt><code>antisoc</code></dt><dd><p>score on a measure of child's antisocial behavior, <code>0:6</code></p>
-</dd>
-<dt><code>hyperact</code></dt><dd><p>score on a measure of child's hyperactive behavior, <code>0:5</code></p>
-</dd>
-<dt><code>income</code></dt><dd><p>yearly income of child's father</p>
-</dd>
+</dd> 
+<dt><code>hyperact</code></dt><dd><p>score on a measure of child's
+hyperactive behavior, <code>0:5</code></p>
+</dd> <dt><code>income</code></dt><dd><p>yearly income of child's father</p>
+</dd> 
 <dt><code>educ</code></dt><dd><p>years of education of child's father</p>
-</dd>
+</dd> 
 </dl>
 
 
@@ -57,19 +50,18 @@ the U.S. National Longitudinal Survey of Youth.
 <h3>Details</h3>
 
 <p>In this dataset, <code>math</code> and <code>read</code> scores are taken at the outcome
-variables.
-Among the remaining predictors, <code>income</code> and <code>educ</code> might be
-considered as background variables necessary to control for.
-Interest might then be focused on whether 
-the behavioural variables <code>antisoc</code> and <code>hyperact</code> contribute beyond that.
+variables. Among the remaining predictors, <code>income</code> and <code>educ</code>
+might be considered as background variables necessary to control for.
+Interest might then be focused on whether the behavioural variables
+<code>antisoc</code> and <code>hyperact</code> contribute beyond that.
 </p>
 
 
 <h3>Source</h3>
 
-<p>This dataset was derived from a larger one used by Patrick Curran
-at the 1997 meeting of the Society for Research on Child Development (SRCD).
-A description now only exists on the WayBack Machine,
+<p>This dataset was derived from a larger one used by Patrick Curran at
+the 1997 meeting of the Society for Research on Child Development (SRCD). A
+description now only exists on the WayBack Machine,
 <a href="http://web.archive.org/web/20050404145001/http://www.unc.edu/~curran/example.html">http://web.archive.org/web/20050404145001/http://www.unc.edu/~curran/example.html</a>.
 </p>
 <p>More details are available at
@@ -79,7 +71,9 @@ A description now only exists on the WayBack Machine,
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(NLSY)
+<pre><code class='language-R'>
+library(car)
+data(NLSY)
 
 #examine the data
 scatterplotMatrix(NLSY, smooth=FALSE)
@@ -107,8 +101,10 @@ linearHypothesis(mod2, coefs[1:2])
 
 heplot(mod2, fill=TRUE, hypotheses=list("mod2|mod1"=coefs[1:2]))
 
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

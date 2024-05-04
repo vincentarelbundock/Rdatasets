@@ -1,64 +1,67 @@
 .. container::
 
-   ===== ===============
-   s3bbx R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Covariates in the Rodriguez and Goldman simulation
-      :name: s3bbx
+      ===== ===============
+      s3bbx R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Covariates in the Rodriguez and Goldman simulation
+         :name: covariates-in-the-rodriguez-and-goldman-simulation
 
-   The ``s3bbx`` data frame has 2449 rows and 6 columns of the
-   covariates in the simulation by Rodriguez and Goldman of multilevel
-   dichotomous data.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``s3bbx`` data frame has 2449 rows and 6 columns of the
+      covariates in the simulation by Rodriguez and Goldman of
+      multilevel dichotomous data.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(s3bbx)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(s3bbx)
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   child
-      a numeric vector identifying the child
+      This data frame contains the following columns:
 
-   family
-      a numeric vector identifying the family
+      child
+         a numeric vector identifying the child
 
-   community
-      a numeric vector identifying the community
+      family
+         a numeric vector identifying the family
 
-   chldcov
-      a numeric vector of the child-level covariate
+      community
+         a numeric vector identifying the community
 
-   famcov
-      a numeric vector of the family-level covariate
+      chldcov
+         a numeric vector of the child-level covariate
 
-   commcov
-      a numeric vector of the community-level covariate
+      famcov
+         a numeric vector of the family-level covariate
 
-   .. rubric:: Source
-      :name: source
+      commcov
+         a numeric vector of the community-level covariate
 
-   http://data.princeton.edu/multilevel/simul.htm
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      http://data.princeton.edu/multilevel/simul.htm
 
-   Rodriguez, Germán and Goldman, Noreen (1995) An assessment of
-   estimation procedures for multilevel models with binary responses,
-   *Journal of the Royal Statistical Society, Series A* **158**, 73–89.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Rodriguez, Germán and Goldman, Noreen (1995) An assessment of
+      estimation procedures for multilevel models with binary responses,
+      *Journal of the Royal Statistical Society, Series A* **158**,
+      73–89.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      str(s3bbx)
+      ::
+
+         str(s3bbx)

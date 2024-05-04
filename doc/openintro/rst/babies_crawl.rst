@@ -1,59 +1,61 @@
 .. container::
 
-   ============ ===============
-   babies_crawl R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Crawling age
-      :name: babies_crawl
+      ============ ===============
+      babies_crawl R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Crawling age
+         :name: crawling-age
 
-   Crawling age of babies along with the average outdoor temperature at
-   6 months of age.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Crawling age of babies along with the average outdoor temperature
+      at 6 months of age.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      babies_crawl
+      ::
 
-   .. rubric:: Format
-      :name: format
+         babies_crawl
 
-   A data frame with 12 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   birth_month
-      A factor with levels corresponding to months
+      A data frame with 12 observations on the following 5 variables.
 
-   avg_crawling_age
-      a numeric vector
+      birth_month
+         A factor with levels corresponding to months
 
-   sd
-      a numeric vector
+      avg_crawling_age
+         a numeric vector
 
-   n
-      a numeric vector
+      sd
+         a numeric vector
 
-   temperature
-      a numeric vector
+      n
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      temperature
+         a numeric vector
 
-   J.B. Benson. Season of birth and onset of locomotion: Theoretical and
-   methodological implications. In: Infant behavior and development 16.1
-   (1993), pp. 69-81. issn: 0163-6383.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      J.B. Benson. Season of birth and onset of locomotion: Theoretical
+      and methodological implications. In: Infant behavior and
+      development 16.1 (1993), pp. 69-81. issn: 0163-6383.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(babies_crawl, aes(x = temperature, y = avg_crawling_age)) +
-        geom_point() +
-        labs(x = "Temperature", y = "Average crawling age")
+         library(ggplot2)
+
+         ggplot(babies_crawl, aes(x = temperature, y = avg_crawling_age)) +
+           geom_point() +
+           labs(x = "Temperature", y = "Average crawling age")

@@ -1,41 +1,43 @@
 .. container::
 
-   ============ ===============
-   construction R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Completed construction in the US in 2018
-      :name: construction
+      ============ ===============
+      construction R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Completed construction in the US in 2018
+         :name: completed-construction-in-the-us-in-2018
 
-   Completed construction in the US in 2018
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Completed construction in the US in 2018
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      construction
+      ::
 
-   .. rubric:: Format
-      :name: format
+         construction
 
-   A dataset with variables:
+      .. rubric:: Format
+         :name: format
 
-   Year,Month
-      Record date
+      A dataset with variables:
 
-   ``⁠1 unit⁠``, ``⁠2 to 4 units⁠``, ``⁠5 units or mote⁠``
-      Number of completed units of each size
+      Year,Month
+         Record date
 
-   Northeast,Midwest,South,West
-      Number of completed units in each region
+      ``⁠1 unit⁠``, ``⁠2 to 4 units⁠``, ``⁠5 units or mote⁠``
+         Number of completed units of each size
 
-   .. rubric:: Source
-      :name: source
+      Northeast,Midwest,South,West
+         Number of completed units in each region
 
-   Completions of "New Residential Construction" found in Table 5 at
-   https://www.census.gov/construction/nrc/xls/newresconst.xls
-   (downloaded March 2019)
+      .. rubric:: Source
+         :name: source
+
+      Completions of "New Residential Construction" found in Table 5 at
+      https://www.census.gov/construction/nrc/xls/newresconst.xls
+      (downloaded March 2019)

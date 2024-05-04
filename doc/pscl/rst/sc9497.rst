@@ -1,63 +1,65 @@
 .. container::
 
-   ====== ===============
-   sc9497 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: votes from the United States Supreme Court, from
-      1994-1997
-      :name: sc9497
+      ====== ===============
+      sc9497 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: votes from the United States Supreme Court, from
+         1994-1997
+         :name: votes-from-the-united-states-supreme-court-from-1994-1997
 
-   This data set provides information on the United States Supreme Court
-   from 1994-1997. Votes included are non-unanimous.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set provides information on the United States Supreme
+      Court from 1994-1997. Votes included are non-unanimous.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(sc9497)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(sc9497)
 
-   A list containing the elements:
+      .. rubric:: Format
+         :name: format
 
-   votes
-      a matrix of the votes, 0=Nay, 1=Yea, ``NA``\ =Abstained or missing
-      data. The matrix columns are labeled with ``vote.names`` and the
-      rows are labeled with ``legis.names``.
+      A list containing the elements:
 
-   legis.names
-      a vector of the names of the nine Justices sitting on the court at
-      this time.
+      votes
+         a matrix of the votes, 0=Nay, 1=Yea, ``NA``\ =Abstained or
+         missing data. The matrix columns are labeled with
+         ``vote.names`` and the rows are labeled with ``legis.names``.
 
-   party
-      NULL; exists for consistency with House and Senate data sets.
+      legis.names
+         a vector of the names of the nine Justices sitting on the court
+         at this time.
 
-   state
-      NULL; exists for consistency with House and Senate data sets.
+      party
+         NULL; exists for consistency with House and Senate data sets.
 
-   district
-      NULL; exists for consistency with House data sets.
+      state
+         NULL; exists for consistency with House and Senate data sets.
 
-   id
-      NULL; exists for consistency with House and Senate data sets.
+      district
+         NULL; exists for consistency with House data sets.
 
-   vote.names
-      a vector of strings numbering the cases simply to distinguish them
-      from one another.
+      id
+         NULL; exists for consistency with House and Senate data sets.
 
-   desc
-      a description of the data set.
+      vote.names
+         a vector of strings numbering the cases simply to distinguish
+         them from one another.
 
-   .. rubric:: Source
-      :name: source
+      desc
+         a description of the data set.
 
-   Harold J. Spaeth (1999). *United States Supreme Court Judicial
-   Database, 1953-1997 Terms*. Ninth edition. Inter-university
-   Consortium for Political and Social Research. Ann Arbor, Michigan.
-   http://www.icpsr.umich.edu/
+      .. rubric:: Source
+         :name: source
+
+      Harold J. Spaeth (1999). *United States Supreme Court Judicial
+      Database, 1953-1997 Terms*. Ninth edition. Inter-university
+      Consortium for Political and Social Research. Ann Arbor, Michigan.
+      `doi:10.3886/ICPSR09422.v9 <https://doi.org/10.3886/ICPSR09422.v9>`__

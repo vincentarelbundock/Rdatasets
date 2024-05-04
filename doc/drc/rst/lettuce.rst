@@ -1,79 +1,82 @@
 .. container::
 
-   ======= ===============
-   lettuce R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Hormesis in lettuce plants
-      :name: lettuce
+      ======= ===============
+      lettuce R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Hormesis in lettuce plants
+         :name: hormesis-in-lettuce-plants
 
-   Data are from an experiment where isobutylalcohol was dissolved in a
-   nutrient solution in which lettuce (*Lactuca sativa*) plants were
-   grown. The plant biomass of the shoot was determined af 21 days.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data are from an experiment where isobutylalcohol was dissolved in
+      a nutrient solution in which lettuce (*Lactuca sativa*) plants
+      were grown. The plant biomass of the shoot was determined af 21
+      days.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(lettuce)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(lettuce)
 
-   A data frame with 14 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   conc
-      a numeric vector of concentrations of isobutylalcohol (mg/l)
+      A data frame with 14 observations on the following 2 variables.
 
-   weight
-      a numeric vector of biomass of shoot (g)
+      conc
+         a numeric vector of concentrations of isobutylalcohol (mg/l)
 
-   .. rubric:: Details
-      :name: details
+      weight
+         a numeric vector of biomass of shoot (g)
 
-   The data set illustrates hormesis, presence of a subtoxic stimulus at
-   low concentrations.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The data set illustrates hormesis, presence of a subtoxic stimulus
+      at low concentrations.
 
-   van Ewijk, P. H. and Hoekstra, J. A. (1993) Calculation of the EC50
-   and its Confidence Interval When Subtoxic Stimulus Is Present,
-   *ECOTOXICOLOGY AND ENVIRONMENTAL SAFETY*, **25**, 25–32.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      van Ewijk, P. H. and Hoekstra, J. A. (1993) Calculation of the
+      EC50 and its Confidence Interval When Subtoxic Stimulus Is
+      Present, *ECOTOXICOLOGY AND ENVIRONMENTAL SAFETY*, **25**, 25–32.
 
-   van Ewijk, P. H. and Hoekstra, J. A. (1994) Curvature Measures and
-   Confidence Intervals for the Linear Logistic Model, *Appl. Statist.*,
-   **43**, 477–487.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      van Ewijk, P. H. and Hoekstra, J. A. (1994) Curvature Measures and
+      Confidence Intervals for the Linear Logistic Model, *Appl.
+      Statist.*, **43**, 477–487.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## Look at data
-      lettuce
+      ::
 
-      ## Monotonous dose-response model
-      lettuce.m1 <- drm(weight~conc, data=lettuce, fct=LL.3())
+         ## Look at data
+         lettuce
 
-      plot(lettuce.m1, broken = TRUE)
+         ## Monotonous dose-response model
+         lettuce.m1 <- drm(weight~conc, data=lettuce, fct=LL.3())
 
-      ## Model fit in van Ewijk and Hoekstra (1994)
-      lettuce.m2 <- drm(weight~conc, data=lettuce, fct=BC.4())
-      modelFit(lettuce.m2)
+         plot(lettuce.m1, broken = TRUE)
 
-      plot(lettuce.m2, add = TRUE, broken = TRUE, type = "none", lty = 2)
+         ## Model fit in van Ewijk and Hoekstra (1994)
+         lettuce.m2 <- drm(weight~conc, data=lettuce, fct=BC.4())
+         modelFit(lettuce.m2)
 
-      ## Hormesis effect only slightly significant
-      summary(lettuce.m2)
+         plot(lettuce.m2, add = TRUE, broken = TRUE, type = "none", lty = 2)
 
-      ## Hormesis effect highly significant
-      ##  compare with t-test for the "f" parameter in the summary output)
-      anova(lettuce.m1, lettuce.m2)
+         ## Hormesis effect only slightly significant
+         summary(lettuce.m2)
+
+         ## Hormesis effect highly significant
+         ##  compare with t-test for the "f" parameter in the summary output)
+         anova(lettuce.m1, lettuce.m2)

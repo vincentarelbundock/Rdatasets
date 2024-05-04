@@ -1,50 +1,52 @@
 .. container::
 
-   ===== ===============
-   hills R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Record Times in Scottish Hill Races
-      :name: hills
+      ===== ===============
+      hills R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Record Times in Scottish Hill Races
+         :name: record-times-in-scottish-hill-races
 
-   The record times in 1984 for 35 Scottish hill races.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The record times in 1984 for 35 Scottish hill races.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      hills
+      ::
 
-   .. rubric:: Format
-      :name: format
+         hills
 
-   The components are:
+      .. rubric:: Format
+         :name: format
 
-   ``dist``
-      distance in miles (on the map).
+      The components are:
 
-   ``climb``
-      total height gained during the route, in feet.
+      ``dist``
+         distance in miles (on the map).
 
-   ``time``
-      record time in minutes.
+      ``climb``
+         total height gained during the route, in feet.
 
-   .. rubric:: Source
-      :name: source
+      ``time``
+         record time in minutes.
 
-   A.C. Atkinson (1986) Comment: Aspects of diagnostic regression
-   analysis. *Statistical Science* **1**, 397–402.
+      .. rubric:: Source
+         :name: source
 
-   [A.C. Atkinson (1988) Transformations unmasked. *Technometrics*
-   **30**, 311–318 “corrects” the time for Knock Hill from 78.65 to
-   18.65. It is unclear if this based on the original records.]
+      A.C. Atkinson (1986) Comment: Aspects of diagnostic regression
+      analysis. *Statistical Science* **1**, 397–402.
 
-   .. rubric:: References
-      :name: references
+      [A.C. Atkinson (1988) Transformations unmasked. *Technometrics*
+      **30**, 311–318 “corrects” the time for Knock Hill from 78.65 to
+      18.65. It is unclear if this based on the original records.]
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

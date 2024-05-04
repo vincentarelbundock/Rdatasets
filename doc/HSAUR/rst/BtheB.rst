@@ -1,89 +1,93 @@
 .. container::
 
-   ===== ===============
-   BtheB R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Beat the Blues Data
-      :name: BtheB
+      ===== ===============
+      BtheB R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Beat the Blues Data
+         :name: beat-the-blues-data
 
-   Data from a clinical trial of an interactive multimedia program
-   called ‘Beat the Blues’.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from a clinical trial of an interactive multimedia program
+      called ‘Beat the Blues’.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("BtheB")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("BtheB")
 
-   A data frame with 100 observations of 100 patients on the following 8
-   variables.
+      .. rubric:: Format
+         :name: format
 
-   drug
-      did the patient take anti-depressant drugs (``No`` or ``Yes``).
+      A data frame with 100 observations of 100 patients on the
+      following 8 variables.
 
-   length
-      the length of the current episode of depression, a factor with
-      levels ``<6m`` (less than six months) and ``>6m`` (more than six
-      months).
+      drug
+         did the patient take anti-depressant drugs (``No`` or ``Yes``).
 
-   treatment
-      treatment group, a factor with levels ``TAU`` (treatment as usual)
-      and ``BtheB`` (Beat the Blues)
+      length
+         the length of the current episode of depression, a factor with
+         levels ``<6m`` (less than six months) and ``>6m`` (more than
+         six months).
 
-   bdi.pre
-      Beck Depression Inventory II before treatment.
+      treatment
+         treatment group, a factor with levels ``TAU`` (treatment as
+         usual) and ``BtheB`` (Beat the Blues)
 
-   bdi.2m
-      Beck Depression Inventory II after two months.
+      bdi.pre
+         Beck Depression Inventory II before treatment.
 
-   bdi.4m
-      Beck Depression Inventory II after four months.
+      bdi.2m
+         Beck Depression Inventory II after two months.
 
-   bdi.6m
-      Beck Depression Inventory II after six months.
+      bdi.4m
+         Beck Depression Inventory II after four months.
 
-   bdi.8m
-      Beck Depression Inventory II after eight months.
+      bdi.6m
+         Beck Depression Inventory II after six months.
 
-   .. rubric:: Details
-      :name: details
+      bdi.8m
+         Beck Depression Inventory II after eight months.
 
-   Longitudinal data from a clinical trial of an interactive, multimedia
-   program known as "Beat the Blues" designed to deliver cognitive
-   behavioural therapy to depressed patients via a computer terminal.
-   Patients with depression recruited in primary care were randomised to
-   either the Beating the Blues program, or to "Treatment as Usual
-   (TAU)".
+      .. rubric:: Details
+         :name: details
 
-   Note that the data are stored in the wide form, i.e., repeated
-   measurments are represented by additional columns in the data frame.
+      Longitudinal data from a clinical trial of an interactive,
+      multimedia program known as "Beat the Blues" designed to deliver
+      cognitive behavioural therapy to depressed patients via a computer
+      terminal. Patients with depression recruited in primary care were
+      randomised to either the Beating the Blues program, or to
+      "Treatment as Usual (TAU)".
 
-   .. rubric:: Source
-      :name: source
+      Note that the data are stored in the wide form, i.e., repeated
+      measurments are represented by additional columns in the data
+      frame.
 
-   J. Proudfoot, D. Goldberg and A. Mann (2003). Computerised,
-   interactive, multimedia CBT reduced anxiety and depression in general
-   practice: A RCT. *Psychological Medicine*, **33**, 217–227.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      J. Proudfoot, D. Goldberg and A. Mann (2003). Computerised,
+      interactive, multimedia CBT reduced anxiety and depression in
+      general practice: A RCT. *Psychological Medicine*, **33**,
+      217–227.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("BtheB", package = "HSAUR")
-        layout(matrix(1:2, nrow = 1))   
-        ylim <- range(BtheB[,grep("bdi", names(BtheB))], na.rm = TRUE)
-        boxplot(subset(BtheB, treatment == "TAU")[,grep("bdi", names(BtheB))],
-                main = "Treated as usual", ylab = "BDI", 
-                xlab = "Time (in months)", names = c(0, 2, 4, 6, 8), ylim = ylim)
-        boxplot(subset(BtheB, treatment == "BtheB")[,grep("bdi", names(BtheB))], 
-                main = "Beat the Blues", ylab = "BDI", xlab = "Time (in months)",
-                names = c(0, 2, 4, 6, 8), ylim = ylim)
+      ::
+
+           data("BtheB", package = "HSAUR")
+           layout(matrix(1:2, nrow = 1))   
+           ylim <- range(BtheB[,grep("bdi", names(BtheB))], na.rm = TRUE)
+           boxplot(subset(BtheB, treatment == "TAU")[,grep("bdi", names(BtheB))],
+                   main = "Treated as usual", ylab = "BDI", 
+                   xlab = "Time (in months)", names = c(0, 2, 4, 6, 8), ylim = ylim)
+           boxplot(subset(BtheB, treatment == "BtheB")[,grep("bdi", names(BtheB))], 
+                   main = "Beat the Blues", ylab = "BDI", xlab = "Time (in months)",
+                   names = c(0, 2, 4, 6, 8), ylim = ylim)

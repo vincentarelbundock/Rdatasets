@@ -1,61 +1,63 @@
 .. container::
 
-   ======== ===============
-   UKSoccer R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: UK Soccer Scores
-      :name: UKSoccer
+      ======== ===============
+      UKSoccer R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: UK Soccer Scores
+         :name: uk-soccer-scores
 
-   Data from Lee (1997), on the goals scored by Home and Away teams in
-   the Premier Football League, 1995/6 season.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from Lee (1997), on the goals scored by Home and Away teams
+      in the Premier Football League, 1995/6 season.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("UKSoccer")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("UKSoccer")
 
-   A 2-dimensional array resulting from cross-tabulating the number of
-   goals scored in 380 games. The variables and their levels are as
-   follows:
+      .. rubric:: Format
+         :name: format
 
-   == ==== ============
-   No Name Levels
-   1  Home 0, 1, ..., 4
-   2  Away 0, 1, ..., 4
-   == ==== ============
+      A 2-dimensional array resulting from cross-tabulating the number
+      of goals scored in 380 games. The variables and their levels are
+      as follows:
 
-   .. rubric:: Source
-      :name: source
+      == ==== ============
+      No Name Levels
+      1  Home 0, 1, ..., 4
+      2  Away 0, 1, ..., 4
+      == ==== ============
 
-   M. Friendly (2000), Visualizing Categorical Data, page 27.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      M. Friendly (2000), Visualizing Categorical Data, page 27.
 
-   A. J. Lee (1997), Modelling scores in the Premier League: Is
-   Manchester United really the best?, *Chance*, **10**\ (1), 15–19.
+      .. rubric:: References
+         :name: references
 
-   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
-   Cary, NC.
+      A. J. Lee (1997), Modelling scores in the Premier League: Is
+      Manchester United really the best?, *Chance*, **10**\ (1), 15–19.
 
-   .. rubric:: See Also
-      :name: see-also
+      M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+      Cary, NC.
 
-   ``Bundesliga``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Bundesliga``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("UKSoccer")
-      mosaic(UKSoccer, gp = shading_max, main = "UK Soccer Scores")
+      ::
+
+         data("UKSoccer")
+         mosaic(UKSoccer, gp = shading_max, main = "UK Soccer Scores")

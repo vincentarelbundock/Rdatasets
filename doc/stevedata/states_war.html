@@ -1,0 +1,191 @@
+<!DOCTYPE html><html><head><title>R: State Performance in Inter-State Wars</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>states_war</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>State Performance in Inter-State Wars</h2>
+
+<h3>Description</h3>
+
+<p>A data set on state performance in inter-state wars. This data is useful for
+evaluating Valentino et al.'s (2010) &quot;Bear Any Burden&quot; analysis using more
+current data.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>states_war
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with the following variables.
+</p>
+
+<dl>
+<dt><code>micnum</code></dt><dd><p>a numeric for the confrontation code</p>
+</dd>
+<dt><code>ccode</code></dt><dd><p>a numeric for the Correlates of War state code</p>
+</dd>
+<dt><code>stdate</code></dt><dd><p>a character vector communicating participant start date. See details for more.</p>
+</dd>
+<dt><code>enddate</code></dt><dd><p>a character vector communicating participant start date. See details for more.</p>
+</dd>
+<dt><code>mindur</code></dt><dd><p>a numeric vector communicating minimum duration in confrontation. See details for more.</p>
+</dd>
+<dt><code>maxdur</code></dt><dd><p>a numeric vector communicating minimum duration in confrontation. See details for more.</p>
+</dd>
+<dt><code>sidea</code></dt><dd><p>a numeric vector communicating whether participant was on side that initiated confrontation</p>
+</dd>
+<dt><code>orig</code></dt><dd><p>a numeric vector communicating whether participant was in confrontation on day one</p>
+</dd>
+<dt><code>hiact</code></dt><dd><p>a numeric vector communicating highest action during confrontation</p>
+</dd>
+<dt><code>fatalmin</code></dt><dd><p>a numeric vector for minimum estimated fatalities for participant</p>
+</dd>
+<dt><code>fatalmax</code></dt><dd><p>a numeric vector for maximum estimated fatalities for participant</p>
+</dd>
+<dt><code>oppfatalmin</code></dt><dd><p>a numeric vector for minimum estimated fatalities by participant against opponents</p>
+</dd>
+<dt><code>oppfatalmax</code></dt><dd><p>a numeric vector for maximum estimated fatalities by participant against opponents</p>
+</dd>
+<dt><code>milex</code></dt><dd><p>an estimate of military expenditures (in thousands)</p>
+</dd>
+<dt><code>milper</code></dt><dd><p>an estimate of the size of military personnel (in thousands) for the state</p>
+</dd>
+<dt><code>cinc</code></dt><dd><p>The Composite Index of National Capability (&quot;CINC&quot;) score</p>
+</dd>
+<dt><code>tpop</code></dt><dd><p>an estimate of the total population size of the state (in thousands)</p>
+</dd>
+<dt><code>v2x_polyarchy</code></dt><dd><p>the Varieties of Democracy &quot;polyarchy&quot; estimate</p>
+</dd>
+<dt><code>polity2</code></dt><dd><p>the the <code>polity2</code> score from the Polity project</p>
+</dd>
+<dt><code>xm_qudsest</code></dt><dd><p>an extension of the Unified Democracy Scores (UDS) estimates, made possibly by the <span class="pkg">QuickUDS</span> package from Xavier Marquez.</p>
+</dd>
+<dt><code>wbgdp2011est</code></dt><dd><p>a numeric vector for the estimated natural log of GDP in 2011 USD (log-transformed)</p>
+</dd>
+<dt><code>wbpopest</code></dt><dd><p>a numeric vector for the estimated population size (log-transformed)</p>
+</dd>
+<dt><code>wbgdppc2011est</code></dt><dd><p>a numeric vector for the estimated GDP per capita (log-transformed)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Start date and end date are in &quot;MM/D(D)/YYYY&quot; format. You can extract this
+information into multiple columns with a <code>separate</code> function from the
+<span class="pkg">tidyr</span> package. This is mostly for convenience. Be mindful of two things:
+First, dates are dates of first and last action, and not necessarily the
+escalation to war, per se. Second, dates can be &quot;missing&quot;. These are -9s, and
+are commonplace when archival research can't pinpoint an exact day something
+happened.
+</p>
+<p>Observations select at the <em>confrontation</em>-level where maximum fatalities are
+greater than 1,000 and at the <em>participant</em>-level where (1) the participant
+engaged in at least an attack during this confrontation, (2) there are no
+instances where a participant dropped in/out on the same side of a
+multilateral confrontation or switched sides, and (3) the confrontation
+doesn't have an instance where a participant incurred fatalities while
+themselves not initiating a use of force. For illustration's sake, the
+Taiwan Straits Crises saw several appearances by the United States, but only
+one instance (for six days in Feb. 1953) where the U.S. engaged in an attack.
+World War II is a classic case of participants switching sides (France did
+so three times), but it also happened in the War of Latvian Independence as
+well (MIC#2604). The War of Attrition also saw the Russians reappear twice.
+Cases like these aren't included, mostly for convenience sake. In total, 41
+cases with 1,000 maximum fatalities or more at the confrontation-level are
+excluded because of this. Of these 41 cases, World War II and the Vietnam
+War are the most conspicuous by their absence. Data come from version 1.01 of
+the Militarized Interstate Confrontation data.
+</p>
+<p>Opponent fatalities are strictly dyadic and are derived from the Militarized
+Interstate Events data.
+</p>
+<p>Capabilities, GDP, and democracy data come from <span class="pkg">peacesciencer</span> for a
+forthcoming v. 1.2.0 release. See package for more information, though
+references are also included below. Variables are mostly lagged to the year
+prior to the participant observation year. However, there are several cases
+in the data that are born into war (see: India, Pakistan, North and South
+Korea, North and South Vietnam). In cases of missing data, information from
+the observation year is used.
+</p>
+<p>The <code>tpop</code> and <code>wbpopest</code> columns are measuring the same thing but
+are derived from two different data sets with two different data-generating
+procedures. Use whichever one you like, but be mindful of what you're doing
+and for what purpose you're doing it.
+</p>
+
+
+<h3>References</h3>
+
+<p>Anders, Therese, Christopher J. Fariss, and Jonathan N. Markowitz. 2020.
+&quot;Bread Before Guns or Butter: Introducing Surplus Domestic Product (SDP)&quot;
+<em>International Studies Quarterly</em> 64(2): 392&ndash;405.
+</p>
+<p>Coppedge, Michael, John Gerring, Carl Henrik Knutsen, Staffan I. Lindberg,
+Jan Teorell, David Altman, Michael Bernhard, M. Steven Fish, Adam Glynn,
+Allen Hicken, Anna Luhrmann, Kyle L. Marquardt, Kelly McMann, Pamela
+Paxton, Daniel Pemstein, Brigitte Seim, Rachel Sigman, Svend-Erik
+Skaaning, Jeffrey Staton, Agnes Cornell, Lisa Gastaldi, Haakon Gjerlow,
+Valeriya Mechkova, Johannes von Romer, Aksel Sundtrom, Eitan Tzelgov,
+Luca Uberti, Yi-ting Wang, Tore Wig, and Daniel Ziblatt. 2020.
+&quot;V-Dem Codebook v10&quot; Varieties of Democracy (V-Dem) Project.
+</p>
+<p>Gibler, Douglas M., and Steven V. Miller. Forthcoming. “The Militarized
+Interstate Events (MIE) Dataset, 1816–2014.” <em>Conflict Management and Peace
+Science.</em>
+</p>
+<p>Gibler, Douglas M., and Steven V. Miller. 2023. “The Militarized Interstate
+Confrontation Dataset, 1816-2014.” Journal of Conflict Resolution 68(2–3):
+562–86
+</p>
+<p>Marshall, Monty G., Ted Robert Gurr, and Keith Jaggers. 2017.
+&quot;Polity IV Project: Political Regime Characteristics and Transitions,
+1800-2017.&quot; <em>Center for Systemic Peace</em>.
+</p>
+<p>Marquez, Xavier, &quot;A Quick Method for Extending the Unified Democracy
+Scores&quot; (March 23, 2016).  doi: <a href="https://doi.org/10.2139/ssrn.2753830">10.2139/ssrn.2753830</a>
+</p>
+<p>Miller Steven V. 2022. “peacesciencer: An R Package for Quantitative Peace
+Science Research.” <em>Conflict Management and Peace Science</em>, 39(6), 755–779.
+doi: <a href="https://doi.org/10.1177/07388942221077926">10.1177/07388942221077926</a>
+</p>
+<p>Pemstein, Daniel, Stephen Meserve, and James Melton. 2010. &quot;Democratic
+Compromise: A Latent Variable Analysis of Ten Measures of Regime Type.&quot;
+<em>Political Analysis</em> 18(4): 426-449.
+</p>
+<p>Singer, J. David, Stuart Bremer, and John Stuckey. (1972). &quot;Capability
+Distribution, Uncertainty, and Major Power War, 1820-1965.&quot; in Bruce Russett
+(ed) <em>Peace, War, and Numbers</em>, Beverly Hills: Sage, 19-48.
+</p>
+<p>Singer, J. David. 1987. &quot;Reconstructing the Correlates of War Dataset on
+Material Capabilities of States, 1816-1985&quot; <em>International Interactions</em>,
+14: 115-32.
+</p>
+<p>Valentino, Benjamin A., Paul K. Huth, and Sarah E. Croco. 2010. &quot;Bear Any
+Burden? How Democracies Minimize the Costs of War.&quot; <em>Journal of Politics</em>
+72(2): 528-544
+</p>
+
+</main>
+
+</div>
+</body></html>

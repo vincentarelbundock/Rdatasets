@@ -1,108 +1,111 @@
 .. container::
 
-   ====== ===============
-   Galton R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Galton's data on the heights of parents and their
-      children
-      :name: Galton
+      ====== ===============
+      Galton R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Galton's data on the heights of parents and their
+         children
+         :name: galtons-data-on-the-heights-of-parents-and-their-children
 
-   Galton (1886) presented these data in a table, showing a
-   cross-tabulation of 928 adult children born to 205 fathers and
-   mothers, by their height and their mid-parent's height. He visually
-   smoothed the bivariate frequency distribution and showed that the
-   contours formed concentric and similar ellipses, thus setting the
-   stage for correlation, regression and the bivariate normal
-   distribution.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Galton (1886) presented these data in a table, showing a
+      cross-tabulation of 928 adult children born to 205 fathers and
+      mothers, by their height and their mid-parent's height. He
+      visually smoothed the bivariate frequency distribution and showed
+      that the contours formed concentric and similar ellipses, thus
+      setting the stage for correlation, regression and the bivariate
+      normal distribution.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Galton)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Galton)
 
-   A data frame with 928 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``parent``
-      a numeric vector: height of the mid-parent (average of father and
-      mother)
+      A data frame with 928 observations on the following 2 variables.
 
-   ``child``
-      a numeric vector: height of the child
+      ``parent``
+         a numeric vector: height of the mid-parent (average of father
+         and mother)
 
-   .. rubric:: Details
-      :name: details
+      ``child``
+         a numeric vector: height of the child
 
-   The data are recorded in class intervals of width 1.0 in. He used
-   non-integer values for the center of each class interval because of
-   the strong bias toward integral inches.
+      .. rubric:: Details
+         :name: details
 
-   All of the heights of female children were multiplied by 1.08 before
-   tabulation to compensate for sex differences. See Hanley (2004) for a
-   reanalysis of Galton's raw data questioning whether this was
-   appropriate.
+      The data are recorded in class intervals of width 1.0 in. He used
+      non-integer values for the center of each class interval because
+      of the strong bias toward integral inches.
 
-   .. rubric:: Source
-      :name: source
+      All of the heights of female children were multiplied by 1.08
+      before tabulation to compensate for sex differences. See Hanley
+      (2004) for a reanalysis of Galton's raw data questioning whether
+      this was appropriate.
 
-   Galton, F. (1886). Regression Towards Mediocrity in Hereditary
-   Stature *Journal of the Anthropological Institute*, 15, 246-263
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Galton, F. (1886). Regression Towards Mediocrity in Hereditary
+      Stature *Journal of the Anthropological Institute*, 15, 246-263
 
-   Friendly, M. & Denis, D. (2005). The early origins and development of
-   the scatterplot. *Journal of the History of the Behavioral Sciences*,
-   41, 103-130.
+      .. rubric:: References
+         :name: references
 
-   Galton, F. (1869). *Hereditary Genius: An Inquiry into its Laws and
-   Consequences*. London: Macmillan.
+      Friendly, M. & Denis, D. (2005). The early origins and development
+      of the scatterplot. *Journal of the History of the Behavioral
+      Sciences*, 41, 103-130.
 
-   Hanley, J. A. (2004). "Transmuting" Women into Men: Galton's Family
-   Data on Human Stature. *The American Statistician*, 58, 237-243. See:
-   http://www.medicine.mcgill.ca/epidemiology/hanley/galton/ for source
-   materials.
+      Galton, F. (1869). *Hereditary Genius: An Inquiry into its Laws
+      and Consequences*. London: Macmillan.
 
-   Stigler, S. M. (1986). *The History of Statistics: The Measurement of
-   Uncertainty before 1900*. Cambridge, MA: Harvard University Press,
-   Table 8.1
+      Hanley, J. A. (2004). "Transmuting" Women into Men: Galton's
+      Family Data on Human Stature. *The American Statistician*, 58,
+      237-243. See:
+      http://www.medicine.mcgill.ca/epidemiology/hanley/galton/ for
+      source materials.
 
-   Wachsmuth, A. W., Wilkinson L., Dallal G. E. (2003). Galton's bend: A
-   previously undiscovered nonlinearity in Galton's family stature
-   regression data. *The American Statistician*, 57, 190-192.
-   https://www.cs.uic.edu/~wilkinson/Publications/galton.pdf
+      Stigler, S. M. (1986). *The History of Statistics: The Measurement
+      of Uncertainty before 1900*. Cambridge, MA: Harvard University
+      Press, Table 8.1
 
-   .. rubric:: See Also
-      :name: see-also
+      Wachsmuth, A. W., Wilkinson L., Dallal G. E. (2003). Galton's
+      bend: A previously undiscovered nonlinearity in Galton's family
+      stature regression data. *The American Statistician*, 57, 190-192.
+      https://www.cs.uic.edu/~wilkinson/Publications/galton.pdf
 
-   ``link{GaltonFamilies}``, ``PearsonLee``, ``galton`` in the psych
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``link{GaltonFamilies}``, ``PearsonLee``, ``galton`` in the psych
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Galton)
+      ::
 
-      ###########################################################################
-      # sunflower plot with regression line and data ellipses and lowess smooth
-      ###########################################################################
+         data(Galton)
 
-      with(Galton, 
-          {
-          sunflowerplot(parent,child, xlim=c(62,74), ylim=c(62,74))
-          reg <- lm(child ~ parent)
-          abline(reg)
-          lines(lowess(parent, child), col="blue", lwd=2)
-          if(require(car)) {
-          dataEllipse(parent,child, xlim=c(62,74), ylim=c(62,74), plot.points=FALSE)
-              }
-        })
+         ###########################################################################
+         # sunflower plot with regression line and data ellipses and lowess smooth
+         ###########################################################################
+
+         with(Galton, 
+             {
+             sunflowerplot(parent,child, xlim=c(62,74), ylim=c(62,74))
+             reg <- lm(child ~ parent)
+             abline(reg)
+             lines(lowess(parent, child), col="blue", lwd=2)
+             if(require(car)) {
+             dataEllipse(parent,child, xlim=c(62,74), ylim=c(62,74), plot.points=FALSE)
+                 }
+           })

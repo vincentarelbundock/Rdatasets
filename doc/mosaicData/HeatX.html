@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>HeatX</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='HeatX'>Data from a heat exchanger laboratory</h2>
+<h2>Data from a heat exchanger laboratory</h2>
 
 <h3>Description</h3>
 
@@ -37,45 +37,39 @@ as nearly as can be managed the only heat exchange is between the hot and cold w
 <p>A data frame with 6 observations on the following variables.
 </p>
 
-<ul>
-<li><p><code>trial</code> trial number
-</p>
-</li>
-<li><p><code>T.cold.in</code> temperature (C) of the cold water as it enters the apparatus
-</p>
-</li>
-<li><p><code>T.cold.out</code> temperature (C) of the cold water as it leaves the apparatus
-</p>
-</li>
-<li><p><code>m.cold</code> flow rate (L/min) of the cold water
-</p>
-</li>
-<li><p><code>T.hot.in</code> temperature (C) of the hot water as it enters the apparatus
-</p>
-</li>
-<li><p><code>T.hot.out</code> temperature (C) of the hot water as it leaves the apparatus
-</p>
-</li>
-<li><p><code>m.hot</code> flow rate (L/min) of the hot water
-</p>
-</li></ul>
+<dl>
+<dt><code>trial</code></dt><dd><p>trial number</p>
+</dd>
+<dt><code>T.cold.in</code></dt><dd><p>temperature (C) of the cold water as it enters the apparatus</p>
+</dd>
+<dt><code>T.cold.out</code></dt><dd><p>temperature (C) of the cold water as it leaves the apparatus</p>
+</dd>
+<dt><code>m.cold</code></dt><dd><p>flow rate (L/min) of the cold water</p>
+</dd>
+<dt><code>T.hot.in</code></dt><dd><p>temperature (C) of the hot water as it enters the apparatus</p>
+</dd>
+<dt><code>T.hot.out</code></dt><dd><p>temperature (C) of the hot water as it leaves the apparatus</p>
+</dd>
+<dt><code>m.hot</code></dt><dd><p>flow rate (L/min) of the hot water</p>
+</dd>
+</dl>
 
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'># We can test for heat exchange with the environment by checking to see if the 
+<pre><code class='language-R'># We can test for heat exchange with the environment by checking to see if the
 # heat gained by the cold water matches the heat lost by the hot water.
 C_p &lt;- 4.182 / 60  # / 60 because measuring m in L/min
-HeatX2 &lt;- 
+HeatX2 &lt;-
   dplyr::mutate(HeatX,
     Q.cold = m.cold * C_p * (T.cold.out - T.cold.in),
     Q.hot  = m.hot * C_p * (T.hot.out- T.hot.in),
     Q.env  = Q.cold + Q.hot
   )
 if (require(ggformula)) {
-  gf_jitter( "" ~ Q.env, data = HeatX2, alpha = 0.6, size = 4, 
-    width = 0, height = 0.1, seed = 123) %&gt;%
+  gf_jitter( "" ~ Q.env, data = HeatX2, alpha = 0.6, size = 4,
+    width = 0, height = 0.1, seed = 123) |&gt;
   gf_labs(y = "")
 }
 if (require(mosaic)) {
@@ -83,6 +77,7 @@ if (require(mosaic)) {
 }
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>crimtab</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='crimtab'>Student's 3000 Criminals Data</h2>
+<h2>Student's 3000 Criminals Data</h2>
 
 <h3>Description</h3>
 
@@ -53,8 +53,9 @@ entitled <em>Practical Test of the forgoing Equations</em>:
 <p>&ldquo;Before I had succeeded in solving my problem analytically,
 I had endeavoured to do so empirically.  The material used was a
 correlation table containing the height and left middle finger
-measurements of 3000 criminals, from a paper by W. R. MacDonell
-(<em>Biometrika</em>, Vol. I., p. 219).  The
+measurements of 3000 criminals, from a paper by
+W. R. MacDonell (1902, p. 219).
+The
 measurements were written 
 out on 3000 pieces of cardboard, which were then very thoroughly
 shuffled and drawn at random.  As each card was drawn its numbers
@@ -66,7 +67,8 @@ difference between the mean of each sample and the mean of the
 population was then divided by the standard deviation of the sample,
 giving us the <em>z</em> of Section III.&rdquo;
 </p>
-<p>The table is in fact page 216 and not page 219 in MacDonell(1902).
+<p>The table is in fact page 216 and not page 219 in
+MacDonell (1902).
 In the MacDonell table, the middle finger lengths were given in mm
 and the heights in feet/inches intervals, they are both converted into
 cm here.  The midpoints of intervals were used, e.g., where MacDonell
@@ -162,6 +164,7 @@ hist(x = zobs, probability = TRUE, xlab = "Student's z",
      main = "Distribution of Student's z score  for 'crimtab' data")
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

@@ -1,80 +1,83 @@
 .. container::
 
-   ===== ===============
-   ozone R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Ozone Data
-      :name: ozone
+      ===== ===============
+      ozone R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Ozone Data
+         :name: ozone-data
 
-   Monthly provisional mean total ozone (in Dobson units) at Halley Bay
-   (approximately corrected to Bass-Paur).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Monthly provisional mean total ozone (in Dobson units) at Halley
+      Bay (approximately corrected to Bass-Paur).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      ozone
+      ::
 
-   .. rubric:: Format
-      :name: format
+         ozone
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Year
-      the year
+      This data frame contains the following columns:
 
-   Aug
-      August mean total ozone
+      Year
+         the year
 
-   Sep
-      September mean total ozone
+      Aug
+         August mean total ozone
 
-   Oct
-      October mean total ozone
+      Sep
+         September mean total ozone
 
-   Nov
-      November mean total ozone
+      Oct
+         October mean total ozone
 
-   Dec
-      December mean total ozone
+      Nov
+         November mean total ozone
 
-   Jan
-      January mean total ozone
+      Dec
+         December mean total ozone
 
-   Feb
-      February mean total ozone
+      Jan
+         January mean total ozone
 
-   Mar
-      March mean total ozone
+      Feb
+         February mean total ozone
 
-   Apr
-      April mean total ozone
+      Mar
+         March mean total ozone
 
-   Annual
-      Yearly mean total ozone
+      Apr
+         April mean total ozone
 
-   .. rubric:: Source
-      :name: source
+      Annual
+         Yearly mean total ozone
 
-   Shanklin, J. (2001) Ozone at Halley, Rothera and Vernadsky/Faraday.
+      .. rubric:: Source
+         :name: source
 
-   http://www.antarctica.ac.uk/met/jds/ozone/data/zoz5699.dat
+      Shanklin, J. (2001) Ozone at Halley, Rothera and
+      Vernadsky/Faraday.
 
-   .. rubric:: References
-      :name: references
+      http://www.antarctica.ac.uk/met/jds/ozone/data/zoz5699.dat
 
-   Christie, M. (2000) The Ozone Layer: a Philosophy of Science
-   Perspective. Cambridge University Press.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Christie, M. (2000) The Ozone Layer: a Philosophy of Science
+      Perspective. Cambridge University Press.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      AnnualOzone <- ts(ozone$Annual, start=1956)
-      plot(AnnualOzone)
+      ::
+
+         AnnualOzone <- ts(ozone$Annual, start=1956)
+         plot(AnnualOzone)

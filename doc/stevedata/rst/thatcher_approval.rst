@@ -1,71 +1,74 @@
 .. container::
 
-   ================= ===============
-   thatcher_approval R Documentation
-   ================= ===============
+   .. container::
 
-   .. rubric:: Margaret Thatcher Satisfaction Ratings, 1980-1990
-      :name: thatcher_approval
+      ================= ===============
+      thatcher_approval R Documentation
+      ================= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Margaret Thatcher Satisfaction Ratings, 1980-1990
+         :name: margaret-thatcher-satisfaction-ratings-1980-1990
 
-   A data set on satisfaction/dissatisfaction ratings during Margaret
-   Thatcher's tenure as prime minister.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data set on satisfaction/dissatisfaction ratings during Margaret
+      Thatcher's tenure as prime minister.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      thatcher_approval
+      ::
 
-   .. rubric:: Format
-      :name: format
+         thatcher_approval
 
-   A data frame with 125 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``poll_date``
-      the effective "date" of the public opinion poll
+      A data frame with 125 observations on the following 8 variables.
 
-   ``date``
-      a date for the poll, to make for easier plotting
+      ``poll_date``
+         the effective "date" of the public opinion poll
 
-   ``govt_sat``
-      the percentage of respondents saying they were satisfied with the
-      government
+      ``date``
+         a date for the poll, to make for easier plotting
 
-   ``govt_dis``
-      the percentage of respondents saying they were dissatisfied with
-      the government
+      ``govt_sat``
+         the percentage of respondents saying they were satisfied with
+         the government
 
-   ``thatcher_sat``
-      the percentage of respondents saying they were satisfied with
-      Margaret Thatcher
+      ``govt_dis``
+         the percentage of respondents saying they were dissatisfied
+         with the government
 
-   ``thatcher_dis``
-      the percentage of respondents saying they were dissatisfied with
-      Margaret Thatcher
+      ``thatcher_sat``
+         the percentage of respondents saying they were satisfied with
+         Margaret Thatcher
 
-   ``opp_sat``
-      the percentage of respondents saying they were satisfied with the
-      leader of the opposition
+      ``thatcher_dis``
+         the percentage of respondents saying they were dissatisfied
+         with Margaret Thatcher
 
-   ``opp_dis``
-      the percentage of respondents saying they were dissatisfied with
-      the leader of the opposition
+      ``opp_sat``
+         the percentage of respondents saying they were satisfied with
+         the leader of the opposition
 
-   .. rubric:: Details
-      :name: details
+      ``opp_dis``
+         the percentage of respondents saying they were dissatisfied
+         with the leader of the opposition
 
-   Data come from Ipsos. "Leader of the opposition" was typically named
-   in the exact poll. In the lifetime of this series, the leader of the
-   opposition was James Callaghan until Nov. 10 1980. Thereafter, it was
-   Michael Foot until Oct. 2 1983. Neil Kinnock replaces him for the
-   duration of this series. Interpret "leader of the opposition" with
-   that in mind.
+      .. rubric:: Details
+         :name: details
 
-   The date variable is, again, for simple convenience to make for
-   easier plotting. In the absence of a specific day provided by Ipsos,
-   the poll benchmarks to the first of the month. In the case of a known
-   period of days, it benchmarks to the first day provided.
+      Data come from Ipsos. "Leader of the opposition" was typically
+      named in the exact poll. In the lifetime of this series, the
+      leader of the opposition was James Callaghan until Nov. 10 1980.
+      Thereafter, it was Michael Foot until Oct. 2 1983. Neil Kinnock
+      replaces him for the duration of this series. Interpret "leader of
+      the opposition" with that in mind.
+
+      The date variable is, again, for simple convenience to make for
+      easier plotting. In the absence of a specific day provided by
+      Ipsos, the poll benchmarks to the first of the month. In the case
+      of a known period of days, it benchmarks to the first day
+      provided.

@@ -1,83 +1,85 @@
 .. container::
 
-   ======== ===============
-   Grunfeld R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Grunfeld Investment Data
-      :name: Grunfeld
+      ======== ===============
+      Grunfeld R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Grunfeld Investment Data
+         :name: grunfeld-investment-data
 
-   a panel of 20 annual observations from 1935 to 1954 on each of 10
-   firms.
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 200
+      a panel of 20 annual observations from 1935 to 1954 on each of 10
+      firms.
 
-   *observation* : production units
+      *number of observations* : 200
 
-   *country* : United States
+      *observation* : production units
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Grunfeld)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Grunfeld)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   firm
-      observation
+      A dataframe containing :
 
-   year
-      date
+      firm
+         observation
 
-   inv
-      gross Investment
+      year
+         date
 
-   value
-      value of the firm
+      inv
+         gross Investment
 
-   capital
-      stock of plant and equipment
+      value
+         value of the firm
 
-   .. rubric:: Details
-      :name: details
+      capital
+         stock of plant and equipment
 
-   There are several versions of these data.
+      .. rubric:: Details
+         :name: details
 
-   ``GrunfeldGreene`` is "A data frame containing 20 annual observations
-   on 3 variables for 5 firms." That dataset reportedly contains errors
-   but is maintained in that way to avoid breaking the code of others
-   who use it. That help file also provides a link to the corrected
-   version.
+      There are several versions of these data.
 
-   See also `for a version with only 5
-   firms <https://pages.stern.nyu.edu/~wgreene/Text/tables/TableF13-1.txt>`__.
+      ``GrunfeldGreene`` is "A data frame containing 20 annual
+      observations on 3 variables for 5 firms." That dataset reportedly
+      contains errors but is maintained in that way to avoid breaking
+      the code of others who use it. That help file also provides a link
+      to the corrected version.
 
-   .. rubric:: Source
-      :name: source
+      See also `for a version with only 5
+      firms <https://pages.stern.nyu.edu/~wgreene/Text/tables/TableF13-1.txt>`__.
 
-   Moody's Industrial Manual, Survey of Current Business.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Moody's Industrial Manual, Survey of Current Business.
 
-   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall, Table
-   F13.1.
+      .. rubric:: References
+         :name: references
 
-   Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John
-   Wiley and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
+      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall, Table
+      F13.1.
 
-   .. rubric:: See Also
-      :name: see-also
+      Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John
+      Wiley and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``, ``GrunfeldGreene``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``, ``GrunfeldGreene``,
+
+      ``Index.Time.Series``

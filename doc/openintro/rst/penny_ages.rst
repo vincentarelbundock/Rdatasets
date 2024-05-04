@@ -1,38 +1,40 @@
 .. container::
 
-   ========== ===============
-   penny_ages R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Penny Ages
-      :name: penny_ages
+      ========== ===============
+      penny_ages R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Penny Ages
+         :name: penny-ages
 
-   Sample of pennies and their ages. Taken in 2004.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Sample of pennies and their ages. Taken in 2004.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      penny_ages
+      ::
 
-   .. rubric:: Format
-      :name: format
+         penny_ages
 
-   A data frame with 648 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   year
-      Penny's year.
+      A data frame with 648 observations on the following 2 variables.
 
-   age
-      Age as of 2004.
+      year
+         Penny's year.
 
-   .. rubric:: Examples
-      :name: examples
+      age
+         Age as of 2004.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      hist(penny_ages$year)
+      ::
+
+         hist(penny_ages$year)

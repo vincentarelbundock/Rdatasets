@@ -1,81 +1,80 @@
 .. container::
 
-   ========= ===============
-   RootStock R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Growth of Apple Trees from Different Root Stocks
-      :name: RootStock
+      ========= ===============
+      RootStock R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Growth of Apple Trees from Different Root Stocks
+         :name: growth-of-apple-trees-from-different-root-stocks
 
-   In a classic experiment carried out from 1918 to 1934, growth of
-   apple trees of six different rootstocks were compared on four
-   measures of size.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      In a classic experiment carried out from 1918 to 1934, growth of
+      apple trees of six different rootstocks were compared on four
+      measures of size. How do the measures of size vary with the type
+      of rootstock?
 
-   .. code:: R
+      .. rubric:: Format
+         :name: format
 
-      data(RootStock)
+      A data frame with 48 observations on the following 5 variables.
 
-   .. rubric:: Format
-      :name: format
+      ``rootstock``
+         a factor with levels ``1`` ``2`` ``3`` ``4`` ``5`` ``6``
 
-   A data frame with 48 observations on the following 5 variables.
+      ``girth4``
+         a numeric vector: trunk girth at 4 years (mm x 100)
 
-   ``rootstock``
-      a factor with levels ``1`` ``2`` ``3`` ``4`` ``5`` ``6``
+      ``ext4``
+         a numeric vector: extension growth at 4 years (m)
 
-   ``girth4``
-      a numeric vector: trunk girth at 4 years (mm x 100)
+      ``girth15``
+         a numeric vector: trunk girth at 15 years (mm x 100)
 
-   ``ext4``
-      a numeric vector: extension growth at 4 years (m)
+      ``weight15``
+         a numeric vector: weight of tree above ground at 15 years (lb x
+         1000)
 
-   ``girth15``
-      a numeric vector: trunk girth at 15 years (mm x 100)
+      .. rubric:: Details
+         :name: details
 
-   ``weight15``
-      a numeric vector: weight of tree above ground at 15 years (lb x
-      1000)
+      This is a balanced, one-way MANOVA design, with n=8 trees for each
+      rootstock.
 
-   .. rubric:: Details
-      :name: details
+      .. rubric:: Source
+         :name: source
 
-   This is a balanced, one-way MANOVA design, with n=8 trees for each
-   rootstock.
+      Andrews, D. and Herzberg, A. (1985). *Data: A Collection of
+      Problems from Many Fields for the Student and Research Worker*
+      Springer-Verlag, pp. 357–360.
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: References
+         :name: references
 
-   Andrews, D. and Herzberg, A. (1985). *Data: A Collection of Problems
-   from Many Fields for the Student and Research Worker*
-   Springer-Verlag, pp. 357–360.
+      Rencher, A. C. (1995). *Methods of Multivariate Analysis*. New
+      York: Wiley, Table 6.2
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: Examples
+         :name: examples
 
-   Rencher, A. C. (1995). *Methods of Multivariate Analysis*. New York:
-   Wiley, Table 6.2
+      ::
 
-   .. rubric:: Examples
-      :name: examples
+         library(car)
+         data(RootStock)
+         str(RootStock)
 
-   .. code:: R
+         root.mod <- lm(cbind(girth4, ext4, girth15, weight15) ~ rootstock, data=RootStock)
+         car::Anova(root.mod)
 
-      data(RootStock)
-      ## maybe str(RootStock) ; plot(RootStock) ...
-      root.mod <- lm(cbind(girth4, ext4, girth15, weight15) ~ rootstock, data=RootStock)
-      Anova(root.mod)
+         pairs(root.mod)
 
-      pairs(root.mod)
+         # test two orthogonal contrasts among the rootstocks
+         hyp <- matrix(c(2,-1,-1,-1,-1,2,  
+                         1, 0,0,0,0,-1), 2, 6, byrow=TRUE)
+         car::linearHypothesis(root.mod, hyp)
+         heplot(root.mod, hypotheses=list(Contrasts=hyp, C1=hyp[1,], C2=hyp[2,]))
 
-      # test two orthogonal contrasts among the rootstocks
-      hyp <- matrix(c(2,-1,-1,-1,-1,2,  1, 0,0,0,0,-1), 2, 6, byrow=TRUE)
-      linearHypothesis(root.mod, hyp)
-      heplot(root.mod, hypotheses=list(Contrasts=hyp, C1=hyp[1,], C2=hyp[2,]))
-
-      heplot1d(root.mod, hypotheses=list(Contrasts=hyp, C1=hyp[1,], C2=hyp[2,]))
+         heplot1d(root.mod, hypotheses=list(Contrasts=hyp, C1=hyp[1,], C2=hyp[2,]))

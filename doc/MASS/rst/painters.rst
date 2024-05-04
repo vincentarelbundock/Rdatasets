@@ -1,63 +1,67 @@
 .. container::
 
-   ======== ===============
-   painters R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: The Painter's Data of de Piles
-      :name: painters
+      ======== ===============
+      painters R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: The Painter's Data of de Piles
+         :name: the-painters-data-of-de-piles
 
-   The subjective assessment, on a 0 to 20 integer scale, of 54
-   classical painters. The painters were assessed on four
-   characteristics: composition, drawing, colour and expression. The
-   data is due to the Eighteenth century art critic, de Piles.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The subjective assessment, on a 0 to 20 integer scale, of 54
+      classical painters. The painters were assessed on four
+      characteristics: composition, drawing, colour and expression. The
+      data is due to the Eighteenth century art critic, de Piles.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      painters
+      ::
 
-   .. rubric:: Format
-      :name: format
+         painters
 
-   The row names of the data frame are the painters. The components are:
+      .. rubric:: Format
+         :name: format
 
-   ``Composition``
-      Composition score.
+      The row names of the data frame are the painters. The components
+      are:
 
-   ``Drawing``
-      Drawing score.
+      ``Composition``
+         Composition score.
 
-   ``Colour``
-      Colour score.
+      ``Drawing``
+         Drawing score.
 
-   ``Expression``
-      Expression score.
+      ``Colour``
+         Colour score.
 
-   ``School``
-      The school to which a painter belongs, as indicated by a factor
-      level code as follows: ``"A"``: Renaissance; ``"B"``: Mannerist;
-      ``"C"``: Seicento; ``"D"``: Venetian; ``"E"``: Lombard; ``"F"``:
-      Sixteenth Century; ``"G"``: Seventeenth Century; ``"H"``: French.
+      ``Expression``
+         Expression score.
 
-   .. rubric:: Source
-      :name: source
+      ``School``
+         The school to which a painter belongs, as indicated by a factor
+         level code as follows: ``"A"``: Renaissance; ``"B"``:
+         Mannerist; ``"C"``: Seicento; ``"D"``: Venetian; ``"E"``:
+         Lombard; ``"F"``: Sixteenth Century; ``"G"``: Seventeenth
+         Century; ``"H"``: French.
 
-   A. J. Weekes (1986) *A Genstat Primer.* Edward Arnold.
+      .. rubric:: Source
+         :name: source
 
-   M. Davenport and G. Studdert-Kennedy (1972) The statistical analysis
-   of aesthetic judgement: an exploration. *Applied Statistics* **21**,
-   324–333.
+      A. J. Weekes (1986) *A Genstat Primer.* Edward Arnold.
 
-   I. T. Jolliffe (1986) *Principal Component Analysis.* Springer.
+      M. Davenport and G. Studdert-Kennedy (1972) The statistical
+      analysis of aesthetic judgement: an exploration. *Applied
+      Statistics* **21**, 324–333.
 
-   .. rubric:: References
-      :name: references
+      I. T. Jolliffe (1986) *Principal Component Analysis.* Springer.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

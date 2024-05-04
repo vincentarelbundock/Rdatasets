@@ -1,31 +1,33 @@
 .. container::
 
-   ===== ===============
-   calls R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Call volume for a large North American bank
-      :name: calls
+      ===== ===============
+      calls R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Call volume for a large North American bank
+         :name: call-volume-for-a-large-north-american-bank
 
-   Five-minute call volume handled on weekdays between 7:00am and
-   9:05pm, beginning 3 March 2003 for 164 days.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Five-minute call volume handled on weekdays between 7:00am and
+      9:05pm, beginning 3 March 2003 for 164 days.
 
-   Time series object of class ``msts``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Time series object of class ``msts``.
 
-   Rob Hyndman
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Rob Hyndman
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      autoplot(calls, xlab="Weeks")
+      ::
+
+         autoplot(calls, xlab="Weeks")

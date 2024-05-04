@@ -1,88 +1,90 @@
 .. container::
 
-   ==== ===============
-   gpa3 R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: gpa3
-      :name: gpa3
+      ==== ===============
+      gpa3 R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: gpa3
+         :name: gpa3
 
-   Wooldridge Source: See GPA2.RAW Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: See GPA2.RAW Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('gpa3')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('gpa3')
 
-   A data.frame with 732 observations on 23 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **term:** fall = 1, spring = 2
+      A data.frame with 732 observations on 23 variables:
 
-   -  **sat:** SAT score
+      -  **term:** fall = 1, spring = 2
 
-   -  **tothrs:** total hours prior to term
+      -  **sat:** SAT score
 
-   -  **cumgpa:** cumulative GPA
+      -  **tothrs:** total hours prior to term
 
-   -  **season:** =1 if in season
+      -  **cumgpa:** cumulative GPA
 
-   -  **frstsem:** =1 if student's 1st semester
+      -  **season:** =1 if in season
 
-   -  **crsgpa:** weighted course GPA
+      -  **frstsem:** =1 if student's 1st semester
 
-   -  **verbmath:** verbal SAT to math SAT ratio
+      -  **crsgpa:** weighted course GPA
 
-   -  **trmgpa:** term GPA
+      -  **verbmath:** verbal SAT to math SAT ratio
 
-   -  **hssize:** size h.s. grad. class
+      -  **trmgpa:** term GPA
 
-   -  **hsrank:** rank in h.s. class
+      -  **hssize:** size h.s. grad. class
 
-   -  **id:** student identifier
+      -  **hsrank:** rank in h.s. class
 
-   -  **spring:** =1 if spring term
+      -  **id:** student identifier
 
-   -  **female:** =1 if female
+      -  **spring:** =1 if spring term
 
-   -  **black:** =1 if black
+      -  **female:** =1 if female
 
-   -  **white:** =1 if white
+      -  **black:** =1 if black
 
-   -  **ctrmgpa:** change in trmgpa
+      -  **white:** =1 if white
 
-   -  **ctothrs:** change in total hours
+      -  **ctrmgpa:** change in trmgpa
 
-   -  **ccrsgpa:** change in crsgpa
+      -  **ctothrs:** change in total hours
 
-   -  **ccrspop:** change in crspop
+      -  **ccrsgpa:** change in crsgpa
 
-   -  **cseason:** change in season
+      -  **ccrspop:** change in crspop
 
-   -  **hsperc:** percentile in h.s.
+      -  **cseason:** change in season
 
-   -  **football:** =1 if football player
+      -  **hsperc:** percentile in h.s.
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **football:** =1 if football player
 
-   pages 246-248, 273, 297-298, 478
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 246-248, 273, 297-298, 478
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(gpa3)
+      ::
+
+          str(gpa3)

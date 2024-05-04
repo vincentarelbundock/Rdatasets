@@ -1,84 +1,86 @@
 .. container::
 
-   ======== ===============
-   Carseats R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Sales of Child Car Seats
-      :name: Carseats
+      ======== ===============
+      Carseats R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sales of Child Car Seats
+         :name: sales-of-child-car-seats
 
-   A simulated data set containing sales of child car seats at 400
-   different stores.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A simulated data set containing sales of child car seats at 400
+      different stores.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Carseats
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Carseats
 
-   A data frame with 400 observations on the following 11 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Sales``
-      Unit sales (in thousands) at each location
+      A data frame with 400 observations on the following 11 variables.
 
-   ``CompPrice``
-      Price charged by competitor at each location
+      ``Sales``
+         Unit sales (in thousands) at each location
 
-   ``Income``
-      Community income level (in thousands of dollars)
+      ``CompPrice``
+         Price charged by competitor at each location
 
-   ``Advertising``
-      Local advertising budget for company at each location (in
-      thousands of dollars)
+      ``Income``
+         Community income level (in thousands of dollars)
 
-   ``Population``
-      Population size in region (in thousands)
+      ``Advertising``
+         Local advertising budget for company at each location (in
+         thousands of dollars)
 
-   ``Price``
-      Price company charges for car seats at each site
+      ``Population``
+         Population size in region (in thousands)
 
-   ``ShelveLoc``
-      A factor with levels ``Bad``, ``Good`` and ``Medium`` indicating
-      the quality of the shelving location for the car seats at each
-      site
+      ``Price``
+         Price company charges for car seats at each site
 
-   ``Age``
-      Average age of the local population
+      ``ShelveLoc``
+         A factor with levels ``Bad``, ``Good`` and ``Medium``
+         indicating the quality of the shelving location for the car
+         seats at each site
 
-   ``Education``
-      Education level at each location
+      ``Age``
+         Average age of the local population
 
-   ``Urban``
-      A factor with levels ``No`` and ``Yes`` to indicate whether the
-      store is in an urban or rural location
+      ``Education``
+         Education level at each location
 
-   ``US``
-      A factor with levels ``No`` and ``Yes`` to indicate whether the
-      store is in the US or not
+      ``Urban``
+         A factor with levels ``No`` and ``Yes`` to indicate whether the
+         store is in an urban or rural location
 
-   .. rubric:: Source
-      :name: source
+      ``US``
+         A factor with levels ``No`` and ``Yes`` to indicate whether the
+         store is in the US or not
 
-   Simulated data
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Simulated data
 
-   James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
-   Introduction to Statistical Learning with applications in R*,
-   https://www.statlearning.com, Springer-Verlag, New York
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
+      Introduction to Statistical Learning with applications in R*,
+      https://www.statlearning.com, Springer-Verlag, New York
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(Carseats)
-      lm.fit=lm(Sales~Advertising+Price,data=Carseats)
+      ::
+
+         summary(Carseats)
+         lm.fit=lm(Sales~Advertising+Price,data=Carseats)

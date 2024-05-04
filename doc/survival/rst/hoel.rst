@@ -1,81 +1,83 @@
 .. container::
 
-   ==== ===============
-   hoel R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Mouse cancer data
-      :name: hoel
+      ==== ===============
+      hoel R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Mouse cancer data
+         :name: mouse-cancer-data
 
-   Days until occurence of cancer for male mice
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Days until occurence of cancer for male mice
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("cancer")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("cancer")
 
-   A data frame with 181 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``trt``
-      treatment assignment: ``Control`` or ``Germ-free``
+      A data frame with 181 observations on the following 4 variables.
 
-   ``days``
-      days until death
+      ``trt``
+         treatment assignment: ``Control`` or ``Germ-free``
 
-   ``outcome``
-      outcome: codecensor, ``thymic lymphoma``,
-      ``reticulum cell sarcoma`` ``other causes``
+      ``days``
+         days until death
 
-   ``id``
-      mouse id
+      ``outcome``
+         outcome: ``censor``, ``thymic     lymphoma``,
+         ``reticulum cell sarcoma`` ``other causes``
 
-   .. rubric:: Details
-      :name: details
+      ``id``
+         mouse id
 
-   Two groups of male mice were given 300 rads of radiation and followed
-   for cancer incidence. One group was maintained in a germ free
-   environment. The data set is used as an example of competing risks in
-   Kalbfleisch and Prentice. The germ-free environment has little effect
-   on the rate of occurence of thymic lymphoma, but significantly delays
-   the other causes of death.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Note
-      :name: note
+      Two groups of male mice were given 300 rads of radiation and
+      followed for cancer incidence. One group was maintained in a germ
+      free environment. The data set is used as an example of competing
+      risks in Kalbfleisch and Prentice. The germ-free environment has
+      little effect on the rate of occurence of thymic lymphoma, but
+      significantly delays the other causes of death.
 
-   The Ontology Search website defines reticulm cell sarcoma as "An
-   antiquated term that refers to a non-Hodgkin lymphoma composed of
-   diffuse infiltrates of large, often anaplastic lymphocytes".
+      .. rubric:: Note
+         :name: note
 
-   .. rubric:: Source
-      :name: source
+      The Ontology Search website defines reticulm cell sarcoma as "An
+      antiquated term that refers to a non-Hodgkin lymphoma composed of
+      diffuse infiltrates of large, often anaplastic lymphocytes".
 
-   The data can be found in appendix I of Kalbfleisch and Prentice.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The data can be found in appendix I of Kalbfleisch and Prentice.
 
-   Hoel, D.G. (1972), A representation of mortality data by competing
-   risks. Biometrics 33, 1-30. Kalbfleisch, J.D. and Prentice, R.L.
-   (1980). The statistical analysis of failure time data.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Hoel, D.G. (1972), A representation of mortality data by competing
+      risks. Biometrics 33, 1-30. Kalbfleisch, J.D. and Prentice, R.L.
+      (1980). The statistical analysis of failure time data.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      hsurv <- survfit(Surv(days, outcome) ~ trt, data = hoel, id= id)
-      plot(hsurv, lty=1:2, col=rep(1:3, each=2), lwd=2, xscale=30.5,
-            xlab="Months", ylab= "Death")
-      legend("topleft", c("Lymphoma control", "Lymphoma germ free",
-                          "Sarcoma control", "Sarcoma germ free",
-                          "Other control", "Other germ free"),
-             col=rep(1:3, each=2), lty=1:2, lwd=2, bty='n')
-      hfit <- coxph(Surv(days, outcome) ~ trt, data= hoel, id = id)
+      ::
+
+         hsurv <- survfit(Surv(days, outcome) ~ trt, data = hoel, id= id)
+         plot(hsurv, lty=1:2, col=rep(1:3, each=2), lwd=2, xscale=30.5,
+               xlab="Months", ylab= "Death")
+         legend("topleft", c("Lymphoma control", "Lymphoma germ free",
+                             "Sarcoma control", "Sarcoma germ free",
+                             "Other control", "Other germ free"),
+                col=rep(1:3, each=2), lty=1:2, lwd=2, bty='n')
+         hfit <- coxph(Surv(days, outcome) ~ trt, data= hoel, id = id)

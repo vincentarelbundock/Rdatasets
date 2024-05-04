@@ -1,123 +1,126 @@
 .. container::
 
-   ====== ===============
-   rwm5yr R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: rwm5yr
-      :name: rwm5yr
+      ====== ===============
+      rwm5yr R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: rwm5yr
+         :name: rwm5yr
 
-   German health registry for the years 1984-1988. Health information
-   for years immediately prior to health reform.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      German health registry for the years 1984-1988. Health information
+      for years immediately prior to health reform.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(rwm5yr)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(rwm5yr)
 
-   A data frame with 19,609 observations on the following 17 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``id``
-      patient ID (1=7028)
+      A data frame with 19,609 observations on the following 17
+      variables.
 
-   ``docvis``
-      number of visits to doctor during year (0-121)
+      ``id``
+         patient ID (1=7028)
 
-   ``hospvis``
-      number of days in hospital during year (0-51)
+      ``docvis``
+         number of visits to doctor during year (0-121)
 
-   ``year``
-      year; (categorical: 1984, 1985, 1986, 1987, 1988)
+      ``hospvis``
+         number of days in hospital during year (0-51)
 
-   ``edlevel``
-      educational level (categorical: 1-4)
+      ``year``
+         year; (categorical: 1984, 1985, 1986, 1987, 1988)
 
-   ``age``
-      age: 25-64
+      ``edlevel``
+         educational level (categorical: 1-4)
 
-   ``outwork``
-      out of work=1; 0=working
+      ``age``
+         age: 25-64
 
-   ``female``
-      female=1; 0=male
+      ``outwork``
+         out of work=1; 0=working
 
-   ``married``
-      married=1; 0=not married
+      ``female``
+         female=1; 0=male
 
-   ``kids``
-      have children=1; no children=0
+      ``married``
+         married=1; 0=not married
 
-   ``hhninc``
-      household yearly income in marks (in Marks)
+      ``kids``
+         have children=1; no children=0
 
-   ``educ``
-      years of formal education (7-18)
+      ``hhninc``
+         household yearly income in marks (in Marks)
 
-   ``self``
-      self-employed=1; not self employed=0
+      ``educ``
+         years of formal education (7-18)
 
-   ``edlevel1``
-      (1/0) not high school graduate
+      ``self``
+         self-employed=1; not self employed=0
 
-   ``edlevel2``
-      (1/0) high school graduate
+      ``edlevel1``
+         (1/0) not high school graduate
 
-   ``edlevel3``
-      (1/0) university/college
+      ``edlevel2``
+         (1/0) high school graduate
 
-   ``edlevel4``
-      (1/0) graduate school
+      ``edlevel3``
+         (1/0) university/college
 
-   .. rubric:: Details
-      :name: details
+      ``edlevel4``
+         (1/0) graduate school
 
-   rwm5yr is saved as a data frame. Count models typically use docvis as
-   response variable. 0 counts are included
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      rwm5yr is saved as a data frame. Count models typically use docvis
+      as response variable. 0 counts are included
 
-   German Health Reform Registry, years pre-reform 1984-1988, in Hilbe
-   and Greene (2007)
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      German Health Reform Registry, years pre-reform 1984-1988, in
+      Hilbe and Greene (2007)
 
-   Hilbe, Joseph M (2014), Modeling Count Data, Cambridge University
-   Press Hilbe, Joseph M (2011), Negative Binomial Regression, Cambridge
-   University Press Hilbe, J. and W. Greene (2008). Count Response
-   Regression Models, in ed. C.R. Rao, J.P Miller, and D.C. Rao,
-   Epidemiology and Medical Statistics, Elsevier Handbook of Statistics
-   Series. London, UK: Elsevier.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Hilbe, Joseph M (2014), Modeling Count Data, Cambridge University
+      Press Hilbe, Joseph M (2011), Negative Binomial Regression,
+      Cambridge University Press Hilbe, J. and W. Greene (2008). Count
+      Response Regression Models, in ed. C.R. Rao, J.P Miller, and D.C.
+      Rao, Epidemiology and Medical Statistics, Elsevier Handbook of
+      Statistics Series. London, UK: Elsevier.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(MASS)
-      data(rwm5yr)
+      ::
 
-      glmrp <- glm(docvis ~ outwork + female + age + factor(edlevel), family=poisson, data=rwm5yr)
-      summary(glmrp)
-      exp(coef(glmrp))
+         library(MASS)
+         data(rwm5yr)
 
-      ## Not run: 
-      library(msme)
-      nb2 <- nbinomial(docvis ~ outwork + female + age + factor(edlevel), data=rwm5yr)
-      summary(nb2)
-      exp(coef(nb2)) 
+         glmrp <- glm(docvis ~ outwork + female + age + factor(edlevel), family=poisson, data=rwm5yr)
+         summary(glmrp)
+         exp(coef(glmrp))
 
-      glmrnb <- glm.nb(docvis ~ outwork + female + age + factor(edlevel), data=rwm5yr)
-      summary(glmrnb)
-      exp(coef(glmrnb))
+         ## Not run: 
+         library(msme)
+         nb2 <- nbinomial(docvis ~ outwork + female + age + factor(edlevel), data=rwm5yr)
+         summary(nb2)
+         exp(coef(nb2)) 
 
-      ## End(Not run)
+         glmrnb <- glm.nb(docvis ~ outwork + female + age + factor(edlevel), data=rwm5yr)
+         summary(glmrnb)
+         exp(coef(glmrnb))
+
+         ## End(Not run)

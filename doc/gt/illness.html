@@ -1,0 +1,238 @@
+<!DOCTYPE html><html><head><title>R: Lab tests for one suffering from an illness</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>illness</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Lab tests for one suffering from an illness</h2>
+
+<h3>Description</h3>
+
+<p>A dataset with artificial daily lab data for a patient with Yellow Fever
+(YF). The table comprises laboratory findings for the patient from day 3 of
+illness onset until day 9 (after which the patient died). YF viral DNA was
+found in serum samples from day 3, where the viral load reached 14,000 copies
+per mL. Several medical interventions were taken to help the patient,
+including the administration of fresh frozen plasma, platelets, red cells,
+and coagulation factor VIII. The patient also received advanced support
+treatment in the form of mechanical ventilation and plasmapheresis. Though
+the patient's temperature remained stable during their illness,
+unfortunately, the patient's condition did not improve. On days 7 and 8, the
+patient's health declined further, with symptoms such as nosebleeds,
+gastrointestinal bleeding, and hematoma.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>illness
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 39 rows and 11 variables:
+</p>
+
+<dl>
+<dt>test</dt><dd><p>The name of the test.</p>
+</dd>
+<dt>units</dt><dd><p>The measurement units for the test.</p>
+</dd>
+<dt>day_3,day_4,day_5,day_6,day_7,day_8,day_9</dt><dd><p>Measurement values
+associated with each test administered from days 3 to 9. An <code>NA</code> value
+indicates that the test could not be performed that day.</p>
+</dd>
+<dt>norm_l,norm_u</dt><dd><p>Lower and upper bounds for the normal range associated
+with the test.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The various tests are identified in the <code>test</code> column. The following listing
+provides the full names of any abbreviations seen in that column.
+</p>
+
+<ul>
+<li> <p><code>"WBC"</code>: white blood cells.
+</p>
+</li>
+<li> <p><code>"RBC"</code>: red blood cells.
+</p>
+</li>
+<li> <p><code>"Hb"</code>: hemoglobin.
+</p>
+</li>
+<li> <p><code>"PLT"</code>: platelets.
+</p>
+</li>
+<li> <p><code>"ALT"</code>: alanine aminotransferase.
+</p>
+</li>
+<li> <p><code>"AST"</code>: aspartate aminotransferase.
+</p>
+</li>
+<li> <p><code>"TBIL"</code>: total bilirubin.
+</p>
+</li>
+<li> <p><code>"DBIL"</code>: direct bilirubin.
+</p>
+</li>
+<li> <p><code>"NH3"</code>: hydrogen nitride.
+</p>
+</li>
+<li> <p><code>"PT"</code>: prothrombin time.
+</p>
+</li>
+<li> <p><code>"APTT"</code>: activated partial thromboplastin time.
+</p>
+</li>
+<li> <p><code>"PTA"</code>: prothrombin time activity.
+</p>
+</li>
+<li> <p><code>"DD"</code>: D-dimer.
+</p>
+</li>
+<li> <p><code>"FDP"</code>: fibrinogen degradation products.
+</p>
+</li>
+<li> <p><code>"LDH"</code>: lactate dehydrogenase.
+</p>
+</li>
+<li> <p><code>"HBDH"</code>: hydroxybutyrate dehydrogenase.
+</p>
+</li>
+<li> <p><code>"CK"</code>: creatine kinase.
+</p>
+</li>
+<li> <p><code>"CKMB"</code>: the MB fraction of creatine kinase.
+</p>
+</li>
+<li> <p><code>"BNP"</code>: B-type natriuetic peptide.
+</p>
+</li>
+<li> <p><code>"MYO"</code>: myohemoglobin.
+</p>
+</li>
+<li> <p><code>"TnI"</code>: troponin inhibitory.
+</p>
+</li>
+<li> <p><code>"CREA"</code>: creatinine.
+</p>
+</li>
+<li> <p><code>"BUN"</code>: blood urea nitrogen.
+</p>
+</li>
+<li> <p><code>"AMY"</code>: amylase.
+</p>
+</li>
+<li> <p><code>"LPS"</code>: lipase.
+</p>
+</li>
+<li> <p><code>"K"</code>: kalium.
+</p>
+</li>
+<li> <p><code>"Na"</code>: sodium.
+</p>
+</li>
+<li> <p><code>"Cl"</code>: chlorine.
+</p>
+</li>
+<li> <p><code>"Ca"</code>: calcium.
+</p>
+</li>
+<li> <p><code>"P"</code>: phosphorus.
+</p>
+</li>
+<li> <p><code>"Lac"</code>: lactate, blood.
+</p>
+</li>
+<li> <p><code>"CRP"</code>: c-reactive protein.
+</p>
+</li>
+<li> <p><code>"PCT"</code>: procalcitonin.
+</p>
+</li>
+<li> <p><code>"IL-6"</code>: interleukin-6.
+</p>
+</li>
+<li> <p><code>"CD3+CD4+"</code>: CD4+T lymphocytes.
+</p>
+</li>
+<li> <p><code>"CD3+CD8+"</code>: CD8+T lymphocytes.
+</p>
+</li></ul>
+
+
+
+<h3>Examples</h3>
+
+<p>Here is a glimpse at the data available in <code>illness</code>.
+</p>
+<div class="sourceCode r"><pre>dplyr::glimpse(illness)
+#&gt; Rows: 39
+#&gt; Columns: 11
+#&gt; $ test   &lt;chr&gt; "Viral load", "WBC", "Neutrophils", "RBC", "Hb", "PLT", "ALT", ~
+#&gt; $ units  &lt;chr&gt; "copies per mL", "x10^9 / L", "x10^9 / L", "x10^12 / L", "g / L~
+#&gt; $ day_3  &lt;dbl&gt; 12000.000, 5.260, 4.870, 5.720, 153.000, 67.000, 12835.000, 236~
+#&gt; $ day_4  &lt;dbl&gt; 4200.000, 4.260, 4.720, 5.980, 135.000, 38.600, 12632.000, 2136~
+#&gt; $ day_5  &lt;dbl&gt; 1600.000, 9.920, 7.920, 4.230, 126.000, 27.400, 6426.700, 14730~
+#&gt; $ day_6  &lt;dbl&gt; 830.000, 10.490, 18.210, 4.830, 115.000, 26.200, 4263.100, 8691~
+#&gt; $ day_7  &lt;dbl&gt; 760.000, 24.770, 22.080, 4.120, 75.000, 74.100, 1623.700, 2189.~
+#&gt; $ day_8  &lt;dbl&gt; 520.000, 30.260, 27.170, 2.680, 87.000, 36.200, 672.600, 1145.0~
+#&gt; $ day_9  &lt;dbl&gt; 250.000, 19.030, 16.590, 3.320, 95.000, 25.600, 512.400, 782.50~
+#&gt; $ norm_l &lt;dbl&gt; NA, 4.0, 2.0, 4.0, 120.0, 100.0, 9.0, 15.0, 0.0, 0.0, 10.0, 9.4~
+#&gt; $ norm_u &lt;dbl&gt; NA, 10.000, 8.000, 5.500, 160.000, 300.000, 50.000, 40.000, 18.~
+</pre></div>
+
+
+<h3>Dataset ID and Badge</h3>
+
+<p>DATA-10
+</p>
+
+<div style="text-align:center;"><img src="https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_illness.png" alt="This image of that of a dataset badge." style="width:50%;padding-bottom:20px;"></div>
+
+
+
+<h3>Dataset Introduced</h3>
+
+<p><code>v0.10.0</code> (October 7, 2023)
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other datasets: 
+<code>constants</code>,
+<code>countrypops</code>,
+<code>exibble</code>,
+<code>gtcars</code>,
+<code>metro</code>,
+<code>pizzaplace</code>,
+<code>rx_addv</code>,
+<code>rx_adsl</code>,
+<code>sp500</code>,
+<code>sza</code>,
+<code>towny</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

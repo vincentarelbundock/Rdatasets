@@ -1,52 +1,54 @@
 .. container::
 
-   ================ ===============
-   greenhouse_gases R Documentation
-   ================ ===============
+   .. container::
 
-   .. rubric:: Greenhouse gas concentrations over 2000 years
-      :name: greenhouse_gases
+      ================ ===============
+      greenhouse_gases R Documentation
+      ================ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Greenhouse gas concentrations over 2000 years
+         :name: greenhouse-gas-concentrations-over-2000-years
 
-   Concentrations of the three main greenhouse gases carbon dioxide,
-   methane and nitrous oxide. Measurements are from the Law Dome Ice
-   Core in Antarctica. Selected measurements are provided every 20 years
-   from 1-2000 CE.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Concentrations of the three main greenhouse gases carbon dioxide,
+      methane and nitrous oxide. Measurements are from the Law Dome Ice
+      Core in Antarctica. Selected measurements are provided every 20
+      years from 1-2000 CE.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      greenhouse_gases
+      ::
 
-   .. rubric:: Format
-      :name: format
+         greenhouse_gases
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  year. Year (CE).
+      .. rubric:: Details
+         :name: details
 
-   -  gas. Gas being measured: carbon dioxide ('CO2'), methane ('CH4')
-      or nitrous oxide ('N2O').
+      -  year. Year (CE).
 
-   -  concentration. Gas concentration in ppm by volume ('CO2') or ppb
-      by volume ('CH4', 'N2O').
+      -  gas. Gas being measured: carbon dioxide ('CO2'), methane
+         ('CH4') or nitrous oxide ('N2O').
 
-   .. rubric:: Source
-      :name: source
+      -  concentration. Gas concentration in ppm by volume ('CO2') or
+         ppb by volume ('CH4', 'N2O').
 
-   MacFarling Meure et al. 2006 via
-   `NOAA <https://www.ncei.noaa.gov/access/paleo-search/study/9959/>`__.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      MacFarling Meure et al. 2006 via
+      `NOAA <https://www.ncei.noaa.gov/access/paleo-search/study/9959/>`__.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      head(greenhouse_gases)
+      ::
+
+         head(greenhouse_gases)

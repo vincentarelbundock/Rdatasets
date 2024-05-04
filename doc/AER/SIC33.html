@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>SIC33</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='SIC33'>SIC33 Production Data</h2>
+<h2>SIC33 Production Data</h2>
 
 <h3>Description</h3>
 
@@ -100,17 +100,16 @@ if(require("rgl")) {
   x &lt;- log(SIC33)[,2]
   y &lt;- log(SIC33)[,3]
   z &lt;- log(SIC33)[,1]
-  rgl.open()
-  rgl.bbox()
-  rgl.spheres(x, y, z, radius = 0.15)
+  plot3d(x, y, z, type = "s", col = "gray", radius = 0.1)
   x &lt;- seq(4.5, 7.5, by = 0.5)
   y &lt;- seq(5.5, 10, by = 0.5)
   z &lt;- outer(x, y, function(x, y) predict(fm_cb, data.frame(labor = x, capital = y)))
-  rgl.surface(x, y, z, color = "blue", alpha = 0.5, shininess = 128)
+  surface3d(x, y, z, color = "blue", alpha = 0.5, shininess = 128)
 }
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

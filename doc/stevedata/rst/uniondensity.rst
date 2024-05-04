@@ -1,88 +1,92 @@
 .. container::
 
-   ============ ===============
-   uniondensity R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Cross-National Rates of Trade Union Density
-      :name: uniondensity
+      ============ ===============
+      uniondensity R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cross-National Rates of Trade Union Density
+         :name: cross-national-rates-of-trade-union-density
 
-   Cross-national data on relative size of the trade unions and
-   predictors in 20 countries. This is a data set of interest to
-   replicating Western and Jackman (1994), who themselves were
-   addressing a debate between Wallerstein and Stephens on which of two
-   highly correlated predictors explains trade union density.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-national data on relative size of the trade unions and
+      predictors in 20 countries. This is a data set of interest to
+      replicating Western and Jackman (1994), who themselves were
+      addressing a debate between Wallerstein and Stephens on which of
+      two highly correlated predictors explains trade union density.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      uniondensity
+      ::
 
-   .. rubric:: Format
-      :name: format
+         uniondensity
 
-   A data frame with 20 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``country``
-      a character vector for the country
+      A data frame with 20 observations on the following 5 variables.
 
-   ``union``
-      a numeric vector for the percentage of the total number of wage
-      and salary earners plus the unemployed who are union members,
-      measured between 1975 and 1980, with most of the data drawn from
-      1979.
+      ``country``
+         a character vector for the country
 
-   ``left``
-      a numeric vector tapping the extent to which parties of the left
-      have controlled governments since 1919, due to Wilensky (1981).
+      ``union``
+         a numeric vector for the percentage of the total number of wage
+         and salary earners plus the unemployed who are union members,
+         measured between 1975 and 1980, with most of the data drawn
+         from 1979.
 
-   ``size``
-      a numeric vector measuring the log of labor force size, defined as
-      the number of wage and salary earners, plus the unemployed.
+      ``left``
+         a numeric vector tapping the extent to which parties of the
+         left have controlled governments since 1919, due to Wilensky
+         (1981).
 
-   ``concen``
-      a numeric vector measuring the percentage of employment,
-      shipments, or production accounted for by the four largest
-      enterprises in a particular industry, averaged over industries
-      (with weights proportional to the size of the industry) and the
-      resulting measure is normalized such that the United States scores
-      a 1.0, and is due to Pryor (1973). Some of the scores on this
-      variable are imputed using procedures described in Stephens and
-      Wallerstein (1991, 945).
+      ``size``
+         a numeric vector measuring the log of labor force size, defined
+         as the number of wage and salary earners, plus the unemployed.
 
-   .. rubric:: Details
-      :name: details
+      ``concen``
+         a numeric vector measuring the percentage of employment,
+         shipments, or production accounted for by the four largest
+         enterprises in a particular industry, averaged over industries
+         (with weights proportional to the size of the industry) and the
+         resulting measure is normalized such that the United States
+         scores a 1.0, and is due to Pryor (1973). Some of the scores on
+         this variable are imputed using procedures described in
+         Stephens and Wallerstein (1991, 945).
 
-   Data documentation are derived from Simon Jackman's ``pscl`` package.
-   I just tidied up the presentation a bit.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Data documentation are derived from Simon Jackman's ``pscl``
+      package. I just tidied up the presentation a bit.
 
-   Pryor, Frederic. 1973. Property and Industrial Organization in
-   Communist and Capitalist Countries. Bloomington: Indiana University
-   Press.
+      .. rubric:: Source
+         :name: source
 
-   Stephens, John and Michael Wallerstein. 1991. Industrial
-   Concentration, Country Size and Trade Union Membership. American
-   Political Science Review 85:941-953.
+      Pryor, Frederic. 1973. Property and Industrial Organization in
+      Communist and Capitalist Countries. Bloomington: Indiana
+      University Press.
 
-   Western, Bruce and Simon Jackman. 1994. Bayesian Inference for
-   Comparative Research. American Political Science Review 88:412-423.
+      Stephens, John and Michael Wallerstein. 1991. Industrial
+      Concentration, Country Size and Trade Union Membership. American
+      Political Science Review 85:941-953.
 
-   Wilensky, Harold L. 1981. Leftism, Catholicism, Democratic
-   Corporatism: The Role of Political Parties in Recemt Welfare State
-   Development. In The Development of Welfare States in Europe and
-   America, ed. Peter Flora and Arnold J. Heidenheimer. New Brunswick:
-   Transaction Books.
+      Western, Bruce and Simon Jackman. 1994. Bayesian Inference for
+      Comparative Research. American Political Science Review
+      88:412-423.
 
-   .. rubric:: References
-      :name: references
+      Wilensky, Harold L. 1981. Leftism, Catholicism, Democratic
+      Corporatism: The Role of Political Parties in Recemt Welfare State
+      Development. In The Development of Welfare States in Europe and
+      America, ed. Peter Flora and Arnold J. Heidenheimer. New
+      Brunswick: Transaction Books.
 
-   Jackman, Simon. 2009. Bayesian Analysis for the Social Sciences.
-   Wiley: Hoboken, New Jersey.
+      .. rubric:: References
+         :name: references
+
+      Jackman, Simon. 2009. Bayesian Analysis for the Social Sciences.
+      Wiley: Hoboken, New Jersey.

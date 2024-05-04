@@ -1,60 +1,62 @@
 .. container::
 
-   ======= ===============
-   Pottery R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Chemical Composition of Pottery
-      :name: Pottery
+      ======= ===============
+      Pottery R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Chemical Composition of Pottery
+         :name: chemical-composition-of-pottery
 
-   The data give the chemical composition of ancient pottery found at
-   four sites in Great Britain. They appear in Hand, et al. (1994), and
-   are used to illustrate MANOVA in the SAS Manual. (Suggested by
-   Michael Friendly.)
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The data give the chemical composition of ancient pottery found at
+      four sites in Great Britain. They appear in Hand, et al. (1994),
+      and are used to illustrate MANOVA in the SAS Manual. (Suggested by
+      Michael Friendly.)
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Pottery
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Pottery
 
-   A data frame with 26 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Site``
-      a factor with levels ``AshleyRails`` ``Caldicot`` ``IsleThorns``
-      ``Llanedyrn``
+      A data frame with 26 observations on the following 6 variables.
 
-   ``Al``
-      Aluminum
+      ``Site``
+         a factor with levels ``AshleyRails`` ``Caldicot``
+         ``IsleThorns`` ``Llanedyrn``
 
-   ``Fe``
-      Iron
+      ``Al``
+         Aluminum
 
-   ``Mg``
-      Magnesium
+      ``Fe``
+         Iron
 
-   ``Ca``
-      Calcium
+      ``Mg``
+         Magnesium
 
-   ``Na``
-      Sodium
+      ``Ca``
+         Calcium
 
-   .. rubric:: Source
-      :name: source
+      ``Na``
+         Sodium
 
-   Hand, D. J., Daly, F., Lunn, A. D., McConway, K. J., and E., O.
-   (1994) *A Handbook of Small Data Sets*. Chapman and Hall.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Hand, D. J., Daly, F., Lunn, A. D., McConway, K. J., and E., O.
+      (1994) *A Handbook of Small Data Sets*. Chapman and Hall.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      Pottery
+      ::
+
+         Pottery

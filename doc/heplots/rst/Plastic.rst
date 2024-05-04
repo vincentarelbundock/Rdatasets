@@ -1,66 +1,63 @@
 .. container::
 
-   ======= ===============
-   Plastic R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Plastic Film Data
-      :name: Plastic
+      ======= ===============
+      Plastic R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Plastic Film Data
+         :name: plastic-film-data
 
-   An experiment was conducted to determine the optimum conditions for
-   extruding plastic film. Three responses were measured in relation to
-   two factors, rate of extrusion and amount of an additive.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      An experiment was conducted to determine the optimum conditions
+      for extruding plastic film. Three responses were measured in
+      relation to two factors, rate of extrusion and amount of an
+      additive.
 
-   .. code:: R
+      .. rubric:: Format
+         :name: format
 
-      data(Plastic)
+      A data frame with 20 observations on the following 5 variables.
 
-   .. rubric:: Format
-      :name: format
+      ``tear``
+         a numeric vector: tear resistance
 
-   A data frame with 20 observations on the following 5 variables.
+      ``gloss``
+         a numeric vector: film gloss
 
-   ``tear``
-      a numeric vector: tear resistance
+      ``opacity``
+         a numeric vector: film opacity
 
-   ``gloss``
-      a numeric vector: film gloss
+      ``rate``
+         a factor representing change in the rate of extrusion with
+         levels ``Low`` (-10%), ``High`` (10%)
 
-   ``opacity``
-      a numeric vector: film opacity
+      ``additive``
+         a factor with levels ``Low`` (1.0%), ``High`` (1.5%)
 
-   ``rate``
-      a factor representing change in the rate of extrusion with levels
-      ``Low`` (-10%), ``High`` (10%)
+      .. rubric:: Source
+         :name: source
 
-   ``additive``
-      a factor with levels ``Low`` (1.0%), ``High`` (1.5%)
+      Johnson, R.A. & Wichern, D.W. (1992). *Applied Multivariate
+      Statistical Analysis*, 3rd ed., Prentice-Hall. Example 6.12 (p.
+      266).
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: References
+         :name: references
 
-   Johnson, R.A. & Wichern, D.W. (1992). *Applied Multivariate
-   Statistical Analysis*, 3rd ed., Prentice-Hall. Example 6.12 (p. 266).
+      Krzanowski, W. J. (1988). *Principles of Multivariate Analysis. A
+      User's Perspective*. Oxford. (p. 381)
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: Examples
+         :name: examples
 
-   Krzanowski, W. J. (1988). *Principles of Multivariate Analysis. A
-   User's Perspective*. Oxford. (p. 381)
+      ::
 
-   .. rubric:: Examples
-      :name: examples
+         str(Plastic)
+         plastic.mod <- lm(cbind(tear, gloss, opacity) ~ rate*additive, data=Plastic)
+         car::Anova(plastic.mod)
 
-   .. code:: R
-
-      str(Plastic)
-      plastic.mod <- lm(cbind(tear, gloss, opacity) ~ rate*additive, data=Plastic)
-      Anova(plastic.mod)
-
-      pairs(plastic.mod)
+         pairs(plastic.mod)

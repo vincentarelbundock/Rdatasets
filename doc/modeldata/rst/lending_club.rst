@@ -1,45 +1,47 @@
 .. container::
 
-   ============ ===============
-   lending_club R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Loan data
-      :name: lending_club
+      ============ ===============
+      lending_club R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Loan data
+         :name: loan-data
 
-   Loan data
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      Loan data
 
-   These data were downloaded from the Lending Club access site (see
-   below) and are from the first quarter of 2016. A subset of the rows
-   and variables are included here. The outcome is in the variable
-   ``Class`` and is either "good" (meaning that the loan was fully paid
-   back or currently on-time) or "bad" (charged off, defaulted, of
-   21-120 days late). A data dictionary can be found on the source
-   website.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Value
-      :name: value
+      These data were downloaded from the Lending Club access site (see
+      below) and are from the first quarter of 2016. A subset of the
+      rows and variables are included here. The outcome is in the
+      variable ``Class`` and is either "good" (meaning that the loan was
+      fully paid back or currently on-time) or "bad" (charged off,
+      defaulted, of 21-120 days late). A data dictionary can be found on
+      the source website.
 
-   ================ ============
-   ``lending_club`` a data frame
-   ================ ============
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      ================ ============
+      ``lending_club`` a data frame
+      ================ ============
 
-   Lending Club Statistics
-   https://www.lendingclub.com/info/download-data.action
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Lending Club Statistics
+      https://www.lendingclub.com/info/download-data.action
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(lending_club)
-      str(lending_club)
+      ::
+
+         data(lending_club)
+         str(lending_club)

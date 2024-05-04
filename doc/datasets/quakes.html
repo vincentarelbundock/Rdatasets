@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>quakes</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='quakes'>Locations of Earthquakes off Fiji</h2>
+<h2>Locations of Earthquakes off Fiji</h2>
 
 <h3>Description</h3>
 
@@ -38,23 +38,23 @@ The events occurred in a cube near Fiji since 1964.
 <table>
 <tr>
  <td style="text-align: right;">
-    [,1] </td><td style="text-align: left;"> lat      </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Latitude of event</td>
+    [,1] </td><td style="text-align: left;"> <code>lat</code>      </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Latitude of event</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,2] </td><td style="text-align: left;"> long     </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Longitude</td>
+    [,2] </td><td style="text-align: left;"> <code>long</code>     </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Longitude</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,3] </td><td style="text-align: left;"> depth    </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Depth (km)</td>
+    [,3] </td><td style="text-align: left;"> <code>depth</code>    </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Depth (km)</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,4] </td><td style="text-align: left;"> mag      </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Richter Magnitude</td>
+    [,4] </td><td style="text-align: left;"> <code>mag</code>      </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Richter Magnitude</td>
 </tr>
 <tr>
  <td style="text-align: right;">
-    [,5] </td><td style="text-align: left;"> stations </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Number of stations reporting
+    [,5] </td><td style="text-align: left;"> <code>stations</code> </td><td style="text-align: left;"> numeric </td><td style="text-align: left;"> Number of stations reporting
   </td>
 </tr>
 
@@ -85,6 +85,7 @@ University.
 pairs(quakes, main = "Fiji Earthquakes, N = 1000", cex.main = 1.2, pch = ".")
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

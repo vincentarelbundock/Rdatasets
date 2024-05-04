@@ -1,81 +1,84 @@
 .. container::
 
-   ========= ===============
-   Computers R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Prices of Personal Computers
-      :name: Computers
+      ========= ===============
+      Computers R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Prices of Personal Computers
+         :name: prices-of-personal-computers
 
-   a cross-section from 1993 to 1995
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 6259
+      a cross-section from 1993 to 1995
 
-   *observation* : goods
+      *number of observations* : 6259
 
-   *country* : United States
+      *observation* : goods
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Computers)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Computers)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   price
-      price in US dollars of 486 PCs
+      A dataframe containing :
 
-   speed
-      clock speed in MHz
+      price
+         price in US dollars of 486 PCs
 
-   hd
-      size of hard drive in MB
+      speed
+         clock speed in MHz
 
-   ram
-      size of Ram in in MB
+      hd
+         size of hard drive in MB
 
-   screen
-      size of screen in inches
+      ram
+         size of Ram in in MB
 
-   cd
-      is a CD-ROM present ?
+      screen
+         size of screen in inches
 
-   multi
-      is a multimedia kit (speakers, sound card) included ?
+      cd
+         is a CD-ROM present ?
 
-   premium
-      is the manufacturer was a "premium" firm (IBM, COMPAQ) ?
+      multi
+         is a multimedia kit (speakers, sound card) included ?
 
-   ads
-      number of 486 price listings for each month
+      premium
+         is the manufacturer was a "premium" firm (IBM, COMPAQ) ?
 
-   trend
-      time trend indicating month starting from January of 1993 to
-      November of 1995.
+      ads
+         number of 486 price listings for each month
 
-   .. rubric:: Source
-      :name: source
+      trend
+         time trend indicating month starting from January of 1993 to
+         November of 1995.
 
-   Stengos, T. and E. Zacharias (2005) “Intertemporal pricing and price
-   discrimination : a semiparametric hedonic analysis of the personal
-   computer market”, *Journal of Applied Econometrics*, **forthcoming**.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Stengos, T. and E. Zacharias (2005) “Intertemporal pricing and
+      price discrimination : a semiparametric hedonic analysis of the
+      personal computer market”, *Journal of Applied Econometrics*,
+      **forthcoming**.
 
-   Journal of Applied Econometrics data archive :
-   http://qed.econ.queensu.ca/jae/.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Journal of Applied Econometrics data archive :
+      http://qed.econ.queensu.ca/jae/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

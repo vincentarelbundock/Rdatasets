@@ -1,57 +1,59 @@
 .. container::
 
-   ========= ===============
-   gapminder R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Gapminder Data
-      :name: gapminder
+      ========= ===============
+      gapminder R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Gapminder Data
+         :name: gapminder-data
 
-   Health and income outcomes for 184 countries from 1960 to 2016. Also
-   includes two character vectors, ``oecd`` and ``opec``, with the names
-   of OECD and OPEC countries from 2016.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Health and income outcomes for 184 countries from 1960 to 2016.
+      Also includes two character vectors, ``oecd`` and ``opec``, with
+      the names of OECD and OPEC countries from 2016.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      gapminder
+      ::
 
-   .. rubric:: Format
-      :name: format
+         gapminder
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  country.
+      .. rubric:: Details
+         :name: details
 
-   -  year.
+      -  country.
 
-   -  infant_mortality. Infant deaths per 1000.
+      -  year.
 
-   -  life_expectancy. Life expectancy in years.
+      -  infant_mortality. Infant deaths per 1000.
 
-   -  fertility. Average number of children per woman.
+      -  life_expectancy. Life expectancy in years.
 
-   -  population. Country population.
+      -  fertility. Average number of children per woman.
 
-   -  gpd. GDP according to World Bankdev.
+      -  population. Country population.
 
-   -  continent.
+      -  gpd. GDP according to World Bankdev.
 
-   -  region. Geographical region.
+      -  continent.
 
-   .. rubric:: Examples
-      :name: examples
+      -  region. Geographical region.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      head(gapminder)
-      print(oecd)
-      print(opec)
+      ::
+
+         head(gapminder)
+         print(oecd)
+         print(opec)

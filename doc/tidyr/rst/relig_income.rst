@@ -1,38 +1,40 @@
 .. container::
 
-   ============ ===============
-   relig_income R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Pew religion and income survey
-      :name: relig_income
+      ============ ===============
+      relig_income R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Pew religion and income survey
+         :name: pew-religion-and-income-survey
 
-   Pew religion and income survey
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Pew religion and income survey
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      relig_income
+      ::
 
-   .. rubric:: Format
-      :name: format
+         relig_income
 
-   A dataset with variables:
+      .. rubric:: Format
+         :name: format
 
-   religion
-      Name of religion
+      A dataset with variables:
 
-   ``⁠<$10k⁠``-``⁠Don\'t know/refused⁠``
-      Number of respondees with income range in column name
+      religion
+         Name of religion
 
-   .. rubric:: Source
-      :name: source
+      ``⁠<$10k⁠``-``⁠Don\'t know/refused⁠``
+         Number of respondees with income range in column name
 
-   Downloaded from
-   https://www.pewresearch.org/religion/religious-landscape-study/
-   (downloaded November 2009)
+      .. rubric:: Source
+         :name: source
+
+      Downloaded from
+      https://www.pewresearch.org/religion/religious-landscape-study/
+      (downloaded November 2009)

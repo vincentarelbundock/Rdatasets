@@ -1,41 +1,43 @@
 .. container::
 
-   ======= ===============
-   Kids198 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Body Measurements of Children
-      :name: Kids198
+      ======= ===============
+      Kids198 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Body Measurements of Children
+         :name: body-measurements-of-children
 
-   Body measurements for a sample of 198 children
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Body measurements for a sample of 198 children
 
-   A data frame with 198 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ========== ==============================
-   ``Height`` Height (in inches)
-   ``Weight`` Weight (in pounds)
-   ``Age``    Age (in months)
-   ``Sex``    ``0``\ =male or ``1``\ =female
-   ``Race``   ``0``\ =white or ``1``\ =other
-   \          
-   ========== ==============================
+      A data frame with 198 observations on the following 5 variables.
 
-   .. rubric:: Details
-      :name: details
+      ========== ==============================
+      ``Height`` Height (in inches)
+      ``Weight`` Weight (in pounds)
+      ``Age``    Age (in months)
+      ``Sex``    ``0``\ =male or ``1``\ =female
+      ``Race``   ``0``\ =white or ``1``\ =other
+      \          
+      ========== ==============================
 
-   This dataset comes from a 1977 anthropometric study of body
-   measurements for children. Subjects in this sample are between the
-   ages of 8 and 18 years old, selected at random from the much larger
-   dataset of the original study.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This dataset comes from a 1977 anthropometric study of body
+      measurements for children. Subjects in this sample are between the
+      ages of 8 and 18 years old, selected at random from the much
+      larger dataset of the original study.
 
-   A sample of 198 cases from the NIST's AnthroKids dataset at
-   http://ovrt.nist.gov/projects/anthrokids/
+      .. rubric:: Source
+         :name: source
+
+      A sample of 198 cases from the NIST's AnthroKids dataset at
+      http://ovrt.nist.gov/projects/anthrokids/

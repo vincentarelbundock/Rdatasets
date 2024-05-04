@@ -1,49 +1,51 @@
 .. container::
 
-   ============ ===============
-   band_members R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Band membership
-      :name: band_members
+      ============ ===============
+      band_members R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Band membership
+         :name: band-membership
 
-   These data sets describe band members of the Beatles and Rolling
-   Stones. They are toy data sets that can be displayed in their
-   entirety on a slide (e.g. to demonstrate a join).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These data sets describe band members of the Beatles and Rolling
+      Stones. They are toy data sets that can be displayed in their
+      entirety on a slide (e.g. to demonstrate a join).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      band_members
+      ::
 
-      band_instruments
+         band_members
 
-      band_instruments2
+         band_instruments
 
-   .. rubric:: Format
-      :name: format
+         band_instruments2
 
-   Each is a tibble with two variables and three observations
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      Each is a tibble with two variables and three observations
 
-   ``band_instruments`` and ``band_instruments2`` contain the same data
-   but use different column names for the first column of the data set.
-   ``band_instruments`` uses ``name``, which matches the name of the key
-   column of ``band_members``; ``band_instruments2`` uses ``artist``,
-   which does not.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Examples
-      :name: examples
+      ``band_instruments`` and ``band_instruments2`` contain the same
+      data but use different column names for the first column of the
+      data set. ``band_instruments`` uses ``name``, which matches the
+      name of the key column of ``band_members``; ``band_instruments2``
+      uses ``artist``, which does not.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      band_members
-      band_instruments
-      band_instruments2
+      ::
+
+         band_members
+         band_instruments
+         band_instruments2

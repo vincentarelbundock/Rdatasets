@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>cbpp</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='cbpp'>Contagious bovine pleuropneumonia</h2>
+<h2>Contagious bovine pleuropneumonia</h2>
 
 <h3>Description</h3>
 
@@ -83,13 +83,13 @@ m1p &lt;- glmer(incidence / size ~ period + (1 | herd), weights = size,
 stopifnot(all.equal(fixef(m1), fixef(m1p), tolerance = 1e-5),
           all.equal(ranef(m1), ranef(m1p), tolerance = 1e-5))
 
-
 ## GLMM with individual-level variability (accounting for overdispersion)
 cbpp$obs &lt;- 1:nrow(cbpp)
 (m2 &lt;- glmer(cbind(incidence, size - incidence) ~ period + (1 | herd) +  (1|obs),
               family = binomial, data = cbpp))
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

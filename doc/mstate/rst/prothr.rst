@@ -1,59 +1,61 @@
 .. container::
 
-   ==================== ===============
-   Liver cirrhosis data R Documentation
-   ==================== ===============
+   .. container::
 
-   .. rubric:: Abnormal prothrombin levels in liver cirrhosis
-      :name: Liver+20cirrhosis+20data
+      ==================== ===============
+      Liver cirrhosis data R Documentation
+      ==================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Abnormal prothrombin levels in liver cirrhosis
+         :name: abnormal-prothrombin-levels-in-liver-cirrhosis
 
-   A data frame of 488 liver cirrhosis patients from a randomized
-   clinical trial concerning prednisone treatment in these patients. The
-   dataset is in long format. The included variables are
+      .. rubric:: Description
+         :name: description
 
-   id
-      Patient identification number
+      A data frame of 488 liver cirrhosis patients from a randomized
+      clinical trial concerning prednisone treatment in these patients.
+      The dataset is in long format. The included variables are
 
-   from
-      Starting state
+      id
+         Patient identification number
 
-   to
-      Receiving state
+      from
+         Starting state
 
-   trans
-      Transition number
+      to
+         Receiving state
 
-   Tstart
-      Starting time
+      trans
+         Transition number
 
-   Tstop
-      Transition time
+      Tstart
+         Starting time
 
-   status
-      Status variable; 1=transition, 0=censored
+      Tstop
+         Transition time
 
-   treat
-      Treatment; factor with levels "Placebo", "Prednisone"
+      status
+         Status variable; 1=transition, 0=censored
 
-   .. rubric:: Format
-      :name: format
+      treat
+         Treatment; factor with levels "Placebo", "Prednisone"
 
-   A data frame, see ``data.frame``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      A data frame, see ``data.frame``.
 
-   This data was kindly provided by Per Kragh Andersen. It was
-   introduced in Andersen, Borgan, Gill & Keiding (1993), Example
-   1.3.12, and used as illustration for computation of transition
-   probabilities in multi-state models, see Sections IV.4 (Example
-   IV.4.4) and VII.2 (Example VII.2.10).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: References
-      :name: references
+      This data was kindly provided by Per Kragh Andersen. It was
+      introduced in Andersen, Borgan, Gill & Keiding (1993), Example
+      1.3.12, and used as illustration for computation of transition
+      probabilities in multi-state models, see Sections IV.4 (Example
+      IV.4.4) and VII.2 (Example VII.2.10).
 
-   Andersen PK, Borgan O, Gill RD, Keiding N (1993). *Statistical Models
-   Based on Counting Processes*. Springer, New York.
+      .. rubric:: References
+         :name: references
+
+      Andersen PK, Borgan O, Gill RD, Keiding N (1993). *Statistical
+      Models Based on Counting Processes*. Springer, New York.

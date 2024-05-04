@@ -1,58 +1,61 @@
 .. container::
 
-   ======= ===============
-   murders R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Data for 20 metropolitan areas
-      :name: murders
+      ======= ===============
+      murders R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data for 20 metropolitan areas
+         :name: data-for-20-metropolitan-areas
 
-   Population, percent in poverty, percent unemployment, and murder
-   rate.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Population, percent in poverty, percent unemployment, and murder
+      rate.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      murders
+      ::
 
-   .. rubric:: Format
-      :name: format
+         murders
 
-   A data frame with 20 metropolitan areas on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   population
-      Population.
+      A data frame with 20 metropolitan areas on the following 4
+      variables.
 
-   perc_pov
-      Percent in poverty.
+      population
+         Population.
 
-   perc_unemp
-      Percent unemployed.
+      perc_pov
+         Percent in poverty.
 
-   annual_murders_per_mil
-      Number of murders per year per million people.
+      perc_unemp
+         Percent unemployed.
 
-   .. rubric:: Source
-      :name: source
+      annual_murders_per_mil
+         Number of murders per year per million people.
 
-   We do not have provenance for these data hence recommend not using
-   them for analysis.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      We do not have provenance for these data hence recommend not using
+      them for analysis.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(murders, aes(x = perc_pov, y = annual_murders_per_mil)) +
-        geom_point() +
-        labs(
-          x = "Percent in poverty",
-          y = "Number of murders per year per million people"
-        )
+         library(ggplot2)
+
+         ggplot(murders, aes(x = perc_pov, y = annual_murders_per_mil)) +
+           geom_point() +
+           labs(
+             x = "Percent in poverty",
+             y = "Number of murders per year per million people"
+           )

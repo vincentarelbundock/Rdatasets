@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>taxi</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='taxi'>Chicago taxi data set</h2>
+<h2>Chicago taxi data set</h2>
 
 <h3>Description</h3>
 
@@ -41,8 +41,8 @@ the modeling problem of predicting whether a rider will tip or not.
 <dt>company</dt><dd><p>The taxi company, as a factor. Companies that occurred
 few times were binned as &quot;other&quot;.</p>
 </dd>
-<dt>local</dt><dd><p>Whether the trip started in the same community
-area as it began. See the source data for community area values.</p>
+<dt>local</dt><dd><p>Whether the trip's starting and ending locations are in the
+same community. See the source data for community area values.</p>
 </dd>
 <dt>dow</dt><dd><p>The day of the week in which the trip began, as a
 factor.</p>
@@ -75,6 +75,7 @@ taxi
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

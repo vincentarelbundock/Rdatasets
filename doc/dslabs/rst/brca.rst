@@ -1,86 +1,89 @@
 .. container::
 
-   ==== ===============
-   brca R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Breast Cancer Wisconsin Diagnostic Dataset from UCI
-      Machine Learning Repository
-      :name: brca
+      ==== ===============
+      brca R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Breast Cancer Wisconsin Diagnostic Dataset from UCI
+         Machine Learning Repository
+         :name: breast-cancer-wisconsin-diagnostic-dataset-from-uci-machine-learning-repository
 
-   Biopsy features for classification of 569 malignant (cancer) and
-   benign (not cancer) breast masses.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Biopsy features for classification of 569 malignant (cancer) and
+      benign (not cancer) breast masses.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      brca
+      ::
 
-   .. rubric:: Format
-      :name: format
+         brca
 
-   An object of class ``list``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``list``.
 
-   Features were computationally extracted from digital images of fine
-   needle aspirate biopsy slides. Features correspond to properties of
-   cell nuclei, such as size, shape and regularity. The mean, standard
-   error, and worst value of each of 10 nuclear parameters is reported
-   for a total of 30 features.
+      .. rubric:: Details
+         :name: details
 
-   This is a classic dataset for training and benchmarking machine
-   learning algorithms.
+      Features were computationally extracted from digital images of
+      fine needle aspirate biopsy slides. Features correspond to
+      properties of cell nuclei, such as size, shape and regularity. The
+      mean, standard error, and worst value of each of 10 nuclear
+      parameters is reported for a total of 30 features.
 
-   -  y. The outcomes. A factor with two levels denoting whether a mass
-      is malignant ("M") or benign ("B").
+      This is a classic dataset for training and benchmarking machine
+      learning algorithms.
 
-   -  x. The predictors. A matrix with the mean, standard error and
-      worst value of each of 10 nuclear measurements on the slide, for
-      30 total features per biopsy:
+      -  y. The outcomes. A factor with two levels denoting whether a
+         mass is malignant ("M") or benign ("B").
 
-      -  radius. Nucleus radius (mean of distances from center to points
-         on perimeter).
+      -  x. The predictors. A matrix with the mean, standard error and
+         worst value of each of 10 nuclear measurements on the slide,
+         for 30 total features per biopsy:
 
-      -  texture. Nucleus texture (standard deviation of grayscale
-         values).
+         -  radius. Nucleus radius (mean of distances from center to
+            points on perimeter).
 
-      -  perimeter. Nucleus perimeter.
+         -  texture. Nucleus texture (standard deviation of grayscale
+            values).
 
-      -  area. Nucleus area.
+         -  perimeter. Nucleus perimeter.
 
-      -  smoothness. Nucleus smoothness (local variation in radius
-         lengths).
+         -  area. Nucleus area.
 
-      -  compactness. Nucleus compactness (perimeter^2/area - 1).
+         -  smoothness. Nucleus smoothness (local variation in radius
+            lengths).
 
-      -  concavity, Nucleus concavity (severity of concave portions of
-         the contour).
+         -  compactness. Nucleus compactness (perimeter^2/area - 1).
 
-      -  concave_pts. Number of concave portions of the nucleus contour.
+         -  concavity, Nucleus concavity (severity of concave portions
+            of the contour).
 
-      -  symmetry. Nucleus symmetry.
+         -  concave_pts. Number of concave portions of the nucleus
+            contour.
 
-      -  fractal_dim. Nucleus fractal dimension ("coastline
-         approximation" -1).
+         -  symmetry. Nucleus symmetry.
 
-   .. rubric:: Source
-      :name: source
+         -  fractal_dim. Nucleus fractal dimension ("coastline
+            approximation" -1).
 
-   `UCI Machine Learning
-   Repository <https://archive.ics.uci.edu/ml/datasets/>`__
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      `UCI Machine Learning
+      Repository <https://archive.ics.uci.edu/ml/datasets/>`__
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      table(brca$y)
-      dim(brca$x)
-      head(brca$x)
+      ::
+
+         table(brca$y)
+         dim(brca$x)
+         head(brca$x)

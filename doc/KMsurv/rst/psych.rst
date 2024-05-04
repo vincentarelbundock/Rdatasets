@@ -1,44 +1,46 @@
 .. container::
 
-   ===== ===============
-   psych R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: data from Section 1.15
-      :name: psych
+      ===== ===============
+      psych R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Section 1.15
+         :name: data-from-section-1.15
 
-   The ``psych`` data frame has 927 rows and 10 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``psych`` data frame has 927 rows and 10 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   sex
-      Patient sex (1=male, 2=female)
+      This data frame contains the following columns:
 
-   age
-      Patient age
+      sex
+         Patient sex (1=male, 2=female)
 
-   time
-      Time to death or on-study time
+      age
+         Patient age
 
-   death
-      Death indicator (0=alive, 1=dead)
+      time
+         Time to death or on-study time
 
-   .. rubric:: Source
-      :name: source
+      death
+         Death indicator (0=alive, 1=dead)
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer. Woolsen Biometrics 37 (1981):
-   687-696.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer. Woolsen Biometrics 37
+      (1981): 687-696.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(psych)
+      ::
+
+         data(psych)

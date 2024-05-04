@@ -1,48 +1,50 @@
 .. container::
 
-   ====== ===============
-   Spruce R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Growth of Spruce Trees
-      :name: Spruce
+      ====== ===============
+      Spruce R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Growth of Spruce Trees
+         :name: growth-of-spruce-trees
 
-   The ``Spruce`` data frame has 1027 rows and 4 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``Spruce`` data frame has 1027 rows and 4 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Tree
-      a factor giving a unique identifier for each tree.
+      This data frame contains the following columns:
 
-   days
-      a numeric vector giving the number of days since the beginning of
-      the experiment.
+      Tree
+         a factor giving a unique identifier for each tree.
 
-   logSize
-      a numeric vector giving the logarithm of an estimate of the volume
-      of the tree trunk.
+      days
+         a numeric vector giving the number of days since the beginning
+         of the experiment.
 
-   plot
-      a factor identifying the plot in which the tree was grown.
+      logSize
+         a numeric vector giving the logarithm of an estimate of the
+         volume of the tree trunk.
 
-   .. rubric:: Details
-      :name: details
+      plot
+         a factor identifying the plot in which the tree was grown.
 
-   Diggle, Liang, and Zeger (1994, Example 1.3, page 5) describe data on
-   the growth of spruce trees that have been exposed to an ozone-rich
-   atmosphere or to a normal atmosphere.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Diggle, Liang, and Zeger (1994, Example 1.3, page 5) describe data
+      on the growth of spruce trees that have been exposed to an
+      ozone-rich atmosphere or to a normal atmosphere.
 
-   Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S
-   and S-PLUS*, Springer, New York. (Appendix A.28)
+      .. rubric:: Source
+         :name: source
 
-   Diggle, Peter J., Liang, Kung-Yee and Zeger, Scott L. (1994),
-   *Analysis of longitudinal data*, Oxford University Press, Oxford.
+      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
+      S and S-PLUS*, Springer, New York. (Appendix A.28)
+
+      Diggle, Peter J., Liang, Kung-Yee and Zeger, Scott L. (1994),
+      *Analysis of longitudinal data*, Oxford University Press, Oxford.

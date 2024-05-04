@@ -1,50 +1,54 @@
 .. container::
 
-   ====== ===============
-   pair65 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Heated Elastic Bands
-      :name: pair65
+      ====== ===============
+      pair65 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Heated Elastic Bands
+         :name: heated-elastic-bands
 
-   The ``pair65`` data frame has 9 rows and 2 columns. Eighteen elastic
-   bands were divided into nine pairs, with bands of similar
-   stretchiness placed in the same pair. One member of each pair was
-   placed in hot water (60-65 degrees C) for four minutes, while the
-   other was left at ambient temperature. After a wait of about ten
-   minutes, the amounts of stretch, under a 1.35 kg weight, were
-   recorded.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``pair65`` data frame has 9 rows and 2 columns. Eighteen
+      elastic bands were divided into nine pairs, with bands of similar
+      stretchiness placed in the same pair. One member of each pair was
+      placed in hot water (60-65 degrees C) for four minutes, while the
+      other was left at ambient temperature. After a wait of about ten
+      minutes, the amounts of stretch, under a 1.35 kg weight, were
+      recorded.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      pair65
+      ::
 
-   .. rubric:: Format
-      :name: format
+         pair65
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   heated
-      a numeric vector giving the stretch lengths for the heated bands
+      This data frame contains the following columns:
 
-   ambient
-      a numeric vector giving the stretch lengths for the unheated bands
+      heated
+         a numeric vector giving the stretch lengths for the heated
+         bands
 
-   .. rubric:: Source
-      :name: source
+      ambient
+         a numeric vector giving the stretch lengths for the unheated
+         bands
 
-   J.H. Maindonald
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      J.H. Maindonald
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      mean(pair65$heated - pair65$ambient)
-      sd(pair65$heated - pair65$ambient)
+      ::
+
+         mean(pair65$heated - pair65$ambient)
+         sd(pair65$heated - pair65$ambient)

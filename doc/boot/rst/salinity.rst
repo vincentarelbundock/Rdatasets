@@ -1,62 +1,65 @@
 .. container::
 
-   ======== ===============
-   salinity R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Water Salinity and River Discharge
-      :name: salinity
+      ======== ===============
+      salinity R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Water Salinity and River Discharge
+         :name: water-salinity-and-river-discharge
 
-   The ``salinity`` data frame has 28 rows and 4 columns.
+      .. rubric:: Description
+         :name: description
 
-   Biweekly averages of the water salinity and river discharge in
-   Pamlico Sound, North Carolina were recorded between the years 1972
-   and 1977. The data in this set consists only of those measurements in
-   March, April and May.
+      The ``salinity`` data frame has 28 rows and 4 columns.
 
-   .. rubric:: Usage
-      :name: usage
+      Biweekly averages of the water salinity and river discharge in
+      Pamlico Sound, North Carolina were recorded between the years 1972
+      and 1977. The data in this set consists only of those measurements
+      in March, April and May.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      salinity
+      ::
 
-   .. rubric:: Format
-      :name: format
+         salinity
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``sal``
-      The average salinity of the water over two weeks.
+      This data frame contains the following columns:
 
-   ``lag``
-      The average salinity of the water lagged two weeks. Since only
-      spring is used, the value of ``lag`` is not always equal to the
-      previous value of ``sal``.
+      ``sal``
+         The average salinity of the water over two weeks.
 
-   ``trend``
-      A factor indicating in which of the 6 biweekly periods between
-      March and May, the observations were taken. The levels of the
-      factor are from 0 to 5 with 0 being the first two weeks in March.
+      ``lag``
+         The average salinity of the water lagged two weeks. Since only
+         spring is used, the value of ``lag`` is not always equal to the
+         previous value of ``sal``.
 
-   ``dis``
-      The amount of river discharge during the two weeks for which
-      ``sal`` is the average salinity.
+      ``trend``
+         A factor indicating in which of the 6 biweekly periods between
+         March and May, the observations were taken. The levels of the
+         factor are from 0 to 5 with 0 being the first two weeks in
+         March.
 
-   .. rubric:: Source
-      :name: source
+      ``dis``
+         The amount of river discharge during the two weeks for which
+         ``sal`` is the average salinity.
 
-   The data were obtained from
+      .. rubric:: Source
+         :name: source
 
-   Ruppert, D. and Carroll, R.J. (1980) Trimmed least squares estimation
-   in the linear model. *Journal of the American Statistical
-   Association*, **75**, 828–838.
+      The data were obtained from
 
-   .. rubric:: References
-      :name: references
+      Ruppert, D. and Carroll, R.J. (1980) Trimmed least squares
+      estimation in the linear model. *Journal of the American
+      Statistical Association*, **75**, 828–838.
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
+
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.

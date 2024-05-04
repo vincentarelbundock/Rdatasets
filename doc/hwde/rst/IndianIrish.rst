@@ -1,70 +1,72 @@
 .. container::
 
-   =========== ===============
-   IndianIrish R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Observed genotype frequencies at MN and S loci, for 2
-      populations
-      :name: IndianIrish
+      =========== ===============
+      IndianIrish R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Observed genotype frequencies at MN and S loci, for 2
+         populations
+         :name: observed-genotype-frequencies-at-mn-and-s-loci-for-2-populations
 
-   The ``IndianIrish`` data frame has 18 rows and 4 columns. The data
-   are genotype frequencies for two locations, for Xavante Indian and
-   Irish populations respectively
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``IndianIrish`` data frame has 18 rows and 4 columns. The data
+      are genotype frequencies for two locations, for Xavante Indian and
+      Irish populations respectively
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(IndianIrish)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(IndianIrish)
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Population
-      Factor with levels: ``Indian`` and ``Irish``
+      This data frame contains the following columns:
 
-   locus1
-      Factor with levels: ``MM``, ``MN`` and ``NN``
+      Population
+         Factor with levels: ``Indian`` and ``Irish``
 
-   locus2
-      Factor with levels: ``SS``, ``Ss`` and ``ss``
+      locus1
+         Factor with levels: ``MM``, ``MN`` and ``NN``
 
-   Observed
-      a numeric vector giving the frequency for each category of the
-      tale
+      locus2
+         Factor with levels: ``SS``, ``Ss`` and ``ss``
 
-   .. rubric:: Source
-      :name: source
+      Observed
+         a numeric vector giving the frequency for each category of the
+         tale
 
-   Mourant et al (1977) and Huttley and Wilson (2000).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Mourant et al (1977) and Huttley and Wilson (2000).
 
-   | 1. Huttley, G.A. and Wilson, S.R. 2000. Testing for concordant
-     equilibria between population samples. *Genetics* **156**,
-     2127-2135.
-   | 2. Mourant, A.E., Kopec, A.C. and Domaniewska-Sobczak, K. 1976.
-     *The Distribution of the Human Blood Groups and Other
-     Polymorphisms.* Oxford University Press.
-   | 3. Weir, B.S. 1996. *Genetic Data Analysis II.* Sinauer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      | 1. Huttley, G.A. and Wilson, S.R. 2000. Testing for concordant
+        equilibria between population samples. *Genetics* **156**,
+        2127-2135.
+      | 2. Mourant, A.E., Kopec, A.C. and Domaniewska-Sobczak, K. 1976.
+        *The Distribution of the Human Blood Groups and Other
+        Polymorphisms.* Oxford University Press.
+      | 3. Weir, B.S. 1996. *Genetic Data Analysis II.* Sinauer.
 
-   ``hwde``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``hwde``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(IndianIrish)
-      hwde(data=IndianIrish)
+      ::
+
+         data(IndianIrish)
+         hwde(data=IndianIrish)

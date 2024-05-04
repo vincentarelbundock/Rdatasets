@@ -1,47 +1,49 @@
 .. container::
 
-   ===== ===============
-   Fitch R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Body Measurements of Mammal Species
-      :name: Fitch
+      ===== ===============
+      Fitch R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Body Measurements of Mammal Species
+         :name: body-measurements-of-mammal-species
 
-   Body measurements for a sample of 28 mammal species from a Fitch
-   paper on acoustic allometry
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Body measurements for a sample of 28 mammal species from a Fitch
+      paper on acoustic allometry
 
-   A data frame with 28 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Species``
-      species of mammal
+      A data frame with 28 observations on the following 5 variables.
 
-   ``Order``
-      Order (``Carnivora`` or ``Primates``)
+      ``Species``
+         species of mammal
 
-   ``Wt``
-      Body weight (in kg)
+      ``Order``
+         Order (``Carnivora`` or ``Primates``)
 
-   ``Skull``
-      Skull length (in cm)
+      ``Wt``
+         Body weight (in kg)
 
-   ``Palate``
-      Palate length (in cm)
+      ``Skull``
+         Skull length (in cm)
 
-   .. rubric:: Details
-      :name: details
+      ``Palate``
+         Palate length (in cm)
 
-   Data on mammal species from a Zoology paper about acoustic allometry
-   by W. Tecumseh Fitch.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Data on mammal species from a Zoology paper about acoustic
+      allometry by W. Tecumseh Fitch.
 
-   Fitch, W. Tecumseh (2000), "Skull dimensions in relation to body size
-   in nonhuman mammals: The causal bases for acoustic allometry,"
-   Zoology, 103, 40-58.
+      .. rubric:: Source
+         :name: source
+
+      Fitch, W. Tecumseh (2000), "Skull dimensions in relation to body
+      size in nonhuman mammals: The causal bases for acoustic
+      allometry," Zoology, 103, 40-58.

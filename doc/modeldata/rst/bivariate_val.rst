@@ -1,39 +1,41 @@
 .. container::
 
-   ========= ===============
-   bivariate R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Example bivariate classification data
-      :name: bivariate
+      ========= ===============
+      bivariate R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Example bivariate classification data
+         :name: example-bivariate-classification-data
 
-   Example bivariate classification data
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      Example bivariate classification data
 
-   These data are a simplified version of the segmentation data
-   contained in ``caret``. There are three columns: ``A`` and ``B`` are
-   predictors and the column ``Class`` is a factor with levels "One" and
-   "Two". There are three data sets: one for training (n = 1009),
-   validation (n = 300), and testing (n = 710).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Value
-      :name: value
+      These data are a simplified version of the segmentation data
+      contained in ``caret``. There are three columns: ``A`` and ``B``
+      are predictors and the column ``Class`` is a factor with levels
+      "One" and "Two". There are three data sets: one for training (n =
+      1009), validation (n = 300), and testing (n = 710).
 
-   ========================================================== =======
-   ``bivariate_train``, ``bivariate_test``, ``bivariate_val`` tibbles
-   ========================================================== =======
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Examples
-      :name: examples
+      ========================================================== =======
+      ``bivariate_train``, ``bivariate_test``, ``bivariate_val`` tibbles
+      ========================================================== =======
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(bivariate)
-      str(bivariate_train)
-      str(bivariate_val)
-      str(bivariate_test)
+      ::
+
+         data(bivariate)
+         str(bivariate_train)
+         str(bivariate_val)
+         str(bivariate_test)

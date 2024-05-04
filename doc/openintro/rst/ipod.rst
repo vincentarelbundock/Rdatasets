@@ -1,43 +1,45 @@
 .. container::
 
-   ==== ===============
-   ipod R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Length of songs on an iPod
-      :name: ipod
+      ==== ===============
+      ipod R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Length of songs on an iPod
+         :name: length-of-songs-on-an-ipod
 
-   A simulated data set on lengths of songs on an iPod.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A simulated data set on lengths of songs on an iPod.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      ipod
+      ::
 
-   .. rubric:: Format
-      :name: format
+         ipod
 
-   A data frame with 3000 observations on the following variable.
+      .. rubric:: Format
+         :name: format
 
-   song_length
-      Length of song (in minutes).
+      A data frame with 3000 observations on the following variable.
 
-   .. rubric:: Source
-      :name: source
+      song_length
+         Length of song (in minutes).
 
-   Simulated data.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Simulated data.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(ipod, aes(x = song_length)) +
-        geom_histogram(binwidth = 0.5)
+         library(ggplot2)
+
+         ggplot(ipod, aes(x = song_length)) +
+           geom_histogram(binwidth = 0.5)

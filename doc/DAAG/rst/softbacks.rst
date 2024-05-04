@@ -1,47 +1,49 @@
 .. container::
 
-   ========= ===============
-   softbacks R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Measurements on a Selection of Paperback Books
-      :name: softbacks
+      ========= ===============
+      softbacks R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Measurements on a Selection of Paperback Books
+         :name: measurements-on-a-selection-of-paperback-books
 
-   This is a subset of the ``allbacks`` data frame which gives
-   measurements on the volume and weight of 8 paperback books.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This is a subset of the ``allbacks`` data frame which gives
+      measurements on the volume and weight of 8 paperback books.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      softbacks
+      ::
 
-   .. rubric:: Format
-      :name: format
+         softbacks
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   volume
-      a numeric vector giving the book volumes in cubic centimeters
+      This data frame contains the following columns:
 
-   weight
-      a numeric vector giving the weights in grams
+      volume
+         a numeric vector giving the book volumes in cubic centimeters
 
-   .. rubric:: Source
-      :name: source
+      weight
+         a numeric vector giving the weights in grams
 
-   The bookshelf of J. H. Maindonald.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      The bookshelf of J. H. Maindonald.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      print("Outliers in Simple Regression - Example 5.2")
-      paperback.lm <- lm(weight ~ volume, data=softbacks)
-      summary(paperback.lm)
-      plot(paperback.lm)
+      ::
+
+         print("Outliers in Simple Regression - Example 5.2")
+         paperback.lm <- lm(weight ~ volume, data=softbacks)
+         summary(paperback.lm)
+         plot(paperback.lm)

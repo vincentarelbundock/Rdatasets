@@ -1,62 +1,64 @@
 .. container::
 
-   ========= ===============
-   movielens R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Movie ratings
-      :name: movielens
+      ========= ===============
+      movielens R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Movie ratings
+         :name: movie-ratings
 
-   MovieLens Latest Dataset (Small)
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      MovieLens Latest Dataset (Small)
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      movielens
+      ::
 
-   .. rubric:: Format
-      :name: format
+         movielens
 
-   Two object of class ``data.frame``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      Two object of class ``data.frame``.
 
-   -  movieId. Unique ID for the movie.
+      .. rubric:: Details
+         :name: details
 
-   -  title. Movie title (not unique).
+      -  movieId. Unique ID for the movie.
 
-   -  year. Year the movie was released.
+      -  title. Movie title (not unique).
 
-   -  genres. Genres associated with the movie.
+      -  year. Year the movie was released.
 
-   -  userId. Unique ID for the user.
+      -  genres. Genres associated with the movie.
 
-   -  rating. A rating between 0 and 5 for the movie.
+      -  userId. Unique ID for the user.
 
-   -  timestamp. Date and time the rating was given.
+      -  rating. A rating between 0 and 5 for the movie.
 
-   .. rubric:: Source
-      :name: source
+      -  timestamp. Date and time the rating was given.
 
-   https://files.grouplens.org/datasets/movielens/ml-latest-small.zip
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      https://files.grouplens.org/datasets/movielens/ml-latest-small.zip
 
-   F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens
-   Datasets: History and Context. ACM Transactions on Interactive
-   Intelligent Systems (TiiS) 5, 4, Article 19 (December 2015), 19
-   pages. DOI=https://dx.doi.org/10.1145/2827872
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens
+      Datasets: History and Context. ACM Transactions on Interactive
+      Intelligent Systems (TiiS) 5, 4, Article 19 (December 2015), 19
+      pages. DOI=https://dx.doi.org/10.1145/2827872
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      head(movielens)
+      ::
+
+         head(movielens)

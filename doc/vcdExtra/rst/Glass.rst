@@ -1,96 +1,98 @@
 .. container::
 
-   ===== ===============
-   Glass R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: British Social Mobility from Glass(1954)
-      :name: Glass
+      ===== ===============
+      Glass R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: British Social Mobility from Glass(1954)
+         :name: british-social-mobility-from-glass1954
 
-   Glass(1954) gave this 5 x 5 table on the occupations of 3500 British
-   fathers and their sons.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Glass(1954) gave this 5 x 5 table on the occupations of 3500
+      British fathers and their sons.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Glass")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Glass")
 
-   A frequency data frame with 25 observations on the following 3
-   variables representing a 5 x 5 table with 3500 cases.
+      .. rubric:: Format
+         :name: format
 
-   ``father``
-      a factor with levels ``Managerial`` ``Professional`` ``Skilled``
-      ``Supervisory`` ``Unskilled``
+      A frequency data frame with 25 observations on the following 3
+      variables representing a 5 x 5 table with 3500 cases.
 
-   ``son``
-      a factor with levels ``Managerial`` ``Professional`` ``Skilled``
-      ``Supervisory`` ``Unskilled``
+      ``father``
+         a factor with levels ``Managerial`` ``Professional``
+         ``Skilled`` ``Supervisory`` ``Unskilled``
 
-   ``Freq``
-      a numeric vector
+      ``son``
+         a factor with levels ``Managerial`` ``Professional``
+         ``Skilled`` ``Supervisory`` ``Unskilled``
 
-   .. rubric:: Details
-      :name: details
+      ``Freq``
+         a numeric vector
 
-   The occupational categories in order of status are: (1) Professional
-   & High Administrative (2) Managerial, Executive & High Supervisory
-   (3) Low Inspectional & Supervisory (4) Routine Nonmanual & Skilled
-   Manual (5) Semi- & Unskilled Manual
+      .. rubric:: Details
+         :name: details
 
-   However, to make the point that factors are ordered alphabetically by
-   default, Friendly & Meyer (2016) introduce this data set in the form
-   given here.
+      The occupational categories in order of status are: (1)
+      Professional & High Administrative (2) Managerial, Executive &
+      High Supervisory (3) Low Inspectional & Supervisory (4) Routine
+      Nonmanual & Skilled Manual (5) Semi- & Unskilled Manual
 
-   .. rubric:: Source
-      :name: source
+      However, to make the point that factors are ordered alphabetically
+      by default, Friendly & Meyer (2016) introduce this data set in the
+      form given here.
 
-   Glass, D. V. (1954), *Social Mobility in Britain*. The Free Press.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Glass, D. V. (1954), *Social Mobility in Britain*. The Free Press.
 
-   Bishop, Y. M. M. and Fienberg, S. E. and Holland, P. W. (1975).
-   *Discrete Multivariate Analysis: Theory and Practice*, MIT Press.
+      .. rubric:: References
+         :name: references
 
-   Friendly, M. and Meyer, D. (2016). *Discrete Data Analysis with R:
-   Visualization and Modeling Techniques for Categorical and Count
-   Data*. Boca Raton, FL: Chapman & Hall/CRC. http://ddar.datavis.ca.
+      Bishop, Y. M. M. and Fienberg, S. E. and Holland, P. W. (1975).
+      *Discrete Multivariate Analysis: Theory and Practice*, MIT Press.
 
-   .. rubric:: Examples
-      :name: examples
+      Friendly, M. and Meyer, D. (2016). *Discrete Data Analysis with R:
+      Visualization and Modeling Techniques for Categorical and Count
+      Data*. Boca Raton, FL: Chapman & Hall/CRC. http://ddar.datavis.ca.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Glass)
-      glass.tab <- xtabs(Freq ~ father + son, data=Glass)
+      ::
 
-      largs <- list(set_varnames=list(father="Father's Occupation", 
-                                      son="Son's Occupation"),
-                    abbreviate=10)
-      gargs <- list(interpolate=c(1,2,4,8))
+         data(Glass)
+         glass.tab <- xtabs(Freq ~ father + son, data=Glass)
 
-      mosaic(glass.tab, 
-        shade=TRUE, 
-        labeling_args=largs, 
-        gp_args=gargs,
-        main="Alphabetic order", 
-        legend=FALSE, 
-        rot_labels=c(20,90,0,70))
+         largs <- list(set_varnames=list(father="Father's Occupation", 
+                                         son="Son's Occupation"),
+                       abbreviate=10)
+         gargs <- list(interpolate=c(1,2,4,8))
 
-      # reorder by status
-      ord <- c(2, 1, 4, 3, 5) 
-      mosaic(glass.tab[ord, ord], 
-        shade=TRUE, 
-        labeling_args=largs,  
-        gp_args=gargs,
-        main="Effect order", 
-        legend=FALSE, 
-        rot_labels=c(20,90,0,70))
+         mosaic(glass.tab, 
+           shade=TRUE, 
+           labeling_args=largs, 
+           gp_args=gargs,
+           main="Alphabetic order", 
+           legend=FALSE, 
+           rot_labels=c(20,90,0,70))
+
+         # reorder by status
+         ord <- c(2, 1, 4, 3, 5) 
+         mosaic(glass.tab[ord, ord], 
+           shade=TRUE, 
+           labeling_args=largs,  
+           gp_args=gargs,
+           main="Effect order", 
+           legend=FALSE, 
+           rot_labels=c(20,90,0,70))

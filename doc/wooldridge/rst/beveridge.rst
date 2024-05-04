@@ -1,58 +1,60 @@
 .. container::
 
-   ========= ===============
-   beveridge R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: beveridge
-      :name: beveridge
+      ========= ===============
+      beveridge R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: beveridge
+         :name: beveridge
 
-   Wooldridge Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('beveridge')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('beveridge')
 
-   A data.frame with 135 observations on 8 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **month:** dec 200 through feb 2012
+      A data.frame with 135 observations on 8 variables:
 
-   -  **urate:** unemployment rate, percent
+      -  **month:** dec 200 through feb 2012
 
-   -  **vrate:** vacancy rate, percent
+      -  **urate:** unemployment rate, percent
 
-   -  **t:** linear time trend
+      -  **vrate:** vacancy rate, percent
 
-   -  **urate_1:** L.urate
+      -  **t:** linear time trend
 
-   -  **vrate_1:** L.vrate
+      -  **urate_1:** L.urate
 
-   -  **curate:** D.urate
+      -  **vrate_1:** L.vrate
 
-   -  **cvrate:** D.vrate
+      -  **curate:** D.urate
 
-   .. rubric:: 
-      :name: section
+      -  **cvrate:** D.vrate
 
-   NA
+      .. rubric:: 
+         :name: section
 
-   .. rubric:: Source
-      :name: source
+      NA
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(beveridge)
+      ::
+
+          str(beveridge)

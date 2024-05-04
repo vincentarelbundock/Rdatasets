@@ -1,72 +1,74 @@
 .. container::
 
-   ============ ===============
-   HairEyePlace R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Hair Color and Eye Color in Caithness and Aberdeen
-      :name: HairEyePlace
+      ============ ===============
+      HairEyePlace R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Hair Color and Eye Color in Caithness and Aberdeen
+         :name: hair-color-and-eye-color-in-caithness-and-aberdeen
 
-   A three-way frequency table crossing eye color and hair color in two
-   places, Caithness and Aberdeen, Scotland. These data were of interest
-   to Fisher (1940) and others because there are mixtures of people of
-   Nordic, Celtic and Anglo-Saxon origin.
+      .. rubric:: Description
+         :name: description
 
-   One or both tables have been widely analyzed in conjunction with RC
-   and canonical correlation models for categorical data, e.g., Becker
-   and Clogg (1989).
+      A three-way frequency table crossing eye color and hair color in
+      two places, Caithness and Aberdeen, Scotland. These data were of
+      interest to Fisher (1940) and others because there are mixtures of
+      people of Nordic, Celtic and Anglo-Saxon origin.
 
-   .. rubric:: Usage
-      :name: usage
+      One or both tables have been widely analyzed in conjunction with
+      RC and canonical correlation models for categorical data, e.g.,
+      Becker and Clogg (1989).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(HairEyePlace)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(HairEyePlace)
 
-   The format is: num [1:4, 1:5, 1:2] 326 688 343 98 38 116 84 48 241
-   584 ... - attr(\*, "dimnames")=List of 3 ..$ Eye : chr [1:4] "Blue"
-   "Light" "Medium" "Dark" ..$ Hair : chr [1:5] "Fair" "Red" "Medium"
-   "Dark" ... ..$ Place: chr [1:2] "Caithness" "Aberdeen"
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      The format is: num [1:4, 1:5, 1:2] 326 688 343 98 38 116 84 48 241
+      584 ... - attr(*, "dimnames")=List of 3 ..$ Eye : chr [1:4] "Blue"
+      "Light" "Medium" "Dark" ..$ Hair : chr [1:5] "Fair" "Red" "Medium"
+      "Dark" ... ..$ Place: chr [1:2] "Caithness" "Aberdeen"
 
-   The hair and eye colors are ordered as in the original source,
-   suggesting that they form ordered categories.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The hair and eye colors are ordered as in the original source,
+      suggesting that they form ordered categories.
 
-   This data was taken from the ``colors`` data in logmult.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      This data was taken from the ``colors`` data in logmult.
 
-   Becker, M. P., and Clogg, C. C. (1989). Analysis of Sets of Two-Way
-   Contingency Tables Using Association Models. *Journal of the American
-   Statistical Association*, 84(405), 142-151.
+      .. rubric:: References
+         :name: references
 
-   Fisher, R.A. (1940) The precision of discriminant functions. *Annals
-   of Eugenics*, 10, 422-429.
+      Becker, M. P., and Clogg, C. C. (1989). Analysis of Sets of
+      Two-Way Contingency Tables Using Association Models. *Journal of
+      the American Statistical Association*, 84(405), 142-151.
 
-   .. rubric:: Examples
-      :name: examples
+      Fisher, R.A. (1940) The precision of discriminant functions.
+      *Annals of Eugenics*, 10, 422-429.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(HairEyePlace)
+      ::
 
-      # separate mosaics
-      mosaic(HairEyePlace[,,1], shade=TRUE, main="Caithness")
-      mosaic(HairEyePlace[,,2], shade=TRUE, main="Aberdeen")
+         data(HairEyePlace)
 
-      # condition on Place
-      mosaic(~Hair + Eye |Place, data=HairEyePlace, shade=TRUE, legend=FALSE)
+         # separate mosaics
+         mosaic(HairEyePlace[,,1], shade=TRUE, main="Caithness")
+         mosaic(HairEyePlace[,,2], shade=TRUE, main="Aberdeen")
 
-      cotabplot(~Hair+Eye|Place, data=HairEyePlace, shade=TRUE, legend=FALSE)
+         # condition on Place
+         mosaic(~Hair + Eye |Place, data=HairEyePlace, shade=TRUE, legend=FALSE)
+
+         cotabplot(~Hair+Eye|Place, data=HairEyePlace, shade=TRUE, legend=FALSE)

@@ -1,58 +1,60 @@
 .. container::
 
-   ======== ===============
-   phillips R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: phillips
-      :name: phillips
+      ======== ===============
+      phillips R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: phillips
+         :name: phillips
 
-   Wooldridge Source: Economic Report of the President, 2004, Tables
-   B-42 and B-64. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Economic Report of the President, 2004, Tables
+      B-42 and B-64. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('phillips')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('phillips')
 
-   A data.frame with 56 observations on 7 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1948 through 2003
+      A data.frame with 56 observations on 7 variables:
 
-   -  **unem:** civilian unemployment rate, percent
+      -  **year:** 1948 through 2003
 
-   -  **inf:** percentage change in CPI
+      -  **unem:** civilian unemployment rate, percent
 
-   -  **inf_1:** inf[\_n-1]
+      -  **inf:** percentage change in CPI
 
-   -  **unem_1:** unem[\_n-1]
+      -  **inf_1:** inf[_n-1]
 
-   -  **cinf:** inf - inf_1
+      -  **unem_1:** unem[_n-1]
 
-   -  **cunem:** unem - unem_1
+      -  **cinf:** inf - inf_1
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **cunem:** unem - unem_1
 
-   pages 355-356, 379, 390-391, 408, 409, 409, 418, 428, 443, 548-549,
-   642, 656, 659, 662, 672, 817.
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 355-356, 379, 390-391, 408, 409, 409, 418, 428, 443,
+      548-549, 642, 656, 659, 662, 672, 817.
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(phillips)
+      ::
+
+          str(phillips)

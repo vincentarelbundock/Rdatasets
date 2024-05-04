@@ -1,61 +1,65 @@
 .. container::
 
-   ===== ===============
-   engel R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Engel Data
-      :name: engel
+      ===== ===============
+      engel R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Engel Data
+         :name: engel-data
 
-   Engel food expenditure data used in Koenker and Bassett(1982). This
-   is a regression data set consisting of 235 observations on income and
-   expenditure on food for Belgian working class households.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Engel food expenditure data used in Koenker and Bassett(1982).
+      This is a regression data set consisting of 235 observations on
+      income and expenditure on food for Belgian working class
+      households.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(engel)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(engel)
 
-   A data frame containing 235 observations on 2 variables
+      .. rubric:: Format
+         :name: format
 
-   income
-      annual household income in Belgian francs
+      A data frame containing 235 observations on 2 variables
 
-   foodexp
-      annual household food expenditure in Belgian francs
+      income
+         annual household income in Belgian francs
 
-   .. rubric:: References
-      :name: references
+      foodexp
+         annual household food expenditure in Belgian francs
 
-   Koenker, R. and Bassett, G (1982) Robust Tests of Heteroscedasticity
-   based on Regression Quantiles; *Econometrica* **50**, 43–61.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Koenker, R. and Bassett, G (1982) Robust Tests of
+      Heteroscedasticity based on Regression Quantiles; *Econometrica*
+      **50**, 43–61.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## See also    demo("engel1")
-      ##             --------------
+      ::
 
-      data(engel)
-      plot(engel, log = "xy",
-           main = "'engel' data  (log - log scale)")
-      plot(log10(foodexp) ~ log10(income), data = engel,
-           main = "'engel' data  (log10 - transformed)")
-      taus <- c(.15, .25, .50, .75, .95, .99)
-      rqs <- as.list(taus)
-      for(i in seq(along = taus)) {
-        rqs[[i]] <- rq(log10(foodexp) ~ log10(income), tau = taus[i], data = engel)
-        lines(log10(engel$income), fitted(rqs[[i]]), col = i+1)
-      }
-      legend("bottomright", paste("tau = ", taus), inset = .04,
-             col = 2:(length(taus)+1), lty=1)
+         ## See also    demo("engel1")
+         ##             --------------
+
+         data(engel)
+         plot(engel, log = "xy",
+              main = "'engel' data  (log - log scale)")
+         plot(log10(foodexp) ~ log10(income), data = engel,
+              main = "'engel' data  (log10 - transformed)")
+         taus <- c(.15, .25, .50, .75, .95, .99)
+         rqs <- as.list(taus)
+         for(i in seq(along = taus)) {
+           rqs[[i]] <- rq(log10(foodexp) ~ log10(income), tau = taus[i], data = engel)
+           lines(log10(engel$income), fitted(rqs[[i]]), col = i+1)
+         }
+         legend("bottomright", paste("tau = ", taus), inset = .04,
+                col = 2:(length(taus)+1), lty=1)

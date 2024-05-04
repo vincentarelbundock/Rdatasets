@@ -1,57 +1,59 @@
 .. container::
 
-   ====== ===============
-   Wages1 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Wages, Experience and Schooling
-      :name: Wages1
+      ====== ===============
+      Wages1 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Wages, Experience and Schooling
+         :name: wages-experience-and-schooling
 
-   a panel of 595 observations from 1976 to 1982
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 3294
+      a panel of 595 observations from 1976 to 1982
 
-   *observation* : individuals
+      *number of observations* : 3294
 
-   *country* : United States
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Wages1)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Wages1)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   exper
-      experience in years
+      A time series containing :
 
-   sex
-      a factor with levels (male,female)
+      exper
+         experience in years
 
-   school
-      years of schooling
+      sex
+         a factor with levels (male,female)
 
-   wage
-      wage (in 1980 $) per hour
+      school
+         years of schooling
 
-   .. rubric:: References
-      :name: references
+      wage
+         wage (in 1980 $) per hour
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

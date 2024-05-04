@@ -1,158 +1,164 @@
 .. container::
 
-   =========== ===============
-   ResumeNames R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Are Emily and Greg More Employable Than Lakisha and
-      Jamal?
-      :name: ResumeNames
+      =========== ===============
+      ResumeNames R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Are Emily and Greg More Employable Than Lakisha and
+         Jamal?
+         :name: are-emily-and-greg-more-employable-than-lakisha-and-jamal
 
-   Cross-section data about resume, call-back and employer information
-   for 4,870 fictitious resumes.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-section data about resume, call-back and employer
+      information for 4,870 fictitious resumes.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("ResumeNames")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("ResumeNames")
 
-   A data frame containing 4,870 observations on 27 variables.
+      .. rubric:: Format
+         :name: format
 
-   name
-      factor indicating applicant's first name.
+      A data frame containing 4,870 observations on 27 variables.
 
-   gender
-      factor indicating gender.
+      name
+         factor indicating applicant's first name.
 
-   ethnicity
-      factor indicating ethnicity (i.e., Caucasian-sounding vs.
-      African-American sounding first name).
+      gender
+         factor indicating gender.
 
-   quality
-      factor indicating quality of resume.
+      ethnicity
+         factor indicating ethnicity (i.e., Caucasian-sounding vs.
+         African-American sounding first name).
 
-   call
-      factor. Was the applicant called back?
+      quality
+         factor indicating quality of resume.
 
-   city
-      factor indicating city: Boston or Chicago.
+      call
+         factor. Was the applicant called back?
 
-   jobs
-      number of jobs listed on resume.
+      city
+         factor indicating city: Boston or Chicago.
 
-   experience
-      number of years of work experience on the resume.
+      jobs
+         number of jobs listed on resume.
 
-   honors
-      factor. Did the resume mention some honors?
+      experience
+         number of years of work experience on the resume.
 
-   volunteer
-      factor. Did the resume mention some volunteering experience?
+      honors
+         factor. Did the resume mention some honors?
 
-   military
-      factor. Does the applicant have military experience?
+      volunteer
+         factor. Did the resume mention some volunteering experience?
 
-   holes
-      factor. Does the resume have some employment holes?
+      military
+         factor. Does the applicant have military experience?
 
-   school
-      factor. Does the resume mention some work experience while at
-      school?
+      holes
+         factor. Does the resume have some employment holes?
 
-   email
-      factor. Was the e-mail address on the applicant's resume?
+      school
+         factor. Does the resume mention some work experience while at
+         school?
 
-   computer
-      factor. Does the resume mention some computer skills?
+      email
+         factor. Was the e-mail address on the applicant's resume?
 
-   special
-      factor. Does the resume mention some special skills?
+      computer
+         factor. Does the resume mention some computer skills?
 
-   college
-      factor. Does the applicant have a college degree or more?
+      special
+         factor. Does the resume mention some special skills?
 
-   minimum
-      factor indicating minimum experience requirement of the employer.
+      college
+         factor. Does the applicant have a college degree or more?
 
-   equal
-      factor. Is the employer EOE (equal opportunity employment)?
+      minimum
+         factor indicating minimum experience requirement of the
+         employer.
 
-   wanted
-      factor indicating type of position wanted by employer.
+      equal
+         factor. Is the employer EOE (equal opportunity employment)?
 
-   requirements
-      factor. Does the ad mention some requirement for the job?
+      wanted
+         factor indicating type of position wanted by employer.
 
-   reqexp
-      factor. Does the ad mention some experience requirement?
+      requirements
+         factor. Does the ad mention some requirement for the job?
 
-   reqcomm
-      factor. Does the ad mention some communication skills requirement?
+      reqexp
+         factor. Does the ad mention some experience requirement?
 
-   reqeduc
-      factor. Does the ad mention some educational requirement?
+      reqcomm
+         factor. Does the ad mention some communication skills
+         requirement?
 
-   reqcomp
-      factor. Does the ad mention some computer skills requirement?
+      reqeduc
+         factor. Does the ad mention some educational requirement?
 
-   reqorg
-      factor. Does the ad mention some organizational skills
-      requirement?
+      reqcomp
+         factor. Does the ad mention some computer skills requirement?
 
-   industry
-      factor indicating type of employer industry.
+      reqorg
+         factor. Does the ad mention some organizational skills
+         requirement?
 
-   .. rubric:: Details
-      :name: details
+      industry
+         factor indicating type of employer industry.
 
-   Cross-section data about resume, call-back and employer information
-   for 4,870 fictitious resumes sent in response to employment
-   advertisements in Chicago and Boston in 2001, in a randomized
-   controlled experiment conducted by Bertrand and Mullainathan (2004).
-   The resumes contained information concerning the ethnicity of the
-   applicant. Because ethnicity is not typically included on a resume,
-   resumes were differentiated on the basis of so-called “Caucasian
-   sounding names” (such as Emily Walsh or Gregory Baker) and “African
-   American sounding names” (such as Lakisha Washington or Jamal Jones).
-   A large collection of fictitious resumes were created and the
-   pre-supposed ethnicity (based on the sound of the name) was randomly
-   assigned to each resume. These resumes were sent to prospective
-   employers to see which resumes generated a phone call from the
-   prospective employer.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Cross-section data about resume, call-back and employer
+      information for 4,870 fictitious resumes sent in response to
+      employment advertisements in Chicago and Boston in 2001, in a
+      randomized controlled experiment conducted by Bertrand and
+      Mullainathan (2004). The resumes contained information concerning
+      the ethnicity of the applicant. Because ethnicity is not typically
+      included on a resume, resumes were differentiated on the basis of
+      so-called “Caucasian sounding names” (such as Emily Walsh or
+      Gregory Baker) and “African American sounding names” (such as
+      Lakisha Washington or Jamal Jones). A large collection of
+      fictitious resumes were created and the pre-supposed ethnicity
+      (based on the sound of the name) was randomly assigned to each
+      resume. These resumes were sent to prospective employers to see
+      which resumes generated a phone call from the prospective
+      employer.
 
-   Online complements to Stock and Watson (2007).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Stock and Watson (2007).
 
-   Bertrand, M. and Mullainathan, S. (2004). Are Emily and Greg More
-   Employable Than Lakisha and Jamal? A Field Experiment on Labor Market
-   Discrimination. *American Economic Review*, **94**, 991–1013.
+      .. rubric:: References
+         :name: references
 
-   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
-   2nd ed. Boston: Addison Wesley.
+      Bertrand, M. and Mullainathan, S. (2004). Are Emily and Greg More
+      Employable Than Lakisha and Jamal? A Field Experiment on Labor
+      Market Discrimination. *American Economic Review*, **94**,
+      991–1013.
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, J.H. and Watson, M.W. (2007). *Introduction to
+      Econometrics*, 2nd ed. Boston: Addison Wesley.
 
-   ``StockWatson2007``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``StockWatson2007``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("ResumeNames")
-      summary(ResumeNames)
-      prop.table(xtabs(~ ethnicity + call, data = ResumeNames), 1)
+      ::
+
+         data("ResumeNames")
+         summary(ResumeNames)
+         prop.table(xtabs(~ ethnicity + call, data = ResumeNames), 1)

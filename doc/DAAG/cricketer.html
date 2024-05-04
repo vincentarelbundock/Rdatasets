@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>cricketer</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='cricketer'>Lifespans of UK 1st class cricketers born 1840-1960</h2>
+<h2>Lifespans of UK 1st class cricketers born 1840-1960</h2>
 
 <h3>Description</h3>
 
@@ -115,6 +115,7 @@ cricketer$notacdDead &lt;- with(cricketer, {dead[acd==1]&lt;-0; dead})
 summary(coxph(Surv(life, notacdDead) ~ ns(year,2) +left, data=cricketer))
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

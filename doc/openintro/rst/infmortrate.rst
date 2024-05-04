@@ -1,58 +1,60 @@
 .. container::
 
-   =========== ===============
-   infmortrate R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Infant Mortality Rates, 2012
-      :name: infmortrate
+      =========== ===============
+      infmortrate R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Infant Mortality Rates, 2012
+         :name: infant-mortality-rates-2012
 
-   This entry gives the number of deaths of infants under one year old
-   in 2012 per 1,000 live births in the same year. This rate is often
-   used as an indicator of the level of health in a country.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This entry gives the number of deaths of infants under one year
+      old in 2012 per 1,000 live births in the same year. This rate is
+      often used as an indicator of the level of health in a country.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      infmortrate
+      ::
 
-   .. rubric:: Format
-      :name: format
+         infmortrate
 
-   A data frame with 222 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   country
-      Name of country.
+      A data frame with 222 observations on the following 2 variables.
 
-   inf_mort_rate
-      Infant mortality rate per 1,000 live births.
+      country
+         Name of country.
 
-   .. rubric:: Details
-      :name: details
+      inf_mort_rate
+         Infant mortality rate per 1,000 live births.
 
-   The data is given in decreasing order of infant mortality rates.
-   There are a few potential outliers.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The data is given in decreasing order of infant mortality rates.
+      There are a few potential outliers.
 
-   CIA World Factbook,
-   https://www.cia.gov/the-world-factbook/field/infant-mortality-rate/country-comparison.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      CIA World Factbook,
+      https://www.cia.gov/the-world-factbook/field/infant-mortality-rate/country-comparison.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(infmortrate, aes(x = inf_mort_rate)) +
-        geom_histogram(binwidth = 10)
+         library(ggplot2)
 
-      ggplot(infmortrate, aes(x = inf_mort_rate)) +
-        geom_density()
+         ggplot(infmortrate, aes(x = inf_mort_rate)) +
+           geom_histogram(binwidth = 10)
+
+         ggplot(infmortrate, aes(x = inf_mort_rate)) +
+           geom_density()

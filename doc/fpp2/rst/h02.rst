@@ -1,35 +1,37 @@
 .. container::
 
-   === ===============
-   h02 R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Monthly corticosteroid drug subsidy in Australia from
-      1991 to 2008.
-      :name: h02
+      === ===============
+      h02 R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Monthly corticosteroid drug subsidy in Australia from
+         1991 to 2008.
+         :name: monthly-corticosteroid-drug-subsidy-in-australia-from-1991-to-2008.
 
-   Monthly government expenditure (millions of dollars) as part of the
-   Pharmaceutical Benefit Scheme for products falling under ATC code H02
-   as recorded by the Australian Health Insurance Commission. July 1991
-   - June 2008.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Monthly government expenditure (millions of dollars) as part of
+      the Pharmaceutical Benefit Scheme for products falling under ATC
+      code H02 as recorded by the Australian Health Insurance
+      Commission. July 1991 - June 2008.
 
-   Monthly time series of class ``ts``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Monthly time series of class ``ts``.
 
-   Medicare Australia
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Medicare Australia
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      autoplot(h02)
-      ggseasonplot(h02)
+      ::
+
+         autoplot(h02)
+         ggseasonplot(h02)

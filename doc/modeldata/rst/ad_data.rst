@@ -1,65 +1,68 @@
 .. container::
 
-   ======= ===============
-   ad_data R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Alzheimer's disease data
-      :name: ad_data
+      ======= ===============
+      ad_data R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Alzheimer's disease data
+         :name: alzheimers-disease-data
 
-   Alzheimer's disease data
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      Alzheimer's disease data
 
-   Craig-Schapiro et al. (2011) describe a clinical study of 333
-   patients, including some with mild (but well-characterized) cognitive
-   impairment as well as healthy individuals. CSF samples were taken
-   from all subjects. The goal of the study was to determine if subjects
-   in the early states of impairment could be differentiated from
-   cognitively healthy individuals. Data collected on each subject
-   included:
+      .. rubric:: Details
+         :name: details
 
-   -  Demographic characteristics such as age and gender
+      Craig-Schapiro et al. (2011) describe a clinical study of 333
+      patients, including some with mild (but well-characterized)
+      cognitive impairment as well as healthy individuals. CSF samples
+      were taken from all subjects. The goal of the study was to
+      determine if subjects in the early states of impairment could be
+      differentiated from cognitively healthy individuals. Data
+      collected on each subject included:
 
-   -  Apolipoprotein E genotype
+      -  Demographic characteristics such as age and gender
 
-   -  Protein measurements of Abeta, Tau, and a phosphorylated version
-      of Tau (called pTau)
+      -  Apolipoprotein E genotype
 
-   -  Proteinmeasurements of 124 exploratory biomarkers, and
+      -  Protein measurements of Abeta, Tau, and a phosphorylated
+         version of Tau (called pTau)
 
-   -  Clinical dementia scores
+      -  Proteinmeasurements of 124 exploratory biomarkers, and
 
-   For these analyses, we have converted the scores to two classes:
-   impaired and healthy. The goal of this analysis is to create
-   classification models using the demographic and assay data to predict
-   which patients have early stages of disease.
+      -  Clinical dementia scores
 
-   .. rubric:: Value
-      :name: value
+      For these analyses, we have converted the scores to two classes:
+      impaired and healthy. The goal of this analysis is to create
+      classification models using the demographic and assay data to
+      predict which patients have early stages of disease.
 
-   =========== ========
-   ``ad_data`` a tibble
-   =========== ========
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      =========== ========
+      ``ad_data`` a tibble
+      =========== ========
 
-   Kuhn, M., Johnson, K. (2013) *Applied Predictive Modeling*, Springer.
+      .. rubric:: Source
+         :name: source
 
-   Craig-Schapiro R, Kuhn M, Xiong C, Pickering EH, Liu J, Misko TP, et
-   al. (2011) Multiplexed Immunoassay Panel Identifies Novel CSF
-   Biomarkers for Alzheimer's Disease Diagnosis and Prognosis. PLoS ONE
-   6(4): e18850.
+      Kuhn, M., Johnson, K. (2013) *Applied Predictive Modeling*,
+      Springer.
 
-   .. rubric:: Examples
-      :name: examples
+      Craig-Schapiro R, Kuhn M, Xiong C, Pickering EH, Liu J, Misko TP,
+      et al. (2011) Multiplexed Immunoassay Panel Identifies Novel CSF
+      Biomarkers for Alzheimer's Disease Diagnosis and Prognosis. PLoS
+      ONE 6(4): e18850.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(ad_data)
-      str(ad_data)
+      ::
+
+         data(ad_data)
+         str(ad_data)

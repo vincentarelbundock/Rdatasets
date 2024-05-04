@@ -1,65 +1,67 @@
 .. container::
 
-   ======= ===============
-   myeloma R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Survival times of patients with multiple myeloma
-      :name: myeloma
+      ======= ===============
+      myeloma R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Survival times of patients with multiple myeloma
+         :name: survival-times-of-patients-with-multiple-myeloma
 
-   Survival times of 3882 subjects with multiple myeloma, seen at Mayo
-   Clinic from 1947–1996.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Survival times of 3882 subjects with multiple myeloma, seen at
+      Mayo Clinic from 1947–1996.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      myeloma
-      data("cancer", package="survival")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         myeloma
+         data("cancer", package="survival")
 
-   A data frame with 3882 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``id``
-      subject identifier
+      A data frame with 3882 observations on the following 5 variables.
 
-   ``year``
-      year of entry into the study
+      ``id``
+         subject identifier
 
-   ``entry``
-      time from diagnosis of MM until entry (days)
+      ``year``
+         year of entry into the study
 
-   ``futime``
-      follow up time (days)
+      ``entry``
+         time from diagnosis of MM until entry (days)
 
-   ``death``
-      status at last follow-up: 0 = alive, 1 = death
+      ``futime``
+         follow up time (days)
 
-   .. rubric:: Details
-      :name: details
+      ``death``
+         status at last follow-up: 0 = alive, 1 = death
 
-   Subjects who were diagnosed at Mayo will have ``entry`` =0, those who
-   were diagnosed elsewhere and later referred will have positive
-   values.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: References
-      :name: references
+      Subjects who were diagnosed at Mayo will have ``entry`` =0, those
+      who were diagnosed elsewhere and later referred will have positive
+      values.
 
-   R. Kyle, Long term survival in multiple myeloma. New Eng J Medicine,
-   1997
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      R. Kyle, Long term survival in multiple myeloma. New Eng J
+      Medicine, 1997
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      # Incorrect survival curve, which ignores left truncation
-      fit1 <- survfit(Surv(futime, death) ~ 1, myeloma)
-      # Correct curve
-      fit2 <- survfit(Surv(entry, futime, death) ~1, myeloma)
+      ::
+
+         # Incorrect survival curve, which ignores left truncation
+         fit1 <- survfit(Surv(futime, death) ~ 1, myeloma)
+         # Correct curve
+         fit2 <- survfit(Surv(entry, futime, death) ~1, myeloma)

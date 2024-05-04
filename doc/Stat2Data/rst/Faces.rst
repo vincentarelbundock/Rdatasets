@@ -1,47 +1,50 @@
 .. container::
 
-   ===== ===============
-   Faces R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Facial Attractiveness of Men
-      :name: Faces
+      ===== ===============
+      Faces R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Facial Attractiveness of Men
+         :name: facial-attractiveness-of-men
 
-   Grip strength, attractiveness, and shoulder-hip ratio for men
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Grip strength, attractiveness, and shoulder-hip ratio for men
 
-   A data frame with 38 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``MaxGripStrength``
-      Measurement of strength of hand grip
+      A data frame with 38 observations on the following 5 variables.
 
-   ``SHR``
-      Shoulder to hip ratio
+      ``MaxGripStrength``
+         Measurement of strength of hand grip
 
-   ``Partners``
-      Number of sexual partners (lifetime)
+      ``SHR``
+         Shoulder to hip ratio
 
-   ``Attractive``
-      Attractiveness rating
+      ``Partners``
+         Number of sexual partners (lifetime)
 
-   ``AgeFirstSex``
-      Age of first sex
+      ``Attractive``
+         Attractiveness rating
 
-   .. rubric:: Details
-      :name: details
+      ``AgeFirstSex``
+         Age of first sex
 
-   Facial attractiveness of several men was rated by female college
-   students. Maximum grip strength was also measured, along with
-   shoulder to hip ratio, age of first sex, and number of sex partners.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Facial attractiveness of several men was rated by female college
+      students. Maximum grip strength was also measured, along with
+      shoulder to hip ratio, age of first sex, and number of sex
+      partners.
 
-   Shoup, M. L. and Gallup, G.G., Jr. (2008), "Men's Faces Convey
-   Information about Their Bodies and Their Behavior: What You See is
-   What You Get," Evolutionary Psychology, 6(3): 469-479.
+      .. rubric:: Source
+         :name: source
+
+      Shoup, M. L. and Gallup, G.G., Jr. (2008), "Men's Faces Convey
+      Information about Their Bodies and Their Behavior: What You See is
+      What You Get," Evolutionary Psychology, 6(3): 469-479.

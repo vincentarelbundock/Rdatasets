@@ -1,111 +1,113 @@
 .. container::
 
-   ========= ===============
-   Griliches R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Wage Data
-      :name: Griliches
+      ========= ===============
+      Griliches R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Wage Data
+         :name: wage-data
 
-   a cross-section from 1980
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 758
+      a cross-section from 1980
 
-   *observation* : individuals
+      *number of observations* : 758
 
-   *country* : United States
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Griliches)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Griliches)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   rns
-      residency in the southern states (first observation) ?
+      A dataframe containing :
 
-   rns80
-      same variable for 1980
+      rns
+         residency in the southern states (first observation) ?
 
-   mrt
-      married (first observation) ?
+      rns80
+         same variable for 1980
 
-   mrt80
-      same variable for 1980
+      mrt
+         married (first observation) ?
 
-   smsa
-      residency in metropolitan areas (first observation) ?
+      mrt80
+         same variable for 1980
 
-   smsa80
-      same variable for 1980
+      smsa
+         residency in metropolitan areas (first observation) ?
 
-   med
-      mother's education in years
+      smsa80
+         same variable for 1980
 
-   iq
-      IQ score
+      med
+         mother's education in years
 
-   kww
-      score on the “knowledge of the world of work” test
+      iq
+         IQ score
 
-   year
-      year of the observation
+      kww
+         score on the “knowledge of the world of work” test
 
-   age
-      age (first observation)
+      year
+         year of the observation
 
-   age80
-      same variable for 1980
+      age
+         age (first observation)
 
-   school
-      completed years of schooling (first observation)
+      age80
+         same variable for 1980
 
-   school80
-      same variable for 1980
+      school
+         completed years of schooling (first observation)
 
-   expr
-      experience in years (first observation)
+      school80
+         same variable for 1980
 
-   expr80
-      same variable for 1980
+      expr
+         experience in years (first observation)
 
-   tenure
-      tenure in years (first observation)
+      expr80
+         same variable for 1980
 
-   tenure80
-      same variable for 1980
+      tenure
+         tenure in years (first observation)
 
-   lw
-      log wage (first observation)
+      tenure80
+         same variable for 1980
 
-   lw80
-      same variable for 1980
+      lw
+         log wage (first observation)
 
-   .. rubric:: Source
-      :name: source
+      lw80
+         same variable for 1980
 
-   Blackburn, M. and Neumark D. (1992) “Unobserved ability, efficiency
-   wages, and interindustry wage differentials”, *Quarterly Journal of
-   Economics*, **107**, 1421-1436.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Blackburn, M. and Neumark D. (1992) “Unobserved ability,
+      efficiency wages, and interindustry wage differentials”,
+      *Quarterly Journal of Economics*, **107**, 1421-1436.
 
-   Hayashi, F. (2000) *Econometrics*, Princeton University Press,
-   http://fhayashi.fc2web.com/hayashi_econometrics.htm, chapter 3,
-   250-256.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Hayashi, F. (2000) *Econometrics*, Princeton University Press,
+      http://fhayashi.fc2web.com/hayashi_econometrics.htm, chapter 3,
+      250-256.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

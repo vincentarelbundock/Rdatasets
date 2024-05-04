@@ -1,60 +1,62 @@
 .. container::
 
-   ======== ===============
-   delivery R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Delivery Time Data
-      :name: delivery
+      ======== ===============
+      delivery R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Delivery Time Data
+         :name: delivery-time-data
 
-   Delivery Time Data, from Montgomery and Peck (1982). The aim is to
-   explain the time required to service a vending machine (Y) by means
-   of the number of products stocked (X1) and the distance walked by the
-   route driver (X2).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Delivery Time Data, from Montgomery and Peck (1982). The aim is to
+      explain the time required to service a vending machine (Y) by
+      means of the number of products stocked (X1) and the distance
+      walked by the route driver (X2).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(delivery, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(delivery, package="robustbase")
 
-   A data frame with 25 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``n.prod``
-      Number of Products
+      A data frame with 25 observations on the following 3 variables.
 
-   ``distance``
-      Distance
+      ``n.prod``
+         Number of Products
 
-   ``delTime``
-      Delivery time
+      ``distance``
+         Distance
 
-   .. rubric:: Source
-      :name: source
+      ``delTime``
+         Delivery time
 
-   Montgomery and Peck (1982, p.116)
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Montgomery and Peck (1982, p.116)
 
-   P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
-   Detection*; Wiley, page 155, table 23.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and
+      Outlier Detection*; Wiley, page 155, table 23.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(delivery)
-      summary(lm.deli <- lm(delTime ~ ., data = delivery))
+      ::
 
-      delivery.x <- as.matrix(delivery[, 1:2])
-      c_deli <- covMcd(delivery.x)
-      c_deli
+         data(delivery)
+         summary(lm.deli <- lm(delTime ~ ., data = delivery))
+
+         delivery.x <- as.matrix(delivery[, 1:2])
+         c_deli <- covMcd(delivery.x)
+         c_deli

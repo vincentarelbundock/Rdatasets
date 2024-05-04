@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>HELPrct</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='HELPrct'>Health Evaluation and Linkage to Primary Care</h2>
+<h2>Health Evaluation and Linkage to Primary Care</h2>
 
 <h3>Description</h3>
 
@@ -38,90 +38,64 @@ or usual care, with the goal of linking them to primary medical care.
 <p>Data frame with 453 observations on the following variables.
 </p>
 
-<ul>
-<li><p><code>age</code> subject age at baseline (in years)
-</p>
-</li>
-<li><p><code>anysub</code> use of any substance post-detox: a factor with levels <code>no</code> <code>yes</code>
-</p>
-</li>
-<li><p><code>cesd</code> Center for Epidemiologic Studies Depression measure at baseline (high scores indicate more depressive symptoms)
-</p>
-</li>
-<li><p><code>d1</code> lifetime number of hospitalizations for medical problems (measured at baseline)
-</p>
-</li>
-<li><p><code>hospitalizations</code> lifetime number of hospitalizations for medical problems (measured at baseline)
-</p>
-</li>
-<li><p><code>daysanysub</code> time (in days) to first use of any substance post-detox
-</p>
-</li>
-<li><p><code>dayslink</code> time (in days) to linkage to primary care
-</p>
-</li>
-<li><p><code>drugrisk</code> Risk Assessment Battery drug risk scale at baseline
-</p>
-</li>
-<li><p><code>e2b</code> number of times in past 6 months entered a detox program (measured at baseline)
-</p>
-</li>
-<li><p><code>female</code> 0 for male, 1 for female
-</p>
-</li>
-<li><p><code>sex</code> a factor with levels <code>male</code> <code>female</code>
-</p>
-</li>
-<li><p><code>g1b</code> experienced serious thoughts of suicide in last 30 days (measured at baseline): a factor with levels <code>no</code> <code>yes</code>
-</p>
-</li>
-<li><p><code>homeless</code> housing status: a factor with levels <code>housed</code> <code>homeless</code>
-</p>
-</li>
-<li><p><code>i1</code> average number of drinks (standard units) consumed per day, in the
-past 30 days (measured at baseline)
-</p>
-</li>
-<li><p><code>i2</code> maximum number of drinks (standard units) consumed per day, in the
-past 30 days (measured at baseline)
-</p>
-</li>
-<li><p><code>id</code> subject identifier
-</p>
-</li>
-<li><p><code>indtot</code> Inventory of Drug Use Consequences (InDUC) total score (measured at baseline)
-</p>
-</li>
-<li><p><code>linkstatus</code> post-detox linkage to primary care (0 = no, 1 = yes)
-</p>
-</li>
-<li><p><code>link</code> post-detox linkage to primary care: <code>no</code> <code>yes</code>
-</p>
-</li>
-<li><p><code>mcs</code> SF-36 Mental Component Score (measured at baseline, lower scores indicate worse status)
-</p>
-</li>
-<li><p><code>pcs</code> SF-36 Physical Component Score (measured at baseline, lower scores indicate worse status)
-</p>
-</li>
-<li><p><code>pss_fr</code> perceived social support by friends (measured at baseline, higher scores indicate more support)
-</p>
-</li>
-<li><p><code>racegrp</code> race/ethnicity: levels <code>black</code> <code>hispanic</code> <code>other</code> <code>white</code>
-</p>
-</li>
-<li><p><code>satreat</code> any BSAS substance abuse treatment at baseline: <code>no</code> <code>yes</code>
-</p>
-</li>
-<li><p><code>sexrisk</code> Risk Assessment Battery sex risk score (measured at baseline)
-</p>
-</li>
-<li><p><code>substance</code> primary substance of abuse: <code>alcohol</code> <code>cocaine</code> <code>heroin</code>
-</p>
-</li>
-<li><p><code>treat</code> randomized to HELP clinic: <code>no</code> <code>yes</code>
-</p>
-</li></ul>
+<dl>
+<dt><code>age</code></dt><dd><p>subject age at baseline (in years)</p>
+</dd>
+<dt><code>anysub</code></dt><dd><p>use of any substance post-detox: a factor with levels <code>no</code> <code>yes</code></p>
+</dd>
+<dt><code>cesd</code></dt><dd><p>Center for Epidemiologic Studies Depression measure at baseline (high scores indicate more depressive symptoms)</p>
+</dd>
+<dt><code>d1</code></dt><dd><p>lifetime number of hospitalizations for medical problems (measured at baseline)</p>
+</dd>
+<dt><code>hospitalizations</code></dt><dd><p>lifetime number of hospitalizations for medical problems (measured at baseline)</p>
+</dd>
+<dt><code>daysanysub</code></dt><dd><p>time (in days) to first use of any substance post-detox</p>
+</dd>
+<dt><code>dayslink</code></dt><dd><p>time (in days) to linkage to primary care</p>
+</dd>
+<dt><code>drugrisk</code></dt><dd><p>Risk Assessment Battery drug risk scale at baseline</p>
+</dd>
+<dt><code>e2b</code></dt><dd><p>number of times in past 6 months entered a detox program (measured at baseline)</p>
+</dd>
+<dt><code>female</code></dt><dd><p>0 for male, 1 for female</p>
+</dd>
+<dt><code>sex</code></dt><dd><p>a factor with levels <code>male</code> <code>female</code></p>
+</dd>
+<dt><code>g1b</code></dt><dd><p>experienced serious thoughts of suicide in last 30 days (measured at baseline): a factor with levels <code>no</code> <code>yes</code></p>
+</dd>
+<dt><code>homeless</code></dt><dd><p>housing status: a factor with levels <code>housed</code> <code>homeless</code></p>
+</dd>
+<dt><code>i1</code></dt><dd><p>average number of drinks (standard units) consumed per day, in the
+past 30 days (measured at baseline)</p>
+</dd>
+<dt><code>i2</code></dt><dd><p>maximum number of drinks (standard units) consumed per day, in the
+past 30 days (measured at baseline)</p>
+</dd>
+<dt><code>id</code></dt><dd><p>subject identifier</p>
+</dd>
+<dt><code>indtot</code></dt><dd><p>Inventory of Drug Use Consequences (InDUC) total score (measured at baseline)</p>
+</dd>
+<dt><code>linkstatus</code></dt><dd><p>post-detox linkage to primary care (0 = no, 1 = yes)</p>
+</dd>
+<dt><code>link</code></dt><dd><p>post-detox linkage to primary care: <code>no</code> <code>yes</code></p>
+</dd>
+<dt><code>mcs</code></dt><dd><p>SF-36 Mental Component Score (measured at baseline, lower scores indicate worse status)</p>
+</dd>
+<dt><code>pcs</code></dt><dd><p>SF-36 Physical Component Score (measured at baseline, lower scores indicate worse status)</p>
+</dd>
+<dt><code>pss_fr</code></dt><dd><p>perceived social support by friends (measured at baseline, higher scores indicate more support)</p>
+</dd>
+<dt><code>racegrp</code></dt><dd><p>race/ethnicity: levels <code>black</code> <code>hispanic</code> <code>other</code> <code>white</code></p>
+</dd>
+<dt><code>satreat</code></dt><dd><p>any BSAS substance abuse treatment at baseline: <code>no</code> <code>yes</code></p>
+</dd>
+<dt><code>sexrisk</code></dt><dd><p>Risk Assessment Battery sex risk score (measured at baseline)</p>
+</dd>
+<dt><code>substance</code></dt><dd><p>primary substance of abuse: <code>alcohol</code> <code>cocaine</code> <code>heroin</code></p>
+</dd>
+<dt><code>treat</code></dt><dd><p>randomized to HELP clinic: <code>no</code> <code>yes</code></p>
+</dd>
+</dl>
 
 
 
@@ -157,7 +131,7 @@ many additional variables.
 
 <h3>Note</h3>
 
-<div class="sourceCode"><pre>The \code{HELPrct} data set was originally named \code{HELP} but has 
+<div class="sourceCode"><pre>The \code{HELPrct} data set was originally named \code{HELP} but has
 been renamed to avoid confusion with the \code{help} function.
 </pre></div>
 
@@ -190,6 +164,7 @@ a multi-disciplinary health intervention in a detoxification unit.
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

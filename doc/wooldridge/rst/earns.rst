@@ -1,75 +1,77 @@
 .. container::
 
-   ===== ===============
-   earns R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: earns
-      :name: earns
+      ===== ===============
+      earns R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: earns
+         :name: earns
 
-   Wooldridge Source: Economic Report of the President, 1989, Table
-   B-47. The data are for the non-farm business sector. Data loads
-   lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Economic Report of the President, 1989, Table
+      B-47. The data are for the non-farm business sector. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('earns')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('earns')
 
-   A data.frame with 41 observations on 14 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1947 to 1987
+      A data.frame with 41 observations on 14 variables:
 
-   -  **wkearns:** avg. real weekly earnings
+      -  **year:** 1947 to 1987
 
-   -  **wkhours:** avg. weekly hours
+      -  **wkearns:** avg. real weekly earnings
 
-   -  **outphr:** output per labor hour
+      -  **wkhours:** avg. weekly hours
 
-   -  **hrwage:** wkearns/wkhours
+      -  **outphr:** output per labor hour
 
-   -  **lhrwage:** log(hrwage)
+      -  **hrwage:** wkearns/wkhours
 
-   -  **loutphr:** log(outphr)
+      -  **lhrwage:** log(hrwage)
 
-   -  **t:** time trend: t=1 to 47
+      -  **loutphr:** log(outphr)
 
-   -  **ghrwage:** lhrwage - lhrwage[\_n-1]
+      -  **t:** time trend: t=1 to 47
 
-   -  **goutphr:** loutphr - loutphr[\_n-1]
+      -  **ghrwage:** lhrwage - lhrwage[_n-1]
 
-   -  **ghrwge_1:** ghrwage[\_n-1]
+      -  **goutphr:** loutphr - loutphr[_n-1]
 
-   -  **goutph_1:** goutphr[\_n-1]
+      -  **ghrwge_1:** ghrwage[_n-1]
 
-   -  **goutph_2:** goutphr[\_n-2]
+      -  **goutph_1:** goutphr[_n-1]
 
-   -  **lwkhours:** log(wkhours)
+      -  **goutph_2:** goutphr[_n-2]
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lwkhours:** log(wkhours)
 
-   These data could be usefully updated, but changes in reporting
-   conventions in more recent ERPs may make that difficult.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 363-364, 398, 407
+      These data could be usefully updated, but changes in reporting
+      conventions in more recent ERPs may make that difficult.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 363-364, 398, 407
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(earns)
+      ::
+
+          str(earns)

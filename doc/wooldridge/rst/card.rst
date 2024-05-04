@@ -1,129 +1,132 @@
 .. container::
 
-   ==== ===============
-   card R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: card
-      :name: card
+      ==== ===============
+      card R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: card
+         :name: card
 
-   Wooldridge Source: D. Card (1995), Using Geographic Variation in
-   College Proximity to Estimate the Return to Schooling, in Aspects of
-   Labour Market Behavior: Essays in Honour of John Vanderkamp. Ed. L.N.
-   Christophides, E.K. Grant, and R. Swidinsky, 201-222. Toronto:
-   University of Toronto Press. Professor Card kindly provided these
-   data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: D. Card (1995), Using Geographic Variation in
+      College Proximity to Estimate the Return to Schooling, in Aspects
+      of Labour Market Behavior: Essays in Honour of John Vanderkamp.
+      Ed. L.N. Christophides, E.K. Grant, and R. Swidinsky, 201-222.
+      Toronto: University of Toronto Press. Professor Card kindly
+      provided these data. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('card')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('card')
 
-   A data.frame with 3010 observations on 34 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **id:** person identifier
+      A data.frame with 3010 observations on 34 variables:
 
-   -  **nearc2:** =1 if near 2 yr college, 1966
+      -  **id:** person identifier
 
-   -  **nearc4:** =1 if near 4 yr college, 1966
+      -  **nearc2:** =1 if near 2 yr college, 1966
 
-   -  **educ:** years of schooling, 1976
+      -  **nearc4:** =1 if near 4 yr college, 1966
 
-   -  **age:** in years
+      -  **educ:** years of schooling, 1976
 
-   -  **fatheduc:** father's schooling
+      -  **age:** in years
 
-   -  **motheduc:** mother's schooling
+      -  **fatheduc:** father's schooling
 
-   -  **weight:** NLS sampling weight, 1976
+      -  **motheduc:** mother's schooling
 
-   -  **momdad14:** =1 if live with mom, dad at 14
+      -  **weight:** NLS sampling weight, 1976
 
-   -  **sinmom14:** =1 if with single mom at 14
+      -  **momdad14:** =1 if live with mom, dad at 14
 
-   -  **step14:** =1 if with step parent at 14
+      -  **sinmom14:** =1 if with single mom at 14
 
-   -  **reg661:** =1 for region 1, 1966
+      -  **step14:** =1 if with step parent at 14
 
-   -  **reg662:** =1 for region 2, 1966
+      -  **reg661:** =1 for region 1, 1966
 
-   -  **reg663:** =1 for region 3, 1966
+      -  **reg662:** =1 for region 2, 1966
 
-   -  **reg664:** =1 for region 4, 1966
+      -  **reg663:** =1 for region 3, 1966
 
-   -  **reg665:** =1 for region 5, 1966
+      -  **reg664:** =1 for region 4, 1966
 
-   -  **reg666:** =1 for region 6, 1966
+      -  **reg665:** =1 for region 5, 1966
 
-   -  **reg667:** =1 for region 7, 1966
+      -  **reg666:** =1 for region 6, 1966
 
-   -  **reg668:** =1 for region 8, 1966
+      -  **reg667:** =1 for region 7, 1966
 
-   -  **reg669:** =1 for region 9, 1966
+      -  **reg668:** =1 for region 8, 1966
 
-   -  **south66:** =1 if in south in 1966
+      -  **reg669:** =1 for region 9, 1966
 
-   -  **black:** =1 if black
+      -  **south66:** =1 if in south in 1966
 
-   -  **smsa:** =1 in in SMSA, 1976
+      -  **black:** =1 if black
 
-   -  **south:** =1 if in south, 1976
+      -  **smsa:** =1 in in SMSA, 1976
 
-   -  **smsa66:** =1 if in SMSA, 1966
+      -  **south:** =1 if in south, 1976
 
-   -  **wage:** hourly wage in cents, 1976
+      -  **smsa66:** =1 if in SMSA, 1966
 
-   -  **enroll:** =1 if enrolled in school, 1976
+      -  **wage:** hourly wage in cents, 1976
 
-   -  **KWW:** knowledge world of work score
+      -  **enroll:** =1 if enrolled in school, 1976
 
-   -  **IQ:** IQ score
+      -  **KWW:** knowledge world of work score
 
-   -  **married:** =1 if married, 1976
+      -  **IQ:** IQ score
 
-   -  **libcrd14:** =1 if lib. card in home at 14
+      -  **married:** =1 if married, 1976
 
-   -  **exper:** age - educ - 6
+      -  **libcrd14:** =1 if lib. card in home at 14
 
-   -  **lwage:** log(wage)
+      -  **exper:** age - educ - 6
 
-   -  **expersq:** exper^2
+      -  **lwage:** log(wage)
 
-   .. rubric:: Notes
-      :name: notes
+      -  **expersq:** exper^2
 
-   Computer Exercise C15.3 is important for analyzing these data. There,
-   it is shown that the instrumental variable, ‘nearc4', is actually
-   correlated with 'IQ', at least for the subset of men for which an IQ
-   score is reported. However, the correlation between 'nearc4“ and
-   'IQ', once the other explanatory variables are netted out, is
-   arguably zero. At least, it is not statistically different from zero.
-   In other words, 'nearc4' fails the exogeneity requirement in a simple
-   regression model but it passes, at least using the crude test
-   described above, if controls are added to the wage equation. For a
-   more advanced course, a nice extension of Card’s analysis is to allow
-   the return to education to differ by race. A relatively simple
-   extension is to include black education (blackeduc) as an additional
-   explanatory variable; its natural instrument is blacknearc4.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 526-527, 547
+      Computer Exercise C15.3 is important for analyzing these data.
+      There, it is shown that the instrumental variable, ‘nearc4', is
+      actually correlated with 'IQ', at least for the subset of men for
+      which an IQ score is reported. However, the correlation between
+      'nearc4“ and 'IQ', once the other explanatory variables are netted
+      out, is arguably zero. At least, it is not statistically different
+      from zero. In other words, 'nearc4' fails the exogeneity
+      requirement in a simple regression model but it passes, at least
+      using the crude test described above, if controls are added to the
+      wage equation. For a more advanced course, a nice extension of
+      Card’s analysis is to allow the return to education to differ by
+      race. A relatively simple extension is to include black education
+      (blackeduc) as an additional explanatory variable; its natural
+      instrument is blacknearc4.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 526-527, 547
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(card)
+      ::
+
+          str(card)

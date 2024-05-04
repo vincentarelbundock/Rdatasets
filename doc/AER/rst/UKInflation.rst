@@ -1,63 +1,65 @@
 .. container::
 
-   =========== ===============
-   UKInflation R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: UK Manufacturing Inflation Data
-      :name: UKInflation
+      =========== ===============
+      UKInflation R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: UK Manufacturing Inflation Data
+         :name: uk-manufacturing-inflation-data
 
-   Time series of observed and expected price changes in British
-   manufacturing.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Time series of observed and expected price changes in British
+      manufacturing.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("UKInflation")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("UKInflation")
 
-   A quarterly multiple time series from 1972(1) to 1985(2) with 2
-   variables.
+      .. rubric:: Format
+         :name: format
 
-   actual
-      Actual inflation.
+      A quarterly multiple time series from 1972(1) to 1985(2) with 2
+      variables.
 
-   expected
-      Expected inflation.
+      actual
+         Actual inflation.
 
-   .. rubric:: Source
-      :name: source
+      expected
+         Expected inflation.
 
-   Online complements to Greene (2003), Table F8.1.
+      .. rubric:: Source
+         :name: source
 
-   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+      Online complements to Greene (2003), Table F8.1.
 
-   .. rubric:: References
-      :name: references
+      https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
-   Saddle River, NJ: Prentice Hall.
+      .. rubric:: References
+         :name: references
 
-   Pesaran, M.H., and Hall, A.D. (1988). Tests of Non-nested Linear
-   Regression Models Subject To Linear Restrictions. *Economics
-   Letters*, **27**, 341–348.
+      Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+      Saddle River, NJ: Prentice Hall.
 
-   .. rubric:: See Also
-      :name: see-also
+      Pesaran, M.H., and Hall, A.D. (1988). Tests of Non-nested Linear
+      Regression Models Subject To Linear Restrictions. *Economics
+      Letters*, **27**, 341–348.
 
-   ``Greene2003``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Greene2003``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("UKInflation")
-      plot(UKInflation)
+      ::
+
+         data("UKInflation")
+         plot(UKInflation)

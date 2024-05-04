@@ -1,82 +1,84 @@
 .. container::
 
-   ======== ===============
-   Clothing R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Sales Data of Men's Fashion Stores
-      :name: Clothing
+      ======== ===============
+      Clothing R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sales Data of Men's Fashion Stores
+         :name: sales-data-of-mens-fashion-stores
 
-   a cross-section from 1990
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 400
+      a cross-section from 1990
 
-   *observation* : production units
+      *number of observations* : 400
 
-   *country* : Netherland
+      *observation* : production units
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Netherland
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Clothing)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Clothing)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   tsales
-      annual sales in Dutch guilders
+      A dataframe containing :
 
-   sales
-      sales per square meter
+      tsales
+         annual sales in Dutch guilders
 
-   margin
-      gross-profit-margin
+      sales
+         sales per square meter
 
-   nown
-      number of owners (managers)
+      margin
+         gross-profit-margin
 
-   nfull
-      number of full-timers
+      nown
+         number of owners (managers)
 
-   npart
-      number of part-timers
+      nfull
+         number of full-timers
 
-   naux
-      number of helpers (temporary workers)
+      npart
+         number of part-timers
 
-   hoursw
-      total number of hours worked
+      naux
+         number of helpers (temporary workers)
 
-   hourspw
-      number of hours worked per worker
+      hoursw
+         total number of hours worked
 
-   inv1
-      investment in shop-premises
+      hourspw
+         number of hours worked per worker
 
-   inv2
-      investment in automation.
+      inv1
+         investment in shop-premises
 
-   ssize
-      sales floor space of the store (in m$^2$).
+      inv2
+         investment in automation.
 
-   start
-      year start of business
+      ssize
+         sales floor space of the store (in m$^2$).
 
-   .. rubric:: References
-      :name: references
+      start
+         year start of business
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons, chapter 3.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons, chapter 3.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

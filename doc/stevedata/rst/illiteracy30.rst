@@ -1,88 +1,92 @@
 .. container::
 
-   ============ ===============
-   illiteracy30 R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Illiteracy in the Population 10 Years Old and Over, 1930
-      :name: illiteracy30
+      ============ ===============
+      illiteracy30 R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Illiteracy in the Population 10 Years Old and Over,
+         1930
+         :name: illiteracy-in-the-population-10-years-old-and-over-1930
 
-   This is perhaps the canonical data set for illustrating the
-   ecological fallacy.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This is perhaps the canonical data set for illustrating the
+      ecological fallacy.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      illiteracy30
+      ::
 
-   .. rubric:: Format
-      :name: format
+         illiteracy30
 
-   A data frame with 40 observations on the following 11 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``state``
-      a character for the state
+      A data frame with 40 observations on the following 11 variables.
 
-   ``pop``
-      a numeric vector for the total population
+      ``state``
+         a character for the state
 
-   ``pop_il``
-      a numeric vector for the total population that is illiterate
+      ``pop``
+         a numeric vector for the total population
 
-   ``nwhite``
-      a numeric vector for the total native white population
+      ``pop_il``
+         a numeric vector for the total population that is illiterate
 
-   ``nwhite_il``
-      a numeric vector for the total native white population that is
-      illiterate
+      ``nwhite``
+         a numeric vector for the total native white population
 
-   ``fpwhite``
-      a numeric vector for the total white population with "foreign or
-      mixed parentage"
+      ``nwhite_il``
+         a numeric vector for the total native white population that is
+         illiterate
 
-   ``fpwhite_il``
-      a numeric vector for the total white population with "foreign or
-      mixed parentage" that is illiterate
+      ``fpwhite``
+         a numeric vector for the total white population with "foreign
+         or mixed parentage"
 
-   ``fbwhite``
-      a numeric vector for the total foreign-born white population
+      ``fpwhite_il``
+         a numeric vector for the total white population with "foreign
+         or mixed parentage" that is illiterate
 
-   ``fbwhite_il``
-      a numeric vector for the total foreign-born white population that
-      is illiterate
+      ``fbwhite``
+         a numeric vector for the total foreign-born white population
 
-   ``black``
-      a numeric vector for the total black population.
+      ``fbwhite_il``
+         a numeric vector for the total foreign-born white population
+         that is illiterate
 
-   ``black_il``
-      a numeric vector for the total black population that is illiterate
+      ``black``
+         a numeric vector for the total black population.
 
-   .. rubric:: Details
-      :name: details
+      ``black_il``
+         a numeric vector for the total black population that is
+         illiterate
 
-   All population totals reflect those 10 years or older. The 1930
-   Census (along with Robinson (1950)) uses "negro" in lieu of black,
-   but the variable names here eschew that older label. Note that some
-   states are not yet states in the 1930 Census.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      All population totals reflect those 10 years or older. The 1930
+      Census (along with Robinson (1950)) uses "negro" in lieu of black,
+      but the variable names here eschew that older label. Note that
+      some states are not yet states in the 1930 Census.
 
-   U.S. Census Bureau (1933). Fifteenth Census of the United States:
-   1930. Population, Volume II.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      U.S. Census Bureau (1933). Fifteenth Census of the United States:
+      1930. Population, Volume II.
 
-   Grotenhuis, Manfred Te, Rob Eisinga, and SV Subramanian. 2011.
-   "Robinson's Ecological Correlations and the Behavior of Individuals:
-   methodological corrections." *Internatoinal Journal of Epidemiology*
-   40(4): 1123-25.
+      .. rubric:: References
+         :name: references
 
-   Robinson, WS. 1950. "Ecological Correlations and the Behavior of
-   Individuals." *American Sociological Review* 15(3): 351–57.
+      Grotenhuis, Manfred Te, Rob Eisinga, and SV Subramanian. 2011.
+      "Robinson's Ecological Correlations and the Behavior of
+      Individuals: methodological corrections." *Internatoinal Journal
+      of Epidemiology* 40(4): 1123-25.
+
+      Robinson, WS. 1950. "Ecological Correlations and the Behavior of
+      Individuals." *American Sociological Review* 15(3): 351–57.

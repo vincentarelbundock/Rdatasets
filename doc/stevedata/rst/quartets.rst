@@ -1,49 +1,51 @@
 .. container::
 
-   ======== ===============
-   quartets R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Anscombe's (1973) Quartets
-      :name: quartets
+      ======== ===============
+      quartets R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Anscombe's (1973) Quartets
+         :name: anscombes-1973-quartets
 
-   These are four x-y data sets, combined into a long format, which have
-   the same traditional statistical properties (mean, variance,
-   correlation, regression line, etc.). However, they look quite
-   different.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These are four x-y data sets, combined into a long format, which
+      have the same traditional statistical properties (mean, variance,
+      correlation, regression line, etc.). However, they look quite
+      different.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      quartets
+      ::
 
-   .. rubric:: Format
-      :name: format
+         quartets
 
-   A data frame with 44 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``group``
-      a categorical identifier for the quartet
+      A data frame with 44 observations on the following 3 variables.
 
-   ``x``
-      a continuous variable
+      ``group``
+         a categorical identifier for the quartet
 
-   ``y``
-      a continuous variable
+      ``x``
+         a continuous variable
 
-   .. rubric:: Details
-      :name: details
+      ``y``
+         a continuous variable
 
-   Data come default in R, but I elected to change the format to be a
-   bit more accessible.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: References
-      :name: references
+      Data come default in R, but I elected to change the format to be a
+      bit more accessible.
 
-   Anscombe, Francis J. (1973). "Graphs in Statistical Analysis." *The
-   American Statistician* 27: 17–21.
+      .. rubric:: References
+         :name: references
+
+      Anscombe, Francis J. (1973). "Graphs in Statistical Analysis."
+      *The American Statistician* 27: 17–21.

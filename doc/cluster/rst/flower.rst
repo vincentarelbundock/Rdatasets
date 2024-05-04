@@ -1,82 +1,94 @@
 .. container::
 
-   ====== ===============
-   flower R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Flower Characteristics
-      :name: flower
+      ====== ===============
+      flower R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Flower Characteristics
+         :name: flower-characteristics
 
-   8 characteristics for 18 popular flowers.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      8 characteristics for 18 popular flowers.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(flower)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(flower)
 
-   A data frame with 18 observations on 8 variables:
+      .. rubric:: Format
+         :name: format
 
-   ========= ======= ==========
-   [ , "V1"] factor  winters
-   [ , "V2"] factor  shadow
-   [ , "V3"] factor  tubers
-   [ , "V4"] factor  color
-   [ , "V5"] ordered soil
-   [ , "V6"] ordered preference
-   [ , "V7"] numeric height
-   [ , "V8"] numeric distance
-   ========= ======= ==========
+      A data frame with 18 observations on 8 variables:
 
-   V1
-      winters, is binary and indicates whether the plant may be left in
-      the garden when it freezes.
+      ========= ======= ==========
+      [ , "V1"] factor  winters
+      [ , "V2"] factor  shadow
+      [ , "V3"] factor  tubers
+      [ , "V4"] factor  color
+      [ , "V5"] ordered soil
+      [ , "V6"] ordered preference
+      [ , "V7"] numeric height
+      [ , "V8"] numeric distance
+      ========= ======= ==========
 
-   V2
-      shadow, is binary and shows whether the plant needs to stand in
-      the shadow.
+      V1
+         winters, is binary and indicates whether the plant may be left
+         in the garden when it freezes.
 
-   V3
-      tubers, is asymmetric binary and distinguishes between plants with
-      tubers and plants that grow in any other way.
+      V2
+         shadow, is binary and shows whether the plant needs to stand in
+         the shadow.
 
-   V4
-      color, is nominal and specifies the flower's color (1 = white, 2 =
-      yellow, 3 = pink, 4 = red, 5 = blue).
+      V3
+         tubers, is asymmetric binary and distinguishes between plants
+         with tubers and plants that grow in any other way.
 
-   V5
-      soil, is ordinal and indicates whether the plant grows in dry (1),
-      normal (2), or wet (3) soil.
+      V4
+         color, is nominal and specifies the flower's color (1 = white,
+         2 = yellow, 3 = pink, 4 = red, 5 = blue).
 
-   V6
-      preference, is ordinal and gives someone's preference ranking
-      going from 1 to 18.
+      V5
+         soil, is ordinal and indicates whether the plant grows in dry
+         (1), normal (2), or wet (3) soil.
 
-   V7
-      height, is interval scaled, the plant's height in centimeters.
+      V6
+         preference, is ordinal and gives someone's preference ranking
+         going from 1 to 18.
 
-   V8
-      distance, is interval scaled, the distance in centimeters that
-      should be left between the plants.
+      V7
+         height, is interval scaled, the plant's height in centimeters.
 
-   .. rubric:: References
-      :name: references
+      V8
+         distance, is interval scaled, the distance in centimeters that
+         should be left between the plants.
 
-   Struyf, Hubert and Rousseeuw (1996), see ``agnes``.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Struyf, Hubert and Rousseeuw (1996), see ``agnes``.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(flower)
-      ## Example 2 in ref
-      daisy(flower, type = list(asymm = 3))
-      daisy(flower, type = list(asymm = c(1, 3), ordratio = 7))
+      ::
+
+         data(flower)
+         str(flower) # factors, ordered, numeric
+
+         ## "Nicer" version (less numeric more self explainable) of 'flower':
+         flowerN <- flower
+         colnames(flowerN) <- c("winters", "shadow", "tubers", "color",
+                                "soil", "preference", "height", "distance")
+         for(j in 1:3) flowerN[,j] <- (flowerN[,j] == "1")
+         levels(flowerN$color) <- c("1" = "white", "2" = "yellow", "3" = "pink",
+                                    "4" = "red", "5" = "blue")[levels(flowerN$color)]
+         levels(flowerN$soil)  <- c("1" = "dry", "2" = "normal", "3" = "wet")[levels(flowerN$soil)]
+         flowerN
+
+         ## ==> example(daisy)  on how it is used

@@ -1,55 +1,57 @@
 .. container::
 
-   ======= ===============
-   calcium R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Calcium Uptake Data
-      :name: calcium
+      ======= ===============
+      calcium R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Calcium Uptake Data
+         :name: calcium-uptake-data
 
-   The ``calcium`` data frame has 27 rows and 2 columns.
+      .. rubric:: Description
+         :name: description
 
-   Howard Grimes from the Botany Department, North Carolina State
-   University, conducted an experiment for biochemical analysis of
-   intracellular storage and transport of calcium across plasma
-   membrane. Cells were suspended in a solution of radioactive calcium
-   for a certain length of time and then the amount of radioactive
-   calcium that was absorbed by the cells was measured. The experiment
-   was repeated independently with 9 different times of suspension each
-   replicated 3 times.
+      The ``calcium`` data frame has 27 rows and 2 columns.
 
-   .. rubric:: Usage
-      :name: usage
+      Howard Grimes from the Botany Department, North Carolina State
+      University, conducted an experiment for biochemical analysis of
+      intracellular storage and transport of calcium across plasma
+      membrane. Cells were suspended in a solution of radioactive
+      calcium for a certain length of time and then the amount of
+      radioactive calcium that was absorbed by the cells was measured.
+      The experiment was repeated independently with 9 different times
+      of suspension each replicated 3 times.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      calcium
+      ::
 
-   .. rubric:: Format
-      :name: format
+         calcium
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``time``
-      The time (in minutes) that the cells were suspended in the
-      solution.
+      This data frame contains the following columns:
 
-   ``cal``
-      The amount of calcium uptake (nmoles/mg).
+      ``time``
+         The time (in minutes) that the cells were suspended in the
+         solution.
 
-   .. rubric:: Source
-      :name: source
+      ``cal``
+         The amount of calcium uptake (nmoles/mg).
 
-   The data were obtained from
+      .. rubric:: Source
+         :name: source
 
-   Rawlings, J.O. (1988) *Applied Regression Analysis*. Wadsworth and
-   Brooks/Cole Statistics/Probability Series.
+      The data were obtained from
 
-   .. rubric:: References
-      :name: references
+      Rawlings, J.O. (1988) *Applied Regression Analysis*. Wadsworth and
+      Brooks/Cole Statistics/Probability Series.
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
+
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.

@@ -1,62 +1,64 @@
 .. container::
 
-   ============ ===============
-   MotorCycles2 R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Motor Cycles in The Netherlands
-      :name: MotorCycles2
+      ============ ===============
+      MotorCycles2 R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Motor Cycles in The Netherlands
+         :name: motor-cycles-in-the-netherlands
 
-   Time series of stock of motor cycles (two wheels) in The Netherlands
-   (in thousands).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Time series of stock of motor cycles (two wheels) in The
+      Netherlands (in thousands).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("MotorCycles2")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("MotorCycles2")
 
-   An annual univariate time series from 1946 to 2012.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An annual univariate time series from 1946 to 2012.
 
-   This is an update of the series that was available with Franses
-   (1998). However, the values for the years 1992 and 1993 differ.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This is an update of the series that was available with Franses
+      (1998). However, the values for the years 1992 and 1993 differ.
 
-   Online complements to Franses, van Dijk and Opschoor (2014).
+      .. rubric:: Source
+         :name: source
 
-   https://www.cambridge.org/us/academic/subjects/economics/econometrics-statistics-and-mathematical-economics/time-series-models-business-and-economic-forecasting-2nd-edition
+      Online complements to Franses, van Dijk and Opschoor (2014).
 
-   .. rubric:: References
-      :name: references
+      https://www.cambridge.org/us/academic/subjects/economics/econometrics-statistics-and-mathematical-economics/time-series-models-business-and-economic-forecasting-2nd-edition
 
-   Franses, P.H. (1998). *Time Series Models for Business and Economic
-   Forecasting*. Cambridge, UK: Cambridge University Press.
+      .. rubric:: References
+         :name: references
 
-   Franses, P.H., van Dijk, D. and Opschoor, A. (2014). *Time Series
-   Models for Business and Economic Forecasting*, 2nd ed. Cambridge, UK:
-   Cambridge University Press.
+      Franses, P.H. (1998). *Time Series Models for Business and
+      Economic Forecasting*. Cambridge, UK: Cambridge University Press.
 
-   .. rubric:: See Also
-      :name: see-also
+      Franses, P.H., van Dijk, D. and Opschoor, A. (2014). *Time Series
+      Models for Business and Economic Forecasting*, 2nd ed. Cambridge,
+      UK: Cambridge University Press.
 
-   ``Franses1998``, ``MotorCycles``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Franses1998``, ``MotorCycles``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("MotorCycles2")
-      plot(MotorCycles2)
+      ::
+
+         data("MotorCycles2")
+         plot(MotorCycles2)

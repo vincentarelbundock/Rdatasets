@@ -1,85 +1,87 @@
 .. container::
 
-   ========= ===============
-   Lifeboats R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Lifeboats on the Titanic
-      :name: Lifeboats
+      ========= ===============
+      Lifeboats R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Lifeboats on the Titanic
+         :name: lifeboats-on-the-titanic
 
-   Data from Mersey (1912) about the 18 (out of 20) lifeboats launched
-   before the sinking of the S. S. Titanic.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from Mersey (1912) about the 18 (out of 20) lifeboats
+      launched before the sinking of the S. S. Titanic.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Lifeboats")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Lifeboats")
 
-   A data frame with 18 observations and 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   launch
-      launch time in ``"POSIXt"`` format.
+      A data frame with 18 observations and 8 variables.
 
-   side
-      factor. Side of the boat.
+      launch
+         launch time in ``"POSIXt"`` format.
 
-   boat
-      factor indicating the boat.
+      side
+         factor. Side of the boat.
 
-   crew
-      number of male crew members on board.
+      boat
+         factor indicating the boat.
 
-   men
-      number of men on board.
+      crew
+         number of male crew members on board.
 
-   women
-      number of women (including female crew) on board.
+      men
+         number of men on board.
 
-   total
-      total number of passengers.
+      women
+         number of women (including female crew) on board.
 
-   cap
-      capacity of the boat.
+      total
+         total number of passengers.
 
-   .. rubric:: Source
-      :name: source
+      cap
+         capacity of the boat.
 
-   M. Friendly (2000), Visualizing Categorical Data:
-   http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/lifeboat.sas
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      M. Friendly (2000), Visualizing Categorical Data:
+      http://euclid.psych.yorku.ca/ftp/sas/vcd/catdata/lifeboat.sas
 
-   L. Mersey (1912), Report on the loss of the “Titanic” (S. S.).
-   Parliamentary command paper 6452.
+      .. rubric:: References
+         :name: references
 
-   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
-   Cary, NC.
+      L. Mersey (1912), Report on the loss of the “Titanic” (S. S.).
+      Parliamentary command paper 6452.
 
-   .. rubric:: Examples
-      :name: examples
+      M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+      Cary, NC.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("Lifeboats")
-      attach(Lifeboats)
-      ternaryplot(
-        Lifeboats[,4:6],
-        pch = ifelse(side == "Port", 1, 19),
-        col = ifelse(side == "Port", "red", "blue"),
-        id  = ifelse(men / total > 0.1, as.character(boat), NA),
-        prop_size = 2,
-        dimnames_position = "edge",
-        main = "Lifeboats on the Titanic"
-      )
-      grid_legend(0.8, 0.9, c(1, 19), c("red", "blue"),
-        c("Port", "Starboard"), title = "SIDE")
-      detach(Lifeboats)
+      ::
+
+         data("Lifeboats")
+         attach(Lifeboats)
+         ternaryplot(
+           Lifeboats[,4:6],
+           pch = ifelse(side == "Port", 1, 19),
+           col = ifelse(side == "Port", "red", "blue"),
+           id  = ifelse(men / total > 0.1, as.character(boat), NA),
+           prop_size = 2,
+           dimnames_position = "edge",
+           main = "Lifeboats on the Titanic"
+         )
+         grid_legend(0.8, 0.9, c(1, 19), c("red", "blue"),
+           c("Port", "Starboard"), title = "SIDE")
+         detach(Lifeboats)

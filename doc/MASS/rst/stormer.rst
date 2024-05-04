@@ -1,54 +1,56 @@
 .. container::
 
-   ======= ===============
-   stormer R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: The Stormer Viscometer Data
-      :name: stormer
+      ======= ===============
+      stormer R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: The Stormer Viscometer Data
+         :name: the-stormer-viscometer-data
 
-   The stormer viscometer measures the viscosity of a fluid by measuring
-   the time taken for an inner cylinder in the mechanism to perform a
-   fixed number of revolutions in response to an actuating weight. The
-   viscometer is calibrated by measuring the time taken with varying
-   weights while the mechanism is suspended in fluids of accurately
-   known viscosity. The data comes from such a calibration, and
-   theoretical considerations suggest a nonlinear relationship between
-   time, weight and viscosity, of the form
-   ``Time = (B1*Viscosity)/(Weight - B2) + E`` where ``B1`` and ``B2``
-   are unknown parameters to be estimated, and ``E`` is error.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The stormer viscometer measures the viscosity of a fluid by
+      measuring the time taken for an inner cylinder in the mechanism to
+      perform a fixed number of revolutions in response to an actuating
+      weight. The viscometer is calibrated by measuring the time taken
+      with varying weights while the mechanism is suspended in fluids of
+      accurately known viscosity. The data comes from such a
+      calibration, and theoretical considerations suggest a nonlinear
+      relationship between time, weight and viscosity, of the form
+      ``Time = (B1*Viscosity)/(Weight - B2) + E`` where ``B1`` and
+      ``B2`` are unknown parameters to be estimated, and ``E`` is error.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      stormer
+      ::
 
-   .. rubric:: Format
-      :name: format
+         stormer
 
-   The data frame contains the following components:
+      .. rubric:: Format
+         :name: format
 
-   ``Viscosity``
-      viscosity of fluid.
+      The data frame contains the following components:
 
-   ``Wt``
-      actuating weight.
+      ``Viscosity``
+         viscosity of fluid.
 
-   ``Time``
-      time taken.
+      ``Wt``
+         actuating weight.
 
-   .. rubric:: Source
-      :name: source
+      ``Time``
+         time taken.
 
-   E. J. Williams (1959) *Regression Analysis.* Wiley.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      E. J. Williams (1959) *Regression Analysis.* Wiley.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

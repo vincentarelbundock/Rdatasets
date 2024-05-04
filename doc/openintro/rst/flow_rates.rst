@@ -1,69 +1,71 @@
 .. container::
 
-   ========== ===============
-   flow_rates R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: River flow data
-      :name: flow_rates
+      ========== ===============
+      flow_rates R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: River flow data
+         :name: river-flow-data
 
-   Flow rates (mesured in cubic feet per second) of Clarks Creek, Leach
-   Creek, Silver Creek, and Wildwood Creek Spring collected by
-   volunteers of the Pierce Conservation District in the State of
-   Washington in the US.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Flow rates (mesured in cubic feet per second) of Clarks Creek,
+      Leach Creek, Silver Creek, and Wildwood Creek Spring collected by
+      volunteers of the Pierce Conservation District in the State of
+      Washington in the US.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      flow_rates
+      ::
 
-   .. rubric:: Format
-      :name: format
+         flow_rates
 
-   A data frame with 31 rows and 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   site
-      Location where measurements were taken.
+      A data frame with 31 rows and 3 variables.
 
-   date
-      Date measurements were taken.
+      site
+         Location where measurements were taken.
 
-   flow
-      Flow rate of the river in cubic feet per second.
+      date
+         Date measurements were taken.
 
-   .. rubric:: Source
-      :name: source
+      flow
+         Flow rate of the river in cubic feet per second.
 
-   `Pierce County Water Data
-   Viewer <https://waterquality.piercecountywa.org/applications/public.html?publicuser=Guest#waterdata/stationoverview>`__.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      `Pierce County Water Data
+      Viewer <https://waterquality.piercecountywa.org/applications/public.html?publicuser=Guest#waterdata/stationoverview>`__.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      # River flow rates by site
-      ggplot(flow_rates, aes(x = site, y = flow)) +
-        geom_boxplot() +
-        labs(
-          title = "River flow rates by site",
-          x = "Site",
-          y = expression(paste("Flow (ft"^3 * "/s)"))
-        )
+         library(ggplot2)
 
-      # River flow rates over time
-      ggplot(flow_rates, aes(x = date, y = flow, color = site, shape = site)) +
-        geom_point(size = 2) +
-        labs(
-          title = "River flow rates over time",
-          x = "Date",
-          y = expression(paste("Flow (ft"^3 * "/s)")),
-          color = "Site", shape = "Site"
-        )
+         # River flow rates by site
+         ggplot(flow_rates, aes(x = site, y = flow)) +
+           geom_boxplot() +
+           labs(
+             title = "River flow rates by site",
+             x = "Site",
+             y = expression(paste("Flow (ft"^3 * "/s)"))
+           )
+
+         # River flow rates over time
+         ggplot(flow_rates, aes(x = date, y = flow, color = site, shape = site)) +
+           geom_point(size = 2) +
+           labs(
+             title = "River flow rates over time",
+             x = "Date",
+             y = expression(paste("Flow (ft"^3 * "/s)")),
+             color = "Site", shape = "Site"
+           )

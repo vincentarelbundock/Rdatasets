@@ -1,72 +1,76 @@
 .. container::
 
-   === ===============
-   aml R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Remission Times for Acute Myelogenous Leukaemia
-      :name: aml
+      === ===============
+      aml R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Remission Times for Acute Myelogenous Leukaemia
+         :name: remission-times-for-acute-myelogenous-leukaemia
 
-   The ``aml`` data frame has 23 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   A clinical trial to evaluate the efficacy of maintenance chemotherapy
-   for acute myelogenous leukaemia was conducted by Embury et al. (1977)
-   at Stanford University. After reaching a stage of remission through
-   treatment by chemotherapy, patients were randomized into two groups.
-   The first group received maintenance chemotherapy and the second
-   group did not. The aim of the study was to see if maintenance
-   chemotherapy increased the length of the remission. The data here
-   formed a preliminary analysis which was conducted in October 1974.
+      The ``aml`` data frame has 23 rows and 3 columns.
 
-   .. rubric:: Usage
-      :name: usage
+      A clinical trial to evaluate the efficacy of maintenance
+      chemotherapy for acute myelogenous leukaemia was conducted by
+      Embury et al. (1977) at Stanford University. After reaching a
+      stage of remission through treatment by chemotherapy, patients
+      were randomized into two groups. The first group received
+      maintenance chemotherapy and the second group did not. The aim of
+      the study was to see if maintenance chemotherapy increased the
+      length of the remission. The data here formed a preliminary
+      analysis which was conducted in October 1974.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      aml
+      ::
 
-   .. rubric:: Format
-      :name: format
+         aml
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``time``
-      The length of the complete remission (in weeks).
+      This data frame contains the following columns:
 
-   ``cens``
-      An indicator of right censoring. 1 indicates that the patient had
-      a relapse and so ``time`` is the length of the remission. 0
-      indicates that the patient had left the study or was still in
-      remission in October 1974, that is the length of remission is
-      right-censored.
+      ``time``
+         The length of the complete remission (in weeks).
 
-   ``group``
-      The group into which the patient was randomized. Group 1 received
-      maintenance chemotherapy, group 2 did not.
+      ``cens``
+         An indicator of right censoring. 1 indicates that the patient
+         had a relapse and so ``time`` is the length of the remission. 0
+         indicates that the patient had left the study or was still in
+         remission in October 1974, that is the length of remission is
+         right-censored.
 
-   .. rubric:: Note
-      :name: note
+      ``group``
+         The group into which the patient was randomized. Group 1
+         received maintenance chemotherapy, group 2 did not.
 
-   Package survival also has a dataset ``aml``. It is the same data with
-   different names and with ``group`` replaced by a factor ``x``.
+      .. rubric:: Note
+         :name: note
 
-   .. rubric:: Source
-      :name: source
+      Package survival also has a dataset ``aml``. It is the same data
+      with different names and with ``group`` replaced by a factor
+      ``x``.
 
-   The data were obtained from
+      .. rubric:: Source
+         :name: source
 
-   Miller, R.G. (1981) *Survival Analysis*. John Wiley.
+      The data were obtained from
 
-   .. rubric:: References
-      :name: references
+      Miller, R.G. (1981) *Survival Analysis*. John Wiley.
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
 
-   Embury, S.H, Elias, L., Heller, P.H., Hood, C.E., Greenberg, P.L. and
-   Schrier, S.L. (1977) Remission maintenance therapy in acute
-   myelogenous leukaemia. *Western Journal of Medicine*, **126**,
-   267-272.
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.
+
+      Embury, S.H, Elias, L., Heller, P.H., Hood, C.E., Greenberg, P.L.
+      and Schrier, S.L. (1977) Remission maintenance therapy in acute
+      myelogenous leukaemia. *Western Journal of Medicine*, **126**,
+      267-272.

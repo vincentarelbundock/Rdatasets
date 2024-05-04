@@ -1,35 +1,37 @@
 .. container::
 
-   ===== ===============
-   seals R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Vector field of seal movements
-      :name: seals
+      ===== ===============
+      seals R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Vector field of seal movements
+         :name: vector-field-of-seal-movements
 
-   This vector field was produced from the data described in Brillinger,
-   D.R., Preisler, H.K., Ager, A.A. and Kie, J.G. "An exploratory data
-   analysis (EDA) of the paths of moving animals". J. Statistical
-   Planning and Inference 122 (2004), 43-63, using the methods of
-   Brillinger, D.R., "Learning a potential function from a trajectory",
-   Signal Processing Letters. December (2007).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This vector field was produced from the data described in
+      Brillinger, D.R., Preisler, H.K., Ager, A.A. and Kie, J.G. "An
+      exploratory data analysis (EDA) of the paths of moving animals".
+      J. Statistical Planning and Inference 122 (2004), 43-63, using the
+      methods of Brillinger, D.R., "Learning a potential function from a
+      trajectory", Signal Processing Letters. December (2007).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      seals
+      ::
 
-   .. rubric:: Format
-      :name: format
+         seals
 
-   A data frame with 1155 rows and 4 variables
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: References
-      :name: references
+      A data frame with 1155 rows and 4 variables
 
-   https://www.stat.berkeley.edu/~brill/Papers/jspifinal.pdf
+      .. rubric:: References
+         :name: references
+
+      https://www.stat.berkeley.edu/~brill/Papers/jspifinal.pdf

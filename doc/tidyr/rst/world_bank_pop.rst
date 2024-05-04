@@ -1,41 +1,43 @@
 .. container::
 
-   ============== ===============
-   world_bank_pop R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Population data from the world bank
-      :name: world_bank_pop
+      ============== ===============
+      world_bank_pop R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Population data from the World Bank
+         :name: population-data-from-the-world-bank
 
-   Data about population from the World Bank.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data about population from the World Bank.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      world_bank_pop
+      ::
 
-   .. rubric:: Format
-      :name: format
+         world_bank_pop
 
-   A dataset with variables:
+      .. rubric:: Format
+         :name: format
 
-   country
-      Three letter country code
+      A dataset with variables:
 
-   indicator
-      Indicator name: ``SP.POP.GROW`` = population growth,
-      ``SP.POP.TOTL`` = total population, ``SP.URB.GROW`` = urban
-      population growth, ``SP.URB.TOTL`` = total urban population
+      country
+         Three letter country code
 
-   2000-2018
-      Value for each year
+      indicator
+         Indicator name: ``SP.POP.GROW`` = population growth,
+         ``SP.POP.TOTL`` = total population, ``SP.URB.GROW`` = urban
+         population growth, ``SP.URB.TOTL`` = total urban population
 
-   .. rubric:: Source
-      :name: source
+      2000-2018
+         Value for each year
 
-   Dataset from the World Bank data bank: https://data.worldbank.org
+      .. rubric:: Source
+         :name: source
+
+      Dataset from the World Bank data bank: https://data.worldbank.org

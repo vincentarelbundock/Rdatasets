@@ -12,46 +12,40 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>SocGrades</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='SocGrades'>
-Grades in a Sociology Course
-</h2>
+<h2>Grades in a Sociology Course</h2>
 
 <h3>Description</h3>
 
-<p>The data set <code>SocGrades</code> contains four outcome measures on student performance
-in an introductory sociology course together with six potential predictors.
-These data were used by Marascuilo and Levin (1983) for an example of
-canonical correlation analysis, but are also suitable as examples of
-multivariate multiple regression, MANOVA, MANCOVA and step-down analysis
+<p>The data set <code>SocGrades</code> contains four outcome measures on student
+performance in an introductory sociology course together with six potential
+predictors. These data were used by Marascuilo and Levin (1983) for an
+example of canonical correlation analysis, but are also suitable as examples
+of multivariate multiple regression, MANOVA, MANCOVA and step-down analysis
 in multivariate linear models.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(SocGrades)</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A data frame with 40 observations on the following 10 variables.
 </p>
-
+ 
 <dl>
-<dt><code>class</code></dt><dd><p>Social class, an ordered factor with levels <code>1</code> &gt; <code>2</code> &gt; <code>3</code></p>
-</dd>
+<dt><code>class</code></dt><dd><p>Social class, an ordered factor with levels
+<code>1</code> &gt; <code>2</code> &gt; <code>3</code></p>
+</dd> 
 <dt><code>sex</code></dt><dd><p>sex, a factor with levels <code>F</code> <code>M</code></p>
-</dd>
+</dd> 
 <dt><code>gpa</code></dt><dd><p>grade point average</p>
 </dd>
 <dt><code>boards</code></dt><dd><p>College Board test scores</p>
 </dd>
-<dt><code>hssoc</code></dt><dd><p>previous high school unit in sociology, a factor with 2  <code>no</code>, <code>yes</code></p>
-</dd>
+<dt><code>hssoc</code></dt><dd><p>previous high school unit in sociology, a factor with 2 <code>no</code>, <code>yes</code></p>
+</dd> 
 <dt><code>pretest</code></dt><dd><p>score on course pretest</p>
 </dd>
 <dt><code>midterm1</code></dt><dd><p>score on first midterm exam</p>
@@ -59,17 +53,16 @@ in multivariate linear models.
 <dt><code>midterm2</code></dt><dd><p>score on second midterm exam</p>
 </dd>
 <dt><code>final</code></dt><dd><p>score on final exam</p>
-</dd>
+</dd> 
 <dt><code>eval</code></dt><dd><p>course evaluation</p>
-</dd>
-</dl>
+</dd> </dl>
 
 
 
 <h3>Details</h3>
 
-<p><code>midterm1</code>, <code>midterm2</code>, <code>final</code>, and possibly <code>eval</code> are the response variables.
-All other variables are potential predictors.
+<p><code>midterm1</code>, <code>midterm2</code>, <code>final</code>, and possibly <code>eval</code> are
+the response variables. All other variables are potential predictors.
 </p>
 <p>The factors <code>class</code>, <code>sex</code>, and <code>hssoc</code> can be used with
 <code>as.numeric</code> in correlational analyses.
@@ -78,20 +71,21 @@ All other variables are potential predictors.
 
 <h3>Source</h3>
 
-<p>Marascuilo, L. A. and Levin, J. R. (1983).
-<em>Multivariate Statistics in the Social Sciences</em>
-Monterey, CA: Brooks/Cole, Table 5-1, p. 192.
+<p>Marascuilo, L. A. and Levin, J. R. (1983). <em>Multivariate
+Statistics in the Social Sciences</em> Monterey, CA: Brooks/Cole, Table 5-1, p.
+192.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(SocGrades)
+<pre><code class='language-R'>
+data(SocGrades)
 # basic MLM
 grades.mod &lt;- lm(cbind(midterm1, midterm2, final, eval) ~ 
 	class + sex + gpa + boards + hssoc + pretest, data=SocGrades)
 	
-Anova(grades.mod, test="Roy")
+car::Anova(grades.mod, test="Roy")
 
 clr &lt;- c("red", "blue", "darkgreen", "magenta", "brown", "black", "darkgray")
 heplot(grades.mod, col=clr)
@@ -116,8 +110,10 @@ if (require(candisc)) {
 	plot(grades.can, term="boards")
 	}
 
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

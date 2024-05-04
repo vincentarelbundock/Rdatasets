@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>stackloss</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='stackloss'>Brownlee's Stack Loss Plant Data</h2>
+<h2>Brownlee's Stack Loss Plant Data</h2>
 
 <h3>Description</h3>
 
@@ -65,10 +65,10 @@ stack.loss
 
 </table>
 
-<p>For compatibility with S-PLUS, the data sets <code>stack.x</code>, a matrix
-with the first three (independent) variables of the data frame, and
-<code>stack.loss</code>, the numeric vector giving the fourth (dependent)
-variable, are provided as well.
+<p>For historical compatibility with S-PLUS, the data sets
+<code>stack.x</code>, a matrix with the first three (independent) variables
+of the data frame, and <code>stack.loss</code>, the numeric vector giving
+the fourth (dependent) variable, are also provided.
 </p>
 
 
@@ -120,6 +120,7 @@ Methods; In Honor of Peter Huber's 60th Birthday</em>, 1996,
 summary(lm.stack &lt;- lm(stack.loss ~ stack.x))
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

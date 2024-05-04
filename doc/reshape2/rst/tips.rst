@@ -1,54 +1,56 @@
 .. container::
 
-   ==== ===============
-   tips R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Tipping data
-      :name: tips
+      ==== ===============
+      tips R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Tipping data
+         :name: tipping-data
 
-   One waiter recorded information about each tip he received over a
-   period of a few months working in one restaurant. He collected
-   several variables:
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      One waiter recorded information about each tip he received over a
+      period of a few months working in one restaurant. He collected
+      several variables:
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      tips
+      ::
 
-   .. rubric:: Format
-      :name: format
+         tips
 
-   A data frame with 244 rows and 7 variables
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      A data frame with 244 rows and 7 variables
 
-   -  tip in dollars,
+      .. rubric:: Details
+         :name: details
 
-   -  bill in dollars,
+      -  tip in dollars,
 
-   -  sex of the bill payer,
+      -  bill in dollars,
 
-   -  whether there were smokers in the party,
+      -  sex of the bill payer,
 
-   -  day of the week,
+      -  whether there were smokers in the party,
 
-   -  time of day,
+      -  day of the week,
 
-   -  size of the party.
+      -  time of day,
 
-   In all he recorded 244 tips. The data was reported in a collection of
-   case studies for business statistics (Bryant & Smith 1995).
+      -  size of the party.
 
-   .. rubric:: References
-      :name: references
+      In all he recorded 244 tips. The data was reported in a collection
+      of case studies for business statistics (Bryant & Smith 1995).
 
-   Bryant, P. G. and Smith, M (1995) *Practical Data Analysis: Case
-   Studies in Business Statistics*. Homewood, IL: Richard D. Irwin
-   Publishing:
+      .. rubric:: References
+         :name: references
+
+      Bryant, P. G. and Smith, M (1995) *Practical Data Analysis: Case
+      Studies in Business Statistics*. Homewood, IL: Richard D. Irwin
+      Publishing:

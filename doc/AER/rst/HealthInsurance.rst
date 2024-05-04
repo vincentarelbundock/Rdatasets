@@ -1,95 +1,98 @@
 .. container::
 
-   =============== ===============
-   HealthInsurance R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: Medical Expenditure Panel Survey Data
-      :name: HealthInsurance
+      =============== ===============
+      HealthInsurance R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Medical Expenditure Panel Survey Data
+         :name: medical-expenditure-panel-survey-data
 
-   Cross-section data originating from the Medical Expenditure Panel
-   Survey survey conducted in 1996.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-section data originating from the Medical Expenditure Panel
+      Survey survey conducted in 1996.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("HealthInsurance")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("HealthInsurance")
 
-   A data frame containing 8,802 observations on 11 variables.
+      .. rubric:: Format
+         :name: format
 
-   health
-      factor. Is the self-reported health status “healthy”?.
+      A data frame containing 8,802 observations on 11 variables.
 
-   age
-      age in years.
+      health
+         factor. Is the self-reported health status “healthy”?.
 
-   limit
-      factor. Is there any limitation?
+      age
+         age in years.
 
-   gender
-      factor indicating gender.
+      limit
+         factor. Is there any limitation?
 
-   insurance
-      factor. Does the individual have a health insurance?
+      gender
+         factor indicating gender.
 
-   married
-      factor. Is the individual married?
+      insurance
+         factor. Does the individual have a health insurance?
 
-   selfemp
-      factor. Is the individual self-employed?
+      married
+         factor. Is the individual married?
 
-   family
-      family size.
+      selfemp
+         factor. Is the individual self-employed?
 
-   region
-      factor indicating region.
+      family
+         family size.
 
-   ethnicity
-      factor indicating ethnicity: African-American, Caucasian, other.
+      region
+         factor indicating region.
 
-   education
-      factor indicating highest degree attained: no degree, GED (high
-      school equivalent), high school, bachelor, master, PhD, other.
+      ethnicity
+         factor indicating ethnicity: African-American, Caucasian,
+         other.
 
-   .. rubric:: Details
-      :name: details
+      education
+         factor indicating highest degree attained: no degree, GED (high
+         school equivalent), high school, bachelor, master, PhD, other.
 
-   This is a subset of the data used in Perry and Rosen (2004).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This is a subset of the data used in Perry and Rosen (2004).
 
-   Online complements to Stock and Watson (2007).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Stock and Watson (2007).
 
-   Perry, C. and Rosen, H.S. (2004). “The Self-Employed are Less Likely
-   than Wage-Earners to Have Health Insurance. So What?” in Holtz-Eakin,
-   D. and Rosen, H.S. (eds.), *Entrepeneurship and Public Policy*, MIT
-   Press.
+      .. rubric:: References
+         :name: references
 
-   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
-   2nd ed. Boston: Addison Wesley.
+      Perry, C. and Rosen, H.S. (2004). “The Self-Employed are Less
+      Likely than Wage-Earners to Have Health Insurance. So What?” in
+      Holtz-Eakin, D. and Rosen, H.S. (eds.), *Entrepeneurship and
+      Public Policy*, MIT Press.
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, J.H. and Watson, M.W. (2007). *Introduction to
+      Econometrics*, 2nd ed. Boston: Addison Wesley.
 
-   ``StockWatson2007``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``StockWatson2007``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("HealthInsurance")
-      summary(HealthInsurance)
-      prop.table(xtabs(~ selfemp + insurance, data = HealthInsurance), 1)
+      ::
+
+         data("HealthInsurance")
+         summary(HealthInsurance)
+         prop.table(xtabs(~ selfemp + insurance, data = HealthInsurance), 1)

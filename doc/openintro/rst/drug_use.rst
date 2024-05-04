@@ -1,44 +1,47 @@
 .. container::
 
-   ======== ===============
-   drug_use R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Drug use of students and parents
-      :name: drug_use
+      ======== ===============
+      drug_use R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Drug use of students and parents
+         :name: drug-use-of-students-and-parents
 
-   Summary of 445 student-parent pairs.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Summary of 445 student-parent pairs.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      drug_use
+      ::
 
-   .. rubric:: Format
-      :name: format
+         drug_use
 
-   A data frame with 445 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   student
-      a factor with levels ``not`` ``uses``
+      A data frame with 445 observations on the following 2 variables.
 
-   parents
-      a factor with levels ``not`` ``used``
+      student
+         a factor with levels ``not`` ``uses``
 
-   .. rubric:: Source
-      :name: source
+      parents
+         a factor with levels ``not`` ``used``
 
-   Ellis GJ and Stone LH. 1979. Marijuana Use in College: An Evaluation
-   of a Modeling Explanation. Youth and Society 10:323-334.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Ellis GJ and Stone LH. 1979. Marijuana Use in College: An
+      Evaluation of a Modeling Explanation. Youth and Society
+      10:323-334.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      table(drug_use)
+      ::
+
+         table(drug_use)

@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><title>R: The Economic Benefits of Justice</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>EBJ</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Economic Benefits of Justice</h2>
+
+<h3>Description</h3>
+
+<p>A data set on the apparent economic benefits of post-conflict justice
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>EBJ
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 95 observations on the following 12 variables.
+</p>
+
+<dl>
+<dt><code>testnewid_lag</code></dt><dd><p>an apparent identifier variable, of some description</p>
+</dd>
+<dt><code>ccode</code></dt><dd><p>a Correlates of War(?) state code for the location of a conflict</p>
+</dd>
+<dt><code>id</code></dt><dd><p>an apparent identifier variable, of some description</p>
+</dd>
+<dt><code>pcj</code></dt><dd><p>a dummy variable for whether there was some kind of post-conflict justice institution created after a conflict</p>
+</dd>
+<dt><code>fdi</code></dt><dd><p>a variable on net FDI inflows over a 10-year period after a conflict (in millions USD)</p>
+</dd>
+<dt><code>econ_size</code></dt><dd><p>GDP, as an estimate of economic size</p>
+</dd>
+<dt><code>econ_devel</code></dt><dd><p>GDP per capita, as an estimate of economic development</p>
+</dd>
+<dt><code>econ_growth</code></dt><dd><p>GDP per capita change, as an estimate of economic growth</p>
+</dd>
+<dt><code>kaopen</code></dt><dd><p>KAOPEN index score, as an estimate of capital openness</p>
+</dd>
+<dt><code>xr</code></dt><dd><p>exchange rate fluctuations, as an indicator of exchange rate instability</p>
+</dd>
+<dt><code>lf</code></dt><dd><p>labor force size</p>
+</dd>
+<dt><code>lifeexp</code></dt><dd><p>average life expectancy for women, in years</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data are taken Appell and Loyle's (2012) replication data set. Users should
+read their article in <em>Journal of Peace Research</em> for more information about
+the topic, the stake, and how the data were collected. This is just a simple,
+reduced form of the data they make available that is minimally sufficient for
+reproducing the first model of their Table I.
+</p>
+
+
+<h3>References</h3>
+
+<p>Appell, Benjamin J. and Cyanne E. Loyle. 2012. &quot;The Economic Benefits of
+Justice: Post-conflict Justice and Foreign Direct Investment&quot; 49(5): 685&ndash;99.
+</p>
+
+</main>
+
+</div>
+</body></html>

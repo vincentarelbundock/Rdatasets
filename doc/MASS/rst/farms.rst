@@ -1,68 +1,72 @@
 .. container::
 
-   ===== ===============
-   farms R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Ecological Factors in Farm Management
-      :name: farms
+      ===== ===============
+      farms R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Ecological Factors in Farm Management
+         :name: ecological-factors-in-farm-management
 
-   The ``farms`` data frame has 20 rows and 4 columns. The rows are
-   farms on the Dutch island of Terschelling and the columns are factors
-   describing the management of grassland.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``farms`` data frame has 20 rows and 4 columns. The rows are
+      farms on the Dutch island of Terschelling and the columns are
+      factors describing the management of grassland.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      farms
+      ::
 
-   .. rubric:: Format
-      :name: format
+         farms
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``Mois``
-      Five levels of soil moisture – level 3 does not occur at these 20
-      farms.
+      This data frame contains the following columns:
 
-   ``Manag``
-      Grassland management type (``SF`` = standard, ``BF`` = biological,
-      ``HF`` = hobby farming, ``NM`` = nature conservation).
+      ``Mois``
+         Five levels of soil moisture – level 3 does not occur at these
+         20 farms.
 
-   ``Use``
-      Grassland use (``U1`` = hay production, ``U2`` = intermediate,
-      ``U3`` = grazing).
+      ``Manag``
+         Grassland management type (``SF`` = standard, ``BF`` =
+         biological, ``HF`` = hobby farming, ``NM`` = nature
+         conservation).
 
-   ``Manure``
-      Manure usage – classes ``C0`` to ``C4``.
+      ``Use``
+         Grassland use (``U1`` = hay production, ``U2`` = intermediate,
+         ``U3`` = grazing).
 
-   .. rubric:: Source
-      :name: source
+      ``Manure``
+         Manure usage – classes ``C0`` to ``C4``.
 
-   J.C. Gower and D.J. Hand (1996) *Biplots*. Chapman & Hall, Table 4.6.
+      .. rubric:: Source
+         :name: source
 
-   | Quoted as from:
-   | R.H.G. Jongman, C.J.F. ter Braak and O.F.R. van Tongeren (1987)
-     *Data Analysis in Community and Landscape Ecology.* PUDOC,
-     Wageningen.
+      J.C. Gower and D.J. Hand (1996) *Biplots*. Chapman & Hall, Table
+      4.6.
 
-   .. rubric:: References
-      :name: references
+      | Quoted as from:
+      | R.H.G. Jongman, C.J.F. ter Braak and O.F.R. van Tongeren (1987)
+        *Data Analysis in Community and Landscape Ecology.* PUDOC,
+        Wageningen.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      farms.mca <- mca(farms, abbrev = TRUE)  # Use levels as names
-      eqscplot(farms.mca$cs, type = "n")
-      text(farms.mca$rs, cex = 0.7)
-      text(farms.mca$cs, labels = dimnames(farms.mca$cs)[[1]], cex = 0.7)
+      ::
+
+         farms.mca <- mca(farms, abbrev = TRUE)  # Use levels as names
+         eqscplot(farms.mca$cs, type = "n")
+         text(farms.mca$rs, cex = 0.7)
+         text(farms.mca$cs, labels = dimnames(farms.mca$cs)[[1]], cex = 0.7)

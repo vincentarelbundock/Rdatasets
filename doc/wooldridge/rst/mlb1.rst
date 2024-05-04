@@ -1,148 +1,150 @@
 .. container::
 
-   ==== ===============
-   mlb1 R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: mlb1
-      :name: mlb1
+      ==== ===============
+      mlb1 R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: mlb1
+         :name: mlb1
 
-   Wooldridge Source: Collected by G. Mark Holmes, a former MSU
-   undergraduate, for a term project. The salary data were obtained from
-   the New York Times, April 11, 1993. The baseball statistics are from
-   The Baseball Encyclopedia, 9th edition, and the city population
-   figures are from the Statistical Abstract of the United States. Data
-   loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Collected by G. Mark Holmes, a former MSU
+      undergraduate, for a term project. The salary data were obtained
+      from the New York Times, April 11, 1993. The baseball statistics
+      are from The Baseball Encyclopedia, 9th edition, and the city
+      population figures are from the Statistical Abstract of the United
+      States. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('mlb1')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('mlb1')
 
-   A data.frame with 353 observations on 47 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **salary:** 1993 season salary
+      A data.frame with 353 observations on 47 variables:
 
-   -  **teamsal:** team payroll
+      -  **salary:** 1993 season salary
 
-   -  **nl:** =1 if national league
+      -  **teamsal:** team payroll
 
-   -  **years:** years in major leagues
+      -  **nl:** =1 if national league
 
-   -  **games:** career games played
+      -  **years:** years in major leagues
 
-   -  **atbats:** career at bats
+      -  **games:** career games played
 
-   -  **runs:** career runs scored
+      -  **atbats:** career at bats
 
-   -  **hits:** career hits
+      -  **runs:** career runs scored
 
-   -  **doubles:** career doubles
+      -  **hits:** career hits
 
-   -  **triples:** career triples
+      -  **doubles:** career doubles
 
-   -  **hruns:** career home runs
+      -  **triples:** career triples
 
-   -  **rbis:** career runs batted in
+      -  **hruns:** career home runs
 
-   -  **bavg:** career batting average
+      -  **rbis:** career runs batted in
 
-   -  **bb:** career walks
+      -  **bavg:** career batting average
 
-   -  **so:** career strike outs
+      -  **bb:** career walks
 
-   -  **sbases:** career stolen bases
+      -  **so:** career strike outs
 
-   -  **fldperc:** career fielding perc
+      -  **sbases:** career stolen bases
 
-   -  **frstbase:** = 1 if first base
+      -  **fldperc:** career fielding perc
 
-   -  **scndbase:** =1 if second base
+      -  **frstbase:** = 1 if first base
 
-   -  **shrtstop:** =1 if shortstop
+      -  **scndbase:** =1 if second base
 
-   -  **thrdbase:** =1 if third base
+      -  **shrtstop:** =1 if shortstop
 
-   -  **outfield:** =1 if outfield
+      -  **thrdbase:** =1 if third base
 
-   -  **catcher:** =1 if catcher
+      -  **outfield:** =1 if outfield
 
-   -  **yrsallst:** years as all-star
+      -  **catcher:** =1 if catcher
 
-   -  **hispan:** =1 if hispanic
+      -  **yrsallst:** years as all-star
 
-   -  **black:** =1 if black
+      -  **hispan:** =1 if hispanic
 
-   -  **whitepop:** white pop. in city
+      -  **black:** =1 if black
 
-   -  **blackpop:** black pop. in city
+      -  **whitepop:** white pop. in city
 
-   -  **hisppop:** hispanic pop. in city
+      -  **blackpop:** black pop. in city
 
-   -  **pcinc:** city per capita income
+      -  **hisppop:** hispanic pop. in city
 
-   -  **gamesyr:** games per year in league
+      -  **pcinc:** city per capita income
 
-   -  **hrunsyr:** home runs per year
+      -  **gamesyr:** games per year in league
 
-   -  **atbatsyr:** at bats per year
+      -  **hrunsyr:** home runs per year
 
-   -  **allstar:** perc. of years an all-star
+      -  **atbatsyr:** at bats per year
 
-   -  **slugavg:** career slugging average
+      -  **allstar:** perc. of years an all-star
 
-   -  **rbisyr:** rbis per year
+      -  **slugavg:** career slugging average
 
-   -  **sbasesyr:** stolen bases per year
+      -  **rbisyr:** rbis per year
 
-   -  **runsyr:** runs scored per year
+      -  **sbasesyr:** stolen bases per year
 
-   -  **percwhte:** percent white in city
+      -  **runsyr:** runs scored per year
 
-   -  **percblck:** percent black in city
+      -  **percwhte:** percent white in city
 
-   -  **perchisp:** percent hispanic in city
+      -  **percblck:** percent black in city
 
-   -  **blckpb:** black*percblck
+      -  **perchisp:** percent hispanic in city
 
-   -  **hispph:** hispan*perchisp
+      -  **blckpb:** black*percblck
 
-   -  **whtepw:** white*percwhte
+      -  **hispph:** hispan*perchisp
 
-   -  **blckph:** black*perchisp
+      -  **whtepw:** white*percwhte
 
-   -  **hisppb:** hispan*percblck
+      -  **blckph:** black*perchisp
 
-   -  **lsalary:** log(salary)
+      -  **hisppb:** hispan*percblck
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lsalary:** log(salary)
 
-   The baseball statistics are career statistics through the 1992
-   season. Players whose race or ethnicity could not be easily
-   determined were not included. It should not be too difficult to
-   obtain the city population and racial composition numbers for
-   Montreal and Toronto for 1993. Of course, the data can be pretty
-   easily obtained for more recent players.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 143-149, 165, 244-245, 262
+      The baseball statistics are career statistics through the 1992
+      season. Players whose race or ethnicity could not be easily
+      determined were not included. It should not be too difficult to
+      obtain the city population and racial composition numbers for
+      Montreal and Toronto for 1993. Of course, the data can be pretty
+      easily obtained for more recent players.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 143-149, 165, 244-245, 262
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(mlb1)
+      ::
+
+          str(mlb1)

@@ -1,37 +1,39 @@
 .. container::
 
-   ======== ===============
-   HawkTail R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Tail Lengths of Hawks
-      :name: HawkTail
+      ======== ===============
+      HawkTail R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Tail Lengths of Hawks
+         :name: tail-lengths-of-hawks
 
-   Tail lengths for two hawk species
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Tail lengths for two hawk species
 
-   A data frame with 838 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   =========== ===========================================
-   ``Species`` ``RT``\ =Red-tailed, ``SS``\ =Sharp-shinned
-   ``Tail``    Length of tail (in mm)
-   \           
-   =========== ===========================================
+      A data frame with 838 observations on the following 2 variables.
 
-   .. rubric:: Details
-      :name: details
+      =========== ===========================================
+      ``Species`` ``RT``\ =Red-tailed, ``SS``\ =Sharp-shinned
+      ``Tail``    Length of tail (in mm)
+      \           
+      =========== ===========================================
 
-   Tail lengths measured for a sample of 838 hawks observed in Mount
-   Vernon, Iowa. Note: HawkTail2 has these data in unstacked format and
-   they are a subset of the data in Hawks which has a third species
-   (Cooper's hawk).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Tail lengths measured for a sample of 838 hawks observed in Mount
+      Vernon, Iowa. Note: HawkTail2 has these data in unstacked format
+      and they are a subset of the data in Hawks which has a third
+      species (Cooper's hawk).
 
-   Observations by students and faculty at Cornell College.
+      .. rubric:: Source
+         :name: source
+
+      Observations by students and faculty at Cornell College.

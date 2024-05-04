@@ -1,70 +1,72 @@
 .. container::
 
-   ======== ===============
-   Gasoline R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Gasoline Consumption
-      :name: Gasoline
+      ======== ===============
+      Gasoline R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Gasoline Consumption
+         :name: gasoline-consumption
 
-   a panel of 18 observations from 1960 to 1978
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 342
+      a panel of 18 observations from 1960 to 1978
 
-   *observation* : country
+      *number of observations* : 342
 
-   *country* : OECD
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : OECD
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Gasoline)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Gasoline)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   country
-      a factor with 18 levels
+      A dataframe containing :
 
-   year
-      the year
+      country
+         a factor with 18 levels
 
-   lgaspcar
-      logarithm of motor gasoline consumption per auto
+      year
+         the year
 
-   lincomep
-      logarithm of real per-capita income
+      lgaspcar
+         logarithm of motor gasoline consumption per auto
 
-   lrpmg
-      logarithm of real motor gasoline price
+      lincomep
+         logarithm of real per-capita income
 
-   lcarpcap
-      logarithm of the stock of cars per capita
+      lrpmg
+         logarithm of real motor gasoline price
 
-   .. rubric:: Source
-      :name: source
+      lcarpcap
+         logarithm of the stock of cars per capita
 
-   Baltagi, B.H. and Y.J. Griggin (1983) “Gasoline demand in the OECD:
-   an application of pooling and testing procedures”, *European Economic
-   Review*, **22**.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Baltagi, B.H. and Y.J. Griggin (1983) “Gasoline demand in the
+      OECD: an application of pooling and testing procedures”, *European
+      Economic Review*, **22**.
 
-   Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John
-   Wiley and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Baltagi, Badi H. (2003) *Econometric analysis of panel data*, John
+      Wiley and sons, https://www.wiley.com/legacy/wileychi/baltagi/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

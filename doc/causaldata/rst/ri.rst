@@ -1,59 +1,61 @@
 .. container::
 
-   == ===============
-   ri R Documentation
-   == ===============
+   .. container::
 
-   .. rubric:: A simple simulated data set for calculating p-values
-      :name: ri
+      == ===============
+      ri R Documentation
+      == ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: A simple simulated data set for calculating p-values
+         :name: a-simple-simulated-data-set-for-calculating-p-values
 
-   This simulated data allows for a quick and easy calculation of a
-   p-value using randomization inference.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This simulated data allows for a quick and easy calculation of a
+      p-value using randomization inference.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      ri
+      ::
 
-   .. rubric:: Format
-      :name: format
+         ri
 
-   A data frame with 8 rows and 5 variables
+      .. rubric:: Format
+         :name: format
 
-   name
-      Fictional Name
+      A data frame with 8 rows and 5 variables
 
-   d
-      Treatment
+      name
+         Fictional Name
 
-   y
-      Outcome
+      d
+         Treatment
 
-   y0
-      Outcome if untreated
+      y
+         Outcome
 
-   y1
-      Outcome if treated
+      y0
+         Outcome if untreated
 
-   .. rubric:: Details
-      :name: details
+      y1
+         Outcome if treated
 
-   This data is used in the *Potential Outcomes Causal Model* chapter of
-   *Causal Inference: The Mixtape* by Cunningham.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This data is used in the *Potential Outcomes Causal Model* chapter
+      of *Causal Inference: The Mixtape* by Cunningham.
 
-   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-   https://mixtape.scunning.com/index.html.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+      https://mixtape.scunning.com/index.html.
 
-   Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
-   https://mixtape.scunning.com/index.html.
+      .. rubric:: References
+         :name: references
+
+      Cunningham. 2021. Causal Inference: The Mixtape. Yale Press.
+      https://mixtape.scunning.com/index.html.

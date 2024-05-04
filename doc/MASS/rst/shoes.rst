@@ -1,33 +1,35 @@
 .. container::
 
-   ===== ===============
-   shoes R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Shoe wear data of Box, Hunter and Hunter
-      :name: shoes
+      ===== ===============
+      shoes R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Shoe wear data of Box, Hunter and Hunter
+         :name: shoe-wear-data-of-box-hunter-and-hunter
 
-   A list of two vectors, giving the wear of shoes of materials A and B
-   for one foot each of ten boys.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A list of two vectors, giving the wear of shoes of materials A and
+      B for one foot each of ten boys.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      shoes
+      ::
 
-   .. rubric:: Source
-      :name: source
+         shoes
 
-   G. E. P. Box, W. G. Hunter and J. S. Hunter (1978) *Statistics for
-   Experimenters.* Wiley, p. 100
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      G. E. P. Box, W. G. Hunter and J. S. Hunter (1978) *Statistics for
+      Experimenters.* Wiley, p. 100
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

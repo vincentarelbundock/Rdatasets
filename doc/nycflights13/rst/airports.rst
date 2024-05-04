@@ -1,68 +1,70 @@
 .. container::
 
-   ======== ===============
-   airports R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Airport metadata
-      :name: airports
+      ======== ===============
+      airports R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Airport metadata
+         :name: airport-metadata
 
-   Useful metadata about airports.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Useful metadata about airports.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      airports
+      ::
 
-   .. rubric:: Format
-      :name: format
+         airports
 
-   A data frame with columns:
+      .. rubric:: Format
+         :name: format
 
-   faa
-      FAA airport code.
+      A data frame with columns:
 
-   name
-      Usual name of the aiport.
+      faa
+         FAA airport code.
 
-   lat, lon
-      Location of airport.
+      name
+         Usual name of the aiport.
 
-   alt
-      Altitude, in feet.
+      lat, lon
+         Location of airport.
 
-   tz
-      Timezone offset from GMT.
+      alt
+         Altitude, in feet.
 
-   dst
-      Daylight savings time zone. A = Standard US DST: starts on the
-      second Sunday of March, ends on the first Sunday of November. U =
-      unknown. N = no dst.
+      tz
+         Timezone offset from GMT.
 
-   tzone
-      IANA time zone, as determined by GeoNames webservice.
+      dst
+         Daylight savings time zone. A = Standard US DST: starts on the
+         second Sunday of March, ends on the first Sunday of November. U
+         = unknown. N = no dst.
 
-   .. rubric:: Source
-      :name: source
+      tzone
+         IANA time zone, as determined by GeoNames webservice.
 
-   https://openflights.org/data.html, downloaded 2014-06-27
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://openflights.org/data.html, downloaded 2014-06-27
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      airports
+      ::
 
-      if (require("dplyr")) {
+         airports
 
-      airports %>% rename(dest = faa) %>% semi_join(flights)
-      flights %>% anti_join(airports %>% rename(dest = faa))
-      airports %>% rename(origin = faa) %>% semi_join(flights)
+         if (require("dplyr")) {
 
-      }
+         airports %>% rename(dest = faa) %>% semi_join(flights)
+         flights %>% anti_join(airports %>% rename(dest = faa))
+         airports %>% rename(origin = faa) %>% semi_join(flights)
+
+         }

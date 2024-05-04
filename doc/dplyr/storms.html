@@ -12,17 +12,17 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>storms</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='storms'>Storm tracks data</h2>
+<h2>Storm tracks data</h2>
 
 <h3>Description</h3>
 
 <p>This dataset is the NOAA Atlantic hurricane database best track data,
 <a href="https://www.nhc.noaa.gov/data/#hurdat">https://www.nhc.noaa.gov/data/#hurdat</a>. The data includes the positions and
-attributes of storms from 1975-2021. Storms
+attributes of storms from 1975-2022. Storms
 from 1979 onward are measured every six hours during the lifetime of the
 storm. Storms in earlier years have some missing data.
 </p>
@@ -36,7 +36,7 @@ storm. Storms in earlier years have some missing data.
 
 <h3>Format</h3>
 
-<p>A tibble with 19,066 observations
+<p>A tibble with 19,537 observations
 and 13 variables:
 </p>
 
@@ -116,6 +116,7 @@ if (requireNamespace("ggplot2", quietly = TRUE)) {
 storms
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

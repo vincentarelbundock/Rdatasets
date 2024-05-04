@@ -1,27 +1,29 @@
 .. container::
 
-   =========== ===============
-   nidd.thresh R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: The River Nidd Data
-      :name: nidd.thresh
+      =========== ===============
+      nidd.thresh R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: The River Nidd Data
+         :name: the-river-nidd-data
 
-   These data represent high river levels of the River Nidd in Yorkshire
-   above a threshold value of 65. These data are suitable for analysis
-   with ``gpd``.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These data represent high river levels of the River Nidd in
+      Yorkshire above a threshold value of 65. These data are suitable
+      for analysis with ``gpd``.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(nidd.thresh)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(nidd.thresh)
 
-   A numeric vector containing 154 observations.
+      .. rubric:: Format
+         :name: format
+
+      A numeric vector containing 154 observations.

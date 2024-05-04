@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><title>R: Comparative Public Health: The Political Economy of Human...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>GHR04</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Comparative Public Health: The Political Economy of Human Misery and Well-Being</h2>
+
+<h3>Description</h3>
+
+<p>This is a data set for replicating Ghobarah et al. (2004), a reduced form of
+what they make available on Dataverse for replication. Variables have been
+renamed for legibility.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>GHR04
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 182 observations on the following 15 variables.
+</p>
+
+<dl>
+<dt><code>country</code></dt><dd><p>a character vector denoting a country name</p>
+</dd>
+<dt><code>iso3c</code></dt><dd><p>a three-character ISO code for the country</p>
+</dd>
+<dt><code>pubhlthexppgdp</code></dt><dd><p>a numeric vector for public health expenditures as a percentage of GDP</p>
+</dd>
+<dt><code>totexphlth</code></dt><dd><p>a numeric vector for total expenditures on health</p>
+</dd>
+<dt><code>hale</code></dt><dd><p>a numeric vector for health adjusted life expectancy (in years)</p>
+</dd>
+<dt><code>log_gdppc</code></dt><dd><p>a numeric vector for (log-transformed) GDP per capita</p>
+</dd>
+<dt><code>gini</code></dt><dd><p>a numeric vector for income inequality</p>
+</dd>
+<dt><code>log_educ</code></dt><dd><p>a numeric vector for (log-transformed) educational attainment</p>
+</dd>
+<dt><code>log_vanhanen</code></dt><dd><p>a numeric vector for (log-transformed) racial-linguistic-religious heterogeneity</p>
+</dd>
+<dt><code>rivalry</code></dt><dd><p>a dummy variable indicating the presence of an enduring international rivalry for the country</p>
+</dd>
+<dt><code>polity</code></dt><dd><p>a numeric vector communicating a Polity score, as a measure of the democratic nature of the country's regime</p>
+</dd>
+<dt><code>prvhlthexpgdp</code></dt><dd><p>a numeric vector for private spending on health as a percentage of GDP</p>
+</dd>
+<dt><code>urban_growth</code></dt><dd><p>a numeric vector for the pace of urbanization</p>
+</dd>
+<dt><code>cwdeaths</code></dt><dd><p>a numeric vector for civil war deaths</p>
+</dd>
+<dt><code>contig_cw</code></dt><dd><p>a dummy variable communicating whether there is a civil war in a geographically contiguous territory</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The three-character ISO code is the only new addition to the data. I
+add this because the country names they have in the data are not neat and may
+lead users astray if they wanted to search for a specific observation. The
+ISO code for Yugoslavia (Serbia and Montenegro) around this time was &quot;SCG&quot;.
+</p>
+<p>The data the authors make available come with no .do file to indicate what
+exactly they used. Some forensic work based on the descriptive statistics they
+mention led to this reduced form of their data, which almost perfectly replicates
+their results. The differences are typically in the hundredths, and often in
+the thousandths, and should be considered &quot;good enough&quot; for replication
+purposes. The only real confusion on my end is why I ended up with one more
+observation than they report in their analyses. This suggests one (or more?)
+of their variables they use has an <code>NA</code>, but I have no way of knowing what it
+could be.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Ghobarah, Hazem Adam, Paul Huth, and Bruce Russett. 2004. &quot;Comparative Public Health: The Political Economy of Human Misery and Well-Being&quot; International Studies Quarterly 48: 73-94
+</p>
+
+</main>
+
+</div>
+</body></html>

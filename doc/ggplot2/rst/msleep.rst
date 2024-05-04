@@ -1,65 +1,67 @@
 .. container::
 
-   ====== ===============
-   msleep R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: An updated and expanded version of the mammals sleep
-      dataset
-      :name: msleep
+      ====== ===============
+      msleep R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: An updated and expanded version of the mammals sleep
+         dataset
+         :name: an-updated-and-expanded-version-of-the-mammals-sleep-dataset
 
-   This is an updated and expanded version of the mammals sleep dataset.
-   Updated sleep times and weights were taken from V. M. Savage and G.
-   B. West. A quantitative, theoretical framework for understanding
-   mammalian sleep. Proceedings of the National Academy of Sciences, 104
-   (3):1051-1056, 2007.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This is an updated and expanded version of the mammals sleep
+      dataset. Updated sleep times and weights were taken from V. M.
+      Savage and G. B. West. A quantitative, theoretical framework for
+      understanding mammalian sleep. Proceedings of the National Academy
+      of Sciences, 104 (3):1051-1056, 2007.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      msleep
+      ::
 
-   .. rubric:: Format
-      :name: format
+         msleep
 
-   A data frame with 83 rows and 11 variables:
+      .. rubric:: Format
+         :name: format
 
-   name
-      common name
+      A data frame with 83 rows and 11 variables:
 
-   genus
-   vore
-      carnivore, omnivore or herbivore?
+      name
+         common name
 
-   order
-   conservation
-      the conservation status of the animal
+      genus
+      vore
+         carnivore, omnivore or herbivore?
 
-   sleep_total
-      total amount of sleep, in hours
+      order
+      conservation
+         the conservation status of the animal
 
-   sleep_rem
-      rem sleep, in hours
+      sleep_total
+         total amount of sleep, in hours
 
-   sleep_cycle
-      length of sleep cycle, in hours
+      sleep_rem
+         rem sleep, in hours
 
-   awake
-      amount of time spent awake, in hours
+      sleep_cycle
+         length of sleep cycle, in hours
 
-   brainwt
-      brain weight in kilograms
+      awake
+         amount of time spent awake, in hours
 
-   bodywt
-      body weight in kilograms
+      brainwt
+         brain weight in kilograms
 
-   .. rubric:: Details
-      :name: details
+      bodywt
+         body weight in kilograms
 
-   Additional variables order, conservation status and vore were added
-   from wikipedia.
+      .. rubric:: Details
+         :name: details
+
+      Additional variables order, conservation status and vore were
+      added from wikipedia.

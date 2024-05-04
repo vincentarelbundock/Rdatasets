@@ -1,73 +1,76 @@
 .. container::
 
-   ========== ===============
-   airquality R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: New York Air Quality Measurements
-      :name: airquality
+      ========== ===============
+      airquality R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: New York Air Quality Measurements
+         :name: new-york-air-quality-measurements
 
-   Daily air quality measurements in New York, May to September 1973.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Daily air quality measurements in New York, May to September 1973.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      airquality
+      ::
 
-   .. rubric:: Format
-      :name: format
+         airquality
 
-   A data frame with 153 observations on 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   ======== =========== ======= =======================
-   ``[,1]`` ``Ozone``   numeric Ozone (ppb)
-   ``[,2]`` ``Solar.R`` numeric Solar R (lang)
-   ``[,3]`` ``Wind``    numeric Wind (mph)
-   ``[,4]`` ``Temp``    numeric Temperature (degrees F)
-   ``[,5]`` ``Month``   numeric Month (1--12)
-   ``[,6]`` ``Day``     numeric Day of month (1--31)
-   ======== =========== ======= =======================
+      A data frame with 153 observations on 6 variables.
 
-   .. rubric:: Details
-      :name: details
+      ======== =========== ======= =======================
+      ``[,1]`` ``Ozone``   numeric Ozone (ppb)
+      ``[,2]`` ``Solar.R`` numeric Solar R (lang)
+      ``[,3]`` ``Wind``    numeric Wind (mph)
+      ``[,4]`` ``Temp``    numeric Temperature (degrees F)
+      ``[,5]`` ``Month``   numeric Month (1--12)
+      ``[,6]`` ``Day``     numeric Day of month (1--31)
+      ======== =========== ======= =======================
 
-   Daily readings of the following air quality values for May 1, 1973 (a
-   Tuesday) to September 30, 1973.
+      .. rubric:: Details
+         :name: details
 
-   -  ``Ozone``: Mean ozone in parts per billion from 1300 to 1500 hours
-      at Roosevelt Island
+      Daily readings of the following air quality values for May 1, 1973
+      (a Tuesday) to September 30, 1973.
 
-   -  ``Solar.R``: Solar radiation in Langleys in the frequency band
-      4000–7700 Angstroms from 0800 to 1200 hours at Central Park
+      -  ``Ozone``: Mean ozone in parts per billion from 1300 to 1500
+         hours at Roosevelt Island
 
-   -  ``Wind``: Average wind speed in miles per hour at 0700 and 1000
-      hours at LaGuardia Airport
+      -  ``Solar.R``: Solar radiation in Langleys in the frequency band
+         4000–7700 Angstroms from 0800 to 1200 hours at Central Park
 
-   -  ``Temp``: Maximum daily temperature in degrees Fahrenheit at La
-      Guardia Airport.
+      -  ``Wind``: Average wind speed in miles per hour at 0700 and 1000
+         hours at LaGuardia Airport
 
-   .. rubric:: Source
-      :name: source
+      -  ``Temp``: Maximum daily temperature in degrees Fahrenheit at
+         LaGuardia Airport.
 
-   The data were obtained from the New York State Department of
-   Conservation (ozone data) and the National Weather Service
-   (meteorological data).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The data were obtained from the New York State Department of
+      Conservation (ozone data) and the National Weather Service
+      (meteorological data).
 
-   Chambers, J. M., Cleveland, W. S., Kleiner, B. and Tukey, P. A.
-   (1983) *Graphical Methods for Data Analysis*. Belmont, CA: Wadsworth.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Chambers, J. M., Cleveland, W. S., Kleiner, B. and Tukey, P. A.
+      (1983) *Graphical Methods for Data Analysis*. Belmont, CA:
+      Wadsworth.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(graphics)
-      pairs(airquality, panel = panel.smooth, main = "airquality data")
+      ::
+
+         require(graphics)
+         pairs(airquality, panel = panel.smooth, main = "airquality data")

@@ -1,85 +1,87 @@
 .. container::
 
-   ====== ===============
-   Socatt R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Social Attitudes Survey
-      :name: Socatt
+      ====== ===============
+      Socatt R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Social Attitudes Survey
+         :name: social-attitudes-survey
 
-   These data come from the British Social Attitudes (BSA) Survey
-   started in 1983. The eligible persons were all adults aged 18 or over
-   living in private households in Britain. The data consist of
-   completed results of 264 respondents out of 410.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These data come from the British Social Attitudes (BSA) Survey
+      started in 1983. The eligible persons were all adults aged 18 or
+      over living in private households in Britain. The data consist of
+      completed results of 264 respondents out of 410.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Socatt)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Socatt)
 
-   A data frame with 1056 observations on the following 9 variables.
+      .. rubric:: Format
+         :name: format
 
-   district
-      District ID - a factor
+      A data frame with 1056 observations on the following 9 variables.
 
-   respond
-      Respondent code (within district) - a factor
+      district
+         District ID - a factor
 
-   year
-      A factor with levels ``1983``, ``1984``, ``1985``, and ``1986``
+      respond
+         Respondent code (within district) - a factor
 
-   numpos
-      An ordered factor giving the number of positive answers to seven
-      questions.
+      year
+         A factor with levels ``1983``, ``1984``, ``1985``, and ``1986``
 
-   party
-      Political party chosen - a factor. Levels are ``conservative``,
-      ``labour``, ``Lib/SDP/Alliance``, ``others``, and ``none``.
+      numpos
+         An ordered factor giving the number of positive answers to
+         seven questions.
 
-   class
-      Self assessed social class - a factor. Levels are ``middle``,
-      ``upper working``, and ``lower working``.
+      party
+         Political party chosen - a factor. Levels are ``conservative``,
+         ``labour``, ``Lib/SDP/Alliance``, ``others``, and ``none``.
 
-   gender
-      Respondent's sex. (1=male, 2=female)
+      class
+         Self assessed social class - a factor. Levels are ``middle``,
+         ``upper working``, and ``lower working``.
 
-   age
-      Age in years
+      gender
+         Respondent's sex. (1=male, 2=female)
 
-   religion
-      Religion - a factor. Levels are ``Roman Catholic``,
-      ``Protestant/Church of England``, ``others``, and ``none``.
+      age
+         Age in years
 
-   .. rubric:: Details
-      :name: details
+      religion
+         Religion - a factor. Levels are ``Roman     Catholic``,
+         ``Protestant/Church of England``, ``others``, and ``none``.
 
-   These data are provided as an example of multilevel data with a
-   multinomial response.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      These data are provided as an example of multilevel data with a
+      multinomial response.
 
-   http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html
 
-   McGrath, K. and Waterton, J. (1986). *British Social Attitudes
-   1983-1986 panel survey.* London, Social and Community Planning
-   Research.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      McGrath, K. and Waterton, J. (1986). *British Social Attitudes
+      1983-1986 panel survey.* London, Social and Community Planning
+      Research.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      str(Socatt)
-      summary(Socatt)
+      ::
+
+         str(Socatt)
+         summary(Socatt)

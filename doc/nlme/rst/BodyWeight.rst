@@ -1,57 +1,60 @@
 .. container::
 
-   ========== ===============
-   BodyWeight R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Rat weight over time for different diets
-      :name: BodyWeight
+      ========== ===============
+      BodyWeight R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Rat weight over time for different diets
+         :name: rat-weight-over-time-for-different-diets
 
-   The ``BodyWeight`` data frame has 176 rows and 4 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``BodyWeight`` data frame has 176 rows and 4 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   weight
-      a numeric vector giving the body weight of the rat (grams).
+      This data frame contains the following columns:
 
-   Time
-      a numeric vector giving the time at which the measurement is made
-      (days).
+      weight
+         a numeric vector giving the body weight of the rat (grams).
 
-   Rat
-      an ordered factor with levels ``2`` < ``3`` < ``4`` < ``1`` <
-      ``8`` < ``5`` < ``6`` < ``7`` < ``11`` < ``9`` < ``10`` < ``12`` <
-      ``13`` < ``15`` < ``14`` < ``16`` identifying the rat whose weight
-      is measured.
+      Time
+         a numeric vector giving the time at which the measurement is
+         made (days).
 
-   Diet
-      a factor with levels ``1`` to ``3`` indicating the diet that the
-      rat receives.
+      Rat
+         an ordered factor with levels ``2`` < ``3`` < ``4`` < ``1`` <
+         ``8`` < ``5`` < ``6`` < ``7`` < ``11`` < ``9`` < ``10`` <
+         ``12`` < ``13`` < ``15`` < ``14`` < ``16`` identifying the rat
+         whose weight is measured.
 
-   .. rubric:: Details
-      :name: details
+      Diet
+         a factor with levels ``1`` to ``3`` indicating the diet that
+         the rat receives.
 
-   Hand and Crowder (1996) describe data on the body weights of rats
-   measured over 64 days. These data also appear in Table 2.4 of Crowder
-   and Hand (1990). The body weights of the rats (in grams) are measured
-   on day 1 and every seven days thereafter until day 64, with an extra
-   measurement on day 44. The experiment started several weeks before
-   “day 1.” There are three groups of rats, each on a different diet.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Hand and Crowder (1996) describe data on the body weights of rats
+      measured over 64 days. These data also appear in Table 2.4 of
+      Crowder and Hand (1990). The body weights of the rats (in grams)
+      are measured on day 1 and every seven days thereafter until day
+      64, with an extra measurement on day 44. The experiment started
+      several weeks before “day 1.” There are three groups of rats, each
+      on a different diet.
 
-   Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S
-   and S-PLUS*, Springer, New York. (Appendix A.3)
+      .. rubric:: Source
+         :name: source
 
-   Crowder, M. and Hand, D. (1990), *Analysis of Repeated Measures*,
-   Chapman and Hall, London.
+      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
+      S and S-PLUS*, Springer, New York. (Appendix A.3)
 
-   Hand, D. and Crowder, M. (1996), *Practical Longitudinal Data
-   Analysis*, Chapman and Hall, London.
+      Crowder, M. and Hand, D. (1990), *Analysis of Repeated Measures*,
+      Chapman and Hall, London.
+
+      Hand, D. and Crowder, M. (1996), *Practical Longitudinal Data
+      Analysis*, Chapman and Hall, London.

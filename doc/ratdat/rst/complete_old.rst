@@ -1,75 +1,77 @@
 .. container::
 
-   ============ ===============
-   complete_old R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Complete survey data from 1977 to 1989.
-      :name: complete_old
+      ============ ===============
+      complete_old R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Complete survey data from 1977 to 1989.
+         :name: complete-survey-data-from-1977-to-1989.
 
-   Data on individual rodents captured at the Portal Project and the
-   plots they were captured in. This data.frame is the same as
-   'complete', but only containing data from 1977 to 1989. This is so
-   that instructors can have learners begin working with a clean, older
-   dataset, and later introduce a messy version of the newer years of
-   data, in whatever format fits their needs.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on individual rodents captured at the Portal Project and the
+      plots they were captured in. This data.frame is the same as
+      'complete', but only containing data from 1977 to 1989. This is so
+      that instructors can have learners begin working with a clean,
+      older dataset, and later introduce a messy version of the newer
+      years of data, in whatever format fits their needs.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      complete_old
+      ::
 
-   .. rubric:: Format
-      :name: format
+         complete_old
 
-   A data frame with columns:
+      .. rubric:: Format
+         :name: format
 
-   record_id
-      Unique record identifier
+      A data frame with columns:
 
-   month
-      Month captured
+      record_id
+         Unique record identifier
 
-   day
-      Day captured
+      month
+         Month captured
 
-   year
-      Year captured
+      day
+         Day captured
 
-   plot_id
-      Plot individual was captured on
+      year
+         Year captured
 
-   species_id
-      Species identifier
+      plot_id
+         Plot individual was captured on
 
-   sex
-      Sex of the individual
+      species_id
+         Species identifier
 
-   hindfoot_length
-      Length of a back foot in mm
+      sex
+         Sex of the individual
 
-   weight
-      Weight of the individual in g' Species data.
+      hindfoot_length
+         Length of a back foot in mm
 
-   genus
-      The genus of the species
+      weight
+         Weight of the individual in g' Species data.
 
-   species
-      The latin species name
+      genus
+         The genus of the species
 
-   taxa
-      General taxonomic category of the species
+      species
+         The latin species name
 
-   plot_type
-      Type of experimental manipulation conducted on the plot
+      taxa
+         General taxonomic category of the species
 
-   .. rubric:: Source
-      :name: source
+      plot_type
+         Type of experimental manipulation conducted on the plot
 
-   Portal Project Teaching Database, doi:
-   `10.6084/m9.figshare.1314459 <https://doi.org/10.6084/m9.figshare.1314459>`__
+      .. rubric:: Source
+         :name: source
+
+      Portal Project Teaching Database,
+      `doi:10.6084/m9.figshare.1314459 <https://doi.org/10.6084/m9.figshare.1314459>`__

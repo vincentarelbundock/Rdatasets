@@ -1,71 +1,74 @@
 .. container::
 
-   ==== ===============
-   s109 R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: rollcall object, 109th U.S. Senate (2005-06).
-      :name: s109
+      ==== ===============
+      s109 R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: rollcall object, 109th U.S. Senate (2005-06).
+         :name: rollcall-object-109th-u.s.-senate-2005-06.
 
-   A sample rollcall object, generated using a collection of the
-   rollcalls of the 109th U.S. Senate (2005-2006).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A sample rollcall object, generated using a collection of the
+      rollcalls of the 109th U.S. Senate (2005-2006).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(s109)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(s109)
 
-   A ``rollcall`` object containing the recorded votes of the 109th U.S.
-   Senate, plus information identifying the legislators and the
-   rollcalls.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      A ``rollcall`` object containing the recorded votes of the 109th
+      U.S. Senate, plus information identifying the legislators and the
+      rollcalls.
 
-   Note the coding scheme used by Poole and Rosenthal; Yea (1), Nay (6)
-   etc.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Note the coding scheme used by Poole and Rosenthal; Yea (1), Nay
+      (6) etc.
 
-   Keith Poole's web site: https://legacy.voteview.com/senate109.htm
+      .. rubric:: Source
+         :name: source
 
-   Originally scraped from the Senate's web site by Jeff Lewis (UCLA).
+      Keith Poole's web site: https://legacy.voteview.com/senate109.htm
 
-   Information identifying the votes is available at
-   https://voteview.com/static/data/out/rollcalls/S109_rollcalls.csv
+      Originally scraped from the Senate's web site by Jeff Lewis
+      (UCLA).
 
-   .. rubric:: Examples
-      :name: examples
+      Information identifying the votes is available at
+      https://voteview.com/static/data/out/rollcalls/S109_rollcalls.csv
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(pscl)
-      data(s109)
-      is(s109,"rollcall")    ## TRUE
-      s109                   ## print method for class rollcall
-      summary(s109)          ## summary method
-      summary(s109,verbose=TRUE)
-      ## Not run: 
-      ## how s109 was created
-      require(pscl)
-      s109 <- readKH("https://voteview.com/static/data/out/votes/S109_votes.ord",
-                     desc="109th U.S. Senate",
-                     debug=TRUE)
-      url <- "https://voteview.com/static/data/out/rollcalls/S109_rollcalls.csv"
+      ::
 
-      s109$vote.data <- data.frame(read.csv(file=url,header=TRUE))
-      s109$vote.data$date <- as.Date(s109$vote.data$date,
-                                     format="
-      dimnames(s109$votes)[[2]] <- paste(s109$vote.data$session,
-                                         s109$vote.data$number,sep="-")
+         require(pscl)
+         data(s109)
+         is(s109,"rollcall")    ## TRUE
+         s109                   ## print method for class rollcall
+         summary(s109)          ## summary method
+         summary(s109,verbose=TRUE)
+         ## Not run: 
+         ## how s109 was created
+         require(pscl)
+         s109 <- readKH("https://voteview.com/static/data/out/votes/S109_votes.ord",
+                        desc="109th U.S. Senate",
+                        debug=TRUE)
+         url <- "https://voteview.com/static/data/out/rollcalls/S109_rollcalls.csv"
 
-      ## End(Not run)
+         s109$vote.data <- data.frame(read.csv(file=url,header=TRUE))
+         s109$vote.data$date <- as.Date(s109$vote.data$date,
+                                        format="
+         dimnames(s109$votes)[[2]] <- paste(s109$vote.data$session,
+                                            s109$vote.data$number,sep="-")
+
+         ## End(Not run)

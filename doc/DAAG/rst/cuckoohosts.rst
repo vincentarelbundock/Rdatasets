@@ -1,90 +1,92 @@
 .. container::
 
-   =========== ===============
-   cuckoohosts R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Comparison of cuckoo eggs with host eggs
-      :name: cuckoohosts
+      =========== ===============
+      cuckoohosts R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Comparison of cuckoo eggs with host eggs
+         :name: comparison-of-cuckoo-eggs-with-host-eggs
 
-   These data compare mean length, mean breadth, and egg color, between
-   cuckoos and their hosts.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These data compare mean length, mean breadth, and egg color,
+      between cuckoos and their hosts.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      cuckoohosts
+      ::
 
-   .. rubric:: Format
-      :name: format
+         cuckoohosts
 
-   A data frame with 10 observations on the following 12 variables.
+      .. rubric:: Format
+         :name: format
 
-   clength
-      mean length of cuckoo eggs in given host's nest
+      A data frame with 10 observations on the following 12 variables.
 
-   cl.sd
-      standard deviation of cuckoo egg lengths
+      clength
+         mean length of cuckoo eggs in given host's nest
 
-   cbreadth
-      mean breadth of cuckoo eggs in given host's nest
+      cl.sd
+         standard deviation of cuckoo egg lengths
 
-   cb.sd
-      standard deviation of cuckoo egg breadths
+      cbreadth
+         mean breadth of cuckoo eggs in given host's nest
 
-   cnum
-      number of cuckoo eggs
+      cb.sd
+         standard deviation of cuckoo egg breadths
 
-   hlength
-      length of host eggs
+      cnum
+         number of cuckoo eggs
 
-   hl.sd
-      standard deviation of host egg lengths
+      hlength
+         length of host eggs
 
-   hbreadth
-      breadth of host eggs
+      hl.sd
+         standard deviation of host egg lengths
 
-   hb.sd
-      standard deviation of host egg breadths
+      hbreadth
+         breadth of host eggs
 
-   hnum
-      number of host eggs
+      hb.sd
+         standard deviation of host egg breadths
 
-   match
-      number of eggs where color matched
+      hnum
+         number of host eggs
 
-   nomatch
-      number where color did not match
+      match
+         number of eggs where color matched
 
-   .. rubric:: Details
-      :name: details
+      nomatch
+         number where color did not match
 
-   Although from the same study that generated data in the data frame
-   ``cuckoos``, the data do not match precisely. The cuckoo egg lengths
-   and breadths are from the tables on page 168, the host egg lengths
-   and breadths from Appendix IV on page 176, and the color match counts
-   from the table on page 171.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Although from the same study that generated data in the data frame
+      ``cuckoos``, the data do not match precisely. The cuckoo egg
+      lengths and breadths are from the tables on page 168, the host egg
+      lengths and breadths from Appendix IV on page 176, and the color
+      match counts from the table on page 171.
 
-   Latter, O.H., 1902. The egg of *cuculus canorus*. an inquiry into the
-   dimensions of the cuckoo's egg and the relation of the variations to
-   the size of the eggs of the foster-parent, with notes on coloration,
-   &c. *Biometrika*, 1:164–176.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Latter, O.H., 1902. The egg of *cuculus canorus*. an inquiry into
+      the dimensions of the cuckoo's egg and the relation of the
+      variations to the size of the eggs of the foster-parent, with
+      notes on coloration, &c. *Biometrika*, 1:164–176.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      cuckoohosts
-      str(cuckoohosts)
-      plot(cuckoohosts)
-      with(cuckoohosts,
-           plot(c(clength,hlength),c(cbreadth,hbreadth),col=rep(1:2,c(6,6))))
+      ::
+
+         cuckoohosts
+         str(cuckoohosts)
+         plot(cuckoohosts)
+         with(cuckoohosts,
+              plot(c(clength,hlength),c(cbreadth,hbreadth),col=rep(1:2,c(6,6))))

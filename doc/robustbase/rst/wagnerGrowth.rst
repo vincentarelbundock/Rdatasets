@@ -1,86 +1,88 @@
 .. container::
 
-   ============ ===============
-   wagnerGrowth R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Wagner's Hannover Employment Growth Data
-      :name: wagnerGrowth
+      ============ ===============
+      wagnerGrowth R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Wagner's Hannover Employment Growth Data
+         :name: wagners-hannover-employment-growth-data
 
-   Wagner (1994) investigates the rate of employment growth (``y``) as
-   function of percentage of people engaged in **p**\ roducation
-   **a**\ ctivities (``PA``) and **h**\ igher **s**\ ervices (``HS``)
-   and of the **g**\ rowth of these percentages (``GPA``, ``GHS``)
-   during three time periods in 21 geographical regions of the greater
-   Hannover area.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wagner (1994) investigates the rate of employment growth (``y``)
+      as function of percentage of people engaged in **p**\ roducation
+      **a**\ ctivities (``PA``) and **h**\ igher **s**\ ervices (``HS``)
+      and of the **g**\ rowth of these percentages (``GPA``, ``GHS``)
+      during three time periods in 21 geographical regions of the
+      greater Hannover area.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(wagnerGrowth, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(wagnerGrowth, package="robustbase")
 
-   A data frame with ``21 \times 3 = 63`` observations (one per
-   ``Region x Period``) on the following 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Region``
-      a ``factor`` with 21 levels, denoting the corresponding region in
-      Hannover (conceptually a “block factor”).
+      A data frame with ``21 \times 3 = 63`` observations (one per
+      ``Region x Period``) on the following 7 variables.
 
-   ``PA``
-      numeric: percent of people involved in production activities.
+      ``Region``
+         a ``factor`` with 21 levels, denoting the corresponding region
+         in Hannover (conceptually a “block factor”).
 
-   ``GPA``
-      **g**\ rowth of ``PA``.
+      ``PA``
+         numeric: percent of people involved in production activities.
 
-   ``HS``
-      a numeric vector
+      ``GPA``
+         **g**\ rowth of ``PA``.
 
-   ``GHS``
-      a numeric vector
+      ``HS``
+         a numeric vector
 
-   ``y``
-      a numeric vector
+      ``GHS``
+         a numeric vector
 
-   ``Period``
-      a ``factor`` with levels ``1:3``, denoting the time period, 1 =
-      1979-1982, 2 = 1983-1988, 3 = 1989-1992.
+      ``y``
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      ``Period``
+         a ``factor`` with levels ``1:3``, denoting the time period, 1 =
+         1979-1982, 2 = 1983-1988, 3 = 1989-1992.
 
-   Hubert, M. and Rousseeuw, P. J. (1997). Robust regression with both
-   continuous and binary regressors, *Journal of Statistical Planning
-   and Inference* **57**, 153–163.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Hubert, M. and Rousseeuw, P. J. (1997). Robust regression with
+      both continuous and binary regressors, *Journal of Statistical
+      Planning and Inference* **57**, 153–163.
 
-   Wagner J. (1994). Regionale Beschäftigungsdynamik und höherwertige
-   Produktionsdienste: Ergebnisse für den Grossraum Hannover
-   (1979-1992). *Raumforschung und Raumordnung* **52**, 146–150.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Wagner J. (1994). Regionale Beschäftigungsdynamik und höherwertige
+      Produktionsdienste: Ergebnisse für den Grossraum Hannover
+      (1979-1992). *Raumforschung und Raumordnung* **52**, 146–150.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(wagnerGrowth)
-      ## maybe
-      str(wagnerGrowth)
+      ::
+
+         data(wagnerGrowth)
+         ## maybe
+         str(wagnerGrowth)
 
 
-      require(lattice)
-      (xyplot(y ~ Period | Region, data = wagnerGrowth,
-               main = "wagnerGrowth: 21 regions @ Hannover"))
+         require(lattice)
+         (xyplot(y ~ Period | Region, data = wagnerGrowth,
+                  main = "wagnerGrowth: 21 regions @ Hannover"))
 
-      (dotplot(y ~ reorder(Region,y,median), data = wagnerGrowth,
-               main = "wagnerGrowth",
-               xlab = "Region [ordered by  median(y | Region) ]"))
+         (dotplot(y ~ reorder(Region,y,median), data = wagnerGrowth,
+                  main = "wagnerGrowth",
+                  xlab = "Region [ordered by  median(y | Region) ]"))

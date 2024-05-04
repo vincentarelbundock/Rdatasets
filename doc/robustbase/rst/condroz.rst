@@ -1,66 +1,69 @@
 .. container::
 
-   ======= ===============
-   condroz R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Condroz Data
-      :name: condroz
+      ======= ===============
+      condroz R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Condroz Data
+         :name: condroz-data
 
-   Dataset with pH-value and Calcium content in soil samples, collected
-   in different communities of the Condroz region in Belgium. The data
-   pertain to a subset of 428 samples with a pH-value between 7.0 and
-   7.5.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Dataset with pH-value and Calcium content in soil samples,
+      collected in different communities of the Condroz region in
+      Belgium. The data pertain to a subset of 428 samples with a
+      pH-value between 7.0 and 7.5.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(condroz, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(condroz, package="robustbase")
 
-   A data frame with 428 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Ca``
-      Calcium content of the soil sample
+      A data frame with 428 observations on the following 2 variables.
 
-   ``pH``
-      pH value of the soil sample
+      ``Ca``
+         Calcium content of the soil sample
 
-   .. rubric:: Details
-      :name: details
+      ``pH``
+         pH value of the soil sample
 
-   For more information on the dataset, cf. Goegebeur et al. (2005).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      For more information on the dataset, cf. Goegebeur et al. (2005).
 
-   Hubert and Vandervieren (2006), p. 10. This dataset is also studied
-   in Vandewalle et al. (2004).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Hubert and Vandervieren (2006), p. 10. This dataset is also
+      studied in Vandewalle et al. (2004).
 
-   See also those for ``adjbox``.
+      .. rubric:: References
+         :name: references
 
-   Goegebeur, Y., Planchon, V., Beirlant, J., Oger, R. (2005). Quality
-   Assesment of Pedochemical Data Using Extreme Value Methodology,
-   Journal of Applied Science, 5, p. 1092-1102.
+      See also those for ``adjbox``.
 
-   Vandewalle, B., Beirlant, J., Hubert, M. (2004). A robust estimator
-   of the tail index based on an exponential regression model, in
-   Hubert, M., Pison G., Struyf, A. and S. Van Aelst, ed., Theory and
-   Applications of Recent Robust Methods, Birkhäuser, Basel, p. 367-376.
+      Goegebeur, Y., Planchon, V., Beirlant, J., Oger, R. (2005).
+      Quality Assesment of Pedochemical Data Using Extreme Value
+      Methodology, Journal of Applied Science, 5, p. 1092-1102.
 
-   .. rubric:: Examples
-      :name: examples
+      Vandewalle, B., Beirlant, J., Hubert, M. (2004). A robust
+      estimator of the tail index based on an exponential regression
+      model, in Hubert, M., Pison G., Struyf, A. and S. Van Aelst, ed.,
+      Theory and Applications of Recent Robust Methods, Birkhäuser,
+      Basel, p. 367-376.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        adjbox(condroz$Ca)
+      ::
+
+           adjbox(condroz$Ca)

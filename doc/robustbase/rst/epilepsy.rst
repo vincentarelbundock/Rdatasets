@@ -1,112 +1,117 @@
 .. container::
 
-   ======== ===============
-   epilepsy R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Epilepsy Attacks Data Set
-      :name: epilepsy
+      ======== ===============
+      epilepsy R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Epilepsy Attacks Data Set
+         :name: epilepsy-attacks-data-set
 
-   Data from a clinical trial of 59 patients with epilepsy (Breslow,
-   1996) in order to illustrate diagnostic techniques in Poisson
-   regression.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from a clinical trial of 59 patients with epilepsy (Breslow,
+      1996) in order to illustrate diagnostic techniques in Poisson
+      regression.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(epilepsy, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(epilepsy, package="robustbase")
 
-   A data frame with 59 observations on the following 11 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``ID``
-      Patient identification number
+      A data frame with 59 observations on the following 11 variables.
 
-   ``Y1``
-      Number of epilepsy attacks patients have during the first
-      follow-up period
+      ``ID``
+         Patient identification number
 
-   ``Y2``
-      Number of epilepsy attacks patients have during the second
-      follow-up period
+      ``Y1``
+         Number of epilepsy attacks patients have during the first
+         follow-up period
 
-   ``Y3``
-      Number of epilepsy attacks patients have during the third
-      follow-up period
+      ``Y2``
+         Number of epilepsy attacks patients have during the second
+         follow-up period
 
-   ``Y4``
-      Number of epilepsy attacks patients have during the forth
-      follow-up period
+      ``Y3``
+         Number of epilepsy attacks patients have during the third
+         follow-up period
 
-   ``Base``
-      Number of epileptic attacks recorded during 8 week period prior to
-      randomization
+      ``Y4``
+         Number of epilepsy attacks patients have during the forth
+         follow-up period
 
-   ``Age``
-      Age of the patients
+      ``Base``
+         Number of epileptic attacks recorded during 8 week period prior
+         to randomization
 
-   ``Trt``
-      a factor with levels ``placebo`` ``progabide`` indicating whether
-      the anti-epilepsy drug Progabide has been applied or not
+      ``Age``
+         Age of the patients
 
-   ``Ysum``
-      Total number of epilepsy attacks patients have during the four
-      follow-up periods
+      ``Trt``
+         a factor with levels ``placebo`` ``progabide`` indicating
+         whether the anti-epilepsy drug Progabide has been applied or
+         not
 
-   ``Age10``
-      Age of the patients devided by 10
+      ``Ysum``
+         Total number of epilepsy attacks patients have during the four
+         follow-up periods
 
-   ``Base4``
-      Variable ``Base`` devided by 4
+      ``Age10``
+         Age of the patients devided by 10
 
-   .. rubric:: Details
-      :name: details
+      ``Base4``
+         Variable ``Base`` devided by 4
 
-   Thall and Vail reported data from a clinical trial of 59 patients
-   with epilepsy, 31 of whom were randomized to receive the
-   anti-epilepsy drug Progabide and 28 of whom received a placebo.
-   Baseline data consisted of the patient's age and the number of
-   epileptic seizures recorded during 8 week period prior to
-   randomization. The response consisted of counts of seizures occuring
-   during the four consecutive follow-up periods of two weeks each.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Thall and Vail reported data from a clinical trial of 59 patients
+      with epilepsy, 31 of whom were randomized to receive the
+      anti-epilepsy drug Progabide and 28 of whom received a placebo.
+      Baseline data consisted of the patient's age and the number of
+      epileptic seizures recorded during 8 week period prior to
+      randomization. The response consisted of counts of seizures
+      occuring during the four consecutive follow-up periods of two
+      weeks each.
 
-   Thall, P.F. and Vail S.C. (1990) Some covariance models for
-   longitudinal count data with overdispersion. *Biometrics* **46**,
-   657–671.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Thall, P.F. and Vail S.C. (1990) Some covariance models for
+      longitudinal count data with overdispersion. *Biometrics* **46**,
+      657–671.
 
-   Diggle, P.J., Liang, K.Y., and Zeger, S.L. (1994) *Analysis of
-   Longitudinal Data*; Clarendon Press.
+      .. rubric:: References
+         :name: references
 
-   Breslow N. E. (1996) Generalized linear models: Checking assumptions
-   and strengthening conclusions. *Statistica Applicata* **8**, 23–41.
+      Diggle, P.J., Liang, K.Y., and Zeger, S.L. (1994) *Analysis of
+      Longitudinal Data*; Clarendon Press.
 
-   .. rubric:: Examples
-      :name: examples
+      Breslow N. E. (1996) Generalized linear models: Checking
+      assumptions and strengthening conclusions. *Statistica Applicata*
+      **8**, 23–41.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(epilepsy)
-      str(epilepsy)
-      pairs(epilepsy[,c("Ysum","Base4","Trt","Age10")])
+      ::
 
-      Efit1 <- glm(Ysum ~ Age10 + Base4*Trt, family=poisson, data=epilepsy)
-      summary(Efit1)
+         data(epilepsy)
+         str(epilepsy)
+         pairs(epilepsy[,c("Ysum","Base4","Trt","Age10")])
 
-      ## Robust Fit :
-      Efit2 <- glmrob(Ysum ~ Age10 + Base4*Trt, family=poisson, data=epilepsy,
-                      method = "Mqle",
-                      tcc=1.2, maxit=100)
-      summary(Efit2)
+         Efit1 <- glm(Ysum ~ Age10 + Base4*Trt, family=poisson, data=epilepsy)
+         summary(Efit1)
+
+         ## Robust Fit :
+         Efit2 <- glmrob(Ysum ~ Age10 + Base4*Trt, family=poisson, data=epilepsy,
+                         method = "Mqle",
+                         tcc=1.2, maxit=100)
+         summary(Efit2)

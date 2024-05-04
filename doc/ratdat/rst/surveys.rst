@@ -1,58 +1,60 @@
 .. container::
 
-   ======= ===============
-   surveys R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Survey data.
-      :name: surveys
+      ======= ===============
+      surveys R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Survey data.
+         :name: survey-data.
 
-   Data on individual rodents captured at the Portal Project
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on individual rodents captured at the Portal Project
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      surveys
+      ::
 
-   .. rubric:: Format
-      :name: format
+         surveys
 
-   A data frame with columns:
+      .. rubric:: Format
+         :name: format
 
-   record_id
-      Unique record identifier
+      A data frame with columns:
 
-   month
-      Month captured
+      record_id
+         Unique record identifier
 
-   day
-      Day captured
+      month
+         Month captured
 
-   year
-      Year captured
+      day
+         Day captured
 
-   plot_id
-      Plot individual was captured on
+      year
+         Year captured
 
-   species_id
-      Species identifier
+      plot_id
+         Plot individual was captured on
 
-   sex
-      Sex of the individual
+      species_id
+         Species identifier
 
-   hindfoot_length
-      Length of a back foot in mm
+      sex
+         Sex of the individual
 
-   weight
-      Weight of the individual in g' Species data.
+      hindfoot_length
+         Length of a back foot in mm
 
-   .. rubric:: Source
-      :name: source
+      weight
+         Weight of the individual in g' Species data.
 
-   Portal Project Teaching Database, doi:
-   `10.6084/m9.figshare.1314459 <https://doi.org/10.6084/m9.figshare.1314459>`__
+      .. rubric:: Source
+         :name: source
+
+      Portal Project Teaching Database,
+      `doi:10.6084/m9.figshare.1314459 <https://doi.org/10.6084/m9.figshare.1314459>`__

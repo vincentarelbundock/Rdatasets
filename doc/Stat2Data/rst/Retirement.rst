@@ -1,38 +1,41 @@
 .. container::
 
-   ========== ===============
-   Retirement R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Yearly Contributions to a Supplemental Retirement Account
-      :name: Retirement
+      ========== ===============
+      Retirement R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Yearly Contributions to a Supplemental Retirement
+         Account
+         :name: yearly-contributions-to-a-supplemental-retirement-account
 
-   Contributions to a supplemental retirement account (1997-2012)
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Contributions to a supplemental retirement account (1997-2012)
 
-   A dataset with 16 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ======== ==========================================================
-   ``Year`` 1997-2012
-   ``SRA``  Annual contribution to the Supplemental Retirement Account
-   \        
-   ======== ==========================================================
+      A dataset with 16 observations on the following 2 variables.
 
-   .. rubric:: Details
-      :name: details
+      ======== ==========================================================
+      ``Year`` 1997-2012
+      ``SRA``  Annual contribution to the Supplemental Retirement Account
+      \        
+      ======== ==========================================================
 
-   A faculty member opened a supplemental retirement account (SRA) in
-   1997 to invest money for retirement. This dataset shows the annual
-   contributions to that account. Annual contributions were adjusted
-   downward during sabbatical years in order to maintain a steady family
-   income.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      A faculty member opened a supplemental retirement account (SRA) in
+      1997 to invest money for retirement. This dataset shows the annual
+      contributions to that account. Annual contributions were adjusted
+      downward during sabbatical years in order to maintain a steady
+      family income.
 
-   Individual records kept by the faculty member.
+      .. rubric:: Source
+         :name: source
+
+      Individual records kept by the faculty member.

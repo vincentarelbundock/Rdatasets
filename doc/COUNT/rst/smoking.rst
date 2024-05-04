@@ -1,64 +1,66 @@
 .. container::
 
-   ======= ===============
-   smoking R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: smoking
-      :name: smoking
+      ======= ===============
+      smoking R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: smoking
+         :name: smoking
 
-   A simple data set with only 6 observations.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A simple data set with only 6 observations.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(smoking)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(smoking)
 
-   A data frame with 6 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``sbp``
-      systolic blood pressure of subject
+      A data frame with 6 observations on the following 4 variables.
 
-   ``male``
-      1=male; 0=female
+      ``sbp``
+         systolic blood pressure of subject
 
-   ``smoker``
-      1=hist of smoking; 0= no hist of smoking
+      ``male``
+         1=male; 0=female
 
-   ``age``
-      age of subject
+      ``smoker``
+         1=hist of smoking; 0= no hist of smoking
 
-   .. rubric:: Details
-      :name: details
+      ``age``
+         age of subject
 
-   smoking is saved as a data frame.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      smoking is saved as a data frame.
 
-   none
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      none
 
-   Hilbe, Joseph M (2014), Modeling Count Data, Cambridge University
-   Press
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Hilbe, Joseph M (2014), Modeling Count Data, Cambridge University
+      Press
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      sbp    <- c(131,132,122,119,123,115)
-      male   <- c(1,1,1,0,0,0)
-      smoker <- c(1,1,0,0,1,0)
-      age    <- c(34,36,30,32,26,23)
-      summary(reg1 <- lm(sbp~ male+smoker+age))
+      ::
+
+         sbp    <- c(131,132,122,119,123,115)
+         male   <- c(1,1,1,0,0,0)
+         smoker <- c(1,1,0,0,1,0)
+         age    <- c(34,36,30,32,26,23)
+         summary(reg1 <- lm(sbp~ male+smoker+age))

@@ -1,0 +1,116 @@
+<!DOCTYPE html><html><head><title>R: The fundamental physical constants</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>constants</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The fundamental physical constants</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains values for over 300 basic fundamental constants in
+nature. The values originate from the 2018 adjustment which is based on the
+latest relevant precision measurements and improvements of theoretical
+calculations. Such work has been carried out under the authority of the
+<em>Task Group on Fundamental Constants</em> (TGFC) of the
+<em>Committee on Data of the International Science Council</em> (CODATA). These
+updated values became available on May 20, 2019. They are published at
+<a href="http://physics.nist.gov/constants">http://physics.nist.gov/constants</a>, a website of the
+<em>Fundamental Constants Data Center</em> of the
+<em>National Institute of Standards and Technology</em> (NIST), Gaithersburg,
+Maryland, USA.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>constants
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 354 rows and 4 variables:
+</p>
+
+<dl>
+<dt>name</dt><dd><p>The name of the constant.</p>
+</dd>
+<dt>value</dt><dd><p>The value of the constant.</p>
+</dd>
+<dt>uncert</dt><dd><p>The uncertainty associated with the value. If <code>NA</code> then the
+value is seen as an 'exact' value (e.g., an electron volt has the exact value
+of 1.602 176 634 e-19 J).</p>
+</dd>
+<dt>sf_value,sf_uncert</dt><dd><p>The number of significant figures associated with
+the value and any uncertainty value.</p>
+</dd>
+<dt>units</dt><dd><p>The units associated with the constant.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<p>Here is a glimpse at the data available in <code>constants</code>.
+</p>
+<div class="sourceCode r"><pre>dplyr::glimpse(constants)
+#&gt; Rows: 354
+#&gt; Columns: 6
+#&gt; $ name      &lt;chr&gt; "alpha particle-electron mass ratio", "alpha particle mass",~
+#&gt; $ value     &lt;dbl&gt; 7.294300e+03, 6.644657e-27, 5.971920e-10, 3.727379e+03, 4.00~
+#&gt; $ uncert    &lt;dbl&gt; 2.4e-07, 2.0e-36, 1.8e-19, 1.1e-06, 6.3e-11, 1.2e-12, 2.2e-1~
+#&gt; $ sf_value  &lt;dbl&gt; 12, 11, 11, 11, 13, 11, 12, 13, 9, 12, 12, 11, 11, 11, 12, 1~
+#&gt; $ sf_uncert &lt;dbl&gt; 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, ~
+#&gt; $ units     &lt;chr&gt; NA, "kg", "J", "MeV", "u", "kg mol^-1", NA, NA, "m", "kg", "~
+</pre></div>
+
+
+<h3>Dataset ID and Badge</h3>
+
+<p>DATA-9
+</p>
+
+<div style="text-align:center;"><img src="https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_constants.png" alt="This image of that of a dataset badge." style="width:50%;padding-bottom:20px;"></div>
+
+
+
+<h3>Dataset Introduced</h3>
+
+<p><code>v0.10.0</code> (October 7, 2023)
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other datasets: 
+<code>countrypops</code>,
+<code>exibble</code>,
+<code>gtcars</code>,
+<code>illness</code>,
+<code>metro</code>,
+<code>pizzaplace</code>,
+<code>rx_addv</code>,
+<code>rx_adsl</code>,
+<code>sp500</code>,
+<code>sza</code>,
+<code>towny</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

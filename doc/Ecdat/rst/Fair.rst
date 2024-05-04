@@ -1,80 +1,83 @@
 .. container::
 
-   ==== ===============
-   Fair R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Extramarital Affairs Data
-      :name: Fair
+      ==== ===============
+      Fair R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Extramarital Affairs Data
+         :name: extramarital-affairs-data
 
-   a cross-section
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 601
+      a cross-section
 
-   *observation* : individuals
+      *number of observations* : 601
 
-   *country* : United States
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Fair)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Fair)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   sex
-      a factor with levels (male,female)
+      A dataframe containing :
 
-   age
+      sex
+         a factor with levels (male,female)
+
       age
+         age
 
-   ym
-      number of years married
+      ym
+         number of years married
 
-   child
-      children ? a factor
+      child
+         children ? a factor
 
-   religious
-      how religious, from 1 (anti) to 5 (very)
+      religious
+         how religious, from 1 (anti) to 5 (very)
 
-   education
       education
+         education
 
-   occupation
-      occupation, from 1 to 7, according to Hollingshead's
-      classification (reverse numbering)
+      occupation
+         occupation, from 1 to 7, according to Hollingshead's
+         classification (reverse numbering)
 
-   rate
-      self rating of marriage, from 1 (very unhappy) to 5 (very happy)
+      rate
+         self rating of marriage, from 1 (very unhappy) to 5 (very
+         happy)
 
-   nbaffairs
-      number of affairs in past year
+      nbaffairs
+         number of affairs in past year
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: Source
+         :name: source
 
-   Fair, R. (1977) “A note on the computation of the tobit estimator”,
-   *Econometrica*, **45**, 1723-1727.
+      Fair, R. (1977) “A note on the computation of the tobit
+      estimator”, *Econometrica*, **45**, 1723-1727.
 
-   https://fairmodel.econ.yale.edu/rayfair/pdf/1978A200.PDF.
+      https://fairmodel.econ.yale.edu/rayfair/pdf/1978A200.PDF.
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: References
+         :name: references
 
-   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   https://archive.org/details/econometricanaly0000gree_f4x3, Table
-   F22.2.
+      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+      https://archive.org/details/econometricanaly0000gree_f4x3, Table
+      F22.2.
 
-   .. rubric:: See Also
-      :name: see-also
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

@@ -1,27 +1,29 @@
 .. container::
 
-   ======== ===============
-   gasprice R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Time Series of US Gasoline Prices
-      :name: gasprice
+      ======== ===============
+      gasprice R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Time Series of US Gasoline Prices
+         :name: time-series-of-us-gasoline-prices
 
-   Time Series of Weekly US Gasoline Prices: 1990:8 – 2003:26
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Time Series of Weekly US Gasoline Prices: 1990:8 – 2003:26
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("gasprice")
+      ::
 
-   .. rubric:: Examples
-      :name: examples
+         data("gasprice")
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(gasprice)
+      ::
+
+         data(gasprice)

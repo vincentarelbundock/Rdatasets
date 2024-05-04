@@ -1,151 +1,154 @@
 .. container::
 
-   ======= ===============
-   mathpnl R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: mathpnl
-      :name: mathpnl
+      ======= ===============
+      mathpnl R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: mathpnl
+         :name: mathpnl
 
-   Wooldridge Source: Leslie Papke, an economics professor at MSU,
-   collected these data from Michigan Department of Education web site,
-   www.michigan.gov/mde. These are district-level data, which Professor
-   Papke kindly provided. She has used building-level data in “The
-   Effects of Spending on Test Pass Rates: Evidence from Michigan”
-   (2005), Journal of Public Economics 89, 821-839. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Leslie Papke, an economics professor at MSU,
+      collected these data from Michigan Department of Education web
+      site, www.michigan.gov/mde. These are district-level data, which
+      Professor Papke kindly provided. She has used building-level data
+      in “The Effects of Spending on Test Pass Rates: Evidence from
+      Michigan” (2005), Journal of Public Economics 89, 821-839. Data
+      loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('mathpnl')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('mathpnl')
 
-   A data.frame with 3850 observations on 52 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **distid:** district identifier
+      A data.frame with 3850 observations on 52 variables:
 
-   -  **intid:** intermediate school district
+      -  **distid:** district identifier
 
-   -  **lunch:** percent eligible for free lunch
+      -  **intid:** intermediate school district
 
-   -  **enrol:** school enrollment
+      -  **lunch:** percent eligible for free lunch
 
-   -  **ptr:** pupil/teacher: 1995-98
+      -  **enrol:** school enrollment
 
-   -  **found:** foundation grant, $: 1995-98
+      -  **ptr:** pupil/teacher: 1995-98
 
-   -  **expp:** expenditure per pupil
+      -  **found:** foundation grant, $: 1995-98
 
-   -  **revpp:** revenue per pupil
+      -  **expp:** expenditure per pupil
 
-   -  **avgsal:** average teacher salary
+      -  **revpp:** revenue per pupil
 
-   -  **drop:** high school dropout rate, percent
+      -  **avgsal:** average teacher salary
 
-   -  **grad:** high school grad. rate, percent
+      -  **drop:** high school dropout rate, percent
 
-   -  **math4:** percent satisfactory, 4th grade math
+      -  **grad:** high school grad. rate, percent
 
-   -  **math7:** percent satisfactory, 7th grade math
+      -  **math4:** percent satisfactory, 4th grade math
 
-   -  **choice:** number choice students
+      -  **math7:** percent satisfactory, 7th grade math
 
-   -  **psa:** # public school academy studs.
+      -  **choice:** number choice students
 
-   -  **year:** 1992-1998
+      -  **psa:** # public school academy studs.
 
-   -  **staff:** staff per 1000 students
+      -  **year:** 1992-1998
 
-   -  **avgben:** avg teacher fringe benefits
+      -  **staff:** staff per 1000 students
 
-   -  **y92:** =1 if year == 1992
+      -  **avgben:** avg teacher fringe benefits
 
-   -  **y93:** =1 if year == 1993
+      -  **y92:** =1 if year == 1992
 
-   -  **y94:** =1 if year == 1994
+      -  **y93:** =1 if year == 1993
 
-   -  **y95:** =1 if year == 1995
+      -  **y94:** =1 if year == 1994
 
-   -  **y96:** =1 if year == 1996
+      -  **y95:** =1 if year == 1995
 
-   -  **y97:** =1 if year == 1997
+      -  **y96:** =1 if year == 1996
 
-   -  **y98:** =1 if year == 1998
+      -  **y97:** =1 if year == 1997
 
-   -  **lexpp:** log(expp)
+      -  **y98:** =1 if year == 1998
 
-   -  **lfound:** log(found)
+      -  **lexpp:** log(expp)
 
-   -  **lexpp_1:** lexpp[\_n-1]
+      -  **lfound:** log(found)
 
-   -  **lfnd_1:** lfnd[\_n-1]
+      -  **lexpp_1:** lexpp[_n-1]
 
-   -  **lenrol:** log(enrol)
+      -  **lfnd_1:** lfnd[_n-1]
 
-   -  **lenrolsq:** lenrol^2
+      -  **lenrol:** log(enrol)
 
-   -  **lunchsq:** lunch^2
+      -  **lenrolsq:** lenrol^2
 
-   -  **lfndsq:** lfnd^2
+      -  **lunchsq:** lunch^2
 
-   -  **math4_1:** math4[\_n-1]
+      -  **lfndsq:** lfnd^2
 
-   -  **cmath4:** math4 - math4_1
+      -  **math4_1:** math4[_n-1]
 
-   -  **gexpp:** lexpp - lexpp_1
+      -  **cmath4:** math4 - math4_1
 
-   -  **gexpp_1:** gexpp[\_n-1
+      -  **gexpp:** lexpp - lexpp_1
 
-   -  **gfound:** lfound - lfnd_1
+      -  **gexpp_1:** gexpp[_n-1
 
-   -  **gfnd_1:** gfound[\_n-1]
+      -  **gfound:** lfound - lfnd_1
 
-   -  **clunch:** lunch - lunch[\_n-1]
+      -  **gfnd_1:** gfound[_n-1]
 
-   -  **clnchsq:** lunchsq - lunchsq[\_n-1]
+      -  **clunch:** lunch - lunch[_n-1]
 
-   -  **genrol:** lenrol - lenrol[\_n-1]
+      -  **clnchsq:** lunchsq - lunchsq[_n-1]
 
-   -  **genrolsq:** genrol^2
+      -  **genrol:** lenrol - lenrol[_n-1]
 
-   -  **expp92:** expp in 1992
+      -  **genrolsq:** genrol^2
 
-   -  **lexpp92:** log(expp92)
+      -  **expp92:** expp in 1992
 
-   -  **math4_92:** math4 in 1992
+      -  **lexpp92:** log(expp92)
 
-   -  **cpi:** consumer price index
+      -  **math4_92:** math4 in 1992
 
-   -  **rexpp:** real spending per pupil, 1997$
+      -  **cpi:** consumer price index
 
-   -  **lrexpp:** log(rexpp)
+      -  **rexpp:** real spending per pupil, 1997$
 
-   -  **lrexpp_1:** lrexpp[\_n-1]
+      -  **lrexpp:** log(rexpp)
 
-   -  **grexpp:** lrexpp - lrexpp_1
+      -  **lrexpp_1:** lrexpp[_n-1]
 
-   -  **grexpp_1:** grexpp[\_n-1]
+      -  **grexpp:** lrexpp - lrexpp_1
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **grexpp_1:** grexpp[_n-1]
 
-   pages 479-480, 505-506
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 479-480, 505-506
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(mathpnl)
+      ::
+
+          str(mathpnl)

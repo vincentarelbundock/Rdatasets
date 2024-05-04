@@ -1,53 +1,55 @@
 .. container::
 
-   ======== ===============
-   oddbooks R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Measurements on 12 books
-      :name: oddbooks
+      ======== ===============
+      oddbooks R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Measurements on 12 books
+         :name: measurements-on-12-books
 
-   Data giving thickness (mm), height (cm), width (cm) and weight (g),
-   of 12 books. Books were selected so that thickness decreased as page
-   area increased
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data giving thickness (mm), height (cm), width (cm) and weight
+      (g), of 12 books. Books were selected so that thickness decreased
+      as page area increased
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(oddbooks)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(oddbooks)
 
-   A data frame with 12 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   thick
-      a numeric vector
+      A data frame with 12 observations on the following 4 variables.
 
-   height
-      a numeric vector
+      thick
+         a numeric vector
 
-   breadth
-      a numeric vector
+      height
+         a numeric vector
 
-   weight
-      a numeric vector
+      breadth
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      weight
+         a numeric vector
 
-   JM took books from his library.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      JM took books from his library.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(oddbooks)
-      str(oddbooks)
-      plot(oddbooks) 
+      ::
+
+         data(oddbooks)
+         str(oddbooks)
+         plot(oddbooks) 

@@ -1,83 +1,85 @@
 .. container::
 
-   ===== ===============
-   mgus2 R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Monoclonal gammopathy data
-      :name: mgus2
+      ===== ===============
+      mgus2 R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Monoclonal gammopathy data
+         :name: monoclonal-gammopathy-data
 
-   Natural history of 1341 sequential patients with monoclonal
-   gammopathy of undetermined significance (MGUS). This is a superset of
-   the ``mgus`` data, at a later point in the accrual process
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Natural history of 1341 sequential patients with monoclonal
+      gammopathy of undetermined significance (MGUS). This is a superset
+      of the ``mgus`` data, at a later point in the accrual process
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      mgus2
-      data(cancer, package="survival")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         mgus2
+         data(cancer, package="survival")
 
-   A data frame with 1384 observations on the following 10 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``id``
-      subject identifier
+      A data frame with 1384 observations on the following 10 variables.
 
-   ``age``
-      age at diagnosis, in years
+      ``id``
+         subject identifier
 
-   ``sex``
-      a factor with levels ``F`` ``M``
+      ``age``
+         age at diagnosis, in years
 
-   ``dxyr``
-      year of diagnosis
+      ``sex``
+         a factor with levels ``F`` ``M``
 
-   ``hgb``
-      hemoglobin
+      ``dxyr``
+         year of diagnosis
 
-   ``creat``
-      creatinine
+      ``hgb``
+         hemoglobin
 
-   ``mspike``
-      size of the monoclonal serum splike
+      ``creat``
+         creatinine
 
-   ``ptime``
-      time until progression to a plasma cell malignancy (PCM) or last
-      contact, in months
+      ``mspike``
+         size of the monoclonal serum splike
 
-   ``pstat``
-      occurrence of PCM: 0=no, 1=yes
+      ``ptime``
+         time until progression to a plasma cell malignancy (PCM) or
+         last contact, in months
 
-   ``futime``
-      time until death or last contact, in months
+      ``pstat``
+         occurrence of PCM: 0=no, 1=yes
 
-   ``death``
-      occurrence of death: 0=no, 1=yes
+      ``futime``
+         time until death or last contact, in months
 
-   .. rubric:: Details
-      :name: details
+      ``death``
+         occurrence of death: 0=no, 1=yes
 
-   This is an extension of the study found in the ``mgus`` data set,
-   containing enrollment through 1994 and follow-up through 1999.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This is an extension of the study found in the ``mgus`` data set,
+      containing enrollment through 1994 and follow-up through 1999.
 
-   Mayo Clinic data courtesy of Dr. Robert Kyle. All patient identifiers
-   have been removed, age rounded to the nearest year, and follow-up
-   times rounded to the nearest month.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Mayo Clinic data courtesy of Dr. Robert Kyle. All patient
+      identifiers have been removed, age rounded to the nearest year,
+      and follow-up times rounded to the nearest month.
 
-   R. Kyle, T. Therneau, V. Rajkumar, J. Offord, D. Larson, M. Plevak,
-   and L. J. Melton III, A long-terms study of prognosis in monoclonal
-   gammopathy of undertermined significance. New Engl J Med, 346:564-569
-   (2002).
+      .. rubric:: References
+         :name: references
+
+      R. Kyle, T. Therneau, V. Rajkumar, J. Offord, D. Larson, M.
+      Plevak, and L. J. Melton III, A long-terms study of prognosis in
+      monoclonal gammopathy of undertermined significance. New Engl J
+      Med, 346:564-569 (2002).

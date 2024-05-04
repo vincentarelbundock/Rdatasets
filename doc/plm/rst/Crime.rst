@@ -1,203 +1,206 @@
 .. container::
 
-   ===== ===============
-   Crime R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Crime in North Carolina
-      :name: Crime
+      ===== ===============
+      Crime R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Crime in North Carolina
+         :name: crime-in-north-carolina
 
-   a panel of 90 observational units (counties) from 1981 to 1987
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      a panel of 90 observational units (counties) from 1981 to 1987
 
-   A data frame containing :
+      .. rubric:: Format
+         :name: format
 
-   county
-      county identifier
+      A data frame containing :
 
-   year
-      year from 1981 to 1987
+      county
+         county identifier
 
-   crmrte
-      crimes committed per person
+      year
+         year from 1981 to 1987
 
-   prbarr
-      'probability' of arrest
+      crmrte
+         crimes committed per person
 
-   prbconv
-      'probability' of conviction
+      prbarr
+         'probability' of arrest
 
-   prbpris
-      'probability' of prison sentence
+      prbconv
+         'probability' of conviction
 
-   avgsen
-      average sentence, days
+      prbpris
+         'probability' of prison sentence
 
-   polpc
-      police per capita
+      avgsen
+         average sentence, days
 
-   density
-      people per square mile
+      polpc
+         police per capita
 
-   taxpc
-      tax revenue per capita
+      density
+         people per square mile
 
-   region
-      factor. One of 'other', 'west' or 'central'.
+      taxpc
+         tax revenue per capita
 
-   smsa
-      factor. (Also called "urban".) Does the individual reside in a
-      SMSA (standard metropolitan statistical area)?
+      region
+         factor. One of 'other', 'west' or 'central'.
 
-   pctmin
-      percentage minority in 1980
+      smsa
+         factor. (Also called "urban".) Does the individual reside in a
+         SMSA (standard metropolitan statistical area)?
 
-   wcon
-      weekly wage in construction
+      pctmin
+         percentage minority in 1980
 
-   wtuc
-      weekly wage in transportation, utilities, communications
+      wcon
+         weekly wage in construction
 
-   wtrd
-      weekly wage in wholesale and retail trade
+      wtuc
+         weekly wage in transportation, utilities, communications
 
-   wfir
-      weekly wage in finance, insurance and real estate
+      wtrd
+         weekly wage in wholesale and retail trade
 
-   wser
-      weekly wage in service industry
+      wfir
+         weekly wage in finance, insurance and real estate
 
-   wmfg
-      weekly wage in manufacturing
+      wser
+         weekly wage in service industry
 
-   wfed
-      weekly wage in federal government
+      wmfg
+         weekly wage in manufacturing
 
-   wsta
-      weekly wage in state government
+      wfed
+         weekly wage in federal government
 
-   wloc
-      weekly wage in local government
+      wsta
+         weekly wage in state government
 
-   mix
-      offence mix: face-to-face/other
+      wloc
+         weekly wage in local government
 
-   pctymle
-      percentage of young males (between ages 15 to 24)
+      mix
+         offence mix: face-to-face/other
 
-   lcrmrte
-      log of crimes committed per person
+      pctymle
+         percentage of young males (between ages 15 to 24)
 
-   lprbarr
-      log of 'probability' of arrest
+      lcrmrte
+         log of crimes committed per person
 
-   lprbconv
-      log of 'probability' of conviction
+      lprbarr
+         log of 'probability' of arrest
 
-   lprbpris
-      log of 'probability' of prison sentence
+      lprbconv
+         log of 'probability' of conviction
 
-   lavgsen
-      log of average sentence, days
+      lprbpris
+         log of 'probability' of prison sentence
 
-   lpolpc
-      log of police per capita
+      lavgsen
+         log of average sentence, days
 
-   ldensity
-      log of people per square mile
+      lpolpc
+         log of police per capita
 
-   ltaxpc
-      log of tax revenue per capita
+      ldensity
+         log of people per square mile
 
-   lpctmin
-      log of percentage minority in 1980
+      ltaxpc
+         log of tax revenue per capita
 
-   lwcon
-      log of weekly wage in construction
+      lpctmin
+         log of percentage minority in 1980
 
-   lwtuc
-      log of weekly wage in transportation, utilities, communications
+      lwcon
+         log of weekly wage in construction
 
-   lwtrd
-      log of weekly wage in wholesale and retail trade
+      lwtuc
+         log of weekly wage in transportation, utilities, communications
 
-   lwfir
-      log of weekly wage in finance, insurance and real estate
+      lwtrd
+         log of weekly wage in wholesale and retail trade
 
-   lwser
-      log of weekly wage in service industry
+      lwfir
+         log of weekly wage in finance, insurance and real estate
 
-   lwmfg
-      log of weekly wage in manufacturing
+      lwser
+         log of weekly wage in service industry
 
-   lwfed
-      log of weekly wage in federal government
+      lwmfg
+         log of weekly wage in manufacturing
 
-   lwsta
-      log of weekly wage in state government
+      lwfed
+         log of weekly wage in federal government
 
-   lwloc
-      log of weekly wage in local government
+      lwsta
+         log of weekly wage in state government
 
-   lmix
-      log of offence mix: face-to-face/other
+      lwloc
+         log of weekly wage in local government
 
-   lpctymle
-      log of percentage of young males (between ages 15 to 24)
+      lmix
+         log of offence mix: face-to-face/other
 
-   .. rubric:: Details
-      :name: details
+      lpctymle
+         log of percentage of young males (between ages 15 to 24)
 
-   *total number of observations* : 630
+      .. rubric:: Details
+         :name: details
 
-   *observation* : regional
+      *total number of observations* : 630
 
-   *country* : United States
+      *observation* : regional
 
-   The variables l\* (lcrmrte, lprbarr, ...) contain the pre-computed
-   logarithms of the base variables as found in the original data set.
-   Note that these values slightly differ from what R's log() function
-   yields for the base variables. In order to reproduce examples from
-   the literature, the pre-computed logs need to be used, otherwise the
-   results differ slightly.
+      *country* : United States
 
-   .. rubric:: Source
-      :name: source
+      The variables l\* (lcrmrte, lprbarr, ...) contain the pre-computed
+      logarithms of the base variables as found in the original data
+      set. Note that these values slightly differ from what R's log()
+      function yields for the base variables. In order to reproduce
+      examples from the literature, the pre-computed logs need to be
+      used, otherwise the results differ slightly.
 
-   Journal of Applied Econometrics Data Archive (complements Baltagi
-   (2006)):
+      .. rubric:: Source
+         :name: source
 
-   http://qed.econ.queensu.ca/jae/2006-v21.4/baltagi/
+      Journal of Applied Econometrics Data Archive (complements Baltagi
+      (2006)):
 
-   Online complements to Baltagi (2001):
+      http://qed.econ.queensu.ca/jae/2006-v21.4/baltagi/
 
-   https://www.wiley.com/legacy/wileychi/baltagi/
+      Online complements to Baltagi (2001):
 
-   Online complements to Baltagi (2013):
+      https://www.wiley.com/legacy/wileychi/baltagi/
 
-   https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
+      Online complements to Baltagi (2013):
 
-   See also Journal of Applied Econometrics data archive entry for
-   Baltagi (2006) at http://qed.econ.queensu.ca/jae/2006-v21.4/baltagi/.
+      https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
 
-   .. rubric:: References
-      :name: references
+      See also Journal of Applied Econometrics data archive entry for
+      Baltagi (2006) at
+      http://qed.econ.queensu.ca/jae/2006-v21.4/baltagi/.
 
-   Cornwell C, Trumbull WN (1994). “Estimating the economic model of
-   crime with panel data.” *Review of Economics and Statistics*, **76**,
-   360–366.
+      .. rubric:: References
+         :name: references
 
-   Baltagi BH (2006). “Estmating an economic model of crime using panel
-   data from North Carolina.” *Journal of Applied Econometrics*,
-   **21**\ (4).
+      Cornwell C, Trumbull WN (1994). “Estimating the economic model of
+      crime with panel data.” *Review of Economics and Statistics*,
+      **76**, 360–366.
 
-   Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
-   John Wiley and Sons ltd.
+      Baltagi BH (2006). “Estmating an economic model of crime using
+      panel data from North Carolina.” *Journal of Applied
+      Econometrics*, **21**\ (4).
 
-   Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
-   John Wiley and Sons ltd.
+      Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd
+      edition. John Wiley and Sons ltd.
+
+      Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th
+      edition. John Wiley and Sons ltd.

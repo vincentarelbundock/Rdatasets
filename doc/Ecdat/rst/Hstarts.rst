@@ -1,54 +1,56 @@
 .. container::
 
-   ======= ===============
-   Hstarts R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Housing Starts
-      :name: Hstarts
+      ======= ===============
+      Hstarts R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Housing Starts
+         :name: housing-starts
 
-   quarterly observations from 1960-1 to 2001-4
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 168
+      quarterly observations from 1960-1 to 2001-4
 
-   *observation* : country
+      *number of observations* : 168
 
-   *country* : Canada
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Canada
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Hstarts)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Hstarts)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   hs
-      the log of urban housing starts in Canada, not seasonally
-      adjusted, CANSIM series J6001, converted to quarterly
+      A time series containing :
 
-   hssa
-      the log of urban housing starts in Canada, seasonally adjusted,
-      CANSIM series J9001, converted to quarterly. Observations prior to
-      1966:1 are missing
+      hs
+         the log of urban housing starts in Canada, not seasonally
+         adjusted, CANSIM series J6001, converted to quarterly
 
-   .. rubric:: References
-      :name: references
+      hssa
+         the log of urban housing starts in Canada, seasonally adjusted,
+         CANSIM series J9001, converted to quarterly. Observations prior
+         to 1966:1 are missing
 
-   Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
-   Methods*, New York, Oxford University Press, chapter 13.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Davidson, R. and James G. MacKinnon (2004) *Econometric Theory and
+      Methods*, New York, Oxford University Press, chapter 13.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

@@ -1,76 +1,78 @@
 .. container::
 
-   ======= ===============
-   airfare R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: airfare
-      :name: airfare
+      ======= ===============
+      airfare R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: airfare
+         :name: airfare
 
-   Wooldridge Source: Jiyoung Kwon, a former doctoral student in
-   economics at MSU, kindly provided these data, which she obtained from
-   the Domestic Airline Fares Consumer Report by the U.S. Department of
-   Transportation. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Jiyoung Kwon, a former doctoral student in
+      economics at MSU, kindly provided these data, which she obtained
+      from the Domestic Airline Fares Consumer Report by the U.S.
+      Department of Transportation. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('airfare')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('airfare')
 
-   A data.frame with 4596 observations on 14 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1997, 1998, 1999, 2000
+      A data.frame with 4596 observations on 14 variables:
 
-   -  **id:** route identifier
+      -  **year:** 1997, 1998, 1999, 2000
 
-   -  **dist:** distance, in miles
+      -  **id:** route identifier
 
-   -  **passen:** avg. passengers per day
+      -  **dist:** distance, in miles
 
-   -  **fare:** avg. one-way fare, $
+      -  **passen:** avg. passengers per day
 
-   -  **bmktshr:** fraction market, biggest carrier
+      -  **fare:** avg. one-way fare, $
 
-   -  **ldist:** log(distance)
+      -  **bmktshr:** fraction market, biggest carrier
 
-   -  **y98:** =1 if year == 1998
+      -  **ldist:** log(distance)
 
-   -  **y99:** =1 if year == 1999
+      -  **y98:** =1 if year == 1998
 
-   -  **y00:** =1 if year == 2000
+      -  **y99:** =1 if year == 1999
 
-   -  **lfare:** log(fare)
+      -  **y00:** =1 if year == 2000
 
-   -  **ldistsq:** ldist^2
+      -  **lfare:** log(fare)
 
-   -  **concen:** = bmktshr
+      -  **ldistsq:** ldist^2
 
-   -  **lpassen:** log(passen)
+      -  **concen:** = bmktshr
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lpassen:** log(passen)
 
-   This data set nicely illustrates the different estimates obtained
-   when applying pooled OLS, random effects, and fixed effects.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 506-507, 581
+      This data set nicely illustrates the different estimates obtained
+      when applying pooled OLS, random effects, and fixed effects.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 506-507, 581
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(airfare)
+      ::
+
+          str(airfare)

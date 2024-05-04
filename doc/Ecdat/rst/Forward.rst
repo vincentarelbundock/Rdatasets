@@ -1,73 +1,75 @@
 .. container::
 
-   ======= ===============
-   Forward R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Exchange Rates of US Dollar Against Other Currencies
-      :name: Forward
+      ======= ===============
+      Forward R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Exchange Rates of US Dollar Against Other Currencies
+         :name: exchange-rates-of-us-dollar-against-other-currencies
 
-   monthly observations from 1979–01 to 2001–12
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 276
+      monthly observations from 1979–01 to 2001–12
 
-   .. rubric:: Usage
-      :name: usage
+      *number of observations* : 276
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Forward)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Forward)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   usdbp
-      exchange rate USD/British Pound Sterling
+      A time series containing :
 
-   usdeuro
-      exchange rate US D/Euro
+      usdbp
+         exchange rate USD/British Pound Sterling
 
-   eurobp
-      exchange rate Euro/Pound
+      usdeuro
+         exchange rate US D/Euro
 
-   usdbp1
-      1 month forward rate USD/Pound
+      eurobp
+         exchange rate Euro/Pound
 
-   usdeuro1
-      1 month forward rate USD/Euro
+      usdbp1
+         1 month forward rate USD/Pound
 
-   eurobp1
-      1 month forward rate Euro/Pound
+      usdeuro1
+         1 month forward rate USD/Euro
 
-   usdbp3
-      3 month forward rate USD/Pound
+      eurobp1
+         1 month forward rate Euro/Pound
 
-   usdeuro3
-      month forward rate USD/Euro
+      usdbp3
+         3 month forward rate USD/Pound
 
-   eurobp3
-      month forward rate Euro/Pound
+      usdeuro3
+         month forward rate USD/Euro
 
-   .. rubric:: Source
-      :name: source
+      eurobp3
+         month forward rate Euro/Pound
 
-   ``Datastream``
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      ``Datastream``
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons, chapter 4.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons, chapter 4.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

@@ -1,60 +1,62 @@
 .. container::
 
-   ========== ===============
-   Federalist R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: ‘May’ in Federalist Papers
-      :name: Federalist
+      ========== ===============
+      Federalist R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: ‘May’ in Federalist Papers
+         :name: may-in-federalist-papers
 
-   Data from Mosteller & Wallace (1984) investigating the use of certain
-   keywords (‘may’ in this data set) to identify the author of 12
-   disputed ‘Federalist Papers’ by Alexander Hamilton, John Jay and
-   James Madison.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from Mosteller & Wallace (1984) investigating the use of
+      certain keywords (‘may’ in this data set) to identify the author
+      of 12 disputed ‘Federalist Papers’ by Alexander Hamilton, John Jay
+      and James Madison.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Federalist")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Federalist")
 
-   A 1-way table giving the number of occurrences of ‘may’ in 262 blocks
-   of text. The variable and its levels are
+      .. rubric:: Format
+         :name: format
 
-   == ==== ============
-   No Name Levels
-   1  nMay 0, 1, ..., 6
-   \       
-   == ==== ============
+      A 1-way table giving the number of occurrences of ‘may’ in 262
+      blocks of text. The variable and its levels are
 
-   .. rubric:: Source
-      :name: source
+      == ==== ============
+      No Name Levels
+      1  nMay 0, 1, ..., 6
+      \       
+      == ==== ============
 
-   Michael Friendly (2000), Visualizing Categorical Data, page 19.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Michael Friendly (2000), Visualizing Categorical Data, page 19.
 
-   F. Mosteller & D. L. Wallace (1984), *Applied Bayesian and Classical
-   Inference: The Case of the Federalist Papers*. Springer-Verlag, New
-   York, NY.
+      .. rubric:: References
+         :name: references
 
-   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
-   Cary, NC.
+      F. Mosteller & D. L. Wallace (1984), *Applied Bayesian and
+      Classical Inference: The Case of the Federalist Papers*.
+      Springer-Verlag, New York, NY.
 
-   .. rubric:: Examples
-      :name: examples
+      M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+      Cary, NC.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("Federalist")
-      gf <- goodfit(Federalist, type = "nbinomial")
-      summary(gf)
-      plot(gf)
+      ::
+
+         data("Federalist")
+         gf <- goodfit(Federalist, type = "nbinomial")
+         summary(gf)
+         plot(gf)

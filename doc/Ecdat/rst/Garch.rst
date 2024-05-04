@@ -1,70 +1,72 @@
 .. container::
 
-   ===== ===============
-   Garch R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Daily Observations on Exchange Rates of the US Dollar
-      Against Other Currencies
-      :name: Garch
+      ===== ===============
+      Garch R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Daily Observations on Exchange Rates of the US Dollar
+         Against Other Currencies
+         :name: daily-observations-on-exchange-rates-of-the-us-dollar-against-other-currencies
 
-   daily observations from 1980–01 to 1987–05–21
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 1867
+      daily observations from 1980–01 to 1987–05–21
 
-   *observation* : country
+      *number of observations* : 1867
 
-   *country* : World
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : World
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Garch)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Garch)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   ``date``
-      date of observation (``yymmdd``)
+      A dataframe containing :
 
-   ``day``
-      day of the week (a factor)
+      ``date``
+         date of observation (``yymmdd``)
 
-   ``dm``
-      exchange rate Dollar/Deutsch Mark
+      ``day``
+         day of the week (a factor)
 
-   ``ddm``
-      ``dm-dm(-1)``
+      ``dm``
+         exchange rate Dollar/Deutsch Mark
 
-   ``bp``
-      exchange rate of Dollar/British Pound
+      ``ddm``
+         ``dm-dm(-1)``
 
-   ``cd``
-      exchange rate of Dollar/Canadian Dollar
+      ``bp``
+         exchange rate of Dollar/British Pound
 
-   ``dy``
-      exchange rate of Dollar/Yen
+      ``cd``
+         exchange rate of Dollar/Canadian Dollar
 
-   ``sf``
-      exchange rate of Dollar/Swiss Franc
+      ``dy``
+         exchange rate of Dollar/Yen
 
-   .. rubric:: References
-      :name: references
+      ``sf``
+         exchange rate of Dollar/Swiss Franc
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons, chapter 8.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons, chapter 8.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

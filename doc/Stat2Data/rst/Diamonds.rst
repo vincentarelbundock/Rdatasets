@@ -1,48 +1,50 @@
 .. container::
 
-   ======== ===============
-   Diamonds R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Characteristics of a Sample of Diamonds
-      :name: Diamonds
+      ======== ===============
+      Diamonds R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Characteristics of a Sample of Diamonds
+         :name: characteristics-of-a-sample-of-diamonds
 
-   Price and characteristics for a sample of 351 diamonds
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Price and characteristics for a sample of 351 diamonds
 
-   A data frame with 351 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   +----------------+----------------------------------------------------+
-   | ``Carat``      | Size of the diamond (in carats)                    |
-   +----------------+----------------------------------------------------+
-   | ``Color``      | Coded as ``D`` (most white/bright) through ``J``   |
-   +----------------+----------------------------------------------------+
-   | ``Clarity``    | Coded as ``IF``, ``VVS1``, ``VVS2``, ``VS1``,      |
-   |                | ``VS2``, ``SI1``, ``SI2``, or ``SI3``              |
-   +----------------+----------------------------------------------------+
-   | ``Depth``      | Depth (as a percentage of diameter)                |
-   +----------------+----------------------------------------------------+
-   | ``PricePerCt`` | Price per carat                                    |
-   +----------------+----------------------------------------------------+
-   | ``TotalPrice`` | Price for the diamond (in dollars)                 |
-   +----------------+----------------------------------------------------+
-   |                |                                                    |
-   +----------------+----------------------------------------------------+
+      A data frame with 351 observations on the following 6 variables.
 
-   .. rubric:: Details
-      :name: details
+      +----------------+----------------------------------------------------+
+      | ``Carat``      | Size of the diamond (in carats)                    |
+      +----------------+----------------------------------------------------+
+      | ``Color``      | Coded as ``D`` (most white/bright) through ``J``   |
+      +----------------+----------------------------------------------------+
+      | ``Clarity``    | Coded as ``IF``, ``VVS1``, ``VVS2``, ``VS1``,      |
+      |                | ``VS2``, ``SI1``, ``SI2``, or ``SI3``              |
+      +----------------+----------------------------------------------------+
+      | ``Depth``      | Depth (as a percentage of diameter)                |
+      +----------------+----------------------------------------------------+
+      | ``PricePerCt`` | Price per carat                                    |
+      +----------------+----------------------------------------------------+
+      | ``TotalPrice`` | Price for the diamond (in dollars)                 |
+      +----------------+----------------------------------------------------+
+      |                |                                                    |
+      +----------------+----------------------------------------------------+
 
-   Data for a sample of diamonds. The clarity of the diamonds ranges
-   from IF (internally flawless) through VVS1 (very,very slightly
-   included), VS1 (very slightly included), to SI3 (slightly included)
-   in the order listed above.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Data for a sample of diamonds. The clarity of the diamonds ranges
+      from IF (internally flawless) through VVS1 (very,very slightly
+      included), VS1 (very slightly included), to SI3 (slightly
+      included) in the order listed above.
 
-   Diamond data obtained from AwesomeGems.com on July 28, 2005.
+      .. rubric:: Source
+         :name: source
+
+      Diamond data obtained from AwesomeGems.com on July 28, 2005.

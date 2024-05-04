@@ -1,75 +1,78 @@
 .. container::
 
-   ====== ===============
-   possum R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Possums in Australia and New Guinea
-      :name: possum
+      ====== ===============
+      possum R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Possums in Australia and New Guinea
+         :name: possums-in-australia-and-new-guinea
 
-   Data representing possums in Australia and New Guinea. This is a copy
-   of the data set by the same name in the ``DAAG`` package, however,
-   the data set included here includes fewer variables.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data representing possums in Australia and New Guinea. This is a
+      copy of the data set by the same name in the ``DAAG`` package,
+      however, the data set included here includes fewer variables.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      possum
+      ::
 
-   .. rubric:: Format
-      :name: format
+         possum
 
-   A data frame with 104 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   site
-      The site number where the possum was trapped.
+      A data frame with 104 observations on the following 8 variables.
 
-   pop
-      Population, either ``Vic`` (Victoria) or ``other`` (New South
-      Wales or Queensland).
+      site
+         The site number where the possum was trapped.
 
-   sex
-      Gender, either ``m`` (male) or ``f`` (female).
+      pop
+         Population, either ``Vic`` (Victoria) or ``other`` (New South
+         Wales or Queensland).
 
-   age
-      Age.
+      sex
+         Gender, either ``m`` (male) or ``f`` (female).
 
-   head_l
-      Head length, in mm.
+      age
+         Age.
 
-   skull_w
-      Skull width, in mm.
+      head_l
+         Head length, in mm.
 
-   total_l
-      Total length, in cm.
+      skull_w
+         Skull width, in mm.
 
-   tail_l
-      Tail length, in cm.
+      total_l
+         Total length, in cm.
 
-   .. rubric:: Source
-      :name: source
+      tail_l
+         Tail length, in cm.
 
-   Lindenmayer, D. B., Viggers, K. L., Cunningham, R. B., and Donnelly,
-   C. F. 1995. Morphological variation among columns of the mountain
-   brushtail possum, Trichosurus caninus Ogilby (Phalangeridae:
-   Marsupiala). Australian Journal of Zoology 43: 449-458.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Lindenmayer, D. B., Viggers, K. L., Cunningham, R. B., and
+      Donnelly, C. F. 1995. Morphological variation among columns of the
+      mountain brushtail possum, Trichosurus caninus Ogilby
+      (Phalangeridae: Marsupiala). Australian Journal of Zoology 43:
+      449-458.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      # Skull width vs. head length
-      ggplot(possum, aes(x = head_l, y = skull_w)) +
-        geom_point()
+         library(ggplot2)
 
-      # Total length vs. sex
-      ggplot(possum, aes(x = total_l, fill = sex)) +
-        geom_density(alpha = 0.5)
+         # Skull width vs. head length
+         ggplot(possum, aes(x = head_l, y = skull_w)) +
+           geom_point()
+
+         # Total length vs. sex
+         ggplot(possum, aes(x = total_l, fill = sex)) +
+           geom_density(alpha = 0.5)

@@ -1,58 +1,60 @@
 .. container::
 
-   ====== ===============
-   NYSESW R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Daily NYSE Composite Index
-      :name: NYSESW
+      ====== ===============
+      NYSESW R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Daily NYSE Composite Index
+         :name: daily-nyse-composite-index
 
-   A daily time series from 1990 to 2005 of the New York Stock Exchange
-   composite index.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A daily time series from 1990 to 2005 of the New York Stock
+      Exchange composite index.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("NYSESW")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("NYSESW")
 
-   A daily univariate time series from 1990-01-02 to 2005-11-11 (of
-   class ``"zoo"`` with ``"Date"`` index).
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A daily univariate time series from 1990-01-02 to 2005-11-11 (of
+      class ``"zoo"`` with ``"Date"`` index).
 
-   Online complements to Stock and Watson (2007).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Stock and Watson (2007).
 
-   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
-   2nd ed. Boston: Addison Wesley.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, J.H. and Watson, M.W. (2007). *Introduction to
+      Econometrics*, 2nd ed. Boston: Addison Wesley.
 
-   ``StockWatson2007``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``StockWatson2007``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## returns
-      data("NYSESW")
-      ret <- 100 * diff(log(NYSESW))
-      plot(ret)
+      ::
 
-      ## Stock and Watson (2007), p. 667, GARCH(1,1) model
-      library("tseries")
-      fm <- garch(coredata(ret))
-      summary(fm)
+         ## returns
+         data("NYSESW")
+         ret <- 100 * diff(log(NYSESW))
+         plot(ret)
+
+         ## Stock and Watson (2007), p. 667, GARCH(1,1) model
+         library("tseries")
+         fm <- garch(coredata(ret))
+         summary(fm)

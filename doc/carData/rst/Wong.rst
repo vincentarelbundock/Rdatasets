@@ -1,76 +1,78 @@
 .. container::
 
-   ==== ===============
-   Wong R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Post-Coma Recovery of IQ
-      :name: Wong
+      ==== ===============
+      Wong R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Post-Coma Recovery of IQ
+         :name: post-coma-recovery-of-iq
 
-   The ``Wong`` data frame has 331 row and 7 columns. The observations
-   are longitudinal data on recovery of IQ after comas of varying
-   duration for 200 subjects.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Wong`` data frame has 331 row and 7 columns. The
+      observations are longitudinal data on recovery of IQ after comas
+      of varying duration for 200 subjects.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Wong
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Wong
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``id``
-      patient ID number.
+      This data frame contains the following columns:
 
-   ``days``
-      number of days post coma at which IQs were measured.
+      ``id``
+         patient ID number.
 
-   ``duration``
-      duration of the coma in days.
+      ``days``
+         number of days post coma at which IQs were measured.
 
-   ``sex``
-      a factor with levels ``Female`` and ``Male``.
+      ``duration``
+         duration of the coma in days.
 
-   ``age``
-      in years at the time of injury.
+      ``sex``
+         a factor with levels ``Female`` and ``Male``.
 
-   ``piq``
-      performance (i.e., mathematical) IQ.
+      ``age``
+         in years at the time of injury.
 
-   ``viq``
-      verbal IQ.
+      ``piq``
+         performance (i.e., mathematical) IQ.
 
-   .. rubric:: Details
-      :name: details
+      ``viq``
+         verbal IQ.
 
-   The data are from Wong, Monette, and Weiner (2001) and are for 200
-   patients who sustained traumatic brain injuries resulting in comas of
-   varying duration. After awakening from their comas, patients were
-   periodically administered a standard IQ test, but the average number
-   of measurements per patient is small (331/200 = 1.7).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The data are from Wong, Monette, and Weiner (2001) and are for 200
+      patients who sustained traumatic brain injuries resulting in comas
+      of varying duration. After awakening from their comas, patients
+      were periodically administered a standard IQ test, but the average
+      number of measurements per patient is small (331/200 = 1.7).
 
-   Wong, P. P., Monette, G., and Weiner, N. I. (2001) Mathematical
-   models of cognitive recovery. *Brain Injury*, **15**, 519–530.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Wong, P. P., Monette, G., and Weiner, N. I. (2001) Mathematical
+      models of cognitive recovery. *Brain Injury*, **15**, 519–530.
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(Wong)
+      ::
+
+         summary(Wong)

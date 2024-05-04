@@ -1,71 +1,83 @@
 .. container::
 
-   ==== ===============
-   iris R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Edgar Anderson's Iris Data
-      :name: iris
+      ==== ===============
+      iris R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Edgar Anderson's Iris Data
+         :name: edgar-andersons-iris-data
 
-   This famous (Fisher's or Anderson's) iris data set gives the
-   measurements in centimeters of the variables sepal length and width
-   and petal length and width, respectively, for 50 flowers from each of
-   3 species of iris. The species are *Iris setosa*, *versicolor*, and
-   *virginica*.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This famous (Fisher's or Anderson's) iris data set gives the
+      measurements in centimeters of the variables sepal length and
+      width and petal length and width, respectively, for 50 flowers
+      from each of 3 species of iris. The species are *Iris setosa*,
+      *versicolor*, and *virginica*.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      iris
-      iris3
+      ::
 
-   .. rubric:: Format
-      :name: format
+         iris
+         iris3
 
-   ``iris`` is a data frame with 150 cases (rows) and 5 variables
-   (columns) named ``Sepal.Length``, ``Sepal.Width``, ``Petal.Length``,
-   ``Petal.Width``, and ``Species``.
+      .. rubric:: Format
+         :name: format
 
-   ``iris3`` gives the same data arranged as a 3-dimensional array of
-   size 50 by 4 by 3, as represented by S-PLUS. The first dimension
-   gives the case number within the species subsample, the second the
-   measurements with names ``Sepal L.``, ``Sepal W.``, ``Petal L.``, and
-   ``Petal W.``, and the third the species.
+      ``iris`` is a data frame with 150 cases (rows) and 5 variables
+      (columns) named ``Sepal.Length``, ``Sepal.Width``,
+      ``Petal.Length``, ``Petal.Width``, and ``Species``.
 
-   .. rubric:: Source
-      :name: source
+      ``iris3`` gives the same data arranged as a 3-dimensional array of
+      size 50 by 4 by 3, as once provided by S-PLUS. The first dimension
+      gives the case number within the species subsample, the second the
+      measurements with names ``Sepal L.``, ``Sepal W.``, ``Petal L.``,
+      and ``Petal W.``, and the third the species.
 
-   Fisher, R. A. (1936) The use of multiple measurements in taxonomic
-   problems. *Annals of Eugenics*, **7**, Part II, 179–188.
+      .. rubric:: Source
+         :name: source
 
-   The data were collected by Anderson, Edgar (1935). The irises of the
-   Gaspe Peninsula, *Bulletin of the American Iris Society*, **59**,
-   2–5.
+      Fisher, R. A. (1936) The use of multiple measurements in taxonomic
+      problems. *Annals of Eugenics*, **7**, Part II, 179–188.
+      `doi:10.1111/j.1469-1809.1936.tb02137.x <https://doi.org/10.1111/j.1469-1809.1936.tb02137.x>`__.
 
-   .. rubric:: References
-      :name: references
+      The data were collected by Anderson, Edgar (1935). The irises of
+      the Gaspe Peninsula, *Bulletin of the American Iris Society*,
+      **59**, 2–5.
 
-   Becker, R. A., Chambers, J. M. and Wilks, A. R. (1988) *The New S
-   Language*. Wadsworth & Brooks/Cole. (has ``iris3`` as ``iris``.)
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Becker, R. A., Chambers, J. M. and Wilks, A. R. (1988) *The New S
+      Language*. Wadsworth & Brooks/Cole. (has ``iris3`` as ``iris``.)
 
-   ``matplot`` some examples of which use ``iris``.
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``matplot`` some examples of which use ``iris``.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      dni3 <- dimnames(iris3)
-      ii <- data.frame(matrix(aperm(iris3, c(1,3,2)), ncol = 4,
-                              dimnames = list(NULL, sub(" L.",".Length",
-                                              sub(" W.",".Width", dni3[[2]])))),
-          Species = gl(3, 50, labels = sub("S", "s", sub("V", "v", dni3[[3]]))))
-      all.equal(ii, iris) # TRUE
+      ::
+
+         summary(iris)
+
+         ## Fisher's (1936) research question: whether (compound measurements of)
+         ## Iris versicolor "differs twice as much from I. setosa as from I. virginica"
+         pairs(iris[1:4], col = iris$Species)
+         legend(0.5, 1, levels(iris$Species), fill = 1:3, bty = "n",
+                horiz = TRUE, xjust = 0.5, yjust = 0, xpd = TRUE)
+
+         ## equivalence of legacy array (iris3) and data.frame (iris) representation
+         dni3 <- dimnames(iris3)
+         ii <- data.frame(matrix(aperm(iris3, c(1,3,2)), ncol = 4,
+                                 dimnames = list(NULL, sub(" L.",".Length",
+                                                 sub(" W.",".Width", dni3[[2]])))),
+             Species = gl(3, 50, labels = sub("S", "s", sub("V", "v", dni3[[3]]))))
+         stopifnot(all.equal(ii, iris))

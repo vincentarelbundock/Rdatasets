@@ -1,68 +1,70 @@
 .. container::
 
-   ======= ===============
-   MoneyUS R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Macroeconomic Series for the United States
-      :name: MoneyUS
+      ======= ===============
+      MoneyUS R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Macroeconomic Series for the United States
+         :name: macroeconomic-series-for-the-united-states
 
-   quarterly observations from 1954–01 to 1994–12
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 164
+      quarterly observations from 1954–01 to 1994–12
 
-   *country* : United States
+      *number of observations* : 164
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(MoneyUS)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(MoneyUS)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   m
-      log of real M1 money stock
+      A time series containing :
 
-   infl
-      quarterly inflation rate (change in log prices), % per year
+      m
+         log of real M1 money stock
 
-   cpr
-      commercial paper rate, % per year
+      infl
+         quarterly inflation rate (change in log prices), % per year
 
-   y
-      log real GDP (in billions of 1987 dollars)
+      cpr
+         commercial paper rate, % per year
 
-   tbr
-      treasury bill rate
+      y
+         log real GDP (in billions of 1987 dollars)
 
-   .. rubric:: Source
-      :name: source
+      tbr
+         treasury bill rate
 
-   Hoffman, D.L. and R.H. Rasche (1996) “Assessing forecast performance
-   in a cointegrated system”, *Journal of Applied Econometrics*, **11**,
-   495–517.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Hoffman, D.L. and R.H. Rasche (1996) “Assessing forecast
+      performance in a cointegrated system”, *Journal of Applied
+      Econometrics*, **11**, 495–517.
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons, chapter 9.
+      .. rubric:: References
+         :name: references
 
-   Journal of Applied Econometrics data archive :
-   http://qed.econ.queensu.ca/jae/.
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons, chapter 9.
 
-   .. rubric:: See Also
-      :name: see-also
+      Journal of Applied Econometrics data archive :
+      http://qed.econ.queensu.ca/jae/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

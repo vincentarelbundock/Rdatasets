@@ -1,63 +1,65 @@
 .. container::
 
-   ======= ===============
-   shuttle R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Space Shuttle Autolander Problem
-      :name: shuttle
+      ======= ===============
+      shuttle R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Space Shuttle Autolander Problem
+         :name: space-shuttle-autolander-problem
 
-   The ``shuttle`` data frame has 256 rows and 7 columns. The first six
-   columns are categorical variables giving example conditions; the
-   seventh is the decision. The first 253 rows are the training set, the
-   last 3 the test conditions.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``shuttle`` data frame has 256 rows and 7 columns. The first
+      six columns are categorical variables giving example conditions;
+      the seventh is the decision. The first 253 rows are the training
+      set, the last 3 the test conditions.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      shuttle
+      ::
 
-   .. rubric:: Format
-      :name: format
+         shuttle
 
-   This data frame contains the following factor columns:
+      .. rubric:: Format
+         :name: format
 
-   ``stability``
-      stable positioning or not (``stab`` / ``xstab``).
+      This data frame contains the following factor columns:
 
-   ``error``
-      size of error (``MM`` / ``SS`` / ``LX`` / ``XL``).
+      ``stability``
+         stable positioning or not (``stab`` / ``xstab``).
 
-   ``sign``
-      sign of error, positive or negative (``pp`` / ``nn``).
+      ``error``
+         size of error (``MM`` / ``SS`` / ``LX`` / ``XL``).
 
-   ``wind``
-      wind sign (``head`` / ``tail``).
+      ``sign``
+         sign of error, positive or negative (``pp`` / ``nn``).
 
-   ``magn``
-      wind strength (``Light`` / ``Medium`` / ``Strong`` /
-      ``Out of Range``).
+      ``wind``
+         wind sign (``head`` / ``tail``).
 
-   ``vis``
-      visibility (``yes`` / ``no``).
+      ``magn``
+         wind strength (``Light`` / ``Medium`` / ``Strong`` /
+         ``Out of Range``).
 
-   ``use``
-      use the autolander or not. (``auto`` / ``noauto``.)
+      ``vis``
+         visibility (``yes`` / ``no``).
 
-   .. rubric:: Source
-      :name: source
+      ``use``
+         use the autolander or not. (``auto`` / ``noauto``.)
 
-   D. Michie (1989) Problems of computer-aided concept formation. In
-   *Applications of Expert Systems 2*, ed. J. R. Quinlan, Turing
-   Institute Press / Addison-Wesley, pp. 310–333.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      D. Michie (1989) Problems of computer-aided concept formation. In
+      *Applications of Expert Systems 2*, ed. J. R. Quinlan, Turing
+      Institute Press / Addison-Wesley, pp. 310–333.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

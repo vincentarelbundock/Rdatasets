@@ -1,52 +1,54 @@
 .. container::
 
-   ======== ===============
-   ironslag R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Iron Content Measurements
-      :name: ironslag
+      ======== ===============
+      ironslag R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Iron Content Measurements
+         :name: iron-content-measurements
 
-   The ``ironslag`` data frame has 53 rows and 2 columns. Two methods
-   for measuring the iron content in samples of slag were compared, a
-   chemical and a magnetic method. The chemical method requires greater
-   effort than the magnetic method.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``ironslag`` data frame has 53 rows and 2 columns. Two methods
+      for measuring the iron content in samples of slag were compared, a
+      chemical and a magnetic method. The chemical method requires
+      greater effort than the magnetic method.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      ironslag
+      ::
 
-   .. rubric:: Format
-      :name: format
+         ironslag
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   chemical
-      a numeric vector containing the measurements coming from the
-      chemical method
+      This data frame contains the following columns:
 
-   magnetic
-      a numeric vector containing the measurments coming from the
-      magnetic method
+      chemical
+         a numeric vector containing the measurements coming from the
+         chemical method
 
-   .. rubric:: Source
-      :name: source
+      magnetic
+         a numeric vector containing the measurments coming from the
+         magnetic method
 
-   Hand, D.J., Daly, F., McConway, K., Lunn, D., and Ostrowski, E. eds
-   (1993) A Handbook of Small Data Sets. London: Chapman & Hall.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Hand, D.J., Daly, F., McConway, K., Lunn, D., and Ostrowski, E.
+      eds (1993) A Handbook of Small Data Sets. London: Chapman & Hall.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      iron.lm <- lm(chemical ~ magnetic, data = ironslag)
-      oldpar <- par(mfrow = c(2,2))
-      plot(iron.lm)
-      par(oldpar)
+      ::
+
+         iron.lm <- lm(chemical ~ magnetic, data = ironslag)
+         oldpar <- par(mfrow = c(2,2))
+         plot(iron.lm)
+         par(oldpar)

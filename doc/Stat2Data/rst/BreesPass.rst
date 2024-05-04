@@ -1,45 +1,47 @@
 .. container::
 
-   ========= ===============
-   BreesPass R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Drew Brees Passing Statistics (2016)
-      :name: BreesPass
+      ========= ===============
+      BreesPass R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Drew Brees Passing Statistics (2016)
+         :name: drew-brees-passing-statistics-2016
 
-   Passing statistics for football quarterback Drew Brees in 2016
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Passing statistics for football quarterback Drew Brees in 2016
 
-   A data frame with 16 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Game``
-      Game number (1 is the first game of the regular season)
+      A data frame with 16 observations on the following 5 variables.
 
-   ``Opponent``
-      Opponent abbreviation
+      ``Game``
+         Game number (1 is the first game of the regular season)
 
-   ``Completed``
-      Number of completed passes
+      ``Opponent``
+         Opponent abbreviation
 
-   ``Attempts``
-      Pass attempts
+      ``Completed``
+         Number of completed passes
 
-   ``Yards``
-      Passing yards
+      ``Attempts``
+         Pass attempts
 
-   .. rubric:: Details
-      :name: details
+      ``Yards``
+         Passing yards
 
-   Drew Brees was the quarterback for the NFL's New Orleans Saints
-   football team in 2016. This dataset shows some of his passing
-   statistics for each of the 16 regular season games.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Drew Brees was the quarterback for the NFL's New Orleans Saints
+      football team in 2016. This dataset shows some of his passing
+      statistics for each of the 16 regular season games.
 
-   http://www.espn.com/nfl/player/gamelog/\_/id/2580/year/2016
+      .. rubric:: Source
+         :name: source
+
+      http://www.espn.com/nfl/player/gamelog/_/id/2580/year/2016

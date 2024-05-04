@@ -1,67 +1,70 @@
 .. container::
 
-   ======= ===============
-   Arrests R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Arrests for Marijuana Possession
-      :name: Arrests
+      ======= ===============
+      Arrests R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Arrests for Marijuana Possession
+         :name: arrests-for-marijuana-possession
 
-   Data on police treatment of individuals arrested in Toronto for
-   simple possession of small quantities of marijuana. The data are part
-   of a larger data set featured in a series of articles in the Toronto
-   Star newspaper.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on police treatment of individuals arrested in Toronto for
+      simple possession of small quantities of marijuana. The data are
+      part of a larger data set featured in a series of articles in the
+      Toronto Star newspaper.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Arrests
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Arrests
 
-   A data frame with 5226 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   released
-      Whether or not the arrestee was released with a summons; a factor
-      with levels: ``No``; ``Yes``.
+      A data frame with 5226 observations on the following 8 variables.
 
-   colour
-      The arrestee's race; a factor with levels: ``Black``; ``White``.
+      released
+         Whether or not the arrestee was released with a summons; a
+         factor with levels: ``No``; ``Yes``.
 
-   year
-      1997 through 2002; a numeric vector.
+      colour
+         The arrestee's race; a factor with levels: ``Black``;
+         ``White``.
 
-   age
-      in years; a numeric vector.
+      year
+         1997 through 2002; a numeric vector.
 
-   sex
-      a factor with levels: ``Female``; ``Male``.
+      age
+         in years; a numeric vector.
 
-   employed
-      a factor with levels: ``No``; ``Yes``.
+      sex
+         a factor with levels: ``Female``; ``Male``.
 
-   citizen
-      a factor with levels: ``No``; ``Yes``.
+      employed
+         a factor with levels: ``No``; ``Yes``.
 
-   checks
-      Number of police data bases (of previous arrests, previous
-      convictions, parole status, etc. – 6 in all) on which the
-      arrestee's name appeared; a numeric vector
+      citizen
+         a factor with levels: ``No``; ``Yes``.
 
-   .. rubric:: Source
-      :name: source
+      checks
+         Number of police data bases (of previous arrests, previous
+         convictions, parole status, etc. – 6 in all) on which the
+         arrestee's name appeared; a numeric vector
 
-   Personal communication from Michael Friendly, York University.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Personal communication from Michael Friendly, York University.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        summary(Arrests)
+      ::
+
+           summary(Arrests)

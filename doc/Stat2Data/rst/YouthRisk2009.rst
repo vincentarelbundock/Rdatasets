@@ -1,51 +1,53 @@
 .. container::
 
-   ============= ===============
-   YouthRisk2009 R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Youth Risk Survey
-      :name: YouthRisk2009
+      ============= ===============
+      YouthRisk2009 R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Youth Risk Survey
+         :name: youth-risk-survey
 
-   Survey of students in grades 9-12 concerning health-risk behiviors
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Survey of students in grades 9-12 concerning health-risk behiviors
 
-   A dataset with 500 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Sleep``
-      Average hours sleep on school night (``10 or more hours``,
-      ``9 hours``, down to ``4 or less hours``)
+      A dataset with 500 observations on the following 6 variables.
 
-   ``Sleep7``
-      Seven or more hours of sleep? (``0``\ =no or ``1``\ =yes)
+      ``Sleep``
+         Average hours sleep on school night (``10 or more hours``,
+         ``9 hours``, down to ``4 or less hours``)
 
-   ``SmokeLife``
-      Ever smoked? (``No`` or ``Yes``)
+      ``Sleep7``
+         Seven or more hours of sleep? (``0``\ =no or ``1``\ =yes)
 
-   ``SmokeDaily``
-      Regular smoker? (``No`` or ``Yes``)
+      ``SmokeLife``
+         Ever smoked? (``No`` or ``Yes``)
 
-   ``MarijuaEver``
-      Ever smoked marijuana? (``0``\ =no or ``1``\ =yes)
+      ``SmokeDaily``
+         Regular smoker? (``No`` or ``Yes``)
 
-   ``Age``
-      Age (in years)
+      ``MarijuaEver``
+         Ever smoked marijuana? (``0``\ =no or ``1``\ =yes)
 
-   .. rubric:: Details
-      :name: details
+      ``Age``
+         Age (in years)
 
-   Data from the Centers for Disease Control's Youth Risk Behavior
-   Surveillance System (YRBSS).
+      .. rubric:: Details
+         :name: details
 
-   This data set is from the first edition, but not used in the second
-   edition.
+      Data from the Centers for Disease Control's Youth Risk Behavior
+      Surveillance System (YRBSS).
 
-   .. rubric:: Source
-      :name: source
+      This data set is from the first edition, but not used in the
+      second edition.
 
-   http://www.cdc.gov/HealthyYouth/yrbs/index.htm
+      .. rubric:: Source
+         :name: source
+
+      http://www.cdc.gov/HealthyYouth/yrbs/index.htm

@@ -1,55 +1,57 @@
 .. container::
 
-   ========= ===============
-   ergoStool R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Ergometrics experiment with stool types
-      :name: ergoStool
+      ========= ===============
+      ergoStool R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Ergometrics experiment with stool types
+         :name: ergometrics-experiment-with-stool-types
 
-   The ``ergoStool`` data frame has 36 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``ergoStool`` data frame has 36 rows and 3 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   effort
-      a numeric vector giving the effort (Borg scale) required to arise
-      from a stool.
+      This data frame contains the following columns:
 
-   Type
-      a factor with levels ``T1``, ``T2``, ``T3``, and ``T4`` giving the
-      stool type.
+      effort
+         a numeric vector giving the effort (Borg scale) required to
+         arise from a stool.
 
-   Subject
-      an ordered factor giving a unique identifier for the subject in
-      the experiment.
+      Type
+         a factor with levels ``T1``, ``T2``, ``T3``, and ``T4`` giving
+         the stool type.
 
-   .. rubric:: Details
-      :name: details
+      Subject
+         an ordered factor giving a unique identifier for the subject in
+         the experiment.
 
-   Devore (2000) cites data from an article in *Ergometrics* (1993, pp.
-   519-535) on “The Effects of a Pneumatic Stool and a One-Legged Stool
-   on Lower Limb Joint Load and Muscular Activity.”
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Devore (2000) cites data from an article in *Ergometrics* (1993,
+      pp. 519-535) on “The Effects of a Pneumatic Stool and a One-Legged
+      Stool on Lower Limb Joint Load and Muscular Activity.”
 
-   Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S
-   and S-PLUS*, Springer, New York. (Appendix A.9)
+      .. rubric:: Source
+         :name: source
 
-   Devore, J. L. (2000), *Probability and Statistics for Engineering and
-   the Sciences (5th ed)*, Duxbury, Boston, MA.
+      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
+      S and S-PLUS*, Springer, New York. (Appendix A.9)
 
-   .. rubric:: Examples
-      :name: examples
+      Devore, J. L. (2000), *Probability and Statistics for Engineering
+      and the Sciences (5th ed)*, Duxbury, Boston, MA.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      fm1 <-
-         lme(effort ~ Type, data = ergoStool, random = ~ 1 | Subject)
-      anova( fm1 )
+      ::
+
+         fm1 <-
+            lme(effort ~ Type, data = ergoStool, random = ~ 1 | Subject)
+         anova( fm1 )

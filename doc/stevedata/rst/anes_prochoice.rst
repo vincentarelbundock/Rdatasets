@@ -1,87 +1,91 @@
 .. container::
 
-   ============== ===============
-   anes_prochoice R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Abortion Attitudes (ANES, 2012)
-      :name: anes_prochoice
+      ============== ===============
+      anes_prochoice R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Abortion Attitudes (ANES, 2012)
+         :name: abortion-attitudes-anes-2012
 
-   A simple data set for in-class illustration about how to estimate and
-   interpret interactive relationships. The data here are deliberately
-   minimal for that end.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A simple data set for in-class illustration about how to estimate
+      and interpret interactive relationships. The data here are
+      deliberately minimal for that end.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      anes_prochoice
+      ::
 
-   .. rubric:: Format
-      :name: format
+         anes_prochoice
 
-   A data frame with 5914 observations on the following 14 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``version``
-      version identifier from ANES
+      A data frame with 5914 observations on the following 14 variables.
 
-   ``caseid``
-      time-series case identifier from ANES
+      ``version``
+         version identifier from ANES
 
-   ``health``
-      oppose/"NFNO"/favor [0:2] abortion if pregnancy would hurt woman
+      ``caseid``
+         time-series case identifier from ANES
 
-   ``fatal``
-      oppose/"NFNO"/favor [0:2] abortion if pregnancy would cause woman
-      to die
+      ``health``
+         oppose/"NFNO"/favor abortion if pregnancy would hurt woman
 
-   ``incest``
-      oppose/"NFNO"/favor [0:2] abortion if pregnancy was caused by
-      incest
+      ``fatal``
+         oppose/"NFNO"/favor abortion if pregnancy would cause woman to
+         die
 
-   ``rape``
-      oppose/"NFNO"/favor [0:2] abortion if pregnancy was caused by rape
+      ``incest``
+         oppose/"NFNO"/favor abortion if pregnancy was caused by incest
 
-   ``bd``
-      oppose/"NFNO"/favor [0:2] abortion if fetus would be born with
-      serious birth defect
+      ``rape``
+         oppose/"NFNO"/favor abortion if pregnancy was caused by rape
 
-   ``fin``
-      oppose/"NFNO"/favor [0:2] abortion if having child would impose
-      financial hardship
+      ``bd``
+         oppose/"NFNO"/favor abortion if fetus would be born with
+         serious birth defect
 
-   ``sex``
-      oppose/"NFNO"/favor [0:2] abortion if the child will not be the
-      sex the woman wants
+      ``fin``
+         oppose/"NFNO"/favor abortion if having child would impose
+         financial hardship
 
-   ``choice``
-      oppose/"NFNO"/favor [0:2] abortion if woman chooses to have one
+      ``sex``
+         oppose/"NFNO"/favor abortion if the child will not be the sex
+         the woman wants
 
-   ``pid``
-      respondent's partisanship [0:2] (Democrat, Independent,
-      Republican)
+      ``choice``
+         oppose/"NFNO"/favor abortion if woman chooses to have one
 
-   ``knowspeaker``
-      was the respondent able to correctly identify the Speaker of the
-      House (John Boehner)
+      ``pid``
+         respondent's partisanship (Democrat, Independent, Republican)
 
-   ``addchoice``
-      an additive scale of the abortion scores [0:16]
+      ``knowspeaker``
+         was the respondent able to correctly identify the Speaker of
+         the House (John Boehner)
 
-   ``lchoice``
-      a continuous latent scale of pro-choice scores (from a simple
-      graded response model)
+      ``addchoice``
+         an additive scale of the abortion scores
 
-   .. rubric:: Details
-      :name: details
+      ``lchoice``
+         a continuous latent scale of pro-choice scores (from a simple
+         graded response model)
 
-   "NFNO" = "Neither Favor Nor Oppose"
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      "NFNO" = "Neither Favor Nor Oppose". All abortion prompts are on a
+      0-2 scale where 0 is oppose, 1 is "NFNO", and 2 is favor. The
+      respondent's party identification is on a similar scale where 0 =
+      "Democrat", 1 = "Independent", and 2 = "Republican". The additive
+      scale of abortion scores has a minimum of 0 and a maximum of 16.
 
-   Data come from ANES's (2012) time series.
+      .. rubric:: Source
+         :name: source
+
+      Data come from ANES's (2012) time series.

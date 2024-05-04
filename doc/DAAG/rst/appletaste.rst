@@ -1,51 +1,53 @@
 .. container::
 
-   ========== ===============
-   appletaste R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Tasting experiment that compared four apple varieties
-      :name: appletaste
+      ========== ===============
+      appletaste R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Tasting experiment that compared four apple varieties
+         :name: tasting-experiment-that-compared-four-apple-varieties
 
-   Each of 20 tasters each assessed three out of the four varieties. The
-   experiment was conducted according to a balanced incomplete block
-   design.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Each of 20 tasters each assessed three out of the four varieties.
+      The experiment was conducted according to a balanced incomplete
+      block design.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(appletaste)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(appletaste)
 
-   A data frame with 60 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   aftertaste
-      a numeric vector
+      A data frame with 60 observations on the following 3 variables.
 
-   Apple samples were rated for ``aftertaste``, by making a mark on a
-   continuous scale that ranged from 0 (extreme dislike) to 150 (like
-   very much).
+      aftertaste
+         a numeric vector
 
-   panelist
-      a factor with levels ``a`` ``b`` ``c`` ``d`` ``e`` ``f`` ``g``
-      ``h`` ``i`` ``j`` ``k`` ``l`` ``m`` ``n`` ``o`` ``p`` ``q`` ``r``
-      ``s`` ``t``
+      Apple samples were rated for ``aftertaste``, by making a mark on a
+      continuous scale that ranged from 0 (extreme dislike) to 150 (like
+      very much).
 
-   product
-      a factor with levels ``298`` ``493`` ``649`` ``937``
+      panelist
+         a factor with levels ``a`` ``b`` ``c`` ``d`` ``e`` ``f`` ``g``
+         ``h`` ``i`` ``j`` ``k`` ``l`` ``m`` ``n`` ``o`` ``p`` ``q``
+         ``r`` ``s`` ``t``
 
-   .. rubric:: Examples
-      :name: examples
+      product
+         a factor with levels ``298`` ``493`` ``649`` ``937``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(appletaste)
-      appletaste.aov <- aov(aftertaste ~ panelist + product, data=appletaste)
-      termplot(appletaste.aov)
+      ::
+
+         data(appletaste)
+         appletaste.aov <- aov(aftertaste ~ panelist + product, data=appletaste)
+         termplot(appletaste.aov)

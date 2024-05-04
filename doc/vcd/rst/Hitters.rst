@@ -1,77 +1,79 @@
 .. container::
 
-   ======= ===============
-   Hitters R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Hitters Data
-      :name: Hitters
+      ======= ===============
+      Hitters R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Hitters Data
+         :name: hitters-data
 
-   This data set is deduced from the ``Baseball`` fielding data set:
-   fielding performance basically includes the numbers of Errors,
-   Putouts and Assists made by each player. In order to reduce the
-   number of observations, the was compressed by calculating the mean
-   number of errors, putouts and assists for each team and for only 6
-   positions (1B, 2B, 3B, C, OF, SS and UT). In addition, each of these
-   three variables was scaled to a common range by dividing each
-   variable by the maximum of the variable.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set is deduced from the ``Baseball`` fielding data set:
+      fielding performance basically includes the numbers of Errors,
+      Putouts and Assists made by each player. In order to reduce the
+      number of observations, the was compressed by calculating the mean
+      number of errors, putouts and assists for each team and for only 6
+      positions (1B, 2B, 3B, C, OF, SS and UT). In addition, each of
+      these three variables was scaled to a common range by dividing
+      each variable by the maximum of the variable.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Hitters")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Hitters")
 
-   A data frame with 154 observations and 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   Positions
-      factor indicating the field position (1B=first baseman, 2B=second
-      baseman, 3B=third baseman, C=catcher, OF=outfielder, SS=Short
-      Stop, UT=Utility Players).
+      A data frame with 154 observations and 4 variables.
 
-   Putouts
-      occur when a fielder causes an opposing player to be tagged or
-      forced out.
+      Positions
+         factor indicating the field position (1B=first baseman,
+         2B=second baseman, 3B=third baseman, C=catcher, OF=outfielder,
+         SS=Short Stop, UT=Utility Players).
 
-   Assists
-      are credited to other fielders involved in making that putout.
+      Putouts
+         occur when a fielder causes an opposing player to be tagged or
+         forced out.
 
-   Errors
-      count the errors made by a player.
+      Assists
+         are credited to other fielders involved in making that putout.
 
-   .. rubric:: Source
-      :name: source
+      Errors
+         count the errors made by a player.
 
-   SAS System for Statistical Graphics, First Edition, Page A2.3
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      SAS System for Statistical Graphics, First Edition, Page A2.3
 
-   M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
-   Cary, NC.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      M. Friendly (2000), *Visualizing Categorical Data*. SAS Institute,
+      Cary, NC.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("Hitters")
-      attach(Hitters)
+      ::
 
-      colors <- c("black","red","green","blue","red","black","blue")
-      pch <- substr(levels(Positions), 1, 1)
-      ternaryplot(Hitters[,2:4],
-        pch = as.character(Positions),
-        col = colors[as.numeric(Positions)],
-        main = "Baseball Hitters Data")
-      grid_legend(0.8, 0.9, pch, colors, levels(Positions),
-        title = "POSITION(S)")
+         data("Hitters")
+         attach(Hitters)
 
-      detach(Hitters)
+         colors <- c("black","red","green","blue","red","black","blue")
+         pch <- substr(levels(Positions), 1, 1)
+         ternaryplot(Hitters[,2:4],
+           pch = as.character(Positions),
+           col = colors[as.numeric(Positions)],
+           main = "Baseball Hitters Data")
+         grid_legend(0.8, 0.9, pch, colors, levels(Positions),
+           title = "POSITION(S)")
+
+         detach(Hitters)

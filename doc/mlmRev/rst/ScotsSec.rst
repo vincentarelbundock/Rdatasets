@@ -1,72 +1,75 @@
 .. container::
 
-   ======== ===============
-   ScotsSec R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Scottish secondary school scores
-      :name: ScotsSec
+      ======== ===============
+      ScotsSec R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Scottish secondary school scores
+         :name: scottish-secondary-school-scores
 
-   Scores attained by 3435 Scottish secondary school students on a
-   standardized test taken at age 16. Both the primary school and the
-   secondary school that the student attended have been recorded.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Scores attained by 3435 Scottish secondary school students on a
+      standardized test taken at age 16. Both the primary school and the
+      secondary school that the student attended have been recorded.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(ScotsSec)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(ScotsSec)
 
-   A data frame with 3435 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   verbal
-      The verbal reasoning score on a test taken by the students on
-      entry to secondary school.
+      A data frame with 3435 observations on the following 6 variables.
 
-   attain
-      The score attained on the standardized test taken at age 16.
+      verbal
+         The verbal reasoning score on a test taken by the students on
+         entry to secondary school.
 
-   primary
-      A factor indicating the primary school that the student attended.
+      attain
+         The score attained on the standardized test taken at age 16.
 
-   sex
-      A factor with levels ``M`` and ``F``
+      primary
+         A factor indicating the primary school that the student
+         attended.
 
-   social
-      The student's social class on a numeric scale from low to high
-      social class.
+      sex
+         A factor with levels ``M`` and ``F``
 
-   second
-      A factor indicating the secondary school that the student
-      attended.
+      social
+         The student's social class on a numeric scale from low to high
+         social class.
 
-   .. rubric:: Details
-      :name: details
+      second
+         A factor indicating the secondary school that the student
+         attended.
 
-   These data are an example of cross-classified grouping factors.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      These data are an example of cross-classified grouping factors.
 
-   http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      http://www.bristol.ac.uk/cmm/learning/mmsoftware/data-rev.html
 
-   Paterson, L. (1991). Socio economic status and educational
-   attainment: a multidimensional and multilevel study. *Evaluation and
-   Research in Education* **5**: 97-121.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Paterson, L. (1991). Socio economic status and educational
+      attainment: a multidimensional and multilevel study. *Evaluation
+      and Research in Education* **5**: 97-121.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      str(ScotsSec)
+      ::
+
+         str(ScotsSec)

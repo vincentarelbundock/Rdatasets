@@ -1,43 +1,45 @@
 .. container::
 
-   ======== ===============
-   bushfire R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Campbell Bushfire Data
-      :name: bushfire
+      ======== ===============
+      bushfire R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Campbell Bushfire Data
+         :name: campbell-bushfire-data
 
-   This data set was used by Campbell (1984) to locate bushfire scars.
-   The dataset contains satelite measurements on five frequency bands,
-   corresponding to each of 38 pixels.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set was used by Campbell (1984) to locate bushfire
+      scars. The dataset contains satelite measurements on five
+      frequency bands, corresponding to each of 38 pixels.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(bushfire, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(bushfire, package="robustbase")
 
-   A data frame with 38 observations on 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A data frame with 38 observations on 5 variables.
 
-   Maronna, R.A. and Yohai, V.J. (1995) The Behavoiur of the
-   Stahel-Donoho Robust Multivariate Estimator. *Journal of the American
-   Statistical Association* **90**, 330–341.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Maronna, R.A. and Yohai, V.J. (1995) The Behavoiur of the
+      Stahel-Donoho Robust Multivariate Estimator. *Journal of the
+      American Statistical Association* **90**, 330–341.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(bushfire)
-      plot(bushfire)
-      covMcd(bushfire)
+      ::
+
+         data(bushfire)
+         plot(bushfire)
+         covMcd(bushfire)

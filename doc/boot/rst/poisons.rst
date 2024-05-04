@@ -1,56 +1,58 @@
 .. container::
 
-   ======= ===============
-   poisons R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Animal Survival Times
-      :name: poisons
+      ======= ===============
+      poisons R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Animal Survival Times
+         :name: animal-survival-times
 
-   The ``poisons`` data frame has 48 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   The data form a 3x4 factorial experiment, the factors being three
-   poisons and four treatments. Each combination of the two factors was
-   used for four animals, the allocation to animals having been
-   completely randomized.
+      The ``poisons`` data frame has 48 rows and 3 columns.
 
-   .. rubric:: Usage
-      :name: usage
+      The data form a 3x4 factorial experiment, the factors being three
+      poisons and four treatments. Each combination of the two factors
+      was used for four animals, the allocation to animals having been
+      completely randomized.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      poisons
+      ::
 
-   .. rubric:: Format
-      :name: format
+         poisons
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``time``
-      The survival time of the animal in units of 10 hours.
+      This data frame contains the following columns:
 
-   ``poison``
-      A factor with levels ``1``, ``2`` and ``3`` giving the type of
-      poison used.
+      ``time``
+         The survival time of the animal in units of 10 hours.
 
-   ``treat``
-      A factor with levels ``A``, ``B``, ``C`` and ``D`` giving the
-      treatment.
+      ``poison``
+         A factor with levels ``1``, ``2`` and ``3`` giving the type of
+         poison used.
 
-   .. rubric:: Source
-      :name: source
+      ``treat``
+         A factor with levels ``A``, ``B``, ``C`` and ``D`` giving the
+         treatment.
 
-   The data were obtained from
+      .. rubric:: Source
+         :name: source
 
-   Box, G.E.P. and Cox, D.R. (1964) An analysis of transformations (with
-   Discussion). *Journal of the Royal Statistical Society, B*, **26**,
-   211–252.
+      The data were obtained from
 
-   .. rubric:: References
-      :name: references
+      Box, G.E.P. and Cox, D.R. (1964) An analysis of transformations
+      (with Discussion). *Journal of the Royal Statistical Society, B*,
+      **26**, 211–252.
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
+
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.

@@ -1,71 +1,73 @@
 .. container::
 
-   =============== ===============
-   CartelStability R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: CartelStability
-      :name: CartelStability
+      =============== ===============
+      CartelStability R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: CartelStability
+         :name: cartelstability
 
-   Weekly observations on prices and other factors from 1880–1886, for a
-   total of 326 weeks.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Weekly observations on prices and other factors from 1880–1886,
+      for a total of 326 weeks.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("CartelStability")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("CartelStability")
 
-   A data frame containing 328 observations on 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   price
-      weekly index of price of shipping a ton of grain by rail.
+      A data frame containing 328 observations on 5 variables.
 
-   cartel
-      factor. Is a railroad cartel operative?
+      price
+         weekly index of price of shipping a ton of grain by rail.
 
-   quantity
-      total tonnage of grain shipped in the week.
+      cartel
+         factor. Is a railroad cartel operative?
 
-   season
-      factor indicating season of year. To match the weekly data, the
-      calendar has been divided into 13 periods, each approximately 4
-      weeks long.
+      quantity
+         total tonnage of grain shipped in the week.
 
-   ice
-      factor. Are the Great Lakes innavigable because of ice?
+      season
+         factor indicating season of year. To match the weekly data, the
+         calendar has been divided into 13 periods, each approximately 4
+         weeks long.
 
-   .. rubric:: Source
-      :name: source
+      ice
+         factor. Are the Great Lakes innavigable because of ice?
 
-   Online complements to Stock and Watson (2007).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Stock and Watson (2007).
 
-   Porter, R. H. (1983). A Study of Cartel Stability: The Joint
-   Executive Committee, 1880–1886. *The Bell Journal of Economics*,
-   **14**, 301–314.
+      .. rubric:: References
+         :name: references
 
-   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
-   2nd ed. Boston: Addison Wesley.
+      Porter, R. H. (1983). A Study of Cartel Stability: The Joint
+      Executive Committee, 1880–1886. *The Bell Journal of Economics*,
+      **14**, 301–314.
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, J.H. and Watson, M.W. (2007). *Introduction to
+      Econometrics*, 2nd ed. Boston: Addison Wesley.
 
-   ``StockWatson2007``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``StockWatson2007``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("CartelStability")
-      summary(CartelStability)
+      ::
+
+         data("CartelStability")
+         summary(CartelStability)

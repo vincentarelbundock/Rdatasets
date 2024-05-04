@@ -1,62 +1,64 @@
 .. container::
 
-   ======== ===============
-   leaftemp R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Leaf and Air Temperature Data
-      :name: leaftemp
+      ======== ===============
+      leaftemp R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Leaf and Air Temperature Data
+         :name: leaf-and-air-temperature-data
 
-   Data are measurements of vapour pressure and of the difference
-   between leaf and air temperature.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data are measurements of vapour pressure and of the difference
+      between leaf and air temperature.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      leaftemp
+      ::
 
-   .. rubric:: Format
-      :name: format
+         leaftemp
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   CO2level
-      Carbon Dioxide level ``low``, ``medium``, ``high``
+      This data frame contains the following columns:
 
-   vapPress
-      Vapour pressure
+      CO2level
+         Carbon Dioxide level ``low``, ``medium``, ``high``
 
-   tempDiff
-      Difference between leaf and air temperature
+      vapPress
+         Vapour pressure
 
-   BtempDiff
-      a numeric vector
+      tempDiff
+         Difference between leaf and air temperature
 
-   .. rubric:: Source
-      :name: source
+      BtempDiff
+         a numeric vector
 
-   Katharina Siebke and Susan von Cammerer, Australian National
-   University.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Katharina Siebke and Susan von Cammerer, Australian National
+      University.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      print("Fitting Multiple Lines - Example 7.3")
+      ::
 
-      leaf.lm1 <- lm(tempDiff ~ 1 , data = leaftemp)
-      leaf.lm2 <- lm(tempDiff ~ vapPress, data = leaftemp)
-      leaf.lm3 <- lm(tempDiff ~ CO2level + vapPress, data = leaftemp)
-      leaf.lm4 <- lm(tempDiff ~ CO2level + vapPress + vapPress:CO2level,
-        data = leaftemp)
+         print("Fitting Multiple Lines - Example 7.3")
 
-      anova(leaf.lm1, leaf.lm2, leaf.lm3, leaf.lm4)
+         leaf.lm1 <- lm(tempDiff ~ 1 , data = leaftemp)
+         leaf.lm2 <- lm(tempDiff ~ vapPress, data = leaftemp)
+         leaf.lm3 <- lm(tempDiff ~ CO2level + vapPress, data = leaftemp)
+         leaf.lm4 <- lm(tempDiff ~ CO2level + vapPress + vapPress:CO2level,
+           data = leaftemp)
 
-      summary(leaf.lm2)
-      plot(leaf.lm2)
+         anova(leaf.lm1, leaf.lm2, leaf.lm3, leaf.lm4)
+
+         summary(leaf.lm2)
+         plot(leaf.lm2)

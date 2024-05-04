@@ -1,87 +1,89 @@
 .. container::
 
-   ====== ===============
-   meap93 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: meap93
-      :name: meap93
+      ====== ===============
+      meap93 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: meap93
+         :name: meap93
 
-   Wooldridge Source: I collected these data from the old Michigan
-   Department of Education web site. See MATHPNL.RAW for the current web
-   site. I used data on most high schools in the state of Michigan for
-   1993. I dropped some high schools that had suspicious-looking data.
-   Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: I collected these data from the old Michigan
+      Department of Education web site. See MATHPNL.RAW for the current
+      web site. I used data on most high schools in the state of
+      Michigan for 1993. I dropped some high schools that had
+      suspicious-looking data. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('meap93')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('meap93')
 
-   A data.frame with 408 observations on 17 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **lnchprg:** perc of studs in sch lnch prog
+      A data.frame with 408 observations on 17 variables:
 
-   -  **enroll:** school enrollment
+      -  **lnchprg:** perc of studs in sch lnch prog
 
-   -  **staff:** staff per 1000 students
+      -  **enroll:** school enrollment
 
-   -  **expend:** expend. per stud, $
+      -  **staff:** staff per 1000 students
 
-   -  **salary:** avg. teacher salary, $
+      -  **expend:** expend. per stud, $
 
-   -  **benefits:** avg. teacher benefits, $
+      -  **salary:** avg. teacher salary, $
 
-   -  **droprate:** school dropout rate, perc
+      -  **benefits:** avg. teacher benefits, $
 
-   -  **gradrate:** school graduation rate, perc
+      -  **droprate:** school dropout rate, perc
 
-   -  **math10:** perc studs passing MEAP math
+      -  **gradrate:** school graduation rate, perc
 
-   -  **sci11:** perc studs passing MEAP science
+      -  **math10:** perc studs passing MEAP math
 
-   -  **totcomp:** salary + benefits
+      -  **sci11:** perc studs passing MEAP science
 
-   -  **ltotcomp:** log(totcomp)
+      -  **totcomp:** salary + benefits
 
-   -  **lexpend:** log of expend
+      -  **ltotcomp:** log(totcomp)
 
-   -  **lenroll:** log(enroll)
+      -  **lexpend:** log of expend
 
-   -  **lstaff:** log(staff)
+      -  **lenroll:** log(enroll)
 
-   -  **bensal:** benefits/salary
+      -  **lstaff:** log(staff)
 
-   -  **lsalary:** log(salary)
+      -  **bensal:** benefits/salary
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lsalary:** log(salary)
 
-   Many states have data, at either the district or building level, on
-   student performance and spending. A good exercise in data collection
-   and cleaning is to have students find such data for a particular
-   state, and to put it into a form that can be used for econometric
-   analysis.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 50, 65, 111-112, 127-128, 155-156, 219, 336, 339,
-   696-697
+      Many states have data, at either the district or building level,
+      on student performance and spending. A good exercise in data
+      collection and cleaning is to have students find such data for a
+      particular state, and to put it into a form that can be used for
+      econometric analysis.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 50, 65, 111-112, 127-128, 155-156, 219, 336,
+      339, 696-697
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(meap93)
+      ::
+
+          str(meap93)

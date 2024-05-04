@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>longley</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='longley'>Longley's Economic Regression Data</h2>
+<h2>Longley's Economic Regression Data</h2>
 
 <h3>Description</h3>
 
@@ -80,7 +80,7 @@ Wadsworth &amp; Brooks/Cole.
 <h3>Examples</h3>
 
 <pre><code class='language-R'>require(stats); require(graphics)
-## give the data set in the form it is used in S-PLUS:
+## give the data set in the form it was used in S-PLUS:
 longley.x &lt;- data.matrix(longley[, 1:6])
 longley.y &lt;- longley[, "Employed"]
 pairs(longley, main = "longley data")
@@ -91,6 +91,7 @@ plot(fm1)
 par(opar)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

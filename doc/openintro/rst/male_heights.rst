@@ -1,41 +1,43 @@
 .. container::
 
-   ============ ===============
-   male_heights R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Sample of 100 male heights
-      :name: male_heights
+      ============ ===============
+      male_heights R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sample of 100 male heights
+         :name: sample-of-100-male-heights
 
-   Random sample based on Food Commodity Intake Database distribution
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Random sample based on Food Commodity Intake Database distribution
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      male_heights
+      ::
 
-   .. rubric:: Format
-      :name: format
+         male_heights
 
-   A data frame with 100 observations on the following variable.
+      .. rubric:: Format
+         :name: format
 
-   heights
-      a numeric vector
+      A data frame with 100 observations on the following variable.
 
-   .. rubric:: References
-      :name: references
+      heights
+         a numeric vector
 
-   What We Eat In America - Food Commodity Intake Database. Available at
-   https://fcid.foodrisk.org/.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      What We Eat In America - Food Commodity Intake Database. Available
+      at https://fcid.foodrisk.org/.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      male_heights
+      ::
+
+         male_heights

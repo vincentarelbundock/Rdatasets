@@ -1,39 +1,41 @@
 .. container::
 
-   ====== ===============
-   nottem R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Average Monthly Temperatures at Nottingham, 1920–1939
-      :name: nottem
+      ====== ===============
+      nottem R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Average Monthly Temperatures at Nottingham, 1920–1939
+         :name: average-monthly-temperatures-at-nottingham-19201939
 
-   A time series object containing average air temperatures at
-   Nottingham Castle in degrees Fahrenheit for 20 years.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A time series object containing average air temperatures at
+      Nottingham Castle in degrees Fahrenheit for 20 years.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      nottem
+      ::
 
-   .. rubric:: Source
-      :name: source
+         nottem
 
-   Anderson, O. D. (1976) *Time Series Analysis and Forecasting: The
-   Box-Jenkins approach.* Butterworths. Series R.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Anderson, O. D. (1976) *Time Series Analysis and Forecasting: The
+      Box-Jenkins approach.* Butterworths. Series R.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(stats); require(graphics)
-      nott <- window(nottem, end = c(1936,12))
-      fit <- arima(nott, order = c(1,0,0), list(order = c(2,1,0), period = 12))
-      nott.fore <- predict(fit, n.ahead = 36)
-      ts.plot(nott, nott.fore$pred, nott.fore$pred+2*nott.fore$se,
-              nott.fore$pred-2*nott.fore$se, gpars = list(col = c(1,1,4,4)))
+      ::
+
+         require(stats); require(graphics)
+         nott <- window(nottem, end = c(1936,12))
+         fit <- arima(nott, order = c(1,0,0), list(order = c(2,1,0), period = 12))
+         nott.fore <- predict(fit, n.ahead = 36)
+         ts.plot(nott, nott.fore$pred, nott.fore$pred+2*nott.fore$se,
+                 nott.fore$pred-2*nott.fore$se, gpars = list(col = c(1,1,4,4)))

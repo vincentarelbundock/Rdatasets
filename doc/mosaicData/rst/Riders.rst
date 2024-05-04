@@ -1,99 +1,102 @@
 .. container::
 
-   ====== ===============
-   Riders R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Volume of Users of a Massachusetts Rail Trail
-      :name: Riders
+      ====== ===============
+      Riders R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Volume of Users of a Massachusetts Rail Trail
+         :name: volume-of-users-of-a-massachusetts-rail-trail
 
-   The Pioneer Valley Planning Commission (PVPC) collected data north of
-   Chestnut Street in Florence, MA for ninety days from April 5, 2005 to
-   November 15, 2005. Data collectors set up a laser sensor, with breaks
-   in the laser beam recording when a rail-trail user passed the data
-   collection station.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The Pioneer Valley Planning Commission (PVPC) collected data north
+      of Chestnut Street in Florence, MA for ninety days from April 5,
+      2005 to November 15, 2005. Data collectors set up a laser sensor,
+      with breaks in the laser beam recording when a rail-trail user
+      passed the data collection station.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Riders)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Riders)
 
-   A data frame with 90 observations on the following 12 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``date``
-      date of data collection (POSIXct)
+      A data frame with 90 observations on the following 12 variables.
 
-   ``day``
-      a factor with levels ``Monday``, ``Tuesday``, ``Wednesday``,
-      ``Thursday``, ``Friday``, ``Saturday``, and ``Sunday``.
+      ``date``
+         date of data collection (POSIXct)
 
-   ``highT``
-      high temperature for the day (in degrees Fahrenheit)
+      ``day``
+         a factor with levels ``Monday``, ``Tuesday``, ``Wednesday``,
+         ``Thursday``, ``Friday``, ``Saturday``, and ``Sunday``.
 
-   ``lowT``
-      low temperature for the day (in degrees Fahrenheit)
+      ``highT``
+         high temperature for the day (in degrees Fahrenheit)
 
-   ``hi``
-      shorter name for ``highT``
+      ``lowT``
+         low temperature for the day (in degrees Fahrenheit)
 
-   ``lo``
-      shorter name for ``lowT``
+      ``hi``
+         shorter name for ``highT``
 
-   ``precip``
-      inches of precipitation
+      ``lo``
+         shorter name for ``lowT``
 
-   ``clouds``
-      measure of cloud cover (in oktas)
+      ``precip``
+         inches of precipitation
 
-   ``riders``
-      estimated number of trail crossings that day (number of breaks
-      recorded)
+      ``clouds``
+         measure of cloud cover (in oktas)
 
-   ``ct``
-      shorter name for ``riders``
+      ``riders``
+         estimated number of trail crossings that day (number of breaks
+         recorded)
 
-   ``weekday``
-      type of day: a factor with levels ``N`` (weekend or holiday) ``Y``
-      (non-holiday weekday)
+      ``ct``
+         shorter name for ``riders``
 
-   ``wday``
-      shorter name for ``weekday``
+      ``weekday``
+         type of day: a factor with levels ``N`` (weekend or holiday)
+         ``Y`` (non-holiday weekday)
 
-   .. rubric:: Details
-      :name: details
+      ``wday``
+         shorter name for ``weekday``
 
-   There is a potential for error when two users trigger the infrared
-   beam at exactly the same time since the counter would only logs one
-   of the crossings. The collectors left the motion detector out during
-   the winter, but because the counter drops data when the temperature
-   falls below 14 degrees Fahrenheit, there are no data for the coldest
-   winter months.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      There is a potential for error when two users trigger the infrared
+      beam at exactly the same time since the counter would only logs
+      one of the crossings. The collectors left the motion detector out
+      during the winter, but because the counter drops data when the
+      temperature falls below 14 degrees Fahrenheit, there are no data
+      for the coldest winter months.
 
-   Pioneer Valley Planning Commission,
-   http://www.fvgreenway.org/pdfs/Northampton-Bikepath-Volume-Counts%20_05_LTA.pdf
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Pioneer Valley Planning Commission,
+      http://www.fvgreenway.org/pdfs/Northampton-Bikepath-Volume-Counts%20_05_LTA.pdf
 
-   "Rail trails and property values: Is there an association?", Nicholas
-   J. Horton and Ella Hartenian (Journal of Statistics Education, 2015),
-   http://www.amstat.org/publications/jse/v23n2/horton.pdf
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      "Rail trails and property values: Is there an association?",
+      Nicholas J. Horton and Ella Hartenian (Journal of Statistics
+      Education, 2015),
+      http://www.amstat.org/publications/jse/v23n2/horton.pdf
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Riders)
-      str(Riders)
+      ::
+
+         data(Riders)
+         str(Riders)

@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>CPS1988</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='CPS1988'>Determinants of Wages Data (CPS 1988)</h2>
+<h2>Determinants of Wages Data (CPS 1988)</h2>
 
 <h3>Description</h3>
 
@@ -69,7 +69,7 @@ As a result, some respondents have negative experience.
 
 <h3>Source</h3>
 
-<p><a href="http://www.personal.psu.edu/hxb11/MEDIAN.HTM">http://www.personal.psu.edu/hxb11/MEDIAN.HTM</a>
+<p>Personal web page of Herman J. Bierens.
 </p>
 
 
@@ -105,13 +105,16 @@ buchinsky &lt;- log(wage) ~ ethnicity * (education + experience + parttime) +
 
 ## OLS and LAD fits (for LAD see Bierens and Ginter, Tables 1-3.A.)
 mincer_ols &lt;- lm(mincer, data = CPS1988)
-mincer_lad &lt;- rq(mincer, data = CPS1988)
 quart_ols &lt;- lm(quart, data = CPS1988)
-quart_lad &lt;- rq(quart, data = CPS1988)
 buchinsky_ols &lt;- lm(buchinsky, data = CPS1988)
+
+quart_lad &lt;- rq(quart, data = CPS1988)
+mincer_lad &lt;- rq(mincer, data = CPS1988)
 buchinsky_lad &lt;- rq(buchinsky, data = CPS1988)
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

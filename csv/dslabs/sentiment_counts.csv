@@ -1,0 +1,12 @@
+rownames,sentiment,Android,iPhone
+1,anger,962,527
+2,anticipation,917,707
+3,disgust,639,314
+4,fear,799,486
+5,joy,695,536
+6,negative,1657,931
+7,positive,1827,1494
+8,sadness,901,514
+9,surprise,530,365
+10,trust,1248,1001
+11,none,11834,10793

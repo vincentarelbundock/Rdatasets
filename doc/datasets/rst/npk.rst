@@ -1,70 +1,72 @@
 .. container::
 
-   === ===============
-   npk R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Classical N, P, K Factorial Experiment
-      :name: npk
+      === ===============
+      npk R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Classical N, P, K Factorial Experiment
+         :name: classical-n-p-k-factorial-experiment
 
-   A classical N, P, K (nitrogen, phosphate, potassium) factorial
-   experiment on the growth of peas conducted on 6 blocks. Each half of
-   a fractional factorial design confounding the NPK interaction was
-   used on 3 of the plots.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A classical N, P, K (nitrogen, phosphate, potassium) factorial
+      experiment on the growth of peas conducted on 6 blocks. Each half
+      of a fractional factorial design confounding the NPK interaction
+      was used on 3 of the plots.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      npk
+      ::
 
-   .. rubric:: Format
-      :name: format
+         npk
 
-   The ``npk`` data frame has 24 rows and 5 columns:
+      .. rubric:: Format
+         :name: format
 
-   ``block``
-      which block (label 1 to 6).
+      The ``npk`` data frame has 24 rows and 5 columns:
 
-   ``N``
-      indicator (0/1) for the application of nitrogen.
+      ``block``
+         which block (label 1 to 6).
 
-   ``P``
-      indicator (0/1) for the application of phosphate.
+      ``N``
+         indicator (0/1) for the application of nitrogen.
 
-   ``K``
-      indicator (0/1) for the application of potassium.
+      ``P``
+         indicator (0/1) for the application of phosphate.
 
-   ``yield``
-      Yield of peas, in pounds/plot (the plots were (1/70) acre).
+      ``K``
+         indicator (0/1) for the application of potassium.
 
-   .. rubric:: Source
-      :name: source
+      ``yield``
+         Yield of peas, in pounds/plot (the plots were (1/70) acre).
 
-   Imperial College, London, M.Sc. exercise sheet.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Imperial College, London, M.Sc. exercise sheet.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      options(contrasts = c("contr.sum", "contr.poly"))
-      npk.aov <- aov(yield ~ block + N*P*K, npk)
-      npk.aov
-      summary(npk.aov)
-      coef(npk.aov)
-      options(contrasts = c("contr.treatment", "contr.poly"))
-      npk.aov1 <- aov(yield ~ block + N + K, data = npk)
-      summary.lm(npk.aov1)
-      se.contrast(npk.aov1, list(N=="0", N=="1"), data = npk)
-      model.tables(npk.aov1, type = "means", se = TRUE)
+      ::
+
+         options(contrasts = c("contr.sum", "contr.poly"))
+         npk.aov <- aov(yield ~ block + N*P*K, npk)
+         npk.aov
+         summary(npk.aov)
+         coef(npk.aov)
+         options(contrasts = c("contr.treatment", "contr.poly"))
+         npk.aov1 <- aov(yield ~ block + N + K, data = npk)
+         summary.lm(npk.aov1)
+         se.contrast(npk.aov1, list(N=="0", N=="1"), data = npk)
+         model.tables(npk.aov1, type = "means", se = TRUE)

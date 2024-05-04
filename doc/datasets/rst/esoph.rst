@@ -1,84 +1,86 @@
 .. container::
 
-   ===== ===============
-   esoph R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Smoking, Alcohol and (O)esophageal Cancer
-      :name: esoph
+      ===== ===============
+      esoph R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Smoking, Alcohol and (O)esophageal Cancer
+         :name: smoking-alcohol-and-oesophageal-cancer
 
-   Data from a case-control study of (o)esophageal cancer in
-   Ille-et-Vilaine, France.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from a case-control study of (o)esophageal cancer in
+      Ille-et-Vilaine, France.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      esoph
+      ::
 
-   .. rubric:: Format
-      :name: format
+         esoph
 
-   A data frame with records for 88 age/alcohol/tobacco combinations.
+      .. rubric:: Format
+         :name: format
 
-   ==== =========== =================== ==============
-   [,1] "agegp"     Age group           1 25--34 years
-   \                                    2 35--44
-   \                                    3 45--54
-   \                                    4 55--64
-   \                                    5 65--74
-   \                                    6 75+
-   [,2] "alcgp"     Alcohol consumption 1 0--39 gm/day
-   \                                    2 40--79
-   \                                    3 80--119
-   \                                    4 120+
-   [,3] "tobgp"     Tobacco consumption 1 0-- 9 gm/day
-   \                                    2 10--19
-   \                                    3 20--29
-   \                                    4 30+
-   [,4] "ncases"    Number of cases     
-   [,5] "ncontrols" Number of controls  
-   ==== =========== =================== ==============
+      A data frame with records for 88 age/alcohol/tobacco combinations.
 
-   .. rubric:: Author(s)
-      :name: authors
+      ==== ============= =================== ==============
+      [,1] ``agegp``     Age group           1 25--34 years
+      \                                      2 35--44
+      \                                      3 45--54
+      \                                      4 55--64
+      \                                      5 65--74
+      \                                      6 75+
+      [,2] ``alcgp``     Alcohol consumption 1 0--39 gm/day
+      \                                      2 40--79
+      \                                      3 80--119
+      \                                      4 120+
+      [,3] ``tobgp``     Tobacco consumption 1 0-- 9 gm/day
+      \                                      2 10--19
+      \                                      3 20--29
+      \                                      4 30+
+      [,4] ``ncases``    Number of cases     
+      [,5] ``ncontrols`` Number of controls  
+      ==== ============= =================== ==============
 
-   Thomas Lumley
+      .. rubric:: Author(s)
+         :name: authors
 
-   .. rubric:: Source
-      :name: source
+      Thomas Lumley
 
-   Breslow, N. E. and Day, N. E. (1980) *Statistical Methods in Cancer
-   Research. Volume 1: The Analysis of Case-Control Studies.* IARC Lyon
-   / Oxford University Press.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Breslow, N. E. and Day, N. E. (1980) *Statistical Methods in
+      Cancer Research. Volume 1: The Analysis of Case-Control Studies.*
+      IARC Lyon / Oxford University Press.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(stats)
-      require(graphics) # for mosaicplot
-      summary(esoph)
-      ## effects of alcohol, tobacco and interaction, age-adjusted
-      model1 <- glm(cbind(ncases, ncontrols) ~ agegp + tobgp * alcgp,
-                    data = esoph, family = binomial())
-      anova(model1)
-      ## Try a linear effect of alcohol and tobacco
-      model2 <- glm(cbind(ncases, ncontrols) ~ agegp + unclass(tobgp)
-                                               + unclass(alcgp),
-                    data = esoph, family = binomial())
-      summary(model2)
-      ## Re-arrange data for a mosaic plot
-      ttt <- table(esoph$agegp, esoph$alcgp, esoph$tobgp)
-      o <- with(esoph, order(tobgp, alcgp, agegp))
-      ttt[ttt == 1] <- esoph$ncases[o]
-      tt1 <- table(esoph$agegp, esoph$alcgp, esoph$tobgp)
-      tt1[tt1 == 1] <- esoph$ncontrols[o]
-      tt <- array(c(ttt, tt1), c(dim(ttt),2),
-                  c(dimnames(ttt), list(c("Cancer", "control"))))
-      mosaicplot(tt, main = "esoph data set", color = TRUE)
+      ::
+
+         require(stats)
+         require(graphics) # for mosaicplot
+         summary(esoph)
+         ## effects of alcohol, tobacco and interaction, age-adjusted
+         model1 <- glm(cbind(ncases, ncontrols) ~ agegp + tobgp * alcgp,
+                       data = esoph, family = binomial())
+         anova(model1)
+         ## Try a linear effect of alcohol and tobacco
+         model2 <- glm(cbind(ncases, ncontrols) ~ agegp + unclass(tobgp)
+                                                  + unclass(alcgp),
+                       data = esoph, family = binomial())
+         summary(model2)
+         ## Re-arrange data for a mosaic plot
+         ttt <- table(esoph$agegp, esoph$alcgp, esoph$tobgp)
+         o <- with(esoph, order(tobgp, alcgp, agegp))
+         ttt[ttt == 1] <- esoph$ncases[o]
+         tt1 <- table(esoph$agegp, esoph$alcgp, esoph$tobgp)
+         tt1[tt1 == 1] <- esoph$ncontrols[o]
+         tt <- array(c(ttt, tt1), c(dim(ttt),2),
+                     c(dimnames(ttt), list(c("Cancer", "control"))))
+         mosaicplot(tt, main = "esoph data set", color = TRUE)

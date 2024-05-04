@@ -1,53 +1,57 @@
 .. container::
 
-   ======= ===============
-   turnips R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Turnip prices in Animal Crossing (New Horizons)
-      :name: turnips
+      ======= ===============
+      turnips R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Turnip prices in Animal Crossing (New Horizons)
+         :name: turnip-prices-in-animal-crossing-new-horizons
 
-   A data set on turnip prices from my experience with Animal Crossing
-   (New Horizons)
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data set on turnip prices from my experience with Animal
+      Crossing (New Horizons)
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      turnips
+      ::
 
-   .. rubric:: Format
-      :name: format
+         turnips
 
-   A data frame with the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``date``
-      a date
+      A data frame with the following 3 variables.
 
-   ``time``
-      a character vector referring to the particular time period of
-      observation
+      ``date``
+         a date
 
-   ``price``
-      a numeric vector for the price of turnips, in bells
+      ``time``
+         a character vector referring to the particular time period of
+         observation
 
-   .. rubric:: Details
-      :name: details
+      ``price``
+         a numeric vector for the price of turnips, in bells
 
-   Sunday prices are set for purchase and do not fluctuate. Timmy and
-   Tommy do not accept turnips on Sunday either. Daily prices fluctuate
-   both at opening on Nook's Cranny and at noon. This amounts to three
-   time periods in the data. "5:00 a.m." is reserved only for Sunday
-   purchases (i.e. when Daisy Mae arrives on the island). 8:00 a.m. is
-   the morning price because that is when Nook's Cranny opens. 12:00
-   p.m. is when the price changes for the day.
+      .. rubric:: Details
+         :name: details
 
-   Explanations for missing dates: Timmy and Tommy were renovating the
-   shop on May 6, 2021. My wife was diagnosed with cancer and my mother
-   in law went to the hospital on the afternoon of Dec. 27, 2021. I did
-   not get to play the game on Jan. 9, 2022 because of errands I was
-   running for my wife. I plain forgot to check on Feb. 7, 2022.
+      Sunday prices are set for purchase and do not fluctuate. Timmy and
+      Tommy do not accept turnips on Sunday either. Daily prices
+      fluctuate both at opening on Nook's Cranny and at noon. This
+      amounts to three time periods in the data. "5:00 a.m." is reserved
+      only for Sunday purchases (i.e. when Daisy Mae arrives on the
+      island). 8:00 a.m. is the morning price because that is when
+      Nook's Cranny opens. 12:00 p.m. is when the price changes for the
+      day.
+
+      Explanations for missing dates: Timmy and Tommy were renovating
+      the shop on May 6, 2021. My wife was diagnosed with cancer and my
+      mother in law went to the hospital on the afternoon of Dec. 27,
+      2021. I did not get to play the game on Jan. 9, 2022 because of
+      errands I was running for my wife. I plain forgot to check on Feb.
+      7, 2022.

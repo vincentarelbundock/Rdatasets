@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>CrohnD</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='CrohnD'>Crohn's Disease Adverse Events Data</h2>
+<h2>Crohn's Disease Adverse Events Data</h2>
 
 <h3>Description</h3>
 
@@ -35,7 +35,6 @@ disease of the intestines).
 
 <p>A data frame with 117 observations on the following 9 variables.
 </p>
-
 
 <dl>
 <dt><code>ID</code></dt><dd><p>the numeric patient IDs</p>
@@ -84,6 +83,7 @@ str(CrohnD)
 with(CrohnD, ftable(table(sex,country, treat)))
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

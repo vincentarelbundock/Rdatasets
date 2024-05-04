@@ -1,32 +1,34 @@
 .. container::
 
-   ========== ===============
-   na_example R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Count data with some missing values
-      :name: na_example
+      ========== ===============
+      na_example R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Count data with some missing values
+         :name: count-data-with-some-missing-values
 
-   This dataset was randomly generated.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This dataset was randomly generated.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      na_example
+      ::
 
-   .. rubric:: Format
-      :name: format
+         na_example
 
-   An object of class ``"integer"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Examples
-      :name: examples
+      An object of class ``"integer"``.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      print(sum(is.na(na_example)))
+      ::
+
+         print(sum(is.na(na_example)))

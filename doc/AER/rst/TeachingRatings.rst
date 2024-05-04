@@ -1,120 +1,124 @@
 .. container::
 
-   =============== ===============
-   TeachingRatings R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: Impact of Beauty on Instructor's Teaching Ratings
-      :name: TeachingRatings
+      =============== ===============
+      TeachingRatings R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Impact of Beauty on Instructor's Teaching Ratings
+         :name: impact-of-beauty-on-instructors-teaching-ratings
 
-   Data on course evaluations, course characteristics, and professor
-   characteristics for 463 courses for the academic years 2000–2002 at
-   the University of Texas at Austin.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on course evaluations, course characteristics, and professor
+      characteristics for 463 courses for the academic years 2000–2002
+      at the University of Texas at Austin.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("TeachingRatings")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("TeachingRatings")
 
-   A data frame containing 463 observations on 13 variables.
+      .. rubric:: Format
+         :name: format
 
-   minority
-      factor. Does the instructor belong to a minority (non-Caucasian)?
+      A data frame containing 463 observations on 13 variables.
 
-   age
-      the professor's age.
+      minority
+         factor. Does the instructor belong to a minority
+         (non-Caucasian)?
 
-   gender
-      factor indicating instructor's gender.
+      age
+         the professor's age.
 
-   credits
-      factor. Is the course a single-credit elective (e.g., yoga,
-      aerobics, dance)?
+      gender
+         factor indicating instructor's gender.
 
-   beauty
-      rating of the instructor's physical appearance by a panel of six
-      students, averaged across the six panelists, shifted to have a
-      mean of zero.
+      credits
+         factor. Is the course a single-credit elective (e.g., yoga,
+         aerobics, dance)?
 
-   eval
-      course overall teaching evaluation score, on a scale of 1 (very
-      unsatisfactory) to 5 (excellent).
+      beauty
+         rating of the instructor's physical appearance by a panel of
+         six students, averaged across the six panelists, shifted to
+         have a mean of zero.
 
-   division
-      factor. Is the course an upper or lower division course? (Lower
-      division courses are mainly large freshman and sophomore courses)?
+      eval
+         course overall teaching evaluation score, on a scale of 1 (very
+         unsatisfactory) to 5 (excellent).
 
-   native
-      factor. Is the instructor a native English speaker?
+      division
+         factor. Is the course an upper or lower division course? (Lower
+         division courses are mainly large freshman and sophomore
+         courses)?
 
-   tenure
-      factor. Is the instructor on tenure track?
+      native
+         factor. Is the instructor a native English speaker?
 
-   students
-      number of students that participated in the evaluation.
+      tenure
+         factor. Is the instructor on tenure track?
 
-   allstudents
-      number of students enrolled in the course.
+      students
+         number of students that participated in the evaluation.
 
-   prof
-      factor indicating instructor identifier.
+      allstudents
+         number of students enrolled in the course.
 
-   .. rubric:: Details
-      :name: details
+      prof
+         factor indicating instructor identifier.
 
-   A sample of student instructional ratings for a group of university
-   teachers along with beauty rating (average from six independent
-   judges) and a number of other characteristics.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      A sample of student instructional ratings for a group of
+      university teachers along with beauty rating (average from six
+      independent judges) and a number of other characteristics.
 
-   The data were provided by Prof. Hamermesh. The first 8 variables are
-   also available in the online complements to Stock and Watson (2007)
-   at
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The data were provided by Prof. Hamermesh. The first 8 variables
+      are also available in the online complements to Stock and Watson
+      (2007) at
 
-   Hamermesh, D.S., and Parker, A. (2005). Beauty in the Classroom:
-   Instructors' Pulchritude and Putative Pedagogical Productivity.
-   *Economics of Education Review*, **24**, 369–376.
+      .. rubric:: References
+         :name: references
 
-   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
-   2nd ed. Boston: Addison Wesley.
+      Hamermesh, D.S., and Parker, A. (2005). Beauty in the Classroom:
+      Instructors' Pulchritude and Putative Pedagogical Productivity.
+      *Economics of Education Review*, **24**, 369–376.
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, J.H. and Watson, M.W. (2007). *Introduction to
+      Econometrics*, 2nd ed. Boston: Addison Wesley.
 
-   ``StockWatson2007``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``StockWatson2007``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("TeachingRatings", package = "AER")
+      ::
 
-      ## evaluation score vs. beauty
-      plot(eval ~ beauty, data = TeachingRatings)
-      fm <- lm(eval ~ beauty, data = TeachingRatings)
-      abline(fm)
-      summary(fm)
+         data("TeachingRatings", package = "AER")
 
-      ## prediction of Stock & Watson's evaluation score
-      sw <- with(TeachingRatings, mean(beauty) + c(0, 1) * sd(beauty))
-      names(sw) <- c("Watson", "Stock")
-      predict(fm, newdata = data.frame(beauty = sw))
+         ## evaluation score vs. beauty
+         plot(eval ~ beauty, data = TeachingRatings)
+         fm <- lm(eval ~ beauty, data = TeachingRatings)
+         abline(fm)
+         summary(fm)
 
-      ## Hamermesh and Parker, 2005, Table 3
-      fmw <- lm(eval ~ beauty + gender + minority + native + tenure + division + credits,
-        weights = students, data = TeachingRatings)
-      coeftest(fmw, vcov = vcovCL, cluster = TeachingRatings$prof)
+         ## prediction of Stock & Watson's evaluation score
+         sw <- with(TeachingRatings, mean(beauty) + c(0, 1) * sd(beauty))
+         names(sw) <- c("Watson", "Stock")
+         predict(fm, newdata = data.frame(beauty = sw))
+
+         ## Hamermesh and Parker, 2005, Table 3
+         fmw <- lm(eval ~ beauty + gender + minority + native + tenure + division + credits,
+           weights = students, data = TeachingRatings)
+         coeftest(fmw, vcov = vcovCL, cluster = TeachingRatings$prof)

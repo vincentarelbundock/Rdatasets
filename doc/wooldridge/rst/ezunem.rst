@@ -1,122 +1,124 @@
 .. container::
 
-   ====== ===============
-   ezunem R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: ezunem
-      :name: ezunem
+      ====== ===============
+      ezunem R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: ezunem
+         :name: ezunem
 
-   Wooldridge Source: See EZANDERS.RAW Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: See EZANDERS.RAW Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('ezunem')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('ezunem')
 
-   A data.frame with 198 observations on 37 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1980 to 1988
+      A data.frame with 198 observations on 37 variables:
 
-   -  **uclms:** unemployment claims
+      -  **year:** 1980 to 1988
 
-   -  **ez:** =1 if have enterprise zone
+      -  **uclms:** unemployment claims
 
-   -  **d81:** =1 if year == 1981
+      -  **ez:** =1 if have enterprise zone
 
-   -  **d82:** =1 if year == 1982
+      -  **d81:** =1 if year == 1981
 
-   -  **d83:** =1 if year == 1983
+      -  **d82:** =1 if year == 1982
 
-   -  **d84:** =1 if year == 1984
+      -  **d83:** =1 if year == 1983
 
-   -  **d85:** =1 if year == 1985
+      -  **d84:** =1 if year == 1984
 
-   -  **d86:** =1 if year == 1986
+      -  **d85:** =1 if year == 1985
 
-   -  **d87:** =1 if year == 1987
+      -  **d86:** =1 if year == 1986
 
-   -  **d88:** =1 if year == 1988
+      -  **d87:** =1 if year == 1987
 
-   -  **c1:** =1 if city == 1
+      -  **d88:** =1 if year == 1988
 
-   -  **c2:** =1 if city == 2
+      -  **c1:** =1 if city == 1
 
-   -  **c3:** =1 if city == 3
+      -  **c2:** =1 if city == 2
 
-   -  **c4:**
+      -  **c3:** =1 if city == 3
 
-   -  **c5:**
+      -  **c4:**
 
-   -  **c6:**
+      -  **c5:**
 
-   -  **c7:**
+      -  **c6:**
 
-   -  **c8:**
+      -  **c7:**
 
-   -  **c9:**
+      -  **c8:**
 
-   -  **c10:**
+      -  **c9:**
 
-   -  **c11:**
+      -  **c10:**
 
-   -  **c12:**
+      -  **c11:**
 
-   -  **c13:**
+      -  **c12:**
 
-   -  **c14:**
+      -  **c13:**
 
-   -  **c15:**
+      -  **c14:**
 
-   -  **c16:**
+      -  **c15:**
 
-   -  **c17:**
+      -  **c16:**
 
-   -  **c18:**
+      -  **c17:**
 
-   -  **c19:**
+      -  **c18:**
 
-   -  **c20:**
+      -  **c19:**
 
-   -  **c21:**
+      -  **c20:**
 
-   -  **c22:** =1 if city == 22
+      -  **c21:**
 
-   -  **luclms:** log(uclms)
+      -  **c22:** =1 if city == 22
 
-   -  **guclms:** luclms - luclms[\_n-1]
+      -  **luclms:** log(uclms)
 
-   -  **cez:** ez - ez[\_n-1]
+      -  **guclms:** luclms - luclms[_n-1]
 
-   -  **city:** city identifier, 1 through 22
+      -  **cez:** ez - ez[_n-1]
 
-   .. rubric:: Notes
-      :name: notes
+      -  **city:** city identifier, 1 through 22
 
-   A very good project is to have students analyze enterprise,
-   empowerment, or renaissance zone policies in their home states. Many
-   states now have such programs. A few years of panel data straddling
-   periods of zone designation, at the city or zip code level, could
-   make a nice study.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 470, 504
+      A very good project is to have students analyze enterprise,
+      empowerment, or renaissance zone policies in their home states.
+      Many states now have such programs. A few years of panel data
+      straddling periods of zone designation, at the city or zip code
+      level, could make a nice study.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 470, 504
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(ezunem)
+      ::
+
+          str(ezunem)

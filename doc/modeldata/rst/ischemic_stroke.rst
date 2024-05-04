@@ -1,123 +1,125 @@
 .. container::
 
-   =============== ===============
-   ischemic_stroke R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: Clinical data used to predict ischemic stroke
-      :name: ischemic_stroke
+      =============== ===============
+      ischemic_stroke R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Clinical data used to predict ischemic stroke
+         :name: clinical-data-used-to-predict-ischemic-stroke
 
-   A data set to predict a binary outcome using imaging and patient
-   data.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      A data set to predict a binary outcome using imaging and patient
+      data.
 
-   These data were gathered to predict patient risk for ischemic stroke.
-   A historical set of patients with a range of carotid artery blockages
-   were selected. The data consisted of 126 patients, 44 of which had
-   blockages greater than 70%. All patients had undergone Computed
-   Tomography Angiography (CTA) to generate a detailed three-dimensional
-   visualization and characterization of the blockage. These images were
-   then analyzed in order to compute several features related to the
-   disease, including: percent stenosis, arterial wall thickness, and
-   tissue characteristics such as lipid-rich necrotic core and
-   calcification.
+      .. rubric:: Details
+         :name: details
 
-   The group of patients in this study also had follow-up information on
-   whether or not a stroke occurred at a subsequent point in time. The
-   data for each patient also included commonly collected clinical
-   characteristics for risk of stroke such as whether or not the patient
-   had atrial fibrillation, coronary artery disease, and a history of
-   smoking. Demographics of gender and age were included as well. These
-   readily available risk factors can be thought of as another
-   potentially useful predictor set that can be evaluated. In fact, this
-   set of predictors should be evaluated first to assess their ability
-   to predict stroke since these predictors are easy to collect, are
-   acquired at patient presentation, and do not require an expensive
-   imaging technique.
+      These data were gathered to predict patient risk for ischemic
+      stroke. A historical set of patients with a range of carotid
+      artery blockages were selected. The data consisted of 126
+      patients, 44 of which had blockages greater than 70%. All patients
+      had undergone Computed Tomography Angiography (CTA) to generate a
+      detailed three-dimensional visualization and characterization of
+      the blockage. These images were then analyzed in order to compute
+      several features related to the disease, including: percent
+      stenosis, arterial wall thickness, and tissue characteristics such
+      as lipid-rich necrotic core and calcification.
 
-   Columns:
+      The group of patients in this study also had follow-up information
+      on whether or not a stroke occurred at a subsequent point in time.
+      The data for each patient also included commonly collected
+      clinical characteristics for risk of stroke such as whether or not
+      the patient had atrial fibrillation, coronary artery disease, and
+      a history of smoking. Demographics of gender and age were included
+      as well. These readily available risk factors can be thought of as
+      another potentially useful predictor set that can be evaluated. In
+      fact, this set of predictors should be evaluated first to assess
+      their ability to predict stroke since these predictors are easy to
+      collect, are acquired at patient presentation, and do not require
+      an expensive imaging technique.
 
-   -  ``stroke``: factor (levels: 'yes' and 'no')
+      Columns:
 
-   -  ``nascet_scale``: numeric
+      -  ``stroke``: factor (levels: 'yes' and 'no')
 
-   -  ``calc_vol``: numeric
+      -  ``nascet_scale``: numeric
 
-   -  ``calc_vol_prop``: numeric
+      -  ``calc_vol``: numeric
 
-   -  ``matx_vol``: numeric
+      -  ``calc_vol_prop``: numeric
 
-   -  ``matx_vol_prop``: numeric
+      -  ``matx_vol``: numeric
 
-   -  ``lrnc_vol``: numeric
+      -  ``matx_vol_prop``: numeric
 
-   -  ``lrnc_vol_prop``: numeric
+      -  ``lrnc_vol``: numeric
 
-   -  ``max_calc_area``: numeric
+      -  ``lrnc_vol_prop``: numeric
 
-   -  ``max_calc_area_prop``: numeric
+      -  ``max_calc_area``: numeric
 
-   -  ``max_dilation_by_area``: numeric
+      -  ``max_calc_area_prop``: numeric
 
-   -  ``max_matx_area``: numeric
+      -  ``max_dilation_by_area``: numeric
 
-   -  ``max_matx_area_prop``: numeric
+      -  ``max_matx_area``: numeric
 
-   -  ``max_lrnc_area``: numeric
+      -  ``max_matx_area_prop``: numeric
 
-   -  ``max_lrnc_area_prop``: numeric
+      -  ``max_lrnc_area``: numeric
 
-   -  ``max_max_wall_thickness``: numeric
+      -  ``max_lrnc_area_prop``: numeric
 
-   -  ``max_remodeling_ratio``: numeric
+      -  ``max_max_wall_thickness``: numeric
 
-   -  ``max_stenosis_by_area``: numeric
+      -  ``max_remodeling_ratio``: numeric
 
-   -  ``max_wall_area``: numeric
+      -  ``max_stenosis_by_area``: numeric
 
-   -  ``wall_vol``: numeric
+      -  ``max_wall_area``: numeric
 
-   -  ``max_stenosis_by_diameter``: numeric
+      -  ``wall_vol``: numeric
 
-   -  ``age``: integer
+      -  ``max_stenosis_by_diameter``: numeric
 
-   -  ``male``: integer
+      -  ``age``: integer
 
-   -  ``smoking_history``: integer
+      -  ``male``: integer
 
-   -  ``atrial_fibrillation``: integer
+      -  ``smoking_history``: integer
 
-   -  ``coronary_artery_disease``: integer
+      -  ``atrial_fibrillation``: integer
 
-   -  ``diabetes_history``: integer
+      -  ``coronary_artery_disease``: integer
 
-   -  ``hypercholesterolemia_history``: integer
+      -  ``diabetes_history``: integer
 
-   -  ``hypertension_history``: integer
+      -  ``hypercholesterolemia_history``: integer
 
-   .. rubric:: Value
-      :name: value
+      -  ``hypertension_history``: integer
 
-   =================== ========
-   ``ischemic_stroke`` a tibble
-   =================== ========
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      =================== ========
+      ``ischemic_stroke`` a tibble
+      =================== ========
 
-   Kuhn, Max, and Kjell Johnson. *Feature Engineering and Selection: A
-   Practical Approach for Predictive Models*. Chapman and Hall/CRC,
-   2019.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Kuhn, Max, and Kjell Johnson. *Feature Engineering and Selection:
+      A Practical Approach for Predictive Models*. Chapman and Hall/CRC,
+      2019.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(ischemic_stroke)
-      str(ischemic_stroke)
+      ::
+
+         data(ischemic_stroke)
+         str(ischemic_stroke)

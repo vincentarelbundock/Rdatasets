@@ -1,46 +1,49 @@
 .. container::
 
-   ==== ===============
-   topo R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Spatial Topographic Data
-      :name: topo
+      ==== ===============
+      topo R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Spatial Topographic Data
+         :name: spatial-topographic-data
 
-   The ``topo`` data frame has 52 rows and 3 columns, of topographic
-   heights within a 310 feet square.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``topo`` data frame has 52 rows and 3 columns, of topographic
+      heights within a 310 feet square.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      topo
+      ::
 
-   .. rubric:: Format
-      :name: format
+         topo
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``x``
-      x coordinates (units of 50 feet)
+      This data frame contains the following columns:
 
-   ``y``
-      y coordinates (units of 50 feet)
+      ``x``
+         x coordinates (units of 50 feet)
 
-   ``z``
-      heights (feet)
+      ``y``
+         y coordinates (units of 50 feet)
 
-   .. rubric:: Source
-      :name: source
+      ``z``
+         heights (feet)
 
-   Davis, J.C. (1973) *Statistics and Data Analysis in Geology.* Wiley.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Davis, J.C. (1973) *Statistics and Data Analysis in Geology.*
+      Wiley.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

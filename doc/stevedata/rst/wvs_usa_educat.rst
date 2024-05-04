@@ -1,67 +1,69 @@
 .. container::
 
-   ============== ===============
-   wvs_usa_educat R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Education Categories for the United States in the World
-      Values Survey
-      :name: wvs_usa_educat
+      ============== ===============
+      wvs_usa_educat R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Education Categories for the United States in the
+         World Values Survey
+         :name: education-categories-for-the-united-states-in-the-world-values-survey
 
-   This is a simple data set that summarizes what the education codes
-   are in the World Values Survey for the United States.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This is a simple data set that summarizes what the education codes
+      are in the World Values Survey for the United States.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      wvs_usa_educat
+      ::
 
-   .. rubric:: Format
-      :name: format
+         wvs_usa_educat
 
-   A data frame with 42 observations the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``x025``
-      the numeric code for supposedly the highest educational level
-      attained
+      A data frame with 42 observations the following 6 variables.
 
-   ``x025cswvs``
-      the numeric code for supposedly the education-level attained by
-      the respondent, with country-specific categories
+      ``x025``
+         the numeric code for supposedly the highest educational level
+         attained
 
-   ``n``
-      the number of observations in the World Values Survey with that
-      unique ``x025cswvs`` code
+      ``x025cswvs``
+         the numeric code for supposedly the education-level attained by
+         the respondent, with country-specific categories
 
-   ``x025cswvsmeaning``
-      the meaning behind the unique ``x025cswvs`` code
+      ``n``
+         the number of observations in the World Values Survey with that
+         unique ``x025cswvs`` code
 
-   ``x025meaning``
-      the meaning behind the unique ``x025`` code
+      ``x025cswvsmeaning``
+         the meaning behind the unique ``x025cswvs`` code
 
-   ``educat``
-      a standardized categorical variable corresponding with that unique
-      ``x025cswvs`` code
+      ``x025meaning``
+         the meaning behind the unique ``x025`` code
 
-   .. rubric:: Details
-      :name: details
+      ``educat``
+         a standardized categorical variable corresponding with that
+         unique ``x025cswvs`` code
 
-   Observations taken from the combined seven waves of survey data made
-   available by the World Values Survey, but isolated to just the United
-   States. The World Values Survey unfortunately did not collect
-   information about the education-level of the respondent in the 1981
-   and 1990 waves. These education categories feature in the Miller and
-   Davis (2020) article in *Journal of Ethnicity, and Politics*, albeit
-   before the release of the seventh wave.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: References
-      :name: references
+      Observations taken from the combined seven waves of survey data
+      made available by the World Values Survey, but isolated to just
+      the United States. The World Values Survey unfortunately did not
+      collect information about the education-level of the respondent in
+      the 1981 and 1990 waves. These education categories feature in the
+      Miller and Davis (2020) article in *Journal of Ethnicity, and
+      Politics*, albeit before the release of the seventh wave.
 
-   Miller, Steven V. and Nicholas T. Davis. Forthcoming. "The Effect of
-   White Social Prejudice on Support for American Democracy." *Journal
-   of Race, Ethnicity, and Politics*.
+      .. rubric:: References
+         :name: references
+
+      Miller, Steven V. and Nicholas T. Davis. Forthcoming. "The Effect
+      of White Social Prejudice on Support for American Democracy."
+      *Journal of Race, Ethnicity, and Politics*.

@@ -1,46 +1,48 @@
 .. container::
 
-   ====== ===============
-   Mandel R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Contrived Collinear Data
-      :name: Mandel
+      ====== ===============
+      Mandel R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Contrived Collinear Data
+         :name: contrived-collinear-data
 
-   The ``Mandel`` data frame has 8 rows and 3 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Mandel`` data frame has 8 rows and 3 columns.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Mandel
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Mandel
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   x1
-      first predictor.
+      This data frame contains the following columns:
 
-   x2
-      second predictor.
+      x1
+         first predictor.
 
-   y
-      response.
+      x2
+         second predictor.
 
-   .. rubric:: Source
-      :name: source
+      y
+         response.
 
-   Mandel, J. (1982) Use of the singular value decomposition in
-   regression analysis. *The American Statistician* **36**, 15–24.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Mandel, J. (1982) Use of the singular value decomposition in
+      regression analysis. *The American Statistician* **36**, 15–24.
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
+
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.

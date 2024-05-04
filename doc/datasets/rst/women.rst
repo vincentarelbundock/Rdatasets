@@ -1,60 +1,62 @@
 .. container::
 
-   ===== ===============
-   women R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Average Heights and Weights for American Women
-      :name: women
+      ===== ===============
+      women R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Average Heights and Weights for American Women
+         :name: average-heights-and-weights-for-american-women
 
-   This data set gives the average heights and weights for American
-   women aged 30–39.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set gives the average heights and weights for American
+      women aged 30–39.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      women
+      ::
 
-   .. rubric:: Format
-      :name: format
+         women
 
-   A data frame with 15 observations on 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ======== ========== ======= ============
-   ``[,1]`` ``height`` numeric Height (in)
-   ``[,2]`` ``weight`` numeric Weight (lbs)
-   ======== ========== ======= ============
+      A data frame with 15 observations on 2 variables.
 
-   .. rubric:: Details
-      :name: details
+      ======== ========== ======= ============
+      ``[,1]`` ``height`` numeric Height (in)
+      ``[,2]`` ``weight`` numeric Weight (lbs)
+      ======== ========== ======= ============
 
-   The data set appears to have been taken from the American Society of
-   Actuaries *Build and Blood Pressure Study* for some (unknown to us)
-   earlier year.
+      .. rubric:: Details
+         :name: details
 
-   The World Almanac notes: “The figures represent weights in ordinary
-   indoor clothing and shoes, and heights with shoes”.
+      The data set appears to have been taken from the American Society
+      of Actuaries *Build and Blood Pressure Study* for some (unknown to
+      us) earlier year.
 
-   .. rubric:: Source
-      :name: source
+      The World Almanac notes: “The figures represent weights in
+      ordinary indoor clothing and shoes, and heights with shoes”.
 
-   The World Almanac and Book of Facts, 1975.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The World Almanac and Book of Facts, 1975.
 
-   McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      McNeil, D. R. (1977) *Interactive Data Analysis*. Wiley.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(graphics)
-      plot(women, xlab = "Height (in)", ylab = "Weight (lb)",
-           main = "women data: American women aged 30-39")
+      ::
+
+         require(graphics)
+         plot(women, xlab = "Height (in)", ylab = "Weight (lb)",
+              main = "women data: American women aged 30-39")

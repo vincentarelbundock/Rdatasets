@@ -1,82 +1,84 @@
 .. container::
 
-   ===== ===============
-   nodal R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Nodal Involvement in Prostate Cancer
-      :name: nodal
+      ===== ===============
+      nodal R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Nodal Involvement in Prostate Cancer
+         :name: nodal-involvement-in-prostate-cancer
 
-   The ``nodal`` data frame has 53 rows and 7 columns.
+      .. rubric:: Description
+         :name: description
 
-   The treatment strategy for a patient diagnosed with cancer of the
-   prostate depend highly on whether the cancer has spread to the
-   surrounding lymph nodes. It is common to operate on the patient to
-   get samples from the nodes which can then be analysed under a
-   microscope but clearly it would be preferable if an accurate
-   assessment of nodal involvement could be made without surgery.
+      The ``nodal`` data frame has 53 rows and 7 columns.
 
-   For a sample of 53 prostate cancer patients, a number of possible
-   predictor variables were measured before surgery. The patients then
-   had surgery to determine nodal involvement. It was required to see if
-   nodal involvement could be accurately predicted from the predictor
-   variables and which ones were most important.
+      The treatment strategy for a patient diagnosed with cancer of the
+      prostate depend highly on whether the cancer has spread to the
+      surrounding lymph nodes. It is common to operate on the patient to
+      get samples from the nodes which can then be analysed under a
+      microscope but clearly it would be preferable if an accurate
+      assessment of nodal involvement could be made without surgery.
 
-   .. rubric:: Usage
-      :name: usage
+      For a sample of 53 prostate cancer patients, a number of possible
+      predictor variables were measured before surgery. The patients
+      then had surgery to determine nodal involvement. It was required
+      to see if nodal involvement could be accurately predicted from the
+      predictor variables and which ones were most important.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      nodal
+      ::
 
-   .. rubric:: Format
-      :name: format
+         nodal
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``m``
-      A column of ones.
+      This data frame contains the following columns:
 
-   ``r``
-      An indicator of nodal involvement.
+      ``m``
+         A column of ones.
 
-   ``aged``
-      The patients age dichotomized into less than 60 (``0``) and 60 or
-      over ``1``.
+      ``r``
+         An indicator of nodal involvement.
 
-   ``stage``
-      A measurement of the size and position of the tumour observed by
-      palpitation with the fingers via the rectum. A value of ``1``
-      indicates a more serious case of the cancer.
+      ``aged``
+         The patients age dichotomized into less than 60 (``0``) and 60
+         or over ``1``.
 
-   ``grade``
-      Another indicator of the seriousness of the cancer, this one is
-      determined by a pathology reading of a biopsy taken by needle
-      before surgery. A value of ``1`` indicates a more serious case of
-      the cancer.
+      ``stage``
+         A measurement of the size and position of the tumour observed
+         by palpitation with the fingers via the rectum. A value of
+         ``1`` indicates a more serious case of the cancer.
 
-   ``xray``
-      A third measure of the seriousness of the cancer taken from an
-      X-ray reading. A value of ``1`` indicates a more serious case of
-      the cancer.
+      ``grade``
+         Another indicator of the seriousness of the cancer, this one is
+         determined by a pathology reading of a biopsy taken by needle
+         before surgery. A value of ``1`` indicates a more serious case
+         of the cancer.
 
-   ``acid``
-      The level of acid phosphatase in the blood serum.
+      ``xray``
+         A third measure of the seriousness of the cancer taken from an
+         X-ray reading. A value of ``1`` indicates a more serious case
+         of the cancer.
 
-   .. rubric:: Source
-      :name: source
+      ``acid``
+         The level of acid phosphatase in the blood serum.
 
-   The data were obtained from
+      .. rubric:: Source
+         :name: source
 
-   Brown, B.W. (1980) Prediction analysis for binary data. In
-   *Biostatistics Casebook*. R.G. Miller, B. Efron, B.W. Brown and L.E.
-   Moses (editors), 3–18. John Wiley.
+      The data were obtained from
 
-   .. rubric:: References
-      :name: references
+      Brown, B.W. (1980) Prediction analysis for binary data. In
+      *Biostatistics Casebook*. R.G. Miller, B. Efron, B.W. Brown and
+      L.E. Moses (editors), 3–18. John Wiley.
 
-   Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and Their
-   Application*. Cambridge University Press.
+      .. rubric:: References
+         :name: references
+
+      Davison, A.C. and Hinkley, D.V. (1997) *Bootstrap Methods and
+      Their Application*. Cambridge University Press.

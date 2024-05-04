@@ -1,119 +1,122 @@
 .. container::
 
-   ======= ===============
-   sleep75 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: sleep75
-      :name: sleep75
+      ======= ===============
+      sleep75 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: sleep75
+         :name: sleep75
 
-   Wooldridge Source: J.E. Biddle and D.S. Hamermesh (1990), “Sleep and
-   the Allocation of Time,” Journal of Political Economy 98, 922-943.
-   Professor Biddle kindly provided the data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: J.E. Biddle and D.S. Hamermesh (1990), “Sleep
+      and the Allocation of Time,” Journal of Political Economy 98,
+      922-943. Professor Biddle kindly provided the data. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('sleep75')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('sleep75')
 
-   A data.frame with 706 observations on 34 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **age:** in years
+      A data.frame with 706 observations on 34 variables:
 
-   -  **black:** =1 if black
+      -  **age:** in years
 
-   -  **case:** identifier
+      -  **black:** =1 if black
 
-   -  **clerical:** =1 if clerical worker
+      -  **case:** identifier
 
-   -  **construc:** =1 if construction worker
+      -  **clerical:** =1 if clerical worker
 
-   -  **educ:** years of schooling
+      -  **construc:** =1 if construction worker
 
-   -  **earns74:** total earnings, 1974
+      -  **educ:** years of schooling
 
-   -  **gdhlth:** =1 if in good or excel. health
+      -  **earns74:** total earnings, 1974
 
-   -  **inlf:** =1 if in labor force
+      -  **gdhlth:** =1 if in good or excel. health
 
-   -  **leis1:** sleep - totwrk
+      -  **inlf:** =1 if in labor force
 
-   -  **leis2:** slpnaps - totwrk
+      -  **leis1:** sleep - totwrk
 
-   -  **leis3:** rlxall - totwrk
+      -  **leis2:** slpnaps - totwrk
 
-   -  **smsa:** =1 if live in smsa
+      -  **leis3:** rlxall - totwrk
 
-   -  **lhrwage:** log hourly wage
+      -  **smsa:** =1 if live in smsa
 
-   -  **lothinc:** log othinc, unless othinc < 0
+      -  **lhrwage:** log hourly wage
 
-   -  **male:** =1 if male
+      -  **lothinc:** log othinc, unless othinc < 0
 
-   -  **marr:** =1 if married
+      -  **male:** =1 if male
 
-   -  **prot:** =1 if Protestant
+      -  **marr:** =1 if married
 
-   -  **rlxall:** slpnaps + personal activs
+      -  **prot:** =1 if Protestant
 
-   -  **selfe:** =1 if self employed
+      -  **rlxall:** slpnaps + personal activs
 
-   -  **sleep:** mins sleep at night, per wk
+      -  **selfe:** =1 if self employed
 
-   -  **slpnaps:** minutes sleep, inc. naps
+      -  **sleep:** mins sleep at night, per wk
 
-   -  **south:** =1 if live in south
+      -  **slpnaps:** minutes sleep, inc. naps
 
-   -  **spsepay:** spousal wage income
+      -  **south:** =1 if live in south
 
-   -  **spwrk75:** =1 if spouse works
+      -  **spsepay:** spousal wage income
 
-   -  **totwrk:** mins worked per week
+      -  **spwrk75:** =1 if spouse works
 
-   -  **union:** =1 if belong to union
+      -  **totwrk:** mins worked per week
 
-   -  **worknrm:** mins work main job
+      -  **union:** =1 if belong to union
 
-   -  **workscnd:** mins work second job
+      -  **worknrm:** mins work main job
 
-   -  **exper:** age - educ - 6
+      -  **workscnd:** mins work second job
 
-   -  **yngkid:** =1 if children < 3 present
+      -  **exper:** age - educ - 6
 
-   -  **yrsmarr:** years married
+      -  **yngkid:** =1 if children < 3 present
 
-   -  **hrwage:** hourly wage
+      -  **yrsmarr:** years married
 
-   -  **agesq:** age^2
+      -  **hrwage:** hourly wage
 
-   .. rubric:: Notes
-      :name: notes
+      -  **agesq:** age^2
 
-   In their article, Biddle and Hamermesh include an hourly wage measure
-   in the sleep equation. An econometric problem that arises is that the
-   hourly wage is missing for those who do not work. Plus, the wage
-   offer may be endogenous (even if it were always observed). Biddle and
-   Hamermesh employ extensions of the sample selection methods in
-   Section 17.5. See their article for details.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 64, 106-107, 162, 259, 263, 299
+      In their article, Biddle and Hamermesh include an hourly wage
+      measure in the sleep equation. An econometric problem that arises
+      is that the hourly wage is missing for those who do not work.
+      Plus, the wage offer may be endogenous (even if it were always
+      observed). Biddle and Hamermesh employ extensions of the sample
+      selection methods in Section 17.5. See their article for details.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 64, 106-107, 162, 259, 263, 299
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(sleep75)
+      ::
+
+          str(sleep75)

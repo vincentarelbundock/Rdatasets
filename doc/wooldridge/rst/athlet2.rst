@@ -1,74 +1,76 @@
 .. container::
 
-   ======= ===============
-   athlet2 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: athlet2
-      :name: athlet2
+      ======= ===============
+      athlet2 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: athlet2
+         :name: athlet2
 
-   Wooldridge Sources: Peterson's Guide to Four Year Colleges, 1995
-   (25th edition). Princeton University Press. 1995 Information Please
-   Sports Almanac (6th edition). Houghton Mifflin. New York, NY Data
-   loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Sources: Peterson's Guide to Four Year Colleges, 1995
+      (25th edition). Princeton University Press. 1995 Information
+      Please Sports Almanac (6th edition). Houghton Mifflin. New York,
+      NY Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('athlet2')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('athlet2')
 
-   A data.frame with 30 observations on 10 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **dscore:** home scr. - vist. scr., 1993
+      A data.frame with 30 observations on 10 variables:
 
-   -  **dinstt:** diff. in-state tuit., 1994
+      -  **dscore:** home scr. - vist. scr., 1993
 
-   -  **doutstt:** diff. out-state tuit., 1994
+      -  **dinstt:** diff. in-state tuit., 1994
 
-   -  **htpriv:** =1 if home team priv. sch.
+      -  **doutstt:** diff. out-state tuit., 1994
 
-   -  **vtpriv:** =1 if vist. team priv. sch.
+      -  **htpriv:** =1 if home team priv. sch.
 
-   -  **dapps:** diff. in applications, 1994
+      -  **vtpriv:** =1 if vist. team priv. sch.
 
-   -  **htwrd:** =1 if home win. record, 1993
+      -  **dapps:** diff. in applications, 1994
 
-   -  **vtwrd:** =1 if vist. win. record, 1993
+      -  **htwrd:** =1 if home win. record, 1993
 
-   -  **dwinrec:** htwrd - vtwrd
+      -  **vtwrd:** =1 if vist. win. record, 1993
 
-   -  **dpriv:** htpriv - vtpriv
+      -  **dwinrec:** htwrd - vtwrd
 
-   .. rubric:: Notes
-      :name: notes
+      -  **dpriv:** htpriv - vtpriv
 
-   These data were collected by Paul Anderson, an MSU economics major,
-   for a term project. The score from football outcomes for natural
-   rivals (Michigan-Michigan State, California-Stanford, Florida-Florida
-   State, to name a few) is matched with application and academic data.
-   The application and tuition data are for Fall 1994. Football records
-   and scores are from 1993 football season. Extended these data to
-   obtain a long stretch of panel data and other “natural” rivals could
-   be very interesting.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: page 697
+      These data were collected by Paul Anderson, an MSU economics
+      major, for a term project. The score from football outcomes for
+      natural rivals (Michigan-Michigan State, California-Stanford,
+      Florida-Florida State, to name a few) is matched with application
+      and academic data. The application and tuition data are for Fall
+      1994. Football records and scores are from 1993 football season.
+      Extended these data to obtain a long stretch of panel data and
+      other “natural” rivals could be very interesting.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: page 697
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(athlet2)
+      ::
+
+          str(athlet2)

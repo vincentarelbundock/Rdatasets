@@ -1,106 +1,109 @@
 .. container::
 
-   ============ ===============
-   DaytonSurvey R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Dayton Student Survey on Substance Use
-      :name: DaytonSurvey
+      ============ ===============
+      DaytonSurvey R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Dayton Student Survey on Substance Use
+         :name: dayton-student-survey-on-substance-use
 
-   This data, from Agresti (2002), Table 9.1, gives the result of a 1992
-   survey in Dayton Ohio of 2276 high school seniors on whether they had
-   ever used alcohol, cigarettes and marijuana.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data, from Agresti (2002), Table 9.1, gives the result of a
+      1992 survey in Dayton Ohio of 2276 high school seniors on whether
+      they had ever used alcohol, cigarettes and marijuana.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(DaytonSurvey)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(DaytonSurvey)
 
-   A frequency data frame with 32 observations on the following 6
-   variables.
+      .. rubric:: Format
+         :name: format
 
-   ``cigarette``
-      a factor with levels ``Yes`` ``No``
+      A frequency data frame with 32 observations on the following 6
+      variables.
 
-   ``alcohol``
-      a factor with levels ``Yes`` ``No``
+      ``cigarette``
+         a factor with levels ``Yes`` ``No``
 
-   ``marijuana``
-      a factor with levels ``Yes`` ``No``
+      ``alcohol``
+         a factor with levels ``Yes`` ``No``
 
-   ``sex``
-      a factor with levels ``female`` ``male``
+      ``marijuana``
+         a factor with levels ``Yes`` ``No``
 
-   ``race``
-      a factor with levels ``white`` ``other``
+      ``sex``
+         a factor with levels ``female`` ``male``
 
-   ``Freq``
-      a numeric vector
+      ``race``
+         a factor with levels ``white`` ``other``
 
-   .. rubric:: Details
-      :name: details
+      ``Freq``
+         a numeric vector
 
-   Agresti uses the letters G (``sex``), R (``race``), A (``alcohol``),
-   C (``cigarette``), M (``marijuana``) to refer to the table variables,
-   and this usage is followed in the examples below.
+      .. rubric:: Details
+         :name: details
 
-   Background variables include ``sex`` and ``race`` of the respondent
-   (GR), typically treated as explanatory, so that any model for the
-   full table should include the term ``sex:race``. Models for the
-   reduced table, collapsed over ``sex`` and ``race`` are not entirely
-   unreasonable, but don't permit the estimation of the effects of these
-   variables on the responses.
+      Agresti uses the letters G (``sex``), R (``race``), A
+      (``alcohol``), C (``cigarette``), M (``marijuana``) to refer to
+      the table variables, and this usage is followed in the examples
+      below.
 
-   The full 5-way table contains a number of cells with counts of 0 or
-   1, as well as many cells with large counts, and even the ACM table
-   collapsed over GR has some small cell counts. Consequently, residuals
-   for these models in mosaic displays are best represented as
-   standardized (adjusted) residuals.
+      Background variables include ``sex`` and ``race`` of the
+      respondent (GR), typically treated as explanatory, so that any
+      model for the full table should include the term ``sex:race``.
+      Models for the reduced table, collapsed over ``sex`` and ``race``
+      are not entirely unreasonable, but don't permit the estimation of
+      the effects of these variables on the responses.
 
-   .. rubric:: Source
-      :name: source
+      The full 5-way table contains a number of cells with counts of 0
+      or 1, as well as many cells with large counts, and even the ACM
+      table collapsed over GR has some small cell counts. Consequently,
+      residuals for these models in mosaic displays are best represented
+      as standardized (adjusted) residuals.
 
-   Agresti, A. (2002). *Categorical Data Analysis*, 2nd Ed., New York:
-   Wiley-Interscience, Table 9.1, p. 362.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Agresti, A. (2002). *Categorical Data Analysis*, 2nd Ed., New
+      York: Wiley-Interscience, Table 9.1, p. 362.
 
-   Thompson, L. (2009). *R (and S-PLUS) Manual to Accompany Agresti's
-   Categorical Data*,
-   http://www.stat.ufl.edu/~aa/cda/Thompson_manual.pdf
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Thompson, L. (2009). *R (and S-PLUS) Manual to Accompany Agresti's
+      Categorical Data*,
+      http://www.stat.ufl.edu/~aa/cda/Thompson_manual.pdf
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(DaytonSurvey)
+      ::
 
-      # mutual independence
-      mod.0  <- glm(Freq ~ ., data=DaytonSurvey, family=poisson)   
+         data(DaytonSurvey)
 
-      # mutual independence + GR
-      mod.GR <- glm(Freq ~ . + sex*race, data=DaytonSurvey, family=poisson)  
-      anova(mod.GR, test = "Chisq")
+         # mutual independence
+         mod.0  <- glm(Freq ~ ., data=DaytonSurvey, family=poisson)   
 
-      # all two-way terms
-      mod.all2way <- glm(Freq ~ .^2, data=DaytonSurvey, family=poisson)  
-      anova(mod.all2way, test = "Chisq")
+         # mutual independence + GR
+         mod.GR <- glm(Freq ~ . + sex*race, data=DaytonSurvey, family=poisson)  
+         anova(mod.GR, test = "Chisq")
 
-      # compare models
-      LRstats(mod.0, mod.GR, mod.all2way)
+         # all two-way terms
+         mod.all2way <- glm(Freq ~ .^2, data=DaytonSurvey, family=poisson)  
+         anova(mod.all2way, test = "Chisq")
 
-      # collapse over sex and race
-      Dayton.ACM <- aggregate(Freq ~ cigarette+alcohol+marijuana, 
-                              data=DaytonSurvey, 
-                              FUN=sum)
-      Dayton.ACM
+         # compare models
+         LRstats(mod.0, mod.GR, mod.all2way)
+
+         # collapse over sex and race
+         Dayton.ACM <- aggregate(Freq ~ cigarette+alcohol+marijuana, 
+                                 data=DaytonSurvey, 
+                                 FUN=sum)
+         Dayton.ACM

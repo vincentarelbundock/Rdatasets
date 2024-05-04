@@ -1,77 +1,79 @@
 .. container::
 
-   ===== ===============
-   heart R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Stanford Heart Transplant data
-      :name: heart
+      ===== ===============
+      heart R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Stanford Heart Transplant data
+         :name: stanford-heart-transplant-data
 
-   Survival of patients on the waiting list for the Stanford heart
-   transplant program.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Survival of patients on the waiting list for the Stanford heart
+      transplant program.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      heart
-      data(heart, package="survival")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         heart
+         data(heart, package="survival")
 
-   jasa: original data
+      .. rubric:: Format
+         :name: format
 
-   =========== ===========================
-   birth.dt:   birth date
-   accept.dt:  acceptance into program
-   tx.date:    transplant date
-   fu.date:    end of followup
-   fustat:     dead or alive
-   surgery:    prior bypass surgery
-   age:        age (in years)
-   futime:     followup time
-   wait.time:  time before transplant
-   transplant: transplant indicator
-   mismatch:   mismatch score
-   hla.a2:     particular type of mismatch
-   mscore:     another mismatch score
-   reject:     rejection occurred
-   \           
-   =========== ===========================
+      jasa: original data
 
-   jasa1, heart: processed data
+      =========== ===========================
+      birth.dt:   birth date
+      accept.dt:  acceptance into program
+      tx.date:    transplant date
+      fu.date:    end of followup
+      fustat:     dead or alive
+      surgery:    prior bypass surgery
+      age:        age (in years)
+      futime:     followup time
+      wait.time:  time before transplant
+      transplant: transplant indicator
+      mismatch:   mismatch score
+      hla.a2:     particular type of mismatch
+      mscore:     another mismatch score
+      reject:     rejection occurred
+      \           
+      =========== ===========================
 
-   +---------------------+-----------------------------------------------+
-   | start, stop, event: | Entry and exit time and status for this       |
-   |                     | interval of time                              |
-   +---------------------+-----------------------------------------------+
-   | age:                | age-48 years                                  |
-   +---------------------+-----------------------------------------------+
-   | year:               | year of acceptance (in years after 1 Nov      |
-   |                     | 1967)                                         |
-   +---------------------+-----------------------------------------------+
-   | surgery:            | prior bypass surgery 1=yes                    |
-   +---------------------+-----------------------------------------------+
-   | transplant:         | received transplant 1=yes                     |
-   +---------------------+-----------------------------------------------+
-   | id:                 | patient id                                    |
-   +---------------------+-----------------------------------------------+
-   |                     |                                               |
-   +---------------------+-----------------------------------------------+
+      jasa1, heart: processed data
 
-   .. rubric:: Source
-      :name: source
+      +---------------------+-----------------------------------------------+
+      | start, stop, event: | Entry and exit time and status for this       |
+      |                     | interval of time                              |
+      +---------------------+-----------------------------------------------+
+      | age:                | age-48 years                                  |
+      +---------------------+-----------------------------------------------+
+      | year:               | year of acceptance (in years after 1 Nov      |
+      |                     | 1967)                                         |
+      +---------------------+-----------------------------------------------+
+      | surgery:            | prior bypass surgery 1=yes                    |
+      +---------------------+-----------------------------------------------+
+      | transplant:         | received transplant 1=yes                     |
+      +---------------------+-----------------------------------------------+
+      | id:                 | patient id                                    |
+      +---------------------+-----------------------------------------------+
+      |                     |                                               |
+      +---------------------+-----------------------------------------------+
 
-   J Crowley and M Hu (1977), Covariance analysis of heart transplant
-   survival data. *Journal of the American Statistical Association*,
-   **72**, 27–36.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: See Also
-      :name: see-also
+      J Crowley and M Hu (1977), Covariance analysis of heart transplant
+      survival data. *Journal of the American Statistical Association*,
+      **72**, 27–36.
 
-   ``stanford2``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``stanford2``

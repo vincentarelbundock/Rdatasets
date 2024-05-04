@@ -1,70 +1,85 @@
 .. container::
 
-   ========= ===============
-   Utilities R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Utility bills
-      :name: Utilities
+      ========= ===============
+      Utilities R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Utility bills
+         :name: utility-bills
 
-   Data from utility bills at a residence. ``Utilities2`` is a similar
-   data set with some additional variables.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from utility bills at a residence. ``Utilities2`` is a
+      similar data set with some additional variables.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Utilities)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Utilities)
 
-   A data frame containing 117 observations for the following variables.
+      .. rubric:: Format
+         :name: format
 
-   -  ``month`` month (coded as a number)
+      A data frame containing 117 observations for the following
+      variables.
 
-   -  ``day`` day of month on which bill was calculated
+      ``month``
+         month (coded as a number)
 
-   -  ``year`` year of bill
+      ``day``
+         day of month on which bill was calculated
 
-   -  ``temp`` average temperature (F) for billing period
+      ``year``
+         year of bill
 
-   -  ``kwh`` electricity usage (kwh)
+      ``temp``
+         average temperature (F) for billing period
 
-   -  ``ccf`` gas usage (ccf)
+      ``kwh``
+         electricity usage (kwh)
 
-   -  ``thermsPerDay`` a numeric vector
+      ``ccf``
+         gas usage (ccf)
 
-   -  ``billingDays`` number of billing days in billing period
+      ``thermsPerDay``
+         a numeric vector
 
-   -  ``totalbill`` total bill (in dollars)
+      ``billingDays``
+         number of billing days in billing period
 
-   -  ``gasbill`` gas bill (in dollars)
+      ``totalbill``
+         total bill (in dollars)
 
-   -  ``elecbill`` electric bill (in dollars)
+      ``gasbill``
+         gas bill (in dollars)
 
-   -  ``notes`` notes about the billing period
+      ``elecbill``
+         electric bill (in dollars)
 
-   .. rubric:: Source
-      :name: source
+      ``notes``
+         notes about the billing period
 
-   Daniel T. Kaplan, *Statistical modeling: A fresh approach*, 2009.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: See Also
-      :name: see-also
+      Daniel T. Kaplan, *Statistical modeling: A fresh approach*, 2009.
 
-   ``Utilities2``.
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Utilities2``.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Utilities)
-      if (require(ggformula)) {
-        gf_point(gasbill ~ temp, data = Utilities)
-      }
+      ::
+
+         data(Utilities)
+         if (require(ggformula)) {
+           gf_point(gasbill ~ temp, data = Utilities)
+         }

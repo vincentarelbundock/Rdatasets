@@ -1,76 +1,78 @@
 .. container::
 
-   ====== ===============
-   Weekly R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Weekly S&P Stock Market Data
-      :name: Weekly
+      ====== ===============
+      Weekly R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Weekly S&P Stock Market Data
+         :name: weekly-sp-stock-market-data
 
-   Weekly percentage returns for the S&P 500 stock index between 1990
-   and 2010.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Weekly percentage returns for the S&P 500 stock index between 1990
+      and 2010.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Weekly
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Weekly
 
-   A data frame with 1089 observations on the following 9 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Year``
-      The year that the observation was recorded
+      A data frame with 1089 observations on the following 9 variables.
 
-   ``Lag1``
-      Percentage return for previous week
+      ``Year``
+         The year that the observation was recorded
 
-   ``Lag2``
-      Percentage return for 2 weeks previous
+      ``Lag1``
+         Percentage return for previous week
 
-   ``Lag3``
-      Percentage return for 3 weeks previous
+      ``Lag2``
+         Percentage return for 2 weeks previous
 
-   ``Lag4``
-      Percentage return for 4 weeks previous
+      ``Lag3``
+         Percentage return for 3 weeks previous
 
-   ``Lag5``
-      Percentage return for 5 weeks previous
+      ``Lag4``
+         Percentage return for 4 weeks previous
 
-   ``Volume``
-      Volume of shares traded (average number of daily shares traded in
-      billions)
+      ``Lag5``
+         Percentage return for 5 weeks previous
 
-   ``Today``
-      Percentage return for this week
+      ``Volume``
+         Volume of shares traded (average number of daily shares traded
+         in billions)
 
-   ``Direction``
-      A factor with levels ``Down`` and ``Up`` indicating whether the
-      market had a positive or negative return on a given week
+      ``Today``
+         Percentage return for this week
 
-   .. rubric:: Source
-      :name: source
+      ``Direction``
+         A factor with levels ``Down`` and ``Up`` indicating whether the
+         market had a positive or negative return on a given week
 
-   Raw values of the S&P 500 were obtained from Yahoo Finance and then
-   converted to percentages and lagged.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Raw values of the S&P 500 were obtained from Yahoo Finance and
+      then converted to percentages and lagged.
 
-   James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
-   Introduction to Statistical Learning with applications in R*,
-   https://www.statlearning.com, Springer-Verlag, New York
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) *An
+      Introduction to Statistical Learning with applications in R*,
+      https://www.statlearning.com, Springer-Verlag, New York
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(Weekly)
-      lm(Today~Lag1+Lag2,data=Weekly)
+      ::
+
+         summary(Weekly)
+         lm(Today~Lag1+Lag2,data=Weekly)

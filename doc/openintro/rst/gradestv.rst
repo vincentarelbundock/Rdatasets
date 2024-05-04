@@ -1,58 +1,60 @@
 .. container::
 
-   ======== ===============
-   gradestv R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Simulated data for analyzing the relationship between
-      watching TV and grades
-      :name: gradestv
+      ======== ===============
+      gradestv R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Simulated data for analyzing the relationship between
+         watching TV and grades
+         :name: simulated-data-for-analyzing-the-relationship-between-watching-tv-and-grades
 
-   This is a simulated data set to be used to estimate the relationship
-   between number of hours per week students watch TV and the grade they
-   got in a statistics class.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This is a simulated data set to be used to estimate the
+      relationship between number of hours per week students watch TV
+      and the grade they got in a statistics class.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      gradestv
+      ::
 
-   .. rubric:: Format
-      :name: format
+         gradestv
 
-   A data frame with 25 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   tv
-      Number of hours per week students watch TV.
+      A data frame with 25 observations on the following 2 variables.
 
-   grades
-      Grades students got in a statistics class (out of 100).
+      tv
+         Number of hours per week students watch TV.
 
-   .. rubric:: Details
-      :name: details
+      grades
+         Grades students got in a statistics class (out of 100).
 
-   There are a few potential outliers in this data set. When analyzing
-   the data one should consider how (if at all) these outliers may
-   affect the estimates of correlation coefficient and regression
-   parameters.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      There are a few potential outliers in this data set. When
+      analyzing the data one should consider how (if at all) these
+      outliers may affect the estimates of correlation coefficient and
+      regression parameters.
 
-   Simulated data
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Simulated data
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(gradestv, aes(x = tv, y = grades)) +
-        geom_point() +
-        geom_smooth(method = "lm")
+         library(ggplot2)
+
+         ggplot(gradestv, aes(x = tv, y = grades)) +
+           geom_point() +
+           geom_smooth(method = "lm")

@@ -1,92 +1,94 @@
 .. container::
 
-   ===== ===============
-   beav2 R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Body Temperature Series of Beaver 2
-      :name: beav2
+      ===== ===============
+      beav2 R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Body Temperature Series of Beaver 2
+         :name: body-temperature-series-of-beaver-2
 
-   Reynolds (1994) describes a small part of a study of the long-term
-   temperature dynamics of beaver *Castor canadensis* in north-central
-   Wisconsin. Body temperature was measured by telemetry every 10
-   minutes for four females, but data from a one period of less than a
-   day for each of two animals is used there.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Reynolds (1994) describes a small part of a study of the long-term
+      temperature dynamics of beaver *Castor canadensis* in
+      north-central Wisconsin. Body temperature was measured by
+      telemetry every 10 minutes for four females, but data from a one
+      period of less than a day for each of two animals is used there.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      beav2
+      ::
 
-   .. rubric:: Format
-      :name: format
+         beav2
 
-   The ``beav2`` data frame has 100 rows and 4 columns. This data frame
-   contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``day``
-      Day of observation (in days since the beginning of 1990), November
-      3–4.
+      The ``beav2`` data frame has 100 rows and 4 columns. This data
+      frame contains the following columns:
 
-   ``time``
-      Time of observation, in the form ``0330`` for 3.30am.
+      ``day``
+         Day of observation (in days since the beginning of 1990),
+         November 3–4.
 
-   ``temp``
-      Measured body temperature in degrees Celsius.
+      ``time``
+         Time of observation, in the form ``0330`` for 3.30am.
 
-   ``activ``
-      Indicator of activity outside the retreat.
+      ``temp``
+         Measured body temperature in degrees Celsius.
 
-   .. rubric:: Source
-      :name: source
+      ``activ``
+         Indicator of activity outside the retreat.
 
-   P. S. Reynolds (1994) Time-series analyses of beaver body
-   temperatures. Chapter 11 of Lange, N., Ryan, L., Billard, L.,
-   Brillinger, D., Conquest, L. and Greenhouse, J. eds (1994) *Case
-   Studies in Biometry.* New York: John Wiley and Sons.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      P. S. Reynolds (1994) Time-series analyses of beaver body
+      temperatures. Chapter 11 of Lange, N., Ryan, L., Billard, L.,
+      Brillinger, D., Conquest, L. and Greenhouse, J. eds (1994) *Case
+      Studies in Biometry.* New York: John Wiley and Sons.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.
 
-   ``beav1``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``beav1``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      attach(beav2)
-      beav2$hours <- 24*(day-307) + trunc(time/100) + (time%%100)/60
-      plot(beav2$hours, beav2$temp, type = "l", xlab = "time",
-         ylab = "temperature", main = "Beaver 2")
-      usr <- par("usr"); usr[3:4] <- c(-0.2, 8); par(usr = usr)
-      lines(beav2$hours, beav2$activ, type = "s", lty = 2)
+      ::
 
-      temp <- ts(temp, start = 8+2/3, frequency = 6)
-      activ <- ts(activ, start = 8+2/3, frequency = 6)
-      acf(temp[activ == 0]); acf(temp[activ == 1]) # also look at PACFs
-      ar(temp[activ == 0]); ar(temp[activ == 1])
+         attach(beav2)
+         beav2$hours <- 24*(day-307) + trunc(time/100) + (time%%100)/60
+         plot(beav2$hours, beav2$temp, type = "l", xlab = "time",
+            ylab = "temperature", main = "Beaver 2")
+         usr <- par("usr"); usr[3:4] <- c(-0.2, 8); par(usr = usr)
+         lines(beav2$hours, beav2$activ, type = "s", lty = 2)
 
-      arima(temp, order = c(1,0,0), xreg = activ)
-      dreg <- cbind(sin = sin(2*pi*beav2$hours/24), cos = cos(2*pi*beav2$hours/24))
-      arima(temp, order = c(1,0,0), xreg = cbind(active=activ, dreg))
+         temp <- ts(temp, start = 8+2/3, frequency = 6)
+         activ <- ts(activ, start = 8+2/3, frequency = 6)
+         acf(temp[activ == 0]); acf(temp[activ == 1]) # also look at PACFs
+         ar(temp[activ == 0]); ar(temp[activ == 1])
 
-      ## IGNORE_RDIFF_BEGIN
-      library(nlme) # for gls and corAR1
-      beav2.gls <- gls(temp ~ activ, data = beav2, correlation = corAR1(0.8),
-                       method = "ML")
-      summary(beav2.gls)
-      summary(update(beav2.gls, subset = 6:100))
-      detach("beav2"); rm(temp, activ)
-      ## IGNORE_RDIFF_END
+         arima(temp, order = c(1,0,0), xreg = activ)
+         dreg <- cbind(sin = sin(2*pi*beav2$hours/24), cos = cos(2*pi*beav2$hours/24))
+         arima(temp, order = c(1,0,0), xreg = cbind(active=activ, dreg))
+
+         ## IGNORE_RDIFF_BEGIN
+         library(nlme) # for gls and corAR1
+         beav2.gls <- gls(temp ~ activ, data = beav2, correlation = corAR1(0.8),
+                          method = "ML")
+         summary(beav2.gls)
+         summary(update(beav2.gls, subset = 6:100))
+         detach("beav2"); rm(temp, activ)
+         ## IGNORE_RDIFF_END

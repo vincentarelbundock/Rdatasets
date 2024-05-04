@@ -1,47 +1,50 @@
 .. container::
 
-   ===== ===============
-   orob2 R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Germination Data
-      :name: orob2
+      ===== ===============
+      orob2 R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Germination Data
+         :name: germination-data
 
-   “A 2 x 2 factorial experiment comparing 2 types of seed and 2 root
-   extracts. There are 5 or 6 replicates in each of the 4 treatment
-   groups, and each replicate comprises a number of seeds varying
-   between 4 and 81. The response variable is the proportion of seeds
-   germinating in each replicate.” (Crowder, 1978, Table 3).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      “A 2 x 2 factorial experiment comparing 2 types of seed and 2 root
+      extracts. There are 5 or 6 replicates in each of the 4 treatment
+      groups, and each replicate comprises a number of seeds varying
+      between 4 and 81. The response variable is the proportion of seeds
+      germinating in each replicate.” (Crowder, 1978, Table 3).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(orob2)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(orob2)
 
-   A data frame with 21 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   seed
-      a factor with 2 levels: ``O73`` and ``O75``.
+      A data frame with 21 observations on the following 4 variables.
 
-   root
-      a factor with 2 levels ``BEAN`` and ``CUCUMBER``.
+      seed
+         a factor with 2 levels: ``O73`` and ``O75``.
 
-   n
-      a numeric vector: the number of seeds exposed to germination.
+      root
+         a factor with 2 levels ``BEAN`` and ``CUCUMBER``.
 
-   y
-      a numeric vector: the number of seeds which actually germinated.
+      n
+         a numeric vector: the number of seeds exposed to germination.
 
-   .. rubric:: References
-      :name: references
+      y
+         a numeric vector: the number of seeds which actually
+         germinated.
 
-   Crowder, M.J., 1978. *Beta-binomial anova for proportions*. Appl.
-   Statist. 27, 34-37.
+      .. rubric:: References
+         :name: references
+
+      Crowder, M.J., 1978. *Beta-binomial anova for proportions*. Appl.
+      Statist. 27, 34-37.

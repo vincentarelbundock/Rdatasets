@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>CoalMiners</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='CoalMiners'>Breathlessness and Wheeze in Coal Miners</h2>
+<h2>Breathlessness and Wheeze in Coal Miners</h2>
 
 <h3>Description</h3>
 
@@ -124,6 +124,7 @@ qmod &lt;- lm(LOR ~ poly(age, 2), weights = 1 / ASE^2, data = lor_CM_df)
 grid.lines(age, fitted(qmod), gp = gpar(col = "red"))
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

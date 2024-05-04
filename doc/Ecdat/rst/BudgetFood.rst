@@ -1,70 +1,73 @@
 .. container::
 
-   ========== ===============
-   BudgetFood R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Budget Share of Food for Spanish Households
-      :name: BudgetFood
+      ========== ===============
+      BudgetFood R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Budget Share of Food for Spanish Households
+         :name: budget-share-of-food-for-spanish-households
 
-   a cross-section from 1980
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 23972
+      a cross-section from 1980
 
-   *observation* : households
+      *number of observations* : 23972
 
-   *country* : Spain
+      *observation* : households
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Spain
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(BudgetFood)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(BudgetFood)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   wfood
-      percentage of total expenditure which the household has spent on
-      food
+      A dataframe containing :
 
-   totexp
-      total expenditure of the household
+      wfood
+         percentage of total expenditure which the household has spent
+         on food
 
-   age
-      age of reference person in the household
+      totexp
+         total expenditure of the household
 
-   size
-      size of the household
+      age
+         age of reference person in the household
 
-   town
-      size of the town where the household is placed categorized into 5
-      groups: 1 for small towns, 5 for big ones
+      size
+         size of the household
 
-   sex
-      sex of reference person (man,woman)
+      town
+         size of the town where the household is placed categorized into
+         5 groups: 1 for small towns, 5 for big ones
 
-   .. rubric:: Source
-      :name: source
+      sex
+         sex of reference person (man,woman)
 
-   Delgado, A. and Juan Mora (1998) “Testing non–nested semiparametric
-   models : an application to Engel curves specification”, *Journal of
-   Applied Econometrics*, **13(2)**, 145–162.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Delgado, A. and Juan Mora (1998) “Testing non–nested
+      semiparametric models : an application to Engel curves
+      specification”, *Journal of Applied Econometrics*, **13(2)**,
+      145–162.
 
-   Journal of Applied Econometrics data archive :
-   http://qed.econ.queensu.ca/jae/.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Journal of Applied Econometrics data archive :
+      http://qed.econ.queensu.ca/jae/.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

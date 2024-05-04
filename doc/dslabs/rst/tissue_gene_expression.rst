@@ -1,56 +1,58 @@
 .. container::
 
-   ====================== ===============
-   tissue_gene_expression R Documentation
-   ====================== ===============
+   .. container::
 
-   .. rubric:: Gene expression profiles for 189 biological samples taken
-      from seven different tissue types.
-      :name: tissue_gene_expression
+      ====================== ===============
+      tissue_gene_expression R Documentation
+      ====================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Gene expression profiles for 189 biological samples
+         taken from seven different tissue types.
+         :name: gene-expression-profiles-for-189-biological-samples-taken-from-seven-different-tissue-types.
 
-   This is a subset of the data provided by the
-   ``tissuesGeneExpression`` package available from the
-   ``genomicsclass`` GitHub repository. The predictors are gene
-   expression measurements from 500 genes that are a random subset of
-   the original 22,215.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This is a subset of the data provided by the
+      ``tissuesGeneExpression`` package available from the
+      ``genomicsclass`` GitHub repository. The predictors are gene
+      expression measurements from 500 genes that are a random subset of
+      the original 22,215.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      tissue_gene_expression
+      ::
 
-   .. rubric:: Format
-      :name: format
+         tissue_gene_expression
 
-   An object of class ``list``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``list``.
 
-   The example dataset is recommended for illustrating clustering and
-   machine learning techniques.
+      .. rubric:: Details
+         :name: details
 
-   -  x. The predictors composed of 500 genes. Each row is a gene
-      expression profile and each column is different gene. The column
-      names are the gene symbols.
+      The example dataset is recommended for illustrating clustering and
+      machine learning techniques.
 
-   -  y. The outcomes. A character vector representing the tissue. One
-      of seven tissue types.
+      -  x. The predictors composed of 500 genes. Each row is a gene
+         expression profile and each column is different gene. The
+         column names are the gene symbols.
 
-   .. rubric:: Source
-      :name: source
+      -  y. The outcomes. A character vector representing the tissue.
+         One of seven tissue types.
 
-   https://github.com/genomicsclass/tissuesGeneExpression
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://github.com/genomicsclass/tissuesGeneExpression
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      table(tissue_gene_expression$y)
-      dim(tissue_gene_expression$x)
+      ::
+
+         table(tissue_gene_expression$y)
+         dim(tissue_gene_expression$x)

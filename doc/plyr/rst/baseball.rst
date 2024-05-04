@@ -1,108 +1,110 @@
 .. container::
 
-   ======== ===============
-   baseball R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Yearly batting records for all major league baseball
-      players
-      :name: baseball
+      ======== ===============
+      baseball R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Yearly batting records for all major league baseball
+         players
+         :name: yearly-batting-records-for-all-major-league-baseball-players
 
-   This data frame contains batting statistics for a subset of players
-   collected from http://www.baseball-databank.org/. There are a total
-   of 21,699 records, covering 1,228 players from 1871 to 2007. Only
-   players with more 15 seasons of play are included.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data frame contains batting statistics for a subset of
+      players collected from http://www.baseball-databank.org/. There
+      are a total of 21,699 records, covering 1,228 players from 1871 to
+      2007. Only players with more 15 seasons of play are included.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      baseball
+      ::
 
-   .. rubric:: Format
-      :name: format
+         baseball
 
-   A 21699 x 22 data frame
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Variables
-      :name: variables
+      A 21699 x 22 data frame
 
-   Variables:
+      .. rubric:: Variables
+         :name: variables
 
-   -  id, unique player id
+      Variables:
 
-   -  year, year of data
+      -  id, unique player id
 
-   -  stint
+      -  year, year of data
 
-   -  team, team played for
+      -  stint
 
-   -  lg, league
+      -  team, team played for
 
-   -  g, number of games
+      -  lg, league
 
-   -  ab, number of times at bat
+      -  g, number of games
 
-   -  r, number of runs
+      -  ab, number of times at bat
 
-   -  h, hits, times reached base because of a batted, fair ball without
-      error by the defense
+      -  r, number of runs
 
-   -  X2b, hits on which the batter reached second base safely
+      -  h, hits, times reached base because of a batted, fair ball
+         without error by the defense
 
-   -  X3b, hits on which the batter reached third base safely
+      -  X2b, hits on which the batter reached second base safely
 
-   -  hr, number of home runs
+      -  X3b, hits on which the batter reached third base safely
 
-   -  rbi, runs batted in
+      -  hr, number of home runs
 
-   -  sb, stolen bases
+      -  rbi, runs batted in
 
-   -  cs, caught stealing
+      -  sb, stolen bases
 
-   -  bb, base on balls (walk)
+      -  cs, caught stealing
 
-   -  so, strike outs
+      -  bb, base on balls (walk)
 
-   -  ibb, intentional base on balls
+      -  so, strike outs
 
-   -  hbp, hits by pitch
+      -  ibb, intentional base on balls
 
-   -  sh, sacrifice hits
+      -  hbp, hits by pitch
 
-   -  sf, sacrifice flies
+      -  sh, sacrifice hits
 
-   -  gidp, ground into double play
+      -  sf, sacrifice flies
 
-   .. rubric:: References
-      :name: references
+      -  gidp, ground into double play
 
-   http://www.baseball-databank.org/
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      http://www.baseball-databank.org/
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      baberuth <- subset(baseball, id == "ruthba01")
-      baberuth$cyear <- baberuth$year - min(baberuth$year) + 1
+      ::
 
-      calculate_cyear <- function(df) {
-        mutate(df,
-          cyear = year - min(year),
-          cpercent = cyear / (max(year) - min(year))
-        )
-      }
+         baberuth <- subset(baseball, id == "ruthba01")
+         baberuth$cyear <- baberuth$year - min(baberuth$year) + 1
 
-      baseball <- ddply(baseball, .(id), calculate_cyear)
-      baseball <- subset(baseball, ab >= 25)
+         calculate_cyear <- function(df) {
+           mutate(df,
+             cyear = year - min(year),
+             cpercent = cyear / (max(year) - min(year))
+           )
+         }
 
-      model <- function(df) {
-        lm(rbi / ab ~ cyear, data=df)
-      }
-      model(baberuth)
-      models <- dlply(baseball, .(id), model)
+         baseball <- ddply(baseball, .(id), calculate_cyear)
+         baseball <- subset(baseball, ab >= 25)
+
+         model <- function(df) {
+           lm(rbi / ab ~ cyear, data=df)
+         }
+         model(baberuth)
+         models <- dlply(baseball, .(id), model)

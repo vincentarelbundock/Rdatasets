@@ -1,72 +1,75 @@
 .. container::
 
-   ========== ===============
-   ModeChoice R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Data to Study Travel Mode Choice
-      :name: ModeChoice
+      ========== ===============
+      ModeChoice R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data to Study Travel Mode Choice
+         :name: data-to-study-travel-mode-choice
 
-   a cross-section
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 840
+      a cross-section
 
-   *observation* : individuals
+      *number of observations* : 840
 
-   *country* : Australia
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Australia
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(ModeChoice)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(ModeChoice)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   mode
-      choice : air, train, bus or car
+      A dataframe containing :
 
-   ttme
-      terminal waiting cost time, 0 for car
+      mode
+         choice : air, train, bus or car
 
-   invc
-      in vehicle cost-cost component
+      ttme
+         terminal waiting cost time, 0 for car
 
-   invt
-      travel time in vehicle
+      invc
+         in vehicle cost-cost component
 
-   gc
-      generalized cost measure
+      invt
+         travel time in vehicle
 
-   hinc
-      household income
+      gc
+         generalized cost measure
 
-   psize
-      party size in mode chosen
+      hinc
+         household income
 
-   .. rubric:: Source
-      :name: source
+      psize
+         party size in mode chosen
 
-   Greene, W.H. and D. Hensher (1997) *Multinomial logit and discrete
-   choice models* *in* Greene, W. H. (1997) *LIMDEP version 7.0 user's
-   manual revised*, Plainview, New York econometric software, Inc .
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Greene, W.H. and D. Hensher (1997) *Multinomial logit and discrete
+      choice models* *in* Greene, W. H. (1997) *LIMDEP version 7.0
+      user's manual revised*, Plainview, New York econometric software,
+      Inc .
 
-   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   https://archive.org/details/econometricanaly0000gree_f4x3, Table
-   F21.2.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+      https://archive.org/details/econometricanaly0000gree_f4x3, Table
+      F21.2.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

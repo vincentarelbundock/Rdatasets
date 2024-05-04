@@ -1,68 +1,71 @@
 .. container::
 
-   ======== ===============
-   Gasoline R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Refinery yield of gasoline
-      :name: Gasoline
+      ======== ===============
+      Gasoline R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Refinery yield of gasoline
+         :name: refinery-yield-of-gasoline
 
-   The ``Gasoline`` data frame has 32 rows and 6 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``Gasoline`` data frame has 32 rows and 6 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   yield
-      a numeric vector giving the percentage of crude oil converted to
-      gasoline after distillation and fractionation
+      This data frame contains the following columns:
 
-   endpoint
-      a numeric vector giving the temperature (degrees F) at which all
-      the gasoline is vaporized
+      yield
+         a numeric vector giving the percentage of crude oil converted
+         to gasoline after distillation and fractionation
 
-   Sample
-      an ordered factor giving the inferred crude oil sample number
+      endpoint
+         a numeric vector giving the temperature (degrees F) at which
+         all the gasoline is vaporized
 
-   API
-      a numeric vector giving the crude oil gravity (degrees API)
+      Sample
+         an ordered factor giving the inferred crude oil sample number
 
-   vapor
-      a numeric vector giving the vapor pressure of the crude oil
-      ``(\mathrm{lbf}/\mathrm{in}^2)``
+      API
+         a numeric vector giving the crude oil gravity (degrees API)
 
-   ASTM
-      a numeric vector giving the crude oil 10% point ASTM—the
-      temperature at which 10% of the crude oil has become vapor.
+      vapor
+         a numeric vector giving the vapor pressure of the crude oil
+         ``(\mathrm{lbf}/\mathrm{in}^2)``
 
-   .. rubric:: Details
-      :name: details
+      ASTM
+         a numeric vector giving the crude oil 10% point ASTM—the
+         temperature at which 10% of the crude oil has become vapor.
 
-   Prater (1955) provides data on crude oil properties and gasoline
-   yields. Atkinson (1985) uses these data to illustrate the use of
-   diagnostics in multiple regression analysis. Three of the
-   covariates—``API``, ``vapor``, and ``ASTM``—measure characteristics
-   of the crude oil used to produce the gasoline. The other covariate —
-   ``endpoint``—is a characteristic of the refining process. Daniel and
-   Wood (1980) notice that the covariates characterizing the crude oil
-   occur in only ten distinct groups and conclude that the data
-   represent responses measured on ten different crude oil samples.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Prater (1955) provides data on crude oil properties and gasoline
+      yields. Atkinson (1985) uses these data to illustrate the use of
+      diagnostics in multiple regression analysis. Three of the
+      covariates—``API``, ``vapor``, and ``ASTM``—measure
+      characteristics of the crude oil used to produce the gasoline. The
+      other covariate — ``endpoint``—is a characteristic of the refining
+      process. Daniel and Wood (1980) notice that the covariates
+      characterizing the crude oil occur in only ten distinct groups and
+      conclude that the data represent responses measured on ten
+      different crude oil samples.
 
-   Prater, N. H. (1955), Estimate gasoline yields from crudes,
-   *Petroleum Refiner*, **35** (5).
+      .. rubric:: Source
+         :name: source
 
-   Atkinson, A. C. (1985), *Plots, Transformations, and Regression*,
-   Oxford Press, New York.
+      Prater, N. H. (1955), Estimate gasoline yields from crudes,
+      *Petroleum Refiner*, **35** (5).
 
-   Daniel, C. and Wood, F. S. (1980), *Fitting Equations to Data*,
-   Wiley, New York
+      Atkinson, A. C. (1985), *Plots, Transformations, and Regression*,
+      Oxford Press, New York.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S (4th ed)*, Springer, New York.
+      Daniel, C. and Wood, F. S. (1980), *Fitting Equations to Data*,
+      Wiley, New York
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S (4th ed)*, Springer, New York.

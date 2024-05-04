@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>GoosePermits</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='GoosePermits'>Goose Permit Study</h2>
+<h2>Goose Permit Study</h2>
 
 <h3>Description</h3>
 
@@ -37,11 +37,15 @@ permit or the cash.
 <p>A data.frame with 11 observations on the following 3 variables.
 </p>
 
-<p>itemcodebid amount offered for permit (US $) (numeric)
-itemcodekeep number of hunters who kept the permit and returned the cash (numeric)
-itemcodesell number of hunters who kept the cash and returned the permit (numeric)
+<dl>
+<dt><code>bid </code></dt><dd><p>amount offered for permit (US $) (numeric)</p>
+</dd>
+<dt><code>keep </code></dt><dd><p>number of hunters who kept the permit and returned the cash (numeric)</p>
+</dd>
+<dt><code>sell </code></dt><dd><p>number of hunters who kept the cash and returned the permit (numeric)</p>
+</dd>
+</dl>
 
-</p>
 
 
 <h3>Source</h3>
@@ -57,16 +61,17 @@ Amer. J. Agr. Econ. 61, 1979. Available at
 
 <pre><code class='language-R'>data(GoosePermits)
 
-goose.model &lt;- 
+goose.model &lt;-
   glm( cbind(keep, sell) ~ log(bid), data = GoosePermits, family = binomial())
 if (require(ggformula)) {
   y.hat &lt;- makeFun(goose.model)
-  gf_point( (keep/(keep+sell)) ~ bid, data = GoosePermits, ylim = c(0,1.05)) %&gt;%
-  gf_fun(y.hat(b) ~ b, add = TRUE, color = "red", alpha = 0.5) 
+  gf_point( (keep/(keep+sell)) ~ bid, data = GoosePermits, ylim = c(0,1.05)) |&gt;
+  gf_fun(y.hat(b) ~ b, add = TRUE, color = "red", alpha = 0.5)
 }
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

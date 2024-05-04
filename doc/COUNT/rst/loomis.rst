@@ -1,95 +1,97 @@
 .. container::
 
-   ====== ===============
-   loomis R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: loomis
-      :name: loomis
+      ====== ===============
+      loomis R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: loomis
+         :name: loomis
 
-   Data are taken from Loomis (2003). The study relates to a survey
-   taken on reported frequency of visits to national parks during the
-   year. The survey was taken at park sites, thus incurring possible
-   effects of endogenous stratification.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data are taken from Loomis (2003). The study relates to a survey
+      taken on reported frequency of visits to national parks during the
+      year. The survey was taken at park sites, thus incurring possible
+      effects of endogenous stratification.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(loomis)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(loomis)
 
-   A data frame with 410 observations on the following 11 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``anvisits``
-      number of annual visits to park
+      A data frame with 410 observations on the following 11 variables.
 
-   ``gender``
-      1=male;0=female
+      ``anvisits``
+         number of annual visits to park
 
-   ``income``
-      income in US dollars per year, categorical: 4 levels
+      ``gender``
+         1=male;0=female
 
-   ``income1``
-      <=$25000
+      ``income``
+         income in US dollars per year, categorical: 4 levels
 
-   ``income2``
-      >$25000 - $55000
+      ``income1``
+         <=$25000
 
-   ``income3``
-      >$55000 - $95000
+      ``income2``
+         >$25000 - $55000
 
-   ``income4``
-      >$95000
+      ``income3``
+         >$55000 - $95000
 
-   ``travel``
-      travel time, categorical: 3 levels
+      ``income4``
+         >$95000
 
-   ``travel1``
-      <.25 hrs
+      ``travel``
+         travel time, categorical: 3 levels
 
-   ``travel2``
-      >=.25 - <4 hrs
+      ``travel1``
+         <.25 hrs
 
-   ``travel3``
-      >=4 hrs
+      ``travel2``
+         >=.25 - <4 hrs
 
-   .. rubric:: Details
-      :name: details
+      ``travel3``
+         >=4 hrs
 
-   loomis is saved as a data frame. Count models typically use anvisits
-   as response variable. 0 counts are included
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      loomis is saved as a data frame. Count models typically use
+      anvisits as response variable. 0 counts are included
 
-   from Loomis (2003)
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      from Loomis (2003)
 
-   Hilbe, Joseph M (2007, 2011), Negative Binomial Regression, Cambridge
-   University Press Loomis, J. B. (2003). Travel cost demand model based
-   river recreation benefit estimates with on-site and household
-   surveys: Comparative results and a correction procedure, Water
-   Resources Research, 39(4): 1105
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Hilbe, Joseph M (2007, 2011), Negative Binomial Regression,
+      Cambridge University Press Loomis, J. B. (2003). Travel cost
+      demand model based river recreation benefit estimates with on-site
+      and household surveys: Comparative results and a correction
+      procedure, Water Resources Research, 39(4): 1105
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(loomis)
-      glmlmp <- glm(anvisits ~ gender + factor(income) + factor(travel), family=poisson, data=loomis)
-      summary(glmlmp)
-      exp(coef(glmlmp))
-      library(MASS)
-      glmlmnb <- glm.nb(anvisits ~ gender + factor(income) + factor(travel), data=loomis)
-      summary(glmlmnb)
-      exp(coef(glmlmnb))
+      ::
+
+         data(loomis)
+         glmlmp <- glm(anvisits ~ gender + factor(income) + factor(travel), family=poisson, data=loomis)
+         summary(glmlmp)
+         exp(coef(glmlmp))
+         library(MASS)
+         glmlmnb <- glm.nb(anvisits ~ gender + factor(income) + factor(travel), data=loomis)
+         summary(glmlmnb)
+         exp(coef(glmlmnb))

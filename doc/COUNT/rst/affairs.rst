@@ -1,122 +1,124 @@
 .. container::
 
-   ======= ===============
-   affairs R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: affairs
-      :name: affairs
+      ======= ===============
+      affairs R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: affairs
+         :name: affairs
 
-   Data from Fair (1978). Although Fair used a tobit model with the
-   data, the outcome measure can be modeled as a count. In fact, Greene
-   (2003) modeled it as Poisson, but given the amount of overdispersion
-   in the data, employing a negative binomial model is an appropriate
-   strategy. The data is stored in the affairs data set. Naffairs is the
-   response variable, indicating the number of affairs reported by the
-   participant in the past year.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from Fair (1978). Although Fair used a tobit model with the
+      data, the outcome measure can be modeled as a count. In fact,
+      Greene (2003) modeled it as Poisson, but given the amount of
+      overdispersion in the data, employing a negative binomial model is
+      an appropriate strategy. The data is stored in the affairs data
+      set. Naffairs is the response variable, indicating the number of
+      affairs reported by the participant in the past year.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(affairs)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(affairs)
 
-   A data frame with 601 observations on the following 18 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``naffairs``
-      number of affairs within last year
+      A data frame with 601 observations on the following 18 variables.
 
-   ``kids``
-      1=have children;0= no children
+      ``naffairs``
+         number of affairs within last year
 
-   ``vryunhap``
-      (1/0) very unhappily married
+      ``kids``
+         1=have children;0= no children
 
-   ``unhap``
-      (1/0) unhappily married
+      ``vryunhap``
+         (1/0) very unhappily married
 
-   ``avgmarr``
-      (1/0) average married
+      ``unhap``
+         (1/0) unhappily married
 
-   ``hapavg``
-      (1/0) happily married
+      ``avgmarr``
+         (1/0) average married
 
-   ``vryhap``
-      (1/0) very happily married
+      ``hapavg``
+         (1/0) happily married
 
-   ``antirel``
-      (1/0) anti religious
+      ``vryhap``
+         (1/0) very happily married
 
-   ``notrel``
-      (1/0) not religious
+      ``antirel``
+         (1/0) anti religious
 
-   ``slghtrel``
-      (1/0) slightly religious
+      ``notrel``
+         (1/0) not religious
 
-   ``smerel``
-      (1/0) somewhat religious
+      ``slghtrel``
+         (1/0) slightly religious
 
-   ``vryrel``
-      (1/0) very religious
+      ``smerel``
+         (1/0) somewhat religious
 
-   ``yrsmarr1``
-      (1/0) >0.75 yrs
+      ``vryrel``
+         (1/0) very religious
 
-   ``yrsmarr2``
-      (1/0) >1.5 yrs
+      ``yrsmarr1``
+         (1/0) >0.75 yrs
 
-   ``yrsmarr3``
-      (1/0) >4.0 yrs
+      ``yrsmarr2``
+         (1/0) >1.5 yrs
 
-   ``yrsmarr4``
-      (1/0) >7.0 yrs
+      ``yrsmarr3``
+         (1/0) >4.0 yrs
 
-   ``yrsmarr5``
-      (1/0) >10.0 yrs
+      ``yrsmarr4``
+         (1/0) >7.0 yrs
 
-   ``yrsmarr6``
-      (1/0) >15.0 yrs
+      ``yrsmarr5``
+         (1/0) >10.0 yrs
 
-   .. rubric:: Details
-      :name: details
+      ``yrsmarr6``
+         (1/0) >15.0 yrs
 
-   rwm5yr is saved as a data frame. Count models use naffairs as
-   response variable. 0 counts are included.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      rwm5yr is saved as a data frame. Count models use naffairs as
+      response variable. 0 counts are included.
 
-   Fair, R. (1978). A Theory of Extramarital Affairs, Journal of
-   Political Economy, 86: 45-61. Greene, W.H. (2003). Econometric
-   Analysis, Fifth Edition, New York: Macmillan.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Fair, R. (1978). A Theory of Extramarital Affairs, Journal of
+      Political Economy, 86: 45-61. Greene, W.H. (2003). Econometric
+      Analysis, Fifth Edition, New York: Macmillan.
 
-   Hilbe, Joseph M (2011), Negative Binomial Regression, Cambridge
-   University Press Hilbe, Joseph M (2009), Logistic regression Models,
-   Chapman & Hall/CRC
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Hilbe, Joseph M (2011), Negative Binomial Regression, Cambridge
+      University Press Hilbe, Joseph M (2009), Logistic regression
+      Models, Chapman & Hall/CRC
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(affairs)
-      glmaffp <- glm(naffairs ~ kids + yrsmarr2 + yrsmarr3 + yrsmarr4 + yrsmarr5,
-                     family = poisson, data = affairs)
-      summary(glmaffp)
-      exp(coef(glmaffp))
+      ::
 
-      require(MASS)
-      glmaffnb <- glm.nb(naffairs ~ kids + yrsmarr2 + yrsmarr3 + yrsmarr4 + yrsmarr5,
-                         data=affairs)
-      summary(glmaffnb)
-      exp(coef(glmaffnb))
+         data(affairs)
+         glmaffp <- glm(naffairs ~ kids + yrsmarr2 + yrsmarr3 + yrsmarr4 + yrsmarr5,
+                        family = poisson, data = affairs)
+         summary(glmaffp)
+         exp(coef(glmaffp))
+
+         require(MASS)
+         glmaffnb <- glm.nb(naffairs ~ kids + yrsmarr2 + yrsmarr3 + yrsmarr4 + yrsmarr5,
+                            data=affairs)
+         summary(glmaffnb)
+         exp(coef(glmaffnb))

@@ -1,43 +1,45 @@
 .. container::
 
-   ============= ===============
-   TomlinsonRush R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: LaDainian Tomlinson Rushing Yards
-      :name: TomlinsonRush
+      ============= ===============
+      TomlinsonRush R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: LaDainian Tomlinson Rushing Yards
+         :name: ladainian-tomlinson-rushing-yards
 
-   Rushing yards for each game LaDainian Tomlinson played in the 2006
-   National Football League (NFL regular) season.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Rushing yards for each game LaDainian Tomlinson played in the 2006
+      National Football League (NFL regular) season.
 
-   A dataset with 16 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ============ =======================================
-   ``Game``     Week number in the 2006 season
-   ``Opponent`` Name of opposing team
-   ``Attempts`` Number of rushing attempts
-   ``Yards``    Total yards gained rushing for the game
-   \            
-   ============ =======================================
+      A dataset with 16 observations on the following 4 variables.
 
-   .. rubric:: Details
-      :name: details
+      ============ =======================================
+      ``Game``     Week number in the 2006 season
+      ``Opponent`` Name of opposing team
+      ``Attempts`` Number of rushing attempts
+      ``Yards``    Total yards gained rushing for the game
+      \            
+      ============ =======================================
 
-   For each of the sixteen games the San Diego Chargers played in the
-   2006 NFL regular season we have the number of times LaDainian
-   Tomlinson ran the ball and the total yards he gained.
+      .. rubric:: Details
+         :name: details
 
-   This data set from the first edition was replaced by BreesPass in the
-   second edition.
+      For each of the sixteen games the San Diego Chargers played in the
+      2006 NFL regular season we have the number of times LaDainian
+      Tomlinson ran the ball and the total yards he gained.
 
-   .. rubric:: Source
-      :name: source
+      This data set from the first edition was replaced by BreesPass in
+      the second edition.
 
-   Data downloaded from
-   http://www.pro-football-reference.com/players/T/TomlLa00/gamelog/2006/
+      .. rubric:: Source
+         :name: source
+
+      Data downloaded from
+      http://www.pro-football-reference.com/players/T/TomlLa00/gamelog/2006/

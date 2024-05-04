@@ -1,109 +1,113 @@
 .. container::
 
-   ======= ===============
-   CPS1988 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Determinants of Wages Data (CPS 1988)
-      :name: CPS1988
+      ======= ===============
+      CPS1988 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Determinants of Wages Data (CPS 1988)
+         :name: determinants-of-wages-data-cps-1988
 
-   Cross-section data originating from the March 1988 Current Population
-   Survey by the US Census Bureau.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-section data originating from the March 1988 Current
+      Population Survey by the US Census Bureau.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("CPS1988")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("CPS1988")
 
-   A data frame containing 28,155 observations on 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   wage
-      Wage (in dollars per week).
+      A data frame containing 28,155 observations on 7 variables.
 
-   education
-      Number of years of education.
+      wage
+         Wage (in dollars per week).
 
-   experience
-      Number of years of potential work experience.
+      education
+         Number of years of education.
 
-   ethnicity
-      Factor with levels ``"cauc"`` and ``"afam"`` (African-American).
+      experience
+         Number of years of potential work experience.
 
-   smsa
-      Factor. Does the individual reside in a Standard Metropolitan
-      Statistical Area (SMSA)?
+      ethnicity
+         Factor with levels ``"cauc"`` and ``"afam"``
+         (African-American).
 
-   region
-      Factor with levels ``"northeast"``, ``"midwest"``, ``"south"``,
-      ``"west"``.
+      smsa
+         Factor. Does the individual reside in a Standard Metropolitan
+         Statistical Area (SMSA)?
 
-   parttime
-      Factor. Does the individual work part-time?
+      region
+         Factor with levels ``"northeast"``, ``"midwest"``, ``"south"``,
+         ``"west"``.
 
-   .. rubric:: Details
-      :name: details
+      parttime
+         Factor. Does the individual work part-time?
 
-   A sample of men aged 18 to 70 with positive annual income greater
-   than USD 50 in 1992, who are not self-employed nor working without
-   pay. Wages are deflated by the deflator of Personal Consumption
-   Expenditure for 1992.
+      .. rubric:: Details
+         :name: details
 
-   A problem with CPS data is that it does not provide actual work
-   experience. It is therefore customary to compute experience as
-   ``age - education - 6`` (as was done by Bierens and Ginther, 2001),
-   this may be considered potential experience. As a result, some
-   respondents have negative experience.
+      A sample of men aged 18 to 70 with positive annual income greater
+      than USD 50 in 1992, who are not self-employed nor working without
+      pay. Wages are deflated by the deflator of Personal Consumption
+      Expenditure for 1992.
 
-   .. rubric:: Source
-      :name: source
+      A problem with CPS data is that it does not provide actual work
+      experience. It is therefore customary to compute experience as
+      ``age - education - 6`` (as was done by Bierens and Ginther,
+      2001), this may be considered potential experience. As a result,
+      some respondents have negative experience.
 
-   http://www.personal.psu.edu/hxb11/MEDIAN.HTM
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Personal web page of Herman J. Bierens.
 
-   Bierens, H.J., and Ginther, D. (2001). Integrated Conditional Moment
-   Testing of Quantile Regression Models. *Empirical Economics*, **26**,
-   307–324.
+      .. rubric:: References
+         :name: references
 
-   Buchinsky, M. (1998). Recent Advances in Quantile Regression Models:
-   A Practical Guide for Empirical Research. *Journal of Human
-   Resources*, **33**, 88–126.
+      Bierens, H.J., and Ginther, D. (2001). Integrated Conditional
+      Moment Testing of Quantile Regression Models. *Empirical
+      Economics*, **26**, 307–324.
 
-   .. rubric:: See Also
-      :name: see-also
+      Buchinsky, M. (1998). Recent Advances in Quantile Regression
+      Models: A Practical Guide for Empirical Research. *Journal of
+      Human Resources*, **33**, 88–126.
 
-   ``CPS1985``, ``CPSSW``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``CPS1985``, ``CPSSW``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## data and packages
-      library("quantreg")
-      data("CPS1988")
-      CPS1988$region <- relevel(CPS1988$region, ref = "south")
+      ::
 
-      ## Model equations: Mincer-type, quartic, Buchinsky-type
-      mincer <- log(wage) ~ ethnicity + education + experience + I(experience^2)
-      quart <- log(wage) ~ ethnicity + education + experience + I(experience^2) +
-        I(experience^3) + I(experience^4)
-      buchinsky <- log(wage) ~ ethnicity * (education + experience + parttime) + 
-        region*smsa + I(experience^2) + I(education^2) + I(education*experience)
+         ## data and packages
+         library("quantreg")
+         data("CPS1988")
+         CPS1988$region <- relevel(CPS1988$region, ref = "south")
 
-      ## OLS and LAD fits (for LAD see Bierens and Ginter, Tables 1-3.A.)
-      mincer_ols <- lm(mincer, data = CPS1988)
-      mincer_lad <- rq(mincer, data = CPS1988)
-      quart_ols <- lm(quart, data = CPS1988)
-      quart_lad <- rq(quart, data = CPS1988)
-      buchinsky_ols <- lm(buchinsky, data = CPS1988)
-      buchinsky_lad <- rq(buchinsky, data = CPS1988)
+         ## Model equations: Mincer-type, quartic, Buchinsky-type
+         mincer <- log(wage) ~ ethnicity + education + experience + I(experience^2)
+         quart <- log(wage) ~ ethnicity + education + experience + I(experience^2) +
+           I(experience^3) + I(experience^4)
+         buchinsky <- log(wage) ~ ethnicity * (education + experience + parttime) + 
+           region*smsa + I(experience^2) + I(education^2) + I(education*experience)
+
+         ## OLS and LAD fits (for LAD see Bierens and Ginter, Tables 1-3.A.)
+         mincer_ols <- lm(mincer, data = CPS1988)
+         quart_ols <- lm(quart, data = CPS1988)
+         buchinsky_ols <- lm(buchinsky, data = CPS1988)
+
+         quart_lad <- rq(quart, data = CPS1988)
+         mincer_lad <- rq(mincer, data = CPS1988)
+         buchinsky_lad <- rq(buchinsky, data = CPS1988)

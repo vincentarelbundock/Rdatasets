@@ -1,72 +1,75 @@
 .. container::
 
-   ====== ===============
-   orings R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: 1986 Challenger disaster and O-rings
-      :name: orings
+      ====== ===============
+      orings R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: 1986 Challenger disaster and O-rings
+         :name: challenger-disaster-and-o-rings
 
-   On January 28, 1986, a routine launch was anticipated for the
-   Challenger space shuttle. Seventy-three seconds into the flight,
-   disaster happened: the shuttle broke apart, killing all seven crew
-   members on board. An investigation into the cause of the disaster
-   focused on a critical seal called an O-ring, and it is believed that
-   damage to these O-rings during a shuttle launch may be related to the
-   ambient temperature during the launch. The table below summarizes
-   observational data on O-rings for 23 shuttle missions, where the
-   mission order is based on the temperature at the time of the launch.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      On January 28, 1986, a routine launch was anticipated for the
+      Challenger space shuttle. Seventy-three seconds into the flight,
+      disaster happened: the shuttle broke apart, killing all seven crew
+      members on board. An investigation into the cause of the disaster
+      focused on a critical seal called an O-ring, and it is believed
+      that damage to these O-rings during a shuttle launch may be
+      related to the ambient temperature during the launch. The table
+      below summarizes observational data on O-rings for 23 shuttle
+      missions, where the mission order is based on the temperature at
+      the time of the launch.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      orings
+      ::
 
-   .. rubric:: Format
-      :name: format
+         orings
 
-   A data frame with 23 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   mission
-      Shuttle mission number.
+      A data frame with 23 observations on the following 4 variables.
 
-   temperature
-      Temperature, in Fahrenheit.
+      mission
+         Shuttle mission number.
 
-   damaged
-      Number of damaged O-rings (out of 6).
+      temperature
+         Temperature, in Fahrenheit.
 
-   undamaged
-      Number of undamaged O-rings (out of 6).
+      damaged
+         Number of damaged O-rings (out of 6).
 
-   .. rubric:: Source
-      :name: source
+      undamaged
+         Number of undamaged O-rings (out of 6).
 
-   https://archive.ics.uci.edu/ml/datasets/Challenger+USA+Space+Shuttle+O-Ring
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://archive.ics.uci.edu/ml/datasets/Challenger+USA+Space+Shuttle+O-Ring
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(dplyr)
-      library(forcats)
-      library(tidyr)
-      library(broom)
+      ::
 
-      # This is a wide data frame. You can convert it to a long
-      # data frame to predict probability of O-ring damage based
-      # on temperature using logistic regression.
+         library(dplyr)
+         library(forcats)
+         library(tidyr)
+         library(broom)
 
-      orings_long <- orings %>%
-        pivot_longer(cols = c(damaged, undamaged), names_to = "outcome", values_to = "n") %>%
-        uncount(n) %>%
-        mutate(outcome = fct_relevel(outcome, "undamaged", "damaged"))
+         # This is a wide data frame. You can convert it to a long
+         # data frame to predict probability of O-ring damage based
+         # on temperature using logistic regression.
 
-      orings_mod <- glm(outcome ~ temperature, data = orings_long, family = "binomial")
-      tidy(orings_mod)
+         orings_long <- orings %>%
+           pivot_longer(cols = c(damaged, undamaged), names_to = "outcome", values_to = "n") %>%
+           uncount(n) %>%
+           mutate(outcome = fct_relevel(outcome, "undamaged", "damaged"))
+
+         orings_mod <- glm(outcome ~ temperature, data = orings_long, family = "binomial")
+         tidy(orings_mod)

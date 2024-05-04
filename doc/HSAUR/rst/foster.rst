@@ -1,58 +1,61 @@
 .. container::
 
-   ====== ===============
-   foster R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Foster Feeding Experiment
-      :name: foster
+      ====== ===============
+      foster R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Foster Feeding Experiment
+         :name: foster-feeding-experiment
 
-   The data are from a foster feeding experiment with rat mothers and
-   litters of four different genotypes. The measurement is the litter
-   weight after a trial feeding period.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The data are from a foster feeding experiment with rat mothers and
+      litters of four different genotypes. The measurement is the litter
+      weight after a trial feeding period.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("foster")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("foster")
 
-   A data frame with 61 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``litgen``
-      genotype of the litter, a factor with levels ``A``, ``B``, ``I``,
-      and ``J``.
+      A data frame with 61 observations on the following 3 variables.
 
-   ``motgen``
-      genotype of the mother, a factor with levels ``A``, ``B``, ``I``,
-      and ``J``.
+      ``litgen``
+         genotype of the litter, a factor with levels ``A``, ``B``,
+         ``I``, and ``J``.
 
-   ``weight``
-      the weight of the litter after a feeding period.
+      ``motgen``
+         genotype of the mother, a factor with levels ``A``, ``B``,
+         ``I``, and ``J``.
 
-   .. rubric:: Details
-      :name: details
+      ``weight``
+         the weight of the litter after a feeding period.
 
-   Here the interest lies in uncovering the effect of genotype of mother
-   and litter on litter weight.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Here the interest lies in uncovering the effect of genotype of
+      mother and litter on litter weight.
 
-   D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
-   (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC, London.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      D. J. Hand, F. Daly, A. D. Lunn, K. J. McConway and E. Ostrowski
+      (1994). *A Handbook of Small Datasets*, Chapman and Hall/CRC,
+      London.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("foster", package = "HSAUR")
-        plot.design(foster)
+      ::
+
+           data("foster", package = "HSAUR")
+           plot.design(foster)

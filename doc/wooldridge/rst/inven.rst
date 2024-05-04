@@ -1,69 +1,71 @@
 .. container::
 
-   ===== ===============
-   inven R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: inven
-      :name: inven
+      ===== ===============
+      inven R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: inven
+         :name: inven
 
-   Wooldridge Source: Economic Report of the President, 1997, Tables
-   B-4, B-20, B-61, and B-71. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Economic Report of the President, 1997, Tables
+      B-4, B-20, B-61, and B-71. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('inven')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('inven')
 
-   A data.frame with 37 observations on 13 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1959-1995
+      A data.frame with 37 observations on 13 variables:
 
-   -  **i3:** 3 mo. T-bill rate
+      -  **year:** 1959-1995
 
-   -  **inf:** CPI inflation rate
+      -  **i3:** 3 mo. T-bill rate
 
-   -  **inven:** inventories, billions '92 $
+      -  **inf:** CPI inflation rate
 
-   -  **gdp:** GDP, billions '92 $
+      -  **inven:** inventories, billions '92 $
 
-   -  **r3:** real interest: i3 - inf
+      -  **gdp:** GDP, billions '92 $
 
-   -  **cinven:** inven - inven[\_n-1]
+      -  **r3:** real interest: i3 - inf
 
-   -  **cgdp:** gdp - gdp[\_n-1]
+      -  **cinven:** inven - inven[_n-1]
 
-   -  **cr3:** r3 - r3[\_n-1]
+      -  **cgdp:** gdp - gdp[_n-1]
 
-   -  **ci3:** i3 - i3[\_n-1]
+      -  **cr3:** r3 - r3[_n-1]
 
-   -  **cinf:** inf - inf[\_n-1]
+      -  **ci3:** i3 - i3[_n-1]
 
-   -  **ginven:** log(inven) - log(inven[\_n-1])
+      -  **cinf:** inf - inf[_n-1]
 
-   -  **ggdp:** log(gdp) - log(gdp[\_n-1])
+      -  **ginven:** log(inven) - log(inven[_n-1])
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **ggdp:** log(gdp) - log(gdp[_n-1])
 
-   pages 408, 444, 643, 830
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 408, 444, 643, 830
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(inven)
+      ::
+
+          str(inven)

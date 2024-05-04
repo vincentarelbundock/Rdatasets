@@ -1,47 +1,49 @@
 .. container::
 
-   ======== ===============
-   outliers R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Simulated data sets for different types of outliers
-      :name: outliers
+      ======== ===============
+      outliers R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Simulated data sets for different types of outliers
+         :name: simulated-data-sets-for-different-types-of-outliers
 
-   Data sets for showing different types of outliers
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data sets for showing different types of outliers
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      outliers
+      ::
 
-   .. rubric:: Format
-      :name: format
+         outliers
 
-   A data frame with 50 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   x
-      a numeric vector
+      A data frame with 50 observations on the following 5 variables.
 
-   y
-      a numeric vector
+      x
+         a numeric vector
 
-   x_inf
-      a numeric vector
+      y
+         a numeric vector
 
-   y_lev
-      a numeric vector
+      x_inf
+         a numeric vector
 
-   y_out
-      a numeric vector
+      y_lev
+         a numeric vector
 
-   .. rubric:: Examples
-      :name: examples
+      y_out
+         a numeric vector
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      outliers
+      ::
+
+         outliers

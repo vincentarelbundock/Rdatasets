@@ -1,93 +1,95 @@
 .. container::
 
-   ======= ===============
-   fertil3 R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: fertil3
-      :name: fertil3
+      ======= ===============
+      fertil3 R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: fertil3
+         :name: fertil3
 
-   Wooldridge Source: L.A. Whittington, J. Alm, and H.E. Peters (1990),
-   “Fertility and the Personal Exemption: Implicit Pronatalist Policy in
-   the United States,” American Economic Review 80, 545-556. The data
-   are given in the article. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: L.A. Whittington, J. Alm, and H.E. Peters
+      (1990), “Fertility and the Personal Exemption: Implicit
+      Pronatalist Policy in the United States,” American Economic Review
+      80, 545-556. The data are given in the article. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('fertil3')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('fertil3')
 
-   A data.frame with 72 observations on 24 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **gfr:** births per 1000 women 15-44
+      A data.frame with 72 observations on 24 variables:
 
-   -  **pe:** real value pers. exemption, $
+      -  **gfr:** births per 1000 women 15-44
 
-   -  **year:** 1913 to 1984
+      -  **pe:** real value pers. exemption, $
 
-   -  **t:** time trend, t=1,...,72
+      -  **year:** 1913 to 1984
 
-   -  **tsq:** t^2
+      -  **t:** time trend, t=1,...,72
 
-   -  **pe_1:** pe[\_n-1]
+      -  **tsq:** t^2
 
-   -  **pe_2:** pe[\_n-2]
+      -  **pe_1:** pe[_n-1]
 
-   -  **pe_3:** pe[\_n-3]
+      -  **pe_2:** pe[_n-2]
 
-   -  **pe_4:** pe[\_n-4]
+      -  **pe_3:** pe[_n-3]
 
-   -  **pill:** =1 if year >= 1963
+      -  **pe_4:** pe[_n-4]
 
-   -  **ww2:** =1, 1941 to 1945
+      -  **pill:** =1 if year >= 1963
 
-   -  **tcu:** t^3
+      -  **ww2:** =1, 1941 to 1945
 
-   -  **cgfr:** change in gfr: gfr - gfr_1
+      -  **tcu:** t^3
 
-   -  **cpe:** pe - pe_1
+      -  **cgfr:** change in gfr: gfr - gfr_1
 
-   -  **cpe_1:** cpe[\_n-1]
+      -  **cpe:** pe - pe_1
 
-   -  **cpe_2:** cpe[\_n-2]
+      -  **cpe_1:** cpe[_n-1]
 
-   -  **cpe_3:** cpe[\_n-3]
+      -  **cpe_2:** cpe[_n-2]
 
-   -  **cpe_4:** cpe[\_n-4]
+      -  **cpe_3:** cpe[_n-3]
 
-   -  **gfr_1:** gfr[\_n-1]
+      -  **cpe_4:** cpe[_n-4]
 
-   -  **cgfr_1:** cgfr[\_n-1]
+      -  **gfr_1:** gfr[_n-1]
 
-   -  **cgfr_2:** cgfr[\_n-2]
+      -  **cgfr_1:** cgfr[_n-1]
 
-   -  **cgfr_3:** cgfr[\_n-3]
+      -  **cgfr_2:** cgfr[_n-2]
 
-   -  **cgfr_4:** cgfr[\_n-4]
+      -  **cgfr_3:** cgfr[_n-3]
 
-   -  **gfr_2:** gfr[\_n-2]
+      -  **cgfr_4:** cgfr[_n-4]
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **gfr_2:** gfr[_n-2]
 
-   pages 358, 377, 378, 397-398, 401, 408, 441, 649, 664-665, 673
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 358, 377, 378, 397-398, 401, 408, 441, 649, 664-665, 673
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(fertil3)
+      ::
+
+          str(fertil3)

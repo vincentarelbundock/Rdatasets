@@ -1,75 +1,77 @@
 .. container::
 
-   ========= ===============
-   Fungicide R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Carcinogenic Effects of a Fungicide
-      :name: Fungicide
+      ========= ===============
+      Fungicide R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Carcinogenic Effects of a Fungicide
+         :name: carcinogenic-effects-of-a-fungicide
 
-   Data from Gart (1971) on the carcinogenic effects of a certain
-   fungicide in two strains of mice. Of interest is how the association
-   between ``group`` (Control, Treated) and ``outcome`` (Tumor, No
-   Tumor) varies with ``sex`` and ``strain`` of the mice.
+      .. rubric:: Description
+         :name: description
 
-   Breslow (1976) used this data to illustrate the application of linear
-   models to log odds ratios.
+      Data from Gart (1971) on the carcinogenic effects of a certain
+      fungicide in two strains of mice. Of interest is how the
+      association between ``group`` (Control, Treated) and ``outcome``
+      (Tumor, No Tumor) varies with ``sex`` and ``strain`` of the mice.
 
-   .. rubric:: Usage
-      :name: usage
+      Breslow (1976) used this data to illustrate the application of
+      linear models to log odds ratios.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Fungicide)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Fungicide)
 
-   The data comprise a set of four 2 x 2 tables classifying 403 mice,
-   either Control or Treated and whether or not a tumor was later
-   observed. The four groups represent the combinations of sex and
-   strain of mice. The format is: num [1:2, 1:2, 1:2, 1:2] 5 4 74 12 3 2
-   84 14 10 4 ... - attr(\*, "dimnames")=List of 4 ..$ group : chr [1:2]
-   "Control" "Treated" ..$ outcome: chr [1:2] "Tumor" "NoTumor" ..$ sex
-   : chr [1:2] "M" "F" ..$ strain : chr [1:2] "1" "2"
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      The data comprise a set of four 2 x 2 tables classifying 403 mice,
+      either Control or Treated and whether or not a tumor was later
+      observed. The four groups represent the combinations of sex and
+      strain of mice. The format is: num [1:2, 1:2, 1:2, 1:2] 5 4 74 12
+      3 2 84 14 10 4 ... - attr(*, "dimnames")=List of 4 ..$ group : chr
+      [1:2] "Control" "Treated" ..$ outcome: chr [1:2] "Tumor" "NoTumor"
+      ..$ sex : chr [1:2] "M" "F" ..$ strain : chr [1:2] "1" "2"
 
-   All tables have some small cells, so a continuity correction is
-   recommended.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      All tables have some small cells, so a continuity correction is
+      recommended.
 
-   Gart, J. J. (1971). The comparison of proportions: a review of
-   significance tests, confidence intervals and adjustments for
-   stratification. *International Statistical Review*, 39, 148-169.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Gart, J. J. (1971). The comparison of proportions: a review of
+      significance tests, confidence intervals and adjustments for
+      stratification. *International Statistical Review*, 39, 148-169.
 
-   Breslow, N. (1976), Regression analysis of the log odds ratio: A
-   method for retrospective studies, *Biometrics*, 32(3), 409-416.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Breslow, N. (1976), Regression analysis of the log odds ratio: A
+      method for retrospective studies, *Biometrics*, 32(3), 409-416.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Fungicide)
-      # loddsratio was moved to vcd; requires vcd_1.3-3+
-      ## Not run: 
-      fung.lor <- loddsratio(Fungicide, correct=TRUE)
-      fung.lor
-      confint(fung.lor)
+      ::
 
-      ## End(Not run)
+         data(Fungicide)
+         # loddsratio was moved to vcd; requires vcd_1.3-3+
+         ## Not run: 
+         fung.lor <- loddsratio(Fungicide, correct=TRUE)
+         fung.lor
+         confint(fung.lor)
 
-      # visualize odds ratios in fourfold plots
-      cotabplot(Fungicide, panel=cotab_fourfold)
-      #  -- fourfold() requires vcd >= 1.2-10
-      fourfold(Fungicide, p_adjust_method="none")
+         ## End(Not run)
+
+         # visualize odds ratios in fourfold plots
+         cotabplot(Fungicide, panel=cotab_fourfold)
+         #  -- fourfold() requires vcd >= 1.2-10
+         fourfold(Fungicide, p_adjust_method="none")

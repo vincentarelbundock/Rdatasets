@@ -1,39 +1,41 @@
 .. container::
 
-   === ===============
-   gas R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Australian monthly gas production
-      :name: gas
+      === ===============
+      gas R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Australian monthly gas production
+         :name: australian-monthly-gas-production
 
-   Australian monthly gas production: 1956–1995.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Australian monthly gas production: 1956–1995.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      gas
+      ::
 
-   .. rubric:: Format
-      :name: format
+         gas
 
-   Time series data
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Time series data
 
-   Australian Bureau of Statistics.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Australian Bureau of Statistics.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      plot(gas)
-      seasonplot(gas)
-      tsdisplay(gas)
+      ::
+
+         plot(gas)
+         seasonplot(gas)
+         tsdisplay(gas)

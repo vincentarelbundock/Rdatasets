@@ -1,52 +1,54 @@
 .. container::
 
-   ======= ===============
-   present R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Birth counts
-      :name: present
+      ======= ===============
+      present R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Birth counts
+         :name: birth-counts
 
-   An updated version of the historical Arbuthnot dataset. Numbers of
-   boys and girls born in the United States between 1940 and 2002.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      An updated version of the historical Arbuthnot dataset. Numbers of
+      boys and girls born in the United States between 1940 and 2002.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      present
+      ::
 
-   .. rubric:: Format
-      :name: format
+         present
 
-   A data frame with 63 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   year
-      Year.
+      A data frame with 63 observations on the following 3 variables.
 
-   boys
-      Number of boys born.
+      year
+         Year.
 
-   girls
-      Number of girls born.
+      boys
+         Number of boys born.
 
-   .. rubric:: Source
-      :name: source
+      girls
+         Number of girls born.
 
-   Mathews, T. J., and Brady E. Hamilton. "Trend analysis of the sex
-   ratio at birth in the United States." National vital statistics
-   reports 53.20 (2005): 1-17.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Mathews, T. J., and Brady E. Hamilton. "Trend analysis of the sex
+      ratio at birth in the United States." National vital statistics
+      reports 53.20 (2005): 1-17.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(present, mapping = aes(x = year, y = boys / girls)) +
-        geom_line()
+         library(ggplot2)
+
+         ggplot(present, mapping = aes(x = year, y = boys / girls)) +
+           geom_line()

@@ -1,41 +1,46 @@
 .. container::
 
-   =========== ===============
-   SwimRecords R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: 100 m Swimming World Records
-      :name: SwimRecords
+      =========== ===============
+      SwimRecords R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: 100 m Swimming World Records
+         :name: m-swimming-world-records
 
-   World records for men and women over time from 1905 through 2004.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      World records for men and women over time from 1905 through 2004.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(SwimRecords)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(SwimRecords)
 
-   A data frame with 62 observations of the following variables.
+      .. rubric:: Format
+         :name: format
 
-   -  ``time`` time (in seconds) of the world record
+      A data frame with 62 observations of the following variables.
 
-   -  ``year`` Year in which the record was set
+      ``time``
+         time (in seconds) of the world record
 
-   -  ``sex`` a factor with levels ``M`` and ``F``
+      ``year``
+         Year in which the record was set
 
-   .. rubric:: Examples
-      :name: examples
+      ``sex``
+         a factor with levels ``M`` and ``F``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(SwimRecords)
-      if (require(ggformula)) {
-        gf_point(time ~ year, data = SwimRecords, color = ~ sex) 
-      }
+      ::
+
+         data(SwimRecords)
+         if (require(ggformula)) {
+           gf_point(time ~ year, data = SwimRecords, color = ~ sex)
+         }

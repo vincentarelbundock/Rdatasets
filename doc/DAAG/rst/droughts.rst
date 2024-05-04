@@ -1,43 +1,45 @@
 .. container::
 
-   ======== ===============
-   droughts R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Periods Between Rain Events
-      :name: droughts
+      ======== ===============
+      droughts R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Periods Between Rain Events
+         :name: periods-between-rain-events
 
-   Data collected at Winnipeg International Airport (Canada) on periods
-   (in days) between rain events.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data collected at Winnipeg International Airport (Canada) on
+      periods (in days) between rain events.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      droughts
+      ::
 
-   .. rubric:: Format
-      :name: format
+         droughts
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   length
-      the length of time from the completion of the last rain event to
-      the beginning of the next rain event.
+      This data frame contains the following columns:
 
-   year
-      the calendar year.
+      length
+         the length of time from the completion of the last rain event
+         to the beginning of the next rain event.
 
-   .. rubric:: Examples
-      :name: examples
+      year
+         the calendar year.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        boxplot(length ~ year, data=droughts)
-        boxplot(log(length) ~ year, data=droughts)
-        hist(droughts$length, main="Winnipeg Droughts", xlab="length (in days)")
-        hist(log(droughts$length), main="Winnipeg Droughts", xlab="length (in days, log scale)")
+      ::
+
+           boxplot(length ~ year, data=droughts)
+           boxplot(log(length) ~ year, data=droughts)
+           hist(droughts$length, main="Winnipeg Droughts", xlab="length (in days)")
+           hist(log(droughts$length), main="Winnipeg Droughts", xlab="length (in days, log scale)")

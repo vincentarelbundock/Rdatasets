@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>steamUse</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='steamUse'>Steam Usage Data (Excerpt)</h2>
+<h2>Steam Usage Data (Excerpt)</h2>
 
 <h3>Description</h3>
 
@@ -120,13 +120,13 @@ plot(steamUse)
 
 summary(fm1 &lt;- lmrob(Steam ~ temperature + op.days, data=steamUse))
 ## diagnoses 2 outliers: month of July, maybe company-wide summer vacations
-
 ## KS2014 alone seems not robust enough:
 summary(fm.14 &lt;- lmrob(Steam ~ temperature + op.days, data=steamUse,
          setting="KS2014"))
 pairs(Steam ~ temperature+op.days, steamUse)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

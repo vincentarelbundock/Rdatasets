@@ -1,68 +1,70 @@
 .. container::
 
-   ======= ===============
-   Mishkin R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Inflation and Interest Rates
-      :name: Mishkin
+      ======= ===============
+      Mishkin R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Inflation and Interest Rates
+         :name: inflation-and-interest-rates
 
-   monthly observations from 1950-2 to 1990-12
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 491
+      monthly observations from 1950-2 to 1990-12
 
-   *observation* : country
+      *number of observations* : 491
 
-   *country* : United States
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Mishkin)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Mishkin)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   pai1
-      one-month inflation rate (in percent, annual rate)
+      A time series containing :
 
-   pai3
-      three-month inflation rate (in percent, annual rate)
+      pai1
+         one-month inflation rate (in percent, annual rate)
 
-   tb1
-      one-month T-bill rate (in percent, annual rate)
+      pai3
+         three-month inflation rate (in percent, annual rate)
 
-   tb3
-      three-month T-bill rate (in percent, annual rate)
+      tb1
+         one-month T-bill rate (in percent, annual rate)
 
-   cpi
-      CPI for urban consumers, all items (the 1982-1984 average is set
-      to 100)
+      tb3
+         three-month T-bill rate (in percent, annual rate)
 
-   .. rubric:: Source
-      :name: source
+      cpi
+         CPI for urban consumers, all items (the 1982-1984 average is
+         set to 100)
 
-   Mishkin, F. (1992) “Is the Fisher effect for real ?”, *Journal of
-   Monetary Economics*, **30**, 195-215.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Mishkin, F. (1992) “Is the Fisher effect for real ?”, *Journal of
+      Monetary Economics*, **30**, 195-215.
 
-   Hayashi, F. (2000) *Econometrics*, Princeton University Press,
-   http://fhayashi.fc2web.com/hayashi_econometrics.htm, chapter 2,
-   176-184.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Hayashi, F. (2000) *Econometrics*, Princeton University Press,
+      http://fhayashi.fc2web.com/hayashi_econometrics.htm, chapter 2,
+      176-184.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

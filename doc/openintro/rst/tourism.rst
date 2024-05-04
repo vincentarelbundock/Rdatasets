@@ -1,48 +1,50 @@
 .. container::
 
-   ======= ===============
-   tourism R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Turkey tourism
-      :name: tourism
+      ======= ===============
+      tourism R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Turkey tourism
+         :name: turkey-tourism
 
-   Summary of tourism in Turkey.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Summary of tourism in Turkey.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      tourism
+      ::
 
-   .. rubric:: Format
-      :name: format
+         tourism
 
-   A data frame with 47 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   year
-      a numeric vector
+      A data frame with 47 observations on the following 3 variables.
 
-   visitor_count_tho
-      a numeric vector
+      year
+         a numeric vector
 
-   tourist_spending
-      a numeric vector
+      visitor_count_tho
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      tourist_spending
+         a numeric vector
 
-   Association of Turkish Travel Agencies, Foreign Visitors Figure &
-   Tourist Spendings By Years.
-   http://www.tursab.org.tr/en/statistics/foreign-visitors-figure-tourist-spendings-by-years_1083.html
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Association of Turkish Travel Agencies, Foreign Visitors Figure &
+      Tourist Spendings By Years.
+      http://www.tursab.org.tr/en/statistics/foreign-visitors-figure-tourist-spendings-by-years_1083.html
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      tourism
+      ::
+
+         tourism

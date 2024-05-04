@@ -1,59 +1,62 @@
 .. container::
 
-   ==== ===============
-   snow R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Data from John Snow's 1855 study of the cause of cholera
-      :name: snow
+      ==== ===============
+      snow R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data from John Snow's 1855 study of the cause of
+         cholera
+         :name: data-from-john-snows-1855-study-of-the-cause-of-cholera
 
-   A subset of the aggregated death rate data from Snow's legendary
-   study of the source of the London Cholera outbreak.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A subset of the aggregated death rate data from Snow's legendary
+      study of the source of the London Cholera outbreak.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      snow
+      ::
 
-   .. rubric:: Format
-      :name: format
+         snow
 
-   A data frame with 4 rows and 4 variables
+      .. rubric:: Format
+         :name: format
 
-   year
-      Year
+      A data frame with 4 rows and 4 variables
 
-   supplier
-      Water pump supplier
+      year
+         Year
 
-   treatment
-      Status of water pump
+      supplier
+         Water pump supplier
 
-   deathrate
-      Deaths per 10k 1851 population
+      treatment
+         Status of water pump
 
-   .. rubric:: Details
-      :name: details
+      deathrate
+         Deaths per 10k 1851 population
 
-   This data is used in the *Difference-in-Differences* chapter of *The
-   Effect* by Huntington-Klein.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This data is used in the *Difference-in-Differences* chapter of
+      *The Effect* by Huntington-Klein.
 
-   Snow, John. 1855. 'On the Mode of Communication of Cholera'. John
-   Churchill."
+      .. rubric:: Source
+         :name: source
 
-   Coleman, Thomas. 2019. 'Causality in the time of cholera: John Snow
-   as a prototype for causal inference.' SSRN 3262234."
+      Snow, John. 1855. 'On the Mode of Communication of Cholera'. John
+      Churchill."
 
-   .. rubric:: References
-      :name: references
+      Coleman, Thomas. 2019. 'Causality in the time of cholera: John
+      Snow as a prototype for causal inference.' SSRN 3262234."
 
-   Huntington-Klein. 2021. The Effect: An Introduction to Research
-   Design and Causality. https://theeffectbook.net.
+      .. rubric:: References
+         :name: references
+
+      Huntington-Klein. 2021. The Effect: An Introduction to Research
+      Design and Causality. https://theeffectbook.net.

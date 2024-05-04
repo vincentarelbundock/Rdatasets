@@ -1,67 +1,76 @@
 .. container::
 
-   ======== ===============
-   KidsFeet R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Foot measurements in children
-      :name: KidsFeet
+      ======== ===============
+      KidsFeet R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Foot measurements in children
+         :name: foot-measurements-in-children
 
-   These data were collected by a statistician, Mary C. Meyer, in a
-   fourth grade classroom in Ann Arbor, MI, in October 1997. They are a
-   convenience sample — the kids who were in the fourth grade.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These data were collected by a statistician, Mary C. Meyer, in a
+      fourth grade classroom in Ann Arbor, MI, in October 1997. They are
+      a convenience sample — the kids who were in the fourth grade.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(KidsFeet)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(KidsFeet)
 
-   A data frame with 39 observations on the following variables.
+      .. rubric:: Format
+         :name: format
 
-   -  ``name`` a factor with levels corresponding to the name of each
-      child
+      A data frame with 39 observations on the following variables.
 
-   -  ``birthmonth`` the month of birth
+      ``name``
+         a factor with levels corresponding to the name of each child
 
-   -  ``birthyear`` the year of birth
+      ``birthmonth``
+         the month of birth
 
-   -  ``length`` length of longer foot (in cm)
+      ``birthyear``
+         the year of birth
 
-   -  ``width`` width of longer foot (in cm)
+      ``length``
+         length of longer foot (in cm)
 
-   -  ``sex`` a factor with levels ``B`` ``G``
+      ``width``
+         width of longer foot (in cm)
 
-   -  ``biggerfoot`` a factor with levels ``L`` ``R``
+      ``sex``
+         a factor with levels ``B`` ``G``
 
-   -  ``domhand`` a factor with levels ``L`` ``R``
+      ``biggerfoot``
+         a factor with levels ``L`` ``R``
 
-   .. rubric:: Details
-      :name: details
+      ``domhand``
+         a factor with levels ``L`` ``R``
 
-   Quoted from the source: "From a very young age, shoes for boys tend
-   to be wider than shoes for girls. Is this because boys have wider
-   feet, or because it is assumed that girls, even in elementary school,
-   are willing to sacrifice comfort for fashion? To assess the former, a
-   statistician measures kids' feet."
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: References
-      :name: references
+      Quoted from the source: "From a very young age, shoes for boys
+      tend to be wider than shoes for girls. Is this because boys have
+      wider feet, or because it is assumed that girls, even in
+      elementary school, are willing to sacrifice comfort for fashion?
+      To assess the former, a statistician measures kids' feet."
 
-   Mary C. Meyer (2006) "Wider Shoes for Wider Feet?" *Journal of
-   Statistics Education* 14(1),
-   http://jse.amstat.org/v14n1/datasets.meyer.html.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Mary C. Meyer (2006) "Wider Shoes for Wider Feet?" *Journal of
+      Statistics Education* 14(1),
+      http://jse.amstat.org/v14n1/datasets.meyer.html.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(KidsFeet)
+      ::
+
+         data(KidsFeet)

@@ -1,81 +1,83 @@
 .. container::
 
-   ========= ===============
-   nlschools R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Eighth-Grade Pupils in the Netherlands
-      :name: nlschools
+      ========= ===============
+      nlschools R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Eighth-Grade Pupils in the Netherlands
+         :name: eighth-grade-pupils-in-the-netherlands
 
-   Snijders and Bosker (1999) use as a running example a study of 2287
-   eighth-grade pupils (aged about 11) in 132 classes in 131 schools in
-   the Netherlands. Only the variables used in our examples are
-   supplied.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Snijders and Bosker (1999) use as a running example a study of
+      2287 eighth-grade pupils (aged about 11) in 132 classes in 131
+      schools in the Netherlands. Only the variables used in our
+      examples are supplied.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      nlschools
+      ::
 
-   .. rubric:: Format
-      :name: format
+         nlschools
 
-   This data frame contains 2287 rows and the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``lang``
-      language test score.
+      This data frame contains 2287 rows and the following columns:
 
-   ``IQ``
-      verbal IQ.
+      ``lang``
+         language test score.
 
-   ``class``
-      class ID.
+      ``IQ``
+         verbal IQ.
 
-   ``GS``
-      class size: number of eighth-grade pupils recorded in the class
-      (there may be others: see ``COMB``, and some may have been omitted
-      with missing values).
+      ``class``
+         class ID.
 
-   ``SES``
-      social-economic status of pupil's family.
+      ``GS``
+         class size: number of eighth-grade pupils recorded in the class
+         (there may be others: see ``COMB``, and some may have been
+         omitted with missing values).
 
-   ``COMB``
-      were the pupils taught in a multi-grade class (``0/1``)? Classes
-      which contained pupils from grades 7 and 8 are coded ``1``, but
-      only eighth-graders were tested.
+      ``SES``
+         social-economic status of pupil's family.
 
-   .. rubric:: Source
-      :name: source
+      ``COMB``
+         were the pupils taught in a multi-grade class (``0/1``)?
+         Classes which contained pupils from grades 7 and 8 are coded
+         ``1``, but only eighth-graders were tested.
 
-   Snijders, T. A. B. and Bosker, R. J. (1999) *Multilevel Analysis. An
-   Introduction to Basic and Advanced Multilevel Modelling.* London:
-   Sage.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Snijders, T. A. B. and Bosker, R. J. (1999) *Multilevel Analysis.
+      An Introduction to Basic and Advanced Multilevel Modelling.*
+      London: Sage.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      nl1 <- within(nlschools, {
-      IQave <- tapply(IQ, class, mean)[as.character(class)]
-      IQ <- IQ - IQave
-      })
-      cen <- c("IQ", "IQave", "SES")
-      nl1[cen] <- scale(nl1[cen], center = TRUE, scale = FALSE)
+      ::
 
-      nl.lme <- nlme::lme(lang ~ IQ*COMB + IQave + SES,
-                          random = ~ IQ | class, data = nl1)
-      ## IGNORE_RDIFF_BEGIN
-      summary(nl.lme)
-      ## IGNORE_RDIFF_END
+         nl1 <- within(nlschools, {
+         IQave <- tapply(IQ, class, mean)[as.character(class)]
+         IQ <- IQ - IQave
+         })
+         cen <- c("IQ", "IQave", "SES")
+         nl1[cen] <- scale(nl1[cen], center = TRUE, scale = FALSE)
+
+         nl.lme <- nlme::lme(lang ~ IQ*COMB + IQave + SES,
+                             random = ~ IQ | class, data = nl1)
+         ## IGNORE_RDIFF_BEGIN
+         summary(nl.lme)
+         ## IGNORE_RDIFF_END

@@ -1,65 +1,67 @@
 .. container::
 
-   ========= ===============
-   Leinhardt R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Data on Infant-Mortality
-      :name: Leinhardt
+      ========= ===============
+      Leinhardt R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data on Infant-Mortality
+         :name: data-on-infant-mortality
 
-   The ``Leinhardt`` data frame has 105 rows and 4 columns. The
-   observations are nations of the world around 1970.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Leinhardt`` data frame has 105 rows and 4 columns. The
+      observations are nations of the world around 1970.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Leinhardt
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Leinhardt
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   income
-      Per-capita income in U. S. dollars.
+      This data frame contains the following columns:
 
-   infant
-      Infant-mortality rate per 1000 live births.
+      income
+         Per-capita income in U. S. dollars.
 
-   region
-      A factor with levels: ``Africa``; ``Americas``; ``Asia``, Asia and
-      Oceania; ``Europe``.
+      infant
+         Infant-mortality rate per 1000 live births.
 
-   oil
-      Oil-exporting country. A factor with levels: ``no``, ``yes``.
+      region
+         A factor with levels: ``Africa``; ``Americas``; ``Asia``, Asia
+         and Oceania; ``Europe``.
 
-   .. rubric:: Details
-      :name: details
+      oil
+         Oil-exporting country. A factor with levels: ``no``, ``yes``.
 
-   The infant-mortality rate for Jamaica is misprinted in Leinhardt and
-   Wasserman; the correct value is given here. Some of the values given
-   in Leinhardt and Wasserman do not appear in the original New York
-   Times table and are of dubious validity.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The infant-mortality rate for Jamaica is misprinted in Leinhardt
+      and Wasserman; the correct value is given here. Some of the values
+      given in Leinhardt and Wasserman do not appear in the original New
+      York Times table and are of dubious validity.
 
-   Leinhardt, S. and Wasserman, S. S. (1979) Exploratory data analysis:
-   An introduction to selected methods. In Schuessler, K. (Ed.)
-   *Sociological Methodology 1979* Jossey-Bass.
+      .. rubric:: Source
+         :name: source
 
-   *The New York Times*, 28 September 1975, p. E-3, Table 3.
+      Leinhardt, S. and Wasserman, S. S. (1979) Exploratory data
+      analysis: An introduction to selected methods. In Schuessler, K.
+      (Ed.) *Sociological Methodology 1979* Jossey-Bass.
 
-   .. rubric:: References
-      :name: references
+      *The New York Times*, 28 September 1975, p. E-3, Table 3.
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
 
-   Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
-   Regression*, Third Edition, Sage.
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.
+
+      Fox, J. and Weisberg, S. (2019) *An R Companion to Applied
+      Regression*, Third Edition, Sage.

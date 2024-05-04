@@ -1,63 +1,66 @@
 .. container::
 
-   ============== ===============
-   husbands_wives R Documentation
-   ============== ===============
+   .. container::
 
-   .. rubric:: Great Britain: husband and wife pairs
-      :name: husbands_wives
+      ============== ===============
+      husbands_wives R Documentation
+      ============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Great Britain: husband and wife pairs
+         :name: great-britain-husband-and-wife-pairs
 
-   The Great Britain Office of Population Census and Surveys once
-   collected data on a random sample of 170 married couples in Britain,
-   recording the age (in years) and heights of the husbands and wives.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The Great Britain Office of Population Census and Surveys once
+      collected data on a random sample of 170 married couples in
+      Britain, recording the age (in years) and heights of the husbands
+      and wives.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      husbands_wives
+      ::
 
-   .. rubric:: Format
-      :name: format
+         husbands_wives
 
-   A data frame with 199 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   age_husband
-      Age of husband.
+      A data frame with 199 observations on the following 8 variables.
 
-   age_wife
-      Age of wife.
+      age_husband
+         Age of husband.
 
-   ht_husband
-      Height of husband (mm).
+      age_wife
+         Age of wife.
 
-   ht_wife
-      Height of wife (mm).
+      ht_husband
+         Height of husband (mm).
 
-   age_husb_at_marriage
-      Age of husband at the time they married.
+      ht_wife
+         Height of wife (mm).
 
-   age_wife_at_marriage
-      Age of wife at the time they married.
+      age_husb_at_marriage
+         Age of husband at the time they married.
 
-   years_married
-      Number of years married.
+      age_wife_at_marriage
+         Age of wife at the time they married.
 
-   .. rubric:: Source
-      :name: source
+      years_married
+         Number of years married.
 
-   Hand DJ. 1994. A handbook of small data sets. Chapman & Hall/CRC.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Hand DJ. 1994. A handbook of small data sets. Chapman & Hall/CRC.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(husbands_wives, aes(x = ht_husband, y = ht_wife)) +
-        geom_point()
+         library(ggplot2)
+
+         ggplot(husbands_wives, aes(x = ht_husband, y = ht_wife)) +
+           geom_point()

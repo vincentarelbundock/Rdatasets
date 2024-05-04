@@ -1,33 +1,35 @@
 .. container::
 
-   ==== ===============
-   chem R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Copper in Wholemeal Flour
-      :name: chem
+      ==== ===============
+      chem R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Copper in Wholemeal Flour
+         :name: copper-in-wholemeal-flour
 
-   A numeric vector of 24 determinations of copper in wholemeal flour,
-   in parts per million.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A numeric vector of 24 determinations of copper in wholemeal
+      flour, in parts per million.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      chem
+      ::
 
-   .. rubric:: Source
-      :name: source
+         chem
 
-   Analytical Methods Committee (1989) Robust statistics – how not to
-   reject outliers. *The Analyst* **114**, 1693–1702.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Analytical Methods Committee (1989) Robust statistics – how not to
+      reject outliers. *The Analyst* **114**, 1693–1702.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.

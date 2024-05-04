@@ -1,42 +1,44 @@
 .. container::
 
-   ========= ===============
-   pathology R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Liver pathology data
-      :name: pathology
+      ========= ===============
+      pathology R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Liver pathology data
+         :name: liver-pathology-data
 
-   Liver pathology data
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      Liver pathology data
 
-   These data have the results of a *x*-ray examination to determine
-   whether liver is abnormal or not (in the ``scan`` column) versus the
-   more extensive pathology results that approximate the truth (in
-   ``pathology``).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Value
-      :name: value
+      These data have the results of a *x*-ray examination to determine
+      whether liver is abnormal or not (in the ``scan`` column) versus
+      the more extensive pathology results that approximate the truth
+      (in ``pathology``).
 
-   ============= ============
-   ``pathology`` a data frame
-   ============= ============
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      ============= ============
+      ``pathology`` a data frame
+      ============= ============
 
-   Altman, D.G., Bland, J.M. (1994) “Diagnostic tests 1: sensitivity and
-   specificity,” *British Medical Journal*, vol 308, 1552.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Altman, D.G., Bland, J.M. (1994) “Diagnostic tests 1: sensitivity
+      and specificity,” *British Medical Journal*, vol 308, 1552.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(pathology)
-      str(pathology)
+      ::
+
+         data(pathology)
+         str(pathology)

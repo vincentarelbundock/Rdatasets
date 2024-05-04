@@ -1,56 +1,58 @@
 .. container::
 
-   ==== ===============
-   coop R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Co-operative Trial in Analytical Chemistry
-      :name: coop
+      ==== ===============
+      coop R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Co-operative Trial in Analytical Chemistry
+         :name: co-operative-trial-in-analytical-chemistry
 
-   Seven specimens were sent to 6 laboratories in 3 separate batches and
-   each analysed for Analyte. Each analysis was duplicated.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Seven specimens were sent to 6 laboratories in 3 separate batches
+      and each analysed for Analyte. Each analysis was duplicated.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      coop
+      ::
 
-   .. rubric:: Format
-      :name: format
+         coop
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``Lab``
-      Laboratory, ``L1``, ``L2``, ..., ``L6``.
+      This data frame contains the following columns:
 
-   ``Spc``
-      Specimen, ``S1``, ``S2``, ..., ``S7``.
+      ``Lab``
+         Laboratory, ``L1``, ``L2``, ..., ``L6``.
 
-   ``Bat``
-      Batch, ``B1``, ``B2``, ``B3`` (nested within ``Spc/Lab``),
+      ``Spc``
+         Specimen, ``S1``, ``S2``, ..., ``S7``.
 
-   ``Conc``
-      Concentration of Analyte in ``g/kg``.
+      ``Bat``
+         Batch, ``B1``, ``B2``, ``B3`` (nested within ``Spc/Lab``),
 
-   .. rubric:: Source
-      :name: source
+      ``Conc``
+         Concentration of Analyte in ``g/kg``.
 
-   Analytical Methods Committee (1987) Recommendations for the conduct
-   and interpretation of co-operative trials, *The Analyst* **112**,
-   679–686.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Analytical Methods Committee (1987) Recommendations for the
+      conduct and interpretation of co-operative trials, *The Analyst*
+      **112**, 679–686.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S.* Fourth edition. Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S.* Fourth edition. Springer.
 
-   ``chem``, ``abbey``.
+      .. rubric:: See Also
+         :name: see-also
+
+      ``chem``, ``abbey``.

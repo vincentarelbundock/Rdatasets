@@ -1,65 +1,70 @@
 .. container::
 
-   ========== ===============
-   ShakeWords R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Shakespeare's Word Type Frequencies
-      :name: ShakeWords
+      ========== ===============
+      ShakeWords R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Shakespeare's Word Type Frequencies
+         :name: shakespeares-word-type-frequencies
 
-   This data set, from Efron and Thisted (1976), gives the number of
-   distinct words types (``Freq``) of words that appeared exactly once,
-   twice, etc. up to 100 times (``count``) in the complete works of
-   Shakespeare. In these works, Shakespeare used 31,534 distinct words
-   (types), comprising 884,647 words in total.
+      .. rubric:: Description
+         :name: description
 
-   Efron & Thisted used this data to ask the question, "How many words
-   did Shakespeare know?" Put another way, suppose another new corpus of
-   works Shakespeare were discovered, also with 884,647 words. How many
-   new word types would appear? The answer to the main question involves
-   contemplating an infinite number of such new corpora.
+      This data set, from Efron and Thisted (1976), gives the number of
+      distinct words types (``Freq``) of words that appeared exactly
+      once, twice, etc. up to 100 times (``count``) in the complete
+      works of Shakespeare. In these works, Shakespeare used 31,534
+      distinct words (types), comprising 884,647 words in total.
 
-   .. rubric:: Usage
-      :name: usage
+      Efron & Thisted used this data to ask the question, "How many
+      words did Shakespeare know?" Put another way, suppose another new
+      corpus of works Shakespeare were discovered, also with 884,647
+      words. How many new word types would appear? The answer to the
+      main question involves contemplating an infinite number of such
+      new corpora.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(ShakeWords)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(ShakeWords)
 
-   A data frame with 100 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``count``
-      the number of times a word type appeared in Shakespeare's written
-      works
+      A data frame with 100 observations on the following 2 variables.
 
-   ``Freq``
-      the number of different words (types) appearing with this count.
+      ``count``
+         the number of times a word type appeared in Shakespeare's
+         written works
 
-   .. rubric:: Details
-      :name: details
+      ``Freq``
+         the number of different words (types) appearing with this
+         count.
 
-   In addition to the words that appear ``1:100`` times, there are 846
-   words that appear more than 100 times, not listed in this data set.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      In addition to the words that appear ``1:100`` times, there are
+      846 words that appear more than 100 times, not listed in this data
+      set.
 
-   Bradley Efron and Ronald Thisted (1976). Estimating the Number of
-   Unseen Species: How Many Words Did Shakespeare Know? *Biometrika*,
-   Vol. 63, No. 3, pp. 435-447,
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Bradley Efron and Ronald Thisted (1976). Estimating the Number of
+      Unseen Species: How Many Words Did Shakespeare Know? *Biometrika*,
+      Vol. 63, No. 3, pp. 435-447,
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(ShakeWords)
-      str(ShakeWords)
+      ::
 
-      plot(sqrt(Freq) ~ count, data=ShakeWords)
+         data(ShakeWords)
+         str(ShakeWords)
+
+         plot(sqrt(Freq) ~ count, data=ShakeWords)

@@ -1,38 +1,40 @@
 .. container::
 
-   ========== ===============
-   TextPrices R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Textbook Prices
-      :name: TextPrices
+      ========== ===============
+      TextPrices R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Textbook Prices
+         :name: textbook-prices
 
-   Prices and number of pages for a sample of college textbooks
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Prices and number of pages for a sample of college textbooks
 
-   A dataset with 30 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ========= ==================================
-   ``Pages`` Number of pages in the textbook
-   ``Price`` Price of the textbook (in dollars)
-   \         
-   ========= ==================================
+      A dataset with 30 observations on the following 2 variables.
 
-   .. rubric:: Details
-      :name: details
+      ========= ==================================
+      ``Pages`` Number of pages in the textbook
+      ``Price`` Price of the textbook (in dollars)
+      \         
+      ========= ==================================
 
-   Two undergraduate students at Cal Poly - San Luis Obispo took a
-   random sample of 30 textbooks from the campus bookstore in the fall
-   of 2006. They recorded the price and number of pages in each book, in
-   order to investigate the question of whether number of pages can be
-   used to predict price.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Two undergraduate students at Cal Poly - San Luis Obispo took a
+      random sample of 30 textbooks from the campus bookstore in the
+      fall of 2006. They recorded the price and number of pages in each
+      book, in order to investigate the question of whether number of
+      pages can be used to predict price.
 
-   Student project
+      .. rubric:: Source
+         :name: source
+
+      Student project

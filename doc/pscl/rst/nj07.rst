@@ -1,68 +1,71 @@
 .. container::
 
-   ==== ===============
-   nj07 R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: rollcall object, National Journal key votes of 2007
-      :name: nj07
+      ==== ===============
+      nj07 R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: rollcall object, National Journal key votes of 2007
+         :name: rollcall-object-national-journal-key-votes-of-2007
 
-   A rollcall object containing 99 rollcalls from the 2nd session of the
-   110th U.S. Senate, designated by *National Journal* as the "key
-   votes" of 2007. These data were used to by *National Journal* to rate
-   (then Senator) Barack Obama was the "most liberal senator" in 2007.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A rollcall object containing 99 rollcalls from the 2nd session of
+      the 110th U.S. Senate, designated by *National Journal* as the
+      "key votes" of 2007. These data were used to by *National Journal*
+      to rate (then Senator) Barack Obama was the "most liberal senator"
+      in 2007.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(nj07)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(nj07)
 
-   A ``rollcall`` object containing the recorded votes, plus information
-   identifying the legislators and the rollcalls.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      A ``rollcall`` object containing the recorded votes, plus
+      information identifying the legislators and the rollcalls.
 
-   Note the coding scheme used by Poole and Rosenthal; Yea (1,2,3), Nay
-   (4,5,6) etc.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Note the coding scheme used by Poole and Rosenthal; Yea (1,2,3),
+      Nay (4,5,6) etc.
 
-   Keith Poole's web site: http://legacy.voteview.com/senate110.htm
+      .. rubric:: Source
+         :name: source
 
-   Originally scraped from the Senate's web site by Jeff Lewis.
+      Keith Poole's web site: https://legacy.voteview.com/senate110.htm
 
-   Josh Clinton compiled the list of *National Journal* key votes.
+      Originally scraped from the Senate's web site by Jeff Lewis.
 
-   .. rubric:: References
-      :name: references
+      Josh Clinton compiled the list of *National Journal* key votes.
 
-   Clinton, Joshua and Simon Jackman. 2009. To Simulate or NOMINATE?
-   *Legislative Studies Quarterly*. V34(4):593-621.
+      .. rubric:: References
+         :name: references
 
-   Jackman, Simon. 2009. *Bayesian Analysis for the Social Sciences*.
-   Wiley: Hoboken, New Jersey. Example 9.2.
+      Clinton, Joshua and Simon Jackman. 2009. To Simulate or NOMINATE?
+      *Legislative Studies Quarterly*. V34(4):593-621.
 
-   .. rubric:: Examples
-      :name: examples
+      Jackman, Simon. 2009. *Bayesian Analysis for the Social Sciences*.
+      Wiley: Hoboken, New Jersey. Example 9.2.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(pscl)
-      data(nj07)
-      is(nj07,"rollcall")    ## TRUE
-      nj07                   ## print method for class rollcall
-      names(nj07)
-      names(nj07$vote.data)
-      table(nj07$vote.data$policyArea)
-      summary(nj07)          ## summary method
-      summary(nj07,verbose=TRUE)
+      ::
+
+         require(pscl)
+         data(nj07)
+         is(nj07,"rollcall")    ## TRUE
+         nj07                   ## print method for class rollcall
+         names(nj07)
+         names(nj07$vote.data)
+         table(nj07$vote.data$policyArea)
+         summary(nj07)          ## summary method
+         summary(nj07,verbose=TRUE)

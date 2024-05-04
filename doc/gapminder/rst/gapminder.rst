@@ -1,92 +1,94 @@
 .. container::
 
-   ========= ===============
-   gapminder R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Gapminder data
-      :name: gapminder
+      ========= ===============
+      gapminder R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Gapminder data
+         :name: gapminder-data
 
-   Excerpt of the Gapminder data on life expectancy, GDP per capita, and
-   population by country.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Excerpt of the Gapminder data on life expectancy, GDP per capita,
+      and population by country.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      gapminder
+      ::
 
-   .. rubric:: Format
-      :name: format
+         gapminder
 
-   The main data frame ``gapminder`` has 1704 rows and 6 variables:
+      .. rubric:: Format
+         :name: format
 
-   country
-      factor with 142 levels
+      The main data frame ``gapminder`` has 1704 rows and 6 variables:
 
-   continent
-      factor with 5 levels
+      country
+         factor with 142 levels
 
-   year
-      ranges from 1952 to 2007 in increments of 5 years
+      continent
+         factor with 5 levels
 
-   lifeExp
-      life expectancy at birth, in years
+      year
+         ranges from 1952 to 2007 in increments of 5 years
 
-   pop
-      population
+      lifeExp
+         life expectancy at birth, in years
 
-   gdpPercap
-      GDP per capita (US$, inflation-adjusted)
+      pop
+         population
 
-   The supplemental data frame ``gapminder_unfiltered`` was not filtered
-   on ``year`` or for complete data and has 3313 rows.
+      gdpPercap
+         GDP per capita (US$, inflation-adjusted)
 
-   .. rubric:: Source
-      :name: source
+      The supplemental data frame ``gapminder_unfiltered`` was not
+      filtered on ``year`` or for complete data and has 3313 rows.
 
-   https://www.gapminder.org/data/
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: See Also
-      :name: see-also
+      https://www.gapminder.org/data/
 
-   ``country_colors`` for a nice color scheme for the countries
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``country_colors`` for a nice color scheme for the countries
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      str(gapminder)
-      head(gapminder)
-      summary(gapminder)
-      table(gapminder$continent)
-      aggregate(lifeExp ~ continent, gapminder, median)
-      plot(lifeExp ~ year, gapminder, subset = country == "Cambodia", type = "b")
-      plot(lifeExp ~ gdpPercap, gapminder, subset = year == 2007, log = "x")
+      ::
 
-      if (require("dplyr")) {
-        gapminder %>%
-          filter(year == 2007) %>%
-          group_by(continent) %>%
-          summarise(lifeExp = median(lifeExp))
+         str(gapminder)
+         head(gapminder)
+         summary(gapminder)
+         table(gapminder$continent)
+         aggregate(lifeExp ~ continent, gapminder, median)
+         plot(lifeExp ~ year, gapminder, subset = country == "Cambodia", type = "b")
+         plot(lifeExp ~ gdpPercap, gapminder, subset = year == 2007, log = "x")
 
-        # how many unique countries does the data contain, by continent?
-        gapminder %>%
-          group_by(continent) %>%
-          summarize(n_obs = n(), n_countries = n_distinct(country))
+         if (require("dplyr")) {
+           gapminder %>%
+             filter(year == 2007) %>%
+             group_by(continent) %>%
+             summarise(lifeExp = median(lifeExp))
 
-        # by continent, which country experienced the sharpest 5-year drop in
-        # life expectancy and what was the drop?
-        gapminder %>%
-          group_by(continent, country) %>%
-          select(country, year, continent, lifeExp) %>%
-          mutate(le_delta = lifeExp - lag(lifeExp)) %>%
-          summarize(worst_le_delta = min(le_delta, na.rm = TRUE)) %>%
-          filter(min_rank(worst_le_delta) < 2) %>%
-          arrange(worst_le_delta)
-      }
+           # how many unique countries does the data contain, by continent?
+           gapminder %>%
+             group_by(continent) %>%
+             summarize(n_obs = n(), n_countries = n_distinct(country))
+
+           # by continent, which country experienced the sharpest 5-year drop in
+           # life expectancy and what was the drop?
+           gapminder %>%
+             group_by(continent, country) %>%
+             select(country, year, continent, lifeExp) %>%
+             mutate(le_delta = lifeExp - lag(lifeExp)) %>%
+             summarize(worst_le_delta = min(le_delta, na.rm = TRUE)) %>%
+             filter(min_rank(worst_le_delta) < 2) %>%
+             arrange(worst_le_delta)
+         }

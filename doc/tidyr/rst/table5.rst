@@ -1,49 +1,51 @@
 .. container::
 
-   ====== ===============
-   table1 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Example tabular representations
-      :name: table1
+      ====== ===============
+      table1 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Example tabular representations
+         :name: example-tabular-representations
 
-   Data sets that demonstrate multiple ways to layout the same tabular
-   data.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data sets that demonstrate multiple ways to layout the same
+      tabular data.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      table1
+      ::
 
-      table2
+         table1
 
-      table3
+         table2
 
-      table4a
+         table3
 
-      table4b
+         table4a
 
-      table5
+         table4b
 
-   .. rubric:: Details
-      :name: details
+         table5
 
-   ``table1``, ``table2``, ``table3``, ``table4a``, ``table4b``, and
-   ``table5`` all display the number of TB cases documented by the World
-   Health Organization in Afghanistan, Brazil, and China between 1999
-   and 2000. The data contains values associated with four variables
-   (country, year, cases, and population), but each table organizes the
-   values in a different layout.
+      .. rubric:: Details
+         :name: details
 
-   The data is a subset of the data contained in the World Health
-   Organization Global Tuberculosis Report
+      ``table1``, ``table2``, ``table3``, ``table4a``, ``table4b``, and
+      ``table5`` all display the number of TB cases documented by the
+      World Health Organization in Afghanistan, Brazil, and China
+      between 1999 and 2000. The data contains values associated with
+      four variables (country, year, cases, and population), but each
+      table organizes the values in a different layout.
 
-   .. rubric:: Source
-      :name: source
+      The data is a subset of the data contained in the World Health
+      Organization Global Tuberculosis Report
 
-   https://www.who.int/teams/global-tuberculosis-programme/data
+      .. rubric:: Source
+         :name: source
+
+      https://www.who.int/teams/global-tuberculosis-programme/data

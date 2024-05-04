@@ -1,228 +1,236 @@
 .. container::
 
-   ================= ===============
-   loans_full_schema R Documentation
-   ================= ===============
+   .. container::
 
-   .. rubric:: Loan data from Lending Club
-      :name: loans_full_schema
+      ================= ===============
+      loans_full_schema R Documentation
+      ================= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Loan data from Lending Club
+         :name: loan-data-from-lending-club
 
-   This data set represents thousands of loans made through the Lending
-   Club platform, which is a platform that allows individuals to lend to
-   other individuals. Of course, not all loans are created equal.
-   Someone who is a essentially a sure bet to pay back a loan will have
-   an easier time getting a loan with a low interest rate than someone
-   who appears to be riskier. And for people who are very risky? They
-   may not even get a loan offer, or they may not have accepted the loan
-   offer due to a high interest rate. It is important to keep that last
-   part in mind, since this data set only represents loans actually
-   made, i.e. do not mistake this data for loan applications!
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set represents thousands of loans made through the
+      Lending Club platform, which is a platform that allows individuals
+      to lend to other individuals. Of course, not all loans are created
+      equal. Someone who is a essentially a sure bet to pay back a loan
+      will have an easier time getting a loan with a low interest rate
+      than someone who appears to be riskier. And for people who are
+      very risky? They may not even get a loan offer, or they may not
+      have accepted the loan offer due to a high interest rate. It is
+      important to keep that last part in mind, since this data set only
+      represents loans actually made, i.e. do not mistake this data for
+      loan applications!
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      loans_full_schema
+      ::
 
-   .. rubric:: Format
-      :name: format
+         loans_full_schema
 
-   A data frame with 10,000 observations on the following 55 variables.
+      .. rubric:: Format
+         :name: format
 
-   emp_title
-      Job title.
+      A data frame with 10,000 observations on the following 55
+      variables.
 
-   emp_length
-      Number of years in the job, rounded down. If longer than 10 years,
-      then this is represented by the value ``10``.
+      emp_title
+         Job title.
 
-   state
-      Two-letter state code.
+      emp_length
+         Number of years in the job, rounded down. If longer than 10
+         years, then this is represented by the value ``10``.
 
-   homeownership
-      The ownership status of the applicant's residence.
+      state
+         Two-letter state code.
 
-   annual_income
-      Annual income.
+      homeownership
+         The ownership status of the applicant's residence.
 
-   verified_income
-      Type of verification of the applicant's income.
+      annual_income
+         Annual income.
 
-   debt_to_income
-      Debt-to-income ratio.
+      verified_income
+         Type of verification of the applicant's income.
 
-   annual_income_joint
-      If this is a joint application, then the annual income of the two
-      parties applying.
+      debt_to_income
+         Debt-to-income ratio.
 
-   verification_income_joint
-      Type of verification of the joint income.
+      annual_income_joint
+         If this is a joint application, then the annual income of the
+         two parties applying.
 
-   debt_to_income_joint
-      Debt-to-income ratio for the two parties.
+      verification_income_joint
+         Type of verification of the joint income.
 
-   delinq_2y
-      Delinquencies on lines of credit in the last 2 years.
+      debt_to_income_joint
+         Debt-to-income ratio for the two parties.
 
-   months_since_last_delinq
-      Months since the last delinquency.
+      delinq_2y
+         Delinquencies on lines of credit in the last 2 years.
 
-   earliest_credit_line
-      Year of the applicant's earliest line of credit
+      months_since_last_delinq
+         Months since the last delinquency.
 
-   inquiries_last_12m
-      Inquiries into the applicant's credit during the last 12 months.
+      earliest_credit_line
+         Year of the applicant's earliest line of credit
 
-   total_credit_lines
-      Total number of credit lines in this applicant's credit history.
+      inquiries_last_12m
+         Inquiries into the applicant's credit during the last 12
+         months.
 
-   open_credit_lines
-      Number of currently open lines of credit.
+      total_credit_lines
+         Total number of credit lines in this applicant's credit
+         history.
 
-   total_credit_limit
-      Total available credit, e.g. if only credit cards, then the total
-      of all the credit limits. This excludes a mortgage.
+      open_credit_lines
+         Number of currently open lines of credit.
 
-   total_credit_utilized
-      Total credit balance, excluding a mortgage.
+      total_credit_limit
+         Total available credit, e.g. if only credit cards, then the
+         total of all the credit limits. This excludes a mortgage.
 
-   num_collections_last_12m
-      Number of collections in the last 12 months. This excludes medical
-      collections.
+      total_credit_utilized
+         Total credit balance, excluding a mortgage.
 
-   num_historical_failed_to_pay
-      The number of derogatory public records, which roughly means the
-      number of times the applicant failed to pay.
+      num_collections_last_12m
+         Number of collections in the last 12 months. This excludes
+         medical collections.
 
-   months_since_90d_late
-      Months since the last time the applicant was 90 days late on a
-      payment.
+      num_historical_failed_to_pay
+         The number of derogatory public records, which roughly means
+         the number of times the applicant failed to pay.
 
-   current_accounts_delinq
-      Number of accounts where the applicant is currently delinquent.
+      months_since_90d_late
+         Months since the last time the applicant was 90 days late on a
+         payment.
 
-   total_collection_amount_ever
-      The total amount that the applicant has had against them in
-      collections.
+      current_accounts_delinq
+         Number of accounts where the applicant is currently delinquent.
 
-   current_installment_accounts
-      Number of installment accounts, which are (roughly) accounts with
-      a fixed payment amount and period. A typical example might be a
-      36-month car loan.
+      total_collection_amount_ever
+         The total amount that the applicant has had against them in
+         collections.
 
-   accounts_opened_24m
-      Number of new lines of credit opened in the last 24 months.
+      current_installment_accounts
+         Number of installment accounts, which are (roughly) accounts
+         with a fixed payment amount and period. A typical example might
+         be a 36-month car loan.
 
-   months_since_last_credit_inquiry
-      Number of months since the last credit inquiry on this applicant.
+      accounts_opened_24m
+         Number of new lines of credit opened in the last 24 months.
 
-   num_satisfactory_accounts
-      Number of satisfactory accounts.
+      months_since_last_credit_inquiry
+         Number of months since the last credit inquiry on this
+         applicant.
 
-   num_accounts_120d_past_due
-      Number of current accounts that are 120 days past due.
+      num_satisfactory_accounts
+         Number of satisfactory accounts.
 
-   num_accounts_30d_past_due
-      Number of current accounts that are 30 days past due.
+      num_accounts_120d_past_due
+         Number of current accounts that are 120 days past due.
 
-   num_active_debit_accounts
-      Number of currently active bank cards.
+      num_accounts_30d_past_due
+         Number of current accounts that are 30 days past due.
 
-   total_debit_limit
-      Total of all bank card limits.
+      num_active_debit_accounts
+         Number of currently active bank cards.
 
-   num_total_cc_accounts
-      Total number of credit card accounts in the applicant's history.
+      total_debit_limit
+         Total of all bank card limits.
 
-   num_open_cc_accounts
-      Total number of currently open credit card accounts.
+      num_total_cc_accounts
+         Total number of credit card accounts in the applicant's
+         history.
 
-   num_cc_carrying_balance
-      Number of credit cards that are carrying a balance.
+      num_open_cc_accounts
+         Total number of currently open credit card accounts.
 
-   num_mort_accounts
-      Number of mortgage accounts.
+      num_cc_carrying_balance
+         Number of credit cards that are carrying a balance.
 
-   account_never_delinq_percent
-      Percent of all lines of credit where the applicant was never
-      delinquent.
+      num_mort_accounts
+         Number of mortgage accounts.
 
-   tax_liens
-      a numeric vector
+      account_never_delinq_percent
+         Percent of all lines of credit where the applicant was never
+         delinquent.
 
-   public_record_bankrupt
-      Number of bankruptcies listed in the public record for this
-      applicant.
+      tax_liens
+         a numeric vector
 
-   loan_purpose
-      The category for the purpose of the loan.
+      public_record_bankrupt
+         Number of bankruptcies listed in the public record for this
+         applicant.
 
-   application_type
-      The type of application: either ``individual`` or ``joint``.
+      loan_purpose
+         The category for the purpose of the loan.
 
-   loan_amount
-      The amount of the loan the applicant received.
+      application_type
+         The type of application: either ``individual`` or ``joint``.
 
-   term
-      The number of months of the loan the applicant received.
+      loan_amount
+         The amount of the loan the applicant received.
 
-   interest_rate
-      Interest rate of the loan the applicant received.
+      term
+         The number of months of the loan the applicant received.
 
-   installment
-      Monthly payment for the loan the applicant received.
+      interest_rate
+         Interest rate of the loan the applicant received.
 
-   grade
-      Grade associated with the loan.
+      installment
+         Monthly payment for the loan the applicant received.
 
-   sub_grade
-      Detailed grade associated with the loan.
+      grade
+         Grade associated with the loan.
 
-   issue_month
-      Month the loan was issued.
+      sub_grade
+         Detailed grade associated with the loan.
 
-   loan_status
-      Status of the loan.
+      issue_month
+         Month the loan was issued.
 
-   initial_listing_status
-      Initial listing status of the loan. (I think this has to do with
-      whether the lender provided the entire loan or if the loan is
-      across multiple lenders.)
+      loan_status
+         Status of the loan.
 
-   disbursement_method
-      Dispersement method of the loan.
+      initial_listing_status
+         Initial listing status of the loan. (I think this has to do
+         with whether the lender provided the entire loan or if the loan
+         is across multiple lenders.)
 
-   balance
-      Current balance on the loan.
+      disbursement_method
+         Dispersement method of the loan.
 
-   paid_total
-      Total that has been paid on the loan by the applicant.
+      balance
+         Current balance on the loan.
 
-   paid_principal
-      The difference between the original loan amount and the current
-      balance on the loan.
+      paid_total
+         Total that has been paid on the loan by the applicant.
 
-   paid_interest
-      The amount of interest paid so far by the applicant.
+      paid_principal
+         The difference between the original loan amount and the current
+         balance on the loan.
 
-   paid_late_fees
-      Late fees paid by the applicant.
+      paid_interest
+         The amount of interest paid so far by the applicant.
 
-   .. rubric:: Source
-      :name: source
+      paid_late_fees
+         Late fees paid by the applicant.
 
-   This data comes from Lending Club
-   (https://www.lendingclub.com/info/statistics.action), which provides
-   a very large, open set of data on the people who received loans
-   through their platform.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      This data comes from Lending Club
+      (https://www.lendingclub.com/info/statistics.action), which
+      provides a very large, open set of data on the people who received
+      loans through their platform.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      loans_full_schema
+      ::
+
+         loans_full_schema

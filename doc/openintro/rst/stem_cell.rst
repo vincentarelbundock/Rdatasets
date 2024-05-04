@@ -1,51 +1,53 @@
 .. container::
 
-   ========= ===============
-   stem_cell R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Embryonic stem cells to treat heart attack (in sheep)
-      :name: stem_cell
+      ========= ===============
+      stem_cell R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Embryonic stem cells to treat heart attack (in sheep)
+         :name: embryonic-stem-cells-to-treat-heart-attack-in-sheep
 
-   Does treatment using embryonic stem cells (ESCs) help improve heart
-   function following a heart attack? Each sheep in the study was
-   randomly assigned to the ESC or control group, and the change in
-   their hearts' pumping capacity was measured in the study. A positive
-   value corresponds to increased pumping capacity, which generally
-   suggests a stronger recovery.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Does treatment using embryonic stem cells (ESCs) help improve
+      heart function following a heart attack? Each sheep in the study
+      was randomly assigned to the ESC or control group, and the change
+      in their hearts' pumping capacity was measured in the study. A
+      positive value corresponds to increased pumping capacity, which
+      generally suggests a stronger recovery.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      stem_cell
+      ::
 
-   .. rubric:: Format
-      :name: format
+         stem_cell
 
-   A data frame with 18 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   trmt
-      a factor with levels ``ctrl`` ``esc``
+      A data frame with 18 observations on the following 3 variables.
 
-   before
-      a numeric vector
+      trmt
+         a factor with levels ``ctrl`` ``esc``
 
-   after
-      a numeric vector
+      before
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      after
+         a numeric vector
 
-   https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(05)67380-1/fulltext
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(05)67380-1/fulltext
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      stem_cell
+      ::
+
+         stem_cell

@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Countries</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Countries'>Countries</h2>
+<h2>Countries</h2>
 
 <h3>Description</h3>
 
@@ -36,16 +36,14 @@ package to facilitate conversation between the two.
 <p>A data frame with 258 observations on the following variables.
 </p>
 
-<ul>
-<li><p><code>worldmap</code> region name http://mappinghacks.com/ data sets
-</p>
-</li>
-<li><p><code>gapminder</code> country name in Gapminder data sets
-</p>
-</li>
-<li><p><code>maps</code> region name in <code>maps</code> data sets
-</p>
-</li></ul>
+<dl>
+<dt><code>maptools</code></dt><dd><p>region name http://mappinghacks.com/ data sets</p>
+</dd>
+<dt><code>gapminder</code></dt><dd><p>country name in Gapminder data sets</p>
+</dd>
+<dt><code>maps</code></dt><dd><p>region name in <code>maps</code> data sets</p>
+</dd>
+</dl>
 
 
 
@@ -68,6 +66,7 @@ subset(Countries, is.na(gapminder))    # Things from maps with no Gapminder equi
 subset(Countries, is.na(maps))         # Things from Gapminder with no maps equivalent
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

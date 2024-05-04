@@ -1,56 +1,59 @@
 .. container::
 
-   ====== ===============
-   cherry R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Summary information for 31 cherry trees
-      :name: cherry
+      ====== ===============
+      cherry R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Summary information for 31 cherry trees
+         :name: summary-information-for-31-cherry-trees
 
-   Researchers wanting to understand the relationship between these
-   variables for black cherry trees collected data from 31 trees in the
-   Allegheny National Forest, Pennsylvania.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Researchers wanting to understand the relationship between these
+      variables for black cherry trees collected data from 31 trees in
+      the Allegheny National Forest, Pennsylvania.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      cherry
+      ::
 
-   .. rubric:: Format
-      :name: format
+         cherry
 
-   A data frame with 31 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   diam
-      diameter in inches (at 54 inches above ground)
+      A data frame with 31 observations on the following 3 variables.
 
-   height
-      height is measured in feet
+      diam
+         diameter in inches (at 54 inches above ground)
 
-   volume
-      volume in cubic feet
+      height
+         height is measured in feet
 
-   .. rubric:: Source
-      :name: source
+      volume
+         volume in cubic feet
 
-   D.J. Hand. A handbook of small data sets. Chapman & Hall/CRC, 1994.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      D.J. Hand. A handbook of small data sets. Chapman & Hall/CRC,
+      1994.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
-      library(broom)
+      ::
 
-      ggplot(cherry, aes(x = diam, y = volume)) +
-        geom_point() +
-        geom_smooth(method = "lm")
+         library(ggplot2)
+         library(broom)
 
-      mod <- lm(volume ~ diam + height, cherry)
-      tidy(mod)
+         ggplot(cherry, aes(x = diam, y = volume)) +
+           geom_point() +
+           geom_smooth(method = "lm")
+
+         mod <- lm(volume ~ diam + height, cherry)
+         tidy(mod)

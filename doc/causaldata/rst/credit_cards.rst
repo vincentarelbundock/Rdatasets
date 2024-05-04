@@ -1,56 +1,58 @@
 .. container::
 
-   ============ ===============
-   credit_cards R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Data on Taiwanese Credit Card Holders
-      :name: credit_cards
+      ============ ===============
+      credit_cards R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data on Taiwanese Credit Card Holders
+         :name: data-on-taiwanese-credit-card-holders
 
-   Data from the UCI Machine Learning Repository on Taiwanese credit
-   card holders, the amount of their credit card bill, and whether their
-   payment was late.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from the UCI Machine Learning Repository on Taiwanese credit
+      card holders, the amount of their credit card bill, and whether
+      their payment was late.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      credit_cards
+      ::
 
-   .. rubric:: Format
-      :name: format
+         credit_cards
 
-   A data frame with 30000 rows and 4 variables
+      .. rubric:: Format
+         :name: format
 
-   LateSept
-      Credit card payment is late in Sept 2005
+      A data frame with 30000 rows and 4 variables
 
-   LateApril
-      Credit card payment is late in April 2005
+      LateSept
+         Credit card payment is late in Sept 2005
 
-   BillApril
-      Total bill in April 2005 in thousands of New Taiwan Dollars
+      LateApril
+         Credit card payment is late in April 2005
 
-   AGE
-      Age of card-holder
+      BillApril
+         Total bill in April 2005 in thousands of New Taiwan Dollars
 
-   .. rubric:: Details
-      :name: details
+      AGE
+         Age of card-holder
 
-   This data is used in the *Matching* chapter of *The Effect* by
-   Huntington-Klein.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This data is used in the *Matching* chapter of *The Effect* by
+      Huntington-Klein.
 
-   Lichman, Moshe. 2013. UCI Machine Learning Repository.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Lichman, Moshe. 2013. UCI Machine Learning Repository.
 
-   Huntington-Klein. 2021. The Effect: An Introduction to Research
-   Design and Causality. https://theeffectbook.net.
+      .. rubric:: References
+         :name: references
+
+      Huntington-Klein. 2021. The Effect: An Introduction to Research
+      Design and Causality. https://theeffectbook.net.

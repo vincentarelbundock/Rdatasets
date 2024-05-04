@@ -1,45 +1,47 @@
 .. container::
 
-   ========= ===============
-   socialexp R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Social experiment
-      :name: socialexp
+      ========= ===============
+      socialexp R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Social experiment
+         :name: social-experiment
 
-   A "social experiment" conducted by a TV program questioned what
-   people do when they see a very obviously bruised woman getting picked
-   on by her boyfriend. On two different occasions at the same
-   restaurant, the same couple was depicted. In one scenario the woman
-   was dressed "provocatively" and in the other scenario the woman was
-   dressed "conservatively". The table below shows how many restaurant
-   diners were present under each scenario, and whether or not they
-   intervened.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A "social experiment" conducted by a TV program questioned what
+      people do when they see a very obviously bruised woman getting
+      picked on by her boyfriend. On two different occasions at the same
+      restaurant, the same couple was depicted. In one scenario the
+      woman was dressed "provocatively" and in the other scenario the
+      woman was dressed "conservatively". The table below shows how many
+      restaurant diners were present under each scenario, and whether or
+      not they intervened.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      socialexp
+      ::
 
-   .. rubric:: Format
-      :name: format
+         socialexp
 
-   A data frame with 45 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   intervene
-      Whether other diners intervened or not.
+      A data frame with 45 observations on the following 2 variables.
 
-   scenario
-      How the woman was dressed.
+      intervene
+         Whether other diners intervened or not.
 
-   .. rubric:: Examples
-      :name: examples
+      scenario
+         How the woman was dressed.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      table(socialexp)
+      ::
+
+         table(socialexp)

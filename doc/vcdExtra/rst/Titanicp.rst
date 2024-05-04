@@ -1,81 +1,83 @@
 .. container::
 
-   ======== ===============
-   Titanicp R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Passengers on the Titanic
-      :name: Titanicp
+      ======== ===============
+      Titanicp R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Passengers on the Titanic
+         :name: passengers-on-the-titanic
 
-   Data on passengers on the RMS Titanic, excluding the Crew and some
-   individual identifier variables.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on passengers on the RMS Titanic, excluding the Crew and some
+      individual identifier variables.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Titanicp)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Titanicp)
 
-   A data frame with 1309 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``pclass``
-      a factor with levels ``1st`` ``2nd`` ``3rd``
+      A data frame with 1309 observations on the following 6 variables.
 
-   ``survived``
-      a factor with levels ``died`` ``survived``
+      ``pclass``
+         a factor with levels ``1st`` ``2nd`` ``3rd``
 
-   ``sex``
-      a factor with levels ``female`` ``male``
+      ``survived``
+         a factor with levels ``died`` ``survived``
 
-   ``age``
-      passenger age in years (or fractions of a year, for children), a
-      numeric vector; age is missing for 263 of the passengers
+      ``sex``
+         a factor with levels ``female`` ``male``
 
-   ``sibsp``
-      number of siblings or spouses aboard, integer: ``0:8``
+      ``age``
+         passenger age in years (or fractions of a year, for children),
+         a numeric vector; age is missing for 263 of the passengers
 
-   ``parch``
-      number of parents or children aboard, integer: ``0:6``
+      ``sibsp``
+         number of siblings or spouses aboard, integer: ``0:8``
 
-   .. rubric:: Details
-      :name: details
+      ``parch``
+         number of parents or children aboard, integer: ``0:6``
 
-   There are a number of related versions of the Titanic data, in
-   various formats. This version was derived from ``ptitanic`` in the
-   rpart.plot package, modifying it to remove the ``Class 'labelled'``
-   attributes for some variables (inherited from Frank Harrell's
-   ``titanic3`` version) which caused problems with some applications,
-   notably ``ggplot2``.
+      .. rubric:: Details
+         :name: details
 
-   Other versions:
+      There are a number of related versions of the Titanic data, in
+      various formats. This version was derived from ``ptitanic`` in the
+      rpart.plot package, modifying it to remove the
+      ``Class 'labelled'`` attributes for some variables (inherited from
+      Frank Harrell's ``titanic3`` version) which caused problems with
+      some applications, notably ``ggplot2``.
 
-   ``Titanic`` is the 4-way frequency table of all 2201 people aboard
-   the Titanic, including passengers and crew.
+      Other versions:
 
-   .. rubric:: Source
-      :name: source
+      ``Titanic`` is the 4-way frequency table of all 2201 people aboard
+      the Titanic, including passengers and crew.
 
-   The original R source for this dataset was compiled by Frank Harrell
-   and Robert Dawson:
-   https://biostat.app.vumc.org/wiki/pub/Main/DataSets/titanic.html,
-   described in more detail in
-   https://biostat.app.vumc.org/wiki/pub/Main/DataSets/titanic3info.txt
+      .. rubric:: Source
+         :name: source
 
-   For this version of the Titanic data, passenger details were deleted,
-   survived was cast as a factor, and the name changed to ``Titanicp``
-   to minimize confusion with other versions.
+      The original R source for this dataset was compiled by Frank
+      Harrell and Robert Dawson:
+      https://biostat.app.vumc.org/wiki/pub/Main/DataSets/titanic.html,
+      described in more detail in
+      https://biostat.app.vumc.org/wiki/pub/Main/DataSets/titanic3info.txt
 
-   .. rubric:: Examples
-      :name: examples
+      For this version of the Titanic data, passenger details were
+      deleted, survived was cast as a factor, and the name changed to
+      ``Titanicp`` to minimize confusion with other versions.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Titanicp)
-      ## maybe str(Titanicp) ; plot(Titanicp) ...
+      ::
+
+         data(Titanicp)
+         ## maybe str(Titanicp) ; plot(Titanicp) ...

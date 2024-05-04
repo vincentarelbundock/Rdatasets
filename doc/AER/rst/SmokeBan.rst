@@ -1,93 +1,95 @@
 .. container::
 
-   ======== ===============
-   SmokeBan R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Do Workplace Smoking Bans Reduce Smoking?
-      :name: SmokeBan
+      ======== ===============
+      SmokeBan R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Do Workplace Smoking Bans Reduce Smoking?
+         :name: do-workplace-smoking-bans-reduce-smoking
 
-   Estimation of the effect of workplace smoking bans on smoking of
-   indoor workers.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Estimation of the effect of workplace smoking bans on smoking of
+      indoor workers.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("SmokeBan")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("SmokeBan")
 
-   A data frame containing 10,000 observations on 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   smoker
-      factor. Is the individual a current smoker?
+      A data frame containing 10,000 observations on 7 variables.
 
-   ban
-      factor. Is there a work area smoking ban?
+      smoker
+         factor. Is the individual a current smoker?
 
-   age
-      age in years.
+      ban
+         factor. Is there a work area smoking ban?
 
-   education
-      factor indicating highest education level attained: high school
-      (hs) drop out, high school graduate, some college, college
-      graduate, master's degree (or higher).
+      age
+         age in years.
 
-   afam
-      factor. Is the individual African-American?
+      education
+         factor indicating highest education level attained: high school
+         (hs) drop out, high school graduate, some college, college
+         graduate, master's degree (or higher).
 
-   hispanic
-      factor. Is the individual Hispanic?
+      afam
+         factor. Is the individual African-American?
 
-   gender
-      factor indicating gender.
+      hispanic
+         factor. Is the individual Hispanic?
 
-   .. rubric:: Details
-      :name: details
+      gender
+         factor indicating gender.
 
-   ``SmokeBank`` is a cross-sectional data set with observations on
-   10,000 indoor workers, which is a subset of a 18,090-observation data
-   set collected as part of the National Health Interview Survey in 1991
-   and then again (with different respondents) in 1993. The data set
-   contains information on whether individuals were, or were not,
-   subject to a workplace smoking ban, whether or not the individuals
-   smoked and other individual characteristics.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      ``SmokeBank`` is a cross-sectional data set with observations on
+      10,000 indoor workers, which is a subset of a 18,090-observation
+      data set collected as part of the National Health Interview Survey
+      in 1991 and then again (with different respondents) in 1993. The
+      data set contains information on whether individuals were, or were
+      not, subject to a workplace smoking ban, whether or not the
+      individuals smoked and other individual characteristics.
 
-   Online complements to Stock and Watson (2007).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Stock and Watson (2007).
 
-   Evans, W. N., Farrelly, M.C., and Montgomery, E. (1999). Do Workplace
-   Smoking Bans Reduce Smoking? *American Economic Review*, **89**,
-   728–747.
+      .. rubric:: References
+         :name: references
 
-   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
-   2nd ed. Boston: Addison Wesley.
+      Evans, W. N., Farrelly, M.C., and Montgomery, E. (1999). Do
+      Workplace Smoking Bans Reduce Smoking? *American Economic Review*,
+      **89**, 728–747.
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, J.H. and Watson, M.W. (2007). *Introduction to
+      Econometrics*, 2nd ed. Boston: Addison Wesley.
 
-   ``StockWatson2007``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``StockWatson2007``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("SmokeBan")
+      ::
 
-      ## proportion of non-smokers increases with education
-      plot(smoker ~ education, data = SmokeBan)
+         data("SmokeBan")
 
-      ## proportion of non-smokers constant over age
-      plot(smoker ~ age, data = SmokeBan)
+         ## proportion of non-smokers increases with education
+         plot(smoker ~ education, data = SmokeBan)
+
+         ## proportion of non-smokers constant over age
+         plot(smoker ~ age, data = SmokeBan)

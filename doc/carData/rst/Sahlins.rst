@@ -1,43 +1,46 @@
 .. container::
 
-   ======= ===============
-   Sahlins R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Agricultural Production in Mazulu Village
-      :name: Sahlins
+      ======= ===============
+      Sahlins R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Agricultural Production in Mazulu Village
+         :name: agricultural-production-in-mazulu-village
 
-   The ``Sahlins`` data frame has 20 rows and 2 columns. The
-   observations are households in a Central African village.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Sahlins`` data frame has 20 rows and 2 columns. The
+      observations are households in a Central African village.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Sahlins
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Sahlins
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   consumers
-      Consumers/Gardener, ratio of consumers to productive individuals.
+      This data frame contains the following columns:
 
-   acres
-      Acres/Gardener, amount of land cultivated per gardener.
+      consumers
+         Consumers/Gardener, ratio of consumers to productive
+         individuals.
 
-   .. rubric:: Source
-      :name: source
+      acres
+         Acres/Gardener, amount of land cultivated per gardener.
 
-   Sahlins, M. (1972) *Stone Age Economics.* Aldine [Table 3.1].
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Sahlins, M. (1972) *Stone Age Economics.* Aldine [Table 3.1].
 
-   Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
-   Models*, Third Edition. Sage.
+      .. rubric:: References
+         :name: references
+
+      Fox, J. (2016) *Applied Regression Analysis and Generalized Linear
+      Models*, Third Edition. Sage.

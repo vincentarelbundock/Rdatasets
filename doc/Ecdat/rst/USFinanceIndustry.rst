@@ -1,116 +1,119 @@
 .. container::
 
-   ================= ===============
-   USFinanceIndustry R Documentation
-   ================= ===============
+   .. container::
 
-   .. rubric:: US Finance Industry Profits
-      :name: USFinanceIndustry
+      ================= ===============
+      USFinanceIndustry R Documentation
+      ================= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: US Finance Industry Profits
+         :name: us-finance-industry-profits
 
-   A ``data.frame`` giving the profits of the finance industry in the
-   United States as a proportion of total corporate domestic profits.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A ``data.frame`` giving the profits of the finance industry in the
+      United States as a proportion of total corporate domestic profits.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(USFinanceIndustry)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(USFinanceIndustry)
 
-   A ``data.frame`` with the following columns:
+      .. rubric:: Format
+         :name: format
 
-   year
-      integer year starting with 1929
+      A ``data.frame`` with the following columns:
 
-   CorporateProfitsAdj
-      Corporate profits with inventory valuation and capital consumption
-      adjustments in billions of current (not adjusted for inflation) US
-      dollars
+      year
+         integer year starting with 1929
 
-   Domestic
-      Domestic industries profits in billions
+      CorporateProfitsAdj
+         Corporate profits with inventory valuation and capital
+         consumption adjustments in billions of current (not adjusted
+         for inflation) US dollars
 
-   Financial
-      Financial industries profits in billions
+      Domestic
+         Domestic industries profits in billions
 
-   Nonfinancial
-      Nonfinancial industries profits in billions
+      Financial
+         Financial industries profits in billions
 
-   restOfWorld
-      Profits of the "Rest of the world" in their contribution to US
-      Gross Domestic Product in billions
+      Nonfinancial
+         Nonfinancial industries profits in billions
 
-   FinanceProportion
-      = Financial/Domestic
+      restOfWorld
+         Profits of the "Rest of the world" in their contribution to US
+         Gross Domestic Product in billions
 
-   .. rubric:: Details
-      :name: details
+      FinanceProportion
+         = Financial/Domestic
 
-   This is extracted from Table 6.16 of the National Income and Product
-   Accounts (NIPA) compiled by the Bureau of Economic Analysis of the
-   United States federal government. This table comes in four parts, A
-   (1929-1947), B (1948-1987), C (1987-2000), and D (1998-present).
-   Parts A, B, C and D contain different numbers of data elements, but
-   the first five have the same names and are the only ones used here.
-   The overlap between parts C and D (1998-2000) have a root mean square
-   relative difference of 0.7 percent; there were no differences between
-   the numbers in the overlap period between parts B and C (1987).
+      .. rubric:: Details
+         :name: details
 
-   This was created using the following command:
+      This is extracted from Table 6.16 of the National Income and
+      Product Accounts (NIPA) compiled by the Bureau of Economic
+      Analysis of the United States federal government. This table comes
+      in four parts, A (1929-1947), B (1948-1987), C (1987-2000), and D
+      (1998-present). Parts A, B, C and D contain different numbers of
+      data elements, but the first five have the same names and are the
+      only ones used here. The overlap between parts C and D (1998-2000)
+      have a root mean square relative difference of 0.7 percent; there
+      were no differences between the numbers in the overlap period
+      between parts B and C (1987).
 
-   ``demoDir <- system.file('demoFiles', package='Ecdat')``
-   ``demoCsv <- dir(demoDir, pattern='csv$', full.names=TRUE)``
+      This was created using the following command:
 
-   ``nipa6.16 <- readNIPA(demoCsv)``
-   ``USFinanceIndustry <- as.data.frame(nipa6.16)``
-   ``names(USFinanceIndustry) <- c('year', 'CorporateProfitsAdj', 'Domestic', 'Financial', 'Nonfinancial', 'restOfWorld')``
-   ``USFinanceIndustry$FinanceProportion <- with(USFinanceIndustry, Financial/Domestic)``
+      ``demoDir <- system.file('demoFiles', package='Ecdat')``
+      ``demoCsv <- dir(demoDir, pattern='csv$', full.names=TRUE)``
 
-   .. rubric:: Source
-      :name: source
+      ``nipa6.16 <- readNIPA(demoCsv)``
+      ``USFinanceIndustry <- as.data.frame(nipa6.16)``
+      ``names(USFinanceIndustry) <- c('year',      'CorporateProfitsAdj', 'Domestic', 'Financial',      'Nonfinancial', 'restOfWorld')``
+      ``USFinanceIndustry$FinanceProportion <-      with(USFinanceIndustry, Financial/Domestic)``
 
-   https://www.bea.gov: Under "U.S. Economic Accounts", first select
-   "Corporate Profits" under "National". Then next to "Interactive
-   Tables", select, "National Income and Product Accounts Tables". From
-   there, select "Begin using the data...". Under "Section 6 - income
-   and employment by industry", select each of the tables starting
-   "Table 6.16". As of February 2013, there were 4 such tables
-   available: Table 6.16A, 6.16B, 6.16C and 6.16D. Each of the last
-   three are available in annual and quarterly summaries. The
-   ``USFinanceIndustry`` data combined the first 4 rows of the 4 annual
-   summary tables.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: See Also
-      :name: see-also
+      https://www.bea.gov: Under "U.S. Economic Accounts", first select
+      "Corporate Profits" under "National". Then next to "Interactive
+      Tables", select, "National Income and Product Accounts Tables".
+      From there, select "Begin using the data...". Under "Section 6 -
+      income and employment by industry", select each of the tables
+      starting "Table 6.16". As of February 2013, there were 4 such
+      tables available: Table 6.16A, 6.16B, 6.16C and 6.16D. Each of the
+      last three are available in annual and quarterly summaries. The
+      ``USFinanceIndustry`` data combined the first 4 rows of the 4
+      annual summary tables.
 
-   ``readNIPA``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``readNIPA``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(USFinanceIndustry)
-      plot(FinanceProportion~year, USFinanceIndustry, type='b',
-           ylim=c(0, max(FinanceProportion, na.rm=TRUE)),
-           xlab='', ylab='', las=1, cex.axis=2, bty='n', lwd=2,
-           col='blue')
+      ::
 
-      # Write to a file for Wikimedia Commons
-      ## Not run: 
-      if(FALSE){
-        svg('USFinanceIndustry.svg')
-        plot(FinanceProportion~year, USFinanceIndustry, type='b',
-           ylim=c(0, max(FinanceProportion, na.rm=TRUE)),
-           xlab='', ylab='', las=1, cex.axis=2, bty='n', lwd=2,
-           col='blue')
-        dev.off()
-        }
-        
-      ## End(Not run)
+         data(USFinanceIndustry)
+         plot(FinanceProportion~year, USFinanceIndustry, type='b',
+              ylim=c(0, max(FinanceProportion, na.rm=TRUE)),
+              xlab='', ylab='', las=1, cex.axis=2, bty='n', lwd=2,
+              col='blue')
+
+         # Write to a file for Wikimedia Commons
+         ## Not run: 
+         if(FALSE){
+           svg('USFinanceIndustry.svg')
+           plot(FinanceProportion~year, USFinanceIndustry, type='b',
+              ylim=c(0, max(FinanceProportion, na.rm=TRUE)),
+              xlab='', ylab='', las=1, cex.axis=2, bty='n', lwd=2,
+              col='blue')
+           dev.off()
+           }
+           
+         ## End(Not run)

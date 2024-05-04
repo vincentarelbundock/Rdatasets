@@ -1,70 +1,73 @@
 .. container::
 
-   ============ ===============
-   hotspots2006 R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Hawaian island chain hotspot Argon-Argon ages
-      :name: hotspots2006
+      ============ ===============
+      hotspots2006 R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Hawaian island chain hotspot Argon-Argon ages
+         :name: hawaian-island-chain-hotspot-argon-argon-ages
 
-   Ar-Ar Ages (millions of years) and distances (km) from Kilauea along
-   the trend of the chain of Hawaian volcanic islands and other
-   seamounts that are believed to have been created by a moving "hot
-   spot".
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Ar-Ar Ages (millions of years) and distances (km) from Kilauea
+      along the trend of the chain of Hawaian volcanic islands and other
+      seamounts that are believed to have been created by a moving "hot
+      spot".
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(hotspots2006)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(hotspots2006)
 
-   A data frame with 10 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``age``
-      Ar-Ar age
+      A data frame with 10 observations on the following 6 variables.
 
-   ``CI95lim``
-      Measurement error; 95% CI
+      ``age``
+         Ar-Ar age
 
-   ``geoErr``
-      Geological Uncertainty
+      ``CI95lim``
+         Measurement error; 95% CI
 
-   ``totplus``
-      Total uncertainty (+)
+      ``geoErr``
+         Geological Uncertainty
 
-   ``totminus``
-      Total uncertainty (-)
+      ``totplus``
+         Total uncertainty (+)
 
-   ``distance``
-      Distance in kilometers
+      ``totminus``
+         Total uncertainty (-)
 
-   .. rubric:: Details
-      :name: details
+      ``distance``
+         Distance in kilometers
 
-   Note that measurement error is small relative to geological
-   uncertainty. Geological uncertainty arises because lavas are likely
-   to have erupted, over a period of up to 2 million years, somewhat
-   after passage over the hot spot's centre. Dredging or drilling will
-   in general have accessed larvas from the younger half of this
-   interval. Hence the asymmetry in the geological uncertainty.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Note that measurement error is small relative to geological
+      uncertainty. Geological uncertainty arises because lavas are
+      likely to have erupted, over a period of up to 2 million years,
+      somewhat after passage over the hot spot's centre. Dredging or
+      drilling will in general have accessed larvas from the younger
+      half of this interval. Hence the asymmetry in the geological
+      uncertainty.
 
-   Warren D. Sharp and David A. Clague, 50-Ma initiation of
-   Hawaiian-Emperor bend records major change in Pacific Plate motion.
-   Science 313: 1281-1284 (2006).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Warren D. Sharp and David A. Clague, 50-Ma initiation of
+      Hawaiian-Emperor bend records major change in Pacific Plate
+      motion. Science 313: 1281-1284 (2006).
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(hotspots2006)
+      ::
+
+         data(hotspots2006)

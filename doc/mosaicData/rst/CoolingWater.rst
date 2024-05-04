@@ -1,53 +1,57 @@
 .. container::
 
-   ============ ===============
-   CoolingWater R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: CoolingWater
-      :name: CoolingWater
+      ============ ===============
+      CoolingWater R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: CoolingWater
+         :name: coolingwater
 
-   Temperature of a mug of water as it cools
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Temperature of a mug of water as it cools
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(CoolingWater)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(CoolingWater)
 
-   A data frame with 222 observations of the following variables.
+      .. rubric:: Format
+         :name: format
 
-   -  ``time`` time in minutes
+      A data frame with 222 observations of the following variables.
 
-   -  ``temp`` temperature in Celsius
+      ``time``
+         time in minutes
 
-   .. rubric:: Details
-      :name: details
+      ``temp``
+         temperature in Celsius
 
-   The water was poured into a mug and a temperature probe inserted into
-   the water with a few seconds of the pour.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The water was poured into a mug and a temperature probe inserted
+      into the water with a few seconds of the pour.
 
-   These data were collected Stan Wagon to help his mathematical
-   modeling students explore Newton's Law of Cooling and the ways that
-   the law is really only an approximation. More about Stan:
-   http://stanwagon.com.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      These data were collected Stan Wagon to help his mathematical
+      modeling students explore Newton's Law of Cooling and the ways
+      that the law is really only an approximation. More about Stan:
+      http://stanwagon.com.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(CoolingWater)
-      if (require(ggformula)) {
-        gf_point(temp ~ time, data = CoolingWater, alpha = 0.5)
-      }
+      ::
+
+         data(CoolingWater)
+         if (require(ggformula)) {
+           gf_point(temp ~ time, data = CoolingWater, alpha = 0.5)
+         }

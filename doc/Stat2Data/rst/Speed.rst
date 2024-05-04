@@ -1,45 +1,47 @@
 .. container::
 
-   ===== ===============
-   Speed R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Highway Fatality Rates (Yearly)
-      :name: Speed
+      ===== ===============
+      Speed R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Highway Fatality Rates (Yearly)
+         :name: highway-fatality-rates-yearly
 
-   Highway fatality rates 1987-2007
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Highway fatality rates 1987-2007
 
-   A dataset with 21 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   +------------------+--------------------------------------------------+
-   | ``Year``         | Year (1987-2007)                                 |
-   +------------------+--------------------------------------------------+
-   | ``FatalityRate`` | Number of fatalities on interstate highways (per |
-   |                  | 100 million vehicle-miles)                       |
-   +------------------+--------------------------------------------------+
-   | ``StateControl`` | ``0``\ =1987-1994 or ``1``\ =1995-2007           |
-   +------------------+--------------------------------------------------+
-   |                  |                                                  |
-   +------------------+--------------------------------------------------+
+      A dataset with 21 observations on the following 3 variables.
 
-   .. rubric:: Details
-      :name: details
+      +------------------+--------------------------------------------------+
+      | ``Year``         | Year (1987-2007)                                 |
+      +------------------+--------------------------------------------------+
+      | ``FatalityRate`` | Number of fatalities on interstate highways (per |
+      |                  | 100 million vehicle-miles)                       |
+      +------------------+--------------------------------------------------+
+      | ``StateControl`` | ``0``\ =1987-1994 or ``1``\ =1995-2007           |
+      +------------------+--------------------------------------------------+
+      |                  |                                                  |
+      +------------------+--------------------------------------------------+
 
-   In 1987 the federal government allowed the speed limit on interstate
-   highways to be 65 mph in most areas. In 1995 federal restrictions
-   were eliminated, so that states assumed control of setting speed
-   limits on interstate highways. This data set compares fatality rates
-   for years before and after the states assumed control for highway
-   speed limits.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      In 1987 the federal government allowed the speed limit on
+      interstate highways to be 65 mph in most areas. In 1995 federal
+      restrictions were eliminated, so that states assumed control of
+      setting speed limits on interstate highways. This data set
+      compares fatality rates for years before and after the states
+      assumed control for highway speed limits.
 
-   | Data from the National Highway Safety Administration website at
-   | http://www-fars.nhtsa.dot.gov/Main/index.aspx
+      .. rubric:: Source
+         :name: source
+
+      | Data from the National Highway Safety Administration website at
+      | http://www-fars.nhtsa.dot.gov/Main/index.aspx

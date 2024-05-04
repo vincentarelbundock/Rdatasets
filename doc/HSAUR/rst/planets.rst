@@ -1,62 +1,66 @@
 .. container::
 
-   ======= ===============
-   planets R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Exoplanets Data
-      :name: planets
+      ======= ===============
+      planets R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Exoplanets Data
+         :name: exoplanets-data
 
-   Data on planets outside the Solar System.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data on planets outside the Solar System.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("planets")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("planets")
 
-   A data frame with 101 observations from 101 exoplanets on the
-   following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   mass
-      Jupiter mass of the planet.
+      A data frame with 101 observations from 101 exoplanets on the
+      following 3 variables.
 
-   period
-      period in earth days.
+      mass
+         Jupiter mass of the planet.
 
-   eccen
-      the radial eccentricity of the planet.
+      period
+         period in earth days.
 
-   .. rubric:: Details
-      :name: details
+      eccen
+         the radial eccentricity of the planet.
 
-   From the properties of the exoplanets found up to now it appears that
-   the theory of planetary development constructed for the planets of
-   the Solar System may need to be reformulated. The exoplanets are not
-   at all like the nine local planets that we know so well. A first step
-   in the process of understanding the exoplanets might be to try to
-   classify them with respect to their known properties.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      From the properties of the exoplanets found up to now it appears
+      that the theory of planetary development constructed for the
+      planets of the Solar System may need to be reformulated. The
+      exoplanets are not at all like the nine local planets that we know
+      so well. A first step in the process of understanding the
+      exoplanets might be to try to classify them with respect to their
+      known properties.
 
-   M. Mayor and P. Frei (2003). *New Worlds in the Cosmos: The Discovery
-   of Exoplanets*. Cambridge University Press, Cambridge, UK.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      M. Mayor and P. Frei (2003). *New Worlds in the Cosmos: The
+      Discovery of Exoplanets*. Cambridge University Press, Cambridge,
+      UK.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("planets", package = "HSAUR")
-        require("scatterplot3d")
-        scatterplot3d(log(planets$mass), log(planets$period), log(planets$eccen), 
-                      type = "h", highlight.3d = TRUE,  angle = 55, 
-                      scale.y = 0.7, pch = 16)
+      ::
+
+           data("planets", package = "HSAUR")
+           require("scatterplot3d")
+           scatterplot3d(log(planets$mass), log(planets$period), log(planets$eccen), 
+                         type = "h", highlight.3d = TRUE,  angle = 55, 
+                         scale.y = 0.7, pch = 16)

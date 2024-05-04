@@ -1,87 +1,89 @@
 .. container::
 
-   ===== ===============
-   wage2 R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: wage2
-      :name: wage2
+      ===== ===============
+      wage2 R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: wage2
+         :name: wage2
 
-   Wooldridge Source: M. Blackburn and D. Neumark (1992), “Unobserved
-   Ability, Efficiency Wages, and Interindustry Wage Differentials,”
-   Quarterly Journal of Economics 107, 1421-1436. Professor Neumark
-   kindly provided the data, of which I used just the data for 1980.
-   Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: M. Blackburn and D. Neumark (1992), “Unobserved
+      Ability, Efficiency Wages, and Interindustry Wage Differentials,”
+      Quarterly Journal of Economics 107, 1421-1436. Professor Neumark
+      kindly provided the data, of which I used just the data for 1980.
+      Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('wage2')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('wage2')
 
-   A data.frame with 935 observations on 17 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **wage:** monthly earnings
+      A data.frame with 935 observations on 17 variables:
 
-   -  **hours:** average weekly hours
+      -  **wage:** monthly earnings
 
-   -  **IQ:** IQ score
+      -  **hours:** average weekly hours
 
-   -  **KWW:** knowledge of world work score
+      -  **IQ:** IQ score
 
-   -  **educ:** years of education
+      -  **KWW:** knowledge of world work score
 
-   -  **exper:** years of work experience
+      -  **educ:** years of education
 
-   -  **tenure:** years with current employer
+      -  **exper:** years of work experience
 
-   -  **age:** age in years
+      -  **tenure:** years with current employer
 
-   -  **married:** =1 if married
+      -  **age:** age in years
 
-   -  **black:** =1 if black
+      -  **married:** =1 if married
 
-   -  **south:** =1 if live in south
+      -  **black:** =1 if black
 
-   -  **urban:** =1 if live in SMSA
+      -  **south:** =1 if live in south
 
-   -  **sibs:** number of siblings
+      -  **urban:** =1 if live in SMSA
 
-   -  **brthord:** birth order
+      -  **sibs:** number of siblings
 
-   -  **meduc:** mother's education
+      -  **brthord:** birth order
 
-   -  **feduc:** father's education
+      -  **meduc:** mother's education
 
-   -  **lwage:** natural log of wage
+      -  **feduc:** father's education
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lwage:** natural log of wage
 
-   As with WAGE1.RAW, there are some clear inconsistencies among the
-   variables tenure, exper, and age. I have not been able to track down
-   the causes, and so any changes would be effectively arbitrary.
-   Instead, I am using the data as provided by the authors of the above
-   QJE article.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 64, 106, 111, 165, 218-219, 220-221, 262,
-   310-312, 338, 519-520, 534, 546-547, 549, 678
+      As with WAGE1.RAW, there are some clear inconsistencies among the
+      variables tenure, exper, and age. I have not been able to track
+      down the causes, and so any changes would be effectively
+      arbitrary. Instead, I am using the data as provided by the authors
+      of the above QJE article.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 64, 106, 111, 165, 218-219, 220-221, 262,
+      310-312, 338, 519-520, 534, 546-547, 549, 678
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(wage2)
+      ::
+
+          str(wage2)

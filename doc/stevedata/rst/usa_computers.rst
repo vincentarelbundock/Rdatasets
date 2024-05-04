@@ -1,49 +1,52 @@
 .. container::
 
-   ============= ===============
-   usa_computers R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Percentage of U.S. Households with Computer Access, by
-      Year
-      :name: usa_computers
+      ============= ===============
+      usa_computers R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Percentage of U.S. Households with Computer Access, by
+         Year
+         :name: percentage-of-u.s.-households-with-computer-access-by-year
 
-   This is a simple and regrettably incomplete time-series on the
-   percentage of U.S. households with access to a computer, by year.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This is a simple and regrettably incomplete time-series on the
+      percentage of U.S. households with access to a computer, by year.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      usa_computers
+      ::
 
-   .. rubric:: Format
-      :name: format
+         usa_computers
 
-   A data frame with 19 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``year``
-      the year
+      A data frame with 19 observations on the following 2 variables.
 
-   ``value``
-      the estimated percentage of households with access to a computer
+      ``year``
+         the year
 
-   .. rubric:: Details
-      :name: details
+      ``value``
+         the estimated percentage of households with access to a
+         computer
 
-   Data are spotty and regrettably this is not a perfect time-series.
-   However, it is useful for an in-class exercise to show that the
-   proliferation of household computers (over time) in the United States
-   comes in part because of globalization. Use it for that purpose. The
-   data are reasonably faithful, but don't treat it as gospel. Exact
-   sourcing available upon request.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Data are spotty and regrettably this is not a perfect time-series.
+      However, it is useful for an in-class exercise to show that the
+      proliferation of household computers (over time) in the United
+      States comes in part because of globalization. Use it for that
+      purpose. The data are reasonably faithful, but don't treat it as
+      gospel. Exact sourcing available upon request.
 
-   Various: U.S. Census Bureau, Current Population Survey, and American
-   Community Survey
+      .. rubric:: Source
+         :name: source
+
+      Various: U.S. Census Bureau, Current Population Survey, and
+      American Community Survey

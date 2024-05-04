@@ -1,77 +1,80 @@
 .. container::
 
-   ====== ===============
-   survey R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Student Survey Data
-      :name: survey
+      ====== ===============
+      survey R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Student Survey Data
+         :name: student-survey-data
 
-   This data frame contains the responses of 237 Statistics I students
-   at the University of Adelaide to a number of questions.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data frame contains the responses of 237 Statistics I
+      students at the University of Adelaide to a number of questions.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      survey
+      ::
 
-   .. rubric:: Format
-      :name: format
+         survey
 
-   The components of the data frame are:
+      .. rubric:: Format
+         :name: format
 
-   ``Sex``
-      The sex of the student. (Factor with levels ``"Male"`` and
-      ``"Female"``.)
+      The components of the data frame are:
 
-   ``Wr.Hnd``
-      span (distance from tip of thumb to tip of little finger of spread
-      hand) of writing hand, in centimetres.
+      ``Sex``
+         The sex of the student. (Factor with levels ``"Male"`` and
+         ``"Female"``.)
 
-   ``NW.Hnd``
-      span of non-writing hand.
+      ``Wr.Hnd``
+         span (distance from tip of thumb to tip of little finger of
+         spread hand) of writing hand, in centimetres.
 
-   ``W.Hnd``
-      writing hand of student. (Factor, with levels ``"Left"`` and
-      ``"Right"``.)
+      ``NW.Hnd``
+         span of non-writing hand.
 
-   ``Fold``
-      “Fold your arms! Which is on top” (Factor, with levels
-      ``"R on L"``, ``"L on R"``, ``"Neither"``.)
+      ``W.Hnd``
+         writing hand of student. (Factor, with levels ``"Left"`` and
+         ``"Right"``.)
 
-   ``Pulse``
-      pulse rate of student (beats per minute).
+      ``Fold``
+         “Fold your arms! Which is on top” (Factor, with levels
+         ``"R on L"``, ``"L on R"``, ``"Neither"``.)
 
-   ``Clap``
-      ‘Clap your hands! Which hand is on top?’ (Factor, with levels
-      ``"Right"``, ``"Left"``, ``"Neither"``.)
+      ``Pulse``
+         pulse rate of student (beats per minute).
 
-   ``Exer``
-      how often the student exercises. (Factor, with levels ``"Freq"``
-      (frequently), ``"Some"``, ``"None"``.)
+      ``Clap``
+         ‘Clap your hands! Which hand is on top?’ (Factor, with levels
+         ``"Right"``, ``"Left"``, ``"Neither"``.)
 
-   ``Smoke``
-      how much the student smokes. (Factor, levels ``"Heavy"``,
-      ``"Regul"`` (regularly), ``"Occas"`` (occasionally), ``"Never"``.)
+      ``Exer``
+         how often the student exercises. (Factor, with levels
+         ``"Freq"`` (frequently), ``"Some"``, ``"None"``.)
 
-   ``Height``
-      height of the student in centimetres.
+      ``Smoke``
+         how much the student smokes. (Factor, levels ``"Heavy"``,
+         ``"Regul"`` (regularly), ``"Occas"`` (occasionally),
+         ``"Never"``.)
 
-   ``M.I``
-      whether the student expressed height in imperial (feet/inches) or
-      metric (centimetres/metres) units. (Factor, levels ``"Metric"``,
-      ``"Imperial"``.)
+      ``Height``
+         height of the student in centimetres.
 
-   ``Age``
-      age of the student in years.
+      ``M.I``
+         whether the student expressed height in imperial (feet/inches)
+         or metric (centimetres/metres) units. (Factor, levels
+         ``"Metric"``, ``"Imperial"``.)
 
-   .. rubric:: References
-      :name: references
+      ``Age``
+         age of the student in years.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S-PLUS.* Fourth Edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S-PLUS.* Fourth Edition. Springer.

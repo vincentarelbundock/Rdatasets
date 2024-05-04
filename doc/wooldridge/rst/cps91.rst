@@ -1,107 +1,110 @@
 .. container::
 
-   ===== ===============
-   cps91 R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: cps91
-      :name: cps91
+      ===== ===============
+      cps91 R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: cps91
+         :name: cps91
 
-   Wooldridge Source: Professor Daniel Hamermesh, at the University of
-   Texas, compiled these data from the May 1991 Current Population
-   Survey. Professor Hamermesh kindly provided these data. Data loads
-   lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Professor Daniel Hamermesh, at the University
+      of Texas, compiled these data from the May 1991 Current Population
+      Survey. Professor Hamermesh kindly provided these data. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('cps91')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('cps91')
 
-   A data.frame with 5634 observations on 24 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **husage:** husband's age
+      A data.frame with 5634 observations on 24 variables:
 
-   -  **husunion:** =1 if hus. in union
+      -  **husage:** husband's age
 
-   -  **husearns:** hus. weekly earns
+      -  **husunion:** =1 if hus. in union
 
-   -  **huseduc:** husband's yrs schooling
+      -  **husearns:** hus. weekly earns
 
-   -  **husblck:** =1 if hus. black
+      -  **huseduc:** husband's yrs schooling
 
-   -  **hushisp:** =1 if hus. hispanic
+      -  **husblck:** =1 if hus. black
 
-   -  **hushrs:** hus. weekly hours
+      -  **hushisp:** =1 if hus. hispanic
 
-   -  **kidge6:** =1 if have child >= 6
+      -  **hushrs:** hus. weekly hours
 
-   -  **earns:** wife's weekly earnings
+      -  **kidge6:** =1 if have child >= 6
 
-   -  **age:** wife's age
+      -  **earns:** wife's weekly earnings
 
-   -  **black:** =1 if wife black
+      -  **age:** wife's age
 
-   -  **educ:** wife's yrs schooling
+      -  **black:** =1 if wife black
 
-   -  **hispanic:** =1 if wife hispanic
+      -  **educ:** wife's yrs schooling
 
-   -  **union:** =1 if wife in union
+      -  **hispanic:** =1 if wife hispanic
 
-   -  **faminc:** annual family income
+      -  **union:** =1 if wife in union
 
-   -  **husexp:** huseduc - husage - 6
+      -  **faminc:** annual family income
 
-   -  **exper:** age - educ - 6
+      -  **husexp:** huseduc - husage - 6
 
-   -  **kidlt6:** =1 if have child < 6
+      -  **exper:** age - educ - 6
 
-   -  **hours:** wife's weekly hours
+      -  **kidlt6:** =1 if have child < 6
 
-   -  **expersq:** exper^2
+      -  **hours:** wife's weekly hours
 
-   -  **nwifeinc:** non-wife inc, $1000s
+      -  **expersq:** exper^2
 
-   -  **inlf:** =1 if wife in labor force
+      -  **nwifeinc:** non-wife inc, $1000s
 
-   -  **hrwage:** earns/hours
+      -  **inlf:** =1 if wife in labor force
 
-   -  **lwage:** log(hrwage)
+      -  **hrwage:** earns/hours
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lwage:** log(hrwage)
 
-   This is much bigger than the other CPS data sets even though the
-   sample is restricted to married women. (CPS91.RAW contains many more
-   observations than MROZ.RAW, too.) In addition to the usual human
-   capital variables for the women in the sample, we have information on
-   the husband. Therefore, we can estimate a labor supply function as in
-   Chapter 16, although the validity of potential experience as an IV
-   for log(wage) is questionable. (MROZ.RAW contains an actual
-   experience variable.) Perhaps more convincing is to add hours to the
-   wage offer equation, and instrument hours with indicators for young
-   and old children. This data set also contains a union membership
-   indicator. The web site for the National Bureau of Economic Research
-   makes it very easy now to download CPS data files in a variety
-   offormats. Go to http://www.nber.org/data/cps_basic.html.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: page 627-628
+      This is much bigger than the other CPS data sets even though the
+      sample is restricted to married women. (CPS91.RAW contains many
+      more observations than MROZ.RAW, too.) In addition to the usual
+      human capital variables for the women in the sample, we have
+      information on the husband. Therefore, we can estimate a labor
+      supply function as in Chapter 16, although the validity of
+      potential experience as an IV for log(wage) is questionable.
+      (MROZ.RAW contains an actual experience variable.) Perhaps more
+      convincing is to add hours to the wage offer equation, and
+      instrument hours with indicators for young and old children. This
+      data set also contains a union membership indicator. The web site
+      for the National Bureau of Economic Research makes it very easy
+      now to download CPS data files in a variety offormats. Go to
+      http://www.nber.org/data/cps_basic.html.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: page 627-628
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(cps91)
+      ::
+
+          str(cps91)

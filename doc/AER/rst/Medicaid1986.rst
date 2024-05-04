@@ -1,138 +1,143 @@
 .. container::
 
-   ============ ===============
-   Medicaid1986 R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Medicaid Utilization Data
-      :name: Medicaid1986
+      ============ ===============
+      Medicaid1986 R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Medicaid Utilization Data
+         :name: medicaid-utilization-data
 
-   Cross-section data originating from the 1986 Medicaid Consumer
-   Survey. The data comprise two groups of Medicaid eligibles at two
-   sites in California (Santa Barbara and Ventura counties): a group
-   enrolled in a managed care demonstration program and a
-   fee-for-service comparison group of non-enrollees.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-section data originating from the 1986 Medicaid Consumer
+      Survey. The data comprise two groups of Medicaid eligibles at two
+      sites in California (Santa Barbara and Ventura counties): a group
+      enrolled in a managed care demonstration program and a
+      fee-for-service comparison group of non-enrollees.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Medicaid1986")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Medicaid1986")
 
-   A data frame containing 996 observations on 14 variables.
+      .. rubric:: Format
+         :name: format
 
-   visits
-      Number of doctor visits.
+      A data frame containing 996 observations on 14 variables.
 
-   exposure
-      Length of observation period for ambulatory care (days).
+      visits
+         Number of doctor visits.
 
-   children
-      Total number of children in the household.
+      exposure
+         Length of observation period for ambulatory care (days).
 
-   age
-      Age of the respondent.
+      children
+         Total number of children in the household.
 
-   income
-      Annual household income (average of income range in million USD).
+      age
+         Age of the respondent.
 
-   health1
-      The first principal component (divided by 1000) of three
-      health-status variables: functional limitations, acute conditions,
-      and chronic conditions.
+      income
+         Annual household income (average of income range in million
+         USD).
 
-   health2
-      The second principal component (divided by 1000) of three
-      health-status variables: functional limitations, acute conditions,
-      and chronic conditions.
+      health1
+         The first principal component (divided by 1000) of three
+         health-status variables: functional limitations, acute
+         conditions, and chronic conditions.
 
-   access
-      Availability of health services (0 = low access, 1 = high access).
+      health2
+         The second principal component (divided by 1000) of three
+         health-status variables: functional limitations, acute
+         conditions, and chronic conditions.
 
-   married
-      Factor. Is the individual married?
+      access
+         Availability of health services (0 = low access, 1 = high
+         access).
 
-   gender
-      Factor indicating gender.
+      married
+         Factor. Is the individual married?
 
-   ethnicity
-      Factor indicating ethnicity (``"cauc"`` or ``"other"``).
+      gender
+         Factor indicating gender.
 
-   school
-      Number of years completed in school.
+      ethnicity
+         Factor indicating ethnicity (``"cauc"`` or ``"other"``).
 
-   enroll
-      Factor. Is the individual enrolled in a demonstration program?
+      school
+         Number of years completed in school.
 
-   program
-      Factor indicating the managed care demonstration program: Aid to
-      Families with Dependent Children (``"afdc"``) or
-      non-institutionalized Supplementary Security Income (``"ssi"``).
+      enroll
+         Factor. Is the individual enrolled in a demonstration program?
 
-   .. rubric:: Source
-      :name: source
+      program
+         Factor indicating the managed care demonstration program: Aid
+         to Families with Dependent Children (``"afdc"``) or
+         non-institutionalized Supplementary Security Income
+         (``"ssi"``).
 
-   Journal of Applied Econometrics Data Archive.
+      .. rubric:: Source
+         :name: source
 
-   http://qed.econ.queensu.ca/jae/1997-v12.3/gurmu/
+      Journal of Applied Econometrics Data Archive.
 
-   .. rubric:: References
-      :name: references
+      http://qed.econ.queensu.ca/jae/1997-v12.3/gurmu/
 
-   Gurmu, S. (1997). Semi-Parametric Estimation of Hurdle Regression
-   Models with an Application to Medicaid Utilization. *Journal of
-   Applied Econometrics*, **12**, 225–242.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Gurmu, S. (1997). Semi-Parametric Estimation of Hurdle Regression
+      Models with an Application to Medicaid Utilization. *Journal of
+      Applied Econometrics*, **12**, 225–242.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## data and packages
-      data("Medicaid1986")
-      library("MASS")
-      library("pscl")
+      ::
 
-      ## scale regressors
-      Medicaid1986$age2 <- Medicaid1986$age^2 / 100
-      Medicaid1986$school <- Medicaid1986$school / 10
-      Medicaid1986$income <- Medicaid1986$income / 10
+         ## data and packages
+         data("Medicaid1986")
+         library("MASS")
+         library("pscl")
 
-      ## subsets
-      afdc <- subset(Medicaid1986, program == "afdc")[, c(1, 3:4, 15, 5:9, 11:13)]
-      ssi <- subset(Medicaid1986, program == "ssi")[, c(1, 3:4, 15, 5:13)]
+         ## scale regressors
+         Medicaid1986$age2 <- Medicaid1986$age^2 / 100
+         Medicaid1986$school <- Medicaid1986$school / 10
+         Medicaid1986$income <- Medicaid1986$income / 10
 
-      ## Gurmu (1997):
-      ## Table VI., Poisson and negbin models
-      afdc_pois <- glm(visits ~ ., data = afdc, family = poisson)
-      summary(afdc_pois)
-      coeftest(afdc_pois, vcov = sandwich)
+         ## subsets
+         afdc <- subset(Medicaid1986, program == "afdc")[, c(1, 3:4, 15, 5:9, 11:13)]
+         ssi <- subset(Medicaid1986, program == "ssi")[, c(1, 3:4, 15, 5:13)]
 
-      afdc_nb <- glm.nb(visits ~ ., data = afdc)
-      ssi_pois <- glm(visits ~ ., data = ssi, family = poisson)
-      ssi_nb <- glm.nb(visits ~ ., data = ssi)
+         ## Gurmu (1997):
+         ## Table VI., Poisson and negbin models
+         afdc_pois <- glm(visits ~ ., data = afdc, family = poisson)
+         summary(afdc_pois)
+         coeftest(afdc_pois, vcov = sandwich)
 
-      ## Table VII., Hurdle models (without semi-parametric effects)
-      afdc_hurdle <- hurdle(visits ~ . | . - access, data = afdc, dist = "negbin")
-      ssi_hurdle <- hurdle(visits ~ . | . - access, data = ssi, dist = "negbin")
+         afdc_nb <- glm.nb(visits ~ ., data = afdc)
+         ssi_pois <- glm(visits ~ ., data = ssi, family = poisson)
+         ssi_nb <- glm.nb(visits ~ ., data = ssi)
 
-      ## Table VIII., Observed and expected frequencies
-      round(cbind(
-        Observed = table(afdc$visits)[1:8],
-        Poisson = sapply(0:7, function(x) sum(dpois(x, fitted(afdc_pois)))),
-        Negbin = sapply(0:7, function(x) sum(dnbinom(x, mu = fitted(afdc_nb), size = afdc_nb$theta))),
-        Hurdle = colSums(predict(afdc_hurdle, type = "prob")[,1:8])
-        )/nrow(afdc), digits = 3) * 100
-      round(cbind(
-        Observed = table(ssi$visits)[1:8],
-        Poisson = sapply(0:7, function(x) sum(dpois(x, fitted(ssi_pois)))),
-        Negbin = sapply(0:7, function(x) sum(dnbinom(x, mu = fitted(ssi_nb), size = ssi_nb$theta))),
-        Hurdle = colSums(predict(ssi_hurdle, type = "prob")[,1:8])
-        )/nrow(ssi), digits = 3) * 100
+         ## Table VII., Hurdle models (without semi-parametric effects)
+         afdc_hurdle <- hurdle(visits ~ . | . - access, data = afdc, dist = "negbin")
+         ssi_hurdle <- hurdle(visits ~ . | . - access, data = ssi, dist = "negbin")
+
+         ## Table VIII., Observed and expected frequencies
+         round(cbind(
+           Observed = table(afdc$visits)[1:8],
+           Poisson = sapply(0:7, function(x) sum(dpois(x, fitted(afdc_pois)))),
+           Negbin = sapply(0:7, function(x) sum(dnbinom(x, mu = fitted(afdc_nb), size = afdc_nb$theta))),
+           Hurdle = colSums(predict(afdc_hurdle, type = "prob")[,1:8])
+           )/nrow(afdc), digits = 3) * 100
+         round(cbind(
+           Observed = table(ssi$visits)[1:8],
+           Poisson = sapply(0:7, function(x) sum(dpois(x, fitted(ssi_pois)))),
+           Negbin = sapply(0:7, function(x) sum(dnbinom(x, mu = fitted(ssi_nb), size = ssi_nb$theta))),
+           Hurdle = colSums(predict(ssi_hurdle, type = "prob")[,1:8])
+           )/nrow(ssi), digits = 3) * 100

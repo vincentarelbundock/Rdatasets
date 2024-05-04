@@ -1,41 +1,43 @@
 .. container::
 
-   ======== ===============
-   penguins R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Palmer Station penguin data
-      :name: penguins
+      ======== ===============
+      penguins R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Palmer Station penguin data
+         :name: palmer-station-penguin-data
 
-   A data set from Gorman, Williams, and Fraser (2014) containing
-   measurements from different types of penguins. This version of the
-   data was retrieved from Allison Horst's ``palmerpenguins`` package on
-   2020-06-22.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Value
-      :name: value
+      A data set from Gorman, Williams, and Fraser (2014) containing
+      measurements from different types of penguins. This version of the
+      data was retrieved from Allison Horst's ``palmerpenguins`` package
+      on 2020-06-22.
 
-   ============ ========
-   ``penguins`` a tibble
-   ============ ========
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      ============ ========
+      ``penguins`` a tibble
+      ============ ========
 
-   Gorman KB, Williams TD, Fraser WR (2014) Ecological Sexual Dimorphism
-   and Environmental Variability within a Community of Antarctic
-   Penguins (*Genus Pygoscelis*). PLoS ONE 9(3): e90081.
-   `doi:10.1371/journal.pone.0090081 <https://doi.org/10.1371/journal.pone.0090081>`__
+      .. rubric:: Source
+         :name: source
 
-   https://github.com/allisonhorst/palmerpenguins
+      Gorman KB, Williams TD, Fraser WR (2014) Ecological Sexual
+      Dimorphism and Environmental Variability within a Community of
+      Antarctic Penguins (*Genus Pygoscelis*). PLoS ONE 9(3): e90081.
+      `doi:10.1371/journal.pone.0090081 <https://doi.org/10.1371/journal.pone.0090081>`__
 
-   .. rubric:: Examples
-      :name: examples
+      https://github.com/allisonhorst/palmerpenguins
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(penguins)
-      str(penguins)
+      ::
+
+         data(penguins)
+         str(penguins)

@@ -1,129 +1,131 @@
 .. container::
 
-   ======= ===============
-   discrim R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: discrim
-      :name: discrim
+      ======= ===============
+      discrim R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: discrim
+         :name: discrim
 
-   Wooldridge Source: K. Graddy (1997), “Do Fast-Food Chains Price
-   Discriminate on the Race and Income Characteristics of an Area?”
-   Journal of Business and Economic Statistics 15, 391-401. Professor
-   Graddy kindly provided the data set. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: K. Graddy (1997), “Do Fast-Food Chains Price
+      Discriminate on the Race and Income Characteristics of an Area?”
+      Journal of Business and Economic Statistics 15, 391-401. Professor
+      Graddy kindly provided the data set. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('discrim')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('discrim')
 
-   A data.frame with 410 observations on 37 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **psoda:** price of medium soda, 1st wave
+      A data.frame with 410 observations on 37 variables:
 
-   -  **pfries:** price of small fries, 1st wave
+      -  **psoda:** price of medium soda, 1st wave
 
-   -  **pentree:** price entree (burger or chicken), 1st wave
+      -  **pfries:** price of small fries, 1st wave
 
-   -  **wagest:** starting wage, 1st wave
+      -  **pentree:** price entree (burger or chicken), 1st wave
 
-   -  **nmgrs:** number of managers, 1st wave
+      -  **wagest:** starting wage, 1st wave
 
-   -  **nregs:** number of registers, 1st wave
+      -  **nmgrs:** number of managers, 1st wave
 
-   -  **hrsopen:** hours open, 1st wave
+      -  **nregs:** number of registers, 1st wave
 
-   -  **emp:** number of employees, 1st wave
+      -  **hrsopen:** hours open, 1st wave
 
-   -  **psoda2:** price of medium soday, 2nd wave
+      -  **emp:** number of employees, 1st wave
 
-   -  **pfries2:** price of small fries, 2nd wave
+      -  **psoda2:** price of medium soday, 2nd wave
 
-   -  **pentree2:** price entree, 2nd wave
+      -  **pfries2:** price of small fries, 2nd wave
 
-   -  **wagest2:** starting wage, 2nd wave
+      -  **pentree2:** price entree, 2nd wave
 
-   -  **nmgrs2:** number of managers, 2nd wave
+      -  **wagest2:** starting wage, 2nd wave
 
-   -  **nregs2:** number of registers, 2nd wave
+      -  **nmgrs2:** number of managers, 2nd wave
 
-   -  **hrsopen2:** hours open, 2nd wave
+      -  **nregs2:** number of registers, 2nd wave
 
-   -  **emp2:** number of employees, 2nd wave
+      -  **hrsopen2:** hours open, 2nd wave
 
-   -  **compown:** =1 if company owned
+      -  **emp2:** number of employees, 2nd wave
 
-   -  **chain:** BK = 1, KFC = 2, Roy Rogers = 3, Wendy's = 4
+      -  **compown:** =1 if company owned
 
-   -  **density:** population density, town
+      -  **chain:** BK = 1, KFC = 2, Roy Rogers = 3, Wendy's = 4
 
-   -  **crmrte:** crime rate, town
+      -  **density:** population density, town
 
-   -  **state:** NJ = 1, PA = 2
+      -  **crmrte:** crime rate, town
 
-   -  **prpblck:** proportion black, zipcode
+      -  **state:** NJ = 1, PA = 2
 
-   -  **prppov:** proportion in poverty, zipcode
+      -  **prpblck:** proportion black, zipcode
 
-   -  **prpncar:** proportion no car, zipcode
+      -  **prppov:** proportion in poverty, zipcode
 
-   -  **hseval:** median housing value, zipcode
+      -  **prpncar:** proportion no car, zipcode
 
-   -  **nstores:** number of stores, zipcode
+      -  **hseval:** median housing value, zipcode
 
-   -  **income:** median family income, zipcode
+      -  **nstores:** number of stores, zipcode
 
-   -  **county:** county label
+      -  **income:** median family income, zipcode
 
-   -  **lpsoda:** log(psoda)
+      -  **county:** county label
 
-   -  **lpfries:** log(pfries)
+      -  **lpsoda:** log(psoda)
 
-   -  **lhseval:** log(hseval)
+      -  **lpfries:** log(pfries)
 
-   -  **lincome:** log(income)
+      -  **lhseval:** log(hseval)
 
-   -  **ldensity:** log(density)
+      -  **lincome:** log(income)
 
-   -  **NJ:** =1 for New Jersey
+      -  **ldensity:** log(density)
 
-   -  **BK:** =1 if Burger King
+      -  **NJ:** =1 for New Jersey
 
-   -  **KFC:** =1 if Kentucky Fried Chicken
+      -  **BK:** =1 if Burger King
 
-   -  **RR:** =1 if Roy Rogers
+      -  **KFC:** =1 if Kentucky Fried Chicken
 
-   .. rubric:: Notes
-      :name: notes
+      -  **RR:** =1 if Roy Rogers
 
-   If you want to assign a common final project, this would be a good
-   data set. There are many possible dependent variables, namely, prices
-   of various fast-food items. The key variable is the fraction of the
-   population that is black, along with controls for poverty, income,
-   housing values, and so on. These data were also used in a famous
-   study by David Card and Alan Krueger on estimation of minimum wage
-   effects on employment. See the book by Card and Krueger, Myth and
-   Measurement, 1997, Princeton University Press, for a detailed
-   analysis.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 112, 166, 699-700
+      If you want to assign a common final project, this would be a good
+      data set. There are many possible dependent variables, namely,
+      prices of various fast-food items. The key variable is the
+      fraction of the population that is black, along with controls for
+      poverty, income, housing values, and so on. These data were also
+      used in a famous study by David Card and Alan Krueger on
+      estimation of minimum wage effects on employment. See the book by
+      Card and Krueger, Myth and Measurement, 1997, Princeton University
+      Press, for a detailed analysis.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 112, 166, 699-700
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(discrim)
+      ::
+
+          str(discrim)

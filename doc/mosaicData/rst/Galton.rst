@@ -1,66 +1,74 @@
 .. container::
 
-   ====== ===============
-   Galton R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Galton's dataset of parent and child heights
-      :name: Galton
+      ====== ===============
+      Galton R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Galton's dataset of parent and child heights
+         :name: galtons-dataset-of-parent-and-child-heights
 
-   In the 1880's, Francis Galton was developing ways to quantify the
-   heritability of traits. As part of this work, he collected data on
-   the heights of adult children and their parents.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      In the 1880's, Francis Galton was developing ways to quantify the
+      heritability of traits. As part of this work, he collected data on
+      the heights of adult children and their parents.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Galton)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Galton)
 
-   A data frame with 898 observations on the following variables.
+      .. rubric:: Format
+         :name: format
 
-   -  ``family`` a factor with levels for each family
+      A data frame with 898 observations on the following variables.
 
-   -  ``father`` the father's height (in inches)
+      ``family``
+         a factor with levels for each family
 
-   -  ``mother`` the mother's height (in inches)
+      ``father``
+         the father's height (in inches)
 
-   -  ``sex`` the child's sex: ``F`` or ``M``
+      ``mother``
+         the mother's height (in inches)
 
-   -  ``height`` the child's height as an adult (in inches)
+      ``sex``
+         the child's sex: ``F`` or ``M``
 
-   -  ``nkids`` the number of adult children in the family, or, at
-      least, the number whose heights Galton recorded.
+      ``height``
+         the child's height as an adult (in inches)
 
-   .. rubric:: Details
-      :name: details
+      ``nkids``
+         the number of adult children in the family, or, at least, the
+         number whose heights Galton recorded.
 
-   Entries were deleted for those children whose heights were not
-   recorded numerically by Galton, who sometimes used entries such as
-   "tall", "short", "idiotic", "deformed" and so on.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Entries were deleted for those children whose heights were not
+      recorded numerically by Galton, who sometimes used entries such as
+      "tall", "short", "idiotic", "deformed" and so on.
 
-   The data were transcribed by J.A. Hanley who has published them at
-   http://www.medicine.mcgill.ca/epidemiology/hanley/galton/
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The data were transcribed by J.A. Hanley who has published them at
+      http://www.medicine.mcgill.ca/epidemiology/hanley/galton/
 
-   "Transmuting" women into men: Galton's family data on human stature.
-   (2004) *The American Statistician*, 58(3):237-243.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      "Transmuting" women into men: Galton's family data on human
+      stature. (2004) *The American Statistician*, 58(3):237-243.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Galton)
+      ::
+
+         data(Galton)

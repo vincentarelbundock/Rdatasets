@@ -1,36 +1,38 @@
 .. container::
 
-   ======== ===============
-   MothEggs R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Moth Eggs
-      :name: MothEggs
+      ======== ===============
+      MothEggs R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Moth Eggs
+         :name: moth-eggs
 
-   Body size and eggs produced for a species of moths
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Body size and eggs produced for a species of moths
 
-   A dataset with 39 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ============ ==================================
-   ``BodyMass`` Log of body size measured in grams
-   ``Eggs``     Number of eggs present
-   \            
-   ============ ==================================
+      A dataset with 39 observations on the following 2 variables.
 
-   .. rubric:: Details
-      :name: details
+      ============ ==================================
+      ``BodyMass`` Log of body size measured in grams
+      ``Eggs``     Number of eggs present
+      \            
+      ============ ==================================
 
-   Researchers were interested in an association between body size and
-   the number of eggs produced by a species of moths.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Researchers were interested in an association between body size
+      and the number of eggs produced by a species of moths.
 
-   We thank Professor Itagaki and his students for sharing this data
-   from experiments on Manduca Sexta.
+      .. rubric:: Source
+         :name: source
+
+      We thank Professor Itagaki and his students for sharing this data
+      from experiments on Manduca Sexta.

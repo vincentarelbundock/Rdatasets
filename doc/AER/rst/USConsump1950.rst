@@ -1,88 +1,91 @@
 .. container::
 
-   ============= ===============
-   USConsump1950 R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: US Consumption Data (1940–1950)
-      :name: USConsump1950
+      ============= ===============
+      USConsump1950 R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: US Consumption Data (1940–1950)
+         :name: us-consumption-data-19401950
 
-   Time series data on US income and consumption expenditure, 1940–1950.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Time series data on US income and consumption expenditure,
+      1940–1950.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("USConsump1950")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("USConsump1950")
 
-   An annual multiple time series from 1940 to 1950 with 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   income
-      Disposable income.
+      An annual multiple time series from 1940 to 1950 with 3 variables.
 
-   expenditure
-      Consumption expenditure.
+      income
+         Disposable income.
 
-   war
-      Indicator variable: Was the year a year of war?
+      expenditure
+         Consumption expenditure.
 
-   .. rubric:: Source
-      :name: source
+      war
+         Indicator variable: Was the year a year of war?
 
-   Online complements to Greene (2003). Table F2.1.
+      .. rubric:: Source
+         :name: source
 
-   https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
+      Online complements to Greene (2003). Table F2.1.
 
-   .. rubric:: References
-      :name: references
+      https://pages.stern.nyu.edu/~wgreene/Text/tables/tablelist5.htm
 
-   Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
-   Saddle River, NJ: Prentice Hall.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003). *Econometric Analysis*, 5th edition. Upper
+      Saddle River, NJ: Prentice Hall.
 
-   ``Greene2003``, ``USConsump1979``, ``USConsump1993``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Greene2003``, ``USConsump1979``, ``USConsump1993``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## Greene (2003)
-      ## data
-      data("USConsump1950")
-      usc <- as.data.frame(USConsump1950)
-      usc$war <- factor(usc$war, labels = c("no", "yes"))
+      ::
 
-      ## Example 2.1
-      plot(expenditure ~ income, data = usc, type = "n", xlim = c(225, 375), ylim = c(225, 350))
-      with(usc, text(income, expenditure, time(USConsump1950)))
+         ## Greene (2003)
+         ## data
+         data("USConsump1950")
+         usc <- as.data.frame(USConsump1950)
+         usc$war <- factor(usc$war, labels = c("no", "yes"))
 
-      ## single model
-      fm <- lm(expenditure ~ income, data = usc)
-      summary(fm)
+         ## Example 2.1
+         plot(expenditure ~ income, data = usc, type = "n", xlim = c(225, 375), ylim = c(225, 350))
+         with(usc, text(income, expenditure, time(USConsump1950)))
 
-      ## different intercepts for war yes/no
-      fm2 <- lm(expenditure ~ income + war, data = usc)
-      summary(fm2)
+         ## single model
+         fm <- lm(expenditure ~ income, data = usc)
+         summary(fm)
 
-      ## compare
-      anova(fm, fm2)
+         ## different intercepts for war yes/no
+         fm2 <- lm(expenditure ~ income + war, data = usc)
+         summary(fm2)
 
-      ## visualize
-      abline(fm, lty = 3)                                   
-      abline(coef(fm2)[1:2])                                
-      abline(sum(coef(fm2)[c(1, 3)]), coef(fm2)[2], lty = 2)
+         ## compare
+         anova(fm, fm2)
 
-      ## Example 3.2
-      summary(fm)$r.squared
-      summary(lm(expenditure ~ income, data = usc, subset = war == "no"))$r.squared
-      summary(fm2)$r.squared
+         ## visualize
+         abline(fm, lty = 3)                                   
+         abline(coef(fm2)[1:2])                                
+         abline(sum(coef(fm2)[c(1, 3)]), coef(fm2)[2], lty = 2)
+
+         ## Example 3.2
+         summary(fm)$r.squared
+         summary(lm(expenditure ~ income, data = usc, subset = war == "no"))$r.squared
+         summary(fm2)$r.squared

@@ -1,67 +1,69 @@
 .. container::
 
-   ===== ===============
-   immer R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Yields from a Barley Field Trial
-      :name: immer
+      ===== ===============
+      immer R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Yields from a Barley Field Trial
+         :name: yields-from-a-barley-field-trial
 
-   The ``immer`` data frame has 30 rows and 4 columns. Five varieties of
-   barley were grown in six locations in each of 1931 and 1932.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``immer`` data frame has 30 rows and 4 columns. Five varieties
+      of barley were grown in six locations in each of 1931 and 1932.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      immer
+      ::
 
-   .. rubric:: Format
-      :name: format
+         immer
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   ``Loc``
-      The location.
+      This data frame contains the following columns:
 
-   ``Var``
-      The variety of barley (``"manchuria"``, ``"svansota"``,
-      ``"velvet"``, ``"trebi"`` and ``"peatland"``).
+      ``Loc``
+         The location.
 
-   ``Y1``
-      Yield in 1931.
+      ``Var``
+         The variety of barley (``"manchuria"``, ``"svansota"``,
+         ``"velvet"``, ``"trebi"`` and ``"peatland"``).
 
-   ``Y2``
-      Yield in 1932.
+      ``Y1``
+         Yield in 1931.
 
-   .. rubric:: Source
-      :name: source
+      ``Y2``
+         Yield in 1932.
 
-   Immer, F.R., Hayes, H.D. and LeRoy Powers (1934) Statistical
-   determination of barley varietal adaptation. *Journal of the American
-   Society for Agronomy* **26**, 403–419.
+      .. rubric:: Source
+         :name: source
 
-   Fisher, R.A. (1947) *The Design of Experiments.* 4th edition.
-   Edinburgh: Oliver and Boyd.
+      Immer, F.R., Hayes, H.D. and LeRoy Powers (1934) Statistical
+      determination of barley varietal adaptation. *Journal of the
+      American Society for Agronomy* **26**, 403–419.
 
-   .. rubric:: References
-      :name: references
+      Fisher, R.A. (1947) *The Design of Experiments.* 4th edition.
+      Edinburgh: Oliver and Boyd.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S-PLUS.* Fourth Edition. Springer.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S-PLUS.* Fourth Edition. Springer.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      immer.aov <- aov(cbind(Y1,Y2) ~ Loc + Var, data = immer)
-      summary(immer.aov)
+      ::
 
-      immer.aov <- aov((Y1+Y2)/2 ~ Var + Loc, data = immer)
-      summary(immer.aov)
-      model.tables(immer.aov, type = "means", se = TRUE, cterms = "Var")
+         immer.aov <- aov(cbind(Y1,Y2) ~ Loc + Var, data = immer)
+         summary(immer.aov)
+
+         immer.aov <- aov((Y1+Y2)/2 ~ Var + Loc, data = immer)
+         summary(immer.aov)
+         model.tables(immer.aov, type = "means", se = TRUE, cterms = "Var")

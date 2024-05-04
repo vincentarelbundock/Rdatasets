@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>epa2012</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='epa2012'>Vehicle info from the EPA for 2012</h2>
+<h2>Vehicle info from the EPA for 2012</h2>
 
 <h3>Description</h3>
 
@@ -126,6 +126,7 @@ ggplot(epa2012, aes(x = city_mpg, y = hwy_mpg, color = guzzler)) +
   facet_wrap(~guzzler, ncol = 1)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

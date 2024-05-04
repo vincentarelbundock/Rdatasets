@@ -1,114 +1,119 @@
 .. container::
 
-   ==== ===============
-   star R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Student Teacher Achievement Ratio (STAR) project data
-      :name: star
+      ==== ===============
+      star R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Student Teacher Achievement Ratio (STAR) project data
+         :name: student-teacher-achievement-ratio-star-project-data
 
-   Data from Tennessee's Student Teacher Achievement Ratio (STAR)
-   project which was a large-scale, four-year study of the effect of
-   reduced class size.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from Tennessee's Student Teacher Achievement Ratio (STAR)
+      project which was a large-scale, four-year study of the effect of
+      reduced class size.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(star)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(star)
 
-   A data frame with 26796 observations on the following 18 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``id``
-      a factor - student id number
+      A data frame with 26796 observations on the following 18
+      variables.
 
-   ``sch``
-      a factor - school id number
+      ``id``
+         a factor - student id number
 
-   ``gr``
-      grade - an ordered factor with levels ``K`` < ``1`` < ``2`` <
-      ``3``
+      ``sch``
+         a factor - school id number
 
-   ``cltype``
-      class type - a factor with levels ``small``, ``reg`` and
-      ``reg+A``. The last level indicates a regular class size with a
-      teachers aide.
+      ``gr``
+         grade - an ordered factor with levels ``K`` < ``1`` < ``2`` <
+         ``3``
 
-   ``hdeg``
-      highest degree obtained by the teacher - an ordered factor with
-      levels ``ASSOC`` < ``BS/BA`` < ``MS/MA/MEd`` < ``MA+`` < ``Ed.S``
-      < ``Ed.D/Ph.D``
+      ``cltype``
+         class type - a factor with levels ``small``, ``reg`` and
+         ``reg+A``. The last level indicates a regular class size with a
+         teachers aide.
 
-   ``clad``
-      career ladder position of the teacher - a factor with levels
-      ``NOT`` ``APPR`` ``PROB`` ``PEND`` ``1`` ``2`` ``3``
+      ``hdeg``
+         highest degree obtained by the teacher - an ordered factor with
+         levels ``ASSOC`` < ``BS/BA`` < ``MS/MA/MEd`` < ``MA+`` <
+         ``Ed.S`` < ``Ed.D/Ph.D``
 
-   ``exp``
-      a numeric vector - the total number of years of experience of the
-      teacher
+      ``clad``
+         career ladder position of the teacher - a factor with levels
+         ``NOT`` ``APPR`` ``PROB`` ``PEND`` ``1`` ``2`` ``3``
 
-   ``trace``
-      teacher's race - a factor with levels ``W``, ``B``, ``A``, ``H``,
-      ``I`` and ``O`` representing white, black, Asian, Hispanic, Indian
-      (Native American) and other
+      ``exp``
+         a numeric vector - the total number of years of experience of
+         the teacher
 
-   ``read``
-      the student's total reading scaled score
+      ``trace``
+         teacher's race - a factor with levels ``W``, ``B``, ``A``,
+         ``H``, ``I`` and ``O`` representing white, black, Asian,
+         Hispanic, Indian (Native American) and other
 
-   ``math``
-      the student's total math scaled score
+      ``read``
+         the student's total reading scaled score
 
-   ``ses``
-      socioeconomic status - a factor with levels ``F`` and ``N``
-      representing eligible for free lunches or not eligible
+      ``math``
+         the student's total math scaled score
 
-   ``schtype``
-      school type - a factor with levels ``inner``, ``suburb``,
-      ``rural`` and ``urban``
+      ``ses``
+         socioeconomic status - a factor with levels ``F`` and ``N``
+         representing eligible for free lunches or not eligible
 
-   ``sx``
-      student's sex - a factor with levels ``M`` ``F``
+      ``schtype``
+         school type - a factor with levels ``inner``, ``suburb``,
+         ``rural`` and ``urban``
 
-   ``eth``
-      student's ethnicity - a factor with the same levels as ``trace``
+      ``sx``
+         student's sex - a factor with levels ``M`` ``F``
 
-   ``birthq``
-      student's birth quarter - an ordered factor with levels ``1977:1``
-      < ... < ``1982:2``
+      ``eth``
+         student's ethnicity - a factor with the same levels as
+         ``trace``
 
-   ``birthy``
-      student's birth year - an ordered factor with levels ``1977:1982``
+      ``birthq``
+         student's birth quarter - an ordered factor with levels
+         ``1977:1`` < ... < ``1982:2``
 
-   ``yrs``
-      number of years of schooling for the student - a numeric version
-      of the grade ``gr`` with Kindergarten represented as 0. This
-      variable was generated from ``gr`` and does not allow for a
-      student being retained.
+      ``birthy``
+         student's birth year - an ordered factor with levels
+         ``1977:1982``
 
-   ``tch``
-      a factor - teacher id number
+      ``yrs``
+         number of years of schooling for the student - a numeric
+         version of the grade ``gr`` with Kindergarten represented as 0.
+         This variable was generated from ``gr`` and does not allow for
+         a student being retained.
 
-   .. rubric:: Details
-      :name: details
+      ``tch``
+         a factor - teacher id number
 
-   Details of the original data source and the process of conversion to
-   this representation are given in the vignette.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Details of the original data source and the process of conversion
+      to this representation are given in the vignette.
 
-   http://www.heros-inc.org/data.htm
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      http://www.heros-inc.org/data.htm
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      str(star)
+      ::
+
+         str(star)

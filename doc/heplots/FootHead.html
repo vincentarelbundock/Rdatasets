@@ -12,62 +12,56 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>FootHead</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='FootHead'>
-Head measurements of football players
-</h2>
+<h2>Head measurements of football players</h2>
 
 <h3>Description</h3>
 
-<p>Data collected as part of a preliminary study examining the
-relation between football helmet design and neck injuries.
-There are 30 subjects in each of three groups:
-High school football players, college players and non-football players.
+<p>Data collected as part of a preliminary study examining the relation between
+football helmet design and neck injuries. There are 30 subjects in each of
+three groups: High school football players, college players and non-football
+players.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(FootHead)</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A data frame with 90 observations on the following 7 variables.
 </p>
-
+ 
 <dl>
 <dt><code>group</code></dt><dd><p>a factor with levels <code>High school</code> <code>College</code> <code>Non-football</code></p>
-</dd>
+</dd> 
 <dt><code>width</code></dt><dd><p>a numeric vector: head width at widest dimension</p>
-</dd>
+</dd> 
 <dt><code>circum</code></dt><dd><p>a numeric vector: head circumference</p>
-</dd>
+</dd> 
 <dt><code>front.back</code></dt><dd><p>a numeric vector: front to back distance at eye level</p>
-</dd>
+</dd> 
 <dt><code>eye.top</code></dt><dd><p>a numeric vector: eye to top of head</p>
-</dd>
+</dd> 
 <dt><code>ear.top</code></dt><dd><p>a numeric vector:ear to top of head</p>
 </dd>
 <dt><code>jaw</code></dt><dd><p>a numeric vector: jaw width</p>
-</dd>
+</dd> 
 </dl>
 
 
 
 <h3>Source</h3>
 
-<p>Rencher, A. C. (1995), <em>Methods of Multivariate Analysis</em>,
-New York: Wiley, Table 8.3.
+<p>Rencher, A. C. (1995), <em>Methods of Multivariate Analysis</em>, New
+York: Wiley, Table 8.3.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(FootHead)
+<pre><code class='language-R'>
+data(FootHead)
 str(FootHead)
 require(car)
 
@@ -101,8 +95,10 @@ heplot3d(foot.mod, variables=c(1,2,6),
 	hypotheses=list("group.1"="group1","group.2"="group2"),
 	col=c("red", "blue", "green3", "green3" ), wire=FALSE)
 }
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

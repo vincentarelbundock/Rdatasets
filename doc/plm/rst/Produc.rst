@@ -1,88 +1,91 @@
 .. container::
 
-   ====== ===============
-   Produc R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: US States Production
-      :name: Produc
+      ====== ===============
+      Produc R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: US States Production
+         :name: us-states-production
 
-   A panel of 48 observations from 1970 to 1986
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      A panel of 48 observations from 1970 to 1986
 
-   A data frame containing :
+      .. rubric:: Format
+         :name: format
 
-   state
-      the state
+      A data frame containing :
 
-   year
-      the year
+      state
+         the state
 
-   region
-      the region
+      year
+         the year
 
-   pcap
-      public capital stock
+      region
+         the region
 
-   hwy
-      highway and streets
+      pcap
+         public capital stock
 
-   water
-      water and sewer facilities
+      hwy
+         highway and streets
 
-   util
-      other public buildings and structures
+      water
+         water and sewer facilities
 
-   pc
-      private capital stock
+      util
+         other public buildings and structures
 
-   gsp
-      gross state product
+      pc
+         private capital stock
 
-   emp
-      labor input measured by the employment in non–agricultural
-      payrolls
+      gsp
+         gross state product
 
-   unemp
-      state unemployment rate
+      emp
+         labor input measured by the employment in non–agricultural
+         payrolls
 
-   .. rubric:: Details
-      :name: details
+      unemp
+         state unemployment rate
 
-   *total number of observations* : 816
+      .. rubric:: Details
+         :name: details
 
-   *observation* : regional
+      *total number of observations* : 816
 
-   *country* : United States
+      *observation* : regional
 
-   .. rubric:: Source
-      :name: source
+      *country* : United States
 
-   Online complements to Baltagi (2001):
+      .. rubric:: Source
+         :name: source
 
-   https://www.wiley.com/legacy/wileychi/baltagi/
+      Online complements to Baltagi (2001):
 
-   Online complements to Baltagi (2013):
+      https://www.wiley.com/legacy/wileychi/baltagi/
 
-   https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
+      Online complements to Baltagi (2013):
 
-   .. rubric:: References
-      :name: references
+      https://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
 
-   Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd edition.
-   John Wiley and Sons ltd.
+      .. rubric:: References
+         :name: references
 
-   Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th edition.
-   John Wiley and Sons ltd.
+      Baltagi BH (2001). *Econometric Analysis of Panel Data*, 3rd
+      edition. John Wiley and Sons ltd.
 
-   Baltagi BH, Pinnoi N (1995). “Public capital stock and state
-   productivity growth: further evidence from an error components
-   model.” *Empirical Economics*, **20**, 351-359.
+      Baltagi BH (2013). *Econometric Analysis of Panel Data*, 5th
+      edition. John Wiley and Sons ltd.
 
-   Munnell A (1990). “Why Has Productivity Growth Declined? Productivity
-   and Public Investment.” *New England Economic Review*, 3–22.
+      Baltagi BH, Pinnoi N (1995). “Public capital stock and state
+      productivity growth: further evidence from an error components
+      model.” *Empirical Economics*, **20**, 351-359.
+
+      Munnell A (1990). “Why Has Productivity Growth Declined?
+      Productivity and Public Investment.” *New England Economic
+      Review*, 3–22.

@@ -1,62 +1,64 @@
 .. container::
 
-   == ===============
-   LT R Documentation
-   == ===============
+   .. container::
 
-   .. rubric:: Dollar Sterling Exchange Rate
-      :name: LT
+      == ===============
+      LT R Documentation
+      == ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Dollar Sterling Exchange Rate
+         :name: dollar-sterling-exchange-rate
 
-   annual observations from 1791 to 1990
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 200
+      annual observations from 1791 to 1990
 
-   *observation* : country
+      *number of observations* : 200
 
-   *country* : United Kingdom
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United Kingdom
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(LT)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(LT)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   s
-      US \*Dollar / \*Pound exchange rate
+      A time series containing :
 
-   uswpi
-      US wholesale price index, normalized to 100 for 1914
+      s
+         US \*Dollar / \*Pound exchange rate
 
-   ukwpi
-      US wholesale price index, normalized to 100 for 1914
+      uswpi
+         US wholesale price index, normalized to 100 for 1914
 
-   .. rubric:: Source
-      :name: source
+      ukwpi
+         US wholesale price index, normalized to 100 for 1914
 
-   Lothian, J. and M. Taylor (1996) “Real exchange rate behavior: the
-   recent float from the perspective of the past two centuries”,
-   *Journal of Political Economy*, **104**, 488-509.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Lothian, J. and M. Taylor (1996) “Real exchange rate behavior: the
+      recent float from the perspective of the past two centuries”,
+      *Journal of Political Economy*, **104**, 488-509.
 
-   Hayashi, F. (2000) *Econometrics*, Princeton University Press,
-   http://fhayashi.fc2web.com/hayashi_econometrics.htm, chapter 9,
-   613-621.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Hayashi, F. (2000) *Econometrics*, Princeton University Press,
+      http://fhayashi.fc2web.com/hayashi_econometrics.htm, chapter 9,
+      613-621.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

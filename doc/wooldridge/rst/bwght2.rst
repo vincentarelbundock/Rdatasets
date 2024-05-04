@@ -1,104 +1,106 @@
 .. container::
 
-   ====== ===============
-   bwght2 R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: bwght2
-      :name: bwght2
+      ====== ===============
+      bwght2 R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: bwght2
+         :name: bwght2
 
-   Wooldridge Source: Dr. Zhehui Luo, a recent MSU Ph.D. in economics
-   and Visiting Research Associate in the Department of Epidemiology at
-   MSU, kindly provided these data. She obtained them from state files
-   linking birth and infant death certificates, and from the National
-   Center for Health Statistics natality and mortality data. Data loads
-   lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Dr. Zhehui Luo, a recent MSU Ph.D. in economics
+      and Visiting Research Associate in the Department of Epidemiology
+      at MSU, kindly provided these data. She obtained them from state
+      files linking birth and infant death certificates, and from the
+      National Center for Health Statistics natality and mortality data.
+      Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('bwght2')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('bwght2')
 
-   A data.frame with 1832 observations on 23 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **mage:** mother's age, years
+      A data.frame with 1832 observations on 23 variables:
 
-   -  **meduc:** mother's educ, years
+      -  **mage:** mother's age, years
 
-   -  **monpre:** month prenatal care began
+      -  **meduc:** mother's educ, years
 
-   -  **npvis:** total number of prenatal visits
+      -  **monpre:** month prenatal care began
 
-   -  **fage:** father's age, years
+      -  **npvis:** total number of prenatal visits
 
-   -  **feduc:** father's educ, years
+      -  **fage:** father's age, years
 
-   -  **bwght:** birth weight, grams
+      -  **feduc:** father's educ, years
 
-   -  **omaps:** one minute apgar score
+      -  **bwght:** birth weight, grams
 
-   -  **fmaps:** five minute apgar score
+      -  **omaps:** one minute apgar score
 
-   -  **cigs:** avg cigarettes per day
+      -  **fmaps:** five minute apgar score
 
-   -  **drink:** avg drinks per week
+      -  **cigs:** avg cigarettes per day
 
-   -  **lbw:** =1 if bwght <= 2000
+      -  **drink:** avg drinks per week
 
-   -  **vlbw:** =1 if bwght <= 1500
+      -  **lbw:** =1 if bwght <= 2000
 
-   -  **male:** =1 if baby male
+      -  **vlbw:** =1 if bwght <= 1500
 
-   -  **mwhte:** =1 if mother white
+      -  **male:** =1 if baby male
 
-   -  **mblck:** =1 if mother black
+      -  **mwhte:** =1 if mother white
 
-   -  **moth:** =1 if mother is other
+      -  **mblck:** =1 if mother black
 
-   -  **fwhte:** =1 if father white
+      -  **moth:** =1 if mother is other
 
-   -  **fblck:** =1 if father black
+      -  **fwhte:** =1 if father white
 
-   -  **foth:** =1 if father is other
+      -  **fblck:** =1 if father black
 
-   -  **lbwght:** log(bwght)
+      -  **foth:** =1 if father is other
 
-   -  **magesq:** mage^2
+      -  **lbwght:** log(bwght)
 
-   -  **npvissq:** npvis^2
+      -  **magesq:** mage^2
 
-   .. rubric:: Notes
-      :name: notes
+      -  **npvissq:** npvis^2
 
-   There are many possibilities with this data set. In addition to
-   number of prenatal visits, smoking and alcohol consumption (during
-   pregnancy) are included as explanatory variables. These can be added
-   to equations of the kind found in Exercise C6.10. In addition, the
-   one- and five-minute APGAR scores are included. These are measures of
-   the well being of infants just after birth. An interesting feature of
-   the score is that it is bounded between zero and 10, making a linear
-   model less than ideal. Still, a linear model would be informative,
-   and you might ask students about predicted values less than zero or
-   greater than 10.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 184, 223
+      There are many possibilities with this data set. In addition to
+      number of prenatal visits, smoking and alcohol consumption (during
+      pregnancy) are included as explanatory variables. These can be
+      added to equations of the kind found in Exercise C6.10. In
+      addition, the one- and five-minute APGAR scores are included.
+      These are measures of the well being of infants just after birth.
+      An interesting feature of the score is that it is bounded between
+      zero and 10, making a linear model less than ideal. Still, a
+      linear model would be informative, and you might ask students
+      about predicted values less than zero or greater than 10.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 184, 223
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(bwght2)
+      ::
+
+          str(bwght2)

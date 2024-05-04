@@ -1,40 +1,42 @@
 .. container::
 
-   ============= ===============
-   supreme_court R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Supreme Court approval rating
-      :name: supreme_court
+      ============= ===============
+      supreme_court R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Supreme Court approval rating
+         :name: supreme-court-approval-rating
 
-   Summary of a random survey of 976 people.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Summary of a random survey of 976 people.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      supreme_court
+      ::
 
-   .. rubric:: Format
-      :name: format
+         supreme_court
 
-   A data frame with 976 observations on the following variable.
+      .. rubric:: Format
+         :name: format
 
-   answer
-      a factor with levels ``approve`` and ``not``
+      A data frame with 976 observations on the following variable.
 
-   .. rubric:: Source
-      :name: source
+      answer
+         a factor with levels ``approve`` and ``not``
 
-   https://www.nytimes.com/2012/06/08/us/politics/44-percent-of-americans-approve-of-supreme-court-in-new-poll.html
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.nytimes.com/2012/06/08/us/politics/44-percent-of-americans-approve-of-supreme-court-in-new-poll.html
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      supreme_court
+      ::
+
+         supreme_court

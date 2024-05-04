@@ -1,72 +1,76 @@
 .. container::
 
-   =========== ===============
-   ratings_raw R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Each episode's ratings (raw)
-      :name: ratings_raw
+      =========== ===============
+      ratings_raw R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Each episode's ratings (raw)
+         :name: each-episodes-ratings-raw
 
-   Ratings for all episodes across all 10 GBBO series.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Ratings for all episodes across all 10 GBBO series.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      ratings_raw
+      ::
 
-   .. rubric:: Format
-      :name: format
+         ratings_raw
 
-   A data frame with 94 rows representing individual episodes and 9
-   variables:
+      .. rubric:: Format
+         :name: format
 
-   series
-      a factor denoting UK series (``1``-``10``).
+      A data frame with 94 rows representing individual episodes and 9
+      variables:
 
-   episode
-      a factor denoting episode number within a series.
+      series
+         a factor denoting UK series (``1``-``10``).
 
-   uk_airdate
-      a date denoting original airdate of episode in the UK.
+      episode
+         a factor denoting episode number within a series.
 
-   viewers_7day
-      number of viewers in millions within a 7-day window from airdate.
+      uk_airdate
+         a date denoting original airdate of episode in the UK.
 
-   viewers_28day
-      number of viewers in millions within a 28-day window from airdate.
+      viewers_7day
+         number of viewers in millions within a 7-day window from
+         airdate.
 
-   network_rank
-      an integer denoting the episode's weekly ranking within network
-      (note that the networks changed for series 8 and later).
+      viewers_28day
+         number of viewers in millions within a 28-day window from
+         airdate.
 
-   channels_rank
-      an integer denoting the episode's weekly ranking across all
-      channels.
+      network_rank
+         an integer denoting the episode's weekly ranking within network
+         (note that the networks changed for series 8 and later).
 
-   bbc_iplayer_requests
-      number of BBC iPlayer requests (note: not available for all
-      series, and only for series that aired on the BBC).
+      channels_rank
+         an integer denoting the episode's weekly ranking across all
+         channels.
 
-   episode_count
-      continuous episode count.
+      bbc_iplayer_requests
+         number of BBC iPlayer requests (note: not available for all
+         series, and only for series that aired on the BBC).
 
-   .. rubric:: Source
-      :name: source
+      episode_count
+         continuous episode count.
 
-   All official episode viewer number are from BARB, as entered on
-   Wikipedia https://en.wikipedia.org/wiki/The_Great_British_Bake_Off
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      All official episode viewer number are from BARB, as entered on
+      Wikipedia https://en.wikipedia.org/wiki/The_Great_British_Bake_Off
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      if (require('tibble')) {
-        ratings_raw
-       }
-      head(ratings_raw)
+      ::
+
+         if (require('tibble')) {
+           ratings_raw
+          }
+         head(ratings_raw)

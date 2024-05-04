@@ -1,83 +1,85 @@
 .. container::
 
-   =========== ===============
-   BudgetItaly R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Budget Shares for Italian Households
-      :name: BudgetItaly
+      =========== ===============
+      BudgetItaly R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Budget Shares for Italian Households
+         :name: budget-shares-for-italian-households
 
-   a cross-section from 1973 to 1992
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 1729
+      a cross-section from 1973 to 1992
 
-   *observation* : households
+      *number of observations* : 1729
 
-   *country* : Italy
+      *observation* : households
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : Italy
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(BudgetItaly)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(BudgetItaly)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   wfood
-      food share
+      A dataframe containing :
 
-   whouse
-      housing and fuels share
+      wfood
+         food share
 
-   wmisc
-      miscellaneous share
+      whouse
+         housing and fuels share
 
-   pfood
-      food price
+      wmisc
+         miscellaneous share
 
-   phouse
-      housing and fuels price
+      pfood
+         food price
 
-   pmisc
-      miscellaneous price
+      phouse
+         housing and fuels price
 
-   totexp
-      total expenditure
+      pmisc
+         miscellaneous price
 
-   year
+      totexp
+         total expenditure
+
       year
+         year
 
-   income
       income
+         income
 
-   size
-      household size
+      size
+         household size
 
-   pct
-      cellule weight
+      pct
+         cellule weight
 
-   .. rubric:: Source
-      :name: source
+      .. rubric:: Source
+         :name: source
 
-   Bollino, Carlo Andrea, Frederico Perali and Nicola Rossi (2000)
-   “Linear household technologies”, *Journal of Applied Econometrics*,
-   **15(3)**, 253–274.
+      Bollino, Carlo Andrea, Frederico Perali and Nicola Rossi (2000)
+      “Linear household technologies”, *Journal of Applied
+      Econometrics*, **15(3)**, 253–274.
 
-   .. rubric:: References
-      :name: references
+      .. rubric:: References
+         :name: references
 
-   Journal of Applied Econometrics data archive :
-   http://qed.econ.queensu.ca/jae/.
+      Journal of Applied Econometrics data archive :
+      http://qed.econ.queensu.ca/jae/.
 
-   .. rubric:: See Also
-      :name: see-also
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

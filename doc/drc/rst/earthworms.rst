@@ -1,77 +1,79 @@
 .. container::
 
-   ========== ===============
-   earthworms R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Earthworm toxicity test
-      :name: earthworms
+      ========== ===============
+      earthworms R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Earthworm toxicity test
+         :name: earthworm-toxicity-test
 
-   The dataset was obtained from a toxicity test using earthworms, and
-   it contains the number of earthworms remaining in a container that
-   was contaminated with a toxic substance (not disclosed) at various
-   doses; so the number of earthworms not migrating to the neighbouring
-   uncontaminated container.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The dataset was obtained from a toxicity test using earthworms,
+      and it contains the number of earthworms remaining in a container
+      that was contaminated with a toxic substance (not disclosed) at
+      various doses; so the number of earthworms not migrating to the
+      neighbouring uncontaminated container.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(earthworms)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(earthworms)
 
-   A data frame with 35 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``dose``
-      a numeric vector of dose values
+      A data frame with 35 observations on the following 3 variables.
 
-   ``number``
-      a numeric vector containing counts of remaining earthworms in the
-      container
+      ``dose``
+         a numeric vector of dose values
 
-   ``total``
-      a numeric vector containing total number of earthworms put in the
-      containers
+      ``number``
+         a numeric vector containing counts of remaining earthworms in
+         the container
 
-   .. rubric:: Details
-      :name: details
+      ``total``
+         a numeric vector containing total number of earthworms put in
+         the containers
 
-   At dose 0 around half of the earthworms is expected be in each of the
-   two containers. Thus it is not appropriate to fit an ordinary
-   logistic regression with log(dose) as explanatory variable to these
-   data as it implies an upper limit of 1 at dose 0 and in fact this
-   model does not utilise the observations at dose 0 (see the example
-   section below).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      At dose 0 around half of the earthworms is expected be in each of
+      the two containers. Thus it is not appropriate to fit an ordinary
+      logistic regression with log(dose) as explanatory variable to
+      these data as it implies an upper limit of 1 at dose 0 and in fact
+      this model does not utilise the observations at dose 0 (see the
+      example section below).
 
-   The dataset is kindly provided by Nina Cedergreen, Faculty of Life
-   Sciences, University of Copenhagen, Denmark.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      The dataset is kindly provided by Nina Cedergreen, Faculty of Life
+      Sciences, University of Copenhagen, Denmark.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## Fitting a logistic regression model
-      earthworms.m1 <- drm(number/total~dose, weights = total, data = earthworms,
-      fct = LL.2(), type = "binomial")
-      modelFit(earthworms.m1)  # a crude goodness-of-fit test
+      ::
 
-      ## Fitting an extended logistic regression model 
-      ##  where the upper limit is estimated
-      earthworms.m2 <- drm(number/total~dose, weights = total, data = earthworms,
-      fct = LL.3(), type = "binomial")
-      modelFit(earthworms.m2)  # goodness-of-fit test
-      # improvement not visible in test!!!
+         ## Fitting a logistic regression model
+         earthworms.m1 <- drm(number/total~dose, weights = total, data = earthworms,
+         fct = LL.2(), type = "binomial")
+         modelFit(earthworms.m1)  # a crude goodness-of-fit test
 
-      ## Comparing model1 and model2 
-      ## (Can the first model be reduced to the second model?)
-      anova(earthworms.m1, earthworms.m2)
+         ## Fitting an extended logistic regression model 
+         ##  where the upper limit is estimated
+         earthworms.m2 <- drm(number/total~dose, weights = total, data = earthworms,
+         fct = LL.3(), type = "binomial")
+         modelFit(earthworms.m2)  # goodness-of-fit test
+         # improvement not visible in test!!!
+
+         ## Comparing model1 and model2 
+         ## (Can the first model be reduced to the second model?)
+         anova(earthworms.m1, earthworms.m2)

@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>nihills</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='nihills'>Record times for Northern Ireland mountain running events</h2>
+<h2>Record times for Northern Ireland mountain running events</h2>
 
 <h3>Description</h3>
 
@@ -79,6 +79,7 @@ lm(formula = log(time) ~ log(dist) + log(climb/dist), data = nihills)
 lm(formula = logtime ~ logdist + I(logclimb-logdist), data = lognihills)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

@@ -1,137 +1,139 @@
 .. container::
 
-   ========= ===============
-   MASchools R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Massachusetts Test Score Data
-      :name: MASchools
+      ========= ===============
+      MASchools R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Massachusetts Test Score Data
+         :name: massachusetts-test-score-data
 
-   The dataset contains data on test performance, school characteristics
-   and student demographic backgrounds for school districts in
-   Massachusetts.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The dataset contains data on test performance, school
+      characteristics and student demographic backgrounds for school
+      districts in Massachusetts.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("MASchools")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("MASchools")
 
-   A data frame containing 220 observations on 16 variables.
+      .. rubric:: Format
+         :name: format
 
-   district
-      character. District code.
+      A data frame containing 220 observations on 16 variables.
 
-   municipality
-      character. Municipality name.
+      district
+         character. District code.
 
-   expreg
-      Expenditures per pupil, regular.
+      municipality
+         character. Municipality name.
 
-   expspecial
-      Expenditures per pupil, special needs.
+      expreg
+         Expenditures per pupil, regular.
 
-   expbil
-      Expenditures per pupil, bilingual.
+      expspecial
+         Expenditures per pupil, special needs.
 
-   expocc
-      Expenditures per pupil, occupational.
+      expbil
+         Expenditures per pupil, bilingual.
 
-   exptot
-      Expenditures per pupil, total.
+      expocc
+         Expenditures per pupil, occupational.
 
-   scratio
-      Students per computer.
+      exptot
+         Expenditures per pupil, total.
 
-   special
-      Special education students (per cent).
+      scratio
+         Students per computer.
 
-   lunch
-      Percent qualifying for reduced-price lunch.
+      special
+         Special education students (per cent).
 
-   stratio
-      Student-teacher ratio.
+      lunch
+         Percent qualifying for reduced-price lunch.
 
-   income
-      Per capita income.
+      stratio
+         Student-teacher ratio.
 
-   score4
-      4th grade score (math + English + science).
+      income
+         Per capita income.
 
-   score8
-      8th grade score (math + English + science).
+      score4
+         4th grade score (math + English + science).
 
-   salary
-      Average teacher salary.
+      score8
+         8th grade score (math + English + science).
 
-   english
-      Percent of English learners.
+      salary
+         Average teacher salary.
 
-   .. rubric:: Details
-      :name: details
+      english
+         Percent of English learners.
 
-   The Massachusetts data are district-wide averages for public
-   elementary school districts in 1998. The test score is taken from the
-   Massachusetts Comprehensive Assessment System (MCAS) test,
-   administered to all fourth graders in Massachusetts public schools in
-   the spring of 1998. The test is sponsored by the Massachusetts
-   Department of Education and is mandatory for all public schools. The
-   data analyzed here are the overall total score, which is the sum of
-   the scores on the English, Math, and Science portions of the test.
-   Data on the student-teacher ratio, the percent of students receiving
-   a subsidized lunch and on the percent of students still learning
-   english are averages for each elementary school district for the
-   1997–1998 school year and were obtained from the Massachusetts
-   department of education. Data on average district income are from the
-   1990 US Census.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The Massachusetts data are district-wide averages for public
+      elementary school districts in 1998. The test score is taken from
+      the Massachusetts Comprehensive Assessment System (MCAS) test,
+      administered to all fourth graders in Massachusetts public schools
+      in the spring of 1998. The test is sponsored by the Massachusetts
+      Department of Education and is mandatory for all public schools.
+      The data analyzed here are the overall total score, which is the
+      sum of the scores on the English, Math, and Science portions of
+      the test. Data on the student-teacher ratio, the percent of
+      students receiving a subsidized lunch and on the percent of
+      students still learning english are averages for each elementary
+      school district for the 1997–1998 school year and were obtained
+      from the Massachusetts department of education. Data on average
+      district income are from the 1990 US Census.
 
-   Online complements to Stock and Watson (2007).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Stock and Watson (2007).
 
-   Stock, J. H. and Watson, M. W. (2007). *Introduction to
-   Econometrics*, 2nd ed. Boston: Addison Wesley.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, J. H. and Watson, M. W. (2007). *Introduction to
+      Econometrics*, 2nd ed. Boston: Addison Wesley.
 
-   ``StockWatson2007``, ``CASchools``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``StockWatson2007``, ``CASchools``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## Massachusetts
-      data("MASchools")
+      ::
 
-      ## compare with California
-      data("CASchools")
-      CASchools$stratio <- with(CASchools, students/teachers)
-      CASchools$score4 <- with(CASchools, (math + read)/2)
+         ## Massachusetts
+         data("MASchools")
 
-      ## Stock and Watson, parts of Table 9.1, p. 330
-      vars <- c("score4", "stratio", "english", "lunch", "income")
-      cbind(
-        CA_mean = sapply(CASchools[, vars], mean),
-        CA_sd   = sapply(CASchools[, vars], sd),
-        MA_mean = sapply(MASchools[, vars], mean),
-        MA_sd   = sapply(MASchools[, vars], sd))
+         ## compare with California
+         data("CASchools")
+         CASchools$stratio <- with(CASchools, students/teachers)
+         CASchools$score4 <- with(CASchools, (math + read)/2)
 
-      ## Stock and Watson, Table 9.2, p. 332, col. (1)
-      fm1 <- lm(score4 ~ stratio, data = MASchools)
-      coeftest(fm1, vcov = vcovHC(fm1, type = "HC1"))
+         ## Stock and Watson, parts of Table 9.1, p. 330
+         vars <- c("score4", "stratio", "english", "lunch", "income")
+         cbind(
+           CA_mean = sapply(CASchools[, vars], mean),
+           CA_sd   = sapply(CASchools[, vars], sd),
+           MA_mean = sapply(MASchools[, vars], mean),
+           MA_sd   = sapply(MASchools[, vars], sd))
 
-      ## More examples, notably the entire Table 9.2, can be found in:
-      ## help("StockWatson2007")
+         ## Stock and Watson, Table 9.2, p. 332, col. (1)
+         fm1 <- lm(score4 ~ stratio, data = MASchools)
+         coeftest(fm1, vcov = vcovHC(fm1, type = "HC1"))
+
+         ## More examples, notably the entire Table 9.2, can be found in:
+         ## help("StockWatson2007")

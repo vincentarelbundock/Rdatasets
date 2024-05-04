@@ -1,59 +1,61 @@
 .. container::
 
-   ======= ===============
-   Soybean R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Growth of soybean plants
-      :name: Soybean
+      ======= ===============
+      Soybean R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Growth of soybean plants
+         :name: growth-of-soybean-plants
 
-   The ``Soybean`` data frame has 412 rows and 5 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``Soybean`` data frame has 412 rows and 5 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   Plot
-      a factor giving a unique identifier for each plot.
+      This data frame contains the following columns:
 
-   Variety
-      a factor indicating the variety; Forrest (F) or Plant Introduction
-      #416937 (P).
+      Plot
+         a factor giving a unique identifier for each plot.
 
-   Year
-      a factor indicating the year the plot was planted.
+      Variety
+         a factor indicating the variety; Forrest (F) or Plant
+         Introduction #416937 (P).
 
-   Time
-      a numeric vector giving the time the sample was taken (days after
-      planting).
+      Year
+         a factor indicating the year the plot was planted.
 
-   weight
-      a numeric vector giving the average leaf weight per plant (g).
+      Time
+         a numeric vector giving the time the sample was taken (days
+         after planting).
 
-   .. rubric:: Details
-      :name: details
+      weight
+         a numeric vector giving the average leaf weight per plant (g).
 
-   These data are described in Davidian and Giltinan (1995, 1.1.3, p.7)
-   as “Data from an experiment to compare growth patterns of two
-   genotypes of soybeans: Plant Introduction #416937 (P), an
-   experimental strain, and Forrest (F), a commercial variety.”
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      These data are described in Davidian and Giltinan (1995, 1.1.3,
+      p.7) as “Data from an experiment to compare growth patterns of two
+      genotypes of soybeans: Plant Introduction #416937 (P), an
+      experimental strain, and Forrest (F), a commercial variety.”
 
-   Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in S
-   and S-PLUS*, Springer, New York. (Appendix A.27)
+      .. rubric:: Source
+         :name: source
 
-   Davidian, M. and Giltinan, D. M. (1995), *Nonlinear Models for
-   Repeated Measurement Data*, Chapman and Hall, London.
+      Pinheiro, J. C. and Bates, D. M. (2000), *Mixed-Effects Models in
+      S and S-PLUS*, Springer, New York. (Appendix A.27)
 
-   .. rubric:: Examples
-      :name: examples
+      Davidian, M. and Giltinan, D. M. (1995), *Nonlinear Models for
+      Repeated Measurement Data*, Chapman and Hall, London.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(fm1 <- nlsList(SSlogis, data = Soybean))
+      ::
+
+         summary(fm1 <- nlsList(SSlogis, data = Soybean))

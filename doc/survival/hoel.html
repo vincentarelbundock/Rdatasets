@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>hoel</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='hoel'>Mouse cancer data</h2>
+<h2>Mouse cancer data</h2>
 
 <h3>Description</h3>
 
@@ -39,7 +39,7 @@ function processMathHTML() {
 </dd>
 <dt><code>days</code></dt><dd><p>days until death</p>
 </dd>
-<dt><code>outcome</code></dt><dd><p>outcome: codecensor, <code>thymic
+<dt><code>outcome</code></dt><dd><p>outcome: <code>censor</code>, <code>thymic
 	lymphoma</code>, <code>reticulum cell sarcoma</code> <code>other causes</code></p>
 </dd>
 <dt><code>id</code></dt><dd><p>mouse id</p>
@@ -94,6 +94,7 @@ legend("topleft", c("Lymphoma control", "Lymphoma germ free",
 hfit &lt;- coxph(Surv(days, outcome) ~ trt, data= hoel, id = id)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

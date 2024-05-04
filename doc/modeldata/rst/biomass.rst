@@ -1,39 +1,42 @@
 .. container::
 
-   ======= ===============
-   biomass R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Biomass data
-      :name: biomass
+      ======= ===============
+      biomass R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Biomass data
+         :name: biomass-data
 
-   Ghugare et al (2014) contains a data set where different biomass
-   fuels are characterized by the amount of certain molecules (carbon,
-   hydrogen, oxygen, nitrogen, and sulfur) and the corresponding higher
-   heating value (HHV). These data are from their Table S.2 of the
-   Supplementary Materials
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Value
-      :name: value
+      Ghugare et al (2014) contains a data set where different biomass
+      fuels are characterized by the amount of certain molecules
+      (carbon, hydrogen, oxygen, nitrogen, and sulfur) and the
+      corresponding higher heating value (HHV). These data are from
+      their Table S.2 of the Supplementary Materials
 
-   =========== ============
-   ``biomass`` a data frame
-   =========== ============
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      =========== ============
+      ``biomass`` a data frame
+      =========== ============
 
-   Ghugare, S. B., Tiwary, S., Elangovan, V., and Tambe, S. S. (2013).
-   Prediction of Higher Heating Value of Solid Biomass Fuels Using
-   Artificial Intelligence Formalisms. *BioEnergy Research*, 1-12.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Ghugare, S. B., Tiwary, S., Elangovan, V., and Tambe, S. S.
+      (2013). Prediction of Higher Heating Value of Solid Biomass Fuels
+      Using Artificial Intelligence Formalisms. *BioEnergy Research*,
+      1-12.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(biomass)
-      str(biomass)
+      ::
+
+         data(biomass)
+         str(biomass)

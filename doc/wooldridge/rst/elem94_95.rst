@@ -1,80 +1,82 @@
 .. container::
 
-   ========= ===============
-   elem94_95 R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: elem94_95
-      :name: elem94_95
+      ========= ===============
+      elem94_95 R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: elem94_95
+         :name: elem94_95
 
-   Wooldridge Source: Culled from a panel data set used by Leslie Papke
-   in her paper “The Effects of Spending on Test Pass Rates: Evidence
-   from Michigan” (2005), Journal of Public Economics 89, 821-839. Data
-   loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Culled from a panel data set used by Leslie
+      Papke in her paper “The Effects of Spending on Test Pass Rates:
+      Evidence from Michigan” (2005), Journal of Public Economics 89,
+      821-839. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('elem94_95')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('elem94_95')
 
-   A data.frame with 1848 observations on 14 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **distid:** district identifier
+      A data.frame with 1848 observations on 14 variables:
 
-   -  **schid:** school identifier
+      -  **distid:** district identifier
 
-   -  **lunch:** percent eligible, free lunch
+      -  **schid:** school identifier
 
-   -  **enrol:** enrollment
+      -  **lunch:** percent eligible, free lunch
 
-   -  **staff:** staff per 1000 students
+      -  **enrol:** enrollment
 
-   -  **exppp:** expenditures per pupil
+      -  **staff:** staff per 1000 students
 
-   -  **avgsal:** average teacher salary, $
+      -  **exppp:** expenditures per pupil
 
-   -  **avgben:** average teacher non-salary benefits, $
+      -  **avgsal:** average teacher salary, $
 
-   -  **math4:** percent passing 4th grade math test
+      -  **avgben:** average teacher non-salary benefits, $
 
-   -  **story4:** percent passing 4th grade reading test
+      -  **math4:** percent passing 4th grade math test
 
-   -  **bs:** avgben/avgsal
+      -  **story4:** percent passing 4th grade reading test
 
-   -  **lavgsal:** log(avgsal)
+      -  **bs:** avgben/avgsal
 
-   -  **lenrol:** log(enrol)
+      -  **lavgsal:** log(avgsal)
 
-   -  **lstaff:** log(staff)
+      -  **lenrol:** log(enrol)
 
-   .. rubric:: Notes
-      :name: notes
+      -  **lstaff:** log(staff)
 
-   Starting in 1995, the Michigan Department of Education stopped
-   reporting average teacher benefits along with average salary. This
-   data set includes both variables, at the school level, and can be
-   used to study the salary-benefits tradeoff, as in Chapter 4. There
-   are a few suspicious benefits/salary ratios, and so this data set
-   makes a good illustration of the impact of outliers in Chapter 9.
+      .. rubric:: Notes
+         :name: notes
 
-   Used in Text: pages 166-167, 341-342
+      Starting in 1995, the Michigan Department of Education stopped
+      reporting average teacher benefits along with average salary. This
+      data set includes both variables, at the school level, and can be
+      used to study the salary-benefits tradeoff, as in Chapter 4. There
+      are a few suspicious benefits/salary ratios, and so this data set
+      makes a good illustration of the impact of outliers in Chapter 9.
 
-   .. rubric:: Source
-      :name: source
+      Used in Text: pages 166-167, 341-342
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(elem94_95)
+      ::
+
+          str(elem94_95)

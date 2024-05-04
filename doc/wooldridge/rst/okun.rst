@@ -1,51 +1,53 @@
 .. container::
 
-   ==== ===============
-   okun R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: okun
-      :name: okun
+      ==== ===============
+      okun R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: okun
+         :name: okun
 
-   Wooldridge Source: Economic Report of the President, 2007, Tables B-4
-   and B-42. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Economic Report of the President, 2007, Tables
+      B-4 and B-42. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('okun')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('okun')
 
-   A data.frame with 47 observations on 4 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1959 through 2005
+      A data.frame with 47 observations on 4 variables:
 
-   -  **pcrgdp:** percentage change in real GDP
+      -  **year:** 1959 through 2005
 
-   -  **unem:** civilian unemployment rate
+      -  **pcrgdp:** percentage change in real GDP
 
-   -  **cunem:** unem - unem[\_n-1]
+      -  **unem:** civilian unemployment rate
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **cunem:** unem - unem[_n-1]
 
-   410, 444
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      410, 444
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(okun)
+      ::
+
+          str(okun)

@@ -1,100 +1,102 @@
 .. container::
 
-   ==== ===============
-   MCAS R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: The Massachusetts Test Score Data Set
-      :name: MCAS
+      ==== ===============
+      MCAS R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: The Massachusetts Test Score Data Set
+         :name: the-massachusetts-test-score-data-set
 
-   a cross-section from 1997-1998
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 220
+      a cross-section from 1997-1998
 
-   *observation* : schools
+      *number of observations* : 220
 
-   *country* : United States
+      *observation* : schools
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(MCAS)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(MCAS)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   code
-      district code (numerical)
+      A dataframe containing :
 
-   municipa
-      municipality (name)
+      code
+         district code (numerical)
 
-   district
-      district name
+      municipa
+         municipality (name)
 
-   regday
-      spending per pupil, regular
+      district
+         district name
 
-   specneed
-      spending per pupil, special needs
+      regday
+         spending per pupil, regular
 
-   bilingua
-      spending per pupil, bilingual
+      specneed
+         spending per pupil, special needs
 
-   occupday
-      spending per pupil, occupational
+      bilingua
+         spending per pupil, bilingual
 
-   totday
-      spending per pupil, total
+      occupday
+         spending per pupil, occupational
 
-   spc
-      students per computer
+      totday
+         spending per pupil, total
 
-   speced
-      special education students
+      spc
+         students per computer
 
-   lnchpct
-      eligible for free or reduced price lunch
+      speced
+         special education students
 
-   tchratio
-      students per teacher
+      lnchpct
+         eligible for free or reduced price lunch
 
-   percap
-      per capita income
+      tchratio
+         students per teacher
 
-   totsc4
-      4th grade score (``math+english+science``)
+      percap
+         per capita income
 
-   totsc8
-      8th grade score (``math+english+science``)
+      totsc4
+         4th grade score (``math+english+science``)
 
-   avgsalary
-      average teacher salary
+      totsc8
+         8th grade score (``math+english+science``)
 
-   pctel
-      percent English learners
+      avgsalary
+         average teacher salary
 
-   .. rubric:: Source
-      :name: source
+      pctel
+         percent English learners
 
-   Massachusetts Comprehensive Assessment System (MCAS), Massachusetts
-   Department of Education, 1990 U.S. Census.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Massachusetts Comprehensive Assessment System (MCAS),
+      Massachusetts Department of Education, 1990 U.S. Census.
 
-   Stock, James H. and Mark W. Watson (2003) *Introduction to
-   Econometrics*, Addison-Wesley Educational Publishers, chapter 7.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, James H. and Mark W. Watson (2003) *Introduction to
+      Econometrics*, Addison-Wesley Educational Publishers, chapter 7.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

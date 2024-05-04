@@ -1,41 +1,43 @@
 .. container::
 
-   ============ ===============
-   CavsShooting R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Cleveland Cavalier's Shooting (2016-2017)
-      :name: CavsShooting
+      ============ ===============
+      CavsShooting R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cleveland Cavalier's Shooting (2016-2017)
+         :name: cleveland-cavaliers-shooting-2016-2017
 
-   Shooting percentages for two Cav players
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Shooting percentages for two Cav players
 
-   A data frame with 1940 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Player``
-      ``Frye`` or ``Irving``
+      A data frame with 1940 observations on the following 3 variables.
 
-   ``ShotType``
-      ``Two`` or ``Three``
+      ``Player``
+         ``Frye`` or ``Irving``
 
-   ``Hit``
-      ``1``\ =made or ``0``\ =missed
+      ``ShotType``
+         ``Two`` or ``Three``
 
-   .. rubric:: Details
-      :name: details
+      ``Hit``
+         ``1``\ =made or ``0``\ =missed
 
-   Shooting success on 2-point shots and 3-point shots for the 2016-17
-   NBA season for two Cleveland Cavalier basketball players, Kyrie
-   Irving and Channing Frye. Each case is a shot attempt. These data
-   show Simpson's Paradox.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Shooting success on 2-point shots and 3-point shots for the
+      2016-17 NBA season for two Cleveland Cavalier basketball players,
+      Kyrie Irving and Channing Frye. Each case is a shot attempt. These
+      data show Simpson's Paradox.
 
-   http://www.espn.com/nba/player/splits/\_/id/6442/kyrie-irving
-   http://www.espn.com/nba/player/splits/\_/id/2754/type/total/channing-frye
+      .. rubric:: Source
+         :name: source
+
+      http://www.espn.com/nba/player/splits/_/id/6442/kyrie-irving
+      http://www.espn.com/nba/player/splits/_/id/2754/type/total/channing-frye

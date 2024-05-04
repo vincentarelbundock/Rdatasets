@@ -1,46 +1,48 @@
 .. container::
 
-   ========== ===============
-   TechStocks R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Daily Prices of Three Tech Stocks
-      :name: TechStocks
+      ========== ===============
+      TechStocks R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Daily Prices of Three Tech Stocks
+         :name: daily-prices-of-three-tech-stocks
 
-   Daily closing prices of Apple, Google, and Microsoft stocks
-   (12/1/2015 to 12/1/2017)
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Daily closing prices of Apple, Google, and Microsoft stocks
+      (12/1/2015 to 12/1/2017)
 
-   A data frame with 504 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Date``
-      Date (coded as ``mm/dd/yyyy``)
+      A data frame with 504 observations on the following 5 variables.
 
-   ``AAPL``
-      Apple Inc. closing price
+      ``Date``
+         Date (coded as ``mm/dd/yyyy``)
 
-   ``GOOG``
-      Alphabet Inc. (Google) closing price
+      ``AAPL``
+         Apple Inc. closing price
 
-   ``MSFT``
-      Microsoft Corp. closing price
+      ``GOOG``
+         Alphabet Inc. (Google) closing price
 
-   ``t``
-      Time index (1 to 505)
+      ``MSFT``
+         Microsoft Corp. closing price
 
-   .. rubric:: Details
-      :name: details
+      ``t``
+         Time index (1 to 505)
 
-   Closing price of Apple (AAPL), Google/Alphabet (GOOG) and Microsoft
-   (MSFT) stocks for each trading day in a two-year period from
-   12/1/2015 to 12/1/2017.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Closing price of Apple (AAPL), Google/Alphabet (GOOG) and
+      Microsoft (MSFT) stocks for each trading day in a two-year period
+      from 12/1/2015 to 12/1/2017.
 
-   Data downloaded using the Quandl R package (12/2/2017)
+      .. rubric:: Source
+         :name: source
+
+      Data downloaded using the Quandl R package (12/2/2017)

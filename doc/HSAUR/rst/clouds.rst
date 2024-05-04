@@ -1,92 +1,95 @@
 .. container::
 
-   ====== ===============
-   clouds R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Cloud Seeding Data
-      :name: clouds
+      ====== ===============
+      clouds R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Cloud Seeding Data
+         :name: cloud-seeding-data
 
-   Data from an experiment investigating the use of massive amounts of
-   silver iodide (100 to 1000 grams per cloud) in cloud seeding to
-   increase rainfall.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from an experiment investigating the use of massive amounts
+      of silver iodide (100 to 1000 grams per cloud) in cloud seeding to
+      increase rainfall.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("clouds")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("clouds")
 
-   A data frame with 24 observations on the following 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   seeding
-      a factor indicating whether seeding action occured (``no`` or
-      ``yes``).
+      A data frame with 24 observations on the following 7 variables.
 
-   time
-      number of days after the first day of the experiment.
+      seeding
+         a factor indicating whether seeding action occured (``no`` or
+         ``yes``).
 
-   sne
-      suitability criterion.
+      time
+         number of days after the first day of the experiment.
 
-   cloudcover
-      the percentage cloud cover in the experimental area, measured
-      using radar.
+      sne
+         suitability criterion.
 
-   prewetness
-      the total rainfall in the target area one hour before seeding (in
-      cubic metres times ``1e+8``).
+      cloudcover
+         the percentage cloud cover in the experimental area, measured
+         using radar.
 
-   echomotion
-      a factor showing whether the radar echo was ``moving`` or
-      ``stationary``.
+      prewetness
+         the total rainfall in the target area one hour before seeding
+         (in cubic metres times ``1e+8``).
 
-   rainfall
-      the amount of rain in cubic metres times ``1e+8``.
+      echomotion
+         a factor showing whether the radar echo was ``moving`` or
+         ``stationary``.
 
-   .. rubric:: Details
-      :name: details
+      rainfall
+         the amount of rain in cubic metres times ``1e+8``.
 
-   Weather modification, or cloud seeding, is the treatment of
-   individual clouds or storm systems with various inorganic and organic
-   materials in the hope of achieving an increase in rainfall.
-   Introduction of such material into a cloud that contains supercooled
-   water, that is, liquid water colder than zero Celsius, has the aim of
-   inducing freezing, with the consequent ice particles growing at the
-   expense of liquid droplets and becoming heavy enough to fall as rain
-   from clouds that otherwise would produce none.
+      .. rubric:: Details
+         :name: details
 
-   The data available in ``cloud`` were collected in the summer of 1975
-   from an experiment to investigate the use of massive amounts of
-   silver iodide 100 to 1000 grams per cloud) in cloud seeding to
-   increase rainfall. In the experiment, which was conducted in an area
-   of Florida, 24 days were judged suitable for seeding on the basis
-   that a measured suitability criterion (``SNE``).
+      Weather modification, or cloud seeding, is the treatment of
+      individual clouds or storm systems with various inorganic and
+      organic materials in the hope of achieving an increase in
+      rainfall. Introduction of such material into a cloud that contains
+      supercooled water, that is, liquid water colder than zero Celsius,
+      has the aim of inducing freezing, with the consequent ice
+      particles growing at the expense of liquid droplets and becoming
+      heavy enough to fall as rain from clouds that otherwise would
+      produce none.
 
-   .. rubric:: Source
-      :name: source
+      The data available in ``cloud`` were collected in the summer of
+      1975 from an experiment to investigate the use of massive amounts
+      of silver iodide 100 to 1000 grams per cloud) in cloud seeding to
+      increase rainfall. In the experiment, which was conducted in an
+      area of Florida, 24 days were judged suitable for seeding on the
+      basis that a measured suitability criterion (``SNE``).
 
-   W. L. Woodley, J. Simpson, R. Biondini and J. Berkeley (1977),
-   Rainfall results 1970-75: Florida area cumulus experiment. *Science*
-   **195**, 735–742.
+      .. rubric:: Source
+         :name: source
 
-   R. D. Cook and S. Weisberg (1980), Characterizations of an empirical
-   influence function for detecting influential cases in regression.
-   *Technometrics* **22**, 495–508.
+      W. L. Woodley, J. Simpson, R. Biondini and J. Berkeley (1977),
+      Rainfall results 1970-75: Florida area cumulus experiment.
+      *Science* **195**, 735–742.
 
-   .. rubric:: Examples
-      :name: examples
+      R. D. Cook and S. Weisberg (1980), Characterizations of an
+      empirical influence function for detecting influential cases in
+      regression. *Technometrics* **22**, 495–508.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("clouds", package = "HSAUR")
-        layout(matrix(1:2, nrow = 2))
-        boxplot(rainfall ~ seeding, data = clouds, ylab = "Rainfall")
-        boxplot(rainfall ~ echomotion, data = clouds, ylab = "Rainfall")    
+      ::
+
+           data("clouds", package = "HSAUR")
+           layout(matrix(1:2, nrow = 2))
+           boxplot(rainfall ~ seeding, data = clouds, ylab = "Rainfall")
+           boxplot(rainfall ~ echomotion, data = clouds, ylab = "Rainfall")    

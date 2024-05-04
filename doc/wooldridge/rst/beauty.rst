@@ -1,81 +1,84 @@
 .. container::
 
-   ====== ===============
-   beauty R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: beauty
-      :name: beauty
+      ====== ===============
+      beauty R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: beauty
+         :name: beauty
 
-   Wooldridge Source: Hamermesh, D.S. and J.E. Biddle (1994), “Beauty
-   and the Labor Market,” American Economic Review 84, 1174-1194.
-   Professor Hamermesh kindly provided me with the data. For
-   manageability, I have included only a subset of the variables, which
-   results in somewhat larger sample sizes than reported for the
-   regressions in the Hamermesh and Biddle paper. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: Hamermesh, D.S. and J.E. Biddle (1994), “Beauty
+      and the Labor Market,” American Economic Review 84, 1174-1194.
+      Professor Hamermesh kindly provided me with the data. For
+      manageability, I have included only a subset of the variables,
+      which results in somewhat larger sample sizes than reported for
+      the regressions in the Hamermesh and Biddle paper. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('beauty')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('beauty')
 
-   A data.frame with 1260 observations on 17 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **wage:** hourly wage
+      A data.frame with 1260 observations on 17 variables:
 
-   -  **lwage:** log(wage)
+      -  **wage:** hourly wage
 
-   -  **belavg:** =1 if looks <= 2
+      -  **lwage:** log(wage)
 
-   -  **abvavg:** =1 if looks >=4
+      -  **belavg:** =1 if looks <= 2
 
-   -  **exper:** years of workforce experience
+      -  **abvavg:** =1 if looks >=4
 
-   -  **looks:** from 1 to 5
+      -  **exper:** years of workforce experience
 
-   -  **union:** =1 if union member
+      -  **looks:** from 1 to 5
 
-   -  **goodhlth:** =1 if good health
+      -  **union:** =1 if union member
 
-   -  **black:** =1 if black
+      -  **goodhlth:** =1 if good health
 
-   -  **female:** =1 if female
+      -  **black:** =1 if black
 
-   -  **married:** =1 if married
+      -  **female:** =1 if female
 
-   -  **south:** =1 if live in south
+      -  **married:** =1 if married
 
-   -  **bigcity:** =1 if live in big city
+      -  **south:** =1 if live in south
 
-   -  **smllcity:** =1 if live in small city
+      -  **bigcity:** =1 if live in big city
 
-   -  **service:** =1 if service industry
+      -  **smllcity:** =1 if live in small city
 
-   -  **expersq:** exper^2
+      -  **service:** =1 if service industry
 
-   -  **educ:** years of schooling
+      -  **expersq:** exper^2
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **educ:** years of schooling
 
-   pages 238-239, 265-266
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 238-239, 265-266
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(beauty)
+      ::
+
+          str(beauty)

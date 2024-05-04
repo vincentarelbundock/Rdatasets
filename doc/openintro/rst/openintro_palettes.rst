@@ -1,38 +1,40 @@
 .. container::
 
-   ================== ===============
-   openintro_palettes R Documentation
-   ================== ===============
+   .. container::
 
-   .. rubric:: OpenIntro palettes
-      :name: openintro_palettes
+      ================== ===============
+      openintro_palettes R Documentation
+      ================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: OpenIntro palettes
+         :name: openintro-palettes
 
-   A list with OpenIntro color palettes
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A list with OpenIntro color palettes
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      openintro_palettes
+      ::
 
-   .. rubric:: Format
-      :name: format
+         openintro_palettes
 
-   A list with 8 color palettes: main, two, three, four, five, cool,
-   hot, gray
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Examples
-      :name: examples
+      A list with 8 color palettes: main, two, three, four, five, cool,
+      hot, gray
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      openintro_palettes
+      ::
 
-      openintro_palettes$main
-      openintro_palettes$three
-      openintro_palettes$cool
-      openintro_palettes$hot
+         openintro_palettes
+
+         openintro_palettes$main
+         openintro_palettes$three
+         openintro_palettes$cool
+         openintro_palettes$hot

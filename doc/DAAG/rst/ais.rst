@@ -1,86 +1,89 @@
 .. container::
 
-   === ===============
-   ais R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Australian athletes data set
-      :name: ais
+      === ===============
+      ais R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Australian athletes data set
+         :name: australian-athletes-data-set
 
-   These data were collected in a study of how data on various
-   characteristics of the blood varied with sport, body size, and sex of
-   the athlete.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These data were collected in a study of how data on various
+      characteristics of the blood varied with sport, body size, and sex
+      of the athlete.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(ais)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(ais)
 
-   A data frame with 202 observations on the following 13 variables.
+      .. rubric:: Format
+         :name: format
 
-   rcc
-      red blood cell count, in ``10^{12} l^{-1}``
+      A data frame with 202 observations on the following 13 variables.
 
-   wcc
-      while blood cell count, in ``10^{12}`` per liter
+      rcc
+         red blood cell count, in ``10^{12} l^{-1}``
 
-   hc
-      hematocrit, percent
+      wcc
+         while blood cell count, in ``10^{12}`` per liter
 
-   hg
-      hemaglobin concentration, in g per decaliter
+      hc
+         hematocrit, percent
 
-   ferr
-      plasma ferritins, ng ``dl^{-1}``
+      hg
+         hemaglobin concentration, in g per decaliter
 
-   bmi
-      Body mass index, kg ``cm^{-2} 10^2``
+      ferr
+         plasma ferritins, ng ``dl^{-1}``
 
-   ssf
-      sum of skin folds
+      bmi
+         Body mass index, kg ``cm^{-2} 10^2``
 
-   pcBfat
-      percent Body fat
+      ssf
+         sum of skin folds
 
-   lbm
-      lean body mass, kg
+      pcBfat
+         percent Body fat
 
-   ht
-      height, cm
+      lbm
+         lean body mass, kg
 
-   wt
-      weight, kg
+      ht
+         height, cm
 
-   sex
-      a factor with levels ``f`` ``m``
+      wt
+         weight, kg
 
-   sport
-      a factor with levels ``B_Ball`` ``Field`` ``Gym`` ``Netball``
-      ``Row`` ``Swim`` ``T_400m`` ``T_Sprnt`` ``Tennis`` ``W_Polo``
+      sex
+         a factor with levels ``f`` ``m``
 
-   .. rubric:: Details
-      :name: details
+      sport
+         a factor with levels ``B_Ball`` ``Field`` ``Gym`` ``Netball``
+         ``Row`` ``Swim`` ``T_400m`` ``T_Sprnt`` ``Tennis`` ``W_Polo``
 
-   Do blood hemoglobin concentrations of athletes in endurance-related
-   events differ from those in power-related events?
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Do blood hemoglobin concentrations of athletes in
+      endurance-related events differ from those in power-related
+      events?
 
-   These data were the basis for the analyses that are reported in
-   Telford and Cunningham (1991).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      These data were the basis for the analyses that are reported in
+      Telford and Cunningham (1991).
 
-   Telford, R.D. and Cunningham, R.B. 1991. Sex, sport and body-size
-   dependency of hematology in highly trained athletes. Medicine and
-   Science in Sports and Exercise 23: 788-794.
+      .. rubric:: References
+         :name: references
+
+      Telford, R.D. and Cunningham, R.B. 1991. Sex, sport and body-size
+      dependency of hematology in highly trained athletes. Medicine and
+      Science in Sports and Exercise 23: 788-794.

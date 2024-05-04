@@ -1,83 +1,86 @@
 .. container::
 
-   ===== ===============
-   sp500 R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Daily S&P 500 Index data from 1950 to 2015
-      :name: sp500
+      ===== ===============
+      sp500 R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Daily S&P 500 Index data from 1950 to 2015
+         :name: daily-sp-500-index-data-from-1950-to-2015
 
-   This dataset provides daily price indicators for the S&P 500 index
-   from the beginning of 1950 to the end of 2015. The index includes 500
-   leading companies and captures about 80 percent coverage of available
-   market capitalization.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This dataset provides daily price indicators for the S&P 500 index
+      from the beginning of 1950 to the end of 2015. The index includes
+      500 leading companies and captures about 80 percent coverage of
+      available market capitalization.
 
-   .. code:: R
-
-      sp500
-
-   .. rubric:: Format
-      :name: format
-
-   A tibble with 16,607 rows and 7 variables:
-
-   date
-      The date expressed as ``Date`` values.
-
-   open, high, low, close
-      The day's opening, high, low, and closing prices in USD. The
-      ``close`` price is adjusted for splits.
-
-   volume
-      The number of trades for the given ``date``.
-
-   adj_close
-      The close price adjusted for both dividends and splits.
-
-   .. rubric:: Examples
-      :name: examples
-
-   Here is a glimpse at the data available in ``sp500``.
-
-   .. container:: sourceCode r
+      .. rubric:: Usage
+         :name: usage
 
       ::
 
-         dplyr::glimpse(sp500)
-         #> Rows: 16,607
-         #> Columns: 7
-         #> $ date      <date> 2015-12-31, 2015-12-30, 2015-12-29, 2015-12-28, 2015-12-24,~
-         #> $ open      <dbl> 2060.59, 2077.34, 2060.54, 2057.77, 2063.52, 2042.20, 2023.1~
-         #> $ high      <dbl> 2062.54, 2077.34, 2081.56, 2057.77, 2067.36, 2064.73, 2042.7~
-         #> $ low       <dbl> 2043.62, 2061.97, 2060.54, 2044.20, 2058.73, 2042.20, 2020.4~
-         #> $ close     <dbl> 2043.94, 2063.36, 2078.36, 2056.50, 2060.99, 2064.29, 2038.9~
-         #> $ volume    <dbl> 2655330000, 2367430000, 2542000000, 2492510000, 1411860000, ~
-         #> $ adj_close <dbl> 2043.94, 2063.36, 2078.36, 2056.50, 2060.99, 2064.29, 2038.9~
+         sp500
 
-   .. rubric:: Dataset ID and Badge
-      :name: dataset-id-and-badge
+      .. rubric:: Format
+         :name: format
 
-   DATA-4
+      A tibble with 16,607 rows and 7 variables:
 
-   .. container::
+      date
+         The date expressed as ``Date`` values.
 
-      |This image of that of a dataset badge.|
+      open, high, low, close
+         The day's opening, high, low, and closing prices in USD. The
+         ``close`` price is adjusted for splits.
 
-   .. rubric:: Dataset Introduced
-      :name: dataset-introduced
+      volume
+         The number of trades for the given ``date``.
 
-   ``v0.2.0.5`` (March 31, 2020)
+      adj_close
+         The close price adjusted for both dividends and splits.
 
-   .. rubric:: See Also
-      :name: see-also
+      .. rubric:: Examples
+         :name: examples
 
-   Other datasets: ``countrypops``, ``exibble``, ``gtcars``, ``metro``,
-   ``pizzaplace``, ``rx_addv``, ``rx_adsl``, ``sza``, ``towny``
+      Here is a glimpse at the data available in ``sp500``.
+
+      .. container:: sourceCode r
+
+         ::
+
+            dplyr::glimpse(sp500)
+            #> Rows: 16,607
+            #> Columns: 7
+            #> $ date      <date> 2015-12-31, 2015-12-30, 2015-12-29, 2015-12-28, 2015-12-24,~
+            #> $ open      <dbl> 2060.59, 2077.34, 2060.54, 2057.77, 2063.52, 2042.20, 2023.1~
+            #> $ high      <dbl> 2062.54, 2077.34, 2081.56, 2057.77, 2067.36, 2064.73, 2042.7~
+            #> $ low       <dbl> 2043.62, 2061.97, 2060.54, 2044.20, 2058.73, 2042.20, 2020.4~
+            #> $ close     <dbl> 2043.94, 2063.36, 2078.36, 2056.50, 2060.99, 2064.29, 2038.9~
+            #> $ volume    <dbl> 2655330000, 2367430000, 2542000000, 2492510000, 1411860000, ~
+            #> $ adj_close <dbl> 2043.94, 2063.36, 2078.36, 2056.50, 2060.99, 2064.29, 2038.9~
+
+      .. rubric:: Dataset ID and Badge
+         :name: dataset-id-and-badge
+
+      DATA-4
+
+      .. container::
+
+         |This image of that of a dataset badge.|
+
+      .. rubric:: Dataset Introduced
+         :name: dataset-introduced
+
+      ``v0.2.0.5`` (March 31, 2020)
+
+      .. rubric:: See Also
+         :name: see-also
+
+      Other datasets: ``constants``, ``countrypops``, ``exibble``,
+      ``gtcars``, ``illness``, ``metro``, ``pizzaplace``, ``rx_addv``,
+      ``rx_adsl``, ``sza``, ``towny``
 
 .. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_sp500.png

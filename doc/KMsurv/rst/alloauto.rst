@@ -1,42 +1,44 @@
 .. container::
 
-   ======== ===============
-   alloauto R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: data from Section 1.9
-      :name: alloauto
+      ======== ===============
+      alloauto R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Section 1.9
+         :name: data-from-section-1.9
 
-   The ``alloauto`` data frame has 90 rows and 5 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``alloauto`` data frame has 90 rows and 5 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   time
-      Time to death or relapse, months
+      This data frame contains the following columns:
 
-   type
-      Type of transplant (1=allogeneic, 2=autologous)
+      time
+         Time to death or relapse, months
 
-   delta
-      Leukemia-free survival indicator (0=alive without relapse, 1=dead
-      or relapse)
+      type
+         Type of transplant (1=allogeneic, 2=autologous)
 
-   .. rubric:: Source
-      :name: source
+      delta
+         Leukemia-free survival indicator (0=alive without relapse,
+         1=dead or relapse)
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer. Kardaun Stat. Nederlandica 37
-   (1983), 103-126.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer. Kardaun Stat. Nederlandica
+      37 (1983), 103-126.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(alloauto)
+      ::
+
+         data(alloauto)

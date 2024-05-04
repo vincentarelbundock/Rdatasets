@@ -1,60 +1,62 @@
 .. container::
 
-   ============ ===============
-   ConsumerGood R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Properties of a Fast-Moving Consumer Good
-      :name: ConsumerGood
+      ============ ===============
+      ConsumerGood R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Properties of a Fast-Moving Consumer Good
+         :name: properties-of-a-fast-moving-consumer-good
 
-   Time series of distribution, market share and price of a fast-moving
-   consumer good.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Time series of distribution, market share and price of a
+      fast-moving consumer good.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("ConsumerGood")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("ConsumerGood")
 
-   A weekly multiple time series from 1989(11) to 1991(9) with 3
-   variables.
+      .. rubric:: Format
+         :name: format
 
-   distribution
-      Distribution.
+      A weekly multiple time series from 1989(11) to 1991(9) with 3
+      variables.
 
-   share
-      Market share.
+      distribution
+         Distribution.
 
-   price
-      Price.
+      share
+         Market share.
 
-   .. rubric:: Source
-      :name: source
+      price
+         Price.
 
-   Online complements to Franses (1998).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Franses (1998).
 
-   Franses, P.H. (1998). *Time Series Models for Business and Economic
-   Forecasting*. Cambridge, UK: Cambridge University Press.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Franses, P.H. (1998). *Time Series Models for Business and
+      Economic Forecasting*. Cambridge, UK: Cambridge University Press.
 
-   ``Franses1998``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``Franses1998``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("ConsumerGood")
-      plot(ConsumerGood)
+      ::
+
+         data("ConsumerGood")
+         plot(ConsumerGood)

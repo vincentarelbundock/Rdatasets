@@ -1,46 +1,49 @@
 .. container::
 
-   ======== ===============
-   penelope R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Guesses at the weight of Penelope (a cow)
-      :name: penelope
+      ======== ===============
+      penelope R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Guesses at the weight of Penelope (a cow)
+         :name: guesses-at-the-weight-of-penelope-a-cow
 
-   The data was collected by the Planet Money podcast to test a theory
-   about crowd-sourcing. Penelope's actual weight was 1,355 pounds.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The data was collected by the Planet Money podcast to test a
+      theory about crowd-sourcing. Penelope's actual weight was 1,355
+      pounds.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      penelope
+      ::
 
-   .. rubric:: Format
-      :name: format
+         penelope
 
-   A data frame with 17,184 observations on the following variable.
+      .. rubric:: Format
+         :name: format
 
-   weight
-      Guesses of Penelope's weight, in pounds.
+      A data frame with 17,184 observations on the following variable.
 
-   .. rubric:: Source
-      :name: source
+      weight
+         Guesses of Penelope's weight, in pounds.
 
-   https://www.npr.org/sections/money/2015/08/07/429720443/17-205-people-guessed-the-weight-of-a-cow-heres-how-they-did
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.npr.org/sections/money/2015/08/07/429720443/17-205-people-guessed-the-weight-of-a-cow-heres-how-they-did
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(penelope, aes(x = weight)) +
-        geom_histogram(binwidth = 250)
+         library(ggplot2)
 
-      summary(penelope$weight)
+         ggplot(penelope, aes(x = weight)) +
+           geom_histogram(binwidth = 250)
+
+         summary(penelope$weight)

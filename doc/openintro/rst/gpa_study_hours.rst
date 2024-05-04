@@ -1,59 +1,61 @@
 .. container::
 
-   =============== ===============
-   gpa_study_hours R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: gpa_study_hours
-      :name: gpa_study_hours
+      =============== ===============
+      gpa_study_hours R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: gpa_study_hours
+         :name: gpa_study_hours
 
-   A data frame with 193 rows and 2 columns. The columns represent the
-   variables ``gpa`` and ``study_hours`` for a sample of 193
-   undergraduate students who took an introductory statistics course in
-   2012 at a private US university.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data frame with 193 rows and 2 columns. The columns represent
+      the variables ``gpa`` and ``study_hours`` for a sample of 193
+      undergraduate students who took an introductory statistics course
+      in 2012 at a private US university.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      gpa_study_hours
+      ::
 
-   .. rubric:: Format
-      :name: format
+         gpa_study_hours
 
-   A data frame with 193 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   gpa
-      Grade point average (GPA) of student.
+      A data frame with 193 observations on the following 2 variables.
 
-   study_hours
-      Number of hours students study per week.
+      gpa
+         Grade point average (GPA) of student.
 
-   .. rubric:: Details
-      :name: details
+      study_hours
+         Number of hours students study per week.
 
-   GPA ranges from 0 to 4 points, however one student reported a GPA >
-   4. This is a data error but this observation has been left in the
-   dataset as it is used to illustrate issues with real survey data.
-   Both variables are self reported, hence may not be accurate.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      GPA ranges from 0 to 4 points, however one student reported a GPA
+      > 4. This is a data error but this observation has been left in
+      the dataset as it is used to illustrate issues with real survey
+      data. Both variables are self reported, hence may not be accurate.
 
-   Collected at a private US university as part of an anonymous survey
-   in an introductory statistics course.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Collected at a private US university as part of an anonymous
+      survey in an introductory statistics course.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(gpa_study_hours, aes(x = study_hours, y = gpa)) +
-        geom_point(alpha = 0.5) +
-        labs(x = "Study hours/week", y = "GPA")
+         library(ggplot2)
+
+         ggplot(gpa_study_hours, aes(x = study_hours, y = gpa)) +
+           geom_point(alpha = 0.5) +
+           labs(x = "Study hours/week", y = "GPA")

@@ -1,88 +1,90 @@
 .. container::
 
-   =============== ===============
-   PhDPublications R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: Doctoral Publications
-      :name: PhDPublications
+      =============== ===============
+      PhDPublications R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Doctoral Publications
+         :name: doctoral-publications
 
-   Cross-section data on the scientific productivity of PhD students in
-   biochemistry.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-section data on the scientific productivity of PhD students
+      in biochemistry.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("PhDPublications")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("PhDPublications")
 
-   A data frame containing 915 observations on 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   articles
-      Number of articles published during last 3 years of PhD.
+      A data frame containing 915 observations on 6 variables.
 
-   gender
-      factor indicating gender.
+      articles
+         Number of articles published during last 3 years of PhD.
 
-   married
-      factor. Is the PhD student married?
+      gender
+         factor indicating gender.
 
-   kids
-      Number of children less than 6 years old.
+      married
+         factor. Is the PhD student married?
 
-   prestige
-      Prestige of the graduate program.
+      kids
+         Number of children less than 6 years old.
 
-   mentor
-      Number of articles published by student's mentor.
+      prestige
+         Prestige of the graduate program.
 
-   .. rubric:: Source
-      :name: source
+      mentor
+         Number of articles published by student's mentor.
 
-   Online complements to Long (1997).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Long (1997).
 
-   Long, J.S. (1990). *Regression Models for Categorical and Limited
-   Dependent Variables*. Thousand Oaks: Sage Publications.
+      .. rubric:: References
+         :name: references
 
-   Long, J.S. (1997). The Origin of Sex Differences in Science. *Social
-   Forces*, **68**, 1297–1315.
+      Long, J.S. (1990). *Regression Models for Categorical and Limited
+      Dependent Variables*. Thousand Oaks: Sage Publications.
 
-   .. rubric:: Examples
-      :name: examples
+      Long, J.S. (1997). The Origin of Sex Differences in Science.
+      *Social Forces*, **68**, 1297–1315.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## from Long (1997)
-      data("PhDPublications")
+      ::
 
-      ## Table 8.1, p. 227
-      summary(PhDPublications)
+         ## from Long (1997)
+         data("PhDPublications")
 
-      ## Figure 8.2, p. 220
-      plot(0:10, dpois(0:10, mean(PhDPublications$articles)), type = "b", col = 2,
-        xlab = "Number of articles", ylab = "Probability")
-      lines(0:10, prop.table(table(PhDPublications$articles))[1:11], type = "b")
-      legend("topright", c("observed", "predicted"), col = 1:2, lty = rep(1, 2), bty = "n")
+         ## Table 8.1, p. 227
+         summary(PhDPublications)
 
-      ## Table 8.2, p. 228
-      fm_lrm <- lm(log(articles + 0.5) ~ ., data = PhDPublications)
-      summary(fm_lrm)
-      -2 * logLik(fm_lrm)
-      fm_prm <- glm(articles ~ ., data = PhDPublications, family = poisson)
-      library("MASS")
-      fm_nbrm <- glm.nb(articles ~ ., data = PhDPublications)
+         ## Figure 8.2, p. 220
+         plot(0:10, dpois(0:10, mean(PhDPublications$articles)), type = "b", col = 2,
+           xlab = "Number of articles", ylab = "Probability")
+         lines(0:10, prop.table(table(PhDPublications$articles))[1:11], type = "b")
+         legend("topright", c("observed", "predicted"), col = 1:2, lty = rep(1, 2), bty = "n")
 
-      ## Table 8.3, p. 246
-      library("pscl")
-      fm_zip <- zeroinfl(articles ~ . | ., data = PhDPublications)
-      fm_zinb <- zeroinfl(articles ~ . | ., data = PhDPublications, dist = "negbin")
+         ## Table 8.2, p. 228
+         fm_lrm <- lm(log(articles + 0.5) ~ ., data = PhDPublications)
+         summary(fm_lrm)
+         -2 * logLik(fm_lrm)
+         fm_prm <- glm(articles ~ ., data = PhDPublications, family = poisson)
+         library("MASS")
+         fm_nbrm <- glm.nb(articles ~ ., data = PhDPublications)
+
+         ## Table 8.3, p. 246
+         library("pscl")
+         fm_zip <- zeroinfl(articles ~ . | ., data = PhDPublications)
+         fm_zinb <- zeroinfl(articles ~ . | ., data = PhDPublications, dist = "negbin")

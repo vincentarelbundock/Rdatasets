@@ -1,70 +1,73 @@
 .. container::
 
-   ===== ===============
-   Hsb82 R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: High School and Beyond - 1982
-      :name: Hsb82
+      ===== ===============
+      Hsb82 R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: High School and Beyond - 1982
+         :name: high-school-and-beyond---1982
 
-   Data from the 1982 study “High School and Beyond”.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from the 1982 study “High School and Beyond”.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Hsb82)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Hsb82)
 
-   A data frame with 7185 observations on students including the
-   following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   school
-      an ordered factor designating the school that the student attends.
+      A data frame with 7185 observations on students including the
+      following 8 variables.
 
-   minrty
-      a factor with levels
+      school
+         an ordered factor designating the school that the student
+         attends.
 
-   sx
-      a factor with levels ``Male`` and ``Female``
+      minrty
+         a factor with levels
 
-   ses
-      a numeric vector of socio-economic scores
+      sx
+         a factor with levels ``Male`` and ``Female``
 
-   mAch
-      a numeric vector of Mathematics achievement scores
+      ses
+         a numeric vector of socio-economic scores
 
-   meanses
-      a numeric vector of mean ``ses`` for the school
+      mAch
+         a numeric vector of Mathematics achievement scores
 
-   sector
-      a factor with levels ``Public`` and ``Catholic``
+      meanses
+         a numeric vector of mean ``ses`` for the school
 
-   cses
-      a numeric vector of centered ``ses`` values where the centering is
-      with respect to the ``meanses`` for the school.
+      sector
+         a factor with levels ``Public`` and ``Catholic``
 
-   .. rubric:: Details
-      :name: details
+      cses
+         a numeric vector of centered ``ses`` values where the centering
+         is with respect to the ``meanses`` for the school.
 
-   Each row in this data frame contains the data for one student.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: References
-      :name: references
+      Each row in this data frame contains the data for one student.
 
-   Raudenbush, Stephen and Bryk, Anthony (2002), *Hierarchical Linear
-   Models: Applications and Data Analysis Methods*, Sage (chapter 4).
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Raudenbush, Stephen and Bryk, Anthony (2002), *Hierarchical Linear
+      Models: Applications and Data Analysis Methods*, Sage (chapter 4).
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Hsb82)
-      summary(Hsb82)
+      ::
+
+         data(Hsb82)
+         summary(Hsb82)

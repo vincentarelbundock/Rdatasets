@@ -1,106 +1,108 @@
 .. container::
 
-   ========== ===============
-   Bundesliga R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Ergebnisse der Fussball-Bundesliga
-      :name: Bundesliga
+      ========== ===============
+      Bundesliga R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Ergebnisse der Fussball-Bundesliga
+         :name: ergebnisse-der-fussball-bundesliga
 
-   Results from the first German soccer league (1963-2008).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Results from the first German soccer league (1963-2008).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Bundesliga")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Bundesliga")
 
-   A data frame with 14018 observations and 7 variables.
+      .. rubric:: Format
+         :name: format
 
-   HomeTeam
-      factor. Name of the home team.
+      A data frame with 14018 observations and 7 variables.
 
-   AwayTeam
-      factor. Name of the away team.
+      HomeTeam
+         factor. Name of the home team.
 
-   HomeGoals
-      number of goals scored by the home team.
+      AwayTeam
+         factor. Name of the away team.
 
-   AwayGoals
-      number of goals scored by the away team.
+      HomeGoals
+         number of goals scored by the home team.
 
-   Round
-      round of the game.
+      AwayGoals
+         number of goals scored by the away team.
 
-   Year
-      year in which the season started.
+      Round
+         round of the game.
 
-   Date
-      starting time of the game (in ``"POSIXct"`` format).
+      Year
+         year in which the season started.
 
-   .. rubric:: Details
-      :name: details
+      Date
+         starting time of the game (in ``"POSIXct"`` format).
 
-   The data comprises all games in the first German soccer league since
-   its foundation in 1963. The data have been queried online from the
-   official Web page of the DFB and prepared as a data frame in R by
-   Daniel Dekic, Torsten Hothorn, and Achim Zeileis (replacing earlier
-   versions of the data in the package containing only subsets of
-   years).
+      .. rubric:: Details
+         :name: details
 
-   Each year/season comprises 34 rounds (except 1963, 1964, 1991) so
-   that all 18 teams play twice against each other (switching home court
-   advantage). In 1963/64, there were only 16 teams, hence only 30
-   rounds. In 1991, after the German unification, there was one season
-   with 20 teams and 38 rounds.
+      The data comprises all games in the first German soccer league
+      since its foundation in 1963. The data have been queried online
+      from the official Web page of the DFB and prepared as a data frame
+      in R by Daniel Dekic, Torsten Hothorn, and Achim Zeileis
+      (replacing earlier versions of the data in the package containing
+      only subsets of years).
 
-   .. rubric:: Source
-      :name: source
+      Each year/season comprises 34 rounds (except 1963, 1964, 1991) so
+      that all 18 teams play twice against each other (switching home
+      court advantage). In 1963/64, there were only 16 teams, hence only
+      30 rounds. In 1991, after the German unification, there was one
+      season with 20 teams and 38 rounds.
 
-   Homepage of the Deutscher Fussball-Bund (DFB, German Football
-   Association): https://www.dfb.de/index/
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Homepage of the Deutscher Fussball-Bund (DFB, German Football
+      Association): https://www.dfb.de/index/
 
-   Leonhard Knorr-Held (1999), Dynamic rating of sports teams. SFB 386
-   “Statistical Analysis of Discrete Structures”, Discussion paper
-   **98**.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Leonhard Knorr-Held (1999), Dynamic rating of sports teams. SFB
+      386 “Statistical Analysis of Discrete Structures”, Discussion
+      paper **98**.
 
-   ``UKSoccer``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``UKSoccer``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("Bundesliga")
+      ::
 
-      ## number of goals per game poisson distributed?
-      ngoals1 <- xtabs(~ HomeGoals, data = Bundesliga, subset = Year == 1995)
-      ngoals2 <- xtabs(~ AwayGoals, data = Bundesliga, subset = Year == 1995)
-      ngoals3 <- table(apply(subset(Bundesliga, Year == 1995)[,3:4], 1, sum))
+         data("Bundesliga")
 
-      gf1 <- goodfit(ngoals1)
-      gf2 <- goodfit(ngoals2)
-      gf3 <- goodfit(ngoals3)
+         ## number of goals per game poisson distributed?
+         ngoals1 <- xtabs(~ HomeGoals, data = Bundesliga, subset = Year == 1995)
+         ngoals2 <- xtabs(~ AwayGoals, data = Bundesliga, subset = Year == 1995)
+         ngoals3 <- table(apply(subset(Bundesliga, Year == 1995)[,3:4], 1, sum))
 
-      summary(gf1)
-      summary(gf2)
-      summary(gf3)
-      plot(gf1)
-      plot(gf2)
-      plot(gf3)
+         gf1 <- goodfit(ngoals1)
+         gf2 <- goodfit(ngoals2)
+         gf3 <- goodfit(ngoals3)
 
-      Ord_plot(ngoals1)
-      distplot(ngoals1)
+         summary(gf1)
+         summary(gf2)
+         summary(gf3)
+         plot(gf1)
+         plot(gf2)
+         plot(gf3)
+
+         Ord_plot(ngoals1)
+         distplot(ngoals1)

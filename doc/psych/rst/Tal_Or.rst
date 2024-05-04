@@ -1,93 +1,96 @@
 .. container::
 
-   ====== ===============
-   Tal_Or R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Data set testing causal direction in presumed media
-      influence
-      :name: Tal_Or
+      ====== ===============
+      Tal_Or R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data set testing causal direction in presumed media
+         influence
+         :name: data-set-testing-causal-direction-in-presumed-media-influence
 
-   Nurit Tal-Or, Jonanathan Cohen, Yariv Tasfati, and Albert Gunther
-   (2010) examined the presumed effect of media on other people and
-   change in attitudes. This data set is from Study 2, and examined the
-   effect of presumed influence of the media upon subsequent actions. It
-   is used as an example of mediation by Hayes (2013) and for the
-   mediate function.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Nurit Tal-Or, Jonanathan Cohen, Yariv Tasfati, and Albert Gunther
+      (2010) examined the presumed effect of media on other people and
+      change in attitudes. This data set is from Study 2, and examined
+      the effect of presumed influence of the media upon subsequent
+      actions. It is used as an example of mediation by Hayes (2013) and
+      for the mediate function.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Tal.Or")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Tal.Or")
 
-   A data frame with 123 observations on the following 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``cond``
-      Experimental Condition: 0 low media importance, 1 high media
-      importance
+      A data frame with 123 observations on the following 6 variables.
 
-   ``pmi``
-      Presumed media influence (based upon the mean of two items
+      ``cond``
+         Experimental Condition: 0 low media importance, 1 high media
+         importance
 
-   ``import``
-      Importance of the issue
+      ``pmi``
+         Presumed media influence (based upon the mean of two items
 
-   ``reaction``
-      Subjects rated agreement about possible reactions to the story
-      (mean of 4 items).
+      ``import``
+         Importance of the issue
 
-   ``gender``
-      1 = male, 2 = female
+      ``reaction``
+         Subjects rated agreement about possible reactions to the story
+         (mean of 4 items).
 
-   ``age``
-      a numeric vector
+      ``gender``
+         1 = male, 2 = female
 
-   .. rubric:: Details
-      :name: details
+      ``age``
+         a numeric vector
 
-   Tal-Or et al. (2010) examined the presumed effect of the media in two
-   experimental studies. These data are from study 2. '... perceptions
-   regarding the influence of a news story about an expected shortage in
-   sugar were manipulated indirectly, by manipulating the perceived
-   exposure to the news story, and behavioral intentions resulting from
-   the story were consequently measured." (p 801).
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Tal-Or et al. (2010) examined the presumed effect of the media in
+      two experimental studies. These data are from study 2. '...
+      perceptions regarding the influence of a news story about an
+      expected shortage in sugar were manipulated indirectly, by
+      manipulating the perceived exposure to the news story, and
+      behavioral intentions resulting from the story were consequently
+      measured." (p 801).
 
-   The data were downloaded from the webpages of Andrew Hayes
-   (https://www.afhayes.com/public/hayes2018data.zip) supporting the
-   first and second edition of his book. The name of the original data
-   set was pmi. (Gender was recoded to reflect the number of X
-   chromosomes).
+      .. rubric:: Source
+         :name: source
 
-   The original data are from Nurit Tal-Or, Jonathan Cohen, Yariv
-   Tsfati, and Albert C. Gunther and are used with their kind
-   permission.
+      The data were downloaded from the webpages of Andrew Hayes
+      (https://www.afhayes.com/public/hayes2018data.zip) supporting the
+      first and second edition of his book. The name of the original
+      data set was pmi. (Gender was recoded to reflect the number of X
+      chromosomes).
 
-   .. rubric:: References
-      :name: references
+      The original data are from Nurit Tal-Or, Jonathan Cohen, Yariv
+      Tsfati, and Albert C. Gunther and are used with their kind
+      permission.
 
-   Nurit Tal-Or, Jonathan Cohen, Yariv Tsfati and Albert C. Gunther
-   (2010), Testing Causal Direction in the Influence of Presumed Media
-   Influence, Communication Research, 37, 801-824.
+      .. rubric:: References
+         :name: references
 
-   Hayes, Andrew F. (2013) Introduction to mediation, moderation, and
-   conditional process analysis: A regression-based approach. Guilford
-   Press.
+      Nurit Tal-Or, Jonathan Cohen, Yariv Tsfati and Albert C. Gunther
+      (2010), Testing Causal Direction in the Influence of Presumed
+      Media Influence, Communication Research, 37, 801-824.
 
-   .. rubric:: Examples
-      :name: examples
+      Hayes, Andrew F. (2013) Introduction to mediation, moderation, and
+      conditional process analysis: A regression-based approach.
+      Guilford Press.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Tal.Or)
-      mediate(reaction ~ cond + (pmi), data =Tal.Or,n.iter=50) 
+      ::
+
+         data(Tal.Or)
+         mediate(reaction ~ cond + (pmi), data =Tal.Or,n.iter=50) 

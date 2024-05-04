@@ -1,69 +1,71 @@
 .. container::
 
-   ===== ===============
-   PRDEG R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Property Rights, Democracy, and Economic Growth
-      :name: PRDEG
+      ===== ===============
+      PRDEG R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Property Rights, Democracy, and Economic Growth
+         :name: property-rights-democracy-and-economic-growth
 
-   A data set for replicating David Leblang's (1996) analysis on
-   property rights, democracy, and economic growth.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A data set for replicating David Leblang's (1996) analysis on
+      property rights, democracy, and economic growth.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      PRDEG
+      ::
 
-   .. rubric:: Format
-      :name: format
+         PRDEG
 
-   A data frame with 147 observations on the following 10 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``levine``
-      a numeric vector that servies as a cross-section identifier
+      A data frame with 147 observations on the following 10 variables.
 
-   ``country``
-      a character vector for the country
+      ``levine``
+         a numeric vector that servies as a cross-section identifier
 
-   ``decade``
-      a numeric vector for a decade
+      ``country``
+         a character vector for the country
 
-   ``private``
-      a numeric vector for credit allocated to private enterprise
+      ``decade``
+         a numeric vector for a decade
 
-   ``rgdp``
-      a numeric vector for the initial level of real per capita GDP
+      ``private``
+         a numeric vector for credit allocated to private enterprise
 
-   ``democ``
-      a numeric vector for the level of democracy
+      ``rgdp``
+         a numeric vector for the initial level of real per capita GDP
 
-   ``pri``
-      a numeric vector for primary school attainment
+      ``democ``
+         a numeric vector for the level of democracy
 
-   ``sec``
-      a numeric vector for secondary school attainment
+      ``pri``
+         a numeric vector for primary school attainment
 
-   ``grow``
-      a numeric vector for per capita growth rate
+      ``sec``
+         a numeric vector for secondary school attainment
 
-   ``xcontrol``
-      a numeric vector for exchange controls
+      ``grow``
+         a numeric vector for per capita growth rate
 
-   .. rubric:: Details
-      :name: details
+      ``xcontrol``
+         a numeric vector for exchange controls
 
-   Data come Joshua Alley's Github repository on cross-sectional OLS
-   regressions. Please read David Leblang's (1996) article for some more
-   detail about the variables included in the model.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: References
-      :name: references
+      Data come Joshua Alley's Github repository on cross-sectional OLS
+      regressions. Please read David Leblang's (1996) article for some
+      more detail about the variables included in the model.
 
-   Leblang, David. 1996. "Property Rights, Democracy, and Economic
-   Growth." 49(1): 5-26.
+      .. rubric:: References
+         :name: references
+
+      Leblang, David. 1996. "Property Rights, Democracy, and Economic
+      Growth." 49(1): 5-26.

@@ -1,76 +1,79 @@
 .. container::
 
-   ===== ===============
-   CHAIN R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Subset of variables from the CHAIN project
-      :name: CHAIN
+      ===== ===============
+      CHAIN R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Subset of variables from the CHAIN project
+         :name: subset-of-variables-from-the-chain-project
 
-   The CHAIN project was a longitudinal cohort study of people living
-   with HIV in New York City, which was recruited in 1994 from a large
-   number of medical care and social service agencies serving HIV in New
-   York City. This subset of data pertain to the sixth round of
-   interviews.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The CHAIN project was a longitudinal cohort study of people living
+      with HIV in New York City, which was recruited in 1994 from a
+      large number of medical care and social service agencies serving
+      HIV in New York City. This subset of data pertain to the sixth
+      round of interviews.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(CHAIN)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(CHAIN)
 
-   A ``data.frame`` with 532 observations on the following 8 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``log_virus``
-      log of self reported viral load level, where zero represents an
-      undetectable level.
+      A ``data.frame`` with 532 observations on the following 8
+      variables.
 
-   ``age``
-      age at time of the interview
+      ``log_virus``
+         log of self reported viral load level, where zero represents an
+         undetectable level.
 
-   ``income``
-      annual family income in 10 intervals
+      ``age``
+         age at time of the interview
 
-   ``healthy``
-      a continuous scale of physical health with a theoretical range
-      between 0 and 100 where better health is associated with higher
-      scale values
+      ``income``
+         annual family income in 10 intervals
 
-   ``mental``
-      a binary measure of poor mental health ( 1=Yes, 0=No )
+      ``healthy``
+         a continuous scale of physical health with a theoretical range
+         between 0 and 100 where better health is associated with higher
+         scale values
 
-   ``damage``
-      ordered interval for the CD4 count, which is an indicator of how
-      much damage HIV has caused to the immune system
+      ``mental``
+         a binary measure of poor mental health ( 1=Yes, 0=No )
 
-   ``treatment``
-      a three-level ordered variable: 0=Not currently taking HAART
-      (Highly Active AntiretRoviral Therapy) 1=taking HAART but
-      nonadherent, 2=taking HAART and adherent
+      ``damage``
+         ordered interval for the CD4 count, which is an indicator of
+         how much damage HIV has caused to the immune system
 
-   .. rubric:: Details
-      :name: details
+      ``treatment``
+         a three-level ordered variable: 0=Not currently taking HAART
+         (Highly Active AntiretRoviral Therapy) 1=taking HAART but
+         nonadherent, 2=taking HAART and adherent
 
-   A missing value in the log virus load level was assigned to
-   individuals who either could not recall their viral load level, did
-   not have a viral load test in the six month preceding the interview,
-   or reported their viral loads as "good" or "bad".
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      A missing value in the log virus load level was assigned to
+      individuals who either could not recall their viral load level,
+      did not have a viral load test in the six month preceding the
+      interview, or reported their viral loads as "good" or "bad".
 
-   http://cchps.columbia.edu/research.cfm
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      http://cchps.columbia.edu/research.cfm
 
-   Messeri P, Lee G, Abramson DA, Aidala A, Chiasson MA, Jones JD.
-   (2003). “Antiretroviral therapy and declining AIDS mortality in New
-   York City”. *Medical Care* 41:512–521.
+      .. rubric:: References
+         :name: references
+
+      Messeri P, Lee G, Abramson DA, Aidala A, Chiasson MA, Jones JD.
+      (2003). “Antiretroviral therapy and declining AIDS mortality in
+      New York City”. *Medical Care* 41:512–521.

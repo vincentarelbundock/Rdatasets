@@ -1,68 +1,70 @@
 .. container::
 
-   ====== ===============
-   planes R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Plane metadata.
-      :name: planes
+      ====== ===============
+      planes R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Plane metadata.
+         :name: plane-metadata.
 
-   Plane metadata for all plane tailnumbers found in the FAA aircraft
-   registry. American Airways (AA) and Envoy Air (MQ) report fleet
-   numbers rather than tail numbers so can't be matched.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Plane metadata for all plane tailnumbers found in the FAA aircraft
+      registry. American Airways (AA) and Envoy Air (MQ) report fleet
+      numbers rather than tail numbers so can't be matched.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      planes
+      ::
 
-   .. rubric:: Format
-      :name: format
+         planes
 
-   A data frame with columns:
+      .. rubric:: Format
+         :name: format
 
-   tailnum
-      Tail number.
+      A data frame with columns:
 
-   year
-      Year manufactured.
+      tailnum
+         Tail number.
 
-   type
-      Type of plane.
+      year
+         Year manufactured.
 
-   manufacturer, model
-      Manufacturer and model.
+      type
+         Type of plane.
 
-   engines, seats
-      Number of engines and seats.
+      manufacturer, model
+         Manufacturer and model.
 
-   speed
-      Average cruising speed in mph.
+      engines, seats
+         Number of engines and seats.
 
-   engine
-      Type of engine.
+      speed
+         Average cruising speed in mph.
 
-   .. rubric:: Source
-      :name: source
+      engine
+         Type of engine.
 
-   FAA Aircraft registry,
-   https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/releasable_aircraft_download/
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      FAA Aircraft registry,
+      https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/releasable_aircraft_download/
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      planes
+      ::
 
-      if (require("dplyr")) {
+         planes
 
-      # Flights that don't have plane metadata
-      flights %>% anti_join(planes, "tailnum")
+         if (require("dplyr")) {
 
-      }
+         # Flights that don't have plane metadata
+         flights %>% anti_join(planes, "tailnum")
+
+         }

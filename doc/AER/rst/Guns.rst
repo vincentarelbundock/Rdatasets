@@ -1,122 +1,125 @@
 .. container::
 
-   ==== ===============
-   Guns R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: More Guns, Less Crime?
-      :name: Guns
+      ==== ===============
+      Guns R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: More Guns, Less Crime?
+         :name: more-guns-less-crime
 
-   Guns is a balanced panel of data on 50 US states, plus the District
-   of Columbia (for a total of 51 states), by year for 1977–1999.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Guns is a balanced panel of data on 50 US states, plus the
+      District of Columbia (for a total of 51 states), by year for
+      1977–1999.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Guns")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Guns")
 
-   A data frame containing 1,173 observations on 13 variables.
+      .. rubric:: Format
+         :name: format
 
-   state
-      factor indicating state.
+      A data frame containing 1,173 observations on 13 variables.
 
-   year
-      factor indicating year.
+      state
+         factor indicating state.
 
-   violent
-      violent crime rate (incidents per 100,000 members of the
-      population).
+      year
+         factor indicating year.
 
-   murder
-      murder rate (incidents per 100,000).
+      violent
+         violent crime rate (incidents per 100,000 members of the
+         population).
 
-   robbery
-      robbery rate (incidents per 100,000).
+      murder
+         murder rate (incidents per 100,000).
 
-   prisoners
-      incarceration rate in the state in the previous year (sentenced
-      prisoners per 100,000 residents; value for the previous year).
+      robbery
+         robbery rate (incidents per 100,000).
 
-   afam
-      percent of state population that is African-American, ages 10 to
-      64.
+      prisoners
+         incarceration rate in the state in the previous year (sentenced
+         prisoners per 100,000 residents; value for the previous year).
 
-   cauc
-      percent of state population that is Caucasian, ages 10 to 64.
+      afam
+         percent of state population that is African-American, ages 10
+         to 64.
 
-   male
-      percent of state population that is male, ages 10 to 29.
+      cauc
+         percent of state population that is Caucasian, ages 10 to 64.
 
-   population
-      state population, in millions of people.
+      male
+         percent of state population that is male, ages 10 to 29.
 
-   income
-      real per capita personal income in the state (US dollars).
+      population
+         state population, in millions of people.
 
-   density
-      population per square mile of land area, divided by 1,000.
+      income
+         real per capita personal income in the state (US dollars).
 
-   law
-      factor. Does the state have a shall carry law in effect in that
-      year?
+      density
+         population per square mile of land area, divided by 1,000.
 
-   .. rubric:: Details
-      :name: details
+      law
+         factor. Does the state have a shall carry law in effect in that
+         year?
 
-   Each observation is a given state in a given year. There are a total
-   of 51 states times 23 years = 1,173 observations.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Each observation is a given state in a given year. There are a
+      total of 51 states times 23 years = 1,173 observations.
 
-   Online complements to Stock and Watson (2007).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Stock and Watson (2007).
 
-   Ayres, I., and Donohue, J.J. (2003). Shooting Down the ‘More Guns
-   Less Crime’ Hypothesis. *Stanford Law Review*, **55**, 1193–1312.
+      .. rubric:: References
+         :name: references
 
-   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
-   2nd ed. Boston: Addison Wesley.
+      Ayres, I., and Donohue, J.J. (2003). Shooting Down the ‘More Guns
+      Less Crime’ Hypothesis. *Stanford Law Review*, **55**, 1193–1312.
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, J.H. and Watson, M.W. (2007). *Introduction to
+      Econometrics*, 2nd ed. Boston: Addison Wesley.
 
-   ``StockWatson2007``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``StockWatson2007``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ## data
-      data("Guns")
+      ::
 
-      ## visualization
-      library("lattice")
-      xyplot(log(violent) ~ as.numeric(as.character(year)) | state, data = Guns, type = "l")
+         ## data
+         data("Guns")
 
-      ## Stock & Watson (2007), Empirical Exercise 10.1, pp. 376--377
-      fm1 <- lm(log(violent) ~ law, data = Guns)
-      coeftest(fm1, vcov = sandwich)
+         ## visualization
+         library("lattice")
+         xyplot(log(violent) ~ as.numeric(as.character(year)) | state, data = Guns, type = "l")
 
-      fm2 <- lm(log(violent) ~ law + prisoners + density + income + 
-        population + afam + cauc + male, data = Guns)
-      coeftest(fm2, vcov = sandwich)
+         ## Stock & Watson (2007), Empirical Exercise 10.1, pp. 376--377
+         fm1 <- lm(log(violent) ~ law, data = Guns)
+         coeftest(fm1, vcov = sandwich)
 
-      fm3 <- lm(log(violent) ~ law + prisoners + density + income + 
-        population + afam + cauc + male + state, data = Guns)
-      printCoefmat(coeftest(fm3, vcov = sandwich)[1:9,])
-                  
-      fm4 <- lm(log(violent) ~ law + prisoners + density + income + 
-        population + afam + cauc + male + state + year, data = Guns)
-      printCoefmat(coeftest(fm4, vcov = sandwich)[1:9,])
+         fm2 <- lm(log(violent) ~ law + prisoners + density + income + 
+           population + afam + cauc + male, data = Guns)
+         coeftest(fm2, vcov = sandwich)
+
+         fm3 <- lm(log(violent) ~ law + prisoners + density + income + 
+           population + afam + cauc + male + state, data = Guns)
+         printCoefmat(coeftest(fm3, vcov = sandwich)[1:9,])
+                     
+         fm4 <- lm(log(violent) ~ law + prisoners + density + income + 
+           population + afam + cauc + male + state + year, data = Guns)
+         printCoefmat(coeftest(fm4, vcov = sandwich)[1:9,])

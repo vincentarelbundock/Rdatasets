@@ -1,88 +1,91 @@
 .. container::
 
-   ==== ===============
-   UN98 R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: United Nations Social Indicators Data 1998]
-      :name: UN98
+      ==== ===============
+      UN98 R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: United Nations Social Indicators Data 1998]
+         :name: united-nations-social-indicators-data-1998
 
-   Social indicators data on 207 nations distributed by the United
-   Nations circa 1998.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Social indicators data on 207 nations distributed by the United
+      Nations circa 1998.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("UN98")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("UN98")
 
-   A data frame with 207 observations on the following 13 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``region``
-      a factor with alphabetical levels ``Africa``, ``America``,
-      ``Asia``, ``Europe``, ``Oceania``.
+      A data frame with 207 observations on the following 13 variables.
 
-   ``tfr``
-      total fertility rate, number of children per woman.
+      ``region``
+         a factor with alphabetical levels ``Africa``, ``America``,
+         ``Asia``, ``Europe``, ``Oceania``.
 
-   ``contraception``
-      percentage of married women using any method of contraception.
+      ``tfr``
+         total fertility rate, number of children per woman.
 
-   ``educationMale``
-      average number of years of education for men.
+      ``contraception``
+         percentage of married women using any method of contraception.
 
-   ``educationFemale``
-      average number of years of education for women.
+      ``educationMale``
+         average number of years of education for men.
 
-   ``lifeMale``
-      expectation of life at birth for males.
+      ``educationFemale``
+         average number of years of education for women.
 
-   ``lifeFemale``
-      expectation of life at birth for females.
+      ``lifeMale``
+         expectation of life at birth for males.
 
-   ``infantMortality``
-      infant deaths per 1000 live births.
+      ``lifeFemale``
+         expectation of life at birth for females.
 
-   ``GDPperCapita``
-      gross domestic product per person in U.S. dollars.
+      ``infantMortality``
+         infant deaths per 1000 live births.
 
-   ``economicActivityMale``
-      percentage of men who are economically active.
+      ``GDPperCapita``
+         gross domestic product per person in U.S. dollars.
 
-   ``economicActivityFemale``
-      percentage of women who are economically active.
+      ``economicActivityMale``
+         percentage of men who are economically active.
 
-   ``illiteracyMale``
-      percentage of males 15 years of age and older who are illiterate.
+      ``economicActivityFemale``
+         percentage of women who are economically active.
 
-   ``illiteracyFemale``
-      percentage of females 15 years of age and older who are
-      illiterate.
+      ``illiteracyMale``
+         percentage of males 15 years of age and older who are
+         illiterate.
 
-   .. rubric:: Details
-      :name: details
+      ``illiteracyFemale``
+         percentage of females 15 years of age and older who are
+         illiterate.
 
-   In a few cases where the percentages of males and females 15 and
-   older who are illiterate were unavailable, these variables were
-   filled in by regression imputation from the corresponding percentages
-   25 and older who are illiterate.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      In a few cases where the percentages of males and females 15 and
+      older who are illiterate were unavailable, these variables were
+      filled in by regression imputation from the corresponding
+      percentages 25 and older who are illiterate.
 
-   Downloaded from ``http://www.un.org/Depts/unsd/social/main.htm`` in
-   1998.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Downloaded from ``http://www.un.org/Depts/unsd/social/main.htm``
+      in 1998.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      summary(UN98)
+      ::
+
+         summary(UN98)

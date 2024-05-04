@@ -12,57 +12,47 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Hernior</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Hernior'>
-Recovery from Elective Herniorrhaphy
-</h2>
+<h2>Recovery from Elective Herniorrhaphy</h2>
 
 <h3>Description</h3>
 
-<p>A data set on measures of post-operative recovery of 32 patients undergoing an
-elective herniorrhaphy operation,  in relation to pre-operative measures.
+<p>A data set on measures of post-operative recovery of 32 patients undergoing
+an elective herniorrhaphy operation, in relation to pre-operative measures.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(Hernior)</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A data frame with 32 observations on the following 9 variables.
 </p>
-
+ 
 <dl>
 <dt><code>age</code></dt><dd><p>patient age</p>
-</dd>
+</dd> 
 <dt><code>sex</code></dt><dd><p>patient sex, a factor with levels <code>f</code> <code>m</code></p>
-</dd>
-<dt><code>pstat</code></dt><dd><p>physical status (ignoring that associated with the operation). A 1-5
-scale, with 1=perfect health, 5=very poor health.</p>
-</dd>
+</dd> 
+<dt><code>pstat</code></dt><dd><p>physical status (ignoring that associated with the operation). 
+A 1-5 scale, with 1=perfect health, 5=very poor health.</p>
+</dd> 
 <dt><code>build</code></dt><dd><p>body build, a 1-5 scale, with 1=emaciated, 2=thin, 3=average, 4=fat, 5=obese.</p>
 </dd>
-<dt><code>cardiac</code></dt><dd><p>preoperative complications with heart, 1-4 scale,
-with 1=none, 2=mild, 3=moderate, 4=severe.</p>
-</dd>
-<dt><code>resp</code></dt><dd><p>preoperative complications with respiration, 1-4 scale,
-with 1=none, 2=mild, 3=moderate, 4=severe.</p>
-</dd>
-<dt><code>leave</code></dt><dd><p>condition upon leaving the recovery room, a 1-4 scale, with 
-1=routine recovery, 2=intensive care for observation overnight,
-3=intensive care, with moderate care required,
-4=intensive care, with moderate care required.
-</p>
-</dd>
+<dt><code>cardiac</code></dt><dd><p>preoperative complications with heart, 1-4 scale, with 1=none, 2=mild, 3=moderate, 4=severe.</p>
+</dd> 
+<dt><code>resp</code></dt><dd><p>preoperative complications with respiration, 1-4 scale, with 1=none, 2=mild, 
+3=moderate, 4=severe.</p>
+</dd> 
+<dt><code>leave</code></dt><dd><p>condition upon leaving the recovery room, a 1-4 scale, with 1=routine recovery, 2=intensive care for observation
+overnight, 3=intensive care, with moderate care required, 4=intensive care,
+with moderate care required.  </p>
+</dd> 
 <dt><code>los</code></dt><dd><p>length of stay in hospital after operation (days)</p>
 </dd>
-<dt><code>nurse</code></dt><dd><p>level of nursing required one week after operation, a 1-5 scale, with
-1=intense, 2=heavy, 3=moderate, 4=light, 5=none (?); see Details</p>
+<dt><code>nurse</code></dt><dd><p>level of nursing required one week after operation, a
+1-5 scale, with 1=intense, 2=heavy, 3=moderate, 4=light, 5=none (?); see Details</p>
 </dd>
 </dl>
 
@@ -70,43 +60,47 @@ with 1=none, 2=mild, 3=moderate, 4=severe.</p>
 
 <h3>Details</h3>
 
-<p><code>leave</code>, <code>nurse</code> and <code>los</code> are outcome measures;
-the remaining variables are potential predictors of recovery status.
+<p><code>leave</code>, <code>nurse</code> and <code>los</code> are outcome measures; the
+remaining variables are potential predictors of recovery status.
 </p>
-<p>The variable <code>nurse</code> is recorded as 1-4, with remaining (20) entries entered as
-&quot;-&quot; in both sources.  It is not clear whether this means &quot;none&quot; or NA.  
-The former interpretation was used in constructing the R data frame,
+<p>The variable <code>nurse</code> is recorded as 1-4, with remaining (20) entries
+entered as &quot;-&quot; in both sources.  It is not clear whether this means &quot;none&quot;
+or NA.  The former interpretation was used in constructing the R data frame,
 so <code>nurse==5</code> for these observations. Using
 <code>Hernior$nurse[Hernior$nurse==5] &lt;- NA</code> would change to the other
 interpretation, but render <code>nurse</code> useless in a multivariate analysis.
 </p>
-<p>The ordinal predictors could instead be treated as factors, and there are also
-potential interactions to be explored.
+<p>The ordinal predictors could instead be treated as factors, and there are
+also potential interactions to be explored.
 </p>
 
 
 <h3>Source</h3>
 
-<p>Mosteller, F. and Tukey, J. W. (1977), <em>Data analysis and regression</em>,
-Reading, MA: Addison-Wesley. Data Exhibit 8, 567-568.
-Their source: A study by B. McPeek and J. P. Gilbert of the Harvard
-Anesthesia Center.
+<p>Mosteller, F. and Tukey, J. W. (1977), <em>Data analysis and
+regression</em>, Reading, MA: Addison-Wesley. Data Exhibit 8, 567-568. Their
+source: A study by B. McPeek and J. P. Gilbert of the Harvard Anesthesia
+Center.
 </p>
 
 
 <h3>References</h3>
 
-<p>Hand, D. J., Daly, F., Lunn, A. D., McConway, K. J. and Ostrowski, E. (1994),
-<em>A Handbook of Small Data Sets</em>, Number 484, 390-391.
+<p>Hand, D. J., Daly, F., Lunn, A. D., McConway, K. J. and
+Ostrowski, E. (1994), <em>A Handbook of Small Data Sets</em>, Number 484,
+390-391.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>str(Hernior)
+<pre><code class='language-R'>
+library(car)
+data(Hernior)
+str(Hernior)
 Hern.mod &lt;- lm(cbind(leave, nurse, los) ~ 
                age + sex +  pstat +  build + cardiac + resp, data=Hernior)
-Anova(Hern.mod, test="Roy") # actually, all tests are identical
+car::Anova(Hern.mod, test="Roy") # actually, all tests are identical
 
 # test overall regression
 print(linearHypothesis(Hern.mod, c("age", "sexm", "pstat", "build", "cardiac", "resp")), SSP=FALSE)
@@ -136,8 +130,10 @@ if (require(candisc)) {
 	plot(Hern.canL, term="pstat")  # physical status
 }
 
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

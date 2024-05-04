@@ -1,46 +1,48 @@
 .. container::
 
-   ========= ===============
-   aulatlong R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Latitudes and longitudes for ten Australian cities
-      :name: aulatlong
+      ========= ===============
+      aulatlong R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Latitudes and longitudes for ten Australian cities
+         :name: latitudes-and-longitudes-for-ten-australian-cities
 
-   Latitudes and longitudes for Adelaide, Alice, Brisbane, Broome,
-   Cairns, Canberra, Darwin, Melbourne, Perth and Sydney; i.e., for the
-   cities to which the road distances in ``audists`` relate.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Latitudes and longitudes for Adelaide, Alice, Brisbane, Broome,
+      Cairns, Canberra, Darwin, Melbourne, Perth and Sydney; i.e., for
+      the cities to which the road distances in ``audists`` relate.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      aulatlong
+      ::
 
-   .. rubric:: Format
-      :name: format
+         aulatlong
 
-   A data frame with 10 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``latitude``
-      Latitude, as a decimal number
+      A data frame with 10 observations on the following 2 variables.
 
-   ``longitude``
-      Latitude, as a decimal number
+      ``latitude``
+         Latitude, as a decimal number
 
-   .. rubric:: Source
-      :name: source
+      ``longitude``
+         Latitude, as a decimal number
 
-   Map of Australia showing latitude and longitude information.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Map of Australia showing latitude and longitude information.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(aulatlong)
-      ## maybe str(aulatlong) ; plot(aulatlong) ...
+      ::
+
+         data(aulatlong)
+         ## maybe str(aulatlong) ; plot(aulatlong) ...

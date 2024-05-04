@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>JointSports</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='JointSports'>Opinions About Joint Sports</h2>
+<h2>Opinions About Joint Sports</h2>
 
 <h3>Description</h3>
 
@@ -78,6 +78,7 @@ doubledecker(opinion ~ gender + year + grade, data = tab)
 loglm(~ opinion* (gender + grade+ year) + gender*year*grade, data = tab)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

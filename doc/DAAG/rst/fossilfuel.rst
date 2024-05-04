@@ -1,53 +1,56 @@
 .. container::
 
-   ========== ===============
-   fossilfuel R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Fossil Fuel Data
-      :name: fossilfuel
+      ========== ===============
+      fossilfuel R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Fossil Fuel Data
+         :name: fossil-fuel-data
 
-   Estimates of total worldwide carbon emissions from fossil fuel use.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Estimates of total worldwide carbon emissions from fossil fuel
+      use.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      fossilfuel
+      ::
 
-   .. rubric:: Format
-      :name: format
+         fossilfuel
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   year
-      a numeric vector giving the year the measurement was taken.
+      This data frame contains the following columns:
 
-   carbon
-      a numeric vector giving the total worldwide carbon emissions from
-      fossil fuel use, in millions of tonnes.
+      year
+         a numeric vector giving the year the measurement was taken.
 
-   .. rubric:: Details
-      :name: details
+      carbon
+         a numeric vector giving the total worldwide carbon emissions
+         from fossil fuel use, in millions of tonnes.
 
-   Data for the years 1751 through to 2014 is available from Data for
-   the years 2014
-   https://cdiac.ess-dive.lbl.gov/ftp/ndp030/global.1751_2014.ems
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Data for the years 1751 through to 2014 is available from Data for
+      the years 2014
+      https://cdiac.ess-dive.lbl.gov/ftp/ndp030/global.1751_2014.ems
 
-   Boden TA, Marland G, Andres RJ (2017). “Global, Regional, and
-   National Fossil-Fuel CO2 Emissions.”
-   https://cdiac.ess-dive.lbl.gov/trends/emis/meth_reg.html.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Boden TA, Marland G, Andres RJ (2017). “Global, Regional, and
+      National Fossil-Fuel CO2 Emissions.”
+      https://cdiac.ess-dive.lbl.gov/trends/emis/meth_reg.html.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      plot(fossilfuel)
+      ::
+
+         plot(fossilfuel)

@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>oats</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='oats'>
+<h2>
 Data from an Oats Field Trial
 </h2>
 
@@ -102,6 +102,7 @@ oats.aov2 &lt;- aov(Y ~ N + V + Error(B/V), data = oats, qr = TRUE)
 model.tables(oats.aov2, type = "means", se = TRUE)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

@@ -1,79 +1,82 @@
 .. container::
 
-   ==== ===============
-   Burt R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: Burt (1950) Data on Hair, Eyes, Head and Stature
-      :name: Burt
+      ==== ===============
+      Burt R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Burt (1950) Data on Hair, Eyes, Head and Stature
+         :name: burt-1950-data-on-hair-eyes-head-and-stature
 
-   Cyril Burt (1950) gave these data, on a sample of 100 people from
-   Liverpool, to illustrate the application of a method of factor
-   analysis (later called multiple correspondence analysis) applied to
-   categorical data.
+      .. rubric:: Description
+         :name: description
 
-   He presented these data initially in the form that has come to be
-   called a "Burt table", giving the univariate and bivariate
-   frequencies for an n-way frequency table.
+      Cyril Burt (1950) gave these data, on a sample of 100 people from
+      Liverpool, to illustrate the application of a method of factor
+      analysis (later called multiple correspondence analysis) applied
+      to categorical data.
 
-   .. rubric:: Usage
-      :name: usage
+      He presented these data initially in the form that has come to be
+      called a "Burt table", giving the univariate and bivariate
+      frequencies for an n-way frequency table.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("Burt")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("Burt")
 
-   A frequency data frame (representing a 3 x 3 x 2 x 2 frequency table)
-   with 36 cells on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``Hair``
-      hair color, a factor with levels ``Fair`` ``Red`` ``Dark``
+      A frequency data frame (representing a 3 x 3 x 2 x 2 frequency
+      table) with 36 cells on the following 5 variables.
 
-   ``Eyes``
-      eye color, a factor with levels ``Light`` ``Mixed`` ``Dark``
+      ``Hair``
+         hair color, a factor with levels ``Fair`` ``Red`` ``Dark``
 
-   ``Head``
-      head shape, a factor with levels ``Narrow`` ``Wide``
+      ``Eyes``
+         eye color, a factor with levels ``Light`` ``Mixed`` ``Dark``
 
-   ``Stature``
-      height, a factor with levels ``Tall`` ``Short``
+      ``Head``
+         head shape, a factor with levels ``Narrow`` ``Wide``
 
-   ``Freq``
-      a numeric vector
+      ``Stature``
+         height, a factor with levels ``Tall`` ``Short``
 
-   .. rubric:: Details
-      :name: details
+      ``Freq``
+         a numeric vector
 
-   Burt says: "In all, 217 individuals were examined, about two-thirds
-   of them males. But, partly to simplify the calculations and partly
-   because the later observations were rather more trustworthy, I shall
-   here restrict my analysis to the data obtained from the last hundred
-   males in the series."
+      .. rubric:: Details
+         :name: details
 
-   ``Head`` and ``Stature`` reflect a binary coding where people are
-   classified according to whether they are below or above the average
-   for the population.
+      Burt says: "In all, 217 individuals were examined, about
+      two-thirds of them males. But, partly to simplify the calculations
+      and partly because the later observations were rather more
+      trustworthy, I shall here restrict my analysis to the data
+      obtained from the last hundred males in the series."
 
-   .. rubric:: Source
-      :name: source
+      ``Head`` and ``Stature`` reflect a binary coding where people are
+      classified according to whether they are below or above the
+      average for the population.
 
-   Burt, C. (1950). The factorial analysis of qualitative data, *British
-   Journal of Statistical Psychology*, **3**\ (3), 166-185. Table IX.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Burt, C. (1950). The factorial analysis of qualitative data,
+      *British Journal of Statistical Psychology*, **3**\ (3), 166-185.
+      Table IX.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Burt)
-      mosaic(Freq ~ Hair + Eyes + Head + Stature, data=Burt, shade=TRUE)
+      ::
 
-      #or
-      burt.tab <- xtabs(Freq ~ Hair + Eyes + Head + Stature, data=Burt)
-      mosaic(burt.tab, shade=TRUE)
+         data(Burt)
+         mosaic(Freq ~ Hair + Eyes + Head + Stature, data=Burt, shade=TRUE)
+
+         #or
+         burt.tab <- xtabs(Freq ~ Hair + Eyes + Head + Stature, data=Burt)
+         mosaic(burt.tab, shade=TRUE)

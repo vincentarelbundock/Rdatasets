@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>HairEyePlace</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='HairEyePlace'>
+<h2>
 Hair Color and Eye Color in Caithness and Aberdeen
 </h2>
 
@@ -87,6 +87,7 @@ mosaic(~Hair + Eye |Place, data=HairEyePlace, shade=TRUE, legend=FALSE)
 cotabplot(~Hair+Eye|Place, data=HairEyePlace, shade=TRUE, legend=FALSE)
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

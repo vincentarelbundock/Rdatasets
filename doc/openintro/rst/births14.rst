@@ -1,100 +1,103 @@
 .. container::
 
-   ======== ===============
-   births14 R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: US births
-      :name: births14
+      ======== ===============
+      births14 R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: US births
+         :name: us-births
 
-   Every year, the US releases to the public a large data set containing
-   information on births recorded in the country. This data set has been
-   of interest to medical researchers who are studying the relation
-   between habits and practices of expectant mothers and the birth of
-   their children. This is a random sample of 1,000 cases from the data
-   set released in 2014.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Every year, the US releases to the public a large data set
+      containing information on births recorded in the country. This
+      data set has been of interest to medical researchers who are
+      studying the relation between habits and practices of expectant
+      mothers and the birth of their children. This is a random sample
+      of 1,000 cases from the data set released in 2014.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      births14
+      ::
 
-   .. rubric:: Format
-      :name: format
+         births14
 
-   A data frame with 1,000 observations on the following 13 variables.
+      .. rubric:: Format
+         :name: format
 
-   fage
-      Father's age in years.
+      A data frame with 1,000 observations on the following 13
+      variables.
 
-   mage
-      Mother's age in years.
+      fage
+         Father's age in years.
 
-   mature
-      Maturity status of mother.
+      mage
+         Mother's age in years.
 
-   weeks
-      Length of pregnancy in weeks.
+      mature
+         Maturity status of mother.
 
-   premie
-      Whether the birth was classified as premature (premie) or
-      full-term.
+      weeks
+         Length of pregnancy in weeks.
 
-   visits
-      Number of hospital visits during pregnancy.
+      premie
+         Whether the birth was classified as premature (premie) or
+         full-term.
 
-   gained
-      Weight gained by mother during pregnancy in pounds.
+      visits
+         Number of hospital visits during pregnancy.
 
-   weight
-      Weight of the baby at birth in pounds.
+      gained
+         Weight gained by mother during pregnancy in pounds.
 
-   lowbirthweight
-      Whether baby was classified as low birthweight (``low``) or not
-      (``⁠not low⁠``).
+      weight
+         Weight of the baby at birth in pounds.
 
-   sex
-      Sex of the baby, ``female`` or ``male``.
+      lowbirthweight
+         Whether baby was classified as low birthweight (``low``) or not
+         (``⁠not low⁠``).
 
-   habit
-      Status of the mother as a ``nonsmoker`` or a ``smoker``.
+      sex
+         Sex of the baby, ``female`` or ``male``.
 
-   marital
-      Whether mother is ``married`` or ``⁠not married⁠`` at birth.
+      habit
+         Status of the mother as a ``nonsmoker`` or a ``smoker``.
 
-   whitemom
-      Whether mom is ``white`` or ``⁠not white⁠``.
+      marital
+         Whether mother is ``married`` or ``⁠not married⁠`` at birth.
 
-   .. rubric:: Source
-      :name: source
+      whitemom
+         Whether mom is ``white`` or ``⁠not white⁠``.
 
-   United States Department of Health and Human Services. Centers for
-   Disease Control and Prevention. National Center for Health
-   Statistics. Natality Detail File, 2014 United States.
-   Inter-university Consortium for Political and Social Research,
-   2016-10-07.
-   `doi:10.3886/ICPSR36461.v1 <https://doi.org/10.3886/ICPSR36461.v1>`__.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      United States Department of Health and Human Services. Centers for
+      Disease Control and Prevention. National Center for Health
+      Statistics. Natality Detail File, 2014 United States.
+      Inter-university Consortium for Political and Social Research,
+      2016-10-07.
+      `doi:10.3886/ICPSR36461.v1 <https://doi.org/10.3886/ICPSR36461.v1>`__.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(births14, aes(x = habit, y = weight)) +
-        geom_boxplot() +
-        labs(x = "Smoking status of mother", y = "Birth weight of baby (in lbs)")
+         library(ggplot2)
 
-      ggplot(births14, aes(x = whitemom, y = visits)) +
-        geom_boxplot() +
-        labs(x = "Mother's race", y = "Number of doctor visits during pregnancy")
+         ggplot(births14, aes(x = habit, y = weight)) +
+           geom_boxplot() +
+           labs(x = "Smoking status of mother", y = "Birth weight of baby (in lbs)")
 
-      ggplot(births14, aes(x = mature, y = gained)) +
-        geom_boxplot() +
-        labs(x = "Mother's age category", y = "Weight gained during pregnancy")
+         ggplot(births14, aes(x = whitemom, y = visits)) +
+           geom_boxplot() +
+           labs(x = "Mother's race", y = "Number of doctor visits during pregnancy")
+
+         ggplot(births14, aes(x = mature, y = gained)) +
+           geom_boxplot() +
+           labs(x = "Mother's age category", y = "Weight gained during pregnancy")

@@ -1,53 +1,56 @@
 .. container::
 
-   ========= ===============
-   Overdrawn R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Overdrawn Checking Account?
-      :name: Overdrawn
+      ========= ===============
+      Overdrawn R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Overdrawn Checking Account?
+         :name: overdrawn-checking-account
 
-   Survey of college students to took at factors related to having
-   overdrawn a checking account.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Survey of college students to took at factors related to having
+      overdrawn a checking account.
 
-   A dataset with 450 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   +---------------+-----------------------------------------------------+
-   | ``Age``       | Age of the student (in years)                       |
-   +---------------+-----------------------------------------------------+
-   | ``Sex``       | ``0``\ =male or ``1``\ =female                      |
-   +---------------+-----------------------------------------------------+
-   | ``DaysDrink`` | Number of days drinking alcohol (in past 30 days)   |
-   +---------------+-----------------------------------------------------+
-   | ``Overdrawn`` | Has student overdrawn a checking account?           |
-   |               | ``0``\ =no or ``1``\ =yes                           |
-   +---------------+-----------------------------------------------------+
-   |               |                                                     |
-   +---------------+-----------------------------------------------------+
+      A dataset with 450 observations on the following 4 variables.
 
-   .. rubric:: Details
-      :name: details
+      +---------------+-----------------------------------------------------+
+      | ``Age``       | Age of the student (in years)                       |
+      +---------------+-----------------------------------------------------+
+      | ``Sex``       | ``0``\ =male or ``1``\ =female                      |
+      +---------------+-----------------------------------------------------+
+      | ``DaysDrink`` | Number of days drinking alcohol (in past 30 days)   |
+      +---------------+-----------------------------------------------------+
+      | ``Overdrawn`` | Has student overdrawn a checking account?           |
+      |               | ``0``\ =no or ``1``\ =yes                           |
+      +---------------+-----------------------------------------------------+
+      |               |                                                     |
+      +---------------+-----------------------------------------------------+
 
-   Researchers conducted a survey of 450 undergraduates in large
-   introductory courses at either Mississippi State University or the
-   University of Mississippi. There were close to 150 questions on the
-   survey, but only four of these variables are included in this
-   dataset. (You can consult the paper to learn how the variables beyond
-   these 4 affect the analysis.) The primary interest for the
-   researchers was factors relating to whether or not a student has ever
-   overdrawn a checking account.
+      .. rubric:: Details
+         :name: details
 
-   Renamed as CreditRisk in second edition.
+      Researchers conducted a survey of 450 undergraduates in large
+      introductory courses at either Mississippi State University or the
+      University of Mississippi. There were close to 150 questions on
+      the survey, but only four of these variables are included in this
+      dataset. (You can consult the paper to learn how the variables
+      beyond these 4 affect the analysis.) The primary interest for the
+      researchers was factors relating to whether or not a student has
+      ever overdrawn a checking account.
 
-   .. rubric:: Source
-      :name: source
+      Renamed as CreditRisk in second edition.
 
-   Worthy S.L., Jonkman J.N., Blinn-Pike L. (2010), "Sensation-Seeking,
-   Risk-Taking, and Problematic Financial Behaviors of College
-   Students," Journal of Family and Economic Issues, 31: 161-170
+      .. rubric:: Source
+         :name: source
+
+      Worthy S.L., Jonkman J.N., Blinn-Pike L. (2010),
+      "Sensation-Seeking, Risk-Taking, and Problematic Financial
+      Behaviors of College Students," Journal of Family and Economic
+      Issues, 31: 161-170

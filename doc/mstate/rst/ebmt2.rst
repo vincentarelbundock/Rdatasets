@@ -1,70 +1,74 @@
 .. container::
 
-   ======================== ===============
-   EBMT cause of death data R Documentation
-   ======================== ===============
+   .. container::
 
-   .. rubric:: Data from the European Society for Blood and Marrow
-      Transplantation (EBMT)
-      :name: EBMT+20cause+20of+20death+20data
+      ======================== ===============
+      EBMT cause of death data R Documentation
+      ======================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Data from the European Society for Blood and Marrow
+         Transplantation (EBMT)
+         :name: data-from-the-european-society-for-blood-and-marrow-transplantation-ebmt
 
-   A data frame of 8966 patients transplanted at the EBMT. The included
-   variables are
+      .. rubric:: Description
+         :name: description
 
-   id
-      Patient identification number
+      A data frame of 8966 patients transplanted at the EBMT. The
+      included variables are
 
-   time
-      Time in months from transplantation to death or last follow-up
+      id
+         Patient identification number
 
-   status
-      Survival status; 0 = censored; 1,...,6 = death due to the
-      following causes: Relapse (1), GvHD (2), Bacterial infections (3),
-      Viral infections (4), Fungal infections (5), Other causes (6)
+      time
+         Time in months from transplantation to death or last follow-up
 
-   cod
-      Cause of death as factor with levels "Alive", "Relapse", "GvHD",
-      "Bacterial", "Viral", "Fungal", "Other"
+      status
+         Survival status; 0 = censored; 1,...,6 = death due to the
+         following causes: Relapse (1), GvHD (2), Bacterial infections
+         (3), Viral infections (4), Fungal infections (5), Other causes
+         (6)
 
-   dissub
-      Disease subclassification; factor with levels "AML", "ALL", "CML"
+      cod
+         Cause of death as factor with levels "Alive", "Relapse",
+         "GvHD", "Bacterial", "Viral", "Fungal", "Other"
 
-   match
-      Donor-recipient gender match; factor with levels "No gender
-      mismatch", "Gender mismatch"
+      dissub
+         Disease subclassification; factor with levels "AML", "ALL",
+         "CML"
 
-   tcd
-      T-cell depletion; factor with levels "No TCD", "TCD", "Unknown"
+      match
+         Donor-recipient gender match; factor with levels "No gender
+         mismatch", "Gender mismatch"
 
-   year
-      Year of transplantation; factor with levels "1985-1989",
-      "1990-1994", "1995-1998"
+      tcd
+         T-cell depletion; factor with levels "No TCD", "TCD", "Unknown"
 
-   age
-      Patient age at transplant; factor with levels "<=20", "20-40",
-      ">40"
+      year
+         Year of transplantation; factor with levels "1985-1989",
+         "1990-1994", "1995-1998"
 
-   .. rubric:: Format
-      :name: format
+      age
+         Patient age at transplant; factor with levels "<=20", "20-40",
+         ">40"
 
-   A data frame, see ``data.frame``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A data frame, see ``data.frame``.
 
-   We acknowledge the European Society for Blood and Marrow
-   Transplantation (EBMT) for making available these data. Disclaimer:
-   these data were simplified for the purpose of illustration of the
-   analysis of competing risks and multi-state models and do not reflect
-   any real life situation. No clinical conclusions should be drawn from
-   these data.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      We acknowledge the European Society for Blood and Marrow
+      Transplantation (EBMT) for making available these data.
+      Disclaimer: these data were simplified for the purpose of
+      illustration of the analysis of competing risks and multi-state
+      models and do not reflect any real life situation. No clinical
+      conclusions should be drawn from these data.
 
-   Fiocco M, Putter H, van Houwelingen JC (2005). Reduced rank
-   proportional hazards model for competing risks. *Biostatistics*
-   **6**, 465–478.
+      .. rubric:: References
+         :name: references
+
+      Fiocco M, Putter H, van Houwelingen JC (2005). Reduced rank
+      proportional hazards model for competing risks. *Biostatistics*
+      **6**, 465–478.

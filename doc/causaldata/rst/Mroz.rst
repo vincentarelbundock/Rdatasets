@@ -1,88 +1,91 @@
 .. container::
 
-   ==== ===============
-   Mroz R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: U.S. Women's Labor-Force Participation
-      :name: Mroz
+      ==== ===============
+      Mroz R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: U.S. Women's Labor-Force Participation
+         :name: u.s.-womens-labor-force-participation
 
-   The ``Mroz`` data frame has 753 rows and 8 columns. The observations,
-   from the Panel Study of Income Dynamics (PSID), are married women.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``Mroz`` data frame has 753 rows and 8 columns. The
+      observations, from the Panel Study of Income Dynamics (PSID), are
+      married women.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Mroz
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Mroz
 
-   A data frame with 753 rows and 8 variables
+      .. rubric:: Format
+         :name: format
 
-   lfp
-      Labor-force participation
+      A data frame with 753 rows and 8 variables
 
-   k5
-      Number of children 5 years old or younger
+      lfp
+         Labor-force participation
 
-   k618
-      Number of children 6 to 17 years old
+      k5
+         Number of children 5 years old or younger
 
-   age
-      Age in years
+      k618
+         Number of children 6 to 17 years old
 
-   wc
-      Wife attended college
+      age
+         Age in years
 
-   hc
-      Husband attended college
+      wc
+         Wife attended college
 
-   lwg
-      Log expected wage rate. For women in the labor force, the actual
-      wage rate; for women not in the labor force, an imputed value
-      based on the regression of lwg on the other variables.
+      hc
+         Husband attended college
 
-   inc
-      Family income exclusive of wife's income
+      lwg
+         Log expected wage rate. For women in the labor force, the
+         actual wage rate; for women not in the labor force, an imputed
+         value based on the regression of lwg on the other variables.
 
-   .. rubric:: Details
-      :name: details
+      inc
+         Family income exclusive of wife's income
 
-   This data set is a lightly edited version of the one found in the
-   *carData* package in R. It is used in the Describing Relationships
-   chapter of *The Effect*.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      This data set is a lightly edited version of the one found in the
+      *carData* package in R. It is used in the Describing Relationships
+      chapter of *The Effect*.
 
-   Mroz, T. A. (1987) The sensitivity of an empirical model of married
-   women's hours of work to economic and statistical assumptions.
-   \*Econometrica\* 55, 765–799.
+      .. rubric:: Source
+         :name: source
 
-   John Fox, Sanford Weisberg and Brad Price (2020). carData: Companion
-   to Applied Regression Data Sets. R package version 3.0-4.
-   https://CRAN.R-project.org/package=carData
+      Mroz, T. A. (1987) The sensitivity of an empirical model of
+      married women's hours of work to economic and statistical
+      assumptions. \*Econometrica\* 55, 765–799.
 
-   .. rubric:: References
-      :name: references
+      John Fox, Sanford Weisberg and Brad Price (2020). carData:
+      Companion to Applied Regression Data Sets. R package version
+      3.0-4. https://CRAN.R-project.org/package=carData
 
-   Fox, J. (2016) \*Applied Regression Analysis and Generalized Linear
-   Models,\* Third Edition. Sage.
+      .. rubric:: References
+         :name: references
 
-   Fox, J. (2000) \*Multiple and Generalized Nonparametric Regression.\*
-   Sage.
+      Fox, J. (2016) \*Applied Regression Analysis and Generalized
+      Linear Models,\* Third Edition. Sage.
 
-   Fox, J. and Weisberg, S. (2019) \*An R Companion to Applied
-   Regression.\* Third Edition, Sage.
+      Fox, J. (2000) \*Multiple and Generalized Nonparametric
+      Regression.\* Sage.
 
-   Long. J. S. (1997) \*Regression Models for Categorical and Limited
-   Dependent Variables.\* Sage.
+      Fox, J. and Weisberg, S. (2019) \*An R Companion to Applied
+      Regression.\* Third Edition, Sage.
 
-   Huntington-Klein. 2021. The Effect: An Introduction to Research
-   Design and Causality. https://theeffectbook.net.
+      Long. J. S. (1997) \*Regression Models for Categorical and Limited
+      Dependent Variables.\* Sage.
+
+      Huntington-Klein. 2021. The Effect: An Introduction to Research
+      Design and Causality. https://theeffectbook.net.

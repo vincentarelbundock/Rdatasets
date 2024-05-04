@@ -1,60 +1,62 @@
 .. container::
 
-   ========== ===============
-   USMacroSWQ R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Quarterly US Macroeconomic Data (1947–2004, Stock &
-      Watson)
-      :name: USMacroSWQ
+      ========== ===============
+      USMacroSWQ R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Quarterly US Macroeconomic Data (1947–2004, Stock &
+         Watson)
+         :name: quarterly-us-macroeconomic-data-19472004-stock-watson
 
-   Time series data on 2 US macroeconomic variables for 1947–2004.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Time series data on 2 US macroeconomic variables for 1947–2004.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("USMacroSWQ")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("USMacroSWQ")
 
-   A quarterly multiple time series from 1947(1) to 2004(4) with 2
-   variables.
+      .. rubric:: Format
+         :name: format
 
-   gdp
-      real GDP for the United States in billions of chained (2000)
-      dollars seasonally adjusted, annual rate.
+      A quarterly multiple time series from 1947(1) to 2004(4) with 2
+      variables.
 
-   tbill
-      3-month treasury bill rate. Quarterly averages of daily dates in
-      percentage points at an annual rate.
+      gdp
+         real GDP for the United States in billions of chained (2000)
+         dollars seasonally adjusted, annual rate.
 
-   .. rubric:: Source
-      :name: source
+      tbill
+         3-month treasury bill rate. Quarterly averages of daily dates
+         in percentage points at an annual rate.
 
-   Online complements to Stock and Watson (2007).
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Online complements to Stock and Watson (2007).
 
-   Stock, J.H. and Watson, M.W. (2007). *Introduction to Econometrics*,
-   2nd ed. Boston: Addison Wesley.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Stock, J.H. and Watson, M.W. (2007). *Introduction to
+      Econometrics*, 2nd ed. Boston: Addison Wesley.
 
-   ``StockWatson2007``, ``USMacroSW``, ``USMacroSWM``, ``USMacroB``,
-   ``USMacroG``
+      .. rubric:: See Also
+         :name: see-also
 
-   .. rubric:: Examples
-      :name: examples
+      ``StockWatson2007``, ``USMacroSW``, ``USMacroSWM``, ``USMacroB``,
+      ``USMacroG``
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data("USMacroSWQ")
-      plot(USMacroSWQ)
+      ::
+
+         data("USMacroSWQ")
+         plot(USMacroSWQ)

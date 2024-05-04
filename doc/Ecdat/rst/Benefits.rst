@@ -1,110 +1,112 @@
 .. container::
 
-   ======== ===============
-   Benefits R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Unemployment of Blue Collar Workers
-      :name: Benefits
+      ======== ===============
+      Benefits R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Unemployment of Blue Collar Workers
+         :name: unemployment-of-blue-collar-workers
 
-   a cross-section from 1972
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 4877
+      a cross-section from 1972
 
-   *observation* : individuals
+      *number of observations* : 4877
 
-   *country* : United States
+      *observation* : individuals
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Benefits)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Benefits)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   stateur
-      state unemployment rate (in %)
+      A time series containing :
 
-   statemb
-      state maximum benefit level
+      stateur
+         state unemployment rate (in %)
 
-   state
-      state of residence code
+      statemb
+         state maximum benefit level
 
-   age
-      age in years
+      state
+         state of residence code
 
-   tenure
-      years of tenure in job lost
+      age
+         age in years
 
-   joblost
-      a factor with levels
-      (slack_work,position_abolished,seasonal_job_ended,other)
+      tenure
+         years of tenure in job lost
 
-   nwhite
-      non-white ?
+      joblost
+         a factor with levels
+         (slack_work,position_abolished,seasonal_job_ended,other)
 
-   school12
-      more than 12 years of school ?
+      nwhite
+         non-white ?
 
-   sex
-      a factor with levels (male,female)
+      school12
+         more than 12 years of school ?
 
-   bluecol
-      blue collar worker ?
+      sex
+         a factor with levels (male,female)
 
-   smsa
-      lives in SMSA ?
+      bluecol
+         blue collar worker ?
 
-   married
-      married ?
+      smsa
+         lives in SMSA ?
 
-   dkids
-      has kids ?
+      married
+         married ?
 
-   dykids
-      has young kids (0-5 yrs) ?
+      dkids
+         has kids ?
 
-   yrdispl
-      year of job displacement (1982=1,..., 1991=10)
+      dykids
+         has young kids (0-5 yrs) ?
 
-   rr
-      replacement rate
+      yrdispl
+         year of job displacement (1982=1,..., 1991=10)
 
-   head
-      is head of household ?
+      rr
+         replacement rate
 
-   ui
-      applied for (and received) UI benefits ?
+      head
+         is head of household ?
 
-   .. rubric:: Source
-      :name: source
+      ui
+         applied for (and received) UI benefits ?
 
-   McCall, B.P. (1995) “The impact of unemployment insurance benefit
-   levels on recipiency”, *Journal of Business and Economic Statistics*,
-   **13**, 189–198.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      McCall, B.P. (1995) “The impact of unemployment insurance benefit
+      levels on recipiency”, *Journal of Business and Economic
+      Statistics*, **13**, 189–198.
 
-   Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
-   and Sons, chapter 7.
+      .. rubric:: References
+         :name: references
 
-   Journal of Business Economics and Statistics web site :
-   https://amstat.tandfonline.com/loi/ubes20.
+      Verbeek, Marno (2004) *A Guide to Modern Econometrics*, John Wiley
+      and Sons, chapter 7.
 
-   .. rubric:: See Also
-      :name: see-also
+      Journal of Business Economics and Statistics web site :
+      https://amstat.tandfonline.com/loi/ubes20.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

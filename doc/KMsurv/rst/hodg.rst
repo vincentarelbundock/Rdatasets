@@ -1,50 +1,52 @@
 .. container::
 
-   ==== ===============
-   hodg R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: data from Section 1.10
-      :name: hodg
+      ==== ===============
+      hodg R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Section 1.10
+         :name: data-from-section-1.10
 
-   The ``hodg`` data frame has 43 rows and 6 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``hodg`` data frame has 43 rows and 6 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   gtype
-      Graft type (1=allogenic, 2=autologous)
+      This data frame contains the following columns:
 
-   dtype
-      Disease type (1=Non Hodgkin lymphoma, 2=Hodgkins disease)
+      gtype
+         Graft type (1=allogenic, 2=autologous)
 
-   time
-      Time to death or relapse, days
+      dtype
+         Disease type (1=Non Hodgkin lymphoma, 2=Hodgkins disease)
 
-   delta
-      Death/relapse indicator (0=alive, 1=dead)
+      time
+         Time to death or relapse, days
 
-   score
-      Karnofsky score
+      delta
+         Death/relapse indicator (0=alive, 1=dead)
 
-   wtime
-      Waiting time to transplant in months
+      score
+         Karnofsky score
 
-   .. rubric:: Source
-      :name: source
+      wtime
+         Waiting time to transplant in months
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer. Avalos et al. Bone Marrow
-   Transplantation 13(1993):133-138.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer. Avalos et al. Bone Marrow
+      Transplantation 13(1993):133-138.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(hodg)
+      ::
+
+         data(hodg)

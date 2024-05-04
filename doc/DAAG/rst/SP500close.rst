@@ -1,33 +1,35 @@
 .. container::
 
-   ========== ===============
-   SP500close R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Closing Numbers for S and P 500 Index
-      :name: SP500close
+      ========== ===============
+      SP500close R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Closing Numbers for S and P 500 Index
+         :name: closing-numbers-for-s-and-p-500-index
 
-   Closing numbers for S and P 500 Index, Jan. 1, 1990 through early
-   2000.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Closing numbers for S and P 500 Index, Jan. 1, 1990 through early
+      2000.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      SP500close
+      ::
 
-   .. rubric:: Source
-      :name: source
+         SP500close
 
-   Derived from SP500 in the MASS library.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Derived from SP500 in the MASS library.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      ts.plot(SP500close)
+      ::
+
+         ts.plot(SP500close)

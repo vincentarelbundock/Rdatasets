@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Utilities</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Utilities'>Utility bills</h2>
+<h2>Utility bills</h2>
 
 <h3>Description</h3>
 
@@ -36,43 +36,32 @@ function processMathHTML() {
 <p>A data frame containing 117 observations for the following variables.
 </p>
 
-<ul>
-<li><p><code>month</code> month (coded as a number)
-</p>
-</li>
-<li><p><code>day</code> day of month on which bill was calculated
-</p>
-</li>
-<li><p><code>year</code> year of bill
-</p>
-</li>
-<li><p><code>temp</code> average temperature (F) for billing period
-</p>
-</li>
-<li><p><code>kwh</code> electricity usage (kwh)
-</p>
-</li>
-<li><p><code>ccf</code> gas usage (ccf)
-</p>
-</li>
-<li><p><code>thermsPerDay</code> a numeric vector
-</p>
-</li>
-<li><p><code>billingDays</code> number of billing days in billing period
-</p>
-</li>
-<li><p><code>totalbill</code> total bill (in dollars)
-</p>
-</li>
-<li><p><code>gasbill</code> gas bill (in dollars)
-</p>
-</li>
-<li><p><code>elecbill</code> electric bill (in dollars)
-</p>
-</li>
-<li><p><code>notes</code> notes about the billing period
-</p>
-</li></ul>
+<dl>
+<dt><code>month</code></dt><dd><p>month (coded as a number)</p>
+</dd>
+<dt><code>day</code></dt><dd><p>day of month on which bill was calculated</p>
+</dd>
+<dt><code>year</code></dt><dd><p>year of bill</p>
+</dd>
+<dt><code>temp</code></dt><dd><p>average temperature (F) for billing period</p>
+</dd>
+<dt><code>kwh</code></dt><dd><p>electricity usage (kwh)</p>
+</dd>
+<dt><code>ccf</code></dt><dd><p>gas usage (ccf)</p>
+</dd>
+<dt><code>thermsPerDay</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>billingDays</code></dt><dd><p>number of billing days in billing period</p>
+</dd>
+<dt><code>totalbill</code></dt><dd><p>total bill (in dollars)</p>
+</dd>
+<dt><code>gasbill</code></dt><dd><p>gas bill (in dollars)</p>
+</dd>
+<dt><code>elecbill</code></dt><dd><p>electric bill (in dollars)</p>
+</dd>
+<dt><code>notes</code></dt><dd><p>notes about the billing period</p>
+</dd>
+</dl>
 
 
 
@@ -97,6 +86,7 @@ if (require(ggformula)) {
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

@@ -1,102 +1,107 @@
 .. container::
 
-   =========== ===============
-   check_times R Documentation
-   =========== ===============
+   .. container::
 
-   .. rubric:: Execution time data
-      :name: check_times
+      =========== ===============
+      check_times R Documentation
+      =========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Execution time data
+         :name: execution-time-data
 
-   These data were collected from the CRAN web page for 13,626 R
-   packages. The time to complete the standard package checking routine
-   was collected In some cases, the package checking process is stopped
-   due to errors and these data are treated as censored. It is less than
-   1 percent.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      These data were collected from the CRAN web page for 13,626 R
+      packages. The time to complete the standard package checking
+      routine was collected In some cases, the package checking process
+      is stopped due to errors and these data are treated as censored.
+      It is less than 1 percent.
 
-   As predictors, the associated package source code were downloaded and
-   parsed to create predictors, including
+      .. rubric:: Details
+         :name: details
 
-   -  ``authors``: The number of authors in the author field.
+      As predictors, the associated package source code were downloaded
+      and parsed to create predictors, including
 
-   -  ``imports``: The number of imported packages.
+      -  ``authors``: The number of authors in the author field.
 
-   -  ``suggests``: The number of packages suggested.
+      -  ``imports``: The number of imported packages.
 
-   -  ``depends``: The number of hard dependencies.
+      -  ``suggests``: The number of packages suggested.
 
-   -  ``Roxygen``: a binary indicator for whether Roxygen was used for
-      documentation.
+      -  ``depends``: The number of hard dependencies.
 
-   -  ``gh``: a binary indicator for whether the URL field contained a
-      GitHub link.
+      -  ``Roxygen``: a binary indicator for whether Roxygen was used
+         for documentation.
 
-   -  ``rforge``: a binary indicator for whether the URL field contained
-      a link to R-forge.
+      -  ``gh``: a binary indicator for whether the URL field contained
+         a GitHub link.
 
-   -  ``descr``: The number of characters (or, in some cases, bytes) in
-      the description field.
+      -  ``rforge``: a binary indicator for whether the URL field
+         contained a link to R-forge.
 
-   -  ``r_count``: The number of R files in the R directory.
+      -  ``descr``: The number of characters (or, in some cases, bytes)
+         in the description field.
 
-   -  ``r_size``: The total disk size of the R files.
+      -  ``r_count``: The number of R files in the R directory.
 
-   -  ``ns_import``: Estimated number of imported functions or methods.
+      -  ``r_size``: The total disk size of the R files.
 
-   -  ``ns_export``: Estimated number of exported functions or methods.
+      -  ``ns_import``: Estimated number of imported functions or
+         methods.
 
-   -  ``s3_methods``: Estimated number of S3 methods.
+      -  ``ns_export``: Estimated number of exported functions or
+         methods.
 
-   -  ``s4_methods``: Estimated number of S4 methods.
+      -  ``s3_methods``: Estimated number of S3 methods.
 
-   -  ``doc_count``: How many Rmd or Rnw files in the vignettes
-      directory.
+      -  ``s4_methods``: Estimated number of S4 methods.
 
-   -  ``doc_size``: The disk size of the Rmd or Rnw files.
+      -  ``doc_count``: How many Rmd or Rnw files in the vignettes
+         directory.
 
-   -  ``src_count``: The number of files in the ``src`` directory.
+      -  ``doc_size``: The disk size of the Rmd or Rnw files.
 
-   -  ``src_size``: The size on disk of files in the ``src`` directory.
+      -  ``src_count``: The number of files in the ``src`` directory.
 
-   -  ``data_count`` The number of files in the ``data`` directory.
+      -  ``src_size``: The size on disk of files in the ``src``
+         directory.
 
-   -  ``data_size``: The size on disk of files in the ``data``
-      directory.
+      -  ``data_count`` The number of files in the ``data`` directory.
 
-   -  ``testthat_count``: The number of files in the ``testthat``
-      directory.
+      -  ``data_size``: The size on disk of files in the ``data``
+         directory.
 
-   -  ``testthat_size``: The size on disk of files in the ``testthat``
-      directory.
+      -  ``testthat_count``: The number of files in the ``testthat``
+         directory.
 
-   -  ``check_time``: The time (in seconds) to run ``⁠R CMD check⁠`` using
-      the "r-devel-windows-ix86+x86_64' flavor.
+      -  ``testthat_size``: The size on disk of files in the
+         ``testthat`` directory.
 
-   -  ``status``: An indicator for whether the tests completed.
+      -  ``check_time``: The time (in seconds) to run ``⁠R CMD check⁠``
+         using the "r-devel-windows-ix86+x86_64' flavor.
 
-   Data were collected on 2019-01-20.
+      -  ``status``: An indicator for whether the tests completed.
 
-   .. rubric:: Value
-      :name: value
+      Data were collected on 2019-01-20.
 
-   =============== ============
-   ``check_times`` a data frame
-   =============== ============
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      =============== ============
+      ``check_times`` a data frame
+      =============== ============
 
-   CRAN
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      CRAN
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(check_times)
-      str(check_times)
+      ::
+
+         data(check_times)
+         str(check_times)

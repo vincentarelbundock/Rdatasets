@@ -1,106 +1,108 @@
 .. container::
 
-   ====== ===============
-   jtrain R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: jtrain
-      :name: jtrain
+      ====== ===============
+      jtrain R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: jtrain
+         :name: jtrain
 
-   Wooldridge Source: H. Holzer, R. Block, M. Cheatham, and J. Knott
-   (1993), “Are Training Subsidies Effective? The Michigan Experience,”
-   Industrial and Labor Relations Review 46, 625-636. The authors kindly
-   provided the data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: H. Holzer, R. Block, M. Cheatham, and J. Knott
+      (1993), “Are Training Subsidies Effective? The Michigan
+      Experience,” Industrial and Labor Relations Review 46, 625-636.
+      The authors kindly provided the data. Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('jtrain')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('jtrain')
 
-   A data.frame with 471 observations on 30 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **year:** 1987, 1988, or 1989
+      A data.frame with 471 observations on 30 variables:
 
-   -  **fcode:** firm code number
+      -  **year:** 1987, 1988, or 1989
 
-   -  **employ:** # employees at plant
+      -  **fcode:** firm code number
 
-   -  **sales:** annual sales, $
+      -  **employ:** # employees at plant
 
-   -  **avgsal:** average employee salary
+      -  **sales:** annual sales, $
 
-   -  **scrap:** scrap rate (per 100 items)
+      -  **avgsal:** average employee salary
 
-   -  **rework:** rework rate (per 100 items)
+      -  **scrap:** scrap rate (per 100 items)
 
-   -  **tothrs:** total hours training
+      -  **rework:** rework rate (per 100 items)
 
-   -  **union:** =1 if unionized
+      -  **tothrs:** total hours training
 
-   -  **grant:** = 1 if received grant
+      -  **union:** =1 if unionized
 
-   -  **d89:** = 1 if year = 1989
+      -  **grant:** = 1 if received grant
 
-   -  **d88:** = 1 if year = 1988
+      -  **d89:** = 1 if year = 1989
 
-   -  **totrain:** total employees trained
+      -  **d88:** = 1 if year = 1988
 
-   -  **hrsemp:** tothrs/totrain
+      -  **totrain:** total employees trained
 
-   -  **lscrap:** log(scrap)
+      -  **hrsemp:** tothrs/totrain
 
-   -  **lemploy:** log(employ)
+      -  **lscrap:** log(scrap)
 
-   -  **lsales:** log(sales)
+      -  **lemploy:** log(employ)
 
-   -  **lrework:** log(rework)
+      -  **lsales:** log(sales)
 
-   -  **lhrsemp:** log(1 + hrsemp)
+      -  **lrework:** log(rework)
 
-   -  **lscrap_1:** lagged lscrap; missing 1987
+      -  **lhrsemp:** log(1 + hrsemp)
 
-   -  **grant_1:** lagged grant; assumed 0 in 1987
+      -  **lscrap_1:** lagged lscrap; missing 1987
 
-   -  **clscrap:** lscrap - lscrap_1; year > 1987
+      -  **grant_1:** lagged grant; assumed 0 in 1987
 
-   -  **cgrant:** grant - grant_1
+      -  **clscrap:** lscrap - lscrap_1; year > 1987
 
-   -  **clemploy:** lemploy - lemploy[\_n-1]
+      -  **cgrant:** grant - grant_1
 
-   -  **clsales:** lavgsal - lavgsal[\_n-1]
+      -  **clemploy:** lemploy - lemploy[_n-1]
 
-   -  **lavgsal:** log(avgsal)
+      -  **clsales:** lavgsal - lavgsal[_n-1]
 
-   -  **clavgsal:** lavgsal - lavgsal[\_n-1]
+      -  **lavgsal:** log(avgsal)
 
-   -  **cgrant_1:** cgrant[\_n-1]
+      -  **clavgsal:** lavgsal - lavgsal[_n-1]
 
-   -  **chrsemp:** hrsemp - hrsemp[\_n-1]
+      -  **cgrant_1:** cgrant[_n-1]
 
-   -  **clhrsemp:** lhrsemp - lhrsemp[\_n-1]
+      -  **chrsemp:** hrsemp - hrsemp[_n-1]
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **clhrsemp:** lhrsemp - lhrsemp[_n-1]
 
-   pages 137, 161, 233, 254, 339, 465-466, 479, 486-487, 492, 504,
-   541-542, 774-775, 786-787, 788, 819.
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 137, 161, 233, 254, 339, 465-466, 479, 486-487, 492, 504,
+      541-542, 774-775, 786-787, 788, 819.
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(jtrain)
+      ::
+
+          str(jtrain)

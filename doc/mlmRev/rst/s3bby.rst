@@ -1,49 +1,52 @@
 .. container::
 
-   ===== ===============
-   s3bby R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Responses simulated by Rodriguez and Goldman
-      :name: s3bby
+      ===== ===============
+      s3bby R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Responses simulated by Rodriguez and Goldman
+         :name: responses-simulated-by-rodriguez-and-goldman
 
-   A matrix of the results of 100 simulations of dichotomous multilevel
-   data. The rows correspond to the 2449 births for which the covariates
-   are given in ``s3bbx``. The elements of the matrix are all 0,
-   indicating no modern prenatal care, or 1, indicating model prenatal
-   care. These were simulated with "large" variances for both the family
-   and the community random effects.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A matrix of the results of 100 simulations of dichotomous
+      multilevel data. The rows correspond to the 2449 births for which
+      the covariates are given in ``s3bbx``. The elements of the matrix
+      are all 0, indicating no modern prenatal care, or 1, indicating
+      model prenatal care. These were simulated with "large" variances
+      for both the family and the community random effects.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(s3bby)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(s3bby)
 
-   An integer matrix with 2449 rows and 100 columns.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      An integer matrix with 2449 rows and 100 columns.
 
-   http://data.princeton.edu/multilevel/simul.htm
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      http://data.princeton.edu/multilevel/simul.htm
 
-   Rodriguez, Germán and Goldman, Noreen (1995) An assessment of
-   estimation procedures for multilevel models with binary responses,
-   *Journal of the Royal Statistical Society, Series A* **158**, 73–89.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Rodriguez, Germán and Goldman, Noreen (1995) An assessment of
+      estimation procedures for multilevel models with binary responses,
+      *Journal of the Royal Statistical Society, Series A* **158**,
+      73–89.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      str(s3bby)
+      ::
+
+         str(s3bby)

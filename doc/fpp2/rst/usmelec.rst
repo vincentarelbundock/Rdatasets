@@ -1,32 +1,34 @@
 .. container::
 
-   ======= ===============
-   usmelec R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Electricity monthly total net generation. January 1973 -
-      June 2013.
-      :name: usmelec
+      ======= ===============
+      usmelec R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Electricity monthly total net generation. January 1973
+         - June 2013.
+         :name: electricity-monthly-total-net-generation.-january-1973---june-2013.
 
-   Electricity net generation measured in billions of kilowatt hours
-   (kWh).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Electricity net generation measured in billions of kilowatt hours
+      (kWh).
 
-   Time series object of class ``ts``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      Time series object of class ``ts``.
 
-   US Energy Information Administration.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      US Energy Information Administration.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      autoplot(usmelec)
+      ::
+
+         autoplot(usmelec)

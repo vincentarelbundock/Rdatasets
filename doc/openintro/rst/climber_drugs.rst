@@ -1,70 +1,72 @@
 .. container::
 
-   ============= ===============
-   climber_drugs R Documentation
-   ============= ===============
+   .. container::
 
-   .. rubric:: Climber Drugs Data.
-      :name: climber_drugs
+      ============= ===============
+      climber_drugs R Documentation
+      ============= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Climber Drugs Data.
+         :name: climber-drugs-data.
 
-   Anonymous data was collected from urine samples at huts along the
-   climb of Mont Blanc. Several types of drugs were tested, and
-   proportions were reported.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Anonymous data was collected from urine samples at huts along the
+      climb of Mont Blanc. Several types of drugs were tested, and
+      proportions were reported.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      climber_drugs
+      ::
 
-   .. rubric:: Format
-      :name: format
+         climber_drugs
 
-   A data frame with 211 rows and 6 variables.
+      .. rubric:: Format
+         :name: format
 
-   positive_sample
-      Idendification number of a specific urine sample.
+      A data frame with 211 rows and 6 variables.
 
-   hut
-      Location where the sample was taken.
+      positive_sample
+         Idendification number of a specific urine sample.
 
-   substance
-      Substance detected to be present in the urine sample.
+      hut
+         Location where the sample was taken.
 
-   concentration
-      Amount of substance found measured in ng/ml.
+      substance
+         Substance detected to be present in the urine sample.
 
-   screening_analysis
-      Indicates that the concentration was determined by screening
-      analysis.
+      concentration
+         Amount of substance found measured in ng/ml.
 
-   concomitant
-      Indicates that this substance was always detected concomitantly
-      with the previous one, within the same urine sample.
+      screening_analysis
+         Indicates that the concentration was determined by screening
+         analysis.
 
-   .. rubric:: Source
-      :name: source
+      concomitant
+         Indicates that this substance was always detected concomitantly
+         with the previous one, within the same urine sample.
 
-   `PLOS One - Drug Use on Mont Blanc: A Study Using Automated Urine
-   Collection <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0156786#sec012>`__
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      `PLOS One - Drug Use on Mont Blanc: A Study Using Automated Urine
+      Collection <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0156786#sec012>`__
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(dplyr)
+      ::
 
-      # Calculate the average concentration of each substance and number of occurrences.
-      climber_drugs %>%
-        group_by(substance) %>%
-        summarize(count = n(), mean_con = mean(concentration))
+         library(dplyr)
 
-      # Proportion samples in which each substance was detected.
-      climber_drugs %>%
-        group_by(substance) %>%
-        summarize(prop = n() / 154)
+         # Calculate the average concentration of each substance and number of occurrences.
+         climber_drugs %>%
+           group_by(substance) %>%
+           summarize(count = n(), mean_con = mean(concentration))
+
+         # Proportion samples in which each substance was detected.
+         climber_drugs %>%
+           group_by(substance) %>%
+           summarize(prop = n() / 154)

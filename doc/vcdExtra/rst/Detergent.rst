@@ -1,72 +1,74 @@
 .. container::
 
-   ========= ===============
-   Detergent R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Detergent preference data
-      :name: Detergent
+      ========= ===============
+      Detergent R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Detergent preference data
+         :name: detergent-preference-data
 
-   Cross-classification of a sample of 1008 consumers according to (a)
-   the softness of the laundry water used, (b) previous use of detergent
-   Brand M, (c) the temperature of laundry water used and (d) expressed
-   preference for Brand X or Brand M in a blind trial.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Cross-classification of a sample of 1008 consumers according to
+      (a) the softness of the laundry water used, (b) previous use of
+      detergent Brand M, (c) the temperature of laundry water used and
+      (d) expressed preference for Brand X or Brand M in a blind trial.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Detergent)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Detergent)
 
-   A 4-dimensional array resulting from cross-tabulating 4 variables for
-   1008 observations. The variable names and their levels are:
+      .. rubric:: Format
+         :name: format
 
-   == ================== ============================
-   No Name               Levels
-   1  ``Temperature``    ``"High", "Low"``
-   2  ``M_User``         ``"Yes", "No"``
-   3  ``Preference``     ``"Brand X", "Brand M"``
-   4  ``Water_softness`` ``"Soft", "Medium", "Hard"``
-   \                     
-   == ================== ============================
+      A 4-dimensional array resulting from cross-tabulating 4 variables
+      for 1008 observations. The variable names and their levels are:
 
-   .. rubric:: Source
-      :name: source
+      == ================== ============================
+      No Name               Levels
+      1  ``Temperature``    ``"High", "Low"``
+      2  ``M_User``         ``"Yes", "No"``
+      3  ``Preference``     ``"Brand X", "Brand M"``
+      4  ``Water_softness`` ``"Soft", "Medium", "Hard"``
+      \                     
+      == ================== ============================
 
-   Fienberg, S. E. (1980). *The Analysis of Cross-Classified Categorical
-   Data* Cambridge, MA: MIT Press, p. 71.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Fienberg, S. E. (1980). *The Analysis of Cross-Classified
+      Categorical Data* Cambridge, MA: MIT Press, p. 71.
 
-   Ries, P. N. & Smith, H. (1963). The use of chi-square for preference
-   testing in multidimensional problems. *Chemical Engineering
-   Progress*, 59, 39-43.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Ries, P. N. & Smith, H. (1963). The use of chi-square for
+      preference testing in multidimensional problems. *Chemical
+      Engineering Progress*, 59, 39-43.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Detergent)
+      ::
 
-      # basic mosaic plot
-      mosaic(Detergent, shade=TRUE)
+         data(Detergent)
 
-      require(MASS)
-      (det.mod0 <- loglm(~ Preference + Temperature + M_User + Water_softness, 
-                         data=Detergent))
-      # examine addition of two-way terms
-      add1(det.mod0, ~ .^2, test="Chisq")
+         # basic mosaic plot
+         mosaic(Detergent, shade=TRUE)
 
-      # model for Preference as a response
-      (det.mod1 <- loglm(~ Preference + (Temperature * M_User * Water_softness), 
-                         data=Detergent))
-      mosaic(det.mod0)
+         require(MASS)
+         (det.mod0 <- loglm(~ Preference + Temperature + M_User + Water_softness, 
+                            data=Detergent))
+         # examine addition of two-way terms
+         add1(det.mod0, ~ .^2, test="Chisq")
+
+         # model for Preference as a response
+         (det.mod1 <- loglm(~ Preference + (Temperature * M_User * Water_softness), 
+                            data=Detergent))
+         mosaic(det.mod0)

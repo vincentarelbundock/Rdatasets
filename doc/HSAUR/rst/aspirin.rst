@@ -1,58 +1,61 @@
 .. container::
 
-   ======= ===============
-   aspirin R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Aspirin Data
-      :name: aspirin
+      ======= ===============
+      aspirin R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Aspirin Data
+         :name: aspirin-data
 
-   Efficacy of Aspirin in preventing death after a myocardial infarct.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Efficacy of Aspirin in preventing death after a myocardial
+      infarct.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("aspirin")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("aspirin")
 
-   A data frame with 7 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``dp``
-      number of deaths after placebo.
+      A data frame with 7 observations on the following 4 variables.
 
-   ``tp``
-      total number subjects treated with placebo.
+      ``dp``
+         number of deaths after placebo.
 
-   ``da``
-      number of deaths after Aspirin.
+      ``tp``
+         total number subjects treated with placebo.
 
-   ``ta``
-      total number of subjects treated with Aspirin.
+      ``da``
+         number of deaths after Aspirin.
 
-   .. rubric:: Details
-      :name: details
+      ``ta``
+         total number of subjects treated with Aspirin.
 
-   The data were collected for a meta-analysis of the effectiveness of
-   Aspirin (versus placebo) in preventing death after a myocardial
-   infarction.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The data were collected for a meta-analysis of the effectiveness
+      of Aspirin (versus placebo) in preventing death after a myocardial
+      infarction.
 
-   J. L. Fleiss (1993), The statistical basis of meta-analysis.
-   *Statistical Methods in Medical Research* **2**, 121–145.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      J. L. Fleiss (1993), The statistical basis of meta-analysis.
+      *Statistical Methods in Medical Research* **2**, 121–145.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("aspirin", package = "HSAUR")
-        aspirin
+      ::
+
+           data("aspirin", package = "HSAUR")
+           aspirin

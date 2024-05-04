@@ -1,101 +1,105 @@
 .. container::
 
-   ====== ===============
-   medpar R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: medpar
-      :name: medpar
+      ====== ===============
+      medpar R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: medpar
+         :name: medpar
 
-   The US national Medicare inpatient hospital database is referred to
-   as the Medpar data, which is prepared yearly from hospital filing
-   records. Medpar files for each state are also prepared. The full
-   Medpar data consists of 115 variables. The national Medpar has some
-   14 million records, with one record for each hospilitiztion. The data
-   in the medpar file comes from 1991 Medicare files for the state of
-   Arizona. The data are limited to only one diagnostic group (DRG 112).
-   Patient data have been randomly selected from the original data.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The US national Medicare inpatient hospital database is referred
+      to as the Medpar data, which is prepared yearly from hospital
+      filing records. Medpar files for each state are also prepared. The
+      full Medpar data consists of 115 variables. The national Medpar
+      has some 14 million records, with one record for each
+      hospilitiztion. The data in the medpar file comes from 1991
+      Medicare files for the state of Arizona. The data are limited to
+      only one diagnostic group (DRG 112). Patient data have been
+      randomly selected from the original data.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(medpar)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(medpar)
 
-   A data frame with 1495 observations on the following 10 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``los``
-      length of hospital stay
+      A data frame with 1495 observations on the following 10 variables.
 
-   ``hmo``
-      Patient belongs to a Health Maintenance Organization, binary
+      ``los``
+         length of hospital stay
 
-   ``white``
-      Patient identifies themselves as Caucasian, binary
+      ``hmo``
+         Patient belongs to a Health Maintenance Organization, binary
 
-   ``died``
-      Patient died, binary
+      ``white``
+         Patient identifies themselves as Caucasian, binary
 
-   ``age80``
-      Patient age 80 and over, binary
+      ``died``
+         Patient died, binary
 
-   ``type``
-      Type of admission, categorical
+      ``age80``
+         Patient age 80 and over, binary
 
-   ``type1``
-      Elective admission, binary
+      ``type``
+         Type of admission, categorical
 
-   ``type2``
-      Urgent admission,binary
+      ``type1``
+         Elective admission, binary
 
-   ``type3``
-      Elective admission, binary
+      ``type2``
+         Urgent admission,binary
 
-   ``provnum``
-      Provider ID
+      ``type3``
+         Elective admission, binary
 
-   .. rubric:: Details
-      :name: details
+      ``provnum``
+         Provider ID
 
-   medpar is saved as a data frame. Count models use los as response
-   variable. 0 counts are structurally excluded
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      medpar is saved as a data frame. Count models use los as response
+      variable. 0 counts are structurally excluded
 
-   1991 National Medpar data, National Health Economics & Research Co.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      1991 National Medpar data, National Health Economics & Research
+      Co.
 
-   Hilbe, Joseph M (2014), Modeling Count Data, Cambridge University
-   Press Hilbe, Joseph M (2007, 2011), Negative Binomial Regression,
-   Cambridge University Press Hilbe, Joseph M (2009), Logistic
-   Regression Models, Chapman & Hall/CRC first used in Hardin, JW and JM
-   Hilbe (2001, 2007), Generalized Linear Models and Extensions, Stata
-   Press
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Hilbe, Joseph M (2014), Modeling Count Data, Cambridge University
+      Press Hilbe, Joseph M (2007, 2011), Negative Binomial Regression,
+      Cambridge University Press Hilbe, Joseph M (2009), Logistic
+      Regression Models, Chapman & Hall/CRC first used in Hardin, JW and
+      JM Hilbe (2001, 2007), Generalized Linear Models and Extensions,
+      Stata Press
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(MASS)
-      library(msme)
-      data(medpar)
-      glmp <- glm(los ~ hmo + white + factor(type), family=poisson, data=medpar)
-      summary(glmp)
-      exp(coef(glmp))
-      nb2 <- nbinomial(los ~ hmo + white + factor(type), data=medpar)
-      summary(nb2)
-      exp(coef(nb2))
-      glmnb <- glm.nb(los ~ hmo + white + factor(type), data=medpar)
-      summary(glmnb)
-      exp(coef(glmnb))
+      ::
+
+         library(MASS)
+         library(msme)
+         data(medpar)
+         glmp <- glm(los ~ hmo + white + factor(type), family=poisson, data=medpar)
+         summary(glmp)
+         exp(coef(glmp))
+         nb2 <- nbinomial(los ~ hmo + white + factor(type), data=medpar)
+         summary(nb2)
+         exp(coef(nb2))
+         glmnb <- glm.nb(los ~ hmo + white + factor(type), data=medpar)
+         summary(glmnb)
+         exp(coef(glmnb))

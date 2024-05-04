@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>iris</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='iris'>Edgar Anderson's Iris Data</h2>
+<h2>Edgar Anderson's Iris Data</h2>
 
 <h3>Description</h3>
 
@@ -42,7 +42,7 @@ iris3
 <code>Petal.Length</code>, <code>Petal.Width</code>, and <code>Species</code>.
 </p>
 <p><code>iris3</code> gives the same data arranged as a 3-dimensional array
-of size 50 by 4 by 3, as represented by S-PLUS.  The first dimension
+of size 50 by 4 by 3, as once provided by S-PLUS.  The first dimension
 gives the case number within the species subsample, the second the
 measurements with names <code>Sepal L.</code>, <code>Sepal W.</code>,
 <code>Petal L.</code>, and <code>Petal W.</code>, and the third the species.
@@ -55,6 +55,7 @@ measurements with names <code>Sepal L.</code>, <code>Sepal W.</code>,
 The use of multiple measurements in taxonomic problems.
 <em>Annals of Eugenics</em>,
 <b>7</b>, Part II, 179&ndash;188.
+<a href="https://doi.org/10.1111/j.1469-1809.1936.tb02137.x">doi:10.1111/j.1469-1809.1936.tb02137.x</a>.
 </p>
 <p>The data were collected by
 Anderson, Edgar (1935).
@@ -81,14 +82,24 @@ Wadsworth &amp; Brooks/Cole. (has <code>iris3</code> as <code>iris</code>.)
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>dni3 &lt;- dimnames(iris3)
+<pre><code class='language-R'>summary(iris)
+
+## Fisher's (1936) research question: whether (compound measurements of)
+## Iris versicolor "differs twice as much from I. setosa as from I. virginica"
+pairs(iris[1:4], col = iris$Species)
+legend(0.5, 1, levels(iris$Species), fill = 1:3, bty = "n",
+       horiz = TRUE, xjust = 0.5, yjust = 0, xpd = TRUE)
+
+## equivalence of legacy array (iris3) and data.frame (iris) representation
+dni3 &lt;- dimnames(iris3)
 ii &lt;- data.frame(matrix(aperm(iris3, c(1,3,2)), ncol = 4,
                         dimnames = list(NULL, sub(" L.",".Length",
                                         sub(" W.",".Width", dni3[[2]])))),
     Species = gl(3, 50, labels = sub("S", "s", sub("V", "v", dni3[[3]]))))
-all.equal(ii, iris) # TRUE
+stopifnot(all.equal(ii, iris))
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

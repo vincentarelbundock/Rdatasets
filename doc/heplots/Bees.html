@@ -12,101 +12,100 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Bees</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Bees'>Captive and maltreated bees</h2>
+<h2>Captive and maltreated bees</h2>
 
 <h3>Description</h3>
 
-<p>Pabalan, Davey and Packe (2000) 
-studied the effects of captivity and maltreatment
-on reproductive capabilities of queen and worker bees in a complex factorial design.
+<p>Pabalan, Davey and Packe (2000) studied the effects of captivity and
+maltreatment on reproductive capabilities of queen and worker bees in a
+complex factorial design.
 </p>
-<p>Bees were placed in a small tube and either held captive (CAP) or shaken periodically (MAL) for
-one of 5, 7.5, 10, 12.5 or 15 minutes, after which they were sacrificed and
-two measures: ovarian development (<code>Iz</code>) and ovarian reabsorption (<code>Iy</code>), were taken.
-A single control group was measured with no such treatment, i.e., at time 0; there are 
-n=10 per group.
-</p>
-<p>The design is thus nearly a three-way factorial, with factors
-<code>caste</code> (Queen, Worker), <code>treat</code> (CAP, MAL) and <code>time</code>, 
-except that there are only 11 combinations of Treatment and Time; 
-we call these <code>trtime</code> below.
-</p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(Bees)</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A data frame with 246 observations on the following 6 variables.
 </p>
-
+ 
 <dl>
 <dt><code>caste</code></dt><dd><p>a factor with levels <code>Queen</code> <code>Worker</code></p>
-</dd>
+</dd> 
 <dt><code>treat</code></dt><dd><p>a factor with levels <code>""</code> <code>CAP</code> <code>MAL</code></p>
-</dd>
+</dd> 
 <dt><code>time</code></dt><dd><p>an ordered factor: time of treatment</p>
-</dd>
+</dd> 
 <dt><code>Iz</code></dt><dd><p>an index of ovarian development</p>
 </dd>
 <dt><code>Iy</code></dt><dd><p>an index of ovarian reabsorption</p>
-</dd>
-<dt><code>trtime</code></dt><dd><p>a factor with levels <code>0</code> <code>CAP05</code> <code>CAP07</code> <code>CAP10</code> <code>CAP12</code> <code>CAP15</code> <code>MAL05</code> <code>MAL07</code> <code>MAL10</code> <code>MAL12</code> <code>MAL15</code></p>
-</dd>
+</dd> 
+<dt><code>trtime</code></dt><dd><p>a factor with levels <code>0</code> <code>CAP05</code> <code>CAP07</code> <code>CAP10</code>
+<code>CAP12</code> <code>CAP15</code> <code>MAL05</code> <code>MAL07</code> <code>MAL10</code>
+<code>MAL12</code> <code>MAL15</code></p>
+</dd> 
 </dl>
 
 
 
 <h3>Details</h3>
 
-<p>Models for the three-way factorial design, using the formula <code>cbind(Iz,Iy) ~ caste*treat*time</code>
-ignore the control condition at <code>time==0</code>, where <code>treat==NA</code>.
+<p>Bees were placed in a small tube and either held captive (CAP) or shaken
+periodically (MAL) for one of 5, 7.5, 10, 12.5 or 15 minutes, after which
+they were sacrificed and two measures: ovarian development (<code>Iz</code>) and
+ovarian reabsorption (<code>Iy</code>), were taken. A single control group was
+measured with no such treatment, i.e., at time 0; there are n=10 per group.
 </p>
-<p>To handle the additional control group at <code>time==0</code>, while separating the
-effects of Treatment and Time, 10 contrasts can be defined for the <code>trtime</code>
-factor in the model <code>cbind(Iz,Iy) ~ caste*trtime</code>
-See <code>demo(bees.contrasts)</code> for details.
+<p>The design is thus nearly a three-way factorial, with factors <code>caste</code>
+(Queen, Worker), <code>treat</code> (CAP, MAL) and <code>time</code>, except that there
+are only 11 combinations of Treatment and Time; we call these <code>trtime</code>
+below.
 </p>
-<p>In the <code>heplot</code> examples below, the default <code>size="evidence"</code> displays are
-too crowded to interpret, because some effects are so highly significant.  The alternative
-effect-size scaling, <code>size="effect"</code>, makes the relations clearer.
+<p>Models for the three-way factorial design, using the formula
+<code>cbind(Iz,Iy) ~ caste*treat*time</code> ignore the control condition at
+<code>time==0</code>, where <code>treat==NA</code>.
+</p>
+<p>To handle the additional control group at <code>time==0</code>, while separating
+the effects of Treatment and Time, 10 contrasts can be defined for the
+<code>trtime</code> factor in the model <code>cbind(Iz,Iy) ~ caste*trtime</code> See
+<code>demo(bees.contrasts)</code> for details.
+</p>
+<p>In the <code>heplot</code> examples below, the default <code>size="evidence"</code>
+displays are too crowded to interpret, because some effects are so highly
+significant.  The alternative effect-size scaling, <code>size="effect"</code>,
+makes the relations clearer.
 </p>
 
 
 <h3>Source</h3>
 
-<p>Pabalan, N., Davey, K. G. &amp; Packe, L. (2000).
-Escalation of Aggressive Interactions During Staged Encounters in Halictus ligatus Say (Hymenoptera: Halictidae), with a Comparison of Circle Tube Behaviors with Other Halictine Species 
-<em>Journal of Insect Behavior</em>,  
-<b>13</b>, 627-650.
+<p>Pabalan, N., Davey, K. G. &amp; Packe, L. (2000). Escalation of
+Aggressive Interactions During Staged Encounters in Halictus ligatus Say
+(Hymenoptera: Halictidae), with a Comparison of Circle Tube Behaviors with
+Other Halictine Species <em>Journal of Insect Behavior</em>, <b>13</b>,
+627-650.
 </p>
 
 
 <h3>References</h3>
 
-<p>Friendly, M. (2006).
-Data Ellipses, HE Plots and Reduced-Rank Displays for Multivariate Linear Models: 
-SAS Software and Examples 
-<em>Journal of Statistical Software</em>, 
-<b>17</b>, 1-42.
+<p>Friendly, M. (2006). Data Ellipses, HE Plots and Reduced-Rank
+Displays for Multivariate Linear Models: SAS Software and Examples
+<em>Journal of Statistical Software</em>, <b>17</b>, 1-42.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Bees)
+<pre><code class='language-R'>
+data(Bees)
 require(car)
 
 # 3-way factorial, ignoring 0 group
 bees.mod &lt;- lm(cbind(Iz,Iy) ~ caste*treat*time, data=Bees)
-Anova(bees.mod)
+car::Anova(bees.mod)
 
 op&lt;-palette(c(palette()[1:4],"brown","magenta", "olivedrab","darkgray"))
 heplot(bees.mod, 
@@ -149,8 +148,10 @@ if(require(effects)) {
 	plot(bees.eff2,multiline=TRUE,ask=FALSE)
 }
 
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

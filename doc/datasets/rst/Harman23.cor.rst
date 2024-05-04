@@ -1,36 +1,38 @@
 .. container::
 
-   ============ ===============
-   Harman23.cor R Documentation
-   ============ ===============
+   .. container::
 
-   .. rubric:: Harman Example 2.3
-      :name: Harman23.cor
+      ============ ===============
+      Harman23.cor R Documentation
+      ============ ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Harman Example 2.3
+         :name: harman-example-2.3
 
-   A correlation matrix of eight physical measurements on 305 girls
-   between ages seven and seventeen.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A correlation matrix of eight physical measurements on 305 girls
+      between ages seven and seventeen.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Harman23.cor
+      ::
 
-   .. rubric:: Source
-      :name: source
+         Harman23.cor
 
-   Harman, H. H. (1976) *Modern Factor Analysis*, Third Edition Revised,
-   University of Chicago Press, Table 2.3.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Harman, H. H. (1976) *Modern Factor Analysis*, Third Edition
+      Revised, University of Chicago Press, Table 2.3.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      require(stats)
-      (Harman23.FA <- factanal(factors = 1, covmat = Harman23.cor))
-      for(factors in 2:4) print(update(Harman23.FA, factors = factors))
+      ::
+
+         require(stats)
+         (Harman23.FA <- factanal(factors = 1, covmat = Harman23.cor))
+         for(factors in 2:4) print(update(Harman23.FA, factors = factors))

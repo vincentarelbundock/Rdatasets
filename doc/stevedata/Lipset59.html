@@ -1,0 +1,134 @@
+<!DOCTYPE html><html><head><title>R: Democracy and Economic Development (Around) 1949-50</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Lipset59</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Democracy and Economic Development (Around) 1949-50</h2>
+
+<h3>Description</h3>
+
+<p>A data set on democracy and economic development for 48 countries that Lipset
+(1959) first described.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Lipset59
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 48 observations on the following 11 variables.
+</p>
+
+<dl>
+<dt><code>country</code></dt><dd><p>a character country for an English country name</p>
+</dd>
+<dt><code>cat</code></dt><dd><p>a category for the country by their region and level of democracy</p>
+</dd>
+<dt><code>iso3c</code></dt><dd><p>a three-character ISO code</p>
+</dd>
+<dt><code>wbgdp2011est</code></dt><dd><p>an estimated gross domestic product in 2011 USD</p>
+</dd>
+<dt><code>wbpopest</code></dt><dd><p>an estimated population size</p>
+</dd>
+<dt><code>unpop</code></dt><dd><p>a population size (in thousands)</p>
+</dd>
+<dt><code>uninc</code></dt><dd><p>a national income (in millions)</p>
+</dd>
+<dt><code>unincpc</code></dt><dd><p>a national income per capita</p>
+</dd>
+<dt><code>xm_qudsest</code></dt><dd><p>a &quot;Quick UDS&quot; estimate of democracy on a latent scale (see details)</p>
+</dd>
+<dt><code>v2x_polyarchy</code></dt><dd><p>the Varieties of Democracy &quot;polyarchy&quot; estimate (see details)</p>
+</dd>
+<dt><code>polity2</code></dt><dd><p>the <code>polity2</code> score from the Polity project (see details)</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The three variables with the prefix of <code>un</code> nominally come from the
+United Nations Statistical Division for 1949/1950, but are actually retrieved
+from Andic and Peacock (1961). Andic and Peacock (1961) note you should be
+skeptical of Soviet-style calculations of national income and thus don't
+include it in the data they make available.
+</p>
+<p>Anything else is explicitly benchmarked to 1950 as a referent year. The GDP
+and population estimates come by way of Anders et al. (2020). You can manually
+create your own GDP per capita variable here because the GDP is demarcated
+in dollars and the population size is in units of 1. Take one and divide it
+over the other.
+</p>
+<p>The democracy variables are all unique in their own way. The &quot;Quick UDS&quot;
+estimates are generated to be latent and, globally, have a mean that
+approximates 0 and a standard deviation that approximates 1. In the regression
+context, that would mean a coefficient would communicate something like a
+magnitude change across a standard deviation on the scale. The &quot;polyarchy&quot;
+estimate has a theoretical minimum of 0 and a theoretical maximum of 1. In
+the regression context, that would mean a coefficient communicates a min/max
+effect. The Polity project estimate comes from a usual scale of -10 to 10 and
+a regression coefficient communicates something much less exotic. It's a unit
+change on this scale.
+</p>
+<p>In all cases, higher values of democracy = more &quot;democraticness&quot;, for lack
+of a better term.
+</p>
+
+
+<h3>References</h3>
+
+<p>Anders, Therese, Christopher J. Fariss, and Jonathan N. Markowitz. 2020.
+&quot;Bread Before Guns or Butter: Introducing Surplus Domestic Product (SDP)&quot;
+<em>International Studies Quarterly</em> 64(2): 392&ndash;405.
+</p>
+<p>Andic, Suphan and Alan T. Peacock. 1961. &quot;The International Distribution of
+Income, 1949 and 1957.&quot; <em>Journal of the Royal Statistical Society</em>. Series A
+(General) 124(2): 206-218.
+</p>
+<p>Coppedge, Michael, John Gerring, Carl Henrik Knutsen, Staffan I. Lindberg,
+Jan Teorell, David Altman, Michael Bernhard, M. Steven Fish, Adam Glynn,
+Allen Hicken, Anna Luhrmann, Kyle L. Marquardt, Kelly McMann, Pamela
+Paxton, Daniel Pemstein, Brigitte Seim, Rachel Sigman, Svend-Erik
+Skaaning, Jeffrey Staton, Agnes Cornell, Lisa Gastaldi, Haakon Gjerlow,
+Valeriya Mechkova, Johannes von Romer, Aksel Sundtrom, Eitan Tzelgov,
+Luca Uberti, Yi-ting Wang, Tore Wig, and Daniel Ziblatt. 2020.
+&quot;V-Dem Codebook v10&quot; Varieties of Democracy (V-Dem) Project.
+</p>
+<p>Lipset, Seymour Martin. 1959. &quot;Some Social Requisites of Democracy:
+Economic Development and Political Legitimacy&quot; <em>American Political Science
+Review</em> 53(1): 69-105.
+</p>
+<p>Marshall, Monty G., Ted Robert Gurr, and Keith Jaggers. 2017.
+&quot;Polity IV Project: Political Regime Characteristics and Transitions,
+1800-2017.&quot; Center for Systemic Peace.
+</p>
+<p>Marquez, Xavier, &quot;A Quick Method for Extending the Unified Democracy
+Scores&quot; (March 23, 2016).  doi: <a href="https://doi.org/10.2139/ssrn.2753830">10.2139/ssrn.2753830</a>
+</p>
+<p>Pemstein, Daniel, Stephen Meserve, and James Melton. 2010. &quot;Democratic
+Compromise: A Latent Variable Analysis of Ten Measures of Regime Type.&quot;
+<em>Political Analysis</em> 18(4): 426-449.
+</p>
+
+</main>
+
+</div>
+</body></html>

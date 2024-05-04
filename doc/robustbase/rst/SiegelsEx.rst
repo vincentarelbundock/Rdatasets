@@ -1,55 +1,58 @@
 .. container::
 
-   ========= ===============
-   SiegelsEx R Documentation
-   ========= ===============
+   .. container::
 
-   .. rubric:: Siegel's Exact Fit Example Data
-      :name: SiegelsEx
+      ========= ===============
+      SiegelsEx R Documentation
+      ========= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Siegel's Exact Fit Example Data
+         :name: siegels-exact-fit-example-data
 
-   A small counterexample data set devised by Andrew Siegel. Six (out of
-   nine) data points lie on the line ``y = 0`` such that some robust
-   regression estimators exhibit the “\ *exact fit*\ ” property.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A small counterexample data set devised by Andrew Siegel. Six (out
+      of nine) data points lie on the line ``y = 0`` such that some
+      robust regression estimators exhibit the “\ *exact fit*\ ”
+      property.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(SiegelsEx, package="robustbase")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(SiegelsEx, package="robustbase")
 
-   A data frame with 9 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``x``
-      a numeric vector
+      A data frame with 9 observations on the following 2 variables.
 
-   ``y``
-      a numeric vector
+      ``x``
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      ``y``
+         a numeric vector
 
-   Emerson and Hoaglin (1983, p.139)
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Emerson and Hoaglin (1983, p.139)
 
-   Peter J. Rousseeuw and Annick M. Leroy (1987) *Robust Regression and
-   Outlier Detection* Wiley, p.60–61
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Peter J. Rousseeuw and Annick M. Leroy (1987) *Robust Regression
+      and Outlier Detection* Wiley, p.60–61
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(SiegelsEx)
-      plot(SiegelsEx, main = "Siegel's example for 'exact fit'")
-      abline(          lm(y ~ x, data = SiegelsEx))
-      abline(MASS::lqs(y ~ x, data = SiegelsEx, method = "lms"), col = 2)
-      legend("topright", leg = c("lm", "LMS"), col=1:2, lwd=1, inset = 1/20)
+      ::
+
+         data(SiegelsEx)
+         plot(SiegelsEx, main = "Siegel's example for 'exact fit'")
+         abline(          lm(y ~ x, data = SiegelsEx))
+         abline(MASS::lqs(y ~ x, data = SiegelsEx, method = "lms"), col = 2)
+         legend("topright", leg = c("lm", "LMS"), col=1:2, lwd=1, inset = 1/20)

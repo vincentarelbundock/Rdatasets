@@ -1,57 +1,62 @@
 .. container::
 
-   ========== ===============
-   Newhouse77 R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Medical-Care Expenditure: A Cross-National Survey
-      (Newhouse, 1977)
-      :name: Newhouse77
+      ========== ===============
+      Newhouse77 R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Medical-Care Expenditure: A Cross-National Survey
+         (Newhouse, 1977)
+         :name: medical-care-expenditure-a-cross-national-survey-newhouse-1977
 
-   These are the data in Newhouse's (1977) simple OLS model from 1977.
-   In his case, he's trying to explain medical care expenditures as a
-   function of GDP per capita for these countries. It's probably the
-   easiest OLS model I can find in print because Newhouse helpfully
-   provides all the data in one simple table.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      These are the data in Newhouse's (1977) simple OLS model from
+      1977. In his case, he's trying to explain medical care
+      expenditures as a function of GDP per capita for these countries.
+      It's probably the easiest OLS model I can find in print because
+      Newhouse helpfully provides all the data in one simple table.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      Newhouse77
+      ::
 
-   .. rubric:: Format
-      :name: format
+         Newhouse77
 
-   A data frame with 13 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``country``
-      a character vector for the country
+      A data frame with 13 observations on the following 5 variables.
 
-   ``year``
-      a numeric vector for the year
+      ``country``
+         a character vector for the country
 
-   ``gdppc``
-      a numeric vector for the per capita GDP in USD
+      ``year``
+         a numeric vector for the year
 
-   ``medsharegdp``
-      a numeric vector for the medical care share as percentage of GDP
+      ``gdppc``
+         a numeric vector for the per capita GDP in USD
 
-   ``medexppc``
-      a numeric vector for per capita medical care expenditure (in USD)
+      ``medsharegdp``
+         a numeric vector for the medical care share as percentage of
+         GDP
 
-   .. rubric:: Details
-      :name: details
+      ``medexppc``
+         a numeric vector for per capita medical care expenditure (in
+         USD)
 
-   Table 1 in Newhouse (1977) is well-annotated with background
-   information.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: References
-      :name: references
+      Table 1 in Newhouse (1977) is well-annotated with background
+      information.
 
-   Newhouse, Joseph P. 1977. "Medical-Care Expenditure: A Cross-National
-   Survey." *Journal of Human Resources* 12(1): 115-125.
+      .. rubric:: References
+         :name: references
+
+      Newhouse, Joseph P. 1977. "Medical-Care Expenditure: A
+      Cross-National Survey." *Journal of Human Resources* 12(1):
+      115-125.

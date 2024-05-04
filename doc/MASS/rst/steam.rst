@@ -1,44 +1,46 @@
 .. container::
 
-   ===== ===============
-   steam R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: The Saturated Steam Pressure Data
-      :name: steam
+      ===== ===============
+      steam R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: The Saturated Steam Pressure Data
+         :name: the-saturated-steam-pressure-data
 
-   Temperature and pressure in a saturated steam driven experimental
-   device.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Temperature and pressure in a saturated steam driven experimental
+      device.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      steam
+      ::
 
-   .. rubric:: Format
-      :name: format
+         steam
 
-   The data frame contains the following components:
+      .. rubric:: Format
+         :name: format
 
-   ``Temp``
-      temperature, in degrees Celsius.
+      The data frame contains the following components:
 
-   ``Press``
-      pressure, in Pascals.
+      ``Temp``
+         temperature, in degrees Celsius.
 
-   .. rubric:: Source
-      :name: source
+      ``Press``
+         pressure, in Pascals.
 
-   N.R. Draper and H. Smith (1981) *Applied Regression Analysis.* Wiley,
-   pp. 518–9.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      N.R. Draper and H. Smith (1981) *Applied Regression Analysis.*
+      Wiley, pp. 518–9.
 
-   Venables, W. N. and Ripley, B. D. (2002) *Modern Applied Statistics
-   with S-PLUS.* Fourth Edition. Springer.
+      .. rubric:: References
+         :name: references
+
+      Venables, W. N. and Ripley, B. D. (2002) *Modern Applied
+      Statistics with S-PLUS.* Fourth Edition. Springer.

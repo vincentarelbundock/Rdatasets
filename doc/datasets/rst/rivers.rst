@@ -1,36 +1,38 @@
 .. container::
 
-   ====== ===============
-   rivers R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Lengths of Major North American Rivers
-      :name: rivers
+      ====== ===============
+      rivers R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Lengths of Major North American Rivers
+         :name: lengths-of-major-north-american-rivers
 
-   This data set gives the lengths (in miles) of 141 “major” rivers in
-   North America, as compiled by the US Geological Survey.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This data set gives the lengths (in miles) of 141 “major” rivers
+      in North America, as compiled by the US Geological Survey.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      rivers
+      ::
 
-   .. rubric:: Format
-      :name: format
+         rivers
 
-   A vector containing 141 observations.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      A vector containing 141 observations.
 
-   World Almanac and Book of Facts, 1975, page 406.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      World Almanac and Book of Facts, 1975, page 406.
 
-   McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.
+      .. rubric:: References
+         :name: references
+
+      McNeil, D. R. (1977) *Interactive Data Analysis*. New York: Wiley.

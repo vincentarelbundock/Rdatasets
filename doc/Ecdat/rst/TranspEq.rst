@@ -1,64 +1,67 @@
 .. container::
 
-   ======== ===============
-   TranspEq R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Statewide Data on Transportation Equipment Manufacturing
-      :name: TranspEq
+      ======== ===============
+      TranspEq R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Statewide Data on Transportation Equipment
+         Manufacturing
+         :name: statewide-data-on-transportation-equipment-manufacturing
 
-   a cross-section
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 25
+      a cross-section
 
-   *observation* : regional
+      *number of observations* : 25
 
-   *country* : United States
+      *observation* : regional
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(TranspEq)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(TranspEq)
 
-   A dataframe containing :
+      .. rubric:: Format
+         :name: format
 
-   state
-      state name
+      A dataframe containing :
 
-   va
-      output
+      state
+         state name
 
-   capital
-      capital input
+      va
+         output
 
-   labor
-      labor input
+      capital
+         capital input
 
-   nfirm
-      number of firms
+      labor
+         labor input
 
-   .. rubric:: Source
-      :name: source
+      nfirm
+         number of firms
 
-   Zellner, A. and N. Revankar (1970) “Generalized production
-   functions”, *Review of Economic Studies*, **37**, 241-250.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Zellner, A. and N. Revankar (1970) “Generalized production
+      functions”, *Review of Economic Studies*, **37**, 241-250.
 
-   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   https://archive.org/details/econometrics0000haya, Table F9.2.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+      https://archive.org/details/econometrics0000haya, Table F9.2.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``
+      .. rubric:: See Also
+         :name: see-also
+
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``

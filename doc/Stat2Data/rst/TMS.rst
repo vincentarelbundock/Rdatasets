@@ -1,50 +1,53 @@
 .. container::
 
-   === ===============
-   TMS R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Migraines and TMS
-      :name: TMS
+      === ===============
+      TMS R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Migraines and TMS
+         :name: migraines-and-tms
 
-   Effects of transcranial magnetic stimulation (TMS) on migraine
-   headaches
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Effects of transcranial magnetic stimulation (TMS) on migraine
+      headaches
 
-   A dataset with 2 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ========== ===============================================
-   ``Group``  Treatment group: ``Placebo`` or ``TMS``
-   ``Yes``    Count of number of patients that were pain-free
-   ``No``     Count of number of patients that had pain
-   ``Trials`` Number of patients in the group
-   \          
-   ========== ===============================================
+      A dataset with 2 observations on the following 4 variables.
 
-   .. rubric:: Details
-      :name: details
+      ========== ===============================================
+      ``Group``  Treatment group: ``Placebo`` or ``TMS``
+      ``Yes``    Count of number of patients that were pain-free
+      ``No``     Count of number of patients that had pain
+      ``Trials`` Number of patients in the group
+      \          
+      ========== ===============================================
 
-   A study investigated whether a handheld device that sends a magnetic
-   pulse into a person's head might be an effective treatment for
-   migraine headaches. Researchers recruited 200 subjects who suffered
-   from migraines and randomly assigned them to receive either the TMS
-   (transcranial magnetic stimulation) treatment or a sham (placebo)
-   treatment from a device that did not deliver any stimulation.
-   Subjects were instructed to apply the device at the onset of migraine
-   symptoms and then assess how they felt two hours later. This dataset
-   is a two-way table of the results.
+      .. rubric:: Details
+         :name: details
 
-   This dataset renamed as Migraines in second edition.
+      A study investigated whether a handheld device that sends a
+      magnetic pulse into a person's head might be an effective
+      treatment for migraine headaches. Researchers recruited 200
+      subjects who suffered from migraines and randomly assigned them to
+      receive either the TMS (transcranial magnetic stimulation)
+      treatment or a sham (placebo) treatment from a device that did not
+      deliver any stimulation. Subjects were instructed to apply the
+      device at the onset of migraine symptoms and then assess how they
+      felt two hours later. This dataset is a two-way table of the
+      results.
 
-   .. rubric:: Source
-      :name: source
+      This dataset renamed as Migraines in second edition.
 
-   Based on results in R. B. Lipton, et. al. (2010) “Single-pulse
-   Transcranial Magnetic Stimulation for Acute Treatment of Migraine
-   with Aura: A Randomised, Double-blind, Parallel-group,
-   Sham-controlled Trial," 9(4):373-380.
+      .. rubric:: Source
+         :name: source
+
+      Based on results in R. B. Lipton, et. al. (2010) “Single-pulse
+      Transcranial Magnetic Stimulation for Acute Treatment of Migraine
+      with Aura: A Randomised, Double-blind, Parallel-group,
+      Sham-controlled Trial," 9(4):373-380.

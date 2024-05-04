@@ -12,109 +12,100 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>Probe</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='Probe'>
-Response Speed in a Probe Experiment
-</h2>
+<h2>Response Speed in a Probe Experiment</h2>
 
 <h3>Description</h3>
 
-<p>Data from a probe experiment testing whether immediate memory for
-sentences is influenced by the phrase structure of the sentence.
-The data sets come from Timm (1975), Ex. 3.14 and Ex. 3.16 (p.244)
+<p>Data from a probe experiment testing whether immediate memory for sentences
+is influenced by the phrase structure of the sentence.  The data sets come
+from Timm (1975), Ex. 3.14 and Ex. 3.16 (p.244)
 </p>
-<p>Procedure: Subjects listened to tape-recorded sentences.  Each
-sentence was followed by a &quot;probe word&quot; from one of 5 positions
-within the sentence.  The subject had to respond with the word
-which immediately followed the probe word in the sentence.  The
-dependent measure is response speed = k(1/reaction time).
-</p>
-<p>Sample sentence:
-</p>
-<pre>
-*       The tall man met the young girl who got the new hat.
-Pos'ns:      1    2            3    4    5
-Function:   ADJ1 SUBJ        ADJ2  OBJ  REL.PN
-</pre>
-<p>In <code>Probe2</code>, there are two groups of subjects, 
-pre-selected on a test of short term memory.
-</p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>	data(Probe1)
-  data(Probe2)
-	</code></pre>
 
 
 <h3>Format</h3>
 
-<p><code>Probe1</code>: A data frame with 11 observations on the following 5 variables.
+<p><code>Probe1</code>: A data frame with 11 observations on the following 5 variables.  
 </p>
-
+ 
 <dl>
 <dt><code>p1</code></dt><dd><p>speed at position 1</p>
 </dd>
 <dt><code>p2</code></dt><dd><p>speed at position 2</p>
-</dd>
+</dd> 
 <dt><code>p3</code></dt><dd><p>speed at position 3</p>
-</dd>
+</dd> 
 <dt><code>p4</code></dt><dd><p>speed at position 4</p>
-</dd>
+</dd> 
 <dt><code>p5</code></dt><dd><p>speed at position 5</p>
-</dd>
+</dd> 
 </dl>
 
-<p><code>Probe2</code>: A data frame with 20 observations on the following 6 variables.
+<p><code>Probe2</code>: A data frame with 20 observations on the following 6 variables.  
 </p>
-
+ 
 <dl>
 <dt><code>stm</code></dt><dd><p>Short term memory capacity: a factor with levels <code>High</code> <code>Low</code></p>
-</dd>
+</dd> 
 <dt><code>p1</code></dt><dd><p>speed at position 1</p>
-</dd>
+</dd> 
 <dt><code>p2</code></dt><dd><p>speed at position 2</p>
-</dd>
+</dd> 
 <dt><code>p3</code></dt><dd><p>speed at position 3</p>
-</dd>
+</dd> 
 <dt><code>p4</code></dt><dd><p>speed at position 4</p>
 </dd>
 <dt><code>p5</code></dt><dd><p>speed at position 5</p>
-</dd>
+</dd> 
 </dl>
 
 
 
 <h3>Details</h3>
 
-<p>These data sets (fictitious) are used as examples of single-sample and two-sample
-profile analysis or simple repeated measure designs with structured
-contrasts.
+<p>Procedure: Subjects listened to tape-recorded sentences.  Each sentence was
+followed by a &quot;probe word&quot; from one of 5 positions within the sentence.  The
+subject had to respond with the word which immediately followed the probe
+word in the sentence.  The dependent measure is response speed =
+k(1/reaction time).
+</p>
+<p>Sample sentence: 
+</p>
+<pre>
+*       The tall man met the young girl who got the new hat.
+Pos'ns:      1    2            3    4    5
+Function:   ADJ1 SUBJ        ADJ2  OBJ  REL.PN
+</pre>
+<p>In <code>Probe2</code>, there are two groups of subjects, pre-selected on a test
+of short term memory.
+</p>
+<p>These data sets (fictitious) are used as examples of single-sample and
+two-sample profile analysis or simple repeated measure designs with
+structured contrasts.
 </p>
 
 
 <h3>Source</h3>
 
-<p>Timm, N. (1975)
-<em>Multivariate analysis, with applications in education and psychology</em>
-Brooks/Cole.
+<p>Timm, N. (1975) <em>Multivariate analysis, with applications in
+education and psychology</em> Brooks/Cole.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(Probe1)
+<pre><code class='language-R'>
+data(Probe1)
 boxplot(Probe1)
 
 pmod1 &lt;- lm(cbind(p1,p2,p3,p4,p5) ~ 1, data=Probe1)
 idata &lt;- data.frame(position=factor(1:5))
 
 library(car)
-(pmod1.aov &lt;- Anova(pmod1, idata=idata, idesign=~position))
+(pmod1.aov &lt;- car::Anova(pmod1, idata=idata, idesign=~position))
 
 # using default contrasts (p5 as reference level)
 heplot(pmod1, manova=pmod1.aov, 
@@ -137,12 +128,17 @@ rownames(C) &lt;- paste("p", 1:5, sep="")
 colnames(C) &lt;- c("SubPred", "AdjNoun", "SPxAN", "RelPN")
 
 contrasts(idata$position)&lt;- C
-(pmod1.aov &lt;- Anova(pmod1, idata=idata, idesign=~position))
-heplot(pmod1, manova=pmod1.aov, iterm="position", type="III", idata=idata, idesign=~position)
-pairs(pmod1, manova=pmod1.aov, iterm="position", type="III", idata=idata, idesign=~position)
+(pmod1.aov &lt;- car::Anova(pmod1, idata=idata, idesign=~position))
+
+heplot(pmod1, manova=pmod1.aov, 
+       iterm="position", type="III", idata=idata, idesign=~position)
+pairs(pmod1, manova=pmod1.aov, 
+       iterm="position", type="III", idata=idata, idesign=~position)
+
 
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

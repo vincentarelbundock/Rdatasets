@@ -1,73 +1,76 @@
 .. container::
 
-   === ===============
-   rwm R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: rwm
-      :name: rwm
+      === ===============
+      rwm R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: rwm
+         :name: rwm
 
-   German health registry for the years 1984-1988. Health information
-   for years prior to health reform.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      German health registry for the years 1984-1988. Health information
+      for years prior to health reform.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(rwm)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(rwm)
 
-   A data frame with 27,326 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``docvis``
-      number of visits to doctor during year (0-121)
+      A data frame with 27,326 observations on the following 4
+      variables.
 
-   ``age``
-      age: 25-64
+      ``docvis``
+         number of visits to doctor during year (0-121)
 
-   ``educ``
-      years of formal education (7-18)
+      ``age``
+         age: 25-64
 
-   ``hhninc``
-      household yearly income in DM/1000)
+      ``educ``
+         years of formal education (7-18)
 
-   .. rubric:: Details
-      :name: details
+      ``hhninc``
+         household yearly income in DM/1000)
 
-   rwm is saved as a data frame. Count models typically use docvis as
-   response variable. 0 counts are included
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      rwm is saved as a data frame. Count models typically use docvis as
+      response variable. 0 counts are included
 
-   German Health Reform Registry, years pre-reform 1984-1988, From Hilbe
-   and Greene (2008)
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      German Health Reform Registry, years pre-reform 1984-1988, From
+      Hilbe and Greene (2008)
 
-   Hilbe, Joseph M (2011), Negative Binomial Regression, Cambridge
-   University Press Hilbe, J.M. and W.H. Greene (2008), "Count Response
-   Regression Models", in Rao, CR, JP Miller and DC Rao (eds), Handbook
-   of Statistics 27: Epidemiology and Medical Statistics, Amsterdam:
-   Elsevier. pp. 210-252.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Hilbe, Joseph M (2011), Negative Binomial Regression, Cambridge
+      University Press Hilbe, J.M. and W.H. Greene (2008), "Count
+      Response Regression Models", in Rao, CR, JP Miller and DC Rao
+      (eds), Handbook of Statistics 27: Epidemiology and Medical
+      Statistics, Amsterdam: Elsevier. pp. 210-252.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(rwm)
-      glmrwp <- glm(docvis ~ age + educ + hhninc, family=poisson, data=rwm)
-      summary(glmrwp)
-      exp(coef(glmrwp))
-      library(MASS)
-      glmrwnb <- glm.nb(docvis ~ age + educ + hhninc, data=rwm)
-      summary(glmrwnb)
-      exp(coef(glmrwnb))
+      ::
+
+         data(rwm)
+         glmrwp <- glm(docvis ~ age + educ + hhninc, family=poisson, data=rwm)
+         summary(glmrwp)
+         exp(coef(glmrwp))
+         library(MASS)
+         glmrwnb <- glm.nb(docvis ~ age + educ + hhninc, data=rwm)
+         summary(glmrwnb)
+         exp(coef(glmrwnb))

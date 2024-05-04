@@ -1,55 +1,57 @@
 .. container::
 
-   ======== ===============
-   marathon R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: New York City Marathon Times (outdated)
-      :name: marathon
+      ======== ===============
+      marathon R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: New York City Marathon Times (outdated)
+         :name: new-york-city-marathon-times-outdated
 
-   Marathon times of male and female winners of the New York City
-   Marathon 1970-1999. See nyc_marathon for a more updated dataset. We
-   recommend not using this dataset since the data source has been taken
-   off the web.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Marathon times of male and female winners of the New York City
+      Marathon 1970-1999. See nyc_marathon for a more updated dataset.
+      We recommend not using this dataset since the data source has been
+      taken off the web.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      marathon
+      ::
 
-   .. rubric:: Format
-      :name: format
+         marathon
 
-   A data frame with 60 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   year
-      Year
+      A data frame with 60 observations on the following 3 variables.
 
-   gender
-      Gender
+      year
+         Year
 
-   time
-      Running time (in hours)
+      gender
+         Gender
 
-   .. rubric:: Source
-      :name: source
+      time
+         Running time (in hours)
 
-   Data source has been removed.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Data source has been removed.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      library(ggplot2)
+      ::
 
-      ggplot(marathon, aes(x = time)) +
-        geom_histogram(binwidth = 0.15)
+         library(ggplot2)
 
-      ggplot(marathon, aes(y = time, x = gender)) +
-        geom_boxplot()
+         ggplot(marathon, aes(x = time)) +
+           geom_histogram(binwidth = 0.15)
+
+         ggplot(marathon, aes(y = time, x = gender)) +
+           geom_boxplot()

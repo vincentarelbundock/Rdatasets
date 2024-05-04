@@ -12,81 +12,76 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>VocabGrowth</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='VocabGrowth'>Vocabulary growth data</h2>
+<h2>Vocabulary growth data</h2>
 
 <h3>Description</h3>
 
-<p>Data from the Laboratory School of the University  of Chicago.  
-They consist of scores from a cohort of pupils in grades 8-11 on
-the vocabulary section of the Cooperative Reading Test.  The
-scores are scaled to a common, but arbitrary origin and unit
-of measurement, so as to be comparable over the four grades.
+<p>Data from the Laboratory School of the University of Chicago.  They consist
+of scores from a cohort of pupils in grades 8-11 on the vocabulary section
+of the Cooperative Reading Test.  The scores are scaled to a common, but
+arbitrary origin and unit of measurement, so as to be comparable over the
+four grades.
 </p>
-
-
-<h3>Usage</h3>
-
-<pre><code class='language-R'>data(VocabGrowth)</code></pre>
 
 
 <h3>Format</h3>
 
 <p>A data frame with 64 observations on the following 4 variables.
 </p>
-
+ 
 <dl>
 <dt><code>grade8</code></dt><dd><p>Grade 8 vocabulary score</p>
 </dd>
 <dt><code>grade9</code></dt><dd><p>Grade 9 vocabulary score</p>
-</dd>
+</dd> 
 <dt><code>grade10</code></dt><dd><p>Grade 10 vocabulary score</p>
-</dd>
+</dd> 
 <dt><code>grade11</code></dt><dd><p>Grade 11 vocabulary score</p>
-</dd>
+</dd> 
 </dl>
 
 
 
 <h3>Details</h3>
 
-<p>Since these data cover an age range in which physical growth
-is beginning to decelerate, it is of interest whether a
-similar effect occurs in the acquisition of new vocabulary.
+<p>Since these data cover an age range in which physical growth is beginning to
+decelerate, it is of interest whether a similar effect occurs in the
+acquisition of new vocabulary.
 </p>
 
 
 <h3>Source</h3>
 
-<p>R.D.  Bock,
-<em>Multivariate statistical methods in behavioral research</em>, McGraw-Hill, New York,
-1975, pp453.  
+<p>R.D.  
+Bock, <em>Multivariate statistical methods in behavioral research</em>, McGraw-Hill, New York, 1975, pp453.
 </p>
 
 
 <h3>References</h3>
 
-<p>Friendly, Michael  (2010). HE Plots for Repeated Measures Designs. <em>Journal of Statistical Software</em>,
-37(4), 1-40.
-
-doi: <a href="https://doi.org/10.18637/jss.v037.i04">10.18637/jss.v037.i04</a>.
+<p>Friendly, Michael (2010). HE Plots for Repeated Measures
+Designs. <em>Journal of Statistical Software</em>, 37(4), 1-40.
+<a href="https://doi.org/10.18637/jss.v037.i04">doi:10.18637/jss.v037.i04</a>.
 </p>
-<p>Keesling, J.W., Bock, R.D. et al, &quot;The Laboratory School study of vocabulary growth&quot;,
-University of Chicago, 1975.
+<p>Keesling, J.W., Bock, R.D. et al, &quot;The Laboratory School study of vocabulary
+growth&quot;, University of Chicago, 1975.
 </p>
 
 
 <h3>Examples</h3>
 
-<pre><code class='language-R'>data(VocabGrowth)
+<pre><code class='language-R'>
+library(car)
+data(VocabGrowth)
 
 # Standard Multivariate &amp; Univariate repeated measures analysis
 Vocab.mod &lt;- lm(cbind(grade8,grade9,grade10,grade11) ~ 1, data=VocabGrowth)
 idata &lt;-data.frame(grade=ordered(8:11))
-Anova(Vocab.mod, idata=idata, idesign=~grade, type="III")
+car::Anova(Vocab.mod, idata=idata, idesign=~grade, type="III")
 
 ##Type III Repeated Measures MANOVA Tests: Pillai test statistic
 ##            Df test stat approx F num Df den Df    Pr(&gt;F)    
@@ -110,8 +105,10 @@ heplot(within.mod, terms="(Intercept)", col=c("red", "blue"), type="3",
   term.labels="Grade",
   main="HE plot for Grade effect")
 mark.H0()
+
 </code></pre>
 
+</main>
 
 </div>
 </body></html>

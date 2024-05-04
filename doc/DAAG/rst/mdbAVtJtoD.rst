@@ -1,48 +1,50 @@
 .. container::
 
-   ========== ===============
-   mdbAVtJtoD R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Murray-Darling basin monthly temperatures
-      :name: mdbAVtJtoD
+      ========== ===============
+      mdbAVtJtoD R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Murray-Darling basin monthly temperatures
+         :name: murray-darling-basin-monthly-temperatures
 
-   Australian Murray-Darling basin monthly temperatures
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Australian Murray-Darling basin monthly temperatures
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("mdbAVtJtoD")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("mdbAVtJtoD")
 
-   The format is: Time-Series [1:867] from 1950 to 2022: 27.44 26.84
-   24.4 22.27 8.41 ...
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      The format is: Time-Series [1:867] from 1950 to 2022: 27.44 26.84
+      24.4 22.27 8.41 ...
 
-   Australian Bureau of Meteorology web pages:
+      .. rubric:: Source
+         :name: source
 
-   http://www.bom.gov.au/climate/change/index.shtml
+      Australian Bureau of Meteorology web pages:
 
-   Go to website, choose timeseries to display, then click "Download
-   data"
+      http://www.bom.gov.au/climate/change/index.shtml
 
-   The website gives anomalies from 1961-1990 averages. The monthly
-   means have been added, in order to obtain a series. The monthly means
-   are shown along with plots for the individual months.
+      Go to website, choose timeseries to display, then click "Download
+      data"
 
-   .. rubric:: Examples
-      :name: examples
+      The website gives anomalies from 1961-1990 averages. The monthly
+      means have been added, in order to obtain a series. The monthly
+      means are shown along with plots for the individual months.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(mdbAVtJtoD)
-      plot(window(mdbAVtJtoD, start=c(2000,1)), ylab="Mean monthly data")
+      ::
+
+         data(mdbAVtJtoD)
+         plot(window(mdbAVtJtoD, start=c(2000,1)), ylab="Mean monthly data")

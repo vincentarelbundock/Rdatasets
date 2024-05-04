@@ -1,70 +1,72 @@
 .. container::
 
-   ==== ===============
-   gpa2 R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: gpa2
-      :name: gpa2
+      ==== ===============
+      gpa2 R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: gpa2
+         :name: gpa2
 
-   Wooldridge Source: For confidentiality reasons, I cannot provide the
-   source of these data. I can say that Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: For confidentiality reasons, I cannot provide
+      the source of these data. I can say that Data loads lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('gpa2')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('gpa2')
 
-   A data.frame with 4137 observations on 12 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **sat:** combined SAT score
+      A data.frame with 4137 observations on 12 variables:
 
-   -  **tothrs:** total hours through fall semest
+      -  **sat:** combined SAT score
 
-   -  **colgpa:** GPA after fall semester
+      -  **tothrs:** total hours through fall semest
 
-   -  **athlete:** =1 if athlete
+      -  **colgpa:** GPA after fall semester
 
-   -  **verbmath:** verbal/math SAT score
+      -  **athlete:** =1 if athlete
 
-   -  **hsize:** size grad. class, 100s
+      -  **verbmath:** verbal/math SAT score
 
-   -  **hsrank:** rank in grad. class
+      -  **hsize:** size grad. class, 100s
 
-   -  **hsperc:** high school percentile, from top
+      -  **hsrank:** rank in grad. class
 
-   -  **female:** =1 if female
+      -  **hsperc:** high school percentile, from top
 
-   -  **white:** =1 if white
+      -  **female:** =1 if female
 
-   -  **black:** =1 if black
+      -  **white:** =1 if white
 
-   -  **hsizesq:** hsize^2
+      -  **black:** =1 if black
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **hsizesq:** hsize^2
 
-   pages 106, 184, 208-209, 210-211, 221, 259, 262-263
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   they come from a midsize research university that also supports men’s
-   and women’s athletics at the Division I level.
+      pages 106, 184, 208-209, 210-211, 221, 259, 262-263
 
-   .. rubric:: Source
-      :name: source
+      they come from a midsize research university that also supports
+      men’s and women’s athletics at the Division I level.
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(gpa2)
+      ::
+
+          str(gpa2)

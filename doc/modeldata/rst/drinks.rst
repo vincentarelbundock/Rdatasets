@@ -1,42 +1,44 @@
 .. container::
 
-   ====== ===============
-   drinks R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Sample time series data
-      :name: drinks
+      ====== ===============
+      drinks R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sample time series data
+         :name: sample-time-series-data
 
-   Sample time series data
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      Sample time series data
 
-   Drink sales. The exact name of the series from FRED is: "Merchant
-   Wholesalers, Except Manufacturers' Sales Branches and Offices Sales:
-   Nondurable Goods: Beer, Wine, and Distilled Alcoholic Beverages
-   Sales"
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Value
-      :name: value
+      Drink sales. The exact name of the series from FRED is: "Merchant
+      Wholesalers, Except Manufacturers' Sales Branches and Offices
+      Sales: Nondurable Goods: Beer, Wine, and Distilled Alcoholic
+      Beverages Sales"
 
-   ========== ========
-   ``drinks`` a tibble
-   ========== ========
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      ========== ========
+      ``drinks`` a tibble
+      ========== ========
 
-   The Federal Reserve Bank of St. Louis website
-   https://fred.stlouisfed.org/series/S4248SM144NCEN
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      The Federal Reserve Bank of St. Louis website
+      https://fred.stlouisfed.org/series/S4248SM144NCEN
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(drinks)
-      str(drinks)
+      ::
+
+         data(drinks)
+         str(drinks)

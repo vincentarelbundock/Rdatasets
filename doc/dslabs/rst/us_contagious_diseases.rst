@@ -1,63 +1,67 @@
 .. container::
 
-   ====================== ===============
-   us_contagious_diseases R Documentation
-   ====================== ===============
+   .. container::
 
-   .. rubric:: Contagious disease data for US states
-      :name: us_contagious_diseases
+      ====================== ===============
+      us_contagious_diseases R Documentation
+      ====================== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Contagious disease data for US states
+         :name: contagious-disease-data-for-us-states
 
-   Yearly counts for Hepatitis A, Measles, Mumps, Pertussis, Polio,
-   Rubella, and Smallpox for US states. Original data courtesy of Tycho
-   Project (http://www.tycho.pitt.edu/).
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Yearly counts for Hepatitis A, Measles, Mumps, Pertussis, Polio,
+      Rubella, and Smallpox for US states. Original data courtesy of
+      Tycho Project (http://www.tycho.pitt.edu/).
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      us_contagious_diseases
+      ::
 
-   .. rubric:: Format
-      :name: format
+         us_contagious_diseases
 
-   An object of class ``"data.frame"``.
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Details
-      :name: details
+      An object of class ``"data.frame"``.
 
-   -  disease. A factor containing disease names.
+      .. rubric:: Details
+         :name: details
 
-   -  state. A factor containing state names.
+      -  disease. A factor containing disease names.
 
-   -  year.
+      -  state. A factor containing state names.
 
-   -  weeks_reporting. Number of weeks counts were reported that year.
+      -  year.
 
-   -  count. Total number of reported cases.
+      -  weeks_reporting. Number of weeks counts were reported that
+         year.
 
-   -  population. State population, interpolated for non-census years.
+      -  count. Total number of reported cases.
 
-   .. rubric:: Source
-      :name: source
+      -  population. State population, interpolated for non-census
+         years.
 
-   `Tycho Project <http://www.tycho.pitt.edu/>`__
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      `Tycho Project <http://www.tycho.pitt.edu/>`__
 
-   Willem G. van Panhuis, John Grefenstette, Su Yon Jung, Nian Shong
-   Chok, Anne Cross, Heather Eng, Bruce Y Lee, Vladimir Zadorozhny,
-   Shawn Brown, Derek Cummings, Donald S. Burke. Contagious Diseases in
-   the United States from 1888 to the present. NEJM 2013; 369(22):
-   2152-2158.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Willem G. van Panhuis, John Grefenstette, Su Yon Jung, Nian Shong
+      Chok, Anne Cross, Heather Eng, Bruce Y Lee, Vladimir Zadorozhny,
+      Shawn Brown, Derek Cummings, Donald S. Burke. Contagious Diseases
+      in the United States from 1888 to the present. NEJM 2013; 369(22):
+      2152-2158.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      head(us_contagious_diseases)
+      ::
+
+         head(us_contagious_diseases)

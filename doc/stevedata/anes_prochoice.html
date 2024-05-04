@@ -12,11 +12,11 @@ function processMathHTML() {
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
     onload="processMathHTML();"></script>
 <link rel="stylesheet" type="text/css" href="R.css" />
-</head><body><div class="container">
+</head><body><div class="container"><main>
 
 <table style="width: 100%;"><tr><td>anes_prochoice</td><td style="text-align: right;">R Documentation</td></tr></table>
 
-<h2 id='anes_prochoice'>Abortion Attitudes (ANES, 2012)</h2>
+<h2>Abortion Attitudes (ANES, 2012)</h2>
 
 <h3>Description</h3>
 
@@ -41,27 +41,27 @@ interactive relationships. The data here are deliberately minimal for that end.
 </dd>
 <dt><code>caseid</code></dt><dd><p>time-series case identifier from ANES</p>
 </dd>
-<dt><code>health</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor [0:2] abortion if pregnancy would hurt woman</p>
+<dt><code>health</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor abortion if pregnancy would hurt woman</p>
 </dd>
-<dt><code>fatal</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor [0:2] abortion if pregnancy would cause woman to die</p>
+<dt><code>fatal</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor abortion if pregnancy would cause woman to die</p>
 </dd>
-<dt><code>incest</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor [0:2] abortion if pregnancy was caused by incest</p>
+<dt><code>incest</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor abortion if pregnancy was caused by incest</p>
 </dd>
-<dt><code>rape</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor [0:2] abortion if pregnancy was caused by rape</p>
+<dt><code>rape</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor abortion if pregnancy was caused by rape</p>
 </dd>
-<dt><code>bd</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor [0:2] abortion if fetus would be born with serious birth defect</p>
+<dt><code>bd</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor abortion if fetus would be born with serious birth defect</p>
 </dd>
-<dt><code>fin</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor [0:2] abortion if having child would impose financial hardship</p>
+<dt><code>fin</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor abortion if having child would impose financial hardship</p>
 </dd>
-<dt><code>sex</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor [0:2] abortion if the child will not be the sex the woman wants</p>
+<dt><code>sex</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor abortion if the child will not be the sex the woman wants</p>
 </dd>
-<dt><code>choice</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor [0:2] abortion if woman chooses to have one</p>
+<dt><code>choice</code></dt><dd><p>oppose/&quot;NFNO&quot;/favor abortion if woman chooses to have one</p>
 </dd>
-<dt><code>pid</code></dt><dd><p>respondent's partisanship [0:2] (Democrat, Independent, Republican)</p>
+<dt><code>pid</code></dt><dd><p>respondent's partisanship (Democrat, Independent, Republican)</p>
 </dd>
 <dt><code>knowspeaker</code></dt><dd><p>was the respondent able to correctly identify  the Speaker of the House (John Boehner)</p>
 </dd>
-<dt><code>addchoice</code></dt><dd><p>an additive scale of the abortion scores [0:16]</p>
+<dt><code>addchoice</code></dt><dd><p>an additive scale of the abortion scores</p>
 </dd>
 <dt><code>lchoice</code></dt><dd><p>a continuous latent scale of pro-choice scores (from a simple graded response model)</p>
 </dd>
@@ -71,7 +71,11 @@ interactive relationships. The data here are deliberately minimal for that end.
 
 <h3>Details</h3>
 
-<p>&quot;NFNO&quot; = &quot;Neither Favor Nor Oppose&quot;
+<p>&quot;NFNO&quot; = &quot;Neither Favor Nor Oppose&quot;. All abortion prompts are on a 0-2 scale
+where 0 is oppose, 1 is &quot;NFNO&quot;, and 2 is favor. The respondent's party
+identification is on a similar scale where 0 = &quot;Democrat&quot;, 1 = &quot;Independent&quot;,
+and 2 = &quot;Republican&quot;. The additive scale of abortion scores has a minimum
+of 0 and a maximum of 16.
 </p>
 
 
@@ -80,6 +84,7 @@ interactive relationships. The data here are deliberately minimal for that end.
 <p>Data come from ANES's (2012) time series.
 </p>
 
+</main>
 
 </div>
 </body></html>

@@ -1,49 +1,51 @@
 .. container::
 
-   === ===============
-   gpa R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: Survey of Duke students on GPA, studying, and more
-      :name: gpa
+      === ===============
+      gpa R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Survey of Duke students on GPA, studying, and more
+         :name: survey-of-duke-students-on-gpa-studying-and-more
 
-   A survey of 55 Duke University students asked about their GPA, number
-   of hours they study at night, number of nights they go out, and their
-   gender.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      A survey of 55 Duke University students asked about their GPA,
+      number of hours they study at night, number of nights they go out,
+      and their gender.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      gpa
+      ::
 
-   .. rubric:: Format
-      :name: format
+         gpa
 
-   A data frame with 55 observations on the following 5 variables.
+      .. rubric:: Format
+         :name: format
 
-   gpa
-      a numeric vector
-
-   studyweek
-      a numeric vector
-
-   sleepnight
-      a numeric vector
-
-   out
-      a numeric vector
-
-   gender
-      a factor with levels ``female`` ``male``
-
-   .. rubric:: Examples
-      :name: examples
-
-   .. code:: R
+      A data frame with 55 observations on the following 5 variables.
 
       gpa
+         a numeric vector
+
+      studyweek
+         a numeric vector
+
+      sleepnight
+         a numeric vector
+
+      out
+         a numeric vector
+
+      gender
+         a factor with levels ``female`` ``male``
+
+      .. rubric:: Examples
+         :name: examples
+
+      ::
+
+         gpa

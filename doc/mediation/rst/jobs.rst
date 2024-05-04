@@ -1,114 +1,119 @@
 .. container::
 
-   ==== ===============
-   jobs R Documentation
-   ==== ===============
+   .. container::
 
-   .. rubric:: JOBS II data
-      :name: jobs
+      ==== ===============
+      jobs R Documentation
+      ==== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: JOBS II data
+         :name: jobs-ii-data
 
-   Job Search Intervention Study (JOBS II). JOBS II is a randomized
-   field experiment that investigates the efficacy of a job
-   trainingintervention on unemployed workers. The program is designed
-   to not only increase reemploymentamong the unemployed but also
-   enhance the mental health of the job seekers. In the JOBS IIfield
-   experiment, 1,801 unemployed workers received a pre-screening
-   questionnaire and were thenrandomly assigned to treatment and control
-   groups. Those in the treatment group participatedin job-skills
-   workshops. In the workshops, respondents learned job-search skills
-   and coping strategiesfor dealing with setbacks in the job-search
-   process. Those in the control condition receiveda booklet describing
-   job-search tips. In follow-up interviews, the two key outcome
-   variables weremeasured; a continuous measure of depressive symptoms
-   based on the Hopkins Symptom Checklist,and a binary variable,
-   representing whether the respondent had become employed.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Job Search Intervention Study (JOBS II). JOBS II is a randomized
+      field experiment that investigates the efficacy of a job
+      trainingintervention on unemployed workers. The program is
+      designed to not only increase reemploymentamong the unemployed but
+      also enhance the mental health of the job seekers. In the JOBS
+      IIfield experiment, 1,801 unemployed workers received a
+      pre-screening questionnaire and were thenrandomly assigned to
+      treatment and control groups. Those in the treatment group
+      participatedin job-skills workshops. In the workshops, respondents
+      learned job-search skills and coping strategiesfor dealing with
+      setbacks in the job-search process. Those in the control condition
+      receiveda booklet describing job-search tips. In follow-up
+      interviews, the two key outcome variables weremeasured; a
+      continuous measure of depressive symptoms based on the Hopkins
+      Symptom Checklist,and a binary variable, representing whether the
+      respondent had become employed.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      jobs
+      ::
 
-   .. rubric:: Format
-      :name: format
+         jobs
 
-   A data matrix with 899 rows and 17 columns, containing no missing
-   values. The data are provided only for illustrative purposes and not
-   for inference about program efficacy, for which the original data
-   source should be consulted.
+      .. rubric:: Format
+         :name: format
 
-   econ_hard:
-      Level of economic hardship pre-treatment with values from 1 to 5.
+      A data matrix with 899 rows and 17 columns, containing no missing
+      values. The data are provided only for illustrative purposes and
+      not for inference about program efficacy, for which the original
+      data source should be consulted.
 
-   depress1:
-      Measure of depressive symptoms pre-treatment.
+      econ_hard:
+         Level of economic hardship pre-treatment with values from 1 to
+         5.
 
-   sex:
-      Indicator variable for sex. 1 = female
+      depress1:
+         Measure of depressive symptoms pre-treatment.
 
-   age:
-      Age in years.
+      sex:
+         Indicator variable for sex. 1 = female
 
-   occp:
-      Factor with seven categories for various occupations.
+      age:
+         Age in years.
 
-   marital:
-      Factor with five categories for marital status.
+      occp:
+         Factor with seven categories for various occupations.
 
-   nonwhite:
-      Indicator variable for race. 1 = nonwhite.
+      marital:
+         Factor with five categories for marital status.
 
-   educ:
-      Factor with five categories for educational attainment.
+      nonwhite:
+         Indicator variable for race. 1 = nonwhite.
 
-   income:
-      Factor with five categories for level of income.
+      educ:
+         Factor with five categories for educational attainment.
 
-   job_seek:
-      A continuous scale measuring the level of job-search self-efficacy
-      with values from 1 to 5. The mediator variable.
+      income:
+         Factor with five categories for level of income.
 
-   depress2:
-      Measure of depressive symptoms post-treatment.
+      job_seek:
+         A continuous scale measuring the level of job-search
+         self-efficacy with values from 1 to 5. The mediator variable.
 
-   work1:
-      Indicator variable for employment. 1 = employed.
+      depress2:
+         Measure of depressive symptoms post-treatment.
 
-   job_dich:
-      The job_seek measure recoded into two categories of high and low.
-      1 = high job search self-efficacy.
+      work1:
+         Indicator variable for employment. 1 = employed.
 
-   job_disc:
-      The job_seek measure recoded into four categories from lowest to
-      highest.
+      job_dich:
+         The job_seek measure recoded into two categories of high and
+         low. 1 = high job search self-efficacy.
 
-   treat:
-      Indicator variable for whether participant was randomly selected
-      for the JOBS II training program. 1 = assignment to participation.
+      job_disc:
+         The job_seek measure recoded into four categories from lowest
+         to highest.
 
-   comply:
-      Indicator variable for whether participant actually participated
-      in the JOBS II program. 1 = participation.
+      treat:
+         Indicator variable for whether participant was randomly
+         selected for the JOBS II training program. 1 = assignment to
+         participation.
 
-   control:
-      Indicator variable for whether participant was randomly selected
-      to not participate in the JOBS II training program. 1 =
-      non-participation.
+      comply:
+         Indicator variable for whether participant actually
+         participated in the JOBS II program. 1 = participation.
 
-   .. rubric:: Source
-      :name: source
+      control:
+         Indicator variable for whether participant was randomly
+         selected to not participate in the JOBS II training program. 1
+         = non-participation.
 
-   The complete JOBS II data is available from the data archives at
-   www.icpsr.umich.edu/
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      The complete JOBS II data is available from the data archives at
+      www.icpsr.umich.edu/
 
-   Vinokur, A. and Schul, Y. (1997). Mastery and inoculation against
-   setbacks as active ingredients in the jobs intervention for the
-   unemployed. Journal of Consulting and Clinical Psychology
-   65(5):867-77.
+      .. rubric:: References
+         :name: references
+
+      Vinokur, A. and Schul, Y. (1997). Mastery and inoculation against
+      setbacks as active ingredients in the jobs intervention for the
+      unemployed. Journal of Consulting and Clinical Psychology
+      65(5):867-77.

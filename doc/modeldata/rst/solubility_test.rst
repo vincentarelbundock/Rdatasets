@@ -1,41 +1,44 @@
 .. container::
 
-   =============== ===============
-   solubility_test R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: Solubility predictions from MARS model
-      :name: solubility_test
+      =============== ===============
+      solubility_test R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Solubility predictions from MARS model
+         :name: solubility-predictions-from-mars-model
 
-   Solubility predictions from MARS model
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      Solubility predictions from MARS model
 
-   For the solubility data in Kuhn and Johnson (2013), these data are
-   the test set results for the MARS model. The observed solubility (in
-   column ``solubility``) and the model results (``prediction``) are
-   contained in the data.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Value
-      :name: value
+      For the solubility data in Kuhn and Johnson (2013), these data are
+      the test set results for the MARS model. The observed solubility
+      (in column ``solubility``) and the model results (``prediction``)
+      are contained in the data.
 
-   =================== ============
-   ``solubility_test`` a data frame
-   =================== ============
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      =================== ============
+      ``solubility_test`` a data frame
+      =================== ============
 
-   Kuhn, M., Johnson, K. (2013) *Applied Predictive Modeling*, Springer
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Kuhn, M., Johnson, K. (2013) *Applied Predictive Modeling*,
+      Springer
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(solubility_test)
-      str(solubility_test)
+      ::
+
+         data(solubility_test)
+         str(solubility_test)

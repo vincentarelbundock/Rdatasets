@@ -1,82 +1,85 @@
 .. container::
 
-   ======= ===============
-   Vietnam R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Student Opinion about the Vietnam War
-      :name: Vietnam
+      ======= ===============
+      Vietnam R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Student Opinion about the Vietnam War
+         :name: student-opinion-about-the-vietnam-war
 
-   A survey of student opinion on the Vietnam War was taken at the
-   University of North Carolina at Chapel Hill in May 1967 and published
-   in the student newspaper. Students were asked to fill in ballot
-   papers stating which policy out of A,B,C or D they supported.
-   Responses were cross-classified by gender/year.
+      .. rubric:: Description
+         :name: description
 
-   The response categories were:
+      A survey of student opinion on the Vietnam War was taken at the
+      University of North Carolina at Chapel Hill in May 1967 and
+      published in the student newspaper. Students were asked to fill in
+      ballot papers stating which policy out of A,B,C or D they
+      supported. Responses were cross-classified by gender/year.
 
-   ``A``
-      Defeat North Vietnam by widespread bombing and land invasion
+      The response categories were:
 
-   ``B``
-      Maintain the present policy
+      ``A``
+         Defeat North Vietnam by widespread bombing and land invasion
 
-   ``C``
-      De-escalate military activity, stop bombing and begin negotiations
+      ``B``
+         Maintain the present policy
 
-   ``D``
-      Withdraw military forces Immediately
+      ``C``
+         De-escalate military activity, stop bombing and begin
+         negotiations
 
-   .. rubric:: Usage
-      :name: usage
+      ``D``
+         Withdraw military forces Immediately
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Vietnam)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Vietnam)
 
-   A frequency data frame with 40 observations representing a 2 x 5 x 4
-   contingency table on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``sex``
-      a factor with levels ``Female`` ``Male``
+      A frequency data frame with 40 observations representing a 2 x 5 x
+      4 contingency table on the following 4 variables.
 
-   ``year``
-      year of study, an ordered factor with levels ``Freshmen``,
-      ``Sophomore``, ``Junior``, ``Senior``, ``Grad student``
+      ``sex``
+         a factor with levels ``Female`` ``Male``
 
-   ``response``
-      a factor with levels ``A`` ``B`` ``C`` ``D``
+      ``year``
+         year of study, an ordered factor with levels ``Freshmen``,
+         ``Sophomore``, ``Junior``, ``Senior``, ``Grad student``
 
-   ``Freq``
-      cell frequency, a numeric vector
+      ``response``
+         a factor with levels ``A`` ``B`` ``C`` ``D``
 
-   .. rubric:: Details
-      :name: details
+      ``Freq``
+         cell frequency, a numeric vector
 
-   For some analyses, it is useful to treat ``year`` as numeric, and
-   possibly assign grad students a value ``year=7``.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      For some analyses, it is useful to treat ``year`` as numeric, and
+      possibly assign grad students a value ``year=7``.
 
-   Aitken, M. etal, 1989, *Statistical Modelling in GLIM*
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Aitken, M. etal, 1989, *Statistical Modelling in GLIM*
 
-   Friendly, M. (2000), *Visualizing Categorical Data*, SAS Institute,
-   Cary, NC, Example 7.9.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Friendly, M. (2000), *Visualizing Categorical Data*, SAS
+      Institute, Cary, NC, Example 7.9.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(Vietnam)
-      ## maybe str(Vietnam) ; plot(Vietnam) ...
+      ::
+
+         data(Vietnam)
+         ## maybe str(Vietnam) ; plot(Vietnam) ...

@@ -1,63 +1,65 @@
 .. container::
 
-   === ===============
-   GHQ R Documentation
-   === ===============
+   .. container::
 
-   .. rubric:: General Health Questionnaire
-      :name: GHQ
+      === ===============
+      GHQ R Documentation
+      === ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: General Health Questionnaire
+         :name: general-health-questionnaire
 
-   Data from an psychiatric screening questionnaire
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Data from an psychiatric screening questionnaire
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data("GHQ")
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data("GHQ")
 
-   A data frame with 22 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   ``GHQ``
-      the General Health Questionnaire score.
+      A data frame with 22 observations on the following 4 variables.
 
-   ``sex``
-      a factor with levels ``female`` and ``male``
+      ``GHQ``
+         the General Health Questionnaire score.
 
-   ``cases``
-      the number of diseased subjects.
+      ``sex``
+         a factor with levels ``female`` and ``male``
 
-   ``non.cases``
-      the number of healthy subjects.
+      ``cases``
+         the number of diseased subjects.
 
-   .. rubric:: Details
-      :name: details
+      ``non.cases``
+         the number of healthy subjects.
 
-   The data arise from a study of a psychiatric screening questionnaire
-   called the GHQ (General Health Questionnaire, see Goldberg, 1972).
-   Here the main question of interest is to see how caseness is related
-   to gender and GHQ score.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The data arise from a study of a psychiatric screening
+      questionnaire called the GHQ (General Health Questionnaire, see
+      Goldberg, 1972). Here the main question of interest is to see how
+      caseness is related to gender and GHQ score.
 
-   D. Goldberg (1972). *The Detection of Psychiatric Illness by
-   Questionnaire*, Oxford University Press, Oxford, UK.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      D. Goldberg (1972). *The Detection of Psychiatric Illness by
+      Questionnaire*, Oxford University Press, Oxford, UK.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-        data("GHQ", package = "HSAUR")
-        male <- subset(GHQ, sex == "male")
-        female <- subset(GHQ, sex == "female")
-        layout(matrix(1:2, ncol = 2))
-        barplot(t(as.matrix(male[,c("cases", "non.cases")])), main = "Male", xlab = "GHC score")
-        barplot(t(as.matrix(male[,c("cases", "non.cases")])), main = "Female", xlab = "GHC score")
+      ::
+
+           data("GHQ", package = "HSAUR")
+           male <- subset(GHQ, sex == "male")
+           female <- subset(GHQ, sex == "female")
+           layout(matrix(1:2, ncol = 2))
+           barplot(t(as.matrix(male[,c("cases", "non.cases")])), main = "Male", xlab = "GHC score")
+           barplot(t(as.matrix(male[,c("cases", "non.cases")])), main = "Female", xlab = "GHC score")

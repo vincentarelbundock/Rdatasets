@@ -1,76 +1,78 @@
 .. container::
 
-   ======= ===============
-   mail_me R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Influence of a Good Mood on Helpfulness
-      :name: mail_me
+      ======= ===============
+      mail_me R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Influence of a Good Mood on Helpfulness
+         :name: influence-of-a-good-mood-on-helpfulness
 
-   This study investigated whether finding a coin influenced a person's
-   likelihood of mailing a sealed but addressed letter that appeared to
-   have been accidentally left in a conspicuous place. Several variables
-   were collected during the experiment, including two randomized
-   variables of whether there was a coin to be found and whether the
-   letter already had a stamp on it.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      This study investigated whether finding a coin influenced a
+      person's likelihood of mailing a sealed but addressed letter that
+      appeared to have been accidentally left in a conspicuous place.
+      Several variables were collected during the experiment, including
+      two randomized variables of whether there was a coin to be found
+      and whether the letter already had a stamp on it.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      mail_me
+      ::
 
-   .. rubric:: Format
-      :name: format
+         mail_me
 
-   A data frame with 42 observations on the following 4 variables.
+      .. rubric:: Format
+         :name: format
 
-   stamped
-      a factor with levels ``no`` ``yes``
+      A data frame with 42 observations on the following 4 variables.
 
-   found_coin
-      a factor with levels ``coin`` ``no_coin``
+      stamped
+         a factor with levels ``no`` ``yes``
 
-   gender
-      a factor with levels ``female`` ``male``
+      found_coin
+         a factor with levels ``coin`` ``no_coin``
 
-   mailed_letter
-      a factor with levels ``no`` ``yes``
+      gender
+         a factor with levels ``female`` ``male``
 
-   .. rubric:: Details
-      :name: details
+      mailed_letter
+         a factor with levels ``no`` ``yes``
 
-   The precise context was in a phone booth (this study is from the
-   1970s!), where a person who entered a phone booth would find a dime
-   in the phone tray, which would be sufficient to pay for their phone
-   call. There was also a letter next to the phone, which sometimes had
-   a stamp on it.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      The precise context was in a phone booth (this study is from the
+      1970s!), where a person who entered a phone booth would find a
+      dime in the phone tray, which would be sufficient to pay for their
+      phone call. There was also a letter next to the phone, which
+      sometimes had a stamp on it.
 
-   Levin PF, Isen AM. 1975. Studies on the Effect of Feeling Good on
-   Helping. Sociometry 31(1), p141-147.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Levin PF, Isen AM. 1975. Studies on the Effect of Feeling Good on
+      Helping. Sociometry 31(1), p141-147.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
+
+      ::
 
 
-      table(mail_me)
-      (x <- table(mail_me[, c("mailed_letter", "found_coin")]))
-      chisq.test(x)
+         table(mail_me)
+         (x <- table(mail_me[, c("mailed_letter", "found_coin")]))
+         chisq.test(x)
 
-      (x <- table(mail_me[, c("mailed_letter", "stamped")]))
-      chisq.test(x)
+         (x <- table(mail_me[, c("mailed_letter", "stamped")]))
+         chisq.test(x)
 
-      m <- glm(mailed_letter ~ stamped + found_coin + gender,
-        data = mail_me,
-        family = binomial
-      )
-      summary(m)
+         m <- glm(mailed_letter ~ stamped + found_coin + gender,
+           data = mail_me,
+           family = binomial
+         )
+         summary(m)

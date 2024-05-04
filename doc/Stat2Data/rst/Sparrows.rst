@@ -1,42 +1,44 @@
 .. container::
 
-   ======== ===============
-   Sparrows R Documentation
-   ======== ===============
+   .. container::
 
-   .. rubric:: Sparrow Measurements
-      :name: Sparrows
+      ======== ===============
+      Sparrows R Documentation
+      ======== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Sparrow Measurements
+         :name: sparrow-measurements
 
-   Weight and wing length for a sample of Savannah sparrows
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      Weight and wing length for a sample of Savannah sparrows
 
-   A dataset with 116 observations on the following 3 variables.
+      .. rubric:: Format
+         :name: format
 
-   +----------------+------------------------------------------------------------+
-   | ``Treatment``  | Nest adjustment: ``control``, ``enlarged``, or ``reduced`` |
-   +----------------+------------------------------------------------------------+
-   | ``Weight``     | Weight (in grams)                                          |
-   +----------------+------------------------------------------------------------+
-   | ``WingLength`` | Wing length (in mm)                                        |
-   +----------------+------------------------------------------------------------+
-   |                |                                                            |
-   +----------------+------------------------------------------------------------+
+      A dataset with 116 observations on the following 3 variables.
 
-   .. rubric:: Details
-      :name: details
+      +----------------+------------------------------------------------------------+
+      | ``Treatment``  | Nest adjustment: ``control``, ``enlarged``, or ``reduced`` |
+      +----------------+------------------------------------------------------------+
+      | ``Weight``     | Weight (in grams)                                          |
+      +----------------+------------------------------------------------------------+
+      | ``WingLength`` | Wing length (in mm)                                        |
+      +----------------+------------------------------------------------------------+
+      |                |                                                            |
+      +----------------+------------------------------------------------------------+
 
-   Priscilla Erickson from Kenyon College collected data on a stratified
-   random sample of 116 Savannah sparrows at Kent Island. Nests that
-   were reduced, controlled (no change), or enlarged.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Source
-      :name: source
+      Priscilla Erickson from Kenyon College collected data on a
+      stratified random sample of 116 Savannah sparrows at Kent Island.
+      Nests that were reduced, controlled (no change), or enlarged.
 
-   We thank Priscilla Erickson and Professor Robert Mauck from the
-   Department of Biology at Kenyon College for allowing us to use these
-   data.
+      .. rubric:: Source
+         :name: source
+
+      We thank Priscilla Erickson and Professor Robert Mauck from the
+      Department of Biology at Kenyon College for allowing us to use
+      these data.

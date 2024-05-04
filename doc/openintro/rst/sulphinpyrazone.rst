@@ -1,46 +1,48 @@
 .. container::
 
-   =============== ===============
-   sulphinpyrazone R Documentation
-   =============== ===============
+   .. container::
 
-   .. rubric:: Treating heart attacks
-      :name: sulphinpyrazone
+      =============== ===============
+      sulphinpyrazone R Documentation
+      =============== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Treating heart attacks
+         :name: treating-heart-attacks
 
-   Experiment data for studying the efficacy of treating patients who
-   have had a heart attack with Sulphinpyrazone.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Experiment data for studying the efficacy of treating patients who
+      have had a heart attack with Sulphinpyrazone.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      sulphinpyrazone
+      ::
 
-   .. rubric:: Format
-      :name: format
+         sulphinpyrazone
 
-   A data frame with 1475 observations on the following 2 variables.
+      .. rubric:: Format
+         :name: format
 
-   group
-      a factor with levels ``control`` ``treatment``
+      A data frame with 1475 observations on the following 2 variables.
 
-   outcome
-      a factor with levels ``died`` ``lived``
+      group
+         a factor with levels ``control`` ``treatment``
 
-   .. rubric:: Source
-      :name: source
+      outcome
+         a factor with levels ``died`` ``lived``
 
-   Anturane Reinfarction Trial Research Group. 1980. Sulfinpyrazone in
-   the prevention of sudden death after myocardial infarction. New
-   England Journal of Medicine 302(5):250-256.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Anturane Reinfarction Trial Research Group. 1980. Sulfinpyrazone
+      in the prevention of sudden death after myocardial infarction. New
+      England Journal of Medicine 302(5):250-256.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      sulphinpyrazone
+      ::
+
+         sulphinpyrazone

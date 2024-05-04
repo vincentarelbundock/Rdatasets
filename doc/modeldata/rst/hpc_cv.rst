@@ -1,45 +1,48 @@
 .. container::
 
-   ====== ===============
-   hpc_cv R Documentation
-   ====== ===============
+   .. container::
 
-   .. rubric:: Class probability predictions
-      :name: hpc_cv
+      ====== ===============
+      hpc_cv R Documentation
+      ====== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Class probability predictions
+         :name: class-probability-predictions
 
-   Class probability predictions
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Details
-      :name: details
+      Class probability predictions
 
-   This data frame contains the predicted classes and class
-   probabilities for a linear discriminant analysis model fit to the HPC
-   data set from Kuhn and Johnson (2013). These data are the assessment
-   sets from a 10-fold cross-validation scheme. The data column columns
-   for the true class (``obs``), the class prediction (``pred``) and
-   columns for each class probability (columns ``VF``, ``F``, ``M``, and
-   ``L``). Additionally, a column for the resample indicator is
-   included.
+      .. rubric:: Details
+         :name: details
 
-   .. rubric:: Value
-      :name: value
+      This data frame contains the predicted classes and class
+      probabilities for a linear discriminant analysis model fit to the
+      HPC data set from Kuhn and Johnson (2013). These data are the
+      assessment sets from a 10-fold cross-validation scheme. The data
+      column columns for the true class (``obs``), the class prediction
+      (``pred``) and columns for each class probability (columns ``VF``,
+      ``F``, ``M``, and ``L``). Additionally, a column for the resample
+      indicator is included.
 
-   ========== ============
-   ``hpc_cv`` a data frame
-   ========== ============
+      .. rubric:: Value
+         :name: value
 
-   .. rubric:: Source
-      :name: source
+      ========== ============
+      ``hpc_cv`` a data frame
+      ========== ============
 
-   Kuhn, M., Johnson, K. (2013) *Applied Predictive Modeling*, Springer
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Kuhn, M., Johnson, K. (2013) *Applied Predictive Modeling*,
+      Springer
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(hpc_cv)
-      str(hpc_cv)
+      ::
+
+         data(hpc_cv)
+         str(hpc_cv)

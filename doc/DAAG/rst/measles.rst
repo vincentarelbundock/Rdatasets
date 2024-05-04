@@ -1,40 +1,43 @@
 .. container::
 
-   ======= ===============
-   measles R Documentation
-   ======= ===============
+   .. container::
 
-   .. rubric:: Deaths in London from measles
-      :name: measles
+      ======= ===============
+      measles R Documentation
+      ======= ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Deaths in London from measles
+         :name: deaths-in-london-from-measles
 
-   Deaths in London from measles: 1629 – 1939, with gaps.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Deaths in London from measles: 1629 – 1939, with gaps.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(measles)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(measles)
 
-   The format is: Time-Series [1:311] from 1629 to 1939: 42 2 3 80 21 33
-   27 12 NA NA ...
+      .. rubric:: Format
+         :name: format
 
-   .. rubric:: Source
-      :name: source
+      The format is: Time-Series [1:311] from 1629 to 1939: 42 2 3 80 21
+      33 27 12 NA NA ...
 
-   Guy, W. A. 1882. Two hundred and fifty years of small pox in London.
-   Journal of the Royal Statistical Society 399-443.
+      .. rubric:: Source
+         :name: source
 
-   Stocks, P. 1942. Measles and whooping cough during the dispersal of
-   1939-1940. Journal of the Royal Statistical Society 105:259-291.
+      Guy, W. A. 1882. Two hundred and fifty years of small pox in
+      London. Journal of the Royal Statistical Society 399-443.
 
-   .. rubric:: References
-      :name: references
+      Stocks, P. 1942. Measles and whooping cough during the dispersal
+      of 1939-1940. Journal of the Royal Statistical Society
+      105:259-291.
 
-   Lancaster, H. O. 1990. Expectations of Life. Springer.
+      .. rubric:: References
+         :name: references
+
+      Lancaster, H. O. 1990. Expectations of Life. Springer.

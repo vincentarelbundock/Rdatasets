@@ -1,80 +1,83 @@
 .. container::
 
-   ===== ===============
-   recid R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: recid
-      :name: recid
+      ===== ===============
+      recid R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: recid
+         :name: recid
 
-   Wooldridge Source: C.-F. Chung, P. Schmidt, and A.D. Witte (1991),
-   “Survival Analysis: A Survey,” Journal of Quantitative Criminology 7,
-   59-98. Professor Chung kindly provided the data. Data loads lazily.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      Wooldridge Source: C.-F. Chung, P. Schmidt, and A.D. Witte (1991),
+      “Survival Analysis: A Survey,” Journal of Quantitative Criminology
+      7, 59-98. Professor Chung kindly provided the data. Data loads
+      lazily.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data('recid')
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data('recid')
 
-   A data.frame with 1445 observations on 18 variables:
+      .. rubric:: Format
+         :name: format
 
-   -  **black:** =1 if black
+      A data.frame with 1445 observations on 18 variables:
 
-   -  **alcohol:** =1 if alcohol problems
+      -  **black:** =1 if black
 
-   -  **drugs:** =1 if drug history
+      -  **alcohol:** =1 if alcohol problems
 
-   -  **super:** =1 if release supervised
+      -  **drugs:** =1 if drug history
 
-   -  **married:** =1 if married when incarc.
+      -  **super:** =1 if release supervised
 
-   -  **felon:** =1 if felony sentence
+      -  **married:** =1 if married when incarc.
 
-   -  **workprg:** =1 if in N.C. pris. work prg.
+      -  **felon:** =1 if felony sentence
 
-   -  **property:** =1 if property crime
+      -  **workprg:** =1 if in N.C. pris. work prg.
 
-   -  **person:** =1 if crime against person
+      -  **property:** =1 if property crime
 
-   -  **priors:** # prior convictions
+      -  **person:** =1 if crime against person
 
-   -  **educ:** years of schooling
+      -  **priors:** # prior convictions
 
-   -  **rules:** # rules violations in prison
+      -  **educ:** years of schooling
 
-   -  **age:** in months
+      -  **rules:** # rules violations in prison
 
-   -  **tserved:** time served, rounded to months
+      -  **age:** in months
 
-   -  **follow:** length follow period, months
+      -  **tserved:** time served, rounded to months
 
-   -  **durat:** min(time until return, follow)
+      -  **follow:** length follow period, months
 
-   -  **cens:** =1 if duration right censored
+      -  **durat:** min(time until return, follow)
 
-   -  **ldurat:** log(durat)
+      -  **cens:** =1 if duration right censored
 
-   .. rubric:: Used in Text
-      :name: used-in-text
+      -  **ldurat:** log(durat)
 
-   pages 611-612, 625
+      .. rubric:: Used in Text
+         :name: used-in-text
 
-   .. rubric:: Source
-      :name: source
+      pages 611-612, 625
 
-   https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-       str(recid)
+      ::
+
+          str(recid)

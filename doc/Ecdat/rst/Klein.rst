@@ -1,79 +1,81 @@
 .. container::
 
-   ===== ===============
-   Klein R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: Klein's Model I
-      :name: Klein
+      ===== ===============
+      Klein R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Klein's Model I
+         :name: kleins-model-i
 
-   annual observations from 1920 to 1941
+      .. rubric:: Description
+         :name: description
 
-   *number of observations* : 22
+      annual observations from 1920 to 1941
 
-   *observation* : country
+      *number of observations* : 22
 
-   *country* : United States
+      *observation* : country
 
-   .. rubric:: Usage
-      :name: usage
+      *country* : United States
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      data(Klein)
+      ::
 
-   .. rubric:: Format
-      :name: format
+         data(Klein)
 
-   A time series containing :
+      .. rubric:: Format
+         :name: format
 
-   cons
-      consumption
+      A time series containing :
 
-   profit
-      corporate profits
+      cons
+         consumption
 
-   privwage
-      private wage bill
+      profit
+         corporate profits
 
-   inv
-      investment
+      privwage
+         private wage bill
 
-   lcap
-      previous year's capital stock
+      inv
+         investment
 
-   gnp
-      GNP
+      lcap
+         previous year's capital stock
 
-   pubwage
-      government wage bill
+      gnp
+         GNP
 
-   govspend
-      government spending
+      pubwage
+         government wage bill
 
-   taxe
-      taxes
+      govspend
+         government spending
 
-   .. rubric:: Source
-      :name: source
+      taxe
+         taxes
 
-   Klein, L. (1950) *Economic fluctuations in the United States,
-   1921-1941*, New York, John Wiley and Sons.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      Klein, L. (1950) *Economic fluctuations in the United States,
+      1921-1941*, New York, John Wiley and Sons.
 
-   Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
-   https://archive.org/details/econometricanaly0000gree_f4x3, Table
-   F15.1.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: See Also
-      :name: see-also
+      Greene, W.H. (2003) *Econometric Analysis*, Prentice Hall,
+      https://archive.org/details/econometricanaly0000gree_f4x3, Table
+      F15.1.
 
-   ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
-   ``Index.Observations``,
+      .. rubric:: See Also
+         :name: see-also
 
-   ``Index.Time.Series``
+      ``Index.Source``, ``Index.Economics``, ``Index.Econometrics``,
+      ``Index.Observations``,
+
+      ``Index.Time.Series``

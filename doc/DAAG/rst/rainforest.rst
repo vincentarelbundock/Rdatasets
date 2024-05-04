@@ -1,66 +1,68 @@
 .. container::
 
-   ========== ===============
-   rainforest R Documentation
-   ========== ===============
+   .. container::
 
-   .. rubric:: Rainforest Data
-      :name: rainforest
+      ========== ===============
+      rainforest R Documentation
+      ========== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: Rainforest Data
+         :name: rainforest-data
 
-   The ``rainforest`` data frame has 65 rows and 7 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Usage
-      :name: usage
+      The ``rainforest`` data frame has 65 rows and 7 columns.
 
-   .. code:: R
+      .. rubric:: Usage
+         :name: usage
 
-      rainforest
+      ::
 
-   .. rubric:: Format
-      :name: format
+         rainforest
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   dbh
-      a numeric vector
+      This data frame contains the following columns:
 
-   wood
-      a numeric vector
+      dbh
+         a numeric vector
 
-   bark
-      a numeric vector
+      wood
+         a numeric vector
 
-   root
-      a numeric vector
+      bark
+         a numeric vector
 
-   rootsk
-      a numeric vector
+      root
+         a numeric vector
 
-   branch
-      a numeric vector
+      rootsk
+         a numeric vector
 
-   species
-      a factor with levels ``Acacia mabellae``, ``C. fraseri``,
-      ``Acmena smithii``, ``B. myrtifolia``
+      branch
+         a numeric vector
 
-   .. rubric:: Source
-      :name: source
+      species
+         a factor with levels ``Acacia mabellae``, ``C. fraseri``,
+         ``Acmena smithii``, ``B. myrtifolia``
 
-   J. Ash, Australian National University
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: References
-      :name: references
+      J. Ash, Australian National University
 
-   Ash, J. and Helman, C. (1990) Floristics and vegetation biomass of a
-   forest catchment, Kioloa, south coastal N.S.W. Cunninghamia, 2:
-   167-182.
+      .. rubric:: References
+         :name: references
 
-   .. rubric:: Examples
-      :name: examples
+      Ash, J. and Helman, C. (1990) Floristics and vegetation biomass of
+      a forest catchment, Kioloa, south coastal N.S.W. Cunninghamia, 2:
+      167-182.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      table(rainforest$species)
+      ::
+
+         table(rainforest$species)

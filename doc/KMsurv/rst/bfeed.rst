@@ -1,62 +1,64 @@
 .. container::
 
-   ===== ===============
-   bfeed R Documentation
-   ===== ===============
+   .. container::
 
-   .. rubric:: data from Section 1.14
-      :name: bfeed
+      ===== ===============
+      bfeed R Documentation
+      ===== ===============
 
-   .. rubric:: Description
-      :name: description
+      .. rubric:: data from Section 1.14
+         :name: data-from-section-1.14
 
-   The ``bfeed`` data frame has 927 rows and 10 columns.
+      .. rubric:: Description
+         :name: description
 
-   .. rubric:: Format
-      :name: format
+      The ``bfeed`` data frame has 927 rows and 10 columns.
 
-   This data frame contains the following columns:
+      .. rubric:: Format
+         :name: format
 
-   duration
-      Duration of breast feeding, weeks
+      This data frame contains the following columns:
 
-   delta
-      Indicator of completed breast feeding (1=yes, 0=no)
+      duration
+         Duration of breast feeding, weeks
 
-   race
-      Race of mother (1=white, 2=black, 3=other)
+      delta
+         Indicator of completed breast feeding (1=yes, 0=no)
 
-   poverty
-      Mother in poverty (1=yes, 0=no)
+      race
+         Race of mother (1=white, 2=black, 3=other)
 
-   smoke
-      Mother smoked at birth of child (1=yes, 0=no)
+      poverty
+         Mother in poverty (1=yes, 0=no)
 
-   alcohol
-      Mother used alcohol at birth of child (1=yes, 0=no)
+      smoke
+         Mother smoked at birth of child (1=yes, 0=no)
 
-   agemth
-      Age of mother at birth of child
+      alcohol
+         Mother used alcohol at birth of child (1=yes, 0=no)
 
-   ybirth
-      Year of birth
+      agemth
+         Age of mother at birth of child
 
-   yschool
-      Education level of mother (years of school)
+      ybirth
+         Year of birth
 
-   pc3mth
-      Prenatal care after 3rd month (1=yes, 0=no)
+      yschool
+         Education level of mother (years of school)
 
-   .. rubric:: Source
-      :name: source
+      pc3mth
+         Prenatal care after 3rd month (1=yes, 0=no)
 
-   Klein and Moeschberger (1997) *Survival Analysis Techniques for
-   Censored and truncated data*, Springer. *National Longitudinal Survey
-   of Youth Handbook* The Ohio State University, 1995.
+      .. rubric:: Source
+         :name: source
 
-   .. rubric:: Examples
-      :name: examples
+      Klein and Moeschberger (1997) *Survival Analysis Techniques for
+      Censored and truncated data*, Springer. *National Longitudinal
+      Survey of Youth Handbook* The Ohio State University, 1995.
 
-   .. code:: R
+      .. rubric:: Examples
+         :name: examples
 
-      data(bfeed)
+      ::
+
+         data(bfeed)
