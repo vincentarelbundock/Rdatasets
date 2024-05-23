@@ -3799,6 +3799,45 @@
     <loc>/doc/fpp2/wmurders.html</loc>
   </url>
   <url>
+    <loc>/doc/fpp3/aus_accommodation.html</loc>
+  </url>
+  <url>
+    <loc>/doc/fpp3/aus_airpassengers.html</loc>
+  </url>
+  <url>
+    <loc>/doc/fpp3/aus_arrivals.html</loc>
+  </url>
+  <url>
+    <loc>/doc/fpp3/bank_calls.html</loc>
+  </url>
+  <url>
+    <loc>/doc/fpp3/boston_marathon.html</loc>
+  </url>
+  <url>
+    <loc>/doc/fpp3/canadian_gas.html</loc>
+  </url>
+  <url>
+    <loc>/doc/fpp3/guinea_rice.html</loc>
+  </url>
+  <url>
+    <loc>/doc/fpp3/insurance.html</loc>
+  </url>
+  <url>
+    <loc>/doc/fpp3/prices.html</loc>
+  </url>
+  <url>
+    <loc>/doc/fpp3/souvenirs.html</loc>
+  </url>
+  <url>
+    <loc>/doc/fpp3/us_change.html</loc>
+  </url>
+  <url>
+    <loc>/doc/fpp3/us_employment.html</loc>
+  </url>
+  <url>
+    <loc>/doc/fpp3/us_gasoline.html</loc>
+  </url>
+  <url>
     <loc>/doc/gap/PD.html</loc>
   </url>
   <url>
@@ -5903,6 +5942,9 @@
   </url>
   <url>
     <loc>/doc/stevedata/TV16.html</loc>
+  </url>
+  <url>
+    <loc>/doc/stevedata/USFAHR.html</loc>
   </url>
   <url>
     <loc>/doc/stevedata/af_crime93.html</loc>
