@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Mmmec)
 
@@ -64,7 +64,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          str(Mmmec)
          summary(Mmmec)

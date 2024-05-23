@@ -39,7 +39,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(car_prices)
          str(car_prices)

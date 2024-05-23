@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(algae)
 
@@ -52,7 +52,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          algae.m1 <- drm(vol~conc, data=algae, fct=LL.3())
          summary(algae.m1)

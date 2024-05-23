@@ -36,7 +36,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(biomass)
          str(biomass)

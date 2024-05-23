@@ -24,7 +24,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(hbk, package="robustbase")
 
@@ -66,7 +66,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(hbk)
          plot(hbk)

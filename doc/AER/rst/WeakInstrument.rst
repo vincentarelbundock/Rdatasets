@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("WeakInstrument")
 
@@ -54,7 +54,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("WeakInstrument")
          fm <- ivreg(y ~ x | z, data = WeakInstrument)

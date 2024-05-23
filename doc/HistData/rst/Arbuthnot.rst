@@ -30,7 +30,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Arbuthnot)
 
@@ -104,7 +104,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Arbuthnot)
          # plot the sex ratios

@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          fish_oil_18
 
@@ -116,7 +116,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          names(fish_oil_18)
          (tab <- fish_oil_18[["major_cardio_event"]])

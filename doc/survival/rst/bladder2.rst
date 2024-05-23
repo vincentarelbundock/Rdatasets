@@ -43,7 +43,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          bladder1
          bladder

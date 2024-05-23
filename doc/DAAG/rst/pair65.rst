@@ -23,7 +23,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          pair65
 
@@ -48,7 +48,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          mean(pair65$heated - pair65$ambient)
          sd(pair65$heated - pair65$ambient)

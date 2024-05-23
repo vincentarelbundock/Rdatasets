@@ -45,7 +45,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(mlc_churn)
          str(mlc_churn)

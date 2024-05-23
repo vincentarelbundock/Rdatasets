@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          nuclear_survey
 
@@ -40,6 +40,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          table(nuclear_survey)

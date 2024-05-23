@@ -17,7 +17,7 @@
    .. rubric:: Usage
       :name: usage
 
-   ::
+   .. code:: R
 
       data(survexp, package="survival")
 
@@ -61,6 +61,6 @@
    .. rubric:: Examples
       :name: examples
 
-   ::
+   .. code:: R
 
       survexp.uswhite <- survexp.usr[,,"white",]

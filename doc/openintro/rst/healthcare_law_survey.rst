@@ -25,7 +25,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          healthcare_law_survey
 
@@ -50,7 +50,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
 
          healthcare_law_survey

@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("WomenQueue")
 
@@ -58,7 +58,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("WomenQueue")
          gf <- goodfit(WomenQueue, type = "binomial")

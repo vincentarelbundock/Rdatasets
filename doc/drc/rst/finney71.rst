@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(finney71)
 
@@ -45,7 +45,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Model with ED50 as a parameter
          finney71.m1 <- drm(affected/total ~ dose, weights = total,

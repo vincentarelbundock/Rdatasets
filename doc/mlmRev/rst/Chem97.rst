@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Chem97)
 
@@ -76,7 +76,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          str(Chem97)
          summary(Chem97)

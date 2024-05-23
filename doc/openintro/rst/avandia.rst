@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          avandia
 
@@ -46,6 +46,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          table(avandia)

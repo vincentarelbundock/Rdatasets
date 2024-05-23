@@ -30,7 +30,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("CholeraDeaths1849")
 
@@ -93,7 +93,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(CholeraDeaths1849)
          str(CholeraDeaths1849)

@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("Electricity1955")
 
@@ -84,7 +84,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("Electricity1955")
          Electricity <- Electricity1955[1:145,]

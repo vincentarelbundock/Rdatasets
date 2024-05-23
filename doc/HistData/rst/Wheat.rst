@@ -30,7 +30,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Wheat)
          data(Wheat.monarchs)
@@ -89,7 +89,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Wheat)
 

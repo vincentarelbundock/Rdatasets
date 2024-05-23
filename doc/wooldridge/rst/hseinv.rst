@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data('hseinv')
 
@@ -50,9 +50,9 @@
 
       -  **linvpc:** log(invpc)
 
-      -  **lprice_1:** lprice[_n-1]
+      -  **lprice_1:** lprice[\_n-1]
 
-      -  **linvpc_1:** linvpc[_n-1]
+      -  **linvpc_1:** linvpc[\_n-1]
 
       -  **gprice:** lprice - lprice_1
 
@@ -71,6 +71,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
           str(hseinv)

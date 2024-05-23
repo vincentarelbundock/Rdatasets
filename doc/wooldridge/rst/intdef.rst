@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data('intdef')
 
@@ -39,11 +39,11 @@
 
       -  **def:** out - rec
 
-      -  **i3_1:** i3[_n-1]
+      -  **i3_1:** i3[\_n-1]
 
-      -  **inf_1:** inf[_n-1]
+      -  **inf_1:** inf[\_n-1]
 
-      -  **def_1:** def[_n-1]
+      -  **def_1:** def[\_n-1]
 
       -  **ci3:** i3 - i3_1
 
@@ -66,6 +66,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
           str(intdef)

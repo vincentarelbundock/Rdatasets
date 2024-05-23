@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          us_contagious_diseases
 
@@ -62,6 +62,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          head(us_contagious_diseases)

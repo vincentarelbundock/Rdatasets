@@ -33,7 +33,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(hpc_data)
          str(hpc_data)

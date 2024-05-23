@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          nwtco
          data(nwtco, package="survival")
@@ -66,7 +66,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          with(nwtco, table(instit,histol))
          anova(coxph(Surv(edrel,rel)~histol+instit,data=nwtco))

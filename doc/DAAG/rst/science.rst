@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          science
 
@@ -62,7 +62,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          classmeans <- with(science, aggregate(like, by=list(PrivPub, Class), mean))
          names(classmeans) <- c("PrivPub","Class","like")

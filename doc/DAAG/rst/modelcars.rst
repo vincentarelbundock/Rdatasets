@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          modelcars
 
@@ -45,7 +45,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          plot(modelcars)
          modelcars.lm <- lm(distance.traveled ~ starting.point, data=modelcars)

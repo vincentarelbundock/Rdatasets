@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          climate70
 
@@ -65,7 +65,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          # Data sampled are from the US, Europe, and Australia.
          # This geographic limitation may be due to the particular

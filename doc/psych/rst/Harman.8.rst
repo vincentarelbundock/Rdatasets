@@ -23,7 +23,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Harman)  
          data(Harman.5)
@@ -175,7 +175,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Harman)
          cor.plot(Harman.Holzinger)

@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(RockTheVote)
 
@@ -99,7 +99,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(RockTheVote)
          ## estimate MLEs of treatment effects

@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(heartrate)
 
@@ -52,7 +52,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Fitting the baro5 model
          heartrate.m1 <- drm(rate~pressure, data=heartrate, fct=baro5())

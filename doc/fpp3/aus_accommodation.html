@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><title>R: Australian accommodation data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>aus_accommodation</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Australian accommodation data</h2>
+
+<h3>Description</h3>
+
+<p><code>aus_accommodation</code> is a quarterly 'tsibble' containing data on Australian tourist accommodation
+from short-term non-residential accommodation with 15 or more rooms, 1998 Q1 - 2016 Q2. The data set
+also contains the Australian Consumer Price Index (CPI) for the same period.
+Takings are in millions of Australian dollars,
+Occupancy is a percentage of rooms occupied,
+CPI is an index with value 100 in 2012 Q1.
+</p>
+
+
+<h3>Format</h3>
+
+<p>Time series of class 'tsibble'
+</p>
+
+
+<h3>Source</h3>
+
+<p>Australian Bureau of Statistics, Cat No 8635.0, Table 10, and Cat No 6401.0, Table 1.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+aus_accommodation
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

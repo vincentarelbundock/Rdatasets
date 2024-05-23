@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          goog
 
@@ -56,6 +56,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          goog

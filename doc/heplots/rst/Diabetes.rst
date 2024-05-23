@@ -93,7 +93,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Diabetes)
          col <- c("blue", "red", "darkgreen")[Diabetes$group]

@@ -61,7 +61,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(hepatic_injury_qsar)
          str(hepatic_injury_qsar)

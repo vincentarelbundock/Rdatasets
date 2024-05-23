@@ -27,7 +27,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          muscatine
 
@@ -70,7 +70,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          muscatine$cage <- muscatine$age - 12                                         
          muscatine$cage2 <- muscatine$cage^2                                          

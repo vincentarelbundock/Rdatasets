@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          melanoma
 
@@ -65,7 +65,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          # Time-series plot.  Figure 3.64 from Cleveland.
          xyplot(incidence ~ year,

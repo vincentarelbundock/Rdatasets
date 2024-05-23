@@ -27,6 +27,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          autoplot(livestock)

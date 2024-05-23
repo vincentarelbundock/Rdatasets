@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          stackloss
 
@@ -82,7 +82,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(stats)
          summary(lm.stack <- lm(stack.loss ~ stack.x))

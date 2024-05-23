@@ -23,7 +23,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("bomregions2021")
 
@@ -200,7 +200,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          plot(ts(bomregions2021[, c("mdbRain","SOI")], start=1900),
               panel=function(y,...)panel.smooth(bomregions2021$Year, y,...))

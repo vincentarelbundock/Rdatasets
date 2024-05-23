@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          SP500W90
 
@@ -31,6 +31,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ts.plot(SP500W90)

@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("cattell")
 
@@ -99,7 +99,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(cattell)
          corPlot(cattell,numbers=TRUE,upper=FALSE,diag=FALSE,

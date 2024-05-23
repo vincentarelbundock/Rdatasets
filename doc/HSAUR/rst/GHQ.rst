@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("GHQ")
 
@@ -55,7 +55,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
            data("GHQ", package = "HSAUR")
            male <- subset(GHQ, sex == "male")

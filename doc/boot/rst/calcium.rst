@@ -26,7 +26,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          calcium
 

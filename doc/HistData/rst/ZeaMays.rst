@@ -31,7 +31,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(ZeaMays)
 
@@ -107,7 +107,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(ZeaMays)
 

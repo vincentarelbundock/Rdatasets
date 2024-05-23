@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(prussian)
 
@@ -44,7 +44,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(prussian)
          corpP <- glm(y ~ corp, family=poisson,data=prussian)

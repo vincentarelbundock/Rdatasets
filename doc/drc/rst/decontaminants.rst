@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("decontaminants")
 
@@ -73,7 +73,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Wadley's problem using a three-parameter log-logistic model
          decon.LL.3.1 <- drm(count~conc, group, data = decontaminants, fct = LL.3(), 

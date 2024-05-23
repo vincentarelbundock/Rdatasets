@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("cancer")
 
@@ -33,7 +33,7 @@
          days until death
 
       ``outcome``
-         outcome: ``censor``, ``thymic     lymphoma``,
+         outcome: ``censor``, ``thymic lymphoma``,
          ``reticulum cell sarcoma`` ``other causes``
 
       ``id``
@@ -71,7 +71,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          hsurv <- survfit(Surv(days, outcome) ~ trt, data = hoel, id= id)
          plot(hsurv, lty=1:2, col=rep(1:3, each=2), lwd=2, xscale=30.5,

@@ -28,7 +28,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          simpsons_paradox_covid
 
@@ -58,7 +58,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          library(dplyr)
          library(scales)

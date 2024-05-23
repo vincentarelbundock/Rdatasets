@@ -22,7 +22,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(G.aparine)
 
@@ -52,7 +52,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Fitting a model with a common control (so a single upper limit: "1")
          G.aparine.m1 <- drm(drymatter ~ dose, treatment, data = G.aparine, 

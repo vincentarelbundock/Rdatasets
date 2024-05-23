@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(nonEnglishNames)
 
@@ -32,7 +32,7 @@
       nonEnglish
          a character vector containing names that often have
          non-standard characters with the non-standard characters
-         replaced by "_"
+         replaced by "\_"
 
       English
          a character vector containing a standard English-character
@@ -46,7 +46,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(nonEnglishNames)
 

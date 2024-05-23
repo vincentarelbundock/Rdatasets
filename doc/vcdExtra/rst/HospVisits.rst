@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("HospVisits")
 
@@ -26,9 +26,9 @@
          :name: format
 
       A 3 by 3 frequency table, with format: table [1:3, 1:3] 43 6 9 16
-      11 18 3 10 16 - attr(*, "dimnames")=List of 2 ..$ visit: chr [1:3]
-      "Regular" "Infrequent" "Never" ..$ stay : chr [1:3] "2-9" "10-19"
-      "20+"
+      11 18 3 10 16 - attr(\*, "dimnames")=List of 2 ..$ visit: chr
+      [1:3] "Regular" "Infrequent" "Never" ..$ stay : chr [1:3] "2-9"
+      "10-19" "20+"
 
       .. rubric:: Details
          :name: details
@@ -62,7 +62,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(HospVisits)
          mosaic(HospVisits, gp=shading_Friendly)

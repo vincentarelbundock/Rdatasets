@@ -54,7 +54,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          str(Plastic)
          plastic.mod <- lm(cbind(tear, gloss, opacity) ~ rate*additive, data=Plastic)

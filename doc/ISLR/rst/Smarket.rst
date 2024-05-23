@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          Smarket
 
@@ -72,7 +72,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          summary(Smarket)
          lm(Today~Lag1+Lag2,data=Smarket)

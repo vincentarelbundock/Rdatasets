@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          lizard_run
 
@@ -32,8 +32,7 @@
          Top speed of lizard, meters per second.
 
       common_name
-         Common name: ``⁠Western fence lizard⁠`` and
-         ``⁠Sagebrush lizard⁠``.
+         Common name: ``⁠Western fence lizard⁠`` and ``⁠Sagebrush lizard⁠``.
 
       scientific_name
          Scientific name (Genus and species):
@@ -49,7 +48,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          library(ggplot2)
          library(dplyr)

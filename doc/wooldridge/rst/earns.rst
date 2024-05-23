@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data('earns')
 
@@ -44,15 +44,15 @@
 
       -  **t:** time trend: t=1 to 47
 
-      -  **ghrwage:** lhrwage - lhrwage[_n-1]
+      -  **ghrwage:** lhrwage - lhrwage[\_n-1]
 
-      -  **goutphr:** loutphr - loutphr[_n-1]
+      -  **goutphr:** loutphr - loutphr[\_n-1]
 
-      -  **ghrwge_1:** ghrwage[_n-1]
+      -  **ghrwge_1:** ghrwage[\_n-1]
 
-      -  **goutph_1:** goutphr[_n-1]
+      -  **goutph_1:** goutphr[\_n-1]
 
-      -  **goutph_2:** goutphr[_n-2]
+      -  **goutph_2:** goutphr[\_n-2]
 
       -  **lwkhours:** log(wkhours)
 
@@ -72,6 +72,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
           str(earns)

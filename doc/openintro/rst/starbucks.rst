@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          starbucks
 
@@ -57,6 +57,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          starbucks

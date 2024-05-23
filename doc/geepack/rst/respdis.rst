@@ -23,7 +23,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          respdis
 
@@ -51,7 +51,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(respdis)
          resp.l <- reshape(respdis, varying = list(c("y1", "y2", "y3", "y4")),

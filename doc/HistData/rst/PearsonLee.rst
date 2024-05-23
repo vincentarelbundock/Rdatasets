@@ -28,7 +28,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(PearsonLee)
 
@@ -91,7 +91,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(PearsonLee)
          str(PearsonLee)

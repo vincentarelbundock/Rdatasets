@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          classdata
 
@@ -41,6 +41,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          anova(lm(m1 ~ lecture, classdata))

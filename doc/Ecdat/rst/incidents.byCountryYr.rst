@@ -31,7 +31,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
            data(terrorism)
            data(incidents.byCountryYr)
@@ -177,7 +177,7 @@
       worldDeaths, USdeaths
          number of deaths by year in the world and US
 
-         ``worldDeaths =           worldPopulation * worldDeathRate``.
+         ``worldDeaths = worldPopulation * worldDeathRate``.
 
          ``USdeaths`` were computed by summing across age groups in
          "Deaths_5x1.txt" for the United States, downloaded from
@@ -260,7 +260,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(terrorism)
          ##

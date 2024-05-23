@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          aulatlong
 
@@ -42,7 +42,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(aulatlong)
          ## maybe str(aulatlong) ; plot(aulatlong) ...

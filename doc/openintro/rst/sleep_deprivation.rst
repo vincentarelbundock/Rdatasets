@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          sleep_deprivation
 
@@ -45,6 +45,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          sleep_deprivation

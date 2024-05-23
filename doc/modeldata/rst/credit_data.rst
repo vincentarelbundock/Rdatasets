@@ -31,7 +31,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(credit_data)
          str(credit_data)

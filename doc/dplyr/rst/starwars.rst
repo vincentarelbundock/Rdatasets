@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          starwars
 
@@ -70,6 +70,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          starwars

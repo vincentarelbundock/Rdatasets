@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          storms
 
@@ -86,7 +86,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          storms
 

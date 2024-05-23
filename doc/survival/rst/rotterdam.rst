@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          rotterdam
          data(cancer, package="survival")
@@ -119,7 +119,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          # liberal definition of rfs (count later deaths)
          rfs  <- pmax(rotterdam$recur, rotterdam$death)

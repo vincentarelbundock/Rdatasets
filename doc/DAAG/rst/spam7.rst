@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          spam7
 
@@ -63,7 +63,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(rpart)
          spam.rpart <- rpart(formula = yesno ~ crl.tot + dollar + bang +

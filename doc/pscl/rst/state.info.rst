@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(state.info)
 
@@ -32,7 +32,7 @@
          Consortium for Political and Social Research
 
       ``state``
-         character, name of state or ``Washington     D.C.``
+         character, name of state or ``Washington D.C.``
 
       ``year``
          numeric or ``NA``, year of statehood

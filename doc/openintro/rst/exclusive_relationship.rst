@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          exclusive_relationship
 
@@ -34,7 +34,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          summary(exclusive_relationship$num)
          table(exclusive_relationship$num)

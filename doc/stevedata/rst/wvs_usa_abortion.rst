@@ -25,7 +25,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          wvs_usa_abortion
 

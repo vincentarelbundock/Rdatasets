@@ -1,0 +1,133 @@
+<!DOCTYPE html><html><head><title>R: U.S. Foreign Aid and Human Rights in Assorted Years</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>USFAHR</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>U.S. Foreign Aid and Human Rights in Assorted Years</h2>
+
+<h3>Description</h3>
+
+<p>A data set on economic aid allocation by the United States for assorted years.
+These are useful for illustrative cross-sectional relationships between human
+rights and U.S. aid allocation at what amounts to midway points for various
+presidential administrations.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>USFAHR
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1654 observations on the following 18 variables.
+</p>
+
+<dl>
+<dt><code>country</code></dt><dd><p>an English country name</p>
+</dd>
+<dt><code>ccode</code></dt><dd><p>a Correlates of War state code</p>
+</dd>
+<dt><code>region</code></dt><dd><p>a region in which the country resides, per Greenbook</p>
+</dd>
+<dt><code>year</code></dt><dd><p>a year</p>
+</dd>
+<dt><code>nomoblig</code></dt><dd><p>economic aid obligations in nominal U.S. dollars</p>
+</dd>
+<dt><code>constoblig</code></dt><dd><p>economic aid obligations in costant 2019 U.S. dollars</p>
+</dd>
+<dt><code>clphy</code></dt><dd><p>a physical violence index, bound between 0 and 1</p>
+</dd>
+<dt><code>civlib</code></dt><dd><p>a civil liberties index, bound between 0 and 1</p>
+</dd>
+<dt><code>fpsusa</code></dt><dd><p>foreign policy similarity with the United States</p>
+</dd>
+<dt><code>fpsrus</code></dt><dd><p>foreign policy similarity with the Soviet Union/Russia</p>
+</dd>
+<dt><code>mindistusa</code></dt><dd><p>minimum distance of the country from the United States</p>
+</dd>
+<dt><code>mindistrus</code></dt><dd><p>minimum distance of the country from the USSR/Russia</p>
+</dd>
+<dt><code>gdp</code></dt><dd><p>an estimate of GDP in constant 2011 U.S. dollars</p>
+</dd>
+<dt><code>pop</code></dt><dd><p>an estimate of population size</p>
+</dd>
+<dt><code>usaimp</code></dt><dd><p>a value of how much the U.S. imports from the country (in thousands USD)</p>
+</dd>
+<dt><code>usaexp</code></dt><dd><p>a value of how much the U.S. exports to the country (in thousands USD)</p>
+</dd>
+<dt><code>milex</code></dt><dd><p>an estimate of military expenditures (in thousands USD)</p>
+</dd>
+<dt><code>cinc</code></dt><dd><p>a composite index of national capabilities</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Matching is done on Correlates of War state codes. Thus, the exact
+&quot;population&quot; is an amalgam of U.S. aid and Correlates of War state system
+membership. Regions are offered, as is, from USAID Data Services.
+</p>
+<p>Data on aid are &quot;obligations&quot; and not &quot;disbursements&quot;, and thus may better
+reflect donor intent. These come from US Overseas Loans &amp; Grants
+(&quot;Greenbook&quot;) and were prepared by USAID Data Services on July 14, 2021.
+</p>
+<p>Greenbook only offers information about dollar amounts of aid, contingent on
+receiving aid. Observations were added, based on Correlates of War state system
+membership, about countries that could've received aid but did not. Countries
+that never received aid at all had to have regions assigned to them ex post.
+I don't think the regions imputed for these observations are problematic.
+This concerns Andorra, Czechoslovakia, Dominica, German Democratic Republic,
+German Federal Republic, Liechtenstein, Luxembourg, Monaco, Nauru, Republic
+of Vietnam, San Marino, St. Lucia, St. Kitts and Nevis, Switzerland, Tuvalu,
+Yemen Arab Republic, Yemen People's Republic, and Zanzibar.
+</p>
+<p>Higher values of the physical violence index and civil liberties index
+communicate better human rights records. Data are lagged a year.
+</p>
+<p>Foreign policy similarity is Cohen's (1960) kappa based on valued United
+Nations General Assembly voting. Data come from Haege (2011) by way of
+<span class="pkg">peacesciencer</span>'s <code>add_fpsim()</code> function. Please read
+<span class="pkg">peacesciencer</span> documentation for more information about these measures,
+along with what you should cite for any serious use of these data.
+</p>
+<p>Minimum distance is calculated using the Vincenty method (&quot;as the crow
+flies&quot;). Measurement is in kilometers and data come from <span class="pkg">peacesciencer</span>
+and its <code>add_minimum_distance()</code> function. Check package documentation
+for appropriate citation for any serious use.
+</p>
+<p>Estimates of gross domestic product (&quot;GDP&quot;) and population come by way of
+<span class="pkg">peacesciencer</span> and its <code>add_sdp_gdp()</code> function. Check package
+documentation for appropriate citations for any serious use. GDP is in
+actual dollars.
+</p>
+<p>Trade data come from Correlates of War trade data by way of <span class="pkg">peacesciencer</span>
+and its <code>add_cow_trade()</code> function. Check package documentation for
+appropriate citations for any serious use.
+</p>
+<p>Military expenditure and capabilities data come from Correlates of War by way
+of <span class="pkg">peacesciencer</span> and its <code>add_cow_trade()</code> function. Check package
+documentation for  appropriate citations for any serious use.
+</p>
+
+</main>
+
+</div>
+</body></html>

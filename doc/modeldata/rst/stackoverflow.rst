@@ -40,7 +40,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(stackoverflow)
          str(stackoverflow)

@@ -100,7 +100,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Not run: 
          # Compare plm's Grunfeld data to Baltagi's (2001) Grunfeld data:

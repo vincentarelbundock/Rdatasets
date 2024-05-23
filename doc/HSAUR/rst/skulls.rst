@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("skulls")
 
@@ -61,7 +61,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
            data("skulls", package = "HSAUR")
            means <- tapply(1:nrow(skulls), skulls$epoch, function(i)

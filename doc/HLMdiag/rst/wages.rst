@@ -86,7 +86,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          str(wages)
          summary(wages)

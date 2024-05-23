@@ -27,7 +27,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(RandHIE)
 
@@ -223,7 +223,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Cameron and Trivedi (2005): Section 16.6, page 553ff
          data( RandHIE )

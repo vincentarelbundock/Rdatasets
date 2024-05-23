@@ -36,7 +36,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(oils)
          str(oils)

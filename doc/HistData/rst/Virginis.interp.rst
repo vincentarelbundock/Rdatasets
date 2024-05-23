@@ -27,7 +27,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
            data("Virginis")
              data("Virginis.interp")
@@ -119,7 +119,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Virginis)
          data(Virginis.interp)

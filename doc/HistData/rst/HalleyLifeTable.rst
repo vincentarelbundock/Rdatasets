@@ -22,7 +22,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("HalleyLifeTable")
 
@@ -95,7 +95,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(HalleyLifeTable)
          # what was the estimated population of Breslau?

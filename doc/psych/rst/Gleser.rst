@@ -23,7 +23,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Gleser)
 
@@ -96,7 +96,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          #Find the MS for each component:
          #First, stack the data

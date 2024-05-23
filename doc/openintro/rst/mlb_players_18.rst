@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          mlb_players_18
 
@@ -101,7 +101,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          d <- subset(mlb_players_18, !position %in% c("P", "DH") & AB >= 100)
          dim(d)

@@ -22,7 +22,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          solder
          data(solder, package="survival")
@@ -70,7 +70,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          # The balanced subset used by Chambers and Hastie
          #   contains the first 180 of each mask and deletes mask A6. 

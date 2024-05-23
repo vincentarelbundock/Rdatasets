@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(tomato)
 
@@ -45,7 +45,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          tomato.aov <- aov(log(weight) ~ trt, data=tomato)
          fitted.values(tomato.aov)

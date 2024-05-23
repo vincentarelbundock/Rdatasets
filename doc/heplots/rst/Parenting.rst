@@ -53,7 +53,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Parenting)
          require(car)

@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          pr_death_counts
 
@@ -44,6 +44,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          with(pr_death_counts, plot(date, deaths))

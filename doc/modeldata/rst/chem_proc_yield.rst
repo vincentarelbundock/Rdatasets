@@ -62,7 +62,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(chem_proc_yield)
          str(chem_proc_yield)

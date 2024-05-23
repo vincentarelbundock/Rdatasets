@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          vlt
 
@@ -72,7 +72,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
               vlt.stk <- stack(vlt[,1:3])
               table(vlt.stk)

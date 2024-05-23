@@ -40,6 +40,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          autoplot(departures, facets=TRUE)

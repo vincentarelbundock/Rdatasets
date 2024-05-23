@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          retinopathy
          data(retinopathy, package="survival")
@@ -86,6 +86,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          coxph(Surv(futime, status) ~ type + trt, cluster= id, retinopathy)

@@ -60,6 +60,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          taxi

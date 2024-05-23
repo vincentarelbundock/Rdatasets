@@ -51,7 +51,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          plot(Cefamandole)
          fm1 <- nlsList(SSbiexp, data = Cefamandole)

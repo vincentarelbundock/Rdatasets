@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          simulated_dist
 
@@ -34,7 +34,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(simulated_dist)
          lapply(simulated_dist, qqnorm)

@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          USArrests
 
@@ -43,7 +43,7 @@
       ``UrbanPop`` percentages, a review of the table (No. 21) in the
       Statistical Abstracts 1975 reveals a transcription error for
       Maryland (and that McNeil used the same “round to even” rule that
-      R's ``round()`` uses), as found by Daniel S Coven (Arizona).
+      **R**'s ``round()`` uses), as found by Daniel S Coven (Arizona).
 
       See the example below on how to correct the error and improve
       accuracy for the ‘<n>.5’ percentages.
@@ -70,7 +70,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          summary(USArrests)
 

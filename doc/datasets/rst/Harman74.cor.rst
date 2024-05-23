@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          Harman74.cor
 
@@ -32,7 +32,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(stats)
          (Harman74.FA <- factanal(factors = 1, covmat = Harman74.cor))

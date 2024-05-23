@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("ShipAccidents")
 
@@ -84,7 +84,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("ShipAccidents")
          sa <- subset(ShipAccidents, service > 0)

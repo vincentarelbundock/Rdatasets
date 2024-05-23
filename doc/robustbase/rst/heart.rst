@@ -26,7 +26,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(heart)
 
@@ -47,7 +47,8 @@
       .. rubric:: Note
          :name: note
 
-      There are other ``heart`` datasets in other R packages, notably
+      There are other ``heart`` datasets in other **R** packages,
+      notably
       `survival <https://CRAN.R-project.org/package=survival>`__, hence
       considering using ``package = "robustbase"``, see examples.
 
@@ -64,7 +65,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(heart, package="robustbase")
          heart.x <- data.matrix(heart[, 1:2]) # the X-variables

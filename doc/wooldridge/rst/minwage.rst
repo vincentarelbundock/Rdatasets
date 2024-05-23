@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data('minwage')
 
@@ -83,15 +83,15 @@
 
       -  **lwage232:** log(wage232)
 
-      -  **gemp232:** lemp232 - lemp232[_n-1]
+      -  **gemp232:** lemp232 - lemp232[\_n-1]
 
-      -  **gwage232:** lwage232 - lwage232[_n-1]
+      -  **gwage232:** lwage232 - lwage232[\_n-1]
 
       -  **lminwage:** log(minwage)
 
-      -  **gmwage:** lminwage - lminwage[_n-1]
+      -  **gmwage:** lminwage - lminwage[\_n-1]
 
-      -  **gmwage_1:** gmwage[_n-1]
+      -  **gmwage_1:** gmwage[\_n-1]
 
       -  **gmwage_2:**
 
@@ -117,7 +117,7 @@
 
       -  **lemp236:**
 
-      -  **gcpi:** lcpi - lcpi[_n-1]
+      -  **gcpi:** lcpi - lcpi[\_n-1]
 
       -  **lcpi:** log(cpi)
 
@@ -161,6 +161,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
           str(minwage)

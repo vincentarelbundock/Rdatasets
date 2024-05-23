@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          Carseats
 
@@ -80,7 +80,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          summary(Carseats)
          lm.fit=lm(Sales~Advertising+Price,data=Carseats)

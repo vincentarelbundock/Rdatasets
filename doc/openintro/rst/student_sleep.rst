@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          student_sleep
 
@@ -38,7 +38,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          set.seed(2)
          x <- exp(c(

@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          movielens
 
@@ -59,6 +59,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          head(movielens)

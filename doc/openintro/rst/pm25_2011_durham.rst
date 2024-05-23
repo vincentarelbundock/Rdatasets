@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          pm25_2011_durham
 
@@ -97,6 +97,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          pm25_2011_durham

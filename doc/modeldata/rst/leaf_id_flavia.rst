@@ -168,7 +168,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(leaf_id_flavia)
          str(leaf_id_flavia)

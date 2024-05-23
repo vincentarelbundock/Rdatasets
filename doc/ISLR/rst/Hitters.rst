@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          Hitters
 
@@ -111,7 +111,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          summary(Hitters)
          lm(Salary~AtBat+Hits,data=Hitters)

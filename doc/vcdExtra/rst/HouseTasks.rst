@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("HouseTasks")
 
@@ -27,7 +27,7 @@
          :name: format
 
       The format is: 'table' int [1:13, 1:4] 36 11 24 51 13 1 1 14 20 46
-      ... - attr(*, "dimnames")=List of 2 ..$ Task: chr [1:13]
+      ... - attr(\*, "dimnames")=List of 2 ..$ Task: chr [1:13]
       "Breakfast" "Dinner" "Dishes" "Driving" ... ..$ Who : chr [1:4]
       "Alternating" "Husband" "Jointly" "Wife"
 
@@ -41,7 +41,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(HouseTasks)
          ## maybe str(HouseTasks) 

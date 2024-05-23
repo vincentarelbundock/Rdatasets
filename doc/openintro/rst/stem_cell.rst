@@ -22,7 +22,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          stem_cell
 
@@ -48,6 +48,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          stem_cell

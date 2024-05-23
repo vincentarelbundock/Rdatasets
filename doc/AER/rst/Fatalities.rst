@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("Fatalities")
 
@@ -171,7 +171,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## data from Stock and Watson (2007)
          data("Fatalities", package = "AER")

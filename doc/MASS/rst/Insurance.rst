@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          Insurance
 
@@ -66,7 +66,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## main-effects fit as Poisson GLM with offset
          glm(Claims ~ District + Group + Age + offset(log(Holders)),

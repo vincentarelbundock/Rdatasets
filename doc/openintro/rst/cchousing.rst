@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          cchousing
 
@@ -33,6 +33,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          hist(cchousing$price)

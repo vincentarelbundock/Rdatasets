@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("GasolineYield")
 
@@ -101,7 +101,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## IGNORE_RDIFF_BEGIN
          data("GasolineYield", package = "betareg")

@@ -24,7 +24,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Thurstone)
          data(Thurstone.33)
@@ -216,7 +216,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          if(!require(GPArotation)) {message("I am sorry, to run omega requires GPArotation") 
                  } else {

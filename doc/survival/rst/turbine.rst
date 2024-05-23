@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(reliability, package="survival")
 
@@ -100,7 +100,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          survreg(Surv(time, status) ~ temperature + voltage, capacitor)
 

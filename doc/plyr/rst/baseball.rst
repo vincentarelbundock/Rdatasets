@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          baseball
 
@@ -88,7 +88,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          baberuth <- subset(baseball, id == "ruthba01")
          baberuth$cyear <- baberuth$year - min(baberuth$year) + 1

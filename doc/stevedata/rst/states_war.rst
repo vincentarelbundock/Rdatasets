@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          states_war
 
@@ -198,8 +198,7 @@
 
       Miller Steven V. 2022. “peacesciencer: An R Package for
       Quantitative Peace Science Research.” *Conflict Management and
-      Peace Science*, 39(6), 755–779. doi:
-      `10.1177/07388942221077926 <https://doi.org/10.1177/07388942221077926>`__
+      Peace Science*, 39(6), 755–779.
 
       Pemstein, Daniel, Stephen Meserve, and James Melton. 2010.
       "Democratic Compromise: A Latent Variable Analysis of Ten Measures

@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(dengue)
 
@@ -92,7 +92,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          str(dengue)
          glm(NoYes ~ humid, data=dengue, family=binomial)

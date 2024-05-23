@@ -23,7 +23,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(coolingFromNuclearWar)
 
@@ -52,7 +52,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(coolingFromNuclearWar)
          matplot(coolingFromNuclearWar[, 'smoke'], 

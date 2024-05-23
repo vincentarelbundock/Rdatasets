@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("PSID1982")
 
@@ -98,7 +98,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("PSID1982")
          plot(density(PSID1982$wage, bw = "SJ"))

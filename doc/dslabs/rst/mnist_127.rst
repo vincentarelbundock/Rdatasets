@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          mnist_127
 
@@ -59,6 +59,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          with(mnist_127$train, plot(x_1, x_2, col = as.numeric(y)))

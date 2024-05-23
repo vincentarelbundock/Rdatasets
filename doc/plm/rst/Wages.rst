@@ -94,7 +94,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          # data set 'Wages' is organized as a stacked time series/balanced panel
          data("Wages", package = "plm")

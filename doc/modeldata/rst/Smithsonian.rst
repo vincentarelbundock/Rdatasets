@@ -29,7 +29,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Smithsonian)
          str(Smithsonian)

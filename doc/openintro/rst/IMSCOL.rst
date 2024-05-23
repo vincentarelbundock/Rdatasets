@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          IMSCOL
 
@@ -33,7 +33,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          plot(1:7, 7:1,
            col = IMSCOL, pch = 19, cex = 6, xlab = "", ylab = "",

@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          polls_2008
 
@@ -45,6 +45,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          with(polls_2008, plot(day, margin))

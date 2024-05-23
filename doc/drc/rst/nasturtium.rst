@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(nasturtium)
 
@@ -53,7 +53,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          nasturtium.m1 <- drm(weight~conc, data=nasturtium, fct = LL.3())
 

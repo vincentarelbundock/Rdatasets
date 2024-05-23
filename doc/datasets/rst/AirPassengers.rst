@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          AirPassengers
 
@@ -37,7 +37,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## The classic 'airline model', by full ML
          (fit <- arima(log10(AirPassengers), c(0, 1, 1),

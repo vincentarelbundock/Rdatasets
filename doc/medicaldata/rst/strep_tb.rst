@@ -22,7 +22,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          strep_tb
 
@@ -58,7 +58,7 @@
          temperature at baseline in degrees fahrenheit or celsius, but
          categorized into 4 levels (afebrile level apparently were cases
          not measured with a thermometer): factor, with levels:
-         1_afebrile, 2_<99F/<37.2C, 3_99-99.9F/37.2-37.75C,
+         1_afebrile, 2\_<99F/<37.2C, 3_99-99.9F/37.2-37.75C,
          4_100F+/37.7C+
 
       baseline_esr

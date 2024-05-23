@@ -26,7 +26,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Michelson)
          data(MichelsonSets)
@@ -41,7 +41,7 @@
          a numeric vector
 
       ``MichelsonSets``: A 20 x 5 matrix, with format int [1:20, 1:5]
-      850 850 1000 810 960 800 830 830 880 720 ... - attr(*,
+      850 850 1000 810 960 800 830 830 880 720 ... - attr(\*,
       "dimnames")=List of 2 ..$ : NULL ..$ : chr [1:5] "ds12" "ds13"
       "ds14" "ds15" ...
 
@@ -80,7 +80,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Michelson)
 

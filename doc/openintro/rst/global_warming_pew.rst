@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          global_warming_pew
 
@@ -46,6 +46,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          global_warming_pew

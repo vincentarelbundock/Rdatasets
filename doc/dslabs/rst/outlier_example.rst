@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          outlier_example
 
@@ -32,7 +32,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          mean(outlier_example)
          median(outlier_example)

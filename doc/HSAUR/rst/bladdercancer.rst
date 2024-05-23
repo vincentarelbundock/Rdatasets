@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("bladdercancer")
 
@@ -54,7 +54,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
            data("bladdercancer", package = "HSAUR")
            mosaicplot(xtabs(~ number + tumorsize, data = bladdercancer))

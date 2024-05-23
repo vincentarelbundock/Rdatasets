@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data('phillips')
 
@@ -33,9 +33,9 @@
 
       -  **inf:** percentage change in CPI
 
-      -  **inf_1:** inf[_n-1]
+      -  **inf_1:** inf[\_n-1]
 
-      -  **unem_1:** unem[_n-1]
+      -  **unem_1:** unem[\_n-1]
 
       -  **cinf:** inf - inf_1
 
@@ -55,6 +55,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
           str(phillips)

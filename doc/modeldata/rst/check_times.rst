@@ -101,7 +101,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(check_times)
          str(check_times)

@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(AustralianElectionPolling)
 
@@ -115,7 +115,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(AustralianElectionPolling)
          if(require(lattice)) {

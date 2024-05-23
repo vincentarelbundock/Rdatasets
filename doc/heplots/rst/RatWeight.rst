@@ -72,7 +72,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(RatWeight)
          contrasts(RatWeight$trt)

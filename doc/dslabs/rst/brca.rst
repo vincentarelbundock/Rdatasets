@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          brca
 
@@ -82,7 +82,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          table(brca$y)
          dim(brca$x)

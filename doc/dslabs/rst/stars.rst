@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          stars
 
@@ -48,6 +48,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          head(stars)

@@ -94,7 +94,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(steroidogenic_toxicity)
          str(steroidogenic_toxicity)
