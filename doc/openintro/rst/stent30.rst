@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          stent30
 
@@ -48,7 +48,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          # 30-day results
          table(stent30)

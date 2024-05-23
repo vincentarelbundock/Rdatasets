@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          sinusitis
 
@@ -43,6 +43,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          sinusitis

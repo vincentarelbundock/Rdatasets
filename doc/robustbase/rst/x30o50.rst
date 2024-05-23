@@ -23,7 +23,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(x30o50, package="robustbase")
 
@@ -63,7 +63,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(x30o50)
          ## have 4  duplicated values :

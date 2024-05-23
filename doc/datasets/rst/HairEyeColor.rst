@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          HairEyeColor
 
@@ -85,7 +85,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(graphics)
          ## Full mosaic

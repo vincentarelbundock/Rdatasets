@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(ca2006)
 
@@ -88,7 +88,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(ca2006)
 

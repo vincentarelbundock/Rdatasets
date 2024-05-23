@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(selenium)
 
@@ -57,7 +57,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Analysis similar to what is proposed in Jeske et al (2009)
          ##  but simply using existing functionality in "drc"

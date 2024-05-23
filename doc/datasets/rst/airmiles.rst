@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          airmiles
 
@@ -41,7 +41,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(graphics)
          plot(airmiles, main = "airmiles data",

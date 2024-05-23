@@ -27,7 +27,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(GaltonFamilies)
 
@@ -102,7 +102,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(GaltonFamilies)
          str(GaltonFamilies)

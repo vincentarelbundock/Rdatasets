@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          mgus2
          data(cancer, package="survival")

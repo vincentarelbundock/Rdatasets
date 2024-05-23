@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          airquality
 
@@ -70,7 +70,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(graphics)
          pairs(airquality, panel = panel.smooth, main = "airquality data")

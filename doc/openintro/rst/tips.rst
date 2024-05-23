@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          tips
 
@@ -61,7 +61,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          library(ggplot2)
 

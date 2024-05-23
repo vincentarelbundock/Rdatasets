@@ -104,7 +104,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Oslo)
          table(Oslo$litho)

@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          xom
 
@@ -55,6 +55,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          xom

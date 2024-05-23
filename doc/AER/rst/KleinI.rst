@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("KleinI")
 
@@ -79,7 +79,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("KleinI", package = "AER")
          plot(KleinI)

@@ -22,7 +22,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          whiteside
 
@@ -61,7 +61,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(lattice)
          xyplot(Gas ~ Temp | Insul, whiteside, panel =

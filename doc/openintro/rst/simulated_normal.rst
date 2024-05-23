@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          simulated_normal
 
@@ -32,7 +32,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(simulated_normal)
          lapply(simulated_normal, qqnorm)

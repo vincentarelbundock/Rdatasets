@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(politicalKnowledge)
 
@@ -73,7 +73,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ##
          ## 1. Combine first 2 rows 

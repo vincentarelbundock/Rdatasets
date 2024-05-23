@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          nyc_regents_scores
 
@@ -52,6 +52,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          print(nyc_regents_scores)

@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data('crime4')
 
@@ -131,11 +131,11 @@
 
       -  **lpctmin:** log(pctmin)
 
-      -  **clcrmrte:** lcrmrte - lcrmrte[_n-1]
+      -  **clcrmrte:** lcrmrte - lcrmrte[\_n-1]
 
-      -  **clprbarr:** lprbarr - lprbarr[_n-1]
+      -  **clprbarr:** lprbarr - lprbarr[\_n-1]
 
-      -  **clprbcon:** lprbconv - lprbconv[_n-1]
+      -  **clprbcon:** lprbconv - lprbconv[\_n-1]
 
       -  **clprbpri:** lprbpri - lprbpri[t-1]
 
@@ -166,6 +166,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
           str(crime4)

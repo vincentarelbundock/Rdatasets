@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("CASchools")
 
@@ -106,7 +106,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## data and transformations
          data("CASchools")

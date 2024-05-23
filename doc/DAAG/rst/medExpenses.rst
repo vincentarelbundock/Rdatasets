@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          medExpenses
 
@@ -36,6 +36,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          with(medExpenses, weighted.mean(expenses, familysize))

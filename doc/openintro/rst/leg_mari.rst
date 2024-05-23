@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          leg_mari
 
@@ -41,7 +41,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
 
          table(leg_mari)

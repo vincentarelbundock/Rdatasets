@@ -92,7 +92,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Probe1)
          boxplot(Probe1)

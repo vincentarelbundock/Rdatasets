@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("Punishment")
 
@@ -67,7 +67,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("Punishment", package = "vcd")
          pun <- xtabs(Freq ~ memory + attitude + age + education, data = Punishment)

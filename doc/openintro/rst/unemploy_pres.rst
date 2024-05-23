@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          unemploy_pres
 
@@ -49,6 +49,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          unemploy_pres

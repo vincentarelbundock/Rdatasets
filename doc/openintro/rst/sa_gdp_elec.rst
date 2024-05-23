@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          sa_gdp_elec
 
@@ -64,7 +64,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          library(ggplot2)
 

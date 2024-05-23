@@ -23,7 +23,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("Tal.Or")
 
@@ -90,7 +90,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Tal.Or)
          mediate(reaction ~ cond + (pmi), data =Tal.Or,n.iter=50) 

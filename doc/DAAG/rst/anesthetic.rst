@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          anesthetic
 
@@ -57,7 +57,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          print("Logistic Regression - Example 8.1.4")
 

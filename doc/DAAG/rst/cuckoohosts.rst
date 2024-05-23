@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          cuckoohosts
 
@@ -83,7 +83,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          cuckoohosts
          str(cuckoohosts)

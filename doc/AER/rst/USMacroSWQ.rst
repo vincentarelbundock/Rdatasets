@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("USMacroSWQ")
 
@@ -56,7 +56,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("USMacroSWQ")
          plot(USMacroSWQ)

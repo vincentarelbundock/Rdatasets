@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data('gpa3')
 
@@ -85,6 +85,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
           str(gpa3)

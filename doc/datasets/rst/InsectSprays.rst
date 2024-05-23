@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          InsectSprays
 
@@ -46,7 +46,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(stats); require(graphics)
          boxplot(count ~ spray, data = InsectSprays,

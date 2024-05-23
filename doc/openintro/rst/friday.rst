@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          friday
 
@@ -73,7 +73,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          library(dplyr)
          library(ggplot2)

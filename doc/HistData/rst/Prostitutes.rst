@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Prostitutes)
 
@@ -61,7 +61,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Prostitutes)
          ## maybe str(Prostitutes) ; plot(Prostitutes) ...

@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(P.promelas)
 
@@ -53,7 +53,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Model with ED50 on log scale as parameter
          p.prom.m1<-drm(dryweight~conc, data=P.promelas, fct=LN.3())

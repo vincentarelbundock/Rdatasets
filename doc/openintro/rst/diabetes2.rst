@@ -23,7 +23,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          diabetes2
 
@@ -57,7 +57,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          lapply(diabetes2, table)
          (cont.table <- table(diabetes2))

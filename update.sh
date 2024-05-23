@@ -4,7 +4,7 @@ cd doc
 cd ..
 Rscript -e "rmarkdown::render('README.Rmd')"
 git add .
-git commit -m "heplots update"
+git commit -m "fpp3 update"
 git push
 git checkout gh-pages;
 git checkout master -- csv;

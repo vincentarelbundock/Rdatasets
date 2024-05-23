@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("PSID1976")
 
@@ -147,7 +147,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## data and transformations
          data("PSID1976")

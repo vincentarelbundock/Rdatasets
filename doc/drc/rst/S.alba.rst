@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(S.alba)
 
@@ -60,7 +60,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Fitting a log-logistic model with
          ##  common lower and upper limits

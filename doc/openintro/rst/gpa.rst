@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          gpa
 
@@ -46,6 +46,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          gpa

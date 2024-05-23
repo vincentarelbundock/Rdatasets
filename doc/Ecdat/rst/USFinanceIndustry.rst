@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(USFinanceIndustry)
 
@@ -72,8 +72,8 @@
 
       ``nipa6.16 <- readNIPA(demoCsv)``
       ``USFinanceIndustry <- as.data.frame(nipa6.16)``
-      ``names(USFinanceIndustry) <- c('year',      'CorporateProfitsAdj', 'Domestic', 'Financial',      'Nonfinancial', 'restOfWorld')``
-      ``USFinanceIndustry$FinanceProportion <-      with(USFinanceIndustry, Financial/Domestic)``
+      ``names(USFinanceIndustry) <- c('year', 'CorporateProfitsAdj', 'Domestic', 'Financial', 'Nonfinancial', 'restOfWorld')``
+      ``USFinanceIndustry$FinanceProportion <- with(USFinanceIndustry, Financial/Domestic)``
 
       .. rubric:: Source
          :name: source
@@ -97,7 +97,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(USFinanceIndustry)
          plot(FinanceProportion~year, USFinanceIndustry, type='b',

@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          wineind
 
@@ -35,6 +35,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          tsdisplay(wineind)

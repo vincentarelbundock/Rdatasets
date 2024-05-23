@@ -28,7 +28,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(incomeInequality)
 
@@ -132,7 +132,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ##
          ## Rato of IRS to census estimates for the 95th percentile

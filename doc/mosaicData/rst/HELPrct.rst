@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(HELPrct)
 
@@ -185,6 +185,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(HELPrct)

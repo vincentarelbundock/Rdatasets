@@ -36,7 +36,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Macdonell)
          data(MacdonellDF)
@@ -107,7 +107,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Macdonell)
 

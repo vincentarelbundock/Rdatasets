@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          acs12
 
@@ -74,7 +74,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          library(dplyr)
          library(ggplot2)

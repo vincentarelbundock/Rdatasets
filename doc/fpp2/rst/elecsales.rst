@@ -29,6 +29,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          autoplot(elecsales)

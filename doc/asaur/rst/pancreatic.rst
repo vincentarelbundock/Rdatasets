@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("pancreatic")
 
@@ -59,6 +59,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(pancreatic)

@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("CPSSW9204")
          data("CPSSW9298")
@@ -129,7 +129,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("CPSSW3")
          with(CPSSW3, interaction.plot(year, gender, earnings))

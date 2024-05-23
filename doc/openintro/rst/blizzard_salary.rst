@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          blizzard_salary
 
@@ -62,7 +62,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          library(ggplot2)
          library(dplyr)

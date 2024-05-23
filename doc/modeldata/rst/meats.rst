@@ -50,7 +50,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(meats)
          str(meats)

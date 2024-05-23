@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          co2
 
@@ -46,7 +46,7 @@
 
       Note that the data are subject to revision (based on recalibration
       of standard gases) by the Scripps institute, and hence may not
-      agree exactly with the data provided by R.
+      agree exactly with the data provided by **R**.
 
       .. rubric:: References
          :name: references
@@ -57,7 +57,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(graphics)
          plot(co2, ylab = expression("Atmospheric concentration of CO"[2]),

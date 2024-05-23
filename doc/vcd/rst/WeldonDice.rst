@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("WeldonDice")
 
@@ -56,7 +56,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("WeldonDice")
          gf <- goodfit(WeldonDice, type = "binomial")

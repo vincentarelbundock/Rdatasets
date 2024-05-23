@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(bankingCrises)
 
@@ -82,7 +82,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(bankingCrises)
          numberOfCrises <- rowSums(bankingCrises[-1], na.rm=TRUE)

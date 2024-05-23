@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><title>R: Call volume for a large North American commercial bank</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bank_calls</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Call volume for a large North American commercial bank</h2>
+
+<h3>Description</h3>
+
+<p>Five-minute call volume handled on weekdays between 7:00am and 9:05pm, beginning 3 March and 24 October 2003 (164 days).
+</p>
+
+
+<h3>Format</h3>
+
+<p>Time series of class 'tsibble' at 5 minute intervals.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Jonathan Weinberg
+</p>
+
+
+<h3>References</h3>
+
+<p>Weinberg, Brown &amp; Stroud (2007) &quot;Bayesian forecasting of an inhomogeneous Poisson process with applications to call center data&quot; <em>Journal of the American Statistical Associiation</em>, 102:480, 1185-1198.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+bank_calls
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

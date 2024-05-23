@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(vinclozolin)
 
@@ -59,7 +59,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
 
          vinclozolin.m1 <- drm(effect~conc, exper, data=vinclozolin, fct = LL.3())

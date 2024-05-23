@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          solar
 
@@ -58,7 +58,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          solar.is <- subset(solar, location == "Inner_Sunset")
          solar.ha <- subset(solar, location == "Haight_Ashbury")

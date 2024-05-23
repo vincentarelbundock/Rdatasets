@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          children_gender_stereo
 
@@ -108,7 +108,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          # This data set is a little funny to work with.
          # If wanting to review the data for a study, we

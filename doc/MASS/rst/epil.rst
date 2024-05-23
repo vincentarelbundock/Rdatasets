@@ -22,7 +22,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          epil
 
@@ -74,7 +74,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## IGNORE_RDIFF_BEGIN
          summary(glm(y ~ lbase*trt + lage + V4, family = poisson,

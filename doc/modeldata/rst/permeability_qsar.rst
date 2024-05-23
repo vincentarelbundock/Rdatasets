@@ -74,7 +74,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(permeability_qsar)
          str(permeability_qsar)

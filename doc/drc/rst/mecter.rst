@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(mecter)
 
@@ -62,7 +62,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Fitting the model with freely varying ED50 values
          mecter.free <- drm(rgr ~ dose, pct, data = mecter, 

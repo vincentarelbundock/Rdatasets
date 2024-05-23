@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          res_demo_2
 
@@ -38,6 +38,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          res_demo_2

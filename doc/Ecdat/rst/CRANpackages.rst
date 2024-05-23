@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(CRANpackages)
 
@@ -92,7 +92,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          plot(Packages~Date, CRANpackages, log='y')
          # almost exponential growth

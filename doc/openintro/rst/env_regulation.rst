@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          env_regulation
 
@@ -56,6 +56,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          table(env_regulation)

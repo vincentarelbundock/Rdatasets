@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          cement
 
@@ -55,6 +55,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          lm(y ~ x1 + x2 + x3 + x4, cement)

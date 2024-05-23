@@ -119,7 +119,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          library(car)
          data(NeuroCog)

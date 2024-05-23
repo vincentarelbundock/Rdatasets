@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("CYGOB1")
 
@@ -55,7 +55,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
            data("CYGOB1", package = "HSAUR")
            plot(logst ~ logli, data = CYGOB1)

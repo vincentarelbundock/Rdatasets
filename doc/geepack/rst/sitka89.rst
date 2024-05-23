@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          sitka89
 
@@ -41,6 +41,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(sitka89)

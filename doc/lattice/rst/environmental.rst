@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          environmental
 
@@ -64,7 +64,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          # Scatter plot matrix with loess lines
          splom(~environmental,

@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          UKgas
 
@@ -36,6 +36,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## maybe str(UKgas) ; plot(UKgas) ...

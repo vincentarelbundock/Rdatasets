@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          primates
 
@@ -44,7 +44,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          attach(primates)
          plot(x=Bodywt, y=Brainwt, pch=16,

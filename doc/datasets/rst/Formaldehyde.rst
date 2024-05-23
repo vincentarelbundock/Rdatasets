@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          Formaldehyde
 
@@ -48,7 +48,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(stats); require(graphics)
          plot(optden ~ carb, data = Formaldehyde,

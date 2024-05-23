@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          historic_co2
 
@@ -51,6 +51,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          head(historic_co2)

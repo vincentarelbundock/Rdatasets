@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("rearrests")
 
@@ -49,7 +49,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
            data("rearrests", package = "HSAUR")
            rearrests

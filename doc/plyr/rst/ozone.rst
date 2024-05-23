@@ -23,7 +23,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          ozone
 
@@ -40,7 +40,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          value <- ozone[1, 1, ]
          time <- 1:72

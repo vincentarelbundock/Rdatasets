@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          fcid
 
@@ -36,6 +36,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          fcid

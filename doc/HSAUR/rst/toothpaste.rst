@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("toothpaste")
 
@@ -68,7 +68,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
            data("toothpaste", package = "HSAUR")
            toothpaste

@@ -76,7 +76,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          str(Rohwer)
 

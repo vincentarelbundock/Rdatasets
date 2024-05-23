@@ -23,7 +23,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data('mathpnl')
 
@@ -86,9 +86,9 @@
 
       -  **lfound:** log(found)
 
-      -  **lexpp_1:** lexpp[_n-1]
+      -  **lexpp_1:** lexpp[\_n-1]
 
-      -  **lfnd_1:** lfnd[_n-1]
+      -  **lfnd_1:** lfnd[\_n-1]
 
       -  **lenrol:** log(enrol)
 
@@ -98,23 +98,23 @@
 
       -  **lfndsq:** lfnd^2
 
-      -  **math4_1:** math4[_n-1]
+      -  **math4_1:** math4[\_n-1]
 
       -  **cmath4:** math4 - math4_1
 
       -  **gexpp:** lexpp - lexpp_1
 
-      -  **gexpp_1:** gexpp[_n-1
+      -  **gexpp_1:** gexpp[\_n-1
 
       -  **gfound:** lfound - lfnd_1
 
-      -  **gfnd_1:** gfound[_n-1]
+      -  **gfnd_1:** gfound[\_n-1]
 
-      -  **clunch:** lunch - lunch[_n-1]
+      -  **clunch:** lunch - lunch[\_n-1]
 
-      -  **clnchsq:** lunchsq - lunchsq[_n-1]
+      -  **clnchsq:** lunchsq - lunchsq[\_n-1]
 
-      -  **genrol:** lenrol - lenrol[_n-1]
+      -  **genrol:** lenrol - lenrol[\_n-1]
 
       -  **genrolsq:** genrol^2
 
@@ -130,11 +130,11 @@
 
       -  **lrexpp:** log(rexpp)
 
-      -  **lrexpp_1:** lrexpp[_n-1]
+      -  **lrexpp_1:** lrexpp[\_n-1]
 
       -  **grexpp:** lrexpp - lrexpp_1
 
-      -  **grexpp_1:** grexpp[_n-1]
+      -  **grexpp_1:** grexpp[\_n-1]
 
       .. rubric:: Used in Text
          :name: used-in-text
@@ -149,6 +149,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
           str(mathpnl)

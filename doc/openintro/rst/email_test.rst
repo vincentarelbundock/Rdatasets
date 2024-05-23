@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          email
 
@@ -114,7 +114,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          e <- email
 

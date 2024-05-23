@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          Auto
 
@@ -73,7 +73,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          pairs(Auto)
          attach(Auto)

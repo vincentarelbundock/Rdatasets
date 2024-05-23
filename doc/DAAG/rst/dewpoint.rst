@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          dewpoint
 
@@ -47,7 +47,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          print("Additive Model - Example 7.5")
          require(splines)

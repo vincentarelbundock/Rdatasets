@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("StressAnxiety")
 
@@ -63,7 +63,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("StressAnxiety", package = "betareg")
          StressAnxiety <- StressAnxiety[order(StressAnxiety$stress),]

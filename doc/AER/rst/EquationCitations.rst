@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("EquationCitations")
 
@@ -104,7 +104,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## load data and MASS package
          data("EquationCitations", package = "AER")

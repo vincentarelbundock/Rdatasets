@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          heights
 
@@ -42,6 +42,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          head(heights)

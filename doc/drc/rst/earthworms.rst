@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(earthworms)
 
@@ -60,7 +60,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Fitting a logistic regression model
          earthworms.m1 <- drm(number/total~dose, weights = total, data = earthworms,

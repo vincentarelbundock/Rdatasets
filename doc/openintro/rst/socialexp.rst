@@ -24,7 +24,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          socialexp
 
@@ -42,6 +42,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          table(socialexp)

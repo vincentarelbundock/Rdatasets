@@ -44,4 +44,4 @@
       .. rubric:: Source
          :name: source
 
-      http://www.espn.com/nfl/player/gamelog/_/id/2580/year/2016
+      http://www.espn.com/nfl/player/gamelog/\_/id/2580/year/2016

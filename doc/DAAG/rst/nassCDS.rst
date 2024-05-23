@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          nassCDS
 
@@ -141,7 +141,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(nassCDS)
          xtabs(weight ~ dead + airbag, data=nassCDS)

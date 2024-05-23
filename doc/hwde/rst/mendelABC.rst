@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(mendelABC)
 
@@ -74,7 +74,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Lay table out as a 3D array, as in Fisher (1936)
          abc <- aperm(array(mendelABC[,4], dim=c(3,3,3)), c(1,3,2))

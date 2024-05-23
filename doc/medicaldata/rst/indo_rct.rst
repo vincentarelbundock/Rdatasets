@@ -22,7 +22,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          indo_rct
 

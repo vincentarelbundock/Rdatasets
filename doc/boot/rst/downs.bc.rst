@@ -31,7 +31,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          downs.bc
 

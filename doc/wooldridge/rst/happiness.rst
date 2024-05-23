@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data('happiness')
 
@@ -105,6 +105,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
           str(happiness)

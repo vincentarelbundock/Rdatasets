@@ -28,7 +28,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(ausbeer)
          ggseasonplot(ausbeer)

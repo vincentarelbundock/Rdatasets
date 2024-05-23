@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("USConsump1993")
 
@@ -51,7 +51,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## data from Baltagi (2002)
          data("USConsump1993", package = "AER")

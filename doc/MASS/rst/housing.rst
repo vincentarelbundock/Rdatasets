@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          housing
 
@@ -62,7 +62,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          options(contrasts = c("contr.treatment", "contr.poly"))
 

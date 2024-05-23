@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          udca
          udca2
@@ -98,7 +98,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          # values found in table 8.3 of the book
          fit1 <- coxph(Surv(futime, status) ~ trt + log(bili) + stage,

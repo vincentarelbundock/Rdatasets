@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("mastectomy")
 
@@ -48,7 +48,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
            data("mastectomy", package = "HSAUR")
            table(mastectomy$metastized)

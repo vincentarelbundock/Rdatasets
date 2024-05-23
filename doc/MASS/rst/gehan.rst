@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          gehan
 
@@ -59,7 +59,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          library(survival)
          gehan.surv <- survfit(Surv(time, cens) ~ treat, data = gehan,

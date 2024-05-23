@@ -23,7 +23,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Donner)
 
@@ -91,7 +91,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          # conditional density plots
          op <- par(mfrow=c(1,2), cex.lab=1.5)

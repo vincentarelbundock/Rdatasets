@@ -81,7 +81,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Iwasaki_Big_Five)
          # use Helmert contrasts for groups

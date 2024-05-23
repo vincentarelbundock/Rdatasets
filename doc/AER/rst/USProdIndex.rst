@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("USProdIndex")
 
@@ -52,7 +52,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("USProdIndex")
          plot(USProdIndex, plot.type = "single", col = 1:2)

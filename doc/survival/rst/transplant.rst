@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          transplant
          data(transplant, package="survival")
@@ -89,7 +89,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          #since event is a factor, survfit creates competing risk curves
          pfit <- survfit(Surv(futime, event) ~ abo, transplant)

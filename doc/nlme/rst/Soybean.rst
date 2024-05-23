@@ -56,6 +56,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          summary(fm1 <- nlsList(SSlogis, data = Soybean))

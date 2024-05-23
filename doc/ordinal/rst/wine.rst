@@ -23,7 +23,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          wine
 
@@ -67,7 +67,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          head(wine)
          str(wine)

@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("gardenflowers")
 
@@ -41,7 +41,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
            data("gardenflowers", package = "HSAUR")
            gardenflowers

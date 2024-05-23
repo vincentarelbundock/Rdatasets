@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("SpaceShuttle")
 
@@ -68,7 +68,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("SpaceShuttle")
          plot(nFailures/6 ~ Temperature, data = SpaceShuttle,

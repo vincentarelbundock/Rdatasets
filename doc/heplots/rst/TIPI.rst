@@ -58,7 +58,7 @@
 
       ``religion``
          a factor with levels ``Agnostic`` ``Atheist`` ``Buddhist``
-         ``Christian       (Catholic)`` ``Christian (Mormon)``
+         ``Christian (Catholic)`` ``Christian (Mormon)``
          ``Christian (Protestant)`` ``Christian (Other)`` ``Hindu``
          ``Jewish`` ``Muslim`` ``Sikh`` ``Other``
 
@@ -118,7 +118,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(TIPI)
          # fit an mlm

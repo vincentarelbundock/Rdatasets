@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data('consump')
 
@@ -54,27 +54,27 @@
 
       -  **ly:** log(y)
 
-      -  **gc:** lc - lc[_n-1]
+      -  **gc:** lc - lc[\_n-1]
 
-      -  **gy:** ly - ly[_n-1]
+      -  **gy:** ly - ly[\_n-1]
 
-      -  **gc_1:** gc[_n-1]
+      -  **gc_1:** gc[\_n-1]
 
-      -  **gy_1:** gy[_n-1]
+      -  **gy_1:** gy[\_n-1]
 
-      -  **r3_1:** r3[_n-1]
+      -  **r3_1:** r3[\_n-1]
 
       -  **lc_ly:** lc - ly
 
-      -  **lc_ly_1:** lc_ly[_n-1]
+      -  **lc_ly_1:** lc_ly[\_n-1]
 
-      -  **gc_2:** gc[_n-2]
+      -  **gc_2:** gc[\_n-2]
 
-      -  **gy_2:** gy[_n-2]
+      -  **gy_2:** gy[\_n-2]
 
-      -  **r3_2:** r3[_n-2]
+      -  **r3_2:** r3[\_n-2]
 
-      -  **lc_ly_2:** lc_ly[_n-2]
+      -  **lc_ly_2:** lc_ly[\_n-2]
 
       .. rubric:: Notes
          :name: notes
@@ -93,6 +93,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
           str(consump)

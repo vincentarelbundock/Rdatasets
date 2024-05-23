@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          ChickWeight
 
@@ -78,7 +78,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(graphics)
          coplot(weight ~ Time | Chick, data = ChickWeight,

@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(methionine)
 
@@ -54,7 +54,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Fitting model with constraint on one parameter 
          met.ar.m1 <- drm(gain~dose, product, data = methionine, 

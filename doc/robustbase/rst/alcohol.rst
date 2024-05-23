@@ -22,7 +22,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(alcohol, package="robustbase")
 
@@ -68,7 +68,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(alcohol)
          ## version of data set with trivial names, as

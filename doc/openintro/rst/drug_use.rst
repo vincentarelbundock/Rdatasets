@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          drug_use
 
@@ -42,6 +42,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          table(drug_use)

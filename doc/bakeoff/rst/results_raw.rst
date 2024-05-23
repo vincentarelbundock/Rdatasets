@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          results_raw
 
@@ -54,7 +54,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          if (require('tibble')) {
            results_raw

@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          moths
 
@@ -51,7 +51,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          print("Quasi Poisson Regression - Example 8.3")
          rbind(table(moths[,4]), sapply(split(moths[,-4], moths$habitat), apply,2,

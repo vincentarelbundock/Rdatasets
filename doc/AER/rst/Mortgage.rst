@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("Mortgage")
 
@@ -98,7 +98,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("Mortgage")
          plot(rate ~ interest, data = Mortgage, breaks = fivenum(Mortgage$interest))

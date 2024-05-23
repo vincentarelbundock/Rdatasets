@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Dwyer)
 
@@ -27,7 +27,7 @@
          :name: format
 
       The format is: num [1:8, 1:8] 1 0.58 -0.28 0.01 0.36 0.38 0.61
-      0.15 0.58 1 ... - attr(*, "dimnames")=List of 2 ..$ : chr [1:8]
+      0.15 0.58 1 ... - attr(\*, "dimnames")=List of 2 ..$ : chr [1:8]
       "V1" "V2" "V3" "V4" ... ..$ : chr [1:8] "V1" "V2" "V3" "V4" ...
 
       .. rubric:: Source
@@ -45,7 +45,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Dwyer)
          Ro <- Dwyer[1:7,1:7]

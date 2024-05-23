@@ -22,7 +22,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(auxins)
 
@@ -84,7 +84,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          ## Fitting model with varying lower limits
          auxins.m1 <- boxcox(drm(y ~ dose, h, 

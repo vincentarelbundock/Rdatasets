@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(condroz, package="robustbase")
 
@@ -64,6 +64,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
            adjbox(condroz$Ca)

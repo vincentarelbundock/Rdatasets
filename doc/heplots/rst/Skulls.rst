@@ -80,7 +80,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Skulls)
          library(car)    # for Anova

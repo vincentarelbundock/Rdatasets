@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          carprice
 
@@ -71,7 +71,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
           
          print("Multicollinearity - Example 6.8")

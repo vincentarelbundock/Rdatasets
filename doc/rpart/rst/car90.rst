@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(car90)
 
@@ -115,13 +115,13 @@
          factor giving tire size
 
       Trans1
-         manual transmission, a factor with levels ‘⁠⁠’, ‘⁠man.4⁠’,
-         ‘⁠man.5⁠’ and ‘⁠man.6⁠’
+         manual transmission, a factor with levels ‘⁠⁠’, ‘⁠man.4⁠’, ‘⁠man.5⁠’
+         and ‘⁠man.6⁠’
 
       Trans2
          automatic transmission, a factor with levels ‘⁠⁠’, ‘⁠auto.3⁠’,
-         ‘⁠auto.4⁠’, and ‘⁠auto.CVT⁠’. No car is missing both the manual
-         and automatic transmission variables, but several had both as
+         ‘⁠auto.4⁠’, and ‘⁠auto.CVT⁠’. No car is missing both the manual and
+         automatic transmission variables, but several had both as
          options
 
       Turning
@@ -129,8 +129,7 @@
 
       Type
          a factor giving the general type of car. The levels are:
-         ‘⁠Small⁠’, ‘⁠Sporty⁠’, ‘⁠Compact⁠’, ‘⁠Medium⁠’, ‘⁠Large⁠’,
-         ‘⁠Van⁠’
+         ‘⁠Small⁠’, ‘⁠Sporty⁠’, ‘⁠Compact⁠’, ‘⁠Medium⁠’, ‘⁠Large⁠’, ‘⁠Van⁠’
 
       Weight
          an order statistic giving the relative weights of the cars; 1
@@ -158,7 +157,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(car90)
          plot(car90$Price/1000, car90$Weight,

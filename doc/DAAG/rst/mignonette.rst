@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          mignonette
 
@@ -45,7 +45,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          print("Is Pairing Helpful? - Example 4.3.1")
 

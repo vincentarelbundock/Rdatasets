@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          playing_cards
 
@@ -44,7 +44,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          playing_cards <- data.frame(
            number = rep(c(2:10, "J", "Q", "K", "A"), 4),

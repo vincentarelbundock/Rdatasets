@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          farms
 
@@ -64,7 +64,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          farms.mca <- mca(farms, abbrev = TRUE)  # Use levels as names
          eqscplot(farms.mca$cs, type = "n")

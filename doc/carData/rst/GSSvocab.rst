@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("GSSvocab")
 
@@ -83,6 +83,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(GSSvocab)

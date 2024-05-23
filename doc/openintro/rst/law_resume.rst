@@ -25,7 +25,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          law_resume
 
@@ -63,7 +63,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
 
          tapply(law_resume$outcome == "interview", law_resume[, c("class", "gender")], mean)

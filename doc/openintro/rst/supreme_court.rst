@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          supreme_court
 
@@ -37,6 +37,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          supreme_court

@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("weightgain")
 
@@ -55,7 +55,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
            data("weightgain", package = "HSAUR")
            interaction.plot(weightgain$type, weightgain$source, 

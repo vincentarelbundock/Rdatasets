@@ -54,7 +54,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          str(sleepstudy)
          require(lattice)

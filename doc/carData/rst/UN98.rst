@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("UN98")
 
@@ -86,6 +86,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          summary(UN98)

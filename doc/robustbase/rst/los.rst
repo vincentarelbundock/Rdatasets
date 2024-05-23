@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(los, package="robustbase")
 
@@ -56,7 +56,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
           summary(los) # quite skewed, with median(.) = 8
           plot(table(los))

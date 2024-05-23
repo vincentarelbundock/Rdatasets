@@ -38,7 +38,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(pathology)
          str(pathology)

@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          ability.cov
 
@@ -69,7 +69,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(stats)
          (ability.FA <- factanal(factors = 1, covmat = ability.cov))

@@ -119,7 +119,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(ischemic_stroke)
          str(ischemic_stroke)

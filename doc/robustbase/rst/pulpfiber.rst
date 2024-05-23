@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(pulpfiber, package="robustbase")
 
@@ -70,7 +70,7 @@
       .. rubric:: Author(s)
          :name: authors
 
-      port to R and this help page: Martin Maechler
+      port to **R** and this help page: Martin Maechler
 
       .. rubric:: Source
          :name: source
@@ -92,7 +92,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(pulpfiber)
          str(pulpfiber)

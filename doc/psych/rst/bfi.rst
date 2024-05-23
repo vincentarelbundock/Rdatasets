@@ -25,7 +25,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(bfi)
 
@@ -202,7 +202,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(bfi)
          psych::describe(bfi)

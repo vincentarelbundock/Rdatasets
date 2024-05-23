@@ -36,7 +36,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          who
 

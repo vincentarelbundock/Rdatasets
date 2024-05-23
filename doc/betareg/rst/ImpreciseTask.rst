@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(ImpreciseTask)
 
@@ -77,7 +77,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("ImpreciseTask", package = "betareg")
          library("flexmix")

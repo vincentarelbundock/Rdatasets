@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("roomwidth")
 
@@ -54,7 +54,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
            data("roomwidth", package = "HSAUR")
            convert <- ifelse(roomwidth$unit == "feet", 1, 3.28)

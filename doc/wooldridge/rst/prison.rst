@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data('prison')
 
@@ -114,7 +114,7 @@
 
       -  **lpris:** log(pris)
 
-      -  **gpris:** lpris - lpris[_n-1]
+      -  **gpris:** lpris - lpris[\_n-1]
 
       -  **final1:** =1 if fnl dec on litig, curr yr
 
@@ -133,6 +133,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
           str(prison)

@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("ArgentinaCPI")
 
@@ -49,7 +49,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data("ArgentinaCPI")
          plot(ArgentinaCPI)

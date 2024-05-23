@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          housing
 
@@ -32,7 +32,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
 
          housing

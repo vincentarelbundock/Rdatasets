@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          tobin
          data(tobin, package="survival")
@@ -46,7 +46,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          tfit <- survreg(Surv(durable, durable>0, type='left') ~age + quant,
                          data=tobin, dist='gaussian')

@@ -27,7 +27,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          heart_transplant
 
@@ -79,7 +79,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          library(ggplot2)
 

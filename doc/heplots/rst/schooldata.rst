@@ -71,7 +71,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(schooldata)
          # initial screening

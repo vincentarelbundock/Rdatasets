@@ -41,6 +41,7 @@ Imports:
     evir,
     forecast,
     fpp2,
+    fpp3,
     gap,
     gapminder,
     geepack,

@@ -19,7 +19,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(leafshape)
          data(leafshape17)
@@ -67,7 +67,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          library(MASS)
          leaf17.lda <- lda(arch ~ logwid+loglen, data=leafshape17)

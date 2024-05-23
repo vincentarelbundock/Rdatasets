@@ -21,7 +21,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("Remifentanil", package = "nlme")
 
@@ -67,11 +67,11 @@
 
       ``BSA``:
          body surface area (DuBois and DuBois 1916):
-         ``%     BSA := Wt^{0.425} \cdot Ht^{0.725} \cdot 0.007184``.
+         ``% BSA := Wt^{0.425} \cdot Ht^{0.725} \cdot 0.007184``.
 
       ``LBM``:
          lean body mass (James 1976), with slightly different formula
-         for men ``LBM_m := 1.1  Wt - 128 (Wt/Ht)^2``, and women
+         for men ``LBM_m := 1.1 Wt - 128 (Wt/Ht)^2``, and women
          ``LBM_f := 1.07 Wt - 148 (Wt/Ht)^2``.
 
       .. rubric:: Author(s)
@@ -104,7 +104,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          plot(Remifentanil, type = "l", lwd = 2) # shows the 65 patients' remi profiles
 

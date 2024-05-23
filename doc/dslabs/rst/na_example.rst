@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          na_example
 
@@ -29,6 +29,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          print(sum(is.na(na_example)))

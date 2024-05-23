@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          rhDNase
          data(rhDNase, package="survival")
@@ -108,7 +108,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          # Build the start-stop data set for analysis, and
          #  replicate line 2 of table 8.13 in the book

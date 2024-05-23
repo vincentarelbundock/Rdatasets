@@ -30,7 +30,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("Armada")
 
@@ -97,7 +97,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Armada)
          # delete character and redundant variable

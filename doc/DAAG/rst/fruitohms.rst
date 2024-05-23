@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          fruitohms
 
@@ -42,7 +42,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          plot(ohms ~ juice, xlab="Apparent juice content (%)",ylab="Resistance (ohms)", data=fruitohms)
          lines(lowess(fruitohms$juice, fruitohms$ohms), lwd=2)

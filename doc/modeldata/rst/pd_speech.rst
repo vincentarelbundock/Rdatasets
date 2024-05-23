@@ -51,7 +51,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(pd_speech)
          str(pd_speech)

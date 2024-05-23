@@ -26,7 +26,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(fishing)
 
@@ -80,7 +80,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
 
          ## Not run: 

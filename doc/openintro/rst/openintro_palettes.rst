@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          openintro_palettes
 
@@ -30,7 +30,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          openintro_palettes
 

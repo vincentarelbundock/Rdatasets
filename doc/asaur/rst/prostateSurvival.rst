@@ -26,7 +26,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data("prostateSurvival")
 
@@ -66,6 +66,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(prostateSurvival)

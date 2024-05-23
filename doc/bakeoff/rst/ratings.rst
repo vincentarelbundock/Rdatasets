@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          ratings
 
@@ -80,7 +80,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          if (require('tibble')) {
            ratings

@@ -34,7 +34,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
            data(Yeast)
              data(YeastD.mat)
@@ -88,7 +88,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Yeast)
 

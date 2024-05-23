@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          spice_test_wide
 
@@ -42,7 +42,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          if (require('tibble')) {
            spice_test_wide

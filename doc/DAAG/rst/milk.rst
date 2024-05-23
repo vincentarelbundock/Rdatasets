@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          milk
 
@@ -43,7 +43,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          print("Rug Plot - Example 1.8.1")
          xyrange <- range(milk)

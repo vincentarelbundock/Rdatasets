@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          waders
 
@@ -115,6 +115,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          plot(corresp(waders, nf=2))

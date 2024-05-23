@@ -31,7 +31,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(two_class_example)
          str(two_class_example)

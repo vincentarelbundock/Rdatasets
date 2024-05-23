@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          KosteckiDillon
 
@@ -88,6 +88,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          summary(KosteckiDillon)

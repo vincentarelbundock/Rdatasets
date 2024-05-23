@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Countries)
 
@@ -51,7 +51,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Countries)
          subset(Countries, maps=="Yugoslavia")  # Where has Yugoslavia gone?

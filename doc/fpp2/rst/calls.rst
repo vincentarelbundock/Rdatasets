@@ -28,6 +28,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          autoplot(calls, xlab="Weeks")

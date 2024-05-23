@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          airlines
 
@@ -40,6 +40,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
            airlines

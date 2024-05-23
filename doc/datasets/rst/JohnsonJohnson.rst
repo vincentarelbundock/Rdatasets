@@ -17,7 +17,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          JohnsonJohnson
 
@@ -35,7 +35,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(stats); require(graphics)
          JJ <- log10(JohnsonJohnson)

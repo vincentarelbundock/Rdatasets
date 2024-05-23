@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          Wells
 
@@ -72,6 +72,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          summary(Wells)

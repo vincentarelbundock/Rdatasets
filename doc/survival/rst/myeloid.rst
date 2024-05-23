@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          myeloid
          data(cancer, package="survival")
@@ -82,7 +82,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          coxph(Surv(futime, death) ~ trt + flt3, data=myeloid)
          # See the mstate vignette for a more complete analysis

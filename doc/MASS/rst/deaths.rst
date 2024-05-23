@@ -18,7 +18,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          deaths
 
@@ -37,4 +37,4 @@
       .. rubric:: See Also
          :name: see-also
 
-      This the same as dataset ``ldeaths`` in R's datasets package.
+      This the same as dataset ``ldeaths`` in **R**'s datasets package.

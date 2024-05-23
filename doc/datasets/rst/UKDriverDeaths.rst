@@ -22,7 +22,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          UKDriverDeaths
          Seatbelts
@@ -77,7 +77,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          require(stats); require(graphics)
          ## work with pre-seatbelt period to identify a model, use logs

@@ -39,5 +39,5 @@
       .. rubric:: Source
          :name: source
 
-      http://www.espn.com/nba/player/splits/_/id/6442/kyrie-irving
-      http://www.espn.com/nba/player/splits/_/id/2754/type/total/channing-frye
+      http://www.espn.com/nba/player/splits/\_/id/6442/kyrie-irving
+      http://www.espn.com/nba/player/splits/\_/id/2754/type/total/channing-frye

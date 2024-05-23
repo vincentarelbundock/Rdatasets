@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(ships)
 
@@ -75,7 +75,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(ships)
          glmshp <- glm(accident ~ op + co.70.74 + co.75.79 + offset(log(service)),

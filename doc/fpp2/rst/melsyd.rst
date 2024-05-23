@@ -32,6 +32,6 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          autoplot(melsyd, facets=TRUE)

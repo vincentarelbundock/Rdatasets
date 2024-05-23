@@ -20,7 +20,7 @@
       .. rubric:: Usage
          :name: usage
 
-      ::
+      .. code:: R
 
          data(Bosco)
 
@@ -44,7 +44,7 @@
       .. rubric:: Examples
          :name: examples
 
-      ::
+      .. code:: R
 
          data(Bosco)
          plot(0:10/10,0:10*100,xlab="sin^2(latitude)",
