@@ -24,7 +24,11 @@ clean_data = function(dat) {
         idx <- sapply(out, function(x) class(x)[1]) != "list"
         out <- out[, idx, drop = FALSE]
     } else {
-        out = suppressWarnings(tryCatch(as.data.frame(dat), error = function(e) NULL))
+        if (inherits(dat, "try-error")) {
+            out = NULL
+        } else {
+            out = suppressWarnings(tryCatch(as.data.frame(dat), error = function(e) NULL))
+        }
     }
     if (isTRUE(nrow(out) == 0)) {
         out = NULL
