@@ -55,7 +55,7 @@
          I <https://databank.worldbank.org/source/world-development-indicators>`__
 
       -  `World Bank
-         II <https://www.worldbank.org/en/programs/business-enabling-environment>`__
+         II <https://www.worldbank.org/en/businessready?topic=trading-across-borders>`__
 
       -  `Carbon Dioxide Information Analysis Center, Environmental
          Sciences Division, Oak Ridge National
@@ -68,8 +68,10 @@
 
          library(ggplot2)
 
-         ggplot(sa_gdp_elec, aes(year, access_elec))+
-          geom_point(alpha = 0.3) +
-          labs( x= "Year",
-                y = "Percent of Population",
-                title = "Access to Electricity in South Africa 2003 - 2018")
+         ggplot(sa_gdp_elec, aes(year, access_elec)) +
+           geom_point(alpha = 0.3) +
+           labs(
+             x = "Year",
+             y = "Percent of Population",
+             title = "Access to Electricity in South Africa 2003 - 2018"
+           )

@@ -45,7 +45,7 @@
 
       `Younger Americans are better than older Americans at telling
       factual news statements from
-      opinions <https://www.pewresearch.org/fact-tank/2018/10/23/younger-americans-are-better-than-older-americans-at-telling-factual-news-statements-from-opinions/>`__,
+      opinions <https://www.pewresearch.org/short-reads/2018/10/23/younger-americans-are-better-than-older-americans-at-telling-factual-news-statements-from-opinions/>`__,
       Pew Research Center, October 23, 2018.
 
       .. rubric:: Examples
@@ -77,7 +77,7 @@
            )
 
          # Replicating the figure from Pew report (see source for link)
-         fact_opinion %>%
+         fact_opinion |>
            mutate(
              facts = case_when(
                fact_correct <= 2 ~ "Two or fewer",
@@ -91,9 +91,9 @@
                opinion_correct == 5 ~ "All five"
              ),
              opinions = fct_relevel(opinions, "Two or fewer", "Three or four", "All five")
-           ) %>%
-           select(-fact_correct, -opinion_correct) %>%
-           pivot_longer(cols = -age_group, names_to = "question_type", values_to = "n_correct") %>%
+           ) |>
+           select(-fact_correct, -opinion_correct) |>
+           pivot_longer(cols = -age_group, names_to = "question_type", values_to = "n_correct") |>
            ggplot(aes(y = fct_rev(age_group), fill = n_correct)) +
            geom_bar(position = "fill") +
            facet_wrap(~question_type, ncol = 1) +

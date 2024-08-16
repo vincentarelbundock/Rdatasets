@@ -85,20 +85,20 @@
 
          # The following tables roughly match results presented in Table 2 of the source article
          # The results are only off by rounding for some of the weeks
-         daycare_fines %>%
-           group_by(center, study_period_4) %>%
-           summarise(avg_late_pickups = mean(late_pickups), .groups = "drop") %>%
+         daycare_fines |>
+           group_by(center, study_period_4) |>
+           summarise(avg_late_pickups = mean(late_pickups), .groups = "drop") |>
            pivot_wider(names_from = study_period_4, values_from = avg_late_pickups)
 
-         daycare_fines %>%
-           group_by(center, study_period_3) %>%
-           summarise(avg_late_pickups = mean(late_pickups), .groups = "drop") %>%
+         daycare_fines |>
+           group_by(center, study_period_3) |>
+           summarise(avg_late_pickups = mean(late_pickups), .groups = "drop") |>
            pivot_wider(names_from = study_period_3, values_from = avg_late_pickups)
 
          # The following plot matches Figure 1 of the source article
-         daycare_fines %>%
-           group_by(week, group) %>%
-           summarise(avg_late_pickups = mean(late_pickups), .groups = "drop") %>%
+         daycare_fines |>
+           group_by(week, group) |>
+           summarise(avg_late_pickups = mean(late_pickups), .groups = "drop") |>
            ggplot(aes(x = week, y = avg_late_pickups, group = group, color = group)) +
            geom_point() +
            geom_line()

@@ -20,7 +20,7 @@
 
       .. code:: R
 
-         data("FoodExpenditure")
+         data("FoodExpenditure", package = "betareg")
 
       .. rubric:: Format
          :name: format
@@ -45,8 +45,8 @@
          :name: references
 
       Cribari-Neto, F., and Zeileis, A. (2010). Beta Regression in R.
-      *Journal of Statistical Software*, **34**\ (2), 1–24. doi:
-      `10.18637/jss.v034.i02 <https://doi.org/10.18637/jss.v034.i02>`__
+      *Journal of Statistical Software*, **34**\ (2), 1–24.
+      `doi:10.18637/jss.v034.i02 <https://doi.org/10.18637/jss.v034.i02>`__
 
       Ferrari, S.L.P., and Cribari-Neto, F. (2004). Beta Regression for
       Modeling Rates and Proportions. *Journal of Applied Statistics*,

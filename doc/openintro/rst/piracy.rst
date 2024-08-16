@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      This data set contains observations on all 100 US Senators and 434
+      This dataset contains observations on all 100 US Senators and 434
       of the 325 US Congressional Representatives related to their
       support of anti-piracy legislation that was introduced at the end
       of 2011.
@@ -68,9 +68,9 @@
       Representatives and the US Senate, respectively, to curtail
       copyright infringement. The bill was controversial because there
       were concerns the bill limited free speech rights. ProPublica, the
-      independent and non-profit news organization, compiled this data
-      set to compare the stance of legislators towards the bills with
-      the amount of campaign funds that they received from groups
+      independent and non-profit news organization, compiled this
+      dataset to compare the stance of legislators towards the bills
+      with the amount of campaign funds that they received from groups
       considered to be supportive of or in opposition to the
       legislation.
 
@@ -95,9 +95,9 @@
 
          pipa <- filter(piracy, chamber == "senate")
 
-         pipa %>%
-           group_by(stance) %>%
-           summarise(money_pro_mean = mean(money_pro, na.rm = TRUE)) %>%
+         pipa |>
+           group_by(stance) |>
+           summarise(money_pro_mean = mean(money_pro, na.rm = TRUE)) |>
            ggplot(aes(x = stance, y = money_pro_mean)) +
            geom_col() +
            labs(
@@ -122,12 +122,12 @@
              subtitle = "Computer and internet companies"
            )
 
-         pipa %>%
+         pipa |>
            filter(
              money_pro > 0,
              money_con > 0
-           ) %>%
-           mutate(for_pipa = ifelse(stance == "yes", "yes", "no")) %>%
+           ) |>
+           mutate(for_pipa = ifelse(stance == "yes", "yes", "no")) |>
            ggplot(aes(x = money_pro, y = money_con, color = for_pipa)) +
            geom_point() +
            scale_color_manual(values = c("gray", "red")) +

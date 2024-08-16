@@ -63,11 +63,11 @@
          library(ggplot2)
          library(dplyr)
 
-         ssd_speed %>%
+         ssd_speed |>
            count(form_factor)
 
-         ssd_speed %>%
-           filter(form_factor != "mSATA") %>%
+         ssd_speed |>
+           filter(form_factor != "mSATA") |>
            ggplot(aes(x = read, y = write, color = form_factor)) +
            geom_point() +
            labs(

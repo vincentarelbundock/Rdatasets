@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head><title>R: A table of personal information for people all over the world</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>peeps</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>A table of personal information for people all over the world</h2>
+
+<h3>Description</h3>
+
+<p>The <code>peeps</code> dataset contains records for one hundred people residing in ten
+different countries. Each person in the table has address information along
+with their email address and phone number. There are also personal
+characteristics like date of birth, height, and weight. This data has been
+synthesized, and so the names within the table have not been taken or based
+on individuals in real life. The street addresses were generated from actual
+street names within real geographic localities, however, the street numbers
+were assigned randomly from a constrained number set. While these records do
+not relate to real people, efforts were made to make the data as realistic as
+possible.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>peeps
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 100 rows and 14 variables:
+</p>
+
+<dl>
+<dt>name_given, name_family</dt><dd><p>The given and family name of individual.</p>
+</dd>
+<dt>address</dt><dd><p>The street address of the individual.</p>
+</dd>
+<dt>city</dt><dd><p>The name of the city or locality in which the individual
+resides.</p>
+</dd>
+<dt>state_prov</dt><dd><p>The state or province associated with the <code>city</code> and
+<code>address</code>. This is <code>NA</code> for individuals residing in countries where
+subdivision data is not needed for generating a valid mailing address.</p>
+</dd>
+<dt>postcode</dt><dd><p>The post code associated with the <code>city</code> and <code>address</code>.</p>
+</dd>
+<dt>country</dt><dd><p>The 3-letter ISO 3166-1 country code representative of the
+individual's country.</p>
+</dd>
+<dt>email_addr</dt><dd><p>The individual's email address.</p>
+</dd>
+<dt>phone_number, country_code</dt><dd><p>The individual's phone number and the
+country code associated with the phone number.</p>
+</dd>
+<dt>gender</dt><dd><p>The gender of the individual.</p>
+</dd>
+<dt>dob</dt><dd><p>The individual's date of birth (DOB) in the ISO 8601 form of
+<code>YYYY-MM-DD</code>.</p>
+</dd>
+<dt>height_cm, weight_kg</dt><dd><p>The height and weight of the individual in
+centimeters (cm) and kilograms (kg), respectively.</p>
+</dd>
+</dl>
+
+
+
+<h3>Dataset ID and Badge</h3>
+
+<p>DATA-8
+</p>
+
+<div style="text-align:center;"><img src="https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_peeps.png" alt="This image of that of a dataset badge." style="width:50%;padding-bottom:20px;"></div>
+
+
+
+<h3>Dataset Introduced</h3>
+
+<p><code>v0.11.0</code>
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other datasets: 
+<code>constants</code>,
+<code>countrypops</code>,
+<code>exibble</code>,
+<code>films</code>,
+<code>gibraltar</code>,
+<code>gtcars</code>,
+<code>illness</code>,
+<code>metro</code>,
+<code>nuclides</code>,
+<code>photolysis</code>,
+<code>pizzaplace</code>,
+<code>reactions</code>,
+<code>rx_addv</code>,
+<code>rx_adsl</code>,
+<code>sp500</code>,
+<code>sza</code>,
+<code>towny</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

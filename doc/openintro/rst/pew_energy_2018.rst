@@ -36,8 +36,8 @@
       .. rubric:: Details
          :name: details
 
-      We did not have access to individual responses in original data
-      set, so we took the published percentages and backed out the
+      We did not have access to individual responses in original
+      dataset, so we took the published percentages and backed out the
       breakdown
 
       .. rubric:: Source

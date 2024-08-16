@@ -81,7 +81,7 @@ library(ggplot2)
 library(broom)
 
 # employed only
-acs12_emp &lt;- acs12 %&gt;%
+acs12_emp &lt;- acs12 |&gt;
   filter(
     age &gt;= 30, age &lt;= 60,
     employment == "employed",
@@ -93,7 +93,7 @@ ggplot(acs12_emp, mapping = aes(x = age, y = income)) +
   geom_point() +
   geom_smooth(method = "lm")
 
-lm(income ~ age, data = acs12_emp) %&gt;%
+lm(income ~ age, data = acs12_emp) |&gt;
   tidy()
 
 # log-transormed model
@@ -101,7 +101,7 @@ ggplot(acs12_emp, mapping = aes(x = age, y = log(income))) +
   geom_point() +
   geom_smooth(method = "lm")
 
-lm(log(income) ~ age, data = acs12_emp) %&gt;%
+lm(log(income) ~ age, data = acs12_emp) |&gt;
   tidy()
 </code></pre>
 

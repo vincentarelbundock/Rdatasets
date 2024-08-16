@@ -77,13 +77,13 @@ NYC in 2013. R package version 0.1.
 library(dplyr)
 
 # Longest departure delays
-nycflights %&gt;%
-  select(flight, origin, dest, dep_delay, arr_delay) %&gt;%
+nycflights |&gt;
+  select(flight, origin, dest, dep_delay, arr_delay) |&gt;
   arrange(desc(dep_delay))
 
 # Longest arrival delays
-nycflights %&gt;%
-  select(flight, origin, dest, dep_delay, arr_delay) %&gt;%
+nycflights |&gt;
+  select(flight, origin, dest, dep_delay, arr_delay) |&gt;
   arrange(desc(arr_delay))
 </code></pre>
 

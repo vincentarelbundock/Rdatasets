@@ -71,21 +71,21 @@ GDP growth (annual %), GDP per capita (in current US$)</p>
 # don't use scientific notation
 options(scipen = 999)
 # List the top 10 countries by GDP (There is a row for World)
-gdp_countries %&gt;% 
-  filter(description == 'GDP') %&gt;%
-  mutate(year2020 = format(year_2020,big.mark=",")) %&gt;%
-  select(country,year2020) %&gt;%  
-  arrange(desc(year2020)) %&gt;% 
+gdp_countries |&gt;
+  filter(description == "GDP") |&gt;
+  mutate(year2020 = format(year_2020, big.mark = ",")) |&gt;
+  select(country, year2020) |&gt;
+  arrange(desc(year2020)) |&gt;
   top_n(n = 11)
 
 # List the 10 countries with the biggest GDP per capita change from 1960 to 2020
-gdp_countries %&gt;% 
-  filter(description == 'GDP per capita') %&gt;%
-  mutate(change = format(round(year_2020-year_1960,0),big.mark=",")) %&gt;%
-  select(country,change,year_1960,year_2020) %&gt;%  
-  na.omit() %&gt;%
-  arrange(desc(change)) %&gt;% 
-  top_n(n = 10)  
+gdp_countries |&gt;
+  filter(description == "GDP per capita") |&gt;
+  mutate(change = format(round(year_2020 - year_1960, 0), big.mark = ",")) |&gt;
+  select(country, change, year_1960, year_2020) |&gt;
+  na.omit() |&gt;
+  arrange(desc(change)) |&gt;
+  top_n(n = 10)
 
 </code></pre>
 

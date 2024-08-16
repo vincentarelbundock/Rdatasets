@@ -13,7 +13,7 @@
          :name: description
 
       Marathon times of runners in the Men and Women divisions of the
-      New York City Marathon, 1970 - 2020.
+      New York City Marathon, 1970 - 2023.
 
       .. rubric:: Usage
          :name: usage
@@ -25,7 +25,7 @@
       .. rubric:: Format
          :name: format
 
-      A data frame with 102 observations on the following 7 variables.
+      A data frame with 108 observations on the following 7 variables.
 
       year
          Year of marathom.
@@ -53,7 +53,7 @@
 
       Wikipedia, `List of winners of the New York City
       Marathon <https://en.wikipedia.org/wiki/List_of_winners_of_the_New_York_City_Marathon>`__.
-      Retrieved 28 April, 2021.
+      Retrieved 6 November, 2023.
 
       .. rubric:: Examples
          :name: examples

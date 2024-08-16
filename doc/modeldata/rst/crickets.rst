@@ -15,9 +15,9 @@
       These data are from from McDonald (2009), by way of Mangiafico
       (2015), on the relationship between the ambient temperature and
       the rate of cricket chirps per minute. Data were collected for two
-      species: *O. exclamationis* and *O. niveus*. The data are
-      contained in a data frame called ``crickets`` with a total of 31
-      data points.
+      species of the genus *Oecanthus*: *O. exclamationis* and *O.
+      niveus*. The data are contained in a data frame called
+      ``crickets`` with a total of 31 data points.
 
       .. rubric:: Value
          :name: value

@@ -1,0 +1,138 @@
+<!DOCTYPE html><html><head><title>R: Data on photolysis rates for gas-phase organic compounds</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>photolysis</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Data on photolysis rates for gas-phase organic compounds</h2>
+
+<h3>Description</h3>
+
+<p>The <code>photolysis</code> dataset contains numerical values for describing the
+photolytic degradation pathways of 25 compounds of relevance in atmospheric
+chemistry. Many volatile organic compounds (VOCs) are emitted in substantial
+quantities from both biogenic and anthropogenic sources, and they can have a
+major influence on the chemistry of the lower atmosphere. A portion of these
+can be transformed into other VOCs via the energy provided from light.
+</p>
+<p>In order to realistically predict the composition of the atmosphere and how
+it evolves over time, we need accurate estimates of photolysis rates. The
+data provided here in <code>photolysis</code> allows for computations of photolysis
+rates (<em>J</em>, having units of <code>s^-1</code>) as a function of the solar zenith angle
+(SZA). Having such values is essential when deploying atmospheric chemistry
+models.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>photolysis
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 34 rows and 10 variables:
+</p>
+
+<dl>
+<dt>compd_name</dt><dd><p>The name of the primary compound undergoing photolysis.</p>
+</dd>
+<dt>cmpd_formula</dt><dd><p>The chemical formula of the compound.</p>
+</dd>
+<dt>products</dt><dd><p>A product pathway for the photolysis of the compound.</p>
+</dd>
+<dt>type</dt><dd><p>The type of organic compound undergoing photolysis.</p>
+</dd>
+<dt>l, m, n</dt><dd><p>The parameter values given in the <code>l</code>, <code>m</code>, and <code>n</code> columns
+can be used to calculate the photolysis rate (<em>J</em>) as a function of the
+solar zenith angle (<em>X</em>, in radians) through the expression:
+<code>J = l * cos(X)^m * exp(-n * sec(X))</code>.</p>
+</dd>
+<dt>quantum_yield</dt><dd><p>In the context of photolysis reactions, this is the
+efficiency of a given photolytic reaction. In other words, it's the number of
+product molecules formed over the number of photons absorbed.</p>
+</dd>
+<dt>wavelength_nm, sigma_298_cm2</dt><dd><p>The <code>wavelength_nm</code> and <code>sigma_298_cm2</code>
+columns provide photoabsorption data for the compound undergoing photolysis.
+The values in <code>wavelength_nm</code> provide the wavelength of light in nanometer
+units; the <code>sigma_298_cm2</code> values are paired with the <code>wavelength_nm</code> values
+and they are in units of <code style="white-space: pre;">&#8288;cm^2 molecule^-1&#8288;</code>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<p>Here is a glimpse at the data available in <code>photolysis</code>.
+</p>
+<div class="sourceCode r"><pre>dplyr::glimpse(photolysis)
+#&gt; Rows: 34
+#&gt; Columns: 10
+#&gt; $ cmpd_name     &lt;chr&gt; "ozone", "ozone", "hydrogen peroxide", "nitrogen dioxide~
+#&gt; $ cmpd_formula  &lt;chr&gt; "O3", "O3", "H2O2", "NO2", "NO3", "NO3", "HONO", "HNO3",~
+#&gt; $ products      &lt;chr&gt; "-&gt; O(^1D) + O2", "-&gt; O(^3P) + O2", "-&gt; OH + OH", "-&gt; NO~
+#&gt; $ type          &lt;chr&gt; "inorganic reactions", "inorganic reactions", "inorganic~
+#&gt; $ l             &lt;dbl&gt; 6.073e-05, 4.775e-04, 1.041e-05, 1.165e-02, 2.485e-02, 1~
+#&gt; $ m             &lt;dbl&gt; 1.743, 0.298, 0.723, 0.244, 0.168, 0.155, 0.261, 1.230, ~
+#&gt; $ n             &lt;dbl&gt; 0.474, 0.080, 0.279, 0.267, 0.108, 0.125, 0.288, 0.307, ~
+#&gt; $ quantum_yield &lt;dbl&gt; NA, NA, 1.000, NA, 1.000, 1.000, 1.000, 1.000, NA, NA, N~
+#&gt; $ wavelength_nm &lt;chr&gt; "290,291,292,293,294,295,296,297,298,299,300,301,302,303~
+#&gt; $ sigma_298_cm2 &lt;chr&gt; "1.43E-18,1.27E-18,1.11E-18,9.94E-19,8.68E-19,7.69E-19,6~
+</pre></div>
+
+
+<h3>Dataset ID and Badge</h3>
+
+<p>DATA-15
+</p>
+
+<div style="text-align:center;"><img src="https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_photolysis.png" alt="This image of that of a dataset badge." style="width:50%;padding-bottom:20px;"></div>
+
+
+
+<h3>Dataset Introduced</h3>
+
+<p><code>v0.11.0</code>
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other datasets: 
+<code>constants</code>,
+<code>countrypops</code>,
+<code>exibble</code>,
+<code>films</code>,
+<code>gibraltar</code>,
+<code>gtcars</code>,
+<code>illness</code>,
+<code>metro</code>,
+<code>nuclides</code>,
+<code>peeps</code>,
+<code>pizzaplace</code>,
+<code>reactions</code>,
+<code>rx_addv</code>,
+<code>rx_adsl</code>,
+<code>sp500</code>,
+<code>sza</code>,
+<code>towny</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

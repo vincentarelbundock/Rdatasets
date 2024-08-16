@@ -12,8 +12,8 @@
       .. rubric:: Description
          :name: description
 
-      A simulated data set of number of credits taken by college
-      students each semester.
+      A simulated dataset of number of credits taken by college students
+      each semester.
 
       .. rubric:: Usage
          :name: usage

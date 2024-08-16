@@ -136,12 +136,13 @@
          # e$num_char     <- cut(email$num_char, c(0,1,5,10,20,1000))
          # e$line_breaks  <- cut(email$line_breaks, c(0,10,100,500,10000))
          # e$exclaim_mess <- cut(email$exclaim_mess, c(-1,0,1,5,10000))
-         g <- glm(spam ~ to_multiple + winner + format +
-           re_subj + exclaim_subj +
-           cc + attach + dollar +
-           inherit + password, # +
-         # num_char + line_breaks + exclaim_mess,
-         data = e, family = binomial
+         g <- glm(
+           spam ~ to_multiple + winner + format +
+             re_subj + exclaim_subj +
+             cc + attach + dollar +
+             inherit + password, # +
+           # num_char + line_breaks + exclaim_mess,
+           data = e, family = binomial
          )
          summary(g)
 

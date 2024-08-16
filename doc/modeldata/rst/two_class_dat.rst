@@ -17,8 +17,8 @@
       .. rubric:: Details
          :name: details
 
-      There are artifical data with two predictors (``A`` and ``B``) and
-      a factor outcome variable (``Class``).
+      There are artificial data with two predictors (``A`` and ``B``)
+      and a factor outcome variable (``Class``).
 
       .. rubric:: Value
          :name: value

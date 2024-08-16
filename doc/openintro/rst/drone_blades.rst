@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      Quality control data set for quadcopter drone blades, where this
+      Quality control dataset for quadcopter drone blades, where this
       data has been made up for an example.
 
       .. rubric:: Usage
@@ -45,5 +45,5 @@
 
          library(dplyr)
 
-         drone_blades %>%
+         drone_blades |>
            count(supplier, inspection)

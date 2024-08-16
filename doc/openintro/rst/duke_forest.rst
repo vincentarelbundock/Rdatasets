@@ -70,8 +70,7 @@
       .. rubric:: Source
          :name: source
 
-      Data were collected from `Zillow.com <https://www.zillow.com/>`__
-      in November 2020.
+      Data were collected from Zillow in November 2020.
 
       .. rubric:: Examples
          :name: examples

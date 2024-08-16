@@ -1,0 +1,66 @@
+<!DOCTYPE html><html><head><title>R: OTexts page views</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>otexts_views</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>OTexts page views</h2>
+
+<h3>Description</h3>
+
+<p>Daily page views on the OTexts website <a href="https://OTexts.com/">https://OTexts.com/</a> as recorded by Google analytics.
+</p>
+
+
+<h3>Format</h3>
+
+<p>Time series of class 'tsibble'
+</p>
+
+
+<h3>Details</h3>
+
+<p><code>otexts_views</code> contains daily data with two columns:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    <code>Date</code>:  </td><td style="text-align: left;"> Date for which the page views are recorded</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    <code>Pageviews</code>:  </td><td style="text-align: left;"> Page views on the OTexts website</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+otexts_views
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

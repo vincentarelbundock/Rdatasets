@@ -65,7 +65,7 @@ March 21, 2021. (Retrieved April 25, 2021.)
 library(dplyr)
 library(ggplot2)
 
-biontech_adolescents %&gt;%
+biontech_adolescents |&gt;
   count(group, outcome)
 
 ggplot(biontech_adolescents, aes(y = group, fill = outcome)) +

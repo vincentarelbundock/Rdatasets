@@ -43,7 +43,7 @@
       .. rubric:: Source
          :name: source
 
-      https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(05)67380-1/fulltext
+      `doi:10.1016/S0140-6736(05)67380-1 <https://doi.org/10.1016/S0140-6736%2805%2967380-1>`__
 
       .. rubric:: Examples
          :name: examples

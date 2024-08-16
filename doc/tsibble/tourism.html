@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><title>R: Australian domestic overnight trips</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>tourism</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Australian domestic overnight trips</h2>
+
+<h3>Description</h3>
+
+<p>A dataset containing the quarterly overnight trips from 1998 Q1 to 2016 Q4
+across Australia.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>tourism
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tsibble with 23,408 rows and 5 variables:
+</p>
+
+<ul>
+<li> <p><strong>Quarter</strong>: Year quarter (index)
+</p>
+</li>
+<li> <p><strong>Region</strong>: The tourism regions are formed through the aggregation of
+Statistical Local Areas (SLAs) which are defined by the various State and
+Territory tourism authorities according to their research and marketing
+needs
+</p>
+</li>
+<li> <p><strong>State</strong>: States and territories of Australia
+</p>
+</li>
+<li> <p><strong>Purpose</strong>: Stopover purpose of visit:
+</p>
+
+<ul>
+<li><p> &quot;Holiday&quot;
+</p>
+</li>
+<li><p> &quot;Visiting friends and relatives&quot;
+</p>
+</li>
+<li><p> &quot;Business&quot;
+</p>
+</li>
+<li><p> &quot;Other reason&quot;
+</p>
+</li></ul>
+
+</li>
+<li> <p><strong>Trips</strong>: Overnight trips in thousands
+</p>
+</li></ul>
+
+
+
+<h3>References</h3>
+
+<p><a href="https://www.tra.gov.au">Tourism Research Australia</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+data(tourism)
+# Total trips over geographical regions
+tourism %&gt;%
+  group_by(Region, State) %&gt;%
+  summarise(Total_Trips = sum(Trips))
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><title>R: Cat Adoption</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cat_adoption</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Cat Adoption</h2>
+
+<h3>Description</h3>
+
+<p>A subset of the cats at the animal shelter in Long Beach, California, USA.
+</p>
+
+
+<h3>Details</h3>
+
+<p>A data frame with 2257 rows and 19 columns:
+</p>
+
+<dl>
+<dt>time</dt><dd><p>The time the cat spent at the shelter.</p>
+</dd>
+<dt>event</dt><dd><p>The event of interest is the cat being homed or returned to
+its original location (i.e., owner or community). The non-event is the cat
+being transferred to another shelter or dying. Zero indicates a non-event
+(censored), and one corresponds to the event occurring.</p>
+</dd>
+<dt>sex</dt><dd><p>The sex of the cat.</p>
+</dd>
+<dt>neutered</dt><dd><p>Whether the cat is neutered.</p>
+</dd>
+<dt>intake_condition</dt><dd><p>The intake condition of the cat.</p>
+</dd>
+<dt>intake_type</dt><dd><p>The type of intake.</p>
+</dd>
+<dt>latitude</dt><dd><p>Latitude of the intersection/cross street of intake or capture.</p>
+</dd>
+<dt>longitude</dt><dd><p>Longitude of the intersection/cross street of intake or capture.</p>
+</dd>
+<dt>black,brown,brown_tabby,calico,cream,gray,gray_tabby,orange,orange_tabby,tan,tortie,white</dt><dd><p>Indicators for the color/pattern of the cat's fur.</p>
+</dd>
+</dl>
+
+
+
+<h3>Value</h3>
+
+<p>tibble
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://data.longbeach.gov/explore/dataset/animal-shelter-intakes-and-outcomes/information/">https://data.longbeach.gov/explore/dataset/animal-shelter-intakes-and-outcomes/information/</a>
+on 2024-06-17
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>str(cat_adoption)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -20,14 +20,14 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>25 personality self report items taken from the International Personality Item Pool (ipip.ori.org) were included as part of the Synthetic Aperture Personality Assessment (SAPA) web based personality assessment project.  The data from 2800 subjects are included here as a demonstration set for scale construction, factor analysis, and Item Response Theory analysis.  Three additional demographic variables (sex, education, and age) are also included. This data set is deprecated and users are encouraged to use <code>bfi</code>.
+<p>25 personality self report items taken from the International Personality Item Pool (ipip.ori.org) were included as part of the Synthetic Aperture Personality Assessment (SAPA) web based personality assessment project.  The data from 2800 subjects are included here as a demonstration set for scale construction, factor analysis, and Item Response Theory analysis.  Three additional demographic variables (sex, education, and age) are also included.
 </p>
 
 
 <h3>Usage</h3>
 
 <pre><code class='language-R'>data(bfi)
-
+data(bfi.dictionary)
 
 </code></pre>
 
@@ -100,8 +100,6 @@ function processMathHTML() {
 
 <h3>Details</h3>
 
-<p>This data set is deprecated and users are encouraged to use <code>bfi</code>.It is kept here backward compatability for one more release.
-</p>
 <p>The first 25 items are organized by five putative factors: Agreeableness, Conscientiousness, Extraversion, Neuroticism, and Opennness.  The scoring key is created using  <code>make.keys</code>, the scores are found using  <code>score.items</code>.
 </p>
 <p>These five factors are a useful example of using <code>irt.fa</code> to do Item Response Theory based latent factor analysis of the <code>polychoric</code> correlation matrix.  The endorsement plots for each item, as well as the item information functions reveal that the items differ in their quality.
@@ -114,14 +112,12 @@ function processMathHTML() {
 5 Moderately Accurate
 6 Very Accurate
 </p>
-<p>as part of the Synthetic Apeture Personality Assessment (SAPA <a href="https://www.sapa-project.org/">https://www.sapa-project.org/</a>) project.  To see an example of the data collection technique, visit <a href="https://www.sapa-project.org/">https://www.sapa-project.org/</a> or the International Cognitive Ability Resource at <a href="https://icar-project.org/">https://icar-project.org/</a>.  The items given were sampled from the International Personality Item Pool of Lewis Goldberg using the sampling technique of SAPA.  This is a sample data set taken from the much larger SAPA data bank.
+<p>as part of the Synthetic Apeture Personality Assessment (SAPA <a href="https://www.sapa-project.org/">https://www.sapa-project.org/</a>) project.  To see an example of the data collection technique, visit <a href="https://www.SAPA-project.org/">https://www.SAPA-project.org/</a> or the International Cognitive Ability Resource at <a href="https://icar-project.org">https://icar-project.org</a>.  The items given were sampled from the International Personality Item Pool of Lewis Goldberg using the sampling technique of SAPA.  This is a sample data set taken from the much larger SAPA data bank.
 </p>
 
 
 <h3>Note</h3>
 
-<p>This data set is deprecated and users are encouraged to use <code>bfi</code>.It is kept here backward compatability for one more release.
-</p>
 <p>The bfi data set and items should not be confused with the BFI (Big Five Inventory) of Oliver John and colleagues (John, O. P., Donahue, E. M., &amp; Kentle, R. L. (1991). The Big Five Inventory&ndash;Versions 4a and 54. Berkeley, CA: University of California,Berkeley, Institute of Personality and Social Research.)
 </p>
 
@@ -151,15 +147,15 @@ function processMathHTML() {
 <pre><code class='language-R'>data(bfi)
 psych::describe(bfi)
 # create the bfi.keys (actually already saved in the data file)
-keys &lt;-
+ bfi.keys &lt;-
   list(agree=c("-A1","A2","A3","A4","A5"),conscientious=c("C1","C2","C3","-C4","-C5"),
 extraversion=c("-E1","-E2","E3","E4","E5"),neuroticism=c("N1","N2","N3","N4","N5"),
 openness = c("O1","-O2","O3","O4","-O5")) 
 
- scores &lt;- psych::scoreItems(keys,bfi,min=1,max=6) #specify the minimum and maximum values
+ scores &lt;- psych::scoreItems(bfi.keys,bfi,min=1,max=6) #specify the minimum and maximum values
  scores
- #show the use of the fa.lookup with a dictionary
- #psych::keys.lookup(bfi.keys,bfi.dictionary[,1:4])   #deprecated  -- use psychTools
+ #show the use of the keys.lookup with a dictionary
+ psych::keys.lookup(bfi.keys,bfi.dictionary[,1:4])
  
 </code></pre>
 

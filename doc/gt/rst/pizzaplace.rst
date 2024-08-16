@@ -42,12 +42,12 @@
          given ``date`` and ``time``.
 
       date
-         A character representation of the ``order`` date, expressed in
-         the ISO 8601 date format ('YYYY-MM-DD').
+         A character representation of the order date, expressed in the
+         ISO 8601 date format (``YYYY-MM-DD``).
 
       time
-         A character representation of the ``order`` time, expressed as
-         a 24-hour time the ISO 8601 extended time format ('hh:mm:ss').
+         A character representation of the order time, expressed as a
+         24-hour time the ISO 8601 extended time format (``HH:MM:SS``).
 
       name
          The short name for the pizza.
@@ -127,7 +127,7 @@
       -  ``"brie_carre"``: The Brie Carre Pizza (Brie Carre Cheese,
          Prosciutto, Caramelized Onions, Pears, Thyme, Garlic)
 
-      -  ``"calabrese"``: The Calabrese Pizza (‘Nduja Salami, Pancetta,
+      -  ``"calabrese"``: The Calabrese Pizza ('Nduja Salami, Pancetta,
          Tomatoes, Red Onions, Friggitello Peppers, Garlic)
 
       -  ``"soppressata"``: The Soppressata Pizza (Soppressata Salami,
@@ -225,7 +225,8 @@
          :name: see-also
 
       Other datasets: ``constants``, ``countrypops``, ``exibble``,
-      ``gtcars``, ``illness``, ``metro``, ``rx_addv``, ``rx_adsl``,
-      ``sp500``, ``sza``, ``towny``
+      ``films``, ``gibraltar``, ``gtcars``, ``illness``, ``metro``,
+      ``nuclides``, ``peeps``, ``photolysis``, ``reactions``,
+      ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``, ``towny``
 
 .. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_pizzaplace.png

@@ -13,7 +13,7 @@
       .. rubric:: Description
          :name: description
 
-      A sample of the ``yrbss`` data set.
+      A sample of the ``yrbss`` dataset.
 
       .. rubric:: Usage
          :name: usage

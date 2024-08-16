@@ -1,0 +1,103 @@
+<!DOCTYPE html><html><head><title>R: cars04</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cars04</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>cars04</h2>
+
+<h3>Description</h3>
+
+<p>A data frame with 428 rows and 19 columns. This is a record of characteristics on all of the new models of cars for sale in the US in the year 2004.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>cars04
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 428 observations on the following 19 variables.
+</p>
+
+<dl>
+<dt>name</dt><dd><p>The name of the vehicle including manufacturer and model.</p>
+</dd>
+<dt>sports_car</dt><dd><p>Logical variable indicating if the vehicle is a sports car.</p>
+</dd>
+<dt>suv</dt><dd><p>Logical variable indicating if the vehicle is an suv.</p>
+</dd>
+<dt>wagon</dt><dd><p>Logical variable indicating if the vehicle is a wagon.</p>
+</dd>
+<dt>minivan</dt><dd><p>Logical variable indicating if the vehicle is a minivan.</p>
+</dd>
+<dt>pickup</dt><dd><p>Logical variable indicating if the vehicle is a pickup.</p>
+</dd>
+<dt>all_wheel</dt><dd><p>Logical variable indicating if the vehicle is all-wheel drive.</p>
+</dd>
+<dt>rear_wheel</dt><dd><p>Logical variable indicating if the vehicle is rear-wheel drive.</p>
+</dd>
+<dt>msrp</dt><dd><p>Manufacturer suggested retail price of the vehicle.</p>
+</dd>
+<dt>dealer_cost</dt><dd><p>Amount of money the dealer paid for the vehicle.</p>
+</dd>
+<dt>eng_size</dt><dd><p>Displacement of the engine - the total volume of all the cylinders, measured in liters.</p>
+</dd>
+<dt>ncyl</dt><dd><p>Number of cylinders in the engine.</p>
+</dd>
+<dt>horsepwr</dt><dd><p>Amount of horsepower produced by the engine.</p>
+</dd>
+<dt>city_mpg</dt><dd><p>Gas mileage for city driving, measured in miles per gallon.</p>
+</dd>
+<dt>hwy_mpg</dt><dd><p>Gas mileage for highway driving, measured in miles per gallon.</p>
+</dd>
+<dt>weight</dt><dd><p>Total weight of the vehicle, measured in pounds.</p>
+</dd>
+<dt>wheel_base</dt><dd><p>Distance between the center of the front wheels and the center of the rear wheels, measured in inches.</p>
+</dd>
+<dt>length</dt><dd><p>Total length of the vehicle, measured in inches.</p>
+</dd>
+<dt>width</dt><dd><p>Total width of the vehicle, measured in inches.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+
+# Highway gas mileage
+ggplot(cars04, aes(x = hwy_mpg)) +
+  geom_histogram(
+    bins = 15, color = "white",
+    fill = openintro::IMSCOL["green", "full"]
+  ) +
+  theme_minimal() +
+  labs(
+    title = "Highway gas milage for cars from 2004",
+    x = "Gas Mileage (miles per gallon)",
+    y = "Number of cars"
+  )
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

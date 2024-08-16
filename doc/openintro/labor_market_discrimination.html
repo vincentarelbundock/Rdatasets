@@ -190,8 +190,8 @@ function processMathHTML() {
 
 # Percent callback for typical White names and typical African-American names (table 1, p. 997)
 
-labor_market_discrimination %&gt;%
-  group_by(race) %&gt;%
+labor_market_discrimination |&gt;
+  group_by(race) |&gt;
   summarise(call_back = mean(call))
 </code></pre>
 

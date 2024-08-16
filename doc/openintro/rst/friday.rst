@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      This data set addresses issues of how superstitions regarding
+      This dataset addresses issues of how superstitions regarding
       Friday the 13th affect human behavior, and whether Friday the 13th
       is an unlucky day. Scanlon, et al. collected data on traffic and
       shopping patterns and accident frequency for Fridays the 6th and
@@ -78,14 +78,14 @@
          library(dplyr)
          library(ggplot2)
 
-         friday %>%
-           filter(type == "traffic") %>%
+         friday |>
+           filter(type == "traffic") |>
            ggplot(aes(x = sixth)) +
            geom_histogram(binwidth = 2000) +
            xlim(110000, 140000)
 
-         friday %>%
-           filter(type == "traffic") %>%
+         friday |>
+           filter(type == "traffic") |>
            ggplot(aes(x = thirteenth)) +
            geom_histogram(binwidth = 2000) +
            xlim(110000, 140000)

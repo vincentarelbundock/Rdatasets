@@ -1,0 +1,130 @@
+<!DOCTYPE html><html><head><title>R: Feature films in competition at the Cannes Film Festival</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>films</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Feature films in competition at the Cannes Film Festival</h2>
+
+<h3>Description</h3>
+
+<p>Each entry in the <code>films</code> is a feature film that appeared in the official
+selection during a festival year (starting in 1946 and active to the present
+day). The <code>year</code> column refers to the year of the festival and this figure
+doesn't always coincide with the release year of the film. The film's title
+reflects the most common title of the film in English, where the
+<code>original_title</code> column provides the title of the film in its spoken language
+(transliterated to Roman script where necessary).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>films
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 1,851 rows and 8 variables:
+</p>
+
+<dl>
+<dt>year</dt><dd><p>The year of the festival in which the film was in competition.</p>
+</dd>
+<dt>title,original_title</dt><dd><p>The <code>title</code> field provides the film title used
+for English-speaking audiences. The <code>original_title</code> field is populated when
+<code>title</code> differs greatly from the non-English original.</p>
+</dd>
+<dt>director</dt><dd><p>The director or set of co-directors for the film. Multiple
+directors are separated by a comma.</p>
+</dd>
+<dt>languages</dt><dd><p>The languages spoken in the film in the order of appearance.
+This consists of ISO 639 language codes (primarily as two-letter codes, but
+using three-letter codes where necessary).</p>
+</dd>
+<dt>countries_of_origin</dt><dd><p>The country or countries of origin for the
+production. Here, 2-letter ISO 3166-1 country codes (set in uppercase) are
+used.</p>
+</dd>
+<dt>run_time</dt><dd><p>The run time of the film in hours and minutes. This is given
+as a string in the format <code style="white-space: pre;">&#8288;[x]h [y]m&#8288;</code>.</p>
+</dd>
+<dt>imdb_url</dt><dd><p>The URL of the film's information page in the Internet Movie
+Database (IMDB).</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<p>Here is a glimpse at the data available in <code>films</code>.
+</p>
+<div class="sourceCode r"><pre>dplyr::glimpse(films)
+#&gt; Rows: 1,851
+#&gt; Columns: 8
+#&gt; $ year                &lt;int&gt; 1946, 1946, 1946, 1946, 1946, 1946, 1946, 1946, 19~
+#&gt; $ title               &lt;chr&gt; "The Lovers", "Anna and the King of Siam", "Blood ~
+#&gt; $ original_title      &lt;chr&gt; "Amanti in fuga", NA, "Blod och eld", "Brevet fra ~
+#&gt; $ director            &lt;chr&gt; "Giacomo Gentilomo", "John Cromwell", "Anders Henr~
+#&gt; $ languages           &lt;chr&gt; "it", "en", "sv", "da", "en,fr", "en", "pt", "ru",~
+#&gt; $ countries_of_origin &lt;chr&gt; "IT", "US", "SE", "DK", "GB", "GB", "PT", "SU", "D~
+#&gt; $ run_time            &lt;chr&gt; "1h 30m", "2h 8m", "1h 40m", "1h 18m", "1h 26m", "~
+#&gt; $ imdb_url            &lt;chr&gt; "https://www.imdb.com/title/tt0038297/", "https://~
+</pre></div>
+
+
+<h3>Dataset ID and Badge</h3>
+
+<p>DATA-9
+</p>
+
+<div style="text-align:center;"><img src="https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_films.png" alt="This image of that of a dataset badge." style="width:50%;padding-bottom:20px;"></div>
+
+
+
+<h3>Dataset Introduced</h3>
+
+<p><code>v0.11.0</code>
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other datasets: 
+<code>constants</code>,
+<code>countrypops</code>,
+<code>exibble</code>,
+<code>gibraltar</code>,
+<code>gtcars</code>,
+<code>illness</code>,
+<code>metro</code>,
+<code>nuclides</code>,
+<code>peeps</code>,
+<code>photolysis</code>,
+<code>pizzaplace</code>,
+<code>reactions</code>,
+<code>rx_addv</code>,
+<code>rx_adsl</code>,
+<code>sp500</code>,
+<code>sza</code>,
+<code>towny</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

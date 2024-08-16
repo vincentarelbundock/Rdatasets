@@ -32,8 +32,7 @@
          total length of uninterrupted sequences of capitals
 
       dollar
-         Occurrences of the dollar sign, as percent of total number of
-         characters
+         Occurrences of ‘$’, as percent of total number of characters
 
       bang
          Occurrences of ‘!’, as percent of total number of characters
@@ -46,7 +45,7 @@
          words
 
       make
-         Occurrences of ‘make’, as a percent of total number of words
+         Occurrences of ‘make’, as % of total number of words
 
       yesno
          outcome variable, a factor with levels ``n`` not spam, ``y``
@@ -58,7 +57,7 @@
       George Forman, Hewlett-Packard Laboratories
 
       The complete dataset, and documentation, are available from `Spam
-      database <https://archive.ics.uci.edu/ml/datasets/spambasehttps://archive.ics.uci.edu/ml/datasets/spambase/>`__
+      database <https://archive.ics.uci.edu/dataset/94/spambase>`__
 
       .. rubric:: Examples
          :name: examples

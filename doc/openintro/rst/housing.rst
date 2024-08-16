@@ -6,8 +6,8 @@
       housing R Documentation
       ======= ===============
 
-      .. rubric:: Simulated data set on student housing
-         :name: simulated-data-set-on-student-housing
+      .. rubric:: Simulated dataset on student housing
+         :name: simulated-dataset-on-student-housing
 
       .. rubric:: Description
          :name: description

@@ -50,7 +50,7 @@
       .. rubric:: Source
          :name: source
 
-      https://archive.ics.uci.edu/ml/datasets/Challenger+USA+Space+Shuttle+O-Ring
+      https://archive.ics.uci.edu/dataset/92/challenger+usa+space+shuttle+o+ring
 
       .. rubric:: Examples
          :name: examples
@@ -66,9 +66,9 @@
          # data frame to predict probability of O-ring damage based
          # on temperature using logistic regression.
 
-         orings_long <- orings %>%
-           pivot_longer(cols = c(damaged, undamaged), names_to = "outcome", values_to = "n") %>%
-           uncount(n) %>%
+         orings_long <- orings |>
+           pivot_longer(cols = c(damaged, undamaged), names_to = "outcome", values_to = "n") |>
+           uncount(n) |>
            mutate(outcome = fct_relevel(outcome, "undamaged", "damaged"))
 
          orings_mod <- glm(outcome ~ temperature, data = orings_long, family = "binomial")

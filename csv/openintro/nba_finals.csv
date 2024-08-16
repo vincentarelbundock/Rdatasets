@@ -1,0 +1,74 @@
+rownames,year,winner,western_wins,eastern_wins,western_champions,eastern_champions,western_coach,eastern_coach,home_court
+1,1950,Minneapolis Lakers,4,2,Minneapolis Lakers,Syracuse Nationals,John Kundla,Al Cervi,East
+2,1951,Rochester Royals,4,3,Rochester Royals,New York Knicks,Les Harrison,Joe Lapchick,West
+3,1952,Minneapolis Lakers,4,3,Minneapolis Lakers,New York Knicks,John Kundla,Joe Lapchick,West
+4,1953,Minneapolis Lakers,4,1,Minneapolis Lakers,New York Knicks,John Kundla,Joe Lapchick,West
+5,1954,Minneapolis Lakers,4,3,Minneapolis Lakers,Syracuse Nationals,John Kundla,Al Cervi,West
+6,1955,Syracuse Nationals,3,4,Fort Wayne Pistons,Syracuse Nationals,Charles Eckman,Al Cervi,East
+7,1956,Philadelphia Warriors,1,4,Fort Wayne Pistons,Philadelphia Warriors,Charles Eckman,George Senesky,East
+8,1957,Boston Celtics,3,4,St. Louis Hawks,Boston Celtics,Alex Hannum,Red Auerbach,East
+9,1958,St. Louis Hawks,4,2,St. Louis Hawks,Boston Celtics,Alex Hannum,Red Auerbach,East
+10,1959,Boston Celtics,0,4,Minneapolis Lakers,Boston Celtics,John Kundla,Red Auerbach,East
+11,1960,Boston Celtics,3,4,St. Louis Hawks,Boston Celtics,Ed Macauley,Red Auerbach,East
+12,1961,Boston Celtics,1,4,St. Louis Hawks,Boston Celtics,Paul Seymour,Red Auerbach,East
+13,1962,Boston Celtics,3,4,Los Angeles Lakers,Boston Celtics,Fred Schaus,Red Auerbach,East
+14,1963,Boston Celtics,2,4,Los Angeles Lakers,Boston Celtics,Fred Schaus,Red Auerbach,East
+15,1964,Boston Celtics,1,4,San Francisco Warriors,Boston Celtics,Alex Hannum,Red Auerbach,East
+16,1965,Boston Celtics,1,4,Los Angeles Lakers,Boston Celtics,Fred Schaus,Red Auerbach,East
+17,1966,Boston Celtics,3,4,Los Angeles Lakers,Boston Celtics,Fred Schaus,Red Auerbach,East
+18,1967,Philadelphia 76ers,2,4,San Francisco Warriors,Philadelphia 76ers,Bill Sharman,Alex Hannum,East
+19,1968,Boston Celtics,2,4,Los Angeles Lakers,Boston Celtics,Butch van Breda Kolff,Bill Russel,East
+20,1969,Boston Celtics,3,4,Los Angeles Lakers,Boston Celtics,Butch van Breda Kolff,Bill Russel,West
+21,1970,New York Knicks,3,4,Los Angeles Lakers,New York Knicks,Joe Mullaney,Red Holzman,East
+22,1971,Milwaukee Bucks,4,0,Milwaukee Bucks,Baltimore Bullets,Larry Costello,Gene Shue,West
+23,1972,Los Angeles Lakers,4,1,Los Angeles Lakers,New York Knicks,Bill Sharman,Red Holzman,West
+24,1973,New York Knicks,1,4,Los Angeles Lakers,New York Knicks,Bill Sharman,Red Holzman,West
+25,1974,Boston Celtics,3,4,Milwaukee Bucks,Boston Celtics,Larry Costello,Tom Heinsohn,West
+26,1975,Golden State Warriors,4,0,Golden State Warriors,Washington Bullets,Al Attles,K. C. Jones,East
+27,1976,Boston Celtics,2,4,Phoenix Suns,Boston Celtics,John MacLeod,Tom Heinsohn,East
+28,1977,Portland Trail Blazers,4,2,Portland Trail Blazers,Philadelphia 76ers,Jack Ramsay,Gene Shue,East
+29,1978,Washington Bullets,3,4,Seattle SuperSonics,Washington Bullets,Lenny Wilkens,Dick Motta,West
+30,1979,Seattle SuperSonics,4,1,Seattle SuperSonics,Washington Bullets,Lenny Wilkens,Dick Motta,East
+31,1980,Los Angeles Lakers,4,2,Los Angeles Lakers,Philadelphia 76ers,Paul Westhead,Billy Cunningham,West
+32,1981,Boston Celtics,2,4,Houston Rockets,Boston Celtics,Del Harris,Bill Fitch,East
+33,1982,Los Angeles Lakers,4,2,Los Angeles Lakers,Philadelphia 76ers,Pat Riley,Billy Cunningham,East
+34,1983,Philadelphia 76ers,0,4,Los Angeles Lakers,Philadelphia 76ers,Pat Riley,Billy Cunningham,East
+35,1984,Boston Celtics,3,4,Los Angeles Lakers,Boston Celtics,Pat Riley,K. C. Jones,East
+36,1985,Los Angeles Lakers,4,2,Los Angeles Lakers,Boston Celtics,Pat Riley,K. C. Jones,East
+37,1986,Boston Celtics,2,4,Houston Rockets,Boston Celtics,Bill Firch,K. C. Jones,East
+38,1987,Los Angeles Lakers,4,2,Los Angeles Lakers,Boston Celtics,Pat Riley,K. C. Jones,West
+39,1988,Los Angeles Lakers,4,3,Los Angeles Lakers,Detroit Pistons,Pat Riley,Chuck Daly,West
+40,1989,Detroit Pistons,0,4,Los Angeles Lakers,Detroit Pistons,Pat Riley,Chuck Daly,East
+41,1990,Detroit Pistons,1,4,Portland Trail Blazers,Detroit Pistons,Rick Adelman,Chuck Daly,East
+42,1991,Chicago Bulls,1,4,Los Angeles Lakers,Chicago Bulls,Mike Dunleavy,Phil Jackon,East
+43,1992,Chicago Bulls,2,4,Portland Trail Blazers,Chicago Bulls,Rick Adelman,Phil Jackon,East
+44,1993,Chicago Bulls,2,4,Phoenix Suns,Chicago Bulls,Paul Westphal,Phil Jackon,West
+45,1994,Houston Rockets,4,3,Houston Rockets,New York Knicks,Rudy Tomjanovich,Pat Riley,West
+46,1995,Houston Rockets,4,0,Houston Rockets,Orlando Magic,Rudy Tomjanovich,Brian Hill,East
+47,1996,Chicago Bulls,2,4,Seattle SuperSonics,Chicago Bulls,George Karl,Phil Jackon,East
+48,1997,Chicago Bulls,2,4,Utah Jazz,Chicago Bulls,Jerry Sloan,Phil Jackon,East
+49,1998,Chicago Bulls,2,4,Utah Jazz,Chicago Bulls,Jerry Sloan,Phil Jackon,West
+50,1999,San Antonio Spurs,4,1,San Antonio Spurs,New York Knicks,Gregg Popovich,Jeff Van Gundy,West
+51,2000,Los Angeles Lakers,4,2,Los Angeles Lakers,Indiana Pacers,Phil Jackson,Larry Bird,West
+52,2001,Los Angeles Lakers,4,1,Los Angeles Lakers,Philadelphia 76ers,Phil Jackson,Larry Brown,West
+53,2002,Los Angeles Lakers,4,0,Los Angeles Lakers,New Jersey Nets,Phil Jackson,Byron Scott,West
+54,2003,San Antonio Spurs,4,2,San Antonio Spurs,New Jersey Nets,Gregg Popovich,Byron Scott,West
+55,2004,Detroit Pistons,1,4,Los Angeles Lakers,Detroit Pistons,Phil Jackson,Larry Brown,West
+56,2005,San Antonio Spurs,4,3,San Antonio Spurs,Detroit Pistons,Gregg Popovich,Larry Brown,West
+57,2006,Miami Heat,2,4,Dallas Mavericks,Miami Heat,Avery Johnson,Pat Riley,West
+58,2007,San Antonio Spurs,4,0,San Antonio Spurs,Cleveland Cavaliers,Gregg Popovich,Mike Brown,West
+59,2008,Boston Celtics,2,4,Los Angeles Lakers,Boston Celtics,Phil Jackson,Doc Rivers,East
+60,2009,Los Angeles Lakers,4,1,Los Angeles Lakers,Orlando Magic,Phil Jackson,Stan Van Gundy,West
+61,2010,Los Angeles Lakers,4,3,Los Angeles Lakers,Boston Celtics,Phil Jackson,Doc Rivers,West
+62,2011,Dallas Mavericks,4,2,Dallas Mavericks,Miami Heat,Rick Carlisle,Erik Spoelstra,East
+63,2012,Miami Heat,1,4,Oklahoma City Thunder,Miami Heat,Scott Brooks,Erik Spoelstra,West
+64,2013,Miami Heat,3,4,San Antonio Spurs,Miami Heat,Gregg Popovich,Erik Spoelstra,East
+65,2014,San Antonio Spurs,4,1,San Antonio Spurs,Miami Heat,Gregg Popovich,Erik Spoelstra,West
+66,2015,Golden State Warriors,4,2,Golden State Warriors,Cleveland Cavaliers,Steve Kerr,David Blatt,West
+67,2016,Cleveland Cavaliers,3,4,Golden State Warriors,Cleveland Cavaliers,Steve Kerr,Tyronn Lue,West
+68,2017,Golden State Warriors,4,1,Golden State Warriors,Cleveland Cavaliers,Steve Kerr,Tyronn Lue,West
+69,2018,Golden State Warriors,4,0,Golden State Warriors,Cleveland Cavaliers,Steve Kerr,Tyronn Lue,West
+70,2019,Toronto Raptors,2,4,Golden State Warriors,Toronto Raptors,Steve Kerr,Nick Nurse,East
+71,2020,Los Angeles Lakers,4,2,Los Angeles Lakers,Miami Heat,Frank Vogel,Erik Spoelstra,West
+72,2021,Milwaukee Bucks,2,4,Phoenix Suns,Milwaukee Bucks,Monty Williams,Mike Budenholzer,West
+73,2022,Golden State Warriors,4,2,Golden State Warriors,Boston Celtics,Steve Kerr,Ime Udoka,West

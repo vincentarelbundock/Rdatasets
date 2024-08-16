@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      A simulated data set based on real population summaries.
+      A simulated dataset based on real population summaries.
 
       .. rubric:: Usage
          :name: usage
@@ -45,5 +45,5 @@
 
          library(dplyr)
 
-         family_college %>%
+         family_college |>
            count(teen, parents)

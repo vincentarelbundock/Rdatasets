@@ -143,16 +143,14 @@
 
       Australian Bureau of Meteorology web pages:
 
-      http://www.bom.gov.au/climate/change/index.shtml
+      Go to the url http://www.bom.gov.au/climate/change/, choose
+      timeseries to display, then click "Download data"
 
-      Go to website, choose timeseries to display, then click "Download
-      data"
-
-      The SOI data are from
-      http://www.bom.gov.au/climate/enso/soi_monthly.txt.
+      For the SOI data, go to the url
+      http://www.bom.gov.au/climate/enso/.
 
       The CO2 series ``co2law``, for Law Dome ice core data. is from
-      https://cdiac.ess-dive.lbl.gov/trends/co2/lawdome-data.html.
+      https://data.ess-dive.lbl.gov/portals/CDIAC/.
 
       The Moana Loa CO2 series ``co2mlo`` is from Dr. Pieter Tans,
       NOAA/ESRL (https://gml.noaa.gov/ccgg/trends/)
@@ -166,7 +164,7 @@
       The yearly mean sunspot number is a subset of one of several
       sunspot series that are available from WDC-SILSO, Royal
       Observatory of Belgium, Brussels.
-      https://www.sidc.be/silso/datafiles
+      https://www.sidc.be/silso/datafiles/
 
       The dipole mode index data are from
       https://ds.data.jma.go.jp/tcc/tcc/products/elnino/index/Readme_iod.txt.

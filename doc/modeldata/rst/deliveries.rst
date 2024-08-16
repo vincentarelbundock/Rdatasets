@@ -17,17 +17,17 @@
       .. rubric:: Details
          :name: details
 
-      These data are from a study of food delivery times (i.e., the time
-      from the initial order to receiving the food) for a single
-      resturant. The data contains 10,012 orders from a specific
-      restaurant. The predictors include:
+      These data are from a study of food delivery times in minutes
+      (i.e., the time from the initial order to receiving the food) for
+      a single restaurant. The data contains 10,012 orders from a
+      specific restaurant. The predictors include:
 
       -  The time, in decimal hours, of the order.
 
       -  The day of the week for the order.
 
-      -  The approximate distance between the restaurant and the
-         delivery location.
+      -  The approximate distance in miles between the restaurant and
+         the delivery location.
 
       -  A set of 27 predictors that count the number of distinct menu
          items in the order.

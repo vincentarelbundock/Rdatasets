@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      A simulated data set of tips over a few weeks on a couple days per
+      A simulated dataset of tips over a few weeks on a couple days per
       week. Each tip is associated with a single group, which may
       include several bills and tables (i.e. groups paid in one lump sum
       in simulations).
@@ -47,7 +47,7 @@
       .. rubric:: Details
          :name: details
 
-      This data set was built using simulations of tables, then bills,
+      This dataset was built using simulations of tables, then bills,
       then tips based on the bills. Large groups were assumed to only
       pay the gratuity, which is evident in the data. Tips were set to
       be plausible round values; they were often (but not always)
@@ -56,7 +56,7 @@
       .. rubric:: Source
          :name: source
 
-      Simulated data set.
+      Simulated dataset.
 
       .. rubric:: Examples
          :name: examples

@@ -52,7 +52,7 @@ statements they classified correctly (out of 5).
 
 <h3>Source</h3>
 
-<p><a href="https://www.pewresearch.org/fact-tank/2018/10/23/younger-americans-are-better-than-older-americans-at-telling-factual-news-statements-from-opinions/">Younger Americans are better than older Americans at telling factual news statements from opinions</a>, Pew Research Center, October 23, 2018.
+<p><a href="https://www.pewresearch.org/short-reads/2018/10/23/younger-americans-are-better-than-older-americans-at-telling-factual-news-statements-from-opinions/">Younger Americans are better than older Americans at telling factual news statements from opinions</a>, Pew Research Center, October 23, 2018.
 </p>
 
 
@@ -83,7 +83,7 @@ ggplot(fact_opinion, aes(x = age_group, y = opinion_correct)) +
   )
 
 # Replicating the figure from Pew report (see source for link)
-fact_opinion %&gt;%
+fact_opinion |&gt;
   mutate(
     facts = case_when(
       fact_correct &lt;= 2 ~ "Two or fewer",
@@ -97,9 +97,9 @@ fact_opinion %&gt;%
       opinion_correct == 5 ~ "All five"
     ),
     opinions = fct_relevel(opinions, "Two or fewer", "Three or four", "All five")
-  ) %&gt;%
-  select(-fact_correct, -opinion_correct) %&gt;%
-  pivot_longer(cols = -age_group, names_to = "question_type", values_to = "n_correct") %&gt;%
+  ) |&gt;
+  select(-fact_correct, -opinion_correct) |&gt;
+  pivot_longer(cols = -age_group, names_to = "question_type", values_to = "n_correct") |&gt;
   ggplot(aes(y = fct_rev(age_group), fill = n_correct)) +
   geom_bar(position = "fill") +
   facet_wrap(~question_type, ncol = 1) +

@@ -6,8 +6,8 @@
       simulated_normal R Documentation
       ================ ===============
 
-      .. rubric:: Simulated data sets, drawn from a normal distribution.
-         :name: simulated-data-sets-drawn-from-a-normal-distribution.
+      .. rubric:: Simulated datasets, drawn from a normal distribution.
+         :name: simulated-datasets-drawn-from-a-normal-distribution.
 
       .. rubric:: Description
          :name: description

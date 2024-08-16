@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Australian births data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>aus_births</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Australian births data</h2>
+
+<h3>Description</h3>
+
+<p>Number of births in Australia.
+</p>
+
+
+<h3>Format</h3>
+
+<p>Time series of class 'tsibble'
+</p>
+
+
+<h3>Details</h3>
+
+<p><code>aus_births</code> contains monthly data with one measured variable:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    <code>Births</code>:  </td><td style="text-align: left;"> Number of births</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+<p>from January 1975 to December 2021 for the 6 states and 2 territories
+of Australia, indexed by:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    <code>Month</code>:  </td><td style="text-align: left;"> Year-month.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+<p>#' Each series is uniquely identified using the key:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    <code>State</code>: The state or territory.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Australian Bureau of Statistics. <a href="https://www.abs.gov.au/statistics/people/population/births-australia/2022">https://www.abs.gov.au/statistics/people/population/births-australia/2022</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+aus_births
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

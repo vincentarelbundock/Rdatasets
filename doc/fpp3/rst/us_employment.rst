@@ -12,9 +12,9 @@
       .. rubric:: Description
          :name: description
 
-      ``us_employment`` is a monthly 'tsibble' containing US employment
-      data from January 1939 to June 2019. Each 'Series_ID' represents
-      different sectors of the economy.
+      ``us_employment`` contains monthly US employment data from January
+      1939 to June 2019. Each 'Series_ID' represents different sectors
+      of the economy.
 
       .. rubric:: Format
          :name: format

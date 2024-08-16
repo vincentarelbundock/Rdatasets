@@ -33,9 +33,9 @@
 
       Julia Silge, *Supervised Machine Learning Case Studies in R*
 
-      https://supervised-ml-course.netlify.com/chapter2
+      ``⁠https://supervised-ml-course.netlify.com/chapter2⁠``
 
-      Raw data: https://insights.stackoverflow.com/survey/
+      Raw data: ``⁠https://insights.stackoverflow.com/survey/⁠``
 
       .. rubric:: Examples
          :name: examples

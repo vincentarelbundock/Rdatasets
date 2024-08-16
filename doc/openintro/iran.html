@@ -1,0 +1,96 @@
+<!DOCTYPE html><html><head><title>R: iran</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>iran</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>iran</h2>
+
+<h3>Description</h3>
+
+<p>A data frame containing information about the 2009 Presidential Election in Iran. There were widespread claims of election fraud in this election both internationally and within Iran.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>iran
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 366 observations on the following 9 variables.
+</p>
+
+<dl>
+<dt>province</dt><dd><p>Iranian province where votes were cast.</p>
+</dd>
+<dt>city</dt><dd><p>City within province where votes were cast.</p>
+</dd>
+<dt>ahmadinejad</dt><dd><p>Number of votes received by Ahmadinejad.</p>
+</dd>
+<dt>rezai</dt><dd><p>Number of votes received by Rezai.</p>
+</dd>
+<dt>karrubi</dt><dd><p>Number of votes received by Karrubi.</p>
+</dd>
+<dt>mousavi</dt><dd><p>Number of votes received by Mousavi.</p>
+</dd>
+<dt>total_votes_cast</dt><dd><p>Total number of votes cast.</p>
+</dd>
+<dt>voided_votes</dt><dd><p>Number of votes that were not counted.</p>
+</dd>
+<dt>legitimate_votes</dt><dd><p>Number of votes that were counted.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(stringr)
+
+plot_data &lt;- iran |&gt;
+  summarize(
+    ahmadinejad = sum(ahmadinejad) / 1000,
+    rezai = sum(rezai) / 1000,
+    karrubi = sum(karrubi) / 1000,
+    mousavi = sum(mousavi) / 1000
+  ) |&gt;
+  pivot_longer(
+    cols = c(ahmadinejad, rezai, karrubi, mousavi),
+    names_to = "candidate",
+    values_to = "votes"
+  ) |&gt;
+  mutate(candidate = str_to_title(candidate))
+
+ggplot(plot_data, aes(votes, candidate)) +
+  geom_col() +
+  theme_minimal() +
+  labs(
+    title = "2009 Iranian Presidential Election",
+    x = "Number of votes (in thousands)",
+    y = ""
+  )
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

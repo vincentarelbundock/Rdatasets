@@ -41,7 +41,8 @@
       .. rubric:: Source
          :name: source
 
-      https://www.ncei.noaa.gov/products/paleoclimatology/ice-core
+      Go to the url
+      https://www.ncei.noaa.gov/products/paleoclimatology/ice-core/
 
       .. rubric:: References
          :name: references

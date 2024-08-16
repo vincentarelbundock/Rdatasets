@@ -20,7 +20,7 @@
 
       .. code:: R
 
-         data("GasolineYield")
+         data("GasolineYield", package = "betareg")
 
       .. rubric:: Format
          :name: format
@@ -80,8 +80,8 @@
       Analysis*. New York: Oxford University Press.
 
       Cribari-Neto, F., and Zeileis, A. (2010). Beta Regression in R.
-      *Journal of Statistical Software*, **34**\ (2), 1–24. doi:
-      `10.18637/jss.v034.i02 <https://doi.org/10.18637/jss.v034.i02>`__
+      *Journal of Statistical Software*, **34**\ (2), 1–24.
+      `doi:10.18637/jss.v034.i02 <https://doi.org/10.18637/jss.v034.i02>`__
 
       Daniel, C., and Wood, F.S. (1971). *Fitting Equations to Data*.
       New York: John Wiley and Sons.

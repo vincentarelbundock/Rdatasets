@@ -97,20 +97,20 @@ rate from 2018 to 2030.</p>
 library(ggplot2)
 
 # List countries and areas' life expectancy, ordered by rank of life expectancy in 2018
-sowc_demographics %&gt;%
-  mutate(life_expectancy_change = life_expectancy_2018 - life_expectancy_1970) %&gt;%
-  mutate(rank_life_expectancy = round(rank(-life_expectancy_2018), 0)) %&gt;%
+sowc_demographics |&gt;
+  mutate(life_expectancy_change = life_expectancy_2018 - life_expectancy_1970) |&gt;
+  mutate(rank_life_expectancy = round(rank(-life_expectancy_2018), 0)) |&gt;
   select(
-  countries_and_areas, rank_life_expectancy, life_expectancy_2018,
+    countries_and_areas, rank_life_expectancy, life_expectancy_2018,
     life_expectancy_change
-    ) %&gt;%
+  ) |&gt;
   arrange(rank_life_expectancy)
 
 # List countries and areas' migration rate and population, ordered by rank of migration rate
-sowc_demographics %&gt;%
-  mutate(rank = round(rank(migration_rate))) %&gt;%
-  mutate(population_millions = total_pop_2018 / 1000) %&gt;%
-  select(countries_and_areas, rank, migration_rate, population_millions) %&gt;%
+sowc_demographics |&gt;
+  mutate(rank = round(rank(migration_rate))) |&gt;
+  mutate(population_millions = total_pop_2018 / 1000) |&gt;
+  select(countries_and_areas, rank, migration_rate, population_millions) |&gt;
   arrange(rank)
 
 # Scatterplot of life expectancy v population in 2018

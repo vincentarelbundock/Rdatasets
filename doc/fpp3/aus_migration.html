@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><title>R: Australian migration data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>aus_migration</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Australian migration data</h2>
+
+<h3>Description</h3>
+
+<p>Net Overseas Migration (NOM) to Australia.
+</p>
+
+
+<h3>Format</h3>
+
+<p>Time series of class 'tsibble'
+</p>
+
+
+<h3>Details</h3>
+
+<p><code>aus_migration</code> contains quarterly data with one measured variable:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    <code>NOM</code>:  </td><td style="text-align: left;"> The net gain or loss of population through immigration
+    to Australia and emigration from Australia</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+<p>from 1981 Q2 to 2023 Q3 for the 6 states and 2 territories of Australia, indexed by:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    <code>Quarter</code>:  </td><td style="text-align: left;"> Year-quarter.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+<p>NOM is based on an international traveller's duration of stay being in or out
+of Australia for 12 months or more, over a 16 month period.
+</p>
+<p>Each series is uniquely identified using the key:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    <code>State</code>: The state or territory.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Australian Bureau of Statistics. <a href="https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/dec-2023">https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/dec-2023</a>. Cat No. 310102.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+aus_migration
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -90,7 +90,7 @@ ggplot(oscars, aes(x = award, y = age)) +
 ggplot(oscars, aes(x = factor(birth_mo))) +
   geom_bar()
 
-oscars %&gt;%
+oscars |&gt;
   count(birth_pl, sort = TRUE)
 </code></pre>
 

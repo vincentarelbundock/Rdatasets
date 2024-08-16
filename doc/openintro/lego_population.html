@@ -1,0 +1,103 @@
+<!DOCTYPE html><html><head><title>R: Population of Lego Sets for Sale between Jan. 1, 2018 and...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>lego_population</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Population of Lego Sets for Sale between Jan. 1, 2018 and Sept. 11, 2020.</h2>
+
+<h3>Description</h3>
+
+<p>Data about Lego Sets for sale. Based on JSDSE article by Anna Peterson and Laura Ziegler
+Data from their article was scrapped from multiple sources including brickset.com
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>lego_population
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1304 rows and 14 variables.
+</p>
+
+<dl>
+<dt>item_number</dt><dd><p>Set Item number</p>
+</dd>
+<dt>set_name</dt><dd><p>Name of the set.</p>
+</dd>
+<dt>theme</dt><dd><p>Set theme: Duplo, City or Friends.</p>
+</dd>
+<dt>pieces</dt><dd><p>Number of pieces in the set.</p>
+</dd>
+<dt>price</dt><dd><p>Recommended retail price from LEGO.</p>
+</dd>
+<dt>amazon_price</dt><dd><p>Price of the set at Amazon.</p>
+</dd>
+<dt>year</dt><dd><p>Year that it was produced.</p>
+</dd>
+<dt>ages</dt><dd><p>LEGO's recommended ages of children for the set </p>
+</dd>
+<dt>pages</dt><dd><p>Pages in the instruction booklet.</p>
+</dd>
+<dt>minifigures</dt><dd><p>Number of LEGO people in the data, if unknown &quot;NA&quot; was recorded.</p>
+</dd>
+<dt>packaging</dt><dd><p>Type of packaging: bag, box, etc.</p>
+</dd>
+<dt>weight</dt><dd><p>Weight of the set of LEGOS in pounds and kilograms.</p>
+</dd>
+<dt>unique_pieces</dt><dd><p>Number of pieces classified as unique in the instruction manual.</p>
+</dd>
+<dt>size</dt><dd><p>Size of the lego pieces: Large if safe for small children and Small for older children.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Peterson, A. D., &amp; Ziegler, L. (2021). Building a multiple linear regression model with LEGO brick data. Journal of Statistics and Data Science Education, 29(3),1-7. <a href="https://doi.org/10.1080/26939169.2021.1946450">doi:10.1080/26939169.2021.1946450</a>
+</p>
+<p><a href="https://lego.brickinstructions.com/">BrickInstructions.com. (n.d.). Retrieved February 2, 2021 from</a>
+</p>
+<p><a href="https://brickset.com">Brickset. (n.d.). BRICKSET: Your LEGO® set guide. Retrieved February 2, 2021 from</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(ggplot2)
+library(dplyr)
+
+lego_population |&gt;
+  filter(theme == "Friends" | theme == "City") |&gt;
+  ggplot(aes(x = pieces, y = amazon_price)) +
+  geom_point(alpha = 0.3) +
+  labs(
+    x = "Pieces in the Set",
+    y = "Amazon Price",
+    title = "Amazon Price vs Number of Pieces in Lego Sets",
+    subtitle = "Friends and City Themes"
+  )
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

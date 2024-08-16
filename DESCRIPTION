@@ -60,7 +60,6 @@ Imports:
     KMsurv,
     lattice,
     lme4,
-    lmec,
     MASS,
     MatchIt,
     mediation,

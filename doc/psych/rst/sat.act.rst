@@ -53,8 +53,8 @@
       .. rubric:: Details
          :name: details
 
-      hese items were collected as part of the SAPA project
-      (https://www.sapa-project.org/)to develop online measures of
+      These items were collected as part of the SAPA project
+      (https://www.sapa-project.org/) to develop online measures of
       ability (Revelle, Wilt and Rosenthal, 2009). The score means are
       higher than national norms suggesting both self selection for
       people taking on line personality and ability tests and a self

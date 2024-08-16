@@ -59,7 +59,7 @@ the birth ratio was not actually 1:1.
 
 <h3>Source</h3>
 
-<p>These data are excerpted from the <code>Arbuthnot</code> data set in the
+<p>These data are excerpted from the <code>Arbuthnot</code> dataset in the
 <a href="https://CRAN.R-project.org/package=HistData">HistData</a> package.
 </p>
 
@@ -75,8 +75,8 @@ ggplot(arbuthnot, aes(x = year, y = boys + girls, group = 1)) +
   geom_line()
 
 # Boys and girls
-arbuthnot %&gt;%
-  pivot_longer(cols = -year, names_to = "sex", values_to = "n") %&gt;%
+arbuthnot |&gt;
+  pivot_longer(cols = -year, names_to = "sex", values_to = "n") |&gt;
   ggplot(aes(x = year, y = n, color = sex, group = sex)) +
   geom_line()
 </code></pre>

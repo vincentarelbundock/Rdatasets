@@ -1,0 +1,553 @@
+rownames,student,gender,method,mindwander,memory,interest,motivation_both,motivation_single
+1,1041206,Male,Live,0.3333,0.1667,neutral,Equally Motivated,somewhat motivated
+2,1041206,Male,Video,0.8333,0.3333,neutral,Equally Motivated,somewhat motivated
+3,1059999,Female,Live,0.1667,0.5,more interest,Live,somewhat motivated
+4,1059999,Female,Video,0.3333,0.6667,neutral,Live,somewhat unmotivated
+5,1080510,Male,Live,0.6667,0.3333,neutral,Live,somewhat motivated
+6,1080510,Male,Video,0.5,0.6667,more interest,Live,somewhat motivated
+7,1111105,Female,Live,0.5,0.5,neutral,Video,somewhat motivated
+8,1111105,Female,Video,0.3333,0.6667,little interest,Video,somewhat motivated
+9,1140707,Female,Live,0.1667,1,neutral,Live,somewhat motivated
+10,1140707,Female,Video,0.1667,0.6667,little interest,Live,somewhat motivated
+11,1171212,Male,Live,0.3333,0.8333,little interest,Live,somewhat motivated
+12,1171212,Male,Video,0.6667,0.6667,little interest,Live,very unmotivated
+13,1179999,Female,Live,0.3333,0.6667,more interest,Equally Motivated,somewhat motivated
+14,1179999,Female,Video,0.1667,1,more interest,Equally Motivated,somewhat motivated
+15,1180308,Female,Live,0.5,0.6667,more interest,Live,very motivated
+16,1180308,Female,Video,0.6667,1,more interest,Live,somewhat motivated
+17,1181003,Female,Live,0.8333,1,neutral,Live,somewhat motivated
+18,1181003,Female,Video,0.8333,1,neutral,Live,somewhat motivated
+19,1190902,Male,Live,0.3333,1,neutral,Equally Motivated,somewhat motivated
+20,1190902,Male,Video,0.1667,0.6667,neutral,Equally Motivated,neutral
+21,1191009,Male,Live,0.8333,0.6667,neutral,Live,somewhat motivated
+22,1191009,Male,Video,1,0.8333,little interest,Live,somewhat unmotivated
+23,1200399,Male,Live,0.8333,0.5,little interest,Equally Motivated,somewhat unmotivated
+24,1200399,Male,Video,0.8333,0.6667,least interest,Equally Motivated,somewhat motivated
+25,1231108,Female,Live,0.5,0.8333,little interest,Video,somewhat motivated
+26,1231108,Female,Video,0.5,0.6667,neutral,Video,somewhat motivated
+27,1270404,Female,Live,0.3333,0.5,least interest,Equally Motivated,very unmotivated
+28,1270404,Female,Video,0.5,0.1667,little interest,Equally Motivated,very unmotivated
+29,1270601,Male,Live,0.5,0.8333,neutral,Equally Motivated,somewhat motivated
+30,1270601,Male,Video,0.5,0.8333,neutral,Equally Motivated,somewhat motivated
+31,1270702,Male,Live,0.3333,0.5,little interest,Live,somewhat motivated
+32,1270702,Male,Video,0.5,0.5,neutral,Live,somewhat motivated
+33,1280612,Female,Live,0.6667,0.8333,neutral,Live,somewhat motivated
+34,1280612,Female,Video,0.6667,0.6667,little interest,Live,somewhat unmotivated
+35,1310501,Female,Live,0.5,0.8333,neutral,Live,somewhat motivated
+36,1310501,Female,Video,0.3333,0.8333,neutral,Live,neutral
+37,2010102,Female,Live,0.6667,0.8333,little interest,Equally Motivated,somewhat motivated
+38,2010102,Female,Video,0.5,0.8333,little interest,Equally Motivated,somewhat motivated
+39,2020912,Male,Live,0.3333,1,more interest,Live,somewhat motivated
+40,2020912,Male,Video,0.3333,0.5,more interest,Live,somewhat motivated
+41,2021012,Female,Live,0.5,0.8333,more interest,Equally Motivated,somewhat motivated
+42,2021012,Female,Video,0.6667,0.8333,more interest,Equally Motivated,somewhat motivated
+43,2040803,Female,Live,0.3333,0.8333,neutral,Live,somewhat motivated
+44,2040803,Female,Video,0.2,1,neutral,Live,somewhat motivated
+45,2041001,Female,Live,0.1667,0.5,neutral,Live,very motivated
+46,2041001,Female,Video,0.3333,0.5,neutral,Live,somewhat motivated
+47,2051112,Male,Live,0.1667,0.8333,more interest,,very motivated
+48,2051112,Male,Video,0.5,0.8333,,,
+49,2070211,Female,Live,0.8333,0.6667,neutral,Live,somewhat unmotivated
+50,2070211,Female,Video,0.6667,0.6667,neutral,Live,somewhat unmotivated
+51,2071105,Female,Live,0.6667,0.8333,more interest,Live,somewhat motivated
+52,2071105,Female,Video,1,0.6667,little interest,Live,somewhat motivated
+53,2080310,Female,Live,0.8333,1,more interest,Live,somewhat motivated
+54,2080310,Female,Video,0.5,0.3333,neutral,Live,neutral
+55,2090709,Female,Live,0.8333,0.8333,more interest,Live,somewhat motivated
+56,2090709,Female,Video,0.8333,0.6667,more interest,Live,somewhat motivated
+57,2110804,Female,Live,0.5,0.6667,more interest,Live,very motivated
+58,2110804,Female,Video,0.3333,0.5,little interest,Live,somewhat unmotivated
+59,2140208,Female,Live,0.5,0.6667,more interest,Live,somewhat motivated
+60,2140208,Female,Video,0.6667,0.6667,neutral,Live,somewhat unmotivated
+61,2150307,Female,Live,0.5,0.3333,little interest,Equally Motivated,somewhat unmotivated
+62,2150307,Female,Video,0.3333,0.6667,neutral,Equally Motivated,somewhat motivated
+63,2161108,Male,Live,0.1667,0.8333,neutral,Live,very motivated
+64,2161108,Male,Video,0,0.8333,little interest,Live,somewhat motivated
+65,2170499,Male,Live,0.3333,0.5,neutral,Live,somewhat motivated
+66,2170499,Male,Video,0.6667,0.8333,little interest,Live,somewhat motivated
+67,2180606,Male,Live,0.6667,0.6667,more interest,Live,somewhat motivated
+68,2180606,Male,Video,1,0.6667,,Live,very unmotivated
+69,2241008,Male,Live,0.3333,0.6667,more interest,Live,somewhat unmotivated
+70,2241008,Male,Video,0.5,0.6667,least interest,Live,very unmotivated
+71,2249912,Male,Live,0.1667,1,more interest,Live,very motivated
+72,2249912,Male,Video,0.1667,0.8333,neutral,Live,somewhat motivated
+73,2250809,Male,Live,0.1667,0.6667,more interest,Equally Motivated,somewhat motivated
+74,2250809,Male,Video,0.6667,0.6667,more interest,Equally Motivated,somewhat motivated
+75,2280407,Female,Live,0.3333,1,more interest,Live,somewhat motivated
+76,2280407,Female,Video,0.5,0.5,neutral,Live,somewhat motivated
+77,2280509,Female,Live,0.6667,0.8333,more interest,Live,somewhat motivated
+78,2280509,Female,Video,1,1,neutral,Live,neutral
+79,3010804,Male,Live,0.3333,0.5,neutral,Live,somewhat motivated
+80,3010804,Male,Video,0.6667,0.6667,neutral,Live,neutral
+81,3011107,Female,Live,0.5,0.8333,little interest,Equally Motivated,very motivated
+82,3011107,Female,Video,0.3333,0.8333,little interest,Equally Motivated,somewhat motivated
+83,3040301,Female,Live,0.3333,0.6667,neutral,Equally Motivated,somewhat unmotivated
+84,3040301,Female,Video,0.6667,0.5,neutral,Equally Motivated,neutral
+85,3040511,Female,Live,0.5,0.5,neutral,Video,somewhat motivated
+86,3040511,Female,Video,0.1667,1,neutral,Video,somewhat motivated
+87,3080607,Male,Live,0.6667,1,little interest,Video,somewhat motivated
+88,3080607,Male,Video,0.5,0.5,neutral,Video,somewhat motivated
+89,3090308,Female,Live,0.5,0.6667,neutral,Live,somewhat motivated
+90,3090308,Female,Video,0.6667,0.8333,neutral,Live,somewhat unmotivated
+91,3091010,Female,Live,0.3333,1,more interest,Equally Motivated,very motivated
+92,3091010,Female,Video,0.5,1,neutral,Equally Motivated,somewhat motivated
+93,3140908,Female,Live,0.5,1,neutral,Live,neutral
+94,3140908,Female,Video,0.6667,0.6667,neutral,Live,somewhat unmotivated
+95,3161005,Male,Live,0.5,1,more interest,Live,very motivated
+96,3161005,Male,Video,0.3333,0.5,neutral,Live,somewhat motivated
+97,3181028,Female,Live,0.3333,0.8333,neutral,Live,somewhat motivated
+98,3181028,Female,Video,0.8333,0.5,little interest,Live,somewhat unmotivated
+99,3210303,Female,Live,0.5,1,more interest,Live,somewhat motivated
+100,3210303,Female,Video,0.6667,1,greatest interest,Live,somewhat motivated
+101,3210408,Female,Live,0,0.6667,more interest,Live,very motivated
+102,3210408,Female,Video,0.3333,0.6667,more interest,Live,somewhat unmotivated
+103,3210607,Female,Live,0.5,1,little interest,Video,somewhat motivated
+104,3210607,Female,Video,0.1667,0.6667,little interest,Video,somewhat motivated
+105,3225858,Male,Live,0.8333,0.8333,more interest,Equally Motivated,somewhat motivated
+106,3225858,Male,Video,0.8333,0.8333,more interest,Equally Motivated,somewhat unmotivated
+107,3230701,Female,Live,0.8333,0.8333,neutral,Live,somewhat unmotivated
+108,3230701,Female,Video,0.5,0.8333,neutral,Live,neutral
+109,3241009,Male,Live,0.5,0.8333,neutral,Equally Motivated,somewhat motivated
+110,3241009,Male,Video,0.5,1,neutral,Equally Motivated,somewhat motivated
+111,3281101,Male,Live,0.6667,0.6667,little interest,Equally Motivated,somewhat unmotivated
+112,3281101,Male,Video,0.5,1,neutral,Equally Motivated,somewhat unmotivated
+113,3290801,Male,Live,0.5,1,neutral,Live,neutral
+114,3290801,Male,Video,0.1667,0.6667,neutral,Live,neutral
+115,3299999,Female,Live,0.3333,0.5,least interest,Live,neutral
+116,3299999,Female,Video,0.6667,0.6667,little interest,Live,neutral
+117,3319901,Male,Live,1,0.8333,little interest,Live,somewhat motivated
+118,3319901,Male,Video,0.6667,0.5,little interest,Live,very unmotivated
+119,4040902,Female,Live,0.1667,0.6667,more interest,Live,very motivated
+120,4040902,Female,Video,0.1667,0.8333,neutral,Live,somewhat motivated
+121,4070403,Male,Live,1,0.8333,least interest,Live,somewhat motivated
+122,4070403,Male,Video,1,0.5,little interest,Live,very unmotivated
+123,4091007,Female,Live,0.3333,0.6667,little interest,Live,somewhat motivated
+124,4091007,Female,Video,0.1667,0.5,least interest,Live,very unmotivated
+125,4099999,Male,Live,0.3333,0.6667,neutral,Equally Motivated,somewhat motivated
+126,4099999,Male,Video,0.5,0.5,little interest,Equally Motivated,somewhat motivated
+127,4111009,Male,Live,0.5,0.3333,little interest,Live,neutral
+128,4111009,Male,Video,0.5,0.3333,neutral,Live,neutral
+129,4111206,Male,Live,0.6667,0.5,little interest,Equally Motivated,somewhat unmotivated
+130,4111206,Male,Video,0.8333,0.5,neutral,Equally Motivated,somewhat unmotivated
+131,4131211,Female,Live,0.3333,0.8333,more interest,,somewhat motivated
+132,4131211,Female,Video,0.6667,0.5,,,
+133,4150912,Male,Live,0.3333,0.8333,neutral,Live,somewhat motivated
+134,4150912,Male,Video,0.3333,0.6667,neutral,Live,somewhat motivated
+135,4161210,Female,Live,0.5,0.6667,more interest,Equally Motivated,very motivated
+136,4161210,Female,Video,0.3333,0.8333,more interest,Equally Motivated,very motivated
+137,4180110,Female,Live,0.8333,0.6667,little interest,Video,neutral
+138,4180110,Female,Video,0.3333,0.8333,little interest,Video,somewhat motivated
+139,4180799,Female,Live,0.3333,0.3333,,Live,
+140,4180799,Female,Video,0,0.8333,least interest,Live,neutral
+141,4199999,Female,Live,0.4,0.5,more interest,Live,somewhat motivated
+142,4199999,Female,Video,0.8333,0.6667,neutral,Live,somewhat unmotivated
+143,4200308,Female,Live,0.3333,0.8333,neutral,Live,very motivated
+144,4200308,Female,Video,0.3333,0.8333,little interest,Live,very motivated
+145,4200609,Male,Live,0.5,1,little interest,Live,neutral
+146,4200609,Male,Video,0.8333,0.8333,neutral,Live,somewhat unmotivated
+147,4220511,Female,Live,0.6667,1,neutral,Equally Motivated,somewhat motivated
+148,4220511,Female,Video,0.5,1,neutral,Equally Motivated,somewhat motivated
+149,4250401,Female,Live,0.1667,0.6667,more interest,Live,very motivated
+150,4250401,Female,Video,1,0.8333,little interest,Live,somewhat unmotivated
+151,4260112,Female,Live,0.3333,1,neutral,Equally Motivated,somewhat unmotivated
+152,4260112,Female,Video,0.3333,0.6667,neutral,Equally Motivated,somewhat motivated
+153,4260501,Female,Live,0,0.8333,neutral,Equally Motivated,somewhat motivated
+154,4260501,Female,Video,0,0.8333,neutral,Equally Motivated,very motivated
+155,4271211,Female,Live,0.8333,0.5,,Live,
+156,4271211,Female,Video,0.8333,0.5,neutral,Live,somewhat motivated
+157,4280412,Female,Live,0.3333,1,more interest,Equally Motivated,very motivated
+158,4280412,Female,Video,0.3333,0.6667,more interest,Equally Motivated,somewhat unmotivated
+159,4280608,Female,Live,0.5,0.6667,neutral,,neutral
+160,4280608,Female,Video,0.3333,0.6667,,,
+161,4301109,Female,Live,0.3333,1,neutral,Live,somewhat motivated
+162,4301109,Female,Video,0.3333,0.8333,little interest,Live,neutral
+163,5050399,Female,Live,0.6667,0.8333,more interest,Equally Motivated,somewhat motivated
+164,5050399,Female,Video,0.6667,0.8333,neutral,Equally Motivated,somewhat motivated
+165,5060111,Female,Live,0.5,0.1667,more interest,Equally Motivated,somewhat motivated
+166,5060111,Female,Video,0.5,0.8333,neutral,Equally Motivated,somewhat motivated
+167,5070710,Female,Live,0.6667,1,more interest,Live,somewhat motivated
+168,5070710,Female,Video,0.6667,0.8333,little interest,Live,somewhat motivated
+169,5080410,Female,Live,0.6667,0.8333,neutral,Live,neutral
+170,5080410,Female,Video,0.6667,0.8333,little interest,Live,very unmotivated
+171,5091009,Male,Live,0.5,1,more interest,Video,very motivated
+172,5091009,Male,Video,0.3333,0.8333,more interest,Video,somewhat motivated
+173,5130527,Female,Live,0.6667,0.6667,neutral,Live,neutral
+174,5130527,Female,Video,1,0.5,little interest,Live,somewhat unmotivated
+175,5140902,Female,Live,0,0.8333,more interest,Equally Motivated,very motivated
+176,5140902,Female,Video,0,0.8333,more interest,Equally Motivated,very motivated
+177,5141011,Male,Live,0.6667,1,neutral,Live,neutral
+178,5141011,Male,Video,0.6667,0.5,little interest,Live,neutral
+179,5141112,Male,Live,0.1667,0.5,more interest,Live,very motivated
+180,5141112,Male,Video,0.6667,1,neutral,Live,somewhat motivated
+181,5170605,Female,Live,0.3333,0.8333,little interest,Equally Motivated,somewhat motivated
+182,5170605,Female,Video,0.5,0.8333,neutral,Equally Motivated,somewhat motivated
+183,5171202,Male,Live,0.3333,0.5,more interest,Live,somewhat motivated
+184,5171202,Male,Video,0.5,0.6667,more interest,Live,somewhat motivated
+185,5190308,Female,Live,0.1667,0.6667,more interest,Video,very motivated
+186,5190308,Female,Video,0.3333,0.6667,more interest,Video,very motivated
+187,5190708,Male,Live,0.6667,0.8333,neutral,Live,neutral
+188,5190708,Male,Video,0.6667,0.6667,least interest,Live,very unmotivated
+189,5190809,Female,Live,0.3333,0.8333,more interest,Live,neutral
+190,5190809,Female,Video,0.5,0.5,neutral,Live,neutral
+191,5230710,Female,Live,0.5,0.5,little interest,,somewhat motivated
+192,5230710,Female,Video,0.8333,0.8333,,,
+193,5240207,Female,Live,0.3333,0.3333,,Live,
+194,5240207,Female,Video,0.3333,0.8333,neutral,Live,somewhat motivated
+195,5271111,Female,Live,0.6667,0.6667,more interest,Live,somewhat motivated
+196,5271111,Female,Video,0.8333,0.6667,neutral,Live,somewhat unmotivated
+197,5280207,Male,Live,0.5,0.6667,more interest,Live,somewhat motivated
+198,5280207,Male,Video,0.3333,0.3333,little interest,Live,very unmotivated
+199,5291102,Female,Live,0.6667,0,little interest,Video,somewhat motivated
+200,5291102,Female,Video,0,0.6667,neutral,Video,somewhat motivated
+201,6010806,Female,Live,0.3333,0.8333,more interest,Video,very motivated
+202,6010806,Female,Video,0.3333,0.3333,more interest,Video,very motivated
+203,6020501,Female,Live,0.6667,0.8333,neutral,Equally Motivated,very motivated
+204,6020501,Female,Video,0.5,0.6667,little interest,Equally Motivated,somewhat motivated
+205,6020509,Male,Live,0.6667,0.6667,neutral,Equally Motivated,somewhat motivated
+206,6020509,Male,Video,0.6667,0.6667,neutral,Equally Motivated,neutral
+207,6030907,Female,Live,0.8333,0.6667,little interest,Live,somewhat motivated
+208,6030907,Female,Video,1,0.3333,little interest,Live,somewhat motivated
+209,6080601,Female,Live,0.1667,1,greatest interest,Live,very unmotivated
+210,6080601,Female,Video,0.3333,0.8333,neutral,Live,somewhat unmotivated
+211,6090111,Female,Live,0.6667,0.8333,more interest,Equally Motivated,somewhat motivated
+212,6090111,Female,Video,0.3333,0.8333,more interest,Equally Motivated,somewhat motivated
+213,6100307,Female,Live,0.5,0.8333,neutral,Equally Motivated,somewhat motivated
+214,6100307,Female,Video,0,0.8333,more interest,Equally Motivated,somewhat motivated
+215,6120604,Female,Live,0.6667,0.6667,neutral,Video,somewhat motivated
+216,6120604,Female,Video,0.3333,0.5,neutral,Video,somewhat unmotivated
+217,6151108,Female,Live,0.1667,0.6667,little interest,Live,somewhat motivated
+218,6151108,Female,Video,0.5,0.6667,neutral,Live,neutral
+219,6180306,Male,Live,0.6667,0.3333,neutral,Live,somewhat motivated
+220,6180306,Male,Video,0.6667,0.6667,more interest,Live,somewhat motivated
+221,6200204,Female,Live,0.6667,1,,Video,
+222,6200204,Female,Video,0.1667,0.3333,neutral,Video,somewhat motivated
+223,6210499,Female,Live,0.5,1,neutral,Live,very motivated
+224,6210499,Female,Video,0.8333,0.5,little interest,Live,somewhat motivated
+225,6220311,Female,Live,0.5,0.8333,neutral,Video,neutral
+226,6220311,Female,Video,0.1667,0.6667,more interest,Video,neutral
+227,6221112,Female,Live,1,1,little interest,Live,somewhat unmotivated
+228,6221112,Female,Video,1,0.8333,neutral,Live,very unmotivated
+229,6231004,Female,Live,0.3333,0.6667,neutral,Equally Motivated,somewhat motivated
+230,6231004,Female,Video,0.3333,0.6667,greatest interest,Equally Motivated,somewhat motivated
+231,6270807,Male,Live,0.1667,0.8333,neutral,Live,somewhat motivated
+232,6270807,Male,Video,0,0.8333,neutral,Live,somewhat motivated
+233,6290103,Male,Live,0.5,1,more interest,Live,somewhat motivated
+234,6290103,Male,Video,0.1667,0.8333,more interest,Live,somewhat motivated
+235,6290309,Male,Live,0.5,1,neutral,Live,somewhat motivated
+236,6290309,Male,Video,0.6667,1,little interest,Live,somewhat unmotivated
+237,6291010,Female,Live,0.6667,0.5,neutral,Live,somewhat unmotivated
+238,6291010,Female,Video,0.6667,0.6667,little interest,Live,very unmotivated
+239,6309999,Female,Live,0.5,0.6667,neutral,Live,somewhat motivated
+240,6309999,Female,Video,0.5,0.5,more interest,Live,neutral
+241,7010503,Male,Live,0.3333,0.8333,neutral,Equally Motivated,neutral
+242,7010503,Male,Video,0,0.8333,neutral,Equally Motivated,neutral
+243,7010508,Female,Live,0,0.8333,more interest,Equally Motivated,somewhat motivated
+244,7010508,Female,Video,0,0.8333,neutral,Equally Motivated,somewhat motivated
+245,7020304,Female,Live,0.1667,1,more interest,Live,somewhat motivated
+246,7020304,Female,Video,0.5,1,neutral,Live,somewhat motivated
+247,7030912,Female,Live,0.8333,0.5,little interest,Equally Motivated,somewhat unmotivated
+248,7030912,Female,Video,0.3333,0.8333,little interest,Equally Motivated,somewhat unmotivated
+249,7040210,Female,Live,0.6667,0.6667,,Equally Motivated,
+250,7040210,Female,Video,0.3333,0.6667,neutral,Equally Motivated,neutral
+251,7040820,Female,Live,0.5,0.8333,neutral,Video,somewhat unmotivated
+252,7040820,Female,Video,0.3333,0.8333,neutral,Video,somewhat motivated
+253,7041012,Female,Live,0.6667,1,neutral,Equally Motivated,somewhat motivated
+254,7041012,Female,Video,0.3333,0.6667,neutral,Equally Motivated,neutral
+255,7070903,Female,Live,0,1,neutral,Live,somewhat unmotivated
+256,7070903,Female,Video,0.3333,0.6667,neutral,Live,somewhat motivated
+257,7081208,Female,Live,0.5,0.8333,little interest,Equally Motivated,somewhat motivated
+258,7081208,Female,Video,0.1667,1,little interest,Equally Motivated,somewhat motivated
+259,7100611,Female,Live,0.5,0.6667,,Equally Motivated,
+260,7100611,Female,Video,0.3333,0.5,little interest,Equally Motivated,somewhat motivated
+261,7101009,Male,Live,0.3333,1,neutral,Live,somewhat unmotivated
+262,7101009,Male,Video,0.6667,0.8333,neutral,Live,somewhat motivated
+263,7101110,Female,Live,0.5,0.8333,,Equally Motivated,
+264,7101110,Female,Video,0.2,0.6667,more interest,Equally Motivated,very unmotivated
+265,7120110,Male,Live,0.5,0.8333,neutral,Equally Motivated,somewhat motivated
+266,7120110,Male,Video,0.5,0.5,more interest,Equally Motivated,somewhat motivated
+267,7130205,Male,Live,0.3333,0.8333,neutral,Live,neutral
+268,7130205,Male,Video,0.6667,0.6667,little interest,Live,somewhat unmotivated
+269,7140999,Male,Live,0.5,0.8333,neutral,Video,neutral
+270,7140999,Male,Video,0.1667,1,neutral,Video,somewhat motivated
+271,7141002,Male,Live,0.1667,0.6667,little interest,Equally Motivated,somewhat motivated
+272,7141002,Male,Video,0.1667,0.5,little interest,Equally Motivated,very motivated
+273,7141101,Female,Live,0.1667,0.8333,neutral,Video,somewhat motivated
+274,7141101,Female,Video,0.1667,0.6667,neutral,Video,somewhat motivated
+275,7141111,Male,Live,0.5,0.8333,neutral,Live,neutral
+276,7141111,Male,Video,0.1667,1,little interest,Live,neutral
+277,7150712,Male,Live,0.1667,1,neutral,,very motivated
+278,7150712,Male,Video,0.1667,0.6667,neutral,,somewhat motivated
+279,7160599,Male,Live,1,0.8333,neutral,Equally Motivated,somewhat motivated
+280,7160599,Male,Video,1,0.6667,neutral,Equally Motivated,somewhat unmotivated
+281,7171003,Female,Live,0.6667,0.6667,little interest,Live,somewhat motivated
+282,7171003,Female,Video,0.6667,0.3333,little interest,Live,somewhat motivated
+283,7200805,Female,Live,0.3333,1,more interest,Live,somewhat motivated
+284,7200805,Female,Video,0.5,1,neutral,Live,somewhat motivated
+285,7210111,Female,Live,0.5,1,neutral,Live,somewhat motivated
+286,7210111,Female,Video,0.5,0.6667,little interest,Live,somewhat motivated
+287,7210311,Female,Live,0.5,0.6667,little interest,,neutral
+288,7210311,Female,Video,0.6667,0.6667,,,
+289,7210911,Male,Live,0.6667,0.5,neutral,Live,somewhat unmotivated
+290,7210911,Male,Video,0.3333,0.8333,neutral,Live,somewhat unmotivated
+291,7211110,Male,Live,1,0.5,little interest,Equally Motivated,very unmotivated
+292,7211110,Male,Video,0.6667,0.3333,little interest,Equally Motivated,somewhat unmotivated
+293,7221199,Female,Live,0.5,0.5,neutral,Video,somewhat motivated
+294,7221199,Female,Video,0.8333,0.5,least interest,Video,somewhat motivated
+295,7261109,Female,Live,0.3333,1,neutral,Live,somewhat motivated
+296,7261109,Female,Video,0.1667,0.8333,little interest,Live,neutral
+297,7290211,Female,Live,0.8333,0.3333,neutral,Live,very unmotivated
+298,7290211,Female,Video,1,0.8333,neutral,Live,very unmotivated
+299,7290910,Female,Live,0.1667,0.5,neutral,Live,somewhat motivated
+300,7290910,Female,Video,0.8333,0.8333,least interest,Live,somewhat unmotivated
+301,7300410,Male,Live,0.8333,1,little interest,Live,somewhat motivated
+302,7300410,Male,Video,0.6667,1,little interest,Live,somewhat motivated
+303,7300801,Female,Live,0.1667,1,more interest,Live,very motivated
+304,7300801,Female,Video,0.3333,0.6667,more interest,Live,very motivated
+305,8020407,Female,Live,0.8333,0.5,more interest,Live,somewhat motivated
+306,8020407,Female,Video,0.8333,0.5,more interest,Live,somewhat unmotivated
+307,8021107,Female,Live,0.5,0.5,more interest,Live,very motivated
+308,8021107,Female,Video,0.8333,0.6667,little interest,Live,somewhat motivated
+309,8029999,Male,Live,0.3333,0.8333,little interest,Live,very motivated
+310,8029999,Male,Video,0.5,0.5,little interest,Live,somewhat unmotivated
+311,8070810,Female,Live,0.3333,1,more interest,Live,somewhat unmotivated
+312,8070810,Female,Video,1,0.3333,neutral,Live,somewhat unmotivated
+313,8080303,Female,Live,0.3333,1,neutral,Video,somewhat motivated
+314,8080303,Female,Video,0.3333,1,more interest,Video,somewhat motivated
+315,8090806,Female,Live,0.6667,0.6667,greatest interest,Equally Motivated,very motivated
+316,8090806,Female,Video,0.1667,0.8333,greatest interest,Equally Motivated,very motivated
+317,8091010,Female,Live,0.1667,0.8333,neutral,Live,somewhat motivated
+318,8091010,Female,Video,0.3333,1,neutral,Live,somewhat motivated
+319,8110304,Male,Live,0,0.6667,more interest,Equally Motivated,very motivated
+320,8110304,Male,Video,0,0.8,neutral,Equally Motivated,very unmotivated
+321,8111206,Female,Live,0.3333,0.8333,neutral,Live,somewhat unmotivated
+322,8111206,Female,Video,0.5,0.8333,neutral,Live,somewhat motivated
+323,8119908,Male,Live,0.6667,0.5,little interest,Equally Motivated,neutral
+324,8119908,Male,Video,0.8333,0.8333,little interest,Equally Motivated,somewhat motivated
+325,8140412,Female,Live,0.3333,0.6667,neutral,Live,very motivated
+326,8140412,Female,Video,0.3333,0.3333,neutral,Live,very motivated
+327,8140607,Female,Live,0.3333,0.8333,more interest,Live,neutral
+328,8140607,Female,Video,0.1667,0.8333,little interest,Live,neutral
+329,8150804,Female,Live,0.3333,0.6667,neutral,Equally Motivated,somewhat motivated
+330,8150804,Female,Video,0.5,0.6667,little interest,Equally Motivated,somewhat motivated
+331,8170305,Female,Live,0.8333,0.8333,least interest,Equally Motivated,very unmotivated
+332,8170305,Female,Video,0.8333,0.8333,little interest,Equally Motivated,very unmotivated
+333,8189999,Male,Live,0.5,1,more interest,Equally Motivated,somewhat motivated
+334,8189999,Male,Video,0.3333,0.5,more interest,Equally Motivated,somewhat motivated
+335,8199999,Male,Live,0.6667,0.1667,,Live,
+336,8199999,Male,Video,0.5,0.6667,neutral,Live,neutral
+337,8200599,Female,Live,0.5,0.8333,more interest,Equally Motivated,neutral
+338,8200599,Female,Video,0.5,0.6667,more interest,Equally Motivated,somewhat motivated
+339,8201111,Male,Live,0.3333,0.8333,neutral,Live,somewhat motivated
+340,8201111,Male,Video,0.3333,0.8333,little interest,Live,neutral
+341,8201207,Female,Live,0.8333,0.8333,little interest,Video,very unmotivated
+342,8201207,Female,Video,0.6667,0.6667,more interest,Video,somewhat motivated
+343,8219999,Male,Live,0.5,0.6667,little interest,Live,somewhat motivated
+344,8219999,Male,Video,0.6667,1,least interest,Live,somewhat unmotivated
+345,8220702,Female,Live,0.6667,0.1667,neutral,Live,somewhat motivated
+346,8220702,Female,Video,0.8333,0.6667,little interest,Live,somewhat unmotivated
+347,8230111,Female,Live,0.5,0.8333,little interest,Live,neutral
+348,8230111,Female,Video,0.3333,0.5,neutral,Live,somewhat motivated
+349,8240709,Female,Live,0.1667,0.6667,neutral,Video,somewhat motivated
+350,8240709,Female,Video,0.3333,0.3333,neutral,Video,somewhat unmotivated
+351,8250411,Female,Live,0.5,0.8333,neutral,Equally Motivated,very motivated
+352,8250411,Female,Video,0.3333,0.8333,neutral,Equally Motivated,very motivated
+353,8251105,Female,Live,0.5,0.8333,more interest,Equally Motivated,somewhat motivated
+354,8251105,Female,Video,0.3333,0.5,more interest,Equally Motivated,somewhat unmotivated
+355,8251205,Male,Live,0.5,0.5,neutral,Live,somewhat motivated
+356,8251205,Male,Video,0.8333,0.8333,little interest,Live,somewhat motivated
+357,8270810,Male,Live,0.5,0.8333,least interest,Video,somewhat motivated
+358,8270810,Male,Video,0.1667,0.5,more interest,Video,somewhat motivated
+359,8270912,Female,Live,0.5,1,neutral,Live,neutral
+360,8270912,Female,Video,0.6667,0.6667,neutral,Live,somewhat unmotivated
+361,8301101,Female,Live,0.3333,0.5,more interest,Live,somewhat motivated
+362,8301101,Female,Video,0.3333,0.6667,more interest,Live,neutral
+363,8301201,Female,Live,0.6667,0.6667,little interest,Live,somewhat unmotivated
+364,8301201,Female,Video,0.5,0.8333,little interest,Live,somewhat motivated
+365,8310811,Female,Live,0.5,0.8333,more interest,Equally Motivated,neutral
+366,8310811,Female,Video,0.3333,0.6667,more interest,Equally Motivated,somewhat unmotivated
+367,8311103,Female,Live,0,0.6667,more interest,Live,somewhat motivated
+368,8311103,Female,Video,0.1667,0.6667,more interest,Live,somewhat motivated
+369,9031108,Female,Live,0.5,0.5,neutral,Equally Motivated,somewhat motivated
+370,9031108,Female,Video,0.5,0.5,neutral,Equally Motivated,somewhat motivated
+371,9040406,Male,Live,1,0.8333,neutral,Live,very motivated
+372,9040406,Male,Video,1,0.4,neutral,Live,somewhat motivated
+373,9040804,Female,Live,0.5,0.6667,little interest,Live,somewhat motivated
+374,9040804,Female,Video,0.6667,0.3333,little interest,Live,somewhat motivated
+375,9041011,Female,Live,0.6667,0.8333,little interest,Live,neutral
+376,9041011,Female,Video,0.8333,0,little interest,Live,somewhat unmotivated
+377,9050809,Male,Live,0.3333,0.6667,neutral,Live,somewhat motivated
+378,9050809,Male,Video,0.3333,0.3333,little interest,Live,somewhat motivated
+379,9061204,Female,Live,0,0.6667,more interest,Live,somewhat motivated
+380,9061204,Female,Video,0.5,0.6667,neutral,Live,somewhat motivated
+381,9080209,Male,Live,0,0.6667,more interest,Live,somewhat motivated
+382,9080209,Male,Video,0.6667,0.8333,neutral,Live,somewhat unmotivated
+383,9080309,Male,Live,0.3333,1,neutral,Live,somewhat unmotivated
+384,9080309,Male,Video,0,1,neutral,Live,somewhat motivated
+385,9091001,Female,Live,0.1667,1,more interest,Live,very unmotivated
+386,9091001,Female,Video,0.1667,1,more interest,Live,very motivated
+387,9109999,Female,Live,0.3333,0.6667,,,
+388,9109999,Female,Video,0.5,0.3333,,,
+389,9110703,Female,Live,1,0.6667,little interest,Live,somewhat motivated
+390,9110703,Female,Video,1,0.8333,least interest,Live,very unmotivated
+391,9130907,Male,Live,0.6667,0.6667,least interest,Live,neutral
+392,9130907,Male,Video,0.8333,0.8333,little interest,Live,somewhat unmotivated
+393,9140502,Male,Live,0.8333,0.8333,little interest,Equally Motivated,somewhat unmotivated
+394,9140502,Male,Video,0,0.6667,neutral,Equally Motivated,very unmotivated
+395,9151101,Female,Live,0.1667,0.8333,more interest,Video,somewhat unmotivated
+396,9151101,Female,Video,0.3333,1,neutral,Video,somewhat motivated
+397,9160309,Female,Live,0.3333,0.5,little interest,Equally Motivated,somewhat unmotivated
+398,9160309,Female,Video,0,0.6667,neutral,Equally Motivated,somewhat motivated
+399,9180904,Female,Live,0.3333,0.6667,neutral,Equally Motivated,somewhat unmotivated
+400,9180904,Female,Video,0.5,0.5,little interest,Equally Motivated,somewhat unmotivated
+401,9201104,Male,Live,0.6667,1,neutral,Live,neutral
+402,9201104,Male,Video,0.6667,0.5,little interest,Live,very unmotivated
+403,9220703,Male,Live,0.6667,1,little interest,Live,neutral
+404,9220703,Male,Video,0.5,0.6667,neutral,Live,neutral
+405,9230905,Male,Live,0,0.6667,more interest,Live,somewhat unmotivated
+406,9230905,Male,Video,0.1667,0.3333,more interest,Live,somewhat unmotivated
+407,9260505,Female,Live,0.3333,0.8333,more interest,Live,somewhat motivated
+408,9260505,Female,Video,0.3333,0.5,neutral,Live,neutral
+409,9261205,Female,Live,0.1667,0.5,,Equally Motivated,
+410,9261205,Female,Video,0.3333,0.8333,neutral,Equally Motivated,very motivated
+411,9290105,Male,Live,1,0.8333,least interest,Live,somewhat unmotivated
+412,9290105,Male,Video,1,0.5,least interest,Live,very unmotivated
+413,9290602,Female,Live,0.3333,0.8333,neutral,Equally Motivated,somewhat motivated
+414,9290602,Female,Video,0.1667,1,little interest,Equally Motivated,neutral
+415,10021008,Female,Live,0.5,0.6667,neutral,Live,neutral
+416,10021008,Female,Video,0.6667,0.3333,least interest,Live,very unmotivated
+417,10050111,Female,Live,0.3333,0.5,little interest,Live,somewhat motivated
+418,10050111,Female,Video,0.8333,0.6667,little interest,Live,somewhat motivated
+419,10060406,Female,Live,0.5,0.5,neutral,Live,somewhat motivated
+420,10060406,Female,Video,0.3333,0.6667,neutral,Live,somewhat motivated
+421,10079999,Male,Live,0.1667,0.5,little interest,Live,somewhat motivated
+422,10079999,Male,Video,0.3333,0.5,neutral,Live,somewhat motivated
+423,10090804,Male,Live,1,0.6667,neutral,Live,somewhat motivated
+424,10090804,Male,Video,1,0.5,little interest,Live,very unmotivated
+425,10090809,Male,Live,0.5,1,neutral,Live,neutral
+426,10090809,Male,Video,0.5,0.5,little interest,Live,somewhat unmotivated
+427,10100602,Female,Live,0.5,0.5,neutral,Live,somewhat motivated
+428,10100602,Female,Video,0.8333,0.5,little interest,Live,somewhat unmotivated
+429,10101109,Male,Live,0.6667,0.8333,neutral,Live,somewhat motivated
+430,10101109,Male,Video,0.8333,0.3333,least interest,Live,somewhat motivated
+431,10110512,Female,Live,0.3333,0.8333,neutral,Video,somewhat motivated
+432,10110512,Female,Video,0.1667,0.8333,more interest,Video,very motivated
+433,10140906,Female,Live,0.5,0.8333,little interest,Live,neutral
+434,10140906,Female,Video,0.5,1,neutral,Live,somewhat unmotivated
+435,10161110,Female,Live,0.5,1,more interest,Live,somewhat motivated
+436,10161110,Female,Video,0.6667,0.8333,neutral,Live,somewhat motivated
+437,10191209,Female,Live,0.6667,0.3333,neutral,Live,neutral
+438,10191209,Female,Video,0.6667,1,neutral,Live,neutral
+439,10200105,Male,Live,0.3333,0.6667,neutral,Equally Motivated,very motivated
+440,10200105,Male,Video,0.3333,0.8333,neutral,Equally Motivated,somewhat motivated
+441,10201106,Female,Live,0.8333,0.5,neutral,Live,somewhat motivated
+442,10201106,Female,Video,0.8333,0.5,little interest,Live,somewhat unmotivated
+443,10210212,Female,Live,0.6667,1,more interest,Live,very motivated
+444,10210212,Female,Video,1,0.6667,more interest,Live,neutral
+445,10220711,Female,Live,0.5,0.8333,more interest,Video,somewhat motivated
+446,10220711,Female,Video,0.1667,0.8333,neutral,Video,somewhat motivated
+447,10260402,Female,Live,0.1667,0.8333,greatest interest,Equally Motivated,somewhat motivated
+448,10260402,Female,Video,0,0.8333,more interest,Equally Motivated,somewhat motivated
+449,10260602,Male,Live,0.3333,1,more interest,Video,somewhat motivated
+450,10260602,Male,Video,0.5,0.6667,neutral,Video,neutral
+451,10270104,Female,Live,0.6667,0.8333,neutral,Equally Motivated,somewhat motivated
+452,10270104,Female,Video,0.5,0.5,little interest,Equally Motivated,somewhat motivated
+453,10270699,Male,Live,0.1667,0.8333,neutral,Live,somewhat motivated
+454,10270699,Male,Video,0,0.8333,neutral,Live,somewhat unmotivated
+455,10270710,Male,Live,0.6667,0.6667,neutral,Live,very motivated
+456,10270710,Male,Video,0.3333,0.8333,little interest,Live,somewhat motivated
+457,10290310,Female,Live,0.6667,0.3333,greatest interest,Equally Motivated,very unmotivated
+458,10290310,Female,Video,0.8333,0.8333,more interest,Equally Motivated,neutral
+459,10300507,Male,Live,0.5,0.8333,little interest,Live,somewhat motivated
+460,10300507,Male,Video,0.5,0.8333,little interest,Live,very unmotivated
+461,10300806,Male,Live,0.5,0.8333,neutral,Video,somewhat unmotivated
+462,10300806,Male,Video,0.3333,0.6667,neutral,Video,somewhat motivated
+463,11010310,Female,Live,0.6667,0.5,little interest,Equally Motivated,somewhat unmotivated
+464,11010310,Female,Video,0.5,0.8333,least interest,Equally Motivated,very unmotivated
+465,11010405,Male,Live,0.3333,0.6667,little interest,Live,somewhat motivated
+466,11010405,Male,Video,0.3333,0.8333,neutral,Live,somewhat motivated
+467,11011003,Female,Live,0.3333,0.8333,little interest,Live,somewhat motivated
+468,11011003,Female,Video,0.3333,0,neutral,Live,somewhat motivated
+469,11011206,Male,Live,0.8333,1,neutral,Live,somewhat motivated
+470,11011206,Male,Video,0.8333,1,neutral,Live,neutral
+471,11020409,Female,Live,0.3333,0.5,more interest,Live,somewhat motivated
+472,11020409,Female,Video,0.5,0.5,neutral,Live,somewhat motivated
+473,11030712,Female,Live,0.8333,0.6667,neutral,Equally Motivated,somewhat motivated
+474,11030712,Female,Video,1,0.8333,little interest,Equally Motivated,somewhat motivated
+475,11031204,Female,Live,0.6667,0.8333,more interest,Video,somewhat unmotivated
+476,11031204,Female,Video,0.1667,0.8333,more interest,Video,somewhat unmotivated
+477,11050710,Female,Live,0.3333,1,neutral,Equally Motivated,somewhat unmotivated
+478,11050710,Female,Video,0.3333,0.6667,more interest,Equally Motivated,somewhat motivated
+479,11071002,Female,Live,0.3333,0.6667,little interest,Live,somewhat motivated
+480,11071002,Female,Video,0.5,0.6667,neutral,Live,somewhat motivated
+481,11100212,Female,Live,0.3333,0.8333,neutral,Live,very motivated
+482,11100212,Female,Video,0.6667,0.6667,little interest,Live,neutral
+483,11101203,Female,Live,0.6667,1,neutral,Live,somewhat motivated
+484,11101203,Female,Video,0.5,0.8333,neutral,Live,neutral
+485,11120208,Male,Live,0.3333,0.8333,neutral,Live,neutral
+486,11120208,Male,Video,0.3333,0.1667,little interest,Live,neutral
+487,11161209,Female,Live,0.5,1,little interest,,somewhat motivated
+488,11161209,Female,Video,0.3333,0.6667,,,
+489,11200805,Male,Live,0.1667,0.8333,more interest,Live,very unmotivated
+490,11200805,Male,Video,1,0.3333,little interest,Live,very unmotivated
+491,11211212,Female,Live,0.8333,0.5,neutral,Live,neutral
+492,11211212,Female,Video,0.3333,0.1667,little interest,Live,somewhat unmotivated
+493,11220303,Female,Live,0.6667,0.5,little interest,Equally Motivated,neutral
+494,11220303,Female,Video,0.8333,1,little interest,Equally Motivated,neutral
+495,11221011,Female,Live,0.1667,0.8333,neutral,Live,somewhat motivated
+496,11221011,Female,Video,0.5,1,neutral,Live,somewhat unmotivated
+497,11230509,Male,Live,0.5,1,more interest,Equally Motivated,very motivated
+498,11230509,Male,Video,0.3333,1,neutral,Equally Motivated,very motivated
+499,11231007,Female,Live,0.5,0.6667,neutral,Live,somewhat motivated
+500,11231007,Female,Video,0.6667,0.6667,neutral,Live,somewhat unmotivated
+501,11240406,Male,Live,0.4,0.6667,little interest,Live,somewhat motivated
+502,11240406,Male,Video,0.1667,0.5,neutral,Live,somewhat unmotivated
+503,11240801,Female,Live,0.5,0.8333,more interest,Live,somewhat motivated
+504,11240801,Female,Video,0.3333,1,more interest,Live,somewhat unmotivated
+505,11250112,Female,Live,0.5,0.6667,neutral,Live,neutral
+506,11250112,Female,Video,0.8333,0.1667,neutral,Live,somewhat motivated
+507,11250605,Male,Live,1,0.6667,little interest,Live,very unmotivated
+508,11250605,Male,Video,0.8333,0.6667,little interest,Live,very unmotivated
+509,11250701,Female,Live,0.3333,1,more interest,Live,very motivated
+510,11250701,Female,Video,0.5,0.8333,more interest,Live,somewhat motivated
+511,11270612,Male,Live,0.5,0.5,neutral,Live,somewhat unmotivated
+512,11270612,Male,Video,0.3333,0.6667,neutral,Live,neutral
+513,11270711,Female,Live,0.5,0.6667,more interest,Live,somewhat motivated
+514,11270711,Female,Video,0.6667,0.5,neutral,Live,neutral
+515,12020110,Female,Live,0.6667,0.5,more interest,Live,neutral
+516,12020110,Female,Video,0.5,0.8333,neutral,Live,neutral
+517,12060610,Male,Live,0.5,0.3333,little interest,,neutral
+518,12060610,Male,Video,0.6667,0.5,neutral,,very motivated
+519,12070712,Female,Live,0.6667,0.8333,neutral,Video,somewhat motivated
+520,12070712,Female,Video,0.5,0.6667,neutral,Video,somewhat motivated
+521,12080506,Male,Live,0.6667,0.8333,neutral,,somewhat motivated
+522,12080506,Male,Video,1,1,,,
+523,12120801,Female,Live,0.3333,0.5,more interest,Live,somewhat motivated
+524,12120801,Female,Video,0.3333,0.5,more interest,Live,very motivated
+525,12130404,Male,Live,0.6667,0.6667,neutral,Live,neutral
+526,12130404,Male,Video,0.6667,0.6667,neutral,Live,somewhat motivated
+527,12141009,Male,Live,0.3333,0.6667,more interest,Equally Motivated,very unmotivated
+528,12141009,Male,Video,0,1,greatest interest,Equally Motivated,very motivated
+529,12150304,Male,Live,0.8333,0.8333,more interest,Live,somewhat motivated
+530,12150304,Male,Video,1,0.6667,more interest,Live,somewhat motivated
+531,12150404,Female,Live,0.8333,0.5,neutral,Equally Motivated,neutral
+532,12150404,Female,Video,0.3333,0.8333,neutral,Equally Motivated,somewhat motivated
+533,12150803,Female,Live,0.3333,1,little interest,Live,somewhat motivated
+534,12150803,Female,Video,0.3333,0.5,little interest,Live,somewhat unmotivated
+535,12210207,Female,Live,0.5,1,neutral,Live,somewhat motivated
+536,12210207,Female,Video,0.6667,1,little interest,Live,somewhat unmotivated
+537,12210901,Female,Live,0.3333,0.6667,more interest,Live,somewhat motivated
+538,12210901,Female,Video,0.5,1,neutral,Live,neutral
+539,12220105,Male,Live,0.3333,0.6667,neutral,Equally Motivated,somewhat motivated
+540,12220105,Male,Video,0.1667,1,greatest interest,Equally Motivated,very motivated
+541,12221211,Female,Live,0.8333,0.8333,more interest,Equally Motivated,somewhat motivated
+542,12221211,Female,Video,0.1667,1,greatest interest,Equally Motivated,somewhat motivated
+543,12251206,Female,Live,0.6667,0.8333,neutral,Equally Motivated,neutral
+544,12251206,Female,Video,0.3333,0.6667,more interest,Equally Motivated,somewhat motivated
+545,12260303,Female,Live,0.5,0.8333,neutral,,somewhat motivated
+546,12260303,Female,Video,0.3333,1,,,
+547,12280712,Female,Live,0.5,0.5,,Live,
+548,12280712,Female,Video,1,0.6667,least interest,Live,very unmotivated
+549,12290604,Female,Live,0.6667,0.6667,more interest,Video,very motivated
+550,12290604,Female,Video,0.5,1,more interest,Video,very motivated
+551,99999999,Female,Live,0,1,more interest,Equally Motivated,very motivated
+552,99999999,Female,Video,0.3333,0.8333,more interest,Equally Motivated,very motivated

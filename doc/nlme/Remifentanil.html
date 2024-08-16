@@ -95,12 +95,12 @@ V, Hoke JF, Moore KHP, Hermann DJ, Muir KT, Mandema JW, Shafer SL (1997).
 Influence of age and gender on the pharmacokinetics and pharmacodynamics
 of remifentanil: I. Model development.
 <em>Anesthesiology</em> <b>86</b> 1, 10&ndash;23.
-<a href="https://pubs.asahq.org/anesthesiology/article/86/1/10/35947/Influence-of-Age-and-Gender-on-the">https://pubs.asahq.org/anesthesiology/article/86/1/10/35947/Influence-of-Age-and-Gender-on-the</a>
+<a href="https://doi.org/10.1097/00000542-199701000-00004">doi:10.1097/00000542-199701000-00004</a>
 </p>
 <p>Charles F. Minto, Thomas W. Schnider and Steven L. Shafer (1997).
 Pharmacokinetics and Pharmacodynamics of Remifentanil: II. Model Application.
 <em>Anesthesiology</em> <b>86</b> 1, 24&ndash;33.
-<a href="https://pubs.asahq.org/anesthesiology/article/86/1/24/35925/Pharmacokinetics-and-Pharmacodynamics-of">https://pubs.asahq.org/anesthesiology/article/86/1/24/35925/Pharmacokinetics-and-Pharmacodynamics-of</a>
+<a href="https://doi.org/10.1097/00000542-199701000-00005">doi:10.1097/00000542-199701000-00005</a>
 </p>
 
 
@@ -125,8 +125,10 @@ LBMfn &lt;- function(Wt, Ht, Sex) ifelse(Sex == "Female",
                                         1.07 * Wt - 148*(Wt/Ht)^2,
                                         1.1  * Wt - 128*(Wt/Ht)^2)
 with(Remi.1,
-    stopifnot(all.equal(BSA, Wt^{0.425} * Ht^{0.725} * 0.007184, tol = 1.5e-5),
-              all.equal(LBM, LBMfn(Wt, Ht, Sex),                 tol = 7e-7)
+     stopifnot(all.equal(BSA, Wt^{0.425} * Ht^{0.725} * 0.007184,
+                         tolerance = 1.5e-5),
+               all.equal(LBM, LBMfn(Wt, Ht, Sex),
+                         tolerance = 7e-7)
 ))
 
 ## Rate: typically  3 µg / kg body weight, but :

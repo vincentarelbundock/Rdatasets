@@ -54,7 +54,7 @@ recorded in the Greater London area by the Metropolitan Police from January
 
 <h3>Details</h3>
 
-<p>To visualize this data set using a map, see the
+<p>To visualize this dataset using a map, see the
 <code>london_boroughs</code> dataset, which contains the latitude and
 longitude of polygons that define the boundaries of the 32 boroughs of
 Greater London.
@@ -91,13 +91,13 @@ library(dplyr)
 library(ggplot2)
 library(lubridate)
 
-london_murders %&gt;%
+london_murders |&gt;
   mutate(
     day_count = as.numeric(date - ymd("2006-01-01")),
     date_cut = cut(day_count, seq(0, 2160, 90))
-  ) %&gt;%
-  group_by(date_cut) %&gt;%
-  add_tally() %&gt;%
+  ) |&gt;
+  group_by(date_cut) |&gt;
+  add_tally() |&gt;
   ggplot(aes(x = date_cut, y = n)) +
   geom_col() +
   theme(axis.text.x = element_blank(), axis.ticks.x = element_blank()) +

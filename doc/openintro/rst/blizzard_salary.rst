@@ -67,7 +67,7 @@
          library(ggplot2)
          library(dplyr)
 
-         plot_data <- blizzard_salary %>%
+         plot_data <- blizzard_salary |>
            mutate(annual_salary = case_when(
              salary_type == "week" ~ current_salary * 52,
              salary_type == "hour" ~ current_salary * 40 * 52,

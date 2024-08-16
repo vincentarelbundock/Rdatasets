@@ -1,0 +1,76 @@
+rownames,item_number,set_name,theme,pieces,price,amazon_price,year,ages,pages,minifigures,packaging,weight,unique_pieces,size
+1,10859,My First Ladybird,DUPLO®,6,4.99,16,2018,Ages_1½-3,9,,Box,,5,Large
+2,10860,My First Race Car,DUPLO®,6,4.99,9.45,2018,Ages_1½-3,9,,Box,0.13Kg (0.29 lb),6,Large
+3,10862,My First Celebration,DUPLO®,41,14.99,39.89,2018,Ages_1½-3,9,,Box,,18,Large
+4,10864,Large Playground Brick Box,DUPLO®,71,49.99,56.69,2018,Ages_2-5,32,2,Plastic box,1.41Kg (3.11 lb),49,Large
+5,10867,Farmers' Market,DUPLO®,26,19.99,36.99,2018,Ages_2-5,9,3,Box,,18,Large
+6,10870,Farm Animals,DUPLO®,16,9.99,9.99,2018,Ages_2-5,8,,Box,,13,Large
+7,10872,Train Bridge and Tracks,DUPLO®,26,24.99,21.99,2018,Ages_2-5,16,1,Box,0.88Kg (1.95 lb),10,Large
+8,10875,Cargo Train,DUPLO®,105,119.99,128.95,2018,Ages_2-5,64,3,Box,2.86Kg (6.31 lb),68,Large
+9,10876,Spider-Man & Hulk Adventures,DUPLO®,38,29.99,74.5,2018,Ages_2-5,20,3,Box,0.54Kg (1.19 lb),29,Large
+10,10878,Rapunzel's Tower,DUPLO®,37,29.99,98.99,2018,Ages_2-5,24,1,Box,,26,Large
+11,10882,Train Tracks,DUPLO®,23,19.99,17.99,2018,Ages_2-5,16,,Box,0.66Kg (1.45 lb),9,Large
+12,10885,My First Fun Puzzle,DUPLO®,15,19.99,19.55,2019,Ages_1½+,9,,,,15,Large
+13,10886,My First Car Creations,DUPLO®,34,19.99,16,2019,Ages_1½+,10,,,0.64Kg (1.41 lb),31,Large
+14,10901,Fire Truck,DUPLO®,21,19.99,17.99,2019,Ages_2+,10,2,Box,0.45Kg (0.99 lb),16,Large
+15,10904,Baby Animals,DUPLO®,9,9.99,21.11,2019,Ages_2+,8,,Box,,9,Large
+16,10906,Tropical Island,DUPLO®,73,59.99,59.99,2019,Ages_2+,40,3,Box,,44,Large
+17,10908,Plane,DUPLO®,12,9.99,23.27,2019,Ages_2+,10,1,Box,,11,Large
+18,10910,Submarine Adventure,DUPLO®,24,19.99,17.99,2019,Ages_2+,8,2,Box,,22,Large
+19,10915,Alphabet Truck,DUPLO®,36,24.99,21.99,2020,Ages_1½+,1,2,Box,,35,Large
+20,10918,Tow Truck,DUPLO®,7,6.99,6.29,2020,Ages_1½+,3,,Box with backing card,,7,Large
+21,10921,Super Heroes Lab,DUPLO®,30,29.99,26.99,2020,Ages_2+,16,3,Box,,23,Large
+22,10926,Bedroom,DUPLO®,16,14.99,14.99,2020,Ages_2+,2,2,Box,,16,Large
+23,10927,Pizza Stand,DUPLO®,18,9.99,8.99,2020,Ages_2+,12,1,Box,,15,Large
+24,10928,Bakery,DUPLO®,46,34.99,29.99,2020,Ages_2+,20,2,Box,,33,Large
+25,10929,Modular Playhouse,DUPLO®,129,59.99,59.99,2020,Ages_2+,84,3,Box,,56,Large
+26,41330,Stephanie's Soccer Practice,Friends,119,14.99,40.4,2018,Ages_6-12,48,1,Box,,78,Small
+27,41333,Olivia's Mission Vehicle,Friends,223,19.99,45.95,2018,Ages_6-12,84,1,Box,0.32Kg (0.7 lb),106,Small
+28,41335,Mia's Tree House,Friends,351,29.99,53.88,2018,Ages_6-12,120,2,Box,0.61Kg (1.34 lb),151,Small
+29,41340,Friendship House,Friends,722,69.99,184.99,2018,Ages_6-12,164,3,Box,1.14Kg (2.51 lb),309,Small
+30,41353,Friends Advent Calendar,Friends,500,29.99,34,2018,Ages_6-12,4,,Box,,202,Small
+31,41356,Stephanie's Heart Box,Friends,85,7.99,14.99,2019,Ages_6+,32,1,,0.13Kg (0.29 lb),36,Small
+32,41358,Mia's Heart Box,Friends,83,7.99,18.64,2019,Ages_6+,32,1,,0.14Kg (0.31 lb),38,Small
+33,41363,Mia's Forest Adventures,Friends,134,14.99,18.95,2019,Ages_6+,44,1,,0.15Kg (0.33 lb),77,Small
+34,41367,Stephanie's Obstacle Course,Friends,337,39.99,35.99,2019,Ages_6+,100,2,,0.59Kg (1.3 lb),168,Small
+35,41369,Mia's House,Friends,715,69.99,62.99,2019,Ages_6+,192,3,,1.12Kg (2.47 lb),274,Small
+36,41374,Andrea's Pool Party,Friends,468,49.99,40,2019,Ages_6+,112,2,Box,,221,Small
+37,41376,Turtles Rescue Mission,Friends,225,19.99,31.27,2019,Ages_6+,72,2,Box,,125,Small
+38,41378,Dolphins Rescue Mission,Friends,363,39.99,31.67,2019,Ages_6+,116,2,Box,,192,Small
+39,41384,Andrea's Summer Heart Box,Friends,83,7.99,14.99,2019,Ages_6+,36,1,Other,,46,Small
+40,41387,Olivia's Summer Heart Box,Friends,93,7.99,7.99,2019,Ages_6+,40,2,Other,,48,Small
+41,41394,Heartlake City Hospital,Friends,379,49.99,48.53,2020,Ages_6+,132,3,Box,,154,Small
+42,41396,Puppy Playground,Friends,57,9.99,8.99,2020,Ages_4+,40,1,Box,,41,Small
+43,41400,Andrea's Play Cube - Singer,Friends,49,9.99,18.93,2020,Ages_6+,5,1,Box,,32,Small
+44,41403,Mia's Play Cube - Veterinarian,Friends,40,9.99,17.97,2020,Ages_6+,5,1,Box,,32,Small
+45,41408,Mia's Play Cube - Cinema,Friends,37,9.99,15.32,2020,Ages_6+,5,1,Box,,31,Small
+46,41421,Baby Elephant Jungle Rescue,Friends,203,19.99,19.99,2020,Ages_6+,68,2,Box,,111,Small
+47,41423,Tiger Hot Air Balloon Jungle Rescue,Friends,302,39.99,39.95,2020,Ages_7+,116,2,Box,,145,Small
+48,41424,Jungle Rescue Base,Friends,648,79.99,79.95,2020,Ages_8+,176,3,Box,,251,Small
+49,41427,Emma's Fashion Shop,Friends,343,29.99,29.95,2020,Ages_6+,112,2,Box,,152,Small
+50,41428,Beach House,Friends,444,49.99,49.95,2020,Ages_6+,160,2,Box,,216,Small
+51,60170,Off-Road Chase,City,37,6.99,30.89,2018,Ages_5-12,20,2,Box,,28,Small
+52,60171,Mountain Fugitives,City,88,9.99,16.49,2018,Ages_5-12,36,4,Box,,61,Small
+53,60172,Dirt Road Pursuit,City,297,39.99,64.75,2018,Ages_5-12,116,3,Box,0.6Kg (1.32 lb),140,Small
+54,60182,Pickup & Caravan,City,344,29.99,65.99,2018,Ages_5-12,140,3,Box,0.65Kg (1.43 lb),188,Small
+55,60183,Heavy Cargo Transport,City,310,29.99,69.95,2018,Ages_5-12,128,2,Box,0.59Kg (1.3 lb),161,Small
+56,60184,Mining Team,City,82,9.99,21.99,2018,Ages_5-12,32,4,Box,0.13Kg (0.29 lb),64,Small
+57,60202,People Pack - Outdoor Adventures,City,164,39.99,69.99,2018,Ages_5-12,64,15,Box,0.29Kg (0.64 lb),128,Small
+58,60208,Parachute Arrest,City,218,39.99,31.46,2019,Ages_5+,120,4,Box,0.48Kg (1.05 lb),139,Small
+59,60213,Dock Side Fire,City,97,19.99,23.83,2019,Ages_5+,48,2,Box,0.25Kg (0.54 lb),63,Small
+60,60215,Fire Station,City,509,69.99,56,2019,Ages_5+,184,4,Box,1.17Kg (2.57 lb),210,Small
+61,60217,Fire Plane,City,363,59.99,53.99,2019,Ages_6+,156,3,Box,0.76Kg (1.68 lb),151,Small
+62,60219,Construction Loader,City,88,9.99,8.99,2019,Ages_5+,36,1,Box,0.16Kg (0.34 lb),50,Small
+63,60221,Diving Yacht,City,148,19.99,16,2019,Ages_5+,64,2,Box,0.34Kg (0.74 lb),81,Small
+64,60223,Harvester Transport,City,358,29.99,54.8,2019,Ages_5+,148,3,Box,0.65Kg (1.43 lb),166,Small
+65,60226,Mars Research Shuttle,City,273,39.99,31.99,2019,Ages_5+,160,2,Box,0.61Kg (1.34 lb),135,Small
+66,60243,Police Helicopter Chase,City,212,39.99,35.98,2020,Ages_5+,128,4,Box,0.52Kg (1.16 lb),127,Small
+67,60245,Police Monster Truck Heist,City,362,59.99,52.74,2020,Ages_5+,200,5,Box,0.85Kg (1.87 lb),198,Small
+68,60246,Police Station,City,743,99.99,99.99,2020,Ages_6+,345,7,Box,1.85Kg (4.06 lb),298,Small
+69,60248,Fire Helicopter Response,City,93,29.99,23.98,2020,Ages_5+,44,3,Box,0.25Kg (0.55 lb),61,Small
+70,60249,Street Sweeper,City,89,9.99,8.99,2020,Ages_5+,48,1,Box,0.14Kg (0.31 lb),55,Small
+71,60251,Monster Truck,City,55,9.99,8.99,2020,Ages_5+,32,1,Box,0.14Kg (0.31 lb),34,Small
+72,60252,Construction Bulldozer,City,126,19.99,15.99,2020,Ages_4+,84,2,Box,0.35Kg (0.78 lb),81,Small
+73,60258,Tuning Workshop,City,897,99.99,99.99,2020,Ages_6+,389,7,Box,1.63Kg (3.58 lb),411,Small
+74,60266,Ocean Exploration Ship,City,745,149.99,149.99,2020,Ages_7+,229,8,Box,2.28Kg (5.03 lb),314,Small
+75,60267,Safari Off-Roader,City,168,19.99,17.99,2020,Ages_5+,76,2,Box,0.34Kg (0.76 lb),86,Small

@@ -84,7 +84,7 @@ also from Amazon.
 
 <h3>Details</h3>
 
-<p>A past data set was collected from UCLA courses in Spring 2010, and Amazon
+<p>A past dataset was collected from UCLA courses in Spring 2010, and Amazon
 at that time was found to be almost uniformly lower than those of the UCLA
 bookstore's.  Now in 2018, the UCLA bookstore is about even with Amazon on
 the vast majority of titles, and there is no statistical difference in the
@@ -147,10 +147,10 @@ ggplot(ucla_textbooks_f18, aes(x = bookstore_new, y = amazon_new)) +
   )
 
 # The following outliers were double checked for accuracy
-ucla_textbooks_f18_with_diff &lt;- ucla_textbooks_f18 %&gt;%
+ucla_textbooks_f18_with_diff &lt;- ucla_textbooks_f18 |&gt;
   mutate(diff = bookstore_new - amazon_new)
 
-ucla_textbooks_f18_with_diff %&gt;%
+ucla_textbooks_f18_with_diff |&gt;
   filter(diff &gt; 20 | diff &lt; -20)
 
 # Distribution of price differences

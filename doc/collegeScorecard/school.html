@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><title>R: College Scorecard: School Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>school</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>College Scorecard: School Data</h2>
+
+<h3>Description</h3>
+
+<p>Information about institutions in the U.S. College Scorecard dataset. The
+uses the most recent report for each institution. The <code>school</code> dataset can be
+used to filter the <code>scorecard</code> dataset. Join the two datasets using the <code>id</code>
+column.
+</p>
+<p>The data set contain only colleges that participate in Title IV federal
+financial aid programs. In the tidy data set, column names have been changed
+for readability and consistency.
+</p>
+<p>You can find the original data set at the U.S. Department of Education's
+<a href="https://collegescorecard.ed.gov/data/">College Scorecard website</a>. The
+code for the data transformation process is available at
+<a href="https://github.com/gadenbuie/scorecard-db">https://github.com/gadenbuie/scorecard-db</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>school
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 11,300 rows and 25 variables. Original column names
+from the source dataset are noted in parenthesis.
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p><code style="white-space: pre;">&#8288;[integer]&#8288;</code> A unique identifier for each institution. (<code>UNITID</code>)</p>
+</dd>
+<dt><code>name</code></dt><dd><p><code style="white-space: pre;">&#8288;[character]&#8288;</code> Institution name. (<code>INSTNM</code>)</p>
+</dd>
+<dt><code>city</code></dt><dd><p><code style="white-space: pre;">&#8288;[character]&#8288;</code> City. (<code>CITY</code>)</p>
+</dd>
+<dt><code>state</code></dt><dd><p><code style="white-space: pre;">&#8288;[character]&#8288;</code> State postcode. (<code>STABBR</code>)</p>
+</dd>
+<dt><code>zip</code></dt><dd><p><code style="white-space: pre;">&#8288;[character]&#8288;</code> ZIP code. (<code>ZIP</code>)</p>
+</dd>
+<dt><code>latitude</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Latitude. (<code>LATITUDE</code>)</p>
+</dd>
+<dt><code>longitude</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Longitude. (<code>LONGITUDE</code>)</p>
+</dd>
+<dt><code>url</code></dt><dd><p><code style="white-space: pre;">&#8288;[character]&#8288;</code> URL for institution's homepage. (<code>INSTURL</code>)</p>
+</dd>
+<dt><code>deg_predominant</code></dt><dd><p><code style="white-space: pre;">&#8288;[factor]&#8288;</code> Predominant undergraduate degree awarded. (<code>PREDDEG</code>)</p>
+</dd>
+<dt><code>deg_highest</code></dt><dd><p><code style="white-space: pre;">&#8288;[factor]&#8288;</code> Highest degree awarded. (<code>HIGHDEG</code>)</p>
+</dd>
+<dt><code>control</code></dt><dd><p><code style="white-space: pre;">&#8288;[factor]&#8288;</code> Control of institution (IPEDS). (<code>CONTROL</code>)</p>
+</dd>
+<dt><code>locale_type</code></dt><dd><p><code style="white-space: pre;">&#8288;[factor]&#8288;</code> Locale of institution. (<code>LOCALE</code>)</p>
+</dd>
+<dt><code>locale_size</code></dt><dd><p><code style="white-space: pre;">&#8288;[factor]&#8288;</code> Locale of institution. (<code>LOCALE</code>)</p>
+</dd>
+<dt><code>adm_req_test</code></dt><dd><p><code style="white-space: pre;">&#8288;[factor]&#8288;</code> Test score requirements for admission. (<code>ADMCON7</code>)</p>
+</dd>
+<dt><code>is_hbcu</code></dt><dd><p><code style="white-space: pre;">&#8288;[logical]&#8288;</code> Flag for Historically Black College and University. (<code>HBCU</code>)</p>
+</dd>
+<dt><code>is_pbi</code></dt><dd><p><code style="white-space: pre;">&#8288;[logical]&#8288;</code> Flag for predominantly black institution. (<code>PBI</code>)</p>
+</dd>
+<dt><code>is_annhi</code></dt><dd><p><code style="white-space: pre;">&#8288;[logical]&#8288;</code> Flag for Alaska Native Native Hawaiian serving institution. (<code>ANNHI</code>)</p>
+</dd>
+<dt><code>is_tribal</code></dt><dd><p><code style="white-space: pre;">&#8288;[logical]&#8288;</code> Flag for tribal college and university. (<code>TRIBAL</code>)</p>
+</dd>
+<dt><code>is_aanapii</code></dt><dd><p><code style="white-space: pre;">&#8288;[logical]&#8288;</code> Flag for Asian American Native American Pacific Islander-serving institution. (<code>AANAPII</code>)</p>
+</dd>
+<dt><code>is_hsi</code></dt><dd><p><code style="white-space: pre;">&#8288;[logical]&#8288;</code> Flag for Hispanic-serving institution. (<code>HSI</code>)</p>
+</dd>
+<dt><code>is_nanti</code></dt><dd><p><code style="white-space: pre;">&#8288;[logical]&#8288;</code> Flag for Native American non-tribal institution. (<code>NANTI</code>)</p>
+</dd>
+<dt><code>is_only_men</code></dt><dd><p><code style="white-space: pre;">&#8288;[logical]&#8288;</code> Flag for men-only college. (<code>MENONLY</code>)</p>
+</dd>
+<dt><code>is_only_women</code></dt><dd><p><code style="white-space: pre;">&#8288;[logical]&#8288;</code> Flag for women-only college. (<code>WOMENONLY</code>)</p>
+</dd>
+<dt><code>is_only_distance</code></dt><dd><p><code style="white-space: pre;">&#8288;[logical]&#8288;</code> Flag for distance-education-only education. (<code>DISTANCEONLY</code>)</p>
+</dd>
+<dt><code>religious_affiliation</code></dt><dd><p><code style="white-space: pre;">&#8288;[factor]&#8288;</code> Religious affiliation of the institution. (<code>RELAFFIL</code>)</p>
+</dd>
+</dl>
+
+
+
+<h3>References</h3>
+
+<p><a href="https://collegescorecard.ed.gov/data/">https://collegescorecard.ed.gov/data/</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

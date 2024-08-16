@@ -89,8 +89,8 @@ library(dplyr)
 library(ggplot2)
 
 # Calculate number of murders by borough
-london_murders_counts &lt;- london_murders %&gt;%
-  group_by(borough) %&gt;%
+london_murders_counts &lt;- london_murders |&gt;
+  group_by(borough) |&gt;
   add_tally()
 
 london_murders_counts

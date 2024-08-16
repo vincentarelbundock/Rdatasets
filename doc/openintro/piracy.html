@@ -20,7 +20,7 @@ function processMathHTML() {
 
 <h3>Description</h3>
 
-<p>This data set contains observations on all 100 US Senators and 434 of the
+<p>This dataset contains observations on all 100 US Senators and 434 of the
 325 US Congressional Representatives related to their support of anti-piracy
 legislation that was introduced at the end of 2011.
 </p>
@@ -65,7 +65,7 @@ legislation that was introduced at the end of 2011.
 US Senate, respectively, to curtail copyright infringement.  The bill was
 controversial because there were concerns the bill limited free speech
 rights.  ProPublica, the independent and non-profit news organization,
-compiled this data set to compare the stance of legislators towards the
+compiled this dataset to compare the stance of legislators towards the
 bills with the amount of campaign funds that they received from groups
 considered to be supportive of or in opposition to the legislation.
 </p>
@@ -91,9 +91,9 @@ library(ggplot2)
 
 pipa &lt;- filter(piracy, chamber == "senate")
 
-pipa %&gt;%
-  group_by(stance) %&gt;%
-  summarise(money_pro_mean = mean(money_pro, na.rm = TRUE)) %&gt;%
+pipa |&gt;
+  group_by(stance) |&gt;
+  summarise(money_pro_mean = mean(money_pro, na.rm = TRUE)) |&gt;
   ggplot(aes(x = stance, y = money_pro_mean)) +
   geom_col() +
   labs(
@@ -118,12 +118,12 @@ ggplot(pipa, aes(x = stance, y = money_con)) +
     subtitle = "Computer and internet companies"
   )
 
-pipa %&gt;%
+pipa |&gt;
   filter(
     money_pro &gt; 0,
     money_con &gt; 0
-  ) %&gt;%
-  mutate(for_pipa = ifelse(stance == "yes", "yes", "no")) %&gt;%
+  ) |&gt;
+  mutate(for_pipa = ifelse(stance == "yes", "yes", "no")) |&gt;
   ggplot(aes(x = money_pro, y = money_con, color = for_pipa)) +
   geom_point() +
   scale_color_manual(values = c("gray", "red")) +

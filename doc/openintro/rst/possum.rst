@@ -13,8 +13,8 @@
          :name: description
 
       Data representing possums in Australia and New Guinea. This is a
-      copy of the data set by the same name in the ``DAAG`` package,
-      however, the data set included here includes fewer variables.
+      copy of the dataset by the same name in the ``DAAG`` package,
+      however, the dataset included here includes fewer variables.
 
       .. rubric:: Usage
          :name: usage

@@ -1,0 +1,124 @@
+<!DOCTYPE html><html><head><title>R: Weather conditions in Gibraltar, May 2023</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gibraltar</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Weather conditions in Gibraltar, May 2023</h2>
+
+<h3>Description</h3>
+
+<p>The <code>gibraltar</code> dataset has meteorological data for the Gibraltar Airport
+Station from May 1 to May 31, 2023. Gibraltar is a British Overseas Territory
+and city located at the southern end of the Iberian Peninsula, on the Bay of
+Gibraltar. This weather station is located at the airport (GIB), where it's
+at an elevation of 5 meters above mean sea level (AMSL).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>gibraltar
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tibble with 1,431 rows and 10 variables:
+</p>
+
+<dl>
+<dt>date, time</dt><dd><p>The date and time of the observation.</p>
+</dd>
+<dt>temp, dew_point</dt><dd><p>The air temperature and dew point values, both in
+degrees Celsius.</p>
+</dd>
+<dt>humidity</dt><dd><p>The relative humidity as a value between <code>0</code> and <code>1</code></p>
+</dd>
+<dt>wind_dir, wind_speed, wind_gust</dt><dd><p>Observations related to wind. The wind
+direction is given as the typical 'blowing from' value, simplified to one of
+16 compass directions. The wind speed is provided in units of meters per
+second. If there was a measurable wind gust, the maximum gust speed is
+recorded as m/s values (otherwise the value is <code>0</code>).</p>
+</dd>
+<dt>pressure</dt><dd><p>The atmospheric pressure in hectopascals (hPa).</p>
+</dd>
+<dt>condition</dt><dd><p>The weather condition.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<p>Here is a glimpse at the data available in <code>gibraltar</code>.
+</p>
+<div class="sourceCode r"><pre>dplyr::glimpse(gibraltar)
+#&gt; Rows: 1,431
+#&gt; Columns: 10
+#&gt; $ date       &lt;date&gt; 2023-05-01, 2023-05-01, 2023-05-01, 2023-05-01, 2023-05-01~
+#&gt; $ time       &lt;chr&gt; "00:20", "00:50", "01:20", "01:50", "02:20", "02:50", "03:2~
+#&gt; $ temp       &lt;dbl&gt; 18.9, 18.9, 17.8, 18.9, 18.9, 17.8, 17.8, 17.8, 18.9, 18.9,~
+#&gt; $ dew_point  &lt;dbl&gt; 12.8, 13.9, 13.9, 13.9, 12.8, 12.8, 12.8, 12.8, 12.2, 12.2,~
+#&gt; $ humidity   &lt;dbl&gt; 0.68, 0.73, 0.77, 0.73, 0.68, 0.73, 0.73, 0.73, 0.64, 0.64,~
+#&gt; $ wind_dir   &lt;chr&gt; "W", "WSW", "W", "W", "WSW", "WSW", "W", "SW", "SW", "WSW",~
+#&gt; $ wind_speed &lt;dbl&gt; 6.7, 7.2, 6.7, 6.7, 6.7, 6.7, 7.2, 6.3, 4.0, 3.1, 3.6, 2.2,~
+#&gt; $ wind_gust  &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,~
+#&gt; $ pressure   &lt;dbl&gt; 1015.2, 1015.2, 1014.6, 1014.6, 1014.6, 1014.6, 1014.6, 101~
+#&gt; $ condition  &lt;chr&gt; "Fair", "Fair", "Fair", "Fair", "Fair", "Fair", "Fair", "Fa~
+</pre></div>
+
+
+<h3>Dataset ID and Badge</h3>
+
+<p>DATA-11
+</p>
+
+<div style="text-align:center;"><img src="https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_gibraltar.png" alt="This image of that of a dataset badge." style="width:50%;padding-bottom:20px;"></div>
+
+
+
+<h3>Dataset Introduced</h3>
+
+<p><code>v0.11.0</code>
+</p>
+
+
+<h3>See Also</h3>
+
+<p>Other datasets: 
+<code>constants</code>,
+<code>countrypops</code>,
+<code>exibble</code>,
+<code>films</code>,
+<code>gtcars</code>,
+<code>illness</code>,
+<code>metro</code>,
+<code>nuclides</code>,
+<code>peeps</code>,
+<code>photolysis</code>,
+<code>pizzaplace</code>,
+<code>reactions</code>,
+<code>rx_addv</code>,
+<code>rx_adsl</code>,
+<code>sp500</code>,
+<code>sza</code>,
+<code>towny</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

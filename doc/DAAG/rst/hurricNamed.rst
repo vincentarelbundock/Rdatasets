@@ -82,7 +82,7 @@
 
       https://www.icat.com/storms/catastrophe-resources Deaths except
       for Audrey and Katrina, are in the Excel file that is available
-      from https://www.pnas.org/doi/10.1073/pnas.1402786111
+      from the url https://www.pnas.org/doi/10.1073/pnas.1402786111
 
       NOAA Monthly Weather Reports (MWRs) supplied the numbers of deaths
       for all except Donna, Celia, Audrey and Katrina. The figure for

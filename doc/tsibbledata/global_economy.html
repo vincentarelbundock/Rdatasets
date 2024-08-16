@@ -1,0 +1,99 @@
+<!DOCTYPE html><html><head><title>R: Global economic indicators</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>global_economy</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Global economic indicators</h2>
+
+<h3>Description</h3>
+
+<p>Economic indicators featured by the World Bank from 1960 to 2017.
+</p>
+
+
+<h3>Format</h3>
+
+<p>Time series of class <code>tsibble</code>
+</p>
+
+
+<h3>Details</h3>
+
+<p><code>global_economy</code> is an annual <code>tsibble</code> with six values:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+GDP:       </td><td style="text-align: left;"> Gross domestic product (in $USD February 2019).</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+Growth:    </td><td style="text-align: left;"> Annual percentage growth in GDP.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+CPI:       </td><td style="text-align: left;"> Consumer price index (base year 2010).</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+Imports:   </td><td style="text-align: left;"> Imports of goods and services (% of GDP).</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+Exports:   </td><td style="text-align: left;"> Exports of goods and services (% of GDP).</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+Population:</td><td style="text-align: left;"> Total population.
+</td>
+</tr>
+
+</table>
+
+<p>Each series is uniquely identified by one key:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+Country:   </td><td style="text-align: left;"> The country or region of the series.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>The World Bank, <a href="http://datatopics.worldbank.org/world-development-indicators/">http://datatopics.worldbank.org/world-development-indicators/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(tsibble)
+global_economy
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

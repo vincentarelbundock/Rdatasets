@@ -20,7 +20,7 @@
 
       .. code:: R
 
-         data("StressAnxiety")
+         data("StressAnxiety", package = "betareg")
 
       .. rubric:: Format
          :name: format

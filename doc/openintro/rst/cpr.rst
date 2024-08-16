@@ -6,8 +6,8 @@
       cpr R Documentation
       === ===============
 
-      .. rubric:: CPR data set
-         :name: cpr-data-set
+      .. rubric:: CPR dataset
+         :name: cpr-dataset
 
       .. rubric:: Description
          :name: description

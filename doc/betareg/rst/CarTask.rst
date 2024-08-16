@@ -22,7 +22,7 @@
 
       .. code:: R
 
-         data(CarTask)
+         data("CarTask", package = "betareg")
 
       .. rubric:: Format
          :name: format
@@ -69,8 +69,8 @@
       Smithson, M., Merkle, E.C., and Verkuilen, J. (2011). Beta
       Regression Finite Mixture Models of Polarization and Priming.
       *Journal of Educational and Behavioral Statistics*, **36**\ (6),
-      804–831. doi:
-      `10.3102/1076998610396893 <https://doi.org/10.3102/1076998610396893>`__
+      804–831.
+      `doi:10.3102/1076998610396893 <https://doi.org/10.3102/1076998610396893>`__
 
       Smithson, M., and Segale, C. (2009). Partition Priming in
       Judgments of Imprecise Probabilities. *Journal of Statistical

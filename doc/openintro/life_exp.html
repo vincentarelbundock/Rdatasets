@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: life_exp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>life_exp</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>life_exp</h2>
+
+<h3>Description</h3>
+
+<p>A data frame with 3142 rows and 4 columns. County level data for life expectancy and median income in the United States.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>life_exp
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3142 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt>state</dt><dd><p>Name of the state.</p>
+</dd>
+<dt>county</dt><dd><p>Name of the county.</p>
+</dd>
+<dt>expectancy</dt><dd><p>Life expectancy in the county.</p>
+</dd>
+<dt>income</dt><dd><p>Median income in the county, measured in US $.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+
+# Income V Expectancy
+ggplot(life_exp, aes(x = income, y = expectancy)) +
+  geom_point(color = openintro::IMSCOL["green", "full"], alpha = 0.2) +
+  theme_minimal() +
+  labs(
+    title = "Is there a relationship between median income and life expectancy?",
+    x = "Median income (US $)",
+    y = "Life Expectancy (year)"
+  )
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

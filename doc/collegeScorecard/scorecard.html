@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: College Scorecard: Scorecard Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>scorecard</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>College Scorecard: Scorecard Data</h2>
+
+<h3>Description</h3>
+
+<p>Historical data from the U.S. College Scorecard dataset. The data includes
+historical information on the number of students, average cost, median
+earnings after graduations, rates of admission and completion, and ACT and
+SAT test scores.
+</p>
+<p>The data set contain only colleges that participate in Title IV federal
+financial aid programs. In the tidy data set, column names have been changed
+for readability and consistency.
+</p>
+<p>You can find the original data set at the U.S. Department of Education's
+<a href="https://collegescorecard.ed.gov/data/">College Scorecard website</a>. The
+code for the data transformation process is available at
+<a href="https://github.com/gadenbuie/scorecard-db">https://github.com/gadenbuie/scorecard-db</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>scorecard
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 183,306 rows and 24 variables. Original column
+names from the source dataset are noted in parenthesis.
+</p>
+
+<dl>
+<dt><code>id</code></dt><dd><p><code style="white-space: pre;">&#8288;[integer]&#8288;</code> A unique identifier for each institution. (<code>UNITID</code>)</p>
+</dd>
+<dt><code>academic_year</code></dt><dd><p><code style="white-space: pre;">&#8288;[character]&#8288;</code> The academic year of the record.</p>
+</dd>
+<dt><code>n_undergrads</code></dt><dd><p><code style="white-space: pre;">&#8288;[integer]&#8288;</code> Enrollment of undergraduate certificate/degree-seeking students. (<code>UGDS</code>)</p>
+</dd>
+<dt><code>cost_tuition_in</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> In-state tuition and fees. (<code>TUITIONFEE_IN</code>)</p>
+</dd>
+<dt><code>cost_tuition_out</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Out-of-state tuition and fees. (<code>TUITIONFEE_OUT</code>)</p>
+</dd>
+<dt><code>cost_books</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Cost of attendance: estimated books and supplies. (<code>BOOKSUPPLY</code>)</p>
+</dd>
+<dt><code>cost_room_board_on</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Cost of attendance: on-campus room and board. (<code>ROOMBOARD_ON</code>)</p>
+</dd>
+<dt><code>cost_room_board_off</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Cost of attendance: off-campus room and board. (<code>ROOMBOARD_OFF</code>)</p>
+</dd>
+<dt><code>cost_avg</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Average net price for Title IV institutions (private for-profit and nonprofit institutions). (<code>NPT4_PRIV</code>)</p>
+</dd>
+<dt><code>cost_avg_income_0_30k</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Average net price for $0-$30,000 family income (private for-profit and nonprofit institutions). (<code>NPT41_PRIV</code>)</p>
+</dd>
+<dt><code>cost_avg_income_30_48k</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Average net price for $30,001-$48,000 family income (private for-profit and nonprofit institutions). (<code>NPT42_PRIV</code>)</p>
+</dd>
+<dt><code>cost_avg_income_48_75k</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Average net price for $48,001-$75,000 family income (private for-profit and nonprofit institutions). (<code>NPT43_PRIV</code>)</p>
+</dd>
+<dt><code>cost_avg_income_75_110k</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Average net price for $75,001-$110,000 family income (private for-profit and nonprofit institutions). (<code>NPT44_PRIV</code>)</p>
+</dd>
+<dt><code>cost_avg_income_110k_plus</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Average net price for $110,000+ family income (private for-profit and nonprofit institutions). (<code>NPT45_PRIV</code>)</p>
+</dd>
+<dt><code>amnt_earnings_med_10y</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Median earnings of students working and not enrolled 10 years after entry. (<code>MD_EARN_WNE_P10</code>)</p>
+</dd>
+<dt><code>rate_completion</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Completion rate for first-time, full-time students at four-year institutions (100% of expected time to completion). (<code>C100_4</code>)</p>
+</dd>
+<dt><code>rate_admissions</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Admission rate for all campuses rolled up to the 6-digit OPE ID. (<code>ADM_RATE_ALL</code>)</p>
+</dd>
+<dt><code>score_sat_avg</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> Average SAT equivalent score of students admitted. (<code>SAT_AVG</code>)</p>
+</dd>
+<dt><code>score_act_p25</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> 25th percentile of the ACT cumulative score. (<code>ACTCM25</code>)</p>
+</dd>
+<dt><code>score_act_p75</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> 75th percentile of the ACT cumulative score. (<code>ACTCM75</code>)</p>
+</dd>
+<dt><code>score_sat_verbal_p25</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> 25th percentile of SAT scores at the institution (critical reading). (<code>SATVR25</code>)</p>
+</dd>
+<dt><code>score_sat_verbal_p75</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> 75th percentile of SAT scores at the institution (critical reading). (<code>SATVR75</code>)</p>
+</dd>
+<dt><code>score_sat_math_p25</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> 25th percentile of SAT scores at the institution (math). (<code>SATMT25</code>)</p>
+</dd>
+<dt><code>score_sat_math_p75</code></dt><dd><p><code style="white-space: pre;">&#8288;[numeric]&#8288;</code> 75th percentile of SAT scores at the institution (math). (<code>SATMT75</code>)</p>
+</dd>
+</dl>
+
+
+
+<h3>References</h3>
+
+<p><a href="https://collegescorecard.ed.gov/data/">https://collegescorecard.ed.gov/data/</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

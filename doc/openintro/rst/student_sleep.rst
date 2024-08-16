@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      A simulated data set for how much 110 college students each slept
+      A simulated dataset for how much 110 college students each slept
       in a single night.
 
       .. rubric:: Usage

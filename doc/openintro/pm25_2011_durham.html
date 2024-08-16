@@ -21,7 +21,7 @@ function processMathHTML() {
 <h3>Description</h3>
 
 <p>Daily air quality is measured by the air quality index (AQI) reported by the
-Environmental Protection Agency.
+Environmental Protection Agency in 2011.
 </p>
 
 
@@ -39,43 +39,43 @@ Environmental Protection Agency.
 <dl>
 <dt>date</dt><dd><p>Date</p>
 </dd>
-<dt>aqs_site_id</dt><dd><p>a factor with levels <code>37-063-0015</code></p>
+<dt>aqs_site_id</dt><dd><p>The numeric site ID.</p>
 </dd>
-<dt>poc</dt><dd><p>a numeric vector</p>
+<dt>poc</dt><dd><p>A numeric vector, the Parameter Occurance Code.</p>
 </dd>
-<dt>daily_mean_pm2_5_concentration</dt><dd><p>a numeric vector</p>
+<dt>daily_mean_pm2_5_concentration</dt><dd><p>A numeric vector with the average daily concentration of fine particulates, or particulate matter 2.5.</p>
 </dd>
-<dt>units</dt><dd><p>a factor with levels <code>ug/m3 LC</code></p>
+<dt>units</dt><dd><p>A character vector with value <code>ug/m3 LC</code>.</p>
 </dd>
-<dt>daily_aqi_value</dt><dd><p>a numeric vector</p>
+<dt>daily_aqi_value</dt><dd><p>A numeric vector with the daily air quality index.</p>
 </dd>
-<dt>daily_obs_count</dt><dd><p>a numeric vector</p>
+<dt>daily_obs_count</dt><dd><p>A numeric vector.</p>
 </dd>
-<dt>percent_complete</dt><dd><p>a numeric vector</p>
+<dt>percent_complete</dt><dd><p>A numeric vector.</p>
 </dd>
-<dt>aqs_parameter_code</dt><dd><p>a numeric vector</p>
+<dt>aqs_parameter_code</dt><dd><p>A numeric vector.</p>
 </dd>
-<dt>aqs_parameter_desc</dt><dd><p>a factor with levels <code>Acceptable PM2.5 AQI &amp; Speciation Mass</code> <code>PM2.5 - Local Conditions</code></p>
+<dt>aqs_parameter_desc</dt><dd><p>A factor with levels <code>PM2.5 - Local Conditions</code> and <code>Acceptable PM2.5 AQI &amp; Speciation Mass</code>.</p>
+</dd>
+<dt>cbsa_code</dt><dd><p>A numeric vector.</p>
+</dd>
+<dt>cbsa_name</dt><dd><p>A character vector with value <code>Durham, NC</code>.</p>
+</dd>
+<dt>state_code</dt><dd><p>A numeric vector.</p>
+</dd>
+<dt>state</dt><dd><p>A character vector with value <code>North Carolina</code>.</p>
+</dd>
+<dt>county_code</dt><dd><p>A numeric vector.</p>
+</dd>
+<dt>county</dt><dd><p>A character vector with value <code>Durham</code>.</p>
+</dd>
+<dt>site_latitude</dt><dd><p>A numeric vector of the latitude.</p>
+</dd>
+<dt>site_longitude</dt><dd><p>A numeric vector of the longitude.</p>
 </dd>
 <dt>csa_code</dt><dd><p>a numeric vector</p>
 </dd>
 <dt>csa_name</dt><dd><p>a factor with levels <code>Raleigh-Durham-Cary, NC</code></p>
-</dd>
-<dt>cbsa_code</dt><dd><p>a numeric vector</p>
-</dd>
-<dt>cbsa_name</dt><dd><p>a factor with levels <code>Durham, NC</code></p>
-</dd>
-<dt>state_code</dt><dd><p>a numeric vector</p>
-</dd>
-<dt>state</dt><dd><p>a factor with levels <code>North Carolina</code></p>
-</dd>
-<dt>county_code</dt><dd><p>a numeric vector</p>
-</dd>
-<dt>county</dt><dd><p>a factor with levels <code>Durham</code></p>
-</dd>
-<dt>site_latitude</dt><dd><p>a numeric vector</p>
-</dd>
-<dt>site_longitude</dt><dd><p>a numeric vector</p>
 </dd>
 </dl>
 
@@ -91,7 +91,10 @@ Environmental Protection Agency.
 <h3>Examples</h3>
 
 <pre><code class='language-R'>
-pm25_2011_durham
+library(ggplot2)
+
+ggplot(pm25_2011_durham, aes(x = date, y = daily_mean_pm2_5_concentration, group = 1)) +
+  geom_line()
 </code></pre>
 
 </main>

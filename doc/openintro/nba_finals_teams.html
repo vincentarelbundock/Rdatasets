@@ -1,0 +1,109 @@
+<!DOCTYPE html><html><head><title>R: NBA Finals Team Summary</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nba_finals_teams</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>NBA Finals Team Summary</h2>
+
+<h3>Description</h3>
+
+<p>A dataset with individual team summaries for the NBA Finals series from 1950 to 2022. To win the Finals, a team must win 4 games. The maximum number of games in a series is 7.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>nba_finals_teams
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 33 rows and 7 variables:
+</p>
+
+<dl>
+<dt>team</dt><dd><p>Team name.</p>
+</dd>
+<dt>win</dt><dd><p>Number of NBA Championships won.</p>
+</dd>
+<dt>loss</dt><dd><p>Number of NBA Championships lost.</p>
+</dd>
+<dt>apps</dt><dd><p>Number of NBA Finals appearances.</p>
+</dd>
+<dt>pct</dt><dd><p>Win percentage.</p>
+</dd>
+<dt>years_won</dt><dd><p>Years in which the team won a Championship.</p>
+</dd>
+<dt>years_lost</dt><dd><p>Years in which the team lost a Championship.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Notes:
+</p>
+
+<ol>
+<li><p> The Chicago Stags folded in 1950, the Washington Capitols in 1951 and the Baltimore Bullets in 1954.
+</p>
+</li>
+<li><p> This list uses current team names. For example, the Seattle SuperSonics are not on the list as that team moved and became the Oklahoma City Thunder.
+</p>
+</li></ol>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://en.wikipedia.org/wiki/List_of_NBA_champions">List of NBA Champions.</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(ggplot2)
+library(dplyr)
+library(openintro)
+
+teams_with_apps &lt;- nba_finals_teams |&gt;
+  filter(apps != 0)
+
+ggplot(teams_with_apps, aes(x = win)) +
+  geom_histogram(binwidth = 2) +
+  labs(
+    title = "Number of NBA Finals series wins",
+    x = "Number of wins",
+    y = "Number of teams"
+  )
+
+ggplot(teams_with_apps, aes(x = apps, y = win)) +
+  geom_point(alpha = 0.3) +
+  labs(
+    title = "Can we predict how many NBA Championships a
+team has based on the number of appearances?",
+    x = "Number of NBA Finals appearances",
+    y = "Number of NBA Finals series wins"
+  )
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

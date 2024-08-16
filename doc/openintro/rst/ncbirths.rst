@@ -13,11 +13,11 @@
          :name: description
 
       In 2004, the state of North Carolina released to the public a
-      large data set containing information on births recorded in this
-      state. This data set has been of interest to medical researchers
+      large dataset containing information on births recorded in this
+      state. This dataset has been of interest to medical researchers
       who are studying the relation between habits and practices of
       expectant mothers and the birth of their children. This is a
-      random sample of 1,000 cases from this data set.
+      random sample of 1,000 cases from this dataset.
 
       .. rubric:: Usage
          :name: usage

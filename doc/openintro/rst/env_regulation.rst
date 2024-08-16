@@ -45,13 +45,13 @@
       The actual sample size was 1012. However, the original data were
       not from a simple random sample; after accounting for the design,
       the equivalent sample size was about 705, which was what was used
-      for the data set here to keep things simpler for intro stat
+      for the dataset here to keep things simpler for intro stat
       analyses.
 
       .. rubric:: Source
          :name: source
 
-      https://www.pewresearch.org/science/2017/05/16/public-divides-over-environmental-regulation-and-energy-policy/
+      https://www.pewresearch.org/science/2017/05/16/public-divides-over-environmental-regulation-and-energy-policy-2/
 
       .. rubric:: Examples
          :name: examples
