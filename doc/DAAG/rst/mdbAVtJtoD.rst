@@ -32,10 +32,8 @@
 
       Australian Bureau of Meteorology web pages:
 
-      http://www.bom.gov.au/climate/change/index.shtml
-
-      Go to website, choose timeseries to display, then click "Download
-      data"
+      Go to the url http://www.bom.gov.au/climate/change/, choose
+      timeseries to display, then click "Download data"
 
       The website gives anomalies from 1961-1990 averages. The monthly
       means have been added, in order to obtain a series. The monthly

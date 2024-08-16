@@ -294,6 +294,6 @@
 
          # Percent callback for typical White names and typical African-American names (table 1, p. 997)
 
-         labor_market_discrimination %>%
-           group_by(race) %>%
+         labor_market_discrimination |>
+           group_by(race) |>
            summarise(call_back = mean(call))

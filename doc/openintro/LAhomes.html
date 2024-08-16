@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: LAhomes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>LAhomes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>LAhomes</h2>
+
+<h3>Description</h3>
+
+<p>Data collected by Andrew Bray at Reed College on characteristics of LA Homes in 2010.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>LAhomes
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1594 observations on the following 8 variables.
+</p>
+
+<dl>
+<dt>city</dt><dd><p>City where the home is located.</p>
+</dd>
+<dt>type</dt><dd><p>Type of home with levels <code>Condo/Twh</code> - condo or townhouse, <code>SFR</code> - single family residence, and <code>NA</code></p>
+</dd>
+<dt>bed</dt><dd><p>Number of bedrooms in the home.</p>
+</dd>
+<dt>bath</dt><dd><p>Number of bathrooms in the home.</p>
+</dd>
+<dt>garage</dt><dd><p>Number of cars that can be parked in the garage. Note that a value of <code>4</code> refers to 4 or more garage spaces.</p>
+</dd>
+<dt>sqft</dt><dd><p>Squarefootage of the home.</p>
+</dd>
+<dt>pool</dt><dd><p>Indicates if the home has a pool.</p>
+</dd>
+<dt>price</dt><dd><p>Listing price of the home.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+
+ggplot(LAhomes, aes(sqft, price)) +
+  geom_point(alpha = 0.2) +
+  theme_minimal() +
+  labs(
+    title = "Can we predict list price from squarefootage?",
+    subtitle = "Homes in the Los Angeles area",
+    x = "Square feet",
+    y = "List price"
+  )
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

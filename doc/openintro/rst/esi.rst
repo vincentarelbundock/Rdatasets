@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      This data set comes from the 2005 Environmental Sustainability
+      This dataset comes from the 2005 Environmental Sustainability
       Index: Benchmarking National Environmental Stewardship. Countries
       are given an overall sustainability score as well as scores in
       each of several different environmental areas.
@@ -160,9 +160,9 @@
          ggplot(esi, aes(x = cap_st, y = glo_col)) +
            geom_point(color = ifelse(esi$code == "USA", "red", "black")) +
            geom_text(
-           aes(label = ifelse(code == "USA", as.character(code), "")),
+             aes(label = ifelse(code == "USA", as.character(code), "")),
              hjust = 1.2, color = "red"
-             ) +
+           ) +
            labs(x = "Science and technology", y = "Participation in international collaboration efforts")
 
          ggplot(esi, aes(x = vulner, y = cap)) +
@@ -170,5 +170,5 @@
            geom_text(
              aes(label = ifelse(code == "USA", as.character(code), "")),
              hjust = 1.2, color = "red"
-             ) +
+           ) +
            labs(x = "Vulnerability", y = "Capacity")

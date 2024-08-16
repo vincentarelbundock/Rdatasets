@@ -6,13 +6,13 @@
       toy_anova R Documentation
       ========= ===============
 
-      .. rubric:: Simulated data set for ANOVA
-         :name: simulated-data-set-for-anova
+      .. rubric:: Simulated dataset for ANOVA
+         :name: simulated-dataset-for-anova
 
       .. rubric:: Description
          :name: description
 
-      Simulated data set for getting a better understanding of intuition
+      Simulated dataset for getting a better understanding of intuition
       that ANOVA is based off of.
 
       .. rubric:: Usage

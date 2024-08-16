@@ -94,12 +94,12 @@
       Shafer SL (1997). Influence of age and gender on the
       pharmacokinetics and pharmacodynamics of remifentanil: I. Model
       development. *Anesthesiology* **86** 1, 10–23.
-      https://pubs.asahq.org/anesthesiology/article/86/1/10/35947/Influence-of-Age-and-Gender-on-the
+      `doi:10.1097/00000542-199701000-00004 <https://doi.org/10.1097/00000542-199701000-00004>`__
 
       Charles F. Minto, Thomas W. Schnider and Steven L. Shafer (1997).
       Pharmacokinetics and Pharmacodynamics of Remifentanil: II. Model
       Application. *Anesthesiology* **86** 1, 24–33.
-      https://pubs.asahq.org/anesthesiology/article/86/1/24/35925/Pharmacokinetics-and-Pharmacodynamics-of
+      `doi:10.1097/00000542-199701000-00005 <https://doi.org/10.1097/00000542-199701000-00005>`__
 
       .. rubric:: Examples
          :name: examples
@@ -125,8 +125,10 @@
                                                  1.07 * Wt - 148*(Wt/Ht)^2,
                                                  1.1  * Wt - 128*(Wt/Ht)^2)
          with(Remi.1,
-             stopifnot(all.equal(BSA, Wt^{0.425} * Ht^{0.725} * 0.007184, tol = 1.5e-5),
-                       all.equal(LBM, LBMfn(Wt, Ht, Sex),                 tol = 7e-7)
+              stopifnot(all.equal(BSA, Wt^{0.425} * Ht^{0.725} * 0.007184,
+                                  tolerance = 1.5e-5),
+                        all.equal(LBM, LBMfn(Wt, Ht, Sex),
+                                  tolerance = 7e-7)
          ))
 
          ## Rate: typically  3 µg / kg body weight, but :

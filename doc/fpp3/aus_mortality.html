@@ -1,0 +1,91 @@
+<!DOCTYPE html><html><head><title>R: Australian mortality data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>aus_mortality</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Australian mortality data</h2>
+
+<h3>Description</h3>
+
+<p>Weekly death counts and mortality rates in Australia.
+</p>
+
+
+<h3>Format</h3>
+
+<p>Time series of class 'tsibble'
+</p>
+
+
+<h3>Details</h3>
+
+<p><code>aus_mortality</code> contains weekly data with two measured variables:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+ <code>Deaths</code>: </td><td style="text-align: left;"> Death count</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    <code>Mortality</code>:  </td><td style="text-align: left;"> Mortality rate
+</td>
+</tr>
+
+</table>
+
+<p>from 2015 week 01 to 2023 week 12 for five different age groups plus the
+total, categorised by sex.
+</p>
+<p>Each series is uniquely identified using three keys:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+    <code>Sex</code>:  </td><td style="text-align: left;"> Sex of the individual: Male, Female, or Both</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+    <code>Age</code>:  </td><td style="text-align: left;"> Age group of the individual
+</td>
+</tr>
+
+</table>
+
+<p>The mortality rate is defined as the number of deaths per thousand people in
+Australia in each week.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://mortality.org/Data/STMF">https://mortality.org/Data/STMF</a> (Downloaded on 29 May 2024)
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+aus_mortality
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

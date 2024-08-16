@@ -23,7 +23,7 @@
 
       .. code:: R
 
-         data("MockJurors")
+         data("MockJurors", package = "betareg")
 
       .. rubric:: Format
          :name: format

@@ -30,5 +30,5 @@
 
       .. code:: R
 
-         insurance %>%
+         insurance |>
            ggplot(aes(x=TVadverts, y=Quotes)) + geom_point()

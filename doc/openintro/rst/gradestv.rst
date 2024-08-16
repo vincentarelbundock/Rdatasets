@@ -13,7 +13,7 @@
       .. rubric:: Description
          :name: description
 
-      This is a simulated data set to be used to estimate the
+      This is a simulated dataset to be used to estimate the
       relationship between number of hours per week students watch TV
       and the grade they got in a statistics class.
 
@@ -38,10 +38,10 @@
       .. rubric:: Details
          :name: details
 
-      There are a few potential outliers in this data set. When
-      analyzing the data one should consider how (if at all) these
-      outliers may affect the estimates of correlation coefficient and
-      regression parameters.
+      There are a few potential outliers in this dataset. When analyzing
+      the data one should consider how (if at all) these outliers may
+      affect the estimates of correlation coefficient and regression
+      parameters.
 
       .. rubric:: Source
          :name: source

@@ -1,0 +1,103 @@
+<!DOCTYPE html><html><head><title>R: GAFA stock prices</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>gafa_stock</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>GAFA stock prices</h2>
+
+<h3>Description</h3>
+
+<p>Historical stock prices from 2014-2018 for Google, Amazon, Facebook and Apple.
+All prices are in $USD.
+</p>
+
+
+<h3>Format</h3>
+
+<p>Time series of class <code>tsibble</code>
+</p>
+
+
+<h3>Details</h3>
+
+<p><code>gafa_stock</code> is a <code>tsibble</code> containing data on irregular trading days:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+Open:      </td><td style="text-align: left;"> The opening price for the stock.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+High:      </td><td style="text-align: left;"> The stock's highest trading price.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+Low:       </td><td style="text-align: left;"> The stock's lowest trading price.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+Close:     </td><td style="text-align: left;"> The closing price for the stock.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+Adj_Close: </td><td style="text-align: left;"> The adjusted closing price for the stock.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+Volume:    </td><td style="text-align: left;"> The amount of stock traded.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+<p>Each stock is uniquely identified by one key:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+Symbol:      </td><td style="text-align: left;"> The ticker symbol for the stock.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Yahoo Finance historical data
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(tsibble)
+gafa_stock
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

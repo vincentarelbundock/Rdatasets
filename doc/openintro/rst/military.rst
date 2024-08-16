@@ -56,9 +56,9 @@
       .. rubric:: Details
          :name: details
 
-      The branches covered by this data set include the Army, Navy, Air
+      The branches covered by this dataset include the Army, Navy, Air
       Force, and Marine Corps. Demographic information on the Coast
-      Guard is contained in the original data set but has not been
+      Guard is contained in the original dataset but has not been
       included here.
 
       .. rubric:: Source
@@ -79,7 +79,7 @@
          library(forcats)
 
          # Proportion of females in military branches
-         military %>%
+         military |>
            ggplot(aes(x = branch, fill = gender)) +
            geom_bar(position = "fill") +
            labs(
@@ -88,11 +88,11 @@
            )
 
          # Proportion of army officer females across ranks
-         military %>%
+         military |>
            filter(
              grade == "officer",
              branch == "army"
-           ) %>%
+           ) |>
            ggplot(aes(x = factor(rank), fill = fct_rev(gender))) +
            geom_bar(position = "fill") +
            labs(

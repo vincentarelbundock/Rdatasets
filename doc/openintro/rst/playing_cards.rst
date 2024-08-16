@@ -39,7 +39,7 @@
       .. rubric:: Source
          :name: source
 
-      This extremely complex data set was generated from scratch.
+      This extremely complex dataset was generated from scratch.
 
       .. rubric:: Examples
          :name: examples

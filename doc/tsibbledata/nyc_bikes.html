@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><title>R: NYC Citi Bike trips</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nyc_bikes</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>NYC Citi Bike trips</h2>
+
+<h3>Description</h3>
+
+<p>A sample from NYC Citi Bike usage of 10 bikes throughout 2018. The data
+includes event data on each trip, including the trip's start and end times
+and locations. The customer's gender, birth year and bike usage type is
+also available.
+</p>
+
+
+<h3>Format</h3>
+
+<p>Time series of class <code>tsibble</code>
+</p>
+
+
+<h3>Details</h3>
+
+<p><code>nyc_bikes</code> is a <code>tsibble</code> containing event data, the events include
+these details:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+start_time:   </td><td style="text-align: left;"> The time and date when the trip was started.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+stop_time:    </td><td style="text-align: left;"> The time and date when the trip was ended.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+start_station:</td><td style="text-align: left;"> A unique identifier for the starting bike station.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+start_lat:    </td><td style="text-align: left;"> The latitude of the starting bike station.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+start_long:   </td><td style="text-align: left;"> The longitude of the starting bike station.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+end_station:  </td><td style="text-align: left;"> A unique identifier for the destination bike station.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+end_lat:      </td><td style="text-align: left;"> The latitutde of the destination bike station.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+end_long:     </td><td style="text-align: left;"> The longitude of the destination bike station.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+type:         </td><td style="text-align: left;"> The type of trip. A "Customer" has purchased either a 24-hour or 3-day pass, and a "Subscriber" has purchased an annual subscription.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+birth_year    </td><td style="text-align: left;"> The bike rider's year of birth.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+gender:       </td><td style="text-align: left;"> The gender of the bike rider.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+<p>Each series is uniquely identified by one key:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+bike_id:      </td><td style="text-align: left;"> A unique identifier for the bike.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Source</h3>
+
+<p>Citi Bike NYC, <a href="https://www.citibikenyc.com/system-data">https://www.citibikenyc.com/system-data</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(tsibble)
+nyc_bikes
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

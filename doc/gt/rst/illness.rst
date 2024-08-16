@@ -160,7 +160,7 @@
       .. rubric:: Dataset ID and Badge
          :name: dataset-id-and-badge
 
-      DATA-10
+      DATA-13
 
       .. container::
 
@@ -175,7 +175,8 @@
          :name: see-also
 
       Other datasets: ``constants``, ``countrypops``, ``exibble``,
-      ``gtcars``, ``metro``, ``pizzaplace``, ``rx_addv``, ``rx_adsl``,
-      ``sp500``, ``sza``, ``towny``
+      ``films``, ``gibraltar``, ``gtcars``, ``metro``, ``nuclides``,
+      ``peeps``, ``photolysis``, ``pizzaplace``, ``reactions``,
+      ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``, ``towny``
 
 .. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_illness.png

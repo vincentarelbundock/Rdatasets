@@ -19,8 +19,7 @@
       included here as a demonstration set for scale construction,
       factor analysis, and Item Response Theory analysis. Three
       additional demographic variables (sex, education, and age) are
-      also included. This data set is deprecated and users are
-      encouraged to use ``bfi``.
+      also included.
 
       .. rubric:: Usage
          :name: usage
@@ -28,6 +27,7 @@
       .. code:: R
 
          data(bfi)
+         data(bfi.dictionary)
 
       .. rubric:: Format
          :name: format
@@ -123,10 +123,6 @@
       .. rubric:: Details
          :name: details
 
-      This data set is deprecated and users are encouraged to use
-      ``bfi``.It is kept here backward compatability for one more
-      release.
-
       The first 25 items are organized by five putative factors:
       Agreeableness, Conscientiousness, Extraversion, Neuroticism, and
       Opennness. The scoring key is created using ``make.keys``, the
@@ -144,19 +140,15 @@
 
       as part of the Synthetic Apeture Personality Assessment (SAPA
       https://www.sapa-project.org/) project. To see an example of the
-      data collection technique, visit https://www.sapa-project.org/ or
+      data collection technique, visit https://www.SAPA-project.org/ or
       the International Cognitive Ability Resource at
-      https://icar-project.org/. The items given were sampled from the
+      https://icar-project.org. The items given were sampled from the
       International Personality Item Pool of Lewis Goldberg using the
       sampling technique of SAPA. This is a sample data set taken from
       the much larger SAPA data bank.
 
       .. rubric:: Note
          :name: note
-
-      This data set is deprecated and users are encouraged to use
-      ``bfi``.It is kept here backward compatability for one more
-      release.
 
       The bfi data set and items should not be confused with the BFI
       (Big Five Inventory) of Oliver John and colleagues (John, O. P.,
@@ -207,13 +199,13 @@
          data(bfi)
          psych::describe(bfi)
          # create the bfi.keys (actually already saved in the data file)
-         keys <-
+          bfi.keys <-
            list(agree=c("-A1","A2","A3","A4","A5"),conscientious=c("C1","C2","C3","-C4","-C5"),
          extraversion=c("-E1","-E2","E3","E4","E5"),neuroticism=c("N1","N2","N3","N4","N5"),
          openness = c("O1","-O2","O3","O4","-O5")) 
 
-          scores <- psych::scoreItems(keys,bfi,min=1,max=6) #specify the minimum and maximum values
+          scores <- psych::scoreItems(bfi.keys,bfi,min=1,max=6) #specify the minimum and maximum values
           scores
-          #show the use of the fa.lookup with a dictionary
-          #psych::keys.lookup(bfi.keys,bfi.dictionary[,1:4])   #deprecated  -- use psychTools
+          #show the use of the keys.lookup with a dictionary
+          psych::keys.lookup(bfi.keys,bfi.dictionary[,1:4])
           

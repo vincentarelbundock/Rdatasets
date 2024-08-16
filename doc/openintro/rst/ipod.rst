@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      A simulated data set on lengths of songs on an iPod.
+      A simulated dataset on lengths of songs on an iPod.
 
       .. rubric:: Usage
          :name: usage

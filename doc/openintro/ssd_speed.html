@@ -66,11 +66,11 @@ function processMathHTML() {
 library(ggplot2)
 library(dplyr)
 
-ssd_speed %&gt;%
+ssd_speed |&gt;
   count(form_factor)
 
-ssd_speed %&gt;%
-  filter(form_factor != "mSATA") %&gt;%
+ssd_speed |&gt;
+  filter(form_factor != "mSATA") |&gt;
   ggplot(aes(x = read, y = write, color = form_factor)) +
   geom_point() +
   labs(

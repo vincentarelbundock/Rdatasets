@@ -68,18 +68,18 @@
          # don't use scientific notation
          options(scipen = 999)
          # List the top 10 countries by GDP (There is a row for World)
-         gdp_countries %>% 
-           filter(description == 'GDP') %>%
-           mutate(year2020 = format(year_2020,big.mark=",")) %>%
-           select(country,year2020) %>%  
-           arrange(desc(year2020)) %>% 
+         gdp_countries |>
+           filter(description == "GDP") |>
+           mutate(year2020 = format(year_2020, big.mark = ",")) |>
+           select(country, year2020) |>
+           arrange(desc(year2020)) |>
            top_n(n = 11)
 
          # List the 10 countries with the biggest GDP per capita change from 1960 to 2020
-         gdp_countries %>% 
-           filter(description == 'GDP per capita') %>%
-           mutate(change = format(round(year_2020-year_1960,0),big.mark=",")) %>%
-           select(country,change,year_1960,year_2020) %>%  
-           na.omit() %>%
-           arrange(desc(change)) %>% 
-           top_n(n = 10)  
+         gdp_countries |>
+           filter(description == "GDP per capita") |>
+           mutate(change = format(round(year_2020 - year_1960, 0), big.mark = ",")) |>
+           select(country, change, year_1960, year_2020) |>
+           na.omit() |>
+           arrange(desc(change)) |>
+           top_n(n = 10)

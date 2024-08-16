@@ -6,8 +6,8 @@
       toohey R Documentation
       ====== ===============
 
-      .. rubric:: Simulated polling data set
-         :name: simulated-polling-data-set
+      .. rubric:: Simulated polling dataset
+         :name: simulated-polling-dataset
 
       .. rubric:: Description
          :name: description

@@ -6,8 +6,8 @@
       outliers R Documentation
       ======== ===============
 
-      .. rubric:: Simulated data sets for different types of outliers
-         :name: simulated-data-sets-for-different-types-of-outliers
+      .. rubric:: Simulated datasets for different types of outliers
+         :name: simulated-datasets-for-different-types-of-outliers
 
       .. rubric:: Description
          :name: description

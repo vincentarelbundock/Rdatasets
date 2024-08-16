@@ -1,0 +1,98 @@
+<!DOCTYPE html><html><head><title>R: NBA Finals History</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nba_finals</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>NBA Finals History</h2>
+
+<h3>Description</h3>
+
+<p>This dataset contains information about the teams who played in the NBA Finals from 1950 - 2022.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>nba_finals
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 73 rows and 9 variables:
+</p>
+
+<dl>
+<dt>year</dt><dd><p>The year in which the Finals took place.</p>
+</dd>
+<dt>winner</dt><dd><p>The team who won the series.</p>
+</dd>
+<dt>western_wins</dt><dd><p>Number of series wins by the Western Conference Champions.</p>
+</dd>
+<dt>eastern_wins</dt><dd><p>Number of series wins by the Eastern Conference Champions.</p>
+</dd>
+<dt>western_champions</dt><dd><p>Team that won the Western Conference title and played in the Finals.</p>
+</dd>
+<dt>eastern_champions</dt><dd><p>Team that won the Eastern Conference title and played in the Finals.</p>
+</dd>
+<dt>western_coach</dt><dd><p>Coach of the Western Conference champions.</p>
+</dd>
+<dt>eastern_coach</dt><dd><p>Coach of the Eastern Conference champions.</p>
+</dd>
+<dt>home_court</dt><dd><p>Which conference held home court advantage for the series.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://en.wikipedia.org/wiki/List_of_NBA_champions">Wikipedia: List of NBA Champions</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+library(ggplot2)
+library(tidyr)
+
+# Top 5 Appearing Coaches
+nba_finals |&gt;
+  pivot_longer(
+    cols = c("western_coach", "eastern_coach"),
+    names_to = "conference", values_to = "coach"
+  ) |&gt;
+  count(coach, sort = TRUE) |&gt;
+  slice_head(n = 5)
+
+# Top 5 Winning Coaches
+nba_finals |&gt;
+  mutate(
+    winning_coach = case_when(
+      western_wins == 4 ~ western_coach,
+      eastern_wins == 4 ~ eastern_coach
+    )
+  ) |&gt;
+  count(winning_coach, sort = TRUE) |&gt;
+  slice_head(n = 5)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

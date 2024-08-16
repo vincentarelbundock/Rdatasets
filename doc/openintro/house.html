@@ -81,8 +81,8 @@ library(ggplot2)
 library(forcats)
 
 # Examine two-party relationship since 1855
-house_since_1855 &lt;- house %&gt;%
-  filter(year_start &gt;= 1855) %&gt;%
+house_since_1855 &lt;- house |&gt;
+  filter(year_start &gt;= 1855) |&gt;
   mutate(
     p1_perc = 100 * np1 / seats,
     p2_perc = 100 * np2 / seats,

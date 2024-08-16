@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: nyc</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nyc</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>nyc</h2>
+
+<h3>Description</h3>
+
+<p>Zagat is a public survey where anyone can provide scores to a restaurant.
+The scores from the general public are then gathered to produce ratings.
+This dataset contains a list of 168 NYC restaurants and their Zagat Ratings.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>nyc
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 168 observations on the following 6 variables.
+</p>
+
+<dl>
+<dt>restaurant</dt><dd><p>Name of the restaurant.</p>
+</dd>
+<dt>price</dt><dd><p>Price of a mean for two, with drinks, in US $.</p>
+</dd>
+<dt>food</dt><dd><p>Zagat rating for food.</p>
+</dd>
+<dt>decor</dt><dd><p>Zagat rating for decor.</p>
+</dd>
+<dt>service</dt><dd><p>Zagat rating for service.</p>
+</dd>
+<dt>east</dt><dd><p>Indicator variable for location of the restaurant. <code>0</code> = west of 5th Avenue, <code>1</code> = east of 5th Avenue</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>For each category the scales are as follows:
+</p>
+<p>0 - 9: poor to fair
+10 - 15: fair to good
+16 - 19: good to very good
+20 - 25: very good to excellent
+25 - 30: extraordinary to perfection
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+library(ggplot2)
+
+location_labs &lt;- c("West", "East")
+names(location_labs) &lt;- c(0, 1)
+
+ggplot(nyc, mapping = aes(x = price, group = east, fill = east)) +
+  geom_boxplot(alpha = 0.5) +
+  facet_grid(east ~ ., labeller = labeller(east = location_labs)) +
+  labs(
+    title = "Is food more expensive east of 5th Avenue?",
+    x = "Price (US$)"
+  ) +
+  guides(fill = "none") +
+  theme_minimal() +
+  theme(axis.text.y = element_blank())
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

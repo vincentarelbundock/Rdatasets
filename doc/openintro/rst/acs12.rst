@@ -81,7 +81,7 @@
          library(broom)
 
          # employed only
-         acs12_emp <- acs12 %>%
+         acs12_emp <- acs12 |>
            filter(
              age >= 30, age <= 60,
              employment == "employed",
@@ -93,7 +93,7 @@
            geom_point() +
            geom_smooth(method = "lm")
 
-         lm(income ~ age, data = acs12_emp) %>%
+         lm(income ~ age, data = acs12_emp) |>
            tidy()
 
          # log-transormed model
@@ -101,5 +101,5 @@
            geom_point() +
            geom_smooth(method = "lm")
 
-         lm(log(income) ~ age, data = acs12_emp) %>%
+         lm(log(income) ~ age, data = acs12_emp) |>
            tidy()

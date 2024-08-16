@@ -133,7 +133,7 @@
       bag designs affected frontal crash mortality?* Ann Epidemiol
       20:499-510.
 
-      The web page http://www-fars.nhtsa.dot.gov/Main/index.aspx has a
+      The web page https://www-fars.nhtsa.dot.gov/Main/index.aspx has a
       menu-based interface into the FARS (Fatality Analysis Recording
       System) data. The FARS database aims to include every accident in
       which there was at least one fatality.

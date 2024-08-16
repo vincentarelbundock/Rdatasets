@@ -1,0 +1,83 @@
+<!DOCTYPE html><html><head><title>R: Half-hourly electricity demand for Victoria, Australia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>vic_elec</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Half-hourly electricity demand for Victoria, Australia</h2>
+
+<h3>Description</h3>
+
+<p><code>vic_elec</code> is a half-hourly <code>tsibble</code> with three values:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+Demand:      </td><td style="text-align: left;"> Total electricity demand in MWh.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+Temperature: </td><td style="text-align: left;"> Temperature of Melbourne (BOM site 086071).</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+Holiday:     </td><td style="text-align: left;"> Indicator for if that day is a public holiday.</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Format</h3>
+
+<p>Time series of class <code>tsibble</code>.
+</p>
+
+
+<h3>Details</h3>
+
+<p>This data is for operational demand, which is the demand met by local
+scheduled generating units, semi-scheduled generating units, and
+non-scheduled intermittent generating units of aggregate capacity larger
+than 30 MWh, and by generation imports to the region. The operational demand
+excludes the demand met by non-scheduled non-intermittent generating units,
+non-scheduled intermittent generating units of aggregate capacity smaller
+than 30 MWh, exempt generation (e.g. rooftop solar, gas tri-generation, very
+small wind farms, etc), and demand of local scheduled loads. It also
+excludes some very large industrial users (such as mines or smelters).
+</p>
+
+
+<h3>Source</h3>
+
+<p>Australian Energy Market Operator.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(tsibble)
+vic_elec
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -92,11 +92,11 @@
       .. rubric:: Details
          :name: details
 
-      A past data set was collected from UCLA courses in Spring 2010,
-      and Amazon at that time was found to be almost uniformly lower
-      than those of the UCLA bookstore's. Now in 2018, the UCLA
-      bookstore is about even with Amazon on the vast majority of
-      titles, and there is no statistical difference in the sample data.
+      A past dataset was collected from UCLA courses in Spring 2010, and
+      Amazon at that time was found to be almost uniformly lower than
+      those of the UCLA bookstore's. Now in 2018, the UCLA bookstore is
+      about even with Amazon on the vast majority of titles, and there
+      is no statistical difference in the sample data.
 
       The most expensive book required for the course was generally
       used.
@@ -155,10 +155,10 @@
            )
 
          # The following outliers were double checked for accuracy
-         ucla_textbooks_f18_with_diff <- ucla_textbooks_f18 %>%
+         ucla_textbooks_f18_with_diff <- ucla_textbooks_f18 |>
            mutate(diff = bookstore_new - amazon_new)
 
-         ucla_textbooks_f18_with_diff %>%
+         ucla_textbooks_f18_with_diff |>
            filter(diff > 20 | diff < -20)
 
          # Distribution of price differences

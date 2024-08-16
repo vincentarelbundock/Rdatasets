@@ -68,8 +68,8 @@ function processMathHTML() {
 library(dplyr)
 library(ggplot2)
 
-census %&gt;%
-  filter(total_family_income &gt; 0) %&gt;%
+census |&gt;
+  filter(total_family_income &gt; 0) |&gt;
   ggplot(aes(x = total_family_income)) +
   geom_histogram(binwidth = 25000)
 </code></pre>

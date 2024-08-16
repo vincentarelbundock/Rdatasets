@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      A simulated data set on lifespan of ball bearings.
+      A simulated dataset on lifespan of ball bearings.
 
       .. rubric:: Usage
          :name: usage

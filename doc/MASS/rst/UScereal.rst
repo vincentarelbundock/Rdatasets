@@ -68,7 +68,7 @@
          :name: source
 
       The original data are available at
-      http://lib.stat.cmu.edu/datasets/1993.expo/.
+      https://lib.stat.cmu.edu/datasets/1993.expo/.
 
       .. rubric:: References
          :name: references

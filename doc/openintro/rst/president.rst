@@ -48,7 +48,9 @@
       Presidents of the United States (table) – infoplease.com (visited:
       Nov 2nd, 2010)
 
-      http://www.infoplease.com/ce6/history/A0840075.html
+      https://www.infoplease.com/us/government/executive-branch/presidents
+      and
+      https://www.infoplease.com/us/government/executive-branch/vice-presidents
 
       .. rubric:: Examples
          :name: examples

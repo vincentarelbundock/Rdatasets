@@ -143,7 +143,8 @@
          :name: see-also
 
       Other datasets: ``constants``, ``countrypops``, ``exibble``,
-      ``gtcars``, ``illness``, ``metro``, ``pizzaplace``, ``rx_addv``,
-      ``rx_adsl``, ``sp500``, ``sza``
+      ``films``, ``gibraltar``, ``gtcars``, ``illness``, ``metro``,
+      ``nuclides``, ``peeps``, ``photolysis``, ``pizzaplace``,
+      ``reactions``, ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``
 
 .. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_towny.png

@@ -81,8 +81,8 @@
          library(forcats)
 
          # Examine two-party relationship since 1855
-         house_since_1855 <- house %>%
-           filter(year_start >= 1855) %>%
+         house_since_1855 <- house |>
+           filter(year_start >= 1855) |>
            mutate(
              p1_perc = 100 * np1 / seats,
              p2_perc = 100 * np2 / seats,

@@ -12,12 +12,12 @@
       .. rubric:: Description
          :name: description
 
-      Every year, the US releases to the public a large data set
+      Every year, the US releases to the public a large dataset
       containing information on births recorded in the country. This
-      data set has been of interest to medical researchers who are
+      dataset has been of interest to medical researchers who are
       studying the relation between habits and practices of expectant
       mothers and the birth of their children. This is a random sample
-      of 1,000 cases from the data set released in 2014.
+      of 1,000 cases from the dataset released in 2014.
 
       .. rubric:: Usage
          :name: usage

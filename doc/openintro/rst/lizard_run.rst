@@ -58,8 +58,8 @@
            geom_density(alpha = 0.5)
 
          # Top speed summary statistics by species
-         lizard_run %>%
-           group_by(common_name) %>%
+         lizard_run |>
+           group_by(common_name) |>
            summarise(
              n    = n(),
              mean = mean(top_speed),

@@ -69,7 +69,7 @@ function processMathHTML() {
 <pre><code class='language-R'>library(ggplot2)
 library(dplyr)
 
-plot_data &lt;- blizzard_salary %&gt;%
+plot_data &lt;- blizzard_salary |&gt;
   mutate(annual_salary = case_when(
     salary_type == "week" ~ current_salary * 52,
     salary_type == "hour" ~ current_salary * 40 * 52,

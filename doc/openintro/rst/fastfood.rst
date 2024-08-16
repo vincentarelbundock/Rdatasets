@@ -12,7 +12,8 @@
       .. rubric:: Description
          :name: description
 
-      Nutrition amounts in 515 fast food items.
+      Nutrition amounts in 515 fast food items. The author of the data
+      scraped only entrees (not sides, drinks, desserts, etc.).
 
       .. rubric:: Usage
          :name: usage
@@ -76,3 +77,9 @@
 
       salad
          Salad or not
+
+      .. rubric:: Source
+         :name: source
+
+      Retrieved from `Tidy Tuesday Fast food entree
+      data <https://github.com/rfordatascience/tidytuesday/tree/master/data/2018/2018-09-04>`__.

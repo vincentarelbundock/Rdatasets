@@ -32,4 +32,4 @@
 
       .. code:: R
 
-         prices %>% autoplot(wheat)
+         prices |> autoplot(wheat)

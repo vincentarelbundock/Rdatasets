@@ -63,25 +63,25 @@
          library(dplyr)
          library(scales)
          # Calculate the mortality rate for all cases by vaccination status
-         simpsons_paradox_covid %>%
-          group_by(vaccine_status, outcome) %>%
-          summarize(count = n()) %>%
-          ungroup() %>%
-          group_by(vaccine_status) %>%
-          mutate(total = sum(count)) %>%
-          filter(outcome == "death") %>%
-          select(c(vaccine_status, count, total)) %>%
-          mutate(mortality_rate = label_percent(accuracy = 0.01)(round(count / total, 4))) %>%
-          select(-c(count, total))
+         simpsons_paradox_covid |>
+           group_by(vaccine_status, outcome) |>
+           summarize(count = n()) |>
+           ungroup() |>
+           group_by(vaccine_status) |>
+           mutate(total = sum(count)) |>
+           filter(outcome == "death") |>
+           select(c(vaccine_status, count, total)) |>
+           mutate(mortality_rate = label_percent(accuracy = 0.01)(round(count / total, 4))) |>
+           select(-c(count, total))
 
          # Calculate mortality rate by age group and vaccination status
-         simpsons_paradox_covid %>%
-          group_by(age_group, vaccine_status, outcome) %>%
-          summarize(count = n()) %>%
-          ungroup() %>%
-          group_by(age_group, vaccine_status) %>%
-          mutate(total = sum(count)) %>%
-          filter(outcome == "death") %>%
-          select(c(age_group, vaccine_status, count, total)) %>%
-          mutate(mortality_rate = label_percent(accuracy = 0.01)(round(count / total, 4))) %>%
-          select(-c(count, total))
+         simpsons_paradox_covid |>
+           group_by(age_group, vaccine_status, outcome) |>
+           summarize(count = n()) |>
+           ungroup() |>
+           group_by(age_group, vaccine_status) |>
+           mutate(total = sum(count)) |>
+           filter(outcome == "death") |>
+           select(c(age_group, vaccine_status, count, total)) |>
+           mutate(mortality_rate = label_percent(accuracy = 0.01)(round(count / total, 4))) |>
+           select(-c(count, total))

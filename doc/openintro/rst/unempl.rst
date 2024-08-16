@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      A compilation of two data sets that provides an estimate of
+      A compilation of two datasets that provides an estimate of
       unemployment from 1890 to 2010.
 
       .. rubric:: Usage

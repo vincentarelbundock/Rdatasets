@@ -73,9 +73,9 @@ infection. PNAS 114(10):2711-2716.
 library(dplyr)
 
 # Calculate conditional probabilities of infection after vaccine/placebo
-malaria %&gt;%
-  count(treatment, outcome) %&gt;%
-  group_by(treatment) %&gt;%
+malaria |&gt;
+  count(treatment, outcome) |&gt;
+  group_by(treatment) |&gt;
   mutate(prop = n / sum(n))
 
 # Fisher's exact text

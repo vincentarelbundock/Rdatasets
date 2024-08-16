@@ -32,7 +32,7 @@
       -  Protein measurements of Abeta, Tau, and a phosphorylated
          version of Tau (called pTau)
 
-      -  Proteinmeasurements of 124 exploratory biomarkers, and
+      -  Protein measurements of 124 exploratory biomarkers, and
 
       -  Clinical dementia scores
 

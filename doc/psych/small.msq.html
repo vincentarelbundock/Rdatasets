@@ -1,0 +1,90 @@
+<!DOCTYPE html><html><head><title>R: A small example data set taken from a larger data set</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>small.msq</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>
+A small example data set taken from a larger data set</h2>
+
+<h3>Description</h3>
+
+<p>A small subset of 200 cases and 14 variables from the msqR data  set in the psychTools package.  Saved here to allow vignettes to work without using psychTools</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("small.msq")</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 200 observations on the following 14 variables.
+</p>
+
+<dl>
+<dt><code>active</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>alert</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>aroused</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>sleepy</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>tired</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>drowsy</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>anxious</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>jittery</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>nervous</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>calm</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>relaxed</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>at.ease</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>gender</code></dt><dd><p>a numeric vector</p>
+</dd>
+<dt><code>drug</code></dt><dd><p>a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>See the detailed discussion of the msqR in the psychTools package</p>
+
+
+<h3>References</h3>
+
+<p>Revelle, W. and  Anderson, K.J. (1998) Personality, motivation and cognitive performance: Final report to the Army Research Institute on  contract MDA 903-93-K-0008. (<a href="https://www.personality-project.org/revelle/publications/ra.ari.98.pdf">https://www.personality-project.org/revelle/publications/ra.ari.98.pdf</a>).
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(small.msq)
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

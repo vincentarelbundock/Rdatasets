@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><title>R: Pedestrian counts in the city of Melbourne</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>pedestrian</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Pedestrian counts in the city of Melbourne</h2>
+
+<h3>Description</h3>
+
+<p>A dataset containing the hourly pedestrian counts from 2015-01-01 to
+2016-12-31 at 4 sensors in the city of Melbourne.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>pedestrian
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A tsibble with 66,071 rows and 5 variables:
+</p>
+
+<ul>
+<li> <p><strong>Sensor</strong>: Sensor names (key)
+</p>
+</li>
+<li> <p><strong>Date_Time</strong>: Date time when the pedestrian counts are recorded (index)
+</p>
+</li>
+<li> <p><strong>Date</strong>: Date when the pedestrian counts are recorded
+</p>
+</li>
+<li> <p><strong>Time</strong>: Hour associated with Date_Time
+</p>
+</li>
+<li> <p><strong>Counts</strong>: Hourly pedestrian counts
+</p>
+</li></ul>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(dplyr)
+data(pedestrian)
+# make implicit missingness to be explicit ----
+pedestrian %&gt;% fill_gaps()
+# compute daily maximum counts across sensors ----
+pedestrian %&gt;%
+  group_by_key() %&gt;%
+  index_by(Date) %&gt;% # group by Date and use it as new index
+  summarise(MaxC = max(Count))
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

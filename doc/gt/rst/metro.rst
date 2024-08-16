@@ -12,13 +12,13 @@
       .. rubric:: Description
          :name: description
 
-      A dataset with information on all 308 Paris Metro stations as of
-      February 2023. Each record represents a station, describing which
+      A dataset with information on all 314 Paris Metro stations as of
+      June 2024. Each record represents a station, describing which
       Metro lines are serviced by the station, which other connections
       are available, and annual passenger volumes. Basic location
-      information is provided for each station in terms where they
+      information is provided for each station in terms of where they
       reside on a municipal level, and, through latitude/longitude
-      coordinates.
+      coordinate values.
 
       The system has 16 lines (numbered from 1 to 14, with two
       additional lines: 3bis and 7bis) and covers over 200 kilometers of
@@ -46,7 +46,7 @@
       .. rubric:: Format
          :name: format
 
-      A tibble with 308 rows and 11 variables:
+      A tibble with 314 rows and 11 variables:
 
       name
          The name of the station.
@@ -94,34 +94,10 @@
          the newest stations in the Metro system do not have this data,
          thus they show ``NA`` values.
 
-      .. rubric:: Examples
-         :name: examples
-
-      Here is a glimpse at the data available in ``metro``.
-
-      .. container:: sourceCode r
-
-         ::
-
-            dplyr::glimpse(metro)
-            #> Rows: 308
-            #> Columns: 11
-            #> $ name               <chr> "Argentine", "Bastille", "Bérault", "Champs-Élysées~
-            #> $ caption            <chr> NA, NA, NA, "Grand Palais", NA, NA, NA, NA, NA, NA,~
-            #> $ lines              <chr> "1", "1, 5, 8", "1", "1, 13", "1, 2, 6", "1", "1, 4~
-            #> $ connect_rer        <chr> NA, NA, NA, NA, "A", NA, "A, B, D", NA, NA, NA, "A,~
-            #> $ connect_tramway    <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA,~
-            #> $ connect_transilien <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, "R", NA, NA~
-            #> $ connect_other      <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, "TGV, TGV L~
-            #> $ passengers         <int> 2079212, 8069243, 2106827, 1909005, 4291663, 361773~
-            #> $ latitude           <dbl> 48.87528, 48.85308, 48.84528, 48.86750, 48.87389, 4~
-            #> $ longitude          <dbl> 2.290000, 2.369077, 2.428333, 2.313500, 2.295000, 2~
-            #> $ location           <chr> "Paris 16th, Paris 17th", "Paris 4th, Paris 11th, P~
-
       .. rubric:: Dataset ID and Badge
          :name: dataset-id-and-badge
 
-      DATA-8
+      DATA-10
 
       .. container::
 
@@ -136,7 +112,8 @@
          :name: see-also
 
       Other datasets: ``constants``, ``countrypops``, ``exibble``,
-      ``gtcars``, ``illness``, ``pizzaplace``, ``rx_addv``, ``rx_adsl``,
-      ``sp500``, ``sza``, ``towny``
+      ``films``, ``gibraltar``, ``gtcars``, ``illness``, ``nuclides``,
+      ``peeps``, ``photolysis``, ``pizzaplace``, ``reactions``,
+      ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``, ``towny``
 
 .. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_metro.png

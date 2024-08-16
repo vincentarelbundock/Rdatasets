@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>R: ucb_admit</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>usb_admit</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>ucb_admit</h2>
+
+<h3>Description</h3>
+
+<p>Data from a study carried out by the graduate Division of the University of California, Berkeley in the early 1970's to evaluate whether there was a sex bias in graduate admissions.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ucb_admit
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 4526 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt>admit</dt><dd><p>Was the applicant admitted to the university?</p>
+</dd>
+<dt>gender</dt><dd><p>Whether the applicant identified as male or female.</p>
+</dd>
+<dt>department</dt><dd><p>What department did the applicant apply to, noted as A through F for confidentiality.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+library(dplyr)
+
+plot_data &lt;- ucb_admit |&gt;
+  count(dept, gender, admit)
+
+ggplot(plot_data, aes(dept, n, fill = gender)) +
+  geom_col(position = "dodge") +
+  facet_wrap(~admit) +
+  theme_minimal() +
+  labs(
+    title = "Does gender discrimination play a role in college admittance?",
+    x = "Department",
+    y = "Number of Students",
+    fill = "Gender",
+    caption = "Source: UC Berkeley, 1970's"
+  )
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

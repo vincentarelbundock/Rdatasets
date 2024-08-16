@@ -13,7 +13,7 @@
          :name: description
 
       A data frame with 54 rows and 6 columns. This data is a subset of
-      the ``Cars93`` data set from the ``MASS`` package.
+      the ``Cars93`` dataset from the ``MASS`` package.
 
       .. rubric:: Usage
          :name: usage

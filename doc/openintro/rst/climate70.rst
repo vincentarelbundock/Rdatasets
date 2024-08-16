@@ -70,7 +70,7 @@
          # Data sampled are from the US, Europe, and Australia.
          # This geographic limitation may be due to the particular
          # years considered, since locations without both 1948 and
-         # 2018 were discarded for this (simple) data set.
+         # 2018 were discarded for this (simple) dataset.
          plot(climate70$longitude, climate70$latitude)
 
          plot(climate70$dx70_1948, climate70$dx70_2018)

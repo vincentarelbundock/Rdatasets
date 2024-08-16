@@ -116,7 +116,7 @@
       `doi:10.1371/journal.pone.0195549 <https://doi.org/10.1371/journal.pone.0195549>`__.
 
       Thank you to Professor Silas Bergen of Winona State University for
-      pointing us to this data set!
+      pointing us to this dataset!
 
       .. rubric:: References
          :name: references

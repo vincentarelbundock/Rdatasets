@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      This data set is simulated but contains realistic occurrences of
+      This dataset is simulated but contains realistic occurrences of
       AMI in NY City.
 
       .. rubric:: Usage

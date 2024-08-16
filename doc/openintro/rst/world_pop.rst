@@ -227,25 +227,25 @@
          library(tidyr)
 
          # List percentage of population change from 1960 to 2020
-         world_pop %>%
-           mutate(percent_change = round((year_2020 - year_1960) / year_2020 * 100, 2)) %>%
-           mutate(rank_pop_change = round(rank(-percent_change)), 0) %>%
-           select(rank_pop_change, country, percent_change) %>%
+         world_pop |>
+           mutate(percent_change = round((year_2020 - year_1960) / year_2020 * 100, 2)) |>
+           mutate(rank_pop_change = round(rank(-percent_change)), 0) |>
+           select(rank_pop_change, country, percent_change) |>
            arrange(rank_pop_change)
 
          # Graph population in millions by decade for specified countries
-         world_pop %>%
+         world_pop |>
            select(
              country, year_1960, year_1970, year_1980, year_1990,
              year_2000, year_2010, year_2020
-             ) %>%
-           filter(country %in% c("China", "India", "United States")) %>%
+           ) |>
+           filter(country %in% c("China", "India", "United States")) |>
            pivot_longer(
              cols = c(year_1960, year_1970, year_1980, year_1990, year_2000, year_2010, year_2020),
              names_to = "year",
              values_to = "population"
-           ) %>%
-           mutate(year = as.numeric(gsub("year_", "", year))) %>%
+           ) |>
+           mutate(year = as.numeric(gsub("year_", "", year))) |>
            ggplot(aes(year, population, color = country)) +
            geom_point() +
            geom_smooth(method = "loess", formula = "y ~ x") +

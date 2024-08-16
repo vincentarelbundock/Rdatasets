@@ -101,15 +101,15 @@ Lifetime risk of maternal death (1 in X).</p>
 library(ggplot2)
 
 # List countries and lifetime risk of maternal death (1 in X), ranked
-sowc_maternal_newborn %&gt;%
-  mutate(rank = round(rank(risk_maternal_death_2017), 0)) %&gt;%
-  select(countries_and_areas, rank, risk_maternal_death_2017) %&gt;%
+sowc_maternal_newborn |&gt;
+  mutate(rank = round(rank(risk_maternal_death_2017), 0)) |&gt;
+  select(countries_and_areas, rank, risk_maternal_death_2017) |&gt;
   arrange(rank)
 
 # Graph scatterplot of Maternal Mortality Ratio 2017 and Antenatal Care 4+ Visits %
-sowc_maternal_newborn %&gt;%
-  select(antenatal_care_4_1549, maternal_mortality_ratio_2017) %&gt;%
-  remove_missing(na.rm = TRUE) %&gt;%
+sowc_maternal_newborn |&gt;
+  select(antenatal_care_4_1549, maternal_mortality_ratio_2017) |&gt;
+  remove_missing(na.rm = TRUE) |&gt;
   ggplot(aes(antenatal_care_4_1549, maternal_mortality_ratio_2017)) +
   geom_point(alpha = 0.5) +
   labs(

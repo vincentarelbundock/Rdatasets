@@ -12,8 +12,8 @@
       .. rubric:: Description
          :name: description
 
-      This data set comes from the Guardian's Data Blog and includes
-      five financial demographic variables.
+      This dataset comes from the Guardian's Data Blog and includes five
+      financial demographic variables.
 
       .. rubric:: Usage
          :name: usage

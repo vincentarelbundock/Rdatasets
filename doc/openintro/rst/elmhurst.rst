@@ -43,7 +43,7 @@
       the 2011 class at Elmhurst College that accompanied an article
       titled What Students Really Pay to Go to College published online
       by The Chronicle of Higher Education:
-      https://www.chronicle.com/article/what-students-really-pay-to-go-to-college/.
+      https://www.chronicle.com/article/what-students-really-pay-to-go-to-college/?sra=true.
 
       .. rubric:: Examples
          :name: examples

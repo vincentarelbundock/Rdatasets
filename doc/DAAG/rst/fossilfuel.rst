@@ -38,15 +38,16 @@
          :name: details
 
       Data for the years 1751 through to 2014 is available from Data for
-      the years 2014
-      https://cdiac.ess-dive.lbl.gov/ftp/ndp030/global.1751_2014.ems
+      the years 2014 https://data.ess-dive.lbl.gov/portals/CDIAC
 
       .. rubric:: Source
          :name: source
 
-      Boden TA, Marland G, Andres RJ (2017). “Global, Regional, and
-      National Fossil-Fuel CO2 Emissions.”
-      https://cdiac.ess-dive.lbl.gov/trends/emis/meth_reg.html.
+      Boden T A; Marland G; Andres R J (1999): Global, Regional, and
+      National Fossil-Fuel CO2 Emissions (1751 - 2014) (V. 2017). Carbon
+      Dioxide Information Analysis Center (CDIAC), Oak Ridge National
+      Laboratory (ORNL), Oak Ridge, TN (United States), ESS-DIVE
+      repository. Dataset. doi:10.3334/CDIAC/00001_V2017
 
       .. rubric:: Examples
          :name: examples

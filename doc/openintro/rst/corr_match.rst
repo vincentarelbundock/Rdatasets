@@ -6,8 +6,8 @@
       corr_match R Documentation
       ========== ===============
 
-      .. rubric:: Sample data sets for correlation problems
-         :name: sample-data-sets-for-correlation-problems
+      .. rubric:: Sample datasets for correlation problems
+         :name: sample-datasets-for-correlation-problems
 
       .. rubric:: Description
          :name: description
@@ -56,7 +56,7 @@
       .. rubric:: Source
          :name: source
 
-      Simulated data set.
+      Simulated dataset.
 
       .. rubric:: Examples
          :name: examples

@@ -21,7 +21,7 @@ function processMathHTML() {
 <h3>Description</h3>
 
 <p>A subset of data on Major League Baseball teams from
-Lahman's Baseball Database. The full data set is available
+Lahman's Baseball Database. The full dataset is available
 in the <a href="https://github.com/cdalzell/Lahman">Lahman R package</a>.
 </p>
 
@@ -126,7 +126,7 @@ in the <a href="https://github.com/cdalzell/Lahman">Lahman R package</a>.
 
 <h3>Source</h3>
 
-<p><a href="https://www.seanlahman.com/baseball-archive/statistics/">Lahmans Baseball Database</a>
+<p>Lahmans Baseball Database
 </p>
 
 
@@ -135,14 +135,14 @@ in the <a href="https://github.com/cdalzell/Lahman">Lahman R package</a>.
 <pre><code class='language-R'>library(dplyr)
 
 # List the World Series winning teams for each year
-mlb_teams %&gt;%
-  filter(world_series_winner == "Y") %&gt;%
+mlb_teams |&gt;
+  filter(world_series_winner == "Y") |&gt;
   select(year, team_name, ball_park)
 
 # List the teams with their average number of wins and losses
-mlb_teams %&gt;%
-  group_by(team_name) %&gt;%
-  summarize(mean_wins = mean(wins), mean_losses = mean(losses)) %&gt;%
+mlb_teams |&gt;
+  group_by(team_name) |&gt;
+  summarize(mean_wins = mean(wins), mean_losses = mean(losses)) |&gt;
   arrange((team_name))
 </code></pre>
 

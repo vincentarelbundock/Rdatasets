@@ -23,7 +23,7 @@ function processMathHTML() {
 <p>Results from a Yahoo! News poll conducted by YouGov on May 29-31, 2020.
 In total 1060 U.S. adults were asked a series of questions regarding race and
 justice in the wake of the killing of George Floyd by a police officer.
-Results in this data set are percentages for the question, &quot;Do you think
+Results in this dataset are percentages for the question, &quot;Do you think
 Blacks and Whites receive equal treatment from the police?&quot; For this
 particular question there were 1059 respondents.
 </p>
@@ -63,9 +63,9 @@ library(ggplot2)
 library(dplyr)
 
 # Conditional probabilities of response for each race/ethnicity
-race_justice %&gt;%
-  count(race_eth, response) %&gt;%
-  group_by(race_eth) %&gt;%
+race_justice |&gt;
+  count(race_eth, response) |&gt;
+  group_by(race_eth) |&gt;
   mutate(prop = n / sum(n))
 
 # Stacked bar plot of counts

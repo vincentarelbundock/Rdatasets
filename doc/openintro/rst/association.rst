@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      Simulated data set.
+      Simulated dataset.
 
       .. rubric:: Usage
          :name: usage

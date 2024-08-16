@@ -6,8 +6,8 @@
       nafld R Documentation
       ===== ===============
 
-      .. rubric:: Non-alcohol fatty liver disease
-         :name: non-alcohol-fatty-liver-disease
+      .. rubric:: Non-alcoholic fatty liver disease
+         :name: non-alcoholic-fatty-liver-disease
 
       .. rubric:: Description
          :name: description
@@ -90,19 +90,25 @@
       .. rubric:: Details
          :name: details
 
-      The primary reference for the NAFLD study is Allen (2018). The
-      incidence of non-alcoholic fatty liver disease (NAFLD) has been
-      rising rapidly in the last decade and it is now one of the main
-      drivers of hepatology practice Tapper2018. It is essentially the
-      presence of excess fat in the liver, and parallels the ongoing
-      obesity epidemic. Approximately 20-25% of NAFLD patients will
-      develop the inflammatory state of non-alcoholic steatohepatitis
-      (NASH), leading to fibrosis and eventual end-stage liver disease.
-      NAFLD can be accurately diagnosed by MRI methods, but NASH
-      diagnosis currently requires a biopsy.
+      The primary reference for this study is Allen (2018). Nonalcoholic
+      fatty liver disease (NAFLD) was renamed metabolic
+      dysfunction-associated steatotic liver disease (MASLD) in June
+      2023. The new name is intended to better reflect the disease's
+      underlying causes, identify subgroups of patients, and avoid
+      stigmatizing words.
+
+      The incidence of MASLD has been rising rapidly in the last decade
+      and it is now one of the main drivers of hepatology practice
+      Tapper2018. It is essentially the presence of excess fat in the
+      liver, and parallels the ongoing obesity epidemic. Approximately
+      20-25% of MASLD patients will develop the inflammatory state of
+      metabolic dysfunction associated steatohepatitis (MASH), leading
+      to fibrosis and eventual end-stage liver disease. MASLD can be
+      accurately diagnosed by MRI methods, but MASH diagnosis currently
+      requires a biopsy.
 
       The current study constructed a population cohort of all adult
-      NAFLD subjects from 1997 to 2014 along with 4 potential controls
+      MASLD subjects from 1997 to 2014 along with 4 potential controls
       for each case. To protect patient confidentiality all time
       intervals are in days since the index date; none of the dates from
       the original data were retained. Subject age is their integer age

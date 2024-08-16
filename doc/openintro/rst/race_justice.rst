@@ -15,10 +15,10 @@
       Results from a Yahoo! News poll conducted by YouGov on May 29-31,
       2020. In total 1060 U.S. adults were asked a series of questions
       regarding race and justice in the wake of the killing of George
-      Floyd by a police officer. Results in this data set are
-      percentages for the question, "Do you think Blacks and Whites
-      receive equal treatment from the police?" For this particular
-      question there were 1059 respondents.
+      Floyd by a police officer. Results in this dataset are percentages
+      for the question, "Do you think Blacks and Whites receive equal
+      treatment from the police?" For this particular question there
+      were 1059 respondents.
 
       .. rubric:: Usage
          :name: usage
@@ -56,9 +56,9 @@
          library(dplyr)
 
          # Conditional probabilities of response for each race/ethnicity
-         race_justice %>%
-           count(race_eth, response) %>%
-           group_by(race_eth) %>%
+         race_justice |>
+           count(race_eth, response) |>
+           group_by(race_eth) |>
            mutate(prop = n / sum(n))
 
          # Stacked bar plot of counts

@@ -53,14 +53,15 @@
       .. rubric:: Source
          :name: source
 
-      https://www.ncei.noaa.gov/products/paleoclimatology/ice-core
+      Go to the url
+      https://www.ncei.noaa.gov/products/paleoclimatology/ice-core/
 
       .. rubric:: References
          :name: references
 
       Jouzel, J., et al. 2007. EPICA Dome C Ice Core 800KYr Deuterium
       Data and Temperature Estimates. IGBP PAGES/World Data Center for
-      Paleoclimatology Data Contribution Series No. 2007-091. NOAA/NCDC
+      Paleoclimatology Data Contribution Series # 2007-091. NOAA/NCDC
       Paleoclimatology Program, Boulder CO, USA.
 
       Jouzel, J., et al. 2007. Orbital and Millennial Antarctic Climate

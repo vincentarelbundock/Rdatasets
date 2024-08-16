@@ -1,0 +1,94 @@
+<!DOCTYPE html><html><head><title>R: Fastest running times for Olympic races</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>olympic_running</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Fastest running times for Olympic races</h2>
+
+<h3>Description</h3>
+
+<p><code>olympic_running</code> is a quadrennial <code>tsibble</code> with one value:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+Time:      </td><td style="text-align: left;"> Fastest running time for the event (seconds)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+
+
+<h3>Format</h3>
+
+<p>Time series of class <code>tsibble</code>
+</p>
+
+
+<h3>Details</h3>
+
+<p>The event is identified using two keys:
+</p>
+
+<table>
+<tr>
+ <td style="text-align: left;">
+Length:     </td><td style="text-align: left;"> The length of the race (meters)</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+Sex:     </td><td style="text-align: left;"> The sex of the event</td>
+</tr>
+<tr>
+ <td style="text-align: left;">
+</td>
+</tr>
+
+</table>
+
+<p>The data contains missing values in 1916, 1940 and 1944 due to the World Wars.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://olympics.com/en/sports/athletics/">https://olympics.com/en/sports/athletics/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(tsibble)
+olympic_running
+
+if(requireNamespace("ggplot2")){
+library(ggplot2)
+olympic_running %&gt;% as_tibble %&gt;%
+  ggplot(aes(x=Year, y = Time, colour = Sex)) +
+  geom_line() +
+  facet_wrap(~ Length, scales = "free_y")
+}
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

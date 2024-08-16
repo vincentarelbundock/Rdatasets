@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      This is a subsample of the ``email`` data set.
+      This is a subsample of the ``email`` dataset.
 
       .. rubric:: Usage
          :name: usage

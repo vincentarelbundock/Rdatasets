@@ -12,8 +12,8 @@
       .. rubric:: Description
          :name: description
 
-      ``aus_accommodation`` is a quarterly 'tsibble' containing data on
-      Australian tourist accommodation from short-term non-residential
+      ``aus_accommodation`` contains quarterly data on Australian
+      tourist accommodation from short-term non-residential
       accommodation with 15 or more rooms, 1998 Q1 - 2016 Q2. The data
       set also contains the Australian Consumer Price Index (CPI) for
       the same period. Takings are in millions of Australian dollars,

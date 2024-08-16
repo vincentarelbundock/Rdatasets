@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      This data set contains teacher salaries from 2009-2010 for 71
+      This dataset contains teacher salaries from 2009-2010 for 71
       teachers employed by the St. Louis Public School in Michigan, as
       well as several covariates.
 

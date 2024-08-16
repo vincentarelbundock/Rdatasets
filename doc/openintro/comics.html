@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: comics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>comics</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>comics</h2>
+
+<h3>Description</h3>
+
+<p>A data frame containing information about comic book characters from Marvel Comics and DC Comics.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>comics
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 21821 observations on the following 11 variables.
+</p>
+
+<dl>
+<dt>name</dt><dd><p>Name of the character. May include: Real name, hero or villain name,  alias(es) and/or which universe they live in (i.e. Earth-616 in Marvel's multiverse).</p>
+</dd>
+<dt>id</dt><dd><p>Status of the characters identity with levels <code>Secret</code>, <code>Publie</code>, <code style="white-space: pre;">&#8288;No Dual&#8288;</code> and <code>Unknown</code>.</p>
+</dd>
+<dt>align</dt><dd><p>Character's alignment with levels <code>Good</code>, <code>Bad</code>, <code>Neutral</code> and <code style="white-space: pre;">&#8288;Reformed Criminals&#8288;</code>.</p>
+</dd>
+<dt>eye</dt><dd><p>Character's eye color.</p>
+</dd>
+<dt>hair</dt><dd><p>Character's hair color.</p>
+</dd>
+<dt>gender</dt><dd><p>Character's gender.</p>
+</dd>
+<dt>gsm</dt><dd><p>Character's classification as a gender or sexual minority.</p>
+</dd>
+<dt>alive</dt><dd><p>Is the character dead or alive?</p>
+</dd>
+<dt>appearances</dt><dd><p>Number of comic boooks the character appears in.</p>
+</dd>
+<dt>first_appear</dt><dd><p>Date of publication for the comic book the character first appeared in.</p>
+</dd>
+<dt>publisher</dt><dd><p>Publisher of the comic with levels <code>Marvel</code> and <code>DC</code>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>
+library(ggplot2)
+library(dplyr)
+
+# Good v Bad
+
+plot_data &lt;- comics |&gt;
+  filter(align == "Good" | align == "Bad")
+
+ggplot(plot_data, aes(x = align, fill = align)) +
+  geom_bar() +
+  facet_wrap(~publisher) +
+  scale_fill_manual(values = c(IMSCOL["red", "full"], IMSCOL["blue", "full"])) +
+  theme_minimal() +
+  labs(
+    title = "Is there a balance of power",
+    x = "",
+    y = "Number of characters",
+    fill = ""
+  )
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -48,7 +48,7 @@
       .. rubric:: Source
          :name: source
 
-      These data are excerpted from the ``Arbuthnot`` data set in the
+      These data are excerpted from the ``Arbuthnot`` dataset in the
       `HistData <https://CRAN.R-project.org/package=HistData>`__
       package.
 
@@ -65,7 +65,7 @@
            geom_line()
 
          # Boys and girls
-         arbuthnot %>%
-           pivot_longer(cols = -year, names_to = "sex", values_to = "n") %>%
+         arbuthnot |>
+           pivot_longer(cols = -year, names_to = "sex", values_to = "n") |>
            ggplot(aes(x = year, y = n, color = sex, group = sex)) +
            geom_line()

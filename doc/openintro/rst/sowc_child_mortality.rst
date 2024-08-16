@@ -102,14 +102,14 @@
 
          # List countries and areas whose children aged 5 and under have a higher probability of dying in
          # 2018 than they did in 1990
-         sowc_child_mortality %>%
-           mutate(decrease_prob_dying = prob_dying_age5to14_1990 - prob_dying_age5to14_2018) %>%
-           select(countries_and_areas, decrease_prob_dying) %>%
-           filter(decrease_prob_dying < 0) %>%
+         sowc_child_mortality |>
+           mutate(decrease_prob_dying = prob_dying_age5to14_1990 - prob_dying_age5to14_2018) |>
+           select(countries_and_areas, decrease_prob_dying) |>
+           filter(decrease_prob_dying < 0) |>
            arrange(decrease_prob_dying)
 
          # List countries and areas and their relative rank for neonatal mortality in 2018
-         sowc_child_mortality %>%
-           mutate(rank = round(rank(-neonatal_mortality_2018))) %>%
-           select(countries_and_areas, rank, neonatal_mortality_2018) %>%
+         sowc_child_mortality |>
+           mutate(rank = round(rank(-neonatal_mortality_2018))) |>
+           select(countries_and_areas, rank, neonatal_mortality_2018) |>
            arrange(rank)

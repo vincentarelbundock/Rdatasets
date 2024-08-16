@@ -12,7 +12,7 @@
       .. rubric:: Description
          :name: description
 
-      The ``frosted flakes`` data frame has 101 rows and 2 columns
+      The ``frosted flakes`` data frame has 100 rows and 2 columns
       giving the sugar concentration (in percent) for 25 g samples of a
       cereal as measured by 2 methods – high performance liquid
       chromatography (a slow accurate lab method) and a quick method
@@ -23,7 +23,7 @@
 
       .. code:: R
 
-         elastic1
+         frostedflakes
 
       .. rubric:: Format
          :name: format

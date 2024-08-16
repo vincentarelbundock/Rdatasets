@@ -31,4 +31,4 @@
 
       .. code:: R
 
-         souvenirs %>% autoplot(Sales)
+         souvenirs |> autoplot(Sales)
