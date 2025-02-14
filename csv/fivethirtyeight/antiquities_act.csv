@@ -1,0 +1,345 @@
+rownames,current_name,states,original_name,current_agency,action,date,year,pres_or_congress,acres_affected
+1,Devils Tower National Monument,Wyoming,,NPS,Established,1906-09-24,1906,T. Roosevelt,1193.91
+2,El Morro National Monument,New Mexico,,NPS,Established,1906-12-08,1906,T. Roosevelt,160
+3,El Morro National Monument,New Mexico,,NPS,Enlarged,1917-06-18,1917,W. Wilson,240
+4,Montezuma Castle National Monument,Arizona,,NPS,Established,1906-12-08,1906,T. Roosevelt,161.39
+5,Montezuma Castle National Monument,Arizona,,NPS,Enlarged,1937-02-23,1937,F. D. Roosevelt,360
+6,Montezuma Castle National Monument,Arizona,,NPS,Enlarged,1978-11-10,1978,95th Congress,13
+7,Montezuma Castle National Monument,Arizona,,NPS,Deleted,1978-11-10,1978,95th Congress,5
+8,Petrified Forest National Park,Arizona,Petrified Forest National Monument,NPS,Established,1906-12-08,1906,T. Roosevelt,60776.02
+9,Petrified Forest National Park,Arizona,Petrified Forest National Monument,NPS,Diminished,1911-07-31,1911,W. Taft,25625.6
+10,Petrified Forest National Park,Arizona,Petrified Forest National Monument,NPS,Enlarged,1930-11-14,1930,H. Hoover,11010
+11,Petrified Forest National Park,Arizona,Petrified Forest National Monument,NPS,Redesignated NP,1958-03-28,1958,85th Congress,
+12,Petrified Forest National Park,Arizona,Petrified Forest National Monument,NPS,Enlarged,1931-11-30,1931,H. Hoover,
+13,Petrified Forest National Park,Arizona,Petrified Forest National Monument,NPS,Enlarged,1932-09-23,1932,H. Hoover,53300
+14,Chaco Culture National Historical Park,New Mexico,Chaco Canyon National Monument,NPS,Established,1907-03-11,1907,T. Roosevelt,10643.13
+15,Chaco Culture National Historical Park,New Mexico,Chaco Canyon National Monument,NPS,Enlarged,1928-01-10,1928,C. Coolidge,21509.4
+16,Chaco Culture National Historical Park,New Mexico,Chaco Canyon National Monument,NPS,Redesignated Chaco Culture NHP,1980-12-19,1980,96th Congress,
+17,Lassen Volcanic National Park,California,Cinder Cone National Monument,NPS,Established,1907-05-06,1907,T. Roosevelt,5120
+18,Lassen Volcanic National Park,California,Cinder Cone National Monument,NPS,Incorporated into Lassen Volcanic NP,1916-08-09,1916,64th Congress,
+19,Lassen Volcanic National Park,California,Lassen Volcanic National Monument,NPS,Established,1907-05-06,1907,T. Roosevelt,1280
+20,Lassen Volcanic National Park,California,Lassen Volcanic National Monument,NPS,Redesignated Lassen Volcanic NP,1916-08-09,1916,64th Congress,
+21,Gila Cliff Dwellings National Monument,New Mexico,,NPS,Established,1907-11-16,1907,T. Roosevelt,160
+22,Gila Cliff Dwellings National Monument,New Mexico,,NPS,Enlarged,1962-04-17,1962,J. Kennedy,373.25
+23,Tonto National Monument,Arizona,,NPS,Established,1907-12-19,1907,T. Roosevelt,640
+24,Tonto National Monument,Arizona,,NPS,Enlarged,1937-04-01,1937,F. D. Roosevelt,480
+25,Muir Woods National Monument,California,,NPS,Established,1908-01-09,1908,T. Roosevelt,295
+26,Muir Woods National Monument,California,,NPS,Enlarged,1921-09-22,1921,W. Harding,128.14
+27,Muir Woods National Monument,California,,NPS,Enlarged,1935-04-05,1935,F. D. Roosevelt,1.36
+28,Muir Woods National Monument,California,,NPS,Enlarged,1951-06-26,1951,H. Truman,504.271
+29,Muir Woods National Monument,California,,NPS,Enlarged,1959-09-08,1959,D. Eisenhower,6.16
+30,Grand Canyon National Park,Arizona,Grand Canyon National Monument,NPS,Established,1908-01-11,1908,T. Roosevelt,808120
+31,Grand Canyon National Park,Arizona,Grand Canyon National Monument,NPS,Redesignated Grand Canyon NP,1919-02-26,1919,65th Congress,
+32,Pinnacles National Park,California,Pinnacles National Monument,NPS,Established,1908-01-16,1908,T. Roosevelt,1320
+33,Pinnacles National Park,California,Pinnacles National Monument,NPS,Enlarged,1923-05-07,1923,W. Harding,2653.46
+34,Pinnacles National Park,California,Pinnacles National Monument,NPS,Enlarged,1924-07-02,1924,C. Coolidge,2980.26
+35,Pinnacles National Park,California,Pinnacles National Monument,NPS,Enlarged,1931-04-13,1931,H. Hoover,1926.35
+36,Pinnacles National Park,California,Pinnacles National Monument,NPS,Enlarged,1933-07-11,1933,F. D. Roosevelt,4805
+37,Pinnacles National Park,California,Pinnacles National Monument,NPS,Enlarged,1941-12-05,1941,F. D. Roosevelt,4589.26
+38,Pinnacles National Park,California,Pinnacles National Monument,NPS,Enlarged,2000-01-11,2000,W. Clinton,7900
+39,Pinnacles National Park,California,Pinnacles National Monument,NPS,Redesignated NP,2013-01-10,2013,112th Congress,440
+40,Jewel Cave National Monument,South Dakota,,NPS,Established,1908-02-07,1908,T. Roosevelt,1274.56
+41,Natural Bridges National Monument,Utah,,NPS,Established,1908-04-16,1908,T. Roosevelt,120
+42,Natural Bridges National Monument,Utah,,NPS,Enlarged,1909-09-25,1909,W. Taft,2620
+43,Natural Bridges National Monument,Utah,,NPS,Boundaries Confirmed,1916-02-11,1916,W. Wilson,
+44,Natural Bridges National Monument,Utah,,NPS,Enlarged,1962-08-14,1962,J. Kennedy,5236
+45,Natural Bridges National Monument,Utah,,NPS,Diminished,,,,320
+46,Lewis and Clark Caverns State Park,Montana,Lewis and Clark Cavern National Monument,State of Montana,Established,1908-05-11,1908,T. Roosevelt,160
+47,Lewis and Clark Caverns State Park,Montana,Lewis and Clark Cavern National Monument,State of Montana,Boundaries Confirmed,1911-05-16,1911,W. Taft,160
+48,Lewis and Clark Caverns State Park,Montana,Lewis and Clark Cavern National Monument,State of Montana,"Transferred to MT, now a state park",1937-08-24,1937,75th Congress,
+49,Tumacacori National Historical Park,Arizona,Tumacacori National Monument,NPS,Established,1908-09-15,1908,T. Roosevelt,10
+50,Tumacacori National Historical Park,Arizona,Tumacacori National Monument,NPS,Enlarged,1958-03-28,1958,D. Eisenhower,0.15
+51,Tumacacori National Historical Park,Arizona,Tumacacori National Monument,NPS,Enlarged,1978-11-10,1978,95th Congress,7
+52,Tumacacori National Historical Park,Arizona,Tumacacori National Monument,NPS,Deleted,1978-11-10,1978,95th Congress,0.011
+53,Tumacacori National Historical Park,Arizona,Tumacacori National Monument,NPS,Redesignated NHP,1990-08-06,1990,101st Congress,
+54,Part of Rio Grande National Forest,Colorado,Wheeler National Monument,BLM,Established,1908-12-07,1908,T. Roosevelt,300
+55,Part of Rio Grande National Forest,Colorado,Wheeler National Monument,BLM,"Transferred to BLM, part of Rio Grande National Forest",1950-08-03,1950,81st Congress,
+56,Olympic National Park,Washington,Mount Olympus,NPS,Established,1909-03-02,1909,T. Roosevelt,639200
+57,Olympic National Park,Washington,Mount Olympus,NPS,Diminished,1912-04-17,1912,W. Taft,160
+58,Olympic National Park,Washington,Mount Olympus,NPS,Diminished,1915-05-11,1915,W. Wilson,313280
+59,Olympic National Park,Washington,Mount Olympus,NPS,Diminished,1929-01-07,1929,C. Coolidge,640
+60,Olympic National Park,Washington,Mount Olympus,NPS,Redesignated NP,1938-06-29,1938,75th Congress,
+61,Navajo National Monument,Arizona,,NPS,Established,1909-03-20,1909,W. Taft,360
+62,Navajo National Monument,Arizona,,NPS,Diminished,1912-03-14,1912,W. Taft,320
+63,Oregon Caves National Monument and Preserve,Oregon,Oregon Caves National Monument,NPS,Established,1909-07-12,1909,W. Taft,465.8
+64,Oregon Caves National Monument and Preserve,Oregon,Oregon Caves National Monument,NPS,Enlarged,1978-11-10,1978,95th Congress,8
+65,Oregon Caves National Monument and Preserve,Oregon,Oregon Caves National Monument,NPS,Redesignated NMP,2014-12-19,2014,113th Congress,
+66,Zion National Park,Utah,Mukuntu-Weap/Zion National Monument,NPS,Established,1909-07-31,1909,W. Taft,16000
+67,Zion National Park,Utah,Mukuntu-Weap/Zion National Monument,NPS,Enlarged & Renamed,1918-03-18,1918,W. Wilson,76800
+68,Zion National Park,Utah,Mukuntu-Weap/Zion National Monument,NPS,Redesignated NP,1919-11-19,1919,66th Congress,
+69,Spirit Mountain Cave,Wyoming,Shoshone Cavern,BLM,Established,1909-09-21,1909,W. Taft,210
+70,Spirit Mountain Cave,Wyoming,Shoshone Cavern,BLM,Transferred to WY,1954-05-17,1954,83d Congress,
+71,Salinas Pueblo Missions National Monument,New Mexico,Gran Quivira,NPS,Established,1909-11-01,1909,W. Taft,160
+72,Salinas Pueblo Missions National Monument,New Mexico,Gran Quivira,NPS,Enlarged,1919-11-25,1919,W. Wilson,240
+73,Salinas Pueblo Missions National Monument,New Mexico,Gran Quivira,NPS,"Abolished, funds available to Salinas NM",1980-12-19,1980,96th Congress,
+74,Salinas Pueblo Missions National Monument,New Mexico,Gran Quivira,NPS,Redesignated Salinas Pueblo Missions NM,1988-10-28,1988,,
+75,Sitka National Historical Park,Alaska,Sitka National Monument,NPS,Established,1910-03-23,1910,W. Taft,57
+76,Sitka National Historical Park,Alaska,Sitka National Monument,NPS,Resurveyed & Enlarged,1952-02-25,1952,H. Truman,54.334
+77,Sitka National Historical Park,Alaska,Sitka National Monument,NPS,Redesignated NHP,1972-10-18,1972,92d Congress,
+78,Sitka National Historical Park,Alaska,Sitka National Monument,NPS,Deleted,1983-07-30,1983,96th Congress,
+79,Rainbow Bridge National Monument,Utah,,NPS,Established,1910-05-30,1910,W. Taft,160
+80,Big Hole National Battlefield,Montana,Big Hole Battlefield National Monument,NPS,Established,1910-06-23,1910,W. Taft,5
+81,Big Hole National Battlefield,Montana,Big Hole Battlefield National Monument,NPS,Enlarged,1939-06-29,1939,F. D. Roosevelt,195
+82,Big Hole National Battlefield,Montana,Big Hole Battlefield National Monument,NPS,Redesignated NB,1963-05-17,1963,88th Congress,
+83,Colorado National Monument,Colorado,,NPS,Established,1911-05-24,1911,W. Taft,13883.06
+84,Colorado National Monument,Colorado,,NPS,Enlarged,1933-03-03,1933,H. Hoover,
+85,Colorado National Monument,Colorado,,NPS,Diminished,1959-08-07,1959,D. Eisenhower,211
+86,Colorado National Monument,Colorado,,NPS,Enlarged,,,,120
+87,Devils Postpile National Monument,California,,NPS,Established,1911-07-06,1911,W. Taft,798.46
+88,Cabrillo National Monument,California,,NPS,Established,1913-10-14,1913,W. Wilson,0.5
+89,Cabrillo National Monument,California,,NPS,Enlarged,1959-02-02,1959,D. Eisenhower,80
+90,Cabrillo National Monument,California,,NPS,Enlarged,1974-09-28,1974,G. Ford,56.6
+91,Papago Park,Arizona,Papago Saguaro National Monument,State of Arizona,Established,1914-01-31,1914,W. Wilson,2050.43
+92,Papago Park,Arizona,Papago Saguaro National Monument,State of Arizona,"Transferred to AZ, now Papago Park",1930-04-07,1930,71st Congress,
+93,Dinosaur National Monument,"Utah, Colorado",,NPS,Established,1915-10-04,1915,W. Wilson,80
+94,Dinosaur National Monument,"Utah, Colorado",,NPS,Enlarged,1938-07-14,1938,F. D. Roosevelt,203885
+95,Walnut Canyon National Monument,Arizona,,NPS,Established,1915-11-30,1915,W. Wilson,960
+96,Walnut Canyon National Monument,Arizona,,NPS,Enlarged,1938-09-24,1938,F. D. Roosevelt,913.6
+97,Bandelier National Monument,New Mexico,,NPS,Established,1916-02-11,1916,W. Wilson,23352
+98,Bandelier National Monument,New Mexico,,NPS,Enlarged,1932-02-15,1932,H. Hoover,
+99,Bandelier National Monument,New Mexico,,NPS,Enlarged,1961-01-09,1961,D. Eisenhower,3600
+100,Bandelier National Monument,New Mexico,,NPS,Enlarged,1963-05-27,1963,J. Kennedy,2882
+101,Bandelier National Monument,New Mexico,,NPS,Diminished,,,,3925
+102,Acadia National Park,Maine,Sieur de Monts National Monument,NPS,Established,1916-07-08,1916,W. Wilson,5000
+103,Acadia National Park,Maine,Sieur de Monts National Monument,NPS,Redesignated Lafayette NP,1919-02-26,1919,65th Congress,
+104,Acadia National Park,Maine,Sieur de Monts National Monument,NPS,Redesignated Acadia NP,1930-01-01,1930,,
+105,Capulin Volcano National Monument,New Mexico,Capulin Mountain,NPS,Established,1916-08-09,1916,W. Wilson,640.42
+106,Capulin Volcano National Monument,New Mexico,Capulin Mountain,NPS,Redesignated Capulin Volcano NM,1933-03-03,1933,H. Hoover,
+107,Part of Tongass National Forest,Alaska,Old Kasaan,USFS,Established,1916-10-25,1916,W. Wilson,43
+108,Part of Tongass National Forest,Alaska,Old Kasaan,USFS,Transferred to Forest Service,1955-07-26,1955,84th Congress,
+109,Crow Flies High Overlook,North Dakota,Verendrye National Monument,State of North Dakota,Established,1917-06-29,1917,W. Wilson,253.04
+110,Crow Flies High Overlook,North Dakota,Verendrye National Monument,State of North Dakota,Transferred to ND,1956-07-30,1956,84th Congress,
+111,Casa Grande Ruins National Monument,Arizona,,NPS,Established,1918-08-03,1918,W. Wilson,480
+112,Katmai National Park and Preserve,Alaska,Katmai National Monument,NPS,Established,1918-09-24,1918,W. Wilson,1088000
+113,Katmai National Park and Preserve,Alaska,Katmai National Monument,NPS,Enlarged,1931-04-24,1931,H. Hoover,
+114,Katmai National Park and Preserve,Alaska,Katmai National Monument,NPS,Restrictions Modified.,1936-06-15,1936,F. D. Roosevelt,
+115,Katmai National Park and Preserve,Alaska,Katmai National Monument,NPS,Enlarged,1942-08-04,1942,F. D. Roosevelt,
+116,Katmai National Park and Preserve,Alaska,Katmai National Monument,NPS,Enlarged,1969-01-20,1969,L. Johnson,94547
+117,Katmai National Park and Preserve,Alaska,Katmai National Monument,NPS,Enlarged,1978-12-01,1978,J. Carter,1370000
+118,Katmai National Park and Preserve,Alaska,Katmai National Monument,NPS,Redesignated NP&P,1980-12-02,1980,96th Congress,
+119,Scotts Bluff National Monument,Nebraska,,NPS,Established,1919-12-12,1919,W. Wilson,2053.83
+120,Scotts Bluff National Monument,Nebraska,,NPS,Enlarged,1932-06-01,1932,H. Hoover,
+121,Scotts Bluff National Monument,Nebraska,,NPS,Enlarged,1940-03-29,1940,F. D. Roosevelt,53.34
+122,Yucca House National Monument,Colorado,,NPS,Established,1919-12-19,1919,W. Wilson,9.6
+123,Great Basin National Park,Nevada,Lehman Caves National Moument,NPS,Established,1922-01-24,1922,W. Harding,593.03
+124,Great Basin National Park,Nevada,Lehman Caves National Moument,NPS,Incorporated into Great Basin NP,1986-10-27,1986,99th Congress,
+125,Timpanogos Cave National Monument,Utah,,NPS,Established,1922-10-14,1922,W. Harding,250
+126,Timpanogos Cave National Monument,Utah,,NPS,Boundaries Confirmed,1962-03-27,1962,J. Kennedy,
+127,Fossil Cycad National Monument,South Dakota,,BLM,Established,1922-10-21,1922,W. Harding,320
+128,Fossil Cycad National Monument,South Dakota,,BLM,Transferred to BLM,1956-08-01,1956,84th Congress,
+129,Aztec Ruin National Monument,New Mexico,,NPS,Established,1923-01-24,1923,W. Harding,4.6
+130,Aztec Ruin National Monument,New Mexico,,NPS,Enlarged,1928-07-02,1928,C. Coolidge,12.6
+131,Aztec Ruin National Monument,New Mexico,,NPS,Enlarged,1930-12-19,1930,H. Hoover,6.8788
+132,Aztec Ruin National Monument,New Mexico,,NPS,Enlarged,1948-05-27,1948,H. Truman,1.255
+133,Hovenweep National Monument,"Utah, Colorado",,NPS,Established,1923-03-02,1923,W. Harding,285.8
+134,Hovenweep National Monument,"Utah, Colorado",,NPS,Enlarged,1951-04-26,1951,H. Truman,80
+135,Hovenweep National Monument,"Utah, Colorado",,NPS,Enlarged,1952-11-20,1952,H. Truman,81.02
+136,Hovenweep National Monument,"Utah, Colorado",,NPS,Diminished,1956-04-06,1956,D. Eisenhower,40
+137,Hovenweep National Monument,"Utah, Colorado",,NPS,"Enlarged, administered by Canyonlands NP",,,,40
+138,Hopewell Culture National Historical Park,Ohio,Mound City Group National Monument,NPS,Established,1923-03-02,1923,W. Harding,57
+139,Hopewell Culture National Historical Park,Ohio,Mound City Group National Monument,NPS,Redesignated Hopewell Culture NHP,1992-05-27,1992,102d Congress,
+140,Pipe Spring National Monument,Arizona,,NPS,Established,1923-05-31,1923,W. Harding,40
+141,Bryce Canyon National Park,Utah,Bryce Canyon National Monument,NPS,Established,1923-06-08,1923,W. Harding,7440
+142,Bryce Canyon National Park,Utah,Bryce Canyon National Monument,NPS,Redesignated NP,1924-06-07,1924,68th Congress,
+143,Carlsbad Caverns National Park,New Mexico,Carlsbad Cave National Monument,NPS,Established,1923-10-25,1923,C. Coolidge,719.22
+144,Carlsbad Caverns National Park,New Mexico,Carlsbad Cave National Monument,NPS,Redesignated NP,1930-05-14,1930,71st Congress,
+145,Chiricahua National Monument,Arizona,,NPS,Established,1924-04-18,1924,C. Coolidge,3655.12
+146,Chiricahua National Monument,Arizona,,NPS,Enlarged,1938-06-10,1938,F. D. Roosevelt,6407
+147,Craters of the Moon National Monument,Idaho,,"NPS, BLM",Established,1924-05-02,1924,C. Coolidge,22651.8
+148,Craters of the Moon National Monument,Idaho,,"NPS, BLM",Enlarged,1928-07-23,1928,C. Coolidge,26240
+149,Craters of the Moon National Monument,Idaho,,"NPS, BLM",Enlarged,1930-07-09,1930,H. Hoover,
+150,Craters of the Moon National Monument,Idaho,,"NPS, BLM",Diminished,1941-07-18,1941,F. D. Roosevelt,
+151,Craters of the Moon National Monument,Idaho,,"NPS, BLM",Enlarged,1962-11-19,1962,J. Kennedy,5360
+152,Craters of the Moon National Monument,Idaho,,"NPS, BLM",Enlarged under BLM,2000-11-09,2000,W. Clinton,661287
+153,Statue of Liberty National Monument,New York,Fort Wood,NPS,Established,1924-10-15,1924,C. Coolidge,2.5
+154,Statue of Liberty National Monument,New York,Fort Wood,NPS,Enlarged,1937-09-07,1937,F. D. Roosevelt,7.88
+155,Statue of Liberty National Monument,New York,Fort Wood,NPS,"Enlarged, redesignated Statue of Liberty NM",1965-05-11,1965,L. Johnson,48
+156,Castle Pinckney,South Carolina,,State of South Carolina,Established,1924-10-15,1924,C. Coolidge,3.5
+157,Castle Pinckney,South Carolina,,State of South Carolina,Transferred to SC,1956-03-29,1956,84th Congress,
+158,Fort Pulaski National Monument,Georgia,,NPS,Established,1924-10-15,1924,C. Coolidge,20
+159,Fort Pulaski National Monument,Georgia,,NPS,Enlarged,1958-08-14,1958,D. Eisenhower,2.5
+160,Castillo de San Marcos National Monument,Florida,Fort Marion,NPS,Established,1924-10-15,1924,C. Coolidge,18.51
+161,Castillo de San Marcos National Monument,Florida,Fort Marion,NPS,Redesignated Castillo San Marcos NM,1942-06-05,1942,57th Congress,
+162,Fort Matanzas National Monument,Florida,,NPS,Established,1924-10-15,1924,C. Coolidge,1
+163,Fort Matanzas National Monument,Florida,,NPS,Enlarged,1935-01-09,1935,F. D. Roosevelt,88
+164,Fort Matanzas National Monument,Florida,,NPS,Enlarged,1948-03-24,1948,H. Truman,209.42
+165,Wupatki National Monument,Arizona,,NPS,Established,1924-12-09,1924,C. Coolidge,2234.1
+166,Wupatki National Monument,Arizona,,NPS,Enlarged,1937-07-09,1937,F. D. Roosevelt,33631.2
+167,Wupatki National Monument,Arizona,,NPS,Diminished,1941-01-22,1941,F. D. Roosevelt,52.27
+168,Natchez Trace National Scenic Trail,Tennessee,Meriwether Lewis National Monument,NPS,Established,1925-02-06,1925,C. Coolidge,50
+169,Natchez Trace National Scenic Trail,Tennessee,Meriwether Lewis National Monument,NPS,Enlarged,1927-12-06,1927,C. Coolidge,100
+170,Natchez Trace National Scenic Trail,Tennessee,Meriwether Lewis National Monument,NPS,"Included in the Natchez Trace Parkway, now Natchez Trace National Scenic Trail",1961-08-10,1961,,
+171,Glacier Bay National Park and Preserve,Alaska,Glacier Bay National Monument,NPS,Established,1925-02-26,1925,C. Coolidge,1379315.58
+172,Glacier Bay National Park and Preserve,Alaska,Glacier Bay National Monument,NPS,Enlarged,1939-04-18,1939,F. D. Roosevelt,904960
+173,Glacier Bay National Park and Preserve,Alaska,Glacier Bay National Monument,NPS,Diminished,1955-03-31,1955,D. Eisenhower,4193
+174,Glacier Bay National Park and Preserve,Alaska,Glacier Bay National Monument,NPS,Diminished,,,,24925
+175,Glacier Bay National Park and Preserve,Alaska,Glacier Bay National Monument,NPS,Enlarged,1978-12-01,1978,J. Carter,550000
+176,Glacier Bay National Park and Preserve,Alaska,Glacier Bay National Monument,NPS,Redesignated NP&P,1980-12-02,1980,96th Congress,
+177,Part of Old Fort Niagara State Park,New York,Father Millet Cross,State of New York,Established,1925-09-05,1925,C. Coolidge,0.0074
+178,Part of Old Fort Niagara State Park,New York,Father Millet Cross,State of New York,Transferred to NY,1949-09-07,1949,81st Congress,
+179,Part of Old Fort Niagara State Park,New York,Father Millet Cross,State of New York,Now part of Old Fort Niagara State Park,,,,
+180,Lava Beds National Monument,California,,NPS,Established,1925-11-21,1925,C. Coolidge,45589.92
+181,Lava Beds National Monument,California,,NPS,Enlarged,1951-04-27,1951,H. Truman,211.13
+182,Arches National Park,Utah,Arches National Monument,NPS,Established,1929-04-12,1929,H. Hoover,4520
+183,Arches National Park,Utah,Arches National Monument,NPS,Enlarged,1938-11-25,1938,F. D. Roosevelt,29160
+184,Arches National Park,Utah,Arches National Monument,NPS,Enlarged,1960-07-22,1960,D. Eisenhower,480
+185,Arches National Park,Utah,Arches National Monument,NPS,Diminished,1960-07-22,1960,D. Eisenhower,720
+186,Arches National Park,Utah,Arches National Monument,NPS,Enlarged,1969-01-20,1969,L. Johnson,48943
+187,Arches National Park,Utah,Arches National Monument,NPS,Redesignated NP,1971-11-12,1971,92d Congress,
+188,Part of White River National Forest,Colorado,Holy Cross National Monument,USFS,Established,1929-05-11,1929,H. Hoover,1392
+189,Part of White River National Forest,Colorado,Holy Cross National Monument,USFS,Redesignated under Forest Service,1950-08-03,1950,81st Congress,
+190,Sunset Crater Volcano National Monument,Arizona,Sunset Crater National Monument,NPS,Established,1930-05-26,1930,H. Hoover,3040
+191,Sunset Crater Volcano National Monument,Arizona,Sunset Crater National Monument,NPS,Redesignated Sunset Crater Volcano NM,1990-11-16,1990,101st Congress,
+192,Great Sand Dunes National Park and Preserve,Colorado,Great Sand Dunes National Monument,NPS,Established,1932-03-17,1932,H. Hoover,35528.36
+193,Great Sand Dunes National Park and Preserve,Colorado,Great Sand Dunes National Monument,NPS,Resurveyed & Modified,1946-03-12,1946,H. Truman,
+194,Great Sand Dunes National Park and Preserve,Colorado,Great Sand Dunes National Monument,NPS,Enlarged,1956-06-07,1956,D. Eisenhower,960
+195,Great Sand Dunes National Park and Preserve,Colorado,Great Sand Dunes National Monument,NPS,Diminished,,,,9880
+196,Great Sand Dunes National Park and Preserve,Colorado,Great Sand Dunes National Monument,NPS,Renamed National Park & Preserve,2000-11-22,2000,106th Congress,
+197,Grand Canyon National Park,Arizona,"Grand Canyon ""II""",NPS,Established,1932-12-22,1932,H. Hoover,273145
+198,Grand Canyon National Park,Arizona,"Grand Canyon ""II""",NPS,Diminished,1940-04-04,1940,F. D. Roosevelt,71854
+199,Grand Canyon National Park,Arizona,"Grand Canyon ""II""",NPS,Redesignated Grand Canyon NP,1975-01-03,1975,93d Congress,
+200,White Sands National Monument,New Mexico,,NPS,Established,1933-01-18,1933,H. Hoover,131486.84
+201,White Sands National Monument,New Mexico,,NPS,Enlarged,1934-11-28,1934,F. D. Roosevelt,158.91
+202,White Sands National Monument,New Mexico,,NPS,Diminished,1938-08-29,1938,F. D. Roosevelt,
+203,White Sands National Monument,New Mexico,,NPS,Enlarged,1953-06-24,1953,D. Eisenhower,478.53
+204,White Sands National Monument,New Mexico,,NPS,Enlarged,1978-11-10,1978,95th Congress,760
+205,Death Valley National Park,"California, Nevada",Death Valley National Monument,NPS,Established,1933-02-11,1933,H. Hoover,848581.36
+206,Death Valley National Park,"California, Nevada",Death Valley National Monument,NPS,Enlarged,1937-03-26,1937,F. D. Roosevelt,305920
+207,Death Valley National Park,"California, Nevada",Death Valley National Monument,NPS,Enlarged,1952-01-17,1952,H. Truman,40
+208,Death Valley National Park,"California, Nevada",Death Valley National Monument,NPS,Redesignated NP,1994-10-31,1994,103d Congress,
+209,Saguaro National Park,Arizona,Saguaro National Monument,NPS,Established,1933-03-01,1933,H. Hoover,53510.08
+210,Saguaro National Park,Arizona,Saguaro National Monument,NPS,Enlarged,1961-11-15,1961,J. Kennedy,15360
+211,Saguaro National Park,Arizona,Saguaro National Monument,NPS,Redesignated NP,1994-10-14,1994,103d Congress,
+212,Black Canyon of the Gunnison National Park,Colorado,Black Canyon of the Gunnison National Monument,NPS,Established,1933-03-02,1933,H. Hoover,10287.95
+213,Black Canyon of the Gunnison National Park,Colorado,Black Canyon of the Gunnison National Monument,NPS,Enlarged,1938-05-16,1938,F. D. Roosevelt,100
+214,Black Canyon of the Gunnison National Park,Colorado,Black Canyon of the Gunnison National Monument,NPS,Enlarged,1939-10-28,1939,F. D. Roosevelt,2760
+215,Black Canyon of the Gunnison National Park,Colorado,Black Canyon of the Gunnison National Monument,NPS,Diminished,1960-04-08,1960,D. Eisenhower,470
+216,Black Canyon of the Gunnison National Park,Colorado,Black Canyon of the Gunnison National Monument,NPS,Redesignated NP,1999-01-06,1999,103d Congress,
+217,Cedar Breaks National Monument,Utah,,NPS,Established,1933-08-22,1933,F. D. Roosevelt,5701.39
+218,Dry Tortugas National Park,Florida,Fort Jefferson National Monument,NPS,Established,1935-01-04,1935,F. D. Roosevelt,47125
+219,Dry Tortugas National Park,Florida,Fort Jefferson National Monument,NPS,Redesignated Dry Tortugas NP,1992-10-26,1992,102d Congress,
+220,Joshua Tree National Park,California,Joshua Tree National Monument,NPS,Established,1936-08-10,1936,F. D. Roosevelt,825340
+221,Joshua Tree National Park,California,Joshua Tree National Monument,NPS,Redesignated NP,1994-10-31,1994,103d Congress,
+222,Zion National Park,Utah,"Zion ""II""",NPS,Established,1937-01-22,1937,F. D. Roosevelt,49150
+223,Zion National Park,Utah,"Zion ""II""",NPS,Redesignated NP,1956-07-11,1956,84th Congress,
+224,Organ Pipe Cactus National Monument,Arizona,,NPS,Established,1937-04-13,1937,F. D. Roosevelt,330690
+225,Capitol Reef National Park,Utah,Capitol Reef National Monument,NPS,Established,1937-08-02,1937,F. D. Roosevelt,37060
+226,Capitol Reef National Park,Utah,Capitol Reef National Monument,NPS,Enlarged,1958-07-02,1958,D. Eisenhower,3040
+227,Capitol Reef National Park,Utah,Capitol Reef National Monument,NPS,Enlarged,1969-01-20,1969,L. Johnson,215056
+228,Capitol Reef National Park,Utah,Capitol Reef National Monument,NPS,Redesignated NP,1971-12-18,1971,92d Congress,
+229,Channel Islands National Park,California,Channel Islands National Monument,NPS,Established,1938-04-26,1938,F. D. Roosevelt,1119.98
+230,Channel Islands National Park,California,Channel Islands National Monument,NPS,Enlarged,1949-02-09,1949,H. Truman,25918.02
+231,Channel Islands National Park,California,Channel Islands National Monument,NPS,Redesignated NP,1980-05-31,1980,96th Congress,
+232,Fort Laramie National Historic Site,Wyoming,Fort Laramie National Monument,NPS,Established,1938-07-16,1938,F. D. Roosevelt,214.41
+233,Fort Laramie National Historic Site,Wyoming,Fort Laramie National Monument,NPS,Redesignated NHS,1960-04-29,1960,86th Congress,
+234,Gulf Islands National Seashore,Florida,Santa Rosa Island,NPS,Established,1939-05-17,1939,F. D. Roosevelt,9500
+235,Gulf Islands National Seashore,Florida,Santa Rosa Island,NPS,Diminished,1945-08-13,1945,H. Truman,4700
+236,Gulf Islands National Seashore,Florida,Santa Rosa Island,NPS,Incorporated into Gulf Islands NS,1946-07-30,1946,79th Congress,
+237,Tuzigoot National Monument,Arizona,,NPS,Established,1939-07-25,1939,F. D. Roosevelt,42.67
+238,Tuzigoot National Monument,Arizona,,NPS,Enlarged,1978-11-10,1978,95th Congress,791
+239,Grand Teton National Park,Wyoming,Jackson Hole National Monument,NPS,Established,1943-03-15,1943,F. D. Roosevelt,210950
+240,Grand Teton National Park,Wyoming,Jackson Hole National Monument,NPS,Redesignated Grand Teton NP,1950-09-14,1950,81st Congress,
+241,Effigy Mounds National Monument,Iowa,,NPS,Established,1949-10-25,1949,H. Truman,1000
+242,Thomas Edison National Historical Park,New Jersey,Edison Laboratory,NPS,Established,1956-07-14,1956,D. Eisenhower,1.51
+243,Thomas Edison National Historical Park,New Jersey,Edison Laboratory,NPS,Redesignated NHS,1962-09-05,1962,87th Congress,
+244,Thomas Edison National Historical Park,New Jersey,Edison Laboratory,NPS,Redesignated Thomas Edison NHP,2009-03-30,2009,111th Congress,
+245,Chesapeake and Ohio Canal National Historical Park,Maryland,Chesapeake and Ohio Canal National Monument,NPS,Established,1961-01-18,1961,D. Eisenhower,5263.94
+246,Chesapeake and Ohio Canal National Historical Park,Maryland,Chesapeake and Ohio Canal National Monument,NPS,Redesignated NHP,1971-01-08,1971,91st Congress,
+247,Russell Cave National Monument,Alabama,,NPS,Established,1961-05-11,1961,J. Kennedy,310.45
+248,Buck Island Reef National Monument,Virgin Islands,,NPS,Established,1961-12-28,1961,J. Kennedy,850
+249,Buck Island Reef National Monument,Virgin Islands,,NPS,Enlarged,1975-02-01,1975,G. Ford,30
+250,Buck Island Reef National Monument,Virgin Islands,,NPS,Amending Description,1975-03-28,1975,G. Ford,
+251,Buck Island Reef National Monument,Virgin Islands,,NPS,Enlarged,2001-01-17,2001,W. Clinton,17255
+252,Grand Canyon National Park,Arizona,Marble Canyon National Monument,NPS,Established,1969-01-20,1969,L. Johnson,32546.69
+253,Grand Canyon National Park,Arizona,Marble Canyon National Monument,NPS,Incorporated into Grand Canyon NP,1975-01-03,1975,93d Congress,
+254,Part of Tongass National Forest,Alaska,Admiralty Island National Monument,USFS,Established,1978-12-01,1978,J. Carter,1100000
+255,Aniakchak National Monument & Preserve,Alaska,Aniakchak National Monument,NPS,Established,1978-12-01,1978,J. Carter,350000
+256,Aniakchak National Monument & Preserve,Alaska,Aniakchak National Monument,NPS,Partially Redesignated Preserve,1980-12-02,1980,96th Congress,
+257,Becharof National Wildlife Refuge,Alaska,,FWS,Established,1978-12-01,1978,J. Carter,1200000
+258,Bering Land Bridge National Preserve,Alaska,Bering Land Bridge National Monument,NPS,Established,1978-12-01,1978,J. Carter,2590000
+259,Bering Land Bridge National Preserve,Alaska,Bering Land Bridge National Monument,NPS,Redesignated National Preserve,1980-12-02,1980,96th Congress,
+260,Cape Krusenstern National Monument,Alaska,,NPS,Established,1978-12-01,1978,J. Carter,560000
+261,Denali National Park,Alaska,Denali National Park and Preserve,NPS,Established,1978-12-01,1978,J. Carter,3890000
+262,Denali National Park,Alaska,Denali National Park and Preserve,NPS,Redesignated NP,1980-12-02,1980,96th Congress,
+263,Gates of the Arctic National Park and Preserve,Alaska,Gates of the Arctic National Monument,NPS,Established,1978-12-01,1978,J. Carter,8220000
+264,Gates of the Arctic National Park and Preserve,Alaska,Gates of the Arctic National Monument,NPS,Redesignated NP&P,1980-12-02,1980,96th Congress,
+265,Kenai Fjords National Park,Alaska,Kenai Fjords National Monument,NPS,Established,1978-12-01,1978,J. Carter,570000
+266,Kenai Fjords National Park,Alaska,Kenai Fjords National Monument,NPS,Redesignated NP,1980-12-02,1980,96th Congress,
+267,Kobuk Valley National Park,Alaska,Kobuk Valley National Monument,NPS,Established,1978-12-01,1978,J. Carter,1710000
+268,Kobuk Valley National Park,Alaska,Kobuk Valley National Monument,NPS,Redesignated NP,1980-12-02,1980,96th Congress,
+269,Lake Clark National Park and Preserve,Alaska,Lake Clark National Monument,NPS,Established,1978-12-01,1978,J. Carter,2500000
+270,Lake Clark National Park and Preserve,Alaska,Lake Clark National Monument,NPS,Redesignated National Park & Preserve,1980-12-02,1980,96th Congress,
+271,Part of Tongass National Forest,Alaska,Misty Fjords National Monument,USFS,Established,1978-12-01,1978,J. Carter,2285000
+272,Part of Tongass National Forest,Alaska,Misty Fjords National Monument,USFS,Redesignated within Tongass National Forest,1980-12-02,1980,,
+273,Noatak National Preserve,Alaska,Noatak National Monument,NPS,Established,1978-12-01,1978,J. Carter,5880000
+274,Noatak National Preserve,Alaska,Noatak National Monument,NPS,Redesignated Preserve,1980-12-02,1980,96th Congress,
+275,Wrangall-St. Elias National Park and Preserve,Alaska,Wrangall-St. Elias National Monument,NPS,Established,1978-12-01,1978,J. Carter,10950000
+276,Wrangall-St. Elias National Park and Preserve,Alaska,Wrangall-St. Elias National Monument,NPS,Redesignated NP&P,1980-12-02,1980,96th Congress,
+277,Yukon-Charley Rivers National Preserve,Alaska,Yukon-Charley Rivers National Monument,NPS,Established,1978-12-01,1978,J. Carter,1720000
+278,Yukon-Charley Rivers National Preserve,Alaska,Yukon-Charley Rivers National Monument,NPS,Redesignated Preserve,1980-12-02,1980,96th Congress,
+279,Yukon Flats National Wildlife Refuge,Alaska,Yukon Flats National Monument,FWS,Established,1978-12-01,1978,J. Carter,10600000
+280,Yukon Flats National Wildlife Refuge,Alaska,Yukon Flats National Monument,FWS,Redesignated National Wildlife Refuge,1980-12-02,1980,96th Congress,
+281,Grand Staircase-Escalante National Monument,Utah,,BLM,Established,1996-09-18,1996,W. Clinton,1700000
+282,Agua Fria National Monument,Arizona,,BLM,Established,2000-01-11,2000,W. Clinton,71100
+283,California Coastal National Monument,California,,BLM,Established (BLM),2000-01-11,2000,W. Clinton,883
+284,California Coastal National Monument,California,,BLM,Enlarged,2014-03-11,2014,B. H. Obama,1665
+285,California Coastal National Monument,California,,BLM,Enlarged,2017-01-12,2017,B. H. Obama,6230
+286,Grand Canyon-Parashant National Monument,Arizona,,BLM,Established,2000-01-11,2000,W. Clinton,1014000
+287,Part of Sequoia National Forest,California,Giant Sequoia National Monument,USFS,Established,2000-04-15,2000,W. Clinton,327769
+288,Canyon of the Ancients National Monument,Colorado,,BLM,Established,2000-06-09,2000,W. Clinton,164000
+289,Cascade-Siskiyou National Monument,Oregon,,BLM,Established (BLM),2000-06-09,2000,W. Clinton,52000
+290,Cascade-Siskiyou National Monument,Oregon,,BLM,Enlarged,2017-01-12,2017,B. H. Obama,48000
+291,Hanford Reach National Monument,Washington,,FWS,Established,2000-06-09,2000,W. Clinton,195000
+292,Ironwood Forest National Monument,Arizona,,BLM,Established,2000-06-09,2000,W. Clinton,128917
+293,President Lincoln and Soldier's Home National Monument,"Washington, DC",,NPS,Established,2000-07-07,2000,W. Clinton,2.3
+294,Vermillion Cliffs National Monument,Arizona,,BLM,Established,2000-11-09,2000,W. Clinton,293000
+295,Carrizo Plain National Monument,California,,BLM,Established,2001-01-17,2001,W. Clinton,204107
+296,Kasha-Katuwe Tent Rocks National Monument,New Mexico,,BLM,Established,2001-01-17,2001,W. Clinton,4148
+297,Minidoka National Historic Site,Idaho,Minidoka Internment National Monument,NPS,Established,2001-01-17,2001,W. Clinton,72.75
+298,Minidoka National Historic Site,Idaho,Minidoka Internment National Monument,NPS,Redesignated NHS,2008-05-08,2008,G.W. Bush,
+299,Pompeys Pillar National Monument,Montana,,BLM,Established,2001-01-17,2001,W. Clinton,51
+300,Sonoran Desert National Monument,Arizona,,BLM,Established,2001-01-17,2001,W. Clinton,486149
+301,Upper Missouri River Breaks National Monument,Montana,,BLM,Established,2001-01-17,2001,W. Clinton,377346
+302,Virgin Islands Coral Reef National Monument,Virgin Islands,,NPS,Established,2001-01-17,2001,W. Clinton,12708
+303,Governors Island National Monument,New York,,NPS,Established,2001-01-19,2001,W. Clinton,20
+304,Governors Island National Monument,New York,,NPS,Reaffirmed,2003-01-31,2003,G. W. Bush,22
+305,African Burial Ground National Monument,New York,,NPS,Established,2006-02-27,2006,G. W. Bush,0.345
+306,Papahānaumokuākea Marine National Monument,Hawaii,Northwestern Hawaiian Islands National Monument,"FWS, NOAA",Established (FWS and NOAA),2006-06-15,2006,G. W. Bush,140000
+307,Papahānaumokuākea Marine National Monument,Hawaii,Northwestern Hawaiian Islands National Monument,"FWS, NOAA",Redesignated Papahānaumokuākea MNM,2007-02-28,2007,G.W. Bush,
+308,Papahānaumokuākea Marine National Monument,Hawaii,Northwestern Hawaiian Islands National Monument,"FWS, NOAA",Enlarged,2016-08-26,2016,B.H. Obama,442781
+309,World War II Valor in the Pacific National Monument,Hawaii,,"NPS, FWS",Established,2008-12-05,2008,G. W. Bush,6310
+310,Rose Atoll National Monument,American Samoa,,NOAA,Established,2009-01-06,2009,G. W. Bush,13451
+311,Pacific Remote Islands National Monument,Hawaii,,"FWS, NOAA",Established,2009-01-06,2009,G. W. Bush,86888
+312,Pacific Remote Islands National Monument,Hawaii,,"FWS, NOAA",Enlarged,2014-09-25,2014,B. H. Obama,408301
+313,Mariana's Trench National Monument,"Northern Mariana Islands, Guam",,NOAA,Established,2009-01-06,2009,G. W. Bush,95216
+314,Fort Monroe National Monument,Virginia,,NPS,Established,2011-11-01,2011,B. H. Obama,325.21
+315,Fort Ord National Monument,California,,BLM,Established,2012-04-20,2012,B. H. Obama,14651
+316,Chimney Rock National Monument,Colorado,,USFS,Established,2012-09-21,2012,B. H. Obama,4726
+317,Cesar E. Chavez National Monument,California,,NPS,Established,2012-10-08,2012,B. H. Obama,10.5
+318,San Juan Islands National Monument,Washington,,BLM,Established,2013-03-25,2013,B. H. Obama,970
+319,Rio Grande del Norte National Monument,New Mexico,,BLM,Established,2013-03-25,2013,B. H. Obama,242555
+320,Harriet Tubman Underground Railroad National Historical Park,Maryland,,"NPS, FWS",Established (NPS and FWS),2013-03-25,2013,B. H. Obama,11750
+321,Harriet Tubman Underground Railroad National Historical Park,Maryland,,"NPS, FWS",Partially redesignated NHP (NPS),2014-12-19,2014,113th Congress,480
+322,First State National Historical Park,Delaware,,NPS,Established,2013-03-25,2013,B. H. Obama,1108
+323,First State National Historical Park,Delaware,,NPS,Redesignated NHP,2014-12-19,2014,113th Congress,
+324,Charles Young Buffalo Soldiers Monument,Ohio,,NPS,Established,2013-03-25,2013,B. H. Obama,59.65
+325,Organ Mountains-Desert Peaks National Monument,New Mexico,,BLM,Established,2014-05-21,2014,B. H. Obama,496330
+326,San Gabriel Mountains National Monument,California,,USFS,Established,2014-10-10,2014,B. H. Obama,346177
+327,Honouliuli National Monument,Hawaii,,NPS,Established,2015-02-14,2015,B. H. Obama,123
+328,Pullman National Monument,Illinois,,NPS,Established,2015-02-19,2015,B. H. Obama,0.2397
+329,Browns Canyon National Monument,New Mexico,,"BLM, USFS",Established,2015-02-19,2015,B. H. Obama,21586
+330,Berryessa Snow Mountain National Monument,California,,USFS,Established,2015-07-10,2015,B. H. Obama,330780
+331,Waco Mammoth National Monument,Texas,,NPS,Established,2015-07-10,2015,B. H. Obama,7.11
+332,Basin and Range National Monument,Nevada,,BLM,Established,2015-07-10,2015,B. H. Obama,704000
+333,Mojave Trails National Monument,California,,BLM,Established,2016-02-12,2016,B. H. Obama,1600000
+334,Sand to Snow National Monument,California,,USFS,Established,2016-02-12,2016,B. H. Obama,154000
+335,Castle Mountains National Monument,California,,NPS,Established,2016-02-12,2016,B. H. Obama,20920
+336,Belmont-Paul Women's Equality National Monument,"Washington, DC",,NPS,Established,2016-04-12,2016,B. H. Obama,0.34
+337,Stonewall National Monument,New York,,NPS,Established,2016-06-24,2016,B. H. Obama,0.12
+338,Katahdin Woods and Waters National Monument,Maine,,NPS,Established,2016-08-24,2016,B. H. Obama,87563
+339,Northeast Canyons and Seamounts Marine National Monument,Massachusetts,,"NOAA, FWS",Established,2016-09-15,2016,B.H. Obama,4913
+340,Bears Ears National Monument,Utah,,"BLM, USFS",Established,2016-12-28,2016,B. H. Obama,1350000
+341,Gold Butte National Monument,Nevada,,BLM,Established,2016-12-28,2016,B. H. Obama,300000
+342,Birmingham Civil Rights National Monument,Alabama,,NPS,Established,2017-01-12,2017,B. H. Obama,0.88
+343,Freedom Riders National Monument,Alabama,,NPS,Established,2017-01-12,2017,B. H. Obama,5.96
+344,Reconstruction Era National Monument,South Carolina,,NPS,Established,2017-01-12,2017,B. H. Obama,15.56

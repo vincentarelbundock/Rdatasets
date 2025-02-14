@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><title>R: Bachelorette / Bachelor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bachelorette</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Bachelorette / Bachelor</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the stories:
+&quot;How To Spot A Front-Runner On The 'Bachelor' Or 'Bachelorette'&quot;
+<a href="https://fivethirtyeight.com/features/the-bachelorette/">https://fivethirtyeight.com/features/the-bachelorette/</a>, &quot;Rachel's Season Is Fitting Neatly Into 'Bachelorette' History&quot;
+<a href="https://fivethirtyeight.com/features/rachels-season-is-fitting-neatly-into-bachelorette-history/">https://fivethirtyeight.com/features/rachels-season-is-fitting-neatly-into-bachelorette-history/</a>, and &quot;Rachel Lindsay's 'Bachelorette' Season, In Three Charts&quot;
+<a href="https://fivethirtyeight.com/features/rachel-lindsays-bachelorette-season-in-three-charts/">https://fivethirtyeight.com/features/rachel-lindsays-bachelorette-season-in-three-charts/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>bachelorette
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 887 rows representing the Bachelorette and Bachelor contestants and 23 variables:
+</p>
+
+<dl>
+<dt>show</dt><dd><p>Bachelor or Bachelorette.</p>
+</dd>
+<dt>season</dt><dd><p>Which season?</p>
+</dd>
+<dt>contestant</dt><dd><p>An identifier for the contestant in a given season.</p>
+</dd>
+<dt>elimination_1</dt><dd><p>Who was eliminated in week 1.</p>
+</dd>
+<dt>elimination_2</dt><dd><p>Who was eliminated in week 2.</p>
+</dd>
+<dt>elimination_3</dt><dd><p>Who was eliminated in week 3.</p>
+</dd>
+<dt>elimination_4</dt><dd><p>Who was eliminated in week 4.</p>
+</dd>
+<dt>elimination_5</dt><dd><p>Who was eliminated in week 5.</p>
+</dd>
+<dt>elimination_6</dt><dd><p>Who was eliminated in week 6.</p>
+</dd>
+<dt>elimination_7</dt><dd><p>Who was eliminated in week 7.</p>
+</dd>
+<dt>elimination_8</dt><dd><p>Who was eliminated in week 8.</p>
+</dd>
+<dt>elimination_9</dt><dd><p>Who was eliminated in week 9.</p>
+</dd>
+<dt>elimination_10</dt><dd><p>Who was eliminated in week 10.</p>
+</dd>
+<dt>dates_1</dt><dd><p>Who was on which date in week 1.</p>
+</dd>
+<dt>dates_2</dt><dd><p>Who was on which date in week 2.</p>
+</dd>
+<dt>dates_3</dt><dd><p>Who was on which date in week 3.</p>
+</dd>
+<dt>dates_4</dt><dd><p>Who was on which date in week 4.</p>
+</dd>
+<dt>dates_5</dt><dd><p>Who was on which date in week 5.</p>
+</dd>
+<dt>dates_6</dt><dd><p>Who was on which date in week 6.</p>
+</dd>
+<dt>dates_7</dt><dd><p>Who was on which date in week 7.</p>
+</dd>
+<dt>dates_8</dt><dd><p>Who was on which date in week 8.</p>
+</dd>
+<dt>dates_9</dt><dd><p>Who was on which date in week 9.</p>
+</dd>
+<dt>dates_10</dt><dd><p>Who was on which date in week 10.</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Eliminates connote either an elimination (starts with &quot;E&quot;) or a rose
+(starts with &quot;R&quot;). Eliminations supersede roses. &quot;E&quot; connotes a standard
+elimination, typically at a rose ceremony. &quot;EQ&quot; means the contestant quits.
+&quot;EF&quot; means the contestant was fired by production. &quot;ED&quot; connotes a date
+elimination. &quot;EU&quot; connotes an unscheduled elimination, one that takes place
+at a time outside of a date or rose ceremony. &quot;R&quot; means the contestant
+received a rose. &quot;R1&quot; means the contestant got a first impression rose.
+&quot;D1&quot; means a one-on-one date, &quot;D2&quot; means a 2-on-1, &quot;D3&quot; means a 3-on-1
+group date, and so on. Weeks of the show are eliminated by rose
+ceremonies, and may not line up exactly with episodes.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://bachelor-nation.fandom.com/wiki/Bachelor_Nation_Wiki">https://bachelor-nation.fandom.com/wiki/Bachelor_Nation_Wiki</a>
+and then missing seasons were filled in by ABC and FiveThirtyEight staffers.
+</p>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><title>R: The Best MLB All-Star Teams Ever</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>mlb_as_team_talent</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Best MLB All-Star Teams Ever</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;The Best MLB All-Star Teams Ever&quot;
+<a href="https://fivethirtyeight.com/features/the-best-mlb-all-star-teams-ever/">https://fivethirtyeight.com/features/the-best-mlb-all-star-teams-ever/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>mlb_as_team_talent
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 172 rows representing Major League Baseball seasons and 16 variables:
+</p>
+
+<dl>
+<dt>yearid</dt><dd><p>The season in question</p>
+</dd>
+<dt>gamenum</dt><dd><p>Order of All-Star Game for the season (in years w/ multiple ASGs; set to 0 when only 1 per year)</p>
+</dd>
+<dt>gameid</dt><dd><p>Game ID at Baseball-Reference.com</p>
+</dd>
+<dt>lgid</dt><dd><p>League of All-Star team</p>
+</dd>
+<dt>tm_off_talent</dt><dd><p>Total runs of offensive talent above average per game (36 plate appearances)</p>
+</dd>
+<dt>tm_def_talent</dt><dd><p>Total runs of fielding talent above average per game (36 plate appearances)</p>
+</dd>
+<dt>tm_pit_talent</dt><dd><p>Total runs of pitching talent above average per game (9 innings)</p>
+</dd>
+<dt>mlb_avg_rpg</dt><dd><p>MLB average runs scored/game that season</p>
+</dd>
+<dt>talent_rspg</dt><dd><p>Expected runs scored per game based on talent (MLB R/G + team OFF talent)</p>
+</dd>
+<dt>talent_rapg</dt><dd><p>Expected runs allowed per game based on talent (MLB R/G - team DEF talent- team PIT talent)</p>
+</dd>
+<dt>unadj_pyth</dt><dd><p>Unadjusted Pythagorean talent rating; PYTH =(RSPG^1.83)/(RSPG^1.83+RAPG^1.83)</p>
+</dd>
+<dt>timeline_adj</dt><dd><p>Estimate of relative league quality where 2015 MLB = 1.00</p>
+</dd>
+<dt>sos</dt><dd><p>Strength of schedule faced; adjusts an assumed .500 SOS downward based on timeline adjustment</p>
+</dd>
+<dt>adj_pyth</dt><dd><p>Adjusted Pythagorean record; =(SOS*unadj_Pyth)/((2*unadj_Pyth*SOS)-SOS-unadj_Pyth+1)</p>
+</dd>
+<dt>no_1_player</dt><dd><p>Best player according to combo of actual PA/IP and talent</p>
+</dd>
+<dt>no_2_player</dt><dd><p>2nd-best player according to combo of actual PA/IP and talent</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.baseball-reference.com/">https://www.baseball-reference.com/</a> , <a href="http://chadwick-bureau.com">http://chadwick-bureau.com</a>, Fangraphs
+</p>
+
+</main>
+
+</div>
+</body></html>

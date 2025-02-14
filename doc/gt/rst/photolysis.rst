@@ -74,29 +74,6 @@
          with the ``wavelength_nm`` values and they are in units of
          ``⁠cm^2 molecule^-1⁠``.
 
-      .. rubric:: Examples
-         :name: examples
-
-      Here is a glimpse at the data available in ``photolysis``.
-
-      .. container:: sourceCode r
-
-         ::
-
-            dplyr::glimpse(photolysis)
-            #> Rows: 34
-            #> Columns: 10
-            #> $ cmpd_name     <chr> "ozone", "ozone", "hydrogen peroxide", "nitrogen dioxide~
-            #> $ cmpd_formula  <chr> "O3", "O3", "H2O2", "NO2", "NO3", "NO3", "HONO", "HNO3",~
-            #> $ products      <chr> "-> O(^1D) + O2", "-> O(^3P) + O2", "-> OH + OH", "-> NO~
-            #> $ type          <chr> "inorganic reactions", "inorganic reactions", "inorganic~
-            #> $ l             <dbl> 6.073e-05, 4.775e-04, 1.041e-05, 1.165e-02, 2.485e-02, 1~
-            #> $ m             <dbl> 1.743, 0.298, 0.723, 0.244, 0.168, 0.155, 0.261, 1.230, ~
-            #> $ n             <dbl> 0.474, 0.080, 0.279, 0.267, 0.108, 0.125, 0.288, 0.307, ~
-            #> $ quantum_yield <dbl> NA, NA, 1.000, NA, 1.000, 1.000, 1.000, 1.000, NA, NA, N~
-            #> $ wavelength_nm <chr> "290,291,292,293,294,295,296,297,298,299,300,301,302,303~
-            #> $ sigma_298_cm2 <chr> "1.43E-18,1.27E-18,1.11E-18,9.94E-19,8.68E-19,7.69E-19,6~
-
       .. rubric:: Dataset ID and Badge
          :name: dataset-id-and-badge
 
@@ -109,7 +86,7 @@
       .. rubric:: Dataset Introduced
          :name: dataset-introduced
 
-      ``v0.11.0``
+      ``v0.11.0`` (July 9, 2024)
 
       .. rubric:: See Also
          :name: see-also
@@ -118,5 +95,12 @@
       ``films``, ``gibraltar``, ``gtcars``, ``illness``, ``metro``,
       ``nuclides``, ``peeps``, ``pizzaplace``, ``reactions``,
       ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``, ``towny``
+
+      .. rubric:: Examples
+         :name: examples
+
+      .. code:: R
+
+         dplyr::glimpse(photolysis)
 
 .. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_photolysis.png

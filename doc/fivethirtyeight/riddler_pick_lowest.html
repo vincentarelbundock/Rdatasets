@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><title>R: Pick A Number, Any Number</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>riddler_pick_lowest</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Pick A Number, Any Number</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Pick A Number, Any Number&quot;
+<a href="https://fivethirtyeight.com/features/pick-a-number-any-number/">https://fivethirtyeight.com/features/pick-a-number-any-number/</a>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>riddler_pick_lowest
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3660 rows representing dates and 1 variable:
+</p>
+
+<dl>
+<dt>your_number</dt><dd><p>Guessed number</p>
+</dd>
+<dt>show_your_work</dt><dd><p>People showing their work</p>
+</dd>
+</dl>
+
+
+</main>
+
+</div>
+</body></html>

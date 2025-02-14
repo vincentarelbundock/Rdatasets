@@ -47,7 +47,7 @@
 
       Meyers, L. S., Gamst, G, & Guarino, A. J. (2006). *Applied
       Multivariate Research: Design and Interpretation*, Thousand Oaks,
-      CA: Sage Publications, https://studysites.sagepub.com/amrStudy/,
+      CA: Sage Publications, https://study.sagepub.com/meyers3e,
       Exercises 10B.
 
       .. rubric:: Examples

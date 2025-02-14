@@ -62,11 +62,6 @@
 
       -  **lstaffbar:** within-district avg of lstaff
 
-      .. rubric:: 
-         :name: section
-
-      NA
-
       .. rubric:: Source
          :name: source
 

@@ -1,0 +1,313 @@
+rownames,president,position,appointee,start,end,length,days,combined
+1,Carter,OMB Director,Bert Lance,1977-01-21,1977-09-23,245,247,FALSE
+2,Carter,Secretary of Transportation,Brock Adams,1977-01-23,1979-07-20,908,912,FALSE
+3,Carter,"Secretary of Health, Education & Welfare",Joseph Califano Jr.,1977-01-25,1979-08-03,920,926,FALSE
+4,Carter,Secretary of Housing & Urban Development,Patricia Harris,1977-01-23,1979-08-03,922,926,FALSE
+5,Carter,Secretary of the Treasury,W. Michael Blumenthal,1977-01-23,1979-08-04,923,927,FALSE
+6,Carter,Attorney General,Griffin Bell,1977-01-26,1979-08-16,932,939,FALSE
+7,Carter,U.S. Trade Representative,Robert Strauss,1977-03-30,1979-08-17,870,940,FALSE
+8,Carter,Secretary of Energy,James Schlesinger,1977-08-06,1979-08-23,747,946,FALSE
+9,Carter,UN Ambassador,Andrew Young,1977-01-30,1979-09-23,966,977,FALSE
+10,Carter,Secretary of Commerce,Juanita Kreps,1977-01-23,1979-10-31,1011,1015,FALSE
+11,Carter,Secretary of State,Cyrus Vance,1977-01-23,1980-04-28,1191,1195,FALSE
+12,Carter,Chief of Staff,Hamilton Jordan,1979-07-18,1980-06-11,329,1239,FALSE
+13,Carter,U.S. Trade Representative,Reubin Askew,1979-10-01,1980-12-31,457,1442,FALSE
+14,Carter,Secretary of State,Ed Muskie,1980-05-08,1981-01-18,255,1460,FALSE
+15,Carter,Attorney General,Ben Civiletti,1979-08-16,1981-01-19,522,1461,FALSE
+16,Carter,Secretary of Commerce,Philip Klutznick,1980-01-09,1981-01-19,376,1461,FALSE
+17,Carter,Chief of Staff,Jack Watson,1980-06-11,1981-01-20,223,1462,FALSE
+18,Carter,Director of Central Intelligence,Stansfield Turner,1977-03-09,1981-01-20,1413,1462,FALSE
+19,Carter,EPA Administrator,Douglas Costle,1977-03-07,1981-01-20,1415,1462,FALSE
+20,Carter,OMB Director,Jim McIntyre,1977-09-24,1981-01-20,1214,1462,FALSE
+21,Carter,SBA Administrator,A. Vernon Weaver,1977-04-01,1981-01-20,1390,1462,FALSE
+22,Carter,Secretary of Agriculture,Robert Bergland,1977-01-23,1981-01-20,1458,1462,FALSE
+23,Carter,Secretary of Defense,Harold Brown,1977-01-21,1981-01-20,1460,1462,FALSE
+24,Carter,Secretary of Education,Shirley Hufstedler,1979-12-06,1981-01-20,411,1462,FALSE
+25,Carter,Secretary of Energy,Charles Duncan,1979-08-24,1981-01-20,515,1462,FALSE
+26,Carter,"Secretary of Health, Education & Welfare/Secretary of Health & Human Services",Patricia Harris,1979-08-03,1981-01-20,536,1462,FALSE
+27,Carter,Secretary of Housing & Urban Development,Moon Landrieu,1979-09-24,1981-01-20,484,1462,FALSE
+28,Carter,Secretary of Labor,Ray Marshall,1977-01-27,1981-01-20,1454,1462,FALSE
+29,Carter,Secretary of the Interior,Cecil Andrus,1977-01-23,1981-01-20,1458,1462,FALSE
+30,Carter,Secretary of the Treasury,G. William Miller,1979-08-06,1981-01-20,533,1462,FALSE
+31,Carter,Secretary of Transportation,Neil Goldschmidt,1979-08-15,1981-01-20,524,1462,FALSE
+32,Carter,UN Ambassador,Donald McHenry,1979-09-23,1981-01-20,485,1462,FALSE
+33,Carter,Vice President,Walter Mondale,1977-01-20,1981-01-20,1461,1462,FALSE
+34,Reagan,SBA Administrator,Michael Cardenas,1981-03-30,1982-02-03,310,380,FALSE
+35,Reagan,Secretary of State,Alexander Haig,1981-01-22,1982-07-05,529,532,FALSE
+36,Reagan,Secretary of Energy,James Edwards,1981-01-23,1982-11-05,651,655,FALSE
+37,Reagan,Secretary of Transportation,Drew Lewis,1981-01-23,1983-02-01,739,743,FALSE
+38,Reagan,Secretary of Health & Human Services,Richard Schweiker,1981-01-22,1983-02-03,742,745,FALSE
+39,Reagan,EPA Administrator,Anne Gorsuch,1981-05-20,1983-03-09,658,779,FALSE
+40,Reagan,Secretary of the Interior,James Watt,1981-01-23,1983-11-08,1019,1023,FALSE
+41,Reagan,Secretary of Education,T.H. Bell,1981-01-23,1984-12-31,1438,1442,FALSE
+42,Reagan,EPA Administrator,William Ruckelshaus,1983-05-18,1985-01-04,597,1446,FALSE
+43,Reagan,Secretary of the Treasury,Don Regan,1981-01-22,1985-02-02,1472,1475,FALSE
+44,Reagan,Chief of Staff,James Baker,1981-01-20,1985-02-03,1475,1476,FALSE
+45,Reagan,Secretary of Energy,Donald Hodel,1982-11-05,1985-02-07,825,1480,FALSE
+46,Reagan,Secretary of the Interior,William Clark,1983-11-18,1985-02-07,447,1480,FALSE
+47,Reagan,Attorney General,William French Smith,1981-01-23,1985-02-25,1494,1498,FALSE
+48,Reagan,Secretary of Labor,Ray Donovan,1981-02-04,1985-03-15,1500,1516,FALSE
+49,Reagan,UN Ambassador,Jeane Kirkpatrick,1981-02-04,1985-04-01,1517,1533,FALSE
+50,Reagan,U.S. Trade Representative,Bill Brock,1981-01-23,1985-04-29,1557,1561,FALSE
+51,Reagan,OMB Director,David Stockman,1981-01-21,1985-08-01,1653,1655,FALSE
+52,Reagan,Secretary of Health & Human Services,Margaret Heckler,1983-03-09,1985-12-13,1010,1789,FALSE
+53,Reagan,Secretary of Agriculture,John Block,1981-01-23,1986-02-14,1848,1852,FALSE
+54,Reagan,SBA Administrator,James Sanders,1982-03-29,1986-03-31,1463,1897,FALSE
+55,Reagan,Director of Central Intelligence,William Casey,1981-01-28,1987-01-29,2192,2201,FALSE
+56,Reagan,Chief of Staff,Don Regan,1985-02-04,1987-02-27,753,2230,FALSE
+57,Reagan,Secretary of Commerce,Mac Baldrige,1981-01-20,1987-07-25,2377,2378,FALSE
+58,Reagan,Secretary of Transportation,Elizabeth Dole,1983-02-07,1987-09-30,1696,2445,FALSE
+59,Reagan,Secretary of Labor,Bill Brock,1985-04-29,1987-10-31,915,2476,FALSE
+60,Reagan,Secretary of Defense,Caspar Weinberger,1981-01-21,1987-11-23,2497,2499,FALSE
+61,Reagan,Chief of Staff,Howard Baker,1987-03-02,1988-07-01,487,2720,FALSE
+62,Reagan,Attorney General,Ed Meese,1985-02-25,1988-08-12,1264,2762,FALSE
+63,Reagan,Secretary of the Treasury,James Baker,1985-02-03,1988-08-17,1291,2767,FALSE
+64,Reagan,Secretary of Education,Bill Bennett,1985-02-06,1988-09-20,1322,2801,FALSE
+65,Reagan,OMB Director,Jim Miller,1985-10-08,1988-10-15,1103,2826,FALSE
+66,Reagan,Chief of Staff,Kenneth Duberstein,1988-07-01,1989-01-20,203,2923,FALSE
+67,Reagan,EPA Administrator,Lee Thomas,1985-02-08,1989-01-20,1442,2923,FALSE
+68,Reagan,OMB Director,Joseph Wright Jr.,1988-11-08,1989-01-20,73,2923,FALSE
+69,Reagan,Secretary of Agriculture,Richard Edmund Lyng,1986-03-07,1989-01-20,1050,2923,FALSE
+70,Reagan,Secretary of Defense,Frank Carlucci,1987-11-23,1989-01-20,424,2923,FALSE
+71,Reagan,Secretary of Energy,John Herrington,1985-02-07,1989-01-20,1443,2923,FALSE
+72,Reagan,Secretary of Health & Human Services,Otis Bowen,1985-12-13,1989-01-20,1134,2923,FALSE
+73,Reagan,Secretary of Housing & Urban Development,Samuel Pierce Jr.,1981-01-23,1989-01-20,2919,2923,FALSE
+74,Reagan,Secretary of Labor,Ann McLaughlin,1987-12-14,1989-01-20,403,2923,FALSE
+75,Reagan,Secretary of State,George Shultz,1982-07-16,1989-01-20,2380,2923,FALSE
+76,Reagan,Secretary of the Interior,Donald Hodel,1985-02-08,1989-01-20,1442,2923,FALSE
+77,Reagan,Secretary of Transportation,James Burnley IV,1987-12-03,1989-01-20,414,2923,FALSE
+78,Reagan,U.S. Trade Representative,Clayton Yeutter,1985-07-01,1989-01-20,1299,2923,FALSE
+79,Reagan,Vice President,George H.W. Bush,1981-01-20,1989-01-20,2922,2923,FALSE
+80,Reagan,Secretary of Commerce,William Verity Jr.,1987-10-19,1989-01-30,469,2933,FALSE
+81,Reagan,UN Ambassador,Vernon Walters,1985-05-22,1989-03-15,1393,2977,FALSE
+82,Reagan,SBA Administrator,James Abdnor,1987-03-23,1989-04-20,759,3013,FALSE
+83,Reagan,Attorney General,Dick Thornburgh,1988-08-15,1991-08-15,1098,,TRUE
+84,Reagan,Director of Central Intelligence,Bill Webster,1987-05-26,1991-08-31,1558,,TRUE
+85,Reagan,Secretary of Education,Lauro Cavazos,1988-09-20,1990-12-12,816,,TRUE
+86,Reagan,Secretary of the Treasury,Nicholas Brady,1988-09-15,1993-01-17,1584,,TRUE
+87,Bush 41,Secretary of Labor,Elizabeth Dole,1989-01-25,1990-11-23,667,673,FALSE
+88,Bush 41,Secretary of Education,Lauro Cavazos,1988-09-20,1990-12-12,816,695,TRUE
+89,Bush 41,Secretary of Agriculture,Clayton Yeutter,1989-02-16,1991-03-01,743,771,FALSE
+90,Bush 41,SBA Administrator,Susan Engeleiter,1989-04-20,1991-03-27,706,797,FALSE
+91,Bush 41,Attorney General,Dick Thornburgh,1988-08-15,1991-08-15,1098,938,TRUE
+92,Bush 41,Director of Central Intelligence,Bill Webster,1987-05-26,1991-08-31,1558,954,TRUE
+93,Bush 41,Secretary of Transportation,Sam Skinner,1989-02-06,1991-12-13,1040,1058,FALSE
+94,Bush 41,Chief of Staff,John Sununu,1989-01-20,1991-12-15,1059,1060,FALSE
+95,Bush 41,Secretary of Commerce,Robert Mosbacher,1989-01-31,1992-01-15,1079,1091,FALSE
+96,Bush 41,UN Ambassador,Tom Pickering,1989-03-20,1992-05-07,1144,1204,FALSE
+97,Bush 41,Chief of Staff,Sam Skinner,1991-12-16,1992-08-23,251,1312,FALSE
+98,Bush 41,Secretary of State,James Baker,1989-01-25,1992-08-23,1306,1312,FALSE
+99,Bush 41,Secretary of Veterans Affairs,Ed Derwinski,1989-03-15,1992-09-26,1291,1346,FALSE
+100,Bush 41,Attorney General,William Barr,1991-11-26,1993-01-15,416,1457,FALSE
+101,Bush 41,Secretary of the Treasury,Nicholas Brady,1988-09-15,1993-01-17,1584,1459,TRUE
+102,Bush 41,Secretary of Housing & Urban Development,Jack Kemp,1989-02-13,1993-01-19,1436,1461,FALSE
+103,Bush 41,Secretary of State,Lawrence Eagleburger,1992-12-08,1993-01-19,42,1461,FALSE
+104,Bush 41,Chief of Staff,James Baker,1992-08-23,1993-01-20,150,1462,FALSE
+105,Bush 41,Director of Central Intelligence,Bob Gates,2006-12-18,2011-06-30,441,1462,FALSE
+106,Bush 41,EPA Administrator,William Reilly,1989-02-06,1993-01-20,1444,1462,FALSE
+107,Bush 41,OMB Director,Dick Darman,1989-01-25,1993-01-20,1456,1462,FALSE
+108,Bush 41,SBA Administrator,Pat Saiki,1991-03-27,1993-01-20,665,1462,FALSE
+109,Bush 41,Secretary of Agriculture,Ed Madigan,1991-03-12,1993-01-20,680,1462,FALSE
+110,Bush 41,Secretary of Commerce,Barbara Franklin,1992-02-27,1993-01-20,328,1462,FALSE
+111,Bush 41,Secretary of Defense,Dick Cheney,1989-03-21,1993-01-20,1401,1462,FALSE
+112,Bush 41,Secretary of Education,Lamar Alexander,1991-03-18,1993-01-20,674,1462,FALSE
+113,Bush 41,Secretary of Energy,James Watkins,1989-03-01,1993-01-20,1421,1462,FALSE
+114,Bush 41,Secretary of Health & Human Services,Louis Sullivan,1989-03-01,1993-01-20,1421,1462,FALSE
+115,Bush 41,Secretary of Labor,Lynn Morley Martin,1991-02-07,1993-01-20,713,1462,FALSE
+116,Bush 41,Secretary of the Interior,Manuel Luján Jr.,1989-02-03,1993-01-20,1447,1462,FALSE
+117,Bush 41,Secretary of Transportation,Andy Card,1992-03-11,1993-01-20,315,1462,FALSE
+118,Bush 41,U.S. Trade Representative,Carla Hills,1989-02-06,1993-01-20,1444,1462,FALSE
+119,Bush 41,Vice President,Dan Quayle,1989-01-20,1993-01-20,1461,1462,FALSE
+120,Bush 41,UN Ambassador,Edward Perkins,1992-05-12,1993-01-27,260,1469,FALSE
+121,Clinton,Secretary of Defense,Les Aspin,1993-01-21,1994-02-03,378,380,FALSE
+122,Clinton,Chief of Staff,Mack McLarty,1993-01-20,1994-07-17,543,544,FALSE
+123,Clinton,OMB Director,Leon Panetta,1993-01-21,1994-07-17,542,544,FALSE
+124,Clinton,SBA Administrator,Erskine Bowles,1993-05-12,1994-10-06,512,625,FALSE
+125,Clinton,Secretary of the Treasury,Lloyd Bentsen,1993-01-22,1994-12-22,699,702,FALSE
+126,Clinton,Secretary of Agriculture,Mike Espy,1993-01-22,1994-12-31,708,711,FALSE
+127,Clinton,Director of Central Intelligence,Jim Woolsey,1993-02-05,1995-01-10,704,721,FALSE
+128,Clinton,Secretary of Commerce,Ron Brown,1993-01-22,1996-04-03,1167,1170,FALSE
+129,Clinton,U.S. Trade Representative,Mickey Kantor,1993-01-22,1996-04-12,1176,1179,FALSE
+130,Clinton,OMB Director,Alice Rivlin,1994-10-17,1996-04-26,557,1193,FALSE
+131,Clinton,Director of Central Intelligence,John Deutch,1995-05-10,1996-12-15,585,1426,FALSE
+132,Clinton,Secretary of Labor,Robert Reich,1993-01-22,1997-01-10,1449,1452,FALSE
+133,Clinton,Secretary of State,Warren Christopher,1993-01-20,1997-01-17,1458,1459,FALSE
+134,Clinton,Secretary of Housing & Urban Development,Henry Cisneros,1993-01-22,1997-01-19,1458,1461,FALSE
+135,Clinton,Chief of Staff,Leon Panetta,1994-07-17,1997-01-20,918,1462,FALSE
+136,Clinton,Secretary of Energy,Hazel O'Leary,1993-01-22,1997-01-20,1459,1462,FALSE
+137,Clinton,Secretary of Commerce,Mickey Kantor,1996-04-12,1997-01-21,284,1463,FALSE
+138,Clinton,UN Ambassador,Madeleine Albright,1993-01-27,1997-01-21,1455,1463,FALSE
+139,Clinton,Secretary of Defense,William Perry,1994-02-03,1997-01-23,1085,1465,FALSE
+140,Clinton,SBA Administrator,Philip Lader,1994-10-08,1997-02-11,857,1484,FALSE
+141,Clinton,Secretary of Transportation,Federico Peña,1993-01-21,1997-02-14,1485,1487,FALSE
+142,Clinton,Secretary of Veterans Affairs,Jesse Brown,1993-01-23,1997-07-03,1622,1626,FALSE
+143,Clinton,OMB Director,Frank Raines,1996-09-13,1998-05-21,615,1948,FALSE
+144,Clinton,Secretary of Energy,Federico Peña,1997-03-12,1998-06-30,475,1988,FALSE
+145,Clinton,UN Ambassador,Bill Richardson,1997-02-18,1998-08-18,546,2037,FALSE
+146,Clinton,Chief of Staff,Erskine Bowles,1997-01-20,1998-10-20,638,2100,FALSE
+147,Clinton,Secretary of the Treasury,Bob Rubin,1995-01-10,1999-07-02,1634,2355,FALSE
+148,Clinton,Secretary of Commerce,Bill Daley,1997-01-30,2000-07-19,1266,2738,FALSE
+149,Clinton,Secretary of Veterans Affairs,Togo West Jr.,1998-05-05,2000-07-25,812,2744,FALSE
+150,Clinton,Secretary of the Interior,Bruce Babbitt,1993-01-22,2001-01-02,2902,2905,FALSE
+151,Clinton,EPA Administrator,Carol Browner,1993-01-22,2001-01-19,2919,2922,FALSE
+152,Clinton,OMB Director,Jack Lew,1998-05-21,2001-01-19,974,2922,FALSE
+153,Clinton,Secretary of Agriculture,Dan Glickman,1995-03-30,2001-01-19,2122,2922,FALSE
+154,Clinton,Secretary of Commerce,Norman Mineta,2000-07-21,2001-01-19,182,2922,FALSE
+155,Clinton,Secretary of State,Madeleine Albright,1997-01-23,2001-01-19,1457,2922,FALSE
+156,Clinton,UN Ambassador,Richard Holbrooke,1999-09-07,2001-01-19,500,2922,FALSE
+157,Clinton,Attorney General,Janet Reno,1993-03-12,2001-01-20,2871,2923,FALSE
+158,Clinton,Chief of Staff,John Podesta,1998-10-20,2001-01-20,823,2923,FALSE
+159,Clinton,SBA Administrator,Aida Alvarez,1997-03-07,2001-01-20,1415,2923,FALSE
+160,Clinton,Secretary of Defense,William Cohen,1997-01-24,2001-01-20,1457,2923,FALSE
+161,Clinton,Secretary of Education,Dick Riley,1993-01-21,2001-01-20,2921,2923,FALSE
+162,Clinton,Secretary of Energy,Bill Richardson,1998-08-18,2001-01-20,886,2923,FALSE
+163,Clinton,Secretary of Health & Human Services,Donna Shalala,1993-01-22,2001-01-20,2920,2923,FALSE
+164,Clinton,Secretary of Housing & Urban Development,Andrew Cuomo,1997-01-29,2001-01-20,1452,2923,FALSE
+165,Clinton,Secretary of Labor,Alexis Herman,1997-05-01,2001-01-20,1360,2923,FALSE
+166,Clinton,Secretary of the Treasury,Larry Summers,1999-07-02,2001-01-20,568,2923,FALSE
+167,Clinton,Secretary of Transportation,Rodney Slater,1997-02-14,2001-01-20,1436,2923,FALSE
+168,Clinton,U.S. Trade Representative,Charlene Barshefsky,1997-03-18,2001-01-20,1404,2923,FALSE
+169,Clinton,Vice President,Al Gore,1993-01-20,2001-01-20,2922,2923,FALSE
+170,Clinton,Director of Central Intelligence,George Tenet,1995-07-03,1997-07-11,2557,,TRUE
+171,Bush 43,Secretary of the Treasury,Paul O'Neill,2001-01-30,2002-12-31,700,711,FALSE
+172,Bush 43,OMB Director,Mitch Daniels,2001-01-23,2003-06-06,864,868,FALSE
+173,Bush 43,EPA Administrator,Christine Todd Whitman,2001-01-31,2003-06-27,877,889,FALSE
+174,Bush 43,Secretary of Housing & Urban Development,Mel Martinez,2001-01-24,2003-12-12,1052,1057,FALSE
+175,Bush 43,UN Ambassador,John Negroponte,2001-09-19,2004-06-23,1008,1251,FALSE
+176,Bush 43,Director of Central Intelligence,George Tenet,1995-07-03,1997-07-11,2557,1269,TRUE
+177,Bush 43,Secretary of Agriculture,Ann Veneman,2001-01-20,2005-01-20,1461,1462,FALSE
+178,Bush 43,Secretary of Education,Rod Paige,2001-01-24,2005-01-20,1457,1462,FALSE
+179,Bush 43,UN Ambassador,John Danforth,2004-07-23,2005-01-20,181,1462,FALSE
+180,Bush 43,EPA Administrator,Mike Leavitt,2003-11-06,2005-01-25,446,1467,FALSE
+181,Bush 43,Secretary of State,Colin Powell,2001-01-20,2005-01-25,1466,1467,FALSE
+182,Bush 43,Secretary of Health & Human Services,Tommy Thompson,2001-02-02,2005-01-26,1454,1468,FALSE
+183,Bush 43,Secretary of Veterans Affairs,Anthony Principi,2001-01-23,2005-01-26,1464,1468,FALSE
+184,Bush 43,Secretary of Energy,Spencer Abraham,2001-01-20,2005-01-31,1472,1473,FALSE
+185,Bush 43,Secretary of Homeland Security,Tom Ridge,2003-01-24,2005-02-01,739,1474,FALSE
+186,Bush 43,Attorney General,John Ashcroft,2001-02-02,2005-02-03,1462,1476,FALSE
+187,Bush 43,Secretary of Commerce,Donald Evans,2001-01-20,2005-02-03,1475,1476,FALSE
+188,Bush 43,U.S. Trade Representative,Robert Zoellick,2001-02-07,2005-02-22,1476,1495,FALSE
+189,Bush 43,Secretary of the Interior,Gale Norton,2001-01-31,2006-03-31,1885,1897,FALSE
+190,Bush 43,Chief of Staff,Andy Card,2001-01-20,2006-04-14,1910,1911,FALSE
+191,Bush 43,OMB Director,Josh Bolten,2003-06-26,2006-04-14,1023,1911,FALSE
+192,Bush 43,Director of Central Intelligence/CIA Director,Porter Goss,2004-09-24,2006-05-05,588,1932,FALSE
+193,Bush 43,U.S. Trade Representative,Rob Portman,2005-05-17,2006-05-26,374,1953,FALSE
+194,Bush 43,Secretary of the Treasury,John Snow,2003-02-03,2006-06-29,1242,1987,FALSE
+195,Bush 43,SBA Administrator,Hector Barreto,2001-07-25,2006-07-02,1803,1990,FALSE
+196,Bush 43,Secretary of Transportation,Norman Mineta,2001-01-25,2006-07-07,1989,1995,FALSE
+197,Bush 43,Secretary of Defense,Donald Rumsfeld,2001-01-20,2006-12-18,2158,2159,FALSE
+198,Bush 43,UN Ambassador,John Bolton,2005-08-02,2006-12-31,516,2172,FALSE
+199,Bush 43,Director of National Intelligence,John Negroponte,2005-04-21,2007-02-13,663,2216,FALSE
+200,Bush 43,OMB Director,Rob Portman,2006-05-26,2007-08-03,434,2387,FALSE
+201,Bush 43,Attorney General,Alberto Gonzales,2005-02-03,2007-09-17,956,2432,FALSE
+202,Bush 43,Secretary of Agriculture,Mike Johanns,2005-01-21,2007-09-20,972,2435,FALSE
+203,Bush 43,Secretary of Veterans Affairs,Jim Nicholson,2005-02-01,2007-10-01,972,2446,FALSE
+204,Bush 43,Secretary of Housing & Urban Development,Alphonso Jackson,2004-03-31,2008-04-18,1479,2646,FALSE
+205,Bush 43,SBA Administrator,Steve Preston,2006-07-10,2008-06-05,696,2694,FALSE
+206,Bush 43,OMB Director,Jim Nussle,2007-09-04,2009-01-19,503,2922,FALSE
+207,Bush 43,Secretary of Commerce,Carlos Gutierrez,2005-02-07,2009-01-19,1442,2922,FALSE
+208,Bush 43,Secretary of the Interior,Dirk Kempthorne,2006-05-29,2009-01-19,966,2922,FALSE
+209,Bush 43,Attorney General,Michael Mukasey,2007-11-09,2009-01-20,438,2923,FALSE
+210,Bush 43,Chief of Staff,Josh Bolten,2006-04-14,2009-01-20,1012,2923,FALSE
+211,Bush 43,EPA Administrator,Stephen Johnson,2005-05-02,2009-01-20,1359,2923,FALSE
+212,Bush 43,Secretary of Agriculture,Ed Schafer,2008-01-28,2009-01-20,358,2923,FALSE
+213,Bush 43,Secretary of Education,Margaret Spellings,2005-01-24,2009-01-20,1457,2923,FALSE
+214,Bush 43,Secretary of Energy,Samuel Bodman,2005-02-01,2009-01-20,1449,2923,FALSE
+215,Bush 43,Secretary of Health & Human Services,Mike Leavitt,2005-01-26,2009-01-20,1455,2923,FALSE
+216,Bush 43,Secretary of Housing & Urban Development,Steve Preston,2008-06-05,2009-01-20,229,2923,FALSE
+217,Bush 43,Secretary of Labor,Elaine Chao,2001-01-29,2009-01-20,2913,2923,FALSE
+218,Bush 43,Secretary of State,Condoleezza Rice,2005-01-26,2009-01-20,1455,2923,FALSE
+219,Bush 43,Secretary of the Treasury,Hank Paulson,2006-07-10,2009-01-20,925,2923,FALSE
+220,Bush 43,Secretary of Transportation,Mary Peters,2006-10-17,2009-01-20,826,2923,FALSE
+221,Bush 43,Secretary of Veterans Affairs,James Peake,2007-12-20,2009-01-20,397,2923,FALSE
+222,Bush 43,U.S. Trade Representative,Susan Schwab,2006-06-08,2009-01-20,957,2923,FALSE
+223,Bush 43,Vice President,Dick Cheney,2001-01-20,2009-01-20,2922,2923,FALSE
+224,Bush 43,Secretary of Homeland Security,Michael Chertoff,2005-02-15,2009-01-21,1436,2924,FALSE
+225,Bush 43,UN Ambassador,Zalmay Khalilzad,2007-04-30,2009-01-22,633,2925,FALSE
+226,Bush 43,Director of National Intelligence,Mike McConnell,2007-02-13,2009-01-27,714,2930,FALSE
+227,Bush 43,CIA Director,Michael Hayden,2006-05-30,2009-02-12,989,2946,FALSE
+228,Bush 43,Secretary of Defense,Bob Gates,2006-12-18,2011-06-30,1655,,TRUE
+229,Obama,Director of National Intelligence,Dennis Blair,2009-01-29,2010-05-28,484,494,FALSE
+230,Obama,OMB Director,Peter Orszag,2009-01-20,2010-07-30,556,557,FALSE
+231,Obama,Chief of Staff,Rahm Emanuel,2009-01-20,2010-10-01,619,620,FALSE
+232,Obama,CIA Director,Leon Panetta,2009-02-13,2011-06-30,867,892,FALSE
+233,Obama,Secretary of Defense,Bob Gates,2006-12-18,2011-06-30,1655,892,TRUE
+234,Obama,Secretary of Commerce,Gary Locke,2009-03-26,2011-08-01,858,924,FALSE
+235,Obama,OMB Director,Jack Lew,2010-11-18,2012-01-26,434,1102,FALSE
+236,Obama,Chief of Staff,Bill Daley,2011-01-13,2012-01-27,379,1103,FALSE
+237,Obama,Secretary of Commerce,John Bryson,2011-10-21,2012-06-21,244,1249,FALSE
+238,Obama,CIA Director,David Petraeus,2011-09-06,2012-11-09,430,1390,FALSE
+239,Obama,Secretary of Labor,Hilda Solis,2009-02-24,2013-01-22,1428,1464,FALSE
+240,Obama,Secretary of the Treasury,Tim Geithner,2009-01-26,2013-01-25,1460,1467,FALSE
+241,Obama,Chief of Staff,Jack Lew,2012-01-30,2013-01-25,361,1467,FALSE
+242,Obama,Secretary of State,Hillary Clinton,2009-01-21,2013-02-01,1472,1474,FALSE
+243,Obama,EPA Administrator,Lisa Jackson,2009-01-26,2013-02-14,1480,1487,FALSE
+244,Obama,Secretary of Defense,Leon Panetta,2011-07-01,2013-02-26,606,1499,FALSE
+245,Obama,U.S. Trade Representative,Ron Kirk,2009-03-20,2013-03-15,1456,1516,FALSE
+246,Obama,Secretary of the Interior,Ken Salazar,2009-01-20,2013-04-12,1543,1544,FALSE
+247,Obama,Secretary of Energy,Steven Chu,2009-01-21,2013-04-22,1552,1554,FALSE
+248,Obama,UN Ambassador,Susan Rice,2009-01-26,2013-06-30,1616,1623,FALSE
+249,Obama,Secretary of Transportation,Ray LaHood,2009-01-23,2013-07-02,1621,1625,FALSE
+250,Obama,SBA Administrator,Karen Mills,2009-04-06,2013-09-01,1609,1686,FALSE
+251,Obama,Secretary of Homeland Security,Janet Napolitano,2009-01-21,2013-09-06,1689,1691,FALSE
+252,Obama,Secretary of Veterans Affairs,Eric Shinseki,2009-01-21,2014-05-30,1955,1957,FALSE
+253,Obama,Secretary of Health & Human Services,Kathleen Sebelius,2009-04-28,2014-06-06,1865,1964,FALSE
+254,Obama,OMB Director,Sylvia Burwell,2013-04-26,2014-06-08,408,1966,FALSE
+255,Obama,Secretary of Housing & Urban Development,Shaun Donovan,2009-01-26,2014-07-28,2009,2016,FALSE
+256,Obama,Secretary of Defense,Chuck Hagel,2013-02-27,2015-02-17,720,2220,FALSE
+257,Obama,Attorney General,Eric Holder,2009-02-03,2015-04-24,2271,2286,FALSE
+258,Obama,Secretary of Education,Arne Duncan,2009-01-20,2015-12-31,2536,2537,FALSE
+259,Obama,Secretary of Agriculture,Tom Vilsack,2009-01-20,2017-01-13,2915,2916,FALSE
+260,Obama,Secretary of Defense,Ash Carter,2015-02-17,2017-01-19,702,2922,FALSE
+261,Obama,Vice President,Joe Biden,2009-01-20,2017-01-20,2922,2923,FALSE
+262,Obama,Director of National Intelligence,James Clapper,2010-08-09,2017-01-20,2356,2923,FALSE
+263,Obama,Chief of Staff,Denis McDonough,2013-01-25,2017-01-20,1456,2923,FALSE
+264,Obama,Secretary of State,John Kerry,2013-02-01,2017-01-20,1449,2923,FALSE
+265,Obama,Secretary of the Treasury,Jack Lew,2013-02-28,2017-01-20,1422,2923,FALSE
+266,Obama,CIA Director,John Brennan,2013-03-08,2017-01-20,1414,2923,FALSE
+267,Obama,Secretary of the Interior,Sally Jewell,2013-04-12,2017-01-20,1379,2923,FALSE
+268,Obama,Secretary of Energy,Ernest Moniz,2013-05-21,2017-01-20,1340,2923,FALSE
+269,Obama,U.S. Trade Representative,Michael Froman,2013-06-21,2017-01-20,1309,2923,FALSE
+270,Obama,Secretary of Commerce,Penny Pritzker,2013-06-26,2017-01-20,1304,2923,FALSE
+271,Obama,Secretary of Transportation,Anthony Foxx,2013-07-02,2017-01-20,1298,2923,FALSE
+272,Obama,EPA Administrator,Gina McCarthy,2013-07-19,2017-01-20,1281,2923,FALSE
+273,Obama,Secretary of Labor,Tom Perez,2013-07-23,2017-01-20,1277,2923,FALSE
+274,Obama,Secretary of Homeland Security,Jeh Johnson,2013-12-23,2017-01-20,1124,2923,FALSE
+275,Obama,SBA Administrator,Maria Contreras-Sweet,2014-04-07,2017-01-20,1019,2923,FALSE
+276,Obama,Secretary of Health & Human Services,Sylvia Burwell,2014-06-09,2017-01-20,956,2923,FALSE
+277,Obama,OMB Director,Shaun Donovan,2014-07-28,2017-01-20,907,2923,FALSE
+278,Obama,Secretary of Housing & Urban Development,Julián Castro,2014-07-28,2017-01-20,907,2923,FALSE
+279,Obama,Secretary of Veterans Affairs,Bob McDonald,2014-07-30,2017-01-20,905,2923,FALSE
+280,Obama,Attorney General,Loretta Lynch,2015-04-27,2017-01-20,634,2923,FALSE
+281,Obama,Secretary of Education,John King Jr.,2016-03-14,2017-01-20,312,2923,FALSE
+282,Obama,UN Ambassador,Samantha Power,2013-08-05,2017-01-21,1265,2924,FALSE
+283,Trump,Chief of Staff,Reince Priebus,2017-01-20,2017-07-28,189,190,FALSE
+284,Trump,Secretary of Homeland Security,John Kelly,2017-01-20,2017-07-28,189,190,FALSE
+285,Trump,Secretary of Health & Human Services,Tom Price,2017-02-10,2017-09-29,231,253,FALSE
+286,Trump,Secretary of Veterans Affairs,David Shulkin,2017-02-14,2018-03-28,407,433,FALSE
+287,Trump,Secretary of State,Rex Tillerson,2017-02-01,2018-03-31,423,436,FALSE
+288,Trump,CIA Director,Mike Pompeo,2017-01-23,2018-04-26,458,462,FALSE
+289,Trump,EPA Administrator,Scott Pruitt,2017-02-17,2018-07-06,504,533,FALSE
+290,Trump,Attorney General,Jeff Sessions,2017-02-09,2018-11-07,636,657,FALSE
+291,Trump,Secretary of Defense,Jim Mattis,2017-01-20,2018-12-31,710,711,FALSE
+292,Trump,UN Ambassador,Nikki Haley,2017-01-27,2018-12-31,703,711,FALSE
+293,Trump,Chief of Staff,John Kelly,2017-07-31,2018-12-31,518,711,FALSE
+294,Trump,Secretary of the Interior,Ryan Zinke,2017-03-01,2019-01-02,672,713,FALSE
+295,Trump,Vice President,Mike Pence,2017-01-20,,,,
+296,Trump,Secretary of Transportation,Elaine Chao,2017-01-31,,,,
+297,Trump,Secretary of Education,Betsy DeVos,2017-02-07,,,,
+298,Trump,Secretary of the Treasury,Steve Mnuchin,2017-02-13,,,,
+299,Trump,SBA Administrator,Linda McMahon,2017-02-14,,,,
+300,Trump,OMB Director,Mick Mulvaney,2017-02-16,,,,
+301,Trump,Secretary of Commerce,Wilbur Ross,2017-02-28,,,,
+302,Trump,Secretary of Energy,Rick Perry,2017-03-02,,,,
+303,Trump,Secretary of Housing & Urban Development,Ben Carson,2017-03-02,,,,
+304,Trump,Director of National Intelligence,Dan Coats,2017-03-16,,,,
+305,Trump,Secretary of Agriculture,Sonny Perdue,2017-04-25,,,,
+306,Trump,Secretary of Labor,Alexander Acosta,2017-04-28,,,,
+307,Trump,U.S. Trade Representative,Robert Lighthizer,2017-05-15,,,,
+308,Trump,Secretary of Homeland Security,Kirstjen Nielsen,2017-12-06,,,,
+309,Trump,Secretary of Health & Human Services,Alex Azar,2018-01-29,,,,
+310,Trump,Secretary of State,Mike Pompeo,2018-04-26,,,,
+311,Trump,CIA Director,Gina Haspel,2018-05-21,,,,
+312,Trump,Secretary of Veterans Affairs,Robert Wilkie,2018-07-30,,,,

@@ -1,0 +1,92 @@
+<!DOCTYPE html><html><head><title>R: Candy Power Ranking</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>candy_rankings</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Candy Power Ranking</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story &quot;The Ultimate Halloween Candy Power Ranking&quot;
+<a href="https://fivethirtyeight.com/features/the-ultimate-halloween-candy-power-ranking/">https://fivethirtyeight.com/features/the-ultimate-halloween-candy-power-ranking/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>candy_rankings
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 85 rows representing Halloween candy and 13 variables:
+</p>
+
+<dl>
+<dt>competitorname</dt><dd><p>The name of the Halloween candy.</p>
+</dd>
+<dt>chocolate</dt><dd><p>Does it contain chocolate?</p>
+</dd>
+<dt>fruity</dt><dd><p>Is it fruit flavored?</p>
+</dd>
+<dt>caramel</dt><dd><p>Is there caramel in the candy?</p>
+</dd>
+<dt>peanutyalmondy</dt><dd><p>Does it contain peanuts, peanut butter or almonds?</p>
+</dd>
+<dt>nougat</dt><dd><p>Does it contain nougat?</p>
+</dd>
+<dt>crispedricewafer</dt><dd><p>Does it contain crisped rice, wafers, or a cookie component?</p>
+</dd>
+<dt>hard</dt><dd><p>Is it a hard candy?</p>
+</dd>
+<dt>bar</dt><dd><p>Is it a candy bar?</p>
+</dd>
+<dt>pluribus</dt><dd><p>Is it one of many candies in a bag or box?</p>
+</dd>
+<dt>sugarpercent</dt><dd><p>The percentile of sugar it falls under within the data set.</p>
+</dd>
+<dt>pricepercent</dt><dd><p>The unit price percentile compared to the rest of the set.</p>
+</dd>
+<dt>winpercent</dt><dd><p>The overall win percentage according to 269,000 matchups.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/tree/master/candy-power-ranking">https://github.com/fivethirtyeight/data/tree/master/candy-power-ranking</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># To convert data frame to tidy data (long) format, run:
+library(dplyr)
+library(tidyr)
+library(stringr)
+candy_rankings_tidy &lt;- candy_rankings %&gt;%
+  pivot_longer(-c(competitorname, sugarpercent, pricepercent, winpercent), 
+     names_to = "characteristics", values_to = "present") %&gt;%
+  mutate(present = as.logical(present)) %&gt;%
+  arrange(competitorname)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

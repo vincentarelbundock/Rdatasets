@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><title>R: How FiveThirtyEight's 2018 Midterm Forecasts Did</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>forecast_results_2018</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>How FiveThirtyEight's 2018 Midterm Forecasts Did</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+'How FiveThirtyEight's 2018 Midterm Forecasts Did'
+<a href="https://fivethirtyeight.com/features/how-fivethirtyeights-2018-midterm-forecasts-did/">https://fivethirtyeight.com/features/how-fivethirtyeights-2018-midterm-forecasts-did/</a>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>forecast_results_2018
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataframe with 1518 rows representing forecast results (as of December 3, 2018) and 11 variables:
+</p>
+
+<dl>
+<dt>cycle</dt><dd><p>cycle of the election</p>
+</dd>
+<dt>branch</dt><dd><p>branch of the election</p>
+</dd>
+<dt>race</dt><dd><p>election forecast for the gubernatorial race</p>
+</dd>
+<dt>forecastdate</dt><dd><p>the date of the forecast</p>
+</dd>
+<dt>version</dt><dd><p>version of the election forecast</p>
+</dd>
+<dt>dem_win_prob</dt><dd><p>the probability of winning for the Democrat</p>
+</dd>
+<dt>rep_win_prob</dt><dd><p>the probability of winning for the Republican</p>
+</dd>
+<dt>category</dt><dd><p>the predicted political affiliation of the forecast</p>
+</dd>
+<dt>democrat_won</dt><dd><p>whether the Democrat won</p>
+</dd>
+<dt>republican_won</dt><dd><p>whether the Republican won</p>
+</dd>
+<dt>uncalled</dt><dd><p>if a race was uncalled</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>FiveThirtyEight's 2018 House Forecast <a href="https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/">https://projects.fivethirtyeight.com/2018-midterm-election-forecast/house/</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

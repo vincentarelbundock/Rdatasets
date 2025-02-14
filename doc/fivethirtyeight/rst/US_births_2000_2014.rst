@@ -1,0 +1,58 @@
+.. container::
+
+   .. container::
+
+      =================== ===============
+      US_births_2000_2014 R Documentation
+      =================== ===============
+
+      .. rubric:: Some People Are Too Superstitious To Have A Baby On
+         Friday The 13th
+         :name: some-people-are-too-superstitious-to-have-a-baby-on-friday-the-13th
+
+      .. rubric:: Description
+         :name: description
+
+      The raw data behind the story "Some People Are Too Superstitious
+      To Have A Baby On Friday The 13th"
+      https://fivethirtyeight.com/features/some-people-are-too-superstitious-to-have-a-baby-on-friday-the-13th/.
+
+      .. rubric:: Usage
+         :name: usage
+
+      .. code:: R
+
+         US_births_2000_2014
+
+      .. rubric:: Format
+         :name: format
+
+      A data frame with 5479 rows representing dates and 6 variables:
+
+      year
+         Year
+
+      month
+         Month
+
+      date_of_month
+         Day
+
+      date
+         POSIX date
+
+      day_of_week
+         Abbreviation of day of week
+
+      births
+         Number of births
+
+      .. rubric:: Source
+         :name: source
+
+      Social Security Administration
+
+      .. rubric:: See Also
+         :name: see-also
+
+      ``US_births_1994_2003``.

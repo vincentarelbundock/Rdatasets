@@ -6,8 +6,8 @@
       countrypops R Documentation
       =========== ===============
 
-      .. rubric:: Yearly populations of countries from 1960 to 2022
-         :name: yearly-populations-of-countries-from-1960-to-2022
+      .. rubric:: Yearly populations of countries from 1960 to 2023
+         :name: yearly-populations-of-countries-from-1960-to-2023
 
       .. rubric:: Description
          :name: description
@@ -17,8 +17,8 @@
       legal status or citizenship. Country identifiers include the
       English-language country names, and the 2- and 3-letter ISO 3166-1
       country codes. Each row contains a ``population`` value for a
-      given ``year`` (from 1960 to 2022). Any ``NA`` values for
-      ``populations`` indicate the non-existence of the entity during
+      given ``year`` (from 1960 to 2023). Any ``NA`` values within
+      ``population`` indicate the non-existence of the entity during
       that year.
 
       .. rubric:: Usage
@@ -31,7 +31,7 @@
       .. rubric:: Format
          :name: format
 
-      A tibble with 13,545 rows and 5 variables:
+      A tibble with 13,760 rows and 5 variables:
 
       country_name
          The name of the country.
@@ -44,24 +44,6 @@
 
       population
          The population estimate, midway through the year.
-
-      .. rubric:: Examples
-         :name: examples
-
-      Here is a glimpse at the data available in ``countrypops``.
-
-      .. container:: sourceCode r
-
-         ::
-
-            dplyr::glimpse(countrypops)
-            #> Rows: 13,545
-            #> Columns: 5
-            #> $ country_name   <chr> "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "Aruba", "~
-            #> $ country_code_2 <chr> "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "AW", "~
-            #> $ country_code_3 <chr> "ABW", "ABW", "ABW", "ABW", "ABW", "ABW", "ABW", "ABW",~
-            #> $ year           <int> 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1~
-            #> $ population     <int> 54608, 55811, 56682, 57475, 58178, 58782, 59291, 59522,~
 
       .. rubric:: Dataset ID and Badge
          :name: dataset-id-and-badge

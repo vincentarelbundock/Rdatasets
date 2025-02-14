@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><title>R: Master list of all datasets</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>datasets_master</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Master list of all datasets</h2>
+
+<h3>Description</h3>
+
+<p>All datasets included in both fivethirtyeight and fivethirtyeightdata
+packages
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>datasets_master
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 9 variables:
+</p>
+
+<dl>
+<dt>Data Frame Name</dt><dd><p>Name of lazy-loaded data frame</p>
+</dd>
+<dt>In fivethirtyeightdata?</dt><dd><p>Whether the (large) dataset is in the fivethirtyeightdata package</p>
+</dd>
+<dt>Article Title</dt><dd><p>Title as it appears on FiveThirtyEight.com</p>
+</dd>
+<dt>URL</dt><dd><p>Link to article on FiveThirtyEight.com</p>
+</dd>
+<dt>Author 1</dt><dd><p>Main author</p>
+</dd>
+<dt>Author 2</dt><dd><p>Second author (if any)</p>
+</dd>
+<dt>Author 3</dt><dd><p>Third author (if any)</p>
+</dd>
+<dt>Date</dt><dd><p>Date published</p>
+</dd>
+<dt>Filed Under</dt><dd><p>Tag for article</p>
+</dd>
+</dl>
+
+
+</main>
+
+</div>
+</body></html>

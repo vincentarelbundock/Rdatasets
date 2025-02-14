@@ -54,25 +54,6 @@
       units
          The units associated with the constant.
 
-      .. rubric:: Examples
-         :name: examples
-
-      Here is a glimpse at the data available in ``constants``.
-
-      .. container:: sourceCode r
-
-         ::
-
-            dplyr::glimpse(constants)
-            #> Rows: 354
-            #> Columns: 6
-            #> $ name      <chr> "alpha particle-electron mass ratio", "alpha particle mass",~
-            #> $ value     <dbl> 7.294300e+03, 6.644657e-27, 5.971920e-10, 3.727379e+03, 4.00~
-            #> $ uncert    <dbl> 2.4e-07, 2.0e-36, 1.8e-19, 1.1e-06, 6.3e-11, 1.2e-12, 2.2e-1~
-            #> $ sf_value  <dbl> 12, 11, 11, 11, 13, 11, 12, 13, 9, 12, 12, 11, 11, 11, 12, 1~
-            #> $ sf_uncert <dbl> 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, ~
-            #> $ units     <chr> NA, "kg", "J", "MeV", "u", "kg mol^-1", NA, NA, "m", "kg", "~
-
       .. rubric:: Dataset ID and Badge
          :name: dataset-id-and-badge
 
@@ -94,5 +75,12 @@
       ``gibraltar``, ``gtcars``, ``illness``, ``metro``, ``nuclides``,
       ``peeps``, ``photolysis``, ``pizzaplace``, ``reactions``,
       ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``, ``towny``
+
+      .. rubric:: Examples
+         :name: examples
+
+      .. code:: R
+
+         dplyr::glimpse(constants)
 
 .. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_constants.png

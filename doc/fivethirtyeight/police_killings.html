@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head><title>R: Where Police Have Killed Americans In 2015</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>police_killings</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Where Police Have Killed Americans In 2015</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Where Police Have Killed Americans In 2015&quot;
+<a href="https://fivethirtyeight.com/features/where-police-have-killed-americans-in-2015/">https://fivethirtyeight.com/features/where-police-have-killed-americans-in-2015/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>police_killings
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 467 rows representing People who died from interactions with police and 34 variables:
+</p>
+
+<dl>
+<dt>name</dt><dd><p>Name of deceased</p>
+</dd>
+<dt>age</dt><dd><p>Age of deceased</p>
+</dd>
+<dt>gender</dt><dd><p>Gender of deceased</p>
+</dd>
+<dt>raceethnicity</dt><dd><p>Race/ethnicity of deceased</p>
+</dd>
+<dt>month</dt><dd><p>Month of killing</p>
+</dd>
+<dt>day</dt><dd><p>Day of incident</p>
+</dd>
+<dt>year</dt><dd><p>Year of incident</p>
+</dd>
+<dt>streetaddress</dt><dd><p>Address/intersection where incident occurred</p>
+</dd>
+<dt>city</dt><dd><p>City where incident occurred</p>
+</dd>
+<dt>state</dt><dd><p>State where incident occurred</p>
+</dd>
+<dt>latitude</dt><dd><p>Latitude, geocoded from address</p>
+</dd>
+<dt>longitude</dt><dd><p>Longitude, geocoded from address</p>
+</dd>
+<dt>state_fp</dt><dd><p>State FIPS code</p>
+</dd>
+<dt>county_fp</dt><dd><p>County FIPS code</p>
+</dd>
+<dt>tract_ce</dt><dd><p>Tract ID code</p>
+</dd>
+<dt>geo_id</dt><dd><p>Combined tract ID code</p>
+</dd>
+<dt>county_id</dt><dd><p>Combined county ID code</p>
+</dd>
+<dt>namelsad</dt><dd><p>Tract description</p>
+</dd>
+<dt>lawenforcementagency</dt><dd><p>Agency involved in incident</p>
+</dd>
+<dt>cause</dt><dd><p>Cause of death</p>
+</dd>
+<dt>armed</dt><dd><p>How/whether deceased was armed</p>
+</dd>
+<dt>pop</dt><dd><p>Tract population</p>
+</dd>
+<dt>share_white</dt><dd><p>Share of pop that is non-Hispanic white</p>
+</dd>
+<dt>share_black</dt><dd><p>Share of pop that is black (alone, not in combination)</p>
+</dd>
+<dt>share_hispanic</dt><dd><p>Share of pop that is Hispanic/Latino (any race)</p>
+</dd>
+<dt>p_income</dt><dd><p>Tract-level median personal income</p>
+</dd>
+<dt>h_income</dt><dd><p>Tract-level median household income</p>
+</dd>
+<dt>county_income</dt><dd><p>County-level median household income</p>
+</dd>
+<dt>comp_income</dt><dd><p>'h_income' / 'county_income'</p>
+</dd>
+<dt>county_bucket</dt><dd><p>Household income, quintile within county</p>
+</dd>
+<dt>nat_bucket</dt><dd><p>Household income, quintile nationally</p>
+</dd>
+<dt>pov</dt><dd><p>Tract-level poverty rate (official)</p>
+</dd>
+<dt>urate</dt><dd><p>Tract-level unemployment rate</p>
+</dd>
+<dt>college</dt><dd><p>Share of 25+ pop with BA or higher</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/tree/master/police-killings">https://github.com/fivethirtyeight/data/tree/master/police-killings</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

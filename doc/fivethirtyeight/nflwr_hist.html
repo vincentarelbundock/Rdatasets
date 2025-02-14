@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><title>R: The Football Hall Of Fame Has A Receiver Problem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nflwr_hist</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Football Hall Of Fame Has A Receiver Problem</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;The Football Hall Of Fame Has A Receiver Problem&quot;
+<a href="https://fivethirtyeight.com/features/the-football-hall-of-fame-has-a-receiver-problem/">https://fivethirtyeight.com/features/the-football-hall-of-fame-has-a-receiver-problem/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>nflwr_hist
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 6496 rows representing National Football League wide receivers and 6 variables:
+</p>
+
+<dl>
+<dt>pfr_player_id</dt><dd><p>Player identification code at <a href="https://www.pro-football-reference.com/">https://www.pro-football-reference.com/</a></p>
+</dd>
+<dt>player_name</dt><dd><p>The player's name</p>
+</dd>
+<dt>career_try</dt><dd><p>Career True Receiving Yards</p>
+</dd>
+<dt>career_ranypa</dt><dd><p>Adjusted Net Yards Per Attempt (relative to average) of player's career teams, weighted by TRY w/ each team</p>
+</dd>
+<dt>career_wowy</dt><dd><p>The amount by which <code>career_ranypa</code> exceeds what would be expected from his QBs' (age-adjusted) performance without the receiver</p>
+</dd>
+<dt>bcs_rating</dt><dd><p>The number of yards per game by which a player would outgain an average receiver on the same team, after adjusting for teammate quality and age</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://fivethirtyeight.com/features/the-football-hall-of-fame-has-a-receiver-problem/">https://fivethirtyeight.com/features/the-football-hall-of-fame-has-a-receiver-problem/</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

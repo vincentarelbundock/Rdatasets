@@ -1,0 +1,81 @@
+<!DOCTYPE html><html><head><title>R: The Definitive Analysis Of 'Love Actually,' The Greatest...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>love_actually_appearance</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Definitive Analysis Of 'Love Actually,' The Greatest Christmas Movie Of Our Time</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;The Definitive Analysis Of 'Love Actually,' The Greatest Christmas Movie Of Our Time&quot;
+<a href="https://fivethirtyeight.com/features/the-definitive-analysis-of-love-actually-the-greatest-christmas-movie-of-our-time/">https://fivethirtyeight.com/features/the-definitive-analysis-of-love-actually-the-greatest-christmas-movie-of-our-time/</a>.
+A table of the central actors in &quot;Love Actually&quot; and which scenes they appear in.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>love_actually_appearance
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 71 rows representing scenes and 15 variables:
+</p>
+
+<dl>
+<dt>scenes</dt><dd></dd>
+<dt>bill_nighy</dt><dd></dd>
+<dt>keira_knightley</dt><dd></dd>
+<dt>andrew_lincoln</dt><dd></dd>
+<dt>hugh_grant</dt><dd></dd>
+<dt>colin_firth</dt><dd></dd>
+<dt>alan_rickman</dt><dd></dd>
+<dt>heike_makatsch</dt><dd></dd>
+<dt>laura_linney</dt><dd></dd>
+<dt>emma_thompson</dt><dd></dd>
+<dt>liam_neeson</dt><dd></dd>
+<dt>kris_marshall</dt><dd></dd>
+<dt>abdul_salis</dt><dd></dd>
+<dt>martin_freeman</dt><dd></dd>
+<dt>rowan_atkinson</dt><dd></dd>
+</dl>
+
+
+
+<h3>See Also</h3>
+
+<p><code>love_actually_adj</code>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># To convert data frame to tidy data (long) format, run:
+library(dplyr)
+library(tidyr)
+library(stringr)
+love_actually_appearance_tidy &lt;- love_actually_appearance %&gt;%
+  pivot_longer(-scenes, names_to = "actor", values_to = "appears") %&gt;%
+  arrange(scenes)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html><html><head><title>R: The Dollar-And-Cents Case Against Hollywood's Exclusion of...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>bechdel</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Dollar-And-Cents Case Against Hollywood's Exclusion of Women</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;The Dollar-And-Cents Case Against Hollywood's Exclusion of Women&quot;
+<a href="https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/">https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>bechdel
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1794 rows representing movies and 15 variables:
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year of release</p>
+</dd>
+<dt>imdb</dt><dd><p>Text to construct IMDB url. Ex: https://www.imdb.com/title/tt1711425</p>
+</dd>
+<dt>title</dt><dd><p>Movie test</p>
+</dd>
+<dt>test</dt><dd><p>bechdel test result (detailed, with discrepancies indicated)</p>
+</dd>
+<dt>clean_test</dt><dd><p>bechdel test result (detailed): <code>ok</code> = passes test, <code>dubious</code>, <code>men</code> = women only talk about men, <code>notalk</code> = women don't talk to each other, <code>nowomen</code> = fewer than two women </p>
+</dd>
+<dt>binary</dt><dd><p>Bechdel Test PASS vs FAIL binary</p>
+</dd>
+<dt>budget</dt><dd><p>Film budget</p>
+</dd>
+<dt>domgross</dt><dd><p>Domestic (US) gross</p>
+</dd>
+<dt>intgross</dt><dd><p>Total International (i.e., worldwide) gross</p>
+</dd>
+<dt>code</dt><dd><p>Bechdel Code</p>
+</dd>
+<dt>budget_2013</dt><dd><p>Budget in 2013 inflation adjusted dollars</p>
+</dd>
+<dt>domgross_2013</dt><dd><p>Domestic gross (US) in 2013 inflation adjusted dollars</p>
+</dd>
+<dt>intgross_2013</dt><dd><p>Total International (i.e., worldwide) gross in 2013 inflation adjusted dollars</p>
+</dd>
+<dt>period_code</dt><dd></dd>
+<dt>decade_code</dt><dd></dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>A vignette of an analysis of this dataset using the <code>tidyverse</code> can be found on <a href="https://fivethirtyeightdata.github.io/fivethirtyeightdata/articles/bechdel.html">CRAN</a> or by running:
+<code>vignette("bechdel", package = "fivethirtyeightdata")</code>
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://bechdeltest.com/">https://bechdeltest.com/</a> and <a href="https://www.the-numbers.com/">https://www.the-numbers.com/</a>. The original data can be found at <a href="https://github.com/fivethirtyeight/data/tree/master/bechdel">https://github.com/fivethirtyeight/data/tree/master/bechdel</a>.
+</p>
+
+</main>
+
+</div>
+</body></html>

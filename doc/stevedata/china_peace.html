@@ -1,0 +1,93 @@
+<!DOCTYPE html><html><head><title>R: Drivers of China's Peace Engagement in Conflict-affected...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>china_peace</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Drivers of China's Peace Engagement in Conflict-affected Countries</h2>
+
+<h3>Description</h3>
+
+<p>A data set on the correlates of Chinese peace engagement in conflict-affected
+countries.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>china_peace
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 884 observations on the following 13 variables.
+</p>
+
+<dl>
+<dt><code>country</code></dt><dd><p>a character vector for an English country name of the conflict-affected country</p>
+</dd>
+<dt><code>year</code></dt><dd><p>a numeric vector for the year</p>
+</dd>
+<dt><code>iso3c</code></dt><dd><p>a three-character ISO code of the conflict-affected country</p>
+</dd>
+<dt><code>region</code></dt><dd><p>a character vector for the region of the conflict-affected country</p>
+</dd>
+<dt><code>chn_oda</code></dt><dd><p>a numeric vector for the amount of Chinese ODA in the conflict-affected country</p>
+</dd>
+<dt><code>n_chnproj</code></dt><dd><p>a numeric vector for the number of Chinese ODA projects in the conflict-affected country</p>
+</dd>
+<dt><code>other_oda</code></dt><dd><p>a numeric vector for the amount of ODA from other sources for the conflict-affected country</p>
+</dd>
+<dt><code>gdppc</code></dt><dd><p>a numeric vector for GDP per capita of the conflict-affected country</p>
+</dd>
+<dt><code>tnrr</code></dt><dd><p>a numeric vector for total natural resource rents in the conflict-affected country</p>
+</dd>
+<dt><code>chn_unvs</code></dt><dd><p>a numeric vector for the similarity in voting with China in the UN General Assembly</p>
+</dd>
+<dt><code>fdi_stock</code></dt><dd><p>a numeric vector for Chinese FDI stock in the conflict-affected country</p>
+</dd>
+<dt><code>bdp100k</code></dt><dd><p>a numeric vector for battle-deaths in the conflict-affected country</p>
+</dd>
+<dt><code>logotherodadiff1y</code></dt><dd><p>a numeric vector for the logged and lagged difference in Chinese ODA and ODA from other sources</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The <code>logotherodadiff1y</code> column comes as is from the replication data
+set. It seems to make use of ODA information prior to the start of the panel
+that is not available in their replication data. You could recreate it by
+taking a log-transformation of the <code>other_oda</code> column and subtracting the
+first-order lag from the second-order lag.
+</p>
+<p>I will defer to the user to do their own log transformations of these data
+for the cause of replication. Read the supporting article for more information.
+</p>
+
+
+<h3>References</h3>
+
+<p>Jung, Yeonju and Karina Shyrokykh. 2024. &quot;Needs or Interests: Drivers of
+China's Peace Engagement in Conflict-affected Countries.&quot; <em>International
+Peacekeeping</em> 31(5): 553-74.
+</p>
+
+</main>
+
+</div>
+</body></html>

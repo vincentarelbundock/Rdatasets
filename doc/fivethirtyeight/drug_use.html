@@ -1,0 +1,130 @@
+<!DOCTYPE html><html><head><title>R: How Baby Boomers Get High</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>drug_use</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>How Baby Boomers Get High</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;How Baby Boomers Get High&quot;
+<a href="https://fivethirtyeight.com/features/how-baby-boomers-get-high/">https://fivethirtyeight.com/features/how-baby-boomers-get-high/</a>.
+It covers usage of 13 drugs in the past 12 months across 17 age groups.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>drug_use
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 17 rows representing age groups and 28 variables:
+</p>
+
+<dl>
+<dt>age</dt><dd><p>Age group</p>
+</dd>
+<dt>n</dt><dd><p>Number of people surveyed</p>
+</dd>
+<dt>alcohol_use</dt><dd><p>Percentage who used alcohol</p>
+</dd>
+<dt>alcohol_freq</dt><dd><p>Median number of times a user used alcohol</p>
+</dd>
+<dt>marijuana_use</dt><dd><p>Percentage who used marijuana</p>
+</dd>
+<dt>marijuana_freq</dt><dd><p>Median number of times a user used marijuana</p>
+</dd>
+<dt>cocaine_use</dt><dd><p>Percentage who used cocaine</p>
+</dd>
+<dt>cocaine_freq</dt><dd><p>Median number of times a user used cocaine</p>
+</dd>
+<dt>crack_use</dt><dd><p>Percentage who used crack</p>
+</dd>
+<dt>crack_freq</dt><dd><p>Median number of times a user used crack</p>
+</dd>
+<dt>heroin_use</dt><dd><p>Percentage who used heroin</p>
+</dd>
+<dt>heroin_freq</dt><dd><p>Median number of times a user used heroin</p>
+</dd>
+<dt>hallucinogen_use</dt><dd><p>Percentage who used hallucinogens</p>
+</dd>
+<dt>hallucinogen_freq</dt><dd><p>Median number of times a user used hallucinogens</p>
+</dd>
+<dt>inhalant_use</dt><dd><p>Percentage who used inhalants</p>
+</dd>
+<dt>inhalant_freq</dt><dd><p>Median number of times a user used inhalants</p>
+</dd>
+<dt>pain_releiver_use</dt><dd><p>Percentage who used pain relievers</p>
+</dd>
+<dt>pain_releiver_freq</dt><dd><p>Median number of times a user used pain relievers</p>
+</dd>
+<dt>oxycontin_use</dt><dd><p>Percentage who used oxycontin</p>
+</dd>
+<dt>oxycontin_freq</dt><dd><p>Median number of times a user used oxycontin</p>
+</dd>
+<dt>tranquilizer_use</dt><dd><p>Percentage who used tranquilizer</p>
+</dd>
+<dt>tranquilizer_freq</dt><dd><p>Median number of times a user used tranquilizer</p>
+</dd>
+<dt>stimulant_use</dt><dd><p>Percentage who used stimulants</p>
+</dd>
+<dt>stimulant_freq</dt><dd><p>Median number of times a user used stimulants</p>
+</dd>
+<dt>meth_use</dt><dd><p>Percentage who used meth</p>
+</dd>
+<dt>meth_freq</dt><dd><p>Median number of times a user used meth</p>
+</dd>
+<dt>sedative_use</dt><dd><p>Percentage who used sedatives</p>
+</dd>
+<dt>sedative_freq</dt><dd><p>Median number of times a user used sedatives</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>National Survey on Drug Use and Health from the Substance Abuse and
+Mental Health Data Archive <a href="https://www.icpsr.umich.edu/icpsrweb/content/SAMHDA/index.html">https://www.icpsr.umich.edu/icpsrweb/content/SAMHDA/index.html</a>.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># To convert data frame to tidy data (long) format, run:
+library(dplyr)
+library(tidyr)
+library(stringr)
+use &lt;- drug_use %&gt;%
+  select(age, n, ends_with("_use")) %&gt;%
+  pivot_longer(-c(age, n), names_to = "drug", values_to = "use") %&gt;%
+  mutate(drug = str_sub(drug, start=1, end=-5))
+freq &lt;- drug_use %&gt;%
+  select(age, n, ends_with("_freq")) %&gt;%
+  pivot_longer(-c(age, n), names_to = "drug", values_to = "freq") %&gt;%
+  mutate(drug = str_sub(drug, start=1, end=-6))
+drug_use_tidy &lt;- left_join(x=use, y=freq, by = c("age", "n", "drug")) %&gt;%
+  arrange(age)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

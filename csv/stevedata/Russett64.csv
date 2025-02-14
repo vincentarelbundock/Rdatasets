@@ -1,0 +1,48 @@
+rownames,country,demcat,gini,perc_farmsh,perc_farmsr,pi,eiw,deaths,gnppc,perc_lfa
+1,Yugoslavia,Dictatorships,43.7,79.8,0,0,9,0,297,67
+2,Poland,Dictatorships,45,77.7,0,8.5,19,5,468,57
+3,Denmark,Stable Democracies,45.8,79.3,3.5,14.6,0,0,913,23
+4,Japan,Unstable Democracies,47,81.5,2.9,15.7,22,0.1,240,40
+5,Canada,Stable Democracies,49.7,82.9,7.2,11.3,22,0,1667,12
+6,Switzerland,Stable Democracies,49.8,81.5,18.9,8.5,0,0,1229,10
+7,India,Stable Democracies,52.2,86.9,53,3,83,14,72,71
+8,Philippines,Stable Democracies,56.4,88.2,37.3,14,15,292,201,59
+9,Sweden,Stable Democracies,57.7,87.2,18.9,8.5,0,0,1165,13
+10,France,Unstable Democracies,58.3,86.1,26,16.3,46,0.3,1046,26
+11,Belgium,Stable Democracies,58.7,85.8,62.3,15.5,8,0.9,1015,10
+12,Ireland,Stable Democracies,59.8,85.9,,14.2,9,0,509,40
+13,Finland,Unstable Democracies,59.9,86.3,2.4,15.6,4,0,941,46
+14,Netherlands,Stable Democracies,60.5,86.2,53.3,13.6,2,0,708,11
+15,Luxembourg,Stable Democracies,63.8,87.7,18.8,12.8,0,0,1194,23
+16,Taiwan,Dictatorships,65.2,94.1,40,0,3,0,102,50
+17,Norway,Stable Democracies,66.9,87.5,7.5,12.8,1,0,969,26
+18,South Vietnam,Dictatorships,67.1,94.6,20,10,50,1000,133,65
+19,West Germany,Unstable Democracies,67.4,93,5.7,3,4,0,762,14
+20,Libya,Dictatorships,70,93,8.5,14.8,8,0,90,75
+21,United States,Stable Democracies,70.5,95.4,20.4,12.8,22,0,2343,10
+22,United Kingdom,Stable Democracies,71,93.4,44.5,13.6,12,0,998,5
+23,Panama,Dictatorships,73.7,95,12.3,15.6,29,25,350,54
+24,Austria,Unstable Democracies,74,97.4,10.7,12.8,4,0,532,32
+25,Egypt,Dictatorships,74,98.1,11.6,15.8,45,1.6,133,64
+26,Greece,Unstable Democracies,74.7,99.4,7.9,17.7,13.6,111,239,66
+27,Honduras,Dictatorships,75.7,97.4,16.7,13.6,45,1.6,137,66
+28,Nicaragua,Dictatorships,75.7,96.4,,12.8,16,16,254,68
+29,New Zealand,Stable Democracies,77.3,95.5,22.3,12.8,0,0,1249,16
+30,Spain,Dictatorships,78,99.5,43.7,0,22,0.2,254,50
+31,Cuba,Dictatorships,79.2,97.8,53.8,13.6,100,2900,361,42
+32,Dominican Rep.,Dictatorships,79.5,98.5,20.8,11.3,6,31,205,56
+33,Italy,Unstable Democracies,80.3,98,23.8,15.5,51,0.2,442,29
+34,Uruguay,Stable Democracies,81.7,96.6,34.7,14.6,1,0.3,569,37
+35,El Salvador,Dictatorships,82.8,98.8,15.1,15.1,9,2,244,63
+36,Brazil,Unstable Democracies,83.7,98.5,9.1,15.5,49,1,262,61
+37,Colombia,Unstable Democracies,84.9,98.1,12.1,14.6,47,316,330,55
+38,Guatemala,Dictatorships,86,99.7,17,14.9,45,57,179,68
+39,Argentina,Unstable Democracies,86.3,98.2,32.8,13.6,57,217,374,25
+40,Ecuador,Dictatorships,86.4,99.3,14.6,15.1,41,18,204,53
+41,Peru,Dictatorships,87.5,96.9,,14.6,23,26,140,60
+42,Iraq,Dictatorships,88.1,99.3,75,16.2,24,344,195,81
+43,Costa Rica,Unstable Democracies,89.1,99.1,5.4,14.6,19,24,307,55
+44,Venezuela,Dictatorships,90.9,99.3,20.6,14.9,36,111,762,42
+45,Australia,Stable Democracies,92.9,99.6,,11.3,0,0,1215,14
+46,Chile,Unstable Democracies,93.8,99.7,13.4,14.2,21,2,180,30
+47,Bolivia,Dictatorships,93.8,97.7,20,15.3,53,663,66,72

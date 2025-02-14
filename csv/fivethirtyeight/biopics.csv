@@ -1,0 +1,762 @@
+rownames,title,site,country,year_release,box_office,director,number_of_subjects,subject,type_of_subject,race_known,subject_race,person_of_color,subject_sex,lead_actor_actress
+1,10 Rillington Place,tt0066730,UK,1971,,Richard Fleischer,1,John Christie,Criminal,Unknown,,FALSE,Male,Richard Attenborough
+2,12 Years a Slave,tt2024544,US/UK,2013,56700000,Steve McQueen,1,Solomon Northup,Other,Known,African American,TRUE,Male,Chiwetel Ejiofor
+3,127 Hours,tt1542344,US/UK,2010,18300000,Danny Boyle,1,Aron Ralston,Athlete,Unknown,,FALSE,Male,James Franco
+4,1987,tt2833074,Canada,2014,,Ricardo Trogi,1,Ricardo Trogi,Other,Known,White,FALSE,Male,Jean-Carl Boucher
+5,20 Dates,tt0138987,US,1998,537000,Myles Berkowitz,1,Myles Berkowitz,Other,Unknown,,FALSE,Male,Myles Berkowitz
+6,21,tt0478087,US,2008,81200000,Robert Luketic,1,Jeff Ma,Other,Known,Asian American,TRUE,Male,Jim Sturgess
+7,24 Hour Party People,tt0274309,UK,2002,1130000,Michael Winterbottom,1,Tony Wilson,Musician,Known,White,FALSE,Male,Steve Coogan
+8,42,tt0453562,US,2013,95000000,Brian Helgeland,1,Jackie Robinson,Athlete,Known,African American,TRUE,Male,Chadwick Boseman
+9,8 Seconds,tt0109021,US,1994,19600000,John G. Avildsen,1,Lane Frost,Athlete,Unknown,,FALSE,Male,Luke Perry
+10,84 Charing Cross Road,tt0090570,US/UK,1987,1080000,David Hugh Jones,2,Frank Doel,Author,Unknown,,FALSE,Male,Anthony Hopkins
+11,84 Charing Cross Road,tt0090570,US/UK,1987,1080000,David Hugh Jones,2,Helene Hanff,Author,Unknown,,FALSE,Female,Anne Bancroft
+12,A Beautiful Mind,tt0268978,US,2001,171000000,Ron Howard,1,John Nash,Academic,Unknown,,FALSE,Male,Russell Crowe
+13,A Dangerous Method,tt1571222,Canada/UK,2011,5700000,David Cronenberg,3,Carl Gustav Jung,Academic,Known,White,FALSE,Male,Michael Fassbender
+14,A Dangerous Method,tt1571222,Canada/UK,2011,5700000,David Cronenberg,3,Sigmund Freud,Academic,Known,White,FALSE,Male,Viggo Mortensen
+15,A Dangerous Method,tt1571222,Canada/UK,2011,5700000,David Cronenberg,3,Sabina Spielrein,Academic,Known,White,FALSE,Female,Keira Knightley
+16,A Home of Our Own,tt0107130,US,1993,1700000,Tony Bill,1,Frances Lacey,Other,Unknown,,FALSE,Female,Kathy Bates
+17,A Man Called Peter,tt0048337,US,1955,,Henry Koster,1,Peter Marshall,Other,Known,White,FALSE,Male,Richard Todd
+18,A Man for All Seasons,tt0060665,UK,1966,,Fred Zinnemann,1,Thomas More,Historical,Known,White,FALSE,Male,Paul Scofield
+19,A Matador's Mistress,tt0491046,US/UK,2008,,Menno Meyjes,2,Lupe Sino,Actress,Known,Hispanic (White),FALSE,Female,PenÃ©lope Cruz
+20,A Matador's Mistress,tt0491046,US/UK,2008,,Menno Meyjes,2,Manuel RodrÃ_guez SÃ¡nchez,Athlete,Known,Hispanic (White),FALSE,Male,Adrien Brody
+21,A Mighty Heart,tt0829459,US/UK,2007,9170000,Michael Winterbottom,2,Daniel Pearl,Journalist,Known,White,FALSE,Male,Dan Futterman
+22,A Mighty Heart,tt0829459,US/UK,2007,9170000,Michael Winterbottom,2,Mariane Pearl,Journalist,Known,Multi racial,TRUE,Female,Angelina Jolie
+23,A Song to Remember,tt0038104,US,1945,,Charles Vidor,1,Frederic Chopin,Musician,Known,White,FALSE,Male,Cornel Wilde
+24,Abe Lincoln in Illinois,tt0032181,US,1940,,John Cromwell,1,Abraham Lincoln,World leader,Known,White,FALSE,Male,Raymond Massey
+25,Above and Beyond,tt0044324,US,1952,,"Melvin Frank, Norman Panama",1,Paul Tibbets,Military,Unknown,,FALSE,Male,Robert Taylor
+26,Abraham Lincoln,tt0020620,US,1930,,D.W. Griffith,1,Abraham Lincoln,World leader,Known,White,FALSE,Male,Walter Huston
+27,Against the Ropes,tt0312329,US,2004,5880000,Charles S. Dutton,1,Jackie Kallen,Athlete,Unknown,,FALSE,Female,Meg Ryan
+28,Al Capone,tt0052543,US,1959,,Richard Wilson,1,Al Capone,Criminal,Known,White,FALSE,Male,Rod Steiger
+29,Alexander,tt0346491,US/UK,2004,34300000,Oliver Stone,1,Alexander the Great,Historical,Known,White,FALSE,Male,Colin Farrell
+30,Alexander the Great,tt0048937,US,1956,,Robert Rossen,1,Alexander the Great,Historical,Known,White,FALSE,Male,Richard Burton
+31,Ali,tt0248667,US,2001,58200000,Michael Mann,1,Muhammad Ali,Athlete,Known,African American,TRUE,Male,Will Smith
+32,Alpha Dog,tt0426883,US,2006,15200000,Nick Cassavetes,1,Jesse James Hollywood,Criminal,Unknown,,FALSE,Male,Emile Hirsch
+33,Amadeus,tt0086879,US,1984,366000,Milos Forman,2,Antonio Salieri,Musician,Known,White,FALSE,Male,F. Murray Abraham
+34,Amadeus,tt0086879,US,1984,366000,Milos Forman,2,Wolfgang Amadeus Mozart,Musician,Known,White,FALSE,Male,Tom Hulce
+35,Amazing Grace,tt0454776,US/UK,2006,21200000,Michael Apted,1,William Wilberforce,Other,Known,White,FALSE,Male,Ioan Gruffudd
+36,Amelia,tt1129445,US/Canada,2009,14200000,Mira Nair,1,Amelia Earhart,Other,Known,White,FALSE,Female,Hilary Swank
+37,American Gangster,tt0765429,US/UK,2007,130000000,Ridley Scott,1,Frank Lucas,Criminal,Known,African American,TRUE,Male,Denzel Washington
+38,American Me,tt0103671,US,1992,13100000,Edward James Olmos,1,Rodolfo Cadena,Criminal,Known,Hispanic (Latino),TRUE,Male,Edward James Olmos
+39,American Sniper,tt2179136,US,2014,350000000,Clint Eastwood,1,Chris Kyle,Military,Unknown,,FALSE,Male,Bradley Cooper
+40,American Splendor,tt0305206,US,2003,6000000,"Shari Springer Berman, Robert Pulcini",1,Harvey Pekar,Comedian,Known,White,FALSE,Male,Paul Giamatti
+41,An American Crime,tt0802948,US,2007,,Tommy O'Haver,2,Gertrude Baniszewski,Criminal,Known,White,FALSE,Female,Catherine Keener
+42,An American Crime,tt0802948,US,2007,,Tommy O'Haver,2,Sylvia Likens,Other,Unknown,,FALSE,Female,Ellen Page
+43,An Angel at My Table,tt0099040,UK,1990,1100000,Jane Campion,1,Janet Frame,Author,Known,White,FALSE,Female,Kerry Fox
+44,Anastasia,tt0048947,US,1956,,Anatole Litvak,1,Anna Anderson / Anastasia,Other,Known,White,FALSE,Female,Ingrid Bergman
+45,Anna and the King of Siam,tt0038303,US,1946,,John Cromwell,1,Anna Leonowens,Other,Known,Multi racial,FALSE,Female,Irene Dunne
+46,Annie Get Your Gun,tt0042200,US,1950,8000000,George Sidney,1,Annie Oakley,Athlete,Known,White,FALSE,Female,Betty Hutton
+47,Annie Oakley,tt0026073,US,1935,,George Stevens,1,Annie Oakley,Athlete,Known,White,FALSE,Female,Barbara Stanwyck
+48,Another Country,tt0086904,UK,1984,,Marek Kanievska,1,Guy Burgess,Military,Unknown,,FALSE,Male,Rupert Everett
+49,Antwone Fisher,tt0168786,US,2002,21100000,Denzel Washington,1,Antwone Fisher,Military,Known,African American,TRUE,Male,Derek Luke
+50,Auto Focus,tt0298744,US,2002,2060000,Paul Schrader,1,"Robert Edward ""Bob"" Crane",Actor,Known,White,FALSE,Male,Greg Kinnear
+51,Awakenings,tt0099077,US,1990,52100000,Penny Marshall,1,Oliver Sacks,Medicine,Known,White,FALSE,Male,Robin Williams
+52,Baadasssss!,tt0367790,US,2003,365000,Mario Van Peebles,1,Melvin Van Peebles,Actor,Known,African American,TRUE,Male,Mario Van Peebles
+53,Baader,tt0309320,UK,2002,,Christopher Roth,1,Andreas Baader,Military,Known,White,FALSE,Male,Frank Giering
+54,Backbeat,tt0106339,UK,1994,2390000,Iain Softley,2,John Lennon,Musician,Known,White,FALSE,Male,Ian Hart
+55,Backbeat,tt0106339,UK,1994,2390000,Iain Softley,2,Stuart Sutcliffe,Musician,Known,White,FALSE,Male,Stephen Dorff
+56,Bandit Queen,tt0109206,UK,1994,400000,Shekhar Kapur,1,Phoolan Devi,Criminal,Known,Indian,TRUE,Female,Seema Biswas
+57,Barabbas,tt0055774,US,1961,,Richard Fleischer,1,Barabbas,Historical,Known,White,FALSE,Male,Anthony Quinn
+58,Basquiat,tt0115632,US,1996,2960000,Julian Schnabel,1,Jean-Michel Basquiat,Artist,Known,Multi racial,TRUE,Male,Jeffrey Wright
+59,Bathory: Countess of Blood,tt0469640,UK,2008,,Juraj Jakubisko,1,Elizabeth Bathory,Criminal,Known,White,FALSE,Female,Anna Friel
+60,Battle Hymn,tt0050171,US,1957,,Douglas Sirk,1,Dean Hess,Military,Unknown,,FALSE,Male,Rock Hudson
+61,Beau Brummell,tt0046759,US,1954,,Curtis Bernhardt,1,George Brummell,Other,Known,White,FALSE,Male,Stewart Granger
+62,Becket,tt0057877,US/UK,1964,,Peter Glenville,2,King Henry II,Historical,Known,White,FALSE,Male,Peter O'Toole
+63,Becket,tt0057877,US/UK,1964,,Peter Glenville,2,Thomas Becket,Historical,Known,White,FALSE,Male,
+64,Becoming Jane,tt0416508,UK,2007,18700000,Julian Jarrold,1,Jane Austen,Author,Known,White,FALSE,Female,Anne Hathaway
+65,Before Night Falls,tt0247196,US,2000,4220000,Julian Schnabel,1,Reinaldo Arenas,Activist,Known,Hispanic (Latin American),TRUE,Male,Javier Bardem
+66,Behind the Lines,tt0120001,Canada/UK,1997,19300,Gillies MacKinnon,1,Siegfried Loraine Sassoon,Military,Known,Multi racial,FALSE,Male,James Wilby
+67,Bernard and Doris,tt0470732,US,2006,,Bob Balaban,2,Bernard Lafferty,Other,Known,White,FALSE,Male,Ralph Fiennes
+68,Bernard and Doris,tt0470732,US/UK,2006,,Bob Balaban,2,Doris Duke,Other,Known,White,FALSE,Female,Susan Sarandon
+69,Best,tt0181311,UK,2000,,Mary McGuckian,1,George Best,Athlete,Known,White,FALSE,Male,John Lynch
+70,Beyond the Law,tt0103805,US,1993,,Larry Ferguson,1,Dan Black,Other,Unknown,,FALSE,Male,Charlie Sheen
+71,Beyond the Sea,tt0363473,US/UK,2004,6140000,Kevin Spacey,1,Bobby Darin,Musician,Known,White,FALSE,Male,Kevin Spacey
+72,Big Eyes,tt1126590,US/Canada,2014,14500000,Tim Burton,1,Margaret Keane,Artist,Known,White,FALSE,Female,Amy Adams
+73,Billy the Kid,tt0033389,US,1941,,David Miller,1,Henry McCarty (Billy the Kid),Criminal,Known,White,FALSE,Male,Robert Taylor
+74,Bird,tt0094747,US,1988,2180000,Clint Eastwood,1,"Charlie ""Bird"" Parker",Musician,Known,Multi racial,TRUE,Male,Forest Whitaker
+75,Birdman of Alcatraz,tt0055798,US,1962,,John Frankenheimer,1,Robert Franklin Stroud,Criminal,Unknown,,FALSE,Male,Burt Lancaster
+76,Blaze,tt0096943,US,1989,19100000,Ron Shelton,1,Earl Long,Politician,Known,White,FALSE,Male,Paul Newman
+77,Bloodsport,tt0092675,US,1988,11800000,Newt Arnold,1,Frank Dux,Athlete,Unknown,,FALSE,Male,Jean-Claude Van Damme
+78,Blossoms in the Dust,tt0033407,US,1941,,Mervyn LeRoy,1,Edna Gladney,Other,Unknown,,FALSE,Female,Greer Garson
+79,Blow,tt0221027,US,2001,52900000,Ted Demme,1,George Jung,Criminal,Known,White,FALSE,Male,Johnny Depp
+80,Blue,tt0106438,UK,1993,1720000,Derek Jarman,1,Derek Jarman,Other,Unknown,,FALSE,Male,Derek Jarman
+81,Blue Caprice,tt2027064,US,2013,86700,Alexandre Moors,1,John Allen Muhammad,Criminal,Known,African American,TRUE,Male,Isaiah Washington
+82,Bobby Jones: Stroke of Genius,tt0375104,US,2004,2690000,Rowdy Herrington,1,Bobby Jones,Athlete,Unknown,,FALSE,Male,Jim Caviezel
+83,Bonnie and Clyde,tt0061418,US,1967,,Arthur Penn,2,Clyde Barrow,Criminal,Unknown,,FALSE,Male,Warren Beatty
+84,Bonnie and Clyde,tt0061418,US,1967,,Arthur Penn,2,Bonnie Parker,Criminal,Unknown,,FALSE,Female,Faye Dunaway
+85,Born on the Fourth of July,tt0096969,US,1989,70000000,Oliver Stone,1,Ron Kovic,Military / activist,Unknown,,FALSE,Male,Tom Cruise
+86,Bound for Glory,tt0074235,US,1976,,Hal Ashby,1,Woody Guthrie,Singer,Known,White,FALSE,Male,David Carradine
+87,Boys Don't Cry,tt0171804,US,1999,11500000,Kimberly Peirce,1,Brandon Teena,Other,Unknown,,FALSE,Male,Hilary Swank
+88,Boys Town,tt0029942,US,1938,,Norman Taurog,1,Father Edward Flanagan,Other,Known,White,FALSE,Male,Spencer Tracy
+89,Braveheart,tt0112573,US,1995,75600000,Mel Gibson,1,William Wallace,Military,Known,White,FALSE,Male,Mel Gibson
+90,Breach,tt0401997,US,2007,33000000,Billy Ray,1,Robert Hanssen,Criminal,Known,White,FALSE,Male,Chris Cooper
+91,Brigham Young,tt0032281,US,1940,,Henry Hathaway,1,Brigham Young,Other,Known,White,FALSE,Male,Dean Jagger
+92,Bright Star,tt0810784,UK,2009,4440000,Jane Campion,2,John Keats,Author (poet),Known,White,FALSE,Male,Ben Whishaw
+93,Bright Star,tt0810784,UK,2009,4440000,Jane Campion,2,Fanny Brawne,Other,Unknown,,FALSE,Female,Abbie Cornish
+94,Bronson,tt1172570,UK,2008,105000,Nicolas Winding Refn,1,Charles Bronson,Criminal,Unknown,,FALSE,Male,Tom Hardy
+95,"Brother Sun, Sister Moon",tt0069824,UK,1972,,Franco Zeffirelli,1,St. Francis of Assisi,Historical,Known,White,FALSE,Male,Graham Faulkner
+96,Bubble Boy,tt0258470,US,2001,5000000,Blair Hayes,1,David Vetter,Medicine,Unknown,,FALSE,Male,Jake Gyllenhaal
+97,Buffalo Bill,tt0036677,US,1944,,William A. Wellman,1,William Cody,Other,Known,White,FALSE,Male,Joel McCrea
+98,Bugsy,tt0101516,US,1991,49100000,Barry Levinson,1,Ben 'Bugsy' Siegel,Criminal,Known,White,FALSE,Male,Warren Beatty
+99,Burning Blue,tt1811307,US,2013,,"D.M.W. Greer With: Trent Ford, Tammy Blanchard, Morgan Spector",1,DMW Greer,Military,Unknown,,FALSE,Male,Trent Ford
+100,Buster,tt0094819,UK,1988,540000,David Green,1,Buster Edwards,Criminal,Unknown,,FALSE,Male,Phil Collins
+101,Butch Cassidy and the Sundance Kid,tt0064115,US,1969,102000000,George Roy Hill,2,Butch Cassidy (Robert Leroy Parker),Criminal,Known,White,FALSE,Male,Paul Newman
+102,Butch Cassidy and the Sundance Kid,tt0064115,US,1969,102000000,George Roy Hill,2,Harry Longabaugh,Criminal,Known,White,FALSE,Male,Robert Redford
+103,Cadillac Records,tt1042877,US,2008,8130000.000000001,Darnell Martin,3,Etta James,Singer,Known,African American,TRUE,Female,BeyoncÃ© Knowles
+104,Cadillac Records,tt1042877,US,2008,8130000.000000001,Darnell Martin,3,Muddy Water,Musician,Known,African American,TRUE,Male,Jeffrey Wright
+105,Cadillac Records,tt1042877,US,2008,8130000.000000001,Darnell Martin,3,Leonard Chess,Musician,Known,White,FALSE,Male,Adrien Brody
+106,Caesar and Cleopatra,tt0038390,UK,1945,,Gabriel Pascal,2,Julius Caesar,Historical,Known,White,FALSE,Male,Claude Rains
+107,Caesar and Cleopatra,tt0038390,UK,1945,,Gabriel Pascal,2,Cleopatra,Historical,Known,Middle Eastern,TRUE,Female,Vivien Leigh
+108,Callas Forever,tt0274407,UK,2002,446000,Franco Zeffirelli,1,Maria Callas,Singer,Known,Mediterranean,FALSE,Female,Fanny Ardant
+109,Cannibal! The Musical,tt0115819,US,1993,,Trey Parker,1,Alferd Packer,Criminal,Unknown,,FALSE,Male,Trey Parker
+110,Capone,tt0072761,US,1975,,Steve Carver,1,Al Capone,Criminal,Known,White,FALSE,Male,Ben Gazzara
+111,Capote,tt0379725,US/Canada,2005,28700000,Bennett Miller,1,Truman Capote,Author,Unknown,,FALSE,Male,Philip Seymour Hoffman
+112,Captain Kidd,tt0037576,US,1945,,Rowland V. Lee,1,William Kidd,Historical,Known,White,FALSE,Male,Charles Laughton
+113,Captain Phillips,tt1535109,US,2013,107000000,Paul Greengrass,1,Richard Phillips,Military,Unknown,,FALSE,Male,Tom Hanks
+114,Caravaggio,tt0090798,UK,1986,3150,Derek Jarman,1,Michelangelo Merisi de Caravaggio,Artist,Known,White,FALSE,Male,Multiple
+115,Carbine Williams,tt0044480,US,1952,,Richard Thorpe,1,David Marshall Williams,Other,Unknown,,FALSE,Male,James Stewart
+116,Carrington,tt0112637,UK,1995,3240000,Christopher Hampton,2,Lytton Strachey,Author,Known,White,FALSE,Male,Jonathan Pryce
+117,Carrington,tt0112637,UK,1995,3240000,Christopher Hampton,2,Dora Carrington,Artist,Known,White,FALSE,Female,Emma Thompson
+118,Carve Her Name with Pride,tt0051454,UK,1958,,Lewis Gilbert,1,Violette Bushell Szabo,Military,Known,White,FALSE,Female,Virginia McKenna
+119,Casino,tt0112641,US,1995,42400000,Martin Scorsese,1,"Frank ""Lefty"" Rosenthal",Criminal,Unknown,,FALSE,Male,Robert De Niro
+120,Casino Jack,tt1194417,Canada,2010,1040000,George Hickenlooper,1,Jack Abramoff,Other,Unknown,,FALSE,Male,Kevin Spacey
+121,Cass,tt0954981,UK,2008,,Jon S. Baird,1,Cass Pennant,Other,Known,Caribbean,TRUE,Male,Nonso Anozie
+122,Catch a Fire,tt0437232,US/UK,2006,4290000,Phillip Noyce,1,Patrick Chamusso,Activist,Known,African,TRUE,Male,Derek Luke
+123,Catch Me If You Can,tt0264464,US/Canada,2002,164000000,Steven Spielberg,1,Frank Abagnale Jr.,Criminal,Unknown,,FALSE,Male,Leonardo DiCaprio
+124,Cesar Chavez,tt1621046,US,2014,5550000,Diego Luna,1,Cesar Chavez,Activist,Known,Hispanic (Latino),TRUE,Male,Michael PeÃ±a
+125,Chaplin,tt0103939,US,1992,9490000,Richard Attenborough,1,Charles Spencer Chaplin,Comedian,Known,White,FALSE,Male,Robert Downey Jr.
+126,Charlie Wilson's War,tt0472062,US,2007,66599999.99999999,Mike Nichols,1,Charlie Wilson,Military,Unknown,,FALSE,Male,Tom Hanks
+127,Chasing Mavericks,tt1629757,US,2012,6000000,"Michael Apted, Curtis Hanson",1,Jay Moriarity,Athlete,Unknown,,FALSE,Male,Jonny Weston
+128,Chattahoochee,tt0099242,US,1989,259000,Mick Jackson,1,Emmett Foley,Military,Unknown,,FALSE,Male,Gary Oldman
+129,Che: Part One,tt0892255,US,2008,1730000,Steven Soderbergh,1,Che Guevara,Activist,Known,Hispanic (Latin American),FALSE,Male,Benicio Del Toro
+130,Che: Part Two,tt0374569,US,2008,,Steven Soderbergh,1,Che Guevara,Activist,Known,Hispanic (Latin American),FALSE,Male,DemiÃ¡n Bichir
+131,Che!,tt0064158,US,1969,2000000,Richard Fleischer,1,Che Guevara,Activist,Known,Hispanic (Latin American),FALSE,Male,Omar Sharif
+132,Chisum,tt0065547,US,1970,6000000,Andrew V. McLaglen,1,John Chisum,Other,Unknown,,FALSE,Male,John Wayne
+133,Christopher Columbus: The Discovery,tt0103962,US/UK,1992,8250000,John Glen,1,Christopher Columbus,Other,Known,White,FALSE,Male,Georges Corraface
+134,Ciao Manhattan,tt0068379,US,1972,,"John Palmer, David Weisman",1,Edie Sedgwick,Actress,Known,White,FALSE,Female,Edie Sedgwick
+135,Cinderella Man,tt0352248,US,2005,61600000,Ron Howard,1,James Braddock,Athlete,Known,White,FALSE,Male,Russell Crowe
+136,Cleopatra,tt0024991,US,1934,,Cecil B. DeMille,1,Cleopatra,Historical,Known,Middle Eastern,TRUE,Female,Claudette Colbert
+137,Cleopatra,tt0056937,US/UK,1963,57800000,Joseph L. Mankiewicz,1,Cleopatra,Historical,Known,Middle Eastern,TRUE,Female,Elizabeth Taylor
+138,Coal Miner's Daughter,tt0080549,US,1980,79900000,Michael Apted,1,Loretta Lynn,Singer,Known,Multi racial,TRUE,Female,Sissy Spacek
+139,Cobb,tt0109450,US,1994,1010000,Ron Shelton,1,Ty Cobb,Athlete,Known,White,FALSE,Male,Tommy Lee Jones
+140,Communion,tt0097100,US/UK,1989,1920000,Philippe Mora,1,Whitley Strieber,Other,Unknown,,FALSE,Male,Christopher Walken
+141,Compulsion,tt0052700,US,1959,,Richard Fleischer,2,Nathan Leopold Jr.,Criminal,Known,White,FALSE,Male,Dean Stockwell/Bradford Dillman
+142,Compulsion,tt0052700,US,1959,,Richard Fleischer,2,Richard Loeb,Criminal,Known,White,FALSE,Male,Dean Stockwell/Bradford Dillman
+143,Confessions of a Dangerous Mind,tt0270288,US/Canada,2002,,George Clooney,1,Chuck Barris,Actor,Unknown,,FALSE,Male,Sam Rockwell
+144,Control,tt0421082,US/UK,2007,872000,Anton Corbijn,1,Ian Curtis,Musician,Unknown,,FALSE,Male,Sam Riley
+145,Conviction,tt1244754,US,2010,6780000,Tony Goldwyn,1,Betty Anne Waters,Other,Unknown,,FALSE,Female,Hilary Swank
+146,Copying Beethoven,tt0424908,US,2006,353000,Agnieszka Holland,1,Ludwig van Beethoven,Musician,Known,White,FALSE,Male,Ed Harris
+147,Counterpunch,tt2051850,US,2013,,Kenneth Castillo,1,Alvaro Orlando,Athlete,Known,Hispanic (Latino),TRUE,Male,Alvaro Orlando
+148,Creation,tt0974014,UK,2009,341000,Jon Amiel,1,Charles Darwin,Academic,Unknown,,FALSE,Male,Paul Bettany
+149,Cromwell,tt0065593,UK,1970,,Ken Hughes,1,Oliver Cromwell,Historical,Known,White,FALSE,Male,Richard Harris
+150,Cross Creek,tt0085380,US,1983,200000,Martin Ritt,1,Marjorie Kinnan Rawlings,Author,Unknown,,FALSE,Female,Mary Steenburgen
+151,Crutch,tt0422029,US,2004,,Rob Moretti,1,Rob Moretti,Actor,Unknown,,FALSE,Male,Eben Gordon
+152,Cry Freedom,tt0092804,UK,1987,5900000,Richard Attenborough,1,Steve Biko,Activist,Known,African,TRUE,Male,Denzel Washington
+153,Custer of the West,tt0062844,US,1967,,Robert Siodmak,1,George Armstrong Custer,Military,Known,White,FALSE,Male,Robert Shaw
+154,Dahmer,tt0285728,US,2002,,David Jacobson,1,Jeffrey Dahmer,Criminal,Known,White,FALSE,Male,Jeremy Renner
+155,Dallas Buyers Club,tt0790636,US,2013,27300000,Jean-Marc VallÃƒÂ©e,1,Ron Woodroof,Activist,Unknown,,FALSE,Male,Matthew McConaughey
+156,Dance with a Stranger,tt0088987,UK,1985,138000,Mike Newell,1,Ruth Ellis,Criminal,Unknown,,FALSE,Female,Miranda Richardson
+157,Dangerous Beauty,tt0118892,US,1998,4530000,Marshall Herskovitz,1,Veronica Franco,Other,Known,White,FALSE,Female,Catherine McCormack
+158,Dangerous Minds,tt0112792,US,1995,84900000,John N. Smith,1,Louanne Johnson,Teacher,Known,White,FALSE,Female,Michelle Pfeiffer
+159,De-Lovely,tt0352277,US/UK,2004,13300000,Irwin Winkler,1,Cole Porter,Musician,Known,White,FALSE,Male,Kevin Kline
+160,Death in Granada,tt0117106,US,1996,226000,Marcos Zurinaga,1,Garcia Lorca,Author,Known,Hispanic (White),FALSE,Male,Andy Garcia
+161,Desert Dancer,tt2403393,UK,2014,144000,Richard Raymond,1,Afshin Ghaffarian,Artist,Known,Middle Eastern,TRUE,Male,Reece Ritchie
+162,Desert Flower,tt1054580,UK,2009,44300,Sherry Hormann,1,Waris Dirie,Activist,Known,African,TRUE,Female,Soraya Omar-Scego (young) and Liya Kebede (older)
+163,DÃ©sirÃ©e,tt0046903,US,1954,,Henry Koster,2,DÃ©sirÃ©e Clary,Historical,Known,White,FALSE,Female,Jean Simmons
+164,DÃ©sirÃ©e,tt0046903,US,1954,,Henry Koster,2,Napoleon Bonaparte,Historical,Known,White,FALSE,Male,Marlon Brando
+165,Devil's Knot,tt0804463,US,2013,,Atom Egoyan,3,Damien Echols,Criminal,Unknown,,FALSE,Male,James Hamrick
+166,Devil's Knot,tt0804463,US,2013,,Atom Egoyan,3,Jason Baldwin,Criminal,Unknown,,FALSE,Male,Seth Meriwether
+167,Devil's Knot,tt0804463,US,2013,,Atom Egoyan,3,"Jessie Misskelley, Jr.",Criminal,Unknown,,FALSE,Male,Kristopher Higgins
+168,Devotion,tt0038474,US,1946,,Curtis Bernhardt,3,Charlotte Bronte,Author,Known,White,FALSE,Female,Olivia de Havilland
+169,Devotion,tt0038474,US,1946,,Curtis Bernhardt,3,Emily Bronte,Author,Known,White,FALSE,Female,Ida Lupino
+170,Devotion,tt0038474,US,1946,,Curtis Bernhardt,3,Anne Bronte,Author,Known,White,FALSE,Female,Nancy Coleman
+171,Diana,tt1758595,UK,2013,332000,Oliver Hirschbiegel,1,Princess Diana,Other,Known,White,FALSE,Female,Naomi Watts
+172,Digging Up the Marrow,tt1991031,US,2014,,Adam Green,1,Adam Green,Other,Unknown,,FALSE,Male,Adam Green
+173,Dillinger,tt0037644,US,1945,4000000,Max Nosseck,1,John Dillinger,Criminal,Known,White,FALSE,Male,Lawrence Tierney
+174,Dillinger,tt0069976,US,1973,,John Milius,1,John Dillinger,Criminal,Unknown,,FALSE,Male,Warren Oates
+175,Disraeli,tt0019823,US,1929,,Alfred E. Green,1,Benjamin Disraeli,World leader,Known,White,FALSE,Male,George Arliss
+176,Domino,tt0421054,US/UK,2005,10100000,Tony Scott,1,Domino Harvey,Other,Known,White,FALSE,Female,Keira Knightley
+177,Donnie Brasco,tt0119008,US,1997,42000000,Mike Newell,1,Joe Pistone (alias Donnie Brasco),Government,Known,White,FALSE,Male,Johnny Depp
+178,Downtown 81,tt0208993,US,1981,100000,Edo Bertoglio,1,Jean-Michel Basquiat,Artist,Known,Multi racial,TRUE,Male,Jean Michel Basquiat
+179,Dr. Ehrlich's Magic Bullet,tt0032413,US,1940,,William Dieterle,1,Paul Ehrlich,Medicine,Known,White,FALSE,Male,Edward G. Robinson
+180,Dragon: The Bruce Lee Story,tt0106770,US,1993,35100000,Rob Cohen,1,Bruce Lee,Athlete,Known,Asian American,TRUE,Male,Jason Scott Lee
+181,Dreamchild,tt0089052,UK,1985,,Gavin Millar,1,Alice Liddell Hargreaves,Other,Unknown,,FALSE,Female,Coral Browne
+182,Ed Gein,tt0230169,US/UK,2000,5710,Chuck Parello,1,Ed Gein,Criminal,Unknown,,FALSE,Male,Steve Railsback
+183,Ed Wood,tt0109707,US,1994,5890000,Tim Burton,1,Edward D. Wood,Other,Unknown,,FALSE,Male,Johnny Depp
+184,"Edison, the Man",tt0032432,US,1940,,Clarence Brown,1,Thomas Edison,Academic,Known,White,FALSE,Male,Spencer Tracy
+185,Eichmann,tt0901481,UK,2007,,Robert Young,1,Adolf Eichmann,Military,Known,White,FALSE,Male,Thomas Kretschmann
+186,El cantante,tt0458522,US,2006,7560000,Leon Ichaso,1,HÃ©ctor Lavoe,Musician,Known,Hispanic (Latin American),TRUE,Male,Marc Anthony
+187,El Cid,tt0054847,US,1961,26600000,Anthony Mann,1,Rodrigo Diaz,Historical,Known,Hispanic (White),FALSE,Male,Charlton Heston
+188,Elizabeth,tt0127536,US/UK,1998,30000000,Shekhar Kapur,1,Elizabeth I of England,Historical,Known,White,FALSE,Female,Cate Blanchett
+189,Elizabeth: The Golden Age,tt0414055,US/UK,2007,16300000,Shekhar Kapur,1,Elizabeth I of England,Historical,Known,White,FALSE,Female,Cate Blanchett
+190,Erin Brockovich,tt0195685,US,2000,126000000,Steven Soderbergh,1,Erin Brockovich,Activist,Unknown,,FALSE,Female,Julia Roberts
+191,Escape from Alcatraz,tt0079116,US,1979,36500000,Don Siegel,3,Clarence Anglin,Criminal,Unknown,,FALSE,Male,Jack Thibeau
+192,Escape from Alcatraz,tt0079116,US,1979,36500000,Don Siegel,3,Frank Morris,Criminal,Unknown,,FALSE,Male,Clint Eastwood
+193,Escape from Alcatraz,tt0079116,US,1979,36500000,Don Siegel,3,John Anglin,Criminal,Unknown,,FALSE,Male,Fred Ward
+194,Evel Knievel,tt0067069,US,1971,,Marvin J. Chomsky,1,Evel Knievel,Athlete,Known,White,FALSE,Male,George Hamilton
+195,Everyman's War,tt1209319,US,2009,,Thad T. Smith,1,Don Smith,Military,Unknown,,FALSE,Male,Cole Carson
+196,Evita,tt0116250,US,1996,50000000,Alan Parker,1,"Eva ""Evita"" Duarte de Peron",Actress / activist,Known,Hispanic (Latin American),FALSE,Female,Madonna
+197,Exodus: Gods and Kings,tt1528100,UK,2014,65000000,Ridley Scott,1,Moses,Historical,Known,Middle Eastern (White),FALSE,Male,Christian Bale
+198,Factory Girl,tt0432402,US,2006,1650000,George Hickenlooper,1,Edie Sedgwick,Actress,Known,White,FALSE,Female,Sienna Miller
+199,Fair Game,tt0977855,US,2010,9530000,Doug Liman,1,Valerie Plame,Government,Known,White,FALSE,Female,Naomi Watts
+200,Fat Man and Little Boy,tt0097336,US,1989,3560000,Roland JoffÃƒÂ©,2,Leslie Groves,Military,Known,White,FALSE,Male,Paul Newman
+201,Fat Man and Little Boy,tt0097336,US,1989,3560000,Roland JoffÃƒÂ©,2,Robert Oppenheimer,Academic,Known,White,FALSE,Male,Dwight Schultz
+202,Fear Strikes Out,tt0050383,US,1957,,Robert Mulligan,1,Jimmy Piersall,Athlete,Unknown,,FALSE,Male,Anthony Perkins
+203,Fellini's Casanova,tt0074291,US,1976,,Federico Fellini,1,Giacomo Casanova,Historical,Known,White,FALSE,Male,Donald Sutherland
+204,Find Me Guilty,tt0419749,US,2006,1170000,Sidney Lumet,1,Jackie DiNorscio,Criminal,Known,White,FALSE,Male,Vin Diesel
+205,Finding Graceland,tt0120026,US,1998,,David Winkler,1,Elvis Presley,Musician,Known,White,FALSE,Male,Harvey Keitel
+206,Finding Neverland,tt0308644,US/UK,2004,51700000,Marc Forster,1,J.M. Barrie,Author,Known,White,FALSE,Male,Johnny Depp
+207,Fire in the Sky,tt0106912,US,1993,20100000,Robert Lieberman,1,Travis Walton,Other,Unknown,,FALSE,Male,D.B. Sweeney
+208,Flash of Genius,tt1054588,US/Canada,2008,4230000,Marc Abraham,1,Robert Kearns,Other,Unknown,,FALSE,Male,Greg Kinnear
+209,Foxcatcher,tt1100089,US,2014,12100000,Bennett Miller,1,Mark Schultz,Athlete,Known,White,FALSE,Male,Channing Tatum
+210,Frances,tt0083967,US,1982,5000000,Graeme Clifford,1,Frances Farmer,Actress,Known,White,FALSE,Female,Jessica Lange
+211,Francis of Assisi,tt0054892,US,1961,,Michael Curtiz,1,Francis Bernardone,Historical,Known,White,FALSE,Male,Bradford Dillman
+212,Frank & Jesse,tt0109835,US,1995,,Robert Boris,2,Frank James,Criminal,Known,White,FALSE,Male,Bill Paxton
+213,Frank & Jesse,tt0109835,US,1995,,Robert Boris,2,Jesse James,Criminal,Known,White,FALSE,Male,Rob Lowe
+214,Frankie & Alice,tt1221208,Canada,2010,693000,Geoffrey Sax,1,Frankie Murdoch,Other,Known,African American,TRUE,Female,Halle Berry
+215,Freedom Writers,tt0463998,US,2007,36600000,Richard LaGravenese,1,Erin Gruwell,Other,Known,White,FALSE,Female,Hilary Swank
+216,Freud,tt0055998,US,1962,,John Huston,1,Sigmund Freud,Academic,Known,White,FALSE,Male,Montgomery Clift
+217,Frida,tt0120679,US/Canada,2002,25800000,Julie Taymor,1,Frida Kahlo,Artist,Known,Hispanic (Latin American),TRUE,Female,Salma Hayek
+218,Fruitvale Station,tt2334649,US,2013,16100000.000000002,Ryan Coogler,1,Oscar Grant III,Other,Known,African American,TRUE,Male,Michael B. Jordan
+219,Funny Girl,tt0062994,US,1968,223000,William Wyler,1,Fanny Brice,Actress,Known,White,FALSE,Female,Barbra Streisand
+220,Fur: An Imaginary Portrait of Diane Arbus,tt0422295,US,2006,221000,Steven Shainberg,1,Diane Arbus,Other,Known,White,FALSE,Female,Nicole Kidman
+221,Gandhi,tt0083987,UK,1982,,Richard Attenborough,1,Mahatma Gandhi,Activist,Known,Indian,TRUE,Male,Ben Kingsley
+222,Gentleman Jim,tt0034778,US,1942,,Raoul Walsh,1,James J Corbett,Athlete,Known,White,FALSE,Male,Errol Flynn
+223,Geronimo,tt0056016,US,1962,,Arnold Laven,1,Geronimo,Military,Known,Native American,TRUE,Male,Chuck Connors
+224,Get on Up,tt2473602,US/UK,2014,30500000,Tate Taylor,1,James Brown,Singer,Known,African American,TRUE,Male,Chadwick Boseman
+225,Get Rich or Die Tryin',tt0430308,US/Canada,2005,31000000,Jim Sheridan,1,Curtis '50 Cent' Jackson,Singer,Known,African American,TRUE,Male,50 Cent
+226,Girl with a Pearl Earring,tt0335119,UK,2003,11600000,Peter Webber,1,Johannes Vermeer,Artist,Known,White,FALSE,Male,Colin Firth
+227,"Girl, Interrupted",tt0172493,US,1999,28900000,James Mangold,1,Susanna Kaysen,Author,Unknown,,FALSE,Female,Winona Ryder
+228,Glory Road,tt0385726,US,2006,42600000,James Gartner,1,Don Haskins,Athlete,Unknown,,FALSE,Male,"With: Josh Lucas, Derek Luke, Austin Nichols"
+229,Gods and Monsters,tt0120684,US/UK,1998,6390000,Bill Condon,1,James Whale,Other,Known,White,FALSE,Male,Ian McKellen
+230,Goltzius and the Pelican Company,tt1851006,UK,2012,,Peter Greenaway,1,Hendrik Goltzius,Artist,Known,White,FALSE,Male,Ramsey Nasr
+231,"Good Morning, Vietnam",tt0093105,US,1987,124000000,Barry Levinson,1,Adrian Cronauer,Media,Unknown,,FALSE,Male,Robin Williams
+232,Good Vibrations,tt1920945,UK,2012,,"Lisa Barros D'Sa, Glenn Leyburn",1,Terri Hooley,Musician,Unknown,,FALSE,Male,Richard Dormer
+233,Goodfellas,tt0099685,US,1990,46800000,Martin Scorsese,1,Henry Hill,Criminal,Known,White,FALSE,Male,Ray Liotta
+234,Gorillas in the Mist,tt0095243,US,1988,24700000,Michael Apted,1,Dian Fossey,Academic,Unknown,,FALSE,Female,Sigourney Weaver
+235,Goya's Ghosts,tt0455957,US,2006,1000000,Milos Forman,1,Francisco Goya,Artist,Known,Hispanic (White),FALSE,Male,Stellan SkarsgÃ¥rd
+236,Grace of Monaco,tt2095649,US,2014,,Olivier Dahan,1,Grace Kelly,Actress,Known,White,FALSE,Male,Nicole Kidman
+237,Gracie,tt0441007,US,2007,2960000,Davis Guggenheim,1,Elisabeth Shue,Athlete,Known,White,FALSE,Female,Carly Schroeder
+238,Greased Lightning,tt0076106,US,1977,,Michael Schultz,1,Wendell Scott,Athlete,Known,African American,TRUE,Male,Richard Pryor
+239,Great Balls of Fire!,tt0097457,US,1989,13700000,Jim McBride,1,Jerry Lee Lewis,Musician,Unknown,,FALSE,Male,Dennis Quaid
+240,Grey Owl,tt0128239,Canada/UK,1999,315000,Richard Attenborough,1,Grey Owl (Archibald Belaney),Other,Known,Multi racial,TRUE,Male,Pierce Brosnan
+241,Gypsy,tt0056048,US,1962,,Mervyn LeRoy,2,Gypsy Rose Lee,Artist,Known,White,FALSE,Female,Natalie Wood
+242,Gypsy,tt0056048,US,1962,,Mervyn LeRoy,2,Rose Thompson Hovick,Other,Known,White,FALSE,Female,Rosalind Russell
+243,Hans Christian Andersen,tt0044685,US,1952,,Charles Vidor,1,Hans Christian Andersen,Author,Known,White,FALSE,Male,Danny Kaye
+244,Harlow,tt0059252,US,1965,,Gordon Douglas,1,Jean Harlow,Actress,Known,White,FALSE,Female,Carroll Baker
+245,Heart Like a Wheel,tt0085656,US,1983,,Jonathan Kaplan,1,Shirley Muldowney,Athlete,Known,White,FALSE,Female,Bonnie Bedelia
+246,Heaven & Earth,tt0107096,US,1993,5860000,Oliver Stone,1,Le Ly Hayslip,Other,Known,Asian American,TRUE,Female,Hiep Thi Le
+247,Hell to Eternity,tt0053901,US,1960,,Phil Karlson,1,Guy Gabaldon,Military,Known,Hispanic (Latino),TRUE,Male,Jeffrey Hunter
+248,Henry & June,tt0099762,US,1990,11600000,Philip Kaufman,3,Henry Miller,Author,Known,White,FALSE,Male,Fred Ward
+249,Henry & June,tt0099762,US,1990,11600000,Philip Kaufman,3,AnaÃ¯s Nin,Author,Known,White,FALSE,Female,Maria de Medeiros
+250,Henry & June,tt0099762,US,1990,11600000,Philip Kaufman,3,June Miller,Other,Known,White,FALSE,Female,Uma Thurman
+251,Henry V,tt0036910,UK,1944,,Laurence Olivier,1,Henry V of England,Historical,Known,White,FALSE,Male,Laurence Olivier
+252,Henry V,tt0097499,UK,1989,10200000,Kenneth Branagh,1,Henry V of England,Historical,Known,White,FALSE,Male,Kenneth Branagh
+253,High Roller: The Stu Ungar Story,tt0338467,US,2003,,A.W. Vidmer,1,Stu Ungar,Other,Known,White,FALSE,Male,Michael Imperioli
+254,Hilary and Jackie,tt0150915,UK,1998,4870000,Anand Tucker,2,Jacqueline du PrÃ©,Musician,Known,White,FALSE,Female,Emily Watson
+255,Hilary and Jackie,tt0150915,UK,1998,4870000,Anand Tucker,2,Hilary du PrÃ©-Finzi,Musician,Known,White,FALSE,Female,Rachel Griffiths
+256,His Majesty O'Keefe,tt0045876,US,1954,,Byron Haskin,1,David Dion O'Keefe,Other,Known,White,FALSE,Male,Burt Lancaster
+257,Hitchcock,tt0975645,US/UK,2012,6000000,Sacha Gervasi,2,Alfred Hitchcock,Other,Known,White,FALSE,Male,Anthony Hopkins
+258,Hitchcock,tt0975645,US/UK,2012,6000000,Sacha Gervasi,2,Alma Reville,Other,Known,White,FALSE,Female,Helen Mirren
+259,Hitler: A Film from Germany,tt0076147,UK,1977,,Hans-JÃ_rgen Syberberg,1,Adolf Hitler,Military,Known,White,FALSE,Male,Heinz Schubert
+260,Hitler: The Last Ten Days,tt0070184,UK,1973,,Ennio De Concini,1,Adolf Hitler,Military,Known,White,FALSE,Male,Alec Guinness
+261,Hoffa,tt0104427,US,1992,24300000,Danny DeVito,1,Jimmy Hoffa,Activist,Known,White,FALSE,Male,Jack Nicholson
+262,Hollywoodland,tt0427969,US,2006,14400000,Allen Coulter,1,George Reeves,Actor,Unknown,,FALSE,Male,Ben Affleck
+263,Houdini,tt0045886,US,1953,,George Marshall,1,Harry Houdini,Other,Known,White,FALSE,Male,Tony Curtis
+264,Howl,tt1049402,US,2010,617000,"Rob Epstein, Jeffrey Friedman",1,Allen Ginsberg,Author,Known,White,FALSE,Male,James Franco
+265,Hunger,tt0986233,UK,2008,154000,Steve McQueen,1,Bobby Sands,Activist,Known,White,FALSE,Male,Michael Fassbender
+266,Hyde Park on Hudson,tt1477855,UK,2012,6370000,Roger Michell,2,Franklin Delano Roosevelt,World leader,Known,White,FALSE,Male,Bill Murray
+267,Hyde Park on Hudson,tt1477855,UK,2012,6370000,Roger Michell,2,Margaret Suckley,Other,Unknown,,FALSE,Female,Laura Linney
+268,I Am a Sex Addict,tt0428649,US,2005,113000,Caveh Zahedi,1,Caveh Zahedi,Actor,Known,Middle Eastern,TRUE,Male,Caveh Zahedi
+269,I Love You Phillip Morris,tt1045772,US,2009,2040000,"Glenn Ficarra, John Requa",1,Steven Russell,Criminal,Unknown,,FALSE,Male,Jim Carrey
+270,I Shot Andy Warhol,tt0116594,US/UK,1996,1810000,Mary Harron,1,Valerie Solanas,Activist,Known,Hispanic (White),FALSE,Female,Lil Taylor
+271,I Want to Live!,tt0051758,US,1958,,Robert Wise,1,Barbara Graham,Criminal,Unknown,,FALSE,Female,Susan Hayward
+272,I'll Cry Tomorrow,tt0048191,US,1955,,Daniel Mann,1,Lillian Roth,Actress,Known,White,FALSE,Female,Susan Hayward
+273,I'll See You in My Dreams,tt0043669,US,1951,,Michael Curtiz,1,Gus Kahn,Musician,Known,White,FALSE,Male,Danny Thomas
+274,I'm Not There.,tt0368794,US/Canada,2007,4000000,Todd Haynes,1,Bob Dylan,Musician,Known,White,FALSE,Male,-
+275,If You Could See What I Hear,tt0084117,Canada,1982,,Eric Till,1,Tom Sullivan,Singer,Known,White,FALSE,Male,Marc Singer
+276,Immortal Beloved,tt0110116,US/UK,1994,14400000,Bernard Rose,1,Ludwig van Beethoven,Musician,Known,White,FALSE,Male,Gary Oldman
+277,Impromptu,tt0102103,UK,1991,4080000,James Lapine,2,FrÃ©dÃ©ric FranÃ§ois Chopin,Musician,Known,White,FALSE,Male,Hugh Grant
+278,Impromptu,tt0102103,UK,1991,4080000,James Lapine,2,George Sand / Aurore,Other,Known,White,FALSE,Female,Judy Davis
+279,In Love and War,tt0116621,US,1996,14500000,Richard Attenborough,2,Ernest Hemingway,Media,Known,White,FALSE,Male,Chris O'Donnell
+280,In Love and War,tt0116621,US,1996,14500000,Richard Attenborough,2,Agnes von Kurowsky,Other,Known,White,FALSE,Female,Sandra Bullock
+281,In the Name of the Father,tt0107207,US/UK,1993,25000000,Jim Sheridan,1,Gerry Conlon,Other,Known,White,FALSE,Male,Daniel Day-Lewis
+282,Infamous,tt0420609,US,2006,1150000,Douglas McGrath,1,Truman Capote,Other,Unknown,,FALSE,Male,Toby Jones
+283,Infinity,tt0116635,US,1996,146000,Matthew Broderick,1,Richard Feynman,Academic,Unknown,,FALSE,Male,Matthew Broderick
+284,Interrupted Melody,tt0048210,US,1955,,Curtis Bernhardt,1,Marjorie Lawrence,Singer,Known,White,FALSE,Female,Eleanor Parker
+285,Into the Wild,tt0758758,US,2007,18400000,Sean Penn,1,Christopher McCandless,Athlete,Unknown,,FALSE,Male,Emile Hirsch
+286,Invictus,tt1057500,US,2009,37500000,Clint Eastwood,2,Nelson Mandela,World leader,Known,African,TRUE,Male,Morgan Freeman
+287,Invictus,tt1057500,US,2009,37500000,Clint Eastwood,2,FranÃ§ois Pienaar,Athlete,Known,White,FALSE,Male,Matt Damon
+288,Invincible,tt0445990,US,2006,57800000,Ericson Core,1,Vince Papale,Athlete,Unknown,,FALSE,Male,Mark Wahlberg
+289,Iris,tt0280778,US/UK,2001,1200000,Richard Eyre,1,Iris Murdoch,Author,Known,White,FALSE,Female,Judi Dench and Kate Winslet
+290,Isadora,tt0063141,UK,1968,,Karel Reisz,1,Isadora Duncan,Artist,Unknown,,FALSE,Female,Vanessa Redgrave
+291,Isn't She Great,tt0141399,US/UK,2000,2950000,Andrew Bergman,1,Jacqueline Susann,Author,Known,White,FALSE,Female,Bette Midler
+292,iSteve,tt2782834,US,2013,,Ryan Perez,1,Steve Jobs,Other,Known,Multi racial,TRUE,Male,Justin Long
+293,J. Edgar,tt1616195,US,2011,37300000,Clint Eastwood,1,J. Edgar Hoover,Government,Known,White,FALSE,Male,Leonardo DiCaprio
+294,Jamesy Boy,tt1673734,US,2014,,Trevor White,1,James Burns,Criminal,Unknown,,FALSE,Male,Spencer Lofranco
+295,Jappeloup,tt2018079,Canada,2013,,Christian Duguay,1,"Pierre Durand, Jr.",Athlete,Known,White,FALSE,Male,Guillaume Canet
+296,Jean Charles,tt0989007,UK,2009,,Henrique Goldman,1,Jean Charles de Menezes,Other,Known,White,FALSE,Male,Selton Mello
+297,Jefferson in Paris,tt0113463,US,1995,2470000,James Ivory,1,Thomas Jefferson,Historical,Known,White,FALSE,Male,Nick Nolte
+298,Jersey Boys,tt1742044,US,2014,47000000,Clint Eastwood,4,Bob Gaudio,Musician,Known,White,FALSE,Male,Erich Bergen
+299,Jersey Boys,tt1742044,US,2014,47000000,Clint Eastwood,4,Frankie Valli,Musician,Known,White,FALSE,Male,John Lloyd Young
+300,Jersey Boys,tt1742044,US,2014,47000000,Clint Eastwood,4,Nick Massi,Musician,Known,White,FALSE,Male,Michael Lomenda
+301,Jersey Boys,tt1742044,US,2014,47000000,Clint Eastwood,4,Tommy DeVito,Musician,Known,White,FALSE,Male,Vincent Piazza
+302,Jesse James,tt0031507,US,1939,,Henry King,1,Jesse James,Criminal,Known,White,FALSE,Male,Tyrone Power
+303,Jim Thorpe -- All-American,tt0043687,US,1951,,Michael Curtiz,1,Jim Thorpe,Athlete,Known,Native American,TRUE,Male,Burt Lancaster
+304,Jimi: All Is by My Side,tt2402085,US/UK,2013,323000,John Ridley,1,Jimi Hendrix,Musician,Known,Multi racial,TRUE,Male,AndrÃ© Benjamin
+305,Jinnah,tt0183306,UK,1998,,Jamil Dehlavi,1,Mohammad Ali Jinnah,Other,Known,Middle Eastern,TRUE,Male,Christopher Lee
+306,"Jo Jo Dancer, Your Life Is Calling",tt0091295,US,1986,18000000,Richard Pryor,1,Richard Pryor,Comedian,Known,African American,TRUE,Male,Richard Pryor
+307,Joan of Arc,tt0040491,US,1948,,Victor Fleming,1,Joan of Arc,Historical,Known,White,FALSE,Female,Ingrid Bergman
+308,Jobs,tt2357129,US,2013,16100000.000000002,Joshua Michael Stern,1,Steve Jobs,Other,Known,Multi racial,TRUE,Male,Ashton Kutcher
+309,John Paul Jones,tt0052946,US,1959,,John Farrow,1,John Paul Jones,Military,Known,White,FALSE,Male,Robert Stack
+310,Juarez,tt0031516,US,1939,,William Dieterle,1,Benito Juarez,World leader,Known,Hispanic (Latin American),TRUE,Male,Paul Muni
+311,Julie & Julia,tt1135503,US,2009,94100000,Nora Ephron,2,Julia Child,Other,Unknown,,FALSE,Female,Meryl Streep
+312,Julie & Julia,tt1135503,US,2009,94100000,Nora Ephron,2,Julia Powell,Other,Unknown,,FALSE,Female,Amy Adams
+313,Kid Cannabis,tt0780548,US,2014,5570,John Stockwell,1,Nate Norman,Criminal,Unknown,,FALSE,Male,Jonathan Daniel Brown
+314,Kill the Irishman,tt1416801,US,2011,1190000,Jonathan Hensleigh,1,Danny Greene,Criminal,Known,White,FALSE,Male,Ray Stevenson
+315,Kill the Messenger,tt1216491,US,2014,2450000,Michael Cuesta,1,Gary Webb,Media,Unknown,,FALSE,Male,Jeremy Renner
+316,Kill Your Darlings,tt1311071,US,2013,1030000,John Krokidas,1,Allen Ginsberg,Author,Known,White,FALSE,Male,Daniel Radcliffe
+317,Killer: A Journal of Murder,tt0113542,US,1995,65700,Tim Metcalfe,1,Carl Panzram,Criminal,Known,White,FALSE,Male,James Woods
+318,King David,tt0089420,US,1985,,Bruce Beresford,1,David,Historical,Known,Middle Eastern (White),FALSE,Male,Richard Gere
+319,King of Kings,tt0055047,US,1961,,Nicholas Ray,1,Jesus,Historical,Known,Middle Eastern (White),FALSE,Male,Jeffrey Hunter
+320,Kinsey,tt0362269,US,2004,10200000,Bill Condon,1,Alfred Kinsey,Academic,Known,White,FALSE,Male,Liam Neeson
+321,Klimt,tt0417871,UK,2006,,Raoul Ruiz,1,Gustav Klimt,Artist,Known,White,FALSE,Male,John Malkovich
+322,Knute Rockne All American,tt0032676,US,1940,,Lloyd Bacon,1,Knute Rockne,Athlete,Known,White,FALSE,Male,Pat O'Brien
+323,Korczak,tt0099949,UK,1990,,Andrzej Wajda,1,Janusz Korczak,Other,Known,White,FALSE,Male,Wojciech Pszoniak
+324,Kundun,tt0119485,US,1997,5530000,Martin Scorsese,1,Dalai Lama,Activist,Known,Asian,TRUE,Male,Tenzin Thuthob Tsarong
+325,La Bamba,tt0093378,US,1987,54200000,Luis Valdez,1,Ritchie Valens,Musician,Known,Hispanic (Latino),TRUE,Male,Lou Diamond Phillips
+326,La Vie en Rose,tt0450188,Canada/UK,2007,10300000,Olivier Dahan,1,Ã‰dith Piaf.,Singer,Known,White,FALSE,Female,Marion Cotillard
+327,Lady Jane,tt0091374,UK,1986,278000,Trevor Nunn,1,Lady Jane Grey,Historical,Unknown,,FALSE,Female,Helena Bonham Carter
+328,Lady Sings the Blues,tt0068828,US,1972,9600000,Sidney J. Furie,1,Billie Holiday,Musician,Known,African American,TRUE,Female,Diana Ross
+329,Last Days,tt0403217,US,2005,455000,Gus Van Sant,1,Kurt Cobain,Musician,Known,White,FALSE,Male,Michael Pitt
+330,Lawrence of Arabia,tt0056172,UK,1962,342000,David Lean,1,Thomas Edward Lawrence,Military,Known,White,FALSE,Male,Peter O'Toole
+331,Lee Daniels' The Butler,tt1327773,US,2013,117000000,Lee Daniels,1,Cecil Gaines,Other,Known,African American,TRUE,Male,Forest Whitaker
+332,Lenny,tt0071746,US,1974,,Bob Fosse,1,Lenny Bruce,Comedian,Known,White,FALSE,Male,Dustin Hoffman
+333,Lincoln,tt0443272,US,2012,182000000,Steven Spielberg,1,Abraham Lincoln,World leader,Known,White,FALSE,Male,Daniel Day-Lewis
+334,Lion of the Desert,tt0081059,US,1981,,Moustapha Akkad,1,Omar Mukhtar,Activist,Known,Middle Eastern,TRUE,Male,Anthony Quinn
+335,Lisztomania,tt0073298,UK,1975,,Ken Russell,1,Franz Liszt,Musician,Known,White,FALSE,Male,Roger Daltrey
+336,Little Ashes,tt1104083,UK,2008,480000,Paul Morrison,1,Salvador DalÃ_,Artist,Known,Multi racial,TRUE,Male,Robert Pattinson
+337,Lone Survivor,tt1091191,US,2013,125000000,Peter Berg,1,Marcus Luttrell,Military,Unknown,,FALSE,Male,Mark Wahlberg
+338,Lords of Dogtown,tt0355702,US,2005,11000000,Catherine Hardwicke,3,Jay Adams,Athlete,Unknown,,FALSE,Male,Emile Hirsch
+339,Lords of Dogtown,tt0355702,US,2005,11000000,Catherine Hardwicke,3,Tony Alva,Athlete,Known,Hispanic (Latino),TRUE,Male,Victor Rasuk
+340,Lords of Dogtown,tt0355702,US,2005,11000000,Catherine Hardwicke,3,Stacy Peralta,Athlete,Unknown,,FALSE,Male,John Robinson
+341,Louis Cyr,tt1657513,Canada,2013,,Daniel Roby,1,Louis Cyr,Athlete,Known,White,FALSE,Male,Antoine Bertrand
+342,Love & Mercy,tt0903657,US,2014,9260000,Bill Pohlad,1,Brian Wilson,Musician,Known,White,FALSE,Male,John Cusack
+343,Love Is a Many-Splendored Thing,tt0048316,US,1955,,Henry King,1,Han Suyin,Other,Known,Eurasian,TRUE,Female,Jennifer Jones
+344,Love Is the Devil: Study for a Portrait of Francis Bacon,tt0119577,US/UK,1998,343000,John Maybury,1,Francis Bacon,Artist,Known,White,FALSE,Male,Derek Jacobi
+345,Love Me or Leave Me,tt0048317,US,1955,,Charles Vidor,1,Ruth Etting,Singer,Unknown,,FALSE,Female,Doris Day
+346,Lovelace,tt1426329,US,2013,355000,"Rob Epstein, Jeffrey Friedman",1,Linda Lovelace,Actress,Known,White,FALSE,Female,Amanda Seyfried
+347,Low Down,tt1864405,US,2014,44500,Jeff Preiss,1,Joe Albany,Musician,Known,White,FALSE,Male,John Hawkes
+348,Lucky Luciano,tt0071782,US,1973,,Francesco Rosi,1,Charles Luciano,Criminal,Known,White,FALSE,Male,Gian Maria VolontÃ©
+349,Lust for Life,tt0049456,US,1956,,Vincente Minnelli,1,Vincent van Gogh,Artist,Known,White,FALSE,Male,Kirk Douglas
+350,Luther,tt0309820,US,2003,5670000,Eric Till,1,Martin Luther,Historical,Known,White,FALSE,Male,Joseph Fiennes
+351,MacArthur,tt0076342,US,1977,,Joseph Sargent,1,Douglas MacArthur,Military,Known,White,FALSE,Male,Gregory Peck
+352,Machine Gun Preacher,tt1586752,US,2011,538000,Marc Forster,1,Sam Childers,Other,Known,White,FALSE,Male,Gerard Butler
+353,Machine-Gun Kelly,tt0051887,US,1958,,Roger Corman,1,George Kelly,Criminal,Unknown,,FALSE,Male,Charles Bronson
+354,Madame Curie,tt0036126,US,1943,,Mervyn LeRoy,2,Pierre Curie,Academic,Known,White,FALSE,Male,Walter Pidgeon
+355,Madame Curie,tt0036126,US,1943,,Mervyn LeRoy,2,Marie Curie,Academic,Known,White,FALSE,Female,Greer Garson
+356,Mahler,tt0071797,UK,1974,,Ken Russell,2,Gustav Mahler,Musician,Known,White,FALSE,Male,Robert Powell
+357,Mahler,tt0071797,UK,1974,,Ken Russell,2,Alma Mahler,Other,Unknown,,FALSE,Female,Georgina Hale
+358,Malcolm X,tt0104797,US,1992,48200000,Spike Lee,1,Malcolm X,Activist,Known,African American,TRUE,Male,Denzel Washington
+359,Man of a Thousand Faces,tt0050681,US,1957,,Joseph Pevney,1,Lon Chaney,Actor,Known,White,FALSE,Male,James Cagney
+360,Man on the Moon,tt0125664,US/UK,1999,34600000,Milos Forman,1,Andy Kaufman,Comedian,Unknown,,FALSE,Male,Jim Carrey
+361,Mandela: Long Walk to Freedom,tt2304771,UK,2013,8320000,Justin Chadwick,1,Nelson Mandela,World leader,Known,African,TRUE,Male,Idris Elba
+362,Marie Antoinette,tt0030418,US,1938,,W.S. Van Dyke,1,Marie Antoinette,Historical,Known,White,FALSE,Female,Norma Shearer
+363,Marie Antoinette,tt0422720,US,2006,16000000,Sofia Coppola,1,Marie Antoinette,Historical,Known,White,FALSE,Female,Kirsten Dunst
+364,Mary of Scotland,tt0027948,US,1936,,John Ford,1,"Mary Stuart, Queen of Scots",Historical,Known,White,FALSE,Female,Katharine Hepburn
+365,"Mary, Queen of Scots",tt0067402,UK,1971,,Charles Jarrott,1,"Mary Stuart, Queen of Scots",Historical,Known,White,FALSE,Female,Vanessa Redgrave
+366,Mask,tt0089560,US,1985,42400000,Peter Bogdanovich,1,"Roy Lee ""Rocky"" Dennis",Other,Known,White,FALSE,Male,Eric Stolz
+367,Meetings with Remarkable Men,tt0079542,UK,1979,,Peter Brook,1,G.I. Gurdjieff,Other,Known,White,FALSE,Male,Dragan Maksimovic
+368,Men of Honor,tt0203019,US,2000,48800000,George Tillman Jr.,1,Carl Brashear,Athlete,Known,African American,TRUE,Male,Cuba Gooding Jr
+369,Mesmer,tt0110496,Canada/UK,1994,,Roger Spottiswoode,1,Franz Anton Mesmer,Medicine,Known,White,FALSE,Male,Alan Rickman
+370,Mesrine Part 1: Killer Instinct,tt1259014,Canada,2008,552000,Jean-FranÃ§ois Richet,1,Jacques Mesrine,Criminal,Known,White,FALSE,Male,Vincent Cassel
+371,Mesrine Part 2: Public Enemy #1,tt0411272,Canada,2008,275000,Jean-FranÃ§ois Richet,1,Jacques Mesrine,Criminal,Known,White,FALSE,Male,Vincent Cassel
+372,Michael Collins,tt0117039,US/UK,1996,11000000,Neil Jordan,1,Michael Collins,Activist,Known,White,FALSE,Male,Liam Neeson
+373,Midnight Express,tt0077928,US/UK,1978,35000000,Alan Parker,1,Billy Hayes,Criminal,Unknown,,FALSE,Male,Brad Davis
+374,Milk,tt1013753,US,2008,31800000,Gus Van Sant,1,Harvey Milk,Activist,Known,White,FALSE,Male,Sean Penn
+375,Million Dollar Arm,tt1647668,US,2014,36400000,Craig Gillespie,1,J. B. Bernstein,Athlete,Known,White,FALSE,Male,Jon Hamm
+376,Million Dollar Mermaid,tt0044903,US,1952,,Mervyn LeRoy,1,Annette Kellerman,Athlete,Known,White,FALSE,Female,Esther Williams
+377,Miracle,tt0349825,US,2004,64400000.00000001,Gavin O'Connor,1,Herb Brooks,Athlete,Unknown,,FALSE,Male,Kurt Russell
+378,Mishima: A Life in Four Chapters,tt0089603,US,1985,450000,Paul Schrader,1,Yukio Mishima,Author,Known,Asian,TRUE,Male,Ken Ogata
+379,Miss Potter,tt0482546,US/UK,2006,2980000,Chris Noonan,1,Beatrix Potter,Author,Known,White,FALSE,Female,RenÃ©e Zellweger
+380,Mockingbird Don't Sing,tt0273822,US,2001,,Harry Bromley Davenport,1,Genie (pseudonym),Other,Unknown,,FALSE,Female,Tarra Steele
+381,Modigliani,tt0367188,UK,2004,195000,Mick Davis,1,Amedeo Modigliani,Artist,Known,White,FALSE,Male,Andy Garcia
+382,Mommie Dearest,tt0082766,US,1981,,Frank Perry,1,Joan Crawford,Actress,Known,White,FALSE,Female,Faye Dunaway
+383,Moneyball,tt1210166,US,2011,75600000,Bennett Miller,1,Billy Beane,Athlete,Known,White,FALSE,Male,Brad Pitt
+384,Monsieur N.,tt0308595,UK,2003,16800,Antoine de Caunes,1,Napoleon Bonaparte,Historical,Known,White,FALSE,Male,Philippe Torreton
+385,Monster,tt0340855,US,2003,34500000,Patty Jenkins,1,Aileen Wuornos,Criminal,Unknown,,FALSE,Female,Charlize Theron
+386,Moulin Rouge,tt0044926,UK,1952,,John Huston,1,Henri de Toulouse-Lautrec,Artist,Unknown,,FALSE,Male,JosÃ© Ferrer
+387,Mr. Nice,tt1183911,UK,2010,,Bernard Rose,1,Howard Marks,Criminal,Unknown,,FALSE,Male,Rhys Ifans
+388,Mr. Turner,tt2473794,UK,2014,3960000,Mike Leigh,1,J.M.W. Turner,Artist,Known,White,FALSE,Male,Timothy Spall
+389,Mrs Brown,tt0119280,US/UK,1997,9220000,John Madden,1,Victoria,Historical,Known,White,FALSE,Female,Judi Dench
+390,Mrs. Parker and the Vicious Circle,tt0110588,US/Canada,1994,2140000,Alan Rudolph,1,Dorothy Parker,Author,Known,White,FALSE,Female,Jennifer Jason Leigh
+391,Muhammad: The Last Prophet,tt0430377,US,2002,,Richard Rich,1,Muhammad,Historical,Known,Middle Eastern,TRUE,Male,
+392,"Murder, Inc.",tt0054102,US,1960,,"Burt Balaban, Stuart Rosenberg",1,Burton Turkus,Other,Unknown,,FALSE,Male,Henry Morgan
+393,Music Within,tt0422783,US,2007,153000,Steven Sawalich,1,Richard Pimentel,Activist,Known,Multi racial,TRUE,Male,Ron Livingston
+394,My Childhood,tt0068983,UK,1972,,Bill Douglas,1,Bill Douglas,Other,Unknown,,FALSE,Male,Stephen Archibald
+395,My Dinner with Andre,tt0082783,US,1981,5070,Louis Malle,2,Andre Gregory,Actor,Known,White,FALSE,Male,Andre Gregory
+396,My Dinner with Andre,tt0082783,US,1981,5070,Louis Malle,2,Wallace Shawn,Actor,Known,White,FALSE,Male,Wallace Shawn
+397,My Left Foot,tt0097937,UK,1989,14700000,Jim Sheridan,1,Christy Brown,Artist,Known,White,FALSE,Male,Daniel Day-Lewis
+398,My Life So Far,tt0120899,US/UK,1999,616000,Hugh Hudson,1,Denis Forman,Other,Known,White,FALSE,Male,Robert Norman
+399,My One and Only,tt1185431,US,2009,2480000,Richard Loncraine,1,George Hamilton,Other,Known,White,FALSE,Male,Logan Lerman
+400,My Week with Marilyn,tt1655420,US/UK,2011,14600000,Simon Curtis,1,Marilyn Monroe,Actress,Unknown,,FALSE,Female,Michelle Williams
+401,Ned Kelly,tt0277941,US/UK,2003,74900,Gregor Jordan,1,Ned Kelly,Criminal,Known,White,FALSE,Male,Heath Ledger
+402,Nicholas and Alexandra,tt0067483,UK,1971,,Franklin J. Schaffner,2,Tsarina Alexandra (Feodorovna),Historical,Known,White,FALSE,Female,Janet Suzman
+403,Nicholas and Alexandra,tt0067483,UK,1971,,Franklin J. Schaffner,2,Tsar Nicholas II,Historical,Known,White,FALSE,Male,Michael Jayston
+404,Night and Day,tt0038776,US,1946,,Michael Curtiz,1,Cole Porter,Musician,Unknown,,FALSE,Male,Cary Grant
+405,Nightwatching,tt0446750,Canada/UK,2007,,Peter Greenaway,1,Rembrandt,Artist,Known,White,FALSE,Male,Martin Freeman
+406,Nixon,tt0113987,US,1995,13600000,Oliver Stone,1,Richard Milhous Nixon,World leader,Known,White,FALSE,Male,Anthony Hopkins
+407,Nora,tt0158033,UK,2000,12300,Pat Murphy,2,James Joyce,Author,Known,White,FALSE,Male,Ewan McGregor
+408,Nora,tt0158033,UK,2000,12300,Pat Murphy,2,Nora Barnacle,Other,Unknown,,FALSE,Female,Susan Lynch
+409,Nostradamus,tt0110689,UK,1994,364000,Roger Christian,1,Nostradamus,Historical,Unknown,,FALSE,Male,TchÃ©ky Karyo
+410,Notorious,tt0472198,US,2009,36800000,George Tillman Jr.,1,Christopher Wallace (Biggie Smalls),Musician,Known,Caribbean,TRUE,Male,Jamal Woolard
+411,Nowhere Boy,tt1266029,Canada/UK,2009,1450000,Sam Taylor-Johnson,1,John Lennon,Musician,Known,White,FALSE,Male,Aaron Taylor-Johnson
+412,October Sky,tt0132477,US,1999,32500000,Joe Johnston,1,Homer Hickam,Other,Known,Multi racial,TRUE,Male,Jake Gyllenhaal
+413,One Chance,tt1196956,US/UK,2013,89700,David Frankel,1,Paul Potts,Musician,Unknown,,FALSE,Male,James Corden
+414,One Foot in Heaven,tt0033980,US,1941,,Irving Rapper,1,William Spence,Other,Known,White,FALSE,Male,Fredric March
+415,One Night with the King,tt0430431,US,2006,13400000,Michael O. Sajbel,1,Hadassah (Esther),Historical,Known,Middle Eastern (White),FALSE,Female,Tiffany Dupont
+416,Open Water,tt0374102,US,2003,30500000,Chris Kentis,2,Eileen Lonergan,Other,Unknown,,FALSE,Female,Blanchard Ryan
+417,Open Water,tt0374102,US,2003,30500000,Chris Kentis,2,Tom Lonergan,Other,Unknown,,FALSE,Male,Daniel Travis
+418,Out of Africa,tt0089755,US,1985,87100000,Sydney Pollack,1,Karen Blixen,Other,Known,White,FALSE,Female,Meryl Streep
+419,Pandaemonium,tt0210217,UK,2000,,Julien Temple,2,William Wordsworth,Author (poet),Unknown,,FALSE,Male,John Hannah
+420,Pandaemonium,tt0210217,UK,2001,,Julien Temple,2,Samuel Taylor Coleridge,Author (poet),Unknown,,FALSE,Male,Linus Roache
+421,Papillon,tt0070511,US,1973,53300000,Franklin J. Schaffner,1,"Henri ""Papillon"" CharriÃ¨re",Criminal,Known,White,FALSE,Male,Steve McQueen
+422,Party Monster,tt0320244,US,2003,297000,"Fenton Bailey, Randy Barbato",1,Michael Alig,Criminal,Unknown,,FALSE,Male,Macaulay Culkin
+423,Patch Adams,tt0129290,US,1998,135000000,Tom Shadyac,1,"Hunter Doherty ""Patch"" Adams",Medicine,Unknown,,FALSE,Male,Robin Williams
+424,Patton,tt0066206,US,1970,,Franklin J. Schaffner,1,George Patton,Military,Known,White,FALSE,Male,George Scott
+425,Patty Hearst,tt0095836,US/UK,1988,1220000,Paul Schrader,1,Patty Hearst,Other,Known,White,FALSE,Female,Natasha Richardson
+426,Permanent Midnight,tt0120788,US,1998,1170000,David Veloz,1,Jerry Stahl,Comedian,Known,White,FALSE,Male,Ben Stiller
+427,Persepolis,tt0808417,US,2007,4440000,"Vincent Paronnaud, Marjane Satrapi",1,Marjane 'Marji' Satrapi,Activist,Known,Middle Eastern,TRUE,Female,Chiara Mastroianni
+428,Phantom Punch,tt1131747,US,2008,,Robert Townsend,1,Sonny Liston,Athlete,Known,African American,TRUE,Male,Ving Rhames
+429,Philomena,tt2431286,US/UK,2013,37700000,Stephen Frears,1,Philomena Lee,Other,Known,White,FALSE,Female,Judi Dench
+430,Pierrepoint: The Last Hangman,tt0462477,US/UK,2005,21800,Adrian Shergold,1,Albert Pierrepoint,Other,Known,White,FALSE,Male,Timothy Spall
+431,PiÃ±ero,tt0261066,US,2001,1420000,Leon Ichaso,1,Miguel PiÃ±ero,Actor,Known,Hispanic (Latin American),TRUE,Male,Benjamin Bratt
+432,Pollock,tt0183659,US,2000,8600000,Ed Harris,1,Jackson Pollock,Artist,Known,White,FALSE,Male,Ed Harris
+433,Prefontaine,tt0119937,US,1997,532000,Steve James,1,Steve Prefontaine,Athlete,Known,White,FALSE,Male,Jared Leto
+434,Prick Up Your Ears,tt0093776,UK,1987,1650000,Stephen Frears,2,Joe Orton,Author,Unknown,,FALSE,Male,Gary Oldman
+435,Prick Up Your Ears,tt0093776,UK,1987,1650000,Stephen Frears,2,Kenneth Halliwell,Other,Unknown,,FALSE,Male,Alfred Molina
+436,Pride of the Marines,tt0038000,US,1945,,Delmer Daves,1,Al Schmid,Military,Known,White,FALSE,Male,John Garfield
+437,Private Parts,tt0119951,US,1997,41200000,Betty Thomas,1,Howard Stern,Media,Known,White,FALSE,Male,Howard Stern
+438,PT 109,tt0057393,US,1963,,Leslie H. Martinson,1,John F. Kennedy,Military,Known,White,FALSE,Male,Cliff Robertson
+439,Public Enemies,tt1152836,US,2009,97000000,Michael Mann,1,John Dillinger,Criminal,Unknown,,FALSE,Male,Johnny Depp
+440,Queen Christina,tt0024481,US,1933,,Rouben Mamoulian,1,"Christina, queen of Sweden",Historical,Known,White,FALSE,Female,Greta Garbo
+441,Quills,tt0180073,US/UK,2000,7060000,Philip Kaufman,1,Marquis de Sade,Criminal,Known,White,FALSE,Male,Geoffrey Rush
+442,Quo Vadis,tt0043949,US,1951,,Mervyn LeRoy,2,Lygia,Historical,Known,White,FALSE,Female,Deborah Kerr
+443,Quo Vadis,tt0043949,US,1951,,Mervyn LeRoy,2,Marcus Vinicius,Historical,Known,White,FALSE,Male,Robert Taylor
+444,Radio,tt0316465,US,2003,52300000,Michael Tollin,2,"James Robert ""Radio"" Kennedy",Athlete,Known,African American,TRUE,Male,Cuba Gooding Jr
+445,Radio,tt0316465,US,2003,52300000,Michael Tollin,2,Harold Jones,Athlete,Unknown,,FALSE,Male,Ed Harris
+446,Ragamuffin,tt2412568,US,2014,,David Schultz,1,Rich Mullins,Singer,Known,White,FALSE,Male,David Schultz
+447,Raging Bull,tt0081398,US,1980,45200,Martin Scorsese,1,Jake LaMotta,Athlete,Known,White,FALSE,Male,Robert De Niro
+448,Rasputin: The Mad Monk,tt0059635,UK,1966,,Don Sharp,1,Grigori Rasputin,Other,Known,White,FALSE,Male,Christopher Lee
+449,Ray,tt0350258,US,2004,75300000,Taylor Hackford,1,Ray Charles,Musician,Known,African American,TRUE,Male,Jamie Foxx
+450,Reach for the Sky,tt0049665,UK,1956,,Lewis Gilbert,1,Douglas Bader,Military,Unknown,,FALSE,Male,Kenneth More
+451,Reds,tt0082979,US,1981,,Warren Beatty,1,John Reed,Media,Known,White,FALSE,Male,Warren Beaty
+452,Regeneration,tt0005960,US,1915,,Raoul Walsh,1,Owen Kildare,Other,Known,White,FALSE,Male,Rockliffe Fellowes
+453,Rembrandt,tt0028167,UK,1936,,Alexander Korda,1,Rembrandt,Artist,Known,White,FALSE,Male,Charles Laughton
+454,Remember the Titans,tt0210945,US,2000,116000000,Boaz Yakin,1,Herman Boone,Athlete,Known,African American,TRUE,Male,Denzel Washington
+455,Rescue Dawn,tt0462504,US,2006,5480000,Werner Herzog,1,Dieter Dengler,Military,Known,White,FALSE,Male,Christian Bale
+456,Restoration,tt0114272,US/UK,1995,4099999.9999999995,Michael Hoffman,1,Charles II,Historical,Known,White,FALSE,Male,Sam Neill
+457,Reversal of Fortune,tt0100486,US/UK,1990,15400000,Barbet Schroeder,2,Claus von BÃ_low,Other,Known,White,FALSE,Male,Jeremy Irons
+458,Reversal of Fortune,tt0100486,US/UK,1990,15400000,Barbet Schroeder,2,Sunny von BÃ_low,Other,Known,White,FALSE,Female,Glenn Close
+459,Rhapsody in Blue,tt0038026,US,1945,,Irving Rapper,1,George Gershwin,Musician,Known,White,FALSE,Male,Robert Alda
+460,Richard III,tt0049674,UK,1955,,Laurence Olivier,1,Richard III of England,Historical,Known,White,FALSE,Male,Laurence Olivier
+461,Ricky 6,tt0156020,US,2000,,Peter Filardi,1,"Richard ""Ricky"" Kasso",Criminal,Unknown,,FALSE,Male,Vincent Kartheiser
+462,Riding in Cars with Boys,tt0200027,US,2001,29800000,Penny Marshall,1,Beverly Donofrio,Other,Unknown,,FALSE,Female,Drew Barrymore
+463,Rise of the Footsoldier,tt0901507,UK,2007,,Julian Gilbey,1,Carlton Leach,Criminal,Unknown,,FALSE,Male,Ricci Harnett
+464,Rob Roy,tt0114287,US/UK,1995,31600000,Michael Caton-Jones,1,Robert Roy MacGregor,Other,Known,White,FALSE,Male,Liam Neeson
+465,Romero,tt0098219,US,1989,1320000,John Duigan,1,Oscar Romero,Other,Known,Hispanic (Latin American),FALSE,Male,Raul Julia
+466,Rosewater,tt2752688,US,2014,3090000,Jon Stewart,1,Maziar Bahari,Media,Known,Middle Eastern,TRUE,Male,Gael GarcÃ_a Bernal
+467,Rudy,tt0108002,US,1993,22800000,David Anspaugh,1,Rudy Ruettiger,Athlete,Unknown,,FALSE,Male,Sean Astin
+468,Rush,tt1979320,US/UK,2013,26900000,Ron Howard,2,James Hunt,Athlete,Known,White,FALSE,Male,Chris Hemsworth
+469,Rush,tt1979320,US/UK,2013,26900000,Ron Howard,2,Niki Lauda,Athlete,Known,White,FALSE,Male,Daniel BrÃ_hl
+470,Saint Joan,tt0050928,US,1957,,Otto Preminger,1,Joan of Arc,Historical,Known,White,FALSE,Female,Jean Seberg
+471,Salome's Last Dance,tt0096029,US/UK,1988,331000,Ken Russell,1,Oscar Wilde,Author,Known,White,FALSE,Male,Nickolas Grace
+472,Santa Fe Trail,tt0033021,US,1940,,Michael Curtiz,1,John Brown,Other,Known,White,FALSE,Male,Raymond Massey
+473,Savage Messiah,tt0069225,UK,1972,,Ken Russell,1,Henri Gaudier-Brzeska,Artist,Unknown,,FALSE,Male,Scott Antony
+474,Saving Mr. Banks,tt2140373,US/UK,2013,83300000,John Lee Hancock,2,Walt Disney,Other,Known,White,FALSE,Male,Tom Hanks
+475,Saving Mr. Banks,tt2140373,US/UK,2013,83300000,John Lee Hancock,2,P.L. Travers,Author,Known,White,FALSE,Female,Emma Thompson
+476,Schindler's List,tt0108052,US,1993,96100000,Steven Spielberg,1,Oskar Schindler,Other,Known,White,FALSE,Male,Liam Neeson
+477,Scott of the Antarctic,tt0040761,UK,1948,,Charles Frend,1,Robert Falcon Scott,Other,Known,White,FALSE,Male,John Mills
+478,Searching for Bobby Fischer,tt0108065,US,1993,7270000,Steven Zaillian,1,Josh Waitzkin,Other,Unknown,,FALSE,Male,Max Pomeranc
+479,Selena,tt0120094,US,1997,35400000,Gregory Nava,1,Selena Quintanilla-Perez,Singer,Known,Hispanic (Latina),TRUE,Female,Jennifer Lopez
+480,Self Medicated,tt0341569,US,2005,98800,Monty Lapica,1,Monty Lapica,Other,Unknown,,FALSE,Male,Monty Lapica
+481,Selma,tt1020072,US/UK,2014,52100000,Ava DuVernay,1,"Martin Luther King, Jr",Activist,Known,African American,TRUE,Male,David Oyelowo
+482,Sergeant York,tt0034167,US,1941,16399999.999999998,Howard Hawks,1,Alvin C. York,Military,Known,White,FALSE,Male,Gary Cooper
+483,Serpico,tt0070666,US,1973,,Sidney Lumet,1,Frank Serpico,Other,Known,White,FALSE,Male,Al Pacino
+484,Set Fire to the Stars,tt3455740,UK,2014,3270,Andy Goddard,1,Dylan Thomas,Author (poet),Known,White,FALSE,Male,Celyn Jones
+485,Seven Years in Tibet,tt0120102,US/UK,1997,37900000,Jean-Jacques Annaud,1,Heinrich Harrer,Other,Known,White,FALSE,Male,Brad Pitt
+486,Sex & Drugs & Rock & Roll,tt1393020,UK,2010,,Mat Whitecross,1,Ian Dury,Musician,Unknown,,FALSE,Male,Andy Serkis
+487,Shadowlands,tt0108101,UK,1993,25800000,Richard Attenborough,2,C.S. Lewis,Author,Known,White,FALSE,Male,Anthony Hopkins
+488,Shadowlands,tt0108101,UK,1993,25800000,Richard Attenborough,2,Joy Gresham,Author (poet),Known,White,FALSE,Female,Debra Winger
+489,Sid and Nancy,tt0091954,UK,1986,2830000,Alex Cox,2,Sid Vicious,Singer,Unknown,,FALSE,Male,Gary Oldman
+490,Sid and Nancy,tt0091954,UK,1986,2830000,Alex Cox,2,Nancy Spungen,Other,Unknown,,FALSE,Female,Chloe Webb
+491,Silkwood,tt0086312,US,1983,35600000,Mike Nichols,1,Karen Silkwood,Activist,Unknown,,FALSE,Female,Meryl Streep
+492,Sister Kenny,tt0038948,US,1946,,Dudley Nichols,1,Elizabeth Kenny,Medicine,Known,White,FALSE,Female,Rosalind Russell
+493,Sixty Six,tt0493450,UK,2006,225000,Paul Weiland,1,Paul Weiland,Other,Unknown,,FALSE,Male,Gregg Sulkin
+494,Skin,tt0964586,UK,2008,,Anthony Fabian,1,Sandra Laing,Other,Known,African,TRUE,Female,Sophie Okonedo
+495,Somebody Up There Likes Me,tt0049778,US,1956,,Robert Wise,1,Rocky Graziano,Athlete,Known,White,FALSE,Male,Paul Newman
+496,Son of God,tt3210686,US,2014,59700000,Christopher Spencer,1,Jesus,Historical,Known,Middle Eastern (White),FALSE,Male,Diogo Morgado
+497,Soul Surfer,tt1596346,US,2011,43900000,Sean McNamara,1,Bethany Hamilton,Athlete,Unknown,,FALSE,Female,AnnaSophia Robb
+498,Spartacus,tt0054331,US,1960,,Stanley Kubrick,1,Spartacus,Historical,Unknown,,FALSE,Male,Kirk Douglas
+499,Spitfire,tt0034734,UK,1942,,Leslie Howard,1,R. J. Mitchell,Military,Known,White,FALSE,Male,Leslie Howard
+500,Squanto: A Warrior's Tale,tt0111271,US,1994,3340000,Xavier Koller,1,Squanto,Historical,Known,Native American,TRUE,Male,Adam Beach
+501,Stander,tt0326208,Canada/UK,2003,19100,Bronwen Hughes,1,Andre Stander,Other,Known,White,FALSE,Male,Thomas Jane
+502,Star 80,tt0086355,US,1983,6500000,Bob Fosse,1,Dorothy Stratten,Actress,Known,White,FALSE,Female,Mariel Hemingway
+503,Star!,tt0063642,US,1968,4000000,Robert Wise,1,Gertrude Lawrence,Actress,Known,White,FALSE,Female,Julie Andrews
+504,Stars and Stripes Forever,tt0045187,US,1952,,Henry Koster,1,John Philip Sousa,Musician,Known,White,FALSE,Male,Clifton Webb
+505,Steal This Movie,tt0161216,US,2000,76100,Robert Greenwald,1,Abbie Hoffman,Activist,Known,White,FALSE,Male,Vincent D'Onofrio
+506,Stealing Sinatra,tt0311863,US,2003,,Ron Underwood,2,Barry Keenan,Criminal,Unknown,,FALSE,Male,David Arquette
+507,Stealing Sinatra,tt0311863,US,2003,,Ron Underwood,2,"Frank Sinatra, Jr.",Other,Known,White,FALSE,Male,Thomas Ian Nicholas
+508,Stoned,tt0426627,UK,2005,,Stephen Woolley,1,Brian Jones,Musician,Known,White,FALSE,Male,Leo Gregory
+509,Story of G.I. Joe,tt0038120,US,1945,,William A. Wellman,1,Ernie Pyle,Media,Unknown,,FALSE,Male,Burgess Meredith
+510,Strauss' Great Waltz,tt0024747,UK,1934,,Alfred Hitchcock,2,Johann Strauss I,Musician,Known,White,FALSE,Male,Edmund Gwenn
+511,Strauss' Great Waltz,tt0024747,UK,1934,,Alfred Hitchcock,2,Johann Strauss II,Musician,Known,White,FALSE,Male,Esmond Knight
+512,Sunrise at Campobello,tt0054354,US,1960,,Vincent J. Donehue,1,Franklin Roosevelt,World leader,Known,White,FALSE,Male,Ralph Bellamy
+513,Surviving Picasso,tt0117791,US,1996,1990000,James Ivory,1,Francoise Gilot,Artist,Known,White,FALSE,Female,Natascha McElhone
+514,Sweet Dreams,tt0090110,US,1985,,Karel Reisz,1,Patsy Cline,Singer,Known,White,FALSE,Female,Jessica Lange
+515,Swimming Upstream,tt0326664,US,2003,47200,Russell Mulcahy,1,Tony Fingleton,Athlete,Unknown,,FALSE,Male,Geoffrey Rush
+516,Swoon,tt0105508,US,1992,340000,Tom Kalin,2,Nathan Leopold Jr.,Criminal,Known,White,FALSE,Male,Craig Chester
+517,Swoon,tt0105508,US,1992,340000,Tom Kalin,2,Richard Loeb,Criminal,Known,White,FALSE,Male,Daniel Schlachet
+518,Sylvia,tt0325055,UK,2003,1300000,Christine Jeffs,2,Sylvia Plath,Author (poet),Known,White,FALSE,Female,Gwyneth Paltrow
+519,Sylvia,tt0325055,UK,2003,1300000,Christine Jeffs,2,Ted Hughes,Author (poet),Known,White,FALSE,Male,Daniel Craig
+520,Talk to Me,tt0796368,US,2007,4470000,Kasi Lemmons,1,"Ralph ""Petey"" Greene",Activist,Known,African American,TRUE,Male,Don Cheadle
+521,Ted Bundy,tt0284929,US,2002,,Matthew Bright,1,Ted Bundy,Criminal,Known,White,FALSE,Male,Michael Reilly Burke
+522,Telstar: The Joe Meek Story,tt1068669,UK,2008,,Nick Moran,1,Joe Meek,Musician,Known,White,FALSE,Male,Con O'Neill
+523,Testament of Youth,tt1441953,UK,2014,671000,James Kent,1,Vera Brittain,Other,Unknown,,FALSE,Female,Alicia Vikander
+524,The 5th Quarter,tt1130964,US,2010,400000,Rick Bieber,1,Jon Abbate,Athlete,Unknown,,FALSE,Male,Ryan Merriman
+525,The Actress,tt0045471,US,1953,,George Cukor,1,Ruth Gordon Jones,Actress,Unknown,,FALSE,Female,Jean Simmons
+526,The Adventures of Marco Polo,tt0029842,US,1938,,Archie Mayo,1,Marco Polo,Historical,Known,White,FALSE,Male,Gary Cooper
+527,The Adventures of Mark Twain,tt0036582,US,1944,,Irving Rapper,1,Samuel Clemens,Author,Known,White,FALSE,Male,Frederic March
+528,The Assassination of Jesse James by the Coward Robert Ford,tt0443680,US/UK/Canada,2007,3900000,Andrew Dominik,2,Jesse James,Criminal,Known,White,FALSE,Male,Brad Pitt
+529,The Assassination of Jesse James by the Coward Robert Ford,tt0443680,US/UK/Canada,2007,3900000,Andrew Dominik,2,Robert Ford,Criminal,Unknown,,FALSE,Male,Casey Affleck
+530,The Assassination of Richard Nixon,tt0364961,US,2004,698000,Niels Mueller,1,Samuel Byck,Other,Unknown,,FALSE,Male,Sean Penn
+531,The Assassination of Trotsky,tt0068226,UK,1972,,Joseph Losey,1,Leon Trotsky,Activist,Known,White,FALSE,Male,Richard Burton
+532,The Aviator,tt0338751,US,2004,103000000,Martin Scorsese,1,Howard Hughes,Other,Unknown,,FALSE,Male,Leonardo DiCaprio
+533,The Babe,tt0103747,US,1992,17500000,Arthur Hiller,1,Babe Ruth,Athlete,Known,White,FALSE,Male,John Goodman
+534,The Babe Ruth Story,tt0040142,US,1948,,Roy Del Ruth,1,Babe Ruth,Athlete,Known,White,FALSE,Male,William Bendix
+535,The Bang Bang Club,tt1173687,Canada,2010,,Steven Silver,4,Greg Marinovich,Media,Unknown,,FALSE,Male,
+536,The Bang Bang Club,tt1173687,Canada,2010,,Steven Silver,4,JoÃ£o Silva,Media,Known,White,FALSE,Male,
+537,The Bang Bang Club,tt1173687,Canada,2010,,Steven Silver,4,Ken Oosterbroek,Media,Unknown,,FALSE,Male,
+538,The Bang Bang Club,tt1173687,Canada,2010,,Steven Silver,4,Kevin Carter,Media,Known,White,FALSE,Male,Taylor Kitsch
+539,The Barretts of Wimpole Street,tt0024865,US,1934,,Sidney Franklin,2,Elizabeth Barrett,Author (poet),Known,Multi racial,FALSE,Female,Norma Shearer
+540,The Barretts of Wimpole Street,tt0024865,US,1934,,Sidney Franklin,2,Robert Browning,Author (poet),Known,Multi racial,FALSE,Male,Fredric March
+541,The Basketball Diaries,tt0112461,US,1995,2420000,Scott Kalvert,1,Jim Carroll,Author,Known,White,FALSE,Male,Leonardo DiCaprio
+542,The Benny Goodman Story,tt0047873,US,1956,,Valentine Davies,1,Benny Goodman,Musician,Known,White,FALSE,Male,Steve Allen
+543,The Best Intentions,tt0104350,UK,1992,1300000,Bille August,2,Erik Bergman,Other,Unknown,,FALSE,Male,"With: Samuel FrÃƒÂ¶ler, Pernilla August, Max von Sydow"
+544,The Best Intentions,tt0104350,UK,1992,1300000,Bille August,2,Karin Ã…kerblom,Other,Unknown,,FALSE,Female,
+545,The Better Angels,tt2316868,US,2014,,A.J. Edwards,1,Abraham Lincoln,World leader,Known,White,FALSE,Male,Jason Clarke
+546,The Blind Side,tt0878804,US,2009,256000000,John Lee Hancock,1,Michael Oher,Athlete,Known,African American,TRUE,Male,Quinton Aaron
+547,The Boy in Blue,tt0090769,Canada,1986,275000,Charles Jarrott,1,Ned Hanlan,Athlete,Known,White,FALSE,Male,Nicolas Cage
+548,The Brittany Murphy Story,tt3957278,US,2014,,Joe Menendez,1,Brittany Murphy,Actress,Known,White,FALSE,Female,Amanda Fuller
+549,The Broken Tower,tt1756791,US,2011,,James Franco,1,Harold Hart Crane,Author (poet),Unknown,,FALSE,Male,James Franco
+550,The Buddy Holly Story,tt0077280,US,1978,,Steve Rash,1,Buddy Holly,Singer,Known,Multi racial,FALSE,Male,Gary Busey
+551,The Chameleon,tt1359553,US,2010,,Jean-Paul SalomÃ©,1,FrÃ©dÃ©ric Fortin,Criminal,Known,Multi racial,TRUE,Male,Marc-AndrÃ© Grondin
+552,The Color of Freedom,tt0438859,UK,2007,,Bille August,1,James Gregory,Other,Known,White,FALSE,Male,Joseph Fiennes
+553,The Color of Time,tt2133333,US,2012,,"Edna Luise Biesold, Sarah-Violet Bliss",1,CK Williams,Author,Unknown,,FALSE,Male,James Franco
+554,The Conqueror,tt0049092,US,1956,4500000,Dick Powell,1,Temujin (Genghis Khan),Military,Known,Asian,TRUE,Male,John Wayne
+555,The Countess,tt0496634,US,2009,,Julie Delpy,1,ErzsÃ©bet BÃ¡thory,Historical,Known,White,FALSE,Female,Julie Delpy
+556,The Court-Martial of Billy Mitchell,tt0047956,US,1955,,Otto Preminger,1,Billy Mitchell,Military,Known,White,FALSE,Male,Gary Cooper
+557,The Cross and the Switchblade,tt0068428,US,1970,,Don Murray,1,David Wilkerson,Other,Unknown,,FALSE,Male,Pat Boone
+558,The Damned United,tt1226271,UK,2009,450000,Tom Hooper,1,Brian Clough,Athlete,Unknown,,FALSE,Male,Michael Sheen
+559,The Desert Fox: The Story of Rommel,tt0043461,US,1951,,Henry Hathaway,1,Erwin Rommel,Military,Known,White,FALSE,Male,James Mason
+560,The Diary of Anne Frank,tt0052738,US,1959,,George Stevens,1,Anne Frank,Other,Known,White,FALSE,Female,Millie Perkins
+561,The Diving Bell and the Butterfly,tt0401383,US,2007,5990000,Julian Schnabel,1,Jean-Dominique Bauby,Media,Known,White,FALSE,Male,Mathieu Amalric
+562,The Doors,tt0101761,US,1991,35200000,Oliver Stone,1,Jim Morrison,Singer,Known,White,FALSE,Male,Vil Kilmer
+563,The Duchess,tt0864761,US/UK,2008,13800000,Saul Dibb,1,Georgiana Cavendish,Other,Known,White,FALSE,Female,Keira Knightley
+564,The Eddy Duchin Story,tt0049170,US,1956,,George Sidney,1,Eddy Duchin,Musician,Unknown,,FALSE,Male,Tyrone Power
+565,The Edge of Love,tt0819714,UK,2008,28600,John Maybury,1,Dylan Thomas,Author (poet),Known,White,FALSE,Male,Matthew Rhys
+566,The Elephant Man,tt0080678,US,1980,,David Lynch,1,Joseph Merrick,Other,Known,White,FALSE,Male,John Hurt
+567,The Entity,tt0082334,US,1982,,Sidney J. Furie,1,Doris Bither,Other,Unknown,,FALSE,Female,Barbara Hershey
+568,The Express,tt0469903,US,2008,9590000,Gary Fleder,1,Ernie Davis,Athlete,Known,African American,TRUE,Male,Rob Brown
+569,The Falcon and the Snowman,tt0087231,US/UK,1985,17100000,John Schlesinger,1,Christopher Boyce,Criminal,Unknown,,FALSE,Male,Timothy Hutton
+570,The Fifth Estate,tt1837703,US,2013,3250000,Bill Condon,1,Julian Assange,Other,Known,White,FALSE,Male,Benedict Cumberbatch
+571,The Fighter,tt0964517,US,2010,93600000,David O. Russell,1,Micky Ward,Athlete,Known,White,FALSE,Male,Mark Wahlberg
+572,The First Grader,tt0790663,US,2010,331000,Justin Chadwick,1,Kimani Ngâ€™angâ€™a Maruge,Other,Known,African,TRUE,Male,Oliver Litondo
+573,The Five Pennies,tt0052809,US,1959,,Melville Shavelson,1,"Loring ""Red"" Nichols",Musician,Unknown,,FALSE,Male,Danny Kaye
+574,The Frozen Ground,tt2005374,US,2013,,Scott Walker,2,Jack Halcombe,Other,Unknown,,FALSE,Male,Nicolas Cage
+575,The Frozen Ground,tt2005374,US,2013,,Scott Walker,2,Robert Hansen,Criminal,Known,White,FALSE,Male,John Cusack
+576,The Gallant Hours,tt0053849,US,1960,,Robert Montgomery,1,"William F. ""Bull"" Halsey, Jr.",Military,Known,White,FALSE,Male,James Cagney
+577,The Gaul,tt0199481,Canada,2001,,Jacques Dorfmann,1,Vercingetorix,Historical,Known,White,FALSE,Male,Christopher Lambert
+578,The General,tt0120706,UK,1998,1210000,John Boorman,1,Martin Cahill,Criminal,Known,White,FALSE,Male,Brendan Gleeson
+579,The Girl in the Red Velvet Swing,tt0048119,US,1955,,Richard Fleischer,1,Evelyn Nesbit (Thaw),Actress,Known,White,FALSE,Female,Joan Collins
+580,The Glenn Miller Story,tt0047030,US,1954,,Anthony Mann,1,Glenn Miller,Musician,Known,White,FALSE,Male,James Stewart
+581,The Great Caruso,tt0043599,US,1951,,Richard Thorpe,1,Enrico Caruso,Musician,Known,White,FALSE,Male,Mario Lanza
+582,The Great Debaters,tt0427309,US,2007,30200000,Denzel Washington,1,Melvin Tolson,Academic,Known,African American,TRUE,Male,Denzel Washington
+583,The Great Moment,tt0036880,US,1944,,Preston Sturges,1,W.T. Morton,Medicine,Unknown,,FALSE,Male,Joel McCrea
+584,The Great Waltz,tt0030202,US,1938,,Julien Duvivier,1,Johann Strauss II,Musician,Known,White,FALSE,Male,Fernand Gravey
+585,The Great Ziegfeld,tt0027698,US,1936,,Robert Z. Leonard,1,Florenz Ziegfeld,Musician,Known,White,FALSE,Male,William Powell
+586,The Greatest,tt0076111,US/UK,1977,,Tom Gries,1,Muhammad Ali,Athlete,Known,African American,TRUE,Male,Muhammad Ali
+587,The Greatest Story Ever Told,tt0059245,US,1965,8000000,George Stevens,1,Jesus,Historical,Known,Middle Eastern (White),FALSE,Male,Max von Sydow
+588,The Grey Fox,tt0085622,Canada,1982,,Phillip Borsos,1,Bill Miner,Other,Unknown,,FALSE,Male,Richard Farnsworth
+589,The Hammer,tt1094666,US,2010,,Oren Kaplan,1,Matt Hamill,Athlete,Unknown,,FALSE,Male,Russell Harvard
+590,The Happy Hooker,tt0073091,US,1975,,Nicholas Sgarro,1,Xaviera Hollander,Other,Known,White,FALSE,Female,Lynn Redgrave
+591,The House of Rothschild,tt0025272,US,1934,,Alfred L. Werker,1,Mayer Rothschild,Other,Known,White,FALSE,Male,George Arliss
+592,The Hunter,tt0080907,US,1980,,Buzz Kulik,1,"Ralph ""Papa"" Thorson",Other,Unknown,,FALSE,Male,Steve McQueen
+593,The Hurricane,tt0174856,US,1999,50700000,Norman Jewison,1,"Rubin ""Hurricane"" Carter",Athlete,Known,African American,TRUE,Male,Denzel Washington
+594,The Iceman,tt1491044,US,2012,1940000,Ariel Vromen,1,Richard Kuklinski,Criminal,Known,White,FALSE,Male,Michael Shannon
+595,The Idolmaker,tt0080913,US,1980,,Taylor Hackford,1,Bob Marcucci,Other,Unknown,,FALSE,Male,Ray Sharkey
+596,The Imitation Game,tt2084970,US/UK,2014,91100000,Morten Tyldum,1,Alan Turing,Academic,Known,White,FALSE,Male,Benedict Cumberbatch
+597,The Inn of the Sixth Happiness,tt0051776,US,1958,,Mark Robson,1,Gladys Aylward,Other,Known,White,FALSE,Female,Ingrid Bergman
+598,The Insider,tt0140352,US,1999,29000000,Michael Mann,1,Jeffrey Wigand,Activist,Unknown,,FALSE,Male,Russell Crowe
+599,The Invisible Woman,tt1700845,UK,2013,1230000,Ralph Fiennes,1,Charles Dickens,Author,Known,White,FALSE,Male,Ralph Fiennes
+600,The Iron Lady,tt1007029,UK,2011,30000000,Phyllida Lloyd,1,Margaret Thatcher,World leader,Known,White,FALSE,Female,Meryl Streep
+601,The Jackie Robinson Story,tt0042609,US,1950,,Alfred E. Green,1,Jackie Robinson,Athlete,Known,African American,TRUE,Male,Jackie Robinson
+602,The Jesus Film,tt0079368,US,1979,,"John Krish, Peter Sykes",1,Jesus,Historical,Known,Middle Eastern (White),FALSE,Male,Brian Deacon
+603,The Jolson Story,tt0038661,US,1946,,Alfred E. Green,1,Al Jolson,Musician,Known,White,FALSE,Male,Larry Parks
+604,The King and I,tt0049408,US,1956,,Walter Lang,1,Anna Leonowens,Other,Known,Multi racial,FALSE,Female,Deborah Kerr
+605,The King of Kings,tt0018054,US,1927,,Cecil B. DeMille,1,Jesus,Historical,Known,Middle Eastern (White),FALSE,Male,H.B. Warner
+606,The King's Speech,tt1504320,US/UK,2010,139000000,Tom Hooper,1,King George VI,Historical,Known,White,FALSE,Male,Colin Firth
+607,The Krays,tt0099951,UK,1990,2060000,Peter Medak,2,Reginald Kray,Criminal,Known,Multi racial,FALSE,Male,
+608,The Krays,tt0099951,UK,1990,2060000,Peter Medak,2,Ronald Kray,Criminal,Known,Multi racial,FALSE,Male,"With: Gary Kemp, Martin Kemp, Billie Whitelaw"
+609,The Lady,tt1802197,UK,2011,,Luc Besson,1,Aung San Suu Kyi,Activist,Known,Asian,TRUE,Female,Michelle Yeoh
+610,The Last Emperor,tt0093389,UK,1987,109000,Bernardo Bertolucci,1,Henry Pu Yi,World leader,Known,Asian,TRUE,Male,John Lone
+611,The Last King of Scotland,tt0455590,UK,2006,17600000,Kevin Macdonald,1,Idi Amin,Other,Known,African,TRUE,Male,Forest Whitaker
+612,The Last of Robin Hood,tt2450440,US,2013,270000,"Richard Glatzer, Wash Westmoreland",1,Errol Flynn,Actor,Known,White,FALSE,Male,Kevin Kline
+613,The Last Ride,tt1605803,US,2012,,Harry Thomason,1,Hank Williams,Musician,Unknown,,FALSE,Male,Henry Thomas
+614,The Last Station,tt0824758,UK,2009,6620000,Michael Hoffman,1,Leo Tolstoy,Author,Known,White,FALSE,Male,Christopher Plummer
+615,The Last Time I Committed Suicide,tt0119502,US,1997,12800,Stephen Kay,1,Neal Cassady,Author,Unknown,,FALSE,Male,Thomas Jane
+616,The Lawless Breed,tt0045992,US,1953,,Raoul Walsh,1,John Wesley Hardin,Criminal,Unknown,,FALSE,Male,Rock Hudson
+617,The Left Handed Gun,tt0051849,US,1958,,Arthur Penn,1,Henry McCarty (Billy the Kid),Criminal,Known,White,FALSE,Male,Paul Newman
+618,The Life and Death of Peter Sellers,tt0352520,US,2004,,Stephen Hopkins,1,Peter Sellers,Actor,Known,White,FALSE,Male,Geoffrey Rush
+619,The Life of Emile Zola,tt0029146,US,1937,,William Dieterle,1,Emile Zola,Author,Known,White,FALSE,Male,Paul Muni
+620,The Long Day Closes,tt0104753,UK,1992,22800,Terence Davies,1,Terence Davies,Other,Known,White,FALSE,Male,Leigh McCormack
+621,The Long Gray Line,tt0048312,US,1955,,John Ford,1,Marty Maher,Military,Known,White,FALSE,Male,Tyrone Power
+622,The Longshots,tt1091751,US,2008,11500000,Fred Durst,1,Jasmine Plummer,Athlete,Known,African American,TRUE,Female,Keke Palmer
+623,The Look of Love,tt1951216,US/UK,2013,10400,Michael Winterbottom,1,Paul Raymond,Other,Unknown,,FALSE,Male,Steve Coogan
+624,The Lover,tt0101316,UK,1992,4900000,Jean-Jacques Annaud,1,Marguerite Duras,Other,Known,White,FALSE,Female,Jane March
+625,The Madness of King George,tt0110428,UK,1994,15200000,Nicholas Hytner,1,George III of UK,Historical,Known,White,FALSE,Male,Nigel Hawthorne
+626,The Magic Box,tt0043769,UK,1951,,John Boulting,1,William Friese-Greene,Other,Unknown,,FALSE,Male,Robert Donat
+627,The Man Who Saw Tomorrow,tt0081109,US,1981,,Robert Guenette,1,Michel de Nostredame,Academic,Known,White,FALSE,Male,Richard Butler
+628,The Message,tt0074896,UK,1977,,Moustapha Akkad,1,Muhammad,Historical,Known,Middle Eastern,TRUE,Male,Anthony Quinn
+629,The Miracle Maker,tt0208298,UK,2000,,"Derek W. Hayes, Stanislav Sokolov",1,Jesus,Historical,Known,Middle Eastern (White),FALSE,Male,Ralph Fiennes
+630,The Miracle Worker,tt0056241,US,1962,,Arthur Penn,2,Helen Keller,Other,Known,White,FALSE,Female,Patty Duke
+631,The Miracle Worker,tt0056241,US,1962,,Arthur Penn,2,Annie Sullivan,Other,Known,White,FALSE,Female,Anne Bancroft
+632,The Motorcycle Diaries,tt0318462,US/UK,2004,16800000,Walter Salles,1,Che Guevara,Activist,Known,Hispanic (Latin American),FALSE,Male,Gael GarcÃ_a Bernal
+633,The Music Lovers,tt0066109,UK,1970,,Ken Russell,1,Peter Ilych Tchaikovsky,Musician,Known,White,FALSE,Male,Richard Chamberlain
+634,The New World,tt0402399,US/UK,2005,12700000,Terrence Malick,1,Pocahontas,Historical,Known,Native American,TRUE,Female,Q'orianka Kilcher
+635,The Night We Called It a Day,tt0320159,US,2003,,Paul Goldman,1,Frank Sinatra,Singer,Known,White,FALSE,Male,Dennis Hopper
+636,The Notorious Bettie Page,tt0404802,US,2005,1410000,Mary Harron,1,Bettie Page,Other,Known,Multi racial,FALSE,Female,Gretchen Mol
+637,The Other Boleyn Girl,tt0467200,US/UK,2008,26800000,Justin Chadwick,2,Anne Boleyn,Historical,Known,White,FALSE,Female,Natalie Portman
+638,The Other Boleyn Girl,tt0467200,US/UK,2008,26800000,Justin Chadwick,2,Mary Boleyn,Historical,Known,White,FALSE,Female,Scarlett Johansson
+639,The Other Side of Heaven,tt0250371,US,2001,4720000,Mitch Davis,1,John Groberg,Other,Unknown,,FALSE,Male,Christopher Gorham
+640,The Other Side of the Mountain,tt0073496,US,1975,,Larry Peerce,1,Jill Kinmont,Athlete,Unknown,,FALSE,Female,Marilyn Hassett
+641,The People vs. Larry Flynt,tt0117318,US,1996,20200000,Milos Forman,1,Larry Flynt,Activist,Known,White,FALSE,Male,Woody Harrelson
+642,The Perils of Pauline,tt0039698,US,1947,,George Marshall,1,Pearl White,Actress,Unknown,,FALSE,Female,Betty Hutton
+643,The Pianist,tt0253474,UK,2002,32500000,Roman Polanski,1,WÅ‚adysÅ‚aw Szpilman,Musician,Known,White,FALSE,Male,Adrien Brody
+644,The Pistol: The Birth of a Legend,tt0102674,US,1991,,Frank C. SchrÃ¶der,1,Pete Maravich,Athlete,Known,White,FALSE,Male,Adam Guier
+645,The Plainsman,tt0028108,US,1936,,Cecil B. DeMille,1,Wild Bill Hickok,Historical,Known,White,FALSE,Male,"With: Gary Cooper, Jean Arthur, James Ellison"
+646,The Pride of the Yankees,tt0035211,US,1942,,Sam Wood,1,Lou Gehrig,Athlete,Known,White,FALSE,Male,Gary Cooper
+647,The Prince of Egypt,tt0120794,US,1998,101000000,"Brenda Chapman, Steve Hickner",2,Moses,Historical,Known,Middle Eastern (White),FALSE,Male,Val Kilmer
+648,The Prince of Egypt,tt0120794,US,1998,101000000,"Brenda Chapman, Steve Hickner",2,Ramses,Historical,Known,Middle Eastern (White),FALSE,Male,Ralph Fiennes
+649,The Prisoner of Shark Island,tt0028141,US,1936,,John Ford,1,Samuel Mudd,Medicine,Known,White,FALSE,Male,Warner Baxter
+650,The Private Life of Henry VIII.,tt0024473,UK,1933,,Alexander Korda,1,Henry VIII,Historical,Known,White,FALSE,Male,Charles Laughton
+651,The Private Lives of Elizabeth and Essex,tt0031826,US,1939,,Michael Curtiz,2,Elizabeth I of England,Historical,Known,White,FALSE,Female,Bette Davis
+652,The Private Lives of Elizabeth and Essex,tt0031826,US,1939,,Michael Curtiz,2,"Robert Devereux, 2nd Earl of Essex",Historical,Known,White,FALSE,Male,Errol Flynn
+653,"The Prize Winner of Defiance, Ohio",tt0406158,US,2005,626000,Jane Anderson,1,Evelyn Ryan,Other,Unknown,,FALSE,Female,Julianne Moore
+654,The Pursuit of Happyness,tt0454921,US,2006,163000000,Gabriele Muccino,1,Christopher Gardner,Other,Known,African American,TRUE,Male,Will Smith
+655,The Queen,tt0436697,US/UK,2006,56400000,Stephen Frears,1,Queen Elizabeth II,Historical,Known,White,FALSE,Female,Helen Mirren
+656,The Railway Man,tt2058107,UK,2013,4440000,Jonathan Teplitzky,1,Eric Lomax,Military,Unknown,,FALSE,Male,Colin Firth
+657,The Red Baron,tt0365675,UK,2008,36600,Nikolai MÃƒÂ_llerschÃƒÂ¶n,1,Baron Manfred von Richthofen,Military,Known,White,FALSE,Male,Matthias SchweighÃ¶fer
+658,The Rocket: The Legend of Rocket Richard,tt0460505,Canada,2005,,Charles BinamÃƒÂ©,1,"Maurice ""The Rocket"" Richard",Athlete,Known,White,FALSE,Male,Roy Dupuis
+659,The Runaways,tt1017451,US,2010,3570000,Floria Sigismondi,2,Joan Jett,Musician,Known,White,FALSE,Female,Kristen Stewart
+660,The Runaways,tt1017451,US,2010,3570000,Floria Sigismondi,2,Cherie Currie,Musician,Unknown,,FALSE,Female,Dakota Fanning
+661,The Sessions,tt1866249,US,2012,6000000,Ben Lewin,1,Mark O'Brien,Medicine,Unknown,,FALSE,Male,John Hawkes
+662,The Seven Little Foys,tt0048604,US,1955,,Melville Shavelson,1,"Eddie Foy, Sr.",Actor,Known,White,FALSE,Male,Bob Hope
+663,The Singing Nun,tt0060983,US,1966,,Henry Koster,1,Jeanne Deckers,Musician,Known,White,FALSE,Female,Debbie Reynolds
+664,The Social Network,tt1285016,US,2010,96900000,David Fincher,1,Mark Zuckerberg,Other,Unknown,,FALSE,Male,Jesse Eisenberg
+665,The Soloist,tt0821642,US/UK,2009,31700000,Joe Wright,2,Nathaniel Ayers,Musician,Known,African American,TRUE,Male,Jamie Foxx
+666,The Soloist,tt0821642,US/UK,2009,31700000,Joe Wright,2,Steve Lopez,Media,Unknown,,FALSE,Male,"Robert Downey, Jr."
+667,The Song of Bernadette,tt0036377,US,1943,,Henry King,1,Saint Bernadette Soubirous,Other,Known,White,FALSE,Female,Jennifer Jones
+668,The Soul Keeper,tt0349995,UK,2002,,Roberto Faenza,2,Carl Gustav Jung,Academic,Known,White,FALSE,Male,Iain Glen
+669,The Soul Keeper,tt0349995,UK,2002,,Roberto Faenza,2,Sabina Spielrein,Academic,Known,White,FALSE,Female,Emilia Fox
+670,The Sound of Music,tt0059742,US,1965,163000000,Robert Wise,1,Maria von Trapp,Singer,Known,White,FALSE,Female,Julie Andrews
+671,The Spirit of St. Louis,tt0051003,US,1957,,Billy Wilder,1,Charles 'Slim' Lindbergh,Other,Known,White,FALSE,Male,James Stewart
+672,The Story of Alexander Graham Bell,tt0031981,US,1939,,Irving Cummings,1,Alexander Graham Bell,Academic,Known,White,FALSE,Male,Don Ameche
+673,The Story of Louis Pasteur,tt0028313,US,1936,,William Dieterle,1,Louis Pasteur,Academic,Known,White,FALSE,Male,Paul Muni
+674,The Story of Vernon and Irene Castle,tt0031983,US,1939,1120000,H.C. Potter,2,Irene Castle,Artist,Unknown,,FALSE,Female,Ginger Rogers
+675,The Story of Vernon and Irene Castle,tt0031983,US,1939,1120000,H.C. Potter,2,Vernon Castle,Artist,Unknown,,FALSE,Male,Fred Astaire
+676,The Straight Story,tt0166896,US/UK,1999,6200000,David Lynch,1,Alvin Straight,Other,Unknown,,FALSE,Male,Richard Farnsworth
+677,The Stratton Story,tt0041928,US,1949,,Sam Wood,1,Monty Stratton,Athlete,Unknown,,FALSE,Male,James Stewart
+678,The Ten Commandments,tt0049833,US,1956,80000000,Cecil B. DeMille,1,Moses,Historical,Known,Middle Eastern (White),FALSE,Male,Charlton Heston
+679,The Theory of Everything,tt2980516,UK,2014,35900000,James Marsh,1,Steven Hawking,Academic,Known,White,FALSE,Male,Eddie Redmayne
+680,The Toast of New York,tt0029675,US,1937,,Rowland V. Lee,1,James Fisk,Criminal,Known,White,FALSE,Male,Edward Arnold
+681,The Trials of Oscar Wilde,tt0054403,UK,1960,,Ken Hughes,1,Oscar Wilde,Author,Known,White,FALSE,Male,Peter Finch
+682,The True Story of Jesse James,tt0051114,US,1957,,Nicholas Ray,1,Jesse James,Criminal,Known,White,FALSE,Male,Robert Wagner
+683,The Unsinkable Molly Brown,tt0058708,US,1964,,Charles Walters,1,Molly Brown,Other,Known,White,FALSE,Female,Debbie Reynolds
+684,The Visual Bible: The Gospel of John,tt0377992,Canada/UK,2003,4070000.0000000005,Philip Saville,1,Jesus,Historical,Known,Middle Eastern (White),FALSE,Male,Henry Ian Cusick
+685,The Whistleblower,tt0896872,US/Canada,2010,1120000,Larysa Kondracki,1,Kathryn Bolkovac,Other,Known,White,FALSE,Female,Rachel Weisz
+686,The Whole Wide World,tt0118163,US,1996,137000,Dan Ireland,2,Robert Howard,Author,Known,White,FALSE,Male,Vincent D'Onofrio
+687,The Whole Wide World,tt0118163,US,1996,137000,Dan Ireland,2,Novalyne Price,Author,Known,Multi racial,FALSE,Female,RenÃ©e Zellweger
+688,The Wings of Eagles,tt0051198,US,1957,,John Ford,1,"Frank W. ""Spig"" Wead",Military,Unknown,,FALSE,Male,John Wayne
+689,The Winning Team,tt0045332,US,1952,,Lewis Seiler,1,Grover Cleveland Alexander,Athlete,Known,White,FALSE,Male,Ronald Reagan
+690,The Wizard of Speed and Time,tt0081766,US,1988,,Mike Jittlov,1,Mike Jittlov,Other,Unknown,,FALSE,Male,Mike Jittlov
+691,The Wolf of Wall Street,tt0993846,US,2013,117000000,Martin Scorsese,1,Jordan Belfort,Criminal,Unknown,,FALSE,Male,Leonardo DiCaprio
+692,The Wonderful World of the Brothers Grimm,tt0056700,US,1961,,"Henry Levin, George Pal",2,Jacob Grimm,Author,Known,White,FALSE,Male,Karlheinz BÃ¶hm
+693,The Wonderful World of the Brothers Grimm,tt0056700,US,1961,,"Henry Levin, George Pal",2,Wilhelm Grimm,Author,Known,White,FALSE,Male,Laurence Harvey
+694,The World's Fastest Indian,tt0412080,US,2005,5130000,Roger Donaldson,1,"Herbert James ""Burt"" Munro",Athlete,Known,White,FALSE,Male,Anthony Hopkins
+695,The Young Victoria,tt0962736,US/UK,2009,11000000,Jean-Marc VallÃ©e,1,Victoria,Historical,Known,White,FALSE,Female,Emily Bunt
+696,They Died with Their Boots On,tt0034277,US,1941,,Raoul Walsh,1,George Armstrong Custer,Military,Known,White,FALSE,Male,Errol Flynn
+697,Thirteen,tt0328538,US,2003,4600000,Catherine Hardwicke,2,Nikki Reed,Other,Known,White,FALSE,Female,Evan Rachel Wood
+698,Thirteen,tt0328538,US,2003,4600000,Catherine Hardwicke,2,Catherine Hardwicke,Other,Unknown,,FALSE,Female,Holly Hunter
+699,Thirty Two Short Films About Glenn Gould,tt0108328,Canada,1993,1570000,FranÃ§ois Girard,1,Glenn Gould,Musician,Known,White,FALSE,Male,Colm Feore
+700,This Boy's Life,tt0108330,US,1993,4099999.9999999995,Michael Caton-Jones,1,Tobias Wolff,Other,Unknown,,FALSE,Male,Leonardo DiCaprio
+701,This Is Elvis,tt0083193,US,1981,,"Malcolm Leo, Andrew Solt",1,Elvis Presley,Musician,Known,White,FALSE,Male,Multiple
+702,Thomas Kinkade's Christmas Cottage,tt0999872,US,2008,,Michael Campus,1,Thomas Kinkade,Artist,Known,White,FALSE,Male,Jared Padalecki
+703,Three Little Words,tt0043044,US,1950,,Richard Thorpe,2,Bert Kalmar,Musician,Known,White,FALSE,Male,Fred Astaire
+704,Three Little Words,tt0043044,US,1950,,Richard Thorpe,2,Harry Ruby,Musician,Known,White,FALSE,Male,Red Skelton
+705,Till the Clouds Roll By,tt0039035,US,1946,6720000,Richard Whorf,1,Jerome Kern,Musician,Known,White,FALSE,Male,Robert Walker
+706,To Hell and Back,tt0048729,US,1955,,Jesse Hibbs,1,Audie Murphy,Military,Known,White,FALSE,Male,Audie Murphy
+707,To Kill a King,tt0302436,UK,2003,,Mike Barker,2,Oliver Cromwell,Historical,Known,White,FALSE,Male,Tim Roth
+708,To Kill a King,tt0302436,UK,2003,,Mike Barker,2,Thomas Fairfax,Historical,Known,White,FALSE,Male,Dougray Scott
+709,To Walk with Lions,tt0132563,Canada/UK,1999,,Carl Schultz,2,George Adamson,Other,Unknown,,FALSE,Male,Richard Harris
+710,To Walk with Lions,tt0132563,Canada/UK,1999,,Carl Schultz,2,Tony Fitzjohn,Other,Unknown,,FALSE,Male,John Michie
+711,To Write Love on Her Arms,tt1850418,US,2012,,Nathan Frankowski,1,Renee Yohe,Other,Unknown,,FALSE,Female,Kat Dennings
+712,Tom & Viv,tt0111454,US/UK,1994,539000,Brian Gilbert,2,T.S. Eliot,Author,Known,White,FALSE,Male,Willem Dafoe
+713,Tom & Viv,tt0111454,US/UK,1994,539000,Brian Gilbert,2,Vivienne Haigh-Wood,Author,Known,White,FALSE,Female,Miranda Richardson
+714,Topsy-Turvy,tt0151568,US/UK,1999,6200000,Mike Leigh,2,Arthur Sullivan,Musician,Known,White,FALSE,Male,Allan Corduner
+715,Topsy-Turvy,tt0151568,US/UK,1999,6200000,Mike Leigh,2,William Schwenck Gilbert,Author,Known,White,FALSE,Male,Jim Broadbent
+716,Total Eclipse,tt0114702,UK,1995,340000,Agnieszka Holland,2,Arthur Rimbaud,Author (poet),Unknown,,FALSE,Male,Leonardo DiCaprio
+717,Total Eclipse,tt0114702,UK,1995,340000,Agnieszka Holland,2,Paul Verlaine,Author (poet),Unknown,,FALSE,Male,David Thewlis
+718,Triumph of the Spirit,tt0098513,US,1989,409000,Robert M. Young,1,Salamo Arouch,Athlete,Known,White,FALSE,Male,Willem Dafoe
+719,Tucker: The Man and His Dream,tt0096316,US,1988,19700000,Francis Ford Coppola,1,Preston Tucker,Other,Unknown,,FALSE,Male,Jeff Bridges
+720,Unbroken,tt1809398,US,2014,116000000,Angelina Jolie,1,Louis Zamperini,Athlete / military,Known,White,FALSE,Male,Jack O'Connell
+721,Valentino,tt0076868,US/UK,1977,,Ken Russell,1,Rudolph Valentino,Actor,Known,White,FALSE,Male,Rudolf Nureyev
+722,Vatel,tt0190861,UK,2000,49500,Roland JoffÃ©,1,FranÃ§ois Vatel,Other,Known,White,FALSE,Male,GÃ©rard Depardieu
+723,Veronica Guerin,tt0312549,US/UK,2003,1570000,Joel Schumacher,1,Veronica Guerin,Media,Known,White,FALSE,Female,Cate Blanchett
+724,Vincent & Theo,tt0100873,UK,1990,2230000,Robert Altman,2,Theo van Gogh,Other,Known,White,FALSE,Male,Paul Rhys
+725,Vincent & Theo,tt0100873,UK,1990,2230000,Robert Altman,2,Vincent Van Gogh,Artist,Known,White,FALSE,Male,Tim Roth
+726,VIPs,tt1235548,US,2010,,Toniko Melo,1,Marcelo Nascimento da Rocha,Criminal,Known,White,FALSE,Male,Wagner Moura
+727,Viva Knievel!,tt0076890,US,1977,,Gordon Douglas,1,Evel Knievel,Athlete,Known,White,FALSE,Male,Evel Knievel
+728,Viva Villa!,tt0025948,US,1934,1110000,Jack Conway,1,Pancho Villa,Military,Known,Hispanic (Latin American),TRUE,Male,Wallace Beery
+729,Viva Zapata!,tt0045296,US,1952,,Elia Kazan,1,Emiliano Zapata,Activist,Known,Hispanic (Latin American),TRUE,Male,Marlon Brando
+730,Von Richthofen and Brown,tt0067658,US,1971,,Roger Corman,2,Manfred von Richtofen,Military,Known,White,FALSE,Male,John Phillip Law
+731,Von Richthofen and Brown,tt0067658,US,1971,,Roger Corman,2,Roy Brown,Military,Known,White,FALSE,Male,Don Stroud
+732,W.,tt1175491,US,2008,25500000,Oliver Stone,1,George W. Bush,World leader,Known,White,FALSE,Male,Josh Brolin
+733,Walk the Line,tt0358273,US,2005,120000000,James Mangold,1,Johnny Cash,Musician,Known,White,FALSE,Male,Joaquin Phoenix
+734,Walker,tt0096409,US,1987,257000,Alex Cox,1,William Walker,Other,Known,White,FALSE,Male,Ed Harris
+735,Walking Tall Part II,tt0073880,US,1975,,Earl Bellamy,1,Buford Pusser,Other,Unknown,,FALSE,Male,Bo Svenson
+736,What We Do Is Secret,tt0384683,US,2007,58800,Rodger Grossman,1,Darby Crash,Singer,Unknown,,FALSE,Male,Shane West
+737,What's Love Got to Do with It,tt0108551,US,1993,39100000,Brian Gibson,1,Anna Mae Bullock (Tina Turner),Singer,Known,Multi racial,TRUE,Female,Angela Bassett
+738,When Did You Last See Your Father?,tt0829098,UK,2007,1070000,Anand Tucker,1,Blake Morrison,Other,Known,White,FALSE,Male,Colin Firth
+739,Where the Buffalo Roam,tt0081748,US,1980,,Art Linson,1,Hunter S. Thompson,Media,Unknown,,FALSE,Male,Bill Murray
+740,WhiteLightnin',tt1034419,UK,2009,,Dominic Murphy,1,Jesco White,Other,Unknown,,FALSE,Male,Edward Hogg
+741,Why Do Fools Fall in Love,tt0123324,US,1998,12400000,Gregory Nava,1,Frankie Lymon,Musician,Known,African American,TRUE,Male,Larenz Tate
+742,Wild,tt2305051,US,2014,37900000,Jean-Marc VallÃ©e,1,Cheryl Strayed,Other,Unknown,,FALSE,Female,Reese Witherspoon
+743,Wild Bill,tt0114938,US,1995,2170000,Walter Hill,1,Wild Bill Hickok,Historical,Known,White,FALSE,Male,Jeff Bridges
+744,Wilde,tt0120514,UK,1997,2160000,Brian Gilbert,1,Oscar Wilde,Author,Known,White,FALSE,Male,Stephen Fry
+745,Wilson,tt0037465,US,1944,2000000,Henry King,1,Woodrow Wilson,World leader,Known,White,FALSE,Male,Alexander Knox
+746,Winnie Mandela,tt1551641,Canada,2011,,Darrell Roodt,1,Winnie Mandela,Government,Known,African,TRUE,Female,Jennifer Hudson
+747,Wired,tt0098660,US,1989,1090000,Larry Peerce,1,John Belushi,Comedian,Unknown,,FALSE,Male,Michael Chiklis
+748,With a Song in My Heart,tt0045333,US,1952,,Walter Lang,1,Jane Froman,Musician,Unknown,,FALSE,Female,Susan Hayward
+749,Without Limits,tt0119934,US,1998,777000,Robert Towne,1,Steve Prefontaine,Athlete,Known,White,FALSE,Male,Billy Crudup
+750,Wittgenstein,tt0108583,UK,1993,,Derek Jarman,1,Ludwig Wittgenstein,Academic (Philosopher),Known,White,FALSE,Male,Clancy Chassay
+751,Words and Music,tt0040976,US,1948,,Norman Taurog,2,Lorenz Hart,Musician,Known,White,FALSE,Male,Mickey Rooney
+752,Words and Music,tt0040976,US,1948,,Norman Taurog,2,Richard Rogers,Musician,Known,White,FALSE,Male,Tom Drake
+753,Wyatt Earp,tt0111756,US,1994,25100000,Lawrence Kasdan,1,Wyatt Earp,Other,Known,White,FALSE,Male,Kevin Costner
+754,Yankee Doodle Dandy,tt0035575,US,1942,,Michael Curtiz,1,George M. Cohan,Musician,Known,White,FALSE,Male,James Cagney
+755,Young Bess,tt0046564,US,1953,,George Sidney,1,Elizabeth I,Historical,Known,White,FALSE,Female,Jean Simmons
+756,Young Cassidy,tt0059930,UK,1965,,Jack Cardiff,1,Sean O'Casey,Author,Known,White,FALSE,Male,Rod Taylor
+757,Young Man with a Horn,tt0043153,US,1950,,Michael Curtiz,1,Bix Beiderbecke,Musician,Known,White,FALSE,Male,Kirk Douglas
+758,Young Mr. Lincoln,tt0032155,US,1939,,John Ford,1,Abraham Lincoln,World leader,Known,White,FALSE,Male,Henry Fonda
+759,Young Tom Edison,tt0033289,US,1940,,Norman Taurog,1,Thomas Edison,Other,Known,White,FALSE,Male,Mickey Rooney
+760,Young Winston,tt0069528,US,1972,,Richard Attenborough,1,Winston Churchill,World leader,Known,White,FALSE,Male,Simon Ward
+761,Your Cheatin' Heart,tt0058765,US,1964,,Gene Nelson,1,Hank Williams,Musician,Unknown,,FALSE,Male,George Hamilton

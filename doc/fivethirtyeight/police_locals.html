@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>R: Most Police Don't Live In The Cities They Serve</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>police_locals</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Most Police Don't Live In The Cities They Serve</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Most Police Don't Live In The Cities They Serve&quot;
+<a href="https://fivethirtyeight.com/features/most-police-dont-live-in-the-cities-they-serve/">https://fivethirtyeight.com/features/most-police-dont-live-in-the-cities-they-serve/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>police_locals
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 75 rows representing cities and 8 variables:
+</p>
+
+<dl>
+<dt>city</dt><dd><p>U.S. city</p>
+</dd>
+<dt>force_size</dt><dd><p>Number of police officers serving that city</p>
+</dd>
+<dt>all</dt><dd><p>Percentage of the total police force that lives in the city</p>
+</dd>
+<dt>white</dt><dd><p>Percentage of white (non-Hispanic) police officers who live in the city</p>
+</dd>
+<dt>non_white</dt><dd><p>Percentage of non-white police officers who live in the city</p>
+</dd>
+<dt>black</dt><dd><p>Percentage of black police officers who live in the city</p>
+</dd>
+<dt>hispanic</dt><dd><p>Percentage of Hispanic police officers who live in the city</p>
+</dd>
+<dt>asian</dt><dd><p>Percentage of Asian police officers who live in the city</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The dataset includes the cities with the 75 largest police forces, with the exception of Honolulu for which data is not available. All calculations are based on data from the U.S. Census.
+</p>
+<p>The Census Bureau numbers are potentially going to differ from other counts for three reasons:
+</p>
+
+<ol>
+<li><p> The census category for police officers also includes sheriffs, transit police and others who might not be under the same jurisdiction as a city's police department proper. The census category won't include private security officers.
+</p>
+</li>
+<li><p> The census data is estimated from 2006 to 2010; police forces may have changed in size since then.
+</p>
+</li>
+<li><p> There is always a margin of error in census numbers; they are estimates, not complete counts.
+</p>
+</li></ol>
+
+<p>Note: Missing values means that there are fewer than 100 police officers of that race serving that city.
+</p>
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/tree/master/police-locals">https://github.com/fivethirtyeight/data/tree/master/police-locals</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># To convert data frame to tidy data (long) format, run:
+library(dplyr)
+library(tidyr)
+police_locals_tidy &lt;- police_locals %&gt;%
+   pivot_longer(all:asian, names_to = "race", values_to = "perc_in")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

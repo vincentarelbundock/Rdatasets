@@ -42,11 +42,6 @@
 
       -  **cvrate:** D.vrate
 
-      .. rubric:: 
-         :name: section
-
-      NA
-
       .. rubric:: Source
          :name: source
 

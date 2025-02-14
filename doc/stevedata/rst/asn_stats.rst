@@ -59,8 +59,8 @@
       All fatality estimates exclude ground fatalities. All accidents
       are hull-loss accidents. The airliner figures are for those
       flights with at least 14 passengers. Check
-      https://aviation-safety.net/statistics/period/stats.php?cat=H2 for
-      more.
+      https://asn.flightsafety.org/statistics/period/stats.php?cat=H2
+      for more.
 
       .. rubric:: Source
          :name: source

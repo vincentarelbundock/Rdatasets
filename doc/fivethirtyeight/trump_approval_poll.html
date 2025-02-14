@@ -1,0 +1,105 @@
+<!DOCTYPE html><html><head><title>R: How Popular is Donald Trump</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>trump_approval_poll</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>How Popular is Donald Trump</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story:
+&quot;How Popular is Donald Trump&quot;
+<a href="https://projects.fivethirtyeight.com/trump-approval-ratings/">https://projects.fivethirtyeight.com/trump-approval-ratings/</a>: Approval Poll Dataset
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>trump_approval_poll
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3051 rows representing individual polls and 20 variables:
+</p>
+
+<dl>
+<dt>subgroup</dt><dd><p>The subgroup the poll falls into as defined by the type of people being polled (all polls, voters, adults)</p>
+</dd>
+<dt>start_date</dt><dd><p>The date the polling began</p>
+</dd>
+<dt>end_date</dt><dd><p>The date the polling concluded</p>
+</dd>
+<dt>pollster</dt><dd><p>The polling group which produced the poll</p>
+</dd>
+<dt>grade</dt><dd><p>The grade for President Trump that the respondents' approval ratings correspond to</p>
+</dd>
+<dt>sample_size</dt><dd><p>The sample size of the poll</p>
+</dd>
+<dt>population</dt><dd><p>The type of people being polled (a for adults, lv for likely voters, rv for registered voters)</p>
+</dd>
+<dt>weight</dt><dd><p>The weight fivethirtyeight gives the poll when determining approval ratings based on historical accuracy of the pollster</p>
+</dd>
+<dt>approve</dt><dd><p>The percentage of respondents who approve of the president</p>
+</dd>
+<dt>disapprove</dt><dd><p>The percentage of respondents who disapprove of the president</p>
+</dd>
+<dt>adjusted_approve</dt><dd><p>The percentage of respondents who approve of the president adjusted for systematic tendencies of the polling firm</p>
+</dd>
+<dt>adjusted_disapprove</dt><dd><p>The percentage of respondents who approve of the president adjusted for systematic tendencies of the polling firm</p>
+</dd>
+<dt>multiversions</dt><dd><p>True if there are multiple versions of the poll, False if there are not</p>
+</dd>
+<dt>tracking</dt><dd><p>TRUE if the poll was tracked, FALSE if not</p>
+</dd>
+<dt>url</dt><dd><p>Poll result URL</p>
+</dd>
+<dt>poll_id</dt><dd><p>Poll ID number</p>
+</dd>
+<dt>question_id</dt><dd><p>ID number for the question being polled</p>
+</dd>
+<dt>created_date</dt><dd><p>Date the poll was created</p>
+</dd>
+<dt>timestamp</dt><dd><p>Date and time the poll was compiled</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Variables &quot;model_date&quot;, &quot;influence&quot;, and &quot;president&quot; were deleted because each observation contained the
+same value for these variables: January 5, 2018; 0; and Donald Trump respectively.
+</p>
+
+
+<h3>Source</h3>
+
+<p><a href="https://projects.fivethirtyeight.com/trump-approval-data/approval_polllist.csv">https://projects.fivethirtyeight.com/trump-approval-data/approval_polllist.csv</a> and
+<a href="https://projects.fivethirtyeight.com/trump-approval-data/approval_topline.csv">https://projects.fivethirtyeight.com/trump-approval-data/approval_topline.csv</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>trump_approval_trend</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

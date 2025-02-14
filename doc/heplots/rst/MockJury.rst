@@ -94,8 +94,8 @@
       .. rubric:: Source
          :name: source
 
-      Originally obtained from Dr. Wuensch's StatData page,
-      https://core.ecu.edu/wuenschk/StatData/PLASTER.dat
+      Originally obtained from Dr. Wuensch's StatData page at East
+      Carolina University. No longer exists.
 
       .. rubric:: References
          :name: references

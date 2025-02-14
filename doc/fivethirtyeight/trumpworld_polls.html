@@ -1,0 +1,151 @@
+<!DOCTYPE html><html><head><title>R: What the World Thinks of Trump</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>trumpworld_polls</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>What the World Thinks of Trump</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;What the World Thinks of Trump&quot;
+<a href="https://fivethirtyeight.com/features/what-the-world-thinks-of-trump/">https://fivethirtyeight.com/features/what-the-world-thinks-of-trump/</a>:
+Trump World Polls Dataset.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>trumpworld_polls
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 32 rows representing years and 40 variables:
+</p>
+
+<dl>
+<dt>year</dt><dd><p>Year the poll was conducted</p>
+</dd>
+<dt>avg</dt><dd><p>The average percentage people who answered the poll question positively (support the president or have a favorable view of the U.S.)</p>
+</dd>
+<dt>canada</dt><dd><p>The percentage of people from Canada who answered the poll question positively</p>
+</dd>
+<dt>france</dt><dd><p>The percentage of people from France who answered the poll question positively</p>
+</dd>
+<dt>germany</dt><dd><p>The percentage of people from Germany who answered the poll question positively</p>
+</dd>
+<dt>greece</dt><dd><p>The percentage of people from Greece who answered the poll question positively</p>
+</dd>
+<dt>hungary</dt><dd><p>The percentage of people from Hungary who answered the poll question positively</p>
+</dd>
+<dt>italy</dt><dd><p>The percentage of people from Italy who answered the poll question positively</p>
+</dd>
+<dt>netherlands</dt><dd><p>The percentage of people from Netherlands who answered the poll question positively</p>
+</dd>
+<dt>poland</dt><dd><p>The percentage of people from Poland who answered the poll question positively</p>
+</dd>
+<dt>spain</dt><dd><p>The percentage of people from Spain who answered the poll question positively</p>
+</dd>
+<dt>sweden</dt><dd><p>The percentage of people from Sweden who answered the poll question positively</p>
+</dd>
+<dt>uk</dt><dd><p>The percentage of people from the U.K. who answered the poll question positively</p>
+</dd>
+<dt>russia</dt><dd><p>The percentage of people from Russia who answered the poll question positively</p>
+</dd>
+<dt>australia</dt><dd><p>The percentage of people from Australia who answered the poll question positively</p>
+</dd>
+<dt>india</dt><dd><p>The percentage of people from India who answered the poll question positively</p>
+</dd>
+<dt>indonesia</dt><dd><p>The percentage of people from Indonesia who answered the poll question positively</p>
+</dd>
+<dt>japan</dt><dd><p>The percentage of people from Japan who answered the poll question positively</p>
+</dd>
+<dt>philippines</dt><dd><p>The percentage of people from the Philippines who answered the poll question positively</p>
+</dd>
+<dt>south_korea</dt><dd><p>The percentage of people from South Korea who answered the poll question positively</p>
+</dd>
+<dt>vietnam</dt><dd><p>The percentage of people from Vietnam who answered the poll question positively</p>
+</dd>
+<dt>israel</dt><dd><p>The percentage of people from Israel who answered the poll question positively</p>
+</dd>
+<dt>jordan</dt><dd><p>The percentage of people from Jordan who answered the poll question positively</p>
+</dd>
+<dt>lebanon</dt><dd><p>The percentage of people from Lebanon who answered the poll question positively</p>
+</dd>
+<dt>tunisia</dt><dd><p>The percentage of people from Tunisia who answered the poll question positively</p>
+</dd>
+<dt>turkey</dt><dd><p>The percentage of people from Turkey who answered the poll question positively</p>
+</dd>
+<dt>ghana</dt><dd><p>The percentage of people from Ghana who answered the poll question positively</p>
+</dd>
+<dt>kenya</dt><dd><p>The percentage of people from Kenya who answered the poll question positively</p>
+</dd>
+<dt>nigeria</dt><dd><p>The percentage of people from Nigeria who answered the poll question positively</p>
+</dd>
+<dt>senegal</dt><dd><p>The percentage of people from Senegal who answered the poll question positively</p>
+</dd>
+<dt>south_africa</dt><dd><p>The percentage of people from South Africa who answered the poll question positively</p>
+</dd>
+<dt>tanzania</dt><dd><p>The percentage of people from Tanzania who answered the poll question positively</p>
+</dd>
+<dt>argentina</dt><dd><p>The percentage of people from Argentina who answered the poll question positively</p>
+</dd>
+<dt>brazil</dt><dd><p>The percentage of people from Brazil who answered the poll question positively</p>
+</dd>
+<dt>chile</dt><dd><p>The percentage of people from Chile who answered the poll question positively</p>
+</dd>
+<dt>colombia</dt><dd><p>The percentage of people from Colombia who answered the poll question positively</p>
+</dd>
+<dt>mexico</dt><dd><p>The percentage of people from Mexico who answered the poll question positively</p>
+</dd>
+<dt>peru</dt><dd><p>The percentage of people from Peru who answered the poll question positively</p>
+</dd>
+<dt>venezuela</dt><dd><p>The percentage of people from Venezuela who answered the poll question positively</p>
+</dd>
+<dt>question</dt><dd><p>The item being polled. Specifically, whether respondents: 1) Have a favorable view of the U.S. or 2) Trust the U.S. President when it comes to foreign affairs</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Pew Research Center <a href="https://www.pewresearch.org/fact-tank/2017/07/17/9-charts-on-how-the-world-sees-trump/">https://www.pewresearch.org/fact-tank/2017/07/17/9-charts-on-how-the-world-sees-trump/</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>trumpworld_issues</code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># To convert data frame to tidy data (long) format, run:
+library(dplyr)
+library(tidyr)
+trumpworld_polls_tidy &lt;- trumpworld_polls %&gt;%
+  pivot_longer(-c("year", "avg", "question"), 
+    names_to = "country", values_to = "percent_positive")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

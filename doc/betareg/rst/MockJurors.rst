@@ -66,11 +66,11 @@
       .. rubric:: References
          :name: references
 
-      Deady, S. (2004). The Psychological Third Verdict: 'Not Proven' or
+      Deady S (2004). The Psychological Third Verdict: 'Not Proven' or
       'Not Willing to Make a Decision'? *Unpublished honors thesis*, The
       Australian National University, Canberra.
 
-      Smithson, M., and Verkuilen, J. (2006). A Better Lemon Squeezer?
+      Smithson M, Verkuilen J (2006). A Better Lemon Squeezer?
       Maximum-Likelihood Regression with Beta-Distributed Dependent
       Variables. *Psychological Methods*, **11**\ (7), 54–71.
 

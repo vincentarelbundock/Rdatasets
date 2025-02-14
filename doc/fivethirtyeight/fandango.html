@@ -1,0 +1,102 @@
+<!DOCTYPE html><html><head><title>R: Be Suspicious Of Online Movie Ratings, Especially Fandango's</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>fandango</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Be Suspicious Of Online Movie Ratings, Especially Fandango's</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Be Suspicious Of Online Movie Ratings, Especially Fandango's&quot;
+<a href="https://fivethirtyeight.com/features/fandango-movies-ratings/">https://fivethirtyeight.com/features/fandango-movies-ratings/</a>.
+contains every film that has a Rotten Tomatoes rating, a RT User rating, a
+Metacritic score, a Metacritic User score, and IMDb score, and at least 30
+fan reviews on Fandango.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>fandango
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 146 rows representing movies and 23 variables:
+</p>
+
+<dl>
+<dt>film</dt><dd><p>The film in question</p>
+</dd>
+<dt>year</dt><dd><p>Year of film</p>
+</dd>
+<dt>rottentomatoes</dt><dd><p>The Rotten Tomatoes Tomatometer score  for the film </p>
+</dd>
+<dt>rottentomatoes_user</dt><dd><p>The Rotten Tomatoes user score for the film </p>
+</dd>
+<dt>metacritic</dt><dd><p>The Metacritic critic score for the film</p>
+</dd>
+<dt>metacritic_user</dt><dd><p>The Metacritic user score for the film</p>
+</dd>
+<dt>imdb</dt><dd><p>The IMDb user score for the film</p>
+</dd>
+<dt>fandango_stars</dt><dd><p>The number of stars the film had on its Fandango movie page</p>
+</dd>
+<dt>fandango_ratingvalue</dt><dd><p>The Fandango ratingValue for the film, as pulled from the HTML of each page. This is the actual average score the movie obtained. </p>
+</dd>
+<dt>rt_norm</dt><dd><p>The Rotten Tomatoes Tomatometer score  for the film , normalized to a 0 to 5 point system</p>
+</dd>
+<dt>rt_user_norm</dt><dd><p>The Rotten Tomatoes user score for the film , normalized to a 0 to 5 point system</p>
+</dd>
+<dt>metacritic_norm</dt><dd><p>The Metacritic critic score for the film, normalized to a 0 to 5 point system</p>
+</dd>
+<dt>metacritic_user_nom</dt><dd><p>The Metacritic user score for the film, normalized to a 0 to 5 point system</p>
+</dd>
+<dt>imdb_norm</dt><dd><p>The IMDb user score for the film, normalized to a 0 to 5 point system</p>
+</dd>
+<dt>rt_norm_round</dt><dd><p>The Rotten Tomatoes Tomatometer score  for the film , normalized to a 0 to 5 point system and rounded to the nearest half-star</p>
+</dd>
+<dt>rt_user_norm_round</dt><dd><p>The Rotten Tomatoes user score for the film , normalized to a 0 to 5 point system and rounded to the nearest half-star</p>
+</dd>
+<dt>metacritic_norm_round</dt><dd><p>The Metacritic critic score for the film, normalized to a 0 to 5 point system and rounded to the nearest half-star</p>
+</dd>
+<dt>metacritic_user_norm_round</dt><dd><p>The Metacritic user score for the film, normalized to a 0 to 5 point system and rounded to the nearest half-star</p>
+</dd>
+<dt>imdb_norm_round</dt><dd><p>The IMDb user score for the film, normalized to a 0 to 5 point system and rounded to the nearest half-star</p>
+</dd>
+<dt>metacritic_user_vote_count</dt><dd><p>The number of user votes the film had on Metacritic</p>
+</dd>
+<dt>imdb_user_vote_count</dt><dd><p>The number of user votes the film had on IMDb</p>
+</dd>
+<dt>fandango_votes</dt><dd><p>The number of user votes the film had on Fandango</p>
+</dd>
+<dt>fandango_difference</dt><dd><p>The difference between the presented Fandango_Stars and the actual Fandango_Ratingvalue</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>The data from Fandango was pulled on Aug. 24, 2015.
+</p>
+
+</main>
+
+</div>
+</body></html>

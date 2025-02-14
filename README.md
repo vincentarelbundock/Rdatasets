@@ -1,7 +1,7 @@
 
 # What is this?
 
-`Rdatasets` is a collection of 2337 datasets which were originally
+`Rdatasets` is a collection of 2536 datasets which were originally
 distributed alongside the statistical software environment `R` and some
 of its add-on packages. The goal is to make these data more broadly
 accessible for teaching and statistical software development.

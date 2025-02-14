@@ -1,0 +1,172 @@
+<!DOCTYPE html><html><head><title>R: The FiveThirtyEight International Food Association's 2014...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>food_world_cup</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The FiveThirtyEight International Food Association's 2014 World Cup</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;The FiveThirtyEight International Food Association's 2014 World Cup&quot;
+<a href="https://fivethirtyeight.com/features/the-fivethirtyeight-international-food-associations-2014-world-cup/">https://fivethirtyeight.com/features/the-fivethirtyeight-international-food-associations-2014-world-cup/</a>.
+For all the countries below, the response to the following question is presented:
+&quot;Please rate how much you like the traditional cuisine of X&quot;
+</p>
+
+<ul>
+<li><p>5: I love this country's traditional cuisine. I think it's one of the best in the world.
+</p>
+</li>
+<li><p>4: I like this country's traditional cuisine. I think it's considerably above average.
+</p>
+</li>
+<li><p>3: I'm OK with this county's traditional cuisine. I think it's about average.
+</p>
+</li>
+<li><p>2: I dislike this country's traditional cuisine. I think it's considerably below average.
+</p>
+</li>
+<li><p>1: I hate this country's traditional cuisine. I think it's one of the worst in the world.
+</p>
+</li>
+<li><p>N/A: I'm unfamiliar with this country's traditional cuisine.
+</p>
+</li></ul>
+
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>food_world_cup
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 1373 rows representing respondents and 48 variables:
+</p>
+
+<dl>
+<dt>respondent_id</dt><dd><p>Respondent ID</p>
+</dd>
+<dt>knowledge</dt><dd><p>Generally speaking, how would you rate your level of knowledge of cuisines from different parts of the world?</p>
+</dd>
+<dt>interest</dt><dd><p>How much, if at all, are you interested in cuisines from different parts of the world?</p>
+</dd>
+<dt>gender</dt><dd><p>Gender</p>
+</dd>
+<dt>age</dt><dd><p>Age</p>
+</dd>
+<dt>household_income</dt><dd><p>Household income bracket</p>
+</dd>
+<dt>education</dt><dd><p>Education Level</p>
+</dd>
+<dt>location</dt><dd><p>Location (census region)</p>
+</dd>
+<dt>algeria</dt><dd><p>Cuisine of Algeria</p>
+</dd>
+<dt>argentina</dt><dd><p>Cuisine of Argentina</p>
+</dd>
+<dt>australia</dt><dd><p>Cuisine of Australia</p>
+</dd>
+<dt>belgium</dt><dd><p>Cuisine of Belgium</p>
+</dd>
+<dt>bosnia_and_herzegovina</dt><dd><p>Cuisine of Bosnia &amp; Herzegovina</p>
+</dd>
+<dt>brazil</dt><dd><p>Cuisine of Brazil</p>
+</dd>
+<dt>cameroon</dt><dd><p>Cuisine of Cameroon</p>
+</dd>
+<dt>chile</dt><dd><p>Cuisine of Chile</p>
+</dd>
+<dt>china</dt><dd><p>Cuisine of China</p>
+</dd>
+<dt>colombia</dt><dd><p>Cuisine of Colombia</p>
+</dd>
+<dt>costa_rica</dt><dd><p>Cuisine of Costa Rica</p>
+</dd>
+<dt>croatia</dt><dd><p>Cuisine of Croatia</p>
+</dd>
+<dt>cuba</dt><dd><p>Cuisine of Cuba</p>
+</dd>
+<dt>ecuador</dt><dd><p>Cuisine of Ecuador</p>
+</dd>
+<dt>england</dt><dd><p>Cuisine of England</p>
+</dd>
+<dt>ethiopia</dt><dd><p>Cuisine of Ethiopia</p>
+</dd>
+<dt>france</dt><dd><p>Cuisine of France</p>
+</dd>
+<dt>germany</dt><dd><p>Cuisine of Germany</p>
+</dd>
+<dt>ghana</dt><dd><p>Cuisine of Ghana</p>
+</dd>
+<dt>greece</dt><dd><p>Cuisine of Greece</p>
+</dd>
+<dt>honduras</dt><dd><p>Cuisine of Honduras</p>
+</dd>
+<dt>india</dt><dd><p>Cuisine of India</p>
+</dd>
+<dt>iran</dt><dd><p>Cuisine of Iran</p>
+</dd>
+<dt>ireland</dt><dd><p>Cuisine of Ireland</p>
+</dd>
+<dt>italy</dt><dd><p>Cuisine of Italy</p>
+</dd>
+<dt>ivory_coast</dt><dd><p>Cuisine of Ivory Coast</p>
+</dd>
+<dt>japan</dt><dd><p>Cuisine of Japan</p>
+</dd>
+<dt>mexico</dt><dd><p>Cuisine of Mexico</p>
+</dd>
+<dt>nigeria</dt><dd><p>Cuisine of Nigeria</p>
+</dd>
+<dt>portugal</dt><dd><p>Cuisine of Portugal</p>
+</dd>
+<dt>russia</dt><dd><p>Cuisine of Russia</p>
+</dd>
+<dt>south_korea</dt><dd><p>Cuisine of South Korea</p>
+</dd>
+<dt>spain</dt><dd><p>Cuisine of Spain</p>
+</dd>
+<dt>switzerland</dt><dd><p>Cuisine of Switzerland</p>
+</dd>
+<dt>thailand</dt><dd><p>Cuisine of Thailand</p>
+</dd>
+<dt>the_netherlands</dt><dd><p>Cuisine of the Netherlands</p>
+</dd>
+<dt>turkey</dt><dd><p>Cuisine of Turkey</p>
+</dd>
+<dt>united_states</dt><dd><p>Cuisine of the United States</p>
+</dd>
+<dt>uruguay</dt><dd><p>Cuisine of Uruguay</p>
+</dd>
+<dt>vietnam</dt><dd><p>Cuisine of Vietnam</p>
+</dd>
+</dl>
+
+
+
+<h3>See Also</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/tree/master/food-world-cup">https://github.com/fivethirtyeight/data/tree/master/food-world-cup</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

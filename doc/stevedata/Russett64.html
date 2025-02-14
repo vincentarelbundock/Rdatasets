@@ -1,0 +1,86 @@
+<!DOCTYPE html><html><head><title>R: Inequality and Instability: The Relation of Land Tenure to...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>Russett64</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Inequality and Instability: The Relation of Land Tenure to Politics (Russett, 1964)</h2>
+
+<h3>Description</h3>
+
+<p>A data set on inequality and political instability, to replicate an analysis
+from Russett (1964).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>Russett64
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 47 observations on the following 10 variables.
+</p>
+
+<dl>
+<dt><code>country</code></dt><dd><p>a character vector for the country</p>
+</dd>
+<dt><code>demcat</code></dt><dd><p>a character vector for the type of political system, either &quot;Stable Democracies&quot;, &quot;Unstable Democracies&quot;, or &quot;Dictatorships&quot;</p>
+</dd>
+<dt><code>gini</code></dt><dd><p>a numeric vector for the GINI coefficient</p>
+</dd>
+<dt><code>perc_farmsh</code></dt><dd><p>a numeric vector for the percent of farms with half the land</p>
+</dd>
+<dt><code>perc_farmsr</code></dt><dd><p>a numeric vector for the percent of farms that are rented</p>
+</dd>
+<dt><code>pi</code></dt><dd><p>a numeric vector for personnel instability</p>
+</dd>
+<dt><code>eiw</code></dt><dd><p>a numeric vector for Eckstein's internal war measure</p>
+</dd>
+<dt><code>deaths</code></dt><dd><p>a numeric vector for deaths from civil group violence per one million</p>
+</dd>
+<dt><code>gnppc</code></dt><dd><p>a numeric vector for gross national product per capita</p>
+</dd>
+<dt><code>perc_lfa</code></dt><dd><p>a numeric vector for the percent of the labor force in agriculture</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>The data are scraped from Table 1 and Table 3 of his article, to the
+best of my ability. I was initially hoping this could be a problem for ChatGPT
+and its OCR functionality. However, ChatGPT made an absolute mess of Table 1.
+The bulk of this is hand-coded. The data, as of right now, can effectively
+reproduce what Russett (1964) reports in his analyses, but it is not identical.
+</p>
+<p>You should read the article to see the assorted citations and data caveats
+that Russett (1964) reports. Those are ultimately suppressed/ignored here.
+</p>
+
+
+<h3>References</h3>
+
+<p>Russett, Bruce M. &quot;Inequality and Instability: The Relation of Land Tenure to
+Politics.&quot; <em>World Politics</em> 16(3): 442&ndash;54
+</p>
+
+</main>
+
+</div>
+</body></html>

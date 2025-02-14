@@ -1,0 +1,103 @@
+<!DOCTYPE html><html><head><title>R: The Economic Guide To Picking A College Major</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>college_grad_students</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Economic Guide To Picking A College Major</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;The Economic Guide To Picking A College Major&quot;
+<a href="https://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/">https://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>college_grad_students
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 173 rows representing majors (graduate vs nongraduate students) and 22 variables:
+</p>
+
+<dl>
+<dt>major_code</dt><dd><p>Major code, FO1DP in ACS PUMS</p>
+</dd>
+<dt>major</dt><dd><p>Major description</p>
+</dd>
+<dt>major_category</dt><dd><p>Category of major from Carnevale et al</p>
+</dd>
+<dt>grad_total</dt><dd><p>Total number of people with major</p>
+</dd>
+<dt>grad_sample_size</dt><dd><p>Sample size (unweighted) of full-time, year-round ONLY (used for earnings)</p>
+</dd>
+<dt>grad_employed</dt><dd><p>Number employed (ESR == 1 or 2)</p>
+</dd>
+<dt>grad_employed_fulltime_yearround</dt><dd><p>Employed at least 50 weeks (WKW == 1) and at least 35 hours (WKHP &gt;= 35)</p>
+</dd>
+<dt>grad_unemployed</dt><dd><p>Number unemployed (ESR == 3)</p>
+</dd>
+<dt>grad_unemployment_rate</dt><dd><p>Unemployed / (Unemployed + Employed)</p>
+</dd>
+<dt>grad_p25th</dt><dd><p>25th percentile of earnings</p>
+</dd>
+<dt>grad_median</dt><dd><p>Median earnings of full-time, year-round workers</p>
+</dd>
+<dt>grad_p75th</dt><dd><p>75th percentile of earnings</p>
+</dd>
+<dt>nongrad_total</dt><dd><p>Total number of people with major</p>
+</dd>
+<dt>nongrad_employed</dt><dd><p>Number employed (ESR == 1 or 2)</p>
+</dd>
+<dt>nongrad_employed_fulltime_yearround</dt><dd><p>Employed at least 50 weeks (WKW == 1) and at least 35 hours (WKHP &gt;= 35)</p>
+</dd>
+<dt>nongrad_unemployed</dt><dd><p>Number unemployed (ESR == 3)</p>
+</dd>
+<dt>nongrad_unemployment_rate</dt><dd><p>Unemployed / (Unemployed + Employed)</p>
+</dd>
+<dt>nongrad_p25th</dt><dd><p>25th percentile of earnings</p>
+</dd>
+<dt>nongrad_median</dt><dd><p>Median earnings of full-time, year-round workers</p>
+</dd>
+<dt>nongrad_p75th</dt><dd><p>75th percentile of earnings</p>
+</dd>
+<dt>grad_share</dt><dd><p>grad_total / (grad_total + nongrad_total)</p>
+</dd>
+<dt>grad_premium</dt><dd><p>(grad_median-nongrad_median)/nongrad_median</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/blob/master/college-majors/readme.md">https://github.com/fivethirtyeight/data/blob/master/college-majors/readme.md</a>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>college_all_ages</code>, <code>college_recent_grads</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

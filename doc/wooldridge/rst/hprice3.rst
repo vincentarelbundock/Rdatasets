@@ -64,11 +64,6 @@
 
       -  **linstsq:** linst^2
 
-      .. rubric:: 
-         :name: section
-
-      NA
-
       .. rubric:: Source
          :name: source
 

@@ -1,0 +1,121 @@
+<!DOCTYPE html><html><head><title>R: Cross-Sectional Data on Wages</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>wage1</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2> Cross-Sectional Data on Wages </h2>
+
+<h3>Description</h3>
+
+<p> Cross-section wage data consisting of a random sample
+taken from the U.S. Current Population Survey for the year 1976. There
+are 526 observations in total. <code>data("wage1")</code> makes available the
+dataset <code>"wage"</code> plus additional objects <code>"bw.all"</code> and
+<code>"bw.subset"</code>.</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("wage1")</code></pre>
+
+
+<h3>Format</h3>
+
+<p> A data frame with 24 columns, and 526 rows.
+</p>
+<p>Two local-linear <code>rbandwidth</code> objects (<code>bw.all</code> and
+<code>bw.subset</code>) have been computed for the user's convenience
+which can be used to visualize this dataset using
+<code>plot(bw.all)</code>
+</p>
+
+<dl>
+<dt>wage</dt><dd><p>column 1, of type <code>numeric</code>, average hourly earnings</p>
+</dd>
+<dt>educ</dt><dd><p>column 2, of type <code>numeric</code>, years of education</p>
+</dd>
+<dt>exper</dt><dd><p>column 3, of type <code>numeric</code>, years potential experience</p>
+</dd>
+<dt>tenure</dt><dd><p>column 4, of type <code>numeric</code>, years with current employer</p>
+</dd>
+<dt>nonwhite</dt><dd><p>column 5, of type <code>factor</code>, =&ldquo;Nonwhite&rdquo; if nonwhite, &ldquo;White&rdquo; otherwise</p>
+</dd>
+<dt>female</dt><dd><p>column 6, of type <code>factor</code>, =&ldquo;Female&rdquo; if female, &ldquo;Male&rdquo; otherwise</p>
+</dd>
+<dt>married</dt><dd><p>column 7, of type <code>factor</code>, =&ldquo;Married&rdquo; if Married, &ldquo;Nonmarried&rdquo; otherwise</p>
+</dd>
+<dt>numdep</dt><dd><p>column 8, of type <code>numeric</code>, number of dependants</p>
+</dd>
+<dt>smsa</dt><dd><p>column 9, of type <code>numeric</code>, =1 if live in SMSA</p>
+</dd>
+<dt>northcen</dt><dd><p>column 10, of type <code>numeric</code>, =1 if live in north central U.S</p>
+</dd>
+<dt>south</dt><dd><p>column 11, of type <code>numeric</code>, =1 if live in southern region</p>
+</dd>
+<dt>west</dt><dd><p>column 12, of type <code>numeric</code>, =1 if live in western region</p>
+</dd>
+<dt>construc</dt><dd><p>column 13, of type <code>numeric</code>, =1 if work in construction industry</p>
+</dd>
+<dt>ndurman</dt><dd><p>column 14, of type <code>numeric</code>, =1 if in non-durable manufacturing industry</p>
+</dd>
+<dt>trcommpu</dt><dd><p>column 15, of type <code>numeric</code>, =1 if in transportation, communications, public utility</p>
+</dd>
+<dt>trade</dt><dd><p>column 16, of type <code>numeric</code>, =1 if in wholesale or retail</p>
+</dd>
+<dt>services</dt><dd><p>column 17, of type <code>numeric</code>, =1 if in services industry</p>
+</dd>
+<dt>profserv</dt><dd><p>column 18, of type <code>numeric</code>, =1 if in professional services industry</p>
+</dd>
+<dt>profocc</dt><dd><p>column 19, of type <code>numeric</code>, =1 if in professional occupation</p>
+</dd>
+<dt>clerocc</dt><dd><p>column 20, of type <code>numeric</code>, =1 if in clerical occupation</p>
+</dd>
+<dt>servocc</dt><dd><p>column 21, of type <code>numeric</code>, =1 if in service occupation</p>
+</dd>
+<dt>lwage</dt><dd><p>column 22, of type <code>numeric</code>, log(wage)</p>
+</dd>
+<dt>expersq</dt><dd><p>column 23, of type <code>numeric</code>, exper<code class="reqn">^2</code></p>
+</dd>
+<dt>tenursq</dt><dd><p>column 24, of type <code>numeric</code>, tenure<code class="reqn">^2</code></p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p> Jeffrey M. Wooldridge </p>
+
+
+<h3>References</h3>
+
+<p>Wooldridge, J.M. (2000), <em>Introductory Econometrics: A Modern
+Approach</em>, South-Western College Publishing.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data("wage1")
+attach(wage1)
+summary(wage1)
+detach(wage1)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

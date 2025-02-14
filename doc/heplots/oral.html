@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><title>R: Effect of Delay in Oral Practice in Second Language Learning</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>oral</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Effect of Delay in Oral Practice in Second Language Learning</h2>
+
+<h3>Description</h3>
+
+<p>Postovsky (1970) investigated the effect of delay in oral practice at the beginning of second language learning.
+A control condition began oral practice with no delay, while an experimental group had a four-week delay before
+starting oral practice. The data consists of scores on language skills at the end of six weeks of study.
+</p>
+<p>Students in this study were matched on age, education, former language training, intelligence and language aptitude.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("oral")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 56 observations on the following 5 variables.
+</p>
+
+<dl>
+<dt><code>group</code></dt><dd><p>Group, a factor with levels <code>Control</code> <code>Exptl</code></p>
+</dd>
+<dt><code>listen</code></dt><dd><p>Listening test, a numeric vector</p>
+</dd>
+<dt><code>speak</code></dt><dd><p>Speaking test, a numeric vector</p>
+</dd>
+<dt><code>read</code></dt><dd><p>Reading test, a numeric vector</p>
+</dd>
+<dt><code>write</code></dt><dd><p>Writing test, a numeric vector</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>Timm, N. H. (1975). <em>Multivariate Analysis with Applications in Education and Psychology</em>. Wadsworth (Brooks/Cole),
+Exercise 3.12, p. 279.
+</p>
+
+
+<h3>References</h3>
+
+<p>Postovsky, V. A. (1970). Effects of delay in oral practice at the start of second language training. Unpublished doctoral dissertation, 
+University of California, Berkeley.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>library(car)
+library(candisc)
+data(oral)
+
+# make some boxplots
+op &lt;- par(mfrow=c(1,4), cex.lab=1.5)
+clr &lt;- c("pink", "lightblue")
+Boxplot(listen ~ group, data=oral, col = clr, cex.lab = 1.5)
+Boxplot(speak ~  group, data=oral, col = clr, cex.lab = 1.5)
+Boxplot(read ~   group, data=oral, col = clr, cex.lab = 1.5)
+Boxplot(write ~  group, data=oral, col = clr, cex.lab = 1.5)
+par(op)
+
+# view the data ellipses
+covEllipses(cbind(listen, speak, read, write) ~ group, data=oral,
+    variables = 1:4,
+    level = 0.40,
+    pooled = FALSE,
+    fill = TRUE, fill.alpha = 0.05)
+
+oral.mod &lt;- lm(cbind(listen, speak, read, write) ~ group, data=oral)
+Anova(oral.mod)
+
+# canonical view
+oral.can &lt;- candisc(oral.mod) |&gt; print()
+summary(oral.can)
+
+# reflect the structure &amp; scores to make them positive
+oral.can$structure[, "Can1"] &lt;- -1 * oral.can$structure[, "Can1"]
+oral.can$scores[, "Can1"]    &lt;- -1 * oral.can$scores[, "Can1"]
+
+plot(oral.can, var.lwd=2)
+
+
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

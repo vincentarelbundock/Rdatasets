@@ -56,8 +56,8 @@
       .. rubric:: Source
          :name: source
 
-      Der Bundeswahlleiter, Statistisches Bundesamt.
-      https://www.bundeswahlleiter.de/bundestagswahlen/2005.html
+      Die Bundeswahlleiterin, Statistisches Bundesamt.
+      https://www.bundeswahlleiterin.de/bundestagswahlen/2005.html
 
       .. rubric:: Examples
          :name: examples

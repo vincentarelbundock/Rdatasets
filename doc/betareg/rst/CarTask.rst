@@ -6,7 +6,7 @@
       CarTask R Documentation
       ======= ===============
 
-      .. rubric:: Partition-primed Probability Judgement Task for Car
+      .. rubric:: Partition-Primed Probability Judgement Task for Car
          Dealership
          :name: partition-primed-probability-judgement-task-for-car-dealership
 

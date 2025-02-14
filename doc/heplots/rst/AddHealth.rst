@@ -50,7 +50,6 @@
       Warne, R. T. (2014). A primer on Multivariate Analysis of Variance
       (MANOVA) for Behavioral Scientists. *Practical Assessment,
       Research & Evaluation*, 19 (1).
-      https://scholarworks.umass.edu/pare/vol19/iss1/17/
 
       .. rubric:: Examples
          :name: examples

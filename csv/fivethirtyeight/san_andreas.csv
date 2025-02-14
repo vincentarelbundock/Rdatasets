@@ -1,0 +1,1014 @@
+rownames,worry_general,worry_bigone,will_occur,experience,prepared,fam_san_andreas,fam_yellowstone,age,female,hhold_income,region
+1,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,18 - 29,FALSE,Prefer not to answer,New England
+2,Somewhat worried,Very worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,18 - 29,FALSE,"$75,000 to $99,999",East North Central
+3,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,18 - 29,FALSE,"$10,000 to $24,999",Pacific
+4,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,18 - 29,FALSE,"$25,000 to $49,999",West South Central
+5,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Extremely familiar,18 - 29,FALSE,"$200,000 and up",Middle Atlantic
+6,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,18 - 29,FALSE,"$25,000 to $49,999",East North Central
+7,Very worried,Not at all worried,TRUE,"Yes, one or more major ones",TRUE,,,,,,
+8,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,18 - 29,FALSE,Prefer not to answer,South Atlantic
+9,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,18 - 29,FALSE,Prefer not to answer,East North Central
+10,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not so familiar,18 - 29,FALSE,"$10,000 to $24,999",East North Central
+11,Not at all worried,Not so worried,FALSE,"Yes, one or more major ones",FALSE,Somewhat familiar,Not so familiar,18 - 29,FALSE,"$50,000 to $74,999",West North Central
+12,Not at all worried,Not at all worried,FALSE,No,FALSE,Extremely familiar,Extremely familiar,18 - 29,FALSE,"$25,000 to $49,999",East South Central
+13,Extremely worried,Very worried,TRUE,,,,,,,,
+14,Somewhat worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,18 - 29,FALSE,"$0 to $9,999",Pacific
+15,Not so worried,Not so worried,FALSE,No,FALSE,Very familiar,Somewhat familiar,18 - 29,FALSE,"$100,000 to $124,999",New England
+16,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$50,000 to $74,999",East North Central
+17,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$25,000 to $49,999",East North Central
+18,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Not so familiar,Somewhat familiar,18 - 29,FALSE,"$75,000 to $99,999",East North Central
+19,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$25,000 to $49,999",Pacific
+20,Very worried,Extremely worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,FALSE,"$10,000 to $24,999",Pacific
+21,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$50,000 to $74,999",Mountain
+22,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Very familiar,30 - 44,FALSE,"$75,000 to $99,999",South Atlantic
+23,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,18 - 29,FALSE,"$50,000 to $74,999",Middle Atlantic
+24,Not so worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,18 - 29,FALSE,"$75,000 to $99,999",Middle Atlantic
+25,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$25,000 to $49,999",East North Central
+26,Extremely worried,Extremely worried,FALSE,No,FALSE,Not so familiar,Not so familiar,18 - 29,FALSE,"$10,000 to $24,999",
+27,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,30 - 44,FALSE,"$75,000 to $99,999",East North Central
+28,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Not so familiar,30 - 44,FALSE,"$75,000 to $99,999",Middle Atlantic
+29,Somewhat worried,Very worried,FALSE,No,FALSE,Very familiar,Somewhat familiar,30 - 44,FALSE,"$25,000 to $49,999",East North Central
+30,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,18 - 29,FALSE,"$25,000 to $49,999",South Atlantic
+31,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Not so familiar,Not so familiar,18 - 29,FALSE,"$25,000 to $49,999",East North Central
+32,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,18 - 29,FALSE,"$0 to $9,999",East North Central
+33,Not at all worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$25,000 to $49,999",
+34,Not so worried,Not so worried,TRUE,No,FALSE,Not so familiar,Somewhat familiar,18 - 29,FALSE,"$10,000 to $24,999",
+35,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$100,000 to $124,999",East South Central
+36,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,18 - 29,FALSE,"$10,000 to $24,999",Pacific
+37,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$175,000 to $199,999",New England
+38,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Not so familiar,18 - 29,FALSE,"$0 to $9,999",West North Central
+39,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Very familiar,18 - 29,FALSE,"$125,000 to $149,999",Pacific
+40,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,30 - 44,FALSE,"$75,000 to $99,999",East North Central
+41,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",FALSE,Not at all familiar,Not at all familiar,30 - 44,FALSE,"$25,000 to $49,999",
+42,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not so familiar,18 - 29,FALSE,"$100,000 to $124,999",Mountain
+43,Not so worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Very familiar,45 - 59,FALSE,"$50,000 to $74,999",Pacific
+44,Very worried,Very worried,TRUE,"Yes, one or more minor ones",TRUE,Not so familiar,Very familiar,45 - 59,FALSE,"$10,000 to $24,999",Pacific
+45,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Not so familiar,Not so familiar,18 - 29,FALSE,"$50,000 to $74,999",Pacific
+46,Not at all worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Not at all familiar,Not at all familiar,18 - 29,FALSE,"$0 to $9,999",Pacific
+47,Not so worried,Very worried,TRUE,No,TRUE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$0 to $9,999",West South Central
+48,Extremely worried,Extremely worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,30 - 44,FALSE,"$200,000 and up",Mountain
+49,Not at all worried,Not at all worried,FALSE,No,FALSE,Extremely familiar,Extremely familiar,18 - 29,FALSE,"$75,000 to $99,999",South Atlantic
+50,Somewhat worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Very familiar,30 - 44,FALSE,"$150,000 to $174,999",Middle Atlantic
+51,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",FALSE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$10,000 to $24,999",Middle Atlantic
+52,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Somewhat familiar,45 - 59,FALSE,"$200,000 and up",Pacific
+53,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Very familiar,30 - 44,FALSE,"$10,000 to $24,999",West North Central
+54,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,45 - 59,FALSE,"$50,000 to $74,999",East South Central
+55,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,30 - 44,FALSE,"$0 to $9,999",East North Central
+56,Extremely worried,Extremely worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$75,000 to $99,999",East North Central
+57,Very worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,45 - 59,FALSE,Prefer not to answer,Pacific
+58,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,Prefer not to answer,West North Central
+59,Very worried,Very worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,18 - 29,FALSE,Prefer not to answer,Pacific
+60,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",West South Central
+61,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",TRUE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$200,000 and up",Pacific
+62,Somewhat worried,Very worried,FALSE,No,FALSE,Somewhat familiar,Very familiar,18 - 29,FALSE,Prefer not to answer,Pacific
+63,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Very familiar,18 - 29,FALSE,Prefer not to answer,Pacific
+64,Somewhat worried,Very worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Not at all familiar,45 - 59,FALSE,"$100,000 to $124,999",Pacific
+65,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,18 - 29,FALSE,Prefer not to answer,Pacific
+66,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,45 - 59,FALSE,"$125,000 to $149,999",Pacific
+67,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,30 - 44,FALSE,"$25,000 to $49,999",Pacific
+68,Very worried,Very worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,18 - 29,FALSE,Prefer not to answer,Pacific
+69,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Very familiar,45 - 59,FALSE,"$75,000 to $99,999",Pacific
+70,Not so worried,Somewhat worried,TRUE,No,TRUE,Somewhat familiar,Not at all familiar,18 - 29,FALSE,Prefer not to answer,Pacific
+71,Somewhat worried,Very worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,Prefer not to answer,Pacific
+72,Extremely worried,Extremely worried,TRUE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,FALSE,Prefer not to answer,Pacific
+73,Very worried,Extremely worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Not at all familiar,18 - 29,FALSE,"$25,000 to $49,999",Pacific
+74,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,18 - 29,FALSE,"$25,000 to $49,999",Pacific
+75,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,30 - 44,FALSE,Prefer not to answer,Pacific
+76,Somewhat worried,Somewhat worried,TRUE,No,TRUE,Somewhat familiar,Very familiar,45 - 59,FALSE,Prefer not to answer,Pacific
+77,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",South Atlantic
+78,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Not at all familiar,30 - 44,FALSE,"$10,000 to $24,999",Pacific
+79,Very worried,Very worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Very familiar,18 - 29,FALSE,"$0 to $9,999",West North Central
+80,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$0 to $9,999",West North Central
+81,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Somewhat familiar,30 - 44,FALSE,"$25,000 to $49,999",West North Central
+82,Extremely worried,Extremely worried,TRUE,"Yes, one or more minor ones",TRUE,Not so familiar,Somewhat familiar,30 - 44,FALSE,"$10,000 to $24,999",East South Central
+83,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Extremely familiar,18 - 29,FALSE,"$100,000 to $124,999",Pacific
+84,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,Prefer not to answer,Pacific
+85,Extremely worried,Extremely worried,TRUE,No,TRUE,Very familiar,Extremely familiar,30 - 44,FALSE,"$10,000 to $24,999",Middle Atlantic
+86,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$200,000 and up",Pacific
+87,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Somewhat familiar,30 - 44,FALSE,"$50,000 to $74,999",Pacific
+88,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,18 - 29,FALSE,"$0 to $9,999",
+89,Extremely worried,Extremely worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,30 - 44,FALSE,Prefer not to answer,West South Central
+90,Not so worried,Not so worried,FALSE,No,FALSE,Very familiar,Not so familiar,45 - 59,FALSE,Prefer not to answer,South Atlantic
+91,Somewhat worried,Somewhat worried,FALSE,No,TRUE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$10,000 to $24,999",
+92,Very worried,Very worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Very familiar,30 - 44,FALSE,"$200,000 and up",Pacific
+93,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Very familiar,45 - 59,FALSE,"$125,000 to $149,999",Middle Atlantic
+94,Extremely worried,Extremely worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Extremely familiar,45 - 59,FALSE,Prefer not to answer,East North Central
+95,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,45 - 59,FALSE,"$100,000 to $124,999",Middle Atlantic
+96,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,FALSE,Prefer not to answer,Pacific
+97,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,FALSE,Prefer not to answer,Pacific
+98,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,Prefer not to answer,South Atlantic
+99,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,18 - 29,FALSE,Prefer not to answer,Pacific
+100,Somewhat worried,Extremely worried,FALSE,"Yes, one or more major ones",TRUE,Very familiar,Somewhat familiar,30 - 44,FALSE,"$0 to $9,999",Pacific
+101,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,30 - 44,FALSE,"$10,000 to $24,999",South Atlantic
+102,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,30 - 44,FALSE,"$0 to $9,999",East North Central
+103,Somewhat worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$100,000 to $124,999",West South Central
+104,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$25,000 to $49,999",East South Central
+105,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$25,000 to $49,999",Mountain
+106,Very worried,Extremely worried,TRUE,No,FALSE,Not at all familiar,Not at all familiar,45 - 59,FALSE,"$50,000 to $74,999",West North Central
+107,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,45 - 59,FALSE,Prefer not to answer,Middle Atlantic
+108,Not at all worried,Not at all worried,TRUE,"Yes, one or more major ones",TRUE,Not so familiar,Not at all familiar,30 - 44,FALSE,"$10,000 to $24,999",South Atlantic
+109,Not so worried,Somewhat worried,TRUE,No,FALSE,Very familiar,Very familiar,30 - 44,FALSE,"$10,000 to $24,999",Middle Atlantic
+110,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$75,000 to $99,999",West South Central
+111,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$100,000 to $124,999",South Atlantic
+112,Not so worried,Not so worried,TRUE,No,FALSE,Not so familiar,Not so familiar,30 - 44,FALSE,"$75,000 to $99,999",East North Central
+113,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$25,000 to $49,999",East South Central
+114,Not so worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Very familiar,45 - 59,FALSE,"$10,000 to $24,999",East North Central
+115,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more major ones",TRUE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",Pacific
+116,Somewhat worried,Somewhat worried,FALSE,No,TRUE,Not so familiar,Somewhat familiar,45 - 59,FALSE,"$150,000 to $174,999",Pacific
+117,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,18 - 29,FALSE,"$50,000 to $74,999",West North Central
+118,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,FALSE,"$75,000 to $99,999",Mountain
+119,Somewhat worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Not so familiar,30 - 44,FALSE,"$25,000 to $49,999",South Atlantic
+120,Extremely worried,Extremely worried,TRUE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,FALSE,Prefer not to answer,Middle Atlantic
+121,Not at all worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,30 - 44,FALSE,Prefer not to answer,East North Central
+122,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",TRUE,Extremely familiar,Somewhat familiar,30 - 44,FALSE,"$50,000 to $74,999",East South Central
+123,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Not at all familiar,45 - 59,FALSE,"$200,000 and up",Pacific
+124,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$125,000 to $149,999",West South Central
+125,Somewhat worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,60+,FALSE,"$25,000 to $49,999",Pacific
+126,Very worried,Very worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,30 - 44,FALSE,"$75,000 to $99,999",Pacific
+127,Somewhat worried,Somewhat worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$50,000 to $74,999",Mountain
+128,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$100,000 to $124,999",East North Central
+129,Not at all worried,Not at all worried,FALSE,No,TRUE,Very familiar,Very familiar,30 - 44,FALSE,"$50,000 to $74,999",West South Central
+130,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Very familiar,30 - 44,FALSE,"$50,000 to $74,999",East North Central
+131,Not so worried,Not so worried,TRUE,No,FALSE,Not so familiar,Not so familiar,18 - 29,FALSE,"$0 to $9,999",South Atlantic
+132,Not at all worried,Not at all worried,FALSE,No,TRUE,Very familiar,Not so familiar,30 - 44,FALSE,"$0 to $9,999",South Atlantic
+133,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,Prefer not to answer,West South Central
+134,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Not at all familiar,60+,FALSE,"$0 to $9,999",Mountain
+135,Not so worried,Somewhat worried,FALSE,"Yes, one or more major ones",TRUE,Somewhat familiar,Very familiar,60+,FALSE,"$25,000 to $49,999",Pacific
+136,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,18 - 29,FALSE,"$25,000 to $49,999",Middle Atlantic
+137,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,60+,FALSE,"$50,000 to $74,999",Mountain
+138,Not at all worried,Not at all worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,30 - 44,FALSE,"$25,000 to $49,999",Mountain
+139,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Not so familiar,60+,FALSE,"$75,000 to $99,999",Mountain
+140,Not at all worried,Not so worried,FALSE,No,FALSE,Very familiar,Very familiar,60+,FALSE,"$50,000 to $74,999",West North Central
+141,Extremely worried,Extremely worried,TRUE,"Yes, one or more minor ones",TRUE,Not at all familiar,Not at all familiar,18 - 29,FALSE,"$0 to $9,999",West South Central
+142,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Not at all familiar,60+,FALSE,"$75,000 to $99,999",Pacific
+143,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$75,000 to $99,999",
+144,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$75,000 to $99,999",West North Central
+145,Very worried,Very worried,TRUE,"Yes, one or more major ones",FALSE,Not so familiar,Not at all familiar,30 - 44,FALSE,"$50,000 to $74,999",
+146,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,30 - 44,FALSE,"$75,000 to $99,999",Middle Atlantic
+147,Very worried,Very worried,TRUE,"Yes, one or more major ones",FALSE,Very familiar,Very familiar,60+,FALSE,"$100,000 to $124,999",Pacific
+148,Not at all worried,Not so worried,FALSE,No,FALSE,Very familiar,Not so familiar,45 - 59,FALSE,"$75,000 to $99,999",West North Central
+149,Not at all worried,Not at all worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Extremely familiar,60+,FALSE,"$200,000 and up",Mountain
+150,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,45 - 59,FALSE,"$25,000 to $49,999",South Atlantic
+151,Not so worried,Somewhat worried,TRUE,No,FALSE,Very familiar,Very familiar,45 - 59,FALSE,"$200,000 and up",East South Central
+152,Not at all worried,Not at all worried,FALSE,,,,,,,,
+153,Extremely worried,Extremely worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,30 - 44,FALSE,"$0 to $9,999",Middle Atlantic
+154,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Very familiar,30 - 44,FALSE,Prefer not to answer,Middle Atlantic
+155,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,60+,FALSE,"$200,000 and up",East North Central
+156,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$50,000 to $74,999",Pacific
+157,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",TRUE,Very familiar,Not so familiar,60+,FALSE,Prefer not to answer,Mountain
+158,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Very familiar,45 - 59,FALSE,"$125,000 to $149,999",Pacific
+159,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$10,000 to $24,999",East North Central
+160,Extremely worried,Extremely worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Extremely familiar,18 - 29,FALSE,"$10,000 to $24,999",West South Central
+161,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,30 - 44,FALSE,"$50,000 to $74,999",Pacific
+162,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",TRUE,Very familiar,Not so familiar,45 - 59,FALSE,"$75,000 to $99,999",South Atlantic
+163,Very worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,,,,,,
+164,Not so worried,Not at all worried,FALSE,No,FALSE,Very familiar,Not so familiar,45 - 59,FALSE,"$75,000 to $99,999",West South Central
+165,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,18 - 29,FALSE,"$50,000 to $74,999",Pacific
+166,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Extremely familiar,18 - 29,FALSE,"$75,000 to $99,999",South Atlantic
+167,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$75,000 to $99,999",Mountain
+168,Not at all worried,Somewhat worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,FALSE,Prefer not to answer,Middle Atlantic
+169,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,45 - 59,FALSE,"$125,000 to $149,999",West South Central
+170,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,18 - 29,FALSE,Prefer not to answer,Middle Atlantic
+171,Extremely worried,Very worried,TRUE,No,FALSE,Not at all familiar,Extremely familiar,18 - 29,FALSE,"$0 to $9,999",West South Central
+172,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",FALSE,Very familiar,Not so familiar,30 - 44,FALSE,Prefer not to answer,Pacific
+173,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",FALSE,Very familiar,Not so familiar,45 - 59,FALSE,"$200,000 and up",Middle Atlantic
+174,Somewhat worried,Somewhat worried,TRUE,No,TRUE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$75,000 to $99,999",Pacific
+175,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Not so familiar,45 - 59,FALSE,"$10,000 to $24,999",West South Central
+176,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,FALSE,Prefer not to answer,New England
+177,Very worried,Extremely worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not so familiar,30 - 44,FALSE,"$10,000 to $24,999",
+178,Somewhat worried,Not at all worried,FALSE,"Yes, one or more minor ones",TRUE,Not at all familiar,Not at all familiar,18 - 29,FALSE,Prefer not to answer,Pacific
+179,Extremely worried,Extremely worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",South Atlantic
+180,Not at all worried,Not at all worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,60+,FALSE,Prefer not to answer,Mountain
+181,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,60+,FALSE,"$125,000 to $149,999",West North Central
+182,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,30 - 44,FALSE,"$125,000 to $149,999",South Atlantic
+183,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",TRUE,Not at all familiar,Not at all familiar,30 - 44,FALSE,Prefer not to answer,
+184,Somewhat worried,Not so worried,TRUE,No,FALSE,Not at all familiar,Somewhat familiar,18 - 29,FALSE,Prefer not to answer,
+185,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",TRUE,Not so familiar,Not so familiar,30 - 44,FALSE,"$75,000 to $99,999",Pacific
+186,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,60+,FALSE,"$50,000 to $74,999",East South Central
+187,Not so worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,45 - 59,FALSE,"$50,000 to $74,999",Middle Atlantic
+188,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,60+,FALSE,"$50,000 to $74,999",South Atlantic
+189,Very worried,Very worried,FALSE,"Yes, one or more major ones",TRUE,Very familiar,Very familiar,30 - 44,FALSE,"$200,000 and up",Pacific
+190,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,60+,FALSE,Prefer not to answer,West South Central
+191,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,30 - 44,FALSE,"$50,000 to $74,999",East North Central
+192,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,60+,FALSE,"$75,000 to $99,999",Middle Atlantic
+193,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,Prefer not to answer,Middle Atlantic
+194,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$100,000 to $124,999",Middle Atlantic
+195,Not so worried,Somewhat worried,TRUE,"Yes, one or more major ones",FALSE,Very familiar,Not so familiar,60+,TRUE,"$125,000 to $149,999",Middle Atlantic
+196,Somewhat worried,Not so worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Very familiar,30 - 44,FALSE,"$75,000 to $99,999",New England
+197,Not so worried,Somewhat worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$200,000 and up",East North Central
+198,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,60+,TRUE,Prefer not to answer,South Atlantic
+199,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,Prefer not to answer,West North Central
+200,Not so worried,Not so worried,TRUE,No,FALSE,Very familiar,Very familiar,30 - 44,FALSE,"$0 to $9,999",East North Central
+201,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,60+,TRUE,"$10,000 to $24,999",East North Central
+202,Somewhat worried,Very worried,TRUE,"Yes, one or more major ones",FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$75,000 to $99,999",Mountain
+203,Not at all worried,Somewhat worried,FALSE,No,FALSE,Somewhat familiar,Very familiar,45 - 59,FALSE,"$125,000 to $149,999",South Atlantic
+204,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,60+,FALSE,"$25,000 to $49,999",South Atlantic
+205,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",TRUE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",Mountain
+206,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,60+,FALSE,"$125,000 to $149,999",Middle Atlantic
+207,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Not so familiar,Not so familiar,30 - 44,FALSE,"$75,000 to $99,999",South Atlantic
+208,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,30 - 44,FALSE,"$175,000 to $199,999",West South Central
+209,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Very familiar,45 - 59,FALSE,"$100,000 to $124,999",Pacific
+210,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more major ones",FALSE,Somewhat familiar,Very familiar,60+,TRUE,"$150,000 to $174,999",Pacific
+211,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,30 - 44,FALSE,"$150,000 to $174,999",Middle Atlantic
+212,Not at all worried,Not at all worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$25,000 to $49,999",West South Central
+213,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Very familiar,18 - 29,TRUE,Prefer not to answer,Pacific
+214,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Somewhat familiar,18 - 29,TRUE,"$25,000 to $49,999",Mountain
+215,Not at all worried,Very worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$25,000 to $49,999",East North Central
+216,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,30 - 44,FALSE,"$25,000 to $49,999",South Atlantic
+217,Not at all worried,Not at all worried,FALSE,No,FALSE,Extremely familiar,Extremely familiar,30 - 44,FALSE,"$25,000 to $49,999",East South Central
+218,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Very familiar,45 - 59,FALSE,"$100,000 to $124,999",Middle Atlantic
+219,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Not at all familiar,60+,TRUE,"$50,000 to $74,999",Pacific
+220,Very worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,18 - 29,TRUE,"$10,000 to $24,999",Pacific
+221,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$0 to $9,999",West South Central
+222,Not at all worried,Not at all worried,TRUE,No,FALSE,Not at all familiar,Not at all familiar,60+,FALSE,"$25,000 to $49,999",East North Central
+223,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$25,000 to $49,999",West North Central
+224,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Somewhat familiar,18 - 29,TRUE,"$25,000 to $49,999",Pacific
+225,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,60+,TRUE,"$50,000 to $74,999",East South Central
+226,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Somewhat familiar,60+,FALSE,"$50,000 to $74,999",East North Central
+227,Very worried,Extremely worried,FALSE,"Yes, one or more minor ones",TRUE,Extremely familiar,Somewhat familiar,45 - 59,FALSE,"$25,000 to $49,999",South Atlantic
+228,Not at all worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,Prefer not to answer,West North Central
+229,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Extremely familiar,18 - 29,TRUE,"$25,000 to $49,999",Middle Atlantic
+230,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,45 - 59,FALSE,"$75,000 to $99,999",West South Central
+231,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,60+,TRUE,"$25,000 to $49,999",South Atlantic
+232,Somewhat worried,Very worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,Prefer not to answer,Pacific
+233,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",TRUE,Very familiar,Somewhat familiar,60+,TRUE,"$125,000 to $149,999",East South Central
+234,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$175,000 to $199,999",East North Central
+235,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$125,000 to $149,999",Mountain
+236,Not so worried,Not so worried,TRUE,No,FALSE,Very familiar,Very familiar,30 - 44,FALSE,"$25,000 to $49,999",New England
+237,Extremely worried,Extremely worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$0 to $9,999",
+238,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$75,000 to $99,999",South Atlantic
+239,Not so worried,Very worried,FALSE,No,TRUE,Not so familiar,Somewhat familiar,30 - 44,FALSE,"$10,000 to $24,999",South Atlantic
+240,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,FALSE,"$50,000 to $74,999",West South Central
+241,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,18 - 29,TRUE,"$0 to $9,999",South Atlantic
+242,Not so worried,Very worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,60+,FALSE,"$75,000 to $99,999",East North Central
+243,Somewhat worried,Not so worried,TRUE,"Yes, one or more major ones",FALSE,Extremely familiar,Somewhat familiar,60+,FALSE,"$125,000 to $149,999",West South Central
+244,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$75,000 to $99,999",Pacific
+245,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",TRUE,Not so familiar,Not so familiar,60+,FALSE,"$50,000 to $74,999",Pacific
+246,Extremely worried,Extremely worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,45 - 59,FALSE,"$50,000 to $74,999",West North Central
+247,Somewhat worried,Very worried,TRUE,No,FALSE,Very familiar,Somewhat familiar,30 - 44,FALSE,"$50,000 to $74,999",New England
+248,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Not so familiar,60+,TRUE,Prefer not to answer,East South Central
+249,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$100,000 to $124,999",New England
+250,Very worried,Extremely worried,TRUE,"Yes, one or more minor ones",FALSE,Not so familiar,Not so familiar,18 - 29,TRUE,Prefer not to answer,New England
+251,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,60+,FALSE,"$25,000 to $49,999",East North Central
+252,Very worried,Extremely worried,FALSE,No,TRUE,Not so familiar,Not so familiar,18 - 29,TRUE,Prefer not to answer,East North Central
+253,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not so familiar,60+,TRUE,"$75,000 to $99,999",Middle Atlantic
+254,Very worried,Extremely worried,TRUE,No,FALSE,Somewhat familiar,Extremely familiar,18 - 29,FALSE,"$0 to $9,999",West North Central
+255,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",FALSE,Very familiar,Extremely familiar,60+,FALSE,"$50,000 to $74,999",Mountain
+256,Extremely worried,Extremely worried,TRUE,No,TRUE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$0 to $9,999",East North Central
+257,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",TRUE,Not at all familiar,Not at all familiar,60+,FALSE,"$50,000 to $74,999",Middle Atlantic
+258,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,60+,TRUE,Prefer not to answer,West North Central
+259,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,60+,FALSE,"$75,000 to $99,999",East North Central
+260,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$100,000 to $124,999",Middle Atlantic
+261,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,"$25,000 to $49,999",West North Central
+262,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$75,000 to $99,999",West North Central
+263,Extremely worried,Extremely worried,TRUE,No,FALSE,Very familiar,Not so familiar,18 - 29,TRUE,"$0 to $9,999",East North Central
+264,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Very familiar,30 - 44,FALSE,Prefer not to answer,Mountain
+265,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Not so familiar,Somewhat familiar,18 - 29,TRUE,"$50,000 to $74,999",Pacific
+266,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$50,000 to $74,999",East North Central
+267,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$50,000 to $74,999",South Atlantic
+268,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$50,000 to $74,999",New England
+269,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,45 - 59,TRUE,"$175,000 to $199,999",West South Central
+270,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Not at all familiar,18 - 29,FALSE,"$0 to $9,999",West South Central
+271,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",FALSE,Very familiar,Not at all familiar,45 - 59,FALSE,"$50,000 to $74,999",Mountain
+272,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,60+,FALSE,"$10,000 to $24,999",Mountain
+273,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Very familiar,45 - 59,TRUE,Prefer not to answer,East North Central
+274,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,"$25,000 to $49,999",Pacific
+275,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",FALSE,Extremely familiar,Very familiar,60+,TRUE,"$25,000 to $49,999",Mountain
+276,Not so worried,Not at all worried,FALSE,"Yes, one or more major ones",FALSE,Extremely familiar,Somewhat familiar,30 - 44,FALSE,Prefer not to answer,Pacific
+277,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,"$125,000 to $149,999",West South Central
+278,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$10,000 to $24,999",West North Central
+279,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,45 - 59,FALSE,"$125,000 to $149,999",East North Central
+280,Not at all worried,Not so worried,TRUE,No,FALSE,Very familiar,Somewhat familiar,18 - 29,TRUE,"$25,000 to $49,999",West North Central
+281,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$0 to $9,999",West North Central
+282,Very worried,Very worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,Prefer not to answer,Pacific
+283,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Extremely familiar,60+,TRUE,"$50,000 to $74,999",East North Central
+284,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$125,000 to $149,999",Middle Atlantic
+285,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$175,000 to $199,999",New England
+286,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,18 - 29,TRUE,"$25,000 to $49,999",East South Central
+287,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,60+,FALSE,"$50,000 to $74,999",West North Central
+288,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Not at all familiar,Not so familiar,45 - 59,TRUE,"$0 to $9,999",West South Central
+289,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",TRUE,Not so familiar,Not so familiar,45 - 59,TRUE,"$25,000 to $49,999",Pacific
+290,Very worried,Very worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Very familiar,45 - 59,TRUE,"$25,000 to $49,999",Mountain
+291,Somewhat worried,Somewhat worried,TRUE,No,FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$175,000 to $199,999",West South Central
+292,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",FALSE,Somewhat familiar,Very familiar,45 - 59,FALSE,"$75,000 to $99,999",New England
+293,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Not so familiar,Not so familiar,30 - 44,TRUE,Prefer not to answer,South Atlantic
+294,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$75,000 to $99,999",
+295,Not at all worried,Somewhat worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,Prefer not to answer,East North Central
+296,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Not at all familiar,30 - 44,FALSE,"$50,000 to $74,999",Middle Atlantic
+297,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$10,000 to $24,999",South Atlantic
+298,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,45 - 59,FALSE,"$125,000 to $149,999",Pacific
+299,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,30 - 44,TRUE,"$200,000 and up",West North Central
+300,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Not so familiar,Not so familiar,30 - 44,TRUE,"$25,000 to $49,999",West North Central
+301,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,45 - 59,TRUE,"$50,000 to $74,999",West North Central
+302,Not so worried,Not so worried,TRUE,No,FALSE,Extremely familiar,Extremely familiar,30 - 44,TRUE,"$125,000 to $149,999",East North Central
+303,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not so familiar,30 - 44,TRUE,"$75,000 to $99,999",East North Central
+304,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$10,000 to $24,999",East North Central
+305,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$50,000 to $74,999",West South Central
+306,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Not at all familiar,60+,TRUE,Prefer not to answer,East North Central
+307,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Extremely familiar,30 - 44,TRUE,Prefer not to answer,Pacific
+308,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,60+,FALSE,"$150,000 to $174,999",West South Central
+309,Somewhat worried,Somewhat worried,TRUE,No,FALSE,Not so familiar,Somewhat familiar,45 - 59,TRUE,"$100,000 to $124,999",East North Central
+310,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Very familiar,18 - 29,TRUE,"$75,000 to $99,999",West South Central
+311,Not so worried,Somewhat worried,TRUE,No,FALSE,Not at all familiar,Somewhat familiar,30 - 44,FALSE,"$50,000 to $74,999",West South Central
+312,Not so worried,Not at all worried,TRUE,"Yes, one or more major ones",FALSE,Not so familiar,Not so familiar,45 - 59,TRUE,"$75,000 to $99,999",Pacific
+313,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,60+,FALSE,Prefer not to answer,West South Central
+314,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$100,000 to $124,999",West North Central
+315,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$25,000 to $49,999",East South Central
+316,Somewhat worried,Not at all worried,FALSE,"Yes, one or more major ones",TRUE,Very familiar,Somewhat familiar,30 - 44,FALSE,"$25,000 to $49,999",New England
+317,Somewhat worried,Not so worried,FALSE,"Yes, one or more major ones",FALSE,Not so familiar,Not at all familiar,30 - 44,TRUE,"$10,000 to $24,999",
+318,Not at all worried,Not at all worried,TRUE,No,FALSE,Not so familiar,Not so familiar,60+,FALSE,"$50,000 to $74,999",West North Central
+319,Not so worried,Not at all worried,FALSE,No,FALSE,Very familiar,Somewhat familiar,18 - 29,TRUE,"$0 to $9,999",Middle Atlantic
+320,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Very familiar,18 - 29,TRUE,"$25,000 to $49,999",Mountain
+321,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Very familiar,30 - 44,FALSE,"$10,000 to $24,999",Pacific
+322,Somewhat worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$25,000 to $49,999",West South Central
+323,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Somewhat familiar,45 - 59,TRUE,Prefer not to answer,West South Central
+324,Not at all worried,Extremely worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,30 - 44,FALSE,Prefer not to answer,South Atlantic
+325,Extremely worried,Very worried,TRUE,"Yes, one or more major ones",FALSE,Very familiar,Extremely familiar,30 - 44,TRUE,"$100,000 to $124,999",East North Central
+326,Extremely worried,Extremely worried,TRUE,No,FALSE,Not so familiar,Not so familiar,30 - 44,FALSE,Prefer not to answer,Middle Atlantic
+327,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Somewhat familiar,30 - 44,TRUE,"$175,000 to $199,999",Pacific
+328,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$25,000 to $49,999",East North Central
+329,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,60+,TRUE,Prefer not to answer,Middle Atlantic
+330,Not so worried,Not so worried,FALSE,No,FALSE,Very familiar,Very familiar,45 - 59,FALSE,Prefer not to answer,Middle Atlantic
+331,Not so worried,Somewhat worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,60+,TRUE,Prefer not to answer,East South Central
+332,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$25,000 to $49,999",Middle Atlantic
+333,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more major ones",FALSE,Very familiar,Extremely familiar,60+,TRUE,"$10,000 to $24,999",Pacific
+334,Not so worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Not at all familiar,18 - 29,TRUE,"$75,000 to $99,999",New England
+335,Not so worried,Not so worried,TRUE,No,FALSE,Very familiar,Somewhat familiar,60+,FALSE,"$100,000 to $124,999",East North Central
+336,Extremely worried,Extremely worried,TRUE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$0 to $9,999",Pacific
+337,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$150,000 to $174,999",Pacific
+338,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,30 - 44,FALSE,"$100,000 to $124,999",South Atlantic
+339,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,30 - 44,TRUE,"$125,000 to $149,999",South Atlantic
+340,Somewhat worried,Not so worried,TRUE,No,FALSE,Not at all familiar,Not at all familiar,30 - 44,TRUE,"$100,000 to $124,999",Middle Atlantic
+341,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$50,000 to $74,999",East North Central
+342,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,FALSE,Prefer not to answer,Pacific
+343,Not at all worried,Not so worried,FALSE,No,FALSE,Very familiar,Very familiar,30 - 44,TRUE,"$100,000 to $124,999",New England
+344,Somewhat worried,Somewhat worried,TRUE,No,FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,"$100,000 to $124,999",East North Central
+345,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,45 - 59,TRUE,"$200,000 and up",Middle Atlantic
+346,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,18 - 29,TRUE,"$10,000 to $24,999",South Atlantic
+347,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,Prefer not to answer,West South Central
+348,Very worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,60+,TRUE,"$50,000 to $74,999",South Atlantic
+349,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,45 - 59,FALSE,"$150,000 to $174,999",Middle Atlantic
+350,Not so worried,Not so worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,45 - 59,TRUE,Prefer not to answer,Middle Atlantic
+351,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,Prefer not to answer,East South Central
+352,Not at all worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,45 - 59,TRUE,"$75,000 to $99,999",East North Central
+353,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,45 - 59,FALSE,"$0 to $9,999",Middle Atlantic
+354,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,18 - 29,TRUE,Prefer not to answer,East North Central
+355,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,60+,TRUE,Prefer not to answer,Middle Atlantic
+356,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Not so familiar,60+,FALSE,"$75,000 to $99,999",New England
+357,Not so worried,Not so worried,FALSE,No,FALSE,Very familiar,Somewhat familiar,18 - 29,FALSE,Prefer not to answer,New England
+358,Extremely worried,Extremely worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,18 - 29,FALSE,"$0 to $9,999",South Atlantic
+359,Extremely worried,Extremely worried,TRUE,No,FALSE,,,,,,
+360,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$0 to $9,999",East South Central
+361,Not at all worried,Not at all worried,TRUE,No,FALSE,Not so familiar,Not at all familiar,45 - 59,FALSE,Prefer not to answer,
+362,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,Prefer not to answer,New England
+363,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$75,000 to $99,999",Middle Atlantic
+364,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,60+,TRUE,"$50,000 to $74,999",Middle Atlantic
+365,Not so worried,Not so worried,TRUE,No,FALSE,Very familiar,Somewhat familiar,18 - 29,FALSE,"$100,000 to $124,999",South Atlantic
+366,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$75,000 to $99,999",West South Central
+367,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$150,000 to $174,999",East North Central
+368,Not at all worried,Not at all worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Very familiar,45 - 59,FALSE,"$200,000 and up",Pacific
+369,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,18 - 29,TRUE,Prefer not to answer,East North Central
+370,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$75,000 to $99,999",West North Central
+371,Not so worried,Not so worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,45 - 59,TRUE,Prefer not to answer,Middle Atlantic
+372,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Somewhat familiar,60+,FALSE,"$0 to $9,999",South Atlantic
+373,Somewhat worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,60+,TRUE,"$25,000 to $49,999",East North Central
+374,Somewhat worried,Not so worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Very familiar,60+,TRUE,"$25,000 to $49,999",Mountain
+375,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,"$75,000 to $99,999",New England
+376,Not at all worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,30 - 44,TRUE,"$75,000 to $99,999",Middle Atlantic
+377,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",TRUE,Very familiar,Not so familiar,60+,FALSE,"$75,000 to $99,999",West North Central
+378,Not so worried,Somewhat worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$100,000 to $124,999",East North Central
+379,Not so worried,Somewhat worried,TRUE,No,FALSE,Very familiar,Very familiar,45 - 59,FALSE,"$50,000 to $74,999",West South Central
+380,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,60+,TRUE,"$25,000 to $49,999",Mountain
+381,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,60+,FALSE,Prefer not to answer,Pacific
+382,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,Prefer not to answer,East North Central
+383,Not so worried,Somewhat worried,FALSE,"Yes, one or more major ones",TRUE,Very familiar,Very familiar,60+,FALSE,Prefer not to answer,Pacific
+384,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Somewhat familiar,30 - 44,FALSE,"$25,000 to $49,999",New England
+385,Not so worried,Somewhat worried,TRUE,No,FALSE,Somewhat familiar,Not so familiar,18 - 29,TRUE,Prefer not to answer,Pacific
+386,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$50,000 to $74,999",West North Central
+387,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Somewhat familiar,45 - 59,TRUE,"$50,000 to $74,999",Pacific
+388,Somewhat worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Not so familiar,45 - 59,TRUE,Prefer not to answer,Pacific
+389,Extremely worried,Extremely worried,TRUE,"Yes, one or more minor ones",TRUE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$10,000 to $24,999",South Atlantic
+390,Very worried,Very worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Very familiar,30 - 44,TRUE,"$125,000 to $149,999",Pacific
+391,Not so worried,Not so worried,FALSE,No,FALSE,Not at all familiar,Somewhat familiar,60+,TRUE,"$10,000 to $24,999",West South Central
+392,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,60+,FALSE,"$75,000 to $99,999",South Atlantic
+393,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Very familiar,30 - 44,FALSE,"$10,000 to $24,999",South Atlantic
+394,Very worried,Very worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,18 - 29,TRUE,Prefer not to answer,East North Central
+395,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Somewhat familiar,30 - 44,TRUE,"$25,000 to $49,999",South Atlantic
+396,Very worried,Extremely worried,TRUE,,,,,,,,
+397,Not so worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$100,000 to $124,999",East North Central
+398,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,"$25,000 to $49,999",West North Central
+399,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,45 - 59,TRUE,Prefer not to answer,South Atlantic
+400,Not so worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$75,000 to $99,999",West North Central
+401,Not so worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Very familiar,18 - 29,FALSE,"$25,000 to $49,999",Middle Atlantic
+402,Somewhat worried,Very worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Somewhat familiar,18 - 29,TRUE,"$25,000 to $49,999",Pacific
+403,Not at all worried,Not so worried,FALSE,"Yes, one or more major ones",TRUE,Very familiar,Very familiar,60+,FALSE,"$75,000 to $99,999",Pacific
+404,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,Prefer not to answer,West North Central
+405,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$150,000 to $174,999",South Atlantic
+406,Extremely worried,Somewhat worried,FALSE,No,FALSE,Very familiar,Somewhat familiar,18 - 29,TRUE,"$0 to $9,999",West South Central
+407,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Somewhat familiar,18 - 29,TRUE,"$50,000 to $74,999",South Atlantic
+408,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",FALSE,Extremely familiar,Extremely familiar,30 - 44,TRUE,"$10,000 to $24,999",West South Central
+409,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Extremely familiar,60+,TRUE,"$50,000 to $74,999",Pacific
+410,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$200,000 and up",East North Central
+411,Somewhat worried,Very worried,FALSE,"Yes, one or more major ones",TRUE,Very familiar,Somewhat familiar,30 - 44,TRUE,"$150,000 to $174,999",Pacific
+412,Very worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Very familiar,60+,TRUE,"$50,000 to $74,999",Pacific
+413,Somewhat worried,Somewhat worried,TRUE,No,FALSE,Somewhat familiar,Very familiar,45 - 59,TRUE,"$50,000 to $74,999",Mountain
+414,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$75,000 to $99,999",East North Central
+415,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$25,000 to $49,999",Middle Atlantic
+416,Extremely worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$75,000 to $99,999",New England
+417,Very worried,Extremely worried,TRUE,No,TRUE,Very familiar,Not so familiar,60+,FALSE,"$0 to $9,999",South Atlantic
+418,Not so worried,Somewhat worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$50,000 to $74,999",East South Central
+419,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,Prefer not to answer,East South Central
+420,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Not so familiar,45 - 59,FALSE,"$75,000 to $99,999",West South Central
+421,Very worried,Very worried,TRUE,No,FALSE,Not at all familiar,Not at all familiar,45 - 59,TRUE,"$0 to $9,999",New England
+422,Extremely worried,Extremely worried,TRUE,"Yes, one or more minor ones",TRUE,Not at all familiar,Somewhat familiar,30 - 44,FALSE,"$50,000 to $74,999",South Atlantic
+423,Not so worried,Extremely worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,30 - 44,TRUE,Prefer not to answer,South Atlantic
+424,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$0 to $9,999",Middle Atlantic
+425,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,Prefer not to answer,Mountain
+426,Not at all worried,Not so worried,FALSE,"Yes, one or more major ones",FALSE,Very familiar,Not so familiar,60+,FALSE,"$125,000 to $149,999",West South Central
+427,Not at all worried,Not at all worried,TRUE,"Yes, one or more major ones",FALSE,Very familiar,Very familiar,18 - 29,FALSE,"$75,000 to $99,999",Pacific
+428,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Somewhat familiar,30 - 44,FALSE,"$50,000 to $74,999",East North Central
+429,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$25,000 to $49,999",Middle Atlantic
+430,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Very familiar,45 - 59,TRUE,"$25,000 to $49,999",Mountain
+431,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,30 - 44,FALSE,"$10,000 to $24,999",West South Central
+432,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,45 - 59,TRUE,"$50,000 to $74,999",Pacific
+433,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$75,000 to $99,999",West South Central
+434,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$50,000 to $74,999",Middle Atlantic
+435,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,60+,TRUE,"$200,000 and up",West North Central
+436,Extremely worried,Extremely worried,TRUE,No,FALSE,Not at all familiar,Not at all familiar,45 - 59,TRUE,"$10,000 to $24,999",West South Central
+437,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,60+,FALSE,"$175,000 to $199,999",New England
+438,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$25,000 to $49,999",East North Central
+439,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,60+,TRUE,"$125,000 to $149,999",Mountain
+440,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,"$75,000 to $99,999",Middle Atlantic
+441,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$100,000 to $124,999",South Atlantic
+442,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",FALSE,Very familiar,Somewhat familiar,45 - 59,TRUE,"$150,000 to $174,999",New England
+443,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not so familiar,30 - 44,FALSE,"$50,000 to $74,999",East North Central
+444,Extremely worried,Very worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Somewhat familiar,60+,TRUE,"$25,000 to $49,999",Pacific
+445,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",New England
+446,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",FALSE,Very familiar,Not at all familiar,30 - 44,TRUE,Prefer not to answer,Pacific
+447,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",TRUE,Not so familiar,Not so familiar,60+,TRUE,"$10,000 to $24,999",South Atlantic
+448,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Not so familiar,45 - 59,TRUE,"$175,000 to $199,999",West South Central
+449,Not so worried,Somewhat worried,FALSE,"Yes, one or more major ones",FALSE,Very familiar,Very familiar,45 - 59,FALSE,"$25,000 to $49,999",Mountain
+450,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,Prefer not to answer,East North Central
+451,Not so worried,Not so worried,FALSE,No,FALSE,Not at all familiar,Not so familiar,30 - 44,TRUE,"$100,000 to $124,999",South Atlantic
+452,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,45 - 59,TRUE,"$25,000 to $49,999",Pacific
+453,Extremely worried,Very worried,FALSE,"Yes, one or more major ones",TRUE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$25,000 to $49,999",
+454,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$200,000 and up",New England
+455,Not at all worried,Not at all worried,FALSE,No,TRUE,Very familiar,Very familiar,30 - 44,TRUE,Prefer not to answer,Pacific
+456,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,30 - 44,FALSE,Prefer not to answer,South Atlantic
+457,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Extremely familiar,60+,FALSE,"$200,000 and up",West South Central
+458,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",FALSE,Extremely familiar,Somewhat familiar,45 - 59,TRUE,Prefer not to answer,Pacific
+459,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not so familiar,45 - 59,TRUE,"$100,000 to $124,999",East North Central
+460,Not so worried,Somewhat worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,45 - 59,FALSE,"$100,000 to $124,999",East North Central
+461,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,60+,TRUE,Prefer not to answer,New England
+462,Somewhat worried,Somewhat worried,FALSE,No,TRUE,Very familiar,Very familiar,30 - 44,TRUE,"$0 to $9,999",South Atlantic
+463,Not so worried,Not so worried,FALSE,No,FALSE,Very familiar,Very familiar,60+,TRUE,"$175,000 to $199,999",New England
+464,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",FALSE,Very familiar,Not so familiar,45 - 59,TRUE,"$10,000 to $24,999",Pacific
+465,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",TRUE,Very familiar,Not at all familiar,45 - 59,TRUE,"$75,000 to $99,999",West North Central
+466,Not at all worried,Not at all worried,TRUE,No,FALSE,Very familiar,Not at all familiar,18 - 29,TRUE,Prefer not to answer,Middle Atlantic
+467,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Not so familiar,60+,FALSE,"$50,000 to $74,999",New England
+468,Not so worried,Not so worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,60+,TRUE,"$0 to $9,999",East South Central
+469,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$25,000 to $49,999",South Atlantic
+470,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Somewhat familiar,45 - 59,TRUE,"$50,000 to $74,999",South Atlantic
+471,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$10,000 to $24,999",New England
+472,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,60+,TRUE,"$50,000 to $74,999",Middle Atlantic
+473,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$50,000 to $74,999",Mountain
+474,Not at all worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$150,000 to $174,999",East North Central
+475,Not so worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,"$10,000 to $24,999",Middle Atlantic
+476,Not at all worried,Not so worried,FALSE,No,FALSE,Very familiar,Not so familiar,30 - 44,TRUE,"$125,000 to $149,999",East North Central
+477,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,30 - 44,TRUE,"$50,000 to $74,999",South Atlantic
+478,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",FALSE,Not so familiar,Not so familiar,60+,FALSE,"$10,000 to $24,999",West South Central
+479,Very worried,Very worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Very familiar,30 - 44,FALSE,"$200,000 and up",Pacific
+480,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,30 - 44,TRUE,"$25,000 to $49,999",East North Central
+481,Somewhat worried,Somewhat worried,TRUE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,Prefer not to answer,Middle Atlantic
+482,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$150,000 to $174,999",West South Central
+483,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not so familiar,45 - 59,TRUE,"$0 to $9,999",
+484,Not at all worried,Somewhat worried,TRUE,No,FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,Prefer not to answer,East North Central
+485,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",FALSE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",Pacific
+486,Not so worried,Somewhat worried,FALSE,No,FALSE,Somewhat familiar,Very familiar,18 - 29,TRUE,"$100,000 to $124,999",South Atlantic
+487,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,"$75,000 to $99,999",East North Central
+488,Somewhat worried,Somewhat worried,TRUE,No,TRUE,Very familiar,Somewhat familiar,30 - 44,TRUE,Prefer not to answer,Mountain
+489,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,"$100,000 to $124,999",East North Central
+490,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,18 - 29,TRUE,"$50,000 to $74,999",West North Central
+491,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,60+,FALSE,"$100,000 to $124,999",Middle Atlantic
+492,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,"$125,000 to $149,999",South Atlantic
+493,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$100,000 to $124,999",Middle Atlantic
+494,Somewhat worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,Prefer not to answer,Mountain
+495,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$50,000 to $74,999",West South Central
+496,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Very familiar,60+,FALSE,"$50,000 to $74,999",East North Central
+497,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,45 - 59,FALSE,"$50,000 to $74,999",Middle Atlantic
+498,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,"$100,000 to $124,999",South Atlantic
+499,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,Prefer not to answer,South Atlantic
+500,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,45 - 59,FALSE,"$200,000 and up",South Atlantic
+501,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Somewhat familiar,60+,TRUE,"$25,000 to $49,999",South Atlantic
+502,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,60+,TRUE,"$25,000 to $49,999",South Atlantic
+503,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Not at all familiar,45 - 59,FALSE,"$100,000 to $124,999",South Atlantic
+504,Extremely worried,Extremely worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Not at all familiar,60+,TRUE,"$75,000 to $99,999",Pacific
+505,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Not so familiar,Somewhat familiar,30 - 44,FALSE,"$50,000 to $74,999",Pacific
+506,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,45 - 59,FALSE,"$125,000 to $149,999",West South Central
+507,Very worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,18 - 29,TRUE,"$125,000 to $149,999",West South Central
+508,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,60+,FALSE,Prefer not to answer,New England
+509,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,45 - 59,FALSE,Prefer not to answer,East North Central
+510,Very worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Not at all familiar,60+,TRUE,Prefer not to answer,Pacific
+511,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$75,000 to $99,999",South Atlantic
+512,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,45 - 59,FALSE,"$125,000 to $149,999",
+513,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Extremely familiar,30 - 44,FALSE,"$50,000 to $74,999",Middle Atlantic
+514,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,30 - 44,FALSE,"$50,000 to $74,999",East South Central
+515,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$100,000 to $124,999",Pacific
+516,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,18 - 29,TRUE,"$25,000 to $49,999",East North Central
+517,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Very familiar,18 - 29,FALSE,"$150,000 to $174,999",Pacific
+518,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,45 - 59,TRUE,"$75,000 to $99,999",West South Central
+519,Somewhat worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,45 - 59,TRUE,"$25,000 to $49,999",East North Central
+520,Very worried,Very worried,FALSE,"Yes, one or more major ones",TRUE,Somewhat familiar,Not so familiar,60+,TRUE,"$50,000 to $74,999",Pacific
+521,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Somewhat familiar,18 - 29,TRUE,"$0 to $9,999",West South Central
+522,Somewhat worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$25,000 to $49,999",Middle Atlantic
+523,Not so worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,"$25,000 to $49,999",South Atlantic
+524,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$150,000 to $174,999",East South Central
+525,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",FALSE,Extremely familiar,Not at all familiar,60+,TRUE,"$25,000 to $49,999",Pacific
+526,Extremely worried,Very worried,TRUE,No,FALSE,Not at all familiar,Not at all familiar,30 - 44,TRUE,"$75,000 to $99,999",East North Central
+527,Not at all worried,Not at all worried,TRUE,No,FALSE,Extremely familiar,Very familiar,45 - 59,TRUE,"$75,000 to $99,999",West North Central
+528,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,60+,TRUE,"$10,000 to $24,999",South Atlantic
+529,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,60+,TRUE,"$50,000 to $74,999",New England
+530,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,30 - 44,FALSE,"$25,000 to $49,999",West South Central
+531,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,"$10,000 to $24,999",Pacific
+532,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",West South Central
+533,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$25,000 to $49,999",South Atlantic
+534,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Somewhat familiar,30 - 44,TRUE,Prefer not to answer,West South Central
+535,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,"$200,000 and up",East North Central
+536,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Very familiar,60+,TRUE,"$125,000 to $149,999",Pacific
+537,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not so familiar,45 - 59,FALSE,"$25,000 to $49,999",East South Central
+538,Somewhat worried,Not so worried,FALSE,No,FALSE,Not so familiar,Very familiar,30 - 44,TRUE,"$200,000 and up",West North Central
+539,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$10,000 to $24,999",East North Central
+540,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Very familiar,45 - 59,TRUE,"$10,000 to $24,999",Mountain
+541,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,45 - 59,TRUE,"$125,000 to $149,999",South Atlantic
+542,Not at all worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,60+,TRUE,"$50,000 to $74,999",West South Central
+543,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,18 - 29,FALSE,"$10,000 to $24,999",Middle Atlantic
+544,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,18 - 29,TRUE,Prefer not to answer,South Atlantic
+545,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,Prefer not to answer,East North Central
+546,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,"$100,000 to $124,999",Middle Atlantic
+547,Somewhat worried,Somewhat worried,TRUE,No,FALSE,Not at all familiar,Not at all familiar,60+,FALSE,"$10,000 to $24,999",West South Central
+548,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$75,000 to $99,999",Pacific
+549,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Somewhat familiar,30 - 44,TRUE,"$200,000 and up",East North Central
+550,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,18 - 29,FALSE,"$10,000 to $24,999",South Atlantic
+551,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Extremely familiar,60+,TRUE,Prefer not to answer,Mountain
+552,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",FALSE,Extremely familiar,Somewhat familiar,30 - 44,FALSE,"$50,000 to $74,999",Pacific
+553,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,18 - 29,TRUE,"$25,000 to $49,999",West North Central
+554,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Not at all familiar,60+,TRUE,"$25,000 to $49,999",Pacific
+555,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not so familiar,18 - 29,TRUE,Prefer not to answer,New England
+556,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Extremely familiar,30 - 44,FALSE,"$150,000 to $174,999",Mountain
+557,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,60+,TRUE,"$150,000 to $174,999",South Atlantic
+558,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,Prefer not to answer,West South Central
+559,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,30 - 44,FALSE,"$75,000 to $99,999",Middle Atlantic
+560,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,60+,TRUE,"$25,000 to $49,999",East North Central
+561,Very worried,Extremely worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,45 - 59,FALSE,"$25,000 to $49,999",East North Central
+562,Not at all worried,Not so worried,FALSE,No,TRUE,Somewhat familiar,Not at all familiar,45 - 59,FALSE,"$50,000 to $74,999",West South Central
+563,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,60+,TRUE,"$50,000 to $74,999",Middle Atlantic
+564,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Extremely familiar,30 - 44,TRUE,"$25,000 to $49,999",Pacific
+565,Somewhat worried,Very worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Not at all familiar,45 - 59,TRUE,Prefer not to answer,Mountain
+566,Not so worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,"$10,000 to $24,999",East North Central
+567,Not so worried,Not at all worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Not at all familiar,60+,FALSE,"$200,000 and up",Pacific
+568,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,45 - 59,TRUE,"$200,000 and up",West South Central
+569,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$10,000 to $24,999",New England
+570,Somewhat worried,Not so worried,FALSE,No,TRUE,Not at all familiar,Not at all familiar,45 - 59,FALSE,"$0 to $9,999",East North Central
+571,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$75,000 to $99,999",South Atlantic
+572,Not so worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Very familiar,18 - 29,TRUE,"$25,000 to $49,999",Mountain
+573,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$50,000 to $74,999",Middle Atlantic
+574,Somewhat worried,Somewhat worried,TRUE,No,TRUE,Not so familiar,Somewhat familiar,45 - 59,TRUE,"$10,000 to $24,999",South Atlantic
+575,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Somewhat familiar,18 - 29,FALSE,Prefer not to answer,Middle Atlantic
+576,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Very familiar,60+,FALSE,"$25,000 to $49,999",South Atlantic
+577,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,60+,TRUE,"$50,000 to $74,999",Mountain
+578,Somewhat worried,Somewhat worried,TRUE,No,FALSE,Very familiar,Somewhat familiar,45 - 59,TRUE,"$200,000 and up",West South Central
+579,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not so familiar,18 - 29,TRUE,"$100,000 to $124,999",East North Central
+580,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Very familiar,45 - 59,TRUE,"$25,000 to $49,999",South Atlantic
+581,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,Prefer not to answer,Pacific
+582,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Extremely familiar,18 - 29,FALSE,"$100,000 to $124,999",East North Central
+583,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Very familiar,30 - 44,FALSE,"$100,000 to $124,999",Pacific
+584,Not so worried,Very worried,FALSE,"Yes, one or more major ones",FALSE,Extremely familiar,Not so familiar,60+,TRUE,"$100,000 to $124,999",
+585,Not at all worried,Somewhat worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,"$100,000 to $124,999",New England
+586,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,45 - 59,TRUE,"$25,000 to $49,999",Middle Atlantic
+587,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",FALSE,Very familiar,Very familiar,60+,TRUE,"$25,000 to $49,999",Middle Atlantic
+588,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,"$75,000 to $99,999",East North Central
+589,Extremely worried,Extremely worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Not so familiar,60+,FALSE,"$50,000 to $74,999",New England
+590,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Not at all familiar,60+,TRUE,"$125,000 to $149,999",Pacific
+591,Not so worried,Not so worried,TRUE,No,FALSE,Not so familiar,Not so familiar,18 - 29,TRUE,"$10,000 to $24,999",East North Central
+592,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Very familiar,30 - 44,FALSE,"$25,000 to $49,999",East South Central
+593,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not so familiar,45 - 59,TRUE,"$125,000 to $149,999",South Atlantic
+594,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$0 to $9,999",East South Central
+595,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Very familiar,60+,FALSE,"$75,000 to $99,999",West South Central
+596,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Somewhat familiar,18 - 29,TRUE,"$25,000 to $49,999",South Atlantic
+597,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Not at all familiar,18 - 29,FALSE,"$75,000 to $99,999",East North Central
+598,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$25,000 to $49,999",South Atlantic
+599,Somewhat worried,Very worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,30 - 44,FALSE,"$50,000 to $74,999",South Atlantic
+600,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",FALSE,Very familiar,Not at all familiar,30 - 44,TRUE,"$75,000 to $99,999",South Atlantic
+601,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$125,000 to $149,999",West North Central
+602,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Very familiar,18 - 29,FALSE,"$50,000 to $74,999",South Atlantic
+603,Extremely worried,Extremely worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Very familiar,18 - 29,TRUE,"$25,000 to $49,999",Mountain
+604,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Very familiar,60+,FALSE,"$50,000 to $74,999",West South Central
+605,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Not so familiar,Not at all familiar,60+,TRUE,"$100,000 to $124,999",Pacific
+606,Somewhat worried,Somewhat worried,TRUE,No,FALSE,Not so familiar,Not so familiar,30 - 44,TRUE,"$100,000 to $124,999",New England
+607,Somewhat worried,Somewhat worried,FALSE,,,,,,,,
+608,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,60+,TRUE,"$100,000 to $124,999",West South Central
+609,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$50,000 to $74,999",East North Central
+610,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,45 - 59,TRUE,"$50,000 to $74,999",South Atlantic
+611,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,Prefer not to answer,East North Central
+612,Somewhat worried,Not so worried,TRUE,No,TRUE,Not at all familiar,Somewhat familiar,45 - 59,TRUE,"$75,000 to $99,999",Pacific
+613,Not so worried,Somewhat worried,TRUE,"Yes, one or more major ones",FALSE,Very familiar,Not at all familiar,45 - 59,FALSE,Prefer not to answer,Pacific
+614,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$10,000 to $24,999",Pacific
+615,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Somewhat familiar,45 - 59,TRUE,"$100,000 to $124,999",West North Central
+616,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$25,000 to $49,999",East North Central
+617,Somewhat worried,Not so worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Not so familiar,45 - 59,TRUE,"$150,000 to $174,999",Pacific
+618,Not so worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Not so familiar,60+,TRUE,Prefer not to answer,West South Central
+619,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Very familiar,Not at all familiar,30 - 44,TRUE,"$200,000 and up",West North Central
+620,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,60+,FALSE,"$50,000 to $74,999",South Atlantic
+621,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,60+,FALSE,"$75,000 to $99,999",South Atlantic
+622,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Somewhat familiar,18 - 29,TRUE,"$100,000 to $124,999",Pacific
+623,Not so worried,Not at all worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Somewhat familiar,45 - 59,FALSE,"$75,000 to $99,999",Pacific
+624,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$200,000 and up",Middle Atlantic
+625,Not at all worried,Not so worried,FALSE,No,FALSE,Very familiar,Very familiar,60+,FALSE,"$100,000 to $124,999",West South Central
+626,Not so worried,Not so worried,FALSE,No,FALSE,Extremely familiar,Extremely familiar,60+,TRUE,Prefer not to answer,Middle Atlantic
+627,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Somewhat familiar,18 - 29,TRUE,"$10,000 to $24,999",East North Central
+628,Somewhat worried,Very worried,TRUE,"Yes, one or more major ones",FALSE,Extremely familiar,Very familiar,18 - 29,FALSE,"$25,000 to $49,999",Pacific
+629,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Very familiar,45 - 59,TRUE,"$50,000 to $74,999",Mountain
+630,Not at all worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$0 to $9,999",West South Central
+631,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Not at all familiar,30 - 44,TRUE,"$75,000 to $99,999",Pacific
+632,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",TRUE,Not at all familiar,Not at all familiar,30 - 44,TRUE,Prefer not to answer,Middle Atlantic
+633,Somewhat worried,Very worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Somewhat familiar,45 - 59,TRUE,"$10,000 to $24,999",Pacific
+634,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,60+,TRUE,Prefer not to answer,West South Central
+635,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$25,000 to $49,999",Middle Atlantic
+636,Somewhat worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$50,000 to $74,999",South Atlantic
+637,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$10,000 to $24,999",Pacific
+638,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,18 - 29,TRUE,"$50,000 to $74,999",West South Central
+639,Not at all worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,60+,TRUE,"$50,000 to $74,999",West North Central
+640,Very worried,Extremely worried,FALSE,No,FALSE,Not so familiar,Not so familiar,18 - 29,FALSE,Prefer not to answer,Pacific
+641,Not at all worried,Not so worried,TRUE,"Yes, one or more major ones",FALSE,Extremely familiar,Not at all familiar,18 - 29,TRUE,"$125,000 to $149,999",Pacific
+642,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$125,000 to $149,999",East North Central
+643,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$75,000 to $99,999",South Atlantic
+644,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Somewhat familiar,18 - 29,FALSE,"$50,000 to $74,999",South Atlantic
+645,Somewhat worried,Extremely worried,TRUE,"Yes, one or more minor ones",FALSE,Not so familiar,Somewhat familiar,18 - 29,TRUE,Prefer not to answer,Middle Atlantic
+646,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,45 - 59,TRUE,Prefer not to answer,Middle Atlantic
+647,Very worried,Very worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Somewhat familiar,18 - 29,TRUE,"$25,000 to $49,999",Pacific
+648,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,Prefer not to answer,West North Central
+649,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,18 - 29,FALSE,"$50,000 to $74,999",Mountain
+650,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not so familiar,30 - 44,TRUE,Prefer not to answer,South Atlantic
+651,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Not so familiar,45 - 59,FALSE,"$100,000 to $124,999",Pacific
+652,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Extremely familiar,60+,TRUE,"$50,000 to $74,999",Pacific
+653,Not at all worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Not at all familiar,60+,FALSE,"$50,000 to $74,999",East North Central
+654,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,60+,FALSE,"$150,000 to $174,999",East North Central
+655,Somewhat worried,Somewhat worried,TRUE,No,FALSE,Not so familiar,Not so familiar,18 - 29,TRUE,"$25,000 to $49,999",Pacific
+656,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,60+,TRUE,"$75,000 to $99,999",East North Central
+657,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$100,000 to $124,999",West North Central
+658,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Not at all familiar,45 - 59,FALSE,"$200,000 and up",Pacific
+659,Very worried,Very worried,TRUE,No,FALSE,Not at all familiar,Not at all familiar,45 - 59,TRUE,"$50,000 to $74,999",Middle Atlantic
+660,Somewhat worried,Somewhat worried,FALSE,No,FALSE,,,,,,
+661,Extremely worried,Extremely worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Not so familiar,60+,FALSE,"$50,000 to $74,999",New England
+662,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$50,000 to $74,999",Middle Atlantic
+663,Not so worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",South Atlantic
+664,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,45 - 59,FALSE,"$25,000 to $49,999",West South Central
+665,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$25,000 to $49,999",South Atlantic
+666,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Extremely familiar,60+,TRUE,"$25,000 to $49,999",Middle Atlantic
+667,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,45 - 59,TRUE,"$10,000 to $24,999",Middle Atlantic
+668,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,60+,FALSE,"$50,000 to $74,999",South Atlantic
+669,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,60+,FALSE,"$150,000 to $174,999",South Atlantic
+670,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,FALSE,"$125,000 to $149,999",South Atlantic
+671,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$25,000 to $49,999",West South Central
+672,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,"$150,000 to $174,999",Middle Atlantic
+673,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Very familiar,45 - 59,TRUE,"$100,000 to $124,999",South Atlantic
+674,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$50,000 to $74,999",South Atlantic
+675,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Very familiar,60+,FALSE,"$50,000 to $74,999",West South Central
+676,Not at all worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Not at all familiar,45 - 59,FALSE,"$75,000 to $99,999",East South Central
+677,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,60+,TRUE,"$50,000 to $74,999",Pacific
+678,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,18 - 29,FALSE,Prefer not to answer,Middle Atlantic
+679,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,18 - 29,TRUE,"$75,000 to $99,999",East North Central
+680,Not at all worried,Not at all worried,FALSE,No,FALSE,Extremely familiar,Not at all familiar,60+,FALSE,"$100,000 to $124,999",West South Central
+681,Very worried,Very worried,TRUE,"Yes, one or more major ones",FALSE,Not so familiar,Not so familiar,30 - 44,TRUE,"$75,000 to $99,999",Middle Atlantic
+682,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Not at all familiar,18 - 29,TRUE,"$150,000 to $174,999",West South Central
+683,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Very familiar,18 - 29,FALSE,"$0 to $9,999",West North Central
+684,Somewhat worried,Not so worried,FALSE,"Yes, one or more major ones",FALSE,Not at all familiar,Not so familiar,18 - 29,TRUE,"$25,000 to $49,999",South Atlantic
+685,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$200,000 and up",Middle Atlantic
+686,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,60+,FALSE,"$50,000 to $74,999",Middle Atlantic
+687,Not at all worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,"$75,000 to $99,999",Middle Atlantic
+688,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more major ones",TRUE,Very familiar,Not at all familiar,60+,TRUE,"$100,000 to $124,999",Pacific
+689,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,FALSE,"$75,000 to $99,999",East North Central
+690,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Very familiar,30 - 44,FALSE,"$50,000 to $74,999",Pacific
+691,Somewhat worried,Very worried,FALSE,"Yes, one or more minor ones",TRUE,Extremely familiar,Very familiar,30 - 44,TRUE,"$10,000 to $24,999",South Atlantic
+692,Not so worried,Somewhat worried,TRUE,No,FALSE,Not so familiar,Not so familiar,18 - 29,TRUE,"$10,000 to $24,999",Middle Atlantic
+693,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,"$100,000 to $124,999",Middle Atlantic
+694,Somewhat worried,Very worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Very familiar,18 - 29,TRUE,"$75,000 to $99,999",Middle Atlantic
+695,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,18 - 29,TRUE,"$10,000 to $24,999",South Atlantic
+696,Somewhat worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$100,000 to $124,999",West South Central
+697,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,45 - 59,TRUE,"$0 to $9,999",East South Central
+698,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more major ones",FALSE,Extremely familiar,Not at all familiar,60+,FALSE,"$75,000 to $99,999",Pacific
+699,Somewhat worried,Not so worried,FALSE,"Yes, one or more major ones",FALSE,Extremely familiar,Extremely familiar,30 - 44,FALSE,"$25,000 to $49,999",West North Central
+700,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$50,000 to $74,999",East North Central
+701,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,18 - 29,TRUE,"$50,000 to $74,999",Pacific
+702,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",TRUE,Not so familiar,Very familiar,45 - 59,TRUE,"$50,000 to $74,999",Mountain
+703,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Not so familiar,30 - 44,FALSE,Prefer not to answer,West South Central
+704,Very worried,Very worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,18 - 29,FALSE,Prefer not to answer,New England
+705,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,"$100,000 to $124,999",West South Central
+706,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,30 - 44,FALSE,"$10,000 to $24,999",West South Central
+707,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,Prefer not to answer,South Atlantic
+708,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not so familiar,60+,TRUE,"$25,000 to $49,999",Middle Atlantic
+709,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$75,000 to $99,999",South Atlantic
+710,Somewhat worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Very familiar,18 - 29,FALSE,"$0 to $9,999",South Atlantic
+711,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Somewhat familiar,30 - 44,TRUE,Prefer not to answer,West South Central
+712,Not so worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,60+,TRUE,Prefer not to answer,Middle Atlantic
+713,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$50,000 to $74,999",Pacific
+714,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,60+,TRUE,Prefer not to answer,New England
+715,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Not at all familiar,60+,TRUE,"$50,000 to $74,999",Middle Atlantic
+716,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",FALSE,Very familiar,Very familiar,45 - 59,FALSE,"$10,000 to $24,999",Pacific
+717,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$75,000 to $99,999",West South Central
+718,Extremely worried,Extremely worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Not at all familiar,30 - 44,FALSE,"$50,000 to $74,999",Pacific
+719,Not at all worried,Not so worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$0 to $9,999",West North Central
+720,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,30 - 44,FALSE,"$0 to $9,999",Pacific
+721,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,30 - 44,FALSE,"$50,000 to $74,999",West North Central
+722,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Not at all familiar,45 - 59,TRUE,"$200,000 and up",South Atlantic
+723,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Not so familiar,45 - 59,FALSE,"$10,000 to $24,999",Pacific
+724,Somewhat worried,Extremely worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$50,000 to $74,999",South Atlantic
+725,Somewhat worried,Very worried,TRUE,"Yes, one or more major ones",FALSE,Very familiar,Not so familiar,45 - 59,TRUE,Prefer not to answer,West South Central
+726,Not so worried,Very worried,FALSE,No,FALSE,Very familiar,Very familiar,18 - 29,FALSE,"$25,000 to $49,999",West North Central
+727,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,45 - 59,TRUE,"$75,000 to $99,999",South Atlantic
+728,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Not at all familiar,60+,TRUE,"$200,000 and up",South Atlantic
+729,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,30 - 44,TRUE,"$50,000 to $74,999",Pacific
+730,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,30 - 44,TRUE,"$100,000 to $124,999",Middle Atlantic
+731,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",FALSE,Very familiar,Not so familiar,45 - 59,TRUE,"$50,000 to $74,999",Pacific
+732,Not so worried,Somewhat worried,FALSE,No,TRUE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$25,000 to $49,999",East South Central
+733,Very worried,Extremely worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Not so familiar,60+,TRUE,"$25,000 to $49,999",
+734,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$50,000 to $74,999",Pacific
+735,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,Prefer not to answer,New England
+736,Very worried,Very worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Not so familiar,60+,TRUE,"$75,000 to $99,999",Pacific
+737,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more major ones",TRUE,Somewhat familiar,Somewhat familiar,60+,FALSE,Prefer not to answer,Pacific
+738,Somewhat worried,Somewhat worried,TRUE,,,,,,,,
+739,Not so worried,Somewhat worried,FALSE,No,FALSE,Very familiar,Not so familiar,30 - 44,FALSE,"$10,000 to $24,999",South Atlantic
+740,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Not so familiar,30 - 44,TRUE,"$150,000 to $174,999",West North Central
+741,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,Prefer not to answer,Middle Atlantic
+742,Very worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Extremely familiar,60+,TRUE,"$200,000 and up",West South Central
+743,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not so familiar,18 - 29,TRUE,"$10,000 to $24,999",Pacific
+744,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Not so familiar,Very familiar,18 - 29,TRUE,"$0 to $9,999",South Atlantic
+745,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,30 - 44,TRUE,"$75,000 to $99,999",Middle Atlantic
+746,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,45 - 59,TRUE,"$75,000 to $99,999",New England
+747,Very worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,60+,TRUE,"$25,000 to $49,999",Pacific
+748,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$125,000 to $149,999",Mountain
+749,Somewhat worried,Not so worried,FALSE,No,FALSE,Very familiar,Not so familiar,60+,TRUE,"$25,000 to $49,999",Middle Atlantic
+750,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",TRUE,Very familiar,Very familiar,60+,FALSE,"$25,000 to $49,999",Pacific
+751,Not so worried,Somewhat worried,FALSE,No,FALSE,Not so familiar,Somewhat familiar,30 - 44,TRUE,"$125,000 to $149,999",New England
+752,Not so worried,Not so worried,TRUE,No,FALSE,Very familiar,Somewhat familiar,60+,TRUE,"$100,000 to $124,999",New England
+753,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,60+,FALSE,"$200,000 and up",Mountain
+754,Not at all worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,30 - 44,TRUE,"$175,000 to $199,999",Middle Atlantic
+755,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,"$25,000 to $49,999",Mountain
+756,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,30 - 44,FALSE,"$75,000 to $99,999",Pacific
+757,Very worried,Extremely worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,Prefer not to answer,Pacific
+758,Not so worried,Not so worried,FALSE,No,FALSE,Not at all familiar,Not so familiar,30 - 44,TRUE,"$10,000 to $24,999",East North Central
+759,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$125,000 to $149,999",South Atlantic
+760,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not so familiar,45 - 59,FALSE,"$25,000 to $49,999",South Atlantic
+761,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$150,000 to $174,999",Middle Atlantic
+762,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Very familiar,Very familiar,60+,TRUE,"$50,000 to $74,999",East South Central
+763,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Not so familiar,45 - 59,FALSE,"$50,000 to $74,999",Pacific
+764,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Not so familiar,60+,TRUE,Prefer not to answer,Pacific
+765,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,"$150,000 to $174,999",South Atlantic
+766,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$75,000 to $99,999",East North Central
+767,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$25,000 to $49,999",East South Central
+768,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Not at all familiar,18 - 29,FALSE,"$25,000 to $49,999",Pacific
+769,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Somewhat familiar,30 - 44,TRUE,"$25,000 to $49,999",Mountain
+770,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Not so familiar,45 - 59,TRUE,"$150,000 to $174,999",New England
+771,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Somewhat familiar,60+,TRUE,"$125,000 to $149,999",Middle Atlantic
+772,Not so worried,Not so worried,TRUE,No,FALSE,Very familiar,Somewhat familiar,60+,TRUE,"$0 to $9,999",
+773,Not so worried,Not so worried,FALSE,No,FALSE,Very familiar,Not at all familiar,45 - 59,FALSE,"$50,000 to $74,999",Mountain
+774,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$200,000 and up",East North Central
+775,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$50,000 to $74,999",South Atlantic
+776,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",TRUE,Very familiar,Not so familiar,60+,TRUE,Prefer not to answer,East North Central
+777,Somewhat worried,Not at all worried,FALSE,No,TRUE,Extremely familiar,Somewhat familiar,18 - 29,FALSE,"$0 to $9,999",Pacific
+778,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,18 - 29,TRUE,"$50,000 to $74,999",South Atlantic
+779,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$50,000 to $74,999",Middle Atlantic
+780,Not at all worried,Not at all worried,FALSE,No,FALSE,Extremely familiar,Not at all familiar,30 - 44,FALSE,"$200,000 and up",East North Central
+781,Extremely worried,Extremely worried,TRUE,No,TRUE,Extremely familiar,Extremely familiar,18 - 29,TRUE,"$10,000 to $24,999",West North Central
+782,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Not at all familiar,45 - 59,FALSE,"$200,000 and up",East North Central
+783,Extremely worried,Extremely worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,30 - 44,FALSE,"$10,000 to $24,999",
+784,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Extremely familiar,30 - 44,TRUE,"$25,000 to $49,999",West South Central
+785,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,30 - 44,TRUE,Prefer not to answer,West North Central
+786,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,60+,TRUE,"$0 to $9,999",Middle Atlantic
+787,Somewhat worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Not so familiar,Very familiar,30 - 44,TRUE,"$50,000 to $74,999",South Atlantic
+788,Not at all worried,Not at all worried,TRUE,"Yes, one or more major ones",FALSE,Extremely familiar,Extremely familiar,30 - 44,FALSE,"$25,000 to $49,999",Mountain
+789,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$10,000 to $24,999",New England
+790,Extremely worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,18 - 29,FALSE,Prefer not to answer,Middle Atlantic
+791,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,45 - 59,TRUE,Prefer not to answer,East North Central
+792,Not so worried,Not so worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,45 - 59,TRUE,"$50,000 to $74,999",South Atlantic
+793,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,45 - 59,FALSE,"$75,000 to $99,999",Middle Atlantic
+794,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,45 - 59,FALSE,"$10,000 to $24,999",New England
+795,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Not at all familiar,60+,TRUE,"$125,000 to $149,999",Pacific
+796,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,60+,TRUE,Prefer not to answer,West South Central
+797,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$50,000 to $74,999",Middle Atlantic
+798,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Not so familiar,18 - 29,TRUE,Prefer not to answer,West South Central
+799,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,FALSE,"$50,000 to $74,999",East North Central
+800,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,"$75,000 to $99,999",New England
+801,Very worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,45 - 59,TRUE,"$75,000 to $99,999",South Atlantic
+802,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Not so familiar,Extremely familiar,18 - 29,TRUE,"$25,000 to $49,999",South Atlantic
+803,Not at all worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$100,000 to $124,999",East South Central
+804,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,Prefer not to answer,Middle Atlantic
+805,Not so worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$100,000 to $124,999",South Atlantic
+806,Not at all worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,"$75,000 to $99,999",East North Central
+807,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$0 to $9,999",South Atlantic
+808,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$125,000 to $149,999",Middle Atlantic
+809,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,30 - 44,TRUE,"$25,000 to $49,999",West North Central
+810,Very worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Extremely familiar,60+,FALSE,"$50,000 to $74,999",Middle Atlantic
+811,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Not so familiar,30 - 44,TRUE,"$10,000 to $24,999",East North Central
+812,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,45 - 59,TRUE,"$150,000 to $174,999",South Atlantic
+813,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Somewhat familiar,18 - 29,TRUE,"$0 to $9,999",Middle Atlantic
+814,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",East North Central
+815,Somewhat worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$125,000 to $149,999",West South Central
+816,Not so worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$25,000 to $49,999",Mountain
+817,Not so worried,Somewhat worried,TRUE,No,FALSE,Very familiar,Very familiar,18 - 29,TRUE,"$150,000 to $174,999",Middle Atlantic
+818,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,60+,FALSE,"$50,000 to $74,999",South Atlantic
+819,Not at all worried,Extremely worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$25,000 to $49,999",East North Central
+820,Somewhat worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,30 - 44,TRUE,Prefer not to answer,West South Central
+821,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",TRUE,Very familiar,Not at all familiar,60+,TRUE,"$25,000 to $49,999",Mountain
+822,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,60+,FALSE,"$25,000 to $49,999",South Atlantic
+823,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$25,000 to $49,999",Pacific
+824,Extremely worried,Extremely worried,FALSE,"Yes, one or more minor ones",TRUE,Not at all familiar,Not at all familiar,45 - 59,TRUE,"$10,000 to $24,999",Pacific
+825,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$75,000 to $99,999",South Atlantic
+826,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,18 - 29,TRUE,"$25,000 to $49,999",South Atlantic
+827,Extremely worried,Extremely worried,TRUE,"Yes, one or more major ones",FALSE,Not at all familiar,Not at all familiar,30 - 44,TRUE,"$75,000 to $99,999",West North Central
+828,Very worried,Very worried,TRUE,No,TRUE,Very familiar,Very familiar,60+,TRUE,"$25,000 to $49,999",Pacific
+829,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,Prefer not to answer,South Atlantic
+830,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$25,000 to $49,999",Pacific
+831,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,60+,TRUE,"$150,000 to $174,999",South Atlantic
+832,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Very familiar,45 - 59,TRUE,"$10,000 to $24,999",New England
+833,Very worried,Very worried,TRUE,"Yes, one or more major ones",FALSE,Extremely familiar,Not at all familiar,45 - 59,TRUE,"$75,000 to $99,999",Pacific
+834,Not at all worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$0 to $9,999",Pacific
+835,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,18 - 29,TRUE,"$25,000 to $49,999",South Atlantic
+836,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,Prefer not to answer,West South Central
+837,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,"$25,000 to $49,999",South Atlantic
+838,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Somewhat familiar,60+,TRUE,"$75,000 to $99,999",South Atlantic
+839,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$200,000 and up",South Atlantic
+840,Not so worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Somewhat familiar,30 - 44,TRUE,"$25,000 to $49,999",Pacific
+841,Extremely worried,Extremely worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Extremely familiar,30 - 44,TRUE,"$50,000 to $74,999",Mountain
+842,Not at all worried,Not at all worried,TRUE,No,TRUE,Somewhat familiar,Not so familiar,45 - 59,FALSE,"$10,000 to $24,999",South Atlantic
+843,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",FALSE,Not so familiar,Not so familiar,45 - 59,TRUE,"$50,000 to $74,999",Mountain
+844,Somewhat worried,Somewhat worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$25,000 to $49,999",Pacific
+845,Not at all worried,Somewhat worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$25,000 to $49,999",East South Central
+846,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,60+,TRUE,"$25,000 to $49,999",West South Central
+847,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,18 - 29,FALSE,"$75,000 to $99,999",Pacific
+848,Extremely worried,Extremely worried,TRUE,"Yes, one or more major ones",FALSE,Extremely familiar,Extremely familiar,45 - 59,TRUE,"$50,000 to $74,999",South Atlantic
+849,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,18 - 29,TRUE,Prefer not to answer,East North Central
+850,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,Prefer not to answer,South Atlantic
+851,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Not at all familiar,60+,FALSE,"$150,000 to $174,999",Mountain
+852,Somewhat worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$75,000 to $99,999",West North Central
+853,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Very familiar,45 - 59,TRUE,"$25,000 to $49,999",Pacific
+854,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Not so familiar,45 - 59,TRUE,"$75,000 to $99,999",New England
+855,Extremely worried,Extremely worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Very familiar,30 - 44,TRUE,"$75,000 to $99,999",Pacific
+856,Not so worried,Somewhat worried,FALSE,"Yes, one or more major ones",TRUE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$75,000 to $99,999",Pacific
+857,Very worried,Extremely worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,18 - 29,TRUE,"$25,000 to $49,999",Pacific
+858,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,18 - 29,TRUE,"$25,000 to $49,999",Middle Atlantic
+859,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,Prefer not to answer,Middle Atlantic
+860,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",East South Central
+861,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,18 - 29,TRUE,"$50,000 to $74,999",Middle Atlantic
+862,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$50,000 to $74,999",New England
+863,Very worried,Very worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$50,000 to $74,999",Pacific
+864,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not so familiar,18 - 29,TRUE,"$0 to $9,999",Middle Atlantic
+865,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$50,000 to $74,999",Middle Atlantic
+866,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Not so familiar,Somewhat familiar,18 - 29,TRUE,Prefer not to answer,Middle Atlantic
+867,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$50,000 to $74,999",East North Central
+868,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$200,000 and up",West North Central
+869,Somewhat worried,Somewhat worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,Prefer not to answer,West North Central
+870,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$25,000 to $49,999",South Atlantic
+871,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,60+,TRUE,"$50,000 to $74,999",West South Central
+872,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$200,000 and up",Middle Atlantic
+873,Somewhat worried,Somewhat worried,TRUE,,,,,,,,
+874,Extremely worried,Not at all worried,TRUE,"Yes, one or more major ones",FALSE,Not at all familiar,Extremely familiar,60+,FALSE,"$0 to $9,999",Mountain
+875,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,45 - 59,TRUE,"$50,000 to $74,999",New England
+876,Not so worried,Not at all worried,FALSE,"Yes, one or more major ones",TRUE,Very familiar,Not at all familiar,18 - 29,TRUE,"$200,000 and up",Pacific
+877,Extremely worried,Extremely worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$75,000 to $99,999",East North Central
+878,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,"$75,000 to $99,999",Middle Atlantic
+879,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$100,000 to $124,999",South Atlantic
+880,Not so worried,Extremely worried,FALSE,"Yes, one or more minor ones",TRUE,Not at all familiar,Not so familiar,18 - 29,TRUE,"$0 to $9,999",South Atlantic
+881,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$25,000 to $49,999",Middle Atlantic
+882,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,45 - 59,TRUE,"$50,000 to $74,999",East North Central
+883,Not so worried,Extremely worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Very familiar,18 - 29,FALSE,"$0 to $9,999",Pacific
+884,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",FALSE,Extremely familiar,Extremely familiar,60+,FALSE,"$100,000 to $124,999",Middle Atlantic
+885,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,"$25,000 to $49,999",West South Central
+886,Not so worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,18 - 29,TRUE,"$25,000 to $49,999",East North Central
+887,Very worried,Very worried,TRUE,"Yes, one or more major ones",FALSE,Extremely familiar,Not so familiar,30 - 44,TRUE,"$25,000 to $49,999",Pacific
+888,Not so worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,45 - 59,TRUE,Prefer not to answer,South Atlantic
+889,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$50,000 to $74,999",New England
+890,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,18 - 29,TRUE,"$10,000 to $24,999",Pacific
+891,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,60+,FALSE,"$100,000 to $124,999",Middle Atlantic
+892,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,45 - 59,TRUE,"$10,000 to $24,999",East South Central
+893,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,60+,FALSE,"$50,000 to $74,999",West North Central
+894,Somewhat worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Not at all familiar,60+,TRUE,"$25,000 to $49,999",Pacific
+895,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$50,000 to $74,999",East South Central
+896,Not at all worried,Not so worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,30 - 44,TRUE,"$100,000 to $124,999",East North Central
+897,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$25,000 to $49,999",East North Central
+898,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,60+,TRUE,"$10,000 to $24,999",Middle Atlantic
+899,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Very familiar,Not at all familiar,60+,TRUE,"$75,000 to $99,999",Pacific
+900,Somewhat worried,Extremely worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Extremely familiar,30 - 44,TRUE,"$75,000 to $99,999",East South Central
+901,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",FALSE,Not so familiar,Not so familiar,45 - 59,FALSE,"$25,000 to $49,999",Pacific
+902,Extremely worried,Extremely worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Somewhat familiar,45 - 59,TRUE,"$10,000 to $24,999",Mountain
+903,Extremely worried,Extremely worried,FALSE,No,FALSE,Not so familiar,Not so familiar,45 - 59,FALSE,Prefer not to answer,Middle Atlantic
+904,Somewhat worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$75,000 to $99,999",Mountain
+905,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,45 - 59,TRUE,"$0 to $9,999",West North Central
+906,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$175,000 to $199,999",Middle Atlantic
+907,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,Prefer not to answer,East North Central
+908,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,FALSE,"$100,000 to $124,999",West North Central
+909,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",TRUE,Extremely familiar,Not at all familiar,60+,TRUE,"$150,000 to $174,999",South Atlantic
+910,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Somewhat familiar,18 - 29,FALSE,"$100,000 to $124,999",New England
+911,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$75,000 to $99,999",South Atlantic
+912,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$50,000 to $74,999",East North Central
+913,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",FALSE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$25,000 to $49,999",South Atlantic
+914,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$50,000 to $74,999",West South Central
+915,Not so worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Not at all familiar,60+,FALSE,"$50,000 to $74,999",New England
+916,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",East North Central
+917,Not so worried,Not so worried,FALSE,No,FALSE,Very familiar,Not so familiar,45 - 59,FALSE,"$100,000 to $124,999",New England
+918,Extremely worried,Extremely worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,60+,TRUE,"$25,000 to $49,999",East North Central
+919,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,60+,FALSE,"$75,000 to $99,999",Middle Atlantic
+920,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$75,000 to $99,999",Pacific
+921,Somewhat worried,Somewhat worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$125,000 to $149,999",Mountain
+922,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$75,000 to $99,999",Middle Atlantic
+923,Not at all worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$50,000 to $74,999",West South Central
+924,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,30 - 44,FALSE,"$10,000 to $24,999",South Atlantic
+925,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,18 - 29,TRUE,"$75,000 to $99,999",New England
+926,Not at all worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Not so familiar,Not so familiar,45 - 59,TRUE,"$10,000 to $24,999",Middle Atlantic
+927,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,45 - 59,TRUE,"$10,000 to $24,999",Pacific
+928,Not at all worried,Not at all worried,FALSE,No,FALSE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$150,000 to $174,999",West South Central
+929,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",FALSE,Not at all familiar,Not at all familiar,60+,TRUE,Prefer not to answer,Pacific
+930,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more major ones",TRUE,Somewhat familiar,Somewhat familiar,45 - 59,TRUE,"$50,000 to $74,999",Mountain
+931,Not at all worried,Not at all worried,FALSE,No,FALSE,Not so familiar,Not at all familiar,30 - 44,TRUE,"$200,000 and up",South Atlantic
+932,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,FALSE,"$75,000 to $99,999",South Atlantic
+933,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Very familiar,60+,FALSE,"$50,000 to $74,999",Pacific
+934,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Not at all familiar,45 - 59,TRUE,"$50,000 to $74,999",Pacific
+935,Not so worried,Not so worried,TRUE,No,FALSE,Not at all familiar,Not at all familiar,30 - 44,FALSE,"$25,000 to $49,999",West North Central
+936,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$75,000 to $99,999",East North Central
+937,Somewhat worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,60+,TRUE,"$125,000 to $149,999",South Atlantic
+938,Somewhat worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Not so familiar,30 - 44,TRUE,"$200,000 and up",New England
+939,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$100,000 to $124,999",West North Central
+940,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,18 - 29,TRUE,"$75,000 to $99,999",Pacific
+941,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Very familiar,60+,FALSE,"$150,000 to $174,999",Mountain
+942,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Very familiar,60+,FALSE,"$75,000 to $99,999",West North Central
+943,Not at all worried,Not at all worried,TRUE,No,FALSE,Not so familiar,Not at all familiar,45 - 59,TRUE,"$50,000 to $74,999",Middle Atlantic
+944,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$200,000 and up",Pacific
+945,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",West South Central
+946,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Not so familiar,45 - 59,TRUE,"$75,000 to $99,999",Pacific
+947,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$100,000 to $124,999",Middle Atlantic
+948,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,18 - 29,TRUE,"$50,000 to $74,999",Pacific
+949,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,"$25,000 to $49,999",West North Central
+950,Very worried,Very worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Extremely familiar,60+,FALSE,"$25,000 to $49,999",West North Central
+951,Extremely worried,Extremely worried,TRUE,"Yes, one or more major ones",FALSE,Somewhat familiar,Not so familiar,45 - 59,TRUE,"$50,000 to $74,999",Pacific
+952,Somewhat worried,Somewhat worried,TRUE,No,TRUE,Not at all familiar,Not at all familiar,45 - 59,TRUE,"$0 to $9,999",Mountain
+953,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,45 - 59,FALSE,"$100,000 to $124,999",Middle Atlantic
+954,Not so worried,Not so worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,60+,TRUE,"$75,000 to $99,999",Pacific
+955,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Not so familiar,60+,TRUE,"$50,000 to $74,999",South Atlantic
+956,Somewhat worried,Very worried,TRUE,No,FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$0 to $9,999",East North Central
+957,Not so worried,Not so worried,TRUE,No,TRUE,Very familiar,Somewhat familiar,45 - 59,TRUE,"$75,000 to $99,999",East South Central
+958,Very worried,Very worried,TRUE,"Yes, one or more major ones",FALSE,Very familiar,Somewhat familiar,45 - 59,TRUE,"$25,000 to $49,999",Pacific
+959,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more major ones",FALSE,Extremely familiar,Not at all familiar,60+,FALSE,"$200,000 and up",Pacific
+960,Not so worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,30 - 44,TRUE,"$75,000 to $99,999",Pacific
+961,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,30 - 44,TRUE,"$75,000 to $99,999",New England
+962,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,30 - 44,TRUE,"$50,000 to $74,999",East North Central
+963,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,45 - 59,FALSE,"$25,000 to $49,999",Middle Atlantic
+964,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,Prefer not to answer,South Atlantic
+965,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$50,000 to $74,999",Mountain
+966,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,30 - 44,FALSE,"$100,000 to $124,999",Middle Atlantic
+967,Not at all worried,Not so worried,TRUE,"Yes, one or more minor ones",TRUE,Very familiar,Extremely familiar,45 - 59,FALSE,"$100,000 to $124,999",Middle Atlantic
+968,Somewhat worried,Very worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,30 - 44,FALSE,"$50,000 to $74,999",Pacific
+969,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Not so familiar,30 - 44,TRUE,"$25,000 to $49,999",East North Central
+970,Not so worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not so familiar,60+,TRUE,"$25,000 to $49,999",South Atlantic
+971,Not so worried,Not so worried,TRUE,No,TRUE,Somewhat familiar,Somewhat familiar,60+,FALSE,"$75,000 to $99,999",Mountain
+972,Not at all worried,Not at all worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,30 - 44,TRUE,"$10,000 to $24,999",South Atlantic
+973,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,45 - 59,FALSE,"$100,000 to $124,999",East North Central
+974,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Very familiar,45 - 59,FALSE,"$200,000 and up",Middle Atlantic
+975,Somewhat worried,Very worried,TRUE,"Yes, one or more major ones",TRUE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$25,000 to $49,999",Pacific
+976,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not at all familiar,30 - 44,TRUE,"$25,000 to $49,999",East North Central
+977,Somewhat worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,18 - 29,TRUE,"$75,000 to $99,999",Mountain
+978,Somewhat worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,60+,TRUE,"$25,000 to $49,999",East South Central
+979,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$10,000 to $24,999",South Atlantic
+980,Not at all worried,Not at all worried,TRUE,No,FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$25,000 to $49,999",West South Central
+981,Not at all worried,Not so worried,FALSE,"Yes, one or more major ones",FALSE,Extremely familiar,Extremely familiar,60+,FALSE,"$75,000 to $99,999",West South Central
+982,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Very familiar,18 - 29,TRUE,"$10,000 to $24,999",West North Central
+983,Extremely worried,Extremely worried,TRUE,"Yes, one or more minor ones",FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$10,000 to $24,999",South Atlantic
+984,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Not at all familiar,60+,FALSE,"$200,000 and up",Pacific
+985,Not so worried,Not so worried,FALSE,No,FALSE,Not so familiar,Not so familiar,45 - 59,TRUE,"$75,000 to $99,999",
+986,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$25,000 to $49,999",Pacific
+987,Not at all worried,Not so worried,FALSE,No,TRUE,Not so familiar,Not so familiar,30 - 44,TRUE,"$0 to $9,999",East North Central
+988,Not at all worried,Not at all worried,FALSE,No,FALSE,Extremely familiar,Somewhat familiar,45 - 59,TRUE,"$50,000 to $74,999",South Atlantic
+989,Extremely worried,Extremely worried,TRUE,"Yes, one or more major ones",TRUE,Extremely familiar,Extremely familiar,30 - 44,TRUE,"$0 to $9,999",Pacific
+990,Not so worried,Not so worried,TRUE,No,FALSE,Somewhat familiar,Not so familiar,30 - 44,TRUE,"$0 to $9,999",East North Central
+991,Not so worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,Extremely familiar,Extremely familiar,60+,TRUE,"$10,000 to $24,999",New England
+992,Somewhat worried,Very worried,TRUE,"Yes, one or more minor ones",FALSE,Extremely familiar,Not so familiar,30 - 44,TRUE,Prefer not to answer,Pacific
+993,Not at all worried,Not at all worried,FALSE,,,,,,,,
+994,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$75,000 to $99,999",New England
+995,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,30 - 44,TRUE,"$25,000 to $49,999",East South Central
+996,Not so worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Not at all familiar,30 - 44,TRUE,"$75,000 to $99,999",South Atlantic
+997,Not at all worried,Not at all worried,FALSE,No,FALSE,Very familiar,Not so familiar,45 - 59,TRUE,"$100,000 to $124,999",Middle Atlantic
+998,Not so worried,Somewhat worried,FALSE,"Yes, one or more minor ones",FALSE,Not so familiar,Not so familiar,45 - 59,FALSE,"$0 to $9,999",Pacific
+999,Not so worried,Not so worried,TRUE,"Yes, one or more minor ones",FALSE,Very familiar,Not at all familiar,60+,TRUE,"$25,000 to $49,999",East North Central
+1000,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Somewhat familiar,30 - 44,TRUE,"$50,000 to $74,999",New England
+1001,Not at all worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Not at all familiar,60+,TRUE,"$50,000 to $74,999",Middle Atlantic
+1002,Not so worried,Not so worried,TRUE,"Yes, one or more major ones",FALSE,Extremely familiar,Somewhat familiar,60+,TRUE,"$75,000 to $99,999",South Atlantic
+1003,Not at all worried,Not at all worried,FALSE,"Yes, one or more major ones",FALSE,Very familiar,Somewhat familiar,60+,FALSE,"$75,000 to $99,999",Mountain
+1004,Somewhat worried,Somewhat worried,TRUE,"Yes, one or more minor ones",TRUE,Somewhat familiar,Somewhat familiar,45 - 59,FALSE,"$50,000 to $74,999",Pacific
+1005,Not at all worried,Not at all worried,FALSE,No,FALSE,Not at all familiar,Not at all familiar,18 - 29,TRUE,"$10,000 to $24,999",East North Central
+1006,Not so worried,Not so worried,FALSE,No,TRUE,Somewhat familiar,Somewhat familiar,60+,TRUE,"$200,000 and up",West North Central
+1007,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Somewhat familiar,45 - 59,FALSE,"$75,000 to $99,999",East North Central
+1008,Not at all worried,Not at all worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,60+,TRUE,Prefer not to answer,New England
+1009,Not at all worried,Not at all worried,FALSE,"Yes, one or more minor ones",FALSE,Very familiar,Not so familiar,60+,FALSE,Prefer not to answer,Pacific
+1010,Not so worried,Somewhat worried,FALSE,"Yes, one or more major ones",TRUE,Extremely familiar,Somewhat familiar,60+,TRUE,"$50,000 to $74,999",Pacific
+1011,Not so worried,Extremely worried,FALSE,"Yes, one or more minor ones",FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,Prefer not to answer,Middle Atlantic
+1012,Not at all worried,Not so worried,FALSE,No,FALSE,Somewhat familiar,Somewhat familiar,30 - 44,TRUE,"$50,000 to $74,999",East North Central
+1013,Somewhat worried,Not so worried,FALSE,"Yes, one or more minor ones",FALSE,,,,,,

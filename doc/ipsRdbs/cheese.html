@@ -1,0 +1,90 @@
+<!DOCTYPE html><html><head><title>R: Testing of cheese data set</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>cheese</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Testing of cheese data set</h2>
+
+<h3>Description</h3>
+
+<p>Testing of cheese data set
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>cheese
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 30 rows and 5 columns
+</p>
+
+<dl>
+<dt>Taste</dt><dd><p>A measure of taste quality of cheese</p>
+</dd>
+<dt>AceticAcid</dt><dd><p>Concentration of Acetic acid</p>
+</dd>
+<dt>H2S</dt><dd><p>Concentration of hydrogen sulphide</p>
+</dd>
+<dt>LacticAcid</dt><dd><p>Concentration lactic acid</p>
+</dd>
+<dt>logH2S</dt><dd><p>Logarithm of H2S</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(cheese)
+summary(cheese)
+pairs(cheese)
+cheese.lm &lt;- lm(Taste ~ AceticAcid +  LacticAcid + logH2S, data=cheese, subset=2:30)
+# Check the diagnostics 
+plot(cheese.lm$fit, cheese.lm$res, xlab="Fitted values", ylab = "Residuals")
+abline(h=0)
+# Should be a random scatter
+qqnorm(cheese.lm$res, col=2)
+qqline(cheese.lm$res, col="blue")
+summary(cheese.lm)
+cheese.lm2 &lt;- lm(Taste ~ LacticAcid + logH2S, data=cheese)
+# Check the diagnostics 
+plot(cheese.lm2$fit, cheese.lm2$res, xlab="Fitted values", ylab = "Residuals")
+abline(h=0)
+qqnorm(cheese.lm2$res, col=2)
+qqline(cheese.lm2$res, col="blue")
+summary(cheese.lm2)
+# How can we predict? 
+newcheese &lt;- data.frame(AceticAcid = 300, LacticAcid = 1.5, logH2S=4)
+cheese.pred &lt;- predict(cheese.lm2, newdata=newcheese, se.fit=TRUE)
+cheese.pred
+# Obtain confidence interval 
+cheese.pred$fit + c(-1, 1) * qt(0.975, df=27) * cheese.pred$se.fit
+# Using R to predict  
+cheese.pred.conf.limits &lt;- predict(cheese.lm2, newdata=newcheese, interval="confidence")
+cheese.pred.conf.limits
+# How to find prediction interval 
+cheese.pred.pred.limits &lt;- predict(cheese.lm2, newdata=newcheese, interval="prediction")
+cheese.pred.pred.limits
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

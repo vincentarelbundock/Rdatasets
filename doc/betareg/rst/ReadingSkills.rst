@@ -70,24 +70,25 @@
       .. rubric:: References
          :name: references
 
-      Cribari-Neto, F., and Zeileis, A. (2010). Beta Regression in R.
-      *Journal of Statistical Software*, **34**\ (2), 1–24.
+      Cribari-Neto F, Zeileis A (2010). Beta Regression in R. *Journal
+      of Statistical Software*, **34**\ (2), 1–24.
       `doi:10.18637/jss.v034.i02 <https://doi.org/10.18637/jss.v034.i02>`__
 
-      Grün, B., Kosmidis, I., and Zeileis, A. (2012). Extended Beta
-      Regression in R: Shaken, Stirred, Mixed, and Partitioned. *Journal
-      of Statistical Software*, **48**\ (11), 1–25.
+      Grün B, Kosmidis I, Zeileis A (2012). Extended Beta Regression in
+      R: Shaken, Stirred, Mixed, and Partitioned. *Journal of
+      Statistical Software*, **48**\ (11), 1–25.
       `doi:10.18637/jss.v048.i11 <https://doi.org/10.18637/jss.v048.i11>`__
 
       Kosmidis I, Zeileis A (2024). Extended-Support Beta Regression for
-      [0, 1] Responses. *Unpublished manuscript*.
+      [0, 1] Responses. 2409.07233, *arXiv.org E-Print Archive*.
+      `doi:10.48550/arXiv.2409.07233 <https://doi.org/10.48550/arXiv.2409.07233>`__
 
-      Pammer, K., and Kevan, A. (2004). The Contribution of Visual
-      Sensitivity, Phonological Processing and Non-Verbal IQ to
-      Children's Reading. *Unpublished manuscript*, The Australian
-      National University, Canberra.
+      Pammer K, Kevan A (2004). The Contribution of Visual Sensitivity,
+      Phonological Processing and Non-Verbal IQ to Children's Reading.
+      *Unpublished manuscript*, The Australian National University,
+      Canberra.
 
-      Smithson, M., and Verkuilen, J. (2006). A Better Lemon Squeezer?
+      Smithson M, Verkuilen J (2006). A Better Lemon Squeezer?
       Maximum-Likelihood Regression with Beta-Distributed Dependent
       Variables. *Psychological Methods*, **11**\ (7), 54–71.
 

@@ -40,7 +40,7 @@
          :name: source
 
       NSW Bureau of Crime Statistics and Research.
-      https://www.bocsar.nsw.gov.au/Pages/bocsar_datasets/Offence.aspx
+      https://bocsar.nsw.gov.au/
 
       .. rubric:: Examples
          :name: examples

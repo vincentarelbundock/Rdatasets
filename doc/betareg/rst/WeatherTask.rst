@@ -6,7 +6,7 @@
       WeatherTask R Documentation
       =========== ===============
 
-      .. rubric:: Weather Task With Priming and Precise and Imprecise
+      .. rubric:: Weather Task with Priming and Precise and Imprecise
          Probabilities
          :name: weather-task-with-priming-and-precise-and-imprecise-probabilities
 
@@ -75,15 +75,14 @@
       .. rubric:: References
          :name: references
 
-      Smithson, M., Merkle, E.C., and Verkuilen, J. (2011). Beta
-      Regression Finite Mixture Models of Polarization and Priming.
-      *Journal of Educational and Behavioral Statistics*, **36**\ (6),
-      804–831.
+      Smithson M, Merkle EC, Verkuilen J (2011). Beta Regression Finite
+      Mixture Models of Polarization and Priming. *Journal of
+      Educational and Behavioral Statistics*, **36**\ (6), 804–831.
       `doi:10.3102/1076998610396893 <https://doi.org/10.3102/1076998610396893>`__
 
-      Smithson, M., and Segale, C. (2009). Partition Priming in
-      Judgments of Imprecise Probabilities. *Journal of Statistical
-      Theory and Practice*, **3**\ (1), 169–181.
+      Smithson M, Segale C (2009). Partition Priming in Judgments of
+      Imprecise Probabilities. *Journal of Statistical Theory and
+      Practice*, **3**\ (1), 169–181.
 
       .. rubric:: Examples
          :name: examples

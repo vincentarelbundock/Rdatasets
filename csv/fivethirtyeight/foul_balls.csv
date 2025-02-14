@@ -1,0 +1,907 @@
+rownames,matchup,game_date,type_of_hit,exit_velocity,predicted_zone,camera_zone,used_zone
+1,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,,1,1,1
+2,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,4,,4
+3,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,56.9,4,,4
+4,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,78.8,1,1,1
+5,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,2,,2
+6,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,,1,1,1
+7,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,74.8,2,,2
+8,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,,1,1,1
+9,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,70.7,4,,4
+10,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,73.4,4,,4
+11,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,76,5,5,5
+12,Seattle Mariners vs Minnesota Twins,2019-05-18,Line,,1,1,1
+13,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,72.1,2,,2
+14,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,4,,4
+15,Seattle Mariners vs Minnesota Twins,2019-05-18,Line,95.9,5,5,5
+16,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,74.4,2,,2
+17,Seattle Mariners vs Minnesota Twins,2019-05-18,Batter hits self,69.9,1,1,1
+18,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,2,,2
+19,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,76.2,2,,2
+20,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,72,4,,4
+21,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,2,,2
+22,Seattle Mariners vs Minnesota Twins,2019-05-18,Line,84.9,5,5,5
+23,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,4,,4
+24,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,2,,2
+25,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,73.2,3,,3
+26,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,104.6,6,6,6
+27,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,96.2,4,,4
+28,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,1,1,1
+29,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,,5,,5
+30,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,74.6,1,1,1
+31,Seattle Mariners vs Minnesota Twins,2019-05-18,Line,76.1,5,5,5
+32,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,4,,4
+33,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,72,4,,4
+34,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,,4,,4
+35,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,72.2,1,1,1
+36,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,4,,4
+37,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,74,4,,4
+38,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,64.5,4,,4
+39,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,100.8,5,5,5
+40,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,56,2,,2
+41,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,62.2,4,,4
+42,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,78.6,2,4,4
+43,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,61.3,4,,4
+44,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,2,4,4
+45,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,2,,2
+46,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,88.1,5,5,5
+47,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,73.4,1,1,1
+48,Seattle Mariners vs Minnesota Twins,2019-05-18,Line,,1,1,1
+49,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,74.6,2,,2
+50,Seattle Mariners vs Minnesota Twins,2019-05-18,Batter hits self,,1,1,1
+51,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,78.9,1,1,1
+52,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,2,2,2
+53,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,62.6,4,,4
+54,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,,5,,5
+55,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,85.2,5,5,5
+56,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,2,,2
+57,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,92.1,5,,5
+58,Seattle Mariners vs Minnesota Twins,2019-05-18,Pop Up,76.4,1,1,1
+59,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,77.6,1,1,1
+60,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,96.8,5,5,5
+61,Seattle Mariners vs Minnesota Twins,2019-05-18,Batter hits self,,1,1,1
+62,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,84.7,4,4,4
+63,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,66.7,2,,2
+64,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,5,,5
+65,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,5,,5
+66,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,94,7,7,7
+67,Seattle Mariners vs Minnesota Twins,2019-05-18,Line,63.7,1,1,1
+68,Seattle Mariners vs Minnesota Twins,2019-05-18,Line,94.8,4,4,4
+69,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,100.7,4,4,4
+70,Seattle Mariners vs Minnesota Twins,2019-05-18,Line,,1,1,1
+71,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,3,,3
+72,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,70.9,5,,5
+73,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,3,3,3
+74,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,5,,5
+75,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,79.2,1,1,1
+76,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,87.3,4,4,4
+77,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,4,,4
+78,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,77.6,1,1,1
+79,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,76.9,1,1,1
+80,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,98.6,5,5,5
+81,Seattle Mariners vs Minnesota Twins,2019-05-18,Pop Up,81.7,1,1,1
+82,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,76.3,4,,4
+83,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,79.3,4,,4
+84,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,,3,,3
+85,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,,5,,5
+86,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,,4,,4
+87,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,81,5,,5
+88,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,85.8,4,4,4
+89,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,,4,,4
+90,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,67.6,1,1,1
+91,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,89.7,4,,4
+92,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,74.3,1,1,1
+93,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,106.6,5,5,5
+94,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,76.2,4,,4
+95,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,76.8,2,,2
+96,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,55.1,5,,5
+97,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,,4,,4
+98,Seattle Mariners vs Minnesota Twins,2019-05-18,Fly,73.4,4,,4
+99,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,78.8,2,,2
+100,Seattle Mariners vs Minnesota Twins,2019-05-18,Ground,,3,3,3
+101,Baltimore Orioles vs Minnesota Twins,2019-04-20,Line,110.6,4,4,4
+102,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,95.2,5,,5
+103,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,5,,5
+104,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,105.3,6,6,6
+105,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,5,,5
+106,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,1,1,1
+107,Baltimore Orioles vs Minnesota Twins,2019-04-20,Pop Up,74.9,1,1,1
+108,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,71,3,,3
+109,Baltimore Orioles vs Minnesota Twins,2019-04-20,Line,64.5,5,,5
+110,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,98.4,4,4,4
+111,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,2,,2
+112,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,65.8,3,,3
+113,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,5,,5
+114,Baltimore Orioles vs Minnesota Twins,2019-04-20,Line,42,1,1,1
+115,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,61.2,1,1,1
+116,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,98.7,4,4,4
+117,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,79.6,1,1,1
+118,Baltimore Orioles vs Minnesota Twins,2019-04-20,Line,73.9,4,4,4
+119,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,2,,2
+120,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,85.3,4,4,4
+121,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,73.9,5,,5
+122,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,80.1,1,1,1
+123,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,3,3,3
+124,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,2,,2
+125,Baltimore Orioles vs Minnesota Twins,2019-04-20,Line,,1,1,1
+126,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,106.2,5,5,5
+127,Baltimore Orioles vs Minnesota Twins,2019-04-20,Batter hits self,66.3,1,1,1
+128,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,85.5,4,4,4
+129,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,92.7,6,6,6
+130,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,70.5,4,,4
+131,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,3,,3
+132,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,66.3,1,1,1
+133,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,68.7,2,,2
+134,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,3,,3
+135,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,69.6,2,,2
+136,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,2,,2
+137,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,108.5,6,6,6
+138,Baltimore Orioles vs Minnesota Twins,2019-04-20,Line,95.8,5,,5
+139,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,53.3,1,1,1
+140,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,70.5,2,,2
+141,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,108.5,7,7,7
+142,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,4,,4
+143,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,1,1,1
+144,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,75.6,3,,3
+145,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,70.8,3,,3
+146,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,3,,3
+147,Baltimore Orioles vs Minnesota Twins,2019-04-20,Pop Up,78.1,1,1,1
+148,Baltimore Orioles vs Minnesota Twins,2019-04-20,Line,56.9,5,,5
+149,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,60.3,5,5,5
+150,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,5,,5
+151,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,4,,4
+152,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,46.9,4,,4
+153,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,1,1,1
+154,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,1,1,1
+155,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,4,,4
+156,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,5,,5
+157,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,86.9,5,,5
+158,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,3,3,3
+159,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,63,2,,2
+160,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,1,1,1
+161,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,82.8,4,,4
+162,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,73.3,4,4,4
+163,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,1,1,1
+164,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,79.7,4,,4
+165,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,74.4,5,5,5
+166,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,102.9,5,,5
+167,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,71,1,1,1
+168,Baltimore Orioles vs Minnesota Twins,2019-04-20,Line,80.2,5,5,5
+169,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,62.2,4,,4
+170,Baltimore Orioles vs Minnesota Twins,2019-04-20,Line,96.6,5,5,5
+171,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,4,,4
+172,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,62.8,5,5,5
+173,Baltimore Orioles vs Minnesota Twins,2019-04-20,Line,101.4,5,5,5
+174,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,85.3,5,5,5
+175,Baltimore Orioles vs Minnesota Twins,2019-04-20,Line,,1,1,1
+176,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,5,,5
+177,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,5,,5
+178,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,1,1,1
+179,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,70.9,1,1,1
+180,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,4,,4
+181,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,45.1,4,,4
+182,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,72.8,4,,4
+183,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,72.5,5,,5
+184,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,62.7,5,,5
+185,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,74.6,5,5,5
+186,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,87.8,5,,5
+187,Baltimore Orioles vs Minnesota Twins,2019-04-20,Pop Up,70.2,1,,1
+188,Baltimore Orioles vs Minnesota Twins,2019-04-20,Pop Up,80.5,1,,1
+189,Baltimore Orioles vs Minnesota Twins,2019-04-20,Pop Up,81.7,1,1,1
+190,Baltimore Orioles vs Minnesota Twins,2019-04-20,Line,,1,1,1
+191,Baltimore Orioles vs Minnesota Twins,2019-04-20,Pop Up,77.8,1,,1
+192,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,86,5,,5
+193,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,68.8,1,1,1
+194,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,88.7,5,5,5
+195,Baltimore Orioles vs Minnesota Twins,2019-04-20,Line,,1,1,1
+196,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,2,,2
+197,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,1,1,1
+198,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,75.4,3,,3
+199,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,66.4,1,1,1
+200,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,91.3,5,,5
+201,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,67.3,2,,2
+202,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,4,,4
+203,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,77.6,5,,5
+204,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,1,1,1
+205,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,71.2,5,,5
+206,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,3,3,3
+207,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,1,1,1
+208,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,67.3,3,,3
+209,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,69.1,4,4,4
+210,Baltimore Orioles vs Minnesota Twins,2019-04-20,Ground,,1,1,1
+211,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,74.9,5,,5
+212,Baltimore Orioles vs Minnesota Twins,2019-04-20,Fly,,3,3,3
+213,Baltimore Orioles vs Minnesota Twins,2019-04-20,Pop Up,71.8,1,,1
+214,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,1,1,1
+215,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,65.1,2,,2
+216,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,96.6,7,7,7
+217,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,89.2,4,4,4
+218,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Line,102.7,5,,5
+219,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,4,,4
+220,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,2,,2
+221,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,2,,2
+222,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,48.8,4,4,4
+223,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,80,1,1,1
+224,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,4,,4
+225,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,3,,3
+226,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Line,,1,1,1
+227,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,1,1,1
+228,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,4,,4
+229,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Line,101.6,5,,5
+230,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,4,,4
+231,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,68.1,1,1,1
+232,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,1,1,1
+233,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,5,,5
+234,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Pop Up,70.1,1,,1
+235,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Pop Up,77.2,1,1,1
+236,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,76.7,1,1,1
+237,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,2,,2
+238,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,73.4,4,,4
+239,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,86.7,5,,5
+240,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,4,,4
+241,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Pop Up,69.9,1,,1
+242,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,73.7,5,,5
+243,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,2,,2
+244,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,2,,2
+245,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,4,,4
+246,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,82.4,5,5,5
+247,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Batter hits self,68.3,1,1,1
+248,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,1,1,1
+249,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,66.7,1,1,1
+250,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,78.3,1,1,1
+251,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,76.6,1,1,1
+252,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,75,5,5,5
+253,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,1,1,1
+254,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Line,,1,1,1
+255,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Pop Up,68.7,1,,1
+256,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,5,,5
+257,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,2,,2
+258,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,2,,2
+259,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,68.3,5,,5
+260,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,74.2,1,1,1
+261,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,74.9,1,1,1
+262,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,79.5,5,,5
+263,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,74,1,1,1
+264,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Line,,1,1,1
+265,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,5,,5
+266,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,3,,3
+267,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,96,4,4,4
+268,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,1,1,1
+269,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,5,,5
+270,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,62.9,5,,5
+271,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,3,,3
+272,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,1,1,1
+273,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Pop Up,,1,,1
+274,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,81.7,3,,3
+275,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,85.1,5,5,5
+276,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,4,,4
+277,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,82,5,,5
+278,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,78.7,1,1,1
+279,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,5,,5
+280,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,50,4,,4
+281,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,1,1,1
+282,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,87.9,4,,4
+283,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,63.3,5,,5
+284,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,4,,4
+285,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,61.8,2,,2
+286,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,69.8,4,,4
+287,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,53.8,3,3,3
+288,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,76.9,4,,4
+289,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,4,,4
+290,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,4,,4
+291,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,1,1,1
+292,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,2,,2
+293,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,5,,5
+294,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,5,,5
+295,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,4,,4
+296,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,72.2,4,,4
+297,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,75.4,3,,3
+298,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,102.3,7,7,7
+299,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,1,1,1
+300,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Pop Up,79.8,1,,1
+301,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,1,1,1
+302,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,5,,5
+303,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,98,4,4,4
+304,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,60.8,5,,5
+305,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,1,1,1
+306,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,5,,5
+307,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,62.6,4,,4
+308,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,79.6,1,1,1
+309,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Line,,1,1,1
+310,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,107,4,4,4
+311,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,81.2,4,,4
+312,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,5,,5
+313,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,77.6,4,,4
+314,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,2,4,4
+315,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,5,,5
+316,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,74.8,1,1,1
+317,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,67.8,4,,4
+318,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Line,77.9,1,1,1
+319,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,81.4,4,,4
+320,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,4,,4
+321,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,1,1,1
+322,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Fly,,2,4,4
+323,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Ground,,1,1,1
+324,Pittsburgh Pirates vs Milwaukee Brewers,2019-06-01,Line,77.8,5,5,5
+325,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,56.1,3,,3
+326,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,4,,4
+327,Milwaukee Brewers vs New York Mets,2019-05-04,Line,,1,1,1
+328,Milwaukee Brewers vs New York Mets,2019-05-04,Batter hits self,,1,1,1
+329,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,1,1,1
+330,Milwaukee Brewers vs New York Mets,2019-05-04,Pop Up,67.7,1,,1
+331,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,69,3,,3
+332,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,72.2,1,1,1
+333,Milwaukee Brewers vs New York Mets,2019-05-04,Pop Up,65.6,1,,1
+334,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,89,5,,5
+335,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,,2,,2
+336,Milwaukee Brewers vs New York Mets,2019-05-04,Batter hits self,,1,1,1
+337,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,98.5,5,,5
+338,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,65.5,1,1,1
+339,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,,1,1,1
+340,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,,1,1,1
+341,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,58.6,1,1,1
+342,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,108.7,4,,4
+343,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,68.7,5,5,5
+344,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,65.8,1,1,1
+345,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,43.8,5,,5
+346,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,1,1,1
+347,Milwaukee Brewers vs New York Mets,2019-05-04,Line,,1,1,1
+348,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,58.5,4,,4
+349,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,74.4,4,,4
+350,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,53.2,4,,4
+351,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,,5,,5
+352,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,73.9,2,,2
+353,Milwaukee Brewers vs New York Mets,2019-05-04,Line,94.8,5,,5
+354,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,76.9,4,,4
+355,Milwaukee Brewers vs New York Mets,2019-05-04,Line,,1,1,1
+356,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,4,,4
+357,Milwaukee Brewers vs New York Mets,2019-05-04,Pop Up,,1,,1
+358,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,4,,4
+359,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,80,2,1,1
+360,Milwaukee Brewers vs New York Mets,2019-05-04,Line,,1,1,1
+361,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,78.4,4,,4
+362,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,5,,5
+363,Milwaukee Brewers vs New York Mets,2019-05-04,Line,,1,1,1
+364,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,78.9,4,,4
+365,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,70.6,4,,4
+366,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,73.3,3,,3
+367,Milwaukee Brewers vs New York Mets,2019-05-04,Pop Up,75,1,,1
+368,Milwaukee Brewers vs New York Mets,2019-05-04,Line,,1,1,1
+369,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,92.1,5,,5
+370,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,65.1,4,,4
+371,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,78.9,1,1,1
+372,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,1,1,1
+373,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,97.7,5,,5
+374,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,5,,5
+375,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,1,1,1
+376,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,,1,1,1
+377,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,84.6,1,1,1
+378,Milwaukee Brewers vs New York Mets,2019-05-04,Pop Up,76.4,1,,1
+379,Milwaukee Brewers vs New York Mets,2019-05-04,Pop Up,74,1,,1
+380,Milwaukee Brewers vs New York Mets,2019-05-04,Pop Up,72.6,1,,1
+381,Milwaukee Brewers vs New York Mets,2019-05-04,Pop Up,73,1,,1
+382,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,66.8,1,1,1
+383,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,87.3,5,,5
+384,Milwaukee Brewers vs New York Mets,2019-05-04,Pop Up,80.8,1,,1
+385,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,68.7,1,1,1
+386,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,4,,4
+387,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,,2,,2
+388,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,65.2,1,1,1
+389,Milwaukee Brewers vs New York Mets,2019-05-04,Batter hits self,60.4,1,1,1
+390,Milwaukee Brewers vs New York Mets,2019-05-04,Pop Up,68.9,1,,1
+391,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,81.7,3,3,3
+392,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,87.4,5,5,5
+393,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,5,,5
+394,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,53.7,1,1,1
+395,Milwaukee Brewers vs New York Mets,2019-05-04,Pop Up,,1,1,1
+396,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,72,1,1,1
+397,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,79.7,1,1,1
+398,Milwaukee Brewers vs New York Mets,2019-05-04,Batter hits self,82,1,1,1
+399,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,101.8,5,5,5
+400,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,70.6,4,,4
+401,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,,1,1,1
+402,Milwaukee Brewers vs New York Mets,2019-05-04,Batter hits self,,1,1,1
+403,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,5,,5
+404,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,71.8,5,,5
+405,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,69.4,4,,4
+406,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,51.1,5,,5
+407,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,4,,4
+408,Milwaukee Brewers vs New York Mets,2019-05-04,Ground,,5,,5
+409,Milwaukee Brewers vs New York Mets,2019-05-04,Fly,,5,,5
+410,Texas Rangers vs Toronto Blue Jays,2019-05-03,Pop Up,69.2,1,,1
+411,Texas Rangers vs Toronto Blue Jays,2019-05-03,Line,89.5,4,4,4
+412,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,69.9,1,1,1
+413,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,57.2,2,,2
+414,Texas Rangers vs Toronto Blue Jays,2019-05-03,Line,,1,1,1
+415,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,,3,,3
+416,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,74.6,1,1,1
+417,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,69.8,1,1,1
+418,Texas Rangers vs Toronto Blue Jays,2019-05-03,Batter hits self,,1,1,1
+419,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,65.6,1,1,1
+420,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,,1,1,1
+421,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,74,3,,3
+422,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,69.7,4,,4
+423,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,78,2,,2
+424,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,71.6,4,,4
+425,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,57.4,5,5,5
+426,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,72.4,5,,5
+427,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,72,1,1,1
+428,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,94,6,6,6
+429,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,76.9,5,5,5
+430,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,72.1,5,,5
+431,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,85.1,5,5,5
+432,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,77.8,3,,3
+433,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,80.2,5,,5
+434,Texas Rangers vs Toronto Blue Jays,2019-05-03,Pop Up,74.3,1,,1
+435,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,,5,,5
+436,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,83.5,4,,4
+437,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,88.2,3,3,3
+438,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,67.1,1,1,1
+439,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,75.7,4,,4
+440,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,78.1,1,1,1
+441,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,,1,1,1
+442,Texas Rangers vs Toronto Blue Jays,2019-05-03,Line,76.8,1,1,1
+443,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,75.1,4,,4
+444,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,64.7,5,,5
+445,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,83.8,5,5,5
+446,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,78.5,1,1,1
+447,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,75.8,2,,2
+448,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,61.4,4,,4
+449,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,70.8,4,,4
+450,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,80.7,4,,4
+451,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,105.3,4,4,4
+452,Texas Rangers vs Toronto Blue Jays,2019-05-03,Line,76.9,5,5,5
+453,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,77,4,,4
+454,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,76,1,1,1
+455,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,75.4,4,,4
+456,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,72,2,,2
+457,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,74.9,4,,4
+458,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,62.5,4,,4
+459,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,86.7,4,,4
+460,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,,4,,4
+461,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,,1,1,1
+462,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,,1,1,1
+463,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,,1,1,1
+464,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,,2,,2
+465,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,,1,1,1
+466,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,67.5,5,,5
+467,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,,1,1,1
+468,Texas Rangers vs Toronto Blue Jays,2019-05-03,Line,83.9,1,1,1
+469,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,75.3,2,,2
+470,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,107.6,5,,5
+471,Texas Rangers vs Toronto Blue Jays,2019-05-03,Pop Up,,1,,1
+472,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,89.4,4,,4
+473,Texas Rangers vs Toronto Blue Jays,2019-05-03,Pop Up,74.9,1,,1
+474,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,81.1,4,,4
+475,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,,2,,2
+476,Texas Rangers vs Toronto Blue Jays,2019-05-03,Pop Up,79.9,1,,1
+477,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,,2,,2
+478,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,91.9,7,7,7
+479,Texas Rangers vs Toronto Blue Jays,2019-05-03,Pop Up,,1,,1
+480,Texas Rangers vs Toronto Blue Jays,2019-05-03,Pop Up,,1,1,1
+481,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,,5,5,5
+482,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,95.7,5,5,5
+483,Texas Rangers vs Toronto Blue Jays,2019-05-03,Line,,1,1,1
+484,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,95.7,5,,5
+485,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,68.1,5,,5
+486,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,75,2,,2
+487,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,36.2,5,,5
+488,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,59.1,4,,4
+489,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,,2,,2
+490,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,68.2,4,,4
+491,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,75.3,4,,4
+492,Texas Rangers vs Toronto Blue Jays,2019-05-03,Ground,,1,1,1
+493,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,75.3,4,,4
+494,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,92.3,5,,5
+495,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,79.2,1,1,1
+496,Texas Rangers vs Toronto Blue Jays,2019-05-03,Fly,101.4,5,,5
+497,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,2,2,2
+498,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,2,,2
+499,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,77.5,3,,3
+500,Philadelphia Phillies vs Miami Marlins,2019-04-27,Batter hits self,,1,1,1
+501,Philadelphia Phillies vs Miami Marlins,2019-04-27,Pop Up,60.8,1,,1
+502,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,94.4,5,7,5
+503,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,68.9,2,,2
+504,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,2,,2
+505,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,1,1,1
+506,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,83.1,4,4,4
+507,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,2,,2
+508,Philadelphia Phillies vs Miami Marlins,2019-04-27,Batter hits self,,1,1,1
+509,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,,3,,3
+510,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,2,,2
+511,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,,2,,2
+512,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,95.9,4,4,4
+513,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,3,3,3
+514,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,1,1,1
+515,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,5,,5
+516,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,87.1,4,4,4
+517,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,75.3,5,,5
+518,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,74.4,5,,5
+519,Philadelphia Phillies vs Miami Marlins,2019-04-27,Batter hits self,,1,1,1
+520,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,69.7,5,,5
+521,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,91.7,4,4,4
+522,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,2,,2
+523,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,68,5,,5
+524,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,4,,4
+525,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,2,,2
+526,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,70.2,1,1,1
+527,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,79.1,2,4,4
+528,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,85.6,2,4,4
+529,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,73.7,4,,4
+530,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,64,4,,4
+531,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,,5,,5
+532,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,73.1,3,,3
+533,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,99.4,4,,4
+534,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,69.4,5,,5
+535,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,74.9,3,,3
+536,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,,5,,5
+537,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,75,5,,5
+538,Philadelphia Phillies vs Miami Marlins,2019-04-27,Pop Up,73.4,1,,1
+539,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,,4,,4
+540,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,72.7,4,,4
+541,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,5,,5
+542,Philadelphia Phillies vs Miami Marlins,2019-04-27,Batter hits self,,1,,1
+543,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,73.7,3,5,5
+544,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,71,2,,2
+545,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,66.4,3,,3
+546,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,1,,1
+547,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,72.4,4,,4
+548,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,100.7,4,4,4
+549,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,4,4,4
+550,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,,2,,2
+551,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,77.8,4,,4
+552,Philadelphia Phillies vs Miami Marlins,2019-04-27,Pop Up,71.3,1,,1
+553,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,64.7,4,,4
+554,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,,5,,5
+555,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,58.9,4,4,4
+556,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,69.3,2,,2
+557,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,,2,,2
+558,Philadelphia Phillies vs Miami Marlins,2019-04-27,Line,39.9,1,1,1
+559,Philadelphia Phillies vs Miami Marlins,2019-04-27,Line,,1,1,1
+560,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,63.1,5,,5
+561,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,78.8,4,,4
+562,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,77.4,4,,4
+563,Philadelphia Phillies vs Miami Marlins,2019-04-27,Line,,1,1,1
+564,Philadelphia Phillies vs Miami Marlins,2019-04-27,Pop Up,56.8,1,,1
+565,Philadelphia Phillies vs Miami Marlins,2019-04-27,Line,,1,1,1
+566,Philadelphia Phillies vs Miami Marlins,2019-04-27,Line,,1,1,1
+567,Philadelphia Phillies vs Miami Marlins,2019-04-27,Batter hits self,,1,1,1
+568,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,4,,4
+569,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,,5,,5
+570,Philadelphia Phillies vs Miami Marlins,2019-04-27,Fly,78,5,,5
+571,Philadelphia Phillies vs Miami Marlins,2019-04-27,Ground,,4,,4
+572,Oakland A's vs Houston Astros,2019-06-02,Fly,82.6,5,,5
+573,Oakland A's vs Houston Astros,2019-06-02,Fly,,1,1,1
+574,Oakland A's vs Houston Astros,2019-06-02,Ground,77.9,1,1,1
+575,Oakland A's vs Houston Astros,2019-06-02,Line,,1,1,1
+576,Oakland A's vs Houston Astros,2019-06-02,Ground,62.5,2,,2
+577,Oakland A's vs Houston Astros,2019-06-02,Fly,76.1,5,,5
+578,Oakland A's vs Houston Astros,2019-06-02,Fly,76,2,,2
+579,Oakland A's vs Houston Astros,2019-06-02,Fly,75.7,5,,5
+580,Oakland A's vs Houston Astros,2019-06-02,Ground,87.3,4,,4
+581,Oakland A's vs Houston Astros,2019-06-02,Ground,,2,,2
+582,Oakland A's vs Houston Astros,2019-06-02,Fly,,5,,5
+583,Oakland A's vs Houston Astros,2019-06-02,Fly,77.2,3,,3
+584,Oakland A's vs Houston Astros,2019-06-02,Fly,75.6,3,,3
+585,Oakland A's vs Houston Astros,2019-06-02,Line,92.4,4,4,4
+586,Oakland A's vs Houston Astros,2019-06-02,Ground,,1,1,1
+587,Oakland A's vs Houston Astros,2019-06-02,Fly,91.1,5,5,5
+588,Oakland A's vs Houston Astros,2019-06-02,Line,79,1,1,1
+589,Oakland A's vs Houston Astros,2019-06-02,Fly,70.3,4,,4
+590,Oakland A's vs Houston Astros,2019-06-02,Fly,77.4,2,,2
+591,Oakland A's vs Houston Astros,2019-06-02,Line,,1,1,1
+592,Oakland A's vs Houston Astros,2019-06-02,Fly,89.7,4,4,4
+593,Oakland A's vs Houston Astros,2019-06-02,Line,,1,1,1
+594,Oakland A's vs Houston Astros,2019-06-02,Fly,77,3,,3
+595,Oakland A's vs Houston Astros,2019-06-02,Fly,80.3,1,1,1
+596,Oakland A's vs Houston Astros,2019-06-02,Fly,86.1,5,5,5
+597,Oakland A's vs Houston Astros,2019-06-02,Fly,72.1,3,,3
+598,Oakland A's vs Houston Astros,2019-06-02,Ground,58.4,1,1,1
+599,Oakland A's vs Houston Astros,2019-06-02,Fly,74.7,3,,3
+600,Oakland A's vs Houston Astros,2019-06-02,Line,,5,5,5
+601,Oakland A's vs Houston Astros,2019-06-02,Ground,84.6,5,5,5
+602,Oakland A's vs Houston Astros,2019-06-02,Fly,,5,,5
+603,Oakland A's vs Houston Astros,2019-06-02,Line,,1,1,1
+604,Oakland A's vs Houston Astros,2019-06-02,Fly,67.1,2,,2
+605,Oakland A's vs Houston Astros,2019-06-02,Fly,82.4,5,5,5
+606,Oakland A's vs Houston Astros,2019-06-02,Fly,,1,1,1
+607,Oakland A's vs Houston Astros,2019-06-02,Line,82.6,5,5,5
+608,Oakland A's vs Houston Astros,2019-06-02,Fly,,3,5,5
+609,Oakland A's vs Houston Astros,2019-06-02,Fly,,2,,2
+610,Oakland A's vs Houston Astros,2019-06-02,Fly,75.8,4,,4
+611,Oakland A's vs Houston Astros,2019-06-02,Ground,,5,,5
+612,Oakland A's vs Houston Astros,2019-06-02,Fly,,3,,3
+613,Oakland A's vs Houston Astros,2019-06-02,Fly,67.6,2,,2
+614,Oakland A's vs Houston Astros,2019-06-02,Fly,67.9,2,,2
+615,Oakland A's vs Houston Astros,2019-06-02,Line,47.3,5,5,5
+616,Oakland A's vs Houston Astros,2019-06-02,Fly,81.3,5,5,5
+617,Oakland A's vs Houston Astros,2019-06-02,Fly,82.9,5,,5
+618,Oakland A's vs Houston Astros,2019-06-02,Fly,77.1,5,,5
+619,Oakland A's vs Houston Astros,2019-06-02,Ground,53.1,1,1,1
+620,Oakland A's vs Houston Astros,2019-06-02,Fly,,3,,3
+621,Oakland A's vs Houston Astros,2019-06-02,Fly,68.3,2,,2
+622,Oakland A's vs Houston Astros,2019-06-02,Fly,78.5,3,,3
+623,Oakland A's vs Houston Astros,2019-06-02,Fly,,4,,4
+624,Oakland A's vs Houston Astros,2019-06-02,Fly,,5,5,5
+625,Oakland A's vs Houston Astros,2019-06-02,Ground,83.7,4,4,4
+626,Oakland A's vs Houston Astros,2019-06-02,Fly,75.6,5,,5
+627,Oakland A's vs Houston Astros,2019-06-02,Fly,79.9,1,1,1
+628,Oakland A's vs Houston Astros,2019-06-02,Line,58.8,1,1,1
+629,Oakland A's vs Houston Astros,2019-06-02,Fly,78.4,1,1,1
+630,Oakland A's vs Houston Astros,2019-06-02,Fly,83.5,4,4,4
+631,Oakland A's vs Houston Astros,2019-06-02,Fly,,4,,4
+632,Oakland A's vs Houston Astros,2019-06-02,Fly,,5,,5
+633,Oakland A's vs Houston Astros,2019-06-02,Pop Up,78.2,1,,1
+634,Oakland A's vs Houston Astros,2019-06-02,Fly,84.7,4,4,4
+635,Oakland A's vs Houston Astros,2019-06-02,Fly,74.2,4,,4
+636,Oakland A's vs Houston Astros,2019-06-02,Fly,77.1,1,1,1
+637,Oakland A's vs Houston Astros,2019-06-02,Ground,92.7,5,5,5
+638,Oakland A's vs Houston Astros,2019-06-02,Fly,77.6,3,,3
+639,Oakland A's vs Houston Astros,2019-06-02,Ground,71.9,5,5,5
+640,Oakland A's vs Houston Astros,2019-06-02,Fly,70.9,5,,5
+641,Oakland A's vs Houston Astros,2019-06-02,Ground,,4,4,4
+642,Oakland A's vs Houston Astros,2019-06-02,Ground,103,5,5,5
+643,Oakland A's vs Houston Astros,2019-06-02,Fly,,3,,3
+644,Oakland A's vs Houston Astros,2019-06-02,Pop Up,76.8,1,1,1
+645,Oakland A's vs Houston Astros,2019-06-02,Ground,,1,1,1
+646,Oakland A's vs Houston Astros,2019-06-02,Ground,61,2,,2
+647,Oakland A's vs Houston Astros,2019-06-02,Line,,1,1,1
+648,Oakland A's vs Houston Astros,2019-06-02,Fly,74.1,5,,5
+649,Oakland A's vs Houston Astros,2019-06-02,Fly,75.3,3,,3
+650,Oakland A's vs Houston Astros,2019-06-02,Fly,78.1,3,,3
+651,Oakland A's vs Houston Astros,2019-06-02,Line,,1,1,1
+652,Oakland A's vs Houston Astros,2019-06-02,Ground,65.3,1,1,1
+653,Oakland A's vs Houston Astros,2019-06-02,Fly,82,3,,3
+654,Oakland A's vs Houston Astros,2019-06-02,Fly,96,4,4,4
+655,Oakland A's vs Houston Astros,2019-06-02,Fly,79.4,5,,5
+656,Oakland A's vs Houston Astros,2019-06-02,Ground,,5,,5
+657,Oakland A's vs Houston Astros,2019-06-02,Ground,78.7,1,1,1
+658,Oakland A's vs Houston Astros,2019-06-02,Ground,83,3,,3
+659,Oakland A's vs Houston Astros,2019-06-02,Fly,,4,,4
+660,Oakland A's vs Houston Astros,2019-06-02,Ground,62.5,5,,5
+661,Oakland A's vs Houston Astros,2019-06-02,Ground,99.9,5,5,5
+662,Oakland A's vs Houston Astros,2019-06-02,Fly,66.1,3,,3
+663,Oakland A's vs Houston Astros,2019-06-02,Fly,68.2,5,,5
+664,Oakland A's vs Houston Astros,2019-06-02,Fly,,5,,5
+665,Oakland A's vs Houston Astros,2019-06-02,Fly,73.3,2,,2
+666,Oakland A's vs Houston Astros,2019-06-02,Fly,,4,,4
+667,Oakland A's vs Houston Astros,2019-06-02,Fly,76.7,2,,2
+668,Oakland A's vs Houston Astros,2019-06-02,Pop Up,69.7,1,1,1
+669,Oakland A's vs Houston Astros,2019-06-02,Fly,,5,,5
+670,Oakland A's vs Houston Astros,2019-06-02,Fly,76,4,,4
+671,Oakland A's vs Houston Astros,2019-06-02,Fly,76.3,2,,2
+672,Oakland A's vs Houston Astros,2019-06-02,Fly,69.9,2,,2
+673,Oakland A's vs Houston Astros,2019-06-02,Ground,70.2,2,,2
+674,Oakland A's vs Houston Astros,2019-06-02,Ground,57.5,5,5,5
+675,Oakland A's vs Houston Astros,2019-06-02,Ground,,1,1,1
+676,Oakland A's vs Houston Astros,2019-06-02,Fly,88.2,5,,5
+677,Oakland A's vs Houston Astros,2019-06-02,Line,80.7,1,1,1
+678,Oakland A's vs Houston Astros,2019-06-02,Fly,79.8,1,1,1
+679,Oakland A's vs Houston Astros,2019-06-02,Fly,72.8,1,1,1
+680,Oakland A's vs Houston Astros,2019-06-02,Ground,84.1,5,5,5
+681,Atlanta Braves vs New York Mets,2019-04-14,Fly,,4,,4
+682,Atlanta Braves vs New York Mets,2019-04-14,Fly,70.2,4,,4
+683,Atlanta Braves vs New York Mets,2019-04-14,Fly,85,1,1,1
+684,Atlanta Braves vs New York Mets,2019-04-14,Fly,,5,,5
+685,Atlanta Braves vs New York Mets,2019-04-14,Fly,60,4,,4
+686,Atlanta Braves vs New York Mets,2019-04-14,Fly,86.8,5,5,5
+687,Atlanta Braves vs New York Mets,2019-04-14,Fly,,5,,5
+688,Atlanta Braves vs New York Mets,2019-04-14,Ground,,4,,4
+689,Atlanta Braves vs New York Mets,2019-04-14,Fly,78.3,5,,5
+690,Atlanta Braves vs New York Mets,2019-04-14,Pop Up,80.5,1,1,1
+691,Atlanta Braves vs New York Mets,2019-04-14,Fly,80.9,4,,4
+692,Atlanta Braves vs New York Mets,2019-04-14,Fly,76.4,2,,2
+693,Atlanta Braves vs New York Mets,2019-04-14,Fly,78.4,5,,5
+694,Atlanta Braves vs New York Mets,2019-04-14,Line,96.5,5,5,5
+695,Atlanta Braves vs New York Mets,2019-04-14,Fly,73.9,1,1,1
+696,Atlanta Braves vs New York Mets,2019-04-14,Fly,71.4,2,,2
+697,Atlanta Braves vs New York Mets,2019-04-14,Pop Up,78.4,1,1,1
+698,Atlanta Braves vs New York Mets,2019-04-14,Fly,,5,,5
+699,Atlanta Braves vs New York Mets,2019-04-14,Fly,75.9,1,1,1
+700,Atlanta Braves vs New York Mets,2019-04-14,Ground,61.7,5,,5
+701,Atlanta Braves vs New York Mets,2019-04-14,Fly,76.8,5,,5
+702,Atlanta Braves vs New York Mets,2019-04-14,Fly,,5,,5
+703,Atlanta Braves vs New York Mets,2019-04-14,Fly,,5,,5
+704,Atlanta Braves vs New York Mets,2019-04-14,Fly,,4,,4
+705,Atlanta Braves vs New York Mets,2019-04-14,Fly,78,1,1,1
+706,Atlanta Braves vs New York Mets,2019-04-14,Fly,,5,,5
+707,Atlanta Braves vs New York Mets,2019-04-14,Ground,61.8,5,5,5
+708,Atlanta Braves vs New York Mets,2019-04-14,Fly,84.4,1,1,1
+709,Atlanta Braves vs New York Mets,2019-04-14,Fly,76,1,1,1
+710,Atlanta Braves vs New York Mets,2019-04-14,Pop Up,71.5,1,1,1
+711,Atlanta Braves vs New York Mets,2019-04-14,Fly,,2,,2
+712,Atlanta Braves vs New York Mets,2019-04-14,Ground,69.5,5,,5
+713,Atlanta Braves vs New York Mets,2019-04-14,Ground,76.8,5,5,5
+714,Atlanta Braves vs New York Mets,2019-04-14,Line,,1,1,1
+715,Atlanta Braves vs New York Mets,2019-04-14,Fly,74.7,2,,2
+716,Atlanta Braves vs New York Mets,2019-04-14,Fly,69.2,2,,2
+717,Atlanta Braves vs New York Mets,2019-04-14,Line,67.1,3,,3
+718,Atlanta Braves vs New York Mets,2019-04-14,Fly,75.9,1,1,1
+719,Atlanta Braves vs New York Mets,2019-04-14,Fly,70.7,4,,4
+720,Atlanta Braves vs New York Mets,2019-04-14,Fly,,1,1,1
+721,Atlanta Braves vs New York Mets,2019-04-14,Fly,,5,,5
+722,Atlanta Braves vs New York Mets,2019-04-14,Fly,91.5,4,4,4
+723,Atlanta Braves vs New York Mets,2019-04-14,Fly,74.5,4,,4
+724,Atlanta Braves vs New York Mets,2019-04-14,Ground,68.7,2,,2
+725,Atlanta Braves vs New York Mets,2019-04-14,Fly,77.4,4,,4
+726,Atlanta Braves vs New York Mets,2019-04-14,Line,,1,1,1
+727,Atlanta Braves vs New York Mets,2019-04-14,Fly,59.4,3,,3
+728,Atlanta Braves vs New York Mets,2019-04-14,Ground,25.4,1,1,1
+729,Atlanta Braves vs New York Mets,2019-04-14,Ground,76.6,2,,2
+730,Atlanta Braves vs New York Mets,2019-04-14,Ground,,1,1,1
+731,Atlanta Braves vs New York Mets,2019-04-14,Fly,71.4,3,,3
+732,Atlanta Braves vs New York Mets,2019-04-14,Fly,75.9,4,,4
+733,Atlanta Braves vs New York Mets,2019-04-14,Fly,76.2,4,,4
+734,Atlanta Braves vs New York Mets,2019-04-14,Fly,,5,,5
+735,Atlanta Braves vs New York Mets,2019-04-14,Fly,74.9,4,,4
+736,Atlanta Braves vs New York Mets,2019-04-14,Fly,69.5,1,1,1
+737,Atlanta Braves vs New York Mets,2019-04-14,Fly,,1,1,1
+738,Atlanta Braves vs New York Mets,2019-04-14,Line,,1,1,1
+739,Atlanta Braves vs New York Mets,2019-04-14,Fly,68.6,2,,2
+740,Atlanta Braves vs New York Mets,2019-04-14,Line,,1,1,1
+741,Atlanta Braves vs New York Mets,2019-04-14,Fly,73.5,1,1,1
+742,Atlanta Braves vs New York Mets,2019-04-14,Fly,71.7,4,4,4
+743,Atlanta Braves vs New York Mets,2019-04-14,Fly,79.5,4,,4
+744,Atlanta Braves vs New York Mets,2019-04-14,Pop Up,74.7,1,,1
+745,Atlanta Braves vs New York Mets,2019-04-14,Fly,54,3,,3
+746,Atlanta Braves vs New York Mets,2019-04-14,Fly,53.2,5,,5
+747,Atlanta Braves vs New York Mets,2019-04-14,Fly,86.8,4,4,4
+748,Atlanta Braves vs New York Mets,2019-04-14,Fly,76.2,4,,4
+749,Atlanta Braves vs New York Mets,2019-04-14,Fly,73.4,4,,4
+750,Atlanta Braves vs New York Mets,2019-04-14,Line,80.7,1,1,1
+751,Atlanta Braves vs New York Mets,2019-04-14,Line,,1,1,1
+752,Atlanta Braves vs New York Mets,2019-04-14,Fly,79.6,5,,5
+753,Atlanta Braves vs New York Mets,2019-04-14,Ground,,3,3,3
+754,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,85.5,5,5,5
+755,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Line,103.3,4,4,4
+756,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,76.6,5,,5
+757,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,89.4,4,,4
+758,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,69.2,5,,5
+759,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,79,1,1,1
+760,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,76.4,2,,2
+761,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,81.2,2,,2
+762,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,,1,1,1
+763,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,97.1,4,,4
+764,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,4,,4
+765,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,89.8,4,,4
+766,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,76.6,3,,3
+767,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Line,,1,1,1
+768,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Line,101.7,4,4,4
+769,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,60.6,2,,2
+770,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Line,,1,1,1
+771,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,68.1,4,,4
+772,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,3,5,5
+773,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,69.3,3,,3
+774,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,87.8,4,,4
+775,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,,1,1,1
+776,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,83.5,5,5,5
+777,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,76.8,4,,4
+778,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Line,,4,,4
+779,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,75.1,4,,4
+780,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Pop Up,,1,,1
+781,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,,5,5,5
+782,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,,1,1,1
+783,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,80.5,4,4,4
+784,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Line,,1,1,1
+785,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,3,3,3
+786,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,100,6,6,6
+787,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,64.2,5,5,5
+788,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,79.5,4,,4
+789,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,74.2,1,1,1
+790,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,73.1,1,1,1
+791,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Line,87.5,4,4,4
+792,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,,1,1,1
+793,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,4,,4
+794,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,4,,4
+795,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,76.8,4,4,4
+796,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,,2,,2
+797,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,5,,5
+798,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Line,,1,1,1
+799,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,75.8,3,,3
+800,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,5,,5
+801,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Pop Up,81.7,1,1,1
+802,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,60.9,3,,3
+803,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,66.1,5,,5
+804,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,77.6,1,1,1
+805,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,4,,4
+806,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,81.4,2,4,4
+807,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,74.9,1,1,1
+808,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,,3,,3
+809,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,67.3,5,,5
+810,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,4,,4
+811,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,,1,1,1
+812,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Line,94.3,4,,4
+813,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,78.9,4,,4
+814,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,4,,4
+815,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Pop Up,74.2,1,1,1
+816,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,68.7,5,5,5
+817,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Pop Up,79.3,1,1,1
+818,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,3,3,3
+819,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,67.5,5,5,5
+820,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,49.2,3,,3
+821,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,,3,,3
+822,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,,3,,3
+823,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,75.8,4,4,4
+824,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,,3,,3
+825,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,71.1,3,,3
+826,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,,1,1,1
+827,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,2,2,2
+828,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Ground,73.2,5,,5
+829,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Pop Up,70.5,1,,1
+830,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Line,91.5,5,5,5
+831,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Line,76.7,1,1,1
+832,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,67.4,3,,3
+833,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,2,,2
+834,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,5,5,5
+835,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,5,5,5
+836,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,76.3,3,,3
+837,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,80.3,2,,2
+838,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,,5,,5
+839,Los Angeles Dodgers vs Arizona Diamondbacks,2019-03-29,Fly,90.6,4,,4
+840,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,,5,5,5
+841,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,89.4,5,,5
+842,New York Yankees vs Baltimore Orioles,2019-03-31,Line,,1,1,1
+843,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,,3,,3
+844,New York Yankees vs Baltimore Orioles,2019-03-31,Pop Up,90.7,1,1,1
+845,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,75.3,3,,3
+846,New York Yankees vs Baltimore Orioles,2019-03-31,Ground,73.4,4,4,4
+847,New York Yankees vs Baltimore Orioles,2019-03-31,Line,,1,1,1
+848,New York Yankees vs Baltimore Orioles,2019-03-31,Ground,78.9,1,1,1
+849,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,63.7,3,,3
+850,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,,3,,3
+851,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,87.6,5,,5
+852,New York Yankees vs Baltimore Orioles,2019-03-31,Line,,1,1,1
+853,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,73.1,5,,5
+854,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,72.1,1,1,1
+855,New York Yankees vs Baltimore Orioles,2019-03-31,Line,,1,1,1
+856,New York Yankees vs Baltimore Orioles,2019-03-31,Ground,,5,,5
+857,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,,4,,4
+858,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,70.4,1,1,1
+859,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,,3,,3
+860,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,73,1,1,1
+861,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,,4,,4
+862,New York Yankees vs Baltimore Orioles,2019-03-31,Pop Up,,1,,1
+863,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,72.7,4,,4
+864,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,78.8,4,,4
+865,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,55.5,5,,5
+866,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,61.5,3,,3
+867,New York Yankees vs Baltimore Orioles,2019-03-31,Line,65.4,5,,5
+868,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,65.1,1,1,1
+869,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,58,3,,3
+870,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,69.1,5,,5
+871,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,,2,,2
+872,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,,5,,5
+873,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,69.8,2,,2
+874,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,66,2,,2
+875,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,72.3,4,,4
+876,New York Yankees vs Baltimore Orioles,2019-03-31,Ground,62.7,2,,2
+877,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,88,5,,5
+878,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,80.3,5,,5
+879,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,85,5,5,5
+880,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,73.6,1,1,1
+881,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,,4,,4
+882,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,,5,,5
+883,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,91.9,5,5,5
+884,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,81.4,3,,3
+885,New York Yankees vs Baltimore Orioles,2019-03-31,Pop Up,73.6,1,1,1
+886,New York Yankees vs Baltimore Orioles,2019-03-31,Batter hits self,,1,1,1
+887,New York Yankees vs Baltimore Orioles,2019-03-31,Line,102.3,5,5,5
+888,New York Yankees vs Baltimore Orioles,2019-03-31,Ground,81.3,4,4,4
+889,New York Yankees vs Baltimore Orioles,2019-03-31,Pop Up,65.9,1,,1
+890,New York Yankees vs Baltimore Orioles,2019-03-31,Line,,1,1,1
+891,New York Yankees vs Baltimore Orioles,2019-03-31,Ground,93.6,4,4,4
+892,New York Yankees vs Baltimore Orioles,2019-03-31,Line,84.6,5,5,5
+893,New York Yankees vs Baltimore Orioles,2019-03-31,Pop Up,77.5,1,1,1
+894,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,82.2,5,,5
+895,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,107.1,5,,5
+896,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,75.5,1,1,1
+897,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,90.9,5,,5
+898,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,77.3,1,1,1
+899,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,73.4,5,,5
+900,New York Yankees vs Baltimore Orioles,2019-03-31,Ground,52,5,5,5
+901,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,92.8,4,,4
+902,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,101.2,4,,4
+903,New York Yankees vs Baltimore Orioles,2019-03-31,Ground,68.5,1,1,1
+904,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,84.5,5,,5
+905,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,71.4,5,,5
+906,New York Yankees vs Baltimore Orioles,2019-03-31,Fly,86.5,4,,4

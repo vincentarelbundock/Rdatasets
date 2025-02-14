@@ -133,30 +133,6 @@
 
       -  ``"CD3+CD8+"``: CD8+T lymphocytes.
 
-      .. rubric:: Examples
-         :name: examples
-
-      Here is a glimpse at the data available in ``illness``.
-
-      .. container:: sourceCode r
-
-         ::
-
-            dplyr::glimpse(illness)
-            #> Rows: 39
-            #> Columns: 11
-            #> $ test   <chr> "Viral load", "WBC", "Neutrophils", "RBC", "Hb", "PLT", "ALT", ~
-            #> $ units  <chr> "copies per mL", "x10^9 / L", "x10^9 / L", "x10^12 / L", "g / L~
-            #> $ day_3  <dbl> 12000.000, 5.260, 4.870, 5.720, 153.000, 67.000, 12835.000, 236~
-            #> $ day_4  <dbl> 4200.000, 4.260, 4.720, 5.980, 135.000, 38.600, 12632.000, 2136~
-            #> $ day_5  <dbl> 1600.000, 9.920, 7.920, 4.230, 126.000, 27.400, 6426.700, 14730~
-            #> $ day_6  <dbl> 830.000, 10.490, 18.210, 4.830, 115.000, 26.200, 4263.100, 8691~
-            #> $ day_7  <dbl> 760.000, 24.770, 22.080, 4.120, 75.000, 74.100, 1623.700, 2189.~
-            #> $ day_8  <dbl> 520.000, 30.260, 27.170, 2.680, 87.000, 36.200, 672.600, 1145.0~
-            #> $ day_9  <dbl> 250.000, 19.030, 16.590, 3.320, 95.000, 25.600, 512.400, 782.50~
-            #> $ norm_l <dbl> NA, 4.0, 2.0, 4.0, 120.0, 100.0, 9.0, 15.0, 0.0, 0.0, 10.0, 9.4~
-            #> $ norm_u <dbl> NA, 10.000, 8.000, 5.500, 160.000, 300.000, 50.000, 40.000, 18.~
-
       .. rubric:: Dataset ID and Badge
          :name: dataset-id-and-badge
 
@@ -178,5 +154,12 @@
       ``films``, ``gibraltar``, ``gtcars``, ``metro``, ``nuclides``,
       ``peeps``, ``photolysis``, ``pizzaplace``, ``reactions``,
       ``rx_addv``, ``rx_adsl``, ``sp500``, ``sza``, ``towny``
+
+      .. rubric:: Examples
+         :name: examples
+
+      .. code:: R
+
+         dplyr::glimpse(illness)
 
 .. |This image of that of a dataset badge.| image:: https://raw.githubusercontent.com/rstudio/gt/master/images/dataset_illness.png

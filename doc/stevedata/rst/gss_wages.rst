@@ -68,5 +68,7 @@
       .. rubric:: Details
          :name: details
 
-      For further details, see https://gssdataexplorer.norc.org. Consult
-      https://census.gov for more information about occupation codes.
+      For further details, see the GSS Data Explorer at the National
+      Opinion Research Center (NORC) at the University of Chicago.
+      Consult https://census.gov for more information about occupation
+      codes.

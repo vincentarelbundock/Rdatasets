@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><head><title>R: Congress Generic Ballot Polls</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>generic_topline</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Congress Generic Ballot Polls</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Are Democrats Winning The Race For Congress?&quot;
+<a href="https://projects.fivethirtyeight.com/congress-generic-ballot-polls/">https://projects.fivethirtyeight.com/congress-generic-ballot-polls/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>generic_topline
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 751 rows representing polls and 9 variables:
+</p>
+
+<dl>
+<dt>subgroup</dt><dd><p>No description provided.</p>
+</dd>
+<dt>modeldate</dt><dd><p>No description provided.</p>
+</dd>
+<dt>dem_estimate</dt><dd><p>No description provided.</p>
+</dd>
+<dt>dem_hi</dt><dd><p>No description provided.</p>
+</dd>
+<dt>dem_lo</dt><dd><p>No description provided.</p>
+</dd>
+<dt>rep_estimate</dt><dd><p>No description provided.</p>
+</dd>
+<dt>rep_hi</dt><dd><p>No description provided.</p>
+</dd>
+<dt>rep_lo</dt><dd><p>No description provided.</p>
+</dd>
+<dt>timestamp</dt><dd><p>No description provided.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/blob/master/congress-generic-ballot/README.md">https://github.com/fivethirtyeight/data/blob/master/congress-generic-ballot/README.md</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>generic_polllist</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

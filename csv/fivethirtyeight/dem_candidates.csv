@@ -1,0 +1,812 @@
+rownames,candidate,state,office_type,race_type,race_primary_election_date,primary_status,primary_runoff_status,general_status,partisan_lean,primary_percent,won_primary,race,veteran,lgbtq,elected_official,self_funder,stem,obama_alum,party_support,emily_endorsed,guns_sense_candidate,biden_endorsed,warren_endorsed,sanders_endorsed,our_revolution_endorsed,justice_dems_endorsed,pccc_endorsed,indivisible_endorsed,wfp_endorsed,vote_vets_endorsed,no_labels_support,body,district_num
+1,Anthony White (Alabama),AL,Governor,Regular,2018-06-05,Lost,None,None,-28.879999,3.4200001,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,governor,
+2,Christopher Countryman,AL,Governor,Regular,2018-06-05,Lost,None,None,-28.879999,1.74,FALSE,White,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,governor,
+3,"Doug ""New Blue"" Smith",AL,Governor,Regular,2018-06-05,Lost,None,None,-28.879999,3.27,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,governor,
+4,James C. Fields,AL,Governor,Regular,2018-06-05,Lost,None,None,-28.879999,8,FALSE,Nonwhite,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,governor,
+5,Sue Bell Cobb,AL,Governor,Regular,2018-06-05,Lost,None,None,-28.879999,28.98,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,governor,
+6,Walt Maddox,AL,Governor,Regular,2018-06-05,Advanced,None,On the Ballot,-28.879999,54.599998,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,governor,
+7,Lizzetta Hill McConnell,AL,Representative,Regular,2018-06-05,Lost,None,None,-30.68,19.23,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,1
+8,Robert Kennedy Jr.,AL,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-30.68,80.769997,TRUE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,1
+9,Audri Scott Williams,AL,Representative,Regular,2018-06-05,Lost,None,None,-33.080002,39.560001,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+10,Tabitha Isner,AL,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-33.080002,60.439999,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+11,Adia McClellan Winfrey,AL,Representative,Regular,2018-06-05,Lost,None,None,-33.66,34.240002,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,,,,,,,,house,3
+12,Mallory Hagan,AL,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-33.66,65.739998,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,3
+13,Lee Auman,AL,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-62.48,54.130001,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,4
+14,Rick Neighbors,AL,Representative,Regular,2018-06-05,Lost,None,None,-62.48,45.869999,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,4
+15,Peter Joffrion,AL,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-34.830002,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,TRUE,,,,house,5
+16,Danner Kline,AL,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-48.459999,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,6
+17,Jared Henderson,AR,Governor,Regular,2018-05-22,Advanced,None,On the Ballot,-28.639999,63.299999,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,governor,
+18,Leticia Sanders,AR,Governor,Regular,2018-05-22,Lost,None,None,-28.639999,36.700001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,governor,
+19,Chintan Desai,AR,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-34.810001,100,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,TRUE,,,,house,1
+20,Clarke Tucker,AR,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-13.51,57.82,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,,TRUE,,,,,,,,,,,house,2
+21,Gwen Combs,AR,Representative,Regular,2018-05-22,Lost,None,None,-13.51,20.299999,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,,,,,,,,,,,house,2
+22,Jonathan Dunkley,AR,Representative,Regular,2018-05-22,Lost,None,None,-13.51,9.3400002,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,,,,,,,house,2
+23,Paul Spencer,AR,Representative,Regular,2018-05-22,Lost,None,None,-13.51,12.55,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,,,,,,,house,2
+24,Joshua Mahony,AR,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-34.560001,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,TRUE,,,,house,3
+25,Hayden Shamel,AR,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-33.68,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+26,Brianna Westbrook,AZ,Representative,Special,2018-02-27,Lost,None,None,-24.559999,39.720001,FALSE,White,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,TRUE,,,,,,house,8
+27,Hiral Tipirneni,AZ,Representative,Special,2018-02-27,Advanced,None,On the Ballot,-24.559999,60.220001,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,FALSE,FALSE,,,,,,house,8
+28,Akinyemi Agbede,CA,Governor,Regular,2018-06-05,Lost,None,None,25.83,0.22,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,FALSE,,,,,,,governor,
+29,Albert Caesar Mezzetti,CA,Governor,Regular,2018-06-05,Lost,None,None,25.83,0.28,FALSE,White,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,governor,
+30,Amanda Renteria,CA,Governor,Regular,2018-06-05,Lost,None,None,25.83,2.1500001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,governor,
+31,Antonio Villaraigosa,CA,Governor,Regular,2018-06-05,Lost,None,None,25.83,21.290001,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,governor,
+32,Delaine Eastin,CA,Governor,Regular,2018-06-05,Lost,None,None,25.83,5.4000001,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,TRUE,,,,TRUE,,,,,,,governor,
+33,Gavin Newsom,CA,Governor,Regular,2018-06-05,Advanced,None,On the Ballot,25.83,53.869999,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,,,,,governor,
+34,John Chiang,CA,Governor,Regular,2018-06-05,Lost,None,None,25.83,15.08,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,,,TRUE,,,,FALSE,,,,,,,governor,
+35,Juan Bribiesca,CA,Governor,Regular,2018-06-05,Lost,None,None,25.83,0.40000001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,FALSE,,,,,,,governor,
+36,Klement Tinaj,CA,Governor,Regular,2018-06-05,Lost,None,None,25.83,0.12,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,governor,
+37,Michael Shellenberger,CA,Governor,Regular,2018-06-05,Lost,None,None,25.83,0.73000002,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,governor,
+38,Robert Davidson Griffis,CA,Governor,Regular,2018-06-05,Lost,None,None,25.83,0.25999999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,governor,
+39,Thomas Jefferson Cares,CA,Governor,Regular,2018-06-05,Lost,None,None,25.83,0.20999999,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,FALSE,,,,,,,governor,
+40,Audrey Denney,CA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-21.379999,43.650002,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,TRUE,,FALSE,,,,house,1
+41,David Peterson,CA,Representative,Regular,2018-06-05,Lost,None,None,-21.379999,7.3000002,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,,FALSE,,,,house,1
+42,Jessica Holcombe,CA,Representative,Regular,2018-06-05,Lost,None,None,-21.379999,28.540001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,,FALSE,,,,house,1
+43,Marty Walters,CA,Representative,Regular,2018-06-05,Lost,None,None,-21.379999,20.51,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,,TRUE,,,,house,1
+44,Dotty Nygard,CA,Representative,Regular,2018-06-05,Lost,None,None,0.62,1.89,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,TRUE,TRUE,,FALSE,,,,house,10
+45,Josh Harder,CA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,0.62,35.57,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,,,,FALSE,FALSE,,FALSE,,,,house,10
+46,Michael Eggman,CA,Representative,Regular,2018-06-05,Lost,None,None,0.62,21.34,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,FALSE,FALSE,,FALSE,,,,house,10
+47,Mike Barkley,CA,Representative,Regular,2018-06-05,Lost,None,None,0.62,4.98,FALSE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,FALSE,FALSE,,FALSE,,,,house,10
+48,Sue Zwahlen,CA,Representative,Regular,2018-06-05,Lost,None,None,0.62,17.049999,FALSE,White,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,FALSE,FALSE,,FALSE,,,,house,10
+49,Virginia Madueno,CA,Representative,Regular,2018-06-05,Lost,None,None,0.62,19.17,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,,,,FALSE,FALSE,,TRUE,,,,house,10
+50,TJ Cox,CA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,11.87,100,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,,,,,,,,,,,,house,21
+51,Andrew Janz,CA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-13.41,78.830002,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,22
+52,Bobby Bliatout,CA,Representative,Regular,2018-06-05,Lost,None,None,-13.41,12.26,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,22
+53,Ricardo Franco,CA,Representative,Regular,2018-06-05,Lost,None,None,-13.41,8.9099998,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,22
+54,Kurtis Wilson,CA,Representative,Regular,2018-06-05,Lost,None,None,-25.379999,4.8400002,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,23
+55,Mary Helen Barro,CA,Representative,Regular,2018-06-05,Lost,None,None,-25.379999,18.200001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,23
+56,Tatiana Matta,CA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-25.379999,42.720001,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,23
+57,Wendy Reed,CA,Representative,Regular,2018-06-05,Lost,None,None,-25.379999,34.25,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,23
+58,Bryan Caforio,CA,Representative,Regular,2018-06-05,Lost,None,None,2.02,38.259998,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,FALSE,TRUE,,,,,,house,25
+59,Jess Phoenix,CA,Representative,Regular,2018-06-05,Lost,None,None,2.02,13.24,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,,,,TRUE,FALSE,,,,,,house,25
+60,Katie Hill,CA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,2.02,42.970001,TRUE,White,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,,,,FALSE,FALSE,,,,,,house,25
+61,Mary Pallant,CA,Representative,Regular,2018-06-05,Lost,None,None,2.02,5.54,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,FALSE,FALSE,,,,,,house,25
+62,Andy Thorburn,CA,Representative,Regular,2018-06-05,Lost,None,None,2.99,20.440001,FALSE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,TRUE,,,FALSE,,,,house,39
+63,Gil Cisneros,CA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,2.99,43.23,TRUE,Nonwhite,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,,,,FALSE,,,FALSE,,,,house,39
+64,Herbert Lee,CA,Representative,Regular,2018-06-05,Lost,None,None,2.99,9.4200001,FALSE,Nonwhite,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,FALSE,,,FALSE,,,,house,39
+65,Mai Khanh Tran,CA,Representative,Regular,2018-06-05,Lost,None,None,2.99,11.69,FALSE,Nonwhite,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,,,,FALSE,,,FALSE,,,,house,39
+66,Sam Jammal,CA,Representative,Regular,2018-06-05,Lost,None,None,2.99,11.98,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,,FALSE,,,TRUE,,,,house,39
+67,Suzi Park Leggett,CA,Representative,Regular,2018-06-05,Lost,None,None,2.99,3.24,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,FALSE,,,FALSE,,,,house,39
+68,Jessica Morse,CA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-18.16,49.099998,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,FALSE,,TRUE,,,,house,4
+69,Regina Bateson,CA,Representative,Regular,2018-06-05,Lost,None,None,-18.16,30.07,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,FALSE,,FALSE,,,,house,4
+70,Robert Lawton,CA,Representative,Regular,2018-06-05,Lost,None,None,-18.16,5.25,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,FALSE,,FALSE,,,,house,4
+71,Roza Calderon,CA,Representative,Regular,2018-06-05,Lost,None,None,-18.16,15.57,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,TRUE,TRUE,,FALSE,,,,house,4
+72,Julia Peacock,CA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-15.31,76.019997,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,TRUE,,,,house,42
+73,Norman Quintero,CA,Representative,Regular,2018-06-05,Lost,None,None,-15.31,23.98,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,FALSE,,,,house,42
+74,Brian Forde,CA,Representative,Regular,2018-06-05,Lost,None,None,-1.4299999,13.06,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,,FALSE,,FALSE,,FALSE,,,,,house,45
+75,Dave Min,CA,Representative,Regular,2018-06-05,Lost,None,None,-1.4299999,38.740002,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,FALSE,,FALSE,,FALSE,,,,,house,45
+76,Katie Porter,CA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-1.4299999,44.040001,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,,TRUE,,TRUE,,TRUE,,,,,house,45
+77,Kia Hamadanchy,CA,Representative,Regular,2018-06-05,Lost,None,None,-1.4299999,4.1500001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,FALSE,,TRUE,,FALSE,,,,,house,45
+78,Deanie Schaarsmith,CA,Representative,Regular,2018-06-05,Lost,None,None,-4.1799998,1.79,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,FALSE,,FALSE,,,,house,48
+79,Hans Keirstead,CA,Representative,Regular,2018-06-05,Lost,None,None,-4.1799998,37.439999,FALSE,White,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,,,,FALSE,,FALSE,,,,house,48
+80,Harley Rouda,CA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-4.1799998,37.599998,TRUE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,,,,,FALSE,,TRUE,,,,house,48
+81,Laura Oatman,CA,Representative,Regular,2018-06-05,Lost,None,None,-4.1799998,3.01,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,TRUE,,FALSE,,,,house,48
+82,Michael Kotick,CA,Representative,Regular,2018-06-05,Lost,None,None,-4.1799998,3.26,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,FALSE,,FALSE,,,,house,48
+83,Omar Siddiqui,CA,Representative,Regular,2018-06-05,Lost,None,None,-4.1799998,10.81,FALSE,Nonwhite,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,,,,,FALSE,,FALSE,,,,house,48
+84,Rachel Payne,CA,Representative,Regular,2018-06-05,Lost,None,None,-4.1799998,4.4899998,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,,,,,FALSE,,FALSE,,,,house,48
+85,Tony Zarkades,CA,Representative,Regular,2018-06-05,Lost,None,None,-4.1799998,1.6,FALSE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,FALSE,,FALSE,,,,house,48
+86,Douglas Applegate,CA,Representative,Regular,2018-06-05,Lost,None,None,1.42,25.76,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,TRUE,FALSE,,,,,house,49
+87,Mike Levin,CA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,1.42,34.400002,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,FALSE,TRUE,,,,,house,49
+88,Paul Kerr,CA,Representative,Regular,2018-06-05,Lost,None,None,1.42,8.75,FALSE,White,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,FALSE,FALSE,,,,,house,49
+89,Sara Jacobs,CA,Representative,Regular,2018-06-05,Lost,None,None,1.42,31.09,FALSE,White,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,,,,,,FALSE,FALSE,,,,,house,49
+90,Ammar Campa-Najjar,CA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-19.48,48.360001,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,,,,,TRUE,TRUE,TRUE,,,,house,50
+91,Josh Butner,CA,Representative,Regular,2018-06-05,Lost,None,None,-19.48,35.509998,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,FALSE,FALSE,FALSE,,,,house,50
+92,Patrick Malloy,CA,Representative,Regular,2018-06-05,Lost,None,None,-19.48,16.129999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,FALSE,FALSE,FALSE,,,,house,50
+93,Marge Doyle,CA,Representative,Regular,2018-06-05,Lost,None,,-17.33,59.610001,,White,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,8
+94,Rita Ramirez,CA,Representative,Regular,2018-06-05,Lost,None,,-17.33,27.67,,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,8
+95,Ronald O'Donnell,CA,Representative,Regular,2018-06-05,Lost,None,,-17.33,12.71,,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,8
+96,Cary Kennedy,CO,Governor,Regular,2018-06-26,Lost,None,None,2.49,24.719999,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,TRUE,TRUE,,,,,,,,,,,governor,
+97,Donna Lynne,CO,Governor,Regular,2018-06-26,Lost,None,None,2.49,7.2800002,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,,,,,,,,governor,
+98,Jared Polis,CO,Governor,Regular,2018-06-26,Advanced,None,On the Ballot,2.49,44.43,TRUE,White,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,,FALSE,FALSE,,,,,,,,,,,governor,
+99,Michael Johnston,CO,Governor,Regular,2018-06-26,Lost,None,None,2.49,23.57,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,FALSE,FALSE,,,,,,,,,,,governor,
+100,Joe Neguse,CO,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,18.040001,65.82,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+101,Mark Williams,CO,Representative,Regular,2018-06-26,Lost,None,None,18.040001,34.18,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+102,Arn Menconi,CO,Representative,Regular,2018-06-26,Lost,None,None,-13.03,8.2200003,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,,,,,,,,house,3
+103,Diane Mitsch Bush,CO,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-13.03,64.099998,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,TRUE,,,,,,,,,,,,house,3
+104,Karl Hanlon,CO,Representative,Regular,2018-06-26,Lost,None,None,-13.03,27.68,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,,,,,,,,house,3
+105,Chase Kohne,CO,Representative,Regular,2018-06-26,Lost,None,None,-24.68,35.32,FALSE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,4
+106,Karen McCormick,CO,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-24.68,64.629997,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,4
+107,Stephany Rose Spaulding,CO,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-25.73,100,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,TRUE,,,,,,house,5
+108,Jason Crow,CO,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,5.4200001,65.940002,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,,,FALSE,,,,,,,house,6
+109,Levi Tillemann,CO,Representative,Regular,2018-06-26,Lost,None,None,5.4200001,34.060001,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,,,,TRUE,,,,,,,house,6
+110,Stacey Abrams,GA,Governor,Regular,2018-05-22,Advanced,None,On the Ballot,-8.3400002,76.440002,TRUE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,TRUE,,,,TRUE,TRUE,,TRUE,,TRUE,,,governor,
+111,Stacey Evans,GA,Governor,Regular,2018-05-22,Lost,None,None,-8.3400002,23.559999,FALSE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,FALSE,,,,FALSE,FALSE,,FALSE,,FALSE,,,governor,
+112,Barbara Seidman,GA,Representative,Regular,2018-05-22,Lost,None,None,-17.379999,32.459999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,FALSE,FALSE,FALSE,,,,house,1
+113,Lisa Ring,GA,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-17.379999,67.540001,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,TRUE,FALSE,TRUE,,,,house,1
+114,Chalis Montgomery,GA,Representative,Regular,2018-05-22,Lost,None,None,-28.209999,26.459999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,10
+115,Richard Dien Winfield,GA,Representative,Regular,2018-05-22,Lost,None,None,-28.209999,23.33,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,10
+116,Tabitha Johnson-Green,GA,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-28.209999,50.200001,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,10
+117,Flynn Broady Jr.,GA,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-30.129999,100,TRUE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,11
+118,Francys Johnson,GA,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-17.629999,52.860001,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,12
+119,Robert Ingham,GA,Representative,Regular,2018-05-22,Lost,None,None,-17.629999,31.15,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,12
+120,Trent Nesmith,GA,Representative,Regular,2018-05-22,Lost,None,None,-17.629999,15.99,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,12
+121,Steven Foster,GA,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-54.18,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,14
+122,Chuck Enderlin,GA,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-34.380001,59.869999,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,3
+123,Rusty Oliver,GA,Representative,Regular,2018-05-22,Lost,None,None,-34.380001,40.130001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,3
+124,Bobby Kaple,GA,Representative,Regular,2018-05-22,Lost,None,None,-9.4799995,26.25,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,,,,,,,,house,6
+125,Kevin Abel,GA,Representative,Regular,2018-05-22,Advanced,Lost,None,-9.4799995,30.540001,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,FALSE,FALSE,,,,,,,,,,,house,6
+126,Lucy McBath,GA,Representative,Regular,2018-05-22,Advanced,Advanced,On the Ballot,-9.4799995,36.27,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,TRUE,TRUE,,,,,,,,,,,house,6
+127,Steven Knight Griffin,GA,Representative,Regular,2018-05-22,Lost,None,None,-9.4799995,6.9499998,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,,,,,,,,house,6
+128,Carolyn Bourdeaux,GA,Representative,Regular,2018-05-22,Advanced,Advanced,On the Ballot,-12.73,27.280001,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,,,,,FALSE,,,,,,,house,7
+129,David Kim,GA,Representative,Regular,2018-05-22,Advanced,Lost,None,-12.73,25.98,FALSE,Nonwhite,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,FALSE,,,,,FALSE,,,,,,,house,7
+130,Ethan Pham,GA,Representative,Regular,2018-05-22,Lost,None,None,-12.73,17.84,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,,,,,,,house,7
+131,Kathleen Allen,GA,Representative,Regular,2018-05-22,Lost,None,None,-12.73,11.02,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,TRUE,,,,,,,house,7
+132,Melissa Davis,GA,Representative,Regular,2018-05-22,Lost,None,None,-12.73,13.67,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,,,,,,,house,7
+133,Steve Reilly,GA,Representative,Regular,2018-05-22,Lost,None,None,-12.73,4.1999998,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,,,,,,,house,7
+134,Dave Cooper,GA,Representative,Regular,2018-05-22,Lost,None,None,-60.810001,47.27,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,TRUE,,,,house,9
+135,Josh McCall,GA,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-60.810001,52.73,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,FALSE,,,,house,9
+136,Andy McGuire,IA,Governor,Regular,2018-06-05,Lost,None,None,-8.1400003,5.25,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,FALSE,,FALSE,,FALSE,,,governor,
+137,Cathy Glasson,IA,Governor,Regular,2018-06-05,Lost,None,None,-8.1400003,20.549999,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,TRUE,,TRUE,,TRUE,,,governor,
+138,Fred Hubbell,IA,Governor,Regular,2018-06-05,Advanced,None,On the Ballot,-8.1400003,55.41,TRUE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,,,FALSE,,FALSE,,FALSE,,,governor,
+139,John Norris,IA,Governor,Regular,2018-06-05,Lost,None,None,-8.1400003,11.44,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,FALSE,,,,FALSE,,FALSE,,FALSE,,,governor,
+140,Nate Boulton,IA,Governor,Regular,2018-06-05,Lost,None,None,-8.1400003,4.9699998,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,FALSE,,FALSE,,,governor,
+141,Ross Wilburn,IA,Governor,Regular,2018-06-05,Lost,None,None,-8.1400003,2.1700001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,FALSE,,FALSE,,,governor,
+142,Abby Finkenauer,IA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-1.73,66.800003,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,,TRUE,,,,,,,,,,house,1
+143,Courtney Rowe,IA,Representative,Regular,2018-06-05,Lost,None,None,-1.73,7.5900002,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,,,,TRUE,,,,,,house,1
+144,George Ramsey,IA,Representative,Regular,2018-06-05,Lost,None,None,-1.73,6.3699999,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,,,,,,house,1
+145,Thomas Heckroth,IA,Representative,Regular,2018-06-05,Lost,None,None,-1.73,19.120001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,FALSE,,,,,,,,,,house,1
+146,Cindy Axne,IA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-4.1100001,57.799999,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,,,,FALSE,FALSE,,,,,,,house,3
+147,Eddie Mauro,IA,Representative,Regular,2018-06-05,Lost,None,None,-4.1100001,26.35,FALSE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,FALSE,FALSE,,,,,,,house,3
+148,Pete D'Alessandro,IA,Representative,Regular,2018-06-05,Lost,None,None,-4.1100001,15.58,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,TRUE,TRUE,,,,,,,house,3
+149,J.D. Scholten,IA,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-25.110001,51.259998,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,,TRUE,,,house,4
+150,John Paschen,IA,Representative,Regular,2018-06-05,Lost,None,None,-25.110001,16.719999,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,FALSE,,,,FALSE,,,house,4
+151,Leann Jacobsen,IA,Representative,Regular,2018-06-05,Lost,None,None,-25.110001,31.92,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,FALSE,,,house,4
+152,A.J. Balukoff,ID,Governor,Regular,2018-05-15,Lost,None,None,-34.330002,40.099998,FALSE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,,,,,FALSE,,,FALSE,,,,governor,
+153,Paulette E. Jordan,ID,Governor,Regular,2018-05-15,Advanced,None,On the Ballot,-34.330002,58.400002,TRUE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,TRUE,,,,governor,
+154,Peter Dill,ID,Governor,Regular,2018-05-15,Lost,None,None,-34.330002,1.4,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,FALSE,,,,governor,
+155,Christina McNeil,ID,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-39.43,69.699997,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,1
+156,James Vandermaas,ID,Representative,Regular,2018-05-15,Lost,None,None,-39.43,15.8,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,1
+157,Michael Smith,ID,Representative,Regular,2018-05-15,Lost,None,None,-39.43,14.5,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,1
+158,Aaron Swisher,ID,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-28.809999,67.599998,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+159,Peter Rickards,ID,Representative,Regular,2018-05-15,Lost,None,None,-28.809999,32.400002,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+160,Bob Daiber,IL,Governor,Regular,2018-03-20,Lost,None,None,14.48,1.1,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,FALSE,,,,governor,
+161,Chris Kennedy,IL,Governor,Regular,2018-03-20,Lost,None,None,14.48,24.4,FALSE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,,,,,FALSE,,,FALSE,,,,governor,
+162,Daniel K. Biss,IL,Governor,Regular,2018-03-20,Lost,None,None,14.48,26.700001,FALSE,White,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,,,,,,,TRUE,,,TRUE,,,,governor,
+163,J.B. Pritzker,IL,Governor,Regular,2018-03-20,Advanced,None,On the Ballot,14.48,45.099998,TRUE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,,,,,FALSE,,,FALSE,,,,governor,
+164,Robert Marshall,IL,Governor,Regular,2018-03-20,Lost,None,None,14.48,1.1,FALSE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,FALSE,,,FALSE,,,,governor,
+165,Tio Hardiman,IL,Governor,Regular,2018-03-20,Lost,None,None,14.48,1.6,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,FALSE,,,,governor,
+166,Brendan Kelly,IL,Representative,Regular,2018-03-20,Advanced,None,On the Ballot,-13.26,81,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,TRUE,,,,,,,,,,house,12
+167,David Bequette,IL,Representative,Regular,2018-03-20,Lost,None,None,-13.26,19,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,house,12
+168,Angel Sides,IL,Representative,Regular,2018-03-20,Lost,None,None,-6.73,4.1999998,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,FALSE,,,,,,house,13
+169,Betsy Londrigan,IL,Representative,Regular,2018-03-20,Advanced,None,On the Ballot,-6.73,45.700001,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,,,,,,FALSE,,,,,,house,13
+170,David Gill,IL,Representative,Regular,2018-03-20,Lost,None,None,-6.73,14.4,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,TRUE,,,,,,house,13
+171,Erik Jones,IL,Representative,Regular,2018-03-20,Lost,None,None,-6.73,22.4,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,FALSE,,,,,,house,13
+172,Jonathan Ebel,IL,Representative,Regular,2018-03-20,Lost,None,None,-6.73,13.3,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,FALSE,,,,,,house,13
+173,Daniel Roldan-Johnson,IL,Representative,Regular,2018-03-20,Lost,None,None,-7.96,2.3,FALSE,White,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,FALSE,,,,,,,house,14
+174,George Weber,IL,Representative,Regular,2018-03-20,Lost,None,None,-7.96,5,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,FALSE,,FALSE,,,,,,,house,14
+175,Jim Walz,IL,Representative,Regular,2018-03-20,Lost,None,None,-7.96,10,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,TRUE,,,,,,,house,14
+176,John Hosta,IL,Representative,Regular,2018-03-20,Lost,None,None,-7.96,5,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,FALSE,,,,,,,house,14
+177,Lauren Underwood,IL,Representative,Regular,2018-03-20,Advanced,None,On the Ballot,-7.96,57.299999,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,,TRUE,,FALSE,,,,,,,house,14
+178,Matt Brolley,IL,Representative,Regular,2018-03-20,Lost,None,None,-7.96,13.4,FALSE,White,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,FALSE,,FALSE,,,,,,,house,14
+179,Victor Swanson,IL,Representative,Regular,2018-03-20,Lost,None,None,-7.96,7,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,FALSE,,,,,,,house,14
+180,Carl Spoerer,IL,Representative,Regular,2018-03-20,Lost,None,None,-44.630001,37.900002,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,15
+181,Kevin Gaither,IL,Representative,Regular,2018-03-20,Advanced,None,On the Ballot,-44.630001,62.099998,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,15
+182,Amy Murri Briel,IL,Representative,Regular,2018-03-20,Lost,None,None,-17.360001,19.5,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,,,,,house,16
+183,Beth Vercolio-Osmund,IL,Representative,Regular,2018-03-20,Lost,None,None,-17.360001,13,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,16
+184,Neill Mohammad,IL,Representative,Regular,2018-03-20,Lost,None,None,-17.360001,27.200001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,16
+185,Sara Dady,IL,Representative,Regular,2018-03-20,Advanced,None,On the Ballot,-17.360001,40.299999,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,16
+186,Brian Deters,IL,Representative,Regular,2018-03-20,Lost,None,None,-28.83,39.5,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,18
+187,Darrel Miller,IL,Representative,Regular,2018-03-20,Lost,None,None,-28.83,18.799999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,18
+188,Junius Rodriguez,IL,Representative,Regular,2018-03-20,Advanced,None,On the Ballot,-28.83,41.700001,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,18
+189,Jesus Garcia,IL,Representative,Regular,2018-03-20,Advanced,None,On the Ballot,65.089996,66.199997,TRUE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,,,,TRUE,TRUE,,,,,,,house,4
+190,Richard Gonzalez,IL,Representative,Regular,2018-03-20,Lost,None,None,65.089996,11.9,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,FALSE,FALSE,,,,,,,house,4
+191,Sol Flores,IL,Representative,Regular,2018-03-20,Lost,None,None,65.089996,21.9,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,,,,FALSE,FALSE,,,,,,,house,4
+192,Amanda Howland,IL,Representative,Regular,2018-03-20,Lost,None,None,0.67000002,12.7,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,house,6
+193,Becky Anderson Wilkins,IL,Representative,Regular,2018-03-20,Lost,None,None,0.67000002,6,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,house,6
+194,Carole Cheney,IL,Representative,Regular,2018-03-20,Lost,None,None,0.67000002,17.4,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,house,6
+195,Jennifer Zordani,IL,Representative,Regular,2018-03-20,Lost,None,None,0.67000002,4.0999999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,house,6
+196,Kelly Mazeski,IL,Representative,Regular,2018-03-20,Lost,None,None,0.67000002,26.799999,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,house,6
+197,Ryan Huffman,IL,Representative,Regular,2018-03-20,Lost,None,None,0.67000002,3.5,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,house,6
+198,Sean Casten,IL,Representative,Regular,2018-03-20,Advanced,None,On the Ballot,0.67000002,29.5,TRUE,White,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,,,,,,,,,,,house,6
+199,Douglas Carpenter,IN,Representative,Regular,2018-05-08,Lost,None,None,-23.43,5.3000002,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,,,,,,,,house,2
+200,John Petroff,IN,Representative,Regular,2018-05-08,Lost,None,None,-23.43,1.5,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,2
+201,Mel Hall,IN,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-23.43,41.700001,TRUE,White,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,FALSE,,,,,,,,,,,house,2
+202,Pat Hackett,IN,Representative,Regular,2018-05-08,Lost,None,None,-23.43,28.200001,FALSE,White,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,2
+203,Roland Leech,IN,Representative,Regular,2018-05-08,Lost,None,None,-23.43,1.2,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,2
+204,Yatish Joshi,IN,Representative,Regular,2018-05-08,Lost,None,None,-23.43,22.1,FALSE,Nonwhite,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,TRUE,,,,,,,,,,,house,2
+205,Courtney Tritch,IN,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-35.48,79.099998,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,3
+206,John Roberson,IN,Representative,Regular,2018-05-08,Lost,None,None,-35.48,10.2,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,3
+207,Tommy Schrader,IN,Representative,Regular,2018-05-08,Lost,None,None,-35.48,10.7,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,3
+208,Darin Patrick Griesey,IN,Representative,Regular,2018-05-08,Lost,None,None,-34.110001,6.6999998,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+209,Joe Mackey,IN,Representative,Regular,2018-05-08,Lost,None,None,-34.110001,16.1,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+210,Roger Day,IN,Representative,Regular,2018-05-08,Lost,None,None,-34.110001,12.4,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+211,Roland Ellis,IN,Representative,Regular,2018-05-08,Lost,None,None,-34.110001,9.1999998,FALSE,White,,,,FALSE,,FALSE,,,,,,,,,,,,,,house,4
+212,Tobi Beck,IN,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-34.110001,34.599998,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+213,Veronikka Ziol,IN,Representative,Regular,2018-05-08,Lost,None,None,-34.110001,21.1,FALSE,White,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+214,Dee Thornton,IN,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-15.58,53,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+215,Dion Douglas,IN,Representative,Regular,2018-05-08,Lost,None,None,-15.58,10.3,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+216,Eshel Faraggi,IN,Representative,Regular,2018-05-08,Lost,None,None,-15.58,7.5999999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,5
+217,Kyle Brenden Moore,IN,Representative,Regular,2018-05-08,Lost,None,None,-15.58,23.700001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,5
+218,Sean Dugdale,IN,Representative,Regular,2018-05-08,Lost,None,None,-15.58,5.5,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+219,George Thomas Holland,IN,Representative,Regular,2018-05-08,Lost,None,None,-38.529999,11.1,FALSE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,6
+220,Jeannine Lee Lake,IN,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-38.529999,38.299999,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,6
+221,Jim Pruett,IN,Representative,Regular,2018-05-08,Lost,None,None,-38.529999,25.799999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,6
+222,Joshua Williamson,IN,Representative,Regular,2018-05-08,Lost,None,None,-38.529999,7.3000002,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,6
+223,K. Lave,IN,Representative,Regular,2018-05-08,Lost,None,None,-38.529999,1.9,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,6
+224,Lane Siekman,IN,Representative,Regular,2018-05-08,Lost,None,None,-38.529999,15.6,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,6
+225,William Tanoos,IN,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-32.509998,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,8
+226,Daniel Canon,IN,Representative,Regular,2018-05-08,Lost,None,None,-26.83,30.700001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,FALSE,,,TRUE,FALSE,,FALSE,,,house,9
+227,Liz Watson,IN,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-26.83,66.400002,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,,,TRUE,,,FALSE,TRUE,,TRUE,,,house,9
+228,Rob Chatlos,IN,Representative,Regular,2018-05-08,Lost,None,None,-26.83,2.9000001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,FALSE,,,FALSE,FALSE,,FALSE,,,house,9
+229,Arden Andersen,KS,Governor,Regular,2018-08-07,Lost,None,None,-23.41,7.9000001,FALSE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,,FALSE,FALSE,,,,,,,,,,,governor,
+230,Carl Brewer,KS,Governor,Regular,2018-08-07,Lost,None,None,-23.41,20.6,FALSE,Nonwhite,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,,,,,,,,governor,
+231,Jack Bergeson,KS,Governor,Regular,2018-08-07,Lost,None,None,-23.41,2.5999999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,,,,,,,,governor,
+232,Joshua Svaty,KS,Governor,Regular,2018-08-07,Lost,None,None,-23.41,17.799999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,,,,,,,,governor,
+233,Laura Kelly,KS,Governor,Regular,2018-08-07,Advanced,None,On the Ballot,-23.41,51.400002,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,TRUE,FALSE,,,,,,,,,,,governor,
+234,Alan LaPolice,KS,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-46.91,100,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,1
+235,Paul Davis,KS,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-19.73,100,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+236,Brent Welder,KS,Representative,Regular,2018-08-07,Lost,None,None,-4.0100002,33.900002,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,FALSE,TRUE,,,TRUE,TRUE,TRUE,TRUE,FALSE,,,,house,3
+237,Jay Sidie,KS,Representative,Regular,2018-08-07,Lost,None,None,-4.0100002,2.9000001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,FALSE,FALSE,FALSE,FALSE,FALSE,,,,house,3
+238,Mike McCamon,KS,Representative,Regular,2018-08-07,Lost,None,None,-4.0100002,6.9000001,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,FALSE,FALSE,,,FALSE,FALSE,FALSE,FALSE,FALSE,,,,house,3
+239,Sharice Davids,KS,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-4.0100002,37.299999,TRUE,Nonwhite,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,TRUE,FALSE,,,FALSE,FALSE,FALSE,FALSE,TRUE,,,,house,3
+240,Sylvia Williams,KS,Representative,Regular,2018-08-07,Lost,None,None,-4.0100002,4.6999998,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,FALSE,FALSE,FALSE,FALSE,FALSE,,,,house,3
+241,Tom Niermann,KS,Representative,Regular,2018-08-07,Lost,None,None,-4.0100002,14.3,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,FALSE,FALSE,FALSE,FALSE,TRUE,,,,house,3
+242,James Thompson,KS,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-29.309999,65.300003,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,TRUE,TRUE,TRUE,,,,,,house,4
+243,Laura Lombard,KS,Representative,Regular,2018-08-07,Lost,None,None,-29.309999,34.700001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,FALSE,FALSE,FALSE,,,,,,house,4
+244,Alonzo Pennington,KY,Representative,Regular,2018-05-22,Lost,None,None,-47.48,25.4,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,FALSE,,,,house,1
+245,Paul Walker,KY,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-47.48,74.599998,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,TRUE,,,,house,1
+246,Brian Pedigo,KY,Representative,Regular,2018-05-22,Lost,None,None,-39.509998,28.68,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,2
+247,Grant Short,KY,Representative,Regular,2018-05-22,Lost,None,None,-39.509998,19.59,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,,,,,house,2
+248,Hank Linderman,KY,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-39.509998,30.02,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,2
+249,Rane Eir Olivia Sessions,KY,Representative,Regular,2018-05-22,Lost,None,None,-39.509998,21.719999,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,2
+250,Christina Lord,KY,Representative,Regular,2018-05-22,Lost,None,None,-36.610001,21.709999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,4
+251,Patti Piatt,KY,Representative,Regular,2018-05-22,Lost,None,None,-36.610001,37.529999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,4
+252,Seth Hall,KY,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-36.610001,40.77,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,4
+253,Kenneth Stepp,KY,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-62.060001,58.689999,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+254,Scott Sykes,KY,Representative,Regular,2018-05-22,Lost,None,None,-62.060001,41.310001,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+255,Amy McGrath,KY,Representative,Regular,2018-05-22,Advanced,None,On the Ballot,-17.41,48.66,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,6
+256,Daniel Kemph,KY,Representative,Regular,2018-05-22,Lost,None,None,-17.41,1.23,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,6
+257,Geoff Young,KY,Representative,Regular,2018-05-22,Lost,None,None,-17.41,1.5700001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,6
+258,Jim Gray,KY,Representative,Regular,2018-05-22,Lost,None,None,-17.41,40.509998,FALSE,White,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,6
+259,Reggie Thomas,KY,Representative,Regular,2018-05-22,Lost,None,None,-17.41,7.1999998,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,6
+260,Theodore Green,KY,Representative,Regular,2018-05-22,Lost,None,None,-17.41,0.82999998,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,6
+261,Alec Ross,MD,Governor,Regular,2018-06-26,Lost,None,None,23.799999,2.3,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,,FALSE,TRUE,,,FALSE,FALSE,FALSE,,,FALSE,,,governor,
+262,Ben Jealous,MD,Governor,Regular,2018-06-26,Advanced,None,On the Ballot,23.799999,39.599998,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,TRUE,TRUE,TRUE,,,TRUE,,,governor,
+263,James Jones,MD,Governor,Regular,2018-06-26,Lost,None,None,23.799999,1.5,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,FALSE,FALSE,FALSE,,,FALSE,,,governor,
+264,Jim Shea (Maryland),MD,Governor,Regular,2018-06-26,Lost,None,None,23.799999,8.3000002,FALSE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,FALSE,TRUE,,,FALSE,FALSE,FALSE,,,FALSE,,,governor,
+265,Krishanti Vignarajah,MD,Governor,Regular,2018-06-26,Lost,None,None,23.799999,8.1999998,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,FALSE,TRUE,,,FALSE,FALSE,FALSE,,,FALSE,,,governor,
+266,Ralph Jaffe,MD,Governor,Regular,2018-06-26,Lost,None,None,23.799999,1.6,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,FALSE,FALSE,FALSE,,,FALSE,,,governor,
+267,Richard Madaleno,MD,Governor,Regular,2018-06-26,Lost,None,None,23.799999,5.8000002,FALSE,White,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,FALSE,FALSE,FALSE,,,FALSE,,,governor,
+268,Rushern Baker III,MD,Governor,Regular,2018-06-26,Lost,None,None,23.799999,29.4,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,FALSE,FALSE,FALSE,,,FALSE,,,governor,
+269,Allison Galbraith,MD,Representative,Regular,2018-06-26,Lost,None,None,-29.66,28,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,,,,,house,1
+270,Erik Lane,MD,Representative,Regular,2018-06-26,Lost,None,None,-29.66,2.2,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,1
+271,Jesse Colvin,MD,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-29.66,38,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,,,,,house,1
+272,Michael Brown,MD,Representative,Regular,2018-06-26,Lost,None,None,-29.66,15,FALSE,,,,,FALSE,,,,,FALSE,,,,FALSE,,,,,,,house,1
+273,Michael Pullen,MD,Representative,Regular,2018-06-26,Lost,None,None,-29.66,12.9,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,TRUE,,,,,,,house,1
+274,Steve Worton,MD,Representative,Regular,2018-06-26,Lost,None,None,-29.66,3.9000001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,1
+275,Andrew Duck,MD,Representative,Regular,2018-06-26,Lost,None,None,11.89,4.9000001,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,FALSE,FALSE,,,FALSE,,,house,6
+276,Aruna Miller,MD,Representative,Regular,2018-06-26,Lost,None,None,11.89,30.700001,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,,TRUE,TRUE,,,,FALSE,FALSE,,,FALSE,,,house,6
+277,Chris Graves,MD,Representative,Regular,2018-06-26,Lost,None,None,11.89,1.6,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,FALSE,FALSE,,,FALSE,,,house,6
+278,Christopher Hearsey,MD,Representative,Regular,2018-06-26,Lost,None,None,11.89,0.89999998,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,FALSE,TRUE,,,,FALSE,FALSE,,,FALSE,,,house,6
+279,David Trone,MD,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,11.89,40.299999,TRUE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,FALSE,TRUE,,,,FALSE,FALSE,,,FALSE,,,house,6
+280,George English,MD,Representative,Regular,2018-06-26,Lost,None,None,11.89,1.1,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,FALSE,FALSE,,,FALSE,,,house,6
+281,Nadia Hashimi,MD,Representative,Regular,2018-06-26,Lost,None,None,11.89,10.4,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,FALSE,TRUE,,,,FALSE,FALSE,,,FALSE,,,house,6
+282,Roger Manno,MD,Representative,Regular,2018-06-26,Lost,None,None,11.89,10.3,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,TRUE,TRUE,,,TRUE,,,house,6
+283,Adam Cote,ME,Governor,Regular,2018-06-12,Lost,None,None,3.51,28.129999,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,,,,,FALSE,,,governor,
+284,Betsy Sweet,ME,Governor,Regular,2018-06-12,Lost,None,None,3.51,16.459999,FALSE,White,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,,,,,TRUE,,,governor,
+285,Diane Russell,ME,Governor,Regular,2018-06-12,Lost,None,None,3.51,2.1600001,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,,,,,TRUE,,,governor,
+286,Donna Dion,ME,Governor,Regular,2018-06-12,Lost,None,None,3.51,1.27,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,,,,,FALSE,,,governor,
+287,Janet T. Mills,ME,Governor,Regular,2018-06-12,Advanced,None,On the Ballot,3.51,33.09,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,TRUE,FALSE,,,,,,,,FALSE,,,governor,
+288,Mark Dion,ME,Governor,Regular,2018-06-12,Lost,None,None,3.51,4.1199999,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,,,,,FALSE,,,governor,
+289,Mark Eves,ME,Governor,Regular,2018-06-12,Lost,None,None,3.51,14.18,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,,,,,TRUE,,,governor,
+290,Craig Olson,ME,Representative,Regular,2018-06-12,Lost,None,None,-8.1300001,8.8299999,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,2
+291,Jared Golden,ME,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,-8.1300001,46.419998,TRUE,,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,2
+292,Lucas St. Clair,ME,Representative,Regular,2018-06-12,Lost,None,None,-8.1300001,39.240002,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,2
+293,Zak Ringelstein,ME,Senator,Regular,2018-06-12,Advanced,None,On the Ballot,3.51,100,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,senate,
+294,Abdul El-Sayed,MI,Governor,Regular,2018-08-07,Lost,None,None,-0.33000001,30.5,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,FALSE,TRUE,,,TRUE,TRUE,TRUE,TRUE,,,,,governor,
+295,Gretchen Whitmer,MI,Governor,Regular,2018-08-07,Advanced,None,On the Ballot,-0.33000001,51.799999,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,TRUE,TRUE,,,FALSE,FALSE,FALSE,FALSE,,,,,governor,
+296,Shri Thanedar,MI,Governor,Regular,2018-08-07,Lost,None,None,-0.33000001,17.700001,FALSE,Nonwhite,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,FALSE,TRUE,,,FALSE,FALSE,FALSE,FALSE,,,,,governor,
+297,Frank Accavitti Jr.,MI,Representative,Regular,2018-08-07,Lost,None,None,-29.58,32,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,10
+298,Kimberly Bizon,MI,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-29.58,41.099998,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,10
+299,Michael McCarthy (Michigan),MI,Representative,Regular,2018-08-07,Lost,None,None,-29.58,26.9,FALSE,,,,,FALSE,,FALSE,,,,,,,,,,,,,,house,10
+300,Fayrouz Saad,MI,Representative,Regular,2018-08-07,Lost,None,None,-7.1799998,19.5,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,,,,,TRUE,,,,,,house,11
+301,Haley Stevens,MI,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-7.1799998,27,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,,,,,FALSE,,,,,,house,11
+302,Nancy Skinner,MI,Representative,Regular,2018-08-07,Lost,None,None,-7.1799998,10.4,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,FALSE,,,,,,house,11
+303,Suneel Gupta,MI,Representative,Regular,2018-08-07,Lost,None,None,-7.1799998,21.299999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,FALSE,,,,,,house,11
+304,Tim Greimel,MI,Representative,Regular,2018-08-07,Lost,None,None,-7.1799998,21.799999,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,FALSE,,,,,,house,11
+305,Bill Wild,MI,Representative,Regular,2018-08-07,Lost,None,None,60.720001,14,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,FALSE,,,,,house,13
+306,Bill Wild,MI,Representative,Special,2018-08-07,Lost,None,None,60.720001,15.2,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,FALSE,,,,,house,13
+307,Brenda Jones,MI,Representative,Special,2018-08-07,Advanced,None,On the Ballot,60.720001,37.700001,TRUE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,FALSE,,,,,house,13
+308,Brenda Jones,MI,Representative,Regular,2018-08-07,Lost,None,None,60.720001,29.200001,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,FALSE,,,,,house,13
+309,Coleman Young II,MI,Representative,Regular,2018-08-07,Lost,None,None,60.720001,12,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,FALSE,,,,,house,13
+310,Ian Conyers,MI,Representative,Regular,2018-08-07,Lost,None,None,60.720001,6.3000002,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,FALSE,,,,,house,13
+311,Ian Conyers,MI,Representative,Special,2018-08-07,Lost,None,None,60.720001,11.2,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,FALSE,,,,,house,13
+312,Rashida Tlaib,MI,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,60.720001,33.200001,TRUE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,,,,,TRUE,TRUE,TRUE,,,,FALSE,house,13
+313,Rashida Tlaib,MI,Representative,Special,2018-08-07,Lost,None,None,60.720001,35.900002,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,,,,,TRUE,TRUE,TRUE,,,,FALSE,house,13
+314,Shanelle Jackson,MI,Representative,Regular,2018-08-07,Lost,None,None,60.720001,5.3000002,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,FALSE,,,,,house,13
+315,Rob Davidson,MI,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-18.959999,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,TRUE,TRUE,,TRUE,,,,house,2
+316,Cathy Albro,MI,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-11.41,68.199997,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,3
+317,Fred Wooden,MI,Representative,Regular,2018-08-07,Lost,None,None,-11.41,31.799999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,3
+318,Jerry Hilliard,MI,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-23.129999,66.400002,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+319,Zigmond Kozicki,MI,Representative,Regular,2018-08-07,Lost,None,None,-23.129999,33.599998,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+320,David Benac,MI,Representative,Regular,2018-08-07,Lost,None,None,-9.1800003,21.700001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,TRUE,TRUE,,,,,,house,6
+321,George Franklin,MI,Representative,Regular,2018-08-07,Lost,None,None,-9.1800003,28.1,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,FALSE,,,,,,house,6
+322,Matt Longjohn,MI,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-9.1800003,37.299999,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,FALSE,FALSE,,,,,,house,6
+323,Rich Eichholz,MI,Representative,Regular,2018-08-07,Lost,None,None,-9.1800003,13,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,FALSE,FALSE,,,,,,house,6
+324,Gretchen Driskell,MI,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-16.059999,85.199997,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,,,,,FALSE,,,,,,,house,7
+325,Steven Friday,MI,Representative,Regular,2018-08-07,Lost,None,None,-16.059999,14.8,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,TRUE,,,,,,,house,7
+326,Chris Smith,MI,Representative,Regular,2018-08-07,Lost,None,None,-8.3299999,29.1,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,FALSE,,,,,,,,,,house,8
+327,Elissa Slotkin,MI,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-8.3299999,70.900002,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,TRUE,,TRUE,,,,,,,,,,house,8
+328,Andy Levin,MI,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,7.1399999,52.5,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,,,,,,,,house,9
+329,Ellen Lipton,MI,Representative,Regular,2018-08-07,Lost,None,None,7.1399999,42.400002,FALSE,White,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,,TRUE,TRUE,,,,,,,,,,,house,9
+330,Martin Brook,MI,Representative,Regular,2018-08-07,Lost,None,None,7.1399999,5.0999999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,,,,,,,,house,9
+331,Bill Haas,MO,Representative,Regular,2018-08-07,Lost,None,None,-14.18,19.5,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+332,Cort VanOstran,MO,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-14.18,41.700001,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,2
+333,John Messmer,MO,Representative,Regular,2018-08-07,Lost,None,None,-14.18,9.6999998,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,2
+334,Mark Osmack,MO,Representative,Regular,2018-08-07,Lost,None,None,-14.18,25.200001,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,2
+335,Robert Hazel,MO,Representative,Regular,2018-08-07,Lost,None,None,-14.18,4,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+336,Katy Geppert,MO,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-38.259998,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,,,,,,,,house,3
+337,Hallie Thompson,MO,Representative,Regular,2018-08-07,Lost,None,None,-35.73,48.099998,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,,,,,,,,house,4
+338,Renee Hoagenson,MO,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-35.73,51.900002,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+339,Ed Andres,MO,Representative,Regular,2018-08-07,Lost,None,None,-31.610001,27.700001,FALSE,,,,,FALSE,,FALSE,,,,,,,FALSE,,,,,,,house,6
+340,Henry Martin,MO,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-31.610001,41.5,TRUE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,6
+341,Winston Apple,MO,Representative,Regular,2018-08-07,Lost,None,None,-31.610001,30.799999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,,,,,house,6
+342,Jamie Schoolcraft,MO,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-46.130001,40.599998,TRUE,White,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,,,TRUE,,,,,TRUE,,,,,,house,7
+343,John Farmer de la Torre,MO,Representative,Regular,2018-08-07,Lost,None,None,-46.130001,21.700001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,FALSE,,,,,,house,7
+344,Kenneth Hatfield,MO,Representative,Regular,2018-08-07,Lost,None,None,-46.130001,22.299999,FALSE,,,,,FALSE,,FALSE,,,FALSE,,,,,FALSE,,,,,,house,7
+345,Vincent Jennings,MO,Representative,Regular,2018-08-07,Lost,None,None,-46.130001,15.4,FALSE,,,,,FALSE,,FALSE,,,TRUE,,,,,FALSE,,,,,,house,7
+346,Kathy Ellis,MO,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-51.810001,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,8
+347,Randy Wadkins,MS,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-33.509998,100,TRUE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,1
+348,Michael Aycox,MS,Representative,Regular,2018-06-05,Lost,None,None,-26.129999,30.66,FALSE,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,3
+349,Michael Evans,MS,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-26.129999,69.339996,TRUE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,3
+350,Jeramey Anderson,MS,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-42.529999,100,TRUE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,TRUE,,,,house,4
+351,David Baria,MS,Senator,Regular,2018-06-05,Advanced,Advanced,On the Ballot,-18.780001,30.98,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,senate,
+352,Howard Sherman,MS,Senator,Regular,2018-06-05,Advanced,Lost,None,-18.780001,31.790001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,senate,
+353,Jensen Bohren,MS,Senator,Regular,2018-06-05,Lost,None,None,-18.780001,3.21,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,senate,
+354,Jerone Garland,MS,Senator,Regular,2018-06-05,Lost,None,None,-18.780001,4.8499999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,senate,
+355,Omeria Scott,MS,Senator,Regular,2018-06-05,Lost,None,None,-18.780001,24.200001,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,senate,
+356,Victor Maurice Jr.,MS,Senator,Regular,2018-06-05,Lost,None,None,-18.780001,4.96,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,senate,
+357,Grant Kier,MT,Representative,Regular,2018-06-05,Lost,None,None,-21.41,24.15,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,FALSE,FALSE,,,,,,house,
+358,Jared Pettinato,MT,Representative,Regular,2018-06-05,Lost,None,None,-21.41,2.21,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,FALSE,,,,,,house,
+359,John Heenan,MT,Representative,Regular,2018-06-05,Lost,None,None,-21.41,31.709999,FALSE,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,FALSE,,,,TRUE,TRUE,,,,,,house,
+360,John Meyer,MT,Representative,Regular,2018-06-05,Lost,None,None,-21.41,3.3399999,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,FALSE,FALSE,,,,,,house,
+361,Kathleen Williams,MT,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-21.41,33.52,TRUE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,FALSE,,,,,,house,
+362,Lynda Moss,MT,Representative,Regular,2018-06-05,Lost,None,None,-21.41,5.0599999,FALSE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,FALSE,,,,,,house,
+363,David Wilson Brown,NC,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-25.51,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,10
+364,Phillip Price,NC,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-29.559999,40.59,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,11
+365,Scott Donaldson,NC,Representative,Regular,2018-05-08,Lost,None,None,-29.559999,28.27,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,,,,,,,,house,11
+366,Steve Woodsmall,NC,Representative,Regular,2018-05-08,Lost,None,None,-29.559999,31.139999,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,11
+367,Adam Coker,NC,Representative,Regular,2018-05-08,Lost,None,None,-11.28,29.860001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,,,,,,,,house,13
+368,Kathy Manning,NC,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-11.28,70.139999,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,,,,,,,,,house,13
+369,Ken Romley,NC,Representative,Regular,2018-05-08,Lost,None,None,-12.98,32.299999,FALSE,White,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,TRUE,,,,,,,,,,,house,2
+370,Linda Coleman,NC,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-12.98,56,TRUE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,2
+371,Wendy May,NC,Representative,Regular,2018-05-08,Lost,None,None,-12.98,11.7,FALSE,White,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,2
+372,Denise Adams,NC,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-19.280001,54.400002,TRUE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,,FALSE,,,TRUE,,,house,5
+373,Jenny Marshall,NC,Representative,Regular,2018-05-08,Lost,None,None,-19.280001,45.599998,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,TRUE,,,FALSE,,,house,5
+374,Gerald Wong,NC,Representative,Regular,2018-05-08,Lost,None,None,-16.73,22.799999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,FALSE,,,,house,6
+375,Ryan Watts,NC,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-16.73,77.199997,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,TRUE,,,,house,6
+376,Grayson Parker,NC,Representative,Regular,2018-05-08,Lost,None,None,-18.98,33,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,,,,,,,,house,7
+377,Kyle Horton,NC,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-18.98,67,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,,,,,,,,house,7
+378,Frank McNeill,NC,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-16.360001,56.099998,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,8
+379,Marc Tiegel,NC,Representative,Regular,2018-05-08,Lost,None,None,-16.360001,20.9,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,8
+380,Scott Huffman,NC,Representative,Regular,2018-05-08,Lost,None,None,-16.360001,23,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,8
+381,Christian Cano,NC,Representative,Regular,2018-05-08,Lost,None,None,-14.13,17.200001,FALSE,Nonwhite,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,FALSE,,,,house,9
+382,Dan McCready,NC,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-14.13,82.800003,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,,,,,,TRUE,,,,house,9
+383,Mac Schneider,ND,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,-34.779999,100,TRUE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,
+384,Bob Krist,NE,Governor,Regular,2018-05-15,Advanced,None,On the Ballot,-26.76,59.810001,TRUE,White,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,FALSE,,,governor,
+385,Tyler Davis,NE,Governor,Regular,2018-05-15,Lost,None,None,-26.76,11.39,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,FALSE,,,governor,
+386,Vanessa Ward,NE,Governor,Regular,2018-05-15,Lost,None,None,-26.76,28.799999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,FALSE,,,governor,
+387,Dennis Crawford,NE,Representative,Regular,2018-05-15,Lost,None,None,-22.66,33.900002,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,FALSE,,,house,1
+388,Jessica McClure,NE,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-22.66,66.099998,TRUE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,,,,,FALSE,,,house,1
+389,Brad Ashford,NE,Representative,Regular,2018-05-15,Lost,None,None,-5.98,48.360001,FALSE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,,TRUE,,,,,FALSE,FALSE,,FALSE,,,house,2
+390,Kara Eastman,NE,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-5.98,51.639999,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,,,,,TRUE,TRUE,,TRUE,,,house,2
+391,Paul Theobald,NE,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-54.310001,100,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,3
+392,Chris Janicek,NE,Senator,Regular,2018-05-15,Lost,None,None,-26.76,20.219999,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,senate,
+393,Frank Svoboda,NE,Senator,Regular,2018-05-15,Lost,None,None,-26.76,11.37,FALSE,,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,senate,
+394,Jane Raybould,NE,Senator,Regular,2018-05-15,Advanced,None,On the Ballot,-26.76,63.68,TRUE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,senate,
+395,Larry Marvin,NE,Senator,Regular,2018-05-15,Lost,None,None,-26.76,4.7399998,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,senate,
+396,Alison Heslin,NJ,Representative,Regular,2018-06-05,Lost,None,None,-4.6599998,2.7,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,,,,,,,,,,house,11
+397,Mark Washburne,NJ,Representative,Regular,2018-06-05,Lost,None,None,-4.6599998,3.4000001,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,,,,,,house,11
+398,Mikie Sherrill,NJ,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-4.6599998,77.5,TRUE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,,TRUE,,,,,,,,,,house,11
+399,Mitchell Cobert,NJ,Representative,Regular,2018-06-05,Lost,None,None,-4.6599998,1.9,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,,,,,,house,11
+400,Tamara Harris,NJ,Representative,Regular,2018-06-05,Lost,None,None,-4.6599998,14.5,FALSE,Nonwhite,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,,,,,,house,11
+401,Jeff Van Drew,NJ,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-3.96,55.400002,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,,,,,,,,,FALSE,,,,house,2
+402,Nathan Kleinman,NJ,Representative,Regular,2018-06-05,Lost,None,None,-3.96,8.6000004,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,FALSE,,,,house,2
+403,Tanzie Youngblood,NJ,Representative,Regular,2018-06-05,Lost,None,None,-3.96,19.200001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,TRUE,,,,house,2
+404,Will Cunningham,NJ,Representative,Regular,2018-06-05,Lost,None,None,-3.96,16.799999,FALSE,Nonwhite,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,FALSE,,,,house,2
+405,Andrew Kim,NJ,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-6.0300002,100,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,,,TRUE,,,,,TRUE,,TRUE,,,house,3
+406,Jim Keady,NJ,Representative,Regular,2018-06-05,Lost,None,None,-16.01,42.799999,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,,TRUE,,,house,4
+407,Josh Welle,NJ,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-16.01,57.200001,TRUE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,FALSE,,,house,4
+408,Goutam Jois,NJ,Representative,Regular,2018-06-05,Lost,None,None,-3.26,14.1,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,FALSE,FALSE,,,,,,house,7
+409,Peter Jacob,NJ,Representative,Regular,2018-06-05,Lost,None,None,-3.26,19.1,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,TRUE,TRUE,,,,,,house,7
+410,Tom Malinowski,NJ,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-3.26,66.800003,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,,,TRUE,,,FALSE,FALSE,,,,,,house,7
+411,Jeff Apodaca,NM,Governor,Regular,2018-06-05,Lost,None,None,6.1599998,22.16,FALSE,Nonwhite,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,FALSE,,,,,,,,,,,,governor,
+412,Joseph Cervantes,NM,Governor,Regular,2018-06-05,Lost,None,None,6.1599998,11.47,FALSE,Nonwhite,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,,FALSE,,,,,,,,,,,,governor,
+413,Michelle Lujan Grisham,NM,Governor,Regular,2018-06-05,Advanced,None,On the Ballot,6.1599998,66.379997,TRUE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,TRUE,,,,,,,,,,,,governor,
+414,Antoinette Sedillo Lopez,NM,Representative,Regular,2018-06-05,Lost,None,None,13.77,20.610001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,FALSE,,TRUE,TRUE,,,TRUE,,FALSE,house,1
+415,Damian Lara,NM,Representative,Regular,2018-06-05,Lost,None,None,13.77,3.29,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,FALSE,,FALSE,FALSE,,,FALSE,,FALSE,house,1
+416,Damon Martinez,NM,Representative,Regular,2018-06-05,Lost,None,None,13.77,25.809999,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,FALSE,,FALSE,FALSE,,,FALSE,,TRUE,house,1
+417,Debra Haaland,NM,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,13.77,40.59,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,TRUE,FALSE,,TRUE,,FALSE,FALSE,,,FALSE,,FALSE,house,1
+418,Patrick Davis,NM,Representative,Regular,2018-06-05,Lost,None,None,13.77,3.8,FALSE,White,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,,FALSE,TRUE,,FALSE,,FALSE,FALSE,,,FALSE,,FALSE,house,1
+419,Paul Moya,NM,Representative,Regular,2018-06-05,Lost,None,None,13.77,5.8899999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,FALSE,,FALSE,FALSE,,,FALSE,,FALSE,house,1
+420,Madeline Hildebrandt,NM,Representative,Regular,2018-06-05,Lost,None,None,-11.88,27.379999,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,TRUE,,,,,,,house,2
+421,Xochitl Torres Small,NM,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-11.88,72.620003,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,,,,,FALSE,,,,,,,house,2
+422,Asheesh Dewan,NV,Governor,Regular,2018-06-12,Lost,None,None,0.94999999,1.01,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,,,,,FALSE,,,governor,
+423,Chris Giunchigliani,NV,Governor,Regular,2018-06-12,Lost,None,None,0.94999999,38.860001,FALSE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,TRUE,TRUE,,,,,,,,TRUE,,,governor,
+424,David Jones,NV,Governor,Regular,2018-06-12,Lost,None,None,0.94999999,1.73,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,,,,,FALSE,,,governor,
+425,Henry Thorns,NV,Governor,Regular,2018-06-12,Lost,None,None,0.94999999,1.9,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,FALSE,FALSE,,,,,,,,FALSE,,,governor,
+426,John Bonaventura,NV,Governor,Regular,2018-06-12,Lost,None,None,0.94999999,2.99,FALSE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,,,,,FALSE,,,governor,
+427,Steve Sisolak,NV,Governor,Regular,2018-06-12,Advanced,None,On the Ballot,0.94999999,50.029999,TRUE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,,,,,FALSE,,,governor,
+428,Clint Koble,NV,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,-13.78,26.129999,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,,,,,house,2
+429,Jack Schofield Jr.,NV,Representative,Regular,2018-06-12,Lost,None,None,-13.78,7.5,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,2
+430,Jesse Hurley,NV,Representative,Regular,2018-06-12,Lost,None,None,-13.78,8.04,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,2
+431,Patrick Fogarty,NV,Representative,Regular,2018-06-12,Lost,None,None,-13.78,23.83,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,TRUE,,,,,,,house,2
+432,Rick Shepherd,NV,Representative,Regular,2018-06-12,Lost,None,None,-13.78,21.280001,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,FALSE,,,,,,,house,2
+433,Vance Alm,NV,Representative,Regular,2018-06-12,Lost,None,None,-13.78,13.22,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,2
+434,Eric Stoltz,NV,Representative,Regular,2018-06-12,Lost,None,None,-3.0799999,7.2399998,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,house,3
+435,Guy Pinjuv,NV,Representative,Regular,2018-06-12,Lost,None,None,-3.0799999,3.5,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,house,3
+436,Jack Love,NV,Representative,Regular,2018-06-12,Lost,None,None,-3.0799999,5.8000002,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,house,3
+437,Michael Weiss,NV,Representative,Regular,2018-06-12,Lost,None,None,-3.0799999,8.1800003,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,house,3
+438,Richard Hart,NV,Representative,Regular,2018-06-12,Lost,None,None,-3.0799999,4.8499999,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,house,3
+439,Steve Schiffman,NV,Representative,Regular,2018-06-12,Lost,None,None,-3.0799999,3.51,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,house,3
+440,Susie Lee,NV,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,-3.0799999,66.910004,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,,,,,,,,,,house,3
+441,Allison Stephens,NV,Representative,Regular,2018-06-12,Lost,None,None,3.8199999,6.02,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,FALSE,FALSE,,FALSE,,,,house,4
+442,Amy Vilela,NV,Representative,Regular,2018-06-12,Lost,None,None,3.8199999,9.1999998,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,FALSE,,,TRUE,TRUE,,TRUE,,,,house,4
+443,John Anzalone,NV,Representative,Regular,2018-06-12,Lost,None,None,3.8199999,5.8000002,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,FALSE,,,FALSE,FALSE,,,,,,house,4
+444,Patricia Spearman,NV,Representative,Regular,2018-06-12,Lost,None,None,3.8199999,15.24,FALSE,Nonwhite,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,,TRUE,FALSE,,,FALSE,FALSE,,FALSE,,,,house,4
+445,Sid Zeller,NV,Representative,Regular,2018-06-12,Lost,None,None,3.8199999,2,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,FALSE,FALSE,,FALSE,,,,house,4
+446,Steven Horsford,NV,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,3.8199999,61.740002,TRUE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,,TRUE,TRUE,,,FALSE,FALSE,,,,,,house,4
+447,Allen Rheinhart,NV,Senator,Regular,2018-06-12,Lost,None,None,0.94999999,3.3299999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,FALSE,,,,,,,senate,
+448,Bobby Mahendra,NV,Senator,Regular,2018-06-12,Lost,None,None,0.94999999,2.6700001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,FALSE,,,,,,,senate,
+449,Daniel Burleigh,NV,Senator,Regular,2018-06-12,Lost,None,None,0.94999999,2.26,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,FALSE,,,,,,,senate,
+450,David Drew Knight,NV,Senator,Regular,2018-06-12,Lost,None,None,0.94999999,4.4299998,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,FALSE,,,,,,,senate,
+451,Jacky Rosen,NV,Senator,Regular,2018-06-12,Advanced,None,On the Ballot,0.94999999,77.110001,TRUE,,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,,TRUE,,,FALSE,,,,,,,senate,
+452,Jesse Sbaih,NV,Senator,Regular,2018-06-12,Lost,None,None,0.94999999,3.1700001,FALSE,Nonwhite,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,TRUE,,,,,,,senate,
+453,David Pechefsky,NY,Representative,Regular,2018-06-26,Lost,None,None,-11.63,11.9,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,1
+454,Elaine DiMasi,NY,Representative,Regular,2018-06-26,Lost,None,None,-11.63,5.9200001,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,1
+455,Kate Browning,NY,Representative,Regular,2018-06-26,Lost,None,None,-11.63,30.32,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,1
+456,Perry Gershon,NY,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-11.63,35.450001,TRUE,,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,,,,,,,,,,,,,house,1
+457,Vivian Viloria-Fisher,NY,Representative,Regular,2018-06-26,Lost,None,None,-11.63,16.26,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,1
+458,Max Rose,NY,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-8.8100004,62.650002,TRUE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,,,,,,,TRUE,,,house,11
+459,Michael DeVito Jr.,NY,Representative,Regular,2018-06-26,Lost,None,None,-8.8100004,18.42,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,FALSE,,,house,11
+460,Omar Vaid,NY,Representative,Regular,2018-06-26,Lost,None,None,-8.8100004,8.4300003,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,FALSE,,,house,11
+461,Paul Sperling,NY,Representative,Regular,2018-06-26,Lost,None,None,-8.8100004,2.29,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,FALSE,,,house,11
+462,Radhakrishna Mohan,NY,Representative,Regular,2018-06-26,Lost,None,None,-8.8100004,3.78,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,,,,,,,,FALSE,,,house,11
+463,Zach Emig,NY,Representative,Regular,2018-06-26,Lost,None,None,-8.8100004,1.26,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,FALSE,,,house,11
+464,Antonio Delgado,NY,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-6.0799999,21.99,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,,FALSE,,FALSE,,,,house,19
+465,Brian Flynn,NY,Representative,Regular,2018-06-26,Lost,None,None,-6.0799999,13.18,FALSE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,FALSE,FALSE,,,,,FALSE,,FALSE,,,,house,19
+466,David Clegg,NY,Representative,Regular,2018-06-26,Lost,None,None,-6.0799999,11.08,FALSE,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,FALSE,FALSE,,,,,FALSE,,TRUE,,,,house,19
+467,Erin Collier,NY,Representative,Regular,2018-06-26,Lost,None,None,-6.0799999,4.8600001,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,TRUE,,,,,FALSE,,FALSE,,,,house,19
+468,Gareth Rhodes,NY,Representative,Regular,2018-06-26,Lost,None,None,-6.0799999,17.85,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,,FALSE,,TRUE,,,,house,19
+469,Jeff Beals,NY,Representative,Regular,2018-06-26,Lost,None,None,-6.0799999,13.18,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,,TRUE,,FALSE,,,,house,19
+470,Pat Ryan,NY,Representative,Regular,2018-06-26,Lost,None,None,-6.0799999,17.719999,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,,FALSE,,TRUE,,,,house,19
+471,DuWayne Gregory,NY,Representative,Regular,2018-06-26,Lost,None,None,-8.2600002,41.639999,FALSE,Nonwhite,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,FALSE,,,FALSE,TRUE,,,house,2
+472,Liuba Grechen Shirley,NY,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-8.2600002,57.98,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,TRUE,,,,TRUE,,,TRUE,FALSE,,,house,2
+473,Dylan Ratigan,NY,Representative,Regular,2018-06-26,Lost,None,None,-11.43,11.91,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,FALSE,,FALSE,FALSE,,,house,21
+474,Emily Martz,NY,Representative,Regular,2018-06-26,Lost,None,None,-11.43,10.37,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,FALSE,,FALSE,FALSE,,,house,21
+475,Katie Wilson,NY,Representative,Regular,2018-06-26,Lost,None,None,-11.43,11.68,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,FALSE,,FALSE,TRUE,,,house,21
+476,Patrick Nelson,NY,Representative,Regular,2018-06-26,Lost,None,None,-11.43,9.1199999,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,TRUE,TRUE,,FALSE,FALSE,,,house,21
+477,Tedra Cobb,NY,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-11.43,56.009998,TRUE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,TRUE,,,,TRUE,FALSE,,TRUE,FALSE,,,house,21
+478,Anthony Brindisi,NY,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-14.26,100,TRUE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,,FALSE,,,,,,,,TRUE,,,house,22
+479,Eddie Sundquist,NY,Representative,Regular,2018-06-26,Lost,None,None,-13.93,6.4200001,FALSE,,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,FALSE,FALSE,,,FALSE,,,house,23
+480,Ian Golden,NY,Representative,Regular,2018-06-26,Lost,None,None,-13.93,13.44,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,TRUE,TRUE,,,FALSE,,,house,23
+481,Linda Andrei,NY,Representative,Regular,2018-06-26,Lost,None,None,-13.93,15.33,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,FALSE,FALSE,,,FALSE,,,house,23
+482,Max Della Pia,NY,Representative,Regular,2018-06-26,Lost,None,None,-13.93,32.400002,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,FALSE,,,FALSE,,,house,23
+483,Tracy Mitrano,NY,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-13.93,32.299999,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,FALSE,,,TRUE,,,house,23
+484,Dana Balter,NY,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,4.1399999,62.380001,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,TRUE,FALSE,TRUE,TRUE,TRUE,,,house,24
+485,Juanita Perez Williams,NY,Representative,Regular,2018-06-26,Lost,None,None,4.1399999,37.23,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,,,,FALSE,FALSE,FALSE,FALSE,FALSE,,,house,24
+486,Adam McFadden,NY,Representative,Regular,2018-06-26,Lost,None,None,14.62,17.450001,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,FALSE,,,house,25
+487,Joseph Morelle,NY,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,14.62,45.290001,TRUE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,,TRUE,,,house,25
+488,Rachel Barnhart,NY,Representative,Regular,2018-06-26,Lost,None,None,14.62,19.77,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,,FALSE,,,house,25
+489,Robin Wilt,NY,Representative,Regular,2018-06-26,Lost,None,None,14.62,17.35,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,TRUE,,,,TRUE,,,,FALSE,,,house,25
+490,Nate McMurray,NY,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-24.01,100,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,TRUE,,,house,27
+491,Dennis J. Kucinich,OH,Governor,Regular,2018-05-08,Lost,None,None,-7.8899999,22.98,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,,TRUE,,,,,,,governor,
+492,Joseph Schiavoni,OH,Governor,Regular,2018-05-08,Lost,None,None,-7.8899999,9.1700001,FALSE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,TRUE,,FALSE,,FALSE,,,,,,,governor,
+493,Larry Ealy,OH,Governor,Regular,2018-05-08,Lost,None,None,-7.8899999,1.02,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,,FALSE,,,,,,,governor,
+494,Paul Ray,OH,Governor,Regular,2018-05-08,Lost,None,None,-7.8899999,1.38,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,,FALSE,,,,,,,governor,
+495,Richard Cordray,OH,Governor,Regular,2018-05-08,Advanced,None,On the Ballot,-7.8899999,62.16,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,TRUE,,TRUE,,FALSE,,,,,,,governor,
+496,William O'Neill,OH,Governor,Regular,2018-05-08,Lost,None,None,-7.8899999,3.29,FALSE,White,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,FALSE,,FALSE,,,,,,,governor,
+497,Aftab Pureval,OH,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-9.0100002,100,TRUE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,,,,,,,,,,,,,house,1
+498,Michael Milisits,OH,Representative,Regular,2018-05-08,Lost,None,None,-8.4799995,7.4000001,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,10
+499,Robert Klepinger,OH,Representative,Regular,2018-05-08,Lost,None,None,-8.4799995,25.6,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,10
+500,Theresa Gasper,OH,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-8.4799995,67.019997,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,10
+501,Danny O'Connor,OH,Representative,Special,2018-05-08,Advanced,None,On the Ballot,-13.63,40.939999,TRUE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,TRUE,,,,,FALSE,,TRUE,,,,house,12
+502,Danny O'Connor,OH,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-13.63,40.52,TRUE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,TRUE,,,,,FALSE,,TRUE,,,,house,12
+503,Doug Wilson,OH,Representative,Regular,2018-05-08,Lost,None,None,-13.63,3.74,FALSE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,,FALSE,,FALSE,,,,house,12
+504,Doug Wilson,OH,Representative,Special,2018-05-08,Lost,None,None,-13.63,3.9400001,FALSE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,,FALSE,,FALSE,,,,house,12
+505,Ed Albertson,OH,Representative,Regular,2018-05-08,Lost,None,None,-13.63,7.8600001,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,FALSE,,FALSE,,,,house,12
+506,Ed Albertson,OH,Representative,Special,2018-05-08,Lost,None,None,-13.63,8.0799999,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,FALSE,,FALSE,,,,house,12
+507,Jackie Patton,OH,Representative,Regular,2018-05-08,Lost,None,None,-13.63,14.02,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,FALSE,,FALSE,,,,house,12
+508,Jackie Patton,OH,Representative,Special,2018-05-08,Lost,None,None,-13.63,13.58,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,FALSE,,FALSE,,,,house,12
+509,John Peters,OH,Representative,Regular,2018-05-08,Lost,None,None,-13.63,1.49,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,FALSE,,FALSE,,,,house,12
+510,John Russell,OH,Representative,Special,2018-05-08,Lost,None,None,-13.63,16.700001,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,TRUE,,FALSE,,,,house,12
+511,John Russell,OH,Representative,Regular,2018-05-08,Lost,None,None,-13.63,16.27,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,TRUE,,FALSE,,,,house,12
+512,Zach Scott,OH,Representative,Regular,2018-05-08,Lost,None,None,-13.63,16.1,FALSE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,,FALSE,,FALSE,,,,house,12
+513,Zach Scott,OH,Representative,Special,2018-05-08,Lost,None,None,-13.63,16.76,FALSE,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,,FALSE,,FALSE,,,,house,12
+514,Betsy Rader,OH,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-11.98,100,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,,,,,,,,,,,,house,14
+515,Rick Neal,OH,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-15.48,63.540001,TRUE,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,15
+516,Rob Jarvis,OH,Representative,Regular,2018-05-08,Lost,None,None,-15.48,36.459999,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,15
+517,Aaron Godfrey,OH,Representative,Regular,2018-05-08,Lost,None,None,-17.030001,7.9099998,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,TRUE,,,,,,,house,16
+518,Grant Goodrich,OH,Representative,Regular,2018-05-08,Lost,None,None,-17.030001,28.059999,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,,,,,house,16
+519,John Wilson,OH,Representative,Regular,2018-05-08,Lost,None,None,-17.030001,4.48,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,16
+520,Mark Dent,OH,Representative,Regular,2018-05-08,Lost,None,None,-17.030001,9.3800001,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,16
+521,Susan Moran Palmer,OH,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-17.030001,34.630001,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,,,,,house,16
+522,TJ Mulloy,OH,Representative,Regular,2018-05-08,Lost,None,None,-17.030001,15.54,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,16
+523,Janet Everhard,OH,Representative,Regular,2018-05-08,Lost,None,None,-17.360001,34.400002,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,2
+524,Jill Schiller,OH,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-17.360001,54.200001,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,TRUE,,,,,,,,,,,house,2
+525,William Smith,OH,Representative,Regular,2018-05-08,Lost,None,None,-17.360001,11.4,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,2
+526,Cody James Slatzer-Rose,OH,Representative,Regular,2018-05-08,Lost,None,None,-31.23,16.15,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,,,,,,,,house,4
+527,Janet Garrett,OH,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-31.23,83.849998,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,4
+528,James Neu Jr.,OH,Representative,Regular,2018-05-08,Lost,None,None,-23.809999,26.700001,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,5
+529,John Michael Galbraith,OH,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-23.809999,73.199997,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,5
+530,Shawna Roberts,OH,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-37.610001,74.5,TRUE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,TRUE,,,,house,6
+531,Werner Lange,OH,Representative,Regular,2018-05-08,Lost,None,None,-37.610001,25.5,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,FALSE,,,,house,6
+532,Ken Harbaugh,OH,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-27.18,80.199997,TRUE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,FALSE,,,,,,,,,,,house,7
+533,Patrick Pikus,OH,Representative,Regular,2018-05-08,Lost,None,None,-27.18,19.799999,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,,,,,,,house,7
+534,Bill Ebben,OH,Representative,Regular,2018-05-08,Lost,None,None,-34.779999,12.18,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,8
+535,Matthew Guyette,OH,Representative,Regular,2018-05-08,Lost,None,None,-34.779999,13.63,FALSE,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,8
+536,Ted Jones,OH,Representative,Regular,2018-05-08,Lost,None,None,-34.779999,16.280001,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,8
+537,Vanessa Enoch,OH,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-34.779999,57.91,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,8
+538,Constance Johnson,OK,Governor,Regular,2018-06-26,Lost,None,None,-38.209999,38.619999,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,,,,,governor,
+539,Drew Edmondson,OK,Governor,Regular,2018-06-26,Advanced,None,On the Ballot,-38.209999,61.380001,TRUE,White,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,governor,
+540,Amanda Douglas,OK,Representative,Regular,2018-06-26,Advanced,On the Ballot,,-31.959999,32.41,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,1
+541,David Matthew Hullum,OK,Representative,Regular,2018-06-26,Lost,None,,-31.959999,5.02,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,1
+542,Gwendolyn Fields,OK,Representative,Regular,2018-06-26,Lost,None,,-31.959999,19.620001,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,1
+543,Mark Keeter,OK,Representative,Regular,2018-06-26,Lost,None,,-31.959999,8.46,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,1
+544,Tim Gilpin,OK,Representative,Regular,2018-06-26,Advanced,On the Ballot,,-31.959999,34.48,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,1
+545,Clay Padgett,OK,Representative,Regular,2018-06-26,Advanced,On the Ballot,,-49.009998,24.23,,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+546,Elijah McIntosh,OK,Representative,Regular,2018-06-26,Lost,None,,-49.009998,19.02,,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+547,Jason Nichols,OK,Representative,Regular,2018-06-26,Advanced,On the Ballot,,-49.009998,37.880001,,Nonwhite,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,2
+548,Virginia Jenner,OK,Representative,Regular,2018-06-26,Lost,None,,-49.009998,18.860001,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+549,Frankie Robbins,OK,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-54.009998,64.839996,TRUE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,3
+550,Murray Thibodeaux,OK,Representative,Regular,2018-06-26,Lost,None,None,-54.009998,35.16,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,3
+551,Fred Gipson,OK,Representative,Regular,2018-06-26,Advanced,On the Ballot,,-39.130001,30.360001,,,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+552,Mallory Varner,OK,Representative,Regular,2018-06-26,Lost,None,,-39.130001,18.610001,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+553,Mary Brannon,OK,Representative,Regular,2018-06-26,Advanced,On the Ballot,,-39.130001,34.360001,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+554,Roxann Klutts,OK,Representative,Regular,2018-06-26,Lost,None,,-39.130001,16.67,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+555,Eddie Porter,OK,Representative,Regular,2018-06-26,Lost,None,,-17.18,10.63,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+556,Elysabeth Britt,OK,Representative,Regular,2018-06-26,Lost,None,,-17.18,13.51,,,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+557,Kendra Horn,OK,Representative,Regular,2018-06-26,Advanced,On the Ballot,,-17.18,43.84,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+558,Leona Kelley-Leonard,OK,Representative,Regular,2018-06-26,Lost,None,,-17.18,8.4200001,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+559,Tom Guild,OK,Representative,Regular,2018-06-26,Advanced,On the Ballot,,-17.18,17.91,,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+560,Tyson Todd Meade,OK,Representative,Regular,2018-06-26,Lost,None,,-17.18,5.6900001,,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+561,Eric Burnette,OR,Representative,Regular,2018-05-15,Lost,None,None,-21.68,4.6199999,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,,TRUE,,,house,2
+562,Jamie McLeod-Skinner,OR,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-21.68,42.82,TRUE,White,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,,,,,,,,,,TRUE,,,,house,2
+563,Jennifer Neahring,OR,Representative,Regular,2018-05-15,Lost,None,None,-21.68,23.68,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+564,Jim Crary,OR,Representative,Regular,2018-05-15,Lost,None,None,-21.68,11.44,FALSE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+565,Michael Byrne,OR,Representative,Regular,2018-05-15,Lost,None,None,-21.68,4.3000002,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+566,Raz Mason,OR,Representative,Regular,2018-05-15,Lost,None,None,-21.68,5.3000002,FALSE,,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,2
+567,Timothy White,OR,Representative,Regular,2018-05-15,Lost,None,None,-21.68,5.8600001,FALSE,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+568,Rachel Reddick,PA,Representative,Regular,2018-05-15,Lost,None,None,-0.63,35.330002,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,TRUE,,,,,,,,,,,house,1
+569,Scott Wallace,PA,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-0.63,56.48,TRUE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,1
+570,Steve Bacher,PA,Representative,Regular,2018-05-15,Lost,None,None,-0.63,8.1899996,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,1
+571,Alan Howe,PA,Representative,Regular,2018-05-15,Lost,None,None,-10.86,10.81,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,10
+572,Eric Ding,PA,Representative,Regular,2018-05-15,Lost,None,None,-10.86,17.99,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,10
+573,George Scott,PA,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-10.86,36.330002,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,10
+574,Shavonnia Corbin-Johnson,PA,Representative,Regular,2018-05-15,Lost,None,None,-10.86,34.869999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,TRUE,,,,,,,,,,,,house,10
+575,Jessica King,PA,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-27.51,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,TRUE,TRUE,TRUE,,,TRUE,,,house,11
+576,Judy Herschel,PA,Representative,Regular,2018-05-15,Lost,None,None,-36.009998,49.610001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,12
+577,Marc Friedenberg,PA,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-36.009998,50.389999,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,,,,,,,,house,12
+578,Brent Ottaway,PA,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-45.43,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,13
+579,Adam Sedlock,PA,Representative,Regular,2018-05-15,Lost,None,None,-28.709999,23.879999,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,14
+580,Bibiana Boerio,PA,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-28.709999,43.200001,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,14
+581,Robert Solomon,PA,Representative,Regular,2018-05-15,Lost,None,None,-28.709999,19.040001,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,14
+582,Tom Prigg,PA,Representative,Regular,2018-05-15,Lost,None,None,-28.709999,13.89,FALSE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,14
+583,Susan Boser,PA,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-41.73,74.559998,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,15
+584,Wade Jodun,PA,Representative,Regular,2018-05-15,Lost,None,None,-41.73,25.440001,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,15
+585,Chris Rieger,PA,Representative,Regular,2018-05-15,Lost,None,None,-18.73,24.92,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,16
+586,Robert Multari,PA,Representative,Regular,2018-05-15,Lost,None,None,-18.73,15.11,FALSE,,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,16
+587,Ronald DiNicola,PA,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-18.73,59.970001,TRUE,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,16
+588,Joe Hoeffel,PA,Representative,Regular,2018-05-15,Lost,None,None,15.27,10.96,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+589,Madeleine Dean,PA,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,15.27,72.559998,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,TRUE,TRUE,,,,,,,,,,,house,4
+590,Shira Goodman,PA,Representative,Regular,2018-05-15,Lost,None,None,15.27,16.49,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+591,Ashley Lunkenheimer,PA,Representative,Regular,2018-05-15,Lost,None,None,25.540001,15.31,FALSE,White,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+592,Gregory Vitali,PA,Representative,Regular,2018-05-15,Lost,None,None,25.540001,9.4300003,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+593,Larry Arata,PA,Representative,Regular,2018-05-15,Lost,None,None,25.540001,1.52,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+594,Lindy Li,PA,Representative,Regular,2018-05-15,Lost,None,None,25.540001,6.98,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+595,Margo Davidson,PA,Representative,Regular,2018-05-15,Lost,None,None,25.540001,3.98,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,5
+596,Mary Gay Scanlon,PA,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,25.540001,28.370001,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+597,Molly Sheehan,PA,Representative,Regular,2018-05-15,Lost,None,None,25.540001,10.24,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,TRUE,,,,,,,house,5
+598,Richard Lazer,PA,Representative,Regular,2018-05-15,Lost,None,None,25.540001,14.99,FALSE,,,,,FALSE,,FALSE,,,,,,,,,,,,,,house,5
+599,Thaddeus Kirkland,PA,Representative,Regular,2018-05-15,Lost,None,None,25.540001,3.99,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+600,Theresa Wright,PA,Representative,Regular,2018-05-15,Lost,None,None,25.540001,5.1900001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+601,Chrissy Houlahan,PA,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,5.2399998,100,TRUE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,,,,,,,,,,,,house,6
+602,David Clark,PA,Representative,Regular,2018-05-15,Lost,None,None,0.07,1.7,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,FALSE,house,7
+603,Greg Edwards,PA,Representative,Regular,2018-05-15,Lost,None,None,0.07,25.43,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,TRUE,,TRUE,TRUE,,TRUE,,FALSE,house,7
+604,John Morganelli,PA,Representative,Regular,2018-05-15,Lost,None,None,0.07,30.15,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,TRUE,house,7
+605,Rick Daugherty,PA,Representative,Regular,2018-05-15,Lost,None,None,0.07,3.8599999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,FALSE,house,7
+606,Roger Ruggles,PA,Representative,Regular,2018-05-15,Lost,None,None,0.07,5.4099998,FALSE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,FALSE,house,7
+607,Susan Wild,PA,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,0.07,33.450001,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,,,,,,,,,,,FALSE,house,7
+608,Denny Wolff,PA,Representative,Regular,2018-05-15,Advanced,None,On the Ballot,-32.029999,40.549999,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,9
+609,Gary Wegman,PA,Representative,Regular,2018-05-15,Lost,None,None,-32.029999,31.290001,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,9
+610,Laura Quick,PA,Representative,Regular,2018-05-15,Lost,None,None,-32.029999,28.16,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,9
+611,James Smith Jr.,SC,Governor,Regular,2018-06-12,Advanced,None,On the Ballot,-15.85,61.810001,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,TRUE,,,,,,governor,
+612,Marguerite Willis,SC,Governor,Regular,2018-06-12,Lost,None,None,-15.85,27.549999,FALSE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,,,,,,,,,,,,governor,
+613,Phil Noble,SC,Governor,Regular,2018-06-12,Lost,None,None,-15.85,10.64,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,,,,,,,,,,,,,,governor,
+614,Joe Cunningham,SC,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,-16.879999,71.5,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,1
+615,Toby Smith,SC,Representative,Regular,2018-06-12,Lost,None,None,-16.879999,28.5,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,1
+616,Annabelle Robertson,SC,Representative,Regular,2018-06-12,Advanced,Lost,None,-20.73,41.810001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,TRUE,,,,,,,house,2
+617,Phil Black,SC,Representative,Regular,2018-06-12,Lost,None,None,-20.73,18.370001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+618,Sean Carrigan,SC,Representative,Regular,2018-06-12,Advanced,Advanced,On the Ballot,-20.73,39.82,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+619,Hosea Cleveland,SC,Representative,Regular,2018-06-12,Lost,None,None,-38.68,30.27,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,3
+620,Mary Geren,SC,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,-38.68,69.730003,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,,,,,house,3
+621,Brandon Brown,SC,Representative,Regular,2018-06-12,Advanced,Advanced,On the Ballot,-28.309999,28.469999,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+622,Doris Lee Turner,SC,Representative,Regular,2018-06-12,Advanced,Lost,None,-28.309999,29.459999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,,TRUE,,,house,4
+623,Eric Graben,SC,Representative,Regular,2018-06-12,Lost,None,None,-28.309999,25.719999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+624,J.T. Davis,SC,Representative,Regular,2018-06-12,Lost,None,None,-28.309999,7.2199998,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,4
+625,Will Morin III,SC,Representative,Regular,2018-06-12,Lost,None,None,-28.309999,9.1300001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+626,Archie Parnell,SC,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,-19.280001,59.959999,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,,,,,,,,,,,house,5
+627,Mark Ali,SC,Representative,Regular,2018-06-12,Lost,None,None,-19.280001,13.41,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,house,5
+628,Sidney Moore,SC,Representative,Regular,2018-06-12,Lost,None,None,-19.280001,17.17,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+629,Steve Lough,SC,Representative,Regular,2018-06-12,Lost,None,None,-19.280001,9.46,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+630,Bill Hopkins,SC,Representative,Regular,2018-06-12,Lost,None,None,-19.23,17.780001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,,,,,house,7
+631,Bruce Fischer,SC,Representative,Regular,2018-06-12,Lost,None,None,-19.23,11.22,FALSE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,7
+632,Mal Hyman,SC,Representative,Regular,2018-06-12,Advanced,Lost,None,-19.23,29.700001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,TRUE,,,,,,,house,7
+633,Robert Williams,SC,Representative,Regular,2018-06-12,Advanced,Advanced,On the Ballot,-19.23,41.299999,TRUE,Nonwhite,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,7
+634,Billie Sutton,SD,Governor,Regular,2018-06-05,Advanced,None,On the Ballot,-29.379999,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,governor,
+635,Timothy Bjorkman,SD,Representative,Regular,2018-06-05,Advanced,None,On the Ballot,-29.379999,100,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,
+636,Craig Fitzhugh,TN,Governor,Regular,2018-08-02,Lost,None,None,-27.139999,19.42,FALSE,White,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,,,,,,,TRUE,,,TRUE,,,,governor,
+637,Karl Dean,TN,Governor,Regular,2018-08-02,Advanced,None,On the Ballot,-27.139999,75.139999,TRUE,White,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,,,,,,,FALSE,,,FALSE,,,,governor,
+638,Mezianne Vale Payne,TN,Governor,Regular,2018-08-02,Lost,None,None,-27.139999,5.4400001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,FALSE,,,,governor,
+639,Martin Olsen,TN,Representative,Regular,2018-08-02,Advanced,None,On the Ballot,-57.029999,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,1
+640,Joseph Schenkenfelder,TN,Representative,Regular,2018-08-02,Lost,None,None,-38.18,4.5100002,FALSE,,,,,FALSE,,FALSE,,,FALSE,,,,FALSE,,,FALSE,,,,house,2
+641,Joshua Williams,TN,Representative,Regular,2018-08-02,Lost,None,None,-38.18,23.08,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,FALSE,,,FALSE,,,,house,2
+642,Renee Hoyos,TN,Representative,Regular,2018-08-02,Advanced,None,On the Ballot,-38.18,72.410004,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,TRUE,,,TRUE,,,,house,2
+643,Danielle Mitchell,TN,Representative,Regular,2018-08-02,Advanced,None,On the Ballot,-35.98,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,TRUE,,,,house,3
+644,Christopher Hale,TN,Representative,Regular,2018-08-02,Lost,None,None,-41.48,34.720001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,,,,,,,FALSE,,,,house,4
+645,Mariah Phillips,TN,Representative,Regular,2018-08-02,Advanced,None,On the Ballot,-41.48,47.509998,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,TRUE,,,,house,4
+646,Steven Reynolds,TN,Representative,Regular,2018-08-02,Lost,None,None,-41.48,17.77,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,FALSE,,,,house,4
+647,Christopher Finley,TN,Representative,Regular,2018-08-02,Lost,None,None,-49.110001,15.06,FALSE,,,,,FALSE,,FALSE,,,FALSE,,,,,,,FALSE,,,,house,6
+648,Dawn Barlow,TN,Representative,Regular,2018-08-02,Advanced,None,On the Ballot,-49.110001,54.509998,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,,,,FALSE,,,,house,6
+649,Merrilee Wineinger,TN,Representative,Regular,2018-08-02,Lost,None,None,-49.110001,22.059999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,TRUE,,,,house,6
+650,Peter Heffernan,TN,Representative,Regular,2018-08-02,Lost,None,None,-49.110001,8.3699999,FALSE,,,,,FALSE,,FALSE,,,FALSE,,,,,,,FALSE,,,,house,6
+651,Justin Kanew,TN,Representative,Regular,2018-08-02,Advanced,None,On the Ballot,-40.209999,62.110001,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,TRUE,,,,house,7
+652,Matt Reel,TN,Representative,Regular,2018-08-02,Lost,None,None,-40.209999,37.889999,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,FALSE,,,,house,7
+653,Erika Stotts Pearson,TN,Representative,Regular,2018-08-02,Advanced,None,On the Ballot,-37.560001,50.419998,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,FALSE,,,,house,8
+654,John Boatner Jr.,TN,Representative,Regular,2018-08-02,Lost,None,None,-37.560001,49.580002,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,TRUE,,,,house,8
+655,Gary Davis,TN,Senator,Regular,2018-08-02,Lost,None,None,-27.139999,5.2800002,FALSE,,,,,FALSE,,FALSE,,,,FALSE,,,,,,,,,,senate,
+656,John Wolfe,TN,Senator,Regular,2018-08-02,Lost,None,None,-27.139999,3.21,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,FALSE,,,,,,,,,,senate,
+657,Phil Bredesen,TN,Senator,Regular,2018-08-02,Advanced,None,On the Ballot,-27.139999,91.510002,TRUE,White,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,,,,TRUE,,,,,,,,,,senate,
+658,Adrian Ocegueda,TX,Governor,Regular,2018-03-06,Lost,None,None,-13.23,4.4000001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,governor,
+659,Andrew White,TX,Governor,Regular,2018-03-06,Advanced,Lost,None,-13.23,27.4,FALSE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,,TRUE,,,,,,,,,,,governor,
+660,Cedric Davis,TX,Governor,Regular,2018-03-06,Lost,None,None,-13.23,8.2399998,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,governor,
+661,Grady Yarbrough,TX,Governor,Regular,2018-03-06,Lost,None,None,-13.23,5.3699999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,governor,
+662,James Clark,TX,Governor,Regular,2018-03-06,Lost,None,None,-13.23,2.1500001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,governor,
+663,Jeffrey Payne,TX,Governor,Regular,2018-03-06,Lost,None,None,-13.23,4.75,FALSE,White,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,governor,
+664,Joe Mumbach,TX,Governor,Regular,2018-03-06,Lost,None,None,-13.23,1.36,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,governor,
+665,Lupe Valdez,TX,Governor,Regular,2018-03-06,Advanced,Advanced,On the Ballot,-13.23,42.91,TRUE,Nonwhite,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,,,,,,,,governor,
+666,Thomas Wakely,TX,Governor,Regular,2018-03-06,Lost,None,None,-13.23,3.4100001,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,governor,
+667,Brent Beal,TX,Representative,Regular,2018-03-06,Lost,None,None,-48.73,38.959999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,,,,,house,1
+668,Shirley McKellar,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-48.73,61.040001,TRUE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,1
+669,Kevin Nelson,TX,Representative,Regular,2018-03-06,Lost,None,None,-14.43,4.1199999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,10
+670,Madeline Eden,TX,Representative,Regular,2018-03-06,Lost,None,None,-14.43,14.27,FALSE,White,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,10
+671,Matt Harris,TX,Representative,Regular,2018-03-06,Lost,None,None,-14.43,7.3200002,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,10
+672,Mike Siegel,TX,Representative,Regular,2018-03-06,Advanced,Advanced,On the Ballot,-14.43,40,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,TRUE,,,,,,,house,10
+673,Tami Walker,TX,Representative,Regular,2018-03-06,Lost,None,None,-14.43,15.56,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,10
+674,Tawana Cadien,TX,Representative,Regular,2018-03-06,Advanced,Lost,None,-14.43,17.959999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,10
+675,Eric Pfalzgraf,TX,Representative,Regular,2018-03-06,Lost,None,None,-61.459999,17.09,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,11
+676,Jennie Lou Leeder,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-61.459999,82.910004,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,11
+677,Vanessa Adia,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-33.959999,100,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,TRUE,,,,,,house,12
+678,Greg Sagan,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-65.209999,100,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,13
+679,Adrienne Bell,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-22.33,79.830002,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,,,,TRUE,TRUE,,,,,,house,14
+680,Levy Barnes Jr.,TX,Representative,Regular,2018-03-06,Lost,None,None,-22.33,20.17,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,,,,,,house,14
+681,Dori Fenenbock,TX,Representative,Regular,2018-03-06,Lost,None,None,35.419998,21.969999,FALSE,White,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,FALSE,,,,,FALSE,,FALSE,,,,,house,16
+682,Enrique Garcia,TX,Representative,Regular,2018-03-06,Lost,None,None,35.419998,5.3299999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,,FALSE,,,,,house,16
+683,Jerome Tilghman,TX,Representative,Regular,2018-03-06,Lost,None,None,35.419998,2.97,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,,FALSE,,,,,house,16
+684,John Carrillo,TX,Representative,Regular,2018-03-06,Lost,None,None,35.419998,1.55,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,,FALSE,,,,,house,16
+685,Norma Chavez,TX,Representative,Regular,2018-03-06,Lost,None,None,35.419998,6.6599998,FALSE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,,FALSE,,,,,house,16
+686,Veronica Escobar,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,35.419998,61.529999,TRUE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,TRUE,,,,,TRUE,,TRUE,,,,,house,16
+687,Dale Mantey,TX,Representative,Regular,2018-03-06,Lost,None,None,-21.33,36.599998,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,TRUE,,,,,,,house,17
+688,Rick Kennedy,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-21.33,63.400002,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,17
+689,Miguel Levario,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-51.43,100,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,19
+690,Ali Khorasani,TX,Representative,Regular,2018-03-06,Lost,None,None,-16.33,7.5,FALSE,Nonwhite,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,,,,,,,TRUE,FALSE,,,,,,house,2
+691,H. P. Parvizian,TX,Representative,Regular,2018-03-06,Lost,None,None,-16.33,7.9099998,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,,,,,,house,2
+692,Jimmy Darnell Jones,TX,Representative,Regular,2018-03-06,Lost,None,None,-16.33,22.08,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,TRUE,,,,,,house,2
+693,Silky Malik,TX,Representative,Regular,2018-03-06,Lost,None,None,-16.33,9.6999998,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,,,,,,house,2
+694,Todd Litton,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-16.33,52.810001,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,,,,,,house,2
+695,Derrick Crowe,TX,Representative,Regular,2018-03-06,Lost,None,None,-15.51,23.049999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,TRUE,,,,,,house,21
+696,Elliott McFadden,TX,Representative,Regular,2018-03-06,Lost,None,None,-15.51,17.02,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,,,,,,house,21
+697,Joseph Kopser,TX,Representative,Regular,2018-03-06,Advanced,Advanced,On the Ballot,-15.51,29.030001,TRUE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,FALSE,FALSE,,,,,,house,21
+698,Mary Wilson,TX,Representative,Regular,2018-03-06,Advanced,Lost,None,-15.51,30.9,FALSE,White,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,FALSE,TRUE,,,,,,house,21
+699,Letitia Plummer,TX,Representative,Regular,2018-03-06,Advanced,Lost,None,-14.81,24.290001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,FALSE,TRUE,,,,,,house,22
+700,Margarita Ruiz Johnson,TX,Representative,Regular,2018-03-06,Lost,None,None,-14.81,12.64,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,,,,,,house,22
+701,Mark Gibson,TX,Representative,Regular,2018-03-06,Lost,None,None,-14.81,10.24,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,,,,,,house,22
+702,Sri Preston Kulkarni,TX,Representative,Regular,2018-03-06,Advanced,Advanced,On the Ballot,-14.81,31.85,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,FALSE,,,,,,house,22
+703,Steve Brown,TX,Representative,Regular,2018-03-06,Lost,None,None,-14.81,20.98,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,FALSE,,,,,,house,22
+704,Angela Villescaz,TX,Representative,Regular,2018-03-06,Lost,None,None,-0.63,9.0900002,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,FALSE,,,,,,house,23
+705,Gina Ortiz Jones,TX,Representative,Regular,2018-03-06,Advanced,Advanced,On the Ballot,-0.63,41.560001,TRUE,Nonwhite,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,,,,FALSE,FALSE,,,,,,house,23
+706,Jay Hulings,TX,Representative,Regular,2018-03-06,Lost,None,None,-0.63,14.98,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,FALSE,,,,,FALSE,FALSE,,,,,,house,23
+707,Judy Canales,TX,Representative,Regular,2018-03-06,Lost,None,None,-0.63,16.99,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,FALSE,,,,,FALSE,FALSE,,,,,,house,23
+708,Rick Trevi̱o,TX,Representative,Regular,2018-03-06,Advanced,Lost,None,-0.63,17.379999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,TRUE,TRUE,,,,,,house,23
+709,Jan McDowell,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-12.78,52.470001,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,,,,,,,house,24
+710,John Biggan,TX,Representative,Regular,2018-03-06,Lost,None,None,-12.78,21.52,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,24
+711,Josh Imhoff,TX,Representative,Regular,2018-03-06,Lost,None,None,-12.78,6.02,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,24
+712,Todd Allen,TX,Representative,Regular,2018-03-06,Lost,None,None,-12.78,20,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,24
+713,Chetan Panda,TX,Representative,Regular,2018-03-06,Lost,None,None,-19.23,9.04,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,FALSE,,,,house,25
+714,Chris Perri,TX,Representative,Regular,2018-03-06,Advanced,Lost,None,-19.23,32.790001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,TRUE,,,TRUE,,,,house,25
+715,Julie Oliver,TX,Representative,Regular,2018-03-06,Advanced,Advanced,On the Ballot,-19.23,26.440001,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,FALSE,,,,house,25
+716,Kathi Thomas,TX,Representative,Regular,2018-03-06,Lost,None,None,-19.23,21.16,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,FALSE,,,,house,25
+717,West Hansen,TX,Representative,Regular,2018-03-06,Lost,None,None,-19.23,10.57,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,FALSE,,,,house,25
+718,Linsey Fagan,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-31.629999,52.66,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,TRUE,,,,,,house,26
+719,Will Fisher,TX,Representative,Regular,2018-03-06,Lost,None,None,-31.629999,47.34,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,FALSE,,,,,,house,26
+720,Eric Holguin,TX,Representative,Regular,2018-03-06,Advanced,Advanced,On the Ballot,-25.809999,23.299999,TRUE,Nonwhite,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,,,,,house,27
+721,Raul (Roy) Barrera,TX,Representative,Regular,2018-03-06,Advanced,Lost,None,-25.809999,41.23,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,27
+722,Ronnie McDonald,TX,Representative,Regular,2018-03-06,Lost,None,None,-25.809999,16.389999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,27
+723,Vanessa Edwards Foster,TX,Representative,Regular,2018-03-06,Lost,None,None,-25.809999,19.08,FALSE,White,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,27
+724,Augustine Reyes,TX,Representative,Regular,2018-03-06,Lost,None,None,39.970001,2.8299999,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,,,,,,,house,29
+725,Dominique Garcia,TX,Representative,Regular,2018-03-06,Lost,None,None,39.970001,2.5799999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,FALSE,,,,,,house,29
+726,Hector Morales,TX,Representative,Regular,2018-03-06,Lost,None,None,39.970001,3.04,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,TRUE,TRUE,,,,,,house,29
+727,Pedro Valencia,TX,Representative,Regular,2018-03-06,Lost,None,None,39.970001,1.04,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,,,,,,,house,29
+728,Roel Garcia,TX,Representative,Regular,2018-03-06,Lost,None,None,39.970001,6.5900002,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,,,,,,,house,29
+729,Sylvia Garcia,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,39.970001,63.259998,TRUE,Nonwhite,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,TRUE,,,,,FALSE,,,,,,,house,29
+730,Tahir Javed,TX,Representative,Regular,2018-03-06,Lost,None,None,39.970001,20.67,FALSE,Nonwhite,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,,FALSE,,,,,FALSE,,,,,,,house,29
+731,Adam Bell,TX,Representative,Regular,2018-03-06,Lost,None,None,-20.709999,17.959999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,FALSE,,,,,,house,3
+732,Lorie Burch,TX,Representative,Regular,2018-03-06,Advanced,Advanced,On the Ballot,-20.709999,49.610001,TRUE,White,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,TRUE,,,,,,house,3
+733,Medrick Yhap,TX,Representative,Regular,2018-03-06,Lost,None,None,-20.709999,3.76,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,,FALSE,,,,,,house,3
+734,Sam Johnson,TX,Representative,Regular,2018-03-06,Advanced,Lost,None,-20.709999,28.68,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,,FALSE,,,,,,house,3
+735,Christine Mann,TX,Representative,Regular,2018-03-06,Advanced,Lost,None,-17.379999,33.509998,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,TRUE,,,,,,,house,31
+736,Kent Lester,TX,Representative,Regular,2018-03-06,Lost,None,None,-17.379999,10.32,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,31
+737,M.J. Hegar,TX,Representative,Regular,2018-03-06,Advanced,Advanced,On the Ballot,-17.379999,44.93,TRUE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,31
+738,Mike Clark,TX,Representative,Regular,2018-03-06,Lost,None,None,-17.379999,11.23,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,31
+739,Brett Shipp,TX,Representative,Regular,2018-03-06,Lost,None,None,-4.98,16.34,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,house,32
+740,Colin Allred,TX,Representative,Regular,2018-03-06,Advanced,Advanced,On the Ballot,-4.98,38.43,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,,,,,,,,,,,house,32
+741,Ed Meier,TX,Representative,Regular,2018-03-06,Lost,None,None,-4.98,13.7,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,,,,,,,,,,,house,32
+742,George Rodriguez,TX,Representative,Regular,2018-03-06,Lost,None,None,-4.98,7.5900002,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,house,32
+743,Lillian Salerno,TX,Representative,Regular,2018-03-06,Advanced,Lost,None,-4.98,18.35,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,,,,,,,,,,,house,32
+744,Ron Marshall,TX,Representative,Regular,2018-03-06,Lost,None,None,-4.98,3.24,FALSE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,house,32
+745,Todd Maternowski,TX,Representative,Regular,2018-03-06,Lost,None,None,-4.98,2.3599999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,house,32
+746,Dayna Steele,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-49.509998,72,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,TRUE,,,,house,36
+747,Jon Powell,TX,Representative,Regular,2018-03-06,Lost,None,None,-49.509998,28,FALSE,White,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,,,,,,,FALSE,,,FALSE,,,,house,36
+748,Catherine Krantz,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-55.029999,68.620003,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+749,Lander Bethel,TX,Representative,Regular,2018-03-06,Lost,None,None,-55.029999,31.379999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,4
+750,Dan Wood,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-31.360001,100,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,5
+751,Jana Lynne Sanchez,TX,Representative,Regular,2018-03-06,Advanced,Advanced,On the Ballot,-16.030001,36.900002,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,6
+752,John Duncan,TX,Representative,Regular,2018-03-06,Lost,None,None,-16.030001,13.52,FALSE,White,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,6
+753,Justin Snider,TX,Representative,Regular,2018-03-06,Lost,None,None,-16.030001,6.8499999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,,,,,house,6
+754,Levii Shocklee,TX,Representative,Regular,2018-03-06,Lost,None,None,-16.030001,5.7800002,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,6
+755,Ruby Faye Woolridge,TX,Representative,Regular,2018-03-06,Advanced,Lost,None,-16.030001,36.950001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,6
+756,Alex Triantaphyllis,TX,Representative,Regular,2018-03-06,Lost,None,None,-6.8099999,15.73,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,FALSE,,,FALSE,,,house,7
+757,Ivan Sanchez,TX,Representative,Regular,2018-03-06,Lost,None,None,-6.8099999,5.6900001,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,FALSE,,,FALSE,,,house,7
+758,James Cargas,TX,Representative,Regular,2018-03-06,Lost,None,None,-6.8099999,1.96,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,FALSE,,,FALSE,,,house,7
+759,Jason Westin,TX,Representative,Regular,2018-03-06,Lost,None,None,-6.8099999,19.16,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,FALSE,,,,,FALSE,FALSE,,,FALSE,,,house,7
+760,Joshua Butler,TX,Representative,Regular,2018-03-06,Lost,None,None,-6.8099999,3.77,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,,,,,FALSE,FALSE,,,FALSE,,,house,7
+761,Laura Moser,TX,Representative,Regular,2018-03-06,Advanced,Lost,None,-6.8099999,24.34,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,TRUE,TRUE,,,TRUE,,,house,7
+762,Lizzie Pannill Fletcher,TX,Representative,Regular,2018-03-06,Advanced,Advanced,On the Ballot,-6.8099999,29.360001,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,,,,,FALSE,FALSE,,,FALSE,,,house,7
+763,Steven David,TX,Representative,Regular,2018-03-06,Advanced,None,On the Ballot,-52.959999,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,8
+764,Beto O'Rourke,TX,Senator,Regular,2018-03-06,Advanced,None,On the Ballot,-13.23,61.810001,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,TRUE,,,,senate,
+765,Edward Kimbrough,TX,Senator,Regular,2018-03-06,Lost,None,None,-13.23,14.47,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,FALSE,,,,senate,
+766,Sema Hernandez,TX,Senator,Regular,2018-03-06,Lost,None,None,-13.23,23.719999,FALSE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,FALSE,,,,senate,
+767,Kurt Weiland,UT,Representative,Regular,2018-06-26,Lost,None,None,-37.259998,43.150002,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,1
+768,Lee Castillo,UT,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-37.259998,56.849998,TRUE,Nonwhite,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,1
+769,Shireen Ghorbani,UT,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-22.73,100,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+770,James Singer,UT,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-35.16,100,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,3
+771,Ben McAdams,UT,Representative,Regular,2018-06-26,Advanced,None,On the Ballot,-16.809999,100,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,,,,,,,,,,,,,house,4
+772,Jenny Wilson,UT,Senator,Regular,2018-06-26,Advanced,None,On the Ballot,-28.1,100,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,senate,
+773,Edwin Santana,VA,Representative,Regular,2018-06-12,Lost,None,None,-14.81,32.900002,FALSE,Nonwhite,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,FALSE,,,,TRUE,,,,,,,house,1
+774,John Suddarth,VA,Representative,Regular,2018-06-12,Lost,None,None,-14.81,27.129999,FALSE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,FALSE,,,,,,,house,1
+775,Vangie Williams,VA,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,-14.81,39.970001,TRUE,Nonwhite,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,,,,,house,1
+776,Alison Kiehl Friedman,VA,Representative,Regular,2018-06-12,Lost,None,None,4.6900001,22.959999,FALSE,White,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,,,TRUE,,,,FALSE,,,,,,,house,10
+777,Dan Helmer,VA,Representative,Regular,2018-06-12,Lost,None,None,4.6900001,12.55,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,,,,,house,10
+778,Jennifer Wexton,VA,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,4.6900001,41.889999,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,,,,,house,10
+779,Julia Biggins,VA,Representative,Regular,2018-06-12,Lost,None,None,4.6900001,2.8299999,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,TRUE,,,,TRUE,,,,,,,house,10
+780,Lindsey Davis Stover,VA,Representative,Regular,2018-06-12,Lost,None,None,4.6900001,16.02,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,TRUE,,,,FALSE,,,,,,,house,10
+781,Paul Pelletier,VA,Representative,Regular,2018-06-12,Lost,None,None,4.6900001,3.76,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,FALSE,,,,,,,house,10
+782,Elaine Luria,VA,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,-5.6599998,62.330002,TRUE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,,,,,,,,FALSE,,,house,2
+783,Karen Mallard,VA,Representative,Regular,2018-06-12,Lost,None,None,-5.6599998,37.669998,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,,,,,TRUE,,,house,2
+784,Leslie Cockburn,VA,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,-12.51,100,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,,,,,,,,,,,,house,5
+785,Charlotte Moore,VA,Representative,Regular,2018-06-12,Lost,None,None,-25.959999,18.450001,FALSE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,6
+786,Jennifer Lewis,VA,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,-25.959999,47.669998,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,TRUE,,,,TRUE,,,,,,,house,6
+787,Peter Volosin,VA,Representative,Regular,2018-06-12,Lost,None,None,-25.959999,27.190001,FALSE,White,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,6
+788,Sergio Coppola,VA,Representative,Regular,2018-06-12,Lost,None,None,-25.959999,6.6799998,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,FALSE,,,,FALSE,,,,,,,house,6
+789,Abigail Spanberger,VA,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,-10.03,72.68,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,TRUE,,,,,,,,,,,house,7
+790,Dan Ward,VA,Representative,Regular,2018-06-12,Lost,None,None,-10.03,27.32,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,,,,,,,,house,7
+791,Anthony Flaccavento,VA,Representative,Regular,2018-06-12,Advanced,None,On the Ballot,-40.709999,78.639999,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,TRUE,,,,,,,house,9
+792,Justin Santopietro,VA,Representative,Regular,2018-06-12,Lost,None,None,-40.709999,21.360001,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,FALSE,,,,,,,house,9
+793,Carolyn Long,WA,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-8.5100002,,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,TRUE,TRUE,,,,FALSE,FALSE,,TRUE,,,,house,3
+794,David McDevitt,WA,Representative,Regular,2018-08-07,Lost,None,None,-8.5100002,,FALSE,White,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,,FALSE,FALSE,,,,FALSE,FALSE,,FALSE,,,,house,3
+795,Dorothy Gasque,WA,Representative,Regular,2018-08-07,Lost,None,None,-8.5100002,,FALSE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,,FALSE,FALSE,,,,TRUE,TRUE,,FALSE,,,,house,3
+796,Martin Hash,WA,Representative,Regular,2018-08-07,Lost,None,None,-8.5100002,,FALSE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,FALSE,FALSE,,,,FALSE,FALSE,,FALSE,,,,house,3
+797,Christine Brown,WA,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-25.08,,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,4
+798,Lisa Brown,WA,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,-14.81,,TRUE,White,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,,,,,,,TRUE,,,,house,5
+799,Jason Rittereiser,WA,Representative,Regular,2018-08-07,Lost,None,None,0.12,,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,TRUE,,,,TRUE,,,TRUE,,,,house,8
+800,Kim Schrier,WA,Representative,Regular,2018-08-07,Advanced,None,On the Ballot,0.12,,TRUE,White,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,,TRUE,TRUE,,,,FALSE,,,FALSE,,,,house,8
+801,Shannon Hader,WA,Representative,Regular,2018-08-07,Lost,None,None,0.12,,FALSE,White,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,,FALSE,TRUE,,,,FALSE,,,FALSE,,,,house,8
+802,Thomas Cramer,WA,Representative,Regular,2018-08-07,Lost,None,None,0.12,,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,FALSE,FALSE,,,,FALSE,,,FALSE,,,,house,8
+803,Kendra Fershee,WV,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-40.41,47.240002,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,1
+804,Ralph Baxter,WV,Representative,Regular,2018-05-08,Lost,None,None,-40.41,38.119999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,1
+805,Tom Payne,WV,Representative,Regular,2018-05-08,Lost,None,None,-40.41,14.64,FALSE,White,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,,,,,,,,,,,,,,house,1
+806,Aaron Scheinberg,WV,Representative,Regular,2018-05-08,Lost,None,None,-35.330002,37.43,FALSE,White,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,,,,house,2
+807,Talley Sergent,WV,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-35.330002,62.57,TRUE,White,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,,,,,,,,,,,,,,house,2
+808,Janice Hagerman,WV,Representative,Regular,2018-05-08,Lost,None,None,-47.48,7.2399998,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,FALSE,,,house,3
+809,Paul Davis,WV,Representative,Regular,2018-05-08,Lost,None,None,-47.48,15.96,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,FALSE,,,house,3
+810,Richard Ojeda,WV,Representative,Regular,2018-05-08,Advanced,None,On the Ballot,-47.48,52.16,TRUE,Nonwhite,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,TRUE,,,house,3
+811,Shirley Love,WV,Representative,Regular,2018-05-08,Lost,None,None,-47.48,24.639999,FALSE,White,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,,,,,,,,FALSE,,,house,3

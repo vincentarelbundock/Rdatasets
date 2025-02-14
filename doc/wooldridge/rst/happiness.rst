@@ -92,11 +92,6 @@
 
       -  **unem10:** =1 if unemployed in last 10 years
 
-      .. rubric:: 
-         :name: section
-
-      NA
-
       .. rubric:: Source
          :name: source
 

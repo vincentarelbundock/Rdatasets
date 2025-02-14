@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><title>R: We Watched 906 Foul Balls To Find Out Where The Most...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>foul_balls</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>We Watched 906 Foul Balls To Find Out Where The Most Dangerous Ones</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;We Watched 906 Foul Balls To Find Out Where The Most Dangerous Ones&quot;
+<a href="https://fivethirtyeight.com/features/we-watched-906-foul-balls-to-find-out-where-the-most-dangerous-ones-land/">https://fivethirtyeight.com/features/we-watched-906-foul-balls-to-find-out-where-the-most-dangerous-ones-land/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>foul_balls
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 906 rows representing foul balls and 7 variables:
+</p>
+
+<dl>
+<dt>matchup</dt><dd><p>the two teams that played</p>
+</dd>
+<dt>game_date</dt><dd><p>date of the most foul heavy day at each stadium</p>
+</dd>
+<dt>type_of_hit</dt><dd><p>fly, grounder, line drive, popup, batter hits self</p>
+</dd>
+<dt>exit_velocity</dt><dd><p>recorded velocity of each hit</p>
+</dd>
+<dt>predicted_zone</dt><dd><p>zone predicted the foul ball would land in gauging angles</p>
+</dd>
+<dt>camera_zone</dt><dd><p>actual zone the ball landed it confirmed by camera angles</p>
+</dd>
+<dt>used_zone</dt><dd><p>zone used for analysis</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Information on the Zones from the 538 original article: Zones 1, 2 and 3 are the areas behind home plate and the dugouts. Zones 4 and 5 make up most of the foul territory outside the baselines up until the foul pole. Zones 6 and 7 include the areas beyond the foul poles.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Baseball Savant <a href="https://baseballsavant.mlb.com/">https://baseballsavant.mlb.com/</a>.
+</p>
+
+</main>
+
+</div>
+</body></html>

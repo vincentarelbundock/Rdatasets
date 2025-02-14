@@ -1,0 +1,436 @@
+rownames,state,district_number,pvi_party,pvi_amount
+1,Alaska,1,R,15
+2,Alabama,1,R,28
+3,Alabama,2,R,30
+4,Alabama,3,R,31
+5,Alabama,4,R,59
+6,Alabama,5,R,32
+7,Alabama,6,R,47
+8,Alabama,7,D,41
+9,Arkansas,1,R,30
+10,Arkansas,2,R,9
+11,Arkansas,3,R,30
+12,Arkansas,4,R,29
+13,Arizona,1,R,5
+14,Arizona,2,R,1
+15,Arizona,3,D,24
+16,Arizona,4,R,42
+17,Arizona,5,R,27
+18,Arizona,6,R,17
+19,Arizona,7,D,43
+20,Arizona,8,R,26
+21,Arizona,9,D,8
+22,California,1,R,22
+23,California,10,R,0
+24,California,11,D,41
+25,California,12,D,71
+26,California,13,D,75
+27,California,14,D,52
+28,California,15,D,39
+29,California,16,D,16
+30,California,17,D,47
+31,California,18,D,44
+32,California,19,D,45
+33,California,2,D,40
+34,California,20,D,42
+35,California,21,D,10
+36,California,22,R,15
+37,California,23,R,27
+38,California,24,D,13
+39,California,25,R,0
+40,California,26,D,14
+41,California,27,D,30
+42,California,28,D,43
+43,California,29,D,55
+44,California,3,D,8
+45,California,30,D,36
+46,California,31,D,15
+47,California,32,D,32
+48,California,33,D,31
+49,California,34,D,67
+50,California,35,D,35
+51,California,36,D,2
+52,California,37,D,70
+53,California,38,D,33
+54,California,39,D,0
+55,California,4,R,19
+56,California,40,D,63
+57,California,41,D,23
+58,California,42,R,17
+59,California,43,D,56
+60,California,44,D,66
+61,California,45,R,4
+62,California,46,D,30
+63,California,47,D,24
+64,California,48,R,6
+65,California,49,R,1
+66,California,5,D,40
+67,California,50,R,21
+68,California,51,D,42
+69,California,52,D,13
+70,California,53,D,27
+71,California,6,D,39
+72,California,7,D,4
+73,California,8,R,18
+74,California,9,D,14
+75,Colorado,1,D,40
+76,Colorado,2,D,16
+77,Colorado,3,R,13
+78,Colorado,4,R,25
+79,Colorado,5,R,26
+80,Colorado,6,D,4
+81,Colorado,7,D,9
+82,Connecticut,1,D,20
+83,Connecticut,2,D,2
+84,Connecticut,3,D,15
+85,Connecticut,4,D,14
+86,Connecticut,5,D,1
+87,Delaware,1,D,13
+88,Florida,1,R,43
+89,Florida,10,D,20
+90,Florida,11,R,32
+91,Florida,12,R,19
+92,Florida,13,D,0
+93,Florida,14,D,12
+94,Florida,15,R,13
+95,Florida,16,R,14
+96,Florida,17,R,28
+97,Florida,18,R,12
+98,Florida,19,R,26
+99,Florida,2,R,38
+100,Florida,20,D,58
+101,Florida,21,D,15
+102,Florida,22,D,10
+103,Florida,23,D,20
+104,Florida,24,D,64
+105,Florida,25,R,9
+106,Florida,26,D,9
+107,Florida,27,D,10
+108,Florida,3,R,20
+109,Florida,4,R,34
+110,Florida,5,D,21
+111,Florida,6,R,18
+112,Florida,7,R,0
+113,Florida,8,R,23
+114,Florida,9,D,7
+115,Georgia,1,R,20
+116,Georgia,10,R,31
+117,Georgia,11,R,34
+118,Georgia,12,R,20
+119,Georgia,13,D,36
+120,Georgia,14,R,56
+121,Georgia,2,D,8
+122,Georgia,3,R,37
+123,Georgia,4,D,45
+124,Georgia,5,D,65
+125,Georgia,6,R,14
+126,Georgia,7,R,17
+127,Georgia,8,R,33
+128,Georgia,9,R,63
+129,Hawaii,1,D,35
+130,Hawaii,2,D,36
+131,Iowa,1,D,0
+132,Iowa,2,D,0
+133,Iowa,3,R,2
+134,Iowa,4,R,22
+135,Idaho,1,R,39
+136,Idaho,2,R,29
+137,Illinois,1,D,51
+138,Illinois,10,D,21
+139,Illinois,11,D,17
+140,Illinois,12,R,13
+141,Illinois,13,R,7
+142,Illinois,14,R,9
+143,Illinois,15,R,44
+144,Illinois,16,R,17
+145,Illinois,17,D,1
+146,Illinois,18,R,29
+147,Illinois,2,D,56
+148,Illinois,3,D,10
+149,Illinois,4,D,63
+150,Illinois,5,D,38
+151,Illinois,6,R,2
+152,Illinois,7,D,73
+153,Illinois,8,D,16
+154,Illinois,9,D,36
+155,Indiana,1,D,14
+156,Indiana,2,R,21
+157,Indiana,3,R,34
+158,Indiana,4,R,32
+159,Indiana,5,R,15
+160,Indiana,6,R,36
+161,Indiana,7,D,22
+162,Indiana,8,R,30
+163,Indiana,9,R,25
+164,Kansas,1,R,46
+165,Kansas,2,R,19
+166,Kansas,3,R,4
+167,Kansas,4,R,29
+168,Kentucky,1,R,39
+169,Kentucky,2,R,31
+170,Kentucky,3,D,18
+171,Kentucky,4,R,29
+172,Kentucky,5,R,54
+173,Kentucky,6,R,10
+174,Louisiana,1,R,41
+175,Louisiana,2,D,54
+176,Louisiana,3,R,35
+177,Louisiana,4,R,20
+178,Louisiana,5,R,25
+179,Louisiana,6,R,32
+180,Massachusetts,1,D,27
+181,Massachusetts,2,D,22
+182,Massachusetts,3,D,23
+183,Massachusetts,4,D,24
+184,Massachusetts,5,D,43
+185,Massachusetts,6,D,19
+186,Massachusetts,7,D,73
+187,Massachusetts,8,D,26
+188,Massachusetts,9,D,14
+189,Maryland,1,R,30
+190,Maryland,2,D,21
+191,Maryland,3,D,24
+192,Maryland,4,D,53
+193,Maryland,5,D,28
+194,Maryland,6,D,10
+195,Maryland,7,D,51
+196,Maryland,8,D,27
+197,Maine,1,D,14
+198,Maine,2,R,6
+199,Michigan,1,R,18
+200,Michigan,10,R,27
+201,Michigan,11,R,6
+202,Michigan,12,D,26
+203,Michigan,13,D,62
+204,Michigan,14,D,59
+205,Michigan,2,R,17
+206,Michigan,3,R,10
+207,Michigan,4,R,20
+208,Michigan,5,D,8
+209,Michigan,6,R,7
+210,Michigan,7,R,14
+211,Michigan,8,R,7
+212,Michigan,9,D,8
+213,Minnesota,1,R,10
+214,Minnesota,2,R,2
+215,Minnesota,3,D,5
+216,Minnesota,4,D,28
+217,Minnesota,5,D,51
+218,Minnesota,6,R,23
+219,Minnesota,7,R,25
+220,Minnesota,8,R,10
+221,Missouri,1,D,55
+222,Missouri,2,R,15
+223,Missouri,3,R,38
+224,Missouri,4,R,35
+225,Missouri,5,D,11
+226,Missouri,6,R,31
+227,Missouri,7,R,46
+228,Missouri,8,R,51
+229,Mississippi,1,R,29
+230,Mississippi,2,D,30
+231,Mississippi,3,R,22
+232,Mississippi,4,R,39
+233,Montana,1,R,17
+234,North Carolina,1,D,35
+235,North Carolina,10,R,24
+236,North Carolina,11,R,28
+237,North Carolina,12,D,36
+238,North Carolina,13,R,10
+239,North Carolina,2,R,12
+240,North Carolina,3,R,23
+241,North Carolina,4,D,34
+242,North Carolina,5,R,18
+243,North Carolina,6,R,16
+244,North Carolina,7,R,18
+245,North Carolina,8,R,15
+246,North Carolina,9,R,13
+247,North Dakota,1,R,33
+248,Nebraska,1,R,19
+249,Nebraska,2,R,3
+250,Nebraska,3,R,50
+251,New Hampshire,1,R,4
+252,New Hampshire,2,D,1
+253,New Jersey,1,D,24
+254,New Jersey,10,D,71
+255,New Jersey,11,R,4
+256,New Jersey,12,D,31
+257,New Jersey,2,R,2
+258,New Jersey,3,R,4
+259,New Jersey,4,R,14
+260,New Jersey,5,R,3
+261,New Jersey,6,D,16
+262,New Jersey,7,R,3
+263,New Jersey,8,D,53
+264,New Jersey,9,D,31
+265,New Mexico,1,D,14
+266,New Mexico,2,R,10
+267,New Mexico,3,D,14
+268,Nevada,1,D,25
+269,Nevada,2,R,16
+270,Nevada,3,R,5
+271,Nevada,4,D,1
+272,New York,1,R,10
+273,New York,10,D,53
+274,New York,11,R,7
+275,New York,12,D,62
+276,New York,13,D,85
+277,New York,14,D,56
+278,New York,15,D,88
+279,New York,16,D,48
+280,New York,17,D,16
+281,New York,18,R,2
+282,New York,19,R,4
+283,New York,2,R,7
+284,New York,20,D,13
+285,New York,21,R,9
+286,New York,22,R,12
+287,New York,23,R,12
+288,New York,24,D,5
+289,New York,25,D,14
+290,New York,26,D,20
+291,New York,27,R,22
+292,New York,3,D,2
+293,New York,4,D,8
+294,New York,5,D,73
+295,New York,6,D,31
+296,New York,7,D,74
+297,New York,8,D,71
+298,New York,9,D,67
+299,Ohio,1,R,9
+300,Ohio,10,R,8
+301,Ohio,11,D,61
+302,Ohio,12,R,14
+303,Ohio,13,D,10
+304,Ohio,14,R,11
+305,Ohio,15,R,15
+306,Ohio,16,R,16
+307,Ohio,2,R,17
+308,Ohio,3,D,36
+309,Ohio,4,R,30
+310,Ohio,5,R,22
+311,Ohio,6,R,35
+312,Ohio,7,R,25
+313,Ohio,8,R,34
+314,Ohio,9,D,24
+315,Oklahoma,1,R,28
+316,Oklahoma,2,R,43
+317,Oklahoma,3,R,49
+318,Oklahoma,4,R,34
+319,Oklahoma,5,R,13
+320,Oregon,1,D,18
+321,Oregon,2,R,21
+322,Oregon,3,D,45
+323,Oregon,4,R,0
+324,Oregon,5,D,1
+325,Pennsylvania,1,R,0
+326,Pennsylvania,10,R,10
+327,Pennsylvania,11,R,27
+328,Pennsylvania,12,R,35
+329,Pennsylvania,13,R,44
+330,Pennsylvania,14,R,27
+331,Pennsylvania,15,R,40
+332,Pennsylvania,16,R,17
+333,Pennsylvania,17,R,5
+334,Pennsylvania,18,D,25
+335,Pennsylvania,2,D,47
+336,Pennsylvania,3,D,81
+337,Pennsylvania,4,D,14
+338,Pennsylvania,5,D,25
+339,Pennsylvania,6,D,4
+340,Pennsylvania,7,D,0
+341,Pennsylvania,8,R,4
+342,Pennsylvania,9,R,30
+343,Rhode Island,1,D,34
+344,Rhode Island,2,D,18
+345,South Carolina,1,R,18
+346,South Carolina,2,R,22
+347,South Carolina,3,R,39
+348,South Carolina,4,R,29
+349,South Carolina,5,R,20
+350,South Carolina,6,D,34
+351,South Carolina,7,R,20
+352,South Dakota,1,R,30
+353,Tennessee,1,R,57
+354,Tennessee,2,R,39
+355,Tennessee,3,R,36
+356,Tennessee,4,R,42
+357,Tennessee,5,D,12
+358,Tennessee,6,R,49
+359,Tennessee,7,R,41
+360,Tennessee,8,R,38
+361,Tennessee,9,D,53
+362,Texas,1,R,51
+363,Texas,10,R,18
+364,Texas,11,R,64
+365,Texas,12,R,37
+366,Texas,13,R,68
+367,Texas,14,R,25
+368,Texas,15,D,10
+369,Texas,16,D,31
+370,Texas,17,R,24
+371,Texas,18,D,49
+372,Texas,19,R,54
+373,Texas,2,R,20
+374,Texas,20,D,18
+375,Texas,21,R,19
+376,Texas,22,R,19
+377,Texas,23,R,4
+378,Texas,24,R,17
+379,Texas,25,R,22
+380,Texas,26,R,35
+381,Texas,27,R,28
+382,Texas,28,D,14
+383,Texas,29,D,35
+384,Texas,3,R,25
+385,Texas,30,D,54
+386,Texas,31,R,21
+387,Texas,32,R,9
+388,Texas,33,D,42
+389,Texas,34,D,16
+390,Texas,35,D,26
+391,Texas,36,R,52
+392,Texas,4,R,57
+393,Texas,5,R,34
+394,Texas,6,R,19
+395,Texas,7,R,11
+396,Texas,8,R,56
+397,Texas,9,D,54
+398,Utah,1,R,40
+399,Utah,2,R,25
+400,Utah,3,R,38
+401,Utah,4,R,20
+402,Virginia,1,R,16
+403,Virginia,10,D,1
+404,Virginia,11,D,30
+405,Virginia,2,R,7
+406,Virginia,3,D,28
+407,Virginia,4,D,16
+408,Virginia,5,R,14
+409,Virginia,6,R,27
+410,Virginia,7,R,12
+411,Virginia,8,D,42
+412,Virginia,9,R,41
+413,Vermont,1,D,24
+414,Washington,1,D,10
+415,Washington,10,D,8
+416,Washington,2,D,18
+417,Washington,3,R,9
+418,Washington,4,R,26
+419,Washington,5,R,15
+420,Washington,6,D,9
+421,Washington,7,D,63
+422,Washington,8,R,1
+423,Washington,9,D,40
+424,Wisconsin,1,R,11
+425,Wisconsin,2,D,33
+426,Wisconsin,3,R,2
+427,Wisconsin,4,D,48
+428,Wisconsin,5,R,24
+429,Wisconsin,6,R,16
+430,Wisconsin,7,R,17
+431,Wisconsin,8,R,16
+432,West Virginia,1,R,30
+433,West Virginia,2,R,25
+434,West Virginia,3,R,37
+435,Wyoming,1,R,48

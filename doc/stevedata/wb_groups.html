@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head><title>R: World Bank Country Groups</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>wb_groups</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>World Bank Country Groups</h2>
+
+<h3>Description</h3>
+
+<p>A data set on World Bank country groups/classifications, for ease of selecting
+three-character ISO codes of interest.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>wb_groups
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 2085 observations on the following 4 variables.
+</p>
+
+<dl>
+<dt><code>wbgc</code></dt><dd><p>a three-character code for the World Bank group</p>
+</dd>
+<dt><code>wbgn</code></dt><dd><p>a more informative name for the World Bank group</p>
+</dd>
+<dt><code>iso3c</code></dt><dd><p>a three-character ISO code</p>
+</dd>
+<dt><code>name</code></dt><dd><p>a name for the country that corresponds with the three-character ISO code</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Data are for the current 2025 fiscal year. The World Bank's
+Data Help Desk will offer more information about specific criteria for things
+like income.
+</p>
+
+</main>
+
+</div>
+</body></html>

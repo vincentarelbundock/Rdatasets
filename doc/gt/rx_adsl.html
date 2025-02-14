@@ -91,30 +91,6 @@ if the subject had the event) or <code>"N"</code>.</p>
 
 
 
-<h3>Examples</h3>
-
-<p>Here is a glimpse at the data available in <code>rx_adsl</code>.
-</p>
-<div class="sourceCode r"><pre>dplyr::glimpse(rx_adsl)
-#&gt; Rows: 182
-#&gt; Columns: 14
-#&gt; $ STUDYID  &lt;chr&gt; "GT01", "GT01", "GT01", "GT01", "GT01", "GT01", "GT01", "GT01~
-#&gt; $ STUDYIDN &lt;chr&gt; "4001", "4001", "4001", "4001", "4001", "4001", "4001", "4001~
-#&gt; $ USUBJID  &lt;chr&gt; "GT1000", "GT1001", "GT1002", "GT1003", "GT1004", "GT1005", "~
-#&gt; $ TRTA     &lt;fct&gt; NA, Placebo, Placebo, Placebo, Placebo, Placebo, Placebo, Pla~
-#&gt; $ TRTAN    &lt;dbl&gt; 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1~
-#&gt; $ ITTFL    &lt;chr&gt; "N", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "~
-#&gt; $ RANDFL   &lt;chr&gt; "N", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "Y", "~
-#&gt; $ SCRFREAS &lt;chr&gt; "WITHDRAWAL BY SUBJECT", "", "", "", "", "", "", "", "", "", ~
-#&gt; $ AGE      &lt;int&gt; 37, 41, 39, 38, 45, 35, 42, 35, 42, 38, 48, 36, 46, 34, 44, 4~
-#&gt; $ AAGEGR1  &lt;fct&gt; &lt;40, &gt;=40, &lt;40, &lt;40, &gt;=40, &lt;40, &gt;=40, &lt;40, &gt;=40, &lt;40, &gt;=40, &lt;~
-#&gt; $ SEX      &lt;fct&gt; Male, Male, Female, Male, Male, Female, Female, Male, Male, F~
-#&gt; $ ETHNIC   &lt;fct&gt; Hispanic or Latino, Not Hispanic or Latino, Not Hispanic or L~
-#&gt; $ BLBMI    &lt;dbl&gt; 33.76723, 33.35073, 30.45862, 22.85986, 23.89713, 29.09856, 2~
-#&gt; $ EVNTFL   &lt;chr&gt; "", "Y", "Y", "N", "Y", "Y", "N", "N", "N", "N", "N", "N", "Y~
-</pre></div>
-
-
 <h3>Dataset ID and Badge</h3>
 
 <p>DATA-17
@@ -151,6 +127,12 @@ if the subject had the event) or <code>"N"</code>.</p>
 <code>sza</code>,
 <code>towny</code>
 </p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>dplyr::glimpse(rx_adsl)
+</code></pre>
 
 </main>
 

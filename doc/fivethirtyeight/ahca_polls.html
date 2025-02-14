@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: American Health Care Act Polls</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>ahca_polls</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>American Health Care Act Polls</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Why The GOP Is So Hell-Bent On Passing An Unpopular Health Care Bill&quot;
+<a href="https://fivethirtyeight.com/features/why-the-gop-is-so-hell-bent-on-passing-an-unpopular-health-care-bill/">https://fivethirtyeight.com/features/why-the-gop-is-so-hell-bent-on-passing-an-unpopular-health-care-bill/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>ahca_polls
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 15 rows representing polls and 7 variables:
+</p>
+
+<dl>
+<dt>start</dt><dd><p>Start date of the poll.</p>
+</dd>
+<dt>end</dt><dd><p>End date of the poll.</p>
+</dd>
+<dt>pollster</dt><dd><p>The entity that conducts and collects information from the poll.</p>
+</dd>
+<dt>favor</dt><dd><p>The number of affirmative responses to the question at the pollster.</p>
+</dd>
+<dt>oppose</dt><dd><p>The number of negative responses to the question at the pollster.</p>
+</dd>
+<dt>url</dt><dd><p>The website associated with the polling question.</p>
+</dd>
+<dt>text</dt><dd><p>The polling question asked at the pollster.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/blob/master/ahca-polls/README.md">https://github.com/fivethirtyeight/data/blob/master/ahca-polls/README.md</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'># To convert data frame to tidy data (long) format, run:
+library(dplyr)
+library(tidyr)
+library(stringr)
+ahca_polls_tidy &lt;- ahca_polls %&gt;%
+  pivot_longer(-c(start, end, pollster, text, url), names_to = "opinion", values_to = "count")
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

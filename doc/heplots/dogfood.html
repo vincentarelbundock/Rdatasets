@@ -1,0 +1,136 @@
+<!DOCTYPE html><html><head><title>R: Dogfood Preferences</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>dogfood</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Dogfood Preferences</h2>
+
+<h3>Description</h3>
+
+<p>A tiny hypothetical dataset to illustrate one-way MANOVA.
+</p>
+<p>A dogfood manufacturer wanted to study preference for different dogfood formulas, two of their own
+(&quot;Old&quot;, &quot;New&quot;) and two from other manufacturers (&quot;Major&quot;, &quot;Alps&quot;). In a between-dog design, 4 dogs
+were presented with a bowl of one <code>formula</code> and the time to <code>start</code> eating and <code>amount</code> eaten were recorded.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>data("dogfood")
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 16 observations on the following 3 variables.
+</p>
+
+<dl>
+<dt><code>formula</code></dt><dd><p>factor, a factor with levels <code>Old</code>, <code>New</code>, <code>Major</code>, <code>Alps</code></p>
+</dd>
+<dt><code>start</code></dt><dd><p>numeric, time to start eating</p>
+</dd>
+<dt><code>amount</code></dt><dd><p>numeric, amount eaten</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>In addition to testing the overall effects of <code>formula</code>,
+three useful (and orthogonal) contrasts can specified for this 3-df factor:
+</p>
+
+<ul>
+<li> <p><code>Ours</code> vs. <code>Theirs</code>, with weights <code>c(1, 1, -1, -1)</code>
+</p>
+</li>
+<li> <p><code>Major</code> vs. <code>Alps</code>, with weights <code>c(0, 0,  1, -1)</code>
+</p>
+</li>
+<li> <p><code>Old</code> vs. <code>New</code>, with weights <code>c(1, -1, 0, 0)</code>
+</p>
+</li></ul>
+
+<p>Because these are orthogonal contrasts, they fully decompose the main effect of <code>formula</code>,
+in that their sum of squares add to the overall sum of squares.
+</p>
+
+
+<h3>Source</h3>
+
+<p>Used in my Psych 6140 lecture notes, <a href="http://friendly.apps01.yorku.ca/psy6140/">http://friendly.apps01.yorku.ca/psy6140/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre><code class='language-R'>data(dogfood)
+library(car)
+library(candisc)
+
+# make some boxplots
+op &lt;- par(mfrow = c(1,2))
+boxplot(start ~ formula, data = dogfood)
+points(start ~ formula, data = dogfood, pch=16, cex = 1.2)
+
+boxplot(amount ~ formula, data = dogfood)
+points(amount ~ formula, data = dogfood, pch=16, cex = 1.2)
+par(op)
+
+# setup contrasts to test interesting comparisons
+C &lt;- matrix(
+       c( 1,  1, -1, -1,         #Ours vs. Theirs
+          0,  0,  1, -1,           #Major vs. Alps
+          1, -1,  0,  0),             #New vs. Old
+       nrow=4, ncol=3)
+# assign these to the formula factor
+contrasts(dogfood$formula) &lt;- C
+# re-fit the model
+dogfood.mod &lt;- lm(cbind(start, amount) ~ formula, data=dogfood)
+
+dogfood.mod &lt;- lm(cbind(start, amount) ~ formula, data=dogfood)
+Anova(dogfood.mod)
+
+# data ellipses
+covEllipses(cbind(start, amount) ~ formula, data=dogfood,
+  fill = TRUE, fill.alpha = 0.1)
+
+# test these contrasts with multivariate tests 
+linearHypothesis(dogfood.mod, "formula1", title="Ours vs. Theirs")
+linearHypothesis(dogfood.mod, "formula2", title="Old vs. New")
+linearHypothesis(dogfood.mod, "formula3", title="Alps vs. Major")
+
+heplot(dogfood.mod, fill = TRUE, fill.alpha = 0.1)
+
+# display contrasts in the heplot 
+hyp &lt;- list("Ours/Theirs" = "formula1",
+            "Old/New" = "formula2")
+heplot(dogfood.mod, hypotheses = hyp,
+       fill = TRUE, fill.alpha = 0.1)
+
+dogfood.can &lt;- candisc(dogfood.mod, data=dogfood)
+heplot(dogfood.can, 
+       fill = TRUE, fill.alpha = 0.1, 
+       lwd = 2, var.lwd = 2, var.cex = 2)
+</code></pre>
+
+</main>
+
+</div>
+</body></html>

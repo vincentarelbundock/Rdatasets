@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><title>R: Congress Generic Ballot Polls</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>generic_polllist</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Congress Generic Ballot Polls</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;Are Democrats Winning The Race For Congress?&quot;
+<a href="https://projects.fivethirtyeight.com/congress-generic-ballot-polls/">https://projects.fivethirtyeight.com/congress-generic-ballot-polls/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>generic_polllist
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 934 rows representing polls and 21 variables:
+</p>
+
+<dl>
+<dt>subgroup</dt><dd><p>No description provided.</p>
+</dd>
+<dt>modeldate</dt><dd><p>No description provided.</p>
+</dd>
+<dt>startdate</dt><dd><p>Start date of the poll.</p>
+</dd>
+<dt>enddate</dt><dd><p>End date of the poll.</p>
+</dd>
+<dt>pollster</dt><dd><p>The organization that conducted the poll (rather than the organization that paid for or sponsored it)</p>
+</dd>
+<dt>grade</dt><dd><p>No description provided.</p>
+</dd>
+<dt>samplesize</dt><dd><p>No description provided.</p>
+</dd>
+<dt>population</dt><dd><p>A = ALL ADULTS, RV = REGISTERED VOTERS, LV = LIKELY VOTERS, V = VOTERS</p>
+</dd>
+<dt>weight</dt><dd><p>No description provided.</p>
+</dd>
+<dt>influence</dt><dd><p>No description provided.</p>
+</dd>
+<dt>dem</dt><dd><p>No description provided.</p>
+</dd>
+<dt>rep</dt><dd><p>No description provided.</p>
+</dd>
+<dt>adjusted_dem</dt><dd><p>No description provided.</p>
+</dd>
+<dt>adjusted_rep</dt><dd><p>No description provided.</p>
+</dd>
+<dt>multiversions</dt><dd><p>No description provided.</p>
+</dd>
+<dt>tracking</dt><dd><p>No description provided.</p>
+</dd>
+<dt>url</dt><dd><p>No description provided.</p>
+</dd>
+<dt>poll_id</dt><dd><p>No description provided.</p>
+</dd>
+<dt>question_id</dt><dd><p>No description provided.</p>
+</dd>
+<dt>createddate</dt><dd><p>No description provided.</p>
+</dd>
+<dt>timestamp</dt><dd><p>No description provided.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See <a href="https://github.com/fivethirtyeight/data/blob/master/congress-generic-ballot/README.md">https://github.com/fivethirtyeight/data/blob/master/congress-generic-ballot/README.md</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>generic_topline</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

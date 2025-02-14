@@ -1,0 +1,52 @@
+rownames,state,state_abbrev,division,region
+1,Alabama,AL,East South Central,South
+2,Alaska,AK,Pacific,West
+3,Arizona,AZ,Mountain,West
+4,Arkansas,AR,West South Central,South
+5,California,CA,Pacific,West
+6,Colorado,CO,Mountain,West
+7,Connecticut,CT,New England,Northeast
+8,Delaware,DE,South Atlantic,South
+9,Florida,FL,South Atlantic,South
+10,Georgia,GA,South Atlantic,South
+11,Hawaii,HI,Pacific,West
+12,Idaho,ID,Mountain,West
+13,Illinois,IL,East North Central,Midwest
+14,Indiana,IN,East North Central,Midwest
+15,Iowa,IA,West North Central,Midwest
+16,Kansas,KS,West North Central,Midwest
+17,Kentucky,KY,East South Central,South
+18,Louisiana,LA,West South Central,South
+19,Maine,ME,New England,Northeast
+20,Maryland,MD,South Atlantic,South
+21,Massachusetts,MA,New England,Northeast
+22,Michigan,MI,East North Central,Midwest
+23,Minnesota,MN,West North Central,Midwest
+24,Mississippi,MS,East South Central,South
+25,Missouri,MO,West North Central,Midwest
+26,Montana,MT,Mountain,West
+27,Nebraska,NE,West North Central,Midwest
+28,Nevada,NV,Mountain,West
+29,New Hampshire,NH,New England,Northeast
+30,New Jersey,NJ,Mid-Atlantic,Northeast
+31,New Mexico,NM,Mountain,West
+32,New York,NY,Mid-Atlantic,Northeast
+33,North Carolina,NC,South Atlantic,South
+34,North Dakota,ND,West North Central,Midwest
+35,Ohio,OH,East North Central,Midwest
+36,Oklahoma,OK,West South Central,South
+37,Oregon,OR,Pacific,West
+38,Pennsylvania,PA,Mid-Atlantic,Northeast
+39,Rhode Island,RI,New England,Northeast
+40,South Carolina,SC,South Atlantic,South
+41,South Dakota,SD,West North Central,Midwest
+42,Tennessee,TN,East South Central,South
+43,Texas,TX,West South Central,South
+44,Utah,UT,Mountain,West
+45,Vermont,VT,New England,Northeast
+46,Virginia,VA,South Atlantic,South
+47,Washington,WA,Pacific,West
+48,West Virginia,WV,South Atlantic,South
+49,Wisconsin,WI,East North Central,Midwest
+50,Wyoming,WY,Mountain,West
+51,District of Columbia,DC,South Atlantic,South

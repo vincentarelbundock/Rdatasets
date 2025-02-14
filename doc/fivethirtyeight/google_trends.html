@@ -1,0 +1,78 @@
+<!DOCTYPE html><html><head><title>R: The Media Really Started Paying Attention to Puerto Rico When...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>google_trends</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The Media Really Started Paying Attention to Puerto Rico When Trump Did</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;The Media Really Started Paying Attention to Puerto Rico When Trump Did&quot;
+<a href="https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/">https://fivethirtyeight.com/features/the-media-really-started-paying-attention-to-puerto-rico-when-trump-did/</a>: Google Trends Data.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>google_trends
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 37 rows representing dates and 5 variables:
+</p>
+
+<dl>
+<dt>date</dt><dd><p>Date</p>
+</dd>
+<dt>hurricane_harvey_us</dt><dd><p>US Google search interest on the specified date for Hurricane Harvey</p>
+</dd>
+<dt>hurricane_irma_us</dt><dd><p>US Google search interest on the specified date for Hurricane Irma</p>
+</dd>
+<dt>hurricane_maria_us</dt><dd><p>US Google search interest on the specified date for Hurricane Maria</p>
+</dd>
+<dt>hurricane_jose_us</dt><dd><p>US Google search interest on the specified date for Hurricane Jose</p>
+</dd>
+</dl>
+
+
+
+<h3>Details</h3>
+
+<p>Google search interest is measured in search term popularity relative to peak popularity in the given
+region and time period (with 100 as peak popularity)
+</p>
+
+
+<h3>Source</h3>
+
+<p>Google Trends <a href="https://trends.google.com/trends/">https://trends.google.com/trends/</a>
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>mediacloud_hurricanes</code>, <code>mediacloud_states</code>, <code>mediacloud_online_news</code>,
+<code>mediacloud_trump</code>, <code>tv_hurricanes</code>, <code>tv_hurricanes_by_network</code>,
+<code>tv_states</code>
+</p>
+
+</main>
+
+</div>
+</body></html>

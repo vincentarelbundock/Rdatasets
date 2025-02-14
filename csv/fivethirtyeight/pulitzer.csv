@@ -1,0 +1,51 @@
+rownames,newspaper,circ2004,circ2013,pctchg_circ,num_finals1990_2003,num_finals2004_2014,num_finals1990_2014
+1,USA Today,2192098,1674306,-24,1,1,2
+2,Wall Street Journal,2101017,2378827,13,30,20,50
+3,New York Times,1119027,1865318,67,55,62,117
+4,Los Angeles Times,983727,653868,-34,44,41,85
+5,Washington Post,760034,474767,-38,52,48,100
+6,New York Daily News,712671,516165,-28,4,2,6
+7,New York Post,642844,500521,-22,0,0,0
+8,Chicago Tribune,603315,414930,-31,23,15,38
+9,San Jose Mercury News,558874,583998,4,4,2,6
+10,Newsday,553117,377744,-32,12,6,18
+11,Houston Chronicle,549300,360251,-34,2,3,5
+12,Dallas Morning News,528379,409265,-23,11,6,17
+13,San Francisco Chronicle,499008,218987,-56,7,2,9
+14,Arizona Republic,466926,293640,-37,5,2,7
+15,Chicago Sun-Times,453757,470548,4,1,1,2
+16,Boston Globe,446241,245572,-45,25,16,41
+17,Atlanta Journal Constitution,409873,231094,-44,1,5,6
+18,Newark Star Ledger,395000,340778,-14,2,6,8
+19,Detroit Free Press,379304,209652,-45,7,5,12
+20,Minneapolis Star Tribune,377058,301345,-20,4,4,8
+21,Philadelphia Inquirer,376454,306831,-18,24,8,32
+22,Cleveland Plain Dealer,367528,311605,-15,4,7,11
+23,San Diego Union-Tribune,355771,250678,-30,0,2,2
+24,Tampa Bay Times,348502,340260,-2,10,11,21
+25,Denver Post,340168,416676,22,1,8,9
+26,Rocky Mountain News,340007,0,-100,4,1,5
+27,Oregonian,339169,228909,-33,9,8,17
+28,Miami Herald,325032,147130,-55,17,7,24
+29,Orange County Register,310001,356165,15,3,2,5
+30,Sacramento Bee,303841,200802,-34,4,4,8
+31,St. Louis Post-Dispatch,281198,167199,-41,4,3,7
+32,Baltimore Sun,277947,177054,-36,11,2,13
+33,Kansas City Star,275747,189283,-31,2,0,2
+34,Detroit News,271465,115643,-57,4,0,4
+35,Orlando Sentinel,269269,161070,-40,5,2,7
+36,South Florida Sun-Sentinel,268297,163728,-39,0,1,1
+37,New Orleans Times-Picayune,262008,0,-100,5,3,8
+38,Columbus Dispatch,259127,137148,-47,1,0,1
+39,Indianapolis Star,253778,156850,-38,1,0,1
+40,San Antonio Express-News,246057,139005,-44,0,0,0
+41,Pittsburgh Post-Gazette,242514,180433,-26,3,0,3
+42,Milwaukee Journal Sentinel,241605,198469,-18,2,8,10
+43,Tampa Tribune,238877,191477,-20,0,0,0
+44,Fort Woth Star-Telegram,237318,188593,-21,1,0,1
+45,Boston Herald,236899,95929,-60,0,0,0
+46,Seattle Times,233497,229764,-2,11,5,16
+47,Charlotte Observer,231369,137829,-40,1,3,4
+48,Daily Oklahoman,223403,124667,-44,0,0,0
+49,Louisville Courier-Journal,216934,131208,-40,0,3,3
+50,Investor's Buisiness Daily,215735,157161,-27,0,1,1

@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><title>R: A Better Way to Evaluate NBA Defense</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>nba_draymond</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>A Better Way to Evaluate NBA Defense</h2>
+
+<h3>Description</h3>
+
+<p>The raw data behind the story
+&quot;A Better Way to Evaluate NBA Defense&quot;
+<a href="https://fivethirtyeight.com/features/a-better-way-to-evaluate-nba-defense/">https://fivethirtyeight.com/features/a-better-way-to-evaluate-nba-defense/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>nba_draymond
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 3009 rows representing DRAYMOND ratings (Defensive Rating Accounting for Yielding Minimal Openness by Nearest Defender) for every player since the 2013-14 season with 4 variables:
+</p>
+
+<dl>
+<dt>season</dt><dd><p>The second year of the season; for example, 2018-2019 season would be listed as 2019</p>
+</dd>
+<dt>player</dt><dd><p>Name of the player</p>
+</dd>
+<dt>possessions</dt><dd><p>Number of possessions a player during the season</p>
+</dd>
+<dt>draymond</dt><dd><p>Defensive Rating Accounting for Yielding Minimal Openness by Nearest Defender</p>
+</dd></dl>
+
+
+
+<h3>Source</h3>
+
+<p>see <a href="https://github.com/fivethirtyeight/data/tree/master/nba-draymond">https://github.com/fivethirtyeight/data/tree/master/nba-draymond</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

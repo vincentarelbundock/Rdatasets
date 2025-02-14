@@ -1,0 +1,98 @@
+<!DOCTYPE html><html><head><title>R: Our Guide To The Exuberant Nonsense of College Fight Songs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>fight_songs</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Our Guide To The Exuberant Nonsense of College Fight Songs</h2>
+
+<h3>Description</h3>
+
+<p>The data behind the story 
+&quot;Our Guide To The Exuberant Nonsense Of College Fight Songs&quot;
+<a href="https://projects.fivethirtyeight.com/college-fight-song-lyrics/">https://projects.fivethirtyeight.com/college-fight-song-lyrics/</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>fight_songs
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 65 rows representing college fight songs, and 23 variables:
+</p>
+
+<dl>
+<dt>school</dt><dd><p>school name</p>
+</dd>
+<dt>conference</dt><dd><p>school college football conference</p>
+</dd>
+<dt>song_name</dt><dd><p>song title</p>
+</dd>
+<dt>writers</dt><dd><p>song author(s)</p>
+</dd>
+<dt>year</dt><dd><p>year the song was written; some years are unknown</p>
+</dd>
+<dt>student_writer</dt><dd><p>TRUE if song was written by a student, FALSE if not</p>
+</dd>
+<dt>official_song</dt><dd><p>TRUE if song is an official fight song according to the university, FALSE if not</p>
+</dd>
+<dt>contest</dt><dd><p>TRUE if song was chosen as part of a contest, FALSE if not</p>
+</dd>
+<dt>bpm</dt><dd><p>beats per minute</p>
+</dd>
+<dt>sec_duration</dt><dd><p>duration of the song in seconds</p>
+</dd>
+<dt>fight</dt><dd><p>TRUE if song says 'fight', FALSE if not</p>
+</dd>
+<dt>num_fights</dt><dd><p>number of time song says 'fight'</p>
+</dd>
+<dt>victory</dt><dd><p>TRUE if song says 'victory', FALSE if not</p>
+</dd>
+<dt>win_won</dt><dd><p>TRUE if song says 'win' or 'won', FALSE if not</p>
+</dd>
+<dt>victory_win_won</dt><dd><p>TRUE if song says 'victory', 'win', or 'won'</p>
+</dd>
+<dt>rah</dt><dd><p>TRUE if song says 'rah', FALSE if not</p>
+</dd>
+<dt>nonsense</dt><dd><p>TRUE if song uses nonsense syllables, FALSE if not</p>
+</dd>
+<dt>colors</dt><dd><p>TRUE if song mentions school colors, FALSE if not</p>
+</dd>
+<dt>men</dt><dd><p>TRUE if song refers to a group of men, boys, sons, etc., FALSE if not</p>
+</dd>
+<dt>opponents</dt><dd><p>TRUE if song mentions opponents, FALSE if not</p>
+</dd>
+<dt>spelling</dt><dd><p>TRUE if song spells something out, FALSE if not</p>
+</dd>
+<dt>trope_count</dt><dd><p>total number of tropes in song</p>
+</dd>
+<dt>spotify_id</dt><dd><p>Spotify id for song</p>
+</dd></dl>
+
+
+
+<h3>Source</h3>
+
+<p>Spotify <a href="https://www.spotify.com/us/">https://www.spotify.com/us/</a>
+</p>
+
+</main>
+
+</div>
+</body></html>

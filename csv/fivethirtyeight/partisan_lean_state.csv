@@ -1,0 +1,51 @@
+rownames,state,pvi_party,pvi_amount
+1,Alabama,R,27
+2,Alaska,R,15
+3,Arizona,R,9
+4,Arkansas,R,24
+5,California,D,24
+6,Colorado,D,1
+7,Connecticut,D,11
+8,Delaware,D,14
+9,Florida,R,5
+10,Georgia,R,12
+11,Hawaii,D,36
+12,Idaho,R,35
+13,Illinois,D,13
+14,Indiana,R,18
+15,Iowa,R,6
+16,Kansas,R,23
+17,Kentucky,R,23
+18,Louisiana,R,17
+19,Maine,D,5
+20,Maryland,D,23
+21,Massachusetts,D,29
+22,Michigan,D,1
+23,Minnesota,D,2
+24,Mississippi,R,15
+25,Missouri,R,19
+26,Montana,R,18
+27,Nebraska,R,24
+28,Nevada,R,1
+29,New Hampshire,R,2
+30,New Jersey,D,13
+31,New Mexico,D,7
+32,New York,D,22
+33,North Carolina,R,5
+34,North Dakota,R,33
+35,Ohio,R,7
+36,Oklahoma,R,34
+37,Oregon,D,9
+38,Pennsylvania,R,1
+39,Rhode Island,D,26
+40,South Carolina,R,17
+41,South Dakota,R,31
+42,Tennessee,R,28
+43,Texas,R,17
+44,Utah,R,31
+45,Vermont,D,24
+46,Virginia,D,0
+47,Washington,D,12
+48,West Virginia,R,30
+49,Wisconsin,R,1
+50,Wyoming,R,47

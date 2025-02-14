@@ -1,0 +1,155 @@
+rownames,pres,pres_name,title,date,city,state,building,room
+1,33,Harry Truman,Commencement Address at Princeton University.,2047-06-17,Princeton,NJ,Princeton University,Nassau Hall
+2,33,Harry Truman,Commencement Address at the University of California.,2048-06-12,Berkeley,CA,,
+3,33,Harry Truman,Commencement Address at the University of Missouri.,2050-06-09,Columbia,MO,,
+4,33,Harry Truman,Commencement Address at Howard University.,2052-06-13,Washington,DC,Howard University,unknown
+5,34,Dwight Eisenhower,"Remarks at the Dartmouth College Commencement Exercises, Hanover, New Hampshire.",2053-06-14,Hanover,NH,,
+6,34,Dwight Eisenhower,"Remarks at the Washington College Commencement, Chestertown, Maryland.",2054-06-07,Chestertown,MD,,
+7,34,Dwight Eisenhower,"Address at the Graduation Ceremonies, United States Military Academy, West Point, New York",2055-06-07,West Point,NY,,
+8,34,Dwight Eisenhower,Address at the Centennial Commencement of Pennsylvania State University.,2055-06-11,University Park,PA,,
+9,34,Dwight Eisenhower,"Address and Remarks at the Baylor University Commencement Ceremonies, Waco, Texas.",2056-05-25,Waco,TX,,
+10,34,Dwight Eisenhower,"Address at the Sesquicentennial Commencement of Mount St. Mary's College, Emmitsburg, Maryland.",2058-06-02,Emmitsburg,MD,,
+11,34,Dwight Eisenhower,Address at U. S. Naval Academy Commencement.,2058-06-04,Annapolis,MD,,
+12,34,Dwight Eisenhower,Remarks on Introducing Prime Minister Macmillan at the Johns Hopkins University Commencement.,2058-06-10,Baltimore,MD,,
+13,34,Dwight Eisenhower,"Address ""Beyond the Campus"" Delivered at the Commencement Exercises of the University of Notre Dame.",2060-06-05,South Bend,IN,University of Notre Dame,O'Shaughnessy Hall
+14,35,John Kennedy,Remarks at Annapolis to the Graduating Class of the United States Naval Academy.,2061-06-07,Annapolis,MD,,
+15,35,John Kennedy,Remarks at West Point to the Graduating Class of the U.S. Military Academy.,2062-06-06,West Point,NY,,
+16,35,John Kennedy,Commencement Address at Yale University.,2062-06-11,New Haven,CT,,
+17,35,John Kennedy,Remarks at Colorado Springs to the Graduating Class of the U.S. Air Force Academy.,2063-06-05,Colorado Springs,CO,,
+18,35,John Kennedy,Commencement Address at San Diego State College.,2063-06-06,San Diego,CA,,
+19,35,John Kennedy,Commencement Address at American University in Washington,2063-06-10,Washington,DC,American University,John M. Reeves Athletic Field
+20,36,Lyndon Johnson,Remarks at the University of Michigan,2064-05-22,Ann Arbor,MI,University of Michigan,
+21,36,Lyndon Johnson,Remarks in Texas to the Graduating Class of the Johnson City High School.,2064-05-29,Johnson City,TX,,
+22,36,Lyndon Johnson,Commencement Address at the University of Texas.,2064-05-30,Austin,TX,,
+23,36,Lyndon Johnson,Commencement Address in New London at the United States Coast Guard Academy.,2064-06-03,New London,CT,,
+24,36,Lyndon Johnson,Address at the Centennial Commencement of Swarthmore College.,2064-06-08,Swarthmore,PA,,
+25,36,Lyndon Johnson,Commencement Address at Holy Cross College.,2064-06-10,Worcester,MA,,
+26,36,Lyndon Johnson,Commencement Address at Baylor University.,2065-05-28,Waco,TX,,
+27,36,Lyndon Johnson,Remarks at the Commencement Exercises of the National Cathedral School.,2065-06-01,Washington,DC,Washington Cathedral,na
+28,36,Lyndon Johnson,"Commencement Address at Howard University: ""To Fulfill These Rights.""",2065-06-04,Washington,DC,Howard University,Main Quadrangle
+29,36,Lyndon Johnson,Commencement Address at Catholic University.,2065-06-06,Washington,DC,Catholic University,Gymnasium
+30,36,Lyndon Johnson,Remarks at the Graduation Ceremony of the School for Capitol Page Boys.,2065-06-15,Washington,DC,White House,Rose Garden
+31,36,Lyndon Johnson,Remarks at the Graduation Ceremony of the Capitol Page School.,2066-06-14,Washington,DC,White House,Rose Garden
+32,36,Lyndon Johnson,Remarks at the Graduation Ceremony of the Capitol Page School.,2067-06-13,Washington,DC,White House,Rose Garden
+33,36,Lyndon Johnson,Commencement Address at Texas Christian University.,2068-05-29,Fort Worth,TX,,
+34,36,Lyndon Johnson,Commencement Address at Glassboro State College.,2068-06-04,Glassboro,NJ,,
+35,36,Lyndon Johnson,Remarks at the Graduation Exercises of the Capitol Page School.,2068-06-11,Washington,DC,White House,East Room
+36,36,Lyndon Johnson,Address at the Summer Commencement Exercises of Southwest Texas State College.,2068-08-24,San Marcos,TX,,
+37,37,Richard Nixon,"Address at the Air Force Academy Commencement Exercises in Colorado Springs, Colorado",1969-06-04,Colorado Springs,CO,Air Force Academy,Falcon Stadium
+38,37,Richard Nixon,Remarks at the Graduation Ceremony of the Capitol Page School.,1969-06-12,Washington,DC,White House,Rose Garden
+39,37,Richard Nixon,"Remarks at Commencement Exercises of Florida Technological University, Orlando, Florida.",1973-06-08,Orlando,FL,,
+40,37,Richard Nixon,"Remarks at Commencement Exercises at Oklahoma State University, Stillwater, Oklahoma.",1974-05-11,Stillwater,OK,,
+41,37,Richard Nixon,"Remarks at Commencement Ceremonies at the United States Naval Academy, Annapolis, Maryland.",1974-06-05,Annapolis,MD,,
+42,38,Gerald Ford,Commencement Address at the University of Pennsylvania.,1975-05-18,Philadelphia,PA,University of Pennsylvania,
+43,38,Gerald Ford,Commencement Address at the United States Military Academy.,1975-06-04,West Point,NY,U.S. Military Academy,Michie Stadium
+44,38,Gerald Ford,"Remarks at Graduation Ceremonies at Holton-Arms School, Bethesda, Maryland.",1975-06-05,Bethesda,MD,Holton-Arms School,grounds
+45,38,Gerald Ford,Commencement Address at Chicago State University.,1975-07-12,Chicago,IL,McCormick Place,Arie Crown Theatre
+46,38,Gerald Ford,Commencement Address at the University of Nebraska in Lincoln.,1976-05-08,Lincoln,NE,University of Nebraska,Sports Center
+47,38,Gerald Ford,Commencement Address at Warner Pacific College in Portland.,1976-05-23,Portland,OR,Warner Pacific College,Center for Christian Ministers Auditorum
+48,39,Jimmy Carter,UNIVERSITY OF NOTRE DAME - Address at Commencement Exercises at the University,1977-05-22,Notre Dame,IN,,
+49,39,Jimmy Carter,United States Naval Academy Address at the Commencement Exercises.,1978-06-07,Annapolis,MD,,
+50,39,Jimmy Carter,Capitol Page School Remarks to Members of the Graduating Class.,1978-06-12,Washington,DC,White House,Rose Garden
+51,39,Jimmy Carter,Cheyney State College Address at the Commencement Exercises,1979-05-20,Cheyney,PA,Cheyney State College,quadrangle
+52,40,Ronald Reagan,Address at Commencement Exercises at the University of Notre Dame,1981-05-17,Notre Dame,IN,University of Notre Dame,Notre Dame Athletic and Convocation Center
+53,40,Ronald Reagan,Address at Commencement Exercises at the United States Military Academy,1981-05-27,West Point,NY,,
+54,40,Ronald Reagan,Address at Commencement Exercises at Eureka College in Illinois,1982-05-09,Eureka,IL,Eureka College,Reagan Physical Education Center
+55,40,Ronald Reagan,"Address at Commencement Exercises at Seton Hall University in South Orange, New Jersey",1983-05-21,South Orange,NJ,,
+56,40,Ronald Reagan,"Address at Commencement Exercises at the United States Air Force Academy in Colorado Springs, Colorado",1984-05-30,Colorado Springs,CO,,
+57,40,Ronald Reagan,"Address at the United States Naval Academy Commencement Exercises in Annapolis, Maryland",1985-05-22,Annapolis,MD,,
+58,40,Ronald Reagan,"Remarks at the High School Commencement Exercises in Glassboro, New Jersey",1986-06-19,Glassboro,NJ,Glassboro High School,Gymnasium
+59,40,Ronald Reagan,Remarks at the Tuskegee University Commencement Ceremony in Alabama,1987-05-10,Tuskegee,AL,,
+60,40,Ronald Reagan,Remarks at the Uniformed Services University of Health Sciences Commencement Ceremony,1987-05-16,Washington,DC,John F. Kennedy Center for the Performin,Concert Hall
+61,40,Ronald Reagan,"Remarks at the Commencement Ceremony for Area High School Seniors in Chattanooga, Tennessee",1987-05-19,Chattanooga,TN,,
+62,40,Ronald Reagan,"Remarks at the United States Coast Guard Academy Commencement Ceremony in New London, Connecticut",1988-05-18,New London,CT,,
+63,41,George H.W. Bush,Remarks at the Texas A&M University Commencement Ceremony in College Station,1989-05-12,College Station,TX,,
+64,41,George H.W. Bush,"Remarks at the Alcorn State University Commencement Ceremony in Lorman, Mississippi",1989-05-13,Lorman,MS,,
+65,41,George H.W. Bush,Remarks at the Mississippi State University Commencement Ceremony in Starkville,1989-05-13,Starkville,MS,,
+66,41,George H.W. Bush,Remarks at the Boston University Commencement Ceremony in Massachusetts,1989-05-21,Boston,MA,,
+67,41,George H.W. Bush,"Remarks at the United States Coast Guard Academy Commencement Ceremony in New London, Connecticut",1989-05-24,New London,CT,,
+68,41,George H.W. Bush,"Remarks at the Cheltenham High School Commencement Ceremony in Wyncote, Pennsylvania",1989-06-19,Wyncote,PA,,
+69,41,George H.W. Bush,Remarks at the Oklahoma State University Commencement Ceremony in Stillwater,1990-05-04,Stillwater,OK,,
+70,41,George H.W. Bush,Remarks at the Texas A&I University Commencement Ceremony in Kingsville,1990-05-11,Kingsville,TX,,
+71,41,George H.W. Bush,Remarks at the University of South Carolina Commencement Ceremony in Columbia,1990-05-12,Columbia,SC,,
+72,41,George H.W. Bush,"Remarks at the Liberty University Commencement Ceremony in Lynchburg, Virginia",1990-05-12,Lynchburg,VA,,
+73,41,George H.W. Bush,Remarks at the University of Texas Commencement Ceremony in Austin,1990-05-19,Austin,TX,,
+74,41,George H.W. Bush,Remarks at the University of Michigan Commencement Ceremony in Ann Arbor,1991-05-04,Ann Arbor,MI,,
+75,41,George H.W. Bush,"Remarks at the Hampton University Commencement Ceremony in Hampton, Virginia",1991-05-12,Hampton,VA,,
+76,41,George H.W. Bush,"Remarks at the Yale University Commencement Ceremony in New Haven, Connecticut",1991-05-27,New Haven,CT,,
+77,41,George H.W. Bush,"Remarks at the United States Air Force Academy Commencement Ceremony in Colorado Springs, Colorado",1991-05-29,Colorado Springs,CO,,
+78,41,George H.W. Bush,"Remarks at the Federal Bureau of Investigation Academy Commencement Ceremony in Quantico, Virginia",1991-05-30,Quantico,VA,,
+79,41,George H.W. Bush,"Remarks at the United States Military Academy Commencement Ceremony in West Point, New York",1991-06-01,West Point,NY,,
+80,41,George H.W. Bush,"Remarks at the James H. Groves Adult High School Commencement Ceremony in Seaford, Delaware",1991-06-11,Seaford,DE,,
+81,41,George H.W. Bush,"Remarks at the California Institute of Technology Commencement Ceremony in Pasadena, California",1991-06-14,Pasadena,CA,,
+82,41,George H.W. Bush,"Remarks at the Florida International University Commencement Ceremony in Miami Beach, Florida",1992-04-27,Miami Beach,FL,,
+83,41,George H.W. Bush,"Remarks at the Southern Methodist University Commencement Ceremony in Dallas, Texas",1992-05-16,Dallas,TX,,
+84,41,George H.W. Bush,"Remarks at the University of Notre Dame Commencement Ceremony in South Bend, Indiana",1992-05-17,South Bend,IN,,
+85,41,George H.W. Bush,"Remarks at the United States Naval Academy Commencement Ceremony in Annapolis, Maryland",1992-05-27,Annapolis,MD,,
+86,42,Bill Clinton,"Remarks at the New Hampshire Technical College Commencement Ceremony in Stratham, New Hampshire",1993-05-22,Stratham,NH,,
+87,42,Bill Clinton,"Remarks at the United States Military Academy Commencement Ceremony in West Point, New York",1993-05-29,West Point,NY,,
+88,42,Bill Clinton,"Remarks at the Northeastern University Commencement Ceremony in Boston, Massachusetts",1993-06-19,Boston,MA,,
+89,42,Bill Clinton,Remarks at the Gallaudet University Commencement Ceremony,1994-05-13,Washington,DC,Gallaudet University,unknown
+90,42,Bill Clinton,"Remarks at the United States Naval Academy Commencement Ceremony in Annapolis, Maryland",1994-05-25,Annapolis,MD,,
+91,42,Bill Clinton,"Remarks at the Michigan State University Commencement Ceremony in East Lansing, Michigan",1995-05-05,East Lansing,MI,,
+92,42,Bill Clinton,"Remarks at the United States Air Force Academy Commencement Ceremony in Colorado Springs, Colorado",1995-05-31,Colorado Springs,CO,,
+93,42,Bill Clinton,"Remarks at the Dartmouth College Commencement Ceremony in Hanover, New Hampshire",1995-06-11,Hanover,NH,,
+94,42,Bill Clinton,"Remarks at the Pennsylvania State University Graduate School Commencement in State College, Pennsylvania",1996-05-10,State College,PA,,
+95,42,Bill Clinton,"Remarks at the United States Coast Guard Academy Commencement in New London, Connecticut",1996-05-22,New London,CT,,
+96,42,Bill Clinton,"Remarks at the Princeton University Commencement Ceremony in Princeton, New Jersey",1996-06-04,Princeton,NJ,,
+97,42,Bill Clinton,"Commencement Address at Morgan State University in Baltimore, Maryland",1997-05-18,Baltimore,MD,,
+98,42,Bill Clinton,"Commencement Address at the United States Military Academy in West Point, New York",1997-05-31,West Point,NY,,
+99,42,Bill Clinton,Commencement Address at the Sidwell Friends School,1997-06-06,Washington,DC,Sidwell Friends School,Gymnasium
+100,42,Bill Clinton,"Commencement Address at the University of California San Diego in La Jolla, California",1997-06-14,La Jolla,CA,University of California,
+101,42,Bill Clinton,Remarks at a Commencement Luncheon at the University of California San Diego in La Jolla,1997-06-14,La Jolla,CA,University of California,
+102,42,Bill Clinton,"Commencement Address at the United States Naval Academy in Annapolis, Maryland",1998-05-22,Annapolis,MD,,
+103,42,Bill Clinton,"Commencement Address at the Massachusetts Institute of Technology in Cambridge, Massachusetts",1998-06-05,Cambridge,MA,,
+104,42,Bill Clinton,"Commencement Address at Portland State University in Portland, Oregon",1998-06-13,Portland,OR,,
+105,42,Bill Clinton,"Commencement Address at Grambling State University in Grambling, Louisiana",1999-05-23,Grambling,LA,,
+106,42,Bill Clinton,Commencement Address at the United States Air Force Academy in Colorado Springs,1999-06-02,Colorado Springs,CO,,
+107,42,Bill Clinton,"Commencement Address at the University of Chicago in Chicago, Illinois",1999-06-12,Chicago,IL,,
+108,42,Bill Clinton,"Commencement Address at Eastern Michigan University in Ypsilanti, Michigan",2000-04-30,Ypsilanti,MI,,
+109,42,Bill Clinton,"Commencement Address at the United States Coast Guard Academy in New London, Connecticut",2000-05-17,New London,CT,,
+110,42,Bill Clinton,"Commencement Address at Carleton College in Northfield, Minnesota",2000-06-10,Northfield,MN,,
+111,43,George W. Bush,"Commencement Address at the University of Notre Dame in Notre Dame, Indiana",2001-05-20,Notre Dame,IN,,
+112,43,George W. Bush,"Commencement Address at Yale University in New Haven, Connecticut",2001-05-21,New Haven,CT,,
+113,43,George W. Bush,"Commencement Address at the United States Naval Academy in Annapolis, Maryland",2001-05-25,Annapolis,MD,,
+114,43,George W. Bush,"Commencement Address at the United States Military Academy in West Point, New York",2002-06-01,West Point,NY,,
+115,43,George W. Bush,"Commencement Address at Ohio State University in Columbus, Ohio",2002-06-14,Columbus,OH,,
+116,43,George W. Bush,"Commencement Address at the University of South Carolina in Columbia, South Carolina",2003-05-09,Columbia,SC,,
+117,43,George W. Bush,"Commencement Address at the United States Coast Guard Academy in New London, Connecticut",2003-05-21,New London,CT,,
+118,43,George W. Bush,"Commencement Address at Concordia University Wisconsin in Mequon, Wisconsin",2004-05-14,Mequon,WI,,
+119,43,George W. Bush,"Commencement Address at Louisiana State University in Baton Rouge, Louisiana",2004-05-21,Baton Rouge,LA,,
+120,43,George W. Bush,"Commencement Address at the United States Air Force Academy in Colorado Springs, Colorado",2004-06-02,Colorado Springs,CO,,
+121,43,George W. Bush,"Commencement Address at Calvin College in Grand Rapids, Michigan",2005-05-21,Grand Rapids,MI,,
+122,43,George W. Bush,"Commencement Address at the United States Naval Academy in Annapolis, Maryland",2005-05-27,Annapolis,MD,,
+123,43,George W. Bush,"Commencement Address at Oklahoma State University in Stillwater, Oklahoma",2006-05-06,Stillwater,OK,,
+124,43,George W. Bush,"Commencement Address at Mississippi Gulf Coast Community College in Biloxi, Mississippi",2006-05-11,Biloxi,MS,,
+125,43,George W. Bush,"Commencement Address at the United States Military Academy in West Point, New York",2006-05-27,West Point,NY,,
+126,43,George W. Bush,"Commencement Address at the United States Merchant Marine Academy in Kings Point, New York",2006-06-19,Kings Point,NY,,
+127,43,George W. Bush,"Commencement Address at Miami Dade College&mdash;Kendall Campus in Miami, Florida",2007-04-28,Miami,FL,,
+128,43,George W. Bush,"Commencement Address at Saint Vincent College in Latrobe, Pennsylvania",2007-05-11,Latrobe,PA,Saint Vincent College,Robert S. Carey Student Center
+129,43,George W. Bush,"Commencement Address at the United States Coast Guard Academy in New London, Connecticut",2007-05-23,New London,CT,,
+130,43,George W. Bush,"Commencement Address at Greensburg High School in Greensburg, Kansas",2008-05-04,Greensburg,KS,Greensburg High School,
+131,43,George W. Bush,"Commencement Address at the United States Air Force Academy in Colorado Springs, Colorado",2008-05-28,Colorado Springs,CO,Air Force Academy,
+132,43,George W. Bush,"Commencement Address at Furman University in Greenville, South Carolina",2008-05-31,Greenville,SC,Furman University,Paladin Stadium
+133,43,George W. Bush,"Commencement Address at Texas A&amp;M University in College Station, Texas",2008-12-12,College Station,TX,Texas A&M University,
+134,44,Barack Obama,Commencement Address at Arizona State University in Tempe,2009-05-13,Tempe,AZ,Arizona State University,Sun Devil Stadium
+135,44,Barack Obama,"Commencement Address at the University of Notre Dame in South Bend, Indiana",2009-05-17,South Bend,IN,University of Notre Dame,
+136,44,Barack Obama,"Commencement Address at the United States Naval Academy in Annapolis, Maryland",2009-05-22,Annapolis,MD,United States Naval Academy,
+137,44,Barack Obama,"Commencement Address at the University of Michigan in Ann Arbor, Michigan",2010-05-01,Ann Arbor,MI,University of Michigan,Michigan Stadium
+138,44,Barack Obama,"Commencement Address at Hampton University in Hampton, Virginia",2010-05-09,Hampton,VA,Hampton University,
+139,44,Barack Obama,"Commencement Address at the United States Military Academy in West Point, New York",2010-05-22,West Point,NY,U.S. Military Academy,Michie Stadium
+140,44,Barack Obama,"Commencement Address at Kalamazoo Central High School in Kalamazoo, Michigan",2010-06-07,Kalamazoo,MI,Western Michigan University,Arena
+141,44,Barack Obama,"Commencement Address at Miami Dade College in Miami, Florida",2011-04-29,Miami,FL,Miami Dade College,James L. Knight International Center
+142,44,Barack Obama,Commencement Address at Booker T. Washington High School in Memphis,2011-05-16,Memphis,TN,Memphis Cook Convention Center,unknown
+143,44,Barack Obama,"Commencement Address at the United States Coast Guard Academy in New London, Connecticut",2011-05-18,New London,CT,United States Coast Guard Academy,unknown
+144,44,Barack Obama,Commencement Address for Barnard College in New York City,2012-05-14,New York,NY,Columbia University,South Lawn
+145,44,Barack Obama,"Commencement Address for Joplin High School in Joplin, Missouri",2012-05-21,Joplin,MO,Missouri Southern State University,Leggett & Platt Athletic Center
+146,44,Barack Obama,"Commencement Address at the United States Air Force Academy in Colorado Springs, Colorado",2012-05-23,Colorado Springs,CO,United States Air Force Academy,unknown
+147,44,Barack Obama,"Commencement Address at Ohio State University in Columbus, Ohio",2013-05-05,Columbus,OH,Ohio State University,Ohio Stadium
+148,44,Barack Obama,"Commencement Address at Morehouse College in Atlanta, Georgia",2013-05-19,Atlanta,GA,Morehouse College,Century Campus
+149,44,Barack Obama,"Commencement Address at the United States Naval Academy in Annapolis, Maryland",2013-05-24,Annapolis,MD,United States Naval Academy,Navy-Marine Corps Memorial Stadium
+150,44,Barack Obama,"Commencement Address at the United States Military Academy in West Point, New York",2014-05-28,West Point,NY,United States Military Academy,Michie Stadium
+151,44,Barack Obama,"Commencement Address at Worcester Technical High School in Worcester, Massachusetts",2014-06-11,Worcester,MA,Worcester Technical High School,DCU Center
+152,44,Barack Obama,"Commencement Address at the University of California-Irvine in Anaheim, CA",2014-06-14,Anaheim,CA,Angel Stadium,na
+153,44,Barack Obama,"Commencement Address at Lake Area Technical Institute in Watertown, South Dakota",2015-05-08,Watertown,SD,Lake Area Technical Institute,Watertown Civic Arena
+154,44,Barack Obama,"Commencement Address at the United States Coast Guard Academy in New London, Connecticut",2015-05-20,New London,CT,United States Coast Guard Academy,unknown

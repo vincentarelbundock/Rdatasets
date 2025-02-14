@@ -1,0 +1,70 @@
+<!DOCTYPE html><html><head><title>R: Political Elasticity Scores</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css">
+<script type="text/javascript">
+const macros = { "\\R": "\\textsf{R}", "\\code": "\\texttt"};
+function processMathHTML() {
+    var l = document.getElementsByClassName('reqn');
+    for (let e of l) { katex.render(e.textContent, e, { throwOnError: false, macros }); }
+    return;
+}</script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+    onload="processMathHTML();"></script>
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container"><main>
+
+<table style="width: 100%;"><tr><td>elasticity_by_district</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Political Elasticity Scores</h2>
+
+<h3>Description</h3>
+
+<p>This folder contains the data behind the story 'Election Update: The House Districts That Swing The Most (And Least) With The National Mood'
+<a href="https://fivethirtyeight.com/features/election-update-the-house-districts-that-swing-the-most-and-least-with-the-national-mood/">https://fivethirtyeight.com/features/election-update-the-house-districts-that-swing-the-most-and-least-with-the-national-mood/</a>
+</p>
+
+
+<h3>Usage</h3>
+
+<pre><code class='language-R'>elasticity_by_district
+</code></pre>
+
+
+<h3>Format</h3>
+
+<p>A dataset with 435 rows representing congressional districts and 2 variables
+</p>
+
+<dl>
+<dt>district</dt><dd><p>congressional district</p>
+</dd>
+<dt>pvi_538</dt><dd><p>pvi</p>
+</dd>
+</dl>
+
+
+
+<h3>Note</h3>
+
+<p>The original dataset only has 2 columns: &quot;district&quot; and &quot;elasticity&quot;. I separated  the &quot;district&quot; columns into two.
+For example, in row 1 of the dataset, the original &quot;district&quot; = &quot;MI-5&quot;, and I separated it into “state&quot; = &quot;Michigan&quot; and &quot;district_number&quot; = &quot;5&quot;.
+In addition, I used the full names for all states instead of abbreviations.
+</p>
+
+
+<h3>Source</h3>
+
+<p>An elasticity score measures how sensitive a state or district it is to changes in the national political environment.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>elasticity_by_state</code>
+</p>
+
+</main>
+
+</div>
+</body></html>
